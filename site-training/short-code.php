@@ -33,13 +33,19 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
             ?>
             <script>
                 const d = new Date();
-                let time = d.getTime();
+                window.time = d.getTime();
                 let params = {
-                    "title": "Test Contact " + time
+                    "title": "Test Contact " + window.time
                 }
                 let queryParams = JSON.stringify(params) //jQuery.param( params )
+
+
             </script>
             <div style="text-align: center;">
+                <button class="button" onclick="window.register_user()">Register User</button><br>
+
+                <br>
+                <button class="button" onclick="window.is_logged_in()">Is Logged In?</button><br>
                 <button class="button" onclick="window.api_post('test', 'test').done(function(data){console.log(data)})">Local</button><br>
                 <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/7').done(function(data){console.log(data)})">Remote Contact</button><br>
                 <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/', params).done(function(data){console.log(data)})">Remote Create Contact</button><br>
@@ -47,9 +53,11 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
                 <button class="button" onclick="window.api_remote_get('dt/v1/users/get_users/?get_all=1').done(function(data){console.log(data)})">Remote Users</button><br>
                 <button class="button" onclick="window.api_remote_get('dt/v1/user/my').done(function(data){console.log(data)})">Remote Me</button><br>
             </div>
+            <div id="response"></div>
 
             <script>
                 jQuery(document).ready(function(){
+
                     let jsObject = [<?php echo json_encode([
                         'root' => esc_url_raw( rest_url() ),
                         'nonce' => wp_create_nonce( 'wp_rest' ),
@@ -57,6 +65,9 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
                             'add' => __( 'Add Magic', 'prayer-global' ),
                         ],
                     ]) ?>][0]
+
+                    window.user_object = false
+
                     window.api_post = ( action, data ) => {
                         return jQuery.ajax({
                             type: "POST",
@@ -72,7 +83,6 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
                                 console.log(e)
                             })
                     }
-
                     window.api_remote_post = ( endpoint, data ) => {
                         return jQuery.ajax({
                             type: "POST",
@@ -102,6 +112,26 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
                                 console.log(e)
                             })
                     }
+                    window.register_user = () => {
+                        let new_user_params = {
+                            'user-email': window.time + '@email.com',
+                            'user-display': window.time,
+                            'user-password': window.time,
+                            'locale': 'en'
+                        }
+                        window.api_remote_post('dt/v1/users/register', new_user_params)
+                            .done(function(data){
+                                console.log(data)
+                                window.user_object = data
+                                jsObject.nonce = data.new_cookie
+                            })
+                    }
+                    window.is_logged_in = () => {
+                        window.api_post('is_logged_in', '')
+                            .done(function(data){
+                                console.log(data)
+                            })
+                    }
                 })
             </script>
             <?php
@@ -121,7 +151,22 @@ if ( ! class_exists('DT_Login_Widget' ) ) {
         public function login( WP_REST_Request $request){
             $params = $request->get_params();
 
-            return true;
+            if ( !isset( $params['action'], $params['data'] ) ) {
+                return new WP_Error( 'missing_error', 'Missing fields', [ 'status' => 400 ] );
+            }
+
+            $action = $params['action'];
+            $data = $params['data'];
+
+            switch( $action ) {
+                case 'is_logged_in':
+                    return ( is_user_logged_in() ) ? 'Logged In' : 'Not Logged In';
+                case 'test':
+                    return true;
+                default:
+                    return false;
+
+            }
         }
     }
     DT_Login_Widget::instance();

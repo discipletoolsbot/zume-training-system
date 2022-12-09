@@ -18,7 +18,7 @@
  *          https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-class Zume_System {
+class Zume_Context_Switcher {
     private static $instance = null;
     public static function instance() {
         if ( is_null( self::$instance ) ) {
@@ -28,20 +28,19 @@ class Zume_System {
     }
     public function __construct(){
         $site = get_bloginfo();
-        dt_write_log( $site );
 
         switch ( $site ) {
-            case 'Zúme Training':
-                require_once( 'training/loader.php' );
+            case 'Coaching':
+                require_once( 'site-coaching/loader.php' );
                 break;
             case 'Tools':
-                require_once( 'tools/loader.php' );
+                require_once( 'site-tools/loader.php' );
+                break;
+            case 'Zúme Training':
+                require_once( 'site-training/loader.php' );
                 break;
             case 'Vision':
-                require_once( 'vision/loader.php' );
-                break;
-            case 'Coaching':
-                require_once( 'coaching/loader.php' );
+                require_once( 'site-vision/loader.php' );
                 break;
             default:
         }
@@ -49,6 +48,6 @@ class Zume_System {
     }
 }
 
-add_action( 'after_setup_theme', [ 'Zume_System', 'instance' ], 10 );
+add_action( 'after_setup_theme', [ 'Zume_Context_Switcher', 'instance' ], 10 );
 
 
