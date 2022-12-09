@@ -37,7 +37,7 @@ class DT_Users_Endpoints
     }
 
     public function authorize_url( $authorized ){
-        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ),  $this->namespace ) !== false ) {
+        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace ) !== false ) {
             $authorized = true;
         }
         return $authorized;
@@ -70,9 +70,9 @@ class DT_Users_Endpoints
             }
 
             $user_object = wp_get_current_user();
-            $user_object->add_cap('create_users');
-            $user_object->add_cap('create_contacts');
-            $user_object->add_cap('access_contacts');
+            $user_object->add_cap( 'create_users' );
+            $user_object->add_cap( 'create_contacts' );
+            $user_object->add_cap( 'access_contacts' );
 
             $user_id = Disciple_Tools_Users::create_user(
                 $user_login,
