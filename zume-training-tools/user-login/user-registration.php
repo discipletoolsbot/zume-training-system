@@ -97,17 +97,29 @@ class DT_Users_Endpoints
             $added_to_training = add_user_to_blog( 1, $user_id, 'subscriber' );
             $added_to_vision = add_user_to_blog( 12, $user_id, 'subscriber' );
 
-//            $user = get_user_by( 'id', $user_id );
-//            wp_set_current_user( $user_id, $user->user_login );
-//            wp_set_auth_cookie( $user_id );
-//            do_action( 'wp_login', $user->user_login, $user );
+            $response = wp_remote_post('https://zume5.training/tools/wp-json/jwt-auth/v1/token', [
+                    'method'      => 'POST',
+                    'timeout'     => 45,
+                    'redirection' => 5,
+                    'httpversion' => '1.0',
+                    'blocking'    => true,
+                    'headers'     => array(),
+                    'body'        => array(
+                        'username' => $params['user-email'],
+                        'password' => $password
+                    ),
+                    'cookies'     => array()
+                ]
+            );
+
+            $body = json_decode( wp_remote_retrieve_body( $response ), true );
 
             return [
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
                 'added_to_training' => $added_to_training,
                 'added_to_vision' => $added_to_vision,
-                'new_cookie' => wp_create_nonce( 'wp_rest' )
+                'jwt' => $body,
                 ];
         } else {
             return new WP_Error( 'missing_error', 'Missing fields', [ 'status' => 400 ] );

@@ -31,16 +31,16 @@ class Zume_Context_Switcher {
 
         switch ( $site ) {
             case 'Coaching':
-                require_once( 'site-coaching/loader.php' );
+                require_once( 'zume-training-coaching/loader.php' );
                 break;
             case 'Tools':
-                require_once( 'site-tools/loader.php' );
+                require_once( 'zume-training-tools/loader.php' );
                 break;
             case 'Zúme Training':
-                require_once( 'site-training/loader.php' );
+                require_once( 'zume-training/loader.php' );
                 break;
             case 'Vision':
-                require_once( 'site-vision/loader.php' );
+                require_once( 'zume-vision/loader.php' );
                 break;
             default:
         }

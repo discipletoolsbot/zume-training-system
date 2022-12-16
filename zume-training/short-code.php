@@ -23,11 +23,6 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
         }
 
         public static function load() {
-            // enqueue script
-            // enqueue css
-            // enquque html
-            // add rest api
-
             ?>
             <script>
                 const d = new Date();
@@ -41,22 +36,28 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
             </script>
             <div style="text-align: center;">
                 <button class="button" onclick="window.register_user()">Register User</button><br>
-
-                <br>
+                <button class="button" onclick="window.api_remote_get('dt/v1/user/my').done(function(data){console.log(data)})">Remote Me</button><br>
+                <button class="button" id="test">Test Loggedin</button><br>
+                <hr>
+                <button class="button" id="goodLogin">Good Login</button><br>
+                <button class="button" id="badLogin">Bad Login</button><br>
+                <button class="button" id="logout">Logout</button><br>
+                <hr>
                 <button class="button" onclick="window.is_logged_in()">Is Logged In?</button><br>
-                <button class="button" onclick="window.api_post('test', 'test').done(function(data){console.log(data)})">Local</button><br>
-                <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/7').done(function(data){console.log(data)})">Remote Contact</button><br>
+                <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/70').done(function(data){console.log(data)})">Remote Contact</button><br>
+                <hr>
                 <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/', params).done(function(data){console.log(data)})">Remote Create Contact</button><br>
                 <button class="button" onclick="window.api_remote_post('dt-posts/v2/trainings/', params).done(function(data){console.log(data)})">Remote Create Training</button><br>
                 <button class="button" onclick="window.api_remote_get('dt/v1/users/get_users/?get_all=1').done(function(data){console.log(data)})">Remote Users</button><br>
-                <button class="button" onclick="window.api_remote_get('dt/v1/user/my').done(function(data){console.log(data)})">Remote Me</button><br>
+                <hr>
+                <button class="button" onclick="window.api_post('test', 'test').done(function(data){console.log(data)})">Local</button><br>
             </div>
             <div id="response"></div>
 
             <script>
                 jQuery(document).ready(function(){
 
-                    let jsObject = [<?php echo json_encode([
+                    window.jsObject = [<?php echo json_encode([
                         'root' => esc_url_raw( rest_url() ),
                         'nonce' => wp_create_nonce( 'wp_rest' ),
                         'translations' => [
@@ -72,9 +73,11 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             data: JSON.stringify({ action: action, data: data }),
                             contentType: "application/json; charset=utf-8",
                             dataType: "json",
-                            url: jsObject.root + 'dt-login/v1/login',
+                            url: window.jsObject.root + 'dt-login/v1/login',
                             beforeSend: function (xhr) {
-                                xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+                                if (localStorage.token) {
+                                    xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.token);
+                                }
                             }
                         })
                             .fail(function(e) {
@@ -89,7 +92,9 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             dataType: "json",
                             url: `https://zume5.training/tools/wp-json/`+endpoint,
                             beforeSend: function (xhr) {
-                                xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+                                if (localStorage.token) {
+                                    xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.token);
+                                }
                             }
                         })
                             .fail(function(e) {
@@ -103,13 +108,17 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             dataType: "json",
                             url: `https://zume5.training/tools/wp-json/`+endpoint,
                             beforeSend: function (xhr) {
-                                xhr.setRequestHeader('X-WP-Nonce', jsObject.nonce )
+                                if (localStorage.token) {
+                                    xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.token);
+                                }
                             }
                         })
                             .fail(function(e) {
                                 console.log(e)
                             })
                     }
+
+
                     window.register_user = () => {
                         let new_user_params = {
                             'user-email': window.time + '@email.com',
@@ -121,7 +130,8 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             .done(function(data){
                                 console.log(data)
                                 window.user_object = data
-                                jsObject.nonce = data.new_cookie
+                                localStorage.token = data.jwt.token;
+                                localStorage.user_display_name = data.jwt.user_display_name
                             })
                     }
                     window.is_logged_in = () => {
@@ -130,6 +140,66 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                                 console.log(data)
                             })
                     }
+
+
+                    jQuery('#test').click(function() {
+                        jQuery.ajax({
+                            type: 'POST',
+                            url: 'https://zume5.training/tools/wp-json/jwt-auth/v1/token/validate',
+                            beforeSend: function(xhr) {
+                                if (localStorage.token) {
+                                    xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.token);
+                                }
+                            },
+                            success: function(data) {
+                                if ( data ) {
+                                    alert('Hello ' + localStorage.user_display_name + '!');
+                                } else {
+                                    alert("Sorry, you are not logged in.");
+                                }
+                            },
+                            error: function() {
+                                alert("Sorry, you are not logged in.");
+                            }
+                        });
+                    });
+                    jQuery('#goodLogin').click(function() {
+                        jQuery.ajax({
+                            type: "POST",
+                            url: "https://zume5.training/tools/wp-json/jwt-auth/v1/token",
+                            data: {
+                                username: "chris@chasm.solutions",
+                                password: "Dc6AfizvlJZoIw0YNr#uq@KD"
+                            },
+                            success: function(data) {
+                                console.log(data)
+                                localStorage.token = data.token;
+                                localStorage.user_display_name = data.user_display_name
+                            },
+                            error: function() {
+                                alert("Login Failed");
+                            }
+                        });
+                    });
+                    jQuery('#badLogin').click(function() {
+                        jQuery.ajax({
+                            type: "POST",
+                            url: "https://zume5.training/tools/wp-json/jwt-auth/v1/token",
+                            data: {
+                                username: "chris@chasm.solutions",
+                                password: "foobarfoobar"
+                            },
+                            success: function(data) {
+                                alert("ERROR: it is not supposed to alert.");
+                            },
+                            error: function() {
+                                alert("Login Failed");
+                            }
+                        });
+                    });
+                    jQuery('#logout').click(function() {
+                        localStorage.clear();
+                    });
                 })
             </script>
             <?php
@@ -161,6 +231,14 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                     return ( is_user_logged_in() ) ? 'Logged In' : 'Not Logged In';
                 case 'test':
                     return true;
+                case 'login':
+                    $user_id = $data['user_id'];
+                    $user = get_user_by( 'id', $user_id );
+                    wp_set_current_user( $user_id, $user->user_login );
+                    wp_set_auth_cookie( $user_id );
+                    do_action( 'wp_login', $user->user_login, $user );
+                    return $user;
+                    break;
                 default:
                     return false;
 
