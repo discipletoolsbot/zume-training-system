@@ -26,7 +26,6 @@ class DT_Users_Endpoints
      * Setup for API routes
      */
     public function add_api_routes() {
-
         register_rest_route(
             $this->namespace, '/users/register', [
                 'methods' => 'POST',

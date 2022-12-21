@@ -29,6 +29,8 @@ class Zume_Context_Switcher {
     public function __construct(){
         $site = get_bloginfo();
 
+        require_once( 'globals/loader.php' );
+
         switch ( $site ) {
             case 'Coaching':
                 require_once( 'zume-training-coaching/loader.php' );
