@@ -24,6 +24,18 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
 
         public static function load() {
             ?>
+            <style>
+                #signon {
+                    width: 100%;
+                }
+                #login-logo {
+                    width: 100px;
+                    position:absolute;
+                    top:80px;
+                    left:20px;
+                    display:none;
+                }
+            </style>
             <script>
                 const d = new Date();
                 window.time = d.getTime();
@@ -31,28 +43,31 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                     "title": "Test Contact " + window.time
                 }
                 let queryParams = JSON.stringify(params) //jQuery.param( params )
-
-
             </script>
-            <div style="text-align: center;">
+            <div id="signon">
+                <div class="login-logo" style="display:none;">
+                    <img src="<?php echo trailingslashit( plugin_dir_url(__FILE__) ) ?>mysteryman.png" width="30px;" /><br>
+                    <span class="u_name"></span>
+                </div>
+            </div>
+            <div style="width:56%; float:left; text-align: center;">
                 <button class="button" onclick="window.register_user()">Register User</button><br>
-                <button class="button" onclick="window.api_remote_get('dt/v1/user/my').done(function(data){console.log(data)})">Remote Me</button><br>
-                <button class="button" id="test">Test Loggedin</button><br>
-                <hr>
-                <button class="button" id="goodLogin">Good Login</button><br>
-                <button class="button" id="badLogin">Bad Login</button><br>
+                <div style="text-align:center; margin: 0 auto; width:200px;"><input type="text" id="username" placeholder="Username" value="" /> </div>
+                <div style="text-align:center; margin: 0 auto; width:200px;"><input type="password" id="password" placeholder="Password" value="" /> </div>
+                <button class="button" id="goodLogin">Login</button><br>
                 <button class="button" id="logout">Logout</button><br>
                 <hr>
-                <button class="button" onclick="window.is_logged_in()">Is Logged In?</button><br>
-                <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/70').done(function(data){console.log(data)})">Remote Contact</button><br>
+                <button class="button" onclick="window.api_remote_get('dt/v1/user/my').done(function(data){console.log(data); jQuery('#response').html(JSON.stringify(data))})">Remote Me</button><br>
+                <button class="button" id="test">Test Loggedin</button><br>
                 <hr>
-                <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/', params).done(function(data){console.log(data)})">Remote Create Contact</button><br>
-                <button class="button" onclick="window.api_remote_post('dt-posts/v2/trainings/', params).done(function(data){console.log(data)})">Remote Create Training</button><br>
-                <button class="button" onclick="window.api_remote_get('dt/v1/users/get_users/?get_all=1').done(function(data){console.log(data)})">Remote Users</button><br>
+                <button class="button" onclick="window.api_remote_post('dt-posts/v2/contacts/', params).done(function(data){console.log(data);jQuery('#response').html(JSON.stringify(data))})">Create Contact</button><br>
+                <div style="text-align:center; margin: 0 auto; width:100px;"><input type="text" id="contact_id" placeholder="Post Id" value="" /> </div><button class="button" onclick="window.get_contact()">Get Contact</button><br>
                 <hr>
-                <button class="button" onclick="window.api_post('test', 'test').done(function(data){console.log(data)})">Local</button><br>
+                <button class="button" onclick="window.api_remote_post('dt-posts/v2/trainings/', params).done(function(data){console.log(data);jQuery('#response').html(JSON.stringify(data))})">Create Training</button><br>
+                <div style="text-align:center; margin: 0 auto; width:100px;"><input type="text" id="training_id" placeholder="Post Id" value="" /> </div><button class="button" onclick="window.get_training()">Get Training</button><br>
+                <hr>
             </div>
-            <div id="response"></div>
+            <div id="response" style="width: 22%; float: left;"></div>
 
             <script>
                 jQuery(document).ready(function(){
@@ -66,6 +81,11 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                     ]) ?>][0]
 
                     window.user_object = false
+
+                    if ( typeof localStorage.token !== 'undefined' ) {
+                        jQuery('#login-logo').show()
+                        jQuery('#u_name').html(localStorage.user_display_name)
+                    }
 
                     window.api_post = ( action, data ) => {
                         return jQuery.ajax({
@@ -118,6 +138,23 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             })
                     }
 
+                    window.get_contact = () => {
+                        let pid = jQuery('#contact_id').val()
+                        window.api_remote_post('dt-posts/v2/contacts/'+pid)
+                            .done(function(data){
+                                console.log(data)
+                                jQuery('#response').html(JSON.stringify(data))
+                            })
+                    }
+                    window.get_training = () => {
+                        let pid = jQuery('#training_id').val()
+                        window.api_remote_post('dt-posts/v2/trainings/'+pid)
+                            .done(function(data){
+                                console.log(data)
+                                jQuery('#response').html(JSON.stringify(data))
+                            })
+                    }
+
 
                     window.register_user = () => {
                         let new_user_params = {
@@ -132,15 +169,11 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                                 window.user_object = data
                                 localStorage.token = data.jwt.token;
                                 localStorage.user_display_name = data.jwt.user_display_name
+                                jQuery('#login-logo').show()
+                                jQuery('#u_name').html(localStorage.user_display_name)
+                                jQuery('#response').html(JSON.stringify(data))
                             })
                     }
-                    window.is_logged_in = () => {
-                        window.api_post('is_logged_in', '')
-                            .done(function(data){
-                                console.log(data)
-                            })
-                    }
-
 
                     jQuery('#test').click(function() {
                         jQuery.ajax({
@@ -153,8 +186,12 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                             },
                             success: function(data) {
                                 if ( data ) {
+                                    jQuery('#login-logo').show()
+                                    jQuery('#response').html(JSON.stringify(data))
                                     alert('Hello ' + localStorage.user_display_name + '!');
                                 } else {
+                                    jQuery('#login-logo').hide()
+                                    jQuery('#response').html(JSON.stringify(data))
                                     alert("Sorry, you are not logged in.");
                                 }
                             },
@@ -164,40 +201,31 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
                         });
                     });
                     jQuery('#goodLogin').click(function() {
+                        let username = jQuery('#username').val()
+                        let password = jQuery('#password').val()
                         jQuery.ajax({
                             type: "POST",
                             url: "https://zume5.training/tools/wp-json/jwt-auth/v1/token",
                             data: {
-                                username: "chris@chasm.solutions",
-                                password: "Dc6AfizvlJZoIw0YNr#uq@KD"
+                                username: username,
+                                password: password
                             },
                             success: function(data) {
                                 console.log(data)
                                 localStorage.token = data.token;
                                 localStorage.user_display_name = data.user_display_name
+                                jQuery('#login-logo').show()
+                                jQuery('#u_name').html(localStorage.user_display_name)
+                                jQuery('#response').html(JSON.stringify(data))
                             },
                             error: function() {
                                 alert("Login Failed");
                             }
                         });
                     });
-                    jQuery('#badLogin').click(function() {
-                        jQuery.ajax({
-                            type: "POST",
-                            url: "https://zume5.training/tools/wp-json/jwt-auth/v1/token",
-                            data: {
-                                username: "chris@chasm.solutions",
-                                password: "foobarfoobar"
-                            },
-                            success: function(data) {
-                                alert("ERROR: it is not supposed to alert.");
-                            },
-                            error: function() {
-                                alert("Login Failed");
-                            }
-                        });
-                    });
+
                     jQuery('#logout').click(function() {
+                        jQuery('#login-logo').hide()
                         localStorage.clear();
                     });
                 })
@@ -247,5 +275,3 @@ if ( ! class_exists( 'DT_Login_Widget' ) ) {
     }
     DT_Login_Widget::instance();
 }
-
-
