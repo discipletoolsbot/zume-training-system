@@ -6,7 +6,7 @@
 /**
  * Class Disciple_Tools_Users_Endpoints
  */
-class DT_Users_Endpoints
+class Zume_Registration_Endpoint
 {
 
     private $version = 1;
@@ -116,8 +116,6 @@ class DT_Users_Endpoints
             return [
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
-                'added_to_training' => $added_to_training,
-                'added_to_vision' => $added_to_vision,
                 'jwt' => $body,
                 ];
         } else {
@@ -126,4 +124,4 @@ class DT_Users_Endpoints
     }
 
 }
-new DT_Users_Endpoints();
+new Zume_Registration_Endpoint();

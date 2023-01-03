@@ -2,15 +2,6 @@
 
 function zume_footer_logon_modal() {
     ?>
-    <div class="center-text">
-        <div class="user-login logged-out login-button">
-            <i class="fi-torso torso-icon logged-out"></i>
-        </div>
-        <div class="user-login logged-in login-button" style="display:none;">
-            <i class="fi-torso torso-icon logged-in"></i><br>
-            <span class="user-login logged-in u-name"></span>
-        </div>
-    </div>
     <div class="reveal" id="footer-logon-modal" data-v-offset="30px" data-reveal>
         <h3>Login/Register</h3>
         <hr>
@@ -109,6 +100,23 @@ function zume_footer_logon_modal() {
                         console.log(e)
                     })
             }
+            window.api_remote_get = ( endpoint ) => {
+                return jQuery.ajax({
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    url: `https://zume5.training/tools/wp-json/`+endpoint,
+                    beforeSend: function (xhr) {
+                        if (localStorage.zume_token) {
+                            xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.zume_token);
+                        }
+                    }
+                })
+                    .fail(function(e) {
+                        console.log(e)
+                    })
+            }
+
             jQuery('.user-login.jwt_register_user').click(function(){
                 let new_email = jQuery('.user-login.new_username').val()
                 let display_name = new_email.replace(/@.*$/,"").toLowerCase()
@@ -127,6 +135,12 @@ function zume_footer_logon_modal() {
                         jQuery('.user-login.logged-in').show()
                         jQuery('.user-login.u-name').html( localStorage.zume_name )
                         jQuery('#footer-logon-modal').foundation('close');
+
+                        window.api_remote_get('dt/v1/user/my')
+                            .done(function(data){
+                                console.log(data);
+                                window.userObject = data
+                            })
                     })
             })
             jQuery('.user-login.jwt_login').click(function(){
@@ -138,13 +152,23 @@ function zume_footer_logon_modal() {
                 }
                 window.api_remote_post('jwt-auth/v1/token', access)
                     .done(function(data){
+                        if ( typeof data.token === 'undefined' ) {
+                            console.log(data)
+                            return
+                        }
                         localStorage.zume_token = data.token
                         localStorage.zume_name = data.user_display_name
                         jQuery('.user-login').hide()
                         jQuery('.user-login.logged-in').show()
                         jQuery('.user-login.u-name').html( localStorage.zume_name )
                         jQuery('#footer-logon-modal').foundation('close');
-                    })
+
+                        window.api_remote_get('dt/v1/user/my')
+                            .done(function(data){
+                                console.log(data);
+                                window.userObject = data
+                            })
+                        })
             })
             jQuery('.user-login.jwt_logout').click(function() {
                 jQuery('.user-login').hide()
@@ -152,7 +176,16 @@ function zume_footer_logon_modal() {
                 jQuery('#footer-logon-modal').foundation('close');
                 localStorage.removeItem('zume_token')
                 localStorage.removeItem('zume_name')
+                window.userObject = false
             });
+
+            if (typeof window.userObject === 'undefined' && typeof localStorage.zume_token !== 'undefined' ) {
+                window.api_remote_get('dt/v1/user/my')
+                    .done(function(data){
+                        console.log(data);
+                        window.userObject = data
+                    })
+            }
         })
     </script>
     <?php
@@ -172,3 +205,18 @@ function zume_logon_button() {
     <?php
 }
 add_shortcode('zume_logon_button', 'zume_logon_button' );
+
+function zume_logon_button_with_name() {
+    ?>
+    <div class="login-button-set center-text">
+        <div class="user-login logged-out login-button">
+            <i class="fi-torso torso-icon logged-out"></i>
+        </div>
+        <div class="user-login logged-in login-button" style="display:none;">
+            <i class="fi-torso torso-icon logged-in"></i><br>
+            <span class="user-login logged-in u-name"></span>
+        </div>
+    </div>
+    <?php
+}
+add_shortcode('zume_logon_button_with_name', 'zume_logon_button_with_name' );
