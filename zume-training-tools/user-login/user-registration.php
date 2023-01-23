@@ -92,9 +92,31 @@ class Zume_Registration_Endpoint
 
             $contact_id = Disciple_Tools_Users::get_contact_for_user( $user_id );
 
-            // final statements. must be last because they wipe the caps on the user_object
-            $added_to_training = add_user_to_blog( 1, $user_id, 'subscriber' );
-            $added_to_vision = add_user_to_blog( 12, $user_id, 'subscriber' );
+            // @todo remove adding accounts to other sites, if not needed.
+            // Add to training and vision traditional records.
+//            $blogs = [1, 12];
+//            $role = 'subscriber';
+//            foreach( $blogs as $blog_id) {
+//                switch_to_blog( $blog_id );
+//                $user = get_userdata( $user_id );
+//
+//                if ( ! $user ) {
+//                    restore_current_blog();
+//                } else {
+//                    if ( ! get_user_meta( $user_id, 'primary_blog', true ) ) {
+//                        update_user_meta( $user_id, 'primary_blog', $blog_id );
+//                        $site = get_site( $blog_id );
+//                        update_user_meta( $user_id, 'source_domain', $site->domain );
+//                    }
+//                    $user->set_role( $role );
+//                    clean_user_cache( $user_id );
+//                    wp_cache_delete( $blog_id . '_user_count', 'blog-details' );
+//
+//                    dt_write_log('Added to '.$blog_id);
+//
+//                    restore_current_blog();
+//                }
+//            }
 
             $response = wp_remote_post('https://zume5.training/tools/wp-json/jwt-auth/v1/token', [
                     'method'      => 'POST',
