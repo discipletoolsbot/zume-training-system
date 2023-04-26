@@ -36,7 +36,7 @@ class Zume_Training_Menu_Post_Type
 
         add_action( 'init', [ $this, 'register_post_type' ] );
         add_action( 'transition_post_status', [ $this, 'transition_post' ], 10, 3 );
-        add_action( 'add_meta_boxes', [ $this, 'add_meta_box' ] );
+        add_action( 'add_meta_boxes', [ $this, 'add_metabox_qr' ]);
 
         if ( is_admin() && isset( $_GET['post_type'] ) && 'zume_pages' === $_GET['post_type'] ){
 
@@ -44,17 +44,22 @@ class Zume_Training_Menu_Post_Type
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
         }
 
-    } // End __construct()
-
-    public function add_meta_box( $post_type ) {
-        if ( 'zume_pages' === $post_type ) {
-            add_meta_box( 'zume_pages' . '_custom_permalink', 'Zume Page'  . ' Url', [ $this, 'meta_box_custom_permalink' ], $this->post_type, 'side', 'default' );
-        }
     }
 
-    public function meta_box_custom_permalink( $post ) {
-        $public_key = get_post_meta( $post->ID, PORCH_LANDING_META_KEY, true );
-        echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) .'</a>';
+    public function add_metabox_qr( $post_type ) {
+        if ( $this->post_type === $post_type ) {
+            add_meta_box('qrcode', esc_html__('QR Code', 'text-domain'), [$this, 'metabox_qr'], $this->post_type, 'side', 'high');
+        }
+    }
+    public function metabox_qr( $meta_id ) {
+        global $post;
+        $full_link = get_page_link( $post->ID );
+        ?>
+        <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>"><img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>" title="<?php echo esc_url( $full_link ) ?>" alt="<?php echo esc_url( $full_link ) ?>" style="width:100%;"/></a>
+        <br>Links to:
+        <br><?php echo esc_url( $full_link );  ?>
+        <br>
+        <?php
     }
 
     /**
@@ -158,3 +163,5 @@ class Zume_Training_Menu_Post_Type
     }
 } // End Class
 Zume_Training_Menu_Post_Type::instance();
+
+
