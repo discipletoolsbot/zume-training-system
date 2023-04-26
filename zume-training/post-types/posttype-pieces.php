@@ -36,10 +36,8 @@ class Zume_Training_Pieces_Post_Type
         $this->taxonomies = $taxonomies;
 
         add_action( 'init', [ $this, 'register_post_type' ] );
-        add_action( 'transition_post_status', [ $this, 'transition_post' ], 10, 3 );
-        add_action( 'add_meta_boxes', [ $this, 'add_meta_box' ] );
 
-        if ( is_admin() && isset( $_GET['post_type'] ) && 'zume_pages' === $_GET['post_type'] ){
+        if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
 
             add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
@@ -47,16 +45,6 @@ class Zume_Training_Pieces_Post_Type
 
     } // End __construct()
 
-    public function add_meta_box( $post_type ) {
-        if ( $this->post_type === $post_type ) {
-            add_meta_box( 'zume_pages' . '_custom_permalink', 'Zume Page'  . ' Url', [ $this, 'meta_box_custom_permalink' ], $this->post_type, 'side', 'default' );
-        }
-    }
-
-    public function meta_box_custom_permalink( $post ) {
-        $public_key = get_post_meta( $post->ID, $this->meta_key, true );
-        echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) .'</a>';
-    }
 
     /**
      * Register the post type.
@@ -109,41 +97,14 @@ class Zume_Training_Pieces_Post_Type
                 'capability_type' => 'page',
                 'hierarchical' => false,
                 'show_in_rest' => true,
-                'supports' => array( 'title',  'thumbnail', 'excerpt',  'wp-block-styles' , 'align-wide', 'page-attributes' )
+                'supports' => array( 'title',  'thumbnail',  'wp-block-styles' , 'align-wide', )
             )
         );
-    }
-
-
-    public function transition_post( $new_status, $old_status, $post ) {
-        if ( 'publish' == $new_status && $post->post_type == 'zume_pages' ) {
-
-            $post_id = $post->ID;
-            $slug = trim( strtolower( $post->post_title ) );
-            $slug = str_replace( ' ', '-', $slug );
-            $slug = str_replace( '"', '', $slug );
-            $slug = str_replace( '&', '', $slug );
-            $slug = str_replace( "'", '', $slug );
-            $slug = str_replace( ",", '', $slug );
-            $slug = str_replace( ":", '', $slug );
-            $slug = str_replace( ";", '', $slug );
-            $slug = str_replace( ".", '', $slug );
-            $slug = str_replace( "/", '', $slug );
-            $slug = urlencode( $slug );
-
-            $current_public_key = get_post_meta( $post_id, PORCH_LANDING_META_KEY, true );
-            if ( $slug !== $current_public_key ) {
-                update_post_meta( $post_id, PORCH_LANDING_META_KEY, $slug );
-                global $wpdb;
-                $wpdb->query( $wpdb->prepare( "UPDATE $wpdb->posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . PORCH_LANDING_ROOT . '/' . PORCH_LANDING_TYPE . '/' . $slug, $post_id ) );
-            }
-        }
     }
 
     // Add the custom columns to the book post type:
     public function set_custom_edit_columns( $columns) {
         unset( $columns['author'] );
-        $columns['url'] = 'URL';
 
         return $columns;
     }
@@ -151,9 +112,7 @@ class Zume_Training_Pieces_Post_Type
     // Add the data to the custom columns for the book post type:
     public function custom_column( $column, $post_id ) {
         switch ( $column ) {
-            case 'url' :
-                $public_key = get_post_meta( $post_id, PORCH_LANDING_META_KEY, true );
-                echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( PORCH_LANDING_ROOT ) . '/' . esc_attr( PORCH_LANDING_TYPE ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( PORCH_LANDING_ROOT ) . '/' . esc_attr( PORCH_LANDING_TYPE ) . '/' . esc_attr( $public_key ) .'</a>';
+            default:
                 break;
         }
     }

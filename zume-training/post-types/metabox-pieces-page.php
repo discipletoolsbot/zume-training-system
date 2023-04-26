@@ -5,13 +5,13 @@ function zume_pieces_box() {
     global $post;
     if ( get_post_meta( $post->ID, '_wp_page_template', true ) === 'template-pieces-page.php' ) {
 
-        remove_post_type_support( 'page', 'editor' );
+        remove_post_type_support( 'zume_pieces', 'editor' );
 
         // --- Parameters: ---
         add_meta_box( 'pieces-content-box', // ID attribute of metabox
             'Pieces Content',       // Title of metabox visible to user
             'zume_pieces_content', // Function that prints box in wp-admin
-            'page',              // Show box for posts, pages, custom, etc.
+            'zume_pieces',              // Show box for posts, pages, custom, etc.
             'normal',            // Where on the page to show the box
         'high' );            // Priority of box in display order
     }
