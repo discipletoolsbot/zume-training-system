@@ -183,6 +183,8 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
                 return;
             }
 
+            $this->page_title = get_the_title( $this->postid );
+
             // register url and access
             add_action('template_redirect', [$this, 'theme_redirect']);
             add_filter('dt_blank_access', function () {
