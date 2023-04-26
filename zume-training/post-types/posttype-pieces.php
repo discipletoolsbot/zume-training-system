@@ -26,11 +26,12 @@ class Zume_Training_Pieces_Post_Type
      * @param array $taxonomies
      */
     public function __construct( $args = [], $taxonomies = []) {
-        $this->post_type = 'zume_page';
-        $this->singular = 'Zume Page' ;
-        $this->plural = 'Zume Pages' ;
+        $this->post_type = 'zume_pieces';
+        $this->singular = 'Zume Pieces' ;
+        $this->plural = 'Zume Pieces' ;
         $this->root = 'zume_app';
-        $this->type = 'page';
+        $this->type = 'pieces';
+        $this->meta_key = 'zume_app_pieces_magic_key';
         $this->args = $args;
         $this->taxonomies = $taxonomies;
 
@@ -47,13 +48,13 @@ class Zume_Training_Pieces_Post_Type
     } // End __construct()
 
     public function add_meta_box( $post_type ) {
-        if ( 'zume_pages' === $post_type ) {
+        if ( $this->post_type === $post_type ) {
             add_meta_box( 'zume_pages' . '_custom_permalink', 'Zume Page'  . ' Url', [ $this, 'meta_box_custom_permalink' ], $this->post_type, 'side', 'default' );
         }
     }
 
     public function meta_box_custom_permalink( $post ) {
-        $public_key = get_post_meta( $post->ID, PORCH_LANDING_META_KEY, true );
+        $public_key = get_post_meta( $post->ID, $this->meta_key, true );
         echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) .'</a>';
     }
 
@@ -89,8 +90,8 @@ class Zume_Training_Pieces_Post_Type
                 'show_ui' => true,
                 'query_var' => false,
                 'show_in_nav_menus' => true,
-                'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */
-                'menu_icon' => 'dashicons-book', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
+                'menu_position' => 10, /* this is what order you want it to appear in on the left hand side menu */
+                'menu_icon' => 'dashicons-editor-customchar', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
                 'rewrite' => false, /* you can specify its url slug */
                 'has_archive' => false, /* you can rename the slug here */
                 'capabilities' => [

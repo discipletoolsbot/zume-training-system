@@ -27,3 +27,5 @@ function zume_training_load_scripts($hook) {
 add_action('wp_enqueue_scripts', 'zume_training_load_scripts');
 
 add_filter('gutenberg_can_edit_post_type', '__return_true');
+
+
