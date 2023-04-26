@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Zume System Integration
- * Plugin URI: https://github.com/ZumeProject/zume-system-integrations
+ * Plugin Name: Zume Training System
+ * Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Description: Zume System Integrations
  * Text Domain: zume-system-integrations
  * Domain Path: /languages
- * Version:  0.1
- * Author URI: https://github.com/ZumeProject/zume-system-integrations
- * GitHub Plugin URI: https://github.com/ZumeProject/zume-system-integrations
+ * Version:  0.2
+ * Author URI: https://github.com/ZumeProject/zume-training-system
+ * GitHub Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Requires at least: 4.7.0
  * (Requires 4.7+ because of the integration of the REST API at 4.7 and the security requirements of this milestone version.)
  * Tested up to: 6.2
