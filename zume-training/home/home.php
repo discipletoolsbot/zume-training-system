@@ -12,7 +12,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
  * @see https://disciple.tools/plugins/porch/
  * @see https://disciple.tools/plugins/disciple-tools-porch-template/
  */
-class Zume_Training extends DT_Magic_Url_Base
+class Zume_Training_Home extends DT_Magic_Url_Base
 {
     public $magic = false;
     public $parts = false;
@@ -45,14 +45,14 @@ class Zume_Training extends DT_Magic_Url_Base
             }, 100, 1 );
 
             // header content
-            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] ); // adds basic title to browser tab
-            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 ); // authorizes scripts
-            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 ); // authorizes styles
+            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
+            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 );
+            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
-            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
+            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
@@ -61,35 +61,17 @@ class Zume_Training extends DT_Magic_Url_Base
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return $allowed_js;
+        return zume_training_magic_url_base_allowed_js();
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return $allowed_css;
+        return zume_training_magic_url_base_allowed_css();
     }
 
     public function header_style(){
-        ?>
-        <style>
-            body {
-                background-color:white;
-            }
-            #content {
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 1440px;
-                font-size: 5rem;
-                margin-top: 30%;
-                text-align: center;
-            }
-        </style>
-        <?php
     }
 
     public function body(){
-        ?>
-        <div id="content" style="">Insert Your Home Page Here</div>
-        <?php
     }
 }
-Zume_Training::instance();
+Zume_Training_Home::instance();

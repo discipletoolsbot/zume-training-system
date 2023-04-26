@@ -1,6 +1,6 @@
 <?php
 /**
- * Auto loads level 1 php files, and file in subdirectories
+ * Auto loads 2 levels of php files, and file in subdirectories
  */
 $dir = scandir( __DIR__ );
 foreach ( $dir as $file ){
@@ -12,6 +12,15 @@ foreach ( $dir as $file ){
         foreach ( $subdir as $subfile ){
             if ( 'php' === substr( $subfile, -3, 3 ) && 'index.php' !== $subfile && 'loader.php' !== $subfile && substr( $subfile, 0, 1 ) !== '.' ) {
                 require_once( __DIR__ . '/'. $file . '/' . $subfile );
+            }
+            if ( substr( $subfile, 0, 1 ) !== '.' && is_dir( __DIR__ . '/'. $file . '/' . $subfile ) ) {
+                $subsubdir = scandir( __DIR__ . '/'. $file . '/' . $subfile  );
+                foreach ( $subsubdir as $subsubfile ){
+                    if ( 'php' === substr( $subsubfile, -3, 3 ) && 'index.php' !== $subsubfile && 'loader.php' !== $subsubfile && substr( $subsubfile, 0, 1 ) !== '.' ) {
+                        require_once( __DIR__ . '/'. $file . '/' . $subfile . '/' . $subsubfile );
+                    }
+
+                }
             }
         }
     }
