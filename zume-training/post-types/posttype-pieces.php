@@ -36,8 +36,9 @@ class Zume_Training_Pieces_Post_Type
         $this->taxonomies = $taxonomies;
 
         add_action( 'init', [ $this, 'register_post_type' ] );
-        add_action( 'add_meta_boxes', [ $this, 'add_metabox_qr' ]);
         add_filter( 'post_type_link', array( $this, 'remove_slug' ), 10, 3 );
+        add_action( 'add_meta_boxes', [ $this, 'add_metabox' ]);
+        add_action( 'save_post', [ $this, 'zume_pieces_save'] );
 
         if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
 
@@ -46,24 +47,7 @@ class Zume_Training_Pieces_Post_Type
         }
 
     }
-
-    public function add_metabox_qr( $post_type ) {
-        if ( $this->post_type === $post_type ) {
-            add_meta_box('qrcode', esc_html__('QR Code', 'text-domain'), [$this, 'metabox_qr'], $this->post_type, 'side', 'high');
-        }
-    }
-    public function metabox_qr( $meta_id ) {
-        global $post;
-        $full_link = get_page_link( $post->ID );
-        ?>
-        <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>"><img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>" title="<?php echo esc_url( $full_link ) ?>" alt="<?php echo esc_url( $full_link ) ?>" style="width:100%;"/></a>
-        <br>Links to:
-        <br><?php echo esc_url( $full_link );  ?>
-        <br>
-        <?php
-    }
-
-    function remove_slug( $permalink, $post, $leavename ){
+    public function remove_slug( $permalink, $post, $leavename ){
         global $wp_post_types;
         foreach( $wp_post_types as $type => $custom_post ){
             if( $custom_post->_builtin == false && $type == $post->post_type   ){
@@ -73,6 +57,102 @@ class Zume_Training_Pieces_Post_Type
         }
         return $permalink;
     }
+    public function add_metabox( $post_type ) {
+        if ( $this->post_type === $post_type ) {
+            add_meta_box('qrcode', esc_html__('QR Code', 'text-domain'), [$this, 'metabox_qr'], $this->post_type, 'side', 'high');
+            add_meta_box( 'pieces-content-box', 'Pieces Content', [ $this, 'metabox_pieces' ], $this->post_type, 'normal', 'high' );
+        }
+    }
+    public function metabox_qr( $post ) {
+        $full_link = get_page_link( $post->ID );
+        ?>
+        <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>"><img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=<?php echo esc_url( $full_link ) ?>" title="<?php echo esc_url( $full_link ) ?>" alt="<?php echo esc_url( $full_link ) ?>" style="width:100%;"/></a>
+        <br>Links to:
+        <br><?php echo esc_url( $full_link );  ?>
+        <br>
+        <?php
+    }
+
+    public function metabox_pieces( $post ) {
+        wp_nonce_field( 'zume_piece_nonce'.get_current_user_id(), 'zume_piece_nonce' );
+
+        $values = get_post_custom( $post->ID );
+
+        $number = isset( $values['zume_piece'] ) ? $values['zume_piece'][0] : 0;
+
+        ?>
+        <h3>Pieces Page</h3>
+        <select name="zume_piece">
+            <option></option>
+            <?php
+            for ($x = 1; $x <= 32; $x++) {
+                $selected = false;
+                if ( $x == $number) {
+                    $selected = true;
+                }
+                $post_number = zume_landing_page_post_id( $x );
+                ?>
+                <option value="<?php echo esc_attr( $x ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_attr( $x ) . ' - '; echo esc_html( get_the_title( $post_number ) ) ?></option>
+                <?php
+            }
+            ?></select><br>    <h3>Piece Title (override) for the &lt;h1&gt;</h3>
+        <input name="zume_piece_h1" class="regular-text" id="zume_piece_h1" value="<?php echo esc_html( isset( $values['zume_piece_h1'] ) ? $values['zume_piece_h1'][0] : '' ) ?>" /><br><br>
+        <hr>
+        <h3>Pre-Video Content</h3>
+        <?php
+        $content = isset( $values['zume_pre_video_content'] ) ? $values['zume_pre_video_content'][0] : '';
+        wp_editor( $content, 'zume_pre_video_content', array( "media_buttons" => true ) );
+
+        ?>
+        <h3>Post-Video Content</h3>
+        <?php
+        $content = isset( $values['zume_post_video_content'] ) ? $values['zume_post_video_content'][0] : '';
+        wp_editor( $content, 'zume_post_video_content', array( "media_buttons" => true ) );
+
+        ?>
+        <h3>"Ask Yourself" Content</h3>
+        <?php
+        $content = isset( $values['zume_ask_content'] ) ? $values['zume_ask_content'][0] : '';
+        wp_editor( $content, 'zume_ask_content', array( "media_buttons" => true ) );
+    }
+
+
+
+    public function zume_pieces_save( $post_id ) {
+
+        // Bail if we're doing an auto save
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return;
+        }
+
+        // if our nonce isn't there, or we can't verify it, bail
+        if ( ! isset( $_POST['zume_piece_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['zume_piece_nonce'] ) ), 'zume_piece_nonce'.get_current_user_id() ) ) { return;
+        }
+
+        // if our current user can't edit this post, bail
+        if ( !current_user_can( 'edit_posts' ) ) { return;
+        }
+
+        if ( isset( $_POST['zume_piece'] ) ) {
+            update_post_meta( $post_id, 'zume_piece', sanitize_text_field( wp_unslash( $_POST['zume_piece'] ) ) );
+        }
+        if ( isset( $_POST['zume_piece_h1'] ) ) {
+            update_post_meta( $post_id, 'zume_piece_h1', sanitize_text_field( wp_unslash( $_POST['zume_piece_h1'] ) ) );
+        }
+        if ( isset( $_POST['zume_pre_video_content'] ) ) {
+            $my_data = wp_kses_post( wp_unslash( $_POST['zume_pre_video_content'] ) );
+            update_post_meta( $post_id, 'zume_pre_video_content', $my_data );
+        }
+        if ( isset( $_POST['zume_post_video_content'] ) ) {
+            $my_data = wp_kses_post( wp_unslash( $_POST['zume_post_video_content'] ) );
+            update_post_meta( $post_id, 'zume_post_video_content', $my_data );
+        }
+        if ( isset( $_POST['zume_ask_content'] ) ) {
+            $my_data = wp_kses_post( wp_unslash( $_POST['zume_ask_content'] ) );
+            update_post_meta( $post_id, 'zume_ask_content', $my_data );
+        }
+
+    }
+
 
     /**
      * Register the post type.

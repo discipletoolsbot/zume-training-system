@@ -1,25 +1,16 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-/**
- * Adds a magic link home page to the Disciple Tools system.
- * @usage This could be used to add a microsite in front of the Disciple Tools system. Or used to hide the
- * Disciple Tools login behind a false store front. Or used to extend an entire application to the public out
- * in front of the Disciple Tools system.
- *
- * @example https://yoursite.com/(empty)
- *
- * @see https://disciple.tools/plugins/porch/
- * @see https://disciple.tools/plugins/disciple-tools-porch-template/
- */
+
 class Zume_Training_Home extends DT_Magic_Url_Base
 {
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Title';
-    public $root = 'starter_app';
+    public $page_title = 'Zúme Training';
+    public $root = 'zume_app';
     public $type = 'home';
-    public static $token = 'starter_app_home';
+    public $lang = 'en';
+    public static $token = 'zume_app_home';
 
     private static $_instance = null;
     public static function instance() {
@@ -27,18 +18,25 @@ class Zume_Training_Home extends DT_Magic_Url_Base
             self::$_instance = new self();
         }
         return self::$_instance;
-    } // End instance()
+    }
 
     public function __construct() {
         parent::__construct();
 
         $url = dt_get_url_path();
-        if ( empty( $url ) && ! dt_is_rest() ) { // this filter is looking for the root site url without params.
+        $url_parts = explode( '/', $url );
+        if ( ( empty( $url ) || ! isset( $url_parts[1] ) ) && ! dt_is_rest() ) { // this filter is looking for the root site url without params.
 
+            if ( isset( $url_parts[0] ) ) {
+                $this->lang = $url_parts[0];
+                add_filter('locale', function( $locale ) {
+                    return $this->lang;
+                }, 100, 1);
+            }
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
             add_filter( 'dt_blank_access', function (){ return true;
-            }, 100, 1 ); // allows non-logged in visit
+            }, 100, 1 );
             add_filter( 'dt_allow_non_login_access', function (){ return true;
             }, 100, 1 );
             add_filter( 'dt_override_header_meta', function (){ return true;
@@ -72,6 +70,8 @@ class Zume_Training_Home extends DT_Magic_Url_Base
     }
 
     public function body(){
+        echo esc_html__( 'Zúme Training', 'zume-training' );
+        echo $this->lang;
     }
 }
 Zume_Training_Home::instance();
