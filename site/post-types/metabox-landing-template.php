@@ -47,7 +47,7 @@ function zume_landing_content( $post ) {
     <h3>Pre-Video</h3>
     <?php
     $content = isset( $values['zume_pre_video_content'][0] ) ? $values['zume_pre_video_content'][0] : '';
-    wp_editor( $content, 'zume_pre_video_content', array( "media_buttons" => true ) );
+    wp_editor( $content, 'zume_pre_video_content', array( 'media_buttons' => true ) );
 
     ?>
     <h3>Show Video</h3>
@@ -77,7 +77,7 @@ function zume_landing_content( $post ) {
     <h3>Post Video</h3>
     <?php
     $content = isset( $values['zume_post_video_content'][0] ) ? $values['zume_post_video_content'][0] : ''; // phpcs:ignore
-    wp_editor( $content, 'zume_post_video_content', array( "media_buttons" => true ) );
+    wp_editor( $content, 'zume_post_video_content', array( 'media_buttons' => true ) );
     ?>
     <h3>List Template</h3>
     <select name="zume_landing_list_template">

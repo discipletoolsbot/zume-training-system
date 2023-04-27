@@ -55,18 +55,18 @@ class Zume_Custom_Endpoints
         $params = $request->get_params();
 
         if ( ! isset( $params['action'], $params['data'] ) ) {
-            return new WP_Error( __METHOD__, "Missing parameters", [ 'status' => 400 ] );
+            return new WP_Error( __METHOD__, 'Missing parameters', [ 'status' => 400 ] );
         }
 
         $user_id = get_current_user_id();
         $params = dt_recursive_sanitize_array( $params );
         $action = sanitize_text_field( wp_unslash( $params['action'] ) );
 
-        switch( $action ) {
+        switch ( $action ) {
             case 'get_a_coach':
                 return $this->get_a_coach( $user_id );
             default:
-                return new WP_Error( __METHOD__, "Missing valid action", [ 'status' => 400 ] );
+                return new WP_Error( __METHOD__, 'Missing valid action', [ 'status' => 400 ] );
         }
     }
 

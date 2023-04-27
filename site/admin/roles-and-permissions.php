@@ -15,7 +15,7 @@ class DT_Porch_Landing_Roles
 
     private static $_instance = null;
     public static function instance() {
-        if (is_null( self::$_instance )) {
+        if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
         }
         return self::$_instance;
@@ -51,16 +51,16 @@ class DT_Porch_Landing_Roles
             'upload_files' => true,
         ];
 
-        if ( !isset( $expected_roles["porch_admin"] ) ){
-            $expected_roles["porch_admin"] = [
-                "label" => __( 'Porch Admin', 'disciple_tools' ),
-                "description" => "Administrates porch public pages",
-                "permissions" => $permissions
+        if ( !isset( $expected_roles['porch_admin'] ) ){
+            $expected_roles['porch_admin'] = [
+                'label' => __( 'Porch Admin', 'disciple_tools' ),
+                'description' => 'Administrates porch public pages',
+                'permissions' => $permissions
             ];
         }
-        if ( isset( $expected_roles["administrator"]["permissions"] ) ){
+        if ( isset( $expected_roles['administrator']['permissions'] ) ){
             foreach ( $permissions as $permission => $value ) {
-                $expected_roles["administrator"]["permissions"][$permission] = true;
+                $expected_roles['administrator']['permissions'][$permission] = true;
             }
         }
         return $expected_roles;

@@ -13,7 +13,7 @@ class Zume_Training_Menu_Post_Type
     public $taxonomies;
     private static $_instance = null;
     public static function instance() {
-        if (is_null( self::$_instance )) {
+        if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
         }
         return self::$_instance;
@@ -25,10 +25,10 @@ class Zume_Training_Menu_Post_Type
      * @param array $args
      * @param array $taxonomies
      */
-    public function __construct( $args = [], $taxonomies = []) {
+    public function __construct( $args = [], $taxonomies = [] ) {
         $this->post_type = 'zume_page';
-        $this->singular = 'Zume Page' ;
-        $this->plural = 'Zume Pages' ;
+        $this->singular = 'Zume Page';
+        $this->plural = 'Zume Pages';
         $this->root = 'zume_app';
         $this->type = 'page';
         $this->args = $args;
@@ -36,7 +36,7 @@ class Zume_Training_Menu_Post_Type
 
         add_action( 'init', [ $this, 'register_post_type' ] );
         add_action( 'transition_post_status', [ $this, 'transition_post' ], 10, 3 );
-        add_action( 'add_meta_boxes', [ $this, 'add_metabox_qr' ]);
+        add_action( 'add_meta_boxes', [ $this, 'add_metabox_qr' ] );
 
         if ( is_admin() && isset( $_GET['post_type'] ) && 'zume_pages' === $_GET['post_type'] ){
 
@@ -48,7 +48,7 @@ class Zume_Training_Menu_Post_Type
 
     public function add_metabox_qr( $post_type ) {
         if ( $this->post_type === $post_type ) {
-            add_meta_box('qrcode', esc_html__('QR Code', 'text-domain'), [$this, 'metabox_qr'], $this->post_type, 'side', 'high');
+            add_meta_box( 'qrcode', esc_html__( 'QR Code', 'text-domain' ), [ $this, 'metabox_qr' ], $this->post_type, 'side', 'high' );
         }
     }
     public function metabox_qr( $meta_id ) {
@@ -128,11 +128,11 @@ class Zume_Training_Menu_Post_Type
             $slug = str_replace( '"', '', $slug );
             $slug = str_replace( '&', '', $slug );
             $slug = str_replace( "'", '', $slug );
-            $slug = str_replace( ",", '', $slug );
-            $slug = str_replace( ":", '', $slug );
-            $slug = str_replace( ";", '', $slug );
-            $slug = str_replace( ".", '', $slug );
-            $slug = str_replace( "/", '', $slug );
+            $slug = str_replace( ',', '', $slug );
+            $slug = str_replace( ':', '', $slug );
+            $slug = str_replace( ';', '', $slug );
+            $slug = str_replace( '.', '', $slug );
+            $slug = str_replace( '/', '', $slug );
             $slug = urlencode( $slug );
 
             $current_public_key = get_post_meta( $post_id, PORCH_LANDING_META_KEY, true );
@@ -145,7 +145,7 @@ class Zume_Training_Menu_Post_Type
     }
 
     // Add the custom columns to the book post type:
-    public function set_custom_edit_columns( $columns) {
+    public function set_custom_edit_columns( $columns ) {
         unset( $columns['author'] );
         $columns['url'] = 'URL';
 

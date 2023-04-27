@@ -13,7 +13,7 @@ class Zume_Training_Pieces_Post_Type
     public $taxonomies;
     private static $_instance = null;
     public static function instance() {
-        if (is_null( self::$_instance )) {
+        if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
         }
         return self::$_instance;
@@ -25,10 +25,10 @@ class Zume_Training_Pieces_Post_Type
      * @param array $args
      * @param array $taxonomies
      */
-    public function __construct( $args = [], $taxonomies = []) {
+    public function __construct( $args = [], $taxonomies = [] ) {
         $this->post_type = 'zume_pieces';
-        $this->singular = 'Zume Pieces' ;
-        $this->plural = 'Zume Pieces' ;
+        $this->singular = 'Zume Pieces';
+        $this->plural = 'Zume Pieces';
         $this->root = 'zume_app';
         $this->type = 'pieces';
         $this->meta_key = 'zume_app_pieces_magic_key';
@@ -37,8 +37,8 @@ class Zume_Training_Pieces_Post_Type
 
         add_action( 'init', [ $this, 'register_post_type' ] );
         add_filter( 'post_type_link', array( $this, 'remove_slug' ), 10, 3 );
-        add_action( 'add_meta_boxes', [ $this, 'add_metabox' ]);
-        add_action( 'save_post', [ $this, 'zume_pieces_save'] );
+        add_action( 'add_meta_boxes', [ $this, 'add_metabox' ] );
+        add_action( 'save_post', [ $this, 'zume_pieces_save' ] );
 
         if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
 
@@ -49,8 +49,8 @@ class Zume_Training_Pieces_Post_Type
     }
     public function remove_slug( $permalink, $post, $leavename ){
         global $wp_post_types;
-        foreach( $wp_post_types as $type => $custom_post ){
-            if( $custom_post->_builtin == false && $type == $post->post_type   ){
+        foreach ( $wp_post_types as $type => $custom_post ){
+            if ( $custom_post->_builtin == false && $type == $post->post_type ){
                 $custom_post->rewrite['slug'] = trim( $custom_post->rewrite['slug'], '/' );
                 $permalink = str_replace( '/' . $custom_post->rewrite['slug'] . '/', '/', $permalink );
             }
@@ -59,7 +59,7 @@ class Zume_Training_Pieces_Post_Type
     }
     public function add_metabox( $post_type ) {
         if ( $this->post_type === $post_type ) {
-            add_meta_box('qrcode', esc_html__('QR Code', 'text-domain'), [$this, 'metabox_qr'], $this->post_type, 'side', 'high');
+            add_meta_box( 'qrcode', esc_html__( 'QR Code', 'text-domain' ), [ $this, 'metabox_qr' ], $this->post_type, 'side', 'high' );
             add_meta_box( 'pieces-content-box', 'Pieces Content', [ $this, 'metabox_pieces' ], $this->post_type, 'normal', 'high' );
         }
     }
@@ -85,9 +85,9 @@ class Zume_Training_Pieces_Post_Type
         <select name="zume_piece">
             <option></option>
             <?php
-            for ($x = 1; $x <= 32; $x++) {
+            for ( $x = 1; $x <= 32; $x++ ) {
                 $selected = false;
-                if ( $x == $number) {
+                if ( $x == $number ) {
                     $selected = true;
                 }
                 $post_number = zume_landing_page_post_id( $x );
@@ -101,19 +101,19 @@ class Zume_Training_Pieces_Post_Type
         <h3>Pre-Video Content</h3>
         <?php
         $content = isset( $values['zume_pre_video_content'] ) ? $values['zume_pre_video_content'][0] : '';
-        wp_editor( $content, 'zume_pre_video_content', array( "media_buttons" => true ) );
+        wp_editor( $content, 'zume_pre_video_content', array( 'media_buttons' => true ) );
 
         ?>
         <h3>Post-Video Content</h3>
         <?php
         $content = isset( $values['zume_post_video_content'] ) ? $values['zume_post_video_content'][0] : '';
-        wp_editor( $content, 'zume_post_video_content', array( "media_buttons" => true ) );
+        wp_editor( $content, 'zume_post_video_content', array( 'media_buttons' => true ) );
 
         ?>
         <h3>"Ask Yourself" Content</h3>
         <?php
         $content = isset( $values['zume_ask_content'] ) ? $values['zume_ask_content'][0] : '';
-        wp_editor( $content, 'zume_ask_content', array( "media_buttons" => true ) );
+        wp_editor( $content, 'zume_ask_content', array( 'media_buttons' => true ) );
     }
 
 
@@ -211,7 +211,7 @@ class Zume_Training_Pieces_Post_Type
     }
 
     // Add the custom columns to the book post type:
-    public function set_custom_edit_columns( $columns) {
+    public function set_custom_edit_columns( $columns ) {
         unset( $columns['author'] );
 
         return $columns;
@@ -255,7 +255,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
 
         $url = explode( '/', dt_get_url_path() );
         $languages = zume_training_languages( true );
-        if ( isset( $url[0]) && in_array( $url[0], $languages ) && isset( $url[1]) ) {
+        if ( isset( $url[0] ) && in_array( $url[0], $languages ) && isset( $url[1] ) ) {
 
             global $wpdb;
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type = %s", $url[1], 'zume_pieces' ) );
@@ -266,7 +266,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
             $this->page_title = get_the_title( $this->postid );
 
             // register url and access
-            add_action('template_redirect', [$this, 'theme_redirect']);
+            add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
             add_filter('dt_blank_access', function () {
                 return true;
             }, 100, 1); // allows non-logged in visit
@@ -278,17 +278,17 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
             }, 100, 1);
 
             // header content
-            add_filter('dt_blank_title', [$this, 'page_tab_title']);
-            add_action('wp_print_scripts', [$this, 'print_scripts'], 1500);
-            add_action('wp_print_styles', [$this, 'print_styles'], 1500);
+            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
+            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 );
+            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
 
             // page content
-            add_action('dt_blank_head', [$this, '_header']);
-            add_action('dt_blank_body', [$this, 'body']);
-            add_action('dt_blank_footer', [$this, '_footer']);
+            add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_body', [ $this, 'body' ] );
+            add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 
-            add_filter('dt_magic_url_base_allowed_css', [$this, 'dt_magic_url_base_allowed_css'], 10, 1);
-            add_filter('dt_magic_url_base_allowed_js', [$this, 'dt_magic_url_base_allowed_js'], 10, 1);
+            add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
+            add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
         }
     }
 
@@ -304,7 +304,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
     }
 
     public function body(){
-        echo  get_the_title( $this->postid );
+        echo esc_html( get_the_title( $this->postid ) );
     }
 }
 Zume_Training_Pieces_URL::instance();

@@ -14,12 +14,11 @@ foreach ( $dir as $file ){
                 require_once( __DIR__ . '/'. $file . '/' . $subfile );
             }
             if ( substr( $subfile, 0, 1 ) !== '.' && is_dir( __DIR__ . '/'. $file . '/' . $subfile ) ) {
-                $subsubdir = scandir( __DIR__ . '/'. $file . '/' . $subfile  );
+                $subsubdir = scandir( __DIR__ . '/'. $file . '/' . $subfile );
                 foreach ( $subsubdir as $subsubfile ){
                     if ( 'php' === substr( $subsubfile, -3, 3 ) && 'index.php' !== $subsubfile && 'loader.php' !== $subsubfile && substr( $subsubfile, 0, 1 ) !== '.' ) {
                         require_once( __DIR__ . '/'. $file . '/' . $subfile . '/' . $subsubfile );
                     }
-
                 }
             }
         }

@@ -11,11 +11,11 @@ if ( is_admin() ) {
     function zume_add_resource_hide_section_init() {
         global $post;
 
-        if ( !empty( $post ))
+        if ( !empty( $post ) )
         {
             $page_template = get_post_meta( $post->ID, '_wp_page_template', true );
 
-            if ($page_template == 'template-zume-resources.php' )
+            if ( $page_template == 'template-zume-resources.php' )
             {
                 add_meta_box( 'zume_resource_meta_section', 'Hide Default Top of Resource Page', 'zume_resource_hide_section_metabox', 'page', 'normal', 'low' );
             }
