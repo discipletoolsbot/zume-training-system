@@ -1,1 +1,0 @@
-The languages.json file in the root of zume.training is the master languages.json for the zume.pwa app, zume.vision, and movement logging.

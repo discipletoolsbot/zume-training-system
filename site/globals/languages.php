@@ -12,3 +12,6 @@ function zume_training_languages( $code_list = false ) {
         return $languages;
     }
 }
+
+
+
