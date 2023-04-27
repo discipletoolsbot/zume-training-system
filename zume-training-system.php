@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name: Zume Training System
+ * Plugin Name: Zúme Training System
  * Plugin URI: https://github.com/ZumeProject/zume-training-system
- * Description: Zume System Integrations
- * Text Domain: zume-system-integrations
+ * Description: Zume Training System
+ * Text Domain: zume
  * Domain Path: /languages
  * Version:  0.2
  * Author URI: https://github.com/ZumeProject/zume-training-system
@@ -18,35 +18,82 @@
  *          https://www.gnu.org/licenses/gpl-2.0.html
  */
 
-class Zume_Context_Switcher {
-    private static $instance = null;
-    public static function instance() {
-        if ( is_null( self::$instance ) ) {
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
-    public function __construct(){
-        $site = get_bloginfo();
 
-        require_once( 'globals/loader.php' );
+function zume_training() {
+    $zume_training_required_dt_theme_version = '1.0';
+    $wp_theme = wp_get_theme();
+    $version = $wp_theme->version;
 
-        switch ( $site ) {
-            case 'Coaching':
-                require_once( 'zume-training-coaching/loader.php' );
-                break;
-            case 'Zúme Training':
-                require_once( 'zume-training/loader.php' );
-                break;
-            case 'Vision':
-                require_once( 'zume-vision/loader.php' );
-                break;
-            default:
-        }
+    /*
+     * Check if the Disciple.Tools theme is loaded and is the latest required version
+     */
+    $is_theme_dt = strpos( $wp_theme->get_template(), "disciple-tools-theme" ) !== false || $wp_theme->name === "Disciple Tools";
+    if ( $is_theme_dt && version_compare( $version, $zume_training_required_dt_theme_version, "<" ) ) {
         return false;
     }
+    if ( !$is_theme_dt ){
+        return false;
+    }
+
+    if ( !defined( 'DT_FUNCTIONS_READY' ) ){
+        require_once get_template_directory() . '/dt-core/global-functions.php';
+    }
+
+    return Zume_Training::instance();
 }
+add_action( 'after_setup_theme', 'zume_training', 20 );
 
-add_action( 'after_setup_theme', [ 'Zume_Context_Switcher', 'instance' ], 10 );
 
+class Zume_Training {
+    private static $_instance = null;
+    public static function instance() {
+        if ( is_null( self::$_instance ) ) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+    private function __construct() {
+        require_once( 'site/loader.php' );
+        $this->i18n();
+    }
+    public static function activation() {
+    }
+    public static function deactivation() {
+    }
+    public function i18n() {
+        $domain = 'zume';
+        load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
+    }
+    public function __toString() {
+        return 'zume';
+    }
+    public function __clone() {
+        _doing_it_wrong( __FUNCTION__, 'Whoah, partner!', '0.1' );
+    }
+    public function __wakeup() {
+        _doing_it_wrong( __FUNCTION__, 'Whoah, partner!', '0.1' );
+    }
+    public function __call( $method = '', $args = array() ) {
+        _doing_it_wrong( "zume_training::" . esc_html( $method ), 'Method does not exist.', '0.1' );
+        unset( $method, $args );
+        return null;
+    }
+}
+add_action( 'plugins_loaded', function (){
+    if ( is_admin() && !( is_multisite() && class_exists( "DT_Multisite" ) ) || wp_doing_cron() ){
+        // Check for plugin updates
+        if ( ! class_exists( 'Puc_v4_Factory' ) ) {
+            if ( file_exists( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' )){
+                require( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' );
+            }
+        }
+        if ( class_exists( 'Puc_v4_Factory' ) ){
+            Puc_v4_Factory::buildUpdateChecker(
+                'https://raw.githubusercontent.com/ZumeProject/zume-training-system/master/version-control.json',
+                __FILE__,
+                'zume-training-system'
+            );
 
+        }
+    }
+} );
