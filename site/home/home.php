@@ -71,6 +71,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
     public function body(){
         echo esc_html__( 'Zúme Training', 'zume-training' );
+        echo '<br />';
         echo esc_html( $this->lang );
     }
 }
