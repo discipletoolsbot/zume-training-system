@@ -254,8 +254,8 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
         }
 
         $url = explode( '/', dt_get_url_path() );
-        $languages = zume_training_languages( true );
-        if ( isset( $url[0] ) && in_array( $url[0], $languages ) && isset( $url[1] ) ) {
+        $codes = zume_language_codes();
+        if ( isset( $url[0] ) && in_array( $url[0], $codes ) && isset( $url[1] ) ) {
 
             global $wpdb;
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type = %s", $url[1], 'zume_pieces' ) );

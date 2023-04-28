@@ -2,6 +2,14 @@
 /**
  * Auto loads 2 levels of php files, and file in subdirectories
  */
+
+// Load dependencies first
+require_once __DIR__ . '/languages.php';
+
+
+
+
+// Load all other files
 $dir = scandir( __DIR__ );
 foreach ( $dir as $file ){
     if ( 'php' === substr( $file, -3, 3 ) && 'index.php' !== $file && 'loader.php' !== $file && substr( $file, 0, 1 ) !== '.' ) {

@@ -22,17 +22,21 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
     public function __construct() {
         parent::__construct();
+        $this->lang = get_locale();
 
         $url = dt_get_url_path();
         $url_parts = explode( '/', $url );
-        if ( ( empty( $url ) || ! isset( $url_parts[1] ) ) && ! dt_is_rest() ) {
+        $codes = zume_language_codes();
+        if ( ( empty( $url ) || ( isset( $url_parts[0] ) && in_array( $url_parts[0], $codes ) ) ) && ! dt_is_rest() ) {
 
-            if ( isset( $url_parts[0] ) ) {
+dt_write_log( $url_parts[0] );
+            if ( true ) {
                 $this->lang = $url_parts[0];
                 add_filter('locale', function( $locale ) {
                     return $this->lang;
                 }, 100, 1);
             }
+dt_write_log( get_locale());
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
             add_filter( 'dt_blank_access', function (){ return true;
