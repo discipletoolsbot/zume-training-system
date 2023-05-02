@@ -88,11 +88,11 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
         <?php if ( is_user_logged_in() ) : ?>
 
-            <a href="/login"><?php esc_html_e( 'Login', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( wp_logout_url() ) ?>"><?php esc_html_e( 'Logout', 'zume' ) ?></a>
 
         <?php else : ?>
 
-            <a href="<?php echo esc_url( wp_logout_url() ) ?>"><?php esc_html_e( 'Logout', 'zume' ) ?></a>
+            <a href="/login"><?php esc_html_e( 'Login', 'zume' ) ?></a>
 
         <?php endif; ?>
 

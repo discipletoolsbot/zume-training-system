@@ -15,6 +15,7 @@ class Zume_Training_Login extends DT_Magic_Url_Base {
     public $type = 'login';
     public $lang = 'en';
     public static $token = 'zume_app_login';
+    public $url;
 
     private static $_instance = null;
     public static function instance() {
@@ -30,9 +31,15 @@ class Zume_Training_Login extends DT_Magic_Url_Base {
         /**
          * tests if other URL
          */
-        $url = dt_get_url_path();
-        $url_parts = explode( '/', $url );
+        $url_path = dt_get_url_path();
+        $this->url = new DT_URL( $url_path );
+
+        $url_path = parse_url( $url_path, PHP_URL_PATH );
+
+        $url_parts = explode( '/', $url_path );
+
         $codes = zume_language_codes();
+
         if ( ( isset( $url_parts[0] ) && ( $url_parts[0] === $this->type || ( in_array( $url_parts[0], $codes ) && isset( $url_parts[1] ) && $url_parts[1] === $this->type ) ) ) && ! dt_is_rest() ) {
             // load if valid url
             if ( true ) {
@@ -104,12 +111,25 @@ class Zume_Training_Login extends DT_Magic_Url_Base {
         if ( is_user_logged_in() ) {
             $redirect_url = DT_Login_Fields::get( 'redirect_url' );
             if ( empty( $redirect_url ) ) {
-                $redirect_url = '/';
+                $redirect_url = site_url();
             }
 
+            $redirect_to = $this->url->query_params->get( 'redirect_to' );
+
+            if ( !empty( $redirect_to ) ) {
+                $redirect_url = $redirect_to;
+            }
 
             if ( wp_redirect( $redirect_url ) ) {
                 exit();
+            }
+        } else {
+            $loggedout = $this->url->query_params->get( 'loggedout' );
+
+            if ( !empty( $loggedout ) && $loggedout === 'true' ) {
+                if ( wp_redirect( site_url() ) ) {
+                    exit();
+                }
             }
         }
 
