@@ -83,306 +83,306 @@ class Zume_Training {
         global $zume_languages;
         $zume_languages = array(
             array(
-                "enDisplayName" => "English",
-                "code" => "en",
-                "locale" => "en",
-                "nativeName" => "English",
-                "rtl" => false
+                'enDisplayName' => 'English',
+                'code' => 'en',
+                'locale' => 'en',
+                'nativeName' => 'English',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Arabic",
-                "code" => "ar",
-                "locale" => "ar_LB",
-                "nativeName" => "العربية",
-                "rtl" => true
+                'enDisplayName' => 'Arabic',
+                'code' => 'ar',
+                'locale' => 'ar_LB',
+                'nativeName' => 'العربية',
+                'rtl' => true
             ),
             array(
-                "enDisplayName" => "Arabic (JO)",
-                "code" => "ar_jo",
-                "locale" => "ar_JO",
-                "nativeName" => "العربية - الأردن",
-                "rtl" => true
+                'enDisplayName' => 'Arabic (JO)',
+                'code' => 'ar_jo',
+                'locale' => 'ar_JO',
+                'nativeName' => 'العربية - الأردن',
+                'rtl' => true
             ),
             array(
-                "enDisplayName" => "American Sign Language",
-                "code" => "asl",
-                "locale" => "asl",
-                "nativeName" => "Sign Language",
-                "rtl" => false
+                'enDisplayName' => 'American Sign Language',
+                'code' => 'asl',
+                'locale' => 'asl',
+                'nativeName' => 'Sign Language',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Bhojpuri",
-                "code" => "bho",
-                "locale" => "bho",
-                "nativeName" => "भोजपुरी",
-                "rtl" => false
+                'enDisplayName' => 'Bhojpuri',
+                'code' => 'bho',
+                'locale' => 'bho',
+                'nativeName' => 'भोजपुरी',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Bengali (India)",
-                "code" => "bn",
-                "locale" => "bn_IN",
-                "nativeName" => "বাংলা",
-                "rtl" => false
+                'enDisplayName' => 'Bengali (India)',
+                'code' => 'bn',
+                'locale' => 'bn_IN',
+                'nativeName' => 'বাংলা',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Bosnian",
-                "code" => "bs",
-                "locale" => "bs_BA",
-                "nativeName" => "Bosanski",
-                "rtl" => false
+                'enDisplayName' => 'Bosnian',
+                'code' => 'bs',
+                'locale' => 'bs_BA',
+                'nativeName' => 'Bosanski',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Cantonese (Traditional)",
-                "code" => "zhhk",
-                "locale" => "zh_HK",
-                "nativeName" => "粵語 (繁體)",
-                "rtl" => false
+                'enDisplayName' => 'Cantonese (Traditional)',
+                'code' => 'zhhk',
+                'locale' => 'zh_HK',
+                'nativeName' => '粵語 (繁體)',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Chinese (Simplified)",
-                "code" => "zhcn",
-                "locale" => "zh_CN",
-                "nativeName" => "国语（简体)",
-                "rtl" => false
+                'enDisplayName' => 'Chinese (Simplified)',
+                'code' => 'zhcn',
+                'locale' => 'zh_CN',
+                'nativeName' => '国语（简体)',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Chinese (Traditional)",
-                "code" => "zhtw",
-                "locale" => "zh_TW",
-                "nativeName" => "國語（繁體)",
-                "rtl" => false
+                'enDisplayName' => 'Chinese (Traditional)',
+                'code' => 'zhtw',
+                'locale' => 'zh_TW',
+                'nativeName' => '國語（繁體)',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Croatian",
-                "code" => "hr",
-                "locale" => "hr",
-                "nativeName" => "Hrvatski",
-                "rtl" => false
+                'enDisplayName' => 'Croatian',
+                'code' => 'hr',
+                'locale' => 'hr',
+                'nativeName' => 'Hrvatski',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Farsi/Persian",
-                "code" => "fa",
-                "locale" => "fa_IR",
-                "nativeName" => "فارسی",
-                "rtl" => true
+                'enDisplayName' => 'Farsi/Persian',
+                'code' => 'fa',
+                'locale' => 'fa_IR',
+                'nativeName' => 'فارسی',
+                'rtl' => true
             ),
             array(
-                "enDisplayName" => "French",
-                "code" => "fr",
-                "locale" => "fr_FR",
-                "nativeName" => "Français",
-                "rtl" => false
+                'enDisplayName' => 'French',
+                'code' => 'fr',
+                'locale' => 'fr_FR',
+                'nativeName' => 'Français',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "German",
-                "code" => "de",
-                "locale" => "de_DE",
-                "nativeName" => "Deutsch",
-                "rtl" => false
+                'enDisplayName' => 'German',
+                'code' => 'de',
+                'locale' => 'de_DE',
+                'nativeName' => 'Deutsch',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Gujarati",
-                "code" => "gu",
-                "locale" => "gu",
-                "nativeName" => "ગુજરાતી",
-                "rtl" => false
+                'enDisplayName' => 'Gujarati',
+                'code' => 'gu',
+                'locale' => 'gu',
+                'nativeName' => 'ગુજરાતી',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Hausa",
-                "code" => "ha",
-                "locale" => "ha_NG",
-                "nativeName" => "Hausa",
-                "rtl" => false
+                'enDisplayName' => 'Hausa',
+                'code' => 'ha',
+                'locale' => 'ha_NG',
+                'nativeName' => 'Hausa',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Hindi",
-                "code" => "hi",
-                "locale" => "hi_IN",
-                "nativeName" => "हिन्दी",
-                "rtl" => false
+                'enDisplayName' => 'Hindi',
+                'code' => 'hi',
+                'locale' => 'hi_IN',
+                'nativeName' => 'हिन्दी',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Indonesian",
-                "code" => "id",
-                "locale" => "id_ID",
-                "nativeName" => "Bahasa Indonesia",
-                "rtl" => false
+                'enDisplayName' => 'Indonesian',
+                'code' => 'id',
+                'locale' => 'id_ID',
+                'nativeName' => 'Bahasa Indonesia',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Italian",
-                "code" => "it",
-                "locale" => "it_IT",
-                "nativeName" => "Italiano",
-                "rtl" => false
+                'enDisplayName' => 'Italian',
+                'code' => 'it',
+                'locale' => 'it_IT',
+                'nativeName' => 'Italiano',
+                'rtl' => false
             ),
 
             array(
-                "enDisplayName" => "Kannada",
-                "code" => "kn",
-                "locale" => "kn",
-                "nativeName" => "ಕನ್ನಡ",
-                "rtl" => false
+                'enDisplayName' => 'Kannada',
+                'code' => 'kn',
+                'locale' => 'kn',
+                'nativeName' => 'ಕನ್ನಡ',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Korean",
-                "code" => "ko",
-                "locale" => "ko_KR",
-                "nativeName" => "한국어",
-                "rtl" => false
+                'enDisplayName' => 'Korean',
+                'code' => 'ko',
+                'locale' => 'ko_KR',
+                'nativeName' => '한국어',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Kurdish",
-                "code" => "ku",
-                "locale" => "ku",
-                "nativeName" => "کوردی",
-                "rtl" => true
+                'enDisplayName' => 'Kurdish',
+                'code' => 'ku',
+                'locale' => 'ku',
+                'nativeName' => 'کوردی',
+                'rtl' => true
             ),
             array(
-                "enDisplayName" => "Lao",
-                "code" => "lo",
-                "locale" => "lo",
-                "nativeName" => "ພາສາລາວ",
-                "rtl" => false
+                'enDisplayName' => 'Lao',
+                'code' => 'lo',
+                'locale' => 'lo',
+                'nativeName' => 'ພາສາລາວ',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Maithili",
-                "code" => "mai",
-                "locale" => "mai",
-                "nativeName" => "𑒧𑒻𑒟𑒱𑒪𑒲",
-                "rtl" => false
+                'enDisplayName' => 'Maithili',
+                'code' => 'mai',
+                'locale' => 'mai',
+                'nativeName' => '𑒧𑒻𑒟𑒱𑒪𑒲',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Marathi",
-                "code" => "mr",
-                "locale" => "mr",
-                "nativeName" => "मराठी",
-                "rtl" => false
+                'enDisplayName' => 'Marathi',
+                'code' => 'mr',
+                'locale' => 'mr',
+                'nativeName' => 'मराठी',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Malayalam",
-                "code" => "ml",
-                "locale" => "ml",
-                "nativeName" => "മലയാളം",
-                "rtl" => false
+                'enDisplayName' => 'Malayalam',
+                'code' => 'ml',
+                'locale' => 'ml',
+                'nativeName' => 'മലയാളം',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Nepali",
-                "code" => "ne",
-                "locale" => "ne_NP",
-                "nativeName" => "नेपाली",
-                "rtl" => false
+                'enDisplayName' => 'Nepali',
+                'code' => 'ne',
+                'locale' => 'ne_NP',
+                'nativeName' => 'नेपाली',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Oriya",
-                "code" => "or",
-                "locale" => "or_IN",
-                "nativeName" => "ଓଡ଼ିଆ",
-                "rtl" => false
+                'enDisplayName' => 'Oriya',
+                'code' => 'or',
+                'locale' => 'or_IN',
+                'nativeName' => 'ଓଡ଼ିଆ',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Punjabi",
-                "code" => "pa",
-                "locale" => "pa_IN",
-                "nativeName" => "ਪੰਜਾਬੀ",
-                "rtl" => false
+                'enDisplayName' => 'Punjabi',
+                'code' => 'pa',
+                'locale' => 'pa_IN',
+                'nativeName' => 'ਪੰਜਾਬੀ',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Portuguese",
-                "code" => "pt",
-                "locale" => "pt_PT",
-                "nativeName" => "Português",
-                "rtl" => false
+                'enDisplayName' => 'Portuguese',
+                'code' => 'pt',
+                'locale' => 'pt_PT',
+                'nativeName' => 'Português',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Russian",
-                "code" => "ru",
-                "locale" => "ru_RU",
-                "nativeName" => "Русский",
-                "rtl" => false
+                'enDisplayName' => 'Russian',
+                'code' => 'ru',
+                'locale' => 'ru_RU',
+                'nativeName' => 'Русский',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Romanian",
-                "code" => "ro",
-                "locale" => "ro_RO",
-                "nativeName" => "Română",
-                "rtl" => false
+                'enDisplayName' => 'Romanian',
+                'code' => 'ro',
+                'locale' => 'ro_RO',
+                'nativeName' => 'Română',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Slovenian",
-                "code" => "sl",
-                "locale" => "sl_Sl",
-                "nativeName" => "Slovenščina",
-                "rtl" => false
+                'enDisplayName' => 'Slovenian',
+                'code' => 'sl',
+                'locale' => 'sl_Sl',
+                'nativeName' => 'Slovenščina',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Spanish",
-                "code" => "es",
-                "locale" => "es",
-                "nativeName" => "Español",
-                "rtl" => false
+                'enDisplayName' => 'Spanish',
+                'code' => 'es',
+                'locale' => 'es',
+                'nativeName' => 'Español',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Somali",
-                "code" => "so",
-                "locale" => "so",
-                "nativeName" => "Soomaali",
-                "rtl" => false
+                'enDisplayName' => 'Somali',
+                'code' => 'so',
+                'locale' => 'so',
+                'nativeName' => 'Soomaali',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Swahili",
-                "code" => "swa",
-                "locale" => "swa",
-                "nativeName" => "Kiswahili",
-                "rtl" => false
+                'enDisplayName' => 'Swahili',
+                'code' => 'swa',
+                'locale' => 'swa',
+                'nativeName' => 'Kiswahili',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Tamil",
-                "code" => "ta",
-                "locale" => "ta_IN",
-                "nativeName" => "தமிழ்",
-                "rtl" => false
+                'enDisplayName' => 'Tamil',
+                'code' => 'ta',
+                'locale' => 'ta_IN',
+                'nativeName' => 'தமிழ்',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Telugu",
-                "code" => "te",
-                "locale" => "te",
-                "nativeName" => "తెలుగు",
-                "rtl" => false
+                'enDisplayName' => 'Telugu',
+                'code' => 'te',
+                'locale' => 'te',
+                'nativeName' => 'తెలుగు',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Thai",
-                "code" => "th",
-                "locale" => "th",
-                "nativeName" => "ไทย",
-                "rtl" => false
+                'enDisplayName' => 'Thai',
+                'code' => 'th',
+                'locale' => 'th',
+                'nativeName' => 'ไทย',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Turkish",
-                "code" => "tr",
-                "locale" => "tr_TR",
-                "nativeName" => "Türkçe",
-                "rtl" => false
+                'enDisplayName' => 'Turkish',
+                'code' => 'tr',
+                'locale' => 'tr_TR',
+                'nativeName' => 'Türkçe',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Urdu",
-                "code" => "ur",
-                "locale" => "ur",
-                "nativeName" => "اردو",
-                "rtl" => true
+                'enDisplayName' => 'Urdu',
+                'code' => 'ur',
+                'locale' => 'ur',
+                'nativeName' => 'اردو',
+                'rtl' => true
             ),
             array(
-                "enDisplayName" => "Vietnamese",
-                "code" => "vi",
-                "locale" => "vi",
-                "nativeName" => "Tiếng Việt",
-                "rtl" => false
+                'enDisplayName' => 'Vietnamese',
+                'code' => 'vi',
+                'locale' => 'vi',
+                'nativeName' => 'Tiếng Việt',
+                'rtl' => false
             ),
             array(
-                "enDisplayName" => "Yoruba",
-                "code" => "yo",
-                "locale" => "yo",
-                "nativeName" => "Yorùbá",
-                "rtl" => false
+                'enDisplayName' => 'Yoruba',
+                'code' => 'yo',
+                'locale' => 'yo',
+                'nativeName' => 'Yorùbá',
+                'rtl' => false
             )
         );
     }

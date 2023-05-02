@@ -30,13 +30,16 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         if ( ( empty( $url ) || ( count( $url_parts ) === 1 && in_array( $url_parts[0], $codes ) ) ) && ! dt_is_rest() ) {
 
             dt_write_log( $url_parts[0] );
+
             if ( true ) {
                 $this->lang = $url_parts[0];
                 add_filter('locale', function( $locale ) {
                     return $this->lang;
                 }, 100, 1);
             }
+
             dt_write_log( get_locale() );
+
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
             add_filter( 'dt_blank_access', function (){ return true;
@@ -84,6 +87,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         global $zume_languages;
         ?>
         <a data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
+<<<<<<< HEAD
         <br>
 
         <?php if ( is_user_logged_in() ) : ?>
@@ -96,6 +100,8 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
         <?php endif; ?>
 
+=======
+>>>>>>> main
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
             <hr>
