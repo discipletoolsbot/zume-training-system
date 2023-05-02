@@ -29,14 +29,14 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         $codes = zume_language_codes();
         if ( ( empty( $url ) || ( count( $url_parts ) === 1 && in_array( $url_parts[0], $codes ) ) ) && ! dt_is_rest() ) {
 
-dt_write_log( $url_parts[0] );
+            dt_write_log( $url_parts[0] );
             if ( true ) {
                 $this->lang = $url_parts[0];
                 add_filter('locale', function( $locale ) {
                     return $this->lang;
                 }, 100, 1);
             }
-dt_write_log( get_locale());
+            dt_write_log( get_locale() );
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
             add_filter( 'dt_blank_access', function (){ return true;
@@ -83,9 +83,21 @@ dt_write_log( get_locale());
     public function body(){
         global $zume_languages;
         ?>
-        <a data-open="language-menu-reveal"><?php esc_html_e( "Language", 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
+        <a data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
+        <br>
+
+        <?php if ( is_user_logged_in() ) : ?>
+
+            <a href="/login"><?php esc_html_e( 'Login', 'zume' ) ?></a>
+
+        <?php else : ?>
+
+            <a href="<?php echo esc_url( wp_logout_url() ) ?>"><?php esc_html_e( 'Logout', 'zume' ) ?></a>
+
+        <?php endif; ?>
+
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
-            <h3><?php esc_html_e( "Language", 'zume' ) ?></h3>
+            <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
             <hr>
             <table class="hover" id="language-table">
                 <?php
