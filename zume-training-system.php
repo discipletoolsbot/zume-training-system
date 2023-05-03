@@ -24,6 +24,10 @@ function zume_training() {
     $wp_theme = wp_get_theme();
     $version = $wp_theme->version;
 
+    if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+        require_once __DIR__ . '/vendor/autoload.php';
+    }
+
     /*
      * Check if the Disciple.Tools theme is loaded and is the latest required version
      */
