@@ -23,7 +23,7 @@ export class MyElement extends LitElement {
 
   constructor() {
     super()
-    this.docsHint = 'Click on the Vite and Lit logos to learn more'
+    this.docsHint = 'Click on the picsum photos to learn more'
     this.count = 0
   }
 
