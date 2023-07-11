@@ -87,7 +87,6 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         global $zume_languages;
         ?>
         <a data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
-<<<<<<< HEAD
         <br>
 
         <?php if ( is_user_logged_in() ) : ?>
@@ -100,8 +99,6 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
         <?php endif; ?>
 
-=======
->>>>>>> main
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
             <hr>
