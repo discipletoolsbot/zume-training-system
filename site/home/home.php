@@ -88,9 +88,22 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         ?>
         <a data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
 
+        <br>
+
+        <?php if ( is_user_logged_in() ) : ?>
+
+            <a href="<?php echo esc_url( wp_logout_url() ) ?>"><?php esc_html_e( 'Logout', 'zume' ) ?></a>
+
+        <?php else : ?>
+
+            <a href="/login"><?php esc_html_e( 'Login', 'zume' ) ?></a>
+
+        <?php endif; ?>
+
         <my-element>
             <h1>Vite + Lit</h1>
         </my-element>
+
 
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
