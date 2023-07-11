@@ -27,7 +27,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         $url = dt_get_url_path();
         $url_parts = explode( '/', $url );
         $codes = zume_language_codes();
-        if ( ( empty( $url ) || ( isset( $url_parts[0] ) && in_array( $url_parts[0], $codes ) ) ) && ! dt_is_rest() ) {
+        if ( ( empty( $url ) || ( count( $url_parts ) === 1 && in_array( $url_parts[0], $codes ) ) ) && ! dt_is_rest() ) {
 
             dt_write_log( $url_parts[0] );
 
@@ -87,9 +87,11 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         global $zume_languages;
         ?>
         <a data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a> | current: <?php echo esc_html( get_locale() ) ?>
+
         <my-element>
             <h1>Vite + Lit</h1>
         </my-element>
+
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
             <hr>
