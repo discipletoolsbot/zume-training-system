@@ -80,13 +80,19 @@ class Zume_System_State_API
                 }
                 $results[$index]['timestamp'] = date( 'd-m-Y H:i:s',  $value['timestamp'] );
                 $results[$index]['time_end'] = date( 'D j, M Y',  $value['time_end'] );
-                if ( isset( $training_items[$value['payload']] ) && ! $training_items[$value['payload']] ) {
-                    $training_items[$value['payload']] = true;
-                }
+
                 if ( isset( $training_items[$value['subtype']]['completed'] ) && ! $training_items[$value['subtype']]['completed'] ) {
                     $training_items[$value['subtype']]['completed'] = true;
                     $training_completed++;
                 }
+
+//                if ( isset( $training_items[$value['payload']] ) && ! $training_items[$value['payload']] ) {
+//                    $training_items[$value['payload']] = true;
+//                }
+//                if ( isset( $training_items[$value['subtype']]['completed'] ) && ! $training_items[$value['subtype']]['completed'] ) {
+//                    $training_items[$value['subtype']]['completed'] = true;
+//                    $training_completed++;
+//                }
             }
         }
 

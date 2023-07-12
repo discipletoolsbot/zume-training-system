@@ -560,28 +560,28 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 ],
                 "mawl" => [
                     [
-                        "label" => "Modeled",
+                        "label" => "Modeling",
                         "short_label" => "M",
                         "type" => "zume_coaching",
-                        "subtype" => $index."_modeled",
+                        "subtype" => $index."_modeling",
                     ],
                     [
-                        "label" => "Assisted",
+                        "label" => "Assisting",
                         "short_label" => "A",
                         "type" => "zume_coaching",
-                        "subtype" => $index."_assisted",
+                        "subtype" => $index."_assisting",
                     ],
                     [
-                        "label" => "Watched",
+                        "label" => "Watching",
                         "short_label" => "W",
                         "type" => "zume_coaching",
-                        "subtype" => $index."_watched",
+                        "subtype" => $index."_watching",
                     ],
                     [
-                        "label" => "Launched",
+                        "label" => "Launching",
                         "short_label" => "L",
                         "type" => "zume_coaching",
-                        "subtype" => $index."_launched",
+                        "subtype" => $index."_launching",
                     ],
                 ],
             ];
