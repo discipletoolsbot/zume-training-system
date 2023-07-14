@@ -1,3 +1,8 @@
-console.log('running a global script')
+/* Nav Button*/
 
-window.zume5 = 'hello there'
+const navButton = document.querySelector('.nav-toggle')
+const nav = document.querySelector('#nav')
+
+navButton.addEventListener('click', (e) => {
+    nav.classList.toggle('nav--visible')
+})

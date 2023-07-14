@@ -1,0 +1,180 @@
+// example styles.scss
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+
+@import 'mixins/buttons';
+
+@import 'utilities/position';
+@import 'utilities/display';
+
+:root {
+  font-family: $font-text;
+
+  color-scheme: light dark;
+  color: $brand-dark;
+  background-color: $white;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: $font-text;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+  max-width: $max-width;
+}
+
+header {
+  background-color: $white;
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid $brand-dark;
+}
+
+.nav {
+  display: none;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $font-headline;
+}
+
+.nav--visible {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 3rem;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid black;
+  border-top: none;
+}
+
+.nav__list {
+  padding: 0;
+}
+
+.nav__item {
+  padding: 0.25em 0;
+}
+
+.nav__link {
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  @include button;
+
+  padding: 1em 1em;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  width: 3em;
+  height: 2em;
+  border: 1px;
+  border-radius: 5px;
+  color: #2E323F;
+
+  top: -15px;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: .75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: #2E323F;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.logo {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+@media (min-width: $break-lg) {
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .align-items {
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav__list {
+        margin: 0;
+    }
+
+    header {
+        padding: 1em 0;
+        .nav__item {
+            float: left;
+            margin-left: 2em;
+        }
+    }
+
+    .nav__link--button {
+        display: inline;
+    }
+
+}

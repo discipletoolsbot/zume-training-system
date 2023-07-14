@@ -62,10 +62,16 @@ class Zume_Training {
         require_once( 'logging/loader.php' );
         require_once( 'site/loader.php' );
         $this->i18n();
+        $this->setup_hooks();
     }
     public static function activation() {
     }
     public static function deactivation() {
+    }
+    public function setup_hooks() {
+        add_action( 'dt_login_login_page_header', function() {
+            zume_training_nav();
+        } );
     }
     public function i18n() {
         $domain = 'zume';
