@@ -43,41 +43,28 @@ class Zume_System_User_Location_API
     public function user_location( WP_REST_Request $request ) {
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        $location = [
-            'lng' => '',
-            'lat' => '',
-            'level' => '',
-            'label' => '',
-            'grid_id' => '',
-        ];
-
-        // is user logged in
-        if ( isset( $params['user_id'] ) ) {
-
+        $user_id = null;
+        if ( isset( $params['user_id'] ) && ! empty( $params['user_id'] ) ) {
+            $user_id = $params['user_id'];
         }
-        else if ( is_user_logged_in() ) {
-            // use user location
+
+        return self::get_user_location( $user_id );
+    }
+    public static function get_user_location( $user_id = NULL ) {
+        global $wpdb;
+
+        if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
-            $contact_id = Disciple_Tools_Users::get_contact_for_user($user_id);
-            $contact = DT_Posts::get_post( 'contacts', $contact_id, false, false, true );
-            dt_write_log($contact);
-
-
-            // is user location profile set, then query user
-        }
-        else {
-            // use ip address
-
-
         }
 
-        // does user have user provided location
+        $grid_id = $wpdb->get_var( $wpdb->prepare( "SELECT grid_id FROM {$wpdb->prefix}dt_reports WHERE user_id = %d AND post_type = 'zume' AND type = 'registered'", $user_id ) );
+        if ( $grid_id ) {
+            return zume_location_list( $grid_id );
+        } else {
+            $list = zume_location_list();
+            return $list[0];
+        }
 
-        // if not, get location from IP
-
-        // update user location
-
-        // return user location
 
         return $location;
     }

@@ -3,7 +3,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_System_Log_API
 {
-    public $permissions = ['manage_dt'];
     public $namespace = 'zume_system/v1';
     private static $_instance = null;
 
@@ -31,40 +30,108 @@ class Zume_System_Log_API
             $namespace, '/log', [
                 'methods' => ['GET', 'POST'],
                 'callback' => [$this, 'log'],
-                'permission_callback' => function () {
-                    return is_user_logged_in();
-                }
+                'permission_callback' => '__return_true'
             ]
         );
     }
     public function log( WP_REST_Request $request ) {
+        global $wpdb;
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        // all dev logic
+        if ( ! isset( $params['type'], $params['subtype'] ) ) {
+            return new WP_Error(__METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
+        }
+
+        // get time
+        $time = time();
+        $today = date( 'Ymd', strtotime( 'Today' ) );
+
+                // BEGIN @todo dev only, remove for production.
+                if ( isset( $params['days_ago'] ) && ! empty( $params['days_ago'] ) ) {
+                    $today = strtotime( 'Today -'.$params['days_ago'].' days' ); // @todo dev only, remove for production.
+                } // END
+
+        // get hash
+        $hash = hash('sha256', maybe_serialize($params)  . $today );
+
+        // test hash for duplicate
+        $duplicate_found = $wpdb->get_row(
+            $wpdb->prepare(
+                "SELECT
+                    `id`
+                FROM
+                    `$wpdb->dt_reports`
+                WHERE hash = %s AND hash IS NOT NULL;",
+                $hash
+            )
+        );
+        if ( $duplicate_found ) {
+            return new WP_Error(__METHOD__, 'Duplicate entry for today.', ['status' => 409] );
+        }
+
+        // set data
+        $data = wp_parse_args(
+            $params,
+            [
+                'user_id' => null,
+                'post_id' => null,
+                'post_type' => 'zume',
+                'type' => null,
+                'subtype' => null,
+                'value' => null,
+                'lng' => null,
+                'lat' => null,
+                'level' => null,
+                'label' => null,
+                'grid_id' => null,
+                'time_end' => $time,
+                'hash' => $hash
+            ]
+        );
+
+        // evaluate type, subtype, and value
+        $valid_types = $this->_is_valid_types( $data );
+        if ( ! $valid_types ) {
+            return new WP_Error(__METHOD__, 'Valid type or subtype not found.', ['status' => 400] );
+        }
+
+        // all values other than 0 Anonymous require sign in.
+
+
+        // user id
+        if ( empty( $data['user_id'] ) && is_user_logged_in() ) {
+            $user_id = get_current_user_id();
+        }
+
+        if ( $user_id ) {
+            $post_id = Disciple_Tools_Users::get_contact_for_user($user_id);
+        }
+
+
+        // confirm location
+        //str_replace( ',', ', ', $params['location'] )
+
+
+
+
 
         $location = DT_Mapbox_API::forward_lookup( $params['location'] );
         $geocoder = new Location_Grid_Geocoder();
         $grid_row = $geocoder->get_grid_id_by_lnglat( $location['features'][0]['center'][0], $location['features'][0]['center'][1] );
         $level = 'city';
 
-        $time = strtotime( 'Today -'.$params['days_ago'].' days' );
-        $contact_id = Disciple_Tools_Users::get_contact_for_user($params['user_id']);
 
-        return dt_report_insert( [
-            'type' => $params['type'],
-            'subtype' => $params['subtype'],
-            'post_id' => $contact_id,
-            'value' => $params['stage'],
-            'grid_id' => $grid_row['grid_id'],
-            'label' => str_replace( ',', ', ', $params['location'] ),
-            'lat' => $grid_row['latitude'],
-            'lng' => $grid_row['longitude'],
-            'level' => $level,
-            'user_id' => $params['user_id'],
-            'time_end' => $time,
-            'hash' => hash('sha256', maybe_serialize($params)  . time() ),
-        ] );
+        $log = [];
+        $log[] = dt_report_insert( $data, true, false );
 
+        // check for additional logs to add for training or coaching
+
+        return $log;
+
+    }
+    public function _is_valid_types( $data ) : bool {
+        // test types and subtypes
+        return true;
     }
     public function authorize_url( $authorized ){
         if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace  ) !== false ) {
