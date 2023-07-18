@@ -77,17 +77,25 @@ class Zume_Training {
         } );
 
         /* Ensure that Login is enabled and settings set to the correct values */
-        DT_Login_Fields::update([
+        $fields = [
             'login_enabled' => 'on',
             'redirect_url' => '/dashboard',
             'login_url' => 'login',
             'ui_smallprint' => 'off',
-            'firebase_api_key' => $_ENV['FIREBASE_API_KEY'],
-            'firebase_project_id' => $_ENV['FIREBASE_PROJECT_ID'],
             'firebase_app_id' => $_ENV['FIREBASE_APP_ID'],
             'identity_providers_google' => 'on',
             'identity_providers_facebook' => 'on',
-        ]);
+        ];
+        if ( isset( $_ENV['FIREBASE_API_KEY'] ) ) {
+            $fields['firebase_api_key'] = $_ENV['FIREBASE_API_KEY'];
+        }
+        if ( isset( $_ENV['FIREBASE_PROJECT_ID'] ) ) {
+            $fields['firebase_project_id'] = $_ENV['FIREBASE_PROJECT_ID'];
+        }
+        if ( isset( $_ENV['FIREBASE_APP_ID'] ) ) {
+            $fields['firebase_app_id'] = $_ENV['FIREBASE_APP_ID'];
+        }
+        DT_Login_Fields::update( $fields );
     }
     public function i18n() {
         $domain = 'zume';
