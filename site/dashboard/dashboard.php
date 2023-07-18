@@ -2,15 +2,15 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Training_Home extends DT_Magic_Url_Base
+class Zume_Training_Dashboard extends DT_Magic_Url_Base
 {
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
-    public $type = 'home';
+    public $type = 'dashboard';
     public $lang = 'en';
-    public static $token = 'zume_app_home';
+    public static $token = 'zume_app_dashboard';
 
     private static $_instance = null;
     public static function instance() {
@@ -34,9 +34,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
             array_shift( $url_parts );
         }
 
-        if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
-
-            dt_write_log( $url_parts[0] );
+        if ( $url_parts[0] === 'dashboard' && ! dt_is_rest() ) {
 
             if ( $lang_code !== '' ) {
                 $this->lang = $lang_code;
@@ -44,8 +42,6 @@ class Zume_Training_Home extends DT_Magic_Url_Base
                     return $this->lang;
                 }, 100, 1);
             }
-
-            dt_write_log( get_locale() );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -96,12 +92,11 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         zume_training_nav();
         ?>
 
-        current language: <?php echo esc_html( get_locale() ) ?>
+        <h1 class="text-center">Dashboard</h1>
 
-        <my-element>
-            <h1>Vite + Lit</h1>
-        </my-element>
-
+        <p>
+            current language: <?php echo esc_html( get_locale() ) ?>
+        </p>
 
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
@@ -149,4 +144,4 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         <?php
     }
 }
-Zume_Training_Home::instance();
+Zume_Training_Dashboard::instance();
