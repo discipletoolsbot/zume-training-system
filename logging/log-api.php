@@ -78,7 +78,7 @@ class Zume_System_Log_API
                 'post_type' => 'zume',
                 'type' => null,
                 'subtype' => null,
-                'value' => null,
+                'value' => 0,
                 'lng' => null,
                 'lat' => null,
                 'level' => null,
@@ -95,36 +95,17 @@ class Zume_System_Log_API
             return new WP_Error(__METHOD__, 'Valid type or subtype not found.', ['status' => 400] );
         }
 
-        // all values other than 0 Anonymous require sign in.
-
-
         // user id
         if ( empty( $data['user_id'] ) && is_user_logged_in() ) {
             $user_id = get_current_user_id();
         }
 
-        if ( $user_id ) {
-            $post_id = Disciple_Tools_Users::get_contact_for_user($user_id);
+        if ( $data['user_id'] ) {
+            $data['post_id'] = Disciple_Tools_Users::get_contact_for_user($data['user_id']);
         }
-
-
-        // confirm location
-        //str_replace( ',', ', ', $params['location'] )
-
-
-
-
-
-        $location = DT_Mapbox_API::forward_lookup( $params['location'] );
-        $geocoder = new Location_Grid_Geocoder();
-        $grid_row = $geocoder->get_grid_id_by_lnglat( $location['features'][0]['center'][0], $location['features'][0]['center'][1] );
-        $level = 'city';
-
 
         $log = [];
         $log[] = dt_report_insert( $data, true, false );
-
-        // check for additional logs to add for training or coaching
 
         return $log;
 

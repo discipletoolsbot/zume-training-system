@@ -13,7 +13,6 @@ class Zume_System_User_Location_API
         }
         return self::$_instance;
     }
-
     public function __construct()
     {
         if ( dt_is_rest() ) {
@@ -31,7 +30,6 @@ class Zume_System_User_Location_API
     public function add_api_routes()
     {
         $namespace = $this->namespace;
-
         register_rest_route(
             $namespace, '/user_location', [
                 'methods' => ['GET', 'POST'],
@@ -40,34 +38,16 @@ class Zume_System_User_Location_API
             ]
         );
     }
+
     public function user_location( WP_REST_Request $request ) {
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        $user_id = null;
-        if ( isset( $params['user_id'] ) && ! empty( $params['user_id'] ) ) {
-            $user_id = $params['user_id'];
-        }
 
-        return self::get_user_location( $user_id );
+       return array('lng' => '-119.699', 'lat' => '37.0744', 'level' => 'region', 'label' => 'California, United States', 'grid_id' => '100364453');
     }
-    public static function get_user_location( $user_id = NULL ) {
-        global $wpdb;
-
-        if ( is_null( $user_id ) ) {
-            $user_id = get_current_user_id();
-        }
-
-        $grid_id = $wpdb->get_var( $wpdb->prepare( "SELECT grid_id FROM {$wpdb->prefix}dt_reports WHERE user_id = %d AND post_type = 'zume' AND type = 'registered'", $user_id ) );
-        if ( $grid_id ) {
-            return zume_location_list( $grid_id );
-        } else {
-            $list = zume_location_list();
-            return $list[0];
-        }
 
 
-        return $location;
-    }
+
 
 }
 Zume_System_User_Location_API::instance();

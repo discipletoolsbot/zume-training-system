@@ -36,6 +36,16 @@ class Zume_System_State_API
                 }
             ]
         );
+        register_rest_route(
+            $namespace, '/next_steps', [
+                'methods' => ['GET', 'POST'],
+                'callback' => [$this, 'next_steps'],
+                'permission_callback' => function () {
+                    return dt_has_permissions($this->permissions);
+                }
+            ]
+        );
+
     }
     public function user_state( WP_REST_Request $request ) {
         global $wpdb;
@@ -57,7 +67,7 @@ class Zume_System_State_API
         // query
         $sql = "SELECT * FROM wp_dt_reports
                 WHERE user_id = {$user_id}
-                AND type LIKE 'zume%'
+                AND post_type = 'zume'
                 AND time_end <= {$days_ago_timestamp}
                 ORDER BY time_end";
         $results = $wpdb->get_results( $sql, ARRAY_A );
@@ -85,14 +95,6 @@ class Zume_System_State_API
                     $training_items[$value['subtype']]['completed'] = true;
                     $training_completed++;
                 }
-
-//                if ( isset( $training_items[$value['payload']] ) && ! $training_items[$value['payload']] ) {
-//                    $training_items[$value['payload']] = true;
-//                }
-//                if ( isset( $training_items[$value['subtype']]['completed'] ) && ! $training_items[$value['subtype']]['completed'] ) {
-//                    $training_items[$value['subtype']]['completed'] = true;
-//                    $training_completed++;
-//                }
             }
         }
 
@@ -121,6 +123,76 @@ class Zume_System_State_API
         ];
 
         return $profile;
+
+    }
+
+    public function next_steps( WP_REST_Request $request ) {
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        global $wpdb;
+
+
+        return [
+            'current_stage' => '0',
+            'state' => [
+                'last_login' => '2019-01-01',
+                'last_key_activity' => '2019-01-01',
+                'next_expected_activity' => '2019-01-01',
+                'last_email' => '2019-01-01',
+                'last_cta' => '2019-01-01',
+                'has_coach' => false,
+                'has_set_profile' => false,
+                'has_invited_friends' => false,
+                'has_a_plan' => false,
+            ],
+            'priority_next_step' => [
+                'label' => 'Set Profile',
+                'key' => 'set_profile',
+            ],
+            'next_ctas' => [
+                [
+                    'label' => 'Set Profile',
+                    'key' => 'set_profile',
+                ],
+                [
+                    'label' => 'Invite Friends',
+                    'key' => 'invite_friends',
+                ],
+                [
+                    'label' => 'Set a Plan',
+                    'key' => 'set_a_plan',
+                ],
+            ],
+            'next_emails' => [
+                [
+                    'subject' => 'Welcome to Zúme!',
+                    'body' => 'Welcome to Zúme!',
+                    'to' => 'zume@zume.com',
+                    'cta' => [
+                        'label' => 'Start Training',
+                        'url' => 'https://zume.training',
+                    ],
+                ],
+                [
+                    'subject' => 'Welcome to Zúme!',
+                    'body' => 'Welcome to Zúme!',
+                    'to' => 'zume@zume.com',
+                    'cta' => [
+                        'label' => 'Start Training',
+                        'url' => 'https://zume.training',
+                    ],
+                ],
+                [
+                    'subject' => 'Welcome to Zúme!',
+                    'body' => 'Welcome to Zúme!',
+                    'to' => 'zume@zume.com',
+                    'cta' => [
+                        'label' => 'Start Training',
+                        'url' => 'https://zume.training',
+                    ],
+                ],
+            ],
+        ];
 
     }
     public function authorize_url( $authorized ){
