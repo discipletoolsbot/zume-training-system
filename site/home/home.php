@@ -39,7 +39,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
             dt_write_log( $url_parts[0] );
 
             if ( $lang_code !== '' ) {
-                $this->lang = $lang_code;
+                $this->lang = get_zume_language_locale( $lang_code );
                 add_filter('locale', function( $locale ) {
                     return $this->lang;
                 }, 100, 1);
@@ -96,12 +96,17 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         zume_training_nav();
         ?>
 
-        current language: <?php echo esc_html( get_locale() ) ?>
+        <p>
+            current language: <?php echo esc_html( get_locale() ) ?>
+        </p>
+        <p>
+            pll current language: <?php echo esc_html( pll_current_language() ) ?>
+        </p>
 
-        <my-element>
-            <h1>Vite + Lit</h1>
-        </my-element>
-
+        <h1 class="text-center"><?php echo esc_html__( 'Zúme Training', 'zume' ) ?></h1>
+        <p class="text-center">
+            <?php echo esc_html__( 'Zúme Training is an on-line and in-life learning experience designed for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply.', 'zume' ) ?>
+        </p>
 
         <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
             <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>

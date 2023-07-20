@@ -20,8 +20,8 @@ function zume_training_nav() {
 
                 <?php if ( is_user_logged_in() ) : ?>
 
-                    <li class="nav__item"><a href="<?php echo esc_url( '/dashboard' ) ?>" class="nav__link"><?php esc_html_e( 'Dashboard', 'zume' ) ?></a></li>
-                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php esc_html_e( 'Logout', 'zume' ) ?></a></li>
+                    <li class="nav__item"><a href="<?php echo esc_url( '/dashboard' ) ?>" class="nav__link"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
+                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Logout', 'zume' ) ?></a></li>
 
                 <?php else : ?>
 
