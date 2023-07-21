@@ -32,7 +32,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
 
         $lang_code = $this->get_lang_code( $url_parts );
 
-        if ( isset( $url_parts[0] ) ) {
+        if ( isset( $url_parts[0] ) && !empty( $url_parts[0] ) ) {
 
             global $wpdb;
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type = %s", $url_parts[0], 'zume_pieces' ) );
