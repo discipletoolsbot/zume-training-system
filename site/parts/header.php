@@ -48,11 +48,13 @@ function zume_training_nav() {
         <hr>
         <table class="hover" id="language-table">
             <?php
+            $url_pieces = zume_get_url_pieces();
+
             foreach ( $zume_languages as $item ){
                 if ( 'en' === $item['code'] ) {
-                    $url = esc_url( site_url() );
+                    $url = esc_url( trailingslashit( site_url() ) . $url_pieces['path'] );
                 } else {
-                    $url = esc_url( site_url() ) . '/' . $item['code'] . '/';
+                    $url = esc_url( site_url() ) . '/' . $item['code'] . '/' . $url_pieces['path'];
                 }
                 ?>
                 <tr class="language-selector" data-url="<?php echo esc_url( $url ) ?>" data-value="<?php echo esc_attr( $item['code'] ) ?>" id="row-<?php echo esc_attr( $item['code'] ) ?>">
