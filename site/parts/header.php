@@ -20,6 +20,7 @@ function zume_training_nav() {
 
                 <?php if ( is_user_logged_in() ) : ?>
 
+                    <li class="nav__item"><a href="<?php echo esc_url( '/profile' ) ?>" class="nav__link"><?php echo esc_html__( 'Profile', 'zume' ) ?></a></li>
                     <li class="nav__item"><a href="<?php echo esc_url( '/dashboard' ) ?>" class="nav__link"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
                     <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Logout', 'zume' ) ?></a></li>
 
@@ -40,6 +41,47 @@ function zume_training_nav() {
 
     </header>
 
+    <?php global $zume_languages; ?>
+
+    <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
+        <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
+        <hr>
+        <table class="hover" id="language-table">
+            <?php
+            foreach ( $zume_languages as $item ){
+                if ( 'en' === $item['code'] ) {
+                    $url = esc_url( site_url() );
+                } else {
+                    $url = esc_url( site_url() ) . '/' . $item['code'] . '/';
+                }
+                ?>
+                <tr class="language-selector" data-url="<?php echo esc_url( $url ) ?>" data-value="<?php echo esc_attr( $item['code'] ) ?>" id="row-<?php echo esc_attr( $item['code'] ) ?>">
+                    <td><?php echo esc_html( $item['nativeName'] ) ?></td>
+                    <td><?php echo esc_html( $item['enDisplayName'] ) ?></td>
+                </tr>
+                <?php
+            }
+            ?>
+        </table>
+        <style>
+            .language-selector {
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            jQuery(document).ready(function($){
+                jQuery('.language-selector').on('click', function(e){
+                    let lang = jQuery(this).data('value')
+                    let url = jQuery(this).data('url')
+                    jQuery('.language-selector:not(#row-'+lang+')').fadeTo("fast", 0.33)
+                    window.location = url
+                })
+            })
+        </script>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <?php
 
 }
