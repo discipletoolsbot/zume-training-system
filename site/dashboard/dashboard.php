@@ -4,6 +4,8 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Dashboard extends DT_Magic_Url_Base
 {
+    use Translateable;
+
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
@@ -26,22 +28,12 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
 
         $url = dt_get_url_path();
         $url_parts = explode( '/', $url );
-        $codes = zume_language_codes();
 
-        $lang_code = '';
-        if ( in_array( $url_parts[0], $codes ) ) {
-            $lang_code = $url_parts[0];
-            array_shift( $url_parts );
-        }
+        $lang_code = $this->get_lang_code( $url_parts );
 
         if ( $url_parts[0] === 'dashboard' && ! dt_is_rest() ) {
 
-            if ( $lang_code !== '' ) {
-                $this->lang = $lang_code;
-                add_filter('locale', function( $locale ) {
-                    return $this->lang;
-                }, 100, 1);
-            }
+            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -92,7 +84,7 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
         zume_training_nav();
         ?>
 
-        <h1 class="text-center">Dashboard</h1>
+        <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
         <p>
             current language: <?php echo esc_html( get_locale() ) ?>

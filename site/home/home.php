@@ -4,12 +4,14 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Home extends DT_Magic_Url_Base
 {
+
+    use Translateable;
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
     public $type = 'home';
-    public $lang = 'en';
+    public $lang = 'en_US';
     public static $token = 'zume_app_home';
 
     private static $_instance = null;
@@ -26,24 +28,14 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
         $url = dt_get_url_path();
         $url_parts = explode( '/', $url );
-        $codes = zume_language_codes();
 
-        $lang_code = '';
-        if ( in_array( $url_parts[0], $codes ) ) {
-            $lang_code = $url_parts[0];
-            array_shift( $url_parts );
-        }
+        $lang_code = $this->get_lang_code( $url_parts );
 
         if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
 
             dt_write_log( $url_parts[0] );
 
-            if ( $lang_code !== '' ) {
-                $this->lang = get_zume_language_locale( $lang_code );
-                add_filter('locale', function( $locale ) {
-                    return $this->lang;
-                }, 100, 1);
-            }
+            $this->set_locale( $lang_code );
 
             dt_write_log( get_locale() );
 
