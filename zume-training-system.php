@@ -64,7 +64,6 @@ class Zume_Training {
     private function __construct() {
         require_once( 'globals.php' );
         zume_languages(); // build global
-        require_once( 'logging/loader.php' );
         require_once( 'site/loader.php' );
         $this->i18n();
         $this->setup_hooks();
@@ -123,7 +122,7 @@ add_action( 'plugins_loaded', function (){
     if ( is_admin() && !( is_multisite() && class_exists( 'DT_Multisite' ) ) || wp_doing_cron() ){
         // Check for plugin updates
         if ( ! class_exists( 'Puc_v4_Factory' ) ) {
-            if ( file_exists( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' ) ){
+            if ( file_exists( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' ) ) {
                 require( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' );
             }
         }
@@ -133,7 +132,6 @@ add_action( 'plugins_loaded', function (){
                 __FILE__,
                 'zume-training-system'
             );
-
         }
     }
 } );
