@@ -31,6 +31,7 @@ class Zume_Training_Menu_Post_Type
         $this->plural = 'Zume Pages';
         $this->root = 'zume_app';
         $this->type = 'page';
+        $this->meta_key = 'zume_app_page_magic_key';
         $this->args = $args;
         $this->taxonomies = $taxonomies;
 
@@ -135,11 +136,11 @@ class Zume_Training_Menu_Post_Type
             $slug = str_replace( '/', '', $slug );
             $slug = urlencode( $slug );
 
-            $current_public_key = get_post_meta( $post_id, PORCH_LANDING_META_KEY, true );
+            $current_public_key = get_post_meta( $post_id, $this->meta_key, true );
             if ( $slug !== $current_public_key ) {
-                update_post_meta( $post_id, PORCH_LANDING_META_KEY, $slug );
+                update_post_meta( $post_id, $this->meta_key, $slug );
                 global $wpdb;
-                $wpdb->query( $wpdb->prepare( "UPDATE $wpdb->posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . PORCH_LANDING_ROOT . '/' . PORCH_LANDING_TYPE . '/' . $slug, $post_id ) );
+                $wpdb->query( $wpdb->prepare( "UPDATE $wpdb->posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
             }
         }
     }
@@ -156,8 +157,8 @@ class Zume_Training_Menu_Post_Type
     public function custom_column( $column, $post_id ) {
         switch ( $column ) {
             case 'url' :
-                $public_key = get_post_meta( $post_id, PORCH_LANDING_META_KEY, true );
-                echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( PORCH_LANDING_ROOT ) . '/' . esc_attr( PORCH_LANDING_TYPE ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( PORCH_LANDING_ROOT ) . '/' . esc_attr( PORCH_LANDING_TYPE ) . '/' . esc_attr( $public_key ) .'</a>';
+                $public_key = get_post_meta( $post_id, $this->meta_key, true );
+                echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) .'</a>';
                 break;
         }
     }
