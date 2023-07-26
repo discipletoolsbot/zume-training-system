@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Zúme Training System
+ * Plugin Name: Zúme - Training System
  * Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Description: Zume Training System
  * Text Domain: zume
