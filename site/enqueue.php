@@ -37,6 +37,8 @@ function zume_training_load_scripts( $hook ) {
      * nicer, but just going simple for the time being unless we need it to work differently for some
      * reason
      */
+
+    // @todo this is not a stable implementation. We need something better. @chris
     Vite\enqueue_asset(
         __DIR__ . '/assets/dist',
         'site/assets/src/main.js',
