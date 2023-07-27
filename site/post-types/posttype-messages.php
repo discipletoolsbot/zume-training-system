@@ -5,7 +5,6 @@ if ( !defined( 'ABSPATH' ) ) {
 
 class Zume_Training_Messages_Post_Type
 {
-
     public $post_type;
     public $singular;
     public $plural;
@@ -59,64 +58,110 @@ class Zume_Training_Messages_Post_Type
     }
     public function add_metabox( $post_type ) {
         if ( $this->post_type === $post_type ) {
-            add_meta_box( 'pieces-content-box', 'Email Content', [ $this, 'metabox_messages' ], $this->post_type, 'normal', 'high' );
+            add_meta_box( 'replacement-content-box', 'Replacement Fields', [ $this, 'metabox_replacement' ], $this->post_type, 'normal', 'high' );
+            add_meta_box( 'email-content-box', 'Email Content', [ $this, 'metabox_messages' ], $this->post_type, 'normal', 'high' );
+            add_meta_box( 'sms-content-box', 'SMS Content', [ $this, 'metabox_sms' ], $this->post_type, 'normal', 'high' );
+            add_meta_box( 'message-hierarchy-box', 'Schedule Order', [ $this, 'metabox_message_hierarchy' ], $this->post_type, 'side', 'high' );
         }
     }
 
-    public function metabox_messages( $post ) {
-        wp_nonce_field( 'zume_piece_nonce'.get_current_user_id(), 'zume_piece_nonce' );
-
-        $values = get_post_custom( $post->ID );
-
-        $number = isset( $values['zume_piece'] ) ? $values['zume_piece'][0] : 0;
-
+    public function metabox_replacement( $post ) {
         ?>
-        <h3>Message</h3>
-        <select name="zume_piece">
-            <option></option>
-            <?php
-            for ( $x = 1; $x <= 32; $x++ ) {
-                $selected = false;
-                if ( $x == $number ) {
-                    $selected = true;
-                }
-                $post_number = zume_landing_page_post_id( $x );
+       [first_name] - First Name<br>
+       [communication_preference_magic_link] - Communication Preferences Magic Link<br>
+        <?php
+    }
+
+    public function metabox_message_hierarchy( $post ) {
+        $hierarchy = $this->get_message_hierarchy( $post->ID );
+        if ( ! empty( $hierarchy['parents']) ) {
+            foreach( $hierarchy['parents'] as $parent ) {
                 ?>
-                <option value="<?php echo esc_attr( $x ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_attr( $x ) . ' - '; echo esc_html( get_the_title( $post_number ) ) ?></option>
+                <a href="<?php echo admin_url() . 'post.php?post=' . $parent['ID'] . '&action=edit' ?>"><?php echo $parent['post_title'] ?></a><br>
                 <?php
             }
-            ?></select><br>
+        }
+        echo '<hr><strong>(This Message) '.$post->post_title.'</strong><br><hr>';
+        if ( ! empty( $hierarchy['children']) ) {
+            foreach( $hierarchy['children'] as $children ) {
+                ?>
+                <a href="<?php echo admin_url() . 'post.php?post=' . $children['ID'] . '&action=edit' ?>"><?php echo $children['post_title'] ?></a><br>
+                <?php
+            }
+        }
+        ?>
+        <br>
+        <?php
+    }
 
-        <h3>Piece Title (override) for the &lt;h1&gt;</h3>
-        <input name="zume_piece_h1" class="regular-text" id="zume_piece_h1" value="<?php echo esc_html( isset( $values['zume_piece_h1'] ) ? $values['zume_piece_h1'][0] : '' ) ?>" /><br><br>
+    public function get_message_hierarchy( $post_id ) {
+        global $wpdb;
+        $list = $wpdb->get_results(
+            "SELECT ID, post_parent, post_title
+                    FROM $wpdb->posts
+                    WHERE post_type = 'zume_messages'", ARRAY_A );
+
+        $children = $this->get_message_children( $post_id, $list, [], $post_id );
+        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true);
+        return [
+            'parents' => $parents,
+            'children' => $children
+        ];
+    }
+
+    public function get_message_parent( $post_id, $list, $parents, $self_post_id  ) {
+        foreach( $list as $item ) {
+            if ( $item['ID'] == $post_id ) {
+                if ( $self_post_id !== $post_id ) {
+                    $parents[$post_id] = $item;
+                }
+                if( $item['post_parent'] != '0' ) {
+                    $parents = $this->get_message_parent( $item['post_parent'], $list, $parents, $self_post_id );
+                }
+            }
+        }
+        return $parents;
+    }
+    public function get_message_children( $post_id, $list, $children, $self_post_id  ) {
+        foreach( $list as $item ) {
+            if ( $item['post_parent'] == $post_id ) {
+                $children[$post_id] = $item;
+                $children = $this->get_message_children( $item['ID'], $list, $children, $self_post_id );
+            }
+        }
+        return $children;
+    }
+
+    public function metabox_messages( $post ) {
+        wp_nonce_field( 'zume_message_nonce'.get_current_user_id(), 'zume_message_nonce' );
+        $values = get_post_custom( $post->ID );
+        ?>
+        <h3>Subject Line</h3>
+        <input name="zume_email_subject" type="text"  style="width:100%;" value="<?php echo esc_html( isset( $values['zume_email_subject'] ) ? $values['zume_email_subject'][0] : '' ) ?>" /><br><br>
         <hr>
+
         <h3>Body</h3>
         <?php
-        $content = isset( $values['zume_pre_video_content'] ) ? $values['zume_pre_video_content'][0] : '';
-        wp_editor( $content, 'zume_pre_video_content', array( 'media_buttons' => true ) );
-
+            $content = isset( $values['zume_email_body'] ) ? $values['zume_email_body'][0] : '';
+            wp_editor( $content, 'zume_email_body', array( 'media_buttons' => true ) );
         ?>
 
         <h3>Footer</h3>
-        <select name="zume_piece">
-            <option></option>
-            <?php
-            for ( $x = 1; $x <= 32; $x++ ) {
-                $selected = false;
-                if ( $x == $number ) {
-                    $selected = true;
-                }
-                $post_number = zume_landing_page_post_id( $x );
-                ?>
-                <option value="<?php echo esc_attr( $x ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_attr( $x ) . ' - '; echo esc_html( get_the_title( $post_number ) ) ?></option>
-                <?php
-            }
-            ?></select><br>
+        <select name="zume_email_footer">
+            <option value="default">Default Footer</option>
+            <option value="none">No Footer</option>
+        </select><br><br>
         <?php
-
     }
 
-
+    public function metabox_sms( $post ) {
+        wp_nonce_field( 'zume_message_nonce'.get_current_user_id(), 'zume_message_nonce' );
+        $values = get_post_custom( $post->ID );
+        ?>
+        <h3>SMS Message</h3>
+        <input name="zume_piece_h1" type="text" id="zume_sms_body" style="width:100%;"  value="<?php echo esc_html( isset( $values['zume_sms_body'] ) ? $values['zume_sms_body'][0] : '' ) ?>" /><br><br>
+        <?php
+    }
 
     public function zume_messages_save( $post_id ) {
 
@@ -125,32 +170,26 @@ class Zume_Training_Messages_Post_Type
         }
 
         // if our nonce isn't there, or we can't verify it, bail
-        if ( ! isset( $_POST['zume_piece_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['zume_piece_nonce'] ) ), 'zume_piece_nonce'.get_current_user_id() ) ) { return;
+        if ( ! isset( $_POST['zume_message_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['zume_message_nonce'] ) ), 'zume_message_nonce'.get_current_user_id() ) ) { return;
         }
 
         // if our current user can't edit this post, bail
         if ( !current_user_can( 'edit_posts' ) ) { return;
         }
 
-        if ( isset( $_POST['zume_piece'] ) ) {
-            update_post_meta( $post_id, 'zume_piece', sanitize_text_field( wp_unslash( $_POST['zume_piece'] ) ) );
+        if ( isset( $_POST['zume_email_subject'] ) ) {
+            update_post_meta( $post_id, 'zume_email_subject', sanitize_text_field( wp_unslash( $_POST['zume_email_subject'] ) ) );
         }
-        if ( isset( $_POST['zume_piece_h1'] ) ) {
-            update_post_meta( $post_id, 'zume_piece_h1', sanitize_text_field( wp_unslash( $_POST['zume_piece_h1'] ) ) );
+        if ( isset( $_POST['zume_email_body'] ) ) {
+            $my_data = wp_kses_post( wp_unslash( $_POST['zume_email_body'] ) );
+            update_post_meta( $post_id, 'zume_email_body', $my_data );
         }
-        if ( isset( $_POST['zume_pre_video_content'] ) ) {
-            $my_data = wp_kses_post( wp_unslash( $_POST['zume_pre_video_content'] ) );
-            update_post_meta( $post_id, 'zume_pre_video_content', $my_data );
+        if ( isset( $_POST['zume_email_footer'] ) ) {
+            update_post_meta( $post_id, 'zume_email_footer', sanitize_text_field( wp_unslash( $_POST['zume_email_footer'] ) ) );
         }
-        if ( isset( $_POST['zume_post_video_content'] ) ) {
-            $my_data = wp_kses_post( wp_unslash( $_POST['zume_post_video_content'] ) );
-            update_post_meta( $post_id, 'zume_post_video_content', $my_data );
+        if ( isset( $_POST['zume_sms_body'] ) ) {
+            update_post_meta( $post_id, 'zume_sms_body', sanitize_text_field( wp_unslash( $_POST['zume_sms_body'] ) ) );
         }
-        if ( isset( $_POST['zume_ask_content'] ) ) {
-            $my_data = wp_kses_post( wp_unslash( $_POST['zume_ask_content'] ) );
-            update_post_meta( $post_id, 'zume_ask_content', $my_data );
-        }
-
     }
 
 
@@ -163,7 +202,7 @@ class Zume_Training_Messages_Post_Type
     public function register_post_type() {
         register_post_type($this->post_type, /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
             // let's now add all the options for this post type
-            array(
+            args: array(
                 'labels' => array(
                     'name' => $this->plural, /* This is the Title of the Group */
                     'singular_name' => $this->singular, /* This is the individual type */
@@ -203,9 +242,9 @@ class Zume_Training_Messages_Post_Type
                     'read_private_posts'  => 'read_private_'.$this->post_type.'s',
                 ],
                 'capability_type' => 'page',
-                'hierarchical' => false,
+                'hierarchical' => true,
                 'show_in_rest' => true,
-                'supports' => array( 'title',  'thumbnail',  'wp-block-styles' , 'align-wide', )
+                'supports' => array( 'title',  'page-attributes',  'wp-block-styles' , 'align-wide', )
             )
         );
     }
