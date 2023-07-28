@@ -33,11 +33,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
         if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
 
-            dt_write_log( $url_parts[0] );
-
             $this->set_locale( $lang_code );
-
-            dt_write_log( get_locale() );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
