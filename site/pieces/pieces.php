@@ -93,15 +93,28 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
         $post_video_content = $this->meta['zume_post_video_content'][0] ?? '';
         $ask_content = $this->meta['zume_ask_content'][0] ?? '';
 
-        echo '<h1>' . esc_html( $this->page_title ) . '</h1>';
+        zume_training_header();
+        ?>
 
-        echo esc_html( "Tool Number: $tool_number" );
+        <div class="container">
 
-        echo wp_kses_post( wpautop( $pre_video_content ) );
+            <?php
 
-        echo wp_kses_post( wpautop( $post_video_content ) );
+            echo '<h1>' . esc_html( $this->page_title ) . '</h1>';
 
-        echo wp_kses_post( wpautop( $ask_content ) );
+            echo esc_html( "Tool Number: $tool_number" );
+
+            echo wp_kses_post( wpautop( $pre_video_content ) );
+
+            echo wp_kses_post( wpautop( $post_video_content ) );
+
+            echo wp_kses_post( wpautop( $ask_content ) );
+
+            ?>
+
+        </div>
+
+        <?php
     }
 }
 Zume_Training_Pieces_URL::instance();

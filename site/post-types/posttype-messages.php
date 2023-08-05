@@ -3,8 +3,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
-class Zume_Training_Messages_Post_Type
-{
+class Zume_Training_Messages_Post_Type {
     public $post_type;
     public $singular;
     public $plural;
@@ -39,14 +38,14 @@ class Zume_Training_Messages_Post_Type
         add_action( 'add_meta_boxes', [ $this, 'add_metabox' ] );
         add_action( 'save_post', [ $this, 'zume_messages_save' ] );
 
-        if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
+        if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ) {
 
             add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
         }
 
     }
-    public function remove_slug( $permalink, $post, $leavename ){
+    public function remove_slug( $permalink, $post, $leavename ) {
         global $wp_post_types;
         foreach ( $wp_post_types as $type => $custom_post ){
             if ( $custom_post->_builtin == false && $type == $post->post_type ){
@@ -74,18 +73,18 @@ class Zume_Training_Messages_Post_Type
 
     public function metabox_message_hierarchy( $post ) {
         $hierarchy = $this->get_message_hierarchy( $post->ID );
-        if ( ! empty( $hierarchy['parents']) ) {
-            foreach( $hierarchy['parents'] as $parent ) {
+        if ( ! empty( $hierarchy['parents'] ) ) {
+            foreach ( $hierarchy['parents'] as $parent ) {
                 ?>
-                <a href="<?php echo admin_url() . 'post.php?post=' . $parent['ID'] . '&action=edit' ?>"><?php echo $parent['post_title'] ?></a><br>
+                <a href="<?php echo esc_url( admin_url() . 'post.php?post=' . $parent['ID'] . '&action=edit' ) ?>"><?php echo esc_html( $parent['post_title'] ) ?></a><br>
                 <?php
             }
         }
-        echo '<hr><strong>(This Message) '.$post->post_title.'</strong><br><hr>';
-        if ( ! empty( $hierarchy['children']) ) {
-            foreach( $hierarchy['children'] as $children ) {
+        echo '<hr><strong>(This Message) ' . esc_html( $post->post_title ) . '</strong><br><hr>';
+        if ( ! empty( $hierarchy['children'] ) ) {
+            foreach ( $hierarchy['children'] as $children ) {
                 ?>
-                <a href="<?php echo admin_url() . 'post.php?post=' . $children['ID'] . '&action=edit' ?>"><?php echo $children['post_title'] ?></a><br>
+                <a href="<?php echo esc_url( admin_url() . 'post.php?post=' . $children['ID'] . '&action=edit' ) ?>"><?php echo esc_html( $children['post_title'] ) ?></a><br>
                 <?php
             }
         }
@@ -102,28 +101,28 @@ class Zume_Training_Messages_Post_Type
                     WHERE post_type = 'zume_messages'", ARRAY_A );
 
         $children = $this->get_message_children( $post_id, $list, [], $post_id );
-        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true);
+        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true );
         return [
             'parents' => $parents,
             'children' => $children
         ];
     }
 
-    public function get_message_parent( $post_id, $list, $parents, $self_post_id  ) {
-        foreach( $list as $item ) {
+    public function get_message_parent( $post_id, $list, $parents, $self_post_id ) {
+        foreach ( $list as $item ) {
             if ( $item['ID'] == $post_id ) {
                 if ( $self_post_id !== $post_id ) {
                     $parents[$post_id] = $item;
                 }
-                if( $item['post_parent'] != '0' ) {
+                if ( $item['post_parent'] != '0' ) {
                     $parents = $this->get_message_parent( $item['post_parent'], $list, $parents, $self_post_id );
                 }
             }
         }
         return $parents;
     }
-    public function get_message_children( $post_id, $list, $children, $self_post_id  ) {
-        foreach( $list as $item ) {
+    public function get_message_children( $post_id, $list, $children, $self_post_id ) {
+        foreach ( $list as $item ) {
             if ( $item['post_parent'] == $post_id ) {
                 $children[$post_id] = $item;
                 $children = $this->get_message_children( $item['ID'], $list, $children, $self_post_id );
@@ -251,7 +250,7 @@ class Zume_Training_Messages_Post_Type
 
     // Add the custom columns to the book post type:
     public function transition_post( $new_status, $old_status, $post ) {
-        if ( 'publish' == $new_status && $post->post_type == 'zume_messages' ) {
+//        if ( 'publish' == $new_status && $post->post_type == 'zume_messages' ) {
 
 //            $post_id = $post->ID;
 //            $slug = trim( strtolower( $post->post_title ) );
@@ -272,7 +271,7 @@ class Zume_Training_Messages_Post_Type
 //                global $wpdb;
 //                $wpdb->query( $wpdb->prepare( "UPDATE $wpdb->posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
 //            }
-        }
+//        }
     }
 
     // Add the custom columns to the book post type:
