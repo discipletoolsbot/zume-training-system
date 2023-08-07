@@ -178,3 +178,18 @@ header {
     }
 
 }
+
+.loading-spinner {
+  display: none;
+}
+.loading-spinner.active {
+  display: inline-block;
+  width: 40px;
+}
+
+.button {
+  @include button;
+
+  margin-bottom: 0;
+  padding: 1em 2em;
+}

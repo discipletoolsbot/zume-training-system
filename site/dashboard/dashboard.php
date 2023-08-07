@@ -81,15 +81,18 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
     public function body(){
         global $zume_languages;
 
-        zume_training_nav();
+        zume_training_header();
         ?>
 
-        <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
+        <div class="container">
 
-        <p>
-            current language: <?php echo esc_html( get_locale() ) ?>
-        </p>
+            <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
+            <p>
+                current language: <?php echo esc_html( get_locale() ) ?>
+            </p>
+
+        </div>
         <?php
     }
 }

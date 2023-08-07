@@ -1,13 +1,12 @@
 <?php
 
-if ( ! function_exists( 'zume_mirror_url' ) ) {
-    function zume_mirror_url(){
+if ( !function_exists( 'zume_mirror_url' ) ) {
+    function zume_mirror_url() {
         return 'https://storage.googleapis.com/zume-file-mirror/';
     }
 }
-if ( ! function_exists( 'zume_landing_page_post_id' ) ) {
-    function zume_landing_page_post_id( int $number ): int
-    {
+if ( !function_exists( 'zume_landing_page_post_id' ) ) {
+    function zume_landing_page_post_id( int $number ): int {
         /**
          * These are the root post ids for the english page, which is used to find the translation page in the
          * polylang system.
@@ -83,9 +82,8 @@ if ( ! function_exists( 'zume_landing_page_post_id' ) ) {
         return $list[$number] ?? 0;
     }
 }
-if ( ! function_exists( 'zume_languages' ) ) {
-    function zume_languages()
-    {
+if ( !function_exists( 'zume_languages' ) ) {
+    function zume_languages() {
         global $zume_languages;
         $zume_languages = array(
             array(

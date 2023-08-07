@@ -1,7 +1,7 @@
 <?php
 
 
-function zume_training_nav() {
+function zume_training_header() {
 
     ?>
 
@@ -22,7 +22,7 @@ function zume_training_nav() {
 
                     <li class="nav__item"><a href="<?php echo esc_url( '/profile' ) ?>" class="nav__link"><?php echo esc_html__( 'Profile', 'zume' ) ?></a></li>
                     <li class="nav__item"><a href="<?php echo esc_url( '/dashboard' ) ?>" class="nav__link"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
-                    <?php if ( user_can( get_current_user_id(), 'manage_dt') ) { ?><li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="nav__link"><?php echo esc_html__( 'Admin', 'zume' ) ?></a></li><?php } ?>
+                    <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?><li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="nav__link"><?php echo esc_html__( 'Admin', 'zume' ) ?></a></li><?php } ?>
                     <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Logout', 'zume' ) ?></a></li>
 
                 <?php else : ?>
