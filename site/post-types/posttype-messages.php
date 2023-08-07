@@ -62,6 +62,7 @@ class Zume_Training_Messages_Post_Type
             add_meta_box( 'email-content-box', 'Email Content', [ $this, 'metabox_messages' ], $this->post_type, 'normal', 'high' );
             add_meta_box( 'sms-content-box', 'SMS Content', [ $this, 'metabox_sms' ], $this->post_type, 'normal', 'high' );
             add_meta_box( 'message-hierarchy-box', 'Schedule Order', [ $this, 'metabox_message_hierarchy' ], $this->post_type, 'side', 'high' );
+            add_meta_box( 'message-keys-box', 'Keys', [ $this, 'metabox_message_key' ], $this->post_type, 'side', 'high' );
         }
     }
 
@@ -69,6 +70,14 @@ class Zume_Training_Messages_Post_Type
         ?>
        [first_name] - First Name<br>
        [communication_preference_magic_link] - Communication Preferences Magic Link<br>
+        <?php
+    }
+
+    public function metabox_message_key( $post ) {
+        $values = get_post_custom( $post->ID );
+        ?>
+        <p><label class="post-attributes-label"l>Action Keys</label></p>
+        <input name="zume_action_keys" type="text"  style="width:100%;" value="<?php echo esc_html( isset( $values['zume_action_keys'] ) ? $values['zume_action_keys'][0] : '' ) ?>" /><br><br>
         <?php
     }
 
@@ -103,6 +112,7 @@ class Zume_Training_Messages_Post_Type
 
         $children = $this->get_message_children( $post_id, $list, [], $post_id );
         $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true);
+
         return [
             'parents' => $parents,
             'children' => $children
@@ -159,7 +169,7 @@ class Zume_Training_Messages_Post_Type
         $values = get_post_custom( $post->ID );
         ?>
         <h3>SMS Message</h3>
-        <input name="zume_piece_h1" type="text" id="zume_sms_body" style="width:100%;"  value="<?php echo esc_html( isset( $values['zume_sms_body'] ) ? $values['zume_sms_body'][0] : '' ) ?>" /><br><br>
+        <input name="zume_sms_body" type="text" id="zume_sms_body" style="width:100%;"  value="<?php echo esc_html( isset( $values['zume_sms_body'] ) ? $values['zume_sms_body'][0] : '' ) ?>" /><br><br>
         <?php
     }
 
@@ -189,6 +199,9 @@ class Zume_Training_Messages_Post_Type
         }
         if ( isset( $_POST['zume_sms_body'] ) ) {
             update_post_meta( $post_id, 'zume_sms_body', sanitize_text_field( wp_unslash( $_POST['zume_sms_body'] ) ) );
+        }
+        if ( isset( $_POST['zume_action_keys'] ) ) {
+            update_post_meta( $post_id, 'zume_action_keys', sanitize_text_field( wp_unslash( $_POST['zume_action_keys'] ) ) );
         }
     }
 
@@ -278,7 +291,7 @@ class Zume_Training_Messages_Post_Type
     // Add the custom columns to the book post type:
     public function set_custom_edit_columns( $columns ) {
         unset( $columns['author'] );
-//        $columns['url'] = 'URL';
+        $columns['triggers'] = 'Triggers';
 
         return $columns;
     }
@@ -286,9 +299,8 @@ class Zume_Training_Messages_Post_Type
     // Add the data to the custom columns for the book post type:
     public function custom_column( $column, $post_id ) {
         switch ( $column ) {
-            case 'url' :
-//                $public_key = get_post_meta( $post_id, $this->meta_key, true );
-//                echo '<a href="' . esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) . '">'. esc_url( trailingslashit( site_url() ) ) . esc_attr( $this->root ) . '/' . esc_attr( $this->type ) . '/' . esc_attr( $public_key ) .'</a>';
+            case 'triggers' :
+                echo get_post_meta( $post_id, 'zume_action_keys', true );
                 break;
         }
     }

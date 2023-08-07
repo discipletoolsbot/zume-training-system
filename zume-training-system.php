@@ -64,7 +64,7 @@ class Zume_Training {
     private function __construct() {
         // datatable
         global $wpdb;
-        $wpdb->zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
+        $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
         require_once( 'globals.php' );
         zume_languages(); // build global
