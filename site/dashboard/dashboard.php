@@ -26,12 +26,16 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
         parent::__construct();
         $this->lang = get_locale();
 
-        $url = dt_get_url_path();
-        $url_parts = explode( '/', $url );
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
-        $lang_code = $this->get_lang_code( $url_parts );
+        $page_slug = $url_parts[0];
 
-        if ( $url_parts[0] === 'dashboard' && ! dt_is_rest() ) {
+        $post = zume_get_post_by_slug( $page_slug );
+
+        if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -81,7 +85,7 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
     public function body(){
         global $zume_languages;
 
-        zume_training_header();
+        require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">

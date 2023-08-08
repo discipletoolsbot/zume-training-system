@@ -67,9 +67,11 @@ class Zume_Training {
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
         require_once( 'globals.php' );
+        require_once( 'integrations/zume-polylang-integration.php' );
         zume_languages(); // build global
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
+        require_once( 'site/login/loader.php' );
         $this->i18n();
         $this->setup_hooks();
     }
@@ -78,13 +80,12 @@ class Zume_Training {
     public static function deactivation() {
     }
     public function setup_hooks() {
-        add_action( 'dt_login_login_page_header', function() {
-            zume_training_header();
-        } );
         add_filter( 'dt_custom_fields_settings', [ $this, 'dt_contact_fields' ], 1, 2 );
         add_filter( 'dt_details_additional_tiles', [ $this, 'dt_details_additional_tiles' ], 10, 2 );
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_update_users_corresponding_contact' ], 10, 2 );
         add_action( 'dt_update_users_corresponding_contact', [ $this, 'dt_update_users_corresponding_contact' ], 10, 2 );
+        add_filter( 'dt_login_url', [ $this, 'dt_login_url' ] );
+        add_filter( 'dt_login_redirect_url', [ $this, 'dt_login_redirect_url' ] );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
@@ -92,7 +93,6 @@ class Zume_Training {
             'redirect_url' => '/dashboard',
             'login_url' => 'login',
             'ui_smallprint' => 'off',
-            'firebase_app_id' => $_ENV['FIREBASE_APP_ID'] ?? '',
             'identity_providers_google' => 'on',
             'identity_providers_facebook' => 'on',
         ];
@@ -162,6 +162,33 @@ class Zume_Training {
             ], false, false );
         }
 
+    }
+    public function dt_login_url( $dt_login_url ) {
+        $current_language = zume_current_language();
+
+        if ( $current_language === 'en' ) {
+            return $dt_login_url;
+        }
+
+        return $current_language . '/' . $dt_login_url;
+    }
+    public function dt_login_redirect_url( $redirect_url ) {
+        $url = new DT_URL( $redirect_url );
+
+        $parsed_url = $url->parsed_url;
+
+        /* Get the current lang_code in the current url */
+        [ 'lang_code' => $lang_code ] = zume_get_url_pieces();
+
+        /* Get the path from the redirect url without any lang codes */
+        [ 'path' => $path ] = zume_get_url_pieces( ltrim( $parsed_url['path'], '/' ) );
+
+        if ( $lang_code !== 'en' ) {
+            $path = $lang_code . '/' . $path;
+        }
+
+        $redirect_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . '/' . $path;
+        return $redirect_url;
     }
 
     public function i18n() {

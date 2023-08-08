@@ -11,6 +11,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
     public $root = 'starter_app';
     public $type = 'home';
     public $postid = false;
+    public $lang = 'en';
     public static $token = 'starter_app_home';
 
     private static $_instance = null;
@@ -28,11 +29,14 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
             return;
         }
 
-        $url_parts = explode( '/', dt_get_url_path() );
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
-        $lang_code = $this->get_lang_code( $url_parts );
+        $page_slug = $url_parts[0];
 
-        if ( isset( $url_parts[0] ) && !empty( $url_parts[0] ) ) {
+        if ( isset( $page_slug ) && !empty( $page_slug ) ) {
 
             global $wpdb;
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type = %s", $url_parts[0], 'zume_pieces' ) );
@@ -93,7 +97,7 @@ class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
         $post_video_content = $this->meta['zume_post_video_content'][0] ?? '';
         $ask_content = $this->meta['zume_ask_content'][0] ?? '';
 
-        zume_training_header();
+        require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">

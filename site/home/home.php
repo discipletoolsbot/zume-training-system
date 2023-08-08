@@ -26,10 +26,10 @@ class Zume_Training_Home extends DT_Magic_Url_Base
         parent::__construct();
         $this->lang = get_locale();
 
-        $url = dt_get_url_path();
-        $url_parts = explode( '/', $url );
-
-        $lang_code = $this->get_lang_code( $url_parts );
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
         if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
 
@@ -80,7 +80,7 @@ class Zume_Training_Home extends DT_Magic_Url_Base
 
     public function body(){
 
-        zume_training_header();
+        require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">

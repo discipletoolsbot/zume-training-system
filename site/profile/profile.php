@@ -26,12 +26,16 @@ class Zume_Training_Profile extends DT_Magic_Url_Base
         parent::__construct();
         $this->lang = get_locale();
 
-        $url = dt_get_url_path();
-        $url_parts = explode( '/', $url );
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
-        $lang_code = $this->get_lang_code( $url_parts );
+        $page_slug = $url_parts[0];
 
-        if ( $url_parts[0] === 'profile' && ! dt_is_rest() ) {
+        $post = zume_get_post_by_slug( $page_slug );
+
+        if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -101,7 +105,7 @@ class Zume_Training_Profile extends DT_Magic_Url_Base
 
         $profile = Zume_Profile_Model::get();
 
-        zume_training_header();
+        require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">
@@ -130,7 +134,7 @@ class Zume_Training_Profile extends DT_Magic_Url_Base
 
                 </div>
 
-                <button class="button" id="submit-profile">Save</button>
+                <button class="button" id="submit-profile"><?php echo esc_html__( 'Save', 'zume' ) ?></button>
                 <span class="loading-spinner">
                     <img src="<?php echo esc_url( trailingslashit( plugin_dir_url( __DIR__ ) ) . 'assets/images/spinner.svg' ) ?>" alt="spinner">
                 </span>
