@@ -6,7 +6,7 @@
  * Any part of the site can send the user to the login page with an encoded redirect url to get back to where they were,
  * after the login/registration.
  */
-class Zume_Training_Login extends DT_Magic_Url_Base {
+class Zume_Training_Login extends Zume_Magic_Page {
 
     use Translateable;
     public $magic = false;
@@ -96,6 +96,7 @@ class Zume_Training_Login extends DT_Magic_Url_Base {
 
         require_once __DIR__ . '/login-template.php';
 
+        require_once __DIR__ . '/../parts/footer.php';
     }
 
 }

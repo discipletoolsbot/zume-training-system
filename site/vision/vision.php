@@ -2,17 +2,17 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Training_Home extends Zume_Magic_Page
+class Zume_Training_Vision extends Zume_Magic_Page
 {
-
     use Translateable;
+
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
-    public $type = 'home';
-    public $lang = 'en_US';
-    public static $token = 'zume_app_home';
+    public $type = 'vision';
+    public $lang = 'en';
+    public static $token = 'zume_app_vision';
 
     private static $_instance = null;
     public static function instance() {
@@ -31,7 +31,11 @@ class Zume_Training_Home extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
+        $page_slug = $url_parts[0];
+
+        $post = zume_get_post_by_slug( $page_slug );
+
+        if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -80,26 +84,21 @@ class Zume_Training_Home extends Zume_Magic_Page
     }
 
     public function body(){
+        global $zume_languages;
 
         require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">
 
+            <h1 class="text-center"><?php echo esc_html__( 'Vision', 'zume' ) ?></h1>
+
             <p>
                 current language: <?php echo esc_html( get_locale() ) ?>
-            </p>
-            <p>
-                pll current language: <?php echo esc_html( pll_current_language() ) ?>
-            </p>
-
-            <h1 class="text-center"><?php echo esc_html__( 'Zúme Training', 'zume' ) ?></h1>
-            <p class="text-center">
-                <?php echo esc_html__( 'Zúme Training is an on-line and in-life learning experience designed for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply.', 'zume' ) ?>
             </p>
 
         </div>
         <?php
     }
 }
-Zume_Training_Home::instance();
+Zume_Training_Vision::instance();

@@ -24,6 +24,13 @@ body {
     margin: 0;
     font-size: 1rem;
     font-family: $font-text;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 ul {

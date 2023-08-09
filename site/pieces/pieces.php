@@ -1,7 +1,7 @@
 <?php
 
 
-class Zume_Training_Pieces_URL extends DT_Magic_Url_Base
+class Zume_Training_Pieces_URL extends Zume_Magic_Page
 {
     use Translateable;
 

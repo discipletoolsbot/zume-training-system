@@ -521,7 +521,7 @@ switch ( $request_action ) {
         <div id="content">
             <div id="login">
                 <br>
-                <div  class="grid-x grid-margin-x grid-padding-x">
+                <div class="grid-x grid-padding-x">
                     <div class="cell medium-3 large-4"></div>
                     <div class="cell callout medium-6 large-4">
                         <div class="grid-x grid-padding-x grid-padding-y">

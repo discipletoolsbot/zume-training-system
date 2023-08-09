@@ -60,6 +60,26 @@ function zume_three_month_plan_url() {
     return zume_get_posts_translation_url( 'Three-Month Plan', $current_lang );
 }
 
+function zume_mobile_app_url() {
+    $current_lang = zume_current_language();
+    return zume_get_posts_translation_url( 'Mobile App', $current_lang );
+}
+
+function zume_follow_jesus_url() {
+    $current_lang = zume_current_language();
+    return zume_get_posts_translation_url( 'Follow Jesus', $current_lang );
+}
+
+function zume_resources_url() {
+    $current_lang = zume_current_language();
+    return zume_get_posts_translation_url( 'Resources', $current_lang );
+}
+
+function zume_vision_url() {
+    $current_lang = zume_current_language();
+    return zume_get_posts_translation_url( 'Vision', $current_lang );
+}
+
 function zume_overview_url() {
     $current_lang = zume_current_language();
     return zume_get_posts_translation_url( 'Overview', $current_lang );

@@ -2,7 +2,7 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Training_Dashboard extends DT_Magic_Url_Base
+class Zume_Training_Dashboard extends Zume_Magic_Page
 {
     use Translateable;
 
@@ -57,6 +57,7 @@ class Zume_Training_Dashboard extends DT_Magic_Url_Base
             add_action( 'dt_blank_head', [ $this, '_header' ] );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
+            add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );

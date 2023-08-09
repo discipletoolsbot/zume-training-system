@@ -2,17 +2,17 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Training_Home extends Zume_Magic_Page
+class Zume_Training_Course extends Zume_Magic_Page
 {
-
     use Translateable;
+
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
-    public $type = 'home';
-    public $lang = 'en_US';
-    public static $token = 'zume_app_home';
+    public $type = 'course';
+    public $lang = 'en';
+    public static $token = 'zume_app_course';
 
     private static $_instance = null;
     public static function instance() {
@@ -31,7 +31,11 @@ class Zume_Training_Home extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
+        $page_slug = $url_parts[0];
+
+        $post = zume_get_post_by_slug( $page_slug );
+
+        if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -80,26 +84,49 @@ class Zume_Training_Home extends Zume_Magic_Page
     }
 
     public function body(){
+        global $zume_languages;
 
         require __DIR__ . '/../parts/nav.php';
+
+
+        $current_language = pll_current_language();
+
+        $args = [
+            'post_type' => 'zume_pieces',
+            'lang' => $current_language,
+            'posts_per_page' => -1,
+        ];
+
+        $posts = get_posts( $args );
+
         ?>
 
         <div class="container">
+            <h1 class="text-center"><?php echo esc_html__( 'Course', 'zume' ) ?></h1>
 
-            <p>
-                current language: <?php echo esc_html( get_locale() ) ?>
-            </p>
-            <p>
-                pll current language: <?php echo esc_html( pll_current_language() ) ?>
-            </p>
+            <?php if ( empty( $posts ) ): ?>
 
-            <h1 class="text-center"><?php echo esc_html__( 'Zúme Training', 'zume' ) ?></h1>
-            <p class="text-center">
-                <?php echo esc_html__( 'Zúme Training is an on-line and in-life learning experience designed for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply.', 'zume' ) ?>
-            </p>
+                <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
 
+            <?php endif; ?>
+
+            <ol>
+                <?php foreach ( $posts as $post ): ?>
+
+                    <?php
+
+                        $meta = get_post_meta( $post->ID );
+                        $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
+
+                    ?>
+
+                    <li><a href="<?php echo esc_url( site_url( $current_language . '/' . $post->post_name ) ) ?>"><?php echo esc_html( $page_title ) ?></a></li>
+
+
+                <?php endforeach; ?>
+            </ol>
         </div>
         <?php
     }
 }
-Zume_Training_Home::instance();
+Zume_Training_Course::instance();
