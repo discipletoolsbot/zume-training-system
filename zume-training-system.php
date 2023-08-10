@@ -67,7 +67,7 @@ class Zume_Training {
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
         require_once( 'globals.php' );
-        require_once( 'integrations/zume-polylang-integration.php' );
+        require_once( 'integrations/loader.php' );
         zume_languages(); // build global
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
