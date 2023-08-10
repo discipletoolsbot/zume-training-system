@@ -3,7 +3,7 @@
  * Plugin Name: Zúme - Training System
  * Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Description: Zume Training System
- * Text Domain: zume
+ * Text Domain: zume-training-system
  * Domain Path: /languages
  * Version:  0.2
  * Author URI: https://github.com/ZumeProject/zume-training-system
