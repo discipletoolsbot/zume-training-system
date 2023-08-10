@@ -43,22 +43,24 @@ class Zume_Get_a_Coach_Endpoints
             }
         }
 
+        return zume_get_user_location( $params['user_id'] );
+
 
         // log event
-        $log_data = [
-            "user_id" => $params['user_id'],
-            "lng" => $params['lng'],
-            "lat" => $params['lat'],
-            "level" => $params['level'],
-            "label" => $params['label'],
-            "grid_id" => $params['grid_id'],
-        ];
-        $log_result = Zume_System_Log_API::build_log_for_current_user( 'system', 'login'); // @todo test
+//        $log_data = [
+//            "user_id" => $params['user_id'],
+//            "lng" => $params['lng'],
+//            "lat" => $params['lat'],
+//            "level" => $params['level'],
+//            "label" => $params['label'],
+//            "grid_id" => $params['grid_id'],
+//        ];
+//        $log_result = Zume_System_Log_API::build_log_for_current_user( 'system', 'login'); // @todo test
 
-        return [
-            'params' => $params,
-            'log' => $log_result,
-        ];
+//        return [
+//            'params' => $params,
+//            'log' => $log_result,
+//        ];
     }
 
     public function authorize_url( $authorized ){
