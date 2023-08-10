@@ -43,24 +43,57 @@ class Zume_Get_a_Coach_Endpoints
             }
         }
 
-        return zume_get_user_location( $params['user_id'] );
+        // create coaching request
+        $coaching_result = self::register_request_to_coaching( $params['user_id']);
 
+        // log coaching request
+        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ "user_id" => $params['user_id'] ] );
 
-        // log event
-//        $log_data = [
-//            "user_id" => $params['user_id'],
-//            "lng" => $params['lng'],
-//            "lat" => $params['lat'],
-//            "level" => $params['level'],
-//            "label" => $params['label'],
-//            "grid_id" => $params['grid_id'],
-//        ];
-//        $log_result = Zume_System_Log_API::build_log_for_current_user( 'system', 'login'); // @todo test
+        return [
+            'coach_request' => $coaching_result,
+            'log' => $log_result
+        ];
+    }
 
-//        return [
-//            'params' => $params,
-//            'log' => $log_result,
-//        ];
+    public static function register_request_to_coaching( $user_id )
+    {
+        $contact_id = zume_get_contact_id( $user_id );
+        $contact = DT_Posts::get_post('contacts', $contact_id, true, false, true );
+
+        dt_write_log($contact);
+
+        $fields = [
+            "title" => $contact['name'],
+            "overall_status" => "new",
+            "trainee_user_id" => $user_id,
+            "trainee_contact_id" => (int) $contact['ID'],
+        ];
+
+        $site = Site_Link_System::get_site_connection_vars( 20125 );
+        if ( ! $site ) {
+            dt_write_log( __METHOD__ . ' FAILED TO GET SITE LINK TO GLOBAL ' );
+            return false;
+        }
+
+        $args = [
+            'method' => 'POST',
+            'body' => json_encode( $fields ),
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Bearer ' . $site['transfer_token'],
+            ],
+        ];
+
+        $result = wp_remote_post( 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts', $args );
+        if ( is_wp_error( $result ) ) {
+            dt_write_log( __METHOD__ . ' TO CREATE TRAINING FOR ' . $contact['name'] );
+            return false;
+        }
+
+        $body = json_decode( $result['body'], true );
+
+        return $body;
+
     }
 
     public function authorize_url( $authorized ){
