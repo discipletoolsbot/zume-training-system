@@ -69,6 +69,7 @@ class Zume_Training {
         require_once( 'globals.php' );
         require_once( 'integrations/loader.php' );
         zume_languages(); // build global
+        require_once( 'logging/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
         require_once( 'site/login/loader.php' );
