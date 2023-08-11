@@ -65,6 +65,11 @@ class Zume_Get_a_Coach_Endpoints
         $fields = [
             "title" => $contact['name'],
             "overall_status" => "new",
+            "sources" => [
+                "values" => [
+                    [ "value" => "zume_training" ]
+                ]
+            ],
             "trainee_user_id" => $user_id,
             "trainee_contact_id" => (int) $contact['ID'],
         ];
