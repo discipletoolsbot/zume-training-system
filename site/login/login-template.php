@@ -369,35 +369,31 @@ switch ( $request_action ) {
 
                                             </style>
                                             <div id="loginform">
-                                                <form action="" method="post" data-abide novalidate>
+                                                <form action="" method="post" data-abide>
                                                     <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                     <div data-abide-error class="alert callout" style="display: none;">
                                                         <p><i class="fi-alert"></i><?php esc_html_e( 'There are some errors in your form.', 'zume' ) ?></p>
                                                     </div>
                                                     <div class="grid-container">
                                                         <div class="grid-x grid-margin-x">
-                                                            <div class="cell small-12 hide">
-                                                                <label for="display_name"><?php esc_html_e( 'Display Name (optional)', 'zume' ) ?> </label>
-                                                                <input type="text" name="display_name" id="display_name" value="">
-                                                            </div>
                                                             <div class="cell small-12">
                                                                 <label for="email"><?php esc_html_e( 'Email', 'zume' ) ?> <strong>*</strong></label>
-                                                                <input type="text" name="email" id="email" value="" required pattern="email">
+                                                                <input type="email" name="email" id="email" value="" required>
                                                             </div>
                                                             <div class="cell small-12">
-                                                                <label><?php esc_html_e( 'Password Required', 'zume' ) ?> <strong>*</strong>
+                                                                <label><?php esc_html_e( 'Password', 'zume' ) ?> <strong>*</strong>
                                                                     <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
                                                                     <span class="form-error" id="password-error-1">
-                                                                        <?php esc_html_e( 'Password Required', 'zume' ) ?>
-                                                                      </span>
+                                                                        <?php esc_html_e( 'Password', 'zume' ) ?>
+                                                                    </span>
                                                                 </label>
                                                                 <meter max="4" id="password-strength-meter" value="0"></meter>
                                                             </div>
                                                             <div class="cell small-12">
                                                                 <label><?php esc_html_e( 'Re-enter Password', 'zume' ) ?> <strong>*</strong>
-                                                                    <input type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password">
+                                                                    <input type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password" required>
                                                                     <span class="form-error" id="password-error-2">
-                                                                    <?php esc_html_e( 'Passwords do not match. Please, try again.', 'zume' ) ?>
+                                                                        <?php esc_html_e( 'Passwords do not match. Please, try again.', 'zume' ) ?>
                                                                   </span>
                                                                 </label>
                                                             </div>
