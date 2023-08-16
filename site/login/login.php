@@ -55,7 +55,6 @@ class Zume_Training_Login extends Zume_Magic_Page {
             add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
 
 
-            remove_all_actions( 'dt_blank_head' );
             add_action( 'dt_blank_head', [ $this, '_header' ] );
             remove_all_actions( 'dt_blank_body' );
             add_action( 'dt_blank_body', [ $this, 'body' ] );

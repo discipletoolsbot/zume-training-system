@@ -55,6 +55,8 @@ add_action( 'after_setup_theme', 'zume_training', 20 );
 
 class Zume_Training {
     private static $_instance = null;
+    private string $login_url = 'login';
+    private string $builtin_login_url = 'login-url-not-to-be-used';
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
@@ -90,8 +92,8 @@ class Zume_Training {
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
             'login_enabled' => 'on',
-            'redirect_url' => '/dashboard',
-            'login_url' => 'login',
+            'redirect_url' => 'dashboard',
+            'login_url' => $this->builtin_login_url,
             'ui_smallprint' => 'off',
             'identity_providers_google' => 'on',
             'identity_providers_facebook' => 'on',
@@ -164,6 +166,8 @@ class Zume_Training {
 
     }
     public function dt_login_url( $dt_login_url ) {
+        $dt_login_url = str_replace( $this->builtin_login_url, $this->login_url, $dt_login_url );
+
         $current_language = zume_current_language();
 
         if ( $current_language === 'en' ) {
