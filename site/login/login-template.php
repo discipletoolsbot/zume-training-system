@@ -428,7 +428,7 @@ switch ( $request_action ) {
                                             </div>
 
                                             <?php // @codingStandardsIgnoreStart
-                                            if ( ! empty( $dt_login['google_captcha_client_key'] ) ) :
+                                            if ( isset( $dt_login['google_captcha_client_key'] ) && !empty( $dt_login['google_captcha_client_key'] ) ) :
                                                 ?>
                                                 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                                             <?php // @codingStandardsIgnoreEnd
