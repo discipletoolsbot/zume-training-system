@@ -247,12 +247,11 @@ switch ( $request_action ) {
                                         <div>
                                             <label><?php esc_html_e( 'Password Required', 'zume' ) ?> <strong>*</strong>
                                                 <input type="password" id="pass1" name="pass1" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
-                                                <span class="form-error" id="password-error-1">
-                                                    <?php esc_html_e( 'Password Required', 'zume' ) ?>
+                                                <span class="form-error" id="password-error-too-weak">
+                                                    <?php esc_html_e( 'Please choose a stronger password. This one is too weak.', 'zume' ) ?>
                                                 </span>
                                             </label>
                                             <meter max="4" id="password-strength-meter" value="0"></meter>
-                                        <p id="password-strength-text"></p>
                                         </div>
                                         <p>
                                             <label><?php esc_html_e( 'Re-enter Password', 'zume' ) ?> <strong>*</strong>
@@ -292,31 +291,46 @@ switch ( $request_action ) {
             </div>
         </div>
         <script>
-            var strength = {
+            const strength = {
                 0: "Worst",
                 1: "Bad",
                 2: "Weak",
                 3: "Good",
                 4: "Strong"
             }
-            var password = document.getElementById('pass1');
-            var meter = document.getElementById('password-strength-meter');
-            var text = document.getElementById('password-strength-text');
+            const minStrength = 3
+
+            const form = document.getElementById('resetpassform')
+            const password = document.getElementById('pass1');
+            const passwordStrengthError = document.getElementById('password-error-too-weak')
+            const meter = document.getElementById('password-strength-meter');
 
             password.addEventListener('input', function() {
-                var val = password.value;
-                var result = zxcvbn(val);
-
+                const result = getPasswordStrength()
                 // Update the password strength meter
                 meter.value = result.score;
 
-                // Update the text indicator
-                if (val !== "") {
-                    text.innerHTML = "Strength: " + strength[result.score];
-                } else {
-                    text.innerHTML = "";
+                if ( result.score >= minStrength ) {
+                    passwordStrengthError.style.display = 'none'
                 }
             });
+
+            form.addEventListener('submit', function(event) {
+                const result = getPasswordStrength()
+
+                if ( result.score < minStrength ) {
+                    event.preventDefault()
+                    passwordStrengthError.style.display = 'block'
+                }
+            })
+
+            function getPasswordStrength() {
+                const val = password.value;
+                const result = zxcvbn(val);
+
+                return result
+            }
+
         </script>
     <?php // @codingStandardsIgnoreStart ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
@@ -368,8 +382,8 @@ switch ( $request_action ) {
                                                 meter[value="4"]::-moz-meter-bar { background: green; }
 
                                             </style>
-                                            <div id="loginform">
-                                                <form action="" method="post" data-abide novalidate>
+                                            <div>
+                                                <form id="loginform" action="" method="POST" data-abide novalidate>
                                                     <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                     <div data-abide-error class="alert callout" style="display: none;">
                                                         <p><i class="fi-alert"></i><?php esc_html_e( 'There are some errors in your form.', 'zume' ) ?></p>
@@ -383,8 +397,8 @@ switch ( $request_action ) {
                                                             <div class="cell small-12">
                                                                 <label><?php esc_html_e( 'Password', 'zume' ) ?> <strong>*</strong>
                                                                     <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
-                                                                    <span class="form-error" id="password-error-1">
-                                                                        <?php esc_html_e( 'Password', 'zume' ) ?>
+                                                                    <span class="form-error" id="password-error-too-weak">
+                                                                        <?php esc_html_e( 'Please choose a stronger password. This one is too weak.', 'zume' ) ?>
                                                                     </span>
                                                                 </label>
                                                                 <meter max="4" id="password-strength-meter" value="0"></meter>
@@ -402,7 +416,9 @@ switch ( $request_action ) {
                                                             <div class="g-recaptcha" id="g-recaptcha"></div><br>
                                                         </div>
                                                         <div class="cell small-12">
-                                                            <input type="submit" class="button button-primary" id="submit"  value="<?php esc_html_e( 'Register', 'zume' ) ?>"/>
+                                                            <button class="button button-primary" id="submit">
+                                                                <?php esc_html_e( 'Register', 'zume' ) ?>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -416,24 +432,46 @@ switch ( $request_action ) {
                                             endif;
                                             ?>
                                             <script>
-                                                var strength = {
+                                                const strength = {
                                                     0: "Worst",
                                                     1: "Bad",
                                                     2: "Weak",
                                                     3: "Good",
                                                     4: "Strong"
                                                 }
-                                                var password = document.getElementById('password');
-                                                var meter = document.getElementById('password-strength-meter');
+                                                const minStrength = 3
+
+                                                const form = document.getElementById('loginform')
+                                                const password = document.getElementById('password');
+                                                const passwordStrengthError = document.getElementById('password-error-too-weak')
+                                                const meter = document.getElementById('password-strength-meter');
 
                                                 password.addEventListener('input', function() {
-                                                    var val = password.value;
-                                                    var result = zxcvbn(val);
-
+                                                    const result = getPasswordStrength()
                                                     // Update the password strength meter
                                                     meter.value = result.score;
 
+                                                    if ( result.score >= minStrength ) {
+                                                        passwordStrengthError.style.display = 'none'
+                                                    }
                                                 });
+
+                                                form.addEventListener('submit', function(event) {
+                                                    const result = getPasswordStrength()
+
+                                                    if ( result.score < minStrength ) {
+                                                        event.preventDefault()
+                                                        passwordStrengthError.style.display = 'block'
+                                                    }
+                                                })
+
+                                                function getPasswordStrength() {
+                                                    const val = password.value;
+                                                    const result = zxcvbn(val);
+
+                                                    return result
+                                                }
+
                                             </script>
                                             <?php // @codingStandardsIgnoreStart ?>
                                             <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
