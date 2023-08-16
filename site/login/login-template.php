@@ -369,7 +369,7 @@ switch ( $request_action ) {
 
                                             </style>
                                             <div id="loginform">
-                                                <form action="" method="post" data-abide>
+                                                <form action="" method="post" data-abide novalidate>
                                                     <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                     <div data-abide-error class="alert callout" style="display: none;">
                                                         <p><i class="fi-alert"></i><?php esc_html_e( 'There are some errors in your form.', 'zume' ) ?></p>
@@ -391,7 +391,7 @@ switch ( $request_action ) {
                                                             </div>
                                                             <div class="cell small-12">
                                                                 <label><?php esc_html_e( 'Re-enter Password', 'zume' ) ?> <strong>*</strong>
-                                                                    <input type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password" required>
+                                                                    <input id="password2" name="password2" type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password" required>
                                                                     <span class="form-error" id="password-error-2">
                                                                         <?php esc_html_e( 'Passwords do not match. Please, try again.', 'zume' ) ?>
                                                                   </span>
