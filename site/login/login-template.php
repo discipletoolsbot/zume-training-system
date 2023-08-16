@@ -392,13 +392,16 @@ switch ( $request_action ) {
                                                         <div class="grid-x grid-margin-x">
                                                             <div class="cell small-12">
                                                                 <label for="email"><?php esc_html_e( 'Email', 'zume' ) ?> <strong>*</strong></label>
-                                                                <input type="email" name="email" id="email" value="" required>
+                                                                <input type="email" name="email" id="email" value="" aria-errormessage="email-error" required>
+                                                                <span class="form-error" id="email-error">
+                                                                    <?php esc_html_e( 'Badly formatted email address', 'zume' ) ?>
+                                                                </span>
                                                             </div>
                                                             <div class="cell small-12">
                                                                 <label><?php esc_html_e( 'Password', 'zume' ) ?> <strong>*</strong>
-                                                                    <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
+                                                                    <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-too-weak" required >
                                                                     <span class="form-error" id="password-error-too-weak">
-                                                                        <?php esc_html_e( 'Please choose a stronger password. This one is too weak.', 'zume' ) ?>
+                                                                        <?php esc_html_e( 'Password is not strong enough', 'zume' ) ?>
                                                                     </span>
                                                                 </label>
                                                                 <meter max="4" id="password-strength-meter" value="0"></meter>
