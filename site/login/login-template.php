@@ -76,6 +76,15 @@ switch ( $request_action ) {
 
         do_action( 'lost_password' );
 
+        $translated_error_messages = [
+            'retrieve-password-missing-nonce' => __( 'Missing form verification. Refresh and try again.', 'zume' ),
+            'retrieve-password-missing-username-email' => __( 'Missing username or email address.', 'zume' ),
+            'retrieve-password-no-username-email' => __( 'ERROR: Enter a username or email address.', 'zume' ),
+            'retrieve-password-bad-email-address' => __( 'ERROR: There is no user registered with that email address.', 'zume' ),
+            'retrieve-password-bad-username' => __( 'ERROR: There is no user registered with that username.', 'zume' ),
+            'invalidcombo' => __( 'ERROR: Invalid username or email.', 'zume' ),
+        ];
+
         ?>
 
         <div id="content">
@@ -88,13 +97,25 @@ switch ( $request_action ) {
                             <div class="cell center">
                                 <h1 ><?php esc_html_e( 'Get New Password', 'zume' ) ?></h1>
                             </div>
+
                             <?php if ( ! empty( $form_errors->errors ) ) : ?>
+
                                 <div class="cell alert callout">
+
                                     <?php
+
+                                    if ( isset( $translated_error_messages[$form_errors->get_error_code()] ) ) {
+                                        echo esc_html( $translated_error_messages[$form_errors->get_error_code()] );
+                                    } else {
                                         echo esc_html( $form_errors->get_error_message() );
+                                    }
+
                                     ?>
+
                                 </div>
+
                             <?php endif; ?>
+
                             <div class="cell">
                                 <div class="wp_lostpassword_form">
                                     <?php if ( ! $sent ) : ?>
