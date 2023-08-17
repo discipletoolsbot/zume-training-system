@@ -193,7 +193,7 @@ switch ( $request_action ) {
                 <div class="cell medium-3 large-4"></div>
                 <div class="cell callout medium-6 large-4">
                     <div class="grid-x grid-padding-x grid-padding-y">
-                        <div class="cell"><?php echo sprintf( 'Your password is reset. %s You can login here %', '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
+                        <div class="cell"><?php echo sprintf( esc_html__( 'Your password is reset. %1$s You can login here %2$s', 'zume' ), '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
                     </div>
                 </div>
                 <div class="cell medium-3 large-4"></div>
@@ -278,7 +278,11 @@ switch ( $request_action ) {
                                         ?>
                                         <input type="hidden" name="rp_key" value="<?php echo esc_attr( $rp_key ); ?>" />
 
-                                        <p><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_html_e( 'Reset Password', 'zume' ); ?>" /></p>
+                                        <input type="hidden" name="wp-submit" id="wp-submit" value="" />
+
+                                        <button class="button button-primary button-large">
+                                            <?php esc_html_e( 'Reset Password', 'zume' ); ?>
+                                        </button>
 
                                     </form>
 

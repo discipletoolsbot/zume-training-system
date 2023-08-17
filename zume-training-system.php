@@ -94,6 +94,13 @@ class Zume_Training {
         add_action( 'dt_update_users_corresponding_contact', [ $this, 'dt_update_users_corresponding_contact' ], 10, 2 );
         add_filter( 'dt_login_url', [ $this, 'dt_login_url' ] );
         add_filter( 'dt_login_redirect_url', [ $this, 'dt_login_redirect_url' ] );
+        add_filter( 'retrieve_password_title', [ $this, 'filter_retrieve_password_title' ], 10, 3 );
+        remove_filter( 'retrieve_password_message', 'dt_multisite_retrieve_password_message', 99 );
+        add_filter( 'retrieve_password_message', [ $this, 'filter_retrieve_password_message' ], 10, 4 );
+        add_filter( 'retrieve_password_headers', [ $this, 'filter_retrieve_password_headers' ], 10, 1 );
+        add_filter( 'password_hint', function( string $hint ) : string {
+            return '';
+        } );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
@@ -115,6 +122,56 @@ class Zume_Training {
         }
         DT_Login_Fields::update( $fields );
     }
+
+    /**
+     * Filters the message body of the password reset mail.
+     *
+     * @param string   $message    Email message.
+     * @param string   $key        The activation key.
+     * @param string   $user_login The username for the user.
+     * @param \WP_User $user_data  WP_User object.
+     * @return string Email message.
+     */
+    public function filter_retrieve_password_message( string $message, string $key, string $user_login, \WP_User $user_data ) : string {
+        $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
+
+        $message = __( 'Someone has requested a password reset for the following account:', 'zume' ) . "\r\n\r\n";
+        /* translators: %s: site name */
+        $message .= sprintf( __( 'Site Name: %s', 'zume' ), $site_name ) . "\r\n\r\n";
+        /* translators: %s: user login */
+        $message .= sprintf( __( 'Username: %s', 'zume' ), $user_login ) . "\r\n\r\n";
+        $message .= __( 'If this was a mistake, just ignore this email and nothing will happen.', 'zume' ) . "\r\n\r\n";
+        $message .= __( 'To reset your password, visit the following address:', 'zume' ) . "\r\n\r\n";
+        $message .= '<' . dt_login_url( 'login' ) . "&action=rp&key=$key&login=" . rawurlencode( $user_login ) . ">\r\n";
+
+        return $message;
+    }
+
+    /**
+     * Filters the subject of the password reset email.
+     *
+     * @param string   $title      Email subject.
+     * @param string   $user_login The username for the user.
+     * @param \WP_User $user_data  WP_User object.
+     * @return string Email subject.
+     */
+    public function filter_retrieve_password_title( string $title, string $user_login, \WP_User $user_data ) : string {
+        $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
+
+        /* translators: Password reset email subject. %s: Site name */
+        $title = sprintf( __( '[%s] Password Reset', 'zume' ), $site_name );
+
+        return $title;
+    }
+
+    public function filter_retrieve_password_headers( string $headers ) : string {
+
+        $headers .= ' X-Zume-Email-System';
+
+        return $headers;
+    }
+
+
     public function dt_details_additional_tiles( $tiles, $post_type = '' ){
         if ( $post_type === 'contacts' ){
             $tiles['profile_details'] = [
