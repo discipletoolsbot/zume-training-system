@@ -50,6 +50,21 @@ function zume_default_language() {
     }
 }
 
+function zume_get_language_cookie() {
+    if ( function_exists( 'pll_the_languages' ) ) {
+        return isset( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) ? sanitize_key( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) : '';
+    }
+    else {
+        return 'en';
+    }
+}
+
+function zume_set_language_cookie( string $lang, array $args = [] ) {
+    if ( function_exists( 'pll_the_languages' ) && zume_get_language_cookie() !== $lang ) {
+        setcookie( ZUME_LANGUAGE_COOKIE, $lang, 0, '/' );
+    }
+}
+
 function zume_get_translation( $post_id, $slug = 'en' ) {
     if ( function_exists( 'pll_the_languages' ) ) {
         if ( empty( $slug ) ) {

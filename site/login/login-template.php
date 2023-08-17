@@ -91,7 +91,7 @@ switch ( $request_action ) {
                             <?php if ( ! empty( $form_errors->errors ) ) : ?>
                                 <div class="cell alert callout">
                                     <?php
-                                    echo esc_html( $form_errors->get_error_message() );
+                                        echo esc_html( $form_errors->get_error_message() );
                                     ?>
                                 </div>
                             <?php endif; ?>

@@ -68,6 +68,7 @@ class Zume_Training {
         global $wpdb;
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
+        $this->define_constants();
         require_once( 'globals.php' );
         require_once( 'integrations/zume-polylang-integration.php' );
         zume_languages(); // build global
@@ -80,6 +81,11 @@ class Zume_Training {
     public static function activation() {
     }
     public static function deactivation() {
+    }
+    public function define_constants() {
+        if ( !defined( 'ZUME_LANGUAGE_COOKIE' ) ) {
+            define( 'ZUME_LANGUAGE_COOKIE', 'zume_language' );
+        }
     }
     public function setup_hooks() {
         add_filter( 'dt_custom_fields_settings', [ $this, 'dt_contact_fields' ], 1, 2 );
@@ -169,6 +175,24 @@ class Zume_Training {
         $dt_login_url = str_replace( $this->builtin_login_url, $this->login_url, $dt_login_url );
 
         $current_language = zume_current_language();
+
+        [
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
+
+        /**
+         * When the login fails with bad email/password, we need to get the lang_code from the
+         * HTTP_REFERER url, otherwise it redirects back to english
+         */
+        if ( $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
+            $url = wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) ) );
+            [
+                'lang_code' => $lang_code,
+            ] = zume_get_url_pieces( ltrim( $url['path'], '/' ) );
+            if ( $lang_code !== $current_language ) {
+                $current_language = $lang_code;
+            }
+        }
 
         if ( $current_language === 'en' ) {
             return $dt_login_url;

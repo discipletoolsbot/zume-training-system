@@ -29,16 +29,11 @@ class Zume_Training_Login extends Zume_Magic_Page {
     public function __construct() {
         parent::__construct();
 
-        [
-            'lang_code' => $lang_code,
-            'url_parts' => $url_parts,
-        ] = zume_get_url_pieces();
+        $this->initialize_language();
 
-        $page_slug = $url_parts[0];
+        if ( $this->slug_matches( $this->type ) && ! dt_is_rest() ) {
 
-        if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
+            $this->set_locale();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
