@@ -26,15 +26,14 @@ trait Translateable {
         return $type === substr( $page_slug, 0, strlen( $type ) );
     }
 
+    /**
+     * Sets the locale based on the lang_code in the url
+     *
+     * This sets the locale for translation throughout the site
+     */
     public function set_locale( $lang_code = null ) {
         if ( !$lang_code ) {
             $lang_code = $this->lang_code;
-        }
-
-        $zume_language = zume_get_language_cookie();
-        if ( $lang_code === 'en' && $zume_language !== 'en' ) {
-            $lang_code = $zume_language;
-            $this->lang_code = $lang_code;
         }
 
         zume_set_language_cookie( $lang_code );
