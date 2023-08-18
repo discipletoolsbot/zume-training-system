@@ -92,6 +92,7 @@ if ( !function_exists( 'zume_languages' ) ) {
         global $zume_languages;
         $zume_languages = array(
             'en' => array(
+                'name' => 'English',
                 'enDisplayName' => 'English',
                 'code' => 'en',
                 'locale' => 'en',
@@ -99,6 +100,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ar' => array(
+                'name' => 'Arabic',
                 'enDisplayName' => 'Arabic',
                 'code' => 'ar',
                 'locale' => 'ar_LB',
@@ -106,6 +108,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => true
             ),
             'ar_jo' => array(
+                'name' => 'Arabic (JO)',
                 'enDisplayName' => 'Arabic (JO)',
                 'code' => 'ar_jo',
                 'locale' => 'ar_JO',
@@ -113,6 +116,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => true
             ),
             'asl' => array(
+                'name' => 'American Sign Language',
                 'enDisplayName' => 'American Sign Language',
                 'code' => 'asl',
                 'locale' => 'asl',
@@ -120,6 +124,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'bho' => array(
+                'name' => 'Bhojpuri',
                 'enDisplayName' => 'Bhojpuri',
                 'code' => 'bho',
                 'locale' => 'bho',
@@ -127,6 +132,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'bn' => array(
+                'name' => 'Bengali (India)',
                 'enDisplayName' => 'Bengali (India)',
                 'code' => 'bn',
                 'locale' => 'bn_IN',
@@ -134,6 +140,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'bs' => array(
+                'name' => 'Bosnian',
                 'enDisplayName' => 'Bosnian',
                 'code' => 'bs',
                 'locale' => 'bs_BA',
@@ -141,6 +148,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'zhhk' => array(
+                'name' => 'Cantonese (Traditional)',
                 'enDisplayName' => 'Cantonese (Traditional)',
                 'code' => 'zhhk',
                 'locale' => 'zh_HK',
@@ -148,6 +156,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'zhcn' => array(
+                'name' => 'Chinese (Simplified)',
                 'enDisplayName' => 'Chinese (Simplified)',
                 'code' => 'zhcn',
                 'locale' => 'zh_CN',
@@ -155,6 +164,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'zhtw' => array(
+                'name' => 'Chinese (Traditional)',
                 'enDisplayName' => 'Chinese (Traditional)',
                 'code' => 'zhtw',
                 'locale' => 'zh_TW',
@@ -162,6 +172,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'hr' => array(
+                'name' => 'Croatian',
                 'enDisplayName' => 'Croatian',
                 'code' => 'hr',
                 'locale' => 'hr',
@@ -169,6 +180,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'fa' => array(
+                'name' => 'Farsi/Persian',
                 'enDisplayName' => 'Farsi/Persian',
                 'code' => 'fa',
                 'locale' => 'fa_IR',
@@ -176,6 +188,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => true
             ),
             'fr' => array(
+                'name' => 'French',
                 'enDisplayName' => 'French',
                 'code' => 'fr',
                 'locale' => 'fr_FR',
@@ -183,6 +196,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'de' => array(
+                'name' => 'German',
                 'enDisplayName' => 'German',
                 'code' => 'de',
                 'locale' => 'de_DE',
@@ -190,6 +204,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'gu' => array(
+                'namne' => 'Gujarati',
                 'enDisplayName' => 'Gujarati',
                 'code' => 'gu',
                 'locale' => 'gu',
@@ -197,6 +212,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ha' => array(
+                'name' => 'Hausa',
                 'enDisplayName' => 'Hausa',
                 'code' => 'ha',
                 'locale' => 'ha_NG',
@@ -204,6 +220,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'hi' => array(
+                'name' => 'Hindi',
                 'enDisplayName' => 'Hindi',
                 'code' => 'hi',
                 'locale' => 'hi_IN',
@@ -211,6 +228,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'id' => array(
+                'name' => 'Indonesian',
                 'enDisplayName' => 'Indonesian',
                 'code' => 'id',
                 'locale' => 'id_ID',
@@ -218,6 +236,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'it' => array(
+                'name' => 'Italian',
                 'enDisplayName' => 'Italian',
                 'code' => 'it',
                 'locale' => 'it_IT',
@@ -225,6 +244,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'kn' => array(
+                'name' => 'Kannada',
                 'enDisplayName' => 'Kannada',
                 'code' => 'kn',
                 'locale' => 'kn',
@@ -232,6 +252,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ko' => array(
+                'name' => 'Korean',
                 'enDisplayName' => 'Korean',
                 'code' => 'ko',
                 'locale' => 'ko_KR',
@@ -239,6 +260,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ku' => array(
+                'name' => 'Kurdish',
                 'enDisplayName' => 'Kurdish',
                 'code' => 'ku',
                 'locale' => 'ku',
@@ -246,6 +268,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => true
             ),
             'lo' => array(
+                'name' => 'Lao',
                 'enDisplayName' => 'Lao',
                 'code' => 'lo',
                 'locale' => 'lo',
@@ -253,6 +276,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'mai' => array(
+                'name' => 'Maithili',
                 'enDisplayName' => 'Maithili',
                 'code' => 'mai',
                 'locale' => 'mai',
@@ -260,6 +284,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'mr' => array(
+                'name' => 'Marathi',
                 'enDisplayName' => 'Marathi',
                 'code' => 'mr',
                 'locale' => 'mr',
@@ -267,6 +292,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ml' => array(
+                'name' => 'Malayalam',
                 'enDisplayName' => 'Malayalam',
                 'code' => 'ml',
                 'locale' => 'ml',
@@ -274,6 +300,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ne' => array(
+                'name' => 'Nepali',
                 'enDisplayName' => 'Nepali',
                 'code' => 'ne',
                 'locale' => 'ne_NP',
@@ -281,6 +308,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'or' => array(
+                'name' => 'Oriya',
                 'enDisplayName' => 'Oriya',
                 'code' => 'or',
                 'locale' => 'or_IN',
@@ -288,6 +316,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'pa' => array(
+                'name' => 'Punjabi',
                 'enDisplayName' => 'Punjabi',
                 'code' => 'pa',
                 'locale' => 'pa_IN',
@@ -295,6 +324,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'pt' => array(
+                'name' => 'Portuguese',
                 'enDisplayName' => 'Portuguese',
                 'code' => 'pt',
                 'locale' => 'pt_PT',
@@ -302,6 +332,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ru' => array(
+                'name' => 'Russian',
                 'enDisplayName' => 'Russian',
                 'code' => 'ru',
                 'locale' => 'ru_RU',
@@ -309,6 +340,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ro' => array(
+                'name' => 'Romanian',
                 'enDisplayName' => 'Romanian',
                 'code' => 'ro',
                 'locale' => 'ro_RO',
@@ -316,6 +348,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'sl' => array(
+                'name' => 'Slovenian',
                 'enDisplayName' => 'Slovenian',
                 'code' => 'sl',
                 'locale' => 'sl_Sl',
@@ -323,6 +356,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'es' => array(
+                'name' => 'Spanish',
                 'enDisplayName' => 'Spanish',
                 'code' => 'es',
                 'locale' => 'es',
@@ -330,6 +364,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'so' => array(
+                'name' => 'Somali',
                 'enDisplayName' => 'Somali',
                 'code' => 'so',
                 'locale' => 'so',
@@ -337,6 +372,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'swa' => array(
+                'name' => 'Swahili',
                 'enDisplayName' => 'Swahili',
                 'code' => 'swa',
                 'locale' => 'swa',
@@ -344,6 +380,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ta' => array(
+                'name' => 'Tamil',
                 'enDisplayName' => 'Tamil',
                 'code' => 'ta',
                 'locale' => 'ta_IN',
@@ -351,6 +388,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'te' => array(
+                'name' => 'Telugu',
                 'enDisplayName' => 'Telugu',
                 'code' => 'te',
                 'locale' => 'te',
@@ -358,6 +396,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'th' => array(
+                'name' => 'Thai',
                 'enDisplayName' => 'Thai',
                 'code' => 'th',
                 'locale' => 'th',
@@ -365,6 +404,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'tr' => array(
+                'name' => 'Turkish',
                 'enDisplayName' => 'Turkish',
                 'code' => 'tr',
                 'locale' => 'tr_TR',
@@ -372,6 +412,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'ur' => array(
+                'name' => 'Urdu',
                 'enDisplayName' => 'Urdu',
                 'code' => 'ur',
                 'locale' => 'ur',
@@ -379,6 +420,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => true
             ),
             'vi' => array(
+                'name' => 'Vietnamese',
                 'enDisplayName' => 'Vietnamese',
                 'code' => 'vi',
                 'locale' => 'vi',
@@ -386,6 +428,7 @@ if ( !function_exists( 'zume_languages' ) ) {
                 'rtl' => false
             ),
             'yo' => array(
+                'name' => 'Yoruba',
                 'enDisplayName' => 'Yoruba',
                 'code' => 'yo',
                 'locale' => 'yo',
@@ -901,12 +944,15 @@ if( ! function_exists( 'zume_get_contact_id' ) ) {
 }
 if( ! function_exists( 'zume_get_user_profile' ) ) {
     function zume_get_user_profile( $user_id = NULL ) {
-        global $wpdb;
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
+
         $contact_id = zume_get_contact_id( $user_id );
+
+        global $wpdb;
         $name = $wpdb->get_var( $wpdb->prepare( "SELECT post_title FROM wp_posts WHERE ID = %d", $contact_id ) );
+
         $contact_meta_query = $wpdb->get_results( $wpdb->prepare( "SELECT * FROM wp_postmeta WHERE post_id = %d", $contact_id ), ARRAY_A );
         $contact_meta = [];
         foreach( $contact_meta_query as $value ) {
@@ -915,22 +961,34 @@ if( ! function_exists( 'zume_get_user_profile' ) ) {
 
         $email = $contact_meta['user_email'] ?? '';
         $phone = $contact_meta['user_phone'] ?? '';
-        $locale = zume_get_user_language( $user_id, 'locale' );
-        $code = zume_get_user_language( $user_id, 'code' );
         $language = zume_get_user_language( $user_id, 'array' );
         $location = zume_get_user_location( $user_id );
 
-        return [
-            'user_id' => $user_id,
-            'contact_id' => $contact_id,
-            'name' => $name,
-            'email' => $email,
-            'phone' => $phone,
-            'language' => $language,
-            'language_code' => $code,
-            'language_locale' => $locale,
-            'location' => $location,
-        ];
+        if( $user_id == get_current_user_id() ) {
+            // user is current user, build global variable
+            global $zume_user_profile;
+            $zume_user_profile = [
+                'user_id' => $user_id,
+                'contact_id' => $contact_id,
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone,
+                'language' => $language,
+                'location' => $location,
+            ];
+            return $zume_user_profile;
+        } else {
+            // if user is not current user, return array
+            return [
+                'user_id' => $user_id,
+                'contact_id' => $contact_id,
+                'name' => $name,
+                'email' => $email,
+                'phone' => $phone,
+                'language' => $language,
+                'location' => $location,
+            ];
+        }
     }
 }
 if( ! function_exists( 'zume_get_user_language' ) ) {

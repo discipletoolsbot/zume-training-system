@@ -31,7 +31,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         $post = zume_get_post_by_slug( $page_slug );
 
@@ -80,8 +80,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
     }
 
     public function header_style(){
-        $profile = Zume_Profile_Model::get();
-
+        global $zume_user_profile;
         ?>
         <script>
             jQuery(document).ready(function(){
@@ -94,7 +93,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 'map_key' => DT_Mapbox_API::get_key(),
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                'profile' => $profile,
+                'profile' => $zume_user_profile,
                 'mapbox_selected_id' => 'current',
             ]) ?>][0]
 
@@ -103,9 +102,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
     }
 
     public function body(){
-
-        $profile = Zume_Profile_Model::get();
-
+        global $zume_user_profile;
         require __DIR__ . '/../parts/nav.php';
         ?>
 
@@ -117,19 +114,19 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
                 <div class="">
                     <label for="full_name"><?php echo esc_html__( 'Name', 'zume' ) ?></label>
-                    <input required type="text" id="full_name" name="full_name" value="<?php echo esc_attr( $profile['name'] ) ?>">
+                    <input required type="text" id="full_name" name="full_name" value="<?php echo esc_attr( $zume_user_profile['name'] ) ?>">
                 </div>
                 <div class="">
                     <label for="phone"><?php echo esc_html__( 'Phone', 'zume' ) ?></label>
-                    <input type="tel" id="phone" name="phone" value="<?php echo esc_attr( $profile['user_phone'] ) ?>">
+                    <input type="tel" id="phone" name="phone" value="<?php echo esc_attr( $zume_user_profile['phone'] ) ?>">
                 </div>
                 <div class="">
                     <label for="email"><?php echo esc_html__( 'Email', 'zume' ) ?></label>
-                    <input disabled aria-disabled="true" type="email" id="email" name="email" value="<?php echo esc_attr( $profile['user_email'] ) ?>">
+                    <input disabled aria-disabled="true" type="email" id="email" name="email" value="<?php echo esc_attr( $zume_user_profile['email'] ) ?>">
                 </div>
                 <div class="">
                     <label for="city"><?php echo esc_html__( 'City', 'zume' ) ?></label>
-                    <input type="text" id="city" name="city" value="<?php echo esc_attr( $profile['location_grid_meta']['label'] ) ?>">
+                    <input type="text" id="city" name="city" value="<?php echo esc_attr( $zume_user_profile['location_grid_meta']['label'] ) ?>">
                 </div>
                 <div id="address_results">
 
@@ -142,7 +139,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
             </form>
 
-
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
         </div>
         <?php
     }

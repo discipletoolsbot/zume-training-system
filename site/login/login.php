@@ -34,7 +34,7 @@ class Zume_Training_Login extends Zume_Magic_Page {
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 

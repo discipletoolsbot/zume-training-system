@@ -69,6 +69,7 @@ class Zume_Training {
         require_once( 'globals.php' );
         require_once( 'integrations/loader.php' );
         zume_languages(); // build global
+        zume_get_user_profile(); // build global
         require_once( 'logging/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
@@ -133,14 +134,6 @@ class Zume_Training {
             if ( !isset( $fields['user_phone'] ) ){
                 $fields['user_phone'] = [
                     'name' => __( 'User Phone', 'zume' ),
-                    'type' => 'text',
-                    'tile' => 'profile_details',
-                    'only_for_types' => [ 'user' ],
-                ];
-            }
-            if ( !isset( $fields['user_language'] ) ){
-                $fields['user_language'] = [
-                    'name' => __( 'User Language', 'zume' ),
                     'type' => 'text',
                     'tile' => 'profile_details',
                     'only_for_types' => [ 'user' ],

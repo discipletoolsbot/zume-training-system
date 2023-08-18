@@ -31,7 +31,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         $post = zume_get_post_by_slug( $page_slug );
 

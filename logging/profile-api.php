@@ -53,10 +53,13 @@ class Zume_System_Profile_API
 
         $log = zume_user_log( $user_id );
 
+        $wp_user = get_user_by( 'ID', $user_id );
+
         return [
-            'profile' => self::_get_profile( $user_id ),
+            'profile' => zume_get_user_profile( $user_id ),
             'location' => $location,
             'stage' => zume_get_stage( $user_id, $log ),
+            'switch_user_url' => ( class_exists('user_switching') ) ? user_switching::maybe_switch_url( $wp_user ) : '' ,
         ];
     }
     public function guest( $params ) {
@@ -121,7 +124,7 @@ class Zume_System_Profile_API
             'name' => $name,
             'user_id' => $user_id,
             'contact_id' => $contact_id,
-            'language' => 'en',
+            'language' => get_user_locale( $user_id ),
         ];
     }
     public static function _get_completions( $user_id, $log = NULL ) {

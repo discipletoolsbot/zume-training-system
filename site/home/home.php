@@ -31,7 +31,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        if ( empty( $url_parts[0] ) && ! dt_is_rest() ) {
+        if ( empty( $url_parts[0] ?? '' ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -80,23 +80,18 @@ class Zume_Training_Home extends Zume_Magic_Page
     }
 
     public function body(){
-
+        global $zume_user_profile;
         require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="container">
 
-            <p>
-                current language: <?php echo esc_html( get_locale() ) ?>
-            </p>
-            <p>
-                pll current language: <?php echo esc_html( pll_current_language() ) ?>
-            </p>
-
             <h1 class="text-center"><?php echo esc_html__( 'Zúme Training', 'zume' ) ?></h1>
             <p class="text-center">
                 <?php echo esc_html__( 'Zúme Training is an on-line and in-life learning experience designed for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply.', 'zume' ) ?>
             </p>
+
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
 
         </div>
         <?php
