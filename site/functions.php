@@ -1,4 +1,7 @@
 <?php
+if ( !defined( 'ABSPATH' ) ) {
+    exit;
+}
 
 function zume_get_url_pieces( $url = null ) {
 
