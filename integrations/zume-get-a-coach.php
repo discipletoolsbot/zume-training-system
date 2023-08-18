@@ -74,6 +74,20 @@ class Zume_Get_a_Coach_Endpoints
             "trainee_contact_id" => (int) $contact['ID'],
         ];
 
+        if ( isset( $contact['location_grid_meta'][0]['lng'] ) ) {
+            $fields['location_grid_meta'] = [
+                "values" => [
+                    [
+                        "lng" => $contact['location_grid_meta'][0]['lng'],
+                        "lat" => $contact['location_grid_meta'][0]['lat'],
+                        "level" => $contact['location_grid_meta'][0]['level'],
+                        "label" => $contact['location_grid_meta'][0]['label'],
+                        "grid_id" => $contact['location_grid_meta'][0]['grid_id'],
+                    ]
+                ]
+            ];
+        }
+
         $site = Site_Link_System::get_site_connection_vars( 20125 );
         if ( ! $site ) {
             dt_write_log( __METHOD__ . ' FAILED TO GET SITE LINK TO GLOBAL ' );
