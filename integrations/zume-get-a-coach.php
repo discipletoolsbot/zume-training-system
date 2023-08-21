@@ -55,34 +55,38 @@ class Zume_Get_a_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id )
+    public static function register_request_to_coaching( $user_id = NULL )
     {
-        $contact_id = zume_get_contact_id( $user_id );
-        $contact = DT_Posts::get_post('contacts', $contact_id, true, false, true );
-
-        dt_write_log($contact);
+        if ( $user_id ) {
+            $profile = zume_get_user_profile( $user_id );
+        } else {
+            $user_id = get_current_user_id();
+            global $zume_user_profile;
+            $profile = $zume_user_profile;
+        }
 
         $fields = [
-            "title" => $contact['name'],
+            "title" => $profile['name'],
             "overall_status" => "new",
             "sources" => [
                 "values" => [
                     [ "value" => "zume_training" ]
                 ]
             ],
-            "trainee_user_id" => $user_id,
-            "trainee_contact_id" => (int) $contact['ID'],
+            "language_preference" => $profile['language']['code'],
+            "trainee_user_id" => $profile['user_id'],
+            "trainee_contact_id" => $profile['contact_id'],
         ];
 
-        if ( isset( $contact['location_grid_meta'][0]['lng'] ) ) {
+        if ( ! empty( $profile['location'] ) ) {
             $fields['location_grid_meta'] = [
                 "values" => [
                     [
-                        "lng" => $contact['location_grid_meta'][0]['lng'],
-                        "lat" => $contact['location_grid_meta'][0]['lat'],
-                        "level" => $contact['location_grid_meta'][0]['level'],
-                        "label" => $contact['location_grid_meta'][0]['label'],
-                        "grid_id" => $contact['location_grid_meta'][0]['grid_id'],
+                        "lng" => $profile['location']['lng'],
+                        "lat" => $profile['location']['lat'],
+                        "level" => $profile['location']['level'],
+                        "label" => $profile['location']['label'],
+                        "grid_id" => $profile['location']['grid_id'],
                     ]
                 ]
             ];

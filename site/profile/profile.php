@@ -126,7 +126,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 </div>
                 <div class="">
                     <label for="city"><?php echo esc_html__( 'City', 'zume' ) ?></label>
-                    <input type="text" id="city" name="city" value="<?php echo esc_attr( $zume_user_profile['location_grid_meta']['label'] ) ?>">
+                    <input type="text" id="city" name="city" value="<?php echo esc_attr( $zume_user_profile['location']['label'] ) ?>">
                 </div>
                 <div id="address_results">
 

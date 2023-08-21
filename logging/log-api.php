@@ -166,7 +166,7 @@ class Zume_System_Log_API
         return $report;
     }
     private static function _prepare_value( &$report, $data ) {
-        $stage = zume_get_stage( $report['user_id'] );
+        $stage = zume_get_user_stage( $report['user_id'] );
         $report['value'] = $stage['stage'];
 
         return $report;

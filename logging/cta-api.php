@@ -69,7 +69,7 @@ class Zume_System_CTA_API
             }
         }
 
-        $stage = zume_get_stage( $user_id, $log );
+        $stage = zume_get_user_stage( $user_id, $log );
 
         $log_keys = [];
         foreach( $log as $row ) {
