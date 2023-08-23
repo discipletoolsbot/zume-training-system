@@ -80,7 +80,7 @@ class Zume_System_CTA_API
 
         $ctas = [];
         foreach($templates as $template) {
-            if ( in_array( $stage['stage'], $template['stages'] ) ) {
+            if ( in_array( $stage['value'], $template['stages'] ) ) {
                 $ctas[] = $template;
             }
         }

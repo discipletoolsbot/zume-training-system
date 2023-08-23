@@ -3697,12 +3697,12 @@ msgid "Create and share your plan for how you will implement the Zúme tools ove
 msgstr "Create and share your plan for how you will implement the Zúme tools over the next three months."
 
 #: template-zume-training.php:753
-msgid "Practice - Create 3-Month Plan"
-msgstr "Practice - Create 3-Month Plan"
+msgid "Practice - Create Post Training Plan"
+msgstr "Practice - Create Post Training Plan"
 
 #: template-zume-training.php:759
-msgid "Discuss - Share 3-Month Plan with group"
-msgstr "Discuss - Share 3-Month Plan with group"
+msgid "Discuss - Share Post Training Plan with group"
+msgstr "Discuss - Share Post Training Plan with group"
 
 #: template-zume-training.php:762
 msgid "20 min"

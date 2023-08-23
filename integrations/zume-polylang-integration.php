@@ -31,15 +31,7 @@ function zume_the_languages( $args = array() ) {
     }
 }
 
-function zume_current_language() {
-    if ( function_exists( 'pll_the_languages' ) ) {
-        $current_language = pll_current_language();
-        return ( ! empty( $current_language ) ) ? $current_language : 'en';
-    }
-    else {
-        return 'en';
-    }
-}
+
 
 function zume_default_language() {
     if ( function_exists( 'pll_the_languages' ) ) {
@@ -166,7 +158,7 @@ if ( !function_exists( 'zume_landing_page_post_id' ) ) {
             24 => 20756, // non-sequential
             25 => 20757, // pace
             26 => 20758, // part of two churches
-            27 => 19848, // 3-month plan
+            27 => 19848, // post training plan
             28 => 20759, // coaching checklist
             29 => 20760, // leadership in networks
             30 => 20761, // peer mentoring groups
@@ -198,7 +190,7 @@ if ( !function_exists( 'zume_landing_page_post_id' ) ) {
             20756 => 24, // non-sequential
             20757 => 25, // pace
             20758 => 26, // part of two churches
-            19848 => 27, // 3-month plan
+            19848 => 27, // post training plan
             20759 => 28, // coaching checklist
             20760 => 29, // leadership in networks
             20761 => 30, // peer mentoring groups
