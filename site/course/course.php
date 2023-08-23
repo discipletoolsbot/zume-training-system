@@ -84,7 +84,7 @@ class Zume_Training_Course extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages, $zume_user_profile;
+        global $zume_languages_by_code, $zume_user_profile;
 
         require __DIR__ . '/../parts/nav.php';
 

@@ -35,7 +35,7 @@
 
     </header>
 
-    <?php global $zume_languages; ?>
+    <?php global $zume_languages_by_code; ?>
 
     <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
         <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
@@ -44,7 +44,7 @@
             <?php
             $url_pieces = zume_get_url_pieces();
 
-            foreach ( $zume_languages as $item ){
+            foreach ( $zume_languages_by_code as $item ){
                 if ( 'en' === $item['code'] ) {
                     $url = esc_url( trailingslashit( site_url() ) . $url_pieces['path'] );
                 } else {
