@@ -66,6 +66,8 @@ class Zume_Training {
         global $wpdb;
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
+        require_once( 'globals.php' );
+        require_once( 'appearance/loader.php' );
         require_once( 'integrations/loader.php' );
         require_once( 'logging/loader.php' );
         require_once( 'classes/loader.php' );
@@ -164,7 +166,11 @@ class Zume_Training {
 
     }
     public function dt_login_url( $dt_login_url ) {
-        $current_language = zume_current_language();
+        $current_language = 'en';
+
+        if ( function_exists( 'zume_current_language' ) ) {
+            $current_language = zume_current_language();
+        }
 
         if ( $current_language === 'en' ) {
             return $dt_login_url;
