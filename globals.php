@@ -86,6 +86,7 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
 
         $funnel = zume_funnel_stages();
         $stage = $funnel[0];
+        $logged_stage = 0;
 
         if ( empty( $log ) ) {
             return $stage;
@@ -102,7 +103,7 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 6 => false,
             ];
 
-            foreach( $log as $index => $value ) {
+            foreach( $log as $value ) {
                 if ( 'registered' == $value['subtype'] ) {
                     $funnel_steps[1] = true;
                 }

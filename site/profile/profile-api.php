@@ -35,7 +35,7 @@ class Zume_Profile_API
     }
 
     public function update_profile( WP_REST_Request $request ) {
-        $params = dt_recursive_sanitize_array( $request->get_params() );
+        $params = dt_recursive_sanitize_array( json_decode( $request->get_body(), true ) );
 
         $return = Zume_Profile_Model::update( $params );
 

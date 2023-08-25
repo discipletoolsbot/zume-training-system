@@ -87,13 +87,15 @@ class Zume_System_Log_API
 
         self::_prepare_post_id( $report, $data );
         self::_prepare_time_end( $report, $data );
-        self::_prepare_value( $report, $data );
+        self::_prepare_value( $report, $data, $log );
 
         $report['hash'] = hash('sha256', maybe_serialize($report)  . time() );
         $added_log[] = dt_report_insert( $report, true, false );
 
         // run additional actions
         self::_add_additional_log_actions( $added_log, $report, $log );
+
+        self::_check_for_stage_change( $added_log, $report['user_id'], $report );
 
         return $added_log;
     }
@@ -165,9 +167,14 @@ class Zume_System_Log_API
 
         return $report;
     }
-    private static function _prepare_value( &$report, $data ) {
-        $stage = zume_get_user_stage( $report['user_id'] );
-        $report['value'] = $stage['key'];
+    private static function _prepare_value( &$report, $data, $log ) {
+
+        if ( isset( $data['value'] ) && ! empty( $data['value'] ) ) {
+            $report['value'] = $data['value'];
+        } else {
+            $stage = zume_get_user_stage( $report['user_id'], $log );
+            $report['value'] = $stage['value'];
+        }
 
         return $report;
     }
@@ -573,7 +580,28 @@ class Zume_System_Log_API
         }
         return $already_logged;
     }
+    public static function _check_for_stage_change( &$added_log, $user_id, $report ) {
+        $log = zume_user_log( $user_id );
+        $stage = zume_get_user_stage( $user_id, $log );
+        $current_stage = $stage['value'];
 
+        $highest_logged_stage = 0;
+        foreach( $log as $row ) {
+            if ( $row['type'] === 'stage' && $row['subtype'] === 'current_level' ) {
+                $highest_logged_stage = max( $highest_logged_stage, $row['value'] );
+            }
+        }
+
+        if ( $highest_logged_stage < $current_stage ) {
+            $report['type'] = 'stage';
+            $report['subtype'] = 'current_level';
+            $report['value'] = $current_stage;
+            $report['hash'] = hash('sha256', maybe_serialize( $report )  . time() );
+            $added_log[] = dt_report_insert( $report, true, false );
+        }
+
+        return $added_log;
+    }
 
     public function authorize_url( $authorized ){
         if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace  ) !== false ) {

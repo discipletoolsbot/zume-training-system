@@ -4,6 +4,7 @@ class Zume_Profile_Model {
 
     public static function get() {
         global $zume_user_profile;
+        $zume_user_profile = zume_get_user_profile();
         return $zume_user_profile;
 
 
@@ -31,6 +32,7 @@ class Zume_Profile_Model {
      * @return array|WP_Error
      */
     public static function update( $fields ) {
+        dt_write_log( $fields );
 
         $name = isset( $fields['name'] ) ? $fields['name'] : '';
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';

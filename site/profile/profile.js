@@ -28,7 +28,7 @@ function submitProfileForm(e) {
 
     let location_grid_meta = {}
 
-    if ( id === 'curent' ) {
+    if ( id === 'current' ) {
         location_grid_meta = zumeProfile.profile.location
     } else if ( id && id !== '' && window.mapbox_results ) {
         const location_meta = window.mapbox_results.features.find((feature) => feature.id === id)
