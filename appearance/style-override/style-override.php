@@ -81,6 +81,9 @@ add_action( 'wp_head', function(){
             background-color: inherit;
             border-radius: 20px;
         }
+        .js-typeahead-assigned_to {
+            color: black !important;
+        }
     </style>
     <script>
         jQuery(document).ready(function(){
