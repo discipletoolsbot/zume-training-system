@@ -729,7 +729,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
     function zume_training_items() : array {
 
         $training_items = [
-            "01" => [
+            "1" => [
                 "key" => "01",
                 "title" => "God Uses Ordinary People",
                 "description" => "You'll see how God uses ordinary people doing simple things to make a big impact.",
@@ -737,7 +737,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => false,
             ],
-            "02" => [
+            "2" => [
                 "key" => "02",
                 "title" => "Simple Definition of Disciple and Church",
                 "description" => "Discover the essence of being a disciple, making a disciple, and what is the church.",
@@ -745,7 +745,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => false,
             ],
-            "03" => [
+            "3" => [
                 "key" => "03",
                 "title" => "Spiritual Breathing is Hearing and Obeying God",
                 "description" => "Being a disciple means we hear from God and we obey God.",
@@ -753,7 +753,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => false,
             ],
-            "04" => [
+            "4" => [
                 "key" => "04",
                 "title" => "SOAPS Bible Reading",
                 "description" => "A tool for daily Bible study that helps you understand, obey, and share God’s Word.",
@@ -761,7 +761,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => true,
             ],
-            "05" => [
+            "5" => [
                 "key" => "05",
                 "title" => "Accountability Groups",
                 "description" => "A tool for two or three people of the same gender to meet weekly and encourage each other in areas that are going well and reveal areas that need correction.",
@@ -769,7 +769,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => true,
             ],
-            "06" => [
+            "6" => [
                 "key" => "06",
                 "title" => "Consumer vs Producer Lifestyle",
                 "description" => "You'll discover the four main ways God makes everyday followers more like Jesus.",
@@ -777,7 +777,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => false,
             ],
-            "07" => [
+            "7" => [
                 "key" => "07",
                 "title" => "How to Spend an Hour in Prayer",
                 "description" => "See how easy it is to spend an hour in prayer.",
@@ -785,7 +785,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => true,
             ],
-            "08" => [
+            "8" => [
                 "key" => "08",
                 "title" => "Relational Stewardship – List of 100",
                 "description" => "A tool designed to help you be a good steward of your relationships.",
@@ -793,7 +793,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 "host" => true,
                 "mawl" => true,
             ],
-            "09" => [
+            "9" => [
                 "key" => "09",
                 "title" => "The Kingdom Economy",
                 "description" => "Learn how God's economy is different from the world's. God invests more in those who are faithful with what they've already been given.",
