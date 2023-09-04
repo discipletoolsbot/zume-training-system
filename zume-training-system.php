@@ -69,7 +69,7 @@ class Zume_Training {
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
         require_once( 'integrations/loader.php' );
-        require_once( 'logging/loader.php' );
+        require_once( 'encouragement/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
         require_once( 'site/login/loader.php' );

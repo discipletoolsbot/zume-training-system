@@ -150,16 +150,6 @@ class Zume_System_CTA_API
                 'link' => '/request-coach',
             ],
             [
-                'stages' => [2],
-                'required_keys' => ['training_03_heard'],
-                'disable_keys' => ['training_03_shared'],
-                'label' => 'Share Spiritual Breathing',
-                'key' => 'training_03_shared',
-                'type' => 'training',
-                'subtype' => '03_shared',
-                'link' => '/training_03_shared',
-            ],
-            [
                 'stages' => [1],
                 'required_keys' => [],
                 'disable_keys' => ['system_plan_created'],
@@ -228,6 +218,29 @@ class Zume_System_CTA_API
                 'type' => 'system',
                 'subtype' => 'joined_affinity_hub',
                 'link' => '/profile',
+            ],
+
+
+            // HOST triggers
+            [
+                'stages' => [2],
+                'required_keys' => ['training_03_heard'],
+                'disable_keys' => ['training_03_shared'],
+                'label' => 'Share Spiritual Breathing',
+                'key' => 'training_03_shared',
+                'type' => 'training',
+                'subtype' => '03_shared',
+                'link' => '/training_03_shared',
+            ],
+            [
+                'stages' => [2],
+                'required_keys' => ['training_08_heard'],
+                'disable_keys' => ['training_08_shared'],
+                'label' => 'SHARE - Relational Stewardship',
+                'key' => 'training_08_shared',
+                'type' => 'training',
+                'subtype' => '08_shared',
+                'link' => '/training_08_shared',
             ],
         ];
         return $templates;
