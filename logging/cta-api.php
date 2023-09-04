@@ -150,6 +150,16 @@ class Zume_System_CTA_API
                 'link' => '/request-coach',
             ],
             [
+                'stages' => [2],
+                'required_keys' => ['training_03_heard'],
+                'disable_keys' => ['training_03_shared'],
+                'label' => 'Share Spiritual Breathing',
+                'key' => 'training_03_shared',
+                'type' => 'training',
+                'subtype' => '03_shared',
+                'link' => '/training_03_shared',
+            ],
+            [
                 'stages' => [1],
                 'required_keys' => [],
                 'disable_keys' => ['system_plan_created'],
