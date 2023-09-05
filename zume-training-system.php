@@ -78,7 +78,6 @@ class Zume_Training {
         require_once( 'site/login/loader.php' );
         $this->i18n();
         $this->setup_hooks();
-
     }
     public static function activation() {
     }
@@ -100,7 +99,7 @@ class Zume_Training {
         remove_filter( 'retrieve_password_message', 'dt_multisite_retrieve_password_message', 99 );
         add_filter( 'retrieve_password_message', [ $this, 'filter_retrieve_password_message' ], 10, 4 );
         add_filter( 'retrieve_password_headers', [ $this, 'filter_retrieve_password_headers' ], 10, 1 );
-        add_filter( 'password_hint', function( string $hint ) : string {
+        add_filter( 'password_hint', function ( string $hint ): string {
             return '';
         } );
 
@@ -114,13 +113,13 @@ class Zume_Training {
             'identity_providers_facebook' => 'on',
         ];
         if ( isset( $_ENV['FIREBASE_API_KEY'] ) ) {
-            $fields['firebase_api_key'] = $_ENV['FIREBASE_API_KEY'];
+            $fields['firebase_api_key'] = sanitize_text_field( $_ENV['FIREBASE_API_KEY'] );
         }
         if ( isset( $_ENV['FIREBASE_PROJECT_ID'] ) ) {
-            $fields['firebase_project_id'] = $_ENV['FIREBASE_PROJECT_ID'];
+            $fields['firebase_project_id'] = sanitize_text_field( $_ENV['FIREBASE_PROJECT_ID'] );
         }
         if ( isset( $_ENV['FIREBASE_APP_ID'] ) ) {
-            $fields['firebase_app_id'] = $_ENV['FIREBASE_APP_ID'];
+            $fields['firebase_app_id'] = sanitize_text_field( $_ENV['FIREBASE_APP_ID'] );
         }
         DT_Login_Fields::update( $fields );
     }
@@ -134,7 +133,7 @@ class Zume_Training {
      * @param \WP_User $user_data  WP_User object.
      * @return string Email message.
      */
-    public function filter_retrieve_password_message( string $message, string $key, string $user_login, \WP_User $user_data ) : string {
+    public function filter_retrieve_password_message( string $message, string $key, string $user_login, \WP_User $user_data ): string {
         $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
 
         $message = __( 'Someone has requested a password reset for the following account:', 'zume' ) . "\r\n\r\n";
@@ -157,7 +156,7 @@ class Zume_Training {
      * @param \WP_User $user_data  WP_User object.
      * @return string Email subject.
      */
-    public function filter_retrieve_password_title( string $title, string $user_login, \WP_User $user_data ) : string {
+    public function filter_retrieve_password_title( string $title, string $user_login, \WP_User $user_data ): string {
         $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
 
         /* translators: Password reset email subject. %s: Site name */
@@ -166,7 +165,7 @@ class Zume_Training {
         return $title;
     }
 
-    public function filter_retrieve_password_headers( string $headers ) : string {
+    public function filter_retrieve_password_headers( string $headers ): string {
 
         $headers .= ' X-Zume-Email-System';
 
@@ -174,8 +173,8 @@ class Zume_Training {
     }
 
 
-    public function dt_details_additional_tiles( $tiles, $post_type = '' ){
-        if ( $post_type === 'contacts' ){
+    public function dt_details_additional_tiles( $tiles, $post_type = '' ) {
+        if ( $post_type === 'contacts' ) {
             $tiles['profile_details'] = [
                 'label' => __( 'Profile Details', 'zume' ),
                 'display_for' => [
@@ -228,7 +227,6 @@ class Zume_Training {
                 'user_email' => $user->user_email,
             ], false, false );
         }
-
     }
     public function dt_login_url( $dt_login_url ) {
         $dt_login_url = str_replace( $this->builtin_login_url, $this->login_url, $dt_login_url );
@@ -300,9 +298,8 @@ class Zume_Training {
         unset( $method, $args );
         return null;
     }
-
 }
-add_action( 'plugins_loaded', function (){
+add_action( 'plugins_loaded', function () {
     if ( is_admin() && !( is_multisite() && class_exists( 'DT_Multisite' ) ) || wp_doing_cron() ){
         // Check for plugin updates
         if ( ! class_exists( 'Puc_v4_Factory' ) ) {
