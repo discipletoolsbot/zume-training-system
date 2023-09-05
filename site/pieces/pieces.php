@@ -34,7 +34,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         if ( isset( $page_slug ) && !empty( $page_slug ) ) {
 
@@ -91,6 +91,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     }
 
     public function body(){
+        global $zume_user_profile;
 
         $tool_number = $this->meta['zume_piece'][0] ?? 0;
         $pre_video_content = $this->meta['zume_pre_video_content'][0] ?? '';
@@ -115,6 +116,8 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
             echo wp_kses_post( wpautop( $ask_content ) );
 
             ?>
+
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
 
         </div>
 

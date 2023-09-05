@@ -3,7 +3,7 @@
  * Plugin Name: Zúme - Training System
  * Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Description: Zume Training System
- * Text Domain: zume
+ * Text Domain: zume-training-system
  * Domain Path: /languages
  * Version:  0.2
  * Author URI: https://github.com/ZumeProject/zume-training-system
@@ -70,13 +70,15 @@ class Zume_Training {
 
         $this->define_constants();
         require_once( 'globals.php' );
-        require_once( 'integrations/zume-polylang-integration.php' );
-        zume_languages(); // build global
+        require_once( 'appearance/loader.php' );
+        require_once( 'integrations/loader.php' );
+        require_once( 'encouragement/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
         require_once( 'site/login/loader.php' );
         $this->i18n();
         $this->setup_hooks();
+
     }
     public static function activation() {
     }
@@ -231,7 +233,11 @@ class Zume_Training {
     public function dt_login_url( $dt_login_url ) {
         $dt_login_url = str_replace( $this->builtin_login_url, $this->login_url, $dt_login_url );
 
-        $current_language = zume_current_language();
+        $current_language = 'en';
+
+        if ( function_exists( 'zume_current_language' ) ) {
+            $current_language = zume_current_language();
+        }
 
         [
             'url_parts' => $url_parts,

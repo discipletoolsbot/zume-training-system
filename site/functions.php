@@ -1,4 +1,7 @@
 <?php
+if ( !defined( 'ABSPATH' ) ) {
+    exit;
+}
 
 function zume_get_url_pieces( $url = null ) {
 
@@ -18,8 +21,25 @@ function zume_get_url_pieces( $url = null ) {
     return [
         'lang_code' => $lang_code,
         'path' => $path,
-        'url_parts' => $url_parts,
+        'url_parts' => ( $url_parts ) ? $url_parts : [],
     ];
+}
+
+if ( ! function_exists('zume_current_language') ) {
+    function zume_current_language() {
+        if ( function_exists( 'pll_the_languages' ) ) {
+            $current_language = pll_current_language();
+            return ( ! empty( $current_language ) ) ? $current_language : 'en';
+        }
+
+        $locale = get_locale();
+
+        if ( empty( $local ) || 'en_US' === $locale ) {
+            return 'en';
+        }
+
+        return $locale;
+    }
 }
 
 function zume_home_url( $current_language = null ) {

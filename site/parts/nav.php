@@ -13,7 +13,7 @@
 
                 <?php if ( is_user_logged_in() ) : ?>
 
-                    <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?><li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="nav__link"><?php echo esc_html__( 'Admin', 'zume' ) ?></a></li><?php } ?>
+                    <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?><li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="nav__link"><?php echo esc_html__( 'DTools', 'zume' ) ?></a></li><?php } ?>
                     <li class="nav__item"><a href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__link"><?php echo esc_html__( 'Profile', 'zume' ) ?></a></li>
                     <li class="nav__item"><a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="nav__link"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
                     <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Logout', 'zume' ) ?></a></li>
@@ -35,7 +35,7 @@
 
     </header>
 
-    <?php global $zume_languages; ?>
+    <?php global $zume_languages_by_code; ?>
 
     <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
         <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
@@ -44,7 +44,7 @@
             <?php
             $url_pieces = zume_get_url_pieces();
 
-            foreach ( $zume_languages as $item ){
+            foreach ( $zume_languages_by_code as $item ){
                 if ( 'en' === $item['code'] ) {
                     $url = esc_url( trailingslashit( site_url() ) . $url_pieces['path'] );
                 } else {

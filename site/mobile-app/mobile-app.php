@@ -31,7 +31,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
@@ -82,7 +82,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages;
+        global $zume_user_profile;
 
         require __DIR__ . '/../parts/nav.php';
         ?>
@@ -91,9 +91,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
             <h1 class="text-center"><?php echo esc_html__( 'Mobile App', 'zume' ) ?></h1>
 
-            <p>
-                current language: <?php echo esc_html( get_locale() ) ?>
-            </p>
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
 
         </div>
         <?php

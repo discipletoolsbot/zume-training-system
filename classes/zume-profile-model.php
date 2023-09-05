@@ -3,20 +3,25 @@
 class Zume_Profile_Model {
 
     public static function get() {
-        $profile = [];
+        global $zume_user_profile;
+        $zume_user_profile = zume_get_user_profile();
+        return $zume_user_profile;
 
-        $contact_id = self::get_user_contact_id();
 
-        $user = wp_get_current_user();
-        /* Allow the current user to get their own contact record without permissions set */
-        $post = DT_Posts::get_post( 'contacts', $contact_id, true, false );
+//        $profile = [];
 
-        $profile['user_email'] = $user->user_email;
-        $profile['name'] = $user->display_name;
-        $profile['location_grid_meta'] = isset( $post['location_grid_meta'] ) && !empty( $post['location_grid_meta'] ) ? $post['location_grid_meta'][0] : [ 'label' => '' ];
-        $profile['user_phone'] = isset( $post['user_phone'] ) && !empty( $post['user_phone'] ) ? $post['user_phone'] : '';
+//        $contact_id = self::get_user_contact_id();
+//
+//        $user = wp_get_current_user();
+//        /* Allow the current user to get their own contact record without permissions set */
+//        $post = DT_Posts::get_post( 'contacts', $contact_id, true, false );
+//
+//        $profile['user_email'] = $user->user_email;
+//        $profile['name'] = $user->display_name;
+//        $profile['location_grid_meta'] = isset( $post['location_grid_meta'] ) && !empty( $post['location_grid_meta'] ) ? $post['location_grid_meta'][0] : [ 'label' => '' ];
+//        $profile['user_phone'] = isset( $post['user_phone'] ) && !empty( $post['user_phone'] ) ? $post['user_phone'] : '';
 
-        return $profile;
+//        return zume_get;
     }
 
     /**
@@ -27,6 +32,7 @@ class Zume_Profile_Model {
      * @return array|WP_Error
      */
     public static function update( $fields ) {
+        dt_write_log( $fields );
 
         $name = isset( $fields['name'] ) ? $fields['name'] : '';
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';

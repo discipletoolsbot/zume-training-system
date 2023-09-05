@@ -31,7 +31,7 @@ class Zume_Training_Vision extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         $post = zume_get_post_by_slug( $page_slug );
 
@@ -84,7 +84,7 @@ class Zume_Training_Vision extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages;
+        global $zume_languages_by_code;
 
         require __DIR__ . '/../parts/nav.php';
         ?>

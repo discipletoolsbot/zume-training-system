@@ -31,7 +31,7 @@ class Zume_Training_Course extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $page_slug = $url_parts[0];
+        $page_slug = $url_parts[0] ?? '';
 
         $post = zume_get_post_by_slug( $page_slug );
 
@@ -84,12 +84,12 @@ class Zume_Training_Course extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages;
+        global $zume_languages_by_code, $zume_user_profile;
 
         require __DIR__ . '/../parts/nav.php';
 
 
-        $current_language = pll_current_language();
+        $current_language = $zume_user_profile['language']['code'];
 
         $args = [
             'post_type' => 'zume_pieces',
@@ -125,6 +125,7 @@ class Zume_Training_Course extends Zume_Magic_Page
 
                 <?php endforeach; ?>
             </ol>
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
         </div>
         <?php
     }

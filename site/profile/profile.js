@@ -26,10 +26,10 @@ function submitProfileForm(e) {
     /* get the location_grid from mapbox selection */
     const id = zumeProfile.mapbox_selected_id
 
-    let location_grid_meta = ''
+    let location_grid_meta = {}
 
-    if ( id === 'curent' ) {
-        location_grid_meta = zumeProfile.profile.location_grid_meta
+    if ( id === 'current' ) {
+        location_grid_meta = zumeProfile.profile.location
     } else if ( id && id !== '' && window.mapbox_results ) {
         const location_meta = window.mapbox_results.features.find((feature) => feature.id === id)
         location_grid_meta = {

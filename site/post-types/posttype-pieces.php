@@ -51,7 +51,10 @@ class Zume_Training_Pieces_Post_Type
         global $wp_post_types;
         foreach ( $wp_post_types as $type => $custom_post ){
             if ( $custom_post->_builtin == false && $type == $post->post_type ){
-                $custom_post->rewrite['slug'] = $custom_post->rewrite !== false ? trim( $custom_post->rewrite['slug'], '/' ) : '';
+                if ( ! $custom_post->rewrite ) {
+                    $custom_post->rewrite = array();
+                }
+                $custom_post->rewrite['slug'] = ! empty( $custom_post->rewrite['slug'] ) ? trailingslashit( $custom_post->rewrite['slug'] ) : '';
                 $permalink = str_replace( '/' . $custom_post->rewrite['slug'] . '/', '/', $permalink );
             }
         }

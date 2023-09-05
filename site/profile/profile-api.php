@@ -35,10 +35,9 @@ class Zume_Profile_API
     }
 
     public function update_profile( WP_REST_Request $request ) {
-        $body = $request->get_body();
-        $body = json_decode( $body, true );
+        $params = dt_recursive_sanitize_array( json_decode( $request->get_body(), true ) );
 
-        $return = Zume_Profile_Model::update( $body );
+        $return = Zume_Profile_Model::update( $params );
 
         if ( is_wp_error( $return ) ) {
             return $return;
