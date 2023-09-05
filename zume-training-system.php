@@ -18,6 +18,12 @@
  *          https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+if ( ! defined( 'ZUME_TRAINING_URL' ) ) {
+    define( 'ZUME_TRAINING_URL', 'https://zume5.training/' );
+}
+if ( ! defined( 'ZUME_COACHING_URL' ) ) {
+    define( 'ZUME_COACHING_URL', 'https://zume5.training/coaching/' );
+}
 
 function zume_training() {
     $zume_training_required_dt_theme_version = '1.0';
@@ -88,6 +94,7 @@ class Zume_Training {
         add_action( 'dt_update_users_corresponding_contact', [ $this, 'dt_update_users_corresponding_contact' ], 10, 2 );
         add_filter( 'dt_login_url', [ $this, 'dt_login_url' ] );
         add_filter( 'dt_login_redirect_url', [ $this, 'dt_login_redirect_url' ] );
+        add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
@@ -141,6 +148,11 @@ class Zume_Training {
             }
         }
         return $fields;
+    }
+    public function dt_create_users_corresponding_contact( $new_user_contact, $user ) {
+        // adds support fields after registration
+        update_post_meta($new_user_contact['ID'], 'user_email',$user->user_email);
+        update_post_meta($new_user_contact['ID'], 'user_phone', '');
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();
