@@ -63,7 +63,7 @@ class Zume_System_CTA_API
     public static function _get_ctas( $user_id, $log = NULL ) : array
     {
         if ( is_null( $log ) ) {
-            $log = zume_user_log( $user_id );
+            $log = zume_get_user_log( $user_id );
             if ( is_null( $log ) ) {
                 return [];
             }

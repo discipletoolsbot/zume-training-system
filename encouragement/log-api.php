@@ -83,7 +83,7 @@ class Zume_System_Log_API
             return $added_log;
         }
 
-        $log = zume_user_log( $report['user_id'] );
+        $log = zume_get_user_log( $report['user_id'] );
 
         self::_prepare_post_id( $report, $data );
         self::_prepare_time_end( $report, $data );
@@ -581,7 +581,7 @@ class Zume_System_Log_API
         return $already_logged;
     }
     public static function _check_for_stage_change( &$added_log, $user_id, $report ) {
-        $log = zume_user_log( $user_id );
+        $log = zume_get_user_log( $user_id );
         $stage = zume_get_user_stage( $user_id, $log );
         $current_stage = $stage['value'];
 

@@ -90,7 +90,7 @@ class Zume_System_Encouragement_API
             "SELECT * FROM $wpdb->dt_zume_message_plan WHERE user_id = %d"
             , $user_id ), ARRAY_A );
 
-        $log = zume_user_log( $user_id );
+        $log = zume_get_user_log( $user_id );
 //        dt_write_log($log);
         if ( empty( $log ) ) {
             return $raw_plan;
