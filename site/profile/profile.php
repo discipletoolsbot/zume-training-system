@@ -103,7 +103,6 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
     public function body(){
         global $zume_user_profile;
-        dt_write_log( $zume_user_profile );
         require __DIR__ . '/../parts/nav.php';
         ?>
 
@@ -158,7 +157,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                     });
                 </script>
             <?php } else if ( ! empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
-                <a href="https://zume5.training/coaching/contacts/<?php echo $zume_user_profile['coaching_contact_id'] ?>">Link to Coaching System Record</a>
+                <a class="button" href="https://zume5.training/coaching/contacts/<?php echo $zume_user_profile['coaching_contact_id'] ?>">Link to Coaching System Record</a>
             <?php } ?>
 
             <hr>
