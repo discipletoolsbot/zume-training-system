@@ -9,6 +9,7 @@
 class Zume_Training_Login extends Zume_Magic_Page {
 
     use Translateable;
+
     public $magic = false;
     public $parts = false;
     public $page_title = 'User Login';
@@ -29,24 +30,22 @@ class Zume_Training_Login extends Zume_Magic_Page {
     public function __construct() {
         parent::__construct();
 
-        [
-            'lang_code' => $lang_code,
-            'url_parts' => $url_parts,
-        ] = zume_get_url_pieces();
+        $this->initialize_language();
 
-        $page_slug = $url_parts[0] ?? '';
+        if ( $this->slug_matches( $this->type ) && ! dt_is_rest() ) {
 
-        if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
+            $this->set_locale();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', function (){ return true;
+            add_filter( 'dt_blank_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_allow_non_login_access', function (){ return true;
+            add_filter( 'dt_allow_non_login_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_override_header_meta', function (){ return true;
+            add_filter( 'dt_override_header_meta', function () {
+                return true;
             }, 100, 1 );
 
             // header content
@@ -98,6 +97,5 @@ class Zume_Training_Login extends Zume_Magic_Page {
 
         require_once __DIR__ . '/../parts/footer.php';
     }
-
 }
 Zume_Training_Login::instance();

@@ -61,6 +61,8 @@ add_action( 'after_setup_theme', 'zume_training', 20 );
 
 class Zume_Training {
     private static $_instance = null;
+    private string $login_url = 'login';
+    private string $builtin_login_url = 'login-url-not-to-be-used';
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
@@ -72,6 +74,7 @@ class Zume_Training {
         global $wpdb;
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
+        $this->define_constants();
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
         require_once( 'integrations/loader.php' );
@@ -81,11 +84,15 @@ class Zume_Training {
         require_once( 'site/login/loader.php' );
         $this->i18n();
         $this->setup_hooks();
-
     }
     public static function activation() {
     }
     public static function deactivation() {
+    }
+    public function define_constants() {
+        if ( !defined( 'ZUME_LANGUAGE_COOKIE' ) ) {
+            define( 'ZUME_LANGUAGE_COOKIE', 'zume_language' );
+        }
     }
     public function setup_hooks() {
         add_filter( 'dt_custom_fields_settings', [ $this, 'dt_contact_fields' ], 1, 2 );
@@ -94,30 +101,87 @@ class Zume_Training {
         add_action( 'dt_update_users_corresponding_contact', [ $this, 'dt_update_users_corresponding_contact' ], 10, 2 );
         add_filter( 'dt_login_url', [ $this, 'dt_login_url' ] );
         add_filter( 'dt_login_redirect_url', [ $this, 'dt_login_redirect_url' ] );
+        add_filter( 'retrieve_password_title', [ $this, 'filter_retrieve_password_title' ], 10, 3 );
+        remove_filter( 'retrieve_password_message', 'dt_multisite_retrieve_password_message', 99 );
+        add_filter( 'retrieve_password_message', [ $this, 'filter_retrieve_password_message' ], 10, 4 );
+        add_filter( 'retrieve_password_headers', [ $this, 'filter_retrieve_password_headers' ], 10, 1 );
+        add_filter( 'password_hint', function ( string $hint ): string {
+            return '';
+        } );
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
             'login_enabled' => 'on',
-            'redirect_url' => '/dashboard',
-            'login_url' => 'login',
+            'redirect_url' => 'dashboard',
+            'login_url' => $this->builtin_login_url,
             'ui_smallprint' => 'off',
             'identity_providers_google' => 'on',
             'identity_providers_facebook' => 'on',
         ];
         if ( isset( $_ENV['FIREBASE_API_KEY'] ) ) {
-            $fields['firebase_api_key'] = $_ENV['FIREBASE_API_KEY'];
+            $fields['firebase_api_key'] = sanitize_text_field( $_ENV['FIREBASE_API_KEY'] );
         }
         if ( isset( $_ENV['FIREBASE_PROJECT_ID'] ) ) {
-            $fields['firebase_project_id'] = $_ENV['FIREBASE_PROJECT_ID'];
+            $fields['firebase_project_id'] = sanitize_text_field( $_ENV['FIREBASE_PROJECT_ID'] );
         }
         if ( isset( $_ENV['FIREBASE_APP_ID'] ) ) {
-            $fields['firebase_app_id'] = $_ENV['FIREBASE_APP_ID'];
+            $fields['firebase_app_id'] = sanitize_text_field( $_ENV['FIREBASE_APP_ID'] );
         }
         DT_Login_Fields::update( $fields );
     }
-    public function dt_details_additional_tiles( $tiles, $post_type = '' ){
-        if ( $post_type === 'contacts' ){
+
+    /**
+     * Filters the message body of the password reset mail.
+     *
+     * @param string   $message    Email message.
+     * @param string   $key        The activation key.
+     * @param string   $user_login The username for the user.
+     * @param \WP_User $user_data  WP_User object.
+     * @return string Email message.
+     */
+    public function filter_retrieve_password_message( string $message, string $key, string $user_login, \WP_User $user_data ): string {
+        $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
+
+        $message = __( 'Someone has requested a password reset for the following account:', 'zume' ) . "\r\n\r\n";
+        /* translators: %s: site name */
+        $message .= sprintf( __( 'Site Name: %s', 'zume' ), $site_name ) . "\r\n\r\n";
+        /* translators: %s: user login */
+        $message .= sprintf( __( 'Username: %s', 'zume' ), $user_login ) . "\r\n\r\n";
+        $message .= __( 'If this was a mistake, just ignore this email and nothing will happen.', 'zume' ) . "\r\n\r\n";
+        $message .= __( 'To reset your password, visit the following address:', 'zume' ) . "\r\n\r\n";
+        $message .= '<' . dt_login_url( 'login' ) . "&action=rp&key=$key&login=" . rawurlencode( $user_login ) . ">\r\n";
+
+        return $message;
+    }
+
+    /**
+     * Filters the subject of the password reset email.
+     *
+     * @param string   $title      Email subject.
+     * @param string   $user_login The username for the user.
+     * @param \WP_User $user_data  WP_User object.
+     * @return string Email subject.
+     */
+    public function filter_retrieve_password_title( string $title, string $user_login, \WP_User $user_data ): string {
+        $site_name = wp_specialchars_decode( get_option( 'blogname' ), ENT_QUOTES );
+
+        /* translators: Password reset email subject. %s: Site name */
+        $title = sprintf( __( '[%s] Password Reset', 'zume' ), $site_name );
+
+        return $title;
+    }
+
+    public function filter_retrieve_password_headers( string $headers ): string {
+
+        $headers .= ' X-Zume-Email-System';
+
+        return $headers;
+    }
+
+
+    public function dt_details_additional_tiles( $tiles, $post_type = '' ) {
+        if ( $post_type === 'contacts' ) {
             $tiles['profile_details'] = [
                 'label' => __( 'Profile Details', 'zume' ),
                 'display_for' => [
@@ -151,8 +215,8 @@ class Zume_Training {
     }
     public function dt_create_users_corresponding_contact( $new_user_contact, $user ) {
         // adds support fields after registration
-        update_post_meta($new_user_contact['ID'], 'user_email',$user->user_email);
-        update_post_meta($new_user_contact['ID'], 'user_phone', '');
+        update_post_meta( $new_user_contact['ID'], 'user_email', $user->user_email );
+        update_post_meta( $new_user_contact['ID'], 'user_phone', '' );
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();
@@ -175,13 +239,32 @@ class Zume_Training {
                 'user_email' => $user->user_email,
             ], false, false );
         }
-
     }
     public function dt_login_url( $dt_login_url ) {
+        $dt_login_url = str_replace( $this->builtin_login_url, $this->login_url, $dt_login_url );
+
         $current_language = 'en';
 
         if ( function_exists( 'zume_current_language' ) ) {
             $current_language = zume_current_language();
+        }
+
+        [
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
+
+        /**
+         * When the login fails with bad email/password, we need to get the lang_code from the
+         * HTTP_REFERER url, otherwise it redirects back to english
+         */
+        if ( $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
+            $url = wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) ) );
+            [
+                'lang_code' => $lang_code,
+            ] = zume_get_url_pieces( ltrim( $url['path'], '/' ) );
+            if ( $lang_code !== $current_language ) {
+                $current_language = $lang_code;
+            }
         }
 
         if ( $current_language === 'en' ) {
@@ -227,9 +310,8 @@ class Zume_Training {
         unset( $method, $args );
         return null;
     }
-
 }
-add_action( 'plugins_loaded', function (){
+add_action( 'plugins_loaded', function () {
     if ( is_admin() && !( is_multisite() && class_exists( 'DT_Multisite' ) ) || wp_doing_cron() ){
         // Check for plugin updates
         if ( ! class_exists( 'Puc_v4_Factory' ) ) {

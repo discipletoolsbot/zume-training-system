@@ -76,6 +76,15 @@ switch ( $request_action ) {
 
         do_action( 'lost_password' );
 
+        $translated_error_messages = [
+            'retrieve-password-missing-nonce' => __( 'Missing form verification. Refresh and try again.', 'zume' ),
+            'retrieve-password-missing-username-email' => __( 'Missing username or email address.', 'zume' ),
+            'retrieve-password-no-username-email' => __( 'ERROR: Enter a username or email address.', 'zume' ),
+            'retrieve-password-bad-email-address' => __( 'ERROR: There is no user registered with that email address.', 'zume' ),
+            'retrieve-password-bad-username' => __( 'ERROR: There is no user registered with that username.', 'zume' ),
+            'invalidcombo' => __( 'ERROR: Invalid username or email.', 'zume' ),
+        ];
+
         ?>
 
         <div id="content">
@@ -88,13 +97,25 @@ switch ( $request_action ) {
                             <div class="cell center">
                                 <h1 ><?php esc_html_e( 'Get New Password', 'zume' ) ?></h1>
                             </div>
+
                             <?php if ( ! empty( $form_errors->errors ) ) : ?>
+
                                 <div class="cell alert callout">
+
                                     <?php
-                                    echo esc_html( $form_errors->get_error_message() );
+
+                                    if ( isset( $translated_error_messages[$form_errors->get_error_code()] ) ) {
+                                        echo esc_html( $translated_error_messages[$form_errors->get_error_code()] );
+                                    } else {
+                                        echo esc_html( $form_errors->get_error_message() );
+                                    }
+
                                     ?>
+
                                 </div>
+
                             <?php endif; ?>
+
                             <div class="cell">
                                 <div class="wp_lostpassword_form">
                                     <?php if ( ! $sent ) : ?>
@@ -193,7 +214,7 @@ switch ( $request_action ) {
                 <div class="cell medium-3 large-4"></div>
                 <div class="cell callout medium-6 large-4">
                     <div class="grid-x grid-padding-x grid-padding-y">
-                        <div class="cell"><?php echo sprintf( 'Your password is reset. %s You can login here %', '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
+                        <div class="cell"><?php printf( esc_html__( 'Your password is reset. %1$s You can login here %2$s', 'zume' ), '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
                     </div>
                 </div>
                 <div class="cell medium-3 large-4"></div>
@@ -247,12 +268,11 @@ switch ( $request_action ) {
                                         <div>
                                             <label><?php esc_html_e( 'Password Required', 'zume' ) ?> <strong>*</strong>
                                                 <input type="password" id="pass1" name="pass1" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
-                                                <span class="form-error" id="password-error-1">
-                                                    <?php esc_html_e( 'Password Required', 'zume' ) ?>
+                                                <span class="form-error" id="password-error-too-weak">
+                                                    <?php esc_html_e( 'Please choose a stronger password. This one is too weak.', 'zume' ) ?>
                                                 </span>
                                             </label>
                                             <meter max="4" id="password-strength-meter" value="0"></meter>
-                                        <p id="password-strength-text"></p>
                                         </div>
                                         <p>
                                             <label><?php esc_html_e( 'Re-enter Password', 'zume' ) ?> <strong>*</strong>
@@ -279,7 +299,11 @@ switch ( $request_action ) {
                                         ?>
                                         <input type="hidden" name="rp_key" value="<?php echo esc_attr( $rp_key ); ?>" />
 
-                                        <p><input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="<?php esc_html_e( 'Reset Password', 'zume' ); ?>" /></p>
+                                        <input type="hidden" name="wp-submit" id="wp-submit" value="" />
+
+                                        <button class="button button-primary button-large">
+                                            <?php esc_html_e( 'Reset Password', 'zume' ); ?>
+                                        </button>
 
                                     </form>
 
@@ -292,31 +316,46 @@ switch ( $request_action ) {
             </div>
         </div>
         <script>
-            var strength = {
+            const strength = {
                 0: "Worst",
                 1: "Bad",
                 2: "Weak",
                 3: "Good",
                 4: "Strong"
             }
-            var password = document.getElementById('pass1');
-            var meter = document.getElementById('password-strength-meter');
-            var text = document.getElementById('password-strength-text');
+            const minStrength = 3
+
+            const form = document.getElementById('resetpassform')
+            const password = document.getElementById('pass1');
+            const passwordStrengthError = document.getElementById('password-error-too-weak')
+            const meter = document.getElementById('password-strength-meter');
 
             password.addEventListener('input', function() {
-                var val = password.value;
-                var result = zxcvbn(val);
-
+                const result = getPasswordStrength()
                 // Update the password strength meter
                 meter.value = result.score;
 
-                // Update the text indicator
-                if (val !== "") {
-                    text.innerHTML = "Strength: " + strength[result.score];
-                } else {
-                    text.innerHTML = "";
+                if ( result.score >= minStrength ) {
+                    passwordStrengthError.style.display = 'none'
                 }
             });
+
+            form.addEventListener('submit', function(event) {
+                const result = getPasswordStrength()
+
+                if ( result.score < minStrength ) {
+                    event.preventDefault()
+                    passwordStrengthError.style.display = 'block'
+                }
+            })
+
+            function getPasswordStrength() {
+                const val = password.value;
+                const result = zxcvbn(val);
+
+                return result
+            }
+
         </script>
     <?php // @codingStandardsIgnoreStart ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
@@ -368,36 +407,35 @@ switch ( $request_action ) {
                                                 meter[value="4"]::-moz-meter-bar { background: green; }
 
                                             </style>
-                                            <div id="loginform">
-                                                <form action="" method="post" data-abide novalidate>
+                                            <div>
+                                                <form id="loginform" action="" method="POST" data-abide novalidate>
                                                     <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                     <div data-abide-error class="alert callout" style="display: none;">
                                                         <p><i class="fi-alert"></i><?php esc_html_e( 'There are some errors in your form.', 'zume' ) ?></p>
                                                     </div>
                                                     <div class="grid-container">
                                                         <div class="grid-x grid-margin-x">
-                                                            <div class="cell small-12 hide">
-                                                                <label for="display_name"><?php esc_html_e( 'Display Name (optional)', 'zume' ) ?> </label>
-                                                                <input type="text" name="display_name" id="display_name" value="">
-                                                            </div>
                                                             <div class="cell small-12">
                                                                 <label for="email"><?php esc_html_e( 'Email', 'zume' ) ?> <strong>*</strong></label>
-                                                                <input type="text" name="email" id="email" value="" required pattern="email">
+                                                                <input type="email" name="email" id="email" value="" aria-errormessage="email-error" required>
+                                                                <span class="form-error" id="email-error">
+                                                                    <?php esc_html_e( 'Badly formatted email address', 'zume' ) ?>
+                                                                </span>
                                                             </div>
                                                             <div class="cell small-12">
-                                                                <label><?php esc_html_e( 'Password Required', 'zume' ) ?> <strong>*</strong>
-                                                                    <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-1" required >
-                                                                    <span class="form-error" id="password-error-1">
-                                                                        <?php esc_html_e( 'Password Required', 'zume' ) ?>
-                                                                      </span>
+                                                                <label><?php esc_html_e( 'Password', 'zume' ) ?> <strong>*</strong>
+                                                                    <input type="password" id="password" name="password" placeholder="yeti4preZ" aria-errormessage="password-error-too-weak" required >
+                                                                    <span class="form-error" id="password-error-too-weak">
+                                                                        <?php esc_html_e( 'Password is not strong enough', 'zume' ) ?>
+                                                                    </span>
                                                                 </label>
                                                                 <meter max="4" id="password-strength-meter" value="0"></meter>
                                                             </div>
                                                             <div class="cell small-12">
                                                                 <label><?php esc_html_e( 'Re-enter Password', 'zume' ) ?> <strong>*</strong>
-                                                                    <input type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password">
+                                                                    <input id="password2" name="password2" type="password" placeholder="yeti4preZ" aria-errormessage="password-error-2" data-equalto="password" required>
                                                                     <span class="form-error" id="password-error-2">
-                                                                    <?php esc_html_e( 'Passwords do not match. Please, try again.', 'zume' ) ?>
+                                                                        <?php esc_html_e( 'Passwords do not match. Please, try again.', 'zume' ) ?>
                                                                   </span>
                                                                 </label>
                                                             </div>
@@ -406,38 +444,62 @@ switch ( $request_action ) {
                                                             <div class="g-recaptcha" id="g-recaptcha"></div><br>
                                                         </div>
                                                         <div class="cell small-12">
-                                                            <input type="submit" class="button button-primary" id="submit"  value="<?php esc_html_e( 'Register', 'zume' ) ?>"/>
+                                                            <button class="button button-primary" id="submit">
+                                                                <?php esc_html_e( 'Register', 'zume' ) ?>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
 
                                             <?php // @codingStandardsIgnoreStart
-                                            if ( ! empty( $dt_login['google_captcha_client_key'] ) ) :
+                                            if ( isset( $dt_login['google_captcha_client_key'] ) && !empty( $dt_login['google_captcha_client_key'] ) ) :
                                                 ?>
                                                 <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
                                             <?php // @codingStandardsIgnoreEnd
                                             endif;
                                             ?>
                                             <script>
-                                                var strength = {
+                                                const strength = {
                                                     0: "Worst",
                                                     1: "Bad",
                                                     2: "Weak",
                                                     3: "Good",
                                                     4: "Strong"
                                                 }
-                                                var password = document.getElementById('password');
-                                                var meter = document.getElementById('password-strength-meter');
+                                                const minStrength = 3
+
+                                                const form = document.getElementById('loginform')
+                                                const password = document.getElementById('password');
+                                                const passwordStrengthError = document.getElementById('password-error-too-weak')
+                                                const meter = document.getElementById('password-strength-meter');
 
                                                 password.addEventListener('input', function() {
-                                                    var val = password.value;
-                                                    var result = zxcvbn(val);
-
+                                                    const result = getPasswordStrength()
                                                     // Update the password strength meter
                                                     meter.value = result.score;
 
+                                                    if ( result.score >= minStrength ) {
+                                                        passwordStrengthError.style.display = 'none'
+                                                    }
                                                 });
+
+                                                form.addEventListener('submit', function(event) {
+                                                    const result = getPasswordStrength()
+
+                                                    if ( result.score < minStrength ) {
+                                                        event.preventDefault()
+                                                        passwordStrengthError.style.display = 'block'
+                                                    }
+                                                })
+
+                                                function getPasswordStrength() {
+                                                    const val = password.value;
+                                                    const result = zxcvbn(val);
+
+                                                    return result
+                                                }
+
                                             </script>
                                             <?php // @codingStandardsIgnoreStart ?>
                                             <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
@@ -638,5 +700,4 @@ function dt_login_form_links() {
         <div class="cell medium-3 large-4"></div>
     </div>
     <?php
-
 }
