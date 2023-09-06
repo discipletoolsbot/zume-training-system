@@ -41,11 +41,14 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', function (){ return true;
+            add_filter( 'dt_blank_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_allow_non_login_access', function (){ return true;
+            add_filter( 'dt_allow_non_login_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_override_header_meta', function (){ return true;
+            add_filter( 'dt_override_header_meta', function () {
+                return true;
             }, 100, 1 );
 
             // header content
@@ -142,10 +145,10 @@ class Zume_Training_Profile extends Zume_Magic_Page
             <hr>
 
             <?php if ( isset( $zume_user_profile['location']['grid_id'] ) ) { ?>
-                <p><a class="button" target="_blank" href="<?php echo ZUME_TRAINING_URL ?>zume_app/local_vision/?grid_id=<?php echo $zume_user_profile['location']['grid_id']  ?>">Localized Vision</a></p>
+                <p><a class="button" target="_blank" href="<?php echo esc_url( ZUME_TRAINING_URL . 'zume_app/local_vision/?grid_id=' . $zume_user_profile['location']['grid_id'] ) ?>">Localized Vision</a></p>
             <?php } ?>
 
-            <?php if ( !empty( $zume_user_profile['location'] ) &&  !empty( $zume_user_profile['phone'] ) &&  !empty( $zume_user_profile['email'] ) && empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
+            <?php if ( !empty( $zume_user_profile['location'] ) && !empty( $zume_user_profile['phone'] ) && !empty( $zume_user_profile['email'] ) && empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
                 <p><button class="button" id="get_a_coach" >Get a Coach</button></p>
                 <script>
                     let user_profile = <?php echo json_encode( $zume_user_profile ) ?>;
@@ -158,7 +161,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                     });
                 </script>
             <?php } else if ( ! empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
-                <a href="https://zume5.training/coaching/contacts/<?php echo $zume_user_profile['coaching_contact_id'] ?>">Link to Coaching System Record</a>
+                <a href="<?php echo esc_url( 'https://zume5.training/coaching/contacts/' . $zume_user_profile['coaching_contact_id'] ) ?>">Link to Coaching System Record</a>
             <?php } ?>
 
             <hr>

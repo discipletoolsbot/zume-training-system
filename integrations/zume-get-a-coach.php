@@ -1,9 +1,9 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-class Zume_Get_a_Coach_Endpoints
+class Zume_Get_A_Coach_Endpoints
 {
-    public $permissions = ['access_contacts'];
+    public $permissions = [ 'access_contacts' ];
     public $namespace = 'zume_system/v1';
     private static $_instance = null;
     public static function instance() {
@@ -26,8 +26,8 @@ class Zume_Get_a_Coach_Endpoints
                 'methods'  => [ 'GET', 'POST' ],
                 'callback' => [ $this, 'get_a_coach' ],
                 'permission_callback' => function () {
-                    return dt_has_permissions($this->permissions);
-                }
+                    return dt_has_permissions( $this->permissions );
+                },
             ]
         );
     }
@@ -44,18 +44,18 @@ class Zume_Get_a_Coach_Endpoints
         }
 
         // create coaching request
-        $coaching_result = self::register_request_to_coaching( $params['user_id']);
+        $coaching_result = self::register_request_to_coaching( $params['user_id'] );
 
         // log coaching request
-        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ "user_id" => $params['user_id'] ] );
+        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
 
         return [
             'coach_request' => $coaching_result,
-            'log' => $log_result
+            'log' => $log_result,
         ];
     }
 
-    public static function register_request_to_coaching( $user_id = NULL )
+    public static function register_request_to_coaching( $user_id = null )
     {
         if ( $user_id ) {
             $profile = zume_get_user_profile( $user_id );
@@ -65,29 +65,29 @@ class Zume_Get_a_Coach_Endpoints
         }
 
         $fields = [
-            "title" => $profile['name'],
-            "overall_status" => "new",
-            "sources" => [
-                "values" => [
-                    [ "value" => "zume_training" ]
-                ]
+            'title' => $profile['name'],
+            'overall_status' => 'new',
+            'sources' => [
+                'values' => [
+                    [ 'value' => 'zume_training' ],
+                ],
             ],
-            "language_preference" => $profile['language']['code'],
-            "trainee_user_id" => $profile['user_id'],
-            "trainee_contact_id" => $profile['contact_id'],
+            'language_preference' => $profile['language']['code'],
+            'trainee_user_id' => $profile['user_id'],
+            'trainee_contact_id' => $profile['contact_id'],
         ];
 
         if ( ! empty( $profile['location'] ) ) {
             $fields['location_grid_meta'] = [
-                "values" => [
+                'values' => [
                     [
-                        "lng" => $profile['location']['lng'],
-                        "lat" => $profile['location']['lat'],
-                        "level" => $profile['location']['level'],
-                        "label" => $profile['location']['label'],
-                        "grid_id" => $profile['location']['grid_id'],
-                    ]
-                ]
+                        'lng' => $profile['location']['lng'],
+                        'lat' => $profile['location']['lat'],
+                        'level' => $profile['location']['level'],
+                        'label' => $profile['location']['label'],
+                        'grid_id' => $profile['location']['grid_id'],
+                    ],
+                ],
             ];
         }
 
@@ -115,15 +115,13 @@ class Zume_Get_a_Coach_Endpoints
         $body = json_decode( $result['body'], true );
 
         return $body;
-
     }
 
     public function authorize_url( $authorized ){
-        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace  ) !== false ) {
+        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace ) !== false ) {
             $authorized = true;
         }
         return $authorized;
     }
-
 }
-Zume_Get_a_Coach_Endpoints::instance();
+Zume_Get_A_Coach_Endpoints::instance();

@@ -215,8 +215,8 @@ class Zume_Training {
     }
     public function dt_create_users_corresponding_contact( $new_user_contact, $user ) {
         // adds support fields after registration
-        update_post_meta($new_user_contact['ID'], 'user_email',$user->user_email);
-        update_post_meta($new_user_contact['ID'], 'user_phone', '');
+        update_post_meta( $new_user_contact['ID'], 'user_email', $user->user_email );
+        update_post_meta( $new_user_contact['ID'], 'user_phone', '' );
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();
