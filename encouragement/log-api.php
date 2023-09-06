@@ -95,7 +95,10 @@ class Zume_System_Log_API
         // run additional actions
         self::_add_additional_log_actions( $added_log, $report, $log );
 
-        self::_check_for_stage_change( $added_log, $report['user_id'], $report );
+        $log = zume_get_user_log( $report['user_id'] ); // refresh log
+        self::_check_for_stage_change( $added_log, $report['user_id'], $report, $log );
+
+        Zume_System_Encouragement_API::_verify_encouragement_plan( $report['user_id'], $report['type'], $report['subtype'] );
 
         return $added_log;
     }
@@ -580,8 +583,10 @@ class Zume_System_Log_API
         }
         return $already_logged;
     }
-    public static function _check_for_stage_change( &$added_log, $user_id, $report ) {
-        $log = zume_get_user_log( $user_id );
+    public static function _check_for_stage_change( &$added_log, $user_id, $report, $log = NULL ) {
+        if ( empty( $log ) ) {
+            $log = zume_get_user_log( $user_id );
+        }
         $stage = zume_get_user_stage( $user_id, $log );
         $current_stage = $stage['value'];
 

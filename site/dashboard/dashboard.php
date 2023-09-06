@@ -93,8 +93,32 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
-            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-6">
+                    <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
+                </div>
+                <div class="cell medium-6">
+                    <div class="grid-x">
+                        <div class="cell">
+                            <h3>Registrant</h3>
+                            <ul>
+                                <li>Join a Training</li>
+                                <li>Set Profile</li>
+                                <li>Invite friends</li>
+                                <li>Get a Coach</li>
+                            </ul>
+                            <div>
+                                <strong>Make a Plan</strong>
+                            </div>
+                            <h3>Active Training</h3>
+                            <h3>Post Training</h3>
+                            <h3>Partial Practitioner</h3>
+                            <h3>Full Practitioner</h3>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <?php
     }

@@ -31,7 +31,7 @@ class Zume_System_Encouragement_API
     {
         $namespace = $this->namespace;
         register_rest_route(
-            $namespace, '/get_encouragement', [
+            $namespace, '/encouragement/get', [
                 'methods' => ['GET', 'POST'],
                 'callback' => [$this, 'request_sorter'],
                 'permission_callback' => '__return_true'
@@ -65,20 +65,26 @@ class Zume_System_Encouragement_API
     public function user($params)
     {
         if ( ! isset( $params['user_id'] ) ) {
-            return new WP_Error( 'no_user_id', 'No user id provided', array( 'status' => 400 ) );
+            $user_id = get_current_user_id();
         }
-        return self::_get_encouragement( $params['user_id'], $params['type'], $params['subtype'] );
+        else {
+            $user_id = $params['user_id'];
+        }
+        return self::_get_current_plan( $user_id );
     }
-    public static function _get_encouragement( $user_id, $type, $subtype, $log = NULL ) {
-        dt_write_log(__FUNCTION__ . ' ' . $user_id .' - '. $type .' - '. $subtype );
+    public static function _verify_encouragement_plan( $user_id, $type, $subtype ) {
+
+        if ( empty( $log ) ) {
+            $log = zume_get_user_log( $user_id );
+        }
 
         $plan = self::_get_recommended_plan( $user_id, $type, $subtype );
         if ( empty( $plan ) ) {
-            dt_write_log( 'no new plan : get_current_plan' );
+//            dt_write_log( 'no new plan : get_current_plan' );
             return self::_get_current_plan( $user_id );
         }
 
-        dt_write_log( 'installing new plan' );
+//        dt_write_log( 'installing new plan' );
         self::_delete_current_plan( $user_id );
         self::_install_plan( $user_id, $plan );
 
