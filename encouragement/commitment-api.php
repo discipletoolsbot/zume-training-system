@@ -8,7 +8,7 @@ class Zume_System_Plan_API
 
     public static function instance()
     {
-        if (is_null(self::$_instance)) {
+        if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
         }
         return self::$_instance;
@@ -16,15 +16,15 @@ class Zume_System_Plan_API
 
     public function __construct()
     {
-        if (dt_is_rest()) {
-            add_action('rest_api_init', [$this, 'add_api_routes']);
-            add_filter('dt_allow_rest_access', [$this, 'authorize_url'], 10, 1);
+        if ( dt_is_rest() ) {
+            add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
+            add_filter( 'dt_allow_rest_access', [ $this, 'authorize_url' ], 10, 1 );
         }
     }
 
-    public function authorize_url($authorized)
+    public function authorize_url( $authorized )
     {
-        if (isset($_SERVER['REQUEST_URI']) && strpos(sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])), $this->namespace) !== false) {
+        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace ) !== false ) {
             $authorized = true;
         }
         return $authorized;
@@ -35,16 +35,16 @@ class Zume_System_Plan_API
         $namespace = $this->namespace;
         register_rest_route(
             $namespace, '/add_commitment', [
-                'methods' => ['GET', 'POST'],
-                'callback' => [$this, 'add_commitment'],
-                'permission_callback' => '__return_true'
+                'methods' => [ 'GET', 'POST' ],
+                'callback' => [ $this, 'add_commitment' ],
+                'permission_callback' => '__return_true',
             ]
         );
         register_rest_route(
             $namespace, '/get_commitments', [
-                'methods' => ['GET', 'POST'],
-                'callback' => [$this, 'get_commitments'],
-                'permission_callback' => '__return_true'
+                'methods' => [ 'GET', 'POST' ],
+                'callback' => [ $this, 'get_commitments' ],
+                'permission_callback' => '__return_true',
             ]
         );
     }
@@ -53,7 +53,7 @@ class Zume_System_Plan_API
     {
 
         if ( ! is_user_logged_in() ) {
-            return new WP_Error(__METHOD__, 'User not logged in', array('status' => 401));
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
         }
 
         global $wpdb;
@@ -72,7 +72,7 @@ class Zume_System_Plan_API
                 'note' => $params['note'],
             ]),
             'date' => $params['date'],
-            'type' => 'custom'
+            'type' => 'custom',
         ];
 
         $create = $wpdb->insert( $wpdb->dt_post_user_meta, $fields );
@@ -89,16 +89,16 @@ class Zume_System_Plan_API
             'level' => $params['level'],
             'label' => $params['label'],
             'grid_id' => $params['grid_id'],
-            'time_end' =>  strtotime( 'Today -'.$params['days_ago'].' days' ),
-            'hash' => hash('sha256', maybe_serialize($params)  . time() ),
+            'time_end' => strtotime( 'Today -'.$params['days_ago'].' days' ),
+            'hash' => hash( 'sha256', maybe_serialize( $params )  . time() ),
         ] );
 
-       return $create;
+        return $create;
     }
     public function get_commitments( WP_REST_Request $request )
     {
         if ( ! is_user_logged_in() ) {
-            return new WP_Error(__METHOD__, 'User not logged in', array('status' => 401));
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
         }
 
         $params = dt_recursive_sanitize_array( $request->get_params() );
@@ -110,12 +110,11 @@ class Zume_System_Plan_API
         }
 
         $status = 'open';
-        if ( isset( $params['status'] )  ) {
-            $status =  $params['status'];
+        if ( isset( $params['status'] ) ) {
+            $status = $params['status'];
         }
 
-       return zume_get_user_commitments( $user_id, $status );
+        return zume_get_user_commitments( $user_id, $status );
     }
-
 }
 Zume_System_Plan_API::instance();
