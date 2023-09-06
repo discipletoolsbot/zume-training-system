@@ -214,7 +214,7 @@ switch ( $request_action ) {
                 <div class="cell medium-3 large-4"></div>
                 <div class="cell callout medium-6 large-4">
                     <div class="grid-x grid-padding-x grid-padding-y">
-                        <div class="cell"><?php echo sprintf( esc_html__( 'Your password is reset. %1$s You can login here %2$s', 'zume' ), '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
+                        <div class="cell"><?php printf( esc_html__( 'Your password is reset. %1$s You can login here %2$s', 'zume' ), '<a href="' . esc_url( dt_login_url( 'login' ) ) . '">', '</a>' ) ?></div>
                     </div>
                 </div>
                 <div class="cell medium-3 large-4"></div>
@@ -700,5 +700,4 @@ function dt_login_form_links() {
         <div class="cell medium-3 large-4"></div>
     </div>
     <?php
-
 }
