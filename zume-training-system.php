@@ -215,8 +215,80 @@ class Zume_Training {
     }
     public function dt_create_users_corresponding_contact( $new_user_contact, $user ) {
         // adds support fields after registration
-        update_post_meta( $new_user_contact['ID'], 'user_email', $user->user_email );
-        update_post_meta( $new_user_contact['ID'], 'user_phone', '' );
+
+        $ip_address = DT_Ipstack_API::get_real_ip_address();
+        $ip_result = DT_Ipstack_API::geocode_ip_address( $ip_address );
+
+        // @todo add error handling
+
+        $lng = $ip_result['longitude'] ?? '';
+        $lat = $ip_result['latitude'] ?? '';
+        if ( !empty( $ip_result['city'] ) ) {
+            $label = $ip_result['city'] . ', ' . $ip_result['region_name'] . ', ' . $ip_result['country_name'];
+            $level = 'place';
+        } elseif ( !empty( $ip_result['region_name'] ) ) {
+            $label = $ip_result['region_name'] . ', ' . $ip_result['country_name'];
+            $level = 'region';
+        } elseif ( !empty( $ip_result['country_name'] ) ) {
+            $label = $ip_result['country_name'];
+            $level = 'country';
+        } elseif ( !empty( $ip_result['continent_name'] ) ) {
+            $label = $ip_result['continent_name'];
+            $level = 'world';
+        } else {
+            $label = '';
+            $level = '';
+        }
+
+        $fields = [
+            'user_email' => $user->user_email,
+            'user_phone' => '',
+            'location_grid_meta' => [
+                'values' => [
+                    [
+                        'label' => $label,
+                        'level' => $level,
+                        'lng' => $lng,
+                        'lat' => $lat,
+                        'source' => 'ip',
+                    ]
+                ],
+            ]
+        ];
+        $contact_location = DT_Posts::update_post( 'contacts',  $new_user_contact['ID'], $fields, true, false );
+
+        dt_report_insert( [
+            'user_id' => $user->ID,
+            'post_id' => $new_user_contact['ID'],
+            'post_type' => 'zume',
+            'type' => 'system',
+            'subtype' => 'registered',
+            'value' => 0,
+            'lng' => $contact_location['location_grid_meta'][0]['lng'],
+            'lat' => $contact_location['location_grid_meta'][0]['lat'],
+            'level' => $contact_location['location_grid_meta'][0]['level'],
+            'label' => $contact_location['location_grid_meta'][0]['label'],
+            'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
+            'time_end' =>  time(),
+        ]);
+
+        dt_report_insert( [
+            'user_id' => $user->ID,
+            'post_id' => $new_user_contact['ID'],
+            'post_type' => 'zume',
+            'type' => 'stage',
+            'subtype' => 'current_level',
+            'value' => 1,
+            'lng' => $contact_location['location_grid_meta'][0]['lng'],
+            'lat' => $contact_location['location_grid_meta'][0]['lat'],
+            'level' => $contact_location['location_grid_meta'][0]['level'],
+            'label' => $contact_location['location_grid_meta'][0]['label'],
+            'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
+            'time_end' =>  time(),
+        ]);
+
+        Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'system', 'registered' ) );
+
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();
