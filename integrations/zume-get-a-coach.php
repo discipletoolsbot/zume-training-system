@@ -60,7 +60,6 @@ class Zume_Get_a_Coach_Endpoints
         if ( $user_id ) {
             $profile = zume_get_user_profile( $user_id );
         } else {
-            $user_id = get_current_user_id();
             global $zume_user_profile;
             $profile = $zume_user_profile;
         }
@@ -109,7 +108,7 @@ class Zume_Get_a_Coach_Endpoints
 
         $result = wp_remote_post( 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts', $args );
         if ( is_wp_error( $result ) ) {
-            dt_write_log( __METHOD__ . ' TO CREATE TRAINING FOR ' . $contact['name'] );
+            dt_write_log( __METHOD__ . ' TO CREATE TRAINING FOR ' . $profile['name'] );
             return false;
         }
 

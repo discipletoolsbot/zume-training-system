@@ -62,7 +62,7 @@ class Zume_System_Plan_API
         if ( empty( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        $contact_id = Disciple_Tools_Users::get_contact_for_user( $user_id );
+        $contact_id = zume_get_user_contact_id( $user_id );
 
         $fields = [
             'user_id' => $user_id,
@@ -76,6 +76,22 @@ class Zume_System_Plan_API
         ];
 
         $create = $wpdb->insert( $wpdb->dt_post_user_meta, $fields );
+
+        dt_report_insert( [
+            'user_id' => $user_id,
+            'post_id' => $contact_id,
+            'post_type' => 'zume',
+            'type' => 'commitment',
+            'subtype' => 'added',
+            'value' => 0,
+            'lng' => $params['lng'],
+            'lat' => $params['lat'],
+            'level' => $params['level'],
+            'label' => $params['label'],
+            'grid_id' => $params['grid_id'],
+            'time_end' =>  strtotime( 'Today -'.$params['days_ago'].' days' ),
+            'hash' => hash('sha256', maybe_serialize($params)  . time() ),
+        ] );
 
        return $create;
     }
@@ -95,44 +111,11 @@ class Zume_System_Plan_API
 
         $status = 'open';
         if ( isset( $params['status'] )  ) {
-            $status = 'all';
+            $status =  $params['status'];
         }
 
-        $list = $this->query_commitments( $user_id, $status );
-
-       return $list;
+       return zume_get_user_commitments( $user_id, $status );
     }
-    public function query_commitments( $user_id, $status = 'open' )
-    {
-        global $wpdb;
-        $results = $wpdb->get_results( $wpdb->prepare(
-            "SELECT * FROM {$wpdb->dt_post_user_meta}
-                    WHERE user_id = %d
-                      AND type = 'custom'
-                    ORDER BY date DESC"
-            , $user_id ), ARRAY_A );
 
-        $list = [];
-        foreach ( $results as $result ) {
-            $meta = maybe_unserialize( $result['meta_value'] );
-
-            if ( 'open' === $status && isset( $meta['status'] ) ) {
-                continue;
-            }
-
-            if ( 'closed' === $status && ! isset( $meta['status'] ) ) {
-                continue;
-            }
-
-            $list[] = [
-                'id' => $result['id'],
-                'note' => $meta['note'],
-                'status' => isset( $meta['status'] ) ? 'closed' : 'open',
-                'date' => $result['date'],
-            ];
-        }
-
-       return $list;
-    }
 }
 Zume_System_Plan_API::instance();
