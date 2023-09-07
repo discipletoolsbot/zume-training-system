@@ -147,22 +147,6 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 <p><a class="button" target="_blank" href="<?php echo esc_url( ZUME_TRAINING_URL . 'zume_app/local_vision/?grid_id=' . $zume_user_profile['location']['grid_id'] ) ?>">Localized Vision</a></p>
             <?php } ?>
 
-            <?php if ( !empty( $zume_user_profile['location'] ) && !empty( $zume_user_profile['phone'] ) && !empty( $zume_user_profile['email'] ) && empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
-                <p><button class="button" id="get_a_coach" >Get a Coach</button></p>
-                <script>
-                    let user_profile = <?php echo json_encode( $zume_user_profile ) ?>;
-                    jQuery(document).ready(function(){
-                        jQuery('#get_a_coach').on('click', function(){
-                            makeRequest('POST', 'get_a_coach', { user_id: user_profile.user_id }, 'zume_system/v1/' ).done( function( data ) {
-                                location.reload()
-                            })
-                        })
-                    });
-                </script>
-            <?php } else if ( ! empty( $zume_user_profile['coaching_contact_id'] ) ) { ?>
-                <a class="button" href="https://zume5.training/coaching/contacts/<?php echo $zume_user_profile['coaching_contact_id'] ?>">Link to Coaching System Record</a>
-            <?php } ?>
-
             <hr>
             <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
         </div>

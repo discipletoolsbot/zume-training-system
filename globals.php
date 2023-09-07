@@ -176,7 +176,7 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
     function zume_get_user_location( $user_id, $ip_lookup = false ) {
         global $wpdb;
         $location = $wpdb->get_row( $wpdb->prepare(
-            "SELECT lng, lat, level, label, grid_id
+            "SELECT lng, lat, level, label, grid_id, source
                     FROM wp_postmeta pm
                     JOIN wp_dt_location_grid_meta lgm ON pm.post_id=lgm.post_id
                     WHERE pm.meta_key = 'corresponds_to_user' AND pm.meta_value = %d
@@ -193,6 +193,7 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
                     'level' => $result['level'],
                     'label' => $result['label'],
                     'grid_id' => $result['grid_id'],
+                    'source' => $result['source'],
                 ];
             }
         }
@@ -207,6 +208,7 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
             'level' => $location['level'],
             'label' => $location['label'],
             'grid_id' => $location['grid_id'],
+            'source' => $location['source'],
         ];
     }
 }

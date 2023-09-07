@@ -62,25 +62,36 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
+            add_action( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 100 );
         }
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return zume_training_magic_url_base_allowed_js();
+        $allowed_js[] = 'zume_forms';
+        return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return zume_training_magic_url_base_allowed_css();
     }
+    public function wp_enqueue_scripts() {
+        wp_enqueue_script( 'zume_forms', plugin_dir_url(__DIR__) . 'assets/js/forms.js', [ 'jquery' ], filemtime( plugin_dir_path(__DIR__) . "assets/js/forms.js" ),  true);
+        wp_localize_script(
+            'zume_forms', 'zumeForms', array(
+                'root' => esc_url_raw( rest_url() ),
+                'nonce' => wp_create_nonce( 'wp_rest' ),
+                'site_url' => get_site_url(),
+                'template_dir' => get_template_directory_uri(),
+                'translations' => [
+
+                ],
+                'user_profile' => zume_get_user_profile(),
+            )
+        );
+    }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function(){
-                jQuery(document).foundation();
-            });
-        </script>
-        <?php
+
     }
 
     public function body(){
@@ -88,7 +99,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         require __DIR__ . '/../parts/nav.php';
         ?>
-
         <div class="container">
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
@@ -98,25 +108,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
                 </div>
                 <div class="cell medium-6">
-                    <div class="grid-x">
-                        <div class="cell">
-                            <h3>Registrant</h3>
-                            <ul>
-                                <li>Join a Training</li>
-                                <li>Set Profile</li>
-                                <li>Invite friends</li>
-                                <li>Get a Coach</li>
-                            </ul>
-                            <div>
-                                <strong>Make a Plan</strong>
-                            </div>
-                            <h3>Active Training</h3>
-                            <h3>Post Training</h3>
-                            <h3>Partial Practitioner</h3>
-                            <h3>Full Practitioner</h3>
-
-                        </div>
-                    </div>
+                    <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
+                    <p><button class="button cta_get_a_coach" />CTA: Get a Coach</button></p>
+                    <p><button class="button cta_make_a_plan" />CTA: Make a Plan</button></p>
+                    <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
+                    <p><button class="button cta_join_training" />CTA: Join a Training</button></p>
                 </div>
             </div>
         </div>

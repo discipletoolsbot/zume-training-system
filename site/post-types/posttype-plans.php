@@ -469,40 +469,81 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
         return $fields;
     }
 
-    /**
-     * @todo define tiles
-     * @link https://github.com/DiscipleTools/Documentation/blob/master/Theme-Core/field-and-tiles.md
-     */
     public function dt_details_additional_tiles( $tiles, $post_type = '' ){
         if ( $post_type === $this->post_type ){
             $tiles['participants'] = [ 'label' => __( 'Participants', 'zume-training-system' ) ];
-//            $tiles['other'] = [ 'label' => __( 'Other', 'zume-training-system' ) ];
+            $tiles['install'] = [ 'label' => __( 'Install', 'zume-training-system' ) ];
         }
         return $tiles;
     }
 
-    /**
-     * @todo define additional section content
-     * Documentation
-     * @link https://github.com/DiscipleTools/Documentation/blob/master/Theme-Core/field-and-tiles.md#add-custom-content
-     */
     public function dt_details_additional_section( $section, $post_type ){
 
-        if ( $post_type === $this->post_type && $section === 'other' ) {
+        if ( $post_type === $this->post_type && $section === 'install' ) {
 //            $fields = DT_Posts::get_post_field_settings( $post_type );
 //            $post = DT_Posts::get_post( $this->post_type, get_the_ID() );
             ?>
+            <div class="section-subheader">
+                <?php esc_html_e( 'Start date', 'zume-training-system' ) ?>
+            </div>
+            <div>
+                <input type="date" id="start_date" class="" value="" />
+                <button class="button" id="install_10_sessions">Add 10 Sessions</button>
+                <button class="button" id="install_20_sessions">Add 20 Sessions</button>
+            </div>
+            <script>
+                jQuery(document).ready(function(){
+                    let start_date = jQuery('#start_date')
+                    let post_id = <?php echo get_the_ID(); ?>;
+                    jQuery('#install_10_sessions').click(function(){
+                        let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
+                        let list = {
+                            'set_a_01': date + (0 * 604800 ),
+                            'set_a_02': date + (1 * 604800 ),
+                            'set_a_03': date + (2 * 604800 ),
+                            'set_a_04': date + (3 * 604800 ),
+                            'set_a_05': date + (4 * 604800 ),
+                            'set_a_06': date + (5 * 604800 ),
+                            'set_a_07': date + (6 * 604800 ),
+                            'set_a_08': date + (7 * 604800 ),
+                            'set_a_09': date + (8 * 604800 ),
+                            'set_a_10': date + (9 * 604800 ),
+                        };
+                        window.API.update_post('zume_plans', post_id, list )
 
-
+                    });
+                    jQuery('#install_20_sessions').click(function(){
+                        console.log('install 20 sessions');
+                        let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
+                        let list = {
+                            'set_b_01': date + ( 0 * 604800 ),
+                            'set_b_02': date + ( 1 * 604800 ),
+                            'set_b_03': date + ( 2 * 604800 ),
+                            'set_b_04': date + ( 3 * 604800 ),
+                            'set_b_05': date + ( 4 * 604800 ),
+                            'set_b_06': date + ( 5 * 604800 ),
+                            'set_b_07': date + ( 6 * 604800 ),
+                            'set_b_08': date + ( 7 * 604800 ),
+                            'set_b_09': date + ( 8 * 604800 ),
+                            'set_b_10': date + ( 9 * 604800 ),
+                            'set_b_11': date + ( 10 * 604800 ),
+                            'set_b_12': date + ( 11 * 604800 ),
+                            'set_b_13': date + ( 12 * 604800 ),
+                            'set_b_14': date + ( 13 * 604800 ),
+                            'set_b_15': date + ( 14 * 604800 ),
+                            'set_b_16': date + ( 15 * 604800 ),
+                            'set_b_17': date + ( 16 * 604800 ),
+                            'set_b_18': date + ( 17 * 604800 ),
+                            'set_b_19': date + ( 18 * 604800 ),
+                            'set_b_20': date + ( 19 * 604800 ),
+                        };
+                        window.API.update_post('zume_plans', post_id, list )
+                    });
+                });
+            </script>
         <?php }
     }
 
-    /**
-     * action when a post connection is added during create or update
-     * @todo catch field changes and do additional processing
-     *
-     * The next three functions are added, removed, and updated of the same field concept
-     */
     public function post_connection_added( $post_type, $post_id, $field_key, $value ){
 //        if ( $post_type === $this->post_type ){
 //            if ( $field_key === "members" ){
@@ -554,13 +595,6 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     public function dt_post_created( $post_type, $post_id, $initial_fields ){
     }
 
-    //list page filters function
-
-    /**
-     * @todo adjust queries to support list counts
-     * Documentation
-     * @link https://github.com/DiscipleTools/Documentation/blob/master/Theme-Core/list-query.md
-     */
     private static function count_records_assigned_to_me_by_status(){
         global $wpdb;
         $post_type = self::post_type();
