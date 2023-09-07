@@ -141,11 +141,6 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 </span>
 
             </form>
-            <hr>
-
-            <?php if ( isset( $zume_user_profile['location']['grid_id'] ) ) { ?>
-                <p><a class="button" target="_blank" href="<?php echo esc_url( ZUME_TRAINING_URL . 'zume_app/local_vision/?grid_id=' . $zume_user_profile['location']['grid_id'] ) ?>">Localized Vision</a></p>
-            <?php } ?>
 
             <hr>
             <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>

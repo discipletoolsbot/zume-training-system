@@ -64,6 +64,10 @@ class Zume_Get_A_Coach_Endpoints
             $profile = $zume_user_profile;
         }
 
+        if ( $zume_user_profile['coaching_contact_id'] ) {
+            return new WP_Error( 'already_has_coach', 'User already has a coach', array( 'status' => 400 ) );
+        }
+
         $fields = [
             'title' => $profile['name'],
             'overall_status' => 'new',
