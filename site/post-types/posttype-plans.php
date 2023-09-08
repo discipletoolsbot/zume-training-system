@@ -167,17 +167,17 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/assigned-to.svg',
                 'show_in_table' => 16,
             ];
-            $fields['public'] = [
-                'name'        => __( 'Public Plan', 'zume-training-system' ),
+            $fields['visibility'] = [
+                'name'        => __( 'Plan Visibility', 'zume-training-system' ),
                 'description' => __( 'Set the current status.', 'zume-training-system' ),
                 'type'        => 'key_select',
                 'default'     => [
-                    'inactive' => [
+                    'private' => [
                         'label' => __( 'Private', 'zume-training-system' ),
                         'description' => __( 'No longer active.', 'zume-training-system' ),
                         'color' => '#F43636'
                     ],
-                    'active'   => [
+                    'public'   => [
                         'label' => __( 'Public', 'zume-training-system' ),
                         'description' => __( 'Is active.', 'zume-training-system' ),
                         'color' => '#4CAF50'
@@ -187,6 +187,38 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/status.svg',
                 'default_color' => '#366184',
                 'show_in_table' => 10,
+            ];
+            $fields['time_of_day_note'] = [
+                'name'        => __( 'Time of Day Note', 'zume-training-system' ),
+                'description' => 'Time of day, like "4-6 in the evening"',
+                'type'        => 'text',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['location_note'] = [
+                'name'        => __( 'Location Note', 'zume-training-system' ),
+                'description' => 'Location of the training description, like "Zoom" or "At the church"',
+                'type'        => 'text',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['zoom_link_note'] = [
+                'name'        => __( 'Zoom Link', 'zume-training-system' ),
+                'description' => 'Link to zoom meeting',
+                'type'        => 'text',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['timezone_note'] = [
+                'name'        => __( 'Time Zone', 'zume-training-system' ),
+                'description' => 'Time zone of the training',
+                'type'        => 'text',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
 
             $fields['set_a_01'] = [

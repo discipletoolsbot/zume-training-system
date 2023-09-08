@@ -86,7 +86,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
                 ],
                 'user_profile' => zume_get_user_profile(),
-                'plans' => zume_get_user_plans(),
             )
         );
     }
@@ -98,6 +97,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function body(){
         global $zume_user_profile;
         $plans = zume_get_user_plans();
+        $stage= zume_get_user_stage();
+        $host = zume_get_user_host();
 
         require __DIR__ . '/../parts/nav.php';
         ?>
@@ -108,7 +109,9 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
+                    <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p>
                     <p><strong><?php echo esc_html__( 'User Plans', 'zume' ) ?></strong><pre><?php print_r( $plans ); ?></pre></p>
+                    <p><strong><?php echo esc_html__( 'User HOST', 'zume' ) ?></strong><pre><?php print_r( $host ); ?></pre></p>
                 </div>
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
@@ -116,6 +119,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_make_a_plan" />CTA: Make a Plan</button></p>
                     <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
                     <p><button class="button cta_join_training" />CTA: Join a Training</button></p>
+                    <p><button class="button cta_post_training_plan" />CTA: Post Training Plan</button></p>
                 </div>
             </div>
         </div>

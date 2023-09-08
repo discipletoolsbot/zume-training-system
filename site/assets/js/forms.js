@@ -1,6 +1,5 @@
 console.log('User Profile')
 console.log(zumeForms.user_profile)
-console.log(zumeForms.plans)
 
 // listeners
 jQuery(document).ready(function() {
@@ -18,6 +17,9 @@ jQuery(document).ready(function() {
   })
   jQuery('.cta_join_training').click(function() {
     window.cta_join_training()
+  })
+  jQuery('.cta_post_training_plan').click(function() {
+    window.cta_post_training_plan()
   })
 })
 
@@ -108,6 +110,7 @@ window.cta_make_a_plan = () => {
     let fields = {
       'title': zumeForms.user_profile.name + ' Plan',
       'assigned_to': zumeForms.user_profile.user_id,
+      'visibility': 'private',
       'participants': {
         values: [
           { "value": zumeForms.user_profile.contact_id }
@@ -134,6 +137,7 @@ window.cta_make_a_plan = () => {
     let fields = {
       'title': zumeForms.user_profile.name + ' Plan',
       'assigned_to': zumeForms.user_profile.user_id,
+      'visibility': 'private',
       'participants': {
          values: [
               { "value": zumeForms.user_profile.contact_id }
@@ -186,6 +190,18 @@ window.cta_join_training = () => {
   content.empty()
 
   title.append('Join Online Training')
+
+
+  jQuery('#modal-large').foundation('open')
+}
+window.cta_post_training_plan = () => {
+  console.log('cta_post_training_plan')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Post Training Plan')
 
 
   jQuery('#modal-large').foundation('open')
