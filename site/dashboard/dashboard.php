@@ -116,10 +116,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
                     <p><button class="button cta_get_a_coach" />CTA: Get a Coach</button></p>
+                    <p><button class="button cta_join_a_training" />CTA: Join a Training</button></p>
                     <p><button class="button cta_make_a_plan" />CTA: Make a Plan</button></p>
                     <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
-                    <p><button class="button cta_join_training" />CTA: Join a Training</button></p>
-                    <p><button class="button cta_post_training_plan" />CTA: Post Training Plan</button></p>
+                    <p><button class="button cta_work_the_plan" />CTA: Work the Plan</button></p>
+                    <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
                 </div>
             </div>
         </div>

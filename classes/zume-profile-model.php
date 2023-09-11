@@ -6,22 +6,6 @@ class Zume_Profile_Model {
         global $zume_user_profile;
         $zume_user_profile = zume_get_user_profile();
         return $zume_user_profile;
-
-
-//        $profile = [];
-
-//        $contact_id = self::get_user_contact_id();
-//
-//        $user = wp_get_current_user();
-//        /* Allow the current user to get their own contact record without permissions set */
-//        $post = DT_Posts::get_post( 'contacts', $contact_id, true, false );
-//
-//        $profile['user_email'] = $user->user_email;
-//        $profile['name'] = $user->display_name;
-//        $profile['location_grid_meta'] = isset( $post['location_grid_meta'] ) && !empty( $post['location_grid_meta'] ) ? $post['location_grid_meta'][0] : [ 'label' => '' ];
-//        $profile['user_phone'] = isset( $post['user_phone'] ) && !empty( $post['user_phone'] ) ? $post['user_phone'] : '';
-
-//        return zume_get;
     }
 
     /**
@@ -58,7 +42,7 @@ class Zume_Profile_Model {
             ];
         }
 
-        $contact_id = self::get_user_contact_id();
+        $contact_id = zume_get_user_contact_id($user_id);
 
         if ( !empty( $user_updates ) ) {
             $result = wp_update_user( $user_updates );
@@ -77,6 +61,10 @@ class Zume_Profile_Model {
             }
         }
 
+        if ( self::is_profile_set( $user_id ) ) {
+            zume_log_insert('system', 'set_profile');
+        }
+
         return [
             'location_grid_meta' => $contact['location_grid_meta'],
             'name' => $contact['name'],
@@ -84,11 +72,21 @@ class Zume_Profile_Model {
         ];
     }
 
-    private static function get_user_contact_id() {
-        $user_id = get_current_user_id();
-        $contact_id = Disciple_Tools_Users::get_contact_for_user( $user_id );
-
-        return $contact_id;
+    public static function is_profile_set( $user_id ) : bool {
+        $profile = zume_get_user_profile( $user_id );
+        if ( empty( $profile['name'] ) ) {
+            return false;
+        }
+        if ( empty( $profile['email'] ) ) {
+            return false;
+        }
+        if ( empty( $profile['phone'] ) ) {
+            return false;
+        }
+        if ( $profile['location']['source'] === 'ip' ) {
+            return false;
+        }
+        return true;
     }
 
 }

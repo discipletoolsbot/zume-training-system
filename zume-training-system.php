@@ -210,6 +210,14 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
+            if ( !isset( $fields['user_timezone'] ) ){
+                $fields['user_timezone'] = [
+                    'name' => __( 'User Timezone', 'zume' ),
+                    'type' => 'text',
+                    'tile' => 'profile_details',
+                    'only_for_types' => [ 'user' ],
+                ];
+            }
         }
         return $fields;
     }
@@ -243,6 +251,7 @@ class Zume_Training {
         $fields = [
             'user_email' => $user->user_email,
             'user_phone' => '',
+            'user_timezone' => $ip_result['time_zone']['id'] ?? '',
             'location_grid_meta' => [
                 'values' => [
                     [

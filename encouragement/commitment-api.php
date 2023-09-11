@@ -72,26 +72,16 @@ class Zume_System_Plan_API
                 'note' => $params['note'],
             ]),
             'date' => $params['date'],
-            'type' => 'custom',
+            'category' => 'custom',
         ];
 
         $create = $wpdb->insert( $wpdb->dt_post_user_meta, $fields );
 
-        dt_report_insert( [
-            'user_id' => $user_id,
-            'post_id' => $contact_id,
-            'post_type' => 'zume',
-            'type' => 'commitment',
-            'subtype' => 'added',
-            'value' => 0,
-            'lng' => $params['lng'],
-            'lat' => $params['lat'],
-            'level' => $params['level'],
-            'label' => $params['label'],
-            'grid_id' => $params['grid_id'],
-            'time_end' => strtotime( 'Today -'.$params['days_ago'].' days' ),
-            'hash' => hash( 'sha256', maybe_serialize( $params )  . time() ),
-        ] );
+        $log = zume_get_user_log( $user_id );
+        $subtypes = array_column( $log, 'subtype' );
+        if ( ! in_array( 'made_3_month_plan', $subtypes ) ) {
+            zume_log_insert( 'system', 'made_3_month_plan', [ 'user_id' => $user_id ] );
+        }
 
         return $create;
     }

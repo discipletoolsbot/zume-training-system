@@ -39,7 +39,7 @@ trait Translateable {
         zume_set_language_cookie( $lang_code );
 
         if ( $lang_code !== '' ) {
-            $this->lang = get_zume_language_locale( $lang_code );
+            $this->lang = zume_get_language_locale( $lang_code );
             add_filter('locale', function ( $locale ) {
                 return $this->lang;
             }, 100, 1);

@@ -8,7 +8,6 @@ if ( !defined( 'ABSPATH' ) ) {
 
 class Zume_Custom_Endpoints
 {
-
     private $namespace;
     private static $_instance = null;
     public static function instance() {
@@ -19,72 +18,64 @@ class Zume_Custom_Endpoints
     }
 
     public function __construct() {
-        $this->namespace = 'dt/v1';
+        $this->namespace = 'zume_system/v1';
         add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
     }
 
     public function add_api_routes() {
         register_rest_route(
-            $this->namespace, '/zume/create', [
+            $this->namespace, '/join_plan', [
                 'methods' => 'POST',
-                'callback' => [ $this, 'create' ],
+                'callback' => [ $this, 'join_plan_api' ],
                 'permission_callback' => '__return_true',
             ]
         );
         register_rest_route(
-            $this->namespace, '/zume/read', [
+            $this->namespace, '/public_plans', [
                 'methods' => 'POST',
-                'callback' => [ $this, 'read' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $this->namespace, '/zume/update', [
-                'methods' => 'POST',
-                'callback' => [ $this, 'update' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $this->namespace, '/zume/delete', [
-                'methods' => 'POST',
-                'callback' => [ $this, 'delete' ],
+                'callback' => [ $this, 'public_plans' ],
                 'permission_callback' => '__return_true',
             ]
         );
     }
 
-    public function create( WP_REST_Request $request ){
-        $params = $request->get_params();
+    public function join_plan_api( WP_REST_Request $request ){
+        $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset( $params['action'], $params['data'] ) ) {
-            return new WP_Error( __METHOD__, 'Missing parameters', [ 'status' => 400 ] );
+        if ( ! isset( $params['key'] ) ) {
+            return [
+                'success' => false,
+                'message' => 'Missing params key',
+            ];
+        }
+
+        $key = $params['key'];
+
+        return self::join( $key );
+    }
+
+    public static function join( $key ) {
+        global $wpdb;
+        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
+
+        if ( empty( $post_id_exists ) ) {
+            return [
+                'success' => false,
+                'message' => 'Invalid key',
+            ];
         }
 
         $user_id = get_current_user_id();
-        $params = dt_recursive_sanitize_array( $params );
-        $action = sanitize_text_field( wp_unslash( $params['action'] ) );
+        $contact_id = zume_get_user_contact_id( $user_id );
 
-        switch ( $action ) {
-            case 'get_a_coach':
-                return $this->get_a_coach( $user_id );
-            default:
-                return new WP_Error( __METHOD__, 'Missing valid action', [ 'status' => 400 ] );
-        }
+        return DT_Posts::update_post( 'zume_plans', $post_id_exists,[ 'participants' => [ 'values' => [ ['value' => $contact_id ] ] ] ], true, false );
     }
+    public function public_plans( WP_REST_Request $request ){
+        $params = dt_recursive_sanitize_array( $request->get_params() );
 
-    public function get_a_coach( $user_id ) {
+        $plans = DT_Posts::list_posts( 'zume_plans', [ 'fields' => [ [ 'visibility' => ['public'] ] ] ], false );
 
-        // update submitted or missing personal information zume.training/tools
-
-        // build contact array
-
-        // create contact to zume.training/coaching
-
-        // reply with success state
-
-        return true;
+        return $plans;
     }
-
 }
 Zume_Custom_Endpoints::instance();

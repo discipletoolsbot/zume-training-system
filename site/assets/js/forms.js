@@ -9,14 +9,17 @@ jQuery(document).ready(function() {
   jQuery('.cta_get_a_coach').click(function() {
     window.cta_get_a_coach()
   })
+  jQuery('.cta_join_a_training').click(function() {
+    window.cta_join_a_training()
+  })
   jQuery('.cta_make_a_plan').click(function() {
     window.cta_make_a_plan()
   })
   jQuery('.cta_invite_friends').click(function() {
     window.cta_invite_friends()
   })
-  jQuery('.cta_join_training').click(function() {
-    window.cta_join_training()
+  jQuery('.cta_work_the_plan').click(function() {
+    window.cta_work_the_plan()
   })
   jQuery('.cta_post_training_plan').click(function() {
     window.cta_post_training_plan()
@@ -83,6 +86,59 @@ window.cta_get_a_coach = () => {
     content.append('Please complete your profile first.')
     jQuery('#modal-large').foundation('open')
   }
+}
+window.cta_join_a_training = () => {
+  console.log('cta_join_a_training')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Join an Online Training')
+
+  makeRequest('POST', 'public_plans', {}, 'zume_system/v1' ).done( function( data ) {
+    console.log(data)
+    let html = `<div class="grid-x grid-padding-x">`
+    for ( let i = 0; i < data.posts.length; i++ ) {
+      let plan = data.posts[i]
+      html += `<div class="cell small-12 medium-6 large-4">
+        <div class="card">
+          <div class="card-divider">
+            ${plan.post_title}
+          </div>
+          <div class="card-section">
+                <button type="button" class="button join_training_button" value="${plan.join_key}">Join</button><br>
+               ${plan.time_of_day_note}<br>
+                ${plan.location_note}<br>
+                ${plan.timezone_note}<br>`
+
+          jQuery.each( plan, function( key, value ) {
+            if ( key.startsWith('set_') ) {
+              html += `<div>${value.formatted}</div>`
+            }
+          })
+
+      html += `</div>
+          </div>
+        </div>`
+    }
+    html += `</div>`
+    content.html(html)
+
+    jQuery('.join_training_button').click(function() {
+      console.log('join_training_button')
+      let key = jQuery(this).val()
+      makeRequest('POST', 'join_plan', {key: key}, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        location.reload()
+      })
+
+    })
+  })
+
+
+
+  jQuery('#modal-large').foundation('open')
 }
 window.cta_make_a_plan = () => {
   console.log('cta_make_a_plan')
@@ -180,17 +236,81 @@ window.cta_invite_friends = () => {
 
   title.append('Invite Friends')
 
+  content.append(`
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+      <input type="text" placeholder="Join a Plan Key" />
+      <button class="button join_plan">Join</button>
+      </div>
+    </div>
+  `)
+
+  jQuery('.join_plan').click(function() {
+    console.log('join plan')
+    let key = jQuery(this).prev().val()
+
+    makeRequest('POST', 'join_plan', { "key": key  }, 'zume_system/v1' ).done( function( data ) {
+      console.log(data)
+      location.reload()
+    })
+  })
+
   jQuery('#modal-large').foundation('open')
 }
-window.cta_join_training = () => {
-  console.log('cta_join_training')
+window.cta_work_the_plan = () => {
+  console.log('cta_work_the_plan')
   let title = jQuery('#modal-large-title')
   let content = jQuery('#modal-large-content')
   title.empty()
   content.empty()
 
-  title.append('Join Online Training')
+  title.append('Work the Plan<hr>')
 
+  // post list
+  makeRequest('POST', 'zume_plans/list', {"fields":[{"participants":[ zumeForms.user_profile.contact_id ]}],"sort":"name","offset":0}, 'dt-posts/v2' ).done( function( data ) {
+    console.log(data)
+    if (data.posts.length == 0) {
+      console.log(data)
+      return
+    }
+    let html = ''
+    jQuery.each(data.posts, function (key, plan) {
+      html += `
+        <div class="grid-x grid-padding-x">
+          <div class="cell">
+            <h5>${plan.post_title}</h5>
+          </div>
+        `
+      jQuery.each(plan, function (key, value) {
+        if (key.startsWith('set_')) {
+          html += `
+            <div class="cell" style="margin-bottom:5px;">
+              ${key} | ${value.formatted} <button class="button working ${key}" value="${key}">Mark Complete</button>
+            </div>`
+        }
+      })
+      html += `</div>`
+    })
+    content.append(html)
+
+    // check off completed
+    makeRequest('GET', 'log', {}, 'zume_system/v1' ).done( function( data ) {
+      console.log(data)
+      jQuery.each(data, function (key, value) {
+        jQuery(`.${value.subtype}`).addClass('hollow')
+      })
+    })
+
+    // mark complete
+    jQuery('.button.working').click(function() {
+      let key = jQuery(this).val()
+      jQuery(this).addClass('hollow')
+      makeRequest('POST', 'log', { type: 'training', subtype: key }, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+      })
+    })
+
+  })
 
   jQuery('#modal-large').foundation('open')
 }
@@ -202,6 +322,93 @@ window.cta_post_training_plan = () => {
   content.empty()
 
   title.append('Post Training Plan')
+
+  content.append(`
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><hr></div>
+        <div class="cell">
+          <label for="plan_name">I will share My Story [Testimony] and God’s Story [the Gospel] with the following individuals:</label>
+          <input type="text" name="" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will invite the following people to begin an Accountability Group with me:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will challenge the following people to begin their own Accountability Groups and train them how to do it:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will invite the following people to begin a 3/3 Group with me:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will challenge the following people to begin their own 3/3 Groups and train them how to do it:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will invite the following people to participate in a 3/3 Hope or Discover Group [see Appendix of Zúme Guidebook]</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will invite the following people to participate in Prayer Walking with me:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will Prayer Walk once every [days / weeks / months].</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will equip the following people to share their story and God’s Story and make a List of 100 of the people in their relational network:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will challenge the following people to use the Prayer Cycle tool on a periodic basis:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will use the Prayer Cycle tool once every [days / weeks / months].</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will invite the following people to be part of a Leadership Cell that I will lead:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">I will encourage the following people to go through this Zúme Training course:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <label for="plan_name">Other commitments:</label>
+          <input type="text" class="post-training-plan" />
+        </div>
+        <div class="cell">
+          <button class="button plan-save-button">Save</button>
+        </div>
+    </div>
+    `)
+
+  jQuery('.plan-save-button').click(function() {
+    jQuery('.post-training-plan').each(function(value) {
+      if ( jQuery(this).val() ) {
+        console.log('Question: ' + jQuery(this).prev().text() + ' Answer: ' + jQuery(this).val())
+
+        var date = new Date(); // Now
+        date.setDate(date.getDate() + 30);
+
+        makeRequest('POST', 'add_commitment', {
+          "user_id": zumeForms.user_profile.user_id,
+          "post_id": zumeForms.user_profile.contact_id,
+          "meta_key": "tasks",
+          "note": 'Question: ' + jQuery(this).prev().text() + ' Answer: ' + jQuery(this).val(),
+          "date": date,
+          "category": "custom"
+        }, 'zume_system/v1' ).done( function( data ) {
+          console.log(data)
+        })
+      }
+    })
+  })
 
 
   jQuery('#modal-large').foundation('open')

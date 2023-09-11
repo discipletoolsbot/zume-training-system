@@ -1,6 +1,10 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
+function zume_log_insert( string $type, string $subtype, array $data = []) {
+    return Zume_System_Log_API::log( $type, $subtype, $data );
+}
+
 class Zume_System_Log_API
 {
     public $namespace = 'zume_system/v1';
@@ -28,8 +32,15 @@ class Zume_System_Log_API
 
         register_rest_route(
             $namespace, '/log', [
-                'methods' => ['GET', 'POST'],
+                'methods' => ['POST'],
                 'callback' => [$this, 'rest_log'],
+                'permission_callback' => '__return_true'
+            ]
+        );
+        register_rest_route(
+            $namespace, '/log', [
+                'methods' => ['GET'],
+                'callback' => [$this, 'get_log'],
                 'permission_callback' => '__return_true'
             ]
         );
@@ -40,6 +51,9 @@ class Zume_System_Log_API
             return new WP_Error(__METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
         }
         return self::log( $params['type'], $params['subtype'], $params );
+    }
+    public function get_log( WP_REST_Request $request ) {
+       return zume_get_user_log( get_current_user_id() );
     }
 
     /**

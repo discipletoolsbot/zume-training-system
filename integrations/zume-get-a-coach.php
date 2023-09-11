@@ -57,12 +57,7 @@ class Zume_Get_A_Coach_Endpoints
 
     public static function register_request_to_coaching( $user_id = null )
     {
-        if ( $user_id ) {
-            $profile = zume_get_user_profile( $user_id );
-        } else {
-            global $zume_user_profile;
-            $profile = $zume_user_profile;
-        }
+        $profile = zume_get_user_profile( $user_id );
 
         if ( $zume_user_profile['coaching_contact_id'] ) {
             return new WP_Error( 'already_has_coach', 'User already has a coach', array( 'status' => 400 ) );

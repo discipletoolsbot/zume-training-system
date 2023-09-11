@@ -220,6 +220,14 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['join_key'] = [
+                'name'        => __( 'Join Key', 'zume-training-system' ),
+                'description' => 'Key to join the training, like a password or meeting ID',
+                'type'        => 'text',
+                'default'     => $this->generate_join_key(),
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/qrcode-solid.svg',
+            ];
 
             $fields['set_a_01'] = [
                 'name'        => __( '10 Session 01', 'zume-training-system' ),
@@ -477,12 +485,8 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'create-icon' => get_template_directory_uri() . '/dt-assets/images/add-contact.svg',
                 'show_in_table' => 35
             ];
-
         }
 
-        /**
-         * @todo this adds connection to contacts. remove if not needed.
-         */
         if ( $post_type === 'contacts' ){
             $fields[$this->post_type] = [
                 'name' => $this->plural_name,
@@ -491,7 +495,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'post_type' => $this->post_type,
                 'p2p_direction' => 'from',
                 'p2p_key' => $this->post_type.'_to_contacts',
-                'tile' => 'other',
+                'tile' => 'participants',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/group-type.svg',
                 'create-icon' => get_template_directory_uri() . '/dt-assets/images/add-group.svg',
                 'show_in_table' => 35
@@ -577,19 +581,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     }
 
     public function post_connection_added( $post_type, $post_id, $field_key, $value ){
-//        if ( $post_type === $this->post_type ){
-//            if ( $field_key === "members" ){
-//                // @todo change 'members'
-//                // execute your code here, if field key match
-//            }
-//            if ( $field_key === "coaches" ){
-//                // @todo change 'coaches'
-//                // execute your code here, if field key match
-//            }
-//        }
-//        if ( $post_type === "contacts" && $field_key === $this->post_type ){
-//            // execute your code here, if a change is made in contacts and a field key is matched
-//        }
+        if ( $post_type === $this->post_type ){
+            if ( $field_key === "participants" ){
+                $user_id = zume_get_user_id_by_contact_id( $value );
+                if ( empty( $user_id ) ){
+                    return;
+                }
+
+                DT_Posts::add_shared(  $post_type,  $post_id,  $user_id, null, false, false, true );
+
+                zume_log_insert(
+                    'system',
+                    'plan_created',
+                    [
+                        'user_id' => $user_id
+                    ],
+                );
+            }
+        }
     }
 
     //action when a post connection is removed during create or update
@@ -612,6 +621,17 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     public function dt_comment_created( $post_type, $post_id, $comment_id, $type ){
     }
 
+    public function generate_join_key() {
+        global $wpdb;
+        $key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
+        $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
+        while ( $key_exists ){
+            $key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
+            $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
+        }
+        return $key;
+    }
+
     // filter at the start of post creation
     public function dt_post_create_fields( $fields, $post_type ){
         if ( $post_type === $this->post_type ){
@@ -619,12 +639,27 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             if ( isset( $post_fields['status'] ) && !isset( $fields['status'] ) ){
                 $fields['status'] = 'active';
             }
+            if ( isset( $post_fields['join_key'] ) && !isset( $fields['join_key'] ) ){
+                $fields['join_key'] = $this->generate_join_key();
+            }
+
         }
         return $fields;
     }
 
     //action when a post has been created
     public function dt_post_created( $post_type, $post_id, $initial_fields ){
+        if ( $post_type === $this->post_type ){
+            if( isset( $initial_fields['assigned_to'] ) ){
+                zume_log_insert(
+                    'system',
+                    'plan_created',
+                    [
+                        'user_id' => $initial_fields['assigned_to']
+                    ],
+                );
+            }
+        }
     }
 
     private static function count_records_assigned_to_me_by_status(){

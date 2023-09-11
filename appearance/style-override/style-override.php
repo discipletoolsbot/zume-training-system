@@ -9,6 +9,9 @@ add_action( 'wp_head', function(){
         body {
             background-color: white !important;
         }
+        header {
+            border-bottom: 0 !important;
+        }
         .top-bar a {
             color: #323A68;
         }
