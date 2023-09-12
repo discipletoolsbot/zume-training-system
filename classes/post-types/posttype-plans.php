@@ -224,7 +224,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'name'        => __( 'Join Key', 'zume-training-system' ),
                 'description' => 'Key to join the training, like a password or meeting ID',
                 'type'        => 'text',
-                'default'     => $this->generate_join_key(),
+                'default'     => '',
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/qrcode-solid.svg',
             ];
