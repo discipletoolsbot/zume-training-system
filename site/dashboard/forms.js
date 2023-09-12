@@ -243,17 +243,16 @@ window.cta_invite_friends = () => {
     <div class="grid-x grid-padding-y">
       <div class="cell">
       <input type="text" placeholder="Add friend code of friend in the system" />
-      <button class="button connect_friend_by_code" value="code">Connect by Code</button>
+      <button class="button connect_friend" value="code">Connect by Code</button>
       </div>
     </div>
   `)
 
-  jQuery('.connect_friend_by_email').click(function() {
-    console.log('connect_friend_by_email')
-    let type = jQuery(this).val()
+  jQuery('.connect_friend').click(function() {
+    console.log('connect_friend')
     let value = jQuery(this).prev().val()
 
-    makeRequest('POST', 'friends/connect', { "type": type, "value": value }, 'zume_system/v1' ).done( function( data ) {
+    makeRequest('POST', 'friends/connect', { "value": value }, 'zume_system/v1' ).done( function( data ) {
       console.log(data)
     })
   })

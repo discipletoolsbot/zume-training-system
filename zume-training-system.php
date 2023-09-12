@@ -5,7 +5,7 @@
  * Description: Zume Training System
  * Text Domain: zume-training-system
  * Domain Path: /languages
- * Version:  0.2
+ * Version:  0.3
  * Author URI: https://github.com/ZumeProject/zume-training-system
  * GitHub Plugin URI: https://github.com/ZumeProject/zume-training-system
  * Requires at least: 4.7.0

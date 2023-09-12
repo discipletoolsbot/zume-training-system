@@ -36,7 +36,7 @@ class Zume_Friends_Endpoints
     public function connect_friends( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset( $params['type'], $params['value'] ) ) {
+        if ( ! isset(  $params['value'] ) ) {
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
@@ -46,9 +46,19 @@ class Zume_Friends_Endpoints
             $current_user_id = get_current_user_id();
             $current_contact_id = zume_get_user_contact_id( $current_user_id );
 
-//          DT_Posts::
-        }
+            $fields = [
+                'relation' => [
+                    'values' => [
+                        [
+                            'value' => $contact_id
+                        ]
+                    ]
+                ]
+            ];
+          return DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
 
+        }
+        return false;
     }
     public function test_key( $key ) : bool|int {
         global $wpdb;
