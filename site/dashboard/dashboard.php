@@ -95,10 +95,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_user_profile;
-        $plans = zume_get_user_plans();
-        $stage= zume_get_user_stage();
-        $host = zume_get_user_host();
+
 
         require __DIR__ . '/../parts/nav.php';
         ?>
@@ -106,6 +103,16 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
+
+            <?php
+            /**
+             * DEV SECTION - REMOVE FOR PRODUCTION
+             */
+            global $zume_user_profile;
+            $plans = zume_get_user_plans();
+            $stage= zume_get_user_stage();
+            $host = zume_get_user_host();
+            ?>
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
@@ -123,6 +130,9 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
                 </div>
             </div>
+            <!--END DEV SECTION -->
+
+
         </div>
         <?php
     }

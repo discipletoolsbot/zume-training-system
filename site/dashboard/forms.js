@@ -107,7 +107,7 @@ window.cta_join_a_training = () => {
             ${plan.post_title}
           </div>
           <div class="card-section">
-                <button type="button" class="button join_training_button" value="${plan.join_key}">Join</button><br>
+                <button type="button" class="button join_training_button" value="${plan.join_key}">Join</button> <span class="loading-spinner"></span><br>
                ${plan.time_of_day_note}<br>
                 ${plan.location_note}<br>
                 ${plan.timezone_note}<br>`
@@ -127,10 +127,13 @@ window.cta_join_a_training = () => {
 
     jQuery('.join_training_button').click(function() {
       console.log('join_training_button')
+      jQuery('.loading-spinner').addClass('active')
       let key = jQuery(this).val()
       makeRequest('POST', 'join_plan', {key: key}, 'zume_system/v1' ).done( function( data ) {
+        jQuery('.join_training_button').text('Joined')
+      })
+      makeRequest('POST', 'log', { type: 'system', subtype: 'joined_online_training' }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
-        location.reload()
       })
 
     })
@@ -237,21 +240,29 @@ window.cta_invite_friends = () => {
   title.append('Invite Friends')
 
   content.append(`
-    <div class="grid-x grid-padding-x">
+    <div class="grid-x grid-padding-y">
       <div class="cell">
-      <input type="text" placeholder="Join a Plan Key" />
-      <button class="button join_plan">Join</button>
+      <input type="text" placeholder="Add friend code of friend in the system" />
+      <button class="button connect_friend_by_code" value="code">Connect by Code</button>
+      </div>
+      <div class="cell">
+      <input type="text" placeholder="Add email address of friend in the system" />
+      <button class="button connect_friend_by_email" value="email">Connect by Email</button>
+      </div>
+      <div class="cell">
+      <input type="text" placeholder="Add phone number of friend in the system" />
+      <button class="button connect_friend_by_phone" value="phone">Connect by Phone</button>
       </div>
     </div>
   `)
 
-  jQuery('.join_plan').click(function() {
-    console.log('join plan')
-    let key = jQuery(this).prev().val()
+  jQuery('.connect_friend_by_email').click(function() {
+    console.log('connect_friend_by_email')
+    let type = jQuery(this).val()
+    let value = jQuery(this).prev().val()
 
-    makeRequest('POST', 'join_plan', { "key": key  }, 'zume_system/v1' ).done( function( data ) {
+    makeRequest('POST', 'connect_friends', { "type": type, "value": value }, 'zume_system/v1' ).done( function( data ) {
       console.log(data)
-      location.reload()
     })
   })
 

@@ -51,31 +51,31 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
             // user is current user, build global variable
             global $zume_user_profile; // sets a global variable for user_profile
             $zume_user_profile = [
+                'name' => $name,
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
-                'coaches' => $coaches,
-                'name' => $name,
                 'email' => $email,
                 'phone' => $phone,
-                'language' => $language,
                 'location' => $location,
+                'language' => $language,
                 'timezone' => $timezone,
+                'coaches' => $coaches,
             ];
             return $zume_user_profile;
         } else {
             // if user is not current user, return array
             return [
+                'name' => $name,
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
-                'coaches' => $coaches,
-                'name' => $name,
                 'email' => $email,
                 'phone' => $phone,
-                'language' => $language,
                 'location' => $location,
+                'language' => $language,
                 'timezone' => $timezone,
+                'coaches' => $coaches,
             ];
         }
     }

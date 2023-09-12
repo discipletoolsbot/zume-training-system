@@ -2,11 +2,8 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-/**
- * Custom endpoints file
- */
 
-class Zume_Custom_Endpoints
+class Zume_Plans_Endpoints
 {
     private $namespace;
     private static $_instance = null;
@@ -18,8 +15,10 @@ class Zume_Custom_Endpoints
     }
 
     public function __construct() {
-        $this->namespace = 'zume_system/v1';
-        add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
+        if ( dt_is_rest() ) {
+           $this->namespace = 'zume_system/v1';
+           add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
+        }
     }
 
     public function add_api_routes() {
@@ -37,6 +36,7 @@ class Zume_Custom_Endpoints
                 'permission_callback' => '__return_true',
             ]
         );
+
     }
 
     public function join_plan_api( WP_REST_Request $request ){
@@ -78,4 +78,4 @@ class Zume_Custom_Endpoints
         return $plans;
     }
 }
-Zume_Custom_Endpoints::instance();
+Zume_Plans_Endpoints::instance();
