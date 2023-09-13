@@ -1,10 +1,13 @@
-// example styles.scss
+@import 'reset';
+@import 'root-variables';
 @import 'breakpoints';
 @import 'colors';
 @import 'fonts';
 
-@import 'mixins/buttons';
-
+@import 'composition';
+@import 'utilities/buttons';
+@import 'icons';
+@import 'utilities/spacing';
 @import 'utilities/position';
 @import 'utilities/display';
 
@@ -12,7 +15,7 @@
   font-family: $font-text;
 
   color-scheme: light dark;
-  color: $brand-dark;
+  color: $secondary-dark;
   background-color: $white;
 }
 
@@ -21,7 +24,6 @@ html {
 }
 
 body {
-    margin: 0;
     font-size: 1rem;
     font-family: $font-text;
     min-height: 100vh;
@@ -31,20 +33,19 @@ body {
 
 footer {
   margin-top: auto;
-  color: $brand-dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-header;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
     text-decoration: none;
-}
-
-img {
-    max-width: 100%;
 }
 
 .container {
@@ -55,17 +56,17 @@ img {
 }
 
 header {
-  background-color: $white;
-  padding: 1em 0;
+  background-color: $brand-primary;
+  color: $white;
+  padding: 0.4em 2em;
   text-align: center;
-  border-bottom: 1px solid $brand-dark;
+  font-size: 14px;
 }
 
 .nav {
   display: none;
-  font-size: 1rem;
   font-weight: 600;
-  font-family: $font-headline;
+  font-family: $font-text;
 }
 
 .nav--visible {
@@ -85,18 +86,21 @@ header {
   padding: 0;
 }
 
-.nav__item {
-  padding: 0.25em 0;
-}
-
-.nav__link {
-  text-transform: uppercase;
-}
-
 .nav__link--button {
   @include button;
 
   padding: 1em 1em;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+
+.nav__icon {
+  display: inline-block;
+  width: 30px;
+  line-height: 1;
 }
 
 .nav-toggle {
@@ -146,7 +150,7 @@ header {
 .logo {
   display: flex;
   width: 150px;
-  height: 50px;
+  height: 30px;
   margin: 0 auto;
 }
 
@@ -173,12 +177,9 @@ header {
         margin: 0;
     }
 
-    header {
-        padding: 1em 0;
-        .nav__item {
-            float: left;
-            margin-left: 2em;
-        }
+    .nav__item {
+        float: left;
+        margin-left: 1em;
     }
 
     .nav__link--button {
@@ -190,6 +191,14 @@ header {
 .loading-spinner {
   display: none;
 }
+
+.footer {
+  color: $white;
+  background-color: $brand-primary;
+  font-size: 0.75rem;
+  padding: var(--s2) 0;
+}
+
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -208,12 +217,4 @@ header {
     display: inline-block;
     vertical-align: middle;
     box-sizing: border-box;
-}
-
-
-.button {
-  @include button;
-
-  margin-bottom: 0;
-  padding: 1em 2em;
 }

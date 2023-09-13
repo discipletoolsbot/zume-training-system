@@ -24,6 +24,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
+
         $this->lang = get_locale();
 
         [
@@ -36,6 +37,8 @@ class Zume_Training_Profile extends Zume_Magic_Page
         $post = zume_get_post_by_slug( $page_slug );
 
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
+
+            $this->require_authentication();
 
             $this->set_locale( $lang_code );
 
@@ -135,10 +138,15 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
                 </div>
 
-                <button class="button" id="submit-profile"><?php echo esc_html__( 'Save', 'zume' ) ?></button>
-                <span class="loading-spinner"></span>
+                <button class="btn" id="submit-profile"><?php echo esc_html__( 'Save', 'zume' ) ?></button>
+                <span class="loading-spinner">
+                    <img src="<?php echo esc_url( trailingslashit( plugin_dir_url( __DIR__ ) ) . 'assets/images/spinner.svg' ) ?>" alt="spinner">
+                </span>
 
             </form>
+
+            <br>
+            <a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="btn-outline"><?php echo esc_html__( 'Logout', 'zume' ) ?></a>
 
             <hr>
             <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>

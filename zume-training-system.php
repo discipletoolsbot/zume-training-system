@@ -75,13 +75,13 @@ class Zume_Training {
         $wpdb->dt_zume_message_plan = $wpdb->prefix . 'dt_zume_message_plan';
 
         $this->define_constants();
+        $this->setup_hooks();
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
         require_once( 'site/login/loader.php' );
         $this->i18n();
-        $this->setup_hooks();
     }
     public static function activation() {
     }
@@ -275,11 +275,11 @@ class Zume_Training {
                         'lng' => $lng,
                         'lat' => $lat,
                         'source' => 'ip',
-                    ]
+                    ],
                 ],
-            ]
+            ],
         ];
-        $contact_location = DT_Posts::update_post( 'contacts',  $new_user_contact['ID'], $fields, true, false );
+        $contact_location = DT_Posts::update_post( 'contacts', $new_user_contact['ID'], $fields, true, false );
 
         zume_log_insert('system', 'registered', [
             'user_id' => $user->ID,
@@ -293,26 +293,25 @@ class Zume_Training {
             'level' => $contact_location['location_grid_meta'][0]['level'],
             'label' => $contact_location['location_grid_meta'][0]['label'],
             'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
-            'time_end' =>  time(),
+            'time_end' => time(),
         ] );
 
         zume_log_insert('stage', 'current_level', [
-           'user_id' => $user->ID,
-           'post_id' => $new_user_contact['ID'],
-           'post_type' => 'zume',
-           'type' => 'stage',
-           'subtype' => 'current_level',
-           'value' => 1,
-           'lng' => $contact_location['location_grid_meta'][0]['lng'],
-           'lat' => $contact_location['location_grid_meta'][0]['lat'],
-           'level' => $contact_location['location_grid_meta'][0]['level'],
-           'label' => $contact_location['location_grid_meta'][0]['label'],
-           'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
-           'time_end' =>  time(),
+            'user_id' => $user->ID,
+            'post_id' => $new_user_contact['ID'],
+            'post_type' => 'zume',
+            'type' => 'stage',
+            'subtype' => 'current_level',
+            'value' => 1,
+            'lng' => $contact_location['location_grid_meta'][0]['lng'],
+            'lat' => $contact_location['location_grid_meta'][0]['lat'],
+            'level' => $contact_location['location_grid_meta'][0]['level'],
+            'label' => $contact_location['location_grid_meta'][0]['label'],
+            'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
+            'time_end' => time(),
         ] );
 
         Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'system', 'registered' ) );
-
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();

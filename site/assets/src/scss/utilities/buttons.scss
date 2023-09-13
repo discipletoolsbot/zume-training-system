@@ -1,0 +1,82 @@
+@mixin button {
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 100px;
+    padding: 0.25em 1em;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.btn {
+    @include button;
+
+    color: $white;
+    background-color: $brand-primary;
+    border: solid 2px transparent;
+
+    &:hover, &:active {
+        color: $white;
+        background-color: $brand-light;
+        text-decoration: none;
+    }
+
+    &.btn-on-dark {
+        &:hover, &:active {
+            border: solid 2px $white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn-light {
+    @include button;
+
+    color: white;
+    background-color: $brand-light;
+
+    &:hover, &:active {
+        color: $white;
+        background-color: $brand-primary;
+        text-decoration: none;
+    }
+}
+
+.btn-outline {
+    @include button;
+
+    color: $brand-light;
+    background-color: $white;
+    border: solid 2px $brand-light;
+
+    &:hover, &:active {
+        color: $white;
+        background-color: $brand-light;
+        text-decoration: none;
+    }
+
+    &.btn-on-dark {
+        color: $white;
+        background-color: transparent;
+        border-color: $white;
+
+        &:hover, &:active {
+            background-color: $brand-light;
+            text-decoration: none;
+        }
+    }
+}
+
+a {
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.link-light {
+    color: $white;
+
+    &:hover, &:active, &:focus {
+        color: $white;
+    }
+}

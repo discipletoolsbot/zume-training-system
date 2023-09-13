@@ -1,7 +1,20 @@
-$brand-dark: #2E323F;
-$brand-primary: #3B4050;
-$brand-light: #6F737F;
-$brand-secondary: #A59678;
+$black: #000;
+$brand-dark: #21336A;
+$brand-primary: #008CC7;
+$brand-light: #2CACE2;
+$brand-lighter: #8ACDEA;
+$secondary-dark: #2B2B2B;
+$secondary: #C1C1C1;
+$secondary-light: #EFEFEF;
+$error-main: #FFF080;
 $white: #FFF;
-$grey-light: #F2F2F2;
 
+$brand-gradient: linear-gradient( $brand-primary, #004664 );
+
+.bg-brand {
+    background: $brand-primary;
+}
+
+.bg-brand-gradient {
+    background: $brand-gradient;
+}

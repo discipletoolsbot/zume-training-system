@@ -1,29 +1,25 @@
     <header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="nav__link" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a>
+        <div class="d-flex justify-content-between align-items-center">
+            <a class="btn-outline btn-on-dark" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a>
 
             <div class="absolute-center left-0 right-0">
                 <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">
-                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/zume-training-logo.svg' ) ?>" alt="Zume Logo" />
+                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/ZumeTraining-Small.png' ) ?>" alt="Zume Logo" />
                 </a>
             </div>
 
             <nav class="nav" id="nav">
-                <ul class="nav__list nav__list--secondary">
+                <ul class="nav__list nav__list--secondary" role="list">
 
-                <?php if ( is_user_logged_in() ) : ?>
+                    <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?>
 
-                    <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?><li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="nav__link"><?php echo esc_html__( 'DTools', 'zume' ) ?></a></li><?php } ?>
-                    <li class="nav__item"><a href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__link"><?php echo esc_html__( 'Profile', 'zume' ) ?></a></li>
-                    <li class="nav__item"><a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="nav__link"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
-                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Logout', 'zume' ) ?></a></li>
+                        <li class="nav__item"><a href="<?php echo esc_url( '/contacts' ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'DTools', 'zume' ) ?></a></li>
 
-                <?php else : ?>
-
-                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="nav__link"><?php echo esc_html__( 'Login', 'zume' ) ?></a></li>
-                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="nav__link nav__link--button"><?php echo esc_html__( 'Register', 'zume' ) ?></a></li>
-
-                <?php endif; ?>
+                    <?php } ?>
+                    <li class="nav__item"><a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
+                    <li class="nav__item"><a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a></li>
+                    <li class="nav__item"><a href="<?php echo esc_url( '/checkin' ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a></li>
+                    <li class="nav__item"><a href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a></li>
 
                 </ul>
             </nav>

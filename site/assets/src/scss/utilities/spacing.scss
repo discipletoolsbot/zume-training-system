@@ -1,0 +1,15 @@
+$gap-sizes: (3, 4);
+
+@each $i in $gap-sizes {
+    .gap-#{$i} {
+        gap: var(--s#{$i});
+    }
+}
+
+$flow-sizes: (2);
+
+@each $i in $flow-sizes {
+    .flow-#{$i} {
+        --flow-size: var(--s#{$i});
+    }
+}

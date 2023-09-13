@@ -37,15 +37,20 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
+            $this->require_authentication();
+
             $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', function (){ return true;
+            add_filter( 'dt_blank_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_allow_non_login_access', function (){ return true;
+            add_filter( 'dt_allow_non_login_access', function () {
+                return true;
             }, 100, 1 );
-            add_filter( 'dt_override_header_meta', function (){ return true;
+            add_filter( 'dt_override_header_meta', function () {
+                return true;
             }, 100, 1 );
 
             // header content
@@ -75,28 +80,22 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_css();
     }
     public function wp_enqueue_scripts() {
-        wp_enqueue_script( 'zume_forms', plugin_dir_url(__FILE__) . 'forms.js', [ 'jquery' ], filemtime( plugin_dir_path(__FILE__) . "forms.js" ),  true);
+        wp_enqueue_script( 'zume_forms', plugin_dir_url( __FILE__ ) . 'forms.js', [ 'jquery' ], filemtime( plugin_dir_path( __FILE__ ) . 'forms.js' ), true );
         wp_localize_script(
             'zume_forms', 'zumeForms', array(
                 'root' => esc_url_raw( rest_url() ),
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'site_url' => get_site_url(),
                 'template_dir' => get_template_directory_uri(),
-                'translations' => [
-
-                ],
+                'translations' => [],
                 'user_profile' => zume_get_user_profile(),
             )
         );
     }
 
-    public function header_style(){
-
-    }
+    public function header_style(){}
 
     public function body(){
-
-
         require __DIR__ . '/../parts/nav.php';
         ?>
         <div class="container">
@@ -110,7 +109,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
              */
             global $zume_user_profile;
             $plans = zume_get_user_plans();
-            $stage= zume_get_user_stage();
+            $stage = zume_get_user_stage();
             $host = zume_get_user_host();
             ?>
             <div class="grid-x grid-margin-x">
