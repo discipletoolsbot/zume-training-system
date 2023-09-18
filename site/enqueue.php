@@ -11,6 +11,7 @@ function zume_training_magic_url_base_allowed_js( $allowed_js = [] ) {
     $allowed_js[] = 'foundation_js';
     $allowed_js[] = 'foundation_reveal_js';
     $allowed_js[] = 'vite_bundle_js';
+
     return array_unique( $allowed_js );
 }
 function zume_training_magic_url_base_allowed_css( $allowed_css = [] ) {

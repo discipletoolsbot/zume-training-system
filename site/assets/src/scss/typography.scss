@@ -33,7 +33,7 @@ h5, .h5 {
     font-size: font-size(1);
 }
 
-$font-sizes: (-1);
+$font-sizes: (-1, 0);
 
 @each $font-size in $font-sizes {
     .f-#{$font-size} {

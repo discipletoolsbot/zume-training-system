@@ -2,26 +2,30 @@
 
     <div class="container stack-2">
 
-        <div class="first-row d-flex justify-content-between">
-            <ul class="d-flex gap-4" role="list">
-                <li><a class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>">About</a></li>
-                <li><a class="link-light" href="<?php echo esc_url( zume_resources_url() ) ?>">Resources</a></li>
-                <li><a class="link-light" href="/how-to-follow-jesus">How to follow Jesus</a></li>
-            </ul>
+        <div class="cluster | justify-content-between">
+            <div class="cluster s4" role="list">
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>">About</a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_resources_url() ) ?>">Resources</a>
+                <a role="listitem" class="link-light" href="/how-to-follow-jesus">How to follow Jesus</a>
+            </div>
 
-            <ul class="d-flex gap-4" role="list">
-                <li><a class="link-light" href="/book">Zume Guidebook</a></li>
-                <li><a class="link-light" href="/mobile-app">Zume Mobile App</a></li>
-                <li><a class="link-light" href="/donate">Donate</a></li>
-            </ul>
+            <div class="cluster s4 justify-flex-end" role="list">
+                <a role="listitem" class="link-light" href="/book">Zume Guidebook</a>
+                <a role="listitem" class="link-light" href="/mobile-app">Zume Mobile App</a>
+                <a role="listitem" class="link-light" href="/donate">Donate</a>
+            </div>
         </div>
 
-        <div class="second-row d-flex justify-content-between">
-            <span>(c) Zume. All rights reserved.</span>
-            <ul class="d-flex gap-3" role="list">
-                <li><a href="#" class="link-light"><strong>f</strong></a></li>
-                <li><a href="#" class="link-light"><strong>i</strong></a></li>
-            </ul>
+        <div class="cluster justify-content-between">
+            <span>&copy; Zume. All rights reserved.</span>
+            <div class="cluster | s1 justify-flex-end f-0" role="list">
+                <a href="#" class="link-light" role="listitem">
+                    <div class="icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/facebook.svg' ?></div>
+                </a>
+                <a href="#" class="link-light" role="listitem">
+                    <div class="icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/instagram.svg' ?></div>
+                </a>
+            </div>
         </div>
     </div>
 

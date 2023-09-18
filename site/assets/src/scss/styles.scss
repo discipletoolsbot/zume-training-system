@@ -13,6 +13,7 @@
 @import 'composition/cover';
 @import 'composition/stack';
 @import 'composition/box';
+@import 'composition/cluster';
 
 @import 'utilities/buttons';
 @import 'utilities/spacing';
@@ -60,7 +61,11 @@ a {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   z-index: 5;
   background-color: color('brand');
   color: color('white');
@@ -81,11 +86,12 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  margin-top: 3rem;
+  margin-top: 2.4rem;
   z-index: 10;
-  background-color: white;
-  border: 1px solid black;
+  background-color: color('brand');
+  border: 1px solid color('brand');
   border-top: none;
+  padding: 1rem 2rem;
 }
 
 .nav__list {
@@ -107,6 +113,13 @@ header {
   display: inline-block;
   width: 30px;
   line-height: 1;
+
+  &:hover, &:focus {
+    svg {
+        stroke: color('brand-lighter');
+        fill: color('brand-lighter');
+    }
+  }
 }
 
 .nav-toggle {
@@ -115,7 +128,7 @@ header {
   height: 2em;
   border: 1px;
   border-radius: 5px;
-  color: #2E323F;
+  color: color('white');
 
   top: -15px;
 }
@@ -136,7 +149,7 @@ header {
   display: block;
   margin: 0 auto;
   height: 3px;
-  background: #2E323F;
+  background: color('white');
 }
 
 .hamburger::before,

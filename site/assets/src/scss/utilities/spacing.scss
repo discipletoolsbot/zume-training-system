@@ -23,3 +23,11 @@ $padding-sizes: (-1, 0, 1, 2);
 .p0 {
     padding: 0 !important;
 }
+
+$spacing-sizes: (-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5);
+
+@each $i in $spacing-sizes {
+    .s#{$i} {
+        --space: #{spacing($i)};
+    }
+}
