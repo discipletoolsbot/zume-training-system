@@ -1,6 +1,8 @@
 @mixin button {
+    color: inherit;
     display: inline-block;
     font-weight: 400;
+    border: solid 2px transparent;
     border-radius: 100px;
     padding: 0.25em 1em;
     cursor: pointer;
@@ -10,19 +12,18 @@
 .btn {
     @include button;
 
-    color: $white;
-    background-color: $brand-primary;
-    border: solid 2px transparent;
+    color: color('white');
+    background-color: color('brand');
 
     &:hover, &:active {
-        color: $white;
-        background-color: $brand-light;
+        color: color('white');
+        background-color: color('brand-light');
         text-decoration: none;
     }
 
     &.btn-on-dark {
         &:hover, &:active {
-            border: solid 2px $white;
+            border: solid 2px color('white');
             background-color: transparent;
             text-decoration: none;
         }
@@ -33,11 +34,11 @@
     @include button;
 
     color: white;
-    background-color: $brand-light;
+    background-color: color('brand-light');
 
     &:hover, &:active {
-        color: $white;
-        background-color: $brand-primary;
+        color: color('white');
+        background-color: color('brand');
         text-decoration: none;
     }
 }
@@ -45,38 +46,52 @@
 .btn-outline {
     @include button;
 
-    color: $brand-light;
-    background-color: $white;
-    border: solid 2px $brand-light;
+    color: color('brand-light');
+    background-color: color('white');
+    border: solid 2px color('brand-light');
 
     &:hover, &:active {
-        color: $white;
-        background-color: $brand-light;
+        color: color('white');
+        background-color: color('brand-light');
         text-decoration: none;
     }
 
     &.btn-on-dark {
-        color: $white;
+        color: color('white');
         background-color: transparent;
-        border-color: $white;
+        border-color: color('white');
 
         &:hover, &:active {
-            background-color: $brand-light;
+            background-color: color('brand-light');
             text-decoration: none;
         }
     }
 }
 
+.btn-outline-dark {
+    @include button;
+
+    border: 2px solid color('gray-500');
+
+    &:hover, &:active {
+        color: color('white');
+        background-color: color('gray-900');
+        border-color: color('gray-900');
+    }
+}
+
 a {
+    color: color('brand');
+
     &:hover, &:active, &:focus {
         text-decoration: underline;
     }
 }
 
 .link-light {
-    color: $white;
+    color: color('white');
 
     &:hover, &:active, &:focus {
-        color: $white;
+        color: color('white');
     }
 }

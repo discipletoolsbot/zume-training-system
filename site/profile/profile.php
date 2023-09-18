@@ -44,15 +44,9 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', function () {
-                return true;
-            }, 100, 1 );
-            add_filter( 'dt_allow_non_login_access', function () {
-                return true;
-            }, 100, 1 );
-            add_filter( 'dt_override_header_meta', function () {
-                return true;
-            }, 100, 1 );
+            add_filter( 'dt_blank_access', '__return_true', 100, 1 );
+            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
+            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
 
             // header content
             add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
@@ -69,6 +63,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
             add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 999 );
+            $this->enqueue_zume_training_scripts();
         }
     }
 

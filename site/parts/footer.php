@@ -1,6 +1,6 @@
 <footer class="footer">
 
-    <div class="container flow flow-2">
+    <div class="container stack-2">
 
         <div class="first-row d-flex justify-content-between">
             <ul class="d-flex gap-4" role="list">

@@ -1,42 +1,46 @@
+@use 'sass:color';
+
 @import 'reset';
 @import 'root-variables';
+@import 'functions';
 @import 'breakpoints';
 @import 'colors';
-@import 'fonts';
-
-@import 'composition';
-@import 'utilities/buttons';
 @import 'icons';
+@import 'typography';
+@import 'forms';
+
+@import 'composition/center';
+@import 'composition/cover';
+@import 'composition/stack';
+@import 'composition/box';
+
+@import 'utilities/buttons';
 @import 'utilities/spacing';
 @import 'utilities/position';
 @import 'utilities/display';
+@import 'utilities/shapes';
+@import 'utilities/sizes';
+@import 'utilities/text';
 
-:root {
-  font-family: $font-text;
-
-  color-scheme: light dark;
-  color: $secondary-dark;
-  background-color: $white;
-}
+@import 'blocks/login';
 
 html {
     font-size: 18px;
 }
 
 body {
+    color: color('gray-900');
+    background-color: color('white');
     font-size: 1rem;
-    font-family: $font-text;
+    font-family: var(--font-family);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color-scheme: light dark;
 }
 
 footer {
   margin-top: auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-header;
 }
 
 ul {
@@ -56,8 +60,10 @@ a {
 }
 
 header {
-  background-color: $brand-primary;
-  color: $white;
+  position: relative;
+  z-index: 5;
+  background-color: color('brand');
+  color: color('white');
   padding: 0.4em 2em;
   text-align: center;
   font-size: 14px;
@@ -66,7 +72,7 @@ header {
 .nav {
   display: none;
   font-weight: 600;
-  font-family: $font-text;
+  font-family: var(--font-family);
 }
 
 .nav--visible {
@@ -154,6 +160,47 @@ header {
   margin: 0 auto;
 }
 
+.line-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid color('gray-200');
+  line-height: 0;
+
+  & > * {
+    background-color: color('white');
+    padding: 0 spacing(0);
+  }
+}
+
+.multiply-cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  max-height: 100vh;
+  background-image: url('/wp-content/plugins/zume-training-system/site/assets/images/multiply.svg');
+  background-size: 35vh;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  background-position: center left;
+}
+.flip {
+  transform: scaleX(-1);
+}
+
+.banner {
+  padding: spacing(0);
+  color: inherit;
+  background-color: color('white');
+  border: 2px solid color('gray-500');
+  border-radius: var(--border-radius);
+}
+
+.banner.warning {
+  background-color: color('warning-main');
+}
+
 @media (min-width: $break-lg) {
 
     .row {
@@ -193,8 +240,8 @@ header {
 }
 
 .footer {
-  color: $white;
-  background-color: $brand-primary;
+  color: color('white');
+  background-color: color('brand');
   font-size: 0.75rem;
   padding: var(--s2) 0;
 }

@@ -57,9 +57,7 @@ function zume_training_load_scripts( $hook ) {
             'in-footer' => true,
         ]
     );
-
 }
-add_action( 'wp_enqueue_scripts', 'zume_training_load_scripts' );
 
 /**
  * Kucrut\Vite\enqueue_asset helpfully enqueues styles assosciated with a js module

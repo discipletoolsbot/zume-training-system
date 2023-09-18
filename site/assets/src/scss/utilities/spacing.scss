@@ -2,14 +2,24 @@ $gap-sizes: (3, 4);
 
 @each $i in $gap-sizes {
     .gap-#{$i} {
-        gap: var(--s#{$i});
+        gap: spacing($i);
     }
 }
 
-$flow-sizes: (2);
+$padding-sizes: (-1, 0, 1, 2);
 
-@each $i in $flow-sizes {
-    .flow-#{$i} {
-        --flow-size: var(--s#{$i});
+@each $i in $padding-sizes {
+    .p-#{$i} {
+        padding: spacing($i);
     }
+    .px-#{$i} {
+        padding-inline: spacing($i);
+    }
+    .py-#{$i} {
+        padding-block: spacing($i);
+    }
+}
+
+.p0 {
+    padding: 0 !important;
 }

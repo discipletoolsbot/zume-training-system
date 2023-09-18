@@ -1,0 +1,10 @@
+.box {
+  padding: var(--s1);
+  border: 0 solid;
+  outline: var(--border-thin) solid transparent;
+  outline-offset: calc(var(--border-thin) * -1);
+}
+
+.box * {
+  color: inherit;
+}

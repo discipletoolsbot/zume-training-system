@@ -1,0 +1,11 @@
+@function font-size( $i ) {
+    @return var(--t#{$i});
+}
+
+@function spacing( $i ) {
+    @return var(--s#{$i});
+}
+
+@function color( $color-name ) {
+    @return var( --z-#{$color-name} );
+}

@@ -1,20 +1,19 @@
-$black: #000;
-$brand-dark: #21336A;
-$brand-primary: #008CC7;
-$brand-light: #2CACE2;
-$brand-lighter: #8ACDEA;
-$secondary-dark: #2B2B2B;
-$secondary: #C1C1C1;
-$secondary-light: #EFEFEF;
-$error-main: #FFF080;
-$white: #FFF;
+$colors: ( 'white', 'brand', 'brand-light');
 
-$brand-gradient: linear-gradient( $brand-primary, #004664 );
+@each $color in $colors {
+    .#{$color} {
+        color: color($color);
+    }
+}
 
-.bg-brand {
-    background: $brand-primary;
+$bg-colors: ('white', 'brand', 'brand-light');
+
+@each $color in $bg-colors {
+    .bg-#{$color} {
+        background-color: color($color);
+    }
 }
 
 .bg-brand-gradient {
-    background: $brand-gradient;
+    background: color( 'brand-gradient' );
 }

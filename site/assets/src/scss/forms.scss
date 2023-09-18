@@ -1,0 +1,17 @@
+.input {
+    border-radius: calc(var(--border-radius) / 2 );
+    border: 2px solid color('gray-500');
+    margin: 0;
+
+    &:focus {
+        border: 2px solid color('gray-500');
+    }
+}
+
+.input-label {
+    line-height: 1;
+}
+
+.form-error {
+    margin-block: 0.5rem;
+}
