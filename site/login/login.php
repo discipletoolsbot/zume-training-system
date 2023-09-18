@@ -49,7 +49,6 @@ class Zume_Training_Login extends Zume_Magic_Page {
 
 
             add_action( 'dt_blank_head', [ $this, '_header' ] );
-            remove_all_actions( 'dt_blank_body' );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 
@@ -71,11 +70,6 @@ class Zume_Training_Login extends Zume_Magic_Page {
     public function header_javascript(){
 
         ?>
-        <style>
-            #login_form input {
-                padding:.5em;
-            }
-        </style>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
