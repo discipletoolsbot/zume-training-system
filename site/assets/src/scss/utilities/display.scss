@@ -12,6 +12,10 @@
     display: block;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .justify-content-between {
     justify-content: space-between;
 }
@@ -22,6 +26,14 @@
 
 .align-items-center {
     align-items: center;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-1p5 {
+    flex-grow: 1.5;
 }
 
 .hidden {

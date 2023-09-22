@@ -23,6 +23,18 @@
     border-end-end-radius: var(--border-radius);
 }
 
+.clip-rounded-end {
+    clip-path: url(#clip-rounded-end);
+}
+
+.clip-rounded-bottom-right {
+    clip-path: url(#clip-rounded-bottom-right);
+}
+
+.clip-rounded-top-left {
+    clip-path: url(#clip-rounded-top-left);
+}
+
 .shadow {
     box-shadow: color('shadow') 0px 5px 10px 0px ;
 }

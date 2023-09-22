@@ -115,23 +115,23 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                 <a class="d-block" href="#">Normal links in a page</a>
 
                 <button class="btn d-block">A normal button</button>
-                <button class="btn-light d-block">A light button</button>
-                <button class="btn-outline d-block">An outline button</button>
+                <button class="btn light d-block">A light button</button>
+                <button class="btn outline d-block">An outline button</button>
 
                 <a class="btn d-block">A normal button link</a>
-                <a class="btn-light d-block">A normal light button link</a>
-                <a class="btn-outline d-block">An outline button link</a>
+                <a class="btn light d-block">A normal light button link</a>
+                <a class="btn outline d-block">An outline button link</a>
             </div>
 
             <div class="flow | bg-brand">
 
                 <a href="#" class="link-light">A light link on a dark background</a>
 
-                <button class="btn btn-on-dark d-block">A light button</button>
-                <button class="btn-outline btn-on-dark d-block">A light outline button</button>
+                <button class="btn dark d-block">A light button</button>
+                <button class="btn outline dark d-block">A light outline button</button>
 
-                <a href="#" class="btn btn-on-dark d-block">A light button link</a>
-                <a href="#" class="btn-outline btn-on-dark d-block">A light outline button link</a>
+                <a href="#" class="btn dark d-block">A light button link</a>
+                <a href="#" class="btn outline dark d-block">A light outline button link</a>
 
             </div>
 

@@ -1,9 +1,28 @@
-.absolute-center {
+.absolute {
     position: absolute;
+}
+
+.absolute.top {
+    top: 0;
+}
+.absolute.bottom {
+    bottom: 0;
+}
+.absolute.left {
+    left: 0;
+}
+.absolute.right {
+    right: 0;
+}
+.absolute.center {
     left: 50%;
     transform: translateX(-50%);
 }
 
 .position-relative {
     position: relative;
+}
+
+.z-1 {
+    z-index: 1;
 }

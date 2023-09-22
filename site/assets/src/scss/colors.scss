@@ -1,4 +1,4 @@
-$colors: ( 'white', 'brand', 'brand-light');
+$colors: ( 'white', 'gray-700', 'brand', 'brand-light', 'black');
 
 @each $color in $colors {
     .#{$color} {
@@ -6,7 +6,7 @@ $colors: ( 'white', 'brand', 'brand-light');
     }
 }
 
-$bg-colors: ('white', 'brand', 'brand-light');
+$bg-colors: ( 'gray-500', 'gray-300', 'gray-100', 'white', 'brand', 'brand-light');
 
 @each $color in $bg-colors {
     .bg-#{$color} {

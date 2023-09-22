@@ -3,13 +3,13 @@
     <div class="container stack-2">
 
         <div class="cluster | justify-content-between">
-            <div class="cluster s4" role="list">
+            <div class="cluster gapx-4 gapy-2" role="list">
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>">About</a>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_resources_url() ) ?>">Resources</a>
                 <a role="listitem" class="link-light" href="/how-to-follow-jesus">How to follow Jesus</a>
             </div>
 
-            <div class="cluster s4 justify-flex-end" role="list">
+            <div class="cluster gapx-4 gapy-2 justify-flex-end" role="list">
                 <a role="listitem" class="link-light" href="/book">Zume Guidebook</a>
                 <a role="listitem" class="link-light" href="/mobile-app">Zume Mobile App</a>
                 <a role="listitem" class="link-light" href="/donate">Donate</a>

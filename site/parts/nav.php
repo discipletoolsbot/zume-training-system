@@ -1,8 +1,8 @@
     <header>
         <div class="cluster justify-content-between">
-            <a class="btn-outline btn-on-dark" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a>
+            <a class="btn outline dark nav__button" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a>
 
-            <div class="absolute-center left-0 right-0">
+            <div class="absolute center">
                 <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/ZumeTraining-Small.png' ) ?>" alt="Zume Logo" />
                 </a>
@@ -13,12 +13,12 @@
 
                     <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?>
 
-                        <a role="listitem" href="<?php echo esc_url( '/contacts' ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'DTools', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( '/contacts' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'DTools', 'zume' ) ?></a>
 
                     <?php } ?>
-                    <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
-                    <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
-                    <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn btn-on-dark"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+                    <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                    <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
+                    <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
                     <a role="listitem" href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon link-light"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a>
 
                 </div>

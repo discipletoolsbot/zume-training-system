@@ -14,6 +14,9 @@
 @import 'composition/stack';
 @import 'composition/box';
 @import 'composition/cluster';
+@import 'composition/switcher';
+@import 'composition/reel';
+@import 'composition/grid';
 
 @import 'utilities/buttons';
 @import 'utilities/spacing';
@@ -24,6 +27,7 @@
 @import 'utilities/text';
 
 @import 'blocks/login';
+@import 'blocks/stories';
 
 html {
     font-size: 18px;
@@ -56,7 +60,7 @@ a {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 80%;
+  width: 90%;
   max-width: $max-width;
 }
 
@@ -98,10 +102,9 @@ header {
   padding: 0;
 }
 
-.nav__link--button {
-  @include button;
-
-  padding: 1em 1em;
+.nav__button {
+  padding-inline: 1em;
+  font-weight: 400;
 }
 
 .nav__item {
@@ -198,6 +201,13 @@ header {
   opacity: 0.2;
   background-position: center left;
 }
+.bg-world {
+  background-image: url('/wp-content/plugins/zume-training-system/site/assets/images/world-map.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+}
+
 .flip {
   transform: scaleX(-1);
 }
@@ -212,6 +222,38 @@ header {
 
 .banner.warning {
   background-color: color('warning-main');
+}
+
+.video-frame {
+  border: 2px solid color('white');
+  border-radius: var(--border-radius);
+}
+.video-play {
+  &:hover, &:focus {
+    transition: all 100ms linear;
+    transform: scale(1.1);
+  }
+}
+
+.real-people {
+  filter: opacity(0.7);
+}
+
+.stats-grid {
+  max-width: 52rem;
+}
+
+.sticker {
+  border-radius: 50%;
+  color: color('white');
+  background-color: color('brand-light');
+  aspect-ratio: 1;
+  text-align: center;
+  line-height: 1;
+
+  &[data-free] {
+    transform: translate( 110%, -25% );
+  }
 }
 
 @media (min-width: $break-lg) {

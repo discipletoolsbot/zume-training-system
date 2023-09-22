@@ -25,6 +25,7 @@
     --t3: calc(var(--t2) * var(--text-ratio));
     --t4: calc(var(--t3) * var(--text-ratio));
     --t5: calc(var(--t4) * var(--text-ratio));
+    --t6: calc(var(--t5) * var(--text-ratio));
 
     --border-thin: 1px;
     --border-radius: 10px;
@@ -54,5 +55,7 @@
 
     // fonts
     --font-family: 'Poppins', sans-serif;
+    --font-cursive: 'Indie Flower', cursive;
+;
 }
 

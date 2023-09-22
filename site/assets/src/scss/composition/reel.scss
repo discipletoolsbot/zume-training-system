@@ -1,0 +1,41 @@
+.reel {
+  --scroll-track-color: #{color('gray-500')};
+  --scroll-thumb-color: #{color('brand')};
+  display: flex;
+  block-size: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
+}
+
+.reel::-webkit-scrollbar {
+  block-size: 1rem;
+}
+
+.reel::-webkit-scrollbar-track {
+  background-color: var(--scroll-track-color);
+}
+
+.reel::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-track-color);
+  background-image: linear-gradient(var(--scroll-track-color) 0, var(--scroll-track-color) 0.25rem, var(--scroll-thumb-color) 0.25rem, var(--scroll-thumb-color) 0.75rem, var(--scroll-track-color) 0.75rem);
+}
+
+.reel > * {
+  flex: 0 0 auto;
+}
+
+.reel > img {
+  block-size: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+
+.reel > * + * {
+  margin-inline-start: 1rem;
+}
+
+.reel.overflowing {
+  padding-block-end: 1rem;
+  padding-inline-end: 1rem;
+}
