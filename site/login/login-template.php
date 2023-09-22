@@ -391,7 +391,7 @@ switch ( $request_action ) {
 
                                 <span class="line-text f--1"><span><?php echo esc_html__( 'Or', 'zume' ) ?></span></span>
 
-                                <button class="btn outline-dark register-email-toggle"><?php echo esc_html__( 'Sign in with Email', 'zume' ) ?></button>
+                                <button class="btn outline-dark register-email-toggle"><?php echo esc_html__( 'Register with Email', 'zume' ) ?></button>
 
                             </div>
 

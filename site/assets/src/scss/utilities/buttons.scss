@@ -25,7 +25,7 @@ a {
     --btn-border-color: #{color('brand')};
     --btn-hover-color: #{color('white')};
     --btn-hover-bg-color: #{color('brand-light')};
-    --btn-hover-border-color: #{color('brand')};
+    --btn-hover-border-color: #{color('brand-light')};
 
     color: var(--btn-color);
     background-color: var(--btn-bg-color);

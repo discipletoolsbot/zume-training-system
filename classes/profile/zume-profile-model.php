@@ -21,6 +21,7 @@ class Zume_Profile_Model {
         $name = isset( $fields['name'] ) ? $fields['name'] : '';
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';
         $location_grid_meta = isset( $fields['location_grid_meta'] ) ? $fields['location_grid_meta'] : [];
+        $ui_language = isset( $fields['ui_language'] ) ? $fields['ui_language'] : '';
 
         $user_updates = [];
         $updates = [];
@@ -30,6 +31,7 @@ class Zume_Profile_Model {
             $user_updates['ID'] = $user_id;
             $user_updates['display_name'] = $name;
         }
+
         if ( !empty( $phone ) ) {
             $updates['user_phone'] = $phone;
         }
@@ -42,7 +44,11 @@ class Zume_Profile_Model {
             ];
         }
 
-        $contact_id = zume_get_user_contact_id($user_id);
+        if ( !empty( $ui_language ) ) {
+            $updates['user_ui_language'] = $ui_language;
+        }
+
+        $contact_id = zume_get_user_contact_id( $user_id );
 
         if ( !empty( $user_updates ) ) {
             $result = wp_update_user( $user_updates );

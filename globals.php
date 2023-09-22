@@ -26,6 +26,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
         $phone = $contact_meta['user_phone'] ?? '';
         $timezone = $contact_meta['user_timezone'] ?? '';
         $user_friend_key = $contact_meta['user_friend_key'] ?? '';
+        $user_ui_language = $contact_meta['user_ui_language'] ?? '';
 
         $language = zume_get_user_language( $user_id );
         $location = zume_get_user_location( $user_id );
@@ -63,6 +64,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'timezone' => $timezone,
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
+                'ui_language' => $user_ui_language,
             ];
             return $zume_user_profile;
         } else {
@@ -79,6 +81,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'timezone' => $timezone,
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
+                'ui_language' => $user_ui_language,
             ];
         }
     }
@@ -223,11 +226,11 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
     }
 }
 if ( ! function_exists( 'zume_get_user_timezone' ) ) {
-    function zume_get_user_timezone( $user_id = null, $location = null  ) {
+    function zume_get_user_timezone( $user_id = null, $location = null ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        $contact_id = zume_get_user_contact_id($user_id);
+        $contact_id = zume_get_user_contact_id( $user_id );
         $timezone = get_user_meta( $contact_id, 'user_timezone', true );
 
         if ( empty( $timezone ) ) {
@@ -244,7 +247,7 @@ if ( ! function_exists( 'zume_get_user_timezone' ) ) {
             'offset_hours' => 0,
             'offset_minutes' => 0,
             'offset_seconds' => 0,
-            'current_time' => date('Y-m-d H:i:s'),
+            'current_time' => date( 'Y-m-d H:i:s' ),
         ];
 
         return $timezone_details;
@@ -429,17 +432,17 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         $plans = [];
         if ( ! empty( $connected_plans ) ) {
             $participants = [];
-            foreach( $connected_plans as $connection ){
+            foreach ( $connected_plans as $connection ){
                 if ( ! isset( $plans[$connection['post_id']] ) ) {
                     $plans[$connection['post_id']] = [];
-                    $plans[$connection['post_id']]['title'] =  $connection['title'];
+                    $plans[$connection['post_id']]['title'] = $connection['title'];
                     $plans[$connection['post_id']]['participants'] = [];
                     $participants[] = $connection['post_id'];
                 }
-                if ( ((string) (int) $connection['meta_value'] === $connection['meta_value'])
-                    && ($connection['meta_value'] <= PHP_INT_MAX)
-                    && ($connection['meta_value'] >= ~PHP_INT_MAX)
-                && $connection['meta_key'] !== 'last_modified') {
+                if ( ( (string) (int) $connection['meta_value'] === $connection['meta_value'] )
+                    && ( $connection['meta_value'] <= PHP_INT_MAX )
+                    && ( $connection['meta_value'] >= ~PHP_INT_MAX )
+                && $connection['meta_key'] !== 'last_modified' ) {
                     $plans[$connection['post_id']][$connection['meta_key']] = [
                         'timestamp' => $connection['meta_value'],
                         'date' => date( 'Y-m-d', $connection['meta_value'] ),
@@ -449,7 +452,6 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                 } else {
                     $plans[$connection['post_id']][$connection['meta_key']] = $connection['meta_value'];
                 }
-
             }
             $participants_string = implode( ',', $participants );
             $participants_result = $wpdb->get_results(
@@ -458,9 +460,9 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
             		LEFT JOIN wp_posts p ON p.ID=p2.p2p_from
 					LEFT JOIN wp_postmeta pm ON p2.p2p_from=pm.post_id AND pm.meta_key = 'corresponds_to_user'
                     WHERE p2.p2p_type = 'zume_plans_to_contacts'
-                    AND p2.p2p_to IN ( $participants_string ) ",ARRAY_A );
+                    AND p2.p2p_to IN ( $participants_string ) ", ARRAY_A );
 
-            foreach( $participants_result as $participant ){
+            foreach ( $participants_result as $participant ) {
                 $plans[$participant['plan_id']]['participants'][] = [
                     'contact_id' => $participant['contact_id'],
                     'user_id' => $participant['user_id'],
