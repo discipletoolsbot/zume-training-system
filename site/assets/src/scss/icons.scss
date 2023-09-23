@@ -1,9 +1,21 @@
 .svg-icon {
-    stroke: $white;
-    fill: $white;
+    stroke: color('white');
+    fill: color('white');
 
     &:hover, &:focus {
-        stroke: $brand-lighter;
-        fill: $brand-lighter;
+        stroke: color('brand-lighter');
+        fill: color('brand-lighter');
+    }
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+
+    &:hover, &:focus {
+        svg {
+            stroke: color('brand-lighter');
+            fill: color('brand-lighter');
+        }
     }
 }

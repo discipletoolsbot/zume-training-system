@@ -1,0 +1,57 @@
+#login {
+    position: relative;
+    z-index: 5;
+
+    .firebaseui-container {
+        max-width: unset;
+    }
+
+    .firebaseui-card-content {
+        padding: 0;
+    }
+
+    .firebaseui-idp-list, .firebaseui-tenant-list {
+        margin: 0;
+    }
+
+    .firebaseui-idp-list> * + *, .firebaseui-tenant-list> * + * {
+        margin-block-start: spacing(-1);
+    }
+
+    .firebaseui-idp-list>.firebaseui-list-item, .firebaseui-tenant-list>.firebaseui-list-item {
+        margin-bottom: 0;
+    }
+
+    .firebaseui-idp-button, .firebaseui-tenant-button {
+        max-width: 100%;
+
+        padding-block: 2px;
+        border-radius: 50px;
+        font-family: var(--font-family);
+    }
+
+    .firebaseui-idp-google {
+        background-color: color('black') !important;
+        color: color('white') !important;
+
+        &:hover {
+            background-color: color('gray-800') !important;
+        }
+    }
+
+    .firebaseui-idp-facebook {
+        &:hover {
+            background-color: color('brand-dark') !important;
+        }
+    }
+
+    .firebaseui-idp-text {
+        font-size: font-size(0);
+        color: color('white');
+    }
+
+    .firebaseui-idp-icon {
+        height: 25px;
+        width: 25px;
+    }
+}

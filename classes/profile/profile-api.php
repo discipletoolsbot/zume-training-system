@@ -29,7 +29,7 @@ class Zume_Profile_API
                 'callback' => [ $this, 'update_profile' ],
                 'permission_callback' => function () {
                     return is_user_logged_in();
-                }
+                },
             ]
         );
     }
@@ -54,4 +54,3 @@ class Zume_Profile_API
     }
 }
 Zume_Profile_API::instance();
-

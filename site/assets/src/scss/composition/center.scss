@@ -1,0 +1,7 @@
+.center {
+  display: flex;
+}
+
+.center > * {
+  margin-inline: auto;
+}

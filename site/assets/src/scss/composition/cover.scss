@@ -1,0 +1,43 @@
+.cover-page {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100vh;
+  padding: 0;
+}
+
+.cover-page > * {
+  margin-block: 1rem;
+}
+
+.cover-page > :first-child:not(div) {
+  margin-block-start: 0;
+}
+
+.cover-page > :last-child:not(div) {
+  margin-block-end: 0;
+}
+
+.cover-page > div {
+  margin-block: auto;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100%;
+  padding: 0;
+}
+
+.cover > :first-child:not(div) {
+  margin-block-start: 0;
+}
+
+.cover > :last-child:not(div) {
+  margin-block-end: 0;
+}
+
+.cover > div {
+  margin-block: auto;
+  padding-block: 1rem;
+}
+

@@ -1,0 +1,34 @@
+.story-reel {
+    left: 40%;
+    margin-bottom: spacing(0);
+    padding-bottom: spacing(0);
+}
+
+.story-card {
+    --card-logo-color: #{color('brand')};
+    --card-text-color: #{color('black')};
+    --card-bg-color: #{color('white')};
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    background-color: var(--card-bg-color);
+
+    width: 25em;
+    padding: spacing(2) spacing(1);
+    gap: spacing(1);
+}
+
+.story-card__logo {
+    width: 20%;
+    color: var(--card-logo-color);
+}
+.story-card__text {
+    width: 80%;
+    color: var(--card-text-color);
+}
+
+.story-card.invert {
+    --card-logo-color: #{color('white')};
+    --card-text-color: #{color('white')};
+    --card-bg-color: #{color('brand-light')};
+}

@@ -29,4 +29,8 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
             exit;
         }
     }
+
+    public function enqueue_zume_training_scripts() {
+        zume_training_load_scripts( '' );
+    }
 }

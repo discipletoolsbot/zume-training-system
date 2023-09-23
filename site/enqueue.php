@@ -8,9 +8,13 @@ function zume_training_magic_url_base_allowed_js( $allowed_js = [] ) {
     $allowed_js[] = 'jquery-migrate';
     $allowed_js[] = 'lodash';
     $allowed_js[] = 'lodash-core';
+    $allowed_js[] = 'moment';
+    $allowed_js[] = 'datepicker';
+    $allowed_js[] = 'shared-functions';
     $allowed_js[] = 'foundation_js';
     $allowed_js[] = 'foundation_reveal_js';
     $allowed_js[] = 'vite_bundle_js';
+
     return array_unique( $allowed_js );
 }
 function zume_training_magic_url_base_allowed_css( $allowed_css = [] ) {
@@ -57,9 +61,7 @@ function zume_training_load_scripts( $hook ) {
             'in-footer' => true,
         ]
     );
-
 }
-add_action( 'wp_enqueue_scripts', 'zume_training_load_scripts' );
 
 /**
  * Kucrut\Vite\enqueue_asset helpfully enqueues styles assosciated with a js module

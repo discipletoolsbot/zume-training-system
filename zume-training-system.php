@@ -224,6 +224,15 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
+            if ( !isset( $fields['user_ui_language'] ) ){
+                $fields['user_ui_language'] = [
+                    'name' => __( 'User UI Language', 'zume' ),
+                    'type' => 'text',
+                    'tile' => 'profile_details',
+                    'only_for_types' => [ 'user' ],
+                ];
+            }
+
         }
         return $fields;
     }
@@ -262,6 +271,11 @@ class Zume_Training {
             $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         }
 
+        $user_ui_language = '';
+        if ( isset( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) ) {
+            $user_ui_language = sanitize_text_field( wp_unslash( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) );
+        }
+
         $fields = [
             'user_email' => $user->user_email,
             'user_phone' => '',
@@ -278,6 +292,7 @@ class Zume_Training {
                     ],
                 ],
             ],
+            'user_ui_language' => $user_ui_language,
         ];
         $contact_location = DT_Posts::update_post( 'contacts', $new_user_contact['ID'], $fields, true, false );
 

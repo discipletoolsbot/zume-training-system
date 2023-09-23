@@ -39,9 +39,9 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', [ $this, 'true' ], 100, 1 );
-            add_filter( 'dt_allow_non_login_access', [ $this, 'true' ], 100, 1 );
-            add_filter( 'dt_override_header_meta', [ $this, 'true' ], 100, 1 );
+            add_filter( 'dt_blank_access', '__return_true', 100, 1 );
+            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
+            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
 
             // header content
             add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
@@ -56,12 +56,9 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
+            $this->enqueue_zume_training_scripts();
 
         }
-    }
-
-    public function true() {
-        return true;
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
@@ -118,23 +115,23 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                 <a class="d-block" href="#">Normal links in a page</a>
 
                 <button class="btn d-block">A normal button</button>
-                <button class="btn-light d-block">A light button</button>
-                <button class="btn-outline d-block">An outline button</button>
+                <button class="btn light d-block">A light button</button>
+                <button class="btn outline d-block">An outline button</button>
 
                 <a class="btn d-block">A normal button link</a>
-                <a class="btn-light d-block">A normal light button link</a>
-                <a class="btn-outline d-block">An outline button link</a>
+                <a class="btn light d-block">A normal light button link</a>
+                <a class="btn outline d-block">An outline button link</a>
             </div>
 
             <div class="flow | bg-brand">
 
                 <a href="#" class="link-light">A light link on a dark background</a>
 
-                <button class="btn btn-on-dark d-block">A light button</button>
-                <button class="btn-outline btn-on-dark d-block">A light outline button</button>
+                <button class="btn dark d-block">A light button</button>
+                <button class="btn outline dark d-block">A light outline button</button>
 
-                <a href="#" class="btn btn-on-dark d-block">A light button link</a>
-                <a href="#" class="btn-outline btn-on-dark d-block">A light outline button link</a>
+                <a href="#" class="btn dark d-block">A light button link</a>
+                <a href="#" class="btn outline dark d-block">A light outline button link</a>
 
             </div>
 

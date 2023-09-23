@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 100 100"
+   xml:space="preserve"
+   sodipodi:docname="Play-Button.svg"
+   width="100"
+   height="100"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1877" /><sodipodi:namedview
+   id="namedview1875"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="2.46356"
+   inkscape:cx="4.2621247"
+   inkscape:cy="30.443748"
+   inkscape:window-width="1916"
+   inkscape:window-height="1029"
+   inkscape:window-x="1920"
+   inkscape:window-y="49"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<style
+   type="text/css"
+   id="style1856">
+	.st0{fill:none;}
+	.st1{fill:#27AAE1;}
+</style>
+<g
+   id="g1872"
+   transform="matrix(1.6339869,0,0,1.6339869,-358.49672,-358.49672)">
+	<polygon
+   class="st0"
+   points="244.8,262.2 244.8,251.5 244.8,237.9 255.7,244.2 244.8,237.9 243.9,237.4 243.9,262.7 "
+   id="polygon1858" />
+	<polygon
+   class="st0"
+   points="244.8,262.2 265.9,250.1 "
+   id="polygon1860" />
+	<path
+   class="st0"
+   d="m 250,221.3 c -15.9,0 -28.7,12.9 -28.7,28.7 0,15.8 12.9,28.7 28.7,28.7 15.9,0 28.7,-12.9 28.7,-28.7 0,-15.9 -12.8,-28.7 -28.7,-28.7 z m 7,36.9 -12.2,7.3 v -1.2 l 23.5,-13.6 1,0.6 z m 11.4,-7.4 -23.5,13.6 -2.9,1.6 v -31.9 l 27.6,15.9 z"
+   id="path1862" />
+	<polygon
+   class="st1"
+   points="244.8,262.2 265.9,250.1 255.7,244.2 244.8,237.9 244.8,251.5 "
+   id="polygon1864" />
+	<polygon
+   class="st1"
+   points="244.8,265.5 257,258.2 269.3,251.4 268.4,250.8 244.8,264.4 "
+   id="polygon1866" />
+	<path
+   d="m 250,219.4 c -16.9,0 -30.6,13.7 -30.6,30.6 0,16.9 13.7,30.6 30.6,30.6 16.9,0 30.6,-13.7 30.6,-30.6 0,-16.9 -13.7,-30.6 -30.6,-30.6 z m 0,59.3 c -15.9,0 -28.7,-12.9 -28.7,-28.7 0,-15.8 12.9,-28.7 28.7,-28.7 15.9,0 28.7,12.9 28.7,28.7 0,15.9 -12.8,28.7 -28.7,28.7 z"
+   id="path1868" />
+	<path
+   d="m 242,266 2.8,-1.6 23.5,-13.6 1.3,-0.7 -27.6,-16 z m 1.9,-28.6 0.9,0.5 10.8,6.3 10.2,5.9 v 0 l -21,12.1 -0.9,0.5 z"
+   id="path1870" />
+</g>
+</svg>

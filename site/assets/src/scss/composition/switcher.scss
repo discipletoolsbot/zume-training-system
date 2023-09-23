@@ -1,0 +1,19 @@
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: spacing(1);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc(( var(--switcher-max-width, 50.2rem) - 100%) * 999);
+}
+
+.switcher > :nth-last-child(n+ 5),
+.switcher > :nth-last-child(n+ 5) ~ * {
+  flex-basis: 100%;
+}
+
+.switcher-width-40 {
+    --switcher-max-width: 40rem;
+}

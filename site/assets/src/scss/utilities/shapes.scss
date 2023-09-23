@@ -1,0 +1,47 @@
+.rounded {
+    border-radius: var(--border-radius);
+}
+
+.rounded-multi > :first-child {
+    border-start-start-radius: var(--border-radius);
+    border-end-start-radius: var(--border-radius);
+}
+
+.rounded-multi > :last-child {
+    border-start-end-radius: var(--border-radius);
+    border-end-end-radius: var(--border-radius);
+}
+
+
+.rounded-start {
+    border-start-start-radius: var(--border-radius);
+    border-end-start-radius: var(--border-radius);
+}
+
+.rounded-end {
+    border-start-end-radius: var(--border-radius);
+    border-end-end-radius: var(--border-radius);
+}
+
+.clip-rounded-end {
+    clip-path: url(#clip-rounded-end);
+}
+
+.clip-rounded-bottom-right {
+    clip-path: url(#clip-rounded-bottom-right);
+}
+
+.clip-rounded-top-left {
+    clip-path: url(#clip-rounded-top-left);
+}
+
+.shadow {
+    box-shadow: color('shadow') 0px 5px 10px 0px ;
+}
+
+@media (max-width: $break-lg) {
+    .rounded-start-on-medium {
+        border-start-start-radius: var(--border-radius);
+        border-end-start-radius: var(--border-radius);
+    }
+}

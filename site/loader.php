@@ -4,7 +4,7 @@
  */
 
 // Load dependencies first
-
+require_once( __DIR__ . '/enqueue.php' );
 
 $skip_folders = [
     'parts',

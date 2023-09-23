@@ -41,12 +41,9 @@ class Zume_Training_About extends Zume_Magic_Page
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', function (){ return true;
-            }, 100, 1 );
-            add_filter( 'dt_allow_non_login_access', function (){ return true;
-            }, 100, 1 );
-            add_filter( 'dt_override_header_meta', function (){ return true;
-            }, 100, 1 );
+            add_filter( 'dt_blank_access', '__return_true', 100, 1 );
+            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
+            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
 
             // header content
             add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
@@ -62,6 +59,7 @@ class Zume_Training_About extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
+            $this->enqueue_zume_training_scripts();
         }
     }
 
@@ -92,7 +90,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
             <h1 class="text-center"><?php echo esc_html__( 'About', 'zume' ) ?></h1>
 
-            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php  global $zume_user_profile; print_r( $zume_user_profile ); ?></pre></p>
+            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php global $zume_user_profile;?><?php print_r( $zume_user_profile ); ?></pre></p>
 
         </div>
         <?php

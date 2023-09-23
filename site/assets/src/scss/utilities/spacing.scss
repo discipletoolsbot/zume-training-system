@@ -1,15 +1,68 @@
-$gap-sizes: (3, 4);
+$gap-sizes: (1, 2, 3, 4);
 
 @each $i in $gap-sizes {
     .gap-#{$i} {
-        gap: var(--s#{$i});
+        gap: spacing($i);
+        grid-gap: spacing($i);
+    }
+    .gapx-#{$i} {
+        column-gap: spacing($i);
+        grid-column-gap: spacing($i);
+    }
+    .gapy-#{$i} {
+        row-gap: spacing($i);
+        grid-row-gap: spacing($i);
     }
 }
 
-$flow-sizes: (2);
+.gap0 {
+    gap: 0;
+}
 
-@each $i in $flow-sizes {
-    .flow-#{$i} {
-        --flow-size: var(--s#{$i});
+$padding-sizes: (-1, 0, 1, 2, 3);
+
+@each $i in $padding-sizes {
+    .p-#{$i} {
+        padding: spacing($i);
     }
+    .px-#{$i} {
+        padding-inline: spacing($i);
+    }
+    .py-#{$i} {
+        padding-block: spacing($i);
+    }
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+$margin-sizes: (1, 2, 3);
+
+@each $i in $margin-sizes {
+    .m-#{$i} {
+        margin: spacing($i);
+    }
+    .mx-#{$i} {
+        margin-inline: spacing($i);
+    }
+    .my-#{$i} {
+        margin-block: spacing($i);
+    }
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+
+$spacing-sizes: (-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5);
+
+@each $i in $spacing-sizes {
+    .s#{$i} {
+        --space: #{spacing($i)};
+    }
+}
+
+.s-zero {
+    --space: 0;
 }

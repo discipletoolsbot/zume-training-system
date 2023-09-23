@@ -1,0 +1,14 @@
+$widths: (100, 80, 75, 70, 60, 50, 40, 30, 25, 20);
+
+@each $width in $widths {
+    .w-#{$width} {
+        width: $width * 1%;
+    }
+    .h-#{$width} {
+        height: $width * 1%;
+    }
+}
+
+.fit-content {
+    width: fit-content;
+}
