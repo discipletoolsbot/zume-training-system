@@ -26,8 +26,8 @@ class Zume_Profile_Model {
         $user_updates = [];
         $updates = [];
 
+        $user_id = get_current_user_id();
         if ( !empty( $name ) ) {
-            $user_id = get_current_user_id();
             $user_updates['ID'] = $user_id;
             $user_updates['display_name'] = $name;
         }
@@ -68,7 +68,7 @@ class Zume_Profile_Model {
         }
 
         if ( self::is_profile_set( $user_id ) ) {
-            zume_log_insert('system', 'set_profile');
+            zume_log_insert( 'system', 'set_profile' );
         }
 
         return [
@@ -78,7 +78,7 @@ class Zume_Profile_Model {
         ];
     }
 
-    public static function is_profile_set( $user_id ) : bool {
+    public static function is_profile_set( $user_id ): bool {
         $profile = zume_get_user_profile( $user_id );
         if ( empty( $profile['name'] ) ) {
             return false;
@@ -94,5 +94,4 @@ class Zume_Profile_Model {
         }
         return true;
     }
-
 }

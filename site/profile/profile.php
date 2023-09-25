@@ -96,6 +96,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'profile' => $zume_user_profile,
                 'mapbox_selected_id' => 'current',
+                'language_cookie' => ZUME_LANGUAGE_COOKIE,
             ]) ?>][0]
 
         </script>
@@ -131,6 +132,24 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 </div>
                 <div id="address_results">
 
+                </div>
+
+                <?php global $zume_languages_by_code; ?>
+
+                <div>
+                    <label for="ui-language"><?php echo esc_html__( 'Language', 'zume' ) ?></label>
+                    <select name="ui-language" id="ui-language">
+
+                    <?php foreach ( $zume_languages_by_code as $item ) : ?>
+
+                        <option value="<?php echo esc_attr( $item['code'] ) ?>" <?php echo $zume_user_profile['ui_language'] === $item['code'] ? 'selected' : '' ?>>
+                            <?php echo esc_html( $item['nativeName'] ) ?> -
+                            <?php echo esc_html( $item['enDisplayName'] ) ?>
+                        </option>
+
+                    <?php endforeach; ?>
+
+                    </select>
                 </div>
 
                 <button class="btn" id="submit-profile"><?php echo esc_html__( 'Save', 'zume' ) ?></button>

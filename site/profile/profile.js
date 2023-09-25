@@ -3,7 +3,10 @@ const nameInput = document.getElementById('full_name')
 const phoneInput = document.getElementById('phone')
 const emailInput = document.getElementById('email')
 const cityInput = document.getElementById('city')
+const uiLanguageInput = document.getElementById('ui-language')
 const addressResultsContainer = document.getElementById('address_results')
+
+const old_ui_language = uiLanguageInput.value
 
 function debounce(callback, timeout = 500) {
     let timer
@@ -22,6 +25,7 @@ function submitProfileForm(e) {
 
     const name = nameInput.value
     const phone = phoneInput.value
+    const ui_language = uiLanguageInput.value
 
     /* get the location_grid from mapbox selection */
     const id = zumeProfile.mapbox_selected_id
@@ -46,6 +50,7 @@ function submitProfileForm(e) {
         name,
         phone,
         location_grid_meta,
+        ui_language,
     }
 
     /* start loading spinner */
@@ -70,6 +75,12 @@ function submitProfileForm(e) {
     .finally(() => {
         submitButton.removeAttribute('disabled')
         loadingSpinner.classList.remove('active')
+
+        /* if the language was changed, trigger a refresh */
+        if ( ui_language !== old_ui_language ) {
+            window.SHAREDFUNCTIONS.setCookie( zumeProfile.language_cookie, ui_language, 365 )
+            window.location.reload()
+        }
     })
 }
 
