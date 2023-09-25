@@ -53,6 +53,7 @@ a {
         --btn-border-color: #{color('brand-light')};
         --btn-hover-color: #{color('white')};
         --btn-hover-bg-color: #{color('brand')};
+        --btn-hover-border-color: #{color('brand')};
     }
 
     &.outline {

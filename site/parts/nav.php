@@ -1,6 +1,6 @@
     <header>
         <div class="cluster justify-content-between">
-            <a class="btn outline dark nav__button" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></a>
+            <button class="btn outline dark nav__button" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></button>
 
             <div class="absolute center">
                 <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">
@@ -69,7 +69,23 @@
 
                     window.SHAREDFUNCTIONS.setCookie( '<?php echo esc_js( ZUME_LANGUAGE_COOKIE ) ?>', lang, 365 )
 
-                    window.location = url
+                    const nonce = "<?php echo esc_js( wp_create_nonce( 'wp_rest' ) ) ?>"
+                    const rest_endpoint = "<?php echo esc_js( esc_url_raw( rest_url() ) . 'zume_system/v1' ) ?>"
+                    const is_logged_in = "<?php echo esc_js( is_user_logged_in() ) ?>"
+
+                    if ( is_logged_in ) {
+                        fetch( rest_endpoint + '/profile', {
+                            method: 'POST',
+                            body: JSON.stringify( { ui_language: lang } ),
+                            headers: {
+                                'X-WP-Nonce': nonce
+                            }
+                        }).then(() => {
+                            window.location = url
+                        })
+                    } else {
+                        window.location = url
+                    }
                 })
             })
         </script>
