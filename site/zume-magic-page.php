@@ -10,7 +10,7 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
     }
 
     public function consistent_head() {
-        require_once trailingslashit( __DIR__ ) . '../parts/head.php';
+        require_once trailingslashit( __DIR__ ) . 'parts/head.php';
     }
 
     /**
@@ -18,7 +18,7 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
      *
      */
     public function action_wp_footer(): void {
-        require trailingslashit( plugin_dir_path( __DIR__ ) ) . 'parts/footer.php';
+        require trailingslashit( __DIR__ ) . 'parts/footer.php';
     }
 
     public function require_authentication() {

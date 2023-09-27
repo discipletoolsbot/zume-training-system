@@ -27,7 +27,8 @@ add_filter( 'dt_login_allowed_js', 'zume_training_magic_url_base_allowed_js' );
 
 function zume_training_load_scripts( $hook ) {
 
-    wp_enqueue_script( 'foundation_js', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js', array( 'jquery' ), '6.7.5' );
+    wp_register_script( 'foundation_js', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js', array( 'jquery' ), '6.7.5' );
+    wp_enqueue_script( 'foundation_js' );
 
     wp_register_style( 'foundation_css', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css', false, '6.7.5' );
     wp_enqueue_style( 'foundation_css' );
@@ -44,7 +45,7 @@ function zume_training_load_scripts( $hook ) {
 
     // @todo this is not a stable implementation. We need something better. @chris
     Vite\enqueue_asset(
-        __DIR__ . '/assets/dist',
+        trailingslashit( __DIR__ ) . 'assets/dist',
         'site/assets/src/main.js',
         [
             'handle' => 'vite_bundle_css',
@@ -54,7 +55,7 @@ function zume_training_load_scripts( $hook ) {
     );
 
     Vite\enqueue_asset(
-        __DIR__ . '/assets/dist',
+        trailingslashit( __DIR__ ) . 'assets/dist',
         'site/assets/src/main.js',
         [
             'handle' => 'vite_bundle_js',

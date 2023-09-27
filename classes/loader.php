@@ -5,7 +5,7 @@
 
 // Load dependencies first
 require_once ( __DIR__ . '/traits/loader.php' );
-require_once ( __DIR__ . '/enqueue.php' );
+
 
 
 

@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-return; // @todo remove this line to enable this app
+
 
 if ( strpos( dt_get_url_path(), 'zume_app' ) !== false || dt_is_rest() ){
     Zume_App_Local_Vision::instance();
@@ -28,33 +28,33 @@ class Zume_App_Local_Vision extends DT_Magic_Url_Base
     } // End instance()
 
     public function __construct() {
-        $this->meta_key = $this->root . '_' . $this->type . '_magic_key';
-        parent::__construct();
-
-        add_action( 'rest_api_init', [ $this, 'add_endpoints' ] );
-
-
-        // fail if not valid url
-        $url = dt_get_url_path();
-        if ( strpos( $url, $this->root . '/' . $this->type ) === false ) {
-            return;
-        }
-
-        if ( !$this->check_parts_match( false ) ){
-            return;
-        }
-
-        if ( isset( $_GET['grid_id'] ) && ! empty( $_GET['grid_id'] ) ) {
-            $this->grid_id = $_GET['grid_id'];
-        } else {
-            return;
-        }
-
-
-        add_action( 'dt_blank_body', [ $this, 'body' ] );
-        add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
-        add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
-        add_action( 'wp_enqueue_scripts', [ $this, '_wp_enqueue_scripts' ], 99 );
+//        $this->meta_key = $this->root . '_' . $this->type . '_magic_key';
+//        parent::__construct();
+//
+//        add_action( 'rest_api_init', [ $this, 'add_endpoints' ] );
+//
+//
+//        // fail if not valid url
+//        $url = dt_get_url_path();
+//        if ( strpos( $url, $this->root . '/' . $this->type ) === false ) {
+//            return;
+//        }
+//
+//        if ( !$this->check_parts_match( false ) ){
+//            return;
+//        }
+//
+//        if ( isset( $_GET['grid_id'] ) && ! empty( $_GET['grid_id'] ) ) {
+//            $this->grid_id = $_GET['grid_id'];
+//        } else {
+//            return;
+//        }
+//
+//
+//        add_action( 'dt_blank_body', [ $this, 'body' ] );
+//        add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
+//        add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
+//        add_action( 'wp_enqueue_scripts', [ $this, '_wp_enqueue_scripts' ], 99 );
 
     }
 
