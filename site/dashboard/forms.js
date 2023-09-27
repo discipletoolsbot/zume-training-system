@@ -417,6 +417,8 @@ window.cta_post_training_plan = () => {
           "post_id": zumeForms.user_profile.contact_id,
           "meta_key": "tasks",
           "note": 'Question: ' + jQuery(this).prev().text() + ' Answer: ' + jQuery(this).val(),
+          "question": jQuery(this).prev().text(),
+          "answer": jQuery(this).val(),
           "date": date,
           "category": "custom"
         }, 'zume_system/v1' ).done( function( data ) {

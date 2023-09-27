@@ -70,6 +70,8 @@ class Zume_System_Plan_API
             'meta_key' => 'tasks',
             'meta_value' => maybe_serialize([
                 'note' => $params['note'],
+                'question' => $params['question'],
+                'answer' => $params['answer'],
             ]),
             'date' => $params['date'],
             'category' => 'custom',
