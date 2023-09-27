@@ -30,6 +30,10 @@ function zume_training() {
     $wp_theme = wp_get_theme();
     $version = $wp_theme->version;
 
+    if ( is_network_admin() ){
+        return false;
+    }
+
     if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
         require_once __DIR__ . '/vendor/autoload.php';
     }
@@ -49,6 +53,7 @@ function zume_training() {
     if ( !$is_theme_dt ){
         return false;
     }
+
 
     if ( !defined( 'DT_FUNCTIONS_READY' ) ){
         require_once get_template_directory() . '/dt-core/global-functions.php';
@@ -80,7 +85,6 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
-        require_once( 'site/login/loader.php' );
         $this->i18n();
     }
     public static function activation() {
@@ -130,7 +134,9 @@ class Zume_Training {
         if ( isset( $_ENV['FIREBASE_APP_ID'] ) ) {
             $fields['firebase_app_id'] = sanitize_text_field( $_ENV['FIREBASE_APP_ID'] );
         }
-        DT_Login_Fields::update( $fields );
+        if ( class_exists('DT_Login_Fields' ) ) { // if outside DT context, don't run this
+            DT_Login_Fields::update( $fields );
+        }
     }
 
     /**

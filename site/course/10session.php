@@ -32,9 +32,6 @@ class Zume_Course_10Session extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-
-        dt_write_log(zume_get_url_pieces());
-
         if ( ( $this->root . '/' . $this->type ) === ( ( $url_parts[0] ?? '' ) . '/' . ( $url_parts[1] ?? '' ) ) ) {
 
             $this->require_authentication();

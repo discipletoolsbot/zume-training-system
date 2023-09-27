@@ -1,6 +1,8 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
+return; // @todo remove this line to enable this app
+
 if ( strpos( dt_get_url_path(), 'zume_app' ) !== false || dt_is_rest() ){
     Zume_App_Local_Vision::instance();
 }

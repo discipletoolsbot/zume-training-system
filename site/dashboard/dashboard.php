@@ -93,7 +93,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function body(){
         require __DIR__ . '/../parts/nav.php';
         ?>
-        <div class="container">
+
+        <div class="container" style="margin-top:50px;">
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
