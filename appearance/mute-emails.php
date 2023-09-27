@@ -17,7 +17,7 @@ function zume_system_patches_disable_wp_emails( $_, $args ){
     }
 
     /* If the email is marked as from the zume system, let it through */
-    $zume_header_marker = 'X-Zume-Email-System';
+    $zume_header_marker = ZUME_EMAIL_HEADER;
     $headers = $args['headers'];
     if ( is_string( $headers ) && str_contains( $headers, $zume_header_marker ) ) {
         return null;

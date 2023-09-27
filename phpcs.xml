@@ -67,6 +67,7 @@
     <exclude name="PSR2.ControlStructures.SwitchDeclaration.BreakIndent" />
     <exclude name="PSR2.ControlStructures.SwitchDeclaration.SpaceBeforeColonCASE" />
     <exclude name="PSR2.Files.ClosingTag.NotAllowed" />
+    <exclude name="PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon"/>
     <exclude name="Squiz.Commenting.BlockComment.CloserSameLine" />
     <exclude name="Squiz.Commenting.BlockComment.NoCapital" />
     <exclude name="Squiz.Commenting.BlockComment.NoEmptyLineBefore" />

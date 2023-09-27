@@ -124,7 +124,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 </div>
                 <div class="">
                     <label for="email"><?php echo esc_html__( 'Email', 'zume' ) ?></label>
-                    <input disabled aria-disabled="true" type="email" id="email" name="email" value="<?php echo esc_attr( $zume_user_profile['email'] ) ?>">
+                    <input type="email" id="email" name="email" value="<?php echo esc_attr( $zume_user_profile['email'] ) ?>">
                 </div>
                 <div class="">
                     <label for="city"><?php echo esc_html__( 'City', 'zume' ) ?></label>

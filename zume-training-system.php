@@ -56,7 +56,7 @@ function zume_training() {
 
     return Zume_Training::instance();
 }
-add_action( 'after_setup_theme', 'zume_training', 20 );
+add_action( 'after_setup_theme', 'zume_training', 15 );
 
 
 class Zume_Training {
@@ -91,6 +91,9 @@ class Zume_Training {
         if ( !defined( 'ZUME_LANGUAGE_COOKIE' ) ) {
             define( 'ZUME_LANGUAGE_COOKIE', 'zume_language' );
         }
+        if ( !defined( 'ZUME_EMAIL_HEADER' ) ) {
+            define( 'ZUME_EMAIL_HEADER', 'X-Zume-Email-System' );
+        }
     }
     public function setup_hooks() {
         add_filter( 'dt_custom_fields_settings', [ $this, 'dt_contact_fields' ], 1, 2 );
@@ -106,6 +109,7 @@ class Zume_Training {
         add_filter( 'password_hint', function ( string $hint ): string {
             return '';
         } );
+        add_filter( 'email_change_email', [ $this, 'filter_email_change_email' ], 10, 1 );
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
@@ -127,6 +131,18 @@ class Zume_Training {
             $fields['firebase_app_id'] = sanitize_text_field( $_ENV['FIREBASE_APP_ID'] );
         }
         DT_Login_Fields::update( $fields );
+    }
+
+    /**
+     * Filters the contents of the email sent when the user's email is changed.
+     *
+     * @param array $email_change_email { Used to build wp_mail(). @type string $to, @type string $subject, @type string $message, @type string $headers
+     * @return array
+     */
+    public function filter_email_change_email( array $email_change_email ) : array {
+        $email_change_email['headers'] .= ' ' . ZUME_EMAIL_HEADER;
+
+        return $email_change_email;
     }
 
     /**
@@ -172,7 +188,7 @@ class Zume_Training {
 
     public function filter_retrieve_password_headers( string $headers ): string {
 
-        $headers .= ' X-Zume-Email-System';
+        $headers .= ' ' . ZUME_EMAIL_HEADER;
 
         return $headers;
     }

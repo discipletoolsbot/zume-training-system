@@ -517,7 +517,7 @@ switch ( $request_action ) {
                             </div>
                         </div>
                         <section class="text-center">
-                            <?php dt_login_form_links() ?>
+                            <?php zume_login_form_links() ?>
                         </section>
                     </div>
                 </div>
@@ -647,7 +647,7 @@ switch ( $request_action ) {
                             ?>
 
                             <section class="">
-                                <?php dt_login_form_links() ?>
+                                <?php zume_login_form_links() ?>
                             </section>
                         </div>
                     </div>
@@ -659,7 +659,7 @@ switch ( $request_action ) {
 
 } // end action switch
 
-function dt_login_form_links() {
+function zume_login_form_links() {
     $dt_login = DT_Login_Fields::all_values();
     ?>
     <div class="stack--1">

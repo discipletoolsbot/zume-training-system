@@ -20,6 +20,7 @@ class Zume_Profile_Model {
 
         $name = isset( $fields['name'] ) ? $fields['name'] : '';
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';
+        $email = isset( $fields['email'] ) ? $fields['email'] : '';
         $location_grid_meta = isset( $fields['location_grid_meta'] ) ? $fields['location_grid_meta'] : [];
         $ui_language = isset( $fields['ui_language'] ) ? $fields['ui_language'] : '';
 
@@ -30,6 +31,10 @@ class Zume_Profile_Model {
         if ( !empty( $name ) ) {
             $user_updates['ID'] = $user_id;
             $user_updates['display_name'] = $name;
+        }
+
+        if ( !empty( $email ) ) {
+            $user_updates['user_email'] = $email;
         }
 
         if ( !empty( $phone ) ) {

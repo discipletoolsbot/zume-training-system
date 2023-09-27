@@ -24,6 +24,7 @@ function submitProfileForm(e) {
     e.preventDefault()
 
     const name = nameInput.value
+    const email = emailInput.value
     const phone = phoneInput.value
     const ui_language = uiLanguageInput.value
 
@@ -49,6 +50,7 @@ function submitProfileForm(e) {
     const data = {
         name,
         phone,
+        email,
         location_grid_meta,
         ui_language,
     }
