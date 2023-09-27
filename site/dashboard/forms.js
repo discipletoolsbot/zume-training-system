@@ -98,32 +98,45 @@ window.cta_join_a_training = () => {
 
   makeRequest('POST', 'public_plans', {}, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
-    let html = `<div class="grid-x grid-padding-x">`
+
     for ( let i = 0; i < data.posts.length; i++ ) {
       let plan = data.posts[i]
-      html += `<div class="cell small-12 medium-6 large-4">
+      if (typeof plan.time_of_day_note === 'undefined') {
+        plan.time_of_day_note = ''
+      } else {
+        plan.time_of_day_note += '<br>'
+      }
+      if (typeof plan.location_note === 'undefined') {
+        plan.location_note = ''
+      } else {
+        plan.location_note += '<br>'
+      }
+      if (typeof plan.timezone_note === 'undefined') {
+        plan.timezone_note = ''
+      } else {
+        plan.timezone_note  += '<br>'
+      }
+
+      html = `
         <div class="card">
           <div class="card-divider">
             ${plan.post_title}
           </div>
           <div class="card-section">
                 <button type="button" class="button join_training_button" value="${plan.join_key}">Join</button> <span class="loading-spinner"></span><br>
-               ${plan.time_of_day_note}<br>
-                ${plan.location_note}<br>
-                ${plan.timezone_note}<br>`
+               ${plan.time_of_day_note}
+                ${plan.location_note}
+                ${plan.timezone_note}`
 
-          jQuery.each( plan, function( key, value ) {
-            if ( key.startsWith('set_') ) {
-              html += `<div>${value.formatted}</div>`
-            }
-          })
+                jQuery.each( plan, function( key, value ) {
+                  if ( key.startsWith('set_') ) {
+                    html += `${value.formatted}<br>`
+                  }
+                })
 
-      html += `</div>
-          </div>
-        </div>`
+      html += `</div></div>`
+      content.append(html)
     }
-    html += `</div>`
-    content.html(html)
 
     jQuery('.join_training_button').click(function() {
       console.log('join_training_button')
@@ -287,7 +300,7 @@ window.cta_work_the_plan = () => {
         if (key.startsWith('set_')) {
           html += `
             <div class="cell" style="margin-bottom:5px;">
-              ${key} | ${value.formatted} <button class="button working ${key}" value="${key}">Mark Complete</button>
+              ${key} | ${value.formatted} <button class="button working ${key}" value="${key}">Checking/Mark Complete</button>
             </div>`
         }
       })
@@ -386,6 +399,7 @@ window.cta_post_training_plan = () => {
         </div>
         <div class="cell">
           <button class="button plan-save-button">Save</button>
+          <button class="button plan-close-button" style="display:none;" onclick="location.reload()">Close</button>
         </div>
     </div>
     `)
@@ -407,6 +421,8 @@ window.cta_post_training_plan = () => {
           "category": "custom"
         }, 'zume_system/v1' ).done( function( data ) {
           console.log(data)
+          jQuery('.plan-save-button').text('Saved').prop('disabled', true)
+          jQuery('.plan-close-button').show()
         })
       }
     })

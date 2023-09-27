@@ -28,16 +28,28 @@ function submitProfileForm(e) {
     const phone = phoneInput.value
     const ui_language = uiLanguageInput.value
 
+    const data = {
+      name,
+      phone,
+      email,
+      ui_language,
+    }
+
     /* get the location_grid from mapbox selection */
     const id = zumeProfile.mapbox_selected_id
-
-    let location_grid_meta = {}
-
-    if ( id === 'current' ) {
-        location_grid_meta = zumeProfile.profile.location
-    } else if ( id && id !== '' && window.mapbox_results ) {
+    if ( id === 'current' && zumeProfile.profile.location.source === 'ip' ) {
+      data.location_grid_meta = {
+        lng: zumeProfile.profile.location.lng,
+        lat: zumeProfile.profile.location.lat,
+        level: zumeProfile.profile.location.level,
+        label: zumeProfile.profile.location.label,
+        source: 'user',
+        grid_id: false
+      }
+    }
+    else if ( id && id !== '' && window.mapbox_results ) {
         const location_meta = window.mapbox_results.features.find((feature) => feature.id === id)
-        location_grid_meta = {
+        data.location_grid_meta = {
             lng: location_meta.center[0],
             lat: location_meta.center[1],
             level: location_meta.place_type[0],
@@ -47,13 +59,6 @@ function submitProfileForm(e) {
         }
     }
 
-    const data = {
-        name,
-        phone,
-        email,
-        location_grid_meta,
-        ui_language,
-    }
 
     /* start loading spinner */
     const submitButton = document.querySelector('#submit-profile')

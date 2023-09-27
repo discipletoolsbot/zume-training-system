@@ -36,7 +36,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 FROM wp_3_postmeta
                 WHERE meta_key = 'trainee_user_id'
                   AND meta_value = %s",
-        $user_id ), );
+        $user_id ) );
         $coaches = $wpdb->get_results( $wpdb->prepare(
             "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
                 FROM wp_3_p2p p2
@@ -309,7 +309,6 @@ if ( ! function_exists( 'zume_get_user_host' ) ) {
                 's' => $s / count( $training_items ) * 100,
                 't' => $t / count( $training_items ) * 100,
             ],
-//            'training_items' => $training_items,
         ];
     }
 }
@@ -439,10 +438,10 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                     $plans[$connection['post_id']]['participants'] = [];
                     $participants[] = $connection['post_id'];
                 }
-                if ( ( (string) (int) $connection['meta_value'] === $connection['meta_value'] )
-                    && ( $connection['meta_value'] <= PHP_INT_MAX )
-                    && ( $connection['meta_value'] >= ~PHP_INT_MAX )
-                && $connection['meta_key'] !== 'last_modified' ) {
+                if ( ((string) (int) $connection['meta_value'] === $connection['meta_value'])
+                    && ($connection['meta_value'] <= PHP_INT_MAX)
+                    && ($connection['meta_value'] >= ~PHP_INT_MAX)
+                    && $connection['meta_key'] !== 'last_modified') {
                     $plans[$connection['post_id']][$connection['meta_key']] = [
                         'timestamp' => $connection['meta_value'],
                         'date' => date( 'Y-m-d', $connection['meta_value'] ),
@@ -471,7 +470,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
             }
         }
 
-            // @todo embelish the array with more info and convert the dates from unix.
+        // @todo embelish the array with more info and convert the dates from unix.
 
 
         return $plans;
