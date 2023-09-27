@@ -310,13 +310,8 @@ header {
     }
 }
 .loading-spinner.active {
-    border-radius: 50%;
     width: 24px;
     height: 24px;
-    border: .25rem solid #919191;
-    border-top-color: black;
-    animation: spin 1s infinite linear;
     display: inline-block;
     vertical-align: middle;
-    box-sizing: border-box;
 }
