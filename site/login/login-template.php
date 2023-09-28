@@ -141,6 +141,9 @@ switch ( $request_action ) {
                         <?php endif; ?>
 
                     </div>
+                    <div>
+                        <?php zume_login_form_links() ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -668,13 +671,23 @@ function zume_login_form_links() {
             <?php
             // register link
             $dt_url = dt_get_url_path();
-            if ( DT_Login_Fields::can_users_register() && strpos( $dt_url, '?action=register' ) === false ) {
+            $query_params = ( new DT_URL( $dt_url ) )->query_params;
+            $action = $query_params->get( 'action' );
+            if ( DT_Login_Fields::can_users_register() && !$query_params->has( 'action' ) ) {
                 ?>
 
                 <p class="f--1">
                     <span><?php echo esc_html__( 'Don\'t have an account?', 'zume' ) ?></span>
                     <a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>"><?php esc_html_e( 'Register', 'zume' ) ?></a>
                 </p>
+
+                <?php
+
+            }
+
+            if ( empty( $action ) ) {
+                ?>
+
                 <p class="f--1">
                     <a href="<?php echo esc_url( dt_login_url( 'lostpassword' ) ); ?>"><?php esc_html_e( 'Lost your password?', 'zume' ); ?></a>
                 </p>
@@ -683,7 +696,7 @@ function zume_login_form_links() {
             }
 
             // registration link
-            if ( strpos( $dt_url, '?action=register' ) !== false ) {
+            if ( in_array( $action, [ 'register', 'lostpassword' ] ) ) {
                 ?>
 
                 <p class="f--1">
@@ -694,8 +707,9 @@ function zume_login_form_links() {
                 <?php
             }
 
-            if ( strpos( $dt_url, '?action=lostpassword' ) === false ) {
+            if ( $action === 'lostpassword' ) {
                 ?>
+
                 <?php
             }
             ?>

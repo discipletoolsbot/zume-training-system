@@ -94,11 +94,19 @@ class Zume_Training_Login extends Zume_Magic_Page {
 
     public function body() {
 
+        $url = new DT_URL( dt_get_url_path() );
+        $hide_nav = $url->query_params->has( 'hide-nav' );
+        $show_nav = !$hide_nav;
+
         ?>
 
         <div class="cover-page | position-relative bg-brand-gradient">
 
-            <?php require_once __DIR__ . '/../parts/nav.php' ?>
+            <?php if ( $show_nav === true ) : ?>
+
+                <?php require_once __DIR__ . '/../parts/nav.php' ?>
+
+            <?php endif; ?>
 
             <div class="multiply-cover show-for-medium"></div>
             <div class="multiply-cover flip show-for-medium"></div>
