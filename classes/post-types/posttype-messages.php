@@ -7,6 +7,9 @@ class Zume_Training_Messages_Post_Type {
     public $post_type;
     public $singular;
     public $plural;
+    public $root;
+    public $type;
+    public $meta_key;
     public $args;
     public $taxonomies;
     private static $_instance = null;
