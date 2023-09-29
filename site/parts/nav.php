@@ -67,7 +67,7 @@
                     let url = jQuery(this).data('url')
                     jQuery('.language-selector:not(#row-'+lang+')').fadeTo("fast", 0.33)
 
-                    window.SHAREDFUNCTIONS.setCookie( '<?php echo esc_js( ZUME_LANGUAGE_COOKIE ) ?>', lang, 365 )
+                    window.SHAREDFUNCTIONS.setCookie( '<?php echo esc_js( ZUME_LANGUAGE_COOKIE ) ?>', lang, '/', 365 )
 
                     const nonce = "<?php echo esc_js( wp_create_nonce( 'wp_rest' ) ) ?>"
                     const rest_endpoint = "<?php echo esc_js( esc_url_raw( rest_url() ) . 'zume_system/v1' ) ?>"

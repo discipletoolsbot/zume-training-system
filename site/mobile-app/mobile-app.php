@@ -56,7 +56,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
-            $this->enqueue_zume_training_scripts();
+            add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
 
         }
     }

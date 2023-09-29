@@ -55,7 +55,7 @@ class Zume_Training_Home extends Zume_Magic_Page
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
-            $this->enqueue_zume_training_scripts();
+            add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
 
         }
     }
@@ -83,16 +83,17 @@ class Zume_Training_Home extends Zume_Magic_Page
 
     public function body(){
         global $zume_user_profile;
-        require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="stack | s-zero justify-content-center absolute top left m-3 p--1 shadow | sticker">
             <h2 class="f-3 lh1">45+</h2>
             <h3 class="uppercase f--2 lh1"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
         </div>
-        <div class="cover-page container">
+        <div class="cover-page">
 
-            <div class="switcher | align-items-center gap0">
+            <?php require __DIR__ . '/../parts/nav.php'; ?>
+
+            <div class="switcher container | align-items-center gap0">
                 <div class="show-for-large"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing"></div>
                 <div class="stack | s-zero grow-1p5 text-center">
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/ZumeLOGO.svg' ) ?>" alt="Zume Logo">
