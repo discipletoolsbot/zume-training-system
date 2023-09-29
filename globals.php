@@ -368,7 +368,6 @@ if ( ! function_exists( 'zume_get_user_mawl' ) ) {
                 'w' => $w / count( $training_items ) * 100,
                 'l' => $l / count( $training_items ) * 100,
             ],
-//            'training_items' => $training_items,
         ];
     }
 }

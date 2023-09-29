@@ -24,6 +24,15 @@ jQuery(document).ready(function() {
   jQuery('.cta_post_training_plan').click(function() {
     window.cta_post_training_plan()
   })
+  jQuery('.cta_practitioner_reports').click(function() {
+    window.cta_practitioner_reports()
+  })
+  jQuery('.cta_host_progress').click(function() {
+    window.cta_host_progress()
+  })
+  jQuery('.cta_commitments').click(function() {
+    window.cta_commitments()
+  })
 })
 
 window.cta_set_profile = () => {
@@ -430,6 +439,98 @@ window.cta_post_training_plan = () => {
     })
   })
 
+
+  jQuery('#modal-large').foundation('open')
+}
+window.cta_practitioner_reports = () => {
+  console.log('cta_practitioner_reports')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Practitioner Reports')
+
+  content.append(`
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><hr></div>
+        <div class="cell">
+
+        </div>
+        <div class="cell">
+          <button class="button report-save-button">Save</button>
+          <button class="button report-close-button" style="display:none;" onclick="location.reload()">Close</button>
+        </div>
+    </div>
+    `)
+
+  jQuery('.report-save-button').click(function() {
+    jQuery('.report-save-button').text('Saved').prop('disabled', true)
+    jQuery('.report-close-button').show()
+
+  })
+
+  jQuery('#modal-large').foundation('open')
+}
+window.cta_host_progress = () => {
+  console.log('cta_host_progress')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('HOST Progress')
+
+  content.append(`
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><hr></div>
+        <div class="cell">
+
+        </div>
+        <div class="cell">
+          <button class="button host-save-button">Save</button>
+          <button class="button host-close-button" style="display:none;" onclick="location.reload()">Close</button>
+        </div>
+    </div>
+    `)
+
+  jQuery('.host-save-button').click(function() {
+    jQuery('.host-save-button').text('Saved').prop('disabled', true)
+    jQuery('.host-close-button').show()
+
+
+  })
+
+  jQuery('#modal-large').foundation('open')
+}
+window.cta_commitments = () => {
+  console.log('cta_commitments')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Commitments')
+
+  content.append(`
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><hr></div>
+        <div class="cell">
+
+        </div>
+        <div class="cell">
+          <button class="button commitments-save-button">Save</button>
+          <button class="button commitments-close-button" style="display:none;" onclick="location.reload()">Close</button>
+        </div>
+    </div>
+    `)
+
+  jQuery('.commitments-save-button').click(function() {
+    jQuery('.commitments-save-button').text('Saved').prop('disabled', true)
+    jQuery('.commitments-close-button').show()
+
+
+  })
 
   jQuery('#modal-large').foundation('open')
 }

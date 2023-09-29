@@ -111,11 +111,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             ?>
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
-                    <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
-                    <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p>
-                    <p><strong><?php echo esc_html__( 'User Plans', 'zume' ) ?></strong><pre><?php print_r( $plans ); ?></pre></p>
-                    <p><strong><?php echo esc_html__( 'User HOST', 'zume' ) ?></strong><pre><?php print_r( $host ); ?></pre></p>
-                    <p><strong><?php echo esc_html__( 'User Commitments', 'zume' ) ?></strong><pre><?php print_r( $commitments ); ?></pre></p>
+                    <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User Plans', 'zume' ) ?></strong><pre><?php print_r( $plans ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User HOST', 'zume' ) ?></strong><pre><?php print_r( $host ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User Commitments', 'zume' ) ?></strong><pre><?php print_r( $commitments ); ?></pre></p><hr />
                 </div>
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
@@ -125,6 +125,10 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
                     <p><button class="button cta_work_the_plan" />CTA: Work the Plan</button></p>
                     <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
+                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
+                    <hr />
+                    <p><button class="button cta_host_progress" />My HOST Progress</button></p>
+                    <p><button class="button cta_commitments" />My Commitments</button></p>
                 </div>
             </div>
             <!--END DEV SECTION -->
