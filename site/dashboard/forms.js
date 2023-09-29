@@ -264,8 +264,14 @@ window.cta_invite_friends = () => {
   content.append(`
     <div class="grid-x grid-padding-y">
       <div class="cell">
-      <input type="text" placeholder="Add friend code of friend in the system" />
-      <button class="button connect_friend" value="code">Connect by Code</button>
+        <input type="text" placeholder="Add friend code of friend in the system" />
+        <button class="button connect_friend" value="code">Connect Friend by Code</button>
+        <button class="button close_friend" style="display:none;" onclick="location.reload()">Close</button>
+      </div>
+       <div class="cell">
+          <input type="text" placeholder="Add friend code of friend in the system" />
+          <button class="button connect_plan" value="code">Connect Friend to Plan by Code</button>
+          <button class="button close_plan" style="display:none;" onclick="location.reload()">Connect by Code</button>
       </div>
     </div>
   `)
@@ -273,9 +279,22 @@ window.cta_invite_friends = () => {
   jQuery('.connect_friend').click(function() {
     console.log('connect_friend')
     let value = jQuery(this).prev().val()
+    jQuery('.connect_friend').prop('disabled', true)
 
-    makeRequest('POST', 'friends/connect', { "value": value }, 'zume_system/v1' ).done( function( data ) {
+    makeRequest('POST', 'connect/friends', { "value": value }, 'zume_system/v1' ).done( function( data ) {
       console.log(data)
+      jQuery('.close_friend').show()
+    })
+  })
+
+  jQuery('.connect_plan').click(function() {
+    console.log('connect_plan')
+    let value = jQuery(this).prev().val()
+    jQuery('.connect_plan').prop('disabled', true)
+
+    makeRequest('POST', 'connect/plan', { "value": value }, 'zume_system/v1' ).done( function( data ) {
+      console.log(data)
+      jQuery('.close_plan').show()
     })
   })
 

@@ -1,8 +1,8 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-function zume_log_insert( string $type, string $subtype, array $data = []) {
-    return Zume_System_Log_API::log( $type, $subtype, $data );
+function zume_log_insert( string $type, string $subtype, array $data = [], $log_once = false) {
+    return Zume_System_Log_API::log( $type, $subtype, $data, $log_once );
 }
 
 class Zume_System_Log_API
@@ -62,7 +62,7 @@ class Zume_System_Log_API
      * @param array $data
      * @return array|WP_Error
      */
-    public static function log( string $type, string $subtype, array $data = [] ) {
+    public static function log( string $type, string $subtype, array $data = [], bool $log_once = false ) {
         $added_log = [];
         if ( ! isset( $type, $subtype ) ) {
             return new WP_Error(__METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
@@ -98,6 +98,15 @@ class Zume_System_Log_API
         }
 
         $log = zume_get_user_log( $report['user_id'] );
+
+        if ( $log_once ) {
+            $already_logged = array_filter( $log, function( $item ) use ( $type, $subtype, $report ) {
+                return $item['type'] === $type && $item['subtype'] === $subtype;
+            });
+            if ( ! empty( $already_logged ) ) {
+                return [ 'already_logged' => true ];
+            }
+        }
 
         self::_prepare_post_id( $report, $data );
         self::_prepare_time_end( $report, $data );

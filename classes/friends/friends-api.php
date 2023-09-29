@@ -26,14 +26,21 @@ class Zume_Friends_Endpoints
 
     public function add_api_routes() {
         register_rest_route(
-            $this->namespace, '/friends/connect', [
+            $this->namespace, '/connect/friend', [
                 'methods' => 'POST',
-                'callback' => [ $this, 'connect_friends' ],
+                'callback' => [ $this, 'connect_to_friend' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
+        register_rest_route(
+            $this->namespace, '/connect/plan', [
+                'methods' => 'POST',
+                'callback' => [ $this, 'connect_to_plan' ],
                 'permission_callback' => '__return_true',
             ]
         );
     }
-    public function connect_friends( WP_REST_Request $request ){
+    public function connect_to_friend( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
         if ( ! isset(  $params['value'] ) ) {
@@ -42,7 +49,7 @@ class Zume_Friends_Endpoints
 
         // does key exist
         // if so, then connect current user with friend
-        if ( $contact_id = $this->test_key( $params['value'] ) ) {
+        if ( $contact_id = $this->test_friend_key( $params['value'] ) ) {
             $current_user_id = get_current_user_id();
             $current_contact_id = zume_get_user_contact_id( $current_user_id );
 
@@ -55,12 +62,19 @@ class Zume_Friends_Endpoints
                     ]
                 ]
             ];
-          return DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
+             $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
+             if ( ! is_wp_error( $result ) && is_array( $result ) ) {
 
+                 zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
+                 return $result;
+             } else {
+                 return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
+             }
+        } else {
+            return new WP_Error( __METHOD__, 'Key not found', [ 'status' => 400 ] );
         }
-        return false;
     }
-    public function test_key( $key ) : bool|int {
+    public function test_friend_key( $key ) : bool|int {
         global $wpdb;
         $sql = $wpdb->prepare( "SELECT post_id FROM wp_postmeta WHERE `meta_key` = 'user_friend_key' AND meta_value = %s", $key );
         $result = $wpdb->get_var( $sql );
@@ -69,5 +83,49 @@ class Zume_Friends_Endpoints
         }
         return false;
     }
+    public function connect_to_plan( WP_REST_Request $request ){
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        if ( ! isset(  $params['value'] ) ) {
+            return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
+        }
+
+        // does key exist
+        // if so, then connect current user with friend
+        if ( $contact_id = $this->test_join_key( $params['value'] ) ) {
+            $current_user_id = get_current_user_id();
+            $current_contact_id = zume_get_user_contact_id( $current_user_id );
+
+            $fields = [
+                'plans' => [
+                    'values' => [
+                        [
+                            'value' => $contact_id
+                        ]
+                    ]
+                ]
+            ];
+            $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
+            if ( ! is_wp_error( $result ) && is_array( $result ) ) {
+
+                zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
+                return $result;
+            } else {
+                return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
+            }
+        } else {
+            return new WP_Error( __METHOD__, 'Key not found', [ 'status' => 400 ] );
+        }
+    }
+    public function test_join_key( $key ) : bool|int {
+        global $wpdb;
+        $sql = $wpdb->prepare( "SELECT post_id FROM wp_postmeta WHERE `meta_key` = 'join_key' AND meta_value = %s", $key );
+        $result = $wpdb->get_var( $sql );
+        if ( $result && ! is_wp_error( $result ) ) {
+            return (int) $result;
+        }
+        return false;
+    }
+
 }
 Zume_Friends_Endpoints::instance();
