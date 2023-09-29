@@ -85,7 +85,7 @@ function submitProfileForm(e) {
 
         /* if the language was changed, trigger a refresh */
         if ( ui_language !== old_ui_language ) {
-            window.SHAREDFUNCTIONS.setCookie( zumeProfile.language_cookie, ui_language, 365 )
+            window.SHAREDFUNCTIONS.setCookie( zumeProfile.language_cookie, ui_language, '/', 365 )
             window.location.reload()
         }
     })
