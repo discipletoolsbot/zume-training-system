@@ -546,7 +546,6 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                             'set_a_10': date + (9 * 604800 ),
                         };
                         window.API.update_post('zume_plans', post_id, list )
-
                     });
                     jQuery('#install_20_sessions').click(function(){
                         console.log('install 20 sessions');

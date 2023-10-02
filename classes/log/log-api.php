@@ -584,6 +584,294 @@ class Zume_System_Log_API
 
         /**
          * business logic:
+         * - if a user checks in to a training session, then add all the training items covered in that session
+         */
+        if ( 'training' === $type && 'set_b_01' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '01_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '01_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '02_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '02_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '03_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '03_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+
+        }
+        else if ( 'training' === $type && 'set_b_02' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '04_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '04_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+
+        }
+        else if ( 'training' === $type && 'set_b_03' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '05_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '05_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+
+        }
+        else if ( 'training' === $type && 'set_b_04' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '06_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '06_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '08_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '08_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_05' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '07_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '07_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_06' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '09_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '09_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '13_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '13_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '10_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '10_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_07' === $subtype ) { // this session is basically practice for the previous session
+            if ( self::_needs_to_be_logged( $log, 'training', '10_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '10_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_08' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '11_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '11_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '12_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '12_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_09' === $subtype ) { // this session is basically practice for the previous session
+            if ( self::_needs_to_be_logged( $log, 'training', '10_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '10_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_10' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '14_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '14_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '15_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '15_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '16_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '16_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_11' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '17_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '17_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_12' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '18_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '18_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '19_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '19_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_13' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '20_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '20_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '21_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '21_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_14' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '21_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '21_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_15' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '22_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '22_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '23_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '23_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_16' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '24_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '24_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '25_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '25_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '26_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '26_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_17' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '27_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '27_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'system', 'training_completed' ) ) {
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'training_completed';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_18' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '28_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '28_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '29_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '29_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'system', 'training_completed' ) ) {
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'training_completed';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_19' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '30_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '30_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'system', 'training_completed' ) ) {
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'training_completed';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+        else if ( 'training' === $type && 'set_b_20' === $subtype ) {
+            if ( self::_needs_to_be_logged( $log, 'training', '31_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '31_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'training', '32_heard' ) ) {
+                $data_item = $data;
+                $data_item['subtype'] = '32_heard';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+            if ( self::_needs_to_be_logged( $log, 'system', 'training_completed' ) ) {
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'training_completed';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = dt_report_insert( $data_item, true, false );
+            }
+        }
+
+
+
+        /**
+         * business logic:
          * - if a user is logged in, and the system has not yet logged that the user has registered, then log it
          */
         if ( is_user_logged_in() && self::_needs_to_be_logged( $log, 'system', 'registered' ) ) {

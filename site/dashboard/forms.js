@@ -473,24 +473,35 @@ window.cta_practitioner_reports = () => {
   content.append(`
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
-        <div class="cell">
-
+        <div class="cell medium-3">
+           <button id="post_parent_record" class="button small" onclick="window.create_child()">Create Parent Church</button>
         </div>
-        <div class="cell">
-          <button class="button report-save-button">Save</button>
-          <button class="button report-close-button" style="display:none;" onclick="location.reload()">Close</button>
-        </div>
+        <div class="cell medium-4 level-1"></div>
+        <div class="cell medium-5 level-2"></div>
     </div>
     `)
 
-  jQuery('.report-save-button').click(function() {
-    jQuery('.report-save-button').text('Saved').prop('disabled', true)
-    jQuery('.report-close-button').show()
-
-  })
-
   jQuery('#modal-large').foundation('open')
 }
+window.create_child = ( post_id ) => {
+  console.log('create_child')
+  if ( post_id ) {
+    jQuery('.level-2').append(`${post_id} Child Church <br>`)
+  } else {
+
+    let data = {
+      "user_id": window.user_profile.profile.user_id,
+      "type": 'parent_record',
+      "location": window.user_profile.profile.location,
+    }
+
+    makeRequest('POST', 'make_post', data, window.site_info.rest_root ).done( function( data ) {
+      jQuery(`.level-1`).append(`${post_id} Parent Church <button class="button small" onclick="window.create_child( ${post_id} )">Add Child</button><br>`)
+    })
+  }
+}
+
+
 window.cta_host_progress = () => {
   console.log('cta_host_progress')
   let title = jQuery('#modal-large-title')
