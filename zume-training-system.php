@@ -115,6 +115,7 @@ class Zume_Training {
         } );
         add_filter( 'email_change_email', [ $this, 'filter_email_change_email' ], 10, 1 );
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
+        add_action( 'dt_post_updated', [ $this, 'update_coaching_contact' ], 10, 5 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
@@ -134,7 +135,7 @@ class Zume_Training {
         if ( isset( $_ENV['FIREBASE_APP_ID'] ) ) {
             $fields['firebase_app_id'] = sanitize_text_field( $_ENV['FIREBASE_APP_ID'] );
         }
-        if ( class_exists('DT_Login_Fields' ) ) { // if outside DT context, don't run this
+        if ( class_exists( 'DT_Login_Fields' ) ) { // if outside DT context, don't run this
             DT_Login_Fields::update( $fields );
         }
     }
@@ -421,6 +422,67 @@ class Zume_Training {
 
         $redirect_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . '/' . $path;
         return $redirect_url;
+    }
+    public function update_coaching_contact( string $post_type, int $post_id, array $initial_request_fields, array $post_fields_before_update, array $post_fields_after_update ) {
+        if ( $post_type !== 'contacts' ) {
+            return;
+        }
+
+        if ( !key_exists( 'corresponds_to_user', $post_fields_after_update ) ) {
+            return;
+        }
+
+        $user_id = $post_fields_after_update['corresponds_to_user'];
+
+        $profile = zume_get_user_profile( $user_id );
+
+        if ( !isset( $profile['coaching_contact_id'] ) || empty( $profile['coaching_contact_id'] ) ) {
+            return;
+        }
+
+        $coaching_contact_id = $profile['coaching_contact_id'];
+        $changes = [];
+
+        if ( $post_fields_after_update['user_ui_language'] !== $post_fields_before_update['user_ui_language'] ) {
+            $changes['language_preference'] = $post_fields_after_update['user_ui_language'];
+        }
+
+        $old_location_label = isset( $post_fields_before_update['location_grid'] )
+                        && !empty( $post_fields_before_update['location_grid'] )
+                        ? $post_fields_before_update['location_grid'][0]['label']
+                        : '';
+        $new_location_label = isset( $post_fields_after_update['location_grid'] )
+                        && !empty( $post_fields_after_update['location_grid'] )
+                        ? $post_fields_after_update['location_grid'][0]['label']
+                        : '';
+        if ( $old_location_label !== $new_location_label ) {
+            if ( $new_location_label !== '' ) {
+                $changes['location_grid_meta'] = [
+                    'values' => [
+                        [
+                            'lat' => $post_fields_after_update['location_grid_meta'][0]['lat'],
+                            'lng' => $post_fields_after_update['location_grid_meta'][0]['lng'],
+                            'level' => $post_fields_after_update['location_grid_meta'][0]['level'],
+                            'label' => $post_fields_after_update['location_grid_meta'][0]['label'],
+                            'grid_id' => $post_fields_after_update['location_grid_meta'][0]['grid_id'],
+                        ],
+                    ],
+                    'force_values' => true,
+                ];
+            } else {
+                $changes['location_grid_meta'] = [
+                    'values' => [],
+                    'force_values' => true,
+                ];
+            }
+        }
+
+        if ( empty( $changes ) ) {
+            return;
+        }
+
+        /* Update the coaching contact on the coaching subsite */
+        Zume_Get_A_Coach_Endpoints::update_coaching_contact( $coaching_contact_id, $changes );
     }
 
     public function i18n() {
