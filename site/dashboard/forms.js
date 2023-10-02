@@ -474,7 +474,8 @@ window.cta_practitioner_reports = () => {
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
         <div class="cell medium-3">
-           <button id="post_parent_record" class="button small" onclick="window.create_child()">Create Parent Church</button>
+           <button id="post_parent_record" class="button small" onclick="window.parent_church()">Create Parent Church</button>
+
         </div>
         <div class="cell medium-4 level-1"></div>
         <div class="cell medium-5 level-2"></div>
@@ -483,22 +484,70 @@ window.cta_practitioner_reports = () => {
 
   jQuery('#modal-large').foundation('open')
 }
-window.create_child = ( post_id ) => {
-  console.log('create_child')
-  if ( post_id ) {
-    jQuery('.level-2').append(`${post_id} Child Church <br>`)
-  } else {
+window.parent_church = () => {
+  console.log('parent_church')
 
-    let data = {
-      "user_id": window.user_profile.profile.user_id,
-      "type": 'parent_record',
-      "location": window.user_profile.profile.location,
+  let data = {
+    "title": zumeForms.user_profile.name + ' Parent Church',
+    "assigned_to": zumeForms.user_profile.user_id,
+    "group_status": "active",
+    "group_type": "church",
+    "start_date": "2019-01-01",
+    "church_start_date": "2019-01-01",
+    'member_count': 1,
+    "leader_count": 1,
+    "location_grid_meta": {
+      "values": [
+        {
+          "lat": zumeForms.user_profile.location.lat,
+          "lng": zumeForms.user_profile.location.lng,
+          "level": zumeForms.user_profile.location.level,
+          "label": zumeForms.user_profile.location.label,
+        }
+      ]
     }
-
-    makeRequest('POST', 'make_post', data, window.site_info.rest_root ).done( function( data ) {
-      jQuery(`.level-1`).append(`${post_id} Parent Church <button class="button small" onclick="window.create_child( ${post_id} )">Add Child</button><br>`)
-    })
   }
+
+  makeRequest('POST', 'groups', data, 'dt-posts/v2' ).done( function( data ) {
+    console.log(data)
+    jQuery('.level-1').append('<p>Parent Church: ' + data.ID + ' <button class="button small " onclick="window.child_church( '+ data.ID +' )">Add</button></p>')
+  })
+}
+window.child_church = ( parent_post_id ) => {
+  console.log('child_church')
+
+  let data = {
+    "title": zumeForms.user_profile.name + ' Child Church of ' + parent_post_id,
+    "assigned_to": zumeForms.user_profile.user_id,
+    "group_status": "active",
+    "group_type": "church",
+    "start_date": "2019-01-01",
+    "church_start_date": "2019-01-01",
+    'member_count': 1,
+    "leader_count": 1,
+    "parent_groups": {
+      "values": [
+        {
+          "value": parent_post_id
+        }
+      ]
+    },
+    "location_grid_meta": {
+      "values": [
+        {
+          "lat": zumeForms.user_profile.location.lat,
+          "lng": zumeForms.user_profile.location.lng,
+          "level": zumeForms.user_profile.location.level,
+          "label": zumeForms.user_profile.location.label,
+        }
+      ]
+    }
+  }
+
+  makeRequest('POST', 'groups', data, 'dt-posts/v2' ).done( function( data ) {
+    console.log(data)
+    jQuery('.level-2').append('<p>Child of ' + data.ID + '</p>')
+  })
 }
 
 
