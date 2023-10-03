@@ -869,6 +869,18 @@ class Zume_System_Log_API
         }
 
 
+        if ( 'coaching' === $type ) {
+            $mawl = zume_get_user_mawl( $data['user_id'] );
+            if ( $mawl['totals']['m'] >= 16 && $mawl['totals']['a'] >= 16 &&  $mawl['totals']['w'] >= 16 ) {
+                if ( self::_needs_to_be_logged( $log, 'system', 'mawl_completed' ) ) {
+                    $data_item = $data;
+                    $data_item['type'] = 'system';
+                    $data_item['subtype'] = 'mawl_completed';
+                    $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                    $added_log[] = dt_report_insert( $data_item, true, false );
+                }
+            }
+        }
 
         /**
          * business logic:

@@ -64,7 +64,6 @@ class Zume_Friends_Endpoints
             ];
              $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
              if ( ! is_wp_error( $result ) && is_array( $result ) ) {
-
                  zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
                  return $result;
              } else {
@@ -92,23 +91,23 @@ class Zume_Friends_Endpoints
 
         // does key exist
         // if so, then connect current user with friend
-        if ( $contact_id = $this->test_join_key( $params['value'] ) ) {
-            $current_user_id = get_current_user_id();
-            $current_contact_id = zume_get_user_contact_id( $current_user_id );
-
+        if ( $plan_post_id = $this->test_join_key( $params['value'] ) ) {
+            dt_write_log($plan_post_id);
+            $user_id = get_current_user_id();
+            $contact_id = zume_get_user_contact_id( $user_id );
             $fields = [
-                'plans' => [
+                'zume_plans' => [
                     'values' => [
                         [
-                            'value' => $contact_id
+                            'value' => $plan_post_id
                         ]
                     ]
                 ]
             ];
-            $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
+            $result = DT_Posts::update_post('contacts', $contact_id, $fields, true, false  );
+            dt_write_log($result);
             if ( ! is_wp_error( $result ) && is_array( $result ) ) {
-
-                zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
+                zume_log_insert( 'system', 'plan_created', [ 'user_id' => $user_id ], true );
                 return $result;
             } else {
                 return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );

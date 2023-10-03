@@ -352,7 +352,6 @@ window.cta_work_the_plan = () => {
         console.log(data)
       })
     })
-
   })
 
   jQuery('#modal-large').foundation('open')
@@ -458,7 +457,6 @@ window.cta_post_training_plan = () => {
     })
   })
 
-
   jQuery('#modal-large').foundation('open')
 }
 window.cta_practitioner_reports = () => {
@@ -475,7 +473,6 @@ window.cta_practitioner_reports = () => {
         <div class="cell"><hr></div>
         <div class="cell medium-3">
            <button id="post_parent_record" class="button small" onclick="window.parent_church()">Create Parent Church</button>
-
         </div>
         <div class="cell medium-4 level-1"></div>
         <div class="cell medium-5 level-2"></div>
@@ -576,8 +573,6 @@ window.cta_host_progress = () => {
   jQuery('.host-save-button').click(function() {
     jQuery('.host-save-button').text('Saved').prop('disabled', true)
     jQuery('.host-close-button').show()
-
-
   })
 
   jQuery('#modal-large').foundation('open')

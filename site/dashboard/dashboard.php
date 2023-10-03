@@ -108,6 +108,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             $stage = zume_get_user_stage();
             $host = zume_get_user_host();
             $commitments = zume_get_user_commitments();
+            $mawl = zume_get_user_mawl();
             ?>
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
@@ -116,6 +117,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><strong><?php echo esc_html__( 'User Plans', 'zume' ) ?></strong><pre><?php print_r( $plans ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User HOST', 'zume' ) ?></strong><pre><?php print_r( $host ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Commitments', 'zume' ) ?></strong><pre><?php print_r( $commitments ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User MAWL', 'zume' ) ?></strong><pre><?php print_r( $mawl ); ?></pre></p><hr />
                 </div>
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
