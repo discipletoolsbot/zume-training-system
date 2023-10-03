@@ -110,6 +110,8 @@ class Zume_Training_Home extends Zume_Magic_Page
         <div class="bg-gray-500" style="max-height: 100vh; overflow-y: scroll">
             <div class="container">
                 <h2>Development Area</h2>
+                <a href="/wizard/make-a-plan" class="btn">Wizard: Example Make a plan</a>
+                <a href="/wizard/connect-to-coach" class="btn">Wizard: Connect to a coach</a>
                 <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
             </div>
         </div>
