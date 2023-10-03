@@ -84,6 +84,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'template_dir' => get_template_directory_uri(),
                 'translations' => [],
                 'user_profile' => zume_get_user_profile(),
+                'training_items' => zume_training_items(),
             )
         );
     }

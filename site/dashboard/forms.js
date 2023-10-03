@@ -550,33 +550,55 @@ window.child_church = ( parent_post_id ) => {
 
 window.cta_host_progress = () => {
   console.log('cta_host_progress')
-  let title = jQuery('#modal-large-title')
-  let content = jQuery('#modal-large-content')
+  let title = jQuery('#modal-small-title')
+  let content = jQuery('#modal-small-content')
   title.empty()
   content.empty()
 
   title.append('HOST Progress')
 
+  let host_buttons_html = ''
+  jQuery.each( zumeForms.training_items, function(i,v){
+    host_buttons_html += `<a class="button button-grey expanded clear ${v.type}" style="white-space:nowrap; overflow: hidden;margin-bottom:0;">(${v.key}) ${v.title}</a><div class="button-group expanded no-gaps" >`
+    jQuery.each(v.host, function(ih, vh ) {
+      host_buttons_html += `<button class="button zume ${vh.type}_${vh.subtype} secondary" data-type="${vh.type}" data-subtype="${vh.subtype}">${vh.label}</button>`
+    })
+    host_buttons_html += `</div>`
+  })
+
   content.append(`
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
         <div class="cell">
-
-        </div>
-        <div class="cell">
-          <button class="button host-save-button">Save</button>
-          <button class="button host-close-button" style="display:none;" onclick="location.reload()">Close</button>
+            ${host_buttons_html}
         </div>
     </div>
     `)
 
-  jQuery('.host-save-button').click(function() {
-    jQuery('.host-save-button').text('Saved').prop('disabled', true)
-    jQuery('.host-close-button').show()
+  jQuery('.button.zume').click(function( event ) {
+    jQuery(this).removeClass('secondary')
+    console.log(jQuery(this).data('subtype'))
+
+    let type = event.target.dataset.type
+    let subtype = event.target.dataset.subtype
+
+    makeRequest('POST', 'log', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
+      console.log(data)
+      window.load_host_status()
+    })
   })
 
-  jQuery('#modal-large').foundation('open')
+  window.load_host_status()
+
+  jQuery('#modal-small').foundation('open')
 }
+window.load_host_status = () => {
+  makeRequest('GET', 'user_data/host', {}, 'zume_system/v1' ).done( function( data ) {
+    console.log(data)
+
+  })
+}
+
 window.cta_commitments = () => {
   console.log('cta_commitments')
   let title = jQuery('#modal-large-title')
