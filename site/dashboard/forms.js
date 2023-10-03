@@ -555,7 +555,7 @@ window.cta_host_progress = () => {
   title.empty()
   content.empty()
 
-  title.append('HOST Progress')
+  title.append('HOST Progress <span class="host loading-spinner active"></span>')
 
   let host_buttons_html = ''
   jQuery.each( zumeForms.training_items, function(i,v){
@@ -569,6 +569,7 @@ window.cta_host_progress = () => {
   content.append(`
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
+
         <div class="cell">
             ${host_buttons_html}
         </div>
@@ -593,9 +594,17 @@ window.cta_host_progress = () => {
   jQuery('#modal-small').foundation('open')
 }
 window.load_host_status = () => {
+  jQuery('.host.loading-spinner').addClass('active')
   makeRequest('GET', 'user_data/host', {}, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
-
+    if ( data.list ) {
+      jQuery.each( data.list, function( i, v ) {
+        if ( v ) {
+          jQuery(`.button.zume.${i}`).removeClass('secondary')
+          jQuery('.host.loading-spinner').removeClass('active')
+        }
+      })
+    }
   })
 }
 
