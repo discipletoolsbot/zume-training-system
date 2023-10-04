@@ -868,7 +868,23 @@ class Zume_System_Log_API
             }
         }
 
-
+        /**
+         * business logic:
+         * - if user has shared most lessons and trained others on a few concepts, then they can be considered a practitioner
+         * - if coach has moved to watching status all key concepts, then they can be considered a practitioner
+         */
+        if ( 'training' === $type ) {
+            $host = zume_get_user_host( $data['user_id'] );
+            if ( $host['totals']['s'] >= 25 && $host['totals']['t'] >= 5 ) {
+                if ( self::_needs_to_be_logged( $log, 'system', 'host_completed' ) ) {
+                    $data_item = $data;
+                    $data_item['type'] = 'system';
+                    $data_item['subtype'] = 'host_completed';
+                    $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                    $added_log[] = dt_report_insert( $data_item, true, false );
+                }
+            }
+        }
         if ( 'coaching' === $type ) {
             $mawl = zume_get_user_mawl( $data['user_id'] );
             if ( $mawl['totals']['m'] >= 16 && $mawl['totals']['a'] >= 16 &&  $mawl['totals']['w'] >= 16 ) {
@@ -893,6 +909,7 @@ class Zume_System_Log_API
             $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
             $added_log[] = dt_report_insert( $data_item, true, false );
         }
+
 
         return $added_log;
     }
