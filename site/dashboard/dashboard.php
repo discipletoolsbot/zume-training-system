@@ -99,7 +99,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
 
-
             <?php
             /**
              * DEV SECTION - REMOVE FOR PRODUCTION
@@ -111,6 +110,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             $commitments = zume_get_user_commitments();
             $mawl = zume_get_user_mawl();
             ?>
+            <hr />
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p><hr />
@@ -128,10 +128,10 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
                     <p><button class="button cta_work_the_plan" />CTA: Work the Plan</button></p>
                     <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
-                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
-                    <hr />
-                    <p><button class="button cta_host_progress" />My HOST Progress</button></p>
+                    <p><button class="button cta_join_vision" />CTA: Join Vision & Zume Community</button></p>
                     <p><button class="button cta_commitments" />My Commitments</button></p>
+                    <p><button class="button cta_host_progress" />My HOST Progress</button></p>
+                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
                 </div>
             </div>
             <!--END DEV SECTION -->

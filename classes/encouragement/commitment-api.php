@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-class Zume_System_Plan_API
+class Zume_System_Commitments_API
 {
     public $namespace = 'zume_system/v1';
     private static $_instance = null;
@@ -32,23 +32,59 @@ class Zume_System_Plan_API
 
     public function add_api_routes()
     {
+        return;
         $namespace = $this->namespace;
         register_rest_route(
-            $namespace, '/add_commitment', [
-                'methods' => [ 'GET', 'POST' ],
+            $namespace, '/commitments', [
+                'methods' => 'GET',
+                'callback' => [ $this, 'get_commitments' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
+        register_rest_route(
+            $namespace, '/commitments', [
+                'methods' => 'POST',
                 'callback' => [ $this, 'add_commitment' ],
                 'permission_callback' => '__return_true',
             ]
         );
         register_rest_route(
-            $namespace, '/get_commitments', [
-                'methods' => [ 'GET', 'POST' ],
-                'callback' => [ $this, 'get_commitments' ],
+            $namespace, '/commitments', [
+                'methods' => 'PUT',
+                'callback' => [ $this, 'update_commitment' ],
                 'permission_callback' => '__return_true',
             ]
         );
-    }
+        register_rest_route(
+            $namespace, '/commitments', [
+                'methods' => 'DELETE',
+                'callback' => [ $this, 'delete_commitments' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
 
+    }
+    public function get_commitments( WP_REST_Request $request )
+    {
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        if ( isset( $params['user_id'] ) ) {
+            $user_id = $params['user_id'];
+        } else {
+            $user_id = get_current_user_id();
+        }
+
+        $status = 'open';
+        if ( isset( $params['status'] ) ) {
+            $status = $params['status'];
+        }
+
+        return zume_get_user_commitments( $user_id, $status );
+    }
     public function add_commitment( WP_REST_Request $request )
     {
 
@@ -87,26 +123,25 @@ class Zume_System_Plan_API
 
         return $create;
     }
-    public function get_commitments( WP_REST_Request $request )
+    public function update_commitment( WP_REST_Request $request )
     {
+
         if ( ! is_user_logged_in() ) {
             return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
         }
 
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        if ( isset( $params['user_id'] ) ) {
-            $user_id = $params['user_id'];
-        } else {
-            $user_id = get_current_user_id();
-        }
-
-        $status = 'open';
-        if ( isset( $params['status'] ) ) {
-            $status = $params['status'];
-        }
-
-        return zume_get_user_commitments( $user_id, $status );
+        return true;
     }
+    public function delete_commitment( WP_REST_Request $request )
+    {
+
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+
+
+        return true;
+    }
+
 }
-Zume_System_Plan_API::instance();
+Zume_System_Commitments_API::instance();

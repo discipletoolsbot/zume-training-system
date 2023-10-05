@@ -24,6 +24,9 @@ jQuery(document).ready(function() {
   jQuery('.cta_post_training_plan').click(function() {
     window.cta_post_training_plan()
   })
+  jQuery('.cta_join_vision').click(function() {
+    window.cta_join_vision()
+  })
   jQuery('.cta_practitioner_reports').click(function() {
     window.cta_practitioner_reports()
   })
@@ -33,6 +36,7 @@ jQuery(document).ready(function() {
   jQuery('.cta_commitments').click(function() {
     window.cta_commitments()
   })
+
 })
 
 window.cta_set_profile = () => {
@@ -152,7 +156,8 @@ window.cta_join_a_training = () => {
       jQuery('.loading-spinner').addClass('active')
       let key = jQuery(this).val()
       makeRequest('POST', 'join_plan', {key: key}, 'zume_system/v1' ).done( function( data ) {
-        jQuery('.join_training_button').text('Joined')
+        jQuery('.join_training_button').text('Joined').prop('disabled', true)
+        jQuery('.loading-spinner').removeClass('active')
       })
       makeRequest('POST', 'log', { type: 'system', subtype: 'joined_online_training' }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
@@ -439,7 +444,7 @@ window.cta_post_training_plan = () => {
         var date = new Date(); // Now
         date.setDate(date.getDate() + 30);
 
-        makeRequest('POST', 'add_commitment', {
+        makeRequest('POST', 'commitment', {
           "user_id": zumeForms.user_profile.user_id,
           "post_id": zumeForms.user_profile.contact_id,
           "meta_key": "tasks",
@@ -608,6 +613,13 @@ window.load_host_status = () => {
   })
 }
 
+window.cta_join_vision = () => {
+  makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( function( data ) {
+    location.reload()
+  })
+}
+
+
 window.cta_commitments = () => {
   console.log('cta_commitments')
   let title = jQuery('#modal-large-title')
@@ -617,24 +629,57 @@ window.cta_commitments = () => {
 
   title.append('Commitments')
 
-  content.append(`
+  makeRequest('GET', 'commitments', {}, 'zume_system/v1' ).done( function( data ) {
+    console.log(data)
+    let list = ''
+    if ( data ) {
+      jQuery.each( data, function( i, v ) {
+        if ( v.question !== '' && v.answer !== '' ) {
+          list += `<div class="cell medium-6"><strong>Question:</strong> ${v.question}<br><strong>Answer:</strong> ${v.answer}</br></div><div class="cell medium-6"> <button class="button complete-commitment" value="${v.id}">Complete</button><button class="button delete-commitment" value="${v.id}">Delete</button></div><div class="cell"><hr></div>`
+        }
+      })
+    }
+    let html = `
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
         <div class="cell">
-
+            <div class="grid-x grid-padding-x" id="zume-commitments">${list}</div>
         </div>
         <div class="cell">
-          <button class="button commitments-save-button">Save</button>
-          <button class="button commitments-close-button" style="display:none;" onclick="location.reload()">Close</button>
+          <button class="button commitments-close-button" onclick="location.reload()">Close</button>
         </div>
     </div>
-    `)
+    `
+    content.html(html)
+
+    jQuery('.complete-commitment').on('click', function() {
+      let id = jQuery(this).val()
+      let data = {
+        id: id
+      }
+      console.log(data)
+      makeRequest('PUT', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.cta_commitments()
+      })
+    })
+
+    jQuery('.delete-commitment').on('click', function() {
+      let id = jQuery(this).val()
+      let data = {
+        id: id
+      }
+      makeRequest('DELETE', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.cta_commitments()
+      })
+    })
+
+  })
 
   jQuery('.commitments-save-button').click(function() {
     jQuery('.commitments-save-button').text('Saved').prop('disabled', true)
     jQuery('.commitments-close-button').show()
-
-
   })
 
   jQuery('#modal-large').foundation('open')
