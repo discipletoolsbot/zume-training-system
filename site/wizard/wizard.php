@@ -59,33 +59,66 @@ class Zume_Training_Wizard extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
-
+            add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ], 999 );
         }
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return zume_training_magic_url_base_allowed_js();
+        $allowed_js[] = 'zume-profile-utilities';
+        return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return zume_training_magic_url_base_allowed_css();
     }
 
+    public function enqueue_scripts() {
+        wp_enqueue_script( 'zume-profile-utilities', trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js', array(), filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'profile-utilities.js' ), true );
+    }
+
     public function header_style(){
+        global $zume_user_profile;
         ?>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
             });
         </script>
-
+        <script>
+            const jsObject = [<?php echo json_encode([
+                'nonce' => wp_create_nonce( 'wp_rest' ),
+                'root' => esc_url_raw( rest_url() ),
+                'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
+                'language_cookie' => ZUME_LANGUAGE_COOKIE,
+                'translations' => [
+                    'bad_wizard' => esc_html__( 'Bad Wizard', 'zume' ),
+                    'found_bad_wizard' => esc_html__( 'You found a bad wizard', 'zume' ),
+                    'home' => esc_html__( 'Get back home', 'zume' ),
+                    'back' => esc_html__( 'Back', 'zume' ),
+                    'next' => esc_html__( 'Next', 'zume' ),
+                    'skip' => esc_html__( 'Skip', 'zume' ),
+                    'finish' => esc_html__( 'Finish', 'zume' ),
+                    'no_locations_found' => esc_html__( 'No locations found', 'zume' ),
+                    'complete_profile' => [
+                        'title' => esc_html__( 'Complete your profile', 'zume' ),
+                        'phone' => esc_html__( 'Phone', 'zume' ),
+                        'city' => esc_html__( 'City', 'zume' ),
+                    ],
+                ],
+            ]) ?>][0]
+            const zumeProfile = [<?php echo json_encode([
+                'map_key' => DT_Mapbox_API::get_key(),
+                'profile' => $zume_user_profile,
+                'mapbox_selected_id' => 'current',
+            ]) ?>][0]
+        </script>
         <?php
     }
 
     public function body(){
         ?>
 
-        <div class="container cover-page | text-center">
+        <div class="container cover-page">
             <div>
                 <zume-wizard
                     type="<?php echo esc_attr( $this->wizard_type ) ?>"

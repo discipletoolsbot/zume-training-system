@@ -69,6 +69,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         $allowed_js[] = 'zume-profile';
+        $allowed_js[] = 'zume-profile-utilities';
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
 
@@ -77,7 +78,8 @@ class Zume_Training_Profile extends Zume_Magic_Page
     }
 
     public function enqueue_scripts() {
-        wp_enqueue_script( 'zume-profile', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'profile.js', array(), filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'profile.js' ), true );
+        wp_enqueue_script( 'zume-profile-utilities', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'profile-utilities.js', array(), filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'profile-utilities.js' ), true );
+        wp_enqueue_script( 'zume-profile', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'profile.js', array( 'zume-profile-utilities' ), filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'profile.js' ), true );
     }
 
     public function header_style(){

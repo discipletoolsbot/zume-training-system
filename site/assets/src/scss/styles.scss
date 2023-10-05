@@ -256,6 +256,17 @@ header {
   }
 }
 
+.step-circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 2px solid color('brand');
+
+  &.complete {
+    background-color: color('brand');
+  }
+}
+
 @media (min-width: $break-lg) {
 
     .row {

@@ -8,17 +8,6 @@ const addressResultsContainer = document.getElementById('address_results')
 
 const old_ui_language = uiLanguageInput.value
 
-function debounce(callback, timeout = 500) {
-    let timer
-
-    return (...args) => {
-        clearTimeout(timer)
-        timer = setTimeout(() => {
-            callback.call(this, ...args)
-        }, timeout)
-    }
-}
-
 profileForm.addEventListener( 'submit', submitProfileForm )
 function submitProfileForm(e) {
     e.preventDefault()
@@ -35,30 +24,7 @@ function submitProfileForm(e) {
       ui_language,
     }
 
-    /* get the location_grid from mapbox selection */
-    const id = zumeProfile.mapbox_selected_id
-    if ( id === 'current' && zumeProfile.profile.location.source === 'ip' ) {
-      data.location_grid_meta = {
-        lng: zumeProfile.profile.location.lng,
-        lat: zumeProfile.profile.location.lat,
-        level: zumeProfile.profile.location.level,
-        label: zumeProfile.profile.location.label,
-        source: 'user',
-        grid_id: false
-      }
-    }
-    else if ( id && id !== '' && window.mapbox_results ) {
-        const location_meta = window.mapbox_results.features.find((feature) => feature.id === id)
-        data.location_grid_meta = {
-            lng: location_meta.center[0],
-            lat: location_meta.center[1],
-            level: location_meta.place_type[0],
-            label: location_meta.place_name,
-            source: 'user',
-            grid_id: false
-        }
-    }
-
+    data.location_grid_meta = getLocationGridFromMapbox(zumeProfile.mapbox_selected_id, zumeProfile.profile.location)
 
     /* start loading spinner */
     const submitButton = document.querySelector('#submit-profile')
@@ -91,59 +57,40 @@ function submitProfileForm(e) {
     })
 }
 
-const processLocation = debounce(getAddressSuggestions)
+const processLocation = debounce(getAddressSuggestions(addressCallback, zumeProfile.map_key))
 cityInput.addEventListener( 'input', processLocation )
 
-function getAddressSuggestions(event) {
-    const address = event.target.value
-
-    if (address.length < 1) {
-        return
+function addressCallback(data) {
+    if (data.features.length < 1) {
+        addressResultsContainer.innerHTML = `
+            No Locations Found
+        ` /* TODO: translate and escape me */
     }
 
+    let locations = ''
+    data.features.forEach((feature) => {
+        locations += `
+            <div class="address-result" id="${feature.id}" data-place-name="${feature.place_name}">
+                ${feature.place_name}
+            </div>
+        ` /* TODO: escape place names */
+    })
 
-    const root = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
-    const settings = '.json?types=country,region,postcode,district,place,locality,neighborhood,address&limit=6&access_token='
-    const key = zumeProfile.map_key
+    addressResultsContainer.innerHTML = locations
 
-    const url = root + encodeURI( address ) + settings + key
+    addressResults = document.querySelectorAll('.address-result')
+    addressResults.forEach((result) => {
+        result.addEventListener('click', function(e) {
+            console.log('click')
+            /* Escape placeName */
+            const id = e.target.id
+            const placeName = e.target.dataset.placeName
 
-    fetch(url)
-        .then((response) => response.json())
-        .then((data) => {
-            if (data.features.length < 1) {
-                addressResultsContainer.innerHTML = `
-                    No Locations Found
-                ` /* TODO: translate and escape me */
-            }
+            cityInput.value = placeName
 
-            window.mapbox_results = data
+            zumeProfile.mapbox_selected_id = id
 
-            let locations = ''
-            data.features.forEach((feature) => {
-                locations += `
-                    <div class="address-result" id="${feature.id}" data-place-name="${feature.place_name}">
-                        ${feature.place_name}
-                    </div>
-                ` /* TODO: escape place names */
-            })
-
-            addressResultsContainer.innerHTML = locations
-
-            addressResults = document.querySelectorAll('.address-result')
-            addressResults.forEach((result) => {
-                result.addEventListener('click', (e) => {
-                    /* Escape placeName */
-                    const id = e.target.id
-                    const placeName = e.target.dataset.placeName
-
-                    cityInput.value = placeName
-
-                    zumeProfile.mapbox_selected_id = id
-
-                    addressResultsContainer.innerHTML = ''
-                })
-            })
+            addressResultsContainer.innerHTML = ''
         })
-
+    })
 }
