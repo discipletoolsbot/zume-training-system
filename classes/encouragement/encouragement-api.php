@@ -15,10 +15,14 @@ class Zume_System_Encouragement_API
     }
     public function __construct()
     {
+        add_action( 'zume_verify_encouragement_plan', [$this, 'verify_encouragement_plan'], 10, 3 );
         if (dt_is_rest()) {
             add_action('rest_api_init', [$this, 'add_api_routes']);
             add_filter('dt_allow_rest_access', [$this, 'authorize_url'], 10, 1);
         }
+    }
+    public function verify_encouragement_plan( $user_id, $type, $subtype ) {
+        Zume_System_Encouragement_API::_verify_encouragement_plan( $user_id, $type, $subtype );
     }
     public function authorize_url($authorized)
     {
