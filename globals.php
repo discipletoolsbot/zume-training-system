@@ -4426,20 +4426,7 @@ class Zume_Global_Endpoints {
                 'permission_callback' => '__return_true',
             ]
         );
-        register_rest_route(
-            $namespace, '/user_data/host', [
-                'methods' => [ 'GET', 'POST' ],
-                'callback' => [ $this, 'user_data_host' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $namespace, '/user_data/mawl', [
-                'methods' => [ 'GET', 'POST' ],
-                'callback' => [ $this, 'zume_get_user_mawl_api' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
+
         /**
          * Commitments API
          */
@@ -4490,13 +4477,6 @@ class Zume_Global_Endpoints {
         );
         register_rest_route(
             $namespace, '/host', [
-                'methods' => 'PUT',
-                'callback' => [ $this, 'update_host' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $namespace, '/host', [
                 'methods' => 'DELETE',
                 'callback' => [ $this, 'delete_host' ],
                 'permission_callback' => '__return_true',
@@ -4521,13 +4501,6 @@ class Zume_Global_Endpoints {
         );
         register_rest_route(
             $namespace, '/mawl', [
-                'methods' => 'PUT',
-                'callback' => [ $this, 'update_mawl' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $namespace, '/mawl', [
                 'methods' => 'DELETE',
                 'callback' => [ $this, 'delete_mawl' ],
                 'permission_callback' => '__return_true',
@@ -4545,7 +4518,6 @@ class Zume_Global_Endpoints {
         $user_id = get_current_user_id();
         return zume_get_user_stage( $user_id );
     }
-
 
     public function create_commitment( WP_REST_Request $request )
     {
@@ -4574,7 +4546,7 @@ class Zume_Global_Endpoints {
             'category' => 'custom',
         ];
 
-        $create = $wpdb->insert( $wpdb->dt_post_user_meta, $fields );
+        $create = $wpdb->insert( 'wp_dt_post_user_meta', $fields );
 
         $log = zume_get_user_log( $user_id );
         $subtypes = array_column( $log, 'subtype' );
@@ -4615,7 +4587,7 @@ class Zume_Global_Endpoints {
 
         $user_id = $this->_get_user_id( $params );
 
-        $row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$wpdb->dt_post_user_meta} WHERE id = %d AND user_id = %d", $params['id'], $user_id ), ARRAY_A );
+        $row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM wp_dt_post_user_meta WHERE id = %d AND user_id = %d", $params['id'], $user_id ), ARRAY_A );
         $data = maybe_unserialize( $row['meta_value'] );
         $data['status'] = 'closed';
         $data = maybe_serialize( $data );
@@ -4624,7 +4596,7 @@ class Zume_Global_Endpoints {
             'user_id' => $user_id,
         ];
 
-        $update = $wpdb->update( $wpdb->dt_post_user_meta, [ 'meta_value' => $data ], $where );
+        $update = $wpdb->update( 'wp_dt_post_user_meta', [ 'meta_value' => $data ], $where );
         return $update;
     }
     public function delete_commitment( WP_REST_Request $request )
@@ -4642,10 +4614,101 @@ class Zume_Global_Endpoints {
             'user_id' => $user_id,
         ];
 
-        $delete = $wpdb->delete( $wpdb->dt_post_user_meta, $fields );
+        $delete = $wpdb->delete( 'wp_dt_post_user_meta', $fields );
 
         return $delete;
     }
+
+
+    /** Host */
+    public function list_host( WP_REST_Request $request ) {
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        $user_id = $this->_get_user_id( $params );
+
+        return zume_get_user_host( $user_id );
+    }
+    public function create_host( WP_REST_Request $request ) {
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        if ( ! isset( $params['type'], $params['subtype'] ) && 'training' === $params['type'] ) {
+            return new WP_Error( __METHOD__, 'Type and subtype required. Type must be training.', array( 'status' => 401 ) );
+        }
+        $user_id = $this->_get_user_id( $params );
+
+        return zume_log_insert( $params['type'], $params['subtype'], [ 'user_id' => $user_id ] );
+    }
+    public function delete_host( WP_REST_Request $request ) {
+        global $wpdb;
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        if ( ! isset( $params['type'], $params['subtype'] ) && 'training' === $params['type'] ) {
+            return new WP_Error( __METHOD__, 'Type and subtype required. Type must be training.', array( 'status' => 401 ) );
+        }
+        $user_id = $this->_get_user_id( $params );
+
+        $fields = [
+            'type' => $params['type'],
+            'subtype' => $params['subtype'],
+            'user_id' => $user_id,
+        ];
+
+        $delete = $wpdb->delete( 'wp_dt_reports', $fields );
+
+        return $delete;
+    }
+
+    /** MAWL */
+    public function list_mawl( WP_REST_Request $request ) {
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        $user_id = $this->_get_user_id( $params );
+
+        return zume_get_user_mawl( $user_id );
+
+    }
+    public function create_mawl( WP_REST_Request $request ) {
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        if ( ! isset( $params['type'], $params['subtype'] ) && 'coaching' === $params['type'] ) {
+            return new WP_Error( __METHOD__, 'Type and subtype required. Type must be coaching.', array( 'status' => 401 ) );
+        }
+        $user_id = $this->_get_user_id( $params );
+
+        return zume_log_insert( $params['type'], $params['subtype'], [ 'user_id' => $user_id ] );
+    }
+    public function delete_mawl( WP_REST_Request $request ) {
+        global $wpdb;
+        if ( ! is_user_logged_in() ) {
+            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
+        }
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+        if ( ! isset( $params['type'], $params['subtype'] ) && 'coaching' === $params['type'] ) {
+            return new WP_Error( __METHOD__, 'Type and subtype required. Type must be training.', array( 'status' => 401 ) );
+        }
+        $user_id = $this->_get_user_id( $params );
+
+        $fields = [
+            'type' => $params['type'],
+            'subtype' => $params['subtype'],
+            'user_id' => $user_id,
+        ];
+
+        $delete = $wpdb->delete( 'wp_dt_reports', $fields );
+
+        return $delete;
+    }
+
     public function _get_user_id( $params ) {
         if ( ! is_user_logged_in() ) {
             return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
@@ -4659,86 +4722,6 @@ class Zume_Global_Endpoints {
             $user_id = get_current_user_id();
         }
         return $user_id;
-    }
-
-    /** Host */
-    public function list_host( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-        $user_id = $this->_get_user_id( $params );
-
-        return zume_get_user_host( $user_id );
-
-    }
-    public function create_host( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
-    }
-    public function update_host( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
-    }
-    public function delete_host( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
-    }
-
-    /** MAWL */
-    public function list_mawl( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        if ( isset( $params['user_id'] ) ) {
-            if ( ! current_user_can( 'dt_list_users' ) ) {
-                return new WP_Error( __METHOD__, 'User not allowed to view other users', array( 'status' => 401 ) );
-            }
-            $user_id = $params['user_id'];
-        } else {
-            $user_id = get_current_user_id();
-        }
-
-        return zume_get_user_host( $user_id );
-
-    }
-    public function create_mawl( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
-    }
-    public function update_mawl( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
-    }
-    public function delete_mawl( WP_REST_Request $request ) {
-        if ( ! is_user_logged_in() ) {
-            return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-        }
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        return $params;
     }
 
 }

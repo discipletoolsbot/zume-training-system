@@ -574,7 +574,6 @@ window.cta_host_progress = () => {
   content.append(`
     <div class="grid-x grid-padding-x">
         <div class="cell"><hr></div>
-
         <div class="cell">
             ${host_buttons_html}
         </div>
@@ -582,16 +581,22 @@ window.cta_host_progress = () => {
     `)
 
   jQuery('.button.zume').click(function( event ) {
-    jQuery(this).removeClass('secondary')
-    console.log(jQuery(this).data('subtype'))
-
     let type = event.target.dataset.type
     let subtype = event.target.dataset.subtype
 
-    makeRequest('POST', 'log', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
-      console.log(data)
-      window.load_host_status()
-    })
+    if ( jQuery(this).hasClass('secondary') ) {
+      jQuery(this).removeClass('secondary')
+      makeRequest('POST', 'host', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.load_host_status()
+      })
+    } else {
+      jQuery(this).addClass('secondary')
+      makeRequest('DELETE', 'host', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.load_host_status()
+      })
+    }
   })
 
   window.load_host_status()
@@ -600,7 +605,7 @@ window.cta_host_progress = () => {
 }
 window.load_host_status = () => {
   jQuery('.host.loading-spinner').addClass('active')
-  makeRequest('GET', 'user_data/host', {}, 'zume_system/v1' ).done( function( data ) {
+  makeRequest('GET', 'host', {}, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
     if ( data.list ) {
       jQuery.each( data.list, function( i, v ) {
