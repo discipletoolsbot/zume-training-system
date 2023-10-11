@@ -85,17 +85,17 @@ class Zume_Training_Home extends Zume_Magic_Page
         global $zume_user_profile;
         ?>
 
-        <div class="stack | s-zero justify-content-center absolute top left m-3 p--1 shadow | sticker">
+        <div class="stack | s0 justify-content-center absolute top left m-3 p--1 shadow | sticker">
             <h2 class="f-3 lh1">45+</h2>
             <h3 class="uppercase f--2 lh1"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
         </div>
+        <?php require __DIR__ . '/../parts/nav.php'; ?>
         <div class="cover-page">
 
-            <?php require __DIR__ . '/../parts/nav.php'; ?>
 
             <div class="switcher container | align-items-center gap0">
                 <div class="show-for-large"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing"></div>
-                <div class="stack | s-zero grow-1p5 text-center">
+                <div class="stack | s0 grow-1p5 text-center">
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/ZumeLOGO.svg' ) ?>" alt="Zume Logo">
                     <h1 class="f-6"><?php echo esc_html__( 'Training', 'zume' ) ?></h1>
                     <p><?php echo esc_html__( 'for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply', 'zume' ) ?></p>
@@ -281,7 +281,7 @@ class Zume_Training_Home extends Zume_Magic_Page
         <div class="cover-page center container | py-3 text-center">
             <h2 class="position-relative">
                 <?php echo esc_html__( 'Are you ready? Get started today!', 'zume' ) ?>
-                <div class="stack | s-zero justify-content-center absolute right top p--1 shadow | sticker" data-free>
+                <div class="stack | s0 justify-content-center absolute right top p--1 shadow | sticker" data-free>
                     <h2 class="f-3 f-cursive uppercase"><?php echo esc_html__( 'Free!', 'zume' ) ?></h2>
                 </div>
             </h2>
@@ -313,7 +313,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <div class="">
                         <div class="grid | gapx-3 gapy-2 p-0 mx-auto | stats-grid">
                             <div class="rounded brand-light bg-white p-0 shadow">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Registrations', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Register.svg' ) ?>" alt="<?php echo esc_attr__( 'Registrations', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">36,294</h5>
@@ -323,7 +323,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                 </div>
                             </div>
                             <div class="rounded brand-light bg-white shadow p-0">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Group Leaders', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GroupLeaders.svg' ) ?>" alt="<?php echo esc_attr__( 'Group Leaders', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">1,878</h5>
@@ -333,7 +333,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                 </div>
                             </div>
                             <div class="rounded brand-light bg-white shadow p-0">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Groups Formed', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GroupsFormed.svg' ) ?>" alt="<?php echo esc_attr__( 'Groups Formed', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">6,805</h5>
@@ -343,7 +343,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                 </div>
                             </div>
                             <div class="rounded brand-light bg-white shadow p-0">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Training Page Views', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/TrainingPageViews.svg' ) ?>" alt="<?php echo esc_attr__( 'Training Page Views', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">929,000</h5>
@@ -353,7 +353,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                 </div>
                             </div>
                             <div class="rounded brand-light bg-white shadow p-0">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Countries & Territories', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/countriesandterritories.svg' ) ?>" alt="<?php echo esc_attr__( 'Countries & Territories', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">234</h5>
@@ -363,7 +363,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                 </div>
                             </div>
                             <div class="rounded brand-light bg-white shadow p-0">
-                                <div class="stack | s-2 align-items-center">
+                                <div class="stack | s--2 align-items-center">
                                     <h4><?php echo esc_html__( 'Countries with Groups', 'zume' ) ?></h4>
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/countriesandterritories-groups.svg' ) ?>" alt="<?php echo esc_attr__( 'Countries & Territories with Groups', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">156</h5>

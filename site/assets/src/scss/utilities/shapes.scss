@@ -1,5 +1,6 @@
 .rounded {
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .rounded-multi > :first-child {
@@ -12,6 +13,15 @@
     border-end-end-radius: var(--border-radius);
 }
 
+.rounded-top {
+    border-start-start-radius: var(--border-radius);
+    border-start-end-radius: var(--border-radius);
+}
+
+.rounded-bottom {
+    border-end-start-radius: var(--border-radius);
+    border-end-end-radius: var(--border-radius);
+}
 
 .rounded-start {
     border-start-start-radius: var(--border-radius);
@@ -37,6 +47,16 @@
 
 .shadow {
     box-shadow: color('shadow') 0px 5px 10px 0px ;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: color(gray-900);
 }
 
 @media (max-width: $break-lg) {

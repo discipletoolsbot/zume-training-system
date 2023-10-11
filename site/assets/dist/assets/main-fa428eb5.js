@@ -122,4 +122,4 @@
             </div>
         </div>
         `}_handlePhoneChange(t){t.stopPropagation();const e=new CustomEvent("profile-change",{detail:{id:t.target.name,value:t.target.value}});this.dispatchEvent(e)}_handleCityChange(t){this._handleCityInputChange(t),this._debounceCityChange(t)}_handleCityInputChange(t){}_handleSuggestions(t){t.features.length<1&&(this.locationError=this.t.no_locations_found),this.locations=t.features}_handleLocationsChange(t){this.locations=t}_handleLocationSelection(t){this.city=t.target.dataset.placeName;const e=new CustomEvent("profile-change",{detail:{id:"location_grid_meta",value:getLocationGridFromMapbox(t.target.id,zumeProfile.profile.location)}});this.dispatchEvent(e),this._clearLocations()}_clearLocations(){this.locations=[]}createRenderRoot(){return this}}window.customElements.define("complete-profile",Ht);const rt=document.querySelector(".nav-toggle"),Nt=document.querySelector("#nav");rt&&rt.addEventListener("click",n=>{Nt.classList.toggle("nav--visible")});
-//# sourceMappingURL=main-bfa6c63b.js.map
+//# sourceMappingURL=main-fa428eb5.js.map

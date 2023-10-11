@@ -1,26 +1,45 @@
     <header>
-        <div class="cluster justify-content-between">
-            <button class="btn outline dark nav__button" data-open="language-menu-reveal"><?php esc_html_e( 'Language', 'zume' ) ?></button>
+        <div class="d-flex | justify-content-between">
 
-            <div class="absolute center">
-                <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">
-                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/ZumeTraining-Small.png' ) ?>" alt="Zume Logo" />
-                </a>
-            </div>
+            <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">
+                <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/ZumeTraining-Small.png' ) ?>" alt="Zume Logo" />
+            </a>
 
             <nav class="nav" id="nav" role="list">
-                <div class="cluster | s-2 | nav__list nav__list--secondary" role="list">
+                <div class="cluster | s--2 | nav__list nav__list--secondary" role="list">
 
                     <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?>
 
                         <a role="listitem" href="<?php echo esc_url( '/contacts' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'DTools', 'zume' ) ?></a>
 
                     <?php } ?>
-                    <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
-                    <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
-                    <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
-                    <a role="listitem" href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon link-light"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a>
 
+                    <?php if ( is_user_logged_in() ) : ?>
+
+                        <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_course_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon link-light"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a>
+
+                    <?php endif; ?>
+
+                    <?php if ( !is_user_logged_in() ) : ?>
+
+                        <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'About', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_course_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn outline dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+
+                    <?php endif; ?>
+
+                    <?php $code = zume_current_language() ?>
+                    <?php $display_code = zume_get_language_display_code( $code ) ?>
+
+                    <button class="btn dark nav__button d-flex align-items-center gap--4" data-open="language-menu-reveal">
+                        <?php require plugin_dir_path( __DIR__ ) . 'assets/images/globe-outline.svg' ?>
+                        <?php echo esc_html( strtoupper( $display_code ) ) ?>
+                    </button>
                 </div>
             </nav>
             <button class="nav-toggle" aria-label="open navigation">

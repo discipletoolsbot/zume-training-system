@@ -87,12 +87,71 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         require __DIR__ . '/../parts/nav.php';
         ?>
 
-        <div class="container">
+        <div class="position-relative">
+            <div class="multiply-cover show-for-medium"></div>
+            <div class="multiply-cover flip show-for-medium"></div>
+            <div class="container stack-2 | page">
+                <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
+                <div class="center">
+                    <div class="video-thumbnail shadow w-70 position-relative">
+                        <img class="rounded-top" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/4Relationships-thumbnail.png' ) ?>" alt="The four relationships video">
+                        <div class="video-thumbnail__footer bg-brand-light white text-center rounded-bottom stack p-1">
+                            <h2 class="h3"><?php echo esc_html__( 'Four Relationships', 'zume' ) ?></h2>
+                            <p class="w-80 mx-auto"><?php echo esc_html__( 'Watch this important video explaining the 4 relationships of your new life', 'zume' ) ?></p>
+                        </div>
+                        <button class="absolute top bottom left right video-play">
+                            <img class="mx-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play">
+                        </button>
+                    </div>
+                </div>
+                <p class="mx-auto"><?php echo esc_html__( 'The sections below, will teach you what it means to be a follower (disciple) of Jesus', 'zume' ) ?></p>
+            </div>
+        </div>
 
-            <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
+        <div class="page bg-gray-100">
+            <div class="container center">
+                <ul class="stack-2 | accordion w-70" data-accordion>
+                    <li class="accordion-item rounded shadow" data-accordion-item>
+                        <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'What is a follower of Jesus?', 'zume' ) ?></h2></a>
 
-            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
+                        <div class="accordion-content" data-tab-content>
+                            <h3 class="h6"><?php echo esc_html__( 'God uses ordinary people', 'zume' ) ?></h3>
+                            <p>Officia qui irure elit mollit pariatur est incididunt deserunt dolor cillum est.</p>
+                            <h3 class="h6"><?php echo esc_html__( 'Simple definition of Disciple and Church', 'zume' ) ?></h3>
+                            <p>Do Lorem fugiat qui cillum consectetur non duis.</p>
+                            <h3 class="h6"><?php echo esc_html__( 'Vision Casting the Greatest Blessing', 'zume' ) ?></h3>
+                            <p>Ullamco cillum minim veniam eu qui minim eu aute quis commodo. Voluptate consequat quis amet ad aliqua dolor.</p>
+                        </div>
+                    </li><li class="accordion-item rounded shadow" data-accordion-item>
+                        <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'What are the activities of a follower of Jesus?', 'zume' ) ?></h2></a>
 
+                        <div class="accordion-content" data-tab-content>
+                            <h3 class="h6"><?php echo esc_html__( 'Consumer vs Producer lifestyle', 'zume' ) ?></h3>
+                            <p>Consequat amet adipisicing qui ex laborum ipsum sunt commodo ullamco aliquip qui. Voluptate ex nulla laboris excepteur occaecat fugiat magna nostrud incididunt et mollit amet tempor et. Exercitation proident fugiat velit Lorem mollit ullamco exercitation aute quis anim. Dolor eu velit adipisicing non duis mollit sit ut enim cillum excepteur. Reprehenderit aliquip eu excepteur elit ex exercitation tempor amet sunt eu aliquip. Dolore consequat non ad commodo. Magna ex reprehenderit et culpa anim ut pariatur mollit minim sunt culpa.</p>
+                            <p>Nulla proident ex voluptate fugiat ad Lorem sit mollit. Magna ad incididunt cupidatat sit dolore eiusmod. Cillum tempor veniam veniam ex reprehenderit veniam voluptate commodo reprehenderit. Irure enim ipsum labore tempor non cupidatat labore minim ut eu. Ea veniam consequat id proident excepteur aliqua sit culpa eiusmod irure eu.</p>
+                            <p>Cillum voluptate non sunt duis commodo Lorem sunt aute esse nostrud sint cupidatat excepteur cupidatat. Anim dolor laboris esse voluptate nulla excepteur Lorem anim sunt proident ut minim. Cillum pariatur occaecat duis anim est aute reprehenderit sit consectetur elit velit magna officia tempor. Aliqua irure voluptate cupidatat nostrud ullamco anim culpa ad est excepteur excepteur enim. Tempor sint nisi id laboris reprehenderit minim adipisicing dolore et cillum incididunt nostrud commodo.</p>
+                        </div>
+                    </li><li class="accordion-item rounded shadow" data-accordion-item>
+                        <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'How do I obey Jesus and help others become followers with me?', 'zume' ) ?></h2></a>
+
+                        <div class="accordion-content" data-tab-content>
+                            <h3 class="h6"><?php echo esc_html__( 'Consumer vs Producer lifestyle', 'zume' ) ?></h3>
+                            <p>Consequat amet adipisicing qui ex laborum ipsum sunt commodo ullamco aliquip qui. Voluptate ex nulla laboris excepteur occaecat fugiat magna nostrud incididunt et mollit amet tempor et. Exercitation proident fugiat velit Lorem mollit ullamco exercitation aute quis anim. Dolor eu velit adipisicing non duis mollit sit ut enim cillum excepteur. Reprehenderit aliquip eu excepteur elit ex exercitation tempor amet sunt eu aliquip. Dolore consequat non ad commodo. Magna ex reprehenderit et culpa anim ut pariatur mollit minim sunt culpa.</p>
+                            <p>Nulla proident ex voluptate fugiat ad Lorem sit mollit. Magna ad incididunt cupidatat sit dolore eiusmod. Cillum tempor veniam veniam ex reprehenderit veniam voluptate commodo reprehenderit. Irure enim ipsum labore tempor non cupidatat labore minim ut eu. Ea veniam consequat id proident excepteur aliqua sit culpa eiusmod irure eu.</p>
+                            <p>Cillum voluptate non sunt duis commodo Lorem sunt aute esse nostrud sint cupidatat excepteur cupidatat. Anim dolor laboris esse voluptate nulla excepteur Lorem anim sunt proident ut minim. Cillum pariatur occaecat duis anim est aute reprehenderit sit consectetur elit velit magna officia tempor. Aliqua irure voluptate cupidatat nostrud ullamco anim culpa ad est excepteur excepteur enim. Tempor sint nisi id laboris reprehenderit minim adipisicing dolore et cillum incididunt nostrud commodo.</p>
+                        </div>
+                    </li><li class="accordion-item rounded shadow" data-accordion-item>
+                        <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'What if many friends, family and others start following Jesus with me?', 'zume' ) ?></h2></a>
+
+                        <div class="accordion-content" data-tab-content>
+                            <h3 class="h6"><?php echo esc_html__( 'Consumer vs Producer lifestyle', 'zume' ) ?></h3>
+                            <p>Consequat amet adipisicing qui ex laborum ipsum sunt commodo ullamco aliquip qui. Voluptate ex nulla laboris excepteur occaecat fugiat magna nostrud incididunt et mollit amet tempor et. Exercitation proident fugiat velit Lorem mollit ullamco exercitation aute quis anim. Dolor eu velit adipisicing non duis mollit sit ut enim cillum excepteur. Reprehenderit aliquip eu excepteur elit ex exercitation tempor amet sunt eu aliquip. Dolore consequat non ad commodo. Magna ex reprehenderit et culpa anim ut pariatur mollit minim sunt culpa.</p>
+                            <p>Nulla proident ex voluptate fugiat ad Lorem sit mollit. Magna ad incididunt cupidatat sit dolore eiusmod. Cillum tempor veniam veniam ex reprehenderit veniam voluptate commodo reprehenderit. Irure enim ipsum labore tempor non cupidatat labore minim ut eu. Ea veniam consequat id proident excepteur aliqua sit culpa eiusmod irure eu.</p>
+                            <p>Cillum voluptate non sunt duis commodo Lorem sunt aute esse nostrud sint cupidatat excepteur cupidatat. Anim dolor laboris esse voluptate nulla excepteur Lorem anim sunt proident ut minim. Cillum pariatur occaecat duis anim est aute reprehenderit sit consectetur elit velit magna officia tempor. Aliqua irure voluptate cupidatat nostrud ullamco anim culpa ad est excepteur excepteur enim. Tempor sint nisi id laboris reprehenderit minim adipisicing dolore et cillum incididunt nostrud commodo.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <?php
     }

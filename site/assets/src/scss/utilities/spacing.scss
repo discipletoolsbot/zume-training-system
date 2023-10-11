@@ -1,6 +1,4 @@
-$gap-sizes: (1, 2, 3, 4);
-
-@each $i in $gap-sizes {
+@for $i from -5 through 5 {
     .gap-#{$i} {
         gap: spacing($i);
         grid-gap: spacing($i);
@@ -19,9 +17,7 @@ $gap-sizes: (1, 2, 3, 4);
     gap: 0;
 }
 
-$padding-sizes: (-1, 0, 1, 2, 3);
-
-@each $i in $padding-sizes {
+@for $i from -5 through 5 {
     .p-#{$i} {
         padding: spacing($i);
     }
@@ -37,9 +33,7 @@ $padding-sizes: (-1, 0, 1, 2, 3);
     padding: 0 !important;
 }
 
-$margin-sizes: (1, 2, 3);
-
-@each $i in $margin-sizes {
+@for $i from -5 through 5 {
     .m-#{$i} {
         margin: spacing($i);
     }
@@ -54,15 +48,16 @@ $margin-sizes: (1, 2, 3);
 .mx-auto {
     margin-inline: auto;
 }
+.ms-auto {
+    margin-inline-start: auto;
+}
 
-$spacing-sizes: (-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5);
-
-@each $i in $spacing-sizes {
-    .s#{$i} {
+@for $i from -5 through 5 {
+    .s-#{$i} {
         --space: #{spacing($i)};
     }
 }
 
-.s-zero {
+.s0 {
     --space: 0;
 }

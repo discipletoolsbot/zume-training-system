@@ -1,0 +1,19 @@
+.accordion {
+    background: none;
+}
+.accordion-title {
+    color: color('black');
+    background-color: color('white');
+    padding-inline: spacing(1);
+    border: none;
+}
+.accordion-title:focus, .accordion-title:hover {
+    background-color: white;
+    text-decoration: none;
+    color: color('brand');
+}
+.accordion-content {
+    padding-inline: spacing(3);
+    padding-block: spacing(2);
+    border: none;
+}

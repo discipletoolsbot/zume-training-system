@@ -86,8 +86,7 @@ function zume_three_month_plan_url() {
 }
 
 function zume_mobile_app_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Mobile App', $current_lang );
+    return zume_url( 'mobile-app' );
 }
 
 function zume_follow_jesus_url() {
@@ -95,9 +94,12 @@ function zume_follow_jesus_url() {
     return zume_get_posts_translation_url( 'Follow Jesus', $current_lang );
 }
 
-function zume_resources_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Resources', $current_lang );
+function zume_get_a_coach_url() {
+    return zume_url( 'get-a-coach' );
+}
+
+function zume_how_to_follow_jesus() {
+    return zume_url( 'how-to-follow-jesus' );
 }
 
 function zume_vision_url() {
@@ -111,9 +113,7 @@ function zume_overview_url() {
 }
 
 function zume_guidebook_url() {
-    $current_lang = zume_current_language();
-    $url = zume_get_posts_translation_url( 'Guidebook', $current_lang );
-    return $url;
+    return zume_url( 'book' );
 }
 
 function zume_profile_url() {
@@ -132,4 +132,14 @@ function zume_faq_url() {
     $current_lang = zume_current_language();
     $url = zume_get_posts_translation_url( 'FAQ', $current_lang );
     return $url;
+}
+
+function zume_url( $slug ) {
+    $current_lang = zume_current_language();
+
+    if ( $current_lang === 'en' ) {
+        return site_url( '/' ) . $slug;
+    }
+
+    return site_url( '/' ) . $current_lang . '/' . $slug;
 }

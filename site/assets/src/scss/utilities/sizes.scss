@@ -1,14 +1,28 @@
-$widths: (100, 80, 75, 70, 60, 50, 40, 30, 25, 20);
+$widths: (100, 90, 80, 75, 70, 60, 50, 40, 30, 25, 20, 10);
 
 @each $width in $widths {
     .w-#{$width} {
         width: $width * 1%;
     }
-    .h-#{$width} {
-        height: $width * 1%;
+}
+
+@for $i from -5 through 5 {
+    .h-#{$i} {
+        height: spacing($i);
     }
 }
 
 .fit-content {
     width: fit-content;
+}
+
+$rem-sizes: ( 1, 2, 3, 4, 5, 6, 7, 8, 16 );
+
+@each $size in $rem-sizes {
+    .w-#{$size}rem {
+        width: $size * 1rem;
+    }
+    .h-#{$size}rem {
+        height: $size * 1rem;
+    }
 }

@@ -31,6 +31,13 @@ a {
     background-color: var(--btn-bg-color);
     border-color: var(--btn-border-color);
 
+    &:focus {
+        text-decoration: none;
+        color: var(--btn-color)
+    }
+    &:visited {
+        text-decoration: none;
+    }
     &:hover, &:active {
         color: var(--btn-hover-color);
         background-color: var(--btn-hover-bg-color);
