@@ -182,11 +182,11 @@ class Zume_System_CTA_API
             [
                 'stages' => [2],
                 'required_keys' => ['training_26_heard'],
-                'disable_keys' => ['system_made_3_month_plan'],
+                'disable_keys' => ['system_made_post_training_plan'],
                 'label' => 'Create 3 Month Plan',
-                'key' => 'system_made_3_month_plan',
+                'key' => 'system_made_post_training_plan',
                 'type' => 'system',
-                'subtype' => 'made_3_month_plan',
+                'subtype' => 'made_post_training_plan',
                 'link' => '/profile',
             ],
             [

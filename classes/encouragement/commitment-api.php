@@ -117,8 +117,8 @@ class Zume_System_Commitments_API
 
         $log = zume_get_user_log( $user_id );
         $subtypes = array_column( $log, 'subtype' );
-        if ( ! in_array( 'made_3_month_plan', $subtypes ) ) {
-            zume_log_insert( 'system', 'made_3_month_plan', [ 'user_id' => $user_id ] );
+        if ( ! in_array( 'made_post_training_plan', $subtypes ) ) {
+            zume_log_insert( 'system', 'made_post_training_plan', [ 'user_id' => $user_id ] );
         }
 
         return $create;

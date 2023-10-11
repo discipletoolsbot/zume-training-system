@@ -660,7 +660,8 @@ window.cta_commitments = () => {
     jQuery('.complete-commitment').on('click', function() {
       let id = jQuery(this).val()
       let data = {
-        id: id
+        id: id,
+        user_id: zumeForms.user_profile.user_id
       }
       console.log(data)
       makeRequest('PUT', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
@@ -672,7 +673,8 @@ window.cta_commitments = () => {
     jQuery('.delete-commitment').on('click', function() {
       let id = jQuery(this).val()
       let data = {
-        id: id
+        id: id,
+        user_id: zumeForms.user_profile.user_id
       }
       makeRequest('DELETE', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
