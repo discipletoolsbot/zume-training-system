@@ -18,6 +18,10 @@
     left: 50%;
     transform: translateX(-50%);
 }
+.absolute.middle {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .position-relative {
     position: relative;

@@ -1,24 +1,31 @@
 <footer class="footer">
 
-    <div class="container stack-2">
+    <div class="container stack-2 | position-relative">
 
         <div class="cluster | justify-content-between">
             <div class="cluster gapx-4 gapy-2" role="list">
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>">About</a>
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_resources_url() ) ?>">Resources</a>
-                <a role="listitem" class="link-light" href="/how-to-follow-jesus">How to follow Jesus</a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
             </div>
 
             <div class="cluster gapx-4 gapy-2 justify-flex-end" role="list">
-                <a role="listitem" class="link-light" href="/book">Zume Guidebook</a>
-                <a role="listitem" class="link-light" href="/mobile-app">Zume Mobile App</a>
-                <a role="listitem" class="link-light" href="/donate">Donate</a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Guidebook', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_mobile_app_url() ) ?>"><?php echo esc_html__( 'Mobile App', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?></a>
             </div>
         </div>
 
+        <div class="absolute top bottom center w-3rem m-0 show-for-large">
+
+            <?php //phpcs:ignore ?>
+            <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/Zume-Z-crop.svg' ) ?>
+
+        </div>
+
         <div class="cluster justify-content-between">
-            <span>&copy; Zume. All rights reserved.</span>
-            <div class="cluster | s1 justify-flex-end f-0" role="list">
+            <span>&copy; 2023 Zume. All rights reserved.</span>
+            <div class="cluster | s-1 justify-flex-end f-0" role="list">
                 <a href="#" class="link-light" role="listitem">
                     <div class="icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/facebook.svg' ?></div>
                 </a>

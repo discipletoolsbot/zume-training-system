@@ -90,7 +90,7 @@ switch ( $request_action ) {
         <div id="login">
             <div class="grid-container rounded-multi">
                 <div class="hide-for-small-only hide-for-medium-only | text-center bg-brand-light shadow">
-                    <div class="cover center">
+                    <div class="cover center | w-100">
                         <div class="w-25 p0"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Thinking-01.svg' ) ?>" alt=""></div>
                     </div>
                 </div>
@@ -208,7 +208,7 @@ switch ( $request_action ) {
         <div id="login">
             <div id="inner-content" class="grid-container rounded-multi">
                 <div class="hide-for-small-only hide-for-medium-only | text-center bg-brand-light shadow">
-                    <div class="cover center">
+                    <div class="cover center w-100">
                         <div class="w-25 p0"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Thinking-01.svg' ) ?>" alt=""></div>
                     </div>
                 </div>
@@ -245,7 +245,7 @@ switch ( $request_action ) {
         <div id="login">
             <div id="inner-content" class="grid-container rounded-multi">
                 <div class="hide-for-small-only hide-for-medium-only | text-center bg-brand-light shadow">
-                    <div class="cover center">
+                    <div class="cover center | w-100">
                         <div class="w-25 p0"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Thinking-01.svg' ) ?>" alt=""></div>
                     </div>
                 </div>
@@ -365,7 +365,7 @@ switch ( $request_action ) {
                                 <h2 class="white"><?php echo esc_html__( 'Hello!', 'zume' ) ?></h2>
                                 <h3 class="white"><?php echo esc_html__( 'Create a Zume Account', 'zume' ) ?></h3>
                             </section>
-                            <div class="center">
+                            <div class="center w-100">
                                 <div class="w-50 py-2"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/desk.svg' ) ?>" alt=""></div>
                             </div>
                         </div>
@@ -575,7 +575,7 @@ switch ( $request_action ) {
                     <div class="hide-for-small-only hide-for-medium-only | text-center bg-brand-light px-1 py-0 shadow">
                         <div class="cover">
                             <h2 class="white"><?php echo esc_html__( 'Welcome back!', 'zume' ) ?></h2>
-                            <div class="center">
+                            <div class="center | w-100">
                                 <div class="w-70"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Jesus-01.svg' ) ?>" alt=""></div>
                             </div>
                         </div>

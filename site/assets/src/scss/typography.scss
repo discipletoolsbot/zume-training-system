@@ -29,11 +29,20 @@ h5, .h5 {
     font-size: font-size(1);
 }
 
+h6, .h6 {
+    font-size: font-size(0);
+    text-decoration: underline;
+}
+
 p {
     font-size: font-size(0);
 }
 
 b {
+    font-weight: 600;
+}
+
+.bold {
     font-weight: 600;
 }
 
@@ -45,7 +54,7 @@ b {
     line-height: 1;
 }
 
-@for $font-size from -5 through 6 {
+@for $font-size from -2 through 6 {
     .f-#{$font-size} {
         font-size: font-size($font-size);
     }

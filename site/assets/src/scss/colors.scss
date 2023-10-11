@@ -1,4 +1,11 @@
-$colors: ( 'white', 'gray-700', 'brand', 'brand-light', 'black');
+$colors: (
+    'white',
+    'gray-700',
+    'brand',
+    'brand-light',
+    'brand-lighter',
+    'black',
+);
 
 @each $color in $colors {
     .#{$color} {
@@ -6,12 +13,24 @@ $colors: ( 'white', 'gray-700', 'brand', 'brand-light', 'black');
     }
 }
 
-$bg-colors: ( 'gray-500', 'gray-300', 'gray-100', 'white', 'brand', 'brand-light');
+$bg-colors: (
+    'gray-500',
+    'gray-300',
+    'gray-100',
+    'white',
+    'brand',
+    'brand-light',
+    'brand-lighter',
+);
 
 @each $color in $bg-colors {
     .bg-#{$color} {
         background-color: color($color);
     }
+}
+
+.bg-none {
+    background: none;
 }
 
 .bg-brand-gradient {

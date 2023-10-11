@@ -1,4 +1,5 @@
 .grid {
+    --grid-min-size: 250px;
     display: grid;
     grid-gap: 1rem;
     grid-auto-rows: 1fr;
@@ -6,6 +7,13 @@
 
 @supports (width: min(250px, 100%)) {
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-min-size), 100%), 1fr));
     }
+}
+
+.grid-min-24rem {
+    --grid-min-size: 24rem;
+}
+.grid-min-6rem {
+    --grid-min-size: 6rem;
 }
