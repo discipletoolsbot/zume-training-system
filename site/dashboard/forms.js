@@ -452,7 +452,7 @@ window.cta_post_training_plan = () => {
           "question": jQuery(this).prev().text(),
           "answer": jQuery(this).val(),
           "date": date,
-          "category": "custom"
+          "category": "post_training_plan"
         }, 'zume_system/v1' ).done( function( data ) {
           console.log(data)
           jQuery('.plan-save-button').text('Saved').prop('disabled', true)
