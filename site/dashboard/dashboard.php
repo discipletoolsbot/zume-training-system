@@ -128,10 +128,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
                     <p><button class="button cta_work_the_plan" />CTA: Work the Plan</button></p>
                     <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
-                    <p><button class="button cta_join_vision" />CTA: Join Vision & Zume Community</button></p>
+                    <hr>
+                    <p><button class="button cta_join_vision" />CTA: Join Practioner Community</button></p>
+                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
                     <p><button class="button cta_commitments" />My Commitments</button></p>
                     <p><button class="button cta_host_progress" />My HOST Progress</button></p>
-                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
                 </div>
             </div>
             <!--END DEV SECTION -->
