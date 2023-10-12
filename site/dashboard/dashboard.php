@@ -85,6 +85,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'translations' => [],
                 'user_profile' => zume_get_user_profile(),
                 'training_items' => zume_training_items(),
+                'friends' => zume_get_user_friends(),
             )
         );
     }
@@ -109,30 +110,35 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             $host = zume_get_user_host();
             $commitments = zume_get_user_commitments();
             $mawl = zume_get_user_mawl();
+            $friends = zume_get_user_friends();
             ?>
             <hr />
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p><hr />
+                    <p><strong><?php echo esc_html__( 'User Friends', 'zume' ) ?></strong><pre><?php print_r( $friends ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Plans', 'zume' ) ?></strong><pre><?php print_r( $plans ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User HOST', 'zume' ) ?></strong><pre><?php print_r( $host ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Commitments', 'zume' ) ?></strong><pre><?php print_r( $commitments ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User MAWL', 'zume' ) ?></strong><pre><?php print_r( $mawl ); ?></pre></p><hr />
                 </div>
                 <div class="cell medium-6">
-                    <p><button class="button cta_set_profile" />CTA: Set Profile</button></p>
-                    <p><button class="button cta_get_a_coach" />CTA: Get a Coach</button></p>
-                    <p><button class="button cta_invite_friends" />CTA: Invite Friends</button></p>
-                    <p><button class="button cta_join_a_training" />CTA: Join a Training</button></p>
-                    <p><button class="button cta_make_a_plan" />CTA: Make a Plan</button></p>
-                    <p><button class="button cta_work_the_plan" />CTA: Work the Plan</button></p>
-                    <p><button class="button cta_post_training_plan" />CTA: Post Training (3-Month) Plan</button></p>
+                    <p><button class="button cta_set_profile" />Set Profile</button></p>
+                    <p><button class="button cta_get_a_coach" />Get a Coach</button></p>
+                    <p><button class="button cta_invite_friends" />Invite to Friendship</button></p>
+                    <p><button class="button cta_invite_plan" />Invite to Plan</button></p>
+                    <p><button class="button cta_join_a_training" />Join a Plan</button></p>
+                    <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
+                    <p><button class="button cta_work_the_plan" />Work a Plan</button></p>
+                    <p><button class="button cta_post_training_plan" />Create 3-Month Plan</button></p>
                     <hr>
-                    <p><button class="button cta_join_vision" />CTA: Join Practioner Community</button></p>
-                    <p><button class="button cta_practitioner_reports" />CTA: Report New Churches</button></p>
-                    <p><button class="button cta_commitments" />My Commitments</button></p>
-                    <p><button class="button cta_host_progress" />My HOST Progress</button></p>
+                    <p><button class="button cta_join_vision" />Join Practioner Community</button></p>
+                    <p><button class="button cta_practitioner_reports" />Report New Churches</button></p>
+                    <p><button class="button cta_commitments" />3-Month Commitments</button></p>
+                    <p><button class="button cta_host_progress" />HOST Progress</button></p>
+                    <hr>
+                    <p><button class="button cta_coaching_commitments" />Additional Coaching Commitments</button></p>
                 </div>
             </div>
             <!--END DEV SECTION -->

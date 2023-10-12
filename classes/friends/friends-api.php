@@ -43,7 +43,7 @@ class Zume_Friends_Endpoints
     public function connect_to_friend( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset(  $params['value'] ) ) {
+        if ( ! isset( $params['value'] ) ) {
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
@@ -63,6 +63,7 @@ class Zume_Friends_Endpoints
                 ]
             ];
              $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
+             dt_write_log( $result );
              if ( ! is_wp_error( $result ) && is_array( $result ) ) {
                  zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
                  return $result;
@@ -105,7 +106,7 @@ class Zume_Friends_Endpoints
                 ]
             ];
             $result = DT_Posts::update_post('contacts', $contact_id, $fields, true, false  );
-            dt_write_log($result);
+
             if ( ! is_wp_error( $result ) && is_array( $result ) ) {
                 zume_log_insert( 'system', 'plan_created', [ 'user_id' => $user_id ], true );
                 return $result;

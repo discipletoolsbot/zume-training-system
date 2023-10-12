@@ -1,5 +1,5 @@
 console.log('User Profile')
-console.log(zumeForms.user_profile)
+console.log(zumeForms)
 
 // listeners
 jQuery(document).ready(function() {
@@ -17,6 +17,9 @@ jQuery(document).ready(function() {
   })
   jQuery('.cta_invite_friends').click(function() {
     window.cta_invite_friends()
+  })
+  jQuery('.cta_invite_plan').click(function() {
+    window.cta_invite_plan()
   })
   jQuery('.cta_work_the_plan').click(function() {
     window.cta_work_the_plan()
@@ -166,8 +169,6 @@ window.cta_join_a_training = () => {
     })
   })
 
-
-
   jQuery('#modal-large').foundation('open')
 }
 window.cta_make_a_plan = () => {
@@ -264,19 +265,75 @@ window.cta_invite_friends = () => {
   title.empty()
   content.empty()
 
-  title.append('Invite Friends')
+  title.append('Invite Friends<hr>')
+
+  let list = ''
+  jQuery.each(zumeForms.friends, function(index, value) {
+    list += `<li data-contactId="${value.contact_id}" data-userID="${value.user_id}">${value.name}</li>`
+  })
+
+  content.append(`
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+       <div class="input-group">
+            <input class="input-group-field add_friend_code" type="text" value="" >
+            <button class="button input-group-label connect_friend">Connect to Friend</button>
+            <button class="button input-group-label  close_friend" style="display:none;" onclick="location.reload()">Close</button>
+        </div>
+
+      </div>
+      <div class="cell">
+        <div class="input-group">
+            <input class="input-group-field friend_code_url" type="text" value="https://zume5.training/zume_app/friend_invite/?code=${zumeForms.user_profile.friend_key}" >
+            <button class="button input-group-label copy_friend_code">Connect</button>
+        </div>
+      </div>
+      <div class="cell" ><u>List of Friends</u><br>
+        <ul>
+            ${list}
+        </ul>
+      </div>
+    </div>
+  `)
+
+  jQuery('.connect_friend').click(function() {
+    console.log('connect_friend')
+    let value = jQuery('.add_friend_code').val()
+    jQuery('.connect_friend').prop('disabled', true)
+
+    makeRequest('POST', 'connect/friend', { "value": value }, 'zume_system/v1' ).done( function( data ) {
+      console.log(data)
+      jQuery('.close_friend').show()
+    })
+  })
+
+  jQuery('.copy_friend_code').click(function() {
+    let copyText = jQuery('.friend_code_url').val()
+    console.log(copyText)
+    navigator.clipboard.writeText(copyText);
+    alert("Copied the link: " + copyText);
+  })
+
+  jQuery('#modal-large').foundation('open')
+}
+window.cta_invite_plan = () => {
+  console.log('cta_invite_plan')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Invite to Plan')
 
   content.append(`
     <div class="grid-x grid-padding-y">
-      <div class="cell">
-        <input type="text" placeholder="Add friend code of friend in the system" />
-        <button class="button connect_friend" value="code">Connect Friend by Code</button>
-        <button class="button close_friend" style="display:none;" onclick="location.reload()">Close</button>
+       <div class="cell">
+          <input type="text" placeholder="Add to plan" />
+          <button class="button connect_plan" value="code">Invite to Plan</button>
+          <button class="button close_plan" style="display:none;" onclick="location.reload()">Connect by Code</button>
       </div>
        <div class="cell">
-          <input type="text" placeholder="Add friend code of friend in the system" />
-          <button class="button connect_plan" value="code">Connect Friend to Plan by Code</button>
-          <button class="button close_plan" style="display:none;" onclick="location.reload()">Connect by Code</button>
+        <p><a href="https://zume5.training/zume_app/plan_invite/" target="_blank">https://zume5.training/zume_app/friend_invite/</a></p>
       </div>
     </div>
   `)
@@ -586,13 +643,13 @@ window.cta_host_progress = () => {
 
     if ( jQuery(this).hasClass('secondary') ) {
       jQuery(this).removeClass('secondary')
-      makeRequest('POST', 'host', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
+      makeRequest('POST', 'host', { type: type, subtype: subtype, user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
         window.load_host_status()
       })
     } else {
       jQuery(this).addClass('secondary')
-      makeRequest('DELETE', 'host', { type: type, subtype: subtype }, 'zume_system/v1' ).done( function( data ) {
+      makeRequest('DELETE', 'host', { type: type, subtype: subtype, user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
         window.load_host_status()
       })
@@ -605,7 +662,7 @@ window.cta_host_progress = () => {
 }
 window.load_host_status = () => {
   jQuery('.host.loading-spinner').addClass('active')
-  makeRequest('GET', 'host', {}, 'zume_system/v1' ).done( function( data ) {
+  makeRequest('GET', 'host', { user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
     if ( data.list ) {
       jQuery.each( data.list, function( i, v ) {
@@ -632,7 +689,7 @@ window.cta_commitments = () => {
   title.empty()
   content.empty()
 
-  title.append('Commitments')
+  title.append('Post Training Commitments (3 Month Plan) <span class="commitments loading-spinner active"></span>')
 
   makeRequest('GET', 'commitments', {}, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
@@ -681,6 +738,8 @@ window.cta_commitments = () => {
         window.cta_commitments()
       })
     })
+
+    jQuery('.commitments.loading-spinner').removeClass('active')
 
   })
 
