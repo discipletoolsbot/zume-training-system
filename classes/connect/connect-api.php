@@ -63,7 +63,6 @@ class Zume_Friends_Endpoints
                 ]
             ];
              $result = DT_Posts::update_post('contacts', $current_contact_id, $fields, true, false  );
-             dt_write_log( $result );
              if ( ! is_wp_error( $result ) && is_array( $result ) ) {
                  zume_log_insert( 'system', 'invited_friends', [ 'user_id' => $current_user_id ], true );
                  return $result;

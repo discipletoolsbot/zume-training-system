@@ -140,7 +140,7 @@ window.cta_join_a_training = () => {
           </div>
           <div class="card-section">
                 <button type="button" class="button join_training_button" value="${plan.join_key}">Join</button> <span class="loading-spinner"></span><br>
-               ${plan.time_of_day_note}
+                ${plan.time_of_day_note}
                 ${plan.location_note}
                 ${plan.timezone_note}`
 
@@ -155,13 +155,16 @@ window.cta_join_a_training = () => {
     }
 
     jQuery('.join_training_button').click(function() {
+
       console.log('join_training_button')
       jQuery('.loading-spinner').addClass('active')
+
       let key = jQuery(this).val()
-      makeRequest('POST', 'join_plan', {key: key}, 'zume_system/v1' ).done( function( data ) {
+      makeRequest('POST', 'plan', { key: key }, 'zume_system/v1' ).done( function( data ) {
         jQuery('.join_training_button').text('Joined').prop('disabled', true)
         jQuery('.loading-spinner').removeClass('active')
       })
+
       makeRequest('POST', 'log', { type: 'system', subtype: 'joined_online_training' }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
       })
@@ -191,30 +194,28 @@ window.cta_make_a_plan = () => {
   </div>
   `)
 
+
   let start_date = jQuery('#start_date')
   jQuery('#install_10_sessions').click(function() {
     let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
     let fields = {
       'title': zumeForms.user_profile.name + ' Plan',
-      'assigned_to': zumeForms.user_profile.user_id,
-      'visibility': 'private',
-      'participants': {
-        values: [
-          { "value": zumeForms.user_profile.contact_id }
-        ],
-      },
-      'set_a_01': date + (0 * 604800 ),
-      'set_a_02': date + (1 * 604800 ),
-      'set_a_03': date + (2 * 604800 ),
-      'set_a_04': date + (3 * 604800 ),
-      'set_a_05': date + (4 * 604800 ),
-      'set_a_06': date + (5 * 604800 ),
-      'set_a_07': date + (6 * 604800 ),
-      'set_a_08': date + (7 * 604800 ),
-      'set_a_09': date + (8 * 604800 ),
-      'set_a_10': date + (9 * 604800 ),
+      'user_id': zumeForms.user_profile.user_id,
+      'contact_id': zumeForms.user_profile.contact_id,
+      'set': {
+        'set_a_01': date + (0 * 604800),
+        'set_a_02': date + (1 * 604800),
+        'set_a_03': date + (2 * 604800),
+        'set_a_04': date + (3 * 604800),
+        'set_a_05': date + (4 * 604800),
+        'set_a_06': date + (5 * 604800),
+        'set_a_07': date + (6 * 604800),
+        'set_a_08': date + (7 * 604800),
+        'set_a_09': date + (8 * 604800),
+        'set_a_10': date + (9 * 604800),
+      }
     };
-    makeRequest('POST', 'zume_plans', fields, 'dt-posts/v2' ).done( function( data ) {
+    makeRequest( 'POST', 'plan', fields, 'zume_system/v1' ).done( function( data ) {
       location.reload()
     })
   })
@@ -223,35 +224,32 @@ window.cta_make_a_plan = () => {
     let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
     let fields = {
       'title': zumeForms.user_profile.name + ' Plan',
-      'assigned_to': zumeForms.user_profile.user_id,
-      'visibility': 'private',
-      'participants': {
-         values: [
-              { "value": zumeForms.user_profile.contact_id }
-         ],
-      },
-      'set_b_01': date + ( 0 * 604800 ),
-      'set_b_02': date + ( 1 * 604800 ),
-      'set_b_03': date + ( 2 * 604800 ),
-      'set_b_04': date + ( 3 * 604800 ),
-      'set_b_05': date + ( 4 * 604800 ),
-      'set_b_06': date + ( 5 * 604800 ),
-      'set_b_07': date + ( 6 * 604800 ),
-      'set_b_08': date + ( 7 * 604800 ),
-      'set_b_09': date + ( 8 * 604800 ),
-      'set_b_10': date + ( 9 * 604800 ),
-      'set_b_11': date + ( 10 * 604800 ),
-      'set_b_12': date + ( 11 * 604800 ),
-      'set_b_13': date + ( 12 * 604800 ),
-      'set_b_14': date + ( 13 * 604800 ),
-      'set_b_15': date + ( 14 * 604800 ),
-      'set_b_16': date + ( 15 * 604800 ),
-      'set_b_17': date + ( 16 * 604800 ),
-      'set_b_18': date + ( 17 * 604800 ),
-      'set_b_19': date + ( 18 * 604800 ),
-      'set_b_20': date + ( 19 * 604800 ),
+      'user_id': zumeForms.user_profile.user_id,
+      'contact_id': zumeForms.user_profile.contact_id,
+      'set': {
+        'set_b_01': date + (0 * 604800),
+        'set_b_02': date + (1 * 604800),
+        'set_b_03': date + (2 * 604800),
+        'set_b_04': date + (3 * 604800),
+        'set_b_05': date + (4 * 604800),
+        'set_b_06': date + (5 * 604800),
+        'set_b_07': date + (6 * 604800),
+        'set_b_08': date + (7 * 604800),
+        'set_b_09': date + (8 * 604800),
+        'set_b_10': date + (9 * 604800),
+        'set_b_11': date + (10 * 604800),
+        'set_b_12': date + (11 * 604800),
+        'set_b_13': date + (12 * 604800),
+        'set_b_14': date + (13 * 604800),
+        'set_b_15': date + (14 * 604800),
+        'set_b_16': date + (15 * 604800),
+        'set_b_17': date + (16 * 604800),
+        'set_b_18': date + (17 * 604800),
+        'set_b_19': date + (18 * 604800),
+        'set_b_20': date + (19 * 604800),
+      }
     };
-    makeRequest('POST', 'zume_plans', fields, 'dt-posts/v2' ).done( function( data ) {
+    makeRequest( 'POST', 'plan', fields, 'zume_system/v1' ).done( function( data ) {
       location.reload()
     })
   });
@@ -325,39 +323,30 @@ window.cta_invite_plan = () => {
 
   title.append('Invite to Plan')
 
-  content.append(`
-    <div class="grid-x grid-padding-y">
-       <div class="cell">
-          <input type="text" placeholder="Add to plan" />
-          <button class="button connect_plan" value="code">Invite to Plan</button>
-          <button class="button close_plan" style="display:none;" onclick="location.reload()">Connect by Code</button>
-      </div>
-       <div class="cell">
-        <p><a href="https://zume5.training/zume_app/plan_invite/" target="_blank">https://zume5.training/zume_app/friend_invite/</a></p>
-      </div>
-    </div>
-  `)
-
-  jQuery('.connect_friend').click(function() {
-    console.log('connect_friend')
-    let value = jQuery(this).prev().val()
-    jQuery('.connect_friend').prop('disabled', true)
-
-    makeRequest('POST', 'connect/friends', { "value": value }, 'zume_system/v1' ).done( function( data ) {
-      console.log(data)
-      jQuery('.close_friend').show()
+  makeRequest('GET', 'plans', { user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
+    console.log(data)
+    jQuery.each(data, function(index, value) {
+      content.append(`
+        <div class="grid-x grid-padding-y">
+          <div class="cell">
+            <div class="input-group">
+                <input class="input-group-field plan_invite" type="text" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}" >
+                <button class="button input-group-label copy_plan_code" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}">Copy ${value.title}</button>
+            </div>
+          </div>
+        </div>
+      `)
     })
   })
 
-  jQuery('.connect_plan').click(function() {
-    console.log('connect_plan')
-    let value = jQuery(this).prev().val()
-    jQuery('.connect_plan').prop('disabled', true)
+  jQuery('.copy_plan_code').click(function() {
+    console.log('copy_plan_code')
+    let value = jQuery(this).val()
+    jQuery(this).prop('disabled', true)
 
-    makeRequest('POST', 'connect/plan', { "value": value }, 'zume_system/v1' ).done( function( data ) {
-      console.log(data)
-      jQuery('.close_plan').show()
-    })
+    navigator.clipboard.writeText(value)
+
+    alert("Copied the link: " + value);
   })
 
   jQuery('#modal-large').foundation('open')
@@ -608,8 +597,6 @@ window.child_church = ( parent_post_id ) => {
     jQuery('.level-2').append('<p>Child of ' + data.ID + '</p>')
   })
 }
-
-
 window.cta_host_progress = () => {
   console.log('cta_host_progress')
   let title = jQuery('#modal-small-title')
@@ -674,14 +661,11 @@ window.load_host_status = () => {
     }
   })
 }
-
 window.cta_join_vision = () => {
   makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( function( data ) {
     location.reload()
   })
 }
-
-
 window.cta_commitments = () => {
   console.log('cta_commitments')
   let title = jQuery('#modal-large-title')

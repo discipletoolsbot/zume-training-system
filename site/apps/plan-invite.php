@@ -2,7 +2,7 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Training_Friend_Invite extends Zume_Magic_Page
+class Zume_Training_Plan_Invite extends Zume_Magic_Page
 {
     use Translateable;
 
@@ -10,9 +10,9 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
-    public $type = 'friend_invite';
+    public $type = 'plan_invite';
     public $lang = 'en';
-    public static $token = 'zume_app_friend_invite';
+    public static $token = 'zume_app_plan_invite';
 
     private static $_instance = null;
     public static function instance() {
@@ -33,7 +33,7 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) && ! dt_is_rest() ) {
+        if ( ( 'zume_app' === $url_parts[0] && 'plan_invite' === $url_parts[1] ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -75,16 +75,16 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                jQuery('.friend_code_submit').click(function(){
-                    var friend_code = jQuery('.friend_code').val();
-                    if ( ! friend_code ) {
+                jQuery('.plan_code_submit').click(function(){
+                    var plan_code = jQuery('.plan_code').val();
+                    if ( ! plan_code ) {
                         alert('Please enter a friend code.');
                         return;
                     }
 
-                    makeRequest('POST', 'connect/friend', { "value": friend_code }, 'zume_system/v1' ).done( function( data ) {
+                    makeRequest('POST', 'connect/plan', { "value": plan_code }, 'zume_system/v1' ).done( function( data ) {
                         console.log(data)
-                        jQuery('.friend_code_submit').text('Done').prop('disabled', true);
+                        jQuery('.plan_code_submit').text('Done').prop('disabled', true);
                     })
                 });
             });
@@ -95,9 +95,9 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
     public function body(){
         global $zume_user_profile;
 
-        $friend_code = false;
+        $plan_code = false;
         if ( isset( $_GET['code'] ) ) {
-            $friend_code = $_GET['code'];
+            $plan_code = $_GET['code'];
         }
 
         require __DIR__ . '/../parts/nav.php';
@@ -105,11 +105,11 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
         <div class="container page">
             <div class="grid-x">
                 <div class="cell small-6">
-                    <h1>Friend Invitation</h1>
+                    <h1>Plan Invitation</h1>
                     <p>Use the code your friend sent you.</p>
                     <div class="input-group">
-                        <input class="input-group-field friend_code" type="text" value="<?php echo ( $friend_code ) ? $friend_code : ''  ?>" >
-                        <button class="button input-group-label friend_code_submit">Connect</button>
+                        <input class="input-group-field plan_code" type="text" value="<?php echo ( $plan_code ) ? $plan_code : ''  ?>" >
+                        <button class="button input-group-label plan_code_submit">Connect</button>
                     </div>
                 </div>
             </div>
@@ -117,4 +117,4 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
         <?php
     }
 }
-Zume_Training_Friend_Invite::instance();
+Zume_Training_Plan_Invite::instance();

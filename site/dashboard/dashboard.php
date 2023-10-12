@@ -127,9 +127,9 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_set_profile" />Set Profile</button></p>
                     <p><button class="button cta_get_a_coach" />Get a Coach</button></p>
                     <p><button class="button cta_invite_friends" />Invite to Friendship</button></p>
-                    <p><button class="button cta_invite_plan" />Invite to Plan</button></p>
                     <p><button class="button cta_join_a_training" />Join a Plan</button></p>
                     <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
+                    <p><button class="button cta_invite_plan" />Invite to Plan</button></p>
                     <p><button class="button cta_work_the_plan" />Work a Plan</button></p>
                     <p><button class="button cta_post_training_plan" />Create 3-Month Plan</button></p>
                     <hr>
