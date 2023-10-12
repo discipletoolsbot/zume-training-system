@@ -49,6 +49,8 @@
     --z-white: #FFF;
     --z-brand-gradient: linear-gradient( var(--z-brand) 10%, #004664 );
     --z-shadow: rgba(0, 0, 0, 0.1);
+    --z-box-shadow-soft: var(--z-shadow) 0px 5px 10px 0px;
+    --z-box-shadow-hard: rgba(0,0,0,0.5) 0px 2px 5px 0px;
 
     --header-color-light: var(--z-black);
     --header-color-dark: var(--z-white);

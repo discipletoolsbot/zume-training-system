@@ -10,6 +10,10 @@
     transition: all 100ms linear;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     color: color('brand');
 

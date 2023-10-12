@@ -132,8 +132,8 @@ class Zume_Training_Guidebook extends Zume_Magic_Page
         </div>
 
         <div class="bg-gray-100 page">
-            <div class="container-md stack-2">
-                <h2 class="h1 text-center"><?php echo esc_html__( 'Zume Lessons & Resources (PDF)' ) ?></h2>
+            <div class="container-md stack-2 | text-center">
+                <h2 class="h1"><?php echo esc_html__( 'Zume Lessons & Resources (PDF)' ) ?></h2>
                 <div class="mx-auto w-4rem">
                     <?php //phpcs:ignore ?>
                     <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/pdf-icon.svg' ) ?>
@@ -245,7 +245,7 @@ class Zume_Training_Guidebook extends Zume_Magic_Page
 
                     <p class="text-center bold f-1"><?php echo esc_html__( 'FULL ACCESS to Zume resources for all registered users.', 'zume' ) ?></p>
 
-                    <a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn light large uppercase mx-auto fit-content my-3"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn light large uppercase mx-auto fit-content my-3"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
 
                 <?php endif; ?>
 
@@ -253,14 +253,14 @@ class Zume_Training_Guidebook extends Zume_Magic_Page
         </div>
 
         <div class="rounded shadow border-1 | reveal" id="register-modal" data-reveal>
-            <button class="ms-auto d-block" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
+            <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button">
+                <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/close-button-01.svg' ) ?>" alt="close button">
             </button>
             <div class="switcher | switcher-width-10">
                 <img class="h-16rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Thinking-01.svg' ) ?>" alt="man thinking">
                 <div class="stack-2 | grow-4 justify-content-center text-center">
                     <p><?php echo esc_html__( 'Would you like access to all Zume Training resources?', 'zume' ) ?></p>
-                    <a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn light uppercase large"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn light uppercase large"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
                 </div>
             </div>
 

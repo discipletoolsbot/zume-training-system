@@ -155,9 +155,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 </div>
 
                 <button class="btn" id="submit-profile"><?php echo esc_html__( 'Save', 'zume' ) ?></button>
-                <span class="loading-spinner">
-                    <img src="<?php echo esc_url( trailingslashit( plugin_dir_url( __DIR__ ) ) . 'assets/images/spinner.svg' ) ?>" alt="spinner">
-                </span>
+                <span class="loading-spinner"></span>
 
             </form>
 

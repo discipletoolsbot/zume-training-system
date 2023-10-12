@@ -22,6 +22,9 @@
     top: 50%;
     transform: translateY(-50%);
 }
+.absolute.middle.center {
+    transform: translate(-50%, -50%);
+}
 
 .position-relative {
     position: relative;

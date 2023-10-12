@@ -214,6 +214,10 @@ header {
   opacity: 0.2;
   background-position: center left;
 }
+.multiply-cover.color {
+  background-image: url('/wp-content/plugins/zume-training-system/site/assets/images/MultiplyingDisciples-1.svg');
+  opacity: 0.1;
+}
 .bg-world {
   background-image: url('/wp-content/plugins/zume-training-system/site/assets/images/world-map.svg');
   background-repeat: no-repeat;
@@ -241,11 +245,20 @@ header {
   border: 2px solid color('white');
   border-radius: var(--border-radius);
 }
+.video-play-button {
+  cursor: pointer;
+}
 .video-play {
-  &:hover, &:focus {
-    transition: all 100ms linear;
-    transform: scale(1.1);
-  }
+  --play-button-size: #{spacing(4)};
+  --play-button-color: #{color('brand-lighter')};
+  --play-button-hover-color: #{color('brand')};
+  --play-button-shadow: var(--z-box-shadow-hard);
+}
+.home-video-play {
+  --play-button-size: #{spacing(4)};
+  --play-button-color: #{color('brand')};
+  --play-button-hover-color: #{color('brand-light')};
+  --play-button-shadow: var(--z-box-shadow-hard);
 }
 
 .real-people {
@@ -310,6 +323,30 @@ header {
   opacity: 0.2;
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spiner {
+  display: none;
+}
+.loading-spinner.active {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 0.25rem solid #919191;
+    border-top-color: black;
+    animation: spin 1s infinite linear;
+    display: inline-block;
+}
+
+
 @media (min-width: $break-lg) {
 
     .row {
@@ -344,28 +381,10 @@ header {
 
 }
 
-.loading-spinner {
-  display: none;
-}
 
 .footer {
   color: color('white');
   background-color: color('brand');
   font-size: 0.75rem;
   padding: var(--s2) 0;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-.loading-spinner.active {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    vertical-align: middle;
 }

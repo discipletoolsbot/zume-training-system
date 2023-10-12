@@ -23,9 +23,8 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
 
     public function require_authentication() {
         if ( !is_user_logged_in() ) {
-            $url = dt_create_site_url( '', [ 'redirect_to' => rawurlencode( dt_create_site_url( 'profile' ) ) ] );
-
-            wp_redirect( dt_login_url( 'login', $url ) );
+            $redirect_url = dt_create_site_url( 'profile' );
+            wp_redirect( zume_login_url( 'login', $redirect_url ) );
             exit;
         }
     }

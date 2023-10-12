@@ -117,7 +117,7 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
 
             </div>
 
-            <a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn uppercase fit-content mx-auto"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn uppercase fit-content mx-auto"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></a>
 
         </div>
         <?php

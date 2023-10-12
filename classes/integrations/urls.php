@@ -59,6 +59,64 @@ function zume_home_url( $current_language = null ) {
     return $home_url;
 }
 
+/**
+ * Get the login/register url for zume, with an optional redirect url
+ *
+ * $type can be 'login' | 'register', or any other input to dt_login_url
+ *
+ * @param string $type
+ * @param string $redirect_url
+ *
+ * @return string
+ */
+function zume_login_url( $type = 'login', $redirect_url ) {
+    if ( $redirect_url ) {
+        $url = dt_create_site_url( '', [ 'redirect_to' => rawurlencode( $redirect_url ) ] );
+        return dt_login_url( $type, $url );
+    }
+
+    return dt_login_url( $type );
+}
+
+function zume_get_a_coach_wizard_url() {
+    $redirect_url = zume_wizard_url( 'coaching' );
+    return zume_login_url( 'register', $redirect_url );
+}
+function zume_make_a_plan_wizard_url() {
+    $redirect_url = zume_wizard_url( 'plan' );
+    return zume_login_url( 'register', $redirect_url );
+}
+function zume_join_a_training_wizard_url() {
+    $redirect_url = zume_wizard_url( 'join' );
+    return zume_login_url( 'register', $redirect_url );
+}
+
+function zume_wizard_url( $type = 'plan' ) {
+    $lang_code = zume_current_language();
+
+    $wizard_root = 'wizard';
+
+    switch ( $type ) {
+        case 'plan':
+            $url = "$wizard_root/make-a-plan";
+            break;
+        case 'coaching':
+            $url = "$wizard_root/connect-to-coach";
+            break;
+        case 'join':
+            $url = "$wizard_root/join-a-training";
+            break;
+        default:
+            $url = '';
+    }
+
+    if ( $lang_code === 'en' ) {
+        return dt_create_site_url( $url );
+    }
+
+    return dt_create_site_url( $lang_code . '/' . $url );
+}
+
 function zume_dashboard_url( $current_language = null ) {
     if ( is_null( $current_language ) ) {
         $current_language = zume_current_language();

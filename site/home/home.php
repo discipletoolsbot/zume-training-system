@@ -101,7 +101,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <p><?php echo esc_html__( 'for small groups who follow Jesus to learn how to obey His Great Commission and make disciples who multiply', 'zume' ) ?></p>
                 </div>
                 <div class="stack--1 | justify-content-center align-items-center text-center">
-                    <a href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
                     <a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn large outline uppercase w-80 px-0"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
                 </div>
             </div>
@@ -121,10 +121,10 @@ class Zume_Training_Home extends Zume_Magic_Page
         <div class="cover-page | p-3 text-center bg-brand-gradient">
             <h2 class="white"><?php echo esc_html__( 'Be a Disciple. Make Disciples', 'zume' ) ?></h2>
             <div class="container stack-2 | align-items-center">
-                <div class="w-80 video-frame mx-auto position-relative">
+                <div class="w-80 video-frame mx-auto position-relative bg-white">
                     <div class="w-60 mx-auto"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"></div>
-                    <button class="absolute top bottom left right video-play">
-                        <img class="mx-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play">
+                    <button class="absolute top bottom left right video-play-button">
+                        <play-button class="home-video-play"></play-button>
                     </button>
                 </div>
                 <button class="btn large outline dark fit-content uppercase"><?php echo esc_html__( 'Watch', 'zume' ) ?></button>
@@ -289,17 +289,17 @@ class Zume_Training_Home extends Zume_Magic_Page
                 <div class="stack-2 justify-content-between">
                     <img class="mx-auto h-40" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GetACoach.svg' ) ?>" alt="<?php echo esc_attr__( 'Get a coach', 'zume' ) ?>">
                     <p><?php echo esc_html__( 'Zume offers free online coaching by experienced practitioners who want to see you become a faithful disciple', 'zume' ) ?></p>
-                    <a href="#" class="btn large outline uppercase"><?php echo esc_html__( 'Get a coach', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn large outline uppercase"><?php echo esc_html__( 'Get a coach', 'zume' ) ?></a>
                 </div>
                 <div class="stack-2 justify-content-between">
                     <img class="mx-auto h-40" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JoinATraining.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training', 'zume' ) ?>">
                     <p><?php echo esc_html__( 'Join a LIVE online training facilitated by experienced practitioners. Grow and learn with other Jesus followers', 'zume' ) ?></p>
-                    <a href="#" class="btn large outline uppercase"><?php echo esc_html__( 'Join a training', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_join_a_training_wizard_url() ) ?>" class="btn large outline uppercase"><?php echo esc_html__( 'Join a training', 'zume' ) ?></a>
                 </div>
                 <div class="stack-2 justify-content-between">
                     <img class="mx-auto h-40" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Register.svg' ) ?>" alt="<?php echo esc_attr__( 'Register', 'zume' ) ?>">
                     <p><?php echo esc_html__( 'Zume registration is completely free! Customize your own training and facilitate with your friends, family and church', 'zume' ) ?></p>
-                    <a href="#" class="btn large light uppercase"><?php echo esc_attr__( 'Register', 'zume' ) ?></a>
+                    <a href="<?php esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase"><?php echo esc_attr__( 'Register', 'zume' ) ?></a>
                 </div>
             </div>
         </div>

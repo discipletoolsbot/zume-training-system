@@ -29,7 +29,7 @@
                         <a role="listitem" href="<?php echo esc_url( zume_course_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( '/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
-                        <a role="listitem" href="<?php echo esc_url( dt_login_url( 'register' ) ) ?>" class="btn outline dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn outline dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
 
                     <?php endif; ?>
 

@@ -87,24 +87,26 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         require __DIR__ . '/../parts/nav.php';
         ?>
 
-        <div class="position-relative">
-            <div class="multiply-cover show-for-medium"></div>
-            <div class="multiply-cover flip show-for-medium"></div>
+        <div class="cover-page | position-relative">
+            <div class="multiply-cover color flip show-for-large"></div>
+            <div class="multiply-cover color show-for-large"></div>
             <div class="container stack-2 | page">
                 <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
                 <div class="center">
-                    <div class="video-thumbnail shadow w-70 position-relative">
+                    <div class="video-thumbnail shadow w-70 position-relative rounded">
                         <img class="rounded-top" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/4Relationships-thumbnail.png' ) ?>" alt="The four relationships video">
-                        <div class="video-thumbnail__footer bg-brand-light white text-center rounded-bottom stack p-1">
+                        <div class="video-thumbnail__footer bg-brand-light white text-center stack p-1">
                             <h2 class="h3"><?php echo esc_html__( 'Four Relationships', 'zume' ) ?></h2>
                             <p class="w-80 mx-auto"><?php echo esc_html__( 'Watch this important video explaining the 4 relationships of your new life', 'zume' ) ?></p>
                         </div>
-                        <button class="absolute top bottom left right video-play">
-                            <img class="mx-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play">
+                        <button class="absolute top bottom left right | video-play-button">
+                            <play-button class="video-play"></play-button>
                         </button>
                     </div>
                 </div>
                 <p class="mx-auto"><?php echo esc_html__( 'The sections below, will teach you what it means to be a follower (disciple) of Jesus', 'zume' ) ?></p>
+
+                <button class="mx-auto w-3rem"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/chevron.svg' ) ?>" alt="down button"></button>
             </div>
         </div>
 

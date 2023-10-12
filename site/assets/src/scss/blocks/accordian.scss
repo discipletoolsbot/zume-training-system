@@ -12,6 +12,20 @@
     text-decoration: none;
     color: color('brand');
 }
+.accordion-title:before {
+    top: 50%;
+    right: spacing(1);
+    margin: 0;
+    content: url('/wp-content/plugins/zume-training-system/site/assets/images/chevron.svg#Group_649');
+    width: font-size(3);
+    transform: translateY(-50%);
+    filter: brightness(0);
+}
+.is-active>.accordion-title::before {
+    content: url('/wp-content/plugins/zume-training-system/site/assets/images/chevron.svg');
+    transform: scaleY(-1) translateY(50%);
+    filter: brightness(1);
+}
 .accordion-content {
     padding-inline: spacing(3);
     padding-block: spacing(2);
