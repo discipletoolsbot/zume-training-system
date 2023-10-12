@@ -6,7 +6,7 @@ if ( !defined( 'ABSPATH' ) ) {
  * Custom endpoints file
  */
 
-class Zume_Friends_Endpoints
+class Zume_Connect_Endpoints
 {
     private $namespace;
     private static $_instance = null;
@@ -43,13 +43,13 @@ class Zume_Friends_Endpoints
     public function connect_to_friend( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset( $params['value'] ) ) {
+        if ( ! isset( $params['code'] ) ) {
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
         // does key exist
         // if so, then connect current user with friend
-        if ( $contact_id = $this->test_friend_key( $params['value'] ) ) {
+        if ( $contact_id = $this->test_friend_key( $params['code'] ) ) {
             $current_user_id = get_current_user_id();
             $current_contact_id = zume_get_user_contact_id( $current_user_id );
 
@@ -85,14 +85,14 @@ class Zume_Friends_Endpoints
     public function connect_to_plan( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset(  $params['value'] ) ) {
+        if ( ! isset( $params['code'] ) ) {
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
         // does key exist
         // if so, then connect current user with friend
-        if ( $plan_post_id = $this->test_join_key( $params['value'] ) ) {
-            dt_write_log($plan_post_id);
+        if ( $plan_post_id = $this->test_join_key( $params['code'] ) ) {
+
             $user_id = get_current_user_id();
             $contact_id = zume_get_user_contact_id( $user_id );
             $fields = [
@@ -125,6 +125,5 @@ class Zume_Friends_Endpoints
         }
         return false;
     }
-
 }
-Zume_Friends_Endpoints::instance();
+Zume_Connect_Endpoints::instance();

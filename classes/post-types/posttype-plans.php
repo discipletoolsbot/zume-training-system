@@ -224,7 +224,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'name'        => __( 'Join Key', 'zume-training-system' ),
                 'description' => 'Key to join the training, like a password or meeting ID',
                 'type'        => 'text',
-                'default'     => '',
+                'default'     => $this->generate_join_key(),
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/qrcode-solid.svg',
             ];
@@ -635,13 +635,12 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     public function dt_post_create_fields( $fields, $post_type ){
         if ( $post_type === $this->post_type ){
             $post_fields = DT_Posts::get_post_field_settings( $post_type );
-            if ( isset( $post_fields['status'] ) && !isset( $fields['status'] ) ){
+            if ( !isset( $fields['status'] ) || empty( $fields['status'] ) ) {
                 $fields['status'] = 'active';
             }
-            if ( isset( $post_fields['join_key'] ) && !isset( $fields['join_key'] ) ){
+            if ( !isset( $post_fields['join_key'] ) || empty( $post_fields['join_key'] ) ) {
                 $fields['join_key'] = $this->generate_join_key();
             }
-
         }
         return $fields;
     }

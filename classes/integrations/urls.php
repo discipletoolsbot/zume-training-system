@@ -69,7 +69,7 @@ function zume_home_url( $current_language = null ) {
  *
  * @return string
  */
-function zume_login_url( $type = 'login', $redirect_url ) {
+function zume_login_url( $type = 'login', $redirect_url = false ) {
     if ( $redirect_url ) {
         $url = dt_create_site_url( '', [ 'redirect_to' => rawurlencode( $redirect_url ) ] );
         return dt_login_url( $type, $url );

@@ -160,7 +160,7 @@ window.cta_join_a_training = () => {
       jQuery('.loading-spinner').addClass('active')
 
       let key = jQuery(this).val()
-      makeRequest('POST', 'plan', { key: key }, 'zume_system/v1' ).done( function( data ) {
+      makeRequest('POST', 'connect/plan', { code: key }, 'zume_system/v1' ).done( function( data ) {
         jQuery('.join_training_button').text('Joined').prop('disabled', true)
         jQuery('.loading-spinner').removeClass('active')
       })
@@ -361,25 +361,25 @@ window.cta_work_the_plan = () => {
   title.append('Work the Plan<hr>')
 
   // post list
-  makeRequest('POST', 'zume_plans/list', {"fields":[{"participants":[ zumeForms.user_profile.contact_id ]}],"sort":"name","offset":0}, 'dt-posts/v2' ).done( function( data ) {
+  makeRequest('GET', 'plans', { user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
-    if (data.posts.length == 0) {
+    if (data.length == 0) {
       console.log(data)
       return
     }
     let html = ''
-    jQuery.each(data.posts, function (key, plan) {
+    jQuery.each( data, function (key, plan) {
       html += `
         <div class="grid-x grid-padding-x">
           <div class="cell">
-            <h5>${plan.post_title}</h5>
+            <h5>${plan.title}</h5>
           </div>
         `
       jQuery.each(plan, function (key, value) {
         if (key.startsWith('set_')) {
           html += `
             <div class="cell" style="margin-bottom:5px;">
-              ${key} | ${value.formatted} <button class="button working ${key}" value="${key}">Checking/Mark Complete</button>
+              ${key} | ${value.date_formatted} <button class="button working ${key}" value="${key}">Checking/Mark Complete</button>
             </div>`
         }
       })

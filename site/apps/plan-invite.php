@@ -70,21 +70,29 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
     }
 
     public function header_style(){
+        global $zume_user_profile;
         ?>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                jQuery('.plan_code_submit').click(function(){
-                    var plan_code = jQuery('.plan_code').val();
-                    if ( ! plan_code ) {
+                jQuery('.code_submit').click(function(){
+                    let code = jQuery('.code').val();
+                    jQuery('#code_error').empty();
+                    if ( ! code ) {
                         alert('Please enter a friend code.');
                         return;
                     }
+                    let user_id = '<?php echo $zume_user_profile['user_id']; ?>';
 
-                    makeRequest('POST', 'connect/plan', { "value": plan_code }, 'zume_system/v1' ).done( function( data ) {
+                    makeRequest('POST', 'connect/plan', { code: code, user_id: user_id }, 'zume_system/v1' ).done( function( data ) {
                         console.log(data)
-                        jQuery('.plan_code_submit').text('Done').prop('disabled', true);
+                        if ( data ) {
+                            jQuery('#code_error').html('Success');
+                            jQuery('.code_submit').text('Done').prop('disabled', true);
+                        } else {
+                            jQuery('#code_error').html('Not a recognized friend code. Please check the number.');
+                        }
                     })
                 });
             });
@@ -95,9 +103,9 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
     public function body(){
         global $zume_user_profile;
 
-        $plan_code = false;
+        $key_code = false;
         if ( isset( $_GET['code'] ) ) {
-            $plan_code = $_GET['code'];
+            $key_code = $_GET['code'];
         }
 
         require __DIR__ . '/../parts/nav.php';
@@ -108,9 +116,10 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                     <h1>Plan Invitation</h1>
                     <p>Use the code your friend sent you.</p>
                     <div class="input-group">
-                        <input class="input-group-field plan_code" type="text" value="<?php echo ( $plan_code ) ? $plan_code : ''  ?>" >
-                        <button class="button input-group-label plan_code_submit">Connect</button>
+                        <input class="input-group-field code" type="text" value="<?php echo ( $key_code ) ? $key_code : ''  ?>" >
+                        <button class="button input-group-label code_submit">Connect</button>
                     </div>
+                    <div id="code_error"></div>
                 </div>
             </div>
         </div>

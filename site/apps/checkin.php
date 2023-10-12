@@ -70,23 +70,30 @@ class Zume_Training_Checkin extends Zume_Magic_Page
     }
 
     public function header_style(){
+        global $zume_user_profile;
+        dt_write_log( $zume_user_profile );
         ?>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                jQuery('.checkin_code_submit').click(function(){
-                    var checkin_code = jQuery('.checkin_code').val();
-                    if ( ! checkin_code ) {
-                        alert('Please enter a checkin code.');
+                jQuery('.code_submit').click(function(){
+                    let code = jQuery('.code').val();
+                    jQuery('#code_error').empty();
+                    if ( ! code ) {
+                        alert('Please enter a friend code.');
                         return;
                     }
+                    let user_id = '<?php echo $zume_user_profile['user_id']; ?>';
 
-                    // Just swapped friend for checkin everywhere for the codes and submit buttons.
-                    // The url probably won't be correct here :)
-                    makeRequest('POST', 'connect/checkin', { "value": checkin_code }, 'zume_system/v1' ).done( function( data ) {
+                    makeRequest('POST', 'checkin', { code: code, user_id: user_id }, 'zume_system/v1' ).done( function( data ) {
                         console.log(data)
-                        jQuery('.checkin_code_submit').text('Done').prop('disabled', true);
+                        if ( data ) {
+                            jQuery('#code_error').html('Success');
+                            jQuery('.code_submit').text('Done').prop('disabled', true);
+                        } else {
+                            jQuery('#code_error').html('Not a recognized friend code. Please check the number.');
+                        }
                     })
                 });
             });
@@ -97,9 +104,9 @@ class Zume_Training_Checkin extends Zume_Magic_Page
     public function body(){
         global $zume_user_profile;
 
-        $checkin_code = false;
+        $key_code = false;
         if ( isset( $_GET['code'] ) ) {
-            $checkin_code = $_GET['code'];
+            $key_code = $_GET['code'];
         }
 
         require __DIR__ . '/../parts/nav.php';
@@ -110,8 +117,8 @@ class Zume_Training_Checkin extends Zume_Magic_Page
                     <h1>Checkin</h1>
                     <p>Use the code on the screen or in the book</p>
                     <div class="input-group">
-                        <input class="input-group-field checkin_code" type="text" value="<?php echo ( $checkin_code ) ? $checkin_code : ''  ?>" >
-                        <button class="button input-group-label checkin_code_submit">Connect</button>
+                        <input class="input-group-field code" type="text" value="<?php echo ( $key_code ) ? $key_code : ''  ?>" >
+                        <button class="button input-group-label code_submit">Connect</button>
                     </div>
                 </div>
             </div>
