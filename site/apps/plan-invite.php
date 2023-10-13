@@ -73,30 +73,69 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
         global $zume_user_profile;
         ?>
         <script>
+            const jsObject = [<?php echo json_encode([
+                'nonce' => wp_create_nonce( 'wp_rest' ),
+                'root' => esc_url_raw( rest_url() ),
+                'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
+                'redirect_url' => zume_login_url( 'login' ),
+                'is_logged_in' => is_user_logged_in(),
+                'translations' => [
+                    'enter_code' => __( 'Please enter a plan code.', 'zume' ),
+                ],
+            ]) ?>][0]
+        </script>
+        <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                jQuery('.code_submit').click(function(){
-                    let code = jQuery('.code').val();
-                    jQuery('#code_error').empty();
+                const successBanner = document.querySelector('.success.banner')
+                const warningBanner = document.querySelector('.warning.banner')
+
+                jQuery('.code_submit').click(function() {
+                    var code = jQuery('#code').val();
                     if ( ! code ) {
-                        alert('Please enter a friend code.');
+                        warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(jsObject.translations.enter_code)
+                        jQuery(warningBanner).show()
                         return;
                     }
-                    let user_id = '<?php echo $zume_user_profile['user_id']; ?>';
+
+                    if ( jsObject.is_logged_in ) {
+                        submit_code( code )
+                    } else {
+                        redirect_to_login( code )
+                    }
+
+                });
+
+                function redirect_to_login( code ) {
+                    const redirect_to = new URL( location.href )
+                    redirect_to.searchParams.append('code', code)
+
+                    const url = new URL( jsObject.redirect_url )
+                    url.searchParams.append('hide-nav', true)
+                    url.searchParams.delete('redirect_to')
+                    url.searchParams.append('redirect_to', redirect_to)
+
+                    location.href = url.href
+                }
+
+                function submit_code( code ){
+                    jQuery('.warning.banner').hide()
+                    let user_id = '<?php echo esc_html( $zume_user_profile['user_id'] ); ?>';
 
                     makeRequest('POST', 'connect/plan', { code: code, user_id: user_id }, 'zume_system/v1' ).done( function( data ) {
                         console.log(data)
-                        if ( data ) {
-                            jQuery('#code_error').html('Success');
-                            jQuery('.code_submit').text('Done').prop('disabled', true);
-                        } else {
-                            jQuery('#code_error').html('Not a recognized friend code. Please check the number.');
-                        }
+                        successBanner.innerHTML = successBanner.innerHTML.replace('::name::', data.name)
+                        jQuery(successBanner).show()
+                        jQuery('.invitation-form').hide()
+                    }).catch(function(error) {
+                        console.log(error)
+                        jQuery('.warning.banner').show()
                     })
-                });
+                }
             });
         </script>
+
         <?php
     }
 
@@ -105,22 +144,67 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
 
         $key_code = false;
         if ( isset( $_GET['code'] ) ) {
-            $key_code = $_GET['code'];
+            $key_code = sanitize_text_field( wp_unslash( $_GET['code'] ) );
         }
 
-        require __DIR__ . '/../parts/nav.php';
+        $is_user_logged_in = false;
+
+        if ( is_user_logged_in() ) {
+            $is_user_logged_in = true;
+
+            if ( $key_code !== false ) {
+                $success = Zume_Connect_Endpoints::connect_to_plan( $key_code );
+            }
+        }
+
+        $auto_submitted = isset( $success );
+        $failed = $auto_submitted && is_wp_error( $success );
+        $show_success = isset( $success ) && !is_wp_error( $success );
+
+        $show_form = !$key_code || !$is_user_logged_in || $auto_submitted && $failed;
+
+        $name = $show_success ? $success['name'] : '::name::';
+
         ?>
-        <div class="container page">
-            <div class="grid-x">
-                <div class="cell small-6">
-                    <h1>Plan Invitation</h1>
-                    <p>Use the code your friend sent you.</p>
-                    <div class="input-group">
-                        <input class="input-group-field code" type="text" value="<?php echo ( $key_code ) ? $key_code : ''  ?>" >
-                        <button class="button input-group-label code_submit">Connect</button>
+
+        <div class="cover-page | bg-brand-gradient">
+
+            <?php require __DIR__ . '/../parts/nav.php' ?>
+
+            <div class="center" id="plan-invitation">
+
+                <div class="grid-container rounded-multi">
+                    <div class="hidden | text-center bg-brand-light px-1 py-0 shadow">
+                        <div class="cover">
+                            <div class="center | w-100">
+                                <div class="w-70"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Jesus-01.svg' ) ?>" alt=""></div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="code_error"></div>
+
+                    <div class="text-center bg-white px-1 py-0 shadow rounded-start rounded-start-on-medium">
+                        <h1 class="brand"><?php esc_html_e( 'Plan Invitation', 'zume' ) ?></h1>
+                        <div class="stack-1 invitation-form" style="<?php echo $show_form ? '' : 'display: none;' ?>">
+
+                            <div class="banner warning text-center" style="<?php echo $failed ? '' : 'display: none' ?>">
+                                <?php echo esc_html__( 'Not a recognized plan code. Please check the number.', 'zume' ); ?>
+                            </div>
+
+                            <p><?php echo esc_html__( 'Use the code your friend sent you.', 'zume' ) ?></p>
+                            <div class="">
+                                <label for="code"></label>
+                                <input class="input" id="code" type="text" placeholder="012345" value="<?php echo ( $code ) ? esc_html( $code ) : ''  ?>" >
+                            </div>
+                            <button class="btn code_submit"><?php echo esc_html__( 'Connect', 'zume' ) ?></button>
+                        </div>
+
+                        <div class="success banner text-center" style="<?php echo $auto_submitted && !$failed ? '' : 'display: none;' ?>">
+                            <?php echo esc_html( sprintf( __( 'Successfully connected to %s', 'zume' ), $name ) ) ?>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
         <?php

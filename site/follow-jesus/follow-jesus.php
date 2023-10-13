@@ -90,10 +90,10 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         <div class="cover-page | position-relative">
             <div class="multiply-cover color flip show-for-large"></div>
             <div class="multiply-cover color show-for-large"></div>
-            <div class="container stack-2 | page">
+            <div class="container-md stack-2 | page">
                 <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
                 <div class="center">
-                    <div class="video-thumbnail shadow w-70 position-relative rounded">
+                    <div class="video-thumbnail shadow position-relative rounded">
                         <img class="rounded-top" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/4Relationships-thumbnail.png' ) ?>" alt="The four relationships video">
                         <div class="video-thumbnail__footer bg-brand-light white text-center stack p-1">
                             <h2 class="h3"><?php echo esc_html__( 'Four Relationships', 'zume' ) ?></h2>
@@ -111,8 +111,8 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         </div>
 
         <div class="page bg-gray-100">
-            <div class="container center">
-                <ul class="stack-2 | accordion w-70" data-accordion>
+            <div class="container-md center">
+                <ul class="stack-2 | accordion" data-accordion>
                     <li class="accordion-item rounded shadow" data-accordion-item>
                         <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'What is a follower of Jesus?', 'zume' ) ?></h2></a>
 

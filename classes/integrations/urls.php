@@ -125,6 +125,14 @@ function zume_dashboard_url( $current_language = null ) {
     return $url;
 }
 
+function zume_checkin_url() {
+    $current_language = zume_current_language();
+    if ( $current_language === 'en' ) {
+        return dt_create_site_url( 'zume_app/checkin' );
+    }
+    return dt_create_site_url( $current_language . '/zume_app/checkin' );
+}
+
 function zume_training_url( $current_language = null ) {
     if ( is_null( $current_language ) ) {
         $current_language = zume_current_language();

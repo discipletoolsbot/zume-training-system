@@ -420,6 +420,10 @@ class Zume_Training {
             $path = $lang_code . '/' . $path;
         }
 
+        if ( isset( $parsed_url['query'] ) && !empty( $parsed_url['query'] ) ) {
+            $path .= '?' . $parsed_url['query'];
+        }
+
         $redirect_url = $parsed_url['scheme'] . '://' . $parsed_url['host'] . '/' . $path;
         return $redirect_url;
     }

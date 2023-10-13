@@ -18,7 +18,7 @@
 
                         <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_course_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
-                        <a role="listitem" href="<?php echo esc_url( '/zume_app/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon link-light"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a>
 
                     <?php endif; ?>
@@ -27,7 +27,7 @@
 
                         <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'About', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_course_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
-                        <a role="listitem" href="<?php echo esc_url( '/zume_app/checkin' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn outline dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
 
