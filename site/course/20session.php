@@ -1,8 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-
-class Zume_Course_10Session extends Zume_Magic_Page
+class Zume_Course_20Session extends Zume_Magic_Page
 {
     use Translateable;
 
@@ -10,7 +9,7 @@ class Zume_Course_10Session extends Zume_Magic_Page
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'course_app';
-    public $type = '10session';
+    public $type = '20session';
     public $lang = 'en';
     public static $token = 'course_app_10session';
 
@@ -103,7 +102,6 @@ class Zume_Course_10Session extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        $allowed_css[] = 'course-app-presenter-css';
         return zume_training_magic_url_base_allowed_css();
     }
     public function action_wp_footer(): void {}
@@ -188,33 +186,32 @@ class Zume_Course_10Session extends Zume_Magic_Page
         <?php
     }
     public function body(){
-        $image_url = plugin_dir_url(__DIR__) . '/assets/images/';
         ?>
+
         <div id="hamburger-menu">
             <i class="fi-list"></i>
         </div>
 
         <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-transition="overlap">
             <div style="text-align:center;padding: 1em;">
-                <img src="<?php echo $image_url ?>zumeLOGO.svg" width="150px" alt="Zume" >
+                <img src="https://zume5.training/wp-content/themes/zume-training-v5/assets/images/zume-logo.svg" width="150px" alt="Zume" >
+                <br>
+                20 Sessions
                 <hr>
             </div>
 
             <!-- Your menu or Off-canvas content goes here -->
-            <ul id="training-menu" class="vertical menu accordion-menu" data-accordion-menu>
+            <ul id="training-menu" class="vertical menu accordion-menu" data-accordion-menu data-multi-expand="true">
                 <li>
                     <a class="uppercase">Session 1</a>
                     <ul class="nested vertical menu">
                         <li><a class="menu-link" data-section="section-check-in-1">Check in</a></li>
-                        <li><a class="menu-link" data-section="section-group-prayer-1">Group Prayer <span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="section-group-prayer-1">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="section-overview-1">Overview</a></li>
                         <li><a class="menu-link" data-section="section-ordinary-people-1">God Uses Ordinary People <span>(15 min)</span></a></li>
                         <li><a class="menu-link" data-section="section-definition-disciple">Simple Definition of a Disciple<span>(15 min)</span></a></li>
                         <li><a class="menu-link" data-section="section-spiritual-breathing-1">Spiritual Breathing<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="section-soaps-bible-1">SOAPS Bible Reading <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="section-accountability-1">Accountability Groups <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="section-accountability-3">Practice - Accountability Groups <span>(45 min)</span></a></li>
-                        <li><a class="menu-link" data-section="section-homework-1">Look Forward</a></li>
+                        <li><a class="menu-link" data-section="section-homework-1">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
                 <li>
@@ -224,12 +221,8 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Consumer vs Producer Lifestyle <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">How to Spend an Hour in Prayer <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Prayer Cycle <span>(60 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Discuss - Prayer Cycle <span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Relational Stewardship <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Create List of 100 <span>(30 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">S.O.A.P.S Bible Reading<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: S.O.A.P.S.<span>(35 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -240,11 +233,8 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Kingdom Economy <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Discuss - Should every disciple share? <span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">How to Share the Gospel <span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Sharing the Gospel<span>(45 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">How to Baptize <span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Accountability Groups<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Accountability Groups<span>(35 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -255,13 +245,9 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Prepare Your 3-Minute Testimony<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Share your testimony<span>(45 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Vision Casting the Greatest Blessing<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Duckling Discipleship<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Eyes to See Where the Kingdom Isn't<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">How to Lead the Lord's Supper<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Lord's Supper<span>(10 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Consumer vs. Producer Lifestyle<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Relational Stewardship - List of 100<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Create List of 100<span>(20 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -272,11 +258,8 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">How to Prayer Walk<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">A Person of Peace<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">The BLESS Prayer Pattern<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - BLESS Prayer<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Prayer Walking<span>(90 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">How to Spend an Hour in Prayer<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Prayer Cycle<span>(35 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -287,8 +270,11 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Faithfulness is Better Than Knowledge<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">3/3 Group Meeting Pattern<span>(75 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">The Kingdom Economy<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Discuss: Should Every Disciple Share?<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Vision Casting the Greatest Blessing<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">The Gospel and How to Share It<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Prepare to Share the Gospel Next Week<span>(20 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -299,9 +285,7 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Training Cycle for Maturing Disciples<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - 3/3 Groups<span>(90 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Discuss - 3/3 Group Experience<span>(10 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Sharing the Gospel<span>(50 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -312,8 +296,9 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Leadership Cells<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - 3/3 Group<span>(90 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Baptism and How to Do It<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Prepare Your 3-Minute Testimony<span>(20 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Prepare to Share Your Testimony Next Week<span>(15 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -324,12 +309,7 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Expect Non-Sequential Growth<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Pace of Multiplication Matters<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Always Part of Two Churches<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Three-Month Plan<span>(30 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Create 3-Month Plan<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Discuss - Share 3-Month Plan<span>(30 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Sharing Your Testimony<span>(50 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -340,14 +320,136 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Overview</a></li>
-                        <li><a class="menu-link" data-section="">Coaching Checklist<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Duckling Discipleship - Leading Immediately<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Eyes to See Where the kingdom Isn't<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">The Lord's Supper and how to Lead It<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: The Lord's Supper<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 11</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Prayer Walking and How to Do It<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Prayer Walking<span>(35 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 12</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">A Person of Peace and How to Find One<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">The BLESS Prayer Pattern<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: BLESS Prayer<span>(20 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 13</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Faithfulness is Better Than Knowledge<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">3/3 Group Meeting Pattern<span>(35 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 14</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Practice: 3/3 Group<span>(50 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 15</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Discuss: 3/3 Group Experience from Last Two Weeks<span>(20 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Training Cycle for Maturing Disciples<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Leadership Cells<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 16</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Expect Non-Sequential Growth<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Pace of Multiiplication Matters<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Always Part of Two Churches<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 17</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Three-Month Plan<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Create Three-Month Plan<span>(25 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Discuss: Share Three-Month Plan with Group<span>(10 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 18</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Coaching Check-List<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Coaching Network Self-Assessment<span>(20 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Leadership in Networks<span>(15 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Peer Mentoring Groups<span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Four Fields Tool<span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Generational Mapping<span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - 3/3 Peer Mentoring<span>(60 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Four Fields<span>(5 min)</span></a></li>
-                        <li><a class="menu-link" data-section="">Practice - Generational Mapping<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 19</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Peer Mentoring Groups<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Peer Mentoring Groups<span>(35 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="uppercase">Session 20</a>
+                    <ul class="nested vertical menu">
+                        <li><a class="menu-link" data-section="">Check in</a></li>
+                        <li><a class="menu-link" data-section="">Look Back<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Group Prayer<span>(5 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Overview</a></li>
+                        <li><a class="menu-link" data-section="">Four Fields Tools<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Four Fields<span>(10 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Generational Mapping<span>(15 min)</span></a></li>
+                        <li><a class="menu-link" data-section="">Practice: Generational Mapping<span>(10 min)</span></a></li>
                         <li><a class="menu-link" data-section="">Look Forward<span>(5 min)</span></a></li>
                     </ul>
                 </li>
@@ -356,8 +458,6 @@ class Zume_Course_10Session extends Zume_Magic_Page
         </div>
         <div class="off-canvas-content" data-off-canvas-content>
 
-
-            <!-- Checkin -->
             <section id="section-check-in-1">
                 <div class="section-block">
                     <div class="grid-x grid-margin-x grid-margin-y">
@@ -373,11 +473,11 @@ class Zume_Course_10Session extends Zume_Magic_Page
                         </div>
                         <div class="cell">
                             <p>
-                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&color=323a68&data=https://zume5.training/zume_app/checkin/?code=5678" width="300px" alt="QR Code" />
+                                <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&color=323a68&data=https://zume5.training/zume_app/checkin/?code=1354" width="300px" alt="QR Code" />
                             </p>
                             <p class="section-concept">
                                 or <br>
-                                zume.training/checkin and use code <strong class="text-lightblue"><a href="https://zume5.training/zume_app/checkin/?code=5678" target="_blank">5678</a></strong>
+                                zume.training/checkin and use code <strong class="text-lightblue"><a href="https://zume5.training/zume_app/checkin/?code=1354" target="_blank">1354</a></strong>
                             </p>
                         </div>
                     </div>
@@ -702,6 +802,5 @@ class Zume_Course_10Session extends Zume_Magic_Page
         </div>
         <?php
     }
-
 }
-Zume_Course_10Session::instance();
+Zume_Course_20Session::instance();

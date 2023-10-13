@@ -107,7 +107,7 @@ class Zume_Training_Course extends Zume_Magic_Page
                 <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
 
             <?php endif; ?>
-
+            <p><a class="button" href="/course_app/10session">10 Session Course</a>  | <a class="button" href="/course_app/20session">20 Session Course</a> </p>
             <ol>
                 <?php foreach ( $posts as $post ): ?>
 
