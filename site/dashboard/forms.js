@@ -645,6 +645,8 @@ window.cta_host_progress = () => {
 
   window.load_host_status()
 
+  jQuery('.loading-spinner').removeClass('active')
+
   jQuery('#modal-small').foundation('open')
 }
 window.load_host_status = () => {
