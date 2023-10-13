@@ -21,6 +21,7 @@
   margin-block: auto;
 }
 
+.cover-img,
 .cover {
   display: flex;
   flex-direction: column;
@@ -28,14 +29,17 @@
   padding: 0;
 }
 
+.cover-img > :first-child:not(img),
 .cover > :first-child:not(div) {
   margin-block-start: 0;
 }
 
+.cover-img > :last-child:not(img),
 .cover > :last-child:not(div) {
   margin-block-end: 0;
 }
 
+.cover-img > img,
 .cover > div {
   margin-block: auto;
   padding-block: 1rem;
