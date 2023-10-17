@@ -95,7 +95,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function body(){
         require __DIR__ . '/../parts/nav.php';
         ?>
-
         <div class="container" style="margin-top:50px;">
 
             <h1 class="text-center"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></h1>
@@ -131,6 +130,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
                     <p><button class="button cta_invite_plan" />Invite to Plan</button></p>
                     <p><button class="button cta_work_the_plan" />Work a Plan</button></p>
+                    <p><button class="button" onclick="window.location.href = 'https://zume5.training/course_app/10session'" />10 Session Course</button></p>
+                    <p><button class="button" onclick="window.location.href = 'https://zume5.training/course_app/20session'" />20 Session Course</button></p>
                     <p><button class="button cta_post_training_plan" />Create 3-Month Plan</button></p>
                     <hr>
                     <p><button class="button cta_join_vision" />Join Practioner Community</button></p>
@@ -138,7 +139,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_commitments" />3-Month Commitments</button></p>
                     <p><button class="button cta_host_progress" />HOST Progress</button></p>
                     <hr>
-                    <p><button class="button cta_coaching_commitments" />Additional Coaching Commitments</button></p>
+                    <p><button class="button cta_other_commitments" />Other Commitments</button></p>
                 </div>
             </div>
             <!--END DEV SECTION -->

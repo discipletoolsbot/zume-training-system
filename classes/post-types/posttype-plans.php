@@ -224,7 +224,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'name'        => __( 'Join Key', 'zume-training-system' ),
                 'description' => 'Key to join the training, like a password or meeting ID',
                 'type'        => 'text',
-                'default'     => $this->generate_join_key(),
+                'default'     => '',
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/qrcode-solid.svg',
             ];
@@ -609,9 +609,12 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
     //filter at the start of post update
     public function dt_post_update_fields( $fields, $post_type, $post_id ){
-//        if ( $post_type === $this->post_type ){
-//            // execute your code here
-//        }
+        if ( $post_type === $this->post_type ){
+            // execute your code here
+            if ( empty( $fields['join_key'] ) ) {
+                update_post_meta( $post_id, 'join_key', $this->generate_join_key() );
+            }
+        }
         return $fields;
     }
 
@@ -638,7 +641,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             if ( !isset( $fields['status'] ) || empty( $fields['status'] ) ) {
                 $fields['status'] = 'active';
             }
-            if ( !isset( $post_fields['join_key'] ) || empty( $post_fields['join_key'] ) ) {
+            if ( empty( $post_fields['join_key'] ) ) {
                 $fields['join_key'] = $this->generate_join_key();
             }
         }
@@ -656,6 +659,9 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                         'user_id' => $initial_fields['assigned_to']
                     ],
                 );
+            }
+            if ( empty( $post_fields['join_key'] ) ) {
+                update_post_meta( $post_id, 'join_key', $this->generate_join_key() );
             }
         }
     }

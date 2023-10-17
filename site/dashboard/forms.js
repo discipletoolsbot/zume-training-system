@@ -39,6 +39,9 @@ jQuery(document).ready(function() {
   jQuery('.cta_commitments').click(function() {
     window.cta_commitments()
   })
+  jQuery('.cta_other_commitments').click(function() {
+    window.cta_other_commitments()
+  })
 
 })
 
@@ -736,6 +739,75 @@ window.cta_commitments = () => {
 
   jQuery('#modal-large').foundation('open')
 }
+window.cta_other_commitments = () => {
+  console.log('cta_othercommitments')
+  let title = jQuery('#modal-large-title')
+  let content = jQuery('#modal-large-content')
+  title.empty()
+  content.empty()
+
+  title.append('Other Commitments <span class="othercommitments loading-spinner active"></span>')
+
+  makeRequest('GET', 'commitments', {}, 'zume_system/v1' ).done( function( data ) {
+    console.log(data)
+    let list = ''
+    if ( data ) {
+      jQuery.each( data, function( i, v ) {
+        if ( v.question == '' && v.answer == '' ) {
+          list += `<div class="cell medium-6"><strong>Note:</strong> ${v.note}</br><strong>Status:</strong> ${v.status}<br><strong>Due Date:</strong> ${v.due_date}</br></div><div class="cell medium-6"> <button class="button complete-commitment" value="${v.id}">Complete</button><button class="button delete-commitment" value="${v.id}">Delete</button></div><div class="cell"><hr></div>`
+        }
+      })
+    }
+    let html = `
+    <div class="grid-x grid-padding-x">
+        <div class="cell"><hr></div>
+        <div class="cell">
+            <div class="grid-x grid-padding-x" id="zume-othercommitments">${list}</div>
+        </div>
+        <div class="cell">
+          <button class="button othercommitments-close-button" onclick="location.reload()">Close</button>
+        </div>
+    </div>
+    `
+    content.html(html)
+
+    jQuery('.complete-commitment').on('click', function() {
+      let id = jQuery(this).val()
+      let data = {
+        id: id,
+        user_id: zumeForms.user_profile.user_id
+      }
+      console.log(data)
+      makeRequest('PUT', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.cta_other_commitments()
+      })
+    })
+
+    jQuery('.delete-commitment').on('click', function() {
+      let id = jQuery(this).val()
+      let data = {
+        id: id,
+        user_id: zumeForms.user_profile.user_id
+      }
+      makeRequest('DELETE', 'commitment', data, 'zume_system/v1' ).done( function( data ) {
+        console.log(data)
+        window.cta_other_commitments()
+      })
+    })
+
+    jQuery('.othercommitments.loading-spinner').removeClass('active')
+
+  })
+
+  jQuery('.othercommitments-save-button').click(function() {
+    jQuery('.othercommitments-save-button').text('Saved').prop('disabled', true)
+    jQuery('.othercommitments-close-button').show()
+  })
+
+  jQuery('#modal-large').foundation('open')
+}
+
 
 window.is_profile_complete = () => {
   if ( ! zumeForms.user_profile.name ) {
