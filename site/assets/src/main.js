@@ -1,5 +1,4 @@
-import './components/wizard'
-import './components/complete-profile'
+import './components/wizard/index'
 import './components/play-button'
 
 import './scss/styles.scss'

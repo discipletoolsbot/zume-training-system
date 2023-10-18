@@ -98,7 +98,7 @@ function zume_wizard_url( $type = 'plan' ) {
 
     switch ( $type ) {
         case 'plan':
-            $url = "$wizard_root/make-a-plan";
+            $url = "$wizard_root/getting-started";
             break;
         case 'coaching':
             $url = "$wizard_root/connect-to-coach";

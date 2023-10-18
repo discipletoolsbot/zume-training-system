@@ -103,6 +103,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'title' => esc_html__( 'Complete your profile', 'zume' ),
                         'phone' => esc_html__( 'Phone', 'zume' ),
                         'city' => esc_html__( 'City', 'zume' ),
+                        'name' => esc_html__( 'Name', 'zume' ),
                     ],
                 ],
             ]) ?>][0]
