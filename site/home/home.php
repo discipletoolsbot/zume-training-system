@@ -138,12 +138,12 @@ class Zume_Training_Home extends Zume_Magic_Page
                 </div>
             </div>
             <h2 class="text-center"><?php echo esc_html__( 'Gain insight into...', 'zume' ) ?></h2>
-            <div class="switcher">
+            <div class="switcher | s-3">
                 <div class="stack">
                     <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Being-A-Disciple-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Being A Disciple', 'zume' ) ?></h3>
-                        <ul class="check-list">
+                        <ul class="f-1 f-medium | check-list">
                             <li><?php echo esc_html__( "What's a disciple?", 'zume' ) ?></li>
                             <li><?php echo esc_html__( "What's a Church?", 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Keys to spiritual growth', 'zume' ) ?></li>
@@ -157,7 +157,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Making-Disciples-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Making Disciples', 'zume' ) ?></h3>
-                        <ul class="check-list">
+                        <ul class="f-1 f-medium | check-list">
                             <li><?php echo esc_html__( "Sharing God's story", 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Telling Your Story', 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Engaging Seekers', 'zume' ) ?></li>
