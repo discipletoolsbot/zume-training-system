@@ -32,3 +32,26 @@
     --card-text-color: #{color('white')};
     --card-bg-color: #{color('brand-light')};
 }
+
+@media (max-width: $break-md) {
+    .real-stories {
+        .absolute {
+            position: static;
+        }
+    }
+
+    .story-reel {
+        margin-top: spacing(0);
+        margin-inline-start: spacing(0);
+    }
+
+    .story-card {
+        width: min(90%, 25em);
+    }
+}
+
+@media (max-width: $break-sm) {
+    .story-card__logo {
+        display: none;
+    }
+}

@@ -1,31 +1,31 @@
 :root {
 
     // spacing
-    --ratio: 1.5;
-    --s-5: calc(var(--s-4) / var(--ratio));
-    --s-4: calc(var(--s-3) / var(--ratio));
-    --s-3: calc(var(--s-2) / var(--ratio));
-    --s-2: calc(var(--s-1) / var(--ratio));
-    --s-1: calc(var(--s0) / var(--ratio));
-    --s0: 1rem;
-    --s1: calc(var(--s0) * var(--ratio));
-    --s2: calc(var(--s1) * var(--ratio));
-    --s3: calc(var(--s2) * var(--ratio));
-    --s4: calc(var(--s3) * var(--ratio));
-    --s5: calc(var(--s4) * var(--ratio));
+    --s-5: #{fluid-space(-5)};
+    --s-4: #{fluid-space(-4)};
+    --s-3: #{fluid-space(-3)};
+    --s-2: #{fluid-space(-2)};
+    --s-1: #{fluid-space(-1)};
+    --s0: #{fluid-space(0)};
+    --s1: #{fluid-space(1)};
+    --s2: #{fluid-space(2)};
+    --s3: #{fluid-space(3)};
+    --s4: #{fluid-space(4)};
+    --s5: #{fluid-space(5)};
 
     // font-sizes
-    --text-base-size: 1rem;
-    --text-ratio: 1.3;
-    --t-2: calc(var(--t-1) / var(--text-ratio));
-    --t-1: calc(var(--t0) / var(--text-ratio));
-    --t0: var(--text-base-size);
-    --t1: calc(var(--t0) * var(--text-ratio));
-    --t2: calc(var(--t1) * var(--text-ratio));
-    --t3: calc(var(--t2) * var(--text-ratio));
-    --t4: calc(var(--t3) * var(--text-ratio));
-    --t5: calc(var(--t4) * var(--text-ratio));
-    --t6: calc(var(--t5) * var(--text-ratio));
+    /* clamp value based on reducing font at 425px width */
+    --t-2: #{fluid-type(-2)};
+    --t-1: #{fluid-type(-1)};
+    --t0: #{fluid-type(0)};
+    --t1: #{fluid-type(1)};
+    --t2: #{fluid-type(2)};
+    --t3: #{fluid-type(3)};
+    --t4: #{fluid-type(4)};
+    --t5: #{fluid-type(5)};
+    --t6: #{fluid-type(6)};
+    --t7: #{fluid-type(7)};
+    --t8: #{fluid-type(8)};
 
     --border-thin: 1px;
     --border-radius: 10px;
@@ -36,6 +36,7 @@
     --z-brand: #008CC7;
     --z-brand-light: #2CACE2;
     --z-brand-lighter: #8ACDEA;
+    --z-brand-fade: #E5F3F9;
     --z-gray-900: #2B2B2B;
     --z-gray-800: #505050;
     --z-gray-700: #767676;
@@ -56,6 +57,7 @@
     --header-color-dark: var(--z-white);
 
     // fonts
+    --font-title: 'Bebas Kai', sans-serif;
     --font-family: 'Poppins', sans-serif;
     --font-cursive: 'Indie Flower', cursive;
 ;

@@ -1,0 +1,25 @@
+/* Break points */
+$small-margin: 10px;
+
+$min-width: 320px;
+$break-sm: 375px;
+$break-md: 700px;
+$break-lg: 1023px;
+$max-width: 1500px;
+
+$min-screen-width: 320;
+$max-screen-width: 1500;
+
+$rem-value-in-pixels: 18;
+
+// fluid spacing variables
+$min-base-space: 0.9 * $rem-value-in-pixels;
+$max-base-space: $rem-value-in-pixels;
+$min-spacing-ratio: 1.45;
+$max-spacing-ratio: 1.5;
+
+// fluid font variables
+$min-base-font: $rem-value-in-pixels - 2;
+$max-base-font: $rem-value-in-pixels;
+$min-text-ratio: 1.25;
+$max-text-ratio: 1.3;

@@ -2,14 +2,14 @@
 
     <div class="container stack-2 | position-relative">
 
-        <div class="cluster | justify-content-between">
-            <div class="cluster gapx-4 gapy-2" role="list">
+        <div class="cluster | justify-content-between gapx-4 gapy-2 | footer-links">
+            <div class="cluster gapx-4 gapy-2 | footer-links-list" role="list">
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
             </div>
 
-            <div class="cluster gapx-4 gapy-2 justify-flex-end" role="list">
+            <div class="cluster gapx-4 gapy-2 justify-flex-end | footer-links-list" role="list">
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Guidebook', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_mobile_app_url() ) ?>"><?php echo esc_html__( 'Mobile App', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?></a>
@@ -23,7 +23,7 @@
 
         </div>
 
-        <div class="cluster justify-content-between">
+        <div class="cluster container | justify-content-between">
             <span>&copy; 2023 Zume. All rights reserved.</span>
             <div class="cluster | s-1 justify-flex-end f-0" role="list">
                 <a href="#" class="link-light" role="listitem">
