@@ -483,3 +483,8 @@ header {
   }
 }
 
+@media (max-width: $break-sm) {
+  .copyright {
+    order: 2;
+  }
+}

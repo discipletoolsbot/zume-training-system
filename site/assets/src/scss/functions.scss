@@ -45,19 +45,17 @@
     $min-screen-width: 320,
     $max-screen-width: 1500,
 ) {
-
-
     $min-size: $min-base* math.pow( $min-ratio, $i );
     $max-size: $max-base* math.pow( $max-ratio, $i );
 
     /* Calculate the gradient and intercept of the fluid slope */
-    $gradient: ( $max-size - $min-size ) / ( $max-screen-width - $min-screen-width );
+    $gradient: math.div( $max-size - $min-size, $max-screen-width - $min-screen-width );
     $intercept: $min-size - $gradient * $min-screen-width;
 
-    $min-size-rems: $min-size / $rem-value-in-pixels;
-    $max-size-rems: $max-size / $rem-value-in-pixels;
-    $intercept-rems: $intercept / $rem-value-in-pixels;
+    $min-size-rems: math.div( $min-size, $rem-value-in-pixels );
+    $max-size-rems: math.div( $max-size, $rem-value-in-pixels );
+    $intercept-rems: math.div( $intercept, $rem-value-in-pixels );
     $gradient-vw: $gradient * 100;
 
-    @return clamp( math.round($min-size-rems * 100)/100 * 1rem, math.round($intercept-rems*100)/100 * 1rem + math.round($gradient-vw*100)/100 * 1vw, $max-size-rems * 1rem );
+    @return clamp( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw, $max-size-rems * 1rem );
 }
