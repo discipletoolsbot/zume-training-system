@@ -108,6 +108,7 @@ class Zume_Training_Course extends Zume_Magic_Page
 
             <?php endif; ?>
             <p><a class="button" href="/course_app/10session">10 Session Course</a>  | <a class="button" href="/course_app/20session">20 Session Course</a> </p>
+            <p><a class="button" href="/course_app/presenter">Prototype component based presenter</a></p>
             <ol>
                 <?php foreach ( $posts as $post ): ?>
 
