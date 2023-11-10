@@ -185,6 +185,11 @@ header {
   height: 3px;
   background: color('white');
 }
+.hamburger.brand,
+.hamburger.brand::before,
+.hamburger.brand::after {
+  background: color('brand');
+}
 
 .hamburger::before,
 .hamburger::after {
@@ -420,13 +425,32 @@ header {
   display: none;
 }
 .loading-spinner.active {
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    border: 0.25rem solid #919191;
-    border-top-color: black;
-    animation: spin 1s infinite linear;
-    display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid #919191;
+  border-top-color: black;
+  animation: spin 1s infinite linear;
+  display: inline-block;
+}
+.clickable-area {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: calc(10vw + 80px);
+  transition: all 100ms linear;
+}
+@media (hover: hover) {
+  .clickable-area:hover {
+    opacity: 1;
+  }
+}
+.clickable-area.back {
+  left: 0;
+}
+.clickable-area.forward {
+  right: 0;
 }
 
 
@@ -443,6 +467,9 @@ header {
 
     .nav-toggle {
         display: none;
+    }
+    .nav-toggle.show {
+      display: block;
     }
 
     .nav {

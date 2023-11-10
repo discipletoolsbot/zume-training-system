@@ -9,6 +9,8 @@ export class PartSwitcher extends LitElement {
 
     render() {
 
+        console.log(this.part)
+
        switch (this.part.type) {
             case 'section':
                 return html`<section-part .part=${this.part}></section-part>`
@@ -26,6 +28,8 @@ export class PartSwitcher extends LitElement {
                 return html`<listen-part .part=${this.part}></listen-part>`
             case 'form':
                 return html`<form-part .part=${this.part}></form-part>`
+            case 'checkin':
+                return html`<checkin-part .part=${this.part}></checkin-part>`
             case 'cta':
             default:
                 return html`<basic-part .part=${this.part}></basic-part>`
