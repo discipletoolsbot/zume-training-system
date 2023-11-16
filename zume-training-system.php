@@ -502,13 +502,14 @@ class Zume_Training {
             $language_code = $zume_user_profile['ui_language'];
         }
 
+        // zume-redirects This ensures that the url always matches the users ui_language
         if ( !empty( $language_code ) && !dt_is_rest() ) {
             [
                 'lang_code' => $lang_code,
                 'path' => $path,
             ] = zume_get_url_pieces();
 
-            if ( $lang_code !== $language_code && $path !== 'wp-login.php' ) {
+            if ( $lang_code !== $language_code && $path !== 'wp-login.php' && !str_contains( $path, 'course_app/presenter' ) ) {
                 $url = site_url( '/' . $language_code . '/' . $path );
                 wp_redirect( $url );
                 exit;

@@ -3,38 +3,37 @@ import { LitElement, html } from 'lit';
 export class PartSwitcher extends LitElement {
     static get properties() {
         return {
-            part: { type: Object},
+            partData: { type: Object},
         };
     }
 
     render() {
 
-        console.log(this.part)
-
-       switch (this.part.type) {
+       switch (this.partData.type) {
             case 'section':
-                return html`<section-part .part=${this.part}></section-part>`
+                return html`<section-part .partData=${this.partData}></section-part>`
             case 'watch':
-                return html`<watch-part .part=${this.part}></watch-part>`
+                return html`<watch-part .partData=${this.partData}></watch-part>`
             case 'discuss':
-                return html`<discuss-part .part=${this.part}></discuss-part>`
+                return html`<discuss-part .partData=${this.partData}></discuss-part>`
             case 'read':
-                return html`<read-part .part=${this.part}></read-part>`
+                return html`<read-part .partData=${this.partData}></read-part>`
             case 'see':
-                return html`<see-part .part=${this.part}></see-part>`
+                return html`<see-part .partData=${this.partData}></see-part>`
             case 'share':
-                return html`<share-part .part=${this.part}></share-part>`
+                return html`<share-part .partData=${this.partData}></share-part>`
             case 'listen':
-                return html`<listen-part .part=${this.part}></listen-part>`
+                return html`<listen-part .partData=${this.partData}></listen-part>`
             case 'form':
-                return html`<form-part .part=${this.part}></form-part>`
+                return html`<form-part .partData=${this.partData}></form-part>`
             case 'checkin':
-                return html`<checkin-part .part=${this.part}></checkin-part>`
+                return html`<checkin-part .partData=${this.partData}></checkin-part>`
             case 'cta':
             default:
-                return html`<basic-part .part=${this.part}></basic-part>`
+                return html`<basic-part .partData=${this.partData}></basic-part>`
         }
     }
+
     /**
      * Disable the shadow DOM
      */

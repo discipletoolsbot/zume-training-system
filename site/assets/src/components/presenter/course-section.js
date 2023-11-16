@@ -25,7 +25,7 @@ export class CourseSection extends LitElement {
             ${this.duration !== null ? html`<p>${this.duration}</p>` : ''}
 
             ${this.parts.map((part) =>
-                html`<part-switcher .part=${part}></part-switcher>`
+                html`<part-switcher .partData=${part}></part-switcher>`
             )}
 
         `;
