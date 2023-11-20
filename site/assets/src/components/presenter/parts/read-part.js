@@ -3,14 +3,14 @@ import { LitElement, html } from 'lit';
 export class ReadPart extends LitElement {
     static get properties() {
         return {
-            part: { type: Object},
+            partData: { type: Object},
         };
     }
 
     render() {
-        const t = this.part.t ?? null
-        const d = this.part.d ?? null
-        const info = this.part.info ?? null
+        const t = this.partData.t ?? null
+        const d = this.partData.d ?? null
+        const info = this.partData.info ?? null
 
         return html`
             <h2 class="brand">READ</h2>
