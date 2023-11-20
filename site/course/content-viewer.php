@@ -116,15 +116,13 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/foundation-icons@2.0.0/foundation-icons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<!--        <link rel="stylesheet" id="site-css-css" href="--><?php //echo plugin_dir_url(__FILE__) .  'presenter.css' ?><!--?ver=--><?php //echo time() ?><!--" type="text/css" media="all">-->
-
         <?php
     }
     public function body(){
         ?>
         <pre>
             <?php
-            print_r(Zume_Content::get());
+            print_r( Zume_Content::get() );
             ?>
         </pre>
         <?php

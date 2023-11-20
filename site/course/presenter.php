@@ -14,6 +14,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
     public $type = 'presenter';
     public $lang = 'en_US';
     public static $token = 'course_app_presenter';
+    public $wizard_type = '';
 
     private static $_instance = null;
     public static function instance() {
