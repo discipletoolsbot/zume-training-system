@@ -182,6 +182,10 @@ function zume_guidebook_url() {
     return zume_url( 'book' );
 }
 
+function zume_share_url() {
+    return zume_url( 'share' );
+}
+
 function zume_profile_url() {
     $current_lang = zume_current_language();
     $url = zume_get_posts_translation_url( 'Profile', $current_lang );

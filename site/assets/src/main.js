@@ -5,3 +5,4 @@ import './components/play-button'
 
 import './scss/styles.scss'
 import './js/scripts'
+import './js/share'

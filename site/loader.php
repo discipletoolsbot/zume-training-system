@@ -4,10 +4,10 @@
  */
 
 // Load dependencies first
-require_once ( __DIR__ . '/enqueue.php' );
-require_once ( __DIR__ . '/zume-magic-page.php' );
-require_once ( __DIR__ . '/login/login.php');
-require_once ( __DIR__ . '/login/login-functions.php');
+require_once( __DIR__ . '/enqueue.php' );
+require_once( __DIR__ . '/zume-magic-page.php' );
+require_once( __DIR__ . '/login/login.php' );
+require_once( __DIR__ . '/login/login-functions.php' );
 
 $skip_folders = [
     'parts',
