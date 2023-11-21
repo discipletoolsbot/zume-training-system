@@ -120,7 +120,7 @@ class Zume_Training_Share extends Zume_Magic_Page
 
 
                     <li class="cluster">
-                        <a class="h4 brand" href="<?php echo esc_url( $page_url ) ?>">
+                        <a class="h4 brand my-0" href="<?php echo esc_url( $page_url ) ?>">
 
                             <?php echo esc_html( $page_title ) ?>
 
