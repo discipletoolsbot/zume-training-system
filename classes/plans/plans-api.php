@@ -16,8 +16,8 @@ class Zume_Plans_Endpoints
 
     public function __construct() {
         if ( dt_is_rest() ) {
-           $this->namespace = 'zume_system/v1';
-           add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
+            $this->namespace = 'zume_system/v1';
+            add_action( 'rest_api_init', [ $this, 'add_api_routes' ] );
         }
     }
 
@@ -57,7 +57,6 @@ class Zume_Plans_Endpoints
                 'permission_callback' => '__return_true',
             ]
         );
-
     }
 
     public function list_plans( WP_REST_Request $request ){
@@ -87,7 +86,7 @@ class Zume_Plans_Endpoints
         ];
 
         if ( isset( $params['set'] ) && is_array( $params['set'] ) ) {
-            foreach( $params['set'] as $key => $value ) {
+            foreach ( $params['set'] as $key => $value ) {
                 $fields[ $key ] = $value;
             }
         }
@@ -121,9 +120,11 @@ class Zume_Plans_Endpoints
         $user_id = get_current_user_id();
         $contact_id = zume_get_user_contact_id( $user_id );
 
-        return DT_Posts::update_post( 'zume_plans', $post_id_exists,[ 'participants' => [ 'values' => [ ['value' => $contact_id ] ] ] ], true, false );
+        return DT_Posts::update_post( 'zume_plans', $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
     }
     public function delete_plan( WP_REST_Request $request ) {
+        global $wpdb;
+
         if ( ! is_user_logged_in() ) {
             return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
         }
@@ -151,9 +152,13 @@ class Zume_Plans_Endpoints
     public function public_plans( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        $plans = DT_Posts::list_posts( 'zume_plans', [ 'fields' => [ [ 'visibility' => ['public'] ] ] ], false );
+        $plans = self::get_public_plans();
 
         return $plans;
+    }
+
+    public static function get_public_plans() {
+        return DT_Posts::list_posts( 'zume_plans', [ 'fields' => [ [ 'visibility' => [ 'public' ] ] ] ], false );
     }
 }
 Zume_Plans_Endpoints::instance();

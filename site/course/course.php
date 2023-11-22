@@ -89,43 +89,92 @@ class Zume_Training_Course extends Zume_Magic_Page
 
         $current_language = $zume_user_profile['language']['code'];
 
-        $args = [
-            'post_type' => 'zume_pieces',
-            'lang' => $current_language,
-            'posts_per_page' => -1,
-        ];
-
-        $posts = get_posts( $args );
-
+        $plans = Zume_Plans_Endpoints::get_public_plans();
         ?>
 
-        <div class="container">
+
+        <div class="container stack">
             <h1 class="text-center"><?php echo esc_html__( 'Course', 'zume' ) ?></h1>
 
-            <?php if ( empty( $posts ) ): ?>
+            <?php if ( empty( $plans ) || $plans['total'] === 0 ): ?>
 
                 <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
 
             <?php endif; ?>
-            <p><a class="button" href="/course_app/10session">10 Session Course</a>  | <a class="button" href="/course_app/20session">20 Session Course</a> </p>
-            <p><a class="button" href="/course_app/presenter">Prototype component based presenter</a></p>
-            <ol>
-                <?php foreach ( $posts as $post ): ?>
+            <div class="cluster"><a class="button" href="/course_app/10session">10 Session Course</a><a class="button" href="/course_app/20session">20 Session Course</a> <a class="button" href="/course_app/presenter">Prototype component based presenter</a></div>
+            <table>
+                <thead>
+                    <tr>
+                        <td><?php echo esc_html__( 'Name', 'zume' ) ?></td>
+                        <td><?php echo esc_html__( 'Next Session Date', 'zume' ) ?></td>
+                        <td><?php echo esc_html__( 'Start Time', 'zume' ) ?></td>
+                        <td><?php echo esc_html__( 'TimeZone', 'zume' ) ?></td>
+                        <td><?php echo esc_html__( 'Language', 'zume' ) ?></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
 
-                    <?php
+                    <?php foreach ( $plans['posts'] as $post ): ?>
 
-                        $meta = get_post_meta( $post->ID );
-                        $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
+                        <?php
 
-                    ?>
+                        $status = isset( $post['status'] ) ? $post['status'] : false;
 
-                    <li><a href="<?php echo esc_url( site_url( $current_language . '/' . $post->post_name ) ) ?>"><?php echo esc_html( $page_title ) ?></a></li>
+                        if ( !$status || empty( $status ) || $status['key'] !== 'active' ) {
+                            continue;
+                        }
 
+                        $page_title = $post['post_title'];
 
-                <?php endforeach; ?>
-            </ol>
+                        $plan_length = 10;
+                        $plan_prefix = 'set_a';
+
+                        if ( isset( $post['set_b_01'] ) ) {
+                            $plan_length = 20;
+                            $plan_prefix = 'set_b';
+                        }
+
+                        $now = time();
+
+                        for ( $i =1; $i < $plan_length + 1; $i++ ) {
+                            $session_index = $i < 10 ? "0$i" : "$i";
+                            $session_date = $post["${plan_prefix}_$session_index"];
+                            $latest_plan_date = $session_date['timestamp'];
+                            if ( $now < $session_date['timestamp'] ) {
+                                break;
+                            }
+                        }
+
+                        $formatted_date = gmdate( 'M d', $latest_plan_date );
+
+                        $time = isset( $post['time_of_day_note'] ) ? $post['time_of_day_note'] : '';
+                        $timezone = isset( $post['timezone_note'] ) ? $post['timezone_note'] : '';
+                        $language = isset( $post['language_note'] ) ? $post['language_note'] : '';
+                        $join_key = isset( $post['join_key'] ) ? $post['join_key'] : '';
+
+                        ?>
+
+                        <tr>
+                            <td><?php echo esc_html( $page_title ) ?></td>
+                            <td><?php echo esc_html( $formatted_date ) ?></td>
+                            <td><?php echo esc_html( $time ) ?></td>
+                            <td><?php echo esc_html( $timezone ) ?></td>
+                            <td><?php echo esc_html( $language ) ?></td>
+                            <td>
+                                <a href="<?php echo esc_url( zume_url( 'zume_app/plan_invite?code=' . $join_key ) ) ?>" class="btn">
+                                    <?php echo esc_html__( 'Join', 'zume' ) ?>
+                                </a>
+                            </td>
+                        </tr>
+
+                    <?php endforeach; ?>
+
+                </tbody>
+            </table>
             <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
         </div>
+
         <?php
     }
 }

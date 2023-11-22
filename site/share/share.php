@@ -74,6 +74,8 @@ class Zume_Training_Share extends Zume_Magic_Page
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
+
+                window.zumeInitShareLinks()
             });
         </script>
         <?php
@@ -117,17 +119,13 @@ class Zume_Training_Share extends Zume_Magic_Page
 
                     ?>
 
-
-
-                    <li class="cluster">
-                        <a class="h4 brand my-0" href="<?php echo esc_url( $page_url ) ?>">
-
-                            <?php echo esc_html( $page_title ) ?>
-
-                        </a>
-
-                        <?php share_links( $page_title, $page_url ) ?>
-
+                    <li>
+                        <div class="cluster">
+                            <a class="f-1 bold brand my-0" href="<?php echo esc_url( $page_url ) ?>">
+                                <?php echo esc_html( $page_title ) ?>
+                            </a>
+                            <?php share_links( $page_title, $page_url ) ?>
+                        </div>
                     </li>
 
                 <?php endforeach; ?>

@@ -4,12 +4,14 @@ import { LitElement, html } from "lit"
 const ZumeWizards = {
     makeAPlan: 'getting-started',
     connectToCoach: 'connect-to-coach',
+    joinAPlan: 'join-a-training',
 }
 const ZumeWizardModules = {
     completeProfile: 'completeProfile',
     makePlan: 'makePlan',
     inviteFriends: 'inviteFriends',
     connectToCoach: 'connectToCoach',
+    joinPlan: 'joinPlan',
 }
 const ZumeWizardSteps = {
     updateName: 'update-your-name',
@@ -394,6 +396,18 @@ export class Wizard extends LitElement {
                 ],
                 skippable,
             },
+            [ZumeWizardModules.joinPlan]: {
+                steps: [
+                    {
+                        slug: 'joined-training',
+                        component: (step) => html`
+                            <h1>Joining Plan</h1>
+                            <p>Please wait while we connect you <span class="loading-spinner active"></span></p>
+                            <p>Successfully joined plan</p>
+                        `
+                    }
+                ]
+            }
         }
 
         const moduleNames = Object.keys(modules)
@@ -459,6 +473,14 @@ export class Wizard extends LitElement {
                 ]),
                 [ZumeWizardModules.connectToCoach]: this.getModule(ZumeWizardModules.connectToCoach),
             },
+            [ZumeWizards.joinAPlan]: {
+                [ZumeWizardModules.completeProfile]: this.makeModule([
+                    ZumeWizardSteps.updateName,
+                    ZumeWizardSteps.updateLocation,
+                    ZumeWizardSteps.updatePhone,
+                ]),
+                [ZumeWizardModules.joinPlan]: this.getModule(ZumeWizardModules.joinPlan),
+            }
         }
 
         return wizards[this.type]

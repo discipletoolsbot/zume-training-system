@@ -193,7 +193,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                             <p><?php echo esc_html__( 'Use the code your friend sent you.', 'zume' ) ?></p>
                             <div class="">
                                 <label for="code"></label>
-                                <input class="input" id="code" type="text" placeholder="012345" value="<?php echo ( $code ) ? esc_html( $code ) : ''  ?>" >
+                                <input class="input" id="code" type="text" placeholder="012345" value="<?php echo ( $key_code ) ? esc_html( $key_code ) : ''  ?>" >
                             </div>
                             <button class="btn code_submit"><?php echo esc_html__( 'Connect', 'zume' ) ?></button>
                         </div>

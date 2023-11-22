@@ -6,14 +6,14 @@ if ( ! class_exists( 'DT_Module_Base' ) ) {
     return;
 }
 
-add_filter( 'dt_post_type_modules', function( $modules ){
+add_filter( 'dt_post_type_modules', function ( $modules ) {
     $modules['zume_plans_base'] = [
         'name' => __( 'Zume Plans', 'zume-training-system' ),
         'enabled' => true,
         'locked' => true,
         'prerequisites' => [ 'contacts_base' ],
         'post_type' => 'zume_plans',
-        'description' => __( 'Default starter functionality', 'zume-training-system' )
+        'description' => __( 'Default starter functionality', 'zume-training-system' ),
     ];
 
     return $modules;
@@ -69,7 +69,6 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
         //list
         add_filter( 'dt_user_list_filters', [ $this, 'dt_user_list_filters' ], 10, 2 );
         add_filter( 'dt_filter_access_permissions', [ $this, 'dt_filter_access_permissions' ], 20, 2 );
-
     }
 
     public function after_setup_theme(){
@@ -104,7 +103,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'permissions' => [
                     'access_contacts' => true,
                     // @todo more capabilities
-                ]
+                ],
             ];
         }
 
@@ -145,12 +144,12 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     'inactive' => [
                         'label' => __( 'Inactive', 'zume-training-system' ),
                         'description' => __( 'No longer active.', 'zume-training-system' ),
-                        'color' => '#F43636'
+                        'color' => '#F43636',
                     ],
                     'active'   => [
                         'label' => __( 'Active', 'zume-training-system' ),
                         'description' => __( 'Is active.', 'zume-training-system' ),
-                        'color' => '#4CAF50'
+                        'color' => '#4CAF50',
                     ],
                 ],
                 'tile'     => 'status',
@@ -175,12 +174,12 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     'private' => [
                         'label' => __( 'Private', 'zume-training-system' ),
                         'description' => __( 'No longer active.', 'zume-training-system' ),
-                        'color' => '#F43636'
+                        'color' => '#F43636',
                     ],
                     'public'   => [
                         'label' => __( 'Public', 'zume-training-system' ),
                         'description' => __( 'Is active.', 'zume-training-system' ),
-                        'color' => '#4CAF50'
+                        'color' => '#4CAF50',
                     ],
                 ],
                 'tile'     => 'status',
@@ -219,6 +218,14 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'default'     => '',
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['language_note'] = [
+                'name'        => __( 'Language', 'zume-training-system' ),
+                'description' => 'Language of the training',
+                'type'        => 'text',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/languages.svg',
             ];
             $fields['join_key'] = [
                 'name'        => __( 'Join Key', 'zume-training-system' ),
@@ -483,7 +490,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'participants',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/group-type.svg',
                 'create-icon' => get_template_directory_uri() . '/dt-assets/images/add-contact.svg',
-                'show_in_table' => 35
+                'show_in_table' => 35,
             ];
         }
 
@@ -498,7 +505,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'profile_details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/group-type.svg',
                 'create-icon' => get_template_directory_uri() . '/dt-assets/images/add-group.svg',
-                'show_in_table' => 35
+                'show_in_table' => 35,
             ];
         }
 
@@ -530,7 +537,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             <script>
                 jQuery(document).ready(function(){
                     let start_date = jQuery('#start_date')
-                    let post_id = <?php echo get_the_ID(); ?>;
+                    let post_id = <?php echo esc_js( get_the_ID() ); ?>;
                     jQuery('#install_10_sessions').click(function(){
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
@@ -581,19 +588,19 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
     public function post_connection_added( $post_type, $post_id, $field_key, $value ){
         if ( $post_type === $this->post_type ){
-            if ( $field_key === "participants" ){
+            if ( $field_key === 'participants' ){
                 $user_id = zume_get_user_id_by_contact_id( $value );
                 if ( empty( $user_id ) ){
                     return;
                 }
 
-                DT_Posts::add_shared(  $post_type,  $post_id,  $user_id, null, false, false, true );
+                DT_Posts::add_shared( $post_type, $post_id, $user_id, null, false, false, true );
 
                 zume_log_insert(
                     'system',
                     'plan_created',
                     [
-                        'user_id' => $user_id
+                        'user_id' => $user_id,
                     ],
                 );
             }
@@ -651,12 +658,12 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     //action when a post has been created
     public function dt_post_created( $post_type, $post_id, $initial_fields ){
         if ( $post_type === $this->post_type ){
-            if( isset( $initial_fields['assigned_to'] ) ){
+            if ( isset( $initial_fields['assigned_to'] ) ){
                 zume_log_insert(
                     'system',
                     'plan_created',
                     [
-                        'user_id' => $initial_fields['assigned_to']
+                        'user_id' => $initial_fields['assigned_to'],
                     ],
                 );
             }
@@ -722,7 +729,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'key' => 'assigned_to_me',
                 'label' => __( 'Assigned to me', 'zume-training-system' ),
                 'count' => $total_my,
-                'order' => 20
+                'order' => 20,
             ];
             // add assigned to me filters
             $filters['filters'][] = [
@@ -731,7 +738,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'name' => __( 'All', 'zume-training-system' ),
                 'query' => [
                     'assigned_to' => [ 'me' ],
-                    'sort' => 'status'
+                    'sort' => 'status',
                 ],
                 'count' => $total_my,
             ];
@@ -745,9 +752,9 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                         'query' => [
                             'assigned_to' => [ 'me' ],
                             'status' => [ $status_key ],
-                            'sort' => '-post_date'
+                            'sort' => '-post_date',
                         ],
-                        'count' => $status_counts[$status_key]
+                        'count' => $status_counts[$status_key],
                     ];
                 }
             }
@@ -766,7 +773,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     'key' => 'by_status',
                     'label' => __( 'All By Status', 'zume-training-system' ),
                     'count' => $total_all,
-                    'order' => 30
+                    'order' => 30,
                 ];
                 // add assigned to me filters
                 $filters['filters'][] = [
@@ -774,9 +781,9 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     'tab' => 'by_status',
                     'name' => __( 'All', 'zume-training-system' ),
                     'query' => [
-                        'sort' => '-post_date'
+                        'sort' => '-post_date',
                     ],
-                    'count' => $total_all
+                    'count' => $total_all,
                 ];
 
                 foreach ( $fields['status']['default'] as $status_key => $status_value ) {
@@ -787,9 +794,9 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                             'name' => $status_value['label'],
                             'query' => [
                                 'status' => [ $status_key ],
-                                'sort' => '-post_date'
+                                'sort' => '-post_date',
                             ],
-                            'count' => $status_counts[$status_key]
+                            'count' => $status_counts[$status_key],
                         ];
                     }
                 }

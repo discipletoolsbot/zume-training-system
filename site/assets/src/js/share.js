@@ -42,4 +42,6 @@ const share = ({title, url, copyFeedback, shareFeedback}) => {
   };
 };
 
-createApp({share}).mount();
+window.zumeInitShareLinks = () => {
+  createApp({share}).mount();
+}
