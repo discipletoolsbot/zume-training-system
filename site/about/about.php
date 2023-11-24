@@ -99,57 +99,57 @@ class Zume_Training_About extends Zume_Magic_Page
                 </div>
             </div>
 
-            <div class="switcher">
+            <div class="switcher align-items-center">
                 <div class="stack-3">
-                    <p class="mt-auto">
+                    <p>
                         Voluptate consequat proident consequat cupidatat commodo ut consequat culpa. Ad ipsum irure dolor culpa veniam exercitation sunt mollit eiusmod dolore ullamco tempor proident adipisicing. Cupidatat nisi est aliquip cillum ullamco culpa eiusmod est. Elit ut duis do cillum est aliquip qui veniam nulla aliquip commodo qui ut ea. Excepteur aliqua dolore officia laborum. Labore eiusmod ex excepteur Lorem ullamco proident dolor incididunt ut. Laboris anim excepteur velit id nostrud minim aliquip tempor voluptate commodo.
                     </p>
-                    <p class="mb-auto">
+                    <p>
                         Fugiat eiusmod elit anim ipsum qui ex sint aliqua aliqua magna sit. Reprehenderit mollit nulla nisi anim laboris tempor deserunt ad dolore irure ipsum magna amet quis. Sunt culpa ipsum duis amet sint in. Proident eu esse commodo duis ad ea. Fugiat nulla laboris cupidatat nisi tempor fugiat nulla qui.
                     </p>
                 </div>
                 <div class="center">
-                    <img class="w-60 my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/PeopleOnGlobesvg.svg' ) ?>" alt="people on globe">
+                    <img class="w-60" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/PeopleOnGlobesvg.svg' ) ?>" alt="people on globe">
                 </div>
             </div>
 
-            <div class="switcher">
+            <div class="switcher align-items-center">
                 <div class="center">
-                    <img class="w-70 my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/CellPhone.svg' ) ?>" alt="computer devices">
+                    <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/CellPhone.svg' ) ?>" alt="computer devices">
                 </div>
-                <p class="my-auto">
+                <p>
                     Exercitation dolore dolor ut anim non pariatur reprehenderit occaecat nostrud ullamco eu eiusmod duis. Tempor eu veniam laboris excepteur incididunt reprehenderit sit tempor deserunt consequat dolore culpa dolore. Consequat aliqua nisi aliqua aliqua. Ut anim cillum minim proident proident commodo minim Lorem mollit dolor consectetur. Ut exercitation ex adipisicing ullamco ipsum ea irure amet eu voluptate. Non ullamco culpa nostrud dolor est enim est culpa. Laborum laborum commodo cillum officia non sunt ut consequat eu labore cillum laborum incididunt officia.
                 </p>
             </div>
 
             <h2 class="brand text-center bold"><?php echo esc_html__( 'Zume Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></h2>
 
-            <div class="switcher">
-                <p class="my-auto">
+            <div class="switcher align-items-center">
+                <p>
                     Ad ea minim sint incididunt nulla. Id dolor est sunt et. Minim esse exercitation quis laborum esse. Fugiat amet eiusmod est consectetur aliqua quis. Duis fugiat sunt voluptate minim quis labore labore minim labore officia ut voluptate elit enim. Sint aute consequat in magna aute.
                 </p>
                 <div class="center">
-                    <img class="w-70 my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WorldGroups.svg' ) ?>" alt="groups around the globe">
+                    <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WorldGroups.svg' ) ?>" alt="groups around the globe">
                 </div>
             </div>
 
-            <div class="switcher">
+            <div class="switcher align-items-center">
                 <div class="center">
                     <span class="brand bold"><?php echo esc_html__( '1 Training', 'zume' ) ?></span>
-                    <img class="my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/1Training.svg' ) ?>" alt="One training">
+                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/1Training.svg' ) ?>" alt="One training">
                 </div>
-                <p class="my-auto">
+                <p>
                     Cillum ex quis velit aliquip aliquip et minim consectetur aliquip laborum proident eiusmod sunt. Excepteur aute esse ad fugiat id ex minim non ut sit sit laboris culpa laboris. Officia nulla labore tempor duis ea velit anim aliqua non ad do incididunt eiusmod. Ex aute non culpa consequat tempor eu sunt ad nulla dolore.
                 </p>
             </div>
 
-            <div class="switcher">
-                <p class="my-auto">
+            <div class="switcher align-items-center">
+                <p>
                     Sit consectetur est adipisicing quis dolor reprehenderit. Amet quis voluptate cillum quis pariatur sit. Eiusmod culpa id amet laboris aliquip irure deserunt consectetur do irure fugiat dolor Lorem qui. Incididunt magna proident eu mollit esse excepteur labore consectetur tempor. Dolor fugiat deserunt sint incididunt cupidatat nulla culpa.
                 </p>
                 <div class="center">
                     <span class="brand bold"><?php echo esc_html__( '2 Simple Churches', 'zume' ) ?></span>
-                    <img class="my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/2Churches.svg' ) ?>" alt="2 simple churches">
+                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/2Churches.svg' ) ?>" alt="2 simple churches">
                 </div>
             </div>
 
@@ -193,9 +193,9 @@ class Zume_Training_About extends Zume_Magic_Page
                 </div>
                 <h2 class="brand text-center"><?php echo esc_html__( 'Before you start.', 'zume' ) ?></h2>
 
-                <div class="switcher">
+                <div class="switcher align-items-center">
                     <div class="center | position-relative z-2">
-                        <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/BeforeYouStart.svg' ) ?>" alt="group around a table" class="my-auto w-70">
+                        <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/BeforeYouStart.svg' ) ?>" alt="group around a table" class="w-70">
                     </div>
                     <div class="stack-2 | bg-white p-2 right z-1 | tail circle-head">
                         <h3 class="f-0 bold"><?php echo esc_html__( 'Zume is NOT like other trainings!', 'zume' ) ?></h3>
@@ -214,8 +214,8 @@ class Zume_Training_About extends Zume_Magic_Page
         <div class="page bg-brand-light white">
             <div class="container-md stack-3">
                 <h2 class="text-center"><?php echo esc_html__( "What's required", 'zume' ) ?></h2>
-                <div class="switcher">
-                    <div class="stack-2 my-auto">
+                <div class="switcher align-items-center">
+                    <div class="stack-2">
                         <h3 class="white bold"><?php echo esc_html__( 'Requirements for Zume Training:', 'zume' ) ?></h3>
                         <ul class="stack-1">
                             <li>Magna eu proident consequat eiusmod ullamco est veniam ad mollit esse duis labore amet ad.</li>
@@ -225,11 +225,11 @@ class Zume_Training_About extends Zume_Magic_Page
                         </ul>
                     </div>
                     <div class="center">
-                        <img class="w-70 my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="group discussion">
+                        <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="group discussion">
                     </div>
                 </div>
-                <div class="switcher">
-                    <div class="stack-2 my-auto">
+                <div class="switcher align-items-center">
+                    <div class="stack-2">
                         <h3 class="white bold"><?php echo esc_html__( 'NOT Required for Zume Training:', 'zume' ) ?></h3>
                         <ul class="stack-1">
                             <li>Magna eu proident consequat eiusmod ullamco est veniam ad mollit esse duis labore amet ad.</li>
@@ -240,7 +240,7 @@ class Zume_Training_About extends Zume_Magic_Page
                         </ul>
                     </div>
                     <div class="center">
-                        <img class="w-50 my-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WhatsNOTRequired.svg' ) ?>" alt="group discussion">
+                        <img class="w-50" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WhatsNOTRequired.svg' ) ?>" alt="group discussion">
                     </div>
                 </div>
             </div>
@@ -249,11 +249,11 @@ class Zume_Training_About extends Zume_Magic_Page
             <div class="container-md stack-3">
                 <h2 class="brand text-center"><?php echo esc_html__( 'Connecting with a Coach.', 'zume' ) ?></h2>
 
-                <div class="switcher">
+                <div class="switcher align-items-center">
                     <div class="center">
                         <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/coach-2guys.svg' ) ?>" alt="guy with a coach" class="w-50">
                     </div>
-                    <div class="stack-2 | my-auto">
+                    <div class="stack-2">
                         <p>Lorem incididunt irure eu ut eiusmod voluptate ea anim officia proident deserunt aliqua culpa dolor.</p>
                         <p>Aute ullamco fugiat non voluptate irure dolore officia Lorem dolor ipsum aliquip culpa ea. Sit velit mollit nisi magna sunt. Mollit magna duis nisi non sunt velit consectetur labore pariatur. Quis voluptate consequat ad aliquip. Eiusmod laboris excepteur ex esse excepteur veniam ullamco ex.</p>
                         <p>Pariatur minim adipisicing tempor ea pariatur velit tempor eiusmod ea pariatur.</p>

@@ -132,7 +132,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         <li><?php echo esc_html__( 'Self-Facilitated', 'zume' ) ?></li>
                     </ul>
                 </div>
-                <div class="center stack | my-auto">
+                <div class="center stack">
                     <img class="" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
                     <h3 class="text-center f-1 mx-2"><?php echo esc_html__( 'Free. Anytime. Anywhere.', 'zume' ) ?></h3>
                 </div>
