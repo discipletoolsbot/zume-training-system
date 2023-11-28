@@ -139,7 +139,7 @@ class Zume_Training_Course extends Zume_Magic_Page
 
                         for ( $i =1; $i < $plan_length + 1; $i++ ) {
                             $session_index = $i < 10 ? "0$i" : "$i";
-                            $session_date = $post["${plan_prefix}_$session_index"];
+                            $session_date = $post[$plan_prefix . '_' . $session_index];
                             $latest_plan_date = $session_date['timestamp'];
                             if ( $now < $session_date['timestamp'] ) {
                                 break;

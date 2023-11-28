@@ -10,10 +10,15 @@
         $url_pieces = zume_get_url_pieces();
 
         foreach ( $zume_languages_by_code as $item ){
+            $query = '';
+            if ( isset( $dt_url->parsed_url['query'] ) ) {
+                $query = '?' . $dt_url->parsed_url['query'];
+            }
+
             if ( 'en' === $item['code'] ) {
-                $url = esc_url( trailingslashit( site_url() ) . $url_pieces['path'] ) . '?' . $dt_url->parsed_url['query'];
+                $url = esc_url( trailingslashit( site_url() ) ) . $url_pieces['path'] . $query;
             } else {
-                $url = esc_url( site_url() ) . '/' . $item['code'] . '/' . $url_pieces['path'] . '?' . $dt_url->parsed_url['query'];
+                $url = esc_url( trailingslashit( site_url() ) ) . $item['code'] . '/' . $url_pieces['path'] . $query;
             }
             ?>
             <tr class="language-selector" data-url="<?php echo esc_url( $url ) ?>" data-value="<?php echo esc_attr( $item['code'] ) ?>" id="row-<?php echo esc_attr( $item['code'] ) ?>">

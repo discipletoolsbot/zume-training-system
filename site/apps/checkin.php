@@ -71,7 +71,6 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
     public function header_style(){
         global $zume_user_profile;
-        dt_write_log( $zume_user_profile );
         ?>
         <script>
             jQuery(document).ready(function(){
