@@ -26,8 +26,10 @@ const wizardSteps = {
                             <complete-profile
                                 name=${step.slug}
                                 module=${step.module}
+                                ?skippable=${step.skippable}
                                 t="${JSON.stringify(t.complete_profile)}"
                                 variant="name"
+                                @done-step=${step.doneHandler}
                             ></complete-profile>
                         `
                     },
@@ -37,8 +39,10 @@ const wizardSteps = {
                             <complete-profile
                                 name=${step.slug}
                                 module=${step.module}
+                                ?skippable=${step.skippable}
                                 t="${JSON.stringify(t.complete_profile)}"
                                 variant="location"
+                                @done-step=${step.doneHandler}
                             ></complete-profile>
                         `
                     },
@@ -48,8 +52,10 @@ const wizardSteps = {
                             <complete-profile
                                 name=${step.slug}
                                 module=${step.module}
+                                ?skippable=${step.skippable}
                                 t="${JSON.stringify(t.complete_profile)}"
                                 variant="phone"
+                                @done-step=${step.doneHandler}
                             ></complete-profile>
                         `
                     }
@@ -107,11 +113,15 @@ export class Wizard extends LitElement {
         return html`
         <div class="cover container center">
 
+            <div class="fixed top left right p-2">
+                ${this.skipButton()}
+            </div>
+
             ${this.currentStep()}
 
             <div class="stack-1 | fixed bottom left right p-2">
-                ${this.navigationButtons()}
                 ${this.stepCounter()}
+                ${this.finishButton()}
             </div>
 
         </div>
@@ -124,24 +134,27 @@ export class Wizard extends LitElement {
         return currentStep.component(currentStep, this.t)
     }
 
-    navigationButtons() {
+    skipButton() {
         const { skippable } = this.step
-
-        const isFirstStep = this.stepIndex === 0
         const isLastStep = this.stepIndex === this.steps.length - 1
 
         return html`
         <div class="text-center d-flex justify-content-between">
-            ${ !isFirstStep ? (
-                html`<button @click=${this._onBack} class="btn outline ">${this.t.back}</button>`
-            ) : ''}
             <div class="cluster ms-auto">
                 ${ skippable && !isLastStep ? (
-                    html`<button @click=${this._onSkip} class="brand">${this.t.skip}</button>`
+                    html`<button @click=${this._onSkip} class="btn outline brand">${this.t.skip}</button>`
                 ) : ''}
-                ${ !isLastStep ? (
-                    html`<button @click=${this._onNext} class="btn">${this.t.next}</button>`
-                ) : ''}
+            </div>
+        </div>
+        `
+    }
+
+    finishButton() {
+        const isLastStep = this.stepIndex === this.steps.length - 1
+
+        return html`
+        <div class="text-center d-flex justify-content-between">
+            <div class="cluster ms-auto">
                 ${ isLastStep ? (
                     html`<button @click=${this._onFinish} class="btn">${this.t.finish}</button>`
                 ) : '' }
@@ -285,6 +298,7 @@ export class Wizard extends LitElement {
                             <p>Making a plan can help you with success.</p>
                             <p>Answering the following questions will help us make you a plan.</p>
                             <p>Or you can skip if you prefer</p>
+                            <button class="btn" @click=${step.doneHandler}>OK</button>
                         `
                     },
                     {
@@ -292,8 +306,8 @@ export class Wizard extends LitElement {
                         component: (step) => html`
                             <h1>Will you do 1 or 2 hour training sessions?</h1>
                             <div class="stack">
-                                <button class="btn">1 hour (20 sessions)</button>
-                                <button class="btn">2 hour (10 sessions)</button>
+                                <button class="btn" @click=${step.doneHandler}>1 hour (20 sessions)</button>
+                                <button class="btn" @click=${step.doneHandler}>2 hour (10 sessions)</button>
                             </div>
                         `
                     },
@@ -302,9 +316,9 @@ export class Wizard extends LitElement {
                         component: (step) => html`
                             <h1>What time of day?</h1>
                             <div class="stack">
-                                <button class="btn">Morning</button>
-                                <button class="btn">Afternoon</button>
-                                <button class="btn">Evening</button>
+                                <button class="btn" @click=${step.doneHandler}>Morning</button>
+                                <button class="btn" @click=${step.doneHandler}>Afternoon</button>
+                                <button class="btn" @click=${step.doneHandler}>Evening</button>
                             </div>
                         `
                     },
@@ -313,10 +327,10 @@ export class Wizard extends LitElement {
                         component: (step) => html`
                             <h1>How often will you meet?</h1>
                             <div class="stack">
-                                <button class="btn">Every day</button>
-                                <button class="btn">Once a week</button>
-                                <button class="btn">Twice a month</button>
-                                <button class="btn">Once a month</button>
+                                <button class="btn" @click=${step.doneHandler}>Every day</button>
+                                <button class="btn" @click=${step.doneHandler}>Once a week</button>
+                                <button class="btn" @click=${step.doneHandler}>Twice a month</button>
+                                <button class="btn" @click=${step.doneHandler}>Once a month</button>
                             </div>
                         `
                     },
@@ -325,6 +339,7 @@ export class Wizard extends LitElement {
                         component: (step) => html`
                             <h1>When do you plan to start?</h1>
                             <input type="date">
+                            <button class="btn" @click=${step.doneHandler}>Done</button>
                         `
                     },
                 ],
@@ -434,6 +449,7 @@ export class Wizard extends LitElement {
                     slug,
                     module: moduleName,
                     skippable,
+                    doneHandler: this._onNext,
                 }
 
                 this.steps.push(step)

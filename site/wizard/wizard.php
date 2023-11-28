@@ -104,6 +104,10 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'phone' => esc_html__( 'Phone', 'zume' ),
                         'city' => esc_html__( 'City', 'zume' ),
                         'name' => esc_html__( 'Name', 'zume' ),
+                        'name_question' => esc_html__( 'What is your name?', 'zume' ),
+                        'phone_question' => esc_html__( 'What is your phone number?', 'zume' ),
+                        'location_question' => esc_html__( 'What city do you live in?', 'zume' ),
+                        'done' => esc_html__( 'Done', 'zume' ),
                     ],
                 ],
             ]) ?>][0]

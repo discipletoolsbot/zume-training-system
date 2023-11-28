@@ -13,6 +13,10 @@ export class CompleteProfile extends LitElement {
              */
             module: { type: String },
             /**
+             * Is this step skippable
+             */
+            skippable: { type: Boolean },
+            /**
              * Translation strings
              */
             t: { type: Object },
@@ -23,6 +27,7 @@ export class CompleteProfile extends LitElement {
             locations: { attribute: false },
             locationError: { attribute: false },
             city: { attribute: false },
+            loading: { attribute: false },
         }
     }
 
@@ -35,8 +40,8 @@ export class CompleteProfile extends LitElement {
         this.locations = []
         this.locationError = ''
         this.city = ''
+        this.loading = false
 
-        this._handleLocationsChange = this._handleLocationsChange.bind(this)
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
         this._debounceCityChange = debounce(getAddressSuggestions(this._handleSuggestions, zumeProfile.map_key)).bind(this)
@@ -49,9 +54,9 @@ export class CompleteProfile extends LitElement {
 
     render() {
         return html`
-        <div class="inputs">
+        <form class="inputs">
             ${ this.variant === 'name' ? html`
-                <h2 class="f-1">What's your name?</h2>
+                <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
                     <input type="text" id="name" name="name" value="" @change=${this._handleNameChange}>
@@ -59,7 +64,7 @@ export class CompleteProfile extends LitElement {
             ` : ''}
 
             ${ this.variant === 'phone' ? html`
-                <h2 class="f-1">What's your phone number?</h2>
+                <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
                     <input type="tel" id="phone" name="phone" value="" @change=${this._handlePhoneChange}>
@@ -67,7 +72,7 @@ export class CompleteProfile extends LitElement {
             ` : ''}
 
             ${ this.variant === 'location' ? html`
-                <h2 class="f-1">What city do you live in?</h2>
+                <h2 class="f-1">${this.t.location_question}</h2>
                 <div class="">
                     <label for="city">${this.t.city}</label>
                     <input
@@ -94,8 +99,23 @@ export class CompleteProfile extends LitElement {
                     })}
                 </div>
             ` : '' }
-        </div>
+            ${ [ 'phone', 'name' ].includes(this.variant) ? html`
+                <div class="cluster">
+                    <button class="btn" @click=${this._handleDone} ?disabled=${this.loading}>${this.t.done}</button>
+                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                </div>
+            ` : '' }
+        </form>
         `
+    }
+
+    _handleDone(event) {
+        if (event) {
+            event.preventDefault()
+        }
+
+        const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
+        this.dispatchEvent(doneStepEvent)
     }
 
     _handleNameChange(event) {
@@ -124,7 +144,7 @@ export class CompleteProfile extends LitElement {
     }
 
     _handleCityInputChange(event) {
-        //this.city = event.target.value
+        this.city = event.target.value
     }
 
     _handleSuggestions(data) {
@@ -135,10 +155,6 @@ export class CompleteProfile extends LitElement {
         this.locations = data.features
     }
 
-    _handleLocationsChange(locations) {
-        this.locations = locations
-    }
-
     _handleLocationSelection(event) {
         this.city = event.target.dataset.placeName
 
@@ -146,13 +162,17 @@ export class CompleteProfile extends LitElement {
             location_grid_meta: getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location),
         }
 
-        this._updateProfile(updates)
+        this._updateProfile(updates, () => {
+            this._clearLocations()
+            this._handleDone()
+        })
 
-        this._clearLocations()
+
     }
 
-    _updateProfile(updates) {
+    _updateProfile(updates, successCallback) {
         /* Update the profile using the api */
+        this.loading = true
 
         fetch( jsObject.rest_endpoint + '/profile', {
             method: 'POST',
@@ -163,11 +183,14 @@ export class CompleteProfile extends LitElement {
         } )
         .then(() => {
             console.log('success')
+            successCallback()
         })
         .catch((error) => {
             console.error(error)
         })
-        .finally(() => {})
+        .finally(() => {
+            this.loading = false
+        })
     }
 
     _clearLocations() {
