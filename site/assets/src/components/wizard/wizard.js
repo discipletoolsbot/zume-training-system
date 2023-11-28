@@ -17,48 +17,60 @@ const ZumeWizardSteps = {
     updateName: 'update-your-name',
     updateLocation: 'update-your-location',
     updatePhone: 'update-your-phone',
+    inviteFriends: 'invite-friends',
 }
 
 const wizardSteps = {
     [ZumeWizardSteps.updateName]: {
-                        slug: ZumeWizardSteps.updateName,
-                        component: (step, t) => html`
-                            <complete-profile
-                                name=${step.slug}
-                                module=${step.module}
-                                ?skippable=${step.skippable}
-                                t="${JSON.stringify(t.complete_profile)}"
-                                variant="name"
-                                @done-step=${step.doneHandler}
-                            ></complete-profile>
-                        `
-                    },
+        slug: ZumeWizardSteps.updateName,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant="name"
+                @done-step=${step.doneHandler}
+            ></complete-profile>
+        `
+    },
     [ZumeWizardSteps.updateLocation]: {
-                        slug: ZumeWizardSteps.updateLocation,
-                        component: (step, t) => html`
-                            <complete-profile
-                                name=${step.slug}
-                                module=${step.module}
-                                ?skippable=${step.skippable}
-                                t="${JSON.stringify(t.complete_profile)}"
-                                variant="location"
-                                @done-step=${step.doneHandler}
-                            ></complete-profile>
-                        `
-                    },
+        slug: ZumeWizardSteps.updateLocation,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant="location"
+                @done-step=${step.doneHandler}
+            ></complete-profile>
+        `
+    },
     [ZumeWizardSteps.updatePhone]: {
-                        slug: ZumeWizardSteps.updatePhone,
-                        component: (step, t) => html`
-                            <complete-profile
-                                name=${step.slug}
-                                module=${step.module}
-                                ?skippable=${step.skippable}
-                                t="${JSON.stringify(t.complete_profile)}"
-                                variant="phone"
-                                @done-step=${step.doneHandler}
-                            ></complete-profile>
-                        `
-                    }
+        slug: ZumeWizardSteps.updatePhone,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant="phone"
+                @done-step=${step.doneHandler}
+            ></complete-profile>
+        `
+    },
+    [ZumeWizardSteps.inviteFriends]: {
+        slug: ZumeWizardSteps.inviteFriends,
+        component: (step, t) => html`
+            <invite-friends
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+            ></invite-friends>
+        `
+    }
 }
 
 export class Wizard extends LitElement {
@@ -346,18 +358,7 @@ export class Wizard extends LitElement {
                 skippable,
             },
             [ZumeWizardModules.inviteFriends]: {
-                steps: [
-                    {
-                        slug: 'invite-your-friends',
-                        component: (step) => html`
-                            <h1>Invite your friends to join your training</h1>
-                            <p>Share the link below with your friends so that they can join your training.</p>
-                            <p><a href="https://zume.training/zume_app/friend-invite?123456">https://zume.training/zume_app/friend-invite?123456</a></p>
-                            <p>Alternatively your friends can scan this QR code in order to join.</p>
-                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://zume5.training/zume_app/friend_invite?code=123456" alt="" />
-                        `
-                    },
-                ],
+                steps: [ wizardSteps[ZumeWizardSteps.inviteFriends] ],
                 skippable,
             },
             [ZumeWizardModules.connectToCoach]: {
