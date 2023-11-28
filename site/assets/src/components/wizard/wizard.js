@@ -374,6 +374,7 @@ export class Wizard extends LitElement {
                             <input type="checkbox" name="contact-preference" id="phone" value="phone" />
                             <label for="whatsapp">Whatsapp</label>
                             <input type="checkbox" name="contact-preference" id="whatsapp" value="whatsapp" />
+                            <button class="btn" @click=${step.doneHandler}>Done</button>
                         `
                     },
                     {
@@ -382,6 +383,7 @@ export class Wizard extends LitElement {
                             <h1>What is your language preference?</h1>
                             <label for="language">Language Preference</label>
                             <input type="text" name="language-preference" id="language"/>
+                            <button class="btn" @click=${step.doneHandler}>Done</button>
                         `
                     },
                     {
@@ -398,6 +400,7 @@ export class Wizard extends LitElement {
                             <input type="checkbox" name="contact-preference" id="content" value="content" />
                             <label for="group-started">Help with what to do after starting a group</label>
                             <input type="checkbox" name="contact-preference" id="group-started" value="group-started" />
+                            <button class="btn" @click=${step.doneHandler}>Done</button>
                         `
                     },
                     {

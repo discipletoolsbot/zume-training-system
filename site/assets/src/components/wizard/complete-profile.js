@@ -35,6 +35,7 @@ export class CompleteProfile extends LitElement {
         super()
         this.name = ''
         this.module = ''
+        this.skippable = false
         this.variant = ''
         this.t = {}
         this.locations = []
@@ -54,12 +55,12 @@ export class CompleteProfile extends LitElement {
 
     render() {
         return html`
-        <form class="inputs">
+        <form class="inputs" @submit=${this._handleDone}>
             ${ this.variant === 'name' ? html`
                 <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
-                    <input type="text" id="name" name="name" value="" @change=${this._handleNameChange}>
+                    <input type="text" id="name" name="name" value="" @change=${this._handleNameChange} ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -67,7 +68,7 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
-                    <input type="tel" id="phone" name="phone" value="" @change=${this._handlePhoneChange}>
+                    <input type="tel" id="phone" name="phone" value="" @change=${this._handlePhoneChange} ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -101,7 +102,7 @@ export class CompleteProfile extends LitElement {
             ` : '' }
             ${ [ 'phone', 'name' ].includes(this.variant) ? html`
                 <div class="cluster">
-                    <button class="btn" @click=${this._handleDone} ?disabled=${this.loading}>${this.t.done}</button>
+                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
             ` : '' }
