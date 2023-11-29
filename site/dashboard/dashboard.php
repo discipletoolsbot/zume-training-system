@@ -114,6 +114,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             <hr />
             <div class="grid-x grid-margin-x">
                 <div class="cell medium-6">
+
                     <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p><hr />
                     <p><strong><?php echo esc_html__( 'User Friends', 'zume' ) ?></strong><pre><?php print_r( $friends ); ?></pre></p><hr />
@@ -130,6 +131,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
                     <p><button class="button cta_invite_plan" />Invite to Plan</button></p>
                     <p><button class="button cta_work_the_plan" />Work a Plan</button></p>
+
                     <p><button class="button" onclick="window.location.href = 'https://zume5.training/course_app/10session'" />10 Session Course</button></p>
                     <p><button class="button" onclick="window.location.href = 'https://zume5.training/course_app/20session'" />20 Session Course</button></p>
                     <p><button class="button cta_post_training_plan" />Create 3-Month Plan</button></p>
