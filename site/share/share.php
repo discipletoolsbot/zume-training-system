@@ -22,6 +22,16 @@ class Zume_Training_Share extends Zume_Magic_Page
         return self::$_instance;
     }
 
+    public static function translations() {
+        return [
+            'share' => __( 'Share', 'zume' ),
+            'copy_link' => __( 'Copy Link', 'zume' ),
+            'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
+            'share_feedback' => __( 'Thanks!', 'zume' ),
+            'copy_feedback' => __( 'Link copied', 'zume' ),
+        ];
+    }
+
     public function __construct() {
         parent::__construct();
         $this->lang = get_locale();
@@ -74,8 +84,6 @@ class Zume_Training_Share extends Zume_Magic_Page
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
-
-                window.zumeInitShareLinks()
             });
         </script>
         <?php
@@ -96,6 +104,7 @@ class Zume_Training_Share extends Zume_Magic_Page
         ];
 
         $posts = get_posts( $args );
+        $share_translations = self::translations();
 
         ?>
 
@@ -124,7 +133,10 @@ class Zume_Training_Share extends Zume_Magic_Page
                             <a class="f-1 bold brand my-0" href="<?php echo esc_url( $page_url ) ?>">
                                 <?php echo esc_html( $page_title ) ?>
                             </a>
-                            <?php share_links( $page_title, $page_url ) ?>
+                            <share-links
+                                url="<?php echo esc_attr( $page_url ) ?>"
+                                title="<?php echo esc_attr( $page_title ) ?>"
+                                t="<?php echo esc_attr( json_encode( $share_translations ) ) ?>"></share-links>
                         </div>
                     </li>
 
