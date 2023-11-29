@@ -20,6 +20,10 @@ export class InviteFriends extends LitElement {
              * Translation strings
              */
             t: { type: Object },
+            /**
+             * The url to share
+             */
+            url: { type: String },
         }
     }
 
@@ -28,117 +32,20 @@ export class InviteFriends extends LitElement {
         this.name = ''
         this.module = ''
         this.skippable = false
-        this.variant = ''
         this.t = {}
-        this.locations = []
-        this.locationError = ''
-        this.city = ''
-        this.loading = false
-
-        this._clearLocations = this._clearLocations.bind(this)
-        this._handleSuggestions = this._handleSuggestions.bind(this)
-        this._debounceCityChange = debounce(getAddressSuggestions(this._handleSuggestions, zumeProfile.map_key)).bind(this)
-        this._handleCityInputChange = this._handleCityInputChange.bind(this)
+        this.url = 'https://zume5.test/zume_app/plan_invite?code=123456'
     }
 
     render() {
         return html`
-            <div class="center">
+            <div class="center stack">
                 <h1>Invite your friends to join your training</h1>
                 <p>Share the link below with your friends so that they can join your training.</p>
-                <code>https://zume5.test/zume_app/friend_invite?code=123456</code>
+                <share-links url=${this.url} title="Join my zume plan" .t=${this.t}></share-links>
                 <p>Alternatively your friends can scan this QR code in order to join.</p>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://zume5.test/zume_app/friend_invite?code=123456" alt="" />
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${this.url}" alt="" />
             </div>
         `
-    }
-
-    _handleDone(event) {
-        if (event) {
-            event.preventDefault()
-        }
-
-        const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
-        this.dispatchEvent(doneStepEvent)
-    }
-
-    _handleNameChange(event) {
-        event.stopPropagation()
-
-        const updates = {
-            [event.target.name]: event.target.value,
-        }
-
-        this._updateProfile(updates)
-    }
-
-    _handlePhoneChange(event) {
-        event.stopPropagation()
-
-        const updates = {
-            [event.target.name]: event.target.value,
-        }
-
-        this._updateProfile(updates)
-    }
-
-    _handleCityChange(event) {
-        this._handleCityInputChange(event)
-        this._debounceCityChange(event)
-    }
-
-    _handleCityInputChange(event) {
-        this.city = event.target.value
-    }
-
-    _handleSuggestions(data) {
-        if (data.features.length < 1) {
-            this.locationError = this.t.no_locations_found
-        }
-
-        this.locations = data.features
-    }
-
-    _handleLocationSelection(event) {
-        this.city = event.target.dataset.placeName
-
-        const updates = {
-            location_grid_meta: getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location),
-        }
-
-        this._updateProfile(updates, () => {
-            this._clearLocations()
-            this._handleDone()
-        })
-
-
-    }
-
-    _updateProfile(updates, successCallback) {
-        /* Update the profile using the api */
-        this.loading = true
-
-        fetch( jsObject.rest_endpoint + '/profile', {
-            method: 'POST',
-            body: JSON.stringify(updates),
-            headers: {
-                'X-WP-Nonce': jsObject.nonce
-            }
-        } )
-        .then(() => {
-            console.log('success')
-            successCallback()
-        })
-        .catch((error) => {
-            console.error(error)
-        })
-        .finally(() => {
-            this.loading = false
-        })
-    }
-
-    _clearLocations() {
-        this.locations = []
     }
 
     createRenderRoot() {

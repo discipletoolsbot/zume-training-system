@@ -67,7 +67,7 @@ const wizardSteps = {
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
+                .t=${t.share}
             ></invite-friends>
         `
     }

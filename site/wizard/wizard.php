@@ -109,6 +109,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'location_question' => esc_html__( 'What city do you live in?', 'zume' ),
                         'done' => esc_html__( 'Done', 'zume' ),
                     ],
+                    'share' => Zume_Training_Share::translations(),
                 ],
             ]) ?>][0]
             const zumeProfile = [<?php echo json_encode([
