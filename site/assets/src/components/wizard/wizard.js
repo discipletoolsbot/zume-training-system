@@ -123,17 +123,18 @@ export class Wizard extends LitElement {
 
 
         return html`
-        <div class="cover container center">
+        <div class="container center">
 
-            <div class="fixed top left right p-2">
+            <header class="ms-auto p-2">
                 ${this.skipButton()}
+            </header>
+
+            <div>
+                ${this.currentStep()}
             </div>
 
-            ${this.currentStep()}
-
             <div class="stack-1 | fixed bottom left right p-2">
-                ${this.stepCounter()}
-                ${this.finishButton()}
+                ${this.footer()}
             </div>
 
         </div>
@@ -150,34 +151,28 @@ export class Wizard extends LitElement {
         const { skippable } = this.step
         const isLastStep = this.stepIndex === this.steps.length - 1
 
-        return html`
-        <div class="text-center d-flex justify-content-between">
-            <div class="cluster ms-auto">
-                ${ skippable && !isLastStep ? (
-                    html`<button @click=${this._onSkip} class="btn outline brand">${this.t.skip}</button>`
-                ) : ''}
-            </div>
-        </div>
-        `
+        if ( skippable && !isLastStep ) {
+            return html`<button @click=${this._onSkip} class="btn outline brand">${this.t.skip}</button>`
+        }
+
+        return ''
     }
 
     finishButton() {
-        const isLastStep = this.stepIndex === this.steps.length - 1
 
         return html`
-        <div class="text-center d-flex justify-content-between">
-            <div class="cluster ms-auto">
-                ${ isLastStep ? (
-                    html`<button @click=${this._onFinish} class="btn">${this.t.finish}</button>`
-                ) : '' }
+            <div class="text-center d-flex justify-content-between">
+                <div class="cluster ms-auto">
+                    <button @click=${this._onFinish} class="btn">${this.t.finish}</button>
+                </div>
             </div>
-        </div>
         `
     }
 
-    stepCounter() {
+    footer() {
+        const isLastStep = this.stepIndex === this.steps.length - 1
 
-        return html`
+        return isLastStep ? this.finishButton() : html`
         <div class="center">
             <div class="cluster">
                 ${this.steps.map((step, i) => {
@@ -186,9 +181,7 @@ export class Wizard extends LitElement {
                 })}
             </div>
         </div>
-        <div class="text-center">
-            ${this.stepIndex + 1} / ${this.steps.length}
-        </div>
+
         `
     }
 

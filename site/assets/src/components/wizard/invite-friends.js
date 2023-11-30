@@ -23,7 +23,7 @@ export class InviteFriends extends LitElement {
             /**
              * The url to share
              */
-            url: { type: String },
+            inviteCode: { type: String },
         }
     }
 
@@ -33,7 +33,8 @@ export class InviteFriends extends LitElement {
         this.module = ''
         this.skippable = false
         this.t = {}
-        this.url = 'https://zume5.test/zume_app/plan_invite?code=123456'
+        this.inviteCode = '123456'
+        this.url = `https://zume5.test/zume_app/plan_invite${this.inviteCode !== '' ? '?code=' + this.inviteCode : ''}`
     }
 
     render() {
@@ -43,7 +44,7 @@ export class InviteFriends extends LitElement {
                 <p>Share the link below with your friends so that they can join your training.</p>
                 <share-links url=${this.url} title="Join my zume plan" .t=${this.t}></share-links>
                 <p>Alternatively your friends can scan this QR code in order to join.</p>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${this.url}" alt="" />
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${this.url}" alt="" />
             </div>
         `
     }

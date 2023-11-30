@@ -1,4 +1,4 @@
-    <header>
+    <header class="header">
         <div class="d-flex | justify-content-between">
 
             <a href="<?php echo esc_url( zume_home_url() ) ?>" class="logo">

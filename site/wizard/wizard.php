@@ -124,14 +124,10 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     public function body(){
         ?>
 
-        <div class="container cover-page">
-            <div>
-                <zume-wizard
-                    type="<?php echo esc_attr( $this->wizard_type ) ?>"
-                    finishUrl="<?php echo esc_url( zume_dashboard_url() ) ?>"
-                ></zume-wizard>
-            </div>
-        </div>
+        <zume-wizard
+            type="<?php echo esc_attr( $this->wizard_type ) ?>"
+            finishUrl="<?php echo esc_url( zume_dashboard_url() ) ?>"
+        ></zume-wizard>
 
         <?php
     }
