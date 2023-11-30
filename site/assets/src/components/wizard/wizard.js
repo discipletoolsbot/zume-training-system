@@ -476,7 +476,9 @@ export class Wizard extends LitElement {
                     ZumeWizardSteps.updateLocation,
                 ], true),
                 [ZumeWizardModules.makePlan]: this.getModule(ZumeWizardModules.makePlan, true),
-                [ZumeWizardModules.inviteFriends]: this.getModule(ZumeWizardModules.inviteFriends, true),
+                [ZumeWizardModules.inviteFriends]: this.makeModule([
+                    ZumeWizardSteps.inviteFriends,
+                ], true),
             },
             [ZumeWizards.connectToCoach]: {
                 [ZumeWizardModules.completeProfile]: this.makeModule([
