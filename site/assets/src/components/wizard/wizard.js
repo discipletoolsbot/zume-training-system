@@ -1,24 +1,5 @@
 import { LitElement, html } from "lit"
-
-
-const ZumeWizards = {
-    makeAPlan: 'getting-started',
-    connectToCoach: 'connect-to-coach',
-    joinAPlan: 'join-a-training',
-}
-const ZumeWizardModules = {
-    completeProfile: 'completeProfile',
-    makePlan: 'makePlan',
-    inviteFriends: 'inviteFriends',
-    connectToCoach: 'connectToCoach',
-    joinPlan: 'joinPlan',
-}
-const ZumeWizardSteps = {
-    updateName: 'update-your-name',
-    updateLocation: 'update-your-location',
-    updatePhone: 'update-your-phone',
-    inviteFriends: 'invite-friends',
-}
+import { ZumeWizardModules, ZumeWizardSteps, ZumeWizards } from "./wizard-constants"
 
 const wizardSteps = {
     [ZumeWizardSteps.updateName]: {
@@ -29,7 +10,7 @@ const wizardSteps = {
                 module=${step.module}
                 ?skippable=${step.skippable}
                 t="${JSON.stringify(t.complete_profile)}"
-                variant="name"
+                variant=${ZumeWizardSteps.updateName}
                 @done-step=${step.doneHandler}
             ></complete-profile>
         `
@@ -42,7 +23,7 @@ const wizardSteps = {
                 module=${step.module}
                 ?skippable=${step.skippable}
                 t="${JSON.stringify(t.complete_profile)}"
-                variant="location"
+                variant=${ZumeWizardSteps.updateLocation}
                 @done-step=${step.doneHandler}
             ></complete-profile>
         `
@@ -55,9 +36,61 @@ const wizardSteps = {
                 module=${step.module}
                 ?skippable=${step.skippable}
                 t="${JSON.stringify(t.complete_profile)}"
-                variant="phone"
+                variant=${ZumeWizardSteps.updatePhone}
                 @done-step=${step.doneHandler}
             ></complete-profile>
+        `
+    },
+    [ZumeWizardSteps.contactPreferences]: {
+        slug: ZumeWizardSteps.contactPreferences,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.contactPreferences}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.languagePreferences]: {
+        slug: ZumeWizardSteps.languagePreferences,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.languagePreferences}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.howCanWeServe]: {
+        slug: ZumeWizardSteps.howCanWeServe,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.howCanWeServe}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.connectingToCoach]: {
+        slug: ZumeWizardSteps.connectingToCoach,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.connectingToCoach}
+                @done-step=${step.doneHandler}
+            ></get-coach>
         `
     },
     [ZumeWizardSteps.inviteFriends]: {
@@ -112,11 +145,13 @@ export class Wizard extends LitElement {
 
         if (this.steps.length === 0) {
             return html`
-            <div class="cover">
-                <h1 class="brand">${this.t.bad_wizard}</h1>
-                <p>${this.t.found_bad_wizard}</p>
-                <div class="center"><img class="w-20" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
-                <a href="/">${this.t.home}</a>
+            <div class="cover-page">
+                <div class="stack center | text-center">
+                    <h1 class="brand">${this.t.bad_wizard}</h1>
+                    <p>${this.t.found_bad_wizard}</p>
+                    <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
+                    <a class="btn" href="/">${this.t.home}</a>
+                </div>
             </div>`
         }
 
@@ -152,7 +187,7 @@ export class Wizard extends LitElement {
         const isLastStep = this.stepIndex === this.steps.length - 1
 
         if ( skippable && !isLastStep ) {
-            return html`<button @click=${this._onSkip} class="btn outline brand">${this.t.skip}</button>`
+            return html`<button @click=${this._onSkip} class="brand">${this.t.skip}</button>`
         }
 
         return ''
@@ -354,60 +389,6 @@ export class Wizard extends LitElement {
                 steps: [ wizardSteps[ZumeWizardSteps.inviteFriends] ],
                 skippable,
             },
-            [ZumeWizardModules.connectToCoach]: {
-                steps: [
-                    {
-                        slug: 'contact-preference',
-                        component: (step) => html`
-                            <h1>What is your contact preference?</h1>
-                            <label for="email">Email</label>
-                            <input type="checkbox" name="contact-preference" id="email" value="email" />
-                            <label for="text">Text</label>
-                            <input type="checkbox" name="contact-preference" id="text" value="text" />
-                            <label for="phone">Phone</label>
-                            <input type="checkbox" name="contact-preference" id="phone" value="phone" />
-                            <label for="whatsapp">Whatsapp</label>
-                            <input type="checkbox" name="contact-preference" id="whatsapp" value="whatsapp" />
-                            <button class="btn" @click=${step.doneHandler}>Done</button>
-                        `
-                    },
-                    {
-                        slug: 'language-preference',
-                        component: (step) => html`
-                            <h1>What is your language preference?</h1>
-                            <label for="language">Language Preference</label>
-                            <input type="text" name="language-preference" id="language"/>
-                            <button class="btn" @click=${step.doneHandler}>Done</button>
-                        `
-                    },
-                    {
-                        slug: 'how-can-we-serve',
-                        component: (step) => html`
-                            <h1>How can we serve you?</h1>
-                            <label for="coaching">Coaching</label>
-                            <input type="checkbox" name="contact-preference" id="coaching" value="coaching" />
-                            <label for="technical">Technical Assistance</label>
-                            <input type="checkbox" name="contact-preference" id="technical" value="technical" />
-                            <label for="implementation">Question about implementing the training</label>
-                            <input type="checkbox" name="contact-preference" id="implementation" value="implementation" />
-                            <label for="content">Question about the content</label>
-                            <input type="checkbox" name="contact-preference" id="content" value="content" />
-                            <label for="group-started">Help with what to do after starting a group</label>
-                            <input type="checkbox" name="contact-preference" id="group-started" value="group-started" />
-                            <button class="btn" @click=${step.doneHandler}>Done</button>
-                        `
-                    },
-                    {
-                        slug: 'connected-to-coach',
-                        component: (step) => html`
-                            <h1>Connecting you to a Coach</h1>
-                            <p>Please wait while we connect you <span class="loading-spinner active"></span></p>
-                            <p>Successfully connected you. One of our team will contact you in the next 24-48 hours</p>
-                        `
-                    },
-                ],
-                skippable,
-            },
             [ZumeWizardModules.joinPlan]: {
                 steps: [
                     {
@@ -480,13 +461,18 @@ export class Wizard extends LitElement {
                     ZumeWizardSteps.inviteFriends,
                 ], true),
             },
-            [ZumeWizards.connectToCoach]: {
+            [ZumeWizards.getACoach]: {
                 [ZumeWizardModules.completeProfile]: this.makeModule([
                     ZumeWizardSteps.updateName,
                     ZumeWizardSteps.updateLocation,
                     ZumeWizardSteps.updatePhone,
                 ]),
-                [ZumeWizardModules.connectToCoach]: this.getModule(ZumeWizardModules.connectToCoach),
+                [ZumeWizardModules.getACoach]: this.makeModule([
+                    ZumeWizardSteps.contactPreferences,
+                    ZumeWizardSteps.languagePreferences,
+                    ZumeWizardSteps.howCanWeServe,
+                    ZumeWizardSteps.connectingToCoach,
+                ], true),
             },
             [ZumeWizards.joinAPlan]: {
                 [ZumeWizardModules.completeProfile]: this.makeModule([

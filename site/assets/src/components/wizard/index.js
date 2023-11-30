@@ -1,3 +1,6 @@
-import "./wizard";
+import "./wizard-state-manager"
+import "./wizard-constants"
+import "./wizard"
 import "./complete-profile"
 import "./invite-friends"
+import "./get-coach"

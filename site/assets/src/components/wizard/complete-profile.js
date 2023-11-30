@@ -1,5 +1,6 @@
 import { LitElement, html } from "lit"
 import { live } from 'lit/directives/live.js';
+import { ZumeWizardSteps } from "./wizard-constants";
 
 export class CompleteProfile extends LitElement {
     static get properties() {
@@ -56,7 +57,7 @@ export class CompleteProfile extends LitElement {
     render() {
         return html`
         <form class="inputs" @submit=${this._handleDone}>
-            ${ this.variant === 'name' ? html`
+            ${ this.variant === ZumeWizardSteps.updateName ? html`
                 <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
@@ -64,7 +65,7 @@ export class CompleteProfile extends LitElement {
                 </div>
             ` : ''}
 
-            ${ this.variant === 'phone' ? html`
+            ${ this.variant === ZumeWizardSteps.updatePhone ? html`
                 <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
@@ -72,7 +73,7 @@ export class CompleteProfile extends LitElement {
                 </div>
             ` : ''}
 
-            ${ this.variant === 'location' ? html`
+            ${ this.variant === ZumeWizardSteps.updateLocation ? html`
                 <h2 class="f-1">${this.t.location_question}</h2>
                 <div class="">
                     <label for="city">${this.t.city}</label>
@@ -100,7 +101,7 @@ export class CompleteProfile extends LitElement {
                     })}
                 </div>
             ` : '' }
-            ${ [ 'phone', 'name' ].includes(this.variant) ? html`
+            ${ [ ZumeWizardSteps.updatePhone, ZumeWizardSteps.updateName ].includes(this.variant) ? html`
                 <div class="cluster">
                     <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
@@ -114,6 +115,8 @@ export class CompleteProfile extends LitElement {
         if (event) {
             event.preventDefault()
         }
+
+        console.log(this.state)
 
         const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
         this.dispatchEvent(doneStepEvent)
