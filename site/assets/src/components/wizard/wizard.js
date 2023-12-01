@@ -307,14 +307,11 @@ export class Wizard extends LitElement {
                 steps: [ wizardSteps[ZumeWizardSteps.inviteFriends] ],
                 skippable,
             },
-            [ZumeWizardModules.joinPlan]: {
+            [ZumeWizardModules.joinTraining]: {
                 steps: [
                     {
                         slug: 'joined-training',
                         component: (step) => html`
-                            <h1>Joining Plan</h1>
-                            <p>Please wait while we connect you <span class="loading-spinner active"></span></p>
-                            <p>Successfully joined plan</p>
                         `
                     }
                 ]
@@ -413,7 +410,7 @@ export class Wizard extends LitElement {
                     ZumeWizardSteps.updateLocation,
                     ZumeWizardSteps.updatePhone,
                 ]),
-                [ZumeWizardModules.joinPlan]: this.getModule(ZumeWizardModules.joinPlan),
+                [ZumeWizardModules.joinTraining]: this.getModule(ZumeWizardModules.joinTraining),
             }
         }
 

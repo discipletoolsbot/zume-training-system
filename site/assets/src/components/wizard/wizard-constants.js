@@ -8,7 +8,7 @@ export const ZumeWizardModules = {
     makePlan: 'makePlan',
     inviteFriends: 'inviteFriends',
     getACoach: 'getACoach',
-    joinPlan: 'joinPlan',
+    joinTraining: 'joinTraining',
 }
 export const ZumeWizardSteps = {
     updateName: 'update-your-name',
@@ -19,6 +19,7 @@ export const ZumeWizardSteps = {
     languagePreferences: 'language-preferences',
     howCanWeServe: 'how-can-we-serve',
     connectingToCoach: 'connecting-to-coach',
+    joinTraining: 'join-training'
 }
 export const ZumeWizardStepsConnectedFields = {
     [ZumeWizardSteps.updateName]: {
