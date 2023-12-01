@@ -97,8 +97,8 @@ export class CompleteProfile extends LitElement {
                         @input=${this._handleCityChange}
                     >
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                    <p class="input-subtext">${this.t.approximate_location}</p>
                 </div>
-                <p>${this.t.approximate_location}</p>
                 <button>${this.t.accept}</button>
                 <div id="address_results">
                     ${this.locationError}
@@ -114,6 +114,10 @@ export class CompleteProfile extends LitElement {
                             </div>
                         `
                     })}
+                </div>
+                <div class="cluster">
+                    <button type="button" class="btn" ?disabled=${this.loading} @click=${this.handleSubmitLocation}>${this.t.done}</button>
+                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
             ` : '' }
             ${ [ ZumeWizardSteps.updatePhone, ZumeWizardSteps.updateName ].includes(this.variant) ? html`
@@ -171,12 +175,26 @@ export class CompleteProfile extends LitElement {
 
         const value = getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location)
 
-        this._updateProfile('location_grid_meta', value, () => {
-            this._clearLocations()
+        this.localValue = value
+        this._clearLocations()
+    }
+
+    handleSubmitLocation() {
+        if (this.localValue.source === 'ip') {
+            const { label, level, lat, lng } = this.localValue
+            this.localValue = {
+                source: 'user',
+                grid_id: false,
+                label,
+                level,
+                lat: Number(lat),
+                lng: Number(lng),
+            }
+        }
+
+        this._updateProfile('location_grid_meta', this.localValue, () => {
             this._sendDoneStepEvent()
         })
-
-
     }
 
     _updateProfile(key, value, successCallback = () => {}) {
