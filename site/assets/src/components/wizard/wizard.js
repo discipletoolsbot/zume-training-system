@@ -1,5 +1,6 @@
 import { LitElement, html } from "lit"
 import { ZumeWizardModules, ZumeWizardSteps, ZumeWizards } from "./wizard-constants"
+import { WizardStateManager } from "./wizard-state-manager"
 
 const wizardSteps = {
     [ZumeWizardSteps.updateName]: {
@@ -134,6 +135,9 @@ export class Wizard extends LitElement {
 
         this._handleHistoryPopState = this._handleHistoryPopState.bind(this)
         window.addEventListener('popstate', this._handleHistoryPopState)
+
+        this.stateManager = new WizardStateManager()
+        this.stateManager.clear()
     }
 
 
@@ -245,6 +249,8 @@ export class Wizard extends LitElement {
         this._onFinish()
     }
     _onFinish() {
+        this.stateManager.clear()
+
         if ( !this.finishUrl ) {
             window.location.href = '/'
         }

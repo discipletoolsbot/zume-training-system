@@ -62,7 +62,7 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
-                    <input type="text" id="name" name="name" value="" @change=${this._handleNameChange} ?required=${!this.skippable}>
+                    <input type="text" id="name" name="name" value="" ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -70,7 +70,7 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
-                    <input type="tel" id="phone" name="phone" value="" @change=${this._handlePhoneChange} ?required=${!this.skippable}>
+                    <input type="tel" id="phone" name="phone" value="" ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -85,6 +85,7 @@ export class CompleteProfile extends LitElement {
                         .value="${live(this.city)}"
                         @input=${this._handleCityChange}
                     >
+                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
                 <div id="address_results">
                     ${this.locationError}
@@ -117,28 +118,22 @@ export class CompleteProfile extends LitElement {
             event.preventDefault()
         }
 
+        const targetInput = event.target[0]
+
+        if (targetInput.type === 'submit') {
+            return
+        }
+
+        const { name, value } = targetInput
+
+        this._updateProfile(name, value, () => {
+            this._sendDoneStepEvent()
+        })
+    }
+
+    _sendDoneStepEvent() {
         const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
         this.dispatchEvent(doneStepEvent)
-    }
-
-    _handleNameChange(event) {
-        event.stopPropagation()
-
-        const updates = {
-            [event.target.name]: event.target.value,
-        }
-
-        this._updateProfile(updates)
-    }
-
-    _handlePhoneChange(event) {
-        event.stopPropagation()
-
-        const updates = {
-            [event.target.name]: event.target.value,
-        }
-
-        this._updateProfile(updates)
     }
 
     _handleCityChange(event) {
@@ -161,21 +156,23 @@ export class CompleteProfile extends LitElement {
     _handleLocationSelection(event) {
         this.city = event.target.dataset.placeName
 
-        const updates = {
-            location_grid_meta: getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location),
-        }
+        const value = getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location)
 
-        this._updateProfile(updates, () => {
+        this._updateProfile('location_grid_meta', value, () => {
             this._clearLocations()
-            this._handleDone()
+            this._sendDoneStepEvent()
         })
 
 
     }
 
-    _updateProfile(updates, successCallback) {
+    _updateProfile(key, value, successCallback = () => {}) {
         /* Update the profile using the api */
         this.loading = true
+
+        const updates = {
+            [key]: value
+        }
 
         fetch( jsObject.rest_endpoint + '/profile', {
             method: 'POST',
@@ -185,7 +182,6 @@ export class CompleteProfile extends LitElement {
             }
         } )
         .then(() => {
-            console.log('success')
             successCallback()
         })
         .catch((error) => {
