@@ -29,6 +29,7 @@ export class CompleteProfile extends LitElement {
             locationError: { attribute: false },
             city: { attribute: false },
             loading: { attribute: false },
+            state: { attribute: false },
         }
     }
 
@@ -115,8 +116,6 @@ export class CompleteProfile extends LitElement {
         if (event) {
             event.preventDefault()
         }
-
-        console.log(this.state)
 
         const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
         this.dispatchEvent(doneStepEvent)

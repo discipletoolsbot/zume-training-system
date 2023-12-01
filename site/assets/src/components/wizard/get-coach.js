@@ -1,6 +1,6 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 import { ZumeWizardSteps } from './wizard-constants';
-import { WizardState, WizardStateManager } from './wizard-state-manager';
+import { WizardStateManager } from './wizard-state-manager';
 
 export class GetCoach extends LitElement {
     static get properties() {
@@ -27,6 +27,8 @@ export class GetCoach extends LitElement {
             variant: { type: String },
             state: { attribute: false },
             errorMessage: { attribute: false },
+            doneText: { attribute: false },
+            loading: { attribute: false },
         }
     }
 
@@ -39,10 +41,49 @@ export class GetCoach extends LitElement {
         this.t = {}
         this.state = {}
         this.errorMessage = ''
+        this.doneText = ''
+        this.loading = false
     }
 
     firstUpdated() {
         this.wizardStateManager = new WizardStateManager(this.module)
+        this.doneText = this.t.connect_success
+
+        if ( this.variant === ZumeWizardSteps.connectingToCoach ) {
+            this.loading = true
+            const onCoachRequested = (( data ) => {
+                this.loading = false
+
+                if ( data === false ) {
+                    this.doneText = this.t.connect_fail
+                    this.errorMessage = this.t.error_connecting
+                }
+
+                if (
+                    data.coach_request &&
+                    data.coach_request.errors &&
+                    Object.keys(data.coach_request.errors).length !== 0
+                ) {
+                    const errorKeys = Object.keys(data.coach_request.errors)
+
+                    if (errorKeys[0] === 'already_has_coach') {
+                        this.doneText = this.t.already_coached
+                        this.errorMessage = this.t.error_connecting
+                    }
+                }
+
+                if ( this.errorMessage !== '' ) {
+                    setTimeout(() => {
+                        this.errorMessage = ''
+                    }, 3000)
+                }
+            }).bind(this)
+            makeRequest('POST', 'get_a_coach', {}, 'zume_system/v1/' )
+                .done(onCoachRequested)
+                .fail((error) => {
+                    console.log(error)
+                })
+        }
     }
 
     render() {
@@ -105,16 +146,22 @@ export class GetCoach extends LitElement {
             ` : '' }
             ${ this.variant === ZumeWizardSteps.connectingToCoach ? html`
 
-                <h1>Connecting you to a Coach</h1>
+                <h1>${this.t.connecting_coach_title}</h1>
                 <div class="stack">
-                    <p>Please wait while we connect you <span class="loading-spinner active"></span></p>
-                    <p>Successfully connected you. One of our team will contact you in the next 24-48 hours</p>
+                    ${ this.loading === true
+                        ? html`<p>${this.t.please_wait} <span class="loading-spinner active"></span></p>`
+                        : html`<p>${this.doneText}</p>`
+                    }
                 </div>
             ` : '' }
-            <div class="cluster">
-                <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
-                <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-            </div>
+            ${ this.variant !== ZumeWizardSteps.connectingToCoach
+                ? html`
+                    <div class="cluster">
+                        <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
+                        <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                    </div>
+                `
+                : ''}
             <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
         </form>
         `
@@ -126,7 +173,6 @@ export class GetCoach extends LitElement {
         }
 
         if ( Object.keys(this.state).length === 0 ) {
-            console.log(this.state)
             this.errorMessage = this.t.missing_response
 
             setTimeout(() => {
