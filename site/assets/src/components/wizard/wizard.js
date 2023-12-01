@@ -144,7 +144,7 @@ export class Wizard extends LitElement {
     render() {
         if (!this.isWizardLoaded()) {
             this.loadWizard()
-            this._handleHistoryPopState()
+            this._handleHistoryPopState( true )
         }
 
         if (this.steps.length === 0) {
@@ -291,7 +291,8 @@ export class Wizard extends LitElement {
         }
         return clampedIndex
     }
-    _handleHistoryPopState() {
+    _handleHistoryPopState( goToBeginningOfModule = false ) {
+        console.log(goToBeginningOfModule)
         const url = new URL(window.location.href)
         const urlParts = url.pathname.split('/')
         const path = urlParts[urlParts.length - 1]
@@ -300,8 +301,21 @@ export class Wizard extends LitElement {
             this._gotoStep(0, false)
         }
 
-        this.steps.forEach(({slug}, i) => {
+        let currentModule = 's'
+        let beginningOfModule = 0
+        this.steps.forEach(({slug, module}, i) => {
+            if ( currentModule !== module ) {
+                currentModule = module
+                beginningOfModule = i
+            }
+
             if ( path === slug ) {
+                if (goToBeginningOfModule === true) {
+                    this._gotoStep(beginningOfModule, false)
+                    return
+                }
+
+
                 this._gotoStep(i, false)
             }
         })
