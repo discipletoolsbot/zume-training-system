@@ -1,111 +1,6 @@
 import { LitElement, html } from "lit"
-import { ZumeWizardModules, ZumeWizardSteps, ZumeWizards } from "./wizard-constants"
+import { ZumeWizardModules, ZumeWizardSteps, ZumeWizardStepsConnectedFields as ConnectedFields, ZumeWizards } from "./wizard-constants"
 import { WizardStateManager } from "./wizard-state-manager"
-
-const wizardSteps = {
-    [ZumeWizardSteps.updateName]: {
-        slug: ZumeWizardSteps.updateName,
-        component: (step, t) => html`
-            <complete-profile
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
-                variant=${ZumeWizardSteps.updateName}
-                @done-step=${step.doneHandler}
-            ></complete-profile>
-        `
-    },
-    [ZumeWizardSteps.updateLocation]: {
-        slug: ZumeWizardSteps.updateLocation,
-        component: (step, t) => html`
-            <complete-profile
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
-                variant=${ZumeWizardSteps.updateLocation}
-                @done-step=${step.doneHandler}
-            ></complete-profile>
-        `
-    },
-    [ZumeWizardSteps.updatePhone]: {
-        slug: ZumeWizardSteps.updatePhone,
-        component: (step, t) => html`
-            <complete-profile
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
-                variant=${ZumeWizardSteps.updatePhone}
-                @done-step=${step.doneHandler}
-            ></complete-profile>
-        `
-    },
-    [ZumeWizardSteps.contactPreferences]: {
-        slug: ZumeWizardSteps.contactPreferences,
-        component: (step, t) => html`
-            <get-coach
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
-                variant=${ZumeWizardSteps.contactPreferences}
-                @done-step=${step.doneHandler}
-            ></get-coach>
-        `
-    },
-    [ZumeWizardSteps.languagePreferences]: {
-        slug: ZumeWizardSteps.languagePreferences,
-        component: (step, t) => html`
-            <get-coach
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
-                variant=${ZumeWizardSteps.languagePreferences}
-                @done-step=${step.doneHandler}
-            ></get-coach>
-        `
-    },
-    [ZumeWizardSteps.howCanWeServe]: {
-        slug: ZumeWizardSteps.howCanWeServe,
-        component: (step, t) => html`
-            <get-coach
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
-                variant=${ZumeWizardSteps.howCanWeServe}
-                @done-step=${step.doneHandler}
-            ></get-coach>
-        `
-    },
-    [ZumeWizardSteps.connectingToCoach]: {
-        slug: ZumeWizardSteps.connectingToCoach,
-        component: (step, t) => html`
-            <get-coach
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
-                variant=${ZumeWizardSteps.connectingToCoach}
-                @done-step=${step.doneHandler}
-            ></get-coach>
-        `
-    },
-    [ZumeWizardSteps.inviteFriends]: {
-        slug: ZumeWizardSteps.inviteFriends,
-        component: (step, t) => html`
-            <invite-friends
-                name=${step.slug}
-                module=${step.module}
-                ?skippable=${step.skippable}
-                .t=${t.share}
-            ></invite-friends>
-        `
-    }
-}
 
 export class Wizard extends LitElement {
     static get properties() {
@@ -118,6 +13,10 @@ export class Wizard extends LitElement {
              * Address to go to when the wizard is finished
              */
             finishUrl: { type: String },
+            /**
+             * Logged in user profile
+             */
+            user: { type: Object },
             /**
              * The step that is currently being shown
              */
@@ -292,7 +191,6 @@ export class Wizard extends LitElement {
         return clampedIndex
     }
     _handleHistoryPopState( goToBeginningOfModule = false ) {
-        console.log(goToBeginningOfModule)
         const url = new URL(window.location.href)
         const urlParts = url.pathname.split('/')
         const path = urlParts[urlParts.length - 1]
@@ -442,12 +340,27 @@ export class Wizard extends LitElement {
         this.steps = []
         Object.entries(this.modules).forEach(([moduleName, { steps, skippable }]) => {
             steps.forEach(({ component, slug }) => {
+                /* Skip if the corresponding field exists in the user */
+                const connectedField = ConnectedFields[slug]
+                let connectedFieldValue = null
+                if ( connectedField && this.user) {
+                    if ( connectedField.testExistance(this.user[connectedField.field]) ) {
+                        return
+                    }
+                    connectedFieldValue = this.user[connectedField.field]
+                }
+
                 const step = {
                     component,
                     slug,
                     module: moduleName,
                     skippable,
                     doneHandler: this._onNext,
+                }
+
+                if ( connectedFieldValue !== null ) {
+                    step.value = connectedFieldValue
+                    console.log(step)
                 }
 
                 this.steps.push(step)
@@ -521,3 +434,111 @@ export class Wizard extends LitElement {
 }
 
 window.customElements.define( 'zume-wizard', Wizard )
+
+const wizardSteps = {
+    [ZumeWizardSteps.updateName]: {
+        slug: ZumeWizardSteps.updateName,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant=${ZumeWizardSteps.updateName}
+                @done-step=${step.doneHandler}
+                value=${JSON.stringify(step.value)}
+            ></complete-profile>
+        `
+    },
+    [ZumeWizardSteps.updateLocation]: {
+        slug: ZumeWizardSteps.updateLocation,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant=${ZumeWizardSteps.updateLocation}
+                @done-step=${step.doneHandler}
+                value=${JSON.stringify(step.value)}
+            ></complete-profile>
+        `
+    },
+    [ZumeWizardSteps.updatePhone]: {
+        slug: ZumeWizardSteps.updatePhone,
+        component: (step, t) => html`
+            <complete-profile
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.complete_profile)}"
+                variant=${ZumeWizardSteps.updatePhone}
+                @done-step=${step.doneHandler}
+                value=${JSON.stringify(step.value)}
+            ></complete-profile>
+        `
+    },
+    [ZumeWizardSteps.contactPreferences]: {
+        slug: ZumeWizardSteps.contactPreferences,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.contactPreferences}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.languagePreferences]: {
+        slug: ZumeWizardSteps.languagePreferences,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.languagePreferences}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.howCanWeServe]: {
+        slug: ZumeWizardSteps.howCanWeServe,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.howCanWeServe}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.connectingToCoach]: {
+        slug: ZumeWizardSteps.connectingToCoach,
+        component: (step, t) => html`
+            <get-coach
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                t="${JSON.stringify(t.get_a_coach)}"
+                variant=${ZumeWizardSteps.connectingToCoach}
+                @done-step=${step.doneHandler}
+            ></get-coach>
+        `
+    },
+    [ZumeWizardSteps.inviteFriends]: {
+        slug: ZumeWizardSteps.inviteFriends,
+        component: (step, t) => html`
+            <invite-friends
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                .t=${t.share}
+            ></invite-friends>
+        `
+    }
+}

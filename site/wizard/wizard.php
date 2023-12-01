@@ -107,6 +107,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'name_question' => esc_html__( 'What is your name?', 'zume' ),
                         'phone_question' => esc_html__( 'What is your phone number?', 'zume' ),
                         'location_question' => esc_html__( 'What city do you live in?', 'zume' ),
+                        'approximate_location' => esc_html__( 'This is your approximate location.', 'zume' ),
                         'done' => esc_html__( 'Done', 'zume' ),
                     ],
                     'get_a_coach' => [
@@ -145,11 +146,13 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     }
 
     public function body(){
+        global $zume_user_profile;
         ?>
 
         <zume-wizard
             type="<?php echo esc_attr( $this->wizard_type ) ?>"
             finishUrl="<?php echo esc_url( zume_dashboard_url() ) ?>"
+            user="<?php echo esc_attr( json_encode( $zume_user_profile ) ) ?>"
         ></zume-wizard>
 
         <?php

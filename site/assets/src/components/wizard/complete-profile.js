@@ -25,11 +25,17 @@ export class CompleteProfile extends LitElement {
              * What inputs to display
              */
             variant: { type: String },
+            /**
+             * The value of the variant's field if it exists
+             */
+            value: { type: String },
+
             locations: { attribute: false },
             locationError: { attribute: false },
             city: { attribute: false },
             loading: { attribute: false },
             state: { attribute: false },
+            localValue: { attribute: false },
         }
     }
 
@@ -44,6 +50,7 @@ export class CompleteProfile extends LitElement {
         this.locationError = ''
         this.city = ''
         this.loading = false
+        this.localValue = ''
 
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
@@ -53,6 +60,9 @@ export class CompleteProfile extends LitElement {
 
     firstUpdated() {
         this.renderRoot.querySelector('.inputs input').focus()
+        if ( this.value !== '' ) {
+            this.localValue = JSON.parse(this.value)
+        }
     }
 
     render() {
@@ -62,7 +72,7 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
-                    <input type="text" id="name" name="name" value="" ?required=${!this.skippable}>
+                    <input type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -76,17 +86,20 @@ export class CompleteProfile extends LitElement {
 
             ${ this.variant === ZumeWizardSteps.updateLocation ? html`
                 <h2 class="f-1">${this.t.location_question}</h2>
-                <div class="">
-                    <label for="city">${this.t.city}</label>
+                <div class="form-group">
+                    <label class="input-label" for="city">${this.t.city}</label>
                     <input
+                        class="input"
                         type="text"
                         id="city"
                         name="city"
-                        .value="${live(this.city)}"
+                        .value="${this.city ? live(this.city) : this.localValue?.label}"
                         @input=${this._handleCityChange}
                     >
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
+                <p>${this.t.approximate_location}</p>
+                <button>${this.t.accept}</button>
                 <div id="address_results">
                     ${this.locationError}
                     ${this.locations.map((location) => {

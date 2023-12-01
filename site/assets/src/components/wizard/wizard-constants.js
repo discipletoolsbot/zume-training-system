@@ -20,3 +20,22 @@ export const ZumeWizardSteps = {
     howCanWeServe: 'how-can-we-serve',
     connectingToCoach: 'connecting-to-coach',
 }
+export const ZumeWizardStepsConnectedFields = {
+    [ZumeWizardSteps.updateName]: {
+        field: 'name',
+        testExistance: () => false
+    },
+    [ZumeWizardSteps.updateLocation]: {
+        field: 'location',
+        testExistance: (field) => {
+            if (field.source && field.source === 'ip') {
+                return false
+            }
+            return true
+        }
+    },
+    [ZumeWizardSteps.updatePhone]: {
+        field: 'phone',
+        testExistance: (phone) => !!phone
+    },
+}

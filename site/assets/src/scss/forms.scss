@@ -12,6 +12,15 @@
     line-height: 1;
 }
 
+.input-subtext {
+    color: color('gray-700');
+    font-size: font-size(-1);
+}
+
 .form-error {
     margin-block: 0.5rem;
+}
+
+.form-group > * + * {
+    margin-top: spacing(-1);
 }
