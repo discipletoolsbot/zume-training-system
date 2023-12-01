@@ -6,9 +6,9 @@ jQuery(document).ready(function() {
   jQuery('.cta_set_profile').click(function() {
     window.cta_set_profile()
   })
-  jQuery('.cta_get_a_coach').click(function() {
+  /* jQuery('.cta_get_a_coach').click(function() {
     window.cta_get_a_coach()
-  })
+  }) */
   jQuery('.cta_join_a_training').click(function() {
     window.cta_join_a_training()
   })

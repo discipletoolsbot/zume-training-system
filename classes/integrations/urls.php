@@ -101,7 +101,7 @@ function zume_wizard_url( $type = 'plan' ) {
             $url = "$wizard_root/getting-started";
             break;
         case 'coaching':
-            $url = "$wizard_root/connect-to-coach";
+            $url = "$wizard_root/get-a-coach";
             break;
         case 'join':
             $url = "$wizard_root/join-a-training";

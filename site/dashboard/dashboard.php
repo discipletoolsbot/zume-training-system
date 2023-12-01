@@ -124,7 +124,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 </div>
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />Set Profile</button></p>
-                    <p><button class="button cta_get_a_coach" />Get a Coach</button></p>
+                    <p><a class="button cta_get_a_coach" href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" />Get a Coach</a></p>
                     <p><button class="button cta_invite_friends" />Invite to Friendship</button></p>
                     <p><button class="button cta_join_a_training" />Join a Plan</button></p>
                     <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
