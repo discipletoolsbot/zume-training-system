@@ -311,8 +311,7 @@ export class Wizard extends LitElement {
                 steps: [
                     {
                         slug: 'joined-training',
-                        component: (step) => html`
-                        `
+                        component: (step) => html`<join-training></join-training>`
                     }
                 ]
             }
@@ -357,7 +356,6 @@ export class Wizard extends LitElement {
 
                 if ( connectedFieldValue !== null ) {
                     step.value = connectedFieldValue
-                    console.log(step)
                 }
 
                 this.steps.push(step)

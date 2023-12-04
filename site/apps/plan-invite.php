@@ -77,7 +77,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                'redirect_url' => zume_login_url( 'login' ),
+                'join_training_url' => zume_join_a_training_wizard_url(),
                 'is_logged_in' => is_user_logged_in(),
                 'translations' => [
                     'enter_code' => __( 'Please enter a plan code.', 'zume' ),
@@ -108,15 +108,18 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 });
 
                 function redirect_to_login( code ) {
-                    const redirect_to = new URL( location.href )
-                    redirect_to.searchParams.append('code', code)
+                    const joinTrainingUrl = new URL( jsObject.join_training_url )
 
-                    const url = new URL( jsObject.redirect_url )
-                    url.searchParams.append('hide-nav', true)
-                    url.searchParams.delete('redirect_to')
-                    url.searchParams.append('redirect_to', redirect_to)
+                    const redirect =joinTrainingUrl.searchParams.get('redirect_to')
 
-                    location.href = url.href
+                    const redirectURL = new URL(redirect)
+                    redirectURL.searchParams.append( 'code', code )
+
+                    joinTrainingUrl.searchParams.delete('redirect_to')
+                    joinTrainingUrl.searchParams.append('redirect_to', redirectURL.href)
+                    joinTrainingUrl.searchParams.append('hide-nav', true)
+
+                    location.href = joinTrainingUrl.href
                 }
 
                 function submit_code( code ){

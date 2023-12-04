@@ -56,7 +56,7 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id = null )
+    public static function register_request_to_coaching( $user_id = null, $coach_id = null )
     {
         $profile = zume_get_user_profile( $user_id );
 
@@ -76,6 +76,14 @@ class Zume_Get_A_Coach_Endpoints
             'trainee_user_id' => $profile['user_id'],
             'trainee_contact_id' => $profile['contact_id'],
         ];
+
+        if ( $coach_id !== null ) {
+            $fields['coached_by'] = [
+                'values' => [
+                    [ 'value' => $coach_id ],
+                ],
+            ];
+        }
 
         if ( ! empty( $profile['location'] ) ) {
             $fields['location_grid_meta'] = [
