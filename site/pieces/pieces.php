@@ -37,8 +37,6 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
         $page_slug = $url_parts[0] ?? '';
 
         if ( isset( $page_slug ) && !empty( $page_slug ) ) {
-            dt_write_log( 'page_slug: ' . $page_slug );
-
             global $wpdb;
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE post_name = %s AND post_type = %s", $url_parts[0], 'zume_pieces' ) );
             if ( ! $this->postid ) {
