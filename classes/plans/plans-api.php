@@ -6,6 +6,7 @@ if ( !defined( 'ABSPATH' ) ) {
 class Zume_Plans_Endpoints
 {
     private $namespace;
+    private $post_type = 'zume_plans';
     private static $_instance = null;
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
@@ -26,6 +27,13 @@ class Zume_Plans_Endpoints
             $this->namespace, '/plans', [
                 'methods' => 'GET',
                 'callback' => [ $this, 'list_plans' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
+        register_rest_route(
+            $this->namespace, '/plan/(?P<code>\w+)', [
+                'methods' => 'GET',
+                'callback' => [ $this, 'get_plan' ],
                 'permission_callback' => '__return_true',
             ]
         );
@@ -69,6 +77,22 @@ class Zume_Plans_Endpoints
 
         return zume_get_user_plans( $user_id );
     }
+    public function get_plan( WP_REST_Request $request ) {
+        /* Get the plan */
+        $code = $request['code'];
+
+        $plan_id = Zume_Connect_Endpoints::test_join_key( $code );
+
+        if ( !$plan_id ) {
+            return [
+                'error_code' => 'bad-plan-code',
+            ];
+        }
+
+        $plan = DT_Posts::get_post( $this->post_type, $plan_id );
+
+        return $plan;
+    }
     public function create_plan( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
@@ -91,7 +115,7 @@ class Zume_Plans_Endpoints
             }
         }
 
-        $new_post = DT_Posts::create_post( 'zume_plans', $fields, true, false );
+        $new_post = DT_Posts::create_post( $this->post_type, $fields, true, false );
 
         return $new_post;
     }
@@ -120,7 +144,7 @@ class Zume_Plans_Endpoints
         $user_id = get_current_user_id();
         $contact_id = zume_get_user_contact_id( $user_id );
 
-        return DT_Posts::update_post( 'zume_plans', $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
+        return DT_Posts::update_post( $this->post_type, $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
     }
     public function delete_plan( WP_REST_Request $request ) {
         global $wpdb;
@@ -158,7 +182,7 @@ class Zume_Plans_Endpoints
     }
 
     public static function get_public_plans() {
-        return DT_Posts::list_posts( 'zume_plans', [ 'fields' => [ [ 'visibility' => [ 'public' ] ] ] ], false );
+        return DT_Posts::list_posts( self::$post_type, [ 'fields' => [ [ 'visibility' => [ 'public' ] ] ] ], false );
     }
 }
 Zume_Plans_Endpoints::instance();
