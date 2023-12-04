@@ -33,7 +33,7 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) && ! dt_is_rest() ) {
+        if ( ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 
@@ -71,7 +71,6 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
     public function header_style(){
         global $zume_user_profile;
-        dt_write_log( $zume_user_profile );
         ?>
         <script>
             jQuery(document).ready(function(){

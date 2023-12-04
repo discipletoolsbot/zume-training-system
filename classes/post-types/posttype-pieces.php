@@ -194,7 +194,7 @@ class Zume_Training_Pieces_Post_Type
                 'show_in_nav_menus' => true,
                 'menu_position' => 10, /* this is what order you want it to appear in on the left hand side menu */
                 'menu_icon' => 'dashicons-editor-customchar', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
-                'rewrite' => [ 'slug' => 'concept', 'with_front' => false ], /* you can specify its url slug */
+                'rewrite' => false, /* you can specify its url slug */
                 'has_archive' => false, /* you can rename the slug here */
                 'capabilities' => [
                     'create_posts'        => 'create_'.$this->post_type,

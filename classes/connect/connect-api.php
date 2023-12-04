@@ -43,11 +43,11 @@ class Zume_Connect_Endpoints
     public function connect_to_friend_callback( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset( $params['code'] ) ) {
+        if ( ! isset( $params['value'] ) ) {
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
-        return self::connect_to_friend( $params['code'] );
+        return self::connect_to_friend( $params['value'] );
     }
 
     public static function connect_to_friend( $key ) {
