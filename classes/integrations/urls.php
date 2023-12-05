@@ -86,12 +86,13 @@ function zume_make_a_plan_wizard_url() {
     $redirect_url = zume_wizard_url( 'plan' );
     return zume_login_url( 'register', $redirect_url );
 }
-function zume_join_a_public_plan_wizard_url() {
-    $redirect_url = zume_wizard_url( 'join' );
+function zume_join_a_public_plan_wizard_url( $code = null ) {
+    $params = empty( $code ) ? [] : [ 'code' => $code ];
+    $redirect_url = zume_wizard_url( 'join', $params );
     return zume_login_url( 'register', $redirect_url );
 }
 
-function zume_wizard_url( $type = 'plan' ) {
+function zume_wizard_url( $type = 'plan', $params = [] ) {
     $lang_code = zume_current_language();
 
     $wizard_root = 'wizard';
@@ -111,10 +112,10 @@ function zume_wizard_url( $type = 'plan' ) {
     }
 
     if ( $lang_code === 'en' ) {
-        return dt_create_site_url( $url );
+        return dt_create_site_url( $url, $params );
     }
 
-    return dt_create_site_url( $lang_code . '/' . $url );
+    return dt_create_site_url( $lang_code . '/' . $url, $params );
 }
 
 function zume_dashboard_url( $current_language = null ) {

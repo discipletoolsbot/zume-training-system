@@ -81,6 +81,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 'is_logged_in' => is_user_logged_in(),
                 'translations' => [
                     'enter_code' => __( 'Please enter a plan code.', 'zume' ),
+                    'bad_code' => __( 'Not a recognized plan code. Please check the number.', 'zume' ),
                 ],
             ]) ?>][0]
         </script>
@@ -94,13 +95,28 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 jQuery('.code_submit').click(function() {
                     var code = jQuery('#code').val();
                     if ( ! code ) {
-                        warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(jsObject.translations.enter_code)
-                        jQuery(warningBanner).show()
+                        show_error(jsObject.translations.enter_code)
                         return;
                     }
 
-                    redirect_to_login( code )
+                    makeRequest( 'GET', `plan/${code}`, {}, 'zume_system/v1' )
+                        .then((data) => {
+                            if ( data.error_code === 'bad-plan-code' ) {
+                                show_error(jsObject.translations.bad_code)
+                                return
+                            }
+                            console.log(data)
+                            redirect_to_login( code )
+                        })
+                        .catch((error) => {
+                            console.log(error)
+                        })
                 });
+
+                function show_error( message ) {
+                    warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(message)
+                    jQuery(warningBanner).show()
+                }
 
                 function redirect_to_login( code ) {
                     const joinTrainingUrl = new URL( jsObject.join_training_url )
@@ -151,17 +167,14 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
             $is_user_logged_in = true;
 
             if ( $key_code !== false ) {
-                $success = Zume_Connect_Endpoints::connect_to_plan( $key_code );
+                wp_redirect( zume_join_a_public_plan_wizard_url( $key_code ) );
+                exit;
             }
         }
 
         $auto_submitted = isset( $success );
-        $failed = $auto_submitted && is_wp_error( $success );
-        $show_success = isset( $success ) && !is_wp_error( $success );
 
-        $show_form = !$key_code || !$is_user_logged_in || $auto_submitted && $failed;
-
-        $name = $show_success ? $success['name'] : '::name::';
+        $show_form = true;
 
         ?>
 

@@ -22,7 +22,7 @@ export class JoinTraining extends LitElement {
             t: { type: Object },
 
             code: { attribute: false },
-            message: { attribute: false },
+            messages: { attribute: false },
             errorMessage: { attribute: false },
             loading: { attribute: false },
         };
@@ -32,7 +32,7 @@ export class JoinTraining extends LitElement {
         super()
 
         this.code = ''
-        this.message = ''
+        this.messages = ['Please wait while we connect you.']
         this.errorMessage = ''
         this.loading = false
     }
@@ -53,23 +53,31 @@ export class JoinTraining extends LitElement {
         const user_id = zumeProfile.profile?.user_id
 
         if ( !user_id ) {
-            this.errorMessage = 'You are not logged in'
+            this.setErorrMessage('You are not logged in')
             this.loading = false
             return
         }
 
         makeRequest( 'POST', 'connect/public-plan', { code: code }, 'zume_system/v1' )
             .then( ( data ) => {
-                this.message = `Successfully joined training . You are being coached by ${data.coach}`
-
                 console.log(data)
+
+                this.messages = [`Successfully joined training ${data.name}`]
+
+                return makeRequest( 'POST', 'connect_to_coach', { coach_id: data.coach_id }, 'zume_system/v1' )
             })
-            .fail( (error) => {
-                console.log(error.responseJSON)
-                if ( error.responseJSON.code === 'already_has_coach' ) {
-                    this.message = `Successfully joined training ${error.code}`
-                    this.errorMessage = 'You already have a coach'
+            .then( ( data ) => {
+                console.log( 'connecting to coach data ', data )
+
+                this.messages.push(`Successfully connected with coach ${data.coach}`)
+
+                if (coach_request.errors && Object.keys(coach_request.errors).includes('already_has_coach')) {
+                    this.setErorrMessage('You already have a coach')
                 }
+
+            } )
+            .fail( (error) => {
+                this.setErorrMessage('Something went wrong while joining the plan')
                 console.log(error)
             })
             .always(() => {
@@ -77,7 +85,9 @@ export class JoinTraining extends LitElement {
             })
     }
 
-    hideErorrMessage() {
+    setErorrMessage( message ) {
+        this.errorMessage = message
+
         setTimeout(() => {
             this.errorMessage = ''
         }, 3000)
@@ -86,13 +96,11 @@ export class JoinTraining extends LitElement {
     render() {
         return html`
             <h1>Joining Plan</h1>
-            ${this.loading === true ? html`
-                <p>Please wait while we connect you <span class="loading-spinner active"></span></p>
-            ` : html`
-                <p>${this.message}</p>
-                <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
-            `}
-
+            ${this.messages.map((message) => {
+                return html`<p>${message}</p>`
+            })}
+            <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+            <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
         `;
     }
 

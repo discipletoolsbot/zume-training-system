@@ -31,6 +31,43 @@ class Zume_Get_A_Coach_Endpoints
                 },
             ]
         );
+
+        register_rest_route(
+            $namespace, '/connect_to_coach', [
+                'methods'  => [ 'POST' ],
+                'callback' => [ $this, 'connect_to_coach' ],
+                'permission_callback' => function () {
+                    return dt_has_permissions( $this->permissions );
+                },
+            ]
+        );
+    }
+
+    public function connect_to_coach( WP_REST_Request $request ) {
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        if ( ! isset( $params['user_id'] ) ) {
+            if ( is_user_logged_in() ) {
+                $params['user_id'] = get_current_user_id();
+            } else {
+                return new WP_Error( 'no_user_id', 'No user id provided', array( 'status' => 400 ) );
+            }
+        }
+
+        if ( ! isset( $params['coach_id'] ) ) {
+            return new WP_Error( 'no_coach_id', 'No coach id provided', array( 'status' => 400 ) );
+        }
+
+        // create coaching request
+        $coaching_result = self::register_request_to_coaching( $params['user_id'], $params['coach_id'] );
+
+        // log coaching request
+        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
+
+        return [
+            'coach_request' => $coaching_result,
+            'log' => $log_result,
+        ];
     }
 
     public function get_a_coach( WP_REST_Request $request ) {

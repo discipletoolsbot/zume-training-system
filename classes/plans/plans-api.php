@@ -89,7 +89,7 @@ class Zume_Plans_Endpoints
             ];
         }
 
-        $plan = DT_Posts::get_post( $this->post_type, $plan_id );
+        $plan = DT_Posts::get_post( self::$post_type, $plan_id );
 
         return $plan;
     }
@@ -115,7 +115,7 @@ class Zume_Plans_Endpoints
             }
         }
 
-        $new_post = DT_Posts::create_post( $this->post_type, $fields, true, false );
+        $new_post = DT_Posts::create_post( self::$post_type, $fields, true, false );
 
         return $new_post;
     }
@@ -144,7 +144,7 @@ class Zume_Plans_Endpoints
         $user_id = get_current_user_id();
         $contact_id = zume_get_user_contact_id( $user_id );
 
-        return DT_Posts::update_post( $this->post_type, $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
+        return DT_Posts::update_post( self::$post_type, $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
     }
     public function delete_plan( WP_REST_Request $request ) {
         global $wpdb;

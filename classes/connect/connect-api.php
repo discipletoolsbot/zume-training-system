@@ -131,21 +131,13 @@ class Zume_Connect_Endpoints
             return new WP_Error( __METHOD__, 'Key not found', [ 'status' => 400 ] );
         }
 
-        $response = self::connect_to_plan( $code );
-
-        if ( is_wp_error( $response ) ) {
-            return $response;
-        }
-
         $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
 
         if ( is_wp_error( $plan ) ) {
             return $plan;
         }
 
-        $plan_coach_id = $plan['assigned_to']['id'];
-
-        $response = Zume_Get_A_Coach_Endpoints::register_request_to_coaching( null, $plan_coach_id );
+        $response = self::connect_to_plan( $code );
 
         if ( is_wp_error( $response ) ) {
             return $response;
@@ -153,7 +145,7 @@ class Zume_Connect_Endpoints
 
         return [
             'name' => $plan['title'],
-            'coach' => $plan['assigned_to']['display'],
+            'coach_id' => $plan['assigned_to']['id'],
         ];
     }
 
