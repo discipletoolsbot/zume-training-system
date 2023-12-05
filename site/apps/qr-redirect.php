@@ -31,18 +31,34 @@ class Zume_QR_Redirect extends Zume_Magic_Page
     }
 
     public function redirect() {
-        if ( ! isset( $_GET['code'], $_GET['link'] ) ) {
-            return;
+        global $wpdb;
+
+        $link = trailingslashit( site_url() );
+
+        if ( isset( $_GET['p'] ) ) {
+            $post_id = $_GET['p'];
+
+            $language_slug = $wpdb->get_var( $wpdb->prepare( "
+                SELECT t.slug
+                FROM wp_term_relationships tr
+                JOIN wp_term_taxonomy tt_l ON tt_l.term_taxonomy_id=tr.term_taxonomy_id AND tt_l.taxonomy = 'language'
+                JOIN wp_terms t ON tt_l.term_id = t.term_id
+                WHERE tr.object_id = %d
+            ", $post_id ) );
+            $post_name = $wpdb->get_var( $wpdb->prepare( "
+                SELECT p.post_name
+                FROM wp_posts p
+                WHERE p.ID = %d
+            ", $post_id ) );
+
+            $link = $link . '/' . $language_slug . '/' . $post_name;
+
+            wp_redirect( $link );
+
+        } else {
+            echo 'URL param not regognized.';
         }
 
-        $code =  $_GET['code'];
-
-        $qr_list = [
-
-        ];
-
-        $link = 'https://zume.training/';
-        wp_redirect( $link );
         exit;
     }
 }
