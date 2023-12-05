@@ -99,6 +99,10 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                         return;
                     }
 
+                    if ( !jsObject.is_logged_in ) {
+                        return redirect_to_login( code )
+                    }
+
                     makeRequest( 'GET', `plan/${code}`, {}, 'zume_system/v1' )
                         .then((data) => {
                             if ( data.error_code === 'bad-plan-code' ) {
@@ -163,13 +167,9 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
 
         $is_user_logged_in = false;
 
-        if ( is_user_logged_in() ) {
-            $is_user_logged_in = true;
-
-            if ( $key_code !== false ) {
-                wp_redirect( zume_join_a_public_plan_wizard_url( $key_code ) );
-                exit;
-            }
+        if ( $key_code !== false ) {
+            wp_redirect( zume_join_a_public_plan_wizard_url( $key_code ) );
+            exit;
         }
 
         $auto_submitted = isset( $success );

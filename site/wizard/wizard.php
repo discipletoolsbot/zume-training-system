@@ -133,6 +133,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'connecting_coach_title' => esc_html__( 'Connecting you to a Coach', 'zume' ),
                         'please_wait' => esc_html__( 'Please wait while we connect you', 'zume' ),
                     ],
+                    'join_training' => [],
                     'share' => Zume_Training_Share::translations(),
                 ],
             ]) ?>][0]

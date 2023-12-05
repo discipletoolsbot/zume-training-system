@@ -39,7 +39,6 @@ export class Wizard extends LitElement {
         this.stateManager.clear()
     }
 
-
     render() {
         if (!this.isWizardLoaded()) {
             this.loadWizard()
@@ -57,8 +56,6 @@ export class Wizard extends LitElement {
                 </div>
             </div>`
         }
-
-
 
         return html`
         <div class="container center">
@@ -133,6 +130,8 @@ export class Wizard extends LitElement {
         if ( this.stepIndex + 1 < this.steps.length ) {
             const nextStepIndex = this.stepIndex + 1
             this._gotoStep(nextStepIndex)
+        } else {
+            this._onFinish()
         }
     }
     _onSkip() {
@@ -308,12 +307,7 @@ export class Wizard extends LitElement {
                 skippable,
             },
             [ZumeWizardModules.joinTraining]: {
-                steps: [
-                    {
-                        slug: 'joined-training',
-                        component: (step) => html`<join-training></join-training>`
-                    }
-                ]
+                steps: [ wizardSteps[ZumeWizardSteps.joinTraining] ],
             }
         }
 
@@ -534,6 +528,18 @@ const wizardSteps = {
                 ?skippable=${step.skippable}
                 .t=${t.share}
             ></invite-friends>
+        `
+    },
+    [ZumeWizardSteps.joinTraining]: {
+        slug: ZumeWizardSteps.joinTraining,
+        component: (step, t) => html`
+            <join-training
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                .t=${t.join_training}
+                @done-step=${step.doneHandler}
+            ></join-training>
         `
     }
 }
