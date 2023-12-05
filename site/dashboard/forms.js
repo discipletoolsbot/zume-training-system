@@ -163,6 +163,12 @@ window.cta_join_a_training = () => {
       jQuery('.loading-spinner').addClass('active')
 
       let key = jQuery(this).val()
+
+      const url = new URL(location.href)
+
+      location.href = url.origin + `/wizard/join-a-training?code=${key}`
+
+      /*
       makeRequest('POST', 'connect/plan', { code: key }, 'zume_system/v1' ).done( function( data ) {
         jQuery('.join_training_button').text('Joined').prop('disabled', true)
         jQuery('.loading-spinner').removeClass('active')
@@ -171,6 +177,7 @@ window.cta_join_a_training = () => {
       makeRequest('POST', 'log', { type: 'system', subtype: 'joined_online_training' }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
       })
+      */
 
     })
   })

@@ -137,7 +137,11 @@ class Zume_Connect_Endpoints
             return $response;
         }
 
-        $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id );
+        $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
+
+        if ( is_wp_error( $plan ) ) {
+            return $plan;
+        }
 
         $plan_coach_id = $plan['assigned_to']['id'];
 

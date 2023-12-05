@@ -73,9 +73,7 @@ export class GetCoach extends LitElement {
                 }
 
                 if ( this.errorMessage !== '' ) {
-                    setTimeout(() => {
-                        this.errorMessage = ''
-                    }, 3000)
+                    this.hideErorrMessage()
                 }
             }).bind(this)
             makeRequest('POST', 'get_a_coach', {}, 'zume_system/v1/' )
@@ -84,6 +82,12 @@ export class GetCoach extends LitElement {
                     console.log(error)
                 })
         }
+    }
+
+    hideErorrMessage() {
+        setTimeout(() => {
+            this.errorMessage = ''
+        }, 3000)
     }
 
     render() {
@@ -175,9 +179,7 @@ export class GetCoach extends LitElement {
         if ( Object.keys(this.state).length === 0 ) {
             this.errorMessage = this.t.missing_response
 
-            setTimeout(() => {
-                this.errorMessage = ''
-            }, 3000)
+            this.hideErorrMessage()
 
             return
         }

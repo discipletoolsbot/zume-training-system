@@ -86,7 +86,7 @@ function zume_make_a_plan_wizard_url() {
     $redirect_url = zume_wizard_url( 'plan' );
     return zume_login_url( 'register', $redirect_url );
 }
-function zume_join_a_training_wizard_url() {
+function zume_join_a_public_plan_wizard_url() {
     $redirect_url = zume_wizard_url( 'join' );
     return zume_login_url( 'register', $redirect_url );
 }
