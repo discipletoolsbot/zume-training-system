@@ -143,7 +143,18 @@ class Zume_Connect_Endpoints
             return $response;
         }
 
-        $coach_id = $plan['assigned_to']['id'];
+        $coach_user_id = $plan['assigned_to']['id'];
+
+        global $wpdb;
+        $coach_id = $wpdb->get_var(
+            $wpdb->prepare(
+                "SELECT post_id
+                    FROM wp_3_postmeta
+                    WHERE meta_key = 'corresponds_to_user'
+                    AND meta_value = %d",
+                $coach_user_id
+            )
+        );
 
         $user_id = get_current_user_id();
         $response = Zume_Get_A_Coach_Endpoints::connect_user_to_coach( $user_id, $coach_id );
