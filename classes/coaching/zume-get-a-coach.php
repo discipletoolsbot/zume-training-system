@@ -31,43 +31,6 @@ class Zume_Get_A_Coach_Endpoints
                 },
             ]
         );
-
-        register_rest_route(
-            $namespace, '/connect_to_coach', [
-                'methods'  => [ 'POST' ],
-                'callback' => [ $this, 'connect_to_coach' ],
-                'permission_callback' => function () {
-                    return dt_has_permissions( $this->permissions );
-                },
-            ]
-        );
-    }
-
-    public function connect_to_coach( WP_REST_Request $request ) {
-        $params = dt_recursive_sanitize_array( $request->get_params() );
-
-        if ( ! isset( $params['user_id'] ) ) {
-            if ( is_user_logged_in() ) {
-                $params['user_id'] = get_current_user_id();
-            } else {
-                return new WP_Error( 'no_user_id', 'No user id provided', array( 'status' => 400 ) );
-            }
-        }
-
-        if ( ! isset( $params['coach_id'] ) ) {
-            return new WP_Error( 'no_coach_id', 'No coach id provided', array( 'status' => 400 ) );
-        }
-
-        // create coaching request
-        $coaching_result = self::register_request_to_coaching( $params['user_id'], $params['coach_id'] );
-
-        // log coaching request
-        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
-
-        return [
-            'coach_request' => $coaching_result,
-            'log' => $log_result,
-        ];
     }
 
     public function get_a_coach( WP_REST_Request $request ) {
@@ -93,12 +56,31 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id = null, $coach_id = null )
+    public static function register_request_to_coaching( $user_id ) {
+        return self::manage_user_coaching( $user_id );
+    }
+
+    public static function connect_user_to_coach( $user_id, $coach_id ) {
+        return self::manage_user_coaching( $user_id, $coach_id );
+    }
+
+    /**
+     * Creates/updates user's coaching contact.
+     *
+     * If the coaching contact already exists, this function will update it.
+     * If it doesn't already exist it will be created.
+     *
+     * @param int $user_id
+     * @param int $coach_id
+     */
+    private static function manage_user_coaching( $user_id, $coach_id = null )
     {
         $profile = zume_get_user_profile( $user_id );
 
-        if ( $profile['coaching_contact_id'] ) {
-            return new WP_Error( 'already_has_coach', 'User already has a coach', array( 'status' => 400 ) );
+        $coaching_contact_id = $profile['coaching_contact_id'];
+
+        if ( $coaching_contact_id && $coach_id === null ) {
+            return new WP_Error( 'already_has_coach', 'User has already requested a coach', array( 'status' => 400 ) );
         }
 
         $fields = [
@@ -151,9 +133,18 @@ class Zume_Get_A_Coach_Endpoints
             ],
         ];
 
-        $result = wp_remote_post( 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts', $args );
+        $url = 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts';
+
+        if ( $coaching_contact_id ) {
+            $method = 'UPDATE';
+            $url .= "/$coaching_contact_id";
+        } else {
+            $method = 'CREATE';
+        }
+
+        $result = wp_remote_post( $url, $args );
         if ( is_wp_error( $result ) ) {
-            dt_write_log( __METHOD__ . ' FAILED TO CREATE TRAINING FOR ' . $profile['name'] );
+            dt_write_log( __METHOD__ . " FAILED TO $method COACHING CONTACT FOR " . $profile['name'] );
             return false;
         }
 

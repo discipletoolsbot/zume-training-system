@@ -143,6 +143,15 @@ class Zume_Connect_Endpoints
             return $response;
         }
 
+        $coach_id = $plan['assigned_to']['id'];
+
+        $user_id = get_current_user_id();
+        $response = Zume_Get_A_Coach_Endpoints::connect_user_to_coach( $user_id, $coach_id );
+
+        if ( is_wp_error( $response ) ) {
+            return $response;
+        }
+
         return [
             'name' => $plan['title'],
             'coach_id' => $plan['assigned_to']['id'],

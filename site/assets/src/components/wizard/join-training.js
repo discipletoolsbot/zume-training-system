@@ -32,7 +32,7 @@ export class JoinTraining extends LitElement {
         super()
 
         this.code = ''
-        this.messages = ['Please wait while we connect you.']
+        this.message = 'Please wait while we connect you.'
         this.errorMessage = ''
         this.loading = false
     }
@@ -62,27 +62,25 @@ export class JoinTraining extends LitElement {
             .then( ( data ) => {
                 console.log(data)
 
-                this.messages = [`Successfully joined training ${data.name}`]
+                this.message = `Successfully joined training ${data.name}`
 
-                return makeRequest( 'POST', 'connect_to_coach', { coach_id: data.coach_id }, 'zume_system/v1' )
+                this._sendDoneStepEvent()
             })
-            .then( ( data ) => {
-                console.log( 'connecting to coach data ', data )
-
-                this.messages.push(`Successfully connected with coach ${data.coach}`)
-
-                if (coach_request.errors && Object.keys(coach_request.errors).includes('already_has_coach')) {
-                    this.setErorrMessage('You already have a coach')
-                }
-
-            } )
             .fail( (error) => {
+                this.message = ''
                 this.setErorrMessage('Something went wrong while joining the plan')
                 console.log(error)
             })
             .always(() => {
                 this.loading = false
             })
+    }
+
+    _sendDoneStepEvent() {
+        setTimeout(() => {
+            const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
+            this.dispatchEvent(doneStepEvent)
+        }, 3000)
     }
 
     setErorrMessage( message ) {
@@ -96,9 +94,7 @@ export class JoinTraining extends LitElement {
     render() {
         return html`
             <h1>Joining Plan</h1>
-            ${this.messages.map((message) => {
-                return html`<p>${message}</p>`
-            })}
+            <p>${this.message}</p>
             <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
             <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
         `;
