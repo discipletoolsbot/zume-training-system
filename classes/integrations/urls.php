@@ -78,12 +78,12 @@ function zume_login_url( $type = 'login', $redirect_url = false ) {
     return dt_login_url( $type );
 }
 
-function zume_get_a_coach_wizard_url() {
-    $redirect_url = zume_wizard_url( 'coaching' );
+function zume_make_a_plan_wizard_url() {
+    $redirect_url = zume_wizard_url( 'start' );
     return zume_login_url( 'register', $redirect_url );
 }
-function zume_make_a_plan_wizard_url() {
-    $redirect_url = zume_wizard_url( 'plan' );
+function zume_get_a_coach_wizard_url() {
+    $redirect_url = zume_wizard_url( 'coaching' );
     return zume_login_url( 'register', $redirect_url );
 }
 function zume_join_a_public_plan_wizard_url( $code = null ) {
@@ -91,14 +91,37 @@ function zume_join_a_public_plan_wizard_url( $code = null ) {
     $redirect_url = zume_wizard_url( 'join', $params );
     return zume_login_url( 'register', $redirect_url );
 }
-
-function zume_wizard_url( $type = 'plan', $params = [] ) {
+function zume_connect_with_friend_wizard_url( $code = null ) {
+    $params = empty( $code ) ? [] : [ 'code' => $code ];
+    $redirect_url = zume_wizard_url( 'friend', $params );
+    return zume_login_url( 'register', $redirect_url );
+}
+function zume_connect_with_friends_plan_wizard_url( $code = null ) {
+    $params = empty( $code ) ? [] : [ 'code' => $code ];
+    $redirect_url = zume_wizard_url( 'plan', $params );
+    return zume_login_url( 'register', $redirect_url );
+}
+function zume_checkin_wizard_url( $code = null ) {
+    $params = empty( $code ) ? [] : [ 'code' => $code ];
+    $redirect_url = zume_wizard_url( 'checkin', $params );
+    return zume_login_url( 'register', $redirect_url );
+}
+/**
+ * Get the url for the wizard.
+ *
+ * $type can be one of plan|coaching|join|friend|plan|checkin
+ * $params is an assosciative array of query param key value pairs
+ *
+ * @param string $type
+ * @param array $params
+ */
+function zume_wizard_url( $type = 'start', $params = [] ) {
     $lang_code = zume_current_language();
 
     $wizard_root = 'wizard';
 
     switch ( $type ) {
-        case 'plan':
+        case 'start':
             $url = "$wizard_root/getting-started";
             break;
         case 'coaching':
@@ -106,6 +129,15 @@ function zume_wizard_url( $type = 'plan', $params = [] ) {
             break;
         case 'join':
             $url = "$wizard_root/join-a-training";
+            break;
+        case 'friend':
+            $url = "$wizard_root/connect-with-friend";
+            break;
+        case 'plan':
+            $url = "$wizard_root/connect-with-friends-training";
+            break;
+        case 'checkin':
+            $url = "$wizard_root/checkin";
             break;
         default:
             $url = '';
