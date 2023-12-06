@@ -403,6 +403,15 @@ export class Wizard extends LitElement {
                     ZumeWizardSteps.updatePhone,
                 ]),
                 [ZumeWizardModules.joinTraining]: this.getModule(ZumeWizardModules.joinTraining),
+            },
+            [ZumeWizards.connectWithFriend]: {
+                [ZumeWizardModules.completeProfile]: this.makeModule([
+                    ZumeWizardSteps.updateName,
+                    ZumeWizardSteps.updateLocation,
+                ], true),
+                [ZumeWizardModules.connectFriend]: this.makeModule([
+                    ZumeWizardSteps.connectToFriend,
+                ])
             }
         }
 
@@ -540,6 +549,18 @@ const wizardSteps = {
                 .t=${t.join_training}
                 @done-step=${step.doneHandler}
             ></join-training>
+        `
+    },
+    [ZumeWizardSteps.connectToFriend]: {
+        slug: ZumeWizardSteps.connectToFriend,
+        component: (step, t) => html`
+            <connect-friend
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                .t=${t.join_training}
+                @done-step=${step.doneHandler}
+            ></connect-friend>
         `
     }
 }

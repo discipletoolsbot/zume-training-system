@@ -82,10 +82,16 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'site_url' => get_site_url(),
                 'template_dir' => get_template_directory_uri(),
-                'translations' => [],
                 'user_profile' => zume_get_user_profile(),
                 'training_items' => zume_training_items(),
                 'friends' => zume_get_user_friends(),
+                'translations' => [
+                    'share' => __( 'Share', 'zume' ),
+                    'copy_link' => __( 'Copy Link', 'zume' ),
+                    'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
+                    'share_feedback' => __( 'Thanks!', 'zume' ),
+                    'copy_feedback' => __( 'Link copied', 'zume' ),
+                ],
             )
         );
     }

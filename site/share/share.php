@@ -26,7 +26,7 @@ class Zume_Training_Share extends Zume_Magic_Page
         return [
             'share' => __( 'Share', 'zume' ),
             'copy_link' => __( 'Copy Link', 'zume' ),
-            'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
+            'copy_and_share_text' => __( 'Copy this link and send it to your friends.', 'zume' ),
             'share_feedback' => __( 'Thanks!', 'zume' ),
             'copy_feedback' => __( 'Link copied', 'zume' ),
         ];

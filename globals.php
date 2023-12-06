@@ -23,10 +23,10 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // validate user_id exists
         if ( $user_id !== $current_user_id ) {
-           $user_row = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM wp_users WHERE ID = %d', $user_id ) );
-           if ( empty( $user_row ) ) {
-               return false;
-           }
+            $user_row = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM wp_users WHERE ID = %d', $user_id ) );
+            if ( empty( $user_row ) ) {
+                return false;
+            }
         }
 
         // get contact_id and validate exists

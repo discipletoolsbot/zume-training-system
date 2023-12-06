@@ -280,22 +280,25 @@ window.cta_invite_friends = () => {
     list += `<li data-contactId="${value.contact_id}" data-userID="${value.user_id}">${value.name}</li>`
   })
 
+  const url = new  URL(location.href)
+  const translations = JSON.stringify(zumeForms.translations).replace(/"/g, '&quot;')
+
   content.append(`
     <div class="grid-x grid-padding-x">
+      <div class="cell stack">
+        <div class="input-group">
+          <share-links url="${url.origin}/zume_app/friend_invite/?code=${zumeForms.user_profile.friend_key}" title="Connect with me in Zume.Training" t="${translations}"></share-links>
+        </div>
+      </div>
       <div class="cell">
-       <div class="input-group">
-            <input class="input-group-field add_friend_code" type="text" value="" >
-            <button class="button input-group-label connect_friend">Connect to Friend</button>
+        <h4>Connect with friends</h4>
+        <div>
+            <a href="${url.origin + '/zume_app/friend_invite'}" class="button input-group-label connect_friend">Connect to Friend</a>
             <button class="button input-group-label  close_friend" style="display:none;" onclick="location.reload()">Close</button>
         </div>
 
       </div>
-      <div class="cell">
-        <div class="input-group">
-            <input class="input-group-field friend_code_url" type="text" value="https://zume5.training/zume_app/friend_invite/?code=${zumeForms.user_profile.friend_key}" >
-            <button class="button input-group-label copy_friend_code">Connect</button>
-        </div>
-      </div>
+
       <div class="cell" ><u>List of Friends</u><br>
         <ul>
             ${list}
