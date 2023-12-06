@@ -50,14 +50,6 @@ export class JoinTraining extends LitElement {
         const code = url.searchParams.get('code')
         this.code = code
 
-        const user_id = zumeProfile.profile?.user_id
-
-        if ( !user_id ) {
-            this.setErorrMessage('You are not logged in')
-            this.loading = false
-            return
-        }
-
         makeRequest( 'POST', 'connect/public-plan', { code: code }, 'zume_system/v1' )
             .then( ( data ) => {
                 console.log(data)
@@ -68,7 +60,8 @@ export class JoinTraining extends LitElement {
             })
             .fail( (error) => {
                 this.message = ''
-                this.setErorrMessage('Something went wrong while joining the plan')
+                this.setErrorMessage('Something went wrong while joining the plan')
+                this._sendDoneStepEvent()
                 console.log(error)
             })
             .always(() => {
@@ -80,10 +73,10 @@ export class JoinTraining extends LitElement {
         setTimeout(() => {
             const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
             this.dispatchEvent(doneStepEvent)
-        }, 3000)
+        }, 2000);
     }
 
-    setErorrMessage( message ) {
+    setErrorMessage( message ) {
         this.errorMessage = message
 
         setTimeout(() => {

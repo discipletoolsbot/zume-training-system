@@ -148,6 +148,10 @@ class Zume_Training_Wizard extends Zume_Magic_Page
 
     public function body(){
         global $zume_user_profile;
+
+        if ( !is_user_logged_in() ) {
+            wp_redirect( zume_login_url( 'login', dt_get_url_path( false, true ) ) );
+        }
         ?>
 
         <zume-wizard
