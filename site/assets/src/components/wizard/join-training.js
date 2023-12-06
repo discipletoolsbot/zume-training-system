@@ -42,7 +42,9 @@ export class JoinTraining extends LitElement {
         /* We need the plan id */
         const url = new URL( location.href )
         if ( !url.searchParams.has('code') ) {
-            this.message = 'Please input a code'
+            this.message = ""
+            this.setErrorMessage('The training link is broken. Please try again.')
+            this._sendDoneStepEvent()
             this.loading = false
             return
         }
@@ -58,11 +60,16 @@ export class JoinTraining extends LitElement {
 
                 this._sendDoneStepEvent()
             })
-            .fail( (error) => {
-                this.message = ''
-                this.setErrorMessage('Something went wrong while joining the plan')
-                this._sendDoneStepEvent()
+            .fail( ({ responseJSON: error }) => {
                 console.log(error)
+                this.message = ''
+                if ( error.code === 'bad_plan_code' ) {
+                    this.setErrorMessage('The training link is broken. Please try again.')
+                } else {
+                    this.setErrorMessage('Something went wrong while joining the plan')
+                }
+
+                this._sendDoneStepEvent()
             })
             .always(() => {
                 this.loading = false

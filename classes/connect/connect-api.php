@@ -128,7 +128,7 @@ class Zume_Connect_Endpoints
         $plan_post_id = self::test_join_key( $code );
 
         if ( !$plan_post_id ) {
-            return new WP_Error( __METHOD__, 'Key not found', [ 'status' => 400 ] );
+            return new WP_Error( 'bad_plan_code', 'Key not found', [ 'status' => 400 ] );
         }
 
         $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
