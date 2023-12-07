@@ -45,6 +45,7 @@ export class Wizard extends LitElement {
             this._handleHistoryPopState( true )
         }
 
+
         if (this.steps.length === 0) {
             return html`
             <div class="cover-page">
@@ -412,7 +413,16 @@ export class Wizard extends LitElement {
                 [ZumeWizardModules.connectFriend]: this.makeModule([
                     ZumeWizardSteps.connectToFriend,
                 ])
-            }
+            },
+            [ZumeWizards.joinFriendsPlan]: {
+                [ZumeWizardModules.completeProfile]: this.makeModule([
+                    ZumeWizardSteps.updateName,
+                    ZumeWizardSteps.updateLocation,
+                ], true),
+                [ZumeWizardModules.joinFriendsTraining]: this.makeModule([
+                    ZumeWizardSteps.joinFriendsPlan,
+                ])
+            },
         }
 
         return wizards[this.type]
@@ -549,6 +559,18 @@ const wizardSteps = {
                 .t=${t.join_training}
                 @done-step=${step.doneHandler}
             ></join-training>
+        `
+    },
+    [ZumeWizardSteps.joinFriendsPlan]: {
+        slug: ZumeWizardSteps.joinFriendsPlan,
+        component: (step, t) => html`
+            <join-friends-plan
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                .t=${t.join_training}
+                @done-step=${step.doneHandler}
+            ></join-friends-plan>
         `
     },
     [ZumeWizardSteps.connectToFriend]: {

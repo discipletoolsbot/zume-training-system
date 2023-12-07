@@ -96,7 +96,7 @@ function zume_connect_with_friend_wizard_url( $code = null ) {
     $redirect_url = zume_wizard_url( 'friend', $params );
     return zume_login_url( 'register', $redirect_url );
 }
-function zume_connect_with_friends_plan_wizard_url( $code = null ) {
+function zume_join_friends_training_wizard_url( $code = null ) {
     $params = empty( $code ) ? [] : [ 'code' => $code ];
     $redirect_url = zume_wizard_url( 'plan', $params );
     return zume_login_url( 'register', $redirect_url );
@@ -134,7 +134,7 @@ function zume_wizard_url( $type = 'start', $params = [] ) {
             $url = "$wizard_root/connect-with-friend";
             break;
         case 'plan':
-            $url = "$wizard_root/connect-with-friends-training";
+            $url = "$wizard_root/join-friends-training";
             break;
         case 'checkin':
             $url = "$wizard_root/checkin";

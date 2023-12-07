@@ -77,7 +77,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                'join_training_url' => zume_join_a_public_plan_wizard_url(),
+                'join_training_url' => zume_join_friends_training_wizard_url(),
                 'is_logged_in' => is_user_logged_in(),
                 'translations' => [
                     'enter_code' => __( 'Please enter a code.', 'zume' ),
@@ -151,7 +151,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
         }
 
         if ( $key_code !== false ) {
-            wp_redirect( zume_join_a_public_plan_wizard_url( $key_code ) );
+            wp_redirect( zume_join_friends_training_wizard_url( $key_code ) );
             exit;
         }
 

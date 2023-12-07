@@ -93,7 +93,7 @@ class Zume_Connect_Endpoints
                 'name' => $name,
             ];
         } else {
-            return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
+            return new WP_Error( 'error_connecting_friend', 'Error updating contact', [ 'status' => 400 ] );
         }
     }
 
@@ -174,40 +174,65 @@ class Zume_Connect_Endpoints
         // does key exist
         // if so, then connect current user with friend
         $plan_post_id = self::test_join_key( $key );
-        if ( $plan_post_id ) {
-            dt_write_log( $plan_post_id );
-            $user_id = get_current_user_id();
-            $contact_id = zume_get_user_contact_id( $user_id );
-            $fields = [
-                'zume_plans' => [
-                    'values' => [
-                        [
-                            'value' => $plan_post_id,
-                        ],
+
+        if ( !$plan_post_id ) {
+            return new WP_Error( 'bad_plan_code', 'Key not found', [ 'status' => 400 ] );
+        }
+
+        dt_write_log( $plan_post_id );
+        $user_id = get_current_user_id();
+        $contact_id = zume_get_user_contact_id( $user_id );
+        $fields = [
+            'zume_plans' => [
+                'values' => [
+                    [
+                        'value' => $plan_post_id,
                     ],
                 ],
-            ];
-            $result = DT_Posts::update_post( 'contacts', $contact_id, $fields, true, false );
+            ],
+        ];
+        $result = DT_Posts::update_post( 'contacts', $contact_id, $fields, true, false );
 
-            if ( ! is_wp_error( $result ) && is_array( $result ) ) {
-                zume_log_insert( 'system', 'plan_created', [ 'user_id' => $user_id ], true );
-
-                $name = __( 'the plan', 'zume' );
-                foreach ( $result['zume_plans'] as $plan ) {
-                    if ( $plan['ID'] === $plan_post_id ) {
-                        $name = $plan['post_title'];
-                    }
-                }
-
-                return [
-                    'name' => $name,
-                ];
-            } else {
-                return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
-            }
-        } else {
-            return new WP_Error( __METHOD__, 'Key not found', [ 'status' => 400 ] );
+        if ( is_wp_error( $result ) || !is_array( $result ) ) {
+            return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
         }
+
+        zume_log_insert( 'system', 'plan_created', [ 'user_id' => $user_id ], true );
+
+        $name = __( 'the plan', 'zume' );
+        foreach ( $result['zume_plans'] as $plan ) {
+            if ( $plan['ID'] === $plan_post_id ) {
+                $name = $plan['post_title'];
+            }
+        }
+
+        /* Get the plan owner's friend code */
+        $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
+
+        if ( is_wp_error( $plan ) ) {
+            return $plan;
+        }
+
+        $friend_user_id = $plan['assigned_to']['id'];
+        $friend_contact_id = zume_get_user_contact_id( $friend_user_id );
+
+        $friend = DT_Posts::get_post( 'contacts', $friend_contact_id, true, false );
+
+        if ( is_wp_error( $friend ) ) {
+            return $friend;
+        }
+
+        $code = $friend['user_friend_key'];
+
+        $result = self::connect_to_friend( $code );
+
+        if ( is_wp_error( $result ) ) {
+            return $result;
+        }
+
+        return [
+            'name' => $name,
+        ];
     }
 
     public static function test_join_key( $key ) : bool|int {
