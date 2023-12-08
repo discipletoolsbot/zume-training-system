@@ -138,7 +138,7 @@ export class Wizard extends LitElement {
     _onSkip() {
         /* Go to the next module? */
         const currentModule = this.step.module
-        for (let i = this.stepIndex + 1; i < this.steps.length - 1; i++) {
+        for (let i = this.stepIndex + 1; i < this.steps.length; i++) {
             const step = this.steps[i];
             if ( step.module !== currentModule ) {
                 this._gotoStep(i)
