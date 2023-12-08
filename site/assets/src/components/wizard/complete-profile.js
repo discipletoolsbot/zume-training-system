@@ -32,6 +32,7 @@ export class CompleteProfile extends LitElement {
 
             locations: { attribute: false },
             locationError: { attribute: false },
+            phoneError: { attribute: false },
             city: { attribute: false },
             loading: { attribute: false },
             state: { attribute: false },
@@ -51,6 +52,7 @@ export class CompleteProfile extends LitElement {
         this.city = ''
         this.loading = false
         this.localValue = ''
+        this.phoneError = ''
 
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
@@ -66,6 +68,8 @@ export class CompleteProfile extends LitElement {
     }
 
     render() {
+        //                         pattern="+?([0-9]{1,3})?[0-9\(\)\s\-]*"
+        //
         return html`
         <form class="inputs stack" @submit=${this._handleDone}>
             ${ this.variant === ZumeWizardSteps.updateName ? html`
@@ -80,7 +84,18 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
-                    <input class="input" type="tel" id="phone" name="phone" value="" ?required=${!this.skippable}>
+                    <input
+                        class="input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
+                        value=""
+                        ?required=${!this.skippable}
+                        @input=${this._handleInput}
+                        @invalid=${this._handleInvalid}
+                    >
+                    <div class="input-error" data-state="${this.phoneError.length ? '' : 'empty'}" >${this.phoneError}</div>
                 </div>
             ` : ''}
 
@@ -130,6 +145,16 @@ export class CompleteProfile extends LitElement {
         `
     }
 
+    _handleInput(event) {
+        this.phoneError = ''
+    }
+
+    _handleInvalid(event) {
+        event.preventDefault()
+
+        this.phoneError = this.t.phone_error
+    }
+
     _handleDone(event) {
         if (event) {
             event.preventDefault()
@@ -141,12 +166,16 @@ export class CompleteProfile extends LitElement {
             return
         }
 
+        let { name, value } = targetInput
+
         if (targetInput.type === 'tel') {
             console.log(targetInput.value)
+
+            value = targetInput.value.replace(/[\(\)\-\s]/g, '')
+
+            console.log(value)
             return
         }
-
-        const { name, value } = targetInput
 
         this._updateProfile(name, value, () => {
             this._sendDoneStepEvent()

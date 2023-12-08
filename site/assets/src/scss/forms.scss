@@ -24,6 +24,15 @@
     font-size: font-size(-1);
 }
 
+.input-error[data-state='empty'] {
+    opacity: 0;
+}
+.input-error {
+    color: color('error-main');
+    font-size: font-size(-1);
+    opacity: 1;
+}
+
 .form-error {
     margin-block: 0.5rem;
 }

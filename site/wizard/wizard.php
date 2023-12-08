@@ -106,6 +106,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'name' => __( 'Name', 'zume' ),
                         'name_question' => __( 'What is your name?', 'zume' ),
                         'phone_question' => __( 'What is your phone number?', 'zume' ),
+                        'phone_error' => __( 'Phone number can only contain numbers, brackets and hyphens', 'zume' ),
                         'location_question' => __( 'What city do you live in?', 'zume' ),
                         'approximate_location' => __( 'This is your approximate location.', 'zume' ),
                         'done' => __( 'Done', 'zume' ),
