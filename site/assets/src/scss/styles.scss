@@ -94,6 +94,13 @@ a, a:visited {
   max-width: $break-lg;
 }
 
+.container-xsm {
+  margin-inline: auto;
+  position: relative;
+  width: calc(30% + ( 70 / 100 * $min-width ) - ( 2 * $small-margin ) );
+  max-width: $break-lg;
+}
+
 header {
   position: sticky;
   top: 0;
