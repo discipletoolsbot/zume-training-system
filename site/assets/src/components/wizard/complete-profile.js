@@ -67,12 +67,12 @@ export class CompleteProfile extends LitElement {
 
     render() {
         return html`
-        <form class="inputs" @submit=${this._handleDone}>
+        <form class="inputs stack" @submit=${this._handleDone}>
             ${ this.variant === ZumeWizardSteps.updateName ? html`
                 <h2 class="f-1">${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
-                    <input type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable}>
+                    <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -80,7 +80,7 @@ export class CompleteProfile extends LitElement {
                 <h2 class="f-1">${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
-                    <input type="tel" id="phone" name="phone" value="" ?required=${!this.skippable}>
+                    <input class="input" type="tel" id="phone" name="phone" value="" ?required=${!this.skippable}>
                 </div>
             ` : ''}
 
@@ -138,6 +138,11 @@ export class CompleteProfile extends LitElement {
         const targetInput = event.target[0]
 
         if (targetInput.type === 'submit') {
+            return
+        }
+
+        if (targetInput.type === 'tel') {
+            console.log(targetInput.value)
             return
         }
 

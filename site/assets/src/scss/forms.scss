@@ -6,6 +6,13 @@
     &:focus {
         border: 2px solid color('gray-500');
     }
+
+    &:-webkit-autofill {
+        border: 1px solid color('gray-700');
+        -webkit-text-fill-color: color('black');
+        -webkit-box-shadow: 0 0 0px 1000px color('gray-100') inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 }
 
 .input-label {
