@@ -4,6 +4,10 @@
   gap: spacing(1);
 }
 
+.switcher[data-reverse] {
+  flex-wrap: wrap-reverse;
+}
+
 // *999 allows the basis to be very +ve or very -ve depending on whether 100% width of a column is > or < the --switcher-max-width
 // If the column sizes are less than this width then the basis will be very +ve, causing the flex elements to display as columns.
 // otherwise if the column sizes are > than this width the flex-basis will be very -ve causing the columns to grow to max container size

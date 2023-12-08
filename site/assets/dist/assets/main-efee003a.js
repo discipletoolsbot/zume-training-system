@@ -385,4 +385,4 @@ var $t=Object.defineProperty;var bt=(i,t,e)=>t in i?$t(i,t,{enumerable:!0,config
           margin-left: calc(var(--play-button-size) / 10);
         }
     `);window.customElements.define("play-button",vt);const dt=document.querySelector(".nav-toggle"),oe=document.querySelector("#nav");dt&&dt.addEventListener("click",i=>{oe.classList.toggle("nav--visible")});const re=({title:i,url:t,copyFeedback:e,shareFeedback:s})=>({title:i,url:t,webShareSupported:navigator.share,clipboardSupported:navigator.clipboard,shareFeedback:"",copyFeedback:"",noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported},share(){navigator.share({title:i,url:t,text:i}).then(()=>{this.shareFeedback=s,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(n=>console.error("Error sharing",n))},copyLink(){navigator.clipboard.writeText(t).then(()=>{this.copyFeedback=e,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(n=>console.error(n))}});window.zumeInitShareLinks=()=>{yt({share:re}).mount()};
-//# sourceMappingURL=main-b562357b.js.map
+//# sourceMappingURL=main-efee003a.js.map
