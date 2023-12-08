@@ -154,7 +154,10 @@ export class Wizard extends LitElement {
             window.location.href = '/'
         }
 
-        window.location.href = this.finishUrl
+        const url = new URL( this.finishUrl )
+
+        url.searchParams.set( 'completed', this.type )
+        window.location.href = url
     }
 
     _gotoStep(index, pushState = true) {
