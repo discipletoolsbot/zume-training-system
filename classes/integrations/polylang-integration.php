@@ -179,6 +179,7 @@ if ( !function_exists( 'zume_landing_page_post_id' ) ) {
             30 => 20761, // peer mentoring groups
             31 => 20762, // four fields tool
             32 => 20763, // generation mapping
+            69 => 23797, // 3-circles
             20730 => 1, // God uses ordinary people
             20731 => 2, // teach them to obey
             20732 => 3, // spiritual breathing
@@ -211,6 +212,7 @@ if ( !function_exists( 'zume_landing_page_post_id' ) ) {
             20761 => 30, // peer mentoring groups
             20762 => 31, // four fields tool
             20763 => 32, // generation mapping
+            23797 => 69, // 3-circles
 
         );
 
