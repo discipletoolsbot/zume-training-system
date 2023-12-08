@@ -169,12 +169,7 @@ export class CompleteProfile extends LitElement {
         let { name, value } = targetInput
 
         if (targetInput.type === 'tel') {
-            console.log(targetInput.value)
-
             value = targetInput.value.replace(/[\(\)\-\s]/g, '')
-
-            console.log(value)
-            return
         }
 
         this._updateProfile(name, value, () => {
