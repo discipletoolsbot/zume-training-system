@@ -6,12 +6,37 @@
     &:focus {
         border: 2px solid color('gray-500');
     }
+
+    &:-webkit-autofill {
+        border: 1px solid color('gray-700');
+        -webkit-text-fill-color: color('black');
+        -webkit-box-shadow: 0 0 0px 1000px color('gray-100') inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
 }
 
 .input-label {
     line-height: 1;
 }
 
+.input-subtext {
+    color: color('gray-700');
+    font-size: font-size(-1);
+}
+
+.input-error[data-state='empty'] {
+    opacity: 0;
+}
+.input-error {
+    color: color('error-main');
+    font-size: font-size(-1);
+    opacity: 1;
+}
+
 .form-error {
     margin-block: 0.5rem;
+}
+
+.form-group > * + * {
+    margin-top: spacing(-1);
 }

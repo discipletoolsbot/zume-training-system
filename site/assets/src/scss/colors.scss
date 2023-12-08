@@ -6,6 +6,7 @@ $colors: (
     'brand-lighter',
     'brand-fade',
     'black',
+    'error-main'
 );
 
 @each $color in $colors {

@@ -91,20 +91,64 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'translations' => [
-                    'bad_wizard' => esc_html__( 'Bad Wizard', 'zume' ),
-                    'found_bad_wizard' => esc_html__( 'You found a bad wizard', 'zume' ),
-                    'home' => esc_html__( 'Get back home', 'zume' ),
-                    'back' => esc_html__( 'Back', 'zume' ),
-                    'next' => esc_html__( 'Next', 'zume' ),
-                    'skip' => esc_html__( 'Skip', 'zume' ),
-                    'finish' => esc_html__( 'Finish', 'zume' ),
-                    'no_locations_found' => esc_html__( 'No locations found', 'zume' ),
+                    'bad_wizard' => __( 'Bad Wizard', 'zume' ),
+                    'found_bad_wizard' => __( 'You have fallen in with some very bad wizards!', 'zume' ),
+                    'home' => __( 'Get back home', 'zume' ),
+                    'back' => __( 'Back', 'zume' ),
+                    'next' => __( 'Next', 'zume' ),
+                    'skip' => __( 'Skip', 'zume' ),
+                    'finish' => __( 'Finish', 'zume' ),
+                    'no_locations_found' => __( 'No locations found', 'zume' ),
                     'complete_profile' => [
-                        'title' => esc_html__( 'Complete your profile', 'zume' ),
-                        'phone' => esc_html__( 'Phone', 'zume' ),
-                        'city' => esc_html__( 'City', 'zume' ),
-                        'name' => esc_html__( 'Name', 'zume' ),
+                        'title' => __( 'Complete your profile', 'zume' ),
+                        'phone' => __( 'Phone', 'zume' ),
+                        'city' => __( 'City', 'zume' ),
+                        'name' => __( 'Name', 'zume' ),
+                        'name_question' => __( 'What is your name?', 'zume' ),
+                        'phone_question' => __( 'What is your phone number?', 'zume' ),
+                        'phone_error' => __( 'Phone number can only contain numbers, brackets and hyphens', 'zume' ),
+                        'location_question' => __( 'What city do you live in?', 'zume' ),
+                        'approximate_location' => __( 'This is your approximate location.', 'zume' ),
+                        'done' => __( 'Done', 'zume' ),
                     ],
+                    'get_a_coach' => [
+                        'contact_preference_question' => __( 'What is your contact preference?', 'zume' ),
+                        'email' => __( 'Email', 'zume' ),
+                        'text' => __( 'Text', 'zume' ),
+                        'phone' => __( 'Phone', 'zume' ),
+                        'whatsapp' => __( 'Whatsapp', 'zume' ),
+                        'language_preference_question' => __( 'What is your language preference?', 'zume' ),
+                        'language_preference' => __( 'Language', 'zume' ),
+                        'how_can_we_serve' => __( 'How can we serve you?', 'zume' ),
+                        'coaching' => __( 'Coaching', 'zume' ),
+                        'technical_assistance' => __( 'Technical Assistance', 'zume' ),
+                        'question_implementation' => __( 'Question about implementing the training', 'zume' ),
+                        'question_content' => __( 'Question about the content', 'zume' ),
+                        'help_with_group' => __( 'Help with what to do after starting a group', 'zume' ),
+                        'done' => __( 'Done', 'zume' ),
+                        'missing_response' => __( 'Please give a response to this question', 'zume' ),
+                        'connect_success' => __( 'Request Submitted, we will do our best to connect you with a coach near you.', 'zume' ),
+                        'connect_fail' => __( 'Sorry. We were unable to submit your request. Please try again later.', 'zume' ),
+                        'already_coached' => __( 'You already have a coach.', 'zume' ),
+                        'error_connecting' => __( 'Error connecting with a coach', 'zume' ),
+                        'connecting_coach_title' => __( 'Connecting you to a Coach', 'zume' ),
+                        'please_wait' => __( 'Please wait while we connect you', 'zume' ),
+                    ],
+                    'join_training' => [
+                        'title' => __( 'Joining Plan', 'zume' ),
+                        'please_wait' => __( 'Please wait while we connect you', 'zume' ),
+                        'link_broken' => __( 'The training link is broken. Please try again.', 'zume' ),
+                        'success' => __( 'Successfully joined training %s', 'zume' ),
+                        'error' => __( 'Something went wrong while joining the plan', 'zume' ),
+                    ],
+                    'connect_friend' => [
+                        'title' => __( 'Connecting with friend', 'zume' ),
+                        'please_wait' => __( 'Please wait while we connect you', 'zume' ),
+                        'broken_link' => __( 'The friend link is broken. Please try again.', 'zume' ),
+                        'success' => __( 'Successfully connected with friend %s', 'zume' ),
+                        'error' => __( 'Something went wrong while connecting with friend', 'zume' ),
+                    ],
+                    'share' => Zume_Training_Share::translations(),
                 ],
             ]) ?>][0]
             const zumeProfile = [<?php echo json_encode([
@@ -117,16 +161,18 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     }
 
     public function body(){
+        global $zume_user_profile;
+
+        if ( !is_user_logged_in() ) {
+            wp_redirect( zume_login_url( 'login', dt_get_url_path( false, true ) ) );
+        }
         ?>
 
-        <div class="container cover-page">
-            <div>
-                <zume-wizard
-                    type="<?php echo esc_attr( $this->wizard_type ) ?>"
-                    finishUrl="<?php echo esc_url( zume_dashboard_url() ) ?>"
-                ></zume-wizard>
-            </div>
-        </div>
+        <zume-wizard
+            type="<?php echo esc_attr( $this->wizard_type ) ?>"
+            finishUrl="<?php echo esc_url( zume_dashboard_url() ) ?>"
+            user="<?php echo esc_attr( json_encode( $zume_user_profile ) ) ?>"
+        ></zume-wizard>
 
         <?php
     }

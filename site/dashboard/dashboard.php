@@ -82,10 +82,16 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'site_url' => get_site_url(),
                 'template_dir' => get_template_directory_uri(),
-                'translations' => [],
                 'user_profile' => zume_get_user_profile(),
                 'training_items' => zume_training_items(),
                 'friends' => zume_get_user_friends(),
+                'translations' => [
+                    'share' => __( 'Share', 'zume' ),
+                    'copy_link' => __( 'Copy Link', 'zume' ),
+                    'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
+                    'share_feedback' => __( 'Thanks!', 'zume' ),
+                    'copy_feedback' => __( 'Link copied', 'zume' ),
+                ],
             )
         );
     }
@@ -125,7 +131,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 </div>
                 <div class="cell medium-6">
                     <p><button class="button cta_set_profile" />Set Profile</button></p>
-                    <p><button class="button cta_get_a_coach" />Get a Coach</button></p>
+                    <p><a class="button cta_get_a_coach" href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" />Get a Coach</a></p>
                     <p><button class="button cta_invite_friends" />Invite to Friendship</button></p>
                     <p><button class="button cta_join_a_training" />Join a Plan</button></p>
                     <p><button class="button cta_make_a_plan" />Make a Plan</button></p>
