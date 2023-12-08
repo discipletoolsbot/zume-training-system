@@ -22,7 +22,7 @@ export class JoinTraining extends LitElement {
             t: { type: Object },
 
             code: { attribute: false },
-            messages: { attribute: false },
+            message: { attribute: false },
             errorMessage: { attribute: false },
             loading: { attribute: false },
         };
@@ -32,18 +32,18 @@ export class JoinTraining extends LitElement {
         super()
 
         this.code = ''
-        this.message = 'Please wait while we connect you.'
         this.errorMessage = ''
         this.loading = false
     }
 
     firstUpdated() {
         this.loading = true
+        this.message = this.t.please_wait
         /* We need the plan id */
         const url = new URL( location.href )
         if ( !url.searchParams.has('code') ) {
             this.message = ""
-            this.setErrorMessage('The training link is broken. Please try again.')
+            this.setErrorMessage(this.t.link_broken)
             this._sendDoneStepEvent()
             this.loading = false
             return
@@ -56,7 +56,7 @@ export class JoinTraining extends LitElement {
             .then( ( data ) => {
                 console.log(data)
 
-                this.message = `Successfully joined training ${data.name}`
+                this.message = this.t.success.replace('%s', data.name)
 
                 this._sendDoneStepEvent()
             })
@@ -64,9 +64,9 @@ export class JoinTraining extends LitElement {
                 console.log(error)
                 this.message = ''
                 if ( error.code === 'bad_plan_code' ) {
-                    this.setErrorMessage('The training link is broken. Please try again.')
+                    this.setErrorMessage(this.t.link_broken)
                 } else {
-                    this.setErrorMessage('Something went wrong while joining the plan')
+                    this.setErrorMessage(this.t.error)
                 }
 
                 this._sendDoneStepEvent()
@@ -93,7 +93,7 @@ export class JoinTraining extends LitElement {
 
     render() {
         return html`
-            <h1>Joining Plan</h1>
+            <h1>${this.t.title}</h1>
             <p>${this.message}</p>
             <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
             <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>

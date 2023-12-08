@@ -162,7 +162,7 @@ class Zume_Training_Course extends Zume_Magic_Page
                             <td><?php echo esc_html( $timezone ) ?></td>
                             <td><?php echo esc_html( $language ) ?></td>
                             <td>
-                                <a href="<?php echo esc_url( zume_url( 'zume_app/plan_invite?code=' . $join_key ) ) ?>" class="btn">
+                                <a href="<?php echo esc_url( zume_join_a_public_plan_wizard_url( $join_key ) ) ?>" class="btn">
                                     <?php echo esc_html__( 'Join', 'zume' ) ?>
                                 </a>
                             </td>

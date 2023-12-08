@@ -6175,6 +6175,7 @@ class Zume_User_Genmap {
                         </div>
                       `
                         } else if ( post_type === 'groups' ) {
+                            const origin = (new URL(location.href)).origin
 
                             return `
                                 <div class="grid-x grid-padding-x">
@@ -6191,8 +6192,8 @@ class Zume_User_Genmap {
                                     Member Count: ${data.member_count}
                                   </div>
                                   <div class="cell"><hr>
-                                    <a href="https://zume5.training/${post_type}/${data.ID}" target="_blank" class="button">View Group</a>
-                                    <a href="https://zume5.training/${post_type}/${data.ID}" target="_blank" class="button">Create Child</a>
+                                    <a href="${origin}/${post_type}/${data.ID}" target="_blank" class="button">View Group</a>
+                                    <a href="${origin}/${post_type}/${data.ID}" target="_blank" class="button">Create Child</a>
                                   </div>
                                 </div>
                               `

@@ -580,7 +580,7 @@ const wizardSteps = {
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                .t=${t.join_training}
+                .t=${t.connect_friend}
                 @done-step=${step.doneHandler}
             ></connect-friend>
         `

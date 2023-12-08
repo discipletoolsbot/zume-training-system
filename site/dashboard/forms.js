@@ -338,13 +338,14 @@ window.cta_invite_plan = () => {
 
   makeRequest('GET', 'plans', { user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
+    const origin = (new URL(location.href)).origin
     jQuery.each(data, function(index, value) {
       content.append(`
         <div class="grid-x grid-padding-y">
           <div class="cell">
             <div class="input-group">
-                <input class="input-group-field plan_invite" type="text" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}" >
-                <button class="button input-group-label copy_plan_code" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}">Copy ${value.title}</button>
+                <input class="input-group-field plan_invite" type="text" value="${origin}/zume_app/plan_invite/?code=${value.join_key}" >
+                <button class="button input-group-label copy_plan_code" value="${origin}/zume_app/plan_invite/?code=${value.join_key}">Copy ${value.title}</button>
             </div>
           </div>
         </div>

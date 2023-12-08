@@ -114,7 +114,42 @@ class Zume_Connect_Endpoints
             return new WP_Error( 'missing_params', 'Missing params', [ 'status' => 400 ] );
         }
 
-        return self::connect_to_plan( $params['code'] );
+        $code = $params['code'];
+
+        $connection_response = self::connect_to_plan( $code );
+
+        if ( is_wp_error( $connection_response ) ) {
+            return $connection_response;
+        }
+
+        $plan_post_id = self::test_join_key( $code );
+
+
+        /* Get the plan owner's friend code */
+        $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
+
+        if ( is_wp_error( $plan ) ) {
+            return $plan;
+        }
+
+        $friend_user_id = $plan['assigned_to']['id'];
+        $friend_contact_id = zume_get_user_contact_id( $friend_user_id );
+
+        $friend = DT_Posts::get_post( 'contacts', $friend_contact_id, true, false );
+
+        if ( is_wp_error( $friend ) ) {
+            return $friend;
+        }
+
+        $code = $friend['user_friend_key'];
+
+        $result = self::connect_to_friend( $code );
+
+        if ( is_wp_error( $result ) ) {
+            return $result;
+        }
+
+        return $connection_response;
     }
 
     public function connect_to_public_plan_callback( WP_REST_Request $request ){
@@ -126,22 +161,18 @@ class Zume_Connect_Endpoints
 
         $code = $params['code'];
 
-        $plan_post_id = self::test_join_key( $code );
+        $response = self::connect_to_plan( $code );
 
-        if ( !$plan_post_id ) {
-            return new WP_Error( 'bad_plan_code', 'Key not found', [ 'status' => 400 ] );
+        if ( is_wp_error( $response ) ) {
+            return $response;
         }
+
+        $plan_post_id = self::test_join_key( $code );
 
         $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
 
         if ( is_wp_error( $plan ) ) {
             return $plan;
-        }
-
-        $response = self::connect_to_plan( $code );
-
-        if ( is_wp_error( $response ) ) {
-            return $response;
         }
 
         $coach_user_id = $plan['assigned_to']['id'];
@@ -205,31 +236,6 @@ class Zume_Connect_Endpoints
                 $name = $plan['post_title'];
             }
         }
-
-        /* Get the plan owner's friend code */
-        $plan = DT_Posts::get_post( 'zume_plans', $plan_post_id, true, false );
-
-        if ( is_wp_error( $plan ) ) {
-            return $plan;
-        }
-
-        $friend_user_id = $plan['assigned_to']['id'];
-        $friend_contact_id = zume_get_user_contact_id( $friend_user_id );
-
-        $friend = DT_Posts::get_post( 'contacts', $friend_contact_id, true, false );
-
-        if ( is_wp_error( $friend ) ) {
-            return $friend;
-        }
-
-        $code = $friend['user_friend_key'];
-
-        $result = self::connect_to_friend( $code );
-
-        if ( is_wp_error( $result ) ) {
-            return $result;
-        }
-
         return [
             'name' => $name,
         ];
