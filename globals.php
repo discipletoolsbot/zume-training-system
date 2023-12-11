@@ -23,10 +23,10 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // validate user_id exists
         if ( $user_id !== $current_user_id ) {
-           $user_row = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM wp_users WHERE ID = %d', $user_id ) );
-           if ( empty( $user_row ) ) {
-               return false;
-           }
+            $user_row = $wpdb->get_row( $wpdb->prepare( 'SELECT * FROM wp_users WHERE ID = %d', $user_id ) );
+            if ( empty( $user_row ) ) {
+                return false;
+            }
         }
 
         // get contact_id and validate exists
@@ -6175,6 +6175,7 @@ class Zume_User_Genmap {
                         </div>
                       `
                         } else if ( post_type === 'groups' ) {
+                            const origin = (new URL(location.href)).origin
 
                             return `
                                 <div class="grid-x grid-padding-x">
@@ -6191,8 +6192,8 @@ class Zume_User_Genmap {
                                     Member Count: ${data.member_count}
                                   </div>
                                   <div class="cell"><hr>
-                                    <a href="https://zume5.training/${post_type}/${data.ID}" target="_blank" class="button">View Group</a>
-                                    <a href="https://zume5.training/${post_type}/${data.ID}" target="_blank" class="button">Create Child</a>
+                                    <a href="${origin}/${post_type}/${data.ID}" target="_blank" class="button">View Group</a>
+                                    <a href="${origin}/${post_type}/${data.ID}" target="_blank" class="button">Create Child</a>
                                   </div>
                                 </div>
                               `

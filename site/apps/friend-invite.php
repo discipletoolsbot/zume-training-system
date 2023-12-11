@@ -77,10 +77,11 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                'redirect_url' => zume_login_url( 'login' ),
+                'connect_friend_url' => zume_connect_with_friend_wizard_url(),
                 'is_logged_in' => is_user_logged_in(),
                 'translations' => [
                     'enter_code' => __( 'Please enter a friend code.', 'zume' ),
+                    'bad_code' => __( 'Not a recognized code. Please check the number.', 'zume' ),
                 ],
             ]) ?>][0]
         </script>
@@ -88,35 +89,32 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                const successBanner = document.querySelector('.success.banner')
                 const warningBanner = document.querySelector('.warning.banner')
 
                 jQuery('.code_submit').click(function() {
                     var code = jQuery('#code').val();
                     if ( ! code ) {
-                        warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(jsObject.translations.enter_code)
-                        jQuery(warningBanner).show()
+                        show_error(jsObject.translations.enter_code)
                         return;
                     }
 
-                    if ( jsObject.is_logged_in ) {
-                        submit_code( code )
-                    } else {
-                        redirect_to_login( code )
-                    }
+                    redirect_to_login( code )
 
                 });
 
                 function redirect_to_login( code ) {
-                    const redirect_to = new URL( location.href )
-                    redirect_to.searchParams.append('code', code)
+                    const connectFriendUrl = new URL( jsObject.connect_friend_url )
 
-                    const url = new URL( jsObject.redirect_url )
-                    url.searchParams.append('hide-nav', true)
-                    url.searchParams.delete('redirect_to')
-                    url.searchParams.append('redirect_to', redirect_to)
+                    const redirect =connectFriendUrl.searchParams.get('redirect_to')
 
-                    location.href = url.href
+                    const redirectURL = new URL(redirect)
+                    redirectURL.searchParams.append( 'code', code )
+
+                    connectFriendUrl.searchParams.delete('redirect_to')
+                    connectFriendUrl.searchParams.append('redirect_to', redirectURL.href)
+                    connectFriendUrl.searchParams.append('hide-nav', true)
+
+                    location.href = connectFriendUrl.href
                 }
 
                 function submit_code( code ){
@@ -146,23 +144,10 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
             $key_code = sanitize_text_field( wp_unslash( $_GET['code'] ) );
         }
 
-        $is_user_logged_in = false;
-
-        if ( is_user_logged_in() ) {
-            $is_user_logged_in = true;
-
-            if ( $key_code !== false ) {
-                $success = Zume_Connect_Endpoints::connect_to_friend( $key_code );
-            }
+        if ( $key_code !== false ) {
+            wp_redirect( zume_connect_with_friend_wizard_url( $key_code ) );
+            exit;
         }
-
-        $auto_submitted = isset( $success );
-        $failed = $auto_submitted && is_wp_error( $success );
-        $show_success = isset( $success ) && !is_wp_error( $success );
-
-        $show_form = !$key_code || !$is_user_logged_in || $auto_submitted && $failed;
-
-        $name = $show_success ? $success['name'] : '::name::';
 
         ?>
 
@@ -183,22 +168,13 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
 
                     <div class="text-center bg-white px-1 py-0 shadow rounded-start rounded-start-on-medium">
                         <h1 class="brand"><?php esc_html_e( 'Friend Invitation', 'zume' ) ?></h1>
-                        <div class="stack-1 invitation-form" style="<?php echo $show_form ? '' : 'display: none;' ?>">
-
-                            <div class="banner warning text-center" style="<?php echo $failed ? '' : 'display: none' ?>">
-                                <?php echo esc_html__( 'Not a recognized friend code. Please check the number.', 'zume' ); ?>
-                            </div>
-
+                        <div class="stack-1 invitation-form">
                             <p><?php echo esc_html__( 'Use the code your friend sent you.', 'zume' ) ?></p>
                             <div class="">
                                 <label for="code"></label>
                                 <input class="input" id="code" type="text" placeholder="012345" value="<?php echo ( $key_code ) ? esc_attr( $key_code ) : ''  ?>" >
                             </div>
                             <button class="btn code_submit"><?php echo esc_html__( 'Connect', 'zume' ) ?></button>
-                        </div>
-
-                        <div class="success banner text-center" style="<?php echo $auto_submitted && !$failed ? '' : 'display: none;' ?>">
-                            <?php echo esc_html( sprintf( __( 'Successfully connected to %s', 'zume' ), $name ) ) ?>
                         </div>
 
                     </div>

@@ -6,9 +6,9 @@ jQuery(document).ready(function() {
   jQuery('.cta_set_profile').click(function() {
     window.cta_set_profile()
   })
-  jQuery('.cta_get_a_coach').click(function() {
+  /* jQuery('.cta_get_a_coach').click(function() {
     window.cta_get_a_coach()
-  })
+  }) */
   jQuery('.cta_join_a_training').click(function() {
     window.cta_join_a_training()
   })
@@ -163,6 +163,12 @@ window.cta_join_a_training = () => {
       jQuery('.loading-spinner').addClass('active')
 
       let key = jQuery(this).val()
+
+      const url = new URL(location.href)
+
+      location.href = url.origin + `/wizard/join-a-training?code=${key}`
+
+      /*
       makeRequest('POST', 'connect/plan', { code: key }, 'zume_system/v1' ).done( function( data ) {
         jQuery('.join_training_button').text('Joined').prop('disabled', true)
         jQuery('.loading-spinner').removeClass('active')
@@ -171,6 +177,7 @@ window.cta_join_a_training = () => {
       makeRequest('POST', 'log', { type: 'system', subtype: 'joined_online_training' }, 'zume_system/v1' ).done( function( data ) {
         console.log(data)
       })
+      */
 
     })
   })
@@ -273,22 +280,25 @@ window.cta_invite_friends = () => {
     list += `<li data-contactId="${value.contact_id}" data-userID="${value.user_id}">${value.name}</li>`
   })
 
+  const url = new  URL(location.href)
+  const translations = JSON.stringify(zumeForms.translations).replace(/"/g, '&quot;')
+
   content.append(`
     <div class="grid-x grid-padding-x">
+      <div class="cell stack">
+        <div class="input-group">
+          <share-links url="${url.origin}/zume_app/friend_invite/?code=${zumeForms.user_profile.friend_key}" title="Connect with me in Zume.Training" t="${translations}"></share-links>
+        </div>
+      </div>
       <div class="cell">
-       <div class="input-group">
-            <input class="input-group-field add_friend_code" type="text" value="" >
-            <button class="button input-group-label connect_friend">Connect to Friend</button>
+        <h4>Connect with friends</h4>
+        <div>
+            <a href="${url.origin + '/zume_app/friend_invite'}" class="button input-group-label connect_friend">Connect to Friend</a>
             <button class="button input-group-label  close_friend" style="display:none;" onclick="location.reload()">Close</button>
         </div>
 
       </div>
-      <div class="cell">
-        <div class="input-group">
-            <input class="input-group-field friend_code_url" type="text" value="https://zume5.training/zume_app/friend_invite/?code=${zumeForms.user_profile.friend_key}" >
-            <button class="button input-group-label copy_friend_code">Connect</button>
-        </div>
-      </div>
+
       <div class="cell" ><u>List of Friends</u><br>
         <ul>
             ${list}
@@ -328,13 +338,14 @@ window.cta_invite_plan = () => {
 
   makeRequest('GET', 'plans', { user_id: zumeForms.user_profile.user_id }, 'zume_system/v1' ).done( function( data ) {
     console.log(data)
+    const origin = (new URL(location.href)).origin
     jQuery.each(data, function(index, value) {
       content.append(`
         <div class="grid-x grid-padding-y">
           <div class="cell">
             <div class="input-group">
-                <input class="input-group-field plan_invite" type="text" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}" >
-                <button class="button input-group-label copy_plan_code" value="https://zume5.training/zume_app/plan_invite/?code=${value.join_key}">Copy ${value.title}</button>
+                <input class="input-group-field plan_invite" type="text" value="${origin}/zume_app/plan_invite/?code=${value.join_key}" >
+                <button class="button input-group-label copy_plan_code" value="${origin}/zume_app/plan_invite/?code=${value.join_key}">Copy ${value.title}</button>
             </div>
           </div>
         </div>

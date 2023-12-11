@@ -56,12 +56,31 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id = null )
+    public static function register_request_to_coaching( $user_id ) {
+        return self::manage_user_coaching( $user_id );
+    }
+
+    public static function connect_user_to_coach( $user_id, $coach_id ) {
+        return self::manage_user_coaching( $user_id, $coach_id );
+    }
+
+    /**
+     * Creates/updates user's coaching contact.
+     *
+     * If the coaching contact already exists, this function will update it.
+     * If it doesn't already exist it will be created.
+     *
+     * @param int $user_id
+     * @param int $coach_id
+     */
+    private static function manage_user_coaching( $user_id, $coach_id = null )
     {
         $profile = zume_get_user_profile( $user_id );
 
-        if ( $profile['coaching_contact_id'] ) {
-            return new WP_Error( 'already_has_coach', 'User already has a coach', array( 'status' => 400 ) );
+        $coaching_contact_id = $profile['coaching_contact_id'];
+
+        if ( $coaching_contact_id && $coach_id === null ) {
+            return new WP_Error( 'already_has_coach', 'User has already requested a coach', array( 'status' => 400 ) );
         }
 
         $fields = [
@@ -76,6 +95,14 @@ class Zume_Get_A_Coach_Endpoints
             'trainee_user_id' => $profile['user_id'],
             'trainee_contact_id' => $profile['contact_id'],
         ];
+
+        if ( $coach_id !== null ) {
+            $fields['coached_by'] = [
+                'values' => [
+                    [ 'value' => $coach_id ],
+                ],
+            ];
+        }
 
         if ( ! empty( $profile['location'] ) ) {
             $fields['location_grid_meta'] = [
@@ -106,9 +133,18 @@ class Zume_Get_A_Coach_Endpoints
             ],
         ];
 
-        $result = wp_remote_post( 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts', $args );
+        $url = 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts';
+
+        if ( $coaching_contact_id ) {
+            $method = 'UPDATE';
+            $url .= "/$coaching_contact_id";
+        } else {
+            $method = 'CREATE';
+        }
+
+        $result = wp_remote_post( $url, $args );
         if ( is_wp_error( $result ) ) {
-            dt_write_log( __METHOD__ . ' FAILED TO CREATE TRAINING FOR ' . $profile['name'] );
+            dt_write_log( __METHOD__ . " FAILED TO $method COACHING CONTACT FOR " . $profile['name'] );
             return false;
         }
 
