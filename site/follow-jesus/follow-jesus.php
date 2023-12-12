@@ -87,10 +87,10 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         require __DIR__ . '/../parts/nav.php';
         ?>
 
-        <div class="cover-page | position-relative">
+        <div class="cover | position-relative">
             <div class="multiply-cover color flip show-for-large"></div>
             <div class="multiply-cover color show-for-large"></div>
-            <div class="container-md stack-2 | page">
+            <div class="container-xsm stack-2 | page">
                 <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
                 <div class="center">
                     <div class="video-thumbnail shadow position-relative rounded">

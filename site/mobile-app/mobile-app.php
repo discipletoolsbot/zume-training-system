@@ -129,10 +129,10 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
         }
         ?>
 
-        <div class="container page">
+        <div class="container py-2">
 
             <div class="cover-page">
-                <div class="switcher">
+                <div class="switcher" data-reverse>
                     <div class="stack-2 | align-items-center">
                         <h1 class=""><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zume App.', 'zume' ) ?></h1>
                         <div>
@@ -175,7 +175,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
                         </div>
                     </div>
                     <div class="cover align-items-center">
-                        <div class="position-relative">
+                        <div class="position-relative w-70">
                             <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/3Phone-mock.png' ) ?>" alt="mobile views">
                             <div class="app-bg-circle bg-brand-lighter absolute">                            </div>
                         </div>
