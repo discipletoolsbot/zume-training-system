@@ -61,7 +61,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 FROM wp_3_postmeta
                 WHERE meta_key = 'trainee_user_id'
                   AND meta_value = %s",
-            $user_id ) );
+        $user_id ) );
         $coach_list = $wpdb->get_results( $wpdb->prepare(
             "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
                 FROM wp_3_p2p p2
@@ -69,7 +69,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 LEFT JOIN wp_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
                 WHERE p2p_from = %d
                   AND p2p_type = 'contacts_to_contacts'",
-            $coaching_contact_id ), ARRAY_A );
+        $coaching_contact_id ), ARRAY_A );
         if ( ! empty( $coach_list ) ) {
             foreach ( $coach_list as $key => $value ) {
                 $coaches[$value['user_id']] = [];
@@ -198,22 +198,23 @@ if ( ! function_exists( 'zume_get_user_language' ) ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        global $zume_languages_by_locale;
-        if ( empty( $zume_languages_by_locale ) ) {
-            $zume_languages_by_locale = zume_languages( 'locale' );
+        global $zume_languages_by_code;
+        if ( empty( $zume_languages_by_code ) ) {
+            $zume_languages_by_code = zume_languages( 'code' );
         }
 
-        $locale = get_user_meta( $user_id, 'locale', true );
-        if ( $user_id == get_current_user_id() && empty( $locale ) ) {
-            update_user_meta( $user_id, 'locale', zume_current_language() );
-            $locale = zume_current_language();
+        $contact_id = zume_get_user_contact_id( $user_id );
+        $language_code = get_post_meta( $contact_id, 'user_ui_language', true );
+        if ( $user_id == get_current_user_id() && empty( $language_code ) ) {
+            $language_code = zume_current_language();
+            update_post_meta( $contact_id, 'user_ui_language', $language_code );
         }
 
-        if ( ! $locale ) {
-            $locale = 'en';
+        if ( ! $language_code ) {
+            $language_code = 'en';
         }
 
-        return isset( $zume_languages_by_locale[$locale] ) ? $zume_languages_by_locale[$locale] : $zume_languages_by_locale['en'];
+        return isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : $zume_languages_by_code['en'];
     }
 }
 if ( ! function_exists( 'zume_get_user_location' ) ) {
