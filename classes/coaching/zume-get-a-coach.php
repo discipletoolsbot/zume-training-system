@@ -51,6 +51,10 @@ class Zume_Get_A_Coach_Endpoints
         // create coaching request
         $coaching_result = self::register_request_to_coaching( $params['user_id'], $params['data'] );
 
+        if ( is_wp_error( $coaching_result ) ) {
+            return $coaching_result;
+        }
+
         // log coaching request
         $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
 
@@ -153,7 +157,7 @@ class Zume_Get_A_Coach_Endpoints
         $site = Site_Link_System::get_site_connection_vars( self::SITE_CONNECTION_POST_ID );
         if ( ! $site ) {
             dt_write_log( __METHOD__ . ' FAILED TO GET SITE LINK TO GLOBAL ' );
-            return false;
+            return new WP_Error( 'site_link_failed', 'Failed to link to coaching site ', array( 'status' => 400 ) );
         }
 
         $args = [
@@ -175,9 +179,9 @@ class Zume_Get_A_Coach_Endpoints
         }
 
         $result = wp_remote_post( $url, $args );
-        if ( is_wp_error( $result ) ) {
+        if ( is_wp_error( $result ) || $result['response']['code'] !== 200 ) {
             dt_write_log( __METHOD__ . " FAILED TO $method COACHING CONTACT FOR " . $profile['name'] );
-            return false;
+            return new WP_Error( 'coach_request_failed', "Failed to $method coaching contact", array( 'status' => 400 ) );
         }
 
         $body = json_decode( $result['body'], true );
