@@ -27,7 +27,7 @@ export class RequestCoach extends LitElement {
             variant: { type: String },
             state: { attribute: false },
             errorMessage: { attribute: false },
-            doneText: { attribute: false },
+            message: { attribute: false },
             loading: { attribute: false },
         }
     }
@@ -41,7 +41,7 @@ export class RequestCoach extends LitElement {
         this.t = {}
         this.state = {}
         this.errorMessage = ''
-        this.doneText = ''
+        this.message = ''
         this.loading = false
         this.contactPreferences = [
             'email',
@@ -55,7 +55,7 @@ export class RequestCoach extends LitElement {
     }
 
     firstUpdated() {
-        this.doneText = this.t.connect_success
+        this.message = this.t.connect_success
 
         const data = this.stateManager.getAll()
 
@@ -65,7 +65,7 @@ export class RequestCoach extends LitElement {
                 this.loading = false
 
                 if ( data === false ) {
-                    this.doneText = this.t.connect_fail
+                    this.message = this.t.connect_fail
                     this.setErrorMessage(this.t.error_connecting)
                 }
 
@@ -77,17 +77,24 @@ export class RequestCoach extends LitElement {
                     const errorKeys = Object.keys(data.coach_request.errors)
 
                     if (errorKeys[0] === 'already_has_coach') {
-                        this.doneText = this.t.already_coached
+                        this.message = this.t.already_coached
                         this.setErrorMessage(this.t.error_connecting)
                     }
                 }
 
                 this._handleFinish()
             }).bind(this)
+            const onFail = (() => {
+                this.message = this.t.connect_fail
+                this.setErrorMessage(this.t.error_connecting)
+
+                this._handleFinish()
+            }).bind(this)
             makeRequest('POST', 'get_a_coach', { data }, 'zume_system/v1/' )
                 .done(onCoachRequested)
-                .fail((error) => {
-                    console.log(error)
+                .fail(onFail)
+                .always(() => {
+                    this.loading = false
                 })
         }
     }
@@ -173,12 +180,8 @@ export class RequestCoach extends LitElement {
             ${ this.variant === ZumeWizardSteps.connectingToCoach ? html`
 
                 <h1>${this.t.connecting_coach_title}</h1>
-                <div class="stack center | container-sm align-items-start">
-                    ${ this.loading === true
-                        ? html`<p>${this.t.please_wait} <span class="loading-spinner active"></span></p>`
-                        : html`<p>${this.doneText}</p>`
-                    }
-                </div>
+                <p>${this.message}</p>
+                <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
             ` : '' }
             ${ this.variant !== ZumeWizardSteps.connectingToCoach
                 ? html`
