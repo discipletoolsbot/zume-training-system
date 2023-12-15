@@ -1,0 +1,16 @@
+#wizard-skip-button {
+    position: absolute;
+    top: 0;
+    inset-inline-end: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    #wizard-skip-button {
+        position: initial;
+        display: block;
+        padding-bottom: spacing(0);
+    }
+}

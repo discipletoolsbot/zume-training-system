@@ -1,33 +1,69 @@
 export class WizardStateManager {
-    WIZARD_STATE = 'zume_wizard_state'
+    WIZARD_STATE_NAME = 'zume_wizard_state'
+    STALE_LIFESPAN = 10 * 60 * 1000
+    MAX_LIFESPAN = 60 * 60 * 1000
+
+    #wizardState;
 
     constructor(moduleName) {
         this.moduleName = moduleName
+
+        this.#wizardState = this.#init()
     }
 
-    init() {
+    #init() {
+        const existingState = this.#get()
+
+        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) ) {
+            return existingState
+        }
+
         return ({
             module: this.moduleName,
             data: {},
+            timestamp: Date.now(),
         })
     }
 
-    exists() {
-        return localStorage.getItem(this.WIZARD_STATE) ? true : false
+    #get() {
+        return JSON.parse(localStorage.getItem(this.WIZARD_STATE_NAME))
     }
 
-    get() {
-        return JSON.parse(localStorage.getItem(this.WIZARD_STATE))
+    #refreshTimestamp() {
+        this.#wizardState.timestamp = Date.now()
+    }
+
+    #isOlderThan(state, milliseconds) {
+        return Date.now() - state.timestamp > milliseconds
+    }
+
+    empty() {
+        return Object.keys(this.#wizardState.data).length === 0
+    }
+
+    isDataStale() {
+        return this.#isOlderThan(this.#wizardState, this.STALE_LIFESPAN)
+    }
+
+    get( key ) {
+        return this.#wizardState.data[key]
+    }
+
+    getAll() {
+        return this.#wizardState.data
     }
 
     add(key, value) {
-        const wizardState = !this.exists() ? this.init() : this.get()
-        wizardState.data[key] = value
+        this.#wizardState.data[key] = value
 
-        localStorage.setItem(this.WIZARD_STATE, JSON.stringify(wizardState))
+        this.#refreshTimestamp()
+
+        localStorage.setItem(this.WIZARD_STATE_NAME, JSON.stringify(this.#wizardState))
     }
 
     clear() {
-        localStorage.removeItem(this.WIZARD_STATE)
+        this.#wizardState = null
+
+        localStorage.removeItem(this.WIZARD_STATE_NAME)
     }
 }

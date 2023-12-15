@@ -1,4 +1,4 @@
-import { LitElement, html } from "lit"
+import { LitElement, html, css } from "lit"
 import { ZumeWizardModules, ZumeWizardSteps, ZumeWizardStepsConnectedFields as ConnectedFields, ZumeWizards } from "./wizard-constants"
 import { WizardStateManager } from "./wizard-state-manager"
 
@@ -36,7 +36,6 @@ export class Wizard extends LitElement {
         window.addEventListener('popstate', this._handleHistoryPopState)
 
         this.stateManager = new WizardStateManager()
-        this.stateManager.clear()
     }
 
     render() {
@@ -61,17 +60,18 @@ export class Wizard extends LitElement {
         return html`
         <div class="container center">
 
-            <header class="ms-auto p-2">
-                ${this.skipButton()}
+            <header class="py-1 px--4 w-100 position-relative">
+                <div class="text-end" id="wizard-skip-button">${this.skipButton()}</div>
+                <div class="center">${this.stepCounter()}</div>
             </header>
 
-            <div>
+            <article class="container-xsm center text-center">
                 ${this.currentStep()}
-            </div>
+            </article>
 
-            <div class="stack-1 | fixed bottom left right p-2">
+            <footer class="stack-1 | fixed bottom left right p-2">
                 ${this.footer()}
-            </div>
+            </footer>
 
         </div>
         `
@@ -80,7 +80,7 @@ export class Wizard extends LitElement {
     currentStep() {
         const currentStep = this.steps[this.stepIndex]
 
-        return currentStep.component(currentStep, this.t)
+        return currentStep.component(currentStep, this.t, 'w-100')
     }
 
     skipButton() {
@@ -105,20 +105,21 @@ export class Wizard extends LitElement {
         `
     }
 
-    footer() {
-        const isLastStep = this.stepIndex === this.steps.length - 1
-
-        return isLastStep ? this.finishButton() : html`
-        <div class="center">
+    stepCounter() {
+        return html`
             <div class="cluster">
                 ${this.steps.map((step, i) => {
                     const completed = i <= this.stepIndex
                     return html`<div class="step-circle ${completed ? 'complete' : ''}"></div>`
                 })}
             </div>
-        </div>
-
         `
+    }
+
+    footer() {
+        const isLastStep = this.stepIndex === this.steps.length - 1
+
+        return isLastStep ? this.finishButton() : ''
     }
 
     _onBack() {
@@ -156,7 +157,13 @@ export class Wizard extends LitElement {
 
         const url = new URL( this.finishUrl )
 
-        url.searchParams.set( 'completed', this.type )
+        if ( this.type === ZumeWizards.checkin ) {
+            /* TODO: after checkin send them to the HOST dashboard */
+            url.searchParams.set( 'completed', this.type )
+        } else {
+            url.searchParams.set( 'completed', this.type )
+        }
+
         window.location.href = url
     }
 
@@ -202,7 +209,7 @@ export class Wizard extends LitElement {
             this._gotoStep(0, false)
         }
 
-        let currentModule = 's'
+        let currentModule = ''
         let beginningOfModule = 0
         this.steps.forEach(({slug, module}, i) => {
             if ( currentModule !== module ) {
@@ -211,11 +218,10 @@ export class Wizard extends LitElement {
             }
 
             if ( path === slug ) {
-                if (goToBeginningOfModule === true) {
-                    this._gotoStep(beginningOfModule, false)
+                if (goToBeginningOfModule === true && this.stateManager.isDataStale()) {
+                    this._gotoStep(beginningOfModule)
                     return
                 }
-
 
                 this._gotoStep(i, false)
             }
@@ -253,54 +259,64 @@ export class Wizard extends LitElement {
                 steps: [
                     {
                         slug: 'make-a-plan',
-                        component: (step) => html`
-                            <h1>Make a plan</h1>
-                            <p>We would like to help you succeed with this training.</p>
-                            <p>Making a plan can help you with success.</p>
-                            <p>Answering the following questions will help us make you a plan.</p>
-                            <p>Or you can skip if you prefer</p>
-                            <button class="btn" @click=${step.doneHandler}>OK</button>
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>Make a plan</h2>
+                                <p>We would like to help you succeed with this training.</p>
+                                <p>Making a plan can help you with success.</p>
+                                <p>Answering the following questions will help us make you a plan.</p>
+                                <p>Or you can skip if you prefer</p>
+                                <button class="btn" @click=${step.doneHandler}>OK</button>
+                            </div>
                         `
                     },
                     {
                         slug: 'how-many-sessions',
-                        component: (step) => html`
-                            <h1>Will you do 1 or 2 hour training sessions?</h1>
-                            <div class="stack">
-                                <button class="btn" @click=${step.doneHandler}>1 hour (20 sessions)</button>
-                                <button class="btn" @click=${step.doneHandler}>2 hour (10 sessions)</button>
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>Will you do 1 or 2 hour training sessions?</h2>
+                                <div class="stack">
+                                    <button class="btn" @click=${step.doneHandler}>1 hour (20 sessions)</button>
+                                    <button class="btn" @click=${step.doneHandler}>2 hour (10 sessions)</button>
+                                </div>
                             </div>
                         `
                     },
                     {
                         slug: 'what-time-of-day',
-                        component: (step) => html`
-                            <h1>What time of day?</h1>
-                            <div class="stack">
-                                <button class="btn" @click=${step.doneHandler}>Morning</button>
-                                <button class="btn" @click=${step.doneHandler}>Afternoon</button>
-                                <button class="btn" @click=${step.doneHandler}>Evening</button>
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>What time of day?</h2>
+                                <div class="stack">
+                                    <button class="btn" @click=${step.doneHandler}>Morning</button>
+                                    <button class="btn" @click=${step.doneHandler}>Afternoon</button>
+                                    <button class="btn" @click=${step.doneHandler}>Evening</button>
+                                </div>
                             </div>
                         `
                     },
                     {
                         slug: 'what-time-interval',
-                        component: (step) => html`
-                            <h1>How often will you meet?</h1>
-                            <div class="stack">
-                                <button class="btn" @click=${step.doneHandler}>Every day</button>
-                                <button class="btn" @click=${step.doneHandler}>Once a week</button>
-                                <button class="btn" @click=${step.doneHandler}>Twice a month</button>
-                                <button class="btn" @click=${step.doneHandler}>Once a month</button>
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>How often will you meet?</h2>
+                                <div class="stack">
+                                    <button class="btn" @click=${step.doneHandler}>Every day</button>
+                                    <button class="btn" @click=${step.doneHandler}>Once a week</button>
+                                    <button class="btn" @click=${step.doneHandler}>Twice a month</button>
+                                    <button class="btn" @click=${step.doneHandler}>Once a month</button>
+                                </div>
                             </div>
                         `
                     },
                     {
                         slug: 'when-will-you-start',
-                        component: (step) => html`
-                            <h1>When do you plan to start?</h1>
-                            <input type="date">
-                            <button class="btn" @click=${step.doneHandler}>Done</button>
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>When do you plan to start?</h2>
+                                <input type="date">
+                                <button class="btn" @click=${step.doneHandler}>Done</button>
+                            </div>
                         `
                     },
                 ],
@@ -426,6 +442,11 @@ export class Wizard extends LitElement {
                     ZumeWizardSteps.joinFriendsPlan,
                 ])
             },
+            [ZumeWizards.checkin]: {
+                [ZumeWizardModules.checkin]: this.makeModule([
+                    ZumeWizardSteps.checkinSubmit,
+                ])
+            },
         }
 
         return wizards[this.type]
@@ -449,12 +470,13 @@ window.customElements.define( 'zume-wizard', Wizard )
 const wizardSteps = {
     [ZumeWizardSteps.updateName]: {
         slug: ZumeWizardSteps.updateName,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <complete-profile
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
+                .t="${t.complete_profile}"
                 variant=${ZumeWizardSteps.updateName}
                 @done-step=${step.doneHandler}
                 value=${JSON.stringify(step.value)}
@@ -463,12 +485,13 @@ const wizardSteps = {
     },
     [ZumeWizardSteps.updateLocation]: {
         slug: ZumeWizardSteps.updateLocation,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <complete-profile
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
+                .t="${t.complete_profile}"
                 variant=${ZumeWizardSteps.updateLocation}
                 @done-step=${step.doneHandler}
                 value=${JSON.stringify(step.value)}
@@ -477,12 +500,13 @@ const wizardSteps = {
     },
     [ZumeWizardSteps.updatePhone]: {
         slug: ZumeWizardSteps.updatePhone,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <complete-profile
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.complete_profile)}"
+                .t="${t.complete_profile}"
                 variant=${ZumeWizardSteps.updatePhone}
                 @done-step=${step.doneHandler}
                 value=${JSON.stringify(step.value)}
@@ -491,60 +515,65 @@ const wizardSteps = {
     },
     [ZumeWizardSteps.contactPreferences]: {
         slug: ZumeWizardSteps.contactPreferences,
-        component: (step, t) => html`
-            <get-coach
+        component: (step, t, classes) => html`
+            <request-coach
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
+                .t="${t.get_a_coach}"
                 variant=${ZumeWizardSteps.contactPreferences}
                 @done-step=${step.doneHandler}
-            ></get-coach>
+            ></request-coach>
         `
     },
     [ZumeWizardSteps.languagePreferences]: {
         slug: ZumeWizardSteps.languagePreferences,
-        component: (step, t) => html`
-            <get-coach
+        component: (step, t, classes) => html`
+            <request-coach
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
+                .t="${t.get_a_coach}"
                 variant=${ZumeWizardSteps.languagePreferences}
                 @done-step=${step.doneHandler}
-            ></get-coach>
+            ></request-coach>
         `
     },
     [ZumeWizardSteps.howCanWeServe]: {
         slug: ZumeWizardSteps.howCanWeServe,
-        component: (step, t) => html`
-            <get-coach
+        component: (step, t, classes) => html`
+            <request-coach
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
+                .t="${t.get_a_coach}"
                 variant=${ZumeWizardSteps.howCanWeServe}
                 @done-step=${step.doneHandler}
-            ></get-coach>
+            ></request-coach>
         `
     },
     [ZumeWizardSteps.connectingToCoach]: {
         slug: ZumeWizardSteps.connectingToCoach,
-        component: (step, t) => html`
-            <get-coach
+        component: (step, t, classes) => html`
+            <request-coach
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
-                t="${JSON.stringify(t.get_a_coach)}"
+                .t="${t.get_a_coach}"
                 variant=${ZumeWizardSteps.connectingToCoach}
                 @done-step=${step.doneHandler}
-            ></get-coach>
+            ></request-coach>
         `
     },
     [ZumeWizardSteps.inviteFriends]: {
         slug: ZumeWizardSteps.inviteFriends,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <invite-friends
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
@@ -554,8 +583,9 @@ const wizardSteps = {
     },
     [ZumeWizardSteps.joinTraining]: {
         slug: ZumeWizardSteps.joinTraining,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <join-training
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
@@ -566,26 +596,41 @@ const wizardSteps = {
     },
     [ZumeWizardSteps.joinFriendsPlan]: {
         slug: ZumeWizardSteps.joinFriendsPlan,
-        component: (step, t) => html`
-            <join-friends-plan
+        component: (step, t, classes) => html`
+            <join-friends-training
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
                 .t=${t.join_training}
                 @done-step=${step.doneHandler}
-            ></join-friends-plan>
+            ></join-friends-training>
         `
     },
     [ZumeWizardSteps.connectToFriend]: {
         slug: ZumeWizardSteps.connectToFriend,
-        component: (step, t) => html`
+        component: (step, t, classes) => html`
             <connect-friend
+                class=${classes}
                 name=${step.slug}
                 module=${step.module}
                 ?skippable=${step.skippable}
                 .t=${t.connect_friend}
                 @done-step=${step.doneHandler}
             ></connect-friend>
+        `
+    },
+    [ZumeWizardSteps.checkinSubmit]: {
+        slug: ZumeWizardSteps.checkinSubmit,
+        component: (step, t, classes) => html`
+            <session-checkin
+                class=${classes}
+                name=${step.slug}
+                module=${step.module}
+                ?skippable=${step.skippable}
+                .t=${t.checkin}
+                @done-step=${step.doneHandler}
+            ></session-checkin>
         `
     }
 }

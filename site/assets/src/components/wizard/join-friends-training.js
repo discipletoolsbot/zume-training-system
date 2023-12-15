@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 
-export class JoinTraining extends LitElement {
+export class JoinFriendsTraining extends LitElement {
 
     static get properties() {
         return {
@@ -52,7 +52,7 @@ export class JoinTraining extends LitElement {
         const code = url.searchParams.get('code')
         this.code = code
 
-        makeRequest( 'POST', 'connect/public-plan', { code: code }, 'zume_system/v1' )
+        makeRequest( 'POST', 'connect/plan', { code: code }, 'zume_system/v1' )
             .then( ( data ) => {
                 console.log(data)
 
@@ -104,4 +104,4 @@ export class JoinTraining extends LitElement {
         return this
     }
 }
-customElements.define('join-training', JoinTraining);
+customElements.define('join-friends-training', JoinFriendsTraining);

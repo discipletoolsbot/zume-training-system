@@ -77,7 +77,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     }
 
     public function header_style(){
-        global $zume_user_profile;
+        global $zume_user_profile, $zume_languages_by_code;
         ?>
         <script>
             jQuery(document).ready(function(){
@@ -90,6 +90,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
+                'languages' => $zume_languages_by_code,
                 'translations' => [
                     'bad_wizard' => __( 'Bad Wizard', 'zume' ),
                     'found_bad_wizard' => __( 'You have fallen in with some very bad wizards!', 'zume' ),
@@ -117,6 +118,9 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'text' => __( 'Text', 'zume' ),
                         'phone' => __( 'Phone', 'zume' ),
                         'whatsapp' => __( 'Whatsapp', 'zume' ),
+                        'signal' => __( 'Signal', 'zume' ),
+                        'telegram' => __( 'Telegram', 'zume' ),
+                        'messenger' => __( 'Facebook Messenger', 'zume' ),
                         'language_preference_question' => __( 'What is your language preference?', 'zume' ),
                         'language_preference' => __( 'Language', 'zume' ),
                         'how_can_we_serve' => __( 'How can we serve you?', 'zume' ),
@@ -129,7 +133,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'missing_response' => __( 'Please give a response to this question', 'zume' ),
                         'connect_success' => __( 'Request Submitted, we will do our best to connect you with a coach near you.', 'zume' ),
                         'connect_fail' => __( 'Sorry. We were unable to submit your request. Please try again later.', 'zume' ),
-                        'already_coached' => __( 'You already have a coach.', 'zume' ),
+                        'already_coached' => __( 'You have already requested a coach', 'zume' ),
                         'error_connecting' => __( 'Error connecting with a coach', 'zume' ),
                         'connecting_coach_title' => __( 'Connecting you to a Coach', 'zume' ),
                         'please_wait' => __( 'Please wait while we connect you', 'zume' ),
@@ -137,7 +141,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                     'join_training' => [
                         'title' => __( 'Joining Plan', 'zume' ),
                         'please_wait' => __( 'Please wait while we connect you', 'zume' ),
-                        'link_broken' => __( 'The training link is broken. Please try again.', 'zume' ),
+                        'broken_link' => __( 'The training link is broken. Please try again.', 'zume' ),
                         'success' => __( 'Successfully joined training %s', 'zume' ),
                         'error' => __( 'Something went wrong while joining the plan', 'zume' ),
                     ],
@@ -148,7 +152,18 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                         'success' => __( 'Successfully connected with friend %s', 'zume' ),
                         'error' => __( 'Something went wrong while connecting with friend', 'zume' ),
                     ],
-                    'share' => Zume_Training_Share::translations(),
+                    'checkin' => [
+                        'title' => __( 'Checking in', 'zume' ),
+                        'please_wait' => __( 'Please wait while we connect you', 'zume' ),
+                        'broken_link' => __( 'The checkin link is broken. Please try again.', 'zume' ),
+                        'success' => __( 'Successfully checked in', 'zume' ),
+                        'error' => __( 'Something went wrong while checking in', 'zume' ),
+                    ],
+                    'share' => array_merge( [
+                        'title' => __( 'Invite your friends to join your training', 'zume' ),
+                        'share_with_friends' => __( 'Share the link below with your friends so that they can join your training.', 'zume' ),
+                        'join_my_plan' => __( 'Join my zume plan', 'zume' ),
+                    ], Zume_Training_Share::translations() ),
                 ],
             ]) ?>][0]
             const zumeProfile = [<?php echo json_encode([

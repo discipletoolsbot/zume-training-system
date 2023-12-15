@@ -29,6 +29,7 @@
 @import 'blocks/login';
 @import 'blocks/stories';
 @import 'blocks/accordian';
+@import 'blocks/wizard';
 
 html {
     font-size: 18px;
@@ -91,7 +92,21 @@ a, a:visited {
   margin-inline: auto;
   position: relative;
   width: calc(70% + ( 30 / 100 * $min-width ) - ( 2 * $small-margin ) );
-  max-width: $break-lg;
+  max-width: $width-lg;
+}
+
+.container-sm {
+  margin-inline: auto;
+  position: relative;
+  width: calc(50% + ( 50 / 100 * $min-width ) - ( 2 * $small-margin ) );
+  max-width: $width-md;
+}
+
+.container-xsm {
+  margin-inline: auto;
+  position: relative;
+  width: calc(30% + ( 70 / 100 * $min-width ) - ( 2 * $small-margin ) );
+  max-width: $width-sm;
 }
 
 .container-xsm {
@@ -498,15 +513,6 @@ a, a:visited {
 
 @media (min-width: $break-lg) {
 
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .align-items {
-        align-items: center;
-    }
-
     .nav-toggle {
         display: none;
     }
@@ -516,19 +522,6 @@ a, a:visited {
 
     .nav {
         display: flex;
-    }
-
-    .nav__list {
-        margin: 0;
-    }
-
-    .nav__item {
-        float: left;
-        margin-left: 1em;
-    }
-
-    .nav__link--button {
-        display: inline;
     }
 
 }

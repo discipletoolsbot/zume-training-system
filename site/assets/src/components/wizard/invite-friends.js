@@ -40,11 +40,9 @@ export class InviteFriends extends LitElement {
     render() {
         return html`
             <div class="center stack">
-                <h1>Invite your friends to join your training</h1>
-                <p>Share the link below with your friends so that they can join your training.</p>
-                <share-links url=${this.url} title="Join my zume plan" .t=${this.t}></share-links>
-                <p>Alternatively your friends can scan this QR code in order to join.</p>
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${this.url}" alt="" />
+                <h2>${this.t.title}</h2>
+                <p>${this.t.share_with_friends}</p>
+                <share-links url=${this.url} title="${this.t.join_my_plan}" .t=${this.t}></share-links>
             </div>
         `
     }
