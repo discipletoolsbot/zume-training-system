@@ -354,7 +354,7 @@ export class Wizard extends LitElement {
                 const connectedField = ConnectedFields[slug]
                 let connectedFieldValue = null
                 if ( connectedField && this.user) {
-                    if ( connectedField.testExistance(this.user[connectedField.field]) ) {
+                    if ( connectedField.testExistance(this.user[connectedField.field], this.user) ) {
                         return
                     }
                     connectedFieldValue = this.user[connectedField.field]

@@ -33,7 +33,7 @@ export const ZumeWizardSteps = {
 export const ZumeWizardStepsConnectedFields = {
     [ZumeWizardSteps.updateName]: {
         field: 'name',
-        testExistance: () => false
+        testExistance: (field, profile) => profile.has_set_name
     },
     [ZumeWizardSteps.updateLocation]: {
         field: 'location',
