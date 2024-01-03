@@ -73,7 +73,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     }
 
     public function enqueue_scripts() {
-        wp_enqueue_script( 'zume-profile-utilities', trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js', array(), filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) . 'profile-utilities.js' ), true );
+        wp_enqueue_script( 'zume-profile-utilities', trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js', array(), filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ), true );
     }
 
     public function header_style(){
