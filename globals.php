@@ -44,13 +44,16 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // build user profile elements
         $name = $wpdb->get_var( $wpdb->prepare( 'SELECT post_title FROM wp_posts WHERE ID = %d', $contact_id ) );
+        $has_set_name = !empty( zume_get_user_log( $user_id, 'system', 'set_profile_name' ) );
         $email = $contact_meta['user_email'] ?? '';
         $phone = $contact_meta['user_phone'] ?? '';
         $timezone = $contact_meta['user_timezone'] ?? '';
         $user_friend_key = $contact_meta['user_friend_key'] ?? '';
+        $user_preferred_language = $contact_meta['user_preferred_language'] ?? '';
         $user_ui_language = $contact_meta['user_ui_language'] ?? '';
         $language = zume_get_user_language( $user_id );
         $location = zume_get_user_location( $user_id );
+        $contact_preference = get_post_meta( $contact_id, 'user_contact_preference' );
 
         // get coaching connections
         $coaches = [];
@@ -59,7 +62,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 FROM wp_3_postmeta
                 WHERE meta_key = 'trainee_user_id'
                   AND meta_value = %s",
-            $user_id ) );
+        $user_id ) );
         $coach_list = $wpdb->get_results( $wpdb->prepare(
             "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
                 FROM wp_3_p2p p2
@@ -67,7 +70,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 LEFT JOIN wp_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
                 WHERE p2p_from = %d
                   AND p2p_type = 'contacts_to_contacts'",
-            $coaching_contact_id ), ARRAY_A );
+        $coaching_contact_id ), ARRAY_A );
         if ( ! empty( $coach_list ) ) {
             foreach ( $coach_list as $key => $value ) {
                 $coaches[$value['user_id']] = [];
@@ -82,6 +85,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
             global $zume_user_profile; // sets a global variable for user_profile
             $zume_user_profile = [
                 'name' => $name,
+                'has_set_name' => $has_set_name,
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
@@ -93,12 +97,15 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
                 'ui_language' => $user_ui_language,
+                'preferred_language' => $user_preferred_language,
+                'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
             ];
             return $zume_user_profile;
         } else {
             // if user is not current user, return array
             return [
                 'name' => $name,
+                'has_set_name' => $has_set_name,
                 'user_id' => $user_id,
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
@@ -110,6 +117,8 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
                 'ui_language' => $user_ui_language,
+                'preferred_language' => $user_preferred_language,
+                'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
             ];
         }
     }
@@ -192,22 +201,23 @@ if ( ! function_exists( 'zume_get_user_language' ) ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        global $zume_languages_by_locale;
-        if ( empty( $zume_languages_by_locale ) ) {
-            $zume_languages_by_locale = zume_languages( 'locale' );
+        global $zume_languages_by_code;
+        if ( empty( $zume_languages_by_code ) ) {
+            $zume_languages_by_code = zume_languages( 'code' );
         }
 
-        $locale = get_user_meta( $user_id, 'locale', true );
-        if ( $user_id == get_current_user_id() && empty( $locale ) ) {
-            update_user_meta( $user_id, 'locale', zume_current_language() );
-            $locale = zume_current_language();
+        $contact_id = zume_get_user_contact_id( $user_id );
+        $language_code = get_post_meta( $contact_id, 'user_ui_language', true );
+        if ( $user_id == get_current_user_id() && empty( $language_code ) ) {
+            $language_code = zume_current_language();
+            update_post_meta( $contact_id, 'user_ui_language', $language_code );
         }
 
-        if ( ! $locale ) {
-            $locale = 'en';
+        if ( ! $language_code ) {
+            $language_code = 'en';
         }
 
-        return isset( $zume_languages_by_locale[$locale] ) ? $zume_languages_by_locale[$locale] : $zume_languages_by_locale['en'];
+        return isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : $zume_languages_by_code['en'];
     }
 }
 if ( ! function_exists( 'zume_get_user_location' ) ) {
@@ -567,14 +577,32 @@ if ( ! function_exists( 'zume_get_user_id_by_contact_id' ) ) {
     }
 }
 if ( ! function_exists( 'zume_get_user_log' ) ) {
-    function zume_get_user_log( $user_id ) {
+    /**
+     * Get the user's log. $type and $subtype optionally filter the logs
+     * down to the that type and subtype of log
+     *
+     * @param int $user_id
+     * @param string $type
+     * @param string $subtype
+     */
+    function zume_get_user_log( $user_id, $type = null, $subtype = null ) {
         global $wpdb;
-        $results = $wpdb->get_results( $wpdb->prepare(
-            "SELECT CONCAT( r.type, '_', r.subtype ) as log_key, r.*
-                FROM wp_dt_reports r
-                WHERE r.user_id = %s
-                AND r.post_type = 'zume'
-                ", $user_id ), ARRAY_A );
+
+        $sql = $wpdb->prepare( "SELECT CONCAT( r.type, '_', r.subtype ) as log_key, r.*
+            FROM wp_dt_reports r
+            WHERE r.user_id = %s
+            AND r.post_type = 'zume'
+        ", $user_id );
+
+        if ( !empty( $type ) ) {
+            $sql .= $wpdb->prepare( "AND r.type = %s\n", $type );
+        }
+
+        if ( !empty( $subtype ) ) {
+            $sql .= $wpdb->prepare( "AND r.subtype = %s", $subtype );
+        }
+
+        $results = $wpdb->get_results( $sql, ARRAY_A );
 
         if ( is_array( $results ) ) {
             return $results;
@@ -4776,8 +4804,12 @@ class Zume_Global_Endpoints {
 
         global $wpdb;
         $params = dt_recursive_sanitize_array( $request->get_params() );
-        $user_id = $params['user_id'];
-        if ( empty( $user_id ) ) {
+        if ( isset( $params['user_id'] ) ) {
+            $user_id = zume_validate_user_id_request( $params['user_id'] );
+            if ( is_wp_error( $user_id ) ) {
+                return $user_id;
+            }
+        } else {
             $user_id = get_current_user_id();
         }
         $contact_id = zume_get_user_contact_id( $user_id );
@@ -4787,11 +4819,11 @@ class Zume_Global_Endpoints {
             'post_id' => $contact_id,
             'meta_key' => 'tasks',
             'meta_value' => maybe_serialize([
-                'note' => $params['note'],
-                'question' => $params['question'],
-                'answer' => $params['answer'],
+                'note' => $params['note'] ?? '',
+                'question' => $params['question'] ?? '',
+                'answer' => $params['answer'] ?? '',
             ]),
-            'date' => $params['date'],
+            'date' => $params['date'] ?? date( 'Y-m-d H:i:s' ),
             'category' => $params['category'] ?? 'custom',
         ];
 
@@ -6045,11 +6077,14 @@ class Zume_System_Log_API
         }
 
         if ( $highest_logged_stage < $current_stage ) {
-            $report['type'] = 'stage';
-            $report['subtype'] = 'current_level';
-            $report['value'] = $current_stage;
-            $report['hash'] = hash('sha256', maybe_serialize( $report )  . time() );
-            $added_log[] = self::insert( $report, true, false );
+
+            for ( $i = $current_stage + 1; $i <= $highest_logged_stage; $i++ ) {
+                $report['type'] = 'stage';
+                $report['subtype'] = 'current_level';
+                $report['value'] = $i;
+                $report['hash'] = hash('sha256', maybe_serialize( $report )  . time() );
+                $added_log[] = self::insert( $report, true, false );
+            }
         }
 
         return $added_log;
