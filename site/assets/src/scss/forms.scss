@@ -40,3 +40,7 @@
 .form-group > * + * {
     margin-top: spacing(-1);
 }
+
+[type=checkbox], [type=file], [type=radio] {
+    margin-bottom: 0;
+}

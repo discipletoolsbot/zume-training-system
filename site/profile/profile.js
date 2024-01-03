@@ -3,10 +3,10 @@ const nameInput = document.getElementById('full_name')
 const phoneInput = document.getElementById('phone')
 const emailInput = document.getElementById('email')
 const cityInput = document.getElementById('city')
-const uiLanguageInput = document.getElementById('ui-language')
+const prefferedLanguageInput = document.getElementById('preferred-language')
 const addressResultsContainer = document.getElementById('address_results')
 
-const old_ui_language = uiLanguageInput.value
+const old_preferred_language = prefferedLanguageInput.value
 
 profileForm.addEventListener( 'submit', submitProfileForm )
 function submitProfileForm(e) {
@@ -15,13 +15,13 @@ function submitProfileForm(e) {
     const name = nameInput.value
     const email = emailInput.value
     const phone = phoneInput.value
-    const ui_language = uiLanguageInput.value
+    const preferred_language = prefferedLanguageInput.value
 
     const data = {
       name,
       phone,
       email,
-      ui_language,
+      preferred_language,
     }
 
     data.location_grid_meta = getLocationGridFromMapbox(zumeProfile.mapbox_selected_id, zumeProfile.profile.location)
@@ -48,12 +48,6 @@ function submitProfileForm(e) {
     .finally(() => {
         submitButton.removeAttribute('disabled')
         loadingSpinner.classList.remove('active')
-
-        /* if the language was changed, trigger a refresh */
-        if ( ui_language !== old_ui_language ) {
-            window.SHAREDFUNCTIONS.setCookie( zumeProfile.language_cookie, ui_language, '/', 365 )
-            window.location.reload()
-        }
     })
 }
 

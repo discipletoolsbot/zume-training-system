@@ -44,8 +44,16 @@ class Zume_Get_A_Coach_Endpoints
             }
         }
 
+        if ( !isset( $params['data'] ) ) {
+            return new WP_Error( 'no_data', 'No data provided', array( 'status' => 400 ) );
+        }
+
         // create coaching request
-        $coaching_result = self::register_request_to_coaching( $params['user_id'] );
+        $coaching_result = self::register_request_to_coaching( $params['user_id'], $params['data'] );
+
+        if ( is_wp_error( $coaching_result ) ) {
+            return $coaching_result;
+        }
 
         // log coaching request
         $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
@@ -56,8 +64,8 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id ) {
-        return self::manage_user_coaching( $user_id );
+    public static function register_request_to_coaching( $user_id, $data ) {
+        return self::manage_user_coaching( $user_id, null, $data );
     }
 
     public static function connect_user_to_coach( $user_id, $coach_id ) {
@@ -73,7 +81,7 @@ class Zume_Get_A_Coach_Endpoints
      * @param int $user_id
      * @param int $coach_id
      */
-    private static function manage_user_coaching( $user_id, $coach_id = null )
+    private static function manage_user_coaching( $user_id, $coach_id = null, $data = [] )
     {
         $profile = zume_get_user_profile( $user_id );
 
@@ -81,6 +89,34 @@ class Zume_Get_A_Coach_Endpoints
 
         if ( $coaching_contact_id && $coach_id === null ) {
             return new WP_Error( 'already_has_coach', 'User has already requested a coach', array( 'status' => 400 ) );
+        }
+
+        $preferred_language = empty( $data ) ? $profile['preferred_language'] : $data['preferred-language']['value'];
+
+        $preferred_language = empty( $preferred_language ) ? 'en' : $preferred_language;
+
+        if ( !empty( $data ) ) {
+            $fields['preferred_language'] = $preferred_language;
+
+            if ( isset( $data['contact-preferences'] ) ) {
+                $contact_preferences = [];
+
+                foreach ( $data['contact-preferences'] as $preference => $value ) {
+                    if ( $value === 'false' ) {
+                        continue;
+                    }
+                    $contact_preferences[] = [ 'value' => $preference ];
+                }
+
+                $fields['contact_preference'] = [
+                    'values' => $contact_preferences,
+                    'force_values' => true,
+                ];
+            }
+
+            $result = Zume_Profile_Model::update( $fields );
+
+
         }
 
         $fields = [
@@ -91,7 +127,7 @@ class Zume_Get_A_Coach_Endpoints
                     [ 'value' => 'zume_training' ],
                 ],
             ],
-            'language_preference' => $profile['language']['code'],
+            'language_preference' => $preferred_language,
             'trainee_user_id' => $profile['user_id'],
             'trainee_contact_id' => $profile['contact_id'],
         ];
@@ -121,7 +157,7 @@ class Zume_Get_A_Coach_Endpoints
         $site = Site_Link_System::get_site_connection_vars( self::SITE_CONNECTION_POST_ID );
         if ( ! $site ) {
             dt_write_log( __METHOD__ . ' FAILED TO GET SITE LINK TO GLOBAL ' );
-            return false;
+            return new WP_Error( 'site_link_failed', 'Failed to link to coaching site ', array( 'status' => 400 ) );
         }
 
         $args = [
@@ -143,12 +179,47 @@ class Zume_Get_A_Coach_Endpoints
         }
 
         $result = wp_remote_post( $url, $args );
-        if ( is_wp_error( $result ) ) {
+        if ( is_wp_error( $result ) || $result['response']['code'] !== 200 ) {
             dt_write_log( __METHOD__ . " FAILED TO $method COACHING CONTACT FOR " . $profile['name'] );
-            return false;
+            return new WP_Error( 'coach_request_failed', "Failed to $method coaching contact", array( 'status' => 400 ) );
         }
 
         $body = json_decode( $result['body'], true );
+
+        if ( !empty( $data ) && isset( $data['how-can-we-serve'] ) ) {
+            $coaching_needs = [
+                'coaching-request' => '&nbsp;&nbsp;* Someone to coach them',
+                'technical-assistance' => '&nbsp;&nbsp;* Technical assistance',
+                'question-about-implementation' => '&nbsp;&nbsp;* Help with implementing the training',
+                'question-about-content' => '&nbsp;&nbsp;* Help with the course content',
+                'help-with-group' => '&nbsp;&nbsp;* Help with what to do after starting a group',
+            ];
+
+
+            $comments = "This contact is requesting:\n";
+            foreach ( $data['how-can-we-serve'] as $key => $value ) {
+                if ( $value === 'false' ) {
+                    continue;
+                }
+
+                $comment = $coaching_needs[$key];
+                $comments .= "$comment\n";
+            }
+
+            $fields = [
+                'comment' => $comments,
+            ];
+
+            $comment_args = $args;
+            $comment_args['body'] = json_encode( $fields );
+
+            $url = 'https://' . trailingslashit( $site['url'] ) . 'wp-json/dt-posts/v2/contacts/' . $body['ID'] . '/comments';
+
+            $result = wp_remote_post( $url, $comment_args );
+            if ( is_wp_error( $result ) ) {
+                dt_write_log( __METHOD__ . ' FAILED TO ADD COMMENTS TO COACHING CONTACT FOR ' . $profile['name'] );
+            }
+        }
 
         return $body;
     }

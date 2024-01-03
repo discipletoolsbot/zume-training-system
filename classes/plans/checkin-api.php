@@ -42,7 +42,7 @@ class Zume_Checkin
         // is code valid
         $list = zume_session_alias_keys();
         if ( ! isset( $list[ $params['code'] ] ) ) {
-            return false;
+            return new WP_Error( 'bad_checkin_code', 'Key not found', [ 'status' => 400 ] );
         }
 
         if ( ! isset( $params['user_id'] ) ) {
@@ -54,10 +54,8 @@ class Zume_Checkin
         zume_log_insert( 'training', $list[ $params['code'] ], [ 'user_id' => $user_id ] );
 
         return true;
-
     }
     public static function checkin( $code, $user_id ) {
-
     }
 }
 Zume_Checkin::instance();
@@ -142,14 +140,14 @@ function zume_session_alias_keys( $number_priority = true ) {
         8768 => 'set_b_09', // 20 session 9
         3452 => 'set_b_09',
         8769 => 'set_b_09',
-        5439 => 'set_b_09',
+        5449 => 'set_b_09',
         2347 => 'set_b_10', // 20 session 10
         7655 => 'set_b_10',
         8760 => 'set_b_10',
-        5436 => 'set_b_10',
+        9436 => 'set_b_10',
         7651 => 'set_b_11', // 20 session 11
         1239 => 'set_b_11',
-        5434 => 'set_b_11',
+        9434 => 'set_b_11',
         3453 => 'set_b_11',
         9874 => 'set_b_12', // 20 session 12
         1350 => 'set_b_12',
@@ -168,11 +166,11 @@ function zume_session_alias_keys( $number_priority = true ) {
         1352 => 'set_b_15',
         6784 => 'set_b_15',
         1118 => 'set_b_16', // 20 session 16
-        9871 => 'set_b_16',
+        2871 => 'set_b_16',
         1230 => 'set_b_16',
-        5433 => 'set_b_16',
+        9435 => 'set_b_16',
         1119 => 'set_b_17', // 20 session 17
-        9870 => 'set_b_17',
+        1873 => 'set_b_17',
         4328 => 'set_b_17',
         3454 => 'set_b_17',
         6548 => 'set_b_18', // 20 session 18
@@ -181,20 +179,20 @@ function zume_session_alias_keys( $number_priority = true ) {
         6668 => 'set_b_18',
         7657 => 'set_b_19', // 20 session 19
         4562 => 'set_b_19',
-        5430 => 'set_b_19',
+        1430 => 'set_b_19',
         3336 => 'set_b_19',
-        8767 => 'set_b_20', // 20 session 20
+        2767 => 'set_b_20', // 20 session 20
         1353 => 'set_b_20',
         2340 => 'set_b_20',
-        9876 => 'set_b_20',
-        1354 => 'set_b_20',
+        8876 => 'set_b_20',
+        2354 => 'set_b_20',
     ];
 
     if ( $number_priority ) {
         return $list;
     } else {
         $value_priority = [];
-        foreach( $list as $key => $value ) {
+        foreach ( $list as $key => $value ) {
             if ( ! isset( $value_priority[$value] ) ) {
                 $value_priority[$value] = [];
             }

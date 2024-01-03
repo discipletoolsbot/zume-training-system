@@ -21,7 +21,9 @@ class Zume_Profile_Model {
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';
         $email = isset( $fields['email'] ) ? $fields['email'] : '';
         $location_grid_meta = isset( $fields['location_grid_meta'] ) ? $fields['location_grid_meta'] : [];
+        $preferred_language = isset( $fields['preferred_language'] ) ? $fields['preferred_language'] : '';
         $ui_language = isset( $fields['ui_language'] ) ? $fields['ui_language'] : '';
+        $contact_preference = isset( $fields['contact_preference'] ) ? $fields['contact_preference'] : [];
 
         $user_updates = [];
         $updates = [];
@@ -52,6 +54,14 @@ class Zume_Profile_Model {
             $updates['user_ui_language'] = $ui_language;
         }
 
+        if ( !empty( $preferred_language ) ) {
+            $updates['user_preferred_language'] = $preferred_language;
+        }
+
+        if ( !empty( $contact_preference ) ) {
+            $updates['user_contact_preference'] = $contact_preference;
+        }
+
         $contact_id = zume_get_user_contact_id( $user_id );
 
         if ( !empty( $user_updates ) ) {
@@ -69,11 +79,10 @@ class Zume_Profile_Model {
             if ( is_wp_error( $contact ) ) {
                 return $contact;
             }
+
+            self::log_setting_of_profile( $user_id );
         }
 
-        if ( self::is_profile_set( $user_id ) ) {
-            zume_log_insert( 'system', 'set_profile' );
-        }
 
         return [
             'location_grid_meta' => $contact['location_grid_meta'],
@@ -82,20 +91,19 @@ class Zume_Profile_Model {
         ];
     }
 
-    public static function is_profile_set( $user_id ): bool {
+    public static function log_setting_of_profile( $user_id ) {
         $profile = zume_get_user_profile( $user_id );
-        if ( empty( $profile['name'] ) ) {
-            return false;
+
+        if ( !empty( $profile['name'] ) ) {
+            zume_log_insert( 'system', 'set_profile_name' );
         }
-        if ( empty( $profile['email'] ) ) {
-            return false;
+
+        if ( !empty( $profile['phone'] ) ) {
+            zume_log_insert( 'system', 'set_profile_phone' );
         }
-        if ( empty( $profile['phone'] ) ) {
-            return false;
+
+        if ( $profile['location']['ip'] !== 'ip' ) {
+            zume_log_insert( 'system', 'set_profile_location' );
         }
-        if ( $profile['location']['source'] === 'ip' ) {
-            return false;
-        }
-        return true;
     }
 }

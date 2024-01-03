@@ -161,7 +161,7 @@ class Zume_Connect_Endpoints
 
         $code = $params['code'];
 
-        $response = self::connect_to_plan( $code );
+        $response = self::connect_to_plan( $code, true );
 
         if ( is_wp_error( $response ) ) {
             return $response;
@@ -201,7 +201,7 @@ class Zume_Connect_Endpoints
         ];
     }
 
-    public static function connect_to_plan( $key ) {
+    public static function connect_to_plan( $key, $public = false ) {
         // does key exist
         // if so, then connect current user with friend
         $plan_post_id = self::test_join_key( $key );
@@ -228,7 +228,9 @@ class Zume_Connect_Endpoints
             return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
         }
 
-        zume_log_insert( 'system', 'plan_created', [ 'user_id' => $user_id ], true );
+        $sub_type = $public === true ? 'joined_online_training' : 'plan_created';
+
+        zume_log_insert( 'system', $sub_type, [ 'user_id' => $user_id ], true );
 
         $name = __( 'the plan', 'zume' );
         foreach ( $result['zume_plans'] as $plan ) {

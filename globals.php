@@ -611,6 +611,7 @@ if ( ! function_exists( 'zume_get_user_log' ) ) {
         }
     }
 }
+
 if ( ! function_exists( 'zume_languages' ) ) {
     function zume_languages( $type = 'code' ) {
         global $zume_languages_by_code, $zume_languages_by_locale;
@@ -5259,6 +5260,26 @@ class Zume_System_Log_API
                 $added_log[] = self::insert( $data_item, true, false );
             }
         }
+
+        /**
+         * business logic:
+         * - if a user completes all parts of their profile, create a set_profile log
+         */
+        if ( 'system' === $type & str_contains( $subtype, 'set_profile_' ) ) {
+            if (
+                self::_already_logged( $log, 'system', 'set_profile_name' ) &&
+                self::_already_logged( $log, 'system', 'set_profile_phone' ) &&
+                self::_already_logged( $log, 'system', 'set_profile_location' ) &&
+                self::_needs_to_be_logged( $log, 'system', 'set_profile' )
+            ) {
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'set_profile';
+                $data_item['hash'] = hash('sha256', maybe_serialize( $data_item )  . time() );
+                $added_log[] = self::insert( $data_item, true, false );
+            }
+        }
+
         /**
          * business logic:
          * - if a user submits a practitioner report, create a first_practitioner_report log entry if needed
@@ -5933,7 +5954,6 @@ class Zume_System_Log_API
             $added_log[] = self::insert( $data_item, true, false );
         }
 
-
         return $added_log;
     }
     public static function insert( array $args, bool $save_hash = true, bool $duplicate_check = true ) {
@@ -6061,6 +6081,9 @@ class Zume_System_Log_API
             }
         }
         return $already_logged;
+    }
+    private static function _already_logged( $log, $type, $subtype ) : bool {
+        return !self::_needs_to_be_logged( $log, $type, $subtype );
     }
     public static function _check_for_stage_change( &$added_log, $user_id, $report, $log = NULL ) {
         if ( empty( $log ) ) {

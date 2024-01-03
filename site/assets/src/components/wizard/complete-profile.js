@@ -68,12 +68,10 @@ export class CompleteProfile extends LitElement {
     }
 
     render() {
-        //                         pattern="+?([0-9]{1,3})?[0-9\(\)\s\-]*"
-        //
         return html`
         <form class="inputs stack" @submit=${this._handleDone}>
             ${ this.variant === ZumeWizardSteps.updateName ? html`
-                <h2 class="f-1">${this.t.name_question}</h2>
+                <h2>${this.t.name_question}</h2>
                 <div class="">
                     <label for="name">${this.t.name}</label>
                     <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable}>
@@ -81,7 +79,7 @@ export class CompleteProfile extends LitElement {
             ` : ''}
 
             ${ this.variant === ZumeWizardSteps.updatePhone ? html`
-                <h2 class="f-1">${this.t.phone_question}</h2>
+                <h2>${this.t.phone_question}</h2>
                 <div class="">
                     <label for="phone">${this.t.phone}</label>
                     <input
@@ -100,7 +98,7 @@ export class CompleteProfile extends LitElement {
             ` : ''}
 
             ${ this.variant === ZumeWizardSteps.updateLocation ? html`
-                <h2 class="f-1">${this.t.location_question}</h2>
+                <h2>${this.t.location_question}</h2>
                 <div class="form-group">
                     <label class="input-label" for="city">${this.t.city}</label>
                     <input
@@ -130,13 +128,12 @@ export class CompleteProfile extends LitElement {
                         `
                     })}
                 </div>
-                <div class="cluster">
+                <div class="cluster | mx-auto">
                     <button type="button" class="btn" ?disabled=${this.loading} @click=${this.handleSubmitLocation}>${this.t.done}</button>
-                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
             ` : '' }
             ${ [ ZumeWizardSteps.updatePhone, ZumeWizardSteps.updateName ].includes(this.variant) ? html`
-                <div class="cluster">
+                <div class="cluster | mx-auto">
                     <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>

@@ -73,28 +73,52 @@ class Zume_Training_Checkin extends Zume_Magic_Page
         global $zume_user_profile;
         ?>
         <script>
+            const jsObject = [<?php echo json_encode([
+                'nonce' => wp_create_nonce( 'wp_rest' ),
+                'root' => esc_url_raw( rest_url() ),
+                'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
+                'connect_friend_url' => zume_checkin_wizard_url(),
+                'is_logged_in' => is_user_logged_in(),
+                'translations' => [
+                    'enter_code' => __( 'Please enter a friend code.', 'zume' ),
+                    'bad_code' => __( 'Not a recognized code. Please check the number.', 'zume' ),
+                ],
+            ]) ?>][0]
+        </script>
+        <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
 
-                jQuery('.code_submit').click(function(){
-                    let code = jQuery('.code').val();
-                    jQuery('#code_error').empty();
+                const warningBanner = document.querySelector('.warning.banner')
+
+                jQuery('.invitation-form').submit(function(e) {
+                    e.preventDefault()
+
+                    var code = jQuery('#code').val();
                     if ( ! code ) {
-                        alert('Please enter a friend code.');
+                        show_error(jsObject.translations.enter_code)
                         return;
                     }
-                    let user_id = '<?php echo $zume_user_profile['user_id']; ?>';
 
-                    makeRequest('POST', 'checkin', { code: code, user_id: user_id }, 'zume_system/v1' ).done( function( data ) {
-                        console.log(data)
-                        if ( data ) {
-                            jQuery('#code_error').html('Success');
-                            jQuery('.code_submit').text('Done').prop('disabled', true);
-                        } else {
-                            jQuery('#code_error').html('Not a recognized friend code. Please check the number.');
-                        }
-                    })
+                    redirect_to_login( code )
+
                 });
+
+                function redirect_to_login( code ) {
+                    const connectFriendUrl = new URL( jsObject.connect_friend_url )
+
+                    const redirect =connectFriendUrl.searchParams.get('redirect_to')
+
+                    const redirectURL = new URL(redirect)
+                    redirectURL.searchParams.append( 'code', code )
+
+                    connectFriendUrl.searchParams.delete('redirect_to')
+                    connectFriendUrl.searchParams.append('redirect_to', redirectURL.href)
+                    connectFriendUrl.searchParams.append('hide-nav', true)
+
+                    location.href = connectFriendUrl.href
+                }
+
             });
         </script>
         <?php
@@ -105,23 +129,48 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
         $key_code = false;
         if ( isset( $_GET['code'] ) ) {
-            $key_code = $_GET['code'];
+            $key_code = sanitize_text_field( wp_unslash( $_GET['code'] ) );
         }
 
-        require __DIR__ . '/../parts/nav.php';
+        if ( $key_code !== false ) {
+            wp_redirect( zume_checkin_wizard_url( $key_code ) );
+            exit;
+        }
+
         ?>
-        <div class="container page">
-            <div class="grid-x">
-                <div class="cell small-6">
-                    <h1>Checkin</h1>
-                    <p>Use the code on the screen or in the book</p>
-                    <div class="input-group">
-                        <input class="input-group-field code" type="text" value="<?php echo ( $key_code ) ? $key_code : ''  ?>" >
-                        <button class="button input-group-label code_submit">Connect</button>
+
+        <div class="cover-page | bg-brand-gradient">
+
+            <?php require __DIR__ . '/../parts/nav.php' ?>
+
+            <div class="center" id="checkin-page">
+
+                <div class="grid-container rounded-multi">
+                    <div class="hidden | text-center bg-brand-light px-1 py-0 shadow">
+                        <div class="cover">
+                            <div class="center | w-100">
+                                <div class="w-70"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Jesus-01.svg' ) ?>" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center bg-white px-1 py-0 shadow rounded-start rounded-start-on-medium">
+                        <h1 class="brand"><?php esc_html_e( 'Checkin', 'zume' ) ?></h1>
+                        <form class="stack-1 invitation-form">
+                            <p><?php echo esc_html__( 'Use the code on the screen or in the book', 'zume' ) ?></p>
+                            <div class="">
+                                <label for="code"></label>
+                                <input class="input" id="code" type="text" placeholder="012345" value="<?php echo ( $key_code ) ? esc_attr( $key_code ) : ''  ?>" >
+                            </div>
+                            <button class="btn code_submit"><?php echo esc_html__( 'Connect', 'zume' ) ?></button>
+                        </form>
+
                     </div>
                 </div>
+
             </div>
         </div>
+
         <?php
     }
 }

@@ -255,6 +255,30 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
+            if ( !isset( $fields['user_preferred_language'] ) ){
+                $fields['user_preferred_language'] = [
+                    'name' => __( 'User Preferred Language', 'zume' ),
+                    'type' => 'text',
+                    'tile' => 'profile_details',
+                    'only_for_types' => [ 'user' ],
+                ];
+            }
+            if ( !isset( $fields['user_contact_preference'] ) ) {
+                $fields['user_contact_preference'] = [
+                    'name' => __( 'Preferred Contact Methods', 'zume' ),
+                    'type' => 'multi_select',
+                    'tile' => 'profile_details',
+                    'default' => [
+                        'email' => [ 'label' => __( 'Email', 'zume' ) ],
+                        'text' => [ 'label' => __( 'Text', 'zume' ) ],
+                        'phone' => [ 'label' => __( 'Phone', 'zume' ) ],
+                        'whatsapp' => [ 'label' => __( 'Whatsapp', 'zume' ) ],
+                        'signal' => [ 'label' => __( 'Signal', 'zume' ) ],
+                        'telegram' => [ 'label' => __( 'Telegram', 'zume' ) ],
+                        'messenger' => [ 'label' => __( 'Messenger', 'zume' ) ],
+                    ],
+                ];
+            }
         }
         return $fields;
     }
@@ -447,8 +471,8 @@ class Zume_Training {
         $coaching_contact_id = $profile['coaching_contact_id'];
         $changes = [];
 
-        if ( $post_fields_after_update['user_ui_language'] !== $post_fields_before_update['user_ui_language'] ) {
-            $changes['language_preference'] = $post_fields_after_update['user_ui_language'];
+        if ( $post_fields_after_update['user_preferred_language'] !== $post_fields_before_update['user_preferred_language'] ) {
+            $changes['language_preference'] = $post_fields_after_update['user_preferred_language'];
         }
 
         $old_location_label = isset( $post_fields_before_update['location_grid'] )

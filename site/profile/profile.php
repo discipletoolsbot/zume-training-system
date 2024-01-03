@@ -139,12 +139,12 @@ class Zume_Training_Profile extends Zume_Magic_Page
                 <?php global $zume_languages_by_code; ?>
 
                 <div>
-                    <label for="ui-language"><?php echo esc_html__( 'Language', 'zume' ) ?></label>
-                    <select name="ui-language" id="ui-language">
+                    <label for="preferred-language"><?php echo esc_html__( 'Language', 'zume' ) ?></label>
+                    <select name="preferred-language" id="preferred-language">
 
                     <?php foreach ( $zume_languages_by_code as $item ) : ?>
 
-                        <option value="<?php echo esc_attr( $item['code'] ) ?>" <?php echo $zume_user_profile['ui_language'] === $item['code'] ? 'selected' : '' ?>>
+                        <option value="<?php echo esc_attr( $item['code'] ) ?>" <?php echo $zume_user_profile['preferred_language'] === $item['code'] ? 'selected' : '' ?>>
                             <?php echo esc_html( $item['nativeName'] ) ?> -
                             <?php echo esc_html( $item['enDisplayName'] ) ?>
                         </option>
