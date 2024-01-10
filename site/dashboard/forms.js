@@ -9,9 +9,9 @@ jQuery(document).ready(function() {
   /* jQuery('.cta_get_a_coach').click(function() {
     window.cta_get_a_coach()
   }) */
-  jQuery('.cta_join_a_training').click(function() {
+  /* jQuery('.cta_join_a_training').click(function() {
     window.cta_join_a_training()
-  })
+  }) */
   jQuery('.cta_make_a_plan').click(function() {
     window.cta_make_a_plan()
   })

@@ -38,6 +38,7 @@ export class ConnectFriend extends LitElement {
 
     firstUpdated() {
         this.loading = true
+        this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
         this.message = this.t.please_wait
         /* We need the plan id */
         const url = new URL( location.href )
@@ -46,6 +47,7 @@ export class ConnectFriend extends LitElement {
             this.setErrorMessage(this.t.broken_link)
             this._sendDoneStepEvent()
             this.loading = false
+            this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             return
         }
 
@@ -73,6 +75,7 @@ export class ConnectFriend extends LitElement {
             })
             .always(() => {
                 this.loading = false
+                this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             })
     }
 

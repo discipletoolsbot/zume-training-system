@@ -38,6 +38,7 @@ export class JoinFriendsTraining extends LitElement {
 
     firstUpdated() {
         this.loading = true
+        this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
         this.message = this.t.please_wait
         /* We need the plan id */
         const url = new URL( location.href )
@@ -73,6 +74,7 @@ export class JoinFriendsTraining extends LitElement {
             })
             .always(() => {
                 this.loading = false
+                this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             })
     }
 

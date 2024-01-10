@@ -176,9 +176,31 @@ class Zume_Plans_Endpoints
     public function public_plans( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        $plans = self::get_public_plans();
+        $result = self::get_public_plans();
 
-        return $plans;
+        $posts = [];
+
+        $fields_to_include = [
+            'join_key',
+            'language_note',
+            'location_note',
+            'post_title',
+            'time_of_day_note',
+            'timezone_note',
+            'zoom_link_note',
+        ];
+        foreach ( $result['posts'] as $plan ) {
+            $post = [];
+            foreach ( array_keys( $plan ) as $key ) {
+                if ( in_array( $key, $fields_to_include ) || str_contains( $key, 'set_a' ) || str_contains( $key, 'set_b' ) ) {
+                    $post[$key] = $plan[$key];
+                }
+            }
+
+            $posts[] = $post;
+        }
+
+        return $posts;
     }
 
     public static function get_public_plans() {

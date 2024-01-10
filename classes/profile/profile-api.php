@@ -43,7 +43,9 @@ class Zume_Profile_API
             return $return;
         }
 
-        return new WP_REST_Response( $return );
+        $updated_profile = zume_get_user_profile();
+
+        return new WP_REST_Response( $updated_profile );
     }
 
     public function authorize_url( $authorized ) {

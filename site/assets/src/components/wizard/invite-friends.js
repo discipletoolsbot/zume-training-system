@@ -1,6 +1,10 @@
 import { LitElement, html } from "lit"
-import { live } from 'lit/directives/live.js';
 
+/**
+ * Component for inviting friends to a plan
+ *
+ * TODO: this needs fleshing out to be given a training code and title for sharing
+ */
 export class InviteFriends extends LitElement {
     static get properties() {
         return {

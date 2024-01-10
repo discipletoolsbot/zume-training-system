@@ -69,7 +69,7 @@ export class CompleteProfile extends LitElement {
 
     render() {
         return html`
-        <form class="inputs stack" @submit=${this._handleDone}>
+        <form class="inputs stack" @submit=${this._handleSubmit}>
             ${ this.variant === ZumeWizardSteps.updateName ? html`
                 <h2>${this.t.name_question}</h2>
                 <div class="">
@@ -129,12 +129,12 @@ export class CompleteProfile extends LitElement {
                     })}
                 </div>
                 <div class="cluster | mx-auto">
-                    <button type="button" class="btn" ?disabled=${this.loading} @click=${this.handleSubmitLocation}>${this.t.done}</button>
+                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.next}</button>
                 </div>
             ` : '' }
             ${ [ ZumeWizardSteps.updatePhone, ZumeWizardSteps.updateName ].includes(this.variant) ? html`
                 <div class="cluster | mx-auto">
-                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.done}</button>
+                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.next}</button>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                 </div>
             ` : '' }
@@ -150,6 +150,18 @@ export class CompleteProfile extends LitElement {
         event.preventDefault()
 
         this.phoneError = this.t.phone_error
+    }
+
+    _handleSubmit(event) {
+        event.preventDefault()
+
+        const hasLocation = event.srcElement.querySelector('#city')
+
+        if (hasLocation) {
+            this._handleSubmitLocation()
+        } else {
+            this._handleDone(event)
+        }
     }
 
     _handleDone(event) {
@@ -205,7 +217,7 @@ export class CompleteProfile extends LitElement {
         this._clearLocations()
     }
 
-    handleSubmitLocation() {
+    _handleSubmitLocation() {
         if (this.localValue.source === 'ip') {
             const { label, level, lat, lng } = this.localValue
             this.localValue = {
@@ -238,7 +250,10 @@ export class CompleteProfile extends LitElement {
                 'X-WP-Nonce': jsObject.nonce
             }
         } )
-        .then(() => {
+        .then((response) => response.json())
+        .then((newProfile) => {
+            zumeProfile.profile = newProfile
+
             successCallback()
         })
         .catch((error) => {

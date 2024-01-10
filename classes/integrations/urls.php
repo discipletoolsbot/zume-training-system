@@ -159,11 +159,13 @@ function zume_dashboard_url( $current_language = null ) {
 }
 
 function zume_checkin_url() {
-    $current_language = zume_current_language();
-    if ( $current_language === 'en' ) {
-        return dt_create_site_url( 'zume_app/checkin' );
-    }
-    return dt_create_site_url( $current_language . '/zume_app/checkin' );
+    return zume_url( 'zume_app/checkin' );
+}
+function zume_invite_friends_url() {
+    return zume_url( 'zume_app/friend_invite' );
+}
+function zume_invite_training_url() {
+    return zume_url( 'zume_app/plan_invite' );
 }
 
 function zume_training_url( $current_language = null ) {

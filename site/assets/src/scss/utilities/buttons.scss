@@ -7,7 +7,7 @@
     border-radius: 100px;
     padding: 0.25em 3em;
     cursor: pointer;
-    transition: all 100ms linear;
+    transition: all 150ms linear;
 }
 
 button {
@@ -56,6 +56,13 @@ a {
 
     &.uppercase {
         font-weight: 600;
+    }
+
+    &.disabled {
+        --btn-bg-color: #{color('gray-700')};
+        --btn-border-color: #{color('gray-700')};
+        --btn-hover-bg-color: #{color('gray-600')};
+        --btn-hover-border-color: #{color('gray-600')};
     }
 
     &.light {

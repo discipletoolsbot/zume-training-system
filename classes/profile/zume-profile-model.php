@@ -79,10 +79,9 @@ class Zume_Profile_Model {
             if ( is_wp_error( $contact ) ) {
                 return $contact;
             }
-
-            self::log_setting_of_profile( $user_id );
         }
 
+        self::log_setting_of_profile( $user_id );
 
         return [
             'location_grid_meta' => $contact['location_grid_meta'],
