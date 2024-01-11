@@ -133,14 +133,14 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
             <div class="cover-page">
                 <div class="switcher" data-reverse>
-                    <div class="stack-2 | align-items-center">
+                    <div class="stack-2 | align-items-stretch">
                         <h1 class=""><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zume App.', 'zume' ) ?></h1>
                         <div>
                             <h2 class="h5"><?php echo esc_html__( 'Zume Training App', 'zume' ) ?></h2>
                             <ul>
                                 <li><?php echo esc_html__( 'Access the full training wherever you go', 'zume' ) ?></li>
                             </ul>
-                            <div class="cluster justify-content-center">
+                            <div class="cluster">
                                 <a class="app-download" href='https://play.google.com/store/apps/details?id=app.training.zume&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
                                     <img
                                         alt='<?php echo esc_html__( 'Get it on Google Play', 'zume' ) ?>'

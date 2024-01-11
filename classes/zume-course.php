@@ -104,6 +104,7 @@ class Zume_Course {
         if ( is_array( $post_type ) ) {
             $post_type           = esc_sql( $post_type );
             $post_type_in_string = "'" . implode( "','", $post_type ) . "'";
+            //phpcs:disable
             $sql                 = $wpdb->prepare(
                 "SELECT ID
 			FROM $wpdb->posts
@@ -111,6 +112,7 @@ class Zume_Course {
 			AND post_type IN ($post_type_in_string)",
                 $page_title
             );
+            //phpcs:enable
         } else {
             $sql = $wpdb->prepare(
                 "SELECT ID
@@ -122,6 +124,7 @@ class Zume_Course {
             );
         }
 
+        //phpcs:ignore
         $page = $wpdb->get_var( $sql );
 
         if ( $page ) {
@@ -130,5 +133,4 @@ class Zume_Course {
 
         return null;
     }
-
 }
