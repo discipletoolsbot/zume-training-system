@@ -13,14 +13,37 @@ class ComposerStaticInit8d0f148ca9458ba7b18f077c49cd2536
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
+            'PhpParser\\' => 10,
             'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 57,
+        ),
+        'G' => 
+        array (
+            'Gettext\\Scanner\\' => 16,
+            'Gettext\\Languages\\' => 18,
+            'Gettext\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'PhpParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
         'PHPCSStandards\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
         array (
             0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
+        ),
+        'Gettext\\Scanner\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/php-scanner/src',
+        ),
+        'Gettext\\Languages\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/languages/src',
+        ),
+        'Gettext\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gettext/gettext/src',
         ),
     );
 

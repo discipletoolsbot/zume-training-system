@@ -54,7 +54,6 @@ function zume_training() {
         return false;
     }
 
-
     if ( !defined( 'DT_FUNCTIONS_READY' ) ){
         require_once get_template_directory() . '/dt-core/global-functions.php';
     }
@@ -86,6 +85,9 @@ class Zume_Training {
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
         $this->i18n();
+        if ( is_admin() ) {
+            require_once( 'languages/editor/loader.php' );
+        }
     }
     public static function activation() {
     }

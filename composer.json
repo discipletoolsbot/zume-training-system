@@ -9,6 +9,8 @@
         }
     },
     "require": {
-        "kucrut/vite-for-wp": "^0.5.2"
+        "kucrut/vite-for-wp": "^0.5.2",
+        "gettext/gettext": "^5.7",
+        "gettext/php-scanner": "^1.3"
     }
 }
