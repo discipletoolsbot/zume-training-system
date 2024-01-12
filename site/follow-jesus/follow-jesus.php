@@ -127,7 +127,12 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                 </div>
                 <p class="hidden mx-auto"><?php echo esc_html__( 'The sections below, will teach you what it means to be a follower (disciple) of Jesus', 'zume' ) ?></p>
 
-                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="mx-auto btn large light uppercase"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                <?php if ( !is_user_logged_in() ): ?>
+
+                    <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="mx-auto btn large light uppercase"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+
+                <?php endif; ?>
+
             </div>
         </div>
 

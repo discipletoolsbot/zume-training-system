@@ -262,13 +262,19 @@ class Zume_Training_About extends Zume_Magic_Page
                 </div>
             </div>
         </div>
-        <div class="page container-md center stack-3">
-            <h2 class="t-3 text-center"><?php echo esc_html__( 'Are you ready? Register today.', 'zume' ) ?></h2>
-            <div class="center">
-                <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Register-About.svg' ) ?>" alt="person Registering" class="w-50">
+
+        <?php if ( !is_user_logged_in() ): ?>
+
+            <div class="page container-md center stack-3">
+                <h2 class="t-3 text-center"><?php echo esc_html__( 'Are you ready? Register today.', 'zume' ) ?></h2>
+                <div class="center">
+                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Register-About.svg' ) ?>" alt="person Registering" class="w-50">
+                </div>
+                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
             </div>
-            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
-        </div>
+
+        <?php endif; ?>
+
         <?php
     }
 }

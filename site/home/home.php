@@ -106,8 +106,18 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <h1 class="f-8 second brand-light s0"><?php echo esc_html_x( 'Training', 'Disciple Making Training', 'zume' ) ?></h1>
                     <p class="f-2 s0 px-2"><?php echo esc_html_x( 'for groups of Jesus followers', 'Disciple Making Training for groups of Jesus followers', 'zume' ) ?></p>
                     <div class="switcher | switcher-width-20 s-3">
-                        <a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn large outline uppercase w-80 px-0"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
-                        <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+
+                        <?php if ( is_user_logged_in() ): ?>
+
+                            <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn large outline uppercase w-80 px-0"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+
+                        <?php else : ?>
+
+                            <a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn large outline uppercase w-80 px-0"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+
+                        <?php endif; ?>
+
                     </div>
                 </div>
                 <div class="show-for-large center brand-fade">
@@ -229,7 +239,18 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <a href="<?php echo esc_url( zume_about_url() ) ?>" class="d-block uppercase bold brand fit-content mx-auto"><?php echo esc_html__( 'More about zume', 'zume' ) ?></a>
                 </div>
             </div>
-            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+
+
+            <?php if ( is_user_logged_in() ): ?>
+
+                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
+
+            <?php else : ?>
+
+                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+
+            <?php endif; ?>
+
         </div>
 
         <?php $width = 1024 ?>
@@ -389,6 +410,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             <div class="switcher | gapx-3">
                 <div class="stack-2 justify-content-between">
                     <img class="mx-auto h-40" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GetACoach.svg' ) ?>" alt="<?php echo esc_attr__( 'Get a coach', 'zume' ) ?>">
+
                     <p><?php echo esc_html__( 'Zume offers free online coaching by experienced practitioners who want to see you become a faithful disciple', 'zume' ) ?></p>
                     <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn large outline uppercase"><?php echo esc_html__( 'Get a coach', 'zume' ) ?></a>
                 </div>
