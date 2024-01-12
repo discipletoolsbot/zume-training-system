@@ -43,7 +43,12 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
                 return;
             }
 
+
             $this->set_locale( $lang_code );
+
+            if ( 'en' !== $this->lang ) {
+                $this->postid = zume_get_translation( $this->postid, $this->lang );
+            }
 
             $this->page_title = get_the_title( $this->postid );
 
@@ -66,6 +71,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
             add_action( 'dt_blank_head', [ $this, '_header' ] );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
+            add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );
 
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
@@ -82,40 +88,26 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     }
 
     public function header_style(){
+        ?>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery(document).foundation();
+            });
+        </script>
+        <?php
     }
 
     public function body(){
         global $zume_user_profile;
 
-        $tool_number = $this->meta['zume_piece'][0] ?? 0;
-        $pre_video_content = $this->meta['zume_pre_video_content'][0] ?? '';
-        $post_video_content = $this->meta['zume_post_video_content'][0] ?? '';
-        $ask_content = $this->meta['zume_ask_content'][0] ?? '';
-
         require __DIR__ . '/../parts/nav.php';
-        ?>
 
-        <div class="container">
-
-            <?php
-
-            echo '<h1>' . esc_html( $this->page_title ) . '</h1>';
-
-            echo esc_html( "Tool Number: $tool_number" );
-
-            echo wp_kses_post( wpautop( $pre_video_content ) );
-
-            echo wp_kses_post( wpautop( $post_video_content ) );
-
-            echo wp_kses_post( wpautop( $ask_content ) );
-
-            ?>
-
-            <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
-
-        </div>
-
-        <?php
+        pieces_content( $this->postid, $this->lang, [
+            'wtv' => esc_html__( 'Watch This Video', 'zume' ),
+            'ay' => esc_html__( 'Ask Yourself', 'zume' ),
+            'd' => esc_html__( 'Download Free Guidebook', 'zume' ),
+            'lra' => esc_html__( 'Listen and Read Along', 'zume' ),
+        ] );
     }
 }
 Zume_Training_Pieces_URL::instance();

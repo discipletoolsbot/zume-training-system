@@ -1655,6 +1655,23 @@ if ( ! function_exists( 'zume_mirror_url' ) ) {
         return 'https://storage.googleapis.com/zume-file-mirror/';
     }
 }
+if ( ! function_exists( 'zume_alt_video' ) ) {
+
+    function zume_alt_video( $current_language = null ) {
+        $alt_video = false;
+
+        if ( ! $current_language ) {
+            $current_language = zume_current_language();
+        }
+
+        if ( ! $alt_video ) {
+            $alt_video = ( 'id' === $current_language ); // @todo expand this if more than indonesian is a problem
+        }
+
+        return $alt_video;
+    }
+
+}
 if ( ! function_exists( 'zume_current_language' ) ) {
     function zume_current_language() {
         if ( function_exists( 'pll_the_languages' ) ) {

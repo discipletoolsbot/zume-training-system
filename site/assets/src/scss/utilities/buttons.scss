@@ -8,22 +8,7 @@
     padding: 0.25em 3em;
     cursor: pointer;
     transition: all 150ms linear;
-}
 
-button {
-    cursor: pointer;
-}
-
-a {
-    color: color('brand');
-
-    &:hover, &:active, &:focus {
-        text-decoration: underline;
-    }
-}
-
-.btn {
-    @include button;
     --btn-color: #{color('white')};
     --btn-bg-color: #{color('brand')};
     --btn-border-color: #{color('brand')};
@@ -48,6 +33,23 @@ a {
         border-color: var(--btn-hover-border-color);
         text-decoration: none;
     }
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: color('brand');
+
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.btn {
+    @include button;
+
 
     &.dark {
         --btn-hover-border-color: #{color('white')};

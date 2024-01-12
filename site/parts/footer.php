@@ -12,7 +12,7 @@
             <div class="cluster gapx-4 gapy-2 justify-flex-end | footer-links-list" role="list">
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Guidebook', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_mobile_app_url() ) ?>"><?php echo esc_html__( 'Mobile App', 'zume' ) ?></a>
-                <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
             </div>
         </div>
 

@@ -1,0 +1,21 @@
+.pieces-page {
+    .grid-x.center {
+        flex-direction: row;
+    }
+
+    .cell > * + * {
+        margin-block-start: var(--space);
+    }
+
+    .button {
+        @include button;
+
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: inherit;
+
+        &.large {
+            font-size: font-size(1);
+        }
+    }
+}
