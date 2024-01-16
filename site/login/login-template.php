@@ -388,7 +388,12 @@ switch ( $request_action ) {
                                     $lang_code = 'pt_pt';
                                 }
 
-                                do_shortcode( "[dt_firebase_login_ui lang_code=$lang_code]" )
+
+                                $dt_url = new DT_URL( $url );
+                                $query_params = $dt_url->query_params;
+                                $query_redirect_url = $query_params->get( 'redirect_to' );
+
+                                do_shortcode( "[dt_firebase_login_ui lang_code=$lang_code redirect_to=$query_redirect_to]" )
 
                                 ?>
 
@@ -596,7 +601,11 @@ switch ( $request_action ) {
                                 $lang_code = 'pt_pt';
                             }
 
-                            do_shortcode( "[dt_firebase_login_ui lang_code=$lang_code]" )
+                            $dt_url = new DT_URL( $url );
+                            $query_params = $dt_url->query_params;
+                            $query_redirect_url = $query_params->get( 'redirect_to' );
+
+                            do_shortcode( "[dt_firebase_login_ui lang_code=$lang_code redirect_to=$query_redirect_to]" )
 
                             ?>
 
