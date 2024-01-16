@@ -1,5 +1,7 @@
 @use 'sass:color';
 
+@import '../../fonts/ZumeIcons/style.css';
+
 @import 'reset';
 @import 'variables';
 @import 'functions';
@@ -63,23 +65,24 @@ ul {
 .pieces-page ul,
 ul[role="list"] {
   li {
-    padding-inline-start: 1.5rem;
-    position: relative;
+    text-indent: -1.7;
   }
 
   li:before {
     content: "●";
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0rem;
-    top: 0;
-    line-height: 1;
+    font-size: 1.5em;
+    padding-inline-end: 0.7rem;
+    vertical-align: middle;
   }
   &.check-list li:before {
-    content: url('/wp-content/plugins/zume-training-system/site/assets/images/check-mark-white.svg');
-    height: 1.5em;
-    width: 1.5em;
-    left: -0.8em;
+    font-family: 'Zume-Icons';
+    content: "\e900";
+  }
+  &.check-list[data-check-size="1"] li:before {
+    font-size: 1em;
+  }
+  &.check-list[data-check-color="brand"] li:before {
+    color: color('brand');
   }
 }
 

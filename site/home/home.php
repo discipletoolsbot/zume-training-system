@@ -88,8 +88,8 @@ class Zume_Training_Home extends Zume_Magic_Page
         ?>
 
         <div class="stack | s0 justify-content-center absolute top left mx-0 my-3 p--1 hard-shadow | sticker">
-            <h2 class="f-3 lh1">45+</h2>
-            <h3 class="uppercase f--2 lh1"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
+            <h2 class="f-3 lh-sm">45+</h2>
+            <h3 class="uppercase f--2 lh-sm"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
         </div>
         <?php require __DIR__ . '/../parts/nav.php'; ?>
         <div class="cover-page | hero min-vh-90 position-relative">
@@ -134,7 +134,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             <div class="grid | grid-min-24rem">
                 <div class="stack | left tail circle-end-small bg-brand-light white p-2">
                     <h3 class="h2"><?php echo esc_html__( 'Overview', 'zume' ) ?></h3>
-                    <ul role="list" class="check-list f-2 bold">
+                    <ul role="list" class="check-list f-2 bold lh-md">
                         <li><?php echo esc_html__( '20 hours of Training', 'zume' ) ?></li>
                         <li><?php echo esc_html__( '32 Concepts and Skills', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Group Discussions', 'zume' ) ?></li>
@@ -142,9 +142,11 @@ class Zume_Training_Home extends Zume_Magic_Page
                         <li><?php echo esc_html__( 'Self-Facilitated', 'zume' ) ?></li>
                     </ul>
                 </div>
-                <div class="center stack">
-                    <img class="" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
-                    <h3 class="text-center f-1 mx-2"><?php echo esc_html__( 'Free. Anytime. Anywhere.', 'zume' ) ?></h3>
+                <div class="cover">
+                    <div class="center stack">
+                        <img class="" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
+                        <h3 class="text-center f-1 mx-2"><?php echo esc_html__( 'Free. Anytime. Anywhere.', 'zume' ) ?></h3>
+                    </div>
                 </div>
             </div>
             <h2 class="text-center"><?php echo esc_html__( 'Gain insight into...', 'zume' ) ?></h2>
@@ -153,7 +155,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Being-A-Disciple-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Being A Disciple', 'zume' ) ?></h3>
-                        <ul role="list" class="f-1 f-medium | check-list">
+                        <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
                             <li><?php echo esc_html__( "What's a disciple?", 'zume' ) ?></li>
                             <li><?php echo esc_html__( "What's a Church?", 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Keys to spiritual growth', 'zume' ) ?></li>
@@ -167,7 +169,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Making-Disciples-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Making Disciples', 'zume' ) ?></h3>
-                        <ul role="list" class="f-1 f-medium | check-list">
+                        <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
                             <li><?php echo esc_html__( "Sharing God's story", 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Telling Your Story', 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Engaging Seekers', 'zume' ) ?></li>

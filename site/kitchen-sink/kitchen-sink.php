@@ -308,7 +308,7 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                 </div>
             </div>
 
-            <div class="container stack-1 lh1">
+            <div class="container stack-1 lh-sm">
                 <h1 class="brand f-4 text-center uppercase">Utilities</h1>
 
                 <h2 class="brand">Text</h2>
@@ -324,17 +324,17 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                 <p>The formula for the size increases is <code>size = baseSize * ( ratio ^ stepNumber )</code></p>
                 <p>E.g. at full screen, the size of <code>.f-3</code> is = <code>1rem * ( 1.3 ^ 3 ) = 38.948px</code></p>
 
-                <p class="f-8 lh1">.f-8 A b c d e f </p>
-                <p class="lh1 f-7">.f-7 A b c d e f</p>
-                <p class="lh1 f-6">.f-6 A b c d e f</p>
-                <p class="lh1 f-5">.f-5 A b c d e f</p>
-                <p class="lh1 f-4">.f-4 A b c d e f</p>
-                <p class="lh1 f-3">.f-3 A b c d e f</p>
-                <p class="lh1 f-2">.f-2 A b c d e f</p>
-                <p class="lh1 f-1">.f-1 A b c d e f</p>
-                <p class="lh1 f-0">.f-0 A b c d e f</p>
-                <p class="lh1 f--1">.f--1 A b c d e f</p>
-                <p class="lh1 f--2">.f--2 A b c d e f</p>
+                <p class="f-8 lh-sm">.f-8 A b c d e f </p>
+                <p class="lh-sm f-7">.f-7 A b c d e f</p>
+                <p class="lh-sm f-6">.f-6 A b c d e f</p>
+                <p class="lh-sm f-5">.f-5 A b c d e f</p>
+                <p class="lh-sm f-4">.f-4 A b c d e f</p>
+                <p class="lh-sm f-3">.f-3 A b c d e f</p>
+                <p class="lh-sm f-2">.f-2 A b c d e f</p>
+                <p class="lh-sm f-1">.f-1 A b c d e f</p>
+                <p class="lh-sm f-0">.f-0 A b c d e f</p>
+                <p class="lh-sm f--1">.f--1 A b c d e f</p>
+                <p class="lh-sm f--2">.f--2 A b c d e f</p>
             </div>
 
 

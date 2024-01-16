@@ -1,13 +1,20 @@
 {
+  "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg": {
+    "file": "assets/Zume-Icons-db5a898f.svg",
+    "src": "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg"
+  },
   "site/assets/src/main.css": {
-    "file": "assets/main-f02590a3.css",
+    "file": "assets/main-2d36041d.css",
     "src": "site/assets/src/main.css"
   },
   "site/assets/src/main.js": {
-    "css": [
-      "assets/main-f02590a3.css"
+    "assets": [
+      "assets/Zume-Icons-db5a898f.svg"
     ],
-    "file": "assets/main-7ab1b5c7.js",
+    "css": [
+      "assets/main-2d36041d.css"
+    ],
+    "file": "assets/main-07608ad3.js",
     "isEntry": true,
     "src": "site/assets/src/main.js"
   }
