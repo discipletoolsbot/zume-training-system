@@ -446,27 +446,29 @@ var Re=Object.defineProperty;var Oe=(i,e,t)=>e in i?Re(i,e,{enumerable:!0,config
                         <course-section .section=${e}></course-section>
                     `)}
             </div>
-        `}createRenderRoot(){return this}}customElements.define("course-guide",gt);const ye=["slideshow","guide"];class mt extends p{static get properties(){return{languageCode:{type:String},homeUrl:{type:String},assetsPath:{type:String},translations:{type:Object},zumeSessions:{attribute:!1},lessonIndex:{attribute:!1},view:{attribute:!1},linkNodes:{attribute:!1},showIndex:{attribute:!1}}}constructor(){super();const e=new URL(window.location.href),t=this.getZumeSessions(e);this.zumeSessions=t;const s=this.getLessonIndex(e);this.lessonIndex=s,this.view=this.getView(e),this.changeSession(s,!1,t),this.handleSessionLink=this.handleSessionLink.bind(this),this.handleHistoryPopState=this.handleHistoryPopState.bind(this),window.addEventListener("popstate",this.handleHistoryPopState),document.querySelectorAll(".language-selector").forEach(function(o){o.addEventListener("click",()=>{const l=o.dataset.value,u=new URL(location.href),c=u.pathname.substring(1).split("/");let h="";c.length>0&&jsObject.zume_languages.includes(c[0])?h=c.slice(1).join("/"):h=c.join("/"),l!=="en"?h="/"+l+"/"+h:h="/"+h,h+=u.search,location.href=h})})}getView(e){if(e.searchParams.has("view")){const t=e.searchParams.get("view");if(ye.includes(t))return t}else return"slideshow"}getLessonIndex(e){if(e.searchParams.has("session")){const t=e.searchParams.get("session");if(t==="index")return"index";const s=Number(t);return Number.isInteger(s)?s-1:0}else return 0}getZumeSessions(e){const t=e.searchParams.get("type")||"10";this.type=t;let s;switch(t){case"10":s=zume10Sessions;break;case"20":s=zume20Sessions;break;case"intensive":s=zumeIntensiveSessions;break;default:s=zume10Sessions;break}return s}handleSessionLink(e){const t=e.target,s=Number(t.dataset.sessionNumber);this.lessonIndex=s,this.showIndex===!0&&(this.showIndex=!1),this.changeSession(this.lessonIndex)}getNextSession(){this.lessonIndex+=1,this.changeSession(this.lessonIndex)}getPreviousSession(){this.lessonIndex-=1,this.changeSession(this.lessonIndex)}changeSession(e,t=!0,s=null){if(e==="index"){this.showIndex=!0;return}else this.showIndex=!1;const n=s||this.zumeSessions;let o=e;e<0&&(o=0),e>n.length-1&&(o=n.length-1),this.lessonIndex=o,this.session=n[o],t&&this.pushHistory()}pushHistory(){const e=this.lessonIndex,t=this.view,s=new URL(window.location.href);e!==null&&Number.isInteger(e)&&s.searchParams.set("session",e+1),t&&s.searchParams.set("view",t),window.history.pushState(null,null,s.href)}handleHistoryPopState(){var n;const e=new URL(location.href),t=e.searchParams.has("session")?e.searchParams.get("session"):null,s=e.searchParams.get("view");(n=document.querySelector(".js-off-canvas-overlay"))==null||n.classList.remove("is-visible"),Number.isInteger(Number(t))&&(this.lessonIndex=t-1,this.changeSession(this.lessonIndex,!1)),t==="index"&&(this.lessonIndex="index",this.changeSession("index",!1)),s&&ye.includes(s)&&(this.view=s)}getSessionTitle(){return!this.session||!this.session.t?"":this.session.t}getSessionSections(){return!this.session||!this.session.sections?[]:this.session.sections}switchViews(e=!0){this.view==="guide"?this.view="slideshow":this.view="guide",e===!0&&this.pushHistory({view:this.view})}openMenu(){const e=this.querySelector("#offCanvas");jQuery(e).foundation("open")}render(){if(this.showIndex){const e=this.type==="intensive"?"container-xsm":"container-sm";return a`
-                <div class="course-index | bg-brand-gradient">
-                    <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
-                    <div class="${e}" data-max-width="750">
-                        <div class="grid | grid-min-8rem gutter0">
-                            ${this.zumeSessions.map((t,s)=>a`
-                                <button
-                                    class="card-btn | bg-white black m--2 gap--3"
-                                    data-session-number=${s}
-                                    @click=${this.handleSessionLink}
-                                >
-                                    <h2 class="f-0 bold">Session</h2>
-                                    <p class="f-3 bold lh-sm">${s+1}</p>
-                                    <span class="icon zume-course brand-light f-3"></span>
-                                </button>
-                            `)}
+        `}createRenderRoot(){return this}}customElements.define("course-guide",gt);const ye=["slideshow","guide"];class mt extends p{static get properties(){return{languageCode:{type:String},homeUrl:{type:String},assetsPath:{type:String},translations:{type:Object},zumeSessions:{attribute:!1},lessonIndex:{attribute:!1},view:{attribute:!1},linkNodes:{attribute:!1},showIndex:{attribute:!1}}}constructor(){super();const e=new URL(window.location.href),t=this.getZumeSessions(e);this.zumeSessions=t;const s=this.getLessonIndex(e);this.lessonIndex=s,this.view=this.getView(e),this.changeSession(s,!1,t),this.handleSessionLink=this.handleSessionLink.bind(this),this.handleHistoryPopState=this.handleHistoryPopState.bind(this),window.addEventListener("popstate",this.handleHistoryPopState),document.querySelectorAll(".language-selector").forEach(function(o){o.addEventListener("click",()=>{const l=o.dataset.value,u=new URL(location.href),c=u.pathname.substring(1).split("/");let h="";c.length>0&&jsObject.zume_languages.includes(c[0])?h=c.slice(1).join("/"):h=c.join("/"),l!=="en"?h="/"+l+"/"+h:h="/"+h,h+=u.search,location.href=h})})}getView(e){if(e.searchParams.has("view")){const t=e.searchParams.get("view");if(ye.includes(t))return t}else return"slideshow"}getLessonIndex(e){if(e.searchParams.has("session")){const t=e.searchParams.get("session");if(t==="index")return"index";const s=Number(t);return Number.isInteger(s)?s-1:0}else return 0}getZumeSessions(e){const t=e.searchParams.get("type")||"10";this.type=t;let s;switch(t){case"10":s=zume10Sessions;break;case"20":s=zume20Sessions;break;case"intensive":s=zumeIntensiveSessions;break;default:s=zume10Sessions;break}return s}handleSessionLink(e){const t=e.target,s=Number(t.dataset.sessionNumber);this.lessonIndex=s,this.showIndex===!0&&(this.showIndex=!1),this.changeSession(this.lessonIndex)}getNextSession(){this.lessonIndex+=1,this.changeSession(this.lessonIndex)}getPreviousSession(){this.lessonIndex-=1,this.changeSession(this.lessonIndex)}changeSession(e,t=!0,s=null){if(e==="index"){this.showIndex=!0;return}else this.showIndex=!1;const n=s||this.zumeSessions;let o=e;e<0&&(o=0),e>n.length-1&&(o=n.length-1),this.lessonIndex=o,this.session=n[o],t&&this.pushHistory()}pushHistory(){const e=this.lessonIndex,t=this.view,s=new URL(window.location.href);e!==null&&Number.isInteger(e)&&s.searchParams.set("session",e+1),t&&s.searchParams.set("view",t),window.history.pushState(null,null,s.href)}handleHistoryPopState(){var n;const e=new URL(location.href),t=e.searchParams.has("session")?e.searchParams.get("session"):null,s=e.searchParams.get("view");(n=document.querySelector(".js-off-canvas-overlay"))==null||n.classList.remove("is-visible"),Number.isInteger(Number(t))&&(this.lessonIndex=t-1,this.changeSession(this.lessonIndex,!1)),t==="index"&&(this.lessonIndex="index",this.changeSession("index",!1)),s&&ye.includes(s)&&(this.view=s)}getSessionTitle(){return!this.session||!this.session.t?"":this.session.t}getSessionSections(){return!this.session||!this.session.sections?[]:this.session.sections}switchViews(e=!0){this.view==="guide"?this.view="slideshow":this.view="guide",e===!0&&this.pushHistory({view:this.view})}openMenu(){const e=this.querySelector("#offCanvas");jQuery(e).foundation("open")}render(){const e=this.showIndex?"visually-hidden":"",t=this.type==="intensive"?"container-xsm":"container-sm";return a`
+            ${this.showIndex?a`
+                    <div class="course-index | bg-brand-gradient">
+                        <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
+                        <div class="${t}" data-max-width="750">
+                            <div class="grid | grid-min-8rem gutter0">
+                                ${this.zumeSessions.map((s,n)=>a`
+                                    <button
+                                        class="card-btn | bg-white black m--2 gap--3"
+                                        data-session-number=${n}
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        <h2 class="f-0 bold">Session</h2>
+                                        <p class="f-3 bold lh-sm">${n+1}</p>
+                                        <span class="icon zume-course brand-light f-3"></span>
+                                    </button>
+                                `)}
+                            </div>
                         </div>
                     </div>
-                </div>
-            `}return a`
-            <nav class="stack | bg-white px-0 text-center | off-canvas position-left justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+                `:""}
+
+            <nav class="${e} stack | bg-white px-0 text-center | off-canvas position-left justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <div class="stack">
                     <div style="text-align:center;padding: 1em;">
                         <img src="${this.assetsPath}/ZumeLOGO.svg" width="150px" alt="Zume" >
@@ -484,13 +486,13 @@ var Re=Object.defineProperty;var Oe=(i,e,t)=>e in i?Re(i,e,{enumerable:!0,config
                     <button class="btn" @click=${this.switchViews}>Switch Views</button>
 
                     <div class="stack-1 py-1">
-                        ${this.zumeSessions.map((e,t)=>a`
+                        ${this.zumeSessions.map((s,n)=>a`
                             <button
                                 class="link session-link"
-                                data-session-number="${t}"
+                                data-session-number="${n}"
                                 @click=${this.handleSessionLink}
                             >
-                                ${e.t}
+                                ${s.t}
                             </button>
                         `)}
                     </div>
@@ -502,13 +504,13 @@ var Re=Object.defineProperty;var Oe=(i,e,t)=>e in i?Re(i,e,{enumerable:!0,config
                 </div>
             </nav>
 
-            <span class="p-1 d-block position-relative z-1">
+            <span class="${e} p-1 d-block position-relative z-1">
                 <button id="hamburger-menu" class="nav-toggle show" @click=${this.openMenu}>
                     <span class="hamburger brand"></span>
                 </button>
             </span>
 
-            <div class="container"></div>
+            <div class="${e} container">
                 ${this.view==="guide"?a`<course-guide title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-guide>`:a`<course-slideshow title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-slideshow>`}
             </div>
         `}createRenderRoot(){return this}}customElements.define("course-presenter",mt);class $t extends p{static get properties(){return{section:{type:Object}}}constructor(){super()}render(){return this.title=this.section.t??null,this.description=this.section.d??null,this.info=this.section.info??null,this.duration=this.section.duration??null,this.parts=this.section.parts??[],a`
@@ -701,4 +703,4 @@ var Re=Object.defineProperty;var Oe=(i,e,t)=>e in i?Re(i,e,{enumerable:!0,config
                 <td><button class="btn" data-code=${e} @click=${this._handleJoinTraining}>${this.t.join}</button></td>
             </tr>
         `}_handleJoinTraining(e){console.log(e);const t=e.target.dataset.code,s=new CustomEvent("chosen-training",{bubbles:!0,detail:{code:t}});this.dispatchEvent(s)}createRenderRoot(){return this}}customElements.define("public-trainings",Dt);const Se=document.querySelector(".nav-toggle"),Tt=document.querySelector("#nav");Se&&Se.addEventListener("click",i=>{Tt.classList.toggle("nav--visible")});const Mt=({title:i,url:e,copyFeedback:t,shareFeedback:s})=>({title:i,url:e,webShareSupported:navigator.share,clipboardSupported:navigator.clipboard,shareFeedback:"",copyFeedback:"",noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported},share(){navigator.share({title:i,url:e,text:i}).then(()=>{this.shareFeedback=s,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(n=>console.error("Error sharing",n))},copyLink(){navigator.clipboard.writeText(e).then(()=>{this.copyFeedback=t,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(n=>console.error(n))}});window.zumeInitShareLinks=()=>{je({share:Mt}).mount()};
-//# sourceMappingURL=main-d5b9c4b2.js.map
+//# sourceMappingURL=main-262de909.js.map

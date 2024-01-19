@@ -235,34 +235,36 @@ export class CoursePresenter extends LitElement {
     }
 
     render() {
-        if ( this.showIndex ) {
-            const containerClass = this.type === 'intensive' ? 'container-xsm' : 'container-sm'
-            return html`
-                <div class="course-index | bg-brand-gradient">
-                    <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
-                    <div class="${containerClass}" data-max-width="750">
-                        <div class="grid | grid-min-8rem gutter0">
-                            ${this.zumeSessions.map((session, sessionNumber) => html`
-                                <button
-                                    class="card-btn | bg-white black m--2 gap--3"
-                                    data-session-number=${sessionNumber}
-                                    @click=${this.handleSessionLink}
-                                >
-                                    <h2 class="f-0 bold">Session</h2>
-                                    <p class="f-3 bold lh-sm">${sessionNumber + 1}</p>
-                                    <span class="icon zume-course brand-light f-3"></span>
-                                </button>
-                            `)}
-                        </div>
-                    </div>
-                </div>
-            `
-        }
+        const hiddenClass = this.showIndex ? 'visually-hidden' : ''
+        const containerClass = this.type === 'intensive' ? 'container-xsm' : 'container-sm'
 
         /* If this is the overall presenter, then it would have a top bar, navigation buttons etc. as well */
         /* And also have a sidebar with the contents list in */
         return html`
-            <nav class="stack | bg-white px-0 text-center | off-canvas position-left justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+            ${
+                this.showIndex ? html`
+                    <div class="course-index | bg-brand-gradient">
+                        <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
+                        <div class="${containerClass}" data-max-width="750">
+                            <div class="grid | grid-min-8rem gutter0">
+                                ${this.zumeSessions.map((session, sessionNumber) => html`
+                                    <button
+                                        class="card-btn | bg-white black m--2 gap--3"
+                                        data-session-number=${sessionNumber}
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        <h2 class="f-0 bold">Session</h2>
+                                        <p class="f-3 bold lh-sm">${sessionNumber + 1}</p>
+                                        <span class="icon zume-course brand-light f-3"></span>
+                                    </button>
+                                `)}
+                            </div>
+                        </div>
+                    </div>
+                ` : ''
+            }
+
+            <nav class="${hiddenClass} stack | bg-white px-0 text-center | off-canvas position-left justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <div class="stack">
                     <div style="text-align:center;padding: 1em;">
                         <img src="${this.assetsPath}/ZumeLOGO.svg" width="150px" alt="Zume" >
@@ -298,13 +300,13 @@ export class CoursePresenter extends LitElement {
                 </div>
             </nav>
 
-            <span class="p-1 d-block position-relative z-1">
+            <span class="${hiddenClass} p-1 d-block position-relative z-1">
                 <button id="hamburger-menu" class="nav-toggle show" @click=${this.openMenu}>
                     <span class="hamburger brand"></span>
                 </button>
             </span>
 
-            <div class="container"></div>
+            <div class="${hiddenClass} container">
                 ${
                     this.view === 'guide'
                     ? html`<course-guide title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-guide>`
