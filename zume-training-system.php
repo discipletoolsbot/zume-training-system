@@ -84,8 +84,13 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
+        require_once( 'translation-utility.php' );
+
         $this->i18n();
         if ( is_admin() ) {
+            global $zume_translation_file_list;
+            dt_write_log('zume_translation_file_list');
+            dt_write_log($zume_translation_file_list);
             require_once( 'languages/editor/loader.php' );
         }
     }
