@@ -1,7 +1,7 @@
 .grid {
     --grid-min-size: 250px;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: var(--gutter, 1rem) var(--gutter, 1rem);
     grid-auto-rows: 1fr;
 }
 
@@ -13,6 +13,9 @@
 
 .grid-min-24rem {
     --grid-min-size: 24rem;
+}
+.grid-min-8rem {
+    --grid-min-size: 8rem;
 }
 .grid-min-6rem {
     --grid-min-size: 6rem;

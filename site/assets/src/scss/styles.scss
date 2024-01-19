@@ -37,6 +37,7 @@
 @import 'blocks/dashboard';
 @import 'blocks/progress-menu';
 @import 'blocks/card';
+@import 'blocks/dropdown';
 
 html {
     font-size: 18px;
@@ -110,6 +111,10 @@ a, a:visited {
   margin-inline: auto;
   width: calc(50% + ( 50 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $width-md;
+
+  &[data-max-width="750"] {
+    max-width: 750px;
+  }
 }
 
 .container-xsm {
@@ -195,6 +200,10 @@ a, a:visited {
   color: color('white');
 
   top: -15px;
+
+  & > * {
+    pointer-events: none;
+  }
 }
 
 .nav-toggle:focus,
@@ -518,6 +527,12 @@ a, a:visited {
   background: color('brand-light');
   position: absolute;
 }
+.course-index {
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 @media (min-width: $break-lg) {
 
@@ -539,6 +554,18 @@ a, a:visited {
   background-color: color('brand');
   font-size: 0.75rem;
   padding: var(--s2) 0;
+
+    .icon {
+        width: 1em;
+        height: 1em;
+
+        &:hover, &:focus {
+            svg {
+                stroke: color('brand-lighter');
+                fill: color('brand-lighter');
+            }
+        }
+    }
 }
 @media (max-width: $break-lg) {
   .footer .footer-links {

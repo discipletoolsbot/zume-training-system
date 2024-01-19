@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Zume-Icons';
   src:
-    url('fonts/Zume-Icons.ttf?4cht6l') format('truetype'),
-    url('fonts/Zume-Icons.woff?4cht6l') format('woff'),
-    url('fonts/Zume-Icons.svg?4cht6l#Zume-Icons') format('svg');
+    url('fonts/Zume-Icons.ttf?y72t0p') format('truetype'),
+    url('fonts/Zume-Icons.woff?y72t0p') format('woff'),
+    url('fonts/Zume-Icons.svg?y72t0p#Zume-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,75 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.zume-churches:before {
+  content: "\e901";
+}
+.zume-coach:before {
+  content: "\e902";
+}
+.zume-community:before {
+  content: "\e903";
+}
+.zume-course:before {
+  content: "\e904";
+}
+.zume-group:before {
+  content: "\e905";
+}
+.zume-invite:before {
+  content: "\e906";
+}
+.zume-lock:before {
+  content: "\e907";
+}
+.zume-pencil:before {
+  content: "\e908";
+}
+.zume-phone:before {
+  content: "\e909";
+}
+.zume-pin:before {
+  content: "\e90a";
+}
+.zume-plans:before {
+  content: "\e90b";
+}
+.zume-practicing:before {
+  content: "\e90c";
+}
+.zume-profile:before {
+  content: "\e90d";
+}
+.zume-progress:before {
+  content: "\e90e";
+}
+.zume-public-training:before {
+  content: "\e90f";
+}
+.zume-resources:before {
+  content: "\e910";
+}
+.zume-session-choice:before {
+  content: "\e911";
+}
+.zume-start:before {
+  content: "\e912";
+}
+.zume-start-date:before {
+  content: "\e913";
+}
+.zume-start-group:before {
+  content: "\e914";
+}
+.zume-time:before {
+  content: "\e915";
+}
+.zume-tools:before {
+  content: "\e916";
+}
+.zume-training:before {
+  content: "\e917";
+}
 .zume-check-mark:before {
   content: "\e900";
 }

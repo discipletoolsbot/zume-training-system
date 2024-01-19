@@ -135,9 +135,17 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
             <div class="dashboard__titlebar">
                 <h1 class="h3">Title here</h1>
-                <button class="btn uppercase light">
+                <button class="btn uppercase light" data-toggle="launch-course-panel">
                     <?php echo esc_html__( 'Launch Course', 'zume' ) ?>
                 </button>
+                <div class="dropdown-pane" id="launch-course-panel" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true">
+                    <ul>
+                        <li><a class="menu-btn" href="<?php echo esc_url( zume_10_session_url() ) ?>"><span class="icon zume-course"></span><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a></li>
+                        <li><a class="menu-btn" href="<?php echo esc_url( zume_20_session_url() ) ?>"><span class="icon zume-course"></span><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a></li>
+                        <li><a class="menu-btn" href="<?php echo esc_url( zume_intensive_session_url() ) ?>"><span class="icon zume-course"></span><?php echo esc_html__( '3 Day Intensive Course', 'zume' ) ?></a></li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="dashboard__main">
@@ -156,7 +164,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 ?>
 
                 <div class="grid-x grid-margin-x">
-                    <div class="cell medium-6">
+                    <div class="cell medium-8">
                         <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p><hr />
                         <p><strong><?php echo esc_html__( 'User Stage', 'zume' ) ?></strong><pre><?php print_r( $stage ); ?></pre></p><hr />
                         <p><strong><?php echo esc_html__( 'User Friends', 'zume' ) ?></strong><pre><?php print_r( $friends ); ?></pre></p><hr />
@@ -165,7 +173,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                         <p><strong><?php echo esc_html__( 'User Commitments', 'zume' ) ?></strong><pre><?php print_r( $commitments ); ?></pre></p><hr />
                         <p><strong><?php echo esc_html__( 'User MAWL', 'zume' ) ?></strong><pre><?php print_r( $mawl ); ?></pre></p><hr />
                     </div>
-                    <div class="cell medium-6">
+                    <div class="cell medium-4">
                         <p><button class="button cta_set_profile" />Set Profile</button></p>
                         <p><a class="button cta_get_a_coach" href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" />Get a Coach</a></p>
                         <p><button class="button cta_invite_friends" />Invite to Friendship</button></p>

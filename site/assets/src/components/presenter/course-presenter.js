@@ -12,9 +12,11 @@ export class CoursePresenter extends LitElement {
             homeUrl: { type: String },
             assetsPath: { type: String },
             translations: { type: Object },
+            zumeSessions: { attribute: false },
             lessonIndex: { attribute: false },
             view: { attribute: false },
             linkNodes: { attribute: false },
+            showIndex: { attribute: false },
         };
     }
 
@@ -22,26 +24,16 @@ export class CoursePresenter extends LitElement {
         super()
 
         const url = new URL(window.location.href)
-        if ( url.searchParams.has('session') ) {
-            const sessionIndex = Number(url.searchParams.get('session'))
-            if ( Number.isInteger(sessionIndex) ) {
-                this.lessonIndex = sessionIndex - 1
-            } else {
-                this.lessonIndex = 0
-            }
-        } else {
-            this.lessonIndex = 0
-        }
-        this.changeSession(this.lessonIndex, false)
 
-        if ( url.searchParams.has('view') ) {
-            const view = url.searchParams.get('view')
-            if ( courseViews.includes(view) ) {
-                this.view = view
-            }
-        } else {
-            this.view = 'slideshow'
-        }
+        const zumeSessions = this.getZumeSessions(url);
+        this.zumeSessions = zumeSessions
+
+        const lessonIndex = this.getLessonIndex(url);
+        this.lessonIndex = lessonIndex
+
+        this.view = this.getView(url);
+
+        this.changeSession(lessonIndex, false, zumeSessions)
 
         this.handleSessionLink = this.handleSessionLink.bind(this)
         this.handleHistoryPopState = this.handleHistoryPopState.bind(this)
@@ -77,10 +69,67 @@ export class CoursePresenter extends LitElement {
 
     }
 
+    getView(url) {
+        if (url.searchParams.has('view')) {
+            const view = url.searchParams.get('view');
+            if (courseViews.includes(view)) {
+                return view;
+            }
+        } else {
+            return 'slideshow';
+        }
+    }
+
+    getLessonIndex(url) {
+        if (url.searchParams.has('session')) {
+            const sessionIndexRaw = url.searchParams.get('session')
+
+            if (sessionIndexRaw === 'index') {
+                return 'index'
+            }
+
+            const sessionIndex = Number(sessionIndexRaw);
+            if (Number.isInteger(sessionIndex)) {
+                return sessionIndex - 1;
+            } else {
+                return 0;
+            }
+        } else {
+            return 0;
+        }
+    }
+
+    getZumeSessions(url) {
+        const type = url.searchParams.get('type') || '10';
+
+        this.type = type
+
+        let zumeSessions;
+        switch (type) {
+            case '10':
+                zumeSessions = zume10Sessions;
+                break;
+            case '20':
+                zumeSessions = zume20Sessions;
+                break;
+            case 'intensive':
+                zumeSessions = zumeIntensiveSessions;
+                break;
+            default:
+                zumeSessions = zume10Sessions;
+                break;
+        }
+        return zumeSessions;
+    }
+
     handleSessionLink(event) {
         const link = event.target
         const sessionNumber = Number(link.dataset.sessionNumber)
         this.lessonIndex = sessionNumber
+
+        if ( this.showIndex === true ) {
+            this.showIndex = false
+        }
         this.changeSession(this.lessonIndex)
     }
 
@@ -93,16 +142,26 @@ export class CoursePresenter extends LitElement {
         this.changeSession(this.lessonIndex)
     }
 
-    changeSession(index, pushState = true) {
+    changeSession(index, pushState = true, zumeSessions = null) {
+
+        if (index === 'index') {
+            this.showIndex = true
+            return
+        } else {
+            this.showIndex = false
+        }
+
+        const sessions = zumeSessions || this.zumeSessions
+
         let thisIndex = index
         if ( index < 0 ) {
             thisIndex = 0
         }
-        if ( index > zumeSessions.length - 1 ) {
-            thisIndex = zumeSessions.length - 1
+        if ( index > sessions.length - 1 ) {
+            thisIndex = sessions.length - 1
         }
         this.lessonIndex = thisIndex
-        this.session = zumeSessions[thisIndex]
+        this.session = sessions[thisIndex]
 
         if (pushState) {
             this.pushHistory()
@@ -124,12 +183,16 @@ export class CoursePresenter extends LitElement {
     }
     handleHistoryPopState() {
         const url = new URL(location.href)
-        const sessionIndex = url.searchParams.has('session') ? Number(url.searchParams.get('session')) : null
+        const sessionIndex = url.searchParams.has('session') ? url.searchParams.get('session') : null
         const view = url.searchParams.get('view')
 
-        if ( Number.isInteger(sessionIndex) ) {
+        if (Number.isInteger(Number(sessionIndex))) {
             this.lessonIndex = sessionIndex - 1
             this.changeSession(this.lessonIndex, false)
+        }
+        if (sessionIndex === 'index') {
+            this.lessonIndex = 'index'
+            this.changeSession('index', false)
         }
 
         if (view && courseViews.includes(view)) {
@@ -163,7 +226,36 @@ export class CoursePresenter extends LitElement {
         }
     }
 
+    openMenu() {
+        const menu = this.querySelector('#offCanvas')
+        jQuery(menu).foundation('open')
+    }
+
     render() {
+        if ( this.showIndex ) {
+            const containerClass = this.type === 'intensive' ? 'container-xsm' : 'container-sm'
+            return html`
+                <div class="course-index | bg-brand-gradient">
+                    <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
+                    <div class="${containerClass}" data-max-width="750">
+                        <div class="grid | grid-min-8rem gutter0">
+                            ${this.zumeSessions.map((session, sessionNumber) => html`
+                                <button
+                                    class="card-btn | bg-white black m--2 gap--3"
+                                    data-session-number=${sessionNumber}
+                                    @click=${this.handleSessionLink}
+                                >
+                                    <h2 class="f-0 bold">Session</h2>
+                                    <p class="f-3 bold lh-sm">${sessionNumber + 1}</p>
+                                    <span class="icon zume-course brand-light f-3"></span>
+                                </button>
+                            `)}
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+
         /* If this is the overall presenter, then it would have a top bar, navigation buttons etc. as well */
         /* And also have a sidebar with the contents list in */
         return html`
@@ -185,7 +277,7 @@ export class CoursePresenter extends LitElement {
                     <button class="btn" @click=${this.switchViews}>Switch Views</button>
 
                     <div class="stack-1 py-1">
-                        ${zumeSessions.map((session, sessionNumber) => html`
+                        ${this.zumeSessions.map((session, sessionNumber) => html`
                             <button
                                 class="link session-link"
                                 data-session-number="${sessionNumber}"
@@ -204,18 +296,18 @@ export class CoursePresenter extends LitElement {
             </nav>
 
             <span class="p-1 d-block position-relative z-1">
-                <button id="hamburger-menu" class="nav-toggle show">
+                <button id="hamburger-menu" class="nav-toggle show" @click=${this.openMenu}>
                     <span class="hamburger brand"></span>
                 </button>
             </span>
 
             <div class="container"></div>
-            ${
-                this.view === 'guide'
-                ? html`<course-guide title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-guide>`
-                : html`<course-slideshow title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-slideshow>`
-            }
-
+                ${
+                    this.view === 'guide'
+                    ? html`<course-guide title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-guide>`
+                    : html`<course-slideshow title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-slideshow>`
+                }
+            </div>
         `
     }
 

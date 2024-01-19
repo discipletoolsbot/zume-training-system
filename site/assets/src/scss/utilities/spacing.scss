@@ -67,3 +67,13 @@
 .s0 {
     --space: 0;
 }
+
+@for $i from -5 through 5 {
+    .gutter-#{$i} {
+        --gutter: #{spacing($i)};
+    }
+}
+
+.gutter0 {
+    --gutter: 0;
+}
