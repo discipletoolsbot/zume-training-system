@@ -186,6 +186,9 @@ export class CoursePresenter extends LitElement {
         const sessionIndex = url.searchParams.has('session') ? url.searchParams.get('session') : null
         const view = url.searchParams.get('view')
 
+        /* hide any left open overlays from the menu */
+        document.querySelector('.js-off-canvas-overlay')?.classList.remove('is-visible')
+
         if (Number.isInteger(Number(sessionIndex))) {
             this.lessonIndex = sessionIndex - 1
             this.changeSession(this.lessonIndex, false)
