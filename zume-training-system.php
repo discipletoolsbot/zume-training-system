@@ -87,9 +87,7 @@ class Zume_Training {
         require_once( 'translation-utility.php' );
 
         $this->i18n();
-        if ( is_admin() ) {
-            global $zume_translation_file_list;
-        }
+
         require_once( 'languages/editor/loader.php' );
     }
     public static function activation() {
