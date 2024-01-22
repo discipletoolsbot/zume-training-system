@@ -2,7 +2,6 @@
     --bg-color-main: #{color('gray-100')};
     --border-color-main: #{color('gray-200')};
     display: grid;
-    grid-template-columns: auto 1fr 25%;
     grid-template-rows: 1fr auto;
 }
 

@@ -1,0 +1,26 @@
+// with thanks for help from https://codepen.io/KrzysiekF/pen/bGdRaLr?editors=1100
+.progress-circle {
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: var(--width, 210px);
+        height: var(--width, 210px);
+        transform: rotate(-90deg);
+
+        circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: color('gray-200');
+            stroke-width: var(--stroke-width, 10);
+            stroke-linecap: butt;
+        }
+
+        circle:last-of-type {
+            stroke-dasharray: var(--circ, 625px);
+            stroke-dashoffset: calc(var(--circ, 625px) - (var(--circ, 625px) * var(--percent)) / 100);
+            stroke: color('brand-light');
+        }
+    }
+}

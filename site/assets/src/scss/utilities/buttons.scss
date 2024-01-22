@@ -115,8 +115,18 @@ a {
         text-decoration: none;
     }
 
+    &[aria-disabled="true"] {
+        color: #{color('gray-400')};
+        --btn-hover-color: #{color('gray-400')};
+        font-style: italic;
+
+        .icon {
+            color: color('gray-400');
+        }
+    }
+
     .icon {
-        margin-inline-end: spacing(-1);
+        margin-inline-end: 0.5em;
     }
 }
 
