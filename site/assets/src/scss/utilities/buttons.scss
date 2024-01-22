@@ -98,6 +98,69 @@ a {
     }
 }
 
+.menu-btn {
+    @include button;
+
+    padding: spacing(-3) 0;
+    font-weight: 500;
+
+    --btn-color: #{color('gray-900')};
+    --btn-bg-color: none;
+    --btn-border-color: transparent;
+    --btn-hover-color: #{color('brand-light')};
+    --btn-hover-bg-color: none;
+    --btn-hover-border-color: transparent;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &[aria-disabled="true"] {
+        color: #{color('gray-400')};
+        --btn-hover-color: #{color('gray-400')};
+        font-style: italic;
+
+        .icon {
+            color: color('gray-400');
+        }
+    }
+
+    .icon {
+        margin-inline-end: 0.5em;
+    }
+}
+
+.card-btn[role="button"],
+button.card-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    padding: spacing(0);
+    box-shadow: var(--z-box-shadow-medium);
+    border-radius: var(--border-radius);
+    transition: color 100ms linear;
+
+    & > * {
+        pointer-events: none;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: color('brand-light');
+        color: white;
+
+        > .brand-light {
+            transition: color 100ms linear;
+            color: white;
+        }
+    }
+}
+
 .link-light {
     color: color('white');
 

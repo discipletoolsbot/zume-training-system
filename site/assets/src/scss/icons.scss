@@ -7,15 +7,3 @@
         fill: color('brand-lighter');
     }
 }
-
-.icon {
-    width: 1em;
-    height: 1em;
-
-    &:hover, &:focus {
-        svg {
-            stroke: color('brand-lighter');
-            fill: color('brand-lighter');
-        }
-    }
-}

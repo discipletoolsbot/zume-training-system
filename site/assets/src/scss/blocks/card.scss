@@ -1,0 +1,14 @@
+.card {
+    border-radius: var(--border-radius);
+    box-shadow: var(--z-shadow) 2px 2px 3px 0px;
+    padding: spacing(0) spacing(3);
+
+    &.cta {
+        border: 2px solid color('brand-light');
+    }
+
+    .btn {
+        padding-inline: spacing(0);
+        width: 100%;
+    }
+}

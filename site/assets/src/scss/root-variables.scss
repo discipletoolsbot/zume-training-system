@@ -46,6 +46,7 @@
     --z-gray-300: #D7D7D7;
     --z-gray-200: #E2E2E2;
     --z-gray-100: #EFEFEF;
+    --z-success: #A6D282;
     --z-warning-main: #FFF080;
     --z-error-main: #ff3f3f;
     --z-white: #FFF;
@@ -53,6 +54,8 @@
     --z-shadow: rgba(0, 0, 0, 0.1);
     --z-box-shadow-soft: var(--z-shadow) 0px 5px 10px 0px;
     --z-box-shadow-hard: rgba(0,0,0,0.5) 0px 2px 5px 0px;
+    --z-box-shadow-medium: var(--z-shadow) 1px 1px 3px 1px;
+
 
     --header-color-light: var(--z-black);
     --header-color-dark: var(--z-white);

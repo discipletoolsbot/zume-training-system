@@ -11,7 +11,7 @@ export class CourseGuide extends LitElement {
     render() {
         return html`
             <div class="container">
-                <h1>${this.title}</h1>
+                <h1 class="text-center">${this.title}</h1>
                 ${this.sections.map((section, i) => {
                     return html`
                         <course-section .section=${section}></course-section>

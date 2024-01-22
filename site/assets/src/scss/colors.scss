@@ -1,12 +1,15 @@
 $colors: (
     'white',
+    'gray-900',
     'gray-700',
+    'gray-200',
     'brand',
     'brand-light',
     'brand-lighter',
     'brand-fade',
     'black',
-    'error-main'
+    'error-main',
+    'success'
 );
 
 @each $color in $colors {
