@@ -424,15 +424,8 @@ class Zume_Language_Editor_Admin
                     </td>
                     <td style="width:45%; max-width: 300px;">
                         <span style="color:grey;"><?php echo $key ?></span><br>
-                        <textarea
-                            data-postid="<?php echo $trans_post_id ?>"
-                            data-key="<?php echo $key ?>"
-                            style="width: 100%;
-                                border: none;
-                                overflow:hidden;
-                                -webkit-box-sizing: border-box; /* <=iOS4, <= Android  2.3 */
-                                -moz-box-sizing: border-box; /* FF1+ */
-                                box-sizing: border-box;"><?php echo get_post_meta( $trans_post_id, $key, true ) ?></textarea>
+                        <?php echo wp_editor( get_post_meta( $trans_post_id, $key, true ), 'trans'.$string_count, array( 'media_buttons' => false ) );  ?>
+
                     </td>
                     <td>
                         <button type="button" class="button small">Save</button>
