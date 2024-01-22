@@ -7,7 +7,7 @@
     .menu-section {
         position: relative;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 4fr 1fr;
         align-items: center;
 
         background: var(--z-white);
@@ -17,6 +17,10 @@
 
         &:first-child .submenu-toggle{
             display: none;
+        }
+
+        & > * + * {
+            justify-self: center;
         }
     }
     .menu-section:nth-child(2):before,

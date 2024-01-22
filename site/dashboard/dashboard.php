@@ -109,8 +109,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                         <a href="#" class="menu-section__title menu-btn">
                             <span class="icon zume-start brand-light"></span>
                             <?php echo esc_html__( 'Getting Started', 'zume' ) ?>
-                            <progress-circle percent="66" radius="12"></progress-circle>
                         </a>
+                        <progress-circle percent="66" radius="12"></progress-circle>
 
                         <ul class="nested is-active">
                             <li><a class="menu-btn" href="#" aria-disabled="true" data-completed="true"><span class="icon zume-profile brand-light"></span> <span><?php echo esc_html__( 'Set Profile', 'zume' ) ?></span></a><span class="icon zume-check-mark success"></span></li>
