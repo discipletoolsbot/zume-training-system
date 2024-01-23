@@ -132,7 +132,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                             <li><a class="menu-btn" href="#"><span class="icon zume-tools brand-light"></span><span><?php echo esc_html__( 'My Tools', 'zume' ) ?></span></a></li>
                             <li><a class="menu-btn" href="#"><span class="icon zume-plans brand-light"></span><span><?php echo esc_html__( 'My Plans', 'zume' ) ?></span></a></li>
                             <li><a class="menu-btn" href="#"><span class="icon zume-churches brand-light"></span><span><?php echo esc_html__( 'My Churches', 'zume' ) ?></span></a></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-pin brand-light"></span><span><?php echo esc_html__( 'My Maps', 'zume' ) ?></span></a></li>
+                            <li><a class="menu-btn" href="#"><span class="icon zume-location brand-light"></span><span><?php echo esc_html__( 'My Maps', 'zume' ) ?></span></a></li>
                         </ul>
                     </li>
                 </ul>
