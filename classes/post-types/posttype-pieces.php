@@ -42,15 +42,20 @@ class Zume_Training_Pieces_Post_Type
         add_filter( 'post_type_link', array( $this, 'remove_slug' ), 10, 3 );
         add_action( 'add_meta_boxes', [ $this, 'add_metabox' ] );
         add_action( 'save_post', [ $this, 'zume_pieces_save' ] );
+        add_action( 'admin_print_scripts', 'disable_autosave');
 
         if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
-
             add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
         }
-
     }
-    public function remove_slug( $permalink, $post, $leavename ){
+    public function disable_autosave(){
+        global $post;
+        if( get_post_type($post->ID) === $this->post_type ) {
+            wp_dequeue_script('autosave');
+        }
+    }
+    public function remove_slug( $permalink, $post, $leavename ) {
         global $wp_post_types;
         foreach ( $wp_post_types as $type => $custom_post ){
             if ( $custom_post->_builtin == false && $type == $post->post_type ){
@@ -145,19 +150,27 @@ class Zume_Training_Pieces_Post_Type
     }
 
 
-
     public function zume_pieces_save( $post_id ) {
 
+        $post = get_post( $post_id );
+
         // Bail if we're doing an auto save
-        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return;
+        if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
+            return;
+        }
+
+        if ( 'auto-draft' === $post->post_status ) {
+            return;
         }
 
         // if our nonce isn't there, or we can't verify it, bail
-        if ( ! isset( $_POST['zume_piece_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['zume_piece_nonce'] ) ), 'zume_piece_nonce'.get_current_user_id() ) ) { return;
+        if ( ! isset( $_POST['zume_piece_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['zume_piece_nonce'] ) ), 'zume_piece_nonce'.get_current_user_id() ) ) {
+            return;
         }
 
         // if our current user can't edit this post, bail
-        if ( !current_user_can( 'edit_posts' ) ) { return;
+        if ( !current_user_can( 'edit_posts' ) ) {
+            return;
         }
 
         if ( isset( $_POST['zume_piece'] ) ) {
