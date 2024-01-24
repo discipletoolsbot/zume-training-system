@@ -1,4 +1,32 @@
 {
+  "Zume-Icons-Square.eot": {
+    "file": "assets/Zume-Icons-Square-20d167ed.eot",
+    "src": "Zume-Icons-Square.eot"
+  },
+  "Zume-Icons-Square.svg": {
+    "file": "assets/Zume-Icons-Square-7f3b2439.svg",
+    "src": "Zume-Icons-Square.svg"
+  },
+  "Zume-Icons-Square.ttf": {
+    "file": "assets/Zume-Icons-Square-fb0101c6.ttf",
+    "src": "Zume-Icons-Square.ttf"
+  },
+  "Zume-Icons-Square.woff": {
+    "file": "assets/Zume-Icons-Square-c7f6c4a2.woff",
+    "src": "Zume-Icons-Square.woff"
+  },
+  "Zume-Icons.svg": {
+    "file": "assets/Zume-Icons-8346df54.svg",
+    "src": "Zume-Icons.svg"
+  },
+  "Zume-Icons.ttf": {
+    "file": "assets/Zume-Icons-b039a768.ttf",
+    "src": "Zume-Icons.ttf"
+  },
+  "Zume-Icons.woff": {
+    "file": "assets/Zume-Icons-81a69ba0.woff",
+    "src": "Zume-Icons.woff"
+  },
   "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg": {
     "file": "assets/Zume-Icons-8346df54.svg",
     "src": "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg"
