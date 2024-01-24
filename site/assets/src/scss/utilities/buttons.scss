@@ -124,6 +124,7 @@ a {
         color: #{color('gray-400')};
         --btn-hover-color: #{color('gray-400')};
         font-style: italic;
+        cursor: default;
 
         .icon {
             color: color('gray-400');
