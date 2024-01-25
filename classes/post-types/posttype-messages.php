@@ -112,7 +112,7 @@ class Zume_Training_Messages_Post_Type {
         global $wpdb;
         $list = $wpdb->get_results(
             "SELECT ID, post_parent, post_title
-                    FROM $wpdb->posts
+                    FROM {$wpdb->prefix}posts
                     WHERE post_type = 'zume_messages'", ARRAY_A );
 
         $children = $this->get_message_children( $post_id, $list, [], $post_id );

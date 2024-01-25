@@ -119,7 +119,7 @@ function zume_language_relationships( $post_id ) {
     $list = $wpdb->get_var( $wpdb->prepare(
         "
 			SELECT description
-			FROM wp_term_taxonomy tr
+			FROM {$wpdb->prefix}term_taxonomy tr
             WHERE tr.description LIKE %s AND tr.taxonomy = 'post_translations';
 		",
         '%' . $wpdb->esc_like( $post_id ) . '%'
@@ -130,7 +130,7 @@ function zume_get_post_by_slug( $post_slug, $post_type = 'zume_page' ) {
     global $wpdb;
 
     $post = $wpdb->get_row( $wpdb->prepare(
-        " SELECT * FROM $wpdb->posts
+        " SELECT * FROM {$wpdb->prefix}posts
             WHERE post_name = %s
             AND post_type = %s
         ",
@@ -139,6 +139,45 @@ function zume_get_post_by_slug( $post_slug, $post_type = 'zume_page' ) {
     ) );
 
     return $post;
+}
+if ( !function_exists( 'zume_english_pieces' ) ) {
+    function zume_english_pieces() {
+        return [
+            1 => 20730, // God uses ordinary people
+            2 => 20731, // teach them to obey
+            3 => 20732, // spiritual breathing
+            4 => 20733, // soaps bible reading
+            5 => 20735, // accountability groups
+            6 => 20737, // consumers vs producers
+            7 => 20738, // prayer cycle
+            8 => 20739, // list of 100
+            9 => 20740, // kingdom economy
+            10 => 20741, // the gospel
+            11 => 20742, // baptism
+            12 => 20743, // 3-minute testimony
+            13 => 20744, // greatest blessing
+            14 => 20745, // duckling discipleship
+            15 => 20746, // seeing where God's kingdom isn't
+            16 => 20747, // the lord's supper
+            17 => 20748, // prayer walking
+            18 => 20750, // person of peace
+            19 => 20749, // bless prayer
+            20 => 20751, // faithfulness
+            21 => 20752, // 3/3 group pattern
+            22 => 20753, // training cycle
+            23 => 20755, // leadership cells
+            24 => 20756, // non-sequential
+            25 => 20757, // pace
+            26 => 20758, // part of two churches
+            27 => 19848, // post training plan
+            28 => 20759, // coaching checklist
+            29 => 20760, // leadership in networks
+            30 => 20761, // peer mentoring groups
+            31 => 20762, // four fields tool
+            32 => 20763, // generation mapping
+            69 => 23797, // 3-circles
+        ];
+    }
 }
 if ( !function_exists( 'zume_landing_page_post_id' ) ) {
     function zume_landing_page_post_id( int $number ): int {

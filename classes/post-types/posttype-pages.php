@@ -145,7 +145,7 @@ class Zume_Training_Menu_Post_Type
             if ( $slug !== $current_public_key ) {
                 update_post_meta( $post_id, $this->meta_key, $slug );
                 global $wpdb;
-                $wpdb->query( $wpdb->prepare( "UPDATE $wpdb->posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
+                $wpdb->query( $wpdb->prepare( "UPDATE {$wpdb->prefix}posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
             }
         }
     }

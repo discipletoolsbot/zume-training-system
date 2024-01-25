@@ -54,7 +54,6 @@ function zume_training() {
         return false;
     }
 
-
     if ( !defined( 'DT_FUNCTIONS_READY' ) ){
         require_once get_template_directory() . '/dt-core/global-functions.php';
     }
@@ -85,7 +84,11 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
+        require_once( 'translation-utility.php' );
+
         $this->i18n();
+
+        require_once( 'languages/editor/loader.php' );
     }
     public static function activation() {
     }
@@ -311,10 +314,10 @@ class Zume_Training {
 
         global $wpdb;
         $user_friend_key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
-        $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
+        $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->prefix}postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         while ( $key_exists ){
             $user_friend_key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
-            $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
+            $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->prefix}postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         }
 
         $user_ui_language = '';

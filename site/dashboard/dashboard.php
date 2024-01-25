@@ -197,6 +197,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                         <p><button class="button cta_host_progress" />HOST Progress</button></p>
                         <hr>
                         <p><button class="button cta_other_commitments" />Other Commitments</button></p>
+                        <hr>
+                        <a href="<?php echo esc_url( dt_login_url( 'logout' ) ) ?>" class="btn outline"><?php echo esc_html__( 'Logout', 'zume' ) ?></a>
                     </div>
                 </div>
             </div>
