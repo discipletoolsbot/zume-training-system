@@ -1,5 +1,13 @@
 import { LitElement, html } from 'lit';
 
+/**
+ * This highest level of the dashboard should mostly be focussed on the routing
+ * for the main area and the title area.
+ *
+ * The sidebar should react to the state of their journey as well as indicate where they currently are.
+ *
+ * The secondary area should have the correct CTA for either their journey or their current page.
+ */
 export class DashBoard extends LitElement {
 
     render() {
