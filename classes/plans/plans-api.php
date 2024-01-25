@@ -132,7 +132,7 @@ class Zume_Plans_Endpoints
         $key = $params['key'];
 
         global $wpdb;
-        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
+        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->prefix}postmeta WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
 
         if ( empty( $post_id_exists ) ) {
             return [
@@ -167,7 +167,7 @@ class Zume_Plans_Endpoints
             'user_id' => $user_id,
         ];
 
-        $delete = $wpdb->delete( 'wp_dt_reports', $fields );
+        $delete = $wpdb->delete( $wpdb->prefix . 'dt_reports', $fields );
 
         return $delete;
     }

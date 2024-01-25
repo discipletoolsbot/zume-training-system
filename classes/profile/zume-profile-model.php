@@ -79,6 +79,8 @@ class Zume_Profile_Model {
             if ( is_wp_error( $contact ) ) {
                 return $contact;
             }
+        } else {
+            $contact = DT_Posts::get_post( 'contacts', $contact_id, false, false, true );
         }
 
         self::log_setting_of_profile( $user_id );
@@ -101,7 +103,7 @@ class Zume_Profile_Model {
             zume_log_insert( 'system', 'set_profile_phone' );
         }
 
-        if ( $profile['location']['ip'] !== 'ip' ) {
+        if ( $profile['location']['source'] !== 'ip' ) {
             zume_log_insert( 'system', 'set_profile_location' );
         }
     }

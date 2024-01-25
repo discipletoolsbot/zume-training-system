@@ -107,18 +107,18 @@ class Zume_Course {
             //phpcs:disable
             $sql                 = $wpdb->prepare(
                 "SELECT ID
-			FROM $wpdb->posts
-			WHERE post_title = %s
-			AND post_type IN ($post_type_in_string)",
+                FROM {$wpdb->prefix}posts
+                WHERE post_title = %s
+                AND post_type IN ($post_type_in_string)",
                 $page_title
             );
             //phpcs:enable
         } else {
             $sql = $wpdb->prepare(
                 "SELECT ID
-			FROM $wpdb->posts
-			WHERE post_title = %s
-			AND post_type = %s",
+                FROM {$wpdb->prefix}posts
+                WHERE post_title = %s
+                AND post_type = %s",
                 $page_title,
                 $post_type
             );
