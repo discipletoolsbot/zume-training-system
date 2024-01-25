@@ -788,4 +788,4 @@ var ze=Object.defineProperty;var Re=(i,e,t)=>e in i?ze(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("progress-circle",Mt);const Se=document.querySelector(".nav-toggle"),zt=document.querySelector("#nav");Se&&Se.addEventListener("click",i=>{zt.classList.toggle("nav--visible")});const Rt=({title:i,url:e,copyFeedback:t,shareFeedback:s})=>({title:i,url:e,webShareSupported:navigator.share,clipboardSupported:navigator.clipboard,shareFeedback:"",copyFeedback:"",noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported},share(){navigator.share({title:i,url:e,text:i}).then(()=>{this.shareFeedback=s,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(n=>console.error("Error sharing",n))},copyLink(){navigator.clipboard.writeText(e).then(()=>{this.copyFeedback=t,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(n=>console.error(n))}});window.zumeInitShareLinks=()=>{Oe({share:Rt}).mount()};
-//# sourceMappingURL=main-3c865b1f.js.map
+//# sourceMappingURL=main-7c755e3b.js.map
