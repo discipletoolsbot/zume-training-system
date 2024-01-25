@@ -131,8 +131,8 @@ class Zume_Plans_Endpoints
 
         $key = $params['key'];
 
-        global $wpdb;
-        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$wpdb->prefix}postmeta WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
+        global $wpdb, $table_prefix;
+        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
 
         if ( empty( $post_id_exists ) ) {
             return [
@@ -147,7 +147,7 @@ class Zume_Plans_Endpoints
         return DT_Posts::update_post( self::$post_type, $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
     }
     public function delete_plan( WP_REST_Request $request ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
 
         if ( ! is_user_logged_in() ) {
             return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
@@ -167,7 +167,7 @@ class Zume_Plans_Endpoints
             'user_id' => $user_id,
         ];
 
-        $delete = $wpdb->delete( $wpdb->prefix . 'dt_reports', $fields );
+        $delete = $wpdb->delete( $table_prefix . 'dt_reports', $fields );
 
         return $delete;
     }

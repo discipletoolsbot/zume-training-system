@@ -474,14 +474,14 @@ class Zume_Language_Editor_Admin
     }
 
     public function get_zume_pieces( $language_code = 'en' ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
         $list = $wpdb->get_results($wpdb->prepare(
             "SELECT p.ID, p.post_title, p.post_content
-                    FROM {$wpdb->prefix}term_relationships tr
-                    LEFT JOIN {$wpdb->prefix}posts p ON p.ID=tr.object_id AND p.post_type = 'zume_pieces'
+                    FROM {$table_prefix}term_relationships tr
+                    LEFT JOIN {$table_prefix}posts p ON p.ID=tr.object_id AND p.post_type = 'zume_pieces'
                     WHERE tr.term_taxonomy_id = (SELECT tt.term_taxonomy_id
-                        FROM {$wpdb->prefix}terms t
-                        JOIN {$wpdb->prefix}term_taxonomy tt ON tt.term_id=t.term_id
+                        FROM {$table_prefix}terms t
+                        JOIN {$table_prefix}term_taxonomy tt ON tt.term_id=t.term_id
                         WHERE tt.taxonomy = 'language' AND t.slug = %s LIMIT 1)
                         AND p.ID IS NOT NULL;", $language_code ), ARRAY_A);
 

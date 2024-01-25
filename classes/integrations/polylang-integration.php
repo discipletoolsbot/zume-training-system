@@ -115,11 +115,11 @@ function zume_core_posts( $page_title ) {
     return $ids[$page_title] ?? $ids[$lc] ?? 0;
 }
 function zume_language_relationships( $post_id ) {
-    global $wpdb;
+    global $wpdb, $table_prefix;
     $list = $wpdb->get_var( $wpdb->prepare(
         "
 			SELECT description
-			FROM {$wpdb->prefix}term_taxonomy tr
+			FROM {$table_prefix}term_taxonomy tr
             WHERE tr.description LIKE %s AND tr.taxonomy = 'post_translations';
 		",
         '%' . $wpdb->esc_like( $post_id ) . '%'
@@ -127,10 +127,10 @@ function zume_language_relationships( $post_id ) {
     return maybe_unserialize( $list );
 }
 function zume_get_post_by_slug( $post_slug, $post_type = 'zume_page' ) {
-    global $wpdb;
+    global $wpdb, $table_prefix;
 
     $post = $wpdb->get_row( $wpdb->prepare(
-        " SELECT * FROM {$wpdb->prefix}posts
+        " SELECT * FROM {$table_prefix}posts
             WHERE post_name = %s
             AND post_type = %s
         ",

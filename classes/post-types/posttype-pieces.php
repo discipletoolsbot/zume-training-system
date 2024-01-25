@@ -42,17 +42,10 @@ class Zume_Training_Pieces_Post_Type
         add_filter( 'post_type_link', array( $this, 'remove_slug' ), 10, 3 );
         add_action( 'add_meta_boxes', [ $this, 'add_metabox' ] );
         add_action( 'save_post', [ $this, 'zume_pieces_save' ] );
-        add_action( 'admin_print_scripts', 'disable_autosave');
 
         if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
             add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
-        }
-    }
-    public function disable_autosave(){
-        global $post;
-        if( get_post_type($post->ID) === $this->post_type ) {
-            wp_dequeue_script('autosave');
         }
     }
     public function remove_slug( $permalink, $post, $leavename ) {

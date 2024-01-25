@@ -95,9 +95,9 @@ class Zume_System_Encouragement_API
         return self::_get_current_plan( $user_id );
     }
     public static function _get_current_plan( $user_id ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
         $raw_plan = $wpdb->get_results( $wpdb->prepare(
-            "SELECT * FROM {$wpdb->prefix}dt_zume_message_plan WHERE user_id = %d"
+            "SELECT * FROM {$table_prefix}dt_zume_message_plan WHERE user_id = %d"
             , $user_id ), ARRAY_A );
 
         $log = zume_get_user_log( $user_id );
@@ -134,11 +134,11 @@ class Zume_System_Encouragement_API
         }
     }
     public static function _delete_current_plan( $user_id ) {
-        global $wpdb;
-        $wpdb->query($wpdb->prepare( "DELETE FROM {$wpdb->prefix}dt_zume_message_plan WHERE user_id = $user_id AND sent IS NULL", $user_id ) );
+        global $wpdb, $table_prefix;
+        $wpdb->query($wpdb->prepare( "DELETE FROM {$table_prefix}dt_zume_message_plan WHERE user_id = %s AND sent IS NULL", $user_id ) );
     }
     public static function _install_plan( $user_id, $plan ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
 
         if ( ! is_null( $plan ) && ! is_array( $plan ) ) {
             return;
@@ -148,7 +148,7 @@ class Zume_System_Encouragement_API
         foreach( $plan as $message ) {
             $message['user_id'] = $user_id;
             $message['to'] = $user->user_email;
-            $wpdb->insert( $wpdb->prefix .'dt_zume_message_plan', $message );
+            $wpdb->insert( $table_prefix .'dt_zume_message_plan', $message );
         }
     }
     public static function _get_recommended_plan( $user_id, $type, $subtype ) {
@@ -402,14 +402,14 @@ class Zume_System_Encouragement_API
         return $plan;
     }
     public static function _query_plans() {
-        global $wpdb;
+        global $wpdb, $table_prefix;
         $raw_plans = $wpdb->get_results( "
             SELECT p.ID, p.post_parent, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as footer, pm3.meta_value as action_keys
-                FROM {$wpdb->prefix}posts p
-                LEFT JOIN {$wpdb->prefix}postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_email_subject'
-                LEFT JOIN {$wpdb->prefix}postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_email_body'
-                LEFT JOIN {$wpdb->prefix}postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_email_footer'
-                LEFT JOIN {$wpdb->prefix}postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_action_keys'
+                FROM {$table_prefix}posts p
+                LEFT JOIN {$table_prefix}postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_email_subject'
+                LEFT JOIN {$table_prefix}postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_email_body'
+                LEFT JOIN {$table_prefix}postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_email_footer'
+                LEFT JOIN {$table_prefix}postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_action_keys'
                 WHERE p.post_type = 'zume_messages'
                 AND p.post_status = 'publish'", ARRAY_A
         );
