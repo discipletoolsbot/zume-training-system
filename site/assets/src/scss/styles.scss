@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-@import '../../fonts/ZumeIcons/style.css';
+@import '../../fonts/ZumeIconsSquare/style.css';
 
 @import 'reset';
 @import 'variables';
@@ -80,7 +80,7 @@ ul[role="list"] {
     vertical-align: middle;
   }
   &.check-list li:before {
-    font-family: 'Zume-Icons';
+    font-family: 'Zume-Icons-Square';
     content: "\e900";
   }
   &.check-list[data-check-size="1"] li:before {
