@@ -2,7 +2,9 @@
     --bg-color-main: #{color('gray-100')};
     --border-color-main: #{color('gray-200')};
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr minmax(auto, 16rem);
+    min-height: 100vh;
 }
 
 .dashboard__sidebar {
