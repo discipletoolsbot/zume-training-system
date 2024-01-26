@@ -12,6 +12,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public $root = 'zume_app';
     public $type = 'dashboard';
     public $lang = 'en';
+    public $base_url = '';
     public static $token = 'zume_app_dashboard';
 
     private static $_instance = null;
@@ -37,6 +38,12 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
+            if ( $lang_code === 'en' ) {
+                $this->base_url = '/' . $page_slug;
+            } else {
+                $this->base_url = '/' . $lang_code . '/' . $page_slug;
+            }
+
             $this->require_authentication();
 
             $this->set_locale( $lang_code );
@@ -61,7 +68,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
-            add_action( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 100 );
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
         }
     }
@@ -74,46 +80,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return zume_training_magic_url_base_allowed_css();
     }
-    public function wp_enqueue_scripts() {
-        wp_enqueue_script( 'zume_dashboard', plugin_dir_url( __FILE__ ) . 'dash.js', [ 'jquery' ], filemtime( plugin_dir_path( __FILE__ ) . 'dash.js' ), true );
-        wp_localize_script(
-            'zume_dashboard', 'zumeDashboard', array(
-                'root' => esc_url_raw( rest_url() ),
-                'nonce' => wp_create_nonce( 'wp_rest' ),
-                'site_url' => get_site_url(),
-                'template_dir' => get_template_directory_uri(),
-                'user_profile' => zume_get_user_profile(),
-                'training_items' => zume_training_items(),
-                'friends' => zume_get_user_friends(),
-                'translations' => [
-                    'share' => __( 'Share', 'zume' ),
-                    'copy_link' => __( 'Copy Link', 'zume' ),
-                    'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
-                    'share_feedback' => __( 'Thanks!', 'zume' ),
-                    'copy_feedback' => __( 'Link copied', 'zume' ),
-                    'getting_started' => __( 'Getting Started', 'zume' ),
-                    'set_profile' => __( 'Set Profile', 'zume' ),
-                    'plan_a_training' => __( 'Plan a Training', 'zume' ),
-                    'get_a_coach' => __( 'Get a Coach', 'zume' ),
-                    'training' => __( 'Training', 'zume' ),
-                    'my_progress' => __( 'My Progress', 'zume' ),
-                    'my_training' => __( 'My Training', 'zume' ),
-                    'practicing' => __( 'Practicing', 'zume' ),
-                    'my_tools' => __( 'My Tools', 'zume' ),
-                    'my_plans' => __( 'My Plans', 'zume' ),
-                    'my_churches' => __( 'My Churches', 'zume' ),
-                    'my_maps' => __( 'My Maps', 'zume' ),
-                    'launch_course' => __( 'Launch Course', 'zume' ),
-                    'ten_session_course' => __( '10 Session Course', 'zume' ),
-                    'twenty_session_course' => __( '20 Session Course', 'zume' ),
-                    'three_day_intensive_course' => __( '3 Day Intensive Course', 'zume' ),
-                ],
-                'urls' => [
-                    'launch_ten_session_course' => esc_url( zume_10_session_url() ),
-                ],
-            )
-        );
-    }
 
     public function header_style(){
         ?>
@@ -123,6 +89,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'root' => esc_url_raw( rest_url() ),
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'site_url' => get_site_url(),
+                'base_url' => $this->base_url,
                 'template_dir' => get_template_directory_uri(),
                 'user_profile' => zume_get_user_profile(),
                 'training_items' => zume_training_items(),

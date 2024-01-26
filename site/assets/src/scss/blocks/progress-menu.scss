@@ -85,10 +85,10 @@
         }
     }
 
-    .menu-btn + .icon {
+    nav-link + .icon {
         opacity: 0;
     }
-    .menu-btn[data-completed="true"] + .icon {
+    nav-link[completed] + .icon {
         opacity: 1;
     }
 }

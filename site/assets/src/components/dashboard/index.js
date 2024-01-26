@@ -1,1 +1,5 @@
 import './dash-board'
+import './dash-getting-started'
+import './dash-training'
+import './dash-practicing'
+import './dash-not-found'

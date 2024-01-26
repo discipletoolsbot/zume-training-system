@@ -15,30 +15,6 @@
     "file": "assets/Zume-Icons-Square-c7f6c4a2.woff",
     "src": "Zume-Icons-Square.woff"
   },
-  "Zume-Icons.svg": {
-    "file": "assets/Zume-Icons-8346df54.svg",
-    "src": "Zume-Icons.svg"
-  },
-  "Zume-Icons.ttf": {
-    "file": "assets/Zume-Icons-b039a768.ttf",
-    "src": "Zume-Icons.ttf"
-  },
-  "Zume-Icons.woff": {
-    "file": "assets/Zume-Icons-81a69ba0.woff",
-    "src": "Zume-Icons.woff"
-  },
-  "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg": {
-    "file": "assets/Zume-Icons-8346df54.svg",
-    "src": "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.svg"
-  },
-  "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.ttf": {
-    "file": "assets/Zume-Icons-b039a768.ttf",
-    "src": "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.ttf"
-  },
-  "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.woff": {
-    "file": "assets/Zume-Icons-81a69ba0.woff",
-    "src": "site/assets/fonts/ZumeIcons/fonts/Zume-Icons.woff"
-  },
   "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.eot": {
     "file": "assets/Zume-Icons-Square-20d167ed.eot",
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.eot"
@@ -56,7 +32,7 @@
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.woff"
   },
   "site/assets/src/main.css": {
-    "file": "assets/main-17e28915.css",
+    "file": "assets/main-9efb2a8e.css",
     "src": "site/assets/src/main.css"
   },
   "site/assets/src/main.js": {
@@ -67,9 +43,9 @@
       "assets/Zume-Icons-Square-7f3b2439.svg"
     ],
     "css": [
-      "assets/main-17e28915.css"
+      "assets/main-9efb2a8e.css"
     ],
-    "file": "assets/main-7c755e3b.js",
+    "file": "assets/main-c8e918dd.js",
     "isEntry": true,
     "src": "site/assets/src/main.js"
   }

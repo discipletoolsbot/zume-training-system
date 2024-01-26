@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { router } from 'lit-element-router';
 
 /**
  * This highest level of the dashboard should mostly be focussed on the routing
@@ -8,7 +9,81 @@ import { LitElement, html } from 'lit';
  *
  * The secondary area should have the correct CTA for either their journey or their current page.
  */
-export class DashBoard extends LitElement {
+export class DashBoard extends router(LitElement) {
+    static get properties() {
+        return {
+            route: { type: String },
+            params: { type: Object },
+            query: { type: Object },
+        };
+    }
+
+    static get routes() {
+        return [
+            {
+                name: 'getting-started',
+                pattern: `${zumeDashboard.base_url}/getting-started`,
+                data: {
+                    component: 'dash-getting-started',
+                },
+            },
+            {
+                name: 'training',
+                pattern: `${zumeDashboard.base_url}/training`,
+                data: {
+                    component: 'dash-training',
+                },
+            },
+            {
+                name: 'practicing',
+                pattern: `${zumeDashboard.base_url}/practicing`,
+                data: {
+                    component: 'dash-practicing',
+                },
+            },
+            {
+                name: 'not-found',
+                pattern: '*',
+                data: {
+                    component: 'dash-not-found',
+                },
+            }
+        ]
+    }
+
+    constructor() {
+        super()
+        this.route = ''
+        this.params = {}
+        this.query = {}
+        this.data = {}
+
+        this.addEventListener('route', (event) => {
+            console.log(event)
+        })
+    }
+
+    router(route, params, query, data) {
+        this.route = route
+        this.params = params
+        this.query = query
+        this.data = data
+    }
+
+    makeHref(slug) {
+        return `${zumeDashboard.base_url}/${slug}`
+    }
+
+    renderRoute() {
+        const { component } = this.data
+
+        if ( !component ) {
+            return ''
+        }
+
+        const element = document.createElement(component)
+        return element
+    }
 
     render() {
         return html`
@@ -17,39 +92,123 @@ export class DashBoard extends LitElement {
             <div class="dashboard__sidebar">
                 <ul class="stack-2 | progress-menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
                     <li class="menu-section">
-                        <a href="#" class="menu-section__title menu-btn">
-                            <span class="icon zume-start brand-light"></span>
-                            ${zumeDashboard.translations.getting_started}
-                        </a>
+                        <nav-link
+                            href=${this.makeHref('getting-started')}
+                            class="menu-section__title menu-btn"
+                            icon="zume-start"
+                            text=${zumeDashboard.translations.getting_started}>
+                        </nav-link>
                         <progress-circle percent="66" radius="12"></progress-circle>
 
                         <ul class="nested is-active">
-                            <li><a class="menu-btn" href="#" aria-disabled="true" data-completed="true"><span class="icon zume-profile brand-light"></span> <span>${zumeDashboard.translations.set_profile}</span></a><span class="icon zume-check-mark success"></span></li>
-                            <li><a class="menu-btn" href="#" aria-disabled="true" data-completed="true"><span class="icon zume-start-group brand-light"></span><span>${zumeDashboard.translations.plan_a_training}</span></a><span class="icon zume-check-mark success"></span></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-coach brand-light"></span><span>${zumeDashboard.translations.get_a_coach}</span></a><span class="icon zume-check-mark success"></span></li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    ?disabled=${true}
+                                    ?completed=${true}
+                                    icon="zume-profile"
+                                    text=${zumeDashboard.translations.set_profile}
+                                ></nav-link>
+                                <span class="icon zume-check-mark success"></span>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    ?disabled=${true}
+                                    ?completed=${true}
+                                    icon="zume-start"
+                                    text=${zumeDashboard.translations.plan_a_training}
+                                ></nav-link>
+                                <span class="icon zume-check-mark success"></span>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-coach"
+                                    text=${zumeDashboard.translations.get_a_coach}
+                                ></nav-link>
+                                <span class="icon zume-check-mark success"></span>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-section">
-                        <a href="#" class="menu-section__title menu-btn"><span class="icon zume-training brand-light"></span>${zumeDashboard.translations.training}</a>
+                        <nav-link
+                            href=${this.makeHref('training')}
+                            class="menu-section__title menu-btn"
+                            icon="zume-training"
+                            text=${zumeDashboard.translations.training}
+                        >
+                        </nav-link>
                         <ul class="nested is-active">
-                            <li><a class="menu-btn" href="#"><span class="icon zume-progress brand-light"></span><span>${zumeDashboard.translations.my_progress}</span></a></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-group brand-light"></span><span>${zumeDashboard.translations.my_training}</span></a></li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-progress"
+                                    text=${zumeDashboard.translations.my_progress}
+                                ></nav-link>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-group"
+                                    text=${zumeDashboard.translations.my_training}
+                                ></nav-link>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-section">
-                        <a href="#" class="menu-section__title menu-btn"><span class="icon zume-practicing brand-light"></span>${zumeDashboard.translations.practicing}</a>
+                        <nav-link
+                            href=${this.makeHref('practicing')}
+                            class="menu-section__title menu-btn"
+                            icon="zume-practicing"
+                            text=${zumeDashboard.translations.practicing}
+                        ></nav-link>
                         <ul class="nested">
-                            <li><a class="menu-btn" href="#"><span class="icon zume-tools brand-light"></span><span>${zumeDashboard.translations.my_tools}</span></a></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-plans brand-light"></span><span>${zumeDashboard.translations.my_plans}</span></a></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-churches brand-light"></span><span>${zumeDashboard.translations.my_churches}</span></a></li>
-                            <li><a class="menu-btn" href="#"><span class="icon zume-location brand-light"></span><span>${zumeDashboard.translations.my_maps}</span></a></li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-tools"
+                                    text=${zumeDashboard.translations.my_tools}
+                                ></nav-link>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-plans"
+                                    text=${zumeDashboard.translations.my_plans}
+                                ></nav-link>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-churches"
+                                    text=${zumeDashboard.translations.my_churches}
+                                ></nav-link>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href="#"
+                                    icon="zume-location"
+                                    text=${zumeDashboard.translations.my_maps}
+                                ></nav-link>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
             <div class="dashboard__titlebar">
-                <h1 class="h3">Title here</h1>
+                ${this.renderRoute()}
+
                 <button class="btn uppercase light" data-toggle="launch-course-panel">
                     ${zumeDashboard.translations.launch_course}
                 </button>
@@ -64,6 +223,7 @@ export class DashBoard extends LitElement {
             </div>
 
             <div class="dashboard__main">
+
             </div>
             <!--END DEV SECTION -->
 
