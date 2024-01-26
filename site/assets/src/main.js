@@ -1,4 +1,3 @@
-import './components/routing/index'
 import './components/wizard/index'
 import './components/dashboard/index'
 import './components/presenter/index'
