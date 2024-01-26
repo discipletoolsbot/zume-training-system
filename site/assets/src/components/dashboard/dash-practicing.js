@@ -3,7 +3,11 @@ import { LitElement, html } from 'lit';
 export class DashPracticing extends LitElement {
 
     render() {
-        return html`<h1 class="h3">Practicing</h1>`;
+        return html`
+            <dash-content>
+                <h1 class="h3" slot="header">Practicing</h1>
+            </dash-content>
+        `;
     }
 
     createRenderRoot() {

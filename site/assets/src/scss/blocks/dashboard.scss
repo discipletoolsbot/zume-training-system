@@ -2,10 +2,8 @@
     --bg-color-main: #{color('gray-100')};
     --border-color-main: #{color('gray-200')};
     display: grid;
-    grid-template-areas:"sidebar header header"
-                        "sidebar main secondary";
-    grid-template-columns: auto 1fr minmax(auto, 16rem);
-    grid-template-rows: auto 1fr;
+    grid-template-areas:"sidebar content";
+    grid-template-columns: minmax(auto, 20rem) 1fr;
     min-height: 100vh;
 }
 
@@ -16,29 +14,6 @@
     padding: spacing(0);
 }
 
-.dashboard__titlebar {
-    grid-area: header;
-    background-color: var(--bg-color-main);
-    border-block-end: 2px solid var(--border-color-main);
-    padding: spacing(0) spacing(2);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h1 {
-        margin-block-end: 0;
-    }
-}
-
-.dashboard__main {
-    grid-area: main;
-    background-color: blue;
-    background-color: var(--bg-color-main);
-}
-
-.dashboard__secondary {
-    grid-area: secondary;
-    background-color: plum;
-    background-color: var(--bg-color-main);
-    padding: spacing(0);
+.dashboard__content {
+    grid-area: content;
 }
