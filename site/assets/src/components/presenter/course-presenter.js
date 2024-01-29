@@ -249,7 +249,7 @@ export class CoursePresenter extends LitElement {
                             <div class="grid | grid-min-8rem gutter0">
                                 ${this.zumeSessions.map((session, sessionNumber) => html`
                                     <button
-                                        class="card-btn | bg-white black m--2 gap--3"
+                                        class="card-btn | bg-white black m--2 gap--3 aspect-1 justify-content-evenly"
                                         data-session-number=${sessionNumber}
                                         @click=${this.handleSessionLink}
                                     >

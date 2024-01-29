@@ -1,6 +1,6 @@
 .dashboard {
-    --bg-color-main: #{color('gray-100')};
-    --border-color-main: #{color('gray-200')};
+    --bg-color-main: #{color('white')};
+    --border-color-main: #{color('gray-100')};
     display: grid;
     grid-template-areas:"sidebar content";
     grid-template-columns: minmax(auto, 20rem) 1fr;

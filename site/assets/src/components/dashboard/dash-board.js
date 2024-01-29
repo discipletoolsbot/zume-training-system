@@ -105,6 +105,12 @@ export class DashBoard extends router(LitElement) {
         ]
     }
 
+    static childRoutesOf(parentName) {
+        const routes = DashBoard.routes
+
+        return routes.filter(({parent}) => parent === parentName)
+    }
+
     constructor() {
         super()
         this.route = ''
@@ -139,11 +145,6 @@ export class DashBoard extends router(LitElement) {
         }
 
         return route.pattern
-    }
-    routesChildrenOf(parentName) {
-        const routes = DashBoard.routes
-
-        return routes.filter(({parent}) => parent === parentName)
     }
 
     renderRoute() {
@@ -245,7 +246,7 @@ export class DashBoard extends router(LitElement) {
                         ></nav-link>
                         <ul class="nested">
                             ${
-                                this.routesChildrenOf('practicing')
+                                DashBoard.childRoutesOf('practicing')
                                     .map((route) => html`
                                         <li>
                                             <nav-link
