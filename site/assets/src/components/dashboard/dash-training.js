@@ -4,9 +4,17 @@ export class DashTraining extends LitElement {
 
     render() {
         return html`
-            <dash-content>
-                <h1 class="h3" slot="header">Training</h1>
-            </dash-content>
+            <div class="dashboard__content">
+                <div class="dashboard__header">
+                    <h1 class="h3">Training</h1>
+                    <launch-course></launch-course>
+                </div>
+                <div class="dashboard__main">
+                </div>
+                <div class="dashboard__secondary">
+                    <dash-cta></dash-cta>
+                </div>
+            </div>
         `;
     }
 

@@ -206,9 +206,7 @@ export class DashBoard extends router(LitElement) {
                 </ul>
             </div>
 
-            <div class="dashboard__content">
-                ${this.renderRoute()}
-            </div>
+            ${this.renderRoute()}
         </div>
         `;
     }
