@@ -74,6 +74,10 @@
     border-color: color(gray-900);
 }
 
+.aspect-1 {
+    aspect-ratio: 1;
+}
+
 @media (max-width: $break-lg) {
     .rounded-start-on-medium {
         border-start-start-radius: var(--border-radius);

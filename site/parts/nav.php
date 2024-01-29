@@ -8,6 +8,8 @@
             <nav class="nav" id="nav" role="list">
                 <div class="cluster | s--2 | nav__list nav__list--secondary" role="list">
 
+                    <a role="listitem" href="<?php echo esc_url( '/zume_app/dev' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dev', 'zume' ) ?></a>
+
                     <?php if ( user_can( get_current_user_id(), 'manage_dt' ) ) { ?>
 
                         <a role="listitem" href="<?php echo esc_url( '/contacts' ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'DTools', 'zume' ) ?></a>

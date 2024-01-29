@@ -1,7 +1,8 @@
 .card {
     border-radius: var(--border-radius);
     box-shadow: var(--z-shadow) 2px 2px 3px 0px;
-    padding: spacing(0) spacing(3);
+    padding: spacing(0) spacing(1);
+    text-align: center;
 
     &.cta {
         border: 2px solid color('brand-light');

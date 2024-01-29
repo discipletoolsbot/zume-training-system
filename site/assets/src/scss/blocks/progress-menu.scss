@@ -65,7 +65,6 @@
             display: grid;
             grid-template-columns: auto 2rem;
             align-items: center;
-            margin-block-start: spacing(-3);
 
             & .success {
                 justify-self: center;
@@ -85,10 +84,10 @@
         }
     }
 
-    .menu-btn + .icon {
+    nav-link + .icon {
         opacity: 0;
     }
-    .menu-btn[data-completed="true"] + .icon {
+    nav-link[completed] + .icon {
         opacity: 1;
     }
 }
