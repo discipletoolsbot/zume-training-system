@@ -108,6 +108,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'my_progress' => __( 'My Progress', 'zume' ),
                     'my_training' => __( 'My Training', 'zume' ),
                     'practicing' => __( 'Practicing', 'zume' ),
+                    'my_coach' => __( 'My Coach', 'zume' ),
                     'my_tools' => __( 'My Tools', 'zume' ),
                     'my_plans' => __( 'My Plans', 'zume' ),
                     'my_churches' => __( 'My Churches', 'zume' ),

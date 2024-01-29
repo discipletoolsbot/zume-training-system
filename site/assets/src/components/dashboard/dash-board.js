@@ -42,6 +42,41 @@ export class DashBoard extends router(LitElement) {
                 },
             },
             {
+                name: 'my-coach',
+                pattern: `${zumeDashboard.base_url}/my-coach`,
+                data: {
+                    component: 'dash-coach',
+                },
+            },
+            {
+                name: 'my-tools',
+                pattern: `${zumeDashboard.base_url}/my-tools`,
+                data: {
+                    component: 'dash-tools',
+                },
+            },
+            {
+                name: 'my-plans',
+                pattern: `${zumeDashboard.base_url}/my-plans`,
+                data: {
+                    component: 'dash-plans',
+                },
+            },
+            {
+                name: 'my-churches',
+                pattern: `${zumeDashboard.base_url}/my-churches`,
+                data: {
+                    component: 'dash-churches',
+                },
+            },
+            {
+                name: 'my-maps',
+                pattern: `${zumeDashboard.base_url}/my-maps`,
+                data: {
+                    component: 'dash-maps',
+                },
+            },
+            {
                 name: 'not-found',
                 pattern: '*',
                 data: {
@@ -72,6 +107,19 @@ export class DashBoard extends router(LitElement) {
 
     makeHref(slug) {
         return `${zumeDashboard.base_url}/${slug}`
+    }
+
+    makeHrefRoute(routeName) {
+        const routes = DashBoard.routes
+
+        const route = routes.find(({name}) => name === routeName)
+
+        if (!route) {
+            console.error('MISSING ROUTE', routeName)
+            return ''
+        }
+
+        return route.pattern
     }
 
     renderRoute() {
@@ -175,7 +223,15 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${this.makeHrefRoute('my-coach')}
+                                    icon="zume-coach"
+                                    text=${zumeDashboard.translations.my_coach}
+                                ></nav-link>
+                            </li>
+                            <li>
+                                <nav-link
+                                    class="menu-btn"
+                                    href=${this.makeHrefRoute('my-tools')}
                                     icon="zume-tools"
                                     text=${zumeDashboard.translations.my_tools}
                                 ></nav-link>
@@ -183,7 +239,7 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${this.makeHrefRoute('my-plans')}
                                     icon="zume-plans"
                                     text=${zumeDashboard.translations.my_plans}
                                 ></nav-link>
@@ -191,7 +247,7 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${this.makeHrefRoute('my-churches')}
                                     icon="zume-churches"
                                     text=${zumeDashboard.translations.my_churches}
                                 ></nav-link>
@@ -199,7 +255,7 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${this.makeHrefRoute('my-maps')}
                                     icon="zume-location"
                                     text=${zumeDashboard.translations.my_maps}
                                 ></nav-link>
