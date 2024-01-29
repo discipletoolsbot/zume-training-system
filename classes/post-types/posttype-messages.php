@@ -109,10 +109,10 @@ class Zume_Training_Messages_Post_Type {
     }
 
     public function get_message_hierarchy( $post_id ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
         $list = $wpdb->get_results(
             "SELECT ID, post_parent, post_title
-                    FROM $wpdb->posts
+                    FROM {$table_prefix}posts
                     WHERE post_type = 'zume_messages'", ARRAY_A );
 
         $children = $this->get_message_children( $post_id, $list, [], $post_id );

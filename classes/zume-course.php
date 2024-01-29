@@ -99,7 +99,7 @@ class Zume_Course {
     }
 
     public static function get_page_by_title( $page_title, $output = OBJECT, $post_type = 'page' ) {
-        global $wpdb;
+        global $wpdb, $table_prefix;
 
         if ( is_array( $post_type ) ) {
             $post_type           = esc_sql( $post_type );
@@ -107,18 +107,18 @@ class Zume_Course {
             //phpcs:disable
             $sql                 = $wpdb->prepare(
                 "SELECT ID
-			FROM $wpdb->posts
-			WHERE post_title = %s
-			AND post_type IN ($post_type_in_string)",
+                FROM {$table_prefix}posts
+                WHERE post_title = %s
+                AND post_type IN ($post_type_in_string)",
                 $page_title
             );
             //phpcs:enable
         } else {
             $sql = $wpdb->prepare(
                 "SELECT ID
-			FROM $wpdb->posts
-			WHERE post_title = %s
-			AND post_type = %s",
+                FROM {$table_prefix}posts
+                WHERE post_title = %s
+                AND post_type = %s",
                 $page_title,
                 $post_type
             );
