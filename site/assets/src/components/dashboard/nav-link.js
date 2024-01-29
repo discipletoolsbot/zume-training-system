@@ -8,6 +8,7 @@ export class NavLink extends navigator(LitElement) {
             class: { type: String },
             disabled: { type: Boolean },
             completed: { type: Boolean },
+            directLink: { type: Boolean },
             icon: { type: String },
             text: { type: String },
         };
@@ -21,11 +22,14 @@ export class NavLink extends navigator(LitElement) {
         this.text = ''
         this.disabled = false
         this.completed = false
+        this.directLink = false
     }
 
     handleClick(event) {
-        event.preventDefault()
-        this.navigate(this.href)
+        if ( !this.directLink ) {
+            event.preventDefault()
+            this.navigate(this.href)
+        }
     }
 
     printBool(bool) {

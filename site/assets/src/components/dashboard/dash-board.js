@@ -104,9 +104,10 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${zumeDashboard.urls.set_profile_wizard}
                                     ?disabled=${true}
                                     ?completed=${true}
+                                    ?directLink=${true}
                                     icon="zume-profile"
                                     text=${zumeDashboard.translations.set_profile}
                                 ></nav-link>
@@ -115,9 +116,10 @@ export class DashBoard extends router(LitElement) {
                             <li>
                                 <nav-link
                                     class="menu-btn"
-                                    href="#"
+                                    href=${zumeDashboard.urls.plan_training_wizard}
                                     ?disabled=${true}
                                     ?completed=${true}
+                                    ?directLink=${true}
                                     icon="zume-start"
                                     text=${zumeDashboard.translations.plan_a_training}
                                 ></nav-link>
@@ -125,8 +127,9 @@ export class DashBoard extends router(LitElement) {
                             </li>
                             <li>
                                 <nav-link
+                                    ?directLink=${true}
                                     class="menu-btn"
-                                    href="#"
+                                    href=${zumeDashboard.urls.get_coach_wizard}
                                     icon="zume-coach"
                                     text=${zumeDashboard.translations.get_a_coach}
                                 ></nav-link>
