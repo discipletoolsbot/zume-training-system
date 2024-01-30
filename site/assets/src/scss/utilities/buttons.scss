@@ -167,7 +167,7 @@ button.card-btn {
     }
 }
 
-.grid-link {
+.grid-link[role="button"] {
     justify-content: space-between;
 
     text-transform: uppercase;
@@ -177,6 +177,7 @@ button.card-btn {
     background-color: color('white');
 
     height: 100%;
+    padding-inline: spacing(2);
 
     & .icon {
         font-size: 6rem;

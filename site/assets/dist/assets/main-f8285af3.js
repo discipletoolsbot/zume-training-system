@@ -636,7 +636,7 @@ var Oe=Object.defineProperty;var je=(i,e,t)=>e in i?Oe(i,e,{enumerable:!0,config
                     <launch-course></launch-course>
                 </div>
                 <div class="dashboard__main p-1">
-                    <div class="grid grid-min-10rem">
+                    <div class="nav-grid">
                         ${this.routes.map(e=>a`
                             <grid-link
                                 href=${e.pattern}
@@ -993,4 +993,4 @@ var Oe=Object.defineProperty;var je=(i,e,t)=>e in i?Oe(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("progress-circle",Xt);const Se=document.querySelector(".nav-toggle"),Qt=document.querySelector("#nav");Se&&Se.addEventListener("click",i=>{Qt.classList.toggle("nav--visible")});const es=({title:i,url:e,copyFeedback:t,shareFeedback:s})=>({title:i,url:e,webShareSupported:navigator.share,clipboardSupported:navigator.clipboard,shareFeedback:"",copyFeedback:"",noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported},share(){navigator.share({title:i,url:e,text:i}).then(()=>{this.shareFeedback=s,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(n=>console.error("Error sharing",n))},copyLink(){navigator.clipboard.writeText(e).then(()=>{this.copyFeedback=t,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(n=>console.error(n))}});window.zumeInitShareLinks=()=>{Ie({share:es}).mount()};
-//# sourceMappingURL=main-c60827c3.js.map
+//# sourceMappingURL=main-f8285af3.js.map
