@@ -9,3 +9,6 @@ add_action( 'after_setup_theme', 'zume_load_translations' );
 function zume_load_translations() {
     load_theme_textdomain( 'zume', get_template_directory() .'/translations' );
 }
+
+
+
