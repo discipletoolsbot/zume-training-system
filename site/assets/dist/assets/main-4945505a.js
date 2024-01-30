@@ -686,7 +686,9 @@ var Oe=Object.defineProperty;var je=(i,e,t)=>e in i?Oe(i,e,{enumerable:!0,config
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>
             </a>
-        `}createRenderRoot(){return this}}customElements.define("nav-link",Te);class Tt extends Te{constructor(){super()}render(){return a`
+        `}createRenderRoot(){return this}}customElements.define("nav-link",Te);class Tt extends Te{constructor(){super()}renderText(){return this.text.split(" ").map(e=>a`
+            <span>${e}</span>
+        `)}render(){return a`
             <a
                 href=${this.href}
                 class="card-btn grid-link"
@@ -696,7 +698,7 @@ var Oe=Object.defineProperty;var je=(i,e,t)=>e in i?Oe(i,e,{enumerable:!0,config
                 data-completed=${this.printBool(this.completed)}
             >
                 <span class="icon ${this.icon} brand-light"></span>
-                <span>${this.text}</span>
+                ${this.renderText()}
             </a>
         `}}customElements.define("grid-link",Tt);class Mt extends d{render(){return a`
             <button class="btn uppercase light" data-toggle="launch-course-panel">
@@ -993,4 +995,4 @@ var Oe=Object.defineProperty;var je=(i,e,t)=>e in i?Oe(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("progress-circle",Xt);const Se=document.querySelector(".nav-toggle"),Qt=document.querySelector("#nav");Se&&Se.addEventListener("click",i=>{Qt.classList.toggle("nav--visible")});const es=({title:i,url:e,copyFeedback:t,shareFeedback:s})=>({title:i,url:e,webShareSupported:navigator.share,clipboardSupported:navigator.clipboard,shareFeedback:"",copyFeedback:"",noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported},share(){navigator.share({title:i,url:e,text:i}).then(()=>{this.shareFeedback=s,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(n=>console.error("Error sharing",n))},copyLink(){navigator.clipboard.writeText(e).then(()=>{this.copyFeedback=t,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(n=>console.error(n))}});window.zumeInitShareLinks=()=>{Ie({share:es}).mount()};
-//# sourceMappingURL=main-f8285af3.js.map
+//# sourceMappingURL=main-4945505a.js.map

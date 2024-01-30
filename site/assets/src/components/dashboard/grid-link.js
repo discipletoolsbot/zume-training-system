@@ -6,6 +6,12 @@ export class GridLink extends NavLink {
         super()
     }
 
+    renderText() {
+        return this.text.split(' ').map((word) => html`
+            <span>${word}</span>
+        `)
+    }
+
     render() {
         return html`
             <a
@@ -17,7 +23,7 @@ export class GridLink extends NavLink {
                 data-completed=${this.printBool(this.completed)}
             >
                 <span class="icon ${this.icon} brand-light"></span>
-                <span>${this.text}</span>
+                ${this.renderText()}
             </a>
         `;
     }
