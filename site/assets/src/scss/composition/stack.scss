@@ -12,7 +12,7 @@
     margin-block-start: var(--space, spacing(0));
 }
 
-$stack-sizes: (-1, 1, 2, 3, 4, 5);
+$stack-sizes: (-5, -4, -3, -2, -1, 1, 2, 3, 4, 5);
 
 @each $i in $stack-sizes {
   .stack-#{$i} {

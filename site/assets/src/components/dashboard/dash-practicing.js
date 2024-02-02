@@ -17,7 +17,7 @@ export class DashPracticing extends LitElement {
                     <launch-course></launch-course>
                 </div>
                 <div class="dashboard__main p-1">
-                    <div class="grid grid-min-10rem">
+                    <div class="nav-grid">
                         ${this.routes.map((route) => html`
                             <grid-link
                                 href=${route.pattern}

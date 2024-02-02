@@ -49,7 +49,7 @@ export class DashBoard extends router(LitElement) {
                 pattern: `${zumeDashboard.base_url}/my-coach`,
                 parent: 'practicing',
                 icon: 'zume-coach',
-                translation: 'my_coach',
+                translation: zumeDashboard.translations['my_coach'],
                 data: {
                     component: 'dash-coach',
                 },
@@ -59,7 +59,7 @@ export class DashBoard extends router(LitElement) {
                 pattern: `${zumeDashboard.base_url}/my-tools`,
                 parent: 'practicing',
                 icon: 'zume-tools',
-                translation: 'my_tools',
+                translation: zumeDashboard.translations['my_tools'],
                 data: {
                     component: 'dash-tools',
                 },
@@ -69,7 +69,7 @@ export class DashBoard extends router(LitElement) {
                 pattern: `${zumeDashboard.base_url}/my-plans`,
                 parent: 'practicing',
                 icon: 'zume-plans',
-                translation: 'my_plans',
+                translation: zumeDashboard.translations['my_plans'],
                 data: {
                     component: 'dash-plans',
                 },
@@ -79,7 +79,7 @@ export class DashBoard extends router(LitElement) {
                 pattern: `${zumeDashboard.base_url}/my-churches`,
                 parent: 'practicing',
                 icon: 'zume-churches',
-                translation: 'my_churches',
+                translation: zumeDashboard.translations['my_churches'],
                 data: {
                     component: 'dash-churches',
                 },
@@ -89,7 +89,7 @@ export class DashBoard extends router(LitElement) {
                 pattern: `${zumeDashboard.base_url}/my-maps`,
                 parent: 'practicing',
                 icon: 'zume-location',
-                translation: 'my_maps',
+                translation: zumeDashboard.translations['my_maps'],
                 data: {
                     component: 'dash-maps',
                 },
@@ -103,6 +103,11 @@ export class DashBoard extends router(LitElement) {
                 },
             }
         ]
+    }
+
+    static getRoute(name) {
+        const routes = DashBoard.routes
+        return routes.find((route) => route.name === name)
     }
 
     static childRoutesOf(parentName) {
@@ -244,7 +249,7 @@ export class DashBoard extends router(LitElement) {
                             icon="zume-practicing"
                             text=${zumeDashboard.translations.practicing}
                         ></nav-link>
-                        <ul class="nested">
+                        <ul class="nested is-active">
                             ${
                                 DashBoard.childRoutesOf('practicing')
                                     .map((route) => html`
@@ -253,7 +258,7 @@ export class DashBoard extends router(LitElement) {
                                                 class="menu-btn"
                                                 href=${this.makeHrefRoute(route.name)}
                                                 icon=${route.icon}
-                                                text=${zumeDashboard.translations[route.translation]}
+                                                text=${route.translation}
                                             ></nav-link>
                                         </li>
                                     `)
