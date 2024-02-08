@@ -12,6 +12,10 @@ export class GridLink extends NavLink {
         `)
     }
 
+    getIcon() {
+        return this.locked ? this.icon + '-locked' : this.icon
+    }
+
     render() {
         return html`
             <a
@@ -19,10 +23,11 @@ export class GridLink extends NavLink {
                 class="card-btn grid-link"
                 role="button"
                 @click=${this.handleClick}
-                aria-disabled=${this.printBool(this.disabled)}
+                aria-disabled=${this.printBool(this.locked)}
+                data-locked=${this.printBool(this.locked)}
                 data-completed=${this.printBool(this.completed)}
             >
-                <span class="icon ${this.icon} brand-light"></span>
+                <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
             </a>
         `;

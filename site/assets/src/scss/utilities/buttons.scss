@@ -72,6 +72,13 @@ a {
         --btn-hover-border-color: #{color('gray-600')};
     }
 
+    &.locked {
+        --btn-bg-color: #{color('gray-500')};
+        --btn-border-color: #{color('gray-500')};
+        --btn-hover-bg-color: #{color('gray-600')};
+        --btn-hover-border-color: #{color('gray-600')};
+    }
+
     &.light {
         --btn-color: #{color('white')};
         --btn-bg-color: #{color('brand-light')};
@@ -139,6 +146,11 @@ a {
             color: color('gray-400');
         }
     }
+    &[data-locked="true"] {
+        .icon {
+            color: color('gray-400');
+        }
+    }
 
     .icon {
         margin-inline-end: 0.5em;
@@ -156,7 +168,7 @@ button.card-btn {
     padding: spacing(0);
     box-shadow: var(--z-box-shadow-medium);
     border-radius: var(--border-radius);
-    transition: color 100ms linear;
+    transition: color, background-color 100ms linear;
 
     & > * {
         pointer-events: none;
@@ -168,6 +180,10 @@ button.card-btn {
         background-color: color('brand-light');
         color: white;
         text-decoration: none;
+
+        &[aria-disabled="true"] {
+            background-color: color('gray-500');
+        }
 
         > .brand-light {
             transition: color 100ms linear;
@@ -205,4 +221,26 @@ button.card-btn {
     display: flex;
     align-items: center;
     line-height: 1;
+}
+
+.icon-btn-group {
+    display: flex;
+
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid color('brand-light');
+
+    padding: 0;
+    line-height: 1;
+    font-size: font-size(1);
+
+    & > button {
+        padding: spacing(-4) spacing(-2);
+        color: color('brand-light');
+    }
+
+    & .selected {
+        color: color('white');
+        background-color: color('brand-light');
+    }
 }

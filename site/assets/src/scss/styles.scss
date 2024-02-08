@@ -37,10 +37,13 @@
 @import 'blocks/pieces-page';
 @import 'blocks/dashboard';
 @import 'blocks/progress-menu';
-@import 'blocks/progress-bar';
+@import 'blocks/progress-circle';
 @import 'blocks/card';
 @import 'blocks/dropdown';
 @import 'blocks/list';
+@import 'blocks/dash-menu';
+@import 'blocks/training-progress';
+@import 'blocks/modal';
 
 html {
     font-size: 18px;
@@ -97,9 +100,12 @@ ul[role="list"] {
   }
 }
 
-
 a, a:visited {
     text-decoration: none;
+}
+
+[role="button"] {
+  cursor: pointer;
 }
 
 .container {
@@ -539,6 +545,12 @@ a, a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.collapse {
+  height: 0;
+  transition: height 0.2s ease-out;
+  overflow: hidden;
 }
 
 @media (min-width: $break-lg) {

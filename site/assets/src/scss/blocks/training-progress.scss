@@ -1,0 +1,46 @@
+.training-progress {
+    display: flex;
+    align-items: center;
+
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+
+    & > button {
+        padding: spacing(-3) spacing(0);
+        background-color: color('gray-300');
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        transition: background-color .1s linear;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: color('gray-500')
+        }
+    }
+
+    & .icon {
+        color: color('gray-100');
+        font-size: font-size('1');
+        transition: color .1s linear;
+    }
+
+    .active[data-subtype*="heard"] {
+        background-color: #0084B6;
+    }
+    .active[data-subtype*="obey"] {
+        background-color: #00AEEF;
+    }
+    .active[data-subtype*="share"] {
+        background-color: #16C1F3;
+    }
+    .active[data-subtype*="train"] {
+        background-color: #64D5F7;
+    }
+
+    .active .icon {
+        color: color('white')
+    }
+}

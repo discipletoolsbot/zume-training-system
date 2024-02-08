@@ -40,13 +40,17 @@ export class ProgressCircle extends LitElement {
         return `${number}px`
     }
 
+    rotate(degree) {
+        return `rotate(${degree}, ${this.center()}, ${this.center()})`
+    }
+
     render() {
         return html`
             <div
                 class="progress-circle"
                 style="--percent: ${this.percent}; --width: ${this.widthPx()}; --circ: ${this.circumferencePx()}"
             >
-                <svg>
+                <svg class="svg-wrapper">
                     <circle
                         cx="${this.center()}"
                         cy="${this.center()}"
@@ -54,9 +58,11 @@ export class ProgressCircle extends LitElement {
                     >
                     </circle>
                     <circle
+                        class="bar"
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
+                        transform="${this.rotate(-90)}"
                     >
                     </circle>
                 </svg>

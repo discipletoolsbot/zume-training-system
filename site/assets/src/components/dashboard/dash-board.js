@@ -15,6 +15,7 @@ export class DashBoard extends router(LitElement) {
             route: { type: String },
             params: { type: Object },
             query: { type: Object },
+            menuOffset: { type: Number, attribute: false },
         };
     }
 
@@ -23,7 +24,8 @@ export class DashBoard extends router(LitElement) {
             {
                 name: 'getting-started',
                 pattern: `${zumeDashboard.base_url}/getting-started`,
-                icon: '',
+                icon: 'zume-start',
+                translation: zumeDashboard.translations['getting_started'],
                 data: {
                     component: 'dash-getting-started',
                 },
@@ -31,15 +33,50 @@ export class DashBoard extends router(LitElement) {
             {
                 name: 'training',
                 pattern: `${zumeDashboard.base_url}/training`,
-                icon: '',
+                icon: 'zume-training',
+                translation: zumeDashboard.translations['training'],
                 data: {
                     component: 'dash-training',
                 },
             },
             {
+                name: 'my-training',
+                pattern: `${zumeDashboard.base_url}/my-training`,
+                parent: 'training',
+                icon: 'zume-group',
+                translation: zumeDashboard.translations['my_training'],
+                explanation: zumeDashboard.translations['my_training_explanation'],
+                data: {
+                    component: 'dash-trainings',
+                },
+            },
+            {
+                name: 'my-progress',
+                pattern: `${zumeDashboard.base_url}/my-progress`,
+                parent: 'training',
+                icon: 'zume-progress',
+                translation: zumeDashboard.translations['my_progress'],
+                explanation: zumeDashboard.translations['my_progress_explanation'],
+                data: {
+                    component: 'dash-progress',
+                },
+            },
+            {
+                name: '3-month-plan',
+                pattern: `${zumeDashboard.base_url}/3-month-plan`,
+                parent: 'training',
+                icon: 'zume-plans',
+                translation: zumeDashboard.translations['3_month_plan'],
+                explanation: zumeDashboard.translations['3_month_plan_explanation'],
+                data: {
+                    component: 'dash-progress',
+                },
+            },
+            {
                 name: 'practicing',
                 pattern: `${zumeDashboard.base_url}/practicing`,
-                icon: '',
+                icon: 'zume-practicing',
+                translation: zumeDashboard.translations['practicing'],
                 data: {
                     component: 'dash-practicing',
                 },
@@ -50,6 +87,7 @@ export class DashBoard extends router(LitElement) {
                 parent: 'practicing',
                 icon: 'zume-coach',
                 translation: zumeDashboard.translations['my_coach'],
+                explanation: zumeDashboard.translations['my_coach_explanation'],
                 data: {
                     component: 'dash-coach',
                 },
@@ -60,6 +98,7 @@ export class DashBoard extends router(LitElement) {
                 parent: 'practicing',
                 icon: 'zume-tools',
                 translation: zumeDashboard.translations['my_tools'],
+                explanation: zumeDashboard.translations['my_tools_explanation'],
                 data: {
                     component: 'dash-tools',
                 },
@@ -70,6 +109,7 @@ export class DashBoard extends router(LitElement) {
                 parent: 'practicing',
                 icon: 'zume-plans',
                 translation: zumeDashboard.translations['my_plans'],
+                explanation: zumeDashboard.translations['my_plans_explanation'],
                 data: {
                     component: 'dash-plans',
                 },
@@ -80,6 +120,7 @@ export class DashBoard extends router(LitElement) {
                 parent: 'practicing',
                 icon: 'zume-churches',
                 translation: zumeDashboard.translations['my_churches'],
+                explanation: zumeDashboard.translations['my_churches_explanation'],
                 data: {
                     component: 'dash-churches',
                 },
@@ -88,8 +129,9 @@ export class DashBoard extends router(LitElement) {
                 name: 'my-maps',
                 pattern: `${zumeDashboard.base_url}/my-maps`,
                 parent: 'practicing',
-                icon: 'zume-location',
+                icon: 'zume-maps',
                 translation: zumeDashboard.translations['my_maps'],
+                explanation: zumeDashboard.translations['my_maps_explanation'],
                 data: {
                     component: 'dash-maps',
                 },
@@ -122,10 +164,17 @@ export class DashBoard extends router(LitElement) {
         this.params = {}
         this.query = {}
         this.data = {}
+        this.menuOffset = 0
 
         this.addEventListener('route', (event) => {
             console.log(event)
         })
+    }
+
+    firstUpdated() {
+        const progressMenu = this.querySelector('.progress-menu')
+        const offsetTop = progressMenu.offsetTop
+        this.menuOffset = offsetTop
     }
 
     router(route, params, query, data) {
@@ -168,7 +217,12 @@ export class DashBoard extends router(LitElement) {
             <div class="dashboard">
 
             <div class="dashboard__sidebar">
-                <ul class="stack-2 | progress-menu accordion-menu" data-accordion-menu data-submenu-toggle="true">
+                <ul
+                    class="stack-2 | progress-menu accordion-menu"
+                    data-accordion-menu
+                    data-submenu-toggle="true"
+                    style="top: ${this.menuOffset}px"
+                >
                     <li class="menu-section">
                         <nav-link
                             href=${this.makeHref('getting-started')}
@@ -183,7 +237,6 @@ export class DashBoard extends router(LitElement) {
                                 <nav-link
                                     class="menu-btn"
                                     href=${zumeDashboard.urls.set_profile_wizard}
-                                    ?disabled=${true}
                                     ?completed=${true}
                                     ?directLink=${true}
                                     icon="zume-profile"
@@ -195,7 +248,6 @@ export class DashBoard extends router(LitElement) {
                                 <nav-link
                                     class="menu-btn"
                                     href=${zumeDashboard.urls.plan_training_wizard}
-                                    ?disabled=${true}
                                     ?completed=${true}
                                     ?directLink=${true}
                                     icon="zume-start"
@@ -224,22 +276,21 @@ export class DashBoard extends router(LitElement) {
                         >
                         </nav-link>
                         <ul class="nested is-active">
-                            <li>
-                                <nav-link
-                                    class="menu-btn"
-                                    href="#"
-                                    icon="zume-progress"
-                                    text=${zumeDashboard.translations.my_progress}
-                                ></nav-link>
-                            </li>
-                            <li>
-                                <nav-link
-                                    class="menu-btn"
-                                    href="#"
-                                    icon="zume-group"
-                                    text=${zumeDashboard.translations.my_training}
-                                ></nav-link>
-                            </li>
+                            ${
+                                DashBoard.childRoutesOf('training')
+                                    .map((route) => html`
+                                        <li>
+                                            <nav-link
+                                                class="menu-btn"
+                                                href=${this.makeHrefRoute(route.name)}
+                                                icon=${route.icon}
+                                                text=${route.translation}
+                                                ?locked=${['3-month-plan'].includes(route.name)}
+                                            ></nav-link>
+                                            <span class="icon zume-locked gray-500"></span>
+                                        </li>
+                                    `)
+                            }
                         </ul>
                     </li>
                     <li class="menu-section">
@@ -259,7 +310,9 @@ export class DashBoard extends router(LitElement) {
                                                 href=${this.makeHrefRoute(route.name)}
                                                 icon=${route.icon}
                                                 text=${route.translation}
+                                                ?locked=${['my-plans', 'my-churches', 'my-maps'].includes(route.name)}
                                             ></nav-link>
+                                            <span class="icon zume-locked gray-500"></span>
                                         </li>
                                     `)
                             }
