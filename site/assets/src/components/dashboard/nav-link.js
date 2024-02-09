@@ -6,11 +6,12 @@ export class NavLink extends navigator(LitElement) {
         return {
             href: { type: String },
             class: { type: String },
-            disabled: { type: Boolean },
+            locked: { type: Boolean },
             completed: { type: Boolean },
             directLink: { type: Boolean },
             icon: { type: String },
             text: { type: String },
+            explanation: { type: String },
         };
     }
 
@@ -20,7 +21,8 @@ export class NavLink extends navigator(LitElement) {
         this.class = ''
         this.icon = ''
         this.text = ''
-        this.disabled = false
+        this.explanation = ''
+        this.locked = false
         this.completed = false
         this.directLink = false
     }
@@ -42,8 +44,9 @@ export class NavLink extends navigator(LitElement) {
                 href=${this.href}
                 class=${this.class}
                 @click=${this.handleClick}
-                aria-disabled=${this.printBool(this.disabled)}
+                aria-disabled=${this.printBool(this.completed)}
                 data-completed=${this.printBool(this.completed)}
+                data-locked=${this.printBool(this.locked)}
             >
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>

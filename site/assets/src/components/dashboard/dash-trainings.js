@@ -2,7 +2,7 @@ import { LitElement, html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 
-export class DashPlans extends LitElement {
+export class DashTrainings extends LitElement {
     static get properties() {
         return {
             loading: { type: Boolean, attribute: false },
@@ -178,16 +178,15 @@ export class DashPlans extends LitElement {
         return html`
             <div class="dashboard__content">
                 <div class="dashboard__header">
-                    <div class="dashboard__title">
-                        <span class="icon ${this.route.icon}"></span>
+                    <div class="d-flex gap-0">
                         <h1 class="h3">${this.route.translation}</h1>
-                        <button class="icon-btn f-2" data-toggle="filter-menu">
-                            <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
-                            <span class="icon zume-filter brand-light" aria-hidden="true"></span>
-                        </button>
                         <button class="icon-btn f-2" @click=${this.openCommitmentsModal}>
                             <span class="visually-hidden">${zumeDashboard.translations.add_commitments}</span>
                             <span class="icon zume-plus brand-light" aria-hidden="true"></span>
+                        </button>
+                        <button class="icon-btn f-2" data-toggle="filter-menu">
+                            <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
+                            <span class="icon zume-filter brand-light" aria-hidden="true"></span>
                         </button>
                     </div>
                     <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
@@ -207,7 +206,7 @@ export class DashPlans extends LitElement {
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus === '' ? 'selected' : ''}" @click=${() => this.filterCommitments('')}>
                                     <span class="icon zume-sort-all" aria-hidden="true"></span>
-                                    ${zumeDashboard.translations.all}
+                                    ${zumeDashboard.translations.both}
                                 </button>
                             </li>
                         </ul>
@@ -309,4 +308,4 @@ export class DashPlans extends LitElement {
         return this
     }
 }
-customElements.define('dash-plans', DashPlans);
+customElements.define('dash-trainings', DashTrainings);

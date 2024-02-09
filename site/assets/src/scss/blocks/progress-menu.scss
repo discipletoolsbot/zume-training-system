@@ -1,4 +1,6 @@
 .progress-menu {
+    position: sticky;
+
     a {
         color: inherit;
         padding: 0;
@@ -65,10 +67,6 @@
             display: grid;
             grid-template-columns: auto 2rem;
             align-items: center;
-
-            & .success {
-                justify-self: center;
-            }
         }
 
         &.is-accordion-submenu {
@@ -86,8 +84,12 @@
 
     nav-link + .icon {
         opacity: 0;
+        justify-self: center;
     }
     nav-link[completed] + .icon {
+        opacity: 1;
+    }
+    nav-link[locked] + .icon {
         opacity: 1;
     }
 }

@@ -3,10 +3,9 @@
     display: flex;
     align-items: center;
 
-    svg {
+    .svg-wrapper {
         width: var(--width, 210px);
         height: var(--width, 210px);
-        transform: rotate(-90deg);
 
         circle {
             width: 100%;
@@ -17,10 +16,26 @@
             stroke-linecap: butt;
         }
 
-        circle:last-of-type {
+        circle.border {
+            stroke: none;
+        }
+
+        circle.bar {
             stroke-dasharray: var(--circ, 625px);
             stroke-dashoffset: calc(var(--circ, 625px) - (var(--circ, 625px) * var(--percent)) / 100);
             stroke: color('brand-light');
+        }
+    }
+
+    svg.icon {
+        fill: color('brand-light');
+        transform: rotate(90deg);
+    }
+
+    &[data-border] {
+        svg circle.border {
+            stroke: color('gray-400');
+            stroke-width: calc( var(--stroke-width, 10) + var(--border-width, 3) * 2 );
         }
     }
 }

@@ -1,0 +1,19 @@
+.dash-menu__list-item {
+    display: grid;
+    grid-template-columns: 15% 1fr 8rem;
+    gap: spacing(2);
+    align-items: center;
+    justify-content: center;
+}
+
+.dash-menu__icon-area {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.dash-menu__list-icon {
+    color: color('brand-light');
+    font-size: font-size(6);
+}

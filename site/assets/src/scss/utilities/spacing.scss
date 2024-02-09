@@ -46,6 +46,9 @@
     .my-#{$i} {
         margin-block: spacing($i);
     }
+    .mt-#{$i} {
+        margin-top: spacing($i);
+    }
 }
 .m0 {
     margin: 0 !important;

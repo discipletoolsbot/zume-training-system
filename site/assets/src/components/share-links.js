@@ -38,7 +38,8 @@ export class ShareLinks extends LitElement {
         .catch((error) => console.error('Error sharing', error));
     }
 
-    copyLink() {
+    copyLink(event) {
+      event.stopImmediatePropagation()
       navigator.clipboard
         .writeText(this.url)
         .then(() => {
@@ -67,7 +68,7 @@ export class ShareLinks extends LitElement {
                   <div :class="cluster gap--1">
                     ${ this.webShareSupported ? html`
                         <div class="position-relative">
-                          <button class="btn" @click=${this.share}>
+                          <button class="btn light uppercase" @click=${this.share}>
                             <!-- Share icon -->
                             <span>${this.t.share}</span>
                           </button>
@@ -76,7 +77,7 @@ export class ShareLinks extends LitElement {
                     ` : ''}
                     ${ this.clipboardSupported ? html`
                         <div class="position-relative">
-                          <button class="btn" data-theme="ghost" @click=${this.copyLink}>
+                          <button class="btn light uppercase" data-theme="ghost" @click=${this.copyLink}>
                             <!-- Link icon -->
                             <span>${this.t.copy_link}</span>
                           </button>
