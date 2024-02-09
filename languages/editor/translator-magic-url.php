@@ -211,7 +211,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function body(){
         if(!is_user_logged_in()) {
-            dt_write_log(wp_login_url());
             if ( $this->lang === 'en' ) {
                 wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->root . '/' . $this->type  ) );
             } else {

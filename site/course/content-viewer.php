@@ -113,14 +113,16 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.js" integrity="sha512-vsjtv6Dty7C9eeMlJ+02kvlhvVlqKsJHOFWZ1ZR5WrRlU/oTlW8d8wPHWlKX579O4OO/kW5DW9XFtQ9J3gKeKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/foundation-icons@2.0.0/foundation-icons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
         <style>
             #blank-template-body {
                 padding: 1em;
                 background-color: WhiteSmoke !important;
+                font-family: Poppins, sans-serif;
             }
             .card {
-                padding: 1em;
+                padding: 15px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 height: 720px;
@@ -133,62 +135,111 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 background-color: white !important;
                 margin-bottom: 5px;
             }
+            .center {
+                width: 100%;
+                text-align: center;
+            }
+            .center-title {
+                height: 710px;
+                padding-top: 200px;
+            }
+            .left-4 {
+                width: 33%;
+                float: left;
+                height: 645px;
+                border-right: 6px solid #5dccff;
+                text-align:center;
+            }
+            .left-single-title {
+                font-size:2.5em;
+                font-weight: bold;
+                padding-top: 300px;
+                text-transform: uppercase;
+                vertical-align: middle;
+            }
+            .right-8 {
+                width: 66%;
+                float: right;
+                height: 645px;
+                font-size: 2.1em;
+            }
+            .right-8-checkin {
+                padding: 1em;
+                margin: 0 1em;
+            }
+            .right-8-checkin img {
+                width: 200px;
+            }
+            .right-8-pray {
+                margin: 0 1em;
+                padding: 1em;
+                background-color: #e7f6fc;
+                border-radius: 1em;
+                border: 3px solid #5dccff;
+            }
+            .right-8-lookback {
+                padding: 1em;
+                margin: 0 1em;
+            }
+            .left-4-obey {
+                width: 33%;
+                float: left;
+                border-right: 6px solid #5dccff;
+                text-align:center;
+            }
+            .left-obey-title {
+                font-size:2.5em;
+                font-weight: bold;
+                text-transform: uppercase;
+                vertical-align: middle;
+            }
+            .right-8-obey {
+                width: 66%;
+                float: right;
+                font-size: 2.1em;
+            }
             .activity {
                 height: 20px;
                 text-align: center;
                 background-color: white !important;
                 margin-bottom: 10px;
             }
-            .activity-right-4 {
-                width: 33%;
-                float: right;
-                height: 620px;
-                background-color: grey;
-            }
-            .activity-left-8 {
-                width: 66%;
-                float: left;
-                height: 620px;
-                background-color: blue;
-            }
-            .center {
-                width: 100%;
-                height: 700px;
-            }
-            .left-4 {
-                width: 33%;
-                float: left;
-                height: 645px;
-                background-color: grey;
-            }
-            .right-8 {
-                width: 66%;
-                float: right;
-                height: 645px;
-                background-color: blue;
-            }
-            .right-4 {
-                width: 33%;
-                float: right;
-                height: 645px;
-                background-color: grey;
-            }
             .left-8 {
                 width: 66%;
                 float: left;
                 height: 645px;
-                background-color: blue;
             }
-            .center-video {
-                width: 100%;
-                height: 100%;
-                background-color: red;
+            .left-8-activity {
+                margin: 0 1em;
+                font-size: 1.8em;
+                padding: 1em;
+                background-color: #e7f6fc;
+                border-radius: 1em;
+                border: 3px solid #5dccff;
             }
-            .center-full {
+            .right-4 {
+                width: 33%;
+                float: right;
+                height: 620px;
+                border-left: 6px solid #5dccff;
                 text-align:center;
-                width: 100%;
-                height: 100%;
-                background-color: green;
+            }
+            .right-4-activity {
+                padding-top:170px;
+                font-size: 1.5em;
+            }
+            .right-4-activity img {
+                width: 250px;
+            }
+            .final {
+                font-size: 1.8em;
+                max-width: 700px;
+                margin: 80px auto;
+            }
+            .video {
+                width: 1280px;
+                height: 720px;
+                border-radius: 5px;
             }
         </style>
         <?php
@@ -197,6 +248,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         ?>
         <select>
             <option value="">Select the Session</option>
+            <option disabled>------------</option>
             <option value="10_1">10 - 1</option>
             <option value="10_2">10 - 2</option>
             <option value="10_3">10 - 3</option>
@@ -207,6 +259,27 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             <option value="10_8">10 - 8</option>
             <option value="10_9">10 - 9</option>
             <option value="10_10">10 - 10</option>
+            <option disabled>------------</option>
+            <option value="20_1">20 - 1</option>
+            <option value="20_2">20 - 2</option>
+            <option value="20_3">20 - 3</option>
+            <option value="20_4">20 - 4</option>
+            <option value="20_5">20 - 5</option>
+            <option value="20_6">20 - 6</option>
+            <option value="20_7">20 - 7</option>
+            <option value="20_8">20 - 8</option>
+            <option value="20_9">20 - 9</option>
+            <option value="20_10">20 - 10</option>
+            <option value="20_11">20 - 11</option>
+            <option value="20_12">20 - 12</option>
+            <option value="20_13">20 - 13</option>
+            <option value="20_14">20 - 14</option>
+            <option value="20_15">20 - 15</option>
+            <option value="20_16">20 - 16</option>
+            <option value="20_17">20 - 17</option>
+            <option value="20_18">20 - 18</option>
+            <option value="20_19">20 - 19</option>
+            <option value="20_20">20 - 20</option>
         </select>
 
         <?php
@@ -241,6 +314,10 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                     $("select option[value="+type+"_"+session+"]").prop('selected', true );
                 }
 
+                jQuery.each( jQuery('.middle'), function( index, value ) {
+                    jQuery(this).css('margin-top', ( 645 - jQuery(this).height() ) * .3 + 'px');
+                });
+
             });
         </script>
         <?php
@@ -256,7 +333,12 @@ function zume_get_template( $slide ) {
         case 'title':
             ?>
             <div class="card">
-                <div class="center"></div>
+                <div class="center">
+                    <div class="center-title">
+                        <img src="<?php echo $slide['center'][0] ?>" /><br>
+                        <h2><?php echo $slide['center'][1] ?></h2>
+                    </div>
+                </div>
             </div>
             <?php
             break;
@@ -264,12 +346,144 @@ function zume_get_template( $slide ) {
             ?>
             <div class="card">
                 <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div class="center"></div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title">
+                            <img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?>
+                        </div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-checkin middle">
+                            <p><?php echo $slide['right'][0]; ?></p>
+                            <p><img src="<?php echo $slide['right'][1]; ?>" /></p>
+                            <p><?php echo $slide['right'][2]; ?></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <?php
             break;
+        case 'pray':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-pray middle">
+                            <?php
+                            foreach( $slide['right'] as $prayer ) {
+                                echo '<p>' . $prayer . '</p>';
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'discuss':
 
+        case 'look_back':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-lookback middle">
+                            <?php
+                            foreach( $slide['right'] as $p ) {
+                                if ( is_array( $p ) ) {
+                                    echo '<ul>';
+                                    foreach( $p as $pp ) {
+                                        echo '<li>' . $pp . '</li>';
+                                    }
+                                    echo '</ul>';
+                                } else {
+                                    echo '<p>' . $p . '</p>';
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'review':
+        case 'overview':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-lookback middle">
+                            <?php
+                            foreach( $slide['right'] as $p ) {
+                                if ( is_array( $p ) ) {
+                                    echo '<ul>';
+                                    foreach( $p as $pp ) {
+                                        echo '<li>' . $pp . '</li>';
+                                    }
+                                    echo '</ul>';
+                                } else {
+                                    echo '<p><strong>' . $p . '</strong></p>';
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
         case 'activity':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="center">
+                   <strong> <?php echo $slide['center'][0] ?> <?php echo $slide['center'][1] ?> </strong>
+                </div>
+                <div>
+                    <div class="left-8">
+                        <div class="left-8-activity middle">
+                            <?php
+                            foreach( $slide['left'] as $i => $v ) {
+                                if ( $i == 0 ) {
+                                    echo '<p><strong>' . $v . '</strong></p>';
+                                } else {
+                                    if (is_array($v)) {
+                                        echo '<ul>';
+                                        foreach ($v as $pp) {
+                                            echo '<li>' . $pp . '</li>';
+                                        }
+                                        echo '</ul>';
+                                    } else {
+                                        echo '<p>' . $v . '</p>';
+                                    }
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                    <div class="right-4">
+                        <div class="right-4-activity">
+                            <p><img src="<?php echo $slide['right'][0]; ?>" /></p>
+                            <p><?php echo $slide['right'][1]; ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
         case 'activity_center':
             ?>
             <div class="card">
@@ -296,34 +510,100 @@ function zume_get_template( $slide ) {
             break;
         case 'video':
             ?>
-            <div class="card">
-                <div class="center-video"></div>
+            <div class="video">
+                <iframe src="<?php echo $slide['center'][0] ?>" width="340" height="160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <?php
             break;
         case 'final':
             ?>
             <div class="card">
-                <div class="center"></div>
+                <div class="center">
+                    <div class="final">
+                        <p><img style="width:150px;" src="<?php echo $slide['center'][0] ?>" /></p>
+                        <p><?php echo $slide['center'][1] ?></p>
+                        <p><img style="width:200px;" src="<?php echo $slide['center'][2] ?>" /></p>
+                        <p><?php echo $slide['center'][3] ?></p>
+                    </div>
+                </div>
             </div>
             <?php
             break;
         case 'watch':
-        case 'pray':
-        case 'overview':
-        case 'discuss':
-        case 'review':
-        case 'look_back':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-lookback middle">
+                            <?php
+                            foreach( $slide['right'] as $i => $v ) {
+                                if ( $i == 0 ) {
+                                    echo '<p><strong>' . $v . '</strong></p>';
+                                } else {
+                                    if (is_array($v)) {
+                                        echo '<ul>';
+                                        foreach ($v as $pp) {
+                                            echo '<li>' . $pp . '</li>';
+                                        }
+                                        echo '</ul>';
+                                    } else {
+                                        echo '<p>' . $v . '</p>';
+                                    }
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+
         case 'obey':
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div>
+                    <div class="left-4-obey">
+                        <div class="left-obey-title middle"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
+                    <div class="right-8-obey">
+                        <div class="middle"><p><?php echo $slide['right'][0]; ?></p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left-4-obey">
+                        <div class="left-obey-title "><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][1]; ?></div>
+                    </div>
+                    <div class="right-8-obey">
+                        <div class=""><p><?php echo $slide['right'][1]; ?></p></div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
         case 'right_content':
-        default:
             ?>
             <div class="card">
                 <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
                 <div class="center">
-                    <div class="left-4"></div>
+                    <div class="left-4">
+                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                    </div>
                     <div class="right-8"></div>
                 </div>
+            </div>
+            <?php
+            break;
+        default:
+            ?>
+            <div class="card">
+                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="center"></div>
             </div>
             <?php
             break;
@@ -344,7 +624,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
                 $session = ['s_23','s_24','s_25','s_26','s_27','s_28','s_29','s_30','s_31','s_32','s_33','s_34','s_35','s_36','s_37','s_38','s_39','s_40','s_41','s_42'];
                 break;
             case '3':
-                $session = ['s_43','s_44','s_45','s_46','s_47','s_48','s_49','s_50','s_51','s_52','s_53','s_54','s_55','s_56','s_57','s_58','s_59','s_60','s_61','s_62'];
+                $session = ['s_43','s_44','s_45','s_46','s_47','s_48','s_49','s_49_a','s_50','s_51','s_52','s_53','s_54','s_55','s_56','s_57','s_58','s_59','s_60','s_61','s_62'];
                 break;
             case '4':
                 $session = ['s_63','s_64','s_65','s_66','s_67','s_68','s_69','s_70','s_71','s_72','s_73','s_74','s_75','s_76','s_77','s_78','s_79','s_80','s_81','s_82','s_83','s_84','s_85','s_86','s_87','s_88'];
@@ -365,7 +645,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
                 $session = ['s_139','s_140','s_141','s_142','s_143','s_144','s_145','s_146','s_147','s_148','s_149','s_150','s_151','s_152','s_153','s_154','s_155','s_156','s_157','s_158','s_159','s_160','s_161'];
                 break;
             case '10':
-                $session = ['s_162','s_163','s_164','s_165','s_166','s_167','s_168','s_169','s_170','s_171','s_172','s_173','s_174','s_175','s_176','s_177','s_178','s_179','s_180','s_181','s_182','s_183','s_184','s_185','s_186','s_187','s_188','s_189','s_190','s_191','s_192','s_193','s_194','s_195','s_196','s_197','s_198','s_199','s_200','s_201','s_202','s_203','s_204','s_205','s_206','s_207','s_208','s_209','s_210','s_211','s_212','s_213','s_214','s_215','s_216','s_217','s_218','s_219','s_220','s_221','s_222','s_223','s_224','s_225','s_226','s_227','s_228','s_229','s_230','s_231','s_232','s_233','s_234','s_235','s_236','s_237','s_238','s_239','s_240','s_241','s_242'];
+                $session = ['s_162','s_163','s_164','s_165','s_166','s_167','s_168','s_169','s_170','s_171','s_172','s_173','s_174','s_175','s_176','s_177','s_178','s_179','s_180','s_181','s_182'];
                 break;
             default:
                 return;
@@ -471,7 +751,7 @@ function zume_content() {
             'key' => 's_6',
             'type' => 'video',
             'center' => [
-                '1' // video
+                Zume_Course::get_video_by_key( '1', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -504,7 +784,7 @@ function zume_content() {
             'key' => 's_9',
             'type' => 'video',
             'center' => [
-                '2' // video
+                Zume_Course::get_video_by_key( '2', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -541,7 +821,7 @@ function zume_content() {
             'key' => 's_12',
             'type' => 'video',
             'center' => [
-                '3' // video
+                Zume_Course::get_video_by_key( '3', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -577,7 +857,7 @@ function zume_content() {
             'key' => 's_15',
             'type' => 'video',
             'center' => [
-                '4' // video
+                Zume_Course::get_video_by_key( '4', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -586,12 +866,11 @@ function zume_content() {
         [
             'key' => 's_16',
             'type' => 'activity',
-            'center' => [],
-            'left' => [
+            'center' => [
                 'ACTIVITY',
                 '(30 min)',
             ],
-            'right' => [
+            'left' => [
                 'Practice S.O.A.P.S.',
                 '(20 min) Break up and work individually through the S.O.A.P.S. Bible study pattern using Matthew 6:9-13.',
                 [
@@ -602,6 +881,10 @@ function zume_content() {
                     'Sharing'
                 ],
                 '(10 min) Return together and share your S.O.A.P.S. in groups of two or three.'
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
             ],
         ],
         [
@@ -621,7 +904,7 @@ function zume_content() {
             'key' => 's_18',
             'type' => 'video',
             'center' => [
-                '5' // video
+                Zume_Course::get_video_by_key( '5', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -629,15 +912,18 @@ function zume_content() {
         [
             'key' => 's_19',
             'type' => 'activity',
-            'center' => [],
-            'left' => [
+            'center' => [
                 'ACTIVITY',
                 '(20 min)',
             ],
-            'right' => [
+            'left' => [
                 'Practice Accountability Groups',
                 'Break into groups of two or three people of the same gender.',
                 'Spend the next 20 minutes working together through the Accountability Questions.',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
             ],
         ],
         [
@@ -780,7 +1066,7 @@ function zume_content() {
             'key' => 's_29',
             'type' => 'video',
             'center' => [
-                '6', // video
+                Zume_Course::get_video_by_key( '6', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -817,7 +1103,7 @@ function zume_content() {
             'key' => 's_32',
             'type' => 'video',
             'center' => [
-                '7', // video
+                Zume_Course::get_video_by_key( '7', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -883,10 +1169,12 @@ function zume_content() {
                 '(10 min)'
             ],
             'right' => [
-                'What is your reaction to spending an hour in prayer?',
-                'How do you feel?',
-                'Did you learn or hear anything?',
-                'What would life be like if you made this kind of prayer a regular habit?',
+                [
+                    'What is your reaction to spending an hour in prayer?',
+                    'How do you feel?',
+                    'Did you learn or hear anything?',
+                    'What would life be like if you made this kind of prayer a regular habit?',
+                ]
             ],
         ],
         [
@@ -907,7 +1195,7 @@ function zume_content() {
             'key' => 's_37',
             'type' => 'video',
             'center' => [
-                '8', // video
+                Zume_Course::get_video_by_key( '8', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1068,13 +1356,13 @@ function zume_content() {
             'key' => 's_49',
             'type' => 'video',
             'center' => [
-                '9', // video
+                Zume_Course::get_video_by_key( '9', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
         ],
         [
-            'key' => 's_33',
+            'key' => 's_49_a',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1129,7 +1417,7 @@ function zume_content() {
             'key' => 's_53',
             'type' => 'video',
             'center' => [
-                '10', // video
+                Zume_Course::get_video_by_key( '10', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1158,10 +1446,8 @@ function zume_content() {
                 '(45 min)'
             ],
             'left' => [
-                [
-                    'Share the Gospel',
-                    'Break into groups of two or three people and take turns telling the Gospel to each other.'
-                ]
+                'Share the Gospel',
+                'Break into groups of two or three people and take turns telling the Gospel to each other.'
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
@@ -1184,7 +1470,7 @@ function zume_content() {
             'key' => 's_57',
             'type' => 'video',
             'center' => [
-                '11', // video
+                Zume_Course::get_video_by_key( '11', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1349,7 +1635,7 @@ function zume_content() {
             'key' => 's_69',
             'type' => 'video',
             'center' => [
-                '12',
+                Zume_Course::get_video_by_key( '12', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1357,7 +1643,10 @@ function zume_content() {
         [
             'key' => 's_70',
             'type' => 'activity',
-            'center' => [],
+            'center' => [
+                'ACTIVITY',
+                '(20 min)'
+            ],
             'left' => [
                 'Share your testimony',
                 'Break into groups of two or three and practice sharing your testimony.',
@@ -1383,7 +1672,7 @@ function zume_content() {
             'key' => 's_72',
             'type' => 'video',
             'center' => [
-                '13', // video
+                Zume_Course::get_video_by_key( '13', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1420,7 +1709,7 @@ function zume_content() {
             'key' => 's_75',
             'type' => 'video',
             'center' => [
-                '14', // video
+                Zume_Course::get_video_by_key( '14', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1457,7 +1746,7 @@ function zume_content() {
             'key' => 's_78',
             'type' => 'video',
             'center' => [
-                '15', // video
+                Zume_Course::get_video_by_key( '15', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1494,7 +1783,7 @@ function zume_content() {
             'key' => 's_81',
             'type' => 'video',
             'center' => [
-                '16', // video
+                Zume_Course::get_video_by_key( '16', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1647,7 +1936,7 @@ function zume_content() {
             'key' => 's_92',
             'type' => 'video',
             'center' => [
-                '17', // video
+                Zume_Course::get_video_by_key( '17', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1668,7 +1957,7 @@ function zume_content() {
             'key' => 's_94',
             'type' => 'video',
             'center' => [
-                '18', // video
+                Zume_Course::get_video_by_key( '18', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1758,7 +2047,7 @@ function zume_content() {
             'key' => 's_100',
             'type' => 'title',
             'center' => [
-                'Welcome to Zúme!',
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
                 'Session 6',
             ],
             'left' => [],
@@ -1836,7 +2125,7 @@ function zume_content() {
             'key' => 's_106',
             'type' => 'video',
             'center' => [
-                '20', // video
+                Zume_Course::get_video_by_key( '20', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1870,7 +2159,7 @@ function zume_content() {
             'key' => 's_109',
             'type' => 'video',
             'center' => [
-                '21', // video
+                Zume_Course::get_video_by_key( '21', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1940,8 +2229,8 @@ function zume_content() {
             'key' => 's_114',
             'type' => 'title',
             'center' => [
-                'Welcome to Zúme!',
-                'Session 7',
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 7'
             ],
             'left' => [],
             'right' => [],
@@ -2018,7 +2307,7 @@ function zume_content() {
             'key' => 's_120',
             'type' => 'video',
             'center' => [
-                '22', // video
+                Zume_Course::get_video_by_key( '22', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2204,7 +2493,7 @@ function zume_content() {
             'key' => 's_133',
             'type' => 'video',
             'center' => [
-                '23', // video
+                Zume_Course::get_video_by_key( '23', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2375,7 +2664,7 @@ function zume_content() {
             'key' => 's_145',
             'type' => 'video',
             'center' => [
-                '24', // video
+                Zume_Course::get_video_by_key( '24', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2411,7 +2700,7 @@ function zume_content() {
             'key' => 's_148',
             'type' => 'video',
             'center' => [
-                '25', // video
+                Zume_Course::get_video_by_key( '25', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2450,7 +2739,7 @@ function zume_content() {
             'key' => 's_151',
             'type' => 'video',
             'center' => [
-                '26', // video
+                Zume_Course::get_video_by_key( '26', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2483,7 +2772,7 @@ function zume_content() {
             'key' => 's_154',
             'type' => 'video',
             'center' => [
-                '28', // video
+                Zume_Course::get_video_by_key( '28', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2692,7 +2981,7 @@ function zume_content() {
             'key' => 's_169',
             'type' => 'video',
             'center' => [
-                '29', // video
+                Zume_Course::get_video_by_key( '29', true, 'en' ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2710,8 +2999,8 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_170',
-            'type' => 'right_content',
+            'key' => 's_171',
+            'type' => 'left_content',
             'center' => [],
             'left' => [
                 'The Four Fields diagnostic chart is a simple tool to be used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.',
@@ -2722,8 +3011,8 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_171',
-            'type' => 'right_content',
+            'key' => 's_172',
+            'type' => 'left_content',
             'center' => [],
             'left' => [
                 'Four Fields',
@@ -2740,6 +3029,150 @@ function zume_content() {
                 'Activity Resource',
             ],
         ],
+        [
+            'key' => 's_173',
+            'type' => 'left_content',
+            'center' => [],
+            'left' => [
+                'Generation Mapping Introduction',
+                'Generational mapping (a.k.a. generation mapping or gen mapping) is another simple tool to help leaders in a movement understand the growth around them.',
+                'A generation tree map can be drawn on a piece of paper or multiple pieces of paper. This map helps show where there are stops in multiplication and training might be required. Health of the movement is a top concern for leaders and fruitfulness is a top way to measure health.',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
+            ],
+        ],
+        [
+            'key' => 's_174',
+            'type' => 'watch',
+            'center' => [],
+            'left' => [
+                'WATCH',
+            ],
+            'right' => [
+                'Peer Mentoring Groups',
+                'Making disciples who make disciples means making leaders who make leaders. How do you develop stronger leaders? By teaching them how to love one another better. Peer Mentoring Groups help leaders love deeper.',
+            ],
+        ],
+        [
+            'key' => 's_175',
+            'type' => 'video',
+            'center' => [
+                Zume_Course::get_video_by_key( '30', true, 'en' ), // video
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's_176',
+            'type' => 'activity',
+            'center' => [
+                'ACTIVITY',
+                '(45 min)',
+            ],
+            'left' => [
+                'Peer Mentoring Groups',
+                'Break into groups of two or three and work through the 3/3 sections of the Peer Mentoring Group format on the next slide. ',
+                'Peer Mentoring is something that happens once a month or once a quarter and takes some time for the whole group to participate, so you will not have time for everyone to experience the full mentoring process in this session.',
+                'To practice, choose one person in your group to be the "mentee" for this session and have the other members spend time acting as Peer Mentors by working through the suggested questions list and providing guidance and encouragement for the Mentee’s work.',
+                'By the time you’re finished, everyone should have a basic understanding of asking and answering.',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
+            ],
+        ],
+        [
+            'key' => 's_177',
+            'type' => 'right_content',
+            'center' => [],
+            'left' => [
+                'Three-Month Plan',
+            ],
+            'right' => [
+                'In His Bible, God says, "I know the plans I have for you, plans to prosper you and not to harm you, plans to give you hope and a future."',
+                'God makes plans, and He expects us to make plans, too.',
+                'A Three Month Plan is a tool you can use to help focus your attention and efforts and keep them aligned with God’s priorities for making disciples who multiply.',
+            ],
+        ],
+        [
+            'key' => 's_178',
+            'type' => 'activity',
+            'center' => [
+                'ACTIVITY',
+                '(30 min)',
+            ],
+            'left' => [
+                'Make your Three Month Plan',
+                [
+                    'Review the Worksheet Questions (1 min)',
+                    'Pray (4 min) Ask God what He specifically wants you to do with the basic disciple-making tools and techniques you have learned.',
+                    'Listen (10 min) Take at least 10 minutes to be as quiet as possible and listen intently to what God has to say and what He chooses to reveal. Make an effort to hear His voice.',
+                    'Write Plan (15 min) Use the rest of your time to complete the Three Month Plan worksheet. You can write it out on a piece of paper or save it digitally by using the QR code on this screen.',
+                ],
+                'You do not have to commit to every item, and there is room for other items not already on the list.',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Online Plan Tool',
+            ],
+        ],
+        [
+            'key' => 's_179',
+            'type' => 'discuss',
+            'center' => [],
+            'left' => [
+                'DISCUSS',
+                '(10 min)',
+            ],
+            'right' => [
+                'Take turns sharing your Three Month Plans with each other.',
+                'Find a training partner(s) that is willing to check in with you weekly. Commit to doing the same for them.',
+            ],
+        ],
+        [
+            'key' => 's_180',
+            'type' => 'right_content',
+            'center' => [],
+            'left' => [
+                'NEXT STEPS',
+                '(10 min)',
+            ],
+            'right' => [
+                'Get a Coach',
+                'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Join the Community',
+                'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+            ],
+        ],
+        [
+            'key' => 's_181',
+            'type' => 'final_congratulations',
+            'center' => [
+                'CONGRATULATIONS',
+                'on completing Zume Training!',
+                'https://placehold.co/600x400/png',
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [ // final slide
+            'key' => 's_182',
+            'type' => 'final',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
+                'To saturate the world with multiplying disciples in our generation.',
+                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
+                'Zume is a community of practice for those who want to see disciple making movements.'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+
+
 
 
 

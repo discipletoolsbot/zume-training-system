@@ -6,7 +6,6 @@ if ( !defined( 'ABSPATH' ) ) {
 class Zume_Translation_Endpoints
 {
     private $namespace;
-    private static $post_type = 'zume_plans';
     private static $_instance = null;
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
