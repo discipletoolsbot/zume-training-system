@@ -552,6 +552,9 @@ a, a:visited {
   transition: height 0.2s ease-out;
   overflow: hidden;
 }
+.collapse[data-state="open"] {
+  overflow: initial;
+}
 
 @media (min-width: $break-lg) {
 

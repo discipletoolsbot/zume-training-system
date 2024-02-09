@@ -119,16 +119,26 @@ export class DashProgress extends LitElement {
     toggleDetails(key) {
         const collapseElement = this.querySelector(`#details-${key}`)
         const open = this.openStates[key]
+        const height = collapseElement.scrollHeight
+        const transitionDuration = '200'
 
         if (open === false) {
-            const height = collapseElement.scrollHeight + 'px'
-            collapseElement.style.height = height
-            collapseElement.dataset.collapsed = 'false'
+            collapseElement.style.height = height + 'px'
+            collapseElement.style.transitionDuration = transitionDuration + 'ms'
+            collapseElement.dataset.state = 'opening'
             this.openStates[key] = true
+
+            setTimeout(() => {
+                collapseElement.dataset.state = 'open'
+            }, transitionDuration);
         } else {
             collapseElement.style.height = '0'
-            collapseElement.dataset.collapsed = 'true'
+            collapseElement.dataset.state = 'closing'
             this.openStates[key] = false
+
+            setTimeout(() => {
+                collapseElement.dataset.state = 'closed'
+            }, transitionDuration);
         }
     }
 
@@ -145,7 +155,7 @@ export class DashProgress extends LitElement {
             <li class="list__item tight" @click=${() => this.toggleDetails(key)} role="button">
                 <div>
                     <h2 class="h5 bold m0">${title}</h2>
-                    <div class="collapse" id="details-${key}" data-collapsed="true">
+                    <div class="collapse" id="details-${key}" data-state="closed">
                         <div class="stack--2 mt--2">
                             <p class="f--1 gray-700">${description}</p>
                             <div class="cluster">
