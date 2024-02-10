@@ -122,7 +122,6 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 font-family: Poppins, sans-serif;
             }
             .card {
-                padding: 15px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 height: 720px;
@@ -131,6 +130,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             }
             .stage {
                 height: 30px;
+                padding-top: 10px;
                 text-align: center;
                 background-color: white !important;
                 margin-bottom: 5px;
@@ -184,7 +184,6 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             .left-4-obey {
                 width: 33%;
                 float: left;
-                border-right: 6px solid #5dccff;
                 text-align:center;
             }
             .left-obey-title {
@@ -194,6 +193,8 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 vertical-align: middle;
             }
             .right-8-obey {
+                border-left: 6px solid #5dccff;
+                padding-left: 1em;
                 width: 66%;
                 float: right;
                 font-size: 2.1em;
@@ -246,42 +247,45 @@ class Zume_Content_Viewer extends Zume_Magic_Page
     }
     public function body(){
         ?>
-        <select>
-            <option value="">Select the Session</option>
-            <option disabled>------------</option>
-            <option value="10_1">10 - 1</option>
-            <option value="10_2">10 - 2</option>
-            <option value="10_3">10 - 3</option>
-            <option value="10_4">10 - 4</option>
-            <option value="10_5">10 - 5</option>
-            <option value="10_6">10 - 6</option>
-            <option value="10_7">10 - 7</option>
-            <option value="10_8">10 - 8</option>
-            <option value="10_9">10 - 9</option>
-            <option value="10_10">10 - 10</option>
-            <option disabled>------------</option>
-            <option value="20_1">20 - 1</option>
-            <option value="20_2">20 - 2</option>
-            <option value="20_3">20 - 3</option>
-            <option value="20_4">20 - 4</option>
-            <option value="20_5">20 - 5</option>
-            <option value="20_6">20 - 6</option>
-            <option value="20_7">20 - 7</option>
-            <option value="20_8">20 - 8</option>
-            <option value="20_9">20 - 9</option>
-            <option value="20_10">20 - 10</option>
-            <option value="20_11">20 - 11</option>
-            <option value="20_12">20 - 12</option>
-            <option value="20_13">20 - 13</option>
-            <option value="20_14">20 - 14</option>
-            <option value="20_15">20 - 15</option>
-            <option value="20_16">20 - 16</option>
-            <option value="20_17">20 - 17</option>
-            <option value="20_18">20 - 18</option>
-            <option value="20_19">20 - 19</option>
-            <option value="20_20">20 - 20</option>
-        </select>
+        <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
+            <select>
+                <option value="">Select the Session</option>
+                <option disabled>------------</option>
+                <option value="10_1">10 - 1</option>
+                <option value="10_2">10 - 2</option>
+                <option value="10_3">10 - 3</option>
+                <option value="10_4">10 - 4</option>
+                <option value="10_5">10 - 5</option>
+                <option value="10_6">10 - 6</option>
+                <option value="10_7">10 - 7</option>
+                <option value="10_8">10 - 8</option>
+                <option value="10_9">10 - 9</option>
+                <option value="10_10">10 - 10</option>
+                <option disabled>------------</option>
+                <option value="20_1">20 - 1</option>
+                <option value="20_2">20 - 2</option>
+                <option value="20_3">20 - 3</option>
+                <option value="20_4">20 - 4</option>
+                <option value="20_5">20 - 5</option>
+                <option value="20_6">20 - 6</option>
+                <option value="20_7">20 - 7</option>
+                <option value="20_8">20 - 8</option>
+                <option value="20_9">20 - 9</option>
+                <option value="20_10">20 - 10</option>
+                <option value="20_11">20 - 11</option>
+                <option value="20_12">20 - 12</option>
+                <option value="20_13">20 - 13</option>
+                <option value="20_14">20 - 14</option>
+                <option value="20_15">20 - 15</option>
+                <option value="20_16">20 - 16</option>
+                <option value="20_17">20 - 17</option>
+                <option value="20_18">20 - 18</option>
+                <option value="20_19">20 - 19</option>
+                <option value="20_20">20 - 20</option>
+            </select>
+        </div>
 
+        <div style="margin-top: 70px;">
         <?php
         if ( isset( $_GET['type'], $_GET['session'] ) ) {
             $build = zume_course_builder( $_GET['type'], $_GET['session'] );
@@ -294,7 +298,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             }
         }
         ?>
-
+        </div>
         <script>
             let type = '<?php echo $_GET['type'] ?? false; ?>';
             let session = '<?php echo $_GET['session'] ?? false; ?>';
@@ -315,7 +319,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 }
 
                 jQuery.each( jQuery('.middle'), function( index, value ) {
-                    jQuery(this).css('margin-top', ( 645 - jQuery(this).height() ) * .3 + 'px');
+                    jQuery(this).css('margin-top', ( 615 - jQuery(this).height() ) * .5 + 'px');
                 });
 
             });
@@ -453,7 +457,7 @@ function zume_get_template( $slide ) {
                    <strong> <?php echo $slide['center'][0] ?> <?php echo $slide['center'][1] ?> </strong>
                 </div>
                 <div>
-                    <div class="left-8">
+                    <div class="left-8 ">
                         <div class="left-8-activity middle">
                             <?php
                             foreach( $slide['left'] as $i => $v ) {
@@ -618,41 +622,104 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
     if ( '10' === $session_type ) {
         switch( $session_number ) {
             case '1':
-                $session = ['s_1', 's_2', 's_3', 's_4', 's_5', 's_6', 's_7', 's_8', 's_9', 's_10', 's_11', 's_12', 's_13', 's_14', 's_15', 's_16', 's_17', 's_18', 's_19', 's_20', 's_21', 's_22' ];
+                $session = ['s_1', 's_2', 's_3', 's_4', 's_5', 's_6', 's_7', 's_8', 's_9', 's_10', 's_11', 's_12', 's_13', 's_14', 's_15', 's_16', 's_17', 's_18', 's_19', 's_20', 's_21', 'final'];
                 break;
             case '2':
-                $session = ['s_23','s_24','s_25','s_26','s_27','s_28','s_29','s_30','s_31','s_32','s_33','s_34','s_35','s_36','s_37','s_38','s_39','s_40','s_41','s_42'];
+                $session = ['s_23','s_24','s_25','s_26','s_27','s_28','s_29','s_30','s_31','s_32','s_33','s_34','s_35','s_36','s_37','s_38','s_39','s_40','s_41','final'];
                 break;
             case '3':
-                $session = ['s_43','s_44','s_45','s_46','s_47','s_48','s_49','s_49_a','s_50','s_51','s_52','s_53','s_54','s_55','s_56','s_57','s_58','s_59','s_60','s_61','s_62'];
+                $session = ['s_43','s_44','s_45','s_46','s_47','s_48','s_49','s_49_a','s_50','s_51','s_52','s_53','s_54','s_55','s_56','s_57','s_58','s_59','s_60','s_61','final'];
                 break;
             case '4':
-                $session = ['s_63','s_64','s_65','s_66','s_67','s_68','s_69','s_70','s_71','s_72','s_73','s_74','s_75','s_76','s_77','s_78','s_79','s_80','s_81','s_82','s_83','s_84','s_85','s_86','s_87','s_88'];
+                $session = ['s_63','s_64','s_65','s_66','s_67','s_68','s_69','s_70','s_71','s_72','s_73','s_74','s_75','s_76','s_77','s_78','s_79','s_80','s_81','s_82','s_83','s_84','s_85','s_86','s_87','final'];
                 break;
             case '5':
-                $session = ['s_86','s_87','s_88','s_89','s_90','s_91','s_92','s_93','s_94','s_95','s_96','s_97','s_98','s_99'];
+                $session = ['s_86','s_87','s_88','s_89','s_90','s_91','s_92','s_93','s_94','s_95','s_96','s_97','s_98','final'];
                 break;
             case '6':
-                $session = ['s_100','s_101','s_102','s_103','s_104','s_105','s_106','s_107','s_108','s_109','s_110','s_111','s_112','s_113'];
+                $session = ['s_100','s_101','s_102','s_103','s_104','s_105','s_106','s_107','s_108','s_109','s_110','s_111','s_112','final'];
                 break;
             case '7':
-                $session = ['s_114','s_115','s_116','s_117','s_118','s_119','s_120','s_121','s_122','s_123','s_124','s_125','s_126'];
+                $session = ['s_114','s_115','s_116','s_117','s_118','s_119','s_120','s_121','s_122','s_123','s_124','s_125','final'];
                 break;
             case '8':
-                $session = ['s_127','s_128','s_129','s_130','s_131','s_132','s_133','s_134','s_135','s_136','s_137','s_138'];
+                $session = ['s_127','s_128','s_129','s_130','s_131','s_132','s_133','s_134','s_135','s_136','s_137','final'];
                 break;
             case '9':
-                $session = ['s_139','s_140','s_141','s_142','s_143','s_144','s_145','s_146','s_147','s_148','s_149','s_150','s_151','s_152','s_153','s_154','s_155','s_156','s_157','s_158','s_159','s_160','s_161'];
+                $session = ['s_139','s_140','s_141','s_142','s_143','s_144','s_145','s_146','s_147','s_148','s_149','s_150','s_151','s_152','s_153','s_154','s_155','s_156','s_157','s_158','s_159','s_160','final'];
                 break;
             case '10':
-                $session = ['s_162','s_163','s_164','s_165','s_166','s_167','s_168','s_169','s_170','s_171','s_172','s_173','s_174','s_175','s_176','s_177','s_178','s_179','s_180','s_181','s_182'];
+                $session = ['s_162','s_163','s_164','s_165','s_166','s_167','s_168','s_169','s_170','s_171','s_172','s_173','s_174','s_175','s_176','s_177','s_178','s_179','s_180','s_181','final'];
                 break;
             default:
                 return;
         }
     }
     else if ( '20' === $session_type ) {
-
+        switch( $session_number ) {
+            case '1':
+                $session = ['s2_1_1','s2_1_2','s2_1_3','s2_1_4','final'];
+                break;
+            case '2':
+                $session = ['s2_2_1','s2_2_2','s2_2_3','s2_2_4','s2_2_5','final'];
+                break;
+            case '3':
+                $session = ['s2_3_1','s2_3_2','s2_3_3','s2_3_4','s2_3_5','final'];
+                break;
+            case '4':
+                $session = ['s2_4_1','s2_4_2','s2_4_3','s2_4_4','s2_4_5','final'];
+                break;
+            case '5':
+                $session = ['s2_5_1','s2_5_2','s2_5_3','s2_5_4','s2_5_5','final'];
+                break;
+            case '6':
+                $session = ['s2_6_1','s2_6_2','s2_6_3','s2_6_4','s2_6_5','final'];
+                break;
+            case '7':
+                $session = ['s2_7_1','s2_7_2','s2_7_3','s2_7_4','s2_7_5','final'];
+                break;
+            case '8':
+                $session = ['s2_8_1','s2_8_2','s2_8_3','s2_8_4','s2_8_5','final'];
+                break;
+            case '9':
+                $session = ['s2_9_1','s2_9_2','s2_9_3','s2_9_4','s2_9_5','final'];
+                break;
+            case '10':
+                $session = ['s2_10_1','s2_10_2','s2_10_3','s2_10_4','s2_10_5','final'];
+                break;
+            case '11':
+                $session = ['s2_11_1','s2_11_2','s2_11_3','s2_11_4','s2_11_5','final'];
+                break;
+            case '12':
+                $session = ['s2_12_1','s2_12_2','s2_12_3','s2_12_4','s2_12_5','final'];
+                break;
+            case '13':
+                $session = ['s2_13_1','s2_13_2','s2_13_3','s2_13_4','s2_13_5','final'];
+                break;
+            case '14':
+                $session = ['s2_14_1','s2_14_2','s2_14_3','s2_14_4','s2_14_5','final'];
+                break;
+            case '15':
+                $session = ['s2_15_1','s2_15_2','s2_15_3','s2_15_4','s2_15_5','final'];
+                break;
+            case '16':
+                $session = ['s2_16_1','s2_16_2','s2_16_3','s2_16_4','s2_16_5','final'];
+                break;
+            case '17':
+                $session = ['s2_17_1','s2_17_2','s2_17_3','s2_17_4','s2_17_5','final'];
+                break;
+            case '18':
+                $session = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5','final'];
+                break;
+            case '19':
+                $session = ['s2_19_1','s2_19_2','s2_19_3','s2_19_4','s2_19_5','final'];
+                break;
+            case '20':
+                $session = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5','final'];
+                break;
+            default:
+                return;
+        }
     }
 
     $build = [];
@@ -678,6 +745,13 @@ function zume_content() {
     ];
 
     return [
+
+
+        // final slide
+
+
+
+
         // session 1
         [
             'key' => 's_1',
@@ -972,6 +1046,11 @@ function zume_content() {
             'left' => [],
             'right' => [],
         ],
+
+
+
+
+
 
         // Session 2
 
@@ -3174,8 +3253,1355 @@ function zume_content() {
 
 
 
+        // 20 Session 1
+        [
+            'key' => 's2_1_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 1'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_1_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_1_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_1_4',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+            'In this session, we will discuss these concepts:',
+                [
+                    'God Uses Ordinary People',
+                    'Simple Definition of Disciple and Church',
+                    'Spiritual Breathing is Hearing and Obeying God',
+                ]
+            ],
+        ],
 
 
+
+        // 20 Session 2
+        [
+            'key' => 's2_2_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 2'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_2_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_2_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_2_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_2_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add this tool to our toolkit:',
+                [
+                    'S.O.A.P.S Bible Reading',
+                ],
+            ],
+        ],
+
+
+        // 20 Session 3
+        [
+            'key' => 's2_3_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 3'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_3_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_3_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_2_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_3_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add this tool to our toolkit:',
+                [
+                    'Accountability Groups',
+                ]
+            ],
+        ],
+
+
+
+        // 20 Session 4
+        [
+            'key' => 's2_4_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 4'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_4_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_4_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_4_4',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss this concept:',
+                [
+                    'Producer not Consumer',
+                ],
+                'And we will add this tool to our toolkit:',
+                [
+                    'Relational Stewardship - List of 100',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 5
+        [
+            'key' => 's2_5_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 5'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_5_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_5_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_5_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_5_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add this tool to our toolkit:',
+                [
+                    'The Prayer Cycle',
+                ]
+            ],
+        ],
+
+
+
+        // 20 Session 6
+        [
+            'key' => 's2_6_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 6'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_6_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_6_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_6_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_6_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Spiritual Economy',
+                    'Vision Casting the Greatest Blessing',
+                    'The Gospel and How to Share it',
+                ]
+
+            ],
+        ],
+
+
+
+
+        // 20 Session 7
+        [
+            'key' => 's2_7_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 7'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_7_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_7_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_7_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_7_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will practice this tool in our toolkit:',
+                [
+                    'Sharing the Gospel',
+                ],
+            ],
+        ],
+
+
+
+
+        // 20 Session 8
+        [
+            'key' => 's2_8_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 8'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_8_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_8_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_8_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_8_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add these tools to our toolkit:',
+                [
+                    'Baptism and How to Do it',
+                    'The 3-Minute Testimony',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 9
+        [
+            'key' => 's2_9_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 9'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_9_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_9_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_9_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_9_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will practice this tool in our toolkit:',
+                [
+                    'Sharing Your Testimony',
+                ],
+            ],
+        ],
+
+
+
+
+        // 20 Session 10
+        [
+            'key' => 's2_10_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 10'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_10_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_10_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_10_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_10_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will discuss these concepts:',
+                [
+                    'Duckling Discipleship - Leading Immediately',
+                    'Eyes to See Where the Kingdom Isn’t',
+                ],
+                'And we will add this tool to our toolkit:',
+                [
+                    'The Lord’s Supper and How to Lead it',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 11
+        [
+            'key' => 's2_11_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 11'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_11_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_11_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_11_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_11_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add this tool to our toolkit:',
+                [
+                    'Prayer Walking',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 12
+        [
+            'key' => 's2_12_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 12'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_12_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_12_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_12_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_12_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Person of Peace',
+                    'The BLESS Prayer Pattern',
+                ],
+                'And we will add this tool to our toolkit:',
+                [
+                    'B.L.E.S.S. Prayer',
+                ],
+            ],
+        ],
+
+
+
+
+        // 20 Session 13
+        [
+            'key' => 's2_13_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 13'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_13_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_13_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_13_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_13_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Faithfulness',
+                    '3/3 Group Meeting Pattern',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 14
+        [
+            'key' => 's2_14_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 14'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_14_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_14_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_14_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_14_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will practice this tool in our toolkit:',
+                [
+                    '3/3 Group Meeting',
+                ],
+            ],
+        ],
+
+
+
+
+        // 20 Session 15
+        [
+            'key' => 's2_15_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 15'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_15_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_15_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_15_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_15_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Training Cycle',
+                    'Leadership Cells',
+                ],
+            ],
+        ],
+
+
+
+
+        // 20 Session 16
+        [
+            'key' => 's2_16_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 16'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_16_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_16_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_16_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_16_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Expect Non-Sequential Growth',
+                    'Pace of Multiplication Matters',
+                    'Always Part of Two Churches',
+                ],
+            ],
+        ],
+
+
+
+
+
+
+        // 20 Session 17
+        [
+            'key' => 's2_17_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 17'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_17_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_17_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_17_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_17_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss this concept:',
+                [
+                    'Three-Month Plan',
+                ],
+            ],
+        ],
+
+
+
+
+
+
+        // 20 Session 18
+        [
+            'key' => 's2_18_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 18'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_18_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_18_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_18_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_18_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss these concepts:',
+                [
+                    'Coaching Checklist',
+                    'Leadership in Networks',
+                ],
+            ],
+        ],
+
+
+
+        // 20 Session 19
+        [
+            'key' => 's2_19_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 19'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_19_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_19_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_19_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_19_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session we will discuss this concept:',
+                [
+                    'Peer Mentoring Groups',
+                ],
+            ],
+        ],
+
+
+
+
+
+        // 20 Session 20
+        [
+            'key' => 's2_20_1',
+            'type' => 'title',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                'Session 20'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_20_2',
+            'type' => 'checkin',
+            'center' => [],
+            'left' => [
+                'Check-in',
+            ],
+            'right' => [
+                'Have all of the participants and facilitator check-in.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
+                'Or zume.training/checkin and use code 5678'
+            ],
+        ],
+        [
+            'key' => 's2_20_3',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                'Pray',
+                '(5 min)',
+            ],
+            'right' => [
+                'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.'
+            ],
+        ],
+        [
+            'key' => 's2_20_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_20_5',
+            'type' => 'overview',
+            'center' => [],
+            'left' => [
+                'OVERVIEW',
+            ],
+            'right' => [
+                'In this session, we will add these tools to our toolkit:',
+                [
+                    'Four Fields Tool',
+                    'Generation Mapping',
+                ],
+            ],
+        ],
+
+
+
+
+
+        // final slide
+
+        [
+            'key' => 'final',
+            'type' => 'final',
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
+                'To saturate the world with multiplying disciples in our generation.',
+                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
+                'Zume is a community of practice for those who want to see disciple making movements.'
+            ],
+            'left' => [],
+            'right' => [],
+        ],
 
 
     ]; // end array
