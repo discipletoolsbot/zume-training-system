@@ -139,6 +139,9 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 width: 100%;
                 text-align: center;
             }
+            .center .title {
+                text-transform: uppercase;
+            }
             .center-title {
                 height: 710px;
                 padding-top: 200px;
@@ -151,11 +154,21 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 text-align:center;
             }
             .left-single-title {
+                padding-top: 300px;
+                text-align:right;
+                padding-right: 2em;
+                vertical-align: middle;
+            }
+            .left-single-title img {
+                margin: 0 1em 1em 0;
+            }
+            .left-single-title .title {
                 font-size:2.5em;
                 font-weight: bold;
-                padding-top: 300px;
                 text-transform: uppercase;
-                vertical-align: middle;
+            }
+            .left-single-title .subtitle {
+                font-size:2em;
             }
             .right-8 {
                 width: 66%;
@@ -184,13 +197,17 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             .left-4-obey {
                 width: 33%;
                 float: left;
-                text-align:center;
+                text-align:right;
+                padding-right: 2em;
             }
             .left-obey-title {
                 font-size:2.5em;
                 font-weight: bold;
                 text-transform: uppercase;
                 vertical-align: middle;
+            }
+            .left-obey-title img {
+                margin-right: 10px;
             }
             .right-8-obey {
                 border-left: 6px solid #5dccff;
@@ -242,6 +259,68 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 height: 720px;
                 border-radius: 5px;
             }
+            .center-activity {
+                max-width:1000px;
+                margin: 0 auto;
+                font-size: 1.8em;
+                padding: 1em;
+                background-color: #e7f6fc;
+                border-radius: 1em;
+                border: 3px solid #5dccff;
+            }
+            .left-8-image {
+                text-align: center;
+                max-height: 600px;
+                max-width: 600px;
+                margin: 1em auto 0;
+            }
+            .left-6 {
+                font-size: 1.8em;
+                width: 50%;
+                float: left;
+                height: 635px;
+                text-align: center;
+                padding: 1em;
+            }
+            .right-6 {
+                font-size: 1.8em;
+                width: 50%;
+                float: right;
+                height: 635px;
+                border-left: 6px solid #5dccff;
+                text-align: center;
+                padding: 1em;
+            }
+            .congratulations {
+                font-size: 2.5em;
+                font-weight: bold;
+                padding: 1em;
+                background-color: #e7f6fc;
+                border-radius: 1em;
+                border: 3px solid #5dccff;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .progress-bar-wrapper {
+                width: fit-content;
+                background-image: url('https://storage.googleapis.com/zume-file-mirror/images/horizontal-line.png');
+                background-repeat: repeat-x;
+                height: 20px;
+                margin: 0 auto;
+            }
+            .progress-bar-item {
+                width: 17px;
+                height: 17px;
+                border: 1px solid lightgrey;
+                background: white;
+                float:left;
+            }
+            .progress-bar-divider {
+                width: 17px;
+                height: 17px;
+                float:left;
+            }
+
         </style>
         <?php
     }
@@ -250,6 +329,8 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <select>
                 <option value="">Select the Session</option>
+                <option value="10_0">All 10</option>
+                <option value="20_0">All 20</option>
                 <option disabled>------------</option>
                 <option value="10_1">10 - 1</option>
                 <option value="10_2">10 - 2</option>
@@ -324,6 +405,14 @@ class Zume_Content_Viewer extends Zume_Magic_Page
 
             });
         </script>
+        <!-- .key-bar .key-bar to color the active box -->
+        <style>
+            <?php
+            foreach( $build as $slide ) {
+                echo '.' . $slide['key'] . '-bar .' . $slide['key'] . '-bar { background-color: #5dccff; }';
+            }
+            ?>
+        </style>
         <?php
     }
 
@@ -349,11 +438,11 @@ function zume_get_template( $slide ) {
         case 'checkin':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
                 <div>
                     <div class="left-4">
                         <div class="left-single-title">
-                            <img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?>
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span><br>
                         </div>
                     </div>
                     <div class="right-8">
@@ -370,10 +459,12 @@ function zume_get_template( $slide ) {
         case 'pray':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
                 <div>
                     <div class="left-4">
-                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                        <div class="left-single-title">
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span><br>
+                        </div>
                     </div>
                     <div class="right-8">
                         <div class="right-8-pray middle">
@@ -388,45 +479,16 @@ function zume_get_template( $slide ) {
             </div>
             <?php
             break;
-        case 'discuss':
-
-        case 'look_back':
-            ?>
-            <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div>
-                    <div class="left-4">
-                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
-                    </div>
-                    <div class="right-8">
-                        <div class="right-8-lookback middle">
-                            <?php
-                            foreach( $slide['right'] as $p ) {
-                                if ( is_array( $p ) ) {
-                                    echo '<ul>';
-                                    foreach( $p as $pp ) {
-                                        echo '<li>' . $pp . '</li>';
-                                    }
-                                    echo '</ul>';
-                                } else {
-                                    echo '<p>' . $p . '</p>';
-                                }
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php
-            break;
         case 'review':
         case 'overview':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
                 <div>
                     <div class="left-4">
-                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
+                        <div class="left-single-title">
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span>
+                        </div>
                     </div>
                     <div class="right-8">
                         <div class="right-8-lookback middle">
@@ -449,12 +511,120 @@ function zume_get_template( $slide ) {
             </div>
             <?php
             break;
+        case 'challenge':
+        case 'center':
+            ?>
+            <div class="card">
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div class="center">
+                    <strong><span class="title"><?php echo $slide['center'][0] ?></span> <?php echo $slide['center'][1] ?> </strong>
+                </div>
+                <div>
+                    <div class="center-activity middle">
+                        <?php
+                        foreach( $slide['left'] as $i => $v ) {
+                            if ( $i == 0 ) {
+                                echo '<p><strong>' . $v . '</strong></p>';
+                            } else {
+                                if (is_array($v)) {
+                                    echo '<ul>';
+                                    foreach ($v as $pp) {
+                                        echo '<li>' . $pp . '</li>';
+                                    }
+                                    echo '</ul>';
+                                } else {
+                                    echo '<p>' . $v . '</p>';
+                                }
+                            }
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'watch':
+            ?>
+            <div class="card">
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title">
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span>
+                        </div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-lookback middle">
+                            <?php
+                            foreach( $slide['right'] as $i => $v ) {
+                                if ( $i == 0 ) {
+                                    echo '<p><strong>' . $v . '</strong></p>';
+                                } else {
+                                    if (is_array($v)) {
+                                        echo '<ul>';
+                                        foreach ($v as $pp) {
+                                            echo '<li>' . $pp . '</li>';
+                                        }
+                                        echo '</ul>';
+                                    } else {
+                                        echo '<p>' . $v . '</p>';
+                                    }
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'video':
+            ?>
+            <div class="video">
+                <iframe src="<?php echo $slide['center'][0] ?>" width="340" height="160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <?php
+            break;
+        case 'discuss':
+        case 'look_back':
+            ?>
+            <div class="card">
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div>
+                    <div class="left-4">
+                        <div class="left-single-title">
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span><br>
+                            <span class="subtitle"><?php echo $slide['left'][1]; ?></span>
+                        </div>
+                    </div>
+                    <div class="right-8">
+                        <div class="right-8-lookback middle">
+                            <?php
+                            foreach( $slide['right'] as $p ) {
+                                if ( is_array( $p ) ) {
+                                    echo '<ul>';
+                                    foreach( $p as $pp ) {
+                                        echo '<li>' . $pp . '</li>';
+                                    }
+                                    echo '</ul>';
+                                } else {
+                                    echo '<p>' . $p . '</p>';
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'left_content':
         case 'activity':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
                 <div class="center">
-                   <strong> <?php echo $slide['center'][0] ?> <?php echo $slide['center'][1] ?> </strong>
+                    <strong> <span class="title"><?php echo $slide['center'][0] ?></span>  <?php echo $slide['center'][1] ?> </strong>
                 </div>
                 <div>
                     <div class="left-8 ">
@@ -488,34 +658,83 @@ function zume_get_template( $slide ) {
             </div>
             <?php
             break;
-        case 'activity_center':
+        case 'obey':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div class="activity">Activity</div>
-                <div class="center">
-                    <div class="activity-left-8"></div>
-                    <div class="activity-right-4"></div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div style="padding-top:100px;">
+                    <div class="left-4-obey">
+                        <div class="left-obey-title">
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span>
+                        </div>
+                    </div>
+                    <div class="right-8-obey">
+                        <div class=""><p><?php echo $slide['right'][0]; ?></p></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="left-4-obey">
+                        <div class="left-obey-title "><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][1]; ?></div>
+                    </div>
+                    <div class="right-8-obey">
+                        <div class=""><p><?php echo $slide['right'][1]; ?></p></div>
+                    </div>
                 </div>
             </div>
             <?php
             break;
-        case 'challenge':
-        case 'left_content':
+        case 'left_image':
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div class="center">
-                    <div class="left-8"></div>
-                    <div class="right-4"></div>
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div>
+                    <div class="left-8 ">
+                        <div class="left-8-image">
+                            <p><strong><?php echo $slide['left'][0]; ?></strong></p>
+                            <p><img src="<?php echo $slide['left'][1]; ?>" /></p>
+                        </div>
+                    </div>
+                    <div class="right-4">
+                        <div class="right-4-activity">
+                            <p><img src="<?php echo $slide['right'][0]; ?>" /></p>
+                            <p><?php echo $slide['right'][1]; ?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <?php
             break;
-        case 'video':
+        case 'next_steps':
             ?>
-            <div class="video">
-                <iframe src="<?php echo $slide['center'][0] ?>" width="340" height="160" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="card">
+                <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
+                <div class="center">
+                    <strong><span class="title"><?php echo $slide['center'][0] ?></span></strong>
+                </div>
+                <div>
+                    <div class="left-6">
+                        <p><strong><?php echo $slide['left'][0] ?></strong></p>
+                        <p><img src="<?php echo $slide['left'][2] ?>" style="width:200px;" /></p>
+                        <p><?php echo $slide['left'][1] ?></p>
+                    </div>
+                    <div class="right-6">
+                        <p><strong><?php echo $slide['right'][0] ?></strong></p>
+                        <p><img src="<?php echo $slide['right'][2] ?>" style="width:200px;" /></p>
+                        <p><?php echo $slide['right'][1] ?></p>
+                    </div>
+                </div>
+            </div>
+            <?php
+            break;
+        case 'congratulations':
+            ?>
+            <div class="card">
+                <div class="center">
+                    <div class="congratulations middle">
+                        <p><?php echo $slide['center'][0] ?></p>
+                        <p><?php echo $slide['center'][1] ?></p>
+                    </div>
+                </div>
             </div>
             <?php
             break;
@@ -533,80 +752,10 @@ function zume_get_template( $slide ) {
             </div>
             <?php
             break;
-        case 'watch':
-            ?>
-            <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div>
-                    <div class="left-4">
-                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
-                    </div>
-                    <div class="right-8">
-                        <div class="right-8-lookback middle">
-                            <?php
-                            foreach( $slide['right'] as $i => $v ) {
-                                if ( $i == 0 ) {
-                                    echo '<p><strong>' . $v . '</strong></p>';
-                                } else {
-                                    if (is_array($v)) {
-                                        echo '<ul>';
-                                        foreach ($v as $pp) {
-                                            echo '<li>' . $pp . '</li>';
-                                        }
-                                        echo '</ul>';
-                                    } else {
-                                        echo '<p>' . $v . '</p>';
-                                    }
-                                }
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php
-            break;
-
-        case 'obey':
-            ?>
-            <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div>
-                    <div class="left-4-obey">
-                        <div class="left-obey-title middle"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
-                    </div>
-                    <div class="right-8-obey">
-                        <div class="middle"><p><?php echo $slide['right'][0]; ?></p></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="left-4-obey">
-                        <div class="left-obey-title "><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][1]; ?></div>
-                    </div>
-                    <div class="right-8-obey">
-                        <div class=""><p><?php echo $slide['right'][1]; ?></p></div>
-                    </div>
-                </div>
-            </div>
-            <?php
-            break;
-        case 'right_content':
-            ?>
-            <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
-                <div class="center">
-                    <div class="left-4">
-                        <div class="left-single-title"><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][0]; ?></div>
-                    </div>
-                    <div class="right-8"></div>
-                </div>
-            </div>
-            <?php
-            break;
         default:
             ?>
             <div class="card">
-                <div class="stage">&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634&#9476&#9634&#9634&#9634&#9476&#9634&#9634</div>
+                <div class="stage <?php echo $slide['key']; ?>"><?php echo $slide['progress_bar']; ?></div>
                 <div class="center"></div>
             </div>
             <?php
@@ -620,141 +769,139 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
     $session = [];
 
     if ( '10' === $session_type ) {
-        switch( $session_number ) {
-            case '1':
-                $session = ['s_1', 's_2', 's_3', 's_4', 's_5', 's_6', 's_7', 's_8', 's_9', 's_10', 's_11', 's_12', 's_13', 's_14', 's_15', 's_16', 's_17', 's_18', 's_19', 's_20', 's_21', 'final'];
-                break;
-            case '2':
-                $session = ['s_23','s_24','s_25','s_26','s_27','s_28','s_29','s_30','s_31','s_32','s_33','s_34','s_35','s_36','s_37','s_38','s_39','s_40','s_41','final'];
-                break;
-            case '3':
-                $session = ['s_43','s_44','s_45','s_46','s_47','s_48','s_49','s_49_a','s_50','s_51','s_52','s_53','s_54','s_55','s_56','s_57','s_58','s_59','s_60','s_61','final'];
-                break;
-            case '4':
-                $session = ['s_63','s_64','s_65','s_66','s_67','s_68','s_69','s_70','s_71','s_72','s_73','s_74','s_75','s_76','s_77','s_78','s_79','s_80','s_81','s_82','s_83','s_84','s_85','s_86','s_87','final'];
-                break;
-            case '5':
-                $session = ['s_86','s_87','s_88','s_89','s_90','s_91','s_92','s_93','s_94','s_95','s_96','s_97','s_98','final'];
-                break;
-            case '6':
-                $session = ['s_100','s_101','s_102','s_103','s_104','s_105','s_106','s_107','s_108','s_109','s_110','s_111','s_112','final'];
-                break;
-            case '7':
-                $session = ['s_114','s_115','s_116','s_117','s_118','s_119','s_120','s_121','s_122','s_123','s_124','s_125','final'];
-                break;
-            case '8':
-                $session = ['s_127','s_128','s_129','s_130','s_131','s_132','s_133','s_134','s_135','s_136','s_137','final'];
-                break;
-            case '9':
-                $session = ['s_139','s_140','s_141','s_142','s_143','s_144','s_145','s_146','s_147','s_148','s_149','s_150','s_151','s_152','s_153','s_154','s_155','s_156','s_157','s_158','s_159','s_160','final'];
-                break;
-            case '10':
-                $session = ['s_162','s_163','s_164','s_165','s_166','s_167','s_168','s_169','s_170','s_171','s_172','s_173','s_174','s_175','s_176','s_177','s_178','s_179','s_180','s_181','final'];
-                break;
-            default:
-                return;
+
+        $all['1'] = ['s1_1_1','s1_1_2','s1_1_3','s1_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'t4_a','t4_b','t4_c',false,'t5_a','t5_b','t5_c',false,'s1_1_20','s1_1_21','final'];
+        $all['2'] = ['s1_2_1','s1_2_2','s1_2_3','s1_2_4','s1_2_5',false,'t6_a','t6_b','t6_c',false,'t7_a','t7_b','t7_c','t7_d',false,'t8_a','t8_b','t8_c',false,'s1_2_6','s1_2_7','final'];
+        $all['3'] = ['s1_3_1','s1_3_2','s1_3_3','s1_3_4','s1_3_5',false,'t9_a','t9_b','t9_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s1_3_8',false,'t11_a','t11_b','t11_c','t11_d',false,'s1_3_10','s1_3_11','final'];
+        $all['4'] = ['s1_4_1','s1_4_2','s1_4_3','s1_4_4','s1_4_5',false,'t12_a','t12_b','t12_c',false,'t13_a','t13_b','t13_c',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s1_4_6','s1_4_7','final'];
+        $all['5'] = ['s1_5_1','s1_5_2','s1_5_3','s1_5_4','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'s1_5_7','s1_5_8','final'];
+        $all['6'] = ['s1_6_1','s1_6_2','s1_6_3','s1_6_4','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final'];
+        $all['7'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_4','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8','s1_7_9','final'];
+        $all['8'] = ['s1_8_1','s1_8_2','s1_8_3','s1_8_4','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','s1_8_8','final'];
+        $all['9'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d',false,'s1_9_9','s1_9_10','final'];
+        $all['10'] = ['s1_10_1','s1_10_2','s1_10_3','s1_10_4','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c',false,'t32_a','t32_b',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final'];
+
+        if ( empty( $session_number ) ) {
+            foreach( $all as $set ) {
+                $session = array_merge( $session, $set );
+            }
+        }
+        else {
+            $session = $all[$session_number];
         }
     }
     else if ( '20' === $session_type ) {
-        switch( $session_number ) {
-            case '1':
-                $session = ['s2_1_1','s2_1_2','s2_1_3','s2_1_4','final'];
-                break;
-            case '2':
-                $session = ['s2_2_1','s2_2_2','s2_2_3','s2_2_4','s2_2_5','final'];
-                break;
-            case '3':
-                $session = ['s2_3_1','s2_3_2','s2_3_3','s2_3_4','s2_3_5','final'];
-                break;
-            case '4':
-                $session = ['s2_4_1','s2_4_2','s2_4_3','s2_4_4','s2_4_5','final'];
-                break;
-            case '5':
-                $session = ['s2_5_1','s2_5_2','s2_5_3','s2_5_4','s2_5_5','final'];
-                break;
-            case '6':
-                $session = ['s2_6_1','s2_6_2','s2_6_3','s2_6_4','s2_6_5','final'];
-                break;
-            case '7':
-                $session = ['s2_7_1','s2_7_2','s2_7_3','s2_7_4','s2_7_5','final'];
-                break;
-            case '8':
-                $session = ['s2_8_1','s2_8_2','s2_8_3','s2_8_4','s2_8_5','final'];
-                break;
-            case '9':
-                $session = ['s2_9_1','s2_9_2','s2_9_3','s2_9_4','s2_9_5','final'];
-                break;
-            case '10':
-                $session = ['s2_10_1','s2_10_2','s2_10_3','s2_10_4','s2_10_5','final'];
-                break;
-            case '11':
-                $session = ['s2_11_1','s2_11_2','s2_11_3','s2_11_4','s2_11_5','final'];
-                break;
-            case '12':
-                $session = ['s2_12_1','s2_12_2','s2_12_3','s2_12_4','s2_12_5','final'];
-                break;
-            case '13':
-                $session = ['s2_13_1','s2_13_2','s2_13_3','s2_13_4','s2_13_5','final'];
-                break;
-            case '14':
-                $session = ['s2_14_1','s2_14_2','s2_14_3','s2_14_4','s2_14_5','final'];
-                break;
-            case '15':
-                $session = ['s2_15_1','s2_15_2','s2_15_3','s2_15_4','s2_15_5','final'];
-                break;
-            case '16':
-                $session = ['s2_16_1','s2_16_2','s2_16_3','s2_16_4','s2_16_5','final'];
-                break;
-            case '17':
-                $session = ['s2_17_1','s2_17_2','s2_17_3','s2_17_4','s2_17_5','final'];
-                break;
-            case '18':
-                $session = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5','final'];
-                break;
-            case '19':
-                $session = ['s2_19_1','s2_19_2','s2_19_3','s2_19_4','s2_19_5','final'];
-                break;
-            case '20':
-                $session = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5','final'];
-                break;
-            default:
-                return;
+
+        $all['1'] = ['s2_1_1','s2_1_2','s2_1_3','s2_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'s2_1_4','s2_1_5','final'];
+        $all['2'] = ['s2_2_1','s2_2_2','s2_2_3','s2_2_4','s2_2_5',false,'t4_a','t4_b','t4_c',false,'s2_2_6','s2_2_7','final'];
+        $all['3'] = ['s2_3_1','s2_3_2','s2_3_3','s2_3_4','s2_3_5',false,'t5_a','t5_b','t5_c',false,'s2_3_6','s2_3_7','final'];
+        $all['4'] = ['s2_4_1','s2_4_2','s2_4_3','s2_4_4','s2_4_5',false,'t6_a','t6_b','t6_c',false,'t8_a','t8_b','t8_c',false,'s2_4_6','s2_4_7','final'];
+        $all['5'] = ['s2_5_1','s2_5_2','s2_5_3','s2_5_4','s2_5_5',false,'t7_a','t7_b','t7_c','t7_d',false,'s2_5_6','s2_5_7','final'];
+        $all['6'] = ['s2_6_1','s2_6_2','s2_6_3','s2_6_4','s2_6_5',false,'t9_a','t9_b','t9_c',false,'t13_a','t13_b','t13_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s2_6_6','s2_6_7','final'];
+        $all['7'] = ['s2_7_1','s2_7_2','s2_7_3','s2_7_4','s2_7_5',false,'s2_7_6','s2_7_7','s2_7_8','final'];
+        $all['8'] = ['s2_8_1','s2_8_2','s2_8_3','s2_8_4','s2_8_5',false,'t11_a','t11_b','t11_c','t11_d',false,'t12_a','t12_b','t12_c',false,'s2_8_6','s2_8_7','final'];
+        $all['9'] = ['s2_9_1','s2_9_2','s2_9_3','s2_9_4','s2_9_5',false,'s2_9_6','s2_9_7','s2_9_8','final'];
+        $all['10'] = ['s2_10_1','s2_10_2','s2_10_3','s2_10_4','s2_10_5',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s2_10_6','s2_10_7','final'];
+        $all['11'] = ['s2_11_1','s2_11_2','s2_11_3','s2_11_4','s2_11_5',false,'t17_a','t17_b',false,'s2_11_6','s2_11_7','final'];
+        $all['12'] = ['s2_12_1','s2_12_2','s2_12_3','s2_12_4','s2_12_5',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'s2_12_6','s2_12_7','final'];
+        $all['13'] = ['s2_13_1','s2_13_2','s2_13_3','s2_13_4','s2_13_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s2_13_6','s2_13_7','final'];
+        $all['14'] = ['s2_14_1','s2_14_2','s2_14_3','s2_14_4','s2_14_5',false,'s2_14_6','s2_14_7','s2_14_8','final'];
+        $all['15'] = ['s2_15_1','s2_15_2','s2_15_3','s2_15_4','s2_15_5',false,'t22_a','t22_b','t22_c',false,'t23_a','t23_b','t23_c',false,'s2_15_6','s2_15_7','final'];
+        $all['16'] = ['s2_16_1','s2_16_2','s2_16_3','s2_16_4','s2_16_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'s2_16_6','s2_16_7','final'];
+        $all['17'] = ['s2_17_1','s2_17_2','s2_17_3','s2_17_4','s2_17_5',false,'t27_a','t27_b','t27_c',false,'s2_17_6','s2_17_7','final'];
+        $all['18'] = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5',false,'t28_a','t28_b','t28_c','t28_d',false,'s2_18_6','s2_18_7','final'];
+        $all['19'] = ['s2_19_1','s2_19_2','s2_19_3','s2_19_4','s2_19_5',false,'t30_a','t30_b','t30_c',false,'s2_19_6','s2_19_7','final'];
+        $all['20'] = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5',false,'t31_a','t31_b','t31_c',false,'t32_a','t32_b',false,'next_steps','congratulations','final'];
+
+        if ( empty( $session_number ) ) {
+            foreach( $all as $set ) {
+                $session = array_merge( $session, $set );
+            }
+        }
+        else {
+            $session = $all[$session_number];
         }
     }
 
-    $build = [];
-
     $content = zume_content();
+    $progress_bar = '<div class="progress-bar-wrapper">';
+
+    $slides = [];
+    foreach( $session as $index => $item ) {
+        if ( ! $item ) {
+            $progress_bar .= '<div class="progress-bar-divider"> </div>';
+            continue;
+        }
+
+        $slides[$item] = [];
+
+        if ( $index > 0 && $item !== 'final' ) {
+            $progress_bar .= '<div class="progress-bar-item '.$item.'-bar"></div>';
+        }
+    }
+    $progress_bar .= '</div>';
 
     foreach( $content as $item ) {
         if ( in_array( $item['key'], $session ) ) {
-            $build[] = $item;
+            $slides[$item['key']] = $item;
+            $slides[$item['key']]['progress_bar'] = ( empty( $session_number ) ) ? '' : $progress_bar;
         }
     }
 
-    return $build;
+    return $slides;
 }
 
 function zume_content() {
-    $samp = [
-        'key' => '',
-        'type' => 'single',
-        'center' => [],
-        'left' => [],
-        'right' => [],
-    ];
+
+    $tools = array(
+        1 => ['t1_a','t1_b','t1_c'], // God uses ordinary people
+        2 => ['t2_a','t2_b','t2_c'], // teach them to obey
+        3 => ['t3_a','t3_b','t3_c'], // spiritual breathing
+        4 => ['t4_a','t4_b','t4_c'], // soaps bible reading
+        5 => ['t5_a','t5_b','t5_c'], // accountability groups
+        6 => ['t6_a','t6_b','t6_c'], // producer not consumer
+        7 => ['t7_a','t7_b','t7_c','t7_d'], // prayer cycle
+        8 => ['t8_a','t8_b','t8_c'], // list of 100
+        9 => ['t9_a','t9_b','t9_c'], // spiritual economy
+        10 => ['t10_a','t10_b','t10_c','t10_d','t10_e'], // the gospel
+        11 => ['t11_a','t11_b','t11_c','t11_d'], // baptism
+        12 => ['t12_a','t12_b','t12_c'], // 3-minute testimony
+        13 => ['t13_a','t13_b','t13_c'], // greatest blessing
+        14 => ['t14_a','t14_b','t14_c'], // duckling discipleship
+        15 => ['t15_a','t15_b','t15_c'], // seeing where God's kingdom isn't
+        16 => ['t16_a','t16_b','t16_c'], // the lord's supper
+        17 => ['t17_a','t17_b','t17_c'], // prayer walking
+        18 => ['t18_a','t18_b','t18_c'], // person of peace
+        19 => ['t19_a'], // bless prayer
+        20 => ['t20_a','t20_b','t20_c'], // faithfulness
+        21 => ['t21_a','t21_b','t21_c'], // 3/3 group pattern
+        22 => ['t22_a','t22_b','t22_c'], // training cycle
+        23 => ['t23_a','t23_b','t23_c'], // leadership cells
+        24 => ['t24_a','t24_b','t24_c'], // non-sequential
+        25 => ['t25_a','t25_b','t25_c'], // pace
+        26 => ['t26_a','t26_b','t26_c'], // part of two churches
+        27 => ['t27_a','t27_b','t27_c'], // 3-month plan
+        28 => ['t28_a','t28_b','t28_c','t28_d'], // coaching checklist
+        29 => ['t29_a','t29_b','t29_c'], // leadership in networks
+        30 => ['t30_a','t30_b','t30_c'], // peer mentoring groups
+        31 => ['t31_a','t31_b','t31_c'], // four fields tool
+        32 => ['t32_a','t32_b'], // generation mapping
+    );
 
     return [
-
-
-        // final slide
-
-
-
-
-        // session 1
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 1
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_1',
+            'key' => 's1_1_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -764,7 +911,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_2',
+            'key' => 's1_1_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -777,7 +924,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_3',
+            'key' => 's1_1_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -789,7 +936,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_4',
+            'key' => 's1_1_4',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -810,7 +957,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_5',
+            'key' => 't1_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -822,7 +969,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_6',
+            'key' => 't1_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '1', true, 'en' ), // video
@@ -831,7 +978,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_7',
+            'key' => 't1_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -843,7 +990,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_8',
+            'key' => 't2_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -855,7 +1002,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_9',
+            'key' => 't2_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '2', true, 'en' ), // video
@@ -864,7 +1011,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_10',
+            'key' => 't2_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -880,7 +1027,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_11',
+            'key' => 't3_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -892,7 +1039,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_12',
+            'key' => 't3_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '3', true, 'en' ), // video
@@ -901,7 +1048,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_13',
+            'key' => 't3_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -916,7 +1063,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_14',
+            'key' => 't4_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -928,7 +1075,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_15',
+            'key' => 't4_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '4', true, 'en' ), // video
@@ -938,7 +1085,7 @@ function zume_content() {
 
         ],
         [
-            'key' => 's_16',
+            'key' => 't4_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -946,7 +1093,7 @@ function zume_content() {
             ],
             'left' => [
                 'Practice S.O.A.P.S.',
-                '(20 min) Break up and work individually through the S.O.A.P.S. Bible study pattern using Matthew 6:9-13.',
+                'Break up and work individually through the S.O.A.P.S. Bible study pattern using Matthew 6:9-13. (20 min)',
                 [
                     'Scripture',
                     'Observation',
@@ -954,15 +1101,15 @@ function zume_content() {
                     'Prayer',
                     'Sharing'
                 ],
-                '(10 min) Return together and share your S.O.A.P.S. in groups of two or three.'
+                'Return together and share your S.O.A.P.S. in groups of two or three. (10 min) '
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/4.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_17',
+            'key' => 't5_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -975,7 +1122,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_18',
+            'key' => 't5_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '5', true, 'en' ), // video
@@ -984,7 +1131,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_19',
+            'key' => 't5_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -996,12 +1143,12 @@ function zume_content() {
                 'Spend the next 20 minutes working together through the Accountability Questions.',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/5.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_20',
+            'key' => 's1_1_20',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -1022,7 +1169,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_21',
+            'key' => 's1_1_21',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -1034,28 +1181,25 @@ function zume_content() {
                 'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
             ],
         ],
-        [ // final slide
-            'key' => 's_22',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
 
 
 
 
-
-        // Session 2
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 2
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
 
         [
-            'key' => 's_23',
+            'key' => 's1_2_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -1065,7 +1209,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_24',
+            'key' => 's1_2_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -1078,7 +1222,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_25',
+            'key' => 's1_2_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -1092,7 +1236,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_26',
+            'key' => 's1_2_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -1105,7 +1249,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_27',
+            'key' => 's1_2_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -1114,7 +1258,7 @@ function zume_content() {
             'right' => [
                 'In this session, we will hear this concept:',
                 [
-                    'Consumer vs. Producer Lifestyle',
+                    'Producer not Consumer',
                 ],
                 'And we will add these tools to our toolkit:',
                 [
@@ -1124,14 +1268,14 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_28',
+            'key' => 't6_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
                 'WATCH',
             ],
             'right' => [
-                'Producers vs Consumers',
+                'Producer not Consumer',
                 'If we want to make disciples who multiply – spiritual producers and not just consumers – then we need to learn and share four main ways God makes everyday followers more like Jesus:',
                 [
                     'Prayer',
@@ -1142,7 +1286,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_29',
+            'key' => 't6_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '6', true, 'en' ), // video
@@ -1151,7 +1295,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_30',
+            'key' => 't6_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1167,7 +1311,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_31',
+            'key' => 't7_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1179,7 +1323,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_32',
+            'key' => 't7_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '7', true, 'en' ), // video
@@ -1188,7 +1332,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_33',
+            'key' => 't7_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -1199,48 +1343,12 @@ function zume_content() {
                 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.'
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/7.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_34',
-            'type' => 'additional_panel',
-            'center' => [
-                'PRAYER CYCLE',
-                '(60 min)',
-            ],
-            'left' => [
-                'Praise',
-                'Praise Him for things that are on your mind right now.',
-                'Wait',
-                'Be silent and let Him pull together reflections for you.',
-                'Confess',
-                'Ask the Holy Spirit to show you anything in your life that might be displeasing to Him.',
-                'Read the Word',
-                'Ask',
-                '',
-                'Make requests on behalf of yourself.',
-                'Intercession',
-                'Make requests on behalf of others.',
-            ],
-            'right' => [
-                'Pray the Word',
-                'Pray specific passages.',
-                'Give Thanks',
-                'Give thanks to the Lord for the things in your life.',
-                'Sing',
-                'Sing a song of praise',
-                'Meditate',
-                'Ask the Lord to speak to you.',
-                'Listen',
-                'Spend time merging the things you heard in the last hour.',
-                'Praise',
-                'Praise the Lord for the time you have had.'
-            ],
-        ],
-        [
-            'key' => 's_35',
+            'key' => 't7_d',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1257,7 +1365,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_36',
+            'key' => 't8_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1271,7 +1379,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_37',
+            'key' => 't8_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '8', true, 'en' ), // video
@@ -1280,7 +1388,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_38',
+            'key' => 't8_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -1292,21 +1400,12 @@ function zume_content() {
                 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/8.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_39',
-            'type' => 'additional_panel',
-            'center' => [
-                'List of 100 Examples',
-            ],
-            'left' => [],
-            'right' => [],
-        ],
-        [
-            'key' => 's_40',
+            'key' => 's1_2_6',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -1325,7 +1424,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_41',
+            'key' => 's1_2_7',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -1338,7 +1437,7 @@ function zume_content() {
             ],
         ],
         [ // final slide
-            'key' => 's_42',
+            'key' => 's1_2_18',
             'type' => 'final',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
@@ -1350,10 +1449,26 @@ function zume_content() {
             'right' => [],
         ],
 
-        // Session 3
 
+
+
+
+
+
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 3
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_43',
+            'key' => 's1_3_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -1363,7 +1478,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_44',
+            'key' => 's1_3_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -1376,7 +1491,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_45',
+            'key' => 's1_3_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -1388,7 +1503,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_46',
+            'key' => 's1_3_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -1401,7 +1516,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_47',
+            'key' => 's1_3_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -1420,7 +1535,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_48',
+            'key' => 't9_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1432,7 +1547,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_49',
+            'key' => 't9_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '9', true, 'en' ), // video
@@ -1441,7 +1556,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_49_a',
+            'key' => 't9_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1453,19 +1568,17 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_50',
-            'type' => 'watch',
+            'key' => 't10_a',
+            'type' => 'center',
             'center' => [],
             'left' => [
-                'READ',
-            ],
-            'right' => [
                 'Jesus said, “You will receive power when the Holy Spirit comes upon you. And you will be my witnesses, telling people about me everywhere – in Jerusalem, throughout Judea, in Samaria, and to the ends of the earth.”',
                 'There’s no one “best way” to tell God’s story (also called The Gospel), because the best way will depend on who you’re sharing with. Every disciple should learn to tell God’s Story in a way that’s true to scripture and connects with the audience they’re sharing with.',
             ],
+            'right' => [],
         ],
         [
-            'key' => 's_51',
+            'key' => 't10_b',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1481,7 +1594,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_52',
+            'key' => 't10_c',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1493,7 +1606,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_53',
+            'key' => 't10_d',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '10', true, 'en' ), // video
@@ -1502,7 +1615,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_54',
+            'key' => 't10_e',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1518,7 +1631,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_55',
+            'key' => 's1_3_8',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -1529,12 +1642,12 @@ function zume_content() {
                 'Break into groups of two or three people and take turns telling the Gospel to each other.'
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/10.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_56',
+            'key' => 't11_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1546,7 +1659,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_57',
+            'key' => 't11_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '11', true, 'en' ), // video
@@ -1555,7 +1668,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_58',
+            'key' => 't11_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1571,17 +1684,18 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_59',
-            'type' => 'challenge',
-            'center' => [
+            'key' => 't11_d',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
                 'IMPORTANT REMINDER – Have you been baptized?',
-                'If not, then we encourage you to plan this before even one more session of this training. Invite your group to be a part of this important day when you celebrate saying "yes" to Jesus.',
+                'If not, then we encourage you to plan this before even one more session of this training. Invite your group to be a part of this important day when you celebrate saying "yes" to Jesus.'
             ],
-            'left' => [],
             'right' => [],
         ],
+
         [
-            'key' => 's_60',
+            'key' => 's1_3_10',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -1600,7 +1714,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_61',
+            'key' => 's1_3_11',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -1613,24 +1727,22 @@ function zume_content() {
                 'IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next session. Be sure to remember the supplies (bread and wine / juice).', // bonus reminder
             ],
         ],
-        [ // final slide
-            'key' => 's_62',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
 
-        // Session 4
 
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 4
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_63',
+            'key' => 's1_4_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -1640,7 +1752,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_64',
+            'key' => 's1_4_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -1653,7 +1765,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_65',
+            'key' => 's1_4_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -1665,7 +1777,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_66',
+            'key' => 's1_4_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -1678,7 +1790,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_67',
+            'key' => 's1_4_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -1699,7 +1811,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_68',
+            'key' => 't12_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1711,7 +1823,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_69',
+            'key' => 't12_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '12', true, 'en' ), // video
@@ -1720,7 +1832,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_70',
+            'key' => 't12_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -1731,12 +1843,12 @@ function zume_content() {
                 'Break into groups of two or three and practice sharing your testimony.',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/12.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_71',
+            'key' => 't13_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1748,7 +1860,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_72',
+            'key' => 't13_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '13', true, 'en' ), // video
@@ -1757,7 +1869,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_73',
+            'key' => 't13_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1773,7 +1885,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_74',
+            'key' => 't14_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1785,7 +1897,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_75',
+            'key' => 't14_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '14', true, 'en' ), // video
@@ -1794,7 +1906,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_76',
+            'key' => 't14_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1809,7 +1921,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_77',
+            'key' => 't15_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1822,7 +1934,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_78',
+            'key' => 't15_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '15', true, 'en' ), // video
@@ -1831,7 +1943,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_79',
+            'key' => 't15_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -1847,7 +1959,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_80',
+            'key' => 't16_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -1859,7 +1971,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_81',
+            'key' => 't16_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '16', true, 'en' ), // video
@@ -1868,7 +1980,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_82',
+            'key' => 't16_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -1879,12 +1991,12 @@ function zume_content() {
                 'Spend the next 10 minutes celebrating The Lord’s Supper with your group.',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/16.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_83',
+            'key' => 's1_4_6',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -1905,7 +2017,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_84',
+            'key' => 's1_4_7',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -1917,23 +2029,22 @@ function zume_content() {
                 'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.',
             ],
         ],
-        [ // final slide
-            'key' => 's_85',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 5
 
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 5
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_86',
+            'key' => 's1_5_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -1943,7 +2054,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_87',
+            'key' => 's1_5_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -1956,7 +2067,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_88',
+            'key' => 's1_5_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -1968,7 +2079,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_89',
+            'key' => 's1_5_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -1981,7 +2092,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_90',
+            'key' => 's1_5_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -2000,7 +2111,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_91',
+            'key' => 't17_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2012,7 +2123,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_92',
+            'key' => 't17_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '17', true, 'en' ), // video
@@ -2021,7 +2132,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_93',
+            'key' => 't18_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2033,7 +2144,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_94',
+            'key' => 't18_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '18', true, 'en' ), // video
@@ -2042,7 +2153,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_95',
+            'key' => 't18_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2058,7 +2169,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_96',
+            'key' => 't19_a',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -2069,12 +2180,12 @@ function zume_content() {
                 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/18.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_97',
+            'key' => 's1_5_7',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -2089,12 +2200,12 @@ function zume_content() {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/17.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_98',
+            'key' => 's1_5_8',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2107,23 +2218,23 @@ function zume_content() {
                 'Ask Him to prepare your heart and the heart of those you’ll meet during your walk to be open to His work.',
             ],
         ],
-        [
-            'key' => 's_99',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 6
 
+
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 6
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_100',
+            'key' => 's1_6_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -2133,7 +2244,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_101',
+            'key' => 's1_6_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -2146,7 +2257,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_102',
+            'key' => 's1_6_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2158,7 +2269,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_103',
+            'key' => 's1_6_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -2171,7 +2282,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_104',
+            'key' => 's1_6_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -2189,7 +2300,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_105',
+            'key' => 't20_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2201,7 +2312,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_106',
+            'key' => 't20_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '20', true, 'en' ), // video
@@ -2210,7 +2321,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_107',
+            'key' => 't20_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2222,8 +2333,8 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_108',
-            'type' => 'activity_center',
+            'key' => 't21_a',
+            'type' => 'center',
             'center' => [
                 'ACTIVITY',
                 '(75 min)',
@@ -2235,7 +2346,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_109',
+            'key' => 't21_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '21', true, 'en' ), // video
@@ -2244,7 +2355,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_110',
+            'key' => 't21_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2259,7 +2370,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_111',
+            'key' => 's1_6_6',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -2277,7 +2388,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_112',
+            'key' => 's1_6_7',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -2289,23 +2400,26 @@ function zume_content() {
                 'Pray and ask God who He wants you to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.',
             ],
         ],
-        [ // final slide
-            'key' => 's_113',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 7
 
+
+
+
+
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 7
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_114',
+            'key' => 's1_7_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -2315,7 +2429,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_115',
+            'key' => 's1_7_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -2328,7 +2442,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_116',
+            'key' => 's1_7_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2340,7 +2454,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_117',
+            'key' => 's1_7_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -2353,7 +2467,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_118',
+            'key' => 's1_7_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -2371,7 +2485,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_119',
+            'key' => 't22_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2383,7 +2497,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_120',
+            'key' => 't22_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '22', true, 'en' ), // video
@@ -2392,7 +2506,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_121',
+            'key' => 't22_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2409,7 +2523,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_122',
+            'key' => 's1_7_6',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -2424,12 +2538,12 @@ function zume_content() {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/27.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_123',
+            'key' => 's1_7_7',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2444,7 +2558,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_124',
+            'key' => 's1_7_8',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -2462,7 +2576,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_125',
+            'key' => 's1_7_9',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -2474,23 +2588,22 @@ function zume_content() {
                 'Challenge the person you mentored to continue the process to an additional (fifth) generation.',
             ],
         ],
-        [ // final slide
-            'key' => 's_126',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 8
 
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 8
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_127',
+            'key' => 's1_8_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -2500,7 +2613,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_128',
+            'key' => 's1_8_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -2513,7 +2626,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_129',
+            'key' => 's1_8_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2525,7 +2638,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_130',
+            'key' => 's1_8_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -2538,7 +2651,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_131',
+            'key' => 's1_8_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -2556,7 +2669,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_132',
+            'key' => 't23_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2569,7 +2682,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_133',
+            'key' => 't23_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '23', true, 'en' ), // video
@@ -2578,7 +2691,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_134',
+            'key' => 't23_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2593,7 +2706,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_135',
+            'key' => 's1_8_6',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -2608,12 +2721,12 @@ function zume_content() {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/21.png',
                 'Activity Resource',
             ],
         ],
         [
-            'key' => 's_136',
+            'key' => 's1_8_7',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -2631,7 +2744,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_137',
+            'key' => 's1_8_8',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -2643,23 +2756,22 @@ function zume_content() {
                 'Pray and ask God who He wants you to share the Leadership Cell tool with before your group meets again. Challenge them to then share it with someone else. Share this person’s name and who they shared it with.',
             ],
         ],
-        [
-            'key' => 's_138',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 9
 
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 9
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_139',
+            'key' => 's1_9_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -2669,7 +2781,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_140',
+            'key' => 's1_9_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -2682,7 +2794,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_141',
+            'key' => 's1_9_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2695,7 +2807,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_142',
+            'key' => 's1_9_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -2708,7 +2820,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_143',
+            'key' => 's1_9_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -2728,7 +2840,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_144',
+            'key' => 't24_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2740,7 +2852,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_145',
+            'key' => 't24_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '24', true, 'en' ), // video
@@ -2749,7 +2861,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_146',
+            'key' => 't24_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2764,7 +2876,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_147',
+            'key' => 't25_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2776,7 +2888,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_148',
+            'key' => 't25_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '25', true, 'en' ), // video
@@ -2785,7 +2897,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_149',
+            'key' => 't25_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2801,7 +2913,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_150',
+            'key' => 't26_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2815,7 +2927,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_151',
+            'key' => 't26_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '26', true, 'en' ), // video
@@ -2824,7 +2936,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_152',
+            'key' => 't26_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2836,7 +2948,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_153',
+            'key' => 't28_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -2848,7 +2960,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_154',
+            'key' => 't28_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '28', true, 'en' ), // video
@@ -2857,17 +2969,18 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_155',
+            'key' => 't28_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
-                '(10 min)',
+                '(20 min)',
             ],
             'left' => [
-                'Coaching Checklist (Self-Assessment)',
+                'Coaching Checklist',
                 [
-                    'Scan the QR code',
-                    'Evaluate yourself and mark the corresponding column based on the following:',
+                    'Get Resource - Download the Coaching Checklist and print a copy for each person or use the online qr tool.',
+                    'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist. (10 min)',
+                    'Assess Someone Else - Chose a believer from your List of 100 and fill out the coaching checklist as if you were their coach. (10 min)',
                 ]
             ],
             'right' => [
@@ -2876,7 +2989,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_156',
+            'key' => 't28_d',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -2886,35 +2999,12 @@ function zume_content() {
             'right' => [
                 [
                     'Which Training Tools did you feel you would be able to train well?',
-                    'Which ones made you feel vulnerable as a trainer?',
                     'Are there any Training Tools that you would add or subtract from the Checklist? Why?',
                 ]
             ],
         ],
         [
-            'key' => 's_157',
-            'type' => 'review',
-            'center' => [],
-            'left' => [
-                'REVIEW',
-                '(10 min)',
-            ],
-            'right' => [
-                'Have each person share one next step, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.',
-            ],
-        ],
-        [
-            'key' => 's_158',
-            'type' => 'center',
-            'center' => [
-                'REMEMBER',
-                'The Coaching Checklist is a powerful tool you can use to quickly assess your own strengths and vulnerabilities when it comes to making disciples who multiply.',
-            ],
-            'left' => [],
-            'right' => [],
-        ],
-        [
-            'key' => 's_159',
+            'key' => 's1_9_9',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -2934,7 +3024,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_160',
+            'key' => 's1_9_10',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -2946,23 +3036,21 @@ function zume_content() {
                 'If you have already started your own simple church, share the concept  “Always a Part of Two Churches” with the people in it. If not, share it with another believer you know.',
             ],
         ],
-        [ // final slide
-            'key' => 's_161',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
-        // Session 10
 
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      10 SESSION 10
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
-            'key' => 's_162',
+            'key' => 's1_10_1',
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
@@ -2972,7 +3060,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_163',
+            'key' => 's1_10_2',
             'type' => 'checkin',
             'center' => [],
             'left' => [
@@ -2985,7 +3073,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_164',
+            'key' => 's1_10_3',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2999,7 +3087,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_165',
+            'key' => 's1_10_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -3012,19 +3100,19 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_166',
-            'type' => 'overview',
+            'key' => 's1_10_5',
+            'type' => 'center',
             'center' => [],
             'left' => [
-                'OVERVIEW',
+                'Be encouraged ...',
+                'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!',
+                'But, Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training and briefly introduce tools you’ll need later in your journey as you implement what you’ve learned.',
             ],
             'right' => [
-                'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!',
-                'But, Zúme Training is only the beginning! In this session we will make a plan for what happens post-training and briefly introduce tools you’ll need later in your journey as you implement what you’ve learned.',
-            ],
+                 ],
         ],
         [
-            'key' => 's_167',
+            'key' => 's1_10_6',
             'type' => 'overview',
             'center' => [],
             'left' => [
@@ -3045,7 +3133,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_168',
+            'key' => 't29_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -3057,7 +3145,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_169',
+            'key' => 't29_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '29', true, 'en' ), // video
@@ -3066,7 +3154,7 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_170',
+            'key' => 't29_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -3078,30 +3166,31 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_171',
-            'type' => 'left_content',
+            'key' => 't31_a',
+            'type' => 'center',
             'center' => [],
             'left' => [
+                'Four Fields Diagnostic Chart',
                 'The Four Fields diagnostic chart is a simple tool to be used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.',
                 'Jesus often pulled the disciples back, away from ministry to quieter places to review how the work was going. This simple tool is to help you and the co-leaders with you to follow this pattern of Jesus and to address all parts of your stewardship.',
+                'Review the next two slides: Field Descriptions and Four Fields Example',
             ],
-            'right' => [
-                '',
-            ],
+            'right' => [],
         ],
         [
-            'key' => 's_172',
-            'type' => 'left_content',
+            'key' => 't31_b',
+            'type' => 'center',
             'center' => [],
             'left' => [
-                'Four Fields',
+                'Field Descriptions',
                 [
                     'Empty Field: Where or with whom [what people groups] are you planning to extend the Kingdom?',
                     'Seeding Field: Where or with whom are you sharing the good news of the Kingdom? How are you doing that?',
                     'Growing Field: How are you equipping people and growing them spiritually, individually and in their natural networks?',
                     'Harvesting Field: How are new spiritual families [simple churches] being formed?',
                     'Multiplying Field: With whom, how and when are you filtering for faithful people and equipping them and holding them accountable for reproduction?',
-                ]
+                ],
+
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
@@ -3109,21 +3198,47 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_173',
-            'type' => 'left_content',
+            'key' => 't31_c',
+            'type' => 'left_image',
+            'center' => [
+                'Four Fields Example',
+            ],
+            'left' => [
+                'Four Fields Example',
+                'https://storage.googleapis.com/zume-file-mirror/en/98.png',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Resource',
+            ],
+        ],
+        [
+            'key' => 't32_a',
+            'type' => 'center',
             'center' => [],
             'left' => [
-                'Generation Mapping Introduction',
+                'Generation Mapping',
                 'Generational mapping (a.k.a. generation mapping or gen mapping) is another simple tool to help leaders in a movement understand the growth around them.',
                 'A generation tree map can be drawn on a piece of paper or multiple pieces of paper. This map helps show where there are stops in multiplication and training might be required. Health of the movement is a top concern for leaders and fruitfulness is a top way to measure health.',
+                'See the example on the next slide.',
+            ],
+            'right' => [],
+        ],
+        [
+            'key' => 't32_b',
+            'type' => 'left_image',
+            'center' => [],
+            'left' => [
+                'Generation Mapping Example',
+                'https://storage.googleapis.com/zume-file-mirror/en/104.png',
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-                'Activity Resource',
+                'Resource',
             ],
         ],
         [
-            'key' => 's_174',
+            'key' => 't30_a',
             'type' => 'watch',
             'center' => [],
             'left' => [
@@ -3135,7 +3250,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_175',
+            'key' => 't30_b',
             'type' => 'video',
             'center' => [
                 Zume_Course::get_video_by_key( '30', true, 'en' ), // video
@@ -3144,17 +3259,16 @@ function zume_content() {
             'right' => [],
         ],
         [
-            'key' => 's_176',
+            'key' => 't30_c',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
                 '(45 min)',
             ],
             'left' => [
-                'Peer Mentoring Groups',
-                'Break into groups of two or three and work through the 3/3 sections of the Peer Mentoring Group format on the next slide. ',
-                'Peer Mentoring is something that happens once a month or once a quarter and takes some time for the whole group to participate, so you will not have time for everyone to experience the full mentoring process in this session.',
-                'To practice, choose one person in your group to be the "mentee" for this session and have the other members spend time acting as Peer Mentors by working through the suggested questions list and providing guidance and encouragement for the Mentee’s work.',
+                'Peer Mentoring Group Practice',
+                'Break into groups of two or three and work through the 3/3 sections of the Peer Mentoring Group.',
+                'To practice, choose one person to be the "mentee" for this session and have the other members work through the suggested questions list as peer mentors.',
                 'By the time you’re finished, everyone should have a basic understanding of asking and answering.',
             ],
             'right' => [
@@ -3163,20 +3277,20 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_177',
-            'type' => 'right_content',
+            'key' => 't27_a',
+            'type' => 'center',
             'center' => [],
             'left' => [
                 'Three-Month Plan',
-            ],
-            'right' => [
                 'In His Bible, God says, "I know the plans I have for you, plans to prosper you and not to harm you, plans to give you hope and a future."',
                 'God makes plans, and He expects us to make plans, too.',
                 'A Three Month Plan is a tool you can use to help focus your attention and efforts and keep them aligned with God’s priorities for making disciples who multiply.',
+                'The next slide will show you how to make your Three Month Plan. We recommend using the online tool.',
             ],
+            'right' => [],
         ],
         [
-            'key' => 's_178',
+            'key' => 't27_b',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -3185,12 +3299,10 @@ function zume_content() {
             'left' => [
                 'Make your Three Month Plan',
                 [
-                    'Review the Worksheet Questions (1 min)',
-                    'Pray (4 min) Ask God what He specifically wants you to do with the basic disciple-making tools and techniques you have learned.',
-                    'Listen (10 min) Take at least 10 minutes to be as quiet as possible and listen intently to what God has to say and what He chooses to reveal. Make an effort to hear His voice.',
-                    'Write Plan (15 min) Use the rest of your time to complete the Three Month Plan worksheet. You can write it out on a piece of paper or save it digitally by using the QR code on this screen.',
+                    'Review Questions - All questions are optional, and intended as prompts for your plan. (5 min)',
+                    'Listen - Take time to be as quiet as possible and listen to what God chooses to reveal. (10 min)',
+                    'Write Plan - Respond to worksheet questions and use a piece of paper or the QR code to save your answers. (15 min)',
                 ],
-                'You do not have to commit to every item, and there is room for other items not already on the list.',
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
@@ -3198,7 +3310,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's_179',
+            'key' => 't27_c',
             'type' => 'discuss',
             'center' => [],
             'left' => [
@@ -3210,50 +3322,30 @@ function zume_content() {
                 'Find a training partner(s) that is willing to check in with you weekly. Commit to doing the same for them.',
             ],
         ],
-        [
-            'key' => 's_180',
-            'type' => 'right_content',
-            'center' => [],
-            'left' => [
-                'NEXT STEPS',
-                '(10 min)',
-            ],
-            'right' => [
-                'Get a Coach',
-                'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-                'Join the Community',
-                'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-            ],
-        ],
-        [
-            'key' => 's_181',
-            'type' => 'final_congratulations',
-            'center' => [
-                'CONGRATULATIONS',
-                'on completing Zume Training!',
-                'https://placehold.co/600x400/png',
-            ],
-            'left' => [],
-            'right' => [],
-        ],
-        [ // final slide
-            'key' => 's_182',
-            'type' => 'final',
-            'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
-            ],
-            'left' => [],
-            'right' => [],
-        ],
 
 
 
-        // 20 Session 1
+
+
+
+
+        /**************************************************************************************************************/
+
+        /**************************************************************************************************************/
+
+        /**************************************************************************************************************/
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 1
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_1_1',
             'type' => 'title',
@@ -3305,10 +3397,49 @@ function zume_content() {
                 ]
             ],
         ],
+        [
+            'key' => 's2_1_4',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'God Uses Ordinary People',
+                    'Simple Definition of Disciple and Church',
+                    'Spiritual Breathing is Hearing and Obeying God',
+                ]
+            ],
+        ],
+        [
+            'key' => 's2_1_5',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
+                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+            ],
+        ],
 
 
 
-        // 20 Session 2
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 2
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_2_1',
             'type' => 'title',
@@ -3371,9 +3502,46 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_2_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'S.O.A.P.S Bible Reading',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_2_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
+                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+            ],
+        ],
 
 
-        // 20 Session 3
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 3
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_3_1',
             'type' => 'title',
@@ -3410,7 +3578,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's2_2_4',
+            'key' => 's2_3_4',
             'type' => 'look_back',
             'center' => [],
             'left' => [
@@ -3436,10 +3604,47 @@ function zume_content() {
                 ]
             ],
         ],
+        [
+            'key' => 's2_3_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'Accountability Groups',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_3_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
+                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+            ],
+        ],
 
 
 
-        // 20 Session 4
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 4
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_4_1',
             'type' => 'title',
@@ -3477,13 +3682,26 @@ function zume_content() {
         ],
         [
             'key' => 's2_4_4',
+            'type' => 'look_back',
+            'center' => [],
+            'left' => [
+                'LOOK BACK',
+            ],
+            'right' => [
+                'Before getting started, take some time to look back.',
+                'At the end of the last session, everyone in your group was challenged to practice what you learned.',
+                'Take a few moments to see how your group did this week.',
+            ],
+        ],
+        [
+            'key' => 's2_4_5',
             'type' => 'overview',
             'center' => [],
             'left' => [
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss this concept:',
+                'In this session, we will discuss the concept:',
                 [
                     'Producer not Consumer',
                 ],
@@ -3493,10 +3711,50 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_4_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concept heard in this session:',
+                [
+                    'Producer not Consumer',
+                ],
+                'Tool heard in this session:',
+                [
+                    'Relational Stewardship - List of 100',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_4_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+                '',
+            ],
+        ],
 
 
 
-        // 20 Session 5
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 5
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_5_1',
             'type' => 'title',
@@ -3559,10 +3817,46 @@ function zume_content() {
                 ]
             ],
         ],
+        [
+            'key' => 's2_5_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'The Prayer Cycle',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_5_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
-        // 20 Session 6
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 6
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_6_1',
             'type' => 'title',
@@ -3619,7 +3913,7 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss these concepts:',
                 [
                     'Spiritual Economy',
                     'Vision Casting the Greatest Blessing',
@@ -3628,11 +3922,49 @@ function zume_content() {
 
             ],
         ],
+        [
+            'key' => 's2_6_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Spiritual Economy',
+                    'Vision Casting the Greatest Blessing',
+                    'The Gospel and How to Share it',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_6_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 7
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 7
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_7_1',
             'type' => 'title',
@@ -3695,11 +4027,65 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_7_6',
+            'type' => 'activity',
+            'center' => [
+                'ACTIVITY',
+                '(50 min)',
+            ],
+            'left' => [
+                '',
+                'Break into groups of two or three people and practice telling God’s Story. ',
+                'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s Story in a way that you think will make sense to that particular person.',
+                'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.',
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
+            ],
+        ],
+        [
+            'key' => 's2_7_7',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'Sharing the Gospel',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_7_8',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 8
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 8
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_8_1',
             'type' => 'title',
@@ -3758,15 +4144,52 @@ function zume_content() {
             'right' => [
                 'In this session, we will add these tools to our toolkit:',
                 [
-                    'Baptism and How to Do it',
+                    'Baptism',
                     'The 3-Minute Testimony',
                 ],
+            ],
+        ],
+        [
+            'key' => 's2_8_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'Baptism',
+                    'The 3-Minute Testimony',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_8_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
             ],
         ],
 
 
 
-        // 20 Session 9
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 9
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_9_1',
             'type' => 'title',
@@ -3829,11 +4252,62 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_9_6',
+            'type' => 'center',
+            'center' => [
+                'ACTIVITY',
+                '(50 min)'
+            ],
+            'left' => [
+                'Share Your Testimony',
+                'Break into groups of two of three and practice sharing your Three-Minute Testimony.',
+                'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice your Testimony in a way that you think will make sense to that particular person. After you’ve practiced, switch. Pretend to be someone else’s five people from the list. By the time you’re finished, you should be able to tell your Testimony in about 3 minutes or less.',
+                'Repetition builds confidence.',
+            ],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_9_7',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    'Sharing Your Testimony',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_9_8',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 10
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 10
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_10_1',
             'type' => 'title',
@@ -3892,19 +4366,60 @@ function zume_content() {
             'right' => [
                 'In this session, we will discuss these concepts:',
                 [
-                    'Duckling Discipleship - Leading Immediately',
+                    'Duckling Discipleship',
                     'Eyes to See Where the Kingdom Isn’t',
                 ],
                 'And we will add this tool to our toolkit:',
                 [
-                    'The Lord’s Supper and How to Lead it',
+                    'The Lord’s Supper',
                 ],
+            ],
+        ],
+        [
+            'key' => 's2_10_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Duckling Discipleship',
+                    'Eyes to See Where the Kingdom Isn’t',
+                ],
+                'Tool heard in this session:',
+                [
+                    'The Lord’s Supper',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_10_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
             ],
         ],
 
 
 
-        // 20 Session 11
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 11
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_11_1',
             'type' => 'title',
@@ -3967,10 +4482,62 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_11_6',
+            'type' => 'activity',
+            'center' => [
+                'ACTIVITY',
+                '(60-90 min)'
+            ],
+            'left' => [
+                'Prayer Walking',
+                [
+                    'Break into groups of two or three and go out into the community to practice Prayer Walking.',
+                    'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.',
+                    'Go as God leads, and plan on spending 60-90 minutes on this activity.',
+                ]
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
+            ],
+        ],
+        [
+            'key' => 's2_11_7',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
+                'Blessings on your walk!',
+                'This session ends with the prayer walking activity.',
+            ],
+            'right' => [],
+        ],
+        [
+            'key' => 's2_11_8',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
-        // 20 Session 12
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 12
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_12_1',
             'type' => 'title',
@@ -4027,10 +4594,9 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss the concept:',
                 [
                     'Person of Peace',
-                    'The BLESS Prayer Pattern',
                 ],
                 'And we will add this tool to our toolkit:',
                 [
@@ -4038,11 +4604,51 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_12_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concept heard in this session:',
+                [
+                    'Person of Peace',
+                ],
+                'Tool heard in this session:',
+                [
+                    'B.L.E.S.S. Prayer',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_12_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 13
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 13
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_13_1',
             'type' => 'title',
@@ -4099,17 +4705,54 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss these concepts:',
                 [
                     'Faithfulness',
                     '3/3 Group Meeting Pattern',
                 ],
             ],
         ],
+        [
+            'key' => 's2_13_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Faithfulness',
+                    '3/3 Group Meeting Pattern',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_13_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
-        // 20 Session 14
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 14
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_14_1',
             'type' => 'title',
@@ -4172,11 +4815,67 @@ function zume_content() {
                 ],
             ],
         ],
+        [
+            'key' => 's2_14_6',
+            'type' => 'activity',
+            'center' => [
+                'ACTIVITY',
+                '(90 min)'
+            ],
+            'left' => [
+                '3/3 Group Format',
+                [
+                    'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)',
+                    'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (30 min)',
+                    'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (30 min)',
+                ]
+            ],
+            'right' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                'Activity Resource',
+            ],
+        ],
+        [
+            'key' => 's2_14_7',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Tool heard in this session:',
+                [
+                    '3/3 Group Meeting',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_14_8',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 15
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 15
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_15_1',
             'type' => 'title',
@@ -4233,18 +4932,55 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss these concepts:',
                 [
                     'Training Cycle',
                     'Leadership Cells',
                 ],
             ],
         ],
+        [
+            'key' => 's2_15_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Training Cycle',
+                    'Leadership Cells',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_15_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
 
-        // 20 Session 16
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 16
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_16_1',
             'type' => 'title',
@@ -4301,12 +5037,40 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss these concepts:',
                 [
                     'Expect Non-Sequential Growth',
-                    'Pace of Multiplication Matters',
+                    'Pace',
                     'Always Part of Two Churches',
                 ],
+            ],
+        ],
+        [
+            'key' => 's2_16_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Expect Non-Sequential Growth',
+                    'Pace',
+                    'Always Part of Two Churches',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_16_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
             ],
         ],
 
@@ -4315,7 +5079,17 @@ function zume_content() {
 
 
 
-        // 20 Session 17
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 17
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_17_1',
             'type' => 'title',
@@ -4372,10 +5146,36 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss this concept:',
+                'In this session, we will discuss the concept:',
                 [
                     'Three-Month Plan',
                 ],
+            ],
+        ],
+        [
+            'key' => 's2_17_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concept heard in this session:',
+                [
+                    'Three-Month Plan',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_17_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
             ],
         ],
 
@@ -4384,7 +5184,17 @@ function zume_content() {
 
 
 
-        // 20 Session 18
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 18
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_18_1',
             'type' => 'title',
@@ -4441,17 +5251,54 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss these concepts:',
+                'In this session, we will discuss these concepts:',
                 [
                     'Coaching Checklist',
                     'Leadership in Networks',
                 ],
             ],
         ],
+        [
+            'key' => 's2_18_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concepts heard in this session:',
+                [
+                    'Coaching Checklist',
+                    'Leadership in Networks',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_18_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
+            ],
+        ],
 
 
 
-        // 20 Session 19
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 19
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_19_1',
             'type' => 'title',
@@ -4508,10 +5355,36 @@ function zume_content() {
                 'OVERVIEW',
             ],
             'right' => [
-                'In this session we will discuss this concept:',
+                'In this session, we will discuss the concept:',
                 [
                     'Peer Mentoring Groups',
                 ],
+            ],
+        ],
+        [
+            'key' => 's2_19_6',
+            'type' => 'review',
+            'center' => [],
+            'left' => [
+                'REVIEW',
+            ],
+            'right' => [
+                'Concept heard in this session:',
+                [
+                    'Peer Mentoring Groups',
+                ],
+            ],
+        ],
+        [
+            'key' => 's2_19_7',
+            'type' => 'obey',
+            'center' => [],
+            'left' => [
+                'OBEY',
+                'SHARE',
+            ],
+            'right' => [
+
             ],
         ],
 
@@ -4519,7 +5392,17 @@ function zume_content() {
 
 
 
-        // 20 Session 20
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      20 SESSION 20
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
         [
             'key' => 's2_20_1',
             'type' => 'title',
@@ -4588,8 +5471,45 @@ function zume_content() {
 
 
 
-        // final slide
 
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *     Final Slides (repeated on all versions)
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 'next_steps',
+            'type' => 'next_steps',
+            'center' => [
+                'NEXT STEPS',
+            ],
+            'left' => [
+                'Get a Coach',
+                'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+            ],
+            'right' => [
+                'Join the Community',
+                'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.',
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+            ],
+        ],
+        [
+            'key' => 'congratulations',
+            'type' => 'congratulations',
+            'center' => [
+                'CONGRATULATIONS',
+                'on completing Zume Training!',
+            ],
+            'left' => [],
+            'right' => [],
+        ],
         [
             'key' => 'final',
             'type' => 'final',
@@ -4603,8 +5523,6 @@ function zume_content() {
             'right' => [],
         ],
 
+    ]; // end course array
 
-    ]; // end array
-
-}
-
+} // end function
