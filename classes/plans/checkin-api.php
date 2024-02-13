@@ -63,6 +63,8 @@ Zume_Checkin::instance();
 
 function zume_session_alias_keys( $number_priority = true ) {
     $list = [
+
+
         // set a
         5678 => 'set_a_01', // 10 session 1
         9876 => 'set_a_01',
@@ -106,6 +108,7 @@ function zume_session_alias_keys( $number_priority = true ) {
         6788 => 'set_a_10',
         // set b
         1354 => 'set_b_01', // 20 session 1
+        3354 => 'set_b_01',
         9878 => 'set_b_01',
         8762 => 'set_b_01',
         9871 => 'set_b_01',
@@ -150,9 +153,9 @@ function zume_session_alias_keys( $number_priority = true ) {
         9434 => 'set_b_11',
         3453 => 'set_b_11',
         9874 => 'set_b_12', // 20 session 12
+        2348 => 'set_b_12',
         1350 => 'set_b_12',
         6547 => 'set_b_12',
-        2348 => 'set_b_12',
         6785 => 'set_b_13', // 20 session 13
         9873 => 'set_b_13',
         4326 => 'set_b_13',

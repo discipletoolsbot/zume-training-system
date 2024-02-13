@@ -211,7 +211,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
             }
             .right-8-obey {
                 border-left: 6px solid #5dccff;
-                padding-left: 1em;
+                padding: 0 1.5em;
                 width: 66%;
                 float: right;
                 font-size: 2.1em;
@@ -449,7 +449,7 @@ function zume_get_template( $slide ) {
                         <div class="right-8-checkin middle">
                             <p><?php echo $slide['right'][0]; ?></p>
                             <p><img src="<?php echo $slide['right'][1]; ?>" /></p>
-                            <p><?php echo $slide['right'][2]; ?></p>
+                            <p><?php echo $slide['right'][2]; ?> <span style="font-weight:bold;"><?php echo $slide['right'][3]; ?></span></p>
                         </div>
                     </div>
                 </div>
@@ -774,7 +774,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
         $all['2'] = ['s1_2_1','s1_2_2','s1_2_3','s1_2_4','s1_2_5',false,'t6_a','t6_b','t6_c',false,'t7_a','t7_b','t7_c','t7_d',false,'t8_a','t8_b','t8_c',false,'s1_2_6','s1_2_7','final'];
         $all['3'] = ['s1_3_1','s1_3_2','s1_3_3','s1_3_4','s1_3_5',false,'t9_a','t9_b','t9_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s1_3_8',false,'t11_a','t11_b','t11_c','t11_d',false,'s1_3_10','s1_3_11','final'];
         $all['4'] = ['s1_4_1','s1_4_2','s1_4_3','s1_4_4','s1_4_5',false,'t12_a','t12_b','t12_c',false,'t13_a','t13_b','t13_c',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s1_4_6','s1_4_7','final'];
-        $all['5'] = ['s1_5_1','s1_5_2','s1_5_3','s1_5_4','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'s1_5_7','s1_5_8','final'];
+        $all['5'] = ['s1_5_1','s1_5_2','s1_5_3','s1_5_4','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'t17_d','t17_e','final'];
         $all['6'] = ['s1_6_1','s1_6_2','s1_6_3','s1_6_4','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final'];
         $all['7'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_4','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8','s1_7_9','final'];
         $all['8'] = ['s1_8_1','s1_8_2','s1_8_3','s1_8_4','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','s1_8_8','final'];
@@ -802,14 +802,14 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
         $all['8'] = ['s2_8_1','s2_8_2','s2_8_3','s2_8_4','s2_8_5',false,'t11_a','t11_b','t11_c','t11_d',false,'t12_a','t12_b','t12_c',false,'s2_8_6','s2_8_7','final'];
         $all['9'] = ['s2_9_1','s2_9_2','s2_9_3','s2_9_4','s2_9_5',false,'s2_9_6','s2_9_7','s2_9_8','final'];
         $all['10'] = ['s2_10_1','s2_10_2','s2_10_3','s2_10_4','s2_10_5',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s2_10_6','s2_10_7','final'];
-        $all['11'] = ['s2_11_1','s2_11_2','s2_11_3','s2_11_4','s2_11_5',false,'t17_a','t17_b',false,'s2_11_6','s2_11_7','final'];
+        $all['11'] = ['s2_11_1','s2_11_2','s2_11_3','s2_11_4','s2_11_5',false,'t17_a','t17_b',false,'t17_d','t17_e','final'];
         $all['12'] = ['s2_12_1','s2_12_2','s2_12_3','s2_12_4','s2_12_5',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'s2_12_6','s2_12_7','final'];
         $all['13'] = ['s2_13_1','s2_13_2','s2_13_3','s2_13_4','s2_13_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s2_13_6','s2_13_7','final'];
         $all['14'] = ['s2_14_1','s2_14_2','s2_14_3','s2_14_4','s2_14_5',false,'s2_14_6','s2_14_7','s2_14_8','final'];
         $all['15'] = ['s2_15_1','s2_15_2','s2_15_3','s2_15_4','s2_15_5',false,'t22_a','t22_b','t22_c',false,'t23_a','t23_b','t23_c',false,'s2_15_6','s2_15_7','final'];
         $all['16'] = ['s2_16_1','s2_16_2','s2_16_3','s2_16_4','s2_16_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'s2_16_6','s2_16_7','final'];
         $all['17'] = ['s2_17_1','s2_17_2','s2_17_3','s2_17_4','s2_17_5',false,'t27_a','t27_b','t27_c',false,'s2_17_6','s2_17_7','final'];
-        $all['18'] = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5',false,'t28_a','t28_b','t28_c','t28_d',false,'s2_18_6','s2_18_7','final'];
+        $all['18'] = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5',false,'t28_a','t28_b','t28_c','t28_d',false,'t29_a','t29_b','t29_c',false,'s2_18_6','s2_18_7','final'];
         $all['19'] = ['s2_19_1','s2_19_2','s2_19_3','s2_19_4','s2_19_5',false,'t30_a','t30_b','t30_c',false,'s2_19_6','s2_19_7','final'];
         $all['20'] = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5',false,'t31_a','t31_b','t31_c',false,'t32_a','t32_b',false,'next_steps','congratulations','final'];
 
@@ -870,7 +870,7 @@ function zume_content() {
         14 => ['t14_a','t14_b','t14_c'], // duckling discipleship
         15 => ['t15_a','t15_b','t15_c'], // seeing where God's kingdom isn't
         16 => ['t16_a','t16_b','t16_c'], // the lord's supper
-        17 => ['t17_a','t17_b','t17_c'], // prayer walking
+        17 => ['t17_a','t17_b','t17_c',false,'t17_d','t17_e'], // prayer walking
         18 => ['t18_a','t18_b','t18_c'], // person of peace
         19 => ['t19_a'], // bless prayer
         20 => ['t20_a','t20_b','t20_c'], // faithfulness
@@ -919,8 +919,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/5678.png',
+                'Or zume.training/checkin and use code:',
+                '5678'
             ],
         ],
         [
@@ -1217,8 +1218,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 2468'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2468.png',
+                'Or zume.training/checkin and use code:',
+                '2468'
             ],
         ],
         [
@@ -1486,8 +1488,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 6543'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/6543.png',
+                'Or zume.training/checkin and use code:',
+                '6543'
             ],
         ],
         [
@@ -1760,8 +1763,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 8764'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/8764.png',
+                'Or zume.training/checkin and use code:',
+                '8764'
             ],
         ],
         [
@@ -2062,8 +2066,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/6542.png',
+                'Or zume.training/checkin and use code:',
+                '6542'
             ],
         ],
         [
@@ -2185,7 +2190,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's1_5_7',
+            'key' => 't17_d',
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
@@ -2205,7 +2210,7 @@ function zume_content() {
             ],
         ],
         [
-            'key' => 's1_5_8',
+            'key' => 't17_e',
             'type' => 'pray',
             'center' => [],
             'left' => [
@@ -2252,8 +2257,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 1235'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/1235.png',
+                'Or zume.training/checkin and use code:',
+                '1235'
             ],
         ],
         [
@@ -2437,8 +2443,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 1356'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/4322.png',
+                'Or zume.training/checkin and use code:',
+                '4322'
             ],
         ],
         [
@@ -2621,8 +2628,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/9870.png',
+                'Or zume.training/checkin and use code:',
+                '9870'
             ],
         ],
         [
@@ -2753,7 +2761,7 @@ function zume_content() {
             ],
             'right' => [
                 'Select some people from your List of 100 who are already believers. Explain Leadership Cells to them and see if they would be interested to be part of one.',
-                'Pray and ask God who He wants you to share the Leadership Cell tool with before your group meets again. Challenge them to then share it with someone else. Share this person’s name and who they shared it with.',
+                'Pray and ask God who He wants you to share the Leadership Cell tool with before your group meets again. Challenge them to then share it with someone else.',
             ],
         ],
 
@@ -2789,8 +2797,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/1355.png',
+                'Or zume.training/checkin and use code:',
+                '1355'
             ],
         ],
         [
@@ -3068,8 +3077,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5430'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/5430.png',
+                'Or zume.training/checkin and use code:',
+                '5430'
             ],
         ],
         [
@@ -3365,8 +3375,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/3354.png',
+                'Or zume.training/checkin and use code:',
+                '3354'
             ],
         ],
         [
@@ -3422,8 +3433,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
-                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+                'Practice sharing these definitions with a friend and pray for the Lord to ingrain them deeply within your heart and soul. Ask the Lord whom He would have you share them with.',
+                'Share the definitions with whomever the Lord impresses on you to do so with. Then equip them to share it with someone else.',
             ],
         ],
 
@@ -3459,8 +3470,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/4568.png',
+                'Or zume.training/checkin and use code:',
+                '4568'
             ],
         ],
         [
@@ -3526,7 +3538,7 @@ function zume_content() {
             ],
             'right' => [
                 'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
-                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.',
             ],
         ],
 
@@ -3561,8 +3573,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/8767.png',
+                'Or zume.training/checkin and use code:',
+                '8767'
             ],
         ],
         [
@@ -3627,8 +3640,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
-                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.'
+                'Find an accountability partner (same gender) and begin meeting with them on a weekly basis.',
+                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own accountability group meeting, and then do so.',
             ],
         ],
 
@@ -3664,8 +3677,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/6787.png',
+                'Or zume.training/checkin and use code:',
+                '6787'
             ],
         ],
         [
@@ -3738,7 +3752,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-                '',
+                'Spend time this week praying for five people from your List of 100 that you marked as an "Unbeliever" or "Unknown." Ask God to prepare their hearts to be open to His story.',
+                'Ask God who He wants you to share the List of 100 tool with. Share this person’s name with the group before you go and reach out to them before the next session.',
             ],
         ],
 
@@ -3774,8 +3789,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/3450.png',
+                'Or zume.training/checkin and use code:',
+                '3450'
             ],
         ],
         [
@@ -3840,7 +3856,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Use the prayer wheel to guide you as you pray for an hour.',
+                'Share the prayer wheel with whomever the Lord impresses on you to do so with.  Challenge them to share it with others as well.',
             ],
         ],
 
@@ -3876,8 +3893,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2344.png',
+                'Or zume.training/checkin and use code:',
+                '2344'
             ],
         ],
         [
@@ -3947,7 +3965,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'If you know anyone who follows Jesus but does not share their faith, challenge them to do so by sharing with them about the Greatest Blessing. Otherwise, practice sharing about it with a friend.',
+                'Ask God who He wants you to share with about the Greatest Blessing. Share this person’s name with the group before you go and reach out to them.',
             ],
         ],
 
@@ -3984,8 +4003,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/1116.png',
+                'Or zume.training/checkin and use code:',
+                '1116'
             ],
         ],
         [
@@ -4068,7 +4088,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."',
+                'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.',
             ],
         ],
 
@@ -4105,8 +4126,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/5431.png',
+                'Or zume.training/checkin and use code:',
+                '5431'
             ],
         ],
         [
@@ -4173,7 +4195,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them.',
+                'Ask God who He wants you to share with about baptism. Share this person’s name with the group before you go and reach out to them before the next session.',
             ],
         ],
 
@@ -4209,8 +4232,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/8768.png',
+                'Or zume.training/checkin and use code:',
+                '8768'
             ],
         ],
         [
@@ -4290,7 +4314,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Spend time this week practicing your testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."',
+                'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.',
             ],
         ],
 
@@ -4327,8 +4352,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2347.png',
+                'Or zume.training/checkin and use code:',
+                '2347'
             ],
         ],
         [
@@ -4403,7 +4429,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Practice sharing this concept with a friend and pray for the Lord to ingrain it deeply within your heart and soul.',
+                'Share "Duckling Discipleship" and "Eyes to see where the Kingdom Isn’t" with whomever the Lord impresses on you. Then equip them to share it with someone else.',
             ],
         ],
 
@@ -4439,8 +4466,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/9434.png',
+                'Or zume.training/checkin and use code:',
+                '9434'
             ],
         ],
         [
@@ -4502,28 +4530,7 @@ function zume_content() {
                 'Activity Resource',
             ],
         ],
-        [
-            'key' => 's2_11_7',
-            'type' => 'center',
-            'center' => [],
-            'left' => [
-                'Blessings on your walk!',
-                'This session ends with the prayer walking activity.',
-            ],
-            'right' => [],
-        ],
-        [
-            'key' => 's2_11_8',
-            'type' => 'obey',
-            'center' => [],
-            'left' => [
-                'OBEY',
-                'SHARE',
-            ],
-            'right' => [
 
-            ],
-        ],
 
 
 
@@ -4557,8 +4564,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2348.png',
+                'Or zume.training/checkin and use code:',
+                '2348'
             ],
         ],
         [
@@ -4631,7 +4639,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Pray for someone in their presence using the BLESS pattern this week.',
+                'Equip someone else to pray for others using the BLESS pattern and go with them as they do it.',
             ],
         ],
 
@@ -4668,8 +4677,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/6785.png',
+                'Or zume.training/checkin and use code:',
+                '6785'
             ],
         ],
         [
@@ -4736,7 +4746,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Spend time this week obeying, training, and sharing based on the commitments you’ve made during your 3/3 Group practice.',
+                'Pray and ask God who He wants you to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.',
             ],
         ],
 
@@ -4772,8 +4783,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/9872.png',
+                'Or zume.training/checkin and use code:',
+                '9872'
             ],
         ],
         [
@@ -4820,14 +4832,14 @@ function zume_content() {
             'type' => 'activity',
             'center' => [
                 'ACTIVITY',
-                '(90 min)'
+                '(45 min)'
             ],
             'left' => [
                 '3/3 Group Format',
                 [
-                    'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)',
-                    'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (30 min)',
-                    'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (30 min)',
+                    'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)',
+                    'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)',
+                    'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)',
                 ]
             ],
             'right' => [
@@ -4858,7 +4870,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Pray and ask God if he wants you to start a 3/3 Group. If He does, look over your list of 100 and ask God who you should invite to join you. Then invite them this week and trust God to build the group.',
+                'Find someone to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.',
             ],
         ],
 
@@ -4895,8 +4908,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/4327.png',
+                'Or zume.training/checkin and use code:',
+                '4327'
             ],
         ],
         [
@@ -4963,7 +4977,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Pick one skill or concept you have learned in Zúme and mentor someone to reproduce it to the fourth generation.',
+                'Share the "Training Cycle" with believer on your list of 100.',
             ],
         ],
 
@@ -5000,8 +5015,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2871.png',
+                'Or zume.training/checkin and use code:',
+                '2871'
             ],
         ],
         [
@@ -5070,7 +5086,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Begin efforts to catalyze another simple church (spiritual family), or your first one.',
+                'If you have already started your own simple church, share the "Always Part of Two Churches" pattern with the people in it. If not, share it with another believer you know.',
             ],
         ],
 
@@ -5109,8 +5126,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/4328.png',
+                'Or zume.training/checkin and use code:',
+                '4328'
             ],
         ],
         [
@@ -5175,7 +5193,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Set aside time on your calendar each week to work on your Three Month Plan. Plan check-ins with your training partner weekly. Each time you’re together, ask about their results and share yours, making sure you’re both working through your plans.',
+                'Share your plan with your training partner. If you don’t have a training partner, share it with another believer you know.',
             ],
         ],
 
@@ -5214,8 +5233,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/6548.png',
+                'Or zume.training/checkin and use code:',
+                '6548'
             ],
         ],
         [
@@ -5282,7 +5302,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Identify one next step for yourself, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.',
+                'Share the concept of "Leadership in Networks" with someone else. If you don’t have a training partner, share it with another believer you know.',
             ],
         ],
 
@@ -5318,8 +5339,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/7657.png',
+                'Or zume.training/checkin and use code:',
+                '7657'
             ],
         ],
         [
@@ -5384,7 +5406,8 @@ function zume_content() {
                 'SHARE',
             ],
             'right' => [
-
+                'Discuss with your Zúme training group whether or not the members are open to continuing to meet after the conclusion of the training as a Peer Mentoring Group.',
+                'Share the concept of the "Peer Mentoring Group" with two believers on your list of 100.',
             ],
         ],
 
@@ -5422,8 +5445,9 @@ function zume_content() {
             ],
             'right' => [
                 'Have all of the participants and facilitator check-in.',
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/checkin.png',
-                'Or zume.training/checkin and use code 5678'
+                'https://storage.googleapis.com/zume-file-mirror/en/qr/2767.png',
+                'Or zume.training/checkin and use code:',
+                '2767'
             ],
         ],
         [
