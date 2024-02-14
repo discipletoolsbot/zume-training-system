@@ -11,7 +11,6 @@ class Zume_Content_Viewer extends Zume_Magic_Page
     public $page_title = 'Zúme Training';
     public $root = 'course_app';
     public $type = 'viewer';
-    public $lang = 'en';
     public static $token = 'course_app_viewer';
 
     private static $_instance = null;
@@ -24,7 +23,6 @@ class Zume_Content_Viewer extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
-        $this->lang = get_locale();
 
         [
             'lang_code' => $lang_code,
@@ -61,43 +59,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
 
             add_action( 'wp_enqueue_scripts', [ $this, 'wp_enqueue_scripts' ], 100 );
         }
-        if ( dt_is_rest() ) {
-            add_action( 'rest_api_init', [ $this, 'add_endpoints' ] );
-            add_filter( 'dt_allow_rest_access', [ $this, 'authorize_url' ], 10, 1 );
-        }
-    }
-    public function add_endpoints() {
-        $namespace = $this->root . '/v1';
-        register_rest_route(
-            $namespace,
-            '/'.$this->type,
-            [
-                [
-                    'methods'  => WP_REST_Server::CREATABLE,
-                    'callback' => [ $this, 'endpoint' ],
-                    'permission_callback' => '__return_true',
-                ],
-            ]
-        );
-    }
-    public function endpoint( WP_REST_Request $request ) {
-        $params = $request->get_params();
 
-        if ( ! isset( $params['parts'], $params['action'] ) ) {
-            return new WP_Error( __METHOD__, 'Missing parameters', [ 'status' => 400 ] );
-        }
-
-        $params = dt_recursive_sanitize_array( $params );
-
-        switch ( $params['action'] ) {
-            case 'get':
-                // do something
-                return true;
-            case 'excited':
-                // do something else
-            default:
-                return true;
-        }
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         return zume_training_magic_url_base_allowed_js( $allowed_js );
@@ -106,8 +68,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_css();
     }
     public function action_wp_footer(): void {}
-    public function wp_enqueue_scripts() {
-    }
+    public function wp_enqueue_scripts() {}
     public function header_style(){
         ?>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.js" integrity="sha512-vsjtv6Dty7C9eeMlJ+02kvlhvVlqKsJHOFWZ1ZR5WrRlU/oTlW8d8wPHWlKX579O4OO/kW5DW9XFtQ9J3gKeKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -331,6 +292,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                 <option value="">Select the Session</option>
                 <option value="10_0">All 10</option>
                 <option value="20_0">All 20</option>
+                <option value="intensive_0">All Intensive</option>
                 <option disabled>------------</option>
                 <option value="10_1">10 - 1</option>
                 <option value="10_2">10 - 2</option>
@@ -558,7 +520,8 @@ function zume_get_template( $slide ) {
                 <div>
                     <div class="left-4">
                         <div class="left-single-title">
-                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span>
+                            <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span><br>
+                            <span class="subtitle"><?php echo $slide['left'][1]; ?></span>
                         </div>
                     </div>
                     <div class="right-8">
@@ -850,9 +813,9 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
                     's1_4_1','s1_4_2','s1_4_3','s1_4_5',false,'t12_a','t12_b','t12_c',false,'t13_a','t13_b','t13_c',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s1_4_6','final']; // session 4
         $all['3'] = ['s1_5_1','s1_5_2','s1_5_3','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'t17_d','t17_e',false,'break',false, // session 5
                     's1_6_1','s1_6_2','s1_6_3','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final']; // session 6
-        $all['4'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8','s1_7_9',false,'break',false, // session 7
-                    's1_8_1','s1_8_2','s1_8_3','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','s1_8_8','final']; // session 8
-        $all['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d',false,'s1_9_9','s1_9_10',false,'break',false, // session 9
+        $all['4'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8',false,'break',false, // session 7
+                    's1_8_1','s1_8_2','s1_8_3','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','final']; // session 8
+        $all['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d',false,'s1_9_9',false,'break',false, // session 9
                     's1_10_1','s1_10_2','s1_10_3','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c',false,'t32_a','t32_b',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
 
         if ( empty( $session_number ) ) {
@@ -1005,6 +968,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'God Uses Ordinary People',
@@ -1038,6 +1002,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Disciples and the Church',
@@ -1075,6 +1040,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Hearing and Obeying God',
@@ -1111,6 +1077,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'SOAPS Bible Reading',
@@ -1157,6 +1124,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Accountability Groups',
@@ -1317,6 +1285,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Producer not Consumer',
@@ -1585,6 +1554,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Spiritual Economy',
@@ -1644,6 +1614,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'The Gospel',
@@ -1697,6 +1668,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Baptism',
@@ -1863,6 +1835,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 '3-Minute Testimony',
@@ -1900,6 +1873,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Great - Greater - Greatest Blessings',
@@ -1937,6 +1911,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Duckling Discipleship',
@@ -1973,6 +1948,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Eyes to See Where the Kingdom Isn’t',
@@ -2011,6 +1987,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'The Lord’s Supper',
@@ -2164,6 +2141,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Prayer Walking',
@@ -2185,6 +2163,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Person of Peace',
@@ -2354,6 +2333,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Faithfulness',
@@ -2540,6 +2520,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'The Training Cycle',
@@ -2725,6 +2706,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Leadership Cells',
@@ -2896,6 +2878,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Non-Sequential Growth',
@@ -2932,6 +2915,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Pace',
@@ -2969,6 +2953,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Always Part of Two Churches',
@@ -3004,6 +2989,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Coaching Checklist',
@@ -3190,6 +3176,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Leadership in Networks',
@@ -3295,6 +3282,7 @@ function zume_content() {
             'center' => [],
             'left' => [
                 'WATCH',
+                '(5 min)',
             ],
             'right' => [
                 'Peer Mentoring Groups',
