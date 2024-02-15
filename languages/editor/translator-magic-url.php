@@ -504,15 +504,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         <?php
     }
-    public function tools() {
-
-    }
-    public function emails() {
-
-    }
-    public function ctas() {
-
-    }
+    public function tools() {}
+    public function emails() {}
+    public function ctas() {}
     public function view_course() {
 
         $zume_languages = zume_languages();
@@ -521,21 +515,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         ?>
 
-        <style>
-            #blank-template-body {
-                background-color: WhiteSmoke !important;
-            }
-            .card {
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                height: 720px;
-                width: 1280px;
-                background-color: white;
-            }
-        </style>
-
        <div style="
-                top:100px;
+                top:90px;
                 left:0;
                 position: fixed;
                 background-color: white;
