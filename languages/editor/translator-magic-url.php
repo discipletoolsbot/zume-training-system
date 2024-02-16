@@ -525,7 +525,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 width: 100%;
                 border-bottom: 1px solid lightgrey;
                 ">
-            <select>
+            <select id="course_selector">
                 <option value="">Select the Session</option>
                 <option value="10_0">All 10</option>
                 <option value="20_0">All 20</option>
@@ -575,13 +575,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
             let type = '<?php echo $_GET['type'] ?? false; ?>';
             let session = '<?php echo $_GET['session'] ?? false; ?>';
             jQuery(document).ready(function($){
-                $('select').on('change', function(){
+                $('#course_selector').on('change', function(){
                     let value = $(this).val();
                     let parts = value.split('_');
                     let type = parts[0];
                     let session = parts[1];
                     if ( ! session ) {
-                        window.location.href = `/course_app/viewer`;
+                        window.location.href = `/zume_app/translators/?tab=view_course`;
                     }
                     window.location.href = `?tab=view_course&type=${type}&session=${session}`;
                 });

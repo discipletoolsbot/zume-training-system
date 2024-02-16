@@ -8,12 +8,12 @@ if ( ! class_exists( 'DT_Module_Base' ) ) {
 
 add_filter( 'dt_post_type_modules', function ( $modules ) {
     $modules['zume_plans_base'] = [
-        'name' => __( 'Zume Plans', 'zume-training-system' ),
+        'name' => 'Zume Plans',
         'enabled' => true,
         'locked' => true,
         'prerequisites' => [ 'contacts_base' ],
         'post_type' => 'zume_plans',
-        'description' => __( 'Default starter functionality', 'zume-training-system' ),
+        'description' => 'Default starter functionality',
     ];
 
     return $modules;
@@ -72,8 +72,8 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     }
 
     public function after_setup_theme(){
-        $this->single_name = __( 'Plan', 'zume-training-system' );
-        $this->plural_name = __( 'Plans', 'zume-training-system' );
+        $this->single_name = 'Plan';
+        $this->plural_name = 'Plans';
 
         if ( class_exists( 'Disciple_Tools_Post_Type_Template' ) ) {
             new Disciple_Tools_Post_Type_Template( $this->post_type, $this->single_name, $this->plural_name );
@@ -82,8 +82,8 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
     public function dt_get_post_type_settings( $settings, $post_type ){
         if ( $post_type === $this->post_type ){
-            $settings['label_singular'] = __( 'Plan', 'zume-training-system' );
-            $settings['label_plural'] = __( 'Plans', 'zume-training-system' );
+            $settings['label_singular'] = 'Plan';
+            $settings['label_plural'] = 'Plans';
         }
         return $settings;
     }
@@ -98,7 +98,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
         if ( !isset( $expected_roles['my_starter_role'] ) ){
             $expected_roles['my_starter_role'] = [
 
-                'label' => __( 'Plans', 'zume-training-system' ),
+                'label' => 'Plans',
                 'description' => 'Does something Cool',
                 'permissions' => [
                     'access_contacts' => true,
@@ -137,18 +137,18 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     public function dt_custom_fields_settings( $fields, $post_type ){
         if ( $post_type === $this->post_type ){
             $fields['status'] = [
-                'name'        => __( 'Status', 'zume-training-system' ),
-                'description' => __( 'Set the current status.', 'zume-training-system' ),
+                'name'        => 'Status',
+                'description' => 'Set the current status.',
                 'type'        => 'key_select',
                 'default'     => [
                     'inactive' => [
-                        'label' => __( 'Inactive', 'zume-training-system' ),
-                        'description' => __( 'No longer active.', 'zume-training-system' ),
+                        'label' => 'Inactive',
+                        'description' => 'No longer active.',
                         'color' => '#F43636',
                     ],
                     'active'   => [
-                        'label' => __( 'Active', 'zume-training-system' ),
-                        'description' => __( 'Is active.', 'zume-training-system' ),
+                        'label' => 'Active',
+                        'description' => 'Is active.',
                         'color' => '#4CAF50',
                     ],
                 ],
@@ -158,8 +158,8 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'show_in_table' => 10,
             ];
             $fields['assigned_to'] = [
-                'name'        => __( 'Assigned To', 'zume-training-system' ),
-                'description' => __( 'Select the main person who is responsible for reporting on this record.', 'zume-training-system' ),
+                'name'        => 'Assigned To',
+                'description' => 'Select the main person who is responsible for reporting on this record.',
                 'type'        => 'user_select',
                 'default'     => '',
                 'tile' => 'status',
@@ -167,18 +167,18 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'show_in_table' => 16,
             ];
             $fields['visibility'] = [
-                'name'        => __( 'Plan Visibility', 'zume-training-system' ),
-                'description' => __( 'Set the current status.', 'zume-training-system' ),
+                'name'        => 'Plan Visibility',
+                'description' => 'Set the current status.',
                 'type'        => 'key_select',
                 'default'     => [
                     'private' => [
-                        'label' => __( 'Private', 'zume-training-system' ),
-                        'description' => __( 'No longer active.', 'zume-training-system' ),
+                        'label' => 'Private',
+                        'description' => 'No longer active.',
                         'color' => '#F43636',
                     ],
                     'public'   => [
-                        'label' => __( 'Public', 'zume-training-system' ),
-                        'description' => __( 'Is active.', 'zume-training-system' ),
+                        'label' => 'Public',
+                        'description' => 'Is active.',
                         'color' => '#4CAF50',
                     ],
                 ],
@@ -188,7 +188,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'show_in_table' => 10,
             ];
             $fields['time_of_day_note'] = [
-                'name'        => __( 'Time of Day Note', 'zume-training-system' ),
+                'name'        => 'Time of Day Note',
                 'description' => 'Time of day, like "4-6 in the evening"',
                 'type'        => 'text',
                 'default'     => '',
@@ -196,7 +196,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['location_note'] = [
-                'name'        => __( 'Location Note', 'zume-training-system' ),
+                'name'        => 'Location Note',
                 'description' => 'Location of the training description, like "Zoom" or "At the church"',
                 'type'        => 'text',
                 'default'     => '',
@@ -204,7 +204,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['zoom_link_note'] = [
-                'name'        => __( 'Zoom Link', 'zume-training-system' ),
+                'name'        => 'Zoom Link',
                 'description' => 'Link to zoom meeting',
                 'type'        => 'text',
                 'default'     => '',
@@ -212,7 +212,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['timezone_note'] = [
-                'name'        => __( 'Time Zone', 'zume-training-system' ),
+                'name'        => 'Time Zone',
                 'description' => 'Time zone of the training',
                 'type'        => 'text',
                 'default'     => '',
@@ -220,7 +220,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['language_note'] = [
-                'name'        => __( 'Language', 'zume-training-system' ),
+                'name'        => 'Language',
                 'description' => 'Language of the training',
                 'type'        => 'text',
                 'default'     => '',
@@ -228,7 +228,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/languages.svg',
             ];
             $fields['join_key'] = [
-                'name'        => __( 'Join Key', 'zume-training-system' ),
+                'name'        => 'Join Key',
                 'description' => 'Key to join the training, like a password or meeting ID',
                 'type'        => 'text',
                 'default'     => '',
@@ -237,7 +237,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             ];
 
             $fields['set_a_01'] = [
-                'name'        => __( '10 Session 01', 'zume-training-system' ),
+                'name'        => '10 Session 01',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -245,7 +245,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_02'] = [
-                'name'        => __( '10 Session 02', 'zume-training-system' ),
+                'name'        => '10 Session 02',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -253,7 +253,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_03'] = [
-                'name'        => __( '10 Session 03', 'zume-training-system' ),
+                'name'        => '10 Session 03',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -261,7 +261,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_04'] = [
-                'name'        => __( '10 Session 04', 'zume-training-system' ),
+                'name'        => '10 Session 04',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -269,7 +269,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_05'] = [
-                'name'        => __( '10 Session 05', 'zume-training-system' ),
+                'name'        => '10 Session 05',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -277,7 +277,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_06'] = [
-                'name'        => __( '10 Session 06', 'zume-training-system' ),
+                'name'        => '10 Session 06',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -285,7 +285,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_07'] = [
-                'name'        => __( '10 Session 07', 'zume-training-system' ),
+                'name'        => '10 Session 07',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -293,7 +293,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_08'] = [
-                'name'        => __( '10 Session 08', 'zume-training-system' ),
+                'name'        => '10 Session 08',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -301,7 +301,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_09'] = [
-                'name'        => __( '10 Session 09', 'zume-training-system' ),
+                'name'        => '10 Session 09',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -309,7 +309,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_a_10'] = [
-                'name'        => __( '10 Session 10', 'zume-training-system' ),
+                'name'        => '10 Session 10',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -319,7 +319,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
 
             $fields['set_b_01'] = [
-                'name'        => __( '20 Session 01', 'zume-training-system' ),
+                'name'        => 20 Session 01,
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -327,7 +327,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_02'] = [
-                'name'        => __( '20 Session 02', 'zume-training-system' ),
+                'name'        => '20 Session 02',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -335,7 +335,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_03'] = [
-                'name'        => __( '20 Session 03', 'zume-training-system' ),
+                'name'        => '20 Session 03',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -343,7 +343,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_04'] = [
-                'name'        => __( '20 Session 04', 'zume-training-system' ),
+                'name'        => '20 Session 04',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -351,7 +351,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_05'] = [
-                'name'        => __( '20 Session 05', 'zume-training-system' ),
+                'name'        => '20 Session 05',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -359,7 +359,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_06'] = [
-                'name'        => __( '20 Session 06', 'zume-training-system' ),
+                'name'        => '20 Session 06',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -367,7 +367,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_07'] = [
-                'name'        => __( '20 Session 07', 'zume-training-system' ),
+                'name'        => '20 Session 07',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -375,7 +375,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_08'] = [
-                'name'        => __( '20 Session 08', 'zume-training-system' ),
+                'name'        => '20 Session 08',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -383,7 +383,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_09'] = [
-                'name'        => __( '20 Session 09', 'zume-training-system' ),
+                'name'        => '20 Session 09',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -391,7 +391,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_10'] = [
-                'name'        => __( '20 Session 10', 'zume-training-system' ),
+                'name'        => '20 Session 10',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -399,7 +399,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_11'] = [
-                'name'        => __( '20 Session 11', 'zume-training-system' ),
+                'name'        => '20 Session 11',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -407,7 +407,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_12'] = [
-                'name'        => __( '20 Session 12', 'zume-training-system' ),
+                'name'        => '20 Session 12',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -415,7 +415,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_13'] = [
-                'name'        => __( '20 Session 13', 'zume-training-system' ),
+                'name'        => '20 Session 13',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -423,7 +423,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_14'] = [
-                'name'        => __( '20 Session 14', 'zume-training-system' ),
+                'name'        => '20 Session 14',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -431,7 +431,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_15'] = [
-                'name'        => __( '20 Session 15', 'zume-training-system' ),
+                'name'        => '20 Session 15',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -439,7 +439,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_16'] = [
-                'name'        => __( '20 Session 16', 'zume-training-system' ),
+                'name'        => '20 Session 16',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -447,7 +447,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_17'] = [
-                'name'        => __( '20 Session 17', 'zume-training-system' ),
+                'name'        => '20 Session 17',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -455,7 +455,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_18'] = [
-                'name'        => __( '20 Session 18', 'zume-training-system' ),
+                'name'        => '20 Session 18',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -463,7 +463,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_19'] = [
-                'name'        => __( '20 Session 19', 'zume-training-system' ),
+                'name'        => '20 Session 19',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -471,7 +471,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
             $fields['set_b_20'] = [
-                'name'        => __( '20 Session 20', 'zume-training-system' ),
+                'name'        => '20 Session 20',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -481,7 +481,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
 
             $fields['participants'] = [
-                'name' => __( 'Participants', 'zume-training-system' ),
+                'name' => 'Participants',
                 'description' => '',
                 'type' => 'connection',
                 'post_type' => 'contacts',
@@ -514,8 +514,8 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
     public function dt_details_additional_tiles( $tiles, $post_type = '' ){
         if ( $post_type === $this->post_type ){
-            $tiles['participants'] = [ 'label' => __( 'Participants', 'zume-training-system' ) ];
-            $tiles['install'] = [ 'label' => __( 'Install', 'zume-training-system' ) ];
+            $tiles['participants'] = [ 'label' => 'Participants' ];
+            $tiles['install'] = [ 'label' => 'Install' ];
         }
         return $tiles;
     }
@@ -527,7 +527,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 //            $post = DT_Posts::get_post( $this->post_type, get_the_ID() );
             ?>
             <div class="section-subheader">
-                <?php esc_html_e( 'Start date', 'zume-training-system' ) ?>
+                <?php esc_html_e( 'Start date' ?>
             </div>
             <div>
                 <input type="date" id="start_date" class="" value="" />
@@ -727,7 +727,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             // add assigned to me tab
             $filters['tabs'][] = [
                 'key' => 'assigned_to_me',
-                'label' => __( 'Assigned to me', 'zume-training-system' ),
+                'label' => 'Assigned to me',
                 'count' => $total_my,
                 'order' => 20,
             ];
@@ -735,7 +735,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             $filters['filters'][] = [
                 'ID' => 'my_all',
                 'tab' => 'assigned_to_me',
-                'name' => __( 'All', 'zume-training-system' ),
+                'name' => 'All',
                 'query' => [
                     'assigned_to' => [ 'me' ],
                     'sort' => 'status',
@@ -771,7 +771,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 // add by Status Tab
                 $filters['tabs'][] = [
                     'key' => 'by_status',
-                    'label' => __( 'All By Status', 'zume-training-system' ),
+                    'label' => 'All By Status',
                     'count' => $total_all,
                     'order' => 30,
                 ];
@@ -779,7 +779,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 $filters['filters'][] = [
                     'ID' => 'all',
                     'tab' => 'by_status',
-                    'name' => __( 'All', 'zume-training-system' ),
+                    'name' => 'All',
                     'query' => [
                         'sort' => '-post_date',
                     ],

@@ -1,0 +1,4025 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zúme - Training System\n"
+"POT-Creation-Date: 2024-02-16 11:25-0700\n"
+"PO-Revision-Date: 2024-02-16 11:24-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: zume-training-system.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+"X-Poedit-SearchPathExcluded-2: vendor\n"
+
+#: appearance/style-override/navigation.php:75
+#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:132
+msgid "Training"
+msgstr ""
+
+#: appearance/style-override/navigation.php:85 site/home/home.php:211
+msgid "How it Works"
+msgstr ""
+
+#: appearance/style-override/navigation.php:91
+msgid "Download Guidebook"
+msgstr ""
+
+#: appearance/style-override/navigation.php:97
+msgid "FAQs"
+msgstr ""
+
+#: appearance/style-override/navigation.php:106 site/home/home.php:112
+#: site/parts/nav.php:21
+msgid "Dashboard"
+msgstr ""
+
+#: appearance/style-override/navigation.php:112
+msgid "My Zume"
+msgstr ""
+
+#: appearance/style-override/navigation.php:117
+msgid "Contacts"
+msgstr ""
+
+#: appearance/style-override/navigation.php:123
+msgid "Groups"
+msgstr ""
+
+#: appearance/style-override/navigation.php:129
+msgid "Trainings"
+msgstr ""
+
+#: appearance/style-override/navigation.php:135
+msgid "Metrics"
+msgstr ""
+
+#: appearance/style-override/navigation.php:143
+#: site/follow-jesus/follow-jesus.php:198
+msgid "Community"
+msgstr ""
+
+#: appearance/style-override/navigation.php:148 site/vision/vision.php:92
+msgid "Vision"
+msgstr ""
+
+#: appearance/style-override/navigation.php:154
+msgid "Stories"
+msgstr ""
+
+#: appearance/style-override/navigation.php:160
+msgid "Global Map"
+msgstr ""
+
+#: classes/connect/connect-api.php:85
+msgid "your friend"
+msgstr ""
+
+#: classes/connect/connect-api.php:235
+msgid "the plan"
+msgstr ""
+
+#: classes/post-types/posttype-pages.php:55
+#: classes/post-types/posttype-pieces.php:66
+msgid "QR Code"
+msgstr ""
+
+#: classes/post-types/posttype-plans.php:530
+msgid "Start date"
+msgstr ""
+
+#: classes/utilities/share-links.php:7 site/dashboard/dashboard.php:126
+#: site/dev-section/dev.php:91 site/share/share.php:30
+msgid "Thanks!"
+msgstr ""
+
+#: classes/utilities/share-links.php:7 site/dashboard/dashboard.php:127
+#: site/dev-section/dev.php:92 site/share/share.php:31
+msgid "Link copied"
+msgstr ""
+
+#: classes/utilities/share-links.php:9 site/dashboard/dashboard.php:125
+#: site/dev-section/dev.php:90
+msgid "Copy this link and send it to your friends 🙂"
+msgstr ""
+
+#: classes/utilities/share-links.php:16 languages/mobile-pwa-strings.php:36
+#: site/course/course-content.php:554 site/dashboard/dashboard.php:111
+#: site/dev-section/dev.php:88 site/share/share.php:27 site/share/share.php:112
+msgid "Share"
+msgstr ""
+
+#: classes/utilities/share-links.php:23
+msgid "Copy link"
+msgstr ""
+
+#: classes/vision-casting-apps/localized-vision-app.php:128
+msgid "Zume"
+msgstr ""
+
+#: globals.php:1204
+msgid "god-uses-ordinary-people"
+msgstr ""
+
+#: globals.php:1205 site/course/0-sesssion-data.php:59
+#: site/course/course-content.php:63 site/course/course-content.php:83
+#: site/course/course-content.php:280 site/course/course-content.php:2544
+#: site/course/course-content.php:2560 site/follow-jesus/follow-jesus.php:148
+msgid "God Uses Ordinary People"
+msgstr ""
+
+#: globals.php:1206 site/course/0-sesssion-data.php:60
+#: site/follow-jesus/follow-jesus.php:149
+msgid ""
+"You'll see how God uses ordinary people doing simple things to make a big "
+"impact."
+msgstr ""
+
+#: globals.php:1214 site/course/0-sesssion-data.php:81
+#: site/follow-jesus/follow-jesus.php:152
+msgid "Simple Definition of Disciple and Church"
+msgstr ""
+
+#: globals.php:1215 site/course/0-sesssion-data.php:82
+#: site/course/course-content.php:118 site/follow-jesus/follow-jesus.php:153
+msgid ""
+"Discover the essence of being a disciple, making a disciple, and what is the "
+"church."
+msgstr ""
+
+#: globals.php:1223 site/follow-jesus/follow-jesus.php:174
+msgid "Spiritual Breathing is Hearing and Obeying God"
+msgstr ""
+
+#: globals.php:1224 site/follow-jesus/follow-jesus.php:175
+msgid "Being a disciple means we hear from God and we obey God."
+msgstr ""
+
+#: globals.php:1232 site/course/course-content.php:69
+#: site/course/course-content.php:192 site/course/course-content.php:286
+#: site/follow-jesus/follow-jesus.php:189
+msgid "SOAPS Bible Reading"
+msgstr ""
+
+#: globals.php:1233 site/follow-jesus/follow-jesus.php:190
+msgid ""
+"A tool for daily Bible study that helps you understand, obey, and share "
+"God’s Word."
+msgstr ""
+
+#: globals.php:1241 site/course/10session.php:629 site/course/20session.php:729
+#: site/course/course-content.php:70 site/course/course-content.php:239
+#: site/course/course-content.php:287 site/course/course-content.php:2755
+#: site/course/course-content.php:2769 site/follow-jesus/follow-jesus.php:204
+msgid "Accountability Groups"
+msgstr ""
+
+#: globals.php:1242 site/follow-jesus/follow-jesus.php:205
+msgid ""
+"A tool for two or three people of the same gender to meet weekly and "
+"encourage each other in areas that are going well and reveal areas that need "
+"correction."
+msgstr ""
+
+#: globals.php:1250 site/course/0-sesssion-data.php:199
+#: site/follow-jesus/follow-jesus.php:168
+msgid "Consumer vs Producer Lifestyle"
+msgstr ""
+
+#: globals.php:1251 site/course/0-sesssion-data.php:200
+#: site/follow-jesus/follow-jesus.php:169
+msgid ""
+"You'll discover the four main ways God makes everyday followers more like "
+"Jesus."
+msgstr ""
+
+#: globals.php:1259 site/course/0-sesssion-data.php:231
+#: site/follow-jesus/follow-jesus.php:178
+msgid "How to Spend an Hour in Prayer"
+msgstr ""
+
+#: globals.php:1260 site/course/0-sesssion-data.php:232
+#: site/follow-jesus/follow-jesus.php:179
+msgid "See how easy it is to spend an hour in prayer."
+msgstr ""
+
+#: globals.php:1268 site/course/0-sesssion-data.php:282
+#: site/follow-jesus/follow-jesus.php:265
+msgid "Relational Stewardship – List of 100"
+msgstr ""
+
+#: globals.php:1269 site/course/0-sesssion-data.php:283
+#: site/follow-jesus/follow-jesus.php:266
+msgid "A tool designed to help you be a good steward of your relationships."
+msgstr ""
+
+#: globals.php:1277 site/follow-jesus/follow-jesus.php:223
+msgid "The Kingdom Economy"
+msgstr ""
+
+#: globals.php:1278 site/follow-jesus/follow-jesus.php:224
+msgid ""
+"Learn how God's economy is different from the world's. God invests more in "
+"those who are faithful with what they've already been given."
+msgstr ""
+
+#: globals.php:1286 site/follow-jesus/follow-jesus.php:269
+msgid "The Gospel and How to Share It"
+msgstr ""
+
+#: globals.php:1287 site/follow-jesus/follow-jesus.php:270
+msgid ""
+"Learn a way to share God’s Good News from the beginning of humanity all the "
+"way to the end of this age."
+msgstr ""
+
+#: globals.php:1295 site/follow-jesus/follow-jesus.php:216
+msgid "Baptism and How To Do It"
+msgstr ""
+
+#: globals.php:1296 site/follow-jesus/follow-jesus.php:217
+msgid ""
+"Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
+"name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
+"this into practice."
+msgstr ""
+
+#: globals.php:1304 site/follow-jesus/follow-jesus.php:273
+msgid "Prepare Your 3-Minute Testimony"
+msgstr ""
+
+#: globals.php:1305 site/follow-jesus/follow-jesus.php:274
+msgid ""
+"Learn how to share your testimony in three minutes by sharing how Jesus has "
+"impacted your life."
+msgstr ""
+
+#: globals.php:1313 site/course/course-content.php:930
+#: site/course/course-content.php:1141 site/follow-jesus/follow-jesus.php:156
+msgid "Vision Casting the Greatest Blessing"
+msgstr ""
+
+#: globals.php:1314 site/course/course-content.php:989
+#: site/follow-jesus/follow-jesus.php:157
+msgid ""
+"Learn a simple pattern of making not just one follower of Jesus but entire "
+"spiritual families who multiply for generations to come."
+msgstr ""
+
+#: globals.php:1322 site/follow-jesus/follow-jesus.php:246
+msgid "Duckling Discipleship – Leading Immediately"
+msgstr ""
+
+#: globals.php:1323
+msgid "Learn what ducklings have to do with disciple-making."
+msgstr ""
+
+#: globals.php:1331 site/course/course-content.php:932
+#: site/course/course-content.php:1063 site/course/course-content.php:1143
+msgid "Eyes to See Where the Kingdom Isn’t"
+msgstr ""
+
+#: globals.php:1332 site/follow-jesus/follow-jesus.php:228
+msgid ""
+"Begin to see where God’s Kingdom isn’t. These are usually the places where "
+"God wants to work the most."
+msgstr ""
+
+#: globals.php:1340 site/follow-jesus/follow-jesus.php:212
+msgid "The Lord’s Supper and How To Lead It"
+msgstr ""
+
+#: globals.php:1341
+msgid ""
+"It’s a simple way to celebrate our intimate connection and ongoing "
+"relationship with Jesus. Learn a simple way to celebrate."
+msgstr ""
+
+#: globals.php:1349 site/follow-jesus/follow-jesus.php:284
+msgid "Prayer Walking and How To Do It"
+msgstr ""
+
+#: globals.php:1350
+msgid ""
+"It’s a simple way to obey God’s command to pray for others. And it's just "
+"what it sounds like — praying to God while walking around!"
+msgstr ""
+
+#: globals.php:1358 site/follow-jesus/follow-jesus.php:280
+msgid "A Person of Peace and How To Find One"
+msgstr ""
+
+#: globals.php:1359 site/follow-jesus/follow-jesus.php:281
+msgid ""
+"Learn who a person of peace might be and how to know when you've found one."
+msgstr ""
+
+#: globals.php:1367 site/follow-jesus/follow-jesus.php:182
+msgid "The BLESS Prayer Pattern"
+msgstr ""
+
+#: globals.php:1368 site/follow-jesus/follow-jesus.php:183
+msgid "Practice a simple mnemonic to remind you of ways to pray for others."
+msgstr ""
+
+#: globals.php:1376 site/follow-jesus/follow-jesus.php:193
+msgid "Faithfulness is Better Than Knowledge"
+msgstr ""
+
+#: globals.php:1377 site/follow-jesus/follow-jesus.php:194
+msgid ""
+"It's important what disciples know — but it's much more important what they "
+"DO with what they know."
+msgstr ""
+
+#: globals.php:1385 site/course/course-content.php:1435
+#: site/course/course-content.php:1481 site/course/course-content.php:1524
+#: site/course/course-content.php:1622 site/course/course-content.php:1714
+#: site/course/course-content.php:1808 site/course/course-content.php:1884
+#: site/course/course-content.php:3861 site/course/course-content.php:3876
+#: site/follow-jesus/follow-jesus.php:200
+msgid "3/3 Group Meeting Pattern"
+msgstr ""
+
+#: globals.php:1386 site/follow-jesus/follow-jesus.php:201
+msgid ""
+"A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
+"fellowship and practice obeying and sharing what they've learned. In this "
+"way, a 3/3 Group is not just a small group but a Simple Church."
+msgstr ""
+
+#: globals.php:1394 site/follow-jesus/follow-jesus.php:250
+msgid "Training Cycle for Maturing Disciples"
+msgstr ""
+
+#: globals.php:1403 site/course/course-content.php:1804
+#: site/course/course-content.php:1821 site/course/course-content.php:1880
+#: site/follow-jesus/follow-jesus.php:305
+msgid "Leadership Cells"
+msgstr ""
+
+#: globals.php:1404 site/course/course-content.php:1823
+#: site/follow-jesus/follow-jesus.php:306
+msgid ""
+"A Leadership Cell is a way someone who feels called to lead can develop "
+"their leadership by practicing serving."
+msgstr ""
+
+#: globals.php:1412 site/follow-jesus/follow-jesus.php:254
+msgid "Expect Non-Sequential Growth"
+msgstr ""
+
+#: globals.php:1413 site/follow-jesus/follow-jesus.php:255
+msgid ""
+"See how disciple making doesn't have to be linear. Multiple things can "
+"happen at the same time."
+msgstr ""
+
+#: globals.php:1421 site/course/course-content.php:2163
+#: site/follow-jesus/follow-jesus.php:258
+msgid "Pace of Multiplication Matters"
+msgstr ""
+
+#: globals.php:1422 site/follow-jesus/follow-jesus.php:259
+msgid ""
+"Multiplying matters and multiplying quickly matters even more. See why pace "
+"matters."
+msgstr ""
+
+#: globals.php:1430 site/course/course-content.php:1976
+#: site/course/course-content.php:2068 site/course/course-content.php:2164
+#: site/follow-jesus/follow-jesus.php:208
+msgid "Always Part of Two Churches"
+msgstr ""
+
+#: globals.php:1431 site/follow-jesus/follow-jesus.php:209
+msgid "Learn how to obey Jesus' commands by going AND staying."
+msgstr ""
+
+#: globals.php:1439 site/course/course-content.php:2278
+#: site/course/course-content.php:2433
+msgid "Three-Month Plan"
+msgstr ""
+
+#: globals.php:1440
+msgid ""
+"Create and share your plan for how you will implement the Zúme tools over "
+"the next three months."
+msgstr ""
+
+#: globals.php:1448 site/course/course-content.php:1980
+#: site/course/course-content.php:2104 site/course/course-content.php:2125
+#: site/course/course-content.php:2168 site/follow-jesus/follow-jesus.php:301
+msgid "Coaching Checklist"
+msgstr ""
+
+#: globals.php:1449 site/follow-jesus/follow-jesus.php:302
+msgid ""
+"A powerful tool you can use to quickly assess your own strengths and "
+"vulnerabilities when it comes to making disciples who multiply."
+msgstr ""
+
+#: globals.php:1457 site/course/course-content.php:2271
+#: site/course/course-content.php:2291 site/follow-jesus/follow-jesus.php:309
+msgid "Leadership in Networks"
+msgstr ""
+
+#: globals.php:1458 site/follow-jesus/follow-jesus.php:310
+msgid ""
+"Learn how multiplying churches stay connected and live life together as an "
+"extended, spiritual family."
+msgstr ""
+
+#: globals.php:1466 site/course/course-content.php:2277
+#: site/course/course-content.php:2397 site/follow-jesus/follow-jesus.php:297
+msgid "Peer Mentoring Groups"
+msgstr ""
+
+#: globals.php:1467 site/follow-jesus/follow-jesus.php:298
+msgid ""
+"This is a group that consists of people who are leading and starting 3/3 "
+"Groups. It also follows a 3/3 format and is a powerful way to assess the "
+"spiritual health of God’s work in your area."
+msgstr ""
+
+#: globals.php:1475
+msgid "Four Fields Tool"
+msgstr ""
+
+#: globals.php:1476
+msgid ""
+"The four fields diagnostic chart is a simple tool to be used by a leadership "
+"cell to reflect on the status of current efforts and the kingdom activity "
+"around them."
+msgstr ""
+
+#: globals.php:1484 site/course/course-content.php:2276
+msgid "Generational Mapping"
+msgstr ""
+
+#: globals.php:1485
+msgid ""
+"Generation mapping is another simple tool to help leaders in a movement "
+"understand the growth around them."
+msgstr ""
+
+#: globals.php:6403
+msgid "No Results"
+msgstr ""
+
+#: languages/editor/admin-page.php:34
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:9
+msgid "Yes"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:10
+msgid "No"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:11 site/course/presenter.php:113
+msgid "Home"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:12
+msgid "Account"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:13 site/parts/footer.php:7
+#: site/parts/nav.php:30
+msgid "About"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:14
+msgid "Settings"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:15
+msgid "Downloads"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:16 site/course/course.php:112
+#: site/parts/language-menu.php:4 site/profile/profile.php:142
+#: site/wizard/wizard.php:126 site/wizard/wizard.php:152
+msgid "Language"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:17
+msgid "Reset App"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:18
+msgid ""
+"Resetting the app will delete all app data. Are you sure you want to reset?"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:19
+msgid "Help"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:20
+msgid "Workbook"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:21
+msgid "Sign Out"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:22
+msgid "Download all"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:23 site/course/0-sesssion-data.php:44
+#: site/course/0-sesssion-data.php:316 site/guidebook/guidebook.php:154
+#: site/guidebook/guidebook.php:169 site/guidebook/guidebook.php:184
+#: site/guidebook/guidebook.php:199 site/guidebook/guidebook.php:214
+#: site/guidebook/guidebook.php:229 site/home/home.php:390
+#: site/home/home.php:398
+msgid "Download"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:24
+msgid "Downloading"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:25
+msgid "Queued"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:26 site/dashboard/dashboard.php:110
+msgid "Delete"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:27
+msgid "Do you want to clear these download errors?"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:28
+msgid "Tap to persist"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:29
+msgid "Select Language"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:30
+msgid "Start Session"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:31
+msgid "No sessions available"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:32
+msgid "Exit"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:33
+msgid "Previous"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:34 site/wizard/wizard.php:100
+#: site/wizard/wizard.php:114 site/wizard/wizard.php:133
+msgid "Next"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:35 site/wizard/wizard.php:102
+msgid "Finish"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:37
+msgid "Install"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:38
+msgid "This app can be installed to your device. Click to install this app"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:39
+msgid ""
+"This app can be installed to your device. Please use the Chrome browser to "
+"do so."
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:40
+msgid "Learn more"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:41
+msgid ""
+"Tap on Safari's share icon and tap 'Add to Home Screen' to install this app."
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:42
+msgid "Update"
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:43
+msgid "A new version of this app is available. Click to update this app."
+msgstr ""
+
+#: languages/mobile-pwa-strings.php:44
+msgid "Storage"
+msgstr ""
+
+#: site/about/about.php:91
+msgid "What is Zume Training?"
+msgstr ""
+
+#: site/about/about.php:125
+msgid ""
+"Zume Training exists to saturate the globe with multiplying disciples in our "
+"generation."
+msgstr ""
+
+#: site/about/about.php:138
+msgid "1 Training"
+msgstr ""
+
+#: site/about/about.php:151
+msgid "2 Simple Churches"
+msgstr ""
+
+#: site/about/about.php:156
+msgid "Sign Me Up!"
+msgstr ""
+
+#: site/about/about.php:161
+msgid "How does Zume Training Work?"
+msgstr ""
+
+#: site/about/about.php:166 site/home/home.php:216
+#, php-format
+msgid ""
+"%1$sFree Registration%2$s gives you full access to all training materials "
+"and online coaching."
+msgstr ""
+
+#: site/about/about.php:170 site/home/home.php:220
+#, php-format
+msgid ""
+"%1$sInstructional Videos%2$s help your group undernstand basic principles of "
+"multiplying disciples"
+msgstr ""
+
+#: site/about/about.php:174 site/home/home.php:224
+#, php-format
+msgid ""
+"%1$sGroup Discussions%2$s help your group think through what is being shared"
+msgstr ""
+
+#: site/about/about.php:178 site/home/home.php:228
+#, php-format
+msgid ""
+"%1$sSimple Exercises%2$s help your group put what you are learning into "
+"practice"
+msgstr ""
+
+#: site/about/about.php:182 site/home/home.php:232
+#, php-format
+msgid ""
+"%1$sSession Challenges%2$s help your group keep learning and growing between "
+"sessions"
+msgstr ""
+
+#: site/about/about.php:193
+msgid "Before you start."
+msgstr ""
+
+#: site/about/about.php:200
+msgid "Zume is NOT like other trainings!"
+msgstr ""
+
+#: site/about/about.php:202
+msgid "First:"
+msgstr ""
+
+#: site/about/about.php:203
+msgid ""
+"Eiusmod in quis incididunt in id excepteur amet occaecat. In quis "
+"exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem "
+"adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa."
+msgstr ""
+
+#: site/about/about.php:206
+msgid "Second:"
+msgstr ""
+
+#: site/about/about.php:207
+msgid ""
+"Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse "
+"incididunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut "
+"eiusmod aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation "
+"cupidatat fugiat mollit. Magna fugiat dolore cupidatat proident non velit "
+"laborum aliquip commodo nulla consectetur et mollit in."
+msgstr ""
+
+#: site/about/about.php:215
+msgid "What's required"
+msgstr ""
+
+#: site/about/about.php:218
+msgid "Requirements for Zume Training:"
+msgstr ""
+
+#: site/about/about.php:232
+msgid "NOT Required for Zume Training:"
+msgstr ""
+
+#: site/about/about.php:249
+msgid "Connecting with a Coach."
+msgstr ""
+
+#: site/about/about.php:260 site/dashboard/dashboard.php:131
+#: site/parts/footer.php:8
+msgid "Get a Coach"
+msgstr ""
+
+#: site/about/about.php:269
+msgid "Are you ready? Register today."
+msgstr ""
+
+#: site/about/about.php:273 site/guidebook/guidebook.php:248
+#: site/guidebook/guidebook.php:263 site/home/home.php:117
+msgid "Register Free"
+msgstr ""
+
+#: site/admin/roles-and-permissions.php:56
+msgid "Porch Admin"
+msgstr ""
+
+#: site/apps/checkin.php:83 site/apps/friend-invite.php:83
+msgid "Please enter a friend code."
+msgstr ""
+
+#: site/apps/checkin.php:84 site/apps/friend-invite.php:84
+#: site/apps/plan-invite.php:84 site/apps/plan-invite.php:180
+msgid "Not a recognized code. Please check the number."
+msgstr ""
+
+#: site/apps/checkin.php:158 site/course/0-sesssion-data.php:39
+#: site/course/0-sesssion-data.php:177
+msgid "Checkin"
+msgstr ""
+
+#: site/apps/checkin.php:160
+msgid "Use the code on the screen or in the book"
+msgstr ""
+
+#: site/apps/checkin.php:165 site/apps/friend-invite.php:177
+#: site/apps/plan-invite.php:188
+msgid "Connect"
+msgstr ""
+
+#: site/apps/friend-invite.php:170
+msgid "Friend Invitation"
+msgstr ""
+
+#: site/apps/friend-invite.php:172 site/apps/plan-invite.php:183
+msgid "Use the code your friend sent you."
+msgstr ""
+
+#: site/apps/plan-invite.php:83
+msgid "Please enter a code."
+msgstr ""
+
+#: site/apps/plan-invite.php:176
+msgid "Plan Invitation"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:35
+msgid "Welcome to Zúme"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:40 site/course/0-sesssion-data.php:178
+msgid "Have all of the participants of the training check-in"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:45
+msgid ""
+"You will be able to follow along on a digital PDF for this session, but "
+"please make sure that each member of your group has a printed copy of the "
+"materials for future sessions."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:47
+msgid "DOWNLOAD GUIDEBOOK"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:54 site/course/10session.php:392
+#: site/course/20session.php:492
+msgid "Group Prayer (5min)"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:55 site/course/10session.php:400
+#: site/course/20session.php:500 site/course/course-content.php:50
+#: site/course/course-content.php:2531
+msgid ""
+"Begin with prayer. Spiritual insight and transformation is not possible "
+"without the Holy Spirit. Take time as a group to invite Him to guide you "
+"over this session."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:65 site/course/0-sesssion-data.php:87
+#: site/course/0-sesssion-data.php:205 site/course/course-content.php:79
+#: site/course/course-content.php:113 site/course/course-content.php:151
+#: site/course/course-content.php:188 site/course/course-content.php:235
+#: site/course/course-content.php:396 site/course/course-content.php:440
+#: site/course/course-content.php:494 site/course/course-content.php:665
+#: site/course/course-content.php:725 site/course/course-content.php:779
+#: site/course/course-content.php:946 site/course/course-content.php:984
+#: site/course/course-content.php:1022 site/course/course-content.php:1059
+#: site/course/course-content.php:1098 site/course/course-content.php:1252
+#: site/course/course-content.php:1274 site/course/course-content.php:1444
+#: site/course/course-content.php:1631 site/course/course-content.php:1817
+#: site/course/course-content.php:1989 site/course/course-content.php:2026
+#: site/course/course-content.php:2064 site/course/course-content.php:2100
+#: site/course/course-content.php:2287 site/course/course-content.php:2393
+msgid "WATCH"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:66
+msgid ""
+"God uses ordinary people doing simple things to make a big impact. Watch "
+"this video on how God works."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:70
+msgid "Zúme Video Scripts: Welcome"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:75 site/course/0-sesssion-data.php:97
+#: site/course/0-sesssion-data.php:221 site/course/0-sesssion-data.php:267
+#: site/course/course-content.php:101 site/course/course-content.php:135
+#: site/course/course-content.php:173 site/course/course-content.php:424
+#: site/course/course-content.php:477 site/course/course-content.php:687
+#: site/course/course-content.php:709 site/course/course-content.php:747
+#: site/course/course-content.php:801 site/course/course-content.php:1006
+#: site/course/course-content.php:1044 site/course/course-content.php:1082
+#: site/course/course-content.php:1296 site/course/course-content.php:1466
+#: site/course/course-content.php:1500 site/course/course-content.php:1653
+#: site/course/course-content.php:1690 site/course/course-content.php:1840
+#: site/course/course-content.php:2011 site/course/course-content.php:2048
+#: site/course/course-content.php:2088 site/course/course-content.php:2142
+#: site/course/course-content.php:2309 site/course/course-content.php:2466
+msgid "DISCUSS"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:76 site/course/10session.php:445
+#: site/course/20session.php:545 site/course/course-content.php:105
+msgid ""
+"If Jesus intended every one of His followers to obey His Great Commission, "
+"why do so few actually make disciples?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:88 site/course/10session.php:468
+#: site/course/20session.php:568
+msgid ""
+"What is a disciple? And how do you make one? How do you teach a follower of "
+"Jesus to do what He told us in His Great Commission – to obey all of His "
+"commands?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:92
+msgid "Zúme Video Scripts: Teach Them to Obey"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:99 site/course/10session.php:492
+#: site/course/20session.php:592 site/course/course-content.php:140
+msgid "When you think of a church, what comes to mind?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:100
+msgid ""
+"What's the difference between that picture and what's described in the video "
+"as a \"Simple Chur<?php echo esc_url() ?>\"S.O.A.P.S. Bible Reading<?php "
+"echo esc_url() ?>\"Accountability Groups\" section of your"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:106 site/course/0-sesssion-data.php:323
+msgid "LOOKING FORWARD"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:107 site/course/10session.php:676
+#: site/course/20session.php:776
+msgid "Congratulations! You've completed Session 1."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:108 site/course/0-sesssion-data.php:325
+msgid "Below are next steps to take in preparation for the next session."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:111 site/course/0-sesssion-data.php:328
+#: site/course/10session.php:680 site/course/20session.php:780
+#: site/course/course-content.php:296 site/course/course-content.php:847
+#: site/course/course-content.php:1157 site/course/course-content.php:1533
+#: site/course/course-content.php:1723 site/course/course-content.php:1893
+#: site/course/course-content.php:2177 site/course/course-content.php:2571
+#: site/course/course-content.php:2675 site/course/course-content.php:2778
+#: site/course/course-content.php:2890 site/course/course-content.php:2994
+#: site/course/course-content.php:3103 site/course/course-content.php:3226
+#: site/course/course-content.php:3333 site/course/course-content.php:3453
+#: site/course/course-content.php:3568 site/course/course-content.php:3778
+#: site/course/course-content.php:3885 site/course/course-content.php:4009
+#: site/course/course-content.php:4116 site/course/course-content.php:4225
+#: site/course/course-content.php:4332 site/course/course-content.php:4441
+#: site/course/course-content.php:4545
+msgid "OBEY"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:112 site/course/10session.php:682
+#: site/course/20session.php:782 site/course/course-content.php:300
+msgid ""
+"Begin practicing the S.O.A.P.S. Bible reading between now and your next "
+"meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
+"journal using the S.O.A.P.S. format."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:115 site/course/0-sesssion-data.php:332
+#: site/course/10session.php:686 site/course/20session.php:786
+#: site/course/course-content.php:297 site/course/course-content.php:848
+#: site/course/course-content.php:1158 site/course/course-content.php:1534
+#: site/course/course-content.php:1724 site/course/course-content.php:1894
+#: site/course/course-content.php:2178 site/course/course-content.php:2572
+#: site/course/course-content.php:2676 site/course/course-content.php:2779
+#: site/course/course-content.php:2891 site/course/course-content.php:2995
+#: site/course/course-content.php:3104 site/course/course-content.php:3227
+#: site/course/course-content.php:3334 site/course/course-content.php:3454
+#: site/course/course-content.php:3569 site/course/course-content.php:3779
+#: site/course/course-content.php:3886 site/course/course-content.php:4010
+#: site/course/course-content.php:4117 site/course/course-content.php:4226
+#: site/course/course-content.php:4333 site/course/course-content.php:4442
+#: site/course/course-content.php:4546
+msgid "SHARE"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:116 site/course/10session.php:688
+#: site/course/20session.php:788
+msgid ""
+"Spend time asking God who He might want you to start an Accountability Group "
+"with using the tools you've learned in this session. Share this person’s "
+"name with the group before you go. Reach out to that person about starting "
+"an Accountability Group and meeting with you weekly."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:119 site/course/0-sesssion-data.php:193
+#: site/course/0-sesssion-data.php:336 site/course/10session.php:694
+#: site/course/20session.php:794 site/course/course-content.php:350
+#: site/course/course-content.php:899 site/course/course-content.php:1944
+#: site/course/course-content.php:2227
+msgid "PRAY"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:120 site/course/10session.php:697
+#: site/course/20session.php:797
+msgid ""
+"Pray that God helps you be obedient to Him and invite Him to work in you and "
+"those around you!"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:124
+msgid ""
+"Take a picture of your S.O.A.P.S. Bible study and share it on social media."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:173
+msgid "WELCOME BACK!"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:181
+msgid "CHECK-IN"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:183
+msgid "Before getting started, take some time to check-in."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:184
+msgid ""
+"At the end of the last session, everyone in your group was challenged in two "
+"ways:"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:186
+msgid ""
+"You were asked to begin practicing the S.O.A.P.S. Bible reading method and "
+"keeping a daily journal."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:187
+msgid ""
+"You were encouraged to reach out to someone about starting an Accountability "
+"Group."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:189 site/course/course-content.php:369
+#: site/course/course-content.php:638 site/course/course-content.php:917
+#: site/course/course-content.php:1225 site/course/course-content.php:1418
+#: site/course/course-content.php:1605 site/course/course-content.php:1791
+#: site/course/course-content.php:1961 site/course/course-content.php:2246
+#: site/course/course-content.php:2639 site/course/course-content.php:2742
+#: site/course/course-content.php:2846 site/course/course-content.php:2958
+#: site/course/course-content.php:3062 site/course/course-content.php:3172
+#: site/course/course-content.php:3295 site/course/course-content.php:3401
+#: site/course/course-content.php:3522 site/course/course-content.php:3636
+#: site/course/course-content.php:3734 site/course/course-content.php:3847
+#: site/course/course-content.php:3953 site/course/course-content.php:4078
+#: site/course/course-content.php:4185 site/course/course-content.php:4296
+#: site/course/course-content.php:4403 site/course/course-content.php:4509
+#: site/course/course-content.php:4615
+msgid "Take a few moments to see how your group did this week."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:194
+msgid ""
+"Ask if anyone in the group has specific needs they would like the group to "
+"pray for. Ask someone to pray and ask God to help in the areas the group "
+"shared. Be sure to thank God that He promises in His Word to listen and act "
+"when His people pray. And, as always, ask God's Holy Spirit to lead your "
+"time, together."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:207 site/course/course-content.php:401
+msgid ""
+"If we want to make disciples who multiply – spiritual producers and not just "
+"consumers – then we need to learn and share four main ways God makes "
+"everyday followers more like Jesus:"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:209 site/course/course-content.php:220
+#: site/course/course-content.php:403 site/follow-jesus/follow-jesus.php:172
+msgid "Prayer"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:210 site/course/course-content.php:217
+#: site/course/course-content.php:404
+msgid "Scripture"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:211 site/course/course-content.php:405
+msgid "Body Life"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:212 site/course/course-content.php:406
+msgid "Persecution and Suffering"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:223
+msgid ""
+"Of the four areas detailed above (prayer, God's Word, etc.), which ones do "
+"you already practice?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:224 site/course/course-content.php:430
+msgid "Which ones do you feel unsure about?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:225 site/course/course-content.php:431
+msgid "How ready do you feel when it comes to training others?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:239 site/course/course-content.php:386
+#: site/course/course-content.php:443 site/course/course-content.php:543
+msgid "Prayer Cycle"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:240 site/course/course-content.php:444
+msgid ""
+"The Bible tells us that prayer is our chance to speak to and hear from the "
+"same God who created us!"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:253
+msgid "Practice the Prayer Cycle (60min)"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:257
+msgid "LEAVE"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:258
+msgid ""
+"Spend the next 60 minutes in prayer individually, using the exercises in "
+"\"The Prayer Cycle\" section of the Zúme Guidebook as a guide."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:261
+msgid "RETURN"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:262 site/course/course-content.php:465
+msgid ""
+"Set a time for the group to return and reconnect. Be sure to add a few extra "
+"minutes for everyone to both find a quiet place to pray and to make their "
+"way back to the group."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:273 site/course/course-content.php:482
+msgid "What is your reaction to spending an hour in prayer?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:274 site/course/course-content.php:483
+msgid "How do you feel?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:275 site/course/course-content.php:484
+msgid "Did you learn or hear anything?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:276 site/course/course-content.php:485
+msgid ""
+"What would life be like if you made this kind of prayer a regular habit?"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:290 site/course/course-content.php:387
+#: site/course/course-content.php:497 site/course/course-content.php:544
+msgid "List of 100"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:292
+msgid ""
+"God has already given us the relationships we need to “Go and make "
+"disciples.” These are our family, friends, neighbors, co-workers and "
+"classmates – people we’ve known all our lives or maybe just met."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:293
+msgid ""
+"Being good stewards of these relationships is the first step in multiplying "
+"disciples. Start by making a list."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:307
+msgid "Project (30min)"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:312 site/course/course-content.php:520
+msgid "Create your own list of 100"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:313
+msgid ""
+"Have everyone in your group take the next 30 minutes to fill out their own "
+"inventory of relationships using the form in the \"List of 100\" section in "
+"your Zúme Guidebook. "
+msgstr ""
+
+#: site/course/0-sesssion-data.php:324
+msgid "Congratulations on finishing Session 2! "
+msgstr ""
+
+#: site/course/0-sesssion-data.php:329 site/course/course-content.php:557
+msgid ""
+"Spend time this week praying for five people from your List of 100 that you "
+"marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
+"to be open to His story."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:333
+msgid ""
+"Ask God who He wants you to share the List of 100 tool with. Share this "
+"person's name with the group before you go and reach out to them before the "
+"next session."
+msgstr ""
+
+#: site/course/0-sesssion-data.php:337
+msgid ""
+"Pray that God help you be obedient to Him and invite Him to work in you and "
+"those around you!"
+msgstr ""
+
+#: site/course/0-sesssion-data.php:341
+msgid ""
+"Think others could use the 60-minute prayer tool? Share about it on social "
+"media."
+msgstr ""
+
+#: site/course/10session.php:365 site/course/20session.php:465
+#: site/course/course-content.php:22
+msgid "Session 1"
+msgstr ""
+
+#: site/course/10session.php:365 site/course/20session.php:465
+msgid "Check in"
+msgstr ""
+
+#: site/course/10session.php:371 site/course/20session.php:471
+msgid "Have all participants of the training check-in."
+msgstr ""
+
+#: site/course/10session.php:412 site/course/10session.php:428
+#: site/course/10session.php:438 site/course/10session.php:459
+#: site/course/10session.php:475 site/course/10session.php:485
+#: site/course/10session.php:509 site/course/10session.php:525
+#: site/course/10session.php:535 site/course/20session.php:512
+#: site/course/20session.php:528 site/course/20session.php:538
+#: site/course/20session.php:559 site/course/20session.php:575
+#: site/course/20session.php:585 site/course/20session.php:609
+#: site/course/20session.php:625 site/course/20session.php:635
+msgid "Watch and Discuss (15min)"
+msgstr ""
+
+#: site/course/10session.php:415 site/course/10session.php:462
+#: site/course/10session.php:512 site/course/20session.php:515
+#: site/course/20session.php:562 site/course/20session.php:612
+msgid "Consider This Thought"
+msgstr ""
+
+#: site/course/10session.php:421 site/course/20session.php:521
+#: site/course/course-content.php:84
+msgid "God uses ordinary people doing simple things to make a big impact."
+msgstr ""
+
+#: site/course/10session.php:441 site/course/10session.php:488
+#: site/course/10session.php:538 site/course/20session.php:541
+#: site/course/20session.php:588 site/course/20session.php:638
+msgid "Discuss"
+msgstr ""
+
+#: site/course/10session.php:493 site/course/20session.php:593
+msgid ""
+"What's the difference between that picture and what's described in the video "
+"as a \"Simple Church\"?"
+msgstr ""
+
+#: site/course/10session.php:495 site/course/20session.php:595
+#: site/course/course-content.php:142
+msgid "Which one do you think would be easier to multiply and why?"
+msgstr ""
+
+#: site/course/10session.php:518 site/course/20session.php:618
+msgid ""
+"We breathe in. We breathe out. We're alive. Spiritual Breathing is like "
+"that, too."
+msgstr ""
+
+#: site/course/10session.php:542 site/course/20session.php:642
+msgid "Why is it essential to learn to hear and recognize God's voice?"
+msgstr ""
+
+#: site/course/10session.php:543 site/course/20session.php:643
+#: site/course/course-content.php:179
+msgid ""
+"Is hearing and responding to the Lord really like breathing? Why or why not?"
+msgstr ""
+
+#: site/course/10session.php:558 site/course/10session.php:575
+#: site/course/10session.php:626 site/course/10session.php:642
+#: site/course/20session.php:658 site/course/20session.php:675
+#: site/course/20session.php:726 site/course/20session.php:742
+msgid "Listen and Read Along (3min)"
+msgstr ""
+
+#: site/course/10session.php:561 site/course/10session.php:629
+#: site/course/20session.php:661 site/course/20session.php:729
+msgid "Toolkit"
+msgstr ""
+
+#: site/course/10session.php:561 site/course/20session.php:661
+msgid "S.O.A.P.S. Bible Reading"
+msgstr ""
+
+#: site/course/10session.php:567 site/course/20session.php:667
+#: site/course/course-content.php:193
+msgid ""
+"Hearing from God regularly is a key element in our personal relationship "
+"with Him, and in our ability to stay obediently engaged in what He is doing "
+"around us."
+msgstr ""
+
+#: site/course/10session.php:585 site/course/10session.php:588
+#: site/course/10session.php:607 site/course/10session.php:652
+#: site/course/10session.php:655 site/course/20session.php:685
+#: site/course/20session.php:688 site/course/20session.php:707
+#: site/course/20session.php:752 site/course/20session.php:755
+msgid "Practice (45min)"
+msgstr ""
+
+#: site/course/10session.php:594 site/course/10session.php:613
+#: site/course/10session.php:661 site/course/20session.php:694
+#: site/course/20session.php:713 site/course/20session.php:761
+#: site/course/course-content.php:262
+msgid "Break into groups of two or three people of the same gender."
+msgstr ""
+
+#: site/course/10session.php:595 site/course/10session.php:614
+#: site/course/10session.php:662 site/course/20session.php:695
+#: site/course/20session.php:714 site/course/20session.php:762
+msgid ""
+"Spend the next 45 minutes working together through Accountability Questions "
+"in the \"Accountability Groups\" section of the guidebook."
+msgstr ""
+
+#: site/course/10session.php:604 site/course/20session.php:704
+msgid "Debrief (45min)"
+msgstr ""
+
+#: site/course/10session.php:635 site/course/20session.php:735
+msgid ""
+"The Bible tells us that every follower of Jesus will one day be held "
+"accountable for what we do and say and think. Accountability Groups are a "
+"great way to get ready!"
+msgstr ""
+
+#: site/course/course-content.php:32 site/course/course-content.php:336
+#: site/course/course-content.php:607 site/course/course-content.php:885
+#: site/course/course-content.php:1194 site/course/course-content.php:1387
+#: site/course/course-content.php:1574 site/course/course-content.php:1760
+#: site/course/course-content.php:1930 site/course/course-content.php:2213
+#: site/course/course-content.php:2513 site/course/course-content.php:2608
+#: site/course/course-content.php:2711 site/course/course-content.php:2815
+#: site/course/course-content.php:2927 site/course/course-content.php:3031
+#: site/course/course-content.php:3141 site/course/course-content.php:3264
+#: site/course/course-content.php:3370 site/course/course-content.php:3491
+#: site/course/course-content.php:3605 site/course/course-content.php:3703
+#: site/course/course-content.php:3816 site/course/course-content.php:3922
+#: site/course/course-content.php:4047 site/course/course-content.php:4154
+#: site/course/course-content.php:4265 site/course/course-content.php:4372
+#: site/course/course-content.php:4478 site/course/course-content.php:4584
+#: site/parts/nav.php:23 site/parts/nav.php:32
+msgid "Check-in"
+msgstr ""
+
+#: site/course/course-content.php:35 site/course/course-content.php:339
+#: site/course/course-content.php:610 site/course/course-content.php:888
+#: site/course/course-content.php:1197 site/course/course-content.php:1390
+#: site/course/course-content.php:1577 site/course/course-content.php:1763
+#: site/course/course-content.php:1933 site/course/course-content.php:2216
+#: site/course/course-content.php:2516 site/course/course-content.php:2611
+#: site/course/course-content.php:2714 site/course/course-content.php:2818
+#: site/course/course-content.php:2930 site/course/course-content.php:3034
+#: site/course/course-content.php:3144 site/course/course-content.php:3267
+#: site/course/course-content.php:3373 site/course/course-content.php:3494
+#: site/course/course-content.php:3608 site/course/course-content.php:3706
+#: site/course/course-content.php:3819 site/course/course-content.php:3925
+#: site/course/course-content.php:4050 site/course/course-content.php:4157
+#: site/course/course-content.php:4268 site/course/course-content.php:4375
+#: site/course/course-content.php:4481 site/course/course-content.php:4587
+msgid "Have all of the participants and facilitator check-in."
+msgstr ""
+
+#: site/course/course-content.php:37 site/course/course-content.php:341
+#: site/course/course-content.php:612 site/course/course-content.php:890
+#: site/course/course-content.php:1199 site/course/course-content.php:1392
+#: site/course/course-content.php:1579 site/course/course-content.php:1765
+#: site/course/course-content.php:1935 site/course/course-content.php:2218
+#: site/course/course-content.php:2518 site/course/course-content.php:2613
+#: site/course/course-content.php:2716 site/course/course-content.php:2820
+#: site/course/course-content.php:2932 site/course/course-content.php:3036
+#: site/course/course-content.php:3146 site/course/course-content.php:3269
+#: site/course/course-content.php:3375 site/course/course-content.php:3496
+#: site/course/course-content.php:3610 site/course/course-content.php:3708
+#: site/course/course-content.php:3821 site/course/course-content.php:3927
+#: site/course/course-content.php:4052 site/course/course-content.php:4159
+#: site/course/course-content.php:4270 site/course/course-content.php:4377
+#: site/course/course-content.php:4483 site/course/course-content.php:4589
+msgid "Or zume.training/checkin and use code:"
+msgstr ""
+
+#: site/course/course-content.php:46 site/course/course-content.php:621
+#: site/course/course-content.php:1208 site/course/course-content.php:1348
+#: site/course/course-content.php:1401 site/course/course-content.php:1588
+#: site/course/course-content.php:1774 site/course/course-content.php:2527
+#: site/course/course-content.php:2622 site/course/course-content.php:2725
+#: site/course/course-content.php:2829 site/course/course-content.php:2941
+#: site/course/course-content.php:3045 site/course/course-content.php:3155
+#: site/course/course-content.php:3278 site/course/course-content.php:3384
+#: site/course/course-content.php:3505 site/course/course-content.php:3619
+#: site/course/course-content.php:3717 site/course/course-content.php:3830
+#: site/course/course-content.php:3936 site/course/course-content.php:4061
+#: site/course/course-content.php:4168 site/course/course-content.php:4279
+#: site/course/course-content.php:4386 site/course/course-content.php:4492
+#: site/course/course-content.php:4598
+msgid "Pray"
+msgstr ""
+
+#: site/course/course-content.php:47 site/course/course-content.php:80
+#: site/course/course-content.php:114 site/course/course-content.php:152
+#: site/course/course-content.php:189 site/course/course-content.php:236
+#: site/course/course-content.php:351 site/course/course-content.php:397
+#: site/course/course-content.php:622 site/course/course-content.php:666
+#: site/course/course-content.php:726 site/course/course-content.php:780
+#: site/course/course-content.php:900 site/course/course-content.php:947
+#: site/course/course-content.php:985 site/course/course-content.php:1023
+#: site/course/course-content.php:1060 site/course/course-content.php:1099
+#: site/course/course-content.php:1209 site/course/course-content.php:1253
+#: site/course/course-content.php:1275 site/course/course-content.php:1349
+#: site/course/course-content.php:1402 site/course/course-content.php:1445
+#: site/course/course-content.php:1589 site/course/course-content.php:1632
+#: site/course/course-content.php:1775 site/course/course-content.php:1818
+#: site/course/course-content.php:1945 site/course/course-content.php:1990
+#: site/course/course-content.php:2027 site/course/course-content.php:2065
+#: site/course/course-content.php:2101 site/course/course-content.php:2228
+#: site/course/course-content.php:2288 site/course/course-content.php:2394
+#: site/course/course-content.php:2528 site/course/course-content.php:2623
+#: site/course/course-content.php:2726 site/course/course-content.php:2830
+#: site/course/course-content.php:2942 site/course/course-content.php:3046
+#: site/course/course-content.php:3156 site/course/course-content.php:3279
+#: site/course/course-content.php:3385 site/course/course-content.php:3506
+#: site/course/course-content.php:3620 site/course/course-content.php:3718
+#: site/course/course-content.php:3831 site/course/course-content.php:3937
+#: site/course/course-content.php:4062 site/course/course-content.php:4169
+#: site/course/course-content.php:4280 site/course/course-content.php:4387
+#: site/course/course-content.php:4493 site/course/course-content.php:4599
+msgid "(5 min)"
+msgstr ""
+
+#: site/course/course-content.php:58 site/course/course-content.php:377
+#: site/course/course-content.php:646 site/course/course-content.php:925
+#: site/course/course-content.php:1233 site/course/course-content.php:1426
+#: site/course/course-content.php:1613 site/course/course-content.php:1799
+#: site/course/course-content.php:1969 site/course/course-content.php:2266
+#: site/course/course-content.php:2539 site/course/course-content.php:2647
+#: site/course/course-content.php:2750 site/course/course-content.php:2854
+#: site/course/course-content.php:2966 site/course/course-content.php:3070
+#: site/course/course-content.php:3180 site/course/course-content.php:3303
+#: site/course/course-content.php:3409 site/course/course-content.php:3530
+#: site/course/course-content.php:3644 site/course/course-content.php:3742
+#: site/course/course-content.php:3855 site/course/course-content.php:3961
+#: site/course/course-content.php:4086 site/course/course-content.php:4193
+#: site/course/course-content.php:4304 site/course/course-content.php:4411
+#: site/course/course-content.php:4517 site/course/course-content.php:4623
+msgid "OVERVIEW"
+msgstr ""
+
+#: site/course/course-content.php:61 site/course/course-content.php:928
+#: site/course/course-content.php:1972
+msgid "In this session, we will hear these concepts:"
+msgstr ""
+
+#: site/course/course-content.php:64 site/course/course-content.php:281
+msgid "Simple Definition of Disciple & Church"
+msgstr ""
+
+#: site/course/course-content.php:65 site/course/course-content.php:282
+msgid "Spiritual Breathing"
+msgstr ""
+
+#: site/course/course-content.php:102 site/course/course-content.php:136
+#: site/course/course-content.php:174 site/course/course-content.php:425
+#: site/course/course-content.php:478 site/course/course-content.php:688
+#: site/course/course-content.php:710 site/course/course-content.php:748
+#: site/course/course-content.php:802 site/course/course-content.php:1007
+#: site/course/course-content.php:1045 site/course/course-content.php:1083
+#: site/course/course-content.php:1120 site/course/course-content.php:1297
+#: site/course/course-content.php:1312 site/course/course-content.php:1467
+#: site/course/course-content.php:1501 site/course/course-content.php:1654
+#: site/course/course-content.php:1691 site/course/course-content.php:1841
+#: site/course/course-content.php:2012 site/course/course-content.php:2049
+#: site/course/course-content.php:2089 site/course/course-content.php:2143
+#: site/course/course-content.php:2310 site/course/course-content.php:2467
+msgid "(10 min)"
+msgstr ""
+
+#: site/course/course-content.php:117
+msgid "Disciples and the Church"
+msgstr ""
+
+#: site/course/course-content.php:141
+msgid ""
+"What’s the difference between that picture and what’s described in the video "
+"as a \"Simple Church\"?"
+msgstr ""
+
+#: site/course/course-content.php:155
+msgid "Hearing and Obeying God"
+msgstr ""
+
+#: site/course/course-content.php:156
+msgid ""
+"Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
+"obeying God is like that, too."
+msgstr ""
+
+#: site/course/course-content.php:178
+msgid "Why is it essential to learn to hear and recognize God’s voice?"
+msgstr ""
+
+#: site/course/course-content.php:210 site/course/course-content.php:257
+#: site/course/course-content.php:460 site/course/course-content.php:516
+#: site/course/course-content.php:762 site/course/course-content.php:967
+#: site/course/course-content.php:1119 site/course/course-content.php:1311
+#: site/course/course-content.php:1327 site/course/course-content.php:1477
+#: site/course/course-content.php:1669 site/course/course-content.php:1854
+#: site/course/course-content.php:2121 site/course/course-content.php:2414
+#: site/course/course-content.php:2445 site/course/course-content.php:3193
+#: site/course/course-content.php:3422 site/course/course-content.php:3657
+#: site/course/course-content.php:3974
+msgid "ACTIVITY"
+msgstr ""
+
+#: site/course/course-content.php:214
+msgid "Practice S.O.A.P.S."
+msgstr ""
+
+#: site/course/course-content.php:215
+msgid ""
+"Break up and work individually through the S.O.A.P.S. Bible study pattern "
+"using Matthew 6:9-13. (20 min)"
+msgstr ""
+
+#: site/course/course-content.php:218
+msgid "Observation"
+msgstr ""
+
+#: site/course/course-content.php:219
+msgid "Application"
+msgstr ""
+
+#: site/course/course-content.php:221
+msgid "Sharing"
+msgstr ""
+
+#: site/course/course-content.php:223
+msgid ""
+"Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
+msgstr ""
+
+#: site/course/course-content.php:227 site/course/course-content.php:267
+#: site/course/course-content.php:469 site/course/course-content.php:526
+#: site/course/course-content.php:771 site/course/course-content.php:976
+#: site/course/course-content.php:1128 site/course/course-content.php:1320
+#: site/course/course-content.php:1340 site/course/course-content.php:1682
+#: site/course/course-content.php:1867 site/course/course-content.php:2134
+#: site/course/course-content.php:2345 site/course/course-content.php:2425
+msgid "Activity Resource"
+msgstr ""
+
+#: site/course/course-content.php:240
+msgid ""
+"The Bible tells us that every follower of Jesus will one day be held "
+"accountable for what we do and say and think."
+msgstr ""
+
+#: site/course/course-content.php:241
+msgid "Accountability Groups are a great way to get ready!"
+msgstr ""
+
+#: site/course/course-content.php:258 site/course/course-content.php:968
+#: site/course/course-content.php:2122
+msgid "(20 min)"
+msgstr ""
+
+#: site/course/course-content.php:261
+msgid "Practice Accountability Groups"
+msgstr ""
+
+#: site/course/course-content.php:263
+msgid ""
+"Spend the next 20 minutes working together through the Accountability "
+"Questions."
+msgstr ""
+
+#: site/course/course-content.php:275 site/course/course-content.php:534
+#: site/course/course-content.php:828 site/course/course-content.php:1136
+#: site/course/course-content.php:1515 site/course/course-content.php:1705
+#: site/course/course-content.php:1875 site/course/course-content.php:2157
+#: site/course/course-content.php:2555 site/course/course-content.php:2661
+#: site/course/course-content.php:2764 site/course/course-content.php:2872
+#: site/course/course-content.php:2980 site/course/course-content.php:3087
+#: site/course/course-content.php:3212 site/course/course-content.php:3318
+#: site/course/course-content.php:3439 site/course/course-content.php:3549
+#: site/course/course-content.php:3760 site/course/course-content.php:3870
+#: site/course/course-content.php:3995 site/course/course-content.php:4101
+#: site/course/course-content.php:4209 site/course/course-content.php:4318
+#: site/course/course-content.php:4426 site/course/course-content.php:4531
+msgid "REVIEW"
+msgstr ""
+
+#: site/course/course-content.php:278 site/course/course-content.php:537
+#: site/course/course-content.php:831 site/course/course-content.php:1139
+#: site/course/course-content.php:1518 site/course/course-content.php:2160
+#: site/course/course-content.php:2558 site/course/course-content.php:3090
+#: site/course/course-content.php:3552 site/course/course-content.php:3873
+#: site/course/course-content.php:4104 site/course/course-content.php:4212
+#: site/course/course-content.php:4429
+msgid "Concepts heard in this session:"
+msgstr ""
+
+#: site/course/course-content.php:284 site/course/course-content.php:541
+#: site/course/course-content.php:835 site/course/course-content.php:1145
+#: site/course/course-content.php:1522 site/course/course-content.php:2166
+msgid "Tools heard in this session:"
+msgstr ""
+
+#: site/course/course-content.php:301
+msgid ""
+"Ask the Lord to guide you to challenge at least five people you know who are "
+"believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
+"then do so."
+msgstr ""
+
+#: site/course/course-content.php:326
+msgid "Session 2"
+msgstr ""
+
+#: site/course/course-content.php:354
+msgid ""
+"Ask if anyone in the group has specific needs they would like the group to "
+"pray for."
+msgstr ""
+
+#: site/course/course-content.php:355
+msgid ""
+"Thank God that He promises in His Word to listen and act when His people "
+"pray."
+msgstr ""
+
+#: site/course/course-content.php:356
+msgid "Ask God’s Holy Spirit to lead your time, together."
+msgstr ""
+
+#: site/course/course-content.php:364 site/course/course-content.php:633
+#: site/course/course-content.php:912 site/course/course-content.php:1220
+#: site/course/course-content.php:1413 site/course/course-content.php:1600
+#: site/course/course-content.php:1786 site/course/course-content.php:1956
+#: site/course/course-content.php:2241 site/course/course-content.php:2634
+#: site/course/course-content.php:2737 site/course/course-content.php:2841
+#: site/course/course-content.php:2953 site/course/course-content.php:3057
+#: site/course/course-content.php:3167 site/course/course-content.php:3290
+#: site/course/course-content.php:3396 site/course/course-content.php:3517
+#: site/course/course-content.php:3631 site/course/course-content.php:3729
+#: site/course/course-content.php:3842 site/course/course-content.php:3948
+#: site/course/course-content.php:4073 site/course/course-content.php:4180
+#: site/course/course-content.php:4291 site/course/course-content.php:4398
+#: site/course/course-content.php:4504 site/course/course-content.php:4610
+msgid "LOOK BACK"
+msgstr ""
+
+#: site/course/course-content.php:367 site/course/course-content.php:636
+#: site/course/course-content.php:915 site/course/course-content.php:1223
+#: site/course/course-content.php:1416 site/course/course-content.php:1603
+#: site/course/course-content.php:1789 site/course/course-content.php:1959
+#: site/course/course-content.php:2244 site/course/course-content.php:2637
+#: site/course/course-content.php:2740 site/course/course-content.php:2844
+#: site/course/course-content.php:2956 site/course/course-content.php:3060
+#: site/course/course-content.php:3170 site/course/course-content.php:3293
+#: site/course/course-content.php:3399 site/course/course-content.php:3520
+#: site/course/course-content.php:3634 site/course/course-content.php:3732
+#: site/course/course-content.php:3845 site/course/course-content.php:3951
+#: site/course/course-content.php:4076 site/course/course-content.php:4183
+#: site/course/course-content.php:4294 site/course/course-content.php:4401
+#: site/course/course-content.php:4507 site/course/course-content.php:4613
+msgid "Before getting started, take some time to look back."
+msgstr ""
+
+#: site/course/course-content.php:368 site/course/course-content.php:637
+#: site/course/course-content.php:916 site/course/course-content.php:1224
+#: site/course/course-content.php:1417 site/course/course-content.php:1604
+#: site/course/course-content.php:1790 site/course/course-content.php:1960
+#: site/course/course-content.php:2245 site/course/course-content.php:2638
+#: site/course/course-content.php:2741 site/course/course-content.php:2845
+#: site/course/course-content.php:2957 site/course/course-content.php:3061
+#: site/course/course-content.php:3171 site/course/course-content.php:3294
+#: site/course/course-content.php:3400 site/course/course-content.php:3521
+#: site/course/course-content.php:3635 site/course/course-content.php:3733
+#: site/course/course-content.php:3846 site/course/course-content.php:3952
+#: site/course/course-content.php:4077 site/course/course-content.php:4184
+#: site/course/course-content.php:4295 site/course/course-content.php:4402
+#: site/course/course-content.php:4508 site/course/course-content.php:4614
+msgid ""
+"At the end of the last session, everyone in your group was challenged to "
+"practice what you learned."
+msgstr ""
+
+#: site/course/course-content.php:380 site/course/course-content.php:649
+#: site/course/course-content.php:1236 site/course/course-content.php:1429
+#: site/course/course-content.php:1616 site/course/course-content.php:1802
+#: site/course/course-content.php:2269
+msgid "In this session, we will hear this concept:"
+msgstr ""
+
+#: site/course/course-content.php:382 site/course/course-content.php:400
+#: site/course/course-content.php:539
+msgid "Producer not Consumer"
+msgstr ""
+
+#: site/course/course-content.php:384 site/course/course-content.php:653
+#: site/course/course-content.php:934 site/course/course-content.php:1240
+#: site/course/course-content.php:2273
+msgid "And we will add these tools to our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:429
+msgid ""
+"Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
+"you already practice?"
+msgstr ""
+
+#: site/course/course-content.php:461
+msgid "(60 min)"
+msgstr ""
+
+#: site/course/course-content.php:464
+msgid "Pray the Prayer Cycle for an hour individually"
+msgstr ""
+
+#: site/course/course-content.php:498
+msgid ""
+"God has already given us the relationships we need to \"Go and make "
+"disciples.\""
+msgstr ""
+
+#: site/course/course-content.php:499
+msgid ""
+"These are our family, friends, neighbors, co-workers and classmates – people "
+"we’ve known all our lives or maybe just met."
+msgstr ""
+
+#: site/course/course-content.php:500
+msgid "Stewarding the relationships you have is the best place to start."
+msgstr ""
+
+#: site/course/course-content.php:517 site/course/course-content.php:2446
+msgid "(30 min)"
+msgstr ""
+
+#: site/course/course-content.php:521
+msgid ""
+"Have everyone in your group take the next 30 minutes to fill out their own "
+"list of relationships. List as many as you can."
+msgstr ""
+
+#: site/course/course-content.php:522
+msgid ""
+"Then mark your best understanding of their relationship to God: disciple, "
+"unbeliever, or unknown."
+msgstr ""
+
+#: site/course/course-content.php:553
+msgid "Obey"
+msgstr ""
+
+#: site/course/course-content.php:558
+msgid ""
+"Ask God who He wants you to share the List of 100 tool with. Share this "
+"person’s name with the group before you go and reach out to them before the "
+"next session."
+msgstr ""
+
+#: site/course/course-content.php:566
+msgid "To saturate the world with multiplying disciples in our generation."
+msgstr ""
+
+#: site/course/course-content.php:568
+msgid ""
+"Zume is a community of practice for those who want to see disciple making "
+"movements."
+msgstr ""
+
+#: site/course/course-content.php:597
+msgid "Session 3"
+msgstr ""
+
+#: site/course/course-content.php:625 site/course/course-content.php:1212
+#: site/course/course-content.php:1405
+msgid "Pray as a group. Invite His Holy Spirit to lead your time together."
+msgstr ""
+
+#: site/course/course-content.php:651 site/course/course-content.php:669
+msgid "Spiritual Economy"
+msgstr ""
+
+#: site/course/course-content.php:655 site/course/course-content.php:729
+#: site/course/course-content.php:837
+msgid "The Gospel"
+msgstr ""
+
+#: site/course/course-content.php:656 site/course/course-content.php:783
+#: site/course/course-content.php:838
+msgid "Baptism"
+msgstr ""
+
+#: site/course/course-content.php:670
+msgid ""
+"In this broken world, people feel rewarded when they take, when they receive "
+"and when they gain more than those around them. But God’s Spiritual Economy "
+"is different – God invests more in those who are faithful with what they’ve "
+"already been given."
+msgstr ""
+
+#: site/course/course-content.php:691
+msgid ""
+"What are some differences you see between God’s Spiritual Economy and our "
+"earthly way of getting things done?"
+msgstr ""
+
+#: site/course/course-content.php:699
+msgid ""
+"Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
+"you will be my witnesses, telling people about me everywhere – in Jerusalem, "
+"throughout Judea, in Samaria, and to the ends of the earth.”"
+msgstr ""
+
+#: site/course/course-content.php:700
+msgid ""
+"There’s no one “best way” to tell God’s story (also called The Gospel), "
+"because the best way will depend on who you’re sharing with. Every disciple "
+"should learn to tell God’s Story in a way that’s true to scripture and "
+"connects with the audience they’re sharing with."
+msgstr ""
+
+#: site/course/course-content.php:714
+msgid ""
+"What comes to mind when you hear God’s command to be His \"witness\" and to "
+"tell His story?"
+msgstr ""
+
+#: site/course/course-content.php:715
+msgid ""
+"Why do you think Jesus chose ordinary people instead of some other way to "
+"share His Good News?"
+msgstr ""
+
+#: site/course/course-content.php:716
+msgid ""
+"What would it take for you to feel more comfortable sharing God’s Story?"
+msgstr ""
+
+#: site/course/course-content.php:730
+msgid ""
+"One way to share God’s Good News is by telling God’s Story from Creation to "
+"Judgement – from the beginning of humankind all the way to the end of this "
+"age."
+msgstr ""
+
+#: site/course/course-content.php:752
+msgid "What do you learn about mankind from this story?"
+msgstr ""
+
+#: site/course/course-content.php:753
+msgid "What do you learn about God?"
+msgstr ""
+
+#: site/course/course-content.php:754
+msgid ""
+"Do you think it would be easier or harder to share God’s Story by telling a "
+"story like this?"
+msgstr ""
+
+#: site/course/course-content.php:763 site/course/course-content.php:2415
+msgid "(45 min)"
+msgstr ""
+
+#: site/course/course-content.php:766
+msgid "Share the Gospel"
+msgstr ""
+
+#: site/course/course-content.php:767
+msgid ""
+"Break into groups of two or three people and take turns telling the Gospel "
+"to each other."
+msgstr ""
+
+#: site/course/course-content.php:784
+msgid ""
+"Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
+"name of the Father and of the Son and of the Holy Spirit…”"
+msgstr ""
+
+#: site/course/course-content.php:806
+msgid "Have you ever baptized someone?"
+msgstr ""
+
+#: site/course/course-content.php:807
+msgid "Would you even consider it?"
+msgstr ""
+
+#: site/course/course-content.php:808
+msgid ""
+"If the Great Commission is for every follower of Jesus, does that mean every "
+"follower is allowed to baptize others? Why or why not?"
+msgstr ""
+
+#: site/course/course-content.php:817
+msgid "IMPORTANT REMINDER – Have you been baptized?"
+msgstr ""
+
+#: site/course/course-content.php:818
+msgid ""
+"If not, then we encourage you to plan this before even one more session of "
+"this training. Invite your group to be a part of this important day when you "
+"celebrate saying \"yes\" to Jesus."
+msgstr ""
+
+#: site/course/course-content.php:833
+msgid "The Spiritual Economy"
+msgstr ""
+
+#: site/course/course-content.php:851
+msgid ""
+"Ask God who He wants you to train to use the Creation to Judgment story (or "
+"some other way to share God’s Story). Share this person’s name with the "
+"group before you go."
+msgstr ""
+
+#: site/course/course-content.php:852
+msgid ""
+"Spend time this week practicing God’s Story, and then share it with at least "
+"one person from your List of 100 that you marked as \"Unbeliever\" or "
+"\"Unknown.\""
+msgstr ""
+
+#: site/course/course-content.php:853
+msgid ""
+"IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
+"session. Be sure to remember the supplies (bread and wine / juice)."
+msgstr ""
+
+#: site/course/course-content.php:903
+msgid ""
+"Pray and thank God that His ways are not our ways and His thoughts are not "
+"our thoughts."
+msgstr ""
+
+#: site/course/course-content.php:904
+msgid ""
+"Ask Him to give each member of your group the mind of Christ — always "
+"focused on His Father’s work."
+msgstr ""
+
+#: site/course/course-content.php:931 site/course/course-content.php:1026
+#: site/course/course-content.php:1142
+msgid "Duckling Discipleship"
+msgstr ""
+
+#: site/course/course-content.php:936 site/course/course-content.php:950
+#: site/course/course-content.php:1147
+msgid "3-Minute Testimony"
+msgstr ""
+
+#: site/course/course-content.php:937 site/course/course-content.php:1102
+#: site/course/course-content.php:1148
+msgid "The Lord’s Supper"
+msgstr ""
+
+#: site/course/course-content.php:951
+msgid ""
+"As followers of Jesus, we are “witnesses\" for Him, because we “testify” "
+"about the impact Jesus has had on our lives. Your story of your relationship "
+"with God is called your Testimony. It’s powerful, and it’s something no one "
+"can share better than you."
+msgstr ""
+
+#: site/course/course-content.php:971
+msgid "Share your testimony"
+msgstr ""
+
+#: site/course/course-content.php:972
+msgid "Break into groups of two or three and practice sharing your testimony."
+msgstr ""
+
+#: site/course/course-content.php:988
+msgid "Great - Greater - Greatest Blessings"
+msgstr ""
+
+#: site/course/course-content.php:1011
+msgid ""
+"Is this the pattern you were taught when you first began to follow Jesus? If "
+"not, what was different?"
+msgstr ""
+
+#: site/course/course-content.php:1012
+msgid ""
+"After you came to faith, how long was it before you began to disciple others?"
+msgstr ""
+
+#: site/course/course-content.php:1013
+msgid ""
+"What do you think would happen if new followers started sharing and "
+"discipling others, immediately?"
+msgstr ""
+
+#: site/course/course-content.php:1027
+msgid ""
+"What do ducklings have to do with disciple making? They lead and follow at "
+"the same time."
+msgstr ""
+
+#: site/course/course-content.php:1049
+msgid ""
+"What is one area of discipleship (reading/understanding the Bible, praying, "
+"sharing God’s Story, etc.) that you want to learn more about? Who is someone "
+"that could help you learn?"
+msgstr ""
+
+#: site/course/course-content.php:1050
+msgid ""
+"What is one area of discipleship that you feel you could share with others? "
+"Who is someone that you could share with?"
+msgstr ""
+
+#: site/course/course-content.php:1064
+msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
+msgstr ""
+
+#: site/course/course-content.php:1065
+msgid ""
+"Have you ever visited a home or a neighborhood or even a city where it "
+"seemed as if God was just... missing? These are usually the places where God "
+"wants to work the most."
+msgstr ""
+
+#: site/course/course-content.php:1087
+msgid ""
+"Who are you more comfortable sharing with -- people you already know or "
+"people you haven’t met, yet?"
+msgstr ""
+
+#: site/course/course-content.php:1088
+msgid "Why do you think that is?"
+msgstr ""
+
+#: site/course/course-content.php:1089
+msgid ""
+"How could you get better at sharing with people you’re less comfortable with?"
+msgstr ""
+
+#: site/course/course-content.php:1103
+msgid ""
+"Jesus said, “I am the living bread that came down from heaven. Whoever eats "
+"this bread will live forever. This bread is my flesh, which I will give for "
+"the life of the world.”"
+msgstr ""
+
+#: site/course/course-content.php:1123
+msgid "Celebrate the Lord’s Supper"
+msgstr ""
+
+#: site/course/course-content.php:1124
+msgid ""
+"Spend the next 10 minutes celebrating The Lord’s Supper with your group."
+msgstr ""
+
+#: site/course/course-content.php:1161
+msgid ""
+"Spend time this week practicing your 3-Minute Testimony, and then share it "
+"with at least one person from your List of 100 that you marked as "
+"\"Unbeliever\" or \"Unknown.\""
+msgstr ""
+
+#: site/course/course-content.php:1162
+msgid ""
+"Ask God who He wants you to train with the 3-Minute Testimony tool. Share "
+"this person’s name with the group before you go."
+msgstr ""
+
+#: site/course/course-content.php:1184
+msgid "Session 5"
+msgstr ""
+
+#: site/course/course-content.php:1238 site/course/course-content.php:1278
+msgid "Person of Peace"
+msgstr ""
+
+#: site/course/course-content.php:1242
+msgid "B.L.E.S.S. Prayer"
+msgstr ""
+
+#: site/course/course-content.php:1243 site/course/course-content.php:1256
+#: site/course/course-content.php:1331
+msgid "Prayer Walking"
+msgstr ""
+
+#: site/course/course-content.php:1257
+msgid ""
+"Prayer Walking is a simple way to obey God’s command to pray for others. And "
+"it’s just what it sounds like – praying to God while walking around!"
+msgstr ""
+
+#: site/course/course-content.php:1279
+msgid ""
+"Disciple-making can be rapidly advanced by finding a person of peace, even "
+"in a place where followers of Jesus are few and far between."
+msgstr ""
+
+#: site/course/course-content.php:1301
+msgid ""
+"Can someone who has a \"bad reputation\" (like the Samaritan woman or the "
+"demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
+"why not?"
+msgstr ""
+
+#: site/course/course-content.php:1302
+msgid ""
+"What is a community or segment of society near you that seems to have little "
+"(or no) Kingdom presence?"
+msgstr ""
+
+#: site/course/course-content.php:1303
+msgid ""
+"How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
+"and SHARES) accelerate the spread of the Gospel in that community?"
+msgstr ""
+
+#: site/course/course-content.php:1315
+msgid "Practice the B.L.E.S.S. Prayer"
+msgstr ""
+
+#: site/course/course-content.php:1316
+msgid ""
+"Break into groups of two or three and practice praying the five areas of the "
+"B.L.E.S.S. Prayer over each other."
+msgstr ""
+
+#: site/course/course-content.php:1328 site/course/course-content.php:1670
+#: site/course/course-content.php:1855
+msgid "(60 - 90 min)"
+msgstr ""
+
+#: site/course/course-content.php:1333
+msgid ""
+"Break into groups of two or three and go out into the community to practice "
+"Prayer Walking."
+msgstr ""
+
+#: site/course/course-content.php:1334
+msgid ""
+"Choosing a location can be as simple as walking outside from where you are "
+"now, or you could plan to go to a specific destination."
+msgstr ""
+
+#: site/course/course-content.php:1335
+msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
+msgstr ""
+
+#: site/course/course-content.php:1352
+msgid ""
+"Before you go out on your Prayer Walking activity, be sure to pray with your "
+"group to end your time together."
+msgstr ""
+
+#: site/course/course-content.php:1353
+msgid ""
+"Thank God that He loves the lost, the last and the least – including us!"
+msgstr ""
+
+#: site/course/course-content.php:1354
+msgid ""
+"Ask Him to prepare your heart and the heart of those you’ll meet during your "
+"walk to be open to His work."
+msgstr ""
+
+#: site/course/course-content.php:1377
+msgid "Session 6"
+msgstr ""
+
+#: site/course/course-content.php:1431 site/course/course-content.php:1520
+msgid "Faithfulness is Better than Knowledge"
+msgstr ""
+
+#: site/course/course-content.php:1433 site/course/course-content.php:1620
+#: site/course/course-content.php:1978
+msgid "And we will add this tool to our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:1448
+msgid "Faithfulness"
+msgstr ""
+
+#: site/course/course-content.php:1449
+msgid ""
+"When we help multiply disciples, we need to make sure we’re reproducing the "
+"right things. It’s important what disciples know – but it’s much more "
+"important what they DO with what they know."
+msgstr ""
+
+#: site/course/course-content.php:1470
+msgid ""
+"Think about God’s commands that you already know. How \"faithful\" are you "
+"in terms of obeying and sharing those things?"
+msgstr ""
+
+#: site/course/course-content.php:1478
+msgid "(75 min)"
+msgstr ""
+
+#: site/course/course-content.php:1482
+msgid ""
+"In the following video, you’ll be coached through an interactive 3/3 Group "
+"where you’ll learn a principle and then “press pause” and practice it with "
+"the group."
+msgstr ""
+
+#: site/course/course-content.php:1505
+msgid ""
+"Did you notice any differences between a 3/3 Group and a Bible Study or "
+"Small Group you’ve been a part of (or have heard about) in the past? If so, "
+"how would those differences impact the group?"
+msgstr ""
+
+#: site/course/course-content.php:1506
+msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
+msgstr ""
+
+#: site/course/course-content.php:1537
+msgid ""
+"Spend time this week obeying, training, and sharing based on the commitments "
+"you’ve made during your 3/3 Group practice."
+msgstr ""
+
+#: site/course/course-content.php:1538
+msgid ""
+"Pray and ask God who He wants you to share the 3/3 Group format with before "
+"your group meets again. Share this person’s name with the group before you "
+"go."
+msgstr ""
+
+#: site/course/course-content.php:1564
+msgid "Session 7"
+msgstr ""
+
+#: site/course/course-content.php:1592
+msgid ""
+"Pray and thank God for the group’s commitment to faithfully following Jesus "
+"and invite God’s Holy Spirit to lead your time together."
+msgstr ""
+
+#: site/course/course-content.php:1618 site/course/course-content.php:1635
+#: site/course/course-content.php:1710
+msgid "The Training Cycle"
+msgstr ""
+
+#: site/course/course-content.php:1636
+msgid ""
+"Have you ever learned how to ride a bicycle? Have you ever helped someone "
+"else learn? If so, chances are you already know the Training Cycle."
+msgstr ""
+
+#: site/course/course-content.php:1658
+msgid "Have you ever been a part of a Training Cycle?"
+msgstr ""
+
+#: site/course/course-content.php:1659
+msgid "Who did you train? Or who trained you?"
+msgstr ""
+
+#: site/course/course-content.php:1660
+msgid ""
+"Could the same person be at different parts of the Training Cycle while "
+"learning different skills?"
+msgstr ""
+
+#: site/course/course-content.php:1661
+msgid "What would it look like to train someone like that?"
+msgstr ""
+
+#: site/course/course-content.php:1673 site/course/course-content.php:1858
+msgid "3/3 Group Meeting"
+msgstr ""
+
+#: site/course/course-content.php:1675 site/course/course-content.php:1860
+msgid ""
+"LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
+"with each other. (30 min)"
+msgstr ""
+
+#: site/course/course-content.php:1676
+msgid ""
+"LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
+"questions 1-4 during the Look Up section. (30 min)"
+msgstr ""
+
+#: site/course/course-content.php:1677
+msgid ""
+"LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
+"develop how you will Obey, Train and Share. (30 min)"
+msgstr ""
+
+#: site/course/course-content.php:1695
+msgid "What did you like best about the 3/3 Group? Why?"
+msgstr ""
+
+#: site/course/course-content.php:1696
+msgid "What was the most challenging? Why?"
+msgstr ""
+
+#: site/course/course-content.php:1708
+msgid "Concept heard in this session:"
+msgstr ""
+
+#: site/course/course-content.php:1712
+msgid "Tool heard in this session:"
+msgstr ""
+
+#: site/course/course-content.php:1727
+msgid ""
+"Pick one skill or concept you have learned in Zúme and mentor someone to "
+"reproduce it to the fourth generation."
+msgstr ""
+
+#: site/course/course-content.php:1728
+msgid ""
+"Challenge the person you mentored to continue the process to an additional "
+"(fifth) generation."
+msgstr ""
+
+#: site/course/course-content.php:1750
+msgid "Session 8"
+msgstr ""
+
+#: site/course/course-content.php:1778
+msgid ""
+"Pray and thank God for giving your group the energy, the focus and the "
+"faithfulness to come so far in this training. Ask God to have His Holy "
+"Spirit remind everyone in the group that they can do nothing without Him!"
+msgstr ""
+
+#: site/course/course-content.php:1806
+msgid "And we will practice this tool from our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:1822
+msgid ""
+"Jesus said, “Whoever wishes to become great among you shall be your servant.”"
+msgstr ""
+
+#: site/course/course-content.php:1845
+msgid ""
+"Is there a group of followers of Jesus you know that are already meeting or "
+"would be willing to meet and form a Leadership Cell to learn Zúme Training?"
+msgstr ""
+
+#: site/course/course-content.php:1846
+msgid "What would it take to bring them together?"
+msgstr ""
+
+#: site/course/course-content.php:1861
+msgid ""
+"LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
+"questions 1- 4. (30 min)"
+msgstr ""
+
+#: site/course/course-content.php:1862
+msgid ""
+"LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
+"and Share. (30 min)"
+msgstr ""
+
+#: site/course/course-content.php:1878
+msgid "Concept from this session:"
+msgstr ""
+
+#: site/course/course-content.php:1882
+msgid "Tool from this session:"
+msgstr ""
+
+#: site/course/course-content.php:1897
+msgid ""
+"Select some people from your List of 100 who are already believers. Explain "
+"Leadership Cells to them and see if they would be interested to be part of "
+"one."
+msgstr ""
+
+#: site/course/course-content.php:1898
+msgid ""
+"Pray and ask God who He wants you to share the Leadership Cell tool with "
+"before your group meets again. Challenge them to then share it with someone "
+"else."
+msgstr ""
+
+#: site/course/course-content.php:1920
+msgid "Session 9"
+msgstr ""
+
+#: site/course/course-content.php:1948
+msgid "Pray as a group. Invited the Holy Spirit to guide your time together."
+msgstr ""
+
+#: site/course/course-content.php:1974 site/course/course-content.php:1993
+#: site/course/course-content.php:2162
+msgid "Non-Sequential Growth"
+msgstr ""
+
+#: site/course/course-content.php:1975 site/course/course-content.php:2030
+msgid "Pace"
+msgstr ""
+
+#: site/course/course-content.php:1994
+msgid ""
+"When people think about disciples multiplying, they often think of it as a "
+"step-by-step process. The problem with that is — that’s not how it works "
+"best!"
+msgstr ""
+
+#: site/course/course-content.php:2016
+msgid "What is the most exciting idea you heard in this video? Why?"
+msgstr ""
+
+#: site/course/course-content.php:2017
+msgid "What is the most challenging idea? Why?"
+msgstr ""
+
+#: site/course/course-content.php:2031
+msgid ""
+"Multiplying matters and multiplying quickly matters even more. Pace matters "
+"because where we all spend our eternity — an existence that outlasts time — "
+"is determined in the very short time we call “life.“"
+msgstr ""
+
+#: site/course/course-content.php:2053
+msgid "Why is pace important?"
+msgstr ""
+
+#: site/course/course-content.php:2054
+msgid ""
+"What do you need to change in your thinking, your actions, or your attitude "
+"to be better aligned with God’s priority for pace?"
+msgstr ""
+
+#: site/course/course-content.php:2055
+msgid ""
+"What is one thing you can do starting this week that will make a difference?"
+msgstr ""
+
+#: site/course/course-content.php:2069
+msgid ""
+"Jesus taught us that we are to stay close — to live as a small, spiritual "
+"family, to love and give our lives to one another, to celebrate and suffer — "
+"together."
+msgstr ""
+
+#: site/course/course-content.php:2070
+msgid ""
+"However, Jesus also taught us to leave our homes and loved ones behind and "
+"be willing to go anywhere — and everywhere — to share and start new "
+"spiritual families."
+msgstr ""
+
+#: site/course/course-content.php:2071
+msgid "So how can we do both?"
+msgstr ""
+
+#: site/course/course-content.php:2092
+msgid ""
+"What are some advantages of maintaining a consistent spiritual family that "
+"gives birth to new ones that grow and multiply, instead of continually "
+"growing a family and splitting it in order to grow?"
+msgstr ""
+
+#: site/course/course-content.php:2105
+msgid ""
+"The Coaching Checklist is a simple tool you can use to help guide you as you "
+"assist others through various parts of becoming a fully equipped disciple."
+msgstr ""
+
+#: site/course/course-content.php:2127
+msgid ""
+"Get Resource - Download the Coaching Checklist and print a copy for each "
+"person or use the online qr tool."
+msgstr ""
+
+#: site/course/course-content.php:2128
+msgid ""
+"Assess Yourself - Evaluate yourself and mark the corresponding columns on "
+"the Coaching Checklist. (10 min)"
+msgstr ""
+
+#: site/course/course-content.php:2129
+msgid ""
+"Assess Someone Else - Chose a believer from your List of 100 and fill out "
+"the coaching checklist as if you were their coach. (10 min)"
+msgstr ""
+
+#: site/course/course-content.php:2147
+msgid "Which Training Tools did you feel you would be able to train well?"
+msgstr ""
+
+#: site/course/course-content.php:2148
+msgid ""
+"Are there any Training Tools that you would add or subtract from the "
+"Checklist? Why?"
+msgstr ""
+
+#: site/course/course-content.php:2181
+msgid ""
+"Practice sharing the concept of “Pace” with a friend and pray for the Lord "
+"to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
+"have you share it with."
+msgstr ""
+
+#: site/course/course-content.php:2182
+msgid ""
+"If you have already started your own simple church, share the concept  "
+"“Always a Part of Two Churches” with the people in it. If not, share it with "
+"another believer you know."
+msgstr ""
+
+#: site/course/course-content.php:2203
+msgid "Session 10"
+msgstr ""
+
+#: site/course/course-content.php:2231
+msgid ""
+"Pray and thank God that He is faithful to complete His good work in us. "
+msgstr ""
+
+#: site/course/course-content.php:2232
+msgid ""
+"Ask Him to give your group clear heads and open hearts to the great things "
+"He wants to do in and through you."
+msgstr ""
+
+#: site/course/course-content.php:2233
+msgid ""
+"Ask the Holy Spirit to lead your time together and thank Him for His "
+"faithfulness, too. He got you through!"
+msgstr ""
+
+#: site/course/course-content.php:2254
+msgid "Be encouraged ..."
+msgstr ""
+
+#: site/course/course-content.php:2255
+msgid ""
+"You may not know it, but you now have more practical training on starting "
+"simple churches and making disciples who multiply than many pastors and "
+"missionaries around the world!"
+msgstr ""
+
+#: site/course/course-content.php:2256
+msgid ""
+"But, Zúme Training is only the beginning! In this session, we will make a "
+"plan for what happens post-training and briefly introduce tools you’ll need "
+"later in your journey as you implement what you’ve learned."
+msgstr ""
+
+#: site/course/course-content.php:2275
+msgid "Four Fields"
+msgstr ""
+
+#: site/course/course-content.php:2292
+msgid ""
+"What happens to churches as they grow and start new churches that start new "
+"churches? How do they stay connected and live life together as an extended, "
+"spiritual family? They become a network!"
+msgstr ""
+
+#: site/course/course-content.php:2313
+msgid ""
+"Are there advantages when networks of simple churches are connected by deep, "
+"personal relationships? What are some examples that come to mind?"
+msgstr ""
+
+#: site/course/course-content.php:2321
+msgid "Four Fields Diagnostic Chart"
+msgstr ""
+
+#: site/course/course-content.php:2322
+msgid ""
+"The Four Fields diagnostic chart is a simple tool to be used by a leadership "
+"cell to reflect on the status of current efforts and the Kingdom activity "
+"around them."
+msgstr ""
+
+#: site/course/course-content.php:2323
+msgid ""
+"Jesus often pulled the disciples back, away from ministry to quieter places "
+"to review how the work was going. This simple tool is to help you and the co-"
+"leaders with you to follow this pattern of Jesus and to address all parts of "
+"your stewardship."
+msgstr ""
+
+#: site/course/course-content.php:2324
+msgid "Review the next two slides: Field Descriptions and Four Fields Example"
+msgstr ""
+
+#: site/course/course-content.php:2333
+msgid "Field Descriptions"
+msgstr ""
+
+#: site/course/course-content.php:2335
+msgid ""
+"Empty Field: Where or with whom [what people groups] are you planning to "
+"extend the Kingdom?"
+msgstr ""
+
+#: site/course/course-content.php:2336
+msgid ""
+"Seeding Field: Where or with whom are you sharing the good news of the "
+"Kingdom? How are you doing that?"
+msgstr ""
+
+#: site/course/course-content.php:2337
+msgid ""
+"Growing Field: How are you equipping people and growing them spiritually, "
+"individually and in their natural networks?"
+msgstr ""
+
+#: site/course/course-content.php:2338
+msgid ""
+"Harvesting Field: How are new spiritual families [simple churches] being "
+"formed?"
+msgstr ""
+
+#: site/course/course-content.php:2339
+msgid ""
+"Multiplying Field: With whom, how and when are you filtering for faithful "
+"people and equipping them and holding them accountable for reproduction?"
+msgstr ""
+
+#: site/course/course-content.php:2352 site/course/course-content.php:2355
+msgid "Four Fields Example"
+msgstr ""
+
+#: site/course/course-content.php:2360 site/course/course-content.php:2385
+msgid "Resource"
+msgstr ""
+
+#: site/course/course-content.php:2368
+msgid "Generation Mapping"
+msgstr ""
+
+#: site/course/course-content.php:2369
+msgid ""
+"Generational mapping (a.k.a. generation mapping or gen mapping) is another "
+"simple tool to help leaders in a movement understand the growth around them."
+msgstr ""
+
+#: site/course/course-content.php:2370
+msgid ""
+"A generation tree map can be drawn on a piece of paper or multiple pieces of "
+"paper. This map helps show where there are stops in multiplication and "
+"training might be required. Health of the movement is a top concern for "
+"leaders and fruitfulness is a top way to measure health."
+msgstr ""
+
+#: site/course/course-content.php:2371
+msgid "See the example on the next slide."
+msgstr ""
+
+#: site/course/course-content.php:2380
+msgid "Generation Mapping Example"
+msgstr ""
+
+#: site/course/course-content.php:2398
+msgid ""
+"Making disciples who make disciples means making leaders who make leaders. "
+"How do you develop stronger leaders? By teaching them how to love one "
+"another better. Peer Mentoring Groups help leaders love deeper."
+msgstr ""
+
+#: site/course/course-content.php:2418
+msgid "Peer Mentoring Group Practice"
+msgstr ""
+
+#: site/course/course-content.php:2419
+msgid ""
+"Break into groups of two or three and work through the 3/3 sections of the "
+"Peer Mentoring Group."
+msgstr ""
+
+#: site/course/course-content.php:2420
+msgid ""
+"To practice, choose one person to be the \"mentee\" for this session and "
+"have the other members work through the suggested questions list as peer "
+"mentors."
+msgstr ""
+
+#: site/course/course-content.php:2421
+msgid ""
+"By the time you’re finished, everyone should have a basic understanding of "
+"asking and answering."
+msgstr ""
+
+#: site/course/course-content.php:2434
+msgid ""
+"In His Bible, God says, \"I know the plans I have for you, plans to prosper "
+"you and not to harm you, plans to give you hope and a future.\""
+msgstr ""
+
+#: site/course/course-content.php:2435
+msgid "God makes plans, and He expects us to make plans, too."
+msgstr ""
+
+#: site/course/course-content.php:2436
+msgid ""
+"A Three Month Plan is a tool you can use to help focus your attention and "
+"efforts and keep them aligned with God’s priorities for making disciples who "
+"multiply."
+msgstr ""
+
+#: site/course/course-content.php:2437
+msgid ""
+"The next slide will show you how to make your Three Month Plan. We recommend "
+"using the online tool."
+msgstr ""
+
+#: site/course/course-content.php:2449
+msgid "Make your Three Month Plan"
+msgstr ""
+
+#: site/course/course-content.php:2451
+msgid ""
+"Review Questions - All questions are optional, and intended as prompts for "
+"your plan. (5 min)"
+msgstr ""
+
+#: site/course/course-content.php:2452
+msgid ""
+"Listen - Take time to be as quiet as possible and listen to what God chooses "
+"to reveal. (10 min)"
+msgstr ""
+
+#: site/course/course-content.php:2453
+msgid ""
+"Write Plan - Respond to worksheet questions and use a piece of paper or the "
+"QR code to save your answers. (15 min)"
+msgstr ""
+
+#: site/course/course-content.php:2458
+msgid "Online Plan Tool"
+msgstr ""
+
+#: site/course/course-content.php:2470
+msgid "Take turns sharing your Three Month Plans with each other."
+msgstr ""
+
+#: site/course/course-content.php:2471
+msgid ""
+"Find a training partner(s) that is willing to check in with you weekly. "
+"Commit to doing the same for them."
+msgstr ""
+
+#: site/course/course.php:97 site/parts/nav.php:22 site/parts/nav.php:31
+msgid "Course"
+msgstr ""
+
+#: site/course/course.php:108 site/profile/profile.php:120
+#: site/wizard/wizard.php:108 site/wizard/wizard.php:148
+msgid "Name"
+msgstr ""
+
+#: site/course/course.php:109 site/wizard/wizard.php:149
+msgid "Next Session Date"
+msgstr ""
+
+#: site/course/course.php:110 site/wizard/wizard.php:150
+msgid "Start Time"
+msgstr ""
+
+#: site/course/course.php:111
+msgid "TimeZone"
+msgstr ""
+
+#: site/course/course.php:166 site/wizard/wizard.php:153
+msgid "Join"
+msgstr ""
+
+#: site/dashboard/dashboard.php:108
+msgid "Done"
+msgstr ""
+
+#: site/dashboard/dashboard.php:109
+msgid "Edit"
+msgstr ""
+
+#: site/dashboard/dashboard.php:112
+msgid "Active"
+msgstr ""
+
+#: site/dashboard/dashboard.php:113
+msgid "Completed"
+msgstr ""
+
+#: site/dashboard/dashboard.php:114
+msgid "Not Heard"
+msgstr ""
+
+#: site/dashboard/dashboard.php:115
+msgid "All"
+msgstr ""
+
+#: site/dashboard/dashboard.php:116
+msgid "Filter"
+msgstr ""
+
+#: site/dashboard/dashboard.php:117
+msgid "List View"
+msgstr ""
+
+#: site/dashboard/dashboard.php:118
+msgid "Grid View"
+msgstr ""
+
+#: site/dashboard/dashboard.php:119
+msgid "View Now"
+msgstr ""
+
+#: site/dashboard/dashboard.php:120
+msgid "View"
+msgstr ""
+
+#: site/dashboard/dashboard.php:121
+msgid "Check out this Zume concept"
+msgstr ""
+
+#: site/dashboard/dashboard.php:122
+msgid "Preview"
+msgstr ""
+
+#: site/dashboard/dashboard.php:123
+msgid "Add commitments"
+msgstr ""
+
+#: site/dashboard/dashboard.php:124 site/dev-section/dev.php:89
+#: site/share/share.php:28
+msgid "Copy Link"
+msgstr ""
+
+#: site/dashboard/dashboard.php:128
+msgid "Getting Started"
+msgstr ""
+
+#: site/dashboard/dashboard.php:129
+msgid "Set Profile"
+msgstr ""
+
+#: site/dashboard/dashboard.php:130
+msgid "Plan a Training"
+msgstr ""
+
+#: site/dashboard/dashboard.php:133
+msgid "My Progress"
+msgstr ""
+
+#: site/dashboard/dashboard.php:134
+msgid ""
+"Track your course progress with this interactive view. Learn to listen, "
+"obey, share and train others with what you have learned."
+msgstr ""
+
+#: site/dashboard/dashboard.php:135
+msgid "Information about progress"
+msgstr ""
+
+#: site/dashboard/dashboard.php:136
+msgid "My Training"
+msgstr ""
+
+#: site/dashboard/dashboard.php:137
+msgid ""
+"Full access to your training content, schedule, group details and sharing "
+"tools."
+msgstr ""
+
+#: site/dashboard/dashboard.php:138
+msgid "3-Month Plan"
+msgstr ""
+
+#: site/dashboard/dashboard.php:139
+msgid ""
+"Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod "
+"consectetur irure nostrud aute in."
+msgstr ""
+
+#: site/dashboard/dashboard.php:140
+msgid "Practicing"
+msgstr ""
+
+#: site/dashboard/dashboard.php:141
+msgid "My Coach"
+msgstr ""
+
+#: site/dashboard/dashboard.php:142
+msgid "Quick access to your coach at all times."
+msgstr ""
+
+#: site/dashboard/dashboard.php:143
+msgid "My Tools"
+msgstr ""
+
+#: site/dashboard/dashboard.php:144
+msgid ""
+"Your My Tools area will unlock as you move through the course, practicing "
+"and developing essential discipleship skills"
+msgstr ""
+
+#: site/dashboard/dashboard.php:145
+msgid "My Plans"
+msgstr ""
+
+#: site/dashboard/dashboard.php:146
+msgid ""
+"Unlock the My Plans area by completing your 3-Month plan in the final "
+"session."
+msgstr ""
+
+#: site/dashboard/dashboard.php:147
+msgid "My Churches"
+msgstr ""
+
+#: site/dashboard/dashboard.php:148
+msgid "Unlock the My Churches area by joining the community."
+msgstr ""
+
+#: site/dashboard/dashboard.php:149
+msgid "My Maps"
+msgstr ""
+
+#: site/dashboard/dashboard.php:150
+msgid "Unlock the My Maps area by joining the community."
+msgstr ""
+
+#: site/dashboard/dashboard.php:151
+msgid "Launch Course"
+msgstr ""
+
+#: site/dashboard/dashboard.php:152
+msgid "10 Session Course"
+msgstr ""
+
+#: site/dashboard/dashboard.php:153
+msgid "20 Session Course"
+msgstr ""
+
+#: site/dashboard/dashboard.php:154
+msgid "3 Day Intensive Course"
+msgstr ""
+
+#: site/dashboard/dashboard.php:155
+msgid "Heard"
+msgstr ""
+
+#: site/dashboard/dashboard.php:156
+msgid "Have I heard about this tool or concept?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:157
+msgid "Obeyed"
+msgstr ""
+
+#: site/dashboard/dashboard.php:158
+msgid "Have I obeyed this tool or concept?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:159
+msgid "Shared"
+msgstr ""
+
+#: site/dashboard/dashboard.php:160
+msgid "Have I shared this tool or concept?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:161
+msgid "Trained"
+msgstr ""
+
+#: site/dashboard/dashboard.php:162
+msgid "Have I trained outhers to share this tool or concept?"
+msgstr ""
+
+#: site/dev-section/dev.php:119 site/faq/faq.php:94 site/home/home.php:191
+#: site/profile/profile.php:166
+msgid "User Profile"
+msgstr ""
+
+#: site/dev-section/dev.php:120
+msgid "User Stage"
+msgstr ""
+
+#: site/dev-section/dev.php:121
+msgid "User Friends"
+msgstr ""
+
+#: site/dev-section/dev.php:122
+msgid "User Plans"
+msgstr ""
+
+#: site/dev-section/dev.php:123
+msgid "User HOST"
+msgstr ""
+
+#: site/dev-section/dev.php:124
+msgid "User Commitments"
+msgstr ""
+
+#: site/dev-section/dev.php:125
+msgid "User MAWL"
+msgstr ""
+
+#: site/faq/faq.php:92
+msgid "FAQ"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:91 site/pieces/pieces.php:106
+msgid "Watch This Video"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:92 site/pieces/pieces.php:107
+msgid "Ask Yourself"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:93 site/pieces/pieces.php:108
+msgid "Download Free Guidebook"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:94 site/pieces/pieces.php:109
+msgid "Listen and Read Along"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:119 site/parts/footer.php:9
+msgid "How to Follow Jesus"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:125
+msgid ""
+"Watch this important video explaining the 4 relationships of your new life"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:128
+msgid ""
+"The sections below, will teach you what it means to be a follower (disciple) "
+"of Jesus"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:132 site/home/home.php:252
+#: site/home/home.php:425 site/home/home.php:427
+#: site/login/login-template.php:374 site/login/login-template.php:465
+#: site/login/login-template.php:690 site/parts/nav.php:34
+msgid "Register"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:143
+msgid "What is a follower of Jesus?"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:163
+msgid "What are the activities of a follower of Jesus?"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:187
+msgid "Bible Reading"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:213
+msgid ""
+"It's a simple way to celebrate our intimate connection and ongoing "
+"relationship with Jesus. Learn a simple way to celebrate."
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:221
+msgid "Sacrifice and Suffering"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:227
+msgid "Eyes to See Where The Kingdom Isn’t"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:235
+msgid "How do I obey Jesus and help others become followers with me?"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:240
+msgid ""
+"Then Jesus came to them and said, \"All authority in heaven and on earth has "
+"been given to me. Therefore go and make disciples of all nations, baptizing "
+"them in the name of the Father and of the Son and of the Holy Spirit, and "
+"teaching them to obey everything I have commanded you. And surely I am with "
+"you always, to the very end of the age.\""
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:241
+msgid "Matthew 28:18-20"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:244
+msgid "Teaching others to obey and follow Jesus with you"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:247
+msgid "Learn what ducklings have to do with disciple-making"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:251
+msgid ""
+"Learn the training cycle and consider how it applies to disciple making."
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:263
+msgid "Speaking to people YOU KNOW about Jesus"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:278
+msgid "Speaking to people YOU DON'T KNOW about Jesus"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:285
+msgid ""
+"It's a simple way to obey God’s command to pray for others. And it's just "
+"what it sounds like — praying to God while walking around!"
+msgstr ""
+
+#: site/follow-jesus/follow-jesus.php:292
+msgid "What if many friends, family and others start following Jesus with me?"
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:92 site/get-a-coach/get-a-coach.php:120
+msgid "Get A Coach"
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:102
+msgid "Coaches"
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:103
+msgid ""
+"Our network of volunteer coaches are people like you, people who are "
+"passionate about loving God, loving outhers, and obeying the Greate "
+"Commision."
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:104
+msgid ""
+"A coach is someone who will come alongside you as you implement the Zume "
+"tools and training."
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:108
+msgid "It's Free"
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:109
+msgid "Coaching is free. You can opt out at any time."
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:112
+msgid "Local"
+msgstr ""
+
+#: site/get-a-coach/get-a-coach.php:113
+msgid ""
+"On submitting this request, we will do our best to connect you with a coach "
+"near you"
+msgstr ""
+
+#: site/guidebook/guidebook.php:92 site/parts/footer.php:13
+msgid "Guidebook"
+msgstr ""
+
+#: site/guidebook/guidebook.php:104
+msgid "Training Guidebook"
+msgstr ""
+
+#: site/guidebook/guidebook.php:107
+msgid ""
+"Zume Training is now available in a complete workbook. All the concepts, "
+"tools, discussion questions and challenges from the training now in the palm "
+"of your hands. QR codes for every session give you access to all the video "
+"content as well!"
+msgstr ""
+
+#: site/guidebook/guidebook.php:121
+msgid "Free Download (PDF)"
+msgstr ""
+
+#: site/guidebook/guidebook.php:122
+msgid "Order print copy"
+msgstr ""
+
+#: site/guidebook/guidebook.php:136
+msgid "Zume Lessons & Resources (PDF)"
+msgstr ""
+
+#: site/guidebook/guidebook.php:150 site/guidebook/guidebook.php:180
+#: site/guidebook/guidebook.php:210
+msgid "S.O.A.P.S Bible Study Guide"
+msgstr ""
+
+#: site/guidebook/guidebook.php:151 site/guidebook/guidebook.php:181
+#: site/guidebook/guidebook.php:211
+msgid "A great pattern for studying God's word"
+msgstr ""
+
+#: site/guidebook/guidebook.php:165 site/guidebook/guidebook.php:195
+#: site/guidebook/guidebook.php:225
+msgid "Prayer Wheel"
+msgstr ""
+
+#: site/guidebook/guidebook.php:166 site/guidebook/guidebook.php:196
+#: site/guidebook/guidebook.php:226
+msgid "Bible sized Prayer Wheel to take where ever you pray."
+msgstr ""
+
+#: site/guidebook/guidebook.php:246
+msgid "FULL ACCESS to Zume resources for all registered users."
+msgstr ""
+
+#: site/guidebook/guidebook.php:262
+msgid "Would you like access to all Zume Training resources?"
+msgstr ""
+
+#: site/home/home.php:92
+msgid "Languages"
+msgstr ""
+
+#: site/home/home.php:105
+msgctxt "Disciple Making Training"
+msgid "Disciple Making"
+msgstr ""
+
+#: site/home/home.php:106
+msgctxt "Disciple Making Training"
+msgid "Training"
+msgstr ""
+
+#: site/home/home.php:107
+msgctxt "Disciple Making Training for groups of Jesus followers"
+msgid "for groups of Jesus followers"
+msgstr ""
+
+#: site/home/home.php:116 site/login/login-template.php:589
+#: site/login/login-template.php:638 site/login/login-template.php:713
+#: site/parts/nav.php:33
+msgid "Login"
+msgstr ""
+
+#: site/home/home.php:133
+msgid "Becoming more like Jesus... Together"
+msgstr ""
+
+#: site/home/home.php:136
+msgid "Overview"
+msgstr ""
+
+#: site/home/home.php:138
+msgid "20 hours of Training"
+msgstr ""
+
+#: site/home/home.php:139
+msgid "32 Concepts and Skills"
+msgstr ""
+
+#: site/home/home.php:140
+msgid "Group Discussions"
+msgstr ""
+
+#: site/home/home.php:141
+msgid "Practice-Oriented"
+msgstr ""
+
+#: site/home/home.php:142
+msgid "Self-Facilitated"
+msgstr ""
+
+#: site/home/home.php:148
+msgid "Free. Anytime. Anywhere."
+msgstr ""
+
+#: site/home/home.php:152
+msgid "Gain insight into..."
+msgstr ""
+
+#: site/home/home.php:157
+msgid "Being A Disciple"
+msgstr ""
+
+#: site/home/home.php:159
+msgid "What's a disciple?"
+msgstr ""
+
+#: site/home/home.php:160
+msgid "What's a Church?"
+msgstr ""
+
+#: site/home/home.php:161
+msgid "Keys to spiritual growth"
+msgstr ""
+
+#: site/home/home.php:162
+msgid "Personal Bible Study Habits"
+msgstr ""
+
+#: site/home/home.php:163
+msgid "Improve Your Prayer Life"
+msgstr ""
+
+#: site/home/home.php:164
+msgid "Learn to Live Out Your Faith"
+msgstr ""
+
+#: site/home/home.php:171
+msgid "Making Disciples"
+msgstr ""
+
+#: site/home/home.php:173
+msgid "Sharing God's story"
+msgstr ""
+
+#: site/home/home.php:174
+msgid "Telling Your Story"
+msgstr ""
+
+#: site/home/home.php:175
+msgid "Engaging Seekers"
+msgstr ""
+
+#: site/home/home.php:176
+msgid "Leading as Simple Church"
+msgstr ""
+
+#: site/home/home.php:177
+msgid "Vision for Discipleship"
+msgstr ""
+
+#: site/home/home.php:178
+msgid "Plan of Implementation"
+msgstr ""
+
+#: site/home/home.php:183 site/home/home.php:248
+msgid "I'm Ready!"
+msgstr ""
+
+#: site/home/home.php:196
+msgid "Ordinary People. Simple Steps."
+msgstr ""
+
+#: site/home/home.php:207
+msgid "Watch"
+msgstr ""
+
+#: site/home/home.php:241
+msgid "More about zume"
+msgstr ""
+
+#: site/home/home.php:272
+msgid "Real people ... real stories."
+msgstr ""
+
+#: site/home/home.php:330
+msgid "Zume = Yeast"
+msgstr ""
+
+#: site/home/home.php:336
+msgid ""
+"Exercitation laboris consectetur et exercitation esse voluptate. Commodo id "
+"est duis aliquip. Excepteur veniam nostrud aliquip id in cupidatat aliquip "
+"non labore officia velit incididunt. Cupidatat commodo excepteur labore "
+"consectetur."
+msgstr ""
+
+#: site/home/home.php:341
+msgid "Ready to take your next steps?"
+msgstr ""
+
+#: site/home/home.php:345
+msgid "Register Free."
+msgstr ""
+
+#: site/home/home.php:349
+msgid "Gather a Group."
+msgstr ""
+
+#: site/home/home.php:353
+msgid "Change the World."
+msgstr ""
+
+#: site/home/home.php:356
+msgid "Get started!"
+msgstr ""
+
+#: site/home/home.php:389
+msgid "Explore the Zume Guidebook."
+msgstr ""
+
+#: site/home/home.php:397
+msgid "Get the Zume Mobile App."
+msgstr ""
+
+#: site/home/home.php:407
+msgid "Are you ready? Get started today!"
+msgstr ""
+
+#: site/home/home.php:409
+msgid "Free!"
+msgstr ""
+
+#: site/home/home.php:414 site/home/home.php:417
+msgid "Get a coach"
+msgstr ""
+
+#: site/home/home.php:416
+msgid ""
+"Zume offers free online coaching by experienced practitioners who want to "
+"see you become a faithful disciple"
+msgstr ""
+
+#: site/home/home.php:420 site/home/home.php:422
+msgid "Join a training"
+msgstr ""
+
+#: site/home/home.php:421
+msgid ""
+"Join a LIVE online training facilitated by experienced practitioners. Grow "
+"and learn with other Jesus followers"
+msgstr ""
+
+#: site/home/home.php:426
+msgid ""
+"Zume registration is completely free! Customize your own training and "
+"facilitate with your friends, family and church"
+msgstr ""
+
+#: site/home/home.php:436
+msgid "Zume Discipleship Worldwide Progress Dashboard"
+msgstr ""
+
+#: site/home/home.php:437
+msgid "Real-time Impact Metrics from Across the Globe"
+msgstr ""
+
+#: site/home/home.php:442 site/home/home.php:443
+msgid "Registrations"
+msgstr ""
+
+#: site/home/home.php:446
+msgid "Total number of registrations in Zume training"
+msgstr ""
+
+#: site/home/home.php:452 site/home/home.php:453
+msgid "Group Leaders"
+msgstr ""
+
+#: site/home/home.php:456
+msgid ""
+"Total number of user accounts that have recorded a completed Zume.Training "
+"course"
+msgstr ""
+
+#: site/home/home.php:462 site/home/home.php:463
+msgid "Groups Formed"
+msgstr ""
+
+#: site/home/home.php:466
+msgid ""
+"Total number of registered training groups (many of which are reused by "
+"trainers) in Zume.Training"
+msgstr ""
+
+#: site/home/home.php:472 site/home/home.php:473
+msgid "Training Page Views"
+msgstr ""
+
+#: site/home/home.php:476
+msgid ""
+"Total number of online training sessions delivered primarily to unregistered "
+"users"
+msgstr ""
+
+#: site/home/home.php:482 site/home/home.php:483
+msgid "Countries & Territories"
+msgstr ""
+
+#: site/home/home.php:486
+msgid ""
+"Total number of countries and sovereign territories that have accessed Zume."
+"Training online"
+msgstr ""
+
+#: site/home/home.php:492
+msgid "Countries with Groups"
+msgstr ""
+
+#: site/home/home.php:493
+msgid "Countries & Territories with Groups"
+msgstr ""
+
+#: site/home/home.php:496
+msgid ""
+"Total number of conturies and sovereign territories that have had groups go "
+"through Zume.Training"
+msgstr ""
+
+#: site/kitchen-sink/kitchen-sink.php:90
+msgid "Kitchen Sink"
+msgstr ""
+
+#: site/login/login-template.php:68
+msgid ""
+"Your password reset link appears to be invalid. Please request a new link "
+"below."
+msgstr ""
+
+#: site/login/login-template.php:70
+msgid "Your password reset link has expired. Please request a new link below."
+msgstr ""
+
+#: site/login/login-template.php:80
+msgid "Missing form verification. Refresh and try again."
+msgstr ""
+
+#: site/login/login-template.php:81
+msgid "Missing username or email address."
+msgstr ""
+
+#: site/login/login-template.php:82
+msgid "ERROR: Enter a username or email address."
+msgstr ""
+
+#: site/login/login-template.php:83
+msgid "ERROR: There is no user registered with that email address."
+msgstr ""
+
+#: site/login/login-template.php:84
+msgid "ERROR: There is no user registered with that username."
+msgstr ""
+
+#: site/login/login-template.php:85
+msgid "ERROR: Invalid username or email."
+msgstr ""
+
+#: site/login/login-template.php:98 site/login/login-template.php:134
+msgid "Get New Password"
+msgstr ""
+
+#: site/login/login-template.php:123 site/login/login-template.php:124
+#: site/login/login-template.php:635
+msgid "Email Address"
+msgstr ""
+
+#: site/login/login-template.php:139
+msgid ""
+"Your password reset email has been sent. Check your email or junk mail for "
+"the link to reset your password."
+msgstr ""
+
+#: site/login/login-template.php:190 site/login/login-template.php:276
+#: site/login/login-template.php:455
+msgid "Passwords do not match. Please, try again."
+msgstr ""
+
+#: site/login/login-template.php:217
+#, php-format
+msgid "Your password is reset. %1$s You can login here %2$s"
+msgstr ""
+
+#: site/login/login-template.php:253 site/login/login-template.php:296
+msgid "Reset Password"
+msgstr ""
+
+#: site/login/login-template.php:264
+msgid "Password Required"
+msgstr ""
+
+#: site/login/login-template.php:265 site/login/login-template.php:444
+#: site/login/login-template.php:445 site/login/login-template.php:636
+#: site/login/login-template.php:769
+msgid "Password"
+msgstr ""
+
+#: site/login/login-template.php:267
+msgid "Please choose a stronger password. This one is too weak."
+msgstr ""
+
+#: site/login/login-template.php:273 site/login/login-template.php:274
+#: site/login/login-template.php:452 site/login/login-template.php:453
+msgid "Re-enter Password"
+msgstr ""
+
+#: site/login/login-template.php:365
+msgid "Hello!"
+msgstr ""
+
+#: site/login/login-template.php:366
+msgid "Create a Zume Account"
+msgstr ""
+
+#: site/login/login-template.php:400
+msgid "Or"
+msgstr ""
+
+#: site/login/login-template.php:402
+msgid "Register with Email"
+msgstr ""
+
+#: site/login/login-template.php:408 site/wizard/wizard.php:99
+msgid "Back"
+msgstr ""
+
+#: site/login/login-template.php:437 site/login/login-template.php:438
+#: site/profile/profile.php:128 site/wizard/wizard.php:118
+#: zume-training-system.php:275
+msgid "Email"
+msgstr ""
+
+#: site/login/login-template.php:440
+msgid "Badly formatted email address"
+msgstr ""
+
+#: site/login/login-template.php:447
+msgid "Password is not strong enough"
+msgstr ""
+
+#: site/login/login-template.php:459
+msgid "There are some errors in your form."
+msgstr ""
+
+#: site/login/login-template.php:570
+msgid "User action confirmed."
+msgstr ""
+
+#: site/login/login-template.php:582
+msgid "Welcome back!"
+msgstr ""
+
+#: site/login/login-template.php:612
+msgid "or sign in with email"
+msgstr ""
+
+#: site/login/login-template.php:618
+msgid "Username or password does not match. Try again."
+msgstr ""
+
+#: site/login/login-template.php:637 site/login/login-template.php:770
+msgid "Remember Me"
+msgstr ""
+
+#: site/login/login-template.php:689
+msgid "Don't have an account?"
+msgstr ""
+
+#: site/login/login-template.php:701
+msgid "Lost your password?"
+msgstr ""
+
+#: site/login/login-template.php:712
+msgid "Already have an account?"
+msgstr ""
+
+#: site/login/login-template.php:768
+msgid "Username or Email Address"
+msgstr ""
+
+#: site/login/login-template.php:771
+msgid "Log In"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:137
+msgid "Empowering Disciples. Anytime... Anywhere with the Zume App."
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:139
+msgid "Zume Training App"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:141
+msgid "Access the full training wherever you go"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:146 site/mobile-app/mobile-app.php:170
+msgid "Get it on Google Play"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:161
+msgid "Offline App"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:163
+msgid "Full Training with no internet required"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:164
+msgid "Download the course and video content to your phone"
+msgstr ""
+
+#: site/mobile-app/mobile-app.php:165
+msgid "Great for areas where internet access is restricted or limited"
+msgstr ""
+
+#: site/parts/footer.php:14
+msgid "Mobile App"
+msgstr ""
+
+#: site/parts/footer.php:15
+msgid "Donate"
+msgstr ""
+
+#: site/parts/footer.php:44 site/parts/footer.php:51 site/parts/footer.php:58
+msgid "Close"
+msgstr ""
+
+#: site/parts/nav.php:11
+msgid "Dev"
+msgstr ""
+
+#: site/parts/nav.php:15
+msgid "DTools"
+msgstr ""
+
+#: site/profile/profile.php:115
+msgid "Profile"
+msgstr ""
+
+#: site/profile/profile.php:124 site/wizard/wizard.php:106
+#: site/wizard/wizard.php:120 zume-training-system.php:277
+msgid "Phone"
+msgstr ""
+
+#: site/profile/profile.php:132 site/wizard/wizard.php:107
+msgid "City"
+msgstr ""
+
+#: site/profile/profile.php:157
+msgid "Save"
+msgstr ""
+
+#: site/profile/profile.php:163
+msgid "Logout"
+msgstr ""
+
+#: site/resources/resources.php:92
+msgid "Resources"
+msgstr ""
+
+#: site/share/share.php:29
+msgid "Copy this link and send it to your friends."
+msgstr ""
+
+#: site/wizard/wizard.php:96
+msgid "Bad Wizard"
+msgstr ""
+
+#: site/wizard/wizard.php:97
+msgid "You have fallen in with some very bad wizards!"
+msgstr ""
+
+#: site/wizard/wizard.php:98
+msgid "Get back home"
+msgstr ""
+
+#: site/wizard/wizard.php:101
+msgid "Skip"
+msgstr ""
+
+#: site/wizard/wizard.php:103
+msgid "No locations found"
+msgstr ""
+
+#: site/wizard/wizard.php:105
+msgid "Complete your profile"
+msgstr ""
+
+#: site/wizard/wizard.php:109
+msgid "What is your name?"
+msgstr ""
+
+#: site/wizard/wizard.php:110
+msgid "What is your phone number?"
+msgstr ""
+
+#: site/wizard/wizard.php:111
+msgid "Phone number can only contain numbers, brackets and hyphens"
+msgstr ""
+
+#: site/wizard/wizard.php:112
+msgid "What city do you live in?"
+msgstr ""
+
+#: site/wizard/wizard.php:113
+msgid "This is your approximate location."
+msgstr ""
+
+#: site/wizard/wizard.php:117
+msgid "What is your contact preference?"
+msgstr ""
+
+#: site/wizard/wizard.php:119 zume-training-system.php:276
+msgid "Text"
+msgstr ""
+
+#: site/wizard/wizard.php:121 zume-training-system.php:278
+msgid "Whatsapp"
+msgstr ""
+
+#: site/wizard/wizard.php:122 zume-training-system.php:279
+msgid "Signal"
+msgstr ""
+
+#: site/wizard/wizard.php:123 zume-training-system.php:280
+msgid "Telegram"
+msgstr ""
+
+#: site/wizard/wizard.php:124
+msgid "Facebook Messenger"
+msgstr ""
+
+#: site/wizard/wizard.php:125
+msgid "What is your language preference?"
+msgstr ""
+
+#: site/wizard/wizard.php:127
+msgid "How can we serve you?"
+msgstr ""
+
+#: site/wizard/wizard.php:128
+msgid "Coaching"
+msgstr ""
+
+#: site/wizard/wizard.php:129
+msgid "Technical Assistance"
+msgstr ""
+
+#: site/wizard/wizard.php:130
+msgid "Question about implementing the training"
+msgstr ""
+
+#: site/wizard/wizard.php:131
+msgid "Question about the content"
+msgstr ""
+
+#: site/wizard/wizard.php:132
+msgid "Help with what to do after starting a group"
+msgstr ""
+
+#: site/wizard/wizard.php:134
+msgid "Please give a response to this question"
+msgstr ""
+
+#: site/wizard/wizard.php:135
+msgid ""
+"Request Submitted, we will do our best to connect you with a coach near you."
+msgstr ""
+
+#: site/wizard/wizard.php:136
+msgid "Sorry. We were unable to submit your request. Please try again later."
+msgstr ""
+
+#: site/wizard/wizard.php:137
+msgid "You have already requested a coach"
+msgstr ""
+
+#: site/wizard/wizard.php:138
+msgid "Error connecting with a coach"
+msgstr ""
+
+#: site/wizard/wizard.php:139
+msgid "Connecting you to a Coach"
+msgstr ""
+
+#: site/wizard/wizard.php:140 site/wizard/wizard.php:144
+#: site/wizard/wizard.php:158 site/wizard/wizard.php:165
+msgid "Please wait while we connect you"
+msgstr ""
+
+#: site/wizard/wizard.php:143
+msgid "Joining Plan"
+msgstr ""
+
+#: site/wizard/wizard.php:145
+msgid "The training link is broken. Please try again."
+msgstr ""
+
+#: site/wizard/wizard.php:146
+#, php-format
+msgid "Successfully joined training %s"
+msgstr ""
+
+#: site/wizard/wizard.php:147
+msgid "Something went wrong while joining the plan"
+msgstr ""
+
+#: site/wizard/wizard.php:151
+msgid "Timezone"
+msgstr ""
+
+#: site/wizard/wizard.php:154
+msgid "There are currently no public trainings available."
+msgstr ""
+
+#: site/wizard/wizard.php:157
+msgid "Connecting with friend"
+msgstr ""
+
+#: site/wizard/wizard.php:159
+msgid "The friend link is broken. Please try again."
+msgstr ""
+
+#: site/wizard/wizard.php:160
+#, php-format
+msgid "Successfully connected with friend %s"
+msgstr ""
+
+#: site/wizard/wizard.php:161
+msgid "Something went wrong while connecting with friend"
+msgstr ""
+
+#: site/wizard/wizard.php:164
+msgid "Checking in"
+msgstr ""
+
+#: site/wizard/wizard.php:166
+msgid "The checkin link is broken. Please try again."
+msgstr ""
+
+#: site/wizard/wizard.php:167
+msgid "Successfully checked in"
+msgstr ""
+
+#: site/wizard/wizard.php:168
+msgid "Something went wrong while checking in"
+msgstr ""
+
+#: site/wizard/wizard.php:171
+msgid "Invite your friends to join your training"
+msgstr ""
+
+#: site/wizard/wizard.php:172
+msgid ""
+"Share the link below with your friends so that they can join your training."
+msgstr ""
+
+#: site/wizard/wizard.php:173
+msgid "Join my zume plan"
+msgstr ""
+
+#: zume-training-system.php:170
+msgid "Someone has requested a password reset for the following account:"
+msgstr ""
+
+#. translators: %s: site name
+#: zume-training-system.php:172
+#, php-format
+msgid "Site Name: %s"
+msgstr ""
+
+#. translators: %s: user login
+#: zume-training-system.php:174
+#, php-format
+msgid "Username: %s"
+msgstr ""
+
+#: zume-training-system.php:175
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr ""
+
+#: zume-training-system.php:176
+msgid "To reset your password, visit the following address:"
+msgstr ""
+
+#. translators: Password reset email subject. %s: Site name
+#: zume-training-system.php:194
+#, php-format
+msgid "[%s] Password Reset"
+msgstr ""
+
+#: zume-training-system.php:210
+msgid "Profile Details"
+msgstr ""
+
+#: zume-training-system.php:222
+msgid "User Email"
+msgstr ""
+
+#: zume-training-system.php:231
+msgid "User Phone"
+msgstr ""
+
+#: zume-training-system.php:239
+msgid "User Timezone"
+msgstr ""
+
+#: zume-training-system.php:247
+msgid "User Friend Key"
+msgstr ""
+
+#: zume-training-system.php:255
+msgid "User UI Language"
+msgstr ""
+
+#: zume-training-system.php:263
+msgid "User Preferred Language"
+msgstr ""
+
+#: zume-training-system.php:271
+msgid "Preferred Contact Methods"
+msgstr ""
+
+#: zume-training-system.php:281
+msgid "Messenger"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Zúme - Training System"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://github.com/ZumeProject/zume-training-system"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Zume Training System"
+msgstr ""
