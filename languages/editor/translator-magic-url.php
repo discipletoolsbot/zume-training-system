@@ -222,10 +222,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     console.log('change')
                     console.log(e.target.value)
                     let lang = e.target.value;
-                    let url = window.location.href;
-                    let parts = url.split('/');
-                    parts[3] = lang;
-                    let new_url = parts.join('/');
+                    let base_url = window.location.origin;
+                    let magic_url = 'zume_app/translator/';
+                    let new_url = base_url + '/' + lang + '/' + magic_url;
+                    let params = window.location.search;
+                    if ( params ) {
+                        new_url += params;
+                    }
                     console.log(new_url)
                     window.location.href = new_url;
                 } )
@@ -513,6 +516,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $lang = $zume_languages[$this->lang];
         $switch = switch_to_locale($lang['locale']);
 
+        dt_write_log( $lang['locale'] );
+        dt_write_log($switch);
+        dt_write_log( is_locale_switched() );
+
         ?>
 
        <div style="
@@ -581,7 +588,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     let type = parts[0];
                     let session = parts[1];
                     if ( ! session ) {
-                        window.location.href = `/zume_app/translators/?tab=view_course`;
+                        window.location.href = `/zume_app/translator/?tab=view_course`;
                     }
                     window.location.href = `?tab=view_course&type=${type}&session=${session}`;
                 });
