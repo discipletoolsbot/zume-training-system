@@ -251,22 +251,24 @@ function zume_course_slide_template( $slide ) {
             ?>
             <div class="slides-card">
                 <div class="stage <?php echo $slide['key']; ?>-bar"><?php echo $slide['progress_bar']; ?></div>
-                <div style="padding-top:100px;">
+                <div class="slide-row">
                     <div class="left-4-obey">
                         <div class="left-obey-title">
                             <img src="https://placehold.co/60x60/png" /> <span class="title"><?php echo $slide['left'][0]; ?></span>
                         </div>
                     </div>
                     <div class="right-8-obey">
-                        <div class=""><p><?php echo $slide['right'][0]; ?></p></div>
+                        <p><?php echo $slide['right'][0]; ?></p>
                     </div>
                 </div>
-                <div>
+                <div class="slide-row">
                     <div class="left-4-obey">
-                        <div class="left-obey-title "><img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][1]; ?></div>
+                        <div class="left-obey-title ">
+                            <img src="https://placehold.co/60x60/png" /> <?php echo $slide['left'][1]; ?>
+                        </div>
                     </div>
                     <div class="right-8-obey">
-                        <div class=""><p><?php echo $slide['right'][1]; ?></p></div>
+                        <p><?php echo $slide['right'][1]; ?></p>
                     </div>
                 </div>
             </div>
@@ -541,6 +543,10 @@ function zume_course_slide_css( $build ) {
             border: 3px solid #5dccff;
             max-width: 1000px;
             margin: 0 auto;
+        }
+        .slide-row {
+           width: 100%;
+           height: 320px;
         }
 
         /* progress bar row */

@@ -319,7 +319,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
 
             $fields['set_b_01'] = [
-                'name'        => 20 Session 01,
+                'name'        => '20 Session 01',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -527,7 +527,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 //            $post = DT_Posts::get_post( $this->post_type, get_the_ID() );
             ?>
             <div class="section-subheader">
-                <?php esc_html_e( 'Start date' ?>
+                <?php echo esc_html( 'Start date' ) ?>
             </div>
             <div>
                 <input type="date" id="start_date" class="" value="" />
