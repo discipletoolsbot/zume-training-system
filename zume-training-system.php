@@ -62,6 +62,17 @@ function zume_training() {
 }
 add_action( 'after_setup_theme', 'zume_training', 15 );
 
+//register the D.T Plugin
+add_filter( 'dt_plugins', function ( $plugins ){
+    $plugin_data = get_file_data( __FILE__, [ 'Version' => 'Version', 'Plugin Name' => 'Zume Training' ], false );
+    $plugins['zume-coaching'] = [
+        'plugin_url' => trailingslashit( plugin_dir_url( __FILE__ ) ),
+        'version' => $plugin_data['Version'] ?? null,
+        'name' => $plugin_data['Plugin Name'] ?? null,
+    ];
+    return $plugins;
+});
+
 
 class Zume_Training {
     private static $_instance = null;
@@ -560,20 +571,3 @@ class Zume_Training {
         return null;
     }
 }
-add_action( 'plugins_loaded', function () {
-    if ( is_admin() && !( is_multisite() && class_exists( 'DT_Multisite' ) ) || wp_doing_cron() ){
-        // Check for plugin updates
-        if ( ! class_exists( 'Puc_v4_Factory' ) ) {
-            if ( file_exists( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' ) ) {
-                require( get_template_directory() . '/dt-core/libraries/plugin-update-checker/plugin-update-checker.php' );
-            }
-        }
-        if ( class_exists( 'Puc_v4_Factory' ) ){
-            Puc_v4_Factory::buildUpdateChecker(
-                'https://raw.githubusercontent.com/ZumeProject/zume-training-system/master/version-control.json',
-                __FILE__,
-                'zume-training-system'
-            );
-        }
-    }
-} );
