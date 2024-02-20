@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-02-16 11:25-0700\n"
+"POT-Creation-Date: 2024-02-19 20:47-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -83,10 +83,6 @@ msgstr ""
 msgid "QR Code"
 msgstr ""
 
-#: classes/post-types/posttype-plans.php:530
-msgid "Start date"
-msgstr "开始"
-
 #: classes/utilities/share-links.php:7 site/dashboard/dashboard.php:126
 #: site/dev-section/dev.php:91 site/share/share.php:30
 msgid "Thanks!"
@@ -135,6 +131,7 @@ msgid ""
 msgstr "你将看见神如何使用平凡人借着微不足道的小事造成巨大的影响。"
 
 #: globals.php:1214 site/course/0-sesssion-data.php:81
+#: site/course/course-content.php:2545 site/course/course-content.php:2561
 #: site/follow-jesus/follow-jesus.php:152
 msgid "Simple Definition of Disciple and Church"
 msgstr "门徒与教会的简单定义"
@@ -146,7 +143,8 @@ msgid ""
 "church."
 msgstr "成为门徒﹑又使人成为门徒的精髓意义为何？教会又是什么？"
 
-#: globals.php:1223 site/follow-jesus/follow-jesus.php:174
+#: globals.php:1223 site/course/course-content.php:2546
+#: site/course/course-content.php:2562 site/follow-jesus/follow-jesus.php:174
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "属灵呼吸是聆听并遵行神的吩咐"
 
@@ -260,7 +258,8 @@ msgid ""
 msgstr "学习如何在三分钟内跟人分享自己的故事，见证耶稣如何改变了你的生命。"
 
 #: globals.php:1313 site/course/course-content.php:930
-#: site/course/course-content.php:1141 site/follow-jesus/follow-jesus.php:156
+#: site/course/course-content.php:1141 site/course/course-content.php:3076
+#: site/course/course-content.php:3093 site/follow-jesus/follow-jesus.php:156
 msgid "Vision Casting the Greatest Blessing"
 msgstr "异象：「最好的祝福」"
 
@@ -283,6 +282,7 @@ msgstr "小鸭？跟建造门徒有什么关联？"
 
 #: globals.php:1331 site/course/course-content.php:932
 #: site/course/course-content.php:1063 site/course/course-content.php:1143
+#: site/course/course-content.php:3536 site/course/course-content.php:3555
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "看见神国还未临到的地方"
 
@@ -367,6 +367,7 @@ msgstr "培訓循環不息"
 
 #: globals.php:1403 site/course/course-content.php:1804
 #: site/course/course-content.php:1821 site/course/course-content.php:1880
+#: site/course/course-content.php:4092 site/course/course-content.php:4107
 #: site/follow-jesus/follow-jesus.php:305
 msgid "Leadership Cells"
 msgstr "带领者培育小组"
@@ -380,7 +381,8 @@ msgstr ""
 "蒙神呼召来带领别人的人，可以在这带领者培育小组里，学习以服侍他人而带出领导"
 "力。"
 
-#: globals.php:1412 site/follow-jesus/follow-jesus.php:254
+#: globals.php:1412 site/course/course-content.php:4198
+#: site/course/course-content.php:4214 site/follow-jesus/follow-jesus.php:254
 msgid "Expect Non-Sequential Growth"
 msgstr "多管齐下的增长"
 
@@ -405,6 +407,7 @@ msgstr "倍增很重要，快速地倍增更重要！让我们一起来看看为
 
 #: globals.php:1430 site/course/course-content.php:1976
 #: site/course/course-content.php:2068 site/course/course-content.php:2164
+#: site/course/course-content.php:4200 site/course/course-content.php:4216
 #: site/follow-jesus/follow-jesus.php:208
 msgid "Always Part of Two Churches"
 msgstr "两个教会并进"
@@ -414,7 +417,8 @@ msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "学习如何在两个教会既「去」也「留」同时进行，来促进具体遵守主的使命。"
 
 #: globals.php:1439 site/course/course-content.php:2278
-#: site/course/course-content.php:2433
+#: site/course/course-content.php:2433 site/course/course-content.php:4309
+#: site/course/course-content.php:4323
 msgid "Three-Month Plan"
 msgstr "三个月规划"
 
@@ -428,7 +432,8 @@ msgstr ""
 
 #: globals.php:1448 site/course/course-content.php:1980
 #: site/course/course-content.php:2104 site/course/course-content.php:2125
-#: site/course/course-content.php:2168 site/follow-jesus/follow-jesus.php:301
+#: site/course/course-content.php:2168 site/course/course-content.php:4416
+#: site/course/course-content.php:4431 site/follow-jesus/follow-jesus.php:301
 msgid "Coaching Checklist"
 msgstr "教练指南"
 
@@ -440,7 +445,8 @@ msgstr ""
 "这是个很棒的工具﹐可以有效评估自己在使人成为倍增门徒的事工上有什么优缺点。"
 
 #: globals.php:1457 site/course/course-content.php:2271
-#: site/course/course-content.php:2291 site/follow-jesus/follow-jesus.php:309
+#: site/course/course-content.php:2291 site/course/course-content.php:4417
+#: site/course/course-content.php:4432 site/follow-jesus/follow-jesus.php:309
 msgid "Leadership in Networks"
 msgstr "领袖联络网"
 
@@ -453,7 +459,8 @@ msgstr ""
 "庭。"
 
 #: globals.php:1466 site/course/course-content.php:2277
-#: site/course/course-content.php:2397 site/follow-jesus/follow-jesus.php:297
+#: site/course/course-content.php:2397 site/course/course-content.php:4522
+#: site/course/course-content.php:4536 site/follow-jesus/follow-jesus.php:297
 msgid "Peer Mentoring Groups"
 msgstr "同侪切磋机制"
 
@@ -466,7 +473,7 @@ msgstr ""
 "「同侪切磋机制」就是一群组成、并带领三合一小组聚会的人，遵循三合一聚会形式，"
 "来有效评估在你们负责的区域，所做的属灵成果。"
 
-#: globals.php:1475
+#: globals.php:1475 site/course/course-content.php:4628
 msgid "Four Fields Tool"
 msgstr "四个领域诊断图"
 
@@ -760,8 +767,8 @@ msgstr "重新导向训练"
 msgid "Connecting with a Coach."
 msgstr "与教练联系"
 
-#: site/about/about.php:260 site/dashboard/dashboard.php:131
-#: site/parts/footer.php:8
+#: site/about/about.php:260 site/course/course-content.php:4657
+#: site/dashboard/dashboard.php:131 site/parts/footer.php:8
 msgid "Get a Coach"
 msgstr "请安排教练"
 
@@ -968,6 +975,7 @@ msgstr "顺从"
 
 #: site/course/0-sesssion-data.php:112 site/course/10session.php:682
 #: site/course/20session.php:782 site/course/course-content.php:300
+#: site/course/course-content.php:2679
 msgid ""
 "Begin practicing the S.O.A.P.S. Bible reading between now and your next "
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
@@ -1228,6 +1236,7 @@ msgid "Congratulations on finishing Session 2! "
 msgstr "恭喜你们完成了第二堂课！"
 
 #: site/course/0-sesssion-data.php:329 site/course/course-content.php:557
+#: site/course/course-content.php:2894
 msgid ""
 "Spend time this week praying for five people from your List of 100 that you "
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
@@ -1258,7 +1267,7 @@ msgid ""
 msgstr "想到有谁也适合学习这个60分钟的「祷告循环圈」吗？把它分享到社群媒体上。"
 
 #: site/course/10session.php:365 site/course/20session.php:465
-#: site/course/course-content.php:22
+#: site/course/course-content.php:22 site/course/course-content.php:2503
 msgid "Session 1"
 msgstr "第一堂"
 
@@ -1611,6 +1620,8 @@ msgstr ""
 #: site/course/course-content.php:1340 site/course/course-content.php:1682
 #: site/course/course-content.php:1867 site/course/course-content.php:2134
 #: site/course/course-content.php:2345 site/course/course-content.php:2425
+#: site/course/course-content.php:3204 site/course/course-content.php:3670
+#: site/course/course-content.php:3987
 msgid "Activity Resource"
 msgstr "资源"
 
@@ -1675,14 +1686,14 @@ msgstr ""
 msgid "Tools heard in this session:"
 msgstr ""
 
-#: site/course/course-content.php:301
+#: site/course/course-content.php:301 site/course/course-content.php:2680
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
 
-#: site/course/course-content.php:326
+#: site/course/course-content.php:326 site/course/course-content.php:2598
 msgid "Session 2"
 msgstr "第二堂"
 
@@ -1763,7 +1774,8 @@ msgid "In this session, we will hear this concept:"
 msgstr ""
 
 #: site/course/course-content.php:382 site/course/course-content.php:400
-#: site/course/course-content.php:539
+#: site/course/course-content.php:539 site/course/course-content.php:2859
+#: site/course/course-content.php:2877
 msgid "Producer not Consumer"
 msgstr "「生产者」还是「消费者」？"
 
@@ -1828,7 +1840,7 @@ msgstr ""
 msgid "Obey"
 msgstr "已顺服"
 
-#: site/course/course-content.php:558
+#: site/course/course-content.php:558 site/course/course-content.php:2895
 msgid ""
 "Ask God who He wants you to share the List of 100 tool with. Share this "
 "person’s name with the group before you go and reach out to them before the "
@@ -1837,26 +1849,36 @@ msgstr ""
 "求神让你明白接下来该去跟谁分享「百人关注名单」这个工具。在离开前﹐让组员也知"
 "道这个人的名字﹐然后在下一堂课以前，联系那个人并与他分享。"
 
-#: site/course/course-content.php:566
+#: site/course/course-content.php:566 site/course/course-content.php:4691
 msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "在我们的世代让世界充满"
 
-#: site/course/course-content.php:568
+#: site/course/course-content.php:568 site/course/course-content.php:4693
 msgid ""
 "Zume is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
 
-#: site/course/course-content.php:597
+#: site/course/course-content.php:597 site/course/course-content.php:2701
 msgid "Session 3"
 msgstr "第三堂"
 
 #: site/course/course-content.php:625 site/course/course-content.php:1212
-#: site/course/course-content.php:1405
+#: site/course/course-content.php:1405 site/course/course-content.php:2626
+#: site/course/course-content.php:2729 site/course/course-content.php:2833
+#: site/course/course-content.php:2945 site/course/course-content.php:3049
+#: site/course/course-content.php:3159 site/course/course-content.php:3282
+#: site/course/course-content.php:3388 site/course/course-content.php:3509
+#: site/course/course-content.php:3623 site/course/course-content.php:3721
+#: site/course/course-content.php:3834 site/course/course-content.php:3940
+#: site/course/course-content.php:4065 site/course/course-content.php:4172
+#: site/course/course-content.php:4283 site/course/course-content.php:4390
+#: site/course/course-content.php:4496 site/course/course-content.php:4602
 msgid "Pray as a group. Invite His Holy Spirit to lead your time together."
 msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领引导。"
 
 #: site/course/course-content.php:651 site/course/course-content.php:669
+#: site/course/course-content.php:3075 site/course/course-content.php:3092
 msgid "Spiritual Economy"
 msgstr "属灵的经济学"
 
@@ -1866,7 +1888,8 @@ msgid "The Gospel"
 msgstr "简述福音"
 
 #: site/course/course-content.php:656 site/course/course-content.php:783
-#: site/course/course-content.php:838
+#: site/course/course-content.php:838 site/course/course-content.php:3308
+#: site/course/course-content.php:3323
 msgid "Baptism"
 msgstr "给人施洗"
 
@@ -1948,6 +1971,7 @@ msgid ""
 msgstr "如果要你如此向别人讲说福音的故事﹐你觉得容不容易？"
 
 #: site/course/course-content.php:763 site/course/course-content.php:2415
+#: site/course/course-content.php:3975
 msgid "(45 min)"
 msgstr "45分钟"
 
@@ -2003,7 +2027,7 @@ msgstr ""
 msgid "The Spiritual Economy"
 msgstr "属灵的经济学"
 
-#: site/course/course-content.php:851
+#: site/course/course-content.php:851 site/course/course-content.php:3231
 msgid ""
 "Ask God who He wants you to train to use the Creation to Judgment story (or "
 "some other way to share God’s Story). Share this person’s name with the "
@@ -2012,7 +2036,7 @@ msgstr ""
 "然后求神让你明白﹐接下来应当去装备谁来用简述「从创造到审判的故事」﹙或者其它"
 "方式﹚来分享福音﹐在离开小组之前把这个人的名字告知组员。"
 
-#: site/course/course-content.php:852
+#: site/course/course-content.php:852 site/course/course-content.php:3230
 msgid ""
 "Spend time this week practicing God’s Story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
@@ -2042,7 +2066,8 @@ msgid ""
 msgstr ""
 
 #: site/course/course-content.php:931 site/course/course-content.php:1026
-#: site/course/course-content.php:1142
+#: site/course/course-content.php:1142 site/course/course-content.php:3535
+#: site/course/course-content.php:3554
 msgid "Duckling Discipleship"
 msgstr "小鸭门徒训练法"
 
@@ -2052,7 +2077,8 @@ msgid "3-Minute Testimony"
 msgstr "三分钟见证"
 
 #: site/course/course-content.php:937 site/course/course-content.php:1102
-#: site/course/course-content.php:1148
+#: site/course/course-content.php:1148 site/course/course-content.php:3540
+#: site/course/course-content.php:3559
 msgid "The Lord’s Supper"
 msgstr "领圣餐"
 
@@ -2179,7 +2205,7 @@ msgstr ""
 "这个星期﹐请拨出时间练习讲述你个人的三分钟见证﹐接着从你的「百人关注名单」"
 "中﹐挑出至少一位「非信徒」或「不清楚」的人，向他分享你的见证。"
 
-#: site/course/course-content.php:1162
+#: site/course/course-content.php:1162 site/course/course-content.php:3458
 msgid ""
 "Ask God who He wants you to train with the 3-Minute Testimony tool. Share "
 "this person’s name with the group before you go."
@@ -2187,20 +2213,23 @@ msgstr ""
 "接着向神求问祂要你跟谁分享「三分钟见证」。分享之前，请先让小组知道这个人的名"
 "字。"
 
-#: site/course/course-content.php:1184
+#: site/course/course-content.php:1184 site/course/course-content.php:2917
 msgid "Session 5"
 msgstr "第五堂"
 
 #: site/course/course-content.php:1238 site/course/course-content.php:1278
+#: site/course/course-content.php:3747 site/course/course-content.php:3765
 msgid "Person of Peace"
 msgstr "找出平安之子"
 
-#: site/course/course-content.php:1242
+#: site/course/course-content.php:1242 site/course/course-content.php:3751
+#: site/course/course-content.php:3769
 msgid "B.L.E.S.S. Prayer"
 msgstr "操练 BLESS 祝福祷告法﹙15分钟﹚"
 
 #: site/course/course-content.php:1243 site/course/course-content.php:1256
-#: site/course/course-content.php:1331
+#: site/course/course-content.php:1331 site/course/course-content.php:3649
+#: site/course/course-content.php:3661
 msgid "Prayer Walking"
 msgstr "行走祷告"
 
@@ -2261,19 +2290,19 @@ msgstr ""
 msgid "(60 - 90 min)"
 msgstr "90分钟"
 
-#: site/course/course-content.php:1333
+#: site/course/course-content.php:1333 site/course/course-content.php:3663
 msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr "将大家分成两到三人的小组﹐去附近社区操练「行走祷告」。"
 
-#: site/course/course-content.php:1334
+#: site/course/course-content.php:1334 site/course/course-content.php:3664
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
 msgstr "你们可以在聚会地点就近进行﹐或者计划好到特定地点做「行走祷告」。"
 
-#: site/course/course-content.php:1335
+#: site/course/course-content.php:1335 site/course/course-content.php:3665
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr "安排60到90分钟的时间，由神带领来进行这个操练。"
 
@@ -2294,7 +2323,7 @@ msgid ""
 "walk to be open to His work."
 msgstr ""
 
-#: site/course/course-content.php:1377
+#: site/course/course-content.php:1377 site/course/course-content.php:3021
 msgid "Session 6"
 msgstr "第六堂"
 
@@ -2303,11 +2332,13 @@ msgid "Faithfulness is Better than Knowledge"
 msgstr "忠心比知识更重要"
 
 #: site/course/course-content.php:1433 site/course/course-content.php:1620
-#: site/course/course-content.php:1978
+#: site/course/course-content.php:1978 site/course/course-content.php:2861
+#: site/course/course-content.php:3538 site/course/course-content.php:3749
 msgid "And we will add this tool to our toolkit:"
 msgstr ""
 
-#: site/course/course-content.php:1448
+#: site/course/course-content.php:1448 site/course/course-content.php:3860
+#: site/course/course-content.php:3875
 msgid "Faithfulness"
 msgstr "要忠心"
 
@@ -2355,7 +2386,7 @@ msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 msgstr ""
 "「三合一小组」聚会能不能当成微型教会来看待？为什么可以？或为什么不可以？"
 
-#: site/course/course-content.php:1537
+#: site/course/course-content.php:1537 site/course/course-content.php:3889
 msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
@@ -2363,7 +2394,7 @@ msgstr ""
 "在这个星期拨出时间操练你们在「三合一小组」要求的顺服﹑训练﹑分享里面所承诺的"
 "事项。"
 
-#: site/course/course-content.php:1538
+#: site/course/course-content.php:1538 site/course/course-content.php:3890
 msgid ""
 "Pray and ask God who He wants you to share the 3/3 Group format with before "
 "your group meets again. Share this person’s name with the group before you "
@@ -2372,7 +2403,7 @@ msgstr ""
 "祷告寻求在下次聚会之前﹐你要跟谁分享「三合一小组聚会」模式﹐在离开之前把这个"
 "人的名字告知组员。"
 
-#: site/course/course-content.php:1564
+#: site/course/course-content.php:1564 site/course/course-content.php:3131
 msgid "Session 7"
 msgstr "第七堂"
 
@@ -2416,6 +2447,7 @@ msgid "What would it look like to train someone like that?"
 msgstr "以这个方式去装备人﹐会产生什么果效？"
 
 #: site/course/course-content.php:1673 site/course/course-content.php:1858
+#: site/course/course-content.php:3966 site/course/course-content.php:4000
 msgid "3/3 Group Meeting"
 msgstr "三合一小组聚会模式"
 
@@ -2447,15 +2479,22 @@ msgstr "你最喜欢「三合一小组」聚会的哪些方面？为什么？"
 msgid "What was the most challenging? Why?"
 msgstr "你们认为最有挑战的是什么？为什么？"
 
-#: site/course/course-content.php:1708
+#: site/course/course-content.php:1708 site/course/course-content.php:2875
+#: site/course/course-content.php:3763 site/course/course-content.php:4321
+#: site/course/course-content.php:4534
 msgid "Concept heard in this session:"
 msgstr ""
 
-#: site/course/course-content.php:1712
+#: site/course/course-content.php:1712 site/course/course-content.php:2664
+#: site/course/course-content.php:2767 site/course/course-content.php:2879
+#: site/course/course-content.php:2983 site/course/course-content.php:3215
+#: site/course/course-content.php:3321 site/course/course-content.php:3442
+#: site/course/course-content.php:3557 site/course/course-content.php:3767
+#: site/course/course-content.php:3998
 msgid "Tool heard in this session:"
 msgstr ""
 
-#: site/course/course-content.php:1727
+#: site/course/course-content.php:1727 site/course/course-content.php:4120
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
@@ -2467,7 +2506,7 @@ msgid ""
 "(fifth) generation."
 msgstr ""
 
-#: site/course/course-content.php:1750
+#: site/course/course-content.php:1750 site/course/course-content.php:3254
 msgid "Session 8"
 msgstr "第八堂"
 
@@ -2538,7 +2577,7 @@ msgstr ""
 "祷告寻求在下次聚会之前﹐你要跟哪一位分享「带领者培育小组」这个工具﹐在离开之"
 "前别忘了把这个人的名字告知组员。"
 
-#: site/course/course-content.php:1920
+#: site/course/course-content.php:1920 site/course/course-content.php:3360
 msgid "Session 9"
 msgstr "第九堂"
 
@@ -2552,6 +2591,7 @@ msgid "Non-Sequential Growth"
 msgstr "多管齐下的增长"
 
 #: site/course/course-content.php:1975 site/course/course-content.php:2030
+#: site/course/course-content.php:4199 site/course/course-content.php:4215
 msgid "Pace"
 msgstr "加快步调"
 
@@ -2671,7 +2711,7 @@ msgid ""
 "another believer you know."
 msgstr ""
 
-#: site/course/course-content.php:2203
+#: site/course/course-content.php:2203 site/course/course-content.php:3481
 msgid "Session 10"
 msgstr "第十堂"
 
@@ -2801,7 +2841,7 @@ msgstr "四个领域诊断图"
 msgid "Resource"
 msgstr "资源"
 
-#: site/course/course-content.php:2368
+#: site/course/course-content.php:2368 site/course/course-content.php:4629
 msgid "Generation Mapping"
 msgstr "微型教会族谱"
 
@@ -2929,6 +2969,489 @@ msgstr ""
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
+msgstr ""
+
+#: site/course/course-content.php:2542 site/course/course-content.php:3073
+#: site/course/course-content.php:3533 site/course/course-content.php:3858
+#: site/course/course-content.php:4089 site/course/course-content.php:4196
+#: site/course/course-content.php:4414
+msgid "In this session, we will discuss these concepts:"
+msgstr ""
+
+#: site/course/course-content.php:2575
+msgid ""
+"Practice sharing these definitions with a friend and pray for the Lord to "
+"ingrain them deeply within your heart and soul. Ask the Lord whom He would "
+"have you share them with."
+msgstr ""
+
+#: site/course/course-content.php:2576
+msgid ""
+"Share the definitions with whomever the Lord impresses on you to do so with. "
+"Then equip them to share it with someone else."
+msgstr ""
+
+#: site/course/course-content.php:2650 site/course/course-content.php:2753
+#: site/course/course-content.php:2969 site/course/course-content.php:3647
+msgid "In this session, we will add this tool to our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:2652 site/course/course-content.php:2666
+#, fuzzy
+#| msgid "S.O.A.P.S. Bible Reading"
+msgid "S.O.A.P.S Bible Reading"
+msgstr "SOAPS香皂读经法"
+
+#: site/course/course-content.php:2782
+msgid ""
+"Find an accountability partner (same gender) and begin meeting with them on "
+"a weekly basis."
+msgstr ""
+
+#: site/course/course-content.php:2783
+msgid ""
+"Ask the Lord to guide you to challenge at least five people you know who are "
+"believers to begin their own accountability group meeting, and then do so."
+msgstr ""
+
+#: site/course/course-content.php:2805
+msgid "Session 4"
+msgstr "第四堂"
+
+#: site/course/course-content.php:2857 site/course/course-content.php:3745
+#: site/course/course-content.php:4307 site/course/course-content.php:4520
+msgid "In this session, we will discuss the concept:"
+msgstr ""
+
+#: site/course/course-content.php:2863 site/course/course-content.php:2881
+msgid "Relational Stewardship - List of 100"
+msgstr "人际网络的好管家——百人关注名单"
+
+#: site/course/course-content.php:2971 site/course/course-content.php:2985
+#, fuzzy
+#| msgid "Prayer Cycle"
+msgid "The Prayer Cycle"
+msgstr "祷告循环圈"
+
+#: site/course/course-content.php:2998
+msgid "Use the prayer wheel to guide you as you pray for an hour."
+msgstr ""
+
+#: site/course/course-content.php:2999
+msgid ""
+"Share the prayer wheel with whomever the Lord impresses on you to do so "
+"with.  Challenge them to share it with others as well."
+msgstr ""
+
+#: site/course/course-content.php:3077 site/course/course-content.php:3094
+#, fuzzy
+#| msgid "The Gospel and How to Share It"
+msgid "The Gospel and How to Share it"
+msgstr "如何分享「福音」"
+
+#: site/course/course-content.php:3107
+msgid ""
+"If you know anyone who follows Jesus but does not share their faith, "
+"challenge them to do so by sharing with them about the Greatest Blessing. "
+"Otherwise, practice sharing about it with a friend."
+msgstr ""
+
+#: site/course/course-content.php:3108
+#, fuzzy
+#| msgid ""
+#| "Ask God who He wants you to share the List of 100 tool with. Share this "
+#| "person’s name with the group before you go and reach out to them before "
+#| "the next session."
+msgid ""
+"Ask God who He wants you to share with about the Greatest Blessing. Share "
+"this person’s name with the group before you go and reach out to them."
+msgstr ""
+"求神让你明白接下来该去跟谁分享「百人关注名单」这个工具。在离开前﹐让组员也知"
+"道这个人的名字﹐然后在下一堂课以前，联系那个人并与他分享。"
+
+#: site/course/course-content.php:3183 site/course/course-content.php:3412
+#: site/course/course-content.php:3964
+msgid "In this session, we will practice this tool in our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:3185 site/course/course-content.php:3217
+#, fuzzy
+#| msgid "Share the Gospel"
+msgid "Sharing the Gospel"
+msgstr "简述福音"
+
+#: site/course/course-content.php:3194 site/course/course-content.php:3423
+#, fuzzy
+#| msgid "(5 min)"
+msgid "(50 min)"
+msgstr "5分钟"
+
+#: site/course/course-content.php:3198
+#, fuzzy
+#| msgid ""
+#| "Break into groups of two or three and practice sharing your testimony."
+msgid ""
+"Break into groups of two or three people and practice telling God’s Story."
+msgstr ""
+"分享见证——分成两到三人的小组﹐彼此练习向别人分享你们自己的见证故事。﹙45分"
+"钟﹚"
+
+#: site/course/course-content.php:3199
+msgid ""
+"Choose 5 people from your List of 100. Have someone pretend to be each of "
+"those five people, and practice telling God’s Story in a way that you think "
+"will make sense to that particular person."
+msgstr ""
+
+#: site/course/course-content.php:3200
+msgid ""
+"After you have practiced, switch. Repetition will bring confidence. By the "
+"time your finished, you ‘ll be ready to share God’s Story."
+msgstr ""
+
+#: site/course/course-content.php:3306 site/course/course-content.php:4626
+msgid "In this session, we will add these tools to our toolkit:"
+msgstr ""
+
+#: site/course/course-content.php:3309 site/course/course-content.php:3324
+#, fuzzy
+#| msgid "3-Minute Testimony"
+msgid "The 3-Minute Testimony"
+msgstr "三分钟见证"
+
+#: site/course/course-content.php:3337
+msgid ""
+"If you know anyone who follows Jesus but has not been baptized, challenge "
+"them to do so and offer to baptize them."
+msgstr ""
+
+#: site/course/course-content.php:3338
+#, fuzzy
+#| msgid ""
+#| "Ask God who He wants you to share the List of 100 tool with. Share this "
+#| "person’s name with the group before you go and reach out to them before "
+#| "the next session."
+msgid ""
+"Ask God who He wants you to share with about baptism. Share this person’s "
+"name with the group before you go and reach out to them before the next "
+"session."
+msgstr ""
+"求神让你明白接下来该去跟谁分享「百人关注名单」这个工具。在离开前﹐让组员也知"
+"道这个人的名字﹐然后在下一堂课以前，联系那个人并与他分享。"
+
+#: site/course/course-content.php:3414 site/course/course-content.php:3444
+#, fuzzy
+#| msgid "Share your testimony"
+msgid "Sharing Your Testimony"
+msgstr "操练 - 分享自己的见证"
+
+#: site/course/course-content.php:3426
+#, fuzzy
+#| msgid "Share your testimony"
+msgid "Share Your Testimony"
+msgstr "操练 - 分享自己的见证"
+
+#: site/course/course-content.php:3427
+#, fuzzy
+#| msgid ""
+#| "Break into groups of two or three and practice sharing your testimony."
+msgid ""
+"Break into groups of two of three and practice sharing your Three-Minute "
+"Testimony."
+msgstr ""
+"分享见证——分成两到三人的小组﹐彼此练习向别人分享你们自己的见证故事。﹙45分"
+"钟﹚"
+
+#: site/course/course-content.php:3428
+msgid ""
+"Choose 5 people from your List of 100. Have someone pretend to be each of "
+"those five people, and practice your Testimony in a way that you think will "
+"make sense to that particular person."
+msgstr ""
+
+#: site/course/course-content.php:3429
+msgid ""
+"After you’ve practiced, switch. Pretend to be someone else’s five people "
+"from the list. By the time you’re finished, you should be able to tell your "
+"Testimony in about 3 minutes or less."
+msgstr ""
+
+#: site/course/course-content.php:3430
+msgid "Repetition builds confidence."
+msgstr ""
+
+#: site/course/course-content.php:3457
+#, fuzzy
+#| msgid ""
+#| "Spend time this week practicing your 3-Minute Testimony, and then share "
+#| "it with at least one person from your List of 100 that you marked as "
+#| "\"Unbeliever\" or \"Unknown.\""
+msgid ""
+"Spend time this week practicing your testimony, and then share it with at "
+"least one person from your List of 100 that you marked as \"Unbeliever\" or "
+"\"Unknown.\""
+msgstr ""
+"这个星期﹐请拨出时间练习讲述你个人的三分钟见证﹐接着从你的「百人关注名单」"
+"中﹐挑出至少一位「非信徒」或「不清楚」的人，向他分享你的见证。"
+
+#: site/course/course-content.php:3572
+msgid ""
+"Practice sharing this concept with a friend and pray for the Lord to ingrain "
+"it deeply within your heart and soul."
+msgstr ""
+
+#: site/course/course-content.php:3573
+msgid ""
+"Share \"Duckling Discipleship\" and \"Eyes to see where the Kingdom Isn’t\" "
+"with whomever the Lord impresses on you. Then equip them to share it with "
+"someone else."
+msgstr ""
+
+#: site/course/course-content.php:3595
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 11"
+msgstr "第一堂"
+
+#: site/course/course-content.php:3658
+#, fuzzy
+#| msgid "(60 - 90 min)"
+msgid "(60-90 min)"
+msgstr "90分钟"
+
+#: site/course/course-content.php:3693
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 12"
+msgstr "第一堂"
+
+#: site/course/course-content.php:3782
+msgid "Pray for someone in their presence using the BLESS pattern this week."
+msgstr ""
+
+#: site/course/course-content.php:3783
+msgid ""
+"Equip someone else to pray for others using the BLESS pattern and go with "
+"them as they do it."
+msgstr ""
+
+#: site/course/course-content.php:3806
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 13"
+msgstr "第一堂"
+
+#: site/course/course-content.php:3912
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 14"
+msgstr "第一堂"
+
+#: site/course/course-content.php:3978
+#, fuzzy
+#| msgid "3/3 Group"
+msgid "3/3 Group Format"
+msgstr "三合一小组"
+
+#: site/course/course-content.php:3980
+#, fuzzy
+#| msgid ""
+#| "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-"
+#| "in with each other. (30 min)"
+msgid ""
+"LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
+"with each other. (15 min)"
+msgstr ""
+"回顾——照着上一堂课的挑战﹐顺服﹑训练与分享步骤﹐来彼此评量鼓励做得如何。"
+
+#: site/course/course-content.php:3981
+#, fuzzy
+#| msgid ""
+#| "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
+#| "questions 1-4 during the Look Up section. (30 min)"
+msgid ""
+"LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
+"questions 1-4 during the Look Up section. (15 min)"
+msgstr "仰望—各组查考马可福音五1-20﹐并回答仰望单元里 a 到 d 的问题。"
+
+#: site/course/course-content.php:3982
+#, fuzzy
+#| msgid ""
+#| "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
+#| "develop how you will Obey, Train and Share. (30 min)"
+msgid ""
+"LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
+"develop how you will Obey, Train and Share. (15 min)"
+msgstr ""
+"前瞻—使用前瞻单元里 e 到 g 的问题﹐来进一步思考你们要怎么顺服﹑训练与分享。"
+
+#: site/course/course-content.php:4013
+msgid ""
+"Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
+"your list of 100 and ask God who you should invite to join you. Then invite "
+"them this week and trust God to build the group."
+msgstr ""
+
+#: site/course/course-content.php:4014
+#, fuzzy
+#| msgid ""
+#| "Pray and ask God who He wants you to share the 3/3 Group format with "
+#| "before your group meets again. Share this person’s name with the group "
+#| "before you go."
+msgid ""
+"Find someone to share the 3/3 Group format with before your group meets "
+"again. Share this person’s name with the group before you go."
+msgstr ""
+"祷告寻求在下次聚会之前﹐你要跟谁分享「三合一小组聚会」模式﹐在离开之前把这个"
+"人的名字告知组员。"
+
+#: site/course/course-content.php:4037
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 15"
+msgstr "第一堂"
+
+#: site/course/course-content.php:4091 site/course/course-content.php:4106
+#, fuzzy
+#| msgid "The Training Cycle"
+msgid "Training Cycle"
+msgstr "培训循环不息"
+
+#: site/course/course-content.php:4121
+msgid "Share the \"Training Cycle\" with believer on your list of 100."
+msgstr ""
+
+#: site/course/course-content.php:4144
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 16"
+msgstr "第一堂"
+
+#: site/course/course-content.php:4229
+msgid ""
+"Begin efforts to catalyze another simple church (spiritual family), or your "
+"first one."
+msgstr ""
+
+#: site/course/course-content.php:4230
+msgid ""
+"If you have already started your own simple church, share the \"Always Part "
+"of Two Churches\" pattern with the people in it. If not, share it with "
+"another believer you know."
+msgstr ""
+
+#: site/course/course-content.php:4255
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 17"
+msgstr "第一堂"
+
+#: site/course/course-content.php:4336
+#, fuzzy
+#| msgid ""
+#| "Set aside time on your calendar each week to continue to work on your "
+#| "Three Month Plan, and plan check-ins with your training partner at the "
+#| "end of week 1, 2, 3, 4, 6, 8, and 12. Each time you're together, ask "
+#| "about their results and share yours, making sure you're both working "
+#| "through your plans. Prayerfully consider continuing as an ongoing "
+#| "spiritual family committed to multiplying disciples."
+msgid ""
+"Set aside time on your calendar each week to work on your Three Month Plan. "
+"Plan check-ins with your training partner weekly. Each time you’re together, "
+"ask about their results and share yours, making sure you’re both working "
+"through your plans."
+msgstr ""
+"请在自己的行事历上﹐每个礼拜都要分出时间来操练「三个月规划」上的事项﹐也要在"
+"第一﹑二﹑三﹑四﹑六﹑八以及十二周，约好时间来与操练的同伴见面。每一次碰面﹐"
+"都要彼此询问操练的成果﹐彼此勉励都照着自己的规划进行。请以祷告托住，竭力参与"
+"倍增门徒，建立新的属灵家庭。"
+
+#: site/course/course-content.php:4337
+msgid ""
+"Share your plan with your training partner. If you don’t have a training "
+"partner, share it with another believer you know."
+msgstr ""
+
+#: site/course/course-content.php:4362
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 18"
+msgstr "第一堂"
+
+#: site/course/course-content.php:4445
+msgid ""
+"Identify one next step for yourself, either Modeling, Assisting, Watching, "
+"or Leaving, that you need to take with the disciple you assessed with the "
+"coaching checklist."
+msgstr ""
+
+#: site/course/course-content.php:4446
+msgid ""
+"Share the concept of \"Leadership in Networks\" with someone else. If you "
+"don’t have a training partner, share it with another believer you know."
+msgstr ""
+
+#: site/course/course-content.php:4468
+#, fuzzy
+#| msgid "Session 1"
+msgid "Session 19"
+msgstr "第一堂"
+
+#: site/course/course-content.php:4549
+msgid ""
+"Discuss with your Zúme training group whether or not the members are open to "
+"continuing to meet after the conclusion of the training as a Peer Mentoring "
+"Group."
+msgstr ""
+
+#: site/course/course-content.php:4550
+msgid ""
+"Share the concept of the \"Peer Mentoring Group\" with two believers on your "
+"list of 100."
+msgstr ""
+
+#: site/course/course-content.php:4574
+#, fuzzy
+#| msgid "Session 2"
+msgid "Session 20"
+msgstr "第二堂"
+
+#: site/course/course-content.php:4654
+msgid "NEXT STEPS"
+msgstr ""
+
+#: site/course/course-content.php:4658
+msgid ""
+"If you don’t have one yet, this is one of the best steps you can take in "
+"growing as a multiplying disciple."
+msgstr ""
+
+#: site/course/course-content.php:4662
+#, fuzzy
+#| msgid "Community"
+msgid "Join the Community"
+msgstr "社群"
+
+#: site/course/course-content.php:4663
+msgid ""
+"Zúme is a community of practice for those who want to see disciple making "
+"movements. Our vision is to saturate the world with multiplying disciples in "
+"our generation. Check out how others are implementing Zúme Training in their "
+"lives and communities."
+msgstr ""
+
+#: site/course/course-content.php:4671
+msgid "CONGRATULATIONS"
+msgstr ""
+
+#: site/course/course-content.php:4672
+#, fuzzy
+#| msgid "Completion of Training"
+msgid "on completing Zume Training!"
+msgstr "恭喜完成训练"
+
+#: site/course/course-content.php:4681
+msgid "TAKE A BREAK"
 msgstr ""
 
 #: site/course/course.php:97 site/parts/nav.php:22 site/parts/nav.php:31
@@ -3799,7 +4322,7 @@ msgstr ""
 
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:128 site/wizard/wizard.php:118
-#: zume-training-system.php:275
+#: zume-training-system.php:286
 msgid "Email"
 msgstr "电子邮件"
 
@@ -3912,7 +4435,7 @@ msgid "Profile"
 msgstr "个人资料"
 
 #: site/profile/profile.php:124 site/wizard/wizard.php:106
-#: site/wizard/wizard.php:120 zume-training-system.php:277
+#: site/wizard/wizard.php:120 zume-training-system.php:288
 msgid "Phone"
 msgstr "电话"
 
@@ -3984,19 +4507,19 @@ msgstr ""
 msgid "What is your contact preference?"
 msgstr "你的城市的邮递区号是什么？"
 
-#: site/wizard/wizard.php:119 zume-training-system.php:276
+#: site/wizard/wizard.php:119 zume-training-system.php:287
 msgid "Text"
 msgstr "简讯"
 
-#: site/wizard/wizard.php:121 zume-training-system.php:278
+#: site/wizard/wizard.php:121 zume-training-system.php:289
 msgid "Whatsapp"
 msgstr "WhatsApp"
 
-#: site/wizard/wizard.php:122 zume-training-system.php:279
+#: site/wizard/wizard.php:122 zume-training-system.php:290
 msgid "Signal"
 msgstr "注册帐号"
 
-#: site/wizard/wizard.php:123 zume-training-system.php:280
+#: site/wizard/wizard.php:123 zume-training-system.php:291
 msgid "Telegram"
 msgstr ""
 
@@ -4133,69 +4656,69 @@ msgstr ""
 msgid "Join my zume plan"
 msgstr ""
 
-#: zume-training-system.php:170
+#: zume-training-system.php:181
 msgid "Someone has requested a password reset for the following account:"
 msgstr "有人要求重设以下帐号的密码："
 
 #. translators: %s: site name
-#: zume-training-system.php:172
+#: zume-training-system.php:183
 #, php-format
 msgid "Site Name: %s"
 msgstr "网站名称︰ %s"
 
 #. translators: %s: user login
-#: zume-training-system.php:174
+#: zume-training-system.php:185
 #, php-format
 msgid "Username: %s"
 msgstr "用户名称︰ %s"
 
-#: zume-training-system.php:175
+#: zume-training-system.php:186
 msgid "If this was a mistake, just ignore this email and nothing will happen."
 msgstr "如果你没要求重设﹐请忽略此电子邮件﹐不会发生任何变更。"
 
-#: zume-training-system.php:176
+#: zume-training-system.php:187
 msgid "To reset your password, visit the following address:"
 msgstr "请到以下的网址重设你的密码："
 
 #. translators: Password reset email subject. %s: Site name
-#: zume-training-system.php:194
+#: zume-training-system.php:205
 #, php-format
 msgid "[%s] Password Reset"
 msgstr "[%s] 重设密码"
 
-#: zume-training-system.php:210
+#: zume-training-system.php:221
 msgid "Profile Details"
 msgstr "个人资料"
 
-#: zume-training-system.php:222
+#: zume-training-system.php:233
 msgid "User Email"
 msgstr "电子邮件"
 
-#: zume-training-system.php:231
+#: zume-training-system.php:242
 msgid "User Phone"
 msgstr "电话"
 
-#: zume-training-system.php:239
+#: zume-training-system.php:250
 msgid "User Timezone"
 msgstr ""
 
-#: zume-training-system.php:247
+#: zume-training-system.php:258
 msgid "User Friend Key"
 msgstr ""
 
-#: zume-training-system.php:255
+#: zume-training-system.php:266
 msgid "User UI Language"
 msgstr "语言"
 
-#: zume-training-system.php:263
+#: zume-training-system.php:274
 msgid "User Preferred Language"
 msgstr ""
 
-#: zume-training-system.php:271
+#: zume-training-system.php:282
 msgid "Preferred Contact Methods"
 msgstr ""
 
-#: zume-training-system.php:281
+#: zume-training-system.php:292
 msgid "Messenger"
 msgstr ""
 
@@ -4211,6 +4734,9 @@ msgstr "https://github.com/ZumeProject/zume-training"
 #. Description of the plugin/theme
 msgid "Zume Training System"
 msgstr "「天国酵母」Zúme 门徒训练"
+
+#~ msgid "Start date"
+#~ msgstr "开始"
 
 #, fuzzy
 #~ msgid ""
@@ -5035,19 +5561,6 @@ msgstr "「天国酵母」Zúme 门徒训练"
 #~ msgstr "恭喜你们！你们已经完成了第九堂课！"
 
 #~ msgid ""
-#~ "Set aside time on your calendar each week to continue to work on your "
-#~ "Three Month Plan, and plan check-ins with your training partner at the "
-#~ "end of week 1, 2, 3, 4, 6, 8, and 12. Each time you're together, ask "
-#~ "about their results and share yours, making sure you're both working "
-#~ "through your plans. Prayerfully consider continuing as an ongoing "
-#~ "spiritual family committed to multiplying disciples."
-#~ msgstr ""
-#~ "请在自己的行事历上﹐每个礼拜都要分出时间来操练「三个月规划」上的事项﹐也要"
-#~ "在第一﹑二﹑三﹑四﹑六﹑八以及十二周，约好时间来与操练的同伴见面。每一次碰"
-#~ "面﹐都要彼此询问操练的成果﹐彼此勉励都照着自己的规划进行。请以祷告托住，竭"
-#~ "力参与倍增门徒，建立新的属灵家庭。"
-
-#~ msgid ""
 #~ "Pray and ask God who He would have you share Zúme Training with by "
 #~ "launching a Leadership Cell of future Zúme Training leaders."
 #~ msgstr ""
@@ -5552,9 +6065,6 @@ msgstr "「天国酵母」Zúme 门徒训练"
 #~ msgid "Teach Them to Obey"
 #~ msgstr "教导他们遵守"
 
-#~ msgid "Session 4"
-#~ msgstr "第四堂"
-
 #~ msgid "3 Minute Testimony"
 #~ msgstr "三分钟见证"
 
@@ -5564,9 +6074,6 @@ msgstr "「天国酵母」Zúme 门徒训练"
 #~ msgid "Lord's Supper"
 #~ msgstr "领圣餐"
 
-#~ msgid "3/3 Group"
-#~ msgstr "三合一小组"
-
 #~ msgid "3/3 Group Live"
 #~ msgstr "三合一小组示范"
 
@@ -5575,9 +6082,6 @@ msgstr "「天国酵母」Zúme 门徒训练"
 
 #~ msgid "Part of Two Churches"
 #~ msgstr "两个教会并进"
-
-#~ msgid "Completion of Training"
-#~ msgstr "恭喜完成训练"
 
 #~ msgid "Peer Mentoring"
 #~ msgstr "同侪切磋机制"
@@ -6745,9 +7249,6 @@ msgstr "「天国酵母」Zúme 门徒训练"
 
 #~ msgid "Zúme Training Resources"
 #~ msgstr "「天国酵母」Zúme 门徒训练资源"
-
-#~ msgid "Relational Stewardship - List of 100"
-#~ msgstr "人际网络的好管家——百人关注名单"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "「小鸭门徒训练法」- 马上开始带领"

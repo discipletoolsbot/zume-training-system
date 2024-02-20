@@ -1432,7 +1432,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -1478,7 +1478,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(75 min)', 'zume' ),
             ],
             'left' => [
-                __( '3/3 Group Meeting Pattern', 'zume' ),
+                __( '3/3 Group Meeting', 'zume' ),
                 __( 'In the following video, you’ll be coached through an interactive 3/3 Group where you’ll learn a principle and then “press pause” and practice it with the group.', 'zume' ),
             ],
             'right' => [],
@@ -1521,7 +1521,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tools heard in this session:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -1619,7 +1619,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -1711,7 +1711,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tool heard in this session:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -1805,7 +1805,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will practice this tool from our toolkit:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -1881,7 +1881,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tool from this session:', 'zume' ),
                 [
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -3655,7 +3655,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60-90 min)', 'zume' ),
+                __( '(60 - 90 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Prayer Walking', 'zume' ),
@@ -3858,7 +3858,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
                     __( 'Faithfulness', 'zume' ),
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -3873,7 +3873,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
                     __( 'Faithfulness', 'zume' ),
-                    __( '3/3 Group Meeting Pattern', 'zume' ),
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -3975,7 +3975,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(45 min)', 'zume' ),
             ],
             'left' => [
-                __( '3/3 Group Format', 'zume' ),
+                __( '3/3 Group Meeting', 'zume' ),
                 [
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ),
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)', 'zume' ),

@@ -213,23 +213,23 @@ class Zume_Training_Home extends Zume_Magic_Page
                 <div class="stack px-0">
                     <div class="d-flex align-items-center">
                         <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/free-01.svg' ) ?>" alt="play button">
-                        <p class="w-80"><?php printf( esc_html__( '%1$sFree Registration%2$s gives you full access to all training materials and online coaching.' ), '<b>', '</b>' ) ?></p>
+                        <p class="w-80"><?php printf( esc_html__( '%1$sFree Registration%2$s gives you full access to all training materials and online coaching.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play button">
-                        <p class="w-80"><?php printf( esc_html__( '%1$sInstructional Videos%2$s help your group undernstand basic principles of multiplying disciples' ), '<b>', '</b>' ) ?></p>
+                        <p class="w-80"><?php printf( esc_html__( '%1$sInstructional Videos%2$s help your group understand basic principles of multiplying disciples.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GroupDiscussions.svg' ) ?>" alt="play button">
-                        <p class="w-80"><?php printf( esc_html__( '%1$sGroup Discussions%2$s help your group think through what is being shared' ), '<b>', '</b>' ) ?></p>
+                        <p class="w-80"><?php printf( esc_html__( '%1$sGroup Discussions%2$s help your group think through what is being shared.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SimpleExercises.svg' ) ?>" alt="play button">
-                        <p class="w-80"><?php printf( esc_html__( '%1$sSimple Exercises%2$s help your group put what you are learning into practice' ), '<b>', '</b>' ) ?></p>
+                        <p class="w-80"><?php printf( esc_html__( '%1$sSimple Exercises%2$s help your group put what you are learning into practice.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                     <div class="d-flex align-items-center">
                         <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SessionChallenges.svg' ) ?>" alt="play button">
-                        <p class="w-80"><?php printf( esc_html__( '%1$sSession Challenges%2$s help your group keep learning and growing between sessions' ), '<b>', '</b>' ) ?></p>
+                        <p class="w-80"><?php printf( esc_html__( '%1$sSession Challenges%2$s help your group keep learning and growing between sessions.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                 </div>
                 <div class="px-3">
@@ -493,7 +493,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/countriesandterritories-groups.svg' ) ?>" alt="<?php echo esc_attr__( 'Countries & Territories with Groups', 'zume' ) ?>" class="w-30">
                                     <h5 class="h2">156</h5>
                                     <p class="gray-700 f--1">
-                                        <?php echo esc_html__( 'Total number of conturies and sovereign territories that have had groups go through Zume.Training', 'zume' ) ?>
+                                        <?php echo esc_html__( 'Total number of countries and sovereign territories that have had groups go through Zume.Training', 'zume' ) ?>
                                     </p>
                                 </div>
                             </div>

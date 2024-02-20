@@ -159,7 +159,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'shared' => __( 'Shared', 'zume' ),
                     'shared_explanation' => __( 'Have I shared this tool or concept?', 'zume' ),
                     'trained' => __( 'Trained', 'zume' ),
-                    'trained_explanation' => __( 'Have I trained outhers to share this tool or concept?', 'zume' ),
+                    'trained_explanation' => __( 'Have I trained others to share this tool or concept?', 'zume' ),
                 ],
                 'urls' => [
                     'launch_ten_session_course' => zume_10_session_url(),

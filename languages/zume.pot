@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-02-19 20:47-0700\n"
-"PO-Revision-Date: 2024-02-16 11:24-0700\n"
+"POT-Creation-Date: 2024-02-20 08:49-0700\n"
+"PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -346,11 +346,13 @@ msgstr ""
 
 #: globals.php:1385 site/course/course-content.php:1435
 #: site/course/course-content.php:1481 site/course/course-content.php:1524
-#: site/course/course-content.php:1622 site/course/course-content.php:1714
-#: site/course/course-content.php:1808 site/course/course-content.php:1884
+#: site/course/course-content.php:1622 site/course/course-content.php:1673
+#: site/course/course-content.php:1714 site/course/course-content.php:1808
+#: site/course/course-content.php:1858 site/course/course-content.php:1884
 #: site/course/course-content.php:3861 site/course/course-content.php:3876
-#: site/follow-jesus/follow-jesus.php:200
-msgid "3/3 Group Meeting Pattern"
+#: site/course/course-content.php:3966 site/course/course-content.php:3978
+#: site/course/course-content.php:4000 site/follow-jesus/follow-jesus.php:200
+msgid "3/3 Group Meeting"
 msgstr ""
 
 #: globals.php:1386 site/follow-jesus/follow-jesus.php:201
@@ -679,28 +681,28 @@ msgstr ""
 #: site/about/about.php:170 site/home/home.php:220
 #, php-format
 msgid ""
-"%1$sInstructional Videos%2$s help your group undernstand basic principles of "
-"multiplying disciples"
+"%1$sInstructional Videos%2$s help your group understand basic principles of "
+"multiplying disciples."
 msgstr ""
 
 #: site/about/about.php:174 site/home/home.php:224
 #, php-format
 msgid ""
-"%1$sGroup Discussions%2$s help your group think through what is being shared"
+"%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
 
 #: site/about/about.php:178 site/home/home.php:228
 #, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
-"practice"
+"practice."
 msgstr ""
 
 #: site/about/about.php:182 site/home/home.php:232
 #, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
-"sessions"
+"sessions."
 msgstr ""
 
 #: site/about/about.php:193
@@ -2309,11 +2311,6 @@ msgstr ""
 msgid "What would it look like to train someone like that?"
 msgstr ""
 
-#: site/course/course-content.php:1673 site/course/course-content.php:1858
-#: site/course/course-content.php:3966 site/course/course-content.php:4000
-msgid "3/3 Group Meeting"
-msgstr ""
-
 #: site/course/course-content.php:1675 site/course/course-content.php:1860
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
@@ -3012,10 +3009,6 @@ msgstr ""
 
 #: site/course/course-content.php:3912
 msgid "Session 14"
-msgstr ""
-
-#: site/course/course-content.php:3978
-msgid "3/3 Group Format"
 msgstr ""
 
 #: site/course/course-content.php:3980
@@ -3913,7 +3906,7 @@ msgstr ""
 
 #: site/home/home.php:496
 msgid ""
-"Total number of conturies and sovereign territories that have had groups go "
+"Total number of countries and sovereign territories that have had groups go "
 "through Zume.Training"
 msgstr ""
 

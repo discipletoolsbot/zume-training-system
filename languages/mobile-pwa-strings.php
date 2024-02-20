@@ -19,7 +19,7 @@ class Zume_PWA_Strings {
             __( 'Help' ),
             __( 'Workbook' ),
             __( 'Sign Out' ),
-            __( 'Download all' ),
+            __( 'Download All' ),
             __( 'Download' ),
             __( 'Downloading' ),
             __( 'Queued' ),

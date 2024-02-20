@@ -197,7 +197,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                                 <div class="stack">
                                     <h4><?php esc_html_e( 'Community', 'zume' ) ?></h4>
                                     <p>
-                                        <strong><a data-value="20752" data-tool="21" id="3-3-group-meeting-pattern" class="open-modal"><?php esc_html_e( '3/3 Group Meeting Pattern', 'zume' ) ?></a></strong><br>
+                                        <strong><a data-value="20752" data-tool="21" id="3-3-group-meeting-pattern" class="open-modal"><?php esc_html_e( '3/3 Group Meeting', 'zume' ) ?></a></strong><br>
                                         <?php esc_html_e( "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, fellowship and practice obeying and sharing what they've learned. In this way, a 3/3 Group is not just a small group but a Simple Church.", 'zume' ) ?>
                                     </p>
                                     <p>

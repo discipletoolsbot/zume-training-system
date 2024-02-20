@@ -1382,7 +1382,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
             '21' => [
                 'key' => '21',
                 'name' => '3-3-group-meeting-pattern',
-                'title' => __( '3/3 Group Meeting Pattern', 'zume' ),
+                'title' => __( '3/3 Group Meeting', 'zume' ),
                 'description' => __( "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, fellowship and practice obeying and sharing what they've learned. In this way, a 3/3 Group is not just a small group but a Simple Church.", 'zume' ),
                 'type' => 'tool',
                 'host' => true,
