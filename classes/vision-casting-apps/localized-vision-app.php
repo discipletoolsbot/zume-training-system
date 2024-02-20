@@ -125,7 +125,7 @@ class Zume_App_Local_Vision extends DT_Magic_Url_Base
                 'parts' => $this->parts,
                 'post_type' => $this->post_type,
                 'translation' => [
-                    'add' => __( 'Zume', 'zume_funnels' ),
+                    'add' => __( 'Zume', 'zume' ),
                     'title' => 'Churches'
                 ],
                 'grid_data' => ['data' => [], 'highest_value' => 1 ],

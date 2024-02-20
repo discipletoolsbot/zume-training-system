@@ -91,21 +91,18 @@ class Zume_Training_About extends Zume_Magic_Page
             <h1 class="text-center"><?php echo esc_html__( 'What is Zume Training?', 'zume' ) ?></h1>
 
             <div class="center stack-2">
-                <p class="text-center">
-                    Aliqua irure eiusmod aliquip et ipsum et sint dolore velit voluptate esse est nostrud consequat. Sunt cillum ex aliqua fugiat magna velit dolor magna qui Lorem occaecat tempor ex. Ipsum officia consequat ipsum Lorem mollit. Voluptate aliquip ut adipisicing non cupidatat minim exercitation adipisicing ipsum exercitation dolore esse amet nostrud. Tempor velit consequat qui laboris ut in.
+                <p>
+                    <?php echo __( 'Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew 13:33, Jesus compared the kingdom of heaven to yeast mixed into a large amount of flour, permeating the entire dough. This parable illustrates how ordinary people, using ordinary resources, can have exponential impact for the Kingdom of God.', 'zume' ) ?>
                 </p>
-                <div class="w-20">
-                    <img class="w-100" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/handswithyeast.svg' ) ?>" alt="kneading bread">
-                </div>
             </div>
+
+            <h2 class="brand text-center bold"><?php echo esc_html__( 'Zume Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></h2>
 
             <div class="switcher align-items-center">
                 <div class="stack-3">
                     <p>
-                        Voluptate consequat proident consequat cupidatat commodo ut consequat culpa. Ad ipsum irure dolor culpa veniam exercitation sunt mollit eiusmod dolore ullamco tempor proident adipisicing. Cupidatat nisi est aliquip cillum ullamco culpa eiusmod est. Elit ut duis do cillum est aliquip qui veniam nulla aliquip commodo qui ut ea. Excepteur aliqua dolore officia laborum. Labore eiusmod ex excepteur Lorem ullamco proident dolor incididunt ut. Laboris anim excepteur velit id nostrud minim aliquip tempor voluptate commodo.
-                    </p>
-                    <p>
-                        Fugiat eiusmod elit anim ipsum qui ex sint aliqua aliqua magna sit. Reprehenderit mollit nulla nisi anim laboris tempor deserunt ad dolore irure ipsum magna amet quis. Sunt culpa ipsum duis amet sint in. Proident eu esse commodo duis ad ea. Fugiat nulla laboris cupidatat nisi tempor fugiat nulla qui.
+                        <?php echo __( 'In 2015, a small group committed to fulfilling Jesus’ Great Commission mandate convened for a Jonathan Project Leadership Meeting. They prayed and discussed the challenges in multiplying disciples around the world. Recognizing the need for accessible, multilingual, and flexible training that aligns with Jesus’ call for ordinary people to be ‘yeast’ for the Kingdom, the idea for online video-based training was born. Ultimately, this idea evolved into what is now known as Zúme.', 'zume' ) ?><br><br>
+                        <?php echo __( 'The foundational disciple-making principles in Zúme Training come straight from the Bible and have been tested globally for over thirty years. These principles empower ordinary believers to become disciples who, in turn, make disciples, resulting in millions of disciples advancing the Kingdom in spiritually dark places.', 'zume' ) ?>
                     </p>
                 </div>
                 <div class="center">
@@ -118,20 +115,21 @@ class Zume_Training_About extends Zume_Magic_Page
                     <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/CellPhone.svg' ) ?>" alt="computer devices">
                 </div>
                 <p>
-                    Exercitation dolore dolor ut anim non pariatur reprehenderit occaecat nostrud ullamco eu eiusmod duis. Tempor eu veniam laboris excepteur incididunt reprehenderit sit tempor deserunt consequat dolore culpa dolore. Consequat aliqua nisi aliqua aliqua. Ut anim cillum minim proident proident commodo minim Lorem mollit dolor consectetur. Ut exercitation ex adipisicing ullamco ipsum ea irure amet eu voluptate. Non ullamco culpa nostrud dolor est enim est culpa. Laborum laborum commodo cillum officia non sunt ut consequat eu labore cillum laborum incididunt officia.
+                    <?php echo __( 'Launched on February 14, 2017, through Kingdom collaboration, Zúme Training remains an open initiative without formal organizational control or a separate entity. Since Zúme is not run by an organization, there is no formal statement of faith. All involved, however, would agree with the Lausanne Covenant.', 'zume' ) ?>
                 </p>
             </div>
 
-            <h2 class="brand text-center bold"><?php echo esc_html__( 'Zume Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></h2>
-
             <div class="switcher align-items-center">
                 <p>
-                    Ad ea minim sint incididunt nulla. Id dolor est sunt et. Minim esse exercitation quis laborum esse. Fugiat amet eiusmod est consectetur aliqua quis. Duis fugiat sunt voluptate minim quis labore labore minim labore officia ut voluptate elit enim. Sint aute consequat in magna aute.
+                    <?php echo __( 'The goal is to saturate the globe with multiplying disciples in our generation. The Biblical principles found in this training are simple. The world changing potential is in the practice of these principles.', 'zume' ) ?><br></br>
+                    <?php echo __( 'The vision of Zúme is comparable to yeast working through the entire dough, spreading basic Kingdom tools into neighborhoods worldwide.', 'zume' ) ?><br></br>
                 </p>
                 <div class="center">
                     <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WorldGroups.svg' ) ?>" alt="groups around the globe">
                 </div>
             </div>
+
+            <h2 class="brand text-center bold"><?php echo __( 'The vision of Zúme has two parts:', 'zume' ) ?></h2>
 
             <div class="switcher align-items-center">
                 <div class="center">
@@ -139,20 +137,27 @@ class Zume_Training_About extends Zume_Magic_Page
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/1Training.svg' ) ?>" alt="One training">
                 </div>
                 <p>
-                    Cillum ex quis velit aliquip aliquip et minim consectetur aliquip laborum proident eiusmod sunt. Excepteur aute esse ad fugiat id ex minim non ut sit sit laboris culpa laboris. Officia nulla labore tempor duis ea velit anim aliqua non ad do incididunt eiusmod. Ex aute non culpa consequat tempor eu sunt ad nulla dolore.
+                    <span class="bold"><?php echo __( 'Part 1:', 'zume' ) ?></span><br>
+                    <?php echo __( 'To train at least one disciple maker for every 5,000 people in North America and one disciple maker for every 50,000 people globally.', 'zume' ) ?>
                 </p>
             </div>
 
             <div class="switcher align-items-center">
-                <p>
-                    Sit consectetur est adipisicing quis dolor reprehenderit. Amet quis voluptate cillum quis pariatur sit. Eiusmod culpa id amet laboris aliquip irure deserunt consectetur do irure fugiat dolor Lorem qui. Incididunt magna proident eu mollit esse excepteur labore consectetur tempor. Dolor fugiat deserunt sint incididunt cupidatat nulla culpa.
-                </p>
                 <div class="center">
                     <span class="brand bold"><?php echo esc_html__( '2 Simple Churches', 'zume' ) ?></span>
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/2Churches.svg' ) ?>" alt="2 simple churches">
                 </div>
+                <p>
+                    <span class="bold"><?php echo __( 'Part 2:', 'zume' ) ?></span><br>
+                    <?php echo __( 'For trained disciple makers to start at least 2 simple multiplying churches for every 5,000 people in North America and 2 simple churches for every 50,000 people globally.', 'zume' ) ?><br></br>
+                </p>
             </div>
-
+            <br>
+            <div class="center stack-2">
+                <p>
+                    <?php echo __( 'With these small beginnings ... what the Bible calls yeast ... we could see the world covered with multiplying disciples and churches. Explore Zúme Training and find out how!', 'zume' ) ?>
+                </p>
+            </div>
             <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Sign Me Up!', 'zume' ) ?></a>
         </div>
 
@@ -200,11 +205,11 @@ class Zume_Training_About extends Zume_Magic_Page
                         <h3 class="f-0 bold"><?php echo esc_html__( 'Zume is NOT like other trainings!', 'zume' ) ?></h3>
                         <p>
                             <b><?php echo esc_html__( 'First:', 'zume' ) ?></b><br>
-                            <?php echo esc_html__( 'Eiusmod in quis incididunt in id excepteur amet occaecat. In quis exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa.', 'zume' ) ?>
+                            <?php echo esc_html__( 'Zúme is designed to be done as a group. Group exercise, discussions, and practicing of skills all will be better with others, so gather a group, if possible.', 'zume' ) ?>
                         </p>
                         <p>
                             <b><?php echo esc_html__( 'Second:', 'zume' ) ?></b><br>
-                            <?php echo esc_html__( 'Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse incididunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut eiusmod aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation cupidatat fugiat mollit. Magna fugiat dolore cupidatat proident non velit laborum aliquip commodo nulla consectetur et mollit in.', 'zume' ) ?>
+                            <?php echo esc_html__( 'Zúme is about developing skills, building competence, not just gaining knowledge . In every session, the goal is fruitful action. The best outcome of the training will be a changed lifestyle and an experience of increased power in your faith.', 'zume' ) ?>
                         </p>
                     </div>
                 </div>
@@ -215,12 +220,11 @@ class Zume_Training_About extends Zume_Magic_Page
                 <h2 class="text-center"><?php echo esc_html__( "What's required", 'zume' ) ?></h2>
                 <div class="switcher align-items-center">
                     <div class="stack-2">
-                        <h3 class="white bold"><?php echo esc_html__( 'Requirements for Zume Training:', 'zume' ) ?></h3>
+                        <h3 class="white bold"><?php echo esc_html__( 'Needed for the training:', 'zume' ) ?></h3>
                         <ul role="list" class="stack-1">
-                            <li>Magna eu proident consequat eiusmod ullamco est veniam ad mollit esse duis labore amet ad.</li>
-                            <li>Irure duis consequat dolore ea sunt dolor velit voluptate ut deserunt.</li>
-                            <li>Quis voluptate nostrud nulla laboris.</li>
-                            <li>Consectetur dolore mollit voluptate deserunt consectetur.</li>
+                            <li><?php echo __( 'At least 3 people, but ideally less than 12.', 'zume' ) ?></li>
+                            <li><?php echo __( 'Commitment to spend 20 hours learning and practicing the concepts and tools in the course.', 'zume' ) ?></li>
+                            <li><?php echo __( 'A person to facilitate (potentially you) the meeting time and location, to guide the follow-up discussion, and facilitate action prompts.', 'zume' ) ?></li>
                         </ul>
                     </div>
                     <div class="center">
@@ -229,13 +233,10 @@ class Zume_Training_About extends Zume_Magic_Page
                 </div>
                 <div class="switcher align-items-center">
                     <div class="stack-2">
-                        <h3 class="white bold"><?php echo esc_html__( 'NOT Required for Zume Training:', 'zume' ) ?></h3>
+                        <h3 class="white bold"><?php echo esc_html__( 'NOT needed for the training:', 'zume' ) ?></h3>
                         <ul role="list" class="stack-1">
-                            <li>Magna eu proident consequat eiusmod ullamco est veniam ad mollit esse duis labore amet ad.</li>
-                            <li>Irure duis consequat dolore ea sunt dolor velit voluptate ut deserunt.</li>
-                            <li>Quis voluptate nostrud nulla laboris.</li>
-                            <li>Consectetur dolore mollit voluptate deserunt consectetur.</li>
-                            <li>Duis id voluptate cupidatat fugiat in Lorem.</li>
+                            <li><?php echo __( 'More knowledge or experience than the rest of your group is not needed! If you can click next, you can lead a Zúme Training.', 'zume' ) ?></li>
+                            <li><?php echo __( 'Special permission to lead a training is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
                         </ul>
                     </div>
                     <div class="center">
@@ -253,10 +254,7 @@ class Zume_Training_About extends Zume_Magic_Page
                         <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/coach-2guys.svg' ) ?>" alt="guy with a coach" class="w-50">
                     </div>
                     <div class="stack-2">
-                        <p>Lorem incididunt irure eu ut eiusmod voluptate ea anim officia proident deserunt aliqua culpa dolor.</p>
-                        <p>Aute ullamco fugiat non voluptate irure dolore officia Lorem dolor ipsum aliquip culpa ea. Sit velit mollit nisi magna sunt. Mollit magna duis nisi non sunt velit consectetur labore pariatur. Quis voluptate consequat ad aliquip. Eiusmod laboris excepteur ex esse excepteur veniam ullamco ex.</p>
-                        <p>Pariatur minim adipisicing tempor ea pariatur velit tempor eiusmod ea pariatur.</p>
-                        <p>Cupidatat minim ut sit aliquip reprehenderit.</p>
+                        <p><?php echo __( 'All along the way, the Zúme community is eager to support you by providing a COACH to help you and your group successfully implement the training. Don’t hesitate to reach out with questions or concerns!', 'zume' ) ?></p>
                         <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn uppercase light large s-4 fit-content"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
                     </div>
                 </div>

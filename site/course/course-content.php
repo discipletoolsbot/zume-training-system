@@ -353,7 +353,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
                 __( 'Thank God that He promises in His Word to listen and act when His people pray.', 'zume' ),
-                __( 'Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
+                __( 'Ask God’s Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -2253,7 +2253,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Be encouraged ...', 'zume' ),
                 __( 'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!', 'zume' ),
-                __( 'But, Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training and briefly introduce tools you’ll need later in your journey as you implement what you’ve learned.', 'zume' ),
+                __( 'Yet Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training and briefly introduce tools you’ll need later in your journey as you implement what you’ve learned.', 'zume' ),
             ],
             'right' => [
             ],
