@@ -1,6 +1,9 @@
 <?php
 
-function get_sessions( $sessions = '10' ) {
+/**
+ * @deprecated
+ */
+function get_sessions( $sessions = '10' ) { // @todo remove and deprecated
     $ten_sessions = [
         array(
             't' => 'Session 1 (10)',
