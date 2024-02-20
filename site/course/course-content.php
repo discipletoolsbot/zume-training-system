@@ -2500,7 +2500,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 1'
+                __( 'Session 1', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -2539,11 +2539,11 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
-                    'Simple Definition of Disciple and Church',
-                    'Spiritual Breathing is Hearing and Obeying God',
+                    __( 'Simple Definition of Disciple and Church', 'zume' ),
+                    __( 'Spiritual Breathing is Hearing and Obeying God', 'zume' ),
                 ]
             ],
         ],
@@ -2558,8 +2558,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
-                    'Simple Definition of Disciple and Church',
-                    'Spiritual Breathing is Hearing and Obeying God',
+                    __( 'Simple Definition of Disciple and Church', 'zume' ),
+                    __( 'Spiritual Breathing is Hearing and Obeying God', 'zume' ),
                 ]
             ],
         ],
@@ -2572,8 +2572,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Practice sharing these definitions with a friend and pray for the Lord to ingrain them deeply within your heart and soul. Ask the Lord whom He would have you share them with.',
-                'Share the definitions with whomever the Lord impresses on you to do so with. Then equip them to share it with someone else.',
+                __( 'Practice sharing these definitions with a friend and pray for the Lord to ingrain them deeply within your heart and soul. Ask the Lord whom He would have you share them with.', 'zume' ),
+                __( 'Share the definitions with whomever the Lord impresses on you to do so with. Then equip them to share it with someone else.', 'zume' ),
             ],
         ],
 
@@ -2595,7 +2595,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 2'
+                __( 'Session 2', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -2623,7 +2623,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -2647,9 +2647,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add this tool to our toolkit:',
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'S.O.A.P.S Bible Reading',
+                    __( 'S.O.A.P.S Bible Reading', 'zume' ),
                 ],
             ],
         ],
@@ -2661,9 +2661,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'S.O.A.P.S Bible Reading',
+                    __( 'S.O.A.P.S Bible Reading', 'zume' ),
                 ],
             ],
         ],
@@ -2676,8 +2676,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.',
-                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.',
+                __( 'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.', 'zume' ),
+                __( 'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.', 'zume' ),
             ],
         ],
 
@@ -2698,7 +2698,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 3'
+                __( 'Session 3', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -2726,7 +2726,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -2750,7 +2750,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add this tool to our toolkit:',
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
                     __( 'Accountability Groups', 'zume' ),
                 ]
@@ -2764,7 +2764,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
                     __( 'Accountability Groups', 'zume' ),
                 ],
@@ -2779,8 +2779,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Find an accountability partner (same gender) and begin meeting with them on a weekly basis.',
-                'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own accountability group meeting, and then do so.',
+                __( 'Find an accountability partner (same gender) and begin meeting with them on a weekly basis.', 'zume' ),
+                __( 'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own accountability group meeting, and then do so.', 'zume' ),
             ],
         ],
 
@@ -2802,7 +2802,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 4'
+                __( 'Session 4', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -2830,7 +2830,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
             ],
         ],
         [
@@ -2854,13 +2854,13 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss the concept:',
+                __( 'In this session, we will discuss the concept:', 'zume' ),
                 [
-                    'Producer not Consumer',
+                    __( 'Producer not Consumer', 'zume' ),
                 ],
-                'And we will add this tool to our toolkit:',
+                __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'Relational Stewardship - List of 100',
+                    __( 'Relational Stewardship - List of 100', 'zume' ),
                 ],
             ],
         ],
@@ -2872,13 +2872,13 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Concept heard in this session:',
+                __( 'Concept heard in this session:', 'zume' ),
                 [
-                    'Producer not Consumer',
+                    __( 'Producer not Consumer', 'zume' ),
                 ],
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'Relational Stewardship - List of 100',
+                    __( 'Relational Stewardship - List of 100', 'zume' ),
                 ],
             ],
         ],
@@ -2891,8 +2891,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Spend time this week praying for five people from your List of 100 that you marked as an "Unbeliever" or "Unknown." Ask God to prepare their hearts to be open to His story.',
-                'Ask God who He wants you to share the List of 100 tool with. Share this person’s name with the group before you go and reach out to them before the next session.',
+                __( 'Spend time this week praying for five people from your List of 100 that you marked as an "Unbeliever" or "Unknown." Ask God to prepare their hearts to be open to His story.', 'zume' ),
+                __( 'Ask God who He wants you to share the List of 100 tool with. Share this person’s name with the group before you go and reach out to them before the next session.', 'zume' ),
             ],
         ],
 
@@ -2914,7 +2914,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 5'
+                __( 'Session 5', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -2942,7 +2942,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -2966,9 +2966,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add this tool to our toolkit:',
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'The Prayer Cycle',
+                    __( 'The Prayer Cycle', 'zume' ),
                 ]
             ],
         ],
@@ -2980,9 +2980,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'The Prayer Cycle',
+                    __( 'The Prayer Cycle', 'zume' ),
                 ],
             ],
         ],
@@ -2995,8 +2995,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Use the prayer wheel to guide you as you pray for an hour.',
-                'Share the prayer wheel with whomever the Lord impresses on you to do so with.  Challenge them to share it with others as well.',
+                __( 'Use the prayer wheel to guide you as you pray for an hour.', 'zume' ),
+                __( 'Share the prayer wheel with whomever the Lord impresses on you to do so with.  Challenge them to share it with others as well.', 'zume' ),
             ],
         ],
 
@@ -3018,7 +3018,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 6'
+                __( 'Session 6', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3046,7 +3046,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3070,11 +3070,11 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Spiritual Economy',
-                    'Vision Casting the Greatest Blessing',
-                    'The Gospel and How to Share it',
+                    __( 'Spiritual Economy', 'zume' ),
+                    __( 'Vision Casting the Greatest Blessing', 'zume' ),
+                    __( 'The Gospel and How to Share it', 'zume' ),
                 ]
 
             ],
@@ -3089,9 +3089,9 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Spiritual Economy',
-                    'Vision Casting the Greatest Blessing',
-                    'The Gospel and How to Share it',
+                    __( 'Spiritual Economy', 'zume' ),
+                    __( 'Vision Casting the Greatest Blessing', 'zume' ),
+                    __( 'The Gospel and How to Share it', 'zume' ),
                 ],
             ],
         ],
@@ -3104,8 +3104,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'If you know anyone who follows Jesus but does not share their faith, challenge them to do so by sharing with them about the Greatest Blessing. Otherwise, practice sharing about it with a friend.',
-                'Ask God who He wants you to share with about the Greatest Blessing. Share this person’s name with the group before you go and reach out to them.',
+                __( 'If you know anyone who follows Jesus but does not share their faith, challenge them to do so by sharing with them about the Greatest Blessing. Otherwise, practice sharing about it with a friend.', 'zume' ),
+                __( 'Ask God who He wants you to share with about the Greatest Blessing. Share this person’s name with the group before you go and reach out to them.', 'zume' ),
             ],
         ],
 
@@ -3128,7 +3128,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 7'
+                __( 'Session 7', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3156,7 +3156,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3180,9 +3180,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will practice this tool in our toolkit:',
+                __( 'In this session, we will practice this tool in our toolkit:', 'zume' ),
                 [
-                    'Sharing the Gospel',
+                    __( 'Sharing the Gospel', 'zume' ),
                 ],
             ],
         ],
@@ -3191,17 +3191,17 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                '(50 min)',
+                __( '(50 min)', 'zume' ),
             ],
             'left' => [
                 '',
-                'Break into groups of two or three people and practice telling God’s Story. ',
-                'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s Story in a way that you think will make sense to that particular person.',
-                'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.',
+                __( 'Break into groups of two or three people and practice telling God’s Story.', 'zume' ),
+                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s Story in a way that you think will make sense to that particular person.', 'zume' ),
+                __( 'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.', 'zume' ),
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-                'Activity Resource',
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
         [
@@ -3212,9 +3212,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'Sharing the Gospel',
+                    __( 'Sharing the Gospel', 'zume' ),
                 ],
             ],
         ],
@@ -3227,8 +3227,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."',
-                'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.',
+                __( 'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
+                __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.', 'zume' ),
             ],
         ],
 
@@ -3251,7 +3251,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 8'
+                __( 'Session 8', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3279,7 +3279,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3303,10 +3303,10 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add these tools to our toolkit:',
+                __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
                 [
-                    'Baptism',
-                    'The 3-Minute Testimony',
+                    __( 'Baptism', 'zume' ),
+                    __( 'The 3-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3318,10 +3318,10 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'Baptism',
-                    'The 3-Minute Testimony',
+                    __( 'Baptism', 'zume' ),
+                    __( 'The 3-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3334,8 +3334,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them.',
-                'Ask God who He wants you to share with about baptism. Share this person’s name with the group before you go and reach out to them before the next session.',
+                __( 'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them.', 'zume' ),
+                __( 'Ask God who He wants you to share with about baptism. Share this person’s name with the group before you go and reach out to them before the next session.', 'zume' ),
             ],
         ],
 
@@ -3357,7 +3357,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 9'
+                __( 'Session 9', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3385,7 +3385,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3409,9 +3409,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will practice this tool in our toolkit:',
+                __( 'In this session, we will practice this tool in our toolkit:', 'zume' ),
                 [
-                    'Sharing Your Testimony',
+                    __( 'Sharing Your Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3420,14 +3420,14 @@ function zume_content( $lang_code = 'en') {
             'type' => 'center',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                '(50 min)'
+                __( '(50 min)', 'zume' ),
             ],
             'left' => [
-                'Share Your Testimony',
-                'Break into groups of two of three and practice sharing your Three-Minute Testimony.',
-                'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice your Testimony in a way that you think will make sense to that particular person.
-                After you’ve practiced, switch. Pretend to be someone else’s five people from the list. By the time you’re finished, you should be able to tell your Testimony in about 3 minutes or less.',
-                'Repetition builds confidence.',
+                __( 'Share Your Testimony', 'zume' ),
+                __( 'Break into groups of two of three and practice sharing your Three-Minute Testimony.', 'zume' ),
+                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice your Testimony in a way that you think will make sense to that particular person.', 'zume' ),
+                __( 'After you’ve practiced, switch. Pretend to be someone else’s five people from the list. By the time you’re finished, you should be able to tell your Testimony in about 3 minutes or less.', 'zume' ),
+                __( 'Repetition builds confidence.', 'zume' ),
             ],
             'right' => [],
         ],
@@ -3439,9 +3439,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'Sharing Your Testimony',
+                    __( 'Sharing Your Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3454,8 +3454,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Spend time this week practicing your testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."',
-                'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.',
+                __( 'Spend time this week practicing your testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
+                __( 'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.', 'zume' ),
             ],
         ],
 
@@ -3478,7 +3478,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 10'
+                __( 'Session 10', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3506,7 +3506,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
             ],
         ],
         [
@@ -3530,14 +3530,14 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Duckling Discipleship',
-                    'Eyes to See Where the Kingdom Isn’t',
+                    __( 'Duckling Discipleship', 'zume' ),
+                    __( 'Eyes to See Where the Kingdom Isn’t', 'zume' ),
                 ],
-                'And we will add this tool to our toolkit:',
+                __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'The Lord’s Supper',
+                    __( 'The Lord’s Supper', 'zume' ),
                 ],
             ],
         ],
@@ -3551,12 +3551,12 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Duckling Discipleship',
-                    'Eyes to See Where the Kingdom Isn’t',
+                    __( 'Duckling Discipleship', 'zume' ),
+                    __( 'Eyes to See Where the Kingdom Isn’t', 'zume' ),
                 ],
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'The Lord’s Supper',
+                    __( 'The Lord’s Supper', 'zume' ),
                 ],
             ],
         ],
@@ -3569,8 +3569,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Practice sharing this concept with a friend and pray for the Lord to ingrain it deeply within your heart and soul.',
-                'Share "Duckling Discipleship" and "Eyes to see where the Kingdom Isn’t" with whomever the Lord impresses on you. Then equip them to share it with someone else.',
+                __( 'Practice sharing this concept with a friend and pray for the Lord to ingrain it deeply within your heart and soul.', 'zume' ),
+                __( 'Share "Duckling Discipleship" and "Eyes to see where the Kingdom Isn’t" with whomever the Lord impresses on you. Then equip them to share it with someone else.', 'zume' ),
             ],
         ],
 
@@ -3592,7 +3592,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 11'
+                __( 'Session 11', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3620,7 +3620,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
             ],
         ],
         [
@@ -3644,9 +3644,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add this tool to our toolkit:',
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'Prayer Walking',
+                    __( 'Prayer Walking', 'zume' ),
                 ],
             ],
         ],
@@ -3655,19 +3655,19 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                '(60-90 min)'
+                __( '(60-90 min)', 'zume' ),
             ],
             'left' => [
-                'Prayer Walking',
+                __( 'Prayer Walking', 'zume' ),
                 [
-                    'Break into groups of two or three and go out into the community to practice Prayer Walking.',
-                    'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.',
-                    'Go as God leads, and plan on spending 60-90 minutes on this activity.',
+                    __( 'Break into groups of two or three and go out into the community to practice Prayer Walking.', 'zume' ),
+                    __( 'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.', 'zume' ),
+                    __( 'Go as God leads, and plan on spending 60-90 minutes on this activity.', 'zume' ),
                 ]
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-                'Activity Resource',
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
 
@@ -3690,7 +3690,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 12'
+                __( 'Session 12', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3718,7 +3718,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3742,13 +3742,13 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss the concept:',
+                __( 'In this session, we will discuss the concept:', 'zume' ),
                 [
-                    'Person of Peace',
+                    __( 'Person of Peace', 'zume' ),
                 ],
-                'And we will add this tool to our toolkit:',
+                __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    'B.L.E.S.S. Prayer',
+                    __( 'B.L.E.S.S. Prayer', 'zume' ),
                 ],
             ],
         ],
@@ -3760,13 +3760,13 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Concept heard in this session:',
+                __( 'Concept heard in this session:', 'zume' ),
                 [
-                    'Person of Peace',
+                    __( 'Person of Peace', 'zume' ),
                 ],
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    'B.L.E.S.S. Prayer',
+                    __( 'B.L.E.S.S. Prayer', 'zume' ),
                 ],
             ],
         ],
@@ -3779,8 +3779,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Pray for someone in their presence using the BLESS pattern this week.',
-                'Equip someone else to pray for others using the BLESS pattern and go with them as they do it.',
+                __( 'Pray for someone in their presence using the BLESS pattern this week.', 'zume' ),
+                __( 'Equip someone else to pray for others using the BLESS pattern and go with them as they do it.', 'zume' ),
             ],
         ],
 
@@ -3803,7 +3803,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 13'
+                __( 'Session 13', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3831,7 +3831,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3855,9 +3855,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Faithfulness',
+                    __( 'Faithfulness', 'zume' ),
                     __( '3/3 Group Meeting Pattern', 'zume' ),
                 ],
             ],
@@ -3872,7 +3872,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Faithfulness',
+                    __( 'Faithfulness', 'zume' ),
                     __( '3/3 Group Meeting Pattern', 'zume' ),
                 ],
             ],
@@ -3886,8 +3886,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Spend time this week obeying, training, and sharing based on the commitments you’ve made during your 3/3 Group practice.',
-                'Pray and ask God who He wants you to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.',
+                __( 'Spend time this week obeying, training, and sharing based on the commitments you’ve made during your 3/3 Group practice.', 'zume' ),
+                __( 'Pray and ask God who He wants you to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.', 'zume' ),
             ],
         ],
 
@@ -3909,7 +3909,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 14'
+                __( 'Session 14', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3937,7 +3937,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3961,9 +3961,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will practice this tool in our toolkit:',
+                __( 'In this session, we will practice this tool in our toolkit:', 'zume' ),
                 [
-                    '3/3 Group Meeting',
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -3972,19 +3972,19 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                '(45 min)'
+                __( '(45 min)', 'zume' ),
             ],
             'left' => [
-                '3/3 Group Format',
+                __( '3/3 Group Format', 'zume' ),
                 [
-                    'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)',
-                    'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)',
-                    'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)',
+                    __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ),
+                    __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)', 'zume' ),
+                    __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)', 'zume' ),
                 ]
             ],
             'right' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
-                'Activity Resource',
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
         [
@@ -3995,9 +3995,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Tool heard in this session:',
+                __( 'Tool heard in this session:', 'zume' ),
                 [
-                    '3/3 Group Meeting',
+                    __( '3/3 Group Meeting', 'zume' ),
                 ],
             ],
         ],
@@ -4010,8 +4010,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Pray and ask God if he wants you to start a 3/3 Group. If He does, look over your list of 100 and ask God who you should invite to join you. Then invite them this week and trust God to build the group.',
-                'Find someone to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.',
+                __( 'Pray and ask God if he wants you to start a 3/3 Group. If He does, look over your list of 100 and ask God who you should invite to join you. Then invite them this week and trust God to build the group.', 'zume' ),
+                __( 'Find someone to share the 3/3 Group format with before your group meets again. Share this person’s name with the group before you go.', 'zume' ),
             ],
         ],
 
@@ -4034,7 +4034,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 15'
+                __( 'Session 15', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4062,7 +4062,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4086,10 +4086,10 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Training Cycle',
-                    'Leadership Cells',
+                    __( 'Training Cycle', 'zume' ),
+                    __( 'Leadership Cells', 'zume' ),
                 ],
             ],
         ],
@@ -4103,8 +4103,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Training Cycle',
-                    'Leadership Cells',
+                    __( 'Training Cycle', 'zume' ),
+                    __( 'Leadership Cells', 'zume' ),
                 ],
             ],
         ],
@@ -4117,8 +4117,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Pick one skill or concept you have learned in Zúme and mentor someone to reproduce it to the fourth generation.',
-                'Share the "Training Cycle" with believer on your list of 100.',
+                __( 'Pick one skill or concept you have learned in Zúme and mentor someone to reproduce it to the fourth generation.', 'zume' ),
+                __( 'Share the "Training Cycle" with believer on your list of 100.', 'zume' ),
             ],
         ],
 
@@ -4141,7 +4141,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 16'
+                __( 'Session 16', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4169,7 +4169,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4193,11 +4193,11 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Expect Non-Sequential Growth',
-                    'Pace',
-                    'Always Part of Two Churches',
+                    __( 'Expect Non-Sequential Growth', 'zume' ),
+                    __( 'Pace', 'zume' ),
+                    __( 'Always Part of Two Churches', 'zume' ),
                 ],
             ],
         ],
@@ -4211,9 +4211,9 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Expect Non-Sequential Growth',
-                    'Pace',
-                    'Always Part of Two Churches',
+                    __( 'Expect Non-Sequential Growth', 'zume' ),
+                    __( 'Pace', 'zume' ),
+                    __( 'Always Part of Two Churches', 'zume' ),
                 ],
             ],
         ],
@@ -4226,8 +4226,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Begin efforts to catalyze another simple church (spiritual family), or your first one.',
-                'If you have already started your own simple church, share the "Always Part of Two Churches" pattern with the people in it. If not, share it with another believer you know.',
+                __( 'Begin efforts to catalyze another simple church (spiritual family), or your first one.', 'zume' ),
+                __( 'If you have already started your own simple church, share the "Always Part of Two Churches" pattern with the people in it. If not, share it with another believer you know.', 'zume' ),
             ],
         ],
 
@@ -4252,7 +4252,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 17'
+                __( 'Session 17', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4280,7 +4280,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4304,9 +4304,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss the concept:',
+                __( 'In this session, we will discuss the concept:', 'zume' ),
                 [
-                    'Three-Month Plan',
+                    __( 'Three-Month Plan', 'zume' ),
                 ],
             ],
         ],
@@ -4318,9 +4318,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Concept heard in this session:',
+                __( 'Concept heard in this session:', 'zume' ),
                 [
-                    'Three-Month Plan',
+                    __( 'Three-Month Plan', 'zume' ),
                 ],
             ],
         ],
@@ -4333,8 +4333,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Set aside time on your calendar each week to work on your Three Month Plan. Plan check-ins with your training partner weekly. Each time you’re together, ask about their results and share yours, making sure you’re both working through your plans.',
-                'Share your plan with your training partner. If you don’t have a training partner, share it with another believer you know.',
+                __( 'Set aside time on your calendar each week to work on your Three Month Plan. Plan check-ins with your training partner weekly. Each time you’re together, ask about their results and share yours, making sure you’re both working through your plans.', 'zume' ),
+                __( 'Share your plan with your training partner. If you don’t have a training partner, share it with another believer you know.', 'zume' ),
             ],
         ],
 
@@ -4359,7 +4359,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 18'
+                __( 'Session 18', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4387,7 +4387,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4411,10 +4411,10 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss these concepts:',
+                __( 'In this session, we will discuss these concepts:', 'zume' ),
                 [
-                    'Coaching Checklist',
-                    'Leadership in Networks',
+                    __( 'Coaching Checklist', 'zume' ),
+                    __( 'Leadership in Networks', 'zume' ),
                 ],
             ],
         ],
@@ -4428,8 +4428,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    'Coaching Checklist',
-                    'Leadership in Networks',
+                    __( 'Coaching Checklist', 'zume' ),
+                    __( 'Leadership in Networks', 'zume' ),
                 ],
             ],
         ],
@@ -4442,8 +4442,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Identify one next step for yourself, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.',
-                'Share the concept of "Leadership in Networks" with someone else. If you don’t have a training partner, share it with another believer you know.',
+                __( 'Identify one next step for yourself, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.', 'zume' ),
+                __( 'Share the concept of "Leadership in Networks" with someone else. If you don’t have a training partner, share it with another believer you know.', 'zume' ),
             ],
         ],
 
@@ -4465,7 +4465,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 19'
+                __( 'Session 19', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4493,7 +4493,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4517,9 +4517,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will discuss the concept:',
+                __( 'In this session, we will discuss the concept:', 'zume' ),
                 [
-                    'Peer Mentoring Groups',
+                    __( 'Peer Mentoring Groups', 'zume' ),
                 ],
             ],
         ],
@@ -4531,9 +4531,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                'Concept heard in this session:',
+                __( 'Concept heard in this session:', 'zume' ),
                 [
-                    'Peer Mentoring Groups',
+                    __( 'Peer Mentoring Groups', 'zume' ),
                 ],
             ],
         ],
@@ -4546,8 +4546,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                'Discuss with your Zúme training group whether or not the members are open to continuing to meet after the conclusion of the training as a Peer Mentoring Group.',
-                'Share the concept of the "Peer Mentoring Group" with two believers on your list of 100.',
+                __( 'Discuss with your Zúme training group whether or not the members are open to continuing to meet after the conclusion of the training as a Peer Mentoring Group.', 'zume' ),
+                __( 'Share the concept of the "Peer Mentoring Group" with two believers on your list of 100.', 'zume' ),
             ],
         ],
 
@@ -4571,7 +4571,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'title',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
-                'Session 20'
+                __( 'Session 20', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4599,7 +4599,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                'Pray as a group. Invite His Holy Spirit to lead your time together.'
+                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4623,10 +4623,10 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                'In this session, we will add these tools to our toolkit:',
+                __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
                 [
-                    'Four Fields Tool',
-                    'Generation Mapping',
+                    __( 'Four Fields Tool', 'zume' ),
+                    __( 'Generation Mapping', 'zume' ),
                 ],
             ],
         ],
@@ -4651,16 +4651,16 @@ function zume_content( $lang_code = 'en') {
             'key' => 'next_steps',
             'type' => 'next_steps',
             'center' => [
-                'NEXT STEPS',
+                __( 'NEXT STEPS', 'zume' ),
             ],
             'left' => [
-                'Get a Coach',
-                'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.',
+                __( 'Get a Coach', 'zume' ),
+                __( 'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.', 'zume' ),
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
             ],
             'right' => [
-                'Join the Community',
-                'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.',
+                __( 'Join the Community', 'zume' ),
+                __( 'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.', 'zume' ),
                 'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
             ],
         ],
@@ -4668,8 +4668,8 @@ function zume_content( $lang_code = 'en') {
             'key' => 'congratulations',
             'type' => 'congratulations',
             'center' => [
-                'CONGRATULATIONS',
-                'on completing Zume Training!',
+                __( 'CONGRATULATIONS', 'zume' ),
+                __( 'on completing Zume Training!', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4678,7 +4678,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 'break',
             'type' => 'break',
             'center' => [
-                'TAKE A BREAK',
+                __( 'TAKE A BREAK', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -4688,9 +4688,9 @@ function zume_content( $lang_code = 'en') {
             'type' => 'final',
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
-                'To saturate the world with multiplying disciples in our generation.',
+                __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
                 'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                'Zume is a community of practice for those who want to see disciple making movements.'
+                __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],
             'right' => [],

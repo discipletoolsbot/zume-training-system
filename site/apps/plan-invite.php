@@ -33,7 +33,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( ( 'zume_app' === $url_parts[0] && 'plan_invite' === $url_parts[1] ) && ! dt_is_rest() ) {
+        if ( isset( $url_parts[0] )  &&  ( 'zume_app' === $url_parts[0] && 'plan_invite' === $url_parts[1] ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 

@@ -927,7 +927,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enDisplayName' => 'Spanish',
                 'code' => 'es',
                 'displayCode' => 'es',
-                'locale' => 'es',
+                'locale' => 'es_ES',
                 'nativeName' => 'Español',
                 'rtl' => false,
             ),

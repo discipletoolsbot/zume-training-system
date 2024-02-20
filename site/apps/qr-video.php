@@ -33,7 +33,7 @@ class Zume_QR_Video extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) && ! dt_is_rest() ) {
+        if ( isset( $url_parts[0] ) && ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) && ! dt_is_rest() ) {
 
             $this->set_locale( $lang_code );
 

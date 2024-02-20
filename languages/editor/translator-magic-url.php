@@ -106,7 +106,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function header_style(){
-        if ( $_GET['tab'] === 'view_course' ) {
+        if ( isset( $_GET['tab'] ) && $_GET['tab'] === 'view_course' ) {
             ?>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.js" integrity="sha512-vsjtv6Dty7C9eeMlJ+02kvlhvVlqKsJHOFWZ1ZR5WrRlU/oTlW8d8wPHWlKX579O4OO/kW5DW9XFtQ9J3gKeKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" rel="stylesheet">
@@ -514,11 +514,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
-        $switch = switch_to_locale($lang['locale']);
-
-        dt_write_log( $lang['locale'] );
-        dt_write_log($switch);
-        dt_write_log( is_locale_switched() );
+        //load the new text domain
+        $new_language = $lang['locale'];
+        load_textdomain( 'zume', plugin_dir_path(__DIR__) .'/zume-'.$new_language.'.mo' );
 
         ?>
 

@@ -21,7 +21,7 @@ trait Translateable {
     }
 
     public function slug_matches( $type ) {
-        $page_slug = $this->url_parts[0];
+        $page_slug = $this->url_parts[0] ?? '';
 
         return $type === substr( $page_slug, 0, strlen( $type ) );
     }

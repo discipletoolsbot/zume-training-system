@@ -427,7 +427,7 @@ class Zume_Training {
          * When the login fails with bad email/password, we need to get the lang_code from the
          * HTTP_REFERER url, otherwise it redirects back to english
          */
-        if ( $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
+        if ( isset( $url_parts[0] ) &&  $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
             $url = wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) ) );
             [
                 'lang_code' => $lang_code,
