@@ -1,8 +1,9 @@
-import { LitElement, html } from 'lit';
+import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
+import { DashPage } from './dash-page';
 
-export class DashPlans extends LitElement {
+export class DashPlans extends DashPage {
     static get properties() {
         return {
             loading: { type: Boolean, attribute: false },
@@ -23,6 +24,7 @@ export class DashPlans extends LitElement {
     }
 
     firstUpdated() {
+        super.firstUpdated()
         const status = this.filterStatus || ''
         this.fetchCommitments(status)
     }
@@ -143,9 +145,9 @@ export class DashPlans extends LitElement {
     renderListItem(commitment) {
         const { question, answer, id, status } = commitment
         return html`
-            <li class="list__item">
+            <li class="list__item | switcher | switcher-width-30">
                 <span>${question} <b>${answer}</b></span>
-                <div class="list__secondary">
+                <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
                         ${status === 'closed'
                             ? html`<span class="icon zume-check-mark success"></span>`
@@ -176,19 +178,25 @@ export class DashPlans extends LitElement {
 
     render() {
         return html`
-            <div class="dashboard__content">
-                <div class="dashboard__header">
+            <div class="dashboard__content" data-no-secondary-area>
+                <dash-header-right></dash-header-right>
+                <div class="dashboard__header left">
                     <div class="dashboard__title">
-                        <span class="icon ${this.route.icon}"></span>
-                        <h1 class="h3">${this.route.translation}</h1>
-                        <button class="icon-btn f-2" data-toggle="filter-menu">
-                            <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
-                            <span class="icon zume-filter brand-light" aria-hidden="true"></span>
-                        </button>
-                        <button class="icon-btn f-2" @click=${this.openCommitmentsModal}>
-                            <span class="visually-hidden">${zumeDashboard.translations.add_commitments}</span>
-                            <span class="icon zume-plus brand-light" aria-hidden="true"></span>
-                        </button>
+                        <div>
+                            <dash-sidebar-toggle></dash-sidebar-toggle>
+                            <span class="icon ${this.route.icon}"></span>
+                            <h1 class="h3">${this.route.translation}</h1>
+                        </div>
+                        <div class="s--2">
+                            <button class="icon-btn f-2" data-toggle="filter-menu">
+                                <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
+                                <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                            </button>
+                            <button class="icon-btn f-2" @click=${this.openCommitmentsModal}>
+                                <span class="visually-hidden">${zumeDashboard.translations.add_commitments}</span>
+                                <span class="icon zume-plus brand-light" aria-hidden="true"></span>
+                            </button>
+                        </div>
                     </div>
                     <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
@@ -213,18 +221,12 @@ export class DashPlans extends LitElement {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__header right">
-                    <launch-course></launch-course>
-                </div>
                 <div class="dashboard__main">
                     ${
                         this.loading
                             ? html`<span class="loading-spinner active"></span>`
                             : html`
                                 <ul class="list">
-                                    <li class="list__item">
-                                        <h2 class="f-1">I will</h2>
-                                    </li>
                                     ${
                                         !this.loading && this.commitments && this.commitments.length > 0
                                         ? repeat(this.commitments, (commitment) => commitment.id, this.renderListItem)

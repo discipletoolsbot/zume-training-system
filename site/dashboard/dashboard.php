@@ -118,6 +118,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'grid' => __( 'Grid View', 'zume' ),
                     'view_now' => __( 'View Now', 'zume' ),
                     'view' => __( 'View', 'zume' ),
+                    'menu' => __( 'Menu', 'zume' ),
                     'share_title' => __( 'Check out this Zume concept', 'zume' ),
                     'preview' => __( 'Preview', 'zume' ),
                     'add_commitments' => __( 'Add commitments', 'zume' ),

@@ -1,7 +1,8 @@
-import { LitElement, html } from 'lit';
+import { html } from 'lit';
 import { DashBoard } from './dash-board';
+import { DashPage } from './dash-page';
 
-export class DashTopLevel extends LitElement {
+export class DashTopLevel extends DashPage {
     static get properties() {
         return {
             view: { type: String, attribute: false },
@@ -59,6 +60,7 @@ export class DashTopLevel extends LitElement {
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <div class="dashboard__title">
+                        <dash-sidebar-toggle></dash-sidebar-toggle>
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
@@ -71,9 +73,7 @@ export class DashTopLevel extends LitElement {
                         </button>
                     </div>
                 </div>
-                <div class="dashboard__header right">
-                    <launch-course></launch-course>
-                </div>
+                <dash-header-right></dash-header-right>
                 <div class="dashboard__main p-2">
                     ${this.renderLinks()}
                 </div>

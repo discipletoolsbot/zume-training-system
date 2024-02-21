@@ -1,8 +1,9 @@
-import { LitElement, html } from 'lit';
+import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
+import { DashPage } from './dash-page';
 
-export class DashProgress extends LitElement {
+export class DashProgress extends DashPage {
     static get properties() {
         return {
             loading: { type: Boolean, attribute: false },
@@ -129,13 +130,19 @@ export class DashProgress extends LitElement {
             this.openStates[key] = true
 
             setTimeout(() => {
+                collapseElement.style.height = 'auto'
                 collapseElement.dataset.state = 'open'
             }, transitionDuration);
         } else {
-            collapseElement.style.height = '0'
+            /* Add back the height so we can transition back to 0 */
+            collapseElement.style.height = height + 'px'
             collapseElement.dataset.state = 'closing'
             this.openStates[key] = false
 
+            /* Set the height to 0 after this function has finished so that we key the transition correctly */
+            setTimeout(() => {
+                collapseElement.style.height = '0'
+            }, 10)
             setTimeout(() => {
                 collapseElement.dataset.state = 'closed'
             }, transitionDuration);
@@ -152,7 +159,7 @@ export class DashProgress extends LitElement {
         }
 
         return html`
-            <li class="list__item tight" @click=${() => this.toggleDetails(key)} role="button">
+            <li class="switcher | switcher-width-30 list__item tight" @click=${() => this.toggleDetails(key)} role="button">
                 <div>
                     <h2 class="h5 bold m0">${title}</h2>
                     <div class="collapse" id="details-${key}" data-state="closed">
@@ -165,7 +172,7 @@ export class DashProgress extends LitElement {
                         </div>
                     </div>
                 </div>
-                <div class="list__secondary" data-align-start>
+                <div class="list__secondary grow-0" data-align-start>
                     <div class="training-progress">
                         <button
                             data-subtype=${host[0].subtype}
@@ -203,9 +210,10 @@ export class DashProgress extends LitElement {
 
     render() {
         return html`
-            <div class="dashboard__content">
-                <div class="dashboard__header">
+            <div class="dashboard__content" data-no-secondary-area>
+                <div class="dashboard__header left">
                     <div class="dashboard__title">
+                        <dash-sidebar-toggle></dash-sidebar-toggle>
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
                         <button class="icon-btn f-2" data-toggle="filter-menu">
@@ -233,9 +241,7 @@ export class DashProgress extends LitElement {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__header right">
-                    <launch-course></launch-course>
-                </div>
+                <dash-header-right></dash-header-right>
                 <div class="dashboard__main">
                     ${
                         html`
@@ -246,7 +252,6 @@ export class DashProgress extends LitElement {
                             </ul>
                         `
                     }
-
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">

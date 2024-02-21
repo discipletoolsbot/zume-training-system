@@ -1,19 +1,23 @@
 .dash-menu__list-item {
     display: grid;
-    grid-template-columns: 15% 1fr 8rem;
-    gap: spacing(2);
+    grid-template-columns: auto 1fr;
+    gap: spacing(1);
     align-items: center;
     justify-content: center;
-}
-
-.dash-menu__icon-area {
-    text-align: center;
-    font-weight: 600;
-    text-transform: uppercase;
-    line-height: 1;
 }
 
 .dash-menu__list-icon {
     color: color('brand-light');
     font-size: font-size(6);
+}
+
+.dash-menu__text-area {
+    align-items: center;
+    justify-content: space-between;
+    gap: spacing(1);
+}
+
+.dash-menu__view-button {
+    flex-grow: 0;
+    flex-basis: content;
 }

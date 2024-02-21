@@ -1,8 +1,9 @@
-import { LitElement, html } from 'lit';
+import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
+import { DashPage } from './dash-page';
 
-export class DashTrainings extends LitElement {
+export class DashTrainings extends DashPage {
     static get properties() {
         return {
             loading: { type: Boolean, attribute: false },
@@ -23,6 +24,7 @@ export class DashTrainings extends LitElement {
     }
 
     firstUpdated() {
+        super.firstUpdated()
         const status = this.filterStatus || ''
         this.fetchCommitments(status)
     }
@@ -177,7 +179,7 @@ export class DashTrainings extends LitElement {
     render() {
         return html`
             <div class="dashboard__content">
-                <div class="dashboard__header">
+                <div class="dashboard__header left">
                     <div class="d-flex gap-0">
                         <h1 class="h3">${this.route.translation}</h1>
                         <button class="icon-btn f-2" @click=${this.openCommitmentsModal}>
@@ -212,9 +214,7 @@ export class DashTrainings extends LitElement {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__header right">
-                    <launch-course></launch-course>
-                </div>
+                <dash-header-right></dash-header-right>
                 <div class="dashboard__main">
                     ${
                         this.loading

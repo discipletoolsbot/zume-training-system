@@ -18,23 +18,34 @@ export class ListLink extends NavLink {
 
     render() {
         return html`
-            <div
-                class="dash-menu__list-item"
-                data-locked=${this.printBool(this.locked)}
-                data-completed=${this.printBool(this.completed)}
-            >
-                <div class="dash-menu__icon-area | stack--5">
-                    <span class="icon ${this.getIcon()} dash-menu__list-icon"></span>
-                    ${this.renderText()}
+            <div class="container-inline">
+                <div
+                    class="dash-menu__list-item"
+                    data-locked=${this.printBool(this.locked)}
+                    data-completed=${this.printBool(this.completed)}
+                >
+                    <div class="dash-menu__icon-area | stack--5">
+                        <span class="icon ${this.getIcon()} dash-menu__list-icon"></span>
+                    </div>
+                    <div class="dash-menu__text-area | switcher | switcher-width-20">
+                        <div>
+                            <h3 class="f-1 bold uppercase">${this.text}</h3>
+                            <p>${this.explanation}</p>
+                        </div>
+                        <a
+                            href=${this.href}
+                            class="dash-menu__view-button btn ${this.locked ? 'locked' : 'light'} tight"
+                            role="button"
+                            @click=${this.handleClick}
+                        >
+                            ${
+                                this.locked
+                                    ? zumeDashboard.translations.preview
+                                    : zumeDashboard.translations.view_now
+                            }
+                        </a>
+                    </div>
                 </div>
-                <span>${this.explanation}</span>
-                <a href=${this.href} class="btn ${this.locked ? 'locked' : 'light'} tight" role="button" @click=${this.handleClick}>
-                    ${
-                        this.locked
-                            ? zumeDashboard.translations.preview
-                            : zumeDashboard.translations.view_now
-                    }
-                </a>
             </div>
         `
     }

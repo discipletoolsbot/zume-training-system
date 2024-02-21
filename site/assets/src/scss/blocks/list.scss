@@ -26,9 +26,10 @@
 .list__secondary {
     display: flex;
     align-items: center;
+    gap: spacing(0);
 
-    & > * {
-        margin-inline: spacing(0);
+    & > :first-child {
+        margin-inline-start: auto;
     }
 
     & .icon {
