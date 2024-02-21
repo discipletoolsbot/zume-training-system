@@ -7,7 +7,7 @@
 
             <nav class="nav" id="nav" role="list">
                 <div class="cluster | s--2 | nav__list nav__list--secondary" role="list">
-                    
+
                     <?php if ( is_user_logged_in() ) : ?>
 
                         <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
