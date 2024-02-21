@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-02-19 20:38-0700\n"
+"POT-Creation-Date: 2024-02-20 12:57-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -116,15 +116,14 @@ msgstr "Zume"
 msgid "god-uses-ordinary-people"
 msgstr "Dieu utilise des gens ordinaires"
 
-#: globals.php:1205 site/course/0-sesssion-data.php:59
-#: site/course/course-content.php:63 site/course/course-content.php:83
-#: site/course/course-content.php:280 site/course/course-content.php:2544
-#: site/course/course-content.php:2560 site/follow-jesus/follow-jesus.php:148
+#: globals.php:1205 site/course/course-content.php:63
+#: site/course/course-content.php:83 site/course/course-content.php:280
+#: site/course/course-content.php:2544 site/course/course-content.php:2560
+#: site/follow-jesus/follow-jesus.php:148
 msgid "God Uses Ordinary People"
 msgstr "Dieu utilise des gens ordinaires"
 
-#: globals.php:1206 site/course/0-sesssion-data.php:60
-#: site/follow-jesus/follow-jesus.php:149
+#: globals.php:1206 site/follow-jesus/follow-jesus.php:149
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -132,14 +131,13 @@ msgstr ""
 "Voir comment Dieu utilise des gens ordinaires faisant des choses simples "
 "pour avoir un grand impact."
 
-#: globals.php:1214 site/course/0-sesssion-data.php:81
-#: site/course/course-content.php:2545 site/course/course-content.php:2561
-#: site/follow-jesus/follow-jesus.php:152
+#: globals.php:1214 site/course/course-content.php:2545
+#: site/course/course-content.php:2561 site/follow-jesus/follow-jesus.php:152
 msgid "Simple Definition of Disciple and Church"
 msgstr "Définition simple du disciple et de l'église"
 
-#: globals.php:1215 site/course/0-sesssion-data.php:82
-#: site/course/course-content.php:118 site/follow-jesus/follow-jesus.php:153
+#: globals.php:1215 site/course/course-content.php:118
+#: site/follow-jesus/follow-jesus.php:153
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
@@ -189,13 +187,11 @@ msgstr ""
 "chaque semaine pour s'encourager mutuellement dans les domaines qui vont "
 "bien et révéler les domaines à corriger."
 
-#: globals.php:1250 site/course/0-sesssion-data.php:199
-#: site/follow-jesus/follow-jesus.php:168
+#: globals.php:1250 site/follow-jesus/follow-jesus.php:168
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Mode de vie de producteurs au lieu de consommateurs"
 
-#: globals.php:1251 site/course/0-sesssion-data.php:200
-#: site/follow-jesus/follow-jesus.php:169
+#: globals.php:1251 site/follow-jesus/follow-jesus.php:169
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -203,23 +199,19 @@ msgstr ""
 "On découvrira les quatre  façons principales par lesquelles Dieu rend les "
 "disciples de tous les jours plus semblables à Jésus."
 
-#: globals.php:1259 site/course/0-sesssion-data.php:231
-#: site/follow-jesus/follow-jesus.php:178
+#: globals.php:1259 site/follow-jesus/follow-jesus.php:178
 msgid "How to Spend an Hour in Prayer"
 msgstr "Comment passer une heure en prière"
 
-#: globals.php:1260 site/course/0-sesssion-data.php:232
-#: site/follow-jesus/follow-jesus.php:179
+#: globals.php:1260 site/follow-jesus/follow-jesus.php:179
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Voir comme il est facile de passer une heure en prière."
 
-#: globals.php:1268 site/course/0-sesssion-data.php:282
-#: site/follow-jesus/follow-jesus.php:265
+#: globals.php:1268 site/follow-jesus/follow-jesus.php:265
 msgid "Relational Stewardship – List of 100"
 msgstr "Nos relations : Liste de 100"
 
-#: globals.php:1269 site/course/0-sesssion-data.php:283
-#: site/follow-jesus/follow-jesus.php:266
+#: globals.php:1269 site/follow-jesus/follow-jesus.php:266
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 "Un outil conçu pour aider chacun à être un bon intendant de ses relations."
@@ -373,11 +365,13 @@ msgstr ""
 
 #: globals.php:1385 site/course/course-content.php:1435
 #: site/course/course-content.php:1481 site/course/course-content.php:1524
-#: site/course/course-content.php:1622 site/course/course-content.php:1714
-#: site/course/course-content.php:1808 site/course/course-content.php:1884
+#: site/course/course-content.php:1622 site/course/course-content.php:1673
+#: site/course/course-content.php:1714 site/course/course-content.php:1808
+#: site/course/course-content.php:1858 site/course/course-content.php:1884
 #: site/course/course-content.php:3861 site/course/course-content.php:3876
-#: site/follow-jesus/follow-jesus.php:200
-msgid "3/3 Group Meeting Pattern"
+#: site/course/course-content.php:3966 site/course/course-content.php:3978
+#: site/course/course-content.php:4000 site/follow-jesus/follow-jesus.php:200
+msgid "3/3 Group Meeting"
 msgstr "Modèle de rencontre de groupe 3/3"
 
 #: globals.php:1386 site/follow-jesus/follow-jesus.php:201
@@ -601,11 +595,10 @@ msgid "Sign Out"
 msgstr "Déconnexion"
 
 #: languages/mobile-pwa-strings.php:22
-msgid "Download all"
-msgstr "Tout télécharger"
+msgid "Download All"
+msgstr "Les télécharger tous"
 
-#: languages/mobile-pwa-strings.php:23 site/course/0-sesssion-data.php:44
-#: site/course/0-sesssion-data.php:316 site/guidebook/guidebook.php:154
+#: languages/mobile-pwa-strings.php:23 site/guidebook/guidebook.php:154
 #: site/guidebook/guidebook.php:169 site/guidebook/guidebook.php:184
 #: site/guidebook/guidebook.php:199 site/guidebook/guidebook.php:214
 #: site/guidebook/guidebook.php:229 site/home/home.php:390
@@ -709,29 +702,151 @@ msgstr "Espace de rangement"
 msgid "What is Zume Training?"
 msgstr "La formation Zúme"
 
-#: site/about/about.php:125
+#: site/about/about.php:95
+msgid ""
+"Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew "
+"13:33, Jesus compared the kingdom of heaven to yeast mixed into a large "
+"amount of flour, permeating the entire dough. This parable illustrates how "
+"ordinary people, using ordinary resources, can have exponential impact for "
+"the Kingdom of God."
+msgstr ""
+"Zúme, le mot grec pour \"levain\", a une signification importante. Dans "
+"Matthieu 13:33, Jésus compare le royaume des cieux à du levain mélangé à une "
+"grande quantité de farine, qui imprègne toute la pâte. Cette parabole "
+"illustre comment des personnes ordinaires, utilisant des ressources "
+"ordinaires, peuvent avoir un impact exponentiel sur le Royaume de Dieu."
+
+#: site/about/about.php:99
 msgid ""
 "Zume Training exists to saturate the globe with multiplying disciples in our "
 "generation."
 msgstr "Saturer le monde de disciples qui se multiplient"
 
-#: site/about/about.php:138
+#: site/about/about.php:104
+msgid ""
+"In 2015, a small group committed to fulfilling Jesus’ Great Commission "
+"mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
+"discussed the challenges in multiplying disciples around the world. "
+"Recognizing the need for accessible, multilingual, and flexible training "
+"that aligns with Jesus’ call for ordinary people to be ‘yeast’ for the "
+"Kingdom, the idea for online video-based training was born. Ultimately, this "
+"idea evolved into what is now known as Zúme."
+msgstr ""
+"En 2015, un petit groupe engagé dans l'accomplissement du mandat de la "
+"Grande Commission de Jésus s'est réuni pour une réunion de leadership du "
+"Projet Jonathan. Ils ont prié et discuté des défis liés à la multiplication "
+"des disciples dans le monde. Reconnaissant le besoin d'une formation "
+"accessible, multilingue et flexible qui s'aligne sur l'appel de Jésus pour "
+"que les gens ordinaires soient des \"levures\" pour le Royaume, l'idée d'une "
+"formation en ligne basée sur des vidéos est née. Cette idée a finalement "
+"évolué vers ce qui est aujourd'hui connu sous le nom de Zúme."
+
+#: site/about/about.php:105
+msgid ""
+"The foundational disciple-making principles in Zúme Training come straight "
+"from the Bible and have been tested globally for over thirty years. These "
+"principles empower ordinary believers to become disciples who, in turn, make "
+"disciples, resulting in millions of disciples advancing the Kingdom in "
+"spiritually dark places."
+msgstr ""
+"Les principes fondamentaux de la formation de disciples de Zúme Training "
+"sont directement tirés de la Bible et ont été testés dans le monde entier "
+"pendant plus de trente ans. Ces principes permettent aux croyants ordinaires "
+"de devenir des disciples qui, à leur tour, font des disciples, ce qui se "
+"traduit par des millions de disciples qui font avancer le Royaume dans des "
+"endroits spirituellement sombres."
+
+#: site/about/about.php:118
+msgid ""
+"Launched on February 14, 2017, through Kingdom collaboration, Zúme Training "
+"remains an open initiative without formal organizational control or a "
+"separate entity. Since Zúme is not run by an organization, there is no "
+"formal statement of faith. All involved, however, would agree with the "
+"Lausanne Covenant."
+msgstr ""
+"Lancée le 14 février 2017 par la collaboration du Royaume, Zúme Training "
+"reste une initiative ouverte sans contrôle organisationnel formel ni entité "
+"distincte. Comme Zúme n'est pas géré par une organisation, il n'y a pas de "
+"déclaration de foi formelle. Toutes les personnes impliquées seraient "
+"toutefois d'accord avec le Pacte de Lausanne."
+
+#: site/about/about.php:124
+msgid ""
+"The goal is to saturate the globe with multiplying disciples in our "
+"generation. The Biblical principles found in this training are simple. The "
+"world changing potential is in the practice of these principles."
+msgstr ""
+"L'objectif est de saturer le monde en multipliant les disciples dans notre "
+"génération. Les principes bibliques contenus dans cette formation sont "
+"simples. C'est la mise en pratique de ces principes qui peut changer le "
+"monde."
+
+#: site/about/about.php:125
+msgid ""
+"The vision of Zúme is comparable to yeast working through the entire dough, "
+"spreading basic Kingdom tools into neighborhoods worldwide."
+msgstr ""
+"La vision de Zúme est comparable à la levure qui travaille dans toute la "
+"pâte, répandant les outils de base du Royaume dans les quartiers du monde "
+"entier."
+
+#: site/about/about.php:132
+msgid "The vision of Zúme has two parts:"
+msgstr "La vision de Zúme comporte deux volets :"
+
+#: site/about/about.php:136
 msgid "1 Training"
 msgstr "1 Formation"
 
-#: site/about/about.php:151
+#: site/about/about.php:140
+msgid "Part 1:"
+msgstr "Première partie :"
+
+#: site/about/about.php:141
+msgid ""
+"To train at least one disciple maker for every 5,000 people in North America "
+"and one disciple maker for every 50,000 people globally."
+msgstr ""
+"Former au moins un faiseur de disciples pour 5 000 personnes en Amérique du "
+"Nord et un faiseur de disciples pour 50 000 personnes dans le monde."
+
+#: site/about/about.php:147
 msgid "2 Simple Churches"
 msgstr "2 églises organiques"
 
-#: site/about/about.php:156
+#: site/about/about.php:151
+msgid "Part 2:"
+msgstr "Partie 2 :"
+
+#: site/about/about.php:152
+msgid ""
+"For trained disciple makers to start at least 2 simple multiplying churches "
+"for every 5,000 people in North America and 2 simple churches for every "
+"50,000 people globally."
+msgstr ""
+"Pour que les faiseurs de disciples formés démarrent au moins 2 églises "
+"simples et multiplicatrices pour 5 000 personnes en Amérique du Nord et 2 "
+"églises simples pour 50 000 personnes dans le monde."
+
+#: site/about/about.php:158
+msgid ""
+"With these small beginnings ... what the Bible calls yeast ... we could see "
+"the world covered with multiplying disciples and churches. Explore Zúme "
+"Training and find out how!"
+msgstr ""
+"Avec ces petits commencements ... ce que la Bible appelle le levain ... nous "
+"pourrions voir le monde se couvrir de disciples et d'églises qui se "
+"multiplient. Explorez Zúme Training et découvrez comment !"
+
+#: site/about/about.php:161
 msgid "Sign Me Up!"
 msgstr "Inscrivez-moi!"
 
-#: site/about/about.php:161
+#: site/about/about.php:166
 msgid "How does Zume Training Work?"
 msgstr "La formation Zúme"
 
-#: site/about/about.php:166 site/home/home.php:216
+#: site/about/about.php:171 site/home/home.php:216
 #, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
@@ -740,107 +855,155 @@ msgstr ""
 "%1$sL'inscription gratuite%2$s vous donne un accès complet à tous les "
 "supports de formation et au coaching en ligne."
 
-#: site/about/about.php:170 site/home/home.php:220
+#: site/about/about.php:175 site/home/home.php:220
 #, php-format
 msgid ""
-"%1$sInstructional Videos%2$s help your group undernstand basic principles of "
-"multiplying disciples"
+"%1$sInstructional Videos%2$s help your group understand basic principles of "
+"multiplying disciples."
 msgstr ""
 "%1$sLes vidéos pédagogiques%2$s aident votre groupe à comprendre les "
 "principes de base de la multiplication des disciples"
 
-#: site/about/about.php:174 site/home/home.php:224
+#: site/about/about.php:179 site/home/home.php:224
 #, php-format
 msgid ""
-"%1$sGroup Discussions%2$s help your group think through what is being shared"
+"%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
-"%1$sDiscussions de groupe%2$s : aidez votre groupe à réfléchir à ce qui est "
-"partagé"
+"%1$sLes discussions de groupe%2$s aident votre groupe à réfléchir à ce qui "
+"est partagé."
 
-#: site/about/about.php:178 site/home/home.php:228
+#: site/about/about.php:183 site/home/home.php:228
 #, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
-"practice"
+"practice."
 msgstr ""
 "%1$sDes exercices simples%2$s aident votre groupe à mettre en pratique ce "
 "que vous apprenez"
 
-#: site/about/about.php:182 site/home/home.php:232
+#: site/about/about.php:187 site/home/home.php:232
 #, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
-"sessions"
+"sessions."
 msgstr ""
 "%1$sLes défis de la session%2$s permettent à votre groupe de continuer à "
 "apprendre et à se développer entre les sessions"
 
-#: site/about/about.php:193
+#: site/about/about.php:198
 msgid "Before you start."
 msgstr "Avant de commencer."
 
-#: site/about/about.php:200
+#: site/about/about.php:205
 msgid "Zume is NOT like other trainings!"
 msgstr "Zume n'est pas une formation comme les autres !"
 
-#: site/about/about.php:202
+#: site/about/about.php:207
 msgid "First:"
 msgstr "Premier"
 
-#: site/about/about.php:203
+#: site/about/about.php:208
 msgid ""
-"Eiusmod in quis incididunt in id excepteur amet occaecat. In quis "
-"exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem "
-"adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa."
+"Zúme is designed to be done as a group. Group exercise, discussions, and "
+"practicing of skills all will be better with others, so gather a group, if "
+"possible."
 msgstr ""
-"Eiusmod in quis incididunt in id excepteur amet occaecat. In quis "
-"exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem "
-"adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa."
+"Zúme est conçu pour être pratiqué en groupe. Les exercices en groupe, les "
+"discussions et la mise en pratique des compétences sont tous plus efficaces "
+"avec d'autres personnes, alors réunissez un groupe, si possible."
 
-#: site/about/about.php:206
+#: site/about/about.php:211
 msgid "Second:"
 msgstr "Deuxièmement :"
 
-#: site/about/about.php:207
+#: site/about/about.php:212
 msgid ""
-"Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse "
-"incididunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut "
-"eiusmod aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation "
-"cupidatat fugiat mollit. Magna fugiat dolore cupidatat proident non velit "
-"laborum aliquip commodo nulla consectetur et mollit in."
+"Zúme is about developing skills, building competence, not just gaining "
+"knowledge . In every session, the goal is fruitful action. The best outcome "
+"of the training will be a changed lifestyle and an experience of increased "
+"power in your faith."
 msgstr ""
-"Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse "
-"incidunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut eiusmod "
-"aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation cupidatat "
-"fugiat mollit. Magna fugiat dolore cupidatat proident non velit laborum "
-"aliquip commodo nulla consectetur et mollit in."
+"Zúme vise à développer des aptitudes et des compétences, et pas seulement à "
+"acquérir des connaissances. Dans chaque session, l'objectif est une action "
+"fructueuse. Le meilleur résultat de la formation sera un changement de style "
+"de vie et une expérience de puissance accrue dans votre foi."
 
-#: site/about/about.php:215
+#: site/about/about.php:220
 msgid "What's required"
 msgstr "Mot de passe requis"
 
-#: site/about/about.php:218
-msgid "Requirements for Zume Training:"
-msgstr "Se rediriger vers la formation"
+#: site/about/about.php:223
+msgid "Needed for the training:"
+msgstr "Nécessaire pour la formation :"
 
-#: site/about/about.php:232
-msgid "NOT Required for Zume Training:"
-msgstr "Se rediriger vers la formation"
+#: site/about/about.php:225
+msgid "At least 3 people, but ideally less than 12."
+msgstr "Au moins 3 personnes, mais idéalement moins de 12."
 
-#: site/about/about.php:249
+#: site/about/about.php:226
+msgid ""
+"Commitment to spend 20 hours learning and practicing the concepts and tools "
+"in the course."
+msgstr ""
+"S'engager à consacrer 20 heures à l'apprentissage et à la mise en pratique "
+"des concepts et des outils du cours."
+
+#: site/about/about.php:227
+msgid ""
+"A person to facilitate (potentially you) the meeting time and location, to "
+"guide the follow-up discussion, and facilitate action prompts."
+msgstr ""
+"Une personne pour faciliter (potentiellement vous) l'heure et le lieu de la "
+"réunion, pour guider la discussion de suivi et pour faciliter les "
+"incitations à l'action."
+
+#: site/about/about.php:236
+msgid "NOT needed for the training:"
+msgstr "PAS nécessaire pour la formation :"
+
+#: site/about/about.php:238
+msgid ""
+"More knowledge or experience than the rest of your group is not needed! If "
+"you can click next, you can lead a Zúme Training."
+msgstr ""
+"Il n'est pas nécessaire d'avoir plus de connaissances ou d'expérience que le "
+"reste du groupe ! Si vous pouvez cliquer sur suivant, vous pouvez diriger "
+"une formation Zúme."
+
+#: site/about/about.php:239
+msgid ""
+"Special permission to lead a training is not needed! Zúme is self-"
+"facilitated, self-initiated, and you can start today."
+msgstr ""
+"Il n'est pas nécessaire d'avoir une autorisation spéciale pour animer une "
+"formation ! Zúme est auto-facilitée, auto-initiée, et vous pouvez commencer "
+"dès aujourd'hui."
+
+#: site/about/about.php:250
 msgid "Connecting with a Coach."
 msgstr "Se connecter avec un coach"
 
-#: site/about/about.php:260 site/course/course-content.php:4657
+#: site/about/about.php:257
+msgid ""
+"All along the way, the Zúme community is eager to support you by providing a "
+"COACH to help you and your group successfully implement the training. Don’t "
+"hesitate to reach out with questions or concerns!"
+msgstr ""
+"Tout au long du processus, la communauté Zúme est prête à vous soutenir en "
+"mettant à votre disposition un COACH pour vous aider, vous et votre groupe, "
+"à mettre en œuvre la formation avec succès. N'hésitez pas à nous contacter "
+"si vous avez des questions ou des inquiétudes !"
+
+#: site/about/about.php:258 site/course/course-content.php:4657
 #: site/dashboard/dashboard.php:131 site/parts/footer.php:8
 msgid "Get a Coach"
 msgstr "Se procurer un coach"
 
-#: site/about/about.php:269
+#: site/about/about.php:267
 msgid "Are you ready? Register today."
 msgstr "Êtes-vous prêt ? Inscrivez-vous dès aujourd'hui."
 
-#: site/about/about.php:273 site/guidebook/guidebook.php:248
+#: site/about/about.php:271 site/guidebook/guidebook.php:248
 #: site/guidebook/guidebook.php:263 site/home/home.php:117
 msgid "Register Free"
 msgstr "Inscription gratuite"
@@ -858,8 +1021,7 @@ msgstr "Veuillez saisir un code d'ami."
 msgid "Not a recognized code. Please check the number."
 msgstr "Code non reconnu. Veuillez vérifier le numéro."
 
-#: site/apps/checkin.php:158 site/course/0-sesssion-data.php:39
-#: site/course/0-sesssion-data.php:177
+#: site/apps/checkin.php:158
 msgid "Checkin"
 msgstr "Checkin"
 
@@ -888,492 +1050,6 @@ msgstr "Veuillez saisir un code."
 msgid "Plan Invitation"
 msgstr "Invitation au plan"
 
-#: site/course/0-sesssion-data.php:35
-msgid "Welcome to Zúme"
-msgstr "Bienvenue à Zúme !"
-
-#: site/course/0-sesssion-data.php:40 site/course/0-sesssion-data.php:178
-msgid "Have all of the participants of the training check-in"
-msgstr "Demander à tous les participants à la formation de se présenter"
-
-#: site/course/0-sesssion-data.php:45
-msgid ""
-"You will be able to follow along on a digital PDF for this session, but "
-"please make sure that each member of your group has a printed copy of the "
-"materials for future sessions."
-msgstr ""
-"Vous serez en mesure de suivre cette séance sur un PDF numérique, mais "
-"veuillez vous assurer que chaque membre de votre groupe a une copie imprimée "
-"des documents pour les séances suivantes. Cette séance est longue, vous "
-"pouvez choisir de la faire en une ou deux fois."
-
-#: site/course/0-sesssion-data.php:47
-msgid "DOWNLOAD GUIDEBOOK"
-msgstr "TÉLÉCHARGER LE GUIDE"
-
-#: site/course/0-sesssion-data.php:54 site/course/10session.php:392
-#: site/course/20session.php:492
-msgid "Group Prayer (5min)"
-msgstr "Prière en groupe (5 min)"
-
-#: site/course/0-sesssion-data.php:55 site/course/10session.php:400
-#: site/course/20session.php:500 site/course/course-content.php:50
-#: site/course/course-content.php:2531
-msgid ""
-"Begin with prayer. Spiritual insight and transformation is not possible "
-"without the Holy Spirit. Take time as a group to invite Him to guide you "
-"over this session."
-msgstr ""
-"Commencez par la prière. La compréhension et la transformation spirituelles "
-"ne sont pas possibles sans le Saint-Esprit. Prenez le temps, en groupe, de "
-"l'inviter à vous guider au cours de cette session."
-
-#: site/course/0-sesssion-data.php:65 site/course/0-sesssion-data.php:87
-#: site/course/0-sesssion-data.php:205 site/course/course-content.php:79
-#: site/course/course-content.php:113 site/course/course-content.php:151
-#: site/course/course-content.php:188 site/course/course-content.php:235
-#: site/course/course-content.php:396 site/course/course-content.php:440
-#: site/course/course-content.php:494 site/course/course-content.php:665
-#: site/course/course-content.php:725 site/course/course-content.php:779
-#: site/course/course-content.php:946 site/course/course-content.php:984
-#: site/course/course-content.php:1022 site/course/course-content.php:1059
-#: site/course/course-content.php:1098 site/course/course-content.php:1252
-#: site/course/course-content.php:1274 site/course/course-content.php:1444
-#: site/course/course-content.php:1631 site/course/course-content.php:1817
-#: site/course/course-content.php:1989 site/course/course-content.php:2026
-#: site/course/course-content.php:2064 site/course/course-content.php:2100
-#: site/course/course-content.php:2287 site/course/course-content.php:2393
-msgid "WATCH"
-msgstr "REGARDER"
-
-#: site/course/0-sesssion-data.php:66
-msgid ""
-"God uses ordinary people doing simple things to make a big impact. Watch "
-"this video on how God works."
-msgstr ""
-"Dieu utilise des gens ordinaires qui font des choses simples pour avoir un "
-"grand impact. Regarder cette vidéo sur la manière d'agir de Dieu."
-
-#: site/course/0-sesssion-data.php:70
-msgid "Zúme Video Scripts: Welcome"
-msgstr "Script vidéo de Zúme : Bienvenue !"
-
-#: site/course/0-sesssion-data.php:75 site/course/0-sesssion-data.php:97
-#: site/course/0-sesssion-data.php:221 site/course/0-sesssion-data.php:267
-#: site/course/course-content.php:101 site/course/course-content.php:135
-#: site/course/course-content.php:173 site/course/course-content.php:424
-#: site/course/course-content.php:477 site/course/course-content.php:687
-#: site/course/course-content.php:709 site/course/course-content.php:747
-#: site/course/course-content.php:801 site/course/course-content.php:1006
-#: site/course/course-content.php:1044 site/course/course-content.php:1082
-#: site/course/course-content.php:1296 site/course/course-content.php:1466
-#: site/course/course-content.php:1500 site/course/course-content.php:1653
-#: site/course/course-content.php:1690 site/course/course-content.php:1840
-#: site/course/course-content.php:2011 site/course/course-content.php:2048
-#: site/course/course-content.php:2088 site/course/course-content.php:2142
-#: site/course/course-content.php:2309 site/course/course-content.php:2466
-msgid "DISCUSS"
-msgstr "DISCUTER"
-
-#: site/course/0-sesssion-data.php:76 site/course/10session.php:445
-#: site/course/20session.php:545 site/course/course-content.php:105
-msgid ""
-"If Jesus intended every one of His followers to obey His Great Commission, "
-"why do so few actually make disciples?"
-msgstr ""
-"Si Jésus voulait que chacun de ses disciples obéisse à sa Grande Commission, "
-"pourquoi si peu d'entre eux font-ils réellement des disciples ?"
-
-#: site/course/0-sesssion-data.php:88 site/course/10session.php:468
-#: site/course/20session.php:568
-msgid ""
-"What is a disciple? And how do you make one? How do you teach a follower of "
-"Jesus to do what He told us in His Great Commission – to obey all of His "
-"commands?"
-msgstr ""
-"Qu'est-ce qu'un disciple ? Et comment en faire un ? Comment enseigner à un "
-"disciple de Jésus à faire ce qu'il nous a dit dans son grand commandement - "
-"obéir à tous ses commandements ?"
-
-#: site/course/0-sesssion-data.php:92
-msgid "Zúme Video Scripts: Teach Them to Obey"
-msgstr "Script vidéo de Zúme : Enseignez-leur à obéir"
-
-#: site/course/0-sesssion-data.php:99 site/course/10session.php:492
-#: site/course/20session.php:592 site/course/course-content.php:140
-msgid "When you think of a church, what comes to mind?"
-msgstr "Quand vous pensez à une église, qu'est-ce qui vous vient à l'esprit ?"
-
-#: site/course/0-sesssion-data.php:100
-msgid ""
-"What's the difference between that picture and what's described in the video "
-"as a \"Simple Chur<?php echo esc_url() ?>\"S.O.A.P.S. Bible Reading<?php "
-"echo esc_url() ?>\"Accountability Groups\" section of your"
-msgstr ""
-"Quelle est la différence entre notre conception de l'église et ce qui est "
-"décrit dans la vidéo comme étant un \"groupe de maison\" ou une \"église "
-"simple\"?"
-
-#: site/course/0-sesssion-data.php:106 site/course/0-sesssion-data.php:323
-msgid "LOOKING FORWARD"
-msgstr "REGARD EN AVANT"
-
-#: site/course/0-sesssion-data.php:107 site/course/10session.php:676
-#: site/course/20session.php:776
-msgid "Congratulations! You've completed Session 1."
-msgstr "Félicitations! Vous avez terminé la séance 1."
-
-#: site/course/0-sesssion-data.php:108 site/course/0-sesssion-data.php:325
-msgid "Below are next steps to take in preparation for the next session."
-msgstr "Voici les prochaines étapes à suivre en vue de la prochaine séance."
-
-#: site/course/0-sesssion-data.php:111 site/course/0-sesssion-data.php:328
-#: site/course/10session.php:680 site/course/20session.php:780
-#: site/course/course-content.php:296 site/course/course-content.php:847
-#: site/course/course-content.php:1157 site/course/course-content.php:1533
-#: site/course/course-content.php:1723 site/course/course-content.php:1893
-#: site/course/course-content.php:2177 site/course/course-content.php:2571
-#: site/course/course-content.php:2675 site/course/course-content.php:2778
-#: site/course/course-content.php:2890 site/course/course-content.php:2994
-#: site/course/course-content.php:3103 site/course/course-content.php:3226
-#: site/course/course-content.php:3333 site/course/course-content.php:3453
-#: site/course/course-content.php:3568 site/course/course-content.php:3778
-#: site/course/course-content.php:3885 site/course/course-content.php:4009
-#: site/course/course-content.php:4116 site/course/course-content.php:4225
-#: site/course/course-content.php:4332 site/course/course-content.php:4441
-#: site/course/course-content.php:4545
-msgid "OBEY"
-msgstr "OBÉIR"
-
-#: site/course/0-sesssion-data.php:112 site/course/10session.php:682
-#: site/course/20session.php:782 site/course/course-content.php:300
-#: site/course/course-content.php:2679
-msgid ""
-"Begin practicing the S.O.A.P.S. Bible reading between now and your next "
-"meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
-"journal using the S.O.A.P.S. format."
-msgstr ""
-"Commencer à s'entraîner à la lecture de la Bible C.R.E.PE. d'ici la "
-"prochaine rencontre. Se concentrer sur Matthieu 5-7, le lire au moins une "
-"fois par jour. Tenir un journal quotidien en utilisant le format C.R.E.P.E."
-
-#: site/course/0-sesssion-data.php:115 site/course/0-sesssion-data.php:332
-#: site/course/10session.php:686 site/course/20session.php:786
-#: site/course/course-content.php:297 site/course/course-content.php:848
-#: site/course/course-content.php:1158 site/course/course-content.php:1534
-#: site/course/course-content.php:1724 site/course/course-content.php:1894
-#: site/course/course-content.php:2178 site/course/course-content.php:2572
-#: site/course/course-content.php:2676 site/course/course-content.php:2779
-#: site/course/course-content.php:2891 site/course/course-content.php:2995
-#: site/course/course-content.php:3104 site/course/course-content.php:3227
-#: site/course/course-content.php:3334 site/course/course-content.php:3454
-#: site/course/course-content.php:3569 site/course/course-content.php:3779
-#: site/course/course-content.php:3886 site/course/course-content.php:4010
-#: site/course/course-content.php:4117 site/course/course-content.php:4226
-#: site/course/course-content.php:4333 site/course/course-content.php:4442
-#: site/course/course-content.php:4546
-msgid "SHARE"
-msgstr "PARTAGER"
-
-#: site/course/0-sesssion-data.php:116 site/course/10session.php:688
-#: site/course/20session.php:788
-msgid ""
-"Spend time asking God who He might want you to start an Accountability Group "
-"with using the tools you've learned in this session. Share this person’s "
-"name with the group before you go. Reach out to that person about starting "
-"an Accountability Group and meeting with you weekly."
-msgstr ""
-"Prendre le temps de demander à Dieu avec qui Il pourrait vouloir qu'on "
-"commence un groupe d'encouragement mutuel en utilisant les outils appris au "
-"cours de cette séance. Partager le nom de cette personne avec le groupe "
-"avant de partir. Contacter cette personne au sujet de la création d'un "
-"groupe d'encouragement mutuel en rencontre hebdomadaire."
-
-#: site/course/0-sesssion-data.php:119 site/course/0-sesssion-data.php:193
-#: site/course/0-sesssion-data.php:336 site/course/10session.php:694
-#: site/course/20session.php:794 site/course/course-content.php:350
-#: site/course/course-content.php:899 site/course/course-content.php:1944
-#: site/course/course-content.php:2227
-msgid "PRAY"
-msgstr "PRIER"
-
-#: site/course/0-sesssion-data.php:120 site/course/10session.php:697
-#: site/course/20session.php:797
-msgid ""
-"Pray that God helps you be obedient to Him and invite Him to work in you and "
-"those around you!"
-msgstr ""
-"Prier pour que Dieu vous aide à lui être obéissant, et l'inviter à "
-"travailler en vous et en ceux qui vous entourent !"
-
-#: site/course/0-sesssion-data.php:124
-msgid ""
-"Take a picture of your S.O.A.P.S. Bible study and share it on social media."
-msgstr ""
-"Prendre une photo de la lecture de la Bible C.R.E.P.E. et la partager sur "
-"les réseaux sociaux."
-
-#: site/course/0-sesssion-data.php:173
-msgid "WELCOME BACK!"
-msgstr "BIENVENUE !"
-
-#: site/course/0-sesssion-data.php:181
-msgid "CHECK-IN"
-msgstr "BILAN"
-
-#: site/course/0-sesssion-data.php:183
-msgid "Before getting started, take some time to check-in."
-msgstr "Avant de commencer, prendre le temps de faire un bilan."
-
-#: site/course/0-sesssion-data.php:184
-msgid ""
-"At the end of the last session, everyone in your group was challenged in two "
-"ways:"
-msgstr ""
-"À la fin de la dernière séance, tous les membres de votre groupe ont été mis "
-"au défi de deux façons :"
-
-#: site/course/0-sesssion-data.php:186
-msgid ""
-"You were asked to begin practicing the S.O.A.P.S. Bible reading method and "
-"keeping a daily journal."
-msgstr ""
-"On vous a demandé de commencer à mettre en pratique la méthode de lecture de "
-"la Bible C.R.E.P.E. et à tenir un journal quotidien."
-
-#: site/course/0-sesssion-data.php:187
-msgid ""
-"You were encouraged to reach out to someone about starting an Accountability "
-"Group."
-msgstr ""
-"On vous a encouragé à joindre quelqu'un pour créer un groupe d'encouragement "
-"mutuel."
-
-#: site/course/0-sesssion-data.php:189 site/course/course-content.php:369
-#: site/course/course-content.php:638 site/course/course-content.php:917
-#: site/course/course-content.php:1225 site/course/course-content.php:1418
-#: site/course/course-content.php:1605 site/course/course-content.php:1791
-#: site/course/course-content.php:1961 site/course/course-content.php:2246
-#: site/course/course-content.php:2639 site/course/course-content.php:2742
-#: site/course/course-content.php:2846 site/course/course-content.php:2958
-#: site/course/course-content.php:3062 site/course/course-content.php:3172
-#: site/course/course-content.php:3295 site/course/course-content.php:3401
-#: site/course/course-content.php:3522 site/course/course-content.php:3636
-#: site/course/course-content.php:3734 site/course/course-content.php:3847
-#: site/course/course-content.php:3953 site/course/course-content.php:4078
-#: site/course/course-content.php:4185 site/course/course-content.php:4296
-#: site/course/course-content.php:4403 site/course/course-content.php:4509
-#: site/course/course-content.php:4615
-msgid "Take a few moments to see how your group did this week."
-msgstr ""
-"Prendre quelques instants pour voir comment s'est passée cette semaine pour "
-"chacun."
-
-#: site/course/0-sesssion-data.php:194
-msgid ""
-"Ask if anyone in the group has specific needs they would like the group to "
-"pray for. Ask someone to pray and ask God to help in the areas the group "
-"shared. Be sure to thank God that He promises in His Word to listen and act "
-"when His people pray. And, as always, ask God's Holy Spirit to lead your "
-"time, together."
-msgstr ""
-"Demander si quelqu'un dans le groupe a des besoins spécifiques pour lesquels "
-"il aimerait que le groupe prie. Demander à quelqu'un de prier et demander de "
-"l'aide à Dieu dans les domaines que le groupe partage. Ne pas oublier de "
-"remercier Dieu d'avoir promis dans Sa Parole d'écouter et d'agir quand Son "
-"peuple prie. Et, comme toujours, demander à l'Esprit Saint de Dieu de "
-"diriger votre temps ensemble."
-
-#: site/course/0-sesssion-data.php:207 site/course/course-content.php:401
-msgid ""
-"If we want to make disciples who multiply – spiritual producers and not just "
-"consumers – then we need to learn and share four main ways God makes "
-"everyday followers more like Jesus:"
-msgstr ""
-"Si nous voulons faire des disciples qui se multiplient - des producteurs "
-"spirituels et pas seulement des consommateurs - nous devons apprendre et "
-"partager les quatre principales façons dont Dieu fait ressembler les "
-"disciples de tous les jours à Jésus :"
-
-#: site/course/0-sesssion-data.php:209 site/course/course-content.php:220
-#: site/course/course-content.php:403 site/follow-jesus/follow-jesus.php:172
-msgid "Prayer"
-msgstr "La prière"
-
-#: site/course/0-sesssion-data.php:210 site/course/course-content.php:217
-#: site/course/course-content.php:404
-msgid "Scripture"
-msgstr "Les Écritures"
-
-#: site/course/0-sesssion-data.php:211 site/course/course-content.php:405
-msgid "Body Life"
-msgstr "La vie corporelle"
-
-#: site/course/0-sesssion-data.php:212 site/course/course-content.php:406
-msgid "Persecution and Suffering"
-msgstr "La persécution et les souffrances"
-
-#: site/course/0-sesssion-data.php:223
-msgid ""
-"Of the four areas detailed above (prayer, God's Word, etc.), which ones do "
-"you already practice?"
-msgstr ""
-"Parmi les quatre domaines décrits ci-dessus (prière, Parole de Dieu, etc.), "
-"lesquels pratiquez-vous déjà?"
-
-#: site/course/0-sesssion-data.php:224 site/course/course-content.php:430
-msgid "Which ones do you feel unsure about?"
-msgstr "Quels sont ceux avec lesquels vous vous sentez moins à l'aise?"
-
-#: site/course/0-sesssion-data.php:225 site/course/course-content.php:431
-msgid "How ready do you feel when it comes to training others?"
-msgstr "À quel point vous sentez-vous prêt à former les autres?"
-
-#: site/course/0-sesssion-data.php:239 site/course/course-content.php:386
-#: site/course/course-content.php:443 site/course/course-content.php:543
-msgid "Prayer Cycle"
-msgstr "Roue de prière"
-
-#: site/course/0-sesssion-data.php:240 site/course/course-content.php:444
-msgid ""
-"The Bible tells us that prayer is our chance to speak to and hear from the "
-"same God who created us!"
-msgstr ""
-"La Bible nous dit que la prière est notre chance de parler au même Dieu qui "
-"nous a créés et de l'entendre!"
-
-#: site/course/0-sesssion-data.php:253
-msgid "Practice the Prayer Cycle (60min)"
-msgstr "S'entraîner avec la roue de prière"
-
-#: site/course/0-sesssion-data.php:257
-msgid "LEAVE"
-msgstr "SE RETIRER"
-
-#: site/course/0-sesssion-data.php:258
-msgid ""
-"Spend the next 60 minutes in prayer individually, using the exercises in "
-"\"The Prayer Cycle\" section of the Zúme Guidebook as a guide."
-msgstr ""
-"Passer les 60 minutes suivantes individuellement en prière, en utilisant les "
-"exercices de la section     « La roue de prière » du Guide Zúme. "
-
-#: site/course/0-sesssion-data.php:261
-msgid "RETURN"
-msgstr "REVENIR"
-
-#: site/course/0-sesssion-data.php:262 site/course/course-content.php:465
-msgid ""
-"Set a time for the group to return and reconnect. Be sure to add a few extra "
-"minutes for everyone to both find a quiet place to pray and to make their "
-"way back to the group."
-msgstr ""
-"Fixer un temps pour que le groupe revienne et se reconnecte. S'assurer "
-"d'ajouter quelques minutes supplémentaires pour que tout le monde trouve à "
-"la fois un endroit tranquille pour prier, puis revienne vers le groupe."
-
-#: site/course/0-sesssion-data.php:273 site/course/course-content.php:482
-msgid "What is your reaction to spending an hour in prayer?"
-msgstr "Comment réagissez-vous au fait de passer une heure dans la prière ?"
-
-#: site/course/0-sesssion-data.php:274 site/course/course-content.php:483
-msgid "How do you feel?"
-msgstr "Comment vous sentez-vous ?"
-
-#: site/course/0-sesssion-data.php:275 site/course/course-content.php:484
-msgid "Did you learn or hear anything?"
-msgstr "Avez-vous appris ou entendu quelque chose ?"
-
-#: site/course/0-sesssion-data.php:276 site/course/course-content.php:485
-msgid ""
-"What would life be like if you made this kind of prayer a regular habit?"
-msgstr ""
-"Comment serait la vie si vous faisiez de ce genre de prière une habitude "
-"régulière ?"
-
-#: site/course/0-sesssion-data.php:290 site/course/course-content.php:387
-#: site/course/course-content.php:497 site/course/course-content.php:544
-msgid "List of 100"
-msgstr "Liste de 100"
-
-#: site/course/0-sesssion-data.php:292
-msgid ""
-"God has already given us the relationships we need to “Go and make "
-"disciples.” These are our family, friends, neighbors, co-workers and "
-"classmates – people we’ve known all our lives or maybe just met."
-msgstr ""
-"Dieu nous a déjà donné les relations dont nous avons besoin pour \"aller "
-"faire des disciples.\" Ce sont notre famille, nos amis, nos voisins, nos "
-"collègues et nos camarades de classe, des gens que nous avons connus toute "
-"notre vie ou que nous venons peut-être de rencontrer."
-
-#: site/course/0-sesssion-data.php:293
-msgid ""
-"Being good stewards of these relationships is the first step in multiplying "
-"disciples. Start by making a list."
-msgstr ""
-"Être de bons intendants de ces relations est la première étape dans la "
-"multiplication des disciples. Commencer par faire une liste."
-
-#: site/course/0-sesssion-data.php:307
-msgid "Project (30min)"
-msgstr "Projet (30min)"
-
-#: site/course/0-sesssion-data.php:312 site/course/course-content.php:520
-msgid "Create your own list of 100"
-msgstr "Créer votre propre liste de 100"
-
-#: site/course/0-sesssion-data.php:313
-msgid ""
-"Have everyone in your group take the next 30 minutes to fill out their own "
-"inventory of relationships using the form in the \"List of 100\" section in "
-"your Zúme Guidebook. "
-msgstr ""
-"Demander à tous les membres de votre groupe de prendre les 30 minutes "
-"suivantes pour remplir leur propre inventaire de relations à l'aide du "
-"formulaire dans la section « Liste des 100 » dans votre guide Zúme. "
-
-#: site/course/0-sesssion-data.php:324
-msgid "Congratulations on finishing Session 2! "
-msgstr "Félicitations, vous avez terminé la séance 2 !"
-
-#: site/course/0-sesssion-data.php:329 site/course/course-content.php:557
-#: site/course/course-content.php:2894
-msgid ""
-"Spend time this week praying for five people from your List of 100 that you "
-"marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
-"to be open to His story."
-msgstr ""
-"Passer du temps cette semaine à prier pour cinq personnes de votre Liste des "
-"100 qui ont été marquées « incroyant » ou « Inconnu ». Demander à Dieu de "
-"préparer leurs cœurs à être ouverts à Son histoire."
-
-#: site/course/0-sesssion-data.php:333
-msgid ""
-"Ask God who He wants you to share the List of 100 tool with. Share this "
-"person's name with the group before you go and reach out to them before the "
-"next session."
-msgstr ""
-"Demander à Dieu avec qui Il veut que vous partagiez l'outil Liste des 100. "
-"Partager le nom de cette personne avec le groupe avant de partir puis "
-"contacter cette personne avant la prochaine séance."
-
-#: site/course/0-sesssion-data.php:337
-msgid ""
-"Pray that God help you be obedient to Him and invite Him to work in you and "
-"those around you!"
-msgstr ""
-"Prier pour que Dieu vous aide à Lui être obéissant et L'inviter à travailler "
-"en vous et en ceux qui vous entourent !"
-
-#: site/course/0-sesssion-data.php:341
-msgid ""
-"Think others could use the 60-minute prayer tool? Share about it on social "
-"media."
-msgstr ""
-"Vous pensez que d'autres personnes pourraient utiliser l'outil de prière de "
-"60 minutes? Le partager sur les réseaux sociaux."
-
 #: site/course/10session.php:365 site/course/20session.php:465
 #: site/course/course-content.php:22 site/course/course-content.php:2503
 msgid "Session 1"
@@ -1386,6 +1062,21 @@ msgstr "Arrivée"
 #: site/course/10session.php:371 site/course/20session.php:471
 msgid "Have all participants of the training check-in."
 msgstr "Demander à tous les participants à la formation de se présenter."
+
+#: site/course/10session.php:392 site/course/20session.php:492
+msgid "Group Prayer (5min)"
+msgstr "Prière en groupe (5 min)"
+
+#: site/course/10session.php:400 site/course/20session.php:500
+#: site/course/course-content.php:50 site/course/course-content.php:2531
+msgid ""
+"Begin with prayer. Spiritual insight and transformation is not possible "
+"without the Holy Spirit. Take time as a group to invite Him to guide you "
+"over this session."
+msgstr ""
+"Commencez par la prière. La compréhension et la transformation spirituelles "
+"ne sont pas possibles sans le Saint-Esprit. Prenez le temps, en groupe, de "
+"l'inviter à vous guider au cours de cette session."
 
 #: site/course/10session.php:412 site/course/10session.php:428
 #: site/course/10session.php:438 site/course/10session.php:459
@@ -1417,6 +1108,30 @@ msgstr ""
 #: site/course/20session.php:588 site/course/20session.php:638
 msgid "Discuss"
 msgstr "Discussion"
+
+#: site/course/10session.php:445 site/course/20session.php:545
+#: site/course/course-content.php:105
+msgid ""
+"If Jesus intended every one of His followers to obey His Great Commission, "
+"why do so few actually make disciples?"
+msgstr ""
+"Si Jésus voulait que chacun de ses disciples obéisse à sa Grande Commission, "
+"pourquoi si peu d'entre eux font-ils réellement des disciples ?"
+
+#: site/course/10session.php:468 site/course/20session.php:568
+msgid ""
+"What is a disciple? And how do you make one? How do you teach a follower of "
+"Jesus to do what He told us in His Great Commission – to obey all of His "
+"commands?"
+msgstr ""
+"Qu'est-ce qu'un disciple ? Et comment en faire un ? Comment enseigner à un "
+"disciple de Jésus à faire ce qu'il nous a dit dans son grand commandement - "
+"obéir à tous ses commandements ?"
+
+#: site/course/10session.php:492 site/course/20session.php:592
+#: site/course/course-content.php:140
+msgid "When you think of a church, what comes to mind?"
+msgstr "Quand vous pensez à une église, qu'est-ce qui vous vient à l'esprit ?"
 
 #: site/course/10session.php:493 site/course/20session.php:593
 msgid ""
@@ -1519,6 +1234,82 @@ msgstr ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think. Accountability Groups are a "
 "great way to get ready!"
+
+#: site/course/10session.php:676 site/course/20session.php:776
+msgid "Congratulations! You've completed Session 1."
+msgstr "Félicitations! Vous avez terminé la séance 1."
+
+#: site/course/10session.php:680 site/course/20session.php:780
+#: site/course/course-content.php:296 site/course/course-content.php:847
+#: site/course/course-content.php:1157 site/course/course-content.php:1533
+#: site/course/course-content.php:1723 site/course/course-content.php:1893
+#: site/course/course-content.php:2177 site/course/course-content.php:2571
+#: site/course/course-content.php:2675 site/course/course-content.php:2778
+#: site/course/course-content.php:2890 site/course/course-content.php:2994
+#: site/course/course-content.php:3103 site/course/course-content.php:3226
+#: site/course/course-content.php:3333 site/course/course-content.php:3453
+#: site/course/course-content.php:3568 site/course/course-content.php:3778
+#: site/course/course-content.php:3885 site/course/course-content.php:4009
+#: site/course/course-content.php:4116 site/course/course-content.php:4225
+#: site/course/course-content.php:4332 site/course/course-content.php:4441
+#: site/course/course-content.php:4545
+msgid "OBEY"
+msgstr "OBÉIR"
+
+#: site/course/10session.php:682 site/course/20session.php:782
+#: site/course/course-content.php:300 site/course/course-content.php:2679
+msgid ""
+"Begin practicing the S.O.A.P.S. Bible reading between now and your next "
+"meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
+"journal using the S.O.A.P.S. format."
+msgstr ""
+"Commencer à s'entraîner à la lecture de la Bible C.R.E.PE. d'ici la "
+"prochaine rencontre. Se concentrer sur Matthieu 5-7, le lire au moins une "
+"fois par jour. Tenir un journal quotidien en utilisant le format C.R.E.P.E."
+
+#: site/course/10session.php:686 site/course/20session.php:786
+#: site/course/course-content.php:297 site/course/course-content.php:848
+#: site/course/course-content.php:1158 site/course/course-content.php:1534
+#: site/course/course-content.php:1724 site/course/course-content.php:1894
+#: site/course/course-content.php:2178 site/course/course-content.php:2572
+#: site/course/course-content.php:2676 site/course/course-content.php:2779
+#: site/course/course-content.php:2891 site/course/course-content.php:2995
+#: site/course/course-content.php:3104 site/course/course-content.php:3227
+#: site/course/course-content.php:3334 site/course/course-content.php:3454
+#: site/course/course-content.php:3569 site/course/course-content.php:3779
+#: site/course/course-content.php:3886 site/course/course-content.php:4010
+#: site/course/course-content.php:4117 site/course/course-content.php:4226
+#: site/course/course-content.php:4333 site/course/course-content.php:4442
+#: site/course/course-content.php:4546
+msgid "SHARE"
+msgstr "PARTAGER"
+
+#: site/course/10session.php:688 site/course/20session.php:788
+msgid ""
+"Spend time asking God who He might want you to start an Accountability Group "
+"with using the tools you've learned in this session. Share this person’s "
+"name with the group before you go. Reach out to that person about starting "
+"an Accountability Group and meeting with you weekly."
+msgstr ""
+"Prendre le temps de demander à Dieu avec qui Il pourrait vouloir qu'on "
+"commence un groupe d'encouragement mutuel en utilisant les outils appris au "
+"cours de cette séance. Partager le nom de cette personne avec le groupe "
+"avant de partir. Contacter cette personne au sujet de la création d'un "
+"groupe d'encouragement mutuel en rencontre hebdomadaire."
+
+#: site/course/10session.php:694 site/course/20session.php:794
+#: site/course/course-content.php:350 site/course/course-content.php:899
+#: site/course/course-content.php:1944 site/course/course-content.php:2227
+msgid "PRAY"
+msgstr "PRIER"
+
+#: site/course/10session.php:697 site/course/20session.php:797
+msgid ""
+"Pray that God helps you be obedient to Him and invite Him to work in you and "
+"those around you!"
+msgstr ""
+"Prier pour que Dieu vous aide à lui être obéissant, et l'inviter à "
+"travailler en vous et en ceux qui vous entourent !"
 
 #: site/course/course-content.php:32 site/course/course-content.php:336
 #: site/course/course-content.php:607 site/course/course-content.php:885
@@ -1654,6 +1445,38 @@ msgstr "Définition simple du disciple et de l'église"
 msgid "Spiritual Breathing"
 msgstr "Respiration spirituelle"
 
+#: site/course/course-content.php:79 site/course/course-content.php:113
+#: site/course/course-content.php:151 site/course/course-content.php:188
+#: site/course/course-content.php:235 site/course/course-content.php:396
+#: site/course/course-content.php:440 site/course/course-content.php:494
+#: site/course/course-content.php:665 site/course/course-content.php:725
+#: site/course/course-content.php:779 site/course/course-content.php:946
+#: site/course/course-content.php:984 site/course/course-content.php:1022
+#: site/course/course-content.php:1059 site/course/course-content.php:1098
+#: site/course/course-content.php:1252 site/course/course-content.php:1274
+#: site/course/course-content.php:1444 site/course/course-content.php:1631
+#: site/course/course-content.php:1817 site/course/course-content.php:1989
+#: site/course/course-content.php:2026 site/course/course-content.php:2064
+#: site/course/course-content.php:2100 site/course/course-content.php:2287
+#: site/course/course-content.php:2393
+msgid "WATCH"
+msgstr "REGARDER"
+
+#: site/course/course-content.php:101 site/course/course-content.php:135
+#: site/course/course-content.php:173 site/course/course-content.php:424
+#: site/course/course-content.php:477 site/course/course-content.php:687
+#: site/course/course-content.php:709 site/course/course-content.php:747
+#: site/course/course-content.php:801 site/course/course-content.php:1006
+#: site/course/course-content.php:1044 site/course/course-content.php:1082
+#: site/course/course-content.php:1296 site/course/course-content.php:1466
+#: site/course/course-content.php:1500 site/course/course-content.php:1653
+#: site/course/course-content.php:1690 site/course/course-content.php:1840
+#: site/course/course-content.php:2011 site/course/course-content.php:2048
+#: site/course/course-content.php:2088 site/course/course-content.php:2142
+#: site/course/course-content.php:2309 site/course/course-content.php:2466
+msgid "DISCUSS"
+msgstr "DISCUTER"
+
 #: site/course/course-content.php:102 site/course/course-content.php:136
 #: site/course/course-content.php:174 site/course/course-content.php:425
 #: site/course/course-content.php:478 site/course/course-content.php:688
@@ -1726,6 +1549,10 @@ msgstr ""
 "Séparez-vous et travaillez individuellement sur le modèle d'étude biblique S."
 "O.A.P.S. en utilisant Matthieu 6:9-13. (20 min)"
 
+#: site/course/course-content.php:217 site/course/course-content.php:404
+msgid "Scripture"
+msgstr "Les Écritures"
+
 #: site/course/course-content.php:218
 msgid "Observation"
 msgstr "Observation"
@@ -1733,6 +1560,11 @@ msgstr "Observation"
 #: site/course/course-content.php:219
 msgid "Application"
 msgstr "Candidature"
+
+#: site/course/course-content.php:220 site/course/course-content.php:403
+#: site/follow-jesus/follow-jesus.php:172
+msgid "Prayer"
+msgstr "La prière"
 
 #: site/course/course-content.php:221
 msgid "Sharing"
@@ -1852,10 +1684,9 @@ msgstr ""
 "peuple prie."
 
 #: site/course/course-content.php:356
-msgid "Ask God’s Holy Spirit to lead your time, together."
+msgid "Ask God’s Holy Spirit to lead your time together."
 msgstr ""
-"Prier et remercier Dieu pour les résultats et inviter Son Saint-Esprit à "
-"mener votre temps ensemble."
+"Demandez à l'Esprit Saint de diriger le temps que vous passez ensemble."
 
 #: site/course/course-content.php:364 site/course/course-content.php:633
 #: site/course/course-content.php:912 site/course/course-content.php:1220
@@ -1912,6 +1743,25 @@ msgstr ""
 "À la fin de la dernière séance, tous les membres de votre groupe ont été mis "
 "au défi de deux façons :"
 
+#: site/course/course-content.php:369 site/course/course-content.php:638
+#: site/course/course-content.php:917 site/course/course-content.php:1225
+#: site/course/course-content.php:1418 site/course/course-content.php:1605
+#: site/course/course-content.php:1791 site/course/course-content.php:1961
+#: site/course/course-content.php:2246 site/course/course-content.php:2639
+#: site/course/course-content.php:2742 site/course/course-content.php:2846
+#: site/course/course-content.php:2958 site/course/course-content.php:3062
+#: site/course/course-content.php:3172 site/course/course-content.php:3295
+#: site/course/course-content.php:3401 site/course/course-content.php:3522
+#: site/course/course-content.php:3636 site/course/course-content.php:3734
+#: site/course/course-content.php:3847 site/course/course-content.php:3953
+#: site/course/course-content.php:4078 site/course/course-content.php:4185
+#: site/course/course-content.php:4296 site/course/course-content.php:4403
+#: site/course/course-content.php:4509 site/course/course-content.php:4615
+msgid "Take a few moments to see how your group did this week."
+msgstr ""
+"Prendre quelques instants pour voir comment s'est passée cette semaine pour "
+"chacun."
+
 #: site/course/course-content.php:380 site/course/course-content.php:649
 #: site/course/course-content.php:1236 site/course/course-content.php:1429
 #: site/course/course-content.php:1616 site/course/course-content.php:1802
@@ -1931,6 +1781,35 @@ msgstr "Producteurs - consommateurs"
 msgid "And we will add these tools to our toolkit:"
 msgstr "Nous ajouterons ces outils à notre boîte à outils :"
 
+#: site/course/course-content.php:386 site/course/course-content.php:443
+#: site/course/course-content.php:543
+msgid "Prayer Cycle"
+msgstr "Roue de prière"
+
+#: site/course/course-content.php:387 site/course/course-content.php:497
+#: site/course/course-content.php:544
+msgid "List of 100"
+msgstr "Liste de 100"
+
+#: site/course/course-content.php:401
+msgid ""
+"If we want to make disciples who multiply – spiritual producers and not just "
+"consumers – then we need to learn and share four main ways God makes "
+"everyday followers more like Jesus:"
+msgstr ""
+"Si nous voulons faire des disciples qui se multiplient - des producteurs "
+"spirituels et pas seulement des consommateurs - nous devons apprendre et "
+"partager les quatre principales façons dont Dieu fait ressembler les "
+"disciples de tous les jours à Jésus :"
+
+#: site/course/course-content.php:405
+msgid "Body Life"
+msgstr "La vie corporelle"
+
+#: site/course/course-content.php:406
+msgid "Persecution and Suffering"
+msgstr "La persécution et les souffrances"
+
 #: site/course/course-content.php:429
 msgid ""
 "Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
@@ -1939,6 +1818,22 @@ msgstr ""
 "Parmi les quatre domaines décrits ci-dessus (prière, Parole de Dieu, etc.), "
 "lesquels pratiquez-vous déjà?"
 
+#: site/course/course-content.php:430
+msgid "Which ones do you feel unsure about?"
+msgstr "Quels sont ceux avec lesquels vous vous sentez moins à l'aise?"
+
+#: site/course/course-content.php:431
+msgid "How ready do you feel when it comes to training others?"
+msgstr "À quel point vous sentez-vous prêt à former les autres?"
+
+#: site/course/course-content.php:444
+msgid ""
+"The Bible tells us that prayer is our chance to speak to and hear from the "
+"same God who created us!"
+msgstr ""
+"La Bible nous dit que la prière est notre chance de parler au même Dieu qui "
+"nous a créés et de l'entendre!"
+
 #: site/course/course-content.php:461
 msgid "(60 min)"
 msgstr "(60 min)"
@@ -1946,6 +1841,35 @@ msgstr "(60 min)"
 #: site/course/course-content.php:464
 msgid "Pray the Prayer Cycle for an hour individually"
 msgstr "Priez le cycle de prière pendant une heure, individuellement"
+
+#: site/course/course-content.php:465
+msgid ""
+"Set a time for the group to return and reconnect. Be sure to add a few extra "
+"minutes for everyone to both find a quiet place to pray and to make their "
+"way back to the group."
+msgstr ""
+"Fixer un temps pour que le groupe revienne et se reconnecte. S'assurer "
+"d'ajouter quelques minutes supplémentaires pour que tout le monde trouve à "
+"la fois un endroit tranquille pour prier, puis revienne vers le groupe."
+
+#: site/course/course-content.php:482
+msgid "What is your reaction to spending an hour in prayer?"
+msgstr "Comment réagissez-vous au fait de passer une heure dans la prière ?"
+
+#: site/course/course-content.php:483
+msgid "How do you feel?"
+msgstr "Comment vous sentez-vous ?"
+
+#: site/course/course-content.php:484
+msgid "Did you learn or hear anything?"
+msgstr "Avez-vous appris ou entendu quelque chose ?"
+
+#: site/course/course-content.php:485
+msgid ""
+"What would life be like if you made this kind of prayer a regular habit?"
+msgstr ""
+"Comment serait la vie si vous faisiez de ce genre de prière une habitude "
+"régulière ?"
 
 #: site/course/course-content.php:498
 msgid ""
@@ -1975,6 +1899,10 @@ msgstr ""
 msgid "(30 min)"
 msgstr "(30 min)"
 
+#: site/course/course-content.php:520
+msgid "Create your own list of 100"
+msgstr "Créer votre propre liste de 100"
+
 #: site/course/course-content.php:521
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
@@ -1995,6 +1923,16 @@ msgstr ""
 #: site/course/course-content.php:553
 msgid "Obey"
 msgstr "Obéi"
+
+#: site/course/course-content.php:557 site/course/course-content.php:2894
+msgid ""
+"Spend time this week praying for five people from your List of 100 that you "
+"marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
+"to be open to His story."
+msgstr ""
+"Passer du temps cette semaine à prier pour cinq personnes de votre Liste des "
+"100 qui ont été marquées « incroyant » ou « Inconnu ». Demander à Dieu de "
+"préparer leurs cœurs à être ouverts à Son histoire."
 
 #: site/course/course-content.php:558 site/course/course-content.php:2895
 msgid ""
@@ -2499,7 +2437,7 @@ msgstr ""
 "dans les cinq domaines de la prière P.R.I.E.R."
 
 #: site/course/course-content.php:1328 site/course/course-content.php:1670
-#: site/course/course-content.php:1855
+#: site/course/course-content.php:1855 site/course/course-content.php:3658
 msgid "(60 - 90 min)"
 msgstr "(60 - 90 min)"
 
@@ -2680,11 +2618,6 @@ msgstr ""
 #: site/course/course-content.php:1661
 msgid "What would it look like to train someone like that?"
 msgstr "Comment pourrait-on former quelqu'un de cette manière ?"
-
-#: site/course/course-content.php:1673 site/course/course-content.php:1858
-#: site/course/course-content.php:3966 site/course/course-content.php:4000
-msgid "3/3 Group Meeting"
-msgstr "Modèle de rencontre de groupe 3/3"
 
 #: site/course/course-content.php:1675 site/course/course-content.php:1860
 msgid ""
@@ -3046,14 +2979,14 @@ msgstr ""
 
 #: site/course/course-content.php:2256
 msgid ""
-"But, Zúme Training is only the beginning! In this session, we will make a "
+"Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
 "Mais la formation Zúme n'est qu'un début ! Au cours de cette session, nous "
 "établirons un plan pour la suite de la formation et nous présenterons "
-"brièvement les outils dont vous aurez besoin plus tard au cours de votre "
-"parcours, lorsque vous mettrez en œuvre ce que vous avez appris."
+"brièvement les outils dont vous aurez besoin plus tard, lorsque vous mettrez "
+"en œuvre ce que vous avez appris."
 
 #: site/course/course-content.php:2275
 msgid "Four Fields"
@@ -3254,7 +3187,7 @@ msgstr ""
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr "Dieu fait des projets et il attend de nous que nous en fassions aussi."
 
-#: site/course/course-content.php:2436
+#: site/course/course-content.php:2436 site/dashboard/dashboard.php:139
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
@@ -3570,10 +3503,6 @@ msgstr ""
 msgid "Session 11"
 msgstr "Séance 1"
 
-#: site/course/course-content.php:3658
-msgid "(60-90 min)"
-msgstr "(60 - 90 min)"
-
 #: site/course/course-content.php:3693
 msgid "Session 12"
 msgstr "Séance 1"
@@ -3599,10 +3528,6 @@ msgstr "Séance 1"
 #: site/course/course-content.php:3912
 msgid "Session 14"
 msgstr "Séance 1"
-
-#: site/course/course-content.php:3978
-msgid "3/3 Group Format"
-msgstr "Groupe 3/3"
 
 #: site/course/course-content.php:3980
 msgid ""
@@ -3934,14 +3859,6 @@ msgstr ""
 msgid "3-Month Plan"
 msgstr "Plan de 3 mois"
 
-#: site/dashboard/dashboard.php:139
-msgid ""
-"Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod "
-"consectetur irure nostrud aute in."
-msgstr ""
-"Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod "
-"consectetur irure nostrud aute in."
-
 #: site/dashboard/dashboard.php:140
 msgid "Practicing"
 msgstr "Activité"
@@ -4040,7 +3957,7 @@ msgid "Trained"
 msgstr "Mis en pratique"
 
 #: site/dashboard/dashboard.php:162
-msgid "Have I trained outhers to share this tool or concept?"
+msgid "Have I trained others to share this tool or concept?"
 msgstr "Ai-je formé d'autres personnes à partager cet outil ou ce concept ?"
 
 #: site/dev-section/dev.php:119 site/faq/faq.php:94 site/home/home.php:191
@@ -4612,10 +4529,10 @@ msgstr "Pays et territoires avec groupes"
 
 #: site/home/home.php:496
 msgid ""
-"Total number of conturies and sovereign territories that have had groups go "
+"Total number of countries and sovereign territories that have had groups go "
 "through Zume.Training"
 msgstr ""
-"Nombre total de conturies et de territoires souverains dont les groupes sont "
+"Nombre total de pays et de territoires souverains dont les groupes sont "
 "passés par Zume.Training"
 
 #: site/kitchen-sink/kitchen-sink.php:90
@@ -5162,6 +5079,223 @@ msgstr "https://github.com/ZumeProject/zume-training"
 #. Description of the plugin/theme
 msgid "Zume Training System"
 msgstr "La formation Zúme"
+
+#~ msgid "3/3 Group Meeting Pattern"
+#~ msgstr "Modèle de rencontre de groupe 3/3"
+
+#~ msgid ""
+#~ "Eiusmod in quis incididunt in id excepteur amet occaecat. In quis "
+#~ "exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem "
+#~ "adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa."
+#~ msgstr ""
+#~ "Eiusmod in quis incididunt in id excepteur amet occaecat. In quis "
+#~ "exercitation qui pariatur adipisicing pariatur veniam do. Consequat Lorem "
+#~ "adipisicing deserunt amet irure in velit nisi tempor sit eiusmod culpa."
+
+#~ msgid ""
+#~ "Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse "
+#~ "incididunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut "
+#~ "eiusmod aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation "
+#~ "cupidatat fugiat mollit. Magna fugiat dolore cupidatat proident non velit "
+#~ "laborum aliquip commodo nulla consectetur et mollit in."
+#~ msgstr ""
+#~ "Reprehenderit aute adipisicing irure ipsum et consequat est officia. Esse "
+#~ "incidunt eu pariatur velit aute. Enim irure ad laborum cupidatat ut "
+#~ "eiusmod aliqua aliqua ut. Aliqua dolor Lorem commodo dolor exercitation "
+#~ "cupidatat fugiat mollit. Magna fugiat dolore cupidatat proident non velit "
+#~ "laborum aliquip commodo nulla consectetur et mollit in."
+
+#~ msgid "Requirements for Zume Training:"
+#~ msgstr "Se rediriger vers la formation"
+
+#~ msgid "Welcome to Zúme"
+#~ msgstr "Bienvenue à Zúme !"
+
+#~ msgid "Have all of the participants of the training check-in"
+#~ msgstr "Demander à tous les participants à la formation de se présenter"
+
+#~ msgid ""
+#~ "You will be able to follow along on a digital PDF for this session, but "
+#~ "please make sure that each member of your group has a printed copy of the "
+#~ "materials for future sessions."
+#~ msgstr ""
+#~ "Vous serez en mesure de suivre cette séance sur un PDF numérique, mais "
+#~ "veuillez vous assurer que chaque membre de votre groupe a une copie "
+#~ "imprimée des documents pour les séances suivantes. Cette séance est "
+#~ "longue, vous pouvez choisir de la faire en une ou deux fois."
+
+#~ msgid "DOWNLOAD GUIDEBOOK"
+#~ msgstr "TÉLÉCHARGER LE GUIDE"
+
+#~ msgid ""
+#~ "God uses ordinary people doing simple things to make a big impact. Watch "
+#~ "this video on how God works."
+#~ msgstr ""
+#~ "Dieu utilise des gens ordinaires qui font des choses simples pour avoir "
+#~ "un grand impact. Regarder cette vidéo sur la manière d'agir de Dieu."
+
+#~ msgid "Zúme Video Scripts: Welcome"
+#~ msgstr "Script vidéo de Zúme : Bienvenue !"
+
+#~ msgid "Zúme Video Scripts: Teach Them to Obey"
+#~ msgstr "Script vidéo de Zúme : Enseignez-leur à obéir"
+
+#~ msgid ""
+#~ "What's the difference between that picture and what's described in the "
+#~ "video as a \"Simple Chur<?php echo esc_url() ?>\"S.O.A.P.S. Bible "
+#~ "Reading<?php echo esc_url() ?>\"Accountability Groups\" section of your"
+#~ msgstr ""
+#~ "Quelle est la différence entre notre conception de l'église et ce qui est "
+#~ "décrit dans la vidéo comme étant un \"groupe de maison\" ou une \"église "
+#~ "simple\"?"
+
+#~ msgid "LOOKING FORWARD"
+#~ msgstr "REGARD EN AVANT"
+
+#~ msgid "Below are next steps to take in preparation for the next session."
+#~ msgstr "Voici les prochaines étapes à suivre en vue de la prochaine séance."
+
+#~ msgid ""
+#~ "Take a picture of your S.O.A.P.S. Bible study and share it on social "
+#~ "media."
+#~ msgstr ""
+#~ "Prendre une photo de la lecture de la Bible C.R.E.P.E. et la partager sur "
+#~ "les réseaux sociaux."
+
+#~ msgid "WELCOME BACK!"
+#~ msgstr "BIENVENUE !"
+
+#~ msgid "CHECK-IN"
+#~ msgstr "BILAN"
+
+#~ msgid "Before getting started, take some time to check-in."
+#~ msgstr "Avant de commencer, prendre le temps de faire un bilan."
+
+#~ msgid ""
+#~ "At the end of the last session, everyone in your group was challenged in "
+#~ "two ways:"
+#~ msgstr ""
+#~ "À la fin de la dernière séance, tous les membres de votre groupe ont été "
+#~ "mis au défi de deux façons :"
+
+#~ msgid ""
+#~ "You were asked to begin practicing the S.O.A.P.S. Bible reading method "
+#~ "and keeping a daily journal."
+#~ msgstr ""
+#~ "On vous a demandé de commencer à mettre en pratique la méthode de lecture "
+#~ "de la Bible C.R.E.P.E. et à tenir un journal quotidien."
+
+#~ msgid ""
+#~ "You were encouraged to reach out to someone about starting an "
+#~ "Accountability Group."
+#~ msgstr ""
+#~ "On vous a encouragé à joindre quelqu'un pour créer un groupe "
+#~ "d'encouragement mutuel."
+
+#~ msgid ""
+#~ "Ask if anyone in the group has specific needs they would like the group "
+#~ "to pray for. Ask someone to pray and ask God to help in the areas the "
+#~ "group shared. Be sure to thank God that He promises in His Word to listen "
+#~ "and act when His people pray. And, as always, ask God's Holy Spirit to "
+#~ "lead your time, together."
+#~ msgstr ""
+#~ "Demander si quelqu'un dans le groupe a des besoins spécifiques pour "
+#~ "lesquels il aimerait que le groupe prie. Demander à quelqu'un de prier et "
+#~ "demander de l'aide à Dieu dans les domaines que le groupe partage. Ne pas "
+#~ "oublier de remercier Dieu d'avoir promis dans Sa Parole d'écouter et "
+#~ "d'agir quand Son peuple prie. Et, comme toujours, demander à l'Esprit "
+#~ "Saint de Dieu de diriger votre temps ensemble."
+
+#~ msgid ""
+#~ "Of the four areas detailed above (prayer, God's Word, etc.), which ones "
+#~ "do you already practice?"
+#~ msgstr ""
+#~ "Parmi les quatre domaines décrits ci-dessus (prière, Parole de Dieu, "
+#~ "etc.), lesquels pratiquez-vous déjà?"
+
+#~ msgid "Practice the Prayer Cycle (60min)"
+#~ msgstr "S'entraîner avec la roue de prière"
+
+#~ msgid "LEAVE"
+#~ msgstr "SE RETIRER"
+
+#~ msgid ""
+#~ "Spend the next 60 minutes in prayer individually, using the exercises in "
+#~ "\"The Prayer Cycle\" section of the Zúme Guidebook as a guide."
+#~ msgstr ""
+#~ "Passer les 60 minutes suivantes individuellement en prière, en utilisant "
+#~ "les exercices de la section     « La roue de prière » du Guide Zúme. "
+
+#~ msgid "RETURN"
+#~ msgstr "REVENIR"
+
+#~ msgid ""
+#~ "God has already given us the relationships we need to “Go and make "
+#~ "disciples.” These are our family, friends, neighbors, co-workers and "
+#~ "classmates – people we’ve known all our lives or maybe just met."
+#~ msgstr ""
+#~ "Dieu nous a déjà donné les relations dont nous avons besoin pour \"aller "
+#~ "faire des disciples.\" Ce sont notre famille, nos amis, nos voisins, nos "
+#~ "collègues et nos camarades de classe, des gens que nous avons connus "
+#~ "toute notre vie ou que nous venons peut-être de rencontrer."
+
+#~ msgid ""
+#~ "Being good stewards of these relationships is the first step in "
+#~ "multiplying disciples. Start by making a list."
+#~ msgstr ""
+#~ "Être de bons intendants de ces relations est la première étape dans la "
+#~ "multiplication des disciples. Commencer par faire une liste."
+
+#~ msgid "Project (30min)"
+#~ msgstr "Projet (30min)"
+
+#~ msgid ""
+#~ "Have everyone in your group take the next 30 minutes to fill out their "
+#~ "own inventory of relationships using the form in the \"List of 100\" "
+#~ "section in your Zúme Guidebook. "
+#~ msgstr ""
+#~ "Demander à tous les membres de votre groupe de prendre les 30 minutes "
+#~ "suivantes pour remplir leur propre inventaire de relations à l'aide du "
+#~ "formulaire dans la section « Liste des 100 » dans votre guide Zúme. "
+
+#~ msgid "Congratulations on finishing Session 2! "
+#~ msgstr "Félicitations, vous avez terminé la séance 2 !"
+
+#~ msgid ""
+#~ "Ask God who He wants you to share the List of 100 tool with. Share this "
+#~ "person's name with the group before you go and reach out to them before "
+#~ "the next session."
+#~ msgstr ""
+#~ "Demander à Dieu avec qui Il veut que vous partagiez l'outil Liste des "
+#~ "100. Partager le nom de cette personne avec le groupe avant de partir "
+#~ "puis contacter cette personne avant la prochaine séance."
+
+#~ msgid ""
+#~ "Pray that God help you be obedient to Him and invite Him to work in you "
+#~ "and those around you!"
+#~ msgstr ""
+#~ "Prier pour que Dieu vous aide à Lui être obéissant et L'inviter à "
+#~ "travailler en vous et en ceux qui vous entourent !"
+
+#~ msgid ""
+#~ "Think others could use the 60-minute prayer tool? Share about it on "
+#~ "social media."
+#~ msgstr ""
+#~ "Vous pensez que d'autres personnes pourraient utiliser l'outil de prière "
+#~ "de 60 minutes? Le partager sur les réseaux sociaux."
+
+#~ msgid "(60-90 min)"
+#~ msgstr "(60 - 90 min)"
+
+#~ msgid "3/3 Group Format"
+#~ msgstr "Groupe 3/3"
+
+#~ msgid ""
+#~ "Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod "
+#~ "consectetur irure nostrud aute in."
+#~ msgstr ""
+#~ "Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod "
+#~ "consectetur irure nostrud aute in."
 
 #~ msgid "Start date"
 #~ msgstr "Date de début"
@@ -6974,15 +7108,6 @@ msgstr "La formation Zúme"
 #~ msgid "What is the statement of faith for Zúme?"
 #~ msgstr "Quelle est la déclaration de foi de Zúme ?"
 
-#~ msgid ""
-#~ "Since Zúme is not run by an organization, there is not a formal statement "
-#~ "of faith. All of us involved, however, would agree on the Lausanne "
-#~ "Covenant."
-#~ msgstr ""
-#~ "Étant donné que Zúme n'est pas dirigé par une organisation, il n'y a pas "
-#~ "de déclaration officielle de foi. Cependant, nous tous les participants "
-#~ "nous accorderions sur le Pacte de Lausanne."
-
 #~ msgid "Can I do the training by myself?"
 #~ msgstr "Puis-je suivre la formation par moi-même?"
 
@@ -7107,22 +7232,6 @@ msgstr "La formation Zúme"
 
 #~ msgid "Why is it called Zúme?"
 #~ msgstr "Pourquoi l'appelle-t-on Zúme ?"
-
-#~ msgid ""
-#~ "Zúme means yeast in Greek. In Matthew 13:33 Jesus is quoted as saying, "
-#~ "“The Kingdom of Heaven is like a woman who took yeast and mixed it into a "
-#~ "large amount of flour until it was all leavened.” This illustrates how "
-#~ "ordinary people, using ordinary resources, can have an extraordinary "
-#~ "impact for the Kingdom of God. Zúme aims to equip and empower ordinary "
-#~ "believers to reach every neighborhood."
-#~ msgstr ""
-#~ "Zúme signifie levure en grec. Dans Matthieu 13:33 Jésus dit : «Le Royaume "
-#~ "des Cieux est comme une femme qui a pris la levure et l'a mélangée dans "
-#~ "une grande quantité de farine jusqu'à ce que la pâte ait monté.\" Cela "
-#~ "illustre comment les gens ordinaires, en utilisant des ressources "
-#~ "ordinaires, peuvent avoir un impact extraordinaire pour le Royaume de "
-#~ "Dieu. L'objectif de Zúme est d'équiper et d'habiliter les croyants "
-#~ "ordinaires à atteindre chaque quartier."
 
 #~ msgid "What languages will the training be translated into?"
 #~ msgstr "Dans quelles langues la formation sera-t-elle traduite?"

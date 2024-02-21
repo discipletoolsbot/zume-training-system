@@ -1,5 +1,5 @@
 <?php
-function zume_course_builder( $session_type = '10', $session_number = '1' ) {
+function zume_course_builder( $session_type = '10', $session_number = '1', $lang_code = 'en' ) {
 
     $session = [];
 
@@ -79,7 +79,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1' ) {
         }
     }
 
-    $content = zume_content();
+    $content = zume_content( $lang_code );
     $progress_bar = '<div class="progress-bar-wrapper">';
 
     $slides = [];

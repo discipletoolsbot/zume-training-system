@@ -1,6 +1,7 @@
 <?php
 
 function zume_content( $lang_code = 'en') {
+    $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
 
     return [
         /***************************************************************************************************************
@@ -18,7 +19,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_1_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 1', 'zume' ),  // title
             ],
             'left' => [],
@@ -33,7 +34,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/5678.png',
+                $mirror_url . 'qr/5678.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5678'
             ],
@@ -64,7 +65,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Simple Definition of Disciple & Church', 'zume' ),
                     __( 'Spiritual Breathing', 'zume' )
                 ],
-                'And we will add these tools to our toolkit:',
+                __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
                     __( 'SOAPS Bible Reading', 'zume' ),
                     __( 'Accountability Groups', 'zume' )
@@ -223,7 +224,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' )
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/4.png',
+                $mirror_url . 'qr/4.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -263,7 +264,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Spend the next 20 minutes working together through the Accountability Questions.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/5.png',
+                $mirror_url . 'qr/5.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -322,7 +323,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_2_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 2', 'zume' ),
             ],
             'left' => [],
@@ -337,7 +338,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2468.png',
+                $mirror_url . 'qr/2468.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2468'
             ],
@@ -465,7 +466,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/7.png',
+                $mirror_url . 'qr/7.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -522,7 +523,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/8.png',
+                $mirror_url . 'qr/8.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -562,9 +563,9 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_2_18',
             'type' => 'final',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
+                $mirror_url . 'Zume-logo-blue.png', // Zume logo
                 __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
+                $mirror_url . 'jesus-globe.png', // Jesus globe
                 __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],
@@ -593,7 +594,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_3_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 3', 'zume' ),
             ],
             'left' => [],
@@ -608,7 +609,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/6543.png',
+                $mirror_url . 'qr/6543.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6543'
             ],
@@ -767,7 +768,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three people and take turns telling the Gospel to each other.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/10.png',
+                $mirror_url . 'qr/10.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -871,7 +872,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_4_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 'Session 4'
             ],
             'left' => [],
@@ -886,7 +887,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/8764.png',
+                $mirror_url . 'qr/8764.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8764'
             ],
@@ -972,7 +973,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three and practice sharing your testimony.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/12.png',
+                $mirror_url . 'qr/12.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1124,7 +1125,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Spend the next 10 minutes celebrating The Lord’s Supper with your group.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/16.png',
+                $mirror_url . 'qr/16.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1180,7 +1181,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_5_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 5', 'zume' ),
             ],
             'left' => [],
@@ -1195,7 +1196,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/6542.png',
+                $mirror_url . 'qr/6542.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6542'
             ],
@@ -1316,7 +1317,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/18.png',
+                $mirror_url . 'qr/18.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1336,7 +1337,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/17.png',
+                $mirror_url . 'qr/17.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1373,7 +1374,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_6_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 6', 'zume' ),
             ],
             'left' => [],
@@ -1388,7 +1389,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/1235.png',
+                $mirror_url . 'qr/1235.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1235'
             ],
@@ -1560,7 +1561,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_7_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 7', 'zume' ),
             ],
             'left' => [],
@@ -1575,7 +1576,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/4322.png',
+                $mirror_url . 'qr/4322.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4322'
             ],
@@ -1678,7 +1679,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/27.png',
+                $mirror_url . 'qr/27.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1746,7 +1747,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_8_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 8', 'zume' ),
             ],
             'left' => [],
@@ -1761,7 +1762,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/9870.png',
+                $mirror_url . 'qr/9870.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9870'
             ],
@@ -1863,7 +1864,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/21.png',
+                $mirror_url . 'qr/21.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1916,7 +1917,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_9_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 9', 'zume' ),
             ],
             'left' => [],
@@ -1931,7 +1932,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/1355.png',
+                $mirror_url . 'qr/1355.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1355'
             ],
@@ -2130,7 +2131,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2199,7 +2200,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_10_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 10', 'zume' ),
             ],
             'left' => [],
@@ -2214,7 +2215,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/5430.png',
+                $mirror_url . 'qr/5430.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5430'
             ],
@@ -2341,7 +2342,7 @@ function zume_content( $lang_code = 'en') {
 
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2353,10 +2354,10 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Four Fields Example', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/98.png',
+                $mirror_url . '98.png',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Resource', 'zume' ),
             ],
         ],
@@ -2378,10 +2379,10 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Generation Mapping Example', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/104.png',
+                $mirror_url . '104.png',
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Resource', 'zume' ),
             ],
         ],
@@ -2421,7 +2422,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'By the time you’re finished, everyone should have a basic understanding of asking and answering.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2454,7 +2455,7 @@ function zume_content( $lang_code = 'en') {
                 ],
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Online Plan Tool', 'zume' ),
             ],
         ],
@@ -2499,7 +2500,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_1_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 1', 'zume' ),
             ],
             'left' => [],
@@ -2514,7 +2515,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/3354.png',
+                $mirror_url . 'qr/3354.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3354'
             ],
@@ -2594,7 +2595,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_2_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 2', 'zume' ),
             ],
             'left' => [],
@@ -2609,7 +2610,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/4568.png',
+                $mirror_url . 'qr/4568.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4568'
             ],
@@ -2697,7 +2698,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_3_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 3', 'zume' ),
             ],
             'left' => [],
@@ -2712,7 +2713,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/8767.png',
+                $mirror_url . 'qr/8767.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8767'
             ],
@@ -2801,7 +2802,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_4_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 4', 'zume' ),
             ],
             'left' => [],
@@ -2816,7 +2817,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/6787.png',
+                $mirror_url . 'qr/6787.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6787'
             ],
@@ -2913,7 +2914,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_5_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 5', 'zume' ),
             ],
             'left' => [],
@@ -2928,7 +2929,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/3450.png',
+                $mirror_url . 'qr/3450.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3450'
             ],
@@ -3017,7 +3018,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_6_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 6', 'zume' ),
             ],
             'left' => [],
@@ -3032,7 +3033,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2344.png',
+                $mirror_url . 'qr/2344.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2344'
             ],
@@ -3127,7 +3128,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_7_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 7', 'zume' ),
             ],
             'left' => [],
@@ -3142,7 +3143,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/1116.png',
+                $mirror_url . 'qr/1116.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1116'
             ],
@@ -3200,7 +3201,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.', 'zume' ),
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -3250,7 +3251,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_8_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 8', 'zume' ),
             ],
             'left' => [],
@@ -3265,7 +3266,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/5431.png',
+                $mirror_url . 'qr/5431.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5431'
             ],
@@ -3356,7 +3357,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_9_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 9', 'zume' ),
             ],
             'left' => [],
@@ -3371,7 +3372,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/8768.png',
+                $mirror_url . 'qr/8768.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8768'
             ],
@@ -3477,7 +3478,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_10_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 10', 'zume' ),
             ],
             'left' => [],
@@ -3492,7 +3493,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2347.png',
+                $mirror_url . 'qr/2347.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2347'
             ],
@@ -3591,7 +3592,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_11_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 11', 'zume' ),
             ],
             'left' => [],
@@ -3606,7 +3607,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/9434.png',
+                $mirror_url . 'qr/9434.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9434'
             ],
@@ -3666,7 +3667,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -3689,7 +3690,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_12_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 12', 'zume' ),
             ],
             'left' => [],
@@ -3704,7 +3705,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2348.png',
+                $mirror_url . 'qr/2348.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2348'
             ],
@@ -3802,7 +3803,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_13_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 13', 'zume' ),
             ],
             'left' => [],
@@ -3817,7 +3818,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/6785.png',
+                $mirror_url . 'qr/6785.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6785'
             ],
@@ -3908,7 +3909,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_14_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 14', 'zume' ),
             ],
             'left' => [],
@@ -3923,7 +3924,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/9872.png',
+                $mirror_url . 'qr/9872.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9872'
             ],
@@ -3983,7 +3984,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -4033,7 +4034,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_15_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 15', 'zume' ),
             ],
             'left' => [],
@@ -4048,7 +4049,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/4327.png',
+                $mirror_url . 'qr/4327.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4327'
             ],
@@ -4140,7 +4141,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_16_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 16', 'zume' ),
             ],
             'left' => [],
@@ -4155,7 +4156,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2871.png',
+                $mirror_url . 'qr/2871.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2871'
             ],
@@ -4251,7 +4252,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_17_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 17', 'zume' ),
             ],
             'left' => [],
@@ -4266,7 +4267,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/4328.png',
+                $mirror_url . 'qr/4328.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4328'
             ],
@@ -4358,7 +4359,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_18_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 18', 'zume' ),
             ],
             'left' => [],
@@ -4373,7 +4374,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/6548.png',
+                $mirror_url . 'qr/6548.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6548'
             ],
@@ -4464,7 +4465,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_19_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 19', 'zume' ),
             ],
             'left' => [],
@@ -4479,7 +4480,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/7657.png',
+                $mirror_url . 'qr/7657.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '7657'
             ],
@@ -4570,7 +4571,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_20_1',
             'type' => 'title',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/zume-training-logo.png',  // location image
+                $mirror_url . 'zume-training-logo.png',  // location image
                 __( 'Session 20', 'zume' ),
             ],
             'left' => [],
@@ -4585,7 +4586,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/2767.png',
+                $mirror_url . 'qr/2767.png',
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2767'
             ],
@@ -4656,12 +4657,12 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Get a Coach', 'zume' ),
                 __( 'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
             ],
             'right' => [
                 __( 'Join the Community', 'zume' ),
                 __( 'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png',
             ],
         ],
         [
@@ -4687,9 +4688,9 @@ function zume_content( $lang_code = 'en') {
             'key' => 'final',
             'type' => 'final',
             'center' => [
-                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
+                $mirror_url . 'Zume-logo-blue.png', // Zume logo
                 __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
+                $mirror_url . 'jesus-globe.png', // Jesus globe
                 __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],

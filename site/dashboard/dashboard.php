@@ -136,7 +136,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'my_training' => __( 'My Training', 'zume' ),
                     'my_training_explanation' => __( 'Full access to your training content, schedule, group details and sharing tools.', 'zume' ),
                     '3_month_plan' => __( '3-Month Plan', 'zume' ),
-                    '3_month_plan_explanation' => __( 'Excepteur Lorem laboris excepteur et Lorem eu laboris adipisicing eiusmod consectetur irure nostrud aute in.', 'zume' ),
+                    '3_month_plan_explanation' => __( 'A Three Month Plan is a tool you can use to help focus your attention and efforts and keep them aligned with God’s priorities for making disciples who multiply.', 'zume' ),
                     'practicing' => __( 'Practicing', 'zume' ),
                     'my_coach' => __( 'My Coach', 'zume' ),
                     'my_coach_explanation' => __( 'Quick access to your coach at all times.', 'zume' ),

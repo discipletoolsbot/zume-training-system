@@ -603,7 +603,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         if ( isset( $_GET['type'], $_GET['session'] ) ) {
 
             // get the slides for the schedule and session
-            $build = zume_course_builder( $_GET['type'], $_GET['session'] );
+            $build = zume_course_builder( $_GET['type'], $_GET['session'], $lang['code'] );
 
             foreach( $build as $slide ) {
 
