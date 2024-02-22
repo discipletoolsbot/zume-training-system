@@ -555,7 +555,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
 
             ${this.renderRoute()}
         </div>
-        `}createRenderRoot(){return this}}customElements.define("dash-board",w);class D extends p{firstUpdated(){this.attachResizeObeserver(),this.updateHeaderStyle()}attachResizeObeserver(){const t=document.querySelector("dash-header-right"),e=new ResizeObserver(s=>{for(let a of s){if(!a.contentRect)return;const o=Math.round(a.contentRect.height),n=Math.round(a.contentRect.width);this.updateHeaderStyle(!1,o,n)}});this.resizeObserver=e,e.observe(t)}updateHeaderStyle(t=!0,e=0,s=window.innerWidth){const a=document.querySelector(".dashboard__header.left");t&&(this.initialOffset=a.offsetTop);let o;s<window.innerWidth/2?o=this.initialOffset:o=this.initialOffset+e,a.style.top=o+"px"}disconnectedCallback(){super.disconnectedCallback(),this.resizeObserver.disconnect()}}class qe extends D{render(){return r`
+        `}createRenderRoot(){return this}}customElements.define("dash-board",w);class D extends p{constructor(){super();const e=document.querySelector("html").dataset.dir;this.isRtl=e==="rtl"}firstUpdated(){this.attachResizeObeserver(),this.updateHeaderStyle()}attachResizeObeserver(){const t=document.querySelector("dash-header-right"),e=new ResizeObserver(s=>{for(let a of s){if(!a.contentRect)return;const o=Math.round(a.contentRect.height),n=Math.round(a.contentRect.width);this.updateHeaderStyle(!1,o,n)}});this.resizeObserver=e,e.observe(t)}updateHeaderStyle(t=!0,e=0,s=window.innerWidth){const a=document.querySelector(".dashboard__header.left");t&&(this.initialOffset=a.offsetTop);let o;s<window.innerWidth/2?o=this.initialOffset:o=this.initialOffset+e,a.style.top=o+"px"}disconnectedCallback(){super.disconnectedCallback(),this.resizeObserver.disconnect()}}class qe extends D{render(){return r`
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <dash-sidebar-toggle></dash-sidebar-toggle>
@@ -685,7 +685,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                         <span class="icon zume-kebab brand-light"></span>
                     </button>
                 </div>
-                <div class="dropdown-pane" id="kebab-menu-${a}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
+                <div class="dropdown-pane" id="kebab-menu-${a}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
                         <li class="hidden"><button class="menu-btn" @click=${()=>this.editCommitment(a)}><span class="icon zume-pencil"></span>${zumeDashboard.translations.edit}</button></li>
                         <li><button class="menu-btn" @click=${()=>this.deleteCommitment(a)}><span class="icon zume-trash"></span>${zumeDashboard.translations.delete}</button></li>
@@ -714,7 +714,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                             </button>
                         </div>
                     </div>
-                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="open"?"selected":""}" @click=${()=>this.filterCommitments("open")}>
@@ -875,7 +875,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                             <span class="icon zume-info brand-light" aria-hidden="true"></span>
                         </button>
                     </div>
-                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="heard"?"selected":""}" @click=${()=>this.filterProgress("heard")}>
@@ -967,7 +967,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                         <span class="icon zume-kebab brand-light"></span>
                     </button>
                 </div>
-                <div class="dropdown-pane" id="kebab-menu-${a}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
+                <div class="dropdown-pane" id="kebab-menu-${a}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
                         <li class="hidden"><button class="menu-btn" @click=${()=>this.editCommitment(a)}><span class="icon zume-pencil"></span>${zumeDashboard.translations.edit}</button></li>
                         <li><button class="menu-btn" @click=${()=>this.deleteCommitment(a)}><span class="icon zume-trash"></span>${zumeDashboard.translations.delete}</button></li>
@@ -989,7 +989,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                             <span class="icon zume-filter brand-light" aria-hidden="true"></span>
                         </button>
                     </div>
-                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="right" data-close-on-click="true" data-close-on-click-inside="true">
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="open"?"selected":""}" @click=${()=>this.filterCommitments("open")}>
@@ -1153,7 +1153,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                     </div>
                 </div>
             </div>
-        `}}customElements.define("list-link",is);class as extends p{updated(){jQuery(document).foundation()}render(){return r`
+        `}}customElements.define("list-link",is);class as extends p{constructor(){super();const e=document.querySelector("html").dataset.dir;this.isRtl=e==="rtl"}updated(){jQuery(document).foundation()}render(){return r`
             <button class="btn uppercase light tight" data-toggle="launch-course-panel">
                 ${zumeDashboard.translations.launch_course}
             </button>
@@ -1164,7 +1164,7 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                 data-auto-focus="true"
                 data-close-on-click="true"
                 data-position="bottom"
-                data-alignment="right"
+                data-alignment=${this.isRtl?"right":"left"}
             >
                 <ul>
                     <li><a class="menu-btn" href="${zumeDashboard.urls.launch_ten_session_course}"><span class="icon zume-course"></span>${zumeDashboard.translations.ten_session_course}</a></li>
@@ -1523,4 +1523,4 @@ var re=Object.defineProperty;var oe=(i,t,e)=>t in i?re(i,t,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",ks);
-//# sourceMappingURL=main-b6af974d.js.map
+//# sourceMappingURL=main-81289c7d.js.map

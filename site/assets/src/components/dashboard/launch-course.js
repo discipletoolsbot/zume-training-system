@@ -2,6 +2,15 @@ import { LitElement, html, css } from 'lit';
 
 export class LaunchCourse extends LitElement {
 
+    constructor() {
+        super()
+
+        const html = document.querySelector('html')
+        const dir = html.dataset.dir
+
+        this.isRtl = dir === 'rtl'
+    }
+
     updated() {
         jQuery(document).foundation();
     }
@@ -18,7 +27,7 @@ export class LaunchCourse extends LitElement {
                 data-auto-focus="true"
                 data-close-on-click="true"
                 data-position="bottom"
-                data-alignment="right"
+                data-alignment=${this.isRtl ? 'right' : 'left'}
             >
                 <ul>
                     <li><a class="menu-btn" href="${zumeDashboard.urls.launch_ten_session_course}"><span class="icon zume-course"></span>${zumeDashboard.translations.ten_session_course}</a></li>

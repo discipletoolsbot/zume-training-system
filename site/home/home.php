@@ -88,7 +88,7 @@ class Zume_Training_Home extends Zume_Magic_Page
         ?>
 
         <div class="stack | s0 justify-content-center absolute top left mx-0 my-3 p--1 hard-shadow | sticker">
-            <h2 class="f-3 lh-sm">45+</h2>
+            <h2 class="f-3 lh-sm"><?php echo esc_html__( '45+', 'zume' ) ?></h2>
             <h3 class="uppercase f--2 lh-sm"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
         </div>
         <?php require __DIR__ . '/../parts/nav.php'; ?>
@@ -97,9 +97,9 @@ class Zume_Training_Home extends Zume_Magic_Page
             <div class="switcher container | align-items-center gap0">
                 <div class="show-for-large position-relative">
                     <div class="bg-path | absolute">
-                        <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Blue-Path-01.svg' ) ?>" alt="path">
+                        <img class="flip-on-rtl" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Blue-Path-01.svg' ) ?>" alt="path">
                     </div>
-                    <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing">
+                    <img class="flip-on-rtl" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing">
                 </div>
                 <div class="stack | grow-2 text-center">
                     <h1 class="f-6 first"><?php echo esc_html_x( 'Disciple Making', 'Disciple Making Training', 'zume' ) ?></h1>
@@ -258,12 +258,15 @@ class Zume_Training_Home extends Zume_Magic_Page
         <?php $width = 1024 ?>
         <?php $height = 753 ?>
         <?php $n = $height / $width ?>
-        <?php $center = 1 - $n / 2 ?>
+        <?php $length = 1 - $n / 2 ?>
         <?php $xradius = $n / 2 ?>
 
         <svg height="0" width="0">
             <clipPath id="clip-rounded-end" clipPathUnits="objectBoundingBox">
-                <path d="<?php echo esc_attr( "M $center 1 h -$center v -1 h $center A $xradius 0.5, 0, 0 1, $center 1" ) ?>"/>
+                <path d="<?php echo esc_attr( "M $length 1 h -$length v -1 h $length A $xradius 0.5, 0, 0 1, $length 1" ) ?>"/>
+            </clipPath>
+            <clipPath id="clip-rounded-start" clipPathUnits="objectBoundingBox">
+                <path d="<?php echo esc_attr( "M $xradius 1 h $length v -1 h -$length A $xradius 0.5, 0, 0 0, $xradius 1" ) ?>"/>
             </clipPath>
         </svg>
 

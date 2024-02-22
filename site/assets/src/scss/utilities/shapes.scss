@@ -46,6 +46,10 @@
 
 .clip-rounded-end {
     clip-path: url(#clip-rounded-end);
+
+    [dir="rtl"] & {
+        clip-path: url(#clip-rounded-start);
+    }
 }
 
 .clip-rounded-bottom-right {
@@ -76,6 +80,11 @@
 
 .aspect-1 {
     aspect-ratio: 1;
+}
+
+
+[dir="rtl"] .flip-on-rtl {
+    transform: scaleX(-1);
 }
 
 @media (max-width: $break-lg) {

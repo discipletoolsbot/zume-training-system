@@ -7,6 +7,7 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
         parent::__construct();
 
         add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
+        add_filter( 'dt_custom_dir_attr_override', '__return_true' );
     }
 
     public function consistent_head() {
