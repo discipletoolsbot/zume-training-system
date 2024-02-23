@@ -2,6 +2,15 @@ import { LitElement } from 'lit';
 
 export class DashPage extends LitElement {
 
+    constructor() {
+        super()
+
+        const html = document.querySelector('html')
+        const dir = html.dataset.dir
+
+        this.isRtl = dir === 'rtl'
+    }
+
     firstUpdated() {
         this.attachResizeObeserver()
         this.updateHeaderStyle()

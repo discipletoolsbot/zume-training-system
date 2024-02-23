@@ -303,9 +303,9 @@ a, a:visited {
   opacity: 0.05;
 }
 .bg-path {
-  bottom: -59%;
-  left: -25%;
-  right: -100%;
+  inset-block-end: -59%;
+  inset-inline-start: -25%;
+  inset-inline-end: -100%;
   z-index: -1;
 }
 
@@ -425,12 +425,20 @@ a, a:visited {
     z-index: -1;
   }
   &.right::after {
-    right: 1px;
+    inset-inline-end: 1px;
     transform: translateX(100%);
+
+    [dir="rtl"] & {
+      transform: translateX(-100%);
+    }
   }
   &.left::after {
-    left: 1px;
+    inset-inline-start: 1px;
     transform: translateX(-100%);
+
+    [dir="rtl"] & {
+      transform: translateX(100%);
+    }
   }
 
   &.bg-white::after {
@@ -455,11 +463,19 @@ a, a:visited {
   }
   &.right::before {
     transform: translateX(-50%);
-    left: 0;
+    inset-inline-start: 0;
+
+    [dir="rtl"] & {
+      transform: translateX(50%);
+    }
   }
   &.left::before {
     transform: translateX(50%);
-    right: 0;
+    inset-inline-end: 0;
+
+    [dir="rtl"] & {
+      transform: translateX(-50%);
+    }
   }
 
   &.bg-white::before {

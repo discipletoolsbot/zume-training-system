@@ -138,7 +138,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
 
         <div class="page bg-gray-100">
             <div class="container-md center">
-                <ul class="stack-2 | accordion" data-accordion>
+                <ul class="stack-2 | accordion | w-100" data-accordion>
                     <li class="accordion-item rounded shadow" data-accordion-item>
                         <a href="#" class="accordion-title"><h2><?php echo esc_html__( 'What is a follower of Jesus?', 'zume' ) ?></h2></a>
 

@@ -14,7 +14,8 @@
 }
 .accordion-title:before {
     top: 50%;
-    right: spacing(1);
+    right: unset;
+    inset-inline-end: spacing(1);
     margin: 0;
     content: url('/wp-content/plugins/zume-training-system/site/assets/images/chevron.svg#Group_649');
     width: font-size(3);
