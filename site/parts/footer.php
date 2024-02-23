@@ -4,14 +4,27 @@
 
         <div class="cluster | justify-content-between gapx-4 gapy-2 | footer-links">
             <div class="cluster gapx-4 gapy-2 | footer-links-list" role="list">
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
+
+                <?php if ( is_user_logged_in() ) : ?>
+
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_training_url() ) ?>"><?php echo esc_html__( 'Training', 'zume' ) ?></a>
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
+
+
+                <?php else: ?>
+
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
+
+                <?php endif; ?>
+
             </div>
 
             <div class="cluster gapx-4 gapy-2 justify-flex-end | footer-links-list" role="list">
-                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="#"><?php echo esc_html__( 'Launch Course', 'zume' ) ?></a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
             </div>
         </div>
@@ -37,25 +50,26 @@
     </div>
 
 </footer>
+
 <!-- General Use Modals-->
 <div class="reveal full" id="modal-full" data-v-offset="0" data-reveal>
     <h3 id="modal-full-title"></h3>
     <div id="modal-full-content"></div>
-    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume-training' ); ?>" type="button">
+    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
 <div class="reveal large" id="modal-large" data-v-offset="0" data-reveal>
     <h3 id="modal-large-title"></h3>
     <div id="modal-large-content"></div>
-    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume-training' ); ?>" type="button">
+    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>
 <div class="reveal small" id="modal-small" data-v-offset="0" data-reveal>
     <h3 id="modal-small-title"></h3>
     <div id="modal-small-content"></div>
-    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume-training' ); ?>" type="button">
+    <button class="close-button" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
 </div>

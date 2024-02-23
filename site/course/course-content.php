@@ -19,7 +19,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_1_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 1', 'zume' ),  // title
             ],
             'left' => [],
@@ -323,7 +323,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_2_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 2', 'zume' ),
             ],
             'left' => [],
@@ -594,7 +594,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_3_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 3', 'zume' ),
             ],
             'left' => [],
@@ -872,7 +872,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_4_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 'Session 4'
             ],
             'left' => [],
@@ -1181,7 +1181,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_5_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 5', 'zume' ),
             ],
             'left' => [],
@@ -1374,7 +1374,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_6_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 6', 'zume' ),
             ],
             'left' => [],
@@ -1561,7 +1561,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_7_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 7', 'zume' ),
             ],
             'left' => [],
@@ -1747,7 +1747,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_8_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 8', 'zume' ),
             ],
             'left' => [],
@@ -1917,7 +1917,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_9_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 9', 'zume' ),
             ],
             'left' => [],
@@ -2200,7 +2200,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's1_10_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 10', 'zume' ),
             ],
             'left' => [],
@@ -2500,7 +2500,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_1_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 1', 'zume' ),
             ],
             'left' => [],
@@ -2595,7 +2595,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_2_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 2', 'zume' ),
             ],
             'left' => [],
@@ -2698,7 +2698,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_3_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 3', 'zume' ),
             ],
             'left' => [],
@@ -2802,7 +2802,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_4_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 4', 'zume' ),
             ],
             'left' => [],
@@ -2914,7 +2914,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_5_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 5', 'zume' ),
             ],
             'left' => [],
@@ -3018,7 +3018,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_6_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 6', 'zume' ),
             ],
             'left' => [],
@@ -3128,7 +3128,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_7_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 7', 'zume' ),
             ],
             'left' => [],
@@ -3251,7 +3251,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_8_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 8', 'zume' ),
             ],
             'left' => [],
@@ -3357,7 +3357,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_9_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 9', 'zume' ),
             ],
             'left' => [],
@@ -3478,7 +3478,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_10_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 10', 'zume' ),
             ],
             'left' => [],
@@ -3592,7 +3592,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_11_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 11', 'zume' ),
             ],
             'left' => [],
@@ -3690,7 +3690,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_12_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 12', 'zume' ),
             ],
             'left' => [],
@@ -3803,7 +3803,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_13_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 13', 'zume' ),
             ],
             'left' => [],
@@ -3909,7 +3909,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_14_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 14', 'zume' ),
             ],
             'left' => [],
@@ -4034,7 +4034,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_15_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 15', 'zume' ),
             ],
             'left' => [],
@@ -4141,7 +4141,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_16_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 16', 'zume' ),
             ],
             'left' => [],
@@ -4252,7 +4252,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_17_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 17', 'zume' ),
             ],
             'left' => [],
@@ -4359,7 +4359,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_18_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 18', 'zume' ),
             ],
             'left' => [],
@@ -4465,7 +4465,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_19_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 19', 'zume' ),
             ],
             'left' => [],
@@ -4571,7 +4571,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_20_1',
             'type' => 'title',
             'center' => [
-                $mirror_url . 'zume-training-logo.png',  // location image
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
                 __( 'Session 20', 'zume' ),
             ],
             'left' => [],
