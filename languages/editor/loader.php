@@ -5,7 +5,7 @@ if ( dt_is_rest() ) {
     require_once('translator-api.php');
 }
 
-if ( is_admin() ) {
-    global $zume_translation_file_list;
-    require_once('admin-page.php');
-}
+//if ( is_admin() ) {
+//    global $zume_translation_file_list;
+//    require_once('admin-page.php');
+//}
