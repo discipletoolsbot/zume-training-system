@@ -401,7 +401,7 @@ class Zume_Redirect_Post_Type
                                 echo '<a href="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data='.urlencode( $redirect ).'"><img src="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data='.urlencode( $redirect ).'" style="width:250px;"/></a><br><br>';
                             }
                             echo 'Publishable QR link: <a href="'. $redirect .'" target="_blank">'. $redirect .'</a><br>';
-                            echo 'Redirects to target: <a href="' . $data . '">'.'https://zume5.training/'.$data .'</a><br>';
+                            echo 'Redirects to target: <a href="' . $data . '">'.'https://zume.training/'.$data .'</a><br>';
                             echo '</td><tr/>' . "\n";
                             break;
 

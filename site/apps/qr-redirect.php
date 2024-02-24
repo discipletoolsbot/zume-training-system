@@ -203,7 +203,7 @@ class Zume_QR_Redirect
                     FROM {$table_prefix}posts p
                     JOIN {$table_prefix}postmeta pm ON pm.post_id=p.ID
                     WHERE p.post_title = %s
-                      AND p.post_type = 'zume_tools'
+                      AND p.post_type = 'zume_qr_redirect'
                       AND pm.meta_key != '_edit_last'
                       AND pm.meta_key != '_edit_lock';
                 ", $language_slug ), ARRAY_A );
@@ -222,9 +222,9 @@ class Zume_QR_Redirect
 
             $link = $this->root_url . $params;
 
-//            header("Location: ".$link, true, 302);
+            header("Location: ".$link, true, 302);
             dt_write_log( 'Tool: ' . $link );
-            echo '<div style="font-size:4em;">' . $link . '</div>';
+//            echo '<div style="font-size:4em;">' . $link . '</div>';
 
             exit();
         }
