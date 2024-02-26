@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-02-26 10:36-0700\n"
+"POT-Creation-Date: 2024-02-26 11:08-0700\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1548,6 +1548,7 @@ msgstr ""
 #: site/course/course-content.php:3947 site/course/course-content.php:4072
 #: site/course/course-content.php:4179 site/course/course-content.php:4290
 #: site/course/course-content.php:4397 site/course/course-content.php:4503
+#: site/course/course-content.php:4611
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
@@ -1565,6 +1566,7 @@ msgstr ""
 #: site/course/course-content.php:3948 site/course/course-content.php:4073
 #: site/course/course-content.php:4180 site/course/course-content.php:4291
 #: site/course/course-content.php:4398 site/course/course-content.php:4504
+#: site/course/course-content.php:4612
 msgid "Take a few moments to see how your group did this week."
 msgstr ""
 
@@ -2484,13 +2486,13 @@ msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
 
-#: site/course/course-content.php:2231 site/course/course-content.php:4611
+#: site/course/course-content.php:2231 site/course/course-content.php:4598
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
 
-#: site/course/course-content.php:2232 site/course/course-content.php:4612
+#: site/course/course-content.php:2232 site/course/course-content.php:4599
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
@@ -3129,8 +3131,7 @@ msgstr ""
 msgid "Session 20"
 msgstr ""
 
-#: site/course/course-content.php:4597 site/course/course-content.php:4598
-#: site/course/course-content.php:4599
+#: site/course/course-content.php:4597
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
 

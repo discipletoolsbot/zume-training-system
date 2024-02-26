@@ -151,7 +151,7 @@ class Zume_Training_Page extends Zume_Magic_Page
             __('Training Schedules', 'zume' ),
             __('Zúme is 20 hours of training. But those 20 hours can be broken up differently depending on your groups availability.', 'zume' ),
             __('10 Sessions', 'zume' ),
-//            __('', 'zume' ),
+            __('', 'zume' ),
             __('20 Sessions', 'zume' ),
 //            __('', 'zume' ),
             __('3 Day Intensive', 'zume' ),
