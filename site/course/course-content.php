@@ -4595,8 +4595,8 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
-                __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
-                __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
+                __( 'Ask Him to give your group clear heads and open hearts to the great things He wants to do in and through you.', 'zume' ),
+                __( 'Ask the Holy Spirit to lead your time together and thank Him for His faithfulness, too. He got you through!', 'zume' ),
             ],
         ],
         [
@@ -4608,8 +4608,8 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Before getting started, take some time to look back.', 'zume' ),
-                __( 'Ask Him to give your group clear heads and open hearts to the great things He wants to do in and through you.', 'zume' ),
-                __( 'Ask the Holy Spirit to lead your time together and thank Him for His faithfulness, too. He got you through!', 'zume' ),
+                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
+                __( 'Take a few moments to see how your group did this week.', 'zume' ),
             ],
         ],
         [
@@ -4684,9 +4684,9 @@ function zume_content( $lang_code = 'en') {
             'key' => 'final',
             'type' => 'final',
             'center' => [
-                $mirror_url . 'Zume-logo-blue.png', // Zume logo
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
                 __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
-                $mirror_url . 'jesus-globe.png', // Jesus globe
+                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
                 __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],
