@@ -623,7 +623,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' )
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the ways you experienced Him in the last session and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -901,8 +901,8 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' )
             ],
             'right' => [
-                __( 'Pray and thank God that His ways are not our ways and His thoughts are not our thoughts.', 'zume' ),
-                __( 'Ask Him to give each member of your group the mind of Christ — always focused on His Father’s work.', 'zume' ),
+                __( 'Pray and thank God that He invites us to share His Good News with others.', 'zume' ),
+                __( 'Ask Him to give each member of your group the mind of Christ — and to fill each one with His Spirit.', 'zume' ),
             ],
         ],
         [
@@ -1210,7 +1210,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the ways He works through the testimony of His people. Invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -1350,9 +1350,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Before you go out on your Prayer Walking activity, be sure to pray with your group to end your time together.', 'zume' ),
-                __( 'Thank God that He loves the lost, the last and the least – including us!', 'zume' ),
-                __( 'Ask Him to prepare your heart and the heart of those you’ll meet during your walk to be open to His work.', 'zume' ),
+                __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
 
@@ -1403,7 +1401,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -1946,7 +1944,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invited the Holy Spirit to guide your time together.', 'zume' ),
+                __( 'Pray and thank God that his ways are not our ways and His thoughts are not our thoughts. Ask Him to give each member of your group the mind of Christ - always focused on His Father‘s work. Ask the Holy Spirit to lead your time together and make it the best session yet.', 'zume' ),
             ],
         ],
         [
@@ -2635,9 +2633,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'LOOK BACK', 'zume' ),
             ],
             'right' => [
-                __( 'Before getting started, take some time to look back.', 'zume' ),
-                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
-                __( 'Take a few moments to see how your group did this week.', 'zume' ),
+                __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
+                __( 'Thank God that He promises in His Word to listen and act when His people pray.', 'zume' ),
+                __( 'Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
             ],
         ],
         [
@@ -2738,9 +2736,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'LOOK BACK', 'zume' ),
             ],
             'right' => [
-                __( 'Before getting started, take some time to look back.', 'zume' ),
-                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
-                __( 'Take a few moments to see how your group did this week.', 'zume' ),
+                __( 'Pray and thank God for His presence in our lives. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
             ],
         ],
         [
@@ -2842,9 +2838,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'LOOK BACK', 'zume' ),
             ],
             'right' => [
-                __( 'Before getting started, take some time to look back.', 'zume' ),
-                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
-                __( 'Take a few moments to see how your group did this week.', 'zume' ),
+                __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -2943,7 +2937,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for His love for all of the people in our lives. Pray for each person in the group to see those around you the way God sees them.', 'zume' ),
             ],
         ],
         [
@@ -3047,7 +3041,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the ways you experienced Him in the last session and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3157,7 +3151,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray for each member of your group to experience the blessings of following Jesus, leading others to follow Jesus, and equipping others to start new spiritual families.', 'zume' ),
             ],
         ],
         [
@@ -3280,7 +3274,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God that He invites us to share His Good News with others. Ask Him to give each member of your group the mind of Christ — and to fill each one with His Spirit.', 'zume' ),
             ],
         ],
         [
@@ -3386,7 +3380,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the gift of being united with Christ‘s death, burial, and resurrection. Ask God‘s Holy Spirit to lead your time, together.', 'zume' ),
             ],
         ],
         [
@@ -3507,7 +3501,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
+                __( 'Pray and thank God for the ways He works through our testimony and invite His Holy Spirit to lead your time together.',  'zume' ),
             ],
         ],
         [
@@ -3621,7 +3615,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
+                __( 'Pray and thank God for how He is at work in your life and the lives of others around you. Pray for the group to have eyes to see where the Kingdom isn‘t, yet.',  'zume' ),
             ],
         ],
         [
@@ -3719,7 +3713,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3832,7 +3826,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for what you learned in the last session. Pray for God‘s Spirit to help you be faithful to put into practice all you are learning.', 'zume' ),
             ],
         ],
         [
@@ -3938,7 +3932,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the group’s commitment to faithfully following Jesus and invite God’s Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4063,7 +4057,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Ask if anyone in the group has specific needs they would like the group to pray for. Thank God that He promises in His Word to listen and act when His people pray. Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
             ],
         ],
         [
@@ -4170,7 +4164,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for giving your group the energy, the focus and the faithfulness to come so far in this training. Ask God to have His Holy Spirit remind everyone in the group that they can do nothing without Him!', 'zume' ),
             ],
         ],
         [
@@ -4281,7 +4275,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for how He continues to speak through the word, prayer, the body, and persecution and suffering. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
             ],
         ],
         [
@@ -4388,7 +4382,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God that his ways are not our ways and His thoughts are not our thoughts. Ask Him to give each member of your group the mind of Christ - always focused on His Father‘s work. Ask the Holy Spirit to lead your time together and make it the best session yet.', 'zume' ),
             ],
         ],
         [
@@ -4494,7 +4488,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for the Body of Christ. Pray for mutual love and encouragement to continue to grow between each member of your group as you draw near to Jesus.', 'zume' ),
             ],
         ],
         [
@@ -4600,7 +4594,9 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
+                __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
+                __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
             ],
         ],
         [
@@ -4612,8 +4608,8 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Before getting started, take some time to look back.', 'zume' ),
-                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
-                __( 'Take a few moments to see how your group did this week.', 'zume' ),
+                __( 'Ask Him to give your group clear heads and open hearts to the great things He wants to do in and through you.', 'zume' ),
+                __( 'Ask the Holy Spirit to lead your time together and thank Him for His faithfulness, too. He got you through!', 'zume' ),
             ],
         ],
         [
