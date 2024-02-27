@@ -50,7 +50,7 @@
         position: relative;
     }
     /* Temporary solution until all slides are in web components */
-    & > title-slide:nth-child(2) {
+    & > :nth-child(2) {
         display: block;
     }
 
@@ -156,6 +156,9 @@ not of the 2 column section */
 
     & > * {
         display: flex;
+        align-items: center;
+    }
+    &[data-align-start] > * {
         align-items: stretch;
     }
     & > :first-child {
@@ -165,13 +168,17 @@ not of the 2 column section */
     & > :first-child::after {
         content: "";
         position: absolute;
-        top: 15%;
-        bottom: 15%;
+        height: 70%;
         width: calc( var(--slide-unit) * 0.5 );
         background-color: color('brand-lighter');
         border-radius: calc( var(--slide-unit) * 3 );
 
         transform: translateX( calc( var(--gap-width) / 2 + 50% ) );
+    }
+    &[data-align-start] > :first-child::after {
+        height: auto;
+        top: 15%;
+        bottom: 15%;
     }
 
     &.left > :first-child {

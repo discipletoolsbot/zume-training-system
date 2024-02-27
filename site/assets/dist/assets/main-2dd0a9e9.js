@@ -1280,7 +1280,7 @@ var rt=Object.defineProperty;var lt=(s,e,t)=>e in s?rt(s,e,{enumerable:!0,config
         `}}customElements.define("left-image-slide",ps);class ms extends y{render(){return r`
             <div class="cover">
                 <h2 class="title text-center" data-small>${this.slide.center[0]}</h2>
-                <div class="two-column middle">
+                <div class="two-column middle" data-align-start>
                     <div>
                         <div class="stack align-items-center">
                             <p><strong>${this.slide.left[0]}</strong></p>
@@ -1663,4 +1663,4 @@ var rt=Object.defineProperty;var lt=(s,e,t)=>e in s?rt(s,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",xs);
-//# sourceMappingURL=main-a55d2bd1.js.map
+//# sourceMappingURL=main-2dd0a9e9.js.map

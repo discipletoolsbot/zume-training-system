@@ -6,7 +6,7 @@ export class NextStepsSlide extends CourseSlide {
         return html`
             <div class="cover">
                 <h2 class="title text-center" data-small>${this.slide['center'][0]}</h2>
-                <div class="two-column middle">
+                <div class="two-column middle" data-align-start>
                     <div>
                         <div class="stack align-items-center">
                             <p><strong>${this.slide['left'][0]}</strong></p>
