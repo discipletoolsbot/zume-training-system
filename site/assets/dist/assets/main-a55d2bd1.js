@@ -1172,11 +1172,11 @@ var rt=Object.defineProperty;var lt=(s,e,t)=>e in s?rt(s,e,{enumerable:!0,config
                     <li><a class="menu-btn" href="${zumeDashboard.urls.launch_intensive_session_course}"><span class="icon zume-course"></span>${zumeDashboard.translations.three_day_intensive_course}</a></li>
                 </ul>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("launch-course",ns);class y extends g{static get properties(){return{slide:{type:Object}}}renderContent(e=[],t=!1,i=!1){return e.map((a,o)=>t&&o===0||i?r`<p><strong>${a}</strong></p>`:Array.isArray(a)?r`
+        `}createRenderRoot(){return this}}customElements.define("launch-course",ns);class y extends g{static get properties(){return{slide:{type:Object}}}renderContent(e=[],t=!1,i=!1){return e.map((a,o)=>t&&o===0?r`<p><strong>${a}</strong></p>`:Array.isArray(a)?r`
                     <ul role="list">
                         ${a.map(n=>r`<li>${n}</li>`)}
                     </ul>
-                `:r`<p>${a}</p>`)}render(){return r`
+                `:i?r`<p><strong>${a}</strong></p>`:r`<p>${a}</p>`)}render(){return r`
             <div class="center"></div>
         `}createRenderRoot(){return this}}customElements.define("course-slide",y);class os extends y{render(){return r`
             <div class="cover">
@@ -1663,4 +1663,4 @@ var rt=Object.defineProperty;var lt=(s,e,t)=>e in s?rt(s,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",xs);
-//# sourceMappingURL=main-9514dacf.js.map
+//# sourceMappingURL=main-a55d2bd1.js.map

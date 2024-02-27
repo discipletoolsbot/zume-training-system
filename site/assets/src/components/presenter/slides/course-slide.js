@@ -9,7 +9,7 @@ export class CourseSlide extends LitElement {
 
     renderContent(stack = [], boldFirst = false, boldAll = false) {
         return stack.map((item, i) => {
-            if ((boldFirst && i === 0) || boldAll) {
+            if ((boldFirst && i === 0)) {
                 return html`<p><strong>${item}</strong></p>`
             }
             if (Array.isArray(item)) {
@@ -20,6 +20,9 @@ export class CourseSlide extends LitElement {
                         }
                     </ul>
                 `
+            }
+            if (boldAll) {
+                return html`<p><strong>${item}</strong></p>`
             }
             return html`<p>${item}</p>`
         })
