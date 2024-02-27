@@ -104,7 +104,12 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         }
     }
 
-    return $slides;
+    $ordered_slides = [];
+    foreach ( $slides as $slide ) {
+        $ordered_slides[] = $slide;
+    }
+
+    return $ordered_slides;
 
     /*
      * // Notes on bundles of slides
@@ -143,4 +148,23 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         32 => ['t32_a','t32_b'],                    // generation mapping
     );
     */
+}
+
+function zume_full_course_builder( $type, $lang_code ) {
+    $sessions = [];
+    $n = 0;
+
+    if ( $type === '10' ) {
+        $n = 10;
+    } else if ( $type === '20' ) {
+        $n = 20;
+    } else if ( $type === 'intensive' ) {
+        $n = 5;
+    }
+
+    for ($i=1; $i < $n + 1; $i++) {
+        $sessions[] = zume_course_builder( $type, "$i", $lang_code );
+    }
+
+    return $sessions;
 }

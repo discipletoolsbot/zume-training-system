@@ -6,6 +6,10 @@ $widths: (100, 90, 80, 75, 70, 60, 50, 40, 30, 25, 20, 15, 10);
     }
 }
 
+.mw-60 {
+    max-width: 60%;
+}
+
 @for $i from -5 through 5 {
     .h-#{$i} {
         height: spacing($i);

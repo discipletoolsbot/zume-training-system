@@ -89,9 +89,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'zume_languages' => zume_language_codes(),
             ]) ?>][0]
-            const zume10Sessions = [<?php echo json_encode( get_sessions( '10' ) ) ?>][0]
-            const zume20Sessions = [<?php echo json_encode( get_sessions( '20' ) ) ?>][0]
-            const zumeIntensiveSessions = [<?php echo json_encode( get_sessions( 'intensive' ) ) ?>][0]
+            const zume10Sessions = [<?php echo json_encode( zume_full_course_builder( '10', $this->lang_code ) ) ?>][0]
+            const zume20Sessions = [<?php echo json_encode( zume_full_course_builder( '20', $this->lang_code ) ) ?>][0]
+            const zumeIntensiveSessions = [<?php echo json_encode( zume_full_course_builder( 'intensive', $this->lang_code ) ) ?>][0]
         </script>
         <?php
     }
