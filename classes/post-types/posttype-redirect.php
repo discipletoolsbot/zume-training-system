@@ -356,9 +356,9 @@ class Zume_Redirect_Post_Type
         return $fields;
     }
     public function meta_box_setup() {
-        add_meta_box( $this->post_type . '_links', 'Links', array( $this, 'load_links_meta_box' ), $this->post_type, 'normal', 'high' );
+        add_meta_box( $this->post_type . '_tools', 'Tools', array( $this, 'load_tools_meta_box' ), $this->post_type, 'normal', 'high' );
     }
-    public function load_links_meta_box() {
+    public function load_tools_meta_box() {
         $this->meta_box_content( 'tools' ); // prints
     }
 

@@ -151,21 +151,11 @@ class Zume_Training_Page extends Zume_Magic_Page
             __('Training Schedules', 'zume' ),
             __('Zúme is 20 hours of training. But those 20 hours can be broken up differently depending on your groups availability.', 'zume' ),
             __('10 Sessions', 'zume' ),
-            __('', 'zume' ),
+            __('The original Züme training format is 10 two hour sessions. Each session finishes with practical obedience steps and ways to share in-between sessions. This format is often ran once a week for 10 weeks.', 'zume' ),
             __('20 Sessions', 'zume' ),
-//            __('', 'zume' ),
+            __('For a longer slower pace training with more opportunity for gaining competence in the concepts and skills, the 20 session format has more practice opportunities for each of the concepts and tools.', 'zume' ),
             __('3 Day Intensive', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-//            __('', 'zume' ),
-
+            __('Zume can bet compressed into 5 half day sections of 4 hours each. This can be done with a Friday evening (4 hours), and all day Saturday (8 hours) and all day Sunday (8 hours).', 'zume' ),
         ];
         foreach($strings as $string ){
             echo $string . '<br>';
