@@ -65,24 +65,15 @@ class Zume_Content_Viewer extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css();
+        return zume_training_magic_url_base_allowed_css( $allowed_css );
     }
     public function action_wp_footer(): void {}
     public function wp_enqueue_scripts() {}
     public function header_style(){
         ?>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.js" integrity="sha512-vsjtv6Dty7C9eeMlJ+02kvlhvVlqKsJHOFWZ1ZR5WrRlU/oTlW8d8wPHWlKX579O4OO/kW5DW9XFtQ9J3gKeKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" rel="stylesheet">
         <style>
             #blank-template-body {
                 background-color: WhiteSmoke !important;
-            }
-            .slides-card {
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                height: 720px;
-                width: 1280px;
-                background-color: white;
             }
         </style>
         <?php
@@ -155,7 +146,7 @@ class Zume_Content_Viewer extends Zume_Magic_Page
                     $("select option[value="+type+"_"+session+"]").prop('selected', true );
                 }
             });
-        </script>
+        </style>
         <div style="margin-top: 70px;"><!-- padding for under dropdown -->
 
         <?php

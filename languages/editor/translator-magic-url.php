@@ -108,25 +108,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public function header_style(){
         if ( isset( $_GET['tab'] ) && $_GET['tab'] === 'view_course' ) {
             ?>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.js" integrity="sha512-vsjtv6Dty7C9eeMlJ+02kvlhvVlqKsJHOFWZ1ZR5WrRlU/oTlW8d8wPHWlKX579O4OO/kW5DW9XFtQ9J3gKeKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <link href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" rel="stylesheet">
             <style>
-            #blank-template-body {
-                background-color: WhiteSmoke !important;
-            }
-            .slides-card {
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                height: 720px;
-                width: 1280px;
-                background-color: white;
-            }
-        </style>
+                #blank-template-body {
+                    background-color: WhiteSmoke !important;
+                }
+            </style>
             <?php
         } else {
             ?>
             <!-- Place the first <script> tag in your HTML's <head> -->
-            <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+            <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></style>
             <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
             <script>
                 tinymce.init({

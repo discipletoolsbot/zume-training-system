@@ -1,0 +1,205 @@
+.slides-card {
+    --slide-unit: 1vw;
+    --font-size: calc( var(--slide-unit) * 2 );
+    --z-brand-lighter: #5dccff;
+
+    --spacing-ratio: 1.5;
+    --s-5: calc( var(--s-4) / var(--spacing-ratio) );
+    --s-4: calc( var(--s-3) / var(--spacing-ratio) );
+    --s-3: calc( var(--s-2) / var(--spacing-ratio) );
+    --s-2: calc( var(--s-1) / var(--spacing-ratio) );
+    --s-1: calc( var(--s0) / var(--spacing-ratio) );
+    --s0: calc( var(--slide-unit) * 2 );
+    --s1: calc( var(--s0) * var(--spacing-ratio) );
+    --s2: calc( var(--s1) * var(--spacing-ratio) );
+    --s3: calc( var(--s2) * var(--spacing-ratio) );
+    --s4: calc( var(--s3) * var(--spacing-ratio) );
+    --s5: calc( var(--s4) * var(--spacing-ratio) );
+
+    /* Globals */
+    font-size: var(--font-size);
+    line-height: 1.5;
+
+    border: 1px solid #ccc;
+    border-radius: calc( var(--slide-unit) );
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background-color: color(white);
+
+    img {
+        width: 100%;
+    }
+    h2 {
+        font-size: calc( var(--slide-unit) * 3 );
+        font-weight: 500;
+        color: color('brand-dark');
+    }
+    ul[role="list"] li::before {
+        font-size: 1em;
+        vertical-align: unset;
+        padding-inline-end: 1em;
+    }
+    strong {
+        font-weight: 600;
+    }
+
+    /* Composition */
+    & > :nth-child(2) {
+        height: calc( 100% - 45px );
+        min-block-size: calc( 100% - 45px );
+        position: relative;
+    }
+    /* Temporary solution until all slides are in web components */
+    & > :nth-child(2) {
+        display: block;
+    }
+
+    .stack {
+        --space: var(--s-2);
+    }
+
+    /* Blocks */
+    .title-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        text-align: end;
+
+        & > div:nth-child(2) {
+            align-items: flex-end;
+        }
+    }
+    .title-icon {
+        width: calc( var(--slide-unit) * 6 );
+    }
+    .title {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: color('brand-dark');
+
+        &[data-small] {
+            font-size: var(--font-size);
+        }
+    }
+    .subtitle {
+        font-weight: 600;
+    }
+    .content-area {
+        display: flex;
+        align-items: center;
+    }
+
+    .qr-code {
+        width: calc( var(--slide-unit) * 12 );
+    }
+
+    .activity-card {
+        padding: 1em;
+        background-color: #e7f6fc;
+        border-radius: calc( var(--slide-unit) * 2 );
+        border: calc( var(--slide-unit) * 0.3 ) solid color('brand-lighter');
+        box-shadow: 0px calc( var(--slide-unit) * 0.3 ) calc( var(--slide-unit) * 0.2 ) 0px #0c1a2130;
+
+        &[data-expanded-padding] {
+            padding-block: 2em;
+        }
+
+        &[data-large] {
+            font-weight: 600;
+            font-size: calc( var(--slide-unit) * 3 );
+        }
+    }
+
+    .obey-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        position: relative;
+
+        & > .two-column {
+            position: static;
+
+            & > *::after {
+                content: none;
+            }
+            &:first-child > :first-child::after {
+                content: "";
+            }
+        }
+    }
+}
+
+.video-slide {
+    --slide-unit: 1vw;
+    aspect-ratio: 16 / 9;
+    border-radius: calc( var(--slide-unit) );
+    overflow: hidden;
+}
+
+/* On e.g. an activity page we want the relative size of the divider to be the height of the cover section
+not of the 2 column section */
+.cover .two-column {
+    position: static;
+}
+
+.two-column {
+    --gap-width: 8vw;
+    padding-inline: calc( var(--gap-width) / 2 );
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-block-size: 100%;
+    gap: var(--gap-width);
+    position: relative;
+
+    & > * {
+        display: flex;
+        align-items: center;
+    }
+    &[data-align-start] > * {
+        align-items: stretch;
+    }
+    & > :first-child {
+        justify-content: flex-end;
+    }
+
+    & > :first-child::after {
+        content: "";
+        position: absolute;
+        height: 70%;
+        width: calc( var(--slide-unit) * 0.5 );
+        background-color: color('brand-lighter');
+        border-radius: calc( var(--slide-unit) * 3 );
+
+        transform: translateX( calc( var(--gap-width) / 2 + 50% ) );
+    }
+    &[data-align-start] > :first-child::after {
+        height: auto;
+        top: 15%;
+        bottom: 15%;
+    }
+
+    &.left > :first-child {
+        width: calc( 1 / 3 * 100% - var( --gap-width ) / 2 );
+    }
+
+    &.left > :nth-child(2) {
+        width: calc( 2 / 3 * 100% - var( --gap-width ) / 2 );
+    }
+
+    &.right > :first-child {
+        width: calc( 3 / 4 * 100% - var( --gap-width ) / 2 );
+    }
+    &.right > :nth-child(2) {
+        width: calc( 1 / 4 * 100% - var( --gap-width ) / 2 );
+    }
+
+    &.middle > :first-child {
+        width: calc( 1 / 2 * 100% - var( --gap-width ) / 2 );
+    }
+    &.middle > :nth-child(2) {
+        width: calc( 1 / 2 * 100% - var( --gap-width ) / 2 );
+    }
+}

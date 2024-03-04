@@ -218,7 +218,6 @@ export class CoursePresenter extends LitElement {
     }
 
     switchViews( pushState = true) {
-        console.log(this.view)
         if ( this.view === 'guide' ) {
             this.view = 'slideshow'
         } else {
