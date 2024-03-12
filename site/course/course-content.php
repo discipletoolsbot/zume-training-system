@@ -2,6 +2,8 @@
 
 function zume_content( $lang_code = 'en') {
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
+    $checkin_base_url = site_url() . '/' . $lang_code . '/checkin/?code=';
+    $activity_base_url = site_url() . '/' . $lang_code . '/zume_app/qr/?l=' . $lang_code . '&a=';
 
     return [
         /***************************************************************************************************************
@@ -34,7 +36,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/5678.png',
+                zume_create_qr_url( $checkin_base_url . '5678' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5678'
             ],
@@ -224,7 +226,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' )
             ],
             'right' => [
-                $mirror_url . 'qr/4.png',
+                zume_create_qr_url( $activity_base_url . 'soaps' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -264,7 +266,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Spend the next 20 minutes working together through the Accountability Questions.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/5.png',
+                zume_create_qr_url( $activity_base_url . 'accountability' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -338,7 +340,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2468.png',
+                zume_create_qr_url( $checkin_base_url . '2468' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2468'
             ],
@@ -466,7 +468,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/7.png',
+                zume_create_qr_url( $activity_base_url . 'prayercycle' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -523,7 +525,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/8.png',
+                zume_create_qr_url( $activity_base_url . 'list100' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -609,7 +611,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/6543.png',
+                zume_create_qr_url( $checkin_base_url . '6543' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6543'
             ],
@@ -768,7 +770,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three people and take turns telling the Gospel to each other.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/10.png',
+                zume_create_qr_url( $activity_base_url . 'sharegospel' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -887,7 +889,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/8764.png',
+                zume_create_qr_url( $checkin_base_url . '8764' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8764'
             ],
@@ -973,7 +975,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three and practice sharing your testimony.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/12.png',
+                zume_create_qr_url( $activity_base_url . 'sharetestimony' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1125,7 +1127,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Spend the next 10 minutes celebrating The Lord’s Supper with your group.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/16.png',
+                zume_create_qr_url( $activity_base_url . 'supper' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1196,7 +1198,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/6542.png',
+                zume_create_qr_url( $checkin_base_url . '6542' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6542'
             ],
@@ -1317,7 +1319,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/18.png',
+                zume_create_qr_url( $activity_base_url . 'bless' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1337,7 +1339,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/17.png',
+                zume_create_qr_url( $activity_base_url . 'prayerwalking' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1387,7 +1389,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/1235.png',
+                zume_create_qr_url( $checkin_base_url . '1235' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1235'
             ],
@@ -1574,7 +1576,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/4322.png',
+                zume_create_qr_url( $checkin_base_url . '4322' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4322'
             ],
@@ -1677,7 +1679,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/27.png',
+                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1760,7 +1762,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/9870.png',
+                zume_create_qr_url( $checkin_base_url . '9870' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9870'
             ],
@@ -1862,7 +1864,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/21.png',
+                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1930,7 +1932,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/1355.png',
+                zume_create_qr_url( $checkin_base_url . '1355' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1355'
             ],
@@ -2129,7 +2131,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . 'coachingchecklist' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2213,7 +2215,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/5430.png',
+                zume_create_qr_url( $checkin_base_url . '5430' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5430'
             ],
@@ -2340,7 +2342,7 @@ function zume_content( $lang_code = 'en') {
 
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . '4fields' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2420,7 +2422,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'By the time you’re finished, everyone should have a basic understanding of asking and answering.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . 'peermentoring' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2453,7 +2455,7 @@ function zume_content( $lang_code = 'en') {
                 ],
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . '3monthplan' ),
                 __( 'Online Plan Tool', 'zume' ),
             ],
         ],
@@ -2513,7 +2515,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/3354.png',
+                zume_create_qr_url( $checkin_base_url . '3354' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3354'
             ],
@@ -2608,7 +2610,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/4568.png',
+                zume_create_qr_url( $checkin_base_url . '4568' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4568'
             ],
@@ -2711,7 +2713,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/8767.png',
+                zume_create_qr_url( $checkin_base_url . '8767' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8767'
             ],
@@ -2813,7 +2815,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/6787.png',
+                zume_create_qr_url( $checkin_base_url . '6787' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6787'
             ],
@@ -2923,7 +2925,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/3450.png',
+                zume_create_qr_url( $checkin_base_url . '3450' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '3450'
             ],
@@ -3027,7 +3029,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2344.png',
+                zume_create_qr_url( $checkin_base_url . '2344' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2344'
             ],
@@ -3137,7 +3139,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/1116.png',
+                zume_create_qr_url( $checkin_base_url . '1116' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '1116'
             ],
@@ -3260,7 +3262,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/5431.png',
+                zume_create_qr_url( $checkin_base_url . '5431' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '5431'
             ],
@@ -3366,7 +3368,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/8768.png',
+                zume_create_qr_url( $checkin_base_url . '8768' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '8768'
             ],
@@ -3487,7 +3489,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2347.png',
+                zume_create_qr_url( $checkin_base_url . '2347' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2347'
             ],
@@ -3601,7 +3603,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/9434.png',
+                zume_create_qr_url( $checkin_base_url . '9434' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9434'
             ],
@@ -3699,7 +3701,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2348.png',
+                zume_create_qr_url( $checkin_base_url . '2348' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2348'
             ],
@@ -3812,7 +3814,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/6785.png',
+                zume_create_qr_url( $checkin_base_url . '6785' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6785'
             ],
@@ -3918,7 +3920,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/9872.png',
+                zume_create_qr_url( $checkin_base_url . '9872' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '9872'
             ],
@@ -4043,7 +4045,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/4327.png',
+                zume_create_qr_url( $checkin_base_url . '4327' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4327'
             ],
@@ -4150,7 +4152,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2871.png',
+                zume_create_qr_url( $checkin_base_url . '2871' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2871'
             ],
@@ -4261,7 +4263,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/4328.png',
+                zume_create_qr_url( $checkin_base_url . '4328' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '4328'
             ],
@@ -4368,7 +4370,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/6548.png',
+                zume_create_qr_url( $checkin_base_url . '6548' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '6548'
             ],
@@ -4474,7 +4476,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/7657.png',
+                zume_create_qr_url( $checkin_base_url . '7657' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '7657'
             ],
@@ -4580,7 +4582,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Have all of the participants and facilitator check-in.', 'zume' ),
-                $mirror_url . 'qr/2767.png',
+                zume_create_qr_url( $checkin_base_url . '2767' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
                 '2767'
             ],

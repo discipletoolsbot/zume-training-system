@@ -186,9 +186,9 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * By Language Code and Resource ID
+         * By Language Code and Tools
          *
-         * https://zume.training/zume_app/qr/?l=en&r=123
+         * https://zume.training/zume_app/qr/?l=en&t=123
          */
         else if ( isset( $_GET['l'], $_GET['t'] ) ) {
             dt_write_log( 'Resource: ' . $_GET['l'] . ' ' . $_GET['t'] );
@@ -211,6 +211,27 @@ class Zume_QR_Redirect
             }
 
             $link = $this->root_url . $params;
+
+            if ( $this->development_display ) {
+                echo '<span style="font-size: 3em;">' . $link . '</span>';
+            } else {
+                header("Location: ".$link, true, 302);
+            }
+
+            exit();
+        }
+        /**
+         * By Language Code and Activity ID
+         *
+         * https://zume.training/zume_app/qr/?l=en&a=4
+         */
+        else if ( isset( $_GET['l'], $_GET['a'] ) ) {
+            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['a'] );
+
+            $activity_id = esc_attr( $_GET['a'] );
+            $language_slug = esc_attr( $_GET['l'] );
+
+            $link = $this->root_url . '/' . $language_slug . '/zume_activity/' . $activity_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

@@ -249,10 +249,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'status' => $tab === 'status' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow',
-            'tools' => $tab === 'tools' ? '' : 'hollow',
             'emails' => $tab === 'emails' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'view_course' => $tab === 'view_course' ? '' : 'hollow',
+            'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -498,7 +498,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         <?php
     }
-    public function tools() {}
     public function emails() {}
     public function ctas() {}
     public function view_course() {
@@ -616,7 +615,96 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
 
     }
+    public function qr_codes() {
+        global $wpdb;
+        $zume_languages = zume_languages();
+        $lang = $zume_languages[$this->lang];
+        $training_items = zume_training_items();
+
+        ?>
+        <style>
+            .qr-table img {
+                width: 150px;
+                margin: 0 auto;
+            }
+        </style>
+        <h2>Checkins</h2>
+         <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>QR Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach( $training_items as $item ) {
+//                    dt_write_log( $item );
+                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                    $qr_url = zume_create_qr_url( $url );
+                    echo '<tr>';
+                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>' . $url . '</td>';
+                    echo '<td><img src="' . $qr_url . '" /></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
+        <h2>Activities</h2>
+         <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>QR Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach( $training_items as $item ) {
+//                    dt_write_log( $item );
+                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                    $qr_url = zume_create_qr_url( $url );
+                    echo '<tr>';
+                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>' . $url . '</td>';
+                    echo '<td><img src="' . $qr_url . '" /></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
+        <h2>Videos</h2>
+        <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>QR Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE post_type = 'video' AND post_status = 'publish'" );
+                foreach( $training_items as $item ) {
+//                    dt_write_log( $item );
+                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                    $qr_url = zume_create_qr_url( $url );
+                    echo '<tr>';
+                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>' . $url . '</td>';
+                    echo '<td><img src="' . $qr_url . '" /></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
+        <?php
+    }
 }
+
 Zume_Training_Translator::instance();
 
 if ( ! function_exists( 'list_zume_pieces' ) ) {

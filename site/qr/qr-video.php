@@ -79,6 +79,9 @@ class Zume_QR_Video extends Zume_Magic_Page
         }
         $vimeo_id = sanitize_text_field( wp_unslash( $_GET['id'] ) );
         // https://zume.training/wp-content/themes/zume-training/video.php?id=551339739
+        // https://zume.training/zume_app/video/?id=551339739
+
+        // @todo logo video load event in movement log
 
         ?>
         <!doctype html>

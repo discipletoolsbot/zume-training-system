@@ -8,9 +8,9 @@ class Zume_Activites_Prayerwalk extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Activity - Prayer Walk';
+    public $page_title = 'Zúme Activity - Prayer Walking';
     public $root = 'zume_activity';
-    public $type = 'prayerwalk';
+    public $type = 'prayerwalking';
     public $lang;
     public static $token = 'zume_activity_prayerwalk';
 

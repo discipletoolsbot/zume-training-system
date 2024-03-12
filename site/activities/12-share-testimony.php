@@ -2,7 +2,7 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Activites_Share extends Zume_Magic_Page
+class Zume_Activites_Sharetestimony extends Zume_Magic_Page
 {
     use Translateable;
 
@@ -10,9 +10,9 @@ class Zume_Activites_Share extends Zume_Magic_Page
     public $parts = false;
     public $page_title = 'Zúme Activity - Share Testimony';
     public $root = 'zume_activity';
-    public $type = 'share';
+    public $type = 'sharetestimony';
     public $lang;
-    public static $token = 'zume_activity_share';
+    public static $token = 'zume_activity_sharetestimony';
 
     private static $_instance = null;
     public static function instance() {
@@ -86,4 +86,4 @@ class Zume_Activites_Share extends Zume_Magic_Page
         echo '<pre>'; debug_print_backtrace(); echo '</pre>';
     }
 }
-Zume_Activites_Share::instance();
+Zume_Activites_Sharetestimony::instance();

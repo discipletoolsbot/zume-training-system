@@ -2,17 +2,17 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 
-class Zume_Activites_33group extends Zume_Magic_Page
+class Zume_Activites_Sharegospel extends Zume_Magic_Page
 {
     use Translateable;
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Activity - 3/3 Group Meeting';
+    public $page_title = 'Zúme Activity - Share Gospel';
     public $root = 'zume_activity';
-    public $type = '33groupmeeting';
+    public $type = 'sharegospel';
     public $lang;
-    public static $token = 'zume_activity_33group';
+    public static $token = 'zume_activity_sharegospel';
 
     private static $_instance = null;
     public static function instance() {
@@ -86,4 +86,4 @@ class Zume_Activites_33group extends Zume_Magic_Page
         echo '<pre>'; debug_print_backtrace(); echo '</pre>';
     }
 }
-Zume_Activites_33group::instance();
+Zume_Activites_Sharegospel::instance();
