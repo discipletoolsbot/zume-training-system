@@ -546,7 +546,7 @@ class Zume_Training {
         $is_magic_link_page = apply_filters( 'dt_blank_access', false );
 
         // zume-redirects This ensures that the url always matches the users ui_language
-        if ( !empty( $language_code ) && !dt_is_rest() && $is_magic_link_page ) {
+        if ( false && !empty( $language_code ) && !dt_is_rest() && $is_magic_link_page ) {
             [
                 'lang_code' => $lang_code,
                 'path' => $path,
