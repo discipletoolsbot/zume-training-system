@@ -31,7 +31,7 @@ class Zume_Training_Checkin extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        dt_write_log( zume_get_url_pieces() );
+//        dt_write_log( zume_get_url_pieces() );
 
         $page_slug = $url_parts[0] ?? '';
 

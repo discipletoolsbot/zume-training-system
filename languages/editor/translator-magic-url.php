@@ -58,7 +58,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
-        $this->lang = get_locale();
+//        $this->lang = get_locale();
 
         [
             'lang_code' => $lang_code,
@@ -117,7 +117,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         } else {
             ?>
             <!-- Place the first <script> tag in your HTML's <head> -->
-            <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></style>
+            <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
             <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
             <script>
                 tinymce.init({
