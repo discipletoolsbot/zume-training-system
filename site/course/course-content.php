@@ -3197,7 +3197,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.', 'zume' ),
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . 'sharegospel' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -3663,7 +3663,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . 'prayerwalking' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -3980,7 +3980,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],

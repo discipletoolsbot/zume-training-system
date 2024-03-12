@@ -9,7 +9,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
  */
 class Zume_QR_Redirect
 {
-    public $development_display = true;
+    public $development_display = false;
     public $page_title = 'Zume Redirect';
     public $root = 'zume_app';
     public $type = 'qr';
