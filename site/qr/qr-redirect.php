@@ -131,12 +131,12 @@ class Zume_QR_Redirect
          * By Video ID
          * (legacy support for zume4 books)
          *
-         * https://zume.training/zume_app/qr/?l=en&v=1
+         * https://zume.training/zume_app/qr/?v=2342343
          */
         else if( isset( $_GET['v'] ) && !isset( $_GET['l'] ) ) {
             dt_write_log( 'Video: ' . $_GET['v'] );
 
-            $link = site_url() . '/zume_app/video/?id='; // @todo: change to zume from zume5
+            $link = site_url() . '/zume_app/video/?id=';
             $video_id = esc_attr( $_GET['v'] );
 
             $link = $link . $video_id;
@@ -232,6 +232,27 @@ class Zume_QR_Redirect
             $language_slug = esc_attr( $_GET['l'] );
 
             $link = $this->root_url . '/' . $language_slug . '/zume_activity/' . $activity_id;
+
+            if ( $this->development_display ) {
+                echo '<span style="font-size: 3em;">' . $link . '</span>';
+            } else {
+                header("Location: ".$link, true, 302);
+            }
+
+            exit();
+        }
+        /**
+         * By Language Code and Activity ID
+         *
+         * https://zume.training/zume_app/qr/?l=en&a=4
+         */
+        else if ( isset( $_GET['l'], $_GET['c'] ) ) {
+            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['c'] );
+
+            $checkin_code = esc_attr( $_GET['c'] );
+            $language_slug = esc_attr( $_GET['l'] );
+
+            $link = $this->root_url . '/' . $language_slug . '/checkin/?code=' . $checkin_code;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

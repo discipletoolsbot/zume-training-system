@@ -620,6 +620,26 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
         $training_items = zume_training_items();
+        $activities = [
+            'soaps',
+            'accountability',
+            'prayercycle',
+            'list100',
+            'sharegospel',
+            'sharetestimony',
+            'supper',
+            'bless',
+            '33groupa2',
+            '33groupm6',
+            '33groupmeeting',
+            '33groupmk5',
+            'prayerwalking',
+            '3monthplan',
+            'coachingchecklist',
+            'peermentoring',
+            '4fields',
+            'genmap',
+        ];
 
         ?>
         <style>
@@ -637,14 +657,47 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <th>QR Code</th>
                 </tr>
             </thead>
-            <tbody>
+           <tbody>
                 <?php
-                foreach( $training_items as $item ) {
-//                    dt_write_log( $item );
-                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                $list = [
+                    // set a
+                    5678 => 'set_a_01', // 10 session 1
+                    2468 => 'set_a_02', // 10 session 2
+                    6543 => 'set_a_03', // 10 session 3
+                    8764 => 'set_a_04', // 10 session 4
+                    6542 => 'set_a_05', // 10 session 5
+                    1235 => 'set_a_06', // 10 session 6
+                    4322 => 'set_a_07', // 10 session 7
+                    9870 => 'set_a_08', // 10 session 8
+                    1355 => 'set_a_09', // 10 session 9
+                    5430 => 'set_a_10', // 10 session 10
+                    // set b
+                    3354 => 'set_b_01', // 20 session 1
+                    4568 => 'set_b_02', // 20 session 2
+                    8767 => 'set_b_03', // 20 session 3
+                    6787 => 'set_b_04', // 20 session 4
+                    3450 => 'set_b_05', // 20 session 5
+                    2344 => 'set_b_06', // 20 session 6
+                    1116 => 'set_b_07', // 20 session 7
+                    5431 => 'set_b_08', // 20 session 8
+                    8768 => 'set_b_09', // 20 session 9
+                    2347 => 'set_b_10', // 20 session 10
+                    9434 => 'set_b_11', // 20 session 11
+                    2348 => 'set_b_12', // 20 session 12
+                    6785 => 'set_b_13', // 20 session 13
+                    9872 => 'set_b_14', // 20 session 14
+                    4327 => 'set_b_15', // 20 session 15
+                    2871 => 'set_b_16', // 20 session 16
+                    4328 => 'set_b_17', // 20 session 17
+                    6548 => 'set_b_18', // 20 session 18
+                    7657 => 'set_b_19', // 20 session 19
+                    2767 => 'set_b_20', // 20 session 20
+                ];
+                foreach( $list as $i => $v ) {
+                    $url = site_url() . '/zume_app/qr/?l='.$this->lang. '&c='. $i;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
-                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>Code: '. $i . ' for ' . $v . '</td>';
                     echo '<td>' . $url . '</td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
@@ -663,12 +716,12 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </thead>
             <tbody>
                 <?php
-                foreach( $training_items as $item ) {
+                foreach( $activities as $item ) {
 //                    dt_write_log( $item );
-                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                    $url = site_url() . '/zume_app/qr/?l='.$this->lang.'&a='.$item;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
-                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>' . $item . '</td>';
                     echo '<td>' . $url . '</td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
@@ -687,10 +740,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </thead>
             <tbody>
                 <?php
-                $results = $wpdb->get_results( "SELECT * FROM $wpdb->posts WHERE post_type = 'video' AND post_status = 'publish'" );
+
                 foreach( $training_items as $item ) {
-//                    dt_write_log( $item );
-                    $url = site_url() . '/' . $this->lang . '/' . $item['slug'];
+                    $id =  intval( $item['key'] );
+                    $url = site_url() . '/zume_app/qr/?l='.$this->lang. '&v='. $id;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item['title'] . '</td>';

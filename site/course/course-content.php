@@ -1679,7 +1679,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
+                zume_create_qr_url( $activity_base_url . '33groupmk5' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1864,7 +1864,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
+                zume_create_qr_url( $activity_base_url . '33groupa2' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],

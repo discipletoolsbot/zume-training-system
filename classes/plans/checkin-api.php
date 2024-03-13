@@ -64,7 +64,6 @@ Zume_Checkin::instance();
 function zume_session_alias_keys( $number_priority = true ) {
     $list = [
 
-
         // set a
         5678 => 'set_a_01', // 10 session 1
         9876 => 'set_a_01',
