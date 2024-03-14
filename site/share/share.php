@@ -119,6 +119,7 @@ class Zume_Training_Share extends Zume_Magic_Page
                 'page_url' => $page_url,
                 'type' => $page_info['type'],
                 'key' => $page_info['key'],
+                'description' => $page_info['description'],
             ];
         }
 
@@ -167,26 +168,21 @@ class Zume_Training_Share extends Zume_Magic_Page
             </div>
 
             <noscript>
-                <ul class="stack container-xsm">
-                    <?php foreach ( $posts as $post ): ?>
-
-                        <?php
-
-                            $meta = get_post_meta( $post->ID );
-                            $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
-                            $page_url = site_url( $current_language . '/' . $post->post_name );
-
-                        ?>
+                <ul class="stack container-sm">
+                    <?php foreach ( $share_items as $item ): ?>
 
                         <li class="share-cards">
                             <div class="stack | share card">
-                                <a class="f-0 bold my-0" href="<?php echo esc_url( $page_url ) ?>">
-                                    <?php echo esc_html( $page_title ) ?>
+                                <a class="f-0 bold" href="<?php echo esc_url( $item['page_url'] ) ?>">
+                                    <?php echo esc_html( $item['page_title'] ) ?>
                                 </a>
+                                <p class="f--1 s--5 show-for-large">
+                                    <?php echo esc_html( $item['description'] ) ?>
+                                </p>
                                 <div class="center">
                                     <div class="stack--2">
                                         <p><?php echo esc_html( $share_translations['copy_and_share_text'] ) ?></p>
-                                        <p><code style="overflow-wrap: anywhere"><?php echo esc_url( $page_url ) ?></code></p>
+                                        <p><code style="overflow-wrap: anywhere"><?php echo esc_url( $item['page_url'] ) ?></code></p>
                                     </div>
                                 </div>
                             </div>

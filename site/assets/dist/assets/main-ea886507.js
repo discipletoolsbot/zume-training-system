@@ -1673,12 +1673,15 @@ var ot=Object.defineProperty;var lt=(i,e,t)=>e in i?ot(i,e,{enumerable:!0,config
 
 
             </div>
-        `}createRenderRoot(){return this}}customElements.define("share-links",ks);class Ss extends g{constructor(){super();E(this,"sortAlphabetically",(t,s)=>t.page_title<s.page_title?-1:1);E(this,"sortByKey",(t,s)=>Number(t.key)<Number(s.key)?-1:1);this.items=zumeShare.share_items,this.filterType="all"}static get properties(){return{items:{type:Array,attribute:!1},filterType:{type:String,attribute:!1},isSortedAlphabetically:{type:Boolean,attribute:!1}}}filterItems(t){this.filterType=t,this.items=this.sortItems(zumeShare.share_items.filter(({type:s})=>t==="all"?!0:s===t))}toggleSorting(){this.isSortedAlphabetically=!this.isSortedAlphabetically,this.items=this.sortItems(this.items)}sortItems(t){return t.sort((s,a)=>this.isSortedAlphabetically?this.sortAlphabetically(s,a):this.sortByKey(s,a))}renderListItem({page_url:t,page_title:s,type:a}){return o`
+        `}createRenderRoot(){return this}}customElements.define("share-links",ks);class Ss extends g{constructor(){super();E(this,"sortAlphabetically",(t,s)=>t.page_title<s.page_title?-1:1);E(this,"sortByKey",(t,s)=>Number(t.key)<Number(s.key)?-1:1);this.items=zumeShare.share_items,this.filterType="all"}static get properties(){return{items:{type:Array,attribute:!1},filterType:{type:String,attribute:!1},isSortedAlphabetically:{type:Boolean,attribute:!1}}}filterItems(t){this.filterType=t,this.items=this.sortItems(zumeShare.share_items.filter(({type:s})=>t==="all"?!0:s===t))}toggleSorting(){this.isSortedAlphabetically=!this.isSortedAlphabetically,this.items=this.sortItems(this.items)}sortItems(t){return t.sort((s,a)=>this.isSortedAlphabetically?this.sortAlphabetically(s,a):this.sortByKey(s,a))}renderListItem({page_url:t,page_title:s,type:a,description:r}){return o`
             <li class="share-cards" data-type=${a}>
                 <div class="stack | share card">
-                    <a class="f-0 bold my-0" href=${t}>
+                    <a class="f-0 bold mt-0" href=${t}>
                         ${s}
                     </a>
+                    <p class="f--1 s--5 show-for-large">
+                        ${r}
+                    </p>
                     <div class="center">
                         <share-links
                             url=${t}
@@ -1726,7 +1729,7 @@ var ot=Object.defineProperty;var lt=(i,e,t)=>e in i?ot(i,e,{enumerable:!0,config
                     </li>
                 </ul>
             </div>
-            <ul class="stack container-xsm | mt-0">
+            <ul class="stack container-sm | mt-0">
 
                 ${ne(this.items,t=>t.key,this.renderListItem)}
 
@@ -1844,4 +1847,4 @@ var ot=Object.defineProperty;var lt=(i,e,t)=>e in i?ot(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",Es);
-//# sourceMappingURL=main-750b587f.js.map
+//# sourceMappingURL=main-ea886507.js.map

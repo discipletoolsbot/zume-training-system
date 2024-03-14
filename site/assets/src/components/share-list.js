@@ -45,14 +45,17 @@ export class ShareList extends LitElement {
         return Number(a.key) < Number(b.key) ? -1 : 1
     }
 
-    renderListItem({ page_url, page_title, type }) {
+    renderListItem({ page_url, page_title, type, description }) {
         /* WARNING this list item is a copy of the one in share.php for noscript users */
         return html`
             <li class="share-cards" data-type=${type}>
                 <div class="stack | share card">
-                    <a class="f-0 bold my-0" href=${page_url}>
+                    <a class="f-0 bold mt-0" href=${page_url}>
                         ${page_title}
                     </a>
+                    <p class="f--1 s--5 show-for-large">
+                        ${description}
+                    </p>
                     <div class="center">
                         <share-links
                             url=${page_url}
@@ -104,7 +107,7 @@ export class ShareList extends LitElement {
                     </li>
                 </ul>
             </div>
-            <ul class="stack container-xsm | mt-0">
+            <ul class="stack container-sm | mt-0">
 
                 ${
                     repeat(this.items, (share_item) => share_item.key, this.renderListItem)
