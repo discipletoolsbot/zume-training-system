@@ -1,6 +1,5 @@
 import './scss/styles.scss'
 import './js/scripts'
-import './js/share'
 import './js/zumeStorage'
 
 import './components/wizard/index'

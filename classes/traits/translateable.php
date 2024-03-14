@@ -34,6 +34,8 @@ trait Translateable {
     public function set_locale( $lang_code = null ) {
         if ( !$lang_code ) {
             $lang_code = $this->lang_code;
+        } else {
+            $this->lang_code = $lang_code;
         }
 
         $lang_code_from_cookie = zume_get_language_cookie();

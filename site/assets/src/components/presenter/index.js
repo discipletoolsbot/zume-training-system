@@ -17,3 +17,5 @@ import './slides/watch-slide'
 
 import './course-presenter'
 import './course-guide'
+import './course-slideshow'
+import './slide-switcher'

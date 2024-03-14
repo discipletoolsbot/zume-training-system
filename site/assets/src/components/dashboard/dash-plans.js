@@ -187,7 +187,7 @@ export class DashPlans extends DashPage {
                             <span class="icon ${this.route.icon}"></span>
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
-                        <div class="s--2">
+                        <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu">
                                 <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
                                 <span class="icon zume-filter brand-light" aria-hidden="true"></span>

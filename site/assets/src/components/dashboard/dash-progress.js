@@ -216,14 +216,16 @@ export class DashProgress extends DashPage {
                         <dash-sidebar-toggle></dash-sidebar-toggle>
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
-                        <button class="icon-btn f-2" data-toggle="filter-menu">
-                            <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
-                            <span class="icon zume-filter brand-light" aria-hidden="true"></span>
-                        </button>
-                        <button class="icon-btn f-2" @click=${this.openInfoModal}>
-                            <span class="visually-hidden">${zumeDashboard.translations.progress_info}</span>
-                            <span class="icon zume-info brand-light" aria-hidden="true"></span>
-                        </button>
+                        <div class="s0">
+                            <button class="icon-btn f-2" data-toggle="filter-menu">
+                                <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
+                                <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                            </button>
+                            <button class="icon-btn f-2" @click=${this.openInfoModal}>
+                                <span class="visually-hidden">${zumeDashboard.translations.progress_info}</span>
+                                <span class="icon zume-info brand-light" aria-hidden="true"></span>
+                            </button>
+                        </div>
                     </div>
                     <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>

@@ -50,7 +50,6 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
         $timezone = $contact_meta['user_timezone'] ?? '';
         $user_friend_key = $contact_meta['user_friend_key'] ?? '';
         $user_preferred_language = $contact_meta['user_preferred_language'] ?? '';
-        $user_ui_language = $contact_meta['user_ui_language'] ?? '';
         $language = zume_get_user_language( $user_id );
         $location = zume_get_user_location( $user_id );
         $contact_preference = get_post_meta( $contact_id, 'user_contact_preference' );
@@ -96,7 +95,6 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'timezone' => $timezone,
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
-                'ui_language' => $user_ui_language,
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
             ];
@@ -116,7 +114,6 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'timezone' => $timezone,
                 'coaches' => $coaches,
                 'friend_key' => $user_friend_key,
-                'ui_language' => $user_ui_language,
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
             ];
@@ -206,11 +203,10 @@ if ( ! function_exists( 'zume_get_user_language' ) ) {
             $zume_languages_by_code = zume_languages( 'code' );
         }
 
-        $contact_id = zume_get_user_contact_id( $user_id );
-        $language_code = get_post_meta( $contact_id, 'user_ui_language', true );
+        $language_code = zume_get_language_cookie();
         if ( $user_id == get_current_user_id() && empty( $language_code ) ) {
             $language_code = zume_current_language();
-            update_post_meta( $contact_id, 'user_ui_language', $language_code );
+            zume_set_language_cookie( $language_code );
         }
 
         if ( ! $language_code ) {

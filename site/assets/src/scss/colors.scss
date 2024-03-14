@@ -47,3 +47,9 @@ $bg-colors: (
 .opacity-50 {
     opacity: 0.5;
 }
+
+.svg {
+    &.white {
+        filter: brightness(100000%);
+    }
+}
