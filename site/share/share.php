@@ -154,14 +154,17 @@ class Zume_Training_Share extends Zume_Magic_Page
                     <?php echo esc_html__( 'When we are faithful to obey and share what the Lord has shared with us, then he promises to share even more.', 'zume' ) ?>
                 </p>
 
-                <?php if ( empty( $posts ) ): ?>
+                <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $current_language ) ): ?>
 
                     <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
 
-                <?php endif; ?>
-            </div>
+                <?php else: ?>
 
-            <share-list></share-list>
+                    <share-list></share-list>
+
+                <?php endif; ?>
+
+            </div>
 
             <noscript>
                 <ul class="stack container-xsm">
