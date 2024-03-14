@@ -821,7 +821,10 @@ var ot=Object.defineProperty;var lt=(i,e,t)=>e in i?ot(i,e,{enumerable:!0,config
                             <p class="f--1 gray-700">${s}</p>
                             <div class="cluster">
                                 <share-links url=${h} title=${t} .t=${zumeDashboard.share_translations}></share-links>
-                                <a class="btn light uppercase" href=${h} @click=${c=>c.stopImmediatePropagation()}>${zumeDashboard.translations.view}</a>
+
+                                ${zumeDashboard.has_pieces_pages?o`
+                                        <a class="btn light uppercase" href=${h} @click=${c=>c.stopImmediatePropagation()}>${zumeDashboard.translations.view}</a>
+                                    `:""}
                             </div>
                         </div>
                     </div>
@@ -1841,4 +1844,4 @@ var ot=Object.defineProperty;var lt=(i,e,t)=>e in i?ot(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",Es);
-//# sourceMappingURL=main-618a903f.js.map
+//# sourceMappingURL=main-750b587f.js.map

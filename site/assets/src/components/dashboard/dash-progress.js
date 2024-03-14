@@ -167,7 +167,14 @@ export class DashProgress extends DashPage {
                             <p class="f--1 gray-700">${description}</p>
                             <div class="cluster">
                                 <share-links url=${url} title=${title} .t=${zumeDashboard.share_translations}></share-links>
-                                <a class="btn light uppercase" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${zumeDashboard.translations.view}</a>
+
+                                ${
+                                    zumeDashboard.has_pieces_pages
+                                    ? html`
+                                        <a class="btn light uppercase" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${zumeDashboard.translations.view}</a>
+                                    `
+                                    : ''
+                                }
                             </div>
                         </div>
                     </div>
