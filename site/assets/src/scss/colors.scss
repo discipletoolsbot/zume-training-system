@@ -28,6 +28,7 @@ $bg-colors: (
     'brand',
     'brand-light',
     'brand-lighter',
+    'brand-fade',
 );
 
 @each $color in $bg-colors {

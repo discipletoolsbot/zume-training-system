@@ -12,4 +12,10 @@
         padding-inline: spacing(0);
         width: 100%;
     }
+
+    &.share {
+        background-color: color('gray-200');
+        box-shadow: none;
+        text-align: start;
+    }
 }
