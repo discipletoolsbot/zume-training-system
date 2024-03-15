@@ -29,6 +29,7 @@ class Zume_Training_Menu_Post_Type
      * @param array $taxonomies
      */
     public function __construct( $args = [], $taxonomies = [] ) {
+
         $this->post_type = 'zume_page';
         $this->singular = 'Zume Page';
         $this->plural = 'Zume Pages';
@@ -168,6 +169,6 @@ class Zume_Training_Menu_Post_Type
         }
     }
 } // End Class
-Zume_Training_Menu_Post_Type::instance();
+//Zume_Training_Menu_Post_Type::instance();
 
 

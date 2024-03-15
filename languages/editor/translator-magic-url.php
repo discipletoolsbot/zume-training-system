@@ -1,6 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
+use Gettext\Loader\PoLoader;
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
@@ -253,6 +254,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'view_course' => $tab === 'view_course' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow',
+            'strings' => $tab === 'strings' ? '' : 'hollow',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -295,11 +297,42 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $lang = $zume_languages[$this->lang];
         $lang_list = list_zume_pieces( $lang['code'] );
 
+        $string_count = 0;
+        $missing_count = 0;
+        $already_translated = [];
+        $strings = $this->get_translation_strings();
+
+        foreach( $strings as $file => $array ) {
+                foreach( $array as $trans ) {
+                    if ( in_array( $trans['original'], $already_translated ) ) {
+                        continue;
+                    }
+                    $already_translated[] = $trans['original'];
+                    $string_count++;
+                    if ( empty( $trans['translation'] ) ) {
+                        $missing_count++;
+                    }
+                }
+            }
+
         ?>
         <div class="grid-x grid-padding-x">
             <div class="cell">
                 <table style="vertical-align: text-top;">
                     <tbody>
+                        <tr style="background-color:grey; color:white;">
+                            <th colspan="2" style="text-transform:uppercase;">
+                                SITE TRANSLATION FOR <?php echo $lang['name'] ?>
+                            </th>
+                        </tr>
+                         <tr>
+                            <td>
+                                <strong>Total Strings:</strong> <?php echo $string_count; ?>
+                            </td>
+                            <td>
+                                <strong>Missing Strings:</strong> <?php echo $missing_count; ?>
+                            </td>
+                        </tr>
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
                                 PIECES FOR <?php echo $lang['name'] ?>
@@ -326,33 +359,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         ?>
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2">
-                                TOOLS
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
-                        <tr style="background-color:grey; color:white;">
-                            <th colspan="2">
                                 EMAILS
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
-                        </tr>
-                        <tr style="background-color:grey; color:white;">
-                            <th colspan="2">
-                                CTAS
                             </th>
                         </tr>
                         <tr>
@@ -498,8 +505,104 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         <?php
     }
-    public function emails() {}
-    public function ctas() {}
+    public function emails() {
+        $languages = zume_languages();
+        $language = $languages[$this->lang];
+        $messages_english = $this->query_emails( 'en' );
+        $messages_other_language = $this->query_emails( $this->lang );
+
+        ob_start();
+        foreach( $messages_english as $pid => $message ) {
+            ?>
+            <tr>
+                <td>
+                    <p><?php echo $messages_english[$pid]['subject'] ?? '' ?></p><hr>
+                    <p><?php echo nl2br( $messages_english[$pid]['body'] ?? '' ) ?></p><hr>
+                    <p><?php echo $messages_english[$pid]['footer'] ?? '' ?></p>
+                </td>
+                <td>
+                    <input type="text" value="<?php echo $messages_other_language[$pid]['subject'] ?? '' ?>" /></br>
+                    <textarea id=""><?php echo $messages_other_language[$pid]['body'] ?? '' ?></textarea><br>
+                    <input type="text" value="<?php echo $messages_other_language[$pid]['footer'] ?? '' ?>" /></br>
+                </td>
+            </tr>
+            <?php
+        }
+        $table = ob_get_clean();
+        ?>
+        <table>
+            <thead>
+                <tr>
+                    <th>English</th>
+                    <th><?php echo $language['name'] ?></th>
+                </tr>
+            </thead>
+            <tbody><?php echo $table ?></tbody>
+        </table>
+        <?php
+    }
+    public function query_emails( $langauge_code ) {
+        global $wpdb;
+        $results = $wpdb->get_results(
+            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
+            FROM zume_posts p
+            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
+            WHERE p.post_type = 'zume_messages'
+                AND p.post_status != 'auto-draft'
+                AND pm.meta_key != '_edit_last'
+                AND pm.meta_key != '_edit_lock'
+                AND pm.meta_key != 'last_modified'", ARRAY_A );
+
+        $emails = [];
+        foreach( $results as $result ) {
+            $explode = explode('_', $result['meta_key']);
+            if ( ! isset( $explode[1]) ) {
+                continue;
+            }
+            if ( $explode[1] == $langauge_code ) {
+                if ( ! isset( $emails[$result['post_id']] ) ) {
+                    $emails[$result['post_id']] = [
+                    'post_id' => '',
+                    'post_parent_id' => '',
+                    'title' => '',
+                    'language_code' => '',
+                    'subject' => '',
+                    'body' => '',
+                    'footer' => '',
+                ];
+                }
+
+                $emails[$result['post_id']]['post_id'] = $result['post_id'];
+                $emails[$result['post_id']]['post_parent_id'] = $result['post_parent'];
+                $emails[$result['post_id']]['title'] = $result['post_title'];
+                $emails[$result['post_id']]['language_code'] = $langauge_code;
+                if ( $explode[0] == 'subject' ) {
+                    $emails[$result['post_id']]['subject'] = $result['meta_value'];
+                }
+                if ( $explode[0] == 'body' ) {
+                    $emails[$result['post_id']]['body'] = $result['meta_value'] ?? '';
+                }
+                if ( $explode[0] == 'footer' ) {
+                    $emails[$result['post_id']]['body'] = $result['meta_value'] ?? '';
+                }
+
+            }
+        }
+        return $emails;
+    }
+    public function ctas() {
+        $ctas = Zume_System_CTA_API::get_ctas();
+        foreach( $ctas as $cta ) {
+            ?>
+            <div class="cta">
+                <h3><?php echo $cta['content']['title'] ?></h3>
+                <p><?php echo $cta['content']['description'] ?></p>
+                <a href="<?php echo $cta['content']['link'] ?>" class="button"><?php echo $cta['content']['link_text'] ?></a>
+            </div>
+            <?php
+        }
+
+    }
     public function view_course() {
 
         $zume_languages = zume_languages();
@@ -616,39 +719,15 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     }
     public function qr_codes() {
-        global $wpdb;
-        $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
-        $training_items = zume_training_items();
-        $activities = [
-            'soaps',
-            'accountability',
-            'prayercycle',
-            'list100',
-            'sharegospel',
-            'sharetestimony',
-            'supper',
-            'bless',
-            '33groupa2',
-            '33groupm6',
-            '33groupmeeting',
-            '33groupmk5',
-            'prayerwalking',
-            '3monthplan',
-            'coachingchecklist',
-            'peermentoring',
-            '4fields',
-            'genmap',
-        ];
-
         ?>
+        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
         <style>
             .qr-table img {
                 width: 150px;
                 margin: 0 auto;
             }
         </style>
-        <h2>Checkins</h2>
+        <h2 id="checkin">Checkins</h2>
          <table class="qr-table">
             <thead>
                 <tr>
@@ -705,6 +784,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ?>
             </tbody>
         </table>
+        <div id="activities" style="height: 100px;"></div>
+        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
         <h2>Activities</h2>
          <table class="qr-table">
             <thead>
@@ -716,6 +797,26 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </thead>
             <tbody>
                 <?php
+                 $activities = [
+                    'soaps',
+                    'accountability',
+                    'prayercycle',
+                    'list100',
+                    'sharegospel',
+                    'sharetestimony',
+                    'supper',
+                    'bless',
+                    '33groupa2',
+                    '33groupm6',
+                    '33groupmeeting',
+                    '33groupmk5',
+                    'prayerwalking',
+                    '3monthplan',
+                    'coachingchecklist',
+                    'peermentoring',
+                    '4fields',
+                    'genmap',
+                ];
                 foreach( $activities as $item ) {
 //                    dt_write_log( $item );
                     $url = site_url() . '/zume_app/qr/?l='.$this->lang.'&a='.$item;
@@ -729,6 +830,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ?>
             </tbody>
         </table>
+         <div id="videos" style="height: 100px;"></div>
+         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
         <h2>Videos</h2>
         <table class="qr-table">
             <thead>
@@ -740,7 +843,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </thead>
             <tbody>
                 <?php
-
+                $training_items = zume_training_items();
                 foreach( $training_items as $item ) {
                     $id =  intval( $item['key'] );
                     $url = site_url() . '/zume_app/qr/?l='.$this->lang. '&v='. $id;
@@ -752,6 +855,85 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     echo '</tr>';
                 }
                 ?>
+            </tbody>
+        </table>
+        <?php
+    }
+    public function get_translation_strings() {
+        $languages = zume_languages();
+        $locale = $languages[$this->lang]['locale'];
+        $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
+        if ( ! file_exists( $locale_file ) ) {
+            echo 'No translation file found';
+            return;
+        }
+        $loader = new PoLoader();
+        $translations = $loader->loadFile($locale_file );
+
+
+        $strings = [];
+        foreach( $translations as $translation ) {
+            $references = $translation->getReferences();
+            foreach( $references as $file_name => $reference ) {
+                if ( ! isset( $strings[$file_name] ) ) $strings[$file_name] = [];
+                foreach( $reference as $line ) {
+                    $strings[$file_name][] = [
+                        'line' => $line,
+                        'original' => $translation->getOriginal(),
+                        'translation' => $translation->getTranslation(),
+                    ];
+                }
+                usort($strings[$file_name], fn($a, $b) => $a['line'] <=> $b['line']);
+            }
+        }
+
+        return $strings;
+    }
+    public function strings() {
+        $string_count = 0;
+        $missing_count = 0;
+        $already_translated = [];
+        $strings = $this->get_translation_strings();
+//        dt_write_log( $strings );
+
+        ob_start();
+            foreach( $strings as $file => $array ) {
+                 ?>
+                    <tr>
+                        <td colspan="3" style="background: grey; color: white;"><?php echo $file; ?></td>
+                    </tr>
+                <?php
+                foreach( $array as $trans ) {
+                    if ( in_array( $trans['original'], $already_translated ) ) {
+                        continue;
+                    }
+                    $already_translated[] = $trans['original'];
+                    $string_count++;
+                    if ( empty( $trans['translation'] ) ) {
+                        $missing_count++;
+                    }
+                    ?>
+                    <tr>
+                        <td><?php echo $trans['line']; ?></td>
+                        <td><?php echo $trans['original']; ?></td>
+                        <td><?php echo $trans['translation']; ?></td>
+                    </tr>
+                    <?php
+                }
+            }
+        $table_content = ob_get_clean();
+        ?>
+        <p>Total Translation Strings: <?php echo $string_count ?> | Missing Translation Strings: <?php echo $missing_count ?></p>
+        <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Line</th>
+                    <th>English</th>
+                    <th><?php echo $languages[$this->lang]['name'] ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php echo $table_content; ?>
             </tbody>
         </table>
         <?php
