@@ -1032,6 +1032,20 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'course_slides_download' => false,
                 ],
             ),
+            'pl ' => array(
+                'name' => 'Polish',
+                'enDisplayName' => 'Polski',
+                'code' => 'pl',
+                'displayCode' => 'pl',
+                'locale' => 'pl_PL',
+                'nativeName' => '',
+                'rtl' => false,
+                'feature_flags' => [
+                    'language_selector' => true,
+                    'pieces_pages' => true,
+                    'course_slides_download' => false,
+                ],
+            ),
             'pt' => array(
                 'name' => 'Portuguese',
                 'enDisplayName' => 'Portuguese',
