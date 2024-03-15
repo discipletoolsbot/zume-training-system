@@ -27,7 +27,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
     }
     else if ( '20' === $session_type ) {
 
-        $all['1'] = ['s2_1_1','s2_1_2','s2_1_3','s2_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'s2_1_5','final']; // session 1
+        $all['1'] = ['s2_1_1','s2_1_2','s2_1_3','s2_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'s2_1_5','s2_1_6','final']; // session 1
         $all['2'] = ['s2_2_1','s2_2_2','s2_2_3','s2_2_4','s2_2_5',false,'t4_a','t4_b','t4_c',false,'s2_2_6','s2_2_7','final']; // session 2
         $all['3'] = ['s2_3_1','s2_3_2','s2_3_3','s2_3_4','s2_3_5',false,'t5_a','t5_b','t5_c',false,'s2_3_6','s2_3_7','final'];  // session 3
         $all['4'] = ['s2_4_1','s2_4_2','s2_4_3','s2_4_4','s2_4_5',false,'t6_a','t6_b','t6_c',false,'t8_a','t8_b','t8_c',false,'s2_4_6','s2_4_7','final']; // session 4

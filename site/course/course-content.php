@@ -971,8 +971,8 @@ function zume_content( $lang_code = 'en') {
                 __( '(20 min)', 'zume' ),
             ],
             'left' => [
-                __( 'Share your testimony', 'zume' ),
-                __( 'Break into groups of two or three and practice sharing your testimony.', 'zume' ),
+                __( 'Prepare to share your testimony', 'zume' ),
+                __( 'Work on writing out your story and keeping it to only three minutes.', 'zume' ),
             ],
             'right' => [
                 zume_create_qr_url( $activity_base_url . 'sharetestimony' ),
@@ -2549,7 +2549,7 @@ function zume_content( $lang_code = 'en') {
             ],
         ],
         [
-            'key' => 's2_1_4',
+            'key' => 's2_1_5',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -2565,7 +2565,7 @@ function zume_content( $lang_code = 'en') {
             ],
         ],
         [
-            'key' => 's2_1_5',
+            'key' => 's2_1_6',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -2624,7 +2624,9 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
+                __( 'Thank God that He promises in His Word to listen and act when His people pray.', 'zume' ),
+                __( 'Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
             ],
         ],
         [
@@ -2633,11 +2635,12 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
+                __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
-                __( 'Thank God that He promises in His Word to listen and act when His people pray.', 'zume' ),
-                __( 'Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
+                __( 'Before getting started, take some time to look back.', 'zume' ),
+                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
+                __( 'Take a few moments to see how your group did this week.', 'zume' ),
             ],
         ],
         [
@@ -2727,7 +2730,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Pray and thank God for His presence in our lives. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
             ],
         ],
         [
@@ -2738,7 +2741,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'LOOK BACK', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God for His presence in our lives. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
+                __( 'Before getting started, take some time to look back.', 'zume' ),
+                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
+                __( 'Take a few moments to see how your group did this week.', 'zume' ),
             ],
         ],
         [
@@ -2829,7 +2834,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray as a group. Invite His Holy Spirit to lead your time together.',  'zume' ),
+                __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.',  'zume' ),
             ],
         ],
         [
@@ -2840,7 +2845,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'LOOK BACK', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Before getting started, take some time to look back.', 'zume' ),
+                __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
+                __( 'Take a few moments to see how your group did this week.', 'zume' ),
             ],
         ],
         [
@@ -2857,7 +2864,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
-                    __( 'Relational Stewardship - List of 100', 'zume' ),
+                    __( 'List of 100', 'zume' ),
                 ],
             ],
         ],
@@ -2875,7 +2882,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tool heard in this session:', 'zume' ),
                 [
-                    __( 'Relational Stewardship - List of 100', 'zume' ),
+                    __( 'List of 100', 'zume' ),
                 ],
             ],
         ],
@@ -3101,8 +3108,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'If you know anyone who follows Jesus but does not share their faith, challenge them to do so by sharing with them about the Greatest Blessing. Otherwise, practice sharing about it with a friend.', 'zume' ),
-                __( 'Ask God who He wants you to share with about the Greatest Blessing. Share this person’s name with the group before you go and reach out to them.', 'zume' ),
+                __( 'Practice sharing the Spiritual Economy concept with a friend and pray for the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom He would have you share it with.', 'zume' ),
+                __( 'Ask God who He wants you to share with about the Greatest Blessing. Have them practice it as well. Share this person‘s name with the group before you go and reach out to them.', 'zume' ),
             ],
         ],
 
@@ -3224,8 +3231,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
                 __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.', 'zume' ),
+                __( 'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
             ],
         ],
 
@@ -3303,7 +3310,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
                 [
                     __( 'Baptism', 'zume' ),
-                    __( 'The 3-Minute Testimony', 'zume' ),
+                    __( '3-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3318,7 +3325,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Tool heard in this session:', 'zume' ),
                 [
                     __( 'Baptism', 'zume' ),
-                    __( 'The 3-Minute Testimony', 'zume' ),
+                    __( '3-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3331,9 +3338,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them.', 'zume' ),
-                __( 'Ask God who He wants you to share with about baptism. Share this person’s name with the group before you go and reach out to them before the next session.', 'zume' ),
-            ],
+                __( 'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them. Otherwise, practice the skill with a friend.', 'zume' ),
+                __( 'Ask God who He wants you to share with about what baptism is and how to do it. Have them practice it as well. Share this person‘s name with the group before you go and reach out to them before the next session.', 'zume' ),
+            ]
         ],
 
 
