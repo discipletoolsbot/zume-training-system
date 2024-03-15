@@ -63,6 +63,9 @@
 .ms-auto {
     margin-inline-start: auto;
 }
+.mt-auto {
+    margin-block-start: auto
+}
 
 @for $i from -5 through 5 {
     .s-#{$i} {

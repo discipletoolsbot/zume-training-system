@@ -49,6 +49,7 @@
 
 html {
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,6 +105,11 @@ ul[role="list"] {
 
 a, a:visited {
     text-decoration: none;
+}
+
+.offset-anchor {
+  position: absolute;
+  top: -5rem;
 }
 
 [role="button"] {
@@ -573,6 +579,115 @@ a, a:visited {
 .collapse[data-state="open"] {
   overflow: initial;
 }
+.training-path {
+  position: relative;
+}
+.training-path:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(50%,63%);
+    content: "";
+    width: 10px;
+    height: 45px;
+    background-image: radial-gradient(circle at 5px,var(--z-brand-light) 3px,rgba(255,255,255,0) 3px);
+    background-position: top,right,bottom,left;
+    background-size: 14px 15px
+}
+.training-page {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+
+  & .left-menu {
+    display: flex;
+    flex-direction: column;
+    max-width: 26rem;
+    min-height: 100vh;
+
+    position: sticky;
+    top: 3rem;
+    align-self: flex-start;
+
+    & > :last-child {
+      flex-grow: 2;
+    }
+  }
+
+  & .content-area {
+    margin-inline: spacing(2);
+  }
+}
+
+.training-link {
+  padding-block: spacing(-3);
+  transition: all 100ms linear;
+
+  & > a {
+    color: color('black');
+
+    &:link {
+      text-decoration: none;
+    }
+  }
+
+  &.active {
+    background-color: color('gray-100');
+    border-end-end-radius: 5px;
+    border-start-end-radius: 5px;
+
+    position: relative;
+
+    & > a {
+      font-weight: 600;
+    }
+
+    &:before {
+      content: '';
+      width: 7px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-end-end-radius: 5px;
+      border-start-end-radius: 5px;
+      background-color: color('brand-light');
+    }
+  }
+}
+
+.concepts__title {
+  color: color('white');
+  background-color: color('brand-light');
+  padding: spacing(0);
+  line-height: 1;
+  border-radius: 0.5rem;
+  font-size: font-size(0);
+}
+.concepts__tick {
+  color: color('brand-light');
+  background-color: color('gray-100');
+  line-height: 1;
+  padding: spacing(-1) spacing(1);
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+}
+.training-card[role="button"] {
+  color: color('black');
+  justify-content: center;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  padding: spacing(1);
+  max-width: 16rem;
+  width: 100%;
+  text-align: center;
+}
 
 @media (min-width: $break-lg) {
 
@@ -608,6 +723,14 @@ a, a:visited {
     }
 }
 @media (max-width: $break-lg) {
+  .training-page {
+    display: block;
+
+    & .left-menu {
+      display: none;
+    }
+  }
+
   .footer .footer-links {
     justify-content: center;
   }
