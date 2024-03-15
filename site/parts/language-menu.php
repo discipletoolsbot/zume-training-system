@@ -10,6 +10,10 @@
         $url_pieces = zume_get_url_pieces();
 
         foreach ( $zume_languages_by_code as $item ){
+            if ( $item['feature_flags']['language_selector'] === false ) {
+                continue;
+            }
+
             $query = '';
             if ( isset( $dt_url->parsed_url['query'] ) ) {
                 $query = '?' . $dt_url->parsed_url['query'];

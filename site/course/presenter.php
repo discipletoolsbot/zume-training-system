@@ -74,6 +74,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
     public function header_style(){
         global $zume_user_profile;
+
         ?>
         <script>
             jQuery(document).ready(function(){
@@ -88,11 +89,18 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . 'assets/images' ),
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'zume_languages' => zume_language_codes(),
+                'translations' => [
+                    'home' => __( 'Exit Course', 'zume' ),
+                    'switch_views' => __( 'Switch Views', 'zume' ),
+                    'next_slide' => __( 'Next slide', 'zume' ),
+                    'previous_slide' => __( 'Previous slide', 'zume' ),
+                ],
             ]) ?>][0]
             const zume10Sessions = [<?php echo json_encode( zume_full_course_builder( '10', $this->lang_code ) ) ?>][0]
             const zume20Sessions = [<?php echo json_encode( zume_full_course_builder( '20', $this->lang_code ) ) ?>][0]
             const zumeIntensiveSessions = [<?php echo json_encode( zume_full_course_builder( 'intensive', $this->lang_code ) ) ?>][0]
         </script>
+
         <?php
     }
 
@@ -109,11 +117,51 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                     languageCode="<?php echo esc_html( strtoupper( $display_code ) ) ?>"
                     homeUrl="<?php echo esc_url( zume_home_url() ) ?>"
                     assetsPath="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images' ) ?>"
-                    translations="<?php echo esc_attr( json_encode([
-                        'home' => __( 'Home', 'zume' ),
-                    ]) ) ?>"
                 ></course-presenter>
             </div>
+
+            <noscript>
+
+                <div class="cover-page container-xsm">
+                    <div class="center">
+                        <h1 class="text-center"><?php echo esc_html__( 'Zume Course Presenter', 'zume' ) ?></h1>
+                        <h2 class="h3 brand"><?php echo esc_html__( 'Scripts are off', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
+                        <p><?php echo esc_html__( 'If you are unable to turn on scripts, you may download the course slides below', 'zume' ) ?></p>
+
+                        <?php /* TODO: Generate/create list of language names+codes that have translated course slides */ ?>
+                        <?php
+                            $languages = [
+                                [
+                                    'name' => 'English',
+                                    'code' => 'en',
+                                ],
+                                [
+                                    'name' => 'Arabic',
+                                    'code' => 'ar',
+                                ],
+                                [
+                                    'name' => 'German',
+                                    'code' => 'de',
+                                ],
+                            ];
+                            ?>
+
+                        <ul role="list">
+
+                            <?php foreach ( $languages as $language_details ) : ?>
+
+                                <li><a href="#"><?php echo esc_html( sprintf( __( 'Zume Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
+
+                            <?php endforeach; ?>
+
+                        </ul>
+
+                        <!-- TODO: maybe add footer links here? or some 404-esque get me out of here links? -->
+                    </div>
+                </div>
+
+            </noscript>
 
         </div>
 

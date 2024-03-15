@@ -705,7 +705,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 echo '<br>';
 
                 // print the slide
+                echo '<div class="slide-outline">';
+
                 zume_course_slide_template( $slide );
+
+                echo '</div>';
             }
 
             // print the css

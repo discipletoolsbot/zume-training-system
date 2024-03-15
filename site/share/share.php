@@ -94,54 +94,103 @@ class Zume_Training_Share extends Zume_Magic_Page
 
         require __DIR__ . '/../parts/nav.php';
 
-
-        $current_language = $zume_user_profile['language']['code'];
+        $current_language = zume_current_language();
 
         $args = [
             'post_type' => 'zume_pieces',
             'lang' => $current_language,
             'posts_per_page' => -1,
+            'order' => 'ASC',
         ];
 
         $posts = get_posts( $args );
+        $pieces_info = zume_training_items();
+
+        $share_items = [];
+
+        foreach ( $posts as $post ) {
+            $meta = get_post_meta( $post->ID );
+            $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
+            $page_url = site_url( $current_language . '/' . $post->post_name );
+            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] - 1 ];
+
+            $share_items[] = [
+                'page_title' => $page_title,
+                'page_url' => $page_url,
+                'type' => $page_info['type'],
+                'key' => $page_info['key'],
+                'description' => $page_info['description'],
+            ];
+        }
+
         $share_translations = self::translations();
 
         ?>
 
-        <div class="container">
-            <h1 class="text-center"><?php echo esc_html__( 'Share', 'zume' ) ?></h1>
+        <script>
+            const zumeShare = [<?php echo json_encode([
+                'share_items' => $share_items,
+                'translations' => array_merge(
+                    $share_translations,
+                    [
+                        'all' => __( 'All', 'zume' ),
+                        'tools' => __( 'Tools', 'zume' ),
+                        'concepts' => __( 'Concepts', 'zume' ),
+                        'filter' => __( 'Filter', 'zume' ),
+                        'sort' => __( 'Sort', 'zume' ),
+                    ],
+                ),
+            ]) ?>][0]
+        </script>
 
-            <?php if ( empty( $posts ) ): ?>
+        <div class="container-xsm | my-1">
+            <div class="stack">
+                <h1 class="text-center"><?php echo esc_html__( 'Sharing with Others', 'zume' ) ?></h1>
 
-                <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
+                <div class="center">
+                    <img class="w-30" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/guys-reading.svg' ) ?>" alt="guys reading">
+                </div>
 
-            <?php endif; ?>
+                <p>
+                    <?php echo esc_html__( 'When we are faithful to obey and share what the Lord has shared with us, then he promises to share even more.', 'zume' ) ?>
+                </p>
 
-            <ol class="stack-1">
-                <?php foreach ( $posts as $post ): ?>
+                <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $current_language ) ): ?>
 
-                    <?php
+                    <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
 
-                        $meta = get_post_meta( $post->ID );
-                        $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
-                        $page_url = site_url( $current_language . '/' . $post->post_name );
+                <?php else: ?>
 
-                    ?>
+                    <share-list></share-list>
 
-                    <li>
-                        <div class="cluster">
-                            <a class="f-1 bold brand my-0" href="<?php echo esc_url( $page_url ) ?>">
-                                <?php echo esc_html( $page_title ) ?>
-                            </a>
-                            <share-links
-                                url="<?php echo esc_attr( $page_url ) ?>"
-                                title="<?php echo esc_attr( $page_title ) ?>"
-                                t="<?php echo esc_attr( json_encode( $share_translations ) ) ?>"></share-links>
-                        </div>
-                    </li>
+                <?php endif; ?>
 
-                <?php endforeach; ?>
-            </ol>
+            </div>
+
+            <noscript>
+                <ul class="stack container-sm">
+                    <?php foreach ( $share_items as $item ): ?>
+
+                        <li class="share-cards">
+                            <div class="stack | share card">
+                                <a class="f-0 bold" href="<?php echo esc_url( $item['page_url'] ) ?>">
+                                    <?php echo esc_html( $item['page_title'] ) ?>
+                                </a>
+                                <p class="f--1 s--5 show-for-large">
+                                    <?php echo esc_html( $item['description'] ) ?>
+                                </p>
+                                <div class="center">
+                                    <div class="stack--2">
+                                        <p><?php echo esc_html( $share_translations['copy_and_share_text'] ) ?></p>
+                                        <p><code style="overflow-wrap: anywhere"><?php echo esc_url( $item['page_url'] ) ?></code></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    <?php endforeach; ?>
+                </ul>
+            </noscript>
         </div>
         <?php
     }

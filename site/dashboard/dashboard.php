@@ -103,6 +103,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'training_items' => zume_training_items(),
                 'host_progress' => zume_get_user_host(),
                 'friends' => zume_get_user_friends(),
+                'has_pieces_pages' => zume_feature_flag( 'pieces_pages', zume_current_language() ),
                 'share_translations' => Zume_Training_Share::translations(),
                 'translations' => [
                     'done' => __( 'Done', 'zume' ),

@@ -3,7 +3,6 @@ import { LitElement, html } from 'lit';
 export class CourseGuide extends LitElement {
     static get properties() {
         return {
-            title: { type: String },
             sections: { type: Array },
         };
     }
@@ -11,12 +10,13 @@ export class CourseGuide extends LitElement {
     render() {
         return html`
             <div class="container">
-                <h1 class="text-center">${this.title}</h1>
-                ${this.sections.map((section, i) => {
-                    return html`
-                        <course-section .section=${section}></course-section>
-                    `
-                })}
+                <div class="stack | my-4" data-outline-slides>
+                    ${this.sections.map((slide, i) => {
+                        return html`
+                            <slide-switcher .slide=${slide}></slide-switcher>
+                        `
+                    })}
+                </div>
             </div>
         `
     }

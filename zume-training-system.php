@@ -94,6 +94,8 @@ class Zume_Training {
 
         $this->define_constants();
         $this->setup_hooks();
+        require_once( 'classes/integrations/polylang-integration.php' );
+        require_once( 'classes/integrations/urls.php' );
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
@@ -265,14 +267,6 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
-            if ( !isset( $fields['user_ui_language'] ) ){
-                $fields['user_ui_language'] = [
-                    'name' => __( 'User UI Language', 'zume' ),
-                    'type' => 'text',
-                    'tile' => 'profile_details',
-                    'only_for_types' => [ 'user' ],
-                ];
-            }
             if ( !isset( $fields['user_preferred_language'] ) ){
                 $fields['user_preferred_language'] = [
                     'name' => __( 'User Preferred Language', 'zume' ),
@@ -335,11 +329,6 @@ class Zume_Training {
             $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         }
 
-        $user_ui_language = '';
-        if ( isset( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) ) {
-            $user_ui_language = sanitize_text_field( wp_unslash( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) );
-        }
-
         $fields = [
             'user_email' => $user->user_email,
             'user_phone' => '',
@@ -356,7 +345,6 @@ class Zume_Training {
                     ],
                 ],
             ],
-            'user_ui_language' => $user_ui_language,
         ];
         $contact_location = DT_Posts::update_post( 'contacts', $new_user_contact['ID'], $fields, true, false );
 
@@ -537,12 +525,7 @@ class Zume_Training {
 
         /* Get the language fallbacks  */
 
-        $language_code = isset( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) ? sanitize_text_field( wp_unslash( $_COOKIE[ZUME_LANGUAGE_COOKIE] ) ) : null;
-
-        if ( is_user_logged_in() ) {
-            global $zume_user_profile;
-            $language_code = $zume_user_profile['ui_language'];
-        }
+        $language_code = zume_get_language_cookie();
 
         $is_magic_link_page = apply_filters( 'dt_blank_access', false );
 
@@ -553,7 +536,7 @@ class Zume_Training {
                 'path' => $path,
             ] = zume_get_url_pieces();
 
-            if ( $lang_code !== $language_code && $path !== 'wp-login.php' && !str_contains( $path, 'course_app/presenter' ) ) {
+            if ( $lang_code !== $language_code && $path !== 'wp-login.php' && !str_contains( $path, 'presenter' ) ) {
                 $url = site_url( '/' . $language_code . '/' . $path );
                 wp_redirect( $url );
                 exit;

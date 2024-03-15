@@ -100,7 +100,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
     foreach( $content as $item ) {
         if ( in_array( $item['key'], $session ) ) {
             $slides[$item['key']] = $item;
-            $slides[$item['key']]['progress_bar'] = ( empty( $session_number ) ) ? '' : $progress_bar;
+            $slides[$item['key']]['progress_bar'] = ( empty( $session_number ) ) ? [] : $all[$session_number];
         }
     }
 

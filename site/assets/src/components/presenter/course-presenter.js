@@ -11,7 +11,6 @@ export class CoursePresenter extends LitElement {
             languageCode: { type: String },
             homeUrl: { type: String },
             assetsPath: { type: String },
-            translations: { type: Object },
             zumeSessions: { attribute: false },
             lessonIndex: { attribute: false },
             view: { attribute: false },
@@ -22,6 +21,8 @@ export class CoursePresenter extends LitElement {
 
     constructor() {
         super()
+
+        this.dir = document.querySelector('html').dir
 
         const url = new URL(window.location.href)
 
@@ -131,6 +132,21 @@ export class CoursePresenter extends LitElement {
             this.showIndex = false
         }
         this.changeSession(this.lessonIndex)
+        this.closeMenu()
+    }
+
+    /* TODO: complete this function to use the subsection numbers correctly */
+    handleSubSectionLink(event) {
+        const link = event.target
+        const sessionNumber = Number(link.dataset.sessionNumber)
+        const subsectionNumber = Number(link.dataset.subsectionNumber)
+        this.lessonIndex = sessionNumber
+
+        if ( this.showIndex === true ) {
+            this.showIndex = false
+        }
+        this.changeSession(this.lessonIndex)
+        this.closeMenu()
     }
 
     getNextSession() {
@@ -172,6 +188,7 @@ export class CoursePresenter extends LitElement {
         const sessionIndex = this.lessonIndex
         const view = this.view
 
+
         const url = new URL(window.location.href)
         if (sessionIndex !== null && Number.isInteger(sessionIndex)) {
             url.searchParams.set('session', sessionIndex + 1)
@@ -204,21 +221,17 @@ export class CoursePresenter extends LitElement {
 
     }
 
-    getSessionTitle() {
-        if ( !this.session || !this.session.t ) {
-            return '';
-        }
-        return this.session.t
+    getSessionTitle(index) {
+        return `Session ${index + 1}`
     }
     getSessionSections() {
-        if ( !this.session || !this.session.sections ) {
+        if ( !this.session ) {
             return []
         }
-        return this.session.sections
+        return this.session
     }
 
-    switchViews( pushState = true) {
-        console.log(this.view)
+    switchViews(pushState = true) {
         if ( this.view === 'guide' ) {
             this.view = 'slideshow'
         } else {
@@ -226,13 +239,17 @@ export class CoursePresenter extends LitElement {
         }
 
         if ( pushState === true) {
-            this.pushHistory({view: this.view})
+            this.pushHistory()
         }
     }
 
     openMenu() {
         const menu = this.querySelector('#offCanvas')
         jQuery(menu).foundation('open')
+    }
+    closeMenu() {
+        const menu = this.querySelector('#offCanvas')
+        jQuery(menu).foundation('close')
     }
 
     render() {
@@ -265,53 +282,82 @@ export class CoursePresenter extends LitElement {
                 ` : ''
             }
 
-            <nav class="${hiddenClass} stack | bg-white px-0 text-center | off-canvas position-left justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+            <nav class="${hiddenClass} stack | bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <div class="stack">
-                    <div style="text-align:center;padding: 1em;">
-                        <img src="${this.assetsPath}/ZumeLOGO.svg" width="150px" alt="Zume" >
-                    </div>
                     <!-- Close button -->
                     <button class="close-button" aria-label="Close menu" type="button" data-close>
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <!-- Menu -->
-                    <a class="btn outline" href="${this.homeUrl}">${this.translations.home}</a>
-                    <button class="btn d-flex align-items-center justify-content-center gap--4" data-open="language-menu-reveal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                        ${this.languageCode}
-                    </button>
-                    <button class="btn" @click=${this.switchViews}>Switch Views</button>
 
-                    <div class="stack-1 py-1">
+                    <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
                         ${this.zumeSessions.map((session, sessionNumber) => html`
-                            <button
-                                class="link session-link"
-                                data-session-number="${sessionNumber}"
-                                @click=${this.handleSessionLink}
-                            >
-                                ${session.t}
-                            </button>
+                            <li>
+                                <a
+                                    class="session-link"
+                                    data-session-number="${sessionNumber}"
+                                    @click=${this.handleSessionLink}
+                                >
+                                    ${this.getSessionTitle(sessionNumber)}
+                                </a>
+                                <ul class="menu vertical nested ${this.lessonIndex === sessionNumber ? 'is-active' : ''}">
+                                    <a
+                                        class="session-link"
+                                        data-subitem
+                                        data-session-number=${sessionNumber}
+                                        data-subsection-number=${0}
+                                        @click=${this.handleSubSectionLink}
+                                    >
+                                        Sub menu 1
+                                    </a>
+                                    <a
+                                        class="session-link"
+                                        data-subitem
+                                        data-session-number=${sessionNumber}
+                                        data-subsection-number=${1}
+                                        @click=${this.handleSubSectionLink}
+                                    >
+                                        Sub menu 2
+                                    </a>
+                                    <a
+                                        class="session-link"
+                                        data-subitem
+                                        data-session-number=${sessionNumber}
+                                        data-subsection-number=${2}
+                                        @click=${this.handleSubSectionLink}
+                                    >
+                                        Sub menu 3
+                                    </a>
+                                </ul>
+                            </li>
                         `)}
-                    </div>
+                    </ul>
                 </div>
 
-                <div class="stack">
-                    <button class="btn outline" @click=${this.getPreviousSession}>Back</button>
-                    <button class="btn" @click=${this.getNextSession}>Next</button>
+                <div class="">
+
+                    <div class="cluster">
+                        <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
+                        <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                            ${this.languageCode}
+                        </button>
+                        <button class="btn light tight outline" @click=${() => this.switchViews()}>${jsObject.translations.switch_views}</button>
+                    </div>
                 </div>
             </nav>
 
-            <span class="${hiddenClass} p-1 d-block position-relative z-1">
+            <span class="${hiddenClass} p-1 d-block absolute top z-1">
                 <button id="hamburger-menu" class="nav-toggle show" @click=${this.openMenu}>
                     <span class="hamburger brand"></span>
                 </button>
             </span>
 
-            <div class="${hiddenClass} container">
+            <div class="${hiddenClass}">
                 ${
                     this.view === 'guide'
-                    ? html`<course-guide title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-guide>`
-                    : html`<course-slideshow title="${this.getSessionTitle()}" .sections=${this.getSessionSections()}></course-slideshow>`
+                    ? html`<course-guide .sections=${this.getSessionSections()}></course-guide>`
+                    : html`<course-slideshow .sections=${this.getSessionSections()}></course-slideshow>`
                 }
             </div>
         `
