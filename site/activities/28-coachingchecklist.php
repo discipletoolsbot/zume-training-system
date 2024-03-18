@@ -69,21 +69,23 @@ class Zume_Activites_Coaching extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Coaching Checklist', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Get Resource - Download the Coaching Checklist and print a copy for each person or use the online qr tool.<br></br>
+                Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist. (10 min)<br></br>
+                Assess Someone Else - Chose a believer from your List of 100 and fill out the coaching checklist as if you were their coach. (10 min)<br></br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Coaching::instance();

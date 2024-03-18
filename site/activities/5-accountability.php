@@ -69,21 +69,22 @@ class Zume_Activites_Accountability extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Practice Accountability Groups', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Break into groups of two or three people of the same gender.<br></br>
+                Spend the next 20 minutes working together through the Accountability Questions.<br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Accountability::instance();

@@ -8,7 +8,7 @@ class Zume_Activites_Prayer_Cycle extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Activity - Accountability';
+    public $page_title = 'Zúme Activity - Prayer Cycle';
     public $root = 'zume_activity';
     public $type = 'prayercycle';
     public $lang;
@@ -69,21 +69,21 @@ class Zume_Activites_Prayer_Cycle extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Pray the Prayer Cycle for an hour individually', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Prayer_Cycle::instance();

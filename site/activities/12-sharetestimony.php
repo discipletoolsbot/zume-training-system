@@ -69,21 +69,21 @@ class Zume_Activites_Sharetestimony extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Prepare to share your testimony', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Work on writing out your story and keeping it to only three minutes.
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Sharetestimony::instance();

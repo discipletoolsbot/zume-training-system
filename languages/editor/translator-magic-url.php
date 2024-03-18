@@ -781,7 +781,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>Code: '. $i . ' for ' . $v . '</td>';
-                    echo '<td>' . $url . '</td>';
+                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
                 }
@@ -827,7 +827,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item . '</td>';
-                    echo '<td>' . $url . '</td>';
+                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
                 }
@@ -854,7 +854,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item['title'] . '</td>';
-                    echo '<td>' . $url . '</td>';
+                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
                 }

@@ -69,21 +69,24 @@ class Zume_Activites_Genmap extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Generation Mapping', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Generational mapping (a.k.a. generation mapping or gen mapping) is another simple tool to help leaders in a movement understand the growth around them.<br></br>
+                A generation tree map can be drawn on a piece of paper or multiple pieces of paper. This map helps show where there are stops in multiplication and training might be required. Health of the movement is a top concern for leaders and fruitfulness is a top way to measure health.<br></br>
+                See the example on the next slide.<br></br>
+                <img src="https://storage.googleapis.com/zume-file-mirror/en/104.png" alt="Generation Map" style="width: 100%; max-width: 600px; margin: 0 auto; display: block;">
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Genmap::instance();

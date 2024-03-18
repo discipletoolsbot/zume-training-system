@@ -69,21 +69,28 @@ class Zume_Activites_3monthplan extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Three-Month Plan', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                In His Bible, God says, "I know the plans I have for you, plans to prosper you and not to harm you, plans to give you hope and a future."<br></br>
+                God makes plans, and He expects us to make plans, too.<br></br>
+                A Three Month Plan is a tool you can use to help focus your attention and efforts and keep them aligned with God’s priorities for making disciples who multiply.<br></br>
+                The next slide will show you how to make your Three Month Plan. We recommend using the online tool.<br></br>
+                <h3>Make Your Three Month Plan</h3>
+                Review Questions - All questions are optional, and intended as prompts for your plan. (5 min)<br></br>
+                Listen - Take time to be as quiet as possible and listen to what God chooses to reveal. (10 min)<br></br>
+                Write Plan - Respond to worksheet questions and use a piece of paper or the QR code to save your answers. (15 min)<br></br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_3monthplan::instance();

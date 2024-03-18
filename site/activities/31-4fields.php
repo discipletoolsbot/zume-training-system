@@ -69,21 +69,33 @@ class Zume_Activites_4fields extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Four Fields Diagnostic Chart', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                The Four Fields diagnostic chart is a simple tool to be used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.<br></br>
+                Jesus often pulled the disciples back, away from ministry to quieter places to review how the work was going. This simple tool is to help you and the co-leaders with you to follow this pattern of Jesus and to address all parts of your stewardship.<br></br>
+                Review the next two slides: Field Descriptions and Four Fields Example.<br></br>
 
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+                <img src="https://storage.googleapis.com/zume-file-mirror/en/98.png" alt="4 Fields" style="width: 100%; max-width: 600px; margin: 20px auto; display: block;">
+
+                Field Descriptions<br></br>
+
+                Empty Field: Where or with whom [what people groups] are you planning to extend the Kingdom?<br><br>
+                Seeding Field: Where or with whom are you sharing the good news of the Kingdom? How are you doing that?<br><br>
+                Growing Field: How are you equipping people and growing them spiritually, individually and in their natural networks?<br><br>
+                Harvesting Field: How are new spiritual families [simple churches] being formed?<br><br>
+                Multiplying Field: With whom, how and when are you filtering for faithful people and equipping them and holding them accountable for reproduction?<br><br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_4fields::instance();

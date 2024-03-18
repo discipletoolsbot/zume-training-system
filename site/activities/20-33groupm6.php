@@ -69,21 +69,25 @@ class Zume_Activites_33groupm6 extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( '3/3 Group Meeting', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                <ul>
+                    <li>LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)</li>
+                    <li>LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer questions 1- 4. (30 min)</li>
+                    <li>LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train and Share. (30 min)</li>
+                </ul>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_33groupm6::instance();

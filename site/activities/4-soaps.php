@@ -69,22 +69,32 @@ class Zume_Activites_SOAPS extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
+       ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'S.O.A.P.S. Bible Reading', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Practice S.O.A.P.S.<br><br>
 
+                Break up and work individually through the S.O.A.P.S. Bible study pattern using Matthew 6:9-13. (20 min)<br><br>
 
-       echo $this->lang . '<br>';
-       echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-       echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+                Scripture<br>
+                Observation<br>
+                Application<br>
+                Prayer<br>
+                Sharing<br><br>
+
+                Return together and share your S.O.A.P.S. in groups of two or three. (10 min)<br>
+
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_SOAPS::instance();

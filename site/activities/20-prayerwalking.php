@@ -69,21 +69,23 @@ class Zume_Activites_Prayerwalk extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Prayer Walking', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Break into groups of two or three and go out into the community to practice Prayer Walking.<br></br>
+                Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.<br></br>
+                Go as God leads, and plan on spending 60-90 minutes on this activity.<br></br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Prayerwalk::instance();

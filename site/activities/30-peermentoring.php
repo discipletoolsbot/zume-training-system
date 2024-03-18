@@ -69,21 +69,23 @@ class Zume_Activites_Peermentoring extends Zume_Magic_Page
     }
 
     public function header_style(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-            });
-        </script>
-        <?php
+        zume_activities_css();
     }
 
     public function body(){
-
-        echo $this->lang . '<br>';
-        echo '<pre>'; print_r( zume_get_url_pieces() ); echo '</pre>';
-        echo '<pre>'; debug_print_backtrace(); echo '</pre>';
+        ?>
+        <div class="zume-activity">
+            <div class="zume-activity-header">
+                <h1><?php echo __( 'Peer Mentoring Group Practice', 'zume' )  ?></h1>
+                <hr>
+            </div>
+            <div class="zume-activity-content">
+                Break into groups of two or three and work through the 3/3 sections of the Peer Mentoring Group.<br></br>
+                To practice, choose one person to be the "mentee" for this session and have the other members work through the suggested questions list as peer mentors.<br></br>
+                By the time you’re finished, everyone should have a basic understanding of asking and answering.<br></br>
+            </div>
+        </div>
+        <?php
     }
 }
 Zume_Activites_Peermentoring::instance();
