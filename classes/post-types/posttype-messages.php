@@ -198,8 +198,8 @@ class Zume_Training_Messages_Post_Type
                     echo '0';
                 }
                 break;
-            case 'phone':
-                echo '';
+            case 'logic':
+                echo get_post_meta( $post_id, 'logic', true );
                 break;
 
             default:
@@ -219,7 +219,7 @@ class Zume_Training_Messages_Post_Type
      */
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array( 'delay' => 'delay' );
+        $new_columns = array( 'delay' => 'delay', 'logic' => 'logic' );
 
         $last_item = array();
 
