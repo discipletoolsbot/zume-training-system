@@ -75,8 +75,30 @@ add_filter( 'dt_plugins', function ( $plugins ){
     ];
     return $plugins;
 });
-/* This needs to be added before plugins_loaded fires and this filter is applied */
-add_filter( 'pll_redirect_home', '__return_false', 1000 );
+/*
+  This needs to be added before plugins_loaded fires and this filter is applied
+*/
+add_filter( 'pll_redirect_home', 'zume_pll_redirect_home', 1000 );
+function zume_pll_redirect_home( $redirect ) {
+    /*
+      Attempt to fix PLL trying to redirect to homepage in language from cookie when hitting the root url.
+      We also need to set the cookie to (default) english as this is skipped when not redirecting home
+      PROBLEM: this sets the cookie correctly but fails to setup the pll_current_language correctly
+    */
+    /* Copying same PLL options from polylang/frontend/choose-lang.php maybe_setcookie() */
+/*     $args = [
+        'domain' => false,
+        'samesite' => 'Lax',
+    ];
+
+    PLL_Cookie::set( pll_default_language( 'slug' ), $args );
+  */
+
+    /* An alternate solution is to just redirect to default language when hitting root url */
+    $my_redirect = home_url( pll_default_language( 'slug' ) );
+
+    return $my_redirect;
+}
 
 class Zume_Training {
     private static $_instance = null;

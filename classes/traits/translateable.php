@@ -40,7 +40,7 @@ trait Translateable {
 
         $lang_code_from_cookie = zume_get_language_cookie();
 
-        if ( empty( $lang_code_from_cookie ) ) {
+        if ( empty( $lang_code_from_cookie ) || $lang_code_from_cookie !== $lang_code ) {
             zume_set_language_cookie( $lang_code );
         }
 
