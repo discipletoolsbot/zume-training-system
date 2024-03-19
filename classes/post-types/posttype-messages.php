@@ -391,16 +391,14 @@ class Zume_Training_Messages_Post_Type
 
     public function metabox_action( $post ) {
         $fields = get_post_custom( $post->ID );
-        if ( isset( $fields['logic'] ) ) {
             ?>
             <strong><label for="logic">Marketing Logic</label></strong><br>
-            <textarea name="logic" id="logic" style="width:100%;height:200px;"><?php echo esc_textarea( $fields['logic'][0] ?? '' ) ?></textarea>
+            <textarea name="logic" id="logic" style="width:100%;height:200px;"><?php echo isset($fields['logic'][0]) ? esc_textarea( $fields['logic'][0] ) : ''  ?></textarea>
             <?php
-        }
         if ( isset( $fields['action'] ) ) {
             ?>
             <strong><label for="action">Action</label></strong><br>
-            <input type="text" name="action" id="action" value="<?php echo esc_attr( $fields['action'][0] ?? '' ) ?>" />
+            <input type="text" name="action" id="action" value="<?php echo isset($fields['action'][0]) ? esc_attr( $fields['action'][0] ) : ''  ?>" />
             <?php
         }
     }
