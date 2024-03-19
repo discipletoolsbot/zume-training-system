@@ -295,7 +295,7 @@ class Zume_Training_Messages_Post_Type
         add_meta_box( $this->post_type . '_scribes', 'Messages', array( $this, 'metabox_messages' ), $this->post_type, 'normal', 'high' );
         add_meta_box( $this->post_type . '_schedule', 'Schedule Order', [ $this, 'metabox_message_hierarchy' ], $this->post_type, 'side', 'high' );
         add_meta_box( $this->post_type . '_delay', 'Delay', [ $this, 'metabox_delay' ], $this->post_type, 'side', 'high' );
-//        add_meta_box( $this->post_type . '_action', 'Triggering Action', [ $this, 'metabox_action' ], $this->post_type, 'side', 'high' );
+        add_meta_box( $this->post_type . '_logic', 'Marketing Logic', [ $this, 'metabox_action' ], $this->post_type, 'side', 'high' );
     } // End meta_box_setup()
 
     /**
@@ -391,9 +391,18 @@ class Zume_Training_Messages_Post_Type
 
     public function metabox_action( $post ) {
         $fields = get_post_custom( $post->ID );
-        ?>
-       <input type="text" name="action" id="action" value="<?php echo esc_attr( $fields['action'][0] ?? '' ) ?>" />
-        <?php
+        if ( isset( $fields['logic'] ) ) {
+            ?>
+            <strong><label for="logic">Marketing Logic</label></strong><br>
+            <textarea name="logic" id="logic" style="width:100%;height:200px;"><?php echo esc_textarea( $fields['logic'][0] ?? '' ) ?></textarea>
+            <?php
+        }
+        if ( isset( $fields['action'] ) ) {
+            ?>
+            <strong><label for="action">Action</label></strong><br>
+            <input type="text" name="action" id="action" value="<?php echo esc_attr( $fields['action'][0] ?? '' ) ?>" />
+            <?php
+        }
     }
 
     /**
@@ -489,6 +498,7 @@ class Zume_Training_Messages_Post_Type
      * @return int $post_id
      */
     public function meta_box_save( $post_id ) {
+        dt_write_log( $_POST );
 
         // Bail if we're doing an auto save
         if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return;
@@ -621,7 +631,13 @@ class Zume_Training_Messages_Post_Type
             'name'        => 'Delay',
             'default'     => '',
             'type'        => 'delay',
-            'section'     => 'messages',
+            'section'     => 'action',
+        );
+        $fields['logic'] = array(
+            'name'        => 'Logic',
+            'default'     => '',
+            'type'        => 'textarea',
+            'section'     => 'action',
         );
 
         return apply_filters( 'zume_messages_fields_settings', $fields );
