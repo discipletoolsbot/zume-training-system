@@ -24,7 +24,7 @@ export class DashCta extends LitElement {
         makeRequest('POST', 'user_ctas', { user_id: this.userId }, 'zume_system/v1' ).done( ( data ) => {
             const ctas = Object.values(data)
 
-            this.Allctas = ctas
+            this.allCtas = ctas
 
             /* Take the first 3 of the randomized list to display */
             this.ctas = this.shuffleArray(ctas).slice(0, 3)
