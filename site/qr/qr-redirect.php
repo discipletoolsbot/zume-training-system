@@ -231,7 +231,7 @@ class Zume_QR_Redirect
             $activity_id = esc_attr( $_GET['a'] );
             $language_slug = esc_attr( $_GET['l'] );
 
-            $link = $this->root_url . '/' . $language_slug . '/zume_activity/' . $activity_id;
+            $link = $this->root_url . $language_slug . '/zume_activity/' . $activity_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';
@@ -252,7 +252,7 @@ class Zume_QR_Redirect
             $checkin_code = esc_attr( $_GET['c'] );
             $language_slug = esc_attr( $_GET['l'] );
 
-            $link = $this->root_url . '/' . $language_slug . '/checkin/?code=' . $checkin_code;
+            $link = $this->root_url . $language_slug . '/checkin/?code=' . $checkin_code;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

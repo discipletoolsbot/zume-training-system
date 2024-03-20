@@ -1486,24 +1486,27 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 34,
             ],
             '2' => [
                 'key' => '02',
                 'slug' => 'definition-of-disciple-and-church',
-                'title' => __( 'Simple Definition of Disciple and Church', 'zume' ),
+                'title' => __( 'Disciples and the Church', 'zume' ),
                 'description' => __( 'Discover the essence of being a disciple, making a disciple, and what is the church.', 'zume' ),
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 35,
             ],
             '3' => [
                 'key' => '03',
                 'slug' => 'spiritual-breathing-is-hearing-and-obeying-god',
-                'title' => __( 'Spiritual Breathing is Hearing and Obeying God', 'zume' ),
+                'title' => __( 'Hearing and Obeying God', 'zume' ),
                 'description' => __( 'Being a disciple means we hear from God and we obey God.', 'zume' ),
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 36,
             ],
             '4' => [
                 'key' => '04',
@@ -1513,6 +1516,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 37,
             ],
             '5' => [
                 'key' => '05',
@@ -1522,15 +1526,17 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 38,
             ],
             '6' => [
                 'key' => '06',
                 'slug' => 'consumer-vs-producer-lifestyle',
-                'title' => __( 'Consumer vs Producer Lifestyle', 'zume' ),
+                'title' => __( 'Producer not Consumer', 'zume' ),
                 'description' => __( "You'll discover the four main ways God makes everyday followers more like Jesus.", 'zume' ),
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 39,
             ],
             '7' => [
                 'key' => '07',
@@ -1540,6 +1546,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 40,
             ],
             '8' => [
                 'key' => '08',
@@ -1549,15 +1556,17 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 41,
             ],
             '9' => [
                 'key' => '09',
-                'slug' => 'the-kingdom-economy',
-                'title' => __( 'The Kingdom Economy', 'zume' ),
+                'slug' => 'the-spiritual-economy',
+                'title' => __( 'Spiritual Economy', 'zume' ),
                 'description' => __( "Learn how God's economy is different from the world's. God invests more in those who are faithful with what they've already been given.", 'zume' ),
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 42,
             ],
             '10' => [
                 'key' => '10',
@@ -1567,6 +1576,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 43,
             ],
             '11' => [
                 'key' => '11',
@@ -1576,6 +1586,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 44,
             ],
             '12' => [
                 'key' => '12',
@@ -1585,6 +1596,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 45,
             ],
             '13' => [
                 'key' => '13',
@@ -1594,6 +1606,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 46,
             ],
             '14' => [
                 'key' => '14',
@@ -1603,6 +1616,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 47,
             ],
             '15' => [
                 'key' => '15',
@@ -1612,6 +1626,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 48,
             ],
             '16' => [
                 'key' => '16',
@@ -1621,6 +1636,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 49,
             ],
             '17' => [
                 'key' => '17',
@@ -1630,6 +1646,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 50,
             ],
             '18' => [
                 'key' => '18',
@@ -1639,24 +1656,27 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 51,
             ],
             '19' => [
                 'key' => '19',
-                'slug' => 'the-bless-prayer-pattern',
-                'title' => __( 'The BLESS Prayer Pattern', 'zume' ),
-                'description' => __( 'Practice a simple mnemonic to remind you of ways to pray for others.', 'zume' ),
-                'type' => 'tool',
-                'host' => true,
-                'mawl' => true,
-            ],
-            '20' => [
-                'key' => '20',
                 'slug' => 'faithfulness-is-better-than-knowledge',
                 'title' => __( 'Faithfulness is Better Than Knowledge', 'zume' ),
                 'description' => __( "It's important what disciples know — but it's much more important what they DO with what they know.", 'zume' ),
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 52,
+            ],
+            '20' => [
+                'key' => '20',
+                'slug' => 'the-bless-prayer-pattern',
+                'title' => __( 'The BLESS Prayer Pattern', 'zume' ),
+                'description' => __( 'Practice a simple mnemonic to remind you of ways to pray for others.', 'zume' ),
+                'type' => 'tool',
+                'host' => true,
+                'mawl' => true,
+                'script' => false,
             ],
             '21' => [
                 'key' => '21',
@@ -1666,6 +1686,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 53,
             ],
             '22' => [
                 'key' => '22',
@@ -1675,6 +1696,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => 54,
             ],
             '23' => [
                 'key' => '23',
@@ -1684,6 +1706,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 55,
             ],
             '24' => [
                 'key' => '24',
@@ -1693,6 +1716,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 56,
             ],
             '25' => [
                 'key' => '25',
@@ -1702,6 +1726,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 57,
             ],
             '26' => [
                 'key' => '26',
@@ -1711,6 +1736,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => true,
+                'script' => 58,
             ],
             '27' => [
                 'key' => '27',
@@ -1720,6 +1746,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => false,
+                'script' => false,
             ],
             '28' => [
                 'key' => '28',
@@ -1729,6 +1756,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => false,
+                'script' => 60,
             ],
             '29' => [
                 'key' => '29',
@@ -1738,6 +1766,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 61,
             ],
             '30' => [
                 'key' => '30',
@@ -1747,6 +1776,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'script' => 62,
             ],
             '31' => [
                 'key' => '31',
@@ -1756,6 +1786,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => false,
             ],
             '32' => [
                 'key' => '32',
@@ -1765,6 +1796,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'script' => false,
             ],
         ];
 
@@ -1776,6 +1808,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => $training_item['type'],
                 'title' => $training_item['title'],
                 'slug' => $training_item['slug'],
+                'script' => $training_item['script'],
                 'description' => $training_item['description'],
                 'host' => $training_item['host'] ? [
                     [

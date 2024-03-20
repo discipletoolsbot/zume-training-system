@@ -275,8 +275,6 @@ class Zume_PDF_Download_Post_Type
      */
     public function meta_box_setup() {
         add_meta_box( $this->post_type . '_scribes', 'Downloads', array( $this, 'load_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
-//        add_meta_box( $this->post_type . '_pages', 'Pages Download Assets', array( $this, 'load_pages_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
-        add_meta_box( $this->post_type . '_links', 'Links', array( $this, 'load_links_meta_box' ), $this->post_type, 'normal', 'high' );
     } // End meta_box_setup()
 
     /**
@@ -308,7 +306,7 @@ class Zume_PDF_Download_Post_Type
      *
      * @param string $section
      */
-    public function meta_box_content( $section = 'scribe' ) {
+    public function meta_box_content( $section = 'downloads' ) {
         global $post_id;
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
@@ -348,6 +346,18 @@ class Zume_PDF_Download_Post_Type
                                 <td><input name="' . esc_attr( $k ) . '" type="text" id="' . esc_attr( $k ) . '" class="regular-text" value="' . esc_attr( $data ) . '" />' . "\n";
                             echo '<a href="'. esc_url( zume_mirror_url() ) .esc_attr( get_the_title( $post_id ) ).'/'.esc_attr( $data ).'" target="_blank">Check Link</a>';
                             echo '</td><tr/>' . "\n";
+                            break;
+                        case 'textarea':
+                            echo '<tr valign="top"><td style="padding:2px;vertical-align: top;font-weight:bold;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
+                                <td style="padding:2px;">';
+                            wp_editor( $data, $k, array( 'media_buttons' => false ) );
+                            echo '</td></tr>' . "\n";
+                            break;
+                        case 'textarea_x':
+                            echo '<tr valign="top"><td style="padding:2px;vertical-align: top;font-weight:bold;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
+                                <td style="padding:2px;">';
+                            echo $data;
+                            echo '</td></tr>' . "\n";
                             break;
                         case 'select':
                             echo '<tr valign="top"><th scope="row">
@@ -430,7 +440,9 @@ class Zume_PDF_Download_Post_Type
                 ${$f} = esc_url( ${$f} );
             }
 
-            if ( get_post_meta( $post_id, $f ) == '' ) {
+            if ( 'textarea' == $field_data[ $f ]['type'] ) {
+                update_post_meta( $post_id, $f, trim( sanitize_textarea_field( wp_unslash( $_POST[ $f ] ) ) ) );
+            } elseif ( get_post_meta( $post_id, $f ) == '' ) {
                 add_post_meta( $post_id, $f, ${$f}, true );
             } elseif ( ${$f} != get_post_meta( $post_id, $f, true ) ) {
                 update_post_meta( $post_id, $f, ${$f} );
@@ -480,206 +492,409 @@ class Zume_PDF_Download_Post_Type
             'section'     => 'downloads',
         );
         $fields['34'] = array(
-            'name'        => '(34) Welcome to Zúme Script',
+            'name'        => '(34) God Uses Ordinary People',
             'description' => '',
             'type'        => 'link',
-            'default'     => '34_en_welcome_to_zume.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['34_script'] = array(
+            'name'        => '(34) God Uses Ordinary People',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['35'] = array(
-            'name'        => '(35) Teach them to Obey Script',
+            'name'        => '(35) Disciples and the Church',
             'description' => '',
             'type'        => 'link',
-            'default'     => '35_en_teach_them_to_obey.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['35_script'] = array(
+            'name'        => '(35) Disciples and the Church',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['36'] = array(
-            'name'        => '(36) Spiritual Breathing Script ',
+            'name'        => '(36) Spiritual Breathing Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '36_en_spiritual_breathing.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['36_script'] = array(
+            'name'        => '(36) Spiritual Breathing Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['37'] = array(
-            'name'        => '(37) S.O.A.P.S. Script ',
+            'name'        => '(37) S.O.A.P.S. Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '37_en_soaps.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['37_script'] = array(
+            'name'        => '(37) S.O.A.P.S. Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['38'] = array(
-            'name'        => '(38) Accountability Groups Script ',
+            'name'        => '(38) Accountability Groups Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '38_en_accountability_groups.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['38_script'] = array(
+            'name'        => '(38) Accountability Groups Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['39'] = array(
-            'name'        => '(39) Producers vs Consumers Script ',
+            'name'        => '(39) Producers vs Consumers Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '39_en_producers_vs_consumers.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['39_script'] = array(
+            'name'        => '(39) Producers vs Consumers Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['40'] = array(
-            'name'        => '(40) Prayer Cycle Script ',
+            'name'        => '(40) Prayer Cycle Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '40_en_prayer_cycle.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['40_script'] = array(
+            'name'        => '(40) Prayer Cycle Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['41'] = array(
-            'name'        => '(41) List of 100 Script ',
+            'name'        => '(41) List of 100 Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '41_en_list_of_100.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['41_script'] = array(
+            'name'        => '(41) List of 100 Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['42'] = array(
-            'name'        => '(42) Spiritual Economy Script ',
+            'name'        => '(42) Spiritual Economy Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '42_en_spiritual_economy.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['42_script'] = array(
+            'name'        => '(42) Spiritual Economy Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['43'] = array(
-            'name'        => '(43) The Gospel Script ',
+            'name'        => '(43) The Gospel Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '43_en_the_gospel.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['43_script'] = array(
+            'name'        => '(43) The Gospel Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['44'] = array(
             'name'        => '(44) Baptism Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '44_en_baptism.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['44_script'] = array(
+            'name'        => '(44) Baptism Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['45'] = array(
-            'name'        => '(45) 3 Minute Testimony Script ',
+            'name'        => '(45) 3 Minute Testimony Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '45_en_3_minute_testimony.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['45_script'] = array(
+            'name'        => '(45) 3 Minute Testimony Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['46'] = array(
             'name'        => '(46) Greatest Blessing Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '46_en_greatest_blessing.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['46_script'] = array(
+            'name'        => '(46) Greatest Blessing Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['47'] = array(
-            'name'        => '(47) Duckling Discipleship Script ',
+            'name'        => '(47) Duckling Discipleship Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '47_en_duckling_discipleship.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['47_script'] = array(
+            'name'        => '(47) Duckling Discipleship Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['48'] = array(
-            'name'        => '(48) Eyes to See Script ',
+            'name'        => '(48) Eyes to See Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '48_en_eyes_to_see.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['48_script'] = array(
+            'name'        => '(48) Eyes to See Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['49'] = array(
-            'name'        => '(49) Lord\'s Supper Script ',
+            'name'        => '(49) Lord’s Supper Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '49_en_lords_supper.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['49_script'] = array(
+            'name'        => '(49) Lord’s Supper Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['50'] = array(
-            'name'        => '(50) Prayer Walking Script ',
+            'name'        => '(50) Prayer Walking Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '50_en_prayer_walking.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['50_script'] = array(
+            'name'        => '(50) Prayer Walking Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['51'] = array(
-            'name'        => '(51) Person of Peace Script ',
+            'name'        => '(51) Person of Peace Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '51_en_person_of_peace.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['51_script'] = array(
+            'name'        => '(51) Person of Peace Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['52'] = array(
-            'name'        => '(52) Faithfulness Script ',
+            'name'        => '(52) Faithfulness Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '52_en_faithfulness.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['52_script'] = array(
+            'name'        => '(52) Faithfulness Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['53'] = array(
-            'name'        => '(53) 3/3 Groups Script ',
+            'name'        => '(53) 3/3 Groups Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '53_en_3_3_groups.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['53_script'] = array(
+            'name'        => '(53) 3/3 Groups Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['54'] = array(
-            'name'        => '(54) Training Cycle Script ',
+            'name'        => '(54) Training Cycle Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '54_en_training_cycle.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['54_script'] = array(
+            'name'        => '(54) Training Cycle Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['55'] = array(
-            'name'        => '(55) Leadership Cells Script ',
+            'name'        => '(55) Leadership Cells Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '55_en_leadership_cells.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['55_script'] = array(
+            'name'        => '(55) Leadership Cells Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['56'] = array(
-            'name'        => '(56) Non-Sequential Script ',
+            'name'        => '(56) Non-Sequential Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '56_en_non_sequential.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['56_script'] = array(
+            'name'        => '(56) Non-Sequential Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['57'] = array(
-            'name'        => '(57) Pace Script ',
+            'name'        => '(57) Pace Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '57_en_pace.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['57_script'] = array(
+            'name'        => '(57) Pace Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['58'] = array(
-            'name'        => '(58) Part of Two Churches Script ',
+            'name'        => '(58) Part of Two Churches Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '58_en_part_of_two_churches.pdf',
+            'default'     => '',
             'section'     => 'downloads',
         );
-        $fields['59'] = array(
-            'name'        => '(59) Completion of Training Script ',
+        $fields['58_script'] = array(
+            'name'        => '(58) Part of Two Churches Script',
             'description' => '',
-            'type'        => 'link',
-            'default'     => '59_en_completion_of_training.pdf',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
+//        $fields['59'] = array(
+//            'name'        => '(59) Completion of Training Script',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'downloads',
+//        );
+//        $fields['59_script'] = array(
+//            'name'        => '(59) Completion of Training Script',
+//            'description' => '',
+//            'type'        => 'textarea',
+//            'default'     => '',
+//            'section'     => 'downloads',
+//        );
         $fields['60'] = array(
-            'name'        => '(60) Coaching Checklist Script ',
+            'name'        => '(60) Coaching Checklist Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '60_en_coaching_checklist.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['60_script'] = array(
+            'name'        => '(60) Coaching Checklist Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['61'] = array(
-            'name'        => '(61) Leadership in Networks Script ',
+            'name'        => '(61) Leadership in Networks Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '61_en_leadership_in_networks.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['61_script'] = array(
+            'name'        => '(61) Leadership in Networks Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['62'] = array(
-            'name'        => '(62) Peer Mentoring Script ',
+            'name'        => '(62) Peer Mentoring Script',
             'description' => '',
             'type'        => 'link',
-            'default'     => '62_en_peer_mentoring.pdf',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['62_script'] = array(
+            'name'        => '(62) Peer Mentoring Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
             'section'     => 'downloads',
         );
 

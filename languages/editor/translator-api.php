@@ -36,6 +36,13 @@ class Zume_Translation_Endpoints
                 'permission_callback' => '__return_true',
             ]
         );
+        register_rest_route(
+            $this->namespace, '/translation/scripts', [
+                'methods' => 'POST',
+                'callback' => [ $this, 'update_scripts' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
     }
 
     public function update_pieces( WP_REST_Request $request ) {
@@ -50,6 +57,16 @@ class Zume_Translation_Endpoints
     }
 
     public function update_emails( WP_REST_Request $request ) {
+        $params = $request->get_params();
+        if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
+            return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
+        }
+
+        update_post_meta( $params['postid'], $params['key'], $params['content'] );
+
+        return $params;
+    }
+    public function update_scripts( WP_REST_Request $request ) {
         $params = $request->get_params();
         if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
             return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );

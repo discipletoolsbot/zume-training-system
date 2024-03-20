@@ -63,21 +63,8 @@ class Zume_Training_Pieces_Post_Type
     }
     public function add_metabox( $post_type ) {
         if ( $this->post_type === $post_type ) {
-            add_meta_box( 'qrcode', esc_html__( 'QR Code', 'text-domain' ), [ $this, 'metabox_qr' ], $this->post_type, 'side', 'high' );
             add_meta_box( 'pieces-content-box', 'Pieces Content', [ $this, 'metabox_pieces' ], $this->post_type, 'normal', 'high' );
         }
-    }
-    public function metabox_qr( $post ) {
-        global $post;
-        $full_link = get_page_link( $post->ID );
-        $redirect_link = 'https://zume.training/zume_app/qr/?p=' . $post->ID ;
-
-        ?>
-        <a href="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data=<?php echo esc_url( $redirect_link ) ?>"><img src="https://api.qrserver.com/v1/create-qr-code/?size=1000x1000&data=<?php echo esc_url( $redirect_link ) ?>" title="<?php echo esc_url( $redirect_link ) ?>" alt="<?php echo esc_url( $redirect_link ) ?>" style="width:100%;"/></a>
-        <br>Links to:
-        <br><?php echo esc_url( $full_link );  ?>
-        <br>
-        <?php
     }
 
     public function metabox_pieces( $post ) {

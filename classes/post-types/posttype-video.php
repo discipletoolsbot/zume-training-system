@@ -285,8 +285,8 @@ class Zume_Video_Post_Type
      */
     public function load_video_meta_box() {
         ?>
-        These numeric ids below refer to the unique Vimeo id. It should work with the url "https://player.vimeo.com/video/{put_video_id_here}". Use the "verify link" to check if the video loads correctly.<br>The page title above needs to be the two character language code.<br><br>
-        <a id="show-hide-qr" class="button" onclick="show_hide_qr()" data-state="off">Show/Hide QR Codes</a> <a id="show-hide-videos" class="button" onclick="show_hide_videos()" data-state="off">Show/Hide Videos</a>
+        Use the "verify link" to check if the video loads correctly.<br>The page title above needs to be the two character language code.<br><br>
+        <a id="show-hide-videos" class="button" onclick="show_hide_videos()" data-state="off">Show/Hide Videos</a>
         <hr>
         <?php
 
@@ -302,30 +302,6 @@ class Zume_Video_Post_Type
             }
         </style>
         <script>
-            function show_hide_qr() {
-                let qr_raw_link = '<?php echo esc_url( get_stylesheet_directory_uri() ) . '/video.php?id='; ?>'
-                let qr_link = '<?php echo esc_url( urlencode( get_stylesheet_directory_uri() . '/video.php?id=' ) ); ?>'
-                let button = jQuery('#show-hide-qr')
-                let state = button.data('state')
-                let list = jQuery('.viewer-cell')
-                if ( 'off' === state ) {
-                    // console.log('Turning on qr')
-                    button.data('state', 'on')
-                    jQuery.each(list, function(i,v){
-                        if ( v.id ) {
-                            let cell = jQuery('#'+v.id)
-                            cell.addClass('active-spinner')
-                            cell.html(`<img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&color=323a68&data=${qr_link}${v.id}" title="${qr_raw_link}${v.id}" alt="${qr_raw_link}${v.id}" /><br><a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&color=323a68&data=${qr_link}${v.id}">direct link</a>`)
-                        }
-                    })
-                }
-                else {
-                    // console.log('Turning off qr')
-                    button.data('state', 'off')
-                    list.empty()
-                    list.removeClass('active-spinner')
-                }
-            }
             function show_hide_videos() {
                 let button = jQuery('#show-hide-videos')
                 let state = button.data('state')

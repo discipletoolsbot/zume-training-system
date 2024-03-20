@@ -2,6 +2,8 @@
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 use Gettext\Loader\PoLoader;
+use Gettext\Generator\MoGenerator;
+use Gettext\Generator\PoGenerator;
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
@@ -46,6 +48,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public $page_title = 'Zúme Training Translator';
     public $root = 'zume_app';
     public $type = 'translator';
+    public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
     public $lang;
     public static $token = 'zume_app_translator';
 
@@ -71,8 +74,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
 //        $page_slug = $url_parts[0] ?? '';
 
         if ( isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
-
-
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -121,20 +122,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
             <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
             <script>
-                tinymce.init({
-                    selector: 'textarea',
-                    plugins: 'code link wordcount lists image',
-                    menubar: 'insert',
-                    toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
-                    link_class_list: [
-                        {title: 'None', value: ''},
-                        {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
-                        {title: 'Primary Button', value: 'button primary-button-hollow'},
-                    ],
-                    block_formats: 'Paragraph=p; Header 3=h3',
-                    min_height: 500,
-                    format_empty_lines: true
-                });
+
             </script>
             <style>
                 table tr td {
@@ -223,10 +211,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'status' => $tab === 'status' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow',
             'emails' => $tab === 'emails' ? '' : 'hollow',
+            'scripts' => $tab === 'scripts' ? '' : 'hollow',
+            'strings' => $tab === 'strings' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'view_course' => $tab === 'view_course' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow',
-            'strings' => $tab === 'strings' ? '' : 'hollow',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -268,12 +257,18 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
         $lang_list = list_zume_pieces( $lang['code'] );
+        $training_items = zume_training_items();
+        $script_titles = array_column( $training_items, 'title', 'script' );
+//dt_write_log( $script_titles );
 
         $string_count = 0;
         $missing_count = 0;
         $already_translated = [];
         $strings = $this->get_translation_strings();
 
+        if ( empty( $strings ) ) {
+            return [];
+        }
         foreach( $strings as $file => $array ) {
                 foreach( $array as $trans ) {
                     if ( in_array( $trans['original'], $already_translated ) ) {
@@ -294,15 +289,21 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
-                                SITE TRANSLATION FOR <?php echo $lang['name'] ?>
+                                PO STRINGS <?php echo $lang['name'] ?>
                             </th>
                         </tr>
                          <tr>
                             <td>
-                                <strong>Total Strings:</strong> <?php echo $string_count; ?>
+                                <strong>Total Strings:</strong> <?php echo $string_count; ?><br>
+                                <strong style="color:red;">Missing Strings:</strong> <?php echo $missing_count; ?>
                             </td>
                             <td>
-                                <strong>Missing Strings:</strong> <?php echo $missing_count; ?>
+                                <?php
+                                $filename = plugin_dir_path(__DIR__) . '/zume-' . $lang['locale'] . '.po';
+                                if (file_exists($filename)) {
+                                    echo 'PO file last modified: ' . gmdate("F d, Y H:i:s.", filemtime($filename));
+                                }
+                                ?>
                             </td>
                         </tr>
                         <tr style="background-color:grey; color:white;">
@@ -318,7 +319,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $item['post_title'] ?> (<?php echo $item['ID'] ?>)</strong>
+                                    <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
                                 </td>
                                 <td>
                                      zume_piece_h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
@@ -334,14 +335,101 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 EMAILS
                             </th>
                         </tr>
-                        <tr>
-                            <td>
-
-                            </td>
-                            <td>
-
-                            </td>
+                        <?php
+                            $messages_other_language = $this->query_emails( $this->lang );
+                            foreach( $messages_other_language as $message ) {
+                                ?>
+                                <tr>
+                                    <td>
+                                        <strong><?php echo $message['title'] ?></strong> (<?php echo $message['post_id'] ?>)
+                                    </td>
+                                    <td>
+                                        subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
+                                        | body <?php echo empty( $message['body'] ) ? '&#10060;' : '&#9989;' ?>
+                                    </td>
+                        <?php } ?>
+                        <tr style="background-color:grey; color:white;">
+                            <th colspan="2">
+                                VIDEOS
+                            </th>
                         </tr>
+                        <?php
+                            foreach( $training_items as $x => $item ) {
+                                if ( '20' === $item['key'] ) {
+                                    continue;
+                                }
+
+                              ?>
+                                <tr>
+                                    <td>
+                                        <strong><?php echo $item['title'] ?> (mp4)</strong>
+                                    </td>
+                                    <td>
+                                    <?php
+                                        $file =  $this->mirror_url . $this->lang .'/'. intval( $item['key'] ) . '.mp4';
+                                        $file_headers = @get_headers($file);
+                                        if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
+                                            echo '&#10060;';
+                                        }
+                                        else {
+                                            echo '&#9989;';
+                                        }
+                                        ?> <a href="<?php echo $file ?>" target="_blank">View</a>
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                        ?>
+                        <tr style="background-color:grey; color:white;">
+                            <th colspan="2">
+                                SCRIPTS
+                            </th>
+                        </tr>
+                        <?php
+                        $scripts = list_zume_downloads( $this->lang );
+                        foreach( $scripts as $script ) {
+                            ?>
+                            <tr>
+                                <td>
+                                    <strong><?php echo $script_titles[$script['script_id']] . ' ('. $script['script_id'] . ')' ?></strong>
+                                </td>
+                                <td>
+                                    <?php echo ( empty( $script['content']) ) ? '&#10060;' : '&#9989;'  ?>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                        <tr style="background-color:grey; color:white;">
+                            <th colspan="2">
+                                IMAGES
+                            </th>
+                        </tr>
+                        <?php
+                            $images = [93, 94, 95, 96, 97, 98, 99, 101, 102, 103, 104];
+                            foreach( $images as $image_number ) {
+                              ?>
+                                <tr>
+                                    <td>
+                                        <strong><?php echo $image_number?></strong>
+                                    </td>
+                                    <td>
+                                        <?php
+                                        $file =  $this->mirror_url . $this->lang .'/'. $image_number . '.png';
+                                        $file_headers = @get_headers($file);
+                                        if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
+                                            echo '&#10060;';
+                                        }
+                                        else {
+                                            echo '&#9989;';
+                                        }
+                                        ?> <a href="<?php echo $file ?>" target="_blank">View</a>
+                                        <img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;">
+                                    </td>
+                                </tr>
+                            <?php
+                            }
+                        ?>
                     </tbody>
                 </table>
             </div>
@@ -478,6 +566,21 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 jQuery(document).ready(function($){
                     jQuery(document).foundation();
 
+                    tinymce.init({
+                        selector: 'textarea',
+                        plugins: 'code link wordcount lists image',
+                        menubar: 'insert',
+                        toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                        link_class_list: [
+                            {title: 'None', value: ''},
+                            {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
+                            {title: 'Primary Button', value: 'button primary-button-hollow'},
+                        ],
+                        block_formats: 'Paragraph=p; Header 3=h3',
+                        min_height: 500,
+                        format_empty_lines: true
+                    });
+
                     jQuery('.save').on( 'click', (e) => {
                         console.log('save')
                         console.log(e.target.dataset.target)
@@ -505,6 +608,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
               </script>
         <?php
     }
+
     public function emails() {
         $languages = zume_languages();
         $language = $languages[$this->lang];
@@ -561,6 +665,22 @@ class Zume_Training_Translator extends Zume_Magic_Page
         </table>
         <script>
             jQuery(document).ready(function($){
+                jQuery(document).foundation();
+
+                tinymce.init({
+                    selector: 'textarea',
+                    plugins: 'code link wordcount lists image',
+                    menubar: 'insert',
+                    toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                    link_class_list: [
+                        {title: 'None', value: ''},
+                        {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
+                        {title: 'Primary Button', value: 'button primary-button-hollow'},
+                    ],
+                    block_formats: 'Paragraph=p; Header 3=h3',
+                    min_height: 500,
+                    format_empty_lines: true
+                });
                 jQuery('.save').on( 'click', (e) => {
                     console.log('save')
                     console.log(e.target.dataset.target)
@@ -655,6 +775,116 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
         return $emails;
     }
+
+    public function scripts() {
+        $zume_languages = zume_languages();
+        $lang = $zume_languages[$this->lang];
+        $en_list = list_zume_downloads( 'en' );
+        $lang_list = list_zume_downloads( $lang['code'] );
+        $fields = Zume_PDF_DOwnload_Post_Type::instance()->get_custom_fields_settings();
+
+        $list = [];
+
+        foreach( $en_list as $i => $v ) {
+            $list[$v['script_id']] = [
+                'en' => [],
+                'lang' => [],
+            ];
+        }
+
+        foreach( $en_list as $i => $v ) {
+            $list[$v['script_id']]['en'] = $v;
+        }
+        foreach( $lang_list as $i => $v ) {
+            $list[$v['script_id']]['lang'] = $v;
+        }
+        ?>
+        <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <table style="vertical-align: text-top;">
+                    <thead>
+                        <tr>
+                            <th>
+                                ENGLISH
+                            </th>
+                            <th>
+                                <span style="text-transform:uppercase;"><?php echo $lang['name'] ?></span>
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                        foreach( $list as $item ) {
+                             ?>
+                            <tr>
+                                <td style="background-color: grey; width: 40%; color: white;"><?php echo $fields[$item['en']['script_id'] .'_script']['name'] ?></td>
+                                <td style="background-color: grey; width: 40%;"></td>
+                                <td style="background-color: grey; width: 10%;"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo $item['en']['content'] ?? ''  ?>
+                                </td>
+                                <td>
+                                    <textarea style="height:500px;" id="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"><?php echo $item['lang']['content'] ?? '' ;  ?></textarea>
+                                </td>
+                                <td>
+                                    <button class="button save" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>_script" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
+                                    <br><span class="loading-spinner <?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"></span>
+                                </td>
+                            </tr>
+                            <?php
+                        } ?>
+                    </tbody>
+                </table>
+            </div>
+            <script>
+                jQuery(document).ready(function($){
+                    jQuery(document).foundation();
+
+                    tinymce.init({
+                        selector: 'textarea',
+                        plugins: 'code link wordcount lists image',
+                        menubar: 'insert',
+                        toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                        link_class_list: [
+                            {title: 'None', value: ''},
+                            {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
+                            {title: 'Primary Button', value: 'button primary-button-hollow'},
+                        ],
+                        block_formats: 'Paragraph=p; Header 3=h3',
+                        min_height: 500,
+                        format_empty_lines: true
+                    });
+                    jQuery('.save').on( 'click', (e) => {
+                        console.log('save')
+                        console.log(e.target.dataset.target)
+
+                        let target = e.target.dataset.target;
+                        let content = tinymce.get(target).getContent();
+                        console.log(content)
+
+                        let key = e.target.dataset.key;
+                        console.log(key)
+
+                        let postid = e.target.dataset.post;
+                        console.log(postid)
+
+                        jQuery('.loading-spinner.' + target).addClass('active');
+
+                        makeRequest('POST', 'translation/scripts', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                        .then( (response) => {
+                            console.log(response)
+                            jQuery('.loading-spinner.' + target).removeClass('active');
+                            jQuery('.loading-spinner.' + target).addClass('checkmark');
+                        } )
+                    } )
+              });
+              </script>
+        <?php
+    }
+
     public function ctas() {
         $ctas = Zume_System_CTA_API::get_ctas();
         foreach( $ctas as $cta ) {
@@ -668,6 +898,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
 
     }
+
     public function view_course() {
 
         $zume_languages = zume_languages();
@@ -787,6 +1018,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
 
     }
+
     public function qr_codes() {
         ?>
         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
@@ -928,42 +1160,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
         </table>
         <?php
     }
-    public function get_translation_strings() {
-        $languages = zume_languages();
-        $locale = $languages[$this->lang]['locale'];
-        $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
-        if ( ! file_exists( $locale_file ) ) {
-            echo 'No translation file found';
-            return;
-        }
-        $loader = new PoLoader();
-        $translations = $loader->loadFile($locale_file );
 
-
-        $strings = [];
-        foreach( $translations as $translation ) {
-            $references = $translation->getReferences();
-            foreach( $references as $file_name => $reference ) {
-                if ( ! isset( $strings[$file_name] ) ) $strings[$file_name] = [];
-                foreach( $reference as $line ) {
-                    $strings[$file_name][] = [
-                        'line' => $line,
-                        'original' => $translation->getOriginal(),
-                        'translation' => $translation->getTranslation(),
-                    ];
-                }
-                usort($strings[$file_name], fn($a, $b) => $a['line'] <=> $b['line']);
-            }
-        }
-
-        return $strings;
-    }
     public function strings() {
+        $zume_languages = zume_languages();
+        $lang = $zume_languages[$this->lang];
         $string_count = 0;
         $missing_count = 0;
         $already_translated = [];
         $strings = $this->get_translation_strings();
-//        dt_write_log( $strings );
 
         ob_start();
             foreach( $strings as $file => $array ) {
@@ -998,7 +1202,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <tr>
                     <th>Line</th>
                     <th>English</th>
-                    <th><?php echo $languages[$this->lang]['name'] ?></th>
+                    <th><?php echo $lang['name'] ?></th>
                 </tr>
             </thead>
             <tbody>
@@ -1007,6 +1211,37 @@ class Zume_Training_Translator extends Zume_Magic_Page
         </table>
         <?php
     }
+    public function get_translation_strings() {
+        $languages = zume_languages();
+        $locale = $languages[$this->lang]['locale'];
+        $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
+        if ( ! file_exists( $locale_file ) ) {
+            echo 'No translation file found';
+            return;
+        }
+        $loader = new PoLoader();
+        $translations = $loader->loadFile($locale_file );
+
+
+        $strings = [];
+        foreach( $translations as $translation ) {
+            $references = $translation->getReferences();
+            foreach( $references as $file_name => $reference ) {
+                if ( ! isset( $strings[$file_name] ) ) $strings[$file_name] = [];
+                foreach( $reference as $line ) {
+                    $strings[$file_name][] = [
+                        'line' => $line,
+                        'original' => $translation->getOriginal(),
+                        'translation' => $translation->getTranslation(),
+                    ];
+                }
+                usort($strings[$file_name], fn($a, $b) => $a['line'] <=> $b['line']);
+            }
+        }
+
+        return $strings;
+    }
+
 }
 
 Zume_Training_Translator::instance();
@@ -1026,6 +1261,24 @@ if ( ! function_exists( 'list_zume_pieces' ) ) {
                 LEFT JOIN {$table_prefix}postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
                 ORDER BY CAST(pm.meta_value AS unsigned );",
             $term_id );
+        $results = $wpdb->get_results( $sql, ARRAY_A );
+        if ( empty( $results ) || is_wp_error( $results ) ) {
+            return [];
+        }
+
+        return $results;
+    }
+}
+if ( ! function_exists( 'list_zume_downloads' ) ) {
+    function list_zume_downloads( $lang_code ) {
+        global $wpdb;
+        $sql = $wpdb->prepare( "SELECT p.post_title, pm.post_id, SUBSTRING( pm.meta_key, 1, 2) as script_id, pm.meta_value as content
+                            FROM zume_posts p
+                            JOIN zume_postmeta pm ON pm.post_id=p.ID
+                            WHERE p.post_type = 'zume_download'
+                            AND pm.meta_key LIKE '%_script'
+                            AND p.post_title = %s;",
+            $lang_code );
         $results = $wpdb->get_results( $sql, ARRAY_A );
         if ( empty( $results ) || is_wp_error( $results ) ) {
             return [];

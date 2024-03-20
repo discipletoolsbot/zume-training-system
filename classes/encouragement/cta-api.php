@@ -126,7 +126,6 @@ class Zume_System_CTA_API
                 'key' => 'registered',
                 'type' => 'system',
                 'subtype' => 'registered',
-                'label' => 'Register',
                 'content' => [
                     'title' => __( 'Register', 'zume' ),
                     'description' => __( 'Register to start your training', 'zume' ),

@@ -100,7 +100,6 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'classes/loader.php' );
         require_once( 'site/loader.php' );
-        require_once( 'translation-utility.php' );
 
         $this->i18n();
 
