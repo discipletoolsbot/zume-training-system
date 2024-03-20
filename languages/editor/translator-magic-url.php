@@ -521,7 +521,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <textarea id="<?php echo hash('sha256', serialize($item['lang']) . 'zume_pre_video_content' ) ?>" ><?php echo $item['lang']['zume_pre_video_content'] ?? '';  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_pre_video_content' ) ?>" data-key="zume_pre_video_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_pre_video_content' ) ?>" data-key="zume_pre_video_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_pre_video_content' ) ?>"></span>
                                 </td>
                             </tr>
@@ -537,7 +537,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <textarea id="<?php echo hash('sha256', serialize($item['lang']) . 'zume_post_video_content' ) ?>" class="<?php echo hash('sha256', serialize($item['lang']) . 'zume_post_video_content' ) ?>"><?php echo $item['lang']['zume_post_video_content'] ?? '';  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_post_video_content' ) ?>" data-key="zume_post_video_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_post_video_content' ) ?>" data-key="zume_post_video_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_post_video_content' ) ?>"></span>
                                 </td>
                             </tr>
@@ -553,7 +553,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <textarea id="<?php echo hash('sha256', serialize($item['lang']) . 'zume_ask_content' ) ?>"><?php echo  $item['lang']['zume_ask_content'] ?? '';  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_ask_content' ) ?>" data-key="zume_ask_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_ask_content' ) ?>" data-key="zume_ask_content" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_ask_content' ) ?>"></span>
                                 </td>
                             </tr>
@@ -581,7 +581,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         format_empty_lines: true
                     });
 
-                    jQuery('.save').on( 'click', (e) => {
+                    jQuery('.save_textarea').on( 'click', (e) => {
                         console.log('save')
                         console.log(e.target.dataset.target)
 
@@ -604,6 +604,24 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             jQuery('.loading-spinner.' + target).addClass('checkmark');
                         } )
                     } )
+                    jQuery('.save').on( 'click', (e) => {
+                        console.log('save_emails')
+                        console.log(e.target.dataset.target)
+
+                        let target = e.target.dataset.target;
+                        let content = jQuery('.'+target).val();
+                        let key = e.target.dataset.key;
+                        let postid = e.target.dataset.post;
+
+                        jQuery('.loading-spinner.' + target).addClass('active');
+
+                        makeRequest('POST', 'translation/pieces', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                        .then( (response) => {
+                            console.log(response)
+                            jQuery('.loading-spinner.' + target).removeClass('active');
+                            jQuery('.loading-spinner.' + target).addClass('checkmark');
+                        } )
+                } )
               });
               </script>
         <?php
