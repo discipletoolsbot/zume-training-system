@@ -30,7 +30,9 @@ export class DashTopLevel extends DashPage {
                             href=${route.pattern}
                             text=${route.translation || ''}
                             icon=${route.icon}
-                            ?locked=${['my-plans', 'my-churches', 'my-maps'].includes(route.name)}
+                            ?directLink=${route.type === 'direct-link'}
+                            ?completed=${DashBoard.getCompletedStatus(route.name)}
+                            ?locked=${DashBoard.getLockedStatus(route.name)}
                         >
                         </grid-link>
                         `
@@ -47,7 +49,9 @@ export class DashTopLevel extends DashPage {
                         text=${route.translation}
                         explanation=${route.explanation}
                         icon=${route.icon}
-                        ?locked=${['my-plans', 'my-churches', 'my-maps'].includes(route.name)}
+                        ?directLink=${route.type === 'direct-link'}
+                        ?completed=${DashBoard.getCompletedStatus(route.name)}
+                        ?locked=${DashBoard.getLockedStatus(route.name)}
                     >
                     </list-link>
                 `)}

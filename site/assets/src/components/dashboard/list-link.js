@@ -32,18 +32,26 @@ export class ListLink extends NavLink {
                             <h3 class="f-1 bold uppercase">${this.text}</h3>
                             <p>${this.explanation}</p>
                         </div>
-                        <a
-                            href=${this.href}
-                            class="dash-menu__view-button btn ${this.locked ? 'locked' : 'light'} tight"
-                            role="button"
-                            @click=${this.handleClick}
-                        >
-                            ${
-                                this.locked
-                                    ? zumeDashboard.translations.preview
-                                    : zumeDashboard.translations.view_now
-                            }
-                        </a>
+                        ${
+                            this.completed
+                            ? html`
+                                <span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span>
+                            `
+                            : html`
+                                <a
+                                    href=${this.href}
+                                    class="dash-menu__view-button btn ${this.locked ? 'locked' : 'light'} tight"
+                                    role="button"
+                                    @click=${this.handleClick}
+                                >
+                                    ${
+                                        this.locked
+                                            ? zumeDashboard.translations.preview
+                                            : this.directLink ? this.text : zumeDashboard.translations.view_now
+                                    }
+                                </a>
+                            `
+                        }
                     </div>
                 </div>
             </div>

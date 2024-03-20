@@ -147,6 +147,8 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 6 => false,
             ];
 
+            $user_state = [];
+
             foreach ( $log as $value ) {
                 if ( 'registered' == $value['subtype'] ) {
                     $funnel_steps[1] = true;
@@ -165,6 +167,45 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 }
                 if ( 'seeing_generational_fruit' == $value['subtype'] ) {
                     $funnel_steps[6] = true;
+                }
+                if ( 'plan_created' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'joined_online_training' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'set_profile' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'invited_friends' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'requested_a_coach' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'set_profile_location' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'set_profile_phone' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'set_profile_name' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'training_26_heard' == $value['log_key'] ) {
+                    $user_state['can_create_3_month_plan'] = true;
+                }
+                if ( 'made_3_month_plan' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'completed_3_month_plan' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'join_community' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
+                }
+                if ( 'first_practitioner_report' == $value['subtype'] ) {
+                    $user_state[$value['subtype']] = true;
                 }
             }
 
@@ -188,6 +229,7 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
         if ( $number_only ) {
             return $stage['value'];
         } else {
+            $stage['state'] = $user_state;
             return $stage;
         }
     }
