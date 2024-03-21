@@ -206,8 +206,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
-        $tab = $_GET['tab'] ?? 'status';
+        $tab = $_GET['tab'] ?? 'translators';
         $tabs = [
+            'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow',
             'emails' => $tab === 'emails' ? '' : 'hollow',
@@ -251,6 +252,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </div>
         </div>
         <?php
+    }
+
+    public function translators() {
+        echo 'translators';
     }
 
     public function status() {
@@ -644,10 +649,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <strong>Body:</strong>
                 </td>
                 <td>
-                    <?php echo nl2br( $messages_english[$pid]['body'] ?? '' ) ?><br>
+                    <?php echo $messages_english[$pid]['body'] ?? '' ?><br>
                 </td>
                 <td>
-                    <textarea id="body_<?php echo $this->lang ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo  nl2br( $messages_other_language[$pid]['body'] ?? '' ) ?></textarea>
+                    <textarea id="body_<?php echo $this->lang ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['body'] ?? '' ?></textarea>
                 </td>
                 <td>
                     <button class="button save" data-target="body_<?php echo $this->lang ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="body_<?php echo $this->lang ?>" >Save</button>
