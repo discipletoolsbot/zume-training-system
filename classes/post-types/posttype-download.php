@@ -284,22 +284,21 @@ class Zume_PDF_Download_Post_Type
      * @since  0.1.0
      */
     public function load_downloads_meta_box() {
-        echo 'Add only the filename with the .pdf extension. The file is added to the Theme in `zume-training/files`.<br><br>The page title above needs to be the two character language code.<br><hr>';
+        global $post_id;
+
+        echo 'Scipts must be edited in zume.training/zume_app/translator<br><hr>';
         $this->meta_box_content( 'downloads' ); // prints
-    }
-    public function load_pages_downloads_meta_box() {
-        $this->meta_box_content( 'pages' ); // prints
+
+        // make sure fields exist
+        $fields = get_post_custom( $post_id );
+        $field_data = $this->get_custom_fields_settings();
+        foreach($field_data as $k => $v){
+            if( !isset($fields[$k]) ) {
+                update_post_meta( $post_id, $k, '' );
+            }
+        }
     }
 
-    /**
-     * Meta box for Status Information
-     *
-     * @access public
-     * @since  0.1.0
-     */
-    public function load_links_meta_box() {
-        $this->meta_box_content( 'links' ); // prints
-    }
 
     /**
      * The contents of our meta box.
@@ -347,13 +346,13 @@ class Zume_PDF_Download_Post_Type
                             echo '<a href="'. esc_url( zume_mirror_url() ) .esc_attr( get_the_title( $post_id ) ).'/'.esc_attr( $data ).'" target="_blank">Check Link</a>';
                             echo '</td><tr/>' . "\n";
                             break;
-                        case 'textarea':
+                        case 'textarea_x':
                             echo '<tr valign="top"><td style="padding:2px;vertical-align: top;font-weight:bold;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
                                 <td style="padding:2px;">';
                             wp_editor( $data, $k, array( 'media_buttons' => false ) );
                             echo '</td></tr>' . "\n";
                             break;
-                        case 'textarea_x':
+                        case 'textarea':
                             echo '<tr valign="top"><td style="padding:2px;vertical-align: top;font-weight:bold;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
                                 <td style="padding:2px;">';
                             echo $data;
@@ -447,13 +446,11 @@ class Zume_PDF_Download_Post_Type
             } elseif ( ${$f} != get_post_meta( $post_id, $f, true ) ) {
                 update_post_meta( $post_id, $f, ${$f} );
             } elseif ( ${$f} == '' ) {
-                delete_post_meta( $post_id, $f, get_post_meta( $post_id, $f, true ) );
+                update_post_meta( $post_id, $f, '' );
             }
         }
         return $post_id;
     } // End meta_box_save()
-
-
 
     /**
      * Customise the "Enter title here" text.
