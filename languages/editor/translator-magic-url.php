@@ -255,6 +255,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function translators() {
+        // query users with translation role
+        
         echo 'translators';
     }
 
