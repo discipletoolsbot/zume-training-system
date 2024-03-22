@@ -249,7 +249,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 continue;
                             }
                             ?>
-                            <option value="<?php echo $l['code'] ?>"><?php echo $l['name'] ?></option>
+                            <option value="<?php echo $l['code'] ?>"><?php echo $l['name'] ?> (<?php echo $l['code'] ?>)</option>
                             <?php
                         }
                         ?>
