@@ -214,15 +214,20 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-            'pieces' => $tab === 'pieces' ? '' : 'hollow',
-            'emails' => $tab === 'emails' ? '' : 'hollow',
-            'scripts' => $tab === 'scripts' ? '' : 'hollow',
+            'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
+            'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
+            'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'strings' => $tab === 'strings' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'view_course' => $tab === 'view_course' ? '' : 'hollow',
-            'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow',
+            'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
         ]
         ?>
+        <style>
+            .hollow.hollow-focus {
+                background-color: lightgreen !important;
+            }
+        </style>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <div class="grid-x grid-padding-x" >
                 <div class="cell medium-9">
