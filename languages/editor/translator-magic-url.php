@@ -60,6 +60,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             10=>43,11=>44,12=>45,13=>46,14=>47,15=>48,16=>49,17=>50,18=>51,19=>52,
                             21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,
                            ];
+    public $images = [93, 94, 95, 96, 97, 98, 99, 101, 102, 103, 104];
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
 
     private static $_instance = null;
@@ -343,6 +344,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $videos = list_zume_videos( $this->language_code );
         $pieces_list = list_zume_pieces( $language['code'] );
 
+        dt_write_log( $downloads );
 
         /**
         * Template for the status tab
@@ -457,16 +459,24 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         </tr>
                         <?php
                             foreach( $this->video_list as $video_id ) {
+                                $pdf = false;
+                                $mp4 = false;
+                                if( isset( $downloads[$video_to_script[$video_id]] ) ) {
+                                    $pdf = $this->mirror_url . $this->language_code . '/' . $downloads[$video_to_script[$video_id]];
+                                }
+                                if( isset( $training_items[$video_id]['key_int'] ) ) {
+                                    $mp4 = $this->mirror_url . $this->language_code . '/' . $training_items[$video_id]['key_int'] . '.mp4';
+                                }
                                   ?>
                                     <tr>
                                         <td>
-                                            <strong><?php echo $training_items[$video_id]['title'] ?> (<?php echo $video_id . ' | ' . $item['script'] ?>)</strong>
+                                            <strong><?php echo $training_items[$video_id]['title'] ?> (<?php echo $video_id ?>)</strong>
                                         </td>
                                         <td>
-                                            Vimeo video  <?php echo empty( $videos[intval( $training_items[$video_id]['key'] )] ) ? '&#10060;' : '&#9989;' ; ?>
-                                            | DB Script <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
-                                            | MP4 ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($training_items[$video_id]['key_int']) . '.mp4' ?>">mp4</a> )
-                                            | PDF ( <a href="<?php echo $this->mirror_url . $this->language_code . '/'  ; ?>">pdf</a> )
+                                            Vimeo  <?php echo empty( $videos[$training_items[$video_id]['key_int']] ) ? '&#10060;' : '&#9989;' ; ?>
+                                            | Script <?php echo empty( $downloads[$training_items[$video_id]['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
+                                            | <a href="<?php echo $mp4 ?>">MP4</a> <span data-target="<?php echo $mp4; ?>" class="mp4 loading-spinner active"></span>
+                                            | <a href="<?php echo $pdf; ?>">PDF</a> <span data-target="<?php echo $pdf; ?>" class="pdf loading-spinner active"></span>
                                         </td>
                                     </tr>
                                 <?php
@@ -481,25 +491,17 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </th>
                         </tr>
                         <?php
-                            $images = [93, 94, 95, 96, 97, 98, 99, 101, 102, 103, 104];
-                            foreach( $images as $image_number ) {
+
+                            foreach( $this->images as $image_number ) {
+                                $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
                               ?>
                                 <tr>
                                     <td>
                                         <strong><?php echo $image_number . '.png'?></strong>
                                     </td>
                                     <td>
-                                        <?php
-                                        $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
-                                        $file_headers = @get_headers($file);
-                                        if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
-                                            echo '&#10060;';
-                                        }
-                                        else {
-                                            echo '&#9989;';
-                                        }
-                                        ?> <a href="<?php echo $file ?>" target="_blank">View</a>
-                                        <img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;">
+                                        <span data-target="<?php echo $file; ?>" class="image loading-spinner active"></span>
+                                        <a href="<?php echo $file ?>" target="_blank"><img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;"> View</a>
                                     </td>
                                 </tr>
                             <?php
@@ -513,9 +515,54 @@ class Zume_Training_Translator extends Zume_Magic_Page
         </div>
         <script>
             jQuery(document).ready(function() {
-                // jQuery('.loading-spinner').removeClass('active');
-
-
+                jQuery('.pdf').each(function() {
+                    let target = jQuery(this).data('target');
+                    console.log(target)
+                    if ( target ) {
+                         jQuery(this).load(target, function(response, status, xhr) {
+                            if (status == "error") {
+                                jQuery(this).removeClass('active').html('&#10060;');
+                            }
+                            else {
+                                jQuery(this).removeClass('active').html('&#9989;');
+                            }
+                        });
+                    } else {
+                        jQuery(this).removeClass('active').html('&#10060;');
+                    }
+                });
+                jQuery('.mp4').each(function() {
+                    let target = jQuery(this).data('target');
+                    console.log(target)
+                    if ( target ) {
+                         jQuery(this).load(target, function(response, status, xhr) {
+                            if (status == "error") {
+                                jQuery(this).removeClass('active').html('&#10060;');
+                            }
+                            else {
+                                jQuery(this).removeClass('active').html('&#9989;');
+                            }
+                        });
+                    } else {
+                        jQuery(this).removeClass('active').html('&#10060;');
+                    }
+                });
+                jQuery('.image').each(function() {
+                    let target = jQuery(this).data('target');
+                    console.log(target)
+                    if ( target ) {
+                         jQuery(this).load(target, function(response, status, xhr) {
+                            if (status == "error") {
+                                jQuery(this).removeClass('active').html('&#10060;');
+                            }
+                            else {
+                                jQuery(this).removeClass('active').html('&#9989;');
+                            }
+                        });
+                    } else {
+                        jQuery(this).removeClass('active').html('&#10060;');
+                    }
+                });
             });
         </script>
         <?php

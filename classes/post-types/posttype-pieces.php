@@ -102,7 +102,7 @@ class Zume_Training_Pieces_Post_Type
                     $selected = true;
                 }
                 ?>
-                <option value="<?php echo esc_attr( $languages['code'] ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_html( $languages['name'] ) ?></option>
+                <option value="<?php echo esc_attr( $languages['code'] ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_html( $languages['name'] ) ?> (<?php echo $languages['code'] ?>)</option>
                 <?php
             }
             ?>
