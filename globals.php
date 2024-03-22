@@ -1076,11 +1076,11 @@ if ( ! function_exists( 'zume_languages' ) ) {
             ),
             'pl ' => array(
                 'name' => 'Polish',
-                'enDisplayName' => 'Polski',
+                'enDisplayName' => 'Polish',
                 'code' => 'pl',
                 'displayCode' => 'pl',
                 'locale' => 'pl_PL',
-                'nativeName' => '',
+                'nativeName' => 'Polski',
                 'rtl' => false,
                 'feature_flags' => [
                     'language_selector' => true,

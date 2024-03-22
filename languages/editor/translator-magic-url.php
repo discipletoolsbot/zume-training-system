@@ -9,6 +9,17 @@ class Zume_Training_Translator extends Zume_Magic_Page
 {
     use Translateable;
 
+    public $magic = false;
+    public $parts = false;
+    public $page_title = 'Zúme Training Translator';
+    public $root = 'zume_app';
+    public $type = 'translator';
+    public $user;
+    public static $token = 'zume_app_translator';
+    public $zume_languages;
+    public $language_code;
+    public $language;
+
     public $pieces = [
         1 => 20730, // God uses ordinary people
         2 => 20731, // teach them to obey
@@ -43,15 +54,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
         31 => 20762, // four fields tool
         32 => 20763, // generation mapping
     ];
-    public $magic = false;
-    public $parts = false;
-    public $page_title = 'Zúme Training Translator';
-    public $root = 'zume_app';
-    public $type = 'translator';
+    public $video_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,31,32];
+    public $pieces_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30];
+    public $script_list = [1=>34,2=>35,3=>36,4=>37,5=>38,6=>39,7=>40,8=>41,9=>42,
+                            10=>43,11=>44,12=>45,13=>46,14=>47,15=>48,16=>49,17=>50,18=>51,19=>52,
+                            21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,
+                           ];
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
-    public $lang;
-    public $user;
-    public static $token = 'zume_app_translator';
 
     private static $_instance = null;
     public static function instance() {
@@ -60,19 +69,17 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
         return self::$_instance;
     }
-
     public function __construct() {
         parent::__construct();
-//        $this->lang = get_locale();
 
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $this->lang = $lang_code ?? $this->lang;
-
-//        $page_slug = $url_parts[0] ?? '';
+        $this->zume_languages = zume_languages();
+        $this->language_code = $lang_code ?? $this->language_code;
+        $this->language = $this->zume_languages[ $this->language_code ];
 
         if ( isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
 
@@ -96,18 +103,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
-
         }
     }
-
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
-
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return zume_training_magic_url_base_allowed_css();
     }
-
     public function header_style(){
         if ( isset( $_GET['tab'] ) && $_GET['tab'] === 'view_course' ) {
             ?>
@@ -119,12 +122,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <?php
         } else {
             ?>
-            <!-- Place the first <script> tag in your HTML's <head> -->
             <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
-            <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
-            <script>
-
-            </script>
             <style>
                 table tr td {
                     vertical-align: top;
@@ -163,12 +161,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     border-bottom: 7px solid #78b13f;
                     border-right: 7px solid #78b13f;
                 }
+                .hollow.hollow-focus {
+                    background-color: lightgreen !important;
+                }
             </style>
             <?php
-        } // end else
-
+        }
         ?>
-
         <script>
             jQuery(document).ready(function($){
                 jQuery('#lang-selector').on( 'change', (e) => {
@@ -192,24 +191,24 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function body(){
-        // test if logged in
-        if(!is_user_logged_in()) {
-            if ( $this->lang === 'en' ) {
+        if(!is_user_logged_in()) { // test if logged in
+            if ( $this->language_code === 'en' ) {
                 wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->root . '/' . $this->type  ) );
             } else {
-                wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->lang . '/' . $this->root . '/' . $this->type  ) );
+                wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->language_code . '/' . $this->root . '/' . $this->type  ) );
             }
         }
         $this->user = wp_get_current_user();
-        // test if approved translator role
-        if ( ! in_array( 'custom_language_translator', (array) $this->user->roles ) ) {
+
+        if ( ! in_array( 'custom_language_translator', (array) $this->user->roles ) ) {  // test if approved translator role
             echo "User " . $this->user->user_email . " is not a translator.";
             return;
         }
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
 
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
+        $language = $zume_languages[$this->language_code];
+
         $tab = $_GET['tab'] ?? 'translators';
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
@@ -223,29 +222,23 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
         ]
         ?>
-        <style>
-            .hollow.hollow-focus {
-                background-color: lightgreen !important;
-            }
-        </style>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <div class="grid-x grid-padding-x" >
                 <div class="cell medium-9">
-                    Zume Translation for <?php echo $lang['name'] ?><br>
+                    Zume Translation for <?php echo $language['name'] ?><br>
                     <?php
                     foreach( $tabs as $tab_name => $class ) {
                         ?>
-                        <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->lang ?>/zume_app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
+                        <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/zume_app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
                         <?php
                     }
                     ?>
                 </div>
                 <div class="cell medium-3">
                     <select id="lang-selector">
-                        <option value="<?php echo $lang['code'] ?>" selected><?php echo $lang['name'] ?></option>
+                        <option value="<?php echo $language['code'] ?>" selected><?php echo $language['name'] ?></option>
                         <option>----------</option>
                         <?php
-
                         foreach( $zume_languages as $k => $l ) {
                             if ( ! in_array( $k, $approved_languages ) && ! in_array( 'administrator', $this->user->roles ) ) {
                                 continue;
@@ -278,11 +271,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
         if ( in_array( 'administrator', $this->user->roles ) ) {
             return false;
         }
-        if ( $this->lang === 'en' && ! in_array( 'administrator', (array) $this->user->roles ) ) {
+        if ( $this->language_code === 'en' && ! in_array( 'administrator', (array) $this->user->roles ) ) {
             return true;
         }
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
-        if ( in_array( $this->lang, $approved_languages ) ) {
+        if ( in_array( $this->language_code, $approved_languages ) ) {
             return false;
         }
         return true;
@@ -295,7 +288,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->user = wp_get_current_user();
         }
         $zume_languages = zume_languages();
-        echo 'You are nor approved to translate '.$zume_languages[$this->lang]['name'].'. <br><br>Approved languages are:<br>';
+        echo 'You are nor approved to translate '.$zume_languages[$this->language_code]['name'].'. <br><br>Approved languages are:<br>';
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
         $list = [];
         foreach( $approved_languages as $lang ) {
@@ -309,38 +302,38 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         // query users with translation role
-
         $translators = get_users( [
             'role' => 'custom_language_translator',
             'meta_query' => [
                 [
                     'key' => 'zume_user_languages',
-                    'value' => $this->lang,
+                    'value' => $this->language_code,
                     'compare' => 'LIKE'
                 ]
             ]
         ] );
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
-        echo '<h3>Translators for ' . $lang['name'] . '</h3>';
+        $language = $zume_languages[$this->language_code];
+        echo '<h3>Translators for ' . $language['name'] . '</h3>';
         if ( ! empty( $translators ) ) {
             foreach( $translators as $translator ) {
                 echo '<strong>' . $translator->user_login . '</strong> (' . $translator->user_email . ') <br>';
             }
         }
-
     }
-
     public function status() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
             return;
         }
-        $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
-        $lang_list = list_zume_pieces( $lang['code'] );
+        $zume_languages = $this->zume_languages;
+        $language = $this->language;
+
         $training_items = zume_training_items();
         $script_titles = array_column( $training_items, 'title', 'script' );
+        $downloads = list_zume_downloads( $this->language_code );
+        $videos = list_zume_videos( $this->language_code );
+        $pieces_list = list_zume_pieces( $language['code'] );
 
         $string_count = 0;
         $missing_count = 0;
@@ -368,7 +361,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
-                                PO STRINGS <?php echo $lang['name'] ?>
+                                PO STRINGS <?php echo $language['name'] ?>
                             </th>
                         </tr>
                          <tr>
@@ -378,7 +371,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </td>
                             <td>
                                 <?php
-                                $filename = plugin_dir_path(__DIR__) . '/zume-' . $lang['locale'] . '.po';
+                                $filename = plugin_dir_path(__DIR__) . '/zume-' . $language['locale'] . '.po';
                                 if (file_exists($filename)) {
                                     echo 'PO file last modified: ' . gmdate("F d, Y H:i:s.", filemtime($filename));
                                 }
@@ -391,7 +384,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </th>
                         </tr>
                         <?php
-                        foreach( $lang_list as $item ) {
+                        foreach( $pieces_list as $item ) {
                             ?>
                             <tr>
                                 <td>
@@ -412,7 +405,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </th>
                         </tr>
                         <?php
-                            $messages_other_language = $this->query_emails( $this->lang );
+                            $messages_other_language = $this->query_emails( $this->language_code );
                             foreach( $messages_other_language as $message ) {
                                 ?>
                                 <tr>
@@ -431,10 +424,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </th>
                         </tr>
                         <?php
-                            $downloads = list_zume_downloads( $this->lang );
-                            $videos = list_zume_videos( $this->lang );
+
                             foreach( $training_items as $x => $item ) {
-                                  if ( in_array( $item['key']  , [ 20, 27, 31, 32 ] ) ) {
+                                  if ( in_array( $item['key']  , [ 20, 27 ] ) ) {
                                       continue;
                                   }
                                   ?>
@@ -443,10 +435,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                             <strong><?php echo $item['title'] ?> (<?php echo $item['key'] . ' | ' . $item['script'] ?>)</strong>
                                         </td>
                                         <td>
-                                            Vimeo video <?php echo isset( $videos[intval( $item['key'] )] ) ?  '&#9989;' : '&#10060;' ; ?> |
-                                            MP4 video ( <a href="<?php echo $this->mirror_url .  $this->lang . '/' . intval($item['key']) . '.mp4' ?>">mp4</a> ) <?php echo isset( $downloads[$item['script']] ) ?  '&#9989;' : '&#10060;' ; ?> |
-                                            DB Script <?php echo isset( $downloads[$item['script']] ) ?  '&#9989;' : '&#10060;' ; ?> |
-                                            PDF Script ( <a href="<?php echo $this->mirror_url . $this->lang . '/' . $downloads[$item['script']] ; ?>">pdf</a> ) <?php echo isset( $downloads[$item['script']] ) ?  '&#9989;' : '&#10060;' ; ?>
+                                            Vimeo video <?php echo empty( $videos[intval( $item['key'] )] ) ? '&#10060;' : '&#9989;' ; ?> |
+                                            MP4 video ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($item['key']) . '.mp4' ?>">mp4</a> ) <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?> |
+                                            DB Script <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?> |
+                                            PDF Script ( <a href="<?php echo $this->mirror_url . $this->language_code . '/' . $downloads[$item['script']] ; ?>">pdf</a> ) <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;' ; ?>
                                         </td>
                                     </tr>
                                 <?php
@@ -468,7 +460,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </td>
                                     <td>
                                         <?php
-                                        $file =  $this->mirror_url . $this->lang .'/'. $image_number . '.png';
+                                        $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
                                         $file_headers = @get_headers($file);
                                         if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
                                             echo '&#10060;';
@@ -488,6 +480,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </div>
         </div>
         <script>
+            window.language_urls = [];
+            <?php
+
+            ?>
             function isValidHttpUrl(string) {
               let url;
 
@@ -508,9 +504,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
+        $language = $zume_languages[$this->language_code];
         $en_list = list_zume_pieces( 'en' );
-        $lang_list = list_zume_pieces( $lang['code'] );
+        $language_list = list_zume_pieces( $language['code'] );
 
         $list = [];
 
@@ -524,7 +520,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         foreach( $en_list as $i => $v ) {
             $list[$v['zume_piece']]['en'] = $v;
         }
-        foreach( $lang_list as $i => $v ) {
+        foreach( $language_list as $i => $v ) {
             $list[$v['zume_piece']]['lang'] = $v;
         }
         ?>
@@ -537,7 +533,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 ENGLISH
                             </th>
                             <th colspan="2">
-                                <span style="text-transform:uppercase;"><?php echo $lang['name'] ?></span>
+                                <span style="text-transform:uppercase;"><?php echo $language['name'] ?></span>
                             </th>
                         </tr>
                     </thead>
@@ -561,7 +557,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 </td>
                                 <td>
                                     <strong><?php echo $item['lang']['post_title'] ?? ''; ?></strong><br>
-                                    <a href="<?php echo trailingslashit( site_url() ) . $lang['code'] . '/' . $item['lang']['post_name'] ?>" target="_blank"><?php echo trailingslashit( site_url() ) . $lang['code'] . '/' . $item['lang']['post_name'] ?></a>
+                                    <a href="<?php echo trailingslashit( site_url() ) . $language['code'] . '/' . $item['lang']['post_name'] ?>" target="_blank"><?php echo trailingslashit( site_url() ) . $language['code'] . '/' . $item['lang']['post_name'] ?></a>
                                 </td>
                                 <td></td>
                             </tr>
@@ -703,9 +699,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         $languages = zume_languages();
-        $language = $languages[$this->lang];
+        $language = $languages[$this->language_code];
         $messages_english = $this->query_emails( 'en' );
-        $messages_other_language = $this->query_emails( $this->lang );
+        $messages_other_language = $this->query_emails( $this->language_code );
 
         ob_start();
         foreach( $messages_english as $pid => $message ) {
@@ -718,11 +714,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <?php echo $messages_english[$pid]['subject'] ?? '' ?><br>
                 </td>
                 <td>
-                    <input type="text" class="subject_<?php echo $this->lang ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['subject'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
+                    <input type="text" class="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['subject'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
                 </td>
                 <td>
-                    <button class="button save_emails" data-target="subject_<?php echo $this->lang ?>_<?php echo $pid ?>" data-key="subject_<?php echo $this->lang ?>" data-post="<?php echo $pid ?>" >Save</button>
-                    <br><span class="loading-spinner subject_<?php echo $this->lang ?>_<?php echo $pid ?>"></span>
+                    <button class="button save_emails" data-target="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="subject_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
+                    <br><span class="loading-spinner subject_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
                 </td>
             </tr>
             <tr>
@@ -733,11 +729,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <?php echo $messages_english[$pid]['body'] ?? '' ?><br>
                 </td>
                 <td>
-                    <textarea id="body_<?php echo $this->lang ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['body'] ?? '' ?></textarea>
+                    <textarea id="body_<?php echo $this->language_code ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['body'] ?? '' ?></textarea>
                 </td>
                 <td>
-                    <button class="button save" data-target="body_<?php echo $this->lang ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="body_<?php echo $this->lang ?>" >Save</button>
-                    <br><span class="loading-spinner body_<?php echo $this->lang ?>_<?php echo $pid ?>"></span>
+                    <button class="button save" data-target="body_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="body_<?php echo $this->language_code ?>" >Save</button>
+                    <br><span class="loading-spinner body_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
                 </td>
             </tr>
             <?php
@@ -876,9 +872,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
         global $wpdb;
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
+        $language = $zume_languages[$this->language_code];
         $en_list = list_zume_scripts( 'en' );
-        $lang_list = list_zume_scripts( $lang['code'] );
+        $language_list = list_zume_scripts( $language['code'] );
         $fields = Zume_PDF_DOwnload_Post_Type::instance()->get_custom_fields_settings();
 
         $list = [];
@@ -894,7 +890,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         foreach( $en_list as $i => $v ) {
             $list[$v['script_id']]['en'] = $v;
         }
-        foreach( $lang_list as $i => $v ) {
+        foreach( $language_list as $i => $v ) {
             $list[$v['script_id']]['lang'] = $v;
         }
         ?>
@@ -907,7 +903,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 ENGLISH
                             </th>
                             <th>
-                                <span style="text-transform:uppercase;"><?php echo $lang['name'] ?></span>
+                                <span style="text-transform:uppercase;"><?php echo $language['name'] ?></span>
                             </th>
                             <th></th>
                         </tr>
@@ -1001,9 +997,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public function view_course() {
 
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
+        $language = $zume_languages[$this->language_code];
         //load the new text domain
-        $new_language = $lang['locale'];
+        $new_language = $language['locale'];
         load_textdomain( 'zume', plugin_dir_path(__DIR__) .'/zume-'.$new_language.'.mo' );
 
         ?>
@@ -1091,7 +1087,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         if ( isset( $_GET['type'], $_GET['session'] ) ) {
 
             // get the slides for the schedule and session
-            $build = zume_course_builder( $_GET['type'], $_GET['session'], $lang['code'] );
+            $build = zume_course_builder( $_GET['type'], $_GET['session'], $language['code'] );
 
             foreach( $build as $slide ) {
 
@@ -1173,7 +1169,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     2767 => 'set_b_20', // 20 session 20
                 ];
                 foreach( $list as $i => $v ) {
-                    $url = site_url() . '/zume_app/qr/?l='.$this->lang. '&c='. $i;
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>Code: '. $i . ' for ' . $v . '</td>';
@@ -1219,7 +1215,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ];
                 foreach( $activities as $item ) {
 //                    dt_write_log( $item );
-                    $url = site_url() . '/zume_app/qr/?l='.$this->lang.'&a='.$item;
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code.'&a='.$item;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item . '</td>';
@@ -1246,7 +1242,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 $training_items = zume_training_items();
                 foreach( $training_items as $item ) {
                     $id =  intval( $item['key'] );
-                    $url = site_url() . '/zume_app/qr/?l='.$this->lang. '&v='. $id;
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item['title'] . '</td>';
@@ -1262,7 +1258,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function strings() {
         $zume_languages = zume_languages();
-        $lang = $zume_languages[$this->lang];
+        $language = $zume_languages[$this->language_code];
         $string_count = 0;
         $missing_count = 0;
         $already_translated = [];
@@ -1301,7 +1297,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <tr>
                     <th>Line</th>
                     <th>English</th>
-                    <th><?php echo $lang['name'] ?></th>
+                    <th><?php echo $language['name'] ?></th>
                 </tr>
             </thead>
             <tbody>
@@ -1312,7 +1308,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
     public function get_translation_strings() {
         $languages = zume_languages();
-        $locale = $languages[$this->lang]['locale'];
+        $locale = $languages[$this->language_code]['locale'];
         $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
         if ( ! file_exists( $locale_file ) ) {
             echo 'No translation file found';
@@ -1346,9 +1342,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
 Zume_Training_Translator::instance();
 
 if ( ! function_exists( 'list_zume_pieces' ) ) {
-    function list_zume_pieces( $lang_code ) {
+    function list_zume_pieces( $language_code ) {
         global $wpdb, $table_prefix;
-        $term_id = get_term_id_by_lang_code( $lang_code );
+        $term_id = get_term_id_by_lang_code( $language_code );
 
         $sql = $wpdb->prepare( "SELECT p.*, pm.meta_value as zume_piece, pm2.meta_value as zume_piece_h1, pm3.meta_value as zume_pre_video_content, pm4.meta_value as zume_post_video_content, pm5.meta_value as zume_ask_content
                 FROM {$table_prefix}posts p
@@ -1369,7 +1365,7 @@ if ( ! function_exists( 'list_zume_pieces' ) ) {
     }
 }
 if ( ! function_exists( 'list_zume_downloads' ) ) {
-    function list_zume_downloads( $lang_code ) {
+    function list_zume_downloads( $language_code ) {
         global $wpdb;
 
         $sql = $wpdb->prepare( "SELECT p.post_title, pm.meta_key, pm.meta_value
@@ -1378,7 +1374,7 @@ if ( ! function_exists( 'list_zume_downloads' ) ) {
                 WHERE p.post_title = %s
                 AND p.post_type = 'zume_download'
                 AND SUBSTRING( pm.meta_key, 1, 2) > 30 AND SUBSTRING( pm.meta_key, 1, 2) < 65;",
-            $lang_code );
+            $language_code );
         $results = $wpdb->get_results( $sql, ARRAY_A );
         if ( empty( $results ) || is_wp_error( $results ) ) {
             return [];
@@ -1391,7 +1387,7 @@ if ( ! function_exists( 'list_zume_downloads' ) ) {
     }
 }
 if ( ! function_exists( 'list_zume_scripts' ) ) {
-    function list_zume_scripts( $lang_code ) {
+    function list_zume_scripts( $language_code ) {
         global $wpdb;
 
         $sql = $wpdb->prepare( "SELECT p.post_title, pm.post_id, SUBSTRING( pm.meta_key, 1, 2) as script_id, pm.meta_value as content
@@ -1399,7 +1395,7 @@ if ( ! function_exists( 'list_zume_scripts' ) ) {
                             JOIN zume_postmeta pm ON pm.post_id=p.ID
                             WHERE p.post_type = 'zume_download'
                             AND pm.meta_key LIKE '%_script'
-                            AND p.post_title = %s;", $lang_code );
+                            AND p.post_title = %s;", $language_code );
 
             $results = $wpdb->get_results( $sql, ARRAY_A );
         if ( empty( $results ) || is_wp_error( $results ) ) {
@@ -1409,7 +1405,7 @@ if ( ! function_exists( 'list_zume_scripts' ) ) {
     }
 }
 if ( ! function_exists( 'list_zume_videos' ) ) {
-    function list_zume_videos( $lang_code ) {
+    function list_zume_videos( $language_code ) {
         global $wpdb;
         $sql = $wpdb->prepare( "SELECT p.post_title, pm.meta_key, pm.meta_value
                 FROM zume_posts p
@@ -1419,7 +1415,7 @@ if ( ! function_exists( 'list_zume_videos' ) ) {
 				AND pm.meta_key != '_edit_last'
 				AND pm.meta_key != '_edit_modified'
 				AND pm.meta_key != '_edit_lock';",
-            $lang_code );
+            $language_code );
         $results = $wpdb->get_results( $sql, ARRAY_A );
         if ( empty( $results ) || is_wp_error( $results ) ) {
             return [];
@@ -1433,12 +1429,12 @@ if ( ! function_exists( 'list_zume_videos' ) ) {
 }
 
 if ( ! function_exists('get_term_id_by_lang_code') ) {
-    function get_term_id_by_lang_code( $lang_code ) {
+    function get_term_id_by_lang_code( $language_code ) {
         global $wpdb, $table_prefix;
         $sql = $wpdb->prepare( "SELECT tt.term_taxonomy_id
                 FROM {$table_prefix}terms t
                 JOIN {$table_prefix}term_taxonomy tt ON tt.term_id = t.term_id
-                WHERE t.slug = %s AND tt.taxonomy = 'language';", $lang_code );
+                WHERE t.slug = %s AND tt.taxonomy = 'language';", $language_code );
         $result = $wpdb->get_var( $sql );
         if ( empty( $result ) || is_wp_error( $result ) ) {
             return false;

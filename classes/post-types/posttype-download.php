@@ -500,7 +500,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['35'] = array(
             'name'        => '(35) Disciples and the Church',
@@ -514,7 +514,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['36'] = array(
             'name'        => '(36) Spiritual Breathing Script',
@@ -528,7 +528,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['37'] = array(
             'name'        => '(37) S.O.A.P.S. Script',
@@ -542,7 +542,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['38'] = array(
             'name'        => '(38) Accountability Groups Script',
@@ -556,7 +556,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['39'] = array(
             'name'        => '(39) Producers vs Consumers Script',
@@ -570,7 +570,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['40'] = array(
             'name'        => '(40) Prayer Cycle Script',
@@ -584,7 +584,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['41'] = array(
             'name'        => '(41) List of 100 Script',
@@ -598,7 +598,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['42'] = array(
             'name'        => '(42) Spiritual Economy Script',
@@ -612,7 +612,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['43'] = array(
             'name'        => '(43) The Gospel Script',
@@ -626,7 +626,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['44'] = array(
             'name'        => '(44) Baptism Script',
@@ -640,7 +640,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['45'] = array(
             'name'        => '(45) 3 Minute Testimony Script',
@@ -654,7 +654,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['46'] = array(
             'name'        => '(46) Greatest Blessing Script',
@@ -668,7 +668,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['47'] = array(
             'name'        => '(47) Duckling Discipleship Script',
@@ -682,7 +682,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['48'] = array(
             'name'        => '(48) Eyes to See Script',
@@ -696,7 +696,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['49'] = array(
             'name'        => '(49) Lord’s Supper Script',
@@ -710,7 +710,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['50'] = array(
             'name'        => '(50) Prayer Walking Script',
@@ -724,7 +724,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['51'] = array(
             'name'        => '(51) Person of Peace Script',
@@ -738,7 +738,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['52'] = array(
             'name'        => '(52) Faithfulness Script',
@@ -752,7 +752,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['53'] = array(
             'name'        => '(53) 3/3 Groups Script',
@@ -766,7 +766,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['54'] = array(
             'name'        => '(54) Training Cycle Script',
@@ -780,7 +780,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['55'] = array(
             'name'        => '(55) Leadership Cells Script',
@@ -794,7 +794,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['56'] = array(
             'name'        => '(56) Non-Sequential Script',
@@ -808,7 +808,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['57'] = array(
             'name'        => '(57) Pace Script',
@@ -822,7 +822,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['58'] = array(
             'name'        => '(58) Part of Two Churches Script',
@@ -836,7 +836,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
 //        $fields['59'] = array(
 //            'name'        => '(59) Completion of Training Script',
@@ -864,7 +864,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['61'] = array(
             'name'        => '(61) Leadership in Networks Script',
@@ -878,7 +878,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
         $fields['62'] = array(
             'name'        => '(62) Peer Mentoring Script',
@@ -892,7 +892,7 @@ class Zume_PDF_Download_Post_Type
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',
-            'section'     => 'downloads',
+            'section'     => 'script',
         );
 
         /* Full links to files */
@@ -906,7 +906,7 @@ class Zume_PDF_Download_Post_Type
 
 
         return apply_filters( 'zume_pdf_download_fields_settings', $fields );
-    } // End get_custom_fields_settings()
+    }
 
     /**
      * Run on activation.
