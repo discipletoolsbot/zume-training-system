@@ -54,8 +54,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
         31 => 20762, // four fields tool
         32 => 20763, // generation mapping
     ];
-    public $video_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,31,32];
-    public $pieces_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30];
+    public $video_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29];
+    public $pieces_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,31,32];
     public $script_list = [1=>34,2=>35,3=>36,4=>37,5=>38,6=>39,7=>40,8=>41,9=>42,
                             10=>43,11=>44,12=>45,13=>46,14=>47,15=>48,16=>49,17=>50,18=>51,19=>52,
                             21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,
@@ -334,35 +334,28 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $language = $this->language;
 
         $training_items = zume_training_items();
+        $video_titles = array_column( $training_items, 'title', 'key' );
         $script_titles = array_column( $training_items, 'title', 'script' );
+        $video_to_script = array_filter( array_column( $training_items, 'script', 'key' ) );
+        dt_write_log( $video_to_script );
+
         $downloads = list_zume_downloads( $this->language_code );
         $videos = list_zume_videos( $this->language_code );
         $pieces_list = list_zume_pieces( $language['code'] );
 
-        $string_count = 0;
-        $missing_count = 0;
-        $already_translated = [];
-        $strings = $this->get_translation_strings();
 
-        if ( ! empty( $strings ) ) {
-            foreach( $strings as $file => $array ) {
-                foreach( $array as $trans ) {
-                    if ( in_array( $trans['original'], $already_translated ) ) {
-                        continue;
-                    }
-                    $already_translated[] = $trans['original'];
-                    $string_count++;
-                    if ( empty( $trans['translation'] ) ) {
-                        $missing_count++;
-                    }
-                }
-            }
-        }
+        dt_write_log( $downloads );
+
+        /**
+        * Template for the status tab
+        */
         ?>
         <div class="grid-x grid-padding-x">
             <div class="cell">
                 <table style="vertical-align: text-top;">
                     <tbody>
+
+                        <!-- PO STRINGS -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
                                 PO STRINGS <?php echo $language['name'] ?>
@@ -370,18 +363,45 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         </tr>
                          <tr>
                             <td>
-                                <strong>Total Strings:</strong> <?php echo $string_count; ?><br>
-                                <strong style="color:red;">Missing Strings:</strong> <?php echo $missing_count; ?>
+                                <?php
+                                    $filename = plugin_dir_path(__DIR__) . '/zume-' . $language['locale'] . '.po';
+                                    $string_count = 0;
+                                    $missing_count = 0;
+                                    $already_translated = [];
+                                    $strings = $this->get_translation_strings();
+                                    if ( ! empty( $strings ) ) {
+                                        foreach( $strings as $file => $array ) {
+                                            foreach( $array as $trans ) {
+                                                if ( in_array( $trans['original'], $already_translated ) ) {
+                                                    continue;
+                                                }
+                                                $already_translated[] = $trans['original'];
+                                                $string_count++;
+                                                if ( empty( $trans['translation'] ) ) {
+                                                    $missing_count++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    if (file_exists($filename)) {
+                                        ?>
+                                        <strong>Total Strings:</strong> <?php echo $string_count; ?><br>
+                                        <strong style="color:red;">Missing Strings:</strong> <?php echo $missing_count; ?>
+                                        <?php
+                                    }
+                                ?>
                             </td>
                             <td>
                                 <?php
-                                $filename = plugin_dir_path(__DIR__) . '/zume-' . $language['locale'] . '.po';
                                 if (file_exists($filename)) {
                                     echo 'PO file last modified: ' . gmdate("F d, Y H:i:s.", filemtime($filename));
                                 }
                                 ?>
                             </td>
                         </tr>
+
+
+                        <!-- PIECES -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
                                 PIECES
@@ -395,14 +415,20 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
                                 </td>
                                 <td>
-                                     zume_piece_h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | zume_pre_video_content <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | zume_post_video_content <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Title h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Pre-Video <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Post-Video <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Ask <?php echo empty( $item['zume_ask_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | SEO Meta Description <?php echo empty( $item['zume_seo_meta_description'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
                             </tr>
                             <?php
                         }
                         ?>
+
+
+
+                        <!-- EMAILS -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2">
                                 EMAILS
@@ -420,35 +446,37 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                         subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
                                         | body <?php echo empty( $message['body'] ) ? '&#10060;' : '&#9989;' ?>
                                     </td>
+                                </tr>
                         <?php } ?>
 
+
+
+                        <!-- VIDEO ASSETS -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2">
                                 VIDEO ASSETS
                             </th>
                         </tr>
                         <?php
-
-                            foreach( $training_items as $x => $item ) {
-                                  if ( in_array( $item['key']  , [ 20, 27 ] ) ) {
-                                      continue;
-                                  }
+                            foreach( $this->video_list as $video_id ) {
                                   ?>
                                     <tr>
                                         <td>
-                                            <strong><?php echo $item['title'] ?> (<?php echo $item['key'] . ' | ' . $item['script'] ?>)</strong>
+                                            <strong><?php echo $training_items[$video_id]['title'] ?> (<?php echo $video_id . ' | ' . $item['script'] ?>)</strong>
                                         </td>
                                         <td>
-                                            Vimeo video <?php echo empty( $videos[intval( $item['key'] )] ) ? '&#10060;' : '&#9989;' ; ?> |
-                                            MP4 video ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($item['key']) . '.mp4' ?>">mp4</a> ) <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?> |
-                                            DB Script <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?> |
-                                            PDF Script ( <a href="<?php echo $this->mirror_url . $this->language_code . '/' . $downloads[$item['script']] ; ?>">pdf</a> ) <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;' ; ?>
+                                            Vimeo video  <?php echo empty( $videos[intval( $training_items[$video_id]['key'] )] ) ? '&#10060;' : '&#9989;' ; ?>
+                                            | MP4 video ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($training_items[$video_id]['key']) . '.mp4' ?>">mp4</a> )
+                                            | DB Script <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
+                                            | PDF Script ( <a href="<?php echo $this->mirror_url . $this->language_code . '/'  ; ?>">pdf</a> )
                                         </td>
                                     </tr>
                                 <?php
                             }
                         ?>
 
+
+                        <!-- IMAGES -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2">
                                 IMAGES
@@ -479,26 +507,18 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             <?php
                             }
                         ?>
+
+
                     </tbody>
                 </table>
             </div>
         </div>
         <script>
-            window.language_urls = [];
-            <?php
+            jQuery(document).ready(function() {
+                // jQuery('.loading-spinner').removeClass('active');
 
-            ?>
-            function isValidHttpUrl(string) {
-              let url;
 
-              try {
-                url = new URL(string);
-              } catch (_) {
-                return false;
-              }
-
-              return url.protocol === "http:" || url.protocol === "https:";
-            }
+            });
         </script>
         <?php
     }

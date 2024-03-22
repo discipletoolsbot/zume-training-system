@@ -111,6 +111,7 @@ class Zume_Training_Pieces_Post_Type
         <h3>Piece Title (override) for the &lt;h1&gt;</h3>
         <input name="zume_piece_h1" class="regular-text" id="zume_piece_h1" value="<?php echo esc_html( isset( $values['zume_piece_h1'] ) ? $values['zume_piece_h1'][0] : '' ) ?>" /><br><br>
         <hr>
+
         <h3>Pre-Video Content</h3>
         <?php
         $content = isset( $values['zume_pre_video_content'] ) ? $values['zume_pre_video_content'][0] : '';
@@ -127,6 +128,12 @@ class Zume_Training_Pieces_Post_Type
         <?php
         $content = isset( $values['zume_ask_content'] ) ? $values['zume_ask_content'][0] : '';
         wp_editor( $content, 'zume_ask_content', array( 'media_buttons' => true ) );
+
+        ?>
+        <h3>SEO Meta Description</h3>
+        <?php
+        $content = isset( $values['zume_seo_meta_description'] ) ? $values['zume_seo_meta_description'][0] : '';
+        wp_editor( $content, 'zume_seo_meta_description', array( 'media_buttons' => true ) );
     }
 
 
@@ -173,6 +180,10 @@ class Zume_Training_Pieces_Post_Type
         if ( isset( $_POST['zume_ask_content'] ) ) {
             $my_data = wp_kses_post( wp_unslash( $_POST['zume_ask_content'] ) );
             update_post_meta( $post_id, 'zume_ask_content', $my_data );
+        }
+        if ( isset( $_POST['zume_seo_meta_description'] ) ) {
+            $my_data = wp_kses_post( wp_unslash( $_POST['zume_seo_meta_description'] ) );
+            update_post_meta( $post_id, 'zume_seo_meta_description', $my_data );
         }
 
     }
