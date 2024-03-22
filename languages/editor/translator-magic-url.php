@@ -384,9 +384,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             <th colspan="2" style="text-transform:uppercase;">
                                 PIECES
                             </th>
-                            <th>
-
-                            </th>
                         </tr>
                         <?php
                         foreach( $lang_list as $item ) {
