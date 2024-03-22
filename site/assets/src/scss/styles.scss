@@ -690,6 +690,9 @@ a, a:visited {
   width: 100%;
   text-align: center;
 }
+.share-list__wrapper {
+  background-color: color('gray-200');
+}
 
 @media (min-width: $break-lg) {
 

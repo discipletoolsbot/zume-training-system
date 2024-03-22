@@ -1851,13 +1851,13 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
         `}createRenderRoot(){return this}}customElements.define("share-links",Es);class Cs extends g{constructor(){super();S(this,"sortAlphabetically",(t,s)=>t.page_title<s.page_title?-1:1);S(this,"sortByKey",(t,s)=>Number(t.key)<Number(s.key)?-1:1);this.items=zumeShare.share_items,this.filterType="all"}static get properties(){return{items:{type:Array,attribute:!1},filterType:{type:String,attribute:!1},isSortedAlphabetically:{type:Boolean,attribute:!1}}}filterItems(t){this.filterType=t,this.items=this.sortItems(zumeShare.share_items.filter(({type:s})=>t==="all"?!0:s===t))}toggleSorting(){this.isSortedAlphabetically=!this.isSortedAlphabetically,this.items=this.sortItems(this.items)}sortItems(t){return t.sort((s,n)=>this.isSortedAlphabetically?this.sortAlphabetically(s,n):this.sortByKey(s,n))}renderListItem({page_url:t,page_title:s,type:n,description:r}){return o`
             <li class="share-cards" data-type=${n}>
                 <div class="stack | share card">
-                    <a class="f-0 bold mt-0" href=${t}>
+                    <a class="f-1 bold mt-0" href=${t}>
                         ${s}
                     </a>
-                    <p class="f--1 s--5 show-for-large">
+                    <p class="f--1 show-for-large">
                         ${r}
                     </p>
-                    <div class="center">
+                    <div class="fit-content ms-auto">
                         <share-links
                             url=${t}
                             title=${s}
@@ -1867,48 +1867,50 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </div>
             </li>
         `}render(){return o`
-            <div class="filter-area d-flex align-items-center justify-flex-end">
-                <button
-                    class="icon-btn f-2 ${this.isSortedAlphabetically?"bg-brand-fade":""}"
-                    @click=${this.toggleSorting}
-                >
-                    <span class="visually-hidden">${zumeShare.translations.sort}</span>
-                    <svg class="w-2rem brand-light" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12.93 2.65c-.2-.2-.51-.2-.71 0l-2.01 2.01h4.72zm-.7 18.7c.2.2.51.2.71 0l1.98-1.98h-4.66zm-1.25-3.62c.6 0 1.01-.6.79-1.16L8.04 7.03c-.18-.46-.63-.76-1.12-.76-.49 0-.94.3-1.12.76l-3.74 9.53c-.22.56.19 1.16.79 1.16.35 0 .67-.22.8-.55l.71-1.9h5.11l.71 1.9c.13.34.45.56.8.56m-6.01-4.09 1.94-5.18 1.94 5.18zm16.08 2.5h-5.33l5.72-8.29c.46-.66-.02-1.57-.82-1.57h-6.48c-.44 0-.79.36-.79.8v.01c0 .44.36.8.79.8h5.09l-5.73 8.28c-.46.66.02 1.57.82 1.57h6.72c.44 0 .79-.36.79-.79.02-.45-.34-.81-.78-.81"></path></svg>
-                </button>
-                <button class="icon-btn f-2" data-toggle="filter-menu">
-                    <span class="visually-hidden">${zumeShare.translations.filter}</span>
-                    <span class="icon zume-filter brand-light" aria-hidden="true"></span>
-                </button>
+            <div class="container-xsm">
+                <div class="filter-area d-flex align-items-center justify-flex-end">
+                    <button
+                        class="icon-btn f-2 ${this.isSortedAlphabetically?"bg-brand-fade":""}"
+                        @click=${this.toggleSorting}
+                    >
+                        <span class="visually-hidden">${zumeShare.translations.sort}</span>
+                        <svg class="w-2rem brand-light" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12.93 2.65c-.2-.2-.51-.2-.71 0l-2.01 2.01h4.72zm-.7 18.7c.2.2.51.2.71 0l1.98-1.98h-4.66zm-1.25-3.62c.6 0 1.01-.6.79-1.16L8.04 7.03c-.18-.46-.63-.76-1.12-.76-.49 0-.94.3-1.12.76l-3.74 9.53c-.22.56.19 1.16.79 1.16.35 0 .67-.22.8-.55l.71-1.9h5.11l.71 1.9c.13.34.45.56.8.56m-6.01-4.09 1.94-5.18 1.94 5.18zm16.08 2.5h-5.33l5.72-8.29c.46-.66-.02-1.57-.82-1.57h-6.48c-.44 0-.79.36-.79.8v.01c0 .44.36.8.79.8h5.09l-5.73 8.28c-.46.66.02 1.57.82 1.57h6.72c.44 0 .79-.36.79-.79.02-.45-.34-.81-.78-.81"></path></svg>
+                    </button>
+                    <button class="icon-btn f-2" data-toggle="filter-menu">
+                        <span class="visually-hidden">${zumeShare.translations.filter}</span>
+                        <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="center" data-close-on-click="true" data-close-on-click-inside="true">
+                    <ul>
+                        <li>
+                            <button
+                                class="menu-btn w-100 filter-button ${this.filterType==="all"?"selected":""}"
+                                @click=${()=>this.filterItems("all")}
+                            >
+                                ${zumeShare.translations.all}
+                            </button>
+                            <button
+                                class="menu-btn w-100 filter-button ${this.filterType==="tool"?"selected":""}"
+                                @click=${()=>this.filterItems("tool")}
+                            >
+                                ${zumeShare.translations.tools}
+                            </button>
+                            <button
+                                class="menu-btn w-100 filter-button ${this.filterType==="concept"?"selected":""}"
+                                @click=${()=>this.filterItems("concept")}
+                            >
+                                ${zumeShare.translations.concepts}
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="share-list__wrapper">
+                    <ul class="stack container-sm | mt-0">
+                        ${J(this.items,t=>t.key,this.renderListItem)}
+                    </ul>
+                </div>
             </div>
-            <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="center" data-close-on-click="true" data-close-on-click-inside="true">
-                <ul>
-                    <li>
-                        <button
-                            class="menu-btn w-100 filter-button ${this.filterType==="all"?"selected":""}"
-                            @click=${()=>this.filterItems("all")}
-                        >
-                            ${zumeShare.translations.all}
-                        </button>
-                        <button
-                            class="menu-btn w-100 filter-button ${this.filterType==="tool"?"selected":""}"
-                            @click=${()=>this.filterItems("tool")}
-                        >
-                            ${zumeShare.translations.tools}
-                        </button>
-                        <button
-                            class="menu-btn w-100 filter-button ${this.filterType==="concept"?"selected":""}"
-                            @click=${()=>this.filterItems("concept")}
-                        >
-                            ${zumeShare.translations.concepts}
-                        </button>
-                    </li>
-                </ul>
-            </div>
-            <ul class="stack container-sm | mt-0">
-
-                ${J(this.items,t=>t.key,this.renderListItem)}
-
-            </ul>
         `}createRenderRoot(){return this}}customElements.define("share-list",Cs);class Os extends g{static get properties(){return{t:{type:Object},joinLink:{type:String},loading:{attribute:!1},posts:{attribute:!1}}}constructor(){super(),this.loading=!0,this.plans=[],this.getTrainings(),this.renderRow=this.renderRow.bind(this)}getTrainings(){makeRequest("POST","public_plans",{},"zume_system/v1").then(e=>{this.plans=e}).catch(e=>{console.log(e)}).always(()=>{this.loading=!1})}render(){return this.loading?o`<span class="loading-spinner active"></span>`:o`
             <table>
                 <thead>
@@ -2022,4 +2024,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",Ps);
-//# sourceMappingURL=main-6401d1ec.js.map
+//# sourceMappingURL=main-72f33378.js.map
