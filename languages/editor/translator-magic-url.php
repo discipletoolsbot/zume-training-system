@@ -334,17 +334,15 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $language = $this->language;
 
         $training_items = zume_training_items();
-        $video_titles = array_column( $training_items, 'title', 'key' );
+        $video_titles = array_column( $training_items, 'title', 'key_int' );
         $script_titles = array_column( $training_items, 'title', 'script' );
-        $video_to_script = array_filter( array_column( $training_items, 'script', 'key' ) );
-        dt_write_log( $video_to_script );
+        $video_to_script = array_filter( array_column( $training_items, 'script', 'key_int' ) );
+
 
         $downloads = list_zume_downloads( $this->language_code );
         $videos = list_zume_videos( $this->language_code );
         $pieces_list = list_zume_pieces( $language['code'] );
 
-
-        dt_write_log( $downloads );
 
         /**
         * Template for the status tab
@@ -466,9 +464,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                         </td>
                                         <td>
                                             Vimeo video  <?php echo empty( $videos[intval( $training_items[$video_id]['key'] )] ) ? '&#10060;' : '&#9989;' ; ?>
-                                            | MP4 video ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($training_items[$video_id]['key']) . '.mp4' ?>">mp4</a> )
                                             | DB Script <?php echo empty( $downloads[$item['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
-                                            | PDF Script ( <a href="<?php echo $this->mirror_url . $this->language_code . '/'  ; ?>">pdf</a> )
+                                            | MP4 ( <a href="<?php echo $this->mirror_url .  $this->language_code . '/' . intval($training_items[$video_id]['key_int']) . '.mp4' ?>">mp4</a> )
+                                            | PDF ( <a href="<?php echo $this->mirror_url . $this->language_code . '/'  ; ?>">pdf</a> )
                                         </td>
                                     </tr>
                                 <?php
