@@ -10,6 +10,40 @@
 .dashboard__sidebar {
     grid-area: sidebar;
     border-inline-end: 2px solid var(--border-color-main);
+
+    .footer-links {
+        margin-top: spacing(0);
+
+        a {
+            padding: 0;
+            font-size: font-size(-1);
+            font-weight: 500;
+        }
+    }
+}
+
+.profile-area {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    margin-block-end: spacing(1);
+}
+.profile-btn {
+    border-radius: 100px;
+    border: 3px solid color('brand-light');
+    background-color: color('brand');
+    color: color('white');
+    aspect-ratio: 1;
+    font-size: font-size(2);
+    font-weight: bold;
+    line-height: 1;
+    width: fit-content;
+    margin-inline: auto;
+    padding: var(--s-1);
+}
+.profile-name {
+    font-size: font-size(-2);
+    text-align: center;
 }
 
 dash-sidebar-toggle {
@@ -105,6 +139,10 @@ dash-header-right {
 
     & .icon {
         color: color('brand-light');
+    }
+
+    & button[disabled] .icon {
+        color: color('disabled');
     }
 
     & > * {

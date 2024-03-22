@@ -8,7 +8,7 @@ export class NavLink extends navigator(LitElement) {
             class: { type: String },
             locked: { type: Boolean },
             completed: { type: Boolean },
-            directLink: { type: Boolean },
+            disableNavigate: { type: Boolean },
             icon: { type: String },
             text: { type: String },
             explanation: { type: String },
@@ -24,11 +24,11 @@ export class NavLink extends navigator(LitElement) {
         this.explanation = ''
         this.locked = false
         this.completed = false
-        this.directLink = false
+        this.disableNavigate = false
     }
 
     handleClick(event) {
-        if ( !this.directLink ) {
+        if ( !this.disableNavigate ) {
             event.preventDefault()
             this.navigate(this.href)
         }

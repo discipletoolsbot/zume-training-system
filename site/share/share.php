@@ -154,32 +154,33 @@ class Zume_Training_Share extends Zume_Magic_Page
                 <p>
                     <?php echo esc_html__( 'When we are faithful to obey and share what the Lord has shared with us, then he promises to share even more.', 'zume' ) ?>
                 </p>
-
-                <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $current_language ) ): ?>
-
-                    <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
-
-                <?php else: ?>
-
-                    <share-list></share-list>
-
-                <?php endif; ?>
-
             </div>
+        </div>
+
+        <div class="share-list__wrapper | py-1">
+            <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $current_language ) ): ?>
+
+                <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
+
+            <?php else : ?>
+
+                <share-list></share-list>
+
+            <?php endif; ?>
+
 
             <noscript>
-                <ul class="stack container-sm">
+                <ul class="stack container-xsm">
                     <?php foreach ( $share_items as $item ): ?>
-
                         <li class="share-cards">
                             <div class="stack | share card">
-                                <a class="f-0 bold" href="<?php echo esc_url( $item['page_url'] ) ?>">
+                                <a class="f-1 bold" href="<?php echo esc_url( $item['page_url'] ) ?>">
                                     <?php echo esc_html( $item['page_title'] ) ?>
                                 </a>
-                                <p class="f--1 s--5 show-for-large">
+                                <p class="f--1 show-for-large">
                                     <?php echo esc_html( $item['description'] ) ?>
                                 </p>
-                                <div class="center">
+                                <div class="fit-content ms-auto">
                                     <div class="stack--2">
                                         <p><?php echo esc_html( $share_translations['copy_and_share_text'] ) ?></p>
                                         <p><code style="overflow-wrap: anywhere"><?php echo esc_url( $item['page_url'] ) ?></code></p>
@@ -187,7 +188,6 @@ class Zume_Training_Share extends Zume_Magic_Page
                                 </div>
                             </div>
                         </li>
-
                     <?php endforeach; ?>
                 </ul>
             </noscript>

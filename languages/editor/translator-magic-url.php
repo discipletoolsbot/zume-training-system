@@ -185,6 +185,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     window.location.href = new_url;
                 } )
             });
+            const jsObject = [<?php echo json_encode([
+                'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . 'assets/images' ),
+            ]) ?>][0]
+
         </script>
 
         <?php

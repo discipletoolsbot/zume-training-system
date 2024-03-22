@@ -2,10 +2,11 @@ export const ZumeWizards = {
     gettingStarted: 'getting-started',
     makeAGroup: 'make-a-group',
     getACoach: 'get-a-coach',
-    joinAPlan: 'join-a-training',
+    joinATraining: 'join-a-training',
     connectWithFriend: 'connect-with-friend',
     joinFriendsPlan: 'join-friends-training',
     checkin: 'checkin',
+    setProfile: 'set-profile',
 }
 export const ZumeWizardModules = {
     completeProfile: 'completeProfile',

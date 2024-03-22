@@ -57,6 +57,8 @@ export class DashPage extends LitElement {
 
     disconnectedCallback() {
         super.disconnectedCallback()
-        this.resizeObserver.disconnect()
+        if (this.resizeObserver) {
+            this.resizeObserver.disconnect()
+        }
     }
 }

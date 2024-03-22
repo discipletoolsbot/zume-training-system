@@ -282,7 +282,7 @@ export class CoursePresenter extends LitElement {
                 ` : ''
             }
 
-            <nav class="${hiddenClass} stack | bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+            <nav class="stack | bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <div class="stack">
                     <!-- Close button -->
                     <button class="close-button" aria-label="Close menu" type="button" data-close>
@@ -347,13 +347,13 @@ export class CoursePresenter extends LitElement {
                 </div>
             </nav>
 
-            <span class="${hiddenClass} p-1 d-block absolute top z-1">
+            <span class="p-1 d-block fixed top z-1">
                 <button id="hamburger-menu" class="nav-toggle show" @click=${this.openMenu}>
                     <span class="hamburger brand"></span>
                 </button>
             </span>
 
-            <div class="${hiddenClass}">
+            <div class="">
                 ${
                     this.view === 'guide'
                     ? html`<course-guide .sections=${this.getSessionSections()}></course-guide>`

@@ -24,7 +24,7 @@ function submitProfileForm(e) {
       preferred_language,
     }
 
-    data.location_grid_meta = getLocationGridFromMapbox(zumeProfile.mapbox_selected_id, zumeProfile.profile.location)
+    data.location_grid_meta = getLocationGridFromMapbox(jsObject.mapbox_selected_id, jsObject.profile.location)
 
     /* start loading spinner */
     const submitButton = document.querySelector('#submit-profile')
@@ -34,11 +34,11 @@ function submitProfileForm(e) {
     loadingSpinner.classList.add('active')
 
     /* submit data to profile API endpoint */
-    fetch( zumeProfile.rest_endpoint + '/profile', {
+    fetch( jsObject.rest_endpoint + '/profile', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
-            'X-WP-Nonce': zumeProfile.nonce
+            'X-WP-Nonce': jsObject.nonce
         }
     } )
     .then((response) => response.json())
@@ -51,7 +51,7 @@ function submitProfileForm(e) {
     })
 }
 
-const processLocation = debounce(getAddressSuggestions(addressCallback, zumeProfile.map_key))
+const processLocation = debounce(getAddressSuggestions(addressCallback, jsObject.map_key))
 cityInput.addEventListener( 'input', processLocation )
 
 function addressCallback(data) {
@@ -82,7 +82,7 @@ function addressCallback(data) {
 
             cityInput.value = placeName
 
-            zumeProfile.mapbox_selected_id = id
+            jsObject.mapbox_selected_id = id
 
             addressResultsContainer.innerHTML = ''
         })

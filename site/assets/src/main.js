@@ -5,6 +5,7 @@ import './js/zumeStorage'
 import './components/wizard/index'
 import './components/dashboard/index'
 import './components/presenter/index'
+
 import './components/play-button'
 import './components/share-links'
 import './components/share-list'

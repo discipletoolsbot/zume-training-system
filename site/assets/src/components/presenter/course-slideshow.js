@@ -5,7 +5,6 @@ export class CourseSlideshow extends LitElement {
         return {
             sections: { type: Array },
             sectionIndex: { attribute: false },
-            partIndex: { attribute: false },
             currentSlide: { attribute: false },
             index: { attribute: false },
         };
