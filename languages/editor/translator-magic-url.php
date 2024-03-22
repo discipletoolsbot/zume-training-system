@@ -50,6 +50,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public $type = 'translator';
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
     public $lang;
+    public $user;
     public static $token = 'zume_app_translator';
 
     private static $_instance = null;
@@ -191,6 +192,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function body(){
+        // test if logged in
         if(!is_user_logged_in()) {
             if ( $this->lang === 'en' ) {
                 wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->root . '/' . $this->type  ) );
@@ -198,11 +200,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 wp_redirect( zume_login_url( 'login', site_url() . '/' . $this->lang . '/' . $this->root . '/' . $this->type  ) );
             }
         }
-        $user = wp_get_current_user();
-        if ( ! in_array( 'custom_language_translator', (array) $user->roles ) ) {
-            echo "User " . $user->user_email . " is not a translator.";
+        $this->user = wp_get_current_user();
+        // test if approved translator role
+        if ( ! in_array( 'custom_language_translator', (array) $this->user->roles ) ) {
+            echo "User " . $this->user->user_email . " is not a translator.";
             return;
         }
+        $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
 
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
@@ -236,7 +240,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <option value="<?php echo $lang['code'] ?>" selected><?php echo $lang['name'] ?></option>
                         <option>----------</option>
                         <?php
-                        foreach( $zume_languages as $l ) {
+
+                        foreach( $zume_languages as $k => $l ) {
+                            if ( ! in_array( $k, $approved_languages ) && ! in_array( 'administrator', $this->user->roles ) ) {
+                                continue;
+                            }
                             ?>
                             <option value="<?php echo $l['code'] ?>"><?php echo $l['name'] ?></option>
                             <?php
@@ -254,13 +262,75 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
     }
 
+    /**
+     * false means approved
+     * true means not approved, and lists approved languages
+     */
+    public function access_failure_test() {
+        if ( empty( $this->user ) ) {
+            $this->user = wp_get_current_user();
+        }
+        if ( in_array( 'administrator', $this->user->roles ) ) {
+            return false;
+        }
+        if ( $this->lang === 'en' && ! in_array( 'administrator', (array) $this->user->roles ) ) {
+            return true;
+        }
+        $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
+        if ( in_array( $this->lang, $approved_languages ) ) {
+            return false;
+        }
+        return true;
+    }
+    /**
+     * @return void
+     */
+    public function list_approved_languages( ) {
+        if ( empty( $this->user ) ) {
+            $this->user = wp_get_current_user();
+        }
+        $zume_languages = zume_languages();
+        echo 'You are nor approved to translate '.$zume_languages[$this->lang]['name'].'. <br><br>Approved languages are:<br>';
+        $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
+        $list = [];
+        foreach( $approved_languages as $lang ) {
+            echo '<a href="'. site_url() . '/' . $lang . '/' . $this->root . '/' . $this->type . '">'. $zume_languages[$lang]['name'] . '</a><br>';
+        }
+    }
+
     public function translators() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
         // query users with translation role
 
-        echo 'translators';
+        $translators = get_users( [
+            'role' => 'custom_language_translator',
+            'meta_query' => [
+                [
+                    'key' => 'zume_user_languages',
+                    'value' => $this->lang,
+                    'compare' => 'LIKE'
+                ]
+            ]
+        ] );
+        $zume_languages = zume_languages();
+        $lang = $zume_languages[$this->lang];
+        echo '<h3>Translators for ' . $lang['name'] . '</h3>';
+        if ( ! empty( $translators ) ) {
+            foreach( $translators as $translator ) {
+                echo '<strong>' . $translator->user_login . '</strong> (' . $translator->user_email . ') <br>';
+            }
+        }
+
     }
 
     public function status() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
         $lang_list = list_zume_pieces( $lang['code'] );
@@ -431,6 +501,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
     }
     public function pieces() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
         $en_list = list_zume_pieces( 'en' );
@@ -622,6 +696,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function emails() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
         $languages = zume_languages();
         $language = $languages[$this->lang];
         $messages_english = $this->query_emails( 'en' );
@@ -790,6 +868,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function scripts() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
         global $wpdb;
         $zume_languages = zume_languages();
         $lang = $zume_languages[$this->lang];
