@@ -91,7 +91,7 @@ class Zume_Training_Profile extends Zume_Magic_Page
             });
         </script>
         <script>
-            const zumeProfile = [<?php echo json_encode([
+            const jsObject = [<?php echo json_encode([
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'map_key' => DT_Mapbox_API::get_key(),
                 'root' => esc_url_raw( rest_url() ),

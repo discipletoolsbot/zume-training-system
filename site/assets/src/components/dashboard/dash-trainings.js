@@ -6,6 +6,7 @@ import { DashPage } from './dash-page';
 export class DashTrainings extends DashPage {
     static get properties() {
         return {
+            showTeaser: { type: Boolean },
             loading: { type: Boolean, attribute: false },
             commitments: { type: Array, attribute: false },
             filterStatus: { type: String, attribute: false },
@@ -14,6 +15,7 @@ export class DashTrainings extends DashPage {
 
     constructor() {
         super()
+        this.showTeaser = false
         this.loading = true
         this.route = DashBoard.getRoute('my-training')
     }
@@ -35,6 +37,17 @@ export class DashTrainings extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
+                <div class="dashboard__main">
+                    ${
+                        this.showTeaser
+                        ? html`
+                            <p>Start or join a training to get access to your trainings here</p>
+                        `
+                        : html`
+                            <p>This is where the information for the user's training will be.</p>
+                        `
+                    }
+                </div>
             </div>
         `;
     }

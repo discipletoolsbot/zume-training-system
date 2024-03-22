@@ -3,7 +3,7 @@ import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
 
-export class DashPlans extends DashPage {
+export class Dash3MonthPlan extends DashPage {
     static get properties() {
         return {
             showTeaser: { type: Boolean },
@@ -17,8 +17,8 @@ export class DashPlans extends DashPage {
         super()
         this.showTeaser = false
         this.loading = true
-        this.route = DashBoard.getRoute('my-plans')
-        this.filterName = 'my-plans-filter'
+        this.route = DashBoard.getRoute('3-month-plan')
+        this.filterName = '3-month-plan-filter'
         this.filterStatus = ZumeStorage.load(this.filterName)
 
         this.renderListItem = this.renderListItem.bind(this)
@@ -181,7 +181,22 @@ export class DashPlans extends DashPage {
         `
     }
 
+    unlock3MonthPlan() {
+        makeRequest('POST', 'log', { type: 'training', subtype: '26_heard' }, 'zume_system/v1/' ).done( ( data ) => {
+            const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
+            this.dispatchEvent(stateEvent)
+            const hostChangeEvent = new CustomEvent('user-host:change', { bubbles: true })
+            this.dispatchEvent(hostChangeEvent)
+
+            /* We should trigger a refetch of the user-host:change as well */
+            /* That way the progress page will be correct when navigated to. */
+
+            this.showTeaser = false
+        })
+    }
+
     render() {
+        console.log(this.route)
         return html`
             <div class="dashboard__content" data-no-secondary-area>
                 <dash-header-right></dash-header-right>
@@ -192,7 +207,7 @@ export class DashPlans extends DashPage {
                             <span class="icon ${this.route.icon}"></span>
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
-                        <div class="s0">
+                        <div class="s0"></div>
                             <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
                                 <span class="icon zume-filter" aria-hidden="true"></span>
@@ -230,7 +245,8 @@ export class DashPlans extends DashPage {
                     ${
                         this.showTeaser ? html`
                             <p>Here lies the teaser area for this page</p>
-                            <p>Once you have created your 3 month plan. You can manage and complete it here</p>
+                            <p>Once you have done the 3 month plan section of the training this area will unlock</p>
+                            <button class="btn" @click=${this.unlock3MonthPlan}>Unlock now</button>
                         ` : ''
                     }
                     ${
@@ -322,4 +338,4 @@ export class DashPlans extends DashPage {
         return this
     }
 }
-customElements.define('dash-plans', DashPlans);
+customElements.define('dash-3-month-plan', Dash3MonthPlan);

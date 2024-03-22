@@ -9,6 +9,10 @@ export class SlideSwitcher extends LitElement {
 
     render() {
 
+        if ( !this.slide ) {
+            return
+        }
+
         switch (this.slide.type) {
             case 'title':
                 return html`<title-slide .slide=${this.slide}></title-slide>`

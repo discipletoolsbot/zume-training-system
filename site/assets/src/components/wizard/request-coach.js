@@ -114,11 +114,11 @@ export class RequestCoach extends LitElement {
             this.state = this.stateManager.get(this.variant) || {}
 
             if ( this.variant === ZumeWizardSteps.languagePreferences && !this.state.value ) {
-                this.state.value = zumeProfile.profile.preferred_language || 'en'
+                this.state.value = jsObject.profile.preferred_language || 'en'
                 this.stateManager.add( this.variant, this.state )
             }
             if ( this.variant === ZumeWizardSteps.contactPreferences && Object.keys(this.state).length === 0 ) {
-                this.state = Object.fromEntries(zumeProfile.profile.contact_preference.map((pref) => ([ pref, 'true' ])))
+                this.state = Object.fromEntries(jsObject.profile.contact_preference.map((pref) => ([ pref, 'true' ])))
             }
         }
 
@@ -129,8 +129,8 @@ export class RequestCoach extends LitElement {
                 <div class="stack center container-sm | align-items-start text-start">
                     ${this.contactPreferences.map((preference) => html`
                         <div>
-                            <input type="checkbox" name="contact-preference" id=${preference} value=${preference} @change=${this._handleChange} ?checked=${!!this.state[preference]} />
-                            <label for=${preference}>${this.t[preference]}</label>
+                            <input type="checkbox" name="contact-preference" id=${'prefer_' + preference} value=${preference} @change=${this._handleChange} ?checked=${!!this.state[preference]} />
+                            <label for=${'prefer_' + preference}>${this.t[preference]}</label>
                         </div>
                     `)}
                 </div>

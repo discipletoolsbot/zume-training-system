@@ -145,6 +145,9 @@
         height: 100%;
     }
 }
+course-guide .video-slide .btn {
+    display: none;
+}
 [data-outline-slides] .slides-card,
 .slide-outline {
     border: 1px solid #ccc;

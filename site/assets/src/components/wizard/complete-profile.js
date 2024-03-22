@@ -56,7 +56,7 @@ export class CompleteProfile extends LitElement {
 
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
-        this._debounceCityChange = debounce(getAddressSuggestions(this._handleSuggestions, zumeProfile.map_key)).bind(this)
+        this._debounceCityChange = debounce(getAddressSuggestions(this._handleSuggestions, jsObject.map_key)).bind(this)
         this._handleCityInputChange = this._handleCityInputChange.bind(this)
     }
 
@@ -211,7 +211,7 @@ export class CompleteProfile extends LitElement {
     _handleLocationSelection(event) {
         this.city = event.target.dataset.placeName
 
-        const value = getLocationGridFromMapbox(event.target.id, zumeProfile.profile.location)
+        const value = getLocationGridFromMapbox(event.target.id, jsObject.profile.location)
 
         this.localValue = value
         this._clearLocations()
@@ -252,7 +252,7 @@ export class CompleteProfile extends LitElement {
         } )
         .then((response) => response.json())
         .then((newProfile) => {
-            zumeProfile.profile = newProfile
+            jsObject.profile = newProfile
 
             successCallback()
         })

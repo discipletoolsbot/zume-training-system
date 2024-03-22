@@ -566,9 +566,11 @@ a, a:visited {
 }
 .course-index {
   min-block-size: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  padding-block: spacing(2);
+  position: absolute;
+  inset: 0;
+  overflow: auto;
+  z-index: 20;
 }
 
 .collapse {

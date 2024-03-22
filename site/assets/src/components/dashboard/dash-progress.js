@@ -18,8 +18,8 @@ export class DashProgress extends DashPage {
         this.loading = false
         this.route = DashBoard.getRoute('my-progress')
 
-        this.trainingItems = zumeDashboard.training_items
-        this.hostProgress = zumeDashboard.host_progress
+        this.trainingItems = jsObject.training_items
+        this.hostProgress = jsObject.host_progress
 
         this.filterName = 'my-progress-filter'
         this.filterStatus = ZumeStorage.load(this.filterName)
@@ -90,7 +90,7 @@ export class DashProgress extends DashPage {
         const currentState = this.hostProgress.list[key]
 
         if (currentState === false) {
-            makeRequest('POST', 'host', { type: type, subtype: subtype, user_id: zumeDashboard.user_profile.user_id }, 'zume_system/v1' )
+            makeRequest('POST', 'host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id }, 'zume_system/v1' )
                 .done( ( data ) => {
                     if ( Array.isArray(data) ) {
                         this.hostProgress.list[key] = true
@@ -100,7 +100,7 @@ export class DashProgress extends DashPage {
         }
 
         if (currentState === true) {
-            makeRequest('DELETE', 'host', { type: type, subtype: subtype, user_id: zumeDashboard.user_profile.user_id }, 'zume_system/v1' )
+            makeRequest('DELETE', 'host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id }, 'zume_system/v1' )
                 .done( ( data ) => {
                     if ( Array.isArray(data) ) {
                         this.hostProgress.list[key] = false
@@ -111,7 +111,7 @@ export class DashProgress extends DashPage {
     }
 
     loadHostStatus() {
-        makeRequest('GET', 'host', { user_id: zumeDashboard.user_profile.user_id }, 'zume_system/v1' )
+        makeRequest('GET', 'host', { user_id: jsObject.profile.user_id }, 'zume_system/v1' )
             .done( ( data ) => {
                 this.hostProgress = data
             })
@@ -152,10 +152,10 @@ export class DashProgress extends DashPage {
     renderListItem(trainingItem) {
         const { title, description, host, slug, key } = trainingItem
 
-        let url = [ zumeDashboard.site_url, zumeDashboard.language, slug ].join('/')
+        let url = [ jsObject.site_url, jsObject.language, slug ].join('/')
 
-        if ( zumeDashboard.language === 'en' ) {
-            url = [ zumeDashboard.site_url, slug ].join('/')
+        if ( jsObject.language === 'en' ) {
+            url = [ jsObject.site_url, slug ].join('/')
         }
 
         return html`
@@ -166,12 +166,12 @@ export class DashProgress extends DashPage {
                         <div class="stack--2 mt--2">
                             <p class="f--1 gray-700">${description}</p>
                             <div class="cluster">
-                                <share-links url=${url} title=${title} .t=${zumeDashboard.share_translations}></share-links>
+                                <share-links url=${url} title=${title} .t=${jsObject.share_translations}></share-links>
 
                                 ${
-                                    zumeDashboard.has_pieces_pages
+                                    jsObject.has_pieces_pages
                                     ? html`
-                                        <a class="btn light uppercase" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${zumeDashboard.translations.view}</a>
+                                        <a class="btn light uppercase" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${jsObject.translations.view}</a>
                                     `
                                     : ''
                                 }
@@ -225,11 +225,11 @@ export class DashProgress extends DashPage {
                         <h1 class="h3">${this.route.translation}</h1>
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu">
-                                <span class="visually-hidden">${zumeDashboard.translations.filter}</span>
+                                <span class="visually-hidden">${jsObject.translations.filter}</span>
                                 <span class="icon zume-filter brand-light" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openInfoModal}>
-                                <span class="visually-hidden">${zumeDashboard.translations.progress_info}</span>
+                                <span class="visually-hidden">${jsObject.translations.progress_info}</span>
                                 <span class="icon zume-info brand-light" aria-hidden="true"></span>
                             </button>
                         </div>
@@ -238,13 +238,13 @@ export class DashProgress extends DashPage {
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'heard' ? 'selected' : ''}" @click=${() => this.filterProgress('heard')}>
-                                    ${zumeDashboard.translations.heard}
+                                    ${jsObject.translations.heard}
                                 </button>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'not-heard' ? 'selected' : ''}" @click=${() => this.filterProgress('not-heard')}>
-                                    ${zumeDashboard.translations.not_heard}
+                                    ${jsObject.translations.not_heard}
                                 </button>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterProgress('all')}>
-                                    ${zumeDashboard.translations.all}
+                                    ${jsObject.translations.all}
                                 </button>
                             </li>
                         </ul>
@@ -265,36 +265,36 @@ export class DashProgress extends DashPage {
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
                 <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button">
-                        <img src=${`${zumeDashboard.images_url}/close-button-01.svg`} alt="close button">
+                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
                 </button>
                 <div class="stack-2 host-info mx-2">
                     <div class="switcher gap-1 align-items-center switcher-width-20">
                         <host-progress-circle class="grow-0" type="heard" percent=${this.hostProgress?.percent?.h || 0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">${zumeDashboard.translations.heard}</h3>
-                            <p class="italic">${zumeDashboard.translations.heard_explanation}</p>
+                            <h3 class="bold">${jsObject.translations.heard}</h3>
+                            <p class="italic">${jsObject.translations.heard_explanation}</p>
                         </div>
                     </div>
                     <div class="switcher gap-1 align-items-center switcher-width-20">
                         <host-progress-circle class="grow-0" type="obeyed" percent=${this.hostProgress?.percent?.o || 0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">${zumeDashboard.translations.obeyed}</h3>
-                            <p class="italic">${zumeDashboard.translations.obeyed_explanation}</p>
+                            <h3 class="bold">${jsObject.translations.obeyed}</h3>
+                            <p class="italic">${jsObject.translations.obeyed_explanation}</p>
                         </div>
                     </div>
                     <div class="switcher gap-1 align-items-center switcher-width-20">
                         <host-progress-circle class="grow-0" type="shared" percent=${this.hostProgress?.percent?.s || 0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">${zumeDashboard.translations.shared}</h3>
-                            <p class="italic">${zumeDashboard.translations.shared_explanation}</p>
+                            <h3 class="bold">${jsObject.translations.shared}</h3>
+                            <p class="italic">${jsObject.translations.shared_explanation}</p>
                         </div>
                     </div>
 
                     <div class="switcher gap-1 align-items-center switcher-width-20">
                         <host-progress-circle class="grow-0" type="trained" percent=${this.hostProgress?.percent?.t || 0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">${zumeDashboard.translations.trained}</h3>
-                            <p class="italic">${zumeDashboard.translations.trained_explanation}</p>
+                            <h3 class="bold">${jsObject.translations.trained}</h3>
+                            <p class="italic">${jsObject.translations.trained_explanation}</p>
                         </div>
                     </div>
                 </div>

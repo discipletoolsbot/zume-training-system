@@ -1,6 +1,6 @@
 import "./wizard-state-manager"
 import "./wizard-constants"
-import "./wizard"
+import "./zume-wizard"
 import "./complete-profile"
 import "./invite-friends"
 import "./request-coach"

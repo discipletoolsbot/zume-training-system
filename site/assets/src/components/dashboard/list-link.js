@@ -35,7 +35,7 @@ export class ListLink extends NavLink {
                         ${
                             this.completed
                             ? html`
-                                <span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span>
+                                <div class="grow-0"><span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span></div>
                             `
                             : html`
                                 <a
@@ -46,8 +46,8 @@ export class ListLink extends NavLink {
                                 >
                                     ${
                                         this.locked
-                                            ? zumeDashboard.translations.preview
-                                            : this.directLink ? this.text : zumeDashboard.translations.view_now
+                                            ? jsObject.translations.preview
+                                            : this.disableNavigate ? this.text : jsObject.translations.view_now
                                     }
                                 </a>
                             `
