@@ -344,7 +344,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $videos = list_zume_videos( $this->language_code );
         $pieces_list = list_zume_pieces( $language['code'] );
 
-        dt_write_log( $downloads );
 
         /**
         * Template for the status tab
@@ -1185,7 +1184,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function qr_codes() {
         ?>
-        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
+        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
         <style>
             .qr-table img {
                 width: 150px;
@@ -1250,7 +1249,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </tbody>
         </table>
         <div id="activities" style="height: 100px;"></div>
-        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
+        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
         <h2>Activities</h2>
          <table class="qr-table">
             <thead>
@@ -1296,7 +1295,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </tbody>
         </table>
          <div id="videos" style="height: 100px;"></div>
-         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a><br>
+         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
         <h2>Videos</h2>
         <table class="qr-table">
             <thead>
@@ -1310,8 +1309,43 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <?php
                 $training_items = zume_training_items();
                 foreach( $training_items as $item ) {
+                    if ( empty( $item['script'] ) ) {
+                        continue;
+                    }
                     $id =  intval( $item['key'] );
                     $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
+                    $qr_url = zume_create_qr_url( $url );
+                    echo '<tr>';
+                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
+                    echo '<td><img src="' . $qr_url . '" /></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
+
+        <!-- SCRIPTS -->
+         <div id="scripts" style="height: 100px;"></div>
+         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
+        <h2>Scripts</h2>
+        <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>QR Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $training_items = zume_training_items();
+                foreach( $training_items as $item ) {
+                    if ( empty( $item['script'] ) ) {
+                        continue;
+                    }
+                    $id =  intval( $item['key'] );
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&s='. $item['script'];
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
                     echo '<td>' . $item['title'] . '</td>';

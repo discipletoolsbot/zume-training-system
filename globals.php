@@ -1951,6 +1951,16 @@ if ( ! function_exists( 'zume_training_items' ) ) {
         return $list;
     }
 }
+if ( ! function_exists('zume_training_items_by_script') ) {
+    function zume_training_items_by_script(): array {
+        $training_items = zume_training_items();
+        $list = [];
+        foreach ( $training_items as $training_item ) {
+            $list[$training_item['script']] = $training_item;
+        }
+        return $list;
+    }
+}
 if ( ! function_exists( 'zume_funnel_stages' ) ) {
     function zume_funnel_stages(): array {
         return [

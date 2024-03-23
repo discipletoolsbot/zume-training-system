@@ -242,6 +242,27 @@ class Zume_QR_Redirect
             exit();
         }
         /**
+         * By Language Code and Script ID
+         *
+         * https://zume.training/zume_app/qr/?l=en&s=4
+         */
+        else if ( isset( $_GET['l'], $_GET['s'] ) ) {
+            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['s'] );
+
+            $script_id = esc_attr( $_GET['s'] );
+            $language_code = esc_attr( $_GET['l'] );
+
+            $link = $this->root_url . $language_code . '/zume_app/script/?s=' . $script_id;
+
+            if ( $this->development_display ) {
+                echo '<span style="font-size: 3em;">' . $link . '</span>';
+            } else {
+                header("Location: ".$link, true, 302);
+            }
+
+            exit();
+        }
+        /**
          * By Language Code and Activity ID
          *
          * https://zume.training/zume_app/qr/?l=en&a=4
