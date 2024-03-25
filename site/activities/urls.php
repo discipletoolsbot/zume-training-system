@@ -203,7 +203,7 @@ class Zume_Activites_List100 extends Zume_Activites
     use Translateable;
     public $page_title = 'Zúme Activity - List of 100';
     public $root = 'zume_activities';
-    public $type = 'list100';
+    public $type = 'listof100';
 
     private static $_instance = null;
     public static function instance() {
@@ -267,7 +267,7 @@ class Zume_Activites_Supper extends Zume_Activites
     use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
-    public $type = 'supper';
+    public $type = 'lordssupper';
 
     private static $_instance = null;
     public static function instance() {
@@ -288,7 +288,7 @@ class Zume_Activites_Bless extends Zume_Activites
     use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
-    public $type = 'bless';
+    public $type = 'blessprayer';
 
     private static $_instance = null;
     public static function instance() {
@@ -477,7 +477,7 @@ class Zume_Activites_Genmap extends Zume_Activites
     use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
-    public $type = 'genmap';
+    public $type = 'genmapping';
 
     private static $_instance = null;
     public static function instance() {

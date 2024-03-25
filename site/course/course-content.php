@@ -525,7 +525,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . 'list100' ),
+                zume_create_qr_url( $activity_base_url . 'listof100' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1127,7 +1127,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Spend the next 10 minutes celebrating The Lord’s Supper with your group.', 'zume' ),
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . 'supper' ),
+                zume_create_qr_url( $activity_base_url . 'lordssupper' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1319,7 +1319,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.', 'zume' ),
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . 'bless' ),
+                zume_create_qr_url( $activity_base_url . 'blessprayer' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -2357,7 +2357,7 @@ function zume_content( $lang_code = 'en') {
                 $mirror_url . '98.png',
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . '4fields' ),
                 __( 'Resource', 'zume' ),
             ],
         ],
@@ -2382,7 +2382,7 @@ function zume_content( $lang_code = 'en') {
                 $mirror_url . '104.png',
             ],
             'right' => [
-                $mirror_url . 'qr/placeholder.png',
+                zume_create_qr_url( $activity_base_url . 'genmapping' ),
                 __( 'Resource', 'zume' ),
             ],
         ],
@@ -3987,7 +3987,7 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                zume_create_qr_url( $activity_base_url . '33groupmeeting' ),
+                zume_create_qr_url( $activity_base_url . '33groupmk5' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
