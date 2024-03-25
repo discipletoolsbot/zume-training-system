@@ -231,7 +231,7 @@ class Zume_QR_Redirect
             $activity_id = esc_attr( $_GET['a'] );
             $language_slug = esc_attr( $_GET['l'] );
 
-            $link = $this->root_url . $language_slug . '/zume_activity/' . $activity_id;
+            $link = $this->root_url . $language_slug . '/zume_activities/' . $activity_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

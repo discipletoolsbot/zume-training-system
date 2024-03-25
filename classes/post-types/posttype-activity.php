@@ -3,10 +3,6 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly.
 
-function zume_get_message_list() {
-    return Zume_Training_Messages_Post_Type::instance()->get_messages();
-}
-
 /**
  * Zume_PDF_Download_Post_Type Post Type Class
  * All functionality pertaining to project update post types in Zume_PDF_Download_Post_Type.
@@ -14,7 +10,7 @@ function zume_get_message_list() {
  * @package  Disciple_Tools
  * @since    0.1.0
  */
-class Zume_Training_Messages_Post_Type
+class Zume_Training_Activity_Post_Type
 {
     /**
      * The post type token.
@@ -94,7 +90,7 @@ class Zume_Training_Messages_Post_Type
      * @param array  $args
      * @param array  $taxonomies
      */
-    public function __construct( $post_type = 'zume_messages', $singular = 'Zume Message', $plural = 'Zume Messages', $args = array(), $taxonomies = array() ) {
+    public function __construct( $post_type = 'zume_activities', $singular = 'Zume Activity', $plural = 'Zume Activities', $args = array(), $taxonomies = array() ) {
         $this->post_type = $post_type;
         $this->singular = $singular;
         $this->plural = $plural;
@@ -219,7 +215,7 @@ class Zume_Training_Messages_Post_Type
      */
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array( 'delay' => 'delay', 'logic' => 'logic' );
+        $new_columns = array( );
 
         $last_item = array();
 
@@ -292,10 +288,7 @@ class Zume_Training_Messages_Post_Type
      * @return void
      */
     public function meta_box_setup() {
-        add_meta_box( $this->post_type . '_scribes', 'Messages', array( $this, 'metabox_messages' ), $this->post_type, 'normal', 'high' );
-        add_meta_box( $this->post_type . '_schedule', 'Schedule Order', [ $this, 'metabox_message_hierarchy' ], $this->post_type, 'side', 'high' );
-        add_meta_box( $this->post_type . '_delay', 'Delay', [ $this, 'metabox_delay' ], $this->post_type, 'side', 'high' );
-        add_meta_box( $this->post_type . '_logic', 'Marketing Logic', [ $this, 'metabox_action' ], $this->post_type, 'side', 'high' );
+        add_meta_box( $this->post_type . '_scribes', 'Activities', array( $this, 'metabox_activities' ), $this->post_type, 'normal', 'high' );
     } // End meta_box_setup()
 
     /**
@@ -304,10 +297,10 @@ class Zume_Training_Messages_Post_Type
      * @access public
      * @since  0.1.0
      */
-    public function metabox_messages() {
+    public function metabox_activities() {
         global $post_id;
 
-        $this->meta_box_content( 'messages' ); // prints
+        $this->meta_box_content( 'activities' ); // prints
 
         // make sure fields exist
         $fields = get_post_custom( $post_id );
@@ -321,108 +314,13 @@ class Zume_Training_Messages_Post_Type
             }
         }
     }
-    public function metabox_message_hierarchy( $post ) {
-        $hierarchy = $this->get_message_hierarchy( $post->ID );
-        if ( ! empty( $hierarchy['parents'] ) ) {
-            foreach ( $hierarchy['parents'] as $parent ) {
-                ?>
-                <a href="<?php echo esc_url( admin_url() . 'post.php?post=' . $parent['ID'] . '&action=edit' ) ?>"><?php echo esc_html( $parent['post_title'] ) ?></a><br>
-                <?php
-            }
-        }
-        echo '<hr><strong>(This Message) ' . esc_html( $post->post_title ) . '</strong><br><hr>';
-        if ( ! empty( $hierarchy['children'] ) ) {
-            foreach ( $hierarchy['children'] as $children ) {
-                ?>
-                <a href="<?php echo esc_url( admin_url() . 'post.php?post=' . $children['ID'] . '&action=edit' ) ?>"><?php echo esc_html( $children['post_title'] ) ?></a><br>
-                <?php
-            }
-        }
-        ?>
-        <br>
-        <?php
-    }
-
-    public function get_message_hierarchy( $post_id ) {
-        global $wpdb, $table_prefix;
-        $list = $wpdb->get_results(
-            "SELECT ID, post_parent, post_title
-                    FROM {$table_prefix}posts
-                    WHERE post_type = 'zume_messages'", ARRAY_A );
-
-        $children = $this->get_message_children( $post_id, $list, [], $post_id );
-
-        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true);
-
-        return [
-            'parents' => $parents,
-            'children' => $children
-        ];
-    }
-
-    public function get_message_parent( $post_id, $list, $parents, $self_post_id ) {
-        foreach ( $list as $item ) {
-            if ( $item['ID'] == $post_id ) {
-                if ( $self_post_id !== $post_id ) {
-                    $parents[$post_id] = $item;
-                }
-                if ( $item['post_parent'] != '0' ) {
-                    $parents = $this->get_message_parent( $item['post_parent'], $list, $parents, $self_post_id );
-                }
-            }
-        }
-        return $parents;
-    }
-    public function get_message_children( $post_id, $list, $children, $self_post_id ) {
-        foreach ( $list as $item ) {
-            if ( $item['post_parent'] == $post_id ) {
-                $children[$post_id] = $item;
-                $children = $this->get_message_children( $item['ID'], $list, $children, $self_post_id );
-            }
-        }
-        return $children;
-    }
-
-    public function metabox_delay( $post ) {
-        $fields = get_post_custom( $post->ID );
-        $delay = isset( $fields['delay'] ) ? $fields['delay'][0] : 0;
-        ?>
-        <select name="delay" id="delay">
-            <option value="0" <?php selected( $delay, 0 ) ?>>No Delay</option>
-            <option value="1" <?php selected( $delay, 1 ) ?>>1 Day</option>
-            <option value="2" <?php selected( $delay, 2 ) ?>>2 Days</option>
-            <option value="3" <?php selected( $delay, 3 ) ?>>3 Days</option>
-            <option value="4" <?php selected( $delay, 4 ) ?>>4 Days</option>
-            <option value="5" <?php selected( $delay, 5 ) ?>>5 Days</option>
-            <option value="6" <?php selected( $delay, 6 ) ?>>6 Days</option>
-            <option value="7" <?php selected( $delay, 7 ) ?>>1 Week</option>
-            <option value="14" <?php selected( $delay, 14 ) ?>>2 Weeks</option>
-            <option value="21" <?php selected( $delay, 21 ) ?>>3 Weeks</option>
-            <option value="28" <?php selected( $delay, 28 ) ?>>4 Weeks</option>
-        </select>
-        <?php
-    }
-
-    public function metabox_action( $post ) {
-        $fields = get_post_custom( $post->ID );
-            ?>
-            <strong><label for="logic">Marketing Logic</label></strong><br>
-            <textarea name="logic" id="logic" style="width:100%;height:200px;"><?php echo isset($fields['logic'][0]) ? esc_textarea( $fields['logic'][0] ) : ''  ?></textarea>
-            <?php
-        if ( isset( $fields['action'] ) ) {
-            ?>
-            <strong><label for="action">Action</label></strong><br>
-            <input type="text" name="action" id="action" value="<?php echo isset($fields['action'][0]) ? esc_attr( $fields['action'][0] ) : ''  ?>" />
-            <?php
-        }
-    }
 
     /**
      * The contents of our meta box.
      *
      * @param string $section
      */
-    public function meta_box_content( $section = 'scribe' ) {
+    public function meta_box_content( $section = 'activities' ) {
         global $post_id;
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
@@ -564,7 +462,7 @@ class Zume_Training_Messages_Post_Type
             } elseif ( ${$f} != get_post_meta( $post_id, $f, true ) ) {
                 update_post_meta( $post_id, $f, ${$f} );
             } elseif ( ${$f} == '' ) {
-                update_post_meta( $post_id, $f, get_post_meta( $post_id, $f, true ) );
+               update_post_meta( $post_id, $f, get_post_meta( $post_id, $f, true ) );
             }
         }
         return $post_id;
@@ -600,59 +498,49 @@ class Zume_Training_Messages_Post_Type
     public function get_custom_fields_settings() {
         $fields = array();
 
+        $fields['length_of_time'] = array(
+            'name'        => 'Length of Time',
+            'default'     => '',
+            'type'        => 'text',
+            'section'     => 'activities',
+        );
+        $fields['end_time'] = array(
+            'name'        => 'End',
+            'default'     => '',
+            'type'        => 'hr_end',
+            'section'     => 'activities',
+        );
+
         $languages = zume_languages();
         foreach( $languages as $language ) {
             $fields['begin_'.$language['code']] = array(
                 'name'        => strtoupper( $language['name'] ),
                 'default'     => '',
                 'type'        => 'begin',
-                'section'     => 'messages',
+                'section'     => 'activities',
             );
-            $fields['subject_'.$language['code']] = array(
-                'name'        => 'Subject',
+            $fields['title_'.$language['code']] = array(
+                'name'        => 'Title',
                 'default'     => '',
                 'type'        => 'text',
-                'section'     => 'messages',
+                'section'     => 'activities',
             );
-            $fields['body_' . $language['code']] = array(
-                'name'        => 'Body',
+            $fields['content_' . $language['code']] = array(
+                'name'        => 'Content',
                 'default'     => '',
                 'type'        => 'textarea',
-                'section'     => 'messages',
+                'section'     => 'activities',
             );
-            $fields['footer_' . $language['code']] = array(
-                'name'        => 'Footer',
-                'default'     => [
-                    '',
-                    'Link',
-                    'Link2',
-                    'Link3',
-                ],
-                'type'        => 'select',
-                'section'     => 'messages',
-            );
+
             $fields['end_' . $language['code']] = array(
                 'name'        => 'End',
                 'default'     => '',
                 'type'        => 'hr_end',
-                'section'     => 'messages',
+                'section'     => 'activities',
             );
         }
 
-        $fields['delay'] = array(
-            'name'        => 'Delay',
-            'default'     => '',
-            'type'        => 'delay',
-            'section'     => 'action',
-        );
-        $fields['logic'] = array(
-            'name'        => 'Logic',
-            'default'     => '',
-            'type'        => 'textarea',
-            'section'     => 'action',
-        );
-
-        return apply_filters( 'zume_messages_fields_settings', $fields );
+        return apply_filters( 'zume_activities_fields_settings', $fields );
     } // End get_custom_fields_settings()
 
     /**
@@ -677,4 +565,4 @@ class Zume_Training_Messages_Post_Type
     } // End flush_rewrite_rules()
 
 } // End Class
-Zume_Training_Messages_Post_Type::instance();
+Zume_Training_Activity_Post_Type::instance();

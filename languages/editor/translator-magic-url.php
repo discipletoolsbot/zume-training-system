@@ -220,6 +220,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'status' => $tab === 'status' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
             'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
+            'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'strings' => $tab === 'strings' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
@@ -300,7 +301,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
             echo '<a href="'. site_url() . '/' . $lang . '/' . $this->root . '/' . $this->type . '">'. $zume_languages[$lang]['name'] . '</a><br>';
         }
     }
-
     public function translators() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
@@ -640,7 +640,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <input type="text" id="<?php echo hash('sha256', serialize($item['lang']) . 'zume_piece_h1' ) ?>" value="<?php echo $item['lang']['zume_piece_h1'] ?? '';  ?>" class="<?php echo hash('sha256', serialize($item['lang']) . 'zume_piece_h1' ) ?>" />
                                 </td>
                                 <td>
-                                    <button class="button save" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_piece_h1' ) ?>" data-key="zume_piece_h1" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
+                                    <button class="button save_text" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_piece_h1' ) ?>" data-key="zume_piece_h1" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_piece_h1' ) ?>"></span>
                                 </td>
                             </tr>
@@ -731,14 +731,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                         jQuery('.loading-spinner.' + target).addClass('active');
 
-                        makeRequest('POST', 'translation/pieces', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                        makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
                         .then( (response) => {
                             console.log(response)
                             jQuery('.loading-spinner.' + target).removeClass('active');
                             jQuery('.loading-spinner.' + target).addClass('checkmark');
                         } )
                     } )
-                    jQuery('.save').on( 'click', (e) => {
+                    jQuery('.save_text').on( 'click', (e) => {
                         console.log('save_emails')
                         console.log(e.target.dataset.target)
 
@@ -749,7 +749,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                         jQuery('.loading-spinner.' + target).addClass('active');
 
-                        makeRequest('POST', 'translation/pieces', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                        makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
                         .then( (response) => {
                             console.log(response)
                             jQuery('.loading-spinner.' + target).removeClass('active');
@@ -785,7 +785,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <input type="text" class="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['subject'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
                 </td>
                 <td>
-                    <button class="button save_emails" data-target="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="subject_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
+                    <button class="button save_text" data-target="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="subject_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
                     <br><span class="loading-spinner subject_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
                 </td>
             </tr>
@@ -800,7 +800,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <textarea id="body_<?php echo $this->language_code ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['body'] ?? '' ?></textarea>
                 </td>
                 <td>
-                    <button class="button save" data-target="body_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="body_<?php echo $this->language_code ?>" >Save</button>
+                    <button class="button save_textarea" data-target="body_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="body_<?php echo $this->language_code ?>" >Save</button>
                     <br><span class="loading-spinner body_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
                 </td>
             </tr>
@@ -837,7 +837,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     min_height: 500,
                     format_empty_lines: true
                 });
-                jQuery('.save').on( 'click', (e) => {
+                jQuery('.save_textarea').on( 'click', (e) => {
                     console.log('save')
                     console.log(e.target.dataset.target)
 
@@ -853,14 +853,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                     jQuery('.loading-spinner.' + target).addClass('active');
 
-                    makeRequest('POST', 'translation/emails', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                    makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
                     .then( (response) => {
                         console.log(response)
                         jQuery('.loading-spinner.' + target).removeClass('active');
                         jQuery('.loading-spinner.' + target).addClass('checkmark');
                     } )
                 } )
-                jQuery('.save_emails').on( 'click', (e) => {
+                jQuery('.save_text').on( 'click', (e) => {
                     console.log('save_emails')
                     console.log(e.target.dataset.target)
 
@@ -871,7 +871,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                     jQuery('.loading-spinner.' + target).addClass('active');
 
-                    makeRequest('POST', 'translation/emails', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                    makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
                     .then( (response) => {
                         console.log(response)
                         jQuery('.loading-spinner.' + target).removeClass('active');
@@ -1036,7 +1036,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                         jQuery('.loading-spinner.' + target).addClass('active');
 
-                        makeRequest('POST', 'translation/scripts', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                        makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
                         .then( (response) => {
                             console.log(response)
                             jQuery('.loading-spinner.' + target).removeClass('active');
@@ -1046,6 +1046,183 @@ class Zume_Training_Translator extends Zume_Magic_Page
               });
               </script>
         <?php
+    }
+
+     public function activities() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
+        $languages = zume_languages();
+        $language = $languages[$this->language_code];
+        $messages_english = $this->query_activities( 'en' );
+        $messages_other_language = $this->query_activities( $this->language_code );
+
+        ob_start();
+        foreach( $messages_english as $pid => $message ) {
+            ?>
+            <tr><td colspan="4" style="background:black;"></td></tr>
+            <tr>
+                <td colspan="2">
+                    <?php echo $messages_english[$pid]['post_title'] ?? '' ?><br />
+                    <a href="<?php echo site_url() . '/en/zume_activities/' . $messages_english[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/en/zume_activities/' . $messages_english[$pid]['post_title'] ?></a>
+                </td>
+                <td colspan="2">
+                    <br />
+                    <a href="<?php echo site_url() . '/' . $this->language_code . '/zume_activities/' . $messages_other_language[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/' . $this->language_code . '/zume_activities/' . $messages_other_language[$pid]['post_title'] ?></a>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Title:</strong></td>
+                <td>
+                    <?php echo $messages_english[$pid]['title'] ?? '' ?><br>
+                </td>
+                <td>
+                    <input type="text" class="title_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['title'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
+                </td>
+                <td>
+                    <button class="button save_text" data-target="title_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="title_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
+                    <br><span class="loading-spinner title_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Content:</strong>
+                </td>
+                <td>
+                    <?php echo $messages_english[$pid]['content'] ?? '' ?><br>
+                </td>
+                <td>
+                    <textarea id="content_<?php echo $this->language_code ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['content'] ?? '' ?></textarea>
+                </td>
+                <td>
+                    <button class="button save_textarea" data-target="content_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="content_<?php echo $this->language_code ?>" >Save</button>
+                    <br><span class="loading-spinner content_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
+                </td>
+            </tr>
+            <?php
+        }
+        $table = ob_get_clean();
+        ?>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:5%;"></th>
+                    <th style="width:40%;">English</th>
+                    <th style="width:40%;"><?php echo $language['name'] ?></th>
+                    <th  style="width:5%;">Save</th>
+                </tr>
+            </thead>
+            <tbody><?php echo $table ?></tbody>
+        </table>
+        <script>
+            jQuery(document).ready(function($){
+                jQuery(document).foundation();
+
+                tinymce.init({
+                    selector: 'textarea',
+                    plugins: 'code link wordcount lists image',
+                    menubar: 'insert',
+                    toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                    link_class_list: [
+                        {title: 'None', value: ''},
+                        {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
+                        {title: 'Primary Button', value: 'button primary-button-hollow'},
+                    ],
+                    block_formats: 'Paragraph=p; Header 3=h3',
+                    min_height: 800,
+                    format_empty_lines: true
+                });
+                jQuery('.save_textarea').on( 'click', (e) => {
+                    console.log('save_textarea')
+                    console.log(e.target.dataset.target)
+
+                    let target = e.target.dataset.target;
+                    let content = tinymce.get(target).getContent();
+                    console.log(content)
+
+                    let key = e.target.dataset.key;
+                    console.log(key)
+
+                    let postid = e.target.dataset.post;
+                    console.log(postid)
+
+                    jQuery('.loading-spinner.' + target).addClass('active');
+
+                    makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                    .then( (response) => {
+                        console.log(response)
+                        jQuery('.loading-spinner.' + target).removeClass('active');
+                        jQuery('.loading-spinner.' + target).addClass('checkmark');
+                    } )
+                } )
+                jQuery('.save_text').on( 'click', (e) => {
+                    console.log('save_text')
+                    console.log(e.target.dataset.target)
+
+                    let target = e.target.dataset.target;
+                    let content = jQuery('.'+target).val();
+                    let key = e.target.dataset.key;
+                    let postid = e.target.dataset.post;
+
+                    jQuery('.loading-spinner.' + target).addClass('active');
+
+                    makeRequest('POST', 'translation/update', { key: key, postid: postid, content: content }, "zume_system/v1/" )
+                    .then( (response) => {
+                        console.log(response)
+                        jQuery('.loading-spinner.' + target).removeClass('active');
+                        jQuery('.loading-spinner.' + target).addClass('checkmark');
+                    } )
+                } )
+              });
+              </script>
+        <?php
+
+    }
+    public function query_activities( $langauge_code ) {
+        global $wpdb;
+        $results = $wpdb->get_results(
+            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
+            FROM zume_posts p
+            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
+            WHERE p.post_type = 'zume_activities'
+            AND p.post_status != 'auto-draft'
+            AND pm.meta_key != '_edit_last'
+            AND pm.meta_key != '_edit_lock'
+            AND pm.meta_key != 'last_modified';", ARRAY_A );
+
+        $activities = [];
+        foreach( $results as $result ) {
+            $explode = explode('_', $result['meta_key']);
+            if ( ! isset( $explode[1]) ) {
+                continue;
+            }
+            if ( $explode[1] == $langauge_code ) {
+                if ( ! isset( $activities[$result['post_id']] ) ) {
+                    $activities[$result['post_id']] = [
+                    'post_id' => '',
+                    'post_parent_id' => '',
+                    'post_title' => '',
+                    'language_code' => '',
+                    'title' => '',
+                    'content' => '',
+                ];
+                }
+
+                $activities[$result['post_id']]['post_id'] = $result['post_id'];
+                $activities[$result['post_id']]['post_parent_id'] = $result['post_parent'];
+                $activities[$result['post_id']]['post_title'] = $result['post_title'];
+                $activities[$result['post_id']]['language_code'] = $langauge_code;
+                if ( $explode[0] == 'title' ) {
+                    $activities[$result['post_id']]['title'] = $result['meta_value'];
+                }
+                if ( $explode[0] == 'content' ) {
+                    $activities[$result['post_id']]['content'] = $result['meta_value'] ?? '';
+                }
+            }
+        }
+//dt_write_log($activities);
+        return $activities;
     }
 
     public function ctas() {
@@ -1265,11 +1442,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     'soaps',
                     'accountability',
                     'prayercycle',
-                    'list100',
+                    'listof100',
                     'sharegospel',
                     'sharetestimony',
-                    'supper',
-                    'bless',
+                    'lordssupper',
+                    'blessprayer',
                     '33groupa2',
                     '33groupm6',
                     '33groupmeeting',
@@ -1279,7 +1456,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     'coachingchecklist',
                     'peermentoring',
                     '4fields',
-                    'genmap',
+                    'genmapping',
                 ];
                 foreach( $activities as $item ) {
 //                    dt_write_log( $item );

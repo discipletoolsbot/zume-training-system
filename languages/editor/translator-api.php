@@ -22,30 +22,17 @@ class Zume_Translation_Endpoints
     }
 
     public function add_api_routes() {
+
         register_rest_route(
-            $this->namespace, '/translation/pieces', [
+            $this->namespace, '/translation/update', [
                 'methods' => 'POST',
-                'callback' => [ $this, 'update_pieces' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $this->namespace, '/translation/emails', [
-                'methods' => 'POST',
-                'callback' => [ $this, 'update_emails' ],
-                'permission_callback' => '__return_true',
-            ]
-        );
-        register_rest_route(
-            $this->namespace, '/translation/scripts', [
-                'methods' => 'POST',
-                'callback' => [ $this, 'update_scripts' ],
+                'callback' => [ $this, 'update' ],
                 'permission_callback' => '__return_true',
             ]
         );
     }
 
-    public function update_pieces( WP_REST_Request $request ) {
+    public function update( WP_REST_Request $request ) {
         $params = $request->get_params();
         if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
             return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
@@ -55,27 +42,5 @@ class Zume_Translation_Endpoints
 
         return $params;
     }
-
-    public function update_emails( WP_REST_Request $request ) {
-        $params = $request->get_params();
-        if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
-            return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
-        }
-
-        update_post_meta( $params['postid'], $params['key'], $params['content'] );
-
-        return $params;
-    }
-    public function update_scripts( WP_REST_Request $request ) {
-        $params = $request->get_params();
-        if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
-            return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
-        }
-
-        update_post_meta( $params['postid'], $params['key'], $params['content'] );
-
-        return $params;
-    }
-
 }
 Zume_Translation_Endpoints::instance();
