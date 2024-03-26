@@ -102,6 +102,7 @@ class Zume_Activites extends Zume_Magic_Page
                 list-style: disc !important;
             }
             .zume-activity-content ul li {
+                font-size: 1.2em;
             }
         </style>
         <?php
