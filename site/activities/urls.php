@@ -66,7 +66,7 @@ class Zume_Activites extends Zume_Magic_Page
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css(  );
+        return zume_training_magic_url_base_allowed_css();
     }
 
     public function header_style(){
@@ -79,25 +79,28 @@ class Zume_Activites extends Zume_Magic_Page
         </script>
         <style>
             .zume-activity {
+                font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
                 padding: 1em;
                 max-width: 800px;
                 width:100%;
                 margin: 0 auto;
             }
             .zume-activity-header {
+                font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
                 text-align: center;
             }
             .zume-activity-content h3 {
+                font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
                 margin-bottom: 1em;
             }
             .zume-activity-content p {
                 margin-bottom: 1em;
             }
             .zume-activity-content ul {
-                padding: 0;
+                padding: 0 2em 1em !important;
+                list-style: disc !important;
             }
             .zume-activity-content ul li {
-                margin-bottom: 1em;
             }
         </style>
         <?php
@@ -106,6 +109,7 @@ class Zume_Activites extends Zume_Magic_Page
         global $wpdb;
         $sql = $wpdb->prepare( "SELECT ID FROM zume_posts p WHERE p.post_type = 'zume_activities' AND p.post_title = %s", $this->type );
         $post_id = $wpdb->get_var( $sql );
+
         ?>
         <div class="zume-activity">
             <div class="zume-activity-header">
@@ -117,7 +121,6 @@ class Zume_Activites extends Zume_Magic_Page
             </div>
         </div>
         <?php
-
     }
     public function content_header( $post_id ){
         $title = get_post_meta( $post_id, 'title_'.$this->language_code, true );
@@ -127,8 +130,6 @@ class Zume_Activites extends Zume_Magic_Page
         $content = get_post_meta( $post_id, 'content_'.$this->language_code, true );
         echo $content;
     }
-
-    public function content_footer(){}
 
 }
 Zume_Activites::instance();

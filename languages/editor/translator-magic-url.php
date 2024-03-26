@@ -941,7 +941,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
-        global $wpdb;
         $zume_languages = zume_languages();
         $language = $zume_languages[$this->language_code];
         $en_list = list_zume_scripts( 'en' );
@@ -996,7 +995,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <textarea style="height:500px;" id="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"><?php echo $item['lang']['content'] ?? '' ;  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>_script" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>_script" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"></span>
                                 </td>
                             </tr>
@@ -1020,10 +1019,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             {title: 'Primary Button', value: 'button primary-button-hollow'},
                         ],
                         block_formats: 'Paragraph=p; Header 3=h3',
-                        min_height: 500,
+                        min_height: 800,
                         format_empty_lines: true
                     });
-                    jQuery('.save').on( 'click', (e) => {
+                    jQuery('.save_textarea').on( 'click', (e) => {
                         console.log('save')
                         console.log(e.target.dataset.target)
 
