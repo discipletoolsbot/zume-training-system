@@ -190,7 +190,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                     <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html__( 'What is a Disciple and a Church?', 'zume' ) ?></span>
                                 </li>
                                 <li class="d-flex gap-2 align-items-center">
-                                    <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html__( 'Four Main Ways God Grows Disciples', 'zume' ) ?></span>
+                                    <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html__( 'Consumer Not Producer', 'zume' ) ?></span>
                                 </li>
                                 <li class="d-flex gap-2 align-items-center">
                                     <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html__( 'Vision for Multiplying Disciples', 'zume' ) ?></span>

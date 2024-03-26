@@ -382,7 +382,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
-                    __( 'Producer not Consumer', 'zume' ),
+                    __( 'Producer Not Consumer', 'zume' ),
                 ],
                 __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
@@ -400,7 +400,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Producer not Consumer', 'zume' ),
+                __( 'Producer Not Consumer', 'zume' ),
                 __( 'If we want to make disciples who multiply – spiritual producers and not just consumers – then we need to learn and share four main ways God makes everyday followers more like Jesus:', 'zume' ),
                 [
                     __( 'Prayer', 'zume' ),
@@ -539,7 +539,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    __( 'Producer not Consumer', 'zume' ),
+                    __( 'Producer Not Consumer', 'zume' ),
                 ],
                 __( 'Tools heard in this session:', 'zume' ),
                 [
@@ -700,7 +700,7 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Jesus said, “You will receive power when the Holy Spirit comes upon you. And you will be my witnesses, telling people about me everywhere – in Jerusalem, throughout Judea, in Samaria, and to the ends of the earth.”', 'zume' ),
-                __( 'There’s no one “best way” to tell God’s story (also called The Gospel), because the best way will depend on who you’re sharing with. Every disciple should learn to tell God’s Story in a way that’s true to scripture and connects with the audience they’re sharing with.', 'zume' ),
+                __( 'There’s no one “best way” to tell God’s story (also called the gospel), because the best way will depend on who you’re sharing with. Every disciple should learn to tell God’s story in a way that’s true to scripture and connects with the audience they’re sharing with.', 'zume' ),
             ],
             'right' => [],
         ],
@@ -715,8 +715,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 [
                     __( 'What comes to mind when you hear God’s command to be His "witness" and to tell His story?', 'zume' ),
-                    __( 'Why do you think Jesus chose ordinary people instead of some other way to share His Good News?', 'zume' ),
-                    __( 'What would it take for you to feel more comfortable sharing God’s Story?', 'zume' ),
+                    __( 'Why do you think Jesus chose ordinary people instead of some other way to share His good news?', 'zume' ),
+                    __( 'What would it take for you to feel more comfortable sharing God’s story?', 'zume' ),
                 ]
             ],
         ],
@@ -730,7 +730,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'The Gospel', 'zume' ),
-                __( 'One way to share God’s Good News is by telling God’s Story from Creation to Judgement – from the beginning of humankind all the way to the end of this age.', 'zume' ),
+                __( 'One way to share God’s good news is by telling God’s story from Creation to Judgement – from the beginning of humankind all the way to the end of this age.', 'zume' ),
             ],
         ],
         [
@@ -754,7 +754,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'What do you learn about mankind from this story?', 'zume' ),
                     __( 'What do you learn about God?', 'zume' ),
-                    __( 'Do you think it would be easier or harder to share God’s Story by telling a story like this?', 'zume' ),
+                    __( 'Do you think it would be easier or harder to share God’s story by telling a story like this?', 'zume' ),
                 ]
             ],
         ],
@@ -851,10 +851,19 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.', 'zume' ),
-                __( 'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
+                __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s story). Share this person’s name with the group before you go.', 'zume' ),
+                __( 'Spend time this week practicing God’s story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
                 __( 'IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next session. Be sure to remember the supplies (bread and wine / juice).', 'zume' ), // bonus reminder
             ],
+        ],
+        [
+            'key' => 's1_3_12',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
+                __( 'IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next session. Be sure to remember the supplies (bread and wine / juice).', 'zume' ),
+            ],
+            'right' => [],
         ],
 
 
@@ -936,7 +945,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
-                    __( '3-Minute Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                     __( 'The Lord’s Supper', 'zume' ),
                 ],
             ],
@@ -950,7 +959,7 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( '3-Minute Testimony', 'zume' ),
+                __( 'Three-Minute Testimony', 'zume' ),
                 __( 'As followers of Jesus, we are “witnesses" for Him, because we “testify” about the impact Jesus has had on our lives. Your story of your relationship with God is called your Testimony. It’s powerful, and it’s something no one can share better than you.', 'zume' ),
             ],
         ],
@@ -1049,7 +1058,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 [
-                    __( 'What is one area of discipleship (reading/understanding the Bible, praying, sharing God’s Story, etc.) that you want to learn more about? Who is someone that could help you learn?', 'zume' ),
+                    __( 'What is one area of discipleship (reading/understanding the Bible, praying, sharing God’s story, etc.) that you want to learn more about? Who is someone that could help you learn?', 'zume' ),
                     __( 'What is one area of discipleship that you feel you could share with others? Who is someone that you could share with?', 'zume' ),
                 ]
             ],
@@ -1147,7 +1156,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tools heard in this session:', 'zume' ),
                 [
-                    __( '3-Minute Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                     __( 'The Lord’s Supper', 'zume' ),
                 ],
             ],
@@ -1161,8 +1170,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Spend time this week practicing your 3-Minute Testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
-                __( 'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.', 'zume' ),
+                __( 'Spend time this week practicing your Three-Minute Testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
+                __( 'Ask God who He wants you to train with the Three-Minute Testimony tool. Share this person’s name with the group before you go.', 'zume' ),
             ],
         ],
 
@@ -1336,6 +1345,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Break into groups of two or three and go out into the community to practice Prayer Walking.', 'zume' ),
                     __( 'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.', 'zume' ),
                     __( 'Go as God leads, and plan on spending 60-90 minutes on this activity.', 'zume' ),
+                    __( 'This session ends with the prayer walking activity.', 'zume' ),
                 ]
             ],
             'right' => [
@@ -1352,7 +1362,9 @@ function zume_content( $lang_code = 'en') {
                 __( '(5 min)', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
+                __( 'Before you go out on your Prayer Walking activity, be sure to pray with your group to end your time together.', 'zume' ),
+                __( 'Thank God that He loves the lost, the last and the least – including us!', 'zume' ),
+                __( 'Ask Him to prepare your heart and the heart of those you‘ll meet during your walk to be open to His work.', 'zume' ),
             ],
         ],
 
@@ -2860,7 +2872,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will hear and discuss the concept:', 'zume' ),
                 [
-                    __( 'Producer not Consumer', 'zume' ),
+                    __( 'Producer Not Consumer', 'zume' ),
                 ],
                 __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
@@ -2878,7 +2890,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concept heard in this session:', 'zume' ),
                 [
-                    __( 'Producer not Consumer', 'zume' ),
+                    __( 'Producer Not Consumer', 'zume' ),
                 ],
                 __( 'Tool heard in this session:', 'zume' ),
                 [
@@ -2999,8 +3011,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Use the prayer wheel to guide you as you pray for an hour.', 'zume' ),
-                __( 'Share the prayer wheel with whomever the Lord impresses on you to do so with.  Challenge them to share it with others as well.', 'zume' ),
+                __( 'Use the prayer cycle to guide you as you pray for an hour sometime this week.', 'zume' ),
+                __( 'Share the prayer cycle with whomever the Lord directs you. Challenge them to share it with others as well.', 'zume' ),
             ],
         ],
 
@@ -3078,7 +3090,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Spiritual Economy', 'zume' ),
                     __( 'Vision Casting the Greatest Blessing', 'zume' ),
-                    __( 'The Gospel and How to Share it', 'zume' ),
+                    __( 'The Gospel', 'zume' ),
                 ]
 
             ],
@@ -3095,7 +3107,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Spiritual Economy', 'zume' ),
                     __( 'Vision Casting the Greatest Blessing', 'zume' ),
-                    __( 'The Gospel and How to Share it', 'zume' ),
+                    __( 'The Gospel', 'zume' ),
                 ],
             ],
         ],
@@ -3199,9 +3211,9 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 '',
-                __( 'Break into groups of two or three people and practice telling God’s Story.', 'zume' ),
-                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s Story in a way that you think will make sense to that particular person.', 'zume' ),
-                __( 'After you have practiced, switch. Repetition will bring confidence. By the time your finished, you ‘ll be ready to share God’s Story.', 'zume' ),
+                __( 'Break into groups of two or three people and practice telling God’s story.', 'zume' ),
+                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s story in a way that you think will make sense to that particular person.', 'zume' ),
+                __( 'After you have practiced, switch. Repetition will bring confidence. By the time you are finished, you‘ll be ready to share God’s story.', 'zume' ),
             ],
             'right' => [
                 zume_create_qr_url( $activity_base_url . 'sharegospel' ),
@@ -3231,8 +3243,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s Story). Share this person’s name with the group before you go.', 'zume' ),
-                __( 'Spend time this week practicing God’s Story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
+                __( 'Ask God who He wants you to train to use the Creation to Judgment story (or some other way to share God’s story). Share this person’s name with the group before you go.', 'zume' ),
+                __( 'Spend time this week practicing God’s story, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
             ],
         ],
 
@@ -3310,7 +3322,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
                 [
                     __( 'Baptism', 'zume' ),
-                    __( '3-Minute Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3325,7 +3337,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Tool heard in this session:', 'zume' ),
                 [
                     __( 'Baptism', 'zume' ),
-                    __( '3-Minute Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3415,7 +3427,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will practice this tool in our toolkit:', 'zume' ),
                 [
-                    __( 'Sharing Your Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3443,9 +3455,9 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'Tool heard in this session:', 'zume' ),
+                __( 'Tool practiced in this session:', 'zume' ),
                 [
-                    __( 'Sharing Your Testimony', 'zume' ),
+                    __( 'Three-Minute Testimony', 'zume' ),
                 ],
             ],
         ],
@@ -3459,8 +3471,17 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Spend time this week practicing your testimony, and then share it with at least one person from your List of 100 that you marked as "Unbeliever" or "Unknown."', 'zume' ),
-                __( 'Ask God who He wants you to train with the 3-Minute Testimony tool. Share this person’s name with the group before you go.', 'zume' ),
+                __( 'Ask God who He wants you to train with the Three-Minute Testimony tool. Share this person’s name with the group before you go.', 'zume' ),
             ],
+        ],
+        [
+            'key' => 's2_9_9',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
+                __( 'IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next session. Be sure to remember the supplies (bread and wine / juice).', 'zume' ),
+            ],
+            'right' => [],
         ],
 
 
@@ -3573,8 +3594,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Practice sharing this concept with a friend and pray for the Lord to ingrain it deeply within your heart and soul.', 'zume' ),
-                __( 'Share "Duckling Discipleship" and "Eyes to see where the Kingdom Isn’t" with whomever the Lord impresses on you. Then equip them to share it with someone else.', 'zume' ),
+                __( 'If your family are believers and live locally, lead the Lord‘s Supper with them. Otherwise, practice the skill with a believing friend.', 'zume' ),
+                __( 'Share "Duckling Discipleship" and "Eyes to See Where the Kingdom Isn’t" with whomever the Lord impresses on you. Then equip them to share it with someone else.', 'zume' ),
             ],
         ],
 
