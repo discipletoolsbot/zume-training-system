@@ -61,7 +61,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple & Church', 'zume' ),
@@ -380,7 +380,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Producer not Consumer', 'zume' ),
                 ],
@@ -649,7 +649,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Spiritual Economy', 'zume' ),
                 ],
@@ -928,7 +928,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Vision Casting the Greatest Blessing', 'zume' ),
                     __( 'Duckling Discipleship', 'zume' ),
@@ -1236,7 +1236,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Person of Peace', 'zume' ),
                 ],
@@ -1427,7 +1427,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Faithfulness is Better than Knowledge', 'zume' ),
                 ],
@@ -1614,7 +1614,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'The Training Cycle', 'zume' ),
                 ],
@@ -1800,7 +1800,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Leadership Cells', 'zume' ),
                 ],
@@ -1970,7 +1970,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Non-Sequential Growth', 'zume' ),
                     __( 'Pace', 'zume' ),
@@ -2267,7 +2267,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear this concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
                     __( 'Leadership in Networks', 'zume' ),
                 ],
@@ -2540,7 +2540,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple and Church', 'zume' ),
@@ -2858,7 +2858,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss the concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
                 [
                     __( 'Producer not Consumer', 'zume' ),
                 ],
@@ -3074,7 +3074,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Spiritual Economy', 'zume' ),
                     __( 'Vision Casting the Greatest Blessing', 'zume' ),
@@ -3534,7 +3534,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Duckling Discipleship', 'zume' ),
                     __( 'Eyes to See Where the Kingdom Isn’t', 'zume' ),
@@ -3746,7 +3746,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss the concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
                 [
                     __( 'Person of Peace', 'zume' ),
                 ],
@@ -3859,7 +3859,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Faithfulness', 'zume' ),
                     __( '3/3 Group Meeting', 'zume' ),
@@ -4090,7 +4090,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Training Cycle', 'zume' ),
                     __( 'Leadership Cells', 'zume' ),
@@ -4197,7 +4197,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Expect Non-Sequential Growth', 'zume' ),
                     __( 'Pace', 'zume' ),
@@ -4308,7 +4308,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss the concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
                 [
                     __( 'Three-Month Plan', 'zume' ),
                 ],
@@ -4415,7 +4415,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss these concepts:', 'zume' ),
+                __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
                     __( 'Coaching Checklist', 'zume' ),
                     __( 'Leadership in Networks', 'zume' ),
@@ -4521,7 +4521,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will discuss the concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
                 [
                     __( 'Peer Mentoring Groups', 'zume' ),
                 ],
