@@ -1123,9 +1123,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                 tinymce.init({
                     selector: 'textarea',
-                    plugins: 'code link wordcount lists image',
-                    menubar: 'insert',
-                    toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                    plugins: 'code link wordcount lists image table',
+                    menubar: 'insert table',
+                    toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat ',
                     link_class_list: [
                         {title: 'None', value: ''},
                         {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
