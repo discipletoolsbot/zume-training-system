@@ -109,7 +109,7 @@ export class ShareList extends LitElement {
                     </ul>
                 </div>
                 <div class="share-list__wrapper">
-                    <ul class="stack container-sm | mt-0">
+                    <ul class="stack  | mt-0">
                         ${
                             repeat(this.items, (share_item) => share_item.key, this.renderListItem)
                         }

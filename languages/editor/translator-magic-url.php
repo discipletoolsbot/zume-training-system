@@ -113,11 +113,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_css();
     }
     public function header_style(){
-        if ( isset( $_GET['tab'] ) && $_GET['tab'] === 'view_course' ) {
+        if ( isset( $_GET['tab'] ) && $_GET['tab'] === 'slides' ) {
             ?>
             <style>
                 #blank-template-body {
                     background-color: WhiteSmoke !important;
+                }
+                .hollow.hollow-focus {
+                    background-color: lightgreen !important;
                 }
             </style>
             <?php
@@ -224,7 +227,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'strings' => $tab === 'strings' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
-            'view_course' => $tab === 'view_course' ? '' : 'hollow',
+            'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
         ]
         ?>
@@ -1239,7 +1242,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     }
 
-    public function view_course() {
+    public function slides() {
 
         $zume_languages = zume_languages();
         $language = $zume_languages[$this->language_code];
@@ -1315,9 +1318,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     let type = parts[0];
                     let session = parts[1];
                     if ( ! session ) {
-                        window.location.href = `/zume_app/translator/?tab=view_course`;
+                        window.location.href = `/zume_app/translator/?tab=slides`;
                     }
-                    window.location.href = `?tab=view_course&type=${type}&session=${session}`;
+                    window.location.href = `?tab=slides&type=${type}&session=${session}`;
                 });
 
                 if ( type !== '' ) {

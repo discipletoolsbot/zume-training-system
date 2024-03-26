@@ -47,7 +47,7 @@ $three_circles_for_translation = [
         'key' => 't10_d',
         'type' => 'video',
         'center' => [
-            Zume_Course::get_video_by_key( '10', true, $lang_code ), // video
+            Zume_Course::get_video_by_key( '10', true, $lang_code = 'en' ), // video
         ],
         'left' => [],
         'right' => [],

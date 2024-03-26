@@ -1906,7 +1906,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     </ul>
                 </div>
                 <div class="share-list__wrapper">
-                    <ul class="stack container-sm | mt-0">
+                    <ul class="stack  | mt-0">
                         ${J(this.items,t=>t.key,this.renderListItem)}
                     </ul>
                 </div>
@@ -2024,4 +2024,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",Ps);
-//# sourceMappingURL=main-72f33378.js.map
+//# sourceMappingURL=main-7d8edc0e.js.map

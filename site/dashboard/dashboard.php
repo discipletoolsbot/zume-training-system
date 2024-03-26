@@ -216,6 +216,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'join_the_community' => __( 'Join the Community', 'zume' ),
             'community' => __( 'Community links', 'zume' ),
             'resources' => __( 'Resources', 'zume' ),
+            'previous_slide' => __( 'Previous Slide', 'zume' ),
+            'next_slide' => __( 'Next Slide', 'zume' ),
         ];
     }
 }
