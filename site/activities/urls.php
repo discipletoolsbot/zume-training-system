@@ -95,6 +95,7 @@ class Zume_Activites extends Zume_Magic_Page
             }
             .zume-activity-content p {
                 margin-bottom: 1em;
+                font-size: 1.2em;
             }
             .zume-activity-content ul {
                 padding: 0 2em 1em !important;
