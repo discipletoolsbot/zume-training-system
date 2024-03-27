@@ -2081,7 +2081,6 @@ function zume_content( $lang_code = 'en') {
                 __( 'Always Part of Two Churches', 'zume' ),
                 __( 'Jesus taught us that we are to stay close — to live as a small, spiritual family, to love and give our lives to one another, to celebrate and suffer — together.', 'zume' ),
                 __( 'However, Jesus also taught us to leave our homes and loved ones behind and be willing to go anywhere — and everywhere — to share and start new spiritual families.', 'zume' ),
-                __( 'So how can we do both?', 'zume' ),
             ],
         ],
         [
@@ -2137,9 +2136,9 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Coaching Checklist', 'zume' ),
                 [
-                    __( 'Get Resource - Download the Coaching Checklist and print a copy for each person or use the online qr tool.', 'zume' ),
+                    __( 'Get Resource - Scan the QR code or find a piece of paper.', 'zume' ),
                     __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist. (10 min)', 'zume' ),
-                    __( 'Assess Someone Else - Chose a believer from your List of 100 and fill out the coaching checklist as if you were their coach. (10 min)', 'zume' ),
+                    __( 'Assess Someone Else - Choose a believer from your List of 100 and fill out the Coaching Checklist as if you were their coach. (10 min)', 'zume' ),
                 ]
             ],
             'right' => [
@@ -2157,9 +2156,24 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 [
-                    __( 'Which Training Tools did you feel you would be able to train well?', 'zume' ),
-                    __( 'Are there any Training Tools that you would add or subtract from the Checklist? Why?', 'zume' ),
+                    __( 'Which tools and concepts did you feel you would be able to train well?', 'zume' ),
+                    __( 'Which tools and concepts did you feel you would struggle to train well?', 'zume' ),
+                    __( 'Are there any tools or concepts that you would add or subtract from the checklist? Why?', 'zume' ),
                 ]
+            ],
+        ],
+        [
+            'key' => 't28_e',
+            'type' => 'activity',
+            'center' => [
+            ],
+            'left' => [
+                __( 'REMEMBER - Be sure to share your Coaching Checklist results with a training partner or other mentor.', 'zume' ),
+                __( 'If you don’t have a coach or mentor, scan the QR code and request one now.', 'zume' ),
+            ],
+            'right' => [
+                zume_create_qr_url( trailingslashit( site_url() ) . $lang_code . '/get-a-coach' ),
+                __( 'Get a Coach', 'zume' ),
             ],
         ],
         [
@@ -2331,15 +2345,25 @@ function zume_content( $lang_code = 'en') {
             'type' => 'center',
             'center' => [],
             'left' => [
-                __( 'Four Fields Diagnostic Chart', 'zume' ),
-                __( 'The Four Fields diagnostic chart is a simple tool to be used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.', 'zume' ),
-                __( 'Jesus often pulled the disciples back, away from ministry to quieter places to review how the work was going. This simple tool is to help you and the co-leaders with you to follow this pattern of Jesus and to address all parts of your stewardship.', 'zume' ),
-                __( 'Review the next two slides: Field Descriptions and Four Fields Example', 'zume' ),
+                __( 'Four Fields and Generational Mapping are tools designed to serve growing movement efforts.', 'zume' ),
+                __( 'REMINDER: Zúme coaches are available to help you apply these tools in your local area.', 'zume' ),
             ],
             'right' => [],
         ],
         [
             'key' => 't31_b',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
+                __( 'Four Fields', 'zume' ),
+                __( 'Four Fields is used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.', 'zume' ),
+                __( 'Jesus often pulled the disciples away from ministry to quieter places to review how the work was going. This simple tool is to help you and the co-leaders with you to follow this pattern of Jesus and to address all parts of your stewardship.', 'zume' ),
+                __( 'Review the next two slides: Field Descriptions and Four Fields Example', 'zume' ),
+            ],
+            'right' => [],
+        ],
+        [
+            'key' => 't31_c',
             'type' => 'center',
             'center' => [],
             'left' => [
@@ -2359,7 +2383,7 @@ function zume_content( $lang_code = 'en') {
             ],
         ],
         [
-            'key' => 't31_c',
+            'key' => 't31_d',
             'type' => 'left_image',
             'center' => [
                 __( 'Four Fields Example', 'zume' ),
@@ -2374,11 +2398,24 @@ function zume_content( $lang_code = 'en') {
             ],
         ],
         [
+            'key' => 't31_e',
+            'type' => 'discuss',
+            'center' => [
+            ],
+            'left' => [
+                __( 'Discuss', 'zume' ),
+                __( '(10 min)', 'zume' ),
+            ],
+            'right' => [
+               __( 'Who do you know that shares your passion that you can meet and review these questions with?', 'zume' ),
+            ],
+        ],
+        [
             'key' => 't32_a',
             'type' => 'center',
             'center' => [],
             'left' => [
-                __( 'Generation Mapping', 'zume' ),
+                __( 'Generational Mapping', 'zume' ),
                 __( 'Generational mapping (a.k.a. generation mapping or gen mapping) is another simple tool to help leaders in a movement understand the growth around them.', 'zume' ),
                 __( 'A generation tree map can be drawn on a piece of paper or multiple pieces of paper. This map helps show where there are stops in multiplication and training might be required. Health of the movement is a top concern for leaders and fruitfulness is a top way to measure health.', 'zume' ),
                 __( 'See the example on the next slide.', 'zume' ),
@@ -2390,7 +2427,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'left_image',
             'center' => [],
             'left' => [
-                __( 'Generation Mapping Example', 'zume' ),
+                __( 'Generational Mapping Example', 'zume' ),
                 $mirror_url . '104.png',
             ],
             'right' => [
@@ -3887,6 +3924,34 @@ function zume_content( $lang_code = 'en') {
                 ],
             ],
         ],
+        [ // modified time from 75 to 40 min, original t21_a
+            'key' => 't21_aa',
+            'type' => 'center',
+            'center' => [
+                __( 'ACTIVITY', 'zume' ),
+                __( '(40 min)', 'zume' ),
+            ],
+            'left' => [
+                __( '3/3 Group Meeting', 'zume' ),
+                __( 'In the following video, you’ll be coached through an interactive 3/3 Group where you’ll learn a principle and then “press pause” and practice it with the group.', 'zume' ),
+            ],
+            'right' => [],
+        ],
+        [ // modified time from 10 to 5 minutes, original t21_c
+            'key' => 't21_cc',
+            'type' => 'discuss',
+            'center' => [],
+            'left' => [
+                __( 'DISCUSS', 'zume' ),
+                __( '(5 min)', 'zume' ),
+            ],
+            'right' => [
+                [
+                    __( 'Did you notice any differences between a 3/3 Group and a Bible Study or Small Group you’ve been a part of (or have heard about) in the past? If so, how would those differences impact the group?', 'zume' ),
+                    __( 'Could a 3/3 Group be considered a Simple Church? Why or why not?', 'zume' ),
+                ]
+            ],
+        ],
         [
             'key' => 's2_13_6',
             'type' => 'review',
@@ -4143,7 +4208,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Pick one skill or concept you have learned in Zúme and mentor someone to reproduce it to the fourth generation.', 'zume' ),
-                __( 'Share the "Training Cycle" with believer on your list of 100.', 'zume' ),
+                __( 'Share the "Training Cycle" with a believer on your list of 100.', 'zume' ),
             ],
         ],
 
@@ -4251,7 +4316,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Begin efforts to catalyze another simple church (spiritual family), or your first one.', 'zume' ),
+                __( 'Practice sharing the concept of “Pace” with a friend and pray for the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom He would have you share it with.', 'zume' ),
                 __( 'If you have already started your own simple church, share the "Always Part of Two Churches" pattern with the people in it. If not, share it with another believer you know.', 'zume' ),
             ],
         ],
@@ -4329,10 +4394,14 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
+                __( 'In this session, we will hear and discuss this concept:', 'zume' ),
                 [
-                    __( 'Three-Month Plan', 'zume' ),
+                    __( 'Leadership in Networks', 'zume' ),
                 ],
+                __( 'And we will add this tool to our toolkit:', 'zume' ),
+                [
+                    __( 'Coaching Checklist', 'zume' ),
+                ]
             ],
         ],
         [
@@ -4345,7 +4414,11 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concept heard in this session:', 'zume' ),
                 [
-                    __( 'Three-Month Plan', 'zume' ),
+                    __( 'Leadership in Networks', 'zume' ),
+                ],
+                __( 'Tool heard in this session:', 'zume' ),
+                [
+                    __( 'Coaching Checklist', 'zume' ),
                 ],
             ],
         ],
@@ -4358,8 +4431,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Set aside time on your calendar each week to work on your Three Month Plan. Plan check-ins with your training partner weekly. Each time you’re together, ask about their results and share yours, making sure you’re both working through your plans.', 'zume' ),
-                __( 'Share your plan with your training partner. If you don’t have a training partner, share it with another believer you know.', 'zume' ),
+                __( 'Identify one next step for yourself, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.', 'zume' ),
+                __( 'Share the concept of “Leadership in Networks” with someone else. Then train them to share it with someone else.', 'zume' ),
             ],
         ],
 
@@ -4438,8 +4511,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will hear and discuss these concepts:', 'zume' ),
                 [
-                    __( 'Coaching Checklist', 'zume' ),
-                    __( 'Leadership in Networks', 'zume' ),
+                    __( 'Four Fields', 'zume' ),
+                    __( 'Generational Mapping', 'zume' ),
                 ],
             ],
         ],
@@ -4453,8 +4526,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Concepts heard in this session:', 'zume' ),
                 [
-                    __( 'Coaching Checklist', 'zume' ),
-                    __( 'Leadership in Networks', 'zume' ),
+                    __( 'Four Fields', 'zume' ),
+                    __( 'Generational Mapping', 'zume' ),
                 ],
             ],
         ],
@@ -4467,8 +4540,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'SHARE', 'zume' ),
             ],
             'right' => [
-                __( 'Identify one next step for yourself, either Modeling, Assisting, Watching, or Leaving, that you need to take with the disciple you assessed with the coaching checklist.', 'zume' ),
-                __( 'Share the concept of "Leadership in Networks" with someone else. If you don’t have a training partner, share it with another believer you know.', 'zume' ),
+                __( 'Go through each of the Zúme training items and determine which field(s) each is relevant to and label a four fields chart with the items.', 'zume' ),
+                __( 'Share the Generational Mapping tool with another believer you know as a vision casting exercise.', 'zume' ),
             ],
         ],
 
@@ -4652,8 +4725,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
                 [
-                    __( 'Four Fields Tool', 'zume' ),
-                    __( 'Generation Mapping', 'zume' ),
+                    __( 'Four Fields', 'zume' ),
+                    __( 'Generational Mapping', 'zume' ),
                 ],
             ],
         ],
