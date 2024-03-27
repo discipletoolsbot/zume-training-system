@@ -16,8 +16,8 @@ export class CheckinSlide extends CourseSlide {
                     <div class="content-area">
                         <div class="stack">
                             <p>${this.slide['right'][0]}</p>
-                            <div class="qr-code"><img src="${this.slide['right'][1]}" /></div>
-                            <p>${this.slide['right'][2]} <span style="font-weight:bold;">${this.slide['right'][3]}</span></p>
+                            <div class="qr-code"><a href="${this.slide['right'][1]}" target="_blank"><img src="${this.slide['right'][2]}" /></a></div>
+                            <p>${this.slide['right'][3]} <span style="font-weight:bold;">${this.slide['right'][4]}</span></p>
                         </div>
                     </div>
                 </div>

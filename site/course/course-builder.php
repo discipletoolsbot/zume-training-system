@@ -80,22 +80,11 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
     }
 
     $content = zume_content( $lang_code );
-    $progress_bar = '<div class="progress-bar-wrapper">';
 
     $slides = [];
     foreach( $session as $index => $item ) {
-        if ( ! $item ) {
-            $progress_bar .= '<div class="progress-bar-divider"> </div>';
-            continue;
-        }
-
         $slides[$item] = [];
-
-        if ( $item !== 'final' ) {
-            $progress_bar .= '<div class="progress-bar-item '.$item.'-bar"></div>';
-        }
     }
-    $progress_bar .= '</div>';
 
     foreach( $content as $item ) {
         if ( in_array( $item['key'], $session ) ) {
@@ -124,7 +113,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         8 => ['t8_a','t8_b','t8_c'],                // list of 100
         9 => ['t9_a','t9_b','t9_c'],                // spiritual economy
         10 => ['t10_a','t10_b','t10_c','t10_d','t10_e'], // the gospel
-        11 => ['t11_a','t11_b','t11_c','t11_d'], // baptism
+        11 => ['t11_a','t11_b','t11_c','t11_d'],    // baptism
         12 => ['t12_a','t12_b','t12_c'],            // 3-minute testimony
         13 => ['t13_a','t13_b','t13_c'],            // greatest blessing
         14 => ['t14_a','t14_b','t14_c'],            // duckling discipleship
@@ -144,7 +133,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         28 => ['t28_a','t28_b','t28_c','t28_d'],    // coaching checklist
         29 => ['t29_a','t29_b','t29_c'],            // leadership in networks
         30 => ['t30_a','t30_b','t30_c'],            // peer mentoring groups
-        31 => ['t31_a','t31_b','t31_c'],            // four fields tool
+        31 => ['t31_a','t31_b','t31_c','t31_d','t31_e'],  // four fields tool
         32 => ['t32_a','t32_b'],                    // generation mapping
     );
     */

@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-
+// @remove. I believe we have moved passed this display to the current course viewer.
 class Zume_Content_Viewer extends Zume_Magic_Page
 {
     use Translateable;

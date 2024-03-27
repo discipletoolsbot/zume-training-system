@@ -17,8 +17,8 @@ export class ActivitySlide extends CourseSlide {
                         </div>
                         <div class="content-area">
                             <div class="stack center | text-center">
-                                <div class="qr-code"><img src="${this.slide['right'][0]}" /></div>
-                                <p>${this.slide['right'][1]}</p>
+                                <div class="qr-code"><a href="${this.slide['right'][0]}" target="_blank"><img src="${this.slide['right'][1]}" /></a></div>
+                                <p>${this.slide['right'][2]}</p>
                             </div>
                         </div>
                     </div>
@@ -27,4 +27,4 @@ export class ActivitySlide extends CourseSlide {
         `
     }
 }
-customElements.define('activity-slide', ActivitySlide)
+customElements.define('activity-slide', ActivitySlide )
