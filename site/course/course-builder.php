@@ -80,10 +80,16 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
     }
 
     $content = zume_content( $lang_code );
+    $progress_bar = '<div class="progress-bar-wrapper">';
 
     $slides = [];
     foreach( $session as $index => $item ) {
+        if ( ! $item ) {
+            continue;
+        }
+
         $slides[$item] = [];
+
     }
 
     foreach( $content as $item ) {
