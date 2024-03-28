@@ -4853,21 +4853,20 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Get a Coach', 'zume' ),
                 __( 'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.', 'zume' ),
-                $mirror_url . 'qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png', // @todo make this a live link
             ],
             'right' => [
                 __( 'Join the Community', 'zume' ),
                 __( 'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation. Check out how others are implementing Zúme Training in their lives and communities.', 'zume' ),
-                $mirror_url . 'qr/placeholder.png',
+                $mirror_url . 'qr/placeholder.png', // @todo make this a live link
             ],
         ],
         [
             'key' => 'congratulations',
             'type' => 'congratulations',
             'center' => [
-                __( 'CONGRATULATIONS', 'zume' ),
-                __( 'on completing Zume Training!', 'zume' ),
-                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png',
+                __( 'CONGRATULATIONS on completing Zume Training!', 'zume' ),
+                'https://storage.googleapis.com/zume-file-mirror/images/VideoGraphic-2.svg',
             ],
             'left' => [],
             'right' => [],

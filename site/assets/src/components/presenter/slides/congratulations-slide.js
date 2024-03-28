@@ -8,8 +8,9 @@ export class CongratulationsSlide extends CourseSlide {
                 <div class="cover">
                     <div class="center activity-card" data-large>
                         <p>${this.slide['center'][0]}</p>
-                        <p>${this.slide['center'][1] ?? ''}</p>
-                      <p><img src="${this.slide['center'][2] ?? ''}" /></p>
+                    </div>
+                    <div class="center">
+                      <p><img src="${this.slide['center'][1] ?? ''}" /></p>
                     </div>
                 </div>
             </div>
