@@ -1439,6 +1439,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     <div class="center activity-card" data-large>
                         <p>${this.slide.center[0]}</p>
                         <p>${this.slide.center[1]??""}</p>
+                      <p><img src="${this.slide.center[2]??""}" /></p>
                     </div>
                 </div>
             </div>
@@ -2024,4 +2025,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",Ps);
-//# sourceMappingURL=main-1a11011e.js.map
+//# sourceMappingURL=main-f765c636.js.map

@@ -2430,9 +2430,15 @@ function zume_content( $lang_code = 'en') {
                 __( '(10 min)', 'zume' ),
             ],
             'right' => [
-               __( 'Who do you know that shares your passion that you can meet and review these questions with?', 'zume' ),
+               [
+                   __( 'Identify an empty field around you. What communities or people groups that you are connected to have no gospel activity?', 'zume' ),
+                   __( 'What are some ways you could share good new with people in this empty field?', 'zume' ),
+                   __( 'Why is it important to evaluate progress in these fields?', 'zume' ),
+
+               ]
             ],
         ],
+
         [
             'key' => 't32_a',
             'type' => 'center',
@@ -2456,6 +2462,23 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 zume_create_qr_url( $activity_base_url . 'genmapping' ),
                 __( 'Resource', 'zume' ),
+            ],
+        ],
+        [
+            'key' => 't32_c',
+            'type' => 'discuss',
+            'center' => [],
+            'left' => [
+                __( 'Discuss', 'zume' ),
+                __( '(10 min)', 'zume' ),
+            ],
+            'right' => [
+                __( 'Use the Generational Mapping example to discuss the following:', 'zume' ),
+                [
+                    __( 'Which leaders are seeing multiplication?', 'zume' ),
+                    __( 'Which groups would you expect to multiply next?', 'zume' ),
+                    __( 'Which leaders could help and strengthen other leaders?', 'zume' ),
+                ]
             ],
         ],
         [
@@ -2489,9 +2512,12 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Peer Mentoring Group Practice', 'zume' ),
-                __( 'Break into groups of two or three and work through the 3/3 sections of the Peer Mentoring Group.', 'zume' ),
-                __( 'To practice, choose one person to be the "mentee" for this session and have the other members work through the suggested questions list as peer mentors.',  'zume' ),
-                __( 'By the time you’re finished, everyone should have a basic understanding of asking and answering.', 'zume' ),
+               [
+                   __( 'Scan the QR code for the 3/3 group outline.', 'zume' ),
+                   __( 'Break into groups of two or three.', 'zume' ),
+                   __( 'Choose one person in the group to be the "mentee" and have the other members work through the suggested questions list as peer mentors.',  'zume' ),
+               ],
+
             ],
             'right' => [
                 $activity_base_url . 'peermentoring',
@@ -2522,9 +2548,9 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Make your Three Month Plan', 'zume' ),
                 [
-                    __( 'Review Questions - All questions are optional, and intended as prompts for your plan. (5 min)', 'zume' ),
+                    __( 'Read - Scan the QR code. You don‘t have to commit to every item, rather they are intended as prompts for your plan. (5 min)', 'zume' ),
                     __( 'Listen - Take time to be as quiet as possible and listen to what God chooses to reveal. (10 min)', 'zume' ),
-                    __( 'Write Plan - Respond to worksheet questions and use a piece of paper or the QR code to save your answers. (15 min)', 'zume' ),
+                    __( 'Record Your Plan - Write commitments on a piece of paper or use the online tool to save your answers. (15 min)', 'zume' ),
                 ],
             ],
             'right' => [
@@ -4564,6 +4590,18 @@ function zume_content( $lang_code = 'en') {
         ],
         [
             'key' => 's2_18_6',
+            'type' => 'pray',
+            'center' => [],
+            'left' => [
+                __( 'PRAY', 'zume' ),
+                __( '(5 min)', 'zume' )
+            ],
+            'right' => [
+                __( 'Take a moment to listen to God and ask if there are any action steps you or your group needs to take based on the Four Fields discussion you just had.', 'zume' ),
+            ],
+        ],
+        [
+            'key' => 's2_18_7',
             'type' => 'review',
             'center' => [],
             'left' => [
@@ -4578,7 +4616,7 @@ function zume_content( $lang_code = 'en') {
             ],
         ],
         [
-            'key' => 's2_18_7',
+            'key' => 's2_18_8',
             'type' => 'obey',
             'center' => [],
             'left' => [
@@ -4662,7 +4700,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will hear and discuss the concept:', 'zume' ),
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
                     __( 'Peer Mentoring Groups', 'zume' ),
                 ],
@@ -4676,7 +4714,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'REVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'Concept heard in this session:', 'zume' ),
+                __( 'Tool heard in this session:', 'zume' ),
                 [
                     __( 'Peer Mentoring Groups', 'zume' ),
                 ],
@@ -4765,16 +4803,27 @@ function zume_content( $lang_code = 'en') {
         ],
         [
             'key' => 's2_20_5',
+            'type' => 'center',
+            'center' => [],
+            'left' => [
+                __( 'Be encouraged ...', 'zume' ),
+                __( 'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!', 'zume' ),
+                __( 'Yet Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training.', 'zume' ),
+            ],
+            'right' => [
+            ],
+        ],
+        [
+            'key' => 's2_20_6',
             'type' => 'overview',
             'center' => [],
             'left' => [
                 __( 'OVERVIEW', 'zume' ),
             ],
             'right' => [
-                __( 'In this session, we will add these tools to our toolkit:', 'zume' ),
+                __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
-                    __( 'Four Fields', 'zume' ),
-                    __( 'Generational Mapping', 'zume' ),
+                    __( 'Three-Month Plan', 'zume' ),
                 ],
             ],
         ],
@@ -4818,6 +4867,7 @@ function zume_content( $lang_code = 'en') {
             'center' => [
                 __( 'CONGRATULATIONS', 'zume' ),
                 __( 'on completing Zume Training!', 'zume' ),
+                'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png',
             ],
             'left' => [],
             'right' => [],

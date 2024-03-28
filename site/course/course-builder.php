@@ -14,7 +14,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         $all['7'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_4','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8','s1_7_9','final']; // session 7
         $all['8'] = ['s1_8_1','s1_8_2','s1_8_3','s1_8_4','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','s1_8_8','final']; // session 8
         $all['9'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'s1_9_9','s1_9_10','final']; // session 9
-        $all['10'] = ['s1_10_1','s1_10_2','s1_10_3','s1_10_4','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
+        $all['10'] = ['s1_10_1','s1_10_2','s1_10_3','s1_10_4','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
 
         if ( empty( $session_number ) ) {
             foreach( $all as $set ) {
@@ -44,9 +44,9 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         $all['15'] = ['s2_15_1','s2_15_2','s2_15_3','s2_15_4','s2_15_5',false,'t22_a','t22_b','t22_c',false,'t23_a','t23_b','t23_c',false,'s2_15_6','s2_15_7','final']; // session 15
         $all['16'] = ['s2_16_1','s2_16_2','s2_16_3','s2_16_4','s2_16_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'s2_16_6','s2_16_7','final'];   // session 16
         $all['17'] = ['s2_17_1','s2_17_2','s2_17_3','s2_17_4','s2_17_5',false,'t29_a','t29_b','t29_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'s2_17_6','s2_17_7','final']; // session 17
-        $all['18'] = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b',false,'s2_18_6','s2_18_7','final']; // session 18
+        $all['18'] = ['s2_18_1','s2_18_2','s2_18_3','s2_18_4','s2_18_5',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'s2_18_6',false,'t32_a','t32_b','t32_c',false,'s2_18_7','s2_18_8','final']; // session 18
         $all['19'] = ['s2_19_1','s2_19_2','s2_19_3','s2_19_4','s2_19_5',false,'t30_a','t30_b','t30_c',false,'s2_19_6','s2_19_7','final']; // session 19
-        $all['20'] = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5',false,'t31_a','t31_b','t31_c',false,'t32_a','t32_b',false,'next_steps','congratulations','final']; // session 20
+        $all['20'] = ['s2_20_1','s2_20_2','s2_20_3','s2_20_4','s2_20_5','s2_20_6',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 20
 
         if ( empty( $session_number ) ) {
             foreach( $all as $set ) {
@@ -67,7 +67,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         $all['4'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8',false,'break',false, // session 7
             's1_8_1','s1_8_2','s1_8_3','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','final']; // session 8
         $all['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'s1_9_9',false,'break',false, // session 9
-            's1_10_1','s1_10_2','s1_10_3','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
+            's1_10_1','s1_10_2','s1_10_3','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
 
         if ( empty( $session_number ) ) {
             foreach( $all as $set ) {
