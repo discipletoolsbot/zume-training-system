@@ -64,8 +64,7 @@ class Zume_QR_Redirect
          * Returns the permalink url with the language for the post page.
          */
         if ( isset( $_GET['p'] ) ) {
-
-            dt_write_log( 'Post: ' . $_GET['p'] );
+//            dt_write_log( 'Post: ' . $_GET['p'] );
 
             $post_id = esc_attr( $_GET['p'] );
 
@@ -93,12 +92,34 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * By Language code and Video ID
+         * By Video ID (Legacy)
+         * (legacy support for zume4 books)
+         *
+         * https://zume.training/zume_app/qr/?v=2342343
+         */
+        else if( isset( $_GET['v'] ) && !isset( $_GET['l'] ) ) {
+//            dt_write_log( 'Video: ' . $_GET['v'] );
+
+            $link = site_url() . '/zume_app/video/?id=';
+            $video_id = esc_attr( $_GET['v'] );
+
+            $link = $link . $video_id;
+
+            if ( $this->development_display ) {
+                echo '<span style="font-size: 3em;">' . $link . '</span>';
+            } else {
+                header("Location: ".$link, true, 302);
+            }
+
+            exit();
+        }
+        /**
+         * By Language Code and Video ID
          *
          * https://zume.training/zume_app/qr/?l=en&v=33
          */
         else if ( isset( $_GET['l'], $_GET['v'] ) ) {
-            dt_write_log( 'Video Language: ' . $_GET['l'] . ' ' . $_GET['v'] );
+//            dt_write_log( 'Video Language: ' . $_GET['l'] . ' ' . $_GET['v'] );
 
             $requested_video_id = esc_attr( $_GET['v'] );
             $language_slug = esc_attr( $_GET['l'] );
@@ -128,35 +149,13 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * By Video ID
-         * (legacy support for zume4 books)
-         *
-         * https://zume.training/zume_app/qr/?v=2342343
-         */
-        else if( isset( $_GET['v'] ) && !isset( $_GET['l'] ) ) {
-            dt_write_log( 'Video: ' . $_GET['v'] );
-
-            $link = site_url() . '/zume_app/video/?id=';
-            $video_id = esc_attr( $_GET['v'] );
-
-            $link = $link . $video_id;
-
-            if ( $this->development_display ) {
-                echo '<span style="font-size: 3em;">' . $link . '</span>';
-            } else {
-                header("Location: ".$link, true, 302);
-            }
-
-            exit();
-        }
-        /**
          * By Language code and Download ID
          *
          * https://zume.training/zume_app/qr/?l=en&d=33
          * Returns the download link according to the language code and download id.
          */
         else if( isset( $_GET['l'], $_GET['d'] ) ) {
-            dt_write_log( 'QR Redirect: ' . $_GET['d'] . ' ' . $_GET['l'] );
+//            dt_write_log( 'QR Redirect: ' . $_GET['d'] . ' ' . $_GET['l'] );
 
             $requested_download_id = esc_attr( $_GET['d'] );
             $language_slug = esc_attr( $_GET['l'] );
@@ -186,12 +185,13 @@ class Zume_QR_Redirect
             exit();
         }
         /**
+         * @todo maybe remove. tools strategy changeed, so this function not needed.
          * By Language Code and Tools
          *
          * https://zume.training/zume_app/qr/?l=en&t=123
          */
         else if ( isset( $_GET['l'], $_GET['t'] ) ) {
-            dt_write_log( 'Resource: ' . $_GET['l'] . ' ' . $_GET['t'] );
+//            dt_write_log( 'Resource: ' . $_GET['l'] . ' ' . $_GET['t'] );
 
             $tool_id = esc_attr( $_GET['t'] );
             $language_slug = esc_attr( $_GET['l'] );
@@ -226,7 +226,7 @@ class Zume_QR_Redirect
          * https://zume.training/zume_app/qr/?l=en&a=4
          */
         else if ( isset( $_GET['l'], $_GET['a'] ) ) {
-            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['a'] );
+//            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['a'] );
 
             $activity_id = esc_attr( $_GET['a'] );
             $language_slug = esc_attr( $_GET['l'] );
@@ -242,12 +242,12 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * By Language Code and Script ID
+         * By Language Code and Video Script ID
          *
          * https://zume.training/zume_app/qr/?l=en&s=4
          */
         else if ( isset( $_GET['l'], $_GET['s'] ) ) {
-            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['s'] );
+//            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['s'] );
 
             $script_id = esc_attr( $_GET['s'] );
             $language_code = esc_attr( $_GET['l'] );
@@ -263,17 +263,44 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * By Language Code and Activity ID
+         * By Language Code and Checkin ID
          *
          * https://zume.training/zume_app/qr/?l=en&a=4
          */
         else if ( isset( $_GET['l'], $_GET['c'] ) ) {
-            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['c'] );
+//            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['c'] );
 
             $checkin_code = esc_attr( $_GET['c'] );
             $language_slug = esc_attr( $_GET['l'] );
 
             $link = $this->root_url . $language_slug . '/checkin/?code=' . $checkin_code;
+
+            if ( $this->development_display ) {
+                echo '<span style="font-size: 3em;">' . $link . '</span>';
+            } else {
+                header("Location: ".$link, true, 302);
+            }
+
+            exit();
+        }
+        /**
+         * By Language Code and Other Pages
+         *
+         * https://zume.training/zume_app/qr/?l=en&o=coach
+         */
+        else if ( isset( $_GET['l'], $_GET['o'] ) ) {
+            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['o'] );
+
+            $other_page_redirect = esc_attr( $_GET['o'] );
+            $language_slug = esc_attr( $_GET['l'] );
+
+            switch( $other_page_redirect ) {
+                case 'coach':
+                    $link = zume_get_a_coach_wizard_url( $language_slug );
+                    break;
+                default:
+                    break;
+            }
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

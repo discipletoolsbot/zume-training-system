@@ -4,6 +4,7 @@ function zume_content( $lang_code = 'en') {
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
     $checkin_base_url = site_url() . '/' . $lang_code . '/checkin/?code=';
     $activity_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&a=';
+    $other_page_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&o=';
 
     return [
         /***************************************************************************************************************
@@ -4853,7 +4854,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Get a Coach', 'zume' ),
                 zume_get_a_coach_wizard_url( $lang_code ),
-                zume_create_qr_url( zume_get_a_coach_wizard_url( $lang_code ) ),
+                zume_create_qr_url( $other_page_base_url . 'coach' ),
                 __( 'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.', 'zume' ),
             ],
             'right' => [
