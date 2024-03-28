@@ -117,16 +117,16 @@ class Zume_Training {
 
         $this->define_constants();
         $this->setup_hooks();
-        require_once( 'classes/integrations/polylang-integration.php' );
-        require_once( 'classes/integrations/urls.php' );
+        require_once( 'utilities/integrations/polylang-integration.php' );
+        require_once( 'utilities/integrations/urls.php' );
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
-        require_once( 'classes/loader.php' );
+        require_once( 'utilities/loader.php' );
         require_once( 'site/loader.php' );
 
         $this->i18n();
 
-        require_once( 'languages/editor/loader.php' );
+        require_once( 'languages/translator-app/loader.php' );
     }
     public static function activation() {
     }

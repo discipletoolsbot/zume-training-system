@@ -74,7 +74,7 @@ class Zume_Training_Dev extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_css();
     }
     public function wp_enqueue_scripts() {
-        wp_enqueue_script( 'zume_forms', plugin_dir_url( __FILE__ ) . 'forms.js', [ 'jquery' ], filemtime( plugin_dir_path( __FILE__ ) . 'forms.js' ), true );
+        wp_enqueue_script( 'zume_forms', plugin_dir_url( __FILE__ ) . 'temp-dev.js', [ 'jquery' ], filemtime( plugin_dir_path( __FILE__ ) . 'temp-dev.js' ), true );
         wp_localize_script(
             'zume_forms', 'zumeForms', array(
                 'root' => esc_url_raw( rest_url() ),
