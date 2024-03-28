@@ -12,15 +12,15 @@ export class NextStepsSlide extends CourseSlide {
                         <div>
                             <div class="stack align-items-center">
                                 <p><strong>${this.slide['left'][0]}</strong></p>
-                                <div class="qr-code"><img src="${this.slide['left'][2]}" /></div>
-                                <p>${this.slide['left'][1]}</p>
+                                <div class="qr-code"><a href="${this.slide['left'][1]}" target="_blank"><img src="${this.slide['left'][2]}" /></a></div>
+                                <p>${this.slide['left'][3]}</p>
                             </div>
                         </div>
                         <div>
                             <div class="stack align-items-center">
                                 <p><strong>${this.slide['right'][0]}</strong></p>
-                                <div class="qr-code"><img src="${this.slide['right'][2]}" /></div>
-                                <p>${this.slide['right'][1]}</p>
+                                <div class="qr-code"><a href="${this.slide['right'][1]}" target="_blank"><img src="${this.slide['right'][2]}" /></a></div>
+                                <p>${this.slide['right'][3]}</p>
                             </div>
                         </div>
                     </div>

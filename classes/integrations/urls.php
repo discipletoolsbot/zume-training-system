@@ -106,6 +106,11 @@ function zume_checkin_wizard_url( $code = null ) {
     $redirect_url = zume_wizard_url( 'checkin', $params );
     return zume_login_url( 'register', $redirect_url );
 }
+function zume_join_the_community_wizard_url( $code = null ) {
+    $params = empty( $code ) ? [] : [ 'code' => $code ];
+    $redirect_url = zume_wizard_url( 'join_the_community', $params );
+    return zume_login_url( 'register', $redirect_url );
+}
 /**
  * Get the url for the wizard.
  *
@@ -138,6 +143,9 @@ function zume_wizard_url( $type = 'start', $params = [] ) {
             break;
         case 'checkin':
             $url = "$wizard_root/checkin";
+            break;
+        case 'join_the_community':
+            $url = "$wizard_root/join-the-community";
             break;
         default:
             $url = '';
