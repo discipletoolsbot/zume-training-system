@@ -1729,8 +1729,8 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $activity_base_url . '33groupmk5',
-                zume_create_qr_url( $activity_base_url . '33groupmk5' ),
+                $activity_base_url . '33group',
+                zume_create_qr_url( $activity_base_url . '33group' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -1917,8 +1917,8 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $activity_base_url . '33groupa2',
-                zume_create_qr_url( $activity_base_url . '33groupa2' ),
+                $activity_base_url . '33group',
+                zume_create_qr_url( $activity_base_url . '33group' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
@@ -4163,8 +4163,8 @@ function zume_content( $lang_code = 'en') {
                 ]
             ],
             'right' => [
-                $activity_base_url . '33groupmk5',
-                zume_create_qr_url( $activity_base_url . '33groupmk5' ),
+                $activity_base_url . '33group',
+                zume_create_qr_url( $activity_base_url . '33group' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],

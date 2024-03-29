@@ -226,7 +226,7 @@ Zume_Activites_List100::instance();
 class Zume_Activites_Sharegospel extends Zume_Activites
 {
     use Translateable;
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Activity - Share the Gospel';
     public $root = 'zume_activities';
     public $type = 'sharegospel';
 
@@ -247,7 +247,7 @@ Zume_Activites_Sharegospel::instance();
 class Zume_Activites_Sharetestimony extends Zume_Activites
 {
     use Translateable;
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Activity - Share Testimony';
     public $root = 'zume_activities';
     public $type = 'sharetestimony';
 
@@ -268,7 +268,7 @@ Zume_Activites_Sharetestimony::instance();
 class Zume_Activites_Supper extends Zume_Activites
 {
     use Translateable;
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Activity - Lords Supper';
     public $root = 'zume_activities';
     public $type = 'lordssupper';
 
@@ -289,7 +289,7 @@ Zume_Activites_Supper::instance();
 class Zume_Activites_Bless extends Zume_Activites
 {
     use Translateable;
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Activity - Blessing Prayer';
     public $root = 'zume_activities';
     public $type = 'blessprayer';
 
@@ -307,12 +307,12 @@ class Zume_Activites_Bless extends Zume_Activites
 }
 Zume_Activites_Bless::instance();
 
-class Zume_Activites_33groupa2 extends Zume_Activites
+class Zume_Activites_33group extends Zume_Activites
 {
     use Translateable;
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Activity - 3/3 Group Meeting';
     public $root = 'zume_activities';
-    public $type = '33groupa2';
+    public $type = '33group';
 
     private static $_instance = null;
     public static function instance() {
@@ -326,49 +326,7 @@ class Zume_Activites_33groupa2 extends Zume_Activites
         parent::__construct();
     }
 }
-Zume_Activites_33groupa2::instance();
-
-class Zume_Activites_33groupm6 extends Zume_Activites
-{
-    use Translateable;
-    public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
-    public $type = '33groupm6';
-
-    private static $_instance = null;
-    public static function instance() {
-        if ( is_null( self::$_instance ) ) {
-            self::$_instance = new self();
-        }
-        return self::$_instance;
-    }
-
-    public function __construct() {
-        parent::__construct();
-    }
-}
-Zume_Activites_33groupm6::instance();
-
-class Zume_Activites_33groupmk5 extends Zume_Activites
-{
-    use Translateable;
-    public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
-    public $type = '33groupmk5';
-
-    private static $_instance = null;
-    public static function instance() {
-        if ( is_null( self::$_instance ) ) {
-            self::$_instance = new self();
-        }
-        return self::$_instance;
-    }
-
-    public function __construct() {
-        parent::__construct();
-    }
-}
-Zume_Activites_33groupmk5::instance();
+Zume_Activites_33group::instance();
 
 class Zume_Activites_Prayerwalk extends Zume_Activites
 {
