@@ -1357,7 +1357,10 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Practice the B.L.E.S.S. Prayer', 'zume' ),
-                __( 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Break into groups of two or three and practice praying the five areas of the B.L.E.S.S. Prayer over each other.', 'zume' ),
+                ],
             ],
             'right' => [
                 $activity_base_url . 'blessprayer',
@@ -1521,16 +1524,16 @@ function zume_content( $lang_code = 'en') {
         ],
         [
             'key' => 't21_a',
-            'type' => 'center',
-            'center' => [
-                __( 'ACTIVITY', 'zume' ),
+            'type' => 'watch',
+            'center' => [],
+            'left' => [
+                __( 'Watch', 'zume' ),
                 __( '(75 min)', 'zume' ),
             ],
-            'left' => [
+            'right' => [
                 __( '3/3 Group Meeting', 'zume' ),
                 __( 'In the following video, you’ll be coached through an interactive 3/3 Group where you’ll learn a principle and then “press pause” and practice it with the group.', 'zume' ),
             ],
-            'right' => [],
         ],
         [
             'key' => 't21_b',
@@ -2439,8 +2442,9 @@ function zume_content( $lang_code = 'en') {
                 $mirror_url . '98.png',
             ],
             'right' => [
+                $activity_base_url . '4fields',
                 zume_create_qr_url( $activity_base_url . '4fields' ),
-                __( 'Resource', 'zume' ),
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
         [
@@ -2483,8 +2487,9 @@ function zume_content( $lang_code = 'en') {
                 $mirror_url . '104.png',
             ],
             'right' => [
+                $activity_base_url . 'genmapping',
                 zume_create_qr_url( $activity_base_url . 'genmapping' ),
-                __( 'Resource', 'zume' ),
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
         [
@@ -2514,7 +2519,8 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Peer Mentoring Groups', 'zume' ),
-                __( 'Making disciples who make disciples means making leaders who make leaders. How do you develop stronger leaders? By teaching them how to love one another better. Peer Mentoring Groups help leaders love deeper.', 'zume' ),
+                __( 'Making disciples who make disciples means making leaders who make leaders.', 'zume' ),
+                __( 'Peer Mentoring groups gather leaders together and help them love and encourage one another in their faith and leadership.', 'zume' ),
             ],
         ],
         [
@@ -2536,8 +2542,8 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Peer Mentoring Group Practice', 'zume' ),
                [
-                   __( 'Scan the QR code for the 3/3 group outline.', 'zume' ),
-                   __( 'Break into groups of two or three.', 'zume' ),
+                   __( 'Scan the QR code.', 'zume' ),
+                   __( 'Break into groups of two or three. Use the 3/3 formatted Peer Mentoring Group outline.', 'zume' ),
                    __( 'Choose one person in the group to be the "mentee" and have the other members work through the suggested questions list as peer mentors.',  'zume' ),
                ],
 
@@ -3328,10 +3334,12 @@ function zume_content( $lang_code = 'en') {
                 __( '(50 min)', 'zume' ),
             ],
             'left' => [
-                '',
-                __( 'Break into groups of two or three people and practice telling God’s story.', 'zume' ),
-                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice telling God’s story in a way that you think will make sense to that particular person.', 'zume' ),
-                __( 'After you have practiced, switch. Repetition will bring confidence. By the time you are finished, you‘ll be ready to share God’s story.', 'zume' ),
+                __( 'Practice Sharing the Gospel', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Break into groups of two or three people and practice telling God’s story to each other.', 'zume' ),
+                    __( 'After you have practiced, switch. Repetition will bring confidence. By the time you are finished, you‘ll be ready to share God’s story.', 'zume' ),
+                ],
             ],
             'right' => [
                 $activity_base_url . 'sharegospel',
@@ -3561,9 +3569,11 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Share Your Testimony', 'zume' ),
-                __( 'Break into groups of two of three and practice sharing your Three-Minute Testimony.', 'zume' ),
-                __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice your Testimony in a way that you think will make sense to that particular person.', 'zume' ),
-                __( 'After you’ve practiced, switch. Pretend to be someone else’s five people from the list. By the time you’re finished, you should be able to tell your Testimony in about 3 minutes or less.', 'zume' ),
+                [
+                    __( 'Break into groups of two of three and practice sharing your Three-Minute Testimony.', 'zume' ),
+                    __( 'Choose 5 people from your List of 100. Have someone pretend to be each of those five people, and practice your Testimony in a way that you think will make sense to that particular person.', 'zume' ),
+                    __( 'After you’ve practiced, switch. Pretend to be someone else’s five people from the list. By the time you’re finished, you should be able to tell your Testimony in about 3 minutes or less.', 'zume' ),
+                ],
                 __( 'Repetition builds confidence.', 'zume' ),
             ],
             'right' => [],
@@ -4015,16 +4025,16 @@ function zume_content( $lang_code = 'en') {
         ],
         [ // modified time from 75 to 40 min, original t21_a
             'key' => 't21_aa',
-            'type' => 'center',
-            'center' => [
-                __( 'ACTIVITY', 'zume' ),
+            'type' => 'watch',
+            'center' => [],
+            'left' => [
+                __( 'Watch', 'zume' ),
                 __( '(40 min)', 'zume' ),
             ],
-            'left' => [
+            'right' => [
                 __( '3/3 Group Meeting', 'zume' ),
                 __( 'In the following video, you’ll be coached through an interactive 3/3 Group where you’ll learn a principle and then “press pause” and practice it with the group.', 'zume' ),
             ],
-            'right' => [],
         ],
         [ // modified time from 10 to 5 minutes, original t21_c
             'key' => 't21_cc',
@@ -4157,6 +4167,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
                 [
+                    __( 'Scan the QR code.', 'zume' ),
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ),
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)', 'zume' ),
