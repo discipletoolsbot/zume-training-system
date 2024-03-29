@@ -217,7 +217,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Practice S.O.A.P.S.', 'zume' ),
-                __( 'Break up and work individually through the S.O.A.P.S. Bible study pattern using Matthew 6:9-13. (20 min)', 'zume' ),
+                __( 'Scan QR code and work individually through the SOAPS Bible study pattern using Matthew 6:9-13. (20 min)', 'zume' ),
                 [
                     __( 'Scripture', 'zume' ),
                     __( 'Observation', 'zume' ),
@@ -265,8 +265,11 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Practice Accountability Groups', 'zume' ),
-                __( 'Break into groups of two or three people of the same gender.', 'zume' ),
-                __( 'Spend the next 20 minutes working together through the Accountability Questions.', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Break into groups of two or three people of the same gender.', 'zume' ),
+                    __( 'Spend the next 20 minutes working together through the Accountability Questions.', 'zume' ),
+                ]
             ],
             'right' => [
                 $activity_base_url . 'accountability',
@@ -527,8 +530,11 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Create your own list of 100', 'zume' ),
-                __( 'Have everyone in your group take the next 30 minutes to fill out their own list of relationships. List as many as you can.', 'zume' ),
-                __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
+                [
+                    __( 'Scan QR code or use a piece of paper.', 'zume' ),
+                    __( 'Have everyone in your group take the next 30 minutes to fill out their own list of relationships. List as many as you can.', 'zume' ),
+                    __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
+                ]
             ],
             'right' => [
                 $activity_base_url . 'listof100',
@@ -775,7 +781,12 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Share the Gospel', 'zume' ),
-                __( 'Break into groups of two or three people and take turns telling the Gospel to each other.', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Break into groups of two or three people.', 'zume' ),
+                    __( 'Take turns telling the Gospel to each other.', 'zume' ),
+                ],
+
             ],
             'right' => [
                 $activity_base_url . 'sharegospel',
@@ -987,11 +998,16 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(20 min)', 'zume' ),
+                __( '(30 min)', 'zume' ),
             ],
             'left' => [
-                __( 'Prepare to share your testimony', 'zume' ),
-                __( 'Work on writing out your story and keeping it to only three minutes.', 'zume' ),
+                __( 'Practice sharing your testimony', 'zume' ),
+                [
+                    __('Scan QR code.', 'zume'),
+                    __('Work on writing out your story and keeping it to only three minutes. (10 min)', 'zume'),
+                    __('Break into groups of two to three and practice sharing. (20 min)', 'zume'),
+                ]
+
             ],
             'right' => [
                 $activity_base_url . 'sharetestimony',
@@ -1144,7 +1160,10 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Celebrate the Lord’s Supper', 'zume' ),
-                __( 'Spend the next 10 minutes celebrating The Lord’s Supper with your group.', 'zume' ),
+                [
+                    __( 'Scan the QR code.', 'zume'),
+                    __( 'Spend the next 10 minutes celebrating the Lord’s Supper with your group.', 'zume' ),
+                ]
             ],
             'right' => [
                 $activity_base_url . 'lordssupper',
@@ -1356,6 +1375,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Prayer Walking', 'zume' ),
                 [
+                    __( 'Scan the QR code.', 'zume'),
                     __( 'Break into groups of two or three and go out into the community to practice Prayer Walking.', 'zume' ),
                     __( 'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.', 'zume' ),
                     __( 'Go as God leads, and plan on spending 60-90 minutes on this activity.', 'zume' ),
@@ -1702,6 +1722,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
                 [
+                    __( 'Scan the QR code.', 'zume' ),
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)', 'zume' ),
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (30 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (30 min)', 'zume' ),
@@ -1889,6 +1910,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
                 [
+                    __( 'Scan the QR code.', 'zume' ),
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)', 'zume' ),
                     __( 'LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer questions 1- 4. (30 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train and Share. (30 min)', 'zume' ),
@@ -2157,7 +2179,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Coaching Checklist', 'zume' ),
                 [
-                    __( 'Get Resource - Scan the QR code or find a piece of paper.', 'zume' ),
+                    __( 'Scan the QR code or find a piece of paper.', 'zume' ),
                     __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist. (10 min)', 'zume' ),
                     __( 'Assess Someone Else - Choose a believer from your List of 100 and fill out the Coaching Checklist as if you were their coach. (10 min)', 'zume' ),
                 ]
@@ -4853,14 +4875,14 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Get a Coach', 'zume' ),
-                $other_page_base_url . 'coach',
-                zume_create_qr_url( $other_page_base_url . 'coach' ),
+                $other_page_base_url . 'coaching',
+                zume_create_qr_url( $other_page_base_url . 'coaching' ),
                 __( 'If you don’t have one yet, this is one of the best steps you can take in growing as a multiplying disciple.', 'zume' ),
             ],
             'right' => [
                 __( 'Join the Community', 'zume' ),
-                zume_join_the_community_wizard_url( $lang_code ), // @todo fix this url
-                zume_create_qr_url( zume_join_the_community_wizard_url( $lang_code ) ),
+                $other_page_base_url . 'join_the_community',
+                zume_create_qr_url( $other_page_base_url . 'join_the_community' ),
                 __( 'Zúme is a community of practice for those who want to see disciple making movements. Our vision is to saturate the world with multiplying disciples in our generation.', 'zume' ),
             ],
         ],

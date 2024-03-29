@@ -289,14 +289,17 @@ class Zume_QR_Redirect
          * https://zume.training/zume_app/qr/?l=en&o=coach
          */
         else if ( isset( $_GET['l'], $_GET['o'] ) ) {
-            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['o'] );
+//            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['o'] );
 
             $other_page_redirect = esc_attr( $_GET['o'] );
             $language_slug = esc_attr( $_GET['l'] );
 
             switch( $other_page_redirect ) {
-                case 'coach':
-                    $link = zume_get_a_coach_wizard_url( $language_slug );
+                case 'coaching':
+                    $link = zume_get_a_coach_wizard_url();
+                    break;
+                case 'join_the_community':
+                    $link = zume_join_the_community_wizard_url();
                     break;
                 default:
                     break;
@@ -365,7 +368,6 @@ class Zume_QR_Redirect
 
     public function list_all_qr_codes_by_language( $language_slug ) {
         // get list of videos for language
-        // get
 
         echo "<pre>";
 
@@ -428,7 +430,6 @@ class Zume_QR_Redirect
 
 
         echo "</pre>";
-
 
 
     }
