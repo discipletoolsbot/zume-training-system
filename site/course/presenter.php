@@ -129,7 +129,8 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                         <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
                         <p><?php echo esc_html__( 'If you are unable to turn on scripts, you may download the course slides below', 'zume' ) ?></p>
 
-                        <?php /* TODO: Generate/create list of language names+codes that have translated course slides */ ?>
+                        <?php /* TODO: Generate/create list of language names+codes that have translated course slides
+                                @note This could be set up to default to english if the the language called is not available.  */ ?>
                         <?php
                             $languages = [
                                 [

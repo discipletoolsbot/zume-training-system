@@ -14,6 +14,7 @@ import './slides/pray-slide'
 import './slides/title-slide'
 import './slides/video-slide'
 import './slides/watch-slide'
+import './slides/look-back-slide'
 
 import './course-presenter'
 import './course-guide'

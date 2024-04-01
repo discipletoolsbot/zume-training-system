@@ -46,8 +46,12 @@ function zume_course_slide_template( $slide ) {
                 <video-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>"></video-slide>
             <?php
             break;
-        case 'discuss':
         case 'look_back':
+            ?>
+            <look-back-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>"></look-back-slide>
+            <?php
+            break;
+        case 'discuss':
             ?>
                 <discuss-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>"></discuss-slide>
             <?php

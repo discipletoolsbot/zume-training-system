@@ -52,7 +52,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' )
@@ -87,7 +86,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'God Uses Ordinary People', 'zume' ),
@@ -111,7 +109,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'If Jesus intended every one of His followers to obey His Great Commission, why do so few actually make disciples?', 'zume' )
@@ -124,7 +121,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Disciples and the Church', 'zume' ),
@@ -148,7 +144,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -165,7 +160,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Hearing and Obeying God', 'zume' ),
@@ -189,7 +183,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -205,7 +198,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'SOAPS Bible Reading', 'zume' ),
@@ -256,7 +248,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Accountability Groups', 'zume' ),
@@ -280,7 +271,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [20],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(20 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Practice Accountability Groups', 'zume' ),
@@ -383,7 +373,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'PRAY', 'zume' ),
-                __( '(5 min)', 'zume' )
             ],
             'right' => [
                 __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
@@ -394,7 +383,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_2_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -432,7 +421,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Producer Not Consumer', 'zume' ),
@@ -462,7 +450,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -501,7 +488,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [60],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Pray the Prayer Cycle for an hour individually', 'zume' ),
@@ -521,7 +507,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -563,7 +548,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [30],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(30 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Create your own list of 100', 'zume' ),
@@ -679,7 +663,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' )
             ],
             'right' => [
                 __( 'Pray and thank God for the ways you experienced Him in the last session and invite His Holy Spirit to lead your time together.', 'zume' ),
@@ -688,7 +671,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_3_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -726,7 +709,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Spiritual Economy', 'zume' ),
@@ -750,7 +732,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 __( 'What are some differences you see between God’s Spiritual Economy and our earthly way of getting things done?', 'zume' ),
@@ -774,7 +755,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -791,7 +771,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'The Gospel', 'zume' ),
@@ -815,7 +794,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -831,7 +809,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [45],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(45 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Share the Gospel', 'zume' ),
@@ -855,7 +832,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Baptism', 'zume' ),
@@ -879,7 +855,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -994,7 +969,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'PRAY', 'zume' ),
-                __( '(5 min)', 'zume' )
             ],
             'right' => [
                 __( 'Pray and thank God that He invites us to share His Good News with others.', 'zume' ),
@@ -1004,7 +978,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_4_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -1044,7 +1018,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Three-Minute Testimony', 'zume' ),
@@ -1067,7 +1040,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [30],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(30 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Practice sharing your testimony', 'zume' ),
@@ -1090,7 +1062,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Great - Greater - Greatest Blessings', 'zume' ),
@@ -1114,7 +1085,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -1131,7 +1101,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Duckling Discipleship', 'zume' ),
@@ -1155,7 +1124,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -1171,7 +1139,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Eyes to See Where the Kingdom Isn’t', 'zume' ),
@@ -1196,7 +1163,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'right' => [
                 [
@@ -1213,7 +1179,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'The Lord’s Supper', 'zume' ),
@@ -1236,7 +1201,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [10],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(10 min)', 'zume' )
             ],
             'left' => [
                 __( 'Celebrate the Lord’s Supper', 'zume' ),
@@ -1335,7 +1299,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the ways He works through the testimony of His people. Invite His Holy Spirit to lead your time together.', 'zume' ),
@@ -1344,7 +1307,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_5_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -1382,7 +1345,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Prayer Walking', 'zume' ),
@@ -1406,7 +1368,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Person of Peace', 'zume' ),
@@ -1430,7 +1391,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -1446,7 +1406,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [10],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Practice the B.L.E.S.S. Prayer', 'zume' ),
@@ -1464,10 +1423,9 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't17_d',
             'type' => 'activity',
-            'length' => [90],
+            'length' => [6090],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60 - 90 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Prayer Walking', 'zume' ),
@@ -1492,7 +1450,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Before you go out on your Prayer Walking activity, be sure to pray with your group to end your time together.', 'zume' ),
@@ -1549,7 +1506,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
@@ -1558,7 +1514,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_6_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -1595,7 +1551,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Faithfulness', 'zume' ),
@@ -1619,7 +1574,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Think about God’s commands that you already know. How "faithful" are you in terms of obeying and sharing those things?', 'zume' ),
@@ -1632,7 +1586,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Watch', 'zume' ),
-                __( '(75 min)', 'zume' ),
             ],
             'right' => [
                 __( '3/3 Group Meeting', 'zume' ),
@@ -1656,7 +1609,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -1750,7 +1702,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the group’s commitment to faithfully following Jesus and invite God’s Holy Spirit to lead your time together.', 'zume' ),
@@ -1759,7 +1710,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_7_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -1796,7 +1747,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'The Training Cycle', 'zume' ),
@@ -1820,7 +1770,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -1837,7 +1786,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [6090],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60 - 90 min)', 'zume' ),
             ],
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
@@ -1861,7 +1809,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -1951,7 +1898,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for giving your group the energy, the focus and the faithfulness to come so far in this training. Ask God to have His Holy Spirit remind everyone in the group that they can do nothing without Him!', 'zume' ),
@@ -1960,7 +1906,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_8_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -1997,7 +1943,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Leadership Cells', 'zume' ),
@@ -2022,7 +1967,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -2037,7 +1981,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [6090],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60 - 90 min)', 'zume' ),
             ],
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
@@ -2135,7 +2078,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'PRAY', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God that his ways are not our ways and His thoughts are not our thoughts. Ask Him to give each member of your group the mind of Christ - always focused on His Father‘s work. Ask the Holy Spirit to lead your time together and make it the best session yet.', 'zume' ),
@@ -2144,7 +2086,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_9_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -2185,7 +2127,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Non-Sequential Growth', 'zume' ),
@@ -2209,7 +2150,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -2225,7 +2165,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pace', 'zume' ),
@@ -2249,7 +2188,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -2266,7 +2204,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Always Part of Two Churches', 'zume' ),
@@ -2291,7 +2228,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'What are some advantages of maintaining a consistent spiritual family that gives birth to new ones that grow and multiply, instead of continually growing a family and splitting it in order to grow?', 'zume' ),
@@ -2304,7 +2240,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Coaching Checklist', 'zume' ),
@@ -2327,7 +2262,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [20],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(20 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Coaching Checklist', 'zume' ),
@@ -2350,7 +2284,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -2446,7 +2379,6 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Discuss', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -2492,7 +2424,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Discuss', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Use the Generational Mapping example to discuss the following:', 'zume' ),
@@ -2587,7 +2518,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'PRAY', 'zume' ),
-                __( '(5 min)', 'zume' )
             ],
             'right' => [
                 __( 'Pray and thank God that He is faithful to complete His good work in us. ', 'zume' ),
@@ -2598,7 +2528,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's1_10_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -2649,7 +2579,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Leadership in Networks', 'zume' ),
@@ -2673,7 +2602,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Are there advantages when networks of simple churches are connected by deep, personal relationships? What are some examples that come to mind?', 'zume' ),
@@ -2687,7 +2615,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Peer Mentoring Groups', 'zume' ),
@@ -2711,7 +2638,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [45],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(45 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Peer Mentoring Group Practice', 'zume' ),
@@ -2748,7 +2674,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [30],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(30 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Make your Three Month Plan', 'zume' ),
@@ -2771,7 +2696,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(10 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Take turns sharing your Three Month Plans with each other.', 'zume' ),
@@ -2856,7 +2780,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' )
@@ -2958,7 +2881,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Ask if anyone in the group has specific needs they would like the group to pray for.', 'zume' ),
@@ -2973,7 +2895,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Before getting started, take some time to look back.', 'zume' ),
@@ -3072,7 +2993,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for His presence in our lives. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
@@ -3081,7 +3001,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_3_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3184,7 +3104,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.',  'zume' ),
@@ -3193,7 +3112,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_4_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3304,7 +3223,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for His love for all of the people in our lives. Pray for each person in the group to see those around you the way God sees them.', 'zume' ),
@@ -3313,7 +3231,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_5_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3416,7 +3334,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the ways you experienced Him in the last session and invite His Holy Spirit to lead your time together.', 'zume' ),
@@ -3425,7 +3342,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_6_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3534,7 +3451,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray for each member of your group to experience the blessings of following Jesus, leading others to follow Jesus, and equipping others to start new spiritual families.', 'zume' ),
@@ -3543,7 +3459,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_7_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3575,7 +3491,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [50],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(50 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Practice Sharing the Gospel', 'zume' ),
@@ -3669,7 +3584,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God that He invites us to share His Good News with others. Ask Him to give each member of your group the mind of Christ — and to fill each one with His Spirit.', 'zume' ),
@@ -3678,7 +3592,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_8_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3783,7 +3697,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the gift of being united with Christ‘s death, burial, and resurrection. Ask God‘s Holy Spirit to lead your time, together.', 'zume' ),
@@ -3792,7 +3705,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_9_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -3824,7 +3737,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [50],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(50 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Share Your Testimony', 'zume' ),
@@ -3925,7 +3837,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the ways He works through our testimony and invite His Holy Spirit to lead your time together.',  'zume' ),
@@ -3934,7 +3845,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_10_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4047,7 +3958,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for how He is at work in your life and the lives of others around you. Pray for the group to have eyes to see where the Kingdom isn‘t, yet.',  'zume' ),
@@ -4056,7 +3966,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_11_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4088,7 +3998,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [6090],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(60 - 90 min)', 'zume' ),
             ],
             'left' => [
                 __( 'Prayer Walking', 'zume' ),
@@ -4153,7 +4062,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for what He did in the last session, ask Him to help when you find it hard to obey, and invite His Holy Spirit to lead your time together.', 'zume' ),
@@ -4162,7 +4070,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_12_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4274,7 +4182,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for what you learned in the last session. Pray for God‘s Spirit to help you be faithful to put into practice all you are learning.', 'zume' ),
@@ -4283,7 +4190,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_13_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4317,7 +4224,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Watch', 'zume' ),
-                __( '(40 min)', 'zume' ),
             ],
             'right' => [
                 __( '3/3 Group Meeting', 'zume' ),
@@ -4331,7 +4237,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'DISCUSS', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 [
@@ -4418,7 +4323,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the group’s commitment to faithfully following Jesus and invite God’s Holy Spirit to lead your time together.', 'zume' ),
@@ -4427,7 +4331,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_14_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4459,7 +4363,6 @@ function zume_content( $lang_code = 'en') {
             'length' => [45],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
-                __( '(45 min)', 'zume' ),
             ],
             'left' => [
                 __( '3/3 Group Meeting', 'zume' ),
@@ -4554,7 +4457,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Ask if anyone in the group has specific needs they would like the group to pray for. Thank God that He promises in His Word to listen and act when His people pray. Ask God’s Holy Spirit to lead your time, together.', 'zume' ),
@@ -4563,7 +4465,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_15_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4669,7 +4571,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for giving your group the energy, the focus and the faithfulness to come so far in this training. Ask God to have His Holy Spirit remind everyone in the group that they can do nothing without Him!', 'zume' ),
@@ -4678,7 +4579,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_16_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4788,7 +4689,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for how He continues to speak through the word, prayer, the body, and persecution and suffering. Pray for each person in the group to have ears to hear His voice and grace to obey what He says.', 'zume' ),
@@ -4797,7 +4697,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_17_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4911,7 +4811,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God that his ways are not our ways and His thoughts are not our thoughts. Ask Him to give each member of your group the mind of Christ - always focused on His Father‘s work. Ask the Holy Spirit to lead your time together and make it the best session yet.', 'zume' ),
@@ -4920,7 +4819,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_18_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -4954,7 +4853,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'PRAY', 'zume' ),
-                __( '(5 min)', 'zume' )
             ],
             'right' => [
                 __( 'Take a moment to listen to God and ask if there are any action steps you or your group needs to take based on the Four Fields discussion you just had.', 'zume' ),
@@ -5038,7 +4936,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God for the Body of Christ. Pray for mutual love and encouragement to continue to grow between each member of your group as you draw near to Jesus.', 'zume' ),
@@ -5047,7 +4944,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_19_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
@@ -5152,7 +5049,6 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Pray', 'zume' ),
-                __( '(5 min)', 'zume' ),
             ],
             'right' => [
                 __( 'Pray and thank God that He is faithful to complete His good work in us.', 'zume' ),
@@ -5163,7 +5059,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_20_4',
             'type' => 'look_back',
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'LOOK BACK', 'zume' ),
