@@ -7,7 +7,7 @@ export class CenterSlide extends CourseSlide {
             <div class="slides-card">
                 ${this.renderProgressBar()}
                 <div class="cover">
-                    <h2 class="title text-center">${this.slide['center'][0] ?? ''} ${this.slide['center'][1] ?? ''}</h2>
+                    <h2 class="title text-center">${this.slide['center'][0] ?? ''} ${this.slide['length'] ?? ''}</h2>
                     <div class="center w-70">
                         <div class="stack activity-card">
                             ${this.renderContent(this.slide['left'], true)}

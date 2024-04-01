@@ -12,7 +12,7 @@ export class PraySlide extends CourseSlide {
                             <div class="title-icon"><img src="https://placehold.co/60x60/png" /></div>
                             <div class="stack">
                                 <h2 class="title">${this.slide['left'][0]}</h2>
-                                <span class="subtitle">${this.slide['left'][1]}</span>
+                                <span class="subtitle">${this.slide['length']}</span>
                             </div>
                         </div>
                     </div>

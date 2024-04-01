@@ -1,4 +1,8 @@
 <?php
+
+class Zume_Course_Builder {
+
+}
 function zume_course_builder( $session_type = '10', $session_number = '1', $lang_code = 'en' ) {
 
     $session = [];
@@ -13,8 +17,8 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         $all['6'] = ['s1_6_1','s1_6_2','s1_6_3','s1_6_4','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final']; // session 6
         $all['7'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_4','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8','s1_7_9','final']; // session 7
         $all['8'] = ['s1_8_1','s1_8_2','s1_8_3','s1_8_4','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','s1_8_8','final']; // session 8
-        $all['9'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'s1_9_9','s1_9_10','final']; // session 9
-        $all['10'] = ['s1_10_1','s1_10_2','s1_10_3','s1_10_4','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
+        $all['9'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'s1_9_9','s1_9_10','final']; // session 9
+        $all['10'] = ['s1_10_1','s1_10_2','s1_10_3','s1_10_4','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'s1_10_7',false,'next_steps','congratulations','final']; // session 10
 
         if ( empty( $session_number ) ) {
             foreach( $all as $set ) {
@@ -66,7 +70,7 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
             's1_6_1','s1_6_2','s1_6_3','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final']; // session 6
         $all['4'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8',false,'break',false, // session 7
             's1_8_1','s1_8_2','s1_8_3','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','final']; // session 8
-        $all['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'s1_9_9',false,'break',false, // session 9
+        $all['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'s1_9_9','s1_9_10', // session 9
             's1_10_1','s1_10_2','s1_10_3','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
 
         if ( empty( $session_number ) ) {
@@ -80,22 +84,24 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
     }
 
     $content = zume_content( $lang_code );
-    $progress_bar = '<div class="progress-bar-wrapper">';
 
+    // setup slides
     $slides = [];
-    foreach( $session as $index => $item ) {
+    foreach( $session as $item ) {
         if ( ! $item ) {
             continue;
         }
-
         $slides[$item] = [];
-
     }
 
+    // populate slides
     foreach( $content as $item ) {
         if ( in_array( $item['key'], $session ) ) {
             $slides[$item['key']] = $item;
             $slides[$item['key']]['progress_bar'] = ( empty( $session_number ) ) ? [] : $all[$session_number];
+
+            // transform length to string
+            $slides[$item['key']]['length'] = zume_slide_length( $item, $session_type );
         }
     }
 
@@ -143,6 +149,48 @@ function zume_course_builder( $session_type = '10', $session_number = '1', $lang
         32 => ['t32_a','t32_b'],                    // generation mapping
     );
     */
+}
+
+function zume_slide_length( $item, $session_type ) {
+    if ( empty( $item['length'] ) ) {
+        return '';
+    }
+
+    $template = [
+        1 => __( '(1 min)', 'zume' ),
+        5 => __( '(5 min)', 'zume' ),
+        10 => __( '(10 min)', 'zume' ),
+        15 => __( '(15 min)', 'zume' ),
+        20 => __( '(20 min)', 'zume' ),
+        25 => __( '(25 min)', 'zume' ),
+        30 => __( '(30 min)', 'zume' ),
+        35 => __( '(35 min)', 'zume' ),
+        40 => __( '(40 min)', 'zume' ),
+        45 => __( '(45 min)', 'zume' ),
+        50 => __( '(50 min)', 'zume' ),
+        55 => __( '(55 min)', 'zume' ),
+        60 => __( '(60 min)', 'zume' ),
+        65 => __( '(65 min)', 'zume' ),
+        70 => __( '(70 min)', 'zume' ),
+        75 => __( '(75 min)', 'zume' ),
+        80 => __( '(80 min)', 'zume' ),
+        85 => __( '(85 min)', 'zume' ),
+        90 => __( '(90 min)', 'zume' ),
+        6090 => __( '(60 - 90 min)', 'zume' ),
+    ];
+
+    if ( isset(  $item['length'][2] ) && 'intensive' == $session_type ) {
+        $length = $template[ $item['length'][2] ] ?? '';
+    }
+    else if ( isset( $item['length'][1] ) && '20' == $session_type  ) {
+        $length = $template[$item['length'][1]] ?? '';
+    }
+    else {
+        $length = $template[$item['length'][0]] ?? '';
+    }
+
+    return $length;
+
 }
 
 function zume_full_course_builder( $type, $lang_code ) {
