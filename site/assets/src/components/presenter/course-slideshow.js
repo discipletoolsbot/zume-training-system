@@ -91,6 +91,7 @@ export class CourseSlideshow extends LitElement {
         if (event.target.id === 'hamburger-menu') {
             return
         }
+
         const matcher = (target) => {
             return target.id === 'offCanvas' || target.classList.contains('js-off-canvas-overlay')
         }

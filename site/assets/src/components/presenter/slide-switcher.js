@@ -30,8 +30,9 @@ export class SlideSwitcher extends LitElement {
                 return html`<watch-slide .slide=${this.slide}></watch-slide>`
             case 'video':
                 return html`<video-slide .slide=${this.slide}></video-slide>`
-            case 'discuss':
             case 'look_back':
+              return html`<look-back-slide .slide=${this.slide}></look-back-slide>`
+            case 'discuss':
                 return html`<discuss-slide .slide=${this.slide}></discuss-slide>`
             case 'left_content':
             case 'activity':
