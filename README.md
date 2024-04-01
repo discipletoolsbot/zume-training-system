@@ -33,3 +33,6 @@ To hide these large red diffs of removed code add the following to hide the buil
 ```
 
 This hides the files that are marked in .gitattributes as buildartifacts
+
+
+This project is tested with BrowserStack.
