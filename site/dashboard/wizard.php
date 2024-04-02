@@ -122,6 +122,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         return [
             'bad_wizard' => __( 'Bad Wizard', 'zume' ),
             'found_bad_wizard' => __( 'You have fallen in with some very bad wizards!', 'zume' ),
+            'completed_wizard_title' => __( 'Wizard is already completed', 'zume' ),
             'home' => __( 'Get back home', 'zume' ),
             'back' => __( 'Back', 'zume' ),
             'next' => __( 'Next', 'zume' ),

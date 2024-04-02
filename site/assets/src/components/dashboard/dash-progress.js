@@ -18,7 +18,7 @@ export class DashProgress extends DashPage {
         this.loading = false
         this.route = DashBoard.getRoute('my-progress')
 
-        this.trainingItems = jsObject.training_items
+        this.trainingItems = Object.values(jsObject.training_items)
         this.hostProgress = jsObject.host_progress
 
         this.filterName = 'my-progress-filter'

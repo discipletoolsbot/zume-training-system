@@ -729,6 +729,10 @@ a, a:visited {
             }
         }
     }
+
+    launch-course {
+        margin-inline-end: calc( -1 * var(--s0, 1em) );
+    }
 }
 @media (max-width: $break-lg) {
   .training-page {

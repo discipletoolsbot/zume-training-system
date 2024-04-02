@@ -55,12 +55,8 @@ class Zume_Get_A_Coach_Endpoints
             return $coaching_result;
         }
 
-        // log coaching request
-        $log_result = Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $params['user_id'] ] );
-
         return [
             'coach_request' => $coaching_result,
-            'log' => $log_result,
         ];
     }
 
@@ -219,6 +215,11 @@ class Zume_Get_A_Coach_Endpoints
             if ( is_wp_error( $result ) ) {
                 dt_write_log( __METHOD__ . ' FAILED TO ADD COMMENTS TO COACHING CONTACT FOR ' . $profile['name'] );
             }
+        }
+
+        if ( $coach_id === null ) {
+            // log coaching request
+            Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $user_id ] );
         }
 
         return $body;

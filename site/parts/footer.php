@@ -11,8 +11,7 @@
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_training_url() ) ?>"><?php echo esc_html__( 'Training', 'zume' ) ?></a>
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
 
-
-                <?php else: ?>
+                <?php else : ?>
 
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
@@ -23,7 +22,22 @@
             </div>
 
             <div class="cluster gapx-4 gapy-2 justify-flex-end | footer-links-list" role="list">
-                <a role="listitem" class="link-light" href="#"><?php echo esc_html__( 'Launch Course', 'zume' ) ?></a>
+                <!-- <a role="listitem" class="link-light" href="#"><?php echo esc_html__( 'Launch Course', 'zume' ) ?></a> -->
+                <launch-course
+                    translations="<?php echo esc_attr( json_encode( [
+                        'launch_course' => __( 'Launch Course', 'zume' ),
+                        'ten_session_course' => __( '10 Session Course', 'zume' ),
+                        'twenty_session_course' => __( '20 Session Course', 'zume' ),
+                        'three_day_intensive_course' => __( '3 Day Intensive Course', 'zume' ),
+                    ] ) ) ?>"
+                    urls="<?php echo esc_attr( json_encode( [
+                        'launch_ten_session_course' => zume_10_session_url(),
+                        'launch_twenty_session_course' => zume_20_session_url(),
+                        'launch_intensive_session_course' => zume_intensive_session_url(),
+                    ] ) ) ?>"
+                    position="top"
+                    asLink
+                ></launch-course>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                 <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
             </div>

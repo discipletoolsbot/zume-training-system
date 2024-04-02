@@ -35,7 +35,7 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( isset( $url_parts[0] )  && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
+        if ( isset( $url_parts[0] ) && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
 
 //            $this->set_locale( $lang_code );
 
@@ -81,7 +81,7 @@ class Zume_Training_Checkin extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                'connect_friend_url' => zume_checkin_wizard_url(),
+                'checkin_url' => zume_checkin_wizard_url(),
                 'is_logged_in' => is_user_logged_in(),
                 'translations' => [
                     'enter_code' => __( 'Please enter a friend code.', 'zume' ),
@@ -109,18 +109,18 @@ class Zume_Training_Checkin extends Zume_Magic_Page
                 });
 
                 function redirect_to_login( code ) {
-                    const connectFriendUrl = new URL( jsObject.connect_friend_url )
+                    const checkinURL = new URL( jsObject.checkin_url )
 
-                    const redirect =connectFriendUrl.searchParams.get('redirect_to')
+                    const redirect = checkinURL.searchParams.get('redirect_to')
 
                     const redirectURL = new URL(redirect)
                     redirectURL.searchParams.append( 'code', code )
 
-                    connectFriendUrl.searchParams.delete('redirect_to')
-                    connectFriendUrl.searchParams.append('redirect_to', redirectURL.href)
-                    connectFriendUrl.searchParams.append('hide-nav', true)
+                    checkinURL.searchParams.delete('redirect_to')
+                    checkinURL.searchParams.append('redirect_to', redirectURL.href)
+                    checkinURL.searchParams.append('hide-nav', true)
 
-                    location.href = connectFriendUrl.href
+                    location.href = checkinURL.href
                 }
 
             });

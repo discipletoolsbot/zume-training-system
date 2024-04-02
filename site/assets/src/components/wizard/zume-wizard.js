@@ -77,16 +77,29 @@ export class Wizard extends LitElement {
             this._handleHistoryPopState( true )
         }
 
+        if (!this.isWizardTypeValid( this.type )) {
+            return html`
+                <div class="cover-page">
+                    <div class="stack center | text-center">
+                        <h1 class="brand">${this.t.bad_wizard}</h1>
+                        <p>${this.t.found_bad_wizard}</p>
+                        <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
+                        <a class="btn" href="/">${this.t.home}</a>
+                    </div>
+                </div>
+            `
+        }
+
         if (this.steps.length === 0) {
             return html`
-            <div class="cover-page">
-                <div class="stack center | text-center">
-                    <h1 class="brand">${this.t.bad_wizard}</h1>
-                    <p>${this.t.found_bad_wizard}</p>
-                    <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
-                    <a class="btn" href="/">${this.t.home}</a>
+                <div class="cover-page">
+                    <div class="stack center | text-center">
+                        <h1 class="brand">${this.t.completed_wizard_title}</h1>
+                        <p>${this.t.completed_wizard_text}</p>
+                        ${this.finishButton()}
+                    </div>
                 </div>
-            </div>`
+            `
         }
 
         return html`
