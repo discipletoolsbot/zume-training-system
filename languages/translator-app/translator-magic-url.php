@@ -191,6 +191,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             });
             const jsObject = [<?php echo json_encode([
                 'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . 'assets/images' ),
+                'translations' => Zume_Training_Presenter::translations(),
             ]) ?>][0]
 
         </script>
@@ -249,7 +250,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <option>----------</option>
                         <?php
                         foreach( $zume_languages as $k => $l ) {
-                            if ( ! in_array( $k, $approved_languages ) && ! in_array( 'administrator', $this->user->roles ) ) {
+                            if ( empty( $approved_languages ) || ! in_array( $k, $approved_languages ) && ! in_array( 'administrator', $this->user->roles ) ) {
                                 continue;
                             }
                             ?>

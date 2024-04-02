@@ -4,6 +4,7 @@ export class SlideSwitcher extends LitElement {
     static get properties() {
         return {
             slide: { type: Object},
+            showControls: { type: Boolean },
         };
     }
 
@@ -29,7 +30,7 @@ export class SlideSwitcher extends LitElement {
             case 'watch':
                 return html`<watch-slide .slide=${this.slide}></watch-slide>`
             case 'video':
-                return html`<video-slide .slide=${this.slide}></video-slide>`
+                return html`<video-slide .slide=${this.slide} ?showButtons=${this.showControls}></video-slide>`
             case 'look_back':
               return html`<look-back-slide .slide=${this.slide}></look-back-slide>`
             case 'discuss':

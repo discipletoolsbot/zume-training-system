@@ -2,6 +2,17 @@ import { html } from 'lit';
 import { CourseSlide } from './course-slide';
 
 export class VideoSlide extends CourseSlide {
+    static get properties() {
+        return {
+            slide: { type: Object },
+            showButtons: { type: Boolean },
+        };
+    }
+
+    constructor() {
+        super()
+    }
+
     render() {
         return html`
             <div class="video-slide">
@@ -12,28 +23,31 @@ export class VideoSlide extends CourseSlide {
                     >
                     </iframe>
                 </div>
-                <!-- These buttons have no click handlers. They essentially give a space to allow the
-            mouse click to trigger the click left/right side of screen event -->
-                <button
-                    type="button"
-                    class="btn icon-btn absolute middle left mx-0"
-                >
-                    <img
-                        src="${jsObject.images_url}/chevron.svg"
-                        alt=${jsObject.translations.previous_slide}
-                        class="svg white rotate-90 w-1rem h-1rem"
-                    />
-                </button>
-                <button
-                    type="button"
-                    class="btn icon-btn absolute middle right mx-0"
-                >
-                    <img
-                        src="${jsObject.images_url}/chevron.svg"
-                        alt=${jsObject.translations.next_slide}
-                        class="svg white rotate--90 w-1rem h-1rem"
-                    />
-                </button>
+
+                ${ this.showButtons === true ? html`
+                     <!-- These buttons have no click handlers. They essentially give a space to allow the
+                mouse click to trigger the click left/right side of screen event -->
+                    <button
+                        type="button"
+                        class="btn icon-btn absolute middle left mx-0"
+                    >
+                        <img
+                            src="${jsObject.images_url}/chevron.svg"
+                            alt=${jsObject.translations.previous_slide}
+                            class="svg white rotate-90 w-1rem h-1rem"
+                        />
+                    </button>
+                    <button
+                        type="button"
+                        class="btn icon-btn absolute middle right mx-0"
+                    >
+                        <img
+                            src="${jsObject.images_url}/chevron.svg"
+                            alt=${jsObject.translations.next_slide}
+                            class="svg white rotate--90 w-1rem h-1rem"
+                        />
+                    </button>
+                ` : '' }
             </div>
         `;
     }

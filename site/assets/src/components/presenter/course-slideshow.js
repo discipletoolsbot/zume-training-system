@@ -150,7 +150,7 @@ export class CourseSlideshow extends LitElement {
         return html`
             <div class="cover-page">
                 <div>
-                    <slide-switcher .slide=${this.currentSlide}></slide-switcher>
+                    <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
             </div>
         `;
