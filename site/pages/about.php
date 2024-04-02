@@ -158,7 +158,7 @@ class Zume_Training_About extends Zume_Magic_Page
                     <?php echo __( 'With these small beginnings ... what the Bible calls yeast ... we could see the world covered with multiplying disciples and churches. Explore Zúme Training and find out how!', 'zume' ) ?>
                 </p>
             </div>
-            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Sign Me Up!', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
         </div>
 
         <div class="page bg-gray-100">

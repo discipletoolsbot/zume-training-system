@@ -155,7 +155,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <p class="mb-0">
                         <?php echo esc_html__( 'We can connect you with free Zúme coach who is committed to helping you get the training and become a fruitful disciple.', 'zume' ) ?>
                     </p>
-                    <a href="<?php echo esc_url( zume_get_a_coach_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Get Help', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Get Help', 'zume' ) ?></a>
                 </div>
             </div>
         </div>

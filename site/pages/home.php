@@ -156,12 +156,12 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Being A Disciple', 'zume' ) ?></h3>
                         <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
-                            <li><?php echo esc_html__( "What's a disciple?", 'zume' ) ?></li>
+                            <li><?php echo esc_html__( "What's a Disciple?", 'zume' ) ?></li>
                             <li><?php echo esc_html__( "What's a Church?", 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Keys to spiritual growth', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Personal Bible Study Habits', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Improve Your Prayer Life', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Learn to Live Out Your Faith', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Keys to Spiritual Growth', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Personal Bible Study', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Strong Prayer Life', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'The Power of Obedient Faith', 'zume' ) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -170,12 +170,12 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Making Disciples', 'zume' ) ?></h3>
                         <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
-                            <li><?php echo esc_html__( "Sharing God's story", 'zume' ) ?></li>
+                            <li><?php echo esc_html__( "Sharing God's Story", 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Telling Your Story', 'zume' ) ?></li>
                             <li><?php echo esc_html__( 'Engaging Seekers', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Leading as Simple Church', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Vision for Discipleship', 'zume' ) ?></li>
-                            <li><?php echo esc_html__( 'Plan of Implementation', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Vision Casting Multiplication', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Leading a Simple Church', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Training Others', 'zume' ) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -183,6 +183,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
         </div>
 
+        <?php // @todo unfinished development below?? ?>
         <div class="hidden bg-gray-500" style="max-height: 100vh; overflow-y: scroll">
             <div class="container">
                 <h2>Development Area</h2>
@@ -282,9 +283,8 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . 'assets/images/Zume-Z-crop.svg' ) ?>
                         </div>
                         <div class="story-card__text">
-                            <p><b>Denver, colorado</b></p>
                             <p>
-                                <em>"Labore pariatur enim cillum quis reprehenderit sunt. Qui laborum qui do consectetur officia. Et est adipisicing culpa veniam culpa quis est ea commodo elit eu mollit aliqua."</em>
+                                <em><?php echo __('I spent years faithfully attending bible studies and church, but had somehow not understood the simple truths of disciple making that I found here in Zúme. ~ Chris', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -294,9 +294,8 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . 'assets/images/Zume-Z-crop.svg' ) ?>
                         </div>
                         <div class="story-card__text">
-                            <p><b>Denver, colorado</b></p>
                             <p>
-                                <em>"Labore pariatur enim cillum quis reprehenderit sunt. Qui laborum qui do consectetur officia. Et est adipisicing culpa veniam culpa quis est ea commodo elit eu mollit aliqua."</em>
+                                <em><?php echo __('Anyone can do this. You don‘t have to have special skills or training. ~ Chris', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -306,9 +305,8 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . 'assets/images/Zume-Z-crop.svg' ) ?>
                         </div>
                         <div class="story-card__text">
-                            <p><b>Denver, colorado</b></p>
                             <p>
-                                <em>"Labore pariatur enim cillum quis reprehenderit sunt. Qui laborum qui do consectetur officia. Et est adipisicing culpa veniam culpa quis est ea commodo elit eu mollit aliqua."</em>
+                                <em><?php echo __('All disciples who want to obey the Great Commission, Zúme training outlines a normal Christian lifestyle. ~ Chris', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -318,9 +316,8 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . 'assets/images/Zume-Z-crop.svg' ) ?>
                         </div>
                         <div class="story-card__text">
-                            <p><b>Denver, colorado</b></p>
                             <p>
-                                <em>"Labore pariatur enim cillum quis reprehenderit sunt. Qui laborum qui do consectetur officia. Et est adipisicing culpa veniam culpa quis est ea commodo elit eu mollit aliqua."</em>
+                                <em><?php echo __('These concepts and skills transformed our church and our impact on the world. ~ Chris', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -336,7 +333,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/yeast.svg' ) ?>
                     </div>
                 </h2>
-                <p class="bold"><?php echo esc_html__( 'Exercitation laboris consectetur et exercitation esse voluptate. Commodo id est duis aliquip. Excepteur veniam nostrud aliquip id in cupidatat aliquip non labore officia velit incididunt. Cupidatat commodo excepteur labore consectetur.', 'zume' ) ?></p>
+                <p class="bold"><?php echo esc_html__( 'Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, "The Kingdom of Heaven is like a woman who took yeast and mixed it into a large amount of flour until it was all leavened." This illustrates how ordinary people, using ordinary resources, can have an extraordinary impact for the Kingdom of God. Zúme aims to equip and empower ordinary believers to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></p>
             </div>
         </div>
 
