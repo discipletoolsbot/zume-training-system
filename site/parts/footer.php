@@ -39,7 +39,7 @@
                     asLink
                 ></launch-course>
                 <a role="listitem" class="link-light" href="<?php echo esc_url( zume_guidebook_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
-                <a role="listitem" class="link-light" href="https://give.zume.vision/" target="_blank"><?php echo esc_html__( 'Donate', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
+                <a role="listitem" class="link-light" href="<?php echo esc_url( zume_donate_url() ) ?>"><?php echo esc_html__( 'Donate', 'zume' ) ?></a>
             </div>
         </div>
 

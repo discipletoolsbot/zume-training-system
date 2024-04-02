@@ -86,7 +86,7 @@ function zume_get_a_coach_wizard_url() {
     $redirect_url = zume_wizard_url( 'coaching' );
     return zume_login_url( 'register', $redirect_url );
 }
-function zume_join_the_community_wizard_url( ) {
+function zume_join_the_community_wizard_url() {
     $redirect_url = zume_wizard_url( 'join_the_community' );
     return zume_login_url( 'login', $redirect_url );
 }
@@ -227,6 +227,9 @@ function zume_guidebook_url() {
 
 function zume_share_url() {
     return zume_url( 'share' );
+}
+function zume_donate_url() {
+    return zume_url( 'donate' );
 }
 
 function zume_profile_url() {
