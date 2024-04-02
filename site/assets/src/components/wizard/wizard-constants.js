@@ -7,7 +7,7 @@ export const ZumeWizards = {
     joinFriendsPlan: 'join-friends-training',
     checkin: 'checkin',
     setProfile: 'set-profile',
-    joinCommunity: 'community',
+    joinCommunity: 'join-the-community',
 }
 export const ZumeWizardModules = {
     completeProfile: 'completeProfile',
