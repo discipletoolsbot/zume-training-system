@@ -7,6 +7,7 @@ export const ZumeWizards = {
     joinFriendsPlan: 'join-friends-training',
     checkin: 'checkin',
     setProfile: 'set-profile',
+    joinCommunity: 'community',
 }
 export const ZumeWizardModules = {
     completeProfile: 'completeProfile',
@@ -17,7 +18,8 @@ export const ZumeWizardModules = {
     connectFriend: 'connectFriend',
     joinFriendsTraining: 'joinFriendsTraining',
     checkin: 'checkin',
-    planDecision: 'planDecision'
+    planDecision: 'planDecision',
+    joinCommunity: 'joinCommunity',
 }
 const makeAPlanSteps = {
     howManySessions: 'how-many-sessions',

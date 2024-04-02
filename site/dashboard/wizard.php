@@ -132,6 +132,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
             'start_a_training' => __( 'Start a training', 'zume' ),
             'join_a_public_training' => __( 'Join a public training', 'zume' ),
             'skip_for_now' => __( 'Skip for now', 'zume' ),
+            'join_community' => __( 'Join Community', 'zume' ),
             'complete_profile' => [
                 'title' => __( 'Complete your profile', 'zume' ),
                 'phone' => __( 'Phone', 'zume' ),

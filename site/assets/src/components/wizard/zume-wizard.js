@@ -371,6 +371,23 @@ export class Wizard extends LitElement {
                 ],
                 skippable,
             },
+            [ZumeWizardModules.joinCommunity]: {
+                steps: [
+                    {
+                        slug: 'join',
+                        component: (step, t, classes) => html`
+                            <div class=${`stack ${classes}`}>
+                                <h2>${t.join_community}</h2>
+                                <p>These are all the things that you get when you join</p>
+                                <ul role="list">
+                                    <li>lots of good things</li>
+                                    <li>and more</li>
+                                </ul>
+                            </div>
+                        `
+                    }
+                ]
+            },
             [ZumeWizardModules.makePlan]: this.makeModule([
                 ZumeWizardSteps.howManySessions,
                 ZumeWizardSteps.whatTimeOfDay,
@@ -527,6 +544,9 @@ export class Wizard extends LitElement {
                 [ZumeWizardModules.joinFriendsTraining]: this.makeModule([
                     ZumeWizardSteps.joinFriendsPlan,
                 ])
+            },
+            [ZumeWizards.joinCommunity]: {
+                [ZumeWizardModules.joinCommunity]: this.getModule(ZumeWizardModules.joinCommunity)
             },
             [ZumeWizards.checkin]: {
                 [ZumeWizardModules.checkin]: this.makeModule([
