@@ -150,6 +150,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'share' => __( 'Share', 'zume' ),
             'active' => __( 'Active', 'zume' ),
             'completed' => __( 'Completed', 'zume' ),
+            'uncompleted' => __( 'Uncompleted', 'zume' ),
             'not_heard' => __( 'Not Heard', 'zume' ),
             'all' => __( 'All', 'zume' ),
             'logout' => __( 'Logout', 'zume' ),
@@ -188,6 +189,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'my_progress_explanation' => __( 'Track your course progress with this interactive view. Learn to listen, obey, share and train others with what you have learned.', 'zume' ),
             'progress_info' => __( 'Information about progress', 'zume' ),
             'my_training' => __( 'My Training', 'zume' ),
+            'my_trainings' => __( 'My Trainings', 'zume' ),
             'my_training_explanation' => __( 'Full access to your training content, schedule, group details and sharing tools.', 'zume' ),
             '3_month_plan' => __( '3-Month Plan', 'zume' ),
             '3_month_plan_explanation' => __( 'A Three Month Plan is a tool you can use to help focus your attention and efforts and keep them aligned with God’s priorities for making disciples who multiply.', 'zume' ),
@@ -219,6 +221,12 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'resources' => __( 'Resources', 'zume' ),
             'previous_slide' => __( 'Previous Slide', 'zume' ),
             'next_slide' => __( 'Next Slide', 'zume' ),
+            'group_members' => __( 'Group Members', 'zume' ),
+            'mark_completed' => __( 'Mark Completed', 'zume' ),
+            'start_session' => __( 'Start Session', 'zume' ),
+            'show_details' => __( 'Show details', 'zume' ),
+            'edit_time' => __( 'Edit time', 'zume' ),
+            'add_new_training' => sprintf( __( 'Add new %s', 'zume' ), __( 'Training', 'zume' ) ),
         ];
     }
 }
