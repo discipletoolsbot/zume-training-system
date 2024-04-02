@@ -18,8 +18,6 @@
 
                         <?php endif; ?>
 
-                        <a role="listitem" href="<?php echo esc_url( zume_profile_url() ) ?>" class="nav__icon link-light"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/profile.svg' ?></a>
-
                     <?php endif; ?>
 
                     <?php if ( !is_user_logged_in() ) : ?>

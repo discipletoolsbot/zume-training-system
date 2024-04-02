@@ -116,6 +116,7 @@ class Zume_Profile_Model {
         $name = isset( $fields['name'] ) ? $fields['name'] : '';
         $phone = isset( $fields['phone'] ) ? $fields['phone'] : '';
         $email = isset( $fields['email'] ) ? $fields['email'] : '';
+        $communications_email = isset( $fields['communications_email'] ) ? $fields['communications_email'] : '';
         $location_grid_meta = isset( $fields['location_grid_meta'] ) ? $fields['location_grid_meta'] : [];
         $preferred_language = isset( $fields['preferred_language'] ) ? $fields['preferred_language'] : '';
         $contact_preference = isset( $fields['contact_preference'] ) ? $fields['contact_preference'] : [];
@@ -131,6 +132,10 @@ class Zume_Profile_Model {
 
         if ( !empty( $email ) ) {
             $user_updates['user_email'] = $email;
+        }
+
+        if ( !empty( $communications_email ) ) {
+            $updates['user_communications_email'] = $communications_email;
         }
 
         if ( !empty( $phone ) ) {

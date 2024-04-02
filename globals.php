@@ -46,6 +46,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
         $name = $wpdb->get_var( $wpdb->prepare( "SELECT post_title FROM {$table_prefix}posts WHERE ID = %d", $contact_id ) );
         $has_set_name = !empty( zume_get_user_log( $user_id, 'system', 'set_profile_name' ) );
         $email = $contact_meta['user_email'] ?? '';
+        $communications_email = $contact_meta['user_communications_email'] ?? '';
         $phone = $contact_meta['user_phone'] ?? '';
         $timezone = $contact_meta['user_timezone'] ?? '';
         $user_friend_key = $contact_meta['user_friend_key'] ?? '';
@@ -89,6 +90,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
                 'email' => $email,
+                'communications_email' => $communications_email,
                 'phone' => $phone,
                 'location' => $location,
                 'language' => $language,
@@ -108,6 +110,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'contact_id' => $contact_id,
                 'coaching_contact_id' => $coaching_contact_id,
                 'email' => $email,
+                'communications_email' => $communications_email,
                 'phone' => $phone,
                 'location' => $location,
                 'language' => $language,

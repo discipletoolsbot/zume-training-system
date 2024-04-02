@@ -163,6 +163,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'name' => __( 'Name', 'zume' ),
             'phone' => __( 'Phone', 'zume' ),
             'email' => __( 'Email', 'zume' ),
+            'communications_email' => __( 'Communications Email', 'zume' ),
             'city' => __( 'City', 'zume' ),
             'no_locations' => __( 'No Locations found', 'zume' ),
             'language' => __( 'Language', 'zume' ),

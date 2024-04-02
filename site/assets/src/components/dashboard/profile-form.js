@@ -18,8 +18,9 @@ export class ProfileForm extends LitElement {
         this.nameInput = this.renderRoot.querySelector('#full_name')
         this.phoneInput = this.renderRoot.querySelector('#phone')
         this.emailInput = this.renderRoot.querySelector('#email')
+        this.preferredEmailInput = this.renderRoot.querySelector('#communications_email')
         this.cityInput = this.renderRoot.querySelector('#city')
-        this.prefferedLanguageInput = this.renderRoot.querySelector('#preferred-language')
+        this.prefferedLanguageInput = this.renderRoot.querySelector('#preferred_language')
         this.addressResultsContainer = this.renderRoot.querySelector('#address_results')
     }
 
@@ -28,6 +29,7 @@ export class ProfileForm extends LitElement {
 
         const name = this.nameInput.value
         const email = this.emailInput.value
+        const communications_email = this.preferredEmailInput.value
         const phone = this.phoneInput.value
         const preferred_language = this.prefferedLanguageInput.value
 
@@ -35,6 +37,7 @@ export class ProfileForm extends LitElement {
           name,
           phone,
           email,
+          communications_email,
           preferred_language,
         }
 
@@ -105,6 +108,10 @@ export class ProfileForm extends LitElement {
                     <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
                 </div>
                 <div class="">
+                    <label for="communications_email">${jsObject.translations.communications_email}</label>
+                    <input class="input" type="email" id="communications_email" name="communications_email" value=${this.userProfile.communications_email}>
+                </div>
+                <div class="">
                     <label for="city">${jsObject.translations.city}</label>
                     <input class="input" type="text" id="city" name="city" value=${this.userProfile.location?.label ?? ''} @input=${this.processLocation}>
                 </div>
@@ -136,8 +143,8 @@ export class ProfileForm extends LitElement {
                 </div>
 
                 <div>
-                    <label for="preferred-language">${jsObject.translations.language}</label>
-                    <select class="input" name="preferred-language" id="preferred-language">
+                    <label for="preferred_language">${jsObject.translations.language}</label>
+                    <select class="input" name="preferred_language" id="preferred_language">
 
                     ${
                         Object.values(jsObject.languages).map((item) => html`
