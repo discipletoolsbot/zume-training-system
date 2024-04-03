@@ -9,7 +9,7 @@ export class CheckinSlide extends CourseSlide {
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon"><img src="https://placehold.co/60x60/png" /></div>
+                            <div class="title-icon"><span class="icon zume-phone"></span></div>
                             <h2 class="title">${this.slide['left'][0]}</h2>
                         </div>
                     </div>
