@@ -11,7 +11,7 @@ export class ObeySlide extends CourseSlide {
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <img src="https://placehold.co/60x60/png" />
+                                    <span class="icon zume-obey-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide['left'][0]}</h2>
                             </div>
@@ -24,7 +24,7 @@ export class ObeySlide extends CourseSlide {
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <img src="https://placehold.co/60x60/png" />
+                                    <span class="icon zume-share-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide['left'][1]}</h2>
                             </div>

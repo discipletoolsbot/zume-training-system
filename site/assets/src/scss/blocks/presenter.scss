@@ -67,7 +67,10 @@
         }
     }
     .title-icon {
-        width: calc( var(--slide-unit) * 6 );
+        font-size: calc( var( --slide-unit ) * 6 );
+        display: flex;
+        align-items: center;
+        color: color('brand-light');
     }
     .title {
         font-weight: 700;

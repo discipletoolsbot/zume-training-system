@@ -1498,7 +1498,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon"><img src="https://placehold.co/60x60/png" /></div>
+                            <div class="title-icon"><span class="icon zume-phone"></span></div>
                             <h2 class="title">${this.slide.left[0]}</h2>
                         </div>
                     </div>
@@ -1604,7 +1604,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <img src="https://placehold.co/60x60/png" />
+                                    <span class="icon zume-obey-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[0]}</h2>
                             </div>
@@ -1617,7 +1617,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <img src="https://placehold.co/60x60/png" />
+                                    <span class="icon zume-share-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[1]}</h2>
                             </div>
@@ -1653,7 +1653,9 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon"><img src="https://placehold.co/60x60/png" /></div>
+                            <div class="title-icon">
+                                <span class="icon zume-pray"></span>
+                            </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
                                 <span class="subtitle">${this.slide.length}</span>
@@ -2127,4 +2129,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",As);
-//# sourceMappingURL=main-7f6d58d4.js.map
+//# sourceMappingURL=main-4383c47d.js.map
