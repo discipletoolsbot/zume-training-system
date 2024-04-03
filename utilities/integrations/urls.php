@@ -221,8 +221,8 @@ function zume_overview_url() {
     return zume_get_posts_translation_url( 'Overview', $current_lang );
 }
 
-function zume_guidebook_url() {
-    return zume_url( 'book' );
+function zume_resources_url() {
+    return zume_url( 'resources' );
 }
 
 function zume_share_url() {
