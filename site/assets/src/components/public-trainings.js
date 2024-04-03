@@ -23,7 +23,7 @@ export class PublicTrainings extends LitElement {
         super()
 
         this.loading = true
-        this.plans = []
+        this.trainings = []
 
         this.getTrainings()
 
@@ -32,8 +32,8 @@ export class PublicTrainings extends LitElement {
 
     getTrainings() {
         makeRequest( 'POST', 'public_plans', {}, 'zume_system/v1' )
-            .then((plans) => {
-                this.plans = plans
+            .then((trainings) => {
+                this.trainings = trainings
             })
             .catch((error) => {
                 console.log(error)
@@ -61,9 +61,9 @@ export class PublicTrainings extends LitElement {
                     </tr>
                 </thead>
                 <tbody>
-                    ${this.plans.length > 0 ? (
-                        this.plans.map(this.renderRow)
-                    ): this.t.no_plans}
+                    ${this.trainings.length > 0 ? (
+                        this.trainings.map(this.renderRow)
+                    ): this.t.no_trainings}
                </tbody>
             </table>
         `;

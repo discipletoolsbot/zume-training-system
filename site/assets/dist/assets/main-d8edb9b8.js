@@ -2014,7 +2014,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     </ul>
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("share-list",Os);class Ps extends g{static get properties(){return{t:{type:Object},joinLink:{type:String},loading:{attribute:!1},posts:{attribute:!1}}}constructor(){super(),this.loading=!0,this.plans=[],this.getTrainings(),this.renderRow=this.renderRow.bind(this)}getTrainings(){makeRequest("POST","public_plans",{},"zume_system/v1").then(e=>{this.plans=e}).catch(e=>{console.log(e)}).always(()=>{this.loading=!1})}render(){return this.loading?o`<span class="loading-spinner active"></span>`:o`
+        `}createRenderRoot(){return this}}customElements.define("share-list",Os);class Ps extends g{static get properties(){return{t:{type:Object},joinLink:{type:String},loading:{attribute:!1},posts:{attribute:!1}}}constructor(){super(),this.loading=!0,this.trainings=[],this.getTrainings(),this.renderRow=this.renderRow.bind(this)}getTrainings(){makeRequest("POST","public_plans",{},"zume_system/v1").then(e=>{this.trainings=e}).catch(e=>{console.log(e)}).always(()=>{this.loading=!1})}render(){return this.loading?o`<span class="loading-spinner active"></span>`:o`
             <table>
                 <thead>
                     <tr>
@@ -2027,7 +2027,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     </tr>
                 </thead>
                 <tbody>
-                    ${this.plans.length>0?this.plans.map(this.renderRow):this.t.no_plans}
+                    ${this.trainings.length>0?this.trainings.map(this.renderRow):this.t.no_trainings}
                </tbody>
             </table>
         `}renderRow({join_key:e,language_note:t,post_title:s,time_of_day_note:n,timezone_note:r,...a}){const h=a.set_a_01?"a":"b",c=h==="a"?10:20,d=`set_${h}_`,$=Date.now()/1e3;let p="";for(let m=1;m<c+1;m++){const v=m<10?`0${m}`:`${m}`,y=a[d+v];if(p=y.timestamp,$<y.timestamp)break}const u=moment(p*1e3).format("MMM Do 'YY");return o`
@@ -2127,4 +2127,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",As);
-//# sourceMappingURL=main-7f6d58d4.js.map
+//# sourceMappingURL=main-d8edb9b8.js.map
