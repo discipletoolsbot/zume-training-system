@@ -130,6 +130,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Disciples and the Church', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -174,6 +175,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Hearing and Obeying God', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -245,6 +247,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'menu' => [
                 __( 'Practice S.O.A.P.S.', 'zume' ),
+                [30],
             ],
             'length' => [30],
             'center' => [
@@ -274,6 +277,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Accountability Groups', 'zume' ),
+                [25],
             ],
             'length' => [5],
             'center' => [],
@@ -463,6 +467,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Producer Not Consumer', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -513,6 +518,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Prayer Cycle', 'zume' ),
+                [75],
             ],
             'length' => [],
             'center' => [],
@@ -577,8 +583,9 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'List of 100', 'zume' ),
+                [35],
             ],
-            'length' => [],
+            'length' => [5],
             'center' => [],
             'left' => [
                 __( 'WATCH', 'zume' )
@@ -819,6 +826,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'center',
             'menu' => [
                 __( 'The Gospel', 'zume' ),
+                [25],
             ],
             'length' => [],
             'center' => [],
@@ -915,6 +923,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Baptism', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1119,6 +1128,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Three-Minute Testimony', 'zume' ),
+                [35],
             ],
             'length' => [5],
             'center' => [],
@@ -1168,6 +1178,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Great - Greater - Greatest Blessings', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1212,6 +1223,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Duckling Discipleship', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1255,6 +1267,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Eyes to See Where the Kingdom Isn’t', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1300,6 +1313,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'The Lord’s Supper', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1482,6 +1496,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Prayer Walking', 'zume' ),
+                [5],
             ],
             'length' => [5],
             'center' => [],
@@ -1509,6 +1524,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Person of Peace', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1553,6 +1569,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'menu' => [
                 __( 'The B.L.E.S.S. Prayer', 'zume' ),
+                [10],
             ],
             'length' => [10],
             'center' => [
@@ -1576,6 +1593,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'menu' => [
                 __( 'Prayer Walking Activity', 'zume' ),
+                [6090],
             ],
             'length' => [6090],
             'center' => [
@@ -1713,6 +1731,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Faithfulness', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -1753,6 +1772,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( '3/3 Group Meeting', 'zume' ),
+                [75],
             ],
             'length' => [75],
             'center' => [],
@@ -1930,6 +1950,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'The Training Cycle', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2144,6 +2165,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Leadership Cells', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2345,6 +2367,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Non-Sequential Growth', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2388,6 +2411,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Pace', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2432,6 +2456,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Always Part of Two Churches', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2473,6 +2498,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Coaching Checklist', 'zume' ),
+                [25],
             ],
             'length' => [5],
             'center' => [],
@@ -2568,6 +2594,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'center',
             'menu' => [
                 __( 'Four Fields', 'zume' ),
+                [15],
             ],
             'length' => [],
             'center' => [],
@@ -2641,7 +2668,10 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't32_a',
             'type' => 'center',
-            'menu' =>  __( 'Generational Mapping', 'zume' ),
+            'menu' =>  [
+                __( 'Generational Mapping', 'zume' ),
+                [15],
+            ],
             'length' => [],
             'center' => [],
             'left' => [
@@ -2841,6 +2871,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Leadership in Networks', 'zume' ),
+                [15],
             ],
             'length' => [5],
             'center' => [],
@@ -2882,6 +2913,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'Peer Mentoring Groups', 'zume' ),
+                [50],
             ],
             'length' => [5],
             'center' => [],
@@ -2933,6 +2965,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'center',
             'menu' => [
                 __( 'Three-Month Plan', 'zume' ),
+                [40],
             ],
             'length' => [],
             'center' => [],
