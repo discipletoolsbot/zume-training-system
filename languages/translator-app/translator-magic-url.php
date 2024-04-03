@@ -1335,20 +1335,36 @@ class Zume_Training_Translator extends Zume_Magic_Page
         if ( isset( $_GET['type'], $_GET['session'] ) ) {
 
             // get the slides for the schedule and session
-            $build = zume_course_builder( $_GET['type'], $_GET['session'], $language['code'] );
+            $build = Zume_Course_Builder::builder( $_GET['type'], $language['code'], $_GET['session'] );
 
-            foreach( $build as $slide ) {
+            if ( empty( $_GET['session'] ) ) {
+                foreach( $build as $session ) {
+                    foreach( $session as $slide ) {
+                        // print keys above slides
+                        echo $slide['key'] . ' - ' . $slide['type'];
+                        echo '<br>';
 
-                // print keys above slides
-                echo $slide['key'] . ' - ' . $slide['type'];
-                echo '<br>';
+                        // print the slide
+                        echo '<div class="slide-outline">';
 
-                // print the slide
-                echo '<div class="slide-outline">';
+                        zume_course_slide_template( $slide );
 
-                zume_course_slide_template( $slide );
+                        echo '</div>';
+                    }
+                }
+            } else {
+                foreach( $build as $slide ) {
+                    // print keys above slides
+                    echo $slide['key'] . ' - ' . $slide['type'];
+                    echo '<br>';
 
-                echo '</div>';
+                    // print the slide
+                    echo '<div class="slide-outline">';
+
+                    zume_course_slide_template( $slide );
+
+                    echo '</div>';
+                }
             }
 
             // print the css

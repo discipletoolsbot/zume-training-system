@@ -91,9 +91,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'zume_languages' => zume_language_codes(),
                 'translations' => self::translations(),
             ]) ?>][0]
-            const zume10Sessions = [<?php echo json_encode( zume_full_course_builder( '10', $this->lang_code ) ) ?>][0]
-            const zume20Sessions = [<?php echo json_encode( zume_full_course_builder( '20', $this->lang_code ) ) ?>][0]
-            const zumeIntensiveSessions = [<?php echo json_encode( zume_full_course_builder( 'intensive', $this->lang_code ) ) ?>][0]
+            const zume10Sessions = [<?php echo json_encode( Zume_Course_Builder::builder( '10', $this->lang_code ) ) ?>][0]
+            const zume20Sessions = [<?php echo json_encode( Zume_Course_Builder::builder( '20', $this->lang_code ) ) ?>][0]
+            const zumeIntensiveSessions = [<?php echo json_encode( Zume_Course_Builder::builder( 'intensive', $this->lang_code ) ) ?>][0]
         </script>
 
         <?php
