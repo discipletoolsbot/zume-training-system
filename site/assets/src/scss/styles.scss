@@ -583,6 +583,7 @@ a, a:visited {
 }
 .collapse[data-state="open"] {
   overflow: initial;
+  height: auto;
 }
 .training-path {
   position: relative;

@@ -227,6 +227,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'show_details' => __( 'Show details', 'zume' ),
             'edit_time' => __( 'Edit time', 'zume' ),
             'add_new_training' => sprintf( __( 'Add new %s', 'zume' ), __( 'Training', 'zume' ) ),
+            'invite_friends' => __( 'Invite Friends', 'zume' ),
         ];
     }
 }

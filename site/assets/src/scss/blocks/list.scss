@@ -3,6 +3,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    border-inline-end: 2px solid color('gray-100');
 }
 
 .list__item {
@@ -20,6 +21,16 @@
     & .btn {
         padding-block: spacing(-2);
         line-height: 1;
+    }
+}
+
+.list__primary {
+    display: flex;
+    align-items: center;
+    gap: spacing(0);
+
+    & .icon {
+        font-size: font-size(2);
     }
 }
 

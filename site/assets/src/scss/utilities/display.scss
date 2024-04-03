@@ -79,6 +79,9 @@
     width: 1px;
     white-space: nowrap;
 }
+.invisible {
+    visibility: hidden;
+}
 
 .container-inline {
     container-type: inline-size;
