@@ -1,6 +1,15 @@
 <?php
+if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Course_Builder {
+    /**
+     * Build session content
+     *
+     * @param string $session_type
+     * @param string $lang_code
+     * @param string $session_number
+     * @return array
+     */
     public static function builder( $session_type = '10', $lang_code = 'en', $session_number = '0' ) {
         if ( empty($session_number) ) { // if 0, return all sessions
             $sessions = [];
@@ -23,6 +32,37 @@ class Zume_Course_Builder {
         else {
             return self::_build( $session_type, $lang_code, $session_number );
         }
+    }
+    /**
+     * Build menu array
+     *
+     * @param string $session_type
+     * @param string $lang_code
+     * @return array
+     */
+    public static function menu( $session_type, $lang_code  ) {
+        $menu = [];
+
+        $content = self::builder( $session_type, $lang_code );
+        foreach( $content as $slides ) {
+            $key = $slides[0]['key'];
+            $menu[$key] = [
+                'title' => $slides[0]['menu'][0],
+                'key' => $key,
+                'submenu' => [],
+            ];
+            foreach( $slides as $slide ) {
+                if ( empty( $slide['menu'] ) || 'title' == $slide['type'] ) {
+                    continue;
+                }
+                $menu[$key]['submenu'][] = [
+                    'key' => $slide['key'],
+                    'title' => $slide['menu'][0],
+                    'length' => self::_slide_length( $slide['menu'][1] ?? [], $session_type ),
+                ];
+            }
+        }
+        return $menu;
     }
     private static function _build( $session_type = '10', $lang_code = 'en', $session_number = '1' ) {
 
@@ -155,33 +195,7 @@ class Zume_Course_Builder {
 
         return $length_string;
     }
-    public static function menu( $session_type, $lang_code  ) {
-        $menu = [];
 
-        $content = self::builder( $session_type, $lang_code );
-        foreach( $content as $slides ) {
-            $key = $slides[0]['key'];
-            $menu[$key] = [
-                'title' => $slides[0]['menu'][0],
-                'key' => $key,
-                'submenu' => [],
-            ];
-           foreach( $slides as $slide ) {
-               if ( empty( $slide['menu'] ) || 'title' == $slide['type'] ) {
-                   continue;
-               }
-                $menu[$key]['submenu'][] = [
-                    'key' => $slide['key'],
-                    'title' => $slide['menu'][0],
-                    'length' => self::_slide_length( $slide['menu'][1] ?? [], $session_type ),
-                ];
-            }
-        }
-
-
-        dt_write_log( $menu );
-        return $menu;
-    }
 }
 
 

@@ -1,12 +1,19 @@
 <?php
+if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 function zume_content( $lang_code = 'en') {
+
+    if ( get_transient( __FUNCTION__.'_'.$lang_code ) ) {
+        return get_transient( __FUNCTION__.'_'.$lang_code );
+    }
+
+
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
     $checkin_base_url = site_url() . '/' . $lang_code . '/checkin/?code=';
     $activity_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&a=';
     $other_page_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&o=';
 
-    return [
+    $content = [
         /***************************************************************************************************************
          *
          *
@@ -90,7 +97,10 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't1_a',
             'type' => 'watch',
-            'menu' =>  __( 'God Uses Ordinary People', 'zume' ),
+            'menu' => [
+                __( 'God Uses Ordinary People', 'zume' ),
+                [15],
+            ],
             'length' => [5],
             'center' => [],
             'left' => [
@@ -219,6 +229,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'SOAPS Bible Reading', 'zume' ),
+                [35]
             ],
             'length' => [5],
             'center' => [],
@@ -786,7 +797,10 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't9_a',
             'type' => 'watch',
-            'menu' =>  __( 'Spiritual Economy', 'zume' ),
+            'menu' =>  [
+                __( 'Spiritual Economy', 'zume' ),
+                [15],
+            ],
             'length' => [5],
             'center' => [],
             'left' => [
@@ -5709,5 +5723,9 @@ function zume_content( $lang_code = 'en') {
         ],
 
     ]; // end course array
+
+    set_transient( __FUNCTION__.'_'.$lang_code, $content, 24 * HOUR_IN_SECONDS );
+
+    return $content;
 
 } // end function
