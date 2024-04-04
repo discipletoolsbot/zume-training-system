@@ -201,6 +201,9 @@ class Zume_Training_Messages_Post_Type
             case 'logic':
                 echo get_post_meta( $post_id, 'logic', true );
                 break;
+            case 'stage':
+                echo get_post_meta( $post_id, 'stage', true );
+                break;
 
             default:
                 break;
@@ -219,7 +222,7 @@ class Zume_Training_Messages_Post_Type
      */
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array( 'delay' => 'delay', 'logic' => 'logic' );
+        $new_columns = array(  'logic' => 'Logic', 'delay' => 'Delay', 'stage' => 'Stage' );
 
         $last_item = array();
 
@@ -292,11 +295,14 @@ class Zume_Training_Messages_Post_Type
      * @return void
      */
     public function meta_box_setup() {
+        add_meta_box( $this->post_type . '_meta', 'Strategy', array( $this, 'metabox_message_meta' ), $this->post_type, 'normal', 'high' );
         add_meta_box( $this->post_type . '_scribes', 'Messages', array( $this, 'metabox_messages' ), $this->post_type, 'normal', 'high' );
         add_meta_box( $this->post_type . '_schedule', 'Schedule Order', [ $this, 'metabox_message_hierarchy' ], $this->post_type, 'side', 'high' );
-        add_meta_box( $this->post_type . '_delay', 'Delay', [ $this, 'metabox_delay' ], $this->post_type, 'side', 'high' );
-        add_meta_box( $this->post_type . '_logic', 'Marketing Logic', [ $this, 'metabox_action' ], $this->post_type, 'side', 'high' );
     } // End meta_box_setup()
+
+    public function metabox_message_meta( $post ) {
+        $this->meta_box_content( 'details' );
+    }
 
     /**
      * Meta box for Status Information
@@ -383,40 +389,6 @@ class Zume_Training_Messages_Post_Type
         return $children;
     }
 
-    public function metabox_delay( $post ) {
-        $fields = get_post_custom( $post->ID );
-        $delay = isset( $fields['delay'] ) ? $fields['delay'][0] : 0;
-        ?>
-        <select name="delay" id="delay">
-            <option value="0" <?php selected( $delay, 0 ) ?>>No Delay</option>
-            <option value="1" <?php selected( $delay, 1 ) ?>>1 Day</option>
-            <option value="2" <?php selected( $delay, 2 ) ?>>2 Days</option>
-            <option value="3" <?php selected( $delay, 3 ) ?>>3 Days</option>
-            <option value="4" <?php selected( $delay, 4 ) ?>>4 Days</option>
-            <option value="5" <?php selected( $delay, 5 ) ?>>5 Days</option>
-            <option value="6" <?php selected( $delay, 6 ) ?>>6 Days</option>
-            <option value="7" <?php selected( $delay, 7 ) ?>>1 Week</option>
-            <option value="14" <?php selected( $delay, 14 ) ?>>2 Weeks</option>
-            <option value="21" <?php selected( $delay, 21 ) ?>>3 Weeks</option>
-            <option value="28" <?php selected( $delay, 28 ) ?>>4 Weeks</option>
-        </select>
-        <?php
-    }
-
-    public function metabox_action( $post ) {
-        $fields = get_post_custom( $post->ID );
-            ?>
-            <strong><label for="logic">Marketing Logic</label></strong><br>
-            <textarea name="logic" id="logic" style="width:100%;height:200px;"><?php echo isset($fields['logic'][0]) ? esc_textarea( $fields['logic'][0] ) : ''  ?></textarea>
-            <?php
-        if ( isset( $fields['action'] ) ) {
-            ?>
-            <strong><label for="action">Action</label></strong><br>
-            <input type="text" name="action" id="action" value="<?php echo isset($fields['action'][0]) ? esc_attr( $fields['action'][0] ) : ''  ?>" />
-            <?php
-        }
-    }
-
     /**
      * The contents of our meta box.
      *
@@ -478,9 +450,9 @@ class Zume_Training_Messages_Post_Type
                                 <td style="padding:2px;">
                                 <select name="' . esc_attr( $k ) . '" id="' . esc_attr( $k ) . '" class="regular-text">';
                             // Iterate the options
-                            foreach ( $v['default'] as $vv ) {
-                                echo '<option value="' . esc_attr( $vv ) . '" ';
-                                if ( $vv == $data ) {
+                            foreach ( $v['default'] as $ii => $vv ) {
+                                echo '<option value="' . esc_attr( $ii ) . '" ';
+                                if ( $ii == $data ) {
                                     echo 'selected';
                                 }
                                 echo '>' . esc_html( $vv ) . '</option>';
@@ -620,17 +592,6 @@ class Zume_Training_Messages_Post_Type
                 'type'        => 'textarea',
                 'section'     => 'messages',
             );
-            $fields['footer_' . $language['code']] = array(
-                'name'        => 'Footer',
-                'default'     => [
-                    '',
-                    'Link',
-                    'Link2',
-                    'Link3',
-                ],
-                'type'        => 'select',
-                'section'     => 'messages',
-            );
             $fields['end_' . $language['code']] = array(
                 'name'        => 'End',
                 'default'     => '',
@@ -639,17 +600,43 @@ class Zume_Training_Messages_Post_Type
             );
         }
 
-        $fields['delay'] = array(
-            'name'        => 'Delay',
-            'default'     => '',
-            'type'        => 'delay',
-            'section'     => 'action',
-        );
+
         $fields['logic'] = array(
             'name'        => 'Logic',
             'default'     => '',
             'type'        => 'textarea',
-            'section'     => 'action',
+            'section'     => 'details',
+        );
+        $fields['delay'] = array(
+            'name'        => 'Delay',
+            'default'     => [
+                '0' => 'No Delay',
+                '1' => '1 Day',
+                '2' => '2 Days',
+                '3' => '3 Days',
+                '4' => '4 Days',
+                '5' => '5 Days',
+                '6' => '6 Days',
+                '7' => '1 Week',
+                '14' => '2 Weeks',
+                '21' => '3 Weeks',
+                '28' => '4 Weeks',
+            ],
+            'type'        => 'select',
+            'section'     => 'details',
+        );
+        $fields['stage'] = array(
+            'name'        => 'Stage',
+            'default'     => [
+                'registrant' => 'Registrant',
+                'active_training_trainee' => 'Active Training Trainee',
+                'post_training_trainee' => 'Post-Training Trainee',
+                'partial_practitioner' => 'Partial Practitioner',
+                'full_practitioner' => 'Full Practitioner',
+                'multiplying_practitioner' => 'Multiplying Practitioner',
+            ],
+            'type'        => 'select',
+            'section'     => 'details',
         );
 
         return apply_filters( 'zume_messages_fields_settings', $fields );
