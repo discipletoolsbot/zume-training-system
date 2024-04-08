@@ -93,7 +93,9 @@ export class CourseSlideshow extends LitElement {
         }
 
         const matcher = (target) => {
-            return target.id === 'offCanvas' || target.classList.contains('js-off-canvas-overlay')
+            return target.id === 'offCanvas'
+                || target.classList.contains('js-off-canvas-overlay')
+                || target.classList.contains('bypass-nav-click')
         }
         if (this.hasParent(event.target, matcher)
         ) {

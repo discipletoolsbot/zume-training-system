@@ -7,6 +7,11 @@ export class CourseSlide extends LitElement {
         };
     }
 
+    constructor() {
+        super()
+        this.dir = document.querySelector('html').dir
+    }
+
     connectedCallback() {
         super.connectedCallback()
         window.addEventListener('resize', this.resizeCallback)

@@ -6,16 +6,43 @@ export class VideoSlide extends CourseSlide {
         return {
             slide: { type: Object },
             showButtons: { type: Boolean },
+            scriptUrl: { type: String, attribute: false }
         };
     }
+    firstUpdated() {
+        jQuery(document).foundation();
 
-    constructor() {
-        super()
+        const scriptId = this.slide.script_id
+        const lang_code = jsObject.lang_code
+
+        const url = new URL(location.href)
+        const scriptUrl = new URL(url.origin)
+        scriptUrl.pathname = [ lang_code, 'zume_app', 'script' ].join('/')
+        scriptUrl.searchParams.append('s', scriptId)
+
+        this.scriptUrl = scriptUrl.href
+    }
+    openMenu() {
+        const menu = document.querySelector('#informationOffCanvas')
+        jQuery(menu).foundation('open')
+    }
+    closeMenu() {
+        const menu = document.querySelector('#informationOffCanvas')
+        jQuery(menu).foundation('close')
     }
 
     render() {
         return html`
             <div class="video-slide">
+
+                <button
+                    type="button"
+                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} m-0 f-3 bypass-nav-click"
+                    @click=${this.openMenu}
+                >
+                    <span class="icon zume-info"></span>
+                </button>
+
                 <div>
                     <iframe src="${this.slide['center'][0]}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                             frameborder="0"
@@ -48,6 +75,18 @@ export class VideoSlide extends CourseSlide {
                         />
                     </button>
                 ` : '' }
+            </div>
+            <div class="bg-white | information-flyout bypass-nav-click off-canvas ${this.dir === 'rtl' ? 'position-left' : 'position-right'}" id="informationOffCanvas" data-off-canvas data-transition="overlap">
+                <button class="close-button" aria-label="Close menu" type="button" data-close>
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <iframe
+                    src=${this.scriptUrl || ''}
+                    frameborder="0"
+                    width="100%"
+                >
+                </iframe>
             </div>
         `;
     }

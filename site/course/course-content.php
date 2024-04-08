@@ -114,6 +114,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't1_b',
             'type' => 'video',
+            'script_id' => 34,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -155,6 +156,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't2_b',
             'type' => 'video',
+            'script_id' => 35,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -200,6 +202,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't3_b',
             'type' => 'video',
+            'script_id' => 36,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -244,6 +247,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't4_b',
             'type' => 'video',
+            'script_id' => 37,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -304,6 +308,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't5_b',
             'type' => 'video',
+            'script_id' => 38,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -499,6 +504,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't6_b',
             'type' => 'video',
+            'script_id' => 39,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -544,6 +550,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't7_b',
             'type' => 'video',
+            'script_id' => 40,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -611,6 +618,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't8_b',
             'type' => 'video',
+            'script_id' => 41,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -814,6 +822,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't9_b',
             'type' => 'video',
+            'script_id' => 42,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -884,6 +893,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't10_d',
             'type' => 'video',
+            'script_id' => 43,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -952,6 +962,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't11_b',
             'type' => 'video',
+            'script_id' => 44,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1157,6 +1168,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't12_b',
             'type' => 'video',
+            'script_id' => 45,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1207,6 +1219,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't13_b',
             'type' => 'video',
+            'script_id' => 46,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1252,6 +1265,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't14_b',
             'type' => 'video',
+            'script_id' => 47,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1297,6 +1311,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't15_b',
             'type' => 'video',
+            'script_id' => 48,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1342,6 +1357,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't16_b',
             'type' => 'video',
+            'script_id' => 49,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1525,6 +1541,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't17_b',
             'type' => 'video',
+            'script_id' => 50,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1553,6 +1570,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't18_b',
             'type' => 'video',
+            'script_id' => 51,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1760,6 +1778,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't20_b',
             'type' => 'video',
+            'script_id' => 52,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1801,6 +1820,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't21_b',
             'type' => 'video',
+            'script_id' => 53,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -1979,6 +1999,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't22_b',
             'type' => 'video',
+            'script_id' => 54,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2195,6 +2216,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't23_b',
             'type' => 'video',
+            'script_id' => 55,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2396,6 +2418,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't24_b',
             'type' => 'video',
+            'script_id' => 56,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2440,6 +2463,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't25_b',
             'type' => 'video',
+            'script_id' => 57,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2486,6 +2510,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't26_b',
             'type' => 'video',
+            'script_id' => 58,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2527,6 +2552,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't28_b',
             'type' => 'video',
+            'script_id' => 60,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2900,6 +2926,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't29_b',
             'type' => 'video',
+            'script_id' => 61,
             'menu' => [],
             'length' => [],
             'center' => [
@@ -2943,6 +2970,7 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 't30_b',
             'type' => 'video',
+            'script_id' => 62,
             'menu' => [],
             'length' => [],
             'center' => [

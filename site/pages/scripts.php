@@ -73,24 +73,24 @@ class Zume_Scripts extends Zume_Magic_Page
     public function header_style(){
         ?>
         <style>
-            .zume-activity {
+            .activity__wrapper {
                 font-size: 1.2em;
                 padding: 1em;
                 max-width: 800px;
                 width: 100%;
                 margin: 0 auto;
             }
-            .zume-activity-header {
+            .activity__header {
                 text-align: center;
             }
-            .zume-activity-content {
+            .activity__content {
                 max-width: 600px;
                 margin: 0 auto;
             }
-            .zume-activity p {
+            .activity__wrapper p {
                 margin-bottom: 1em;
             }
-            .zume-activity ul  {
+            .activity__wrapper ul  {
                 margin-bottom: 1em;
             }
         </style>
@@ -100,11 +100,11 @@ class Zume_Scripts extends Zume_Magic_Page
     public function body(){
         if ( ! isset( $_GET['s'] ) ||  empty($_GET['s'] ) ) {
             ?>
-                <div class="zume-activity">
-                    <div class="zume-activity-header">
+                <div class="activity__wrapper">
+                    <div class="activity__header">
                         <h1>Not a valid script request</h1><hr>
                     </div>
-                    <div class="zume-activity-content">
+                    <div class="activity__content">
                     </div>
                 </div>
             <?php
@@ -133,23 +133,23 @@ class Zume_Scripts extends Zume_Magic_Page
 
         if ( empty( $body ) ) {
             ?>
-                <div class="zume-activity">
-                    <div class="zume-activity-header">
+                <div class="activity__wrapper">
+                    <div class="activity__header">
                         <h1>Script not yet translated</h1><hr>
                     </div>
-                    <div class="zume-activity-content">
+                    <div class="activity__content">
                     </div>
                 </div>
             <?php
             return;
         } else {
             ?>
-            <div class="zume-activity">
-                <div class="zume-activity-header">
+            <div class="activity__wrapper">
+                <div class="activity__header">
                     <h1><?php echo $training_items[$script_id]['title'] ?></h1>
                     <hr>
                 </div>
-                <div class="zume-activity-content">
+                <div class="activity__content">
                     <?php echo $body ?>
                 </div>
             </div>

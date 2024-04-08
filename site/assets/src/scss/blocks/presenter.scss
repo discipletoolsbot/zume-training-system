@@ -293,6 +293,14 @@ not of the 2 column section */
 .presenter-menu {
     width: min( 100vw, 500px );
 }
+.information-flyout {
+    width: min( 100vw, 500px );
+    height: unset;
+
+    iframe {
+        height: 100vh;
+    }
+}
 .session-link {
     color: color('black');
     font-weight: 500;

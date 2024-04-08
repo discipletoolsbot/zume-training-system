@@ -87,6 +87,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'root' => esc_url_raw( rest_url() ),
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . 'assets/images' ),
+                'language' => $this->lang_code,
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'zume_languages' => zume_language_codes(),
                 'translations' => self::translations(),
