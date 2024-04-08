@@ -8,6 +8,7 @@ export class VideoSlide extends CourseSlide {
             showButtons: { type: Boolean },
             id: { type: String },
             scriptUrl: { type: String, attribute: false },
+            offCanvasId: { type: String, attribute: false },
         };
     }
     firstUpdated() {

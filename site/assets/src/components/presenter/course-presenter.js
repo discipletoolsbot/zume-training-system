@@ -45,7 +45,12 @@ export class CoursePresenter extends LitElement {
         this.changeSession(lessonIndex, false, sessions)
 
         window.addEventListener('popstate', this.handleHistoryPopState)
-
+    }
+    disconnectedCallback() {
+        super.disconnectedCallback()
+        window.removeEventListener('popstate', this.handleHistoryPopState)
+    }
+    firstUpdated() {
         const languageSelectors = document.querySelectorAll('.language-selector')
         languageSelectors.forEach(function(languageSelector) {
             languageSelector.addEventListener('click', () => {
@@ -73,8 +78,6 @@ export class CoursePresenter extends LitElement {
                 location.href = newUrl
             })
         })
-
-
     }
 
     getView(url) {

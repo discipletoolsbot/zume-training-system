@@ -4,16 +4,17 @@ export class CourseSlide extends LitElement {
     static get properties() {
         return {
             slide: { type: Object },
+            id: { type: String },
         };
     }
 
     constructor() {
         super()
-        this.dir = document.querySelector('html').dir
     }
 
     connectedCallback() {
         super.connectedCallback()
+        this.dir = document.querySelector('html').dir
         window.addEventListener('resize', this.resizeCallback)
     }
     disconnectedCallback() {

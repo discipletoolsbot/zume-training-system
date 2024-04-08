@@ -3,7 +3,7 @@
 <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
     <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
     <hr>
-    <table class="hover" id="language-table">
+    <table class="hover bypass-nav-click" id="language-table">
         <?php
 
         $dt_url = new DT_URL( dt_get_url_path() );
