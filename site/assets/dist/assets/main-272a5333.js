@@ -1705,13 +1705,13 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
 
                 <button
                     type="button"
-                    class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} m-0 f-3 bypass-nav-click"
+                    class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 f-3 bypass-nav-click"
                     @click=${this.openMenu}
                 >
                     <span class="icon zume-info"></span>
                 </button>
 
-                <div>
+                <div class="widescreen flex-video">
                     <iframe src="${this.slide.center[0]}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                             frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
@@ -2158,4 +2158,4 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("host-progress-circle",zs);
-//# sourceMappingURL=main-e2082a78.js.map
+//# sourceMappingURL=main-272a5333.js.map
