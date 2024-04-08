@@ -112,7 +112,7 @@ class Zume_Training_Share extends Zume_Magic_Page
             $meta = get_post_meta( $post->ID );
             $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
             $page_url = site_url( $current_language . '/' . $post->post_name );
-            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] - 1 ];
+            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] ];
 
             $share_items[] = [
                 'page_title' => $page_title,
