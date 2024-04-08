@@ -9,8 +9,8 @@ const config = create_config(
         build: {
             rollupOptions: {
                 output: {
-                    entryFileNames: `assets/[name].js`,
-                    chunkFileNames: `assets/[name].js`,
+                    entryFileNames: `assets/[name]-bundle.js`,
+                    chunkFileNames: `assets/[name]-bundle.js`,
                     assetFileNames: `assets/[name].[ext]`
                 }
             }

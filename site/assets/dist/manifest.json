@@ -29,7 +29,7 @@
     "css": [
       "assets/main.css"
     ],
-    "file": "assets/main.js",
+    "file": "assets/main-bundle.js",
     "isEntry": true,
     "src": "site/assets/src/main.js"
   }
