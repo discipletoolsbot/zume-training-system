@@ -10,7 +10,7 @@ export class OverviewSlide extends CourseSlide {
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <img src="https://placehold.co/60x60/png" />
+                                <span class="icon zume-overview"></span>
                             </div>
                             <h2 class="title">${this.slide['left'][0]}</h2>
                         </div>

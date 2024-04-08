@@ -22,6 +22,7 @@ export class SlideSwitcher extends LitElement {
             case 'pray':
                 return html`<pray-slide .slide=${this.slide}></pray-slide>`
             case 'review':
+                return html`<review-slide .slide=${this.slide}></review-slide>`
             case 'overview':
                 return html`<overview-slide .slide=${this.slide}></overview-slide>`
             case 'challenge':

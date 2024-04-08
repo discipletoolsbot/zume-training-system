@@ -1,7 +1,7 @@
 import { html } from 'lit';
 import { CourseSlide } from './course-slide';
 
-export class DiscussSlide extends CourseSlide {
+export class ReviewSlide extends CourseSlide {
     render() {
         return html`
             <div class="slides-card">
@@ -10,17 +10,14 @@ export class DiscussSlide extends CourseSlide {
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-discuss"></span>
+                                <span class="icon zume-review"></span>
                             </div>
-                            <div class="stack">
-                                <h2 class="title">${this.slide['left'][0]}</h2>
-                                <span class="subtitle">${this.slide['length'] ?? ''}</span>
-                            </div>
+                            <h2 class="title">${this.slide['left'][0]}</h2>
                         </div>
                     </div>
                     <div class="content-area">
                         <div class="stack">
-                            ${this.renderContent(this.slide['right'])}
+                            ${this.renderContent(this.slide['right'], false, true)}
                         </div>
                     </div>
                 </div>
@@ -28,4 +25,4 @@ export class DiscussSlide extends CourseSlide {
         `;
     }
 }
-customElements.define('discuss-slide', DiscussSlide);
+customElements.define('review-slide', ReviewSlide);

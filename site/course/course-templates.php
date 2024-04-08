@@ -25,6 +25,10 @@ function zume_course_slide_template( $slide ) {
             <?php
             break;
         case 'review':
+            ?>
+                <review-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>"></review-slide>
+            <?php
+            break;
         case 'overview':
             ?>
                 <overview-slide slide="<?php echo esc_attr( json_encode( $slide ) ) ?>"></overview-slide>
