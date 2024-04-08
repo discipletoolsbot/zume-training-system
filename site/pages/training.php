@@ -265,13 +265,13 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <span class="offset-anchor" id="what-is-required"></span>
                     <h2 class="brand-light"><?php echo esc_html__( 'What is required?', 'zume' ) ?></h2>
                     <h3><?php echo esc_html__( 'Needed for the training:', 'zume' ) ?></h3>
-                    <ul>
+                    <ul role="list">
                         <li><?php echo esc_html__( 'At least 3 people, but ideally less than 12.', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Commitment to spend 20 hours learning and practicing the concepts and tools in the course.', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'A person to facilitate (potentially you) the meeting time and location, to guide the follow-up discussion, and facilitate action prompts.', 'zume' ) ?></li>
                     </ul>
                     <h3><?php echo esc_html__( 'NOT needed for the training:', 'zume' ) ?></h3>
-                    <ul>
+                    <ul role="list">
                         <li><?php echo esc_html__( 'More knowledge or experience than the rest of your group is not needed! If you can click next, you can lead a Zúme Training.', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Special permission to lead a training is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
                     </ul>
