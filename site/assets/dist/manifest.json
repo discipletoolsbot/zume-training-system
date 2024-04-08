@@ -1,51 +1,35 @@
 {
-  "Zume-Icons-Square.eot": {
-    "file": "assets/Zume-Icons-Square-3f035e07.eot",
-    "src": "Zume-Icons-Square.eot"
-  },
-  "Zume-Icons-Square.svg": {
-    "file": "assets/Zume-Icons-Square-e64fef39.svg",
-    "src": "Zume-Icons-Square.svg"
-  },
-  "Zume-Icons-Square.ttf": {
-    "file": "assets/Zume-Icons-Square-f5df0a57.ttf",
-    "src": "Zume-Icons-Square.ttf"
-  },
-  "Zume-Icons-Square.woff": {
-    "file": "assets/Zume-Icons-Square-5e361546.woff",
-    "src": "Zume-Icons-Square.woff"
-  },
   "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.eot": {
-    "file": "assets/Zume-Icons-Square-3f035e07.eot",
+    "file": "assets/Zume-Icons-Square.eot",
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.eot"
   },
   "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.svg": {
-    "file": "assets/Zume-Icons-Square-e64fef39.svg",
+    "file": "assets/Zume-Icons-Square.svg",
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.svg"
   },
   "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.ttf": {
-    "file": "assets/Zume-Icons-Square-f5df0a57.ttf",
+    "file": "assets/Zume-Icons-Square.ttf",
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.ttf"
   },
   "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.woff": {
-    "file": "assets/Zume-Icons-Square-5e361546.woff",
+    "file": "assets/Zume-Icons-Square.woff",
     "src": "site/assets/fonts/ZumeIconsSquare/fonts/Zume-Icons-Square.woff"
   },
   "site/assets/src/main.css": {
-    "file": "assets/main-99f17f9d.css",
+    "file": "assets/main.css",
     "src": "site/assets/src/main.css"
   },
   "site/assets/src/main.js": {
     "assets": [
-      "assets/Zume-Icons-Square-3f035e07.eot",
-      "assets/Zume-Icons-Square-f5df0a57.ttf",
-      "assets/Zume-Icons-Square-5e361546.woff",
-      "assets/Zume-Icons-Square-e64fef39.svg"
+      "assets/Zume-Icons-Square.eot",
+      "assets/Zume-Icons-Square.ttf",
+      "assets/Zume-Icons-Square.woff",
+      "assets/Zume-Icons-Square.svg"
     ],
     "css": [
-      "assets/main-99f17f9d.css"
+      "assets/main.css"
     ],
-    "file": "assets/main-c872d893.js",
+    "file": "assets/main.js",
     "isEntry": true,
     "src": "site/assets/src/main.js"
   }
