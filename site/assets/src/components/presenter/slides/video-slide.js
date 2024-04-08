@@ -6,12 +6,29 @@ export class VideoSlide extends CourseSlide {
         return {
             slide: { type: Object },
             showButtons: { type: Boolean },
-            scriptUrl: { type: String, attribute: false }
+            id: { type: String },
+            scriptUrl: { type: String, attribute: false },
         };
     }
     firstUpdated() {
         jQuery(document).foundation();
 
+        this.offCanvasId = 'informationOffCanvas' + this.id
+        this.offCanvasSelector = '#' + this.offCanvasId
+        this.loadScriptIntoFrame()
+    }
+
+    openMenu() {
+        const menu = document.querySelector(this.offCanvasSelector)
+        console.log(this.offCanvasId, menu)
+        jQuery(menu).foundation('open')
+    }
+    closeMenu() {
+        const menu = document.querySelector(this.offCanvasSelector)
+        jQuery(menu).foundation('close')
+    }
+
+    loadScriptIntoFrame() {
         const scriptId = this.slide.script_id
         const lang_code = jsObject.lang_code
 
@@ -21,14 +38,6 @@ export class VideoSlide extends CourseSlide {
         scriptUrl.searchParams.append('s', scriptId)
 
         this.scriptUrl = scriptUrl.href
-    }
-    openMenu() {
-        const menu = document.querySelector('#informationOffCanvas')
-        jQuery(menu).foundation('open')
-    }
-    closeMenu() {
-        const menu = document.querySelector('#informationOffCanvas')
-        jQuery(menu).foundation('close')
     }
 
     render() {
@@ -76,7 +85,12 @@ export class VideoSlide extends CourseSlide {
                     </button>
                 ` : '' }
             </div>
-            <div class="bg-white | information-flyout bypass-nav-click off-canvas ${this.dir === 'rtl' ? 'position-left' : 'position-right'}" id="informationOffCanvas" data-off-canvas data-transition="overlap">
+            <div
+                class="bg-white | information-flyout bypass-nav-click off-canvas ${this.dir === 'rtl' ? 'position-left' : 'position-right'}"
+                id=${this.offCanvasId || "informationOffCanvas"}
+                data-off-canvas
+                data-transition="overlap"
+            >
                 <button class="close-button" aria-label="Close menu" type="button" data-close>
                   <span aria-hidden="true">&times;</span>
                 </button>

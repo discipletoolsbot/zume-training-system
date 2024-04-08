@@ -159,14 +159,12 @@
     background-color: #2DADE2;
     max-height: 100vh;
     margin-inline: auto;
+    position: relative;
 
     & > iframe {
         width: 100%;
         height: 100%;
     }
-}
-.course-guide .video-slide .btn {
-    display: none;
 }
 .course-guide .snap-content {
     scroll-snap-type: block mandatory;
