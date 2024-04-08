@@ -135,18 +135,6 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'my-tools',
-            pattern: `${jsObject.base_url}/my-tools`,
-            parent: 'practicing',
-            icon: 'zume-tools',
-            type: 'dash-link',
-            translation: jsObject.translations['my_tools'],
-            explanation: jsObject.translations['my_tools_explanation'],
-            data: {
-                component: 'dash-tools',
-            },
-        },
-        {
             name: 'my-plans',
             pattern: `${jsObject.base_url}/my-plans`,
             parent: 'practicing',
