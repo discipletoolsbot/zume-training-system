@@ -217,8 +217,8 @@ a, a:visited {
 
 .nav-toggle {
   cursor: pointer;
-  width: 3em;
-  height: 2em;
+  width: 2.5em;
+  height: 2.5em;
   border: 1px;
   border-radius: 5px;
   color: color('white');
@@ -236,7 +236,7 @@ a, a:visited {
 }
 
 .hamburger {
-  width: 50%;
+  width: 75%;
   position: relative;
 }
 
@@ -246,6 +246,7 @@ a, a:visited {
   display: block;
   margin: 0 auto;
   height: 3px;
+  border-radius: 5px;
   background: color('white');
 }
 .hamburger.brand,
@@ -573,7 +574,7 @@ a, a:visited {
   position: absolute;
   inset: 0;
   overflow: auto;
-  z-index: 20;
+  z-index: 1;
 }
 
 .collapse {

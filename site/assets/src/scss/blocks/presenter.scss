@@ -1,3 +1,20 @@
+#hamburger-menu {
+    border-radius: 100px;
+    background-color: color('white');
+    padding: 0.5em;
+
+    .hamburger, .hamburger::after, .hamburger::before {
+        background-color: color('brand');
+    }
+
+    &.invert {
+        background-color: unset;
+
+        & .hamburger, & .hamburger::after, & .hamburger::before {
+            background-color: color('white');
+        }
+    }
+}
 .slides-card {
     --slide-unit: 1vw;
     --font-size: calc( var(--slide-unit) * 2 );
