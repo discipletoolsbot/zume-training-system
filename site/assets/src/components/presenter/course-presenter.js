@@ -12,7 +12,9 @@ export class CoursePresenter extends LitElement {
             homeUrl: { type: String },
             assetsPath: { type: String },
             zumeSessions: { attribute: false },
+            menu: { attribute: false },
             lessonIndex: { attribute: false },
+            sessionKey: { attribute: false },
             view: { attribute: false },
             linkNodes: { attribute: false },
             showIndex: { attribute: false },
@@ -26,15 +28,17 @@ export class CoursePresenter extends LitElement {
 
         const url = new URL(window.location.href)
 
-        const zumeSessions = this.getZumeSessions(url);
-        this.zumeSessions = zumeSessions
+        const { sessions, menu } = this.getZumeSessions(url);
+        this.zumeSessions = sessions
+        this.menu = menu
 
         const lessonIndex = this.getLessonIndex(url);
         this.lessonIndex = lessonIndex
+        this.sessionKey = ''
 
         this.view = this.getView(url);
 
-        this.changeSession(lessonIndex, false, zumeSessions)
+        this.changeSession(lessonIndex, false, sessions)
 
         this.handleSessionLink = this.handleSessionLink.bind(this)
         this.handleHistoryPopState = this.handleHistoryPopState.bind(this)
@@ -105,22 +109,27 @@ export class CoursePresenter extends LitElement {
 
         this.type = type
 
-        let zumeSessions;
+        let sessions;
+        let menu;
         switch (type) {
             case '10':
-                zumeSessions = zume10Sessions;
+                sessions = zume10Sessions;
+                menu = zume10SessionsMenu;
                 break;
             case '20':
-                zumeSessions = zume20Sessions;
+                sessions = zume20Sessions;
+                menu = zume20SessionsMenu;
                 break;
             case 'intensive':
-                zumeSessions = zumeIntensiveSessions;
+                sessions = zumeIntensiveSessions;
+                menu = zumeIntensiveSessionsMenu;
                 break;
             default:
-                zumeSessions = zume10Sessions;
+                sessions = zume10Sessions;
+                menu = zume10SessionsMenu;
                 break;
         }
-        return zumeSessions;
+        return { sessions, menu };
     }
 
     handleSessionLink(event) {
@@ -135,17 +144,11 @@ export class CoursePresenter extends LitElement {
         this.closeMenu()
     }
 
-    /* TODO: complete this function to use the subsection numbers correctly */
-    handleSubSectionLink(event) {
-        const link = event.target
-        const sessionNumber = Number(link.dataset.sessionNumber)
-        const subsectionNumber = Number(link.dataset.subsectionNumber)
+    handleSubSectionLink(sessionNumber, subsectionKey) {
         this.lessonIndex = sessionNumber
 
-        if ( this.showIndex === true ) {
-            this.showIndex = false
-        }
         this.changeSession(this.lessonIndex)
+        this.sessionKey = subsectionKey
         this.closeMenu()
     }
 
@@ -221,9 +224,6 @@ export class CoursePresenter extends LitElement {
 
     }
 
-    getSessionTitle(index) {
-        return `Session ${index + 1}`
-    }
     getSessionSections() {
         if ( !this.session ) {
             return []
@@ -271,7 +271,7 @@ export class CoursePresenter extends LitElement {
                                         data-session-number=${sessionNumber}
                                         @click=${this.handleSessionLink}
                                     >
-                                        <h2 class="f-0 bold">Session</h2>
+                                        <h2 class="f-0 bold">${jsObject.translations.session}</h2>
                                         <p class="f-3 bold lh-sm">${sessionNumber + 1}</p>
                                         <span class="icon zume-course brand-light f-3"></span>
                                     </button>
@@ -291,43 +291,29 @@ export class CoursePresenter extends LitElement {
                     <!-- Menu -->
 
                     <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
-                        ${this.zumeSessions.map((session, sessionNumber) => html`
+                        ${Object.values(this.menu).map(({title, submenu}, sessionNumber) => html`
                             <li>
                                 <a
                                     class="session-link"
                                     data-session-number="${sessionNumber}"
                                     @click=${this.handleSessionLink}
                                 >
-                                    ${this.getSessionTitle(sessionNumber)}
+                                    ${title}
                                 </a>
                                 <ul class="menu vertical nested ${this.lessonIndex === sessionNumber ? 'is-active' : ''}">
-                                    <a
-                                        class="session-link"
-                                        data-subitem
-                                        data-session-number=${sessionNumber}
-                                        data-subsection-number=${0}
-                                        @click=${this.handleSubSectionLink}
-                                    >
-                                        Sub menu 1
-                                    </a>
-                                    <a
-                                        class="session-link"
-                                        data-subitem
-                                        data-session-number=${sessionNumber}
-                                        data-subsection-number=${1}
-                                        @click=${this.handleSubSectionLink}
-                                    >
-                                        Sub menu 2
-                                    </a>
-                                    <a
-                                        class="session-link"
-                                        data-subitem
-                                        data-session-number=${sessionNumber}
-                                        data-subsection-number=${2}
-                                        @click=${this.handleSubSectionLink}
-                                    >
-                                        Sub menu 3
-                                    </a>
+                                    ${
+                                        submenu.map(({ key, title, length }) => html`
+                                            <a
+                                                class="session-link"
+                                                data-subitem
+                                                href=${`#${key}`}
+                                                @click=${() => this.handleSubSectionLink(sessionNumber, key)}
+                                            >
+                                                <span>${title}</span> <span>${length}</span>
+                                            </a>
+                                        `)
+                                    }
+
                                 </ul>
                             </li>
                         `)}
@@ -357,7 +343,7 @@ export class CoursePresenter extends LitElement {
                 ${
                     this.view === 'guide'
                     ? html`<course-guide .sections=${this.getSessionSections()}></course-guide>`
-                    : html`<course-slideshow .sections=${this.getSessionSections()}></course-slideshow>`
+                    : html`<course-slideshow .sections=${this.getSessionSections()} startSlideKey=${this.sessionKey}></course-slideshow>`
                 }
             </div>
         `

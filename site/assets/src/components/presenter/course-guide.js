@@ -9,13 +9,18 @@ export class CourseGuide extends LitElement {
 
     render() {
         return html`
-            <div class="container">
-                <div class="stack | my-4" data-outline-slides>
+            <div class="course-guide">
+                <div class="stack | py-4 snap-content" data-outline-slides>
                     ${this.sections.map((slide, i) => {
                         return html`
-                            <slide-switcher .slide=${slide}></slide-switcher>
+                            <div class="container | slide-switcher">
+                                <slide-switcher
+                                    .slide=${slide}
+                                ></slide-switcher>
+                            </div>
                         `
                     })}
+
                 </div>
             </div>
         `

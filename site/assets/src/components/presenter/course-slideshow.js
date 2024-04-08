@@ -4,6 +4,7 @@ export class CourseSlideshow extends LitElement {
     static get properties() {
         return {
             sections: { type: Array },
+            startSlideKey: { type: String },
             sectionIndex: { attribute: false },
             currentSlide: { attribute: false },
             index: { attribute: false },
@@ -12,7 +13,10 @@ export class CourseSlideshow extends LitElement {
 
     constructor() {
         super()
-        this.reset();
+        this.reset()
+
+        this.sections = []
+        this.startSlideKey = ''
 
         this.listenForKeyboard = this.listenForKeyboard.bind(this)
         this.listenForMouseClick = this.listenForMouseClick.bind(this)
@@ -38,6 +42,11 @@ export class CourseSlideshow extends LitElement {
     update(changedProperties) {
         if ( changedProperties.has('sections') ) {
             this.reset()
+        }
+        if (changedProperties.has('startSlideKey') && this.startSlideKey !== '') {
+            const slideIndex = this.sections.findIndex(({key}) => key === this.startSlideKey)
+
+            this.setSlide(slideIndex)
         }
         super.update(changedProperties)
     }

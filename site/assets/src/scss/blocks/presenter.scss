@@ -148,8 +148,16 @@
         height: 100%;
     }
 }
-course-guide .video-slide .btn {
+.course-guide .video-slide .btn {
     display: none;
+}
+.course-guide .snap-content {
+    scroll-snap-type: block mandatory;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.slide-switcher {
+    scroll-snap-align: center;
 }
 [data-outline-slides] .slides-card,
 .slide-outline {

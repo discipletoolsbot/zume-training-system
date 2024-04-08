@@ -16,43 +16,43 @@ export class SlideSwitcher extends LitElement {
 
         switch (this.slide.type) {
             case 'title':
-                return html`<title-slide .slide=${this.slide}></title-slide>`
+                return html`<title-slide .slide=${this.slide} id=${this.slide.key}></title-slide>`
             case 'checkin':
-                return html`<checkin-slide .slide=${this.slide}></checkin-slide>`
+                return html`<checkin-slide .slide=${this.slide} id=${this.slide.key}></checkin-slide>`
             case 'pray':
-                return html`<pray-slide .slide=${this.slide}></pray-slide>`
+                return html`<pray-slide .slide=${this.slide} id=${this.slide.key}></pray-slide>`
             case 'review':
-                return html`<review-slide .slide=${this.slide}></review-slide>`
+                return html`<review-slide .slide=${this.slide} id=${this.slide.key}></review-slide>`
             case 'overview':
-                return html`<overview-slide .slide=${this.slide}></overview-slide>`
+                return html`<overview-slide .slide=${this.slide} id=${this.slide.key}></overview-slide>`
             case 'challenge':
             case 'center':
-                return html`<center-slide .slide=${this.slide}></center-slide>`
+                return html`<center-slide .slide=${this.slide} id=${this.slide.key}></center-slide>`
             case 'watch':
-                return html`<watch-slide .slide=${this.slide}></watch-slide>`
+                return html`<watch-slide .slide=${this.slide} id=${this.slide.key}></watch-slide>`
             case 'video':
-                return html`<video-slide .slide=${this.slide} ?showButtons=${this.showControls}></video-slide>`
+                return html`<video-slide .slide=${this.slide} id=${this.slide.key} ?showButtons=${this.showControls}></video-slide>`
             case 'look_back':
-              return html`<look-back-slide .slide=${this.slide}></look-back-slide>`
+              return html`<look-back-slide .slide=${this.slide} id=${this.slide.key}></look-back-slide>`
             case 'discuss':
-                return html`<discuss-slide .slide=${this.slide}></discuss-slide>`
+                return html`<discuss-slide .slide=${this.slide} id=${this.slide.key}></discuss-slide>`
             case 'left_content':
             case 'activity':
-                return html`<activity-slide .slide=${this.slide}></activity-slide>`
+                return html`<activity-slide .slide=${this.slide} id=${this.slide.key}></activity-slide>`
             case 'obey':
-                return html`<obey-slide .slide=${this.slide}></obey-slide>`
+                return html`<obey-slide .slide=${this.slide} id=${this.slide.key}></obey-slide>`
             case 'left_image':
-                return html`<left-image-slide .slide=${this.slide}></left-image-slide>`
+                return html`<left-image-slide .slide=${this.slide} id=${this.slide.key}></left-image-slide>`
             case 'next_steps':
-                return html`<next-steps-slide .slide=${this.slide}></next-steps-slide>`
+                return html`<next-steps-slide .slide=${this.slide} id=${this.slide.key}></next-steps-slide>`
             case 'break':
-                return html`<break-slide .slide=${this.slide}></break-slide>`
+                return html`<break-slide .slide=${this.slide} id=${this.slide.key}></break-slide>`
             case 'congratulations':
-                return html`<congratulations-slide .slide=${this.slide}></congratulations-slide>`
+                return html`<congratulations-slide .slide=${this.slide} id=${this.slide.key}></congratulations-slide>`
             case 'final':
-                return html`<final-slide .slide=${this.slide}></final-slide>`
+                return html`<final-slide .slide=${this.slide} id=${this.slide.key}></final-slide>`
             default:
-                return html`<course-slide .slide=${this.slide}></course-slide>`
+                return html`<course-slide .slide=${this.slide} id=${this.slide.key}></course-slide>`
         }
     }
 
