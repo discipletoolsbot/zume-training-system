@@ -23,8 +23,12 @@ export class CoursePresenter extends LitElement {
 
     constructor() {
         super()
+        this.handleSessionLink = this.handleSessionLink.bind(this)
+        this.handleHistoryPopState = this.handleHistoryPopState.bind(this)
+    }
 
-        this.dir = document.querySelector('html').dir
+    connectedCallback() {
+        super.connectedCallback()
 
         const url = new URL(window.location.href)
 
@@ -40,8 +44,6 @@ export class CoursePresenter extends LitElement {
 
         this.changeSession(lessonIndex, false, sessions)
 
-        this.handleSessionLink = this.handleSessionLink.bind(this)
-        this.handleHistoryPopState = this.handleHistoryPopState.bind(this)
         window.addEventListener('popstate', this.handleHistoryPopState)
 
         const languageSelectors = document.querySelectorAll('.language-selector')
@@ -71,6 +73,7 @@ export class CoursePresenter extends LitElement {
                 location.href = newUrl
             })
         })
+
 
     }
 
@@ -259,7 +262,6 @@ export class CoursePresenter extends LitElement {
         const hiddenClass = this.showIndex ? 'visually-hidden' : ''
         const containerClass = this.type === 'intensive' ? 'container-xsm' : 'container-sm'
 
-        console.log(this.showIndex)
         /* If this is the overall presenter, then it would have a top bar, navigation buttons etc. as well */
         /* And also have a sidebar with the contents list in */
         return html`
