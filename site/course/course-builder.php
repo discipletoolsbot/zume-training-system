@@ -120,7 +120,7 @@ class Zume_Course_Builder {
             $session['2'] = ['s2_2_1','s2_2_2','s2_2_3','s2_2_4','s2_2_5',false,'t4_a','t4_b','t4_c',false,'s2_2_6','s2_2_7','final']; // session 2
             $session['3'] = ['s2_3_1','s2_3_2','s2_3_3','s2_3_4','s2_3_5',false,'t5_a','t5_b','t5_c',false,'s2_3_6','s2_3_7','final'];  // session 3
             $session['4'] = ['s2_4_1','s2_4_2','s2_4_3','s2_4_4','s2_4_5',false,'t6_a','t6_b','t6_c',false,'t8_a','t8_b','t8_c',false,'s2_4_6','s2_4_7','final']; // session 4
-            $session['5'] = ['s2_5_1','s2_5_2','s2_5_3','s2_5_4','s2_5_5',false,'t7_a','t7_b','t7_c','t7_d',false,'s2_5_6','s2_5_7','final']; // session 5
+            $session['5'] = ['s2_5_1','s2_5_2','s2_5_3','s2_5_4','s2_5_5',false,'t7_a','t7_b','t7_cc','t7_d',false,'s2_5_6','s2_5_7','final']; // session 5
             $session['6'] = ['s2_6_1','s2_6_2','s2_6_3','s2_6_4','s2_6_5',false,'t9_a','t9_b','t9_c',false,'t13_a','t13_b','t13_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s2_6_6','s2_6_7','final']; // session 6
             $session['7'] = ['s2_7_1','s2_7_2','s2_7_3','s2_7_4','s2_7_5',false,'s2_7_6','s2_7_7','s2_7_8','final']; // session 7
             $session['8'] = ['s2_8_1','s2_8_2','s2_8_3','s2_8_4','s2_8_5',false,'t11_a','t11_b','t11_c','t11_d',false,'t12_a','t12_b','t12_c',false,'s2_8_6','s2_8_7','final']; // session 8

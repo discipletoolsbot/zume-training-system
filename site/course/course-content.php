@@ -3,9 +3,9 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 function zume_content( $lang_code = 'en') {
 
-    if ( get_transient( __FUNCTION__.'_'.$lang_code ) ) {
-        return get_transient( __FUNCTION__.'_'.$lang_code );
-    }
+//    if ( get_transient( __FUNCTION__.'_'.$lang_code ) ) {
+//        return get_transient( __FUNCTION__.'_'.$lang_code );
+//    }
 
 
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
@@ -569,8 +569,8 @@ function zume_content( $lang_code = 'en') {
             ],
             'left' => [
                 __( 'Pray the Prayer Cycle for an hour individually', 'zume' ),
+                __( 'Scan the QR code to get the prayer cycle guide on your phone.', 'zume' ),
                 __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
-                __( 'For groups with less than an hour available, decide how many 5 minute sections you can complete before you return.', 'zume' ),
             ],
             'right' => [
                 $activity_base_url . 'prayercycle',
@@ -2573,8 +2573,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'Coaching Checklist', 'zume' ),
                 [
                     __( 'Scan the QR code or find a piece of paper.', 'zume' ),
-                    __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist. (10 min)', 'zume' ),
-                    __( 'Assess Someone Else - Choose a believer from your List of 100 and fill out the Coaching Checklist as if you were their coach. (10 min)', 'zume' ),
+                    __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist.', 'zume' ),
                 ]
             ],
             'right' => [
@@ -2640,8 +2639,8 @@ function zume_content( $lang_code = 'en') {
             'center' => [],
             'left' => [
                 __( 'Four Fields', 'zume' ),
-                __( 'Four Fields is used by a leadership cell to reflect on the status of current efforts and the Kingdom activity around them.', 'zume' ),
-                __( 'Jesus often pulled the disciples away from ministry to quieter places to review how the work was going. This simple tool is to help you and the co-leaders with you to follow this pattern of Jesus and to address all parts of your stewardship.', 'zume' ),
+                __( 'Jesus often pulled the disciples away from ministry to quieter places to review how the work was going.', 'zume' ),
+                __( 'Four Fields is used by a leadership cell to reflect on current efforts and Kingdom activity around them. It especially helps leaders balance efforts, so that no field is overlooked.', 'zume' ),
                 __( 'Review the next two slides: Field Descriptions and Four Fields Example', 'zume' ),
             ],
             'right' => [],
@@ -2661,7 +2660,6 @@ function zume_content( $lang_code = 'en') {
                     __( 'Harvesting Field: How are new spiritual families [simple churches] being formed?', 'zume' ),
                     __( 'Multiplying Field: With whom, how and when are you filtering for faithful people and equipping them and holding them accountable for reproduction?', 'zume' ),
                 ],
-
             ],
             'right' => [
                 zume_create_qr_url( $activity_base_url . '4fields' ),
@@ -2699,9 +2697,8 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 [
                     __( 'Identify an empty field around you. What communities or people groups that you are connected to have no gospel activity?', 'zume' ),
-                    __( 'What are some ways you could share good new with people in this empty field?', 'zume' ),
-                    __( 'Why is it important to evaluate progress in these fields?', 'zume' ),
-
+                    __( 'How is long-term growth affected if one of the fields is neglected? Give examples.', 'zume' ),
+                    __( 'Which Zúme tools could help in which field?', 'zume')
                 ]
             ],
         ],
@@ -2753,6 +2750,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Which leaders are seeing multiplication?', 'zume' ),
                     __( 'Which groups would you expect to multiply next?', 'zume' ),
                     __( 'Which leaders could help and strengthen other leaders?', 'zume' ),
+                    __( 'Do you see a pattern of weak accountability in any of the generations?', 'zume' ),
                 ]
             ],
         ],
@@ -3662,6 +3660,26 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'The Prayer Cycle', 'zume' ),
                 ]
+            ],
+        ],
+        [
+            'key' => 't7_cc',
+            'type' => 'activity',
+            'menu' => [],
+            'length' => [60],
+            'center' => [
+                __( 'ACTIVITY', 'zume' ),
+            ],
+            'left' => [
+                __( 'Pray the Prayer Cycle for an hour individually', 'zume' ),
+                __( 'Set a time for the group to return and reconnect. Be sure to add a few extra minutes for everyone to both find a quiet place to pray and to make their way back to the group.', 'zume' ),
+                __( 'If your time is flexible, take the full hour. Pray each section for 5 full minutes. This will make this session longer than a one hour training.', 'zume' ),
+                __( 'If you can‘t take a longer session, then reduce the prayer sections from 5 minutes to 3 minutes each.', 'zume' ),
+            ],
+            'right' => [
+                $activity_base_url . 'prayercycle',
+                zume_create_qr_url( $activity_base_url . 'prayercycle' ),
+                __( 'Activity Resource', 'zume' ),
             ],
         ],
         [
