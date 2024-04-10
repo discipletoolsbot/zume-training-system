@@ -31,6 +31,7 @@
 @import 'utilities/text';
 @import 'utilities/transformations';
 
+@import 'blocks/activities';
 @import 'blocks/login';
 @import 'blocks/stories';
 @import 'blocks/accordian';
@@ -69,6 +70,14 @@ footer {
   margin-top: auto;
 }
 
+hr {
+  border-color: color('gray-200');
+}
+
+p {
+  margin-bottom: spacing(0);
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -79,11 +88,16 @@ ul {
   }
 }
 
-
 .pieces-page ul,
+.activity-page ul,
+ul.bullets {
+  list-style: disc;
+  margin-inline-start: spacing(3);
+}
+
 ul[role="list"] {
   li {
-     text-indent: -1.7em;
+      text-indent: -1.7em;
       padding-left: 1.7em;
       padding-bottom: .5em;
   }
