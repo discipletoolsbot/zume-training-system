@@ -2,11 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
+"PO-Revision-Date: 2024-04-10 19:34+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Maithili <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/mai/>\n"
 "Language: mai\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:134
@@ -1177,15 +1182,14 @@ msgstr "सामूहिक प्रार्थनाक ( 15 मिनट)"
 
 #: site/course/10session.php:400 site/course/20session.php:500
 #: site/course/course-content.php:53 site/course/course-content.php:2532
-#, fuzzy
 msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
-"प्रार्थनाक संग शुरुआत करह। अध्यात्मिक अंतर्दृष्टि और परिवर्तन पवित्र आत्मा केँ बिन संभव नहि "
-"अछि । इह सत्र मेँ एकटा समूह की तौर पर उह अहाँ केँ अगुवाई करह केँ लेल उह आमंत्रित करह मेँ "
-"किछु समय लिअ"
+"प्रार्थनाक संग शुरुआत करह। अध्यात्मिक अंतर्दृष्टि और परिवर्तन पवित्र आत्मा "
+"केँ बिन संभव नहि अछि । इह सत्र मेँ एकटा समूह की तौर पर उह अहाँ केँ अगुवाई "
+"करह केँ लेल उह आमंत्रित करह मेँ किछु समय लिअ"
 
 #: site/course/10session.php:412 site/course/10session.php:428
 #: site/course/10session.php:438 site/course/10session.php:459
@@ -1221,24 +1225,22 @@ msgstr ""
 
 #: site/course/10session.php:445 site/course/20session.php:545
 #: site/course/course-content.php:108
-#, fuzzy
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
-"जँ यीशु  चाहैत अछि की हुनकर हरेक अनुयायी हुनकर पैघ काज केँ आज्ञाक(ग्रेट कमीशन)केँ पालन करह "
-"फेर वास्तव मे केओ किछु  कनिक लोक शिष्य बनवैत अछि "
+"जँ यीशु  चाहैत अछि की हुनकर हरेक अनुयायी हुनकर पैघ काज केँ आज्ञाक(ग्रेट "
+"कमीशन)केँ पालन करह फेर वास्तव मे केओ किछु  कनिक लोक शिष्य बनवैत अछि"
 
 #: site/course/10session.php:468 site/course/20session.php:568
-#, fuzzy
 msgid ""
 "What is a disciple? And how do you make one? How do you teach a follower of "
 "Jesus to do what He told us in His Great Commission – to obey all of His "
 "commands?"
 msgstr ""
-"एकटा शिष्य की अछि ? और अहाँ कोना एकटा शिष्य बनाओ सकैत अछि ? अहाँ यीशुक अनुयाई केँ "
-"कोना सिखवैत छी कि करबाक अछि जँ उह ओकर पैघ काज की आज्ञाक (ग्रेट कमिशन) मे कतऽ अछि।"
-"हुनकर सभटा आज्ञाक केँ पालन करह केँ लेल?"
+"एकटा शिष्य की अछि ? और अहाँ कोना एकटा शिष्य बनाओ सकैत अछि ? अहाँ यीशुक अनुया"
+"ई केँ कोना सिखवैत छी कि करबाक अछि जँ उह ओकर पैघ काज की आज्ञाक (ग्रेट कमिशन) "
+"मे कतऽ अछि।हुनकर सभटा आज्ञाक केँ पालन करह केँ लेल?"
 
 #: site/course/10session.php:492 site/course/20session.php:592
 #: site/course/course-content.php:143
@@ -1246,11 +1248,11 @@ msgid "When you think of a church, what comes to mind?"
 msgstr "जँखन अहाँ एकटा चर्च केँ बारे मे सोचेय छी, तँ अहाँ केँ मन में कि आवैत अछि ?"
 
 #: site/course/10session.php:493 site/course/20session.php:593
-#, fuzzy
 msgid ""
 "What's the difference between that picture and what's described in the video "
 "as a \"Simple Church\"?"
-msgstr "ई चित्र और इह वीडियो मे वर्णित जे साधारण चर्च \"अछि ,ई दुनूटा मे कि फर्क अछि?"
+msgstr ""
+"ई चित्र और इह वीडियो मे वर्णित जे साधारण चर्च \"अछि ,ई दुनूटा मे कि फर्क अछि?"
 
 #: site/course/10session.php:495 site/course/20session.php:595
 #: site/course/course-content.php:145
@@ -1330,14 +1332,14 @@ msgid "Debrief (45min)"
 msgstr "अभ्यास (४५  मिनट)"
 
 #: site/course/10session.php:635 site/course/20session.php:735
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think. Accountability Groups are a "
 "great way to get ready!"
 msgstr ""
-"बाइबल हमरा बतवैत अछि कि यीशुक हरेक अनुयाई कऽ एक दिन हम कि करैत अछि आ कहैत अछि सोचेय "
-"छी  केँ लेल  1 दिन हिसाब देबै पड़त। जवाब देही समूह एकटा निक तरीकाअछि तैयार होइ केँ लेल"
+"बाइबल हमरा बतवैत अछि कि यीशुक हरेक अनुयाई कऽ एक दिन हम कि करैत अछि आ कहैत अछि"
+" सोचेय छी  केँ लेल  1 दिन हिसाब देबै पड़त। जवाब देही समूह एकटा निक तरीकाअछि "
+"तैयार होइ केँ लेल"
 
 #: site/course/10session.php:676 site/course/20session.php:776
 msgid "Congratulations! You've completed Session 1."
@@ -1893,15 +1895,15 @@ msgid "List of 100"
 msgstr "100 कि सुची"
 
 #: site/course/course-content.php:404
-#, fuzzy
 msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
-"जँ चाहैत छि कि एहन  शिष्य बनैत जँ गुणात्म वृद्धि करऽ अध्यात्मिक उत्पादक और न सिर्फ "
-"उपभोक्ता तँ हम उह चारटा मुख्य तरीका कऽ जेँ परमेश्वर ओकर अनुयायियों कऽ यीशु केँ जेना बने केँ "
-"लेल भेर दिन बनवेत अछि ओकरा सिखावे आ मिलान करऽ केँ जरूरत अछि:"
+"जँ चाहैत छि कि एहन  शिष्य बनैत जँ गुणात्म वृद्धि करऽ अध्यात्मिक उत्पादक और न "
+"सिर्फ उपभोक्ता तँ हम उह चारटा मुख्य तरीका कऽ जेँ परमेश्वर ओकर अनुयायियों कऽ "
+"यीशु केँ जेना बने केँ लेल भेर दिन बनवेत अछि ओकरा सिखावे आ मिलान करऽ केँ जरू"
+"रत अछि:"
 
 #: site/course/course-content.php:408
 msgid "Body Life"
@@ -2098,15 +2100,14 @@ msgstr ""
 "अन्तर देख पावैय छी ?."
 
 #: site/course/course-content.php:702
-#, fuzzy
 msgid ""
 "Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"यीशु बजलथिन  \" मुदा जखन अहाँ सभ पर पवित्र आत्मा औताह तँअहाँ सभ सामर्थ्य प्राप्त करब आ "
-"यरूशलेम में सम्पूर्ण यहूदिया और समरिया प्रदेश में आ सम्पूर्ण पृथ्वी पर अहाँ सभ हमर गवाह होयब ।"
-"\""
+"यीशु बजलथिन  \" मुदा जखन अहाँ सभ पर पवित्र आत्मा औताह तँअहाँ सभ सामर्थ्य "
+"प्राप्त करब आ यरूशलेम में सम्पूर्ण यहूदिया और समरिया प्रदेश में आ सम्पूर्ण "
+"पृथ्वी पर अहाँ सभ हमर गवाह होयब ।\""
 
 #: site/course/course-content.php:703
 msgid ""
@@ -2184,7 +2185,6 @@ msgid ""
 msgstr "दो आ तीन लोक केँ समूह मे बॉटल जाउ(स्त्री आपुरुष भिन्न-भिन्न)"
 
 #: site/course/course-content.php:787
-#, fuzzy
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
@@ -2199,28 +2199,26 @@ msgid "Would you even consider it?"
 msgstr "की अहाँ कयहो एकर विचार करब ?"
 
 #: site/course/course-content.php:811
-#, fuzzy
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
-"मुदा यीशुक पैघ आदेश हरेक अनुयाई अनुयायी केँ लेल अछि तेँ की एकर  मतलब ई अछि कि हरेक अनुयायी "
-"कऽ दोसर केँ बपतिस्मा देअ केँ अनुमति देल गेल अछि? की या की नहि?"
+"मुदा यीशुक पैघ आदेश हरेक अनुयाई अनुयायी केँ लेल अछि तेँ की एकर  मतलब ई अछि कि"
+" हरेक अनुयायी कऽ दोसर केँ बपतिस्मा देअ केँ अनुमति देल गेल अछि? की या की नहि?"
 
 #: site/course/course-content.php:820
 msgid "IMPORTANT REMINDER – Have you been baptized?"
 msgstr "महत्वपूर्ण अनुस्मारक-अहाँ बपतिस्मा देने छी?"
 
 #: site/course/course-content.php:821
-#, fuzzy
 msgid ""
 "If not, then we encourage you to plan this before even one more session of "
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"मुदा नहि ,तँ हम अहाँक ई प्रशिक्षण केँ एकटा आ सत्र सँआगाँ ई योजना केँ लेल प्रोत्साहित अछि । "
-"अपन समूह कऽ आमंत्रित करू ई महत्वपूर्ण दिनक एकटा हिस्सा बने केँ लेल जखन अहाँ‌ यीशुक \" हाँ \" "
-"कहै द्वारा खुशी मनवैत अछि ।"
+"मुदा नहि ,तँ हम अहाँक ई प्रशिक्षण केँ एकटा आ सत्र सँआगाँ ई योजना केँ लेल "
+"प्रोत्साहित अछि । अपन समूह कऽ आमंत्रित करू ई महत्वपूर्ण दिनक एकटा हिस्सा बने "
+"केँ लेल जखन अहाँ‌ यीशुक \" हाँ \" कहै द्वारा खुशी मनवैत अछि ।"
 
 #: site/course/course-content.php:836
 #, fuzzy

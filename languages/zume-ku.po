@@ -2,11 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
+"PO-Revision-Date: 2024-04-10 19:34+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Kurdish <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ku/>\n"
 "Language: ku\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4.3\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:134
@@ -5444,13 +5449,13 @@ msgstr "کەسێک داوای ڕێکخستنەوەی وشەی نهێنی کرد�
 
 #. translators: %s: site name
 #: zume-training-system.php:189
-#, fuzzy, php-format
+#, php-format
 msgid "Site Name: %s"
 msgstr "ناوی وێبگە: ٪"
 
 #. translators: %s: user login
 #: zume-training-system.php:191
-#, fuzzy, php-format
+#, php-format
 msgid "Username: %s"
 msgstr "ناوی بەکارهێنەر: ٪"
 
@@ -5464,7 +5469,7 @@ msgstr "بۆ ڕێکخستنەوەی وشەی نهێنیەکەت، سەردانی
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:211
-#, fuzzy, php-format
+#, php-format
 msgid "[%s] Password Reset"
 msgstr "ڕێکخستنەوەی وشەی نهێنی [٪]"
 
