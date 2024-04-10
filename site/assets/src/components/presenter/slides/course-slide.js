@@ -32,15 +32,23 @@ export class CourseSlide extends LitElement {
         const slides = [...normalSlides, videoSlides]
 
         const currentTarget = target || event.currentTarget
-        const { innerWidth: W, innerHeight: H } = currentTarget
+        const { innerWidth: screenWidth, innerHeight: screenHeight } = currentTarget
 
-        if ( W/H > 16/9 ) {
+        if ( screenWidth/screenHeight > 16/9 ) {
+            /* The screen is wider than the slide */
             slides.forEach((slide) => {
-                slide.style = `--slide-unit: ${16 / 9 * H / 100}px`
+                slide.style = `
+                    --slide-unit: ${16 / 9 * screenHeight / 100}px;
+                    --slide-height: ${screenHeight}px;
+                `
             })
         } else {
+            /* The screen is taller than the slide */
             slides.forEach((slide) => {
-                slide.style = `--slide-unit: ${W / 100}px`
+                slide.style = `
+                    --slide-unit: ${screenWidth / 100}px;
+                    --slide-height: ${9 / 16 * screenWidth}px;
+                `
             })
         }
 
@@ -88,7 +96,7 @@ export class CourseSlide extends LitElement {
             }
             if (Array.isArray(item)) {
                 return html`
-                    <ul role="list">
+                    <ul class="bullets">
                         ${
                             item.map((listItem) => html`<li>${listItem}</li>`)
                         }

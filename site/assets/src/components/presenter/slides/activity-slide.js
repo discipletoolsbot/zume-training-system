@@ -32,7 +32,7 @@ export class ActivitySlide extends CourseSlide {
         return html`
             <div class="slides-card activity-slide | position-relative">
                 ${this.renderProgressBar()}
-                <div class="cover">
+                <div class="cover-slide">
                     <button
                         type="button"
                         class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 f-3 bypass-nav-click"
@@ -43,7 +43,7 @@ export class ActivitySlide extends CourseSlide {
                     <h2 class="title text-center" data-small>${this.slide['center'][0]} ${this.slide['length']}</h2>
                     <div class="two-column right">
                         <div>
-                            <div class="activity-card" data-expanded-padding>
+                            <div class="activity-card | stack--2" data-expanded-padding>
                                 ${this.renderContent(this.slide['left'], true)}
                             </div>
                         </div>

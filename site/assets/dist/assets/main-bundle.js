@@ -1417,7 +1417,13 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 <span class="loading-spinner ${this.loading?"active":""}"></span>
 
             </form>
-        `}createRenderRoot(){return this}}customElements.define("profile-form",rs);class w extends g{static get properties(){return{slide:{type:Object},id:{type:String}}}constructor(){super()}connectedCallback(){super.connectedCallback(),this.dir=document.querySelector("html").dir,window.addEventListener("resize",this.resizeCallback)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("resize",this.resizeCallback)}firstUpdated(){this.resizeCallback(null,window)}resizeCallback(e,t=null){const s=document.querySelectorAll(".slides-card"),n=document.querySelectorAll(".video-slide"),r=[...s,n],a=t||e.currentTarget,{innerWidth:d,innerHeight:c}=a;d/c>16/9?r.forEach(h=>{h.style=`--slide-unit: ${16/9*c/100}px`}):r.forEach(h=>{h.style=`--slide-unit: ${d/100}px`})}renderProgressBar(){let e=[],t=[];for(let s=0;s<this.slide.progress_bar.length;s++){const n=this.slide.progress_bar[s];if(!n){e.push(t),e.push(!1),t=[];continue}t.push(n)}return e.push(t),o`
+        `}createRenderRoot(){return this}}customElements.define("profile-form",rs);class w extends g{static get properties(){return{slide:{type:Object},id:{type:String}}}constructor(){super()}connectedCallback(){super.connectedCallback(),this.dir=document.querySelector("html").dir,window.addEventListener("resize",this.resizeCallback)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("resize",this.resizeCallback)}firstUpdated(){this.resizeCallback(null,window)}resizeCallback(e,t=null){const s=document.querySelectorAll(".slides-card"),n=document.querySelectorAll(".video-slide"),r=[...s,n],a=t||e.currentTarget,{innerWidth:d,innerHeight:c}=a;d/c>16/9?r.forEach(h=>{h.style=`
+                    --slide-unit: ${16/9*c/100}px;
+                    --slide-height: ${c}px;
+                `}):r.forEach(h=>{h.style=`
+                    --slide-unit: ${d/100}px;
+                    --slide-height: ${9/16*d}px;
+                `})}renderProgressBar(){let e=[],t=[];for(let s=0;s<this.slide.progress_bar.length;s++){const n=this.slide.progress_bar[s];if(!n){e.push(t),e.push(!1),t=[];continue}t.push(n)}return e.push(t),o`
             <div class="stage ${this.slide.key}-bar">
                 <div class="progress-bar-wrapper">
                     ${e.map(s=>s?o`
@@ -1430,7 +1436,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 </div>
             </div>
         `}renderContent(e=[],t=!1,s=!1){return e.map((n,r)=>t&&r===0?o`<p><strong>${n}</strong></p>`:Array.isArray(n)?o`
-                    <ul role="list">
+                    <ul class="bullets">
                         ${n.map(a=>o`<li>${a}</li>`)}
                     </ul>
                 `:s?o`<p><strong>${n}</strong></p>`:o`<p>${n}</p>`)}render(){return o`
@@ -1440,7 +1446,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
         `}createRenderRoot(){return this}}customElements.define("course-slide",w);class os extends w{static get properties(){return{slide:{type:Object},id:{type:String},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(document).foundation(),this.offCanvasId="activityOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId}openMenu(){const e=document.querySelector(this.offCanvasSelector);console.log(e,this.offCanvasSelector),jQuery(e).foundation("open")}closeMenu(){const e=document.querySelector(this.offCanvasSelector);jQuery(e).foundation("close")}render(){return o`
             <div class="slides-card activity-slide | position-relative">
                 ${this.renderProgressBar()}
-                <div class="cover">
+                <div class="cover-slide">
                     <button
                         type="button"
                         class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 f-3 bypass-nav-click"
@@ -1451,7 +1457,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     <h2 class="title text-center" data-small>${this.slide.center[0]} ${this.slide.length}</h2>
                     <div class="two-column right">
                         <div>
-                            <div class="activity-card" data-expanded-padding>
+                            <div class="activity-card | stack--2" data-expanded-padding>
                                 ${this.renderContent(this.slide.left,!0)}
                             </div>
                         </div>
@@ -1484,20 +1490,22 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
         `}}customElements.define("activity-slide",os);class ls extends w{render(){return o`
             <div class="slides-card">
                 ${this.renderProgressBar()}
-                <div class="cover">
-                    <div class="center activity-card" data-large>
-                        <p>${this.slide.center[0]}</p>
-                        <p>${this.slide.center[1]??""}</p>
+                <div class="cover-slide">
+                    <div class="grow-1 d-flex align-items-center">
+                        <div class="center activity-card stack--2" data-large>
+                            <span>${this.slide.center[0]}</span>
+                            ${this.slide.center[1]?o`<span>${this.slide.center[1]}</span>`:""}
+                        </div>
                     </div>
                 </div>
             </div>
         `}}customElements.define("break-slide",ls);class cs extends w{render(){return o`
             <div class="slides-card">
                 ${this.renderProgressBar()}
-                <div class="cover">
+                <div class="cover-slide">
                     <h2 class="title text-center">${this.slide.center[0]??""} ${this.slide.length??""}</h2>
-                    <div class="center w-70">
-                        <div class="stack activity-card">
+                    <div class="center w-70 grow-1 justify-content-center">
+                        <div class="stack--2 activity-card">
                             ${this.renderContent(this.slide.left,!0)}
                         </div>
                     </div>
@@ -1524,12 +1532,14 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
             </div>
         `}}customElements.define("checkin-slide",ds);class hs extends w{render(){return o`
             <div class="slides-card">
-                <div class="cover">
-                    <div class="center activity-card" data-large>
-                        <p>${this.slide.center[0]}</p>
-                    </div>
-                    <div class="center">
-                      <p><img src="${this.slide.center[1]??""}" /></p>
+                <div class="cover-page container">
+                    <div>
+                        <div class="center activity-card" data-large>
+                            <p>${this.slide.center[0]}</p>
+                        </div>
+                        <div class="center">
+                          <p><img src="${this.slide.center[1]??""}" /></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1557,7 +1567,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
             </div>
         `}}customElements.define("discuss-slide",us);class ps extends w{render(){return o`
             <div class="slides-card">
-                <div class="cover">
+                <div class="cover-page">
                     <div class="center stack | text-center w-50">
                         <div class="w-30"><img src="${this.slide.center[0]}" /></div>
                         <p>${this.slide.center[1]}</p>
@@ -1571,7 +1581,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 ${this.renderProgressBar()}
                 <div class="two-column right">
                     <div>
-                        <div class="cover center text-center">
+                        <div class="cover-slide center text-center">
                             <p><strong>${this.slide.left[0]}</strong></p>
                             <div class="mw-60"><img src="${this.slide.left[1]}" /></div>
                         </div>
@@ -1587,7 +1597,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
         `}}customElements.define("left-image-slide",ms);class gs extends w{render(){return o`
             <div class="slides-card">
                 ${this.renderProgressBar()}
-                <div class="cover">
+                <div class="cover-slide">
                     <h2 class="title text-center" data-small>${this.slide.center[0]}</h2>
                     <div class="two-column middle" data-align-start>
                         <div>
@@ -1674,7 +1684,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                         </div>
                     </div>
                     <div class="content-area">
-                        <div class="activity-card" expanded-padding>
+                        <div class="activity-card stack--2" expanded-padding>
                             ${this.renderContent(this.slide.right)}
                         </div>
                     </div>
@@ -1703,8 +1713,8 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
             <div>
                 <div class="slides-card">
                     ${this.renderProgressBar()}
-                    <div class="cover | title-slide | text-center">
-                        <div class="stack-1 | w-100">
+                    <div class="cover-slide | title-slide | text-center">
+                        <div class="stack-1 | w-100 grow-1 justify-content-center">
                             <div class="center | w-40"><img src=${this.slide.center[0]} /></div>
                             <h2>${this.slide.center[1]}</h2>
                         </div>
@@ -1808,7 +1818,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                         </div>
                     </div>
                     <div class="content-area">
-                        <div class="activity-card" expanded-padding>
+                        <div class="activity-card | stack--2" expanded-padding>
                             ${this.renderContent(this.slide.right)}
                         </div>
                     </div>

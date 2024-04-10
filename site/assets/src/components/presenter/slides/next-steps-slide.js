@@ -6,7 +6,7 @@ export class NextStepsSlide extends CourseSlide {
         return html`
             <div class="slides-card">
                 ${this.renderProgressBar()}
-                <div class="cover">
+                <div class="cover-slide">
                     <h2 class="title text-center" data-small>${this.slide['center'][0]}</h2>
                     <div class="two-column middle" data-align-start>
                         <div>

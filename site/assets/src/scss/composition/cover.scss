@@ -42,5 +42,5 @@
 .cover-img > img,
 .cover > div {
   margin-block: auto;
-  padding-block: 1rem;
+  padding-block: var(--space, 1rem);
 }
