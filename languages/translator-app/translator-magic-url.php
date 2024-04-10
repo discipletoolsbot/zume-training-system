@@ -371,41 +371,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             </th>
                         </tr>
                          <tr>
-                            <td>
-                                <?php
-                                    $filename = plugin_dir_path(__DIR__) . '/zume-' . $language['locale'] . '.po';
-                                    $string_count = 0;
-                                    $missing_count = 0;
-                                    $already_translated = [];
-                                    $strings = $this->get_translation_strings();
-                                    if ( ! empty( $strings ) ) {
-                                        foreach( $strings as $file => $array ) {
-                                            foreach( $array as $trans ) {
-                                                if ( in_array( $trans['original'], $already_translated ) ) {
-                                                    continue;
-                                                }
-                                                $already_translated[] = $trans['original'];
-                                                $string_count++;
-                                                if ( empty( $trans['translation'] ) ) {
-                                                    $missing_count++;
-                                                }
-                                            }
-                                        }
-                                    }
-                                    if (file_exists($filename)) {
-                                        ?>
-                                        <strong>Total Strings:</strong> <?php echo $string_count; ?><br>
-                                        <strong style="color:red;">Missing Strings:</strong> <?php echo $missing_count; ?>
-                                        <?php
-                                    }
-                                ?>
-                            </td>
-                            <td>
-                                <?php
-                                if (file_exists($filename)) {
-                                    echo 'PO file last modified: ' . gmdate("F d, Y H:i:s.", filemtime($filename));
-                                }
-                                ?>
+                            <td colspan="2">
+                               <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $language['locale'] ?>/">
+                                <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $language['locale'] ?>/svg-badge.svg" alt="Translation status" />
+                               </a>
                             </td>
                         </tr>
 
@@ -1561,55 +1530,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function strings() {
-        $zume_languages = zume_languages();
-        $language = $zume_languages[$this->language_code];
-        $string_count = 0;
-        $missing_count = 0;
-        $already_translated = [];
-        $strings = $this->get_translation_strings();
-
-        ob_start();
-            foreach( $strings as $file => $array ) {
-                 ?>
-                    <tr>
-                        <td colspan="3" style="background: grey; color: white;"><?php echo $file; ?></td>
-                    </tr>
-                <?php
-                foreach( $array as $trans ) {
-                    if ( in_array( $trans['original'], $already_translated ) ) {
-                        continue;
-                    }
-                    $already_translated[] = $trans['original'];
-                    $string_count++;
-                    if ( empty( $trans['translation'] ) ) {
-                        $missing_count++;
-                    }
-                    ?>
-                    <tr>
-                        <td><?php echo $trans['line']; ?></td>
-                        <td><?php echo $trans['original']; ?></td>
-                        <td><?php echo $trans['translation']; ?></td>
-                    </tr>
-                    <?php
-                }
-            }
-        $table_content = ob_get_clean();
         ?>
-        <p>Total Translation Strings: <?php echo $string_count ?> | Missing Translation Strings: <?php echo $missing_count ?></p>
-        <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Line</th>
-                    <th>English</th>
-                    <th><?php echo $language['name'] ?></th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php echo $table_content; ?>
-            </tbody>
-        </table>
+            <a href="https://translate.disciple.tools/engage/zume-training/">
+            <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-green.svg" alt="Translation status" />
+            </a>
         <?php
     }
+
     public function get_translation_strings() {
         $languages = zume_languages();
         $locale = $languages[$this->language_code]['locale'];
