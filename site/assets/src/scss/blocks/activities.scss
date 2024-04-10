@@ -32,10 +32,6 @@
         margin-block-start: spacing(0);
     }
 
-    img {
-        margin-block-end: spacing(2);
-    }
-
     strong {
         color: color('brand-light');
         font-weight: 600;
@@ -54,6 +50,11 @@
         font-weight: 500;
     }
 }
+.activity-content {
+    img {
+        margin-block-end: spacing(2);
+    }
+}
 .activity-header {
     background-color: color('brand');
     color: color('white');
@@ -62,7 +63,8 @@
     align-items: center;
 
     .logo {
-        width: 100px;
+        width: 60px;
+        height: unset;
     }
 
     .title {
