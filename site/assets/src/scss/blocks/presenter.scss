@@ -17,7 +17,8 @@
 }
 .slides-card {
     --slide-unit: 1vw;
-    --font-size: calc( var(--slide-unit) * 2 );
+    --font-size-ratio: 2;
+    --font-size: calc( var(--slide-unit) * var(--font-size-ratio) );
     --z-brand-lighter: #5dccff;
 
     --spacing-ratio: 1.5;
@@ -51,24 +52,32 @@
         font-weight: 500;
         color: color('brand-dark');
     }
-    ul[role="list"] li::before {
-        font-size: 1em;
-        vertical-align: unset;
-        padding-inline-end: 1em;
+    p {
+        margin-block-end: unset;
     }
     strong {
         font-weight: 600;
     }
+    ul.bullets {
+        margin-inline-start: spacing(2);
+    }
 
     /* Composition */
     & > :nth-child(2) {
-        height: calc( 100% - 45px );
-        min-block-size: calc( 100% - 45px );
+        height: calc( var(--slide-height, 100%) - calc( 3.5 * var(--slide-unit) ) );
+        min-block-size: calc( var(--slide-height, 100%) - calc( 3.5 * var(--slide-unit) ) );
         position: relative;
     }
 
     .stack {
         --space: var(--s-2);
+    }
+    .cover-slide {
+        display: flex;
+        flex-direction: column;
+    }
+    .cover-page {
+        min-block-size: var(--slide-height, 100%);
     }
 
     /* Blocks */
@@ -111,14 +120,14 @@
     }
 
     .activity-card {
-        padding: 1em;
+        padding: calc( var(--slide-unit) * 2 );
         background-color: #e7f6fc;
         border-radius: calc( var(--slide-unit) * 2 );
         border: calc( var(--slide-unit) * 0.3 ) solid color('brand-lighter');
         box-shadow: 0px calc( var(--slide-unit) * 0.3 ) calc( var(--slide-unit) * 0.2 ) 0px #0c1a2130;
 
         &[data-expanded-padding] {
-            padding-block: 2em;
+            padding-block: calc( var(--slide-unit) * 4 );
         }
 
         &[data-large] {
@@ -137,6 +146,7 @@
         & > .two-column {
             position: static;
             min-block-size: auto;
+            flex-grow: 0;
 
             & > *::after {
                 content: none;
@@ -183,7 +193,7 @@
 
 /* On e.g. an activity page we want the relative size of the divider to be the height of the cover section
 not of the 2 column section */
-.cover .two-column {
+.cover-slide .two-column {
     position: static;
 }
 
@@ -194,9 +204,9 @@ not of the 2 column section */
     display: flex;
     align-items: stretch;
     width: 100%;
-    min-block-size: 100%;
     gap: var(--gap-width);
     position: relative;
+    flex-grow: 2;
 
     & > * {
         display: flex;

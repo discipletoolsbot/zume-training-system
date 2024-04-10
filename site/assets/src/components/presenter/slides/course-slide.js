@@ -10,6 +10,10 @@ export class CourseSlide extends LitElement {
 
     constructor() {
         super()
+
+        this.maxPercentage = 80
+
+        this.resizeCallback = this.resizeCallback.bind(this)
     }
 
     connectedCallback() {
@@ -22,28 +26,63 @@ export class CourseSlide extends LitElement {
         window.removeEventListener('resize', this.resizeCallback)
     }
     firstUpdated() {
-        this.resizeCallback(null, window)
+        this.resizeSlide(window)
+        this.fitContentToSlide('.activity-card')
+        this.fitContentToSlide('.content-area__text')
     }
-    resizeCallback(event, target = null) {
+    resizeCallback(event) {
+        this.resizeSlide(event.currentTarget)
+    }
+    fitContentToSlide(selector) {
+        const contentArea = this.renderRoot.querySelector(selector)
+
+        if (!contentArea) {
+            return
+        }
+
+        const contentAreaHeight = contentArea.getBoundingClientRect().height
+
+        const progressBar = this.renderRoot.querySelector('.stage')
+        const progressBarHeight = progressBar ? progressBar.getBoundingClientRect().height : 0
+
+        const percentageOfSlideHeight = contentAreaHeight / ( this.slideHeight - progressBarHeight ) * 100
+
+        if (percentageOfSlideHeight > this.maxPercentage) {
+            /* CurrentFontRatio is hardcoded to match the ratio currently in presenter.scss as --font-size-ratio */
+            const currentFontRatio = 2
+            const newFontSize = currentFontRatio * this.maxPercentage / percentageOfSlideHeight
+            contentArea.style.fontSize = `calc( var(--slide-unit) * ${newFontSize} )`
+        }
+    }
+    resizeSlide(target) {
+
         const normalSlides = document.querySelectorAll('.slides-card')
 
         const videoSlides = document.querySelectorAll('.video-slide')
 
         const slides = [...normalSlides, videoSlides]
 
-        const currentTarget = target || event.currentTarget
-        const { innerWidth: W, innerHeight: H } = currentTarget
+        const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 
-        if ( W/H > 16/9 ) {
-            slides.forEach((slide) => {
-                slide.style = `--slide-unit: ${16 / 9 * H / 100}px`
-            })
-        } else {
-            slides.forEach((slide) => {
-                slide.style = `--slide-unit: ${W / 100}px`
-            })
-        }
+        const isScreenWiderThanSlide = screenWidth/screenHeight > 16/9
 
+        const slideUnit = isScreenWiderThanSlide
+            ? 16 / 9 * screenHeight / 100
+            : screenWidth / 100
+
+        const slideHeight = isScreenWiderThanSlide
+            ? screenHeight
+            : 9 / 16 * screenWidth
+
+        this.slideUnit = slideUnit
+        this.slideHeight = slideHeight
+
+        slides.forEach((slide) => {
+            slide.style = `
+                --slide-unit: ${slideUnit}px;
+                --slide-height: ${slideHeight}px;
+            `
+        })
     }
 
     renderProgressBar() {
@@ -88,7 +127,7 @@ export class CourseSlide extends LitElement {
             }
             if (Array.isArray(item)) {
                 return html`
-                    <ul role="list">
+                    <ul class="bullets">
                         ${
                             item.map((listItem) => html`<li>${listItem}</li>`)
                         }

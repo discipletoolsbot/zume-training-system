@@ -16,7 +16,7 @@ export class OverviewSlide extends CourseSlide {
                         </div>
                     </div>
                     <div class="content-area">
-                        <div class="stack">
+                        <div class="stack content-area__text">
                             ${this.renderContent(this.slide['right'], false, true)}
                         </div>
                     </div>

@@ -19,7 +19,7 @@ export class PraySlide extends CourseSlide {
                         </div>
                     </div>
                     <div class="content-area">
-                        <div class="activity-card" expanded-padding>
+                        <div class="activity-card stack--2" expanded-padding>
                             ${this.renderContent(this.slide['right'])}
                         </div>
                     </div>
