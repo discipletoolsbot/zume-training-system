@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
-"PO-Revision-Date: 2024-04-10 19:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Somali <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/so/>\n"
+"PO-Revision-Date: 2024-04-10 21:38+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Somali <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/so/>\n"
 "Language: so\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -519,7 +519,6 @@ msgstr "Tababbarka Wareegga ee Korinta Xerta"
 #: globals.php:1682 site/course/course-content.php:1805
 #: site/course/course-content.php:1822 site/course/course-content.php:1881
 #: site/course/course-content.php:4096 site/course/course-content.php:4111
-#, fuzzy
 msgid "Leadership Cells"
 msgstr "Hoggaaminta unugga ah"
 
@@ -2680,7 +2679,6 @@ msgstr ""
 "Haddii ay sidaas tahay, sideebay farqiyadaasi kooxda u saameeyeen?"
 
 #: site/course/course-content.php:1507
-#, fuzzy
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 msgstr ""
 "Miyaa Kooxda 3/3 loo tix gelin karaa sidii Kaniisad Yar? MAxay ku tahay "
@@ -2821,7 +2819,6 @@ msgid "Session 8"
 msgstr "Kulanka 8"
 
 #: site/course/course-content.php:1779 site/course/course-content.php:4176
-#, fuzzy
 msgid ""
 "Pray and thank God for giving your group the energy, the focus and the "
 "faithfulness to come so far in this training. Ask God to have His Holy "
@@ -2837,7 +2834,6 @@ msgid "And we will practice this tool from our toolkit:"
 msgstr ""
 
 #: site/course/course-content.php:1823
-#, fuzzy
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
@@ -2845,7 +2841,6 @@ msgstr ""
 "midiidinkiinna waa inuu ahaado,\""
 
 #: site/course/course-content.php:1846
-#, fuzzy
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
@@ -3122,7 +3117,6 @@ msgstr ""
 "Waxa ay noqdaan shabakad!"
 
 #: site/course/course-content.php:2314
-#, fuzzy
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
