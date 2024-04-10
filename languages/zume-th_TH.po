@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
-"PO-Revision-Date: 2024-04-10 19:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-10 22:00+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Thai <https://translate.disciple.tools/projects/zume-training/"
 "zume-training-system/th/>\n"
 "Language: th_TH\n"
@@ -495,7 +495,6 @@ msgstr "วงจรการฝึกอบรมเพื่อการเป
 #: globals.php:1682 site/course/course-content.php:1805
 #: site/course/course-content.php:1822 site/course/course-content.php:1881
 #: site/course/course-content.php:4096 site/course/course-content.php:4111
-#, fuzzy
 msgid "Leadership Cells"
 msgstr "กลุ่มเซสล์ผู้นำ"
 
@@ -1150,14 +1149,13 @@ msgstr "อธิษฐานกลุ่ม (5 นาที)"
 
 #: site/course/10session.php:400 site/course/20session.php:500
 #: site/course/course-content.php:53 site/course/course-content.php:2532
-#, fuzzy
 msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
-"โปรดเริ่มต้นด้วยการอธิษฐาน "
-"การหยั่งรู้ทางฝ่ายวิญญาณและการเปลี่ยนแปลงไม่อาจเกิดขึ้นได้โดยปราศจากพระวิญญาณบริสุทธิ์ "
+"โปรดเริ่มต้นด้วยการอธิษฐาน การหยั่งรู้ทางฝ่ายวิญญาณและการเปลี่ยนแปลงไม่อาจเกิ"
+"ดขึ้นได้โดยปราศจากพระวิญญาณบริสุทธิ์ "
 "โปรดใช้เวลาด้วยกันเป็นกลุ่มเชิญพระองค์เพื่อนำทางคุณในบทเรียนนี้"
 
 #: site/course/10session.php:412 site/course/10session.php:428
@@ -1192,7 +1190,6 @@ msgstr ""
 
 #: site/course/10session.php:445 site/course/20session.php:545
 #: site/course/course-content.php:108
-#, fuzzy
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
@@ -1201,14 +1198,13 @@ msgstr ""
 "เหตุใดจึงมีเพียงแค่ไม่กี่คนที่สร้างสาวกอย่างแท้จริง?"
 
 #: site/course/10session.php:468 site/course/20session.php:568
-#, fuzzy
 msgid ""
 "What is a disciple? And how do you make one? How do you teach a follower of "
 "Jesus to do what He told us in His Great Commission – to obey all of His "
 "commands?"
 msgstr ""
-"สาวกคืออะไร? และคุณจะสร้างสาวกได้อย่างไร? "
-"คุณจะสอนสาวกคนหนึ่งของพระเยซูให้ทำตามสิ่งที่พระองค์บัญชาเราไว้ในพระมหาบัญชาได้อย่างไร – "
+"สาวกคืออะไร? และคุณจะสร้างสาวกได้อย่างไร? คุณจะสอนสาวกคนหนึ่งของพระเยซูให้ทำต"
+"ามสิ่งที่พระองค์บัญชาเราไว้ในพระมหาบัญชาได้อย่างไร – "
 "สอนเขาให้เชื่อฟังทุกสิ่งที่เราสั่งพวกท่านไว้?"
 
 #: site/course/10session.php:492 site/course/20session.php:592
@@ -1217,11 +1213,11 @@ msgid "When you think of a church, what comes to mind?"
 msgstr "เมื่อคิดถึงคริสตจักรแห่งหนึ่ง คุณคิดถึงภาพใด?"
 
 #: site/course/10session.php:493 site/course/20session.php:593
-#, fuzzy
 msgid ""
 "What's the difference between that picture and what's described in the video "
 "as a \"Simple Church\"?"
-msgstr "อะไรคือความแตกต่างระหว่างภาพนั้นกับ “คริสตจักรบ้าน” ที่บรรยายไว้ในวิดีโอ?"
+msgstr ""
+"อะไรคือความแตกต่างระหว่างภาพนั้นกับ “คริสตจักรบ้าน” ที่บรรยายไว้ในวิดีโอ?"
 
 #: site/course/10session.php:495 site/course/20session.php:595
 #: site/course/course-content.php:145
@@ -1299,14 +1295,14 @@ msgid "Debrief (45min)"
 msgstr "ฝึกฝน (45 นาที)"
 
 #: site/course/10session.php:635 site/course/20session.php:735
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think. Accountability Groups are a "
 "great way to get ready!"
 msgstr ""
-"พระคัมภีร์บอกเราว่าในวันหนึ่งผู้ติดตามพระเยซูทุกคนจะต้องรับผิดชอบในสิ่งที่เราทำ "
-"สิ่งที่เราพูดและสิ่งที่เราคิด เป็นวิธีอันดีเยี่ยมเพื่อเตรียมตัวเราให้พร้อมรับผิดชอบ!"
+"พระคัมภีร์บอกเราว่าในวันหนึ่งผู้ติดตามพระเยซูทุกคนจะต้องรับผิดชอบในสิ่งที่"
+"เราทำ สิ่งที่เราพูดและสิ่งที่เราคิด "
+"เป็นวิธีอันดีเยี่ยมเพื่อเตรียมตัวเราให้พร้อมรับผิดชอบ!"
 
 #: site/course/10session.php:676 site/course/20session.php:776
 msgid "Congratulations! You've completed Session 1."
@@ -1857,15 +1853,15 @@ msgid "List of 100"
 msgstr "รายชื่อ 100 คน"
 
 #: site/course/course-content.php:404
-#, fuzzy
 msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
-"หากเราต้องการสร้างสาวกผู้ทวีจำนวน – สร้างเขาให้เป็นผู้ผลิตฝ่ายจิตวิญญาณไม่ใช่แค่เพียงผู้บริโภค "
-"เช่นนั้นแล้ว "
-"เราจำเป็นต้องเรียนรู้และบอกต่อวิธีหลักสี่วิธีที่พระเจ้าทรงทำให้ผู้ติดตามกลายเป็นเหมือนพระเยซูมากยิ่งขึ้น"
+"หากเราต้องการสร้างสาวกผู้ทวีจำนวน – "
+"สร้างเขาให้เป็นผู้ผลิตฝ่ายจิตวิญญาณไม่ใช่แค่เพียงผู้บริโภค เช่นนั้นแล้ว เราจำ"
+"เป็นต้องเรียนรู้และบอกต่อวิธีหลักสี่วิธีที่พระเจ้าทรงทำให้ผู้ติดตามกลายเป็นเห"
+"มือนพระเยซูมากยิ่งขึ้น"
 
 #: site/course/course-content.php:408
 msgid "Body Life"
@@ -2053,13 +2049,13 @@ msgid ""
 msgstr "คุณเห็นความแตกต่างอะไรบ้างระหว่างระบบการทำงานฝ่ายจิตวิญญาณของพระเจ้าและวิธีการทำงานแบบทางโลกของเรา?"
 
 #: site/course/course-content.php:702
-#, fuzzy
 msgid ""
 "Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"พระเยซูตรัสว่า  “แต่ท่านทั้งหลายจะได้รับฤทธิ์อำนาจเมื่อพระวิญญาณบริสุทธิ์เสด็จมาเหนือพวกท่าน "
+"พระเยซูตรัสว่า  "
+"“แต่ท่านทั้งหลายจะได้รับฤทธิ์อำนาจเมื่อพระวิญญาณบริสุทธิ์เสด็จมาเหนือพวกท่าน "
 "และพวกท่านจะเป็นพยานฝ่ายเราในกรุงเยรูซาเล็ม "
 "และทั่วแคว้นยูเดียกับสะมาเรียจนถึงสุดปลายแผ่นดินโลก”"
 
@@ -2135,13 +2131,12 @@ msgid ""
 msgstr "แบ่งกลุ่มๆ ละสองหรือสามคนเพศเดียวกัน"
 
 #: site/course/course-content.php:787
-#, fuzzy
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"พระเยซูตรัสว่า “จงไปสร้างสาวกจากมวลประชาชาติ ให้เขารับบัพติศมาในพระนามของพระบิดา "
-"พระบุตร และพระวิญญาณบริสุทธิ์...”"
+"พระเยซูตรัสว่า “จงไปสร้างสาวกจากมวลประชาชาติ "
+"ให้เขารับบัพติศมาในพระนามของพระบิดา พระบุตร และพระวิญญาณบริสุทธิ์...”"
 
 #: site/course/course-content.php:809
 msgid "Have you ever baptized someone?"
@@ -2152,27 +2147,28 @@ msgid "Would you even consider it?"
 msgstr "คุณเคยคิดถึงเรื่องนี้หรือไม่?"
 
 #: site/course/course-content.php:811
-#, fuzzy
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
 "หากพระมหาบัญชาเป็นพระบัญชาสำหรับผู้ติดตามพระเยซูทุกคนแล้วล่ะก็ "
-"นั่นหมายความว่าผู้ติดตามทุกคนได้รับอนุญาตเพื่อให้บัพติศมาผู้อื่นใช่หรือไม่ เหตุใดจึงใช่หรือไม่ใช่?"
+"นั่นหมายความว่าผู้ติดตามทุกคนได้รับอนุญาตเพื่อให้บัพติศมาผู้อื่นใช่หรือไม่ "
+"เหตุใดจึงใช่หรือไม่ใช่?"
 
 #: site/course/course-content.php:820
 msgid "IMPORTANT REMINDER – Have you been baptized?"
 msgstr "หมายเหตุสำคัญ – คุณได้รับบัพติศมาหรือยัง?"
 
 #: site/course/course-content.php:821
-#, fuzzy
 msgid ""
 "If not, then we encourage you to plan this before even one more session of "
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"หากยัง เราหนุนใจคุณให้วางแผนทำสิ่งนี้ก่อน กระทั่งก่อนจะเรียนบทเรียนต่อไปของการอบรมนี้ "
-"เชิญกลุ่มของคุณให้ร่วมเป็นส่วนหนึ่งของวันสำคัญนี้ในเวลาที่คุณตอบ “รับ” พระเยซู"
+"หากยัง เราหนุนใจคุณให้วางแผนทำสิ่งนี้ก่อน "
+"กระทั่งก่อนจะเรียนบทเรียนต่อไปของการอบรมนี้ "
+"เชิญกลุ่มของคุณให้ร่วมเป็นส่วนหนึ่งของวันสำคัญนี้ในเวลาที่คุณตอบ “รับ” "
+"พระเยซู"
 
 #: site/course/course-content.php:836
 #, fuzzy
@@ -2263,11 +2259,12 @@ msgid "Great - Greater - Greatest Blessings"
 msgstr "พระพรที่ยิ่งใหญ่ที่สุด"
 
 #: site/course/course-content.php:1014
-#, fuzzy
 msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
-msgstr "นี่คือรูปแบบที่คุณถูกสอนมาเมื่อคุณแรกติดตามพระเยซูหรือไม่? หากไม่ใช่ มีอะไรบ้างที่แตกต่าง?"
+msgstr ""
+"นี่คือรูปแบบที่คุณถูกสอนมาเมื่อคุณแรกติดตามพระเยซูหรือไม่? หากไม่ใช่ "
+"มีอะไรบ้างที่แตกต่าง?"
 
 #: site/course/course-content.php:1015
 msgid ""
@@ -2336,14 +2333,14 @@ msgid ""
 msgstr "คุณจะทำอย่างไรเพื่อให้สามารถเล่าเรื่องกับคนที่คุณสะดวกใจน้อยกว่าให้ดีขึ้นยิ่งกว่าเดิม?"
 
 #: site/course/course-content.php:1106
-#, fuzzy
 msgid ""
 "Jesus said, “I am the living bread that came down from heaven. Whoever eats "
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"พระเยซูตรัสว่า – “เราเป็นอาหารซึ่งให้ชีวิตที่ลงมาจากสวรรค์ ถ้าผู้ใดได้กินอาหารนี้ "
-"ผู้นั้นจะมีชีวิตอยู่ตลอดไป อาหารนี้คือเนื้อของเราซึ่งเราจะให้เพื่อโลกนี้จะได้มีชีวิต”"
+"พระเยซูตรัสว่า – “เราเป็นอาหารซึ่งให้ชีวิตที่ลงมาจากสวรรค์ "
+"ถ้าผู้ใดได้กินอาหารนี้ ผู้นั้นจะมีชีวิตอยู่ตลอดไป "
+"อาหารนี้คือเนื้อของเราซึ่งเราจะให้เพื่อโลกนี้จะได้มีชีวิต”"
 
 #: site/course/course-content.php:1127
 #, fuzzy
@@ -2548,9 +2545,9 @@ msgstr ""
 "(หรือเคยได้ยิน) มาก่อนหรือไม่? หากคุณเห็น ความแตกต่างเหล่านี้ส่งผลกระทบต่อกลุ่มอย่างไรบ้าง?"
 
 #: site/course/course-content.php:1507
-#, fuzzy
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr "กลุ่ม 3/3 จะถูกนับว่าเป็นคริสตจักรบ้านได้หรือไม่? เหตุใดจึงได้หรือไม่ได้?"
+msgstr ""
+"กลุ่ม 3/3 จะถูกนับว่าเป็นคริสตจักรบ้านได้หรือไม่? เหตุใดจึงได้หรือไม่ได้?"
 
 #: site/course/course-content.php:1538 site/course/course-content.php:3893
 #, fuzzy
@@ -2679,22 +2676,21 @@ msgid "Session 8"
 msgstr "บทเรียนที่ 8"
 
 #: site/course/course-content.php:1779 site/course/course-content.php:4176
-#, fuzzy
 msgid ""
 "Pray and thank God for giving your group the energy, the focus and the "
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
 "อธิษฐานและขอบคุณพระเจ้าที่พระองค์ประทานพลังงาน การเพ่งสายตา "
-"และความสัตย์ซื่อให้กับกลุ่มของคุณเพื่อมาได้ไกลขนาดนี้ในการฝึกอบรมนี้ "
-"ขอพระเจ้าให้พระวิญญาณบริสุทธิ์ของพระองค์เตือนใจทุกคนในกลุ่มว่าเราไม่อาจทำอะไรได้เองเลยหากปราศจากพระองค์!"
+"และความสัตย์ซื่อให้กับกลุ่มของคุณเพื่อมาได้ไกลขนาดนี้ในการฝึกอบรมนี้ ขอพระเจ้"
+"าให้พระวิญญาณบริสุทธิ์ของพระองค์เตือนใจทุกคนในกลุ่มว่าเราไม่อาจทำอะไรได้เองเล"
+"ยหากปราศจากพระองค์!"
 
 #: site/course/course-content.php:1807
 msgid "And we will practice this tool from our toolkit:"
 msgstr ""
 
 #: site/course/course-content.php:1823
-#, fuzzy
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
@@ -2702,11 +2698,12 @@ msgstr ""
 "ใครอยากเป็นใหญ่ในพวกท่านต้องรับใช้พวกท่าน”"
 
 #: site/course/course-content.php:1846
-#, fuzzy
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
-msgstr "คุณรู้จักกลุ่มผู้ติดตามพระเยซูกลุ่มใดหรือไม่ที่มาพบปะกันเป็นประจำหรืออาจยินดีมาพบปะกันและตั้งกลุ่มผู้นำเซลส์ขึ้นมาเพื่อร่วมฝึกอบรมซูเม่ด้วยกัน?"
+msgstr ""
+"คุณรู้จักกลุ่มผู้ติดตามพระเยซูกลุ่มใดหรือไม่ที่มาพบปะกันเป็นประจำหรืออาจยินดี"
+"มาพบปะกันและตั้งกลุ่มผู้นำเซลส์ขึ้นมาเพื่อร่วมฝึกอบรมซูเม่ด้วยกัน?"
 
 #: site/course/course-content.php:1847
 msgid "What would it take to bring them together?"
@@ -2961,12 +2958,12 @@ msgstr ""
 "พวกเขากลายเป็นเครือข่ายนั่นเอง!"
 
 #: site/course/course-content.php:2314
-#, fuzzy
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
-"เมื่อเครือข่ายคริสตจักรบ้านหลายๆ แห่งมาเชื่อมต่อกันโดยมีความสัมพันธ์กันอย่างเหนียวแน่น "
+"เมื่อเครือข่ายคริสตจักรบ้านหลายๆ "
+"แห่งมาเชื่อมต่อกันโดยมีความสัมพันธ์กันอย่างเหนียวแน่น "
 "สิ่งนี้ทำให้มีข้อได้เปรียบอย่างไรบ้าง? มีตัวอย่างใดที่เข้ามาในใจของคุณ?"
 
 #: site/course/course-content.php:2323

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
-"PO-Revision-Date: 2024-04-10 19:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-10 21:38+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -517,7 +517,6 @@ msgstr "Ciclo de Treinamento para Discípulos Amadurecidos"
 #: globals.php:1682 site/course/course-content.php:1805
 #: site/course/course-content.php:1822 site/course/course-content.php:1881
 #: site/course/course-content.php:4096 site/course/course-content.php:4111
-#, fuzzy
 msgid "Leadership Cells"
 msgstr "Células de Liderança"
 
@@ -1206,7 +1205,6 @@ msgstr "Oração em Grupo (5 min)"
 
 #: site/course/10session.php:400 site/course/20session.php:500
 #: site/course/course-content.php:53 site/course/course-content.php:2532
-#, fuzzy
 msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
@@ -1250,7 +1248,6 @@ msgstr ""
 
 #: site/course/10session.php:445 site/course/20session.php:545
 #: site/course/course-content.php:108
-#, fuzzy
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
@@ -1259,7 +1256,6 @@ msgstr ""
 "Comissão, por que tão poucos realmente fazem discípulos?"
 
 #: site/course/10session.php:468 site/course/20session.php:568
-#, fuzzy
 msgid ""
 "What is a disciple? And how do you make one? How do you teach a follower of "
 "Jesus to do what He told us in His Great Commission – to obey all of His "
@@ -1275,7 +1271,6 @@ msgid "When you think of a church, what comes to mind?"
 msgstr "Quando você pensa em uma igreja, o que vem à mente?"
 
 #: site/course/10session.php:493 site/course/20session.php:593
-#, fuzzy
 msgid ""
 "What's the difference between that picture and what's described in the video "
 "as a \"Simple Church\"?"
@@ -1364,7 +1359,6 @@ msgid "Debrief (45min)"
 msgstr "Pratique (45 min)"
 
 #: site/course/10session.php:635 site/course/20session.php:735
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think. Accountability Groups are a "
@@ -1934,7 +1928,6 @@ msgid "List of 100"
 msgstr "Lista de 100"
 
 #: site/course/course-content.php:404
-#, fuzzy
 msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
@@ -2143,7 +2136,6 @@ msgstr ""
 "nossa maneira terrena de fazer as coisas?"
 
 #: site/course/course-content.php:702
-#, fuzzy
 msgid ""
 "Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
@@ -2233,7 +2225,6 @@ msgid ""
 msgstr "Divida em grupos de duas ou três pessoas do mesmo sexo."
 
 #: site/course/course-content.php:787
-#, fuzzy
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
@@ -2250,7 +2241,6 @@ msgid "Would you even consider it?"
 msgstr "Você já considerou isso?"
 
 #: site/course/course-content.php:811
-#, fuzzy
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
@@ -2263,7 +2253,6 @@ msgid "IMPORTANT REMINDER – Have you been baptized?"
 msgstr "LEMBRETE IMPORTANTE - Você já foi batizado?"
 
 #: site/course/course-content.php:821
-#, fuzzy
 msgid ""
 "If not, then we encourage you to plan this before even one more session of "
 "this training. Invite your group to be a part of this important day when you "
@@ -2365,7 +2354,6 @@ msgid "Great - Greater - Greatest Blessings"
 msgstr "A Maior Bênção"
 
 #: site/course/course-content.php:1014
-#, fuzzy
 msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
@@ -2452,7 +2440,6 @@ msgstr ""
 "menos confortável?"
 
 #: site/course/course-content.php:1106
-#, fuzzy
 msgid ""
 "Jesus said, “I am the living bread that came down from heaven. Whoever eats "
 "this bread will live forever. This bread is my flesh, which I will give for "
@@ -2676,7 +2663,6 @@ msgstr ""
 "sim, como essas diferenças afetariam o grupo?"
 
 #: site/course/course-content.php:1507
-#, fuzzy
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 msgstr ""
 "Poderia um Grupo 3/3 ser considerado uma Igreja Simples? Por que sim ou por "
@@ -2815,7 +2801,6 @@ msgid "Session 8"
 msgstr "Sessão 8"
 
 #: site/course/course-content.php:1779 site/course/course-content.php:4176
-#, fuzzy
 msgid ""
 "Pray and thank God for giving your group the energy, the focus and the "
 "faithfulness to come so far in this training. Ask God to have His Holy "
@@ -2830,7 +2815,6 @@ msgid "And we will practice this tool from our toolkit:"
 msgstr ""
 
 #: site/course/course-content.php:1823
-#, fuzzy
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
@@ -2838,7 +2822,6 @@ msgstr ""
 "que sirva.\""
 
 #: site/course/course-content.php:1846
-#, fuzzy
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
@@ -3111,7 +3094,6 @@ msgstr ""
 "juntas, como uma família espiritual estendida? Elas se tornam uma rede!"
 
 #: site/course/course-content.php:2314
-#, fuzzy
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
