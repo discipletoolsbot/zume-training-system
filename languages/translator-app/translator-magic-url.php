@@ -132,30 +132,36 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     vertical-align: top;
                 }
                 h3 {
-                   font-size: 1.3em;
+                    font-size: var(--t1);
+                    font-weight: 600;
                     padding: .5em 0;
+                    color: var(--z-brand-light);
                 }
                 ul li {
-                    margin: 0 1.5em;
+                    margin-inline-start: var(--s3);
                     padding: 0 1em;
                     list-style-type: disc;
                     list-style-position: outside;
-                    line-height: 1.5em;
+                    line-height: 1.5;
                 }
                 ol li {
-                    margin: 0 1.5em;
+                    margin-inline-start: var(--s3);
                     padding: 0 1em;
                     list-style-position: outside;
-                    line-height: 1.5em;
+                    line-height: 1.5;
                 }
                 p {
-                    padding-bottom: 1em;
+                    margin-block-end: var(--s2);
                 }
-                ol {
-                    padding-bottom: 1em;
+                strong {
+                    font-weight: 600;
+                    color: var(--z-brand-light);
                 }
-                ul {
-                    padding-bottom: 1em;
+                ol, ul {
+                    margin-block-end: var(--s2);
+                }
+                img {
+                    margin-block-end: var(--s2)
                 }
                 .checkmark {
                     display: inline-block;

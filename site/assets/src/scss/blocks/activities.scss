@@ -1,0 +1,73 @@
+.activity-page {
+    font-size: font-size(1);
+    margin-block-end: spacing(3);
+
+    [class^="container"] {
+        max-width: 60ch;
+    }
+
+    h1, h2, h3 {
+        color: color('brand-light');
+        margin-block-end: spacing(-1);
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: font-size(3);
+    }
+
+    h2, h3 {
+        font-size: font-size(1)
+    }
+
+    p {
+        margin-block-end: spacing(2);
+    }
+
+    ul, ol {
+        margin-block-end: spacing(2);
+    }
+
+    ol > * + * {
+        margin-block-start: spacing(0);
+    }
+
+    img {
+        margin-block-end: spacing(2);
+    }
+
+    strong {
+        color: color('brand-light');
+        font-weight: 600;
+    }
+
+    .activity-title {
+        margin-block: spacing(1);
+        text-align: center;
+    }
+
+    .button {
+        @include button;
+
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}
+.activity-header {
+    background-color: color('brand');
+    color: color('white');
+    padding-block: 0.3em;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        width: 100px;
+    }
+
+    .title {
+        font-size: font-size(2);
+        font-weight: 600;
+        text-align: center;
+    }
+}
