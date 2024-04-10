@@ -1417,12 +1417,12 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                 <span class="loading-spinner ${this.loading?"active":""}"></span>
 
             </form>
-        `}createRenderRoot(){return this}}customElements.define("profile-form",rs);class w extends g{static get properties(){return{slide:{type:Object},id:{type:String}}}constructor(){super()}connectedCallback(){super.connectedCallback(),this.dir=document.querySelector("html").dir,window.addEventListener("resize",this.resizeCallback)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("resize",this.resizeCallback)}firstUpdated(){this.resizeCallback(null,window)}resizeCallback(e,t=null){const s=document.querySelectorAll(".slides-card"),n=document.querySelectorAll(".video-slide"),r=[...s,n],a=t||e.currentTarget,{innerWidth:d,innerHeight:c}=a;d/c>16/9?r.forEach(h=>{h.style=`
-                    --slide-unit: ${16/9*c/100}px;
-                    --slide-height: ${c}px;
-                `}):r.forEach(h=>{h.style=`
-                    --slide-unit: ${d/100}px;
-                    --slide-height: ${9/16*d}px;
+        `}createRenderRoot(){return this}}customElements.define("profile-form",rs);class w extends g{static get properties(){return{slide:{type:Object},id:{type:String}}}constructor(){super(),this.resizeCallback=this.resizeCallback.bind(this)}connectedCallback(){super.connectedCallback(),this.dir=document.querySelector("html").dir,window.addEventListener("resize",this.resizeCallback)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("resize",this.resizeCallback)}firstUpdated(){this.resizeSlide(window)}resizeCallback(e){this.resizeSlide(e.currentTarget)}resizeSlide(e){const t=document.querySelectorAll(".slides-card"),s=document.querySelectorAll(".video-slide"),n=[...t,s],{innerWidth:r,innerHeight:a}=e;r/a>16/9?n.forEach(d=>{d.style=`
+                    --slide-unit: ${16/9*a/100}px;
+                    --slide-height: ${a}px;
+                `}):n.forEach(d=>{d.style=`
+                    --slide-unit: ${r/100}px;
+                    --slide-height: ${9/16*r}px;
                 `})}renderProgressBar(){let e=[],t=[];for(let s=0;s<this.slide.progress_bar.length;s++){const n=this.slide.progress_bar[s];if(!n){e.push(t),e.push(!1),t=[];continue}t.push(n)}return e.push(t),o`
             <div class="stage ${this.slide.key}-bar">
                 <div class="progress-bar-wrapper">

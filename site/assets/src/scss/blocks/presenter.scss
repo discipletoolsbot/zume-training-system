@@ -57,6 +57,9 @@
     strong {
         font-weight: 600;
     }
+    ul.bullets {
+        margin-inline-start: spacing(2);
+    }
 
     /* Composition */
     & > :nth-child(2) {

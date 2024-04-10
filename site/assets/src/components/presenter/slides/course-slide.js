@@ -10,6 +10,8 @@ export class CourseSlide extends LitElement {
 
     constructor() {
         super()
+
+        this.resizeCallback = this.resizeCallback.bind(this)
     }
 
     connectedCallback() {
@@ -22,17 +24,20 @@ export class CourseSlide extends LitElement {
         window.removeEventListener('resize', this.resizeCallback)
     }
     firstUpdated() {
-        this.resizeCallback(null, window)
+        this.resizeSlide(window)
     }
-    resizeCallback(event, target = null) {
+    resizeCallback(event) {
+        this.resizeSlide(event.currentTarget)
+    }
+    resizeSlide(target) {
+
         const normalSlides = document.querySelectorAll('.slides-card')
 
         const videoSlides = document.querySelectorAll('.video-slide')
 
         const slides = [...normalSlides, videoSlides]
 
-        const currentTarget = target || event.currentTarget
-        const { innerWidth: screenWidth, innerHeight: screenHeight } = currentTarget
+        const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 
         if ( screenWidth/screenHeight > 16/9 ) {
             /* The screen is wider than the slide */
