@@ -10,7 +10,7 @@ export class LeftImageSlide extends CourseSlide {
                     <div>
                         <div class="cover center text-center">
                             <p><strong>${this.slide['left'][0]}</strong></p>
-                            <div class="mw-80"><img src="${this.slide['left'][1]}" /></div>
+                            <div class="mw-60"><img src="${this.slide['left'][1]}" /></div>
                         </div>
                     </div>
                     <div class="content-area">

@@ -1573,7 +1573,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     <div>
                         <div class="cover center text-center">
                             <p><strong>${this.slide.left[0]}</strong></p>
-                            <div class="mw-80"><img src="${this.slide.left[1]}" /></div>
+                            <div class="mw-60"><img src="${this.slide.left[1]}" /></div>
                         </div>
                     </div>
                     <div class="content-area">
