@@ -450,10 +450,6 @@ msgstr "Listen and Read Along (3min)"
 msgid "READ"
 msgstr "READ"
 
-#: functions/zume-content.php:427
-msgid "S.O.A.P.S. Bible Reading"
-msgstr "S.O.A.P.S. Bible Reading"
-
 #: functions/zume-content.php:428
 msgid "Hearing from God regularly is a key element in our personal relationship with Him, and in our ability to stay obediently engaged in what He is doing around us."
 msgstr "Hearing from God regularly is a key element in our personal relationship with Him, and in our ability to stay obediently engaged in what He is doing around us."
