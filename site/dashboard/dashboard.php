@@ -169,7 +169,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'edit_profile' => __( 'Edit Profile', 'zume' ),
             'share_title' => __( 'Check out this Zume concept', 'zume' ),
             'preview' => __( 'Preview', 'zume' ),
-            'add_commitments' => __( 'Add commitments', 'zume' ),
+            'add_commitments' => sprintf( __( 'Add new %s', 'zume' ), __( 'Commitment', 'zume' ) ),
             'copy_link' => __( 'Copy Link', 'zume' ),
             'copy_and_share_text' => __( 'Copy this link and send it to your friends 🙂', 'zume' ),
             'share_feedback' => __( 'Thanks!', 'zume' ),
@@ -214,6 +214,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'trained' => __( 'Trained', 'zume' ),
             'trained_explanation' => __( 'Have I trained others to share this tool or concept?', 'zume' ),
             'join_the_community' => __( 'Join the Community', 'zume' ),
+            'join' => __( 'Join', 'zume' ),
+            'join_to_access' => __( 'Join the community to get access to this area.', 'zume' ),
             'community' => __( 'Community links', 'zume' ),
             'resources' => __( 'Resources', 'zume' ),
             'previous_slide' => __( 'Previous Slide', 'zume' ),
@@ -225,6 +227,13 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'edit_time' => __( 'Edit time', 'zume' ),
             'add_new_training' => sprintf( __( 'Add new %s', 'zume' ), __( 'Training', 'zume' ) ),
             'invite_friends' => __( 'Invite Friends', 'zume' ),
+            'add_first_church' => __( 'Click to add your first church', 'zume' ),
+            'church_name' => __( 'Church Name', 'zume' ),
+            'number_of_people' => __( 'Number of People', 'zume' ),
+            'church_location' => __( 'Church Location', 'zume' ),
+            'parent_church' => __( 'Parent Church', 'zume' ),
+            'add_new_church' => sprintf( __( 'Add new %s', 'zume' ), __( 'Church', 'zume' ) ),
+            'cancel' => __( 'cancel', 'zume' ),
         ];
     }
 }
