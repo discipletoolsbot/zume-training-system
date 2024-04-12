@@ -188,6 +188,13 @@ function zume_session_alias_keys( $number_priority = true ) {
         2340 => 'set_b_20',
         8876 => 'set_b_20',
         2354 => 'set_b_20',
+
+        // set c
+        1397 => 'set_c_1', // Intensive 1
+        2341 => 'set_c_2', // Intensive 2
+        3455 => 'set_c_3', // Intensive 3
+        4329 => 'set_c_4', // Intensive 4
+        5451 => 'set_c_5', // Intensive 5
     ];
 
     if ( $number_priority ) {

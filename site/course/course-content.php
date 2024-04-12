@@ -5708,6 +5708,259 @@ function zume_content( $lang_code = 'en') {
          *
          *
          *
+         *      INTENSIVE SESSION 1
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 's3_1_1',
+            'type' => 'title',
+            'menu' => [
+                __( 'INTENSIVE SESSION 1', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
+                __( 'INTENSIVE SESSION 1', 'zume' ),
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's3_1_2',
+            'type' => 'checkin',
+            'menu' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [],
+            'left' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'right' => [
+                __( 'Have all of the participants and facilitator check-in.', 'zume' ),
+                $checkin_base_url . '1397',
+                zume_create_qr_url( $checkin_base_url . '1397' ),
+                __( 'Or zume.training/checkin and use code:', 'zume' ),
+                '1397'
+            ],
+        ],
+
+
+
+
+
+
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      INTENSIVE SESSION 2
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 's3_2_1',
+            'type' => 'title',
+            'menu' => [
+                __( 'INTENSIVE SESSION 2', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
+                __( 'INTENSIVE SESSION 2', 'zume' ),
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's3_2_2',
+            'type' => 'checkin',
+            'menu' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [],
+            'left' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'right' => [
+                __( 'Have all of the participants and facilitator check-in.', 'zume' ),
+                $checkin_base_url . '2341',
+                zume_create_qr_url( $checkin_base_url . '2341' ),
+                __( 'Or zume.training/checkin and use code:', 'zume' ),
+                '2341'
+            ],
+        ],
+
+
+
+
+
+         /**************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      INTENSIVE SESSION 3
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 's3_3_1',
+            'type' => 'title',
+            'menu' => [
+                __( 'INTENSIVE SESSION 3', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
+                __( 'INTENSIVE SESSION 3', 'zume' ),
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's3_3_2',
+            'type' => 'checkin',
+            'menu' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [],
+            'left' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'right' => [
+                __( 'Have all of the participants and facilitator check-in.', 'zume' ),
+                $checkin_base_url . '3455',
+                zume_create_qr_url( $checkin_base_url . '3455' ),
+                __( 'Or zume.training/checkin and use code:', 'zume' ),
+                '3455'
+            ],
+        ],
+
+
+
+
+
+         /**************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      INTENSIVE SESSION 4
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 's3_4_1',
+            'type' => 'title',
+            'menu' => [
+                __( 'INTENSIVE SESSION 4', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
+                __( 'INTENSIVE SESSION 4', 'zume' ),
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's3_4_2',
+            'type' => 'checkin',
+            'menu' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [],
+            'left' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'right' => [
+                __( 'Have all of the participants and facilitator check-in.', 'zume' ),
+                $checkin_base_url . '4329',
+                zume_create_qr_url( $checkin_base_url . '4329' ),
+                __( 'Or zume.training/checkin and use code:', 'zume' ),
+                '4329'
+            ],
+        ],
+
+
+
+
+
+         /**************************************************************************************************************
+         *
+         *
+         *
+         *
+         *      INTENSIVE SESSION 5
+         *
+         *
+         *
+         *
+         **************************************************************************************************************/
+        [
+            'key' => 's3_5_1',
+            'type' => 'title',
+            'menu' => [
+                __( 'INTENSIVE SESSION 5', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [
+                'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
+                __( 'INTENSIVE SESSION 5', 'zume' ),
+            ],
+            'left' => [],
+            'right' => [],
+        ],
+        [
+            'key' => 's3_5_2',
+            'type' => 'checkin',
+            'menu' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'length' => [],
+            'center' => [],
+            'left' => [
+                __( 'CHECK-IN', 'zume' ),
+            ],
+            'right' => [
+                __( 'Have all of the participants and facilitator check-in.', 'zume' ),
+                $checkin_base_url . '5451',
+                zume_create_qr_url( $checkin_base_url . '5451' ),
+                __( 'Or zume.training/checkin and use code:', 'zume' ),
+                '5451'
+            ],
+        ],
+
+
+
+
+
+
+
+
+
+
+
+        /***************************************************************************************************************
+         *
+         *
+         *
+         *
          *     Final Slides (repeated on all versions)
          *
          *

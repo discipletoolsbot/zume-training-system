@@ -139,16 +139,16 @@ class Zume_Course_Builder {
 
         } else if ( 'intensive' === $session_type ) {
 
-            $session['1'] = ['s1_1_1','s1_1_2','s1_1_3','s1_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'t4_a','t4_b','t4_c',false,'t5_a','t5_b','t5_c',false,'s1_1_20',false,'break',false, // session 1
-                's1_2_1','s1_2_2','s1_2_3','s1_2_5',false,'t6_a','t6_b','t6_c',false,'t7_a','t7_b','t7_c','t7_d',false,'t8_a','t8_b','t8_c',false,'s1_2_6','final']; // session 2
-            $session['2'] = ['s1_3_1','s1_3_2','s1_3_3','s1_3_5',false,'t9_a','t9_b','t9_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s1_3_8',false,'t11_a','t11_b','t11_c','t11_d',false,'s1_3_10','s1_3_12',false,'break',false, // session 3
-                's1_4_1','s1_4_2','s1_4_3','s1_4_5',false,'t12_a','t12_b','t12_c',false,'t13_a','t13_b','t13_c',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s1_4_6','final']; // session 4
-            $session['3'] = ['s1_5_1','s1_5_2','s1_5_3','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'t17_d','t17_e',false,'break',false, // session 5
-                's1_6_1','s1_6_2','s1_6_3','s1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final']; // session 6
-            $session['4'] = ['s1_7_1','s1_7_2','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8',false,'break',false, // session 7
-                's1_8_1','s1_8_2','s1_8_3','s1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','final']; // session 8
-            $session['5'] = ['s1_9_1','s1_9_2','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'s1_9_9','s1_9_10', // session 9
-                's1_10_1','s1_10_2','s1_10_3','s1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
+            $session['1'] = ['s3_1_1','s3_1_2','s1_1_3','s1_1_4',false,'t1_a','t1_b','t1_c',false,'t2_a','t2_b','t2_c',false,'t3_a','t3_b','t3_c',false,'t4_a','t4_b','t4_c',false,'t5_a','t5_b','t5_c',false,'s1_1_20',false,'break',false, // session 1
+                's1_2_5',false,'t6_a','t6_b','t6_c',false,'t7_a','t7_b','t7_c','t7_d',false,'t8_a','t8_b','t8_c',false,'s1_2_6','final']; // session 2
+            $session['2'] = ['s3_2_1','s3_2_1','s1_3_3','s1_3_5',false,'t9_a','t9_b','t9_c',false,'t10_a','t10_b','t10_c','t10_d','t10_e',false,'s1_3_8',false,'t11_a','t11_b','t11_c','t11_d',false,'s1_3_10','s1_3_12',false,'break',false, // session 3
+                's1_4_5',false,'t12_a','t12_b','t12_c',false,'t13_a','t13_b','t13_c',false,'t14_a','t14_b','t14_c',false,'t15_a','t15_b','t15_c',false,'t16_a','t16_b','t16_c',false,'s1_4_6','final']; // session 4
+            $session['3'] = ['s3_3_1','s3_3_1','s1_5_3','s1_5_5',false,'t17_a','t17_b',false,'t18_a','t18_b','t18_c',false,'t19_a',false,'t17_d','t17_e',false,'break',false, // session 5
+                's1_6_5',false,'t20_a','t20_b','t20_c',false,'t21_a','t21_b','t21_c',false,'s1_6_6','s1_6_7','final']; // session 6
+            $session['4'] = ['s3_4_1','s3_4_1','s1_7_3','s1_7_5',false,'t22_a','t22_b','t22_c',false,'s1_7_6','s1_7_7','s1_7_8',false,'break',false, // session 7
+                's1_8_5',false,'t23_a','t23_b','t23_c',false,'s1_8_6','s1_8_7','final']; // session 8
+            $session['5'] = ['s3_5_1','s3_5_1','s1_9_3','s1_9_4','s1_9_5',false,'t24_a','t24_b','t24_c',false,'t25_a','t25_b','t25_c',false,'t26_a','t26_b','t26_c',false,'t28_a','t28_b','t28_c','t28_d','t28_e',false,'t31_a','t31_b','t31_c','t31_d','t31_e',false,'t32_a','t32_b','t32_c',false,'s1_9_9','s1_9_10', // session 9
+                's1_10_5',false,'s1_10_6',false,'t29_a','t29_b','t29_c',false,'t30_a','t30_b','t30_c',false,'t27_a','t27_b','t27_c',false,'next_steps','congratulations','final']; // session 10
 
         }
 
