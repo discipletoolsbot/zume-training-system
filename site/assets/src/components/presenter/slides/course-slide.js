@@ -96,7 +96,7 @@ export class CourseSlide extends LitElement {
         let stage = []
         for (let i = 0; i < this.slide.progress_bar.length; i++) {
             const item = this.slide.progress_bar[i];
-            if (!item) {
+            if (item === false) {
                 progress_bar.push(stage)
                 progress_bar.push(false)
                 stage = []
