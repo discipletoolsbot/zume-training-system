@@ -1,3 +1,5 @@
+import { html } from "lit"
+
 function makeClickHandler(type) {
     return (event, dispatchEvent) => {
         event.preventDefault()
@@ -14,7 +16,7 @@ export function dashRoutes() {
             type: 'dash-link',
             translation: '',
             data: {
-                component: '',
+                makeComponent: () => '',
             },
         },
         {
@@ -24,7 +26,7 @@ export function dashRoutes() {
             type: 'dash-link',
             translation: jsObject.translations['getting_started'],
             data: {
-                component: 'dash-getting-started',
+                makeComponent: (isLocked) => html`<dash-getting-started></dash-getting-started>`,
             },
         },
         {
@@ -37,7 +39,7 @@ export function dashRoutes() {
             translation: jsObject.translations['set_profile'],
             explanation: jsObject.translations['set_profile_explanation'],
             data: {
-                component: '',
+                makeComponent: () => '',
             },
         },
         {
@@ -50,7 +52,7 @@ export function dashRoutes() {
             translation: jsObject.translations['plan_a_training'],
             explanation: jsObject.translations['plan_a_training_explanation'],
             data: {
-                component: '',
+                makeComponent: () => '',
             },
         },
         {
@@ -63,7 +65,7 @@ export function dashRoutes() {
             translation: jsObject.translations['get_a_coach'],
             explanation: jsObject.translations['get_a_coach_explanation'],
             data: {
-                component: '',
+                makeComponent: () => '',
             },
         },
         {
@@ -73,7 +75,7 @@ export function dashRoutes() {
             type: 'dash-link',
             translation: jsObject.translations['training'],
             data: {
-                component: 'dash-training',
+                makeComponent: (isLocked) => html`<dash-training></dash-training>`,
             },
         },
         {
@@ -85,7 +87,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_training'],
             explanation: jsObject.translations['my_training_explanation'],
             data: {
-                component: 'dash-trainings',
+                makeComponent: (isLocked) => html`<dash-trainings ?showTeaser=${isLocked}></dash-trainings>`,
             },
         },
         {
@@ -97,7 +99,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_progress'],
             explanation: jsObject.translations['my_progress_explanation'],
             data: {
-                component: 'dash-progress',
+                makeComponent: (isLocked) => html`<dash-progress ?showTeaser=${isLocked}></dash-progress>`,
             },
         },
         {
@@ -109,7 +111,7 @@ export function dashRoutes() {
             translation: jsObject.translations['3_month_plan'],
             explanation: jsObject.translations['3_month_plan_explanation'],
             data: {
-                component: 'dash-3-month-plan',
+                makeComponent: (isLocked) => html`<dash-3-month-plan ?showTeaser=${isLocked}></dash-3-month-plan>`,
             },
         },
         {
@@ -119,7 +121,7 @@ export function dashRoutes() {
             type: 'dash-link',
             translation: jsObject.translations['practicing'],
             data: {
-                component: 'dash-practicing',
+                makeComponent: (isLocked) => html`<dash-practicing></dash-practicing>`,
             },
         },
         {
@@ -131,7 +133,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_coach'],
             explanation: jsObject.translations['my_coach_explanation'],
             data: {
-                component: 'dash-coach',
+                makeComponent: (isLocked) => html`<dash-coach ?showTeaser=${isLocked}></dash-coach>`,
             },
         },
         {
@@ -143,7 +145,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_plans'],
             explanation: jsObject.translations['my_plans_explanation'],
             data: {
-                component: 'dash-plans',
+                makeComponent: (isLocked) => html`<dash-plans ?showTeaser=${isLocked}></dash-plans>`,
             },
         },
         {
@@ -155,7 +157,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_churches'],
             explanation: jsObject.translations['my_churches_explanation'],
             data: {
-                component: 'dash-churches',
+                makeComponent: (isLocked) => html`<dash-churches ?showTeaser=${isLocked}></dash-churches>`,
             },
         },
         {
@@ -167,7 +169,7 @@ export function dashRoutes() {
             translation: jsObject.translations['my_maps'],
             explanation: jsObject.translations['my_maps_explanation'],
             data: {
-                component: 'dash-maps',
+                makeComponent: (isLocked) => html`<dash-maps ?showTeaser=${isLocked}></dash-maps>`,
             },
         },
         {
@@ -176,7 +178,7 @@ export function dashRoutes() {
             icon: '',
             type: 'dash-link',
             data: {
-                component: 'dash-not-found',
+                makeComponent: (isLocked) => html`<dash-not-found></dash-not-found>`,
             },
         }
     ]

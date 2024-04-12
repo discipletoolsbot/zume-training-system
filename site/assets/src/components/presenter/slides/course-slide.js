@@ -35,17 +35,21 @@ export class CourseSlide extends LitElement {
     }
     fitContentToSlide(selector) {
         const contentArea = this.renderRoot.querySelector(selector)
+        const slide = this.renderRoot.querySelector('.slides-card')
 
-        if (!contentArea) {
+        if (!contentArea || !slide) {
             return
         }
 
         const contentAreaHeight = contentArea.getBoundingClientRect().height
 
-        const progressBar = this.renderRoot.querySelector('.stage')
-        const progressBarHeight = progressBar ? progressBar.getBoundingClientRect().height : 0
+        const parentElementTop = contentArea.parentElement.getBoundingClientRect().top
+        const slideTop = slide.getBoundingClientRect().top
+        const slideHeight = slide.getBoundingClientRect().height
 
-        const percentageOfSlideHeight = contentAreaHeight / ( this.slideHeight - progressBarHeight ) * 100
+        const spaceAvailable = slideHeight - ( parentElementTop - slideTop )
+
+        const percentageOfSlideHeight = contentAreaHeight / spaceAvailable * 100
 
         if (percentageOfSlideHeight > this.maxPercentage) {
             /* CurrentFontRatio is hardcoded to match the ratio currently in presenter.scss as --font-size-ratio */
@@ -64,15 +68,17 @@ export class CourseSlide extends LitElement {
 
         const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 
+        const slideWidth = slides[0].getBoundingClientRect().width
+
         const isScreenWiderThanSlide = screenWidth/screenHeight > 16/9
 
         const slideUnit = isScreenWiderThanSlide
             ? 16 / 9 * screenHeight / 100
-            : screenWidth / 100
+            : slideWidth / 100
 
         const slideHeight = isScreenWiderThanSlide
             ? screenHeight
-            : 9 / 16 * screenWidth
+            : 9 / 16 * slideWidth
 
         this.slideUnit = slideUnit
         this.slideHeight = slideHeight
@@ -90,7 +96,7 @@ export class CourseSlide extends LitElement {
         let stage = []
         for (let i = 0; i < this.slide.progress_bar.length; i++) {
             const item = this.slide.progress_bar[i];
-            if (!item) {
+            if (item === false) {
                 progress_bar.push(stage)
                 progress_bar.push(false)
                 stage = []

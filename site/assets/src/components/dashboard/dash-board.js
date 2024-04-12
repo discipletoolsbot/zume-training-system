@@ -127,18 +127,16 @@ export class DashBoard extends router(LitElement) {
     }
 
     renderRoute() {
-        const { component } = this.data
+        const { makeComponent } = this.data
 
-        const isLocked = DashBoard.getLockedStatus(this.route, this.userState)
-
-        if ( !component ) {
+        if ( !makeComponent ) {
             return ''
         }
 
-        const element = document.createElement(component)
-        if (isLocked) {
-            element.setAttribute('showTeaser', isLocked)
-        }
+        const isLocked = DashBoard.getLockedStatus(this.route, this.userState)
+
+        const element = makeComponent(isLocked)
+
         return element
     }
 

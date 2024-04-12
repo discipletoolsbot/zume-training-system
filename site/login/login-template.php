@@ -389,7 +389,7 @@ switch ( $request_action ) {
                                 }
 
 
-                                $dt_url = new DT_URL( $url );
+                                $dt_url = new DT_URL( dt_get_url_path() );
                                 $query_params = $dt_url->query_params;
                                 $query_redirect_to = $query_params->get( 'redirect_to' );
 
@@ -601,7 +601,7 @@ switch ( $request_action ) {
                                 $lang_code = 'pt_pt';
                             }
 
-                            $dt_url = new DT_URL( $url );
+                            $dt_url = new DT_URL( dt_get_url_path() );
                             $query_params = $dt_url->query_params;
                             $query_redirect_to = $query_params->get( 'redirect_to' );
 
