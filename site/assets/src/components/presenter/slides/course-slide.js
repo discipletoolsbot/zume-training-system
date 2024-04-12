@@ -68,15 +68,17 @@ export class CourseSlide extends LitElement {
 
         const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 
+        const slideWidth = slides[0].getBoundingClientRect().width
+
         const isScreenWiderThanSlide = screenWidth/screenHeight > 16/9
 
         const slideUnit = isScreenWiderThanSlide
             ? 16 / 9 * screenHeight / 100
-            : screenWidth / 100
+            : slideWidth / 100
 
         const slideHeight = isScreenWiderThanSlide
             ? screenHeight
-            : 9 / 16 * screenWidth
+            : 9 / 16 * slideWidth
 
         this.slideUnit = slideUnit
         this.slideHeight = slideHeight

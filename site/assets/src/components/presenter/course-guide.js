@@ -13,7 +13,7 @@ export class CourseGuide extends LitElement {
                 <div class="stack | py-4 snap-content" data-outline-slides>
                     ${this.sections.map((slide, i) => {
                         return html`
-                            <div class="slide-switcher">
+                            <div class="container | slide-switcher">
                                 <slide-switcher
                                     .slide=${slide}
                                 ></slide-switcher>
