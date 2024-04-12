@@ -125,41 +125,28 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
                 <div class="cover-page container-xsm">
                     <div class="center">
-                        <h1 class="text-center"><?php echo esc_html__( 'Zume Course Presenter', 'zume' ) ?></h1>
-                        <h2 class="h3 brand"><?php echo esc_html__( 'Scripts are off', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
-                        <p><?php echo esc_html__( 'If you are unable to turn on scripts, you may download the course slides below', 'zume' ) ?></p>
-
-                        <?php /* TODO: Generate/create list of language names+codes that have translated course slides
-                                @note This could be set up to default to english if the the language called is not available.  */ ?>
-                        <?php
-                            $languages = [
-                                [
-                                    'name' => 'English',
-                                    'code' => 'en',
-                                ],
-                                [
-                                    'name' => 'Arabic',
-                                    'code' => 'ar',
-                                ],
-                                [
-                                    'name' => 'German',
-                                    'code' => 'de',
-                                ],
-                            ];
-                            ?>
-
-                        <ul role="list">
-
-                            <?php foreach ( $languages as $language_details ) : ?>
-
-                                <li><a href="#"><?php echo esc_html( sprintf( __( 'Zume Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
-
-                            <?php endforeach; ?>
-
-                        </ul>
-
-                        <!-- TODO: maybe add footer links here? or some 404-esque get me out of here links? -->
+                        <stack>
+                            <h1 class="text-center"><?php echo esc_html__( 'Zume Course Presenter', 'zume' ) ?></h1>
+                            <h2 class="h3 brand text-center"><?php echo esc_html__( 'Scripts are off', 'zume' ) ?></h2>
+                            <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
+                            <?php /* TODO: Generate/create list of language names+codes that have translated course slides
+                                    @note This could be set up to default to english if the the language called is not available.  */ ?>
+                            <?php $languages = []; ?>
+                            <?php if ( !empty( $languages ) ) : ?>
+                                <p><?php echo esc_html__( 'If you are unable to turn on scripts, you may download the course slides below', 'zume' ) ?></p>
+                                <ul role="list">
+                                    <?php foreach ( $languages as $language_details ) : ?>
+                                        <li><a href="#"><?php echo esc_html( sprintf( __( 'Zume Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            <?php else : ?>
+                                <p><?php echo esc_html__( 'Unfortunately we do not have the course available for download yet.' ) ?></p>
+                                <p><?php echo esc_html__( 'We will be producing the slides soon.' ) ?></p>
+                                <p><?php echo esc_html__( 'Please come back later and check on our resources page for the slides download.' ) ?></p>
+                                <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
+                            <?php endif; ?>
+                            <!-- TODO: maybe add footer links here? or some 404-esque get me out of here links? -->
+                        </stack>
                     </div>
                 </div>
 
