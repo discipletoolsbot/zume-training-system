@@ -169,6 +169,9 @@ function zume_dashboard_url( $current_language = null ) {
 function zume_checkin_url() {
     return zume_url( 'zume_app/checkin' );
 }
+function zume_checkin_dashboard_url() {
+    return zume_url( 'checkin-dashboard' );
+}
 function zume_invite_friends_url() {
     return zume_url( 'zume_app/friend_invite' );
 }

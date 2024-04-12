@@ -245,10 +245,17 @@ export class Wizard extends LitElement {
 
         const url = new URL( this.finishUrl )
 
-        if ( !quit ) {
+        if ( quit === false ) {
             if ( this.type === ZumeWizards.checkin ) {
-                /* TODO: after checkin send them to the HOST dashboard */
-                url.searchParams.set( 'completed', this.type )
+                const currentUrl = new URL( location.href )
+                const code = currentUrl.searchParams.get('code')
+
+                if ( code !== null ) {
+                    const checkinDashboardUrl = new URL( jsObject.checkin_dashboard_url )
+                    checkinDashboardUrl.searchParams.set( 'code', code)
+                    window.location.href = checkinDashboardUrl.href
+                    return
+                }
             } else {
                 url.searchParams.set( 'completed', this.type )
             }

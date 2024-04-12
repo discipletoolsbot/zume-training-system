@@ -96,6 +96,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'map_key' => DT_Mapbox_API::get_key(),
                 'profile' => $zume_user_profile,
                 'mapbox_selected_id' => 'current',
+                'checkin_dashboard_url' => zume_checkin_dashboard_url(),
             ]) ?>][0]
         </script>
         <?php
