@@ -35,17 +35,21 @@ export class CourseSlide extends LitElement {
     }
     fitContentToSlide(selector) {
         const contentArea = this.renderRoot.querySelector(selector)
+        const slide = this.renderRoot.querySelector('.slides-card')
 
-        if (!contentArea) {
+        if (!contentArea || !slide) {
             return
         }
 
         const contentAreaHeight = contentArea.getBoundingClientRect().height
 
-        const progressBar = this.renderRoot.querySelector('.stage')
-        const progressBarHeight = progressBar ? progressBar.getBoundingClientRect().height : 0
+        const parentElementTop = contentArea.parentElement.getBoundingClientRect().top
+        const slideTop = slide.getBoundingClientRect().top
+        const slideHeight = slide.getBoundingClientRect().height
 
-        const percentageOfSlideHeight = contentAreaHeight / ( this.slideHeight - progressBarHeight ) * 100
+        const spaceAvailable = slideHeight - ( parentElementTop - slideTop )
+
+        const percentageOfSlideHeight = contentAreaHeight / spaceAvailable * 100
 
         if (percentageOfSlideHeight > this.maxPercentage) {
             /* CurrentFontRatio is hardcoded to match the ratio currently in presenter.scss as --font-size-ratio */

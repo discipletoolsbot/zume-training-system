@@ -4888,7 +4888,9 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_14_6',
             'type' => 'activity',
-            'menu' => [],
+            'menu' => [
+                __( '3/3 Group Meeting', 'zume' ),
+            ],
             'length' => [45],
             'center' => [
                 __( 'ACTIVITY', 'zume' ),
@@ -4958,7 +4960,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_15_1',
             'type' => 'title',
             'menu' => [
-                __( 'SESSION 14', 'zume' ),
+                __( 'SESSION 15', 'zume' ),
             ],
             'length' => [],
             'center' => [
@@ -5082,7 +5084,9 @@ function zume_content( $lang_code = 'en') {
         [
             'key' => 's2_16_1',
             'type' => 'title',
-            'menu' => __( 'SESSION 16', 'zume' ),
+            'menu' => [
+                __( 'SESSION 16', 'zume' )
+            ],
             'length' => [],
             'center' => [
                 'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png',  // location image
