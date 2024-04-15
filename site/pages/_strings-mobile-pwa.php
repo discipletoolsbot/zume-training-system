@@ -35,7 +35,7 @@ class Zume_PWA_Strings {
             __( 'Finish', 'zume' ),
             __( 'Share', 'zume' ),
             __( 'Install', 'zume' ),
-            __( 'This app can be installed to your device. Click to install this app', 'zume' ),
+            __( 'This app can be installed to your device. Click to install this app.', 'zume' ),
             __( 'This app can be installed to your device. Please use the Chrome browser to do so.', 'zume' ),
             __( 'Learn more', 'zume' ),
             __( "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app.", 'zume' ),
