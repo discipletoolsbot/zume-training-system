@@ -78,7 +78,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $this->zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $this->zume_languages = $zume_languages_full_list;
         $this->language_code = $lang_code ?? $this->language_code;
         $this->language = $this->zume_languages[ $this->language_code ];
 
@@ -221,7 +222,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
 
-        $zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $zume_languages =$zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
 
         $tab = $_GET['tab'] ?? 'translators';
@@ -300,10 +302,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
      * @return void
      */
     public function list_approved_languages( ) {
+        global $zume_languages_full_list;
         if ( empty( $this->user ) ) {
             $this->user = wp_get_current_user();
         }
-        $zume_languages = zume_languages();
+        $zume_languages = $zume_languages_full_list;
         echo 'You are nor approved to translate '.$zume_languages[$this->language_code]['name'].'. <br><br>Approved languages are:<br>';
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
         $list = [];
@@ -327,7 +330,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ]
             ]
         ] );
-        $zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         echo '<h3>Translators for ' . $language['name'] . '</h3>';
         if ( ! empty( $translators ) ) {
@@ -550,7 +554,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
-        $zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         $en_list = list_zume_pieces( 'en' );
         $language_list = list_zume_pieces( $language['code'] );
@@ -745,7 +750,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
-        $languages = zume_languages();
+        global $zume_languages_full_list;
+        $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
         $messages_english = $this->query_emails( 'en' );
         $messages_other_language = $this->query_emails( $this->language_code );
@@ -917,7 +923,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
-        $zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         $en_list = list_zume_scripts( 'en' );
         $language_list = list_zume_scripts( $language['code'] );
@@ -1031,7 +1038,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
-        $languages = zume_languages();
+        global $zume_languages_full_list;
+        $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
         $messages_english = $this->query_activities( 'en' );
         $messages_other_language = $this->query_activities( $this->language_code );
@@ -1218,8 +1226,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function slides() {
-
-        $zume_languages = zume_languages();
+        global $zume_languages_full_list;
+        $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         //load the new text domain
         $new_language = $language['locale'];
@@ -1538,7 +1546,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function get_translation_strings() {
-        $languages = zume_languages();
+        global $zume_languages_full_list;
+        $languages = $zume_languages_full_list;
         $locale = $languages[$this->language_code]['locale'];
         $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
         if ( ! file_exists( $locale_file ) ) {

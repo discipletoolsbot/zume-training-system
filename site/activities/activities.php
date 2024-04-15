@@ -196,8 +196,43 @@ class Zume_Activites_List100 extends Zume_Activites
     public function __construct() {
         parent::__construct();
     }
+
+    public function content_header( $post_id ){
+        echo '';
+    }
+    public function content_body( $post_id ){
+        echo 'List of 100 - Interactive';
+    }
 }
 Zume_Activites_List100::instance();
+
+class Zume_Activites_List100_Printable extends Zume_Activites
+{
+    use Translateable;
+    public $page_title = 'Zúme Activity - List of 100';
+    public $root = 'zume_activities';
+    public $type = 'listof100_printable';
+
+    private static $_instance = null;
+    public static function instance() {
+        if ( is_null( self::$_instance ) ) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function content_header( $post_id ){
+        echo '';
+    }
+    public function content_body( $post_id ){
+       echo 'List of 100 Printable Content';
+    }
+}
+Zume_Activites_List100_Printable::instance();
 
 
 class Zume_Activites_Sharegospel extends Zume_Activites
@@ -365,8 +400,42 @@ class Zume_Activites_Coaching extends Zume_Activites
     public function __construct() {
         parent::__construct();
     }
+    public function content_header( $post_id ){
+        echo '';
+    }
+    public function content_body( $post_id ){
+        echo 'Coaching Checklist Content';
+    }
 }
 Zume_Activites_Coaching::instance();
+
+class Zume_Activites_Coaching_Printable extends Zume_Activites
+{
+    use Translateable;
+    public $page_title = 'Zúme Activity';
+    public $root = 'zume_activities';
+    public $type = 'coachingchecklist_printable';
+
+    private static $_instance = null;
+    public static function instance() {
+        if ( is_null( self::$_instance ) ) {
+            self::$_instance = new self();
+        }
+        return self::$_instance;
+    }
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function content_header( $post_id ){
+        echo '';
+    }
+    public function content_body( $post_id ){
+        echo 'List of 100 Printable Content';
+    }
+}
+Zume_Activites_Coaching_Printable::instance();
 
 class Zume_Activites_Peermentoring extends Zume_Activites
 {
