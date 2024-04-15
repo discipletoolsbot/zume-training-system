@@ -146,28 +146,34 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
         ?>
 
             <?php require __DIR__ . '/../parts/nav.php'; ?>
-            <div class="stack-2 container-md py-2 text-center">
+            <div class="text-center">
 
                 <?php if ( $error ) : ?>
 
-                    <h1 class="h2 brand-light"><?php echo esc_html__( 'Woops', 'zume' ) ?></h1>
+                    <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Woops', 'zume' ) ?></h1>
+                    <hr class="mt0">
                     <p><?php echo esc_html__( 'Something went wrong with your checkin process.', 'zume' ) ?></p>
+                    <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
 
                 <?php else : ?>
 
-                    <h1 class="h2 brand-light"><?php echo esc_html__( 'Congratulations!', 'zume' ) ?></h1>
-                    <div class="stack">
-                        <h2 class="h3 brand-light"><?php echo esc_html__( 'Session checked into is:', 'zume' ) ?></h2>
-                        <p class="f-medium f-4"><?php echo esc_html( sprintf( __( '%1$d of %2$d', 'zume' ), $session_number, $number_of_sessions ) ) ?></p>
-                    </div>
-                    <div class="stack">
-                        <h2 class="h3 brand-light"><?php echo esc_html__( 'Course Progress:', 'zume' ) ?></h2>
-                        <p class="f-medium f-4"><?php echo esc_html( sprintf( __( '%d%%', 'zume' ), $percentage_progress ) ) ?></p>
+                    <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Congratulations!', 'zume' ) ?></h1>
+                    <hr class="mt0">
+                    <div class="container-md stack-2 | py-0">
+                        <div><span class="icon zume-check-mark success f-7 border-circle p--2" data-border-color="success" data-border-width="7"></span></div>
+                        <div class="stack">
+                            <h2 class="h3 brand-light"><?php echo esc_html__( 'Checked into session:', 'zume' ) ?></h2>
+                            <p class="bold f-5"><?php echo esc_html( sprintf( __( '%1$d of %2$d', 'zume' ), $session_number, $number_of_sessions ) ) ?></p>
+                        </div>
+                        <div class="stack">
+                            <h2 class="h3 brand-light"><?php echo esc_html__( 'Course Progress:', 'zume' ) ?></h2>
+                            <p class="bold f-5"><?php echo esc_html( sprintf( __( '%d%%', 'zume' ), $percentage_progress ) ) ?></p>
+                        </div>
+                        <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
                     </div>
 
                 <?php endif; ?>
 
-                <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
             </div>
 
         <?php

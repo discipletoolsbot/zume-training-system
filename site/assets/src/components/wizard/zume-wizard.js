@@ -171,7 +171,7 @@ export class Wizard extends LitElement {
         return html`
             <div class="text-center d-flex justify-content-between">
                 <div class="cluster ms-auto">
-                    <button @click=${this._onFinish} ?disabled=${this.loading} class="btn ${this.loading ? 'disabled' : ''}">${this.t.finish}</button>
+                    <button @click=${this._handleFinish} ?disabled=${this.loading} class="btn ${this.loading ? 'disabled' : ''}">${this.t.finish}</button>
                 </div>
             </div>
         `
@@ -223,6 +223,9 @@ export class Wizard extends LitElement {
     _onQuit() {
         this._onFinish(true)
     }
+    _handleFinish() {
+        this._onFinish()
+    }
     _onFinish(quit = false) {
         this.stateManager.clear()
         this.resetWizard()
@@ -253,6 +256,8 @@ export class Wizard extends LitElement {
                 if ( code !== null ) {
                     const checkinDashboardUrl = new URL( jsObject.checkin_dashboard_url )
                     checkinDashboardUrl.searchParams.set( 'code', code)
+
+                    console.log('GOTO Checkin Dashboard')
                     window.location.href = checkinDashboardUrl.href
                     return
                 }
@@ -261,6 +266,7 @@ export class Wizard extends LitElement {
             }
         }
 
+        console.log('GOTO Dashboard', quit)
         window.location.href = url
     }
 

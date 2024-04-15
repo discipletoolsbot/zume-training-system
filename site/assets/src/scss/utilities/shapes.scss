@@ -78,6 +78,20 @@
     border-color: color(gray-900);
 }
 
+.border-circle {
+    border-width: 1px;
+    border-style: solid;
+    border-color: color(gray-900);
+    border-radius: 100%;
+
+    &[data-border-color="success"] {
+        border-color: color('success');
+    }
+    &[data-border-width="7"] {
+        border-width: 7px;
+    }
+}
+
 .aspect-1 {
     aspect-ratio: 1;
 }
