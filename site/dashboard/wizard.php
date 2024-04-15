@@ -116,6 +116,11 @@ class Zume_Training_Wizard extends Zume_Magic_Page
             user="<?php echo esc_attr( json_encode( $zume_user_profile ) ) ?>"
         ></zume-wizard>
 
+        <noscript>
+
+            <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
+
+        </noscript>
         <?php
     }
 
