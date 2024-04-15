@@ -43,10 +43,18 @@ class Zume_Training_Pieces_Post_Type
         add_action( 'add_meta_boxes', [ $this, 'add_metabox' ] );
         add_action( 'save_post', [ $this, 'zume_pieces_save' ] );
 
-        if ( is_admin() && isset( $_GET['post_type'] ) && $this->post_type === $_GET['post_type'] ){
-            add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
-            add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
+        if ( is_admin() ) {
+            global $pagenow;
+            if ( $pagenow == 'edit.php' && isset( $_GET['post_type'] ) ) {
+                $pt = sanitize_text_field( wp_unslash( $_GET['post_type'] ) );
+                if ( $pt === $this->post_type ) {
+                    dt_write_log( 'Adding custom columns for ' . $this->post_type );
+                    add_filter( 'manage_edit-' . $this->post_type . '_columns', array( $this, 'register_custom_column_headings' ), 10, 1 );
+                    add_action( 'manage_' . $this->post_type . '_posts_custom_column', array( $this, 'register_custom_columns' ), 10, 2 );
+                }
+            }
         }
+
     }
     public function remove_slug( $permalink, $post, $leavename ) {
         global $wp_post_types;
@@ -95,7 +103,8 @@ class Zume_Training_Pieces_Post_Type
         <select name="zume_lang">
             <option></option>
             <?php
-            $zume_languages = zume_languages();
+            global $zume_languages_full_list;
+            $zume_languages = $zume_languages_full_list;
             foreach( $zume_languages as $languages ) {
                 $selected = false;
                 if ( isset( $values['zume_lang'][0] ) && $languages['code'] == $values['zume_lang'][0] ) {
@@ -245,19 +254,46 @@ class Zume_Training_Pieces_Post_Type
         );
     }
 
-    // Add the custom columns to the book post type:
-    public function set_custom_edit_columns( $columns ) {
-        unset( $columns['author'] );
+    public function register_custom_column_headings( $defaults ) {
 
-        return $columns;
+        $new_columns = array(  'zume_piece' => 'Piece', 'lang' => 'Language' );
+
+        $last_item = array();
+
+        if ( count( $defaults ) > 2 ) {
+            $last_item = array_slice( $defaults, -1 );
+
+            array_pop( $defaults );
+        }
+        $defaults = array_merge( $defaults, $new_columns );
+
+        if ( is_array( $last_item ) && 0 < count( $last_item ) ) {
+            foreach ( $last_item as $k => $v ) {
+                $defaults[ $k ] = $v;
+                break;
+            }
+        }
+
+        return $defaults;
     }
 
-    // Add the data to the custom columns for the book post type:
-    public function custom_column( $column, $post_id ) {
-        switch ( $column ) {
+    public function register_custom_columns( $column_name, $post_id ) {
+        switch ( $column_name ) {
+            case 'zume_piece':
+                $piece = get_post_meta( $post_id, 'zume_piece', true );
+                echo $piece;
+                break;
+//            case 'logic':
+//                echo get_post_meta( $post_id, 'logic', true );
+//                break;
+//            case 'stage':
+//                echo get_post_meta( $post_id, 'stage', true );
+//                break;
+
             default:
                 break;
         }
     }
+
 } // End Class
 Zume_Training_Pieces_Post_Type::instance();

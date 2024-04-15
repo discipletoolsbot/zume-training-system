@@ -316,6 +316,9 @@ class Zume_Training_Messages_Post_Type
         $this->meta_box_content( 'messages' ); // prints
 
         // make sure fields exist
+        $this->set_postmeta_fields( $post_id );
+    }
+    public function set_postmeta_fields( $post_id ) {
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
         foreach($field_data as $k => $v){
@@ -515,6 +518,8 @@ class Zume_Training_Messages_Post_Type
         }
 
         $field_data = $this->get_custom_fields_settings();
+        $this->set_postmeta_fields( $post_id ); // quality check
+
         $fields = array_keys( $field_data );
 
         foreach ( $fields as $f ) {
@@ -571,8 +576,8 @@ class Zume_Training_Messages_Post_Type
      */
     public function get_custom_fields_settings() {
         $fields = array();
-
-        $languages = zume_languages();
+        global $zume_languages_full_list;
+        $languages = $zume_languages_full_list;
         foreach( $languages as $language ) {
             $fields['begin_'.$language['code']] = array(
                 'name'        => strtoupper( $language['name'] ),

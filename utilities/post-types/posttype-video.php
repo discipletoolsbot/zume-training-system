@@ -543,217 +543,217 @@ class Zume_Video_Post_Type
             'name'        => 'Teach them to Obey (2)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247382094',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['3'] = array(
             'name'        => 'Spiritual Breathing (3)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247063777',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['4'] = array(
             'name'        => 'S.O.A.P.S. (4)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248176918',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['5'] = array(
             'name'        => 'Accountability Groups (5)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248177083',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['6'] = array(
             'name'        => 'Producers vs Consumers (6)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247063338',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['7'] = array(
             'name'        => 'Prayer Cycle (7)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248177053',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['8'] = array(
             'name'        => 'List of 100 (8)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248177079',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['9'] = array(
             'name'        => 'Spiritual Economy (9)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247064680',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['10'] = array(
             'name'        => 'The Gospel (10)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247064875',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['11'] = array(
             'name'        => 'Baptism (11)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248150621',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['12'] = array(
             'name'        => '3 Minute Testimony (12)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248177254',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['13'] = array(
             'name'        => 'Greatest Blessing (13)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247064323',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['14'] = array(
             'name'        => 'Duckling Discipleship (14)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247378271',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['15'] = array(
             'name'        => 'Eyes to See (15)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247065338',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['16'] = array(
             'name'        => 'Lord\'s Supper (16)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248150969',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['17'] = array(
             'name'        => 'Prayer Walking (17)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248150722',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['18'] = array(
             'name'        => 'Person of Peace (18)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248149796',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['19'] = array(
             'name'        => 'Faithfulness (19)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247065912',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['20'] = array(
             'name'        => '3|3 Groups (20)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248184750',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['21'] = array(
             'name'        => '3|3 Group Live (21)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '249724003',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['22'] = array(
             'name'        => 'Training Cycle (22)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247066070',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['23'] = array(
             'name'        => 'Leadership Cells (23)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247376979',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['24'] = array(
             'name'        => 'Non-Sequential (24)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247377353',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['25'] = array(
             'name'        => 'Pace (25)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247076726',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['26'] = array(
             'name'        => 'Part of Two Churches (26)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247077391',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['27'] = array(
             'name'        => 'Completion of Training (27)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247078031',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['28'] = array(
             'name'        => 'Coaching Checklist (28)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248150334',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['29'] = array(
             'name'        => 'Leadership in Networks (29)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247077671',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['30'] = array(
             'name'        => 'Peer Mentoring (30)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248150042',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['31'] = array(
             'name'        => 'Overview (31)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248149800',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['32'] = array(
             'name'        => 'How Zume Works (32)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '248149797',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['68'] = array(

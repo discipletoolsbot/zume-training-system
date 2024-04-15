@@ -510,8 +510,8 @@ class Zume_Training_Activity_Post_Type
             'type'        => 'hr_end',
             'section'     => 'activities',
         );
-
-        $languages = zume_languages();
+        global $zume_languages_full_list;
+        $languages = $zume_languages_full_list;
         foreach( $languages as $language ) {
             $fields['begin_'.$language['code']] = array(
                 'name'        => strtoupper( $language['name'] ),
