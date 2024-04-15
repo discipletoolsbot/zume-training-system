@@ -25,17 +25,20 @@ export class DashBoard extends router(LitElement) {
 
     static get routes() {
         const redirectRoutes = {
-            1: 'dash-getting-started',
-            2: 'dash-training',
-            3: 'dash-practicing',
+            1: 'getting-started',
+            2: 'training',
+            3: 'practicing',
         }
         const userStage = jsObject.user_stage.value || 1
         const redirectRouteIndex = userStage < 4 ? userStage : 3;
 
+        const redirectRoute = dashRoutes().find(({ name }) => name === redirectRoutes[redirectRouteIndex])
+        const { makeComponent } = redirectRoute.data
+
         /* Setup the route of the /dashboard url to point to the appropriate landing stage of the user */
         const routes = dashRoutes().map((route) => {
             if ( route.name === 'root' ) {
-                route.data.component = redirectRoutes[redirectRouteIndex]
+                route.data = { makeComponent }
             }
 
             return route
