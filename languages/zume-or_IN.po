@@ -1185,9 +1185,8 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
-"ପ୍ରାର୍ଥନାର ସହ ଆରମ୍ଭ କରନ୍ତୁ, ପବିତ୍ର ଆତ୍ମାଙ୍କ ବିନା ଆଧ୍ୟାତ୍ମିକ ଅନ୍ତଦୃଷ୍ଟି ଓ "
-"ପରିବର୍ତ୍ତନ ସମ୍ଭବ ହୁଏ ନାହିଁ | ଏହି ଅଧିବେଶନରେ ଆପଣଙ୍କ ମାର୍ଗଦର୍ଶନ କରିବାକୁ ଏକ ଦଳଗୋ"
-"ତ ଭାବେ ତାଙ୍କୁ ଆମନ୍ତ୍ରଣ କରିବାକୁ ସମୟ ଦିଅନ୍ତୁ ।"
+"ପ୍ରାର୍ଥନାର ସହ ଆରମ୍ଭ କରନ୍ତୁ, ପବିତ୍ର ଆତ୍ମାଙ୍କ ବିନା ଆଧ୍ୟାତ୍ମିକ ଅନ୍ତଦୃଷ୍ଟି ଓ ପରିବର୍ତ୍ତନ ସମ୍ଭବ ହୁଏ ନାହିଁ |"
+" ଏହି ଅଧିବେଶନରେ ଆପଣଙ୍କ ମାର୍ଗଦର୍ଶନ କରିବାକୁ ଏକ ଦଳଗୋତ ଭାବେ ତାଙ୍କୁ ଆମନ୍ତ୍ରଣ କରିବାକୁ ସମୟ ଦିଅନ୍ତୁ ।"
 
 #: site/course/10session.php:412 site/course/10session.php:428
 #: site/course/10session.php:438 site/course/10session.php:459
@@ -1227,8 +1226,8 @@ msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
-"ଯଦି ଯୀଶୁ ଆପଣା ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀ ତାଙ୍କ ମହାନ୍ ନିର୍ଦ୍ଦେଶ ପାଳନ କରନ୍ତୁ ବୋଲି ଇଛା "
-"କରନ୍ତି, ତେବେ କାହିଁକି ଅତି ଅଳ୍ପ ଲୋକ ଶିଷ୍ୟ ନିର୍ମାଣ କରନ୍ତି?"
+"ଯଦି ଯୀଶୁ ଆପଣା ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀ ତାଙ୍କ ମହାନ୍ ନିର୍ଦ୍ଦେଶ ପାଳନ କରନ୍ତୁ ବୋଲି ଇଛା କରନ୍ତି, ତେବେ "
+"କାହିଁକି ଅତି ଅଳ୍ପ ଲୋକ ଶିଷ୍ୟ ନିର୍ମାଣ କରନ୍ତି?"
 
 #: site/course/10session.php:468 site/course/20session.php:568
 msgid ""
@@ -1236,9 +1235,9 @@ msgid ""
 "Jesus to do what He told us in His Great Commission – to obey all of His "
 "commands?"
 msgstr ""
-"ଏକ ଶିଷ୍ୟ କ'ଣ ଅଟେ? ଏବଂ ତୁମେ କିଭଳି ଗୋଟିଏ ତିଆରି କରିବ? ଯୀଶୁ ତାଙ୍କର ମହାନ ଆଜ୍ଞାରେ "
-"ଆମକୁ ଯାହା କହିଛନ୍ତି ତାହା ତାଙ୍କର ଏକ ଅନୁଗାମୀଙ୍କୁ କିପରି ଭାବରେ ଶିକ୍ଷା ଦେବା - ତାଙ୍"
-"କର ସମସ୍ତ ଆଜ୍ଞା ପାଳନ କରିବାକୁ?"
+"ଏକ ଶିଷ୍ୟ କ'ଣ ଅଟେ? ଏବଂ ତୁମେ କିଭଳି ଗୋଟିଏ ତିଆରି କରିବ? ଯୀଶୁ ତାଙ୍କର ମହାନ ଆଜ୍ଞାରେ ଆମକୁ ଯାହା "
+"କହିଛନ୍ତି ତାହା ତାଙ୍କର ଏକ ଅନୁଗାମୀଙ୍କୁ କିପରି ଭାବରେ ଶିକ୍ଷା ଦେବା - ତାଙ୍କର ସମସ୍ତ ଆଜ୍ଞା ପାଳନ "
+"କରିବାକୁ?"
 
 #: site/course/10session.php:492 site/course/20session.php:592
 #: site/course/course-content.php:143
@@ -1250,8 +1249,8 @@ msgid ""
 "What's the difference between that picture and what's described in the video "
 "as a \"Simple Church\"?"
 msgstr ""
-"ତୁମ ମସ୍ତିଷ୍କରେ ଆସିଥିବା ଛବି ଏବଂ \"ସାଧାରଣ ଚର୍ଚ୍ଚ\" ବୋଲି ଯାହା ଭିଡିଓରେ ବର୍ଣ୍ଣନା "
-"କରାଯାଇଛି ସେଥିରେ ଫରକ୍ କ'ଣ?"
+"ତୁମ ମସ୍ତିଷ୍କରେ ଆସିଥିବା ଛବି ଏବଂ \"ସାଧାରଣ ଚର୍ଚ୍ଚ\" ବୋଲି ଯାହା ଭିଡିଓରେ ବର୍ଣ୍ଣନା କରାଯାଇଛି ସେଥିରେ "
+"ଫରକ୍ କ'ଣ?"
 
 #: site/course/10session.php:495 site/course/20session.php:595
 #: site/course/course-content.php:145
@@ -1337,9 +1336,8 @@ msgid ""
 "accountable for what we do and say and think. Accountability Groups are a "
 "great way to get ready!"
 msgstr ""
-"ବାଇବଲ ଆମକୁ  କହେ ଯେ ଯୀଶୁଙ୍କର ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀମାନଙ୍କୁ ଆମେ କ'ଣ କରୁ ଓ କହୁଁ ଓ "
-"ଆଲୋଚନା କରୁ ସେଥିପାଇଁ ଦିନେ ଜବାବ ଦେବାକୁ ପଡ଼ିବ । ଉତ୍ତରଦାୟୀ ଦଳ ପ୍ରସ୍ତୁତ ହେବାକୁ ଏକ "
-"ଉତ୍କୃଷ୍ଠ ପଥ ଅଟେ !"
+"ବାଇବଲ ଆମକୁ  କହେ ଯେ ଯୀଶୁଙ୍କର ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀମାନଙ୍କୁ ଆମେ କ'ଣ କରୁ ଓ କହୁଁ ଓ ଆଲୋଚନା କରୁ "
+"ସେଥିପାଇଁ ଦିନେ ଜବାବ ଦେବାକୁ ପଡ଼ିବ । ଉତ୍ତରଦାୟୀ ଦଳ ପ୍ରସ୍ତୁତ ହେବାକୁ ଏକ ଉତ୍କୃଷ୍ଠ ପଥ ଅଟେ !"
 
 #: site/course/10session.php:676 site/course/20session.php:776
 msgid "Congratulations! You've completed Session 1."
@@ -1903,10 +1901,9 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
-"ଯଦି ଆମେ ଏପ୍ରକାର ଶିଷ୍ୟ ନିର୍ମାଣ କରିବାକୁ ଚାହୁଁ ଯିଏ  ସଂଖ୍ୟାବୃଦ୍ଧି କରନ୍ତି - ଯିଏ କେ"
-"ବଳ ଉପୋଭୋକ୍ତା ନୁହନ୍ତି କିନ୍ତୁ ଆଧ୍ୟାତ୍ମିକ ଉତ୍ପାଦକ ଅଟନ୍ତି - ତେବେ ଆମେ ଚାରିଗୋଟି "
-"ମୁଖ୍ୟ ମାର୍ଗ ଶିଖିବା ଏବଂ ବାଣ୍ଟିବାକୁ ଅଛି ଯାହାଦ୍ୱାରା ଈଶ୍ୱର ତାଙ୍କ ଦୈନନ୍ଦିନ ଅନୁଗାମୀ"
-" ମାନଙ୍କୁ ଯୀଶୁଙ୍କ ଭଳି ତିଆରି କରନ୍ତି:"
+"ଯଦି ଆମେ ଏପ୍ରକାର ଶିଷ୍ୟ ନିର୍ମାଣ କରିବାକୁ ଚାହୁଁ ଯିଏ  ସଂଖ୍ୟାବୃଦ୍ଧି କରନ୍ତି - ଯିଏ କେବଳ ଉପୋଭୋକ୍ତା ନୁହନ୍ତି "
+"କିନ୍ତୁ ଆଧ୍ୟାତ୍ମିକ ଉତ୍ପାଦକ ଅଟନ୍ତି - ତେବେ ଆମେ ଚାରିଗୋଟି ମୁଖ୍ୟ ମାର୍ଗ ଶିଖିବା ଏବଂ ବାଣ୍ଟିବାକୁ ଅଛି "
+"ଯାହାଦ୍ୱାରା ଈଶ୍ୱର ତାଙ୍କ ଦୈନନ୍ଦିନ ଅନୁଗାମୀ ମାନଙ୍କୁ ଯୀଶୁଙ୍କ ଭଳି ତିଆରି କରନ୍ତି:"
 
 #: site/course/course-content.php:408
 msgid "Body Life"
@@ -2109,9 +2106,9 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"ଯୀଶୁ କହିଲେ,  \"କିନ୍ତୁ ପବିତ୍ରଆତ୍ମା ତୁମ୍ଭମାନଙ୍କ ଉପରେ ଅବତୀର୍ଣ୍ଣ ହୁଅନ୍ତେ, "
-"ତୁମ୍ଭେମାନେ ଶକ୍ତିପ୍ରାପ୍ତ ହେବ, ଆଉ ଯିରୂଶାଲମ, ସମସ୍ତ ଯିହୂଦା ପ୍ରଦେଶ ଓ ଶମିରୋଣ, ପୁଣି "
-"ପୃଥିବୀର ପ୍ରାନ୍ତ ପର୍ଯ୍ୟନ୍ତ ସୁଦ୍ଧା ମୋହର ସାକ୍ଷ ହେବ ।\""
+"ଯୀଶୁ କହିଲେ,  \"କିନ୍ତୁ ପବିତ୍ରଆତ୍ମା ତୁମ୍ଭମାନଙ୍କ ଉପରେ ଅବତୀର୍ଣ୍ଣ ହୁଅନ୍ତେ, ତୁମ୍ଭେମାନେ ଶକ୍ତିପ୍ରାପ୍ତ "
+"ହେବ, ଆଉ ଯିରୂଶାଲମ, ସମସ୍ତ ଯିହୂଦା ପ୍ରଦେଶ ଓ ଶମିରୋଣ, ପୁଣି ପୃଥିବୀର ପ୍ରାନ୍ତ ପର୍ଯ୍ୟନ୍ତ ସୁଦ୍ଧା ମୋହର "
+"ସାକ୍ଷ ହେବ ।\""
 
 #: site/course/course-content.php:703
 msgid ""
@@ -2193,8 +2190,8 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"ଯୀଶୁ କହିଲେ, \" ଯା‍ଅ ଓ ସମସ୍ତ ଜାତିର ଲୋକଙ୍କୁ ମୋର ଶିଷ୍ୟ କର, ପିତା, ପୁତ୍ର ଓ "
-"ପବିତ୍ରଆତ୍ମାଙ୍କ ନାମରେ ବାପ୍ତିସ୍ମ ଦେଇ...\""
+"ଯୀଶୁ କହିଲେ, \" ଯା‍ଅ ଓ ସମସ୍ତ ଜାତିର ଲୋକଙ୍କୁ ମୋର ଶିଷ୍ୟ କର, ପିତା, ପୁତ୍ର ଓ ପବିତ୍ରଆତ୍ମାଙ୍କ ନାମରେ "
+"ବାପ୍ତିସ୍ମ ଦେଇ...\""
 
 #: site/course/course-content.php:809
 msgid "Have you ever baptized someone?"
@@ -2209,9 +2206,8 @@ msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
-"ଯଦି ଏହି ମହାନ ଆଜ୍ଞା ଯୀଶୁଙ୍କ ଅନୁଗମନ କରୁଥିବା ପ୍ରୋତ୍ୟେକ ଅନୁଗମନକାରୀ ମାନଙ୍କ ପାଇଁ "
-"ଅଟେ, ଏହାର ଅର୍ଥ କ'ଣ ଯୀଶୁଙ୍କ ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀଙ୍କୁ ବାପ୍ତିସ୍ମ ଦେବାକୁ ଅନୁମତି ଅଛି "
-"କି? କାହିଁକି ଓ କାହିଁକି ନୁହେଁ ?"
+"ଯଦି ଏହି ମହାନ ଆଜ୍ଞା ଯୀଶୁଙ୍କ ଅନୁଗମନ କରୁଥିବା ପ୍ରୋତ୍ୟେକ ଅନୁଗମନକାରୀ ମାନଙ୍କ ପାଇଁ ଅଟେ, ଏହାର ଅର୍ଥ "
+"କ'ଣ ଯୀଶୁଙ୍କ ପ୍ରୋତ୍ୟେକ ଅନୁଗାମୀଙ୍କୁ ବାପ୍ତିସ୍ମ ଦେବାକୁ ଅନୁମତି ଅଛି କି? କାହିଁକି ଓ କାହିଁକି ନୁହେଁ ?"
 
 #: site/course/course-content.php:820
 msgid "IMPORTANT REMINDER – Have you been baptized?"
@@ -2223,9 +2219,9 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"ଯଦି ନୁହଁ, ତେବେ ଆମେ ଆପଣଙ୍କୁ ଏହି ତାଲିମ୍‍ର ଗୋଟିଏବି ଅଧିବେଶନ ହେବା ପୂର୍ବରୁ ଯୋଜନା "
-"କରିବାକୁ ପ୍ରୋତ୍ସାହିତ କରୁଁ । ଆପଣ ଯୀଶୁଙ୍କୁ \"ହଁ\" କହି ଉତ୍ସବ କରୁଥିବା ଏହି ଦିନରେ "
-"ଆପଣଙ୍କ ଦଳକୁ ସହଭାଗୀ ହେବା ନିମନ୍ତେ ଆମନ୍ତ୍ରଣ କରନ୍ତୁ ।"
+"ଯଦି ନୁହଁ, ତେବେ ଆମେ ଆପଣଙ୍କୁ ଏହି ତାଲିମ୍‍ର ଗୋଟିଏବି ଅଧିବେଶନ ହେବା ପୂର୍ବରୁ ଯୋଜନା କରିବାକୁ ପ୍ରୋତ୍ସାହିତ "
+"କରୁଁ । ଆପଣ ଯୀଶୁଙ୍କୁ \"ହଁ\" କହି ଉତ୍ସବ କରୁଥିବା ଏହି ଦିନରେ ଆପଣଙ୍କ ଦଳକୁ ସହଭାଗୀ ହେବା ନିମନ୍ତେ "
+"ଆମନ୍ତ୍ରଣ କରନ୍ତୁ ।"
 
 #: site/course/course-content.php:836
 #, fuzzy
@@ -2321,8 +2317,8 @@ msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
 msgstr ""
-"ଏହା ସେହି ଶୈଳି ଅଟେ କି ଯାହା ଆପଣଙ୍କୁ ଶିଖାଯାଇଥିଲା ଯେତେବେଳେ ଆପଣ ଯୀଶୁଙ୍କ ଅନୁସରଣ "
-"କରିବାକୁ ଆରମ୍ଭ କରିଥିଲେ? ଯଦି ନୁହଁ, ତେବେ ଭିନ୍ନ କ'ଣ ଥିଲା ?"
+"ଏହା ସେହି ଶୈଳି ଅଟେ କି ଯାହା ଆପଣଙ୍କୁ ଶିଖାଯାଇଥିଲା ଯେତେବେଳେ ଆପଣ ଯୀଶୁଙ୍କ ଅନୁସରଣ କରିବାକୁ ଆରମ୍ଭ "
+"କରିଥିଲେ? ଯଦି ନୁହଁ, ତେବେ ଭିନ୍ନ କ'ଣ ଥିଲା ?"
 
 #: site/course/course-content.php:1015
 msgid ""
@@ -2401,9 +2397,9 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"ଯୀଶୁ କହିଲେ, \"ମୁଁ ସ୍ୱର୍ଗରୁ ଅବତୀର୍ଣ୍ଣ ସେହି ଜୀବନ୍ତ ଆହାର. କେହି ଯଦି ଏହି ଆହାର ଭୋ"
-"ଜନ କରେ, ସେ ଅନନ୍ତ କାଳ ପର୍ଯ୍ୟନ୍ତ ଜୀବିତ ରହିବ । ମୁଁ ଯେଉଁ ଆହାର ଦେବି ତାହା ମୋହର ମାଂ"
-"ସ, ମୁଁ ତାହା ଜଗତର ଜୀବନ ନିମନ୍ତେ ଦେବି ।"
+"ଯୀଶୁ କହିଲେ, \"ମୁଁ ସ୍ୱର୍ଗରୁ ଅବତୀର୍ଣ୍ଣ ସେହି ଜୀବନ୍ତ ଆହାର. କେହି ଯଦି ଏହି ଆହାର ଭୋଜନ କରେ, ସେ ଅନନ୍ତ "
+"କାଳ ପର୍ଯ୍ୟନ୍ତ ଜୀବିତ ରହିବ । ମୁଁ ଯେଉଁ ଆହାର ଦେବି ତାହା ମୋହର ମାଂସ, ମୁଁ ତାହା ଜଗତର ଜୀବନ ନିମନ୍ତେ "
+"ଦେବି ।"
 
 #: site/course/course-content.php:1127
 #, fuzzy
@@ -2616,9 +2612,7 @@ msgstr ""
 
 #: site/course/course-content.php:1507
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr ""
-"ଏକ ୩/୩ ଦଳ ଏକ ସରଳ ମଣ୍ଡଳୀ ବୋଲି ବିବେଚନା କରାଯାଇ ପାରେ କି? କାହିଁକି ଏବଂ କାହିଁକି ନୁହଁ"
-" ?"
+msgstr "ଏକ ୩/୩ ଦଳ ଏକ ସରଳ ମଣ୍ଡଳୀ ବୋଲି ବିବେଚନା କରାଯାଇ ପାରେ କି? କାହିଁକି ଏବଂ କାହିଁକି ନୁହଁ ?"
 
 #: site/course/course-content.php:1538 site/course/course-content.php:3893
 #, fuzzy
@@ -2757,10 +2751,9 @@ msgid ""
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
-"ପ୍ରାର୍ଥନା କରନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ଦଳକୁ ଏତେ ଶକ୍ତି, ମନଯୋଗ ଏବଂ ତାଲିମ୍‍‌ରେ ଏପର୍ଯ୍ୟନ୍ତ "
-"ଆସିବାକୁ ଦେଇଥିବା ବିଶ୍ୱସ୍ତ‍ତା ଶକାସୁଁ ଧନ୍ୟବାଦ ଦିଅନ୍ତୁ । ଈଶ୍ୱରଙ୍କୁ ମାଗନ୍ତୁ ଯେ "
-"ତାଙ୍କ ପବିତ୍ର ଆତ୍ମା ଦଳରେ ଥିବା ସମସ୍ତଙ୍କୁ ସ୍ମରଣ କରାଇଦେବେ ଯେ ତାଙ୍କ ବିନା ସେମାନେ "
-"କିଛି କରିପାରନ୍ତି ନାହିଁ ।"
+"ପ୍ରାର୍ଥନା କରନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ଦଳକୁ ଏତେ ଶକ୍ତି, ମନଯୋଗ ଏବଂ ତାଲିମ୍‍‌ରେ ଏପର୍ଯ୍ୟନ୍ତ ଆସିବାକୁ ଦେଇଥିବା "
+"ବିଶ୍ୱସ୍ତ‍ତା ଶକାସୁଁ ଧନ୍ୟବାଦ ଦିଅନ୍ତୁ । ଈଶ୍ୱରଙ୍କୁ ମାଗନ୍ତୁ ଯେ ତାଙ୍କ ପବିତ୍ର ଆତ୍ମା ଦଳରେ ଥିବା ସମସ୍ତଙ୍କୁ "
+"ସ୍ମରଣ କରାଇଦେବେ ଯେ ତାଙ୍କ ବିନା ସେମାନେ କିଛି କରିପାରନ୍ତି ନାହିଁ ।"
 
 #: site/course/course-content.php:1807
 msgid "And we will practice this tool from our toolkit:"
@@ -2770,16 +2763,16 @@ msgstr ""
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
-"\"ତୁମ୍ଭମାନଙ୍କ ମଧ୍ୟରେ ଯେକେହି ମହାନ୍‍ ହେବାକୁ ଇଛାକରେ, ସେ ତୁମ୍ଭମାନଙ୍କର ସେବକ ହେଉ\" "
-"- ଯୀଶୁ କହିଲେ ।"
+"\"ତୁମ୍ଭମାନଙ୍କ ମଧ୍ୟରେ ଯେକେହି ମହାନ୍‍ ହେବାକୁ ଇଛାକରେ, ସେ ତୁମ୍ଭମାନଙ୍କର ସେବକ ହେଉ\" - ଯୀଶୁ କହିଲେ "
+"।"
 
 #: site/course/course-content.php:1846
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
-"ଯୀଶୁଙ୍କ ଅନୁଗାମୀ ଏକ ଦଳ ଯାହାଙ୍କୁ ଆପଣ ଜାଣିଛନ୍ତି ଯିଏ ଆଗରୁ ଭେଟୁଛନ୍ତି ଅଥବା ଯୁମେ "
-"ତାଲିମ୍‍ ଶିକ୍ଷାକରିବାକୁ ଏକ ନେତୃତ୍ୱ କକ୍ଷ ଗଠନ କରି ଭେଟିବାକୁ ଇଛୁକ ଅଟନ୍ତି ?"
+"ଯୀଶୁଙ୍କ ଅନୁଗାମୀ ଏକ ଦଳ ଯାହାଙ୍କୁ ଆପଣ ଜାଣିଛନ୍ତି ଯିଏ ଆଗରୁ ଭେଟୁଛନ୍ତି ଅଥବା ଯୁମେ ତାଲିମ୍‍ ଶିକ୍ଷାକରିବାକୁ "
+"ଏକ ନେତୃତ୍ୱ କକ୍ଷ ଗଠନ କରି ଭେଟିବାକୁ ଇଛୁକ ଅଟନ୍ତି ?"
 
 #: site/course/course-content.php:1847
 msgid "What would it take to bring them together?"
@@ -3043,8 +3036,8 @@ msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
-"ସରଳ ମଣ୍ଡଳୀସମୁହ ନେଟ୍‌ୱାର୍କ ଗଭୀର, ବ୍ୟକ୍ତିଗତ ସମ୍ପର୍କରେ ସଂଯୁକ୍ତ ହୋଇରହିବାରେ କୌଣସି "
-"ସୁବିଧା ରହିଛି କି? କେତେଗୋଟି ଉଦାହରଣ ଯାହା ଆପଣଙ୍କ ମନକୁ ଆସିଥାଏ?"
+"ସରଳ ମଣ୍ଡଳୀସମୁହ ନେଟ୍‌ୱାର୍କ ଗଭୀର, ବ୍ୟକ୍ତିଗତ ସମ୍ପର୍କରେ ସଂଯୁକ୍ତ ହୋଇରହିବାରେ କୌଣସି ସୁବିଧା ରହିଛି କି? "
+"କେତେଗୋଟି ଉଦାହରଣ ଯାହା ଆପଣଙ୍କ ମନକୁ ଆସିଥାଏ?"
 
 #: site/course/course-content.php:2323
 #, fuzzy
