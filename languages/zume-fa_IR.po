@@ -4,8 +4,8 @@ msgstr ""
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
 "PO-Revision-Date: 2024-04-10 21:38+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
-"Language-Team: Persian <https://translate.disciple.tools/projects/"
-"zume-training/zume-training-system/fa_IR/>\n"
+"Language-Team: Persian <https://translate.disciple.tools/projects/zume-"
+"training/zume-training-system/fa_IR/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2239,8 +2239,8 @@ msgid ""
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
 "اگر نه، شما را تشویق می کنیم که برای آن برنامه ریزی کنید، قبل از حتی یک جلسه "
-"دیگر از این دوره آموزشی. گروه تان را دعوت کنید که در این روز مهم که شما \"بله"
-"\" گفتن خود را به عیسی جشن می گیرید، حضور داشته باشند."
+"دیگر از این دوره آموزشی. گروه تان را دعوت کنید که در این روز مهم که شما "
+"\"بله\" گفتن خود را به عیسی جشن می گیرید، حضور داشته باشند."
 
 #: site/course/course-content.php:836
 #, fuzzy
@@ -2425,8 +2425,8 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"عیسی فرمود: \"منم آن نان زنده که از آسمان نازل شد. هرکس از این نان بخورَد، "
-"تا ابد زنده خواهد ماند. نانی که من برای حیات جهان می بخشم، بدن من است.\""
+"عیسی فرمود: \"منم آن نان زنده که از آسمان نازل شد. هرکس از این نان بخورَد، تا "
+"ابد زنده خواهد ماند. نانی که من برای حیات جهان می بخشم، بدن من است.\""
 
 #: site/course/course-content.php:1127
 #, fuzzy
