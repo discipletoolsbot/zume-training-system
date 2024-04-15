@@ -24,7 +24,7 @@ function zume_get_url_pieces( $url = null ) {
     $path = implode( '/', $url_parts );
 
     return [
-        'lang_code' => $lang_code,
+        'lang_code' => (string) $lang_code ?? 'en',
         'path' => $path,
         'url_parts' => ( $url_parts ) ? $url_parts : [],
     ];

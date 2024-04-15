@@ -94,16 +94,21 @@ class Zume_Training_Share extends Zume_Magic_Page
 
         require __DIR__ . '/../parts/nav.php';
 
-        $current_language = zume_current_language();
+//        $current_language = zume_current_language();
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
         $args = [
             'post_type' => 'zume_pieces',
-            'lang' => $current_language,
-            'posts_per_page' => -1,
-            'order' => 'ASC',
+            'meta_key' => 'zume_lang',
+            'meta_value' => $lang_code,
+            'meta_compare' => '='
         ];
+        $the_query = new WP_Query( $args );
+        $posts = $the_query->posts;
 
-        $posts = get_posts( $args );
         $pieces_info = zume_training_items();
 
         $share_items = [];

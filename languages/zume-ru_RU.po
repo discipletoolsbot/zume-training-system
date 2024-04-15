@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
-"PO-Revision-Date: 2024-04-10 21:38+0000\n"
+"PO-Revision-Date: 2024-04-15 11:36-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Russian <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/ru_RU/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4.3\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:134
@@ -4193,10 +4193,10 @@ msgid ""
 "teaching them to obey everything I have commanded you. And surely I am with "
 "you always, to the very end of the age.\""
 msgstr ""
-"Тогда Иисус пришел к ним и сказал: \"И приблизившись Иисус сказал им: дана "
-"Мне всякая власть на небе и на земле. Итак идите, научите все народы, крестя "
-"их во имя Отца и Сына и Святаго Духа, уча их соблюдать все, что Я повелел "
-"вам; и се, Я с вами во все дни до скончания века. Аминь\".\n"
+"Тогда Иисус подошел к ним и сказал: \"Дана Мне всякая власть на небе и на "
+"земле. Итак идите, научите все народы, крестя их во имя Отца и Сына и "
+"Святого Духа, и научите их соблюдать все, что Я повелел вам. И, конечно, Я с "
+"вами во все дни до скончания века\""
 
 #: site/follow-jesus/follow-jesus.php:260
 msgid "Matthew 28:18-20"
@@ -4384,7 +4384,7 @@ msgstr "Войти"
 
 #: site/home/home.php:133
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "Становимся больше похожими на Иисуса... Вместе"
 
 #: site/home/home.php:136
 msgid "Overview"

@@ -2432,7 +2432,7 @@ if ( ! function_exists( 'zume_alt_video' ) ) {
 if ( ! function_exists( 'zume_current_language' ) ) {
     function zume_current_language() {
         $url = zume_get_url_pieces();
-        return $url['lang_code'];
+        return $url['lang_code'] ?? '';
     }
 }
 if ( ! function_exists( 'zume_format_int' ) ) {

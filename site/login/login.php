@@ -34,7 +34,7 @@ class Zume_Training_Login extends Zume_Magic_Page {
 
         if ( $this->slug_matches( $this->type ) && ! dt_is_rest() ) {
 
-            $this->set_locale();
+//            $this->set_locale();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

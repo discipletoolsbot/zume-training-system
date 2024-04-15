@@ -58,13 +58,6 @@ Zume_Pieces_Endpoints::instance();
 
 function pieces_content( $postid, $lang, $strings ) {
 
-    if ( 'en' !== $lang && ! is_wp_error( $postid ) ){
-        $postid = zume_get_translation( $postid, $lang );
-    }
-    if ( is_wp_error( $postid ) ) {
-        return '';
-    }
-
     $meta = get_post_meta( (int) $postid );
 
     $tool_number = $meta['zume_piece'][0] ?? 0;

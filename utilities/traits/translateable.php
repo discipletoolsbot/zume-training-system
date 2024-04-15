@@ -2,7 +2,7 @@
 
 trait Translateable {
 
-    private $lang_code;
+    private $lang_code = '';
     private $url_parts;
 
     public function initialize_language() {
@@ -31,7 +31,7 @@ trait Translateable {
      *
      * This sets the locale for translation throughout the site
      */
-    public function set_locale( $lang_code = null ) {
+    public function set_locale( $lang_code = '' ) {
         if ( !$lang_code ) {
             $lang_code = $this->lang_code;
         } else {

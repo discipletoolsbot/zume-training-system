@@ -25,35 +25,26 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     public function __construct() {
         parent::__construct();
 
-        if ( $this->postid ) {
-            return;
-        }
-
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
         $page_slug = $url_parts[0] ?? '';
+        $this->lang = $lang_code;
 
         if ( isset( $page_slug ) && !empty( $page_slug ) ) {
             global $wpdb, $table_prefix;
+
             $this->postid = $wpdb->get_var( $wpdb->prepare( "SELECT ID FROM {$table_prefix}posts WHERE post_name = %s AND post_type = %s", $url_parts[0], 'zume_pieces' ) );
             if ( ! $this->postid ) {
                 return;
             }
 
-
             $this->set_locale( $lang_code );
 
-            if ( 'en' !== $this->lang ) {
-                $this->postid = zume_get_translation( $this->postid, $this->lang );
-            }
-
             $this->page_title = get_the_title( $this->postid );
-
             $this->meta = get_post_meta( $this->postid );
-            $this->page_title = empty( $this->meta['zume_piece_h1'][0] ) ? get_the_title( $this->postid ) : $this->meta['zume_piece_h1'][0];
 
 
             // register url and access
