@@ -175,7 +175,7 @@ a, a:visited {
   z-index: 20;
   background-color: color('brand');
   color: color('white');
-  padding: spacing(-2) spacing(2);
+  padding-block: spacing(-2);
   text-align: center;
   font-size: 14px;
 }
@@ -186,20 +186,6 @@ a, a:visited {
   font-family: var(--font-family);
 }
 
-.nav--visible {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin-top: 2.4rem;
-  z-index: 10;
-  background-color: color('brand');
-  border: 1px solid color('brand');
-  border-top: none;
-  padding: 1rem 2rem;
-}
-
 .nav__list {
   padding: 0;
 }
@@ -208,6 +194,31 @@ a, a:visited {
   padding-inline: spacing(0);
   padding-block: spacing(-5);
   font-weight: 400;
+}
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: spacing(-2);
+  flex-grow: 0;
+  padding-block: spacing(-3);
+  padding-inline: spacing(-1);
+  border-radius: 100px;
+  transition: all 100ms linear;
+  transition-property: color, background-color;
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    background-color: color('white');
+    color: color('brand');
+  }
+
+  &.outline {
+    border: 2px solid color('white');
+  }
+
+  & .icon {
+    font-size: 1.3em;
+  }
 }
 
 .nav__item {
@@ -229,28 +240,18 @@ a, a:visited {
 }
 
 .nav-toggle {
-  cursor: pointer;
   width: 2.5em;
-  height: 2.5em;
-  border: 1px;
-  border-radius: 5px;
-  color: color('white');
-
-  top: -15px;
 
   & > * {
     pointer-events: none;
   }
 }
 
-.nav-toggle:focus,
-.nav-toggle:hover {
-  opacity: .75;
-}
-
 .hamburger {
-  width: 75%;
+  width: 60%;
   position: relative;
+  --bar-spacing: 4px;
+  --bar-width: 4px;
 }
 
 .hamburger,
@@ -258,7 +259,7 @@ a, a:visited {
 .hamburger::after {
   display: block;
   margin: 0 auto;
-  height: 3px;
+  height: var(--bar-width);
   border-radius: 5px;
   background: color('white');
 }
@@ -275,16 +276,22 @@ a, a:visited {
 }
 
 .hamburger::before {
-  transform: translateY(-6px);
+  transform: translateY(calc( var(--bar-spacing) * -1 - var(--bar-width) ));
 }
 
 .hamburger::after {
-  transform: translateY(3px);
+  transform: translateY( var(--bar-spacing) );
+}
+
+#share-button {
+  display: block;
+}
+.language-display-code {
+  display: none;
 }
 
 .logo {
   display: flex;
-  width: 150px;
   height: 30px;
 }
 
@@ -713,12 +720,17 @@ a, a:visited {
 }
 
 @media (min-width: $break-lg) {
-
+    #share-button,
     .nav-toggle {
         display: none;
     }
+
     .nav-toggle.show {
       display: block;
+    }
+
+    .language-display-code {
+      display: inline;
     }
 
     .nav {
