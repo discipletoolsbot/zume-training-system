@@ -22,15 +22,6 @@ class Zume_Training_Share extends Zume_Magic_Page
         return self::$_instance;
     }
 
-    public static function translations() {
-        return [
-            'share' => __( 'Share', 'zume' ),
-            'copy_link' => __( 'Copy Link', 'zume' ),
-            'copy_and_share_text' => __( 'Copy this link and send it to your friends.', 'zume' ),
-            'share_feedback' => __( 'Thanks!', 'zume' ),
-            'copy_feedback' => __( 'Link copied', 'zume' ),
-        ];
-    }
 
     public function __construct() {
         parent::__construct();
@@ -89,6 +80,16 @@ class Zume_Training_Share extends Zume_Magic_Page
         <?php
     }
 
+    public static function translations() {
+        return [
+            'share' => __( 'Share', 'zume' ),
+            'copy_link' => __( 'Copy Link', 'zume' ),
+            'copy_and_share_text' => __( 'Copy this link and send it to your friends.', 'zume' ),
+            'share_feedback' => __( 'Thanks!', 'zume' ),
+            'copy_feedback' => __( 'Link copied', 'zume' ),
+        ];
+    }
+
     public function body(){
         global $zume_languages_by_code, $zume_user_profile, $wpdb;
 
@@ -99,20 +100,11 @@ class Zume_Training_Share extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-
-        $posts = $this->get_posts( $lang_code );
-
-
         $pieces_info = zume_training_items();
-
+        $posts = pieces_by_lang_code( $lang_code );
         $share_items = [];
 
         foreach ( $posts as $post ) {
-//            $meta = get_post_meta( $post->ID );
-//            $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
-//            $page_url = site_url( $lang_code . '/' . $post->post_name );
-//            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] ];
-
             $share_items[] = [
                 'page_title' => $post['zume_piece_h1'],
                 'page_url' => $post['post_name'],
@@ -123,7 +115,6 @@ class Zume_Training_Share extends Zume_Magic_Page
         }
 
         $share_translations = self::translations();
-
         ?>
 
         <script>
@@ -157,16 +148,15 @@ class Zume_Training_Share extends Zume_Magic_Page
         </div>
 
         <div class="share-list__wrapper | py-1">
-            <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $current_language ) ): ?>
+            <?php if ( empty( $posts ) || !zume_feature_flag( 'pieces_pages', $lang_code ) ): ?>
 
-                <p>No pieces pages for the language code <?php echo esc_html( $current_language ) ?></p>
+                <p>No pieces pages for the language code <?php echo esc_html( $lang_code ) ?></p>
 
             <?php else : ?>
 
                 <share-list></share-list>
 
             <?php endif; ?>
-
 
             <noscript>
                 <ul class="stack container-xsm">
@@ -192,40 +182,6 @@ class Zume_Training_Share extends Zume_Magic_Page
             </noscript>
         </div>
         <?php
-    }
-
-    public function get_posts( $language_code ) {
-        global $wpdb;
-
-       $posts = $wpdb->get_results( $wpdb->prepare(
-            "SELECT
-                p.ID,
-                p.post_title,
-                p.post_name,
-                pm1.meta_value as zume_piece,
-                pm2.meta_value as zume_piece_h1,
-                pm3.meta_value as zume_pre_video_content,
-                pm4.meta_value as zume_post_video_content,
-                pm5.meta_value as zume_ask_content,
-                pm6.meta_value as zume_seo_meta_description
-            FROM zume_posts p
-            JOIN zume_postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
-            LEFT JOIN zume_postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_piece'
-            LEFT JOIN zume_postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_piece_h1'
-            LEFT JOIN zume_postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_pre_video_content'
-            LEFT JOIN zume_postmeta pm4 ON p.ID = pm4.post_id AND pm4.meta_key = 'zume_post_video_content'
-            LEFT JOIN zume_postmeta pm5 ON p.ID = pm5.post_id AND pm5.meta_key = 'zume_ask_content'
-            LEFT JOIN zume_postmeta pm6 ON p.ID = pm6.post_id AND pm6.meta_key = 'zume_seo_meta_description'
-            WHERE
-                p.post_type = 'zume_pieces'
-                AND p.post_status = 'publish'
-                AND pm1.meta_value IS NOT NULL
-            ORDER BY cast(pm1.meta_value as unsigned)
-              ", $language_code ), ARRAY_A );
-
-       // dt_write_log( $posts );
-
-        return $posts;
     }
 }
 Zume_Training_Share::instance();

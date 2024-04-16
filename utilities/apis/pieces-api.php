@@ -137,6 +137,39 @@ function pieces_content( $postid, $lang, $strings ) {
     </div>
 
     <?php
+}
 
+function pieces_by_lang_code( $lang_code ) {
+    global $wpdb;
+
+    $posts = $wpdb->get_results( $wpdb->prepare(
+        "SELECT
+            p.ID,
+            p.post_title,
+            p.post_name,
+            pm1.meta_value as zume_piece,
+            pm2.meta_value as zume_piece_h1,
+            pm3.meta_value as zume_pre_video_content,
+            pm4.meta_value as zume_post_video_content,
+            pm5.meta_value as zume_ask_content,
+            pm6.meta_value as zume_seo_meta_description
+        FROM zume_posts p
+        JOIN zume_postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
+        LEFT JOIN zume_postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_piece'
+        LEFT JOIN zume_postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_piece_h1'
+        LEFT JOIN zume_postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_pre_video_content'
+        LEFT JOIN zume_postmeta pm4 ON p.ID = pm4.post_id AND pm4.meta_key = 'zume_post_video_content'
+        LEFT JOIN zume_postmeta pm5 ON p.ID = pm5.post_id AND pm5.meta_key = 'zume_ask_content'
+        LEFT JOIN zume_postmeta pm6 ON p.ID = pm6.post_id AND pm6.meta_key = 'zume_seo_meta_description'
+        WHERE
+            p.post_type = 'zume_pieces'
+            AND p.post_status = 'publish'
+            AND pm1.meta_value IS NOT NULL
+        ORDER BY cast(pm1.meta_value as unsigned)
+          ", $lang_code ), ARRAY_A );
+
+    // dt_write_log( $posts );
+
+    return $posts;
 }
 
