@@ -721,22 +721,6 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 ],
                 'enabled' => true,
             ),
-            'ar_lb' => array(
-                'name' => 'Arabic (LB)',
-                'enDisplayName' => 'Arabic (LB)',
-                'code' => 'ar_lb',
-                'displayCode' => 'ar_lb',
-                'locale' => 'ar_LB',
-                'weblate' => 'ar_LB',
-                'nativeName' => 'العربية - الأردن',
-                'rtl' => true,
-                'feature_flags' => [
-                    'language_selector' => false,
-                    'pieces_pages' => false,
-                    'course_slides_download' => false,
-                ],
-                'enabled' => false,
-            ),
             'ar_tn' => array(
                 'name' => 'Arabic (TN)',
                 'enDisplayName' => 'Arabic (Tunisian)',
@@ -1440,6 +1424,22 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'course_slides_download' => false,
                 ],
                 'enabled' => true,
+            ),
+            'es_es' => array(
+                'name' => 'Spanish (Spain)',
+                'enDisplayName' => 'Spanish (Spain)',
+                'code' => 'es_es',
+                'displayCode' => 'es_es',
+                'locale' => 'es_ES',
+                'weblate' => 'es_ES',
+                'nativeName' => 'Español (España)',
+                'rtl' => false,
+                'feature_flags' => [
+                    'language_selector' => false,
+                    'pieces_pages' => false,
+                    'course_slides_download' => false,
+                ],
+                'enabled' => false,
             ),
             'swa' => array(
                 'name' => 'Swahili',
@@ -2232,7 +2232,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
-                'script' => false,
+                'script' => 63,
             ],
         ];
 

@@ -7,7 +7,7 @@ use Gettext\Generator\PoGenerator;
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
-    use Translateable;
+//    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -76,7 +76,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,
-        ] = zume_get_url_pieces();
+        ] = $this->get_url_pieces_full();
 
         global $zume_languages_full_list;
         $this->zume_languages = $zume_languages_full_list;
@@ -106,6 +106,32 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
         }
+    }
+    public function get_url_pieces_full( $url = null ) {
+        global $zume_languages_full_list;
+        if ( !$url ) {
+            $url = dt_get_url_path();
+        }
+
+        $dt_url = new DT_URL( $url );
+
+        $codes = array_keys( $zume_languages_full_list );
+
+        $path = isset( $dt_url->parsed_url['path'] ) ? $dt_url->parsed_url['path'] : '';
+
+        $url_parts = explode( '/', $path );
+
+        $lang_code = 'en';
+        if ( in_array( $url_parts[0], $codes ) ) {
+            $lang_code = array_shift( $url_parts );
+        }
+        $path = implode( '/', $url_parts );
+
+        return [
+            'lang_code' => (string) $lang_code ?? 'en',
+            'path' => $path,
+            'url_parts' => ( $url_parts ) ? $url_parts : [],
+        ];
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         return zume_training_magic_url_base_allowed_js( $allowed_js );
@@ -172,6 +198,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     border-bottom: 7px solid #78b13f;
                     border-right: 7px solid #78b13f;
                 }
+                #translator-tabs .button {
+                    font-size: .8em;
+                    padding: .5em .5em;
+                }
                 .hollow.hollow-focus {
                     background-color: lightgreen !important;
                 }
@@ -234,6 +264,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
             'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
+            'downloads' => $tab === 'downloads' ? '' : 'hollow',
+            'videos' => $tab === 'videos' ? '' : 'hollow',
             'strings' => $tab === 'strings' ? '' : 'hollow',
             'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'slides' => $tab === 'slides' ? '' : 'hollow',
@@ -242,7 +274,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <div class="grid-x grid-padding-x" >
-                <div class="cell medium-9">
+                <div class="cell medium-9" id="translator-tabs">
                     Zume Translation for <?php echo $language['name'] ?><br>
                     <?php
                     foreach( $tabs as $tab_name => $class ) {
@@ -1222,6 +1254,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </div>
             <?php
         }
+
+    }
+
+    public function downloads() {
+
+    }
+
+    public function videos() {
 
     }
 
