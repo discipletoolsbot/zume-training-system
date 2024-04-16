@@ -223,7 +223,7 @@ class Zume_Training_Share extends Zume_Magic_Page
             ORDER BY cast(pm1.meta_value as unsigned)
               ", $language_code ), ARRAY_A );
 
-       dt_write_log( $posts );
+       // dt_write_log( $posts );
 
         return $posts;
     }

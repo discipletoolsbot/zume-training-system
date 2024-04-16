@@ -210,7 +210,7 @@ class Zume_Connect_Endpoints
             return new WP_Error( 'bad_plan_code', 'Key not found', [ 'status' => 400 ] );
         }
 
-        dt_write_log( $plan_post_id );
+//        dt_write_log( $plan_post_id );
         $user_id = get_current_user_id();
         $contact_id = zume_get_user_contact_id( $user_id );
         $fields = [
