@@ -48,9 +48,20 @@ class Zume_Training_Pieces_Post_Type
             if ( $pagenow == 'edit.php' && isset( $_GET['post_type'] ) ) {
                 $pt = sanitize_text_field( wp_unslash( $_GET['post_type'] ) );
                 if ( $pt === $this->post_type ) {
-                    dt_write_log( 'Adding custom columns for ' . $this->post_type );
-                    add_filter( 'manage_edit-' . $this->post_type . '_columns', array( $this, 'register_custom_column_headings' ), 10, 1 );
-                    add_action( 'manage_' . $this->post_type . '_posts_custom_column', array( $this, 'register_custom_columns' ), 10, 2 );
+                    // manage colunms
+                    add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'manage_columns' ] );
+
+                    // make columns sortable
+                    add_filter( 'manage_edit-'.$this->post_type.'_sortable_columns', [ $this, 'set_sortable_columns' ] );
+
+                    // populate column cells
+                    add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'register_custom_columns' ], 10, 2 );
+
+                    // set query to sort
+                    add_action( 'pre_get_posts', [ $this, 'sort_custom_column_query' ] );
+
+                    add_filter( 'query_vars', [ $this, 'custom_query_vars_filter' ] );
+
                 }
             }
         }
@@ -82,21 +93,23 @@ class Zume_Training_Pieces_Post_Type
 
         $number = isset( $values['zume_piece'] ) ? $values['zume_piece'][0] : 0;
 
+        $training_items = zume_training_items();
+
         ?>
         <h3>Pieces Page</h3>
         <select name="zume_piece">
             <option></option>
             <?php
-            for ( $x = 1; $x <= 32; $x++ ) {
+            foreach( $training_items as $item ) {
                 $selected = false;
-                if ( $x == $number ) {
+                if ( $item['key_int'] == $number ) {
                     $selected = true;
                 }
-                $post_number = zume_landing_page_post_id( $x );
                 ?>
-                <option value="<?php echo esc_attr( $x ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_attr( $x ) . ' - '; echo esc_html( get_the_title( $post_number ) ) ?></option>
+                <option value="<?php echo esc_attr( $item['key_int'] ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_html( $item['key_int'] ) . ' - '; echo esc_html( $item['title'] ) ?></option>
                 <?php
             }
+
             ?></select><br>
 
         <h3>Language</h3>
@@ -256,7 +269,7 @@ class Zume_Training_Pieces_Post_Type
 
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array(  'zume_piece' => 'Piece', 'lang' => 'Language' );
+        $new_columns = array(  'zume_piece' => 'Piece', 'zume_lang' => 'Language' );
 
         $last_item = array();
 
@@ -277,22 +290,63 @@ class Zume_Training_Pieces_Post_Type
         return $defaults;
     }
 
+    public function manage_columns( $columns )
+    {
+        // save date to the variable
+        $date = $columns['date'];
+        // unset the 'date' column
+        unset( $columns['date'] );
+
+        // add your column as new array element and give it table header text
+        $columns['zume_piece'] = __('Piece');
+        $columns['zume_lang'] = __('Language');
+
+        $columns['date'] = $date; // set the 'date' column again, after the custom column
+
+        return $columns;
+    }
+
+    public function sort_custom_column_query( $query )
+    {
+
+        if ( $query->query_vars['zume_piece'] ) {
+            $query->set( 'meta_key', 'zume_piece' );
+            $query->set( 'meta_value', $query->query_vars['zume_piece'] );
+        }
+
+        if ( $query->query_vars['zume_lang'] ) {
+            $query->set( 'meta_key', 'zume_lang' );
+            $query->set( 'meta_value', $query->query_vars['zume_lang'] );
+        }
+    }
+
+    function set_sortable_columns( $columns )
+    {
+        $columns['zume_piece'] = 'Piece';
+        $columns['zume_lang'] = 'Langugaes';
+        return $columns;
+    }
+
     public function register_custom_columns( $column_name, $post_id ) {
         switch ( $column_name ) {
             case 'zume_piece':
                 $piece = get_post_meta( $post_id, 'zume_piece', true );
                 echo $piece;
                 break;
-//            case 'logic':
-//                echo get_post_meta( $post_id, 'logic', true );
-//                break;
-//            case 'stage':
-//                echo get_post_meta( $post_id, 'stage', true );
-//                break;
+            case 'zume_lang':
+                $piece = get_post_meta( $post_id, 'zume_lang', true );
+                echo $piece;
+                break;
 
             default:
                 break;
         }
+    }
+
+    public function custom_query_vars_filter( $vars ) {
+        $vars[] .= 'zume_piece';
+        $vars[] .= 'zume_lang';
+        return $vars;
     }
 
 } // End Class

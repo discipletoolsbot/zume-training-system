@@ -90,41 +90,35 @@ class Zume_Training_Share extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages_by_code, $zume_user_profile;
+        global $zume_languages_by_code, $zume_user_profile, $wpdb;
 
         require __DIR__ . '/../parts/nav.php';
 
-//        $current_language = zume_current_language();
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $args = [
-            'post_type' => 'zume_pieces',
-            'meta_key' => 'zume_lang',
-            'meta_value' => $lang_code,
-            'meta_compare' => '='
-        ];
-        $the_query = new WP_Query( $args );
-        $posts = $the_query->posts;
+
+        $posts = $this->get_posts( $lang_code );
+
 
         $pieces_info = zume_training_items();
 
         $share_items = [];
 
         foreach ( $posts as $post ) {
-            $meta = get_post_meta( $post->ID );
-            $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
-            $page_url = site_url( $current_language . '/' . $post->post_name );
-            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] ];
+//            $meta = get_post_meta( $post->ID );
+//            $page_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $post->ID ) : $meta['zume_piece_h1'][0];
+//            $page_url = site_url( $lang_code . '/' . $post->post_name );
+//            $page_info = $pieces_info[ (int) $meta['zume_piece'][0] ];
 
             $share_items[] = [
-                'page_title' => $page_title,
-                'page_url' => $page_url,
-                'type' => $page_info['type'],
-                'key' => $page_info['key'],
-                'description' => $page_info['description'],
+                'page_title' => $post['zume_piece_h1'],
+                'page_url' => $post['post_name'],
+                'type' => $pieces_info[$post['zume_piece']]['type'],
+                'key' => $pieces_info[$post['zume_piece']]['key'],
+                'description' => $pieces_info[$post['zume_piece']]['description'],
             ];
         }
 
@@ -198,6 +192,40 @@ class Zume_Training_Share extends Zume_Magic_Page
             </noscript>
         </div>
         <?php
+    }
+
+    public function get_posts( $language_code ) {
+        global $wpdb;
+
+       $posts = $wpdb->get_results( $wpdb->prepare(
+            "SELECT
+                p.ID,
+                p.post_title,
+                p.post_name,
+                pm1.meta_value as zume_piece,
+                pm2.meta_value as zume_piece_h1,
+                pm3.meta_value as zume_pre_video_content,
+                pm4.meta_value as zume_post_video_content,
+                pm5.meta_value as zume_ask_content,
+                pm6.meta_value as zume_seo_meta_description
+            FROM zume_posts p
+            JOIN zume_postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
+            LEFT JOIN zume_postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_piece'
+            LEFT JOIN zume_postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_piece_h1'
+            LEFT JOIN zume_postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_pre_video_content'
+            LEFT JOIN zume_postmeta pm4 ON p.ID = pm4.post_id AND pm4.meta_key = 'zume_post_video_content'
+            LEFT JOIN zume_postmeta pm5 ON p.ID = pm5.post_id AND pm5.meta_key = 'zume_ask_content'
+            LEFT JOIN zume_postmeta pm6 ON p.ID = pm6.post_id AND pm6.meta_key = 'zume_seo_meta_description'
+            WHERE
+                p.post_type = 'zume_pieces'
+                AND p.post_status = 'publish'
+                AND pm1.meta_value IS NOT NULL
+            ORDER BY cast(pm1.meta_value as unsigned)
+              ", $language_code ), ARRAY_A );
+
+       dt_write_log( $posts );
+
+        return $posts;
     }
 }
 Zume_Training_Share::instance();
