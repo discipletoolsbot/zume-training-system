@@ -485,7 +485,7 @@ class Zume_PDF_Download_Post_Type
             'name'        => '(33) Zúme Guidebook ',
             'description' => '',
             'type'        => 'link',
-            'default'     => '33_en_zume_guidebook.pdf',
+            'default'     => '',
             'section'     => 'downloads',
         );
         $fields['34'] = array(
@@ -889,6 +889,34 @@ class Zume_PDF_Download_Post_Type
         );
         $fields['62_script'] = array(
             'name'        => '(62) Peer Mentoring Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
+            'section'     => 'script',
+        );
+        $fields['63'] = array(
+            'name'        => '(62) 3-Circles Script',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['63_script'] = array(
+            'name'        => '(62) 3-Circles Script',
+            'description' => '',
+            'type'        => 'textarea',
+            'default'     => '',
+            'section'     => 'script',
+        );
+        $fields['68'] = array(
+            'name'        => '(62) 4-Relationships Script',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
+        $fields['68_script'] = array(
+            'name'        => '(62) 4-Relationships Script',
             'description' => '',
             'type'        => 'textarea',
             'default'     => '',

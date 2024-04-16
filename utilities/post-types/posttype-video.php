@@ -536,7 +536,7 @@ class Zume_Video_Post_Type
             'name'        => 'Welcome to Zume (1)',
             'description' => '',
             'type'        => 'link',
-            'default'     => '247062938',
+            'default'     => '',
             'section'     => 'scribe',
         );
         $fields['2'] = array(
@@ -751,6 +751,13 @@ class Zume_Video_Post_Type
         );
         $fields['32'] = array(
             'name'        => 'How Zume Works (32)',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'scribe',
+        );
+        $fields['33'] = array(
+            'name'        => '3-Circles (33)',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
