@@ -269,6 +269,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'strings' => $tab === 'strings' ? '' : 'hollow',
             'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
+            'all' => $tab === 'all' ? '' : 'hollow ',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -1584,6 +1585,49 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank">
             <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $this->language['weblate'] ?>/svg-badge.svg?native=1" alt="Translation status" style="height:50px;" />
             </a>
+        <?php
+    }
+
+    public function all() {
+        global $zume_languages_full_list;
+        ?>
+            <div style="width:49%;float:left;padding:1em;">
+                <h2>Global Languages</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Code</th>
+                            <th>Locale</th>
+                            <th style="width:5%">Active</th>
+                            <th style="width:5%">Selector</th>
+                            <th style="width:5%">Pieces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach( $zume_languages_full_list as $code => $language ) {
+                            ?>
+                            <tr>
+                                <td><?php echo $language['name'] ?></td>
+                                <td><span style="font-weight:bold;"><?php echo $language['code'] ?></span></td>
+                                <td><?php echo $language['locale'] ?></td>
+                                <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
+                                <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
+                                <td><?php echo ( $language['feature_flags']['pieces_pages'] ) ? 'Yes' : 'No' ?></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <div style="width:49%;float:left;padding:1em;">
+                <h2>Strings</h2>
+                <a href="https://translate.disciple.tools/engage/zume-training/">
+                    <img src="https://translate.disciple.tools/widget/zume-training/multi-auto.svg" alt="Translation status" style="width:100%;" />
+                </a>
+            </div>
         <?php
     }
 
