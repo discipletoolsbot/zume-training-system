@@ -54,11 +54,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
         31 => 20762, // four fields tool
         32 => 20763, // generation mapping
     ];
-    public $video_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29];
-    public $pieces_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,31,32];
+    public $video_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,33];
+    public $pieces_list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28,29,30,31,32,33];
     public $script_list = [1=>34,2=>35,3=>36,4=>37,5=>38,6=>39,7=>40,8=>41,9=>42,
                             10=>43,11=>44,12=>45,13=>46,14=>47,15=>48,16=>49,17=>50,18=>51,19=>52,
-                            21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,
+                            21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,33=>63,
                            ];
     public $images = [93, 94, 95, 96, 97, 98, 99, 101, 102, 103, 104];
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
@@ -261,13 +261,12 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
-            'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
             'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
+            'videos' => $tab === 'videos' ? '' : 'hollow',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'downloads' => $tab === 'downloads' ? '' : 'hollow',
-            'videos' => $tab === 'videos' ? '' : 'hollow',
+            'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
             'strings' => $tab === 'strings' ? '' : 'hollow',
-            'ctas' => $tab === 'ctas' ? '' : 'hollow',
             'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
         ]
@@ -396,6 +395,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         */
         ?>
         <div class="grid-x grid-padding-x">
+            <div class="cell center"><h1><?php echo $language['name'] ?></h1></div>
             <div class="cell">
                 <table style="vertical-align: text-top;">
                     <tbody>
@@ -403,14 +403,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <!-- PO STRINGS -->
                         <tr style="background-color:grey; color:white;">
                             <th colspan="2" style="text-transform:uppercase;">
-                                PO STRINGS <?php echo $language['name'] ?>
+                                STRINGS
                             </th>
                         </tr>
                          <tr>
                             <td colspan="2">
-                               <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $language['locale'] ?>/">
-                                <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $language['locale'] ?>/svg-badge.svg" alt="Translation status" />
-                               </a>
+                                <div class="center">
+                                    <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank" >
+                                        <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $this->language['weblate'] ?>/svg-badge.svg?native=1" alt="Translation status" style="height:50px;" />
+                                    </a>
+                                </div>
                             </td>
                         </tr>
 
@@ -1243,20 +1245,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
         return $activities;
     }
 
-    public function ctas() {
-        $ctas = Zume_System_CTA_API::get_ctas();
-        foreach( $ctas as $cta ) {
-            ?>
-            <div class="cta">
-                <h3><?php echo $cta['content']['title'] ?></h3>
-                <p><?php echo $cta['content']['description'] ?></p>
-                <a href="<?php echo $cta['content']['link'] ?>" class="button"><?php echo $cta['content']['link_text'] ?></a>
-            </div>
-            <?php
-        }
-
-    }
-
     public function downloads() {
 
     }
@@ -1274,7 +1262,15 @@ class Zume_Training_Translator extends Zume_Magic_Page
         load_textdomain( 'zume', plugin_dir_path(__DIR__) .'/zume-'.$new_language.'.mo' );
 
         ?>
-
+        <style>
+        #translator-tabs .button {
+            font-size: .8em;
+            padding: .5em .5em;
+        }
+        .hollow.hollow-focus {
+            background-color: lightgreen !important;
+        }
+        </style>
        <div style="
                 top:90px;
                 left:0;
@@ -1403,72 +1399,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function qr_codes() {
         ?>
-        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
-        <style>
-            .qr-table img {
-                width: 150px;
-                margin: 0 auto;
-            }
-        </style>
-        <h2 id="checkin">Checkins</h2>
-         <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>QR Code</th>
-                </tr>
-            </thead>
-           <tbody>
-                <?php
-                $list = [
-                    // set a
-                    5678 => 'set_a_01', // 10 session 1
-                    2468 => 'set_a_02', // 10 session 2
-                    6543 => 'set_a_03', // 10 session 3
-                    8764 => 'set_a_04', // 10 session 4
-                    6542 => 'set_a_05', // 10 session 5
-                    1235 => 'set_a_06', // 10 session 6
-                    4322 => 'set_a_07', // 10 session 7
-                    9870 => 'set_a_08', // 10 session 8
-                    1355 => 'set_a_09', // 10 session 9
-                    5430 => 'set_a_10', // 10 session 10
-                    // set b
-                    3354 => 'set_b_01', // 20 session 1
-                    4568 => 'set_b_02', // 20 session 2
-                    8767 => 'set_b_03', // 20 session 3
-                    6787 => 'set_b_04', // 20 session 4
-                    3450 => 'set_b_05', // 20 session 5
-                    2344 => 'set_b_06', // 20 session 6
-                    1116 => 'set_b_07', // 20 session 7
-                    5431 => 'set_b_08', // 20 session 8
-                    8768 => 'set_b_09', // 20 session 9
-                    2347 => 'set_b_10', // 20 session 10
-                    9434 => 'set_b_11', // 20 session 11
-                    2348 => 'set_b_12', // 20 session 12
-                    6785 => 'set_b_13', // 20 session 13
-                    9872 => 'set_b_14', // 20 session 14
-                    4327 => 'set_b_15', // 20 session 15
-                    2871 => 'set_b_16', // 20 session 16
-                    4328 => 'set_b_17', // 20 session 17
-                    6548 => 'set_b_18', // 20 session 18
-                    7657 => 'set_b_19', // 20 session 19
-                    2767 => 'set_b_20', // 20 session 20
-                ];
-                foreach( $list as $i => $v ) {
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
-                    $qr_url = zume_create_qr_url( $url );
-                    echo '<tr>';
-                    echo '<td>Code: '. $i . ' for ' . $v . '</td>';
-                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                    echo '<td><img src="' . $qr_url . '" /></td>';
-                    echo '</tr>';
-                }
-                ?>
-            </tbody>
-        </table>
-        <div id="activities" style="height: 100px;"></div>
-        <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
+        <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
         <h2>Activities</h2>
          <table class="qr-table">
             <thead>
@@ -1485,16 +1416,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     'accountability',
                     'prayercycle',
                     'listof100',
+                    'listof100_printable',
                     'sharegospel',
                     'sharetestimony',
                     'lordssupper',
                     'blessprayer',
-                    '33groupmk5',
-                    '33groupa2',
-                    '33groupm6',
+                    '33group',
                     'prayerwalking',
                     '3monthplan',
                     'coachingchecklist',
+                    'coachingchecklist_printable',
                     'peermentoring',
                     '4fields',
                     'genmapping',
@@ -1513,7 +1444,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </tbody>
         </table>
          <div id="videos" style="height: 100px;"></div>
-         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
+         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
         <h2>Videos</h2>
         <table class="qr-table">
             <thead>
@@ -1534,7 +1465,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
                     $qr_url = zume_create_qr_url( $url );
                     echo '<tr>';
-                    echo '<td>' . $item['title'] . '</td>';
+                    echo '<td>' . $item['video_title'] . '</td>';
                     echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
                     echo '<td><img src="' . $qr_url . '" /></td>';
                     echo '</tr>';
@@ -1545,7 +1476,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         <!-- SCRIPTS -->
          <div id="scripts" style="height: 100px;"></div>
-         <a href="#checkin">Checkins</a> | <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a><br>
+         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
         <h2>Scripts</h2>
         <table class="qr-table">
             <thead>
@@ -1574,13 +1505,84 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ?>
             </tbody>
         </table>
+        <div id="checkin" style="height: 100px;"></div>
+         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
+        <style>
+            .qr-table img {
+                width: 150px;
+                margin: 0 auto;
+            }
+        </style>
+        <h2>Checkins</h2>
+         <table class="qr-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>URL</th>
+                    <th>QR Code</th>
+                </tr>
+            </thead>
+           <tbody>
+                <?php
+                $list = [
+                    // set a (10 Session)
+                    5678 => 'set_a_01', // 10 session 1
+                    2468 => 'set_a_02', // 10 session 2
+                    6543 => 'set_a_03', // 10 session 3
+                    8764 => 'set_a_04', // 10 session 4
+                    6542 => 'set_a_05', // 10 session 5
+                    1235 => 'set_a_06', // 10 session 6
+                    4322 => 'set_a_07', // 10 session 7
+                    9870 => 'set_a_08', // 10 session 8
+                    1355 => 'set_a_09', // 10 session 9
+                    5430 => 'set_a_10', // 10 session 10
+                    // set b (20 Session)
+                    3354 => 'set_b_01', // 20 session 1
+                    4568 => 'set_b_02', // 20 session 2
+                    8767 => 'set_b_03', // 20 session 3
+                    6787 => 'set_b_04', // 20 session 4
+                    3450 => 'set_b_05', // 20 session 5
+                    2344 => 'set_b_06', // 20 session 6
+                    1116 => 'set_b_07', // 20 session 7
+                    5431 => 'set_b_08', // 20 session 8
+                    8768 => 'set_b_09', // 20 session 9
+                    2347 => 'set_b_10', // 20 session 10
+                    9434 => 'set_b_11', // 20 session 11
+                    2348 => 'set_b_12', // 20 session 12
+                    6785 => 'set_b_13', // 20 session 13
+                    9872 => 'set_b_14', // 20 session 14
+                    4327 => 'set_b_15', // 20 session 15
+                    2871 => 'set_b_16', // 20 session 16
+                    4328 => 'set_b_17', // 20 session 17
+                    6548 => 'set_b_18', // 20 session 18
+                    7657 => 'set_b_19', // 20 session 19
+                    2767 => 'set_b_20', // 20 session 20
+                    // set c (Intensive)
+                    1397 => 'set_c_1', // Intensive 1
+                    2341 => 'set_c_2', // Intensive 2
+                    3455 => 'set_c_3', // Intensive 3
+                    4329 => 'set_c_4', // Intensive 4
+                    5451 => 'set_c_5', // Intensive 5
+                ];
+                foreach( $list as $i => $v ) {
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
+                    $qr_url = zume_create_qr_url( $url );
+                    echo '<tr>';
+                    echo '<td>Code: '. $i . ' for ' . $v . '</td>';
+                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
+                    echo '<td><img src="' . $qr_url . '" /></td>';
+                    echo '</tr>';
+                }
+                ?>
+            </tbody>
+        </table>
         <?php
     }
 
     public function strings() {
         ?>
-            <a href="https://translate.disciple.tools/engage/zume-training/">
-            <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-green.svg" alt="Translation status" />
+            <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank">
+            <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $this->language['weblate'] ?>/svg-badge.svg?native=1" alt="Translation status" style="height:50px;" />
             </a>
         <?php
     }
