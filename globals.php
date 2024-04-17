@@ -654,6 +654,10 @@ if ( ! function_exists( 'zume_get_user_log' ) ) {
 }
 
 if ( ! function_exists( 'zume_languages' ) ) {
+    /**
+     * @param $type string 'code' or 'locale' or 'full'
+     * @return array
+     */
     function zume_languages( $type = 'code' ) {
         global $zume_languages_by_code, $zume_languages_by_locale, $zume_languages_full_list;
         $list = array(
@@ -666,6 +670,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'en',
                 'nativeName' => 'English',
                 'rtl' => false,
+                'flag' => '🇺🇸',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -682,6 +687,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'am',
                 'nativeName' => 'አማርኛ',
                 'rtl' => false,
+                'flag' => '🇪🇹',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -689,15 +695,16 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 ],
                 'enabled' => true,
             ),
-            'ar' => array( // @note ar and ar_LB are basically the same translation.
+            'ar' => array(
                 'name' => 'Arabic',
                 'enDisplayName' => 'Arabic',
                 'code' => 'ar',
                 'displayCode' => 'ar',
-                'locale' => 'ar_LB',
-                'weblate' => 'ar_LB',
+                'locale' => 'ar',
+                'weblate' => 'ar',
                 'nativeName' => 'العربية',
                 'rtl' => true,
+                'flag' => '🇸🇦',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -706,7 +713,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_jo' => array(
-                'name' => 'Arabic (JO)',
+                'name' => 'Arabic (Jordanian)',
                 'enDisplayName' => 'Arabic (JO)',
                 'code' => 'ar_jo',
                 'displayCode' => 'ar_jo',
@@ -714,6 +721,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ar_JO',
                 'nativeName' => 'العربية - الأردن',
                 'rtl' => true,
+                'flag' => '🇯🇴',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -722,14 +730,15 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_tn' => array(
-                'name' => 'Arabic (TN)',
-                'enDisplayName' => 'Arabic (Tunisian)',
+                'name' => 'Arabic (Tunisian)',
+                'enDisplayName' => 'Arabic (TN)',
                 'code' => 'ar_tn',
                 'displayCode' => 'ar_tn',
                 'locale' => 'ar_TN',
                 'weblate' => 'ar_TN',
                 'nativeName' => 'العربية - الأردن',
                 'rtl' => true,
+                'flag' => '🇹🇳',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -738,14 +747,15 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_ma' => array(
-                'name' => 'Arabic (MA)',
-                'enDisplayName' => 'Arabic (Morocco)',
+                'name' => 'Arabic (Moroccan)',
+                'enDisplayName' => 'Arabic (MA)',
                 'code' => 'ar_ma',
                 'displayCode' => 'ar_ma',
                 'locale' => 'ar_MA',
                 'weblate' => 'ar_MA',
                 'nativeName' => 'العربية - الأردن',
                 'rtl' => true,
+                'flag' => '🇲🇦',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -762,6 +772,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'hy',
                 'nativeName' => 'Armenian',
                 'rtl' => false,
+                'flag' => '🇦🇲',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -778,6 +789,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'az',
                 'nativeName' => 'Azerbaijani',
                 'rtl' => false,
+                'flag' => '🇦🇿',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -794,6 +806,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'asl',
                 'nativeName' => 'Sign Language',
                 'rtl' => false,
+                'flag' => '🤟',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -810,6 +823,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'bn_IN',
                 'nativeName' => 'বাংলা',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -826,6 +840,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'bho',
                 'nativeName' => 'भोजपुरी',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -842,6 +857,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'bs_BA',
                 'nativeName' => 'Bosanski',
                 'rtl' => false,
+                'flag' => '🇧🇦',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -858,6 +874,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'bg_BG',
                 'nativeName' => 'български език',
                 'rtl' => false,
+                'flag' => '🇧🇬',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -874,6 +891,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'my',
                 'nativeName' => 'မြန်မာဘာသာ',
                 'rtl' => false,
+                'flag' => '🇲🇲',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -890,6 +908,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'zh_Hant_HK',
                 'nativeName' => '粵語（繁體)',
                 'rtl' => false,
+                'flag' => '🇭🇰',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -906,6 +925,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'zh_Hans',
                 'nativeName' => '简体中文',
                 'rtl' => false,
+                'flag' => '🇨🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -922,6 +942,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'zh_Hant',
                 'nativeName' => '中國傳統的',
                 'rtl' => false,
+                'flag' => '🇹🇼',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -938,6 +959,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'hr',
                 'nativeName' => 'Hrvatski',
                 'rtl' => false,
+                'flag' => '🇭🇷',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -954,6 +976,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'fo',
                 'nativeName' => 'Faroese',
                 'rtl' => false,
+                'flag' => '🇫🇴',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -970,6 +993,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'fr_FR',
                 'nativeName' => 'Français',
                 'rtl' => false,
+                'flag' => '🇫🇷',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -986,6 +1010,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'de_DE',
                 'nativeName' => 'Deutsch',
                 'rtl' => false,
+                'flag' => '🇩🇪',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1002,6 +1027,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'gu',
                 'nativeName' => 'ગુજરાતી',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1018,6 +1044,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ha_NG',
                 'nativeName' => 'Hausa',
                 'rtl' => false,
+                'flag' => '🇳🇬',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1034,6 +1061,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'hi_IN',
                 'nativeName' => 'हिन्दी',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1050,6 +1078,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'id_ID',
                 'nativeName' => 'Bahasa Indonesia',
                 'rtl' => false,
+                'flag' => '🇮🇩',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1066,6 +1095,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'it_IT',
                 'nativeName' => 'Italiano',
                 'rtl' => false,
+                'flag' => '🇮🇹',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1082,6 +1112,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ja',
                 'nativeName' => '日本語',
                 'rtl' => false,
+                'flag' => '🇯🇵',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1098,6 +1129,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'kn',
                 'nativeName' => 'ಕನ್ನಡ',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1114,6 +1146,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ko_KR',
                 'nativeName' => '한국어',
                 'rtl' => false,
+                'flag' => '🇰🇷',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1130,6 +1163,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ku',
                 'nativeName' => 'کوردی',
                 'rtl' => true,
+                'flag' => '🇮🇶',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1146,6 +1180,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'lo',
                 'nativeName' => 'ພາສາລາວ',
                 'rtl' => false,
+                'flag' => '🇱🇦',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1162,6 +1197,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'lv',
                 'nativeName' => 'Latviešu',
                 'rtl' => false,
+                'flag' => '🇱🇻',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1178,6 +1214,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'mai',
                 'nativeName' => '𑒧𑒻𑒟𑒱𑒪𑒲',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1190,10 +1227,11 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enDisplayName' => 'Malayalam',
                 'code' => 'ml',
                 'displayCode' => 'ml',
-                'locale' => 'ml',
+                'locale' => 'ml_IN',
                 'weblate' => 'ml',
                 'nativeName' => 'മലയാളം',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1210,6 +1248,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'mr',
                 'nativeName' => 'मराठी',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1226,6 +1265,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'mn',
                 'nativeName' => 'Монгол',
                 'rtl' => false,
+                'flag' => '🇲🇳',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1242,6 +1282,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ne_NP',
                 'nativeName' => 'नेपाली',
                 'rtl' => false,
+                'flag' => '🇳🇵',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1258,6 +1299,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'or_IN',
                 'nativeName' => 'ଓଡ଼ିଆ',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1274,6 +1316,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'fa_IR',
                 'nativeName' => 'فارسی',
                 'rtl' => true,
+                'flag' => '🇮🇷',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1290,6 +1333,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'pl_PL',
                 'nativeName' => 'Polski',
                 'rtl' => false,
+                'flag' => '🇵🇱',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1306,6 +1350,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'pt_PT',
                 'nativeName' => 'Português',
                 'rtl' => false,
+                'flag' => '🇵🇹',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1322,6 +1367,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'pa_IN',
                 'nativeName' => 'ਪੰਜਾਬੀ',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1338,6 +1384,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'pa_PK',
                 'nativeName' => 'ਪੰਜਾਬੀ (ਪੱਛਮੀ)',
                 'rtl' => false,
+                'flag' => '🇵🇰',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1354,6 +1401,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ru_RU',
                 'nativeName' => 'Русский',
                 'rtl' => false,
+                'flag' => '🇷🇺',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1370,6 +1418,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ro_RO',
                 'nativeName' => 'Română',
                 'rtl' => false,
+                'flag' => '🇷🇴',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1386,6 +1435,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'sl_Sl',
                 'nativeName' => 'Slovenščina',
                 'rtl' => false,
+                'flag' => '🇸🇮',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1402,6 +1452,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'so',
                 'nativeName' => 'Soomaali',
                 'rtl' => false,
+                'flag' => '🇸🇴',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1418,6 +1469,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'es',
                 'nativeName' => 'Español',
                 'rtl' => false,
+                'flag' => '🇪🇸',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1434,6 +1486,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'es_ES',
                 'nativeName' => 'Español (España)',
                 'rtl' => false,
+                'flag' => '🇪🇸',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1450,6 +1503,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'swa',
                 'nativeName' => 'Kiswahili',
                 'rtl' => false,
+                'flag' => '🇹🇿',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1466,6 +1520,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ta_IN',
                 'nativeName' => 'தமிழ்',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1482,6 +1537,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'te',
                 'nativeName' => 'తెలుగు',
                 'rtl' => false,
+                'flag' => '🇮🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => true,
@@ -1498,6 +1554,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'th',
                 'nativeName' => 'ไทย',
                 'rtl' => false,
+                'flag' => '🇹🇭',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1514,6 +1571,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'tr_TR',
                 'nativeName' => 'Türkçe',
                 'rtl' => false,
+                'flag' => '🇹🇷',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1530,6 +1588,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'uk',
                 'nativeName' => 'Україна',
                 'rtl' => true,
+                'flag' => '🇺🇦',
                 'feature_flags' => [
                     'language_selector' => false,
                     'pieces_pages' => false,
@@ -1546,6 +1605,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'ur',
                 'nativeName' => 'اردو',
                 'rtl' => true,
+                'flag' => '🇵🇰',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1562,6 +1622,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'vi',
                 'nativeName' => 'Tiếng Việt',
                 'rtl' => false,
+                'flag' => '🇻🇳',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,
@@ -1578,6 +1639,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'weblate' => 'yo',
                 'nativeName' => 'Yorùbá',
                 'rtl' => false,
+                'flag' => '🇳🇬',
                 'feature_flags' => [
                     'language_selector' => true,
                     'pieces_pages' => false,

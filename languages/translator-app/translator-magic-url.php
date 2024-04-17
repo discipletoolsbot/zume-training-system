@@ -1,9 +1,9 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-use Gettext\Loader\PoLoader;
-use Gettext\Generator\MoGenerator;
-use Gettext\Generator\PoGenerator;
+use Gettext\Loader\PoLoader; // @todo remove
+use Gettext\Generator\MoGenerator; // @todo remove
+use Gettext\Generator\PoGenerator; // @todo remove
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
@@ -1593,13 +1593,23 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $list = $zume_languages_full_list;
         ksort( $list );
         ?>
-            <div style="width:49%;float:left;padding:1em;">
-                <h2>Global Languages</h2>
+            <div style="width:10%;float:left;padding:1em; border-right: 1px solid lightgrey;">
+            <h3>Codes</h3><hr></hr>
+                 <?php
+                    foreach( $list as $language ) {
+                        ?>
+                        <strong><?php echo $language['code'] ?></strong><br>
+                        <?php
+                    }
+                ?>
+            </div>
+            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
+                <h3>Global List</h3><hr></hr>
                 <table>
                     <thead>
                         <tr>
-                            <th>Code</th>
                             <th>Language</th>
+                            <th>Code</th>
                             <th>Locale</th>
                             <th style="width:5%">Active</th>
                             <th style="width:5%">Selector</th>
@@ -1608,11 +1618,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                         <?php
-                        foreach( $list as $language ) {
+                        foreach( $zume_languages_full_list as $language ) {
                             ?>
                             <tr>
-                                <td><span style="font-weight:bold;"><?php echo $language['code'] ?></span></td>
                                 <td><?php echo $language['name'] ?></td>
+                                <td><?php echo $language['code'] ?></td>
                                 <td><?php echo $language['locale'] ?></td>
                                 <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
                                 <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
@@ -1624,8 +1634,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </tbody>
                 </table>
             </div>
-            <div style="width:49%;float:left;padding:1em;">
-                <h2>Strings</h2>
+            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
+                <h3>Weblate</h3><hr></hr>
                 <a href="https://translate.disciple.tools/engage/zume-training/">
                     <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
                 </a>
