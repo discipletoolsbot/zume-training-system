@@ -4,13 +4,13 @@ if ( !defined( 'ABSPATH' ) ) {
 } // Exit if accessed directly.
 
 /**
- * Zume_PDF_Download_Post_Type Post Type Class
- * All functionality pertaining to project update post types in Zume_PDF_Download_Post_Type.
+ * Zume_Scripts_Post_Type Post Type Class
+ * All functionality pertaining to project update post types in Zume_Scripts_Post_Type.
  *
  * @package  Disciple_Tools
  * @since    0.1.0
  */
-class Zume_PDF_Download_Post_Type
+class Zume_Scripts_Post_Type
 {
     /**
      * The post type token.
@@ -58,7 +58,7 @@ class Zume_PDF_Download_Post_Type
     public $taxonomies;
 
     /**
-     * Zume_PDF_Download_Post_Type The single instance of Zume_PDF_Download_Post_Type.
+     * Zume_Scripts_Post_Type The single instance of Zume_Scripts_Post_Type.
      * @var     object
      * @access  private
      * @since   0.1
@@ -66,13 +66,13 @@ class Zume_PDF_Download_Post_Type
     private static $_instance = null;
 
     /**
-     * Main Zume_PDF_Download_Post_Type Instance
+     * Main Zume_Scripts_Post_Type Instance
      *
-     * Ensures only one instance of Zume_PDF_Download_Post_Type is loaded or can be loaded.
+     * Ensures only one instance of Zume_Scripts_Post_Type is loaded or can be loaded.
      *
      * @since 0.1
      * @static
-     * @return Zume_PDF_Download_Post_Type instance
+     * @return Zume_Scripts_Post_Type instance
      */
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
@@ -90,7 +90,7 @@ class Zume_PDF_Download_Post_Type
      * @param array  $args
      * @param array  $taxonomies
      */
-    public function __construct( $post_type = 'zume_download', $singular = 'Download', $plural = 'Downloads', $args = array(), $taxonomies = array() ) {
+    public function __construct( $post_type = 'zume_download', $singular = 'Zume Script', $plural = 'Zume Scripts', $args = array(), $taxonomies = array() ) {
         $this->post_type = $post_type;
         $this->singular = $singular;
         $this->plural = $plural;
@@ -128,21 +128,21 @@ class Zume_PDF_Download_Post_Type
             // let's now add all the options for this post type
             array(
                 'labels' => array(
-                    'name' => 'Zume Download', /* This is the Title of the Group */
-                    'singular_name' => 'Zume Download', /* This is the individual type */
-                    'all_items' => 'All Zume Downloads', /* the all items menu item */
+                    'name' => $this->plural, /* This is the Title of the Group */
+                    'singular_name' => $this->singular, /* This is the individual type */
+                    'all_items' => 'All '.$this->plural, /* the all items menu item */
                     'add_new' => 'Add New', /* The add new menu item */
-                    'add_new_item' => 'Add New Zume Download', /* Add New Display Title */
+                    'add_new_item' => 'Add New '.$this->singular, /* Add New Display Title */
                     'edit' => 'Edit', /* Edit Dialog */
-                    'edit_item' => 'Edit Zume Download', /* Edit Display Title */
-                    'new_item' => 'New Zume Download', /* New Display Title */
-                    'view_item' => 'View Zume Download', /* View Display Title */
-                    'search_items' => 'Search Zume Downloads', /* Search Custom Type Title */
+                    'edit_item' => 'Edit '.$this->singular, /* Edit Display Title */
+                    'new_item' => 'New '.$this->singular, /* New Display Title */
+                    'view_item' => 'View '.$this->singular, /* View Display Title */
+                    'search_items' => 'Search '.$this->plural, /* Search Custom Type Title */
                     'not_found' => 'Nothing found in the Database.', /* This displays if there are no entries yet */
                     'not_found_in_trash' => 'Nothing found in Trash', /* This displays if there is nothing in the trash */
                     'parent_item_colon' => ''
                 ), /* end of arrays */
-                'description' => 'Zume video catalog for language videos', /* Custom Type Description */
+                'description' => '', /* Custom Type Description */
                 'public' => false,
                 'publicly_queryable' => false,
                 'exclude_from_search' => true,
@@ -243,8 +243,8 @@ class Zume_PDF_Download_Post_Type
                 $this->singular,
                 strtolower( $this->singular )
             ),
-            2  => 'Zume Download updated.',
-            3  => 'Zume Download deleted.',
+            2  => $this->singular .' updated.',
+            3  => $this->singular.' deleted.',
             4  => sprintf( '%s updated.', $this->singular ),
             /* translators: %s: date and time of the revision */
             5  => isset( $_GET['revision'] ) ? sprintf( '%1$s restored to revision from %2$s', $this->singular, wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
@@ -958,4 +958,4 @@ class Zume_PDF_Download_Post_Type
     } // End flush_rewrite_rules()
 
 } // End Class
-Zume_PDF_Download_Post_Type::instance();
+Zume_Scripts_Post_Type::instance();
