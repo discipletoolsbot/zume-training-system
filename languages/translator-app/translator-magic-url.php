@@ -1606,7 +1606,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                         <?php
-                        foreach( $zume_languages_full_list as $code => $language ) {
+                        foreach( ksort( $zume_languages_full_list ) as $language ) {
                             ?>
                             <tr>
                                 <td><?php echo $language['name'] ?></td>
