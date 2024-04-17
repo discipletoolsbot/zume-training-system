@@ -34,7 +34,7 @@ if ( is_admin() ) {
                 <hr></hr>
                 <?php
                 if ( isset( $_POST['language'] ) && wp_verify_nonce( $_POST[__FUNCTION__ . '_nonce'], __FUNCTION__ ) ) {
-                    dt_write_log( $zume_languages_full_list[ $_POST['language'] ] );
+//                    dt_write_log( $zume_languages_full_list[ $_POST['language'] ] );
                     $language = $zume_languages_full_list[ $_POST['language'] ];
                     $language_code = $language['code'];
                     ?>
@@ -55,12 +55,14 @@ if ( is_admin() ) {
                             JOIN zume_postmeta pm1 ON p.ID=pm1.post_id AND pm1.meta_key = 'zume_piece' AND pm1.meta_value = %s
                             WHERE p.post_type = 'zume_pieces'", $language_code, $item['key_int'] ) );
                         if ( $installed ) {
-                            echo '<p>' . $item['title'] . ' - &#10003;</p>';
-                            // @todo check if title is properly configured
-
+                            echo '<p>' . $item['title'] . ' - <a href="https://zume5.training/wp-admin/post.php?post='.$installed.'&action=edit">&#10003;</a></p>';
                         } else {
-                            echo '<p>' . $item['title'] . ' - &#x2718;</p>';
-                            // @todo trigger install
+                            $added = self::install_piece( $item, $language );
+                            if ( is_wp_error( $added ) || empty( $added ) ) {
+                                echo '<p>' . $item['title'] . ' - &#x2718;</p>';
+                            } else {
+                                echo '<p>' . $item['title'] . ' - <a href="https://zume5.training/wp-admin/post.php?post='.$added.'&action=edit">&#10003; (Added New - '.$added.')</a></p>';
+                            }
                         }
                     }
                     ?>
@@ -130,6 +132,26 @@ if ( is_admin() ) {
                 ?>
             </div>
             <?php
+        }
+
+        public static function install_piece( $piece, $language ) {
+            $title = $piece['title'] . ' ' . $language['code'];
+            $zume_piece = $piece['key_int'];
+            $zume_lang = $language['code'];
+            return wp_insert_post( [
+                'post_title' => $title,
+                'post_type' => 'zume_pieces',
+                'post_status' => 'publish',
+                'meta_input' => [
+                    'zume_piece' => $zume_piece,
+                    'zume_lang' => $zume_lang,
+                    'zume_piece_h1' => '',
+                    'zume_pre_video_content' => '',
+                    'zume_post_video_content' => '',
+                    'zume_ask_content' => '',
+                    'zume_seo_meta_description' => '',
+                ],
+            ] );
         }
 
         /**
