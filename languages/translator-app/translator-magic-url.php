@@ -1590,14 +1590,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
     public function all() {
         global $zume_languages_full_list;
+        $list = $zume_languages_full_list;
+        ksort( $list );
         ?>
             <div style="width:49%;float:left;padding:1em;">
                 <h2>Global Languages</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Language</th>
                             <th>Code</th>
+                            <th>Language</th>
                             <th>Locale</th>
                             <th style="width:5%">Active</th>
                             <th style="width:5%">Selector</th>
@@ -1606,11 +1608,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                         <?php
-                        foreach( ksort( $zume_languages_full_list ) as $language ) {
+                        foreach( $list as $language ) {
                             ?>
                             <tr>
-                                <td><?php echo $language['name'] ?></td>
                                 <td><span style="font-weight:bold;"><?php echo $language['code'] ?></span></td>
+                                <td><?php echo $language['name'] ?></td>
                                 <td><?php echo $language['locale'] ?></td>
                                 <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
                                 <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
@@ -1625,7 +1627,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <div style="width:49%;float:left;padding:1em;">
                 <h2>Strings</h2>
                 <a href="https://translate.disciple.tools/engage/zume-training/">
-                    <img src="https://translate.disciple.tools/widget/zume-training/multi-auto.svg" alt="Translation status" style="width:100%;" />
+                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
                 </a>
             </div>
         <?php
