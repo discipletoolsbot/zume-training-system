@@ -78,11 +78,28 @@ if ( is_admin() ) {
                     if ( $script_id ) {
                         echo '<p>Script - &#10003;</p>';
 
-                        // @todo check if title is properly configured
                         $meta = get_post_meta( $script_id );
-                        dt_write_log( $meta );
+                        dt_write_log( $meta);
+                        if ( $meta ) {
+                            $training_items = zume_training_items();
+                            foreach( $training_items as $item ) {
+                                if ( ! $item['script'] ) {
+                                    continue;
+                                }
+                               if ( ! isset( $meta[$item['script']] ) ) {
+                                   update_post_meta( $script_id, (string) $item['script'], '' );
+                                   echo '<p>Added ' . $item['title'] . '('.$item['script'].') - &#10003;</p>';
+                               }
+                               $script_key = $item['script'].'_script';
+                               if ( ! isset( $meta[$script_key] ) ) {
+                                   update_post_meta( $script_id, $script_key, '' );
+                                   echo '<p>Added ' . $item['title'] . '('. $script_key .') - &#10003;</p>';
+                               }
+                            }
+                        }
                     } else {
                         echo '<p>Script - &#x2718;</p>';
+                        echo '<p><a href="/wp-admin/edit.php?post_type=zume_download">Got to add new record for the language.</a></p>';
                         // @todo trigger install
                     }
                     ?>
@@ -97,9 +114,20 @@ if ( is_admin() ) {
                         WHERE p.post_type = 'zume_video' AND p.post_title = %s", $language_code ) );
                     if ( $video_id ) {
                         echo '<p>Video - &#10003;</p>';
-                        // @todo check if title is properly configured
+
+                        $meta = get_post_meta( $video_id );
+                        if ( $meta ) {
+                            $training_items = zume_training_items();
+                            foreach( $training_items as $item ) {
+                                if ( ! isset( $meta[$item['key_int']] ) ) {
+                                    update_post_meta( $video_id, $item['key_int'], '' );
+                                    echo '<p>Added ' . $item['title'] . ' - &#10003;</p>';
+                                }
+                            }
+                        }
                     } else {
                         echo '<p>Video - &#x2718;</p>';
+                        echo '<p><a href="/wp-admin/edit.php?post_type=zume_video">Got to add new record for the language.</a></p>';
                         // @todo trigger install
                     }
                     ?>

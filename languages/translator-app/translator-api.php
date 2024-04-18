@@ -56,8 +56,8 @@ class Zume_Translation_Endpoints
         $meta_key = trim( wp_unslash( $params['key'] ) );
         $new_value = trim( wp_unslash( $params['content'] ) );
 
+        // Log the change
         $previous_value = get_post_meta ( $params['postid'], $params['key'], true );
-
         $wpdb->insert(
             'zume_postmeta_translator_log',
             array(
