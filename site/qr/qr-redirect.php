@@ -68,20 +68,14 @@ class Zume_QR_Redirect
 
             $post_id = esc_attr( $_GET['p'] );
 
-            $language_slug = $wpdb->get_var( $wpdb->prepare( "
-                SELECT t.slug
-                FROM {$table_prefix}term_relationships tr
-                JOIN {$table_prefix}term_taxonomy tt_l ON tt_l.term_taxonomy_id=tr.term_taxonomy_id AND tt_l.taxonomy = 'language'
-                JOIN {$table_prefix}terms t ON tt_l.term_id = t.term_id
-                WHERE tr.object_id = %d
-            ", $post_id ) );
-            $post_name = $wpdb->get_var( $wpdb->prepare( "
-                SELECT p.post_name
+            $result = $wpdb->get_var( $wpdb->prepare( "
+                SELECT p.post_name, pm.meta_value as zume_lang
                 FROM {$table_prefix}posts p
+                LEFT JOIN {$table_prefix}postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_lang'
                 WHERE p.ID = %d
             ", $post_id ) );
 
-            $link = $link . $language_slug . '/' . $post_name;
+            $link = $link . $result['zume_lang'] . '/' . $result['post_name'];
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';

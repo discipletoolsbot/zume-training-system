@@ -502,13 +502,13 @@ class Zume_Training_Activity_Post_Type
             'name'        => 'Length of Time',
             'default'     => '',
             'type'        => 'text',
-            'section'     => 'activities',
+            'section'     => 'activities_hidden',
         );
         $fields['end_time'] = array(
             'name'        => 'End',
             'default'     => '',
             'type'        => 'hr_end',
-            'section'     => 'activities',
+            'section'     => 'activities_hidden',
         );
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
@@ -517,26 +517,26 @@ class Zume_Training_Activity_Post_Type
                 'name'        => strtoupper( $language['name'] ),
                 'default'     => '',
                 'type'        => 'begin',
-                'section'     => 'activities',
+                'section'     => 'activities_hidden',
             );
             $fields['title_'.$language['code']] = array(
                 'name'        => 'Title',
                 'default'     => '',
                 'type'        => 'text',
-                'section'     => 'activities',
+                'section'     => 'activities_hidden',
             );
             $fields['content_' . $language['code']] = array(
                 'name'        => 'Content',
                 'default'     => '',
                 'type'        => 'textarea',
-                'section'     => 'activities',
+                'section'     => 'activities_hidden',
             );
 
             $fields['end_' . $language['code']] = array(
                 'name'        => 'End',
                 'default'     => '',
                 'type'        => 'hr_end',
-                'section'     => 'activities',
+                'section'     => 'activities_hidden',
             );
         }
 

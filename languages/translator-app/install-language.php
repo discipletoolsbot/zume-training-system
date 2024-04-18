@@ -77,7 +77,10 @@ if ( is_admin() ) {
                         WHERE p.post_type = 'zume_download' AND p.post_title = %s", $language_code ) );
                     if ( $script_id ) {
                         echo '<p>Script - &#10003;</p>';
+
                         // @todo check if title is properly configured
+                        $meta = get_post_meta( $script_id );
+                        dt_write_log( $meta );
                     } else {
                         echo '<p>Script - &#x2718;</p>';
                         // @todo trigger install

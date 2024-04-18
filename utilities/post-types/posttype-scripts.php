@@ -178,12 +178,6 @@ class Zume_Scripts_Post_Type
 //        global $post;
 
         switch ( $column_name ) {
-            case 'image':
-                break;
-            case 'phone':
-                echo '';
-                break;
-
             default:
                 break;
         }
@@ -286,7 +280,7 @@ class Zume_Scripts_Post_Type
     public function load_downloads_meta_box() {
         global $post_id;
 
-        echo 'Scipts must be edited in zume.training/zume_app/translator<br><hr>';
+        echo 'Scripts content must be edited in <a href="'. site_url().'zume_app/translator">zume_app/translator</a><br><hr>';
         $this->meta_box_content( 'downloads' ); // prints
 
         // make sure fields exist

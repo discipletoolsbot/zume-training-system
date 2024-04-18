@@ -626,6 +626,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                     <?php
+                    dt_write_log( $list );
                         foreach( $list as $item ) {
                              ?>
                             <tr>
@@ -1643,37 +1644,37 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
     }
 
-    public function get_translation_strings() {
-        global $zume_languages_full_list;
-        $languages = $zume_languages_full_list;
-        $locale = $languages[$this->language_code]['locale'];
-        $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
-        if ( ! file_exists( $locale_file ) ) {
-            echo 'No translation file found';
-            return;
-        }
-        $loader = new PoLoader();
-        $translations = $loader->loadFile($locale_file );
-
-
-        $strings = [];
-        foreach( $translations as $translation ) {
-            $references = $translation->getReferences();
-            foreach( $references as $file_name => $reference ) {
-                if ( ! isset( $strings[$file_name] ) ) $strings[$file_name] = [];
-                foreach( $reference as $line ) {
-                    $strings[$file_name][] = [
-                        'line' => $line,
-                        'original' => $translation->getOriginal(),
-                        'translation' => $translation->getTranslation(),
-                    ];
-                }
-                usort($strings[$file_name], fn($a, $b) => $a['line'] <=> $b['line']);
-            }
-        }
-
-        return $strings;
-    }
+//    public function get_translation_strings() {
+//        global $zume_languages_full_list;
+//        $languages = $zume_languages_full_list;
+//        $locale = $languages[$this->language_code]['locale'];
+//        $locale_file = plugin_dir_path(__DIR__) . '/zume-' . $locale . '.po';
+//        if ( ! file_exists( $locale_file ) ) {
+//            echo 'No translation file found';
+//            return;
+//        }
+//        $loader = new PoLoader();
+//        $translations = $loader->loadFile($locale_file );
+//
+//
+//        $strings = [];
+//        foreach( $translations as $translation ) {
+//            $references = $translation->getReferences();
+//            foreach( $references as $file_name => $reference ) {
+//                if ( ! isset( $strings[$file_name] ) ) $strings[$file_name] = [];
+//                foreach( $reference as $line ) {
+//                    $strings[$file_name][] = [
+//                        'line' => $line,
+//                        'original' => $translation->getOriginal(),
+//                        'translation' => $translation->getTranslation(),
+//                    ];
+//                }
+//                usort($strings[$file_name], fn($a, $b) => $a['line'] <=> $b['line']);
+//            }
+//        }
+//
+//        return $strings;
+//    }
 
 }
 
@@ -1682,18 +1683,18 @@ Zume_Training_Translator::instance();
 if ( ! function_exists( 'list_zume_pieces' ) ) {
     function list_zume_pieces( $language_code ) {
         global $wpdb, $table_prefix;
-        $term_id = get_term_id_by_lang_code( $language_code );
 
-        $sql = $wpdb->prepare( "SELECT p.*, pm.meta_value as zume_piece, pm2.meta_value as zume_piece_h1, pm3.meta_value as zume_pre_video_content, pm4.meta_value as zume_post_video_content, pm5.meta_value as zume_ask_content
-                FROM {$table_prefix}posts p
-                JOIN {$table_prefix}term_relationships tr ON tr.object_id = p.ID AND tr.term_taxonomy_id = %s
-                JOIN {$table_prefix}postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'zume_piece' AND pm.meta_value != ''
-                LEFT JOIN {$table_prefix}postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
-                LEFT JOIN {$table_prefix}postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
-                LEFT JOIN {$table_prefix}postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
-                LEFT JOIN {$table_prefix}postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
-                ORDER BY CAST(pm.meta_value AS unsigned );",
-            $term_id );
+        $sql = $wpdb->prepare( "SELECT p.*, pm.meta_value as zume_lang, pm1.meta_value as zume_piece, pm2.meta_value as zume_piece_h1, pm3.meta_value as zume_pre_video_content, pm4.meta_value as zume_post_video_content, pm5.meta_value as zume_ask_content
+                FROM zume_posts p
+				JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
+                LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
+                LEFT JOIN zume_postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
+                LEFT JOIN zume_postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
+                LEFT JOIN zume_postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
+                LEFT JOIN zume_postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
+                WHERE p.post_type = 'zume_pieces'
+                ORDER BY CAST(pm1.meta_value AS unsigned );",
+            $language_code );
         $results = $wpdb->get_results( $sql, ARRAY_A );
         if ( empty( $results ) || is_wp_error( $results ) ) {
             return [];
@@ -1763,20 +1764,5 @@ if ( ! function_exists( 'list_zume_videos' ) ) {
             $downloads[$result['meta_key']] = $result['meta_value'];
         }
         return $downloads;
-    }
-}
-
-if ( ! function_exists('get_term_id_by_lang_code') ) {
-    function get_term_id_by_lang_code( $language_code ) {
-        global $wpdb, $table_prefix;
-        $sql = $wpdb->prepare( "SELECT tt.term_taxonomy_id
-                FROM {$table_prefix}terms t
-                JOIN {$table_prefix}term_taxonomy tt ON tt.term_id = t.term_id
-                WHERE t.slug = %s AND tt.taxonomy = 'language';", $language_code );
-        $result = $wpdb->get_var( $sql );
-        if ( empty( $result ) || is_wp_error( $result ) ) {
-            return false;
-        }
-        return $result;
     }
 }
