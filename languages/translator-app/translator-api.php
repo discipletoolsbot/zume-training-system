@@ -52,9 +52,9 @@ class Zume_Translation_Endpoints
             return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
         }
 
-        $post_id = wp_unslash($params['postid'] );
-        $meta_key = wp_unslash( $params['key'] );
-        $new_value = wp_unslash( $params['content'] );
+        $post_id = trim( wp_unslash( $params['postid'] ) );
+        $meta_key = trim( wp_unslash( $params['key'] ) );
+        $new_value = trim( wp_unslash( $params['content'] ) );
 
         $previous_value = get_post_meta ( $params['postid'], $params['key'], true );
 

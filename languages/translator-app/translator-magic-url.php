@@ -626,7 +626,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                     <?php
-                    dt_write_log( $list );
                         foreach( $list as $item ) {
                              ?>
                             <tr>
