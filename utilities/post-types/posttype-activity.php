@@ -448,7 +448,7 @@ class Zume_Training_Activity_Post_Type
                 continue;
             }
 
-            ${$f} = strip_tags( trim( sanitize_text_field( wp_unslash( $_POST[ $f ] ) ) ) );
+            ${$f} = trim( sanitize_text_field( wp_unslash( $_POST[ $f ] ) ) );
 
             // Escape the URLs.
             if ( 'url' == $field_data[ $f ]['type'] ) {
