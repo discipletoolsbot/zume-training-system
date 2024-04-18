@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-03-19 08:30-0600\n"
-"PO-Revision-Date: 2024-04-10 19:34+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
-"Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/it_IT/>\n"
+"PO-Revision-Date: 2024-04-18 11:59+0000\n"
+"Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
+"Language-Team: Italian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,9 +20,8 @@ msgid "Training"
 msgstr "Istruzione"
 
 #: appearance/style-override/navigation.php:85 site/home/home.php:211
-#, fuzzy
 msgid "How it Works"
-msgstr "Come funziona Zúme"
+msgstr "Come funziona"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -39,24 +38,23 @@ msgstr "Bacheca"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zume"
-msgstr ""
+msgstr "Mio Zume"
 
 #: appearance/style-override/navigation.php:117
 msgid "Contacts"
-msgstr ""
+msgstr "Contatti"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
 msgstr "Gruppi"
 
 #: appearance/style-override/navigation.php:129
-#, fuzzy
 msgid "Trainings"
-msgstr "Istruzione"
+msgstr "Formazioni"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
-msgstr ""
+msgstr "Metriche"
 
 #: appearance/style-override/navigation.php:143
 #: site/follow-jesus/follow-jesus.php:217
@@ -68,22 +66,20 @@ msgid "Vision"
 msgstr "Visione"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
-msgstr "Conservazione"
+msgstr "Storie"
 
 #: appearance/style-override/navigation.php:160
 msgid "Global Map"
-msgstr ""
+msgstr "Mappa Globale"
 
 #: classes/connect/connect-api.php:85
-#, fuzzy
 msgid "your friend"
-msgstr "Il tuo profilo"
+msgstr "Il tuo amico"
 
 #: classes/connect/connect-api.php:235
 msgid "the plan"
-msgstr ""
+msgstr "il piano"
 
 #: classes/encouragement/cta-api.php:131 classes/encouragement/cta-api.php:133
 #: site/follow-jesus/follow-jesus.php:151 site/home/home.php:252
@@ -95,22 +91,20 @@ msgid "Register"
 msgstr "Registrati"
 
 #: classes/encouragement/cta-api.php:132
-#, fuzzy
 msgid "Register to start your training"
-msgstr "Vuoi iniziare la formazione?"
+msgstr "Iscriviti per iniziare la tua formazione?"
 
 #: classes/encouragement/cta-api.php:146
-#, fuzzy
 msgid "Join Online Training"
-msgstr "Visionare l'Intera Formazione "
+msgstr "Partecipa alla formazione online"
 
 #: classes/encouragement/cta-api.php:147
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "Partecipa alla formazione online per saperne di più"
 
 #: classes/encouragement/cta-api.php:148 site/wizard/wizard.php:153
 msgid "Join"
-msgstr ""
+msgstr "Partecipa"
 
 #: classes/encouragement/cta-api.php:161 classes/encouragement/cta-api.php:163
 #: site/about/about.php:258 site/course/course-content.php:4663
@@ -121,70 +115,64 @@ msgstr "Richiedi un tutor"
 
 #: classes/encouragement/cta-api.php:162
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "Richiedi un coach che ti aiuterà nel tuo cammino"
 
 #: classes/encouragement/cta-api.php:176 classes/encouragement/cta-api.php:178
-#, fuzzy
 msgid "Create a Plan"
-msgstr "Piano trimestrale"
+msgstr "Crea un piano"
 
 #: classes/encouragement/cta-api.php:177
 msgid "Create a plan to help you grow"
-msgstr ""
+msgstr "Crea un piano per aiutarti a crescere"
 
 #: classes/encouragement/cta-api.php:191 classes/encouragement/cta-api.php:193
-#, fuzzy
 msgid "Invite Friends"
-msgstr "Invita alcuni amici"
+msgstr "Invita i tuoi amici"
 
 #: classes/encouragement/cta-api.php:192
 msgid "Invite friends to join you on your journey"
-msgstr ""
+msgstr "Invita i tuoi amici ad unirsi a te nel tuo cammino"
 
 #: classes/encouragement/cta-api.php:206 classes/encouragement/cta-api.php:208
 #: site/dashboard/dashboard.php:131
-#, fuzzy
 msgid "Set Profile"
-msgstr "Profilo Zume"
+msgstr "Imposta il tuo profilo"
 
 #: classes/encouragement/cta-api.php:207
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "Imposta il tuo profilo per aiutare gli altri a conoscerti"
 
 #: classes/encouragement/cta-api.php:221 classes/encouragement/cta-api.php:223
-#, fuzzy
 msgid "Create 3 Month Plan"
-msgstr "Piano trimestrale"
+msgstr "Crea un piano trimestrale"
 
 #: classes/encouragement/cta-api.php:222
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "Crea un piano trimestrale per aiutarti a crescere"
 
 #: classes/encouragement/cta-api.php:236 classes/encouragement/cta-api.php:238
-#, fuzzy
 msgid "Complete 3 Month Plan"
-msgstr "Piano trimestrale"
+msgstr "Completa il tuo piano trimestrale"
 
 #: classes/encouragement/cta-api.php:237
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "Completa il tuo piano trimestrale per aiutarti a crescere"
 
 #: classes/encouragement/cta-api.php:251 classes/encouragement/cta-api.php:253
-#, fuzzy
 msgid "Submit Report"
-msgstr "Sottoscrivi"
+msgstr "Invia Rapporto"
 
 #: classes/encouragement/cta-api.php:252
 msgid "Submit a report to help you grow"
-msgstr ""
+msgstr "Invia un rapporto per aiutarti a crescere"
 
 #: classes/encouragement/cta-api.php:266 classes/encouragement/cta-api.php:268
 msgid "Join a Hub"
-msgstr ""
+msgstr "Iscriviti a un Hub"
 
 #: classes/encouragement/cta-api.php:267
 msgid "Join a hub to help you grow"
-msgstr ""
+msgstr "Iscriviti a un Hub per aiutarti a crescere"
 
 #: classes/encouragement/cta-api.php:284 classes/encouragement/cta-api.php:286
 #, fuzzy
@@ -934,14 +922,12 @@ msgid ""
 msgstr ""
 
 #: site/about/about.php:161
-#, fuzzy
 msgid "Sign Me Up!"
-msgstr "Registrati"
+msgstr "Iscrivimi!"
 
 #: site/about/about.php:166
-#, fuzzy
 msgid "How does Zume Training Work?"
-msgstr "Zúme Training"
+msgstr "Come funziona la formazione Zúme?"
 
 #: site/about/about.php:171 site/home/home.php:216
 #, php-format
@@ -949,22 +935,25 @@ msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sIscrizione Gratuita%2$s ti dà accesso a tutti i material della "
+"formazione e un coach online."
 
 #: site/about/about.php:175 site/home/home.php:220
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr ""
-"Video e Audio per aiutare il vostro gruppo a comprendere i principi base "
-"della moltiplicazione dei discepoli."
+"%1$sVideo Formativi%2$s aiutano il tuo gruppo a comprendere i principi "
+"fondamentali della moltiplicazione di discepoli."
 
 #: site/about/about.php:179 site/home/home.php:224
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
-"Discussioni di gruppo per aiutarvi a riflettere su ciò che viene condiviso."
+"%1$sDiscussioni di Gruppo%2$s aiutano il tuo gruppo a riflettere su ciò che "
+"viene presentato nella formazione."
 
 #: site/about/about.php:183 site/home/home.php:228
 #, fuzzy, php-format
@@ -972,30 +961,29 @@ msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
-"Semplici esercizi per aiutare il vostro gruppo a mettere in pratica ciò che "
-"si sta imparando."
+"%1$sEsercizi Semplici%2$2 aiutano il tuo gruppo a mettere in pratica ciò che "
+"state imparando."
 
 #: site/about/about.php:187 site/home/home.php:232
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"Sessioni di Sfide per aiutare il vostro gruppo a continuare ad apprendere e "
-"a crescere tra una sessione e l'altra."
+"%1$sLe Sfide della Sessione%2$s aiutano il tuo gruppo a continuare ad "
+"imparare e a crescere tra una sessione e l'altra."
 
 #: site/about/about.php:198
 msgid "Before you start."
-msgstr ""
+msgstr "Prima di iniziare."
 
 #: site/about/about.php:205
 msgid "Zume is NOT like other trainings!"
-msgstr ""
+msgstr "Zume non è come altre formazioni!"
 
 #: site/about/about.php:207
-#, fuzzy
 msgid "First:"
-msgstr "Primo"
+msgstr "Primo:"
 
 #: site/about/about.php:208
 msgid ""
@@ -1003,10 +991,13 @@ msgid ""
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme è progettata per essere svolto in gruppo. Gli esercizi, le discussioni "
+"e la pratica delle competenze si svolgeranno meglio in gruppo, perciò formi "
+"un gruppo se possibile."
 
 #: site/about/about.php:211
 msgid "Second:"
-msgstr ""
+msgstr "Secondo:"
 
 #: site/about/about.php:212
 msgid ""
@@ -1015,54 +1006,62 @@ msgid ""
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme punta sullo sviluppo e la formazione di competenze, e non sulla "
+"conoscenza teorica. In ogni sessione, l'obiettivo è una vita fruttuosa. Il "
+"migliore risultato della formazione sarà uno stile di vita trasformato e un "
+"aumento di potenza della tua fede."
 
 #: site/about/about.php:220
-#, fuzzy
 msgid "What's required"
-msgstr "É richiesta la Password"
+msgstr "Quali sono i requisiti"
 
 #: site/about/about.php:223
-#, fuzzy
 msgid "Needed for the training:"
-msgstr "Vuoi iniziare la formazione?"
+msgstr "Cosa serve per la formazione:"
 
 #: site/about/about.php:225
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "Almeno 3 persone, ma preferibilmente meno di 12."
 
 #: site/about/about.php:226
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"Un impegno a dedicare 20 ore all'apprendimento e all pratica dei concetti e "
+"strumenti nella formazione."
 
 #: site/about/about.php:227
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"Una persona (forse tu) per gestire il tempo e il luogo delle sessioni, per "
+"guidare le discussioni e per aiutare con l' implementazione delle competenze."
 
 #: site/about/about.php:236
-#, fuzzy
 msgid "NOT needed for the training:"
-msgstr "Vuoi iniziare la formazione?"
+msgstr "NON serve per la formazione:"
 
 #: site/about/about.php:238
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"Avere più conoscenza o esperienza del resto del gruppo non è necessario! Se "
+"riesci a cliccare avanti, puoi condurre una formazione Zúme."
 
 #: site/about/about.php:239
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"Avere un permesso speciale per condurre una formazione non è necessario! "
+"Puoi iniziare e gestire Zúme senza aiuto, e puoi iniziare oggi."
 
 #: site/about/about.php:250
-#, fuzzy
 msgid "Connecting with a Coach."
-msgstr "Richiedi un tutor"
+msgstr "Contattare un Coach."
 
 #: site/about/about.php:257
 msgid ""
