@@ -270,7 +270,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'videos' => $tab === 'videos' ? '' : 'hollow',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'downloads' => $tab === 'downloads' ? '' : 'hollow',
-            'emails' => $tab === 'emails' ? '' : 'hollow hollow-focus',
+            'messages' => $tab === 'messages' ? '' : 'hollow hollow-focus',
             'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
             'assets' => $tab === 'assets' ? '' : 'hollow',
@@ -829,7 +829,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
               </script>
         <?php
     }
-    public function emails() {
+    public function messages() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
             return;
@@ -846,14 +846,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <tr><td colspan="4" style="background:black;"></td></tr>
             <tr><td colspan="4"><?php echo $messages_english[$pid]['title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent_id'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent_id'] ) . ')' : '' ?></td></tr>
             <tr>
-                <td><strong>Subject:</strong></td>
-                <td>
+                <td style="width:10%;"><strong>Subject:</strong></td>
+                <td style="width:40%">
                     <?php echo $messages_english[$pid]['subject'] ?? '' ?><br>
                 </td>
-                <td>
+                <td style="width:40%;">
                     <input type="text" class="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['subject'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
                 </td>
-                <td>
+                <td style="width:10%;">
                     <button class="button save_text" data-target="subject_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="subject_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
                     <br><span class="loading-spinner subject_<?php echo $this->language_code ?>_<?php echo $pid ?>"></span>
                 </td>
