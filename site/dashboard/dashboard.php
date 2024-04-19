@@ -84,7 +84,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     }
 
     public function header_style(){
-        global $zume_languages_by_code;
+        global $zume_languages_by_code, $three_month_plan_questions;
         ?>
         <?php //phpcs:ignore ?>
         <script src="<?php echo trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js?version=' . filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ) ?>"></script>
@@ -115,6 +115,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'share_translations' => Zume_Training_Share::translations(),
                 'translations' => $this->translations(),
                 'wizard_translations' => Zume_Training_Wizard::translations(),
+                'three_month_plan_questions' => self::three_month_plan_questions(),
                 'urls' => [
                     'logout' => esc_url( dt_login_url( 'logout' ) ),
                     'launch_ten_session_course' => zume_10_session_url(),
@@ -240,6 +241,25 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'parent_church' => __( 'Parent Church', 'zume' ),
             'add_new_church' => sprintf( __( 'Add new %s', 'zume' ), __( 'Church', 'zume' ) ),
             'cancel' => __( 'cancel', 'zume' ),
+        ];
+    }
+
+    public static function three_month_plan_questions() {
+        return [
+            __('I will share My Story [Testimony] and God‘s Story [the Gospel] with the following individuals:', 'zume'),
+            __('I will invite the following people to begin an Accountability Group with me:', 'zume'),
+            __('I will challenge the following people to begin their own Accountability Groups and train them how to do it:', 'zume'),
+            __('I will invite the following people to begin a 3/3 Group with me:', 'zume'),
+            __('I will challenge the following people to begin their own 3/3 Groups and train them how to do it:', 'zume'),
+            __('I will invite the following people to participate in a 3/3 Hope or Discover Group:', 'zume'),
+            __('I will invite the following people to participate in Prayer Walking with me:', 'zume'),
+            __('I will Prayer Walk once every [days / weeks / months].', 'zume'),
+            __('I will equip the following people to share their story and God‘s Story and make a List of 100 of the people in their relational network:', 'zume'),
+            __('I will challenge the following people to use the Prayer Cycle tool on a periodic basis:', 'zume'),
+            __('I will use the Prayer Cycle tool once every [days / weeks / months].', 'zume'),
+            __('I will invite the following people to be part of a Leadership Cell that I will lead:', 'zume'),
+            __('I will encourage the following people to go through this Zúme Training course:', 'zume'),
+            __('Other commitments:', 'zume'),
         ];
     }
 }

@@ -262,7 +262,6 @@ export class Dash3MonthPlan extends DashPage {
                                 </ul>
                             `
                     }
-
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
@@ -270,62 +269,14 @@ export class Dash3MonthPlan extends DashPage {
                         <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
                 </button>
                 <div id="pieces-content" class="stack">
-                    <div class="stack--3">
-                      <label for="plan_name">I will share My Story [Testimony] and God's Story [the Gospel] with the following individuals:</label>
-                      <input type="text" name="" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to begin an Accountability Group with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to begin their own Accountability Groups and train them how to do it:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to begin a 3/3 Group with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to begin their own 3/3 Groups and train them how to do it:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to participate in a 3/3 Hope or Discover Group [see Appendix of Zúme Guidebook]</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to participate in Prayer Walking with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will Prayer Walk once every [days / weeks / months].</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will equip the following people to share their story and God's Story and make a List of 100 of the people in their relational network:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to use the Prayer Cycle tool on a periodic basis:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will use the Prayer Cycle tool once every [days / weeks / months].</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to be part of a Leadership Cell that I will lead:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will encourage the following people to go through this Zúme Training course:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">Other commitments:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
+                    ${ jsObject.three_month_plan_questions.forEach( (question) => {
+                      return html`
+                      <div class="stack--3">
+                        <label for="plan_name">${question}</label>
+                        <input type="text" class="post-training-plan" />
+                      </div>
+                    `
+                    })}
                     <div class="">
                       <button class="btn d-block ms-auto" @click=${this.addCommitments}>Save</button>
                     </div>
