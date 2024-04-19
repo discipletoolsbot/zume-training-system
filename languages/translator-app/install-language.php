@@ -79,7 +79,6 @@ if ( is_admin() ) {
                         echo '<p>Script - &#10003;</p>';
 
                         $meta = get_post_meta( $script_id );
-                        dt_write_log( $meta);
                         if ( $meta ) {
                             $training_items = zume_training_items();
                             foreach( $training_items as $item ) {
@@ -87,7 +86,7 @@ if ( is_admin() ) {
                                     continue;
                                 }
                                if ( ! isset( $meta[$item['script']] ) ) {
-                                   update_post_meta( $script_id, (string) $item['script'], '' );
+                                   update_post_meta( $script_id, $item['script'], '' );
                                    echo '<p>Added ' . $item['title'] . '('.$item['script'].') - &#10003;</p>';
                                }
                                $script_key = $item['script'].'_script';
@@ -129,6 +128,38 @@ if ( is_admin() ) {
                         echo '<p>Video - &#x2718;</p>';
                         echo '<p><a href="/wp-admin/edit.php?post_type=zume_video">Got to add new record for the language.</a></p>';
                         // @todo trigger install
+                    }
+                    ?>
+
+                    <hr></hr>
+                    <h2>Messages</h2>
+                    <?php
+                    /* Check that video language is installed. */
+                    $message_ids = $wpdb->get_col(
+                        "SELECT p.ID
+                        FROM zume_posts p
+                        WHERE p.post_type = 'zume_messages' AND p.post_status = 'publish'");
+                    if ( $message_ids ) {
+                        echo '<p>Message - &#10003;</p>';
+
+                        foreach( $message_ids as $message ) {
+                            $meta = get_post_meta( $message );
+                            if ( $meta ) {
+                                foreach( $zume_languages_full_list as $item ) {
+                                    if ( get_post_meta( $message, 'subject_'.$item['code'], true ) ) {
+                                        update_post_meta( $message, 'subject_'.$item['code'], '' );
+                                        echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
+                                    }
+                                    if ( get_post_meta( $message, 'body_'.$item['code'], true ) ) {
+                                        update_post_meta( $message, 'body_'.$item['code'], '' );
+                                        echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        echo '<p>Message - &#x2718;</p>';
+                        echo '<p><a href="/wp-admin/edit.php?post_type=zume_messages">Got to add new record for the language.</a></p>';
                     }
                     ?>
 
