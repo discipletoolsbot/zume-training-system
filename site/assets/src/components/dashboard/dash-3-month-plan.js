@@ -244,9 +244,22 @@ export class Dash3MonthPlan extends DashPage {
                 <div class="dashboard__main">
                     ${
                         this.showTeaser ? html`
-                            <p>Here lies the teaser area for this page</p>
-                            <p>Once you have done the 3 month plan section of the training this area will unlock</p>
-                            <button class="btn" @click=${this.unlock3MonthPlan}>Unlock now</button>
+                          <div class="dashboard_main p-2">
+                            <div class="container-inline">
+                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">${jsObject.translations.locked_3_month_plan}</h3>
+                                    <p>${jsObject.translations.locked_3_month_plan_explanation}</p>
+                                  </div>
+                                  <button class="btn" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         ` : ''
                     }
                     ${
@@ -278,7 +291,7 @@ export class Dash3MonthPlan extends DashPage {
                     `
                     })}
                     <div class="">
-                      <button class="btn d-block ms-auto" @click=${this.addCommitments}>Save</button>
+                      <button class="btn d-block ms-auto" @click=${this.addCommitments}>${jsObject.translations.save}</button>
                     </div>
                 </div>
             </div>
