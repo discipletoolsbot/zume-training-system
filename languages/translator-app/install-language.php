@@ -146,11 +146,11 @@ if ( is_admin() ) {
                             $meta = get_post_meta( $message );
                             if ( $meta ) {
                                 foreach( $zume_languages_full_list as $item ) {
-                                    if ( get_post_meta( $message, 'subject_'.$item['code'], true ) ) {
+                                    if ( ! get_post_meta( $message, 'subject_'.$item['code'], true ) ) {
                                         update_post_meta( $message, 'subject_'.$item['code'], '' );
                                         echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
                                     }
-                                    if ( get_post_meta( $message, 'body_'.$item['code'], true ) ) {
+                                    if ( ! get_post_meta( $message, 'body_'.$item['code'], true ) ) {
                                         update_post_meta( $message, 'body_'.$item['code'], '' );
                                         echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
                                     }

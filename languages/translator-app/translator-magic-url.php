@@ -1,9 +1,9 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-use Gettext\Loader\PoLoader; // @todo remove
-use Gettext\Generator\MoGenerator; // @todo remove
-use Gettext\Generator\PoGenerator; // @todo remove
+// use Gettext\Loader\PoLoader; // @todo remove
+// use Gettext\Generator\MoGenerator; // @todo remove
+// use Gettext\Generator\PoGenerator; // @todo remove
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
@@ -176,9 +176,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     padding: 0 1em;
                     list-style-position: outside;
                     line-height: 1.5;
-                }
-                p {
-                    margin-block-end: var(--s2);
                 }
                 strong {
                     font-weight: 600;
@@ -1011,7 +1008,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $language = $zume_languages[$this->language_code];
         $en_list = list_zume_scripts( 'en' );
         $language_list = list_zume_scripts( $language['code'] );
-        $fields = Zume_PDF_DOwnload_Post_Type::instance()->get_custom_fields_settings();
+        $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
 
         $list = [];
 
@@ -1293,10 +1290,71 @@ class Zume_Training_Translator extends Zume_Magic_Page
         return $activities;
     }
     public function downloads() {
+        global $wpdb;
+        $training_items = zume_training_items();
+        $script_ids = array_filter( array_column( $training_items, 'script') );
+        $results = $wpdb->get_results( $wpdb->prepare(
+            "SELECT pm.post_id, pm.meta_key, pm.meta_value
+                    FROM zume_postmeta pm
+                    JOIN zume_posts p ON p.ID=pm.post_id
+                    WHERE p.post_type = 'zume_download'
+                    AND p.post_title = %s
+                    AND pm.meta_key NOT LIKE '%_script'
+                    AND pm.meta_key != 'last_modified'
+                    AND pm.meta_key != '_edit_last'
+                    AND pm.meta_key != '_edit_lock';", $this->language_code), ARRAY_A);
 
+        foreach( $results as $row ) {
+            if ( ! in_array( $row['meta_key'], $script_ids ) ) {
+                continue;
+            }
+            if ( empty( $row['meta_key'] ) ) {
+                ?>
+                <div>
+                <?php echo $row['meta_key'] ?> |
+                empty
+                </div>
+                <?php
+            } else {
+                ?>
+                <div>
+                <?php echo $row['meta_key'] ?> |
+                <?php echo $row['meta_value'] ?>
+                </div>
+                <?php
+            }
+        }
     }
     public function videos() {
+        global $wpdb;
+        $training_items = zume_training_items();
+        $video_results = $wpdb->get_results( $wpdb->prepare(
+            "SELECT pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
+                    FROM zume_postmeta pm
+                    JOIN zume_posts p ON p.ID=pm.post_id
+                    WHERE p.post_type = 'zume_video'
+                    AND p.post_title = %s
+                    AND pm.meta_key != 'last_modified'
+                    AND pm.meta_key != '_edit_last'
+                    AND pm.meta_key != '_edit_lock';", $this->language_code), ARRAY_A);
 
+        foreach( $video_results as $row ) {
+            if ( empty( $row['vimeo_id'] ) ) {
+                ?>
+                <div>
+                <?php echo $row['piece_id'] ?> |
+                empty
+                </div>
+                <?php
+            } else {
+                ?>
+                <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
+                <div style="width:400px;height:275px;">
+                <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <?php
+            }
+        }
     }
     public function slides() {
         global $zume_languages_full_list;
