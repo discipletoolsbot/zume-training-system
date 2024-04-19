@@ -8,7 +8,7 @@ export class DashCoach extends DashPage {
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <dash-sidebar-toggle></dash-sidebar-toggle>
-                    <h1 class="h3">Coach</h1>
+                    <h1 class="h3">${jsObject.translations.my_coach}</h1>
                 </div>
                 <dash-header-right></dash-header-right>
                 <div class="dashboard__main">

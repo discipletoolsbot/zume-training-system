@@ -855,7 +855,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <dash-sidebar-toggle></dash-sidebar-toggle>
-                    <h1 class="h3">Coach</h1>
+                    <h1 class="h3">${jsObject.translations.my_coach}</h1>
                 </div>
                 <dash-header-right></dash-header-right>
                 <div class="dashboard__main">
@@ -934,15 +934,28 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <dash-sidebar-toggle></dash-sidebar-toggle>
-                    <h1 class="h3">Maps</h1>
+                    <h1 class="h3">${jsObject.translations.my_maps}</h1>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+
+                <div class="dashboard__main p-2">
                     ${this.showTeaser?r`
-                            <p>Join the community to get access to the maps area</p>
-                            <button class="btn" @click=${this.joinCommunity}>
-                                Join
-                            </button>
+                            <div class="container-inline">
+                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">${jsObject.translations.my_maps_locked}</h3>
+                                    <p>${jsObject.translations.my_maps_explanation}</p>
+                                  </div>
+                                  <button class="btn" @click=${this.joinCommunity}>
+                                    ${jsObject.translations.join_the_community}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                         `:r`
                             <p>You can now see your vision maps here. (If you imagine them hard enough)</p>
                         `}
