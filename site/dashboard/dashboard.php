@@ -213,6 +213,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'my_maps' => __( 'My Maps', 'zume' ),
             'my_maps_locked' => __( 'My Maps are Locked', 'zume' ),
             'my_maps_explanation' => __( 'My maps help clarify the Zúme vision of 1 trainee and 2 churches for every 5,000 people in the US, and 50,000 globally. To unlock My Maps, join the Zúme community and connect with other disciple makers passionate about seeing the great commission fulfilled.', 'zume' ),
+            'my_training_locked' => __( 'My Training is Locked', 'zume' ),
             'launch_course' => __( 'Launch Course', 'zume' ),
             'ten_session_course' => __( '10 Session Course', 'zume' ),
             'twenty_session_course' => __( '20 Session Course', 'zume' ),
