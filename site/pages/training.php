@@ -131,7 +131,7 @@ class Zume_Training_Page extends Zume_Magic_Page
         ?>
 
         <div class="container-md stack-2 center | py-2">
-            <h1 class="text-center"><?php echo esc_html__( "Get started with Zúme Training" ) ?></h1>
+            <h1 class="text-center"><?php echo esc_html__( "Get started with Zúme Training", 'zume' ) ?></h1>
             <div class="switcher | training-path">
                 <div class="stack | card | switcher-width-40">
                     <h2 class="f-1 text-center"><?php echo esc_html__( 'Create your own training', 'zume' ) ?></h2>
@@ -195,7 +195,6 @@ class Zume_Training_Page extends Zume_Magic_Page
                                     }
                                 }
                                 ?>
-
                             </ul>
                             <h3 class="concepts__title"><?php echo esc_html__( 'Spiritual Practices', 'zume' ) ?></h3>
                             <ul class="stack--4">
@@ -210,9 +209,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                     }
                                 }
                                 ?>
-
                             </ul>
-
                         </div>
                     </div>
                 </div>
