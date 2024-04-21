@@ -254,7 +254,7 @@ export class Dash3MonthPlan extends DashPage {
                                     <h3 class="f-1 bold uppercase">${jsObject.translations.locked_3_month_plan}</h3>
                                     <p>${jsObject.translations.locked_3_month_plan_explanation}</p>
                                   </div>
-                                  <button class="btn" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
                                 </div>
                               </div>
                             </div>

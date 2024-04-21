@@ -720,7 +720,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                                     <h3 class="f-1 bold uppercase">${jsObject.translations.locked_3_month_plan}</h3>
                                     <p>${jsObject.translations.locked_3_month_plan_explanation}</p>
                                   </div>
-                                  <button class="btn" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
                                 </div>
                               </div>
                             </div>
