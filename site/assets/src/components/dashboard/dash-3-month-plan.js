@@ -241,10 +241,9 @@ export class Dash3MonthPlan extends DashPage {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__main">
+                <div class="dashboard__main p-2">
                     ${
                         this.showTeaser ? html`
-                          <div class="dashboard_main p-2">
                             <div class="container-inline">
                               <div class="dash-menu__list-item" data-locked="false" data-completed="false">
                                 <div class="dash-menu__icon-area | stack--5">
@@ -259,16 +258,10 @@ export class Dash3MonthPlan extends DashPage {
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        ` : ''
-                    }
-                    ${
-                        this.loading && !this.showTeaser
-                            ? html`<span class="loading-spinner active"></span>`
-                            : html`
+                        ` :  html`
                                 <ul class="list">
                                     ${
-                                        !this.loading && this.commitments && this.commitments.length > 0
+                                      !this.loading && this.commitments && this.commitments.length > 0
                                         ? repeat(this.commitments, (commitment) => commitment.id, this.renderListItem)
                                         : ''
                                     }

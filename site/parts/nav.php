@@ -1,6 +1,6 @@
 <?php // WARNING: this file contains a desktop and mobile version of the nav. So both need editing ?>
     <header class="header">
-        <div class="container | d-flex justify-content-between">
+        <div class="d-flex justify-content-between px-1">
             <div class="d-flex gap-0">
                 <button class="nav-toggle" aria-label="open navigation" data-toggle="siteOffCanvas">
                     <span class="hamburger"></span>

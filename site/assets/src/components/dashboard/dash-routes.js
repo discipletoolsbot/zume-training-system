@@ -82,7 +82,7 @@ export function dashRoutes() {
             name: 'my-training',
             pattern: `${jsObject.base_url}/my-training`,
             parent: 'training',
-            icon: 'zume-group',
+            icon: 'zume-trainings',
             type: 'dash-link',
             translation: jsObject.translations['my_training'],
             explanation: jsObject.translations['my_training_explanation'],
@@ -108,7 +108,7 @@ export function dashRoutes() {
             parent: 'training',
             icon: 'zume-plans',
             type: 'dash-link',
-            translation: jsObject.translations['3_month_plan'],
+            translation: jsObject.translations['create_3_month_plan'],
             explanation: jsObject.translations['3_month_plan_explanation'],
             data: {
                 makeComponent: (isLocked) => html`<dash-3-month-plan ?showTeaser=${isLocked}></dash-3-month-plan>`,

@@ -167,14 +167,28 @@ export class DashChurches extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+
+                <div class="dashboard__main p-2">
                     ${
                         this.showTeaser
                         ? html`
-                            <p>${jsObject.translations.join_to_access}</p>
-                            <button class="btn" @click=${this.joinCommunity}>
-                                ${jsObject.translations.join}
-                            </button>
+                            <div class="container-inline">
+                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon zume-locked dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
+                                    <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
+                                  </div>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
+                                    ${jsObject.translations.join}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+
                         `
                         : html`
                             <ul class="list">
@@ -197,6 +211,7 @@ export class DashChurches extends DashPage {
                         `
                     }
                 </div>
+
             </div>
             <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
                 <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearChurchModal}>

@@ -36,14 +36,14 @@ export class DashMaps extends DashPage {
                             <div class="container-inline">
                               <div class="dash-menu__list-item" data-locked="false" data-completed="false">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                  <span class="icon zume-locked dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
                                     <h3 class="f-1 bold uppercase">${jsObject.translations.my_maps_locked}</h3>
                                     <p>${jsObject.translations.my_maps_explanation}</p>
                                   </div>
-                                  <button class="btn" @click=${this.joinCommunity}>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
                                     ${jsObject.translations.join_the_community}
                                   </button>
                                 </div>
