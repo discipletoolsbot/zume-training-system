@@ -21,7 +21,7 @@ export class DashCta extends LitElement {
 
     getCtas() {
         /* Get ctas from api */
-        makeRequest('POST', 'user_ctas', { user_id: this.userId }, 'zume_system/v1' ).done( ( data ) => {
+        makeRequest('POST', 'user_ctas', { user_id: this.userId, language: jsObject.language }, 'zume_system/v1' ).done( ( data ) => {
             const ctas = Object.values(data)
 
             this.allCtas = ctas

@@ -894,7 +894,7 @@ var lt=Object.defineProperty;var ct=(i,e,t)=>e in i?lt(i,e,{enumerable:!0,config
                     <dash-cta></dash-cta>
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("dash-coach",Ft);class Bt extends g{static get properties(){return{ctas:{type:Array,attribute:!1}}}constructor(){super(),this.allCtas=[],this.ctas=[],this.userId=jsObject.profile.user_id}firstUpdated(){this.getCtas()}getCtas(){makeRequest("POST","user_ctas",{user_id:this.userId},"zume_system/v1").done(e=>{const t=Object.values(e);this.allCtas=t,this.ctas=this.shuffleArray(t).slice(0,3)})}shuffleArray(e){for(let t=e.length-1;t>0;t--){const s=Math.floor(Math.random()*(t+1));[e[t],e[s]]=[e[s],e[t]]}return e}renderCta({content:e,content_template:t}){if(t==="card")return r`
+        `}createRenderRoot(){return this}}customElements.define("dash-coach",Ft);class Bt extends g{static get properties(){return{ctas:{type:Array,attribute:!1}}}constructor(){super(),this.allCtas=[],this.ctas=[],this.userId=jsObject.profile.user_id}firstUpdated(){this.getCtas()}getCtas(){makeRequest("POST","user_ctas",{user_id:this.userId,language:jsObject.language},"zume_system/v1").done(e=>{const t=Object.values(e);this.allCtas=t,this.ctas=this.shuffleArray(t).slice(0,3)})}shuffleArray(e){for(let t=e.length-1;t>0;t--){const s=Math.floor(Math.random()*(t+1));[e[t],e[s]]=[e[s],e[t]]}return e}renderCta({content:e,content_template:t}){if(t==="card")return r`
                 <div class="stack | card cta">
                     <h2 class="h5 text-center">${e.title}</h2>
                     <p>${e.description}</p>

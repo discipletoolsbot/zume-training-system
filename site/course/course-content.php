@@ -1188,7 +1188,7 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Practice sharing your testimony', 'zume' ),
                 [
-                    __('Scan QR code.', 'zume'),
+                    __('Scan the QR code.', 'zume'),
                     __('Work on writing out your story and keeping it to only three minutes. (10 min)', 'zume'),
                     __('Break into groups of two to three and practice sharing. (20 min)', 'zume'),
                 ]
@@ -5976,7 +5976,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'NEXT STEP', 'zume' ),
             ],
             'left' => [
-                __( 'Join a Community', 'zume' ),
+                __( 'Join the Community', 'zume' ),
                 __( 'The training portion of Zúme is ending, but the practicing of tools and concepts continues.', 'zume' ),
                 __( 'Don‘t do it alone. Find a community for encouragement and growth.', 'zume' ),
                 __( 'Join Zume community using the QR code.', 'zume' ),
