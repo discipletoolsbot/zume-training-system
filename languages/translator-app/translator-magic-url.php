@@ -1074,7 +1074,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
         $list = [];
 
-
         foreach( $en_list as $i => $v ) {
             $list[$v['script_id']] = [
                 'en' => [],
@@ -1108,7 +1107,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         foreach( $list as $item ) {
                              ?>
                             <tr>
-                                <td style="background-color: grey; width: 40%; color: white;"><?php echo $fields[$item['en']['script_id'] .'_script']['name'] ?? '' ?></td>
+                                <td style="background-color: grey; width: 40%; color: white;"><?php echo $fields[$item['en']['script_id']]['name'] ?? '' ?></td>
                                 <td style="background-color: grey; width: 40%;"></td>
                                 <td style="background-color: grey; width: 10%;"></td>
                             </tr>
