@@ -200,7 +200,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     padding: .5em .5em;
                 }
                 .hollow.hollow-focus {
-                    background-color: lightgreen !important;
+                    background-color: yellow !important;
                 }
                 .grey-back {
                     background-color: grey;
@@ -262,16 +262,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-            'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
-            'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'videos' => $tab === 'videos' ? '' : 'hollow',
-            'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'downloads' => $tab === 'downloads' ? '' : 'hollow',
-            'messages' => $tab === 'messages' ? '' : 'hollow hollow-focus',
             'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
             'assets' => $tab === 'assets' ? '' : 'hollow',
             'all' => $tab === 'all' ? '' : 'hollow ',
+            'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
+            'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
+            'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
+            'messages' => $tab === 'messages' ? '' : 'hollow hollow-focus',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
