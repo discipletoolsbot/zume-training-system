@@ -31,7 +31,7 @@ export class VideoSlide extends CourseSlide {
 
     loadScriptIntoFrame() {
         const scriptId = this.slide.script_id
-        const lang_code = jsObject.language
+        const lang_code = jsObject.language || 'en'
 
         const url = new URL(location.href)
         const scriptUrl = new URL(url.origin)
