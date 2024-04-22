@@ -2158,7 +2158,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'slug' => 'training-cycle-for-maturing-disciples',
                 'title' => __( 'Training Cycle for Maturing Disciples', 'zume' ),
                 'video_title' => __( 'Training Cycle', 'zume' ),
-                'description' => 'Learn the training cycle and consider how it applies to disciple making.',
+                'description' => __( 'Learn the training cycle and consider how it applies to disciple making.', 'zume' ),
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
