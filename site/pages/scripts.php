@@ -55,10 +55,7 @@ class Zume_Scripts extends Zume_Magic_Page
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
 
-//            add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
-//            add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
-
         }
     }
 
@@ -111,22 +108,21 @@ class Zume_Scripts extends Zume_Magic_Page
             return;
         }
 
-
         global $wpdb;
         [
             'lang_code' => $language_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
+
         $script_id = sanitize_text_field( $_GET['s'] );
-        $meta_key = $script_id . '_script';
 
         $sql =  $wpdb->prepare(
             "SELECT pm.meta_value
                 FROM zume_posts p
                 JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
-                WHERE p.post_type = 'zume_download'
+                WHERE p.post_type = 'zume_scripts'
                 AND p.post_title = %s"
-            , $meta_key, $language_code );
+            , $script_id, $language_code );
         $body = $wpdb->get_var( $sql );
 
         $training_items = zume_training_items_by_script();
@@ -146,7 +142,7 @@ class Zume_Scripts extends Zume_Magic_Page
             ?>
             <div class="activity__wrapper">
                 <div class="activity__header">
-                    <h1><?php echo $training_items[$script_id]['title'] ?></h1>
+                    <h1><?php echo $training_items[$script_id]['title'] ?? '' ?></h1>
                     <hr>
                 </div>
                 <div class="activity__content">

@@ -264,7 +264,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-            'assets' => $tab === 'assets' ? '' : 'hollow',
             'slides' => $tab === 'slides' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
@@ -468,16 +467,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <table style="vertical-align: text-top;">
                     <tbody>
                     <?php
-                        $activities = list_zume_activites( $language['code'] );
-                        foreach( $activities as $item ) {
+                        $scripts = list_zume_scripts( $language['code'] );
+                        $script_items = zume_training_items_by_script();
+                        foreach( $scripts as $item ) {
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $item['post_title'] ?></strong>
+                                    <strong><?php echo $script_items[$item['script_id']]['title'] ?> (<?php echo $item['script_id'] ?>)</strong>
                                 </td>
                                 <td>
-                                     Title  <?php echo empty( $item['title'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
                             </tr>
                             <?php
@@ -516,81 +515,36 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
 
-            <!-- VIDEO ASSETS -->
-            <div class="cell center grey-back">
-                <strong>VIDEO ASSETS</strong>
-            </div>
-            <div class="cell">
-                <table style="vertical-align: text-top;">
-                    <tbody>
-                        <?php
-                            foreach( $this->video_list as $video_id ) {
-                                $pdf = false;
-                                $mp4 = false;
-                                if( isset( $downloads[$video_to_script[$video_id]] ) ) {
-                                    $pdf = $this->mirror_url . $this->language_code . '/' . $downloads[$video_to_script[$video_id]];
-                                }
-                                if( isset( $training_items[$video_id]['key_int'] ) ) {
-                                    $mp4 = $this->mirror_url . $this->language_code . '/' . $training_items[$video_id]['key_int'] . '.mp4';
-                                }
-                                  ?>
-                                    <tr>
-                                        <td>
-                                            <strong><?php echo $training_items[$video_id]['title'] ?> (<?php echo $video_id ?>)</strong>
-                                        </td>
-                                        <td>
-                                            Vimeo  <?php echo empty( $videos[$training_items[$video_id]['key_int']] ) ? '&#10060;' : '&#9989;' ; ?>
-                                            | Script <?php echo empty( $downloads[$training_items[$video_id]['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
-                                            | <a href="<?php echo $mp4 ?>">MP4</a> <span data-target="<?php echo $mp4; ?>" class="mp4 loading-spinner active"></span>
-                                            | <a href="<?php echo $pdf; ?>">PDF</a> <span data-target="<?php echo $pdf; ?>" class="pdf loading-spinner active"></span>
-                                        </td>
-                                    </tr>
-                                <?php
-                            }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-
-
-
 
             <!-- VIDEO PREVIEW -->
             <div class="cell center grey-back">
                 <strong>VIMEO PREVIEW</strong>
             </div>
             <div class="cell">
-           <?php
-                global $wpdb;
-                $video_results = $wpdb->get_results( $wpdb->prepare(
-                    "SELECT pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
-                            FROM zume_postmeta pm
-                            JOIN zume_posts p ON p.ID=pm.post_id
-                            WHERE p.post_type = 'zume_video'
-                            AND p.post_title = %s
-                            AND pm.meta_key != 'last_modified'
-                            AND pm.meta_key != '_edit_last'
-                            AND pm.meta_key != '_edit_lock';", $this->language_code), ARRAY_A);
+                <?php
+                    global $wpdb;
 
-                foreach( $video_results as $row ) {
-                    if ( empty( $row['vimeo_id'] ) ) {
-                        ?>
-                        <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                            Video <?php echo $row['piece_id'] ?> not installed
-                        </div>
-                        <?php
-                    } else {
-                        ?>
-                        <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                            <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
-                            <div style="width:400px;height:275px;">
-                            <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                    $video_results = list_zume_videos( $this->language_code );
+
+                    foreach( $video_results as $row ) {
+                        if ( empty( $row['vimeo_id'] ) ) {
+                            ?>
+                            <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                Video <?php echo $row['piece_id'] ?> not installed
                             </div>
-                        </div>
-                        <?php
+                            <?php
+                        } else {
+                            ?>
+                            <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
+                                <div style="width:400px;height:275px;">
+                                <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                                </div>
+                            </div>
+                            <?php
+                        }
                     }
-                }
-            ?>
+                ?>
             </div>
 
 
@@ -688,7 +642,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <h1>All Languages</h1>
             </div>
             <div style="width:10%;float:left;padding:1em; border-right: 1px solid lightgrey;">
-            <h3>Codes</h3><hr></hr>
+                <h3>Codes</h3><hr></hr>
                  <?php
                     foreach( $list as $language ) {
                         ?>
@@ -736,187 +690,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </div>
         <?php
     }
-    public function assets() {
-        if( $this->access_failure_test() ) {
-            $this->list_approved_languages();
-            return;
-        }
-        $language = $this->language;
-        $training_items = zume_training_items();
-        $video_to_script = array_filter( array_column( $training_items, 'script', 'key_int' ) );
-        $downloads = list_zume_downloads( $this->language_code );
-        $videos = list_zume_videos( $this->language_code );
-        ?>
-        <div class="grid-x grid-padding-x grid-padding-y">
 
-            <!-- VIDEO ASSETS -->
-            <div class="cell center grey-back">
-                <strong>VIDEO ASSETS</strong>
-            </div>
-            <div class="cell">
-                <table style="vertical-align: text-top;">
-                    <tbody>
-                        <?php
-                            foreach( $this->video_list as $video_id ) {
-                                $pdf = false;
-                                $mp4 = false;
-                                if( isset( $downloads[$video_to_script[$video_id]] ) ) {
-                                    $pdf = $this->mirror_url . $this->language_code . '/' . $downloads[$video_to_script[$video_id]];
-                                }
-                                if( isset( $training_items[$video_id]['key_int'] ) ) {
-                                    $mp4 = $this->mirror_url . $this->language_code . '/' . $training_items[$video_id]['key_int'] . '.mp4';
-                                }
-                                  ?>
-                                    <tr>
-                                        <td>
-                                            <strong><?php echo $training_items[$video_id]['title'] ?> (<?php echo $video_id ?>)</strong>
-                                        </td>
-                                        <td>
-                                            Vimeo  <?php echo empty( $videos[$training_items[$video_id]['key_int']] ) ? '&#10060;' : '&#9989;' ; ?>
-                                            | Script <?php echo empty( $downloads[$training_items[$video_id]['script']] ) ? '&#10060;' : '&#9989;'  ; ?>
-                                            | <a href="<?php echo $mp4 ?>">MP4</a> <span data-target="<?php echo $mp4; ?>" class="mp4 loading-spinner active"></span>
-                                            | <a href="<?php echo $pdf; ?>">PDF</a> <span data-target="<?php echo $pdf; ?>" class="pdf loading-spinner active"></span>
-                                        </td>
-                                    </tr>
-                                <?php
-                            }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-
-
-            <!-- VIDEO PREVIEW -->
-            <div class="cell center grey-back">
-                <strong>VIMEO PREVIEW</strong>
-            </div>
-            <div class="cell">
-           <?php
-                global $wpdb;
-                $training_items = zume_training_items();
-                $video_results = $wpdb->get_results( $wpdb->prepare(
-                    "SELECT pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
-                            FROM zume_postmeta pm
-                            JOIN zume_posts p ON p.ID=pm.post_id
-                            WHERE p.post_type = 'zume_video'
-                            AND p.post_title = %s
-                            AND pm.meta_key != 'last_modified'
-                            AND pm.meta_key != '_edit_last'
-                            AND pm.meta_key != '_edit_lock';", $this->language_code), ARRAY_A);
-
-                foreach( $video_results as $row ) {
-                    if ( empty( $row['vimeo_id'] ) ) {
-                        ?>
-                        <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                        Video <?php echo $row['piece_id'] ?> not installed
-                        </div>
-                        <?php
-                    } else {
-                        ?>
-                        <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                            <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
-                            <div style="width:400px;height:275px;">
-                            <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                }
-            ?>
-            </div>
-
-
-
-
-
-            <!-- IMAGE ASSETS PREVIEW -->
-            <div class="cell center grey-back">
-                <strong>IMAGE ASSETS</strong>
-            </div>
-            <div class="cell">
-                <table style="vertical-align: text-top;">
-                    <tbody>
-                     <?php
-                        foreach( $this->images as $image_number ) {
-                            $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
-                          ?>
-                            <tr>
-                                <td>
-                                    <strong><?php echo $image_number . '.png'?></strong>
-                                </td>
-                                <td>
-                                    <span data-target="<?php echo $file; ?>" class="image loading-spinner active"></span>
-                                    <a href="<?php echo $file ?>" target="_blank"><img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;"> View</a>
-                                </td>
-                            </tr>
-                        <?php
-                        }
-                    ?>
-                    </tbody>
-                </table>
-            </div>
-
-
-
-        </div>
-        <script>
-            jQuery(document).ready(function() {
-                jQuery('.pdf').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-                jQuery('.mp4').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-                jQuery('.image').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-            });
-        </script>
-        <?php
-
-
-
-
-    }
     public function pieces() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
@@ -1534,7 +1308,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
 
     }
-    public function query_activities( $langauge_code ) {
+    public function query_activities( $language_code ) {
         global $wpdb;
         $results = $wpdb->get_results(
             "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
@@ -1552,7 +1326,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             if ( ! isset( $explode[1]) ) {
                 continue;
             }
-            if ( $explode[1] == $langauge_code ) {
+            if ( $explode[1] == $language_code ) {
                 if ( ! isset( $activities[$result['post_id']] ) ) {
                     $activities[$result['post_id']] = [
                     'post_id' => '',
@@ -1567,7 +1341,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 $activities[$result['post_id']]['post_id'] = $result['post_id'];
                 $activities[$result['post_id']]['post_parent_id'] = $result['post_parent'];
                 $activities[$result['post_id']]['post_title'] = $result['post_title'];
-                $activities[$result['post_id']]['language_code'] = $langauge_code;
+                $activities[$result['post_id']]['language_code'] = $language_code;
                 if ( $explode[0] == 'title' ) {
                     $activities[$result['post_id']]['title'] = $result['meta_value'];
                 }
@@ -1915,17 +1689,18 @@ if (!function_exists('list_zume_pieces')) {
         global $wpdb, $table_prefix;
 
         $sql = $wpdb->prepare("SELECT p.*, pm.meta_value as zume_lang, pm1.meta_value as zume_piece, pm2.meta_value as zume_piece_h1, pm3.meta_value as zume_pre_video_content, pm4.meta_value as zume_post_video_content, pm5.meta_value as zume_ask_content
-                FROM zume_posts p
-				JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
-                LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
-                LEFT JOIN zume_postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
-                LEFT JOIN zume_postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
-                LEFT JOIN zume_postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
-                LEFT JOIN zume_postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
-                WHERE p.post_type = 'zume_pieces'
-                ORDER BY CAST(pm1.meta_value AS unsigned );",
+                                        FROM zume_posts p
+                                        JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
+                                        LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
+                                        LEFT JOIN zume_postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
+                                        LEFT JOIN zume_postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
+                                        LEFT JOIN zume_postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
+                                        LEFT JOIN zume_postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
+                                        WHERE p.post_type = 'zume_pieces'
+                                        ORDER BY CAST(pm1.meta_value AS unsigned );",
             $language_code);
         $results = $wpdb->get_results($sql, ARRAY_A);
+
         if (empty($results) || is_wp_error($results)) {
             return [];
         }
@@ -1939,13 +1714,14 @@ if (!function_exists('list_zume_downloads')) {
         global $wpdb;
 
         $sql = $wpdb->prepare("SELECT p.post_title, pm.meta_key, pm.meta_value
-                FROM zume_posts p
-                JOIN zume_postmeta pm ON pm.post_id=p.ID
-                WHERE p.post_title = %s
-                AND p.post_type = 'zume_download'
-                AND SUBSTRING( pm.meta_key, 1, 2) > 30 AND SUBSTRING( pm.meta_key, 1, 2) < 65;",
-            $language_code);
+                                        FROM zume_posts p
+                                        JOIN zume_postmeta pm ON pm.post_id=p.ID
+                                        WHERE p.post_title = %s
+                                        AND p.post_type = 'zume_download'
+                                        AND pm.meta_key > 30 AND pm.meta_key < 65;",
+                                    $language_code);
         $results = $wpdb->get_results($sql, ARRAY_A);
+
         if (empty($results) || is_wp_error($results)) {
             return [];
         }
@@ -1962,11 +1738,13 @@ if (!function_exists('list_zume_scripts')) {
         global $wpdb;
 
         $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, SUBSTRING( pm.meta_key, 1, 2) as script_id, pm.meta_value as content
-                            FROM zume_posts p
-                            JOIN zume_postmeta pm ON pm.post_id=p.ID
-                            WHERE p.post_type = 'zume_download'
-                            AND pm.meta_key LIKE '%_script'
-                            AND p.post_title = %s;", $language_code);
+                                        FROM zume_posts p
+                                        JOIN zume_postmeta pm ON pm.post_id=p.ID
+                                        WHERE p.post_type = 'zume_scripts'
+                                        AND p.post_title = %s
+                                        AND SUBSTRING( pm.meta_key, 1, 2) > 30
+                                        AND SUBSTRING( pm.meta_key, 1, 2) < 65;",
+                                    $language_code);
 
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
@@ -1997,22 +1775,20 @@ if (!function_exists('list_zume_videos')) {
     function list_zume_videos($language_code)
     {
         global $wpdb;
-        $sql = $wpdb->prepare("SELECT p.post_title, pm.meta_key, pm.meta_value
-                FROM zume_posts p
-                JOIN zume_postmeta pm ON pm.post_id=p.ID
-                WHERE p.post_title = %s
-                AND p.post_type = 'zume_video'
-				AND pm.meta_key != '_edit_last'
-				AND pm.meta_key != '_edit_modified'
-				AND pm.meta_key != '_edit_lock';",
-            $language_code);
-        $results = $wpdb->get_results($sql, ARRAY_A);
-        if (empty($results) || is_wp_error($results)) {
+
+        $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
+                                        FROM zume_posts p
+                                        JOIN zume_postmeta pm ON pm.post_id=p.ID
+                                        WHERE p.post_title = %s
+                                        AND p.post_type = 'zume_video'
+                                        AND pm.meta_key != '_edit_last'
+                                        AND pm.meta_key != '_edit_modified'
+                                        AND pm.meta_key != '_edit_lock';",
+                                    $language_code);
+        $downloads = $wpdb->get_results($sql, ARRAY_A);
+
+        if (empty($downloads) || is_wp_error($downloads)) {
             return [];
-        }
-        $downloads = [];
-        foreach ($results as $result) {
-            $downloads[$result['meta_key']] = $result['meta_value'];
         }
         return $downloads;
     }

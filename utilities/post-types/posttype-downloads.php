@@ -4,13 +4,13 @@ if ( !defined( 'ABSPATH' ) ) {
 } // Exit if accessed directly.
 
 /**
- * Zume_Scripts_Post_Type Post Type Class
- * All functionality pertaining to project update post types in Zume_Scripts_Post_Type.
+ * Zume_Downloads_Post_Type Post Type Class
+ * All functionality pertaining to project update post types in Zume_Downloads_Post_Type.
  *
  * @package  Disciple_Tools
  * @since    0.1.0
  */
-class Zume_Scripts_Post_Type
+class Zume_Downloads_Post_Type
 {
     /**
      * The post type token.
@@ -58,7 +58,7 @@ class Zume_Scripts_Post_Type
     public $taxonomies;
 
     /**
-     * Zume_Scripts_Post_Type The single instance of Zume_Scripts_Post_Type.
+     * Zume_Downloads_Post_Type The single instance of Zume_Downloads_Post_Type.
      * @var     object
      * @access  private
      * @since   0.1
@@ -66,13 +66,13 @@ class Zume_Scripts_Post_Type
     private static $_instance = null;
 
     /**
-     * Main Zume_Scripts_Post_Type Instance
+     * Main Zume_Downloads_Post_Type Instance
      *
-     * Ensures only one instance of Zume_Scripts_Post_Type is loaded or can be loaded.
+     * Ensures only one instance of Zume_Downloads_Post_Type is loaded or can be loaded.
      *
      * @since 0.1
      * @static
-     * @return Zume_Scripts_Post_Type instance
+     * @return Zume_Downloads_Post_Type instance
      */
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
@@ -90,7 +90,7 @@ class Zume_Scripts_Post_Type
      * @param array  $args
      * @param array  $taxonomies
      */
-    public function __construct( $post_type = 'zume_scripts', $singular = 'Zume Script', $plural = 'Zume Scripts', $args = array(), $taxonomies = array() ) {
+    public function __construct( $post_type = 'zume_download', $singular = 'Zume Download', $plural = 'Zume Downloads', $args = array(), $taxonomies = array() ) {
         $this->post_type = $post_type;
         $this->singular = $singular;
         $this->plural = $plural;
@@ -151,9 +151,9 @@ class Zume_Scripts_Post_Type
                 'menu_position' => 10, /* this is what order you want it to appear in on the left hand side menu */
                 'menu_icon' => 'dashicons-editor-customchar', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
                 'rewrite' => array(
-            'slug' => 'zume_video',
-            'with_front' => false
-            ), /* you can specify its url slug */
+                    'slug' => 'zume_video',
+                    'with_front' => false
+                ), /* you can specify its url slug */
                 'has_archive' => 'zume_video', /* you can rename the slug here */
                 'capability_type' => 'post',
                 'hierarchical' => false,
@@ -250,7 +250,7 @@ class Zume_Scripts_Post_Type
                 strtolower( $this->singular ),
                 // translators: Publish box date format, see http://php.net/date
                 '<strong>' . date_i18n( 'M j, Y @ G:i',
-                strtotime( $post->post_date ) ) . '</strong>',
+                    strtotime( $post->post_date ) ) . '</strong>',
                 '<a target="_blank" href="' . esc_url( get_permalink( $post->ID ) ) . '">',
                 '</a>'
             ),
@@ -268,7 +268,7 @@ class Zume_Scripts_Post_Type
      * @return void
      */
     public function meta_box_setup() {
-        add_meta_box( $this->post_type . '_scribes', 'Scripts', array( $this, 'load_scripts_meta_box' ), $this->post_type, 'normal', 'high' );
+        add_meta_box( $this->post_type . '_scribes', 'Downloads', array( $this, 'load_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
     } // End meta_box_setup()
 
     /**
@@ -277,10 +277,11 @@ class Zume_Scripts_Post_Type
      * @access public
      * @since  0.1.0
      */
-    public function load_scripts_meta_box() {
+    public function load_downloads_meta_box() {
         global $post_id;
 
         echo 'Scripts content must be edited in <a href="'. site_url().'/zume_app/translator">zume_app/translator</a><br><hr>';
+        $this->meta_box_content( 'downloads' ); // prints
 
         // make sure fields exist
         $fields = get_post_custom( $post_id );
@@ -298,7 +299,7 @@ class Zume_Scripts_Post_Type
      *
      * @param string $section
      */
-    public function meta_box_content( $section = 'scripts' ) {
+    public function meta_box_content( $section = 'downloads' ) {
         global $post_id;
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
@@ -474,248 +475,225 @@ class Zume_Scripts_Post_Type
         $fields = array();
 
         // Project Update Information Section
+        $fields['33'] = array(
+            'name'        => '(33) Zúme Guidebook ',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'downloads',
+        );
         $fields['34'] = array(
             'name'        => '(34) God Uses Ordinary People',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['35'] = array(
             'name'        => '(35) Disciples and the Church',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['36'] = array(
             'name'        => '(36) Spiritual Breathing Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['37'] = array(
             'name'        => '(37) S.O.A.P.S. Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['38'] = array(
             'name'        => '(38) Accountability Groups Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['39'] = array(
             'name'        => '(39) Producers vs Consumers Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['40'] = array(
             'name'        => '(40) Prayer Cycle Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['41'] = array(
             'name'        => '(41) List of 100 Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['42'] = array(
             'name'        => '(42) Spiritual Economy Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['43'] = array(
             'name'        => '(43) The Gospel Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['44'] = array(
             'name'        => '(44) Baptism Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['45'] = array(
             'name'        => '(45) 3 Minute Testimony Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['46'] = array(
             'name'        => '(46) Greatest Blessing Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['47'] = array(
             'name'        => '(47) Duckling Discipleship Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['48'] = array(
             'name'        => '(48) Eyes to See Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['49'] = array(
             'name'        => '(49) Lord’s Supper Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['50'] = array(
             'name'        => '(50) Prayer Walking Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['51'] = array(
             'name'        => '(51) Person of Peace Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['52'] = array(
             'name'        => '(52) Faithfulness Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['53'] = array(
             'name'        => '(53) 3/3 Groups Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['54'] = array(
             'name'        => '(54) Training Cycle Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['55'] = array(
             'name'        => '(55) Leadership Cells Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['56'] = array(
             'name'        => '(56) Non-Sequential Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['57'] = array(
             'name'        => '(57) Pace Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['58'] = array(
             'name'        => '(58) Part of Two Churches Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['60'] = array(
             'name'        => '(60) Coaching Checklist Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['61'] = array(
             'name'        => '(61) Leadership in Networks Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['62'] = array(
             'name'        => '(62) Peer Mentoring Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['63'] = array(
             'name'        => '(62) 3-Circles Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
-
         $fields['68'] = array(
             'name'        => '(62) 4-Relationships Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
-            'section'     => 'scripts',
+            'section'     => 'downloads',
         );
 
-
-        return apply_filters( 'zume_scripts_fields_settings', $fields );
+        return apply_filters( 'zume_pdf_download_fields_settings', $fields );
     }
 
     /**
@@ -740,4 +718,4 @@ class Zume_Scripts_Post_Type
     } // End flush_rewrite_rules()
 
 } // End Class
-Zume_Scripts_Post_Type::instance();
+Zume_Downloads_Post_Type::instance();
