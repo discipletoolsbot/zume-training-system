@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-21 17:44-0600\n"
+"POT-Creation-Date: 2024-04-22 07:55-0600\n"
 "PO-Revision-Date: 2024-04-18 11:59+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
@@ -395,10 +395,10 @@ msgstr ""
 msgid "The BLESS Prayer Pattern"
 msgstr "La Preghiera B.L.E.S.S."
 
-#: globals.php:2136
+#: globals.php:2136 site/course/course-content.php:1603
 #, fuzzy
-msgid "The BLESS Prayer"
-msgstr "La Preghiera B.L.E.S.S."
+msgid "The B.L.E.S.S. Prayer"
+msgstr "Praticare la preghiera B.L.E.S.S. (15 min)"
 
 #: globals.php:2137 site/pages/follow-jesus.php:202
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
@@ -435,6 +435,13 @@ msgstr "Il Ciclo di Addestramento"
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "Ciclo di Addestramento"
+
+#: globals.php:2161 site/pages/follow-jesus.php:270
+msgid ""
+"Learn the training cycle and consider how it applies to disciple making."
+msgstr ""
+"Imparate il ciclo di addestramento e considerate come si applica alla "
+"formazione dei discepoli."
 
 #: globals.php:2171 globals.php:2172 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
@@ -1143,10 +1150,11 @@ msgid "Practice Accountability Groups"
 msgstr "Praticare - Gruppi di corresponsabilità"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
-#: site/course/course-content.php:1380 site/course/course-content.php:1613
-#: site/course/course-content.php:1637 site/course/course-content.php:2040
-#: site/course/course-content.php:2255 site/course/course-content.php:2991
-#: site/course/course-content.php:3946 site/course/course-content.php:4901
+#: site/course/course-content.php:1191 site/course/course-content.php:1380
+#: site/course/course-content.php:1613 site/course/course-content.php:1637
+#: site/course/course-content.php:2040 site/course/course-content.php:2255
+#: site/course/course-content.php:2991 site/course/course-content.php:3946
+#: site/course/course-content.php:4901
 msgid "Scan the QR code."
 msgstr ""
 
@@ -1727,10 +1735,6 @@ msgstr ""
 msgid "Practice sharing your testimony"
 msgstr "Praticare -  Condividi la tua testimonianza"
 
-#: site/course/course-content.php:1191
-msgid "Scan QR code."
-msgstr ""
-
 #: site/course/course-content.php:1192
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
@@ -1945,11 +1949,6 @@ msgstr ""
 "sia poca o nessuna presenza del Regno? Come potrebbe una Persona di Pace "
 "(qualcuno che è APERTO, OSPITALE, CONOSCE GLI ALTRI o CONDIVIDE) accelerare "
 "la diffusione del Vangelo in quella comunità?"
-
-#: site/course/course-content.php:1603
-#, fuzzy
-msgid "The B.L.E.S.S. Prayer"
-msgstr "Praticare la preghiera B.L.E.S.S. (15 min)"
 
 #: site/course/course-content.php:1611
 #, fuzzy
@@ -2487,7 +2486,7 @@ msgstr ""
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:189
 #: site/dashboard/wizard.php:180 site/pages/about.php:258
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:160 utilities/apis/cta-api.php:162
+#: utilities/apis/cta-api.php:166 utilities/apis/cta-api.php:168
 msgid "Get a Coach"
 msgstr "Richiedi un tutor"
 
@@ -3297,9 +3296,11 @@ msgstr ""
 msgid "NEXT STEP"
 msgstr ""
 
-#: site/course/course-content.php:5979
+#: site/course/course-content.php:5979 site/course/course-content.php:5987
+#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:142
+#: site/parts/nav.php:94
 #, fuzzy
-msgid "Join a Community"
+msgid "Join the Community"
 msgstr "Communità"
 
 #: site/course/course-content.php:5980
@@ -3315,12 +3316,6 @@ msgstr ""
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
 msgstr ""
-
-#: site/course/course-content.php:5987 site/dashboard/dashboard.php:229
-#: site/parts/nav.php:94
-#, fuzzy
-msgid "Join the Community"
-msgstr "Communità"
 
 #: site/course/course-content.php:5996
 #, fuzzy
@@ -3612,8 +3607,8 @@ msgstr "Collegato a"
 msgid "Getting Started"
 msgstr "Inizia"
 
-#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:205
-#: utilities/apis/cta-api.php:207
+#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:211
+#: utilities/apis/cta-api.php:213
 msgid "Set Profile"
 msgstr "Imposta il tuo profilo"
 
@@ -3674,8 +3669,8 @@ msgstr ""
 msgid "3-Month Plan"
 msgstr "Piano trimestrale"
 
-#: site/dashboard/dashboard.php:199 utilities/apis/cta-api.php:175
-#: utilities/apis/cta-api.php:177
+#: site/dashboard/dashboard.php:199 utilities/apis/cta-api.php:181
+#: utilities/apis/cta-api.php:183
 msgid "Create a Plan"
 msgstr "Crea un piano"
 
@@ -3814,7 +3809,7 @@ msgid "Have I trained others to share this tool or concept?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:193
-#: site/pages/training.php:150 utilities/apis/cta-api.php:147
+#: site/pages/training.php:150 utilities/apis/cta-api.php:153
 msgid "Join"
 msgstr "Partecipa"
 
@@ -3859,8 +3854,8 @@ msgstr ""
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:190
-#: utilities/apis/cta-api.php:192
+#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:196
+#: utilities/apis/cta-api.php:198
 msgid "Invite Friends"
 msgstr "Invita i tuoi amici"
 
@@ -4055,11 +4050,6 @@ msgstr "Avvia una formazione"
 #: site/dashboard/wizard.php:141
 msgid "Skip for now"
 msgstr ""
-
-#: site/dashboard/wizard.php:142
-#, fuzzy
-msgid "Join Community"
-msgstr "Communità"
 
 #: site/dashboard/wizard.php:144
 #, fuzzy
@@ -4364,8 +4354,8 @@ msgstr ""
 #: site/login/login-template.php:374 site/login/login-template.php:465
 #: site/login/login-template.php:690 site/pages/follow-jesus.php:151
 #: site/pages/home.php:253 site/parts/footer.php:16 site/parts/nav.php:38
-#: site/parts/nav.php:100 utilities/apis/cta-api.php:130
-#: utilities/apis/cta-api.php:132
+#: site/parts/nav.php:100 utilities/apis/cta-api.php:136
+#: utilities/apis/cta-api.php:138
 msgid "Register"
 msgstr "Registrati"
 
@@ -4999,13 +4989,6 @@ msgstr "Insegnare agli altri ad obbedire e seguire Gesù con te"
 #: site/pages/follow-jesus.php:266
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "Impara cosa hanno a che fare gli anatroccoli con il fare discepoli."
-
-#: site/pages/follow-jesus.php:270
-msgid ""
-"Learn the training cycle and consider how it applies to disciple making."
-msgstr ""
-"Imparate il ciclo di addestramento e considerate come si applica alla "
-"formazione dei discepoli."
 
 #: site/pages/follow-jesus.php:274
 msgid ""
@@ -5772,82 +5755,82 @@ msgstr "Il tuo amico"
 msgid "the plan"
 msgstr "il piano"
 
-#: utilities/apis/cta-api.php:131
+#: utilities/apis/cta-api.php:137
 msgid "Register to start your training"
 msgstr "Iscriviti per iniziare la tua formazione?"
 
-#: utilities/apis/cta-api.php:145
+#: utilities/apis/cta-api.php:151
 msgid "Join Online Training"
 msgstr "Partecipa alla formazione online"
 
-#: utilities/apis/cta-api.php:146
+#: utilities/apis/cta-api.php:152
 msgid "Join the online training to learn more"
 msgstr "Partecipa alla formazione online per saperne di più"
 
-#: utilities/apis/cta-api.php:161
+#: utilities/apis/cta-api.php:167
 msgid "Get a coach to help you on your journey"
 msgstr "Richiedi un coach che ti aiuterà nel tuo cammino"
 
-#: utilities/apis/cta-api.php:176
+#: utilities/apis/cta-api.php:182
 msgid "Create a plan to help you grow"
 msgstr "Crea un piano per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:191
+#: utilities/apis/cta-api.php:197
 msgid "Invite friends to join you on your journey"
 msgstr "Invita i tuoi amici ad unirsi a te nel tuo cammino"
 
-#: utilities/apis/cta-api.php:206
+#: utilities/apis/cta-api.php:212
 msgid "Set your profile to help others know you"
 msgstr "Imposta il tuo profilo per aiutare gli altri a conoscerti"
 
-#: utilities/apis/cta-api.php:220 utilities/apis/cta-api.php:222
+#: utilities/apis/cta-api.php:226 utilities/apis/cta-api.php:228
 msgid "Create 3 Month Plan"
 msgstr "Crea un piano trimestrale"
 
-#: utilities/apis/cta-api.php:221
+#: utilities/apis/cta-api.php:227
 msgid "Create a 3 month plan to help you grow"
 msgstr "Crea un piano trimestrale per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:235 utilities/apis/cta-api.php:237
+#: utilities/apis/cta-api.php:241 utilities/apis/cta-api.php:243
 msgid "Complete 3 Month Plan"
 msgstr "Completa il tuo piano trimestrale"
 
-#: utilities/apis/cta-api.php:236
+#: utilities/apis/cta-api.php:242
 msgid "Complete your 3 month plan to help you grow"
 msgstr "Completa il tuo piano trimestrale per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:250 utilities/apis/cta-api.php:252
+#: utilities/apis/cta-api.php:256 utilities/apis/cta-api.php:258
 msgid "Submit Report"
 msgstr "Invia Rapporto"
 
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:257
 msgid "Submit a report to help you grow"
 msgstr "Invia un rapporto per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:265 utilities/apis/cta-api.php:267
+#: utilities/apis/cta-api.php:271 utilities/apis/cta-api.php:273
 msgid "Join a Hub"
 msgstr "Iscriviti a un Hub"
 
-#: utilities/apis/cta-api.php:266
+#: utilities/apis/cta-api.php:272
 msgid "Join a hub to help you grow"
 msgstr "Iscriviti a un Hub per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:283 utilities/apis/cta-api.php:285
+#: utilities/apis/cta-api.php:289 utilities/apis/cta-api.php:291
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "Respiro Spirituale"
 
-#: utilities/apis/cta-api.php:284
+#: utilities/apis/cta-api.php:290
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "Respiro Spirituale"
 
-#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:300
+#: utilities/apis/cta-api.php:304 utilities/apis/cta-api.php:306
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "Amministrare le Relazioni - La Lista dei 100"
 
-#: utilities/apis/cta-api.php:299
+#: utilities/apis/cta-api.php:305
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "Amministrare le Relazioni - La Lista dei 100"
@@ -5948,6 +5931,18 @@ msgstr "https://github.com/ZumeProject/zume-training"
 #, fuzzy
 msgid "Zume Training System"
 msgstr "Zúme Training"
+
+#, fuzzy
+#~ msgid "The BLESS Prayer"
+#~ msgstr "La Preghiera B.L.E.S.S."
+
+#, fuzzy
+#~ msgid "Join a Community"
+#~ msgstr "Communità"
+
+#, fuzzy
+#~ msgid "Join Community"
+#~ msgstr "Communità"
 
 #~ msgid "The Kingdom Economy"
 #~ msgstr "L'Economia Spirituale di Dio"
