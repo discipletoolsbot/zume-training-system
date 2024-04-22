@@ -771,6 +771,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         plugins: 'code link wordcount lists image',
                         menubar: 'insert',
                         toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                        paste_as_text: true,
                         link_class_list: [
                             {title: 'None', value: ''},
                             {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
@@ -894,6 +895,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     plugins: 'code link wordcount lists image',
                     menubar: 'insert',
                     toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                    paste_as_text: true,
                     link_class_list: [
                         {title: 'None', value: ''},
                         {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
@@ -1076,6 +1078,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         plugins: 'code link wordcount lists image',
                         menubar: 'insert',
                         toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
+                        paste_as_text: true,
                         link_class_list: [
                             {title: 'None', value: ''},
                             {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
@@ -1189,6 +1192,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     plugins: 'code link wordcount lists image table',
                     menubar: 'insert table',
                     toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat ',
+                    paste_as_text: true,
                     link_class_list: [
                         {title: 'None', value: ''},
                         {title: 'Primary Button Large', value: 'button primary-button-hollow large'},
