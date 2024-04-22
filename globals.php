@@ -2133,7 +2133,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'key_int' => 20,
                 'slug' => 'the-bless-prayer-pattern',
                 'title' => __( 'The BLESS Prayer Pattern', 'zume' ),
-                'video_title' => __( 'The BLESS Prayer', 'zume' ),
+                'video_title' => __( 'The B.L.E.S.S. Prayer', 'zume' ),
                 'description' => __( 'Practice a simple mnemonic to remind you of ways to pray for others.', 'zume' ),
                 'type' => 'tool',
                 'host' => true,
