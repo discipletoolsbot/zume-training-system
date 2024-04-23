@@ -199,7 +199,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 }
                 #translator-tabs .button {
                     font-size: .8em;
-                    padding: .5em .5em;
+                    padding: .8em .8em;
                 }
                 .hollow.hollow-focus {
                     background-color: yellow !important;
@@ -264,7 +264,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-//            'slides' => $tab === 'slides' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
             'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
@@ -370,6 +369,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         }
 
     }
+
     public function status() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
@@ -497,12 +497,12 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <table style="vertical-align: text-top;">
                     <tbody>
                     <?php
-                        $messages_other_language = $this->query_emails( $this->language_code );
+                        $messages_other_language = list_zume_messages( $this->language_code );
                         foreach( $messages_other_language as $message ) {
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $message['title'] ?></strong> (<?php echo $message['post_id'] ?>)
+                                    <strong><?php echo $message['title'] ?></strong>
                                 </td>
                                 <td style="text-align:right;">
                                     subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
@@ -514,20 +514,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 </table>
             </div>
 
-
-
-
-
-
-
-
-
-
-
-
+            </div>
         <?php
     }
-
     public function pieces() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
@@ -654,6 +643,21 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_ask_content' ) ?>"></span>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>
+                                    <strong>SEO Description</strong>
+                                </td>
+                                <td>
+                                    <?php echo $item['en']['zume_seo_meta_description'] ?? '' ; ?>
+                                </td>
+                                <td>
+                                    <textarea id="<?php echo hash('sha256', serialize($item['lang']) . 'zume_seo_meta_description' ) ?>"><?php echo  $item['lang']['zume_seo_meta_description'] ?? '';  ?></textarea>
+                                </td>
+                                <td>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', serialize($item['lang']) . 'zume_seo_meta_description' ) ?>" data-key="zume_seo_meta_description" data-post="<?php echo $item['lang']['ID'] ?>">Save</button>
+                                    <br><span class="loading-spinner <?php echo hash('sha256', serialize($item['lang']) . 'zume_seo_meta_description' ) ?>"></span>
+                                </td>
+                            </tr>
                             <?php
                         } ?>
                     </tbody>
@@ -732,8 +736,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
-        $messages_english = $this->query_emails( 'en' );
-        $messages_other_language = $this->query_emails( $this->language_code );
+        $messages_english = list_zume_messages( 'en' );
+        $messages_other_language = list_zume_messages( $this->language_code );
 
         ob_start();
         foreach( $messages_english as $pid => $message ) {
@@ -847,55 +851,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
               </script>
         <?php
 
-    }
-    public function query_emails( $langauge_code ) {
-        global $wpdb;
-        $results = $wpdb->get_results(
-            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
-            FROM zume_posts p
-            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
-            WHERE p.post_type = 'zume_messages'
-                AND p.post_status != 'auto-draft'
-                AND pm.meta_key != '_edit_last'
-                AND pm.meta_key != '_edit_lock'
-                AND pm.meta_key != 'last_modified'", ARRAY_A );
-
-        $emails = [];
-        foreach( $results as $result ) {
-            $explode = explode('_', $result['meta_key']);
-            if ( ! isset( $explode[1]) ) {
-                continue;
-            }
-            if ( $explode[1] == $langauge_code ) {
-                if ( ! isset( $emails[$result['post_id']] ) ) {
-                    $emails[$result['post_id']] = [
-                    'post_id' => '',
-                    'post_parent_id' => '',
-                    'title' => '',
-                    'language_code' => '',
-                    'subject' => '',
-                    'body' => '',
-                    'footer' => '',
-                ];
-                }
-
-                $emails[$result['post_id']]['post_id'] = $result['post_id'];
-                $emails[$result['post_id']]['post_parent_id'] = $result['post_parent'];
-                $emails[$result['post_id']]['title'] = $result['post_title'];
-                $emails[$result['post_id']]['language_code'] = $langauge_code;
-                if ( $explode[0] == 'subject' ) {
-                    $emails[$result['post_id']]['subject'] = $result['meta_value'];
-                }
-                if ( $explode[0] == 'body' ) {
-                    $emails[$result['post_id']]['body'] = $result['meta_value'] ?? '';
-                }
-                if ( $explode[0] == 'footer' ) {
-                    $emails[$result['post_id']]['footer'] = $result['meta_value'] ?? '';
-                }
-
-            }
-        }
-        return $emails;
     }
     public function scripts() {
         if( $this->access_failure_test() ) {
@@ -1019,8 +974,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
-        $messages_english = $this->query_activities( 'en' );
-        $messages_other_language = $this->query_activities( $this->language_code );
+        $messages_english = list_zume_activites( 'en' );
+        $messages_other_language = list_zume_activites( $this->language_code );
 
         ob_start();
         foreach( $messages_english as $pid => $message ) {
@@ -1144,228 +1099,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
 
     }
-    public function query_activities( $language_code ) {
-        global $wpdb;
-        $results = $wpdb->get_results(
-            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
-            FROM zume_posts p
-            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
-            WHERE p.post_type = 'zume_activities'
-            AND p.post_status != 'auto-draft'
-            AND pm.meta_key != '_edit_last'
-            AND pm.meta_key != '_edit_lock'
-            AND pm.meta_key != 'last_modified';", ARRAY_A );
-
-        $activities = [];
-        foreach( $results as $result ) {
-            $explode = explode('_', $result['meta_key']);
-            if ( ! isset( $explode[1]) ) {
-                continue;
-            }
-            if ( $explode[1] == $language_code ) {
-                if ( ! isset( $activities[$result['post_id']] ) ) {
-                    $activities[$result['post_id']] = [
-                    'post_id' => '',
-                    'post_parent_id' => '',
-                    'post_title' => '',
-                    'language_code' => '',
-                    'title' => '',
-                    'content' => '',
-                ];
-                }
-
-                $activities[$result['post_id']]['post_id'] = $result['post_id'];
-                $activities[$result['post_id']]['post_parent_id'] = $result['post_parent'];
-                $activities[$result['post_id']]['post_title'] = $result['post_title'];
-                $activities[$result['post_id']]['language_code'] = $language_code;
-                if ( $explode[0] == 'title' ) {
-                    $activities[$result['post_id']]['title'] = $result['meta_value'];
-                }
-                if ( $explode[0] == 'content' ) {
-                    $activities[$result['post_id']]['content'] = $result['meta_value'] ?? '';
-                }
-            }
-        }
-//dt_write_log($activities);
-        return $activities;
-    }
-
-    public function slides() {
-        global $zume_languages_full_list, $zume_languages_by_code;
-        $zume_languages = $zume_languages_full_list;
-        $language = $zume_languages[$this->language_code];
-        //load the new text domain
-        $new_language = $language['locale'];
-        load_textdomain( 'zume', plugin_dir_path(__DIR__) .'/zume-'.$new_language.'.mo' );
-
-        ?>
-        <style>
-        #translator-tabs .button {
-            font-size: .8em;
-            padding: .5em .5em;
-        }
-        .hollow.hollow-focus {
-            background-color: lightgreen !important;
-        }
-        </style>
-       <div style="
-                top:90px;
-                left:0;
-                position: fixed;
-                background-color: white;
-                padding: .5em;
-                z-index:100;
-                width: 100%;
-                border-bottom: 1px solid lightgrey;
-                ">
-            <select id="course_selector">
-                <option value="">Select the Session</option>
-                <option value="10_0">All 10</option>
-                <option value="20_0">All 20</option>
-                <option value="intensive_0">All Intensive</option>
-                <option disabled>------------</option>
-                <option value="10_1">10 - 1</option>
-                <option value="10_2">10 - 2</option>
-                <option value="10_3">10 - 3</option>
-                <option value="10_4">10 - 4</option>
-                <option value="10_5">10 - 5</option>
-                <option value="10_6">10 - 6</option>
-                <option value="10_7">10 - 7</option>
-                <option value="10_8">10 - 8</option>
-                <option value="10_9">10 - 9</option>
-                <option value="10_10">10 - 10</option>
-                <option disabled>------------</option>
-                <option value="20_1">20 - 1</option>
-                <option value="20_2">20 - 2</option>
-                <option value="20_3">20 - 3</option>
-                <option value="20_4">20 - 4</option>
-                <option value="20_5">20 - 5</option>
-                <option value="20_6">20 - 6</option>
-                <option value="20_7">20 - 7</option>
-                <option value="20_8">20 - 8</option>
-                <option value="20_9">20 - 9</option>
-                <option value="20_10">20 - 10</option>
-                <option value="20_11">20 - 11</option>
-                <option value="20_12">20 - 12</option>
-                <option value="20_13">20 - 13</option>
-                <option value="20_14">20 - 14</option>
-                <option value="20_15">20 - 15</option>
-                <option value="20_16">20 - 16</option>
-                <option value="20_17">20 - 17</option>
-                <option value="20_18">20 - 18</option>
-                <option value="20_19">20 - 19</option>
-                <option value="20_20">20 - 20</option>
-                <option disabled>------------</option>
-                <option value="intensive_1">Intensive - 1</option>
-                <option value="intensive_2">Intensive - 2</option>
-                <option value="intensive_3">Intensive - 3</option>
-                <option value="intensive_4">Intensive - 4</option>
-                <option value="intensive_5">Intensive - 5</option>
-            </select>
-        </div>
-        <script>
-            /* trigger dropdown redirect */
-            let type = '<?php echo $_GET['type'] ?? false; ?>';
-            let session = '<?php echo $_GET['session'] ?? false; ?>';
-            jQuery(document).ready(function($){
-                $('#course_selector').on('change', function(){
-                    let value = $(this).val();
-                    let parts = value.split('_');
-                    let type = parts[0];
-                    let session = parts[1];
-                    if ( ! session ) {
-                        window.location.href = `/zume_app/translator/?tab=slides`;
-                    }
-                    window.location.href = `?tab=slides&type=${type}&session=${session}`;
-                });
-
-                const jsObject = [<?php echo json_encode([
-                    'root' => esc_url_raw( rest_url() ),
-                    'nonce' => wp_create_nonce( 'wp_rest' ),
-                    'language' => $this->language_code,
-                    'site_url' => get_site_url(),
-                    'base_url' => $this->base_url,
-                    'map_key' => DT_Mapbox_API::get_key(),
-                    'mapbox_selected_id' => 'current',
-                    'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
-                    'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '/assets/images' ),
-                    'template_dir' => get_template_directory_uri(),
-                    'profile' => zume_get_user_profile(),
-                    'user_stage' => zume_get_user_stage(),
-                    'training_items' => zume_training_items(),
-                    'host_progress' => zume_get_user_host(),
-                    'friends' => zume_get_user_friends(),
-                    'languages' => $zume_languages_by_code,
-                    'has_pieces_pages' => zume_feature_flag( 'pieces_pages', zume_current_language() ),
-                    'share_translations' => Zume_Training_Share::translations(),
-//                    'translations' => $this->translations(),
-                    'wizard_translations' => Zume_Training_Wizard::translations(),
-//                    'three_month_plan_questions' => self::three_month_plan_questions(),
-                    'urls' => [
-                        'logout' => esc_url( dt_login_url( 'logout' ) ),
-                        'launch_ten_session_course' => zume_10_session_url(),
-                        'launch_twenty_session_course' => zume_20_session_url(),
-                        'launch_intensive_session_course' => zume_intensive_session_url(),
-                        'set_profile_wizard' => esc_url( '#' ),
-                        'plan_training_wizard' => esc_url( zume_make_a_plan_wizard_url() ),
-                        'get_coach_wizard' => esc_url( zume_get_a_coach_wizard_url() ),
-                    ],
-                ]) ?>][0]
-
-                if ( type !== '' ) {
-                    $("select option[value="+type+"_"+session+"]").prop('selected', true );
-                }
-            });
-        </script>
-        <div style="margin-top: 70px;"><!-- padding for under dropdown -->
-
-        <?php
-        // slide printer
-        if ( isset( $_GET['type'], $_GET['session'] ) ) {
-
-            // get the slides for the schedule and session
-            $build = Zume_Course_Builder::builder( $_GET['type'], $language['code'], $_GET['session'] );
-
-            if ( empty( $_GET['session'] ) ) {
-                foreach( $build as $session ) {
-                    foreach( $session as $slide ) {
-                        // print keys above slides
-                        echo $slide['key'] . ' - ' . $slide['type'];
-                        echo '<br>';
-
-                        // print the slide
-                        echo '<div class="slide-outline">';
-
-                        zume_course_slide_template( $slide );
-
-                        echo '</div>';
-                    }
-                }
-            } else {
-                foreach( $build as $slide ) {
-                    // print keys above slides
-                    echo $slide['key'] . ' - ' . $slide['type'];
-                    echo '<br>';
-
-                    // print the slide
-                    echo '<div class="slide-outline">';
-
-                    zume_course_slide_template( $slide );
-
-                    echo '</div>';
-                }
-            }
-
-            // print the css
-            zume_course_slide_css($build);
-        }
-        ?>
-
-
-        </div> <!-- end padding for under dropdown -->
-        <?php
-
-    }
     public function assets() {
         if( $this->access_failure_test() ) {
             $this->list_approved_languages();
@@ -1398,7 +1131,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 } else {
                                     ?>
                                     <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                        <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
+                                        <strong><?php // echo $training_items[$row['piece_id']]['title'] ?? '' ?> <?php echo $row['piece_id'] ?></strong>
                                         <div style="width:400px;height:275px;">
                                         <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                                         </div>
@@ -1739,17 +1472,25 @@ if (!function_exists('list_zume_pieces')) {
     {
         global $wpdb, $table_prefix;
 
-        $sql = $wpdb->prepare("SELECT p.*, pm.meta_value as zume_lang, pm1.meta_value as zume_piece, pm2.meta_value as zume_piece_h1, pm3.meta_value as zume_pre_video_content, pm4.meta_value as zume_post_video_content, pm5.meta_value as zume_ask_content
-                                        FROM zume_posts p
-                                        JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
-                                        LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
-                                        LEFT JOIN zume_postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
-                                        LEFT JOIN zume_postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
-                                        LEFT JOIN zume_postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
-                                        LEFT JOIN zume_postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
-                                        WHERE p.post_type = 'zume_pieces'
-                                        ORDER BY CAST(pm1.meta_value AS unsigned );",
-            $language_code);
+        $sql = $wpdb->prepare("SELECT p.*,
+                                    pm.meta_value as zume_lang,
+                                    pm1.meta_value as zume_piece,
+                                    pm2.meta_value as zume_piece_h1,
+                                    pm3.meta_value as zume_pre_video_content,
+                                    pm4.meta_value as zume_post_video_content,
+                                    pm5.meta_value as zume_ask_content,
+                                    pm6.meta_value as zume_seo_meta_description
+                                FROM zume_posts p
+                                JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
+                                LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = 'zume_piece'
+                                LEFT JOIN zume_postmeta pm2 ON pm2.post_id = p.ID AND pm2.meta_key = 'zume_piece_h1'
+                                LEFT JOIN zume_postmeta pm3 ON pm3.post_id = p.ID AND pm3.meta_key = 'zume_pre_video_content'
+                                LEFT JOIN zume_postmeta pm4 ON pm4.post_id = p.ID AND pm4.meta_key = 'zume_post_video_content'
+                                LEFT JOIN zume_postmeta pm5 ON pm5.post_id = p.ID AND pm5.meta_key = 'zume_ask_content'
+                                LEFT JOIN zume_postmeta pm6 ON pm6.post_id = p.ID AND pm6.meta_key = 'zume_seo_meta_description'
+                                WHERE p.post_type = 'zume_pieces'
+                                ORDER BY CAST(pm1.meta_value AS unsigned );",
+                            $language_code );
         $results = $wpdb->get_results($sql, ARRAY_A);
 
         if (empty($results) || is_wp_error($results)) {
@@ -1809,11 +1550,11 @@ if (!function_exists('list_zume_activites')) {
     {
         global $wpdb;
 
-        $sql = $wpdb->prepare("SELECT  p.post_title, pm.post_id, pm.meta_id, pm.meta_value as title, pm1.meta_value as content
+        $sql = $wpdb->prepare("SELECT  p.post_title, pm.post_id, %s as language_code, pm.meta_id, pm.meta_value as title, pm1.meta_value as content
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'title_', %s )
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'content_', %s )
-                                        WHERE p.post_type = 'zume_activities';", $language_code, $language_code);
+                                        WHERE p.post_type = 'zume_activities';", $language_code, $language_code, $language_code );
 
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
@@ -1822,6 +1563,7 @@ if (!function_exists('list_zume_activites')) {
         return $results;
     }
 }
+
 if (!function_exists('list_zume_videos')) {
     function list_zume_videos($language_code)
     {
@@ -1844,3 +1586,55 @@ if (!function_exists('list_zume_videos')) {
         return $downloads;
     }
 }
+if ( ! function_exists( 'list_zume_messages' ) ) {
+    function list_zume_messages( $langauge_code ) {
+        global $wpdb;
+        $results = $wpdb->get_results(
+            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
+            FROM zume_posts p
+            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
+            WHERE p.post_type = 'zume_messages'
+                AND p.post_status != 'auto-draft'
+                AND pm.meta_key != '_edit_last'
+                AND pm.meta_key != '_edit_lock'
+                AND pm.meta_key != 'last_modified'", ARRAY_A );
+
+        $emails = [];
+        foreach( $results as $result ) {
+            $explode = explode('_', $result['meta_key']);
+            if ( ! isset( $explode[1]) ) {
+                continue;
+            }
+            if ( $explode[1] == $langauge_code ) {
+                if ( ! isset( $emails[$result['post_id']] ) ) {
+                    $emails[$result['post_id']] = [
+                        'post_id' => '',
+                        'post_parent_id' => '',
+                        'title' => '',
+                        'language_code' => '',
+                        'subject' => '',
+                        'body' => '',
+                        'footer' => '',
+                    ];
+                }
+
+                $emails[$result['post_id']]['post_id'] = $result['post_id'];
+                $emails[$result['post_id']]['post_parent_id'] = $result['post_parent'];
+                $emails[$result['post_id']]['title'] = $result['post_title'];
+                $emails[$result['post_id']]['language_code'] = $langauge_code;
+                if ( $explode[0] == 'subject' ) {
+                    $emails[$result['post_id']]['subject'] = $result['meta_value'];
+                }
+                if ( $explode[0] == 'body' ) {
+                    $emails[$result['post_id']]['body'] = $result['meta_value'] ?? '';
+                }
+                if ( $explode[0] == 'footer' ) {
+                    $emails[$result['post_id']]['footer'] = $result['meta_value'] ?? '';
+                }
+
+            }
+        }
+        return $emails;
+    }
+}
+

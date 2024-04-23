@@ -1910,6 +1910,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 1,
                 'script' => 34,
             ],
             '2' => [
@@ -1922,6 +1923,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 2,
                 'script' => 35,
             ],
             '3' => [
@@ -1934,6 +1936,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 3,
                 'script' => 36,
             ],
             '4' => [
@@ -1946,6 +1949,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 4,
                 'script' => 37,
             ],
             '5' => [
@@ -1958,6 +1962,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 5,
                 'script' => 38,
             ],
             '6' => [
@@ -1970,6 +1975,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 6,
                 'script' => 39,
             ],
             '7' => [
@@ -1982,6 +1988,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 7,
                 'script' => 40,
             ],
             '8' => [
@@ -1994,6 +2001,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 8,
                 'script' => 41,
             ],
             '9' => [
@@ -2006,6 +2014,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 9,
                 'script' => 42,
             ],
             '10' => [
@@ -2018,6 +2027,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 10,
                 'script' => 43,
             ],
             '11' => [
@@ -2030,6 +2040,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 11,
                 'script' => 44,
             ],
             '12' => [
@@ -2042,6 +2053,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 12,
                 'script' => 45,
             ],
             '13' => [
@@ -2054,6 +2066,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 13,
                 'script' => 46,
             ],
             '14' => [
@@ -2066,6 +2079,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 14,
                 'script' => 47,
             ],
             '15' => [
@@ -2078,6 +2092,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 15,
                 'script' => 48,
             ],
             '16' => [
@@ -2090,6 +2105,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 16,
                 'script' => 49,
             ],
             '17' => [
@@ -2102,6 +2118,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 17,
                 'script' => 50,
             ],
             '18' => [
@@ -2114,6 +2131,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 18,
                 'script' => 51,
             ],
             '19' => [
@@ -2126,6 +2144,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 19,
                 'script' => 52,
             ],
             '20' => [
@@ -2138,6 +2157,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => false,
                 'script' => false,
             ],
             '21' => [
@@ -2150,6 +2170,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 21,
                 'script' => 53,
             ],
             '22' => [
@@ -2162,6 +2183,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 22,
                 'script' => 54,
             ],
             '23' => [
@@ -2174,6 +2196,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 23,
                 'script' => 55,
             ],
             '24' => [
@@ -2186,6 +2209,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 24,
                 'script' => 56,
             ],
             '25' => [
@@ -2198,6 +2222,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 25,
                 'script' => 57,
             ],
             '26' => [
@@ -2210,6 +2235,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => true,
+                'video' => 26,
                 'script' => 58,
             ],
             '27' => [
@@ -2222,6 +2248,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => false,
+                'video' => false,
                 'script' => false,
             ],
             '28' => [
@@ -2234,6 +2261,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => false,
+                'video' => 28,
                 'script' => 60,
             ],
             '29' => [
@@ -2246,6 +2274,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 29,
                 'script' => 61,
             ],
             '30' => [
@@ -2258,6 +2287,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'concept',
                 'host' => true,
                 'mawl' => false,
+                'video' => 30,
                 'script' => 62,
             ],
             '31' => [
@@ -2270,6 +2300,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => false,
                 'script' => false,
             ],
             '32' => [
@@ -2282,6 +2313,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => false,
                 'script' => false,
             ],
             '33' => [
@@ -2294,6 +2326,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'type' => 'tool',
                 'host' => true,
                 'mawl' => true,
+                'video' => 33,
                 'script' => 63,
             ],
         ];
@@ -2308,6 +2341,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'title' => $training_item['title'],
                 'video_title' => $training_item['video_title'],
                 'slug' => $training_item['slug'],
+                'video' => $training_item['video'],
                 'script' => $training_item['script'],
                 'description' => $training_item['description'],
                 'host' => $training_item['host'] ? [

@@ -665,15 +665,15 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
-        $fields['20'] = array(
-            'name'        => '3|3 Groups (20)',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'scribe',
-        );
+//        $fields['20'] = array(
+//            'name'        => '3|3 Groups (20)',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'scribe',
+//        );
         $fields['21'] = array(
-            'name'        => '3|3 Group Live (21)',
+            'name'        => '3|3 Group (21)',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
@@ -714,13 +714,13 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
-        $fields['27'] = array(
-            'name'        => 'Completion of Training (27)',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'scribe',
-        );
+//        $fields['27'] = array(
+//            'name'        => 'Completion of Training (27)',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'scribe',
+//        );
         $fields['28'] = array(
             'name'        => 'Coaching Checklist (28)',
             'description' => '',
@@ -742,20 +742,8 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
-        $fields['31'] = array(
-            'name'        => 'Overview (31)',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'scribe',
-        );
-        $fields['32'] = array(
-            'name'        => 'How Zume Works (32)',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'scribe',
-        );
+        // 31 hold for 4 fields
+        // 32 hold for Generational Mapping
         $fields['33'] = array(
             'name'        => '3-Circles (33)',
             'description' => '',
@@ -763,8 +751,25 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
+
+
+
         $fields['68'] = array(
             'name'        => 'Four Relationships (68)',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'scribe',
+        );
+        $fields['69'] = array(
+            'name'        => 'Overview (69)',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'scribe',
+        );
+        $fields['70'] = array(
+            'name'        => 'How Zume Works (70)',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
