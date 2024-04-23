@@ -19,6 +19,7 @@ export class DashTrainings extends DashPage {
         this.loading = false
         this.route = DashBoard.getRoute('my-training')
 
+        /* @todo remove this hardcoded section ?? maybe? */
         this.currentSession = 'set_a_06'
         this.sessions = [
             {

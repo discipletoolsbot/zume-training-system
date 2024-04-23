@@ -404,7 +404,7 @@ export class Wizard extends LitElement {
                         component: (step, t, classes) => html`
                             <div class=${`stack ${classes}`}>
                                 <h2>${t.join_community}</h2>
-                                <p>These are all the things that you get when you join</p>
+                                <p>These are all the things that you get when you join</p> <!-- @todo content for this panel -->
                                 <ul role="list">
                                     <li>lots of good things</li>
                                     <li>and more</li>

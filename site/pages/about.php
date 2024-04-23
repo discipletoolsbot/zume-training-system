@@ -190,7 +190,7 @@ class Zume_Training_About extends Zume_Magic_Page
                     <div class="stack | px-3">
                         <div class="position-relative">
                             <div class="responsive-embed widescreen m0">
-                                <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '32' ) ) ?>" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '70' ) ) ?>" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>

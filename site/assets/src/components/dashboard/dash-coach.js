@@ -20,11 +20,11 @@ export class DashCoach extends DashPage {
                       </div>
                       <div class="dash-menu__text-area | switcher | switcher-width-20">
                         <div>
-                          <h3 class="f-1 bold uppercase">Get a Coach</h3>
-                          <p>My Plans supports your 3-month plan and future plans and connection to coaches.</p>
+                          <h3 class="f-1 bold uppercase">${jsObject.translations.get_a_coach}</h3>
+                          <p>${jsObject.translations.get_a_coach_explanation}</p>
                         </div>
                         <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
-                          ${jsObject.translations.create_3_month_plan}
+                          ${jsObject.translations.get_a_coach}
                         </button>
                       </div>
                     </div>

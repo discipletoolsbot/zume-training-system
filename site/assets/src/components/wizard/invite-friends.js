@@ -38,7 +38,7 @@ export class InviteFriends extends LitElement {
         this.skippable = false
         this.t = {}
         this.inviteCode = '123456'
-        this.url = `https://zume5.test/zume_app/plan_invite${this.inviteCode !== '' ? '?code=' + this.inviteCode : ''}`
+        this.url = jsObject.site_url + `/zume_app/plan_invite${this.inviteCode !== '' ? '?code=' + this.inviteCode : ''}`
     }
 
     render() {

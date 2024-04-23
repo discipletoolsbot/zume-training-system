@@ -236,8 +236,8 @@ export class DashPlans extends DashPage {
                               </div>
                               <div class="dash-menu__text-area | switcher | switcher-width-20">
                                 <div>
-                                  <h3 class="f-1 bold uppercase">My Plans are Locked</h3>
-                                  <p>My Plans supports your 3-month plan and future plans and connection to coaches.</p>
+                                  <h3 class="f-1 bold uppercase">${jsObject.translations.my_plans_locked}</h3>
+                                  <p>${jsObject.translations.my_plans_locked_explanation}</p>
                                 </div>
                                 <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
                                   ${jsObject.translations.create_3_month_plan}

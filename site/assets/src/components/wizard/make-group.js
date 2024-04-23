@@ -55,33 +55,33 @@ export class MakePlan extends LitElement {
     render() {
         return html`
             ${this.variant === ZumeWizardSteps.howManySessions ? html`
-                <h2>Will you do 1 or 2 hour training sessions?</h2>
+                <h2>${jsObject.translations.question_which_session}</h2>
                 <div class="stack">
-                    <button class="btn" @click=${this._handleDone}>1 hour (20 sessions)</button>
-                    <button class="btn" @click=${this._handleDone}>2 hour (10 sessions)</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.hour_1_session_20}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.hour_2_session_10}</button>
                 </div>
             ` : ''}
             ${this.variant === ZumeWizardSteps.whatTimeOfDay ? html`
-                <h2>What time of day?</h2>
+                <h2>${jsObject.translations.question_which_time}</h2>
                 <div class="stack">
-                    <button class="btn" @click=${this._handleDone}>Morning</button>
-                    <button class="btn" @click=${this._handleDone}>Afternoon</button>
-                    <button class="btn" @click=${this._handleDone}>Evening</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.morning}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.afternoon}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.evening}</button>
                 </div>
             ` : ''}
             ${this.variant === ZumeWizardSteps.howOften ? html`
-                <h2>How often will you meet?</h2>
+                <h2>${jsObject.translations.question_how_often}</h2>
                 <div class="stack">
-                    <button class="btn" @click=${this._handleDone}>Every day</button>
-                    <button class="btn" @click=${this._handleDone}>Once a week</button>
-                    <button class="btn" @click=${this._handleDone}>Twice a month</button>
-                    <button class="btn" @click=${this._handleDone}>Once a month</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.daily}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.weekly}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.bimonthly}</button>
+                    <button class="btn" @click=${this._handleDone}>${jsObject.translations.monthly}</button>
                 </div>
             ` : ''}
             ${this.variant === ZumeWizardSteps.startDate ? html`
-                <h2>When do you plan to start?</h2>
+                <h2>${jsObject.translations.question_when_will_you_start}</h2>
                 <input type="date">
-                <button class="btn" @click=${this._handleDone}>Done</button>
+                <button class="btn" @click=${this._handleDone}>${jsObject.translations.done}</button>
             ` : ''}
 
         `;
