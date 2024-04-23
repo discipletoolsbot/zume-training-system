@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Zume-Icons-Square';
-  src:  url('fonts/Zume-Icons-Square.eot?q1akxs');
-  src:  url('fonts/Zume-Icons-Square.eot?q1akxs#iefix') format('embedded-opentype'),
-    url('fonts/Zume-Icons-Square.ttf?q1akxs') format('truetype'),
-    url('fonts/Zume-Icons-Square.woff?q1akxs') format('woff'),
-    url('fonts/Zume-Icons-Square.svg?q1akxs#Zume-Icons-Square') format('svg');
+  src:  url('fonts/Zume-Icons-Square.eot?pzb5aa');
+  src:  url('fonts/Zume-Icons-Square.eot?pzb5aa#iefix') format('embedded-opentype'),
+    url('fonts/Zume-Icons-Square.ttf?pzb5aa') format('truetype'),
+    url('fonts/Zume-Icons-Square.woff?pzb5aa') format('woff'),
+    url('fonts/Zume-Icons-Square.svg?pzb5aa#Zume-Icons-Square') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -67,7 +67,7 @@
 .zume-coach-locked:before {
   content: "\e926";
 }
-.zume-trainings-locked:before {
+.zume-group-locked:before {
   content: "\e927";
 }
 .zume-tools-locked:before {

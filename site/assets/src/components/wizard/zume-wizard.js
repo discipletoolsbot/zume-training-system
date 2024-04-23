@@ -267,7 +267,7 @@ export class Wizard extends LitElement {
         }
 
         console.log('GOTO Dashboard', quit)
-        window.location.href = url
+        window.location.href = url.href
     }
 
     _gotoStep(index, pushState = true) {

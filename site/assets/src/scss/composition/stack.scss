@@ -12,6 +12,21 @@
     margin-block-start: var(--space, spacing(0));
 }
 
+.stack-margin-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack-margin-bottom > * {
+  margin-block: 0;
+  margin-block-end: var(--space, spacing(0));
+}
+
+.stack-margin-bottom > :last-child {
+  margin-block-end: 0;
+}
+
 $stack-sizes: (-5, -4, -3, -2, -1, 1, 2, 3, 4, 5);
 
 @each $i in $stack-sizes {

@@ -217,7 +217,7 @@ export class DashProgress extends DashPage {
 
     render() {
         return html`
-            <div class="dashboard__content" data-no-secondary-area>
+            <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <div class="dashboard__title">
                         <dash-sidebar-toggle></dash-sidebar-toggle>
@@ -261,6 +261,9 @@ export class DashProgress extends DashPage {
                             </ul>
                         `
                     }
+                </div>
+                <div class="dashboard__secondary">
+                    <dash-cta></dash-cta>
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">

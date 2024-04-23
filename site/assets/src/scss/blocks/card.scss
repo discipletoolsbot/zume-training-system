@@ -3,9 +3,35 @@
     box-shadow: var(--z-shadow) 2px 2px 3px 0px;
     padding: spacing(0) spacing(1);
     text-align: center;
+    transition: all calc( var(--duration, 500ms) ) ease-out;
 
     &.cta {
         border: 2px solid color('brand-light');
+        opacity: 0;
+    }
+
+    &.celebration {
+        background-color: color('brand-light');
+        color: color('white');
+        opacity: 0;
+    }
+
+    &.showing {
+        opacity: 1;
+    }
+    &.hiding {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    &.transition-out {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        transform: translateX(-100px) scale(1.1);
     }
 
     .btn {
