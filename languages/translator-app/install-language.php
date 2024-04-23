@@ -14,32 +14,47 @@ if ( is_admin() ) {
             ?>
             <div class="wrap">
                 <h2>Install Zume Language</h2><hr></hr>
-                <form method="post" action="">
-                    <input type="hidden" name="<?php echo __FUNCTION__ ?>_nonce" id="<?php echo __FUNCTION__ ?>_nonce" value="<?php echo esc_attr( wp_create_nonce( __FUNCTION__ ) ) ?>" />
-                    <label for="language">Language:</label>
-                    <select name="language">
-                        <option value="">Select Language</option>
-                        <option value="" disable>---</option>
-                        <?php
-                        foreach ($zume_languages_full_list as $value) {
-                            if ( $value['code'] === 'en') {
-                                continue;
+                <div style="text-align:center;" class="center">
+                    <form method="post" action="">
+                        <input type="hidden" name="<?php echo __FUNCTION__ ?>_nonce" id="<?php echo __FUNCTION__ ?>_nonce" value="<?php echo esc_attr( wp_create_nonce( __FUNCTION__ ) ) ?>" />
+                        <label for="language">Language:</label>
+                        <select name="language">
+                            <option value="">Select Language</option>
+                            <option value="" disable>---</option>
+                            <?php
+                            foreach ($zume_languages_full_list as $value) {
+                                if ( $value['code'] === 'en') {
+                                    continue;
+                                }
+                                echo '<option value="' . $value['code'] . '">' . $value['name'] . '</option>';
                             }
-                            echo '<option value="' . $value['code'] . '">' . $value['name'] . '</option>';
-                        }
-                        ?>
-                    </select>
-                    <input type="submit" name="submit" class="button" value="Install">
-                </form>
+                            ?>
+                        </select>
+                        <input type="submit" name="submit" class="button" value="Install">
+                    </form>
+                </div>
+
+
+
+
                 <hr></hr>
+
+
+
                 <?php
                 if ( isset( $_POST['language'] ) && wp_verify_nonce( $_POST[__FUNCTION__ . '_nonce'], __FUNCTION__ ) ) {
-//                    dt_write_log( $zume_languages_full_list[ $_POST['language'] ] );
                     $language = $zume_languages_full_list[ $_POST['language'] ];
                     $language_code = $language['code'];
                     ?>
+
+
                     <h1><?php echo 'Language: ' . $language['name'] ?></h1>
+
+
                     <hr></hr>
+
+
+
                     <h2>Pieces</h2>
                     <?php
                     /* Check that all training items are installed as pieces pages. */
@@ -55,44 +70,40 @@ if ( is_admin() ) {
                             JOIN zume_postmeta pm1 ON p.ID=pm1.post_id AND pm1.meta_key = 'zume_piece' AND pm1.meta_value = %s
                             WHERE p.post_type = 'zume_pieces'", $language_code, $item['key'] ) );
                         if ( $installed ) {
-                            echo '<p>' . $item['title'] . ' - <a href="https://zume5.training/wp-admin/post.php?post='.$installed.'&action=edit">&#10003;</a></p>';
+                            echo '<p>' . $item['title'] . ' - <a href="'.site_url().'/wp-admin/post.php?post='.$installed.'&action=edit">&#10003;</a></p>';
                         } else {
                             $added = self::install_piece( $item, $language );
                             if ( is_wp_error( $added ) || empty( $added ) ) {
                                 echo '<p>' . $item['title'] . ' - &#x2718;</p>';
                             } else {
-                                echo '<p>' . $item['title'] . ' - <a href="https://zume5.training/wp-admin/post.php?post='.$added.'&action=edit">&#10003; (Added New - '.$added.')</a></p>';
+                                echo '<p>' . $item['title'] . ' - <a href="'.site_url().'/wp-admin/post.php?post='.$added.'&action=edit">&#10003; (Added New - '.$added.')</a></p>';
                             }
                         }
                     }
                     ?>
 
+
                     <hr></hr>
+
+
                     <h2>Scripts</h2>
                     <?php
                     /* Check that script language is installed. */
                     $script_id = $wpdb->get_var( $wpdb->prepare(
                         "SELECT p.ID
                         FROM zume_posts p
-                        WHERE p.post_type = 'zume_download' AND p.post_title = %s", $language_code ) );
+                        WHERE p.post_type = 'zume_scripts' AND p.post_title = %s", $language_code ) );
                     if ( $script_id ) {
                         echo '<p>Script - &#10003;</p>';
 
                         $meta = get_post_meta( $script_id );
+                        $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
+
                         if ( $meta ) {
-                            $training_items = zume_training_items();
-                            foreach( $training_items as $item ) {
-                                if ( ! $item['script'] ) {
-                                    continue;
-                                }
-                               if ( ! isset( $meta[$item['script']] ) ) {
-                                   update_post_meta( $script_id, $item['script'], '' );
-                                   echo '<p>Added ' . $item['title'] . '('.$item['script'].') - &#10003;</p>';
-                               }
-                               $script_key = $item['script'].'_script';
-                               if ( ! isset( $meta[$script_key] ) ) {
-                                   update_post_meta( $script_id, $script_key, '' );
-                                   echo '<p>Added ' . $item['title'] . '('. $script_key .') - &#10003;</p>';
+                            foreach( $fields as $key => $item ) {
+                               if ( ! isset( $meta[$key] ) ) {
+                                   update_post_meta( $script_id, $key, '' );
+                                   echo '<p>Added ' . $item['title'] . '('. $key .') - &#10003;</p>';
                                }
                             }
                         }
@@ -104,6 +115,40 @@ if ( is_admin() ) {
                     ?>
 
                     <hr></hr>
+
+
+
+                    <h2>Downloads</h2>
+                    <?php
+                    /* Check that script language is installed. */
+                    $download_id = $wpdb->get_var( $wpdb->prepare(
+                        "SELECT p.ID
+                        FROM zume_posts p
+                        WHERE p.post_type = 'zume_download' AND p.post_title = %s", $language_code ) );
+
+                    if ( $download_id ) {
+                        echo '<p>Downloads - &#10003;</p>';
+
+                        $meta = get_post_meta( $download_id );
+                        $fields = Zume_Downloads_Post_Type::instance()->get_custom_fields_settings();
+
+                        foreach( $fields as $key => $item ) {
+                            if ( ! isset( $meta[$key] ) ) {
+                                update_post_meta( $download_id, $key, '' );
+                                echo '<p>Added ' . $item['title'] . '('. $key .') - &#10003;</p>';
+                            }
+                        }
+                    } else {
+                        echo '<p>Downloads - &#x2718;</p>';
+                        echo '<p><a href="/wp-admin/edit.php?post_type=zume_download">Got to add new record for the language.</a></p>';
+                        // @todo trigger install
+                    }
+                    ?>
+
+
+                    <hr></hr>
+
+
                     <h2>Videos</h2>
                     <?php
                     /* Check that video language is installed. */
@@ -115,13 +160,13 @@ if ( is_admin() ) {
                         echo '<p>Video - &#10003;</p>';
 
                         $meta = get_post_meta( $video_id );
-                        if ( $meta ) {
-                            $training_items = zume_training_items();
-                            foreach( $training_items as $item ) {
-                                if ( ! isset( $meta[$item['key']] ) ) {
-                                    update_post_meta( $video_id, $item['key'], '' );
-                                    echo '<p>Added ' . $item['title'] . ' - &#10003;</p>';
-                                }
+                        $fields = Zume_Video_Post_Type::instance()->get_custom_fields_settings();
+
+                        $training_items = zume_training_items();
+                        foreach( $fields as $key => $item ) {
+                            if ( ! isset( $meta[$key] ) ) {
+                                update_post_meta( $video_id, $key, '' );
+                                echo '<p>Added ' . $item['title'] . '('.$key.') - &#10003;</p>';
                             }
                         }
                     } else {
@@ -131,7 +176,11 @@ if ( is_admin() ) {
                     }
                     ?>
 
+
                     <hr></hr>
+
+
+
                     <h2>Messages</h2>
                     <?php
                     /* Check that video language is installed. */
@@ -146,13 +195,13 @@ if ( is_admin() ) {
                             $meta = get_post_meta( $message );
                             if ( $meta ) {
                                 foreach( $zume_languages_full_list as $item ) {
-                                    if ( ! get_post_meta( $message, 'subject_'.$item['code'], true ) ) {
+                                    if ( ! isset( $meta['subject_'.$item['code']] ) ) {
                                         update_post_meta( $message, 'subject_'.$item['code'], '' );
-                                        echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
+                                        echo '<p>Added ' . $item['name'] . ' subject_'.$item['code'].' - &#10003;</p>';
                                     }
-                                    if ( ! get_post_meta( $message, 'body_'.$item['code'], true ) ) {
+                                    if ( ! isset( $meta['body_'.$item['code']] ) ) {
                                         update_post_meta( $message, 'body_'.$item['code'], '' );
-                                        echo '<p>Added ' . $item['name'] . ' - &#10003;</p>';
+                                        echo '<p>Added ' . $item['name'] . ' body_'.$item['code'].'  - &#10003;</p>';
                                     }
                                 }
                             }
