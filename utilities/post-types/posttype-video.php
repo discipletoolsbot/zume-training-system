@@ -665,13 +665,7 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
-//        $fields['20'] = array(
-//            'name'        => '3|3 Groups (20)',
-//            'description' => '',
-//            'type'        => 'link',
-//            'default'     => '',
-//            'section'     => 'scribe',
-//        );
+        // 20 hold for Bless Prayer
         $fields['21'] = array(
             'name'        => '3|3 Group (21)',
             'description' => '',
@@ -714,13 +708,7 @@ class Zume_Video_Post_Type
             'default'     => '',
             'section'     => 'scribe',
         );
-//        $fields['27'] = array(
-//            'name'        => 'Completion of Training (27)',
-//            'description' => '',
-//            'type'        => 'link',
-//            'default'     => '',
-//            'section'     => 'scribe',
-//        );
+        // 27 hold for 3 month plan
         $fields['28'] = array(
             'name'        => 'Coaching Checklist (28)',
             'description' => '',
@@ -753,7 +741,7 @@ class Zume_Video_Post_Type
         );
 
 
-
+        // additional videos
         $fields['68'] = array(
             'name'        => 'Four Relationships (68)',
             'description' => '',

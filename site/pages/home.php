@@ -199,7 +199,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                 <div class="w-80 video-frame mx-auto position-relative bg-white rounded hard-shadow">
                     <div class="mx-auto">
                         <div class="responsive-embed widescreen m0">
-                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '31' ) ) ?>" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '69' ) ) ?>" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <!-- <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"> -->
                     </div>
@@ -236,7 +236,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                 <div class="px-3">
                     <div class="position-relative">
                         <div class="responsive-embed widescreen m0">
-                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '32' ) ) ?>" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '70' ) ) ?>" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <a href="<?php echo esc_url( zume_about_url() ) ?>" class="d-block uppercase bold brand fit-content mx-auto"><?php echo esc_html__( 'More about zume', 'zume' ) ?></a>
