@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-22 07:55-0600\n"
-"PO-Revision-Date: 2024-04-18 11:59+0000\n"
+"POT-Creation-Date: 2024-04-23 13:53-0600\n"
+"PO-Revision-Date: 2024-04-23 16:22+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/it_IT/>\n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.3\n"
+"X-Generator: Weblate 5.5\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:191
-#: site/dashboard/dashboard.php:241 site/parts/footer.php:11
+#: site/dashboard/dashboard.php:243 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "Istruzione"
@@ -75,14 +75,14 @@ msgstr "Storie"
 msgid "Global Map"
 msgstr "Mappa Globale"
 
-#: globals.php:1907 globals.php:1908 site/course/course-content.php:86
+#: globals.php:1905 globals.php:1907 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178
 msgid "God Uses Ordinary People"
 msgstr "Dio Usa La Gente Comune"
 
-#: globals.php:1909 site/pages/follow-jesus.php:168
+#: globals.php:1906 site/pages/follow-jesus.php:168
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -90,17 +90,12 @@ msgstr ""
 "Vedrete come Dio usa la gente comune facendo cose semplici per avere un "
 "grande impatto."
 
-#: globals.php:1919 site/course/course-content.php:3161
+#: globals.php:1916 site/course/course-content.php:3161
 #: site/course/course-content.php:3179
 msgid "Simple Definition of Disciple and Church"
 msgstr "Una Definizione Semplice di Discepolo e Chiesa"
 
-#: globals.php:1920 site/course/course-content.php:143
-#: site/course/course-content.php:152
-msgid "Disciples and the Church"
-msgstr ""
-
-#: globals.php:1921 site/course/course-content.php:153
+#: globals.php:1917 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:172
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
@@ -108,27 +103,30 @@ msgid ""
 msgstr ""
 "Scopri l'essenza di essere un discepolo, fare discepoli, e cosa è la chiesa."
 
-#: globals.php:1931 site/course/course-content.php:3162
+#: globals.php:1918 site/course/course-content.php:143
+#: site/course/course-content.php:152
+msgid "Disciples and the Church"
+msgstr "I Discepoli e la Chiesa"
+
+#: globals.php:1927 site/course/course-content.php:3162
 #: site/course/course-content.php:3180
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Il Respiro Spirituale significa ascoltare Dio e ubbidirGli."
 
-#: globals.php:1932 site/course/course-content.php:189
-#: site/course/course-content.php:198
-#, fuzzy
-msgid "Hearing and Obeying God"
-msgstr "Il Respiro Spirituale significa ascoltare Dio e ubbidirGli."
-
-#: globals.php:1933 site/pages/follow-jesus.php:194
+#: globals.php:1928 site/pages/follow-jesus.php:194
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "Essere un discepolo significa che ascoltiamo e obbediamo Dio."
 
-#: globals.php:1943 globals.php:1944
-#, fuzzy
-msgid "S.O.A.P.S. Bible Study"
-msgstr "LETTURA DELLA BIBBIA S.O.A.P.C."
+#: globals.php:1929 site/course/course-content.php:189
+#: site/course/course-content.php:198
+msgid "Hearing and Obeying God"
+msgstr "Ascoltare e Obbedire Dio"
 
-#: globals.php:1945 site/pages/follow-jesus.php:209
+#: globals.php:1938 globals.php:1940
+msgid "S.O.A.P.S. Bible Study"
+msgstr "Studio della Bibbia S.O.A.P.C."
+
+#: globals.php:1939 site/pages/follow-jesus.php:209
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -136,14 +134,14 @@ msgstr ""
 "Uno strumento per lo studio quotidiano della Bibbia che ti aiuta a "
 "comprendere, obbedire, e condividere la Parola di Dio."
 
-#: globals.php:1955 globals.php:1956 site/course/course-content.php:93
+#: globals.php:1949 globals.php:1951 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425
 msgid "Accountability Groups"
 msgstr "Gruppi di Corresponsabilità"
 
-#: globals.php:1957 site/pages/follow-jesus.php:224
+#: globals.php:1950 site/pages/follow-jesus.php:224
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -153,16 +151,11 @@ msgstr ""
 "settimanalmente e incoraggiarsi reciprocamente nelle aree che vanno bene e "
 "rivelare aree che hanno bisogno di correzione."
 
-#: globals.php:1967
+#: globals.php:1960
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Lo Stile di Vita dei Produttori vs Consumatori"
 
-#: globals.php:1968
-#, fuzzy
-msgid "Producer not Consumer"
-msgstr "Produttori vs Consumatori"
-
-#: globals.php:1969 site/pages/follow-jesus.php:188
+#: globals.php:1961 site/pages/follow-jesus.php:188
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -170,38 +163,42 @@ msgstr ""
 "Scoprirai i quattro modi principali in cui Dio rende ogni giorno i discepoli "
 "più simili a Gesù."
 
-#: globals.php:1979 globals.php:1980
+#: globals.php:1962
+msgid "Producer not Consumer"
+msgstr "Un Produttore e non un Consumatore"
+
+#: globals.php:1971 globals.php:1973
 msgid "How to Spend an Hour in Prayer"
 msgstr "Come Trascorrere un'Ora in Preghiera"
 
-#: globals.php:1981 site/pages/follow-jesus.php:198
+#: globals.php:1972 site/pages/follow-jesus.php:198
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Vedi come è facile trascorrere un'ora in preghiera."
 
-#: globals.php:1991
+#: globals.php:1982
 msgid "Relational Stewardship – List of 100"
 msgstr "Lista dei 100"
 
-#: globals.php:1992 site/course/course-content.php:477
+#: globals.php:1983 site/pages/follow-jesus.php:285
+msgid "A tool designed to help you be a good steward of your relationships."
+msgstr ""
+"Uno strumento disegnato per aiutarti ad essere un buon amministratore delle "
+"tue relazioni."
+
+#: globals.php:1984 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
 msgid "List of 100"
 msgstr "Lista dei 100"
 
-#: globals.php:1993 site/pages/follow-jesus.php:285
-msgid "A tool designed to help you be a good steward of your relationships."
-msgstr ""
-"Uno strumento disegnato per aiutarti ad essere un buon amministratore delle "
-"tue relazioni."
-
-#: globals.php:2003 globals.php:2004 site/course/course-content.php:796
+#: globals.php:1993 globals.php:1995 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Economia Spirituale"
 
-#: globals.php:2005 site/pages/follow-jesus.php:243
+#: globals.php:1994 site/pages/follow-jesus.php:243
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -209,16 +206,11 @@ msgstr ""
 "Impara come l'economia di Dio è differente da quella del mondo. Dio investe "
 "più in quelli che sono fedeli con quello che a loro è già stato dato."
 
-#: globals.php:2015
+#: globals.php:2004
 msgid "The Gospel and How to Share It"
 msgstr "Il Vangelo e Come Condividerlo"
 
-#: globals.php:2016
-#, fuzzy
-msgid "Sharing God‘s Story"
-msgstr "Praticare Condividendo la Testimonianza (45min)"
-
-#: globals.php:2017 site/pages/follow-jesus.php:289
+#: globals.php:2005 site/pages/follow-jesus.php:289
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -226,18 +218,15 @@ msgstr ""
 "Impara un modo per condividere la Buona Notizia di Dio dall'inizio "
 "dell'umanità fino alla fine di questo tempo."
 
-#: globals.php:2027
+#: globals.php:2006
+msgid "Sharing God‘s Story"
+msgstr "Condividere la Storia di Dio"
+
+#: globals.php:2015
 msgid "Baptism and How To Do It"
 msgstr "Il Battesimo e Come Farlo"
 
-#: globals.php:2028 site/course/course-content.php:801
-#: site/course/course-content.php:949 site/course/course-content.php:958
-#: site/course/course-content.php:1021 site/course/course-content.php:4076
-#: site/course/course-content.php:4093
-msgid "Baptism"
-msgstr "Il Battesimo"
-
-#: globals.php:2029 site/pages/follow-jesus.php:236
+#: globals.php:2016 site/pages/follow-jesus.php:236
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -247,15 +236,18 @@ msgstr ""
 "nome del Padre e del Figlio e dello Spirito Santo....\". Imparate a mettere "
 "ciò in pratica."
 
-#: globals.php:2039
+#: globals.php:2017 site/course/course-content.php:801
+#: site/course/course-content.php:949 site/course/course-content.php:958
+#: site/course/course-content.php:1021 site/course/course-content.php:4076
+#: site/course/course-content.php:4093
+msgid "Baptism"
+msgstr "Il Battesimo"
+
+#: globals.php:2026
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "La Tua Testimonianza in 3 Minuti"
 
-#: globals.php:2040
-msgid "3-Minute Testimony"
-msgstr "Testimonianza in 3 minuti"
-
-#: globals.php:2041 site/pages/follow-jesus.php:293
+#: globals.php:2027 site/pages/follow-jesus.php:293
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -263,18 +255,17 @@ msgstr ""
 "Impara come condividere la tua testimonianza in tre minuti parlando di come "
 "Gesù ha avuto un impatto nella tua vita."
 
-#: globals.php:2051 site/course/course-content.php:1140
+#: globals.php:2028
+msgid "3-Minute Testimony"
+msgstr "Testimonianza in 3 minuti"
+
+#: globals.php:2037 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Condividere la Visione la Massima Benedizione"
 
-#: globals.php:2052
-#, fuzzy
-msgid "Great, Greater, and Greatest Blessing"
-msgstr "La Massima Benedizione"
-
-#: globals.php:2053 site/course/course-content.php:1216
+#: globals.php:2038 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:176
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -283,30 +274,33 @@ msgstr ""
 "Impara un semplice metodo di fare non solo un seguace di Gesù ma intere "
 "famiglie spirituali che moltiplicano nelle generazioni future."
 
-#: globals.php:2063
+#: globals.php:2039
+msgid "Great, Greater, and Greatest Blessing"
+msgstr "La Grande Benedizione, L'Immensa Benedizione, e La Massima Benedizione"
+
+#: globals.php:2048
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "Discepolare Come Anatroccoli - Diventare un Leader Subito"
 
-#: globals.php:2064 site/course/course-content.php:1141
+#: globals.php:2049
+msgid "Learn what ducklings have to do with disciple-making."
+msgstr "Imparate cosa hanno a che fare gli anatroccoli con il fare discepoli."
+
+#: globals.php:2050 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Discepolare come anatroccoli"
 
-#: globals.php:2065
-msgid "Learn what ducklings have to do with disciple-making."
-msgstr "Imparate cosa hanno a che fare gli anatroccoli con il fare discepoli."
-
-#: globals.php:2075 globals.php:2076 site/course/course-content.php:1142
+#: globals.php:2059 globals.php:2061 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Occhi per vedere dove non c'è il Regno di Dio"
 
-#: globals.php:2077 site/pages/follow-jesus.php:247
+#: globals.php:2060 site/pages/follow-jesus.php:247
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -314,19 +308,11 @@ msgstr ""
 "Cominciate a vedere dove non c'è il Regno di Dio. Questi di solito sono i "
 "posti dove Dio vuole lavorare di più."
 
-#: globals.php:2087
+#: globals.php:2070
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "La Cena del Signore e Come Celebrarla"
 
-#: globals.php:2088 site/course/course-content.php:1147
-#: site/course/course-content.php:1344 site/course/course-content.php:1353
-#: site/course/course-content.php:1409 site/course/course-content.php:4358
-#: site/course/course-content.php:4379
-#, fuzzy
-msgid "The Lord’s Supper"
-msgstr "La Cena del Signore"
-
-#: globals.php:2089
+#: globals.php:2071
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -334,56 +320,54 @@ msgstr ""
 "È un modo semplice per celebrare il nostro legame intimo e la nostra "
 "continua relazione con Gesù. Imparate un modo semplice di celebrarla."
 
-#: globals.php:2099
+#: globals.php:2072 site/course/course-content.php:1147
+#: site/course/course-content.php:1344 site/course/course-content.php:1353
+#: site/course/course-content.php:1409 site/course/course-content.php:4358
+#: site/course/course-content.php:4379
+msgid "The Lord’s Supper"
+msgstr "La Cena del Signore"
+
+#: globals.php:2081
 msgid "Prayer Walking and How To Do It"
 msgstr "La Camminata di Preghiera e Come Farla"
 
-#: globals.php:2100 site/course/course-content.php:1520
+#: globals.php:2082
+msgid ""
+"It‘s a simple way to obey God’s command to pray for others. And it‘s just "
+"what it sounds like — praying to God while walking around!"
+msgstr ""
+"E' un modo semplice per obbedire al comandamento di Dio di pregare per gli "
+"altri. Ed è proprio questo: pregare Dio mentre si cammina!"
+
+#: globals.php:2083 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "La Camminata di Preghiera"
 
-#: globals.php:2101
-#, fuzzy
-msgid ""
-"It‘s a simple way to obey God’s command to pray for others. And it‘s just "
-"what it sounds like — praying to God while walking around!"
-msgstr ""
-"E' un modo semplice per ubbedire al comandamento di Dio di pregare per gli "
-"altri. Ed è proprio questo: pregare Dio mentre si cammina!"
-
-#: globals.php:2111
+#: globals.php:2092
 msgid "A Person of Peace and How To Find One"
 msgstr "Le Persone di Pace e Come Riconscerle"
 
-#: globals.php:2112 site/course/course-content.php:1515
+#: globals.php:2093
+msgid ""
+"Learn who a person of peace might be and how to know when you‘ve found one."
+msgstr ""
+"Impara chi potrebbe essere una persona di pace e come capire quando ne hai "
+"trovata una."
+
+#: globals.php:2094 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "Persona di Pace"
 
-#: globals.php:2113
-#, fuzzy
-msgid ""
-"Learn who a person of peace might be and how to know when you‘ve found one."
-msgstr ""
-"Impara chi potrebbe essere una persona di pace e come riconoscere quando ne "
-"hai trovata una."
-
-#: globals.php:2123
+#: globals.php:2103
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "La Fedeltà è Meglio della Conoscenza"
 
-#: globals.php:2124 site/course/course-content.php:1765
-#: site/course/course-content.php:1774 site/course/course-content.php:4730
-#: site/course/course-content.php:4777
-msgid "Faithfulness"
-msgstr "Fedeltà"
-
-#: globals.php:2125
-#, fuzzy
+#: globals.php:2104
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
@@ -391,66 +375,69 @@ msgstr ""
 "È importante ciò che i discepoli conoscono – ma è molto più importante cosa "
 "FANNO con ciò che conoscono."
 
-#: globals.php:2135
+#: globals.php:2105 site/course/course-content.php:1765
+#: site/course/course-content.php:1774 site/course/course-content.php:4730
+#: site/course/course-content.php:4777
+msgid "Faithfulness"
+msgstr "Fedeltà"
+
+#: globals.php:2114
 msgid "The BLESS Prayer Pattern"
 msgstr "La Preghiera B.L.E.S.S."
 
-#: globals.php:2136 site/course/course-content.php:1603
-#, fuzzy
-msgid "The B.L.E.S.S. Prayer"
-msgstr "Praticare la preghiera B.L.E.S.S. (15 min)"
-
-#: globals.php:2137 site/pages/follow-jesus.php:202
+#: globals.php:2115 site/pages/follow-jesus.php:202
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "Fate pratica con un semplice promemoria per ricordarvi i modi di pregare per "
 "gli altri."
 
-#: globals.php:2147
-#, fuzzy
+#: globals.php:2116 site/course/course-content.php:1603
+msgid "The B.L.E.S.S. Prayer"
+msgstr "La Preghiera B.L.E.S.S."
+
+#: globals.php:2125
 msgid "3/3 Group Meeting Pattern"
 msgstr "Il Format del Gruppo 3/3"
 
-#: globals.php:2148
-msgid "3/3 Group"
-msgstr "Gruppo 3/3"
-
-#: globals.php:2149
-#, fuzzy
+#: globals.php:2126
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
 "Un gruppo 3/3 è un modo per i seguaci di Gesù di incontrarsi, pregare, "
-"imparare, crescere, avere comunione e praticare ubbidendo e condividendo "
-"quanto appreso. In questo modo, un Gruppo 3/3 non è solo un piccolo gruppo, "
-"ma una Chiesa Semplice."
+"imparare, crescere, avere comunione e praticare obbedendo e condividendo ciò "
+"che hanno imparato. In questo modo, un Gruppo 3/3 non è solo un piccolo "
+"gruppo, ma una Chiesa Semplice."
 
-#: globals.php:2159
+#: globals.php:2127
+msgid "3/3 Group"
+msgstr "Gruppo 3/3"
+
+#: globals.php:2136
 msgid "Training Cycle for Maturing Disciples"
 msgstr "Il Ciclo di Addestramento"
 
-#: globals.php:2160 site/course/course-content.php:5032
-#: site/course/course-content.php:5049
-msgid "Training Cycle"
-msgstr "Ciclo di Addestramento"
-
-#: globals.php:2161 site/pages/follow-jesus.php:270
+#: globals.php:2137 site/pages/follow-jesus.php:270
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "Imparate il ciclo di addestramento e considerate come si applica alla "
 "formazione dei discepoli."
 
-#: globals.php:2171 globals.php:2172 site/course/course-content.php:2190
+#: globals.php:2138 site/course/course-content.php:5032
+#: site/course/course-content.php:5049
+msgid "Training Cycle"
+msgstr "Ciclo di Addestramento"
+
+#: globals.php:2147 globals.php:2149 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050
 msgid "Leadership Cells"
 msgstr "Cellule di Leadership"
 
-#: globals.php:2173 site/course/course-content.php:2213
+#: globals.php:2148 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:325
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -460,13 +447,12 @@ msgstr ""
 "chiamato a dirigere può sviluppare la propria leadership con la pratica del "
 "servire."
 
-#: globals.php:2183 globals.php:2184 site/course/course-content.php:5157
+#: globals.php:2158 globals.php:2160 site/course/course-content.php:5157
 #: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
 msgstr "La Crescita Non Sequenziale"
 
-#: globals.php:2185
-#, fuzzy
+#: globals.php:2159
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
@@ -474,17 +460,11 @@ msgstr ""
 "Vedi come il fare discepoli non deve essere lineare. Molteplici cose possono "
 "accadere allo stesso tempo."
 
-#: globals.php:2195 site/course/course-content.php:2770
+#: globals.php:2169 site/course/course-content.php:2770
 msgid "Pace of Multiplication Matters"
 msgstr "La Velocità della Moltiplicazione è Importante"
 
-#: globals.php:2196 site/course/course-content.php:2390
-#: site/course/course-content.php:2450 site/course/course-content.php:2459
-#: site/course/course-content.php:5158 site/course/course-content.php:5176
-msgid "Pace"
-msgstr "Velocità"
-
-#: globals.php:2197 site/pages/follow-jesus.php:278
+#: globals.php:2170 site/pages/follow-jesus.php:278
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -492,25 +472,31 @@ msgstr ""
 "Moltiplicare è importante e moltiplicare rapidamente è ancora più "
 "importante. Ecco perché il ritmo è importante."
 
-#: globals.php:2207 globals.php:2208 site/course/course-content.php:2391
+#: globals.php:2171 site/course/course-content.php:2390
+#: site/course/course-content.php:2450 site/course/course-content.php:2459
+#: site/course/course-content.php:5158 site/course/course-content.php:5176
+msgid "Pace"
+msgstr "Velocità"
+
+#: globals.php:2180 globals.php:2182 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177
 msgid "Always Part of Two Churches"
 msgstr "Sempre Parte di Due Chiese"
 
-#: globals.php:2209
-#, fuzzy
+#: globals.php:2181
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Impara come obbedire ai comandi di Gesù andando E rimanendo."
+msgstr ""
+"Impara come obbedire ai comandi di Gesù attraverso l'andare E il dimorare."
 
-#: globals.php:2219 globals.php:2220 site/course/course-content.php:2903
+#: globals.php:2192 globals.php:2194 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Piano trimestrale"
 
-#: globals.php:2221
+#: globals.php:2193
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -518,14 +504,14 @@ msgstr ""
 "Crea e condividi il tuo piano per come utilizzerai gli strumenti di Zúme "
 "durante i prossimi tre mesi."
 
-#: globals.php:2231 globals.php:2232 site/course/course-content.php:2395
+#: globals.php:2203 globals.php:2205 site/course/course-content.php:2395
 #: site/course/course-content.php:2539 site/course/course-content.php:2548
 #: site/course/course-content.php:2573 site/course/course-content.php:2775
 #: site/course/course-content.php:5290 site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "Checklist di Tutoraggio"
 
-#: globals.php:2233 site/pages/follow-jesus.php:321
+#: globals.php:2204 site/pages/follow-jesus.php:321
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -534,14 +520,14 @@ msgstr ""
 "potenzialità e vulnerabilità quando accadrà di fare discepoli che "
 "moltiplicano."
 
-#: globals.php:2243 globals.php:2244 site/course/course-content.php:2898
+#: globals.php:2214 globals.php:2216 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306
 msgid "Leadership in Networks"
 msgstr "Leadership in Collegamento"
 
-#: globals.php:2245 site/pages/follow-jesus.php:329
+#: globals.php:2215 site/pages/follow-jesus.php:329
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -549,18 +535,14 @@ msgstr ""
 "Imparare come moltiplicare le chiese rimanere connessi e vivere la vita "
 "insieme come una famiglia spirituale allargata."
 
-#: globals.php:2255 site/course/course-content.php:2902
+#: globals.php:2225 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572
 msgid "Peer Mentoring Groups"
 msgstr "Gruppi di Mentori alla Pari"
 
-#: globals.php:2256
-msgid "Peer Mentoring"
-msgstr "Mentori alla Pari"
-
-#: globals.php:2257 site/pages/follow-jesus.php:317
+#: globals.php:2226 site/pages/follow-jesus.php:317
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -570,11 +552,15 @@ msgstr ""
 "iniziato Gruppi 3/3. Segue anche un modello 3/3 ed è un efficace modo per "
 "valutare la salute spirituale dell'opera di Dio nella tua zona."
 
-#: globals.php:2267 globals.php:2268
+#: globals.php:2227
+msgid "Peer Mentoring"
+msgstr "Mentori alla Pari"
+
+#: globals.php:2236 globals.php:2238
 msgid "Four Fields Tool"
 msgstr "Il Diagramma dei Quattro Campi"
 
-#: globals.php:2269
+#: globals.php:2237
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -584,14 +570,14 @@ msgstr ""
 "essere usato da un responsabile di cellula per riflettere sullo stato degli "
 "sforzi attuali e l'attività del regno intorno a loro."
 
-#: globals.php:2279 globals.php:2280 site/course/course-content.php:2397
+#: globals.php:2247 globals.php:2249 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "La Mappa Generazionale"
 
-#: globals.php:2281
+#: globals.php:2248
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -599,23 +585,26 @@ msgstr ""
 "La generazione della mappatura è un altro semplice strumento per aiutare i "
 "responsabili in un movimento a comprendere la crescita intorno a loro."
 
-#: globals.php:2291
+#: globals.php:2258
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "3 Cerchi - un metodo per condividere il Vangelo"
 
-#: globals.php:2292
-msgid "3-Circles"
-msgstr ""
-
-#: globals.php:2293
+#: globals.php:2259
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"Il metodo di condividere il vangelo 3 Cerchi è un modo per raccontare il "
+"vangelo con una semplice illustrazione che si può disegnare su un foglio di "
+"carta."
 
-#: globals.php:7215
+#: globals.php:2260
+msgid "3-Circles"
+msgstr "3 Cerchi"
+
+#: globals.php:7182
 msgid "No Results"
-msgstr ""
+msgstr "Nessun Risultato"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -630,18 +619,17 @@ msgstr ""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
-#, fuzzy
 msgid ""
 "There’s no one “best way” to tell God’s story (also called the gospel), "
 "because the best way will depend on who you’re sharing with. Every disciple "
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
 msgstr ""
-"Non c’è un “modo migliore” di raccontare la storia di Dio, nota anche come "
-"vangelo, perché il modo migliore dipenderà dalla persona con la quale si sta "
+"Non esiste il “modo migliore” di raccontare la storia di Dio (vangelo), "
+"perché il modo migliore dipenderà dalla persona con la quale stai "
 "condividendo. Ogni discepolo dovrebbe imparare a raccontare la storia di Dio "
 "in un modo che sia coerente con le Scritture e abbia un collegamento con il "
-"pubblico con il quale si sta condividendo."
+"pubblico con il quale sta condividendo."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:22
 #: site/course/_strings-3-circle-gospel-presentation.php:60
@@ -664,23 +652,20 @@ msgstr "DISCUTERE"
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:166
-#, fuzzy
 msgid "(10 min)"
-msgstr "10 min"
+msgstr "(10 min)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:27
 #: site/course/course-content.php:873
-#, fuzzy
 msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
 msgstr ""
 "Cosa vi viene in mente quando sentite il comandamento di Dio di essere i "
-"Suoi “Testimoni” e raccontare la Sua storia?"
+"Suoi “Testimoni” e di raccontare la Sua storia?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:874
-#, fuzzy
 msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
@@ -690,7 +675,6 @@ msgstr ""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
-#, fuzzy
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
 msgstr ""
@@ -717,9 +701,8 @@ msgstr "GUARDARE"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:165
-#, fuzzy
 msgid "(5 min)"
-msgstr "5 min"
+msgstr "(5 min)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:42
 #: site/course/course-content.php:800 site/course/course-content.php:851
@@ -733,6 +716,8 @@ msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
+"Un modo per condividere le buone notizie di Dio è utilizzare una "
+"presentazione visiva chiamata 3 Cerchi."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -746,108 +731,89 @@ msgstr "Cosa imparate su Dio?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:918
-#, fuzzy
 msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
 msgstr ""
-"Pensate che sarebbe più facile o più difficile raccontare la storia di Dio "
+"Pensate che sarebbe più facile o più difficile condividere la storia di Dio "
 "raccontando una storia come questa?"
 
 #: site/course/course-builder.php:164
-#, fuzzy
 msgid "(1 min)"
-msgstr "10 min"
+msgstr "(1 min)"
 
 #: site/course/course-builder.php:167
-#, fuzzy
 msgid "(15 min)"
-msgstr "5 min"
+msgstr "(15 min)"
 
 #: site/course/course-builder.php:168
-#, fuzzy
 msgid "(20 min)"
-msgstr "20 minuti"
+msgstr "(20 min)"
 
 #: site/course/course-builder.php:169
-#, fuzzy
 msgid "(25 min)"
-msgstr "5 min"
+msgstr "(25 min)"
 
 #: site/course/course-builder.php:170
-#, fuzzy
 msgid "(30 min)"
-msgstr "30 minuti"
+msgstr "(30 min)"
 
 #: site/course/course-builder.php:171
-#, fuzzy
 msgid "(35 min)"
-msgstr "5 min"
+msgstr "(35 min)"
 
 #: site/course/course-builder.php:172
-#, fuzzy
 msgid "(40 min)"
-msgstr "10 min"
+msgstr "(40 min)"
 
 #: site/course/course-builder.php:173
-#, fuzzy
 msgid "(45 min)"
-msgstr "45 minuti"
+msgstr "(45 min)"
 
 #: site/course/course-builder.php:174
-#, fuzzy
 msgid "(50 min)"
-msgstr "5 min"
+msgstr "(50 min)"
 
 #: site/course/course-builder.php:175
-#, fuzzy
 msgid "(55 min)"
-msgstr "5 min"
+msgstr "(55 min)"
 
 #: site/course/course-builder.php:176
-#, fuzzy
 msgid "(60 min)"
-msgstr "60 minuti"
+msgstr "(60 min)"
 
 #: site/course/course-builder.php:177
-#, fuzzy
 msgid "(65 min)"
-msgstr "5 min"
+msgstr "(65 min)"
 
 #: site/course/course-builder.php:178
-#, fuzzy
 msgid "(70 min)"
-msgstr "10 min"
+msgstr "(70 min)"
 
 #: site/course/course-builder.php:179
-#, fuzzy
 msgid "(75 min)"
-msgstr "75 min"
+msgstr "(75 min)"
 
 #: site/course/course-builder.php:180
-#, fuzzy
 msgid "(80 min)"
-msgstr "10 min"
+msgstr "(80 min)"
 
 #: site/course/course-builder.php:181
-#, fuzzy
 msgid "(85 min)"
-msgstr "5 min"
+msgstr "(85 min)"
 
 #: site/course/course-builder.php:182
-#, fuzzy
 msgid "(90 min)"
-msgstr "10 min"
+msgstr "(90 min)"
 
 #: site/course/course-builder.php:183
-#, fuzzy
 msgid "(60 - 90 min)"
-msgstr "90 min"
+msgstr "(60-90 min)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
 msgid "SESSION 1"
-msgstr ""
+msgstr "SESSIONE 1"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -907,6 +873,7 @@ msgstr "AGGIORNARSI"
 #: site/course/course-content.php:5941
 msgid "Have all of the participants and facilitator check-in."
 msgstr ""
+"Chiedi a tutti i participanti e il coordinatore di effettuare il check-in."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -927,7 +894,7 @@ msgstr ""
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "Oppure zume.training/checkin e utilizza il codice:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -982,12 +949,11 @@ msgstr "VISIONE GLOBALE"
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr ""
+msgstr "In questa sessione, ascolteremo e parleremo dei seguenti concetti:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
-#, fuzzy
 msgid "Simple Definition of Disciple & Church"
-msgstr "Una Definizione Semplice di Discepolo e Chiesa"
+msgstr "Una Definizione Semplice di un Discepolo e della Chiesa"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -997,7 +963,7 @@ msgstr "Respiro Spirituale"
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "E aggiungeremo questi attrezzi alla nostra cassetta:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
@@ -1646,34 +1612,30 @@ msgstr ""
 "parte di questo giorno importante quando lo celebrerai dicendo “sì” a Gesù."
 
 #: site/course/course-content.php:1016
-#, fuzzy
 msgid "The Spiritual Economy"
-msgstr "Economia Spirituale"
+msgstr "L'Economia Spirituale"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
-#, fuzzy
 msgid ""
 "Ask God who He wants you to train to use the Creation to Judgment story (or "
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
 msgstr ""
-"Chiedete a Dio chi vuole che formiate per usare la storia di Dio dalla "
-"Creazione al Giudizio (o in qualche altro modo per condividere la Storia di "
-"Dio). Condividi il nome di questa persona con il gruppo prima di andare via."
+"Chiedi a Dio chi vuole che tu formi per usare il metodo Dalla Creazione al "
+"Giudizio (o qualche altro metodo per condividere la Storia di Dio). "
+"Condividi il nome di questa persona con il gruppo prima di andare via."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3985
-#, fuzzy
 msgid ""
 "Spend time this week practicing God’s story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
-"Trascorrete del tempo questa settimana praticando la Storia di Dio e dopo "
-"condividetela con almeno una persona della vostra Lista dei 100 che avete "
-"segnato come “Non Credente” o “Sconosciuto”."
+"Trascorrete del tempo questa settimana allenandovi con la Storia di Dio e "
+"dopo condividetela con almeno una persona dalla vostra Lista dei 100 che "
+"avete segnato come “Non Credente” o “Sconosciuto”."
 
 #: site/course/course-content.php:1038
-#, fuzzy
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
@@ -1682,7 +1644,6 @@ msgstr ""
 "sessione. Ricordatevi il necessario (pane, vino/succo)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4261
-#, fuzzy
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
@@ -1693,64 +1654,62 @@ msgstr ""
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
 msgid "SESSION 4"
-msgstr ""
+msgstr "Sessione 4"
 
 #: site/course/course-content.php:1109
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+"Pregate e ringraziate Dio per averci invitati a condividere la Sua Buona "
+"Notizia con la gente."
 
 #: site/course/course-content.php:1110
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"Chiedete a Dio di dare la mente di Cristo ad ogni membro del vostro gruppo e "
+"di riempire ognuno con il Suo Spirito."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
 #: site/course/course-content.php:4077 site/course/course-content.php:4094
 #: site/course/course-content.php:4200 site/course/course-content.php:4235
-#, fuzzy
 msgid "Three-Minute Testimony"
-msgstr "Testimonianza in 3 minuti"
+msgstr "Testimonianza di 3 minuti"
 
 #: site/course/course-content.php:1165
-#, fuzzy
 msgid ""
 "As followers of Jesus, we are “witnesses\" for Him, because we “testify” "
 "about the impact Jesus has had on our lives. Your story of your relationship "
 "with God is called your Testimony. It’s powerful, and it’s something no one "
 "can share better than you."
 msgstr ""
-"Come seguaci di Gesù, ne siamo “testimoni” perché “testimoniamo” "
-"dell’impatto che Lui ha avuto sulle nostre vite. La storia della vostra "
-"relazione con Dio è chiamata testimonianza. È potente ed è qualcosa che "
-"nessuno può condividere meglio di voi."
+"Come seguaci di Gesù, siamo i suoi “testimoni” perché “testimoniamo” "
+"dell’impatto che Lui ha avuto sulle nostre vite. La storia della tua "
+"relazione con Dio è chiamata la tua Testimonianza. È potente ed è qualcosa "
+"che nessuno può condividere meglio di te."
 
 #: site/course/course-content.php:1189
-#, fuzzy
 msgid "Practice sharing your testimony"
-msgstr "Praticare -  Condividi la tua testimonianza"
+msgstr "Esercitati a condividere la tua testimonianza"
 
 #: site/course/course-content.php:1192
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
 msgstr ""
+"Impegnati a scrivere la tua storia in maniera che non supera i tre minuti. "
+"(10 min)"
 
 #: site/course/course-content.php:1193
-#, fuzzy
 msgid "Break into groups of two to three and practice sharing. (20 min)"
 msgstr ""
-"CONDIVIDERE LA TUA TESTIMONIANZA - Dividetevi  in gruppi di due o tre e fate "
-"pratica condividendo la vostra Testimonianza con altri. (45 minuti)"
+"Dividetevi in gruppi di due o tre ed esercitatevi a condividere la vostra "
+"Testimonianza con altri. (20 minuti)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
-#, fuzzy
 msgid "Great - Greater - Greatest Blessings"
-msgstr "La Massima Benedizione"
+msgstr "Grande - Immensa - Massima Benedizione"
 
 #: site/course/course-content.php:1242
 msgid ""
@@ -1784,15 +1743,14 @@ msgstr ""
 "e seguono allo stesso tempo."
 
 #: site/course/course-content.php:1288
-#, fuzzy
 msgid ""
 "What is one area of discipleship (reading/understanding the Bible, praying, "
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
 msgstr ""
-"Qual è una parte del discepolato (leggere, comprendere la Bibbia, pregare, "
-"condividere la Storia di Dio ecc.) su cui vorreste imparare di più? C’è "
-"qualcuno che potrebbe aiutarvi in questo?"
+"Qual è una parte del discepolato (leggere/comprendere la Bibbia, pregare, "
+"condividere la Storia di Dio, ecc.) su cui vorresti imparare di più? C’è "
+"qualcuno che potrebbe aiutarti in questo?"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -1803,9 +1761,8 @@ msgstr ""
 "C’è qualcuno con il quale potreste farlo?"
 
 #: site/course/course-content.php:1307
-#, fuzzy
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
-msgstr "Vi siete mai fermati a pensare dove non c’è il regno di Dio?"
+msgstr "Vi siete mai fermati a pensare dove il regno di Dio... non c’è?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -1818,25 +1775,23 @@ msgstr ""
 "di più."
 
 #: site/course/course-content.php:1334
-#, fuzzy
 msgid ""
 "Who are you more comfortable sharing with -- people you already know or "
 "people you haven’t met, yet?"
 msgstr ""
-"Con chi vi sentite più a vostro agio per condividere? Persone che già "
-"conoscete o persone che non avete mai incontrato finora?"
+"Quando condividi la tua testimonianza o il vangelo con chi ti senti più a "
+"tuo agio? Persone che già conosci o persone che incontri per la prima volta?"
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
 msgstr "Perché pensate che sia così?"
 
 #: site/course/course-content.php:1336
-#, fuzzy
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr ""
-"Cosa potreste migliorare per condividere con persone con le quali vi sentite "
-"meno a vostro agio?"
+"Come potresti migliorare nel condividere con le persone con le quali ti "
+"senti meno a tuo agio?"
 
 #: site/course/course-content.php:1354
 msgid ""
@@ -1849,79 +1804,69 @@ msgstr ""
 "è la mia carne”."
 
 #: site/course/course-content.php:1378
-#, fuzzy
 msgid "Celebrate the Lord’s Supper"
-msgstr "Praticare la Cena del Signore"
+msgstr "Condividere la Cena del Signore"
 
 #: site/course/course-content.php:1381
-#, fuzzy
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
 msgstr ""
-"Trascorrete i prossimi 10 minuti celebrando la Cena del Signore con il "
-"vostro gruppo usando lo schema di pagina 15 nel manuale Zúme."
+"Trascorrete i prossimi 10 minuti condividendo la Cena del Signore con il "
+"vostro gruppo."
 
 #: site/course/course-content.php:1424
-#, fuzzy
 msgid ""
 "Spend time this week practicing your Three-Minute Testimony, and then share "
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
-"Trascorrete del tempo questa settimana praticando la Testimonianza in 3 "
-"Minuti e dopo condividetela con almeno una persona della vostra Lista dei "
-"100 che avete segnato come “Non credente” o “Sconosciuto”."
+"Trascorrete del tempo questa settimana allenandovi con la vostra "
+"Testimonianza di 3 Minuti e dopo condividetela con almeno una persona dalla "
+"vostra Lista dei 100 che avete segnato come “Non credente” o “Sconosciuto”."
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4251
-#, fuzzy
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"Chiedete a Dio chi vuole che formiate con lo strumento Testimonianza in 3 "
-"minuti. Condividete il nome di questa persona con il gruppo prima di andare "
-"via."
+"Chiedi a Dio chi vuole che formi con l'attrezzo Testimonianza di 3 minuti. "
+"Condividi il nome di questa persona con il gruppo prima di andare via."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
 msgid "SESSION 5"
-msgstr ""
+msgstr "Sessione 5"
 
 #: site/course/course-content.php:1485
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+"Pregate e ringraziate Dio per come lavora attraverso la testimonianza del "
+"Suo popolo. Invita il Suo Spirito Santo a guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
-#, fuzzy
 msgid "B.L.E.S.S. Prayer"
-msgstr "Praticare la preghiera B.L.E.S.S. (15 min)"
+msgstr "La Preghiera B.L.E.S.S."
 
 #: site/course/course-content.php:1538
-#, fuzzy
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
-"La Camminata di Preghiera è un modo semplice per ubbidire al comandamento di "
-"Dio di pregare per gli altri. Si tratta proprio di pregare Dio mentre si va "
-"in giro!"
+"La Camminata di Preghiera è un modo semplice per obbedire al comandamento di "
+"Dio di pregare per gli altri. Ed è esattamente ciò che sembra - pregare Dio "
+"mentre camminate!"
 
 #: site/course/course-content.php:1567
-#, fuzzy
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
 msgstr ""
 "Il processo di formazione dei discepoli può avanzare velocemente se si trova "
-"una persona di pace, anche in un luogo dove i seguaci di Gesù sono pochi e "
-"distanti tra loro. Come capite se avete trovato una persona di pace e cosa "
-"fate quando la trovate?"
+"una persona di pace, anche in un luogo dove i seguaci di Gesù sono "
+"pochissimi."
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -1938,38 +1883,33 @@ msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"In quale comunità o segmento della società vicino a voi sembra che il Regno "
+"sia poco presente o persino assente?"
 
 #: site/course/course-content.php:1595
-#, fuzzy
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
-"C’è una comunità o una porzione di società a voi vicina dove vi sembra ci "
-"sia poca o nessuna presenza del Regno? Come potrebbe una Persona di Pace "
-"(qualcuno che è APERTO, OSPITALE, CONOSCE GLI ALTRI o CONDIVIDE) accelerare "
-"la diffusione del Vangelo in quella comunità?"
+"Come potrebbe una Persona di Pace (qualcuno che è APERTO, OSPITALE, "
+"SOCIALMENTE CONNESSO e CONDIVIDE) accelerare la diffusione del Vangelo in "
+"quella comunità?"
 
 #: site/course/course-content.php:1611
-#, fuzzy
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "Praticare la preghiera B.L.E.S.S. (15 min)"
+msgstr "Esercitatevi con la preghiera B.L.E.S.S."
 
 #: site/course/course-content.php:1614
-#, fuzzy
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
-"Dividetevi in gruppi di due o tre e trascorrete i prossimi 15 minuti "
-"praticando la Preghiera B.L.E.S.S. usando lo schema di pagina 17 nel manuale "
-"Zúme. Esercitatevi pregando per qualcuno attraverso le 5 aree della "
-"preghiera B.L.E.S.S."
+"Dividetevi in gruppi di due o tre ed esercitatevi con la Preghiera B.L.E.S."
+"S. Usatela per pregare gli uni per gli altri."
 
 #: site/course/course-content.php:1627
-#, fuzzy
 msgid "Prayer Walking Activity"
-msgstr "La Camminata di Preghiera"
+msgstr "Esercizio La Camminata di Preghiera"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
@@ -1995,45 +1935,47 @@ msgstr ""
 "attività."
 
 #: site/course/course-content.php:1641
-#, fuzzy
 msgid "This session ends with the prayer walking activity."
-msgstr "Questa sessione finisce con l’attività della Camminata di Preghiera."
+msgstr "Questa sessione finisce con l'esercizio La Camminata di Preghiera."
 
 #: site/course/course-content.php:1660
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"Prima di uscire per l'esercizio La Camminata di Preghiera, assicuratevi di "
+"pregare con il vostro gruppo per concludere il tempo insieme."
 
 #: site/course/course-content.php:1661
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
-msgstr ""
+msgstr "Ringrazia Dio che ama i perduti, gli ultimi e gli umili - noi inclusi!"
 
 #: site/course/course-content.php:1662
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"Chiedi a Dio di preparare il vostro cuore e il cuore di coloro che "
+"incontrerete durante la vostra camminata affinché siano aperti alla Sua "
+"opera."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
 msgid "SESSION 6"
-msgstr ""
+msgstr "Sessione 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
-#, fuzzy
 msgid ""
 "Pray and thank God for what He did in the last session, ask Him to help when "
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati, chiedeteGli di aiutarvi quando "
-"trovate difficile ubbidire, e invitate lo Spirito Santo a condurre il vostro "
-"tempo insieme."
+"Pregate e ringraziate Dio per ciò che ha fatto nell'ultima sessione, "
+"chiedeteGli di aiutarvi quando trovate che sia difficile obbedire, e "
+"invitate lo Spirito Santo a guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
-#, fuzzy
 msgid "Faithfulness is Better than Knowledge"
 msgstr "La Fedeltà è Meglio della Conoscenza"
 
@@ -2042,7 +1984,7 @@ msgstr "La Fedeltà è Meglio della Conoscenza"
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "E aggiungeremo questo attrezzo alla nostra cassetta:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2053,12 +1995,10 @@ msgstr ""
 #: site/course/course-content.php:4778 site/course/course-content.php:4884
 #: site/course/course-content.php:4892 site/course/course-content.php:4899
 #: site/course/course-content.php:4925
-#, fuzzy
 msgid "3/3 Group Meeting"
 msgstr "Il Format del Gruppo 3/3"
 
 #: site/course/course-content.php:1775
-#, fuzzy
 msgid ""
 "When we help multiply disciples, we need to make sure we’re reproducing the "
 "right things. It’s important what disciples know – but it’s much more "
@@ -2069,18 +2009,17 @@ msgstr ""
 "è molto più importante cosa FANNO con ciò che conoscono."
 
 #: site/course/course-content.php:1800
-#, fuzzy
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
 msgstr ""
 "Pensate ai comandamenti di Dio che conoscete già. Quanto siete fedeli in "
-"termini di ubbidienza e condivisione di queste cose?"
+"termini di obbedienza e condivisione di quelle cose?"
 
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:208
 msgid "Watch"
-msgstr ""
+msgstr "Guardate"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
@@ -2092,15 +2031,14 @@ msgstr ""
 "imparerai un principio da praticare con il gruppo dopo aver premuto su pausa."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
-#, fuzzy
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
 msgstr ""
-"Avete notato qualche differenza tra un gruppo di 3/3 e uno studio biblico o "
-"un piccolo gruppo di cui avete fatto parte o di cui avete sentito parlare in "
-"passato? Se sì, come potrebbero avere un impatto queste differenze nel "
+"Avete notato qualche differenza tra un Gruppo 3/3 e uno studio biblico o una "
+"cellula di cui avete fatto parte o di cui avete sentito parlare in passato? "
+"Se l'avete notato, come potrebbero avere un impatto queste differenze sul "
 "gruppo?"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
@@ -2110,12 +2048,11 @@ msgstr ""
 "perché no?"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4793
-#, fuzzy
 msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
 msgstr ""
-"Trascorrete questa settimana ubbidendo, formando e condividendo secondo gli "
+"Trascorrete questa settimana obbedendo, formando e condividendo secondo gli "
 "impegni che avete preso durante la pratica del Gruppo 3/3."
 
 #: site/course/course-content.php:1880 site/course/course-content.php:4794
@@ -2131,10 +2068,9 @@ msgstr ""
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
 msgid "SESSION 7"
-msgstr ""
+msgstr "Sessione 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
-#, fuzzy
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
@@ -2144,9 +2080,8 @@ msgstr ""
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
-#, fuzzy
 msgid "The Training Cycle"
-msgstr "Ciclo di Addestramento"
+msgstr "Il Ciclo di Addestramento"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2177,31 +2112,29 @@ msgid "What would it look like to train someone like that?"
 msgstr "Com’è possibile formare una persona in questo modo?"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
-"GUARDARE INDIETRO - Usa le sfide Ubbidire, Formare e Condividere della "
-"scorsa sessione per aggiornarvi a vicenda."
+"GUARDARE INDIETRO - Usate le sfide Obbedire, Formare e Condividere della "
+"scorsa sessione per controllare come è andata la vostra settimana. (30 min)"
 
 #: site/course/course-content.php:2042
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
-"GUARDARE IN ALTO- Usate Marco 5:1-20 come passo di lettura del gruppo e "
-"rispondete alle domande 1-4 durante la sezione Guardare in Alto."
+"GUARDARE IN ALTO - Usate Marco 5:1-20 come passo di lettura per il vostro "
+"tempo e rispondete alle domande 1-4 durante la sezione Guardare in Alto. (30 "
+"min)"
 
 #: site/course/course-content.php:2043
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
 "GUARDARE AVANTI - Usate le domande 5, 6 e 7 nella sezione Guardare Avanti "
-"per scoprire come Ubbidirete, Formerete e Condividerete."
+"per scoprire come Obbedirete, Formerete e Condividerete. (30 min)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2215,7 +2148,7 @@ msgstr "Cos’è stato per voi una sfida? Perché?"
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "Concetto ascoltato in questa sessione:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2224,19 +2157,23 @@ msgstr ""
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "Attrezzo ascoltato in questa sessione:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"Scegli una competenza o un concetto che hai imparato in Zúme e forma qualcun "
+"altro affinché si riproduca alla quarta generazione."
 
 #: site/course/course-content.php:2100
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
 msgstr ""
+"Sfida la persona che hai formato a continuare il processo di moltiplicazione "
+"fino a un'ulteriore (quinta) generazione."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
@@ -2486,7 +2423,7 @@ msgstr ""
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:189
 #: site/dashboard/wizard.php:180 site/pages/about.php:258
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:166 utilities/apis/cta-api.php:168
+#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
 msgid "Get a Coach"
 msgstr "Richiedi un tutor"
 
@@ -2667,7 +2604,7 @@ msgstr ""
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "Sii incoraggiato ..."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -2685,6 +2622,10 @@ msgid ""
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"Eppure la formazione Zúme è solo l'inizio! In questa sessione, creeremo un "
+"piano per ciò che verrà dopo la formazione e introdurremo brevemente degli "
+"attrezzi di cui avrete bisogno successivamente nel vostro cammino mentre "
+"implementate ciò che avete imparato."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -2708,107 +2649,111 @@ msgstr ""
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"Fare discepoli che moltiplicano discepoli significa fare leader che "
+"moltiplicano leader."
 
 #: site/course/course-content.php:2965
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"Gruppi di tutoraggio tra pari riuniscono i leader e li aiutano ad amare e "
+"incoraggiare gli uni gli altri nella fede e nella leadership."
 
 #: site/course/course-content.php:2989
-#, fuzzy
 msgid "Peer Mentoring Group Practice"
-msgstr "Gruppi di Mentori alla Pari"
+msgstr "Esercitazione di Gruppi di Tutoraggio tra Pari"
 
 #: site/course/course-content.php:2992
-#, fuzzy
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
 msgstr ""
-"GRUPPI DI MENTORI ALLA PARI- Dividetevi in gruppi di due o tre e lavorate "
-"con il format Gruppo di Mentori alla Pari. (60 minuti)"
+"Dividetevi in gruppi di due o tre. Usate il format tre terzi per il Gruppo "
+"di Tutoraggio tra Pari."
 
 #: site/course/course-content.php:2993
-#, fuzzy
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
-"Per fare pratica, scegliete una persona del gruppo come discepolo di questa "
-"sessione e fate in modo che gli altri membri trascorrano il tempo "
-"comportandosi come Mentori alla Pari lavorando con la lista di domande "
-"suggerite e fornendo guida e incoraggiamento al lavoro del discepolo."
+"Scegliete una persona del gruppo su cui focalizzare e fate in modo che gli "
+"altri membri, come tutori alla pari, trascorrano il tempo seguendo la lista "
+"delle domande suggerite."
 
 #: site/course/course-content.php:3014
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"Nella Sua Bibbia, Dio dice, \"Infatti io so i pensieri che medito per voi, "
+"pensieri di pace e non di male, per darvi un avvenire e una speranza\"."
 
 #: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Dio fa progetti, e aspetta che anche noi li facciamo."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:200
-#, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
-"Un Piano Trimestrale è uno strumento che si può usare per aiutare a "
-"focalizzare la vostra attenzione e i vostri sforzi e tenerli allineati alle "
-"priorità di Dio del fare discepoli che si moltiplicano. Trascorrete i "
-"prossimi 30 minuti pregando, leggendo e contemplando gli impegni "
-"sottoscritti nella sezione del Piano di 3 Mesi."
+"Un Piano Trimestrale è uno strumento che puoi usare per aiutarti a "
+"focalizzare la tua attenzione e i tuoi sforzi e tenerli allineati alle "
+"priorità di Dio di fare discepoli che si moltiplicano."
 
 #: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"La prossima schermata vi mostrerà come creare il tuo Piano Trimestrale. Vi "
+"suggeriamo di utilizzare lo strumento online."
 
 #: site/course/course-content.php:3030
-#, fuzzy
 msgid "Make your Three Month Plan"
-msgstr "Piano trimestrale"
+msgstr "Crea il tuo Piano Trimestrale"
 
 #: site/course/course-content.php:3032
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Leggi - Scansiona il codice QR. Non devi prendere ogni punto come impegno, "
+"invece usali come suggerimenti per il tuo piano. (5 min)"
 
 #: site/course/course-content.php:3033
-#, fuzzy
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
-"Prendete almeno 10 minuti per stare in silenzio il più possibile e ascoltate "
-"intenzionalmente ciò che Dio ha da dire e ciò che Lui sceglie di rivelare. "
-"Sforzatevi di ascoltare la Sua voce."
+"Ascolta - Prendi del tempo per stare in silenzio il più possibile e ascolta "
+"intenzionalmente ciò che Dio sceglie di rivelare. (10 min)"
 
 #: site/course/course-content.php:3034
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"Scrivi il tuo piano - Scrivi gli impegni che ti sei preso davanti a Dio su "
+"un foglio oppure utilizza lo strumento online per salvarli. (15 min)"
 
 #: site/course/course-content.php:3040
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "Strumento - Il Tuo Piano Online"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "Condividete a turno il proprio Piano Trimestrale."
 
 #: site/course/course-content.php:3054
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"Trova uno o più alleati con cui vincolarti per fare un controllo settimanale "
+"sulla vostra crescita come discepoli che moltiplicano discepoli."
 
 #: site/course/course-content.php:3195
 msgid ""
@@ -2816,28 +2761,29 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"Allenati a condividere queste definizioni con un amico e chiedo al Signore "
+"di radicarle profondamente nel tuo cuore e nel tuo spirito. Chiedi al "
+"Signore con chi vuole che tu le condivida."
 
 #: site/course/course-content.php:3196
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"Condividi le definizioni con chiunque il Signore metta sul tuo cuore. Poi, "
+"equipaggia quella persona per condividerle con qualcun altro."
 
 #: site/course/course-content.php:3258
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+msgstr "Chiedete allo Spirito Santo di Dio a guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "In questa sessione, aggiungeremo questo attrezzo alla nostra cassetta:"
 
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
-#, fuzzy
 msgid "S.O.A.P.S Bible Reading"
 msgstr "LETTURA DELLA BIBBIA S.O.A.P.C."
 
@@ -2846,65 +2792,82 @@ msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Pregate e ringraziate Dio per la Sua presenza nella nostra vita. Pregate "
+"affinché ogni persona nel gruppo abbia le orecchie per sentire la Sua voce e "
+"la grazia per obbedire a ogni cosa che dice."
 
 #: site/course/course-content.php:3440
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"Trova un alleato dello stesso sesso e inizia a incontrarti settimanalmente "
+"con quella persona in un gruppo di corresponsabilità."
 
 #: site/course/course-content.php:3441
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"Chiedi al Signore di guidarti nello sfidare almeno cinque persone che amano "
+"Gesù affinché ognuno inizi un proprio gruppo di corresponsabilità, e poi "
+"fallo."
 
 #: site/course/course-content.php:3501
-#, fuzzy
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+"Pregate e ringraziate Dio perché ci sta modellando nell'immagine di Gesù. "
+"Invitate lo Spirito Santo a guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "In questa sessione, ascolteremo e parleremo del concetto:"
 
 #: site/course/course-content.php:3631
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"Pregate e ringraziate Dio per il Suo amore per tutte le persone nella nostra "
+"vita. Pregate affinché ogni persona nel gruppo veda le persone intorno a voi "
+"come Dio le vede."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
-#, fuzzy
 msgid "The Prayer Cycle"
-msgstr "Ciclo di Preghiera"
+msgstr "Il Ciclo di Preghiera"
 
 #: site/course/course-content.php:3676
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"Se avete tempo, fate l'intera ora. Pregate per 5 minuti per ogni sezione. "
+"Facendo così, la sessione durerà più di un'ora."
 
 #: site/course/course-content.php:3677
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"Se non riuscite ad andare oltre il tempo prestabilito per la sessione, "
+"riducete le sezioni da 5 a 3 minuti."
 
 #: site/course/course-content.php:3712
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"Utilizza il Ciclo di Preghiera per guidarti mentre preghi per un'ora questa "
+"settimana."
 
 #: site/course/course-content.php:3713
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"Connived il Ciclo di Preghiera con chiunque il Signore ti indichi. Sfida la "
+"persona a condividerlo con altre persone."
 
 #: site/course/course-content.php:3839
 msgid ""
@@ -2912,17 +2875,19 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"Esercitati a condividere il concetto dell'Economia Spirituale con un amico e "
+"chiedi al Signore di radicarlo profondamente nel tuo cuore e nel tuo "
+"spirito. Chiedi al Signore con chi vuole che tu lo condivida."
 
 #: site/course/course-content.php:3840
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share with about the Greatest Blessing. Have "
 "them practice it as well. Share this person‘s name with the group before you "
 "go and reach out to them."
 msgstr ""
-"Chiedete a Dio con chi vuole che condividiate la “Lista dei 100”. "
-"Condividete il nome di questa persona con il gruppo prima di andare via e "
-"ritrovarvi per la sessione successiva."
+"Chiedi a Dio con chi vuole che tu condivida la Massima Benedizione. Fa' che "
+"la persona si eserciti con lo strumento. Condividi il nome di questa persona "
+"con il gruppo prima di andare via e contattare quella persona."
 
 #: site/course/course-content.php:3901
 msgid ""
@@ -2930,51 +2895,53 @@ msgid ""
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"Pregate per ogni membro del vostro gruppo affinché sperimenti le benedizioni "
+"di seguire Gesù - condurre altri a seguire Gesù e formare altri per iniziare "
+"nuove famiglie spirituali."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
 msgid "In this session, we will practice this tool in our toolkit:"
 msgstr ""
+"In questa sessione ci eserciteremo con questo attrezzo della nostra cassetta:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
-#, fuzzy
 msgid "Sharing the Gospel"
-msgstr "Praticare - Condividere il Vangelo"
+msgstr "Condividere il Vangelo"
 
 #: site/course/course-content.php:3944
-#, fuzzy
 msgid "Practice Sharing the Gospel"
-msgstr "Praticare - Condividere il Vangelo"
+msgstr "Esercizio - Condividere il Vangelo"
 
 #: site/course/course-content.php:3947
-#, fuzzy
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
-msgstr "Dividetevi in gruppi di due o tre persone dello stesso genere."
+msgstr ""
+"Dividetevi in gruppi di due o tre persone ed allenatevi a condividere a "
+"turno la storia di Dio."
 
 #: site/course/course-content.php:3948
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"Dopo che ti sei esercitato, cambiate ruolo. La ripetizione darà sicurezza. "
+"Quando avrete finito, sarete pronti per condividere la storia di Dio."
 
 #: site/course/course-content.php:4046
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others. "
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"Pregate e ringraziate Dio che le Sue vie non sono le nostre vie e i Suoi "
-"pensieri non sono i nostri pensieri. ChiedeteGli di dare ad ogni membro del "
-"vostro gruppo la mente di Cristo - sempre concentrata sull'opera del Padre. "
-"Chiedete allo Spirito Santo di condurre il vostro tempo insieme in modo che "
-"sia  la migliore sessione  finora."
+"Pregate e ringraziate Dio perché ci invita a condividere le Sue Buone "
+"Notizie con gli altri. ChiedeteGli di dare ad ogni membro del vostro gruppo "
+"la mente di Cristo e di riempire ognuno con il Suo Spirito."
 
 #: site/course/course-content.php:4074
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "In questa sessione aggiungeremo questi attrezzi alla nostra cassetta:"
 
 #: site/course/course-content.php:4109
 msgid ""
@@ -2982,41 +2949,41 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"Se conosci qualcuno che ama Gesù ma non è ancora stato battezzato, sfida la "
+"persona a farlo e offri di battezzarla. Altrimenti, esercitati con un amico "
+"mimando ciò che faresti."
 
 #: site/course/course-content.php:4110
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share with about what baptism is and how to do "
 "it. Have them practice it as well. Share this person‘s name with the group "
 "before you go and reach out to them before the next session."
 msgstr ""
-"Chiedete a Dio con chi vuole che condividiate la “Lista dei 100”. "
-"Condividete il nome di questa persona con il gruppo prima di andare via e "
-"ritrovarvi per la sessione successiva."
+"Chiedi a Dio con chi vuole che tu condivida cos'è il battesimo e come farlo. "
+"Fa' che si eserciti a farlo anche quella persona. Condividi il nome di "
+"quella persona con il gruppo prima di andare via e contatta la persona prima "
+"della prossima sessione."
 
 #: site/course/course-content.php:4170
-#, fuzzy
 msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati, chiedeteGli di aiutarvi quando "
-"trovate difficile ubbidire, e invitate lo Spirito Santo a condurre il vostro "
-"tempo insieme."
+"Pregate e ringraziate Dio per il dono di essere uniti nella morte, nella "
+"sepoltura e nella resurrezione di Cristo. Invitate lo Spirito Santo di Dio a "
+"guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:4213
-#, fuzzy
 msgid "Share Your Testimony"
-msgstr "La Tua Testimonianza in 3 Minuti"
+msgstr "Condividi La Tua Testimonianza"
 
 #: site/course/course-content.php:4215
-#, fuzzy
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
-"CONDIVIDERE LA TUA TESTIMONIANZA - Dividetevi  in gruppi di due o tre e fate "
-"pratica condividendo la vostra Testimonianza con altri. (45 minuti)"
+"Dividetevi in gruppi di due o tre e fate pratica condividendo la vostra "
+"Testimonianza di Tre Minuti."
 
 #: site/course/course-content.php:4216
 msgid ""
@@ -3024,6 +2991,9 @@ msgid ""
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"Scegli 5 persone dalla tua Lista dei 100. Chiedi a qualcuno del gruppo di "
+"fingere di essere ognuna di quelle 5 persone ed esercitati a condividere la "
+"tua testimonianza in un modo specifico per ognuna di quelle 5 persone."
 
 #: site/course/course-content.php:4217
 msgid ""
@@ -3031,40 +3001,44 @@ msgid ""
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"Dopo che ti sei esercitato, cambiate ruoli. Fai finta di essere le 5 persone "
+"dalla lista di qualcun altro. Quando avrete finito, dovreste riuscire a "
+"condividere la vostra testimonianza in 3 minuti o meno."
 
 #: site/course/course-content.php:4219
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "La ripetizione crea fiducia."
 
 #: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "Attrezzo esercitato in questa sessione:"
 
 #: site/course/course-content.php:4250
-#, fuzzy
 msgid ""
 "Spend time this week practicing your testimony, and then share it with at "
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
-"Trascorrete del tempo questa settimana praticando la Testimonianza in 3 "
-"Minuti e dopo condividetela con almeno una persona della vostra Lista dei "
-"100 che avete segnato come “Non credente” o “Sconosciuto”."
+"Trascorrete del tempo questa settimana allenandovi con la vostra "
+"testimonianza, e dopo condividetela con almeno una persona della vostra "
+"Lista dei 100 che avete segnato come “Non credente” o “Sconosciuto”."
 
 #: site/course/course-content.php:4323
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
 msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+"Pregate e ringraziate Dio per come opera attraverso la nostra testimonianza. "
+"Invitate lo Spirito Santo a guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:4394
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"Se i membri della tua famiglia amano Gesù e vivono vicino, conducili nel "
+"condividere la cena del Signore. Altrimenti, esercitati con un amico che ama "
+"Gesù."
 
 #: site/course/course-content.php:4395
 msgid ""
@@ -3072,10 +3046,13 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"Condividi \"Discepolare Come Anatroccoli\" e \"Occhi per Vedere Dove Non C'è "
+"il Regno di Dio\" con chiunque il Signore metta sul tuo cuore. Poi, forma "
+"loro per condividerli con qualcun altro."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
 msgid "SESSION 11"
-msgstr ""
+msgstr "SESSIONE 11"
 
 #: site/course/course-content.php:4455
 msgid ""
@@ -3083,61 +3060,68 @@ msgid ""
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"Pregate e ringraziate Dio per come sta operando nella vostra vita e nella "
+"vita di coloro intorno a voi. Pregate affinché l'intero gruppo abbia occhi "
+"per vedere dove non c'è ancora il Regno."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
 msgid "SESSION 12"
-msgstr ""
+msgstr "SESSIONE 12"
 
 #: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
 msgstr ""
+"Questa settimana prega per qualcuno in sua presenza utilizzando la preghiera "
+"B.L.E.S.S."
 
 #: site/course/course-content.php:4639
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"Forma qualcun altro a pregare per gli altri utilizzando la preghiera B.L.E.S."
+"S. e vai con lui/lei quando lo fanno."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
-msgstr ""
+msgstr "SESSIONE 13"
 
 #: site/course/course-content.php:4700
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"Pregate e ringraziate Dio per ciò che avete imparato nell'ultima sessione. "
+"Pregate che lo Spirito di Dio vi aiuti ad essere fedeli nel implementare "
+"tutto ciò che state imparando."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
 msgid "SESSION 14"
-msgstr ""
+msgstr "SESSIONE 14"
 
 #: site/course/course-content.php:4902
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
-"GUARDARE INDIETRO - Usa le sfide Ubbidire, Formare e Condividere della "
-"scorsa sessione per aggiornarvi a vicenda."
+"GUARDARE INDIETRO - Usate le sfide Obbedire, Formare e Condividere della "
+"scorsa sessione per controllare come sono andate. (15 min)"
 
 #: site/course/course-content.php:4903
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
 msgstr ""
-"GUARDARE IN ALTO- Usate Marco 5:1-20 come passo di lettura del gruppo e "
-"rispondete alle domande 1-4 durante la sezione Guardare in Alto."
+"GUARDARE IN ALTO - Usate Marco 5:1-20 come passo di lettura e rispondete "
+"alle domande 1-4 durante la sezione Guardare in Alto. (15 min)"
 
 #: site/course/course-content.php:4904
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
 "GUARDARE AVANTI - Usate le domande 5, 6 e 7 nella sezione Guardare Avanti "
-"per scoprire come Ubbidirete, Formerete e Condividerete."
+"per scoprire come Obbidire, Formare e Condividere. (15 min)"
 
 #: site/course/course-content.php:4940
 msgid ""
@@ -3145,41 +3129,44 @@ msgid ""
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"Prega e chiedi a Dio se vuole che tu inizi un gruppo 3/3. Se te lo conferma, "
+"controlla la tua lista dei 100 e chiediGli chi dovresti invitare al gruppo. "
+"Poi, invita quelle persone questa settimana e fidati di Dio per mettere "
+"insieme il gruppo."
 
 #: site/course/course-content.php:4941
-#, fuzzy
 msgid ""
 "Find someone to share the 3/3 Group format with before your group meets "
 "again. Share this person’s name with the group before you go."
 msgstr ""
-"Pregate e chiedete a Dio con chi vuole che condividiate il format Gruppo 3/3 "
-"prima che il vostro gruppo si riunisca nuovamente. Condividete il nome di "
-"questa persona con il gruppo prima di andare via."
+"Trova qualcuno con cui condividere il format Gruppo 3/3 prima che il tuo "
+"gruppo si riunisca nuovamente. Condividi il nome di quella persona con il "
+"gruppo prima di andare via."
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
 msgid "SESSION 15"
-msgstr ""
+msgstr "SESSIONE 15"
 
 #: site/course/course-content.php:5002
-#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
 "Chiedete se qualcuno nel gruppo ha bisogni specifici per cui vorrebbe che si "
-"pregasse. Chiedete a qualcuno di pregare e chiedete a Dio di aiutarvi per "
-"quei motivi condivisi nel gruppo. Assicuratevi di ringraziare Dio che "
-"promette nella Sua Parola di ascoltare e agire quando il Suo popolo prega. E "
-"come sempre chiedete allo Spirito Santo di guidare il vostro tempo insieme."
+"pregasse. Ringraziate Dio perché promette nella Sua Parola di ascoltare e di "
+"agire quando il Suo popolo prega. Chiedete allo Spirito Santo di Dio di "
+"guidare il vostro tempo insieme."
 
 #: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr ""
+"Condividi il \"Ciclo di Addestramento\" con una persona che ama Gesù dalla "
+"tua lista dei 100."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
 msgid "SESSION 16"
-msgstr ""
+msgstr "SESSIONE 16"
 
 #: site/course/course-content.php:5193
 msgid ""
@@ -3187,10 +3174,13 @@ msgid ""
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Se hai già iniziato una chiesa semplice, condividi con loro \"Parte di Due "
+"Chiese\". Se non hai già iniziato una chiesa semplice, condividi il concetto "
+"con un'altra persona che ama Gesù."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
 msgid "SESSION 17"
-msgstr ""
+msgstr "SESSIONE 17"
 
 #: site/course/course-content.php:5256
 msgid ""
@@ -3198,6 +3188,10 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Pregate e ringraziate perché continua a parlare attraverso la Parola, la "
+"preghiera, la Chiesa, la persecuzione e la sofferenza. Prega affinché ogni "
+"persona nel gruppo abbia le orecchie per sentire la Sua voce e la grazia per "
+"obbedire ciò che dice."
 
 #: site/course/course-content.php:5325
 msgid ""
@@ -3205,38 +3199,51 @@ msgid ""
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"Individuare un prossimo passo - Formare, Assistere, Vegliare, Lasciare - che "
+"devi prendere con il discepolo che hai valutato utilizzando La Lista di "
+"Controllo del Tutoraggio."
 
 #: site/course/course-content.php:5326
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"Condividi il concetto \"Leadership in Collegamento\" con qualcun altro. Poi, "
+"forma loro per condividerlo con qualcun altro."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
 msgid "SESSION 18"
-msgstr ""
+msgstr "SESSIONE 18"
 
 #: site/course/course-content.php:5434
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"Prenditi del tempo per ascoltare Dio e chiediGli se ci sono passi che tu "
+"devi prendere o che il tuo gruppo deve prendere in base alla discussione che "
+"avete appena avuto sul Diagramma dei Quattro Campi."
 
 #: site/course/course-content.php:5465
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"Esaminate ogni concetto e attrezzo della formazione Zúme e individuare in "
+"quale campo va. Crea un Diagramma dei Quattro Campi con gli elementi "
+"inseriti."
 
 #: site/course/course-content.php:5466
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"Condividi l'attrezzo \"La Mappa Generazionale\" con un'altra persona che ama "
+"Gesù per allenarti nel lanciare la visione."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
-msgstr ""
+msgstr "SESSIONE 19"
 
 #: site/course/course-content.php:5526
 msgid ""
@@ -3244,6 +3251,9 @@ msgid ""
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"Pregate e ringraziate Dio per il corpo di Cristo. Pregate che l'amore "
+"reciproco e l'incoraggiamento continuino ad aumentare tra i membri del "
+"vostro gruppo mentre vi avvicinate a Gesù."
 
 #: site/course/course-content.php:5587
 msgid ""
@@ -3251,130 +3261,143 @@ msgid ""
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"Discutete tra di voi se i membri del vostro gruppo Zúme sono disposti o meno "
+"a continuare a incontrarsi come un gruppo di Mentori alla Pari dopo la "
+"conclusione della formazione."
 
 #: site/course/course-content.php:5588
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"Condividi il concetto di \"Mentori alla Pari\" con due persone che amano "
+"Gesù dalla tua lista dei 100."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
 msgid "SESSION 20"
-msgstr ""
+msgstr "SESSIONE 20"
 
 #: site/course/course-content.php:5650
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"Pregate e ringraziate Dio perché è fedele nel portare a compimento le sue "
+"opere in noi."
 
 #: site/course/course-content.php:5679
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"Però la formazione Zúme è solo l'inizio! In questa sessione, creeremo un "
+"piano per ciò che succederà dopo la formazione."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "SESSIONE INTENSIVA 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "SESSIONE INTENSIVA 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "SESSIONE INTENSIVA 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "SESSIONE INTENSIVA 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "SESSIONE INTENSIVA 5"
 
 #: site/course/course-content.php:5976
 msgid "NEXT STEP"
-msgstr ""
+msgstr "PROSSIMO PASSO"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:142
+#: site/dashboard/dashboard.php:231 site/dashboard/wizard.php:142
 #: site/parts/nav.php:94
-#, fuzzy
 msgid "Join the Community"
-msgstr "Communità"
+msgstr "Unisciti alla Communità"
 
 #: site/course/course-content.php:5980
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"La parte formativa di Zúme sta finendo, ma la parte pratica degli attrezzi e "
+"i concetti continua."
 
 #: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
 msgstr ""
+"Non camminare da solo. Trova una comunità per essere incoraggiato e per "
+"crescere."
 
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "Unisciti alla comunità Zúme utilizzando il codice QR."
 
 #: site/course/course-content.php:5996
-#, fuzzy
 msgid "CONGRATULATIONS on completing Zume Training!"
-msgstr "Completamento della formazione"
+msgstr "Complimenti per aver completato la formazione Zúme!"
 
 #: site/course/course-content.php:6008
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "PRENDI UNA PAUSA"
 
 #: site/course/presenter.php:132
-#, fuzzy
 msgid "Zume Course Presenter"
-msgstr "Corso Zúme v4"
+msgstr "Formazione Zúme Moderatore"
 
 #: site/course/presenter.php:133
-#, fuzzy
 msgid "Scripts are off"
-msgstr "Scrittura"
+msgstr "Gli script sono disabilitati"
 
 #: site/course/presenter.php:134
 msgid ""
 "To enjoy the interactive experience of the zume course, turn on scripts if "
 "you are able."
 msgstr ""
+"Per goderti l'esperienza interattiva della formazione Zúme, abilita gli "
+"script se possibile."
 
 #: site/course/presenter.php:148
 msgid ""
 "If you are unable to turn on scripts, you may download the course slides "
 "below"
 msgstr ""
+"Se non è possibile abilitare gli script, puoi scaricare le slide della "
+"formazione sotto"
 
 #: site/course/presenter.php:161
 #, php-format
 msgid "Zume Course slides in %s"
-msgstr ""
+msgstr "Le slide della Formazione Zúme in %s"
 
 #: site/course/presenter.php:165
 msgid "Unfortunately we do not have the course available for download yet."
-msgstr ""
+msgstr "Purtroppo la formazione non è ancora disponibile per lo scaricamento."
 
 #: site/course/presenter.php:166
 msgid "We will be producing the slides soon."
-msgstr ""
+msgstr "Presto le slide saranno disponibili."
 
 #: site/course/presenter.php:167
 msgid ""
 "Please come back later and check on our resources page for the slides "
 "download."
-msgstr ""
+msgstr "Controlla più tardi sulla pagina delle risorse per scaricare le slide."
 
-#: site/course/presenter.php:168 site/dashboard/dashboard.php:233
+#: site/course/presenter.php:168 site/dashboard/dashboard.php:235
 #: site/pages/resources.php:92 site/parts/footer.php:41
 msgid "Resources"
 msgstr "Risorse"
 
 #: site/course/presenter.php:171
 msgid "Links"
-msgstr ""
+msgstr "I Link"
 
 #: site/course/presenter.php:173 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3386,102 +3409,92 @@ msgid "About"
 msgstr "Info"
 
 #: site/course/presenter.php:178
-#, fuzzy
 msgid "Course"
-msgstr "Corso"
+msgstr "Formazione"
 
 #: site/course/presenter.php:195
-#, fuzzy
 msgid "Exit Course"
-msgstr "Corso"
+msgstr "Esci dalla Formazione"
 
 #: site/course/presenter.php:196
 msgid "Switch Views"
-msgstr ""
+msgstr "Cambia la Visualizzazione"
 
 #: site/course/presenter.php:197
-#, fuzzy
 msgid "Next slide"
-msgstr "Iniziare la sessione successiva"
+msgstr "Prossimo slide"
 
 #: site/course/presenter.php:198
-#, fuzzy
 msgid "Previous slide"
-msgstr "Precedente"
+msgstr "Slide precedente"
 
 #: site/course/presenter.php:199
-#, fuzzy
 msgid "Session"
-msgstr "Sessione 1"
+msgstr "Sessione"
 
 #: site/dashboard/checkin-dashboard.php:153
 msgid "Woops"
-msgstr ""
+msgstr "Ops"
 
 #: site/dashboard/checkin-dashboard.php:155
-#, fuzzy
 msgid "Something went wrong with your checkin process."
-msgstr "Ops! Qualcosa è andato storto. Riprova."
+msgstr "Qualcosa è andato storto. Riprova."
 
-#: site/dashboard/checkin-dashboard.php:160
+#: site/dashboard/checkin-dashboard.php:160 site/dashboard/dashboard.php:252
+#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298
 msgid "Congratulations!"
-msgstr ""
+msgstr "Congratulazioni!"
 
 #: site/dashboard/checkin-dashboard.php:165
-#, fuzzy
 msgid "Checked into session:"
-msgstr "Benvenuti nella Sessione"
+msgstr "Effettuato il check in per la sessione:"
 
 #: site/dashboard/checkin-dashboard.php:166
 #, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%1$d di %2$d"
 
 #: site/dashboard/checkin-dashboard.php:169
-#, fuzzy
 msgid "Course Progress:"
-msgstr "Progressi Zúme"
+msgstr "Progressi:"
 
 #: site/dashboard/checkin-dashboard.php:170
 #, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
 #: site/dashboard/dashboard.php:151
 msgid "Done"
-msgstr ""
+msgstr "Fatto"
 
 #: site/dashboard/dashboard.php:152
 msgid "Edit"
-msgstr ""
+msgstr "Modifica"
 
 #: site/dashboard/dashboard.php:153 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "Elimina"
 
 #: site/dashboard/dashboard.php:155
-#, fuzzy
 msgid "Active"
-msgstr "attivare"
+msgstr "Attivo"
 
 #: site/dashboard/dashboard.php:156
-#, fuzzy
 msgid "Completed"
-msgstr "Formazione Completata"
+msgstr "Completato"
 
 #: site/dashboard/dashboard.php:157
-#, fuzzy
 msgid "Uncompleted"
-msgstr "Formazione Completata"
+msgstr "Incompleto"
 
 #: site/dashboard/dashboard.php:158
-#, fuzzy
 msgid "Not Heard"
-msgstr "Ascoltato"
+msgstr "Non Ascoltato"
 
 #: site/dashboard/dashboard.php:159 site/pages/share.php:126
 msgid "All"
-msgstr ""
+msgstr "Tutti"
 
 #: site/dashboard/dashboard.php:160 site/profile/profile.php:163
 msgid "Logout"
@@ -3489,20 +3502,19 @@ msgstr "Logout"
 
 #: site/dashboard/dashboard.php:161 site/pages/share.php:129
 msgid "Filter"
-msgstr ""
+msgstr "Filtra"
 
 #: site/dashboard/dashboard.php:162
 msgid "List View"
-msgstr ""
+msgstr "Visualizza Come Lista"
 
 #: site/dashboard/dashboard.php:163
 msgid "Grid View"
-msgstr ""
+msgstr "Visualizza a Griglia"
 
 #: site/dashboard/dashboard.php:164
-#, fuzzy
 msgid "View Now"
-msgstr "Visualizza gruppo"
+msgstr "Guarda Ora"
 
 #: site/dashboard/dashboard.php:165
 #, fuzzy
@@ -3573,8 +3585,8 @@ msgstr ""
 msgid "Preview"
 msgstr "visualizza"
 
-#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:241
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:250
 #, php-format
 msgid "Add new %s"
 msgstr ""
@@ -3607,8 +3619,8 @@ msgstr "Collegato a"
 msgid "Getting Started"
 msgstr "Inizia"
 
-#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:211
-#: utilities/apis/cta-api.php:213
+#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 msgid "Set Profile"
 msgstr "Imposta il tuo profilo"
 
@@ -3630,7 +3642,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:190
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
-"the training"
+"the training."
 msgstr ""
 
 #: site/dashboard/dashboard.php:192
@@ -3669,8 +3681,7 @@ msgstr ""
 msgid "3-Month Plan"
 msgstr "Piano trimestrale"
 
-#: site/dashboard/dashboard.php:199 utilities/apis/cta-api.php:181
-#: utilities/apis/cta-api.php:183
+#: site/dashboard/dashboard.php:199
 msgid "Create a Plan"
 msgstr "Crea un piano"
 
@@ -3728,22 +3739,33 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:211
 #, fuzzy
-msgid "My Churches"
-msgstr "Due Chiese Semplici"
+msgid "My Plans are Locked"
+msgstr "1 Formazione"
 
 #: site/dashboard/dashboard.php:212
-msgid "Unlock the My Churches area by joining the community."
+msgid ""
+"Unlock this area by creating your Three-Month Plan or adding a commitment of "
+"your own."
 msgstr ""
 
 #: site/dashboard/dashboard.php:213
-msgid "My Maps"
-msgstr ""
+#, fuzzy
+msgid "My Churches"
+msgstr "Due Chiese Semplici"
 
 #: site/dashboard/dashboard.php:214
-msgid "My Maps are Locked"
+msgid "Unlock the My Churches area by joining the community."
 msgstr ""
 
 #: site/dashboard/dashboard.php:215
+msgid "My Maps"
+msgstr ""
+
+#: site/dashboard/dashboard.php:216
+msgid "My Maps are Locked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:217
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -3751,149 +3773,237 @@ msgid ""
 "seeing the great commission fulfilled."
 msgstr ""
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:218
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 Formazione"
 
-#: site/dashboard/dashboard.php:217 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:219 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "Corso"
 
-#: site/dashboard/dashboard.php:218 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:220 site/parts/footer.php:29
 #, fuzzy
 msgid "10 Session Course"
 msgstr "Sessione 1"
 
-#: site/dashboard/dashboard.php:219 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:221 site/parts/footer.php:30
 #, fuzzy
 msgid "20 Session Course"
 msgstr "Sessione 1"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
+#: site/dashboard/dashboard.php:222 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
 msgstr ""
 
-#: site/dashboard/dashboard.php:221
+#: site/dashboard/dashboard.php:223
 msgid "Heard"
 msgstr "Ascoltato"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:224
 msgid "Have I heard about this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:225
 msgid "Obeyed"
 msgstr "Obbedito"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:226
 msgid "Have I obeyed this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:227
 msgid "Shared"
 msgstr "Condiviso"
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:228
 msgid "Have I shared this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:227
+#: site/dashboard/dashboard.php:229
 msgid "Trained"
 msgstr "Preparato"
 
-#: site/dashboard/dashboard.php:228
+#: site/dashboard/dashboard.php:230
 msgid "Have I trained others to share this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:193
+#: site/dashboard/dashboard.php:232 site/dashboard/wizard.php:193
 #: site/pages/training.php:150 utilities/apis/cta-api.php:153
 msgid "Join"
 msgstr "Partecipa"
 
-#: site/dashboard/dashboard.php:231
+#: site/dashboard/dashboard.php:233
 msgid "Join the community to get access to this area."
 msgstr ""
 
-#: site/dashboard/dashboard.php:232
+#: site/dashboard/dashboard.php:234
 #, fuzzy
 msgid "Community links"
 msgstr "Communità"
 
-#: site/dashboard/dashboard.php:234
+#: site/dashboard/dashboard.php:236
 #, fuzzy
 msgid "Previous Slide"
 msgstr "Precedente"
 
-#: site/dashboard/dashboard.php:235
+#: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Next Slide"
 msgstr "Iniziare la sessione successiva"
 
-#: site/dashboard/dashboard.php:236
+#: site/dashboard/dashboard.php:238
 #, fuzzy
 msgid "Group Members"
 msgstr "Nome Gruppo"
 
-#: site/dashboard/dashboard.php:237
+#: site/dashboard/dashboard.php:239
 #, fuzzy
 msgid "Mark Completed"
 msgstr "Formazione Completata"
 
-#: site/dashboard/dashboard.php:238 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:240 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "Inizia la Sessione"
 
-#: site/dashboard/dashboard.php:239
+#: site/dashboard/dashboard.php:241
 msgid "Show details"
 msgstr ""
 
-#: site/dashboard/dashboard.php:240
+#: site/dashboard/dashboard.php:242
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:196
-#: utilities/apis/cta-api.php:198
+#: site/dashboard/dashboard.php:244 utilities/apis/cta-api.php:238
+#: utilities/apis/cta-api.php:240
 msgid "Invite Friends"
 msgstr "Invita i tuoi amici"
 
-#: site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:245
 msgid "Click to add your first church"
 msgstr ""
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:246
 #, fuzzy
 msgid "Church Name"
 msgstr "Due Chiese Semplici"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:247
 #, fuzzy
 msgid "Number of People"
 msgstr "Numero di membri"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:248
 #, fuzzy
 msgid "Church Location"
 msgstr "Salva la Località Attuale"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:249
 #, fuzzy
 msgid "Parent Church"
 msgstr "Parte di Due Chiese"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:250
 #, fuzzy
 msgid "Church"
 msgstr "Due Chiese Semplici"
 
-#: site/dashboard/dashboard.php:249
+#: site/dashboard/dashboard.php:251
 #, fuzzy
 msgid "cancel"
 msgstr "Annulla"
 
+#: site/dashboard/dashboard.php:253
+#, fuzzy
+msgid "You have requested a coach"
+msgstr "Hai fatto richiesta per un tutor."
+
+#: site/dashboard/dashboard.php:254
+#, fuzzy
+msgid "You have joined a training"
+msgstr "Avvia una formazione"
+
 #: site/dashboard/dashboard.php:255
+#, fuzzy
+msgid "You have set your profile"
+msgstr "Il tuo profilo"
+
+#: site/dashboard/dashboard.php:256
+#, php-format
+msgctxt "3-month plan unlocked"
+msgid "%s unlocked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:256 utilities/apis/cta-api.php:297
+#, fuzzy
+msgid "3 month plan"
+msgstr "Piano trimestrale"
+
+#: site/dashboard/dashboard.php:257
+#, fuzzy
+msgid "You have joined the community"
+msgstr "Unisciti alla Communità"
+
+#: site/dashboard/dashboard.php:258
+msgid "Will you do 1 or 2 hour training sessions?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:259
+#, fuzzy
+msgid "1 hour (20 sessions)"
+msgstr "Sessione"
+
+#: site/dashboard/dashboard.php:260
+#, fuzzy
+msgid "2 hour (10 sessions)"
+msgstr "Sessione"
+
+#: site/dashboard/dashboard.php:261
+msgid "What time of day?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:262
+#, fuzzy
+msgid "Morning"
+msgstr "Istruzione"
+
+#: site/dashboard/dashboard.php:263
+msgid "Afternoon"
+msgstr ""
+
+#: site/dashboard/dashboard.php:264
+msgid "Evening"
+msgstr ""
+
+#: site/dashboard/dashboard.php:265
+#, fuzzy
+msgid "How often will you meet?"
+msgstr "Come vi sentite?"
+
+#: site/dashboard/dashboard.php:266
+msgid "Every day"
+msgstr ""
+
+#: site/dashboard/dashboard.php:267
+msgid "Once a week"
+msgstr ""
+
+#: site/dashboard/dashboard.php:268
+msgid "Twice a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:269
+msgid "Once a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:270
+#, fuzzy
+msgid "When do you plan to start?"
+msgstr "Cosa imparate su Dio?"
+
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -3902,14 +4012,14 @@ msgstr ""
 "Condividerò la Mia Storia [Testimonianza] e la Storia di Dio [il Vangelo] "
 "con le seguenti persone:"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:277
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 "Inviterò le seguenti persone a dare inizio ad un Gruppo di Corresponsabilità "
 "con me:"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:278
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -3917,11 +4027,11 @@ msgstr ""
 "Sfiderò le seguenti persone a dare inizio a Gruppi di Corresponsabilità loro "
 "e a formarli su come fare:"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:279
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Inviterò le seguenti persone ad iniziare un Gruppo 3/3 con me:"
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:280
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -3929,7 +4039,7 @@ msgstr ""
 "Sfiderò le seguenti persone a dare inizio ai propri Gruppi 3/3 e a formarli "
 "su come fare:"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -3938,19 +4048,19 @@ msgstr ""
 "Inviterò le seguenti persone a partecipare a un Gruppo 3/3 di Speranza o "
 "Scoperta [vedi Appendice della Guida Zúme]."
 
-#: site/dashboard/dashboard.php:261
+#: site/dashboard/dashboard.php:282
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "Inviterò le seguenti persone a partecipare alla Camminata di Preghiera con "
 "me:"
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:283
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 "Farò la Camminata di Preghiera una volta ogni [giorni / settimane / mesi]."
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:284
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -3959,7 +4069,7 @@ msgstr ""
 "Preparerò le seguenti persone a condividere la loro storia e la storia di "
 "Dio e farò una Lista di 100 persone nella loro rete di relazioni:"
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:285
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -3967,13 +4077,13 @@ msgstr ""
 "Sfiderò le seguenti persone a utilizzare periodicamente lo strumento del "
 "Ciclo di Preghiera:"
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:286
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Utilizzerò lo strumento il Ciclo di preghiera una volta ogni [giorni / "
 "settimane / mesi]."
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:287
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -3982,14 +4092,14 @@ msgstr ""
 "Inviterò le seguenti persone a far parte di una Cellula di Leadership che "
 "guiderò io:"
 
-#: site/dashboard/dashboard.php:267
+#: site/dashboard/dashboard.php:288
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 "Incoraggerò le seguenti persone a seguire questo corso di Zúme Training:"
 
-#: site/dashboard/dashboard.php:268
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Altri impegni:"
@@ -4830,25 +4940,25 @@ msgstr ""
 msgid "Register Free"
 msgstr "Registrati Gratuitamente"
 
-#: site/pages/checkin.php:87 site/pages/friend-invite.php:83
+#: site/pages/checkin.php:84 site/pages/friend-invite.php:83
 msgid "Please enter a friend code."
 msgstr ""
 
-#: site/pages/checkin.php:88 site/pages/friend-invite.php:84
+#: site/pages/checkin.php:85 site/pages/friend-invite.php:84
 #: site/pages/plan-invite.php:84 site/pages/plan-invite.php:180
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/pages/checkin.php:162
+#: site/pages/checkin.php:154
 #, fuzzy
 msgid "Checkin"
 msgstr "Lista di controllo"
 
-#: site/pages/checkin.php:164
+#: site/pages/checkin.php:156
 msgid "Use the code on the screen or in the book"
 msgstr ""
 
-#: site/pages/checkin.php:169 site/pages/friend-invite.php:177
+#: site/pages/checkin.php:161 site/pages/friend-invite.php:177
 #: site/pages/plan-invite.php:188
 msgid "Connect"
 msgstr ""
@@ -5767,70 +5877,106 @@ msgstr "Partecipa alla formazione online"
 msgid "Join the online training to learn more"
 msgstr "Partecipa alla formazione online per saperne di più"
 
-#: utilities/apis/cta-api.php:167
+#: utilities/apis/cta-api.php:166
+#, fuzzy
+msgid "Joined Training!"
+msgstr "Partecipa alla formazione online"
+
+#: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
 msgstr "Richiedi un coach che ti aiuterà nel tuo cammino"
 
-#: utilities/apis/cta-api.php:182
-msgid "Create a plan to help you grow"
+#: utilities/apis/cta-api.php:195
+#, fuzzy
+msgid "Requested Coach!"
+msgstr "Richiedi un tutor"
+
+#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:225
+#, fuzzy
+msgid "Congratulations"
+msgstr "Congratulazioni!"
+
+#: utilities/apis/cta-api.php:209 utilities/apis/cta-api.php:211
+#, fuzzy
+msgid "Create a Training"
+msgstr "1 Formazione"
+
+#: utilities/apis/cta-api.php:210
+#, fuzzy
+msgid "Create a training to help you grow"
 msgstr "Crea un piano per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:197
+#: utilities/apis/cta-api.php:224
+#, fuzzy
+msgid "Created Training!"
+msgstr "Create la vostra lista dei 100"
+
+#: utilities/apis/cta-api.php:239
 msgid "Invite friends to join you on your journey"
 msgstr "Invita i tuoi amici ad unirsi a te nel tuo cammino"
 
-#: utilities/apis/cta-api.php:212
+#: utilities/apis/cta-api.php:254
 msgid "Set your profile to help others know you"
 msgstr "Imposta il tuo profilo per aiutare gli altri a conoscerti"
 
-#: utilities/apis/cta-api.php:226 utilities/apis/cta-api.php:228
+#: utilities/apis/cta-api.php:268
+#, fuzzy
+msgid "Profile Set"
+msgstr "Profilo"
+
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 msgid "Create 3 Month Plan"
 msgstr "Crea un piano trimestrale"
 
-#: utilities/apis/cta-api.php:227
+#: utilities/apis/cta-api.php:283
 msgid "Create a 3 month plan to help you grow"
 msgstr "Crea un piano trimestrale per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:241 utilities/apis/cta-api.php:243
+#: utilities/apis/cta-api.php:297
+#, php-format
+msgid "%s unlocked"
+msgstr ""
+
+#: utilities/apis/cta-api.php:311 utilities/apis/cta-api.php:313
 msgid "Complete 3 Month Plan"
 msgstr "Completa il tuo piano trimestrale"
 
-#: utilities/apis/cta-api.php:242
+#: utilities/apis/cta-api.php:312
 msgid "Complete your 3 month plan to help you grow"
 msgstr "Completa il tuo piano trimestrale per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:256 utilities/apis/cta-api.php:258
+#: utilities/apis/cta-api.php:326 utilities/apis/cta-api.php:328
 msgid "Submit Report"
 msgstr "Invia Rapporto"
 
-#: utilities/apis/cta-api.php:257
+#: utilities/apis/cta-api.php:327
 msgid "Submit a report to help you grow"
 msgstr "Invia un rapporto per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:271 utilities/apis/cta-api.php:273
+#: utilities/apis/cta-api.php:341 utilities/apis/cta-api.php:343
 msgid "Join a Hub"
 msgstr "Iscriviti a un Hub"
 
-#: utilities/apis/cta-api.php:272
+#: utilities/apis/cta-api.php:342
 msgid "Join a hub to help you grow"
 msgstr "Iscriviti a un Hub per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:289 utilities/apis/cta-api.php:291
+#: utilities/apis/cta-api.php:359 utilities/apis/cta-api.php:361
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "Respiro Spirituale"
 
-#: utilities/apis/cta-api.php:290
+#: utilities/apis/cta-api.php:360
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "Respiro Spirituale"
 
-#: utilities/apis/cta-api.php:304 utilities/apis/cta-api.php:306
+#: utilities/apis/cta-api.php:374 utilities/apis/cta-api.php:376
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "Amministrare le Relazioni - La Lista dei 100"
 
-#: utilities/apis/cta-api.php:305
+#: utilities/apis/cta-api.php:375
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "Amministrare le Relazioni - La Lista dei 100"
