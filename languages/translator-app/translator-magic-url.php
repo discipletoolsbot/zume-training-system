@@ -264,12 +264,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tabs = [
             'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-            'slides' => $tab === 'slides' ? '' : 'hollow',
-            'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
+//            'slides' => $tab === 'slides' ? '' : 'hollow',
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
             'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'messages' => $tab === 'messages' ? '' : 'hollow hollow-focus',
+            'assets' => $tab === 'assets' ? '' : 'hollow',
+            'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -415,7 +416,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
                                 </td>
-                                <td>
+                                <td style="text-align:right;">
                                      Title h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
                                     | Pre-Video <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
                                     | Post-Video <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
@@ -446,7 +447,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong>
                                 </td>
-                                <td>
+                                <td style="text-align:right;">
                                      Title  <?php echo empty( $item['title'] ) ? '&#10060;' : '&#9989;' ?>
                                     | Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
@@ -475,7 +476,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $script_items[$item['script_id']]['title'] ?> (<?php echo $item['script_id'] ?>)</strong>
                                 </td>
-                                <td>
+                                <td style="text-align:right;">
                                      Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
                             </tr>
@@ -503,7 +504,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $message['title'] ?></strong> (<?php echo $message['post_id'] ?>)
                                 </td>
-                                <td>
+                                <td style="text-align:right;">
                                     subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
                                     | body <?php echo empty( $message['body'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
@@ -516,178 +517,14 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
 
-            <!-- VIDEO PREVIEW -->
-            <div class="cell center grey-back">
-                <strong>VIMEO PREVIEW</strong>
-            </div>
-            <div class="cell">
-                <?php
-                    global $wpdb;
-
-                    $video_results = list_zume_videos( $this->language_code );
-
-                    foreach( $video_results as $row ) {
-                        if ( empty( $row['vimeo_id'] ) ) {
-                            ?>
-                            <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                Video <?php echo $row['piece_id'] ?> not installed
-                            </div>
-                            <?php
-                        } else {
-                            ?>
-                            <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
-                                <div style="width:400px;height:275px;">
-                                <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-                                </div>
-                            </div>
-                            <?php
-                        }
-                    }
-                ?>
-            </div>
 
 
 
-            <!-- IMAGE ASSETS PREVIEW -->
-            <div class="cell center grey-back">
-                <strong>IMAGE ASSETS</strong>
-            </div>
-            <div class="cell">
-                <table style="vertical-align: text-top;">
-                    <tbody>
-                     <?php
-                        foreach( $this->images as $image_number ) {
-                            $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
-                          ?>
-                            <tr>
-                                <td>
-                                    <strong><?php echo $image_number . '.png'?></strong>
-                                </td>
-                                <td>
-                                    <span data-target="<?php echo $file; ?>" class="image loading-spinner active"></span>
-                                    <a href="<?php echo $file ?>" target="_blank"><img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;"> View</a>
-                                </td>
-                            </tr>
-                        <?php
-                        }
-                    ?>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-
-        <script>
-            jQuery(document).ready(function() {
-                jQuery('.pdf').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-                jQuery('.mp4').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-                jQuery('.image').each(function() {
-                    let target = jQuery(this).data('target');
-                    console.log(target)
-                    if ( target ) {
-                         jQuery(this).load(target, function(response, status, xhr) {
-                            if (status == "error") {
-                                jQuery(this).removeClass('active').html('&#10060;');
-                            }
-                            else {
-                                jQuery(this).removeClass('active').html('&#9989;');
-                            }
-                        });
-                    } else {
-                        jQuery(this).removeClass('active').html('&#10060;');
-                    }
-                });
-            });
-        </script>
-        <?php
 
 
 
-        global $zume_languages_full_list;
-        $list = $zume_languages_full_list;
-        ksort( $list );
-        ?>
-            <div class="center" style="padding: 3em 0; border-bottom: 1px solid lightgrey;">
-                <h1>All Languages</h1>
-            </div>
-            <div style="width:10%;float:left;padding:1em; border-right: 1px solid lightgrey;">
-                <h3>Codes</h3><hr></hr>
-                 <?php
-                    foreach( $list as $language ) {
-                        ?>
-                        <strong><?php echo $language['code'] ?></strong><br>
-                        <?php
-                    }
-                ?>
-            </div>
-            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
-                <h3>Global List</h3><hr></hr>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Language</th>
-                            <th>Code</th>
-                            <th>Locale</th>
-                            <th style="width:5%">Active</th>
-                            <th style="width:5%">Selector</th>
-                            <th style="width:5%">Pieces</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach( $zume_languages_full_list as $language ) {
-                            ?>
-                            <tr>
-                                <td><?php echo $language['name'] ?></td>
-                                <td><?php echo $language['code'] ?></td>
-                                <td><?php echo $language['locale'] ?></td>
-                                <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
-                                <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
-                                <td><?php echo ( $language['feature_flags']['pieces_pages'] ) ? 'Yes' : 'No' ?></td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
-                <h3>Weblate</h3><hr></hr>
-                <a href="https://translate.disciple.tools/engage/zume-training/">
-                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
-                </a>
-            </div>
+
+
         <?php
     }
 
@@ -1119,7 +956,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <textarea style="height:500px;" id="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"><?php echo $item['lang']['content'] ?? '' ;  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>_script" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
                                     <br><span class="loading-spinner <?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"></span>
                                 </td>
                             </tr>
@@ -1354,7 +1191,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
 
     public function slides() {
-        global $zume_languages_full_list;
+        global $zume_languages_full_list, $zume_languages_by_code;
         $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         //load the new text domain
@@ -1442,6 +1279,39 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     window.location.href = `?tab=slides&type=${type}&session=${session}`;
                 });
 
+                const jsObject = [<?php echo json_encode([
+                    'root' => esc_url_raw( rest_url() ),
+                    'nonce' => wp_create_nonce( 'wp_rest' ),
+                    'language' => $this->language_code,
+                    'site_url' => get_site_url(),
+                    'base_url' => $this->base_url,
+                    'map_key' => DT_Mapbox_API::get_key(),
+                    'mapbox_selected_id' => 'current',
+                    'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
+                    'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '/assets/images' ),
+                    'template_dir' => get_template_directory_uri(),
+                    'profile' => zume_get_user_profile(),
+                    'user_stage' => zume_get_user_stage(),
+                    'training_items' => zume_training_items(),
+                    'host_progress' => zume_get_user_host(),
+                    'friends' => zume_get_user_friends(),
+                    'languages' => $zume_languages_by_code,
+                    'has_pieces_pages' => zume_feature_flag( 'pieces_pages', zume_current_language() ),
+                    'share_translations' => Zume_Training_Share::translations(),
+//                    'translations' => $this->translations(),
+                    'wizard_translations' => Zume_Training_Wizard::translations(),
+//                    'three_month_plan_questions' => self::three_month_plan_questions(),
+                    'urls' => [
+                        'logout' => esc_url( dt_login_url( 'logout' ) ),
+                        'launch_ten_session_course' => zume_10_session_url(),
+                        'launch_twenty_session_course' => zume_20_session_url(),
+                        'launch_intensive_session_course' => zume_intensive_session_url(),
+                        'set_profile_wizard' => esc_url( '#' ),
+                        'plan_training_wizard' => esc_url( zume_make_a_plan_wizard_url() ),
+                        'get_coach_wizard' => esc_url( zume_get_a_coach_wizard_url() ),
+                    ],
+                ]) ?>][0]
+
                 if ( type !== '' ) {
                     $("select option[value="+type+"_"+session+"]").prop('selected', true );
                 }
@@ -1495,6 +1365,188 @@ class Zume_Training_Translator extends Zume_Magic_Page
         </div> <!-- end padding for under dropdown -->
         <?php
 
+    }
+    public function assets() {
+        if( $this->access_failure_test() ) {
+            $this->list_approved_languages();
+            return;
+        }
+        $language = $this->language;
+        $training_items = zume_training_items();
+        ?>
+
+            <div class="grid-x grid-padding-x" >
+
+
+                    <!-- VIDEO PREVIEW -->
+                    <div class="cell center grey-back">
+                        <strong>VIMEO PREVIEW</strong>
+                    </div>
+                    <div class="cell">
+                        <?php
+                            global $wpdb;
+
+                            $video_results = list_zume_videos( $this->language_code );
+
+                            foreach( $video_results as $row ) {
+                                if ( empty( $row['vimeo_id'] ) ) {
+                                    ?>
+                                    <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                        Video <?php echo $row['piece_id'] ?> not installed
+                                    </div>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                        <strong><?php echo $training_items[$row['piece_id']]['title'] ?? '' ?></strong>
+                                        <div style="width:400px;height:275px;">
+                                        <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            }
+                        ?>
+                    </div>
+
+
+
+                <!-- IMAGE ASSETS PREVIEW -->
+                    <div class="cell center grey-back">
+                        <strong>IMAGE ASSETS</strong>
+                    </div>
+                    <div class="cell">
+                        <table style="vertical-align: text-top;">
+                            <tbody>
+                             <?php
+                                foreach( $this->images as $image_number ) {
+                                    $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
+                                  ?>
+                                    <tr>
+                                        <td>
+                                            <strong><?php echo $image_number . '.png'?></strong>
+                                        </td>
+                                        <td>
+                                            <span data-target="<?php echo $file; ?>" class="image loading-spinner active"></span>
+                                            <a href="<?php echo $file ?>" target="_blank"><img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;"> View</a>
+                                        </td>
+                                    </tr>
+                                <?php
+                                }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                 </div>
+            <script>
+                jQuery(document).ready(function() {
+                    jQuery('.pdf').each(function() {
+                        let target = jQuery(this).data('target');
+                        console.log(target)
+                        if ( target ) {
+                             jQuery(this).load(target, function(response, status, xhr) {
+                                if (status == "error") {
+                                    jQuery(this).removeClass('active').html('&#10060;');
+                                }
+                                else {
+                                    jQuery(this).removeClass('active').html('&#9989;');
+                                }
+                            });
+                        } else {
+                            jQuery(this).removeClass('active').html('&#10060;');
+                        }
+                    });
+                    jQuery('.mp4').each(function() {
+                        let target = jQuery(this).data('target');
+                        console.log(target)
+                        if ( target ) {
+                             jQuery(this).load(target, function(response, status, xhr) {
+                                if (status == "error") {
+                                    jQuery(this).removeClass('active').html('&#10060;');
+                                }
+                                else {
+                                    jQuery(this).removeClass('active').html('&#9989;');
+                                }
+                            });
+                        } else {
+                            jQuery(this).removeClass('active').html('&#10060;');
+                        }
+                    });
+                    jQuery('.image').each(function() {
+                        let target = jQuery(this).data('target');
+                        console.log(target)
+                        if ( target ) {
+                             jQuery(this).load(target, function(response, status, xhr) {
+                                if (status == "error") {
+                                    jQuery(this).removeClass('active').html('&#10060;');
+                                }
+                                else {
+                                    jQuery(this).removeClass('active').html('&#9989;');
+                                }
+                            });
+                        } else {
+                            jQuery(this).removeClass('active').html('&#10060;');
+                        }
+                    });
+                });
+            </script>
+
+             <?php
+            global $zume_languages_full_list;
+            $list = $zume_languages_full_list;
+            ksort( $list );
+            ?>
+            <div class="center" style="padding: 3em 0; border-bottom: 1px solid lightgrey;">
+                <h1>All Languages</h1>
+            </div>
+            <div style="width:10%;float:left;padding:1em; border-right: 1px solid lightgrey;">
+                <h3>Codes</h3><hr></hr>
+                 <?php
+                    foreach( $list as $language ) {
+                        ?>
+                        <strong><?php echo $language['code'] ?></strong><br>
+                        <?php
+                    }
+                ?>
+            </div>
+            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
+                <h3>Global List</h3><hr></hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Code</th>
+                            <th>Locale</th>
+                            <th style="width:5%">Active</th>
+                            <th style="width:5%">Selector</th>
+                            <th style="width:5%">Pieces</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        foreach( $zume_languages_full_list as $language ) {
+                            ?>
+                            <tr>
+                                <td><?php echo $language['name'] ?></td>
+                                <td><?php echo $language['code'] ?></td>
+                                <td><?php echo $language['locale'] ?></td>
+                                <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
+                                <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
+                                <td><?php echo ( $language['feature_flags']['pieces_pages'] ) ? 'Yes' : 'No' ?></td>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
+                <h3>Weblate</h3><hr></hr>
+                <a href="https://translate.disciple.tools/engage/zume-training/">
+                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
+                </a>
+            </div>
+        <?php
     }
     public function qr_codes() {
         ?>
