@@ -20,6 +20,7 @@ export class DashBoard extends router(LitElement) {
             userProfile: { type: Object, attribute: false },
             userState: { type: Object, attribute: false },
             wizardType: { type: String, attribute: false },
+            celbrationModalContent: { type: Object, attribute: false },
         };
     }
 
@@ -68,11 +69,22 @@ export class DashBoard extends router(LitElement) {
         this.userProfile = jsObject.profile
         this.userState = jsObject.user_stage.state
         this.wizardType = ''
+        this.celebrationModalContent = {
+            title: '',
+            content: [],
+        }
+
+        this.allCtas = []
+        this.ctas = []
+        this.userId = jsObject.profile.user_id
+        this.showingCelebrationModal = false
 
         this.updateUserProfile = this.updateUserProfile.bind(this)
         this.updateWizardType = this.updateWizardType.bind(this)
         this.refetchState = this.refetchState.bind(this)
         this.refetchHost = this.refetchHost.bind(this)
+        this.getCtas = this.getCtas.bind(this)
+        this.showCelebrationModal = this.showCelebrationModal.bind(this)
     }
 
     connectedCallback() {
@@ -82,8 +94,13 @@ export class DashBoard extends router(LitElement) {
         window.addEventListener('toggle-dashboard-sidebar', this.toggleSidebar)
         window.addEventListener('open-wizard', this.updateWizardType)
         window.addEventListener('wizard-finished', this.closeWizard)
+        window.addEventListener('wizard-finished', this.getCtas)
         window.addEventListener('user-state:change', this.refetchState)
+        window.addEventListener('user-state:change', this.getCtas)
         window.addEventListener('user-host:change', this.refetchHost)
+
+        window.addEventListener('load', this.showCelebrationModal)
+        window.addEventListener('ctas:changed', this.showCelebrationModal)
     }
 
     disconnectedCallback() {
@@ -93,11 +110,23 @@ export class DashBoard extends router(LitElement) {
         window.removeEventListener('toggle-dashboard-sidebar', this.toggleSidebar)
         window.removeEventListener('open-wizard', this.updateWizardType)
         window.removeEventListener('wizard-finished', this.closeWizard)
+        window.removeEventListener('wizard-finished', this.getCtas)
+        window.removeEventListener('user-state:change', this.refetchState)
+        window.removeEventListener('user-state:change', this.getCtas)
         window.removeEventListener('user-host:change', this.refetchHost)
+
+        window.removeEventListener('load', this.showCelebrationModal)
+        window.removeEventListener('ctas:changed', this.showCelebrationModal)
     }
 
     firstUpdated() {
         this.menuOffset = this.getOffsetTop('.sidebar-wrapper')
+        this.getCtas()
+
+        const celebrationModal = this.renderRoot.querySelector('#celebration-modal')
+        celebrationModal?.addEventListener('closed.zf.reveal', () => {
+            this.showingCelebrationModal = false
+        })
     }
 
     updateWizardType(event) {
@@ -239,7 +268,7 @@ export class DashBoard extends router(LitElement) {
         jQuery(modal).foundation('close')
     }
     refetchState() {
-        console.log('refetching state')
+        this.getCtas()
         makeRequest('GET', 'user_stage', {}, 'zume_system/v1' ).done( ( data ) => {
             if (!data || !data.state) {
                 console.error('Stage or state data not returned from api')
@@ -249,7 +278,6 @@ export class DashBoard extends router(LitElement) {
         })
     }
     refetchHost() {
-        console.log('refetching host')
         makeRequest('GET', 'user_host', {}, 'zume_system/v1' ).done( ( data ) => {
             if (!data) {
                 console.error('Host not returned from api')
@@ -257,7 +285,59 @@ export class DashBoard extends router(LitElement) {
             jsObject.host_progress = data
         })
     }
+    getCtas() {
+        /* Get ctas from api */
+        makeRequest('POST', 'user_ctas', { user_id: this.userId, language: jsObject.language }, 'zume_system/v1' ).done( ( data ) => {
+            const ctas = Object.values(data)
 
+            this.allCtas = ctas
+
+            const shuffleArray = (array) => {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array
+            }
+
+            const celebrations = this.allCtas.filter(({content_template}) => content_template === 'celebration')
+            const cards = this.allCtas.filter(({content_template}) => content_template === 'card')
+
+            const organizedCtas = [ ...celebrations, ...shuffleArray(cards) ]
+            this.allCtas = organizedCtas
+
+            /* Save it globally for lower down web components to access */
+            jsObject.allCtas = this.allCtas
+            this.dispatchEvent( new CustomEvent( 'ctas:changed', { bubbles: true } ) )
+        })
+    }
+    showCelebrationModal() {
+        if (this.showingCelebrationModal) {
+            return
+        }
+        const ctaArea = this.renderRoot.querySelector('dash-cta')
+
+        const celebrations = this.allCtas.filter(({content_template}) => content_template === 'celebration')
+
+        if (!ctaArea && celebrations.length > 0) {
+            this.showingCelebrationModal = true
+            celebrations.forEach(({content: { title, description }}) => {
+                this.celebrationModalContent.title = description
+                this.celebrationModalContent.content.push(title)
+            })
+            this.requestUpdate()
+
+            const celebrationModal = document.querySelector('#celebration-modal')
+            jQuery(celebrationModal).foundation('open')
+
+
+            celebrations.forEach(({type, subtype}) => {
+                makeRequest('POST', 'log', { type, subtype }, 'zume_system/v1')
+            })
+            const celebrationKeys = celebrations.map(({key}) => key)
+            jsObject.allCtas = jsObject.allCtas.filter(({key}) => !celebrationKeys.includes(key))
+        }
+    }
     openProfile() {
         const modal = document.querySelector('#profile-modal')
         jQuery(modal).foundation('open')
@@ -433,6 +513,25 @@ export class DashBoard extends router(LitElement) {
                 </div>
 
                 ${this.renderRoute()}
+            </div>
+            <div class="stack | reveal tiny card celebration showing | border-none" id="celebration-modal" data-reveal>
+                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>
+                    <span class="icon zume-close gray-500"></span>
+                </button>
+                <h2 class="h5 text-center bold">${this.celebrationModalContent.title}</h2>
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="w-30" src="${jsObject.images_url + '/fireworks-2.svg'}" alt="" />
+                    <img class="w-40" src="${jsObject.images_url + '/thumbs-up.svg'}" alt="" />
+                    <img class="w-30" src="${jsObject.images_url + '/fireworks-2.svg'}" alt="" />
+                </div>
+                <div class="stack--3">
+                    ${
+                        this.celebrationModalContent.content.map((content) => html`
+                            <p><span class="icon zume-check-mark"></span> ${content}</p>
+                        `)
+                    }
+                </div>
+
             </div>
             <div class="reveal full" id="profile-modal" data-reveal>
                 <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>

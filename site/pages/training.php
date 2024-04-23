@@ -74,7 +74,7 @@ class Zume_Training_Page extends Zume_Magic_Page
     public function header_style(){
         ?>
         <script>
-            jQuery(document).ready(function(){
+            jQuery(document).ready(function($){
                 jQuery(document).foundation();
 
                 const trainingLinks = Array.from(document.querySelectorAll('.training-link a'))
@@ -131,7 +131,7 @@ class Zume_Training_Page extends Zume_Magic_Page
         ?>
 
         <div class="container-md stack-2 center | py-2">
-            <h1 class="text-center"><?php echo esc_html__( "Get started with Zúme Training", 'zume' ) ?></h1>
+            <h1 class="text-center"><?php echo esc_html__( 'Get started with Zúme Training', 'zume' ) ?></h1>
             <div class="switcher | training-path">
                 <div class="stack | card | switcher-width-40">
                     <h2 class="f-1 text-center"><?php echo esc_html__( 'Create your own training', 'zume' ) ?></h2>
@@ -185,7 +185,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                             <h3 class="concepts__title"><?php echo esc_html__( 'Discipleship Concepts', 'zume' ) ?></h3>
                             <ul class="stack--4">
                                 <?php
-                                foreach( $training_items as $item ) {
+                                foreach ( $training_items as $item ) {
                                     if ( $item['type'] === 'concept' ) {
                                         ?>
                                         <li class="d-flex gap-2 align-items-center">
@@ -199,7 +199,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                             <h3 class="concepts__title"><?php echo esc_html__( 'Spiritual Practices', 'zume' ) ?></h3>
                             <ul class="stack--4">
                                 <?php
-                                foreach( $training_items as $item ) {
+                                foreach ( $training_items as $item ) {
                                     if ( $item['type'] === 'tool' ) {
                                         ?>
                                         <li class="d-flex gap-2 align-items-center">

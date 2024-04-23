@@ -167,6 +167,11 @@
 
   </rule>
 
+  <rule ref="NormalizedArrays">
+    <exclude name="NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceBeforeArrayCloserSingleLine" />
+    <exclude name="NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceAfterArrayOpenerSingleLine" />
+  </rule>
+
   <!-- Keeping these ones: -->
   <rule ref="Generic.ControlStructures.InlineControlStructure"/>
   <rule ref="Generic.Debug.ClosureLinter"/>

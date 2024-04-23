@@ -72,13 +72,13 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         return zume_training_magic_url_base_allowed_css();
     }
 
-    public function enqueue_scripts() {
-        wp_enqueue_script( 'zume-profile-utilities', trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js', array(), filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ), true );
-    }
+    public function enqueue_scripts() {}
 
     public function header_style(){
         global $zume_user_profile, $zume_languages_by_code;
         ?>
+        <?php //phpcs:ignore ?>
+        <script src="<?php echo trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js?version=' . filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ) ?>"></script>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
