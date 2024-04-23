@@ -45,7 +45,7 @@ if ( is_admin() ) {
                     /* Check that all training items are installed as pieces pages. */
                     $training_items = zume_training_items();
                     foreach( $training_items as $item ) {
-                        if ( $item['key_int'] === 27 ) {
+                        if ( $item['key'] === 27 ) {
                             continue;
                         }
                         $installed = $wpdb->get_var( $wpdb->prepare(
@@ -53,7 +53,7 @@ if ( is_admin() ) {
                             FROM zume_posts p
                             JOIN zume_postmeta pm ON p.ID=pm.post_id AND pm.meta_key = 'zume_lang' AND pm.meta_value = %s
                             JOIN zume_postmeta pm1 ON p.ID=pm1.post_id AND pm1.meta_key = 'zume_piece' AND pm1.meta_value = %s
-                            WHERE p.post_type = 'zume_pieces'", $language_code, $item['key_int'] ) );
+                            WHERE p.post_type = 'zume_pieces'", $language_code, $item['key'] ) );
                         if ( $installed ) {
                             echo '<p>' . $item['title'] . ' - <a href="https://zume5.training/wp-admin/post.php?post='.$installed.'&action=edit">&#10003;</a></p>';
                         } else {
@@ -118,8 +118,8 @@ if ( is_admin() ) {
                         if ( $meta ) {
                             $training_items = zume_training_items();
                             foreach( $training_items as $item ) {
-                                if ( ! isset( $meta[$item['key_int']] ) ) {
-                                    update_post_meta( $video_id, $item['key_int'], '' );
+                                if ( ! isset( $meta[$item['key']] ) ) {
+                                    update_post_meta( $video_id, $item['key'], '' );
                                     echo '<p>Added ' . $item['title'] . ' - &#10003;</p>';
                                 }
                             }
@@ -198,7 +198,7 @@ if ( is_admin() ) {
 
         public static function install_piece( $piece, $language ) {
             $title = $piece['title'] . ' ' . $language['code'];
-            $zume_piece = $piece['key_int'];
+            $zume_piece = $piece['key'];
             $zume_lang = $language['code'];
             return wp_insert_post( [
                 'post_title' => $title,

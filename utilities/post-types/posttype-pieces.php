@@ -102,11 +102,11 @@ class Zume_Training_Pieces_Post_Type
             <?php
             foreach( $training_items as $item ) {
                 $selected = false;
-                if ( $item['key_int'] == $number ) {
+                if ( $item['key'] == $number ) {
                     $selected = true;
                 }
                 ?>
-                <option value="<?php echo esc_attr( $item['key_int'] ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_html( $item['key_int'] ) . ' - '; echo esc_html( $item['title'] ) ?></option>
+                <option value="<?php echo esc_attr( $item['key'] ) ?>" <?php echo ( $selected ) ? 'selected' : ''; ?> ><?php echo esc_html( $item['key'] ) . ' - '; echo esc_html( $item['title'] ) ?></option>
                 <?php
             }
 

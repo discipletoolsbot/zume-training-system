@@ -100,7 +100,7 @@ class Zume_Training_Share extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $pieces_info = zume_training_items();
+        $training_items = zume_training_items();
         $posts = pieces_by_lang_code( $lang_code );
         $share_items = [];
 
@@ -108,9 +108,9 @@ class Zume_Training_Share extends Zume_Magic_Page
             $share_items[] = [
                 'page_title' => $post['zume_piece_h1'],
                 'page_url' => $post['post_name'],
-                'type' => $pieces_info[$post['zume_piece']]['type'],
-                'key' => $pieces_info[$post['zume_piece']]['key'],
-                'description' => $pieces_info[$post['zume_piece']]['description'],
+                'type' => $training_items[$post['zume_piece']]['type'],
+                'key' => $training_items[$post['zume_piece']]['key'],
+                'description' => $training_items[$post['zume_piece']]['description'],
             ];
         }
 
