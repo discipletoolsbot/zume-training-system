@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-22 07:55-0600\n"
+"POT-Creation-Date: 2024-04-23 13:53-0600\n"
 "PO-Revision-Date: 2024-04-10 21:38+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Persian <https://translate.disciple.tools/projects/zume-"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:191
-#: site/dashboard/dashboard.php:241 site/parts/footer.php:11
+#: site/dashboard/dashboard.php:243 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "آموزش"
@@ -78,14 +78,14 @@ msgstr "ذخیره سازی"
 msgid "Global Map"
 msgstr ""
 
-#: globals.php:1907 globals.php:1908 site/course/course-content.php:86
+#: globals.php:1905 globals.php:1907 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178
 msgid "God Uses Ordinary People"
 msgstr "خدا از مردم عادی استفاده می کند"
 
-#: globals.php:1909 site/pages/follow-jesus.php:168
+#: globals.php:1906 site/pages/follow-jesus.php:168
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,44 +93,44 @@ msgstr ""
 "خواهید دید که چگونه خدا از مردم عادی استفاده می کند که کارهای ساده ای را "
 "انجام می دهند تا تأثیر زیادی بگذارد."
 
-#: globals.php:1919 site/course/course-content.php:3161
+#: globals.php:1916 site/course/course-content.php:3161
 #: site/course/course-content.php:3179
 msgid "Simple Definition of Disciple and Church"
 msgstr "تعریف ساده از شاگرد و کلیسا"
 
-#: globals.php:1920 site/course/course-content.php:143
-#: site/course/course-content.php:152
-msgid "Disciples and the Church"
-msgstr ""
-
-#: globals.php:1921 site/course/course-content.php:153
+#: globals.php:1917 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:172
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "ماهیت شاگرد بودن ، شاگرد درست کردن و کلیسا چیست."
 
-#: globals.php:1931 site/course/course-content.php:3162
+#: globals.php:1918 site/course/course-content.php:143
+#: site/course/course-content.php:152
+msgid "Disciples and the Church"
+msgstr ""
+
+#: globals.php:1927 site/course/course-content.php:3162
 #: site/course/course-content.php:3180
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "تنفس معنوی شنیدن و اطاعت خداست"
 
-#: globals.php:1932 site/course/course-content.php:189
+#: globals.php:1928 site/pages/follow-jesus.php:194
+msgid "Being a disciple means we hear from God and we obey God."
+msgstr "شاگرد بودن یعنی اینکه از خدا می شنویم و از خدا اطاعت می کنیم."
+
+#: globals.php:1929 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "تنفس معنوی شنیدن و اطاعت خداست"
 
-#: globals.php:1933 site/pages/follow-jesus.php:194
-msgid "Being a disciple means we hear from God and we obey God."
-msgstr "شاگرد بودن یعنی اینکه از خدا می شنویم و از خدا اطاعت می کنیم."
-
-#: globals.php:1943 globals.php:1944
+#: globals.php:1938 globals.php:1940
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "مطالعه کتاب مقدس به روش ک.م.ک.د.ا"
 
-#: globals.php:1945 site/pages/follow-jesus.php:209
+#: globals.php:1939 site/pages/follow-jesus.php:209
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -138,14 +138,14 @@ msgstr ""
 "ابزاری برای مطالعه روزانه کتاب مقدس که به شما کمک می کند کلام خدا را درک "
 "کنید ، پیروی کنید و به اشتراک بگذارید."
 
-#: globals.php:1955 globals.php:1956 site/course/course-content.php:93
+#: globals.php:1949 globals.php:1951 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425
 msgid "Accountability Groups"
 msgstr "گروه های پاسخگویی"
 
-#: globals.php:1957 site/pages/follow-jesus.php:224
+#: globals.php:1950 site/pages/follow-jesus.php:224
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -154,16 +154,11 @@ msgstr ""
 "ابزاری برای دو یا سه نفر از یک جنس برای دیدار هفتگی و تشویق یکدیگر در مناطقی "
 "که به خوبی پیش می روند و مناطقی را که نیاز به اصلاح دارند فاش می کند."
 
-#: globals.php:1967
+#: globals.php:1960
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Consumer vs. تولیدکننده شیوه زندگی"
 
-#: globals.php:1968
-#, fuzzy
-msgid "Producer not Consumer"
-msgstr "تولیدکنندگان در مقابل مصرف کنندگان"
-
-#: globals.php:1969 site/pages/follow-jesus.php:188
+#: globals.php:1961 site/pages/follow-jesus.php:188
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -171,36 +166,41 @@ msgstr ""
 "شما چهار روش اصلی را که خداوند پیروان روزمره را بیشتر شبیه عیسی می کند ، کشف "
 "خواهید کرد."
 
-#: globals.php:1979 globals.php:1980
+#: globals.php:1962
+#, fuzzy
+msgid "Producer not Consumer"
+msgstr "تولیدکنندگان در مقابل مصرف کنندگان"
+
+#: globals.php:1971 globals.php:1973
 msgid "How to Spend an Hour in Prayer"
 msgstr "چگونه یک ساعت را در دعا صرف کنیم"
 
-#: globals.php:1981 site/pages/follow-jesus.php:198
+#: globals.php:1972 site/pages/follow-jesus.php:198
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "ببینید گذراندن یک ساعت در نماز چقدر آسان است."
 
-#: globals.php:1991
+#: globals.php:1982
 msgid "Relational Stewardship – List of 100"
 msgstr "مأموریت ارتباطی - لیست 100"
 
-#: globals.php:1992 site/course/course-content.php:477
+#: globals.php:1983 site/pages/follow-jesus.php:285
+msgid "A tool designed to help you be a good steward of your relationships."
+msgstr "ابزاری که به شما کمک می کند سرمربی خوبی از روابط خود باشید."
+
+#: globals.php:1984 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
 msgid "List of 100"
 msgstr "لیست 100 نفره"
 
-#: globals.php:1993 site/pages/follow-jesus.php:285
-msgid "A tool designed to help you be a good steward of your relationships."
-msgstr "ابزاری که به شما کمک می کند سرمربی خوبی از روابط خود باشید."
-
-#: globals.php:2003 globals.php:2004 site/course/course-content.php:796
+#: globals.php:1993 globals.php:1995 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "اقتصاد روحانی"
 
-#: globals.php:2005 site/pages/follow-jesus.php:243
+#: globals.php:1994 site/pages/follow-jesus.php:243
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -208,16 +208,11 @@ msgstr ""
 "بیاموزید که اقتصاد خدا چگونه با جهان متفاوت است. خدا سرمایه گذاری بیشتری در "
 "کسانی می کند که به آنچه قبلاً داده شده است وفادار است."
 
-#: globals.php:2015
+#: globals.php:2004
 msgid "The Gospel and How to Share It"
 msgstr "انجیل و چگونگی به اشتراک گذاشتن آن"
 
-#: globals.php:2016
-#, fuzzy
-msgid "Sharing God‘s Story"
-msgstr "بازگو کردن شهادت تان را تمرین کنید (45 دقیقه)"
-
-#: globals.php:2017 site/pages/follow-jesus.php:289
+#: globals.php:2005 site/pages/follow-jesus.php:289
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -225,18 +220,16 @@ msgstr ""
 "راهی را برای به اشتراک گذاشتن خبرهای خوب خداوند از آغاز بشریت تا پایان این "
 "عصر بیاموزید."
 
-#: globals.php:2027
+#: globals.php:2006
+#, fuzzy
+msgid "Sharing God‘s Story"
+msgstr "بازگو کردن شهادت تان را تمرین کنید (45 دقیقه)"
+
+#: globals.php:2015
 msgid "Baptism and How To Do It"
 msgstr "غسل تعمید و نحوه انجام این کار"
 
-#: globals.php:2028 site/course/course-content.php:801
-#: site/course/course-content.php:949 site/course/course-content.php:958
-#: site/course/course-content.php:1021 site/course/course-content.php:4076
-#: site/course/course-content.php:4093
-msgid "Baptism"
-msgstr "تعمید"
-
-#: globals.php:2029 site/pages/follow-jesus.php:236
+#: globals.php:2016 site/pages/follow-jesus.php:236
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -245,15 +238,18 @@ msgstr ""
 "عیسی گفت ، \"بروید و شاگردان همه ملل شوید ، آنها را به اسم پدر و پسر و روح "
 "القدس تکمیل کنید ...\" بیاموزید که چگونه این کار را عملی کنید."
 
-#: globals.php:2039
+#: globals.php:2017 site/course/course-content.php:801
+#: site/course/course-content.php:949 site/course/course-content.php:958
+#: site/course/course-content.php:1021 site/course/course-content.php:4076
+#: site/course/course-content.php:4093
+msgid "Baptism"
+msgstr "تعمید"
+
+#: globals.php:2026
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "شهادت 3 دقیقه‌ای خود را آماده کنید"
 
-#: globals.php:2040
-msgid "3-Minute Testimony"
-msgstr "شهادت 3 دقیقه ای"
-
-#: globals.php:2041 site/pages/follow-jesus.php:293
+#: globals.php:2027 site/pages/follow-jesus.php:293
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -261,18 +257,17 @@ msgstr ""
 "بیاموزید که چگونه شهادت خود را در سه دقیقه با اشتراک گذاری اینکه چگونه عیسی "
 "زندگی شما را تحت تأثیر قرار داده است به اشتراک بگذارید."
 
-#: globals.php:2051 site/course/course-content.php:1140
+#: globals.php:2028
+msgid "3-Minute Testimony"
+msgstr "شهادت 3 دقیقه ای"
+
+#: globals.php:2037 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823
 msgid "Vision Casting the Greatest Blessing"
 msgstr "چشم انداز بزرگترین نعمت"
 
-#: globals.php:2052
-#, fuzzy
-msgid "Great, Greater, and Greatest Blessing"
-msgstr "عظیم ترین برکت"
-
-#: globals.php:2053 site/course/course-content.php:1216
+#: globals.php:2038 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:176
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -281,22 +276,27 @@ msgstr ""
 "یک الگوی ساده بیاموزید که نه تنها یک پیروان عیسی بلکه کل خانواده های معنوی "
 "که برای نسل های بعدی چند برابر می شوند ، بسازید."
 
-#: globals.php:2063
+#: globals.php:2039
+#, fuzzy
+msgid "Great, Greater, and Greatest Blessing"
+msgstr "عظیم ترین برکت"
+
+#: globals.php:2048
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "شاگرد جوجه اردک - بلافاصله پیشرو"
 
-#: globals.php:2064 site/course/course-content.php:1141
+#: globals.php:2049
+msgid "Learn what ducklings have to do with disciple-making."
+msgstr "بیاموزید که جوجه اردکها چه ارتباطی با شاگردان دارند."
+
+#: globals.php:2050 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "شاگرد سازی به روش جوجه اردک"
 
-#: globals.php:2065
-msgid "Learn what ducklings have to do with disciple-making."
-msgstr "بیاموزید که جوجه اردکها چه ارتباطی با شاگردان دارند."
-
-#: globals.php:2075 globals.php:2076 site/course/course-content.php:1142
+#: globals.php:2059 globals.php:2061 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375
@@ -304,7 +304,7 @@ msgstr "بیاموزید که جوجه اردکها چه ارتباطی با ش�
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "چشم هایی برای دیدن جایی که پادشاهی وجود ندارد"
 
-#: globals.php:2077 site/pages/follow-jesus.php:247
+#: globals.php:2060 site/pages/follow-jesus.php:247
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -312,19 +312,11 @@ msgstr ""
 "شروع کنید تا ببینید که پادشاهی خدا کجا نیست. اینها معمولاً مکانهایی هستند که "
 "خداوند می خواهد بیشترین کار را انجام دهد."
 
-#: globals.php:2087
+#: globals.php:2070
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "شام خداوند و چگونه آن را رهبری کنیم"
 
-#: globals.php:2088 site/course/course-content.php:1147
-#: site/course/course-content.php:1344 site/course/course-content.php:1353
-#: site/course/course-content.php:1409 site/course/course-content.php:4358
-#: site/course/course-content.php:4379
-#, fuzzy
-msgid "The Lord’s Supper"
-msgstr "شام خداوند"
-
-#: globals.php:2089
+#: globals.php:2071
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -332,18 +324,19 @@ msgstr ""
 "این یک روش ساده برای جشن گرفتن ارتباط صمیمی و روابط مداوم ما با عیسی است. یک "
 "روش ساده برای جشن یاد بگیرید."
 
-#: globals.php:2099
+#: globals.php:2072 site/course/course-content.php:1147
+#: site/course/course-content.php:1344 site/course/course-content.php:1353
+#: site/course/course-content.php:1409 site/course/course-content.php:4358
+#: site/course/course-content.php:4379
+#, fuzzy
+msgid "The Lord’s Supper"
+msgstr "شام خداوند"
+
+#: globals.php:2081
 msgid "Prayer Walking and How To Do It"
 msgstr "نماز قدم زدن و نحوه انجام آن"
 
-#: globals.php:2100 site/course/course-content.php:1520
-#: site/course/course-content.php:1528 site/course/course-content.php:1537
-#: site/course/course-content.php:1635 site/course/course-content.php:4485
-#: site/course/course-content.php:4498
-msgid "Prayer Walking"
-msgstr "دعای پیاده"
-
-#: globals.php:2101
+#: globals.php:2082
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -352,17 +345,18 @@ msgstr ""
 "این یک روش ساده برای اطاعت از دستور خدا برای دعا کردن برای دیگران است. و این "
 "دقیقاً همان چیزی است که به نظر می رسد - دعا به خدا هنگام راه رفتن!"
 
-#: globals.php:2111
+#: globals.php:2083 site/course/course-content.php:1520
+#: site/course/course-content.php:1528 site/course/course-content.php:1537
+#: site/course/course-content.php:1635 site/course/course-content.php:4485
+#: site/course/course-content.php:4498
+msgid "Prayer Walking"
+msgstr "دعای پیاده"
+
+#: globals.php:2092
 msgid "A Person of Peace and How To Find One"
 msgstr "شخصیتی از صلح و چگونگی پیدا کردن یک"
 
-#: globals.php:2112 site/course/course-content.php:1515
-#: site/course/course-content.php:1557 site/course/course-content.php:1566
-#: site/course/course-content.php:4599 site/course/course-content.php:4619
-msgid "Person of Peace"
-msgstr "شخص اهل صلح"
-
-#: globals.php:2113
+#: globals.php:2093
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
@@ -370,17 +364,17 @@ msgstr ""
 "بیاموزید که شخص صلح چه کسی می تواند باشد و وقتی یکی را پیدا کردید چگونه می "
 "دانید."
 
-#: globals.php:2123
+#: globals.php:2094 site/course/course-content.php:1515
+#: site/course/course-content.php:1557 site/course/course-content.php:1566
+#: site/course/course-content.php:4599 site/course/course-content.php:4619
+msgid "Person of Peace"
+msgstr "شخص اهل صلح"
+
+#: globals.php:2103
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "وفاداری بهتر از دانش است"
 
-#: globals.php:2124 site/course/course-content.php:1765
-#: site/course/course-content.php:1774 site/course/course-content.php:4730
-#: site/course/course-content.php:4777
-msgid "Faithfulness"
-msgstr "وفاداری"
-
-#: globals.php:2125
+#: globals.php:2104
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -389,30 +383,32 @@ msgstr ""
 "آنچه دانش آموزان می دانند مهم است - اما آنچه با آنچه می دانند انجام می دهند "
 "بسیار مهمتر است."
 
-#: globals.php:2135
+#: globals.php:2105 site/course/course-content.php:1765
+#: site/course/course-content.php:1774 site/course/course-content.php:4730
+#: site/course/course-content.php:4777
+msgid "Faithfulness"
+msgstr "وفاداری"
+
+#: globals.php:2114
 msgid "The BLESS Prayer Pattern"
 msgstr "الگوی دعای BLESS"
 
-#: globals.php:2136 site/course/course-content.php:1603
-#, fuzzy
-msgid "The B.L.E.S.S. Prayer"
-msgstr "دعای ب.ک.ع.ا.ر. را تمرین کنید (15 دقیقه)"
-
-#: globals.php:2137 site/pages/follow-jesus.php:202
+#: globals.php:2115 site/pages/follow-jesus.php:202
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "برای یادآوری روشهای دعا کردن برای دیگران ، یک عرفان ساده را تمرین کنید."
 
-#: globals.php:2147
+#: globals.php:2116 site/course/course-content.php:1603
+#, fuzzy
+msgid "The B.L.E.S.S. Prayer"
+msgstr "دعای ب.ک.ع.ا.ر. را تمرین کنید (15 دقیقه)"
+
+#: globals.php:2125
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "الگوی جلسات گروه 3/3"
 
-#: globals.php:2148
-msgid "3/3 Group"
-msgstr "گروه 3/3"
-
-#: globals.php:2149
+#: globals.php:2126
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -423,28 +419,32 @@ msgstr ""
 "مشارکت و تمرین پیروی از اطاعت و به اشتراک گذاشتن آنچه که آموخته اند. به این "
 "ترتیب ، یک گروه 3/3 فقط یک گروه کوچک نیست بلکه یک کلیسای ساده است."
 
-#: globals.php:2159
+#: globals.php:2127
+msgid "3/3 Group"
+msgstr "گروه 3/3"
+
+#: globals.php:2136
 msgid "Training Cycle for Maturing Disciples"
 msgstr "چرخه آموزش شاگردان بالغ"
 
-#: globals.php:2160 site/course/course-content.php:5032
-#: site/course/course-content.php:5049
-msgid "Training Cycle"
-msgstr "چرخه آموزش"
-
-#: globals.php:2161 site/pages/follow-jesus.php:270
+#: globals.php:2137 site/pages/follow-jesus.php:270
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr "چرخه آموزش را بیاموزید و در مورد چگونگی کاربرد شاگردان در نظر بگیرید."
 
-#: globals.php:2171 globals.php:2172 site/course/course-content.php:2190
+#: globals.php:2138 site/course/course-content.php:5032
+#: site/course/course-content.php:5049
+msgid "Training Cycle"
+msgstr "چرخه آموزش"
+
+#: globals.php:2147 globals.php:2149 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050
 msgid "Leadership Cells"
 msgstr "گروه های کوچک رهبری"
 
-#: globals.php:2173 site/course/course-content.php:2213
+#: globals.php:2148 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:325
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -453,12 +453,12 @@ msgstr ""
 "سلول رهبری راهی است که شخصی که احساس می کند رهبری می کند می تواند رهبری خود "
 "را با انجام خدمت انجام دهد."
 
-#: globals.php:2183 globals.php:2184 site/course/course-content.php:5157
+#: globals.php:2158 globals.php:2160 site/course/course-content.php:5157
 #: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
 msgstr "انتظار رشد غیر متوالی را دارید"
 
-#: globals.php:2185
+#: globals.php:2159
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -467,17 +467,11 @@ msgstr ""
 "ببینید که چگونه شاگرد ساختن لازم نیست خطی باشد. چندین کار ممکن است همزمان "
 "اتفاق بیفتد."
 
-#: globals.php:2195 site/course/course-content.php:2770
+#: globals.php:2169 site/course/course-content.php:2770
 msgid "Pace of Multiplication Matters"
 msgstr "سرعت موارد ضرب"
 
-#: globals.php:2196 site/course/course-content.php:2390
-#: site/course/course-content.php:2450 site/course/course-content.php:2459
-#: site/course/course-content.php:5158 site/course/course-content.php:5176
-msgid "Pace"
-msgstr "سرعت"
-
-#: globals.php:2197 site/pages/follow-jesus.php:278
+#: globals.php:2170 site/pages/follow-jesus.php:278
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -485,25 +479,31 @@ msgstr ""
 "ضرب مسائل و تکثیر به سرعت حتی بیشتر اهمیت می یابد. ببینید چرا سرعت اهمیت "
 "دارد."
 
-#: globals.php:2207 globals.php:2208 site/course/course-content.php:2391
+#: globals.php:2171 site/course/course-content.php:2390
+#: site/course/course-content.php:2450 site/course/course-content.php:2459
+#: site/course/course-content.php:5158 site/course/course-content.php:5176
+msgid "Pace"
+msgstr "سرعت"
+
+#: globals.php:2180 globals.php:2182 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177
 msgid "Always Part of Two Churches"
 msgstr "همیشه بخشی از دو کلیسا است"
 
-#: globals.php:2209
+#: globals.php:2181
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "بیاموزید که چگونه با رفتن و ماندن از دستورات عیسی پیروی کنید."
 
-#: globals.php:2219 globals.php:2220 site/course/course-content.php:2903
+#: globals.php:2192 globals.php:2194 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "برنامه سه ماهه"
 
-#: globals.php:2221
+#: globals.php:2193
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -511,14 +511,14 @@ msgstr ""
 "برنامه خود را برای نحوه اجرای ابزارهای Zúme در سه ماه آینده ایجاد و به "
 "اشتراک بگذارید."
 
-#: globals.php:2231 globals.php:2232 site/course/course-content.php:2395
+#: globals.php:2203 globals.php:2205 site/course/course-content.php:2395
 #: site/course/course-content.php:2539 site/course/course-content.php:2548
 #: site/course/course-content.php:2573 site/course/course-content.php:2775
 #: site/course/course-content.php:5290 site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "چک لیست رهبری"
 
-#: globals.php:2233 site/pages/follow-jesus.php:321
+#: globals.php:2204 site/pages/follow-jesus.php:321
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -526,14 +526,14 @@ msgstr ""
 "ابزاری قدرتمند که می توانید هنگام ساخت شاگردهایی که چند برابر می شوید ، نقاط "
 "قوت و آسیب پذیری خود را ارزیابی کنید."
 
-#: globals.php:2243 globals.php:2244 site/course/course-content.php:2898
+#: globals.php:2214 globals.php:2216 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306
 msgid "Leadership in Networks"
 msgstr "رهبری در شبکه ها"
 
-#: globals.php:2245 site/pages/follow-jesus.php:329
+#: globals.php:2215 site/pages/follow-jesus.php:329
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -541,18 +541,14 @@ msgstr ""
 "بیاموزید که چگونه کلیساهای چند برابر به هم وصل می شوند و زندگی مشترک را به "
 "عنوان یک خانواده معنوی و طولانی زندگی می کنند."
 
-#: globals.php:2255 site/course/course-content.php:2902
+#: globals.php:2225 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572
 msgid "Peer Mentoring Groups"
 msgstr "گروه های مشاوره با همتا"
 
-#: globals.php:2256
-msgid "Peer Mentoring"
-msgstr "مشاوره با همتا"
-
-#: globals.php:2257 site/pages/follow-jesus.php:317
+#: globals.php:2226 site/pages/follow-jesus.php:317
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -562,11 +558,15 @@ msgstr ""
 "کنند. همچنین از یک قالب 3/3 پیروی می کند و راهی قدرتمند برای ارزیابی سلامت "
 "معنوی کار خدا در منطقه شما است."
 
-#: globals.php:2267 globals.php:2268
+#: globals.php:2227
+msgid "Peer Mentoring"
+msgstr "مشاوره با همتا"
+
+#: globals.php:2236 globals.php:2238
 msgid "Four Fields Tool"
 msgstr "ابزار چهار زمینه"
 
-#: globals.php:2269
+#: globals.php:2237
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -576,14 +576,14 @@ msgstr ""
 "قرار می گیرد تا در مورد وضعیت تلاش های فعلی و فعالیت پادشاهی در اطراف آنها "
 "تأمل کند."
 
-#: globals.php:2279 globals.php:2280 site/course/course-content.php:2397
+#: globals.php:2247 globals.php:2249 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "نقشه برداری نسلی"
 
-#: globals.php:2281
+#: globals.php:2248
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -591,21 +591,21 @@ msgstr ""
 "نقشه برداری نسل ابزاری ساده دیگر برای کمک به رهبران یک جنبش است تا رشد "
 "پیرامون خود را درک کنند."
 
-#: globals.php:2291
+#: globals.php:2258
 msgid "3-Circles Gospel Presentation"
 msgstr ""
 
-#: globals.php:2292
-msgid "3-Circles"
-msgstr ""
-
-#: globals.php:2293
+#: globals.php:2259
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
 
-#: globals.php:7215
+#: globals.php:2260
+msgid "3-Circles"
+msgstr ""
+
+#: globals.php:7182
 msgid "No Results"
 msgstr ""
 
@@ -2454,7 +2454,7 @@ msgstr ""
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:189
 #: site/dashboard/wizard.php:180 site/pages/about.php:258
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:166 utilities/apis/cta-api.php:168
+#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
 msgid "Get a Coach"
 msgstr "یک مربی بگیرید"
 
@@ -3264,7 +3264,7 @@ msgid "NEXT STEP"
 msgstr ""
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:142
+#: site/dashboard/dashboard.php:231 site/dashboard/wizard.php:142
 #: site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
@@ -3334,7 +3334,7 @@ msgid ""
 "download."
 msgstr ""
 
-#: site/course/presenter.php:168 site/dashboard/dashboard.php:233
+#: site/course/presenter.php:168 site/dashboard/dashboard.php:235
 #: site/pages/resources.php:92 site/parts/footer.php:41
 msgid "Resources"
 msgstr "منابع"
@@ -3390,7 +3390,9 @@ msgstr ""
 msgid "Something went wrong with your checkin process."
 msgstr "اوه مشکلی پیش آمد. دوباره امتحان کنید!"
 
-#: site/dashboard/checkin-dashboard.php:160
+#: site/dashboard/checkin-dashboard.php:160 site/dashboard/dashboard.php:252
+#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298
 msgid "Congratulations!"
 msgstr ""
 
@@ -3540,8 +3542,8 @@ msgstr ""
 msgid "Preview"
 msgstr "مشاهده"
 
-#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:241
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:250
 #, php-format
 msgid "Add new %s"
 msgstr ""
@@ -3574,8 +3576,8 @@ msgstr "پیوند داده شده به"
 msgid "Getting Started"
 msgstr "شروع کنید"
 
-#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:211
-#: utilities/apis/cta-api.php:213
+#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "پروفایل زومه"
@@ -3598,7 +3600,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:190
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
-"the training"
+"the training."
 msgstr ""
 
 #: site/dashboard/dashboard.php:192
@@ -3637,8 +3639,7 @@ msgstr ""
 msgid "3-Month Plan"
 msgstr "برنامه سه ماهه"
 
-#: site/dashboard/dashboard.php:199 utilities/apis/cta-api.php:181
-#: utilities/apis/cta-api.php:183
+#: site/dashboard/dashboard.php:199
 #, fuzzy
 msgid "Create a Plan"
 msgstr "برنامه سه ماهه"
@@ -3697,22 +3698,33 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:211
 #, fuzzy
-msgid "My Churches"
-msgstr "2 کلیساهای ساده"
+msgid "My Plans are Locked"
+msgstr "1 آموزش"
 
 #: site/dashboard/dashboard.php:212
-msgid "Unlock the My Churches area by joining the community."
+msgid ""
+"Unlock this area by creating your Three-Month Plan or adding a commitment of "
+"your own."
 msgstr ""
 
 #: site/dashboard/dashboard.php:213
-msgid "My Maps"
-msgstr ""
+#, fuzzy
+msgid "My Churches"
+msgstr "2 کلیساهای ساده"
 
 #: site/dashboard/dashboard.php:214
-msgid "My Maps are Locked"
+msgid "Unlock the My Churches area by joining the community."
 msgstr ""
 
 #: site/dashboard/dashboard.php:215
+msgid "My Maps"
+msgstr ""
+
+#: site/dashboard/dashboard.php:216
+msgid "My Maps are Locked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:217
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -3720,150 +3732,238 @@ msgid ""
 "seeing the great commission fulfilled."
 msgstr ""
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:218
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 آموزش"
 
-#: site/dashboard/dashboard.php:217 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:219 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "دوره"
 
-#: site/dashboard/dashboard.php:218 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:220 site/parts/footer.php:29
 #, fuzzy
 msgid "10 Session Course"
 msgstr "جلسه 1"
 
-#: site/dashboard/dashboard.php:219 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:221 site/parts/footer.php:30
 #, fuzzy
 msgid "20 Session Course"
 msgstr "جلسه 1"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
+#: site/dashboard/dashboard.php:222 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
 msgstr ""
 
-#: site/dashboard/dashboard.php:221
+#: site/dashboard/dashboard.php:223
 msgid "Heard"
 msgstr "بشنو"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:224
 msgid "Have I heard about this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:225
 msgid "Obeyed"
 msgstr "اطاعت کرد"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:226
 msgid "Have I obeyed this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:227
 msgid "Shared"
 msgstr "به اشتراک گذاشته شده"
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:228
 msgid "Have I shared this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:227
+#: site/dashboard/dashboard.php:229
 msgid "Trained"
 msgstr "آموزش دیده"
 
-#: site/dashboard/dashboard.php:228
+#: site/dashboard/dashboard.php:230
 msgid "Have I trained others to share this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:193
+#: site/dashboard/dashboard.php:232 site/dashboard/wizard.php:193
 #: site/pages/training.php:150 utilities/apis/cta-api.php:153
 msgid "Join"
 msgstr ""
 
-#: site/dashboard/dashboard.php:231
+#: site/dashboard/dashboard.php:233
 msgid "Join the community to get access to this area."
 msgstr ""
 
-#: site/dashboard/dashboard.php:232
+#: site/dashboard/dashboard.php:234
 #, fuzzy
 msgid "Community links"
 msgstr "انجمن"
 
-#: site/dashboard/dashboard.php:234
+#: site/dashboard/dashboard.php:236
 #, fuzzy
 msgid "Previous Slide"
 msgstr "قبلی"
 
-#: site/dashboard/dashboard.php:235
+#: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Next Slide"
 msgstr "جلسه بعدی"
 
-#: site/dashboard/dashboard.php:236
+#: site/dashboard/dashboard.php:238
 #, fuzzy
 msgid "Group Members"
 msgstr "نام گروه"
 
-#: site/dashboard/dashboard.php:237
+#: site/dashboard/dashboard.php:239
 #, fuzzy
 msgid "Mark Completed"
 msgstr "دوره کامل است"
 
-#: site/dashboard/dashboard.php:238 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:240 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "جلسه را شروع کنید"
 
-#: site/dashboard/dashboard.php:239
+#: site/dashboard/dashboard.php:241
 msgid "Show details"
 msgstr ""
 
-#: site/dashboard/dashboard.php:240
+#: site/dashboard/dashboard.php:242
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:196
-#: utilities/apis/cta-api.php:198
+#: site/dashboard/dashboard.php:244 utilities/apis/cta-api.php:238
+#: utilities/apis/cta-api.php:240
 #, fuzzy
 msgid "Invite Friends"
 msgstr "بعضی از دوستان تان را دعوت کنید"
 
-#: site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:245
 msgid "Click to add your first church"
 msgstr ""
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:246
 #, fuzzy
 msgid "Church Name"
 msgstr "2 کلیساهای ساده"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:247
 #, fuzzy
 msgid "Number of People"
 msgstr "تعداد اعضا"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:248
 #, fuzzy
 msgid "Church Location"
 msgstr "مکان فعلی را ذخیره کنید"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:249
 #, fuzzy
 msgid "Parent Church"
 msgstr "عضو دو کلیسا"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:250
 #, fuzzy
 msgid "Church"
 msgstr "2 کلیساهای ساده"
 
-#: site/dashboard/dashboard.php:249
+#: site/dashboard/dashboard.php:251
 #, fuzzy
 msgid "cancel"
 msgstr "لغو"
 
+#: site/dashboard/dashboard.php:253
+#, fuzzy
+msgid "You have requested a coach"
+msgstr "درخواست مربیگری کرده اید."
+
+#: site/dashboard/dashboard.php:254
+#, fuzzy
+msgid "You have joined a training"
+msgstr "میزبان یک دوره آموزشی باشید"
+
 #: site/dashboard/dashboard.php:255
+#, fuzzy
+msgid "You have set your profile"
+msgstr "پروفایل شما"
+
+#: site/dashboard/dashboard.php:256
+#, php-format
+msgctxt "3-month plan unlocked"
+msgid "%s unlocked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:256 utilities/apis/cta-api.php:297
+#, fuzzy
+msgid "3 month plan"
+msgstr "برنامه سه ماهه"
+
+#: site/dashboard/dashboard.php:257
+#, fuzzy
+msgid "You have joined the community"
+msgstr "انجمن"
+
+#: site/dashboard/dashboard.php:258
+msgid "Will you do 1 or 2 hour training sessions?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:259
+#, fuzzy
+msgid "1 hour (20 sessions)"
+msgstr "جلسه"
+
+#: site/dashboard/dashboard.php:260
+#, fuzzy
+msgid "2 hour (10 sessions)"
+msgstr "جلسه"
+
+#: site/dashboard/dashboard.php:261
+msgid "What time of day?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:262
+#, fuzzy
+msgid "Morning"
+msgstr "آموزش"
+
+#: site/dashboard/dashboard.php:263
+msgid "Afternoon"
+msgstr ""
+
+#: site/dashboard/dashboard.php:264
+msgid "Evening"
+msgstr ""
+
+#: site/dashboard/dashboard.php:265
+#, fuzzy
+msgid "How often will you meet?"
+msgstr "چه احساسی دارید؟"
+
+#: site/dashboard/dashboard.php:266
+msgid "Every day"
+msgstr ""
+
+#: site/dashboard/dashboard.php:267
+msgid "Once a week"
+msgstr ""
+
+#: site/dashboard/dashboard.php:268
+msgid "Twice a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:269
+msgid "Once a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:270
+#, fuzzy
+msgid "When do you plan to start?"
+msgstr "درباره خدا چه یاد می گیرید؟"
+
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -3872,12 +3972,12 @@ msgstr ""
 "من داستان خودم [شهادت] و داستان خدا [انجیل] را با این افراد در میان خواهم "
 "گذاشت:"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:277
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "من این افراد را دعوت خواهم کرد تا با من یک گروه پاسخگویی را شروع کنند:"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:278
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -3885,11 +3985,11 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید تا گروه های پاسخگویی خودشان را آغاز کنند "
 "و به آنها آموزش خواهم داد که چطور این کار را انجام دهند:"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:279
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "من این افراد را دعوت خواهم کرد تا با من گروه 3/3 را آغاز کنند:"
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:280
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -3897,7 +3997,7 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید تا گروه های 3/3 خودشان را آغاز کنند و به "
 "آنها آموزش خواهم داد که چطور این کار را انجام دهند:"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -3906,16 +4006,16 @@ msgstr ""
 "من این افراد را دعوت خواهم کرد که در یک گروه امید یا کشف 3/3 شرکت کنند "
 "[پیوست کتاب راهنمای زومه را ببینید]"
 
-#: site/dashboard/dashboard.php:261
+#: site/dashboard/dashboard.php:282
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "من این افراد را دعوت خواهم کرد که با من در دعای پیاده شرکت کنند:"
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:283
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "من در هر [روز / هفته / ماه] یک بار دعای پیاده خواهم کرد."
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:284
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -3924,7 +4024,7 @@ msgstr ""
 "من این افراد را تجهیز خواهم کرد تا داستان خودشان و داستان خدا را انتقال دهند "
 "و لیستی 100 نفره از افرادی که در شبکه رابطه ای آنها هستند تهیه کنند:"
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:285
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -3932,11 +4032,11 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید که از ابزار چرخه دعا بصورت دوره ای "
 "استفاده کنند:"
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:286
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "من از ابزار چرخه دعا هر [روز / هفته / ماه] یک بار استفاده خواهم کرد."
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:287
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -3945,13 +4045,13 @@ msgstr ""
 "من این افراد را دعوت خواهم کرد که بخشی از یک گروه کوچک رهبری باشند که من آن "
 "را رهبری خواهم کرد:"
 
-#: site/dashboard/dashboard.php:267
+#: site/dashboard/dashboard.php:288
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "من این افراد را تشویق خواهم کرد که این دوره آموزشی زومه را بگذرانند:"
 
-#: site/dashboard/dashboard.php:268
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid "Other commitments:"
 msgstr "تعهدات دیگر:"
@@ -4775,25 +4875,25 @@ msgstr ""
 msgid "Register Free"
 msgstr "عضویت رایگان"
 
-#: site/pages/checkin.php:87 site/pages/friend-invite.php:83
+#: site/pages/checkin.php:84 site/pages/friend-invite.php:83
 msgid "Please enter a friend code."
 msgstr ""
 
-#: site/pages/checkin.php:88 site/pages/friend-invite.php:84
+#: site/pages/checkin.php:85 site/pages/friend-invite.php:84
 #: site/pages/plan-invite.php:84 site/pages/plan-invite.php:180
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/pages/checkin.php:162
+#: site/pages/checkin.php:154
 #, fuzzy
 msgid "Checkin"
 msgstr "چک لیست"
 
-#: site/pages/checkin.php:164
+#: site/pages/checkin.php:156
 msgid "Use the code on the screen or in the book"
 msgstr ""
 
-#: site/pages/checkin.php:169 site/pages/friend-invite.php:177
+#: site/pages/checkin.php:161 site/pages/friend-invite.php:177
 #: site/pages/plan-invite.php:188
 msgid "Connect"
 msgstr ""
@@ -5704,73 +5804,107 @@ msgstr "آموزش کامل را ببینید"
 msgid "Join the online training to learn more"
 msgstr ""
 
-#: utilities/apis/cta-api.php:167
+#: utilities/apis/cta-api.php:166
+#, fuzzy
+msgid "Joined Training!"
+msgstr "آموزش کامل را ببینید"
+
+#: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:182
-msgid "Create a plan to help you grow"
+#: utilities/apis/cta-api.php:195
+#, fuzzy
+msgid "Requested Coach!"
+msgstr "یک مربی بگیرید"
+
+#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:225
+msgid "Congratulations"
 msgstr ""
 
-#: utilities/apis/cta-api.php:197
+#: utilities/apis/cta-api.php:209 utilities/apis/cta-api.php:211
+#, fuzzy
+msgid "Create a Training"
+msgstr "1 آموزش"
+
+#: utilities/apis/cta-api.php:210
+msgid "Create a training to help you grow"
+msgstr ""
+
+#: utilities/apis/cta-api.php:224
+#, fuzzy
+msgid "Created Training!"
+msgstr "لیست 100 نفره خودتان را تهیه کنید"
+
+#: utilities/apis/cta-api.php:239
 msgid "Invite friends to join you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:212
+#: utilities/apis/cta-api.php:254
 msgid "Set your profile to help others know you"
 msgstr ""
 
-#: utilities/apis/cta-api.php:226 utilities/apis/cta-api.php:228
+#: utilities/apis/cta-api.php:268
+#, fuzzy
+msgid "Profile Set"
+msgstr "پروفایل"
+
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "برنامه سه ماهه"
 
-#: utilities/apis/cta-api.php:227
+#: utilities/apis/cta-api.php:283
 msgid "Create a 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:241 utilities/apis/cta-api.php:243
+#: utilities/apis/cta-api.php:297
+#, php-format
+msgid "%s unlocked"
+msgstr ""
+
+#: utilities/apis/cta-api.php:311 utilities/apis/cta-api.php:313
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "برنامه سه ماهه"
 
-#: utilities/apis/cta-api.php:242
+#: utilities/apis/cta-api.php:312
 msgid "Complete your 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:256 utilities/apis/cta-api.php:258
+#: utilities/apis/cta-api.php:326 utilities/apis/cta-api.php:328
 #, fuzzy
 msgid "Submit Report"
 msgstr "ارسال"
 
-#: utilities/apis/cta-api.php:257
+#: utilities/apis/cta-api.php:327
 msgid "Submit a report to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:271 utilities/apis/cta-api.php:273
+#: utilities/apis/cta-api.php:341 utilities/apis/cta-api.php:343
 msgid "Join a Hub"
 msgstr ""
 
-#: utilities/apis/cta-api.php:272
+#: utilities/apis/cta-api.php:342
 msgid "Join a hub to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:289 utilities/apis/cta-api.php:291
+#: utilities/apis/cta-api.php:359 utilities/apis/cta-api.php:361
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "تنفس روحانی"
 
-#: utilities/apis/cta-api.php:290
+#: utilities/apis/cta-api.php:360
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "تنفس روحانی"
 
-#: utilities/apis/cta-api.php:304 utilities/apis/cta-api.php:306
+#: utilities/apis/cta-api.php:374 utilities/apis/cta-api.php:376
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "مأموریت ارتباطی - لیست 100"
 
-#: utilities/apis/cta-api.php:305
+#: utilities/apis/cta-api.php:375
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "مأموریت ارتباطی - لیست 100"

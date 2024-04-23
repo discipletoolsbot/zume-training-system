@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-22 07:55-0600\n"
+"POT-Creation-Date: 2024-04-23 13:53-0600\n"
 "PO-Revision-Date: 2024-04-10 21:38+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Somali <https://translate.disciple.tools/projects/zume-"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:191
-#: site/dashboard/dashboard.php:241 site/parts/footer.php:11
+#: site/dashboard/dashboard.php:243 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "Tababbar"
@@ -78,14 +78,14 @@ msgstr "Kaydinta"
 msgid "Global Map"
 msgstr ""
 
-#: globals.php:1907 globals.php:1908 site/course/course-content.php:86
+#: globals.php:1905 globals.php:1907 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178
 msgid "God Uses Ordinary People"
 msgstr "Ilaah wuxuu Adeegsadaa Dadka Caadiga ah"
 
-#: globals.php:1909 site/pages/follow-jesus.php:168
+#: globals.php:1906 site/pages/follow-jesus.php:168
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,17 +93,12 @@ msgstr ""
 "Waxaad arki doontaa sida Ilaah uu dadka iska caadiga ah ugu adeegsado inay "
 "sameeyaan wax sahlan si uu wax saamayn weyn u sameeyo."
 
-#: globals.php:1919 site/course/course-content.php:3161
+#: globals.php:1916 site/course/course-content.php:3161
 #: site/course/course-content.php:3179
 msgid "Simple Definition of Disciple and Church"
 msgstr "Qeexitaanka Fudud ee Xer iyo Kaniisad"
 
-#: globals.php:1920 site/course/course-content.php:143
-#: site/course/course-content.php:152
-msgid "Disciples and the Church"
-msgstr ""
-
-#: globals.php:1921 site/course/course-content.php:153
+#: globals.php:1917 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:172
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
@@ -112,29 +107,34 @@ msgstr ""
 "Soosaar nuxurka in xer la noqdo, sameeya xer kale, iyo waxa ay kaniisadu "
 "tahay."
 
-#: globals.php:1931 site/course/course-content.php:3162
+#: globals.php:1918 site/course/course-content.php:143
+#: site/course/course-content.php:152
+msgid "Disciples and the Church"
+msgstr ""
+
+#: globals.php:1927 site/course/course-content.php:3162
 #: site/course/course-content.php:3180
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Neefsashada Ruuxiga ahu waa in Ilaah la Maqlo oo la Addeeco"
 
-#: globals.php:1932 site/course/course-content.php:189
-#: site/course/course-content.php:198
-#, fuzzy
-msgid "Hearing and Obeying God"
-msgstr "Neefsashada Ruuxiga ahu waa in Ilaah la Maqlo oo la Addeeco"
-
-#: globals.php:1933 site/pages/follow-jesus.php:194
+#: globals.php:1928 site/pages/follow-jesus.php:194
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
 "In xeroow la noqdaa waxay ka macne tahay Ilaah ayaan wax ka maqalnaa oo "
 "Ilaah ayaan addeecnaa."
 
-#: globals.php:1943 globals.php:1944
+#: globals.php:1929 site/course/course-content.php:189
+#: site/course/course-content.php:198
+#, fuzzy
+msgid "Hearing and Obeying God"
+msgstr "Neefsashada Ruuxiga ahu waa in Ilaah la Maqlo oo la Addeeco"
+
+#: globals.php:1938 globals.php:1940
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "Akhrinta Baybalka ee S.O.A.P.S"
 
-#: globals.php:1945 site/pages/follow-jesus.php:209
+#: globals.php:1939 site/pages/follow-jesus.php:209
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -142,14 +142,14 @@ msgstr ""
 "Waa hab barashada Kitaabka ah oo kaa caawinaya fahanka, addeecista, iyo "
 "wadaagista Ereyga Ilaah."
 
-#: globals.php:1955 globals.php:1956 site/course/course-content.php:93
+#: globals.php:1949 globals.php:1951 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425
 msgid "Accountability Groups"
 msgstr "Kooxo Masuuliyadeed"
 
-#: globals.php:1957 site/pages/follow-jesus.php:224
+#: globals.php:1950 site/pages/follow-jesus.php:224
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -159,16 +159,11 @@ msgstr ""
 "wada kulmaan iyagoo isku dhiirri gelinaya hawlaha sida saxda u socda iyo "
 "meelaha u baahan in la saxo."
 
-#: globals.php:1967
+#: globals.php:1960
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Qaabnololeedka Macaamiisha vs Soosaareyaasha"
 
-#: globals.php:1968
-#, fuzzy
-msgid "Producer not Consumer"
-msgstr "Waxsoosaar iyo Macaamil"
-
-#: globals.php:1969 site/pages/follow-jesus.php:188
+#: globals.php:1961 site/pages/follow-jesus.php:188
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -176,37 +171,42 @@ msgstr ""
 "Waxaad soo saari doontaan afar qaaboo waaweyn oo uu Ilaah u siiyo maalin "
 "kasta raacayaasha u siiyo ekaanta Ciise."
 
-#: globals.php:1979 globals.php:1980
+#: globals.php:1962
+#, fuzzy
+msgid "Producer not Consumer"
+msgstr "Waxsoosaar iyo Macaamil"
+
+#: globals.php:1971 globals.php:1973
 msgid "How to Spend an Hour in Prayer"
 msgstr "Sida Salaad loogu Qaato Hal Saacad"
 
-#: globals.php:1981 site/pages/follow-jesus.php:198
+#: globals.php:1972 site/pages/follow-jesus.php:198
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Eeg sida ay u fududdahay in saacad duco lagu qaato."
 
-#: globals.php:1991
+#: globals.php:1982
 msgid "Relational Stewardship – List of 100"
 msgstr "Masuuliyadda Xidhiidhka – Liiska 100-ka"
 
-#: globals.php:1992 site/course/course-content.php:477
+#: globals.php:1983 site/pages/follow-jesus.php:285
+msgid "A tool designed to help you be a good steward of your relationships."
+msgstr ""
+"Hab loo qaabeeyay inuu kaa caawiyo inaad masuul ka ahaatid xidhiidhadaada."
+
+#: globals.php:1984 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
 msgid "List of 100"
 msgstr "Liiska 100ka"
 
-#: globals.php:1993 site/pages/follow-jesus.php:285
-msgid "A tool designed to help you be a good steward of your relationships."
-msgstr ""
-"Hab loo qaabeeyay inuu kaa caawiyo inaad masuul ka ahaatid xidhiidhadaada."
-
-#: globals.php:2003 globals.php:2004 site/course/course-content.php:796
+#: globals.php:1993 globals.php:1995 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Dhaqaalaha Ruuxigaa"
 
-#: globals.php:2005 site/pages/follow-jesus.php:243
+#: globals.php:1994 site/pages/follow-jesus.php:243
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -214,16 +214,11 @@ msgstr ""
 "Baro sida dhaqaalaha Ilaah uu uga duwan yahay ka dunida. Ilaah in kasii "
 "badan ayuu ku maal geliyaa kuwa aamminka ku ah wixii horay loo siiyey."
 
-#: globals.php:2015
+#: globals.php:2004
 msgid "The Gospel and How to Share It"
 msgstr "Injiilka iyo Sida loo Wadaago"
 
-#: globals.php:2016
-#, fuzzy
-msgid "Sharing God‘s Story"
-msgstr "Dhaqangeli Lawadaagista Markhaafurkaaga (45daqiiqo)"
-
-#: globals.php:2017 site/pages/follow-jesus.php:289
+#: globals.php:2005 site/pages/follow-jesus.php:289
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -231,18 +226,16 @@ msgstr ""
 "Baro hab loo wadaago Warka Wanaagsan ee Ilaah bilowgii aadanaha illaa iyo "
 "dhammaadka facan."
 
-#: globals.php:2027
+#: globals.php:2006
+#, fuzzy
+msgid "Sharing God‘s Story"
+msgstr "Dhaqangeli Lawadaagista Markhaafurkaaga (45daqiiqo)"
+
+#: globals.php:2015
 msgid "Baptism and How To Do It"
 msgstr "Baabtiiska iyo Sida loo Sameeyo"
 
-#: globals.php:2028 site/course/course-content.php:801
-#: site/course/course-content.php:949 site/course/course-content.php:958
-#: site/course/course-content.php:1021 site/course/course-content.php:4076
-#: site/course/course-content.php:4093
-msgid "Baptism"
-msgstr "Baabtiis"
-
-#: globals.php:2029 site/pages/follow-jesus.php:236
+#: globals.php:2016 site/pages/follow-jesus.php:236
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -252,15 +245,18 @@ msgstr ""
 "baabtiisa magaca Aabbaha iyo Wiilka iyo Ruuxa Quduuska…” Barta sidii aad tan "
 "u dhaqan gelin lahaydeen."
 
-#: globals.php:2039
+#: globals.php:2017 site/course/course-content.php:801
+#: site/course/course-content.php:949 site/course/course-content.php:958
+#: site/course/course-content.php:1021 site/course/course-content.php:4076
+#: site/course/course-content.php:4093
+msgid "Baptism"
+msgstr "Baabtiis"
+
+#: globals.php:2026
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "Diyaari Markhaatifurkaaga 3-daqiiqo"
 
-#: globals.php:2040
-msgid "3-Minute Testimony"
-msgstr "Markhaatifur 3 Daqiiqo ah"
-
-#: globals.php:2041 site/pages/follow-jesus.php:293
+#: globals.php:2027 site/pages/follow-jesus.php:293
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -268,18 +264,17 @@ msgstr ""
 "Baro sidii aad markhaatifurkaaga ula wadaagi lahayd saddex daqiiqo adigoo la "
 "wadaagaya sidii Ciise u saameeyay noloshaada."
 
-#: globals.php:2051 site/course/course-content.php:1140
+#: globals.php:2028
+msgid "3-Minute Testimony"
+msgstr "Markhaatifur 3 Daqiiqo ah"
+
+#: globals.php:2037 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Himilada Qabashada Barakada Uguweyn"
 
-#: globals.php:2052
-#, fuzzy
-msgid "Great, Greater, and Greatest Blessing"
-msgstr "Barakada ugu Weyn"
-
-#: globals.php:2053 site/course/course-content.php:1216
+#: globals.php:2038 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:176
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -288,22 +283,27 @@ msgstr ""
 "Baro qaab sahlan in aanad samayanayn hal qof raaca Ciise balse qoys dhan oo "
 "ruuxi ah oo jiilka soo socda u tarma."
 
-#: globals.php:2063
+#: globals.php:2039
+#, fuzzy
+msgid "Great, Greater, and Greatest Blessing"
+msgstr "Barakada ugu Weyn"
+
+#: globals.php:2048
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "Habka Boolloboollada ee Xernimada – In Markaaba La Hoggaamiyo"
 
-#: globals.php:2064 site/course/course-content.php:1141
+#: globals.php:2049
+msgid "Learn what ducklings have to do with disciple-making."
+msgstr "Baro waxa wada socodka boolobooladu uga dhigan yahay xer-samaynta."
+
+#: globals.php:2050 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Horkicidda Xernimada"
 
-#: globals.php:2065
-msgid "Learn what ducklings have to do with disciple-making."
-msgstr "Baro waxa wada socodka boolobooladu uga dhigan yahay xer-samaynta."
-
-#: globals.php:2075 globals.php:2076 site/course/course-content.php:1142
+#: globals.php:2059 globals.php:2061 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375
@@ -311,7 +311,7 @@ msgstr "Baro waxa wada socodka boolobooladu uga dhigan yahay xer-samaynta."
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Indho lagu Arko Halka aanay Boqortooyada Ilaah ka Jirin"
 
-#: globals.php:2077 site/pages/follow-jesus.php:247
+#: globals.php:2060 site/pages/follow-jesus.php:247
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -319,19 +319,11 @@ msgstr ""
 "Biloow inaad aragtid halka aanay Boqortooyada Ilaah ka jirin. Aalaaba "
 "meelahani waa halka Ilaah doonayo in aadka looga shaqeeyo."
 
-#: globals.php:2087
+#: globals.php:2070
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "Cashada Rabbiga iyo Sida loo Hoggaamiyo"
 
-#: globals.php:2088 site/course/course-content.php:1147
-#: site/course/course-content.php:1344 site/course/course-content.php:1353
-#: site/course/course-content.php:1409 site/course/course-content.php:4358
-#: site/course/course-content.php:4379
-#, fuzzy
-msgid "The Lord’s Supper"
-msgstr "Cashada Rabbiga"
-
-#: globals.php:2089
+#: globals.php:2071
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -339,18 +331,19 @@ msgstr ""
 "Waa hab sahlan oo aan ugu dabbaal degayno isku xidhka gaarka ah iyo xidhiidh "
 "socda ee aan Ciise la leenahay. baro hab sahlan oo loo dabbaal dego."
 
-#: globals.php:2099
+#: globals.php:2072 site/course/course-content.php:1147
+#: site/course/course-content.php:1344 site/course/course-content.php:1353
+#: site/course/course-content.php:1409 site/course/course-content.php:4358
+#: site/course/course-content.php:4379
+#, fuzzy
+msgid "The Lord’s Supper"
+msgstr "Cashada Rabbiga"
+
+#: globals.php:2081
 msgid "Prayer Walking and How To Do It"
 msgstr "Salaadda Socodka iyo Sida Mid loo Sameeyo "
 
-#: globals.php:2100 site/course/course-content.php:1520
-#: site/course/course-content.php:1528 site/course/course-content.php:1537
-#: site/course/course-content.php:1635 site/course/course-content.php:4485
-#: site/course/course-content.php:4498
-msgid "Prayer Walking"
-msgstr "Salaadda Socodka"
-
-#: globals.php:2101
+#: globals.php:2082
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -359,17 +352,18 @@ msgstr ""
 "Waa hab fudud oo lagu addeecayo amarka Ilaah ee ah in kuwa kale loo duceeyo. "
 "Waana — in dadka Ilaah loo baryo marka la soconayo!"
 
-#: globals.php:2111
+#: globals.php:2083 site/course/course-content.php:1520
+#: site/course/course-content.php:1528 site/course/course-content.php:1537
+#: site/course/course-content.php:1635 site/course/course-content.php:4485
+#: site/course/course-content.php:4498
+msgid "Prayer Walking"
+msgstr "Salaadda Socodka"
+
+#: globals.php:2092
 msgid "A Person of Peace and How To Find One"
 msgstr "Qof nabadeed iyo sida mid loo helo"
 
-#: globals.php:2112 site/course/course-content.php:1515
-#: site/course/course-content.php:1557 site/course/course-content.php:1566
-#: site/course/course-content.php:4599 site/course/course-content.php:4619
-msgid "Person of Peace"
-msgstr "Qod Nabadeed"
-
-#: globals.php:2113
+#: globals.php:2093
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
@@ -377,17 +371,17 @@ msgstr ""
 "Baro kan uu noqonayo qofka nabadeed iyo waxa aad ku garan kartid marka aad "
 "mid heshid."
 
-#: globals.php:2123
+#: globals.php:2094 site/course/course-content.php:1515
+#: site/course/course-content.php:1557 site/course/course-content.php:1566
+#: site/course/course-content.php:4599 site/course/course-content.php:4619
+msgid "Person of Peace"
+msgstr "Qod Nabadeed"
+
+#: globals.php:2103
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "Iimaan lahaantu Waxay ka Fiican tahay Aqoonta"
 
-#: globals.php:2124 site/course/course-content.php:1765
-#: site/course/course-content.php:1774 site/course/course-content.php:4730
-#: site/course/course-content.php:4777
-msgid "Faithfulness"
-msgstr "Aamminnimo"
-
-#: globals.php:2125
+#: globals.php:2104
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -396,31 +390,33 @@ msgstr ""
 "Waa muhiim waxa ay xertu taqaan — waxaase ka sii muhiimsan waxa ay ku "
 "sameeyaan waxa ay xertu taqaan."
 
-#: globals.php:2135
+#: globals.php:2105 site/course/course-content.php:1765
+#: site/course/course-content.php:1774 site/course/course-content.php:4730
+#: site/course/course-content.php:4777
+msgid "Faithfulness"
+msgstr "Aamminnimo"
+
+#: globals.php:2114
 msgid "The BLESS Prayer Pattern"
 msgstr "Qaabka Salaadda BLESS"
 
-#: globals.php:2136 site/course/course-content.php:1603
-#, fuzzy
-msgid "The B.L.E.S.S. Prayer"
-msgstr "DHAQANGELIYA DUCADA B.L.E.S.S. (15daqiiqo)"
-
-#: globals.php:2137 site/pages/follow-jesus.php:202
+#: globals.php:2115 site/pages/follow-jesus.php:202
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "Dhaqa gelin qaab xusuusineed sahlan oo ku xusuusiya sidii aad kuwa kale ugu "
 "ducayn lahayd."
 
-#: globals.php:2147
+#: globals.php:2116 site/course/course-content.php:1603
+#, fuzzy
+msgid "The B.L.E.S.S. Prayer"
+msgstr "DHAQANGELIYA DUCADA B.L.E.S.S. (15daqiiqo)"
+
+#: globals.php:2125
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "Qaabka Kulanka Kooxda 3/3"
 
-#: globals.php:2148
-msgid "3/3 Group"
-msgstr "Kooxda 3/3 oo Muuqaal ah"
-
-#: globals.php:2149
+#: globals.php:2126
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -432,30 +428,34 @@ msgstr ""
 "wadaagga wixii ay barteen. Iyadoo habkan laga tix raacayo, kooxda 3/3 ma "
 "ahan uun koox yar hase ahaatee waa Kaniisad Yar."
 
-#: globals.php:2159
+#: globals.php:2127
+msgid "3/3 Group"
+msgstr "Kooxda 3/3 oo Muuqaal ah"
+
+#: globals.php:2136
 msgid "Training Cycle for Maturing Disciples"
 msgstr "Tababbarka Wareegga ee Korinta Xerta"
 
-#: globals.php:2160 site/course/course-content.php:5032
-#: site/course/course-content.php:5049
-msgid "Training Cycle"
-msgstr "Tababbarka Wareega ah"
-
-#: globals.php:2161 site/pages/follow-jesus.php:270
+#: globals.php:2137 site/pages/follow-jesus.php:270
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "Baro tababbarka wareegga ah oo tixraac ku samee waxa uu xer samaynta ka "
 "odhanayo."
 
-#: globals.php:2171 globals.php:2172 site/course/course-content.php:2190
+#: globals.php:2138 site/course/course-content.php:5032
+#: site/course/course-content.php:5049
+msgid "Training Cycle"
+msgstr "Tababbarka Wareega ah"
+
+#: globals.php:2147 globals.php:2149 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050
 msgid "Leadership Cells"
 msgstr "Hoggaaminta unugga ah"
 
-#: globals.php:2173 site/course/course-content.php:2213
+#: globals.php:2148 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:325
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -465,12 +465,12 @@ msgstr ""
 "hoggaamiyaan ay ku horumarin karaan hoggaamintooda iyaga oo dhaqan gelinaya "
 "adeegga."
 
-#: globals.php:2183 globals.php:2184 site/course/course-content.php:5157
+#: globals.php:2158 globals.php:2160 site/course/course-content.php:5157
 #: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
 msgstr "Filo  Koboca Aan Joogtada Ahayn"
 
-#: globals.php:2185
+#: globals.php:2159
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -479,17 +479,11 @@ msgstr ""
 "Eeg sida xer samayntu aanay u ahayn wax toos isakaga socda. Wax badintu isla "
 "mar kasta ayey dhici kartaa."
 
-#: globals.php:2195 site/course/course-content.php:2770
+#: globals.php:2169 site/course/course-content.php:2770
 msgid "Pace of Multiplication Matters"
 msgstr "Xawaaraha Badintu waa Muhiim"
 
-#: globals.php:2196 site/course/course-content.php:2390
-#: site/course/course-content.php:2450 site/course/course-content.php:2459
-#: site/course/course-content.php:5158 site/course/course-content.php:5176
-msgid "Pace"
-msgstr "Heer"
-
-#: globals.php:2197 site/pages/follow-jesus.php:278
+#: globals.php:2170 site/pages/follow-jesus.php:278
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -497,25 +491,31 @@ msgstr ""
 "In la badiyaa waa mid wax ku ool ah in laga sii badiyo ayaase ka sii nacne "
 "badan."
 
-#: globals.php:2207 globals.php:2208 site/course/course-content.php:2391
+#: globals.php:2171 site/course/course-content.php:2390
+#: site/course/course-content.php:2450 site/course/course-content.php:2459
+#: site/course/course-content.php:5158 site/course/course-content.php:5176
+msgid "Pace"
+msgstr "Heer"
+
+#: globals.php:2180 globals.php:2182 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177
 msgid "Always Part of Two Churches"
 msgstr "Qayb Ka ah Labo Kaniisadood"
 
-#: globals.php:2209
+#: globals.php:2181
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "Baro sida loo addeeco amarrada Ciise socod iyo nagaadiba."
 
-#: globals.php:2219 globals.php:2220 site/course/course-content.php:2903
+#: globals.php:2192 globals.php:2194 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Qorshe Saddex-Bilood Ah"
 
-#: globals.php:2221
+#: globals.php:2193
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -523,14 +523,14 @@ msgstr ""
 "Abuur oo la wadaag qorshahaaga ah sida aad saddexda bilood ee soo socda u "
 "hir gelin doontid hawlaha Zúme."
 
-#: globals.php:2231 globals.php:2232 site/course/course-content.php:2395
+#: globals.php:2203 globals.php:2205 site/course/course-content.php:2395
 #: site/course/course-content.php:2539 site/course/course-content.php:2548
 #: site/course/course-content.php:2573 site/course/course-content.php:2775
 #: site/course/course-content.php:5290 site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "Liiska Tijaabinta Hagaha"
 
-#: globals.php:2233 site/pages/follow-jesus.php:321
+#: globals.php:2204 site/pages/follow-jesus.php:321
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -538,14 +538,14 @@ msgstr ""
 "Waa qalab awood leh oo aad u adeegsan karto sidii aad si dhakhso ah ugu "
 "qiimayn lahayd awoodahaaga iyo dayacaadahaaga sida loo sameeyo xerta badata."
 
-#: globals.php:2243 globals.php:2244 site/course/course-content.php:2898
+#: globals.php:2214 globals.php:2216 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306
 msgid "Leadership in Networks"
 msgstr "Hoggaaminta ku jirta Isku Xidhka"
 
-#: globals.php:2245 site/pages/follow-jesus.php:329
+#: globals.php:2215 site/pages/follow-jesus.php:329
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -553,18 +553,14 @@ msgstr ""
 "Baro sida badinta kaniisadaha la iskugu xidho oo iyadoo la isku xidhan yahay "
 "nolosha loogu koro qoys ruuxi ah."
 
-#: globals.php:2255 site/course/course-content.php:2902
+#: globals.php:2225 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572
 msgid "Peer Mentoring Groups"
 msgstr "Soosaarista Kooxaha Wax Haga"
 
-#: globals.php:2256
-msgid "Peer Mentoring"
-msgstr "Soosaarista Kooxaha Wax Haga"
-
-#: globals.php:2257 site/pages/follow-jesus.php:317
+#: globals.php:2226 site/pages/follow-jesus.php:317
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -574,11 +570,15 @@ msgstr ""
 "sidoo kale raaca nidaamka 3/3 waana qaab awood leh oo lagu eegayo shaqada "
 "ruuxiga ah ee caafimaadka qabta ee degaankaaga."
 
-#: globals.php:2267 globals.php:2268
+#: globals.php:2227
+msgid "Peer Mentoring"
+msgstr "Soosaarista Kooxaha Wax Haga"
+
+#: globals.php:2236 globals.php:2238
 msgid "Four Fields Tool"
 msgstr "Qalabka Afarta Boos"
 
-#: globals.php:2269
+#: globals.php:2237
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -588,14 +588,14 @@ msgstr ""
 "unuggu si ay uga tusaale qaataan dadaallada markaa jira iyo waxqabadyada "
 "boqortooyo ee ku meersan."
 
-#: globals.php:2279 globals.php:2280 site/course/course-content.php:2397
+#: globals.php:2247 globals.php:2249 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "Qariidadda Jiilka"
 
-#: globals.php:2281
+#: globals.php:2248
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -603,21 +603,21 @@ msgstr ""
 "Jaantuska jiilku waa hab kale oo fudud oo hoggaamiyeyaasha dhaqdhaqaaqa ku "
 "jira ku caawinaya inay fahmaan koritaanka agahooda ka socda."
 
-#: globals.php:2291
+#: globals.php:2258
 msgid "3-Circles Gospel Presentation"
 msgstr ""
 
-#: globals.php:2292
-msgid "3-Circles"
-msgstr ""
-
-#: globals.php:2293
+#: globals.php:2259
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
 
-#: globals.php:7215
+#: globals.php:2260
+msgid "3-Circles"
+msgstr ""
+
+#: globals.php:7182
 msgid "No Results"
 msgstr ""
 
@@ -2501,7 +2501,7 @@ msgstr ""
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:189
 #: site/dashboard/wizard.php:180 site/pages/about.php:258
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:166 utilities/apis/cta-api.php:168
+#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
 msgid "Get a Coach"
 msgstr "Hel ababbare"
 
@@ -3313,7 +3313,7 @@ msgid "NEXT STEP"
 msgstr ""
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:142
+#: site/dashboard/dashboard.php:231 site/dashboard/wizard.php:142
 #: site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
@@ -3383,7 +3383,7 @@ msgid ""
 "download."
 msgstr ""
 
-#: site/course/presenter.php:168 site/dashboard/dashboard.php:233
+#: site/course/presenter.php:168 site/dashboard/dashboard.php:235
 #: site/pages/resources.php:92 site/parts/footer.php:41
 msgid "Resources"
 msgstr "Ilaha"
@@ -3439,7 +3439,9 @@ msgstr ""
 msgid "Something went wrong with your checkin process."
 msgstr "Alla. Waxbaa khaldamay. Mar kale isku day!"
 
-#: site/dashboard/checkin-dashboard.php:160
+#: site/dashboard/checkin-dashboard.php:160 site/dashboard/dashboard.php:252
+#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298
 msgid "Congratulations!"
 msgstr ""
 
@@ -3589,8 +3591,8 @@ msgstr ""
 msgid "Preview"
 msgstr "guudmar"
 
-#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:241
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:250
 #, php-format
 msgid "Add new %s"
 msgstr ""
@@ -3623,8 +3625,8 @@ msgstr "Lagu xidhiidhiyey"
 msgid "Getting Started"
 msgstr "Biloow"
 
-#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:211
-#: utilities/apis/cta-api.php:213
+#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "Cinwaanka Zume"
@@ -3647,7 +3649,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:190
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
-"the training"
+"the training."
 msgstr ""
 
 #: site/dashboard/dashboard.php:192
@@ -3686,8 +3688,7 @@ msgstr ""
 msgid "3-Month Plan"
 msgstr "Qorshe Saddex-Bilood Ah"
 
-#: site/dashboard/dashboard.php:199 utilities/apis/cta-api.php:181
-#: utilities/apis/cta-api.php:183
+#: site/dashboard/dashboard.php:199
 #, fuzzy
 msgid "Create a Plan"
 msgstr "Qorshe Saddex Bilood Ah"
@@ -3746,22 +3747,33 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:211
 #, fuzzy
-msgid "My Churches"
-msgstr "2 Kaniisadood oo Yaryar"
+msgid "My Plans are Locked"
+msgstr "1 Tababbar"
 
 #: site/dashboard/dashboard.php:212
-msgid "Unlock the My Churches area by joining the community."
+msgid ""
+"Unlock this area by creating your Three-Month Plan or adding a commitment of "
+"your own."
 msgstr ""
 
 #: site/dashboard/dashboard.php:213
-msgid "My Maps"
-msgstr ""
+#, fuzzy
+msgid "My Churches"
+msgstr "2 Kaniisadood oo Yaryar"
 
 #: site/dashboard/dashboard.php:214
-msgid "My Maps are Locked"
+msgid "Unlock the My Churches area by joining the community."
 msgstr ""
 
 #: site/dashboard/dashboard.php:215
+msgid "My Maps"
+msgstr ""
+
+#: site/dashboard/dashboard.php:216
+msgid "My Maps are Locked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:217
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -3769,150 +3781,238 @@ msgid ""
 "seeing the great commission fulfilled."
 msgstr ""
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:218
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 Tababbar"
 
-#: site/dashboard/dashboard.php:217 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:219 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "Koorso"
 
-#: site/dashboard/dashboard.php:218 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:220 site/parts/footer.php:29
 #, fuzzy
 msgid "10 Session Course"
 msgstr "Kulanka 1"
 
-#: site/dashboard/dashboard.php:219 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:221 site/parts/footer.php:30
 #, fuzzy
 msgid "20 Session Course"
 msgstr "Kulanka 1"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
+#: site/dashboard/dashboard.php:222 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
 msgstr ""
 
-#: site/dashboard/dashboard.php:221
+#: site/dashboard/dashboard.php:223
 msgid "Heard"
 msgstr "Maqlay"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:224
 msgid "Have I heard about this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:225
 msgid "Obeyed"
 msgstr "Addeecay"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:226
 msgid "Have I obeyed this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:227
 msgid "Shared"
 msgstr "Wadaagay"
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:228
 msgid "Have I shared this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:227
+#: site/dashboard/dashboard.php:229
 msgid "Trained"
 msgstr "Tababbartay"
 
-#: site/dashboard/dashboard.php:228
+#: site/dashboard/dashboard.php:230
 msgid "Have I trained others to share this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:193
+#: site/dashboard/dashboard.php:232 site/dashboard/wizard.php:193
 #: site/pages/training.php:150 utilities/apis/cta-api.php:153
 msgid "Join"
 msgstr ""
 
-#: site/dashboard/dashboard.php:231
+#: site/dashboard/dashboard.php:233
 msgid "Join the community to get access to this area."
 msgstr ""
 
-#: site/dashboard/dashboard.php:232
+#: site/dashboard/dashboard.php:234
 #, fuzzy
 msgid "Community links"
 msgstr "Bulsho"
 
-#: site/dashboard/dashboard.php:234
+#: site/dashboard/dashboard.php:236
 #, fuzzy
 msgid "Previous Slide"
 msgstr "Kii hore"
 
-#: site/dashboard/dashboard.php:235
+#: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Next Slide"
 msgstr "Kulan Cusub"
 
-#: site/dashboard/dashboard.php:236
+#: site/dashboard/dashboard.php:238
 #, fuzzy
 msgid "Group Members"
 msgstr "Magaca Kooxda"
 
-#: site/dashboard/dashboard.php:237
+#: site/dashboard/dashboard.php:239
 #, fuzzy
 msgid "Mark Completed"
 msgstr "DHammaystirka Kooraska"
 
-#: site/dashboard/dashboard.php:238 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:240 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "Bilow Kulanka"
 
-#: site/dashboard/dashboard.php:239
+#: site/dashboard/dashboard.php:241
 msgid "Show details"
 msgstr ""
 
-#: site/dashboard/dashboard.php:240
+#: site/dashboard/dashboard.php:242
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:196
-#: utilities/apis/cta-api.php:198
+#: site/dashboard/dashboard.php:244 utilities/apis/cta-api.php:238
+#: utilities/apis/cta-api.php:240
 #, fuzzy
 msgid "Invite Friends"
 msgstr "Ku casuun asxaabtaada"
 
-#: site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:245
 msgid "Click to add your first church"
 msgstr ""
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:246
 #, fuzzy
 msgid "Church Name"
 msgstr "2 Kaniisadood oo Yaryar"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:247
 #, fuzzy
 msgid "Number of People"
 msgstr "Tiro Xubno ah"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:248
 #, fuzzy
 msgid "Church Location"
 msgstr "Kaydi Goobta Hadda"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:249
 #, fuzzy
 msgid "Parent Church"
 msgstr "Qayb ka ah Labo Kaniisadood"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:250
 #, fuzzy
 msgid "Church"
 msgstr "2 Kaniisadood oo Yaryar"
 
-#: site/dashboard/dashboard.php:249
+#: site/dashboard/dashboard.php:251
 #, fuzzy
 msgid "cancel"
 msgstr "Ka noqo"
 
+#: site/dashboard/dashboard.php:253
+#, fuzzy
+msgid "You have requested a coach"
+msgstr "Waxaad codsatay inaad tababbartid."
+
+#: site/dashboard/dashboard.php:254
+#, fuzzy
+msgid "You have joined a training"
+msgstr "Qabo tababbar"
+
 #: site/dashboard/dashboard.php:255
+#, fuzzy
+msgid "You have set your profile"
+msgstr "Cinwaankaaga"
+
+#: site/dashboard/dashboard.php:256
+#, php-format
+msgctxt "3-month plan unlocked"
+msgid "%s unlocked"
+msgstr ""
+
+#: site/dashboard/dashboard.php:256 utilities/apis/cta-api.php:297
+#, fuzzy
+msgid "3 month plan"
+msgstr "Qorshe Saddex-Bilood Ah"
+
+#: site/dashboard/dashboard.php:257
+#, fuzzy
+msgid "You have joined the community"
+msgstr "Bulsho"
+
+#: site/dashboard/dashboard.php:258
+msgid "Will you do 1 or 2 hour training sessions?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:259
+#, fuzzy
+msgid "1 hour (20 sessions)"
+msgstr "Kulan"
+
+#: site/dashboard/dashboard.php:260
+#, fuzzy
+msgid "2 hour (10 sessions)"
+msgstr "Kulan"
+
+#: site/dashboard/dashboard.php:261
+msgid "What time of day?"
+msgstr ""
+
+#: site/dashboard/dashboard.php:262
+#, fuzzy
+msgid "Morning"
+msgstr "Tababbar"
+
+#: site/dashboard/dashboard.php:263
+msgid "Afternoon"
+msgstr ""
+
+#: site/dashboard/dashboard.php:264
+msgid "Evening"
+msgstr ""
+
+#: site/dashboard/dashboard.php:265
+#, fuzzy
+msgid "How often will you meet?"
+msgstr "Sidee baad dareentaa?"
+
+#: site/dashboard/dashboard.php:266
+msgid "Every day"
+msgstr ""
+
+#: site/dashboard/dashboard.php:267
+msgid "Once a week"
+msgstr ""
+
+#: site/dashboard/dashboard.php:268
+msgid "Twice a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:269
+msgid "Once a month"
+msgstr ""
+
+#: site/dashboard/dashboard.php:270
+#, fuzzy
+msgid "When do you plan to start?"
+msgstr "Maxaad baratay oo ku saabsan Ilaah?"
+
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -3921,14 +4021,14 @@ msgstr ""
 "Waxaan Sheekadayda [Markhaatifur] iyo Ilaah Qisooyinkiisa [Injiilka] la "
 "wadaagi doonaa shakhsiyaadka soo socda:"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:277
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 "Waxaan Kooxahan soo socda ku caawin doonaa in ay Kooxo Masuuliyadeed ila "
 "bilaabaan:"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:278
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -3936,12 +4036,12 @@ msgstr ""
 "Waxaan dadkan soo socda ku adkayn doonaa inay iskood u bilowdaan Kooxahooda "
 "Masuuliyadeed una tababbaraan sidii ay u samayn lahaayeen:"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:279
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 "Waxaan dadkan soo socda ku casuumi doonaa inay kooxaha 3/3 ila bilaabaan:"
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:280
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -3949,7 +4049,7 @@ msgstr ""
 "Waxaan dadkan soo socda ku adkayn doonaa inay iskood u bilaabaan Kooxaha 3/3 "
 "una tababbaraan sida loo sameeyo:"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -3958,20 +4058,20 @@ msgstr ""
 "Waxaan dadkan soo socda ku casuumi doonaa inay ka qayb galaan kooxaha 3/3 "
 "kuwa Rajada ama Kooxda Shaacinta [eeg tusmo hoosaadda Buuggahagaha Zúme]"
 
-#: site/dashboard/dashboard.php:261
+#: site/dashboard/dashboard.php:282
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "Waxaan dadkan soo socda ku cawuumi doonaa inay Salaadda Socodka igala qayb "
 "galaan:"
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:283
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 "Waxaan Salaadda Socodka samayn doonaa mar [maalintii / toddobaadkii / "
 "bishii]."
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:284
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -3981,7 +4081,7 @@ msgstr ""
 "sheekooyinkooda iyo Ilaah Qisooyinkiisa oo ay xidhiidhkooda ku darsadaan "
 "dadka ku jira Liiska 100-ka:"
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:285
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -3989,13 +4089,13 @@ msgstr ""
 "Waxaan dadkan soo socda ku caawin doonaa inay adeegsadaan habka Salaadda "
 "Wareegga ah oo ay wakhtiyeeyaan:"
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:286
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Waxaan Salaadda Wareegga ah samayn doonaa mar [maalintii / toddobaadkii / "
 "bishii]."
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:287
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -4004,7 +4104,7 @@ msgstr ""
 "Waxaan dadkan soo socda ku casuumi doonaa inay qayb ka noqdaan Hoggaaminta "
 "Unugga ah ee aan hoggaamin doono:"
 
-#: site/dashboard/dashboard.php:267
+#: site/dashboard/dashboard.php:288
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
@@ -4012,7 +4112,7 @@ msgstr ""
 "Waxaan dadkan soo socda ku dhiirri gelin doonaa inay dhex tibaaxaan Koorsada "
 "Tababbarka Zúme:"
 
-#: site/dashboard/dashboard.php:268
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Muhiimado kale:"
@@ -4839,25 +4939,25 @@ msgstr ""
 msgid "Register Free"
 msgstr "Si xornimo ah isku diwaan geli"
 
-#: site/pages/checkin.php:87 site/pages/friend-invite.php:83
+#: site/pages/checkin.php:84 site/pages/friend-invite.php:83
 msgid "Please enter a friend code."
 msgstr ""
 
-#: site/pages/checkin.php:88 site/pages/friend-invite.php:84
+#: site/pages/checkin.php:85 site/pages/friend-invite.php:84
 #: site/pages/plan-invite.php:84 site/pages/plan-invite.php:180
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/pages/checkin.php:162
+#: site/pages/checkin.php:154
 #, fuzzy
 msgid "Checkin"
 msgstr "Liiska hubinta"
 
-#: site/pages/checkin.php:164
+#: site/pages/checkin.php:156
 msgid "Use the code on the screen or in the book"
 msgstr ""
 
-#: site/pages/checkin.php:169 site/pages/friend-invite.php:177
+#: site/pages/checkin.php:161 site/pages/friend-invite.php:177
 #: site/pages/plan-invite.php:188
 msgid "Connect"
 msgstr ""
@@ -5782,73 +5882,107 @@ msgstr "Eeg Tababbarka oo Dhan"
 msgid "Join the online training to learn more"
 msgstr ""
 
-#: utilities/apis/cta-api.php:167
+#: utilities/apis/cta-api.php:166
+#, fuzzy
+msgid "Joined Training!"
+msgstr "Eeg Tababbarka oo Dhan"
+
+#: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:182
-msgid "Create a plan to help you grow"
+#: utilities/apis/cta-api.php:195
+#, fuzzy
+msgid "Requested Coach!"
+msgstr "Hel ababbare"
+
+#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:225
+msgid "Congratulations"
 msgstr ""
 
-#: utilities/apis/cta-api.php:197
+#: utilities/apis/cta-api.php:209 utilities/apis/cta-api.php:211
+#, fuzzy
+msgid "Create a Training"
+msgstr "1 Tababbar"
+
+#: utilities/apis/cta-api.php:210
+msgid "Create a training to help you grow"
+msgstr ""
+
+#: utilities/apis/cta-api.php:224
+#, fuzzy
+msgid "Created Training!"
+msgstr "LIISKA 100ka — Samayso liiskaaga 100ka ee kuu gaarka ah. (30 daqiiqo)"
+
+#: utilities/apis/cta-api.php:239
 msgid "Invite friends to join you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:212
+#: utilities/apis/cta-api.php:254
 msgid "Set your profile to help others know you"
 msgstr ""
 
-#: utilities/apis/cta-api.php:226 utilities/apis/cta-api.php:228
+#: utilities/apis/cta-api.php:268
+#, fuzzy
+msgid "Profile Set"
+msgstr "Macluumaad"
+
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "Qorshe Saddex Bilood Ah"
 
-#: utilities/apis/cta-api.php:227
+#: utilities/apis/cta-api.php:283
 msgid "Create a 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:241 utilities/apis/cta-api.php:243
+#: utilities/apis/cta-api.php:297
+#, php-format
+msgid "%s unlocked"
+msgstr ""
+
+#: utilities/apis/cta-api.php:311 utilities/apis/cta-api.php:313
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "Qorshe Saddex Bilood Ah"
 
-#: utilities/apis/cta-api.php:242
+#: utilities/apis/cta-api.php:312
 msgid "Complete your 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:256 utilities/apis/cta-api.php:258
+#: utilities/apis/cta-api.php:326 utilities/apis/cta-api.php:328
 #, fuzzy
 msgid "Submit Report"
 msgstr "Dhiib"
 
-#: utilities/apis/cta-api.php:257
+#: utilities/apis/cta-api.php:327
 msgid "Submit a report to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:271 utilities/apis/cta-api.php:273
+#: utilities/apis/cta-api.php:341 utilities/apis/cta-api.php:343
 msgid "Join a Hub"
 msgstr ""
 
-#: utilities/apis/cta-api.php:272
+#: utilities/apis/cta-api.php:342
 msgid "Join a hub to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:289 utilities/apis/cta-api.php:291
+#: utilities/apis/cta-api.php:359 utilities/apis/cta-api.php:361
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "Neefsashada Ruuxiga ah"
 
-#: utilities/apis/cta-api.php:290
+#: utilities/apis/cta-api.php:360
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "Neefsashada Ruuxiga ah"
 
-#: utilities/apis/cta-api.php:304 utilities/apis/cta-api.php:306
+#: utilities/apis/cta-api.php:374 utilities/apis/cta-api.php:376
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "Masuuliyadda Xidhiidhka - Liiska 100-ka"
 
-#: utilities/apis/cta-api.php:305
+#: utilities/apis/cta-api.php:375
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "Masuuliyadda Xidhiidhka - Liiska 100-ka"
