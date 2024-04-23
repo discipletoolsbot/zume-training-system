@@ -34,7 +34,7 @@ class Zume_Training_Login extends Zume_Magic_Page {
 
         if ( $this->slug_matches( $this->type ) && ! dt_is_rest() ) {
 
-//            $this->set_locale();
+            $this->set_locale();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -55,6 +55,8 @@ class Zume_Training_Login extends Zume_Magic_Page {
             add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
             add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
+
+
 
         }
     }
@@ -86,8 +88,6 @@ class Zume_Training_Login extends Zume_Magic_Page {
                 )
 
             });
-        </script>
-        <script>
         </script>
         <?php
     }
