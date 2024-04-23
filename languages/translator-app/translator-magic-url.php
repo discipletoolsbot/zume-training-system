@@ -22,6 +22,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public $language_code;
     public $language;
 
+    public $download_fields = [];
+    public $script_fields = [];
+    public $video_fields = [];
+
     public $pieces = [
         1 => 20730, // God uses ordinary people
         2 => 20731, // teach them to obey
@@ -85,7 +89,12 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $this->language_code = $lang_code ?? $this->language_code;
         $this->language = $this->zume_languages[ $this->language_code ];
 
+
         if ( isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
+
+            $this->download_fields = Zume_Downloads_Post_Type::instance()->get_custom_fields_settings();
+            $this->script_fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
+            $this->video_fields = Zume_Video_Post_Type::instance()->get_custom_fields_settings();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -1118,22 +1127,23 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <div class="cell">
                         <?php
                             global $wpdb;
-
+                            $video_fields = $this->video_fields;
                             $video_results = list_zume_videos( $this->language_code );
 
-                            foreach( $video_results as $row ) {
-                                if ( empty( $row['vimeo_id'] ) ) {
+                            foreach( $video_fields as $key => $row ) {
+                                if ( empty( $video_results[$key]) ) {
                                     ?>
                                     <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                        Video <?php echo $row['piece_id'] ?> not installed
+                                        <strong><?php echo $row['name'] ?></strong>
+                                        Video <?php echo $key . ' - ' . $row['name'] ?> not installed
                                     </div>
                                     <?php
                                 } else {
                                     ?>
                                     <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                        <strong><?php // echo $training_items[$row['piece_id']]['title'] ?? '' ?> <?php echo $row['piece_id'] ?></strong>
+                                        <strong><?php echo $row['name'] ?></strong>
                                         <div style="width:400px;height:275px;">
-                                        <iframe src="https://player.vimeo.com/video/<?php echo $row['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $row['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                                        <iframe src="https://player.vimeo.com/video/<?php echo $video_results[$key]['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $video_results[$key]['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                                         </div>
                                     </div>
                                     <?php
@@ -1578,12 +1588,18 @@ if (!function_exists('list_zume_videos')) {
                                         AND pm.meta_key != '_edit_modified'
                                         AND pm.meta_key != '_edit_lock';",
                                     $language_code);
-        $downloads = $wpdb->get_results($sql, ARRAY_A);
+       $videos_raw = $wpdb->get_results($sql, ARRAY_A);
 
-        if (empty($downloads) || is_wp_error($downloads)) {
+        if (empty($videos_raw) || is_wp_error($videos_raw)) {
             return [];
         }
-        return $downloads;
+
+        $videos = [];
+        foreach( $videos_raw as $video ) {
+            $videos[$video['piece_id']] = $video;
+        }
+
+        return $videos;
     }
 }
 if ( ! function_exists( 'list_zume_messages' ) ) {
