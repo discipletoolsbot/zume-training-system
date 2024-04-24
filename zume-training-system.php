@@ -158,6 +158,7 @@ class Zume_Training {
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
         add_action( 'dt_post_updated', [ $this, 'update_coaching_contact' ], 10, 5 );
         add_filter( 'pre_redirect_guess_404_permalink', '__return_false' );
+        add_filter( 'language_attributes', [ $this, 'filter_language_attributes' ], 10, 2 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
         $fields = [
@@ -180,6 +181,32 @@ class Zume_Training {
         if ( class_exists( 'DT_Login_Fields' ) ) { // if outside DT context, don't run this
             DT_Login_Fields::update( $fields );
         }
+    }
+
+    /**
+     * Filters the language attributes for display in the 'html' tag.
+     *
+     * @param string $output  A space-separated list of language attributes.
+     * @param string $doctype The type of HTML document (xhtml|html).
+     * @return string A space-separated list of language attributes.
+     */
+    public function filter_language_attributes( string $output, string $doctype ) : string {
+        global $zume_languages_by_code;
+        if ( str_contains( $output, 'dir=' ) ) {
+            return $output;
+        }
+
+        $lang_code = zume_current_language();
+
+        if ( !isset( $zume_languages_by_code[$lang_code] ) ) {
+            return $output;
+        }
+
+        $dir = $zume_languages_by_code[$lang_code]['rtl'] ? 'rtl' : 'ltr';
+
+        $output .= ' dir="'.$dir.'"';
+
+        return $output;
     }
 
     /**
