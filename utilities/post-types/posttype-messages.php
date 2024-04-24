@@ -527,7 +527,7 @@ class Zume_Training_Messages_Post_Type
                 continue;
             }
 
-            ${$f} = strip_tags( trim( sanitize_text_field( wp_unslash( $_POST[ $f ] ) ) ) );
+            ${$f} =  trim( wp_unslash( $_POST[ $f ] ) );
 
             // Escape the URLs.
             if ( 'url' == $field_data[ $f ]['type'] ) {
@@ -535,7 +535,7 @@ class Zume_Training_Messages_Post_Type
             }
 
             if ( 'textarea' == $field_data[ $f ]['type'] ) {
-                update_post_meta( $post_id, $f, trim( sanitize_textarea_field( wp_unslash( $_POST[ $f ] ) ) ) );
+                update_post_meta( $post_id, $f, trim( wp_unslash( $_POST[ $f ] ) ) );
             } elseif ( get_post_meta( $post_id, $f ) == '' ) {
                 add_post_meta( $post_id, $f, ${$f}, true );
             } elseif ( ${$f} != get_post_meta( $post_id, $f, true ) ) {
