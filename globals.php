@@ -880,7 +880,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'pieces_pages' => false,
                     'course_slides_download' => false,
                 ],
-                'enabled' => true,
+                'enabled' => false,
             ),
             'my' => array(
                 'name' => 'Burmese',
@@ -1203,7 +1203,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'pieces_pages' => false,
                     'course_slides_download' => false,
                 ],
-                'enabled' => true,
+                'enabled' => false,
             ),
             'mai' => array(
                 'name' => 'Maithili',
