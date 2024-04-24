@@ -740,8 +740,8 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'rtl' => true,
                 'flag' => '🇹🇳',
                 'feature_flags' => [
-                    'language_selector' => false,
-                    'pieces_pages' => false,
+                    'language_selector' => true,
+                    'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
                 'enabled' => true,
