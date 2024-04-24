@@ -713,7 +713,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_jo' => array(
-                'name' => 'Arabic (JO)',
+                'name' => 'Arabic (Jordanian)',
                 'enDisplayName' => 'Arabic (Jordanian)',
                 'code' => 'ar_jo',
                 'displayCode' => 'ar_jo',
@@ -730,7 +730,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_tn' => array(
-                'name' => 'Arabic (TN)',
+                'name' => 'Arabic (Tunisian)',
                 'enDisplayName' => 'Arabic (Tunisian)',
                 'code' => 'ar_tn',
                 'displayCode' => 'ar_tn',
@@ -747,7 +747,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enabled' => true,
             ),
             'ar_ma' => array(
-                'name' => 'Arabic (MA)',
+                'name' => 'Arabic (Moroccan)',
                 'enDisplayName' => 'Arabic (Moroccan)',
                 'code' => 'ar_ma',
                 'displayCode' => 'ar_ma',
