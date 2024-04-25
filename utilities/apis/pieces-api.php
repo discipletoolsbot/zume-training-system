@@ -60,6 +60,14 @@ function pieces_content( $postid, $lang, $strings ) {
 
     $meta = get_post_meta( (int) $postid );
 
+    if ( $meta['zume_lang'][0] !== $lang ) {
+        $translated_postid = get_piece_translation_id( $postid, $lang );
+
+        if ( $translated_postid !== $postid ) {
+            $meta = get_post_meta( $translated_postid );
+        }
+    }
+
     $tool_number = $meta['zume_piece'][0] ?? 0;
     $pre_video_content = $meta['zume_pre_video_content'][0] ?? '';
     $post_video_content = $meta['zume_post_video_content'][0] ?? '';
@@ -137,6 +145,36 @@ function pieces_content( $postid, $lang, $strings ) {
     </div>
 
     <?php
+}
+
+function get_piece_translation_id( $postid, $lang_code ) {
+    global $zume_languages_by_code;
+    $post = get_post( $postid );
+    $slug = $post->post_name;
+
+    $slug_parts = explode( '-', $slug );
+    $lang_part = $slug_parts[ count( $slug_parts ) - 1 ];
+
+    if ( $lang_part === $lang_code ) {
+        return $postid;
+    }
+
+    if ( !isset( $zume_languages_by_code[$lang_code] ) ) {
+        return $postid;
+    }
+
+    if ( !isset( $zume_languages_by_code[$lang_part] ) ) {
+        $slug_parts[] = $lang_code;
+    } else {
+        $slug_parts[ count( $slug_parts ) - 1 ] = $lang_code;
+    }
+
+
+    $translation_slug = implode( '-', $slug_parts );
+
+    $post = zume_get_post_by_slug( $translation_slug, 'zume_pieces' );
+
+    return $post->ID;
 }
 
 function pieces_by_lang_code( $lang_code ) {

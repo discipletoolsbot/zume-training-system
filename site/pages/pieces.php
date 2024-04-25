@@ -10,7 +10,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     public $root = 'starter_app';
     public $type = 'home';
     public $postid = false;
-    public $lang = 'en';
+    public $lang_code = 'en';
     public static $token = 'starter_app_home';
 
     private static $_instance = null;
@@ -30,7 +30,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
         ] = zume_get_url_pieces();
 
         $page_slug = $url_parts[0] ?? '';
-        $this->lang = $lang_code;
+        $this->lang_code = $lang_code;
 
         if ( isset( $page_slug ) && !empty( $page_slug ) ) {
             global $wpdb, $table_prefix;
@@ -90,7 +90,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
 
         require __DIR__ . '/../parts/nav.php';
 
-        pieces_content( $this->postid, $this->lang, [
+        pieces_content( $this->postid, $this->lang_code, [
             'wtv' => esc_html__( 'Watch This Video', 'zume' ),
             'ay' => esc_html__( 'Ask Yourself', 'zume' ),
             'd' => esc_html__( 'Download Free Guidebook', 'zume' ),
