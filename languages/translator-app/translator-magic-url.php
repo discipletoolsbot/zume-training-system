@@ -1585,7 +1585,7 @@ if (!function_exists('list_zume_scripts')) {
                                         WHERE p.post_type = 'zume_scripts'
                                         AND p.post_title = %s
                                         AND SUBSTRING( pm.meta_key, 1, 2) > 30
-                                        AND SUBSTRING( pm.meta_key, 1, 2) < 65;",
+                                        AND SUBSTRING( pm.meta_key, 1, 2) < 75;",
                                     $language_code);
 
         $results = $wpdb->get_results($sql, ARRAY_A);
