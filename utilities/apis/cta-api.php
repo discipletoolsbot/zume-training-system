@@ -44,6 +44,8 @@ class Zume_System_CTA_API
 
     public function request_sorter( WP_REST_Request $request )
     {
+        zume_i18n();
+
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
         if ( is_user_logged_in() ) {

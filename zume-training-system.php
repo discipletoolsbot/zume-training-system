@@ -28,8 +28,6 @@ if ( ! defined( 'ZUME_COACHING_URL' ) ) {
     define( 'ZUME_COACHING_URL', 'https://zume5.training/coaching/' );
 }
 
-add_action( 'init', 'zume_i18n' );
-
 /**
  * Fires after WordPress has finished loading but before any headers are sent.
  *
@@ -156,6 +154,9 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'utilities/loader.php' );
         require_once( 'site/loader.php' );
+
+        $this->i18n();
+
         require_once( 'languages/translator-app/loader.php' );
     }
     public static function activation() {
@@ -605,6 +606,10 @@ class Zume_Training {
 
         /* Update the coaching contact on the coaching subsite */
         Zume_Get_A_Coach_Endpoints::update_coaching_contact( $coaching_contact_id, $changes );
+    }
+
+    public function i18n() {
+        zume_i18n();
     }
 
     public function __toString() {
