@@ -748,16 +748,17 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $messages_other_language = list_zume_messages( $this->language_code );
 
         ob_start();
-        foreach( $messages_english as $pid => $message ) {
+        foreach( $messages_english as $message ) {
+            $pid = $message['post_id'];
             ?>
             <tr><td colspan="4" style="background:black;"></td></tr>
             <tr>
                 <td colspan="2">
-                <?php echo $messages_english[$pid]['title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent_id'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent_id'] ) . ')' : '' ?>
+                <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
                 <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?></a>
                 </td>
                 <td colspan="2">
-                    <?php echo $messages_other_language[$pid]['title'] ?? '' ?>
+                    <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
                     <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l='.$this->language_code ?></a>
                 </td>
             </tr>
@@ -1606,7 +1607,7 @@ if (!function_exists('list_zume_activites')) {
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'title_', %s )
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'content_', %s )
-                                        WHERE p.post_type = 'zume_activities';",
+                                        WHERE p.post_type = 'zume_activities' AND p.post_status = 'publish';",
                                 $language_code, $language_code, $language_code );
 
         $results = $wpdb->get_results($sql, ARRAY_A);
@@ -1622,14 +1623,14 @@ if (!function_exists('list_zume_videos')) {
     {
         global $wpdb;
 
-        $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
-                                        FROM zume_posts p
-                                        JOIN zume_postmeta pm ON pm.post_id=p.ID
-                                        WHERE p.post_title = %s
-                                        AND p.post_type = 'zume_video'
-                                        AND pm.meta_key != '_edit_last'
-                                        AND pm.meta_key != '_edit_modified'
-                                        AND pm.meta_key != '_edit_lock';",
+            $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, pm.meta_key as piece_id, pm.meta_value as vimeo_id
+                                    FROM zume_posts p
+                                    JOIN zume_postmeta pm ON pm.post_id=p.ID
+                                    WHERE p.post_title = %s
+                                    AND p.post_type = 'zume_video'
+                                    AND SUBSTRING( pm.meta_key, 1, 2) > 0
+                                    AND SUBSTRING( pm.meta_key, 1, 2) < 75
+                                    ORDER BY CAST(pm.meta_key AS unsigned);",
                                     $language_code);
        $videos_raw = $wpdb->get_results($sql, ARRAY_A);
 
@@ -1646,54 +1647,25 @@ if (!function_exists('list_zume_videos')) {
     }
 }
 if ( ! function_exists( 'list_zume_messages' ) ) {
-    function list_zume_messages( $langauge_code ) {
+    function list_zume_messages( $language_code ) {
         global $wpdb;
-        $results = $wpdb->get_results(
-            "SELECT p.post_title, p.post_parent, pm.post_id, pm.meta_key, pm.meta_value
-            FROM zume_posts p
-            LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID
-            WHERE p.post_type = 'zume_messages'
-                AND p.post_status != 'auto-draft'
-                AND pm.meta_key != '_edit_last'
-                AND pm.meta_key != '_edit_lock'
-                AND pm.meta_key != 'last_modified'", ARRAY_A );
 
-        $emails = [];
-        foreach( $results as $result ) {
-            $explode = explode('_', $result['meta_key']);
-            if ( ! isset( $explode[1]) ) {
-                continue;
-            }
-            if ( $explode[1] == $langauge_code ) {
-                if ( ! isset( $emails[$result['post_id']] ) ) {
-                    $emails[$result['post_id']] = [
-                        'post_id' => '',
-                        'post_parent_id' => '',
-                        'title' => '',
-                        'language_code' => '',
-                        'subject' => '',
-                        'body' => '',
-                        'footer' => '',
-                    ];
-                }
-
-                $emails[$result['post_id']]['post_id'] = $result['post_id'];
-                $emails[$result['post_id']]['post_parent_id'] = $result['post_parent'];
-                $emails[$result['post_id']]['title'] = $result['post_title'];
-                $emails[$result['post_id']]['language_code'] = $langauge_code;
-                if ( $explode[0] == 'subject' ) {
-                    $emails[$result['post_id']]['subject'] = $result['meta_value'];
-                }
-                if ( $explode[0] == 'body' ) {
-                    $emails[$result['post_id']]['body'] = $result['meta_value'] ?? '';
-                }
-                if ( $explode[0] == 'footer' ) {
-                    $emails[$result['post_id']]['footer'] = $result['meta_value'] ?? '';
-                }
-
-            }
+        $sql = $wpdb->prepare("SELECT p.post_title, p.post_parent, pm.post_id, %s as language_code, pm.meta_value as subject, pm1.meta_value as body
+                                        FROM zume_posts p
+                                        LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'subject_', %s )
+                                        LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'body_', %s )
+                                        WHERE p.post_type = 'zume_messages'", $language_code, $language_code, $language_code );
+        $results = $wpdb->get_results($sql, ARRAY_A);
+        if (empty($results) || is_wp_error($results)) {
+            return [];
         }
-        return $emails;
+        $messages = [];
+        foreach( $results as $message ) {
+            $messages[$message['post_id']] = $message;
+        }
+        return $messages;
+
+
     }
 }
 
