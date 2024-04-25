@@ -510,7 +510,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $message['title'] ?></strong>
+                                    <strong><?php echo $message['post_title'] ?></strong>
                                 </td>
                                 <td style="text-align:right;">
                                     subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
