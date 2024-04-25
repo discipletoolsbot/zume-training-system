@@ -28,6 +28,39 @@ if ( ! defined( 'ZUME_COACHING_URL' ) ) {
     define( 'ZUME_COACHING_URL', 'https://zume5.training/coaching/' );
 }
 
+add_action( 'init', 'zume_i18n' );
+
+/**
+ * Fires after WordPress has finished loading but before any headers are sent.
+ *
+ */
+function zume_i18n() : void {
+    if ( dt_is_rest() ) {
+        global $zume_languages_by_code;
+
+        $language_code = isset( $_COOKIE['zume_language'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['zume_language'] ) ) : null;
+
+        $language = !empty( $language_code ) && isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : null;
+
+        $our_locale = !empty( $language ) ? $language['locale'] : '';
+        /**
+         * Filters a plugin's locale.
+         *
+         * @param string $locale The plugin's current locale.
+         * @param string $domain Text domain. Unique identifier for retrieving translated strings.
+         * @return string The plugin's current locale.
+         */
+        add_filter( 'plugin_locale', function ( string $locale, string $domain ) use ( $our_locale ) : string {
+            if ( $our_locale === '' ) {
+                return $locale;
+            }
+            return $our_locale;
+        }, 10, 2  );
+
+    }
+    $domain = 'zume';
+    load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
+}
 function zume_training() {
     $zume_training_required_dt_theme_version = '1.0';
     $wp_theme = wp_get_theme();
@@ -123,9 +156,6 @@ class Zume_Training {
         require_once( 'appearance/loader.php' );
         require_once( 'utilities/loader.php' );
         require_once( 'site/loader.php' );
-
-        $this->i18n();
-
         require_once( 'languages/translator-app/loader.php' );
     }
     public static function activation() {
@@ -577,30 +607,6 @@ class Zume_Training {
         Zume_Get_A_Coach_Endpoints::update_coaching_contact( $coaching_contact_id, $changes );
     }
 
-    public function i18n() {
-        $domain = 'zume';
-        load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
-
-        /* Get the language fallbacks  */
-
-        $language_code = zume_get_language_cookie();
-
-        $is_magic_link_page = apply_filters( 'dt_blank_access', false );
-
-        // zume-redirects This ensures that the url always matches the users ui_language
-        if ( false && !empty( $language_code ) && !dt_is_rest() && $is_magic_link_page ) {
-            [
-                'lang_code' => $lang_code,
-                'path' => $path,
-            ] = zume_get_url_pieces();
-
-            if ( $lang_code !== $language_code && $path !== 'wp-login.php' && !str_contains( $path, 'presenter' ) ) {
-                $url = site_url( '/' . $language_code . '/' . $path );
-                wp_redirect( $url );
-                exit;
-            }
-        }
-    }
     public function __toString() {
         return 'zume';
     }
