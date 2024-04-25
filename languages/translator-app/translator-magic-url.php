@@ -1559,8 +1559,10 @@ if (!function_exists('list_zume_downloads')) {
                                         FROM zume_posts p
                                         JOIN zume_postmeta pm ON pm.post_id=p.ID
                                         WHERE p.post_title = %s
-                                        AND p.post_type = 'zume_download'
-                                        AND pm.meta_key > 30 AND pm.meta_key < 75;",
+                                            AND p.post_type = 'zume_download'
+                                            AND pm.meta_key > 30
+                                            AND pm.meta_key < 75
+                                        ORDER BY CAST(pm.meta_key AS unsigned);",
                                     $language_code);
         $results = $wpdb->get_results($sql, ARRAY_A);
 
@@ -1580,13 +1582,14 @@ if (!function_exists('list_zume_scripts')) {
         global $wpdb;
 
         $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, SUBSTRING( pm.meta_key, 1, 2) as script_id, pm.meta_value as content
-                                        FROM zume_posts p
-                                        JOIN zume_postmeta pm ON pm.post_id=p.ID
-                                        WHERE p.post_type = 'zume_scripts'
-                                        AND p.post_title = %s
-                                        AND SUBSTRING( pm.meta_key, 1, 2) > 30
-                                        AND SUBSTRING( pm.meta_key, 1, 2) < 75;",
-                                    $language_code);
+                                FROM zume_posts p
+                                JOIN zume_postmeta pm ON pm.post_id=p.ID
+                                WHERE p.post_type = 'zume_scripts'
+                                AND p.post_title = %s
+                                AND SUBSTRING( pm.meta_key, 1, 2) > 30
+                                AND SUBSTRING( pm.meta_key, 1, 2) < 75
+                                ORDER BY CAST(pm.meta_key AS unsigned);",
+                             $language_code);
 
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
@@ -1604,7 +1607,8 @@ if (!function_exists('list_zume_activites')) {
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'title_', %s )
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'content_', %s )
-                                        WHERE p.post_type = 'zume_activities';", $language_code, $language_code, $language_code );
+                                        WHERE p.post_type = 'zume_activities';",
+                                $language_code, $language_code, $language_code );
 
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
