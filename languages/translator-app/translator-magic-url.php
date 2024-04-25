@@ -1316,51 +1316,65 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 overflow: scroll;
                 white-space: nowrap;
             }
+            .qr-section h2 {
+                color: white;
+            }
         </style>
-        <div style="width:100%;">
-            <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-            <h2>Activities</h2>
-            <?php
-                 $activities = [
-                    'soaps',
-                    'accountability',
-                    'prayercycle',
-                    'listof100',
-                    'listof100_printable',
-                    'sharegospel',
-                    'sharetestimony',
-                    'lordssupper',
-                    'blessprayer',
-                    '33group',
-                    'prayerwalking',
-                    '3monthplan',
-                    'coachingchecklist',
-                    'coachingchecklist_printable',
-                    'peermentoring',
-                    '4fields',
-                    'genmapping',
-                ];
-                foreach( $activities as $item ) {
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code.'&a='.$item;
-                    $url_short = 'l='.$this->language_code.'&a='.$item;
-                    $qr_url = zume_create_qr_url( $url );
-                    ?>
-                    <div class="qr-card">
-                        <div class="overflow"><h3><?php echo $item ?></h3></div>
-                        <a href="<?php echo $url ?>" target="_blank">
-                        <img src="<?php echo $qr_url ?>"  />
-                        <div class="overflow"><?php echo $url_short ?></div>
-                        </a>
-                    </div>
-                    <?php
-                }
-            ?>
+
+
+        <!-- Activities -->
+        <div class="qr-section" style="width:100%;float:left;">
+            <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
+            <div class="cell center grey-back">
+                <h2>Activities</h2>
+            </div>
+            <div>
+                <?php
+                     $activities = [
+                        'soaps',
+                        'accountability',
+                        'prayercycle',
+                        'listof100',
+                        'listof100_printable',
+                        'sharegospel',
+                        'sharetestimony',
+                        'lordssupper',
+                        'blessprayer',
+                        '33group',
+                        'prayerwalking',
+                        '3monthplan',
+                        'coachingchecklist',
+                        'coachingchecklist_printable',
+                        'peermentoring',
+                        '4fields',
+                        'genmapping',
+                    ];
+                    foreach( $activities as $item ) {
+                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code.'&a='.$item;
+                        $url_short = 'l='.$this->language_code.'&a='.$item;
+                        $qr_url = zume_create_qr_url( $url );
+                        ?>
+                        <div class="qr-card">
+                            <div class="overflow"><h3><?php echo $item ?></h3></div>
+                            <a href="<?php echo $url ?>" target="_blank">
+                            <img src="<?php echo $qr_url ?>"  />
+                            <div class="overflow"><?php echo $url_short ?></div>
+                            </a>
+                        </div>
+                        <?php
+                    }
+                ?>
+            </div>
         </div>
 
+
+
         <!-- Videos -->
-        <div style="width:100%;margin-top:100px;float:left;">
-            <div><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a></div>
-            <h2>Videos</h2>
+        <div class="qr-section" style="width:100%;margin-top:100px;float:left;">
+            <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
+             <div class="cell center grey-back">
+                <h2>Videos</h2>
+            </div>
             <div>
                 <?php
                     $training_items = zume_training_items();
@@ -1383,7 +1397,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <?php
                     }
                 ?>
-
             </div>
         </div>
 
@@ -1391,89 +1404,70 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
 
-       <div style="width:100%;margin-top:100px;float:left;">
-            <!-- Checkins -->
-            <div id="checkin" style="height: 100px;"></div>
-             <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-            <style>
-                .qr-table img {
-                    width: 150px;
-                    margin: 0 auto;
-                }
-            </style>
-            <h2>Checkins</h2>
-             <table class="qr-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>URL</th>
-                        <th>QR Code</th>
-                    </tr>
-                </thead>
-               <tbody>
-                    <?php
-                    $list = [
-                        // set a (10 Session)
-                        5678 => 'set_a_01', // 10 session 1
-                        2468 => 'set_a_02', // 10 session 2
-                        6543 => 'set_a_03', // 10 session 3
-                        8764 => 'set_a_04', // 10 session 4
-                        6542 => 'set_a_05', // 10 session 5
-                        1235 => 'set_a_06', // 10 session 6
-                        4322 => 'set_a_07', // 10 session 7
-                        9870 => 'set_a_08', // 10 session 8
-                        1355 => 'set_a_09', // 10 session 9
-                        5430 => 'set_a_10', // 10 session 10
-                        // set b (20 Session)
-                        3354 => 'set_b_01', // 20 session 1
-                        4568 => 'set_b_02', // 20 session 2
-                        8767 => 'set_b_03', // 20 session 3
-                        6787 => 'set_b_04', // 20 session 4
-                        3450 => 'set_b_05', // 20 session 5
-                        2344 => 'set_b_06', // 20 session 6
-                        1116 => 'set_b_07', // 20 session 7
-                        5431 => 'set_b_08', // 20 session 8
-                        8768 => 'set_b_09', // 20 session 9
-                        2347 => 'set_b_10', // 20 session 10
-                        9434 => 'set_b_11', // 20 session 11
-                        2348 => 'set_b_12', // 20 session 12
-                        6785 => 'set_b_13', // 20 session 13
-                        9872 => 'set_b_14', // 20 session 14
-                        4327 => 'set_b_15', // 20 session 15
-                        2871 => 'set_b_16', // 20 session 16
-                        4328 => 'set_b_17', // 20 session 17
-                        6548 => 'set_b_18', // 20 session 18
-                        7657 => 'set_b_19', // 20 session 19
-                        2767 => 'set_b_20', // 20 session 20
-                        // set c (Intensive)
-                        1397 => 'set_c_1', // Intensive 1
-                        2341 => 'set_c_2', // Intensive 2
-                        3455 => 'set_c_3', // Intensive 3
-                        4329 => 'set_c_4', // Intensive 4
-                        5451 => 'set_c_5', // Intensive 5
-                    ];
-                    foreach( $list as $i => $v ) {
-                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
-                        $qr_url = zume_create_qr_url( $url );
-                        echo '<tr>';
-                        echo '<td>Code: '. $i . ' for ' . $v . '</td>';
-                        echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                        echo '<td><img src="' . $qr_url . '" /></td>';
-                        echo '</tr>';
-                        ?>
-                        <div class="qr-card">
-                            <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
-                            <a href="<?php echo $url ?>" target="_blank">
-                                <img src="<?php echo $qr_url ?>"  />
-                                <div class="overflow"><?php echo $url_short ?></div>
-                            </a>
-                        </div>
-                        <?php
-                    }
+       <!-- Checkins -->
+       <div  class="qr-section" style="width:100%;margin-top:100px;float:left;">
+            <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
+            <div class="cell center grey-back">
+               <h2>Checkins</h2>
+            </div>
+            <div>
+                <?php
+                $list = [
+                    // set a (10 Session)
+                    5678 => '10 session 1', //'set_a_01', // 10 session 1
+                    2468 => '10 session 2', // 'set_a_02', // 10 session 2
+                    6543 => '10 session 3', // 'set_a_03', // 10 session 3
+                    8764 => '10 session 4', // 'set_a_04', // 10 session 4
+                    6542 => '10 session 5', // 'set_a_05', // 10 session 5
+                    1235 => '10 session 6', // 'set_a_06', // 10 session 6
+                    4322 => '10 session 7', // 'set_a_07', // 10 session 7
+                    9870 => '10 session 8', // 'set_a_08', // 10 session 8
+                    1355 => '10 session 9', // 'set_a_09', // 10 session 9
+                    5430 => '10 session 10', // 'set_a_10', // 10 session 10
+                    // set b (20 Session)
+                    3354 => '20 session 1', // 'set_b_01', // 20 session 1
+                    4568 => '20 session 2', // 'set_b_02', // 20 session 2
+                    8767 => '20 session 3', // 'set_b_03', // 20 session 3
+                    6787 => '20 session 4', // 'set_b_04', // 20 session 4
+                    3450 => '20 session 5', // 'set_b_05', // 20 session 5
+                    2344 => '20 session 6', // 'set_b_06', // 20 session 6
+                    1116 => '20 session 7', // 'set_b_07', // 20 session 7
+                    5431 => '20 session 8', // 'set_b_08', // 20 session 8
+                    8768 => '20 session 9', // 'set_b_09', // 20 session 9
+                    2347 => '20 session 10', // 'set_b_10', // 20 session 10
+                    9434 => '20 session 11', // 'set_b_11', // 20 session 11
+                    2348 => '20 session 12', // 'set_b_12', // 20 session 12
+                    6785 => '20 session 13', // 'set_b_13', // 20 session 13
+                    9872 => '20 session 14', // 'set_b_14', // 20 session 14
+                    4327 => '20 session 15', // 'set_b_15', // 20 session 15
+                    2871 => '20 session 16', // 'set_b_16', // 20 session 16
+                    4328 => '20 session 17', // 'set_b_17', // 20 session 17
+                    6548 => '20 session 18', // 'set_b_18', // 20 session 18
+                    7657 => '20 session 19', // 'set_b_19', // 20 session 19
+                    2767 => '20 session 20', // 'set_b_20', // 20 session 20
+                    // set c (Intensive)
+                    1397 => 'Intensive 1', // 'set_c_1', // Intensive 1
+                    2341 => 'Intensive 2', // 'set_c_2', // Intensive 2
+                    3455 => 'Intensive 3', // 'set_c_3', // Intensive 3
+                    4329 => 'Intensive 4', // 'set_c_4', // Intensive 4
+                    5451 => 'Intensive 5', // 'set_c_5', // Intensive 5
+                ];
+                foreach( $list as $i => $v ) {
+                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
+                    $url_short = 'l='.$this->language_code. '&c='. $i;
+                    $qr_url = zume_create_qr_url( $url );
                     ?>
-
-                </tbody>
-            </table>
+                    <div class="qr-card">
+                        <h3><?php echo $v ?></h3>
+                        <a href="<?php echo $url ?>" target="_blank">
+                            <img src="<?php echo $qr_url ?>"  />
+                            <div class="overflow"><?php echo $url_short ?></div>
+                        </a>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
        </div>
 
 
@@ -1482,10 +1476,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
        <!-- SCRIPTS -->
-        <div style="width:100%;margin-top:100px;float:left;">
-             <div id="scripts" style="height: 100px;"></div>
-             <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-            <h2>Scripts</h2>
+        <div class="qr-section" style="width:100%;margin-top:100px;float:left;">
+            <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
+            <div class="cell center grey-back">
+                <h2>Scripts</h2>
+            </div>
             <div>
             <?php
                 $training_items = zume_training_items();
