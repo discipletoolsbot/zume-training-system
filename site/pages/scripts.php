@@ -4,7 +4,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Scripts extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -26,15 +25,12 @@ class Zume_Scripts extends Zume_Magic_Page
         parent::__construct();
 
         [
-            'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $this->lang = $lang_code ?? $this->lang;
+        $this->lang = get_locale();
 
         if ( isset( $url_parts[0] ) && $this->root === $url_parts[0] && isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

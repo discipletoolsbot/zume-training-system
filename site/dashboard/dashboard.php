@@ -4,14 +4,14 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Dashboard extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
     public $type = 'dashboard';
-    public $lang = 'en';
+    public $lang = 'en_US';
+    public $lang_code = 'en';
     public $base_url = '';
     public static $token = 'zume_app_dashboard';
 
@@ -47,8 +47,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             }
 
             $this->require_authentication();
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

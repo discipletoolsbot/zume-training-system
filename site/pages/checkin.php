@@ -4,7 +4,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Checkin extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -29,9 +28,6 @@ class Zume_Training_Checkin extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $this->initialize_language();
-
-
         /* Redirect /checkin to /{lang_code}/checkin */
         /* This facilitates QR codes sending users to /checkin not knowing what language they may have previously been using */
         $url = dt_get_url_path();
@@ -44,8 +40,6 @@ class Zume_Training_Checkin extends Zume_Magic_Page
         }
 
         if ( isset( $url_parts[0] ) && ( ( $this->root === $url_parts[0] && $this->type === $url_parts[1] ) || 'checkin' === $url_parts[0] ) && ! dt_is_rest() ) {
-
-            $this->set_locale();
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

@@ -43,21 +43,12 @@ function zume_default_language() {
 }
 
 function zume_set_language_cookie( string $lang, array $args = [] ) {
-    if ( function_exists( 'pll_the_languages' ) && zume_get_language_cookie() !== $lang ) {
+    if ( zume_get_language_cookie() !== $lang ) {
         setcookie( ZUME_LANGUAGE_COOKIE, $lang, 0, '/' );
     }
 }
 
 function zume_get_translation( $post_id, $slug = 'en' ) {
-    if ( function_exists( 'pll_the_languages' ) ) {
-        if ( empty( $slug ) ) {
-            $slug = 'en';
-        }
-        return pll_get_post( $post_id, $slug );
-    }
-    else {
-        return new WP_Error( 'Polylang_missing', 'Polylang plugin missing' );
-    }
 }
 
 /**

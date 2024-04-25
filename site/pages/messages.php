@@ -3,7 +3,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Messages extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -35,7 +34,6 @@ class Zume_Messages extends Zume_Magic_Page
 
         if ( isset( $url_parts[0] ) && $this->root === $url_parts[0] && isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
 
-            $this->set_locale( $lang_code );
             $this->language_code = $lang_code;
 
             // register url and access

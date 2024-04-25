@@ -3,9 +3,6 @@
  * Auto loads 2 levels of php files, and file in subdirectories
  */
 
-// Load dependencies first
-require_once ( __DIR__ . '/traits/loader.php' );
-
 $skip_folders = [
     'integrations',
 ];

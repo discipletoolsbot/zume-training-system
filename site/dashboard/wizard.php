@@ -5,8 +5,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 class Zume_Training_Wizard extends Zume_Magic_Page
 {
 
-    use Translateable;
-
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
@@ -29,7 +27,6 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         $this->lang = get_locale();
 
         [
-            'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
@@ -37,8 +34,6 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         $this->wizard_type = $url_parts[1] ?? '';
 
         if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

@@ -4,7 +4,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Profile extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -28,7 +27,6 @@ class Zume_Training_Profile extends Zume_Magic_Page
         $this->lang = get_locale();
 
         [
-            'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
@@ -39,8 +37,6 @@ class Zume_Training_Profile extends Zume_Magic_Page
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
             $this->require_authentication();
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

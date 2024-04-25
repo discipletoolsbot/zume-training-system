@@ -3,7 +3,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Activites_3monthplan_Html extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = '3monthplan_html';

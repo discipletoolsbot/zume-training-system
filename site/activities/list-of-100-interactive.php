@@ -5,7 +5,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Activites_List100_Interactive extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - List of 100';
     public $root = 'zume_activities';
     public $type = 'listof100';

@@ -5,14 +5,13 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 class Zume_Training_Presenter extends Zume_Magic_Page
 {
 
-    use Translateable;
-
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'course_app';
     public $type = 'presenter';
     public $lang = 'en_US';
+    public $lang_code = 'en';
     public static $token = 'course_app_presenter';
 
     private static $_instance = null;
@@ -32,11 +31,11 @@ class Zume_Training_Presenter extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
+        $this->lang_code = $lang_code;
+
         $page_slug = $url_parts[0] ?? '';
 
         if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

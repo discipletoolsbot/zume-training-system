@@ -3,7 +3,6 @@
 
 class Zume_Training_Pieces_URL extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -40,8 +39,6 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
             if ( ! $this->postid ) {
                 return;
             }
-
-            $this->set_locale( $lang_code );
 
             $this->page_title = get_the_title( $this->postid );
             $this->meta = get_post_meta( $this->postid );

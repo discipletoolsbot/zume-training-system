@@ -4,13 +4,12 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Training_Follow_Jesus extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
-    public $type = 'how_to_follow_jesus';
+    public $type = 'how-to-follow-jesus';
     public $lang = 'en';
     public static $token = 'zume_app_how_to_follow_jesus';
     private $has_pieces_pages = false;
@@ -39,8 +38,6 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         $post = zume_get_post_by_slug( $page_slug );
 
         if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale( $lang_code );
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

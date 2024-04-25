@@ -28,28 +28,6 @@ if ( ! defined( 'ZUME_COACHING_URL' ) ) {
     define( 'ZUME_COACHING_URL', 'https://zume5.training/coaching/' );
 }
 
-/**
- * Fires after WordPress has finished loading but before any headers are sent.
- *
- */
-function zume_i18n() : void {
-    if ( dt_is_rest() ) {
-
-        $language_code = isset( $_COOKIE['zume_language'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['zume_language'] ) ) : null;
-
-        $our_locale = zume_get_language_locale( $language_code );
-
-        add_filter( 'plugin_locale', function ( string $locale, string $domain ) use ( $our_locale ) : string {
-            if ( $our_locale === '' ) {
-                return $locale;
-            }
-            return $our_locale;
-        }, 10, 2  );
-
-    }
-    $domain = 'zume';
-    load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
-}
 function zume_training() {
     $zume_training_required_dt_theme_version = '1.0';
     $wp_theme = wp_get_theme();
@@ -97,30 +75,6 @@ add_filter( 'dt_plugins', function ( $plugins ){
     ];
     return $plugins;
 });
-/*
-  This needs to be added before plugins_loaded fires and this filter is applied
-*/
-add_filter( 'pll_redirect_home', 'zume_pll_redirect_home', 1000 );
-function zume_pll_redirect_home( $redirect ) {
-    /*
-      Attempt to fix PLL trying to redirect to homepage in language from cookie when hitting the root url.
-      We also need to set the cookie to (default) english as this is skipped when not redirecting home
-      PROBLEM: this sets the cookie correctly but fails to setup the pll_current_language correctly
-    */
-    /* Copying same PLL options from polylang/frontend/choose-lang.php maybe_setcookie() */
-/*     $args = [
-        'domain' => false,
-        'samesite' => 'Lax',
-    ];
-
-    PLL_Cookie::set( pll_default_language( 'slug' ), $args );
-  */
-
-    /* An alternate solution is to just redirect to default language when hitting root url */
-    $my_redirect = home_url( pll_default_language( 'slug' ) );
-
-    return $my_redirect;
-}
 
 class Zume_Training {
     private static $_instance = null;
@@ -141,6 +95,7 @@ class Zume_Training {
         $this->setup_hooks();
         require_once( 'utilities/integrations/polylang-integration.php' );
         require_once( 'utilities/integrations/urls.php' );
+        require_once( 'utilities/integrations/i18n.php' );
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
         require_once( 'utilities/loader.php' );
@@ -602,7 +557,6 @@ class Zume_Training {
     public function i18n() {
         zume_i18n();
     }
-
     public function __toString() {
         return 'zume';
     }

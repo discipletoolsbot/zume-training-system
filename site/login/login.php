@@ -8,8 +8,6 @@
  */
 class Zume_Training_Login extends Zume_Magic_Page {
 
-    use Translateable;
-
     public $magic = false;
     public $parts = false;
     public $page_title = 'User Login';
@@ -30,11 +28,11 @@ class Zume_Training_Login extends Zume_Magic_Page {
     public function __construct() {
         parent::__construct();
 
-        $this->initialize_language();
+        [
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
 
-        if ( $this->slug_matches( $this->type ) && ! dt_is_rest() ) {
-
-            $this->set_locale();
+        if ( $url_parts[0] === $this->type && ! dt_is_rest() ) {
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );

@@ -9,7 +9,6 @@ if (!defined('ABSPATH')) {
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
-//    use Translateable;
 
     public $magic = false;
     public $parts = false;

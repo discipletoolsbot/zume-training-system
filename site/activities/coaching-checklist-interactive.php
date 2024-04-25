@@ -3,7 +3,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Activites_Coaching_Interactive extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = 'coachingchecklist';

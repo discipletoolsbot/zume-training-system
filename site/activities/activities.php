@@ -3,7 +3,6 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
 class Zume_Activites extends Zume_Magic_Page
 {
-    use Translateable;
 
     public $magic = false;
     public $parts = false;
@@ -35,7 +34,6 @@ class Zume_Activites extends Zume_Magic_Page
 
         if ( isset( $url_parts[0] ) && $this->root === $url_parts[0] && isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
 
-            $this->set_locale( $lang_code );
             $this->language_code = $lang_code;
 
             // register url and access
@@ -115,7 +113,6 @@ Zume_Activites::instance();
 
 class Zume_Activites_SOAPS extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - SOAPS';
     public $root = 'zume_activities';
     public $type = 'soaps';
@@ -137,7 +134,6 @@ Zume_Activites_SOAPS::instance();
 
 class Zume_Activites_Accountability extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Accountability';
     public $root = 'zume_activities';
     public $type = 'accountability';
@@ -158,7 +154,6 @@ Zume_Activites_Accountability::instance();
 
 class Zume_Activites_Prayer_Cycle extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Prayer Cycle';
     public $root = 'zume_activities';
     public $type = 'prayercycle';
@@ -179,7 +174,6 @@ Zume_Activites_Prayer_Cycle::instance();
 
 class Zume_Activites_Sharegospel extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Share the Gospel';
     public $root = 'zume_activities';
     public $type = 'sharegospel';
@@ -200,7 +194,6 @@ Zume_Activites_Sharegospel::instance();
 
 class Zume_Activites_Sharetestimony extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Share Testimony';
     public $root = 'zume_activities';
     public $type = 'sharetestimony';
@@ -221,7 +214,6 @@ Zume_Activites_Sharetestimony::instance();
 
 class Zume_Activites_Supper extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Lords Supper';
     public $root = 'zume_activities';
     public $type = 'lordssupper';
@@ -242,7 +234,6 @@ Zume_Activites_Supper::instance();
 
 class Zume_Activites_Bless extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - Blessing Prayer';
     public $root = 'zume_activities';
     public $type = 'blessprayer';
@@ -263,7 +254,6 @@ Zume_Activites_Bless::instance();
 
 class Zume_Activites_33group extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity - 3/3 Group Meeting';
     public $root = 'zume_activities';
     public $type = '33group';
@@ -284,7 +274,6 @@ Zume_Activites_33group::instance();
 
 class Zume_Activites_Prayerwalk extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = 'prayerwalking';
@@ -305,7 +294,6 @@ Zume_Activites_Prayerwalk::instance();
 
 class Zume_Activites_Peermentoring extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = 'peermentoring';
@@ -326,7 +314,6 @@ Zume_Activites_Peermentoring::instance();
 
 class Zume_Activites_4fields extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = '4fields';
@@ -347,7 +334,6 @@ Zume_Activites_4fields::instance();
 
 class Zume_Activites_Genmap extends Zume_Activites
 {
-    use Translateable;
     public $page_title = 'Zúme Activity';
     public $root = 'zume_activities';
     public $type = 'genmapping';
