@@ -752,7 +752,16 @@ class Zume_Training_Translator extends Zume_Magic_Page
         foreach( $messages_english as $pid => $message ) {
             ?>
             <tr><td colspan="4" style="background:black;"></td></tr>
-            <tr><td colspan="4"><?php echo $messages_english[$pid]['title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent_id'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent_id'] ) . ')' : '' ?></td></tr>
+            <tr>
+                <td colspan="2">
+                <?php echo $messages_english[$pid]['title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent_id'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent_id'] ) . ')' : '' ?>
+                <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?></a>
+                </td>
+                <td colspan="2">
+                    <?php echo $messages_other_language[$pid]['title'] ?? '' ?>
+                    <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l='.$this->language_code ?></a>
+                </td>
+            </tr>
             <tr>
                 <td style="width:10%;"><strong>Subject:</strong></td>
                 <td style="width:40%">
@@ -1293,18 +1302,25 @@ class Zume_Training_Translator extends Zume_Magic_Page
     }
     public function qr_codes() {
         ?>
-        <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-        <h2>Activities</h2>
-         <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>QR Code</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
+        <style>
+            .qr-card {
+                display: inline-block;
+                width: 300px;
+                margin: 10px;
+                padding: 10px;
+                border: 1px solid lightgrey;
+                border-radius: 5px;
+                float:left;
+            }
+            .qr-card .overflow {
+                overflow: scroll;
+                white-space: nowrap;
+            }
+        </style>
+        <div style="width:100%;">
+            <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
+            <h2>Activities</h2>
+            <?php
                  $activities = [
                     'soaps',
                     'accountability',
@@ -1325,63 +1341,153 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     'genmapping',
                 ];
                 foreach( $activities as $item ) {
-//                    dt_write_log( $item );
                     $url = site_url() . '/zume_app/qr/?l='.$this->language_code.'&a='.$item;
+                    $url_short = 'l='.$this->language_code.'&a='.$item;
                     $qr_url = zume_create_qr_url( $url );
-                    echo '<tr>';
-                    echo '<td>' . $item . '</td>';
-                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                    echo '<td><img src="' . $qr_url . '" /></td>';
-                    echo '</tr>';
+                    ?>
+                    <div class="qr-card">
+                        <div class="overflow"><h3><?php echo $item ?></h3></div>
+                        <a href="<?php echo $url ?>" target="_blank">
+                        <img src="<?php echo $qr_url ?>"  />
+                        <div class="overflow"><?php echo $url_short ?></div>
+                        </a>
+                    </div>
+                    <?php
                 }
-                ?>
-            </tbody>
-        </table>
-         <div id="videos" style="height: 100px;"></div>
-         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-        <h2>Videos</h2>
-        <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>QR Code</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $training_items = zume_training_items();
-                foreach( $training_items as $item ) {
-                    if ( empty( $item['script'] ) ) {
-                        continue;
-                    }
-                    $id =  intval( $item['key'] );
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
-                    $qr_url = zume_create_qr_url( $url );
-                    echo '<tr>';
-                    echo '<td>' . $item['video_title'] . '</td>';
-                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                    echo '<td><img src="' . $qr_url . '" /></td>';
-                    echo '</tr>';
-                }
-                ?>
-            </tbody>
-        </table>
+            ?>
+        </div>
 
-        <!-- SCRIPTS -->
-         <div id="scripts" style="height: 100px;"></div>
-         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-        <h2>Scripts</h2>
-        <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>QR Code</th>
-                </tr>
-            </thead>
-            <tbody>
+        <!-- Videos -->
+        <div style="width:100%;margin-top:100px;float:left;">
+            <div><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a></div>
+            <h2>Videos</h2>
+            <div>
                 <?php
+                    $training_items = zume_training_items();
+                    foreach( $training_items as $item ) {
+                        if ( empty( $item['video'] ) ) {
+                            continue;
+                        }
+                        $id =  intval( $item['key'] );
+                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
+                        $url_short = 'l='.$this->language_code.'&v='.$id;
+                        $qr_url = zume_create_qr_url( $url );
+                        ?>
+                            <div class="qr-card">
+                                <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
+                                <a href="<?php echo $url ?>" target="_blank">
+                                    <img src="<?php echo $qr_url ?>"  />
+                                    <div class="overflow"><?php echo $url_short ?></div>
+                                </a>
+                            </div>
+                        <?php
+                    }
+                ?>
+
+            </div>
+        </div>
+
+
+
+
+
+       <div style="width:100%;margin-top:100px;float:left;">
+            <!-- Checkins -->
+            <div id="checkin" style="height: 100px;"></div>
+             <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
+            <style>
+                .qr-table img {
+                    width: 150px;
+                    margin: 0 auto;
+                }
+            </style>
+            <h2>Checkins</h2>
+             <table class="qr-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>URL</th>
+                        <th>QR Code</th>
+                    </tr>
+                </thead>
+               <tbody>
+                    <?php
+                    $list = [
+                        // set a (10 Session)
+                        5678 => 'set_a_01', // 10 session 1
+                        2468 => 'set_a_02', // 10 session 2
+                        6543 => 'set_a_03', // 10 session 3
+                        8764 => 'set_a_04', // 10 session 4
+                        6542 => 'set_a_05', // 10 session 5
+                        1235 => 'set_a_06', // 10 session 6
+                        4322 => 'set_a_07', // 10 session 7
+                        9870 => 'set_a_08', // 10 session 8
+                        1355 => 'set_a_09', // 10 session 9
+                        5430 => 'set_a_10', // 10 session 10
+                        // set b (20 Session)
+                        3354 => 'set_b_01', // 20 session 1
+                        4568 => 'set_b_02', // 20 session 2
+                        8767 => 'set_b_03', // 20 session 3
+                        6787 => 'set_b_04', // 20 session 4
+                        3450 => 'set_b_05', // 20 session 5
+                        2344 => 'set_b_06', // 20 session 6
+                        1116 => 'set_b_07', // 20 session 7
+                        5431 => 'set_b_08', // 20 session 8
+                        8768 => 'set_b_09', // 20 session 9
+                        2347 => 'set_b_10', // 20 session 10
+                        9434 => 'set_b_11', // 20 session 11
+                        2348 => 'set_b_12', // 20 session 12
+                        6785 => 'set_b_13', // 20 session 13
+                        9872 => 'set_b_14', // 20 session 14
+                        4327 => 'set_b_15', // 20 session 15
+                        2871 => 'set_b_16', // 20 session 16
+                        4328 => 'set_b_17', // 20 session 17
+                        6548 => 'set_b_18', // 20 session 18
+                        7657 => 'set_b_19', // 20 session 19
+                        2767 => 'set_b_20', // 20 session 20
+                        // set c (Intensive)
+                        1397 => 'set_c_1', // Intensive 1
+                        2341 => 'set_c_2', // Intensive 2
+                        3455 => 'set_c_3', // Intensive 3
+                        4329 => 'set_c_4', // Intensive 4
+                        5451 => 'set_c_5', // Intensive 5
+                    ];
+                    foreach( $list as $i => $v ) {
+                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
+                        $qr_url = zume_create_qr_url( $url );
+                        echo '<tr>';
+                        echo '<td>Code: '. $i . ' for ' . $v . '</td>';
+                        echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
+                        echo '<td><img src="' . $qr_url . '" /></td>';
+                        echo '</tr>';
+                        ?>
+                        <div class="qr-card">
+                            <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
+                            <a href="<?php echo $url ?>" target="_blank">
+                                <img src="<?php echo $qr_url ?>"  />
+                                <div class="overflow"><?php echo $url_short ?></div>
+                            </a>
+                        </div>
+                        <?php
+                    }
+                    ?>
+
+                </tbody>
+            </table>
+       </div>
+
+
+
+
+
+
+       <!-- SCRIPTS -->
+        <div style="width:100%;margin-top:100px;float:left;">
+             <div id="scripts" style="height: 100px;"></div>
+             <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
+            <h2>Scripts</h2>
+            <div>
+            <?php
                 $training_items = zume_training_items();
                 foreach( $training_items as $item ) {
                     if ( empty( $item['script'] ) ) {
@@ -1389,87 +1495,21 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     }
                     $id =  intval( $item['key'] );
                     $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&s='. $item['script'];
+                    $url_short = 'l='.$this->language_code.'&s='.$item['script'];
                     $qr_url = zume_create_qr_url( $url );
-                    echo '<tr>';
-                    echo '<td>' . $item['title'] . '</td>';
-                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                    echo '<td><img src="' . $qr_url . '" /></td>';
-                    echo '</tr>';
+                    ?>
+                    <div class="qr-card">
+                        <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
+                        <a href="<?php echo $url ?>" target="_blank">
+                            <img src="<?php echo $qr_url ?>"  />
+                            <div class="overflow"><?php echo $url_short ?></div>
+                        </a>
+                    </div>
+                    <?php
                 }
                 ?>
-            </tbody>
-        </table>
-        <div id="checkin" style="height: 100px;"></div>
-         <a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#scripts">Scripts</a> | <a href="#checkin">Checkins</a><br>
-        <style>
-            .qr-table img {
-                width: 150px;
-                margin: 0 auto;
-            }
-        </style>
-        <h2>Checkins</h2>
-         <table class="qr-table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>URL</th>
-                    <th>QR Code</th>
-                </tr>
-            </thead>
-           <tbody>
-                <?php
-                $list = [
-                    // set a (10 Session)
-                    5678 => 'set_a_01', // 10 session 1
-                    2468 => 'set_a_02', // 10 session 2
-                    6543 => 'set_a_03', // 10 session 3
-                    8764 => 'set_a_04', // 10 session 4
-                    6542 => 'set_a_05', // 10 session 5
-                    1235 => 'set_a_06', // 10 session 6
-                    4322 => 'set_a_07', // 10 session 7
-                    9870 => 'set_a_08', // 10 session 8
-                    1355 => 'set_a_09', // 10 session 9
-                    5430 => 'set_a_10', // 10 session 10
-                    // set b (20 Session)
-                    3354 => 'set_b_01', // 20 session 1
-                    4568 => 'set_b_02', // 20 session 2
-                    8767 => 'set_b_03', // 20 session 3
-                    6787 => 'set_b_04', // 20 session 4
-                    3450 => 'set_b_05', // 20 session 5
-                    2344 => 'set_b_06', // 20 session 6
-                    1116 => 'set_b_07', // 20 session 7
-                    5431 => 'set_b_08', // 20 session 8
-                    8768 => 'set_b_09', // 20 session 9
-                    2347 => 'set_b_10', // 20 session 10
-                    9434 => 'set_b_11', // 20 session 11
-                    2348 => 'set_b_12', // 20 session 12
-                    6785 => 'set_b_13', // 20 session 13
-                    9872 => 'set_b_14', // 20 session 14
-                    4327 => 'set_b_15', // 20 session 15
-                    2871 => 'set_b_16', // 20 session 16
-                    4328 => 'set_b_17', // 20 session 17
-                    6548 => 'set_b_18', // 20 session 18
-                    7657 => 'set_b_19', // 20 session 19
-                    2767 => 'set_b_20', // 20 session 20
-                    // set c (Intensive)
-                    1397 => 'set_c_1', // Intensive 1
-                    2341 => 'set_c_2', // Intensive 2
-                    3455 => 'set_c_3', // Intensive 3
-                    4329 => 'set_c_4', // Intensive 4
-                    5451 => 'set_c_5', // Intensive 5
-                ];
-                foreach( $list as $i => $v ) {
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
-                    $qr_url = zume_create_qr_url( $url );
-                    echo '<tr>';
-                    echo '<td>Code: '. $i . ' for ' . $v . '</td>';
-                    echo '<td><a href="' . $url . '" target="_blank">' . $url . '</a></td>';
-                    echo '<td><img src="' . $qr_url . '" /></td>';
-                    echo '</tr>';
-                }
-                ?>
-            </tbody>
-        </table>
+            </div>
+        </div>
         <?php
     }
 
@@ -1520,7 +1560,7 @@ if (!function_exists('list_zume_downloads')) {
                                         JOIN zume_postmeta pm ON pm.post_id=p.ID
                                         WHERE p.post_title = %s
                                         AND p.post_type = 'zume_download'
-                                        AND pm.meta_key > 30 AND pm.meta_key < 65;",
+                                        AND pm.meta_key > 30 AND pm.meta_key < 75;",
                                     $language_code);
         $results = $wpdb->get_results($sql, ARRAY_A);
 
