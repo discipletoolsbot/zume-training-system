@@ -28,6 +28,28 @@ if ( ! defined( 'ZUME_COACHING_URL' ) ) {
     define( 'ZUME_COACHING_URL', 'https://zume5.training/coaching/' );
 }
 
+/**
+ * Fires after WordPress has finished loading but before any headers are sent.
+ *
+ */
+function zume_i18n() : void {
+    if ( dt_is_rest() ) {
+
+        $language_code = isset( $_COOKIE['zume_language'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['zume_language'] ) ) : null;
+
+        $our_locale = zume_get_language_locale( $language_code );
+
+        add_filter( 'plugin_locale', function ( string $locale, string $domain ) use ( $our_locale ) : string {
+            if ( $our_locale === '' ) {
+                return $locale;
+            }
+            return $our_locale;
+        }, 10, 2  );
+
+    }
+    $domain = 'zume';
+    load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
+}
 function zume_training() {
     $zume_training_required_dt_theme_version = '1.0';
     $wp_theme = wp_get_theme();
@@ -578,29 +600,9 @@ class Zume_Training {
     }
 
     public function i18n() {
-        $domain = 'zume';
-        load_plugin_textdomain( $domain, false, trailingslashit( dirname( plugin_basename( __FILE__ ) ) ). 'languages' );
-
-        /* Get the language fallbacks  */
-
-        $language_code = zume_get_language_cookie();
-
-        $is_magic_link_page = apply_filters( 'dt_blank_access', false );
-
-        // zume-redirects This ensures that the url always matches the users ui_language
-        if ( false && !empty( $language_code ) && !dt_is_rest() && $is_magic_link_page ) {
-            [
-                'lang_code' => $lang_code,
-                'path' => $path,
-            ] = zume_get_url_pieces();
-
-            if ( $lang_code !== $language_code && $path !== 'wp-login.php' && !str_contains( $path, 'presenter' ) ) {
-                $url = site_url( '/' . $language_code . '/' . $path );
-                wp_redirect( $url );
-                exit;
-            }
-        }
+        zume_i18n();
     }
+
     public function __toString() {
         return 'zume';
     }

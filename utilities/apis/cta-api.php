@@ -44,6 +44,8 @@ class Zume_System_CTA_API
 
     public function request_sorter( WP_REST_Request $request )
     {
+        zume_i18n();
+
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
         if ( is_user_logged_in() ) {
@@ -58,11 +60,6 @@ class Zume_System_CTA_API
         if ( ! isset( $params['user_id'], $params['language'] ) ) {
             return new WP_Error( 'no_user_id', 'Missing parames user_id or language', array( 'status' => 400 ) );
         }
-
-        global $zume_languages_by_code;
-        $language = $zume_languages_by_code[$params['language']];
-
-        switch_to_locale( $language['locale'] );
 
         return self::_get_ctas( $params['user_id'] );
     }

@@ -79,6 +79,8 @@ export class DashBoard extends router(LitElement) {
         this.userId = jsObject.profile.user_id
         this.showingCelebrationModal = false
 
+        this.languageSelectorElements = document.querySelectorAll('.language-selector')
+
         this.updateUserProfile = this.updateUserProfile.bind(this)
         this.updateWizardType = this.updateWizardType.bind(this)
         this.refetchState = this.refetchState.bind(this)
@@ -101,6 +103,8 @@ export class DashBoard extends router(LitElement) {
 
         window.addEventListener('load', this.showCelebrationModal)
         window.addEventListener('ctas:changed', this.showCelebrationModal)
+
+        this.addEventListener('route', this.updateLanguageSwitcher)
     }
 
     disconnectedCallback() {
@@ -117,6 +121,8 @@ export class DashBoard extends router(LitElement) {
 
         window.removeEventListener('load', this.showCelebrationModal)
         window.removeEventListener('ctas:changed', this.showCelebrationModal)
+
+        this.removeEventListener('route', this.updateLanguageSwitcher)
     }
 
     firstUpdated() {
@@ -139,6 +145,8 @@ export class DashBoard extends router(LitElement) {
         this.params = params
         this.query = query
         this.data = data
+
+        this.dispatchEvent(new CustomEvent('route'))
     }
 
     makeHref(slug) {
@@ -200,6 +208,15 @@ export class DashBoard extends router(LitElement) {
             backgroundTrigger.style.opacity = 'initial'
             backgroundTrigger.style.visibility = 'visible'
         }
+    }
+
+    updateLanguageSwitcher() {
+        this.languageSelectorElements.forEach((element) => {
+            const currentUrl = element.dataset.url
+            const indexOfDashboard = currentUrl.indexOf('dashboard')
+            const newUrl = currentUrl.slice(0,indexOfDashboard + 'dashboard/'.length) + this.route
+            element.dataset.url = newUrl
+        })
     }
 
     updateUserProfile(event) {
