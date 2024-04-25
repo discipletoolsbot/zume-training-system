@@ -10,7 +10,8 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
     public $page_title = 'Zúme Training';
     public $root = 'zume_app';
     public $type = 'how-to-follow-jesus';
-    public $lang = 'en';
+    public $lang = 'en_US';
+    public $lang_code = 'en';
     public static $token = 'zume_app_how_to_follow_jesus';
     private $has_pieces_pages = false;
 
@@ -30,6 +31,8 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
+
+        $this->lang_code = $lang_code;
 
         $this->has_pieces_pages = zume_feature_flag( 'pieces_pages', $lang_code );
 
@@ -78,7 +81,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                 jQuery(document).foundation();
 
                 const piecesContent = document.querySelector('#pieces-content')
-                const lang = '<?php echo esc_attr( $this->lang ) ?>'
+                const lang = '<?php echo esc_attr( $this->lang_code ) ?>'
 
 
                 document.querySelectorAll('.open-modal').forEach((element) => {
@@ -113,7 +116,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
 
                 <a data-value="<?php echo esc_attr( $value ) ?>" data-tool="<?php echo esc_attr( $tool ) ?>" id="<?php echo esc_attr( $id ) ?>" class="open-modal"><?php echo esc_attr( $title ) ?></a>
 
-            <?php else: ?>
+            <?php else : ?>
 
                 <span><?php echo esc_html( $title ) ?></span>
 
@@ -322,7 +325,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                                     <?php esc_html_e( 'A Leadership Cell is a way someone who feels called to lead can develop their leadership by practicing serving.', 'zume' ) ?>
                                 </p>
                                 <p>
-                                    <strong><?php esc_html( $this->display_link( '20760', '29', 'leadership-in-networks',  'Leadership in Networks' ) ) ?></strong><br>
+                                    <strong><?php esc_html( $this->display_link( '20760', '29', 'leadership-in-networks', 'Leadership in Networks' ) ) ?></strong><br>
                                     <?php esc_html_e( 'Learn how multiplying churches stay connected and live life together as an extended, spiritual family.', 'zume' ) ?>
                                 </p>
                             </div>

@@ -11,6 +11,7 @@ function zume_i18n() : void {
 }
 
 add_filter( 'determine_locale', 'zume_determine_locale'  );
+add_filter( 'locale', 'zume_determine_locale'  );
 
 /**
  * Filters the locale for the current request.
