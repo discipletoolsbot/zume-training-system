@@ -34,20 +34,11 @@ if ( ! defined( 'ZUME_COACHING_URL' ) ) {
  */
 function zume_i18n() : void {
     if ( dt_is_rest() ) {
-        global $zume_languages_by_code;
 
         $language_code = isset( $_COOKIE['zume_language'] ) ? sanitize_text_field( wp_unslash( $_COOKIE['zume_language'] ) ) : null;
 
-        $language = !empty( $language_code ) && isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : null;
+        $our_locale = zume_get_language_locale( $language_code );
 
-        $our_locale = !empty( $language ) ? $language['locale'] : '';
-        /**
-         * Filters a plugin's locale.
-         *
-         * @param string $locale The plugin's current locale.
-         * @param string $domain Text domain. Unique identifier for retrieving translated strings.
-         * @return string The plugin's current locale.
-         */
         add_filter( 'plugin_locale', function ( string $locale, string $domain ) use ( $our_locale ) : string {
             if ( $our_locale === '' ) {
                 return $locale;
