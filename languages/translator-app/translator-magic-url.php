@@ -1125,125 +1125,86 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $language = $this->language;
         $training_items = zume_training_items();
         ?>
+        <div class="grid-x grid-padding-x" >
 
-            <div class="grid-x grid-padding-x" >
+                <!-- VIDEO PREVIEW -->
+                <div class="cell center grey-back">
+                    <h2 style="color:white;">VIMEO PREVIEW</h2>
+                </div>
+                <div class="cell">
+                    <?php
+                        global $wpdb;
+                        $video_fields = $this->video_fields;
+                        $video_results = list_zume_videos( $this->language_code );
 
-
-                    <!-- VIDEO PREVIEW -->
-                    <div class="cell center grey-back">
-                        <strong>VIMEO PREVIEW</strong>
-                    </div>
-                    <div class="cell">
-                        <?php
-                            global $wpdb;
-                            $video_fields = $this->video_fields;
-                            $video_results = list_zume_videos( $this->language_code );
-
-                            foreach( $video_fields as $key => $row ) {
-                                if ( empty( $video_results[$key]) ) {
-                                    ?>
-                                    <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                        <strong><?php echo $row['name'] ?></strong>
-                                        Video <?php echo $key . ' - ' . $row['name'] ?> not installed
+                        foreach( $video_fields as $key => $row ) {
+                            if ( empty( $video_results[$key]) ) {
+                                ?>
+                                <div style="float:left; width: 420px; height: 350px; padding:1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                    <?php echo $key . ' - ' . $row['name'] ?> not installed
+                                </div>
+                                <?php
+                            } else {
+                                ?>
+                                <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
+                                    <strong><?php echo $row['name'] ?></strong>
+                                    <div style="width:400px;height:275px;">
+                                    <iframe src="https://player.vimeo.com/video/<?php echo $video_results[$key]['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $video_results[$key]['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                                     </div>
-                                    <?php
-                                } else {
-                                    ?>
-                                    <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
-                                        <strong><?php echo $row['name'] ?></strong>
-                                        <div style="width:400px;height:275px;">
-                                        <iframe src="https://player.vimeo.com/video/<?php echo $video_results[$key]['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $video_results[$key]['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
+                                </div>
+                                <?php
                             }
-                        ?>
-                    </div>
+                        }
+                    ?>
+                </div>
 
 
 
                 <!-- IMAGE ASSETS PREVIEW -->
-                    <div class="cell center grey-back">
-                        <strong>IMAGE ASSETS</strong>
-                    </div>
-                    <div class="cell">
-                        <table style="vertical-align: text-top;">
-                            <tbody>
-                             <?php
-                                foreach( $this->images as $image_number ) {
-                                    $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
-                                  ?>
-                                    <tr>
-                                        <td>
-                                            <strong><?php echo $image_number . '.png'?></strong>
-                                        </td>
-                                        <td>
-                                            <span data-target="<?php echo $file; ?>" class="image loading-spinner active"></span>
-                                            <a href="<?php echo $file ?>" target="_blank"><img src="<?php echo $file ?>" style="max-width: 100px; max-height: 100px;"> View</a>
-                                        </td>
-                                    </tr>
-                                <?php
-                                }
-                            ?>
-                            </tbody>
-                        </table>
-                    </div>
-                 </div>
-            <script>
-                jQuery(document).ready(function() {
-                    jQuery('.pdf').each(function() {
-                        let target = jQuery(this).data('target');
-                        console.log(target)
-                        if ( target ) {
-                             jQuery(this).load(target, function(response, status, xhr) {
-                                if (status == "error") {
-                                    jQuery(this).removeClass('active').html('&#10060;');
-                                }
-                                else {
-                                    jQuery(this).removeClass('active').html('&#9989;');
-                                }
-                            });
-                        } else {
-                            jQuery(this).removeClass('active').html('&#10060;');
+                <style>
+                    .img-wrapper {
+                        display: inline-block;
+                        width: 400px;
+                        height: 600px;
+                        margin: 10px;
+                        padding: 10px;
+                        border: 1px solid lightgrey;
+                        border-radius: 5px;
+                        float:left;
+                    }
+                    .img-wrapper img {
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+                    .img-wrapper h2 {
+                        color: white;
+                    }
+                </style>
+                <div class="cell center grey-back" style="margin-top:100px;">
+                    <h2 style="color:white;">IMAGE ASSETS</h2>
+                </div>
+                <div class="cell">
+                    <?php
+                        foreach( $this->images as $image_number ) {
+                            $file =  $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
+                              ?>
+                                <div class="img-wrapper">
+                                    <div>
+                                        <strong><?php echo $image_number . '.png'?></strong>
+                                    </div>
+                                    <div>
+                                        <img src="<?php echo $file ?>" >
+                                    </div>
+                                </div>
+                            <?php
                         }
-                    });
-                    jQuery('.mp4').each(function() {
-                        let target = jQuery(this).data('target');
-                        console.log(target)
-                        if ( target ) {
-                             jQuery(this).load(target, function(response, status, xhr) {
-                                if (status == "error") {
-                                    jQuery(this).removeClass('active').html('&#10060;');
-                                }
-                                else {
-                                    jQuery(this).removeClass('active').html('&#9989;');
-                                }
-                            });
-                        } else {
-                            jQuery(this).removeClass('active').html('&#10060;');
-                        }
-                    });
-                    jQuery('.image').each(function() {
-                        let target = jQuery(this).data('target');
-                        console.log(target)
-                        if ( target ) {
-                             jQuery(this).load(target, function(response, status, xhr) {
-                                if (status == "error") {
-                                    jQuery(this).removeClass('active').html('&#10060;');
-                                }
-                                else {
-                                    jQuery(this).removeClass('active').html('&#9989;');
-                                }
-                            });
-                        } else {
-                            jQuery(this).removeClass('active').html('&#10060;');
-                        }
-                    });
-                });
-            </script>
+                    ?>
+                </div>
 
-             <?php
+
+            </div> <!-- wrapping div -->
+
+            <?php
             global $zume_languages_full_list;
             $list = $zume_languages_full_list;
             ksort( $list );
