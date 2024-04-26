@@ -155,6 +155,9 @@ function zume_dashboard_url( $current_language = null ) {
     $url = zume_get_posts_translation_url( 'Dashboard', $current_language );
     return $url;
 }
+function zume_dashboard_page_url( $page ) {
+    return zume_url( 'dashboard/' . $page );
+}
 
 function zume_checkin_url() {
     return zume_url( 'zume_app/checkin' );

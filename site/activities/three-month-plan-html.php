@@ -22,18 +22,20 @@ class Zume_Activites_3monthplan_Html extends Zume_Activites
         $questions = Zume_Training_Dashboard::three_month_plan_questions();
         ?>
         <div class="activity-page">
-            <div class="container-md center">
-                <h1 class="activity-title">3-Month Plan</h1>
+            <div class="container-md">
+                <h1 class="activity-title"><?php echo esc_html__( '3-Month Plan', 'zume' ) ?></h1>
+                <a class="f-0" href="<?php site_url() ?>/zume_activities/3monthplan"><?php echo esc_html__( 'Switch to Interactive Version', 'zume' ) ?></a>
             </div>
             <hr>
             <div class="container-md activity-content">
                 <div id="pieces-content" class="stack">
                     <?php
-                    foreach( $questions as $question ){
+                    foreach ( $questions as $question ){
                         ?>
                         <div class="stack--3">
-                            <label><?php echo $question ?></label>
-                            <div style="width:100%;height:3em;border-bottom:1px solid grey;"></div>
+                            <label><?php echo esc_html( $question ) ?></label>
+                            <hr>
+                            <div class="writing-line"></div>
                         </div>
                         <?php
                     }

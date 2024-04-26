@@ -198,7 +198,7 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 if ( 'training_26_heard' == $value['log_key'] ) {
                     $user_state['can_create_3_month_plan'] = true;
                 }
-                if ( 'made_3_month_plan' == $value['subtype'] ) {
+                if ( 'made_post_training_plan' == $value['subtype'] ) {
                     $user_state[$value['subtype']] = true;
                 }
                 if ( 'completed_3_month_plan' == $value['subtype'] ) {
@@ -510,12 +510,14 @@ if ( ! function_exists( 'zume_get_user_commitments' ) ) {
         foreach ( $results as $result ) {
             $meta = maybe_unserialize( $result['meta_value'] );
 
-            if ( 'open' === $status && isset( $meta['status'] ) ) { // status is added when closed, so if present, then it is closed
-                continue;
-            }
+            if ( 'all' !== $status ) {
+                if ( 'open' === $status && isset( $meta['status'] ) ) { // status is added when closed, so if present, then it is closed
+                    continue;
+                }
 
-            if ( 'closed' === $status && !isset( $meta['status'] ) ) {
-                continue;
+                if ( 'closed' === $status && !isset( $meta['status'] ) ) {
+                    continue;
+                }
             }
 
             if ( 'custom' !== $category && $category !== $result['category'] ) {
@@ -5642,7 +5644,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
             }
 
-            global $wpdb;
+            global $wpdb, $table_prefix;
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( isset( $params['user_id'] ) ) {
                 $user_id = zume_validate_user_id_request( $params['user_id'] );
@@ -5667,7 +5669,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 'category' => $params['category'] ?? 'custom',
             ];
 
-            $create = $wpdb->insert( 'wp_dt_post_user_meta', $fields );
+            $create = $wpdb->insert( "{$table_prefix}dt_post_user_meta", $fields );
 
             // check if 3 month plan is made
             if ( 'post_training_plan' === $fields['category'] ) {
@@ -5698,7 +5700,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
             }
 
             $status = 'open';
-            if ( isset( $params['status'] ) ) {
+            if ( isset( $params['status'] ) && !empty( $params['status'] ) ) {
                 $status = $params['status'];
             }
 
@@ -5712,7 +5714,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
         }
         public function update_commitment( WP_REST_Request $request )
         {
-            global $wpdb;
+            global $wpdb, $table_prefix;
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( ! isset( $params['id'], $params['user_id'] ) ) {
                 return new WP_Error( __METHOD__, 'Id and user_id required', array( 'status' => 401 ) );
@@ -5732,12 +5734,12 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 'user_id' => $user_id,
             ];
 
-            $update = $wpdb->update( 'wp_dt_post_user_meta', [ 'meta_value' => $data ], $where );
+            $update = $wpdb->update( "{$table_prefix}dt_post_user_meta", [ 'meta_value' => $data ], $where );
             return $update;
         }
         public function delete_commitment( WP_REST_Request $request )
         {
-            global $wpdb;
+            global $wpdb, $table_prefix;
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( ! isset( $params['id'], $params['user_id'] ) ) {
                 return new WP_Error( __METHOD__, 'Id and user_id required', array( 'status' => 401 ) );
@@ -5750,7 +5752,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 'user_id' => $user_id,
             ];
 
-            $delete = $wpdb->delete( 'wp_dt_post_user_meta', $fields );
+            $delete = $wpdb->delete( "{$table_prefix}dt_post_user_meta", $fields );
 
             return $delete;
         }

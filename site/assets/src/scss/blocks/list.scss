@@ -28,7 +28,7 @@
     }
 
 
-    &:not([data-depth="0"]) {
+    &[data-depth]:not([data-depth="0"]) {
         --child-margin: #{spacing(1)};
         border-inline-start: 2px solid color('gray-100');
         transform-style: preserve-3d;

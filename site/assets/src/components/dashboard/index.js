@@ -1,5 +1,4 @@
 import './dash-board'
-import './dash-3-month-plan'
 import './dash-churches'
 import './dash-coach'
 import './dash-cta'

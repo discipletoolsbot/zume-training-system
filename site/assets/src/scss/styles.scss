@@ -51,6 +51,10 @@
 html {
     font-size: 18px;
     scroll-behavior: smooth;
+
+    &.is-reveal-open.zf-has-scroll {
+      overflow-y: visible;
+    }
 }
 
 body {

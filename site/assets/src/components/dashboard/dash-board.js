@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import { router } from 'lit-element-router';
+import { navigator, router } from 'lit-element-router';
 import { dashRoutes } from './dash-routes';
 
 /**
@@ -10,7 +10,7 @@ import { dashRoutes } from './dash-routes';
  *
  * The secondary area should have the correct CTA for either their journey or their current page.
  */
-export class DashBoard extends router(LitElement) {
+export class DashBoard extends navigator(router(LitElement)) {
     static get properties() {
         return {
             route: { type: String },
@@ -97,6 +97,7 @@ export class DashBoard extends router(LitElement) {
         window.addEventListener('open-wizard', this.updateWizardType)
         window.addEventListener('wizard-finished', this.closeWizard)
         window.addEventListener('wizard-finished', this.getCtas)
+        window.addEventListener('open-3-month-plan', this.open3MonthPlan)
         window.addEventListener('user-state:change', this.refetchState)
         window.addEventListener('user-state:change', this.getCtas)
         window.addEventListener('user-host:change', this.refetchHost)
@@ -115,6 +116,7 @@ export class DashBoard extends router(LitElement) {
         window.removeEventListener('open-wizard', this.updateWizardType)
         window.removeEventListener('wizard-finished', this.closeWizard)
         window.removeEventListener('wizard-finished', this.getCtas)
+        window.removeEventListener('open-3-month-plan', this.open3MonthPlan)
         window.removeEventListener('user-state:change', this.refetchState)
         window.removeEventListener('user-state:change', this.getCtas)
         window.removeEventListener('user-host:change', this.refetchHost)
@@ -242,11 +244,14 @@ export class DashBoard extends router(LitElement) {
         if (routeName === 'join-a-training' && ( userState.plan_created || userState.joined_online_training )) {
             return true
         }
+        if (routeName === '3-month-plan' && ( userState.made_post_training_plan )) {
+            return true
+        }
         return false
     }
 
     static getLockedStatus(routeName, userState) {
-        if (routeName === 'my-plans' && !userState.made_3_month_plan) {
+        if (routeName === 'my-plans' && !userState.made_post_training_plan) {
             return true
         }
         if (['my-churches', 'my-maps'].includes(routeName) && !userState.join_community) {
@@ -283,6 +288,21 @@ export class DashBoard extends router(LitElement) {
         this.wizardType = ''
         const modal = document.querySelector('#wizard-modal')
         jQuery(modal).foundation('close')
+    }
+    open3MonthPlan() {
+        const modal = document.querySelector('#activity-3-month-plan-modal')
+        jQuery(modal).foundation('_disableScroll')
+        jQuery(modal).foundation('open')
+    }
+    close3MonthPlan() {
+        const modal = document.querySelector('#activity-3-month-plan-modal')
+        jQuery(modal).foundation('_enableScroll')
+        jQuery(modal).foundation('close')
+    }
+    handleCreated3MonthPlan() {
+        this.dispatchEvent(new CustomEvent('user-state:change', { bubbles: true }))
+        this.close3MonthPlan()
+        this.navigate(this.makeHref('my-plans'))
     }
     refetchState() {
         this.getCtas()
@@ -392,6 +412,14 @@ export class DashBoard extends router(LitElement) {
         const modal = document.querySelector('#resources-modal')
         jQuery(modal).foundation('close')
     }
+    unlock3MonthPlan() {
+        makeRequest('POST', 'log', { type: 'training', subtype: '26_heard' }, 'zume_system/v1/' ).done( ( data ) => {
+            const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
+            this.dispatchEvent(stateEvent)
+            const hostChangeEvent = new CustomEvent('user-host:change', { bubbles: true })
+            this.dispatchEvent(hostChangeEvent)
+        })
+    }
 
     render() {
         return html`
@@ -445,7 +473,10 @@ export class DashBoard extends router(LitElement) {
                                                         text=${route.translation}
                                                         ?disableNavigate=${route.type === 'handled-link'}
                                                         @click=${route.type === 'handled-link' ? (event) => {
-                                                            if (DashBoard.getCompletedStatus(route.name, this.userState)) return
+                                                            if (DashBoard.getCompletedStatus(route.name, this.userState)) {
+                                                                event.preventDefault()
+                                                                return
+                                                            }
                                                             route.clickHandler(event, this.dispatchEvent)
                                                         } : null}
                                                         ?completed=${DashBoard.getCompletedStatus(route.name, this.userState)}
@@ -467,18 +498,31 @@ export class DashBoard extends router(LitElement) {
                                 <ul class="nested is-active">
                                     ${
                                         DashBoard.childRoutesOf('training')
-                                            .map((route) => html`
+                                            .map((route) => {
+                                                const isLocked = DashBoard.getLockedStatus(route.name, this.userState)
+                                                const isCompleted = DashBoard.getCompletedStatus(route.name, this.userState)
+                                                const isHandledLink = route.type === 'handled-link'
+                                                return html`
                                                 <li>
                                                     <nav-link
                                                         class="menu-btn"
                                                         href=${this.makeHrefRoute(route.name)}
                                                         icon=${route.icon}
                                                         text=${route.translation}
-                                                        ?locked=${DashBoard.getLockedStatus(route.name, this.userState)}
+                                                        ?locked=${isLocked}
+                                                        ?disableNavigate=${isHandledLink}
+                                                        @click=${isHandledLink ? (event) => {
+                                                            if (isCompleted) {
+                                                                event.preventDefault()
+                                                                return
+                                                            }
+                                                            route.clickHandler(event, this.dispatchEvent)
+                                                        } : null}
+                                                        ?completed=${isCompleted}
                                                     ></nav-link>
-                                                    <span class="icon zume-locked gray-500"></span>
+                                                    <span class="icon ${isLocked ? 'zume-locked gray-500' : 'zume-check-mark success'}"></span>
                                                 </li>
-                                            `)
+                                            `})
                                     }
                                 </ul>
                             </li>
@@ -570,6 +614,42 @@ export class DashBoard extends router(LitElement) {
                     .translations=${jsObject.wizard_translations}
                     noUrlChange
                 ></zume-wizard>
+            </div>
+            <div class="reveal full" id="activity-3-month-plan-modal" data-reveal>
+                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeWizard}>
+                    <span class="icon zume-close gray-500"></span>
+                </button>
+                ${
+                    DashBoard.getLockedStatus('3-month-plan', this.userState)
+                        ? html`
+                            <div class="container-sm">
+                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">${jsObject.translations.locked_3_month_plan}</h3>
+                                    <p>${jsObject.translations.locked_3_month_plan_explanation}</p>
+                                  </div>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
+                                </div>
+                              </div>
+                            </div>
+                        `
+                        : html`
+                        <activity-3-month-plan
+                            .questions=${jsObject.three_month_plan_questions}
+                            .translations=${{ save: jsObject.translations.save, cancel: jsObject.translations.cancel }}
+                            user_id=${this.userProfile.user_id}
+                            contact_id=${this.userProfile.contact_id}
+                            @3-month-plan-saved=${this.handleCreated3MonthPlan}
+                            @3-month-plan-cancelled=${this.close3MonthPlan}
+                            showCancel
+                        ></activity-3-month-plan>
+                    `
+                }
+
             </div>
             <div class="reveal full" id="resources-modal" data-reveal>
                 <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeResourcesModal}>

@@ -1,9 +1,9 @@
 import { html } from "lit"
 
-function makeClickHandler(type) {
+function makeClickHandler(type, eventName) {
     return (event, dispatchEvent) => {
         event.preventDefault()
-        dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type } }))
+        dispatchEvent(new CustomEvent(eventName, { bubbles: true, detail: { type } }))
     }
 }
 
@@ -35,7 +35,7 @@ export function dashRoutes() {
             parent: 'getting-started',
             icon: 'zume-profile',
             type: 'handled-link',
-            clickHandler: makeClickHandler('set-profile'),
+            clickHandler: makeClickHandler('set-profile', 'open-wizard'),
             translation: jsObject.translations['set_profile'],
             explanation: jsObject.translations['set_profile_explanation'],
             data: {
@@ -48,7 +48,7 @@ export function dashRoutes() {
             parent: 'getting-started',
             icon: 'zume-start',
             type: 'handled-link',
-            clickHandler: makeClickHandler('getting-started'),
+            clickHandler: makeClickHandler('getting-started', 'open-wizard'),
             translation: jsObject.translations['plan_a_training'],
             explanation: jsObject.translations['plan_a_training_explanation'],
             data: {
@@ -61,7 +61,7 @@ export function dashRoutes() {
             parent: 'getting-started',
             icon: 'zume-coach',
             type: 'handled-link',
-            clickHandler: makeClickHandler('get-a-coach'),
+            clickHandler: makeClickHandler('get-a-coach', 'open-wizard'),
             translation: jsObject.translations['get_a_coach'],
             explanation: jsObject.translations['get_a_coach_explanation'],
             data: {
@@ -107,11 +107,12 @@ export function dashRoutes() {
             pattern: `${jsObject.base_url}/3-month-plan`,
             parent: 'training',
             icon: 'zume-plans',
-            type: 'dash-link',
+            type: 'handled-link',
+            clickHandler: makeClickHandler('3-month-plan', 'open-3-month-plan'),
             translation: jsObject.translations['create_3_month_plan'],
             explanation: jsObject.translations['3_month_plan_explanation'],
             data: {
-                makeComponent: (isLocked) => html`<dash-3-month-plan ?showTeaser=${isLocked}></dash-3-month-plan>`,
+                makeComponent: () => '',
             },
         },
         {

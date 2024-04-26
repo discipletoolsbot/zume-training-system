@@ -37,6 +37,10 @@
         font-weight: 600;
     }
 
+    textarea, input {
+        font-size: 0.9em;
+    }
+
     .activity-title {
         margin-block: spacing(1);
         text-align: center;
@@ -48,6 +52,12 @@
         text-transform: uppercase;
         line-height: 1.5;
         font-weight: 500;
+    }
+
+    .writing-line {
+        width:100%;
+        height:3em;
+        border-bottom:1px solid color('gray-600');
     }
 }
 .activity-content {

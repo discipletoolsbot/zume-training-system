@@ -27,12 +27,11 @@ class Zume_Activites extends Zume_Magic_Page
 
         [
             'lang_code' => $lang_code,
-            'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
         $this->lang = $lang_code ?? $this->lang;
 
-        if ( isset( $url_parts[0] ) && $this->root === $url_parts[0] && isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest() ) {
+        if ( $this->url_matches_this_activity() ) {
 
             $this->language_code = $lang_code;
 
@@ -57,6 +56,14 @@ class Zume_Activites extends Zume_Magic_Page
 
             add_filter( 'wp_enqueue_scripts', [ $this, 'enqueue_zume_training_scripts' ] );
         }
+    }
+
+    public function url_matches_this_activity() {
+        [
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
+
+        return isset( $url_parts[0] ) && $this->root === $url_parts[0] && isset( $url_parts[1] ) && $this->type === $url_parts[1] && ! dt_is_rest();
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {

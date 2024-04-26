@@ -58,50 +58,10 @@ export class DashPlans extends DashPage {
         const modal = document.querySelector('#new-commitments-form')
         jQuery(modal).foundation('close')
     }
-    clearCommitmentsModal() {
-        jQuery('.post-training-plan').each(function(value) {
-            this.value = ''
-        })
-    }
 
-    addCommitments() {
-        const requests = []
-        jQuery('.post-training-plan').each(function(value) {
-            const answer = jQuery(this).val();
-            if ( answer ) {
-
-                const question = jQuery(this).prev().text();
-                console.log('Question: ' + question + ' Answer: ' + answer)
-
-                var date = new Date(); // Now
-                date.setDate(date.getDate() + 30);
-
-                this.value = ''
-
-                /**
-                 * TODO: refactor the POST commitment API to take a list of commitments
-                 * then we can safely fetch all the commitments once the single API request has completed
-                 */
-                const request = makeRequest('POST', 'commitment', {
-                    "user_id": jsObject.profile.user_id,
-                    "post_id": jsObject.profile.contact_id,
-                    "meta_key": "tasks",
-                    "note": 'Question: ' + question + ' Answer: ' + answer,
-                    "question": question,
-                    "answer": answer,
-                    "date": date,
-                    "category": "post_training_plan"
-                }, 'zume_system/v1' )
-                requests.push(request.promise())
-            }
-        })
-        console.log(requests)
-        return Promise.all(requests)
-            .then(() => {
-                console.log
-                this.fetchCommitments()
-                this.closeCommitmentsModal()
-            })
+    handleAddedCommitments() {
+        this.fetchCommitments()
+        this.closeCommitmentsModal()
     }
 
     completeCommitment(id) {
@@ -170,7 +130,16 @@ export class DashPlans extends DashPage {
                         <span class="icon zume-kebab brand-light"></span>
                     </button>
                 </div>
-                <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
+                <div
+                    class="dropdown-pane"
+                    id="kebab-menu-${id}"
+                    data-dropdown
+                    data-auto-focus="true"
+                    data-position="bottom"
+                    data-alignment=${this.isRtl ? 'right' : 'left'}
+                    data-close-on-click="true"
+                    data-close-on-click-inside="true"
+                >
                     <ul>
                         <li class="hidden"><button class="menu-btn" @click=${() => this.editCommitment(id)}><span class="icon zume-pencil"></span>${jsObject.translations.edit}</button></li>
                         <li><button class="menu-btn" @click=${() => this.deleteCommitment(id)}><span class="icon zume-trash"></span>${jsObject.translations.delete}</button></li>
@@ -218,7 +187,7 @@ export class DashPlans extends DashPage {
                                 </button>
                             </li>
                             <li>
-                                <button class="menu-btn w-100 ${this.filterStatus === '' ? 'selected' : ''}" @click=${() => this.filterCommitments('')}>
+                                <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterCommitments('all')}>
                                     <span class="icon zume-sort-all" aria-hidden="true"></span>
                                     ${jsObject.translations.all}
                                 </button>
@@ -226,10 +195,10 @@ export class DashPlans extends DashPage {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main">
                     ${
                         this.showTeaser ? html`
-                          <div class="container-inline">
+                          <div class="container-inline p-2">
                             <div class="dash-menu__list-item" data-locked="false" data-completed="false">
                               <div class="dash-menu__icon-area | stack--5">
                                 <span class="icon zume-locked dash-menu__list-icon"></span>
@@ -261,67 +230,15 @@ export class DashPlans extends DashPage {
                 <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearCommitmentsModal}>
                         <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
                 </button>
-                <div id="pieces-content" class="stack">
-                    <div class="stack--3">
-                      <label for="plan_name">I will share My Story [Testimony] and God's Story [the Gospel] with the following individuals:</label>
-                      <input type="text" name="" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to begin an Accountability Group with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to begin their own Accountability Groups and train them how to do it:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to begin a 3/3 Group with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to begin their own 3/3 Groups and train them how to do it:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to participate in a 3/3 Hope or Discover Group [see Appendix of Zúme Guidebook]</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to participate in Prayer Walking with me:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will Prayer Walk once every [days / weeks / months].</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will equip the following people to share their story and God's Story and make a List of 100 of the people in their relational network:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will challenge the following people to use the Prayer Cycle tool on a periodic basis:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will use the Prayer Cycle tool once every [days / weeks / months].</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will invite the following people to be part of a Leadership Cell that I will lead:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">I will encourage the following people to go through this Zúme Training course:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="stack--3">
-                      <label for="plan_name">Other commitments:</label>
-                      <input type="text" class="post-training-plan" />
-                    </div>
-                    <div class="">
-                      <button class="btn d-block ms-auto" @click=${this.addCommitments}>Save</button>
-                    </div>
-                </div>
+                <activity-3-month-plan
+                    .questions=${jsObject.three_month_plan_questions}
+                    .translations=${{ save: jsObject.translations.save, cancel: jsObject.translations.cancel }}
+                    user_id=${jsObject.profile.user_id}
+                    contact_id=${jsObject.profile.contact_id}
+                    @3-month-plan-saved=${this.handleAddedCommitments}
+                    @3-month-plan-cancelled=${this.closeCommitmentsModal}
+                    showCancel
+                ></activity-3-month-plan>
             </div>
         `;
     }
