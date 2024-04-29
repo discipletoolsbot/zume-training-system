@@ -298,6 +298,20 @@ class Zume_System_CTA_API
                 'content_template' => 'celebration',
             ],
             [
+                'stages' => [1, 2],
+                'required_keys' => ['system_made_post_training_plan'],
+                'disable_keys' => ['system_made_post_training_plan_celebrated'],
+                'key' => 'system_made_post_training_plan_celebrated',
+                'type' => 'system',
+                'subtype' => 'made_post_training_plan_celebrated',
+                'content' => [
+                    'title' => __( '3-Month Plan Created', 'zume' ),
+                    'description' => __( 'Congratulations!', 'zume' ),
+                    'image_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '../site/assets/images/thumbs-up.svg' ),
+                ],
+                'content_template' => 'celebration',
+            ],
+            [
                 'stages' => [3],
                 'required_keys' => [],
                 'disable_keys' => ['system_completed_3_month_plan'],
@@ -311,6 +325,20 @@ class Zume_System_CTA_API
                     'link' => '/complete-3-month-plan',
                 ],
                 'content_template' => 'card',
+            ],
+            [
+                'stages' => [1, 2, 3],
+                'required_keys' => ['system_completed_3_month_plan'],
+                'disable_keys' => ['system_completed_3_month_plan_celebrated'],
+                'key' => 'system_completed_3_month_plan_celebrated',
+                'type' => 'system',
+                'subtype' => 'completed_3_month_plan_celebrated',
+                'content' => [
+                    'title' => __( '3 Month Plan Completed', 'zume' ),
+                    'description' => __( 'Congratulations!', 'zume' ),
+                    'image_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '../site/assets/images/thumbs-up.svg' ),
+                ],
+                'content_template' => 'celebration',
             ],
             [
                 'stages' => [3, 4, 5, 6],

@@ -82,7 +82,7 @@ export function dashRoutes() {
             name: 'my-training',
             pattern: `${jsObject.base_url}/my-training`,
             parent: 'training',
-            icon: 'zume-trainings',
+            icon: 'zume-my-training',
             type: 'dash-link',
             translation: jsObject.translations['my_training'],
             explanation: jsObject.translations['my_training_explanation'],
