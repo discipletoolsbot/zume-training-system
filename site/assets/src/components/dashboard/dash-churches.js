@@ -214,8 +214,8 @@ export class DashChurches extends DashPage {
 
             </div>
             <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearChurchModal}>
-                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearChurchModal}>
+                        <span class="icon zume-close"></span>
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>

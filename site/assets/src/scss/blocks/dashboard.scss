@@ -195,7 +195,7 @@ dash-header-right {
     }
     .dashboard__sidebar-toggle {
         &.break-large {
-            display: block;
+            display: flex;
         }
     }
 
@@ -225,7 +225,7 @@ dash-header-right {
             display: none;
         }
         &.break-medium {
-            display: block;
+            display: flex;
         }
    }
     .dashboard__header {

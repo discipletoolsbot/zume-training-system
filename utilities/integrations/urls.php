@@ -160,7 +160,7 @@ function zume_dashboard_page_url( $page ) {
 }
 
 function zume_checkin_url() {
-    return zume_url( 'zume_app/checkin' );
+    return zume_url( 'checkin' );
 }
 function zume_checkin_dashboard_url() {
     return zume_url( 'checkin-dashboard' );

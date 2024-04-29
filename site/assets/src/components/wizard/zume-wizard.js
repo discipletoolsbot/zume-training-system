@@ -156,8 +156,8 @@ export class Wizard extends LitElement {
             }
             ${( !skippable && !isLastStep && !this.noUrlChange )
                 ? html`
-                    <button @click=${this._onQuit} class="d-flex">
-                        <svg data-src="${jsObject.images_url + '/close-button-01.svg'}" class="h-2"></svg>
+                    <button @click=${this._onQuit} class="close-btn">
+                        <span class="icon zume-close"></span>
                     </button>
                     `
                 : ''

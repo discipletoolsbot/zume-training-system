@@ -63,8 +63,8 @@ export class ActivitySlide extends CourseSlide {
                     data-off-canvas
                     data-transition="overlap"
                 >
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                      <span aria-hidden="true">&times;</span>
+                    <button class="close-btn | ms-auto absolute ${this.dir === 'rtl' ? 'left' : 'right'} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
+                        <span class="icon zume-close"></span>
                     </button>
 
                     <iframe

@@ -38,7 +38,7 @@
             cursor: pointer;
         }
     </style>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
+    <button class="close-btn | ms-auto m--1" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
+        <span class="icon zume-close"></span>
     </button>
 </div>

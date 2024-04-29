@@ -249,3 +249,31 @@ button.card-btn {
         background-color: color('brand-light');
     }
 }
+
+.close-btn {
+    border-radius: 100%;
+    border: 0.15em solid transparent;
+    line-height: 1;
+    display: flex;
+    padding: 0.3em;
+    transition: all 50ms linear;
+    --close-btn-color: #{color('gray-500')};
+    --close-btn-hover-color: #{color('brand-light')};
+
+    &.invert {
+        --close-btn-color: #{color('white')};
+        --close-btn-hover-color: #{color('white')};
+    }
+
+    & .icon {
+        color: var(--close-btn-color);
+    }
+
+    &:hover {
+        border-color: var(--close-btn-hover-color);
+
+        & .icon {
+            color: var(--close-btn-hover-color);
+        }
+    }
+}

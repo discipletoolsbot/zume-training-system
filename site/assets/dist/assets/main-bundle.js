@@ -54,8 +54,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
         <div class="cluster | inline s-3">
             ${e&&!t?o`<button @click=${this._onSkip} class="brand">${this.t.skip}</button>`:""}
             ${!e&&!t&&!this.noUrlChange?o`
-                    <button @click=${this._onQuit} class="d-flex">
-                        <svg data-src="${jsObject.images_url+"/close-button-01.svg"}" class="h-2"></svg>
+                    <button @click=${this._onQuit} class="close-btn">
+                        <span class="icon zume-close"></span>
                     </button>
                     `:""}
         </div>
@@ -467,12 +467,12 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                         style="top: ${this.menuOffset}px; height: calc( min( 100%, 100vh ) - ${this.menuOffset}px - var(--s0) );"
                     >
                         <button
-                            class="ms-auto d-block w-2rem dashboard__sidebar-toggle break-large break-medium"
-                            aria-label="Close modal"
+                            class="close-btn ms-auto dashboard__sidebar-toggle break-large break-medium"
+                            aria-label=${jsObject.translations.close}
                             type="button"
                             @click=${this.toggleSidebar}
                         >
-                            <span class="icon zume-close gray-500"></span>
+                            <span class="icon zume-close"></span>
                         </button>
                         <div class="profile-area">
                             <button
@@ -586,8 +586,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 ${this.renderRoute()}
             </div>
             <div class="stack | reveal tiny card celebration showing | border-none" id="celebration-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <h2 class="h5 text-center bold">${this.celebrationModalContent.title}</h2>
                 <div class="d-flex align-items-center justify-content-between">
@@ -603,8 +603,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
 
             </div>
             <div class="reveal full" id="profile-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
@@ -613,8 +613,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <zume-wizard
                     type=${this.wizardType}
@@ -624,8 +624,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 ></zume-wizard>
             </div>
             <div class="reveal full" id="activity-3-month-plan-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
+                    <span class="icon zume-close"></span>
                 </button>
                 ${b.getLockedStatus("3-month-plan",this.userState)?o`
                             <div class="container-sm">
@@ -656,8 +656,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
 
             </div>
             <div class="reveal full" id="resources-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeResourcesModal}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeResourcesModal}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm">
                     <h1>Resources</h1>
@@ -670,8 +670,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 </div>
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeCommunityModal}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm">
                     <h1>Practitioner Community</h1>
@@ -777,8 +777,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
 
             </div>
             <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearChurchModal}>
-                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearChurchModal}>
+                        <span class="icon zume-close"></span>
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
@@ -1070,8 +1070,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearCommitmentsModal}>
-                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearCommitmentsModal}>
+                        <span class="icon zume-close"></span>
                 </button>
                 <activity-3-month-plan
                     .questions=${jsObject.three_month_plan_questions}
@@ -1180,8 +1180,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button">
-                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
+                        <span class="icon zume-close"></span>
                 </button>
                 <div class="stack-2 host-info mx-2">
                     <div class="switcher gap-1 align-items-center switcher-width-20">
@@ -1500,8 +1500,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                     data-off-canvas
                     data-transition="overlap"
                 >
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                      <span aria-hidden="true">&times;</span>
+                    <button class="close-btn | ms-auto absolute ${this.dir==="rtl"?"left":"right"} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
+                        <span class="icon zume-close"></span>
                     </button>
 
                     <iframe
@@ -1796,8 +1796,8 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                 data-off-canvas
                 data-transition="overlap"
             >
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                  <span aria-hidden="true">&times;</span>
+                <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon zume-close"></span>
                 </button>
 
                 <iframe
@@ -1871,51 +1871,50 @@ var ht=Object.defineProperty;var ut=(i,e,t)=>e in i?ht(i,e,{enumerable:!0,config
                     </div>
                 `:""}
 
-            <nav class="stack | bg-white px-0 text-center | presenter-menu off-canvas ${this.dir==="rtl"?"position-right":"position-left"} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+            <nav class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir==="rtl"?"position-right":"position-left"} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+                <button class="ms-auto close-btn mb-0" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon zume-close"></span>
+                </button>
                 <div class="stack">
-                    <!-- Close button -->
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- Menu -->
+                    <div class="stack">
+                        <!-- Close button -->
 
-                    <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
-                        ${Object.values(this.menu).map(({title:t,submenu:s},n)=>o`
-                            <li>
-                                <a
-                                    class="session-link"
-                                    data-session-number="${n}"
-                                    @click=${this.handleSessionLink}
-                                >
-                                    ${t}
-                                </a>
-                                <ul class="menu vertical nested ${this.lessonIndex===n?"is-active":""}">
-                                    ${s.map(({key:r,title:a,length:l})=>o`
-                                            <a
-                                                class="session-link"
-                                                data-subitem
-                                                href=${`#${r}`}
-                                                @click=${()=>this.handleSubSectionLink(n,r)}
-                                            >
-                                                <span>${a}</span> <span>${l}</span>
-                                            </a>
-                                        `)}
-
-                                </ul>
-                            </li>
-                        `)}
-                    </ul>
-                </div>
-
-                <div class="">
-
-                    <div class="cluster">
-                        <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
-                        <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                            ${this.languageCode}
-                        </button>
-                        <button class="btn light tight outline" @click=${()=>this.switchViews()}>${jsObject.translations.switch_views}</button>
+                        <!-- Menu -->
+                        <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
+                            ${Object.values(this.menu).map(({title:t,submenu:s},n)=>o`
+                                <li>
+                                    <a
+                                        class="session-link"
+                                        data-session-number="${n}"
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        ${t}
+                                    </a>
+                                    <ul class="menu vertical nested ${this.lessonIndex===n?"is-active":""}">
+                                        ${s.map(({key:r,title:a,length:l})=>o`
+                                                <a
+                                                    class="session-link"
+                                                    data-subitem
+                                                    href=${`#${r}`}
+                                                    @click=${()=>this.handleSubSectionLink(n,r)}
+                                                >
+                                                    <span>${a}</span> <span>${l}</span>
+                                                </a>
+                                            `)}
+                                    </ul>
+                                </li>
+                            `)}
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="cluster">
+                            <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
+                            <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                ${this.languageCode}
+                            </button>
+                            <button class="btn light tight outline" @click=${()=>this.switchViews()}>${jsObject.translations.switch_views}</button>
+                        </div>
                     </div>
                 </div>
             </nav>

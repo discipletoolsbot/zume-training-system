@@ -432,12 +432,12 @@ export class DashBoard extends navigator(router(LitElement)) {
                         style="top: ${this.menuOffset}px; height: calc( min( 100%, 100vh ) - ${this.menuOffset}px - var(--s0) );"
                     >
                         <button
-                            class="ms-auto d-block w-2rem dashboard__sidebar-toggle break-large break-medium"
-                            aria-label="Close modal"
+                            class="close-btn ms-auto dashboard__sidebar-toggle break-large break-medium"
+                            aria-label=${jsObject.translations.close}
                             type="button"
                             @click=${this.toggleSidebar}
                         >
-                            <span class="icon zume-close gray-500"></span>
+                            <span class="icon zume-close"></span>
                         </button>
                         <div class="profile-area">
                             <button
@@ -576,8 +576,8 @@ export class DashBoard extends navigator(router(LitElement)) {
                 ${this.renderRoute()}
             </div>
             <div class="stack | reveal tiny card celebration showing | border-none" id="celebration-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <h2 class="h5 text-center bold">${this.celebrationModalContent.title}</h2>
                 <div class="d-flex align-items-center justify-content-between">
@@ -595,8 +595,8 @@ export class DashBoard extends navigator(router(LitElement)) {
 
             </div>
             <div class="reveal full" id="profile-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
@@ -605,8 +605,8 @@ export class DashBoard extends navigator(router(LitElement)) {
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <zume-wizard
                     type=${this.wizardType}
@@ -616,8 +616,8 @@ export class DashBoard extends navigator(router(LitElement)) {
                 ></zume-wizard>
             </div>
             <div class="reveal full" id="activity-3-month-plan-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
+                    <span class="icon zume-close"></span>
                 </button>
                 ${
                     DashBoard.getLockedStatus('3-month-plan', this.userState)
@@ -652,8 +652,8 @@ export class DashBoard extends navigator(router(LitElement)) {
 
             </div>
             <div class="reveal full" id="resources-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeResourcesModal}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeResourcesModal}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm">
                     <h1>Resources</h1>
@@ -666,8 +666,8 @@ export class DashBoard extends navigator(router(LitElement)) {
                 </div>
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.closeCommunityModal}>
-                    <span class="icon zume-close gray-500"></span>
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
+                    <span class="icon zume-close"></span>
                 </button>
                 <div class="container-xsm">
                     <h1>Practitioner Community</h1>

@@ -291,53 +291,52 @@ export class CoursePresenter extends LitElement {
                 ` : ''
             }
 
-            <nav class="stack | bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+            <nav class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+                <button class="ms-auto close-btn mb-0" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon zume-close"></span>
+                </button>
                 <div class="stack">
-                    <!-- Close button -->
-                    <button class="close-button" aria-label="Close menu" type="button" data-close>
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- Menu -->
+                    <div class="stack">
+                        <!-- Close button -->
 
-                    <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
-                        ${Object.values(this.menu).map(({title, submenu}, sessionNumber) => html`
-                            <li>
-                                <a
-                                    class="session-link"
-                                    data-session-number="${sessionNumber}"
-                                    @click=${this.handleSessionLink}
-                                >
-                                    ${title}
-                                </a>
-                                <ul class="menu vertical nested ${this.lessonIndex === sessionNumber ? 'is-active' : ''}">
-                                    ${
-                                        submenu.map(({ key, title, length }) => html`
-                                            <a
-                                                class="session-link"
-                                                data-subitem
-                                                href=${`#${key}`}
-                                                @click=${() => this.handleSubSectionLink(sessionNumber, key)}
-                                            >
-                                                <span>${title}</span> <span>${length}</span>
-                                            </a>
-                                        `)
-                                    }
-
-                                </ul>
-                            </li>
-                        `)}
-                    </ul>
-                </div>
-
-                <div class="">
-
-                    <div class="cluster">
-                        <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
-                        <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
-                            ${this.languageCode}
-                        </button>
-                        <button class="btn light tight outline" @click=${() => this.switchViews()}>${jsObject.translations.switch_views}</button>
+                        <!-- Menu -->
+                        <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
+                            ${Object.values(this.menu).map(({title, submenu}, sessionNumber) => html`
+                                <li>
+                                    <a
+                                        class="session-link"
+                                        data-session-number="${sessionNumber}"
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        ${title}
+                                    </a>
+                                    <ul class="menu vertical nested ${this.lessonIndex === sessionNumber ? 'is-active' : ''}">
+                                        ${
+                                            submenu.map(({ key, title, length }) => html`
+                                                <a
+                                                    class="session-link"
+                                                    data-subitem
+                                                    href=${`#${key}`}
+                                                    @click=${() => this.handleSubSectionLink(sessionNumber, key)}
+                                                >
+                                                    <span>${title}</span> <span>${length}</span>
+                                                </a>
+                                            `)
+                                        }
+                                    </ul>
+                                </li>
+                            `)}
+                        </ul>
+                    </div>
+                    <div class="">
+                        <div class="cluster">
+                            <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
+                            <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+                                ${this.languageCode}
+                            </button>
+                            <button class="btn light tight outline" @click=${() => this.switchViews()}>${jsObject.translations.switch_views}</button>
+                        </div>
                     </div>
                 </div>
             </nav>

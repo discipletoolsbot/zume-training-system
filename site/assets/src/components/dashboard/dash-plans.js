@@ -227,8 +227,8 @@ export class DashPlans extends DashPage {
                 </div>
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
-                <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button" @click=${this.clearCommitmentsModal}>
-                        <img src=${`${jsObject.images_url}/close-button-01.svg`} alt="close button">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearCommitmentsModal}>
+                        <span class="icon zume-close"></span>
                 </button>
                 <activity-3-month-plan
                     .questions=${jsObject.three_month_plan_questions}

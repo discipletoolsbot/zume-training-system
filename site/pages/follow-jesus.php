@@ -336,8 +336,8 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         </div>
 
         <div class="reveal large" id="pieces-wrapper" data-reveal data-v-offset="20">
-            <button class="ms-auto d-block w-2rem" data-close aria-label="Close modal" type="button">
-                <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/close-button-01.svg' ) ?>" alt="close button">
+            <button class="ms-auto close-btn" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
+                <span class="icon zume-close"></span>
             </button>
             <div id="pieces-content"></div>
         </div>

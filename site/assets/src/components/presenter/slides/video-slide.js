@@ -92,8 +92,8 @@ export class VideoSlide extends CourseSlide {
                 data-off-canvas
                 data-transition="overlap"
             >
-                <button class="close-button" aria-label="Close menu" type="button" data-close>
-                  <span aria-hidden="true">&times;</span>
+                <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon zume-close"></span>
                 </button>
 
                 <iframe

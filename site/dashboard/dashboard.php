@@ -266,6 +266,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'bimonthly' => __( 'Twice a month', 'zume' ),
             'monthly' => __( 'Once a month', 'zume' ),
             'question_when_will_you_start' => __( 'When do you plan to start?', 'zume' ),
+            'close' => __( 'Close', 'zume' ),
         ];
     }
 
