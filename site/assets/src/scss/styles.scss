@@ -100,16 +100,18 @@ ul.bullets {
 
 ul[role="list"] {
   li {
-      text-indent: -1.7em;
       padding-left: 1.7em;
       padding-bottom: .5em;
+      position: relative;
   }
 
   li:before {
     content: "●";
     font-size: 1.5em;
-    padding-inline-end: 0.7rem;
-    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 0.9;
   }
   &.check-list li:before {
     font-family: 'Zume-Icons-Square';
