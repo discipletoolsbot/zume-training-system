@@ -4,7 +4,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 class Zume_Activites_3monthplan_Html extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = '3monthplan_html';
 
     private static $_instance = null;
@@ -24,7 +24,7 @@ class Zume_Activites_3monthplan_Html extends Zume_Activites
         <div class="activity-page">
             <div class="container-md">
                 <h1 class="activity-title"><?php echo esc_html__( '3-Month Plan', 'zume' ) ?></h1>
-                <a class="f-0" href="<?php site_url() ?>/zume_activities/3monthplan"><?php echo esc_html__( 'Switch to Interactive Version', 'zume' ) ?></a>
+                <a class="f-0" href="<?php site_url() ?>/activities/3monthplan"><?php echo esc_html__( 'Switch to Interactive Version', 'zume' ) ?></a>
             </div>
             <hr>
             <div class="container-md activity-content">

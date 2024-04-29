@@ -166,10 +166,10 @@ function zume_checkin_dashboard_url() {
     return zume_url( 'checkin-dashboard' );
 }
 function zume_invite_friends_url() {
-    return zume_url( 'zume_app/friend_invite' );
+    return zume_url( 'app/friend_invite' );
 }
 function zume_invite_training_url() {
-    return zume_url( 'zume_app/plan_invite' );
+    return zume_url( 'app/plan_invite' );
 }
 
 function zume_training_url( $current_language = null ) {

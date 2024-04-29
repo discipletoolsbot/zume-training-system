@@ -8,10 +8,10 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'mobile-app';
     public $lang = 'en';
-    public static $token = 'zume_app_mobile_app';
+    public static $token = 'app_mobile_app';
 
     private static $_instance = null;
     public static function instance() {
@@ -82,7 +82,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
         $lang_code = zume_current_language();
         $google_locales = zume_google_locales();
-        $apple_codes = zume_apple_locales( 'codes' );
+        $apple_codes = apple_locales( 'codes' );
 
         $google_lang = $lang_code;
         if ( !in_array( $lang_code, $google_locales ) ) {

@@ -33,9 +33,9 @@ class Zume_Training_Menu_Post_Type
         $this->post_type = 'zume_page';
         $this->singular = 'Zume Page';
         $this->plural = 'Zume Pages';
-        $this->root = 'zume_app';
+        $this->root = 'app';
         $this->type = 'page';
-        $this->meta_key = 'zume_app_page_magic_key';
+        $this->meta_key = 'app_page_magic_key';
         $this->args = $args;
         $this->taxonomies = $taxonomies;
 

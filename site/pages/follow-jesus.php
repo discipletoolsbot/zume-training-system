@@ -8,11 +8,11 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'how-to-follow-jesus';
     public $lang = 'en_US';
     public $lang_code = 'en';
-    public static $token = 'zume_app_how_to_follow_jesus';
+    public static $token = 'app_how_to_follow_jesus';
     private $has_pieces_pages = false;
 
     private static $_instance = null;

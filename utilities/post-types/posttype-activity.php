@@ -540,7 +540,7 @@ class Zume_Training_Activity_Post_Type
             );
         }
 
-        return apply_filters( 'zume_activities_fields_settings', $fields );
+        return apply_filters( 'activities_fields_settings', $fields );
     } // End get_custom_fields_settings()
 
     /**

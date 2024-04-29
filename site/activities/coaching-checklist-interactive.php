@@ -4,7 +4,7 @@ if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 class Zume_Activites_Coaching_Interactive extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'coachingchecklist';
 
     private static $_instance = null;

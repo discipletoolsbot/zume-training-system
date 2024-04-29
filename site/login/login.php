@@ -11,10 +11,10 @@ class Zume_Training_Login extends Zume_Magic_Page {
     public $magic = false;
     public $parts = false;
     public $page_title = 'User Login';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'login';
     public $lang = 'en';
-    public static $token = 'zume_app_login';
+    public static $token = 'app_login';
     public $url;
 
     private static $_instance = null;

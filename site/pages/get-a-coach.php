@@ -8,10 +8,10 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'get-a-coach';
     public $lang = 'en';
-    public static $token = 'zume_app_get_a_coach';
+    public static $token = 'app_get_a_coach';
 
     private static $_instance = null;
     public static function instance() {

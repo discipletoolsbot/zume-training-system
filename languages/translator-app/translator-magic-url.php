@@ -13,10 +13,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training Translator';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'translator';
     public $user;
-    public static $token = 'zume_app_translator';
+    public static $token = 'app_translator';
     public $zume_languages;
     public $language_code;
     public $language;
@@ -229,7 +229,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     console.log(e.target.value)
                     let lang = e.target.value;
                     let base_url = window.location.origin;
-                    let magic_url = 'zume_app/translator/';
+                    let magic_url = 'app/translator/';
                     let new_url = base_url + '/' + lang + '/' + magic_url;
                     let params = window.location.search;
                     if ( params ) {
@@ -286,7 +286,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <?php
                     foreach( $tabs as $tab_name => $class ) {
                         ?>
-                        <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/zume_app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
+                        <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
                         <?php
                     }
                     ?>
@@ -755,11 +755,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <tr>
                 <td colspan="2">
                 <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
-                <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?></a>
+                <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?></a>
                 </td>
                 <td colspan="2">
                     <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
-                    <br><a href="<?php echo site_url() . '/zume_app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/zume_app/message/?m='.$pid.'&l='.$this->language_code ?></a>
+                    <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l='.$this->language_code ?></a>
                 </td>
             </tr>
             <tr>
@@ -1002,11 +1002,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <tr>
                 <td colspan="2">
                     <?php echo $messages_english[$pid]['post_title'] ?? '' ?><br />
-                    <a href="<?php echo site_url() . '/en/zume_activities/' . $messages_english[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/en/zume_activities/' . $messages_english[$pid]['post_title'] ?></a>
+                    <a href="<?php echo site_url() . '/en/activities/' . $messages_english[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/en/activities/' . $messages_english[$pid]['post_title'] ?></a>
                 </td>
                 <td colspan="2">
                     <br />
-                    <a href="<?php echo site_url() . '/' . $this->language_code . '/zume_activities/' . $messages_other_language[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/' . $this->language_code . '/zume_activities/' . $messages_other_language[$pid]['post_title'] ?></a>
+                    <a href="<?php echo site_url() . '/' . $this->language_code . '/activities/' . $messages_other_language[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/' . $this->language_code . '/activities/' . $messages_other_language[$pid]['post_title'] ?></a>
                 </td>
             </tr>
             <tr>
@@ -1311,7 +1311,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         'genmapping',
                     ];
                     foreach( $activities as $item ) {
-                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code.'&a='.$item;
+                        $url = site_url() . '/app/qr/?l='.$this->language_code.'&a='.$item;
                         $url_short = 'l='.$this->language_code.'&a='.$item;
                         $qr_url = zume_create_qr_url( $url );
                         ?>
@@ -1344,7 +1344,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             continue;
                         }
                         $id =  intval( $item['key'] );
-                        $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&v='. $id;
+                        $url = site_url() . '/app/qr/?l='.$this->language_code. '&v='. $id;
                         $url_short = 'l='.$this->language_code.'&v='.$id;
                         $qr_url = zume_create_qr_url( $url );
                         ?>
@@ -1414,7 +1414,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     5451 => 'Intensive 5', // 'set_c_5', // Intensive 5
                 ];
                 foreach( $list as $i => $v ) {
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&c='. $i;
+                    $url = site_url() . '/app/qr/?l='.$this->language_code. '&c='. $i;
                     $url_short = 'l='.$this->language_code. '&c='. $i;
                     $qr_url = zume_create_qr_url( $url );
                     ?>
@@ -1450,7 +1450,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         continue;
                     }
                     $id =  intval( $item['key'] );
-                    $url = site_url() . '/zume_app/qr/?l='.$this->language_code. '&s='. $item['script'];
+                    $url = site_url() . '/app/qr/?l='.$this->language_code. '&s='. $item['script'];
                     $url_short = 'l='.$this->language_code.'&s='.$item['script'];
                     $qr_url = zume_create_qr_url( $url );
                     ?>

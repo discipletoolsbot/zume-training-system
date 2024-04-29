@@ -8,10 +8,10 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'kitchen-sink';
     public $lang = 'en';
-    public static $token = 'zume_app_kitchen_sink';
+    public static $token = 'app_kitchen_sink';
 
     private static $_instance = null;
     public static function instance() {

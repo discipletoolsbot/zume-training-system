@@ -10,7 +10,7 @@ class Zume_Activites extends Zume_Magic_Page
     public $language_code = 'en';
 
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'base';
     public static $token = 'zume_activity_base';
 
@@ -121,7 +121,7 @@ Zume_Activites::instance();
 class Zume_Activites_SOAPS extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - SOAPS';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'soaps';
     public static $token = 'zume_activity_soaps';
 
@@ -142,7 +142,7 @@ Zume_Activites_SOAPS::instance();
 class Zume_Activites_Accountability extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Accountability';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'accountability';
 
     private static $_instance = null;
@@ -162,7 +162,7 @@ Zume_Activites_Accountability::instance();
 class Zume_Activites_Prayer_Cycle extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Prayer Cycle';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'prayercycle';
 
     private static $_instance = null;
@@ -182,7 +182,7 @@ Zume_Activites_Prayer_Cycle::instance();
 class Zume_Activites_Sharegospel extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Share the Gospel';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'sharegospel';
 
     private static $_instance = null;
@@ -202,7 +202,7 @@ Zume_Activites_Sharegospel::instance();
 class Zume_Activites_Sharetestimony extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Share Testimony';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'sharetestimony';
 
     private static $_instance = null;
@@ -222,7 +222,7 @@ Zume_Activites_Sharetestimony::instance();
 class Zume_Activites_Supper extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Lords Supper';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'lordssupper';
 
     private static $_instance = null;
@@ -242,7 +242,7 @@ Zume_Activites_Supper::instance();
 class Zume_Activites_Bless extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Blessing Prayer';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'blessprayer';
 
     private static $_instance = null;
@@ -262,7 +262,7 @@ Zume_Activites_Bless::instance();
 class Zume_Activites_33group extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - 3/3 Group Meeting';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = '33group';
 
     private static $_instance = null;
@@ -282,7 +282,7 @@ Zume_Activites_33group::instance();
 class Zume_Activites_Prayerwalk extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'prayerwalking';
 
     private static $_instance = null;
@@ -302,7 +302,7 @@ Zume_Activites_Prayerwalk::instance();
 class Zume_Activites_Peermentoring extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'peermentoring';
 
     private static $_instance = null;
@@ -322,7 +322,7 @@ Zume_Activites_Peermentoring::instance();
 class Zume_Activites_4fields extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = '4fields';
 
     private static $_instance = null;
@@ -342,7 +342,7 @@ Zume_Activites_4fields::instance();
 class Zume_Activites_Genmap extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_activities';
+    public $root = 'activities';
     public $type = 'genmapping';
 
     private static $_instance = null;

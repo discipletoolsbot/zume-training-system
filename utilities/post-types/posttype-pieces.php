@@ -32,9 +32,9 @@ class Zume_Training_Pieces_Post_Type
         $this->post_type = 'zume_pieces';
         $this->singular = 'Zume Pieces';
         $this->plural = 'Zume Pieces';
-        $this->root = 'zume_app';
+        $this->root = 'app';
         $this->type = 'pieces';
-        $this->meta_key = 'zume_app_pieces_magic_key';
+        $this->meta_key = 'app_pieces_magic_key';
         $this->args = $args;
         $this->taxonomies = $taxonomies;
 

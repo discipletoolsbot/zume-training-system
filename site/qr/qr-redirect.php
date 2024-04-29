@@ -11,11 +11,11 @@ class Zume_QR_Redirect
 {
     public $development_display = false;
     public $page_title = 'Zume Redirect';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'qr';
     public $root_url = 'https://zume.training/';
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
-    public $url_token = 'zume_app/qr';
+    public $url_token = 'app/qr';
     public $type_name = 'Zume Redirect';
     public $post_type = 'contacts';
     public $site_url = '';
@@ -60,7 +60,7 @@ class Zume_QR_Redirect
         /**
          * By Post ID
          *
-         * https://zume.training/zume_app/qr/?p=20740
+         * https://zume.training/app/qr/?p=20740
          * Returns the permalink url with the language for the post page.
          */
         if ( isset( $_GET['p'] ) ) {
@@ -89,12 +89,12 @@ class Zume_QR_Redirect
          * By Video ID (Legacy)
          * (legacy support for zume4 books)
          *
-         * https://zume.training/zume_app/qr/?v=2342343
+         * https://zume.training/app/qr/?v=2342343
          */
         else if( isset( $_GET['v'] ) && !isset( $_GET['l'] ) ) {
 //            dt_write_log( 'Video: ' . $_GET['v'] );
 
-            $link = site_url() . '/zume_app/video/?id=';
+            $link = site_url() . '/app/video/?id=';
             $video_id = esc_attr( $_GET['v'] );
 
             $link = $link . $video_id;
@@ -110,7 +110,7 @@ class Zume_QR_Redirect
         /**
          * By Language Code and Video ID
          *
-         * https://zume.training/zume_app/qr/?l=en&v=33
+         * https://zume.training/app/qr/?l=en&v=33
          */
         else if ( isset( $_GET['l'], $_GET['v'] ) ) {
 //            dt_write_log( 'Video Language: ' . $_GET['l'] . ' ' . $_GET['v'] );
@@ -132,7 +132,7 @@ class Zume_QR_Redirect
                 }
             }
 
-            $link = $this->root_url . 'zume_app/video/?id=' . $video_id;
+            $link = $this->root_url . 'app/video/?id=' . $video_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';
@@ -145,7 +145,7 @@ class Zume_QR_Redirect
         /**
          * By Language code and Download ID
          *
-         * https://zume.training/zume_app/qr/?l=en&d=33
+         * https://zume.training/app/qr/?l=en&d=33
          * Returns the download link according to the language code and download id.
          */
         else if( isset( $_GET['l'], $_GET['d'] ) ) {
@@ -182,7 +182,7 @@ class Zume_QR_Redirect
          * @todo maybe remove. tools strategy changeed, so this function not needed.
          * By Language Code and Tools
          *
-         * https://zume.training/zume_app/qr/?l=en&t=123
+         * https://zume.training/app/qr/?l=en&t=123
          */
         else if ( isset( $_GET['l'], $_GET['t'] ) ) {
 //            dt_write_log( 'Resource: ' . $_GET['l'] . ' ' . $_GET['t'] );
@@ -217,7 +217,7 @@ class Zume_QR_Redirect
         /**
          * By Language Code and Activity ID
          *
-         * https://zume.training/zume_app/qr/?l=en&a=4
+         * https://zume.training/app/qr/?l=en&a=4
          */
         else if ( isset( $_GET['l'], $_GET['a'] ) ) {
 //            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['a'] );
@@ -225,7 +225,7 @@ class Zume_QR_Redirect
             $activity_id = esc_attr( $_GET['a'] );
             $language_slug = esc_attr( $_GET['l'] );
 
-            $link = $this->root_url . $language_slug . '/zume_activities/' . $activity_id;
+            $link = $this->root_url . $language_slug . '/activities/' . $activity_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';
@@ -238,7 +238,7 @@ class Zume_QR_Redirect
         /**
          * By Language Code and Video Script ID
          *
-         * https://zume.training/zume_app/qr/?l=en&s=4
+         * https://zume.training/app/qr/?l=en&s=4
          */
         else if ( isset( $_GET['l'], $_GET['s'] ) ) {
 //            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['s'] );
@@ -246,7 +246,7 @@ class Zume_QR_Redirect
             $script_id = esc_attr( $_GET['s'] );
             $language_code = esc_attr( $_GET['l'] );
 
-            $link = $this->root_url . $language_code . '/zume_app/script/?s=' . $script_id;
+            $link = $this->root_url . $language_code . '/app/script/?s=' . $script_id;
 
             if ( $this->development_display ) {
                 echo '<span style="font-size: 3em;">' . $link . '</span>';
@@ -259,7 +259,7 @@ class Zume_QR_Redirect
         /**
          * By Language Code and Checkin ID
          *
-         * https://zume.training/zume_app/qr/?l=en&a=4
+         * https://zume.training/app/qr/?l=en&a=4
          */
         else if ( isset( $_GET['l'], $_GET['c'] ) ) {
 //            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['c'] );
@@ -280,7 +280,7 @@ class Zume_QR_Redirect
         /**
          * By Language Code and Other Pages
          *
-         * https://zume.training/zume_app/qr/?l=en&o=coach
+         * https://zume.training/app/qr/?l=en&o=coach
          */
         else if ( isset( $_GET['l'], $_GET['o'] ) ) {
 //            dt_write_log( 'Activity: ' . $_GET['l'] . ' ' . $_GET['o'] );
@@ -345,14 +345,14 @@ class Zume_QR_Redirect
 
                     <strong>Main redirect examples:</strong>
                     <ul>
-                        <li>Redirect by Language Code & Video ID: <a href="' . $this->root_url . 'zume_app/qr/?l=en&v=33">' . $this->root_url . 'zume_app/qr/?l=en&v=33</a></li>
-                        <li>Redirect by Language Code & Download ID: <a href="' . $this->root_url . 'zume_app/qr/?l=en&d=33">' . $this->root_url . 'zume_app/qr/?l=en&d=33</a></li>
-                        <li>Redirect by Language Code & Tool ID: <a href="' . $this->root_url . 'zume_app/qr/?l=en&t=4">' . $this->root_url . 'zume_app/qr/?l=en&t=4</a></li>
+                        <li>Redirect by Language Code & Video ID: <a href="' . $this->root_url . 'app/qr/?l=en&v=33">' . $this->root_url . 'app/qr/?l=en&v=33</a></li>
+                        <li>Redirect by Language Code & Download ID: <a href="' . $this->root_url . 'app/qr/?l=en&d=33">' . $this->root_url . 'app/qr/?l=en&d=33</a></li>
+                        <li>Redirect by Language Code & Tool ID: <a href="' . $this->root_url . 'app/qr/?l=en&t=4">' . $this->root_url . 'app/qr/?l=en&t=4</a></li>
                     </ul>
                     <strong>Direct link examples (deprecated, do not use)</strong>
                     <ul>
-                        <li>Redirect by POST ID : <a href="' . $this->root_url . 'zume_app/qr/?p=20740">' . $this->root_url . 'zume_app/qr/?p=20740</a></li>
-                        <li>Redirect by Video ID : <a href="' . $this->root_url . 'zume_app/qr/?v=247062938">' . $this->root_url . 'zume_app/qr/?v=247062938</a></li>
+                        <li>Redirect by POST ID : <a href="' . $this->root_url . 'app/qr/?p=20740">' . $this->root_url . 'app/qr/?p=20740</a></li>
+                        <li>Redirect by Video ID : <a href="' . $this->root_url . 'app/qr/?v=247062938">' . $this->root_url . 'app/qr/?v=247062938</a></li>
                     </ul>
 
                 </div>
@@ -367,14 +367,14 @@ class Zume_QR_Redirect
 
         $training_items = zume_training_items();
         foreach( $training_items as $item ) {
-            $link = site_url() . '/zume_app/qr/?l=' . $language_slug  . '&v='. (int) $item['key'];
+            $link = site_url() . '/app/qr/?l=' . $language_slug  . '&v='. (int) $item['key'];
             echo '<a href="'.$link.'">'.$link.'</a>' . PHP_EOL;
         }
 
         echo PHP_EOL . PHP_EOL;
 
         foreach( $training_items as $item ) {
-            $link = site_url() . '/zume_app/qr/?l=' . $language_slug  . '&d='. (int) $item['key'];
+            $link = site_url() . '/app/qr/?l=' . $language_slug  . '&d='. (int) $item['key'];
             echo '<a href="'.$link.'">'.$link.'</a>' . PHP_EOL;
         }
 

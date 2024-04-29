@@ -10,9 +10,9 @@ class Zume_Messages extends Zume_Magic_Page
     public $language_code = 'en';
 
     public $page_title = 'Zúme Activity';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'message';
-    public static $token = 'zume_app_message';
+    public static $token = 'app_message';
 
     private static $_instance = null;
     public static function instance() {

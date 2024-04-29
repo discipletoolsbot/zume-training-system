@@ -8,10 +8,10 @@ class Zume_QR_Video extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'video';
     public $lang = 'en';
-    public static $token = 'zume_app_video';
+    public static $token = 'app_video';
 
     private static $_instance = null;
     public static function instance() {
@@ -73,7 +73,7 @@ class Zume_QR_Video extends Zume_Magic_Page
         }
         $vimeo_id = sanitize_text_field( wp_unslash( $_GET['id'] ) );
         // https://zume.training/wp-content/themes/zume-training/video.php?id=551339739
-        // https://zume.training/zume_app/video/?id=551339739
+        // https://zume.training/app/video/?id=551339739
 
         // @todo logo video load event in movement log
 

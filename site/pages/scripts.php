@@ -8,10 +8,10 @@ class Zume_Scripts extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Script';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'script';
     public $lang;
-    public static $token = 'zume_app_script';
+    public static $token = 'app_script';
 
     private static $_instance = null;
     public static function instance() {

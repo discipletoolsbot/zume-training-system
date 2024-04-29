@@ -280,7 +280,7 @@ class Zume_Scripts_Post_Type
     public function load_scripts_meta_box() {
         global $post_id;
 
-        echo 'Scripts content must be edited in <a href="'. site_url().'/zume_app/translator">zume_app/translator</a><br><hr>';
+        echo 'Scripts content must be edited in <a href="'. site_url().'/app/translator">app/translator</a><br><hr>';
 
         // make sure fields exist
         $fields = get_post_custom( $post_id );

@@ -280,7 +280,7 @@ class Zume_Downloads_Post_Type
     public function load_downloads_meta_box() {
         global $post_id;
 
-        echo 'Scripts content must be edited in <a href="'. site_url().'/zume_app/translator">zume_app/translator</a><br><hr>';
+        echo 'Scripts content must be edited in <a href="'. site_url().'/app/translator">app/translator</a><br><hr>';
         $this->meta_box_content( 'downloads' ); // prints
 
         // make sure fields exist

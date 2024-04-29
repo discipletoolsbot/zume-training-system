@@ -8,10 +8,10 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'friend_invite';
     public $lang = 'en';
-    public static $token = 'zume_app_friend_invite';
+    public static $token = 'app_friend_invite';
 
     private static $_instance = null;
     public static function instance() {

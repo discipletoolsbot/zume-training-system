@@ -8,10 +8,10 @@ class Zume_Training_Home extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'home';
     public $lang = 'en_US';
-    public static $token = 'zume_app_home';
+    public static $token = 'app_home';
 
     private static $_instance = null;
     public static function instance() {

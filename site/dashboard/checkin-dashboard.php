@@ -8,12 +8,12 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'checkin-dashboard';
     public $lang = 'en_US';
     public $lang_code = 'en';
     public $base_url = '';
-    public static $token = 'zume_app_checkin_dashboard';
+    public static $token = 'app_checkin_dashboard';
 
     private static $_instance = null;
     public static function instance() {

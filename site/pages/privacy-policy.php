@@ -8,10 +8,10 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training - Privacy Policy';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'privacy';
     public $lang = 'en';
-    public static $token = 'zume_app_privacy';
+    public static $token = 'app_privacy';
 
     private static $_instance = null;
     public static function instance() {

@@ -10,8 +10,8 @@ function zume_content( $lang_code = 'en') {
 
     $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/' . $lang_code . '/';
     $checkin_base_url = site_url() . '/' . $lang_code . '/checkin/?code=';
-    $activity_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&a=';
-    $other_page_base_url = trailingslashit( site_url() ) . 'zume_app/qr/?l=' . $lang_code . '&o=';
+    $activity_base_url = trailingslashit( site_url() ) . 'app/qr/?l=' . $lang_code . '&a=';
+    $other_page_base_url = trailingslashit( site_url() ) . 'app/qr/?l=' . $lang_code . '&o=';
 
     $content = [
         /***************************************************************************************************************

@@ -35,7 +35,7 @@ export class VideoSlide extends CourseSlide {
 
         const url = new URL(location.href)
         const scriptUrl = new URL(url.origin)
-        scriptUrl.pathname = [ lang_code, 'zume_app', 'script' ].join('/')
+        scriptUrl.pathname = [ lang_code, 'app', 'script' ].join('/')
         scriptUrl.searchParams.append('s', scriptId)
 
         this.scriptUrl = scriptUrl.href

@@ -8,11 +8,11 @@ class Zume_Training_Wizard extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Zúme Training';
-    public $root = 'zume_app';
+    public $root = 'app';
     public $type = 'wizard';
     public $wizard_type = '';
     public $lang = 'en_US';
-    public static $token = 'zume_app_wizard';
+    public static $token = 'app_wizard';
 
     private static $_instance = null;
     public static function instance() {
