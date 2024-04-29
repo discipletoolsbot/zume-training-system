@@ -5725,7 +5725,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 return $user_id;
             }
 
-            $row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM wp_dt_post_user_meta WHERE id = %d AND user_id = %d", $params['id'], $user_id ), ARRAY_A );
+            $row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$table_prefix}dt_post_user_meta WHERE id = %d AND user_id = %d", $params['id'], $user_id ), ARRAY_A );
             $data = maybe_unserialize( $row['meta_value'] );
             $data['status'] = 'closed';
             $data = maybe_serialize( $data );
