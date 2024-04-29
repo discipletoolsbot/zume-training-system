@@ -448,7 +448,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                  <table style="vertical-align: text-top;">
                     <tbody>
                     <?php
-                        $activities = list_zume_activites( $language['code'] );
+                        $activities = list_zume_activities( $language['code'] );
                         foreach( $activities as $item ) {
                             ?>
                             <tr>
@@ -992,8 +992,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
-        $messages_english = list_zume_activites( 'en' );
-        $messages_other_language = list_zume_activites( $this->language_code );
+        $messages_english = list_zume_activities( 'en' );
+        $messages_other_language = list_zume_activities( $this->language_code );
 
         ob_start();
         foreach( $messages_english as $pid => $message ) {
@@ -1204,61 +1204,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
             </div> <!-- wrapping div -->
 
-            <?php
-            global $zume_languages_full_list;
-            $list = $zume_languages_full_list;
-            ksort( $list );
-            ?>
-            <div class="center" style="padding: 3em 0; border-bottom: 1px solid lightgrey;">
-                <h1>All Languages</h1>
-            </div>
-            <div style="width:10%;float:left;padding:1em; border-right: 1px solid lightgrey;">
-                <h3>Codes</h3><hr></hr>
-                 <?php
-                    foreach( $list as $language ) {
-                        ?>
-                        <strong><?php echo $language['code'] ?></strong><br>
-                        <?php
-                    }
-                ?>
-            </div>
-            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
-                <h3>Global List</h3><hr></hr>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Language</th>
-                            <th>Code</th>
-                            <th>Locale</th>
-                            <th style="width:5%">Active</th>
-                            <th style="width:5%">Selector</th>
-                            <th style="width:5%">Pieces</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        foreach( $zume_languages_full_list as $language ) {
-                            ?>
-                            <tr>
-                                <td><?php echo $language['name'] ?></td>
-                                <td><?php echo $language['code'] ?></td>
-                                <td><?php echo $language['locale'] ?></td>
-                                <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
-                                <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
-                                <td><?php echo ( $language['feature_flags']['pieces_pages'] ) ? 'Yes' : 'No' ?></td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                    </tbody>
-                </table>
-            </div>
-            <div style="width:40%;float:left;padding:1em;border-right: 1px solid lightgrey;">
-                <h3>Weblate</h3><hr></hr>
-                <a href="https://translate.disciple.tools/engage/zume-training/">
-                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
-                </a>
-            </div>
+
         <?php
     }
     public function qr_codes() {
@@ -1533,7 +1479,7 @@ if (!function_exists('list_zume_downloads')) {
     }
 }
 if (!function_exists('list_zume_scripts')) {
-    function list_zume_scripts($language_code)
+    function list_zume_scripts( $language_code )
     {
         global $wpdb;
 
@@ -1554,8 +1500,8 @@ if (!function_exists('list_zume_scripts')) {
         return $results;
     }
 }
-if (!function_exists('list_zume_activites')) {
-    function list_zume_activites($language_code)
+if (!function_exists('list_zume_activities')) {
+    function list_zume_activities( $language_code )
     {
         global $wpdb;
 
