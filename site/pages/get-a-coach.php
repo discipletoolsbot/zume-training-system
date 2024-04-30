@@ -97,7 +97,7 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
                     <div class="stack-1">
                         <h2 class="brand h3 uppercase d-flex align-items-center gap-1"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/coach-2guys.svg' ) ?>" class="h-5rem" /><?php echo esc_html__( 'Coaches', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Our network of volunteer coaches are people like you, people who are passionate about loving God, loving outhers, and obeying the Greate Commision.', 'zume' ) ?></p>
-                        <p><?php echo esc_html__( 'A coach is someone who will come alongside you as you implement the Zume tools and training.', 'zume' ) ?></p>
+                        <p><?php echo esc_html__( 'A coach is someone who will come alongside you as you implement the Zúme tools and training.', 'zume' ) ?></p>
                     </div>
                     <div class="stack-2">
                         <div class="stack-1">

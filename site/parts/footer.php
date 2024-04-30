@@ -51,7 +51,7 @@
         </div>
 
         <div class="cluster | justify-content-between gapx-4 gapy-2 | footer-links">
-            <span class="copyright">&copy; 2023 Zume. All rights reserved.</span>
+            <span class="copyright">&copy; 2023 Zúme. All rights reserved.</span>
             <div class="cluster | s-1 justify-flex-end f-0" role="list">
                 <a href="#" class="link-light" role="listitem">
                     <div class="icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/facebook.svg' ?></div>

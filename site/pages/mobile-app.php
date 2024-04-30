@@ -130,9 +130,9 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
             <div class="cover-page">
                 <div class="switcher" data-reverse>
                     <div class="stack-2 | align-items-stretch">
-                        <h1 class=""><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zume App.', 'zume' ) ?></h1>
+                        <h1 class=""><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zúme App.', 'zume' ) ?></h1>
                         <div>
-                            <h2 class="h5"><?php echo esc_html__( 'Zume Training App', 'zume' ) ?></h2>
+                            <h2 class="h5"><?php echo esc_html__( 'Zúme Training App', 'zume' ) ?></h2>
                             <ul>
                                 <li><?php echo esc_html__( 'Access the full training wherever you go', 'zume' ) ?></li>
                             </ul>

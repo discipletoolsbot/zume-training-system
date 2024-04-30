@@ -128,7 +128,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 <div class="cover-page container-xsm">
                     <div class="center">
                         <div class="stack">
-                            <h1 class="text-center"><?php echo esc_html__( 'Zume Course Presenter', 'zume' ) ?></h1>
+                            <h1 class="text-center"><?php echo esc_html__( 'Zúme Course Presenter', 'zume' ) ?></h1>
                             <h2 class="h3 brand text-center"><?php echo esc_html__( 'Scripts are off', 'zume' ) ?></h2>
                             <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
                             <?php /* TODO: Generate/create list of language names+codes that have translated course slides
@@ -157,7 +157,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
                                     /* TODO: get the correct link for the slide download for this language code */
                                     ?>
-                                    <li><a href="#"><?php echo esc_html( sprintf( __( 'Zume Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
+                                    <li><a href="#"><?php echo esc_html( sprintf( __( 'Zúme Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
                                 <?php } ?>
                                 </ul>
                             <?php else : ?>

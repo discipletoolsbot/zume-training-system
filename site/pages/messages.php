@@ -123,6 +123,14 @@ class Zume_Messages extends Zume_Magic_Page
                                 padding: .5em;
                             }
                             #zmail .zmail-header {}
+                            #zmail .zmail-footer {
+                                padding: 1em .5em;
+                                background-color: #f5f5f5;
+                                border-top: 1px solid #ccc;
+                                font-size: .8em;
+                                text-align: center;
+                            }
+
                             #zmail .zmail-topbar {
                                 background-color: #008cc7;
                                 color: white;
@@ -187,6 +195,12 @@ class Zume_Messages extends Zume_Magic_Page
                             </header>
                             <div class="zmail-body">
                                 <?php echo $message['body'] ?>
+                            </div>
+                            <div class="zmail-footer-divider"></div>
+                            <div class="zmail-footer">
+                                <a href="">Go to Zúme Dashboard</a><br>
+                                <a href="">Update Communication Preferences</a><br>
+                                <span>Zúme Training exists to saturate the globe with multiplying disciples in our generation.</span>
                             </div>
                         </div> <!-- activity page -->
                     </body>

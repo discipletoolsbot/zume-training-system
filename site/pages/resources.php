@@ -100,7 +100,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
                         <?php echo esc_html__( 'Training Guidebook', 'zume' ) ?>
                     </h2>
                     <p>
-                        <?php echo esc_html__( 'Zume Training is now available in a complete workbook. All the concepts, tools, discussion questions and challenges from the training now in the palm of your hands. QR codes for every session give you access to all the video content as well!', 'zume' ) ?>
+                        <?php echo esc_html__( 'Zúme Training is now available in a complete workbook. All the concepts, tools, discussion questions and challenges from the training now in the palm of your hands. QR codes for every session give you access to all the video content as well!', 'zume' ) ?>
                     </p>
                 </div>
 
@@ -171,9 +171,9 @@ class Zume_Training_Resources extends Zume_Magic_Page
         <div class="container-md py-2">
             <div class="switcher" data-reverse>
                 <div class="stack-1 | align-items-stretch">
-                    <h2 class="h3 brand"><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zume App.', 'zume' ) ?></h2>
+                    <h2 class="h3 brand"><?php echo esc_html__( 'Empowering Disciples. Anytime... Anywhere with the Zúme App.', 'zume' ) ?></h2>
                     <div>
-                        <h2 class="h5"><?php echo esc_html__( 'Zume Training App', 'zume' ) ?></h2>
+                        <h2 class="h5"><?php echo esc_html__( 'Zúme Training App', 'zume' ) ?></h2>
                         <ul>
                             <li><?php echo esc_html__( 'Access the full training wherever you go', 'zume' ) ?></li>
                         </ul>

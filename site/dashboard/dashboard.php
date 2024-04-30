@@ -172,7 +172,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'language' => __( 'Language', 'zume' ),
             'save' => __( 'Save', 'zume' ),
             'edit_profile' => __( 'Edit Profile', 'zume' ),
-            'share_title' => __( 'Check out this Zume concept', 'zume' ),
+            'share_title' => __( 'Check out this Zúme concept', 'zume' ),
             'preview' => __( 'Preview', 'zume' ),
             'add_commitments' => sprintf( __( 'Add new %s', 'zume' ), __( 'Commitment', 'zume' ) ),
             'copy_link' => __( 'Copy Link', 'zume' ),

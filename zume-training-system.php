@@ -67,7 +67,7 @@ add_action( 'after_setup_theme', 'zume_training', 15 );
 
 //register the D.T Plugin
 add_filter( 'dt_plugins', function ( $plugins ){
-    $plugin_data = get_file_data( __FILE__, [ 'Version' => 'Version', 'Plugin Name' => 'Zume Training' ], false );
+    $plugin_data = get_file_data( __FILE__, [ 'Version' => 'Version', 'Plugin Name' => 'Zúme Training' ], false );
     $plugins['zume-coaching'] = [
         'plugin_url' => trailingslashit( plugin_dir_url( __FILE__ ) ),
         'version' => $plugin_data['Version'] ?? null,

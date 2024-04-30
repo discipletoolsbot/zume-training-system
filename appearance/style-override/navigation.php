@@ -109,7 +109,7 @@ class Zume_Training_Navigation
             ],
             [
                 'link' => esc_url( site_url( '/contacts/' ) ),
-                'label' => esc_html__( 'My Zume', 'zume' ),
+                'label' => esc_html__( 'My Zúme', 'zume' ),
                 'hidden' => false,
                 'submenu' => [
                     'contacts' => [

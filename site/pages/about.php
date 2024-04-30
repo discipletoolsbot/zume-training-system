@@ -84,7 +84,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
         <div class="container-md stack-2 center | page">
 
-            <h1 class="text-center"><?php echo esc_html__( 'What is Zume Training?', 'zume' ) ?></h1>
+            <h1 class="text-center"><?php echo esc_html__( 'What is Zúme Training?', 'zume' ) ?></h1>
 
             <div class="center stack-2">
                 <p>
@@ -92,7 +92,7 @@ class Zume_Training_About extends Zume_Magic_Page
                 </p>
             </div>
 
-            <h2 class="brand text-center bold"><?php echo esc_html__( 'Zume Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></h2>
+            <h2 class="brand text-center bold"><?php echo esc_html__( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></h2>
 
             <div class="switcher align-items-center">
                 <div class="stack-3">
@@ -159,7 +159,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
         <div class="page bg-gray-100">
             <div class="center container-md stack-3">
-                <h2 class="brand text-center"><?php echo esc_html__( 'How does Zume Training Work?', 'zume' ) ?></h2>
+                <h2 class="brand text-center"><?php echo esc_html__( 'How does Zúme Training Work?', 'zume' ) ?></h2>
                 <div class="switcher | switcher-width-40 align-items-center">
                     <div class="stack px-0">
                         <div class="d-flex align-items-center">
@@ -198,7 +198,7 @@ class Zume_Training_About extends Zume_Magic_Page
                         <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/BeforeYouStart.svg' ) ?>" alt="group around a table" class="w-70">
                     </div>
                     <div class="stack-2 | bg-white p-2 right z-1 | tail circle-head">
-                        <h3 class="f-0 bold"><?php echo esc_html__( 'Zume is NOT like other trainings!', 'zume' ) ?></h3>
+                        <h3 class="f-0 bold"><?php echo esc_html__( 'Zúme is NOT like other trainings!', 'zume' ) ?></h3>
                         <p>
                             <b><?php echo esc_html__( 'First:', 'zume' ) ?></b><br>
                             <?php echo esc_html__( 'Zúme is designed to be done as a group. Group exercise, discussions, and practicing of skills all will be better with others, so gather a group, if possible.', 'zume' ) ?>

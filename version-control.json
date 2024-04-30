@@ -23,7 +23,7 @@
     "high": "https://raw.githubusercontent.com/ZumeProject/zume-training-system/master/images/dt-placeholder-1544x500.jpg"
   },
   "sections": {
-    "description": "Zume Training System Plugin",
+    "description": "Zúme Training System Plugin",
     "installation": "(Required) You must have Disciple.Tools Theme installed before using this plugin. Once Disciple.Tools is installed, you can use the normal Plugin system to install the plugin.",
     "changelog": ""
   }
