@@ -163,6 +163,17 @@ class Zume_Messages extends Zume_Magic_Page
                             font-size: 1.5em;
                             transition: background-color .25s ease-out, color .25s ease-out;
                         }
+                        #zmail ul {
+                            margin-bottom: 1em;
+                        }
+                        #zmail ul li {
+                            padding: 0 1em;
+                            margin-left: 50px;
+                            margin-right: 50px;
+                            list-style-type: disc;
+                            list-style-position: outside;
+                            line-height: 1.5;
+                        }
                     </style>
                 </head>
                 <body>
