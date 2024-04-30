@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 22:00+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Thai <https://translate.disciple.tools/projects/zume-training/"
@@ -4523,7 +4523,7 @@ msgstr ""
 "ภาพนี้แสดงให้เห็นถึงคนธรรมดาที่ใช้สิ่งของธรรมดาแต่สามารถส่งผลกระทบยิ่งใหญ่ต่ออาณาจักรของพระเจ้าได้ "
 "ซูเม่ตั้งเป้าไปที่ช่วยให้ผู้เชื่อธรรมดาคนหนึ่งมีความพร้อมและมีพลังที่จะออกไปในทุกๆ ชุมชน"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5212,6 +5212,15 @@ msgstr "ลงมือทำ"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "แผงควบคุม"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8250,9 +8259,6 @@ msgstr "การฝึกอบรมซูเม่ "
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "คำถามที่พบบ่อยกับซูเม่"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "แผงควบคุม"
 
 #~ msgid "Full Width Home"
 #~ msgstr "หน้ากว้างเต็ม"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-30 01:39+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
@@ -4298,7 +4298,7 @@ msgstr ""
 "混入大量麵粉中，滲透到整個麵團中。這個比喻說明了一般人如何使用普通的資源，可"
 "以對神的國度產生指數級的影響。"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
@@ -4974,6 +4974,15 @@ msgstr "開始吧！"
 msgid "Kitchen Sink"
 msgstr "廚房水槽"
 
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "「天國酵母」Zúme 工具板"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
+msgstr ""
+
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr "賦能弟子。隨時隨地使用 Zúme 應用程式。"
@@ -5209,7 +5218,8 @@ msgid ""
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
-msgstr "Zúme 培訓現在提供完整的工作手冊。培訓中的所有概念、工具、討論問題和挑戰現在都"
+msgstr ""
+"Zúme 培訓現在提供完整的工作手冊。培訓中的所有概念、工具、討論問題和挑戰現在都"
 "掌握在您的手中。每個會話的二維碼都可以讓您存取所有視訊內容！"
 
 #: site/pages/resources.php:111
@@ -8147,9 +8157,6 @@ msgstr "祖姆培訓系統"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "「天國酵母」Zúme 常見問題"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "「天國酵母」Zúme 工具板"
 
 #~ msgid "Full Width Home"
 #~ msgstr "全寬度首頁"

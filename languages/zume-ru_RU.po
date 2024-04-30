@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-15 11:36-0600\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Russian <https://translate.disciple.tools/projects/zume-"
@@ -4682,7 +4682,7 @@ msgstr ""
 "стремится обучить и ободрить обычных верующих для того, чтобы достичь любых "
 "окраин."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5395,6 +5395,15 @@ msgstr "Начать"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Панель инструментов Zúme"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8647,9 +8656,6 @@ msgstr "Курс Zúme"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Вопросы-Ответы Zúme"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Панель инструментов Zúme"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Полная ширина Домашней страницы"

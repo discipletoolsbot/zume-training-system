@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4668,7 +4668,7 @@ msgstr ""
 "mērķis ir aprīkot un dot iespēju vienkāršiem ticīgajiem aizsniegt katru "
 "tuvāko apkaimi."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5378,6 +5378,15 @@ msgstr "Sāciet darbu"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Zúme informācijas panelis"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8593,9 +8602,6 @@ msgstr "Zume treniņapmācība"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Zúme BUJ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Zúme informācijas panelis"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Pilna platuma mājas lapa"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Punjabi <https://translate.disciple.tools/projects/zume-"
@@ -4617,7 +4617,7 @@ msgstr ""
 "ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨ ਵਾਲੇ ਚੇਲਿਆਂ ਨਾਲ ਵਿਸ਼ਵ ਨੂੰ ਭਰਨ ਲਈ ਤਿਆਰ ਕਰਨ ਅਤੇ ਸ਼ਕਤੀ ਭਰਨ ਦਾ ਨਿਸ਼ਾਨਾ "
 "ਰੱਖਦਾ ਹੈ।"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5317,6 +5317,15 @@ msgstr "ਸ਼ੁਰੂ ਕਰੋ"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "ਜ਼ੁਮੇ ਡੈਸ਼ਬੋਰਡ"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8431,9 +8440,6 @@ msgstr "ਜ਼ੁਮੇ ਸਿਖਲਾਈ"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "ਜ਼ੁਮੇ ਵਾਰ-ਵਾਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਪ੍ਰਸ਼ਨ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "ਜ਼ੁਮੇ ਡੈਸ਼ਬੋਰਡ"
 
 #~ msgid "Full Width Home"
 #~ msgstr "ਹੋਮ ਦੀ ਪੂਰੀ ਚੌੜਾਈ"

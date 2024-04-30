@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 22:00+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Tamil <https://translate.disciple.tools/projects/zume-"
@@ -4609,7 +4609,7 @@ msgstr ""
 "என்பதைக் குறிக்கிறது. சூம் பயிற்சி சாதாரண விசுவாசிகளை அவர்கள் அருகாமையில் வசிக்கும் "
 "மக்களை சென்று சேர அவர்களை பலப்படுத்துகிறது."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5321,6 +5321,15 @@ msgstr "ஆரம்பிக்கலாம்"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "சூம் தொகுப்பு"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8466,9 +8475,6 @@ msgstr "Zúme பயிற்சி"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "சூம் கேள்விகள்"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "சூம் தொகுப்பு"
 
 #~ msgid "Full Width Home"
 #~ msgstr "முழு நீள வீடு"
