@@ -9,7 +9,7 @@ class Zume_Messages extends Zume_Magic_Page
     public $lang;
     public $language_code = 'en';
 
-    public $page_title = 'Zúme Activity';
+    public $page_title = 'Zúme Messages';
     public $root = 'app';
     public $type = 'message';
     public static $token = 'app_message';
