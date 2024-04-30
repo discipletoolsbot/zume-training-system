@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:34+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Korean <https://translate.disciple.tools/projects/zume-"
@@ -4605,7 +4605,7 @@ msgstr ""
 "이 우리 세대에서 제자를 배가시켜 세상 전역으로 보내도록 준비시켜 주고 힘을 실"
 "어주는 것입니다."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5308,6 +5308,15 @@ msgstr "시작"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "줌 대시 보드"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8436,9 +8445,6 @@ msgstr "줌 훈련"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "줌 자주 묻는 질문"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "줌 대시 보드"
 
 #~ msgid "Full Width Home"
 #~ msgstr "홈 전체"

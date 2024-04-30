@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Nepali <https://translate.disciple.tools/projects/zume-"
@@ -4564,7 +4564,7 @@ msgstr ""
 "एउटी स्त्रीले पच्चीस किलग ्राम पीठोमा मिसाई, र त्यो जम्मै खमिरले फुलिएर ठीक नभएसम्म "
 "त्यसलाई एक ठाउँमा राखी ।”"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5258,6 +5258,15 @@ msgstr "सुरु गर्नुहोस्"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "जुमे डयासबोर्ड"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8341,9 +8350,6 @@ msgstr "जूमे तालिम"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "धेरै सोधिने प्रश्नहरु"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "जुमे डयासबोर्ड"
 
 #~ msgid "Full Width Home"
 #~ msgstr "पूर्ण गृह"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://translate.disciple.tools/projects/zume-training/"
@@ -4669,7 +4669,7 @@ msgstr ""
 "ہوئے ، خدا کی بادشاہی کے لئے غیرمعمولی اثر ڈال سکتے ہیں۔ زیوم کا مقصد ہر "
 "محلے تک پہنچنے کے لئے عام مومنین کو لیس اور بااختیار بنانا ہے۔"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5388,6 +5388,15 @@ msgstr "ابتدا"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "زیوم ڈیش بورڈ"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8618,9 +8627,6 @@ msgstr "زیوم تربیت "
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "عمومی سوالنامہ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "زیوم ڈیش بورڈ"
 
 #~ msgid "Full Width Home"
 #~ msgstr "مکمل چوڑائی گھر"

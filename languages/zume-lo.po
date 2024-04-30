@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Lao <https://translate.disciple.tools/projects/zume-training/"
@@ -4517,7 +4517,7 @@ msgstr ""
 "ເຖິງ​ຄົນ​ທຳ​ມະ​ດາ​ທີ່​ໃຊ້​ສິ່ງ​ຂອງ​ທຳ​ມະ​ດາ​ແຕ່​ສາ​ມາດ​ສົ່ງ​ຜົນ​ກະ​ທົບ​ຍິ່ງ​ໃຫຍ່​ຕໍ່​ອາ​ນາ​ຈັກ​ຂອງ​ພ​ຣະ​ເຈົ້າ​ໄດ້ ຊູ​ເມ້​ໄດ້​ຕັ້ງ​ເປົ້າ​ໝາຍ​"
 "ໄປ​ທີ່​ຊ່ວຍ​ໃຫ້​ຜູ້​ເຊື່ອ​ທຳ​ມະ​ດາ​ຄົນ​ໜຶ່ງ​ມີ​ຄວາມ​ພ້ອມ​ແລະ​ມີ​ພະ​ລັງ​ທີ່​ຈະ​ອອກ​ໄປ​ທຸກໆ​ຊຸມ​ຊົນ​."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5209,6 +5209,15 @@ msgstr "​ເລີ່ມ​ລົງ​ມື"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "​ແຜງ​ຄວບ​ຄຸມ"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8227,9 +8236,6 @@ msgstr "ການອົບຮົມຊູເມ້"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "​ຄຳ​ຖາມ​ທີ່​ພົບ​ເລື້ອຍໆ​ໃນ​ຊູ​ເມ້"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "​ແຜງ​ຄວບ​ຄຸມ"
 
 #~ msgid "Full Width Home"
 #~ msgstr "​ໜ້າກວ້າງ​ເຕັມ​ຈໍ"

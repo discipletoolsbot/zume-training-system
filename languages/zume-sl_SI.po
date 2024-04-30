@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-15 11:31-0600\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
@@ -4656,7 +4656,7 @@ msgstr ""
 "z navadnimi pripomočki gromozanski vpliv na Božje kraljestvo. Cilj Zúme je, "
 "da opremimo in omogočimo navadne vernike, da dosežejo cel svet."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5383,6 +5383,15 @@ msgstr "Začnite"
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
 msgstr "Kuhinjsko korito"
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Zúme nadzorna plošča"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
+msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 #, fuzzy
@@ -8780,9 +8789,6 @@ msgstr "Sistem za usposabljanje Zume"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Zúme pogosto postavljena vprašanja"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Zúme nadzorna plošča"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Domača stran (polna širina)"

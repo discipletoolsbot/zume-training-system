@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 22:00+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Swahili <https://translate.disciple.tools/projects/zume-"
@@ -4657,7 +4657,7 @@ msgstr ""
 "wa Mungu.Zume inanuia kuwapa nguvu na vifaa waumini wa kawaida kuwafikia "
 "kila jirani."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5364,6 +5364,15 @@ msgstr "Anza"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Chombo cha maelezo ya Zume"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8594,9 +8603,6 @@ msgstr "Mafundisho ya Zúme"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Maswali mengi kuhusu Zume"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Chombo cha maelezo ya Zume"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Nyumba ya Upana Kamili"
