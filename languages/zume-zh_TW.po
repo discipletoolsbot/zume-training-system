@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-04-29 19:28-0600\n"
-"PO-Revision-Date: 2024-04-25 01:59+0000\n"
-"Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
+"PO-Revision-Date: 2024-04-30 01:39+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:189
@@ -40,7 +40,6 @@ msgid "Dashboard"
 msgstr "工具板"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
 msgstr "我的祖姆"
 
@@ -584,11 +583,11 @@ msgstr "3個月計劃"
 
 #: site/activities/three-month-plan-html.php:27
 msgid "Switch to Interactive Version"
-msgstr ""
+msgstr "切換至互動版"
 
 #: site/activities/three-month-plan-interactive.php:48
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "切換到列印版本"
 
 #: site/activities/three-month-plan-interactive.php:61
 #: site/course/presenter.php:132
@@ -599,7 +598,7 @@ msgstr "腳本已關閉"
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
-msgstr ""
+msgstr "請開啟腳本以使用此互動頁面。否則，您可以透過上面的連結使用可列印版本。"
 
 #: site/activities/three-month-plan-interactive.php:73
 #: site/dashboard/dashboard.php:173 site/profile/profile.php:153
@@ -1436,11 +1435,10 @@ msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "讓我們這一代的門徒數量不斷增加，從而使世界充滿。"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
-#, fuzzy
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr "Zume 是一個為想要看到門徒訓練運動的人提供的實踐社群。"
+msgstr "Zúme 是一個為那些希望看到門徒訓練運動的人提供的實踐社區。"
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
@@ -3085,9 +3083,8 @@ msgid "TAKE A BREAK"
 msgstr "休息一下"
 
 #: site/course/presenter.php:131
-#, fuzzy
 msgid "Zúme Course Presenter"
-msgstr "Zume 課程主持人"
+msgstr "Zúme 課程主持人"
 
 #: site/course/presenter.php:133
 msgid ""
@@ -3102,9 +3099,9 @@ msgid ""
 msgstr "如果您無法開啟腳本，您可以下載下面的課程幻燈片"
 
 #: site/course/presenter.php:160
-#, fuzzy, php-format
+#, php-format
 msgid "Zúme Course slides in %s"
-msgstr "Zume 課程幻燈片 %s"
+msgstr "Zúme 課程投影片 %s"
 
 #: site/course/presenter.php:164
 msgid "Unfortunately we do not have the course available for download yet."
@@ -3301,9 +3298,8 @@ msgid "Edit Profile"
 msgstr "編輯個人資料"
 
 #: site/dashboard/dashboard.php:175
-#, fuzzy
 msgid "Check out this Zúme concept"
-msgstr "看看這個 Zume 概念"
+msgstr "看看這個 Zúme 概念"
 
 #: site/dashboard/dashboard.php:176
 msgid "Preview"
@@ -4287,9 +4283,8 @@ msgid "Storage"
 msgstr "存儲"
 
 #: site/pages/about.php:87
-#, fuzzy
 msgid "What is Zúme Training?"
-msgstr "什麼是 Zume 訓練？"
+msgstr "什麼是 Zúme 培訓？"
 
 #: site/pages/about.php:91
 msgid ""
@@ -4304,11 +4299,10 @@ msgstr ""
 "以對神的國度產生指數級的影響。"
 
 #: site/pages/about.php:95
-#, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
-msgstr "Zume Training 的存在是為了讓我們這一代的弟子遍布全球。"
+msgstr "Zúme Training 的存在是為了讓我們這一代的弟子遍布全球。"
 
 #: site/pages/about.php:100
 msgid ""
@@ -4417,9 +4411,8 @@ msgid "Get Started"
 msgstr "開始使用"
 
 #: site/pages/about.php:162
-#, fuzzy
 msgid "How does Zúme Training Work?"
-msgstr "Zume 培訓如何進行？"
+msgstr "Zúme 培訓如何進行？"
 
 #: site/pages/about.php:167 site/pages/home.php:211
 #, php-format
@@ -4460,9 +4453,8 @@ msgid "Before you start."
 msgstr "在你開始之前。"
 
 #: site/pages/about.php:201
-#, fuzzy
 msgid "Zúme is NOT like other trainings!"
-msgstr "Zume 與其他訓練不同！"
+msgstr "Zúme 與其他培訓不同！"
 
 #: site/pages/about.php:203
 msgid "First:"
@@ -4757,11 +4749,10 @@ msgstr ""
 "我們的志工教練網絡是像您一樣的人，熱衷於愛上帝，愛他人，並服從偉大的使命。"
 
 #: site/pages/get-a-coach.php:100
-#, fuzzy
 msgid ""
 "A coach is someone who will come alongside you as you implement the Zúme "
 "tools and training."
-msgstr "教練是在您實施 Zume 工具和培訓時陪伴您的人。"
+msgstr "教練是在您實施 Zúme 工具和培訓時陪伴您的人。"
 
 #: site/pages/get-a-coach.php:104
 msgid "It's Free"
@@ -4941,7 +4932,6 @@ msgid ""
 msgstr "這些概念和技能改變了我們的教會以及我們對世界的影響。 〜克里斯"
 
 #: site/pages/home.php:324
-#, fuzzy
 msgid "Zúme = Yeast"
 msgstr "Zúme = 酵母"
 
@@ -4985,14 +4975,12 @@ msgid "Kitchen Sink"
 msgstr "廚房水槽"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
-#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr "賦能弟子。隨時隨地使用 Zume 應用程式。"
+msgstr "賦能弟子。隨時隨地使用 Zúme 應用程式。"
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
-#, fuzzy
 msgid "Zúme Training App"
-msgstr "Zume 培訓應用程式"
+msgstr "Zúme 培訓應用程式"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
 msgid "Access the full training wherever you go"
@@ -5216,14 +5204,12 @@ msgid "Training Guidebook"
 msgstr "培訓指南"
 
 #: site/pages/resources.php:103
-#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
-msgstr ""
-"Zume 培訓現在提供完整的工作手冊。培訓中的所有概念、工具、討論問題和挑戰現在都"
+msgstr "Zúme 培訓現在提供完整的工作手冊。培訓中的所有概念、工具、討論問題和挑戰現在都"
 "掌握在您的手中。每個會話的二維碼都可以讓您存取所有視訊內容！"
 
 #: site/pages/resources.php:111
@@ -5437,7 +5423,7 @@ msgstr "求教練！"
 
 #: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
 msgid "Congratulations"
-msgstr "恭喜你"
+msgstr "恭喜！"
 
 #: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 msgid "Create a Training"
@@ -5477,9 +5463,8 @@ msgid "%s unlocked"
 msgstr "%s 已解鎖"
 
 #: utilities/apis/cta-api.php:308
-#, fuzzy
 msgid "3-Month Plan Created"
-msgstr "3個月計劃"
+msgstr "創建 3 個月計劃"
 
 #: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
 msgid "Complete 3 Month Plan"
@@ -5490,9 +5475,8 @@ msgid "Complete your 3 month plan to help you grow"
 msgstr "完成您的 3 個月計劃以幫助您成長"
 
 #: utilities/apis/cta-api.php:337
-#, fuzzy
 msgid "3 Month Plan Completed"
-msgstr "三個月計劃已鎖定"
+msgstr "3個月計劃已完成"
 
 #: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
 msgid "Submit Report"
