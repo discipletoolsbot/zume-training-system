@@ -55,6 +55,8 @@ html {
     &.is-reveal-open.zf-has-scroll {
       overflow-y: visible;
     }
+
+    scrollbar-color: var(--scroll-thumb-color) var(--scroll-track-color);
 }
 
 body {
@@ -127,6 +129,26 @@ ul[role="list"] {
 
 a, a:visited {
     text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  inline-size: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scroll-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-track-color);
+  background-image: linear-gradient(
+    to left,
+    var(--scroll-track-color) 0,
+    var(--scroll-track-color) 15%,
+    var(--scroll-thumb-color) 15%,
+    var(--scroll-thumb-color) 85%,
+    var(--scroll-track-color) 85%
+  );
 }
 
 .offset-anchor {

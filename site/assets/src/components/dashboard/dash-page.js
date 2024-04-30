@@ -14,6 +14,7 @@ export class DashPage extends LitElement {
     firstUpdated() {
         this.attachResizeObeserver()
         this.updateHeaderStyle()
+        window.scrollTo({ top: 0, behavior: 'instant' })
     }
 
     attachResizeObeserver() {

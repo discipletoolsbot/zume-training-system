@@ -24,6 +24,7 @@ export class DashChurches extends DashPage {
     }
 
     firstUpdated() {
+        super.firstUpdated()
         const addChurchForm = document.querySelector('#add-church-form')
 
         addChurchForm.addEventListener('submit', this.handleSubmit)
