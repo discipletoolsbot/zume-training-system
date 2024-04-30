@@ -138,8 +138,8 @@ class Zume_Messages extends Zume_Magic_Page
                                 margin-left: 1em;
                             }
                             #zmail .button.primary-button-hollow {
-                                background-color: #008cc7;
                                 color: white;
+                                background-color: #008cc7;
                                 border: 1px solid #008cc7;
                                 padding: .5em 1em;
                                 text-align: center;
@@ -171,6 +171,10 @@ class Zume_Messages extends Zume_Magic_Page
                                 list-style-type: disc;
                                 list-style-position: outside;
                                 line-height: 1.5;
+                            }
+                            #zmail strong {
+                                font-weight: 600;
+                                color: #008cc7;
                             }
                         </style>
                     </head>
