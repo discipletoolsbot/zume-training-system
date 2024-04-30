@@ -198,9 +198,9 @@ class Zume_Messages extends Zume_Magic_Page
                             </div>
                             <div class="zmail-footer-divider"></div>
                             <div class="zmail-footer">
-                                <a href="">Go to Zúme Dashboard</a><br>
-                                <a href="">Update Communication Preferences</a><br>
-                                <span>Zúme Training exists to saturate the globe with multiplying disciples in our generation.</span>
+                                <a href=""><?php echo __( 'Go to Zúme Dashboard', 'zume' ) ?></a><br>
+                                <a href=""><?php echo __( 'Update Communication Preferences', 'zume' ) ?></a><br><br>
+                                <span><?php echo __( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></span>
                             </div>
                         </div> <!-- activity page -->
                     </body>
@@ -217,12 +217,12 @@ class Zume_Messages extends Zume_Magic_Page
         $body_key = 'body_'.$language_code;
 
         $sql = $wpdb->prepare( "SELECT p.ID, p.post_title, pm.meta_value as subject, pm1.meta_value as body
-                                FROM zume_posts p
-                                LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
-                                LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = %s
-                                WHERE p.ID = %s
-                                  AND p.post_type = 'zume_messages'
-                                  LIMIT 1;", $subject_key, $body_key, $message_id );
+                                        FROM zume_posts p
+                                        LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
+                                        LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = %s
+                                        WHERE p.ID = %s
+                                          AND p.post_type = 'zume_messages'
+                                          LIMIT 1;", $subject_key, $body_key, $message_id );
         $message = $wpdb->get_row( $sql, ARRAY_A );
 
         if ( empty($message) ) {
