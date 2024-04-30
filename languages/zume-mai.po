@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-23 13:53-0600\n"
+"POT-Creation-Date: 2024-04-29 19:28-0600\n"
 "PO-Revision-Date: 2024-04-10 19:34+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Maithili <https://translate.disciple.tools/projects/zume-"
@@ -14,13 +14,13 @@ msgstr ""
 "X-Generator: Weblate 5.4.3\n"
 
 #: appearance/style-override/navigation.php:75
-#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:191
-#: site/dashboard/dashboard.php:243 site/parts/footer.php:11
+#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:189
+#: site/dashboard/dashboard.php:241 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "प्रशिक्षण"
 
-#: appearance/style-override/navigation.php:85 site/pages/home.php:212
+#: appearance/style-override/navigation.php:85 site/pages/home.php:206
 #, fuzzy
 msgid "How it Works"
 msgstr "कोना ज़ूमे काज करैत अछि"
@@ -33,15 +33,15 @@ msgstr "डाउनलोड गाइड बुक"
 msgid "FAQs"
 msgstr "अक्सर पूछे या बुझै वला सवाल"
 
-#: appearance/style-override/navigation.php:106 site/course/presenter.php:175
-#: site/dashboard/checkin-dashboard.php:156
-#: site/dashboard/checkin-dashboard.php:172 site/pages/home.php:112
+#: appearance/style-override/navigation.php:106 site/course/presenter.php:174
+#: site/dashboard/checkin-dashboard.php:154
+#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:106
 #: site/parts/nav.php:19 site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "डैशबोर्ड (प्रबंधक)"
 
 #: appearance/style-override/navigation.php:112
-msgid "My Zume"
+msgid "My Zúme"
 msgstr ""
 
 #: appearance/style-override/navigation.php:117
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Community"
 msgstr "समुदाय"
 
-#: appearance/style-override/navigation.php:148 site/pages/vision.php:92
+#: appearance/style-override/navigation.php:148 site/pages/vision.php:88
 msgid "Vision"
 msgstr "दर्शन"
 
@@ -78,14 +78,14 @@ msgstr "स्‍टोरेज"
 msgid "Global Map"
 msgstr ""
 
-#: globals.php:1905 globals.php:1907 site/course/course-content.php:86
+#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178
 msgid "God Uses Ordinary People"
 msgstr "परमेश्वर सामान्य लोकक इस्तेमाल करैत अछि।"
 
-#: globals.php:1906 site/pages/follow-jesus.php:168
+#: globals.php:1908 site/pages/follow-jesus.php:168
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,45 +93,45 @@ msgstr ""
 "\"अहाँ देखब कि परमेश्वर साधारण लोक केँ द्बारा सामान्य काज करबा कर \n"
 "कोना पैघ असर डालेत अछि।\""
 
-#: globals.php:1916 site/course/course-content.php:3161
+#: globals.php:1918 site/course/course-content.php:3161
 #: site/course/course-content.php:3179
 msgid "Simple Definition of Disciple and Church"
 msgstr "शिष्य आ मंडली क साधारण परिभाषा।"
 
-#: globals.php:1917 site/course/course-content.php:153
+#: globals.php:1919 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:172
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "शिष्य होने केँ सार खोजूँ चेला बनाउ,आ मंडली कि अति?"
 
-#: globals.php:1918 site/course/course-content.php:143
+#: globals.php:1920 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
 msgstr ""
 
-#: globals.php:1927 site/course/course-content.php:3162
+#: globals.php:1929 site/course/course-content.php:3162
 #: site/course/course-content.php:3180
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "परमेश्वर कऽ सुनाउ आ मानवाक आत्मिक स्वास अछि।"
 
-#: globals.php:1928 site/pages/follow-jesus.php:194
+#: globals.php:1930 site/pages/follow-jesus.php:194
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
 "शिष्य होवाक अर्थ अछि हमरा परमेश्वरक सुनवाक अछि आ परमेश्वर आज्ञाक पालन करबाक अछि।"
 
-#: globals.php:1929 site/course/course-content.php:189
+#: globals.php:1931 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "परमेश्वर कऽ सुनाउ आ मानवाक आत्मिक स्वास अछि।"
 
-#: globals.php:1938 globals.php:1940
+#: globals.php:1940 globals.php:1942
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "एस .ओ. ए .पी .एस बाईबल पढ़नाई"
 
-#: globals.php:1939 site/pages/follow-jesus.php:209
+#: globals.php:1941 site/pages/follow-jesus.php:209
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -139,14 +139,14 @@ msgstr ""
 "\"रोज बाइबल अध्ययन कँ एकटा उपकरण जेँअहाँकेँ परमेश्वरक वचनक समझुँ,\n"
 "करें मे और मिलान करे में सहायक करैत अछि।\""
 
-#: globals.php:1949 globals.php:1951 site/course/course-content.php:93
+#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425
 msgid "Accountability Groups"
 msgstr "जवाब देही समूह"
 
-#: globals.php:1950 site/pages/follow-jesus.php:224
+#: globals.php:1952 site/pages/follow-jesus.php:224
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -156,11 +156,11 @@ msgstr ""
 "रूप सँ मिलेगा आ एक दोसर केँ प्रोत्साहित करू आ सुधारक आवश्यकता वाला क्षेत्रो कऽ प्रकट करैत "
 "अति।\""
 
-#: globals.php:1960
+#: globals.php:1962
 msgid "Consumer vs Producer Lifestyle"
 msgstr "उपभोक्ता बनाम निर्माता जीवन शैली"
 
-#: globals.php:1961 site/pages/follow-jesus.php:188
+#: globals.php:1963 site/pages/follow-jesus.php:188
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -168,41 +168,41 @@ msgstr ""
 "\"अहाँ उह चार मुख्य तरीकोक खोजब,जेकरा परमेश्वर हरेक दिन अनुयायियोंक \n"
 "यीशु के समान बनवैत अछि\""
 
-#: globals.php:1962
+#: globals.php:1964
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "निर्माता विरुद्ध उपयोग करऽ वाला"
 
-#: globals.php:1971 globals.php:1973
+#: globals.php:1973 globals.php:1975
 msgid "How to Spend an Hour in Prayer"
 msgstr "प्रार्थना मे एक घंटा कोना बितेलये"
 
-#: globals.php:1972 site/pages/follow-jesus.php:198
+#: globals.php:1974 site/pages/follow-jesus.php:198
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "देखूँ प्रार्थना में एक घंटा बितावै केँ लेल केतेक आसान अछि।"
 
-#: globals.php:1982
+#: globals.php:1984
 msgid "Relational Stewardship – List of 100"
 msgstr "संबंधित परिचारक ( रिलेशनशिप स्टैंडशिप)-100 की सुची"
 
-#: globals.php:1983 site/pages/follow-jesus.php:285
+#: globals.php:1985 site/pages/follow-jesus.php:285
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "एक उपकरण जँ अहुँकेँ रिस्ताक नीक बनावै रखै मे अहाँक सहायता करैत अछि।"
 
-#: globals.php:1984 site/course/course-content.php:477
+#: globals.php:1986 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
 msgid "List of 100"
 msgstr "100 कि सुची"
 
-#: globals.php:1993 globals.php:1995 site/course/course-content.php:796
+#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "आत्मिक अर्थव्यवस्था"
 
-#: globals.php:1994 site/pages/follow-jesus.php:243
+#: globals.php:1996 site/pages/follow-jesus.php:243
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -210,26 +210,26 @@ msgstr ""
 "\"जानूँ कि केना परमेश्वरक अर्थ व्यवस्था दुनिया सँ भिन्न अछि। परमेश्वर \n"
 "ओकरा और दैत अछि जेँ पहिले सँ हि देल गेल धन मे ईमानदार होइत अछि।\""
 
-#: globals.php:2004
+#: globals.php:2006
 msgid "The Gospel and How to Share It"
 msgstr "शुभ समाचार आ एकरा कोना मिलान करब"
 
-#: globals.php:2005 site/pages/follow-jesus.php:289
+#: globals.php:2007 site/pages/follow-jesus.php:289
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr "मानवताक शुरुआत सँ अंत तक सभी तरह सँ परमेश्वरक शुभ समाचार फैलावै केँ तरीका जानूँ।"
 
-#: globals.php:2006
+#: globals.php:2008
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "अपन गवाही शेयर करऽ केँ अभ्यास करू \" 45 मिनट \""
 
-#: globals.php:2015
+#: globals.php:2017
 msgid "Baptism and How To Do It"
 msgstr "बपतिस्मा आ ई कोना करवाकर अछि"
 
-#: globals.php:2016 site/pages/follow-jesus.php:236
+#: globals.php:2018 site/pages/follow-jesus.php:236
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -238,34 +238,34 @@ msgstr ""
 "\"यीशु कहलथिन \"\"जाऊं आ सभ जातिक लोकक केँ चेला बनाउ , ओकरा पिता \n"
 "पुत्र और पवित्र आत्मा केँ नाम सँ बपतिस्मा दिऔक\"\" एकर पालन करबाक सीखुँ।\""
 
-#: globals.php:2017 site/course/course-content.php:801
+#: globals.php:2019 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "बपतिस्मा"
 
-#: globals.php:2026
+#: globals.php:2028
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "अपन 3 मिनटक गवाही तैयार करह "
 
-#: globals.php:2027 site/pages/follow-jesus.php:293
+#: globals.php:2029 site/pages/follow-jesus.php:293
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr "3 मिनट में अपन गवाही बटूँ सिखूँ कि यीशू अहुँक  जीवनक कोना प्रभावित केलथिन।"
 
-#: globals.php:2028
+#: globals.php:2030
 msgid "3-Minute Testimony"
 msgstr "3 मिनट कि गवाही "
 
-#: globals.php:2037 site/course/course-content.php:1140
+#: globals.php:2039 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823
 msgid "Vision Casting the Greatest Blessing"
 msgstr "सब सँ पैघ आशीर्वादक दृष्टिगत निर्माण"
 
-#: globals.php:2038 site/course/course-content.php:1216
+#: globals.php:2040 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:176
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -273,27 +273,27 @@ msgid ""
 msgstr ""
 "सिर्फ एगो व्यक्ति केँ यीशुक चेला बनावै केँ बदले एकटा पूरा आत्मिक परिवार बनावै केँ तरीका सीखूँ।"
 
-#: globals.php:2039
+#: globals.php:2041
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "पैग आशीष"
 
-#: globals.php:2048
+#: globals.php:2050
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "डकलिंग शिष्यत्व- शीघ्रता सँ अगुवाई करब"
 
-#: globals.php:2049
+#: globals.php:2051
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "सिखूँ की बत्तखक चूजोंक चेला बनावै सँ कि सरोकार अछि ।"
 
-#: globals.php:2050 site/course/course-content.php:1141
+#: globals.php:2052 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "(डकलिंग) बतक क चूजा शिष्यत्व"
 
-#: globals.php:2059 globals.php:2061 site/course/course-content.php:1142
+#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375
@@ -301,7 +301,7 @@ msgstr "(डकलिंग) बतक क चूजा शिष्यत्व
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "आँखि, ई देखै केँ लेल कि राज्य कतौ नहि अछि"
 
-#: globals.php:2060 site/pages/follow-jesus.php:247
+#: globals.php:2062 site/pages/follow-jesus.php:247
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -309,11 +309,11 @@ msgstr ""
 "\"इह देखैला शुरूआत करह कि परमेश्वरक राज कतौ नहि अछि। ई आम तौर \n"
 "पर उ जगह अछि जोतऽ परमेश्वर सभ सँ बैसी काज करैला चाहेत अछि। \""
 
-#: globals.php:2070
+#: globals.php:2072
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "प्रभु भोज आ एकर मे अगवाई कोना करब।"
 
-#: globals.php:2071
+#: globals.php:2073
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -321,7 +321,7 @@ msgstr ""
 "\"हमर अंतरंग संबंध और यीशुक संगे हमर संबंधक मानवाक ई एकटा सरल \n"
 "तरीका अछि। जसन मानबाक एक सरल तरीका सीखूँ। \""
 
-#: globals.php:2072 site/course/course-content.php:1147
+#: globals.php:2074 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -329,11 +329,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "प्रभु भोज"
 
-#: globals.php:2081
+#: globals.php:2083
 msgid "Prayer Walking and How To Do It"
 msgstr "प्रार्थना चलवाक आ इ कोना करवाक अछि"
 
-#: globals.php:2082
+#: globals.php:2084
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -342,18 +342,18 @@ msgstr ""
 "\"दोसर केँ लेल प्रार्थना करू परमेश्वराक आज्ञाक पालन करे केँ एक तरीका \n"
 "अछि। और ई सिर्फ एहन लगत अति जेना घुमेत समय परमेश्वर सँ प्रार्थना करब।\""
 
-#: globals.php:2083 site/course/course-content.php:1520
+#: globals.php:2085 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "प्रार्थना चलबैत"
 
-#: globals.php:2092
+#: globals.php:2094
 msgid "A Person of Peace and How To Find One"
 msgstr "एक शांति कऽ व्यक्ति आ ओकरा खोजब कोना"
 
-#: globals.php:2093
+#: globals.php:2095
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
@@ -361,17 +361,17 @@ msgstr ""
 "\"ई जानूँ कि के व्यक्ति शांतिक व्यक्ति भऽ सकैत अछि आ जानूँ कि अहुँकेँ \n"
 "एकटा भेट गेल अछि, कोना पता चलत।\""
 
-#: globals.php:2094 site/course/course-content.php:1515
+#: globals.php:2096 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "कल्याण करऽ वाला आदमी"
 
-#: globals.php:2103
+#: globals.php:2105
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "विश्वासी योग्यता ज्ञान सँ बेहतर अछि।"
 
-#: globals.php:2104
+#: globals.php:2106
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -380,31 +380,31 @@ msgstr ""
 "\"ई महत्वपूर्ण अछि कि शिष्य की जानैत अछि,मुदा बैसी महत्वपूर्ण इ अछि \n"
 "कि उह की जानबाक लेल संगे की करैत अछि।\""
 
-#: globals.php:2105 site/course/course-content.php:1765
+#: globals.php:2107 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "विश्वास योग्यता"
 
-#: globals.php:2114
+#: globals.php:2116
 msgid "The BLESS Prayer Pattern"
 msgstr "आशीषक प्रार्थनाक स्वरूप"
 
-#: globals.php:2115 site/pages/follow-jesus.php:202
+#: globals.php:2117 site/pages/follow-jesus.php:202
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "दोसर केँ लेल प्रार्थना करै केँ साधारण पद्धितक अभ्यास करह।"
 
-#: globals.php:2116 site/course/course-content.php:1603
+#: globals.php:2118 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "B.L.E.S.S. आशिष प्रार्थनाक अभ्यास करू।(15मिनट)"
 
-#: globals.php:2125
+#: globals.php:2127
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 समुह बैठक स्वरूप"
 
-#: globals.php:2126
+#: globals.php:2128
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -415,34 +415,34 @@ msgstr ""
 "बढ़बाक संगति करबाक और जेँ उ सीखनि कि पालन करबाक और बांटबाक  अभ्यास करे केँ एक तरीका "
 "अछि।ई तरह,एक 3/3समूह न केवल एक छोट समूह अछि,बल्कि  एक साधारण मंडली अछि।\""
 
-#: globals.php:2127
+#: globals.php:2129
 msgid "3/3 Group"
 msgstr "3/3 समूह"
 
-#: globals.php:2136
+#: globals.php:2138
 msgid "Training Cycle for Maturing Disciples"
 msgstr "परिपक्व होवे वाला शिष्य केँ लेल प्रशिक्षण चक्र"
 
-#: globals.php:2137 site/pages/follow-jesus.php:270
+#: globals.php:2139 site/pages/follow-jesus.php:270
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "\"प्रशिक्षण चक्र सिखब और विचार करब कि ई शिष्य बनावै पर कोना लागू \n"
 "होइत अछि।\""
 
-#: globals.php:2138 site/course/course-content.php:5032
+#: globals.php:2140 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "प्रशिक्षण चक्र"
 
-#: globals.php:2147 globals.php:2149 site/course/course-content.php:2190
+#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050
 msgid "Leadership Cells"
 msgstr "अगुवाई सेल्स"
 
-#: globals.php:2148 site/course/course-content.php:2213
+#: globals.php:2150 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:325
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -451,12 +451,12 @@ msgstr ""
 "\"एक अगुवा सेल एकटा एहन तरीकाअछि जकरा मे जेकर नेतृत्व करे केँ लेल \n"
 "बजावैल गैर यो, उ सेवा कऽ अभ्यास  करे केँ अपन नेतृत्‍व केँ गुणक विस्तार कऽ सकैत अछि।\""
 
-#: globals.php:2158 globals.php:2160 site/course/course-content.php:5157
+#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
 #: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
 msgstr "गैर कनुक्रमिक विकासक अपेक्षा करह"
 
-#: globals.php:2159
+#: globals.php:2161
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -465,11 +465,11 @@ msgstr ""
 "\"देखूँ कि कोना शिष्य बनवाक एक रेखा में नहि अछि।एक समय मे केओ \n"
 "चीज भऽ सकैत अछि।\""
 
-#: globals.php:2169 site/course/course-content.php:2770
+#: globals.php:2171 site/course/course-content.php:2770
 msgid "Pace of Multiplication Matters"
 msgstr "बहुगणित होवेक गति मायने रखैत अछि।"
 
-#: globals.php:2170 site/pages/follow-jesus.php:278
+#: globals.php:2172 site/pages/follow-jesus.php:278
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -477,31 +477,31 @@ msgstr ""
 "\"बहुगणित होवाक मायने रखैत अछि, लेकिन तेजी सँ बहुगणित होवाक बैसी \n"
 "मायने रखैत छथि।देखूँ कि गति किएक मायने रखैत अछि।\""
 
-#: globals.php:2171 site/course/course-content.php:2390
+#: globals.php:2173 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "गति (चाल)"
 
-#: globals.php:2180 globals.php:2182 site/course/course-content.php:2391
+#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177
 msgid "Always Part of Two Churches"
 msgstr "हमेशा दुटा मंडलीयों क हिस्सा"
 
-#: globals.php:2181
+#: globals.php:2183
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "चलु और रूके केँ द्वारा यीशूकेँ आदेशक पालन करवाक सिखूँ।"
 
-#: globals.php:2192 globals.php:2194 site/course/course-content.php:2903
+#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "तीन माहक योजना"
 
-#: globals.php:2193
+#: globals.php:2195
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -509,14 +509,14 @@ msgstr ""
 "\"अगला तेसर माह मे अहाँ ज़ूमे टूल कऽ कोना लागू करब एकरा लेल \n"
 "अपन योजना बनाउ और मिलान करह।\""
 
-#: globals.php:2203 globals.php:2205 site/course/course-content.php:2395
+#: globals.php:2205 globals.php:2207 site/course/course-content.php:2395
 #: site/course/course-content.php:2539 site/course/course-content.php:2548
 #: site/course/course-content.php:2573 site/course/course-content.php:2775
 #: site/course/course-content.php:5290 site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "टयूसन रजिस्टर"
 
-#: globals.php:2204 site/pages/follow-jesus.php:321
+#: globals.php:2206 site/pages/follow-jesus.php:321
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -524,14 +524,14 @@ msgstr ""
 "\"जखन अहाँ शिष्यक बहुगणित करवाक और गप करैत अछि,ते अहाँ अपन \n"
 "समर्थ और कमजोरियाक आकलन करे केँ लेल एक  शक्तिशाली उपकरण इस्तेमाल कऽ सकैत छी।\""
 
-#: globals.php:2214 globals.php:2216 site/course/course-content.php:2898
+#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306
 msgid "Leadership in Networks"
 msgstr "नेटवर्क में नेतृत्व"
 
-#: globals.php:2215 site/pages/follow-jesus.php:329
+#: globals.php:2217 site/pages/follow-jesus.php:329
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -539,14 +539,14 @@ msgstr ""
 "जानूँ कि बहुगणित मंडली कोना एक दोसर सं जुड़ल रहैत अछि आ एक विस्तारिक आत्मिक परिवार केँ "
 "रूप मे एक साथ जीवन जियत अछि।"
 
-#: globals.php:2225 site/course/course-content.php:2902
+#: globals.php:2227 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572
 msgid "Peer Mentoring Groups"
 msgstr "सहायता करेवला सलाह समूह"
 
-#: globals.php:2226 site/pages/follow-jesus.php:317
+#: globals.php:2228 site/pages/follow-jesus.php:317
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -556,15 +556,15 @@ msgstr ""
 "शामिल अछि ,ई 3/3 प्रारूप कऽ अनुकरण करैत अछि आ अहुँकेँ क्षेत्र मे परमेश्वरक काज केँ आत्मिक "
 "स्वास्थ्यक आंकलन करे केँ एक शक्तिशाली तरीका अछि। \""
 
-#: globals.php:2227
+#: globals.php:2229
 msgid "Peer Mentoring"
 msgstr "सहकर्मी (सहायता करऽ वला लोक) सलाह"
 
-#: globals.php:2236 globals.php:2238
+#: globals.php:2238 globals.php:2240
 msgid "Four Fields Tool"
 msgstr "चारटा क्षेत्रो केँ उपकरण"
 
-#: globals.php:2237
+#: globals.php:2239
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -574,14 +574,14 @@ msgstr ""
 "वला सेल केँ द्वारा वर्तमान प्रयासक स्थिति आ ओकर लगपास राज्यक गतिविधिक प्रतिबंधित करऽ केँ "
 "लेल कयल जाइत अछि।\""
 
-#: globals.php:2247 globals.php:2249 site/course/course-content.php:2397
+#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "पीढ़ीगत नक्शा"
 
-#: globals.php:2248
+#: globals.php:2250
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -589,23 +589,62 @@ msgstr ""
 "\"पीढ़ी नक्शा एगो सरल उपकरण अछि जे आंदोलन मे अगुवोक ओकर चारों ओर केँ \n"
 "विकास कऽ समझे मे सहायता करैत छथि।\""
 
-#: globals.php:2258
+#: globals.php:2260
 msgid "3-Circles Gospel Presentation"
 msgstr ""
 
-#: globals.php:2259
+#: globals.php:2261
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
 
-#: globals.php:2260
+#: globals.php:2262
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:7182
+#: globals.php:6982 site/course/presenter.php:199
+#: site/dashboard/dashboard.php:269 site/pages/follow-jesus.php:339
+#: site/parts/footer.php:72 site/parts/footer.php:79 site/parts/footer.php:86
+#: site/parts/language-menu.php:41
+msgid "Close"
+msgstr "बन्द करह"
+
+#: globals.php:7184
 msgid "No Results"
 msgstr ""
+
+#: site/activities/three-month-plan-html.php:26
+#: site/activities/three-month-plan-interactive.php:47
+#: site/dashboard/dashboard.php:196
+#, fuzzy
+msgid "3-Month Plan"
+msgstr "तीन माहक योजना"
+
+#: site/activities/three-month-plan-html.php:27
+msgid "Switch to Interactive Version"
+msgstr ""
+
+#: site/activities/three-month-plan-interactive.php:48
+msgid "Switch to Printable Version"
+msgstr ""
+
+#: site/activities/three-month-plan-interactive.php:61
+#: site/course/presenter.php:132
+#, fuzzy
+msgid "Scripts are off"
+msgstr "शास्त्र"
+
+#: site/activities/three-month-plan-interactive.php:62
+msgid ""
+"Please turn on scripts to use this interactive page. Otherwise you may use "
+"the printable version using the link above."
+msgstr ""
+
+#: site/activities/three-month-plan-interactive.php:73
+#: site/dashboard/dashboard.php:173 site/profile/profile.php:153
+msgid "Save"
+msgstr "सेव करू (सुरक्षित रखूं)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -988,8 +1027,9 @@ msgstr ""
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
-msgid "SOAPS Bible Reading"
-msgstr "soaps सोप्स बाइबल पठन"
+#: site/course/course-content.php:3288 site/course/course-content.php:3304
+msgid "S.O.A.P.S. Bible Reading"
+msgstr "एस .ओ. ए .पी .एस बाईबल पढ़नाई"
 
 #: site/course/course-content.php:111
 #, fuzzy
@@ -1481,8 +1521,8 @@ msgstr ""
 msgid "Obey"
 msgstr "आज्ञाक पालन केलहूँ"
 
-#: site/course/course-content.php:683 site/dashboard/dashboard.php:154
-#: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:85
+#: site/course/course-content.php:683 site/dashboard/dashboard.php:152
+#: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
 msgid "Share"
 msgstr "साझा करह"
@@ -1515,7 +1555,7 @@ msgstr "दुनियाक संतृप्त करऽ केँ ले�
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
 msgid ""
-"Zume is a community of practice for those who want to see disciple making "
+"Zúme is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
 
@@ -2039,7 +2079,7 @@ msgstr ""
 "छि एकरा पालन करैत आ मिलान करऽ मे?"
 
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:208
+#: site/pages/home.php:202
 msgid "Watch"
 msgstr ""
 
@@ -2431,10 +2471,10 @@ msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
 
-#: site/course/course-content.php:2616 site/dashboard/dashboard.php:189
-#: site/dashboard/wizard.php:180 site/pages/about.php:258
+#: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
+#: site/dashboard/wizard.php:175 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
+#: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "एकटा कोच (प्रशिक्षक) प्राप्त करू"
 
@@ -2697,7 +2737,7 @@ msgstr ""
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr ""
 
-#: site/course/course-content.php:3016 site/dashboard/dashboard.php:200
+#: site/course/course-content.php:3016 site/dashboard/dashboard.php:198
 #, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
@@ -2780,11 +2820,6 @@ msgstr ""
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
 msgstr ""
-
-#: site/course/course-content.php:3288 site/course/course-content.php:3304
-#, fuzzy
-msgid "S.O.A.P.S Bible Reading"
-msgstr "एस .ओ. ए .पी .एस बाईबल पढ़नाई"
 
 #: site/course/course-content.php:3379
 msgid ""
@@ -3237,7 +3272,7 @@ msgid "NEXT STEP"
 msgstr ""
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:231 site/dashboard/wizard.php:142
+#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:137
 #: site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
@@ -3266,438 +3301,425 @@ msgstr "प्रशिक्षण का समाप्ति"
 msgid "TAKE A BREAK"
 msgstr ""
 
-#: site/course/presenter.php:132
+#: site/course/presenter.php:131
 #, fuzzy
-msgid "Zume Course Presenter"
+msgid "Zúme Course Presenter"
 msgstr "ज़ूमे कोर्स v4"
 
 #: site/course/presenter.php:133
-#, fuzzy
-msgid "Scripts are off"
-msgstr "शास्त्र"
-
-#: site/course/presenter.php:134
 msgid ""
 "To enjoy the interactive experience of the zume course, turn on scripts if "
 "you are able."
 msgstr ""
 
-#: site/course/presenter.php:148
+#: site/course/presenter.php:147
 msgid ""
 "If you are unable to turn on scripts, you may download the course slides "
 "below"
 msgstr ""
 
-#: site/course/presenter.php:161
-#, php-format
-msgid "Zume Course slides in %s"
-msgstr ""
+#: site/course/presenter.php:160
+#, fuzzy, php-format
+msgid "Zúme Course slides in %s"
+msgstr "ज़ूमे (कोर्स) पढ़ाई"
 
-#: site/course/presenter.php:165
+#: site/course/presenter.php:164
 msgid "Unfortunately we do not have the course available for download yet."
 msgstr ""
 
-#: site/course/presenter.php:166
+#: site/course/presenter.php:165
 msgid "We will be producing the slides soon."
 msgstr ""
 
-#: site/course/presenter.php:167
+#: site/course/presenter.php:166
 msgid ""
 "Please come back later and check on our resources page for the slides "
 "download."
 msgstr ""
 
-#: site/course/presenter.php:168 site/dashboard/dashboard.php:235
-#: site/pages/resources.php:92 site/parts/footer.php:41
+#: site/course/presenter.php:167 site/dashboard/dashboard.php:233
+#: site/pages/resources.php:88 site/parts/footer.php:41
 msgid "Resources"
 msgstr "संसाधनों"
 
-#: site/course/presenter.php:171
+#: site/course/presenter.php:170
 msgid "Links"
 msgstr ""
 
-#: site/course/presenter.php:173 site/pages/_strings-mobile-pwa.php:11
+#: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
 msgstr "होम"
 
-#: site/course/presenter.php:177 site/pages/_strings-mobile-pwa.php:13
+#: site/course/presenter.php:176 site/pages/_strings-mobile-pwa.php:13
 #: site/parts/footer.php:10 site/parts/nav.php:23 site/parts/nav.php:75
 msgid "About"
 msgstr "बारे मे"
 
-#: site/course/presenter.php:178
+#: site/course/presenter.php:177
 #, fuzzy
 msgid "Course"
 msgstr "पाठ्यक्रम"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Exit Course"
 msgstr "पाठ्यक्रम"
 
-#: site/course/presenter.php:196
+#: site/course/presenter.php:195
 msgid "Switch Views"
 msgstr ""
 
-#: site/course/presenter.php:197
+#: site/course/presenter.php:196
 #, fuzzy
 msgid "Next slide"
 msgstr "अगला सत्र"
 
-#: site/course/presenter.php:198
+#: site/course/presenter.php:197
 #, fuzzy
 msgid "Previous slide"
 msgstr "पाँछा"
 
-#: site/course/presenter.php:199
+#: site/course/presenter.php:198
 #, fuzzy
 msgid "Session"
 msgstr "सत्र एकटा (1)"
 
-#: site/dashboard/checkin-dashboard.php:153
+#: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
 msgstr ""
 
-#: site/dashboard/checkin-dashboard.php:155
+#: site/dashboard/checkin-dashboard.php:153
 #, fuzzy
 msgid "Something went wrong with your checkin process."
 msgstr "उफ़ किछु गलत भऽ गेलाह फेर सॅं। कोशिश करह!"
 
-#: site/dashboard/checkin-dashboard.php:160 site/dashboard/dashboard.php:252
-#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:269
-#: utilities/apis/cta-api.php:298
+#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:250
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
+#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
+#: utilities/apis/cta-api.php:338
 msgid "Congratulations!"
 msgstr ""
 
-#: site/dashboard/checkin-dashboard.php:165
+#: site/dashboard/checkin-dashboard.php:163
 #, fuzzy
 msgid "Checked into session:"
 msgstr "सत्र मे अहाँक, स्वागत  अछि"
 
-#: site/dashboard/checkin-dashboard.php:166
+#: site/dashboard/checkin-dashboard.php:164
 #, php-format
 msgid "%1$d of %2$d"
 msgstr ""
 
-#: site/dashboard/checkin-dashboard.php:169
+#: site/dashboard/checkin-dashboard.php:167
 #, fuzzy
 msgid "Course Progress:"
 msgstr "ज़ूमे प्रगति"
 
-#: site/dashboard/checkin-dashboard.php:170
+#: site/dashboard/checkin-dashboard.php:168
 #, php-format
 msgid "%d%%"
 msgstr ""
 
-#: site/dashboard/dashboard.php:151
+#: site/dashboard/dashboard.php:149
 msgid "Done"
 msgstr ""
 
-#: site/dashboard/dashboard.php:152
+#: site/dashboard/dashboard.php:150
 msgid "Edit"
 msgstr ""
 
-#: site/dashboard/dashboard.php:153 site/pages/_strings-mobile-pwa.php:26
+#: site/dashboard/dashboard.php:151 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "हटाउ"
 
-#: site/dashboard/dashboard.php:155
+#: site/dashboard/dashboard.php:153
 #, fuzzy
 msgid "Active"
 msgstr "पुष्टि करू"
 
-#: site/dashboard/dashboard.php:156
+#: site/dashboard/dashboard.php:154
 #, fuzzy
 msgid "Completed"
 msgstr "पाठ्यक्रम पुरा भेल"
 
-#: site/dashboard/dashboard.php:157
+#: site/dashboard/dashboard.php:155
 #, fuzzy
 msgid "Uncompleted"
 msgstr "पाठ्यक्रम पुरा भेल"
 
-#: site/dashboard/dashboard.php:158
+#: site/dashboard/dashboard.php:156
 #, fuzzy
 msgid "Not Heard"
 msgstr "सुनुँहलू"
 
-#: site/dashboard/dashboard.php:159 site/pages/share.php:126
+#: site/dashboard/dashboard.php:157 site/pages/share.php:122
 msgid "All"
 msgstr ""
 
-#: site/dashboard/dashboard.php:160 site/profile/profile.php:163
+#: site/dashboard/dashboard.php:158 site/profile/profile.php:159
 msgid "Logout"
 msgstr "लॉग आउट"
 
-#: site/dashboard/dashboard.php:161 site/pages/share.php:129
+#: site/dashboard/dashboard.php:159 site/pages/share.php:125
 msgid "Filter"
 msgstr ""
 
-#: site/dashboard/dashboard.php:162
+#: site/dashboard/dashboard.php:160
 msgid "List View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:163
+#: site/dashboard/dashboard.php:161
 msgid "Grid View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:164
+#: site/dashboard/dashboard.php:162
 #, fuzzy
 msgid "View Now"
 msgstr "समूह देखू"
 
-#: site/dashboard/dashboard.php:165
+#: site/dashboard/dashboard.php:163
 #, fuzzy
 msgid "Complete Now"
 msgstr "पाठ्यक्रम पुरा भेल"
 
-#: site/dashboard/dashboard.php:166
+#: site/dashboard/dashboard.php:164
 msgid "View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:167
+#: site/dashboard/dashboard.php:165
 msgid "Menu"
 msgstr ""
 
-#: site/dashboard/dashboard.php:168 site/dashboard/wizard.php:147
-#: site/dashboard/wizard.php:188 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:166 site/dashboard/wizard.php:142
+#: site/dashboard/wizard.php:183 site/profile/profile.php:116
 msgid "Name"
 msgstr "नाम"
 
-#: site/dashboard/dashboard.php:169 site/dashboard/wizard.php:145
-#: site/dashboard/wizard.php:159 site/profile/profile.php:124
-#: zume-training-system.php:316
+#: site/dashboard/dashboard.php:167 site/dashboard/wizard.php:140
+#: site/dashboard/wizard.php:154 site/profile/profile.php:120
+#: zume-training-system.php:320
 msgid "Phone"
 msgstr "फोन"
 
-#: site/dashboard/dashboard.php:170 site/dashboard/wizard.php:157
+#: site/dashboard/dashboard.php:168 site/dashboard/wizard.php:152
 #: site/login/login-template.php:437 site/login/login-template.php:438
-#: site/profile/profile.php:128 zume-training-system.php:314
+#: site/profile/profile.php:124 zume-training-system.php:318
 msgid "Email"
 msgstr "इमेल"
 
-#: site/dashboard/dashboard.php:171
+#: site/dashboard/dashboard.php:169
 msgid "Communications Email"
 msgstr ""
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:146
-#: site/profile/profile.php:132
+#: site/dashboard/dashboard.php:170 site/dashboard/wizard.php:141
+#: site/profile/profile.php:128
 msgid "City"
 msgstr "शहर"
 
-#: site/dashboard/dashboard.php:173
+#: site/dashboard/dashboard.php:171
 #, fuzzy
 msgid "No Locations found"
 msgstr "कोइ इस्तेमाल करऽ वला नहि भेटल ।"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:165
-#: site/dashboard/wizard.php:192 site/pages/_strings-mobile-pwa.php:16
-#: site/parts/language-menu.php:4 site/profile/profile.php:142
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:160
+#: site/dashboard/wizard.php:187 site/pages/_strings-mobile-pwa.php:16
+#: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
 msgstr "भाषा"
 
-#: site/dashboard/dashboard.php:175 site/profile/profile.php:157
-msgid "Save"
-msgstr "सेव करू (सुरक्षित रखूं)"
-
-#: site/dashboard/dashboard.php:176
+#: site/dashboard/dashboard.php:174
 #, fuzzy
 msgid "Edit Profile"
 msgstr "ज़ूमे प्रोफाइल"
 
-#: site/dashboard/dashboard.php:177
-msgid "Check out this Zume concept"
+#: site/dashboard/dashboard.php:175
+msgid "Check out this Zúme concept"
 msgstr ""
 
-#: site/dashboard/dashboard.php:178
+#: site/dashboard/dashboard.php:176
 #, fuzzy
 msgid "Preview"
 msgstr "देखू"
 
-#: site/dashboard/dashboard.php:179 site/dashboard/dashboard.php:243
-#: site/dashboard/dashboard.php:250
+#: site/dashboard/dashboard.php:177 site/dashboard/dashboard.php:241
+#: site/dashboard/dashboard.php:248
 #, php-format
 msgid "Add new %s"
 msgstr ""
 
-#: site/dashboard/dashboard.php:179
+#: site/dashboard/dashboard.php:177
 #, fuzzy
 msgid "Commitment"
 msgstr "अन्य  प्रतिबद्धता"
 
-#: site/dashboard/dashboard.php:180 site/pages/share.php:86
+#: site/dashboard/dashboard.php:178 site/pages/share.php:82
 #, fuzzy
 msgid "Copy Link"
 msgstr "जुड़ू (लिंक करू)"
 
-#: site/dashboard/dashboard.php:181
+#: site/dashboard/dashboard.php:179
 msgid "Copy this link and send it to your friends 🙂"
 msgstr ""
 
-#: site/dashboard/dashboard.php:182 site/pages/share.php:88
+#: site/dashboard/dashboard.php:180 site/pages/share.php:84
 msgid "Thanks!"
 msgstr ""
 
-#: site/dashboard/dashboard.php:183 site/pages/share.php:89
+#: site/dashboard/dashboard.php:181 site/pages/share.php:85
 #, fuzzy
 msgid "Link copied"
 msgstr "सं जुड़लिये"
 
-#: site/dashboard/dashboard.php:184
+#: site/dashboard/dashboard.php:182
 #, fuzzy
 msgid "Getting Started"
 msgstr "शुरुआत करु"
 
-#: site/dashboard/dashboard.php:185 utilities/apis/cta-api.php:253
-#: utilities/apis/cta-api.php:255
+#: site/dashboard/dashboard.php:183 utilities/apis/cta-api.php:250
+#: utilities/apis/cta-api.php:252
 #, fuzzy
 msgid "Set Profile"
 msgstr "ज़ूमे प्रोफाइल"
 
-#: site/dashboard/dashboard.php:186
+#: site/dashboard/dashboard.php:184
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr ""
 
-#: site/dashboard/dashboard.php:187
+#: site/dashboard/dashboard.php:185
 #, fuzzy
 msgid "Plan a Training"
 msgstr "1 प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:188
+#: site/dashboard/dashboard.php:186
 msgid ""
 "Create your own training group with our easy to set up wizard or join one of "
 "our online trainings"
 msgstr ""
 
-#: site/dashboard/dashboard.php:190
+#: site/dashboard/dashboard.php:188
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
 
-#: site/dashboard/dashboard.php:192
+#: site/dashboard/dashboard.php:190
 #, fuzzy
 msgid "My Progress"
 msgstr "प्रगति"
 
-#: site/dashboard/dashboard.php:193
+#: site/dashboard/dashboard.php:191
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
 
-#: site/dashboard/dashboard.php:194
+#: site/dashboard/dashboard.php:192
 msgid "Information about progress"
 msgstr ""
 
-#: site/dashboard/dashboard.php:195
+#: site/dashboard/dashboard.php:193
 #, fuzzy
 msgid "My Training"
 msgstr "1 प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:196
+#: site/dashboard/dashboard.php:194
 #, fuzzy
 msgid "My Trainings"
 msgstr "1 प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:197
+#: site/dashboard/dashboard.php:195
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
 
-#: site/dashboard/dashboard.php:198
-#, fuzzy
-msgid "3-Month Plan"
-msgstr "तीन माहक योजना"
-
-#: site/dashboard/dashboard.php:199
+#: site/dashboard/dashboard.php:197
 #, fuzzy
 msgid "Create a Plan"
 msgstr "तीन माहिना योजना"
 
-#: site/dashboard/dashboard.php:201
+#: site/dashboard/dashboard.php:199
 #, fuzzy
 msgid "Three Month Plan Locked"
 msgstr "तीन माहक योजना"
 
-#: site/dashboard/dashboard.php:202
+#: site/dashboard/dashboard.php:200
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
 
-#: site/dashboard/dashboard.php:203
+#: site/dashboard/dashboard.php:201
 msgid "Unlock now"
 msgstr ""
 
-#: site/dashboard/dashboard.php:204
+#: site/dashboard/dashboard.php:202
 #, fuzzy
 msgid "Practicing"
 msgstr "अभ्यास करह"
 
-#: site/dashboard/dashboard.php:205
+#: site/dashboard/dashboard.php:203
 #, fuzzy
 msgid "My Coach"
 msgstr "कोच"
 
-#: site/dashboard/dashboard.php:206
+#: site/dashboard/dashboard.php:204
 msgid "Quick access to your coach at all times."
 msgstr ""
 
-#: site/dashboard/dashboard.php:207
+#: site/dashboard/dashboard.php:205
 #, fuzzy
 msgid "My Tools"
 msgstr "उपकरण"
 
-#: site/dashboard/dashboard.php:208
+#: site/dashboard/dashboard.php:206
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
 
-#: site/dashboard/dashboard.php:209
+#: site/dashboard/dashboard.php:207
 #, fuzzy
 msgid "My Plans"
 msgstr "हमर योजना"
 
-#: site/dashboard/dashboard.php:210
+#: site/dashboard/dashboard.php:208
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
 
-#: site/dashboard/dashboard.php:211
+#: site/dashboard/dashboard.php:209
 #, fuzzy
 msgid "My Plans are Locked"
 msgstr "1 प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:212
+#: site/dashboard/dashboard.php:210
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
 
-#: site/dashboard/dashboard.php:213
+#: site/dashboard/dashboard.php:211
 #, fuzzy
 msgid "My Churches"
 msgstr "2 आसान मंडली"
 
-#: site/dashboard/dashboard.php:214
+#: site/dashboard/dashboard.php:212
 msgid "Unlock the My Churches area by joining the community."
 msgstr ""
 
-#: site/dashboard/dashboard.php:215
+#: site/dashboard/dashboard.php:213
 msgid "My Maps"
 msgstr ""
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:214
 msgid "My Maps are Locked"
 msgstr ""
 
-#: site/dashboard/dashboard.php:217
+#: site/dashboard/dashboard.php:215
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -3705,238 +3727,238 @@ msgid ""
 "seeing the great commission fulfilled."
 msgstr ""
 
-#: site/dashboard/dashboard.php:218
+#: site/dashboard/dashboard.php:216
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:219 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:217 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "पाठ्यक्रम"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:218 site/parts/footer.php:29
 #, fuzzy
 msgid "10 Session Course"
 msgstr "सत्र एकटा (1)"
 
-#: site/dashboard/dashboard.php:221 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:219 site/parts/footer.php:30
 #, fuzzy
 msgid "20 Session Course"
 msgstr "सत्र एकटा (1)"
 
-#: site/dashboard/dashboard.php:222 site/parts/footer.php:31
+#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
 msgstr ""
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:221
 msgid "Heard"
 msgstr "सुनुँहलू"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:222
 msgid "Have I heard about this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:223
 msgid "Obeyed"
 msgstr "आज्ञाक पालन केलहूँ"
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:224
 msgid "Have I obeyed this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:227
+#: site/dashboard/dashboard.php:225
 msgid "Shared"
 msgstr "मिलान भेलाह"
 
-#: site/dashboard/dashboard.php:228
+#: site/dashboard/dashboard.php:226
 msgid "Have I shared this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:229
+#: site/dashboard/dashboard.php:227
 msgid "Trained"
 msgstr "प्रशिक्षित"
 
-#: site/dashboard/dashboard.php:230
+#: site/dashboard/dashboard.php:228
 msgid "Have I trained others to share this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:232 site/dashboard/wizard.php:193
-#: site/pages/training.php:150 utilities/apis/cta-api.php:153
+#: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
+#: site/pages/training.php:146 utilities/apis/cta-api.php:150
 msgid "Join"
 msgstr ""
 
-#: site/dashboard/dashboard.php:233
+#: site/dashboard/dashboard.php:231
 msgid "Join the community to get access to this area."
 msgstr ""
 
-#: site/dashboard/dashboard.php:234
+#: site/dashboard/dashboard.php:232
 #, fuzzy
 msgid "Community links"
 msgstr "समुदाय"
 
-#: site/dashboard/dashboard.php:236
+#: site/dashboard/dashboard.php:234
 #, fuzzy
 msgid "Previous Slide"
 msgstr "पाँछा"
 
-#: site/dashboard/dashboard.php:237
+#: site/dashboard/dashboard.php:235
 #, fuzzy
 msgid "Next Slide"
 msgstr "अगला सत्र"
 
-#: site/dashboard/dashboard.php:238
+#: site/dashboard/dashboard.php:236
 #, fuzzy
 msgid "Group Members"
 msgstr "समूहक नाम"
 
-#: site/dashboard/dashboard.php:239
+#: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Mark Completed"
 msgstr "पाठ्यक्रम पुरा भेल"
 
-#: site/dashboard/dashboard.php:240 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:238 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "सत्र शुरूआत करह"
 
-#: site/dashboard/dashboard.php:241
+#: site/dashboard/dashboard.php:239
 msgid "Show details"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242
+#: site/dashboard/dashboard.php:240
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:244 utilities/apis/cta-api.php:238
-#: utilities/apis/cta-api.php:240
+#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:235
+#: utilities/apis/cta-api.php:237
 #, fuzzy
 msgid "Invite Friends"
 msgstr "किछु मित केँ नोता दिअ"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:243
 msgid "Click to add your first church"
 msgstr ""
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:244
 #, fuzzy
 msgid "Church Name"
 msgstr "2 आसान मंडली"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:245
 #, fuzzy
 msgid "Number of People"
 msgstr "सदस्‍यक संख्‍या"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:246
 #, fuzzy
 msgid "Church Location"
 msgstr "वर्तमान जगह कऽ सुरक्षित करह "
 
-#: site/dashboard/dashboard.php:249
+#: site/dashboard/dashboard.php:247
 #, fuzzy
 msgid "Parent Church"
 msgstr "दुटा मंडली क भाग"
 
-#: site/dashboard/dashboard.php:250
+#: site/dashboard/dashboard.php:248
 #, fuzzy
 msgid "Church"
 msgstr "2 आसान मंडली"
 
-#: site/dashboard/dashboard.php:251
+#: site/dashboard/dashboard.php:249
 #, fuzzy
 msgid "cancel"
 msgstr "हटा दिअ"
 
-#: site/dashboard/dashboard.php:253
+#: site/dashboard/dashboard.php:251
 #, fuzzy
 msgid "You have requested a coach"
 msgstr "अहॉं कोचिंग के लेल अनुरोध केयने छी।"
 
-#: site/dashboard/dashboard.php:254
+#: site/dashboard/dashboard.php:252
 #, fuzzy
 msgid "You have joined a training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/dashboard/dashboard.php:255
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "You have set your profile"
 msgstr "अहाँ केँ प्रोफाइल"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:254
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
 msgstr ""
 
-#: site/dashboard/dashboard.php:256 utilities/apis/cta-api.php:297
+#: site/dashboard/dashboard.php:254 utilities/apis/cta-api.php:294
 #, fuzzy
 msgid "3 month plan"
 msgstr "तीन माहक योजना"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:255
 #, fuzzy
 msgid "You have joined the community"
 msgstr "समुदाय"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:256
 msgid "Will you do 1 or 2 hour training sessions?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:257
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "सत्र"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:258
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "सत्र"
 
-#: site/dashboard/dashboard.php:261
+#: site/dashboard/dashboard.php:259
 msgid "What time of day?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:260
 #, fuzzy
 msgid "Morning"
 msgstr "प्रशिक्षण"
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:261
 msgid "Afternoon"
 msgstr ""
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:262
 msgid "Evening"
 msgstr ""
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:263
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "अहाँ केँ कोना लगैत अछि?"
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:264
 msgid "Every day"
 msgstr ""
 
-#: site/dashboard/dashboard.php:267
+#: site/dashboard/dashboard.php:265
 msgid "Once a week"
 msgstr ""
 
-#: site/dashboard/dashboard.php:268
+#: site/dashboard/dashboard.php:266
 msgid "Twice a month"
 msgstr ""
 
-#: site/dashboard/dashboard.php:269
+#: site/dashboard/dashboard.php:267
 msgid "Once a month"
 msgstr ""
 
-#: site/dashboard/dashboard.php:270
+#: site/dashboard/dashboard.php:268
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "परमेश्वरक बारे मे अहाँ की सिखैत छि ?"
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:275
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -3944,12 +3966,12 @@ msgid ""
 msgstr ""
 "हम अपन खिसा [गवाही] आ परमेश्वरक खिसा [सुसमाचार ]निम्नलिखित व्यक्ति केँ संगे मिलान करब :"
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:276
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "हम निम्नलिखित लोकक  हमर संग एक जवाबदेही समूह शुरू करत्वऽ  मे आमंत्रित करब : "
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:277
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -3957,11 +3979,11 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन स्वयं क जवाबदेही समूह शुरू करऽ केँ चुनौती दैब  आ  हुनका उह कोना "
 "करैत अछि एकर  प्रशिक्षण दैब:"
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:278
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "हम निम्नलिखित लोकक  हमर  संग एक  3/3 समूह शुरू करषऽ  मे आमंत्रित करब:"
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:279
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -3969,7 +3991,7 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन (स्वयं) खुद केँ 3/3 समूह शुरू  चुनौती करऽ  कि चुनौती दैब आ हुनकर "
 "ओकर  कोना  करैत अछि  एकर प्रशिक्षण दैब:"
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -3978,16 +4000,16 @@ msgstr ""
 "हम निम्नलिखित लोकक  3/3 आशा  या खोज समूह मे भाग लिअ केँ  लेल [ज़ूमे गाइड बुक  परिशिष्ट "
 "देखूं] आमंत्रित करब"
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:281
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "हम निम्नलिखित लोकक  हमर  संग प्रार्थना चलवै मे भाग लिअ केँ लेल आमंत्रित करब"
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:282
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "हम प्रार्थना करब चलैत चलैत एक बेर हरेक [ एक/ दिन/ सप्ताह /महीना)"
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:283
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -3996,7 +4018,7 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन खिस्सा आ  परमेश्वरक खिसा  मिलान करऽ केँ लेल  हुनका लैंस करब आ  "
 "हुनके संबंधपरक  नेटवर्क मे लोकक 100  की सूची बनायब:"
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:284
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4004,175 +4026,175 @@ msgstr ""
 "हम निम्नलिखित  लोकक प्रार्थना चलबैत उपकरण एक आवधिक आधार पर  इस्तेमाल करऽ केँ लेल "
 "चुनौती दैब :"
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:285
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "हम प्रार्थना चलबैत उपकरण इस्तेमाल एक बेर हरेक [ दिन /सप्ताह/ महीना) करब।"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:286
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 "हम निम्नलिखित लोकक अगुवाई सेल जकर   हम नेतृत्व करब ओकर हिस्सा हौले केँ लेल आमंत्रित करब:"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:287
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 "हम निम्नलिखित लोकक ई  ज़ूमे प्रशिक्षण प्रोत्साहित पाठ्यक्रम सँ जाय केँ लेल प्रोत्साहित करब:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:288
 #, fuzzy
 msgid "Other commitments:"
 msgstr "अन्य  प्रतिबद्धता"
 
-#: site/dashboard/wizard.php:129
+#: site/dashboard/wizard.php:124
 msgid "Bad Wizard"
 msgstr ""
 
-#: site/dashboard/wizard.php:130
+#: site/dashboard/wizard.php:125
 msgid "You have fallen in with some very bad wizards!"
 msgstr ""
 
-#: site/dashboard/wizard.php:131
+#: site/dashboard/wizard.php:126
 msgid "Wizard is already completed"
 msgstr ""
 
-#: site/dashboard/wizard.php:132
+#: site/dashboard/wizard.php:127
 msgid "Get back home"
 msgstr ""
 
-#: site/dashboard/wizard.php:133 site/login/login-template.php:408
+#: site/dashboard/wizard.php:128 site/login/login-template.php:408
 msgid "Back"
 msgstr ""
 
-#: site/dashboard/wizard.php:134 site/dashboard/wizard.php:153
-#: site/dashboard/wizard.php:172 site/pages/_strings-mobile-pwa.php:34
+#: site/dashboard/wizard.php:129 site/dashboard/wizard.php:148
+#: site/dashboard/wizard.php:167 site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "आँगा"
 
-#: site/dashboard/wizard.php:135
+#: site/dashboard/wizard.php:130
 msgid "Skip"
 msgstr ""
 
-#: site/dashboard/wizard.php:136 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:131 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "खत्म"
 
-#: site/dashboard/wizard.php:137
+#: site/dashboard/wizard.php:132
 #, fuzzy
 msgid "No locations found"
 msgstr "कोइ इस्तेमाल करऽ वला नहि भेटल ।"
 
-#: site/dashboard/wizard.php:138
+#: site/dashboard/wizard.php:133
 #, fuzzy
 msgid "Join or start a training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/dashboard/wizard.php:139
+#: site/dashboard/wizard.php:134
 #, fuzzy
 msgid "Start a training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/dashboard/wizard.php:140
+#: site/dashboard/wizard.php:135
 #, fuzzy
 msgid "Join a public training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/dashboard/wizard.php:141
+#: site/dashboard/wizard.php:136
 msgid "Skip for now"
 msgstr ""
 
-#: site/dashboard/wizard.php:144
+#: site/dashboard/wizard.php:139
 #, fuzzy
 msgid "Complete your profile"
 msgstr "अहाँ केँ प्रोफाइल"
 
-#: site/dashboard/wizard.php:148
+#: site/dashboard/wizard.php:143
 msgid "What is your name?"
 msgstr ""
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:144
 msgid "What is your phone number?"
 msgstr ""
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:145
 msgid "Phone number can only contain numbers, brackets and hyphens"
 msgstr ""
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:146
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "परमेश्वरक बारे मे अहाँ की सिखैत छि ?"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:147
 msgid "This is your approximate location."
 msgstr ""
 
-#: site/dashboard/wizard.php:156
+#: site/dashboard/wizard.php:151
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "अहॉंक शहर वा राज्‍य वा पिन कोड की अछि?"
 
-#: site/dashboard/wizard.php:158 zume-training-system.php:315
+#: site/dashboard/wizard.php:153 zume-training-system.php:319
 msgid "Text"
 msgstr "सामग्री"
 
-#: site/dashboard/wizard.php:160 zume-training-system.php:317
+#: site/dashboard/wizard.php:155 zume-training-system.php:321
 #, fuzzy
 msgid "Whatsapp"
 msgstr "व्हाट्सएप"
 
-#: site/dashboard/wizard.php:161 zume-training-system.php:318
+#: site/dashboard/wizard.php:156 zume-training-system.php:322
 #, fuzzy
 msgid "Signal"
 msgstr "साइन-अप"
 
-#: site/dashboard/wizard.php:162 zume-training-system.php:319
+#: site/dashboard/wizard.php:157 zume-training-system.php:323
 msgid "Telegram"
 msgstr ""
 
-#: site/dashboard/wizard.php:163
+#: site/dashboard/wizard.php:158
 #, fuzzy
 msgid "Facebook Messenger"
 msgstr "फेसबुक"
 
-#: site/dashboard/wizard.php:164
+#: site/dashboard/wizard.php:159
 msgid "What is your language preference?"
 msgstr ""
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:161
 msgid "How can we serve you?"
 msgstr "How can we serve you?"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:162
 #, fuzzy
 msgid "Coaching"
 msgstr "कोच"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:163
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "I need technical assistance"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:164
 msgid "Question about implementing the training"
 msgstr ""
 
-#: site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:165
 msgid "Question about the content"
 msgstr ""
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:166
 msgid "Help with what to do after starting a group"
 msgstr ""
 
-#: site/dashboard/wizard.php:173
+#: site/dashboard/wizard.php:168
 msgid "Please give a response to this question"
 msgstr ""
 
-#: site/dashboard/wizard.php:174
+#: site/dashboard/wizard.php:169
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
@@ -4180,111 +4202,111 @@ msgstr ""
 "इह अनुरोध केँ जमा करऽ पर  ,हम अहाँ केँ नजदीक केँ कोनो एकटा कोच (प्रशिक्षक ) केँ संगे अहुँ केँ "
 "जोड़े केँ लेल पुरा कोशिश करब।"
 
-#: site/dashboard/wizard.php:175
+#: site/dashboard/wizard.php:170
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
 
-#: site/dashboard/wizard.php:176
+#: site/dashboard/wizard.php:171
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "अहॉं कोचिंग के लेल अनुरोध केयने छी।"
 
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:172
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "एकटा कोचक संग कनेक्ट करह"
 
-#: site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:173
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "हमरा एकटा शिक्षक (कोच) सेँ जोड़ू"
 
-#: site/dashboard/wizard.php:179 site/dashboard/wizard.php:184
-#: site/dashboard/wizard.php:198 site/dashboard/wizard.php:205
+#: site/dashboard/wizard.php:174 site/dashboard/wizard.php:179
+#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:200
 msgid "Please wait while we connect you"
 msgstr ""
 
-#: site/dashboard/wizard.php:183
+#: site/dashboard/wizard.php:178
 msgid "Joining Plan"
 msgstr ""
 
-#: site/dashboard/wizard.php:185
+#: site/dashboard/wizard.php:180
 msgid "The training link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:181
 #, php-format
 msgid "Successfully joined training %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:182
 #, fuzzy
 msgid "Something went wrong while joining the plan"
 msgstr "किछु गलत भऽ गेलाह। माफ़ करू कि अहाँ फेर सँ कोशिश कऽ सकेय छी?"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:184
 #, fuzzy
 msgid "Next Session Date"
 msgstr "अगला सत्र"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:185
 #, fuzzy
 msgid "Start Time"
 msgstr "शुरूआत करह"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:186
 msgid "Timezone"
 msgstr ""
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:189
 msgid "There are currently no public trainings available."
 msgstr ""
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:192
 msgid "Connecting with friend"
 msgstr ""
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:194
 msgid "The friend link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:200
+#: site/dashboard/wizard.php:195
 #, php-format
 msgid "Successfully connected with friend %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:201
+#: site/dashboard/wizard.php:196
 msgid "Something went wrong while connecting with friend"
 msgstr ""
 
-#: site/dashboard/wizard.php:204
+#: site/dashboard/wizard.php:199
 #, fuzzy
 msgid "Checking in"
 msgstr "जांच-सुची"
 
-#: site/dashboard/wizard.php:206
+#: site/dashboard/wizard.php:201
 msgid "The checkin link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:207
+#: site/dashboard/wizard.php:202
 msgid "Successfully checked in"
 msgstr ""
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:203
 #, fuzzy
 msgid "Something went wrong while checking in"
 msgstr "उफ़ किछु गलत भऽ गेलाह फेर सॅं। कोशिश करह!"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:206
 msgid "Invite your friends to join your training"
 msgstr ""
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:207
 msgid ""
 "Share the link below with your friends so that they can join your training."
 msgstr ""
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:208
 msgid "Join my zume plan"
 msgstr ""
 
@@ -4385,9 +4407,9 @@ msgstr ""
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
 #: site/login/login-template.php:690 site/pages/follow-jesus.php:151
-#: site/pages/home.php:253 site/parts/footer.php:16 site/parts/nav.php:38
-#: site/parts/nav.php:100 utilities/apis/cta-api.php:136
-#: utilities/apis/cta-api.php:138
+#: site/pages/home.php:247 site/parts/footer.php:16 site/parts/nav.php:38
+#: site/parts/nav.php:100 utilities/apis/cta-api.php:133
+#: utilities/apis/cta-api.php:135
 msgid "Register"
 msgstr "पंजीकरण"
 
@@ -4422,7 +4444,7 @@ msgid "Welcome back!"
 msgstr "स्वागत अछि !"
 
 #: site/login/login-template.php:589 site/login/login-template.php:638
-#: site/login/login-template.php:713 site/pages/home.php:116
+#: site/login/login-template.php:713 site/pages/home.php:110
 #: site/parts/nav.php:39 site/parts/nav.php:101
 msgid "Login"
 msgstr "लाँग-इन"
@@ -4581,12 +4603,12 @@ msgstr "ई ऐप कऽ एकटा नया संस्‍करण उप
 msgid "Storage"
 msgstr "स्‍टोरेज"
 
-#: site/pages/about.php:91
+#: site/pages/about.php:87
 #, fuzzy
-msgid "What is Zume Training?"
+msgid "What is Zúme Training?"
 msgstr "ज़ूमे प्रशिक्षण"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:91
 #, fuzzy
 msgid ""
 "Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew "
@@ -4601,14 +4623,14 @@ msgstr ""
 "इस्तेमाल करु, परमेश्वरक राज्य केँ लेल एकटा असाधारण प्रभाव सकय छी। ज़ूमे के लक्ष्य अछि कि "
 "साधारण विश्वासियोक लैस आ सशक्त करु हरेक पड़ोसी तक  पहुंचे केँ लेल।"
 
-#: site/pages/about.php:99
+#: site/pages/about.php:95
 #, fuzzy
 msgid ""
-"Zume Training exists to saturate the globe with multiplying disciples in our "
+"Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
 msgstr "दुनियाक संतृप्त करऽ केँ लेल शिष्याक बहुगणित करब।"
 
-#: site/pages/about.php:104
+#: site/pages/about.php:100
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -4619,7 +4641,7 @@ msgid ""
 "idea evolved into what is now known as Zúme."
 msgstr ""
 
-#: site/pages/about.php:105
+#: site/pages/about.php:101
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -4628,7 +4650,7 @@ msgid ""
 "spiritually dark places."
 msgstr ""
 
-#: site/pages/about.php:118
+#: site/pages/about.php:114
 #, fuzzy
 msgid ""
 "Launched on February 14, 2017, through Kingdom collaboration, Zúme Training "
@@ -4640,77 +4662,77 @@ msgstr ""
 "चुंकि ज़ूमे कोनो संगठन द्वारा  नहि चलवैत जायते ,एहि आस्था केँ बयानक औपचारिक ब्योरा नहि "
 "अछि।हम सब  जे शामिल छी ,तथापि लोसैन वाचा पर सहमत होयत ।"
 
-#: site/pages/about.php:124
+#: site/pages/about.php:120
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
 
-#: site/pages/about.php:125
+#: site/pages/about.php:121
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
 
-#: site/pages/about.php:132
+#: site/pages/about.php:128
 msgid "The vision of Zúme has two parts:"
 msgstr ""
 
-#: site/pages/about.php:136
+#: site/pages/about.php:132
 msgid "1 Training"
 msgstr "1 प्रशिक्षण"
 
-#: site/pages/about.php:140
+#: site/pages/about.php:136
 msgid "Part 1:"
 msgstr ""
 
-#: site/pages/about.php:141
+#: site/pages/about.php:137
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
 
-#: site/pages/about.php:147
+#: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "2 आसान मंडली"
 
-#: site/pages/about.php:151
+#: site/pages/about.php:147
 msgid "Part 2:"
 msgstr ""
 
-#: site/pages/about.php:152
+#: site/pages/about.php:148
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
 
-#: site/pages/about.php:158
+#: site/pages/about.php:154
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
 
-#: site/pages/about.php:161
+#: site/pages/about.php:157
 #, fuzzy
 msgid "Get Started"
 msgstr "शुरुआत करु"
 
-#: site/pages/about.php:166
+#: site/pages/about.php:162
 #, fuzzy
-msgid "How does Zume Training Work?"
+msgid "How does Zúme Training Work?"
 msgstr "ज़ूमे प्रशिक्षण"
 
-#: site/pages/about.php:171 site/pages/home.php:217
+#: site/pages/about.php:167 site/pages/home.php:211
 #, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
 
-#: site/pages/about.php:175 site/pages/home.php:221
+#: site/pages/about.php:171 site/pages/home.php:215
 #, fuzzy, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
@@ -4719,13 +4741,13 @@ msgstr ""
 "वीडियो और आडियो अहांँक बुनियादी सिद्धांत बुझावैला और शिष्य केँ बढौवे केँ लेल सहायता करऽ केँ "
 "लेल अछि।"
 
-#: site/pages/about.php:179 site/pages/home.php:225
+#: site/pages/about.php:175 site/pages/home.php:219
 #, fuzzy, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr "सामुहिक चर्चा अहांक समुह केँ इह सोचे मे सहायता कऽ रहल अछि"
 
-#: site/pages/about.php:183 site/pages/home.php:229
+#: site/pages/about.php:179 site/pages/home.php:223
 #, fuzzy, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
@@ -4734,7 +4756,7 @@ msgstr ""
 "आसान अभ्यास जे अहाँक समुह केँ सहायता करताह की जे अहाँ सिख रहल छी इह अपन काज मे लागु "
 "करऽ केँ लेल।"
 
-#: site/pages/about.php:187 site/pages/home.php:233
+#: site/pages/about.php:183 site/pages/home.php:227
 #, fuzzy, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
@@ -4743,31 +4765,32 @@ msgstr ""
 "सत्र की चुनौतियां द्वारा सत्रो केँ बीच में अहाँक समुह केँ सिखैत और बढौत जाय में सहायता भेटल "
 "अछि।"
 
-#: site/pages/about.php:198
+#: site/pages/about.php:194
 msgid "Before you start."
 msgstr ""
 
-#: site/pages/about.php:205
-msgid "Zume is NOT like other trainings!"
-msgstr ""
+#: site/pages/about.php:201
+#, fuzzy
+msgid "Zúme is NOT like other trainings!"
+msgstr "प्रशिक्षण शुरुआत करैला चाहैत छी?"
 
-#: site/pages/about.php:207
+#: site/pages/about.php:203
 #, fuzzy
 msgid "First:"
 msgstr "पहुँलुक"
 
-#: site/pages/about.php:208
+#: site/pages/about.php:204
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
 
-#: site/pages/about.php:211
+#: site/pages/about.php:207
 msgid "Second:"
 msgstr ""
 
-#: site/pages/about.php:212
+#: site/pages/about.php:208
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
@@ -4775,128 +4798,128 @@ msgid ""
 "power in your faith."
 msgstr ""
 
-#: site/pages/about.php:220
+#: site/pages/about.php:216
 #, fuzzy
 msgid "What's required"
 msgstr "पासवर्ड अवश्य"
 
-#: site/pages/about.php:223 site/pages/training.php:264
+#: site/pages/about.php:219 site/pages/training.php:260
 #, fuzzy
 msgid "Needed for the training:"
 msgstr "प्रशिक्षण शुरुआत करैला चाहैत छी?"
 
-#: site/pages/about.php:225 site/pages/training.php:266
+#: site/pages/about.php:221 site/pages/training.php:262
 msgid "At least 3 people, but ideally less than 12."
 msgstr ""
 
-#: site/pages/about.php:226 site/pages/training.php:267
+#: site/pages/about.php:222 site/pages/training.php:263
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
 
-#: site/pages/about.php:227 site/pages/training.php:268
+#: site/pages/about.php:223 site/pages/training.php:264
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
 
-#: site/pages/about.php:236 site/pages/training.php:270
+#: site/pages/about.php:232 site/pages/training.php:266
 #, fuzzy
 msgid "NOT needed for the training:"
 msgstr "प्रशिक्षण शुरुआत करैला चाहैत छी?"
 
-#: site/pages/about.php:238 site/pages/training.php:272
+#: site/pages/about.php:234 site/pages/training.php:268
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
 
-#: site/pages/about.php:239 site/pages/training.php:273
+#: site/pages/about.php:235 site/pages/training.php:269
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
 
-#: site/pages/about.php:250
+#: site/pages/about.php:246
 #, fuzzy
 msgid "Connecting with a Coach."
 msgstr "एकटा कोचक संग कनेक्ट करह"
 
-#: site/pages/about.php:257
+#: site/pages/about.php:253
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
 
-#: site/pages/about.php:267
+#: site/pages/about.php:263
 msgid "Are you ready? Register today."
 msgstr ""
 
-#: site/pages/about.php:271 site/pages/home.php:117
+#: site/pages/about.php:267 site/pages/home.php:111
 #, fuzzy
 msgid "Register Free"
 msgstr "बिन पाइय सेँ पंजीयन करह"
 
-#: site/pages/checkin.php:84 site/pages/friend-invite.php:83
+#: site/pages/checkin.php:87 site/pages/friend-invite.php:77
 msgid "Please enter a friend code."
 msgstr ""
 
-#: site/pages/checkin.php:85 site/pages/friend-invite.php:84
-#: site/pages/plan-invite.php:84 site/pages/plan-invite.php:180
+#: site/pages/checkin.php:88 site/pages/friend-invite.php:78
+#: site/pages/plan-invite.php:78 site/pages/plan-invite.php:174
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/pages/checkin.php:154
+#: site/pages/checkin.php:157
 #, fuzzy
 msgid "Checkin"
 msgstr "जांच-सुची"
 
-#: site/pages/checkin.php:156
+#: site/pages/checkin.php:159
 msgid "Use the code on the screen or in the book"
 msgstr ""
 
-#: site/pages/checkin.php:161 site/pages/friend-invite.php:177
-#: site/pages/plan-invite.php:188
+#: site/pages/checkin.php:164 site/pages/friend-invite.php:171
+#: site/pages/plan-invite.php:182
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:90 site/pages/donate.php:104 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
-#: site/pages/donate.php:99
+#: site/pages/donate.php:95
 msgid "We are crowdfunded, we love that you want to be part of us."
 msgstr ""
 
-#: site/pages/donate.php:100
+#: site/pages/donate.php:96
 msgid "If you want to help in specific ways…"
 msgstr ""
 
-#: site/pages/faq.php:92
+#: site/pages/faq.php:88
 #, fuzzy
 msgid "FAQ"
 msgstr "अक्सर पूछे या बुझै वला सवाल"
 
-#: site/pages/faq.php:94 site/pages/home.php:192 site/profile/profile.php:166
+#: site/pages/faq.php:90 site/pages/home.php:186 site/profile/profile.php:162
 #, fuzzy
 msgid "User Profile"
 msgstr "अहाँ केँ प्रोफाइल"
 
-#: site/pages/follow-jesus.php:94 site/pages/pieces.php:97
+#: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
 msgstr "इ वीडियो देखूँ"
 
-#: site/pages/follow-jesus.php:95 site/pages/pieces.php:98
+#: site/pages/follow-jesus.php:95 site/pages/pieces.php:95
 msgid "Ask Yourself"
 msgstr "अहाँ अपन सेँ पुछूँ"
 
-#: site/pages/follow-jesus.php:96 site/pages/pieces.php:99
+#: site/pages/follow-jesus.php:96 site/pages/pieces.php:96
 msgid "Download Free Guidebook"
 msgstr "(गाइड बुक) सहायता किताब नि:शुल्क डाउनलोड करह"
 
-#: site/pages/follow-jesus.php:97 site/pages/pieces.php:100
+#: site/pages/follow-jesus.php:97 site/pages/pieces.php:97
 msgid "Listen and Read Along"
 msgstr "सुनूह आ संगे पढ़ूँ"
 
@@ -5033,25 +5056,25 @@ msgstr ""
 "\"कि होयत जँ केओ दोस्त, परिवार आ अन्य लोक हमर संग यीशुक अनुसरण करब \n"
 "शुरुआत कऽ दिअ।\""
 
-#: site/pages/friend-invite.php:170
+#: site/pages/friend-invite.php:164
 #, fuzzy
 msgid "Friend Invitation"
 msgstr "स्वीकार केल गेल निमंत्रण"
 
-#: site/pages/friend-invite.php:172 site/pages/plan-invite.php:183
+#: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
 msgid "Use the code your friend sent you."
 msgstr ""
 
-#: site/pages/get-a-coach.php:92 site/pages/get-a-coach.php:120
+#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:116
 #, fuzzy
 msgid "Get A Coach"
 msgstr "एकटा कोच (प्रशिक्षक) प्राप्त करू"
 
-#: site/pages/get-a-coach.php:102
+#: site/pages/get-a-coach.php:98
 msgid "Coaches"
 msgstr "कोच (प्रशिक्षक)"
 
-#: site/pages/get-a-coach.php:103
+#: site/pages/get-a-coach.php:99
 #, fuzzy
 msgid ""
 "Our network of volunteer coaches are people like you, people who are "
@@ -5061,28 +5084,28 @@ msgstr ""
 "हमर नेटवर्क केँ कोच  (प्रशिक्षक) अही जेहन लोक अछि, जे लोक उत्साहित अछि परमेश्वर से प्रेम "
 "करै मे, दोसर से प्रेम करै मे आ उ महान पैघ काजक पालन करऽ मे ।"
 
-#: site/pages/get-a-coach.php:104
+#: site/pages/get-a-coach.php:100
 #, fuzzy
 msgid ""
-"A coach is someone who will come alongside you as you implement the Zume "
+"A coach is someone who will come alongside you as you implement the Zúme "
 "tools and training."
 msgstr ""
 "एकटा कोच (प्रशिक्षक) केओ एहन आदमी अछि जे अहाँ केँ संगे आबि जायत जखन अहाँ ज़ूमे उपकरण आ "
 "प्रशिक्षण केँ लागु करब ।"
 
-#: site/pages/get-a-coach.php:108
+#: site/pages/get-a-coach.php:104
 msgid "It's Free"
 msgstr "इह मुफ्त  अछि"
 
-#: site/pages/get-a-coach.php:109
+#: site/pages/get-a-coach.php:105
 msgid "Coaching is free. You can opt out at any time."
 msgstr "ट्यूशन मुफ्त अछि। अहाँ कोनो समय में बाहर जा सकैत  छी।"
 
-#: site/pages/get-a-coach.php:112
+#: site/pages/get-a-coach.php:108
 msgid "Local"
 msgstr "स्थानिय"
 
-#: site/pages/get-a-coach.php:113
+#: site/pages/get-a-coach.php:109
 #, fuzzy
 msgid ""
 "On submitting this request, we will do our best to connect you with a coach "
@@ -5091,181 +5114,182 @@ msgstr ""
 "इह अनुरोध केँ जमा करऽ पर  ,हम अहाँ केँ नजदीक केँ कोनो एकटा कोच (प्रशिक्षक ) केँ संगे अहुँ केँ "
 "जोड़े केँ लेल पुरा कोशिश करब।"
 
-#: site/pages/home.php:91
+#: site/pages/home.php:85
 msgid "45+"
 msgstr ""
 
-#: site/pages/home.php:92
+#: site/pages/home.php:86
 #, fuzzy
 msgid "Languages"
 msgstr "भाषा"
 
-#: site/pages/home.php:105
+#: site/pages/home.php:99
 msgctxt "Disciple Making Training"
 msgid "Disciple Making"
 msgstr ""
 
-#: site/pages/home.php:106
+#: site/pages/home.php:100
 #, fuzzy
 msgctxt "Disciple Making Training"
 msgid "Training"
 msgstr "प्रशिक्षण"
 
-#: site/pages/home.php:107
+#: site/pages/home.php:101
 msgctxt "Disciple Making Training for groups of Jesus followers"
 msgid "for groups of Jesus followers"
 msgstr ""
 
-#: site/pages/home.php:133
+#: site/pages/home.php:127
 msgid "Becoming more like Jesus... Together"
 msgstr ""
 
-#: site/pages/home.php:136
+#: site/pages/home.php:130
 msgid "Overview"
 msgstr "अवलोकन - अध्ययन"
 
-#: site/pages/home.php:138
+#: site/pages/home.php:132
 #, fuzzy
 msgid "20 hours of Training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/pages/home.php:139
+#: site/pages/home.php:133
 msgid "32 Concepts and Skills"
 msgstr ""
 
-#: site/pages/home.php:140
+#: site/pages/home.php:134
 msgid "Group Discussions"
 msgstr ""
 
-#: site/pages/home.php:141
+#: site/pages/home.php:135
 #, fuzzy
 msgid "Practice-Oriented"
 msgstr "अभ्यास - 4 क्षेत्र"
 
-#: site/pages/home.php:142
+#: site/pages/home.php:136
 msgid "Self-Facilitated"
 msgstr ""
 
-#: site/pages/home.php:148
+#: site/pages/home.php:142
 msgid "Free. Anytime. Anywhere."
 msgstr ""
 
-#: site/pages/home.php:152
+#: site/pages/home.php:146
 msgid "Gain insight into..."
 msgstr ""
 
-#: site/pages/home.php:157
+#: site/pages/home.php:151
 #, fuzzy
 msgid "Being A Disciple"
 msgstr "(डकलिंग) बतक क चूजा शिष्यत्व"
 
-#: site/pages/home.php:159
+#: site/pages/home.php:153
 #, fuzzy
 msgid "What's a Disciple?"
 msgstr "शिष्य आ मंडली क साधारण परिभाषा।"
 
-#: site/pages/home.php:160
+#: site/pages/home.php:154
 msgid "What's a Church?"
 msgstr ""
 
-#: site/pages/home.php:161
+#: site/pages/home.php:155
 #, fuzzy
 msgid "Keys to Spiritual Growth"
 msgstr "अध्यात्मिक स्वास"
 
-#: site/pages/home.php:162
+#: site/pages/home.php:156
 msgid "Personal Bible Study"
 msgstr ""
 
-#: site/pages/home.php:163
+#: site/pages/home.php:157
 msgid "Strong Prayer Life"
 msgstr ""
 
-#: site/pages/home.php:164
+#: site/pages/home.php:158
 msgid "The Power of Obedient Faith"
 msgstr ""
 
-#: site/pages/home.php:171
+#: site/pages/home.php:165
 #, fuzzy
 msgid "Making Disciples"
 msgstr "(डकलिंग) बतक क चूजा शिष्यत्व"
 
-#: site/pages/home.php:173
+#: site/pages/home.php:167
 #, fuzzy
 msgid "Sharing God's Story"
 msgstr "अपन गवाही शेयर करऽ केँ अभ्यास करू \" 45 मिनट \""
 
-#: site/pages/home.php:174
+#: site/pages/home.php:168
 #, fuzzy
 msgid "Telling Your Story"
 msgstr "Leading Your Group"
 
-#: site/pages/home.php:175
+#: site/pages/home.php:169
 msgid "Engaging Seekers"
 msgstr ""
 
-#: site/pages/home.php:176
+#: site/pages/home.php:170
 #, fuzzy
 msgid "Vision Casting Multiplication"
 msgstr "सब सँ पैघ आशीर्वादक दृष्टिगत निर्माण"
 
-#: site/pages/home.php:177
+#: site/pages/home.php:171
 #, fuzzy
 msgid "Leading a Simple Church"
 msgstr "2 आसान मंडली"
 
-#: site/pages/home.php:178
+#: site/pages/home.php:172
 #, fuzzy
 msgid "Training Others"
 msgstr "प्रशिक्षण"
 
-#: site/pages/home.php:183 site/pages/home.php:249
+#: site/pages/home.php:177 site/pages/home.php:243
 msgid "I'm Ready!"
 msgstr ""
 
-#: site/pages/home.php:197
+#: site/pages/home.php:191
 msgid "Ordinary People. Simple Steps."
 msgstr ""
 
-#: site/pages/home.php:242
+#: site/pages/home.php:236
 #, fuzzy
 msgid "More about zume"
 msgstr "लग के बारे में बैसी जानकारी प्राप्त करू"
 
-#: site/pages/home.php:276
+#: site/pages/home.php:270
 msgid "Real people ... real stories."
 msgstr ""
 
-#: site/pages/home.php:287
+#: site/pages/home.php:281
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ Chris"
 msgstr ""
 
-#: site/pages/home.php:298
+#: site/pages/home.php:292
 msgid ""
 "Anyone can do this. You don‘t have to have special skills or training. ~ "
 "Chris"
 msgstr ""
 
-#: site/pages/home.php:309
+#: site/pages/home.php:303
 msgid ""
 "All disciples who want to obey the Great Commission, Zúme training outlines "
 "a normal Christian lifestyle. ~ Chris"
 msgstr ""
 
-#: site/pages/home.php:320
+#: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ Chris"
 msgstr ""
 
-#: site/pages/home.php:330
-msgid "Zume = Yeast"
-msgstr ""
+#: site/pages/home.php:324
+#, fuzzy
+msgid "Zúme = Yeast"
+msgstr "जूमे नेटवर्क"
 
-#: site/pages/home.php:336
+#: site/pages/home.php:330
 msgid ""
 "Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, "
 "\"The Kingdom of Heaven is like a woman who took yeast and mixed it into a "
@@ -5280,80 +5304,80 @@ msgstr ""
 "राज्य केँ लेल एकटा असाधारण प्रभाव डायल सकैत अछि। ज़ूमे लक्षण अछि उ साधारण विश्वासीक लैस "
 "आ सशक्त करैत जे हमर पीढ़ी में कि पुरे दुनिया मे को भैर दिअ बढ़ैत होयत शिष्यक संगे।"
 
-#: site/pages/home.php:341
+#: site/pages/home.php:335
 msgid "Ready to take your next steps?"
 msgstr ""
 
-#: site/pages/home.php:345
+#: site/pages/home.php:339
 #, fuzzy
 msgid "Register Free."
 msgstr "बिन पाइय सेँ पंजीयन करह"
 
-#: site/pages/home.php:349
+#: site/pages/home.php:343
 #, fuzzy
 msgid "Gather a Group."
 msgstr "समूह बनाऊ"
 
-#: site/pages/home.php:353
+#: site/pages/home.php:347
 msgid "Change the World."
 msgstr ""
 
-#: site/pages/home.php:356
+#: site/pages/home.php:350
 #, fuzzy
 msgid "Get started"
 msgstr "शुरुआत करु"
 
-#: site/pages/kitchen-sink.php:90
+#: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/mobile-app.php:137 site/pages/resources.php:178
-msgid "Empowering Disciples. Anytime... Anywhere with the Zume App."
+#: site/pages/mobile-app.php:133 site/pages/resources.php:174
+msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr ""
 
-#: site/pages/mobile-app.php:139 site/pages/resources.php:180
+#: site/pages/mobile-app.php:135 site/pages/resources.php:176
 #, fuzzy
-msgid "Zume Training App"
+msgid "Zúme Training App"
 msgstr "ज़ूमे प्रशिक्षण"
 
-#: site/pages/mobile-app.php:141 site/pages/resources.php:182
+#: site/pages/mobile-app.php:137 site/pages/resources.php:178
 msgid "Access the full training wherever you go"
 msgstr ""
 
-#: site/pages/mobile-app.php:146 site/pages/mobile-app.php:170
-#: site/pages/resources.php:187 site/pages/resources.php:211
+#: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
+#: site/pages/resources.php:183 site/pages/resources.php:207
 msgid "Get it on Google Play"
 msgstr ""
 
-#: site/pages/mobile-app.php:161 site/pages/resources.php:202
+#: site/pages/mobile-app.php:157 site/pages/resources.php:198
 msgid "Offline App"
 msgstr ""
 
-#: site/pages/mobile-app.php:163 site/pages/resources.php:204
+#: site/pages/mobile-app.php:159 site/pages/resources.php:200
 msgid "Full Training with no internet required"
 msgstr ""
 
-#: site/pages/mobile-app.php:164 site/pages/resources.php:205
+#: site/pages/mobile-app.php:160 site/pages/resources.php:201
 msgid "Download the course and video content to your phone"
 msgstr ""
 
-#: site/pages/mobile-app.php:165 site/pages/resources.php:206
+#: site/pages/mobile-app.php:161 site/pages/resources.php:202
 msgid "Great for areas where internet access is restricted or limited"
 msgstr ""
 
-#: site/pages/plan-invite.php:83
+#: site/pages/plan-invite.php:77
 msgid "Please enter a code."
 msgstr ""
 
-#: site/pages/plan-invite.php:176
+#: site/pages/plan-invite.php:170
 msgid "Plan Invitation"
 msgstr ""
 
-#: site/pages/privacy-policy.php:88
+#: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
 msgstr "ज़ूमे गोपनीयता नीति"
 
-#: site/pages/privacy-policy.php:90
+#: site/pages/privacy-policy.php:86
 msgid ""
 "This privacy policy has been compiled to better serve those who are "
 "concerned with how their \"Personally Identifiable Information\" (PII) is "
@@ -5373,11 +5397,11 @@ msgstr ""
 "अछि, सुरक्षित रखै छी या आरो अहाँकेँ व्यक्तिगत रूप सँ चिन्है जाय योग्य जानकारीक हमर वेबसाइट "
 "केँ अनुसार समारैत अछि ।"
 
-#: site/pages/privacy-policy.php:95
+#: site/pages/privacy-policy.php:91
 msgid "What permissions do the social sign-on logins ask for?"
 msgstr "की अनुमतिया समाजिक साइन- ऑन लॉगिन पुछैत अछि? "
 
-#: site/pages/privacy-policy.php:98
+#: site/pages/privacy-policy.php:94
 msgid ""
 "Public Profile. This includes certain User’s Data such as id, name, picture, "
 "gender, and their locale."
@@ -5385,24 +5409,24 @@ msgstr ""
 "सर्वजनिक प्रोफाइल। एय मे किछु इस्तेमाल करऽ वला डेटा जेना आय डी (id,) नाम, चित्र,लिंग आ "
 "हुनके जगह समालित अछि।"
 
-#: site/pages/privacy-policy.php:101
+#: site/pages/privacy-policy.php:97
 msgid "Email Address."
 msgstr "ईमेल पता।"
 
-#: site/pages/privacy-policy.php:108
+#: site/pages/privacy-policy.php:104
 msgid ""
 "What personal information do we collect from the people through our website?"
 msgstr "की व्यक्तिगत जानकारी हम अपन वेबसाइट केँ माध्यम सँ लोक सँ जमा करय छथि? "
 
-#: site/pages/privacy-policy.php:111
+#: site/pages/privacy-policy.php:107
 msgid "Information in the Basic Social Profile (if used) and email."
 msgstr "बुनियादी सामाजिक प्रोफाइल मे जानकारी (अगर इस्तेमाल केलहुँ) और ईमेल।"
 
-#: site/pages/privacy-policy.php:114
+#: site/pages/privacy-policy.php:110
 msgid "Session and course activity."
 msgstr "सत्र और (पाठ्यक्रम) पढ़वै केँ गति विधि।"
 
-#: site/pages/privacy-policy.php:117
+#: site/pages/privacy-policy.php:113
 msgid ""
 "General location telemetry, so we know in what countries our training is "
 "being used."
@@ -5410,23 +5434,23 @@ msgstr ""
 "अहाँकेँ लग पास जगह या गांव  दूरी मापी (टेलीमेट्री) ते हम बुझ सकुँ केय देश मे हमर प्रशिक्षण "
 "इस्तेमाल कऽ रहल छी ।"
 
-#: site/pages/privacy-policy.php:124
+#: site/pages/privacy-policy.php:120
 msgid "When do we collect information?"
 msgstr "हम जानकारी केखैन जमा करय छी ।"
 
-#: site/pages/privacy-policy.php:127
+#: site/pages/privacy-policy.php:123
 msgid "We collect your information at login."
 msgstr "हम लॉगिन पर अहाँक जानकारी जमा करय छी।"
 
-#: site/pages/privacy-policy.php:130
+#: site/pages/privacy-policy.php:126
 msgid "We also track your progress through the training course."
 msgstr "हम प्रशिक्षण पढ़वै केँ (पाठ्यक्रम) माध्यम सँ अहाँक प्रगतिक ट्रैक सेहो करैत अछि।"
 
-#: site/pages/privacy-policy.php:137
+#: site/pages/privacy-policy.php:133
 msgid "How do we use your information?"
 msgstr "हम अहाँकेँ जानकारीक इस्तेमाल कोना करैत अछि? "
 
-#: site/pages/privacy-policy.php:140
+#: site/pages/privacy-policy.php:136
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
@@ -5434,14 +5458,14 @@ msgstr ""
 "हम अहाँक ईमेल पताक आधार पर ज़ूमे सिस्टम मे एकटा इस्तेमाल करऽ वाला खाता बनावै केँ लेल अहुँकेँ "
 "जानकारीक इस्तेमाल करय छी ।"
 
-#: site/pages/privacy-policy.php:143
+#: site/pages/privacy-policy.php:139
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
 msgstr ""
 "हम अहुँकेँ बुनियादी संचालन ईमेल केँ संगे ईमेल करब जेना पासवर्ड रिसेट आग्रह आ केय सिस्टम सूचनाकेँ।"
 
-#: site/pages/privacy-policy.php:146
+#: site/pages/privacy-policy.php:142
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
@@ -5449,11 +5473,11 @@ msgstr ""
 "हम प्रशिक्षण केँ माध्यम सँ अहुँकेँ प्रगति केँ आधार पर सामयिक अनुस्मारक आ उत्साहित ईमेल करैत "
 "अछि।"
 
-#: site/pages/privacy-policy.php:153
+#: site/pages/privacy-policy.php:149
 msgid "How do we protect your information?"
 msgstr "हम अहुँकेँ जानकारीक रक्षा कोना करय छी ? "
 
-#: site/pages/privacy-policy.php:155
+#: site/pages/privacy-policy.php:151
 msgid ""
 "While we use encryption to protect sensitive information transmitted online, "
 "we also protect your information offline. Only team members who need the "
@@ -5465,7 +5489,7 @@ msgstr ""
 "आवश्यकता अछि जकरा एकटा विशेष काजकेँ लेल (उदाहरण केँ लेल , वेब व्यवस्थापक या ग्राहक सेवा) "
 "व्यक्तिगत रूप सँ चिन्हय जाय योग्य जानकारी तक पहँच प्रदान केल जायत अछि ।"
 
-#: site/pages/privacy-policy.php:158
+#: site/pages/privacy-policy.php:154
 msgid ""
 "Your personal information is contained behind secured networks and is only "
 "accessible by a limited number of persons who have special access rights to "
@@ -5479,7 +5503,7 @@ msgstr ""
 "संवेदनशील/क्रेडिट जानकारी ककरो अहाँ आपूर्ति करैत अछि सुरक्षित साँकेट लेयर एस एस एल (ssl) "
 "औद्योगिकी केँ माध्यम सँ डाटा फाइलक (एक्रिप्टेड) अछि।"
 
-#: site/pages/privacy-policy.php:161
+#: site/pages/privacy-policy.php:157
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
@@ -5488,11 +5512,11 @@ msgstr ""
 "अभिगम करैत या ओकर प्रस्तुत (सबमिट )करैत , अहुँकेँ व्यक्तिगत जानकारी सुरक्षा बना केँ रखै केँ "
 "लेल। "
 
-#: site/pages/privacy-policy.php:167
+#: site/pages/privacy-policy.php:163
 msgid "Do we use \"cookies\"?"
 msgstr "कि हमहीं \"कुकीज़\" के इस्तेमाल करैत अछि? "
 
-#: site/pages/privacy-policy.php:169
+#: site/pages/privacy-policy.php:165
 msgid ""
 "Any use of Cookies - or of other tracking tools - by this Application or by "
 "the owners of third party services used by this Application, unless stated "
@@ -5504,15 +5528,15 @@ msgstr ""
 "करऽ वला चिन्ह आ हुनकर वरीयताओंक याद करऽ केँ लेल काज करैत अछि सेवा प्रदान करऽ केँ एकमात्र "
 "उद्देश्य केँ लेल जे इस्तेमाल करऽ वला आश  (अपेक्षित) एक"
 
-#: site/pages/privacy-policy.php:172
+#: site/pages/privacy-policy.php:168
 msgid "Personal Data collected: name, email."
 msgstr "व्यक्तिगत डेटा जमा केल गेलाह: नाम , ईमेल।"
 
-#: site/pages/privacy-policy.php:178
+#: site/pages/privacy-policy.php:174
 msgid "Your Access to and Control Over Information."
 msgstr "अहाँक जानकारीक पर अभिगम आ नियंत्रण।"
 
-#: site/pages/privacy-policy.php:180
+#: site/pages/privacy-policy.php:176
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
@@ -5520,208 +5544,204 @@ msgstr ""
 "अहाँ कोनो हो समय हमरा सँ भविष्य केँ कोनो हो संपर्क  सँ बाहर निकल सकय छी ।अहाँ हमर "
 "संपर्क ईमेल पता केँ माध्यम सँ हमरो सँ संपर्क करऽ केँ कोनो समय निम्न कऽ सकय छी:"
 
-#: site/pages/privacy-policy.php:183
+#: site/pages/privacy-policy.php:179
 msgid "See what data we've aggregated from your activities with us."
 msgstr "देखू  हम अहाँकेँ गतिविधियों सँ की डाटा संकलित केयने अछि।"
 
-#: site/pages/privacy-policy.php:187
+#: site/pages/privacy-policy.php:183
 msgid "Change/correct any data we have about you."
 msgstr "हमर लग अहुँकेँ बारे मे जे डेटा अछि ओकर बदले।सही करह।"
 
-#: site/pages/privacy-policy.php:190
+#: site/pages/privacy-policy.php:186
 msgid "Have us delete any data we have about you."
 msgstr "हमर लग अहुँकेँ बारे मे जे डाटा अछि ओकर डिलीट करह (हटाउ)"
 
-#: site/pages/privacy-policy.php:193
+#: site/pages/privacy-policy.php:189
 msgid "Express any concern you have about our use of your data."
 msgstr "अहाँ अपन डेटा केँ हमरो इस्तेमाल केँ बारे मे केतेक चिंता/सोच व्यक्त करह।"
 
-#: site/pages/privacy-policy.php:200
+#: site/pages/privacy-policy.php:196
 msgid "Updates"
 msgstr "अपडेट्स (अधतन)"
 
-#: site/pages/privacy-policy.php:202
+#: site/pages/privacy-policy.php:198
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
 msgstr ""
 "हमरो गोपनीयता नीति समय-समय पर बदल सकय छी आ सभ अधतन ई पन्ना पर पोस्ट केल जायत।"
 
-#: site/pages/resources.php:104
+#: site/pages/resources.php:100
 #, fuzzy
 msgid "Training Guidebook"
 msgstr "प्रशिक्षण संतप्ति"
 
-#: site/pages/resources.php:107
+#: site/pages/resources.php:103
 msgid ""
-"Zume Training is now available in a complete workbook. All the concepts, "
+"Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
 
-#: site/pages/resources.php:115
+#: site/pages/resources.php:111
 msgid "Free Download (PDF)"
 msgstr ""
 
-#: site/pages/resources.php:116
+#: site/pages/resources.php:112
 msgid "Order print copy"
 msgstr ""
 
-#: site/pages/share.php:87
+#: site/pages/share.php:83
 msgid "Copy this link and send it to your friends."
 msgstr ""
 
-#: site/pages/share.php:127
+#: site/pages/share.php:123
 msgid "Tools"
 msgstr "उपकरण"
 
-#: site/pages/share.php:128
+#: site/pages/share.php:124
 msgid "Concepts"
 msgstr "संकल्पनाएँ"
 
-#: site/pages/share.php:130
+#: site/pages/share.php:126
 msgid "Sort"
 msgstr ""
 
-#: site/pages/share.php:138
+#: site/pages/share.php:134
 msgid "Sharing with Others"
 msgstr ""
 
-#: site/pages/share.php:145
+#: site/pages/share.php:141
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
 
-#: site/pages/training.php:134
+#: site/pages/training.php:130
 #, fuzzy
 msgid "Get started with Zúme Training"
 msgstr "ज़ूमे प्रशिक्षण केँ लेल वापस स्वागत अछि"
 
-#: site/pages/training.php:137
+#: site/pages/training.php:133
 #, fuzzy
 msgid "Create your own training"
 msgstr "100 कि अपन सूची बनाउ"
 
-#: site/pages/training.php:138 site/pages/training.php:145
-#: site/pages/training.php:146 site/pages/training.php:154
+#: site/pages/training.php:134 site/pages/training.php:141
+#: site/pages/training.php:142 site/pages/training.php:150
 #, fuzzy
 msgid "Join a training"
 msgstr "प्रशिक्षण केँ मेहमानी करू"
 
-#: site/pages/training.php:140
+#: site/pages/training.php:136
 msgid ""
 "Gather a few friends or go through the training with an existing small "
 "group. Create your own training plan and track your progress."
 msgstr ""
 
-#: site/pages/training.php:142
+#: site/pages/training.php:138
 #, fuzzy
 msgid "Create"
 msgstr "तीन माहिना योजना"
 
-#: site/pages/training.php:148
+#: site/pages/training.php:144
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "trainings lead by an experienced Zúme coach."
 msgstr ""
 
-#: site/pages/training.php:153
+#: site/pages/training.php:149
 #, fuzzy
 msgid "Request a coach"
 msgstr "एकटा कोच (प्रशिक्षक) प्राप्त करू"
 
-#: site/pages/training.php:156
+#: site/pages/training.php:152
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you get "
 "the training and become a fruitful disciple."
 msgstr ""
 
-#: site/pages/training.php:158
+#: site/pages/training.php:154
 #, fuzzy
 msgid "Get Help"
 msgstr "मदद"
 
-#: site/pages/training.php:164
+#: site/pages/training.php:160
 msgid "Course Overview"
 msgstr "पाठ्यक्रम अवलोकन"
 
-#: site/pages/training.php:166 site/pages/training.php:178
+#: site/pages/training.php:162 site/pages/training.php:174
 #, fuzzy
 msgid "Course Concepts"
 msgstr "पाठ्यक्रम पुरा भेल"
 
-#: site/pages/training.php:167 site/pages/training.php:218
+#: site/pages/training.php:163 site/pages/training.php:214
 #, fuzzy
 msgid "Training Schedules"
 msgstr "प्रशिक्षण चक्र"
 
-#: site/pages/training.php:168 site/pages/training.php:263
+#: site/pages/training.php:164 site/pages/training.php:259
 #, fuzzy
 msgid "What is required?"
 msgstr "ई-मेल केँ जरूरत अछि"
 
-#: site/pages/training.php:181
+#: site/pages/training.php:177
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
 
-#: site/pages/training.php:185
+#: site/pages/training.php:181
 msgid "Discipleship Concepts"
 msgstr ""
 
-#: site/pages/training.php:199
+#: site/pages/training.php:195
 #, fuzzy
 msgid "Spiritual Practices"
 msgstr "अध्यात्मिक स्वास"
 
-#: site/pages/training.php:220
+#: site/pages/training.php:216
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
 
-#: site/pages/training.php:225
+#: site/pages/training.php:221
 #, fuzzy
 msgid "10 Sessions"
 msgstr "सत्र"
 
-#: site/pages/training.php:232
+#: site/pages/training.php:228
 msgid ""
 "The original Zúme training format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often ran once a week for 10 weeks."
 msgstr ""
 
-#: site/pages/training.php:237
+#: site/pages/training.php:233
 #, fuzzy
 msgid "20 Sessions"
 msgstr "सत्र"
 
-#: site/pages/training.php:244
+#: site/pages/training.php:240
 msgid ""
 "For a longer slower pace training with more opportunity for gaining "
 "competence in the concepts and skills, the 20 session format has more "
 "practice opportunities for each of the concepts and tools."
 msgstr ""
 
-#: site/pages/training.php:249
+#: site/pages/training.php:245
 msgid "3 Day Intensive"
 msgstr ""
 
-#: site/pages/training.php:256
+#: site/pages/training.php:252
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
-
-#: site/parts/footer.php:72 site/parts/footer.php:79 site/parts/footer.php:86
-msgid "Close"
-msgstr "बन्द करह"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #, fuzzy
@@ -5736,7 +5756,7 @@ msgstr ""
 msgid "This page does not work without Javascript enabled."
 msgstr ""
 
-#: site/profile/profile.php:115
+#: site/profile/profile.php:111
 msgid "Profile"
 msgstr "प्रोफाइल"
 
@@ -5749,121 +5769,131 @@ msgstr "अहाँ केँ प्रोफाइल"
 msgid "the plan"
 msgstr ""
 
-#: utilities/apis/cta-api.php:137
+#: utilities/apis/cta-api.php:134
 #, fuzzy
 msgid "Register to start your training"
 msgstr "प्रशिक्षण शुरुआत करैला चाहैत छी?"
 
-#: utilities/apis/cta-api.php:151
+#: utilities/apis/cta-api.php:148
 #, fuzzy
 msgid "Join Online Training"
 msgstr "पुरा प्रशिक्षण देखूँ"
 
-#: utilities/apis/cta-api.php:152
+#: utilities/apis/cta-api.php:149
 msgid "Join the online training to learn more"
 msgstr ""
 
-#: utilities/apis/cta-api.php:166
+#: utilities/apis/cta-api.php:163
 #, fuzzy
 msgid "Joined Training!"
 msgstr "पुरा प्रशिक्षण देखूँ"
 
-#: utilities/apis/cta-api.php:181
+#: utilities/apis/cta-api.php:178
 msgid "Get a coach to help you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:195
+#: utilities/apis/cta-api.php:192
 #, fuzzy
 msgid "Requested Coach!"
 msgstr "एकटा कोच (प्रशिक्षक) प्राप्त करू"
 
-#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:225
+#: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
 msgid "Congratulations"
 msgstr ""
 
-#: utilities/apis/cta-api.php:209 utilities/apis/cta-api.php:211
+#: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 #, fuzzy
 msgid "Create a Training"
 msgstr "1 प्रशिक्षण"
 
-#: utilities/apis/cta-api.php:210
+#: utilities/apis/cta-api.php:207
 msgid "Create a training to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:224
+#: utilities/apis/cta-api.php:221
 #, fuzzy
 msgid "Created Training!"
 msgstr "100 कि अपन सूची बनाउ"
 
-#: utilities/apis/cta-api.php:239
+#: utilities/apis/cta-api.php:236
 msgid "Invite friends to join you on your journey"
 msgstr ""
 
-#: utilities/apis/cta-api.php:254
+#: utilities/apis/cta-api.php:251
 msgid "Set your profile to help others know you"
 msgstr ""
 
-#: utilities/apis/cta-api.php:268
+#: utilities/apis/cta-api.php:265
 #, fuzzy
 msgid "Profile Set"
 msgstr "प्रोफाइल"
 
-#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
+#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "तीन माहिना योजना"
 
-#: utilities/apis/cta-api.php:283
+#: utilities/apis/cta-api.php:280
 msgid "Create a 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:297
+#: utilities/apis/cta-api.php:294
 #, php-format
 msgid "%s unlocked"
 msgstr ""
 
-#: utilities/apis/cta-api.php:311 utilities/apis/cta-api.php:313
+#: utilities/apis/cta-api.php:308
+#, fuzzy
+msgid "3-Month Plan Created"
+msgstr "तीन माहक योजना"
+
+#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "तीन माहिना योजना"
 
-#: utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:323
 msgid "Complete your 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:326 utilities/apis/cta-api.php:328
+#: utilities/apis/cta-api.php:337
+#, fuzzy
+msgid "3 Month Plan Completed"
+msgstr "तीन माहक योजना"
+
+#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
 #, fuzzy
 msgid "Submit Report"
 msgstr "जमा करू"
 
-#: utilities/apis/cta-api.php:327
+#: utilities/apis/cta-api.php:352
 msgid "Submit a report to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:341 utilities/apis/cta-api.php:343
+#: utilities/apis/cta-api.php:366 utilities/apis/cta-api.php:368
 msgid "Join a Hub"
 msgstr ""
 
-#: utilities/apis/cta-api.php:342
+#: utilities/apis/cta-api.php:367
 msgid "Join a hub to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:359 utilities/apis/cta-api.php:361
+#: utilities/apis/cta-api.php:384 utilities/apis/cta-api.php:386
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "अध्यात्मिक स्वास"
 
-#: utilities/apis/cta-api.php:360
+#: utilities/apis/cta-api.php:385
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "अध्यात्मिक स्वास"
 
-#: utilities/apis/cta-api.php:374 utilities/apis/cta-api.php:376
+#: utilities/apis/cta-api.php:399 utilities/apis/cta-api.php:401
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "संबंधित परिचारक-100 की सूची"
 
-#: utilities/apis/cta-api.php:375
+#: utilities/apis/cta-api.php:400
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "संबंधित परिचारक-100 की सूची"
@@ -5878,73 +5908,73 @@ msgstr "व्यवस्थापक"
 msgid "Piece"
 msgstr "पन्नाक टुकड़ा (पृष्ठ) "
 
-#: zume-training-system.php:209
+#: zume-training-system.php:213
 msgid "Someone has requested a password reset for the following account:"
 msgstr "केकरो खाता कऽ लेल पासवर्ड रीसेट करऽ केँ लेल विनती करऽ  छी"
 
 #. translators: %s: site name
-#: zume-training-system.php:211
+#: zume-training-system.php:215
 #, php-format
 msgid "Site Name: %s"
 msgstr "साइट क नाम:%s"
 
 #. translators: %s: user login
-#: zume-training-system.php:213
+#: zume-training-system.php:217
 #, php-format
 msgid "Username: %s"
 msgstr "इस्तेमाल करऽ वला नाम:%s"
 
-#: zume-training-system.php:214
+#: zume-training-system.php:218
 msgid "If this was a mistake, just ignore this email and nothing will happen."
 msgstr "मुदा इह एकटा गलत छलाह तेँ बस इह ईमेल केँ उम्मीद करु मुदा और किछु नहि हेतै "
 
-#: zume-training-system.php:215
+#: zume-training-system.php:219
 msgid "To reset your password, visit the following address:"
 msgstr "अपन पासवर्ड रिसेट करऽ केँ लेल नीचा देल गेल पता पर जाउ"
 
 #. translators: Password reset email subject. %s: Site name
-#: zume-training-system.php:233
+#: zume-training-system.php:237
 #, php-format
 msgid "[%s] Password Reset"
 msgstr "[%s] पासवर्ड रिसेट "
 
-#: zume-training-system.php:249
+#: zume-training-system.php:253
 #, fuzzy
 msgid "Profile Details"
 msgstr "प्रोफाइल"
 
-#: zume-training-system.php:261
+#: zume-training-system.php:265
 #, fuzzy
 msgid "User Email"
 msgstr "इमेल"
 
-#: zume-training-system.php:270
+#: zume-training-system.php:274
 #, fuzzy
 msgid "User Phone"
 msgstr "फोन"
 
-#: zume-training-system.php:278
+#: zume-training-system.php:282
 msgid "User Timezone"
 msgstr ""
 
-#: zume-training-system.php:286
+#: zume-training-system.php:290
 msgid "User Friend Key"
 msgstr ""
 
-#: zume-training-system.php:294
+#: zume-training-system.php:298
 msgid "User Preferred Language"
 msgstr ""
 
-#: zume-training-system.php:302
+#: zume-training-system.php:306
 #, fuzzy
 msgid "User Preferred Email"
 msgstr "इमेल"
 
-#: zume-training-system.php:310
+#: zume-training-system.php:314
 msgid "Preferred Contact Methods"
 msgstr ""
 
-#: zume-training-system.php:320
+#: zume-training-system.php:324
 msgid "Messenger"
 msgstr ""
 
@@ -5963,6 +5993,13 @@ msgstr "https://github.com/ zume project/zume -training"
 #, fuzzy
 msgid "Zume Training System"
 msgstr "ज़ूमे प्रशिक्षण"
+
+#~ msgid "SOAPS Bible Reading"
+#~ msgstr "soaps सोप्स बाइबल पठन"
+
+#, fuzzy
+#~ msgid "S.O.A.P.S Bible Reading"
+#~ msgstr "एस .ओ. ए .पी .एस बाईबल पढ़नाई"
 
 #, fuzzy
 #~ msgid "The BLESS Prayer"
@@ -5986,9 +6023,6 @@ msgstr "ज़ूमे प्रशिक्षण"
 #, fuzzy
 #~ msgid "Generation Mapping"
 #~ msgstr "पीढ़ीगत नक्शा"
-
-#~ msgid "S.O.A.P.S. Bible Reading"
-#~ msgstr "एस .ओ. ए .पी .एस बाईबल पढ़नाई"
 
 #, fuzzy
 #~ msgid "Check in"
@@ -8438,9 +8472,6 @@ msgstr "ज़ूमे प्रशिक्षण"
 #~ msgid "Full Width Home"
 #~ msgstr "पुरा चौड़ाई घर"
 
-#~ msgid "Zúme Course"
-#~ msgstr "ज़ूमे (कोर्स) पढ़ाई"
-
 #~ msgid "Password reset is not allowed for this user"
 #~ msgstr "ई इस्तेमाल करऽ वला केँ लेल पासवर्ड रीसेटक अनुमति नहि अछि।"
 
@@ -8920,9 +8951,6 @@ msgstr "ज़ूमे प्रशिक्षण"
 
 #~ msgid "No location matches found. Try a less specific address."
 #~ msgstr "केओ मिली जुली जगह नहि भेटल कम विशिष्‍ट पता कऽ इस्‍तेमाल करह।"
-
-#~ msgid "Zúme Network"
-#~ msgstr "जूमे नेटवर्क"
 
 #~ msgid ""
 #~ "Click the circles and check off your progress on each of the concepts."
