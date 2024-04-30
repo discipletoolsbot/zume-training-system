@@ -112,7 +112,7 @@ class Zume_Messages extends Zume_Magic_Page
             </div>
 
             <div class="email-wrapper">
-                <strong>Body:</strong>:
+                <strong>Body</strong>:
             </div>
             <div class="email-wrapper">
                 <html>
