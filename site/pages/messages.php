@@ -111,83 +111,81 @@ class Zume_Messages extends Zume_Magic_Page
                 </div>
             </div>
 
-
-
             <div class="email-wrapper">
                 <strong>Body:</strong>:
             </div>
             <div class="email-wrapper">
                 <html>
-                <head>
-                    <style>
-                        #zmail {}
-                        #zmail .zmail-body {
-                            padding: .5em;
-                        }
-                        #zmail .zmail-header {}
-                        #zmail .zmail-topbar {
-                            background-color: #008cc7;
-                            color: white;
-                            padding-block: .3em;
-                            display: flex;
-                            align-items: center;
-                        }
-                        #zmail .zmail-logo img {
-                            max-width: 100%;
-                            display: block;
-                            vertical-align: middle;
-                            height: 2em;
-                            margin-left: 1em;
-                        }
-                        #zmail .button.primary-button-hollow {
-                            background-color: #008cc7;
-                            color: white;
-                            border: 1px solid #008cc7;
-                            padding: .5em 1em;
-                            text-align: center;
-                            text-decoration: none;
-                            display: inline-block;
-                            border-radius: 5px;
-                            font-size: .9rem;
-                            transition: background-color .25s ease-out, color .25s ease-out;
-                        }
-                        #zmail .button.primary-button-hollow.large {
-                            background-color: #008cc7;
-                            color: white;
-                            border: 1px solid #008cc7;
-                            padding: .5em 1em;
-                            text-align: center;
-                            text-decoration: none;
-                            display: inline-block;
-                            border-radius: 5px;
-                            font-size: 1.5em;
-                            transition: background-color .25s ease-out, color .25s ease-out;
-                        }
-                        #zmail ul {
-                            margin-bottom: 1em;
-                        }
-                        #zmail ul li {
-                            padding: 0 1em;
-                            margin-left: 50px;
-                            margin-right: 50px;
-                            list-style-type: disc;
-                            list-style-position: outside;
-                            line-height: 1.5;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <div id="zmail">
-                        <header class="zmail-header">
-                            <div class="zmail-topbar" style="margin-bottom:20px;">
-                                <div class="zmail-logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
+                    <head>
+                        <style>
+                            #zmail {}
+                            #zmail .zmail-body {
+                                padding: .5em;
+                            }
+                            #zmail .zmail-header {}
+                            #zmail .zmail-topbar {
+                                background-color: #008cc7;
+                                color: white;
+                                padding-block: .3em;
+                                display: flex;
+                                align-items: center;
+                            }
+                            #zmail .zmail-logo img {
+                                max-width: 100%;
+                                display: block;
+                                vertical-align: middle;
+                                height: 2em;
+                                margin-left: 1em;
+                            }
+                            #zmail .button.primary-button-hollow {
+                                background-color: #008cc7;
+                                color: white;
+                                border: 1px solid #008cc7;
+                                padding: .5em 1em;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                border-radius: 5px;
+                                font-size: .9rem;
+                                transition: background-color .25s ease-out, color .25s ease-out;
+                            }
+                            #zmail .button.primary-button-hollow.large {
+                                background-color: #008cc7;
+                                color: white;
+                                border: 1px solid #008cc7;
+                                padding: .5em 1em;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                border-radius: 5px;
+                                font-size: 1.5em;
+                                transition: background-color .25s ease-out, color .25s ease-out;
+                            }
+                            #zmail ul {
+                                margin-bottom: 1em;
+                            }
+                            #zmail ul li {
+                                padding: 0 1em;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                list-style-type: disc;
+                                list-style-position: outside;
+                                line-height: 1.5;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <div id="zmail">
+                            <header class="zmail-header">
+                                <div class="zmail-topbar" style="margin-bottom:20px;">
+                                    <div class="zmail-logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
+                                </div>
+                            </header>
+                            <div class="zmail-body">
+                                <?php echo $message['body'] ?>
                             </div>
-                        </header>
-                        <div class="zmail-body">
-                            <?php echo $message['body'] ?>
-                        </div>
-                    </div> <!-- activity page -->
-                </body>
+                        </div> <!-- activity page -->
+                    </body>
                 </html>
             </div> <!-- wrapper-->
             <?php
