@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Faroese <https://translate.disciple.tools/projects/zume-"
@@ -4624,7 +4624,7 @@ msgstr ""
 "við vanligum førleikum og amboðnum, kunnu hava óvanliga ávirkan á Ríki Guds. "
 "Zúme ynskir at menna og styrkja vanlig trúgvandi at náa út til øll grannløg."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5330,6 +5330,15 @@ msgstr "Byrja"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Zume yvirlit"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8473,9 +8482,6 @@ msgstr "Zúme Venjing"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Zume OSS"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Zume yvirlit"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Heim"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-25 01:59+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
@@ -4705,7 +4705,7 @@ msgstr ""
 "illustra come le persone comuni, utilizzando risorse ordinarie, possono "
 "avere un impatto esponenziale per il Regno di Dio."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5422,6 +5422,15 @@ msgstr "Comincia"
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
 msgstr "Lavandino della Cucina"
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Bacheca Zúme"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
+msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 #, fuzzy
@@ -8720,9 +8729,6 @@ msgstr "Zúme Training"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Zúme FAQ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Bacheca Zúme"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Homepage completa"

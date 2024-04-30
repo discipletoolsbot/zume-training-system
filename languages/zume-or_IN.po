@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:50+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Odia <https://translate.disciple.tools/projects/zume-training/"
@@ -4629,7 +4629,7 @@ msgstr ""
 "ଈଶ୍ୱରଙ୍କ ରାଜ୍ୟ ଶକାସେ ଅଦ୍ଭୁତ ପ୍ରଭାବ ଆଣି ପାରିବେ | ଯୁମେ ସାଧାରଣ ବିଶ୍ୱାସୀ ମାନଙ୍କୁ ପ୍ରତ୍ୟେକ ପଡ଼ୋଶୀ "
 "ଅଞ୍ଚଳକୁ ପହଞ୍ଚିବାକୁ ସୁସଜ୍ଜିତ କରିବା ଓ କ୍ଷମତା ଦେବାର ଲକ୍ଷ ରଖେ |"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5326,6 +5326,15 @@ msgstr "ପ୍ରାରମ୍ଭ କରନ୍ତୁ"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "ଯୁମେ ଡ୍ୟାଶ୍‌ବୋର୍ଡ୍‌"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8490,9 +8499,6 @@ msgstr "ଯୁମେ ପ୍ରଶିକ୍ଷଣ"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "ଯୁମେ ଏଫ୍ଏ‌କ୍ୟୁ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "ଯୁମେ ଡ୍ୟାଶ୍‌ବୋର୍ଡ୍‌"
 
 #~ msgid "Full Width Home"
 #~ msgstr "ପୁର୍ଣ୍ଣ ବିସ୍ତୃତ ମୂଳପୃଷ୍ଠା"

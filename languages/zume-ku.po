@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:34+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Kurdish <https://translate.disciple.tools/projects/zume-"
@@ -4698,7 +4698,7 @@ msgstr ""
 "(شانشینی خودا).  زومی ئامانج دەخاتە سەر پۆشتەکردن و توانادان بە باوەڕدارانی "
 "ئاسایی تا بگەن بە هەموو گەڕەکێک.  "
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5410,6 +5410,15 @@ msgstr "دەست پێبکە"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "داشبۆردی زومی"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8660,9 +8669,6 @@ msgstr "ڕاهێنانی زومی"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "پرسیار و وەڵامی زومی"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "داشبۆردی زومی"
 
 #~ msgid "Full Width Home"
 #~ msgstr "ماڵەوە بە پانتایی پڕ"

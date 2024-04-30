@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/zume-"
@@ -4674,7 +4674,7 @@ msgstr ""
 "phi thường đến Vương quốc của Đức Chúa Trời. Zúme hướng đến trang bị và trao "
 "quyền cho các tín đồ bình thường vươn ra mọi vùng lân cận."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5386,6 +5386,15 @@ msgstr "Bắt Đầu"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "Bảng điều khiển Zúme"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8596,9 +8605,6 @@ msgstr "Huấn luyện Zume"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "Zúme FAQ"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "Bảng điều khiển Zúme"
 
 #~ msgid "Full Width Home"
 #~ msgstr "Mở rộng trang chủ"

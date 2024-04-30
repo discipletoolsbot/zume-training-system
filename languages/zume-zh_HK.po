@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional, Hong Kong) <https://translate.disciple."
@@ -4491,7 +4491,7 @@ msgstr ""
 "「天國酵母」的目標：裝備一般信徒﹐在這個世代成為「天國酵母」﹐讓建立門徒者遍"
 "滿全地，神的國度降臨萬邦。"
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5181,6 +5181,15 @@ msgstr "開始"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "「天國酵母」管理界面"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8177,9 +8186,6 @@ msgstr "「天國酵母」門徒訓練"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "「天國酵母」常見問題"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "「天國酵母」管理界面"
 
 #~ msgid "Full Width Home"
 #~ msgstr "全螢幕首頁"

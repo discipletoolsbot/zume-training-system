@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 19:28-0600\n"
+"POT-Creation-Date: 2024-04-29 21:18-0600\n"
 "PO-Revision-Date: 2024-04-10 22:00+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Telugu <https://translate.disciple.tools/projects/zume-"
@@ -4574,7 +4574,7 @@ msgstr ""
 "ఉదహరిస్తోంది. ప్రతి పొరుగు వారిని చేరుకోవడానికి సాధారణ విశ్వాసులను సన్నద్ధం చేయడం మరియు శక్తివంతం చేయడమే "
 "జుమ్ లక్ష్యం."
 
-#: site/pages/about.php:95
+#: site/pages/about.php:95 site/pages/messages.php:203
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5268,6 +5268,15 @@ msgstr "ప్రారంభించండి"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
+msgstr ""
+
+#: site/pages/messages.php:201
+#, fuzzy
+msgid "Go to Zúme Dashboard"
+msgstr "జుమ్ డాష్ బోర్డ్"
+
+#: site/pages/messages.php:202
+msgid "Update Communication Preferences"
 msgstr ""
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
@@ -8384,9 +8393,6 @@ msgstr "జూమ్ తర్ఫీదు"
 
 #~ msgid "Zúme FAQ"
 #~ msgstr "జుమ్ తరచుగా అడిగే ప్రశ్న (FAQ)"
-
-#~ msgid "Zúme Dashboard"
-#~ msgstr "జుమ్ డాష్ బోర్డ్"
 
 #~ msgid "Full Width Home"
 #~ msgstr "పూర్తి వెడల్పు (ప్రధాన స్థలం) గృహం"
