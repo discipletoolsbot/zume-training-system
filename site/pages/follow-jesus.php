@@ -205,7 +205,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                                 <div class="stack">
                                     <h4><?php esc_html_e( 'Bible Reading', 'zume' ) ?></h4>
                                     <p>
-                                        <strong><?php esc_html( $this->display_link( '20733', '4', 'soaps-bible-reading', 'SOAPS Bible Reading' ) ) ?></strong><br>
+                                        <strong><?php esc_html( $this->display_link( '20733', '4', 'soaps-bible-reading', 'S.O.A.P.S. Bible Reading' ) ) ?></strong><br>
                                         <?php esc_html_e( 'A tool for daily Bible study that helps you understand, obey, and share God’s Word.', 'zume' ) ?>
                                     </p>
                                     <p>

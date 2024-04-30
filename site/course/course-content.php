@@ -89,7 +89,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
-                    __( 'SOAPS Bible Reading', 'zume' ),
+                    __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                     __( 'Accountability Groups', 'zume' )
                 ]
             ],
@@ -231,7 +231,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 't4_a',
             'type' => 'watch',
             'menu' => [
-                __( 'SOAPS Bible Reading', 'zume' ),
+                __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                 [35]
             ],
             'length' => [5],
@@ -240,7 +240,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'WATCH', 'zume' ),
             ],
             'right' => [
-                __( 'SOAPS Bible Reading', 'zume' ),
+                __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                 __( 'Hearing from God regularly is a key element in our personal relationship with Him, and in our ability to stay obediently engaged in what He is doing around us.', 'zume' ),
             ],
         ],
@@ -357,7 +357,7 @@ function zume_content( $lang_code = 'en') {
                 ],
                 __( 'Tools heard in this session:', 'zume' ),
                 [
-                    __( 'SOAPS Bible Reading', 'zume' ),
+                    __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                     __( 'Accountability Groups', 'zume' )
                 ]
             ],
@@ -696,7 +696,7 @@ function zume_content( $lang_code = 'en') {
                 $mirror_url . 'Zume-logo-blue.png', // Zume logo
                 __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
                 $mirror_url . 'jesus-globe.png', // Jesus globe
-                __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
+                __( 'Zúme is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],
             'right' => [],
@@ -3285,7 +3285,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
-                    __( 'S.O.A.P.S Bible Reading', 'zume' ),
+                    __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                 ],
             ],
         ],
@@ -3301,7 +3301,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Tool heard in this session:', 'zume' ),
                 [
-                    __( 'S.O.A.P.S Bible Reading', 'zume' ),
+                    __( 'S.O.A.P.S. Bible Reading', 'zume' ),
                 ],
             ],
         ],
@@ -6019,7 +6019,7 @@ function zume_content( $lang_code = 'en') {
                 'https://storage.googleapis.com/zume-file-mirror/en/Zume-logo-blue.png', // Zume logo
                 __( 'To saturate the world with multiplying disciples in our generation.', 'zume' ),
                 'https://storage.googleapis.com/zume-file-mirror/en/jesus-globe.png', // Jesus globe
-                __( 'Zume is a community of practice for those who want to see disciple making movements.', 'zume' ),
+                __( 'Zúme is a community of practice for those who want to see disciple making movements.', 'zume' ),
             ],
             'left' => [],
             'right' => [],
