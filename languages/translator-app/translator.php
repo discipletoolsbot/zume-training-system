@@ -289,6 +289,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
                         <?php
                     }
+                    if ( in_array( 'administrator', (array) $this->user->roles ) ) {
+                        echo '<a class="button hollow clear" href="/app/translations">Scoreboard</a>';
+                    }
                     ?>
                 </div>
                 <div class="cell medium-3">

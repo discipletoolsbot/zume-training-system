@@ -230,19 +230,23 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     <h2>Zúme Translations Scoreboard</h2>
                 </div>
                 <div class="cell medium-3">
-
+                    <?php
+                    if ( in_array( 'administrator', (array) $this->user->roles ) ) {
+                        echo '<a class="button hollow clear" style="float:right;" href="/app/translator">Go To Translator</a>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
         <div class="grid-x grid-padding-x" style="margin-top: 100px;">
             <div class="cell medium-12" style="border-bottom: 1px solid lightgrey; padding-bottom: 1.5em;margin-bottom:1.5em;">
-                <strong>ENGLISH CONTENT</strong>:
+                <strong style="text-decoration: underline;">ENGLISH CONTENT</strong>:
                 <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> words |
                 <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> words |
                 <strong>Activities:</strong> <?php echo number_format( $activities ); ?> words |
                 <strong>Messages:</strong> <?php echo number_format( $messages ); ?> words |
                 <strong>Weblate Strings:</strong> <?php echo number_format( $strings ); ?> words ||
-                <strong>Total:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
+                <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
             </div>
             <div class="cell medium-6">
                 <h3>Translator Content</h3><hr></hr>
