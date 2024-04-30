@@ -482,7 +482,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $script_items[$item['script_id']]['title'] ?> (<?php echo $item['script_id'] ?>)</strong>
+                                    <strong><?php echo $script_items[$item['script_id']]['title'] ?? '' ?> (<?php echo $item['script_id'] ?? '' ?>)</strong>
                                 </td>
                                 <td style="text-align:right;">
                                      Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
@@ -1230,7 +1230,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
         <!-- Activities -->
-        <div class="qr-section" style="width:100%;float:left;">
+        <div id="activities" class="qr-section" style="width:100%;float:left;">
             <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
             <div class="cell center grey-back">
                 <h2>Activities</h2>
@@ -1277,7 +1277,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
         <!-- Videos -->
-        <div class="qr-section" style="width:100%;margin-top:100px;float:left;">
+        <div id="videos" class="qr-section" style="width:100%;margin-top:100px;float:left;">
             <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
              <div class="cell center grey-back">
                 <h2>Videos</h2>
@@ -1312,7 +1312,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
        <!-- Checkins -->
-       <div  class="qr-section" style="width:100%;margin-top:100px;float:left;">
+       <div id="checkin" class="qr-section" style="width:100%;margin-top:100px;float:left;">
             <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
             <div class="cell center grey-back">
                <h2>Checkins</h2>
@@ -1383,7 +1383,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
        <!-- SCRIPTS -->
-        <div class="qr-section" style="width:100%;margin-top:100px;float:left;">
+        <div id="scripts" class="qr-section" style="width:100%;margin-top:100px;float:left;">
             <div style="margin: 0 auto;width: fit-content;"><a href="#activities">Activities</a> | <a href="#videos">Videos</a> | <a href="#checkin">Checkins</a> | <a href="#scripts">Scripts</a><br></div>
             <div class="cell center grey-back">
                 <h2>Scripts</h2>
