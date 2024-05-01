@@ -30,6 +30,10 @@ function zume_get_url_pieces( $url = null ) {
     ];
 }
 
+function zume_mirror_url() {
+    return 'https://storage.googleapis.com/zume-file-mirror/';
+}
+
 function zume_home_url( $current_language = null ) {
     if ( is_null( $current_language ) ) {
         $current_language = zume_current_language();

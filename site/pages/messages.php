@@ -91,7 +91,7 @@ class Zume_Messages extends Zume_Magic_Page
             $this->not_found();
             return;
         }
-
+        global $zume_user_profile;
         $language_code = sanitize_key( $_GET['l'] );
         $message_id = sanitize_key( $_GET['m'] );
         $message = $this->query_message( $language_code, $message_id );
@@ -103,7 +103,7 @@ class Zume_Messages extends Zume_Magic_Page
             ?>
             <br></br>
             <div class="email-wrapper">
-                <strong>Marketing Logic</strong>: <span style="float:right;">(User Stage: <?php echo ucwords( $message['stage'] ) ?>)</span>
+                <strong>Marketing Logic</strong>: (not translated) <span style="float:right;font-weight:bold;">(User Stage: <?php echo ucwords( $message['stage'] ) ?>)</span>
             </div>
             <div class="email-wrapper">
                 <div>
@@ -151,12 +151,14 @@ class Zume_Messages extends Zume_Magic_Page
                                 display: flex;
                                 align-items: center;
                             }
+                            #zmail .zmail-logo {
+                                margin: 0 auto;
+                            }
                             #zmail .zmail-logo img {
                                 max-width: 100%;
                                 display: block;
                                 vertical-align: middle;
-                                height: 2em;
-                                margin-left: 1em;
+                                height: 3em;
                             }
                             #zmail .button.primary-button-hollow {
                                 color: white;
@@ -203,17 +205,35 @@ class Zume_Messages extends Zume_Magic_Page
                         <div id="zmail">
                             <header class="zmail-header">
                                 <div class="zmail-topbar" style="margin-bottom:20px;">
-                                    <div class="zmail-logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
+                                    <div class="zmail-logo"><img src="<?php echo  zume_mirror_url() . 'images/zume-training-logo-white-short.svg' ?>" alt="logo"></div>
                                 </div>
                             </header>
+                            <?php
+                                if ( $zume_user_profile['has_set_name'] ) {
+                                    ?>
+                                    <div class="zmail-body">
+                                        <?php echo $zume_user_profile['name'] ?>,
+                                    </div>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <div class="zmail-body">
+                                        <?php echo __( 'Friend', 'zume' ) ?>
+                                    </div>
+                                    <?php
+                                }
+                            ?>
                             <div class="zmail-body">
                                 <?php echo $message['body'] ?>
                             </div>
                             <div class="zmail-footer-divider"></div>
                             <div class="zmail-footer">
-                                <a href=""><?php echo __( 'Go to Zúme Dashboard', 'zume' ) ?></a><br>
-                                <a href=""><?php echo __( 'Update Communication Preferences', 'zume' ) ?></a><br><br>
-                                <span><?php echo __( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></span>
+                                <p><img src="<?php echo  zume_mirror_url() . 'images/zume-training-logo.svg' ?>" alt="logo" style="height:40px; margin: 1em auto;"></p>
+                                <p><?php echo __( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></p>
+                                <a href="https://zume.vision"><?php echo __( 'Explore the Vision', 'zume' ) ?></a><br>
+                                <a href="<?php echo zume_dashboard_url(); ?>"><?php echo __( 'Zúme Training Dashboard', 'zume' ) ?></a><br>
+                                <a href=""><?php echo __( 'Update Your Communication Preferences', 'zume' ) ?></a><br><br>
+                                <p style="width:60%;margin:0 auto;"><a href="<?php echo zume_get_a_coach_wizard_url(); ?>"><?php echo __( 'Get a Coach', 'zume' ) ?></a> | <a href="<?php echo zume_join_the_community_wizard_url(); ?>"><?php echo __( 'Join the Zúme Community', 'zume' ) ?></a> | 109 S. Main Street, Mooreland, OK 73852 USA | <a href="<?php echo zume_donate_url(); ?>"><?php echo __( 'Donate', 'zume' ) ?></a></p>
                             </div>
                         </div> <!-- activity page -->
                     </body>
