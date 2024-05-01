@@ -278,7 +278,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         </div>
                         <div class="story-card__text">
                             <p>
-                                <em><?php echo esc_html__( 'I spent years faithfully attending bible studies and church, but had somehow not understood the simple truths of disciple making that I found here in Zúme. ~ Chris', 'zume' ) ?></em>
+                                <em><?php echo esc_html__( 'I spent years faithfully attending bible studies and church, but had somehow not understood the simple truths of disciple making that I found here in Zúme. ~ C', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -289,7 +289,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         </div>
                         <div class="story-card__text">
                             <p>
-                                <em><?php echo esc_html__( 'Anyone can do this. You don‘t have to have special skills or training. ~ Chris', 'zume' ) ?></em>
+                                <em><?php echo esc_html__( 'Anyone can do this. You don‘t need any special skills or training. ~ J', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -300,7 +300,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         </div>
                         <div class="story-card__text">
                             <p>
-                                <em><?php echo esc_html__( 'All disciples who want to obey the Great Commission, Zúme training outlines a normal Christian lifestyle. ~ Chris', 'zume' ) ?></em>
+                                <em><?php echo esc_html__( 'This is for all disciples who want to obey the Great Commission. Zúme training outlines a normal Christian lifestyle. ~ D', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
@@ -311,7 +311,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         </div>
                         <div class="story-card__text">
                             <p>
-                                <em><?php echo esc_html__( 'These concepts and skills transformed our church and our impact on the world. ~ Chris', 'zume' ) ?></em>
+                                <em><?php echo esc_html__( 'These concepts and skills transformed our church and our impact on the world. ~ R', 'zume' ) ?></em>
                             </p>
                         </div>
                     </div>
