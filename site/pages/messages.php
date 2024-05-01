@@ -103,7 +103,7 @@ class Zume_Messages extends Zume_Magic_Page
             ?>
             <br></br>
             <div class="email-wrapper">
-                <strong>Marketing Logic</strong>: (not translated) <span style="float:right;font-weight:bold;">(User Stage: <?php echo ucwords( $message['stage'] ) ?>)</span>
+                <strong>Marketing Logic</strong>: <span style="float:right;font-weight:bold;">(User Stage: <?php echo ucwords( $message['stage'] ) ?>)</span>
             </div>
             <div class="email-wrapper">
                 <div>
