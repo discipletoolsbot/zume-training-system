@@ -130,7 +130,12 @@ class Zume_Messages extends Zume_Magic_Page
                                 font-size: .8em;
                                 text-align: center;
                             }
-
+                            #zmail h3 {
+                                font-size: 1.5em;
+                                margin: 0;
+                                font-weight: 700;
+                                padding-bottom: .8em;
+                            }
                             #zmail .zmail-topbar {
                                 background-color: #008cc7;
                                 color: white;
