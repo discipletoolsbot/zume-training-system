@@ -103,7 +103,15 @@ class Zume_Messages extends Zume_Magic_Page
             ?>
             <br></br>
             <div class="email-wrapper">
-                <strong>Subject</strong>:
+                <strong>Marketing Logic</strong>: <span style="float:right;">(User Stage: <?php echo ucwords( $message['stage'] ) ?>)</span>
+            </div>
+            <div class="email-wrapper">
+                <div>
+                    <?php echo $message['logic'] ?>
+                </div>
+            </div>
+            <div class="email-wrapper">
+                <strong>Email Subject</strong>:
             </div>
             <div class="email-wrapper">
                 <div class="email-subject">
@@ -112,7 +120,7 @@ class Zume_Messages extends Zume_Magic_Page
             </div>
 
             <div class="email-wrapper">
-                <strong>Body</strong>:
+                <strong>Email Body</strong>:
             </div>
             <div class="email-wrapper">
                 <html>
@@ -221,13 +229,16 @@ class Zume_Messages extends Zume_Magic_Page
         $subject_key = 'subject_'.$language_code;
         $body_key = 'body_'.$language_code;
 
-        $sql = $wpdb->prepare( "SELECT p.ID, p.post_title, pm.meta_value as subject, pm1.meta_value as body
+        $sql = $wpdb->prepare( "SELECT p.ID, p.post_title, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as logic, pm3.meta_value as stage
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = %s
+										LEFT JOIN zume_postmeta pm2 ON pm2.post_id=p.ID AND pm2.meta_key = 'logic'
+										LEFT JOIN zume_postmeta pm3 ON pm3.post_id=p.ID AND pm3.meta_key = 'stage'
                                         WHERE p.ID = %s
                                           AND p.post_type = 'zume_messages'
-                                          LIMIT 1;", $subject_key, $body_key, $message_id );
+                                          LIMIT 1;
+                                          ", $subject_key, $body_key, $message_id );
         $message = $wpdb->get_row( $sql, ARRAY_A );
 
         if ( empty($message) ) {
