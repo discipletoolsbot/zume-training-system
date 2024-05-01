@@ -249,7 +249,7 @@ class Zume_Messages extends Zume_Magic_Page
         $subject_key = 'subject_'.$language_code;
         $body_key = 'body_'.$language_code;
 
-        $sql = $wpdb->prepare( "SELECT p.ID, p.post_title, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as logic, pm3.meta_value as stage
+        $sql = $wpdb->prepare( "SELECT p.ID, p.post_title, pm.post_id, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as logic, pm3.meta_value as stage
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key = %s

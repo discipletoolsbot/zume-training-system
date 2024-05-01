@@ -759,6 +759,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <td colspan="2">
                 <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
                 <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?></a>
+                <br><em>Marketing Logic: <?php echo $message['logic'] ?></em>
+                <br><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em>
                 </td>
                 <td colspan="2">
                     <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
@@ -1555,10 +1557,12 @@ if ( ! function_exists( 'list_zume_messages' ) ) {
     function list_zume_messages( $language_code ) {
         global $wpdb;
 
-        $sql = $wpdb->prepare("SELECT p.post_title, p.post_parent, pm.post_id, %s as language_code, pm.meta_value as subject, pm1.meta_value as body
+        $sql = $wpdb->prepare("SELECT p.post_title, p.post_parent, pm.post_id, %s as language_code, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as logic, pm3.meta_value as stage
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'subject_', %s )
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'body_', %s )
+                                        LEFT JOIN zume_postmeta pm2 ON pm2.post_id=p.ID AND pm2.meta_key = 'logic'
+										LEFT JOIN zume_postmeta pm3 ON pm3.post_id=p.ID AND pm3.meta_key = 'stage'
                                         WHERE p.post_type = 'zume_messages'", $language_code, $language_code, $language_code );
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
