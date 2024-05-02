@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-30 01:39+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
@@ -2247,7 +2247,8 @@ msgstr "如果您沒有教練或導師，請掃描二維碼立即申請一位。
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "請安排教練"
@@ -3515,24 +3516,31 @@ msgid "Obeyed"
 msgstr "已順服"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
-msgstr "我遵守了這個工具或概念嗎？"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:225
 msgid "Shared"
 msgstr "已分享"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
-msgstr "我分享過這個工具或概念嗎？"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:227
 msgid "Trained"
 msgstr "已培訓"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
-msgstr "我是否訓練過其他人分享這個工具或概念？"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
@@ -4298,7 +4306,7 @@ msgstr ""
 "混入大量麵粉中，滲透到整個麵團中。這個比喻說明了一般人如何使用普通的資源，可"
 "以對神的國度產生指數級的影響。"
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
@@ -4569,7 +4577,8 @@ msgstr "使用螢幕或書中的程式碼"
 msgid "Connect"
 msgstr "連接"
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr "捐"
 
@@ -4904,31 +4913,33 @@ msgid "Real people ... real stories."
 msgstr "真實的人……真實的故事。"
 
 #: site/pages/home.php:281
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 "我花了很多年忠實地參加聖經研究和教堂，但不知怎的，我並沒有理解我在祖姆發現的"
 "門徒訓練的簡單真理。 〜克里斯"
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+#, fuzzy
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr "任何人都可以做到這一點。您無需具備特殊技能或接受過訓練。 〜克里斯"
 
 #: site/pages/home.php:303
+#, fuzzy
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 "Zúme 訓練為所有想要服從大使命的門徒勾勒出正常的基督徒生活方式。 〜克里斯"
 
 #: site/pages/home.php:314
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr "這些概念和技能改變了我們的教會以及我們對世界的影響。 〜克里斯"
 
 #: site/pages/home.php:324
@@ -4974,14 +4985,30 @@ msgstr "開始吧！"
 msgid "Kitchen Sink"
 msgstr "廚房水槽"
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "「天國酵母」Zúme 工具板"
+msgid "Friend"
+msgstr "用戶好友"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "探索訓練"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "「天國酵母」Zúme 門徒訓練資源"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "您的聯絡方式偏好是什麼？"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "加入社區"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -5607,6 +5634,19 @@ msgstr "https://github.com/ZumeProject/zume-training-system"
 msgid "Zume Training System"
 msgstr "祖姆培訓系統"
 
+#~ msgid "Have I obeyed this tool or concept?"
+#~ msgstr "我遵守了這個工具或概念嗎？"
+
+#~ msgid "Have I shared this tool or concept?"
+#~ msgstr "我分享過這個工具或概念嗎？"
+
+#~ msgid "Have I trained others to share this tool or concept?"
+#~ msgstr "我是否訓練過其他人分享這個工具或概念？"
+
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "「天國酵母」Zúme 工具板"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "SOAPS香皂讀經法"
 
@@ -5910,9 +5950,6 @@ msgstr "祖姆培訓系統"
 
 #~ msgid "User Stage"
 #~ msgstr "使用者階段"
-
-#~ msgid "User Friends"
-#~ msgstr "用戶好友"
 
 #~ msgid "User Plans"
 #~ msgstr "用戶計劃"
@@ -8345,9 +8382,6 @@ msgstr "祖姆培訓系統"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "操練 - 微型教會族譜"
 
-#~ msgid "Explore Training"
-#~ msgstr "探索訓練"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -8375,9 +8409,6 @@ msgstr "祖姆培訓系統"
 
 #~ msgid "Get new password"
 #~ msgstr "取得新的密碼"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "「天國酵母」Zúme 門徒訓練資源"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "「小鴨門徒訓練法」- 馬上開始帶領"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Faroese <https://translate.disciple.tools/projects/zume-"
@@ -2476,7 +2476,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "Fá ein venjara"
@@ -3771,7 +3772,9 @@ msgid "Obeyed"
 msgstr "Aktað"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:225
@@ -3779,7 +3782,9 @@ msgid "Shared"
 msgstr "Deilt"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:227
@@ -3787,7 +3792,10 @@ msgid "Trained"
 msgstr "Vant"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
@@ -4624,7 +4632,7 @@ msgstr ""
 "við vanligum førleikum og amboðnum, kunnu hava óvanliga ávirkan á Ríki Guds. "
 "Zúme ynskir at menna og styrkja vanlig trúgvandi at náa út til øll grannløg."
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4884,7 +4892,8 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
@@ -5263,25 +5272,23 @@ msgstr ""
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 
 #: site/pages/home.php:303
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 
 #: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 
 #: site/pages/home.php:324
@@ -5332,14 +5339,30 @@ msgstr "Byrja"
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "Zume yvirlit"
+msgid "Friend"
+msgstr "Adressa"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "Kanna venjingina nærri"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "Zúme venjingartilfar"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "Hvar býrt tú ella hvat postnummar hevur tú?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "Samfelag"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -5999,6 +6022,10 @@ msgstr "https://github.com/ZumeProject/zume-training"
 msgid "Zume Training System"
 msgstr "Zúme Venjing"
 
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "Zume yvirlit"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "SOAPS Bíbliulesnaður"
 
@@ -6235,10 +6262,6 @@ msgstr "Zúme Venjing"
 #, fuzzy
 #~ msgid "Add commitments"
 #~ msgstr "Aðrar viðmerkingar:"
-
-#, fuzzy
-#~ msgid "User Friends"
-#~ msgstr "Adressa"
 
 #, fuzzy
 #~ msgid "Guidebook"
@@ -8676,9 +8699,6 @@ msgstr "Zúme Venjing"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "Ven - Kortleggja ættlarlið"
 
-#~ msgid "Explore Training"
-#~ msgstr "Kanna venjingina nærri"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -8706,9 +8726,6 @@ msgstr "Zúme Venjing"
 
 #~ msgid "Get new password"
 #~ msgstr "Fá nýggja kotu"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "Zúme venjingartilfar"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "Dunnuunga Lærisveinaskapur - Leið beinanvegin"

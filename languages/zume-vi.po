@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/zume-"
@@ -2509,7 +2509,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "Nhận Huấn luyện viên"
@@ -3806,7 +3807,9 @@ msgid "Obeyed"
 msgstr "Đã làm theo"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:225
@@ -3814,7 +3817,9 @@ msgid "Shared"
 msgstr "Đã chia sẻ"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:227
@@ -3822,7 +3827,10 @@ msgid "Trained"
 msgstr "Đã huấn luyện"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
@@ -4674,7 +4682,7 @@ msgstr ""
 "phi thường đến Vương quốc của Đức Chúa Trời. Zúme hướng đến trang bị và trao "
 "quyền cho các tín đồ bình thường vươn ra mọi vùng lân cận."
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4933,7 +4941,8 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
@@ -5318,25 +5327,23 @@ msgstr ""
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 
 #: site/pages/home.php:303
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 
 #: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 
 #: site/pages/home.php:324
@@ -5388,14 +5395,30 @@ msgstr "Bắt Đầu"
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "Bảng điều khiển Zúme"
+msgid "Friend"
+msgstr "Địa chỉ người dùng"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "Khám phá Chương trình Huấn luyện"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "Trích nguồn của Khóa huấn luyện Zúme"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "Thành phố hoặc tiểu bang hoặc mã bưu chính của bạn là gì?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "Cộng đồng"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -6069,6 +6092,10 @@ msgstr "https://github.com/ZumeProject/zume-training"
 msgid "Zume Training System"
 msgstr "Huấn luyện Zume"
 
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "Bảng điều khiển Zúme"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "Đọc Kinh thánh SOAPS"
 
@@ -6305,10 +6332,6 @@ msgstr "Huấn luyện Zume"
 #, fuzzy
 #~ msgid "Add commitments"
 #~ msgstr "Những cam kết khác:"
-
-#, fuzzy
-#~ msgid "User Friends"
-#~ msgstr "Địa chỉ người dùng"
 
 #, fuzzy
 #~ msgid "Guidebook"
@@ -8799,9 +8822,6 @@ msgstr "Huấn luyện Zume"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "Thực hành - Lập bản đồ thế hệ"
 
-#~ msgid "Explore Training"
-#~ msgstr "Khám phá Chương trình Huấn luyện"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -8833,9 +8853,6 @@ msgstr "Huấn luyện Zume"
 
 #~ msgid "Get new password"
 #~ msgstr "Nhận mật khẩu mới"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "Trích nguồn của Khóa huấn luyện Zúme"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "Môn đồ hóa đàn vịt- Dẫn dắt ngay lập tức"
