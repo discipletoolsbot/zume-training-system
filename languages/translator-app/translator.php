@@ -268,16 +268,17 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $zume_languages =$zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
 
-        $tab = $_GET['tab'] ?? 'translators';
+        $tab = $_GET['tab'] ?? 'status';
         $tabs = [
-            'translators' => $tab === 'translators' ? '' : 'hollow',
             'status' => $tab === 'status' ? '' : 'hollow',
-            'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
-            'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
+            'weblate' => $tab === 'weblate' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
+            'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
             'messages' => $tab === 'messages' ? '' : 'hollow hollow-focus',
+            'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
             'assets' => $tab === 'assets' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
+            'translators' => $tab === 'translators' ? '' : 'hollow',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -412,27 +413,25 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
 
 
-            <!-- PIECES -->
+            <!-- SCRIPTS -->
             <div class="cell center grey-back">
-                <strong>PIECES</strong>
+                <strong>SCRIPTS</strong>
             </div>
-            <div class="cell">
+             <div class="cell">
                 <table style="vertical-align: text-top;">
                     <tbody>
                     <?php
-                        $pieces_list = list_zume_pieces( $language['code'] );
-                        foreach( $pieces_list as $item ) {
+                        $scripts = list_zume_scripts( $language['code'] );
+                        $script_items = zume_training_items_by_script();
+                        $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
+                        foreach( $fields as $script_id => $item ) {
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
+                                    <strong><?php echo $item['name'] ?? '' ?> </strong>
                                 </td>
                                 <td style="text-align:right;">
-                                     Title h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Pre-Video <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Post-Video <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Ask <?php echo empty( $item['zume_ask_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | SEO Meta Description <?php echo empty( $item['zume_seo_meta_description'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Content <?php echo empty( $scripts[$script_id]['content'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
                             </tr>
                             <?php
@@ -471,37 +470,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
             </div>
 
 
-            <!-- SCRIPTS -->
-            <div class="cell center grey-back">
-                <strong>SCRIPTS</strong>
-            </div>
-             <div class="cell">
-                <table style="vertical-align: text-top;">
-                    <tbody>
-                    <?php
-                        $scripts = list_zume_scripts( $language['code'] );
-                        $script_items = zume_training_items_by_script();
-                        $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
-                        foreach( $fields as $script_id => $item ) {
-                            ?>
-                            <tr>
-                                <td>
-                                    <strong><?php echo $item['name'] ?? '' ?> </strong>
-                                </td>
-                                <td style="text-align:right;">
-                                     Content <?php echo empty( $scripts[$script_id]['content'] ) ? '&#10060;' : '&#9989;' ?>
-                                </td>
-                            </tr>
-                            <?php
-                        }
-                    ?>
-                    </tbody>
-                </table>
-            </div>
 
 
-
-            <!-- MESSAGES -->
+             <!-- MESSAGES -->
             <div class="cell center grey-back">
                 <strong>MESSAGES</strong>
             </div>
@@ -526,6 +497,51 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 </table>
             </div>
 
+
+            <!-- PIECES -->
+            <div class="cell center grey-back">
+                <strong>PIECES</strong>
+            </div>
+            <div class="cell">
+                <table style="vertical-align: text-top;">
+                    <tbody>
+                    <?php
+                        $pieces_list = list_zume_pieces( $language['code'] );
+                        foreach( $pieces_list as $item ) {
+                            ?>
+                            <tr>
+                                <td>
+                                    <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
+                                </td>
+                                <td style="text-align:right;">
+                                     Title h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Pre-Video <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Post-Video <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | Ask <?php echo empty( $item['zume_ask_content'] ) ? '&#10060;' : '&#9989;' ?>
+                                    | SEO Meta Description <?php echo empty( $item['zume_seo_meta_description'] ) ? '&#10060;' : '&#9989;' ?>
+                                </td>
+                            </tr>
+                            <?php
+                        }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+
+
+            </div>
+        <?php
+    }
+    public function weblate() {
+        ?>
+        <div class="grid-container">
+            <div class="cell center">
+                <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank" >
+                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $this->language['weblate'] ?>/svg-badge.svg?native=1" alt="Translation status" style="height:50px;margin:0;" />
+                </a>
+                <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank" >
+                    https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>
+                </a>
             </div>
         <?php
     }

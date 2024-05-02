@@ -232,7 +232,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                 <div class="cell medium-3">
                     <?php
                     if ( in_array( 'administrator', (array) $this->user->roles ) ) {
-                        echo '<a class="button hollow clear" style="float:right;" href="/app/translator">Go To Translator</a>';
+                        echo '<a class="button hollow clear" style="float:right;" href="/app/translator">Go To Translator Portal</a>';
                     }
                     ?>
                 </div>
@@ -241,23 +241,30 @@ class Zume_Training_Translations extends Zume_Magic_Page
         <div class="grid-x grid-padding-x" style="margin-top: 100px;">
             <div class="cell medium-12" style="border-bottom: 1px solid lightgrey; padding-bottom: 1.5em;margin-bottom:1.5em;">
                 <strong style="text-decoration: underline;">ENGLISH CONTENT</strong>:
-                <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> words |
+                <strong>Weblate:</strong> <?php echo number_format( $strings ); ?> words |
                 <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> words |
                 <strong>Activities:</strong> <?php echo number_format( $activities ); ?> words |
                 <strong>Messages:</strong> <?php echo number_format( $messages ); ?> words |
-                <strong>Weblate Strings:</strong> <?php echo number_format( $strings ); ?> words ||
+                <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> words ||
                 <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
             </div>
+
             <div class="cell medium-6">
-                <h3>Translator Content</h3><hr></hr>
+                <h3>Weblate Content</h3><hr></hr>
+                <a href="https://translate.disciple.tools/engage/zume-training/">
+                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
+                </a>
+            </div>
+            <div class="cell medium-6">
+                <h3>Portal Content</h3><hr></hr>
                 <table>
                     <thead>
                     <tr>
                         <th>Language Word Count</th>
-                        <th>Pieces</th>
                         <th>Scripts</th>
                         <th>Activities</th>
                         <th>Messages</th>
+                        <th>Pieces</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -267,23 +274,17 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     foreach( $column as $name => $code ) {
                         ?>
                         <tr>
-                            <td><?php echo $name ?></td>
-                            <td><?php echo number_format( $this->word_count_pieces( $code ) ) ?></td>
+                            <td><a href="/<?php echo $code ?>/app/translator/?tab=status"><?php echo $name ?></a></td>
                             <td><?php echo number_format( $this->word_count_scripts( $code) ) ?></td>
                             <td><?php echo number_format( $this->word_count_activities( $code ) ) ?></td>
                             <td><?php echo number_format( $this->word_count_messages( $code ) ) ?></td>
+                            <td><?php echo number_format( $this->word_count_pieces( $code ) ) ?></td>
                         </tr>
                         <?php
                     }
                     ?>
                     </tbody>
                 </table>
-            </div>
-            <div class="cell medium-6">
-                <h3>Weblate Content</h3><hr></hr>
-                <a href="https://translate.disciple.tools/engage/zume-training/">
-                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
-                </a>
             </div>
 
             <div class="cell medium-6">
