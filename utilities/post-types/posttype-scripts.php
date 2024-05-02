@@ -699,20 +699,20 @@ class Zume_Scripts_Post_Type
         );
 
         $fields['63'] = array(
-            'name'        => '(62) 3-Circles Script',
+            'name'        => '(63) 3-Circles Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'scripts',
         );
 
-        $fields['68'] = array(
-            'name'        => '(62) 4-Relationships Script',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'scripts',
-        );
+//        $fields['68'] = array(
+//            'name'        => '(68) 4-Relationships Script',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'scripts',
+//        );
 
 
         return apply_filters( 'zume_scripts_fields_settings', $fields );

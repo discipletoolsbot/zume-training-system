@@ -481,14 +481,15 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <?php
                         $scripts = list_zume_scripts( $language['code'] );
                         $script_items = zume_training_items_by_script();
-                        foreach( $scripts as $item ) {
+                        $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
+                        foreach( $fields as $script_id => $item ) {
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $script_items[$item['script_id']]['title'] ?? '' ?> (<?php echo $item['script_id'] ?? '' ?>)</strong>
+                                    <strong><?php echo $item['name'] ?? '' ?> </strong>
                                 </td>
                                 <td style="text-align:right;">
-                                     Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Content <?php echo empty( $scripts[$script_id]['content'] ) ? '&#10060;' : '&#9989;' ?>
                                 </td>
                             </tr>
                             <?php
@@ -919,27 +920,28 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </thead>
                     <tbody>
                     <?php
-                        foreach( $list as $item ) {
+                        foreach( $fields as $script_id => $item ) {
                              ?>
                             <tr>
-                                <td style="background-color: grey; width: 40%; color: white;"><?php echo $fields[$item['en']['script_id']]['name'] ?? '' ?></td>
+                                <td style="background-color: grey; width: 40%; color: white;"><?php echo $item['name'] ?? '' ?></td>
                                 <td style="background-color: grey; width: 40%;"></td>
                                 <td style="background-color: grey; width: 10%;"></td>
                             </tr>
                             <tr>
                                 <td>
-                                    <?php echo $item['en']['content'] ?? ''  ?>
+                                    <?php echo $en_list[$script_id]['content'] ?? ''  ?>
                                 </td>
                                 <td>
-                                    <textarea style="height:500px;" id="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"><?php echo $item['lang']['content'] ?? '' ;  ?></textarea>
+                                    <textarea style="height:500px;" id="<?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>"><?php echo $language_list[$script_id]['content'] ?? '' ;  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>" data-key="<?php echo $item['lang']['script_id'] ?>" data-post="<?php echo $item['lang']['post_id'] ?>">Save</button>
-                                    <br><span class="loading-spinner <?php echo hash('sha256', $item['lang']['script_id'] . $item['lang']['post_id'] ) ?>"></span>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>" data-key="<?php echo $language_list[$script_id]['script_id'] ?>" data-post="<?php echo $language_list[$script_id]['post_id'] ?>">Save</button>
+                                    <br><span class="loading-spinner <?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>"></span>
                                 </td>
                             </tr>
                             <?php
-                        } ?>
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>
@@ -1431,6 +1433,7 @@ if (!function_exists('list_zume_pieces')) {
         global $wpdb, $table_prefix;
 
         $sql = $wpdb->prepare("SELECT p.*,
+                                    pm.post_id,
                                     pm.meta_value as zume_lang,
                                     pm1.meta_value as zume_piece,
                                     pm2.meta_value as zume_piece_h1,
@@ -1455,7 +1458,12 @@ if (!function_exists('list_zume_pieces')) {
             return [];
         }
 
-        return $results;
+        $pieces = [];
+        foreach ($results as $result) {
+            $pieces[$result['post_id']] = $result;
+        }
+
+        return $pieces;
     }
 }
 if (!function_exists('list_zume_downloads')) {
@@ -1503,7 +1511,11 @@ if (!function_exists('list_zume_scripts')) {
         if (empty($results) || is_wp_error($results)) {
             return [];
         }
-        return $results;
+        $scripts = [];
+        foreach ($results as $result) {
+            $scripts[$result['script_id']] = $result;
+        }
+        return $scripts;
     }
 }
 if (!function_exists('list_zume_activities')) {
