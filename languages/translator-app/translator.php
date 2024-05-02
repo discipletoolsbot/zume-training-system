@@ -757,10 +757,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <tr><td colspan="4" style="background:black;"></td></tr>
             <tr>
                 <td colspan="2">
-                <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
-                <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?></a>
-                <br><em>Marketing Logic: <?php echo $message['logic'] ?></em>
-                <br><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em>
+                    <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
+                    <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?></a>
+                    <br><em>Marketing Logic: <?php echo $message['logic'] ?? '' ?></em>
+                    <br><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em>
                 </td>
                 <td colspan="2">
                     <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
@@ -997,30 +997,31 @@ class Zume_Training_Translator extends Zume_Magic_Page
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
         $language = $languages[$this->language_code];
-        $messages_english = list_zume_activities( 'en' );
-        $messages_other_language = list_zume_activities( $this->language_code );
+        $activities_english = list_zume_activities( 'en' );
+        $activities_other_language = list_zume_activities( $this->language_code );
 
         ob_start();
-        foreach( $messages_english as $pid => $message ) {
+        foreach( $activities_english as $message ) {
+            $pid = $message['post_id'];
             ?>
             <tr><td colspan="4" style="background:black;"></td></tr>
             <tr>
                 <td colspan="2">
-                    <?php echo $messages_english[$pid]['post_title'] ?? '' ?><br />
-                    <a href="<?php echo site_url() . '/en/activities/' . $messages_english[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/en/activities/' . $messages_english[$pid]['post_title'] ?></a>
+                    <?php echo $activities_english[$pid]['post_title'] ?? '' ?><br />
+                    <a href="<?php echo site_url() . '/en/activities/' . $activities_english[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/en/activities/' . $activities_english[$pid]['post_title'] ?></a>
                 </td>
                 <td colspan="2">
                     <br />
-                    <a href="<?php echo site_url() . '/' . $this->language_code . '/activities/' . $messages_other_language[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/' . $this->language_code . '/activities/' . $messages_other_language[$pid]['post_title'] ?></a>
+                    <a href="<?php echo site_url() . '/' . $this->language_code . '/activities/' . $activities_other_language[$pid]['post_title'] ?>" target="_blank"><?php echo site_url() . '/' . $this->language_code . '/activities/' . $activities_other_language[$pid]['post_title'] ?></a>
                 </td>
             </tr>
             <tr>
                 <td><strong>Title:</strong></td>
                 <td>
-                    <?php echo $messages_english[$pid]['title'] ?? '' ?><br>
+                    <?php echo $activities_english[$pid]['title'] ?? '' ?><br>
                 </td>
                 <td>
-                    <input type="text" class="title_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $messages_other_language[$pid]['title'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
+                    <input type="text" class="title_<?php echo $this->language_code ?>_<?php echo $pid ?>" value="<?php echo $activities_other_language[$pid]['title'] ?? '' ?>" placeholder="Subject for <?php echo $language['name'] ?>" />
                 </td>
                 <td>
                     <button class="button save_text" data-target="title_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-key="title_<?php echo $this->language_code ?>" data-post="<?php echo $pid ?>" >Save</button>
@@ -1032,10 +1033,10 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <strong>Content:</strong>
                 </td>
                 <td>
-                    <?php echo $messages_english[$pid]['content'] ?? '' ?><br>
+                    <?php echo $activities_english[$pid]['content'] ?? '' ?><br>
                 </td>
                 <td>
-                    <textarea id="content_<?php echo $this->language_code ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $messages_other_language[$pid]['content'] ?? '' ?></textarea>
+                    <textarea id="content_<?php echo $this->language_code ?>_<?php echo $pid ?>" placeholder="Body for <?php echo $language['name'] ?>"><?php echo $activities_other_language[$pid]['content'] ?? '' ?></textarea>
                 </td>
                 <td>
                     <button class="button save_textarea" data-target="content_<?php echo $this->language_code ?>_<?php echo $pid ?>" data-post="<?php echo $pid ?>" data-key="content_<?php echo $this->language_code ?>" >Save</button>
@@ -1510,18 +1511,22 @@ if (!function_exists('list_zume_activities')) {
     {
         global $wpdb;
 
-        $sql = $wpdb->prepare("SELECT  p.post_title, pm.post_id, %s as language_code, pm.meta_id, pm.meta_value as title, pm1.meta_value as content
+        $sql = $wpdb->prepare("SELECT p.post_title, pm.post_id, %s as language_code, pm.meta_id, pm.meta_value as title, pm1.meta_value as content
                                         FROM zume_posts p
                                         LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key LIKE CONCAT( 'title_', %s )
                                         LEFT JOIN zume_postmeta pm1 ON pm1.post_id=p.ID AND pm1.meta_key LIKE CONCAT( 'content_', %s )
-                                        WHERE p.post_type = 'zume_activities' AND p.post_status = 'publish';",
+                                        WHERE p.post_type = 'zume_activities';",
                                 $language_code, $language_code, $language_code );
 
         $results = $wpdb->get_results($sql, ARRAY_A);
         if (empty($results) || is_wp_error($results)) {
             return [];
         }
-        return $results;
+        $activities = [];
+        foreach( $results as $activity) {
+            $activities[$activity['post_id']] = $activity;
+        }
+        return $activities;
     }
 }
 
