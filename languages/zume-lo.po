@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Lao <https://translate.disciple.tools/projects/zume-training/"
@@ -2396,7 +2396,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "ຄູຜູ້ຝຶກ​ສອນ"
@@ -3675,7 +3676,9 @@ msgid "Obeyed"
 msgstr "ເຊື່ອຟັງ"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:225
@@ -3683,7 +3686,9 @@ msgid "Shared"
 msgstr "ແບ່ງປັນ"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:227
@@ -3691,7 +3696,10 @@ msgid "Trained"
 msgstr "ຝຶກອົບຮົມ"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
@@ -4517,7 +4525,7 @@ msgstr ""
 "ເຖິງ​ຄົນ​ທຳ​ມະ​ດາ​ທີ່​ໃຊ້​ສິ່ງ​ຂອງ​ທຳ​ມະ​ດາ​ແຕ່​ສາ​ມາດ​ສົ່ງ​ຜົນ​ກະ​ທົບ​ຍິ່ງ​ໃຫຍ່​ຕໍ່​ອາ​ນາ​ຈັກ​ຂອງ​ພ​ຣະ​ເຈົ້າ​ໄດ້ ຊູ​ເມ້​ໄດ້​ຕັ້ງ​ເປົ້າ​ໝາຍ​"
 "ໄປ​ທີ່​ຊ່ວຍ​ໃຫ້​ຜູ້​ເຊື່ອ​ທຳ​ມະ​ດາ​ຄົນ​ໜຶ່ງ​ມີ​ຄວາມ​ພ້ອມ​ແລະ​ມີ​ພະ​ລັງ​ທີ່​ຈະ​ອອກ​ໄປ​ທຸກໆ​ຊຸມ​ຊົນ​."
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4775,7 +4783,8 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
@@ -5143,25 +5152,23 @@ msgstr ""
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 
 #: site/pages/home.php:303
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 
 #: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 
 #: site/pages/home.php:324
@@ -5211,14 +5218,30 @@ msgstr "​ເລີ່ມ​ລົງ​ມື"
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "​ແຜງ​ຄວບ​ຄຸມ"
+msgid "Friend"
+msgstr "ອີ​ເມ​ວ​ຜູ້​ໃຊ້"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "ສຳຫຼວດການຝຶກອົບຮົມ"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "ຊັບພະຍາກອນການຝຶກອົບຮົມຊູເມ້"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "ເມືອງຫຼືແຂວງຫຼືລະຫັດໄປສະນີຂອງທ່ານແມ່ນຫຍັງ?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "ການຮ່ວມກັນ"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -5873,6 +5896,10 @@ msgstr "https://github.com/ໂຄງການຊູເມ້/ການອົບ�
 msgid "Zume Training System"
 msgstr "ການອົບຮົມຊູເມ້"
 
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "​ແຜງ​ຄວບ​ຄຸມ"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "ວິທີສຶກສາພຣະຄຳພີ"
 
@@ -6099,10 +6126,6 @@ msgstr "ການອົບຮົມຊູເມ້"
 #, fuzzy
 #~ msgid "Add commitments"
 #~ msgstr "ຄຳ​ໝັ້ນ​ສັນ​ຍາ​ອື່ນໆ:"
-
-#, fuzzy
-#~ msgid "User Friends"
-#~ msgstr "ອີ​ເມ​ວ​ຜູ້​ໃຊ້"
 
 #, fuzzy
 #~ msgid "Guidebook"
@@ -8422,9 +8445,6 @@ msgstr "ການອົບຮົມຊູເມ້"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "ຝຶກຝົນ-ຮູບແບບຕາຕະລາງສະແດງລຸ້ນ"
 
-#~ msgid "Explore Training"
-#~ msgstr "ສຳຫຼວດການຝຶກອົບຮົມ"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -8452,9 +8472,6 @@ msgstr "ການອົບຮົມຊູເມ້"
 
 #~ msgid "Get new password"
 #~ msgstr "ຮັບລະຫັດຜ່ານໃໝ່"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "ຊັບພະຍາກອນການຝຶກອົບຮົມຊູເມ້"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "ການສ້າງສາວົກແບບເປັດນ້ອຍ-ການເປັນຜູ້ນຳໃນທັນທີທັນໃດ"

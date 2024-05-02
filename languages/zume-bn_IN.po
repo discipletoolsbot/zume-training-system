@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-10 19:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Bengali (India) <https://translate.disciple.tools/projects/"
@@ -2575,7 +2575,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #, fuzzy
 msgid "Get a Coach"
@@ -3885,7 +3886,9 @@ msgid "Obeyed"
 msgstr "বাধ্য হয়েছি"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:225
@@ -3893,7 +3896,9 @@ msgid "Shared"
 msgstr "বলেছি"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:227
@@ -3901,7 +3906,10 @@ msgid "Trained"
 msgstr "প্রশিক্ষণ দিয়েছি"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
@@ -4787,7 +4795,7 @@ msgstr ""
 "সাধারণ বিশ্বাসীদের সজ্জিত ও শক্তিশালী করা যেন তারা আশেপাশে প্রত্যেক জায়গায় পৌঁছাতে "
 "পারে।"
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5049,7 +5057,8 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
@@ -5429,25 +5438,23 @@ msgstr ""
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 
 #: site/pages/home.php:303
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 
 #: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 
 #: site/pages/home.php:324
@@ -5499,14 +5506,30 @@ msgstr "শুরু করুন"
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "জুমে ড্যাশবোর্ড"
+msgid "Friend"
+msgstr "ইউসার অ্যাড্রেস"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "প্রশিক্ষণ অন্বেষণ করুন"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "জুমে প্রশিক্ষণের সংস্থান"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "আপনার শহর বা রাজ্য বা ডাক কোড কী?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "সমাজ"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -6212,6 +6235,10 @@ msgstr "https://github.com/ZumeProject/zume-training"
 msgid "Zume Training System"
 msgstr "জুমে প্রশিক্ষণ"
 
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "জুমে ড্যাশবোর্ড"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "এস ও এ পি এস বাইবেল পাঠ"
 
@@ -6469,10 +6496,6 @@ msgstr "জুমে প্রশিক্ষণ"
 #, fuzzy
 #~ msgid "Add commitments"
 #~ msgstr "অন্যান্য অঙ্গীকারঃ"
-
-#, fuzzy
-#~ msgid "User Friends"
-#~ msgstr "ইউসার অ্যাড্রেস"
 
 #, fuzzy
 #~ msgid "Guidebook"
@@ -9344,9 +9367,6 @@ msgstr "জুমে প্রশিক্ষণ"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "অনুশীলন করুন - প্রজন্মের ম্যাপিং"
 
-#~ msgid "Explore Training"
-#~ msgstr "প্রশিক্ষণ অন্বেষণ করুন"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -9374,9 +9394,6 @@ msgstr "জুমে প্রশিক্ষণ"
 
 #~ msgid "Get new password"
 #~ msgstr "নতুন পাসওয়ার্ড গ্রহণ করুন"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "জুমে প্রশিক্ষণের সংস্থান"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "হাঁসের বাচ্চার শিষ্যত্ব -  তাৎক্ষণিক নেতৃত্ব"

@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
-"PO-Revision-Date: 2024-04-25 01:59+0000\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
+"PO-Revision-Date: 2024-05-02 16:17+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
-"Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/it_IT/>\n"
+"Language-Team: Italian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:189
@@ -40,9 +40,8 @@ msgid "Dashboard"
 msgstr "Bacheca"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
-msgstr "Mio Zume"
+msgstr "Mio Zúme"
 
 #: appearance/style-override/navigation.php:117
 msgid "Contacts"
@@ -617,17 +616,16 @@ msgstr "Nessun Risultato"
 #: site/activities/three-month-plan-html.php:26
 #: site/activities/three-month-plan-interactive.php:47
 #: site/dashboard/dashboard.php:196
-#, fuzzy
 msgid "3-Month Plan"
-msgstr "Piano trimestrale"
+msgstr "Piano Trimestrale"
 
 #: site/activities/three-month-plan-html.php:27
 msgid "Switch to Interactive Version"
-msgstr ""
+msgstr "Cambiare alla Versione Interattiva"
 
 #: site/activities/three-month-plan-interactive.php:48
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "Cambiare alla Versione Stampabile"
 
 #: site/activities/three-month-plan-interactive.php:61
 #: site/course/presenter.php:132
@@ -639,6 +637,8 @@ msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"Attiva lo script per utilizzare questa pagina interattiva. Altrimenti puoi "
+"utilizzare la versione stampabile cliccando sul link sopra."
 
 #: site/activities/three-month-plan-interactive.php:73
 #: site/dashboard/dashboard.php:173 site/profile/profile.php:153
@@ -1011,11 +1011,10 @@ msgid "S.O.A.P.S. Bible Reading"
 msgstr "LETTURA DELLA BIBBIA S.O.A.P.C."
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Vedrete come Dio usa la gente comune facendo cose semplici per avere un "
-"grande impatto."
+"Dio usa la gente comune disposta a fare le cose semplici per avere un grande "
+"impatto."
 
 #: site/course/course-content.php:136
 msgid ""
@@ -1030,28 +1029,26 @@ msgid "When you think of a church, what comes to mind?"
 msgstr "Quando pensate alla chiesa, cosa vi viene in mente?"
 
 #: site/course/course-content.php:180
-#, fuzzy
 msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
 msgstr ""
-"Qual è la differenza tra quell’immagine e ciò che è descritto nel video come "
-"una “Chiesa Semplice”?"
+"Qual è la differenza tra quell’immagine e ciò che il video descrive come una "
+"“Chiesa Semplice”?"
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
 msgstr "Quali di queste pensate si possa moltiplicare più facilmente e perché?"
 
 #: site/course/course-content.php:199
-#, fuzzy
 msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
-"Inspiriamo. Espiriamo. Siamo vivi. Questo è anche il Respiro Spirituale."
+"Il Respiro Spirituale. Inspiriamo. Espiriamo. Siamo vivi. Ascoltare e "
+"obbedire Dio è anche così."
 
 #: site/course/course-content.php:225
-#, fuzzy
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
 msgstr "Perché è essenziale imparare a sentire e riconoscere la voce di Dio?"
 
@@ -1073,7 +1070,7 @@ msgstr ""
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "Esercitati con lo studio Biblico S.O.A.P.C."
 
 #: site/course/course-content.php:269 site/course/course-content.php:326
 #: site/course/course-content.php:568 site/course/course-content.php:638
@@ -1086,13 +1083,15 @@ msgstr ""
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
 msgid "ACTIVITY"
-msgstr ""
+msgstr "ATTIVITÀ"
 
 #: site/course/course-content.php:274
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"Scansiona il codice QR e lavora da solo utilizzando lo schema dello studio "
+"biblico SOAPC con il passo Matteo 6:9-13. (20 min)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -1100,12 +1099,11 @@ msgstr "Scrittura"
 
 #: site/course/course-content.php:277
 msgid "Observation"
-msgstr ""
+msgstr "Osservazione"
 
 #: site/course/course-content.php:278
-#, fuzzy
 msgid "Application"
-msgstr "Località"
+msgstr "Applicazione"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:191
@@ -1113,14 +1111,15 @@ msgid "Prayer"
 msgstr "Preghiera"
 
 #: site/course/course-content.php:280
-#, fuzzy
 msgid "Sharing"
-msgstr "Condividere"
+msgstr "Condivisione"
 
 #: site/course/course-content.php:282
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
+"Torna al tuo gruppo, dividetevi in gruppi da due o tre e condividete ciò che "
+"è venuto fuori utilizzando SOAPC. (10 min)"
 
 #: site/course/course-content.php:287 site/course/course-content.php:339
 #: site/course/course-content.php:578 site/course/course-content.php:651
@@ -1132,28 +1131,26 @@ msgstr ""
 #: site/course/course-content.php:2735 site/course/course-content.php:3000
 #: site/course/course-content.php:3682 site/course/course-content.php:3954
 #: site/course/course-content.php:4508 site/course/course-content.php:4910
-#, fuzzy
 msgid "Activity Resource"
-msgstr "Risorse"
+msgstr "Risorsa per l'Attività"
 
 #: site/course/course-content.php:304
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
 msgstr ""
-"La Bibbia ci insegna che ogni seguace di Gesù sarà un giorno ritenuto "
-"responsabile per ciò che ha fatto, detto e pensato. I Gruppi di "
-"Corresponsabilità sono un buon modo per essere pronti!"
+"La Bibbia ci insegna che ogni seguace di Gesù un giorno sarà ritenuto "
+"responsabile per ciò che ha fatto, detto e pensato."
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
 msgstr ""
+"I Gruppi di Corresponsabilità sono un buon modo per prepararsi per quel "
+"giorno!"
 
 #: site/course/course-content.php:329
-#, fuzzy
 msgid "Practice Accountability Groups"
-msgstr "Praticare - Gruppi di corresponsabilità"
+msgstr "Allenatevi con i Gruppi di Corresponsabilità"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1162,21 +1159,19 @@ msgstr "Praticare - Gruppi di corresponsabilità"
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
 msgid "Scan the QR code."
-msgstr ""
+msgstr "Scansiona il codice QR."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
 msgstr "Dividetevi in gruppi di due o tre persone dello stesso genere."
 
 #: site/course/course-content.php:333
-#, fuzzy
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
-"Trascorrete i prossimi 45 minuti lavorando insieme attraverso le Domande di "
-"Responsabilità – Lista 2 nella sezione “Gruppi di Corresponsabilità” nel "
-"manuale Zúme."
+"Trascorrete i prossimi 20 minuti rispondendo alle Domande di "
+"Corresponsabilità."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1192,9 +1187,8 @@ msgstr ""
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
-#, fuzzy
 msgid "REVIEW"
-msgstr "VISIONE GLOBALE"
+msgstr "RICAPITOLIAMO"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1204,14 +1198,14 @@ msgstr "VISIONE GLOBALE"
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "I concetti sentiti in questa sessione:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "Gli attrezzi sentiti in questa sessione:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1261,30 +1255,34 @@ msgid ""
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"Chiedi al Signore di guidarti nello sfidare almeno cinque persone che sai "
+"che amano Gesù a iniziare a utilizzare lo studio biblico S.O.A.P.C. nel loro "
+"tempo quotidiano con il Signore, e poi fallo."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
-msgstr ""
+msgstr "SESSIONE 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"Chiedi se qualcuno del gruppo ha dei soggetti di preghiera specifici per cui "
+"vorrebbe che il gruppo pregasse."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"Ringrazia Dio che promette nella sua Parola di ascoltare e agire quando il "
+"suo popolo prega."
 
 #: site/course/course-content.php:442
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr ""
-"Pregate e ringraziate Dio per i risultati e invitate lo Spirito Santo a "
-"condurre il vostro tempo insieme."
+msgstr "Chiedete allo Spirito Santo di Dio di condurre il vostro tempo insieme."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -1300,7 +1298,6 @@ msgstr ""
 #: site/course/course-content.php:5012 site/course/course-content.php:5137
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
-#, fuzzy
 msgid "LOOK BACK"
 msgstr "GUARDARE INDIETRO"
 
@@ -1318,9 +1315,8 @@ msgstr "GUARDARE INDIETRO"
 #: site/course/course-content.php:5015 site/course/course-content.php:5140
 #: site/course/course-content.php:5269 site/course/course-content.php:5402
 #: site/course/course-content.php:5539 site/course/course-content.php:5665
-#, fuzzy
 msgid "Before getting started, take some time to look back."
-msgstr "Prima di cominciare, prendiamo del tempo per aggiornarci."
+msgstr "Prima di cominciare, prendete del tempo per guardare indietro."
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -1336,13 +1332,12 @@ msgstr "Prima di cominciare, prendiamo del tempo per aggiornarci."
 #: site/course/course-content.php:5016 site/course/course-content.php:5141
 #: site/course/course-content.php:5270 site/course/course-content.php:5403
 #: site/course/course-content.php:5540 site/course/course-content.php:5666
-#, fuzzy
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
 msgstr ""
-"Alla fine della nostra ultima sessione, ognuno nel gruppo era stato posto di "
-"fronte ad una sfida in due modi:"
+"Alla fine dell'ultima sessione, tutti sono stati sfidati di mettere in "
+"pratica ciò che avevano imparato."
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1368,14 +1363,13 @@ msgstr ""
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
 msgid "In this session, we will hear and discuss this concept:"
-msgstr ""
+msgstr "In questa sessione, ascolteremo e parleremo di questo concetto:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3531 site/course/course-content.php:3551
-#, fuzzy
 msgid "Producer Not Consumer"
-msgstr "Produttori vs Consumatori"
+msgstr "Produttori e non Consumatori"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
@@ -2462,7 +2456,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "Richiedi un tutor"
@@ -3836,7 +3831,9 @@ msgid "Obeyed"
 msgstr "Obbedito"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:225
@@ -3844,7 +3841,9 @@ msgid "Shared"
 msgstr "Condiviso"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:227
@@ -3852,7 +3851,10 @@ msgid "Trained"
 msgstr "Preparato"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
 msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
@@ -4705,7 +4707,7 @@ msgstr ""
 "illustra come le persone comuni, utilizzando risorse ordinarie, possono "
 "avere un impatto esponenziale per il Regno di Dio."
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4984,7 +4986,8 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
@@ -5344,35 +5347,37 @@ msgid "Real people ... real stories."
 msgstr "Persone vere ... storie vere."
 
 #: site/pages/home.php:281
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 "Ho speso anni della mia vita partecipando fedelmente a studi biblici e "
 "frequentando una chiesa, ma per qualche motivo non avevo mai compreso le "
 "semplici verità del fare discepoli che ho trovato in Zúme. - Chris"
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+#, fuzzy
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 "Chiunque può farlo. Non devi avere competenze particolari o formazioni "
 "speciali. - Chris"
 
 #: site/pages/home.php:303
+#, fuzzy
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 "Per tutti i discepoli che vogliono obbedire al Grande Mandato, Zúme descrive "
 "un normale stile di vita cristiano. - Chris"
 
 #: site/pages/home.php:314
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 "Questi concetti e competenze hanno trasformato la nostra chiesa e il nostro "
 "impatto sul mondo. - Chris"
@@ -5423,14 +5428,30 @@ msgstr "Comincia"
 msgid "Kitchen Sink"
 msgstr "Lavandino della Cucina"
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "Bacheca Zúme"
+msgid "Friend"
+msgstr "Indirizzo utente"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "Esplora l'Istruzione"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "Risorse della Formazione di Zúme "
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "Qual'è la tua città o stato o codice postale?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "Unisciti alla Communità"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 #, fuzzy
@@ -6107,6 +6128,10 @@ msgstr "https://github.com/ZumeProject/zume-training"
 msgid "Zume Training System"
 msgstr "Zúme Training"
 
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "Bacheca Zúme"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "Studio Biblico S.O.A.P.C."
 
@@ -6344,10 +6369,6 @@ msgstr "Zúme Training"
 #, fuzzy
 #~ msgid "Add commitments"
 #~ msgstr "Altri impegni:"
-
-#, fuzzy
-#~ msgid "User Friends"
-#~ msgstr "Indirizzo utente"
 
 #, fuzzy
 #~ msgid "Guidebook"
@@ -8929,9 +8950,6 @@ msgstr "Zúme Training"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "Praticare - Mappatura Generazionale"
 
-#~ msgid "Explore Training"
-#~ msgstr "Esplora l'Istruzione"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -8963,9 +8981,6 @@ msgstr "Zúme Training"
 
 #~ msgid "Get new password"
 #~ msgstr "Richiedi una nuova password"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "Risorse della Formazione di Zúme "
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "Discepolare Come Anatroccoli - Diventare un Leader Subito"

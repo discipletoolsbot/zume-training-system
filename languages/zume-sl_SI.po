@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-04-29 21:18-0600\n"
+"POT-Creation-Date: 2024-05-01 13:18-0600\n"
 "PO-Revision-Date: 2024-04-15 11:31-0600\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
@@ -2429,7 +2429,8 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
+#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
 msgstr "Poiščite trenerja"
@@ -3813,24 +3814,31 @@ msgid "Obeyed"
 msgstr "Obeed"
 
 #: site/dashboard/dashboard.php:224
-msgid "Have I obeyed this tool or concept?"
-msgstr "Ali sem ubogal to orodje ali koncept?"
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:225
 msgid "Shared"
 msgstr "Deljeno"
 
 #: site/dashboard/dashboard.php:226
-msgid "Have I shared this tool or concept?"
-msgstr "Ali sem delil to orodje ali koncept?"
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:227
 msgid "Trained"
 msgstr "Usposobljeni"
 
 #: site/dashboard/dashboard.php:228
-msgid "Have I trained others to share this tool or concept?"
-msgstr "Ali sem usposobil druge za deljenje tega orodja ali koncepta?"
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
+msgstr ""
 
 #: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
@@ -4656,7 +4664,7 @@ msgstr ""
 "z navadnimi pripomočki gromozanski vpliv na Božje kraljestvo. Cilj Zúme je, "
 "da opremimo in omogočimo navadne vernike, da dosežejo cel svet."
 
-#: site/pages/about.php:95 site/pages/messages.php:203
+#: site/pages/about.php:95 site/pages/messages.php:232
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4958,7 +4966,8 @@ msgstr "Uporabite kodo na zaslonu ali v knjigi"
 msgid "Connect"
 msgstr "Poveži"
 
-#: site/pages/donate.php:86 site/pages/donate.php:100 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/donate.php:100
+#: site/pages/messages.php:236 site/parts/footer.php:42
 msgid "Donate"
 msgstr "Darujte"
 
@@ -5318,25 +5327,23 @@ msgstr "Resnični ljudje ... resnične zgodbe."
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
-"Zúme. ~ Chris"
+"Zúme. ~ C"
 msgstr ""
 
 #: site/pages/home.php:292
-msgid ""
-"Anyone can do this. You don‘t have to have special skills or training. ~ "
-"Chris"
+msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 
 #: site/pages/home.php:303
 msgid ""
-"All disciples who want to obey the Great Commission, Zúme training outlines "
-"a normal Christian lifestyle. ~ Chris"
+"This is for all disciples who want to obey the Great Commission. Zúme "
+"training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
 
 #: site/pages/home.php:314
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
-"world. ~ Chris"
+"world. ~ R"
 msgstr ""
 
 #: site/pages/home.php:324
@@ -5384,14 +5391,30 @@ msgstr "Začnite"
 msgid "Kitchen Sink"
 msgstr "Kuhinjsko korito"
 
-#: site/pages/messages.php:201
+#: site/pages/messages.php:221
 #, fuzzy
-msgid "Go to Zúme Dashboard"
-msgstr "Zúme nadzorna plošča"
+msgid "Friend"
+msgstr "Naslov uporabnik"
 
-#: site/pages/messages.php:202
-msgid "Update Communication Preferences"
-msgstr ""
+#: site/pages/messages.php:233
+#, fuzzy
+msgid "Explore the Vision"
+msgstr "Oglej si tečaj"
+
+#: site/pages/messages.php:234
+#, fuzzy
+msgid "Zúme Training Dashboard"
+msgstr "Orodja tečaja Zúme"
+
+#: site/pages/messages.php:235
+#, fuzzy
+msgid "Update Your Communication Preferences"
+msgstr "Kakšne so vaše želje glede stikov?"
+
+#: site/pages/messages.php:236
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "Pridružite se skupnosti"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 #, fuzzy
@@ -6060,6 +6083,19 @@ msgstr "https://github.com/ZumeProject/zume-training-system"
 msgid "Zume Training System"
 msgstr "Sistem za usposabljanje Zume"
 
+#~ msgid "Have I obeyed this tool or concept?"
+#~ msgstr "Ali sem ubogal to orodje ali koncept?"
+
+#~ msgid "Have I shared this tool or concept?"
+#~ msgstr "Ali sem delil to orodje ali koncept?"
+
+#~ msgid "Have I trained others to share this tool or concept?"
+#~ msgstr "Ali sem usposobil druge za deljenje tega orodja ali koncepta?"
+
+#, fuzzy
+#~ msgid "Go to Zúme Dashboard"
+#~ msgstr "Zúme nadzorna plošča"
+
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "Branje Svetega pisma po sistemu S. O. A. P. S."
 
@@ -6394,9 +6430,6 @@ msgstr "Sistem za usposabljanje Zume"
 
 #~ msgid "User Stage"
 #~ msgstr "Faza uporabnika"
-
-#~ msgid "User Friends"
-#~ msgstr "Naslov uporabnik"
 
 #~ msgid "User Plans"
 #~ msgstr "Uporabniški načrti"
@@ -8989,9 +9022,6 @@ msgstr "Sistem za usposabljanje Zume"
 #~ msgid "Practice - Generation Mapping"
 #~ msgstr "Vaja –  generacijska karta"
 
-#~ msgid "Explore Training"
-#~ msgstr "Oglej si tečaj"
-
 #~ msgid ""
 #~ "Yes. There are no premium versions, no trial periods, no follow-on sales "
 #~ "of products. Freely we've received. Freely we give."
@@ -9019,9 +9049,6 @@ msgstr "Sistem za usposabljanje Zume"
 
 #~ msgid "Get new password"
 #~ msgstr "Pridobi novo geslo"
-
-#~ msgid "Zúme Training Resources"
-#~ msgstr "Orodja tečaja Zúme"
 
 #~ msgid "Duckling Discipleship - Leading Immediately"
 #~ msgstr "Račje učeništvo –  takojšnje učenje"
