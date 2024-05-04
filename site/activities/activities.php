@@ -79,7 +79,6 @@ class Zume_Activites extends Zume_Magic_Page
         <script>
             jQuery(document).ready(function($){
                 document.cookie = "zume_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                document.cookie = "pll_language=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
             });
         </script>
         <?php

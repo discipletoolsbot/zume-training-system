@@ -1274,6 +1274,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         '33group',
                         'prayerwalking',
                         '3monthplan',
+                        '3monthplan_printable',
                         'coachingchecklist',
                         'coachingchecklist_printable',
                         'peermentoring',

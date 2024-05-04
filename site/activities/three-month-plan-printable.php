@@ -1,11 +1,12 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-class Zume_Activites_3monthplan_Html extends Zume_Activites
+class Zume_Activites_3monthplan_Printable extends Zume_Activites
 {
-    public $page_title = 'Zúme Activity';
+    public $page_title = '3 Month Plan Printable';
     public $root = 'activities';
-    public $type = '3monthplan_html';
+    public $type = '3monthplan_printable';
+    public $lang = 'en';
 
     private static $_instance = null;
     public static function instance() {
@@ -17,6 +18,25 @@ class Zume_Activites_3monthplan_Html extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        [
+            'lang_code' => $lang_code,
+            'url_parts' => $url_parts,
+        ] = zume_get_url_pieces();
+
+        $this->lang = $lang_code;
+
+        /* Redirect /checkin to /{lang_code}/checkin */
+        /* This facilitates QR codes sending users to /checkin not knowing what language they may have previously been using */
+        $url = dt_get_url_path();
+        if ( $url === $this->type ) {
+            $lang_code_from_cookie = zume_get_language_cookie();
+            if ( $lang_code_from_cookie !== 'en' ) {
+                wp_redirect( $lang_code_from_cookie . '/' . $this->type );
+                exit;
+            }
+        }
+
     }
     public function body(){
         $questions = Zume_Training_Dashboard::three_month_plan_questions();
@@ -24,7 +44,6 @@ class Zume_Activites_3monthplan_Html extends Zume_Activites
         <div class="activity-page">
             <div class="container-md">
                 <h1 class="activity-title"><?php echo esc_html__( '3-Month Plan', 'zume' ) ?></h1>
-                <a class="f-0" href="<?php site_url() ?>/activities/3monthplan"><?php echo esc_html__( 'Switch to Interactive Version', 'zume' ) ?></a>
             </div>
             <hr>
             <div class="container-md activity-content">
@@ -47,4 +66,4 @@ class Zume_Activites_3monthplan_Html extends Zume_Activites
         <?php
     }
 }
-Zume_Activites_3monthplan_Html::instance();
+Zume_Activites_3monthplan_Printable::instance();
