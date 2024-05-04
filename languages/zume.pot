@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-05-01 13:18-0600\n"
+"POT-Creation-Date: 2024-05-03 21:16-0600\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -184,7 +184,8 @@ msgstr ""
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 
-#: globals.php:1986 site/course/course-content.php:477
+#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: site/activities/list-of-100.php:96 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
@@ -464,10 +465,13 @@ msgid ""
 "the next three months."
 msgstr ""
 
-#: globals.php:2205 globals.php:2207 site/course/course-content.php:2395
-#: site/course/course-content.php:2539 site/course/course-content.php:2548
-#: site/course/course-content.php:2573 site/course/course-content.php:2775
-#: site/course/course-content.php:5290 site/course/course-content.php:5310
+#: globals.php:2205 globals.php:2207
+#: site/activities/coaching-checklist-printable.php:101
+#: site/activities/coaching-checklist.php:50
+#: site/course/course-content.php:2395 site/course/course-content.php:2539
+#: site/course/course-content.php:2548 site/course/course-content.php:2573
+#: site/course/course-content.php:2775 site/course/course-content.php:5290
+#: site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr ""
 
@@ -557,33 +561,102 @@ msgstr ""
 msgid "No Results"
 msgstr ""
 
-#: site/activities/three-month-plan-html.php:26
-#: site/activities/three-month-plan-interactive.php:47
-#: site/dashboard/dashboard.php:196
-msgid "3-Month Plan"
+#: site/activities/coaching-checklist-printable.php:103
+msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
 msgstr ""
 
-#: site/activities/three-month-plan-html.php:27
-msgid "Switch to Interactive Version"
+#: site/activities/coaching-checklist-printable.php:104
+msgid ""
+"2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple."
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:48
+#: site/activities/coaching-checklist-printable.php:112
+msgid "Training Tools/Concepts"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:127
+msgid "Ask yourself, have you"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:133
+#: site/dashboard/dashboard.php:221
+msgid "Heard"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:136
+#: site/dashboard/dashboard.php:223
+msgid "Obeyed"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:139
+#: site/dashboard/dashboard.php:225
+msgid "Shared"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:142
+#: site/dashboard/dashboard.php:227
+msgid "Trained"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:147
+msgid "Ask yourself, what should I do for my disciple"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:153
+msgid "Model"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:156
+msgid "Assist"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:159
+#: site/course/course-content.php:1813 site/course/course-content.php:4742
+#: site/pages/home.php:202
+msgid "Watch"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:162
+msgid "Leave"
+msgstr ""
+
+#: site/activities/coaching-checklist.php:51 site/activities/list-of-100.php:97
+#: site/activities/three-month-plan.php:67
 msgid "Switch to Printable Version"
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:61
-#: site/course/presenter.php:132
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:109
+msgid "Disciple"
+msgstr ""
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:110
+msgid "Unbeliever"
+msgstr ""
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:111
+msgid "Unknown"
+msgstr ""
+
+#: site/activities/three-month-plan-printable.php:46
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:196
+msgid "3-Month Plan"
+msgstr ""
+
+#: site/activities/three-month-plan.php:80 site/course/presenter.php:132
 msgid "Scripts are off"
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:62
+#: site/activities/three-month-plan.php:81
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:73
-#: site/dashboard/dashboard.php:173 site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:173
+#: site/profile/profile.php:153
 msgid "Save"
 msgstr ""
 
@@ -1785,11 +1858,6 @@ msgstr ""
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
-msgstr ""
-
-#: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:202
-msgid "Watch"
 msgstr ""
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
@@ -3257,16 +3325,8 @@ msgstr ""
 msgid "3 Day Intensive Course"
 msgstr ""
 
-#: site/dashboard/dashboard.php:221
-msgid "Heard"
-msgstr ""
-
 #: site/dashboard/dashboard.php:222
 msgid "Have I heard about this tool or concept?"
-msgstr ""
-
-#: site/dashboard/dashboard.php:223
-msgid "Obeyed"
 msgstr ""
 
 #: site/dashboard/dashboard.php:224
@@ -3275,18 +3335,10 @@ msgid ""
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
-msgid "Shared"
-msgstr ""
-
 #: site/dashboard/dashboard.php:226
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
-msgstr ""
-
-#: site/dashboard/dashboard.php:227
-msgid "Trained"
 msgstr ""
 
 #: site/dashboard/dashboard.php:228
