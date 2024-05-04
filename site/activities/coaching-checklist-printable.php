@@ -98,10 +98,10 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
         </style>
         <div class="activity-page">
             <div class="activity-title">
-                <h1 ><?php echo esc_html__( 'Coaching Checklist', 'zume' ) ?></h1>
+                <h1 ><?php echo __( 'Coaching Checklist', 'zume' ) ?></h1>
                 <p>
                     <?php echo __( '1. Self-evaluate with Heard, Obeyed, Shared, Trained.', 'zume' ) ?><br>
-                    <?php echo __( '2. Coach with Model, Assist, Watch, Leave to evaluate a disciple.', 'zume' ) ?>
+                    <?php echo __( '2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple.', 'zume' ) ?>
                 </p>
                 </br>
             </div>
@@ -124,7 +124,7 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
                     </tr>
                     <tr>
                         <td class="coaching_right">
-                            <em>Ask yourself, have you ...</em>
+                            <em><?php echo __( 'Ask yourself, have you', 'zume' ) ?> ...</em>
                         </td>
                         <td>
                             1
@@ -144,7 +144,7 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
                     </tr>
                     <tr class="coaching_header">
                         <td class="coaching_right">
-                            <em>Ask yourself, what should I do for my disciple ...</em>
+                            <em><?php echo __( 'Ask yourself, what should I do for my disciple', 'zume' ) ?> ...</em>
                         </td>
                         <td>
                             2
