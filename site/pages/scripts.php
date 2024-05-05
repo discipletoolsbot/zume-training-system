@@ -91,7 +91,7 @@ class Zume_Scripts extends Zume_Magic_Page
     }
 
     public function body(){
-        if ( ! isset( $_GET['s'] ) ||  empty($_GET['s'] ) ) {
+        if ( ! isset( $_GET['s'] ) || empty($_GET['s'] ) ) {
             ?>
                 <div class="activity__wrapper">
                     <div class="activity__header">

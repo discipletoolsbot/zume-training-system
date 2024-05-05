@@ -65,7 +65,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             10=>43,11=>44,12=>45,13=>46,14=>47,15=>48,16=>49,17=>50,18=>51,19=>52,
                             21=>53,22=>54,23=>55,24=>56,25=>57,26=>58,28=>60,29=>61,30=>62,33=>63,
                            ];
-    public $images = [93, 94, 95, 96, 97, 98, 99, 101, 102, 103, 104];
+    public $images = [ 94, 95, 96, 97, 98, 99, 101, 104];
     public $mirror_url = 'https://storage.googleapis.com/zume-file-mirror/';
 
     private static $_instance = null;
@@ -775,13 +775,13 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <tr>
                 <td colspan="2">
                     <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
-                    <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?></a>
+                    <br><a href="<?php echo site_url() . '/en/app/message/?m='.$pid ?>" target="_blank"><?php echo site_url() . '/en/app/message/?m='.$pid ?></a>
                     <br><em>Marketing Logic: <?php echo $message['logic'] ?? '' ?></em>
                     <br><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em>
                 </td>
                 <td colspan="2">
                     <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
-                    <br><a href="<?php echo site_url() . '/app/message/?m='.$pid.'&l=en' ?>" target="_blank"><?php echo site_url() . '/app/message/?m='.$pid.'&l='.$this->language_code ?></a>
+                    <br><a href="<?php echo site_url() .'/'. $this->language_code . '/app/message/?m='.$pid ?>" target="_blank"><?php echo site_url() .'/'. $this->language_code . '/app/message/?m='.$pid ?></a>
                 </td>
             </tr>
             <tr>
@@ -942,6 +942,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td style="background-color: grey; width: 40%; color: white;"><?php echo $item['name'] ?? '' ?></td>
                                 <td style="background-color: grey; width: 40%;"></td>
                                 <td style="background-color: grey; width: 10%;"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="<?php echo site_url() . '/en/app/script?s=' . $script_id  ?>"><?php echo site_url() . '/en/app/script?s=' . $script_id  ?></a></td>
+                                <td><a href="<?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?>"><?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?></a></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td>
