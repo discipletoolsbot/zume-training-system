@@ -217,7 +217,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'launch_course' => __( 'Launch Course', 'zume' ),
             'ten_session_course' => __( '10 Session Course', 'zume' ),
             'twenty_session_course' => __( '20 Session Course', 'zume' ),
-            'three_day_intensive_course' => __( '3 Day Intensive Course', 'zume' ),
+            'three_day_intensive_course' => __( 'Intensive Course', 'zume' ),
             'heard' => __( 'Heard', 'zume' ),
             'heard_explanation' => __( 'Have I heard about this tool or concept?', 'zume' ),
             'obeyed' => __( 'Obeyed', 'zume' ),

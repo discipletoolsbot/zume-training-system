@@ -124,7 +124,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
 
         $lang_code = zume_current_language();
         $google_locales = zume_google_locales();
-        $apple_codes = apple_locales( 'codes' );
+        $apple_codes = zume_apple_locales( 'codes' );
 
         $google_lang = $lang_code;
         if ( !in_array( $lang_code, $google_locales ) ) {
