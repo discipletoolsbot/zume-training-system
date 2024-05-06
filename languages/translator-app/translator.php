@@ -695,6 +695,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 jQuery(document).ready(function($){
                     jQuery(document).foundation();
 
+                     let direction = '<?php echo ( $language['rtl'] ) ? 'rtl' : 'ltr' ?>';
+
                     tinymce.init({
                         selector: 'textarea',
                         plugins: 'code link wordcount lists image',
@@ -708,7 +710,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         ],
                         block_formats: 'Paragraph=p; Header 3=h3',
                         min_height: 500,
-                        format_empty_lines: true
+                        format_empty_lines: true,
+                        directionality: direction
                     });
 
                     jQuery('.save_textarea').on( 'click', (e) => {
@@ -831,6 +834,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             jQuery(document).ready(function($){
                 jQuery(document).foundation();
 
+                 let direction = '<?php echo ( $language['rtl'] ) ? 'rtl' : 'ltr' ?>';
+
                 tinymce.init({
                     selector: 'textarea',
                     plugins: 'code link wordcount lists image',
@@ -844,7 +849,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     ],
                     block_formats: 'Paragraph=p; Header 3=h3',
                     min_height: 500,
-                    format_empty_lines: true
+                    format_empty_lines: true,
+                    directionality: direction
                 });
                 jQuery('.save_textarea').on( 'click', (e) => {
                     console.log('save')
@@ -970,6 +976,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 jQuery(document).ready(function($){
                     jQuery(document).foundation();
 
+                    let direction = '<?php echo ( $language['rtl'] ) ? 'rtl' : 'ltr' ?>';
+
                     tinymce.init({
                         selector: 'textarea',
                         plugins: 'code link wordcount lists image',
@@ -983,7 +991,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         ],
                         block_formats: 'Paragraph=p; Header 3=h3',
                         min_height: 800,
-                        format_empty_lines: true
+                        format_empty_lines: true,
+                        directionality: direction,
                     });
                     jQuery('.save_textarea').on( 'click', (e) => {
                         console.log('save')
@@ -1085,6 +1094,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             jQuery(document).ready(function($){
                 jQuery(document).foundation();
 
+                 let direction = '<?php echo ( $language['rtl'] ) ? 'rtl' : 'ltr' ?>';
+
                 tinymce.init({
                     selector: 'textarea',
                     plugins: 'code link wordcount lists image table',
@@ -1098,7 +1109,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     ],
                     block_formats: 'Paragraph=p; Header 3=h3',
                     min_height: 800,
-                    format_empty_lines: true
+                    format_empty_lines: true,
+                    directionality: direction
                 });
                 jQuery('.save_textarea').on( 'click', (e) => {
                     console.log('save_textarea')
@@ -1237,6 +1249,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
     }
     public function qr_codes() {
+        $site_url = 'https://zume.training/';
         ?>
         <style>
             .qr-card {
@@ -1287,7 +1300,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         'genmapping',
                     ];
                     foreach( $activities as $item ) {
-                        $url = site_url() . '/app/qr/?l='.$this->language_code.'&a='.$item;
+                        $url = $site_url . 'app/qr/?l='.$this->language_code.'&a='.$item;
                         $url_short = 'l='.$this->language_code.'&a='.$item;
                         $qr_url = zume_create_qr_url( $url );
                         ?>
@@ -1320,7 +1333,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             continue;
                         }
                         $id =  intval( $item['key'] );
-                        $url = site_url() . '/app/qr/?l='.$this->language_code. '&v='. $id;
+                        $url = $site_url . 'app/qr/?l='.$this->language_code. '&v='. $id;
                         $url_short = 'l='.$this->language_code.'&v='.$id;
                         $qr_url = zume_create_qr_url( $url );
                         ?>
@@ -1390,7 +1403,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     5451 => 'Intensive 5', // 'set_c_5', // Intensive 5
                 ];
                 foreach( $list as $i => $v ) {
-                    $url = site_url() . '/app/qr/?l='.$this->language_code. '&c='. $i;
+                    $url = $site_url . 'app/qr/?l='.$this->language_code. '&c='. $i;
                     $url_short = 'l='.$this->language_code. '&c='. $i;
                     $qr_url = zume_create_qr_url( $url );
                     ?>
@@ -1426,7 +1439,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         continue;
                     }
                     $id =  intval( $item['key'] );
-                    $url = site_url() . '/app/qr/?l='.$this->language_code. '&s='. $item['script'];
+                    $url = $site_url . 'app/qr/?l='.$this->language_code. '&s='. $item['script'];
                     $url_short = 'l='.$this->language_code.'&s='.$item['script'];
                     $qr_url = zume_create_qr_url( $url );
                     ?>
