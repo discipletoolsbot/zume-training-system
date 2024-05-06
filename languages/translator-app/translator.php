@@ -953,11 +953,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     <?php echo $en_list[$script_id]['content'] ?? ''  ?>
                                 </td>
                                 <td>
-                                    <textarea style="height:500px;" id="<?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>"><?php echo $language_list[$script_id]['content'] ?? '' ;  ?></textarea>
+                                    <textarea style="height:500px;" id="<?php echo hash('sha256', $script_id . $language_list[$script_id]['post_id'] ) ?>"><?php echo $language_list[$script_id]['content'] ?? '' ;  ?></textarea>
                                 </td>
                                 <td>
-                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>" data-key="<?php echo $language_list[$script_id]['script_id'] ?>" data-post="<?php echo $language_list[$script_id]['post_id'] ?>">Save</button>
-                                    <br><span class="loading-spinner <?php echo hash('sha256', $language_list[$script_id]['script_id'] . $language_list[$script_id]['post_id'] ) ?>"></span>
+                                    <button class="button save_textarea" data-target="<?php echo hash('sha256', $script_id . $language_list[$script_id]['post_id'] ) ?>" data-key="<?php echo $script_id ?>" data-post="<?php echo $language_list[$script_id]['post_id'] ?>">Save</button>
+                                    <br><span class="loading-spinner <?php echo hash('sha256', $script_id . $language_list[$script_id]['post_id'] ) ?>"></span>
                                 </td>
                             </tr>
                             <?php
