@@ -36,7 +36,7 @@ class Zume_V5_Pieces {
             30 => '/assets/images/pieces_pages/10-peer-mentoring.png',
             31 => '',
             32 => '',
-            33 => '/assets/images/zume_images/V5.1/1Waving1Not.svg',
+//            33 => '/assets/images/zume_images/V5.1/1Waving1Not.svg', // @note throwing error and 33 not used. These vars should migrate to global.php:zume_training_items() as master.
         );
 
         // audio tools
