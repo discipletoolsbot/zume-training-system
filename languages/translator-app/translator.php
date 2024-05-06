@@ -3,9 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 } // Exit if accessed directly.
 
-// use Gettext\Loader\PoLoader; // @todo remove
-// use Gettext\Generator\MoGenerator; // @todo remove
-// use Gettext\Generator\PoGenerator; // @todo remove
+use Gettext\Loader\PoLoader;
 
 class Zume_Training_Translator extends Zume_Magic_Page
 {
@@ -388,14 +386,58 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         $language = $this->language;
-        $training_items = zume_training_items();
-
+        $weblate = zume_get_weblate();
 
         /**
         * Template for the status tab
         */
         ?>
         <div class="grid-x grid-padding-x grid-padding-y">
+
+
+            <!-- WORD COUNT -->
+            <div class="cell center grey-back">
+                <strong>WORD COUNT</strong>
+            </div>
+            <div class="cell center">
+                <div>
+                    <?php
+                    $weblate = zume_get_weblate();
+                    $pieces_en = zume_word_count_pieces( 'en' );
+                    $scripts_en = zume_word_count_scripts( 'en' );
+                    $activities_en = zume_word_count_activities( 'en' );
+                    $messages_en = zume_word_count_messages( 'en' );
+                    $strings_en = zume_word_count_english();
+                    ?>
+                    <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
+                    <strong>Weblate: </strong> <?php echo number_format( $weblate[$language['weblate']]['total_words'] ); ?> |
+                    <strong>Scripts:</strong> <?php echo number_format( $scripts_en ); ?> |
+                    <strong>Activities:</strong> <?php echo number_format( $activities_en ); ?> |
+                    <strong>Messages:</strong> <?php echo number_format( $messages_en ); ?> |
+                    <strong>Pieces:</strong> <?php echo number_format( $pieces_en ); ?> ||
+                    <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces_en + $scripts_en + $activities_en + $messages_en + $weblate[$language['weblate']]['total_words'] ); ?>
+                </div>
+                <div>
+                    <?php
+                    $pieces = zume_word_count_pieces( $language['code'] );
+                    $scripts = zume_word_count_scripts( $language['code'] );
+                    $activities = zume_word_count_activities( $language['code'] );
+                    $messages = zume_word_count_messages( $language['code'] );
+                    ?>
+                    <strong style="text-decoration: underline; text-transform: uppercase;"><?php echo $language['name'] ?> WORDS</strong>:
+                    <strong>Weblate:</strong> <?php echo number_format( $weblate[$language['weblate']]['translated_words'] ); ?> |
+                    <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> |
+                    <strong>Activities:</strong> <?php echo number_format( $activities ); ?> |
+                    <strong>Messages:</strong> <?php echo number_format( $messages ); ?> |
+                    <strong>Pieces:</strong> <?php echo number_format( $pieces ); ?> ||
+                    <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $weblate[$language['weblate']]['translated_words']); ?>
+                </div>
+                <div>
+                    <strong style="text-decoration: underline; text-transform: uppercase;">WEBLATE STRINGS: </strong>
+                    <strong>English:</strong> <?php echo number_format( $weblate[$language['weblate']]['total'] ); ?> |
+                    <strong><?php echo $language['name'] ?>:</strong> <?php echo number_format( $weblate[$language['weblate']]['translated'] ); ?> (<?php echo $weblate[$language['weblate']]['translated_percent']; ?>%)
+                </div>
+            </div>
 
 
             <!-- WEBLATE -->
@@ -533,16 +575,43 @@ class Zume_Training_Translator extends Zume_Magic_Page
         <?php
     }
     public function weblate() {
+        $weblate = zume_get_weblate();
+        $language = $this->language;
         ?>
-        <div class="grid-container">
-            <div class="cell center">
+        <div class="grid-x padding-x">
+            <div class="cell center" style="padding-bottom: 1em;">
                 <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank" >
                     <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/<?php echo $this->language['weblate'] ?>/svg-badge.svg?native=1" alt="Translation status" style="height:50px;margin:0;" />
                 </a>
+            </div>
+            <div class="cell center">
+                <p>
+                    <strong style="text-decoration: underline; text-transform: uppercase;">WEBLATE STRINGS: </strong>
+                </p>
+                <p>
+                    <strong>English:</strong> <?php echo number_format( $weblate[$language['weblate']]['total'] ); ?>
+                </p>
+                <p>
+                    <strong><?php echo $language['name'] ?>:</strong> <?php echo number_format( $weblate[$language['weblate']]['translated'] ); ?> (<?php echo $weblate[$language['weblate']]['translated_percent']; ?>%)
+                </p>
+                <p>
+                    <strong style="text-decoration: underline; text-transform: uppercase;">WEBLATE WORDS: </strong>
+                </p>
+                <p>
+                    <strong>English: </strong> <?php echo number_format( $weblate[$language['weblate']]['total_words'] ); ?>
+                </p>
+                <p>
+                    <strong><?php echo $language['name'] ?>: </strong> <?php echo number_format( $weblate[$language['weblate']]['translated_words'] ); ?>
+                </p>
+                <p>Last Updated: <?php echo date( 'Y-m-d H:i:s', strtotime( $weblate[$language['weblate']]['last_change'] ) ) ?></p>
+                <p>Last Author: <?php echo $weblate[$language['weblate']]['last_author'] ?></p>
+             </div>
+             <div class="cell center">
                 <a href="https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>/" target="_blank" >
                     https://translate.disciple.tools/engage/zume-training/-/<?php echo $this->language['weblate'] ?>
                 </a>
             </div>
+    </div>
         <?php
     }
     public function pieces() {
@@ -1628,5 +1697,119 @@ if ( ! function_exists( 'list_zume_messages' ) ) {
 
 
     }
+}
+
+
+function zume_word_count_scripts( $language ) {
+    $count = 0;
+    $scripts = list_zume_scripts( $language );
+    foreach( $scripts as $script ) {
+        $count += str_word_count( $script['content'] ?? '' );
+    }
+
+    return $count;
+}
+function zume_word_count_activities( $language ) {
+    $count = 0;
+    $activities = list_zume_activities( $language );
+    foreach( $activities as $activity ) {
+        $count += str_word_count( $activity['title'] ?? '' );
+        $count += str_word_count( $activity['content'] ?? '' );
+    }
+
+    return $count;
+}
+function zume_word_count_messages( $language ) {
+    $count = 0;
+    $messages = list_zume_messages( $language );
+    foreach( $messages as $message ) {
+        $count += str_word_count( $message['subject'] );
+        $count += str_word_count( $message['body'] );
+    }
+
+    return $count;
+}
+function zume_word_count_pieces( $language ) {
+    $count = 0;
+    $pieces = list_zume_pieces( $language );
+    foreach( $pieces as $piece ) {
+        $count += str_word_count( $piece['zume_piece_h1'] ?? '' );
+        $count += str_word_count( $piece['zume_pre_video_content'] ?? '' );
+        $count += str_word_count( $piece['zume_post_video_content'] ?? '' );
+        $count += str_word_count( $piece['zume_ask_content'] ?? '' );
+        $count += str_word_count( $piece['zume_seo_meta_description'] ?? '' );
+    }
+
+    return $count;
+}
+function zume_word_count_english() {
+    $count = 0;
+    $loader = new PoLoader();
+    $translations = $loader->loadFile(plugin_dir_path(__DIR__) . 'zume.pot' );
+
+    $strings = array_keys( $translations->getTranslations() );
+    foreach( $strings as $string ) {
+        $count += str_word_count( $string );
+    }
+
+    return $count;
+}
+function zume_po_strings_count( $locale ) {
+
+    $count = 0;
+    $loader = new PoLoader();
+
+    if ( $locale == 'en' ) {
+        $translations = $loader->loadFile(plugin_dir_path(__DIR__) . 'zume.pot' );
+        $strings = array_keys( $translations->getTranslations() );
+    } else {
+        $translations = $loader->loadFile(plugin_dir_path(__DIR__) . 'zume-'.$locale.'.po' );
+        $strings = array_keys( $translations->getTranslations() );
+    }
+
+    foreach( $strings as $string ) {
+        if ( !empty( $string ) ) {
+            $count++;
+        }
+    }
+
+    return $count;
+}
+function zume_get_weblate() {
+
+    if ( get_transient( __METHOD__ ) ) {
+        return get_transient( __METHOD__ );
+    }
+
+    $results = [];
+
+    $page_1 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json';
+    $body_1 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_1 ) ), true );
+    if ( ! isset( $body_1['results'] ) ) {
+        return $results;
+    }
+    if ( ! empty( $body_1['next'] ) ) {
+        $page_2 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json&page=2';
+        $body_2 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_2 ) ), true );
+        if ( isset( $body_2['results'] ) ) {
+            $results = array_merge( $body_1['results'], $body_2['results'] );
+        }
+    }
+    if ( ! empty( $body_2['next'] ) ) {
+        $page_3 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json&page=3';
+        $body_3 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_3 ) ), true );
+        if ( isset( $body_3['results'] ) ) {
+            $results = array_merge( $results, $body_3['results'] );
+        }
+    }
+
+    $languages = [];
+    foreach( $results as $result ) {
+        $languages[ $result['language']['code'] ] = $result;
+    }
+
+    set_transient( __METHOD__, $languages, 60*60 ); // 60 minutes
+
+    return $languages;
 }
 

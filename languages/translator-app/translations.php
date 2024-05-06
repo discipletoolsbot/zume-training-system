@@ -3,8 +3,6 @@ if (!defined('ABSPATH')) {
     exit;
 } // Exit if accessed directly.
 
-use Gettext\Loader\PoLoader;
-
 
 class Zume_Training_Translations extends Zume_Magic_Page
 {
@@ -217,11 +215,11 @@ class Zume_Training_Translations extends Zume_Magic_Page
         global $zume_languages_full_list;
         ksort( $zume_languages_full_list );
 
-        $pieces = $this->word_count_pieces( 'en' );
-        $scripts = $this->word_count_scripts( 'en' );
-        $activities = $this->word_count_activities( 'en' );
-        $messages = $this->word_count_messages( 'en' );
-        $strings = $this->word_count_strings( 'en' );
+        $pieces = zume_word_count_pieces( 'en' );
+        $scripts = zume_word_count_scripts( 'en' );
+        $activities = zume_word_count_activities( 'en' );
+        $messages = zume_word_count_messages( 'en' );
+        $strings = zume_word_count_english();
 
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -275,10 +273,10 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         ?>
                         <tr>
                             <td><a href="/<?php echo $code ?>/app/translator/?tab=status"><?php echo $name ?></a></td>
-                            <td><?php echo number_format( $this->word_count_scripts( $code) ) ?></td>
-                            <td><?php echo number_format( $this->word_count_activities( $code ) ) ?></td>
-                            <td><?php echo number_format( $this->word_count_messages( $code ) ) ?></td>
-                            <td><?php echo number_format( $this->word_count_pieces( $code ) ) ?></td>
+                            <td><?php echo number_format( zume_word_count_scripts( $code) ) ?></td>
+                            <td><?php echo number_format( zume_word_count_activities( $code ) ) ?></td>
+                            <td><?php echo number_format( zume_word_count_messages( $code ) ) ?></td>
+                            <td><?php echo number_format( zume_word_count_pieces( $code ) ) ?></td>
                         </tr>
                         <?php
                     }
@@ -324,61 +322,6 @@ class Zume_Training_Translations extends Zume_Magic_Page
             </div>
         </div>
         <?php
-    }
-
-    public function word_count_pieces( $language ) {
-        $count = 0;
-        $pieces = list_zume_pieces( $language );
-        foreach( $pieces as $piece ) {
-            $count += str_word_count( $piece['zume_piece_h1'] ?? '' );
-            $count += str_word_count( $piece['zume_pre_video_content'] ?? '' );
-            $count += str_word_count( $piece['zume_post_video_content'] ?? '' );
-            $count += str_word_count( $piece['zume_ask_content'] ?? '' );
-            $count += str_word_count( $piece['zume_seo_meta_description'] ?? '' );
-        }
-
-        return $count;
-    }
-    public function word_count_scripts( $language ) {
-        $count = 0;
-        $scripts = list_zume_scripts( $language );
-        foreach( $scripts as $script ) {
-            $count += str_word_count( $script['content'] ?? '' );
-        }
-
-        return $count;
-    }
-    public function word_count_activities( $language ) {
-        $count = 0;
-        $activities = list_zume_activities( $language );
-        foreach( $activities as $activity ) {
-            $count += str_word_count( $activity['title'] ?? '' );
-            $count += str_word_count( $activity['content'] ?? '' );
-        }
-
-        return $count;
-    }
-    public function word_count_messages( $language ) {
-        $count = 0;
-        $messages = list_zume_messages( $language );
-        foreach( $messages as $message ) {
-            $count += str_word_count( $message['subject'] );
-            $count += str_word_count( $message['body'] );
-        }
-
-        return $count;
-    }
-    public function word_count_strings( $language ) {
-        $count = 0;
-        $loader = new PoLoader();
-        $translations = $loader->loadFile(plugin_dir_path(__DIR__) . 'zume.pot' );
-
-        $strings = array_keys( $translations->getTranslations() );
-        foreach( $strings as $string ) {
-            $count += str_word_count( $string );
-        }
-
-        return $count;
     }
 }
 Zume_Training_Translations::instance();
