@@ -261,6 +261,11 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
+        if ( 'en' === $this->language_code && ! in_array( 'administrator', (array) $this->user->roles ) ) {
+           wp_redirect( site_url() . '/'.$approved_languages[0].'/' . $this->root . '/' . $this->type );
+        }
+
+
 
         global $zume_languages_full_list;
         $zume_languages =$zume_languages_full_list;
@@ -299,6 +304,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <option>----------</option>
                         <?php
                         foreach( $zume_languages as $k => $l ) {
+                            if ( 'en' === $k  && ! in_array( 'administrator', $this->user->roles ) ) {
+                                continue;
+                            }
                             if ( empty( $approved_languages ) || ! in_array( $k, $approved_languages ) && ! in_array( 'administrator', $this->user->roles ) ) {
                                 continue;
                             }
@@ -349,6 +357,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $approved_languages = get_user_meta( $this->user->ID, 'zume_user_languages', true );
         $list = [];
         foreach( $approved_languages as $lang ) {
+            if ( 'en' === $lang ) {
+                continue;
+            }
             echo '<a href="'. site_url() . '/' . $lang . '/' . $this->root . '/' . $this->type . '">'. $zume_languages[$lang]['name'] . '</a><br>';
         }
     }
