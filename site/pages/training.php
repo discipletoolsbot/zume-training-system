@@ -130,18 +130,18 @@ class Zume_Training_Page extends Zume_Magic_Page
             <h1 class="text-center"><?php echo esc_html__( 'Get started with Zúme Training', 'zume' ) ?></h1>
             <div class="switcher | training-path">
                 <div class="stack | card | switcher-width-40">
-                    <h2 class="f-1 text-center"><?php echo esc_html__( 'Create your own training', 'zume' ) ?></h2>
-                    <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Gather-A-Group-01.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training', 'zume' ) ?>">
+                    <h2 class="f-1 text-center"><?php echo esc_html__( 'Create your own training group', 'zume' ) ?></h2>
+                    <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Gather-A-Group-01.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training group', 'zume' ) ?>">
                     <p class="mb-0">
-                        <?php echo esc_html__( 'Gather a few friends or go through the training with an existing small group. Create your own training plan and track your progress.', 'zume' ) ?>
+                        <?php echo esc_html__( 'Gather a few friends or go through the course with an existing small group. Create your own training group and track your progress.', 'zume' ) ?>
                     </p>
                     <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Create', 'zume' ) ?></a>
                 </div>
                 <div class="stack | card | switcher-width-40">
-                    <h2 class="f-1 text-center"><?php echo esc_html__( 'Join a training', 'zume' ) ?></h2>
-                    <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JoinTraining.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training', 'zume' ) ?>">
+                    <h2 class="f-1 text-center"><?php echo esc_html__( 'Join a training group', 'zume' ) ?></h2>
+                    <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JoinTraining.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training group', 'zume' ) ?>">
                     <p class="mb-0">
-                        <?php echo esc_html__( 'If you can‘t gather a group right now, consider joining one of our online trainings lead by an experienced Zúme coach.', 'zume' ) ?>
+                        <?php echo esc_html__( 'If you can‘t gather a group right now, consider joining one of our online training groups lead by an experienced Zúme coach.', 'zume' ) ?>
                     </p>
                     <a href="<?php echo esc_url( zume_join_a_public_plan_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Join', 'zume' ) ?></a>
                 </div>
@@ -149,7 +149,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <h2 class="f-1 text-center"><?php echo esc_html__( 'Request a coach', 'zume' ) ?></h2>
                     <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/coach-2guys.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training', 'zume' ) ?>">
                     <p class="mb-0">
-                        <?php echo esc_html__( 'We can connect you with free Zúme coach who is committed to helping you get the training and become a fruitful disciple.', 'zume' ) ?>
+                        <?php echo esc_html__( 'We can connect you with free Zúme coach who is committed to helping you understand the training and become a fruitful disciple.', 'zume' ) ?>
                     </p>
                     <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Get Help', 'zume' ) ?></a>
                 </div>
@@ -225,7 +225,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                 </div>
                             </a>
                             <p class="mx-auto mw-50ch w-100">
-                                <?php echo esc_html__( 'The original Zúme training format is 10 two hour sessions. Each session finishes with practical obedience steps and ways to share in-between sessions. This format is often ran once a week for 10 weeks.', 'zume' ) ?>
+                                <?php echo esc_html__( 'The original Zúme course format is 10 two hour sessions. Each session finishes with practical obedience steps and ways to share in-between sessions. This format is often run once a week for 10 weeks.', 'zume' ) ?>
                             </p>
                         </div>
                         <div class="switcher | switcher-width-40 align-items-center mx-auto gapx-2">
@@ -237,12 +237,12 @@ class Zume_Training_Page extends Zume_Magic_Page
                                 </div>
                             </a>
                             <p class="mx-auto mw-50ch w-100">
-                                <?php echo esc_html__( 'For a longer slower pace training with more opportunity for gaining competence in the concepts and skills, the 20 session format has more practice opportunities for each of the concepts and tools.', 'zume' ) ?>
+                                <?php echo esc_html__( 'For a longer slower pace course with more opportunity for gaining competence in the concepts and skills, the 20 session format has more practice opportunities for each of the concepts and tools.', 'zume' ) ?>
                             </p>
                         </div>
                         <div class="switcher | switcher-width-40 align-items-center mx-auto gapx-2">
                             <a href="<?php echo esc_url( zume_intensive_session_url() ) ?>" class="card-btn training-card" role="button">
-                                <h3 class="training-card__title h1"><?php echo esc_html__( '3 Day Intensive', 'zume' ) ?></h3>
+                                <h3 class="training-card__title h1"><?php echo esc_html__( 'Intensive', 'zume' ) ?></h3>
                                 <div class="w-6rem brand-light">
                                     <?php //phpcs:ignore ?>
                                     <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . 'assets/images/course.svg' ) ?>
@@ -257,16 +257,16 @@ class Zume_Training_Page extends Zume_Magic_Page
                 <div class="stack-2 | position-relative">
                     <span class="offset-anchor" id="what-is-required"></span>
                     <h2 class="brand-light"><?php echo esc_html__( 'What is required?', 'zume' ) ?></h2>
-                    <h3><?php echo esc_html__( 'Needed for the training:', 'zume' ) ?></h3>
+                    <h3><?php echo esc_html__( 'Needed for the course:', 'zume' ) ?></h3>
                     <ul role="list">
                         <li><?php echo esc_html__( 'At least 3 people, but ideally less than 12.', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Commitment to spend 20 hours learning and practicing the concepts and tools in the course.', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'A person to facilitate (potentially you) the meeting time and location, to guide the follow-up discussion, and facilitate action prompts.', 'zume' ) ?></li>
                     </ul>
-                    <h3><?php echo esc_html__( 'NOT needed for the training:', 'zume' ) ?></h3>
+                    <h3><?php echo esc_html__( 'NOT needed for the course:', 'zume' ) ?></h3>
                     <ul role="list">
                         <li><?php echo esc_html__( 'More knowledge or experience than the rest of your group is not needed! If you can click next, you can lead a Zúme Training.', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( 'Special permission to lead a training is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
+                        <li><?php echo esc_html__( 'Special permission to lead a course is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
                     </ul>
                 </div>
             </div>
