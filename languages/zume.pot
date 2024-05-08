@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-05-08 07:35-0600\n"
+"POT-Creation-Date: 2024-05-08 08:47-0600\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3500,77 +3500,109 @@ msgstr ""
 msgid "When do you plan to start?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:275
+#: site/dashboard/dashboard.php:270 site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/dashboard.php:271 site/pages/privacy-policy.php:111
+msgid ""
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
+msgstr ""
+
+#: site/dashboard/dashboard.php:272 site/pages/privacy-policy.php:114
+msgid ""
+"A user’s email address is required to establish an account and is used for "
+"transactional communication as part of site operation."
+msgstr ""
+
+#: site/dashboard/dashboard.php:273 site/pages/privacy-policy.php:117
+msgid ""
+"A user’s phone number is collected and stored for supporting the free "
+"coaching service."
+msgstr ""
+
+#: site/dashboard/dashboard.php:274 site/pages/privacy-policy.php:120
+msgid ""
+"A user’s city is requested to personalize site resources and communication, "
+"and to connect users to appropriate coaching and customer service resources."
+msgstr ""
+
+#: site/dashboard/dashboard.php:280
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:281
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:282
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:283
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:284
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:285
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:286
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:287
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:288
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:289
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:290
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:291
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:292
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:293
 msgid "Other commitments:"
 msgstr ""
 
@@ -4809,8 +4841,14 @@ msgid ""
 "Personally Identifiable Information in accordance with our website."
 msgstr ""
 
-#: site/pages/privacy-policy.php:91
+#: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
+msgstr ""
+
+#: site/pages/privacy-policy.php:91
+msgid ""
+"The profile elements below change depending on if Facebook or Google sign on "
+"is used."
 msgstr ""
 
 #: site/pages/privacy-policy.php:94
@@ -4828,59 +4866,52 @@ msgid ""
 "What personal information do we collect from the people through our website?"
 msgstr ""
 
-#: site/pages/privacy-policy.php:107
-msgid "Information in the Basic Social Profile (if used) and email."
-msgstr ""
-
-#: site/pages/privacy-policy.php:110
-msgid "Session and course activity."
-msgstr ""
-
-#: site/pages/privacy-policy.php:113
-msgid ""
-"General location telemetry, so we know in what countries our training is "
-"being used."
-msgstr ""
-
-#: site/pages/privacy-policy.php:120
+#: site/pages/privacy-policy.php:127
 msgid "When do we collect information?"
 msgstr ""
 
-#: site/pages/privacy-policy.php:123
+#: site/pages/privacy-policy.php:130
 msgid "We collect your information at login."
 msgstr ""
 
-#: site/pages/privacy-policy.php:126
-msgid "We also track your progress through the training course."
-msgstr ""
-
 #: site/pages/privacy-policy.php:133
-msgid "How do we use your information?"
+msgid ""
+"We also track your progress through the training course and through site "
+"usage."
 msgstr ""
 
 #: site/pages/privacy-policy.php:136
+msgid ""
+"We request neccissary information through various sign up and request forms."
+msgstr ""
+
+#: site/pages/privacy-policy.php:143
+msgid "How do we use your information?"
+msgstr ""
+
+#: site/pages/privacy-policy.php:146
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
 msgstr ""
 
-#: site/pages/privacy-policy.php:139
+#: site/pages/privacy-policy.php:149
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
 msgstr ""
 
-#: site/pages/privacy-policy.php:142
+#: site/pages/privacy-policy.php:152
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
 
-#: site/pages/privacy-policy.php:149
+#: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
 msgstr ""
 
-#: site/pages/privacy-policy.php:151
+#: site/pages/privacy-policy.php:161
 msgid ""
 "While we use encryption to protect sensitive information transmitted online, "
 "we also protect your information offline. Only team members who need the "
@@ -4888,7 +4919,7 @@ msgid ""
 "customer service) are granted access to personally identifiable information."
 msgstr ""
 
-#: site/pages/privacy-policy.php:154
+#: site/pages/privacy-policy.php:164
 msgid ""
 "Your personal information is contained behind secured networks and is only "
 "accessible by a limited number of persons who have special access rights to "
@@ -4897,59 +4928,54 @@ msgid ""
 "Secure Socket Layer (SSL) technology."
 msgstr ""
 
-#: site/pages/privacy-policy.php:157
+#: site/pages/privacy-policy.php:167
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
 msgstr ""
 
-#: site/pages/privacy-policy.php:163
+#: site/pages/privacy-policy.php:173
 msgid "Do we use \"cookies\"?"
 msgstr ""
 
-#: site/pages/privacy-policy.php:165
+#: site/pages/privacy-policy.php:175
 msgid ""
-"Any use of Cookies - or of other tracking tools - by this Application or by "
-"the owners of third party services used by this Application, unless stated "
-"otherwise, serves to identify Users and remember their preferences, for the "
-"sole purpose of providing the service required by the User."
+"Any use of Cookies - or of other tracking tools - unless stated otherwise, "
+"serves to identify Users and remember their preferences, for the sole "
+"purpose of providing the service required by the User."
 msgstr ""
 
-#: site/pages/privacy-policy.php:168
-msgid "Personal Data collected: name, email."
-msgstr ""
-
-#: site/pages/privacy-policy.php:174
+#: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
 msgstr ""
 
-#: site/pages/privacy-policy.php:176
+#: site/pages/privacy-policy.php:183
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
 msgstr ""
 
-#: site/pages/privacy-policy.php:179
+#: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
 msgstr ""
 
-#: site/pages/privacy-policy.php:183
+#: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
 msgstr ""
 
-#: site/pages/privacy-policy.php:186
+#: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
 msgstr ""
 
-#: site/pages/privacy-policy.php:189
+#: site/pages/privacy-policy.php:196
 msgid "Express any concern you have about our use of your data."
 msgstr ""
 
-#: site/pages/privacy-policy.php:196
+#: site/pages/privacy-policy.php:203
 msgid "Updates"
 msgstr ""
 
-#: site/pages/privacy-policy.php:198
+#: site/pages/privacy-policy.php:205
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
