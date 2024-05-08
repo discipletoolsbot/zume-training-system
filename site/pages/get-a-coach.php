@@ -84,36 +84,35 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
         ?>
 
         <div class="container stack-2 | page">
-
-            <h1 class="text-center"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></h1>
-
-            <div class="mx-auto w-3rem brand-lighter s--1">
-                <?php //phpcs:ignore ?>
-                <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/Zume-Z-crop.svg' ) ?>
-            </div>
-
-            <div class="center">
-                <div class="switcher | w-80 gap-5">
-                    <div class="stack-1">
-                        <h2 class="brand h3 uppercase d-flex align-items-center gap-1"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/coach-2guys.svg' ) ?>" class="h-5rem" /><?php echo esc_html__( 'Coaches', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Our network of volunteer coaches are people like you, people who are passionate about loving God, loving outhers, and obeying the Greate Commision.', 'zume' ) ?></p>
-                        <p><?php echo esc_html__( 'A coach is someone who will come alongside you as you implement the Zúme tools and training.', 'zume' ) ?></p>
+            <div class="container-md stack-2 center | py-2">
+                <h1 class="text-center"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></h1>
+                <p><?php echo esc_html__( 'Every athletic sport, especially at higher levels, uses coaching. Even olympic athletes have coaches, and often more than one. Disciple making can equally benefit from coaching by those who have more experience.', 'zume' ) ?></p>
+                <div class="switcher | training-path">
+                    <div class="stack | card | switcher-width-40">
+                        <h2 class="f-1 text-center"><?php echo esc_html__( 'No Cost', 'zume' ) ?></h2>
+                        <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Gather-A-Group-01.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training group', 'zume' ) ?>">
+                        <p class="mb-0">
+                            <?php echo esc_html__( 'Our network of volunteer coaches are not paid, but are driven rather by a passion for loving God, loving others, and obeying the Great Commission.', 'zume' ) ?>
+                        </p>
                     </div>
-                    <div class="stack-2">
-                        <div class="stack-1">
-                            <h2 class="brand h3 uppercase d-flex align-items-center gap-1"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/free-dollar.svg' ) ?>" class="h-5rem" /><?php echo esc_html__( "It's Free", 'zume' ) ?></h2>
-                            <p><?php echo esc_html__( 'Coaching is free. You can opt out at any time.', 'zume' ) ?></p>
-                        </div>
-                        <div class="stack-1">
-                            <h2 class="brand h3 uppercase d-flex align-items-center gap-1"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/assets/images/Local-pin.svg' ) ?>" class="h-5rem" /><?php echo esc_html__( 'Local', 'zume' ) ?></h2>
-                            <p><?php echo esc_html__( 'On submitting this request, we will do our best to connect you with a coach near you', 'zume' ) ?></p>
-                        </div>
+                    <div class="stack | card | switcher-width-40">
+                        <h2 class="f-1 text-center"><?php echo esc_html__( 'Localized', 'zume' ) ?></h2>
+                        <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JoinTraining.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training group', 'zume' ) ?>">
+                        <p class="mb-0">
+                            <?php echo esc_html__( 'Our connection team attempts to connect you with a coach who speaks your language and is geographically as close as possible.', 'zume' ) ?>
+                        </p>
+                    </div>
+                    <div class="stack | card | switcher-width-40">
+                        <h2 class="f-1 text-center"><?php echo esc_html__( 'Experienced', 'zume' ) ?></h2>
+                        <img class="mx-auto h-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/coach-2guys.svg' ) ?>" alt="<?php echo esc_attr__( 'Join a training', 'zume' ) ?>">
+                        <p class="mb-0">
+                            <?php echo esc_html__( 'All our coaches are trained and practicing the concepts and tools found in Zûme. All our coaches can help you over barriers and make steps in your journey.', 'zume' ) ?>
+                        </p>
                     </div>
                 </div>
-
             </div>
 
-            <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn uppercase fit-content mx-auto"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn large uppercase fit-content mx-auto"><?php echo esc_html__( 'Get A Coach', 'zume' ) ?></a>
 
         </div>
         <?php
