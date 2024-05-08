@@ -92,12 +92,15 @@ class Zume_Training_Donate extends Zume_Magic_Page
             <div class="center">
                 <div class="stack-1">
                     <h2 class="brand h3 uppercase d-flex align-items-center gap-1"></h2>
-                    <p><?php echo esc_html__( 'We are crowdfunded, we love that you want to be part of us.', 'zume' ) ?></p>
-                    <p><?php echo esc_html__( 'If you want to help in specific ways…', 'zume' ) ?></p>
+                    <p><?php echo esc_html__( 'We are crowdfunded, and we love that you want to be part of the Zúme vision.', 'zume' ) ?></p>
+                    <div>
+                        <div class="grassroot-project-widget" data-handle="default"></div>
+                        <script src="https://give.zume.vision/-/project-embed.js"></script>
+                    </div>
                 </div>
             </div>
 
-            <a href="https://give.zume.vision/" class="btn uppercase fit-content mx-auto"><?php echo esc_html__( 'Donate', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
+            <a href="https://give.zume.vision/projects" class="btn uppercase fit-content mx-auto"><?php echo esc_html__( 'View All Giving Opportunities', 'zume' ) ?> <?php require plugin_dir_path( __DIR__ ) . 'assets/images/external-link.svg' ?></a>
 
         </div>
         <?php
