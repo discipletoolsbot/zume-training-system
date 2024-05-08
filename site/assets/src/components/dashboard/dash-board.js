@@ -669,17 +669,44 @@ export class DashBoard extends navigator(router(LitElement)) {
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
                     <span class="icon zume-close"></span>
                 </button>
-                <div class="container-xsm">
-                    <h1>Practitioner Community</h1>
+                <div class="container">
                     ${
                         this.hasJoinedCommunity() ? html`
                             <p>Here is all the community stuff we promised you :)</p>
                         `
                         : html`
-                            <p>There are lot's of good reasons to join the community here</p>
-                            <button class="btn" @click=${this.joinCommunity}>
-                                Join
-                            </button>
+                            <div class="container-md stack-2 center | py-2">
+                              <h1 class="text-center">Zúme Community</h1>
+                              <p>Zúme is a community of practice and encouragement for those who want to see disciple making movements. The Zúme vision is to see one trainee and two simple churches for every 5,000 people in the United States and 50,000 people globally.</p>
+                              <div class="switcher | training-path">
+                                <div class="stack | card | switcher-width-40">
+                                  <h2 class="f-1 text-center">Peer Mentoring</h2>
+                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/Gather-A-Group-01.svg" alt="Peer Mentoring">
+                                  <p class="mb-0">
+                                    Connect with others like you who want to see a disciple making movement in their area. Share your experience with others, and learn from others who are discovering new things.
+                                  </p>
+                                </div>
+                                <div class="stack | card | switcher-width-40">
+                                  <h2 class="f-1 text-center">Encouragement</h2>
+                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/coach-2guys.svg" alt="Free Tools">
+                                  <p class="mb-0">
+                                    Hear news about disciple making movements in your region and your wider country, get reports of  progress, and get connected to online and face-to-face gatherings.
+                                  </p>
+                                </div>
+                                <div class="stack | card | switcher-width-40">
+                                  <h2 class="f-1 text-center">Free Tools</h2>
+                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/JoinTraining.svg" alt="Encouragement">
+                                  <p class="mb-0">
+                                    Access free tools for tracking disciple-making and church planting in your area. Get a map to cast vision for saturating your city with multiplying disciples and churches.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="container-md center">
+                              <button class="btn large" @click=${this.joinCommunity}>
+                                JOIN FOR FREE
+                              </button>
+                            </div>
                         `
                     }
                 </div>
