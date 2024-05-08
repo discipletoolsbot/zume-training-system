@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-05-08 08:47-0600\n"
+"POT-Creation-Date: 2024-05-08 14:13-0600\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -508,7 +508,7 @@ msgid ""
 "spiritual health of God’s work in your area."
 msgstr ""
 
-#: globals.php:2229
+#: globals.php:2229 site/dashboard/dashboard.php:277
 msgid "Peer Mentoring"
 msgstr ""
 
@@ -3532,77 +3532,122 @@ msgid ""
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
 
+#: site/dashboard/dashboard.php:275
+msgid "Zúme Community"
+msgstr ""
+
+#: site/dashboard/dashboard.php:276
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+
+#: site/dashboard/dashboard.php:278
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+
+#: site/dashboard/dashboard.php:279
+msgid "Encouragement"
+msgstr ""
+
 #: site/dashboard/dashboard.php:280
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+
+#: site/dashboard/dashboard.php:281
+msgid "Free Tools"
+msgstr ""
+
+#: site/dashboard/dashboard.php:282
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+
+#: site/dashboard/dashboard.php:283
+msgid "Join for Free"
+msgstr ""
+
+#: site/dashboard/dashboard.php:289
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:290
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:291
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:292
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:296
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:297
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:299
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:302
 msgid "Other commitments:"
 msgstr ""
 
@@ -4533,43 +4578,56 @@ msgstr ""
 msgid "Use the code your friend sent you."
 msgstr ""
 
-#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:116
+#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 msgid "Get A Coach"
 msgstr ""
 
-#: site/pages/get-a-coach.php:98
-msgid "Coaches"
+#: site/pages/get-a-coach.php:89
+msgid ""
+"Every athletic sport, especially at higher levels, uses coaching. Even "
+"olympic athletes have coaches, and often more than one. Disciple making can "
+"equally benefit from coaching by those who have more experience."
+msgstr ""
+
+#: site/pages/get-a-coach.php:92
+msgid "No Cost"
+msgstr ""
+
+#: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
+#: site/pages/training.php:134 site/pages/training.php:141
+#: site/pages/training.php:142
+msgid "Join a training group"
+msgstr ""
+
+#: site/pages/get-a-coach.php:95
+msgid ""
+"Our network of volunteer coaches are not paid, but are driven rather by a "
+"passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
 
 #: site/pages/get-a-coach.php:99
+msgid "Localized"
+msgstr ""
+
+#: site/pages/get-a-coach.php:102
 msgid ""
-"Our network of volunteer coaches are people like you, people who are "
-"passionate about loving God, loving outhers, and obeying the Greate "
-"Commision."
+"Our connection team attempts to connect you with a coach who speaks your "
+"language and is geographically as close as possible."
 msgstr ""
 
-#: site/pages/get-a-coach.php:100
-msgid ""
-"A coach is someone who will come alongside you as you implement the Zúme "
-"tools and training."
+#: site/pages/get-a-coach.php:106
+msgid "Experienced"
 msgstr ""
 
-#: site/pages/get-a-coach.php:104
-msgid "It's Free"
-msgstr ""
-
-#: site/pages/get-a-coach.php:105
-msgid "Coaching is free. You can opt out at any time."
-msgstr ""
-
-#: site/pages/get-a-coach.php:108
-msgid "Local"
+#: site/pages/get-a-coach.php:107 site/pages/training.php:150
+msgid "Join a training"
 msgstr ""
 
 #: site/pages/get-a-coach.php:109
 msgid ""
-"On submitting this request, we will do our best to connect you with a coach "
-"near you"
+"All our coaches are trained and practicing the concepts and tools found in "
+"Zûme. All our coaches can help you over barriers and make steps in your "
+"journey."
 msgstr ""
 
 #: site/pages/home.php:85
@@ -5035,11 +5093,6 @@ msgstr ""
 msgid "Create your own training group"
 msgstr ""
 
-#: site/pages/training.php:134 site/pages/training.php:141
-#: site/pages/training.php:142
-msgid "Join a training group"
-msgstr ""
-
 #: site/pages/training.php:136
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
@@ -5058,10 +5111,6 @@ msgstr ""
 
 #: site/pages/training.php:149
 msgid "Request a coach"
-msgstr ""
-
-#: site/pages/training.php:150
-msgid "Join a training"
 msgstr ""
 
 #: site/pages/training.php:152

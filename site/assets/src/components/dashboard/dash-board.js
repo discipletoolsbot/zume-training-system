@@ -657,12 +657,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 </button>
                 <div class="container-xsm">
                     <h1>Resources</h1>
-                    <p>All the resources</p>
-                    <ul role="list">
-                        <li>in a</li>
-                        <li>great big</li>
-                        <li>list</li>
-                    </ul>
+                    <p><a href="/resources">Go Here</a></p>
                 </div>
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
