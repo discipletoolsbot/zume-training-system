@@ -676,35 +676,35 @@ export class DashBoard extends navigator(router(LitElement)) {
                         `
                         : html`
                             <div class="container-md stack-2 center | py-2">
-                              <h1 class="text-center">Zúme Community</h1>
-                              <p>Zúme is a community of practice and encouragement for those who want to see disciple making movements. The Zúme vision is to see one trainee and two simple churches for every 5,000 people in the United States and 50,000 people globally.</p>
+                              <h1 class="text-center">${jsObject.translations.community_title}</h1>
+                              <p>${jsObject.translations.community_description}</p>
                               <div class="switcher | training-path">
                                 <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">Peer Mentoring</h2>
+                                  <h2 class="f-1 text-center">${jsObject.translations.community_peer_title}</h2>
                                   <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/Gather-A-Group-01.svg" alt="Peer Mentoring">
                                   <p class="mb-0">
-                                    Connect with others like you who want to see a disciple making movement in their area. Share your experience with others, and learn from others who are discovering new things.
+                                    ${jsObject.translations.community_peer_description}
                                   </p>
                                 </div>
                                 <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">Encouragement</h2>
+                                  <h2 class="f-1 text-center">${jsObject.translations.community_encouragement_title}</h2>
                                   <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/coach-2guys.svg" alt="Free Tools">
                                   <p class="mb-0">
-                                    Hear news about disciple making movements in your region and your wider country, get reports of  progress, and get connected to online and face-to-face gatherings.
+                                    ${jsObject.translations.community_encouragement_description}
                                   </p>
                                 </div>
                                 <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">Free Tools</h2>
+                                  <h2 class="f-1 text-center">${jsObject.translations.community_tools_title}</h2>
                                   <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/JoinTraining.svg" alt="Encouragement">
                                   <p class="mb-0">
-                                    Access free tools for tracking disciple-making and church planting in your area. Get a map to cast vision for saturating your city with multiplying disciples and churches.
+                                    ${jsObject.translations.community_tools_description}
                                   </p>
                                 </div>
                               </div>
                             </div>
                             <div class="container-md center">
-                              <button class="btn large" @click=${this.joinCommunity}>
-                                JOIN FOR FREE
+                              <button class="btn large" style="text-transform:uppercase;" @click=${this.joinCommunity}>
+                                ${jsObject.translations.community_join_free}
                               </button>
                             </div>
                         `
