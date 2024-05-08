@@ -267,6 +267,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'monthly' => __( 'Once a month', 'zume' ),
             'question_when_will_you_start' => __( 'When do you plan to start?', 'zume' ),
             'close' => __( 'Close', 'zume' ),
+            'user_name_disclaimer' => __( 'A user’s real name or nickname is requested to improve the personal quality of the site and communication, as well as for customer service requests and coaching.', 'zume' ),
+            'user_language_disclaimer' => __( 'A user’s language preference is stored to support proper site and communication functioning, and to help us connect the user with appropriate coaching and resources.', 'zume' ),
+            'user_email_disclaimer' => __( 'A user’s email address is required to establish an account and is used for transactional communication as part of site operation.', 'zume' ),
+            'user_phone_disclaimer' => __( 'A user’s phone number is collected and stored for supporting the free coaching service.', 'zume' ),
+            'user_city_disclaimer' => __( 'A user’s city is requested to personalize site resources and communication, and to connect users to appropriate coaching and customer service resources.', 'zume' ),
         ];
     }
 

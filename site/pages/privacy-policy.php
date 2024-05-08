@@ -86,9 +86,9 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <p><?php esc_html_e( 'This privacy policy has been compiled to better serve those who are concerned with how their "Personally Identifiable Information" (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.', 'zume' ) ?></p>
 
             <hr>
-
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'What permissions do the social sign-on logins ask for?', 'zume' ) ?></h3>
+                <p><?php esc_html_e( 'The profile elements below change depending on if Facebook or Google sign on is used.', 'zume' ) ?></p>
                 <ul class="bullets">
                     <li>
                         <?php esc_html_e( 'Public Profile. This includes certain User’s Data such as id, name, picture, gender, and their locale.', 'zume' ) ?>
@@ -102,15 +102,22 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <hr>
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'What personal information do we collect from the people through our website?', 'zume' ) ?></h3>
+                <p>Some personal information is tracked for the proper functioning of the website, and other information is requested and saved for additional coaching and support.</p>
                 <ul class="bullets">
                     <li>
-                        <?php esc_html_e( 'Information in the Basic Social Profile (if used) and email.', 'zume' ) ?>
+                        <?php esc_html_e( 'A user’s real name or nickname is requested to improve the personal quality of the site and communication, as well as for customer service requests and coaching.', 'zume' ) ?>
                     </li>
                     <li>
-                        <?php esc_html_e( 'Session and course activity.', 'zume' ) ?>
+                        <?php esc_html_e( 'A user’s language preference is stored to support proper site and communication functioning, and to help us connect the user with appropriate coaching and resources.', 'zume' ) ?>
                     </li>
                     <li>
-                        <?php esc_html_e( 'General location telemetry, so we know in what countries our training is being used.', 'zume' ) ?>
+                        <?php esc_html_e( 'A user’s email address is required to establish an account and is used for transactional communication as part of site operation.', 'zume' ) ?>
+                    </li>
+                    <li>
+                         <?php esc_html_e( 'A user’s phone number is collected and stored for supporting the free coaching service.', 'zume' ) ?>
+                    </li>
+                    <li>
+                         <?php esc_html_e( 'A user’s city is requested to personalize site resources and communication, and to connect users to appropriate coaching and customer service resources.', 'zume' ) ?>
                     </li>
                 </ul>
             </div>
@@ -123,7 +130,10 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
                         <?php esc_html_e( 'We collect your information at login.', 'zume' ) ?>
                     </li>
                     <li>
-                        <?php esc_html_e( 'We also track your progress through the training course.', 'zume' ) ?>
+                        <?php esc_html_e( 'We also track your progress through the training course and through site usage.', 'zume' ) ?>
+                    </li>
+                    <li>
+                        <?php esc_html_e( 'We request neccissary information through various sign up and request forms.', 'zume' ) ?>
                     </li>
                 </ul>
             </div>
@@ -162,10 +172,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'Do we use "cookies"?', 'zume' ) ?></h3>
                 <p>
-                    <?php esc_html_e( 'Any use of Cookies - or of other tracking tools - by this Application or by the owners of third party services used by this Application, unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User.', 'zume' ) ?>
-                </p>
-                <p>
-                    <?php esc_html_e( 'Personal Data collected: name, email.', 'zume' ) ?>
+                    <?php esc_html_e( 'Any use of Cookies - or of other tracking tools - unless stated otherwise, serves to identify Users and remember their preferences, for the sole purpose of providing the service required by the User.', 'zume' ) ?>
                 </p>
             </div>
 
