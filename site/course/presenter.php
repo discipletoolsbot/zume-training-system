@@ -128,9 +128,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 <div class="cover-page container-xsm">
                     <div class="center">
                         <div class="stack">
-                            <h1 class="text-center"><?php echo esc_html__( 'Zúme Course Presenter', 'zume' ) ?></h1>
-                            <h2 class="h3 brand text-center"><?php echo esc_html__( 'Scripts are off', 'zume' ) ?></h2>
-                            <p><?php echo esc_html__( 'To enjoy the interactive experience of the zume course, turn on scripts if you are able.', 'zume' ) ?></p>
+                            <h1 class="text-center"><?php echo esc_html__( 'Course Presenter', 'zume' ) ?></h1>
+                            <h2 class="h3 brand text-center"><?php echo esc_html__( 'Oops you have javascript turned off', 'zume' ) ?></h2>
+                            <p><?php echo esc_html__( 'Please enable javascript to use the presenter', 'zume' ) ?></p>
                             <?php /* TODO: Generate/create list of language names+codes that have translated course slides
                                     @note This could be set up to default to english if the the language called is not available.  */ ?>
                             <?php $languages = zume_feature_flag( 'course_slides_download' ); ?>
@@ -144,7 +144,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                             }
                             ?>
                             <?php if ( $any_downloads_available ) : ?>
-                                <p><?php echo esc_html__( 'If you are unable to turn on scripts, you may download the course slides below', 'zume' ) ?></p>
+                                <p><?php echo esc_html__( 'Download the offline slides here', 'zume' ) ?></p>
                                 <ul role="list">
                                 <?php foreach ( $languages as $language_code => $download_available ) {
                                     if ( !$download_available ) {
@@ -157,14 +157,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
                                     /* TODO: get the correct link for the slide download for this language code */
                                     ?>
-                                    <li><a href="#"><?php echo esc_html( sprintf( __( 'Zúme Course slides in %s', 'zume' ), $language_details['name'] ) ) ?></a></li>
+                                    <li><a href="#"><?php echo esc_html( $language_details['name'] ) ?></a></li>
                                 <?php } ?>
                                 </ul>
-                            <?php else : ?>
-                                <p><?php echo esc_html__( 'Unfortunately we do not have the course available for download yet.' ) ?></p>
-                                <p><?php echo esc_html__( 'We will be producing the slides soon.' ) ?></p>
-                                <p><?php echo esc_html__( 'Please come back later and check on our resources page for the slides download.' ) ?></p>
-                                <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                             <?php endif; ?>
                             <div class="stack">
                                 <h3><?php echo esc_html__( 'Links', 'zume' ) ?></h3>
@@ -175,6 +170,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                                     <?php endif; ?>
                                     <a href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
                                     <a href="<?php echo esc_url( zume_course_url() ) ?>"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
+                                    <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                                 </div>
                             </div>
                         </div>
