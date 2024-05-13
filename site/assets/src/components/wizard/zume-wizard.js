@@ -79,8 +79,8 @@ export class Wizard extends LitElement {
     }
 
     willUpdate(properties) {
-        if (properties.has('type') && this.type === '' && this.wizard) {
-            this.wizard.reset()
+        if (properties.has('type') && this.type === '') {
+            this.resetWizard()
         }
         if (properties.has('type') && this.type !== '') {
             this.loadWizard()
@@ -91,6 +91,15 @@ export class Wizard extends LitElement {
         this.wizard = new WizardModuleManager( this.user )
         this.steps = this.wizard.getSteps(this.type)
         this._gotoStep(0)
+    }
+
+    resetWizard() {
+        if (this.wizard) {
+            this.wizard.reset()
+        }
+        this.steps = []
+        this.step = {}
+        this.stepIndex = 0
     }
 
     render() {
@@ -270,11 +279,17 @@ export class Wizard extends LitElement {
     }
 
     footer() {
-        /* This may have a back button in it later, but for now kill the finishbutton */
-        return
-        const isLastStep = this.stepIndex === this.steps.length - 1
+        if (this.noUrlChange && this.stepIndex > 0) {
+            return html`
+                <button
+                    @click=${this._onBack}
+                    class="btn tight light outline fit-content"
+                >
+                    ${this.t.back}
+                </button>
+            `
 
-        return isLastStep ? this.finishButton() : ''
+        }
     }
 
     _onBack() {
@@ -311,7 +326,7 @@ export class Wizard extends LitElement {
     }
     _onFinish(quit = false) {
         this.stateManager.clear()
-        this.wizard.reset()
+        this.resetWizard()
 
         if ( !this.finishUrl ) {
             this.dispatchEvent(new CustomEvent(

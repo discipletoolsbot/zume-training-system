@@ -83,6 +83,7 @@ export class DashBoard extends navigator(router(LitElement)) {
 
         this.updateUserProfile = this.updateUserProfile.bind(this)
         this.updateWizardType = this.updateWizardType.bind(this)
+        this.closeWizard = this.closeWizard.bind(this)
         this.refetchState = this.refetchState.bind(this)
         this.refetchHost = this.refetchHost.bind(this)
         this.getCtas = this.getCtas.bind(this)
@@ -608,9 +609,6 @@ export class DashBoard extends navigator(router(LitElement)) {
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>
-                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close"></span>
-                </button>
                 <zume-wizard
                     type=${this.wizardType}
                     .user=${this.userProfile}
