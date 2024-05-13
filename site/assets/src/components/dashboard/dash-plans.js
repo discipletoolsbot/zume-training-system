@@ -199,7 +199,7 @@ export class DashPlans extends DashPage {
                     ${
                         this.showTeaser ? html`
                           <div class="container-inline p-2">
-                            <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                            <div class="dash-menu__list-item">
                               <div class="dash-menu__icon-area | stack--5">
                                 <span class="icon zume-locked dash-menu__list-icon"></span>
                               </div>

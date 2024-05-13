@@ -1,4 +1,5 @@
 import { html } from "lit"
+import { Wizards } from "../wizard/wizard-constants"
 
 function makeClickHandler(type, eventName) {
     return (event, dispatchEvent) => {
@@ -35,9 +36,22 @@ export function dashRoutes() {
             parent: 'getting-started',
             icon: 'zume-profile',
             type: 'handled-link',
-            clickHandler: makeClickHandler('set-profile', 'open-wizard'),
+            clickHandler: makeClickHandler(Wizards.setProfile, 'open-wizard'),
             translation: jsObject.translations['set_profile'],
             explanation: jsObject.translations['set_profile_explanation'],
+            data: {
+                makeComponent: () => '',
+            },
+        },
+        {
+            name: 'create-a-training',
+            pattern: '#',
+            parent: 'getting-started',
+            icon: 'zume-start',
+            type: 'handled-link',
+            clickHandler: makeClickHandler(Wizards.makeAGroup, 'open-wizard'),
+            translation: jsObject.translations['create_training_group'],
+            explanation: jsObject.translations['create_training_group_explanation'],
             data: {
                 makeComponent: () => '',
             },
@@ -46,11 +60,11 @@ export function dashRoutes() {
             name: 'join-a-training',
             pattern: '#',
             parent: 'getting-started',
-            icon: 'zume-start',
+            icon: 'zume-public-training',
             type: 'handled-link',
-            clickHandler: makeClickHandler('getting-started', 'open-wizard'),
-            translation: jsObject.translations['plan_a_training'],
-            explanation: jsObject.translations['plan_a_training_explanation'],
+            clickHandler: makeClickHandler(Wizards.joinATraining, 'open-wizard'),
+            translation: jsObject.translations['join_training_group'],
+            explanation: jsObject.translations['join_training_group_explanation'],
             data: {
                 makeComponent: () => '',
             },
@@ -61,7 +75,7 @@ export function dashRoutes() {
             parent: 'getting-started',
             icon: 'zume-coach',
             type: 'handled-link',
-            clickHandler: makeClickHandler('get-a-coach', 'open-wizard'),
+            clickHandler: makeClickHandler(Wizards.getACoach, 'open-wizard'),
             translation: jsObject.translations['get_a_coach'],
             explanation: jsObject.translations['get_a_coach_explanation'],
             data: {

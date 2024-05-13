@@ -10,6 +10,7 @@ export class DashTrainings extends DashPage {
             loading: { type: Boolean, attribute: false },
             sessions: { type: Array, attribute: false },
             filterStatus: { type: String, attribute: false },
+            selectedDates: { type: Array, attribute: false },
         };
     }
 
@@ -20,6 +21,7 @@ export class DashTrainings extends DashPage {
         this.route = DashBoard.getRoute('my-training')
 
         /* @todo remove this hardcoded section ?? maybe? */
+        this.selectedDates = []
         this.currentSession = 'set_a_06'
         this.sessions = [
             {
@@ -151,7 +153,6 @@ export class DashTrainings extends DashPage {
     }
 
     renderMemberItem(member) {
-        console.log(member)
         const { name } = member
         return html`
             <li>
@@ -171,12 +172,12 @@ export class DashTrainings extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main p-1">
                     ${
                         this.showTeaser
                         ? html`
                             <div class="container-inline">
-                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                              <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
                                   <span class="icon zume-locked dash-menu__list-icon"></span>
                                 </div>
@@ -186,7 +187,7 @@ export class DashTrainings extends DashPage {
                                     <p>${jsObject.translations.plan_a_training_explanation}</p>
                                   </div>
                                   <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
-                                    ${jsObject.translations.plan_a_training}
+                                    ${jsObject.translations.unlock}
                                   </button>
                                 </div>
                               </div>

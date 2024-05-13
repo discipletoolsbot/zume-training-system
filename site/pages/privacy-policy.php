@@ -100,7 +100,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             </div>
 
             <hr>
-            <div class="stack">
+            <div class="stack" id="personal-information">
                 <h3 class="brand-light"><?php esc_html_e( 'What personal information do we collect from the people through our website?', 'zume' ) ?></h3>
                 <p>Some personal information is tracked for the proper functioning of the website, and other information is requested and saved for additional coaching and support.</p>
                 <ul class="bullets">

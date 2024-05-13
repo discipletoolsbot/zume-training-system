@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import { ZumeWizardSteps } from './wizard-constants';
+import { Steps } from './wizard-constants';
 import { WizardStateManager } from './wizard-state-manager';
 
 export class RequestCoach extends LitElement {
@@ -29,6 +29,7 @@ export class RequestCoach extends LitElement {
             errorMessage: { attribute: false },
             message: { attribute: false },
             loading: { attribute: false },
+            requestSent: { attribute: false },
         }
     }
 
@@ -43,6 +44,7 @@ export class RequestCoach extends LitElement {
         this.errorMessage = ''
         this.message = ''
         this.loading = false
+        this.requestSent = false
         this.contactPreferences = [
             'email',
             'text',
@@ -54,13 +56,14 @@ export class RequestCoach extends LitElement {
         ]
     }
 
-    firstUpdated() {
+    updated() {
         this.message = this.t.connect_success
 
         const data = this.stateManager.getAll()
 
-        if ( this.variant === ZumeWizardSteps.connectingToCoach ) {
+        if ( this.variant === Steps.connectingToCoach && this.requestSent === false ) {
             this.loading = true
+            this.requestSent = true
             this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             const onCoachRequested = (( data ) => {
                 if ( data === false ) {
@@ -113,18 +116,18 @@ export class RequestCoach extends LitElement {
 
             this.state = this.stateManager.get(this.variant) || {}
 
-            if ( this.variant === ZumeWizardSteps.languagePreferences && !this.state.value ) {
+            if ( this.variant === Steps.languagePreferences && !this.state.value ) {
                 this.state.value = jsObject.profile.preferred_language || 'en'
                 this.stateManager.add( this.variant, this.state )
             }
-            if ( this.variant === ZumeWizardSteps.contactPreferences && Object.keys(this.state).length === 0 ) {
+            if ( this.variant === Steps.contactPreferences && Object.keys(this.state).length === 0 ) {
                 this.state = Object.fromEntries(jsObject.profile.contact_preference.map((pref) => ([ pref, 'true' ])))
             }
         }
 
         return html`
         <form class="inputs stack-2" @submit=${this._handleDone}>
-            ${ this.variant === ZumeWizardSteps.contactPreferences ? html`
+            ${ this.variant === Steps.contactPreferences ? html`
                 <h2>${this.t.contact_preference_question}</h2>
                 <div class="stack center container-sm | align-items-start text-start">
                     ${this.contactPreferences.map((preference) => html`
@@ -136,7 +139,7 @@ export class RequestCoach extends LitElement {
                 </div>
             ` : ''}
 
-            ${ this.variant === ZumeWizardSteps.languagePreferences ? html`
+            ${ this.variant === Steps.languagePreferences ? html`
                 <h2>${this.t.language_preference_question}</h2>
                 <div class="stack">
                     <label for="preferred-language">${this.t.language_preference}</label>
@@ -152,7 +155,7 @@ export class RequestCoach extends LitElement {
                 </div>
             ` : ''}
 
-            ${ this.variant === ZumeWizardSteps.howCanWeServe ? html`
+            ${ this.variant === Steps.howCanWeServe ? html`
                 <h2>${this.t.how_can_we_serve}</h2>
                 <div class="stack center | container-sm align-items-start text-start">
                     <div class="d-flex align-items-center">
@@ -177,17 +180,17 @@ export class RequestCoach extends LitElement {
                     </div>
                 </div>
             ` : '' }
-            ${ this.variant === ZumeWizardSteps.connectingToCoach ? html`
+            ${ this.variant === Steps.connectingToCoach ? html`
 
                 <h1>${this.t.connecting_coach_title}</h1>
                 <p>${this.message}</p>
                 <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
             ` : '' }
-            ${ this.variant !== ZumeWizardSteps.connectingToCoach
+            ${ this.variant !== Steps.connectingToCoach
                 ? html`
                     <div class="cluster | mx-auto">
                         <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-                        <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.next}</button>
+                        <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next}</button>
                     </div>
                 `
                 : ''}

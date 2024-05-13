@@ -1,4 +1,4 @@
-export const ZumeWizards = {
+export const Wizards = {
     gettingStarted: 'getting-started',
     makeAGroup: 'make-a-group',
     getACoach: 'get-a-coach',
@@ -8,8 +8,9 @@ export const ZumeWizards = {
     checkin: 'checkin',
     setProfile: 'set-profile',
     joinCommunity: 'join-the-community',
+    inviteFriends: 'invite'
 }
-export const ZumeWizardModules = {
+export const Modules = {
     completeProfile: 'completeProfile',
     makePlan: 'makePlan',
     inviteFriends: 'inviteFriends',
@@ -22,12 +23,14 @@ export const ZumeWizardModules = {
     joinCommunity: 'joinCommunity',
 }
 const makeAPlanSteps = {
+    planDecision: 'plan-decision',
     howManySessions: 'how-many-sessions',
-    whatTimeOfDay: 'what-time-of-day',
     howOften: 'how-often',
     startDate: 'what-start-date',
+    location: 'what-location',
+    review: 'review-steps',
 }
-export const ZumeWizardSteps = {
+export const Steps = {
     updateName: 'update-your-name',
     updateLocation: 'update-your-location',
     updatePhone: 'update-your-phone',
@@ -38,16 +41,17 @@ export const ZumeWizardSteps = {
     connectingToCoach: 'connecting-to-coach',
     joinTraining: 'join-training',
     connectToFriend: 'connect-friend',
-    joinFriendsPlan: 'join-friends-training',
+    joinFriendsPlan: 'join-training',
     checkinSubmit: 'checkin-submit',
+    joinCommunity: 'join-community',
     ...makeAPlanSteps,
 }
-export const ZumeWizardStepsConnectedFields = {
-    [ZumeWizardSteps.updateName]: {
+export const ConnectedFields = {
+    [Steps.updateName]: {
         field: 'name',
         testExistance: (field, profile) => profile.has_set_name
     },
-    [ZumeWizardSteps.updateLocation]: {
+    [Steps.updateLocation]: {
         field: 'location',
         testExistance: (field) => {
             if (field.source && field.source === 'ip') {
@@ -56,7 +60,7 @@ export const ZumeWizardStepsConnectedFields = {
             return true
         }
     },
-    [ZumeWizardSteps.updatePhone]: {
+    [Steps.updatePhone]: {
         field: 'phone',
         testExistance: (phone) => !!phone
     },

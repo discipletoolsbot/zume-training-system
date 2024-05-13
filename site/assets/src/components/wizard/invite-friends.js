@@ -44,6 +44,7 @@ export class InviteFriends extends LitElement {
     render() {
         return html`
             <div class="center stack">
+                <span class="zume-share brand-light f-7"></span>
                 <h2>${this.t.title}</h2>
                 <p>${this.t.share_with_friends}</p>
                 <share-links url=${this.url} title="${this.t.join_my_plan}" .t=${this.t}></share-links>

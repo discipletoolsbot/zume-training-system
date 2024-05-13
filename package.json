@@ -12,7 +12,8 @@
   "dependencies": {
     "@kucrut/vite-for-wp": "^0.5.2",
     "lit": "^2.6.1",
-    "lit-element-router": "^2.0.3"
+    "lit-element-router": "^2.0.3",
+    "luxon": "^3.4.4"
   },
   "devDependencies": {
     "sass": "^1.62.1",

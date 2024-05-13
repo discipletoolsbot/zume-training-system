@@ -244,6 +244,9 @@ export class DashBoard extends navigator(router(LitElement)) {
         if (routeName === 'join-a-training' && ( userState.plan_created || userState.joined_online_training )) {
             return true
         }
+        if (routeName === 'create-a-training' && ( userState.plan_created || userState.joined_online_training )) {
+            return true
+        }
         if (routeName === '3-month-plan' && ( userState.made_post_training_plan )) {
             return true
         }
@@ -623,7 +626,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                     DashBoard.getLockedStatus('3-month-plan', this.userState)
                         ? html`
                             <div class="container-sm">
-                              <div class="dash-menu__list-item" data-locked="false" data-completed="false">
+                              <div class="dash-menu__list-item>
                                 <div class="dash-menu__icon-area | stack--5">
                                   <span class="icon zume-progress dash-menu__list-icon"></span>
                                 </div>
@@ -632,7 +635,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     <h3 class="f-1 bold uppercase">${jsObject.translations.locked_3_month_plan}</h3>
                                     <p>${jsObject.translations.locked_3_month_plan_explanation}</p>
                                   </div>
-                                  <button class="dash-menu__view-button btn tight" @click=${this.unlock3MonthPlan}>${jsObject.translations.locked_3_month_plan_button}</button>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.unlock3MonthPlan}>${jsObject.translations.unlock}</button>
                                 </div>
                               </div>
                             </div>

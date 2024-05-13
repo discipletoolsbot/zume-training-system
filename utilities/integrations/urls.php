@@ -232,6 +232,10 @@ function zume_donate_url() {
     return zume_url( 'donate' );
 }
 
+function zume_privacy_url() {
+    return zume_url( 'privacy' );
+}
+
 function zume_profile_url() {
     $current_lang = zume_current_language();
     $url = zume_get_posts_translation_url( 'Profile', $current_lang );

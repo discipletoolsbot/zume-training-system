@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit"
 import { live } from 'lit/directives/live.js';
-import { ZumeWizardSteps } from "./wizard-constants";
+import { Steps } from "./wizard-constants";
 
 export class CompleteProfile extends LitElement {
     static get properties() {
@@ -37,6 +37,8 @@ export class CompleteProfile extends LitElement {
             loading: { attribute: false },
             state: { attribute: false },
             localValue: { attribute: false },
+            isInfoOpen: { type: Boolean, attribute: false },
+            infoText: { type: String, attribute: false },
         }
     }
 
@@ -53,6 +55,8 @@ export class CompleteProfile extends LitElement {
         this.loading = false
         this.localValue = ''
         this.phoneError = ''
+        this.isInfoOpen = false
+        this.infoText = ''
 
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
@@ -60,9 +64,15 @@ export class CompleteProfile extends LitElement {
         this._handleCityInputChange = this._handleCityInputChange.bind(this)
     }
 
-    firstUpdated() {
-        this.renderRoot.querySelector('.inputs input').focus()
-        if ( this.value !== '' ) {
+    updated(properties) {
+        if (properties.has('variant')) {
+            this.renderRoot.querySelector('.inputs input').focus()
+            this.isInfoOpen = false
+        }
+    }
+
+    willUpdate(properties) {
+        if (properties.has('value') && this.value !== '') {
             this.localValue = JSON.parse(this.value)
         }
     }
@@ -70,18 +80,21 @@ export class CompleteProfile extends LitElement {
     render() {
         return html`
         <form class="inputs stack" @submit=${this._handleSubmit}>
-            ${ this.variant === ZumeWizardSteps.updateName ? html`
+            ${ this.variant === Steps.updateName ? html`
                 <h2>${this.t.name_question}</h2>
-                <div class="">
-                    <label for="name">${this.t.name}</label>
-                    <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable}>
+                <div class="d-flex align-items-center">
+                    <label for="name" class="visually-hidden">${this.t.name}</label>
+                    <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable} placeholder=${this.t.name}>
+                    <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('name')}>
+                        <span class="icon zume-info brand-light"></span>
+                    </button>
                 </div>
             ` : ''}
 
-            ${ this.variant === ZumeWizardSteps.updatePhone ? html`
+            ${ this.variant === Steps.updatePhone ? html`
                 <h2>${this.t.phone_question}</h2>
-                <div class="">
-                    <label for="phone">${this.t.phone}</label>
+                <div class="d-flex align-items-center">
+                    <label for="phone" class="visually-hidden">${this.t.phone}</label>
                     <input
                         class="input"
                         type="tel"
@@ -89,30 +102,39 @@ export class CompleteProfile extends LitElement {
                         name="phone"
                         pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
                         value=""
+                        placeholder=${this.t.phone}
                         ?required=${!this.skippable}
                         @input=${this._handleInput}
                         @invalid=${this._handleInvalid}
                     >
+                    <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('phone')}>
+                        <span class="icon zume-info brand-light"></span>
+                    </button>
                     <div class="input-error" data-state="${this.phoneError.length ? '' : 'empty'}" >${this.phoneError}</div>
                 </div>
             ` : ''}
 
-            ${ this.variant === ZumeWizardSteps.updateLocation ? html`
+            ${ this.variant === Steps.updateLocation ? html`
                 <h2>${this.t.location_question}</h2>
-                <div class="form-group">
-                    <label class="input-label" for="city">${this.t.city}</label>
-                    <input
-                        class="input"
-                        type="text"
-                        id="city"
-                        name="city"
-                        .value="${this.city ? live(this.city) : this.localValue?.label}"
-                        @input=${this._handleCityChange}
-                    >
+                <div class="form-group stack--4">
+                    <div class="d-flex align-items-center">
+                        <label class="input-label visually-hidden" for="city">${this.t.city}</label>
+                        <input
+                            class="input"
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder=${this.t.city}
+                            .value="${this.city ? live(this.city) : this.localValue?.label}"
+                            @input=${this._handleCityChange}
+                        >
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('location')}>
+                            <span class="icon zume-info brand-light"></span>
+                        </button>
+                    </div>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                     <p class="input-subtext">${this.t.approximate_location}</p>
                 </div>
-                <button>${this.t.accept}</button>
                 <div id="address_results">
                     ${this.locationError}
                     ${this.locations.map((location) => {
@@ -128,17 +150,22 @@ export class CompleteProfile extends LitElement {
                         `
                     })}
                 </div>
-                <div class="cluster | mx-auto">
-                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.next}</button>
-                </div>
+
             ` : '' }
-            ${ [ ZumeWizardSteps.updatePhone, ZumeWizardSteps.updateName ].includes(this.variant) ? html`
-                <div class="cluster | mx-auto">
-                    <button type="submit" class="btn" ?disabled=${this.loading}>${this.t.next}</button>
+            <div class="info-area collapse" data-state=${this.isInfoOpen ? 'open' : 'closed'}>
+                <div class="card mw-50ch mx-auto">
+                    <p>${this.infoText}</p>
+                    <a class="f--1 gray-500" href=${jsObject.privacy_url + '#personal-information'} target="_blank">${this.t.privacy_page}</a>
+                </div>
+            </div>
+            <div class="cluster | mx-auto">
+                <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next}</button>
+                ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-                </div>
-            ` : '' }
+                ` : '' }
+            </div>
         </form>
+
         `
     }
 
@@ -266,6 +293,31 @@ export class CompleteProfile extends LitElement {
 
     _clearLocations() {
         this.locations = []
+    }
+
+    _toggleInfo(type) {
+        if (!this.isInfoOpen) {
+            this._openInfo(type)
+        } else {
+            this.isInfoOpen = false
+        }
+    }
+
+    _openInfo(type) {
+        this.isInfoOpen = true
+        switch (type) {
+            case 'name':
+                this.infoText = this.t.user_name_disclaimer
+                break;
+            case 'phone':
+                this.infoText = this.t.user_phone_disclaimer
+                break;
+            case 'location':
+                this.infoText = this.t.user_city_disclaimer
+                break;
+            default:
+                break;
+        }
     }
 
     createRenderRoot() {

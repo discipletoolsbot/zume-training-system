@@ -24,8 +24,8 @@ export class GridLink extends NavLink {
                 role="button"
                 @click=${this.handleClick}
                 aria-disabled=${this.printBool(this.locked)}
-                data-locked=${this.printBool(this.locked)}
-                data-completed=${this.printBool(this.completed)}
+                ?data-locked=${this.locked}
+                ?data-completed=${this.completed}
             >
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}

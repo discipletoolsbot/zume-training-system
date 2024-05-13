@@ -68,7 +68,7 @@ export class DashTopLevel extends DashPage {
         }
 
         return html`
-            <div class="stack-3">
+            <div class="stack">
                 ${this.routes.map((route) => html`
                     <list-link
                         href=${route.pattern}
@@ -108,7 +108,7 @@ export class DashTopLevel extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main p-1">
                     ${this.renderLinks(this.userState)}
                 </div>
                 <div class="dashboard__secondary">

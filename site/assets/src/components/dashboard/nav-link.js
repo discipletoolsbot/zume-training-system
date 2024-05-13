@@ -44,9 +44,9 @@ export class NavLink extends navigator(LitElement) {
                 href=${this.href}
                 class=${this.class}
                 @click=${this.handleClick}
-                aria-disabled=${this.printBool(this.completed)}
-                data-completed=${this.printBool(this.completed)}
-                data-locked=${this.printBool(this.locked)}
+                aria-disabled=${this.completed}
+                ?data-completed=${this.completed}
+                ?data-locked=${this.locked}
             >
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>

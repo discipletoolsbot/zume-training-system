@@ -98,6 +98,23 @@ a {
         }
     }
 
+    &.no-outline {
+        --btn-color: #{color('brand-light')};
+        --btn-bg-color: #{color('white')};
+        --btn-border-color: transparent;
+        --btn-hover-color: #{color('brand-light')};
+        --btn-hover-bg-color: #{color('white')};
+        --btn-hover-border-color: #{color('brand-light')};
+    }
+
+    &.selected {
+        --btn-border-color: #{color('brand-dark')};
+    }
+
+    &.small {
+        font-size: font-size(-1);
+    }
+
     &.large {
         font-size: font-size(1);
     }
@@ -148,7 +165,7 @@ a {
             color: color('gray-400');
         }
     }
-    &[data-locked="true"] {
+    &[data-locked] {
         .icon {
             color: color('gray-400');
         }

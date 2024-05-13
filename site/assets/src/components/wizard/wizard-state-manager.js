@@ -4,6 +4,7 @@ export class WizardStateManager {
     MAX_LIFESPAN = 60 * 60 * 1000
 
     #wizardState;
+    moduleName;
 
     constructor(moduleName) {
         this.moduleName = moduleName
@@ -12,12 +13,16 @@ export class WizardStateManager {
     }
 
     #init() {
-        const existingState = this.#get()
+        const existingState = this.#load()
 
-        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) ) {
+        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) && existingState.module === this.moduleName ) {
             return existingState
         }
 
+        return this.#createEmpty()
+    }
+
+    #createEmpty() {
         return ({
             module: this.moduleName,
             data: {},
@@ -25,8 +30,14 @@ export class WizardStateManager {
         })
     }
 
-    #get() {
+    #load() {
         return JSON.parse(localStorage.getItem(this.WIZARD_STATE_NAME))
+    }
+
+    #save() {
+        this.#refreshTimestamp()
+
+        localStorage.setItem(this.WIZARD_STATE_NAME, JSON.stringify(this.#wizardState))
     }
 
     #refreshTimestamp() {
@@ -37,12 +48,16 @@ export class WizardStateManager {
         return Date.now() - state.timestamp > milliseconds
     }
 
-    empty() {
+    isEmpty() {
         return Object.keys(this.#wizardState.data).length === 0
     }
 
     isDataStale() {
         return this.#isOlderThan(this.#wizardState, this.STALE_LIFESPAN)
+    }
+
+    has( key ) {
+        return Object.prototype.hasOwnProperty.call(this.#wizardState.data, key)
     }
 
     get( key ) {
@@ -56,13 +71,16 @@ export class WizardStateManager {
     add(key, value) {
         this.#wizardState.data[key] = value
 
-        this.#refreshTimestamp()
+        this.#save()
+    }
+    remove(key) {
+        delete this.#wizardState.data[key]
 
-        localStorage.setItem(this.WIZARD_STATE_NAME, JSON.stringify(this.#wizardState))
+        this.#save()
     }
 
     clear() {
-        this.#wizardState = null
+        this.#wizardState = this.#createEmpty()
 
         localStorage.removeItem(this.WIZARD_STATE_NAME)
     }

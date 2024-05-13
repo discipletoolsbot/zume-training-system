@@ -109,12 +109,36 @@ dash-header-right {
     background-color: var(--bg-color-main);
 }
 
-.dashboard__main [data-completed="true"] .dash-menu__list-icon,
-.dashboard__main [data-locked="true"] .dash-menu__list-icon {
+.dash-menu__list-item[role="button"] {
+    --list-item-hover-bg-color: #{color('brand-light')};
+
+    border-radius: var(--border-radius, 10px);
+    padding: spacing(1);
+
+    &:hover,
+    &:active,
+    &:focus {
+        &:not([data-completed]) {
+            background-color: var(--list-item-hover-bg-color);
+            color: white;
+
+            & .icon {
+                color: white;
+            }
+        }
+    }
+
+    &[data-locked] {
+        --list-item-hover-bg-color: #{color('gray-700')};
+    }
+}
+
+.dashboard__main [data-completed] .dash-menu__list-icon,
+.dashboard__main [data-locked] .dash-menu__list-icon {
     color: color('gray-500');
 }
 
-.dashboard__main [data-completed="true"] {
+.dashboard__main [data-completed] {
     color: color('gray-500');
     font-style: italic;
 }
