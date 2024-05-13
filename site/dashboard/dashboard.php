@@ -137,7 +137,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         <noscript>
 
-            <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
+            <div class="container-md page">
+
+                <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
+
+            </div>
 
         </noscript>
 

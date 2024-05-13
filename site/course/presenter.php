@@ -129,8 +129,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                     <div class="center">
                         <div class="stack">
                             <h1 class="text-center"><?php echo esc_html__( 'Course Presenter', 'zume' ) ?></h1>
-                            <h2 class="h3 brand text-center"><?php echo esc_html__( 'Oops you have javascript turned off', 'zume' ) ?></h2>
-                            <p><?php echo esc_html__( 'Please enable javascript to use the presenter', 'zume' ) ?></p>
+
+                            <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
+
                             <?php /* TODO: Generate/create list of language names+codes that have translated course slides
                                     @note This could be set up to default to english if the the language called is not available.  */ ?>
                             <?php $languages = zume_feature_flag( 'course_slides_download' ); ?>
