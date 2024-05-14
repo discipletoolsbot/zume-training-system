@@ -55,33 +55,51 @@ class Zume_Translation_Endpoints
         }
 
         $params = $request->get_params();
-        if ( ! isset( $params['postid'] ) || ! isset( $params['key'] ) || ! isset( $params['content'] ) ) {
+        if ( ! isset( $params['postid'], $params['key'], $params['content'], $params['type'] ) ) {
             return new WP_Error( 'missing_params', 'Missing required parameters', [ 'status' => 400 ] );
         }
 
-        $post_id = trim( wp_unslash( $params['postid'] ) );
         $meta_key = trim( wp_unslash( $params['key'] ) );
+        $post_id = trim( wp_unslash( $params['postid'] ) );
+        $type = trim( wp_unslash( $params['type'] ) );
         $current_value = trim( wp_unslash( $params['content'] ) );
+        $post_type = null;
+        if ( isset( $params['post_type'] ) && ! empty( $params['post_type'] ) ) {
+            $post_type = sanitize_text_field( wp_unslash( $params['post_type'] ) );
+        }
 
         // Log the change
         $previous_value = get_post_meta ( $params['postid'], $params['key'], true );
+        $log = array(
+            'meta_key' => $meta_key,
+            'post_id' => $post_id,
+            'previous_value' => $previous_value,
+            'current_value' => $current_value,
+            'timestamp' => current_time( 'mysql' ),
+            'author' => $this->user->ID,
+            'type' => $type,
+        );
         $wpdb->insert(
             'zume_postmeta_translator_log',
-            array(
-                'post_id' => $post_id,
-                'meta_key' => $meta_key,
-                'previous_value' => $previous_value,
-                'current_value' => $current_value,
-                'timestamp' => current_time( 'mysql' ),
-                'author' => $this->user->ID,
-                'type' => 'log',
-            )
+            $log
         );
 
         // Save new value
         update_post_meta( $post_id, $meta_key, $current_value );
 
-        return $params;
+        $last_activity = zume_last_activity( $post_type);
+
+        if ( isset( $last_activity[$meta_key.$post_id] ) ) {
+            return $last_activity[$meta_key.$post_id];
+        } else {
+            return false;
+        }
+
+//        $log['author'] = $this->user->display_name;
+//        $log['time'] = date("n-j (g:i a)", strtotime($log['timestamp']));
+//        $log['color'] = 'green';
+//
+//        return $log;
     }
     public function verify( WP_REST_Request $request ) {
         global $wpdb;
