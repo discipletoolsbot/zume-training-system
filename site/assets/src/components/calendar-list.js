@@ -44,6 +44,16 @@ export class CalendarList extends LitElement {
         `
     }
 
+    sortDays(a, b) {
+        if ( a.date === b.date ) {
+            return 0
+        }
+        if ( a.date < b.date ) {
+            return -1
+        }
+        return 1
+    }
+
     render() {
         return html`
             <div class="stack">
@@ -57,7 +67,7 @@ export class CalendarList extends LitElement {
                 }
                 </ol>
 
-                <div class="d-flex align-items-center gap-0">
+                <div class="d-flex align-items-center gap-0 mx-auto">
                     <input class="input fit-content" type="date" @change=${this.onChange} value=${this.date} />
                     <button class="btn light tight" @click=${this.addDate}>
                         ${this.t.add}

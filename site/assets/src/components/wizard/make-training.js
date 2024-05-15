@@ -231,18 +231,18 @@ export class MakeTraining extends LitElement {
         }
 
         const sortedDays = days.sort(this.sortDays)
-        for (let i = 0; i < Number( howManySessions ); i++) {
+        for (let i = 1; i < Number( howManySessions ) + 1; i++) {
             const numberString = i < 10 ? `0${i}` : `${i}`
             let time
-            if (i < sortedDays.length - 1) {
-                time = DateTime.fromISO(sortedDays[i]).toSeconds()
+            if ( i-1 < sortedDays.length ) {
+                time = DateTime.fromISO(sortedDays[i-1].date).toSeconds()
             } else {
                 time = ''
             }
             trainingSchedule[prefix + numberString] = time
         }
 
-        this.trainingSchedule = trainingSchedule
+        return trainingSchedule
     }
 
     sortDays(a, b) {
@@ -259,6 +259,20 @@ export class MakeTraining extends LitElement {
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
         const name = this.stateManager.get(Steps.name)
+        let set_type = ''
+        switch (howManySessions) {
+            case '10':
+                set_type = 'set_a'
+                break;
+            case '20':
+                set_type = 'set_b'
+                break;
+            case '5':
+                set_type = 'set_c'
+                break;
+            default:
+                break;
+        }
         if (scheduleDecision === 'yes' && this.selectedDays.length !== Number(howManySessions)) {
             this.errorMessage = this.t.incorrect_number_of_sessions
             setTimeout(() => {
@@ -269,7 +283,8 @@ export class MakeTraining extends LitElement {
         const postData = {
             user_id: jsObject.profile.user_id,
             contact_id: jsObject.profile.contact_id,
-            title: name !== '' ? name : this.t.my_first_training  + ' - ' + jsObject.profile.name,
+            title: !name ? this.t.my_first_training  + ' - ' + jsObject.profile.name : name,
+            set_type,
             set: this._buildSet(this.selectedDays)
         }
 

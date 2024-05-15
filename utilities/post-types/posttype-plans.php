@@ -236,6 +236,27 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/qrcode-solid.svg',
             ];
 
+            $fields['set_type'] = [
+                'name'        => 'Training Sessions',
+                'description' => 'How many sessions the training is broken into',
+                'type'        => 'key_select',
+                'default'     => [
+                    'set_a' => [
+                        'label' => '10',
+                        'description' => '10 Sessions',
+                    ],
+                    'set_b'   => [
+                        'label' => '20',
+                        'description' => '20 Sessions',
+                    ],
+                    'set_c'   => [
+                        'label' => 'Intensive',
+                        'description' => '5 sessions',
+                    ],
+                ],
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_a_01'] = [
                 'name'        => '10 Session 01',
                 'description' => '',
@@ -479,6 +500,47 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
 
+            $fields['set_c_01'] = [
+                'name'        => '5 Session 01',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_02'] = [
+                'name'        => '5 Session 02',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_03'] = [
+                'name'        => '5 Session 03',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_04'] = [
+                'name'        => '5 Session 04',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_05'] = [
+                'name'        => '5 Session 05',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+
 
             $fields['participants'] = [
                 'name' => 'Participants',
@@ -533,14 +595,28 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 <input type="date" id="start_date" class="" value="" />
                 <button class="button" id="install_10_sessions">Add 10 Sessions</button>
                 <button class="button" id="install_20_sessions">Add 20 Sessions</button>
+                <button class="button" id="install_intensive_sessions">Add intensive Sessions</button>
             </div>
             <script>
                 jQuery(document).ready(function(){
                     let start_date = jQuery('#start_date')
                     let post_id = <?php echo esc_js( get_the_ID() ); ?>;
+                    jQuery('#install_intensive_sessions').click(function(){
+                        let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
+                        let list = {
+                            'set_type': 'set_c'
+                            'set_c_01': date + (0 * 604800 ),
+                            'set_c_02': date + (1 * 604800 ),
+                            'set_c_03': date + (2 * 604800 ),
+                            'set_c_04': date + (3 * 604800 ),
+                            'set_c_05': date + (4 * 604800 ),
+                        };
+                        window.API.update_post('zume_plans', post_id, list )
+                    });
                     jQuery('#install_10_sessions').click(function(){
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
+                            'set_type': 'set_a'
                             'set_a_01': date + (0 * 604800 ),
                             'set_a_02': date + (1 * 604800 ),
                             'set_a_03': date + (2 * 604800 ),
@@ -558,6 +634,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                         console.log('install 20 sessions');
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
+                            'set_type': 'set_b'
                             'set_b_01': date + ( 0 * 604800 ),
                             'set_b_02': date + ( 1 * 604800 ),
                             'set_b_03': date + ( 2 * 604800 ),

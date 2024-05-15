@@ -99,6 +99,7 @@ class Zume_Plans_Endpoints
         $fields = [
             'title' => $params['title'],
             'assigned_to' => $params['user_id'],
+            'set_type' => isset( $params['set_type'] ) ? $params['set_type'] : '',
             'visibility' => 'private',
             'participants' => [
                 'values' => [
