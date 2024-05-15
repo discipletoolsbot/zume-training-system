@@ -730,7 +730,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td class="button_column">
                                     <!-- Translation Button -->
                                     <div>
-                                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                                     </div>
                                     <div>
@@ -741,7 +741,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Editorial Verification -->
                                     <div>
-                                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                     </div>
                                     <div>
@@ -752,7 +752,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Proof Read Verification -->
                                     <div>
-                                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                     </div>
                                     <div>
@@ -781,7 +781,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                  <td class="button_column">
                                     <!-- Translation Button -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                                     </div>
                                     <div>
@@ -792,7 +792,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Editorial Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                     </div>
                                     <div>
@@ -803,7 +803,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Proof Read Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                     </div>
                                     <div>
@@ -833,7 +833,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                  <td class="button_column">
                                     <!-- Translation Button -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                                     </div>
                                     <div>
@@ -844,7 +844,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Editorial Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                     </div>
                                     <div>
@@ -855,7 +855,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Proof Read Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                     </div>
                                     <div>
@@ -885,7 +885,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                  <td class="button_column">
                                     <!-- Translation Button -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                                     </div>
                                     <div>
@@ -896,7 +896,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Editorial Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                     </div>
                                     <div>
@@ -907,7 +907,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Proof Read Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                     </div>
                                     <div>
@@ -937,7 +937,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                  <td class="button_column">
                                     <!-- Translation Button -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                                     </div>
                                     <div>
@@ -948,7 +948,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Editorial Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                     </div>
                                     <div>
@@ -959,7 +959,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                     </div>
                                     <!-- Proof Read Verification -->
                                     <div>
-                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                     </div>
                                     <div>
@@ -984,7 +984,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                     tinymce.init({
                         selector: 'textarea',
-                        plugins: 'code link wordcount lists image',
+                        plugins: 'code link wordcount lists image autoresize',
                         menubar: 'insert',
                         toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
                         paste_as_text: true,
@@ -1088,7 +1088,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <td class="button_column">
                     <!-- Translation Button -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                     </div>
                     <div>
@@ -1099,7 +1099,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Editorial Verification -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                     </div>
                     <div>
@@ -1110,7 +1110,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Proof Read Verification -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                     </div>
                     <div>
@@ -1139,7 +1139,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <td class="button_column">
                     <!-- Translation Button -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                     </div>
                     <div>
@@ -1150,7 +1150,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Editorial Verification -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                     </div>
                     <div>
@@ -1161,7 +1161,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Proof Read Verification -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                     </div>
                     <div>
@@ -1196,7 +1196,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                 tinymce.init({
                     selector: 'textarea',
-                    plugins: 'code link wordcount lists image',
+                    plugins: 'code link wordcount lists image autoresize',
                     menubar: 'insert',
                     toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
                     paste_as_text: true,
@@ -1330,7 +1330,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                  <td class="button_column">
                                         <!-- Translation Button -->
                                         <div>
-                                            <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                                            <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                                             <span class="loading-spinner small <?php echo $target ?>log"></span>
                                         </div>
                                         <div>
@@ -1341,7 +1341,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                         </div>
                                         <!-- Editorial Verification -->
                                         <div>
-                                            <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                                            <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                                             <span class="loading-spinner small <?php echo $target ?>edit"></span>
                                         </div>
                                         <div>
@@ -1352,7 +1352,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                         </div>
                                         <!-- Proof Read Verification -->
                                         <div>
-                                            <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                                            <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                                             <span class="loading-spinner small <?php echo $target ?>proof"></span>
                                         </div>
                                         <div>
@@ -1378,7 +1378,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                     tinymce.init({
                         selector: 'textarea',
-                        plugins: 'code link wordcount lists image',
+                        plugins: 'code link wordcount lists image autoresize',
                         menubar: 'insert',
                         toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat',
                         paste_as_text: true,
@@ -1482,7 +1482,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <td class="button_column">
                     <!-- Translation Button -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                        <button class="button small save_text <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                     </div>
                     <div>
@@ -1493,7 +1493,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Editorial Verification -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                        <button class="button small save_text <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                     </div>
                     <div>
@@ -1504,7 +1504,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Proof Read Verification -->
                     <div>
-                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                        <button class="button small save_text <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                     </div>
                     <div>
@@ -1533,7 +1533,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                  <td class="button_column">
                     <!-- Translation Button -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Translation</button>
+                        <button class="button small save_textarea <?php echo $target ?>log <?php echo empty( $last_activity[$target]['log']['color'] ) ? 'red' : $last_activity[$target]['log']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="log" >Save Translation</button>
                         <span class="loading-spinner small <?php echo $target ?>log"></span>
                     </div>
                     <div>
@@ -1544,7 +1544,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Editorial Verification -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Editorial</button>
+                        <button class="button small save_textarea <?php echo $target ?>edit <?php echo empty( $last_activity[$target]['edit']['color'] ) ? 'red' : $last_activity[$target]['edit']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="edit" >Save Editorial</button>
                         <span class="loading-spinner small <?php echo $target ?>edit"></span>
                     </div>
                     <div>
@@ -1555,7 +1555,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </div>
                     <!-- Proof Read Verification -->
                     <div>
-                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Proof</button>
+                        <button class="button small save_textarea <?php echo $target ?>proof <?php echo empty( $last_activity[$target]['proof']['color'] ) ? 'red' : $last_activity[$target]['proof']['color'] ?>" data-target="<?php echo $target ?>" data-post="<?php echo $pid ?>" data-key="<?php echo $key ?>" data-type="proof" >Save Proof</button>
                         <span class="loading-spinner small <?php echo $target ?>proof"></span>
                     </div>
                     <div>
@@ -1590,7 +1590,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
 
                 tinymce.init({
                     selector: 'textarea',
-                    plugins: 'code link wordcount lists image table',
+                    plugins: 'code link wordcount lists image table autoresize',
                     menubar: 'insert table',
                     toolbar: 'undo redo | blocks | bold italic bullist numlist | alignleft aligncenter alignjustify | code removeformat ',
                     paste_as_text: true,
