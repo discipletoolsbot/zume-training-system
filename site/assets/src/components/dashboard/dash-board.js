@@ -605,7 +605,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
                     <profile-form .userProfile=${this.userProfile}></profile-form>
-                    <a href=${jsObject.urls.logout} class="btn outline">${jsObject.translations.logout}</a>
+                    <a href=${jsObject.urls.logout} class="btn outline light">${jsObject.translations.logout}</a>
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>

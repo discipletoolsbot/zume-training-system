@@ -399,13 +399,13 @@ switch ( $request_action ) {
 
                                 <span class="line-text f--1"><span><?php echo esc_html__( 'Or', 'zume' ) ?></span></span>
 
-                                <button class="btn outline-dark register-email-toggle"><?php echo esc_html__( 'Register with Email', 'zume' ) ?></button>
+                                <button class="btn register-email-toggle"><?php echo esc_html__( 'Register with Email', 'zume' ) ?></button>
 
                             </div>
 
                             <div id="email_signup_form" class="<?php echo $has_email_error ? '' : 'hidden' ?> stack">
 
-                                <button class="btn outline-dark fit-content register-email-toggle"><?php echo esc_html__( 'Back', 'zume' ) ?></button>
+                                <button class="btn fit-content register-email-toggle"><?php echo esc_html__( 'Back', 'zume' ) ?></button>
 
                                 <?php if ( is_wp_error( $reg_status ) ) :?>
                                     <div class="cell warning banner">

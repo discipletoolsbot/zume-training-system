@@ -5,22 +5,31 @@
 .fixed {
     position: fixed;
 }
+.sticky {
+    position: sticky
+}
 
-.fixed.top,
-.absolute.top {
-    top: 0;
-}
-.fixed.bottom,
-.absolute.bottom {
-    bottom: 0;
-}
-.fixed.left,
-.absolute.left {
-    left: 0;
-}
-.fixed.right,
-.absolute.right {
-    right: 0;
+.fixed,
+.sticky,
+.absolute {
+    &.top {
+        top: 0;
+    }
+
+    &.bottom {
+        bottom: 0;
+    }
+    &.bottom-0 {
+        bottom: spacing(0);
+    }
+
+    &.left {
+        left: 0;
+    }
+
+    &.right {
+        right: 0;
+    }
 }
 .absolute.center {
     left: 50%;

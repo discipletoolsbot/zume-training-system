@@ -106,6 +106,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'profile' => zume_get_user_profile(),
                 'user_stage' => zume_get_user_stage(),
                 'training_items' => zume_training_items(),
+                'plans' => zume_get_user_plans( get_current_user_id() ),
                 'host_progress' => zume_get_user_host(),
                 'friends' => zume_get_user_friends(),
                 'languages' => $zume_languages_by_code,

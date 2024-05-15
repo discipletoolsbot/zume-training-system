@@ -109,7 +109,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
                     <div class="d-flex align-items-start gap-1">
                         <div class="stack w-90">
                             <a class="btn light uppercase px--3" target="_blank" href="https://storage.googleapis.com/zume-file-mirror/en/33_en_zume_guidebook.pdf"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
-                            <a class="btn outline uppercase px--3" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
+                            <a class="btn outline light uppercase px--3" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
                         </div>
                         <img class="w-10" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/download-icon-01.svg' ) ?>" alt="download image">
                     </div>

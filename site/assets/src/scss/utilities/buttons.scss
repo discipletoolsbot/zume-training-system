@@ -10,12 +10,16 @@
     transition: all 150ms linear;
     text-align: center;
 
-    --btn-color: #{color('white')};
-    --btn-bg-color: #{color('brand')};
-    --btn-border-color: #{color('brand')};
-    --btn-hover-color: #{color('white')};
-    --btn-hover-bg-color: #{color('brand-light')};
-    --btn-hover-border-color: #{color('brand-light')};
+    --primary-btn-color: #{color('brand')};
+    --secondary-btn-color: #{color('brand-light')};
+    --bg-btn-color: #{color('white')};
+
+    --btn-color: var(--bg-btn-color);
+    --btn-bg-color: var(--primary-btn-color);
+    --btn-border-color: var(--primary-btn-color);
+    --btn-hover-color: var(--bg-btn-color);
+    --btn-hover-bg-color: var(--secondary-btn-color);
+    --btn-hover-border-color: var(--secondary-btn-color);
 
     color: var(--btn-color);
     background-color: var(--btn-bg-color);
@@ -73,28 +77,36 @@ a {
     }
 
     &.light {
-        --btn-color: #{color('white')};
-        --btn-bg-color: #{color('brand-light')};
-        --btn-border-color: #{color('brand-light')};
-        --btn-hover-color: #{color('white')};
-        --btn-hover-bg-color: #{color('brand')};
-        --btn-hover-border-color: #{color('brand')};
+        --primary-btn-color: #{color('brand-light')};
+        --secondary-btn-color: #{color('brand')};
+        --bg-btn-color: #{color('white')};
+    }
+
+    &.green {
+        --primary-btn-color: #{color('success')};
+        --secondary-btn-color: #{color('success')};
+        --bg-btn-color: #{color('white')};
+    }
+    &.red {
+        --primary-btn-color: #{color('error-main')};
+        --secondary-btn-color: #{color('error-main')};
+        --bg-btn-color: #{color('white')};
     }
 
     &.outline {
-        --btn-color: #{color('brand-light')};
-        --btn-bg-color: #{color('white')};
-        --btn-border-color: #{color('brand-light')};
-        --btn-hover-color: #{color('white')};
-        --btn-hover-bg-color: #{color('brand-light')};
-        --btn-hover-border-color: #{color('brand-light')};
+        --btn-color: var(--primary-btn-color);
+        --btn-bg-color: var(--bg-btn-color);
+        --btn-border-color: var(--primary-btn-color);
+        --btn-hover-color: var(--bg-btn-color);
+        --btn-hover-bg-color: var(--primary-btn-color);
+        --btn-hover-border-color: var(--primary-btn-color);
 
         &.dark {
-            --btn-color: #{color('white')};
+            --btn-color: var(--bg-btn-color);
             --btn-bg-color: transparent;
-            --btn-border-color: #{color('white')};
-            --btn-hover-bg-color: #{color('brand-light')};
-            --btn-hover-border-color: #{color('white')};
+            --btn-border-color: var(--bg-btn-color);
+            --btn-hover-bg-color: var(--primary-btn-color);
+            --btn-hover-border-color: var(--bg-btn-color);
         }
     }
 

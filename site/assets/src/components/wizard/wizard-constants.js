@@ -1,6 +1,8 @@
 export const Wizards = {
     gettingStarted: 'getting-started',
     makeAGroup: 'make-a-group',
+    makeFirstGroup: 'make-first-group',
+    makeMoreGroups: 'make-more-groups',
     getACoach: 'get-a-coach',
     joinATraining: 'join-a-training',
     connectWithFriend: 'connect-with-friend',
@@ -25,10 +27,12 @@ export const Modules = {
 const makeAPlanSteps = {
     planDecision: 'plan-decision',
     howManySessions: 'how-many-sessions',
+    scheduleDecision: 'schedule-decision',
     howOften: 'how-often',
     startDate: 'what-start-date',
     location: 'what-location',
     review: 'review-steps',
+    name: 'group-name',
 }
 export const Steps = {
     updateName: 'update-your-name',

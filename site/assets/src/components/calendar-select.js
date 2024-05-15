@@ -69,6 +69,9 @@ export class CalendarSelect extends LitElement {
             color: white;
             background-color: var(--cp-color);
           }
+          .today {
+            border-color: black;
+          }
           .day.cell.selected-day:hover {
             color: white;
             background-color: var(--cp-color-darker);
@@ -146,6 +149,7 @@ export class CalendarSelect extends LitElement {
             endDate: { type: String },
             selectedDays: { type: Array },
             view: { type: String },
+            showToday: { type: Boolean },
             monthToShow: { attribute: false },
         }
     }
@@ -156,6 +160,8 @@ export class CalendarSelect extends LitElement {
         this.startDate = ''
         this.endDate = ''
         this.selectedDays = []
+        this.showToday = false
+        this.today = DateTime.now().toISODate()
         this.view = 'slider'
     }
 
@@ -164,8 +170,15 @@ export class CalendarSelect extends LitElement {
         this.monthToShow = month
     }
 
-    daySelected(event, day){
-        this.dispatchEvent(new CustomEvent('day-selected', { detail: day }));
+    selectDay(event, date){
+        const days = this.selectedDays.filter((day) => day.date === date)
+        if (days.length === 0) {
+            this.dispatchEvent(new CustomEvent('day-added', { detail: { date } }));
+        } else {
+            days.forEach(({ id }) => {
+                this.dispatchEvent(new CustomEvent('day-removed', { detail: { id } }));
+            })
+        }
         this.shadowRoot.querySelectorAll('.selected-time').forEach(element => element.classList.remove('selected-time'))
         event.target.classList.add('selected-time');
     }
@@ -199,7 +212,14 @@ export class CalendarSelect extends LitElement {
 
     addMonth() {
         const newEndDate = DateTime.fromISO(this.endDate).plus({months: 1}).endOf('month').toISODate()
+        this.dispatchEvent(new CustomEvent( 'calendar-extended', { detail: { newEndDate } } ))
         this.endDate = newEndDate
+    }
+
+    isSelected(date) {
+        const days = this.selectedDays.find((day) => day.date === date)
+
+        return !!days
     }
 
     renderCalendar(monthDate) {
@@ -222,9 +242,9 @@ export class CalendarSelect extends LitElement {
             ${
                 monthDays.map(day => html`
                     <div
-                        class="cell day ${day.disabled ? 'disabled':''} ${this.selectedDays.includes(day.key) ? 'selected-day':''}"
+                        class="cell day ${day.disabled ? 'disabled':''} ${this.isSelected(day.key) ? 'selected-day'  : ''} ${this.showToday && day.key === this.today ? 'today' : ''}"
                         data-day=${day.key}
-                        @click=${event => !day.disabled && this.daySelected(event, day.key)}
+                        @click=${event => !day.disabled && this.selectDay(event, day.key)}
                     >
                         ${day.formatted}
                     </div>

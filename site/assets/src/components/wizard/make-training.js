@@ -28,9 +28,11 @@ export class MakeTraining extends LitElement {
             variant: { type: String },
             state: { attribute: false },
             selectedDays: { type: Array, attribute: false },
+            completedSteps: { type: Array, attribute: false },
             calendarStart: { type: String, attribute: false },
             calendarEnd: { type: String, attribute: false },
             calendarView: { type: String, attribute: false },
+            scheduleView: { type: String, attribute: false },
             errorMessage: { type: String, attribute: false },
             message: { type: String, attribute: false },
             loading: { type: Boolean, attribute: false },
@@ -52,23 +54,35 @@ export class MakeTraining extends LitElement {
         this.stateManager.clear()
         this.trainingSchedule = []
         this.selectedDays = []
+        this.completedSteps = []
         this.calendarStart = DateTime.now().startOf('month').toISODate()
         this.calendarEnd = DateTime.now().plus({ month: 2 }).endOf('month').toISODate()
         this.calendarView = 'all'
+        this.scheduleView = 'calendar'
 }
 
     willUpdate(properties) {
         const defaultState = {
             [Steps.howManySessions]: '10',
+            [Steps.scheduleDecision]: 'yes',
             [Steps.howOften]: 'weekly',
             [Steps.location]: '',
-            [Steps.startDate]: {},
+            [Steps.startDate]: { date: DateTime.now().toISODate() },
         }
         if (properties.has('variant')) {
             this.state = this.stateManager.get(this.variant) || defaultState[this.variant]
 
+            if (this.variant === Steps.howOften || this.variant === Steps.startDate) {
+                const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
+                if (this.isIntensive() || scheduleDecision === 'no') {
+                    this._sendDoneStepEvent()
+                }
+            }
             if (this.variant === Steps.review) {
                 this._buildSelectedDays()
+            }
+            if (this.variant === Steps.review && this.isIntensive()) {
+                this.scheduleView = 'list'
             }
             /* DEV only */
             if (false && this.variant !== Steps.review) {
@@ -114,6 +128,13 @@ export class MakeTraining extends LitElement {
             event.preventDefault()
         }
 
+        if (!this.completedSteps.includes(this.variant)) {
+            this.completedSteps = [...this.completedSteps, this.variant]
+        }
+        if (this.variant === Steps.scheduleDecision && this.state === 'no') {
+            this.completedSteps = this.completedSteps.filter((step) => step !== Steps.howOften && step !== Steps.startDate)
+        }
+
         this._saveState()
 
         this._sendDoneStepEvent()
@@ -121,6 +142,11 @@ export class MakeTraining extends LitElement {
 
     _sendDoneStepEvent() {
         const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
+        this.dispatchEvent(doneStepEvent)
+    }
+
+    _gotoStep(step) {
+        const doneStepEvent = new CustomEvent( 'wizard:goto-step', { bubbles: true, detail: { slug: step } } )
         this.dispatchEvent(doneStepEvent)
     }
 
@@ -140,16 +166,21 @@ export class MakeTraining extends LitElement {
             this.state = event.target.value
         }
         if (['date', 'time'].includes(event.target.type)) {
-            this.state[event.target.name] = event.target.value
+            this.state = {...this.state, [event.target.name]: event.target.value }
         }
 
         this.stateManager.add(this.variant, this.state)
     }
 
     _buildSelectedDays() {
+
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const howOften = this.stateManager.get(Steps.howOften)
         const startDate = this.stateManager.get(Steps.startDate)?.date
+
+        if (this.selectedDays.length > 0) {
+            return
+        }
 
         if (howManySessions && howOften && startDate) {
             let weekInterval = 0
@@ -166,11 +197,14 @@ export class MakeTraining extends LitElement {
             const selectedDays = []
             const date = DateTime.fromISO(startDate)
             for (let i = 1; i < Number(howManySessions) + 1; i++) {
-                selectedDays.push(date.plus({weeks: weekInterval * ( i - 1 )}).toISODate())
+                selectedDays.push({
+                    date: date.plus({weeks: weekInterval * ( i - 1 )}).toISODate(),
+                    id: this.createId(),
+                })
             }
             this.selectedDays = selectedDays
             this.calendarStart = DateTime.fromISO(date).startOf('month').toISODate()
-            this.calendarEnd = DateTime.fromISO(selectedDays[selectedDays.length - 1]).endOf('month').toISODate()
+            this.calendarEnd = DateTime.fromISO(selectedDays[selectedDays.length - 1].date).endOf('month').toISODate()
             this.calendarView = 'all'
         }
     }
@@ -196,20 +230,46 @@ export class MakeTraining extends LitElement {
             prefix = 'set_c_'
         }
 
-        const sortedDays = days.sort()
-        sortedDays.forEach((day, i) => {
+        const sortedDays = days.sort(this.sortDays)
+        for (let i = 0; i < Number( howManySessions ); i++) {
             const numberString = i < 10 ? `0${i}` : `${i}`
-            trainingSchedule[prefix + numberString] = DateTime.fromISO(day).toSeconds()
-        });
+            let time
+            if (i < sortedDays.length - 1) {
+                time = DateTime.fromISO(sortedDays[i]).toSeconds()
+            } else {
+                time = ''
+            }
+            trainingSchedule[prefix + numberString] = time
+        }
 
         this.trainingSchedule = trainingSchedule
     }
 
+    sortDays(a, b) {
+        if ( a.date === b.date ) {
+            return 0
+        }
+        if ( a.date < b.date ) {
+            return -1
+        }
+        return 1
+    }
+
     _handleCreate() {
+        const howManySessions = this.stateManager.get(Steps.howManySessions)
+        const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
+        const name = this.stateManager.get(Steps.name)
+        if (scheduleDecision === 'yes' && this.selectedDays.length !== Number(howManySessions)) {
+            this.errorMessage = this.t.incorrect_number_of_sessions
+            setTimeout(() => {
+                this.errorMessage = ''
+            }, 3000)
+            return
+        }
         const postData = {
             user_id: jsObject.profile.user_id,
             contact_id: jsObject.profile.contact_id,
-            title: `${jsObject.profile.name}`,
+            title: name !== '' ? name : this.t.my_first_training  + ' - ' + jsObject.profile.name,
             set: this._buildSet(this.selectedDays)
         }
 
@@ -231,22 +291,60 @@ export class MakeTraining extends LitElement {
         this._sendLoadWizardEvent(Wizards.inviteFriends)
     }
 
-    selectDate(event) {
-        const day = event.detail
+    isIntensive() {
+        const howManySessions = this.stateManager.get(Steps.howManySessions)
 
-        if (this.selectedDays.includes(day)) {
-            const index =  this.selectedDays.indexOf(day)
+        return howManySessions === '5'
+    }
+
+    toggleView() {
+        if (this.scheduleView === 'calendar') {
+            this.scheduleView = 'list'
+        } else {
+            this.scheduleView = 'calendar'
+        }
+    }
+
+    createId() {
+        return sha256(Math.random(0,10000)).slice(0, 6)
+    }
+    addDate(event) {
+        const { date } = event.detail
+
+        const day = {
+            date,
+            id: this.createId(),
+        }
+
+        this.selectedDays = [...this.selectedDays, day]
+    }
+    removeDate(event) {
+        const { id } = event.detail
+
+        console.log(id)
+
+        const index =  this.selectedDays.findIndex((day) => id === day.id)
+
+        if (index > -1) {
             this.selectedDays = [
                 ...this.selectedDays.slice(0, index),
                 ...this.selectedDays.slice(index + 1)
             ]
-        } else {
-            this.selectedDays = [...this.selectedDays, day]
         }
+    }
+
+    updateCalendarEnd(event) {
+        const { newEndDate } = event.detail
+        this.calendarEnd = newEndDate
+    }
+
+    _clearCalendar() {
+        this.selectedDays = []
     }
 
     render() {
         const howManySessions = Number( this.stateManager.get(Steps.howManySessions) )
+        const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
         let progressText = ''
         let progressColor = ''
         if (this.selectedDays.length < howManySessions) {
@@ -263,7 +361,7 @@ export class MakeTraining extends LitElement {
         }
 
         return html`
-            <div class="stack-1">
+            <div class="stack-1 position-relative">
                 ${this.variant === Steps.planDecision ? html`
                     <div class="stack">
                         <span class="zume-start-group brand-light f-7"></span>
@@ -280,10 +378,21 @@ export class MakeTraining extends LitElement {
                         <span class="zume-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_which_session}</h2>
                         <div class="stack" data-fit-content>
-                            <button class="btn tight light ${this.state === '20' ? '' : 'outline'}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
-                            <button class="btn tight light ${this.state === '10' ? '' : 'outline'}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
-                            <button class="btn tight light ${this.state === '5' ? '' : 'outline'}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
-                            <button class="btn tight light outline mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn tight green ${this.state === '20' ? '' : 'outline'}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
+                            <button class="btn tight green ${this.state === '10' ? '' : 'outline'}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
+                            <button class="btn tight green ${this.state === '5' ? '' : 'outline'}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
+                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                ` : ''}
+                ${this.variant === Steps.scheduleDecision ? html`
+                    <div class="stack">
+                        <span class="zume-session-choice brand-light f-7"></span>
+                        <h2>${this.t.question_schedule_training}</h2>
+                        <div class="stack" data-fit-content>
+                            <button class="btn tight green ${this.state === 'yes' ? '' : 'outline'}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
+                            <button class="btn tight green ${this.state === 'no' ? '' : 'outline'}" data-value="no" @click=${this._handleSelection}>${this.t.no}</button>
+                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 ` : ''}
@@ -292,11 +401,10 @@ export class MakeTraining extends LitElement {
                         <span class="zume-time brand-light f-7"></span>
                         <h2>${this.t.question_how_often}</h2>
                         <div class="stack" data-fit-content>
-                            <button class="btn tight light ${this.state === 'weekly' ? '' : 'outline'}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
-                            <button class="btn tight light ${this.state === 'biweekly' ? '' : 'outline'}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
-                            <button class="btn tight light ${this.state === 'monthly' ? '' : 'outline'}" data-value="monthly" @click=${this._handleSelection}>${this.t.monthly}</button>
-                            <button class="btn tight light ${this.state === 'other' ? '' : 'outline'}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
-                            <button class="btn tight light outline mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn tight green ${this.state === 'weekly' ? '' : 'outline'}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
+                            <button class="btn tight green ${this.state === 'biweekly' ? '' : 'outline'}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
+                            <button class="btn tight green ${this.state === 'other' ? '' : 'outline'}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
+                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 ` : ''}
@@ -306,7 +414,11 @@ export class MakeTraining extends LitElement {
                         <h2>${this.t.question_when_will_you_start}</h2>
                         <div class="cluster justify-content-center gapy-0">
                             <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} >
-                            <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300"/>
+                            ${
+                                this.state.date ? html`
+                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300"/>
+                                ` : ''
+                            }
                         </div>
                         <div class="stack" data-fit-content>
                             <button class="btn light fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
@@ -324,36 +436,97 @@ export class MakeTraining extends LitElement {
                         </div>
                     </div>
                 ` : ''}
+                ${this.variant === Steps.name ? html`
+                    <div class="stack">
+                        <span class="zume-start-date brand-light f-7"></span>
+                        <h2>${this.t.question_what_is_the_groups_name}</h2>
+                        <input type="text" name="name" @change=${this._handleChange} value=${typeof this.state === 'string' ? this.state : ''} />
+                        <div class="stack" data-fit-content>
+                            <button class="btn light fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                ` : ''}
                 ${this.variant === Steps.review ? html`
                     <div class="stack">
                         <h2><span class="zume-overview brand-light"></span> ${this.t.review_training}</h2>
-                        <div class="make-training-wizard__progress-overview">
-                            <span>${progressText}</span>
-                            <progress-slider
-                                class="grow-1 mt--3"
-                                percentage=${this.selectedDays.length / howManySessions * 100}
-                                style="--primary-color: ${progressColor}"
-                            ></progress-slider>
+
+                        ${
+                            scheduleDecision === 'yes'
+                                ? html`
+                                    <div class="cluster">
+                                        <button
+                                            class="btn outline red small tight fit-content"
+                                            @click=${this._clearCalendar}
+                                        >
+                                            ${this.t.clear_calendar}
+                                        </button>
+                                        <button class="btn outline light small tight ms-auto" @click=${this.toggleView}>${this.scheduleView === 'calendar' ? 'list' : 'calendar'}</button>
+                                    </div>
+                                ` : ''
+                        }
+                        ${
+                            this.scheduleView === 'calendar' && scheduleDecision === 'yes'
+                                ? html`
+                                    <calendar-select
+                                        style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
+                                        startDate=${this.calendarStart}
+                                        endDate=${this.calendarEnd}
+                                        .selectedDays=${this.selectedDays.sort(this.sortDays)}
+                                        view=${this.calendarView}
+                                        showToday
+                                        @day-added=${this.addDate}
+                                        @day-removed=${this.removeDate}
+                                        @calendar-extended=${this.updateCalendarEnd}
+                                    ></calendar-select>
+                                ` : ''
+                        }
+                        ${
+                            this.scheduleView === 'list' && scheduleDecision === 'yes'
+                                ? html`
+                                    <calendar-list
+                                        .t=${this.t}
+                                        .selectedDays=${this.selectedDays}
+                                        @day-added=${this.addDate}
+                                        @day-removed=${this.removeDate}
+                                    ></calendar-list>
+                                ` : ''
+                        }
+                        <div class="make-training__save-area stack" ?data-absolute=${scheduleDecision === 'no'}>
+                            <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
+                            <div class="d-flex align-items-center gap-0 bg-white py-0">
+                                ${
+                                    scheduleDecision === 'yes' ? html`
+                                        <div class="grow-1">
+                                            <span>${progressText}</span>
+                                            <progress-slider
+                                                class="grow-1 mt--3"
+                                                percentage=${this.selectedDays.length / howManySessions * 100}
+                                                style="--primary-color: ${progressColor}"
+                                            ></progress-slider>
+                                        </div>
+                                    ` : html`<span class="grow-1"></span>`
+                                }
+                                <button
+                                    class="btn tight light ms-auto"
+                                    @click=${this._handleCreate}
+                                >
+                                    ${this.t.create}
+                                </button>
+                            </div>
                         </div>
-                        <calendar-select
-                            style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
-                            startDate=${this.calendarStart}
-                            endDate=${this.calendarEnd}
-                            .selectedDays=${this.selectedDays}
-                            view=${this.calendarView}
-                            @day-selected=${this.selectDate}
-                        ></calendar-select>
-                        <button class="btn tight fixed bottom right m-0" @click=${this._handleCreate}>${this.t.create}</button>
                     </div>
                 ` : ''}
                 ${this.variant !== Steps.planDecision ? html`
                     <review-steps
                         .t=${this.t}
+                        name=${this.stateManager.get(Steps.name)}
                         howManySessions=${this.stateManager.get(Steps.howManySessions)}
+                        scheduleDecision=${this.stateManager.get(Steps.scheduleDecision)}
                         howOften=${this.stateManager.get(Steps.howOften)}
                         time=${this.stateManager.get(Steps.startDate)?.time}
                         date=${this.stateManager.get(Steps.startDate)?.date}
                         whatLocation=${this.stateManager.get(Steps.location)}
+                        .display=${this.completedSteps}
                     ></review-steps>
                 ` : ''}
             </div>
