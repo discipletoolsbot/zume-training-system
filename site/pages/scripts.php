@@ -60,7 +60,7 @@ class Zume_Scripts extends Zume_Magic_Page
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css($allowed_css);
+        return zume_training_magic_url_base_allowed_css( $allowed_css );
     }
 
     public function header_style(){
@@ -73,28 +73,19 @@ class Zume_Scripts extends Zume_Magic_Page
                 width: 100%;
                 margin: 0 auto;
             }
-            .activity__header {
-                text-align: center;
-            }
             .activity__content {
                 max-width: 600px;
                 margin: 0 auto;
-            }
-            .activity__wrapper p {
-                margin-bottom: 1em;
-            }
-            .activity__wrapper ul  {
-                margin-bottom: 1em;
             }
         </style>
         <?php
     }
 
     public function body(){
-        if ( ! isset( $_GET['s'] ) || empty($_GET['s'] ) ) {
+        if ( ! isset( $_GET['s'] ) || empty( $_GET['s'] ) ) {
             ?>
                 <div class="activity__wrapper">
-                    <div class="activity__header">
+                    <div class="text-center">
                         <h1>Not a valid script request</h1><hr>
                     </div>
                     <div class="activity__content">
@@ -110,15 +101,16 @@ class Zume_Scripts extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        $script_id = sanitize_text_field( $_GET['s'] );
+        $script_id = sanitize_text_field( wp_unslash( $_GET['s'] ) );
 
-        $sql =  $wpdb->prepare(
+        $sql = $wpdb->prepare(
             "SELECT pm.meta_value
                 FROM zume_posts p
                 JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = %s
                 WHERE p.post_type = 'zume_scripts'
-                AND p.post_title = %s"
-            , $script_id, $language_code );
+                AND p.post_title = %s
+            ", $script_id, $language_code );
+        //phpcs:ignore
         $body = $wpdb->get_var( $sql );
 
         $training_items = zume_training_items_by_script();
@@ -126,7 +118,7 @@ class Zume_Scripts extends Zume_Magic_Page
         if ( empty( $body ) ) {
             ?>
                 <div class="activity__wrapper">
-                    <div class="activity__header">
+                    <div class="text-center">
                         <h1>Script not yet translated</h1><hr>
                     </div>
                     <div class="activity__content">
@@ -136,13 +128,13 @@ class Zume_Scripts extends Zume_Magic_Page
             return;
         } else {
             ?>
-            <div class="activity__wrapper">
-                <div class="activity__header">
-                    <h1><?php echo $training_items[$script_id]['title'] ?? '' ?></h1>
+            <div class="activity__wrapper content">
+                <div class="text-center">
+                    <h1><?php echo esc_html( $training_items[$script_id]['title'] ) ?? '' ?></h1>
                     <hr>
                 </div>
                 <div class="activity__content">
-                    <?php echo $body ?>
+                    <?php echo wp_kses( $body, 'post' ) ?>
                 </div>
             </div>
             <?php
