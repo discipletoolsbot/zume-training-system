@@ -1064,8 +1064,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <td colspan="2">
                     <?php echo $messages_english[$pid]['post_title'] ?? '' ?> <?php echo ( $messages_english[$pid]['post_parent'] ) ? '(follow up to ' . get_the_title( $messages_english[$pid]['post_parent'] ) . ')' : '' ?>
                     <br><a href="<?php echo site_url() . '/en/app/message/?m='.$pid ?>" target="_blank"><?php echo site_url() . '/en/app/message/?m='.$pid ?></a>
-                    <br><em>Marketing Logic: <?php echo $message['logic'] ?? '' ?></em>
-                    <br><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em>
+                    <br><span style="font-size:.7em;"><em>Marketing Logic: <?php echo $message['logic'] ?? '' ?></em></span>
+                    <br><span style="font-size:.7em;"><em>Stage: <?php echo ucwords( $message['stage'] ?? '' ) ?></em></span>
                 </td>
                 <td colspan="2">
                     <?php echo $messages_other_language[$pid]['post_title'] ?? '' ?>
