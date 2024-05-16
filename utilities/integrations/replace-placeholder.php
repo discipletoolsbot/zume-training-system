@@ -19,6 +19,7 @@ class Zume_Replace_Placeholder {
     public function replace_content( $content, $language_code, $user_id ) {
 
         $base_url = trailingslashit( site_url() ). $language_code . '/';
+        $mirror_url = zume_mirror_url();
         $wizard_root = 'wizard/';
 
         // simple placeholder replacements
@@ -63,6 +64,10 @@ class Zume_Replace_Placeholder {
             '[image_pace2]',
             '[image_pace3]',
             '[image_pace4]',
+
+            '[image_prayercycle]',
+            '[image_fourfields]',
+            '[image_genmap]',
         ];
         $replacement_string = [
             '<a class="button small" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>', // Get a Coach
@@ -101,10 +106,14 @@ class Zume_Replace_Placeholder {
             '<a class="button large" href="'.$base_url.'share">Share Zúme Page</a>',
             '<a class="" href="'.$base_url.'share">Share Zúme Page</a>',
 
-            '<img src="https://storage.googleapis.com/zume-file-mirror/images/pace1.png" alt="" width="640" height="100">', // image pace
-            '<img src="https://storage.googleapis.com/zume-file-mirror/images/pace2.png" alt="" width="640" height="100">',
-            '<img src="https://storage.googleapis.com/zume-file-mirror/images/pace3.png" alt="" width="640" height="100">',
-            '<img src="https://storage.googleapis.com/zume-file-mirror/images/pace4.png" alt="" width="640" height="100">',
+            '<img src="'.$mirror_url.'/images/pace1.png" alt="" width="640" height="100">', // image pace
+            '<img src="'.$mirror_url.'/images/pace2.png" alt="" width="640" height="100">',
+            '<img src="'.$mirror_url.'/images/pace3.png" alt="" width="640" height="100">',
+            '<img src="'.$mirror_url.'/images/pace4.png" alt="" width="640" height="100">',
+
+            '<img src="'.$mirror_url.$language_code.'/99.png" alt="prayer cycle">', // prayer cycle
+            '<img src="'.$mirror_url.$language_code.'/98.png" alt="four fields">', // four fields
+            '<img src="'.$mirror_url.$language_code.'/104.png" alt="genmap">', // genmap
         ];
 
         $content = str_replace( $place_holders, $replacement_string, $content );
