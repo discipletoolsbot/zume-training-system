@@ -111,7 +111,7 @@ class Zume_Activites extends Zume_Magic_Page
         echo $title;
     }
     public function content_body( $post_id ){
-        $content = get_post_meta( $post_id, 'content_'.$this->language_code, true );
+        $content = zume_replace_placeholder( get_post_meta( $post_id, 'content_'.$this->language_code, true ), $this->language_code );
         echo $content;
     }
 }
