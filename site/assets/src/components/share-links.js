@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html } from 'lit';
 
 export class ShareLinks extends LitElement {
     webShareSupported = window.navigator.share ? true : false
@@ -9,6 +9,7 @@ export class ShareLinks extends LitElement {
             url: { type: String },
             title: { type: String },
             t: { type: Object },
+            alwaysShow: { type: Boolean },
             shareFeedback: { attribute: false },
             copyFeedback: { attribute: false },
         };
@@ -62,7 +63,7 @@ export class ShareLinks extends LitElement {
               ${ this.noOptionsAvailable() ? html`
                   <div class="stack--2">
                     <p>${this.t.copy_and_share_text}</p>
-                    <p class=""><code>${this.url}</code></p>
+                    <p><code>${this.url}</code></p>
                   </div>
               ` : html`
                   <div :class="cluster gap--1">
@@ -76,12 +77,17 @@ export class ShareLinks extends LitElement {
                         </div>
                     ` : ''}
                     ${ this.clipboardSupported ? html`
-                        <div class="position-relative">
-                          <button class="btn light uppercase" data-theme="ghost" @click=${this.copyLink}>
-                            <!-- Link icon -->
-                            <span>${this.t.copy_link}</span>
-                          </button>
-                          <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length ? '' : 'empty'}>${this.copyFeedback}</p>
+                        <div class="stack--2">
+                          ${
+                            this.alwaysShow ? html`<p><code>${this.url}</code></p>` : ''
+                          }
+                          <div class="position-relative">
+                            <button class="btn light uppercase fit-content mx-auto" @click=${this.copyLink}>
+                              <!-- Link icon -->
+                              <span>${this.t.copy_link}</span>
+                            </button>
+                            <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length ? '' : 'empty'}>${this.copyFeedback}</p>
+                          </div>
                         </div>
                     ` : ''}
                   </div>

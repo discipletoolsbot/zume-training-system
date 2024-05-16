@@ -82,7 +82,7 @@ class Zume_Training_Share extends Zume_Magic_Page
             'copy_link' => __( 'Copy Link', 'zume' ),
             'copy_and_share_text' => __( 'Copy this link and send it to your friends.', 'zume' ),
             'share_feedback' => __( 'Thanks!', 'zume' ),
-            'copy_feedback' => __( 'Link copied', 'zume' ),
+            'copy_feedback' => __( 'Copied', 'zume' ),
         ];
     }
 

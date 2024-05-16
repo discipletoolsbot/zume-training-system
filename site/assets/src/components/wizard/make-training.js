@@ -119,8 +119,14 @@ export class MakeTraining extends LitElement {
         this._sendLoadWizardEvent(wizard)
     }
 
-    _sendLoadWizardEvent(wizard) {
-        this.dispatchEvent(new CustomEvent('wizard:load', { bubbles: true, detail: { wizard } }))
+    _sendLoadWizardEvent(wizard, queryParams = {}) {
+        const detail = {
+            wizard
+        }
+        if (Object.keys(queryParams).length > 0) {
+            detail.queryParams = queryParams
+        }
+        this.dispatchEvent(new CustomEvent('wizard:load', { bubbles: true, detail }))
     }
 
     _handleDone(event) {
@@ -291,8 +297,7 @@ export class MakeTraining extends LitElement {
         this.loading = true
         makeRequest( 'POST', 'plan', postData, 'zume_system/v1' )
             .then((data) => {
-                console.log(data)
-                this._handleFinish()
+                this._handleFinish(data.join_key)
             })
             .fail((error) => {
                 console.log(error)
@@ -302,8 +307,8 @@ export class MakeTraining extends LitElement {
             })
     }
 
-    _handleFinish() {
-        this._sendLoadWizardEvent(Wizards.inviteFriends)
+    _handleFinish(joinKey) {
+        this._sendLoadWizardEvent(Wizards.inviteFriends, { joinKey })
     }
 
     isIntensive() {

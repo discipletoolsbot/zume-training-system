@@ -89,7 +89,7 @@ export class Wizard extends LitElement {
         }
     }
 
-    loadWizard(wizard) {
+    loadWizard(wizard, queryParams = {}) {
         let wizardToLoad = wizard
         if (wizard === Wizards.makeAGroup) {
             if (jsObject.has_training_group) {
@@ -101,7 +101,7 @@ export class Wizard extends LitElement {
 
         if (Object.values(Wizards).includes(wizardToLoad)) {
             this.steps = this.wizard.getSteps( wizardToLoad )
-            this._gotoStep(0)
+            this._gotoStep(0, true, queryParams)
         } else {
             this._onSkip()
         }
@@ -382,7 +382,7 @@ export class Wizard extends LitElement {
         window.location.href = url.href
     }
 
-    _gotoStep(index, pushState = true) {
+    _gotoStep(index, pushState = true, queryParams = {}) {
         if ( this.steps.length === 0 ) {
             return
         }
@@ -394,6 +394,12 @@ export class Wizard extends LitElement {
             const url = new URL(window.location.href)
             const urlParts = url.pathname.split('/')
             const slug = urlParts[urlParts.length - 1]
+
+            if (Object.keys(queryParams).length > 0) {
+                Object.entries(queryParams).forEach(([key, value]) => {
+                    url.searchParams.set(key, value)
+                })
+            }
 
             let newUrl = ''
             if ( Object.values(Wizards).includes(slug) ) { // first load of the wizard
@@ -453,10 +459,9 @@ export class Wizard extends LitElement {
     }
 
     _handleLoadWizard(event) {
-        const { wizard } = event.detail
+        const { wizard, queryParams } = event.detail
 
-        this.loadWizard(wizard)
-
+        this.loadWizard(wizard, queryParams)
     }
 
     _handleLoading(event) {
