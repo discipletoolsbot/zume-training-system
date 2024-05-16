@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-01 13:18-0600\n"
+"POT-Creation-Date: 2024-05-08 14:13-0600\n"
 "PO-Revision-Date: 2024-04-15 11:31-0600\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
@@ -185,7 +185,8 @@ msgstr "Odnosno upravljanje - Seznam 100"
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "Orodje, ki vam pomaga biti dober skrbnik odnosov."
 
-#: globals.php:1986 site/course/course-content.php:477
+#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: site/activities/list-of-100.php:96 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
@@ -508,10 +509,13 @@ msgstr ""
 "Ustvarite in delite načrt, kako boste v naslednjih treh mesecih izvajali "
 "orodja Zúme."
 
-#: globals.php:2205 globals.php:2207 site/course/course-content.php:2395
-#: site/course/course-content.php:2539 site/course/course-content.php:2548
-#: site/course/course-content.php:2573 site/course/course-content.php:2775
-#: site/course/course-content.php:5290 site/course/course-content.php:5310
+#: globals.php:2205 globals.php:2207
+#: site/activities/coaching-checklist-printable.php:101
+#: site/activities/coaching-checklist.php:50
+#: site/course/course-content.php:2395 site/course/course-content.php:2539
+#: site/course/course-content.php:2548 site/course/course-content.php:2573
+#: site/course/course-content.php:2775 site/course/course-content.php:5290
+#: site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "Kontrolni seznam za coaching"
 
@@ -555,7 +559,7 @@ msgstr ""
 "3/3. Prav tako sledi formatu 3/3 in je močan način za ocenjevanje duhovnega "
 "zdravja Božjega dela na vašem območju."
 
-#: globals.php:2229
+#: globals.php:2229 site/dashboard/dashboard.php:277
 msgid "Peer Mentoring"
 msgstr "Vzajemno mentorstvo"
 
@@ -613,33 +617,105 @@ msgstr "Zapri"
 msgid "No Results"
 msgstr "Ni rezultatov"
 
-#: site/activities/three-month-plan-html.php:26
-#: site/activities/three-month-plan-interactive.php:47
-#: site/dashboard/dashboard.php:196
-msgid "3-Month Plan"
-msgstr "3-mesečni načrt"
-
-#: site/activities/three-month-plan-html.php:27
-msgid "Switch to Interactive Version"
+#: site/activities/coaching-checklist-printable.php:103
+msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:48
+#: site/activities/coaching-checklist-printable.php:104
+msgid ""
+"2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple."
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:112
+#, fuzzy
+msgid "Training Tools/Concepts"
+msgstr "Cikel usposabljanja"
+
+#: site/activities/coaching-checklist-printable.php:127
+#, fuzzy
+msgid "Ask yourself, have you"
+msgstr "Vprašajte se"
+
+#: site/activities/coaching-checklist-printable.php:133
+#: site/dashboard/dashboard.php:221
+msgid "Heard"
+msgstr "Slišano"
+
+#: site/activities/coaching-checklist-printable.php:136
+#: site/dashboard/dashboard.php:223
+msgid "Obeyed"
+msgstr "Obeed"
+
+#: site/activities/coaching-checklist-printable.php:139
+#: site/dashboard/dashboard.php:225
+msgid "Shared"
+msgstr "Deljeno"
+
+#: site/activities/coaching-checklist-printable.php:142
+#: site/dashboard/dashboard.php:227
+msgid "Trained"
+msgstr "Usposobljeni"
+
+#: site/activities/coaching-checklist-printable.php:147
+msgid "Ask yourself, what should I do for my disciple"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:153
+msgid "Model"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:156
+msgid "Assist"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:159
+#: site/course/course-content.php:1813 site/course/course-content.php:4742
+#: site/pages/home.php:202
+msgid "Watch"
+msgstr "Spremljaj"
+
+#: site/activities/coaching-checklist-printable.php:162
+msgid "Leave"
+msgstr ""
+
+#: site/activities/coaching-checklist.php:51 site/activities/list-of-100.php:97
+#: site/activities/three-month-plan.php:67
 msgid "Switch to Printable Version"
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:61
-#: site/course/presenter.php:132
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:109
+#, fuzzy
+msgid "Disciple"
+msgstr "Ustvarjanje učencev"
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:110
+msgid "Unbeliever"
+msgstr ""
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:111
+msgid "Unknown"
+msgstr ""
+
+#: site/activities/three-month-plan-printable.php:46
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:196
+msgid "3-Month Plan"
+msgstr "3-mesečni načrt"
+
+#: site/activities/three-month-plan.php:80 site/course/presenter.php:132
 msgid "Scripts are off"
 msgstr "Skripte so izklopljene"
 
-#: site/activities/three-month-plan-interactive.php:62
+#: site/activities/three-month-plan.php:81
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:73
-#: site/dashboard/dashboard.php:173 site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:173
+#: site/profile/profile.php:153
 msgid "Save"
 msgstr "Shrani"
 
@@ -2032,11 +2108,6 @@ msgstr ""
 "Razmislite o Božijh zapovedih, ki jih že poznate. Kako »zvesto« jih ubogate "
 "in delite?"
 
-#: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:202
-msgid "Watch"
-msgstr "Spremljaj"
-
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
 "In the following video, you’ll be coached through an interactive 3/3 Group "
@@ -2429,7 +2500,7 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/pages/messages.php:251 site/parts/footer.php:12
 #: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
@@ -3686,7 +3757,8 @@ msgstr ""
 "orodij za deljenje."
 
 #: site/dashboard/dashboard.php:197
-msgid "Create a Plan"
+#, fuzzy
+msgid "Create Your Plan"
 msgstr "Ustvari načrt"
 
 #: site/dashboard/dashboard.php:199
@@ -3797,21 +3869,14 @@ msgstr "tečaj za 10 seans"
 msgid "20 Session Course"
 msgstr "tečaj za 20 seans"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
-msgid "3 Day Intensive Course"
+#: site/dashboard/dashboard.php:220
+#, fuzzy
+msgid "Intensive Course"
 msgstr "3-dnevni intenzivni tečaj"
-
-#: site/dashboard/dashboard.php:221
-msgid "Heard"
-msgstr "Slišano"
 
 #: site/dashboard/dashboard.php:222
 msgid "Have I heard about this tool or concept?"
 msgstr "Ali sem že slišal za to orodje ali koncept?"
-
-#: site/dashboard/dashboard.php:223
-msgid "Obeyed"
-msgstr "Obeed"
 
 #: site/dashboard/dashboard.php:224
 msgid ""
@@ -3819,19 +3884,11 @@ msgid ""
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
-msgid "Shared"
-msgstr "Deljeno"
-
 #: site/dashboard/dashboard.php:226
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
-
-#: site/dashboard/dashboard.php:227
-msgid "Trained"
-msgstr "Usposobljeni"
 
 #: site/dashboard/dashboard.php:228
 msgid ""
@@ -4015,7 +4072,91 @@ msgstr ""
 msgid "When do you plan to start?"
 msgstr "Kaj se naučite o Bogu?"
 
+#: site/dashboard/dashboard.php:270 site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/dashboard.php:271 site/pages/privacy-policy.php:111
+msgid ""
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
+msgstr ""
+
+#: site/dashboard/dashboard.php:272 site/pages/privacy-policy.php:114
+msgid ""
+"A user’s email address is required to establish an account and is used for "
+"transactional communication as part of site operation."
+msgstr ""
+
+#: site/dashboard/dashboard.php:273 site/pages/privacy-policy.php:117
+msgid ""
+"A user’s phone number is collected and stored for supporting the free "
+"coaching service."
+msgstr ""
+
+#: site/dashboard/dashboard.php:274 site/pages/privacy-policy.php:120
+msgid ""
+"A user’s city is requested to personalize site resources and communication, "
+"and to connect users to appropriate coaching and customer service resources."
+msgstr ""
+
 #: site/dashboard/dashboard.php:275
+#, fuzzy
+msgid "Zúme Community"
+msgstr "Pridružite se skupnosti"
+
+#: site/dashboard/dashboard.php:276
+#, fuzzy
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+"Zúme je skupnost prakse za tiste, ki želijo videti gibanja, ki ustvarjajo "
+"učence. Naša vizija je nasičiti svet z množičnimi učenci v naši generaciji. "
+"Oglejte si, kako drugi izvajajo usposabljanje Zúme v svojih življenjih in "
+"skupnostih."
+
+#: site/dashboard/dashboard.php:278
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+
+#: site/dashboard/dashboard.php:279
+msgid "Encouragement"
+msgstr ""
+
+#: site/dashboard/dashboard.php:280
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+
+#: site/dashboard/dashboard.php:281
+#, fuzzy
+msgid "Free Tools"
+msgstr "Moja orodja"
+
+#: site/dashboard/dashboard.php:282
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+
+#: site/dashboard/dashboard.php:283
+msgid "Join for Free"
+msgstr ""
+
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4024,12 +4165,12 @@ msgstr ""
 "Svojo zgodbo [pričevanje] in Božjo zgodbo [evangelij] bom delil s temi "
 "osebami:"
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:290
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Te osebe bom povabil v skupino odgovornosti:"
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:291
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4037,11 +4178,11 @@ msgstr ""
 "Te ljudi bom izzval, da začnejo svojo skupino odgovornosti in jih naučil, "
 "kako se to naredi:"
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:292
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Te ljudi bom povabil v skupino 3/3:"
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4049,23 +4190,23 @@ msgstr ""
 "Te ljudi bom izzval, da začnejo svojo skupino 3/3 in jih naučil, kako se to "
 "naredi:"
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr "Te ljudi bom povabil v skupino 3/3 upanja ali odkritja (glej dodatek):"
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Te ljudi bom povabil na molitvene sprehode:"
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:296
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Na molitveni sprehod bom šel enkrat na [dni / tednov / mesecev]"
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4074,29 +4215,29 @@ msgstr ""
 "Te ljudi bom naučil deliti svojo in Božjo zgodbo in sestaviti svoj seznam "
 "stotih:"
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "Te ljudi bom občasno izzval, da uporabijo molitveni cikel:"
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:299
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "Molitveni cikel bom uporabil vsakih [dni / tednov / mesecev]"
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "Te ljudi bom povabil v vodstveno celico, ki jo bom jaz vodil:"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Te ljudi bom vzpodbudil k uporabi tečaja Zúme:"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Obveznosti uporabnikov"
@@ -4664,7 +4805,7 @@ msgstr ""
 "z navadnimi pripomočki gromozanski vpliv na Božje kraljestvo. Cilj Zúme je, "
 "da opremimo in omogočimo navadne vernike, da dosežejo cel svet."
 
-#: site/pages/about.php:95 site/pages/messages.php:232
+#: site/pages/about.php:95 site/pages/messages.php:247
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4879,7 +5020,7 @@ msgstr ""
 msgid "What's required"
 msgstr "Kaj je potrebno"
 
-#: site/pages/about.php:219 site/pages/training.php:260
+#: site/pages/about.php:219
 msgid "Needed for the training:"
 msgstr "Za trening je potrebno:"
 
@@ -4902,7 +5043,7 @@ msgstr ""
 "Oseba, ki bo (lahko tudi vi) določila čas in lokacijo srečanja, vodila "
 "nadaljnjo razpravo in spodbujala k ukrepanju."
 
-#: site/pages/about.php:232 site/pages/training.php:266
+#: site/pages/about.php:232
 msgid "NOT needed for the training:"
 msgstr "NI potrebno za usposabljanje:"
 
@@ -4914,7 +5055,7 @@ msgstr ""
 "Več znanja ali izkušenj kot preostali člani skupine ni potrebnih! Če lahko "
 "kliknete naslednji, lahko vodite usposabljanje Zúme."
 
-#: site/pages/about.php:235 site/pages/training.php:269
+#: site/pages/about.php:235
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
@@ -4966,17 +5107,18 @@ msgstr "Uporabite kodo na zaslonu ali v knjigi"
 msgid "Connect"
 msgstr "Poveži"
 
-#: site/pages/donate.php:86 site/pages/donate.php:100
-#: site/pages/messages.php:236 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/messages.php:251
+#: site/parts/footer.php:42
 msgid "Donate"
 msgstr "Darujte"
 
 #: site/pages/donate.php:95
-msgid "We are crowdfunded, we love that you want to be part of us."
+msgid ""
+"We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
 
-#: site/pages/donate.php:96
-msgid "If you want to help in specific ways…"
+#: site/pages/donate.php:103
+msgid "View All Giving Opportunities"
 msgstr ""
 
 #: site/pages/faq.php:88
@@ -5140,49 +5282,62 @@ msgstr "Povabilo sprejeto"
 msgid "Use the code your friend sent you."
 msgstr "Uporabite kodo, ki vam jo je poslal prijatelj."
 
-#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:116
+#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 msgid "Get A Coach"
 msgstr "Najdi učitelja"
 
-#: site/pages/get-a-coach.php:98
-msgid "Coaches"
-msgstr "Trenerji"
-
-#: site/pages/get-a-coach.php:99
+#: site/pages/get-a-coach.php:89
 msgid ""
-"Our network of volunteer coaches are people like you, people who are "
-"passionate about loving God, loving outhers, and obeying the Greate "
-"Commision."
+"Every athletic sport, especially at higher levels, uses coaching. Even "
+"olympic athletes have coaches, and often more than one. Disciple making can "
+"equally benefit from coaching by those who have more experience."
+msgstr ""
+
+#: site/pages/get-a-coach.php:92
+msgid "No Cost"
+msgstr ""
+
+#: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
+#: site/pages/training.php:134 site/pages/training.php:141
+#: site/pages/training.php:142
+#, fuzzy
+msgid "Join a training group"
+msgstr "Pridružite se usposabljanju"
+
+#: site/pages/get-a-coach.php:95
+#, fuzzy
+msgid ""
+"Our network of volunteer coaches are not paid, but are driven rather by a "
+"passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
 "Našo mrežo učiteljev prostovoljcev sestavljajo ljudje kot vi, ki ljubijo "
 "Boga in druge ter ubogajo veliko pooblastilo."
 
-#: site/pages/get-a-coach.php:100
+#: site/pages/get-a-coach.php:99
 #, fuzzy
-msgid ""
-"A coach is someone who will come alongside you as you implement the Zúme "
-"tools and training."
-msgstr ""
-"Učitelj je nekdo, ki bo hodil ob vas, ko predelujete pripomočke in tečaj "
-"Zúme."
-
-#: site/pages/get-a-coach.php:104
-msgid "It's Free"
-msgstr "Brezplačno"
-
-#: site/pages/get-a-coach.php:105
-msgid "Coaching is free. You can opt out at any time."
-msgstr "Coaching je brezplačen. Kadar koli se lahko odjavite."
-
-#: site/pages/get-a-coach.php:108
-msgid "Local"
+msgid "Localized"
 msgstr "Lokalni"
+
+#: site/pages/get-a-coach.php:102
+msgid ""
+"Our connection team attempts to connect you with a coach who speaks your "
+"language and is geographically as close as possible."
+msgstr ""
+
+#: site/pages/get-a-coach.php:106
+msgid "Experienced"
+msgstr ""
+
+#: site/pages/get-a-coach.php:107 site/pages/training.php:150
+msgid "Join a training"
+msgstr "Pridružite se usposabljanju"
 
 #: site/pages/get-a-coach.php:109
 msgid ""
-"On submitting this request, we will do our best to connect you with a coach "
-"near you"
-msgstr "Poskusili vas bomo povezati z učiteljem blizu vas."
+"All our coaches are trained and practicing the concepts and tools found in "
+"Zûme. All our coaches can help you over barriers and make steps in your "
+"journey."
+msgstr ""
 
 #: site/pages/home.php:85
 msgid "45+"
@@ -5391,27 +5546,27 @@ msgstr "Začnite"
 msgid "Kitchen Sink"
 msgstr "Kuhinjsko korito"
 
-#: site/pages/messages.php:221
+#: site/pages/messages.php:236
 #, fuzzy
 msgid "Friend"
 msgstr "Naslov uporabnik"
 
-#: site/pages/messages.php:233
+#: site/pages/messages.php:248
 #, fuzzy
 msgid "Explore the Vision"
 msgstr "Oglej si tečaj"
 
-#: site/pages/messages.php:234
+#: site/pages/messages.php:249
 #, fuzzy
 msgid "Zúme Training Dashboard"
 msgstr "Orodja tečaja Zúme"
 
-#: site/pages/messages.php:235
+#: site/pages/messages.php:250
 #, fuzzy
 msgid "Update Your Communication Preferences"
 msgstr "Kakšne so vaše želje glede stikov?"
 
-#: site/pages/messages.php:236
+#: site/pages/messages.php:251
 #, fuzzy
 msgid "Join the Zúme Community"
 msgstr "Pridružite se skupnosti"
@@ -5483,9 +5638,15 @@ msgstr ""
 "zbiramo, uporabljamo, varujemo in sicer delamo z vašimi osebno določljivimi "
 "podatki v skladu z našo spletno stranjo."
 
-#: site/pages/privacy-policy.php:91
+#: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
 msgstr "Kakšna dovoljenja zahteva vpis v družabna omrežja?"
+
+#: site/pages/privacy-policy.php:91
+msgid ""
+"The profile elements below change depending on if Facebook or Google sign on "
+"is used."
+msgstr ""
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -5504,38 +5665,31 @@ msgid ""
 "What personal information do we collect from the people through our website?"
 msgstr "Katere osebne podatke zbiramo od obiskovalcev naše spletne strani?"
 
-#: site/pages/privacy-policy.php:107
-msgid "Information in the Basic Social Profile (if used) and email."
-msgstr ""
-"Podatke v osnovnem družabnem profilu (če je v rabi) in e-poštni naslov."
-
-#: site/pages/privacy-policy.php:110
-msgid "Session and course activity."
-msgstr "Ure in aktivnost v tečaju."
-
-#: site/pages/privacy-policy.php:113
-msgid ""
-"General location telemetry, so we know in what countries our training is "
-"being used."
-msgstr "Splošna geolokacija, da vemo, v katerih državah se naš tečaj izvaja."
-
-#: site/pages/privacy-policy.php:120
+#: site/pages/privacy-policy.php:127
 msgid "When do we collect information?"
 msgstr "Kdaj zbiramo podatke?"
 
-#: site/pages/privacy-policy.php:123
+#: site/pages/privacy-policy.php:130
 msgid "We collect your information at login."
 msgstr "Vaše podatke zberemo ob prijavi."
 
-#: site/pages/privacy-policy.php:126
-msgid "We also track your progress through the training course."
+#: site/pages/privacy-policy.php:133
+#, fuzzy
+msgid ""
+"We also track your progress through the training course and through site "
+"usage."
 msgstr "Prav tako sledimo vašemu napredku na tečaju."
 
-#: site/pages/privacy-policy.php:133
+#: site/pages/privacy-policy.php:136
+msgid ""
+"We request neccissary information through various sign up and request forms."
+msgstr ""
+
+#: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
 msgstr "Kako uporabljamo vaše podatke?"
 
-#: site/pages/privacy-policy.php:136
+#: site/pages/privacy-policy.php:146
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
@@ -5543,7 +5697,7 @@ msgstr ""
 "Z vašimi podatki ustvarimo uporabniški račun v sistemu Zúme, ki temelji na "
 "vašem e-poštnem računu."
 
-#: site/pages/privacy-policy.php:139
+#: site/pages/privacy-policy.php:149
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
@@ -5551,7 +5705,7 @@ msgstr ""
 "Po e-pošti vam bomo poslali osnovna transakcijska sporočila kot zahteve za "
 "ponastavitev gesla in druga sistemska obvestila."
 
-#: site/pages/privacy-policy.php:142
+#: site/pages/privacy-policy.php:152
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
@@ -5559,11 +5713,11 @@ msgstr ""
 "Odvisno od vašega napredka na tečaju vam še občasno pošljemo opomnike in "
 "besede vzpodbude."
 
-#: site/pages/privacy-policy.php:149
+#: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
 msgstr "Kako varujemo vaše podatke?"
 
-#: site/pages/privacy-policy.php:151
+#: site/pages/privacy-policy.php:161
 msgid ""
 "While we use encryption to protect sensitive information transmitted online, "
 "we also protect your information offline. Only team members who need the "
@@ -5575,7 +5729,7 @@ msgstr ""
 "vaše podatke potrebujejo za specifično nalogo (npr. spletni administrator "
 "ali podpornik strankam)."
 
-#: site/pages/privacy-policy.php:154
+#: site/pages/privacy-policy.php:164
 msgid ""
 "Your personal information is contained behind secured networks and is only "
 "accessible by a limited number of persons who have special access rights to "
@@ -5588,7 +5742,7 @@ msgstr ""
 "s temi podatki ravnati zaupno. Vsi občutljivi/bančni podatki so še dodatno "
 "enkriptirani s tehnologijo Secure Socket Layer (SSL)."
 
-#: site/pages/privacy-policy.php:157
+#: site/pages/privacy-policy.php:167
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
@@ -5596,31 +5750,27 @@ msgstr ""
 "Ko uporabnik pošlje ali dostopa do svojih podatkov, aktiviramo raznovrstne "
 "varnostne ukrepe, da zagotovimo varnost teh podatkov."
 
-#: site/pages/privacy-policy.php:163
+#: site/pages/privacy-policy.php:173
 msgid "Do we use \"cookies\"?"
 msgstr "Uporabljamo piškotke?"
 
-#: site/pages/privacy-policy.php:165
+#: site/pages/privacy-policy.php:175
+#, fuzzy
 msgid ""
-"Any use of Cookies - or of other tracking tools - by this Application or by "
-"the owners of third party services used by this Application, unless stated "
-"otherwise, serves to identify Users and remember their preferences, for the "
-"sole purpose of providing the service required by the User."
+"Any use of Cookies - or of other tracking tools - unless stated otherwise, "
+"serves to identify Users and remember their preferences, for the sole "
+"purpose of providing the service required by the User."
 msgstr ""
 "Kakršnakoli uporaba piškotkov – ali drugih sledilnih pripomočkov – te "
 "aplikacije, njenih lastnikov ali tretjih oseb, ki uporabljajo to aplikacijo "
 "služi – če ni navedeno drugače – identifikaciji uporabnikov in pomnjenju "
 "njihovih preferenc, da s tem omogoči storitev, ki jo uporabnik zahteva."
 
-#: site/pages/privacy-policy.php:168
-msgid "Personal Data collected: name, email."
-msgstr "Zbrani osebni podatki: ime, e-poštni naslov."
-
-#: site/pages/privacy-policy.php:174
+#: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
 msgstr "Vaš dostop do podatkov in nadzor nad njimi."
 
-#: site/pages/privacy-policy.php:176
+#: site/pages/privacy-policy.php:183
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
@@ -5628,27 +5778,27 @@ msgstr ""
 "Od naših kontaktnih sporočil se lahko kadarkoli odjavite. To storite tako, "
 "da nam pišete na kontaktni e-poštni naslov:"
 
-#: site/pages/privacy-policy.php:179
+#: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
 msgstr "Poglejte, katere podatke smo zbrali iz vaših aktivnosti z nami."
 
-#: site/pages/privacy-policy.php:183
+#: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
 msgstr "Spremenite/popravite moje podatke."
 
-#: site/pages/privacy-policy.php:186
+#: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
 msgstr "Izbrišite moje podatke."
 
-#: site/pages/privacy-policy.php:189
+#: site/pages/privacy-policy.php:196
 msgid "Express any concern you have about our use of your data."
 msgstr "Skrbi me uporaba mojih osebnih podatkov."
 
-#: site/pages/privacy-policy.php:196
+#: site/pages/privacy-policy.php:203
 msgid "Updates"
 msgstr "Posodobitve"
 
-#: site/pages/privacy-policy.php:198
+#: site/pages/privacy-policy.php:205
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
@@ -5715,18 +5865,15 @@ msgid "Get started with Zúme Training"
 msgstr "Dobrodošli nazaj na tečaju Zúme!"
 
 #: site/pages/training.php:133
-msgid "Create your own training"
+#, fuzzy
+msgid "Create your own training group"
 msgstr "Naredite svoj seznam stotih"
 
-#: site/pages/training.php:134 site/pages/training.php:141
-#: site/pages/training.php:142 site/pages/training.php:150
-msgid "Join a training"
-msgstr "Pridružite se usposabljanju"
-
 #: site/pages/training.php:136
+#, fuzzy
 msgid ""
-"Gather a few friends or go through the training with an existing small "
-"group. Create your own training plan and track your progress."
+"Gather a few friends or go through the course with an existing small group. "
+"Create your own training group and track your progress."
 msgstr ""
 "Zberite nekaj prijateljev ali se udeležite usposabljanja z obstoječo majhno "
 "skupino. Ustvarite svoj načrt vadbe in spremljajte svoj napredek."
@@ -5737,9 +5884,10 @@ msgid "Create"
 msgstr "Ustvari načrt"
 
 #: site/pages/training.php:144
+#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
-"trainings lead by an experienced Zúme coach."
+"training groups lead by an experienced Zúme coach."
 msgstr ""
 "Če trenutno ne morete zbrati skupine, se pridružite enemu od naših spletnih "
 "usposabljanj pod vodstvom izkušenega trenerja Zúme."
@@ -5751,8 +5899,8 @@ msgstr "Zahtevajte trenerja"
 #: site/pages/training.php:152
 #, fuzzy
 msgid ""
-"We can connect you with free Zúme coach who is committed to helping you get "
-"the training and become a fruitful disciple."
+"We can connect you with free Zúme coach who is committed to helping you "
+"understand the training and become a fruitful disciple."
 msgstr ""
 "Povezujemo vas z brezplačnim trenerjem Zúme, ki vam želi pomagati pri "
 "usposabljanju in postati ploden učenec."
@@ -5811,10 +5959,11 @@ msgid "10 Sessions"
 msgstr "10 sej"
 
 #: site/pages/training.php:228
+#, fuzzy
 msgid ""
-"The original Zúme training format is 10 two hour sessions. Each session "
+"The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
-"sessions. This format is often ran once a week for 10 weeks."
+"sessions. This format is often run once a week for 10 weeks."
 msgstr ""
 "Izvirna oblika usposabljanja Zúme je 10 dvournih srečanj. Vsaka seja se "
 "konča s praktičnimi koraki poslušnosti in načini deljenja med sejami. Ta "
@@ -5825,17 +5974,19 @@ msgid "20 Sessions"
 msgstr "20 sej"
 
 #: site/pages/training.php:240
+#, fuzzy
 msgid ""
-"For a longer slower pace training with more opportunity for gaining "
-"competence in the concepts and skills, the 20 session format has more "
-"practice opportunities for each of the concepts and tools."
+"For a longer slower pace course with more opportunity for gaining competence "
+"in the concepts and skills, the 20 session format has more practice "
+"opportunities for each of the concepts and tools."
 msgstr ""
 "Za daljše usposabljanje v počasnejšem tempu z več možnostmi za pridobivanje "
 "znanja o konceptih in spretnostih je na voljo oblika 20 srečanj z več "
 "možnostmi za vadbo za vsak koncept in orodje."
 
 #: site/pages/training.php:245
-msgid "3 Day Intensive"
+#, fuzzy
+msgid "Intensive"
 msgstr "3-dnevni intenzivni program"
 
 #: site/pages/training.php:252
@@ -5847,6 +5998,29 @@ msgstr ""
 "Zúme je mogoče strniti v 5 poldnevnih sklopov po 4 ure. To je mogoče storiti "
 "s petkovim večerom (4 ure), celodnevnim sobotnim (8 ur) in celodnevnim "
 "nedeljskim (8 ur)."
+
+#: site/pages/training.php:260
+#, fuzzy
+msgid "Needed for the course:"
+msgstr "Za trening je potrebno:"
+
+#: site/pages/training.php:266
+#, fuzzy
+msgid "NOT needed for the course:"
+msgstr "NI potrebno za usposabljanje:"
+
+#: site/pages/training.php:269
+#, fuzzy
+msgid ""
+"Special permission to lead a course is not needed! Zúme is self-facilitated, "
+"self-initiated, and you can start today."
+msgstr ""
+"Posebno dovoljenje za vodenje usposabljanja ni potrebno! Zúme se vodi "
+"samoiniciativno in na lastno pobudo, začnete pa lahko že danes."
+
+#: site/parts/footer.php:31
+msgid "3 Day Intensive Course"
+msgstr "3-dnevni intenzivni tečaj"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 msgid "Check-in"
@@ -6082,6 +6256,44 @@ msgstr "https://github.com/ZumeProject/zume-training-system"
 #. Description of the plugin/theme
 msgid "Zume Training System"
 msgstr "Sistem za usposabljanje Zume"
+
+#~ msgid "Coaches"
+#~ msgstr "Trenerji"
+
+#, fuzzy
+#~ msgid ""
+#~ "A coach is someone who will come alongside you as you implement the Zúme "
+#~ "tools and training."
+#~ msgstr ""
+#~ "Učitelj je nekdo, ki bo hodil ob vas, ko predelujete pripomočke in tečaj "
+#~ "Zúme."
+
+#~ msgid "It's Free"
+#~ msgstr "Brezplačno"
+
+#~ msgid "Coaching is free. You can opt out at any time."
+#~ msgstr "Coaching je brezplačen. Kadar koli se lahko odjavite."
+
+#~ msgid ""
+#~ "On submitting this request, we will do our best to connect you with a "
+#~ "coach near you"
+#~ msgstr "Poskusili vas bomo povezati z učiteljem blizu vas."
+
+#~ msgid "Information in the Basic Social Profile (if used) and email."
+#~ msgstr ""
+#~ "Podatke v osnovnem družabnem profilu (če je v rabi) in e-poštni naslov."
+
+#~ msgid "Session and course activity."
+#~ msgstr "Ure in aktivnost v tečaju."
+
+#~ msgid ""
+#~ "General location telemetry, so we know in what countries our training is "
+#~ "being used."
+#~ msgstr ""
+#~ "Splošna geolokacija, da vemo, v katerih državah se naš tečaj izvaja."
+
+#~ msgid "Personal Data collected: name, email."
+#~ msgstr "Zbrani osebni podatki: ime, e-poštni naslov."
 
 #~ msgid "Have I obeyed this tool or concept?"
 #~ msgstr "Ali sem ubogal to orodje ali koncept?"
@@ -6407,17 +6619,6 @@ msgstr "Sistem za usposabljanje Zume"
 #~ msgstr ""
 #~ "Če ga še nimate, je to eden najboljših korakov, ki jih lahko naredite pri "
 #~ "rasti kot učenec, ki se množi."
-
-#~ msgid ""
-#~ "Zúme is a community of practice for those who want to see disciple making "
-#~ "movements. Our vision is to saturate the world with multiplying disciples "
-#~ "in our generation. Check out how others are implementing Zúme Training in "
-#~ "their lives and communities."
-#~ msgstr ""
-#~ "Zúme je skupnost prakse za tiste, ki želijo videti gibanja, ki ustvarjajo "
-#~ "učence. Naša vizija je nasičiti svet z množičnimi učenci v naši "
-#~ "generaciji. Oglejte si, kako drugi izvajajo usposabljanje Zúme v svojih "
-#~ "življenjih in skupnostih."
 
 #~ msgid "CONGRATULATIONS"
 #~ msgstr "ČESTITKE"
