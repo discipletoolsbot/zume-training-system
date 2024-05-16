@@ -239,7 +239,7 @@ class Zume_Messages extends Zume_Magic_Page
                 }
                 ?>
                 <div class="zmail-body">
-                    <?php echo $message['body'] ?>
+                    <?php echo zume_replace_placeholder( $message['body'] ) ?>
                 </div>
                 <div class="zmail-footer-divider"></div>
                 <div class="zmail-footer">
