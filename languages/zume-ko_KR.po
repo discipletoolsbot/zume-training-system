@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-01 13:18-0600\n"
+"POT-Creation-Date: 2024-05-08 14:13-0600\n"
 "PO-Revision-Date: 2024-04-10 19:34+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Korean <https://translate.disciple.tools/projects/zume-"
@@ -188,7 +188,8 @@ msgstr "관계 관리 – 100인 명단"
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "당신의 인맥을 잘 관리할 수 있도록 설계된 방법입니다."
 
-#: globals.php:1986 site/course/course-content.php:477
+#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: site/activities/list-of-100.php:96 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
@@ -509,10 +510,13 @@ msgid ""
 msgstr ""
 "향후 3 개월 동안 줌 도구를 구현하는 방법에 대한 계획을 작성하고 공유하십시오."
 
-#: globals.php:2205 globals.php:2207 site/course/course-content.php:2395
-#: site/course/course-content.php:2539 site/course/course-content.php:2548
-#: site/course/course-content.php:2573 site/course/course-content.php:2775
-#: site/course/course-content.php:5290 site/course/course-content.php:5310
+#: globals.php:2205 globals.php:2207
+#: site/activities/coaching-checklist-printable.php:101
+#: site/activities/coaching-checklist.php:50
+#: site/course/course-content.php:2395 site/course/course-content.php:2539
+#: site/course/course-content.php:2548 site/course/course-content.php:2573
+#: site/course/course-content.php:2775 site/course/course-content.php:5290
+#: site/course/course-content.php:5310
 msgid "Coaching Checklist"
 msgstr "코칭 체크리스트"
 
@@ -556,7 +560,7 @@ msgstr ""
 "을 따르며 해당 지역의 하나님의 일의 영적 건강을 평가해볼 수 있는 훌륭한 방법"
 "입니다.\n"
 
-#: globals.php:2229
+#: globals.php:2229 site/dashboard/dashboard.php:277
 msgid "Peer Mentoring"
 msgstr "동료 멘토링"
 
@@ -613,35 +617,107 @@ msgstr "닫기"
 msgid "No Results"
 msgstr ""
 
-#: site/activities/three-month-plan-html.php:26
-#: site/activities/three-month-plan-interactive.php:47
-#: site/dashboard/dashboard.php:196
+#: site/activities/coaching-checklist-printable.php:103
+msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:104
+msgid ""
+"2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple."
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:112
+#, fuzzy
+msgid "Training Tools/Concepts"
+msgstr "훈련 사이클"
+
+#: site/activities/coaching-checklist-printable.php:127
+#, fuzzy
+msgid "Ask yourself, have you"
+msgstr "자신에게 물어보기"
+
+#: site/activities/coaching-checklist-printable.php:133
+#: site/dashboard/dashboard.php:221
+msgid "Heard"
+msgstr "들음"
+
+#: site/activities/coaching-checklist-printable.php:136
+#: site/dashboard/dashboard.php:223
+msgid "Obeyed"
+msgstr "순종함"
+
+#: site/activities/coaching-checklist-printable.php:139
+#: site/dashboard/dashboard.php:225
+msgid "Shared"
+msgstr "나눔"
+
+#: site/activities/coaching-checklist-printable.php:142
+#: site/dashboard/dashboard.php:227
+msgid "Trained"
+msgstr "훈련함"
+
+#: site/activities/coaching-checklist-printable.php:147
+msgid "Ask yourself, what should I do for my disciple"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:153
+msgid "Model"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:156
+msgid "Assist"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:159
+#: site/course/course-content.php:1813 site/course/course-content.php:4742
+#: site/pages/home.php:202
+msgid "Watch"
+msgstr ""
+
+#: site/activities/coaching-checklist-printable.php:162
+msgid "Leave"
+msgstr ""
+
+#: site/activities/coaching-checklist.php:51 site/activities/list-of-100.php:97
+#: site/activities/three-month-plan.php:67
+msgid "Switch to Printable Version"
+msgstr ""
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:109
+#, fuzzy
+msgid "Disciple"
+msgstr "새끼오리 제자훈련"
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:110
+msgid "Unbeliever"
+msgstr ""
+
+#: site/activities/list-of-100-printable.php:89
+#: site/activities/list-of-100.php:111
+msgid "Unknown"
+msgstr ""
+
+#: site/activities/three-month-plan-printable.php:46
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:196
 #, fuzzy
 msgid "3-Month Plan"
 msgstr "3 개월 계획"
 
-#: site/activities/three-month-plan-html.php:27
-msgid "Switch to Interactive Version"
-msgstr ""
-
-#: site/activities/three-month-plan-interactive.php:48
-msgid "Switch to Printable Version"
-msgstr ""
-
-#: site/activities/three-month-plan-interactive.php:61
-#: site/course/presenter.php:132
+#: site/activities/three-month-plan.php:80 site/course/presenter.php:132
 #, fuzzy
 msgid "Scripts are off"
 msgstr "성경"
 
-#: site/activities/three-month-plan-interactive.php:62
+#: site/activities/three-month-plan.php:81
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
 
-#: site/activities/three-month-plan-interactive.php:73
-#: site/dashboard/dashboard.php:173 site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:173
+#: site/profile/profile.php:153
 msgid "Save"
 msgstr "저장"
 
@@ -2070,11 +2146,6 @@ msgstr ""
 "당신이 이미 알고 있는 하나님의 명령에 대해 생각해보십시오. 그 명령들에 순종하"
 "며 나누는 면에서 당신은 얼마나“신실”한가요?"
 
-#: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:202
-msgid "Watch"
-msgstr ""
-
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
 "In the following video, you’ll be coached through an interactive 3/3 Group "
@@ -2460,7 +2531,7 @@ msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
 #: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/pages/messages.php:236 site/parts/footer.php:12
+#: site/pages/messages.php:251 site/parts/footer.php:12
 #: site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 msgid "Get a Coach"
@@ -3622,7 +3693,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:197
 #, fuzzy
-msgid "Create a Plan"
+msgid "Create Your Plan"
 msgstr "3 개월 계획"
 
 #: site/dashboard/dashboard.php:199
@@ -3734,21 +3805,14 @@ msgstr "1과정"
 msgid "20 Session Course"
 msgstr "1과정"
 
-#: site/dashboard/dashboard.php:220 site/parts/footer.php:31
-msgid "3 Day Intensive Course"
-msgstr ""
-
-#: site/dashboard/dashboard.php:221
-msgid "Heard"
-msgstr "들음"
+#: site/dashboard/dashboard.php:220
+#, fuzzy
+msgid "Intensive Course"
+msgstr "1과정"
 
 #: site/dashboard/dashboard.php:222
 msgid "Have I heard about this tool or concept?"
 msgstr ""
-
-#: site/dashboard/dashboard.php:223
-msgid "Obeyed"
-msgstr "순종함"
 
 #: site/dashboard/dashboard.php:224
 msgid ""
@@ -3756,19 +3820,11 @@ msgid ""
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:225
-msgid "Shared"
-msgstr "나눔"
-
 #: site/dashboard/dashboard.php:226
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
-
-#: site/dashboard/dashboard.php:227
-msgid "Trained"
-msgstr "훈련함"
 
 #: site/dashboard/dashboard.php:228
 msgid ""
@@ -3951,7 +4007,86 @@ msgstr ""
 msgid "When do you plan to start?"
 msgstr "하나님에 대해 무엇을 배웠나요?"
 
+#: site/dashboard/dashboard.php:270 site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/dashboard.php:271 site/pages/privacy-policy.php:111
+msgid ""
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
+msgstr ""
+
+#: site/dashboard/dashboard.php:272 site/pages/privacy-policy.php:114
+msgid ""
+"A user’s email address is required to establish an account and is used for "
+"transactional communication as part of site operation."
+msgstr ""
+
+#: site/dashboard/dashboard.php:273 site/pages/privacy-policy.php:117
+msgid ""
+"A user’s phone number is collected and stored for supporting the free "
+"coaching service."
+msgstr ""
+
+#: site/dashboard/dashboard.php:274 site/pages/privacy-policy.php:120
+msgid ""
+"A user’s city is requested to personalize site resources and communication, "
+"and to connect users to appropriate coaching and customer service resources."
+msgstr ""
+
 #: site/dashboard/dashboard.php:275
+#, fuzzy
+msgid "Zúme Community"
+msgstr "지역 사회"
+
+#: site/dashboard/dashboard.php:276
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+
+#: site/dashboard/dashboard.php:278
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+
+#: site/dashboard/dashboard.php:279
+msgid "Encouragement"
+msgstr ""
+
+#: site/dashboard/dashboard.php:280
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+
+#: site/dashboard/dashboard.php:281
+#, fuzzy
+msgid "Free Tools"
+msgstr "도구"
+
+#: site/dashboard/dashboard.php:282
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+
+#: site/dashboard/dashboard.php:283
+msgid "Join for Free"
+msgstr ""
+
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -3960,12 +4095,12 @@ msgstr ""
 "나는 나의 이야기[간증]과 하나님의 이야기[복음]를 다음의 사람들과 나누겠습니"
 "다."
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:290
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "다음 사람들을 나와 함께 책임 그룹을 시작하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:291
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -3973,11 +4108,11 @@ msgstr ""
 "다음 사람들에게 자신의 책임 그룹을 시작하도록 도전을 주고, 수행하는 방법을 교"
 "육시키겠습니다."
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:292
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "다음 사람들을 나와 함께 3/3 그룹을 시작하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -3985,7 +4120,7 @@ msgstr ""
 "다음 사람들에게 자신의 3/3 그룹을 시작하도록 도전을 주고, 수행하는 방법을 교"
 "육시키겠습니다."
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -3994,16 +4129,16 @@ msgstr ""
 "다음 사람들을 3/3 희망 또는 발견 그룹[줌 가이드북 부록 참조]에 초대하겠습니"
 "다."
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "다음 사람들을 나와 함께 걷기 기도에 참여하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:296
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "매[일 / 주 / 월]마다 한 번씩 걷기 기도를 하겠습니다."
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4012,30 +4147,30 @@ msgstr ""
 "다음 사람들에게 자신의 이야기와 하나님의 이야기를 나누고, 그들 관계 네트워크"
 "에서 100인 명단을 작성하도록 준비시키겠습니다."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "다음 사람들이 기도 사이클 도구를 정기적으로 사용하도록 요청하겠습니다."
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:299
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "기도 사이클 도구를 매[일 / 주 / 월]마다 한 번씩 사용하겠습니다."
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "다음 사람들을 내가 인도하게 될 리더쉽 소그룹에 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "다음 사람들에게 줌 훈련 과정을 수강할 것을 권장하겠습니다."
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid "Other commitments:"
 msgstr "다른 약속 :"
@@ -4613,7 +4748,7 @@ msgstr ""
 "이 우리 세대에서 제자를 배가시켜 세상 전역으로 보내도록 준비시켜 주고 힘을 실"
 "어주는 것입니다."
 
-#: site/pages/about.php:95 site/pages/messages.php:232
+#: site/pages/about.php:95 site/pages/messages.php:247
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -4790,7 +4925,7 @@ msgstr ""
 msgid "What's required"
 msgstr "비밀번호 필요"
 
-#: site/pages/about.php:219 site/pages/training.php:260
+#: site/pages/about.php:219
 #, fuzzy
 msgid "Needed for the training:"
 msgstr "훈련을 시작하겠습니까?"
@@ -4811,7 +4946,7 @@ msgid ""
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
 
-#: site/pages/about.php:232 site/pages/training.php:266
+#: site/pages/about.php:232
 #, fuzzy
 msgid "NOT needed for the training:"
 msgstr "훈련을 시작하겠습니까?"
@@ -4822,7 +4957,7 @@ msgid ""
 "you can click next, you can lead a Zúme Training."
 msgstr ""
 
-#: site/pages/about.php:235 site/pages/training.php:269
+#: site/pages/about.php:235
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
@@ -4872,17 +5007,18 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/donate.php:100
-#: site/pages/messages.php:236 site/parts/footer.php:42
+#: site/pages/donate.php:86 site/pages/messages.php:251
+#: site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
 
 #: site/pages/donate.php:95
-msgid "We are crowdfunded, we love that you want to be part of us."
+msgid ""
+"We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
 
-#: site/pages/donate.php:96
-msgid "If you want to help in specific ways…"
+#: site/pages/donate.php:103
+msgid "View All Giving Opportunities"
 msgstr ""
 
 #: site/pages/faq.php:88
@@ -5056,50 +5192,64 @@ msgstr "수락된 초대"
 msgid "Use the code your friend sent you."
 msgstr ""
 
-#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:116
+#: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
 msgid "Get A Coach"
 msgstr "코치 받기"
 
-#: site/pages/get-a-coach.php:98
-msgid "Coaches"
-msgstr "코치"
+#: site/pages/get-a-coach.php:89
+msgid ""
+"Every athletic sport, especially at higher levels, uses coaching. Even "
+"olympic athletes have coaches, and often more than one. Disciple making can "
+"equally benefit from coaching by those who have more experience."
+msgstr ""
 
-#: site/pages/get-a-coach.php:99
+#: site/pages/get-a-coach.php:92
+msgid "No Cost"
+msgstr ""
+
+#: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
+#: site/pages/training.php:134 site/pages/training.php:141
+#: site/pages/training.php:142
+#, fuzzy
+msgid "Join a training group"
+msgstr "훈련 진행"
+
+#: site/pages/get-a-coach.php:95
 #, fuzzy
 msgid ""
-"Our network of volunteer coaches are people like you, people who are "
-"passionate about loving God, loving outhers, and obeying the Greate "
-"Commision."
+"Our network of volunteer coaches are not paid, but are driven rather by a "
+"passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
 "우리의 자원 봉사 코치 네트워크는 당신과 같이 열심으로 하나님을 사랑하고 다른 "
 "사람을 사랑하며, 지상 명령에 순종하는 사람들입니다."
 
-#: site/pages/get-a-coach.php:100
+#: site/pages/get-a-coach.php:99
 #, fuzzy
-msgid ""
-"A coach is someone who will come alongside you as you implement the Zúme "
-"tools and training."
-msgstr "코치는 당신이 줌 도구와 훈련을 실행할 때 함께 해줄 사람입니다."
-
-#: site/pages/get-a-coach.php:104
-msgid "It's Free"
-msgstr "무료입니다"
-
-#: site/pages/get-a-coach.php:105
-msgid "Coaching is free. You can opt out at any time."
-msgstr "코칭은 무료입니다. 언제든지 해제할 수 있습니다."
-
-#: site/pages/get-a-coach.php:108
-msgid "Local"
+msgid "Localized"
 msgstr "현지"
 
-#: site/pages/get-a-coach.php:109
-#, fuzzy
+#: site/pages/get-a-coach.php:102
 msgid ""
-"On submitting this request, we will do our best to connect you with a coach "
-"near you"
-msgstr "본 요청을 제출시, 최선을 다해 가까운 코치와 연결해 드리겠습니다."
+"Our connection team attempts to connect you with a coach who speaks your "
+"language and is geographically as close as possible."
+msgstr ""
+
+#: site/pages/get-a-coach.php:106
+msgid "Experienced"
+msgstr ""
+
+#: site/pages/get-a-coach.php:107 site/pages/training.php:150
+#, fuzzy
+msgid "Join a training"
+msgstr "훈련 진행"
+
+#: site/pages/get-a-coach.php:109
+msgid ""
+"All our coaches are trained and practicing the concepts and tools found in "
+"Zûme. All our coaches can help you over barriers and make steps in your "
+"journey."
+msgstr ""
 
 #: site/pages/home.php:85
 msgid "45+"
@@ -5317,27 +5467,27 @@ msgstr "시작"
 msgid "Kitchen Sink"
 msgstr ""
 
-#: site/pages/messages.php:221
+#: site/pages/messages.php:236
 #, fuzzy
 msgid "Friend"
 msgstr "사용자 주소"
 
-#: site/pages/messages.php:233
+#: site/pages/messages.php:248
 #, fuzzy
 msgid "Explore the Vision"
 msgstr "훈련 탐색"
 
-#: site/pages/messages.php:234
+#: site/pages/messages.php:249
 #, fuzzy
 msgid "Zúme Training Dashboard"
 msgstr "줌 훈련 자료"
 
-#: site/pages/messages.php:235
+#: site/pages/messages.php:250
 #, fuzzy
 msgid "Update Your Communication Preferences"
 msgstr "당신이 거주하는 도시 또는 도, 우편 번호는 무엇입니까?"
 
-#: site/pages/messages.php:236
+#: site/pages/messages.php:251
 #, fuzzy
 msgid "Join the Zúme Community"
 msgstr "지역 사회"
@@ -5407,9 +5557,15 @@ msgstr ""
 "는 방법에 대한 명확한 이해를 위해 저희 웹사이트의 개인 정보 보호 정책을 주의 "
 "깊게 읽어보십시오."
 
-#: site/pages/privacy-policy.php:91
+#: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
 msgstr "소셜 사인온 로그인에서 어떤 사용 권한을 요청하나요?"
+
+#: site/pages/privacy-policy.php:91
+msgid ""
+"The profile elements below change depending on if Facebook or Google sign on "
+"is used."
+msgstr ""
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -5428,39 +5584,31 @@ msgid ""
 "What personal information do we collect from the people through our website?"
 msgstr "웹 사이트를 통해 사람들의 어떤 개인 정보를 수집하나요?"
 
-#: site/pages/privacy-policy.php:107
-msgid "Information in the Basic Social Profile (if used) and email."
-msgstr "기본 소셜 프로필 (사용 된 경우) 및 이메일 정보."
-
-#: site/pages/privacy-policy.php:110
-msgid "Session and course activity."
-msgstr "과정 활동."
-
-#: site/pages/privacy-policy.php:113
-msgid ""
-"General location telemetry, so we know in what countries our training is "
-"being used."
-msgstr ""
-"일반적인 위치 원격 측정을 통해 우리는 어떤 국가에서 우리의 훈련이 사용되고 있"
-"는지 알 수 있습니다."
-
-#: site/pages/privacy-policy.php:120
+#: site/pages/privacy-policy.php:127
 msgid "When do we collect information?"
 msgstr "언제 정보를 수집하나요?"
 
-#: site/pages/privacy-policy.php:123
+#: site/pages/privacy-policy.php:130
 msgid "We collect your information at login."
 msgstr "로그인시 당신의 정보를 수집합니다."
 
-#: site/pages/privacy-policy.php:126
-msgid "We also track your progress through the training course."
+#: site/pages/privacy-policy.php:133
+#, fuzzy
+msgid ""
+"We also track your progress through the training course and through site "
+"usage."
 msgstr "또한 당신의 훈련 과정 진행 상황도 확인합니다."
 
-#: site/pages/privacy-policy.php:133
+#: site/pages/privacy-policy.php:136
+msgid ""
+"We request neccissary information through various sign up and request forms."
+msgstr ""
+
+#: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
 msgstr "우리는 당신의 정보를 어떻게 사용할까요?"
 
-#: site/pages/privacy-policy.php:136
+#: site/pages/privacy-policy.php:146
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
@@ -5468,7 +5616,7 @@ msgstr ""
 "우리는 이메일 주소를 기반으로 하여 당신의 정보로 줌 시스템에서 사용자 계정을 "
 "만듭니다."
 
-#: site/pages/privacy-policy.php:139
+#: site/pages/privacy-policy.php:149
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
@@ -5476,18 +5624,18 @@ msgstr ""
 "비밀번호 재설정 요청이나 기타 시스템 알림 등은 등록된 기본 이메일로 이메일로 "
 "보내드립니다."
 
-#: site/pages/privacy-policy.php:142
+#: site/pages/privacy-policy.php:152
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
 "훈련 과정에서 진행 상황에 따라 때로 알림 및 격려를 이메일로 보내드립니다."
 
-#: site/pages/privacy-policy.php:149
+#: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
 msgstr "우리는 당신의 정보를 어떻게 보호할까요?"
 
-#: site/pages/privacy-policy.php:151
+#: site/pages/privacy-policy.php:161
 msgid ""
 "While we use encryption to protect sensitive information transmitted online, "
 "we also protect your information offline. Only team members who need the "
@@ -5499,7 +5647,7 @@ msgstr ""
 "객 서비스)을 수행하기 위해 정보가 필요한 팀원만 개인 식별 정보에 접속할 수 있"
 "습니다."
 
-#: site/pages/privacy-policy.php:154
+#: site/pages/privacy-policy.php:164
 msgid ""
 "Your personal information is contained behind secured networks and is only "
 "accessible by a limited number of persons who have special access rights to "
@@ -5512,7 +5660,7 @@ msgstr ""
 "제공하는 모든 중요한/신용 정보는 SSL (Secure Socket Layer) 기술을 통해 암호화"
 "됩니다."
 
-#: site/pages/privacy-policy.php:157
+#: site/pages/privacy-policy.php:167
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
@@ -5520,31 +5668,27 @@ msgstr ""
 "우리는 사용자가 정보를 제출하거나 그에 접속할 때, 사용자의 개인 정보 안전을 "
 "보장하기 위해 다양한 보안 조치를 실시합니다."
 
-#: site/pages/privacy-policy.php:163
+#: site/pages/privacy-policy.php:173
 msgid "Do we use \"cookies\"?"
 msgstr "\"쿠키\"를 사용하나요?"
 
-#: site/pages/privacy-policy.php:165
+#: site/pages/privacy-policy.php:175
+#, fuzzy
 msgid ""
-"Any use of Cookies - or of other tracking tools - by this Application or by "
-"the owners of third party services used by this Application, unless stated "
-"otherwise, serves to identify Users and remember their preferences, for the "
-"sole purpose of providing the service required by the User."
+"Any use of Cookies - or of other tracking tools - unless stated otherwise, "
+"serves to identify Users and remember their preferences, for the sole "
+"purpose of providing the service required by the User."
 msgstr ""
 "쿠키 또는 다른 추적 도구를 사용하는 경우, 별도의 표시가 없으면 사용자의 요청"
 "에 근거한 서비스를 제공하기 위한 유일한 목적으로, 본 응용 프로그램 또는 본 응"
 "용 프로그램에서 사용하는 3자 서비스 소유자에 의해 사용자를 식별하고 그들의 선"
 "호사항들을 기억합니다."
 
-#: site/pages/privacy-policy.php:168
-msgid "Personal Data collected: name, email."
-msgstr "수집 된 개인 데이터 : 이름, 이메일."
-
-#: site/pages/privacy-policy.php:174
+#: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
 msgstr "당신의 정보 접근 및 통제"
 
-#: site/pages/privacy-policy.php:176
+#: site/pages/privacy-policy.php:183
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
@@ -5552,28 +5696,28 @@ msgstr ""
 "당신은 언제든지 탈퇴할 수 있습니다. 언제든지 우리의 연락처 이메일 주소로 다음"
 "과 같이 문의할 수 있습니다:"
 
-#: site/pages/privacy-policy.php:179
+#: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
 msgstr "당신과의 활동을 통해 집계한 데이터를 확인하십시오."
 
-#: site/pages/privacy-policy.php:183
+#: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
 msgstr "당신과 관련된 데이터를 변경/수정하십시오."
 
-#: site/pages/privacy-policy.php:186
+#: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
 msgstr "당신의 모든 데이터를 삭제하도록 요청하십시오."
 
-#: site/pages/privacy-policy.php:189
+#: site/pages/privacy-policy.php:196
 #, fuzzy
 msgid "Express any concern you have about our use of your data."
 msgstr "당신의 데이터 사용에 대한 우려를 표명하십시오."
 
-#: site/pages/privacy-policy.php:196
+#: site/pages/privacy-policy.php:203
 msgid "Updates"
 msgstr "업데이트"
 
-#: site/pages/privacy-policy.php:198
+#: site/pages/privacy-policy.php:205
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
@@ -5635,19 +5779,13 @@ msgstr "줌 훈련에 다시 온 것을 환영합니다!"
 
 #: site/pages/training.php:133
 #, fuzzy
-msgid "Create your own training"
+msgid "Create your own training group"
 msgstr "나만의 100인 명단 만들기"
-
-#: site/pages/training.php:134 site/pages/training.php:141
-#: site/pages/training.php:142 site/pages/training.php:150
-#, fuzzy
-msgid "Join a training"
-msgstr "훈련 진행"
 
 #: site/pages/training.php:136
 msgid ""
-"Gather a few friends or go through the training with an existing small "
-"group. Create your own training plan and track your progress."
+"Gather a few friends or go through the course with an existing small group. "
+"Create your own training group and track your progress."
 msgstr ""
 
 #: site/pages/training.php:138
@@ -5658,7 +5796,7 @@ msgstr "3 개월 계획"
 #: site/pages/training.php:144
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
-"trainings lead by an experienced Zúme coach."
+"training groups lead by an experienced Zúme coach."
 msgstr ""
 
 #: site/pages/training.php:149
@@ -5668,8 +5806,8 @@ msgstr "코치 받기"
 
 #: site/pages/training.php:152
 msgid ""
-"We can connect you with free Zúme coach who is committed to helping you get "
-"the training and become a fruitful disciple."
+"We can connect you with free Zúme coach who is committed to helping you "
+"understand the training and become a fruitful disciple."
 msgstr ""
 
 #: site/pages/training.php:154
@@ -5725,9 +5863,9 @@ msgstr "과정"
 
 #: site/pages/training.php:228
 msgid ""
-"The original Zúme training format is 10 two hour sessions. Each session "
+"The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
-"sessions. This format is often ran once a week for 10 weeks."
+"sessions. This format is often run once a week for 10 weeks."
 msgstr ""
 
 #: site/pages/training.php:233
@@ -5737,13 +5875,13 @@ msgstr "과정"
 
 #: site/pages/training.php:240
 msgid ""
-"For a longer slower pace training with more opportunity for gaining "
-"competence in the concepts and skills, the 20 session format has more "
-"practice opportunities for each of the concepts and tools."
+"For a longer slower pace course with more opportunity for gaining competence "
+"in the concepts and skills, the 20 session format has more practice "
+"opportunities for each of the concepts and tools."
 msgstr ""
 
 #: site/pages/training.php:245
-msgid "3 Day Intensive"
+msgid "Intensive"
 msgstr ""
 
 #: site/pages/training.php:252
@@ -5751,6 +5889,26 @@ msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
+msgstr ""
+
+#: site/pages/training.php:260
+#, fuzzy
+msgid "Needed for the course:"
+msgstr "훈련을 시작하겠습니까?"
+
+#: site/pages/training.php:266
+#, fuzzy
+msgid "NOT needed for the course:"
+msgstr "훈련을 시작하겠습니까?"
+
+#: site/pages/training.php:269
+msgid ""
+"Special permission to lead a course is not needed! Zúme is self-facilitated, "
+"self-initiated, and you can start today."
+msgstr ""
+
+#: site/parts/footer.php:31
+msgid "3 Day Intensive Course"
 msgstr ""
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
@@ -6003,6 +6161,43 @@ msgstr "https://github.com/ZumeProject/zume-training"
 #, fuzzy
 msgid "Zume Training System"
 msgstr "줌 훈련"
+
+#~ msgid "Coaches"
+#~ msgstr "코치"
+
+#, fuzzy
+#~ msgid ""
+#~ "A coach is someone who will come alongside you as you implement the Zúme "
+#~ "tools and training."
+#~ msgstr "코치는 당신이 줌 도구와 훈련을 실행할 때 함께 해줄 사람입니다."
+
+#~ msgid "It's Free"
+#~ msgstr "무료입니다"
+
+#~ msgid "Coaching is free. You can opt out at any time."
+#~ msgstr "코칭은 무료입니다. 언제든지 해제할 수 있습니다."
+
+#, fuzzy
+#~ msgid ""
+#~ "On submitting this request, we will do our best to connect you with a "
+#~ "coach near you"
+#~ msgstr "본 요청을 제출시, 최선을 다해 가까운 코치와 연결해 드리겠습니다."
+
+#~ msgid "Information in the Basic Social Profile (if used) and email."
+#~ msgstr "기본 소셜 프로필 (사용 된 경우) 및 이메일 정보."
+
+#~ msgid "Session and course activity."
+#~ msgstr "과정 활동."
+
+#~ msgid ""
+#~ "General location telemetry, so we know in what countries our training is "
+#~ "being used."
+#~ msgstr ""
+#~ "일반적인 위치 원격 측정을 통해 우리는 어떤 국가에서 우리의 훈련이 사용되"
+#~ "고 있는지 알 수 있습니다."
+
+#~ msgid "Personal Data collected: name, email."
+#~ msgstr "수집 된 개인 데이터 : 이름, 이메일."
 
 #, fuzzy
 #~ msgid "Go to Zúme Dashboard"

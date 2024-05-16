@@ -260,8 +260,15 @@ class Zume_Training_Wizard extends Zume_Magic_Page
             ],
             'share' => array_merge( [
                 'title' => __( 'Invite your friends to join your training', 'zume' ),
-                'share_with_friends' => __( 'Share the link below with your friends so that they can join your training.', 'zume' ),
+                'share_with_friends' => __( 'Share the invite or link below with your friends so that they can join your training.', 'zume' ),
                 'join_my_plan' => __( 'Join my zume plan', 'zume' ),
+                'note' => __( '%s is inviting you to a Zume Training Group', 'zume' ),
+                'location' => __( 'Location', 'zume' ),
+                'time' => __( 'Time', 'zume' ),
+                'join_url' => __( 'Join Training Group', 'zume' ),
+                'join_key' => __( 'Join key', 'zume' ),
+                'broken_link' => __( 'The training link is broken. Please try again.', 'zume' ),
+                'copy_invite' => __( 'Copy Invite', 'zume' ),
             ], Zume_Training_Share::translations() ),
         ];
     }

@@ -61,7 +61,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
         // hooks
         add_action( 'post_connection_removed', [ $this, 'post_connection_removed' ], 10, 4 );
         add_action( 'post_connection_added', [ $this, 'post_connection_added' ], 10, 4 );
-        add_filter( 'dt_post_update_fields', [ $this, 'dt_post_update_fields' ], 10, 3 );
+        add_filter( 'dt_post_update_fields', [ $this, 'dt_post_update_fields' ], 10, 4 );
         add_filter( 'dt_post_create_fields', [ $this, 'dt_post_create_fields' ], 10, 2 );
         add_action( 'dt_post_created', [ $this, 'dt_post_created' ], 10, 3 );
         add_action( 'dt_comment_created', [ $this, 'dt_comment_created' ], 10, 4 );
@@ -692,10 +692,10 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     }
 
     //filter at the start of post update
-    public function dt_post_update_fields( $fields, $post_type, $post_id ){
+    public function dt_post_update_fields( $fields, $post_type, $post_id, $post ){
         if ( $post_type === $this->post_type ){
             // execute your code here
-            if ( empty( $fields['join_key'] ) ) {
+            if ( empty( $post['join_key'] ) ) {
                 update_post_meta( $post_id, 'join_key', $this->generate_join_key() );
             }
         }
