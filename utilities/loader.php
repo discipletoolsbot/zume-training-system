@@ -3,8 +3,12 @@
  * Auto loads 2 levels of php files, and file in subdirectories
  */
 
+require_once( 'integrations/polylang-integration.php' );
+require_once( 'integrations/urls.php' );
+require_once( 'integrations/i18n.php' );
+
 $skip_folders = [
-    'integrations',
+//    'integrations',
 ];
 
 // Load all other files

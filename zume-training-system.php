@@ -93,12 +93,9 @@ class Zume_Training {
 
         $this->define_constants();
         $this->setup_hooks();
-        require_once( 'utilities/integrations/polylang-integration.php' );
-        require_once( 'utilities/integrations/urls.php' );
-        require_once( 'utilities/integrations/i18n.php' );
+        require_once( 'utilities/loader.php' );
         require_once( 'globals.php' );
         require_once( 'appearance/loader.php' );
-        require_once( 'utilities/loader.php' );
         require_once( 'site/loader.php' );
 
         $this->i18n();

@@ -1311,8 +1311,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td style="background-color: grey; width: 10%;"></td>
                             </tr>
                             <tr>
-                                <td><a href="<?php echo site_url() . '/en/app/script?s=' . $script_id  ?>"><?php echo site_url() . '/en/app/script?s=' . $script_id  ?></a></td>
-                                <td><a href="<?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?>"><?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?></a></td>
+                                <td><a href="<?php echo site_url() . '/en/app/script?s=' . $script_id  ?>" target="_blank"><?php echo site_url() . '/en/app/script?s=' . $script_id  ?></a></td>
+                                <td><a href="<?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?>" target="_blank"><?php echo site_url() . '/'.$this->language_code.'/app/script?s=' . $script_id  ?></a></td>
                                 <td></td>
                             </tr>
                             <tr>

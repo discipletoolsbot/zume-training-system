@@ -220,7 +220,7 @@ class Zume_Messages extends Zume_Magic_Page
             <div id="zmail">
                 <header class="zmail-header">
                     <div class="zmail-topbar" style="margin-bottom:20px;">
-                        <div class="zmail-logo"><img src="<?php echo  zume_mirror_url() . 'images/zume-training-logo-white-short.svg' ?>" alt="logo"></div>
+                        <div class="zmail-logo"><img src="<?php echo zume_mirror_url() . 'images/zume-training-logo-white-short.svg' ?>" alt="logo"></div>
                     </div>
                 </header>
                 <?php
@@ -239,22 +239,39 @@ class Zume_Messages extends Zume_Magic_Page
                 }
                 ?>
                 <div class="zmail-body">
-                    <?php echo zume_replace_placeholder( $message['body'] ) ?>
+                    <?php echo zume_replace_placeholder( $message['body'], $this->language_code ) ?>
                 </div>
                 <div class="zmail-footer-divider"></div>
-                <div class="zmail-footer">
-                    <p><img src="<?php echo  zume_mirror_url() . 'images/zume-training-logo.svg' ?>" alt="logo" style="height:40px; margin: 1em auto;"></p>
-                    <p><?php echo __( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></p>
-                    <a href="https://zume.vision"><?php echo __( 'Explore the Vision', 'zume' ) ?></a><br>
-                    <a href="<?php echo zume_dashboard_url(); ?>"><?php echo __( 'Zúme Training Dashboard', 'zume' ) ?></a><br>
-                    <a href=""><?php echo __( 'Update Your Communication Preferences', 'zume' ) ?></a><br><br>
-                    <p style="width:60%;margin:0 auto;"><a href="<?php echo zume_get_a_coach_wizard_url(); ?>"><?php echo __( 'Get a Coach', 'zume' ) ?></a> | <a href="<?php echo zume_join_the_community_wizard_url(); ?>"><?php echo __( 'Join the Zúme Community', 'zume' ) ?></a> | 109 S. Main Street, Mooreland, OK 73852 USA | <a href="<?php echo zume_donate_url(); ?>"><?php echo __( 'Donate', 'zume' ) ?></a></p>
-                </div>
+                <div class="zmail-footer"><?php echo zume_replace_placeholder( $this->email_footer(), $this->language_code, get_current_user_id()  ) ?></div>
             </div> <!-- activity page -->
             </body>
             </html>
         </div> <!-- wrapper-->
+        <br><br><br></br></br></br>
         <?php
+    }
+
+    public function email_footer( $echo = false ) {
+        ob_start();
+        ?>
+        <p><img src="<?php echo  zume_mirror_url() . 'images/zume-training-logo.svg' ?>" alt="logo" style="height:40px; margin: 1em auto;"></p>
+        <p><?php echo __( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></p>
+        <p>
+            [link_dashboard]<br>
+            [magiclink_preferences]<br>
+        </p>
+
+        <p style="width:60%;margin:0 auto;">
+            [link_getacoach]
+            | [link_joincommunity]
+            | [link_checkin]
+            | <a href="<?php echo zume_donate_url(); ?>"><?php echo __( 'Donate', 'zume' ) ?></a>
+            | 109 S. Main Street, Mooreland, OK 73852 USA
+        </p>
+        <?php
+        $html = ob_get_contents();
+        ob_end_clean();
+        return $html;
     }
 
     public function query_message( $language_code, $message_id ) {

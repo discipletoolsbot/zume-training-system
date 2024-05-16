@@ -134,7 +134,7 @@ class Zume_Scripts extends Zume_Magic_Page
                     <hr>
                 </div>
                 <div class="activity__content">
-                    <?php echo wp_kses( $body, 'post' ) ?>
+                    <?php echo wp_kses( zume_replace_placeholder( $body, $language_code ), 'post' ) ?>
                 </div>
             </div>
             <?php
