@@ -69,9 +69,9 @@ function pieces_content( $postid, $lang, $strings ) {
     }
 
     $tool_number = $meta['zume_piece'][0] ?? 0;
-    $pre_video_content = $meta['zume_pre_video_content'][0] ?? '';
-    $post_video_content = $meta['zume_post_video_content'][0] ?? '';
-    $ask_content = $meta['zume_ask_content'][0] ?? '';
+    $pre_video_content = zume_replace_placeholder( $meta['zume_pre_video_content'][0] ?? '', $lang );
+    $post_video_content = zume_replace_placeholder( $meta['zume_post_video_content'][0] ?? '', $lang );
+    $ask_content = zume_replace_placeholder( $meta['zume_ask_content'][0] ?? '', $lang );
     $h1_title = empty( $meta['zume_piece_h1'][0] ) ? get_the_title( $postid ) : $meta['zume_piece_h1'][0];
 
     $args = Zume_V5_Pieces::vars( $tool_number );
