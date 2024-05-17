@@ -17,6 +17,9 @@ class Zume_Replace_Placeholder {
     public function __construct() {}
 
     public function replace_content( $content, $language_code, $user_id ) {
+        if ( empty( $language_code ) ) {
+            $language_code = 'en';
+        }
 
         $base_url = trailingslashit( site_url() ). $language_code . '/';
         $mirror_url = zume_mirror_url();
