@@ -43,6 +43,14 @@ class Zume_Replace_Placeholder {
             '[buttonlarge_onlinetraining]',
             '[link_onlinetraining]',
 
+            '[buttonsmall_list100]', // list of 100
+            '[buttonlarge_list100]',
+            '[link_list100]',
+
+            '[buttonsmall_coachingchecklist]', // coaching checklist
+            '[buttonlarge_coachingchecklist]',
+            '[link_coachingchecklist]',
+
             '[buttonsmall_checkin]', // Check-in
             '[buttonlarge_checkin]',
             '[link_checkin]',
@@ -88,6 +96,14 @@ class Zume_Replace_Placeholder {
             '<a class="button small" href="'.$base_url.$wizard_root.'join-a-training">'. __( 'Zúme Online Training Groups', 'zume' ) .'</a>', // Join Online Group
             '<a class="button large" href="'.$base_url.$wizard_root.'join-a-training">'. __( 'Zúme Online Training Groups', 'zume' ) .'</a>',
             '<a class="" href="'.$base_url.$wizard_root.'join-a-training">'. __( 'Zúme Online Training Groups', 'zume' ) .'</a>',
+
+            '<a class="button small" href="'.$base_url.'app/qr/?l=en&a=listof100">'. __( 'List of 100', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'app/qr/?l=en&a=listof100">'. __( 'List of 100', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'app/qr/?l=en&a=listof100">'. __( 'List of 100', 'zume' ) .'</a>',
+
+            '<a class="button small" href="'.$base_url.'app/qr/?l=en&a=coachingchecklist">'. __( 'Coaching Checklist', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'app/qr/?l=en&a=coachingchecklist">'. __( 'Coaching Checklist', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'app/qr/?l=en&a=coachingchecklist">'. __( 'Coaching Checklist', 'zume' ) .'</a>',
 
             '<a class="button small" href="'.$base_url.$wizard_root.'checkin">'. __( 'Check-in', 'zume' ) .'</a>',
             '<a class="button large" href="'.$base_url.$wizard_root.'checkin">'. __( 'Check-in', 'zume' ) .'</a>',
