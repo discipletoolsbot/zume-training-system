@@ -414,13 +414,33 @@ class Zume_Training_Translator extends Zume_Magic_Page
             return;
         }
         $language = $this->language;
-//        $weblate = zume_get_weblate();
 
         /**
         * Template for the status tab
         */
         ?>
-        <div class="grid-x grid-padding-x grid-padding-y">
+        <style>
+            span.green {
+                background-color: green;
+                width: 20px;
+                height: 20px;
+                padding: 0 .6em;
+                color: white;
+            }
+            span.green::after {
+                content: "\2713";
+            }
+            span.red {
+                background-color: red;
+                width: 20px;
+                height: 20px;
+                padding: 0 .7em;
+            }
+            span.red::after {
+                content: "\2717";
+            }
+        </style>
+        <div class="grid-x grid-padding-x grid-padding-y" style="max-width:1000px; margin: 0 auto;">
 
 
             <!-- WORD COUNT -->
@@ -435,7 +455,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $scripts_en = zume_word_count_scripts( 'en' );
                     $activities_en = zume_word_count_activities( 'en' );
                     $messages_en = zume_word_count_messages( 'en' );
-//                    $strings_en = zume_word_count_english();
+//
                     ?>
                     <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
                     <strong>Weblate: </strong> <?php echo number_format( $weblate[$language['weblate']]['total_words'] ); ?> |
@@ -492,16 +512,20 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                     <?php
                         $scripts = list_zume_scripts( $language['code'] );
-                        $script_items = zume_training_items_by_script();
                         $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
+                        $zume_scripts = zume_last_activity( 'zume_scripts' );
                         foreach( $fields as $script_id => $item ) {
+                            $key = $scripts[$script_id]['script_id'].$scripts[$script_id]['post_id'];
                             ?>
                             <tr>
                                 <td>
                                     <strong><?php echo $item['name'] ?? '' ?> </strong>
                                 </td>
                                 <td style="text-align:right;">
-                                     Content <?php echo empty( $scripts[$script_id]['content'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Content:
+                                     <span class="<?php echo $zume_scripts[$key]['log']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_scripts[$key]['edit']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_scripts[$key]['proof']['color'] ?? 'red' ?>"> </span>
                                 </td>
                             </tr>
                             <?php
@@ -521,15 +545,27 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                     <?php
                         $activities = list_zume_activities( $language['code'] );
+//                        dt_write_log( $activities );
+                        $zume_activities = zume_last_activity( 'zume_activities' );
+                        dt_write_log( $zume_activities );
                         foreach( $activities as $item ) {
+                            $title_key = 'title_'.$item['language_code'].$item['post_id'];
+                            $content_key = 'content_'.$item['language_code'].$item['post_id'];
                             ?>
                             <tr>
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong>
                                 </td>
                                 <td style="text-align:right;">
-                                     Title  <?php echo empty( $item['title'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Content <?php echo empty( $item['content'] ) ? '&#10060;' : '&#9989;' ?>
+                                     Title:
+                                     <span class="<?php echo $zume_activities[$title_key]['log']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_activities[$title_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_activities[$title_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                     <br>
+                                    Content:
+                                     <span class="<?php echo $zume_activities[$content_key]['log']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_activities[$content_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                     <span class="<?php echo $zume_activities[$content_key]['proof']['color'] ?? 'red' ?>"> </span>
                                 </td>
                             </tr>
                             <?php
@@ -551,15 +587,25 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                     <?php
                         $messages_other_language = list_zume_messages( $this->language_code );
-                        foreach( $messages_other_language as $message ) {
+                        $zume_messages = zume_last_activity( 'zume_messages' );
+                        foreach( $messages_other_language as $item ) {
+                            $subject_key = 'subject_'.$item['language_code'].$item['post_id'];
+                            $body_key = 'body_'.$item['language_code'].$item['post_id'];
                             ?>
                             <tr>
                                 <td>
-                                    <strong><?php echo $message['post_title'] ?></strong>
+                                    <strong><?php echo $item['post_title'] ?></strong>
                                 </td>
                                 <td style="text-align:right;">
-                                    subject <?php echo empty( $message['subject'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | body <?php echo empty( $message['body'] ) ? '&#10060;' : '&#9989;' ?>
+                                    Subject:
+                                    <span class="<?php echo $zume_messages[$subject_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_messages[$subject_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_messages[$subject_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
+                                    Body:
+                                    <span class="<?php echo $zume_messages[$body_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_messages[$body_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_messages[$body_key]['proof']['color'] ?? 'red' ?>"> </span>
                                 </td>
                             </tr>
                     <?php } ?>
@@ -577,18 +623,44 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                     <?php
                         $pieces_list = list_zume_pieces( $language['code'] );
+                        $zume_pieces = zume_last_activity( 'zume_pieces' );
                         foreach( $pieces_list as $item ) {
+                            $h1_key = 'zume_piece_h1'.$item['post_id'];
+                            $pre_key = 'zume_pre_video_content'.$item['post_id'];
+                            $post_key = 'zume_post_video_content'.$item['post_id'];
+                            $ask_key = 'zume_ask_content'.$item['post_id'];
+                            $seo_key = 'zume_seo_meta_description'.$item['post_id'];
                             ?>
                             <tr>
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
                                 </td>
                                 <td style="text-align:right;">
-                                     Title h1 <?php echo empty( $item['zume_piece_h1'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Pre-Video <?php echo empty( $item['zume_pre_video_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Post-Video <?php echo empty( $item['zume_post_video_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | Ask <?php echo empty( $item['zume_ask_content'] ) ? '&#10060;' : '&#9989;' ?>
-                                    | SEO Meta Description <?php echo empty( $item['zume_seo_meta_description'] ) ? '&#10060;' : '&#9989;' ?>
+                                    Title h1:
+                                    <span class="<?php echo $zume_pieces[$h1_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$h1_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$h1_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
+                                    Pre-Video:
+                                    <span class="<?php echo $zume_pieces[$pre_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$pre_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$pre_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
+                                    Post-Video:
+                                    <span class="<?php echo $zume_pieces[$post_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$post_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$post_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
+                                    Ask:
+                                    <span class="<?php echo $zume_pieces[$ask_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$ask_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$ask_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
+                                    SEO Meta Description:
+                                    <span class="<?php echo $zume_pieces[$seo_key]['log']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$seo_key]['edit']['color'] ?? 'red' ?>"> </span>
+                                    <span class="<?php echo $zume_pieces[$seo_key]['proof']['color'] ?? 'red' ?>"> </span>
+                                    <br>
                                 </td>
                             </tr>
                             <?php
@@ -1122,9 +1194,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 </td>
             </tr>
 
-             <?php
-                $key = 'body_'.$this->language_code;
-                $target = 'body_'.$this->language_code.$pid;
+            <?php
+            $key = 'body_'.$this->language_code;
+            $target = 'body_'.$this->language_code.$pid;
             ?>
             <tr>
                 <td>
