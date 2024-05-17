@@ -38,21 +38,150 @@ class Zume_Activites_Coaching extends Zume_Activites
         }
 
     }
+    public function dt_magic_url_base_allowed_js( $allowed_js ) {
+        return [];
+    }
+    public function dt_magic_url_base_allowed_css( $allowed_css ) {
+        return [];
+    }
     public function body(){
         ?>
-        <div class="activity-page">
-            <header class="bg-brand">
-                <div class="container-md | activity-header">
-                    <div class="logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
-                </div>
-            </header>
-            <div class="container-md">
-                <h1 class="activity-title"><?php echo esc_html__( 'Coaching Checklist', 'zume' ) ?></h1>
-                <a class="f-0 center" href="<?php site_url() ?>/<?php echo $this->lang ?>/activities/coachingchecklist_printable"><?php echo esc_html__( 'Switch to Printable Version', 'zume' ) ?></a>
-            </div>
-            <hr>
-            <div class="container-md activity-content">
+        <style>
+            .activity-page {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1200px;
+                border-color: white;
+            }
+            .activity-title {
+                text-align: center;
+            }
+            .activity-content {
+            }
+            .coaching_column {
+                border-left: 1px solid grey;
+                width: 140px;
+                text-align: center;
+            }
+            .coaching_title {
+                width: 50%;
+            }
+            .coaching_header td {
+                background-color: white;
+                border-bottom: 4px solid grey;
+            }
+            .coaching_bottom {
+                border-bottom: 1px solid grey;
+            }
+            .coaching-table {
+                width: 100%;
+                font-size: .8em;
+                font-family: Arial, sans-serif;
+            }
+            .coaching-table td {
+                padding: .7em;
+            }
+            .coaching_row td {
 
+            }
+            .coaching_right {
+                text-align: right;
+            }
+            .coaching_table_title {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+        </style>
+        <div class="activity-page">
+            <div class="activity-title">
+                <h1 ><?php echo __( 'Coaching Checklist', 'zume' ) ?></h1>
+                <p>
+                    <?php echo __( '1. Self-evaluate with Heard, Obeyed, Shared, Trained.', 'zume' ) ?><br>
+                    <?php echo __( '2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple.', 'zume' ) ?>
+                </p>
+                </br>
+            </div>
+            <div class="activity-content">
+                <table class="coaching-table">
+                    <tr>
+                        <td>
+                            <strong class="coaching_table_title"><?php echo __( 'Training Tools/Concepts', 'zume' ) ?></strong>
+                        </td>
+                        <td>
+                        </td>
+                        <td class=" coaching_bottom">
+                        </td>
+                        <td class=" coaching_bottom">
+                        </td>
+                        <td class=" coaching_bottom">
+                        </td>
+                        <td class=" coaching_bottom">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="coaching_right">
+                            <em><?php echo __( 'Ask yourself, have you', 'zume' ) ?> ...</em>
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Heard', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Obeyed', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Shared', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Trained', 'zume' ) ?>
+                        </td>
+                    </tr>
+                    <tr class="coaching_header">
+                        <td class="coaching_right">
+                            <em><?php echo __( 'Ask yourself, what should I do for my disciple', 'zume' ) ?> ...</em>
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td class="coaching_column">
+                            <?php echo __( 'Model', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column">
+                            <?php echo __( 'Assist', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column">
+                            <?php echo __( 'Watch', 'zume' ) ?>
+                        </td>
+                        <td class="coaching_column">
+                            <?php echo __( 'Leave', 'zume' ) ?>
+                        </td>
+                    </tr>
+                    <?php
+                    $training_items = zume_training_items();
+                    foreach( $training_items as $training_item ) {
+                        ?>
+                        <tr class="coaching_row">
+                            <td class="coaching_title coaching_bottom">
+                                <?php echo $training_item['title']; ?>
+                            </td>
+                            <td class="coaching_bottom">
+                            </td>
+                            <td class="coaching_column coaching_bottom">
+                            </td>
+                            <td class="coaching_column coaching_bottom">
+                            </td>
+                            <td class="coaching_column coaching_bottom">
+                            </td>
+                            <td class="coaching_column coaching_bottom">
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                    ?>
+                </table>
             </div>
         </div>
         </hr>

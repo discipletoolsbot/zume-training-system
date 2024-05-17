@@ -36,9 +36,13 @@ class Zume_Activites_List100 extends Zume_Activites
                 exit;
             }
         }
-
     }
-
+    public function dt_magic_url_base_allowed_js( $allowed_js ) {
+        return [];
+    }
+    public function dt_magic_url_base_allowed_css( $allowed_css ) {
+        return [];
+    }
     public function body(){
         ?>
         <style>
@@ -49,52 +53,27 @@ class Zume_Activites_List100 extends Zume_Activites
                 border-color: white;
             }
             .print_table_row {
-                vertical-align: middle;
+                vertical-align: bottom;
             }
             .print_table_line {
-                white-space: nowrap;
-                width: 100%;
-            }
-            .print_input {
-                width: 100%;
-                padding: 10px 5px;
-                background-color: white;
-                margin: 0;
+                border-bottom: 1px solid black;
+                width: 70%;
             }
             .print_table_number {
                 text-align: center;
             }
             .print_table_check_column {
-                width: 100%;
+                width: 25%;
                 white-space: nowrap;
                 text-align: center;
             }
             .print_cell {
-                padding: .5em;
-                background-color: lightgrey;
+                padding: 2em 0 0;
             }
-            input[type='radio'].print_radio {
-                transform: scale(2);
-                margin-left: 20px;
-            }
-            table.unstriped tbody tr {
-                border-top: 1px solid lightgrey;
-                border-bottom: 0;
-                background-color: white;
-            }
-            table td {
-                border-bottom: 1px solid white !important;
-            }
-</style>
+        </style>
         <div class="activity-page">
-            <header class="bg-brand">
-                <div class="activity-header center">
-                    <div class="logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>
-                </div>
-            </header>
-            <div style="text-align:center;padding-top:1em;">
+            <div style="text-align:center;">
                 <h1><?php echo esc_html__( 'List of 100', 'zume' ) ?></h1>
-                <a class="f-0 center" href="<?php site_url() ?>/<?php echo $this->lang ?>/activities/listof100_printable" target="_blank"><?php echo esc_html__( 'Switch to Printable Version', 'zume' ) ?></a>
             </div>
             <hr>
             <div>
@@ -103,13 +82,9 @@ class Zume_Activites_List100 extends Zume_Activites
                     for ($x = 1; $x <= 100; $x++) {
                         ?>
                         <tr class="print_table_row">
-                            <td class="print_cell print_table_number"><?php echo esc_attr( $x ); ?></td>
-                            <td class="print_cell print_table_line"><input type="text" class="print_input" name="listof100_input_<?php echo esc_attr( $x ); ?>" placeholder="<?php echo esc_attr( $x ); ?>." /></td>
-                            <td class="print_cell print_table_check_column">
-                                <input type="radio" class="print_radio" name="listof100_radio_<?php echo esc_attr( $x ); ?>" value="" />&nbsp; <?php echo __( 'Disciple', 'zume' ) ?>&nbsp;
-                                <input type="radio" class="print_radio" name="listof100_radio_<?php echo esc_attr( $x ); ?>" value=""  />&nbsp; <?php echo __( 'Unbeliever', 'zume' ) ?>&nbsp;
-                                <input type="radio" class="print_radio" name="listof100_radio_<?php echo esc_attr( $x ); ?>" value=""  />&nbsp; <?php echo __( 'Unknown', 'zume' ) ?>
-                            </td>
+                            <td class="print_cell print_table_number"><?php echo $x; ?></td>
+                            <td class="print_cell print_table_line"></td>
+                            <td class="print_cell print_table_check_column">&#9744; <?php echo __( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo __( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo __( 'Unknown', 'zume' ) ?></td>
                         </tr>
                         <?php
                     }

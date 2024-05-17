@@ -45,7 +45,6 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
         return [];
     }
     public function body(){
-
         ?>
         <style>
             .activity-page {
@@ -58,9 +57,6 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
                 text-align: center;
             }
             .activity-content {
-                border-top: 1px solid grey;
-                border-left: 1px solid grey;
-                border-right: 1px solid grey;
             }
             .coaching_column {
                 border-left: 1px solid grey;
@@ -113,13 +109,14 @@ class Zume_Activites_Coaching_Printable extends Zume_Activites
                         </td>
                         <td>
                         </td>
-                        <td class="coaching_column coaching_bottom">
+                        <td class=" coaching_bottom">
                         </td>
-                        <td class="coaching_column coaching_bottom">
+                        <td class=" coaching_bottom">
                         </td>
-                        <td class="coaching_column coaching_bottom">
+                        <td class=" coaching_bottom">
                         </td>
-                        <td class="coaching_column coaching_bottom">
+                        <td class=" coaching_bottom">
+
                         </td>
                     </tr>
                     <tr>
