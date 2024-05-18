@@ -440,7 +440,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 content: "\2717";
             }
 
-            <?php echo ( $language['rtl'] ) ? '.right_column { float:right; }' : ''; ?>
+            <?php echo ( $language['rtl'] ) ? '.right_column { float:right; }' : '.right_column { float:left; }'; ?>
         </style>
         <div class="grid-x grid-padding-x grid-padding-y" style="max-width:1000px; margin: 0 auto;">
 
