@@ -184,7 +184,6 @@ class Zume_Activites_Coaching extends Zume_Activites
                 </table>
             </div>
         </div>
-        </hr>
         <?php
     }
 }
