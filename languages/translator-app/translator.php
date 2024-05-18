@@ -439,6 +439,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             span.red::after {
                 content: "\2717";
             }
+
+            <?php echo ( $language['rtl'] ) ? '.right_column { float:right; }' : ''; ?>
         </style>
         <div class="grid-x grid-padding-x grid-padding-y" style="max-width:1000px; margin: 0 auto;">
 
@@ -521,7 +523,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['name'] ?? '' ?> </strong>
                                 </td>
-                                <td style="text-align:right;">
+                                <td class="right_column">
                                      Content:
                                      <span class="<?php echo $zume_scripts[$key]['log']['color'] ?? 'red' ?>"> </span>
                                      <span class="<?php echo $zume_scripts[$key]['edit']['color'] ?? 'red' ?>"> </span>
@@ -556,7 +558,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong>
                                 </td>
-                                <td style="text-align:right;">
+                                <td class="right_column">
                                      Title:
                                      <span class="<?php echo $zume_activities[$title_key]['log']['color'] ?? 'red' ?>"> </span>
                                      <span class="<?php echo $zume_activities[$title_key]['edit']['color'] ?? 'red' ?>"> </span>
@@ -596,7 +598,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong>
                                 </td>
-                                <td style="text-align:right;">
+                                <td class="right_column">
                                     Subject:
                                     <span class="<?php echo $zume_messages[$subject_key]['log']['color'] ?? 'red' ?>"> </span>
                                     <span class="<?php echo $zume_messages[$subject_key]['edit']['color'] ?? 'red' ?>"> </span>
@@ -635,7 +637,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <td>
                                     <strong><?php echo $item['post_title'] ?></strong> (<?php echo $item['ID'] ?>)
                                 </td>
-                                <td style="text-align:right;">
+                                <td class="right_column">
                                     Title h1:
                                     <span class="<?php echo $zume_pieces[$h1_key]['log']['color'] ?? 'red' ?>"> </span>
                                     <span class="<?php echo $zume_pieces[$h1_key]['edit']['color'] ?? 'red' ?>"> </span>
@@ -669,9 +671,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </tbody>
                 </table>
             </div>
-
-
-            </div>
+            </div><!-- grid -->
         <?php
     }
     public function weblate() {
