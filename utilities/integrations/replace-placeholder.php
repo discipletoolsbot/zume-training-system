@@ -79,6 +79,7 @@ class Zume_Replace_Placeholder {
             '[image_prayercycle]',
             '[image_fourfields]',
             '[image_genmap]',
+            '[image_trainingcycle]'
         ];
         $replacement_string = [
             '<a class="button small" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>', // Get a Coach
@@ -133,6 +134,7 @@ class Zume_Replace_Placeholder {
             '<img src="'.$mirror_url.$language_code.'/99.png" alt="prayer cycle">', // prayer cycle
             '<img src="'.$mirror_url.$language_code.'/98.png" alt="four fields">', // four fields
             '<img src="'.$mirror_url.$language_code.'/104.png" alt="genmap">', // genmap
+            '<img src="'.$mirror_url.$language_code.'/101.png" alt="training cycle">', // training cycle
         ];
 
         $content = str_replace( $place_holders, $replacement_string, $content );
