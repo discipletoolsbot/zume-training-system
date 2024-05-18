@@ -110,21 +110,21 @@ class Zume_Replace_Placeholder {
             '<a class="button large" href="'.$base_url.$wizard_root.'checkin">'. __( 'Check-in', 'zume' ) .'</a>',
             '<a class="" href="'.$base_url.$wizard_root.'checkin">'. __( 'Check-in', 'zume' ) .'</a>',
 
-            '<a class="button small" href="'.$base_url.'presenter?session=index">10 Session Course</a>',
-            '<a class="button large" href="'.$base_url.'presenter?session=index">10 Session Course</a>',
-            '<a class="" href="'.$base_url.'presenter?session=index">10 Session Course</a>',
+            '<a class="button small" href="'.$base_url.'presenter?session=index">'. __( '10 Session Course', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'presenter?session=index">'. __( '10 Session Course', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'presenter?session=index">'. __( '10 Session Course', 'zume' ) .'</a>',
 
-            '<a class="button small" href="'.$base_url.'presenter?type=20&session=index">20 Session Course</a>',
-            '<a class="button large" href="'.$base_url.'presenter?type=20&session=index">20 Session Course</a>',
-            '<a class="" href="'.$base_url.'presenter?type=20&session=index">20 Session Course</a>',
+            '<a class="button small" href="'.$base_url.'presenter?type=20&session=index">'. __( '20 Session Course', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'presenter?type=20&session=index">'. __( '20 Session Course', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'presenter?type=20&session=index">'. __( '20 Session Course', 'zume' ) .'</a>',
 
-            '<a class="button small" href="">Download Slide Presentation</a>',
-            '<a class="button large" href="">Download Slide Presentation</a>',
-            '<a class="" href="">Download Slide Presentation</a>',
+            '<a class="button small" href="">'. __( 'Download Slide Presentation', 'zume' ) .'</a>',
+            '<a class="button large" href="">'. __( 'Download Slide Presentation', 'zume' ) .'</a>',
+            '<a class="" href="">'. __( 'Download Slide Presentation', 'zume' ) .'</a>',
 
-            '<a class="button small" href="'.$base_url.'share">Share Zúme Page</a>',
-            '<a class="button large" href="'.$base_url.'share">Share Zúme Page</a>',
-            '<a class="" href="'.$base_url.'share">Share Zúme Page</a>',
+            '<a class="button small" href="'.$base_url.'share">'. __( 'Share Zúme Page', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'share">'. __( 'Share Zúme Page', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'share">'. __( 'Share Zúme Page', 'zume' ) .'</a>',
 
             '<img src="'.$mirror_url.'images/pace1.png" alt="" width="640" height="100">', // image pace
             '<img src="'.$mirror_url.'images/pace2.png" alt="" width="640" height="100">',
