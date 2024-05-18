@@ -440,7 +440,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 content: "\2717";
             }
 
-            <?php echo ( $language['rtl'] ) ? '.right_column { float:right; }' : '.right_column { float:left; }'; ?>
+            <?php echo ( $language['rtl'] ) ? '.right_column { text-align:left; }' : '.right_column { text-align:right; }'; ?>
         </style>
         <div class="grid-x grid-padding-x grid-padding-y" style="max-width:1000px; margin: 0 auto;">
 
@@ -547,9 +547,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <tbody>
                     <?php
                         $activities = list_zume_activities( $language['code'] );
-//                        dt_write_log( $activities );
                         $zume_activities = zume_last_activity( 'zume_activities' );
-                        dt_write_log( $zume_activities );
                         foreach( $activities as $item ) {
                             $title_key = 'title_'.$item['language_code'].$item['post_id'];
                             $content_key = 'content_'.$item['language_code'].$item['post_id'];
