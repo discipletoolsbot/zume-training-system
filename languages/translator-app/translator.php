@@ -510,7 +510,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <?php
                         $scripts = list_zume_scripts( $language['code'] );
                         $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
-                        $zume_activities = zume_last_activity( 'zume_activities' );
+                        $zume_scripts = zume_last_activity( 'zume_scripts' );
                         foreach( $fields as $script_id => $item ) {
                             $key = $scripts[$script_id]['script_id'].$scripts[$script_id]['post_id'];
                             ?>
