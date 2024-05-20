@@ -450,31 +450,30 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <strong>WORD COUNT</strong>
             </div>
             <div class="cell center">
+                <?php
+                $weblate = zume_get_weblate();
+                $pieces_en = zume_word_count_pieces( 'en' );
+                $scripts_en = zume_word_count_scripts( 'en' );
+                $activities_en = zume_word_count_activities( 'en' );
+                $messages_en = zume_word_count_messages( 'en' );
+                ?>
                 <div>
-                    <?php
-                    $weblate = zume_get_weblate();
-                    $pieces_en = zume_word_count_pieces( 'en' );
-                    $scripts_en = zume_word_count_scripts( 'en' );
-                    $activities_en = zume_word_count_activities( 'en' );
-                    $messages_en = zume_word_count_messages( 'en' );
-//
-                    ?>
-                    <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
+                    <p style="text-align:center;margin: 10px 0 0;"><strong style="text-decoration: underline;">ENGLISH WORDS</strong>:</p>
                     <strong>Weblate: </strong> <?php echo number_format( $weblate[$language['weblate']]['total_words'] ); ?> |
-                    <strong>Scripts:</strong> <?php echo number_format( $scripts_en ); ?> |
-                    <strong>Activities:</strong> <?php echo number_format( $activities_en ); ?> |
-                    <strong>Messages:</strong> <?php echo number_format( $messages_en ); ?> |
-                    <strong>Pieces:</strong> <?php echo number_format( $pieces_en ); ?> ||
-                    <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces_en + $scripts_en + $activities_en + $messages_en + $weblate[$language['weblate']]['total_words'] ); ?>
+                    <strong>Scripts: </strong> <?php echo number_format( $scripts_en ); ?> |
+                    <strong>Activities: </strong> <?php echo number_format( $activities_en ); ?> |
+                    <strong>Messages: </strong> <?php echo number_format( $messages_en ); ?> |
+                    <strong>Pieces: </strong> <?php echo number_format( $pieces_en ); ?> ||
+                    <strong style="text-decoration: underline;">TOTAL: </strong> <?php echo number_format( $pieces_en + $scripts_en + $activities_en + $messages_en + $weblate[$language['weblate']]['total_words'] ); ?>
                 </div>
+                <?php
+                $pieces = zume_word_count_pieces( $language['code'] );
+                $scripts = zume_word_count_scripts( $language['code'] );
+                $activities = zume_word_count_activities( $language['code'] );
+                $messages = zume_word_count_messages( $language['code'] );
+                ?>
                 <div>
-                    <?php
-                    $pieces = zume_word_count_pieces( $language['code'] );
-                    $scripts = zume_word_count_scripts( $language['code'] );
-                    $activities = zume_word_count_activities( $language['code'] );
-                    $messages = zume_word_count_messages( $language['code'] );
-                    ?>
-                    <strong style="text-decoration: underline; text-transform: uppercase;"><?php echo $language['name'] ?> WORDS</strong>:
+                    <p style="text-align:center;margin: 10px 0 0;"><strong style="text-decoration: underline; text-transform: uppercase;"><?php echo $language['name'] ?> WORDS</strong>:</p>
                     <strong>Weblate:</strong> <?php echo number_format( $weblate[$language['weblate']]['translated_words'] ); ?> |
                     <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> |
                     <strong>Activities:</strong> <?php echo number_format( $activities ); ?> |
@@ -483,11 +482,12 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $weblate[$language['weblate']]['translated_words']); ?>
                 </div>
                 <div>
-                    <strong style="text-decoration: underline; text-transform: uppercase;">WEBLATE STRINGS: </strong>
+                    <p style="text-align: center; margin: 10px 0 0;"><strong style="text-decoration: underline; text-transform: uppercase;">WEBLATE STRINGS: </strong></p>
                     <strong>English:</strong> <?php echo number_format( $weblate[$language['weblate']]['total'] ); ?> |
                     <strong><?php echo $language['name'] ?>:</strong> <?php echo number_format( $weblate[$language['weblate']]['translated'] ); ?> (<?php echo $weblate[$language['weblate']]['translated_percent']; ?>%)
                 </div>
             </div>
+
 
 
             <!-- WEBLATE -->
@@ -536,6 +536,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     </tbody>
                 </table>
             </div>
+
 
 
             <!-- ACTIVITIES -->
