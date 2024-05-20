@@ -79,6 +79,7 @@ class Zume_Training_Home extends Zume_Magic_Page
 
     public function body(){
         global $zume_user_profile;
+        $current_language_code = zume_current_language();
         ?>
 
         <div class="stack | s0 justify-content-center absolute top left mx-0 my-3 p--1 hard-shadow | sticker">
@@ -86,6 +87,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h3 class="uppercase f--2 lh-sm"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
         </div>
         <?php require __DIR__ . '/../parts/nav.php'; ?>
+
         <div class="cover-page | hero min-vh-90 position-relative">
 
             <div class="switcher container | align-items-center gap0 pt-4">
@@ -96,9 +98,9 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="flip-on-rtl" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing">
                 </div>
                 <div class="stack | grow-2 text-center">
-                    <h1 class="f-6 first"><?php echo esc_html_x( 'Disciple Making', 'Disciple Making Training', 'zume' ) ?></h1>
-                    <h1 class="f-8 second brand-light s0"><?php echo esc_html_x( 'Training', 'Disciple Making Training', 'zume' ) ?></h1>
-                    <p class="f-2 s0 px-2"><?php echo esc_html_x( 'for groups of Jesus followers', 'Disciple Making Training for groups of Jesus followers', 'zume' ) ?></p>
+                    <div id="hero-text-section">
+                        <?php echo get_post_meta( '19850', 'home_'.$current_language_code, true ); ?>
+                    </div>
                     <div class="switcher | switcher-width-20 s-3">
 
                         <?php if ( is_user_logged_in() ): ?>
@@ -129,11 +131,11 @@ class Zume_Training_Home extends Zume_Magic_Page
                 <div class="stack | left tail circle-end-small bg-brand-light white p-2">
                     <h3 class="h2"><?php echo esc_html__( 'Overview', 'zume' ) ?></h3>
                     <ul role="list" class="check-list f-2 bold lh-md">
-                        <li><?php echo esc_html__( '20 hours of Training', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( '32 Concepts and Skills', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Group Discussions', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( 'Practice-Oriented', 'zume' ) ?></li>
                         <li><?php echo esc_html__( 'Self-Facilitated', 'zume' ) ?></li>
+                        <li><?php echo esc_html__( 'Practice-Oriented', 'zume' ) ?></li>
+                        <li><?php echo esc_html__( '32 Concepts and Skills', 'zume' ) ?></li>
+                        <li><?php echo esc_html__( '20 hours of Training', 'zume' ) ?></li>
                     </ul>
                 </div>
                 <div class="cover">
