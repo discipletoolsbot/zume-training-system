@@ -93,4 +93,26 @@ $three_circles_for_translation = [
             __( 'Activity Resource', 'zume' ),
         ],
     ],
+    // alternate version of the coaching checklist activity
+    [
+        'key' => 't28_c',
+        'type' => 'activity',
+        'menu' => [],
+        'length' => [20],
+        'center' => [
+            __( 'ACTIVITY', 'zume' ),
+        ],
+        'left' => [
+            __( 'Coaching Checklist', 'zume' ),
+            [
+                __( 'Scan the QR code or find a piece of paper.', 'zume' ),
+                __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist.', 'zume' ),
+            ]
+        ],
+        'right' => [
+//            $activity_base_url . 'coachingchecklist',
+//            zume_create_qr_url( $activity_base_url . 'coachingchecklist' ),
+            __( 'Activity Resource', 'zume' ),
+        ],
+    ],
 ];
