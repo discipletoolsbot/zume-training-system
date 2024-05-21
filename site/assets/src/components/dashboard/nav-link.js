@@ -6,6 +6,7 @@ export class NavLink extends navigator(LitElement) {
         return {
             href: { type: String },
             class: { type: String },
+            as: { type: String },
             locked: { type: Boolean },
             completed: { type: Boolean },
             disableNavigate: { type: Boolean },
@@ -19,6 +20,7 @@ export class NavLink extends navigator(LitElement) {
         super()
         this.href = ''
         this.class = ''
+        this.as = ''
         this.icon = ''
         this.text = ''
         this.explanation = ''
@@ -28,11 +30,16 @@ export class NavLink extends navigator(LitElement) {
     }
 
     handleClick(event) {
-        if ( !this.disableNavigate ) {
+        if ( this.as === 'nav' ) {
             event.preventDefault()
             this.navigate(this.href)
         }
-        event.preventDefault()
+        if ( this.as === 'link' ) {
+            return
+        }
+        if ( this.as === 'button' ) {
+            event.preventDefault()
+        }
     }
 
     printBool(bool) {

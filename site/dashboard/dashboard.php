@@ -123,6 +123,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'set_profile_wizard' => esc_url( '#' ),
                     'plan_training_wizard' => esc_url( zume_make_a_plan_wizard_url() ),
                     'get_coach_wizard' => esc_url( zume_get_a_coach_wizard_url() ),
+                    'resources' => esc_url( zume_resources_url() ),
                 ],
             ]) ?>][0]
         </script>

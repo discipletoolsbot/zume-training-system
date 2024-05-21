@@ -453,16 +453,6 @@ export class DashBoard extends navigator(router(LitElement)) {
         return this.userState.join_community ? true : false
     }
 
-    openResourcesModal(event) {
-        event.preventDefault()
-        const modal = document.querySelector('#resources-modal')
-        jQuery(modal).foundation('open')
-    }
-    closeResourcesModal() {
-        const modal = document.querySelector('#resources-modal')
-        jQuery(modal).foundation('close')
-    }
-
     numberOfGroups() {
         return Object.keys(this.trainingGroups).length
     }
@@ -547,7 +537,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                     href=${this.makeHrefRoute(route.name)}
                                                                     icon=${route.icon}
                                                                     text=${route.translation}
-                                                                    ?disableNavigate=${route.type === 'handled-link'}
+                                                                    as=${route.type === 'handled-link' ? 'button' : 'navs'}
                                                                     @click=${route.type === 'handled-link' ? (event) => {
                                                                         if (DashBoard.getCompletedStatus(route.name, this.userState)) {
                                                                             event.preventDefault()
@@ -587,7 +577,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                 class="menu-btn"
                                                                 icon=${route.icon}
                                                                 text=${jsObject.translations.my_trainings}
-                                                                disableNavigate
+                                                                as="button"
                                                                 @click=${this.toggleTrainingGroups}
                                                             ></nav-link>
                                                             <ul id="training-groups-menu" class="menu vertical nested">
@@ -614,7 +604,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         icon=${route.icon}
                                                         text=${route.translation}
                                                         ?locked=${isLocked}
-                                                        ?disableNavigate=${isHandledLink}
+                                                        as=${isHandledLink ? 'link' : 'nav'}
                                                         @click=${isHandledLink ? (event) => {
                                                             if (isCompleted) {
                                                                 event.preventDefault()
@@ -657,21 +647,24 @@ export class DashBoard extends navigator(router(LitElement)) {
                             </li>
                         </div>
                         <div class="footer-links">
-                            <!-- <nav-link
-                                class="menu-btn | f--1"
-                                href=''
-                                icon='zume-community'
-                                text=${this.hasJoinedCommunity() ? jsObject.translations.community : jsObject.translations.join_the_community}
-                                ?disableNavigate=${true}
-                                @click=${this.openCommunityModal}
-                            ></nav-link> -->
+                            ${
+                                !this.hasJoinedCommunity() ? html`
+                                    <nav-link
+                                        class="menu-btn | f--1"
+                                        href=''
+                                        icon='zume-community'
+                                        text=${this.hasJoinedCommunity() ? jsObject.translations.community : jsObject.translations.join_the_community}
+                                        as="link"
+                                        @click=${this.openCommunityModal}
+                                    ></nav-link>
+                                ` : ''
+                            }
                             <nav-link
                                 class="menu-btn | f--1"
-                                href=''
+                                href=${jsObject.urls.resources}
                                 icon='zume-resources'
                                 text=${jsObject.translations.resources}
-                                ?disableNavigate=${true}
-                                @click=${this.openResourcesModal}
+                                as="link"
                             ></nav-link>
                         </div>
                     </div>
@@ -752,15 +745,6 @@ export class DashBoard extends navigator(router(LitElement)) {
                     `
                 }
 
-            </div>
-            <div class="reveal full" id="resources-modal" data-reveal>
-                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeResourcesModal}>
-                    <span class="icon zume-close"></span>
-                </button>
-                <div class="container-xsm">
-                    <h1>Resources</h1>
-                    <p><a href="/resources">Go Here</a></p>
-                </div>
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
