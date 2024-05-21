@@ -1,11 +1,11 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-class Zume_Activites_Coaching extends Zume_Activites
+class Zume_Activites_Coaching_MAWL extends Zume_Activites
 {
     public $page_title = 'Coaching Checklist';
     public $root = 'activities';
-    public $type = 'coachingchecklist';
+    public $type = 'coaching_mawl';
     public $lang = 'en';
 
     private static $_instance = null;
@@ -95,9 +95,9 @@ class Zume_Activites_Coaching extends Zume_Activites
         <div class="activity-page">
             <div class="activity-title">
                 <h2><?php echo __( 'Coaching Checklist', 'zume' ) ?></h2>
-                <?php echo __( '1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained.', 'zume' ) ?><br>
-                <?php echo __( '2. Coach others by using Model, Assist, Watch, Leave.', 'zume' ) ?>
+                <?php echo __( 'Coach others by using Model, Assist, Watch, Leave.', 'zume' ) ?>
             </div>
+            <br>
             <div class="activity-content">
                 <table class="coaching-table">
                     <tr>
@@ -115,32 +115,11 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <td class=" coaching_bottom">
                         </td>
                     </tr>
-                    <tr>
-                        <td class="coaching_right">
-                            <em><?php echo __( 'Ask yourself, have I', 'zume' ) ?> ...</em>
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Heard', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Obeyed', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Shared', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Trained', 'zume' ) ?>
-                        </td>
-                    </tr>
                     <tr class="coaching_header">
                         <td class="coaching_right">
                             <em><?php echo __( 'Ask yourself, what does my disciple need', 'zume' ) ?> ...</em>
                         </td>
                         <td>
-                            2
                         </td>
                         <td class="coaching_column">
                             <?php echo __( 'Model', 'zume' ) ?>
@@ -181,25 +160,6 @@ class Zume_Activites_Coaching extends Zume_Activites
             </div>
             <br>
             <div>
-                <strong><?php echo __( 'Heard', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I heard about this tool or concept?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Obeyed', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I obeyed this tool or concept? If a tool, have I practiced it on my own? If a concept, have you reflected on how it changes your perspective?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Shared', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I shared this tool or concept? If a tool, have you shown anyone how to use this tool? If a concept, have you shared this concept with anyone?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Trained', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I trained others to share this tool or concept? If a tool, have I trained someone to share the tool with someone else? If a concept, have I trained someone to share the concept with someone else?', 'zume' ) ?>
-                </p>
-            </div>
-            <br>
-            <div>
                 <strong><?php echo __( 'Model', 'zume' ) ?></strong>
                 <p>
                     <?php echo __( 'Modeling is simply providing an example of a practice or tool. It is the briefest part of the training cycle. It usually only needs to be done once. It is simply creating an awareness that a practice or a tool exists and giving a general idea of what it looks like. Modeling repeatedly is not an effective way to equip someone.', 'zume' ) ?>
@@ -221,4 +181,4 @@ class Zume_Activites_Coaching extends Zume_Activites
         <?php
     }
 }
-Zume_Activites_Coaching::instance();
+Zume_Activites_Coaching_MAWL::instance();
