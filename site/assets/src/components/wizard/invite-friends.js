@@ -13,7 +13,7 @@ export class InviteFriends extends LitElement {
             module: { type: String },
             skippable: { type: Boolean },
             t: { type: Object },
-            inviteCode: { type: String, attribute: false },
+            invitecode: { type: String },
             loading: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
             copyFeedback: { type: String, attribute: false },
@@ -28,25 +28,28 @@ export class InviteFriends extends LitElement {
         this.skippable = false
         this.t = {}
 
-        const url = new URL(location.href)
-        const joinKey = url.searchParams.get('joinKey')
-
         this.training = {}
-        this.inviteCode = joinKey
         this.loading = false
         this.errorMessage = ''
         this.copyFeedback = ''
-        this.url = jsObject.site_url + `/app/plan_invite${this.inviteCode !== '' ? '?code=' + this.inviteCode : ''}`
+        this.url = ''
     }
 
     connectedCallback() {
         super.connectedCallback();
 
+        const url = new URL(location.href)
+
+        if (!this.invitecode) {
+            const joinKey = url.searchParams.get('joinKey')
+            this.invitecode = joinKey
+        }
+
+        this.url = jsObject.site_url + `/app/plan_invite${this.invitecode !== '' ? '?code=' + this.invitecode : ''}`
         this.loading = true
 
-        makeRequest( 'GET', `plan/${this.inviteCode}`, {}, 'zume_system/v1' )
+        makeRequest( 'GET', `plan/${this.invitecode}`, {}, 'zume_system/v1' )
             .then((data) => {
-                console.log(data)
                 if (data.error_code) {
                     this.errorMessage = this.t.broken_link
                     return
@@ -81,8 +84,8 @@ export class InviteFriends extends LitElement {
                 continue
             }
 
-            if (DateTime.fromMillis(date.timestamp) < now) {
-                return date.formatted
+            if (DateTime.fromSeconds(date.timestamp) < now) {
+                return DateTime.fromSeconds(date.timestamp).toISODate()
             }
         }
         return ''

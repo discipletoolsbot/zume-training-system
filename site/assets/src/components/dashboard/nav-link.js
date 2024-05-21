@@ -32,6 +32,7 @@ export class NavLink extends navigator(LitElement) {
             event.preventDefault()
             this.navigate(this.href)
         }
+        event.preventDefault()
     }
 
     printBool(bool) {

@@ -14,7 +14,10 @@
 }
 
 .gap0 {
-    gap: 0;
+    gap: 0 !important;
+}
+.gapy0  {
+    row-gap: 0 !important;
 }
 
 @for $i from -5 through 5 {
