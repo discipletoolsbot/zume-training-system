@@ -163,7 +163,8 @@ export function dashRoutes() {
                 makeComponent: (isLocked) => html`<dash-plans ?showTeaser=${isLocked}></dash-plans>`,
             },
         },
-        {
+        /* Muted until join community is added back in */
+        /* {
             name: 'my-churches',
             pattern: `${jsObject.base_url}/my-churches`,
             parent: 'practicing',
@@ -186,7 +187,7 @@ export function dashRoutes() {
             data: {
                 makeComponent: (isLocked) => html`<dash-maps ?showTeaser=${isLocked}></dash-maps>`,
             },
-        },
+        }, */
         {
             name: 'not-found',
             pattern: '*',

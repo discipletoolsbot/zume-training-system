@@ -355,7 +355,8 @@ class Zume_System_CTA_API
                 ],
                 'content_template' => 'card',
             ],
-            [
+            /* Muted until after post go-live */
+            /* [
                 'stages' => [4, 5, 6],
                 'required_keys' => [],
                 'disable_keys' => ['system_joined_affinity_hub'],
@@ -369,7 +370,7 @@ class Zume_System_CTA_API
                     'link' => zume_wizard_url( 'join_the_community' ),
                 ],
                 'content_template' => 'card',
-            ],
+            ], */
 
 
             // HOST triggers
