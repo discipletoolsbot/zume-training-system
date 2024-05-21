@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-08 14:13-0600\n"
+"POT-Creation-Date: 2024-05-17 19:39-0600\n"
 "PO-Revision-Date: 2024-04-10 21:38+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Persian <https://translate.disciple.tools/projects/zume-"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Generator: Weblate 5.4.3\n"
 
 #: appearance/style-override/navigation.php:75
-#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:189
-#: site/dashboard/dashboard.php:241 site/parts/footer.php:11
+#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:198
+#: site/dashboard/dashboard.php:250 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "آموزش"
@@ -33,7 +33,7 @@ msgstr "دانلود کتاب راهنما"
 msgid "FAQs"
 msgstr "سوالات متداول"
 
-#: appearance/style-override/navigation.php:106 site/course/presenter.php:174
+#: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
 #: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:106
 #: site/parts/nav.php:19 site/parts/nav.php:71
@@ -188,10 +188,13 @@ msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "ابزاری که به شما کمک می کند سرمربی خوبی از روابط خود باشید."
 
 #: globals.php:1986 site/activities/list-of-100-printable.php:78
-#: site/activities/list-of-100.php:96 site/course/course-content.php:477
+#: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
 #: site/course/course-content.php:3555
+#: utilities/integrations/replace-placeholder.php:101
+#: utilities/integrations/replace-placeholder.php:102
+#: utilities/integrations/replace-placeholder.php:103
 msgid "List of 100"
 msgstr "لیست 100 نفره"
 
@@ -513,12 +516,15 @@ msgstr ""
 "اشتراک بگذارید."
 
 #: globals.php:2205 globals.php:2207
-#: site/activities/coaching-checklist-printable.php:101
-#: site/activities/coaching-checklist.php:50
+#: site/activities/coaching-checklist-printable.php:97
+#: site/activities/coaching-checklist.php:97
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
 #: site/course/course-content.php:5310
+#: utilities/integrations/replace-placeholder.php:105
+#: utilities/integrations/replace-placeholder.php:106
+#: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "چک لیست رهبری"
 
@@ -562,7 +568,7 @@ msgstr ""
 "کنند. همچنین از یک قالب 3/3 پیروی می کند و راهی قدرتمند برای ارزیابی سلامت "
 "معنوی کار خدا در منطقه شما است."
 
-#: globals.php:2229 site/dashboard/dashboard.php:277
+#: globals.php:2229 site/dashboard/dashboard.php:271
 msgid "Peer Mentoring"
 msgstr "مشاوره با همتا"
 
@@ -609,9 +615,10 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6982 site/course/presenter.php:199
-#: site/dashboard/dashboard.php:269 site/pages/follow-jesus.php:339
-#: site/parts/footer.php:72 site/parts/footer.php:79 site/parts/footer.php:86
+#: globals.php:6982 site/course/presenter.php:196
+#: site/dashboard/dashboard.php:265 site/dashboard/wizard.php:139
+#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "نزدیک"
@@ -620,95 +627,114 @@ msgstr "نزدیک"
 msgid "No Results"
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:103
+#: site/activities/coaching-checklist-printable.php:99
+#: site/activities/coaching-checklist.php:99
 msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:104
+#: site/activities/coaching-checklist-printable.php:100
 msgid ""
 "2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple."
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:112
+#: site/activities/coaching-checklist-printable.php:108
+#: site/activities/coaching-checklist.php:108
 #, fuzzy
 msgid "Training Tools/Concepts"
 msgstr "چرخه آموزش"
 
-#: site/activities/coaching-checklist-printable.php:127
+#: site/activities/coaching-checklist-printable.php:124
 #, fuzzy
 msgid "Ask yourself, have you"
 msgstr "از خودت بپرس"
 
-#: site/activities/coaching-checklist-printable.php:133
-#: site/dashboard/dashboard.php:221
+#: site/activities/coaching-checklist-printable.php:130
+#: site/activities/coaching-checklist.php:130 site/dashboard/dashboard.php:230
 msgid "Heard"
 msgstr "بشنو"
 
-#: site/activities/coaching-checklist-printable.php:136
-#: site/dashboard/dashboard.php:223
+#: site/activities/coaching-checklist-printable.php:133
+#: site/activities/coaching-checklist.php:133 site/dashboard/dashboard.php:232
 msgid "Obeyed"
 msgstr "اطاعت کرد"
 
-#: site/activities/coaching-checklist-printable.php:139
-#: site/dashboard/dashboard.php:225
+#: site/activities/coaching-checklist-printable.php:136
+#: site/activities/coaching-checklist.php:136 site/dashboard/dashboard.php:234
 msgid "Shared"
 msgstr "به اشتراک گذاشته شده"
 
-#: site/activities/coaching-checklist-printable.php:142
-#: site/dashboard/dashboard.php:227
+#: site/activities/coaching-checklist-printable.php:139
+#: site/activities/coaching-checklist.php:139 site/dashboard/dashboard.php:236
 msgid "Trained"
 msgstr "آموزش دیده"
 
-#: site/activities/coaching-checklist-printable.php:147
+#: site/activities/coaching-checklist-printable.php:144
 msgid "Ask yourself, what should I do for my disciple"
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:153
+#: site/activities/coaching-checklist-printable.php:150
+#: site/activities/coaching-checklist.php:150
 msgid "Model"
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:156
+#: site/activities/coaching-checklist-printable.php:153
+#: site/activities/coaching-checklist.php:153
 msgid "Assist"
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:159
+#: site/activities/coaching-checklist-printable.php:156
+#: site/activities/coaching-checklist.php:156
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:202
 msgid "Watch"
 msgstr ""
 
-#: site/activities/coaching-checklist-printable.php:162
+#: site/activities/coaching-checklist-printable.php:159
+#: site/activities/coaching-checklist.php:159
 msgid "Leave"
 msgstr ""
 
-#: site/activities/coaching-checklist.php:51 site/activities/list-of-100.php:97
-#: site/activities/three-month-plan.php:67
-msgid "Switch to Printable Version"
+#: site/activities/coaching-checklist.php:100
+msgid "2. Coach others with Model, Assist, Watch, Leave."
 msgstr ""
 
+#: site/activities/coaching-checklist.php:124
+#, fuzzy
+msgid "Ask yourself, have I"
+msgstr "از خودت بپرس"
+
+#: site/activities/coaching-checklist.php:144
+#, fuzzy
+msgid "Ask yourself, what does my disciple need"
+msgstr "از خودت بپرس"
+
 #: site/activities/list-of-100-printable.php:89
-#: site/activities/list-of-100.php:109
+#: site/activities/list-of-100.php:87
 #, fuzzy
 msgid "Disciple"
 msgstr "شاگرد سازی به روش جوجه اردک"
 
 #: site/activities/list-of-100-printable.php:89
-#: site/activities/list-of-100.php:110
+#: site/activities/list-of-100.php:87
 msgid "Unbeliever"
 msgstr ""
 
 #: site/activities/list-of-100-printable.php:89
-#: site/activities/list-of-100.php:111
+#: site/activities/list-of-100.php:87
 msgid "Unknown"
 msgstr ""
 
 #: site/activities/three-month-plan-printable.php:46
-#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:196
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:205
 #, fuzzy
 msgid "3-Month Plan"
 msgstr "برنامه سه ماهه"
 
-#: site/activities/three-month-plan.php:80 site/course/presenter.php:132
+#: site/activities/three-month-plan.php:67
+msgid "Switch to Printable Version"
+msgstr ""
+
+#: site/activities/three-month-plan.php:80
 #, fuzzy
 msgid "Scripts are off"
 msgstr "کلام خدا"
@@ -719,8 +745,8 @@ msgid ""
 "the printable version using the link above."
 msgstr ""
 
-#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:173
-#: site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:178
+#: site/dashboard/wizard.php:251 site/profile/profile.php:153
 msgid "Save"
 msgstr "ذخیره"
 
@@ -1608,7 +1634,7 @@ msgstr ""
 msgid "Obey"
 msgstr "اطاعت کرد"
 
-#: site/course/course-content.php:683 site/dashboard/dashboard.php:152
+#: site/course/course-content.php:683 site/dashboard/dashboard.php:157
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
 msgid "Share"
@@ -2562,11 +2588,13 @@ msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
 
-#: site/course/course-content.php:2616 site/dashboard/dashboard.php:187
-#: site/dashboard/wizard.php:175 site/pages/about.php:254
-#: site/pages/messages.php:251 site/parts/footer.php:12
-#: site/parts/footer.php:18 site/parts/nav.php:88
+#: site/course/course-content.php:2616 site/dashboard/dashboard.php:196
+#: site/dashboard/wizard.php:183 site/pages/about.php:254
+#: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
+#: utilities/integrations/replace-placeholder.php:85
+#: utilities/integrations/replace-placeholder.php:86
+#: utilities/integrations/replace-placeholder.php:87
 msgid "Get a Coach"
 msgstr "یک مربی بگیرید"
 
@@ -2830,7 +2858,7 @@ msgstr ""
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr ""
 
-#: site/course/course-content.php:3016 site/dashboard/dashboard.php:198
+#: site/course/course-content.php:3016 site/dashboard/dashboard.php:207
 #, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
@@ -3371,7 +3399,7 @@ msgid "NEXT STEP"
 msgstr ""
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:229 site/dashboard/wizard.php:137
+#: site/dashboard/dashboard.php:238 site/dashboard/wizard.php:141
 #: site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
@@ -3402,83 +3430,56 @@ msgstr ""
 
 #: site/course/presenter.php:131
 #, fuzzy
-msgid "Zúme Course Presenter"
+msgid "Course Presenter"
 msgstr "Zúme Course v4"
 
-#: site/course/presenter.php:133
-msgid ""
-"To enjoy the interactive experience of the zume course, turn on scripts if "
-"you are able."
-msgstr ""
-
-#: site/course/presenter.php:147
-msgid ""
-"If you are unable to turn on scripts, you may download the course slides "
-"below"
-msgstr ""
-
-#: site/course/presenter.php:160
-#, fuzzy, php-format
-msgid "Zúme Course slides in %s"
-msgstr "دوره زومه"
-
-#: site/course/presenter.php:164
-msgid "Unfortunately we do not have the course available for download yet."
-msgstr ""
-
-#: site/course/presenter.php:165
-msgid "We will be producing the slides soon."
+#: site/course/presenter.php:148
+msgid "Download the offline slides here"
 msgstr ""
 
 #: site/course/presenter.php:166
-msgid ""
-"Please come back later and check on our resources page for the slides "
-"download."
-msgstr ""
-
-#: site/course/presenter.php:167 site/dashboard/dashboard.php:233
-#: site/pages/resources.php:88 site/parts/footer.php:41
-msgid "Resources"
-msgstr "منابع"
-
-#: site/course/presenter.php:170
 msgid "Links"
 msgstr ""
 
-#: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:11
+#: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
 msgstr "خانه"
 
-#: site/course/presenter.php:176 site/pages/_strings-mobile-pwa.php:13
+#: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:13
 #: site/parts/footer.php:10 site/parts/nav.php:23 site/parts/nav.php:75
 msgid "About"
 msgstr "درباره"
 
-#: site/course/presenter.php:177
+#: site/course/presenter.php:173
 #, fuzzy
 msgid "Course"
 msgstr "دوره"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:174 site/dashboard/dashboard.php:242
+#: site/pages/resources.php:88 site/parts/footer.php:41
+msgid "Resources"
+msgstr "منابع"
+
+#: site/course/presenter.php:191
 #, fuzzy
 msgid "Exit Course"
 msgstr "دوره"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:192
 msgid "Switch Views"
 msgstr ""
 
-#: site/course/presenter.php:196
+#: site/course/presenter.php:193
 #, fuzzy
 msgid "Next slide"
 msgstr "جلسه بعدی"
 
-#: site/course/presenter.php:197
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Previous slide"
 msgstr "قبلی"
 
-#: site/course/presenter.php:198
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Session"
 msgstr "جلسه 1"
@@ -3492,7 +3493,7 @@ msgstr ""
 msgid "Something went wrong with your checkin process."
 msgstr "اوه مشکلی پیش آمد. دوباره امتحان کنید!"
 
-#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:250
+#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:259
 #: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
 #: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
 #: utilities/apis/cta-api.php:338
@@ -3519,306 +3520,326 @@ msgstr "پیشرفت زومه"
 msgid "%d%%"
 msgstr ""
 
-#: site/dashboard/dashboard.php:149
+#: site/dashboard/dashboard.php:154 site/dashboard/wizard.php:249
 msgid "Done"
 msgstr ""
 
-#: site/dashboard/dashboard.php:150
+#: site/dashboard/dashboard.php:155
 msgid "Edit"
 msgstr ""
 
-#: site/dashboard/dashboard.php:151 site/pages/_strings-mobile-pwa.php:26
+#: site/dashboard/dashboard.php:156 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "حذف"
 
-#: site/dashboard/dashboard.php:153
+#: site/dashboard/dashboard.php:158
 #, fuzzy
 msgid "Active"
 msgstr "فعال سازی"
 
-#: site/dashboard/dashboard.php:154
+#: site/dashboard/dashboard.php:159
 #, fuzzy
 msgid "Completed"
 msgstr "دوره کامل است"
 
-#: site/dashboard/dashboard.php:155
+#: site/dashboard/dashboard.php:160
 #, fuzzy
 msgid "Uncompleted"
 msgstr "دوره کامل است"
 
-#: site/dashboard/dashboard.php:156
+#: site/dashboard/dashboard.php:161
 #, fuzzy
 msgid "Not Heard"
 msgstr "بشنو"
 
-#: site/dashboard/dashboard.php:157 site/pages/share.php:122
+#: site/dashboard/dashboard.php:162 site/pages/share.php:122
 msgid "All"
 msgstr ""
 
-#: site/dashboard/dashboard.php:158 site/profile/profile.php:159
+#: site/dashboard/dashboard.php:163 site/profile/profile.php:159
 msgid "Logout"
 msgstr "خروج"
 
-#: site/dashboard/dashboard.php:159 site/pages/share.php:125
+#: site/dashboard/dashboard.php:164 site/pages/share.php:125
 msgid "Filter"
 msgstr ""
 
-#: site/dashboard/dashboard.php:160
+#: site/dashboard/dashboard.php:165
 msgid "List View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:161
+#: site/dashboard/dashboard.php:166
 msgid "Grid View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:162
+#: site/dashboard/dashboard.php:167
 #, fuzzy
 msgid "View Now"
 msgstr "نمایش گروه"
 
-#: site/dashboard/dashboard.php:163
+#: site/dashboard/dashboard.php:168
 #, fuzzy
 msgid "Complete Now"
 msgstr "دوره کامل است"
 
-#: site/dashboard/dashboard.php:164
+#: site/dashboard/dashboard.php:169
 msgid "View"
 msgstr ""
 
-#: site/dashboard/dashboard.php:165
+#: site/dashboard/dashboard.php:170
 msgid "Menu"
 msgstr ""
 
-#: site/dashboard/dashboard.php:166 site/dashboard/wizard.php:142
-#: site/dashboard/wizard.php:183 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:171 site/dashboard/wizard.php:146
+#: site/dashboard/wizard.php:192 site/profile/profile.php:116
 msgid "Name"
 msgstr "نام"
 
-#: site/dashboard/dashboard.php:167 site/dashboard/wizard.php:140
-#: site/dashboard/wizard.php:154 site/profile/profile.php:120
-#: zume-training-system.php:320
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:144
+#: site/dashboard/wizard.php:162 site/profile/profile.php:120
+#: zume-training-system.php:317
 msgid "Phone"
 msgstr "تلفن"
 
-#: site/dashboard/dashboard.php:168 site/dashboard/wizard.php:152
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:160
 #: site/login/login-template.php:437 site/login/login-template.php:438
-#: site/profile/profile.php:124 zume-training-system.php:318
+#: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "ایمیل"
 
-#: site/dashboard/dashboard.php:169
+#: site/dashboard/dashboard.php:174
 msgid "Communications Email"
 msgstr ""
 
-#: site/dashboard/dashboard.php:170 site/dashboard/wizard.php:141
+#: site/dashboard/dashboard.php:175 site/dashboard/wizard.php:145
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "شهر"
 
-#: site/dashboard/dashboard.php:171
+#: site/dashboard/dashboard.php:176
 #, fuzzy
 msgid "No Locations found"
 msgstr "هیچ کاربری یافت نشد."
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:160
-#: site/dashboard/wizard.php:187 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:177 site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:196 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
 msgstr "زبان"
 
-#: site/dashboard/dashboard.php:174
+#: site/dashboard/dashboard.php:179
 #, fuzzy
 msgid "Edit Profile"
 msgstr "پروفایل زومه"
 
-#: site/dashboard/dashboard.php:175
+#: site/dashboard/dashboard.php:180
 msgid "Check out this Zúme concept"
 msgstr ""
 
-#: site/dashboard/dashboard.php:176
+#: site/dashboard/dashboard.php:181
 #, fuzzy
 msgid "Preview"
 msgstr "مشاهده"
 
-#: site/dashboard/dashboard.php:177 site/dashboard/dashboard.php:241
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:182 site/dashboard/dashboard.php:250
+#: site/dashboard/dashboard.php:257
 #, php-format
 msgid "Add new %s"
 msgstr ""
 
-#: site/dashboard/dashboard.php:177
+#: site/dashboard/dashboard.php:182
 #, fuzzy
 msgid "Commitment"
 msgstr "تعهدات دیگر:"
 
-#: site/dashboard/dashboard.php:178 site/pages/share.php:82
+#: site/dashboard/dashboard.php:183 site/pages/share.php:82
 #, fuzzy
 msgid "Copy Link"
 msgstr "پیوند"
 
-#: site/dashboard/dashboard.php:179
+#: site/dashboard/dashboard.php:184
 msgid "Copy this link and send it to your friends 🙂"
 msgstr ""
 
-#: site/dashboard/dashboard.php:180 site/pages/share.php:84
+#: site/dashboard/dashboard.php:185 site/pages/share.php:84
 msgid "Thanks!"
 msgstr ""
 
-#: site/dashboard/dashboard.php:181 site/pages/share.php:85
+#: site/dashboard/dashboard.php:186
 #, fuzzy
 msgid "Link copied"
 msgstr "پیوند داده شده به"
 
-#: site/dashboard/dashboard.php:182
+#: site/dashboard/dashboard.php:187
 #, fuzzy
 msgid "Getting Started"
 msgstr "شروع کنید"
 
-#: site/dashboard/dashboard.php:183 utilities/apis/cta-api.php:250
+#: site/dashboard/dashboard.php:188 utilities/apis/cta-api.php:250
 #: utilities/apis/cta-api.php:252
 #, fuzzy
 msgid "Set Profile"
 msgstr "پروفایل زومه"
 
-#: site/dashboard/dashboard.php:184
+#: site/dashboard/dashboard.php:189
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr ""
 
-#: site/dashboard/dashboard.php:185
+#: site/dashboard/dashboard.php:190 site/dashboard/wizard.php:215
 #, fuzzy
-msgid "Plan a Training"
-msgstr "1 آموزش"
+msgid "Join or create a training group"
+msgstr "میزبان یک دوره آموزشی باشید"
 
-#: site/dashboard/dashboard.php:186
+#: site/dashboard/dashboard.php:191
 msgid ""
-"Create your own training group with our easy to set up wizard or join one of "
-"our online trainings"
+"Join one of our online trainings or create your own training group with our "
+"easy to set up wizard"
 msgstr ""
 
-#: site/dashboard/dashboard.php:188
+#: site/dashboard/dashboard.php:192
+#, fuzzy
+msgid "Create Training Group"
+msgstr "1 آموزش"
+
+#: site/dashboard/dashboard.php:193
+#, fuzzy
+msgid "Create your own training group with our easy to set up wizard"
+msgstr "لیست 100 نفره خودتان را تهیه کنید"
+
+#: site/dashboard/dashboard.php:194 site/dashboard/wizard.php:268
+#, fuzzy
+msgid "Join Training Group"
+msgstr "میزبان یک دوره آموزشی باشید"
+
+#: site/dashboard/dashboard.php:195
+#, fuzzy
+msgid "Join an online training group run by a coach"
+msgstr "میزبان یک دوره آموزشی باشید"
+
+#: site/dashboard/dashboard.php:197
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
 
-#: site/dashboard/dashboard.php:190
+#: site/dashboard/dashboard.php:199
 #, fuzzy
 msgid "My Progress"
 msgstr "پیشرفت"
 
-#: site/dashboard/dashboard.php:191
+#: site/dashboard/dashboard.php:200
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
 
-#: site/dashboard/dashboard.php:192
+#: site/dashboard/dashboard.php:201
 msgid "Information about progress"
 msgstr ""
 
-#: site/dashboard/dashboard.php:193
+#: site/dashboard/dashboard.php:202
 #, fuzzy
 msgid "My Training"
 msgstr "1 آموزش"
 
-#: site/dashboard/dashboard.php:194
+#: site/dashboard/dashboard.php:203
 #, fuzzy
 msgid "My Trainings"
 msgstr "1 آموزش"
 
-#: site/dashboard/dashboard.php:195
+#: site/dashboard/dashboard.php:204
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
 
-#: site/dashboard/dashboard.php:197
+#: site/dashboard/dashboard.php:206
 #, fuzzy
 msgid "Create Your Plan"
 msgstr "برنامه سه ماهه"
 
-#: site/dashboard/dashboard.php:199
+#: site/dashboard/dashboard.php:208
 #, fuzzy
 msgid "Three Month Plan Locked"
 msgstr "برنامه سه ماهه"
 
-#: site/dashboard/dashboard.php:200
+#: site/dashboard/dashboard.php:209
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
 
-#: site/dashboard/dashboard.php:201
+#: site/dashboard/dashboard.php:210
 msgid "Unlock now"
 msgstr ""
 
-#: site/dashboard/dashboard.php:202
+#: site/dashboard/dashboard.php:211
 #, fuzzy
 msgid "Practicing"
 msgstr "تمرین"
 
-#: site/dashboard/dashboard.php:203
+#: site/dashboard/dashboard.php:212
 #, fuzzy
 msgid "My Coach"
 msgstr "مربی"
 
-#: site/dashboard/dashboard.php:204
+#: site/dashboard/dashboard.php:213
 msgid "Quick access to your coach at all times."
 msgstr ""
 
-#: site/dashboard/dashboard.php:205
+#: site/dashboard/dashboard.php:214
 #, fuzzy
 msgid "My Tools"
 msgstr "ابزار"
 
-#: site/dashboard/dashboard.php:206
+#: site/dashboard/dashboard.php:215
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
 
-#: site/dashboard/dashboard.php:207
+#: site/dashboard/dashboard.php:216
 #, fuzzy
 msgid "My Plans"
 msgstr "برنامه من"
 
-#: site/dashboard/dashboard.php:208
+#: site/dashboard/dashboard.php:217
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
 
-#: site/dashboard/dashboard.php:209
+#: site/dashboard/dashboard.php:218
 #, fuzzy
 msgid "My Plans are Locked"
 msgstr "1 آموزش"
 
-#: site/dashboard/dashboard.php:210
+#: site/dashboard/dashboard.php:219
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
 
-#: site/dashboard/dashboard.php:211
+#: site/dashboard/dashboard.php:220
 #, fuzzy
 msgid "My Churches"
 msgstr "2 کلیساهای ساده"
 
-#: site/dashboard/dashboard.php:212
+#: site/dashboard/dashboard.php:221
 msgid "Unlock the My Churches area by joining the community."
 msgstr ""
 
-#: site/dashboard/dashboard.php:213
+#: site/dashboard/dashboard.php:222
 msgid "My Maps"
 msgstr ""
 
-#: site/dashboard/dashboard.php:214
+#: site/dashboard/dashboard.php:223
 msgid "My Maps are Locked"
 msgstr ""
 
-#: site/dashboard/dashboard.php:215
+#: site/dashboard/dashboard.php:224
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -3826,267 +3847,204 @@ msgid ""
 "seeing the great commission fulfilled."
 msgstr ""
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:225
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 آموزش"
 
-#: site/dashboard/dashboard.php:217 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:226 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "دوره"
 
-#: site/dashboard/dashboard.php:218 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:227 site/parts/footer.php:29
+#: utilities/integrations/replace-placeholder.php:113
+#: utilities/integrations/replace-placeholder.php:114
+#: utilities/integrations/replace-placeholder.php:115
 #, fuzzy
 msgid "10 Session Course"
 msgstr "جلسه 1"
 
-#: site/dashboard/dashboard.php:219 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:228 site/parts/footer.php:30
+#: utilities/integrations/replace-placeholder.php:117
+#: utilities/integrations/replace-placeholder.php:118
+#: utilities/integrations/replace-placeholder.php:119
 #, fuzzy
 msgid "20 Session Course"
 msgstr "جلسه 1"
 
-#: site/dashboard/dashboard.php:220
+#: site/dashboard/dashboard.php:229
 #, fuzzy
 msgid "Intensive Course"
 msgstr "جلسه 1"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:231
 msgid "Have I heard about this tool or concept?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:233
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:235
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:228
+#: site/dashboard/dashboard.php:237
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
 
-#: site/dashboard/dashboard.php:230 site/dashboard/wizard.php:188
+#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:197
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
 msgid "Join"
 msgstr ""
 
-#: site/dashboard/dashboard.php:231
+#: site/dashboard/dashboard.php:240
 msgid "Join the community to get access to this area."
 msgstr ""
 
-#: site/dashboard/dashboard.php:232
+#: site/dashboard/dashboard.php:241
 #, fuzzy
 msgid "Community links"
 msgstr "انجمن"
 
-#: site/dashboard/dashboard.php:234
+#: site/dashboard/dashboard.php:243
 #, fuzzy
 msgid "Previous Slide"
 msgstr "قبلی"
 
-#: site/dashboard/dashboard.php:235
+#: site/dashboard/dashboard.php:244
 #, fuzzy
 msgid "Next Slide"
 msgstr "جلسه بعدی"
 
-#: site/dashboard/dashboard.php:236
+#: site/dashboard/dashboard.php:245
 #, fuzzy
 msgid "Group Members"
 msgstr "نام گروه"
 
-#: site/dashboard/dashboard.php:237
+#: site/dashboard/dashboard.php:246
 #, fuzzy
 msgid "Mark Completed"
 msgstr "دوره کامل است"
 
-#: site/dashboard/dashboard.php:238 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:247 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "جلسه را شروع کنید"
 
-#: site/dashboard/dashboard.php:239
+#: site/dashboard/dashboard.php:248
 msgid "Show details"
 msgstr ""
 
-#: site/dashboard/dashboard.php:240
+#: site/dashboard/dashboard.php:249
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:242 utilities/apis/cta-api.php:235
+#: site/dashboard/dashboard.php:251 utilities/apis/cta-api.php:235
 #: utilities/apis/cta-api.php:237
 #, fuzzy
 msgid "Invite Friends"
 msgstr "بعضی از دوستان تان را دعوت کنید"
 
-#: site/dashboard/dashboard.php:243
+#: site/dashboard/dashboard.php:252
 msgid "Click to add your first church"
 msgstr ""
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Church Name"
 msgstr "2 کلیساهای ساده"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:254
 #, fuzzy
 msgid "Number of People"
 msgstr "تعداد اعضا"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:255
 #, fuzzy
 msgid "Church Location"
 msgstr "مکان فعلی را ذخیره کنید"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:256
 #, fuzzy
 msgid "Parent Church"
 msgstr "عضو دو کلیسا"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:257
 #, fuzzy
 msgid "Church"
 msgstr "2 کلیساهای ساده"
 
-#: site/dashboard/dashboard.php:249
+#: site/dashboard/dashboard.php:258
 #, fuzzy
 msgid "cancel"
 msgstr "لغو"
 
-#: site/dashboard/dashboard.php:251
+#: site/dashboard/dashboard.php:260
 #, fuzzy
 msgid "You have requested a coach"
 msgstr "درخواست مربیگری کرده اید."
 
-#: site/dashboard/dashboard.php:252
+#: site/dashboard/dashboard.php:261
 #, fuzzy
 msgid "You have joined a training"
 msgstr "میزبان یک دوره آموزشی باشید"
 
-#: site/dashboard/dashboard.php:253
+#: site/dashboard/dashboard.php:262
 #, fuzzy
 msgid "You have set your profile"
 msgstr "پروفایل شما"
 
-#: site/dashboard/dashboard.php:254
+#: site/dashboard/dashboard.php:263
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
 msgstr ""
 
-#: site/dashboard/dashboard.php:254 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:263 utilities/apis/cta-api.php:294
 #, fuzzy
 msgid "3 month plan"
 msgstr "برنامه سه ماهه"
 
-#: site/dashboard/dashboard.php:255
+#: site/dashboard/dashboard.php:264
 #, fuzzy
 msgid "You have joined the community"
 msgstr "انجمن"
 
-#: site/dashboard/dashboard.php:256
-msgid "Will you do 1 or 2 hour training sessions?"
-msgstr ""
-
-#: site/dashboard/dashboard.php:257
-#, fuzzy
-msgid "1 hour (20 sessions)"
-msgstr "جلسه"
-
-#: site/dashboard/dashboard.php:258
-#, fuzzy
-msgid "2 hour (10 sessions)"
-msgstr "جلسه"
-
-#: site/dashboard/dashboard.php:259
-msgid "What time of day?"
-msgstr ""
-
-#: site/dashboard/dashboard.php:260
-#, fuzzy
-msgid "Morning"
-msgstr "آموزش"
-
-#: site/dashboard/dashboard.php:261
-msgid "Afternoon"
-msgstr ""
-
-#: site/dashboard/dashboard.php:262
-msgid "Evening"
-msgstr ""
-
-#: site/dashboard/dashboard.php:263
-#, fuzzy
-msgid "How often will you meet?"
-msgstr "چه احساسی دارید؟"
-
-#: site/dashboard/dashboard.php:264
-msgid "Every day"
-msgstr ""
-
-#: site/dashboard/dashboard.php:265
-msgid "Once a week"
-msgstr ""
-
-#: site/dashboard/dashboard.php:266
-msgid "Twice a month"
-msgstr ""
-
-#: site/dashboard/dashboard.php:267
-msgid "Once a month"
-msgstr ""
-
-#: site/dashboard/dashboard.php:268
-#, fuzzy
-msgid "When do you plan to start?"
-msgstr "درباره خدا چه یاد می گیرید؟"
-
-#: site/dashboard/dashboard.php:270 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/dashboard.php:271 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/dashboard.php:272 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:266 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
 
-#: site/dashboard/dashboard.php:273 site/pages/privacy-policy.php:117
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:155
+#: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
 
-#: site/dashboard/dashboard.php:274 site/pages/privacy-policy.php:120
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:156
+#: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
 
-#: site/dashboard/dashboard.php:275
+#: site/dashboard/dashboard.php:269
 #, fuzzy
 msgid "Zúme Community"
 msgstr "انجمن"
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:270
 msgid ""
 "Zúme is a community of practice and encouragement for those who want to see "
 "disciple making movements. The Zúme vision is to see one trainee and two "
@@ -4094,41 +4052,41 @@ msgid ""
 "people globally."
 msgstr ""
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:272
 msgid ""
 "Connect with others like you who want to see a disciple making movement in "
 "their area. Share your experience with others, and learn from others who are "
 "discovering new things."
 msgstr ""
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:273
 msgid "Encouragement"
 msgstr ""
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:274
 msgid ""
 "Hear news about disciple making movements in your region and your wider "
 "country, get reports of  progress, and get connected to online and face-to-"
 "face gatherings."
 msgstr ""
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:275
 #, fuzzy
 msgid "Free Tools"
 msgstr "ابزار"
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:276
 msgid ""
 "Access free tools for tracking disciple-making and church planting in your "
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:277
 msgid "Join for Free"
 msgstr ""
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:283
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4137,12 +4095,12 @@ msgstr ""
 "من داستان خودم [شهادت] و داستان خدا [انجیل] را با این افراد در میان خواهم "
 "گذاشت:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:284
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "من این افراد را دعوت خواهم کرد تا با من یک گروه پاسخگویی را شروع کنند:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:285
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4150,11 +4108,11 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید تا گروه های پاسخگویی خودشان را آغاز کنند "
 "و به آنها آموزش خواهم داد که چطور این کار را انجام دهند:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:286
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "من این افراد را دعوت خواهم کرد تا با من گروه 3/3 را آغاز کنند:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:287
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4162,7 +4120,7 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید تا گروه های 3/3 خودشان را آغاز کنند و به "
 "آنها آموزش خواهم داد که چطور این کار را انجام دهند:"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:288
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4171,16 +4129,16 @@ msgstr ""
 "من این افراد را دعوت خواهم کرد که در یک گروه امید یا کشف 3/3 شرکت کنند "
 "[پیوست کتاب راهنمای زومه را ببینید]"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:289
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "من این افراد را دعوت خواهم کرد که با من در دعای پیاده شرکت کنند:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:290
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "من در هر [روز / هفته / ماه] یک بار دعای پیاده خواهم کرد."
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:291
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4189,7 +4147,7 @@ msgstr ""
 "من این افراد را تجهیز خواهم کرد تا داستان خودشان و داستان خدا را انتقال دهند "
 "و لیستی 100 نفره از افرادی که در شبکه رابطه ای آنها هستند تهیه کنند:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:292
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4197,11 +4155,11 @@ msgstr ""
 "من این افراد را به چالش خواهم کشید که از ابزار چرخه دعا بصورت دوره ای "
 "استفاده کنند:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:293
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "من از ابزار چرخه دعا هر [روز / هفته / ماه] یک بار استفاده خواهم کرد."
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -4210,163 +4168,163 @@ msgstr ""
 "من این افراد را دعوت خواهم کرد که بخشی از یک گروه کوچک رهبری باشند که من آن "
 "را رهبری خواهم کرد:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "من این افراد را تشویق خواهم کرد که این دوره آموزشی زومه را بگذرانند:"
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:296
 #, fuzzy
 msgid "Other commitments:"
 msgstr "تعهدات دیگر:"
 
-#: site/dashboard/wizard.php:124
+#: site/dashboard/wizard.php:131
+msgctxt ""
+"This is the title for the screen where the application wizard has not been "
+"found"
 msgid "Bad Wizard"
 msgstr ""
 
-#: site/dashboard/wizard.php:125
+#: site/dashboard/wizard.php:132
+msgctxt ""
+"This is some humourous text using a play on words as the application wizard "
+"sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
 msgstr ""
 
-#: site/dashboard/wizard.php:126
+#: site/dashboard/wizard.php:133
 msgid "Wizard is already completed"
 msgstr ""
 
-#: site/dashboard/wizard.php:127
+#: site/dashboard/wizard.php:134
 msgid "Get back home"
 msgstr ""
 
-#: site/dashboard/wizard.php:128 site/login/login-template.php:408
+#: site/dashboard/wizard.php:135 site/login/login-template.php:408
 msgid "Back"
 msgstr ""
 
-#: site/dashboard/wizard.php:129 site/dashboard/wizard.php:148
-#: site/dashboard/wizard.php:167 site/pages/_strings-mobile-pwa.php:34
+#: site/dashboard/wizard.php:136 site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:175 site/dashboard/wizard.php:259
+#: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "بعدی"
 
-#: site/dashboard/wizard.php:130
+#: site/dashboard/wizard.php:137 site/dashboard/wizard.php:250
 msgid "Skip"
 msgstr ""
 
-#: site/dashboard/wizard.php:131 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:138 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "پایان"
 
-#: site/dashboard/wizard.php:132
+#: site/dashboard/wizard.php:140
 #, fuzzy
 msgid "No locations found"
 msgstr "هیچ کاربری یافت نشد."
 
-#: site/dashboard/wizard.php:133
-#, fuzzy
-msgid "Join or start a training"
-msgstr "میزبان یک دوره آموزشی باشید"
-
-#: site/dashboard/wizard.php:134
-#, fuzzy
-msgid "Start a training"
-msgstr "میزبان یک دوره آموزشی باشید"
-
-#: site/dashboard/wizard.php:135
-#, fuzzy
-msgid "Join a public training"
-msgstr "میزبان یک دوره آموزشی باشید"
-
-#: site/dashboard/wizard.php:136
-msgid "Skip for now"
-msgstr ""
-
-#: site/dashboard/wizard.php:139
+#: site/dashboard/wizard.php:143
 #, fuzzy
 msgid "Complete your profile"
 msgstr "پروفایل شما"
 
-#: site/dashboard/wizard.php:143
+#: site/dashboard/wizard.php:147
 msgid "What is your name?"
 msgstr ""
 
-#: site/dashboard/wizard.php:144
+#: site/dashboard/wizard.php:148
 msgid "What is your phone number?"
 msgstr ""
 
-#: site/dashboard/wizard.php:145
+#: site/dashboard/wizard.php:149
 msgid "Phone number can only contain numbers, brackets and hyphens"
 msgstr ""
 
-#: site/dashboard/wizard.php:146
+#: site/dashboard/wizard.php:150
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "درباره خدا چه یاد می گیرید؟"
 
-#: site/dashboard/wizard.php:147
+#: site/dashboard/wizard.php:151
 msgid "This is your approximate location."
 msgstr ""
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
+#, fuzzy
+msgid "Privacy Policy"
+msgstr "سیاست حفظ حریم خصوصی زومه"
+
+#: site/dashboard/wizard.php:154 site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/wizard.php:159
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "شهر یا ایالت یا کد پستی شما چیست؟"
 
-#: site/dashboard/wizard.php:153 zume-training-system.php:319
+#: site/dashboard/wizard.php:161 zume-training-system.php:316
 msgid "Text"
 msgstr "متن"
 
-#: site/dashboard/wizard.php:155 zume-training-system.php:321
+#: site/dashboard/wizard.php:163 zume-training-system.php:318
 #, fuzzy
 msgid "Whatsapp"
 msgstr "واتساپ"
 
-#: site/dashboard/wizard.php:156 zume-training-system.php:322
+#: site/dashboard/wizard.php:164 zume-training-system.php:319
 #, fuzzy
 msgid "Signal"
 msgstr "ثبت نام"
 
-#: site/dashboard/wizard.php:157 zume-training-system.php:323
+#: site/dashboard/wizard.php:165 zume-training-system.php:320
 msgid "Telegram"
 msgstr ""
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:166
 #, fuzzy
 msgid "Facebook Messenger"
 msgstr "فیسبوک"
 
-#: site/dashboard/wizard.php:159
+#: site/dashboard/wizard.php:167
 msgid "What is your language preference?"
 msgstr ""
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:169
 msgid "How can we serve you?"
 msgstr "چطور می توانیم به شما کمک کنیم؟"
 
-#: site/dashboard/wizard.php:162
+#: site/dashboard/wizard.php:170
 #, fuzzy
 msgid "Coaching"
 msgstr "مربی"
 
-#: site/dashboard/wizard.php:163
+#: site/dashboard/wizard.php:171
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "به کمک فنی نیاز دارم"
 
-#: site/dashboard/wizard.php:164
+#: site/dashboard/wizard.php:172
 msgid "Question about implementing the training"
 msgstr ""
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:173
 msgid "Question about the content"
 msgstr ""
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:174
 msgid "Help with what to do after starting a group"
 msgstr ""
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:176
 msgid "Please give a response to this question"
 msgstr ""
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
@@ -4374,113 +4332,323 @@ msgstr ""
 "با ارسال این درخواست، ما بهترین تلاشمان را می کنیم تا شما را به یک مربی در "
 "نزدیکی تان وصل کنیم."
 
-#: site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:178
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:179
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "درخواست مربیگری کرده اید."
 
-#: site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:180
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "با یک مربی در ارتباط باشید"
 
-#: site/dashboard/wizard.php:173
+#: site/dashboard/wizard.php:181
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "مرا به یک مربی وصل کنید"
 
-#: site/dashboard/wizard.php:174 site/dashboard/wizard.php:179
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:200
+#: site/dashboard/wizard.php:182 site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:202 site/dashboard/wizard.php:209
 msgid "Please wait while we connect you"
 msgstr ""
 
-#: site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:184 site/pages/privacy-policy.php:111
+msgid ""
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
+msgstr ""
+
+#: site/dashboard/wizard.php:187
 msgid "Joining Plan"
 msgstr ""
 
-#: site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:189 site/dashboard/wizard.php:270
 msgid "The training link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:181
+#: site/dashboard/wizard.php:190
 #, php-format
 msgid "Successfully joined training %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:182
+#: site/dashboard/wizard.php:191
 #, fuzzy
 msgid "Something went wrong while joining the plan"
 msgstr "مشکلی پیش آمد. متاسفیم؛ آیا می توانید دوباره سعی کنید؟"
 
-#: site/dashboard/wizard.php:184
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "Next Session Date"
 msgstr "جلسه بعدی"
 
-#: site/dashboard/wizard.php:185
+#: site/dashboard/wizard.php:194
 #, fuzzy
 msgid "Start Time"
 msgstr "شروع کنید"
 
-#: site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:195
 msgid "Timezone"
 msgstr ""
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:198
 msgid "There are currently no public trainings available."
 msgstr ""
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:201
 msgid "Connecting with friend"
 msgstr ""
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:203
 msgid "The friend link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:204
 #, php-format
 msgid "Successfully connected with friend %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:205
 msgid "Something went wrong while connecting with friend"
 msgstr ""
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:208
 #, fuzzy
 msgid "Checking in"
 msgstr "چک لیست"
 
-#: site/dashboard/wizard.php:201
+#: site/dashboard/wizard.php:210
 msgid "The checkin link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:211
 msgid "Successfully checked in"
 msgstr ""
 
-#: site/dashboard/wizard.php:203
+#: site/dashboard/wizard.php:212
 #, fuzzy
 msgid "Something went wrong while checking in"
 msgstr "اوه مشکلی پیش آمد. دوباره امتحان کنید!"
 
-#: site/dashboard/wizard.php:206
+#: site/dashboard/wizard.php:216
+#, fuzzy
+msgid "Create a training group"
+msgstr "لیست 100 نفره خودتان را تهیه کنید"
+
+#: site/dashboard/wizard.php:217
+#, fuzzy
+msgid "Join a public training group"
+msgstr "میزبان یک دوره آموزشی باشید"
+
+#: site/dashboard/wizard.php:218
+msgid "Skip for now"
+msgstr ""
+
+#: site/dashboard/wizard.php:219
+msgid "Choose your course format"
+msgstr ""
+
+#: site/dashboard/wizard.php:220
+#, fuzzy
+msgid "1 hour (20 sessions)"
+msgstr "جلسه"
+
+#: site/dashboard/wizard.php:221
+#, fuzzy
+msgid "2 hour (10 sessions)"
+msgstr "جلسه"
+
+#: site/dashboard/wizard.php:222
+#, fuzzy
+msgid "4 hour (5 sessions)"
+msgstr "جلسه"
+
+#: site/dashboard/wizard.php:223
+msgid "Would you like to schedule your training?"
+msgstr ""
+
+#: site/dashboard/wizard.php:224 site/pages/_strings-mobile-pwa.php:9
+msgid "Yes"
+msgstr "آره"
+
+#: site/dashboard/wizard.php:225 site/pages/_strings-mobile-pwa.php:10
+msgid "No"
+msgstr "نه"
+
+#: site/dashboard/wizard.php:226
+msgid "What time of day?"
+msgstr ""
+
+#: site/dashboard/wizard.php:227
+#, fuzzy
+msgid "Morning"
+msgstr "آموزش"
+
+#: site/dashboard/wizard.php:228
+msgid "Afternoon"
+msgstr ""
+
+#: site/dashboard/wizard.php:229
+msgid "Evening"
+msgstr ""
+
+#: site/dashboard/wizard.php:230
+#, fuzzy
+msgid "How often will you meet?"
+msgstr "چه احساسی دارید؟"
+
+#: site/dashboard/wizard.php:231
+msgid "Every day"
+msgstr ""
+
+#: site/dashboard/wizard.php:232
+msgid "Once a week"
+msgstr ""
+
+#: site/dashboard/wizard.php:233
+msgid "Twice a month"
+msgstr ""
+
+#: site/dashboard/wizard.php:234
+msgid "Once a month"
+msgstr ""
+
+#: site/dashboard/wizard.php:235
+msgid "Other"
+msgstr "دیگر"
+
+#: site/dashboard/wizard.php:236
+#, fuzzy
+msgid "What is the name of the training group?"
+msgstr "محتوای آموزش چیست؟"
+
+#: site/dashboard/wizard.php:237
+#, fuzzy
+msgid "My first training group"
+msgstr "میزبان یک دوره آموزشی باشید"
+
+#: site/dashboard/wizard.php:238
+#, fuzzy
+msgid "When do you plan to start?"
+msgstr "درباره خدا چه یاد می گیرید؟"
+
+#: site/dashboard/wizard.php:239
+#, fuzzy
+msgid "Where do you plan to meet?"
+msgstr "درباره خدا چه یاد می گیرید؟"
+
+#: site/dashboard/wizard.php:240
+msgid "This could be online or in person"
+msgstr ""
+
+#: site/dashboard/wizard.php:241
+#, fuzzy
+msgid "Review Schedule"
+msgstr "چرخه آموزش"
+
+#: site/dashboard/wizard.php:242
+#, php-format
+msgctxt "1 of 10 selected"
+msgid "%1$s of %2$s selected"
+msgstr ""
+
+#: site/dashboard/wizard.php:243
+#, fuzzy
+msgctxt "All 10 sessions scheduled"
+msgid "Ready"
+msgstr "بخوانید"
+
+#: site/dashboard/wizard.php:244
+#, php-format
+msgctxt "Too many selected: 2"
+msgid "Too many selected: %s"
+msgstr ""
+
+#: site/dashboard/wizard.php:245
+msgid "Incorrect number of sessions selected"
+msgstr ""
+
+#: site/dashboard/wizard.php:246 site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:248
+#, php-format
+msgid "Set %s"
+msgstr ""
+
+#: site/dashboard/wizard.php:246 site/dashboard/wizard.php:266
+#, fuzzy
+msgid "Location"
+msgstr "مکان فعلی را ذخیره کنید"
+
+#: site/dashboard/wizard.php:247
+#, fuzzy
+msgid "Group Name"
+msgstr "بدون نام"
+
+#: site/dashboard/wizard.php:248
+#, fuzzy
+msgid "Start Date"
+msgstr "شروع کنید"
+
+#: site/dashboard/wizard.php:252 site/dashboard/wizard.php:267
+msgid "Time"
+msgstr ""
+
+#: site/dashboard/wizard.php:253
+msgid "Date"
+msgstr ""
+
+#: site/dashboard/wizard.php:254
+msgid "Summary"
+msgstr ""
+
+#: site/dashboard/wizard.php:255
+msgid "Clear Calendar"
+msgstr ""
+
+#: site/dashboard/wizard.php:256
+msgid "Add"
+msgstr "افزودن"
+
+#: site/dashboard/wizard.php:257
+msgid "Add some dates to your schedule"
+msgstr ""
+
+#: site/dashboard/wizard.php:258
+#, fuzzy
+msgid "Change"
+msgstr "تغییر کلید"
+
+#: site/dashboard/wizard.php:262
 msgid "Invite your friends to join your training"
 msgstr ""
 
-#: site/dashboard/wizard.php:207
+#: site/dashboard/wizard.php:263
 msgid ""
-"Share the link below with your friends so that they can join your training."
+"Share the invite or link below with your friends so that they can join your "
+"training."
 msgstr ""
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:264
 msgid "Join my zume plan"
 msgstr ""
+
+#: site/dashboard/wizard.php:265
+#, php-format
+msgid "%s is inviting you to a Zume Training Group"
+msgstr ""
+
+#: site/dashboard/wizard.php:269
+msgid "Join key"
+msgstr ""
+
+#: site/dashboard/wizard.php:271
+#, fuzzy
+msgid "Copy Invite"
+msgstr "پیوند"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -4655,14 +4823,6 @@ msgstr "نام کاربری یا آدرس ایمیل وارد نشده."
 msgid "Log In"
 msgstr ""
 
-#: site/pages/_strings-mobile-pwa.php:9
-msgid "Yes"
-msgstr "آره"
-
-#: site/pages/_strings-mobile-pwa.php:10
-msgid "No"
-msgstr "نه"
-
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
 msgstr "حساب"
@@ -4801,7 +4961,7 @@ msgstr ""
 "داشته باشند. زومه قصد دارد که ایمانداران معمولی را تجهیز و تقویت کند تا به "
 "هر محله ای خدمت کنند."
 
-#: site/pages/about.php:95 site/pages/messages.php:247
+#: site/pages/about.php:95 site/pages/messages.php:258
 #, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
@@ -5064,7 +5224,7 @@ msgstr ""
 msgid "Connect"
 msgstr ""
 
-#: site/pages/donate.php:86 site/pages/messages.php:251
+#: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
 msgid "Donate"
 msgstr ""
@@ -5527,26 +5687,6 @@ msgstr ""
 msgid "Friend"
 msgstr "آدرس کاربری"
 
-#: site/pages/messages.php:248
-#, fuzzy
-msgid "Explore the Vision"
-msgstr "کاوش در آموزش"
-
-#: site/pages/messages.php:249
-#, fuzzy
-msgid "Zúme Training Dashboard"
-msgstr "منابع آموزشی Zúme"
-
-#: site/pages/messages.php:250
-#, fuzzy
-msgid "Update Your Communication Preferences"
-msgstr "شهر یا ایالت یا کد پستی شما چیست؟"
-
-#: site/pages/messages.php:251
-#, fuzzy
-msgid "Join the Zúme Community"
-msgstr "انجمن"
-
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr ""
@@ -5810,6 +5950,10 @@ msgstr ""
 msgid "Copy this link and send it to your friends."
 msgstr ""
 
+#: site/pages/share.php:85
+msgid "Copied"
+msgstr ""
+
 #: site/pages/share.php:123
 msgid "Tools"
 msgstr "ابزار"
@@ -5972,16 +6116,19 @@ msgid "3 Day Intensive Course"
 msgstr ""
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
+#: utilities/integrations/replace-placeholder.php:109
+#: utilities/integrations/replace-placeholder.php:110
+#: utilities/integrations/replace-placeholder.php:111
 #, fuzzy
 msgid "Check-in"
 msgstr "چک لیست"
 
 #: site/parts/noscript.php:2
-msgid "Please enable scripts."
+msgid "Oops you have javascript turned off"
 msgstr ""
 
 #: site/parts/noscript.php:3
-msgid "This page does not work without Javascript enabled."
+msgid "Please enable javascript to use this page"
 msgstr ""
 
 #: site/profile/profile.php:111
@@ -6131,80 +6278,113 @@ msgstr "مأموریت ارتباطی - لیست 100"
 msgid "Porch Admin"
 msgstr "مدیر"
 
+#: utilities/integrations/replace-placeholder.php:89
+#: utilities/integrations/replace-placeholder.php:90
+#: utilities/integrations/replace-placeholder.php:91
+#, fuzzy
+msgid "Join the Zúme Community"
+msgstr "انجمن"
+
+#: utilities/integrations/replace-placeholder.php:93
+#: utilities/integrations/replace-placeholder.php:94
+#: utilities/integrations/replace-placeholder.php:95
+#, fuzzy
+msgid "Zúme Dashboard"
+msgstr "میز کار زومه"
+
+#: utilities/integrations/replace-placeholder.php:97
+#: utilities/integrations/replace-placeholder.php:98
+#: utilities/integrations/replace-placeholder.php:99
+#, fuzzy
+msgid "Zúme Online Training Groups"
+msgstr "Zúme آموزش"
+
+#: utilities/integrations/replace-placeholder.php:121
+#: utilities/integrations/replace-placeholder.php:122
+#: utilities/integrations/replace-placeholder.php:123
+msgid "Download Slide Presentation"
+msgstr ""
+
+#: utilities/integrations/replace-placeholder.php:125
+#: utilities/integrations/replace-placeholder.php:126
+#: utilities/integrations/replace-placeholder.php:127
+msgid "Share Zúme Page"
+msgstr ""
+
 #: utilities/post-types/posttype-pieces.php:301
 #, fuzzy
 msgid "Piece"
 msgstr "صفحه قطعات"
 
-#: zume-training-system.php:213
+#: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"
 msgstr "کسی درخواست بازنشانی رمز عبور برای حساب زیر را درخواست کرده است:"
 
 #. translators: %s: site name
-#: zume-training-system.php:215
+#: zume-training-system.php:212
 #, php-format
 msgid "Site Name: %s"
 msgstr "نام سایت: %s"
 
 #. translators: %s: user login
-#: zume-training-system.php:217
+#: zume-training-system.php:214
 #, php-format
 msgid "Username: %s"
 msgstr "نام کاربری: %s"
 
-#: zume-training-system.php:218
+#: zume-training-system.php:215
 msgid "If this was a mistake, just ignore this email and nothing will happen."
 msgstr ""
 "اگر این یک اشتباه بود، فقط این ایمیل را نادیده بگیرید و هیچ اتفاقی نخواهد "
 "افتاد."
 
-#: zume-training-system.php:219
+#: zume-training-system.php:216
 msgid "To reset your password, visit the following address:"
 msgstr "برای بازنشانی گذرواژه خود، از آدرس زیر دیدن کنید:"
 
 #. translators: Password reset email subject. %s: Site name
-#: zume-training-system.php:237
+#: zume-training-system.php:234
 #, php-format
 msgid "[%s] Password Reset"
 msgstr "[%s] تنظیم مجدد رمز عبور"
 
-#: zume-training-system.php:253
+#: zume-training-system.php:250
 #, fuzzy
 msgid "Profile Details"
 msgstr "پروفایل"
 
-#: zume-training-system.php:265
+#: zume-training-system.php:262
 #, fuzzy
 msgid "User Email"
 msgstr "ایمیل"
 
-#: zume-training-system.php:274
+#: zume-training-system.php:271
 #, fuzzy
 msgid "User Phone"
 msgstr "تلفن"
 
-#: zume-training-system.php:282
+#: zume-training-system.php:279
 msgid "User Timezone"
 msgstr ""
 
-#: zume-training-system.php:290
+#: zume-training-system.php:287
 msgid "User Friend Key"
 msgstr ""
 
-#: zume-training-system.php:298
+#: zume-training-system.php:295
 msgid "User Preferred Language"
 msgstr ""
 
-#: zume-training-system.php:306
+#: zume-training-system.php:303
 #, fuzzy
 msgid "User Preferred Email"
 msgstr "ایمیل"
 
-#: zume-training-system.php:314
+#: zume-training-system.php:311
 msgid "Preferred Contact Methods"
 msgstr ""
 
-#: zume-training-system.php:324
+#: zume-training-system.php:321
 msgid "Messenger"
 msgstr ""
 
@@ -6223,6 +6403,34 @@ msgstr "https://github.com/ZumeProject/zume-training"
 #, fuzzy
 msgid "Zume Training System"
 msgstr "Zúme آموزش"
+
+#, fuzzy, php-format
+#~ msgid "Zúme Course slides in %s"
+#~ msgstr "دوره زومه"
+
+#, fuzzy
+#~ msgid "Plan a Training"
+#~ msgstr "1 آموزش"
+
+#, fuzzy
+#~ msgid "Join or start a training"
+#~ msgstr "میزبان یک دوره آموزشی باشید"
+
+#, fuzzy
+#~ msgid "Start a training"
+#~ msgstr "میزبان یک دوره آموزشی باشید"
+
+#, fuzzy
+#~ msgid "Explore the Vision"
+#~ msgstr "کاوش در آموزش"
+
+#, fuzzy
+#~ msgid "Zúme Training Dashboard"
+#~ msgstr "منابع آموزشی Zúme"
+
+#, fuzzy
+#~ msgid "Update Your Communication Preferences"
+#~ msgstr "شهر یا ایالت یا کد پستی شما چیست؟"
 
 #~ msgid "Coaches"
 #~ msgstr "مربیان"
@@ -6264,10 +6472,6 @@ msgstr "Zúme آموزش"
 
 #~ msgid "Personal Data collected: name, email."
 #~ msgstr "اطلاعات شخصی جمع آوری شده: نام، ایمیل."
-
-#, fuzzy
-#~ msgid "Go to Zúme Dashboard"
-#~ msgstr "میز کار زومه"
 
 #~ msgid "SOAPS Bible Reading"
 #~ msgstr "خواندن کتاب مقدس SOAPS"
@@ -6708,9 +6912,6 @@ msgstr "Zúme آموزش"
 
 #~ msgid "Possible reason: your host may have disabled the mail() function."
 #~ msgstr "دلیل احتمالی: میزبان شما ممکن است عملکرد mail () را غیرفعال کند."
-
-#~ msgid "Read"
-#~ msgstr "بخوانید"
 
 #~ msgid "... Read more &raquo;"
 #~ msgstr "...بیشتر بخوانید &raquo;"
@@ -7786,9 +7987,6 @@ msgstr "Zúme آموزش"
 #~ msgid "Zúme Video Scripts: Completion of Training"
 #~ msgstr "متن های ویدیویی زومه: تکمیل آموزش"
 
-#~ msgid "No Name"
-#~ msgstr "بدون نام"
-
 #~ msgid "Phone Number"
 #~ msgstr "تلفن تماس"
 
@@ -8057,9 +8255,6 @@ msgstr "Zúme آموزش"
 #~ msgid "Coleaders or additional participants"
 #~ msgstr "رهبران همکار یا شرکت کنندگان افزوده"
 
-#~ msgid "Add"
-#~ msgstr "افزودن"
-
 #~ msgid "Edit Group"
 #~ msgstr "ویرایش گروه"
 
@@ -8071,9 +8266,6 @@ msgstr "Zúme آموزش"
 #~ "شما صاحب این گروه هستید. تمامی تغییرات در جزئیات گروه باید انجام شود از "
 #~ "طریق \n"
 #~ "                شما."
-
-#~ msgid "Change Key"
-#~ msgstr "تغییر کلید"
 
 #~ msgid "Number of Participants"
 #~ msgstr "تعداد شرکت کنندگان"
@@ -8146,9 +8338,6 @@ msgstr "Zúme آموزش"
 #~ msgid "How should we contact you?"
 #~ msgstr "چطور با شما تماس بگیریم؟"
 
-#~ msgid "Other"
-#~ msgstr "دیگر"
-
 #~ msgid "Affiliation Key"
 #~ msgstr "کلید پیوستگی"
 
@@ -8194,9 +8383,6 @@ msgstr "Zúme آموزش"
 #~ msgstr ""
 #~ "بخش \"بررسی اجمالی\" را بررسی کنید. این مفاهیم، ابزار و آنچه گروه تان "
 #~ "برای هر جلسه تمرین خواهند کرد را برجسته می نماید."
-
-#~ msgid "What is the content of the training?"
-#~ msgstr "محتوای آموزش چیست؟"
 
 #~ msgid ""
 #~ "You can view an overview of the content in the content section, or "
@@ -8797,9 +8983,6 @@ msgstr "Zúme آموزش"
 
 #~ msgid "Zume About"
 #~ msgstr "درباره زومه"
-
-#~ msgid "Zume Privacy Policy"
-#~ msgstr "سیاست حفظ حریم خصوصی زومه"
 
 #~ msgid "Zume Login"
 #~ msgstr "ورود زومه"
