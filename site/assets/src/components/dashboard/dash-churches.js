@@ -169,7 +169,7 @@ export class DashChurches extends DashPage {
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main content p-2">
                     ${
                         this.showTeaser
                         ? html`

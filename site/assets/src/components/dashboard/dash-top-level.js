@@ -112,7 +112,11 @@ export class DashTopLevel extends DashPage {
                     ${this.renderLinks(this.userState)}
                 </div>
                 <div class="dashboard__secondary">
-                    <dash-cta></dash-cta>
+                    ${
+                        this.routeName === 'getting-started'
+                            ? ''
+                            : html`<dash-cta></dash-cta>`
+                    }
                 </div>
             </div>
         `;

@@ -12,7 +12,7 @@ export class DashCoach extends DashPage {
                 </div>
                 <dash-header-right></dash-header-right>
 
-              <div class="dashboard__main p-2">
+              <div class="dashboard__main content p-2">
                   <div class="container-inline">
                     <div class="dash-menu__list-item">
                       <div class="dash-menu__icon-area | stack--5">

@@ -251,7 +251,7 @@ export class DashProgress extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${
                         html`
                             <ul class="list">

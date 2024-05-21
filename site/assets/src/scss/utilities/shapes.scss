@@ -32,6 +32,9 @@
     border-start-end-radius: var(--border-radius);
     border-end-end-radius: var(--border-radius);
 }
+.circle {
+    border-radius: 100%;
+}
 .circle-end,
 .circle-end-small {
     border-start-end-radius: 1000px;
