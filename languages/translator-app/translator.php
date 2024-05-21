@@ -287,6 +287,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
         $tab = $_GET['tab'] ?? 'status';
         $tabs = [
             'status' => $tab === 'status' ? '' : 'hollow',
+            'weblate' => $tab === 'weblate' ? '' : 'hollow hollow-focus',
             'home' => $tab === 'home' ? '' : 'hollow hollow-focus',
             'scripts' => $tab === 'scripts' ? '' : 'hollow hollow-focus',
             'activities' => $tab === 'activities' ? '' : 'hollow hollow-focus',
@@ -294,7 +295,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
             'pieces' => $tab === 'pieces' ? '' : 'hollow hollow-focus',
             'assets' => $tab === 'assets' ? '' : 'hollow',
             'qr_codes' => $tab === 'qr_codes' ? '' : 'hollow ',
-            'translators' => $tab === 'translators' ? '' : 'hollow',
         ]
         ?>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
@@ -306,6 +306,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/app/translator?tab=<?php echo $tab_name ?>"><span style="text-transform:uppercase;"><?php echo $tab_name ?></span></a>
                         <?php
                     }
+                    ?>
+                    <a class="button <?php echo $class ?>" href="<?php echo site_url() . '/' . $this->language_code ?>/app/translator?tab=translators"><img src="<?php echo ZUME_TRAINING_ASSETS_URL ?>images/profile.svg" style="width:15px;height:15px;margin:0;" /></a>
+                    <?php
                     if ( in_array( 'administrator', (array) $this->user->roles ) ) {
                         echo '<a class="button hollow clear" href="/app/translations">Scoreboard</a>';
                     }
