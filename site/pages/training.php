@@ -167,7 +167,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <img class="w-60 mx-auto" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
                 </div>
             </div>
-            <div class="stack-4 | content-area">
+            <div class="stack-4 | content">
                 <div class="stack | position-relative">
                     <span class="offset-anchor" id="course-concepts"></span>
                     <h2 class="h1 brand-light">
@@ -270,23 +270,6 @@ class Zume_Training_Page extends Zume_Magic_Page
                     </ul>
                 </div>
             </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
         </div>
 
         <?php

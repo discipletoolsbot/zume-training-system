@@ -195,7 +195,7 @@ export class DashPlans extends DashPage {
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${
                         this.showTeaser ? html`
                           <div class="container-inline p-2">

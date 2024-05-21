@@ -328,6 +328,9 @@ a, a:visited {
 .page {
   padding-block: spacing(4)
 }
+.content {
+  margin-block-end: spacing(7);
+}
 
 .line-text {
   display: block;
@@ -677,7 +680,7 @@ a, a:visited {
     }
   }
 
-  & .content-area {
+  & .content {
     margin-inline: spacing(2);
   }
 }

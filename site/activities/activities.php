@@ -89,7 +89,7 @@ class Zume_Activites extends Zume_Magic_Page
         $post_id = $wpdb->get_var( $sql );
 
         ?>
-        <div class="content">
+        <div class="activity content">
             <header class="bg-brand">
                 <div class="container-md | activity-header">
                     <div class="logo"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/zume-training-logo-white-short.svg' ) ?>" alt="logo"></div>

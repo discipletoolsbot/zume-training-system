@@ -895,7 +895,7 @@ ${this.training.zoom_link_note}
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main content p-2">
                     ${this.showTeaser?c`
                             <div class="container-inline">
                               <div class="dash-menu__list-item">
@@ -970,7 +970,7 @@ ${this.training.zoom_link_note}
                 </div>
                 <dash-header-right></dash-header-right>
 
-              <div class="dashboard__main p-2">
+              <div class="dashboard__main content p-2">
                   <div class="container-inline">
                     <div class="dash-menu__list-item">
                       <div class="dash-menu__icon-area | stack--5">
@@ -1082,7 +1082,7 @@ ${this.training.zoom_link_note}
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main p-2">
+                <div class="dashboard__main content p-2">
                     ${this.showTeaser?c`
                             <div class="container-inline">
                               <div class="dash-menu__list-item">
@@ -1200,7 +1200,7 @@ ${this.training.zoom_link_note}
                         </ul>
                     </div>
                 </div>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${this.showTeaser?c`
                           <div class="container-inline p-2">
                             <div class="dash-menu__list-item">
@@ -1324,7 +1324,7 @@ ${this.training.zoom_link_note}
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${c`
                             <ul class="list">
                                 ${te(this.filteredItems,d=>d.key,this.renderListItem)}
@@ -1421,7 +1421,7 @@ ${this.training.zoom_link_note}
                     </button>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${this.loading?c`<div class="p-1"><span class="loading-spinner active"></span></div>`:""}
                     ${!this.loading&&this.error?c`
                         <div class="container-inline p-1">

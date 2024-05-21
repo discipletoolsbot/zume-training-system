@@ -260,7 +260,7 @@ export class DashTrainings extends DashPage {
                     </button>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
+                <div class="dashboard__main content">
                     ${this.loading ? html`<div class="p-1"><span class="loading-spinner active"></span></div>` : '' }
                     ${!this.loading && this.error ? html`
                         <div class="container-inline p-1">
