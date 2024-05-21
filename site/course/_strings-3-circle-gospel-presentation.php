@@ -68,4 +68,29 @@ $three_circles_for_translation = [
             ]
         ],
     ],
+    // coaching checklist alternative version
+    [
+        'key' => 't28_c',
+        'type' => 'activity',
+        'menu' => [],
+        'length' => [20],
+        'center' => [
+            __( 'ACTIVITY', 'zume' ),
+        ],
+        'left' => [
+            __( 'Coaching Checklist', 'zume' ),
+            [
+                __( 'Scan the QR code or find a piece of paper.', 'zume' ),
+                __( 'Select a person from your list of 100.', 'zume' ),
+                __( 'Use the coaching checklist and evaluate your selected person. Ask yourself, "What does this person need for each of the tools and concepts?"', 'zume' ),
+                __( 'Check off the checklist.', 'zume' ),
+
+            ]
+        ],
+        'right' => [
+//            $activity_base_url . 'coaching_mawl',
+//            zume_create_qr_url( $activity_base_url . 'coaching_mawl' ),
+            __( 'Activity Resource', 'zume' ),
+        ],
+    ],
 ];
