@@ -109,8 +109,8 @@ class Zume_Training_Home extends Zume_Magic_Page
 
                         <?php else : ?>
 
-                            <a href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn large outline light uppercase w-80 px-0"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
-                            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="btn large outline light uppercase w-80 px-0"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="btn large light uppercase w-80 px-0"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
 
                         <?php endif; ?>
 

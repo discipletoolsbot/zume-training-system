@@ -100,11 +100,28 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         <?php
     }
 
+    public function should_wizard_redirect() {
+        $url = new DT_URL( dt_get_url_path() );
+        $user_stage = zume_get_user_stage();
+        return (
+            $url->query_params->has( 'flow' ) &&
+            $url->query_params->get( 'flow' ) === 'start' &&
+            isset( $user_stage['state'] ) &&
+            $user_stage['state']['set_profile_name'] &&
+            $user_stage['state']['set_profile_location'] &&
+            $user_stage['state']['plan_created']
+        );
+    }
+
     public function body(){
         global $zume_user_profile;
 
         if ( !is_user_logged_in() ) {
             wp_redirect( zume_login_url( 'login', dt_get_url_path( false, true ) ) );
+        }
+
+        if ( $this->should_wizard_redirect() ) {
+            wp_redirect( zume_dashboard_url() );
         }
         ?>
 
