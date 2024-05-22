@@ -35,8 +35,8 @@
 
                     <?php if ( !is_user_logged_in() ) : ?>
 
-                        <a role="listitem" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn outline light dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
-                        <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="btn outline light dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
 
                     <?php endif; ?>
 
@@ -97,8 +97,8 @@
 
             <?php else : ?>
 
-                <a role="listitem" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="link-light nav__link outline"><div class="icon zume-invite"></div> <?php echo esc_html__( 'Register', 'zume' ) ?></a>
-                <a role="listitem" href="<?php echo esc_url( dt_login_url( 'login' ) ) ?>" class="link-light nav__link"><div class="icon zume-profile"></div> <?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="link-light nav__link outline"><div class="icon zume-invite"></div> <?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="link-light nav__link"><div class="icon zume-profile"></div> <?php echo esc_html__( 'Login', 'zume' ) ?></a>
 
             <?php endif; ?>
 

@@ -43,12 +43,12 @@ export class DashProgress extends DashPage {
     }
 
     openInfoModal() {
-        const modal = document.querySelector('#new-commitments-form')
+        const modal = document.querySelector('#progress-modal')
         jQuery(modal).foundation('open')
     }
 
     closeInfoModal() {
-        const modal = document.querySelector('#new-commitments-form')
+        const modal = document.querySelector('#progress-modal')
         jQuery(modal).foundation('close')
     }
 
@@ -266,7 +266,7 @@ export class DashProgress extends DashPage {
                     <dash-cta></dash-cta>
                 </div>
             </div>
-            <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
+            <div class="reveal large" id="progress-modal" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
                         <span class="icon zume-close"></span>
                 </button>

@@ -64,9 +64,13 @@ function zume_login_url( $type = 'login', $redirect_url = false ) {
 
 
 
-function zume_make_a_plan_wizard_url() {
-    $redirect_url = zume_wizard_url( 'start' );
-    return zume_login_url( 'register', $redirect_url );
+function zume_getting_started_url( $type ) {
+    $params = [ 'flow' => 'start' ];
+    return zume_make_a_plan_wizard_url( $type, $params );
+}
+function zume_make_a_plan_wizard_url( $type = 'login', $params = [] ) {
+    $redirect_url = zume_wizard_url( 'start', $params );
+    return zume_login_url( $type, $redirect_url );
 }
 function zume_set_profile_wizard() {
     $redirect_url = zume_wizard_url( 'profile' );

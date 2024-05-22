@@ -202,9 +202,16 @@ dash-header-right {
             height: 100% !important;
         }
 
+        [dir="rtl"] & {
+            left: unset;
+            right: 0;
+            transform: translateX(100%);
+        }
+
         &[data-state="open"] {
             transform: none;
         }
+
     }
 
     .sidebar__trigger-close-background {

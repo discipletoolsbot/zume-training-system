@@ -159,10 +159,12 @@ export class CourseSlideshow extends LitElement {
             this.setSlide(0)
         }
         return html`
-            <div class="cover-page">
+            <div class="cover-page course-slideshow">
                 <div>
                     <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
+                <div class="visual-indicator left"></div>
+                <div class="visual-indicator right"></div>
             </div>
         `;
     }

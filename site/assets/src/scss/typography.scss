@@ -79,6 +79,9 @@ b {
 .break-anywhere {
     line-break: anywhere;
 }
+.no-wrap {
+    text-wrap: nowrap;
+}
 
 @for $font-size from -2 through 8 {
     .f-#{$font-size} {
