@@ -36,7 +36,6 @@ class Zume_Activites_Coaching extends Zume_Activites
                 exit;
             }
         }
-
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         return [];
@@ -72,7 +71,7 @@ class Zume_Activites_Coaching extends Zume_Activites
             }
             .coaching_header td {
                 background-color: white;
-                border-bottom: 4px solid grey;
+                border-bottom: 6px solid grey;
             }
             .coaching_bottom {
                 border-bottom: 1px solid grey;
@@ -95,22 +94,11 @@ class Zume_Activites_Coaching extends Zume_Activites
                 font-size: 1.5em;
                 font-weight: bold;
             }
-            .black {
-                border-bottom: 2px solid black;
-            }
-            .red {
-                border-bottom: 2px solid red;
-            }
-            .orange {
-                border-bottom: 2px solid orange;
-            }
-            .green {
-                border-bottom: 2px solid green;
-            }
+
         </style>
         <div class="activity-page">
         <div class="activity-title">
-            <h1 ><?php echo __( 'Coaching Checklist', 'zume' ) ?></h1>
+            <h1><?php echo __( 'Coaching Checklist', 'zume' ) ?></h1>
         </div>
         <div class="activity-content">
             <table class="coaching-table">
@@ -239,13 +227,13 @@ class Zume_Activites_Coaching extends Zume_Activites
                         </td>
                         <td class="coaching_bottom">
                         </td>
-                        <td class="coaching_column coaching_bottom black">
+                        <td class="coaching_column coaching_bottom ">
                         </td>
-                        <td class="coaching_column coaching_bottom red">
+                        <td class="coaching_column coaching_bottom ">
                         </td>
-                        <td class="coaching_column coaching_bottom orange">
+                        <td class="coaching_column coaching_bottom ">
                         </td>
-                        <td class="coaching_column coaching_bottom green">
+                        <td class="coaching_column coaching_bottom ">
                         </td>
                     </tr>
                     <?php
@@ -275,16 +263,16 @@ class Zume_Activites_Coaching extends Zume_Activites
             <h2><?php echo __( 'Mentee Development Level', 'zume' ) ?></h2>
             <div>
                 <p>
-                    <strong><?php echo __( 'Unaware', 'zume' ) ?></strong> - <?php echo __( 'The Mentee is unaware, unfamiliar, or does not understand the tool.', 'zume' ) ?>
+                    <strong><?php echo __( 'Unaware', 'zume' ) ?></strong> - <?php echo __( 'Is the Mentee unaware, unfamiliar, or misunderstanding the tool?', 'zume' ) ?>
                 </p>
                 <p>
-                    <strong><?php echo __( 'Unskilled', 'zume' ) ?></strong> - <?php echo __( 'The Mentee is somewhat familiar but still not sure about the tool', 'zume' ) ?>
+                    <strong><?php echo __( 'Unskilled', 'zume' ) ?></strong> - <?php echo __( 'Is the Mentee somewhat familiar with but still not sure about the tool?', 'zume' ) ?>
                 </p>
                 <p>
-                    <strong><?php echo __( 'Competent', 'zume' ) ?></strong> - <?php echo __( 'The Mentee understands the tool and can train the basics of the tool.', 'zume' ) ?>
+                    <strong><?php echo __( 'Competent', 'zume' ) ?></strong> - <?php echo __( 'Does the Mentee understand the tool and is able to train the basics of the tool?', 'zume' ) ?>
                 </p>
                 <p>
-                    <strong><?php echo __( 'Skilled', 'zume' ) ?></strong> - <?php echo __( 'The Mentee feels confident and can effectively train the tool', 'zume' ) ?>
+                    <strong><?php echo __( 'Skilled', 'zume' ) ?></strong> - <?php echo __( 'Does the Mentee feel confident and able to effectively train the tool', 'zume' ) ?>
                 </p>
             </div>
             <hr>
@@ -303,39 +291,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                     <strong><?php echo __( 'Leave', 'zume' ) ?> - (<?php echo __( 'Relate to them as co-laborer', 'zume' ) ?>)</strong> <?php echo __( 'Leaving is a sort of graduation when the learner becomes a peer of the mentor. Periodic contact and peer mentoring may continue to take place if the learner and mentor are in the same network. When a parent releases a child to ride their bicycle completely unsupervised, that is the LEAVE phase.', 'zume' ) ?>
                 </p>
             </div>
-            <hr>
-            <h2><?php echo __( 'Mentor’s Behaviors', 'zume' ) ?></h2>
-            <div>
-                <p>
-                    <strong><?php echo __( 'Direct and Inform', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Direct and Support', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Support and Encourage', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Receive Updates', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-            </div>
-            <hr>
-            <h2><?php echo __( 'Planning Responsibilities', 'zume' ) ?></h2>
-            <div>
-                <p>
-                    <strong><?php echo __( 'Mentor decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Discuss and Mentor decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Discuss and Mentee decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-                <p>
-                    <strong><?php echo __( 'Mentee decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
-                </p>
-            </div>
-            </div>
+<br>
         <?php
          endif;
     }
