@@ -272,7 +272,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                     <strong><?php echo __( 'Competent', 'zume' ) ?></strong> - <?php echo __( 'Does the Mentee understand the tool and is able to train the basics of the tool?', 'zume' ) ?>
                 </p>
                 <p>
-                    <strong><?php echo __( 'Skilled', 'zume' ) ?></strong> - <?php echo __( 'Does the Mentee feel confident and able to effectively train the tool', 'zume' ) ?>
+                    <strong><?php echo __( 'Skilled', 'zume' ) ?></strong> - <?php echo __( 'Does the Mentee feel confident and able to effectively train the tool?', 'zume' ) ?>
                 </p>
             </div>
             <hr>
