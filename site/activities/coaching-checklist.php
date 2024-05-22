@@ -116,6 +116,26 @@ class Zume_Activites_Coaching extends Zume_Activites
             <table class="coaching-table">
                 <tr>
                     <td class="coaching_right">
+                        <em><?php echo __( 'Self-Evaluation', 'zume' ) ?> ...</em>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <strong><?php echo __( 'Heard', 'zume' ) ?></strong>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <strong><?php echo __( 'Obeyed', 'zume' ) ?></strong>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <strong><?php echo __( 'Shared', 'zume' ) ?></strong>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <strong><?php echo __( 'Trained', 'zume' ) ?></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coaching_right">
                         <em><?php echo __( 'Mentee Development Level', 'zume' ) ?> ...</em>
                     </td>
                     <td>
@@ -142,16 +162,16 @@ class Zume_Activites_Coaching extends Zume_Activites
                         2
                     </td>
                     <td class="coaching_column coaching_bottom">
-                        (<strong> <?php echo __( 'Model', 'zume' ) ?> </strong>)<br><?php echo __( 'Train new information and ensure understanding', 'zume' ) ?>
+                        <strong> <?php echo __( 'Model', 'zume' ) ?> </strong><br><?php echo __( 'Train new information and ensure understanding', 'zume' ) ?>
                     </td>
                     <td class="coaching_column coaching_bottom">
-                        (<strong> <?php echo __( 'Assist', 'zume' ) ?> </strong>)<br><?php echo __( 'Stop and stay with them until they have the basics', 'zume' ) ?>
+                        <strong> <?php echo __( 'Assist', 'zume' ) ?> </strong><br><?php echo __( 'Stop and stay with them until they have the basics', 'zume' ) ?>
                     </td>
                     <td class="coaching_column coaching_bottom">
-                        (<strong> <?php echo __( 'Watch', 'zume' ) ?> </strong>)<br><?php echo __( 'Stay engaged until consistently competent', 'zume' ) ?>
+                        <strong> <?php echo __( 'Watch', 'zume' ) ?> </strong><br><?php echo __( 'Stay engaged until consistently competent', 'zume' ) ?>
                     </td>
                     <td class="coaching_column coaching_bottom">
-                        (<strong> <?php echo __( 'Leave', 'zume' ) ?> </strong>)<br><?php echo __( 'Relate to them as co-laborer', 'zume' ) ?>
+                        <strong> <?php echo __( 'Leave', 'zume' ) ?> </strong><br><?php echo __( 'Relate to them as co-laborer', 'zume' ) ?>
                     </td>
                 </tr>
                 <tr>
@@ -236,6 +256,22 @@ class Zume_Activites_Coaching extends Zume_Activites
         <br></br>
         <?php if ( ! isset( $_GET['description'] ) ) : ?>
             <br></br>
+            <h2><?php echo __( 'Self-Evaluation', 'zume' ) ?></h2>
+            <div>
+                <p>
+                    <strong><?php echo __( 'Heard', 'zume' ) ?></strong> - <?php echo __( 'Have I heard about this tool or concept?', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Obeyed', 'zume' ) ?></strong> - <?php echo __( 'Have I obeyed this tool or concept? If a tool, have I practiced it on my own? If a concept, have you reflected on how it changes your perspective?', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Shared', 'zume' ) ?></strong> - <?php echo __( 'Have I shared this tool or concept? If a tool, have you shown anyone how to use this tool? If a concept, have you shared this concept with anyone?', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Trained', 'zume' ) ?></strong> - <?php echo __( 'Have I trained others to share this tool or concept? If a tool, have I trained someone to share the tool with someone else? If a concept, have I trained someone to share the concept with someone else?', 'zume' ) ?>
+                </p>
+            </div>
+            <hr>
             <h2><?php echo __( 'Mentee Development Level', 'zume' ) ?></h2>
             <div>
                 <p>
