@@ -268,8 +268,13 @@ class Zume_Downloads_Post_Type
      * @return void
      */
     public function meta_box_setup() {
+        add_meta_box( $this->post_type . '_slides', 'Slide Decks', array( $this, 'load_slides_meta_box' ), $this->post_type, 'normal', 'high' );
         add_meta_box( $this->post_type . '_scribes', 'Downloads', array( $this, 'load_downloads_meta_box' ), $this->post_type, 'normal', 'high' );
     } // End meta_box_setup()
+
+    public function load_slides_meta_box() {
+        $this->meta_box_content( 'slides' ); // prints
+    }
 
     /**
      * Meta box for Status Information
@@ -679,19 +684,65 @@ class Zume_Downloads_Post_Type
             'section'     => 'downloads',
         );
         $fields['63'] = array(
-            'name'        => '(62) 3-Circles Script',
+            'name'        => '(63) 3-Circles Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'downloads',
         );
         $fields['68'] = array(
-            'name'        => '(62) 4-Relationships Script',
+            'name'        => '(68) 4-Relationships Script',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'downloads',
         );
+
+
+        // slides
+        $fields['ppx_10_session'] = array(
+            'name'        => 'PPX 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_10_session'] = array(
+            'name'        => 'KEY 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['ppx_20_session'] = array(
+            'name'        => 'PPX 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_20_session'] = array(
+            'name'        => 'KEY 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['ppx_intense_session'] = array(
+            'name'        => 'PPX 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_intense_session'] = array(
+            'name'        => 'KEY 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+
 
         return apply_filters( 'zume_pdf_download_fields_settings', $fields );
     }

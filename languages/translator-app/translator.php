@@ -2022,6 +2022,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         'coachingchecklist',
                         'coaching_mawl',
                         'coaching_personal',
+                        'coaching_four',
                         'peermentoring',
                         '4fields',
                         'genmapping',

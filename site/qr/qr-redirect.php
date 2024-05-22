@@ -179,7 +179,7 @@ class Zume_QR_Redirect
             exit();
         }
         /**
-         * @todo maybe remove. tools strategy changeed, so this function not needed.
+         * @todo maybe remove. tools strategy changed, so this function not needed.
          * By Language Code and Tools
          *
          * https://zume.training/app/qr/?l=en&t=123
