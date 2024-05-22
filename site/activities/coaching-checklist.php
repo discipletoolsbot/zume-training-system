@@ -62,6 +62,10 @@ class Zume_Activites_Coaching extends Zume_Activites
                 border-left: 1px solid grey;
                 width: 140px;
                 text-align: center;
+                vertical-align: top;
+            }
+            .coaching_column strong {
+                text-transform: uppercase;
             }
             .coaching_title {
                 width: 50%;
@@ -91,134 +95,213 @@ class Zume_Activites_Coaching extends Zume_Activites
                 font-size: 1.5em;
                 font-weight: bold;
             }
+            .black {
+                border-bottom: 2px solid black;
+            }
+            .red {
+                border-bottom: 2px solid red;
+            }
+            .orange {
+                border-bottom: 2px solid orange;
+            }
+            .green {
+                border-bottom: 2px solid green;
+            }
         </style>
         <div class="activity-page">
-            <div class="activity-title">
-                <h2><?php echo __( 'Coaching Checklist', 'zume' ) ?></h2>
-                <?php echo __( '1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained.', 'zume' ) ?><br>
-                <?php echo __( '2. Coach others by using Model, Assist, Watch, Leave.', 'zume' ) ?>
-            </div>
-            <div class="activity-content">
-                <table class="coaching-table">
-                    <tr>
-                        <td>
-                            <strong class="coaching_table_title"><?php echo __( 'Training Tools/Concepts', 'zume' ) ?></strong>
+        <div class="activity-title">
+            <h1 ><?php echo __( 'Coaching Checklist', 'zume' ) ?></h1>
+        </div>
+        <div class="activity-content">
+            <table class="coaching-table">
+                <tr>
+                    <td class="coaching_right">
+                        <em><?php echo __( 'Mentee Development Level', 'zume' ) ?> ...</em>
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Unaware', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Unskilled', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Competent', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Skilled', 'zume' ) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coaching_right">
+                        <em><?php echo __( 'Mentor’s Role', 'zume' ) ?> ...</em>
+                    </td>
+                    <td>
+                        2
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        (<strong> <?php echo __( 'Model', 'zume' ) ?> </strong>)<br><?php echo __( 'Train new information and ensure understanding', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        (<strong> <?php echo __( 'Assist', 'zume' ) ?> </strong>)<br><?php echo __( 'Stop and stay with them until they have the basics', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        (<strong> <?php echo __( 'Watch', 'zume' ) ?> </strong>)<br><?php echo __( 'Stay engaged until consistently competent', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        (<strong> <?php echo __( 'Leave', 'zume' ) ?> </strong>)<br><?php echo __( 'Relate to them as co-laborer', 'zume' ) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coaching_right">
+                        <em><?php echo __( 'Mentor’s Behaviors', 'zume' ) ?> ...</em>
+                    </td>
+                    <td>
+                        3
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Direct and inform', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Direct and support', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Support and encourage', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column coaching_bottom">
+                        <?php echo __( 'Receive updates', 'zume' ) ?>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coaching_right">
+                        <em><?php echo __( 'Planning Responsibilities', 'zume' ) ?> ...</em>
+                    </td>
+                    <td>
+                        4
+                    </td>
+                    <td class="coaching_column">
+                        <?php echo __( 'Mentor decides', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column">
+                        <?php echo __( 'Discuss and Mentor decides', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column">
+                        <?php echo __( 'Discuss and Mentee decides', 'zume' ) ?>
+                    </td>
+                    <td class="coaching_column">
+                        <?php echo __( 'Mentee decides', 'zume' ) ?>
+                    </td>
+                </tr>
+                <tr class="coaching_header">
+                    <td>
+                        <strong class="coaching_table_title"><?php echo __( 'Training Tools/Concepts', 'zume' ) ?></strong>
+                    </td>
+                    <td>
+                    </td>
+                    <td class="coaching_column coaching_bottom" style="border-bottom-color:black;">
+                    </td>
+                    <td class="coaching_column coaching_bottom" style="border-bottom-color:red;">
+                    </td>
+                    <td class="coaching_column coaching_bottom" style="border-bottom-color:orange;">
+                    </td>
+                    <td class="coaching_column coaching_bottom" style="border-bottom-color:green;">
+                    </td>
+                </tr>
+                <?php
+                $training_items = zume_training_items();
+                foreach( $training_items as $training_item ) {
+                    ?>
+                    <tr class="coaching_row">
+                        <td class="coaching_title coaching_bottom">
+                            <?php echo $training_item['title']; ?>
                         </td>
-                        <td>
+                        <td class="coaching_bottom">
                         </td>
-                        <td class=" coaching_bottom">
+                        <td class="coaching_column coaching_bottom black">
                         </td>
-                        <td class=" coaching_bottom">
+                        <td class="coaching_column coaching_bottom red">
                         </td>
-                        <td class=" coaching_bottom">
+                        <td class="coaching_column coaching_bottom orange">
                         </td>
-                        <td class=" coaching_bottom">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="coaching_right">
-                            <em><?php echo __( 'Ask yourself, have I', 'zume' ) ?> ...</em>
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Heard', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Obeyed', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Shared', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column coaching_bottom">
-                            <?php echo __( 'Trained', 'zume' ) ?>
-                        </td>
-                    </tr>
-                    <tr class="coaching_header">
-                        <td class="coaching_right">
-                            <em><?php echo __( 'Ask yourself, what does my disciple need', 'zume' ) ?> ...</em>
-                        </td>
-                        <td>
-                            2
-                        </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Model', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Assist', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Watch', 'zume' ) ?>
-                        </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Leave', 'zume' ) ?>
+                        <td class="coaching_column coaching_bottom green">
                         </td>
                     </tr>
                     <?php
-                    $training_items = zume_training_items();
-                    foreach( $training_items as $training_item ) {
-                        ?>
-                        <tr class="coaching_row">
-                            <td class="coaching_title coaching_bottom">
-                                <?php echo $training_item['title']; ?>
-                            </td>
-                            <td class="coaching_bottom">
-                            </td>
-                            <td class="coaching_column coaching_bottom">
-                            </td>
-                            <td class="coaching_column coaching_bottom">
-                            </td>
-                            <td class="coaching_column coaching_bottom">
-                            </td>
-                            <td class="coaching_column coaching_bottom">
-                            </td>
-                        </tr>
-                        <?php
-                    }
-                    ?>
-                </table>
-            </div>
-            <br>
-            <div>
-                <strong><?php echo __( 'Heard', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I heard about this tool or concept?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Obeyed', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I obeyed this tool or concept? If a tool, have I practiced it on my own? If a concept, have you reflected on how it changes your perspective?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Shared', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I shared this tool or concept? If a tool, have you shown anyone how to use this tool? If a concept, have you shared this concept with anyone?', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Trained', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Have I trained others to share this tool or concept? If a tool, have I trained someone to share the tool with someone else? If a concept, have I trained someone to share the concept with someone else?', 'zume' ) ?>
-                </p>
-            </div>
-            <br>
-            <div>
-                <strong><?php echo __( 'Model', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Modeling is simply providing an example of a practice or tool. It is the briefest part of the training cycle. It usually only needs to be done once. It is simply creating an awareness that a practice or a tool exists and giving a general idea of what it looks like. Modeling repeatedly is not an effective way to equip someone.', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Assist', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Assisting is allowing the learner to practice the skill. This takes longer than the modeling phase. It requires “hand-holding” on the part of the mentor. The mentor needs to be directive and take an active role in coaching the learner. This phase does not last until the learner is fully competent, but merely until they understand the basics of the skill. If this phase is continued too long, then the learner will develop a dependence on the mentor and never advance to full competence.', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Watch', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Watching is the longest phase. It involves more indirect contact with the learner. It seeks to develop full competence in all facets of a skill. It may be ten times or more as long as the first two phases combined. As the learner progresses in skill, the contact with the mentor may become less regular and more ad hoc.', 'zume' ) ?>
-                </p>
-                <strong><?php echo __( 'Leave', 'zume' ) ?></strong>
-                <p>
-                    <?php echo __( 'Leaving is a sort of graduation when the learner becomes a peer of the mentor. Periodic contact and peer mentoring may continue to take place if the learner and mentor are in the same network. When a parent releases a child to ride their bicycle completely unsupervised, that is the LEAVE phase.', 'zume' ) ?>
-                </p>
-            </div>
+                }
+                ?>
+            </table>
         </div>
+        <br></br>
+        <?php if ( ! isset( $_GET['description'] ) ) : ?>
+            <br></br>
+            <h2><?php echo __( 'Mentee Development Level', 'zume' ) ?></h2>
+            <div>
+                <p>
+                    <strong><?php echo __( 'Unaware', 'zume' ) ?></strong> - <?php echo __( 'The Mentee is unaware, unfamiliar, or does not understand the tool.', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Unskilled', 'zume' ) ?></strong> - <?php echo __( 'The Mentee is somewhat familiar but still not sure about the tool', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Competent', 'zume' ) ?></strong> - <?php echo __( 'The Mentee understands the tool and can train the basics of the tool.', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Skilled', 'zume' ) ?></strong> - <?php echo __( 'The Mentee feels confident and can effectively train the tool', 'zume' ) ?>
+                </p>
+            </div>
+            <hr>
+            <h2><?php echo __( 'Mentor’s Role', 'zume' ) ?></h2>
+            <div>
+                <p>
+                    <strong><?php echo __( 'Model', 'zume' ) ?> - (<?php echo __( 'Train new information and ensure understanding', 'zume' ) ?>)</strong> <?php echo __( 'Modeling is simply providing an example of a practice or tool. It is the briefest part of the training cycle. It usually only needs to be done once. It is simply creating an awareness that a practice or a tool exists and giving a general idea of what it looks like. Modeling repeatedly is not an effective way to equip someone.', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Assist', 'zume' ) ?> - (<?php echo __( 'Stop and stay with them until they have the basics', 'zume' ) ?>)</strong> <?php echo __( 'Assisting is allowing the learner to practice the skill. This takes longer than the modeling phase. It requires “hand-holding” on the part of the mentor. The mentor needs to be directive and take an active role in coaching the learner. This phase does not last until the learner is fully competent, but merely until they understand the basics of the skill. If this phase is continued too long, then the learner will develop a dependence on the mentor and never advance to full competence.', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Watch', 'zume' ) ?>- (<?php echo __( 'Stay engaged until consistently competent', 'zume' ) ?>)</strong> <?php echo __( 'Watching is the longest phase. It involves more indirect contact with the learner. It seeks to develop full competence in all facets of a skill. It may be ten times or more as long as the first two phases combined. As the learner progresses in skill, the contact with the mentor may become less regular and more ad hoc.', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Leave', 'zume' ) ?> - (<?php echo __( 'Relate to them as co-laborer', 'zume' ) ?>)</strong> <?php echo __( 'Leaving is a sort of graduation when the learner becomes a peer of the mentor. Periodic contact and peer mentoring may continue to take place if the learner and mentor are in the same network. When a parent releases a child to ride their bicycle completely unsupervised, that is the LEAVE phase.', 'zume' ) ?>
+                </p>
+            </div>
+            <hr>
+            <h2><?php echo __( 'Mentor’s Behaviors', 'zume' ) ?></h2>
+            <div>
+                <p>
+                    <strong><?php echo __( 'Direct and Inform', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Direct and Support', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Support and Encourage', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Receive Updates', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+            </div>
+            <hr>
+            <h2><?php echo __( 'Planning Responsibilities', 'zume' ) ?></h2>
+            <div>
+                <p>
+                    <strong><?php echo __( 'Mentor decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Discuss and Mentor decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Discuss and Mentee decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+                <p>
+                    <strong><?php echo __( 'Mentee decides', 'zume' ) ?></strong> - <?php echo __( '', 'zume' ) ?>
+                </p>
+            </div>
+            </div>
         <?php
+         endif;
     }
 }
 Zume_Activites_Coaching::instance();

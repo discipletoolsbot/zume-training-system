@@ -1,11 +1,11 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-class Zume_Activites_Coaching_Mawl extends Zume_Activites
+class Zume_Activites_Coaching_Host extends Zume_Activites
 {
-    public $page_title = 'Coaching Checklist (MAWL)';
+    public $page_title = 'Coaching Checklist (HOST)';
     public $root = 'activities';
-    public $type = 'coachingchecklist_mawl';
+    public $type = 'coachingchecklist_host';
     public $lang = 'en';
 
     private static $_instance = null;
@@ -45,7 +45,6 @@ class Zume_Activites_Coaching_Mawl extends Zume_Activites
         return [];
     }
     public function body(){
-        $this->page_title = __( 'Coaching Checklist', 'zume' ) . ' ( ' .  __( 'M.A.W.L.', 'zume' ) . ' )';
         ?>
         <style>
             .activity-page {
@@ -95,10 +94,9 @@ class Zume_Activites_Coaching_Mawl extends Zume_Activites
         </style>
         <div class="activity-page">
             <div class="activity-title">
-                <h2><?php echo __( 'Coaching Checklist', 'zume' ) ?> ( <?php echo __( 'M.A.W.L.', 'zume' ) ?> )</h2>
-                <?php echo __( 'Coach others by using Model, Assist, Watch, Leave.', 'zume' ) ?>
+                <h2><?php echo __( 'Coaching Checklist', 'zume' ) ?> ( <?php echo __( 'H.O.S.T.', 'zume' ) ?> )</h2>
+                <?php echo __( 'Self-evaluate yourself using Heard, Obeyed, Shared, Trained.', 'zume' ) ?><br>
             </div>
-            <br>
             <div class="activity-content">
                 <table class="coaching-table">
                     <tr>
@@ -118,21 +116,22 @@ class Zume_Activites_Coaching_Mawl extends Zume_Activites
                     </tr>
                     <tr class="coaching_header">
                         <td class="coaching_right">
-                            <em><?php echo __( 'Ask yourself, what does my disciple need', 'zume' ) ?> ...</em>
+                            <em><?php echo __( 'Ask yourself, have I', 'zume' ) ?> ...</em>
                         </td>
                         <td>
+
                         </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Model', 'zume' ) ?>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Heard', 'zume' ) ?>
                         </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Assist', 'zume' ) ?>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Obeyed', 'zume' ) ?>
                         </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Watch', 'zume' ) ?>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Shared', 'zume' ) ?>
                         </td>
-                        <td class="coaching_column">
-                            <?php echo __( 'Leave', 'zume' ) ?>
+                        <td class="coaching_column coaching_bottom">
+                            <?php echo __( 'Trained', 'zume' ) ?>
                         </td>
                     </tr>
                     <?php
@@ -161,25 +160,25 @@ class Zume_Activites_Coaching_Mawl extends Zume_Activites
             </div>
             <br>
             <div>
-                <strong><?php echo __( 'Model', 'zume' ) ?></strong>
+                <strong><?php echo __( 'Heard', 'zume' ) ?></strong>
                 <p>
-                    <?php echo __( 'Modeling is simply providing an example of a practice or tool. It is the briefest part of the training cycle. It usually only needs to be done once. It is simply creating an awareness that a practice or a tool exists and giving a general idea of what it looks like. Modeling repeatedly is not an effective way to equip someone.', 'zume' ) ?>
+                    <?php echo __( 'Have I heard about this tool or concept?', 'zume' ) ?>
                 </p>
-                <strong><?php echo __( 'Assist', 'zume' ) ?></strong>
+                <strong><?php echo __( 'Obeyed', 'zume' ) ?></strong>
                 <p>
-                    <?php echo __( 'Assisting is allowing the learner to practice the skill. This takes longer than the modeling phase. It requires “hand-holding” on the part of the mentor. The mentor needs to be directive and take an active role in coaching the learner. This phase does not last until the learner is fully competent, but merely until they understand the basics of the skill. If this phase is continued too long, then the learner will develop a dependence on the mentor and never advance to full competence.', 'zume' ) ?>
+                    <?php echo __( 'Have I obeyed this tool or concept? If a tool, have I practiced it on my own? If a concept, have you reflected on how it changes your perspective?', 'zume' ) ?>
                 </p>
-                <strong><?php echo __( 'Watch', 'zume' ) ?></strong>
+                <strong><?php echo __( 'Shared', 'zume' ) ?></strong>
                 <p>
-                    <?php echo __( 'Watching is the longest phase. It involves more indirect contact with the learner. It seeks to develop full competence in all facets of a skill. It may be ten times or more as long as the first two phases combined. As the learner progresses in skill, the contact with the mentor may become less regular and more ad hoc.', 'zume' ) ?>
+                    <?php echo __( 'Have I shared this tool or concept? If a tool, have you shown anyone how to use this tool? If a concept, have you shared this concept with anyone?', 'zume' ) ?>
                 </p>
-                <strong><?php echo __( 'Leave', 'zume' ) ?></strong>
+                <strong><?php echo __( 'Trained', 'zume' ) ?></strong>
                 <p>
-                    <?php echo __( 'Leaving is a sort of graduation when the learner becomes a peer of the mentor. Periodic contact and peer mentoring may continue to take place if the learner and mentor are in the same network. When a parent releases a child to ride their bicycle completely unsupervised, that is the LEAVE phase.', 'zume' ) ?>
+                    <?php echo __( 'Have I trained others to share this tool or concept? If a tool, have I trained someone to share the tool with someone else? If a concept, have I trained someone to share the concept with someone else?', 'zume' ) ?>
                 </p>
             </div>
         </div>
         <?php
     }
 }
-Zume_Activites_Coaching_Mawl::instance();
+Zume_Activites_Coaching_Host::instance();
