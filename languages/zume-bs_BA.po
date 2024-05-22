@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-21 12:25-0600\n"
-"PO-Revision-Date: 2024-05-21 22:05+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-05-22 14:45+0000\n"
+"Last-Translator: Dragana <celikdragana0@gmail.com>\n"
 "Language-Team: Bosnian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/bs_BA/>\n"
 "Language: bs_BA\n"
@@ -397,7 +396,6 @@ msgid "The B.L.E.S.S. Prayer"
 msgstr "B.L.E.S.S. model molitve"
 
 #: globals.php:2127
-#, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 obrazac grupnog sastanka"
 
@@ -620,9 +618,8 @@ msgid "No Results"
 msgstr "Nema rezultata"
 
 #: site/activities/coaching-checklist-mawl.php:98
-#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "2. Obučite druge modelom, asistiranjem, gledanjem, odlaskom."
+msgstr "Obučite druge modelom, asistiranjem, gledanjem, odlaskom."
 
 #: site/activities/coaching-checklist-mawl.php:105
 #: site/activities/coaching-checklist-personal.php:104
@@ -680,6 +677,11 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"Modeliranje je jednostavno pružanje primjera prakse ili alata. To je "
+"najkraći dio kruga obuke. Obično je potrebno uraditi samo jednom. To je "
+"jednostavno stvaranje svijesti da praksa ili alat postoji i davanje opšte "
+"ideje o tome kako izgleda. Ponavljeno modeliranje nije efikasan način da se "
+"neko opremi."
 
 #: site/activities/coaching-checklist-mawl.php:169
 #: site/activities/coaching-checklist.php:209
@@ -692,6 +694,13 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"Asistiranje je omogućavanje učeniku da uvježba vještinu. Ovo traje duže od "
+"faze modeliranja. Zahtijeva “držanje za ruku” od strane mentora. Mentor "
+"treba da bude usmjeravajući i da preuzme aktivnu ulogu u podučavanju "
+"učenika. Ova faza ne traje dok učenik ne bude potpuno kompetentan, već samo "
+"dok ne shvati osnove vještine. Ako se ova faza predugo nastavi, tada će "
+"učenik razviti ovisnost o mentoru i nikada neće napredovati do pune "
+"kompetencije."
 
 #: site/activities/coaching-checklist-mawl.php:173
 #: site/activities/coaching-checklist.php:213
@@ -702,6 +711,10 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"Gledanje je najduža faza. To uključuje indirektniji kontakt sa učenikom. "
+"Nastoji razviti punu kompetenciju u svim aspektima vještina. Može biti deset "
+"puta ili više duže od prve dvije faze zajedno. Kako učenik napreduje u "
+"vještini, kontakt s mentorom može postati manje redovan i više prema potrebi."
 
 #: site/activities/coaching-checklist-mawl.php:177
 #: site/activities/coaching-checklist.php:217
@@ -711,11 +724,14 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"Odlazak je neka vrsta diplomiranja kada učenik postaje vršnjak mentora. "
+"Periodični kontakt i ravnopravno mentorstvo mogu se nastaviti ako su učenik "
+"i mentor u istoj mreži. Kada roditelj pusti dijete da se vozi biciklom "
+"potpuno bez nadzora, to je faza OSTAVLJANJA."
 
 #: site/activities/coaching-checklist-personal.php:98
-#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. Samoevaluacija sa saslušanim, poslušanim, podjeljenjim, obučenim."
+msgstr "Samoprocjenite se koristeći Čuli, Poslušali, Podijelili, Obučili"
 
 #: site/activities/coaching-checklist-personal.php:119
 #: site/activities/coaching-checklist-printable.php:124
@@ -758,7 +774,7 @@ msgstr "Obučio"
 #: site/activities/coaching-checklist-personal.php:165
 #: site/activities/coaching-checklist.php:186 site/dashboard/dashboard.php:232
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "Da li sam čuo za ovaj alat ili koncept?"
 
 #: site/activities/coaching-checklist-personal.php:169
 #: site/activities/coaching-checklist.php:190 site/dashboard/dashboard.php:234
@@ -766,6 +782,9 @@ msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"Da li sam poslušao ovaj alat ili koncept? Ako je alat, jesam li ga sam "
+"vježbao? Ako je koncept, jeste li razmišljali o tome kako mijenja vašu "
+"perspektivu?"
 
 #: site/activities/coaching-checklist-personal.php:173
 #: site/activities/coaching-checklist.php:194 site/dashboard/dashboard.php:236
@@ -773,6 +792,9 @@ msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"Jesam li podijelio ovaj alat ili koncept? Ako je alat, jeste li nekome "
+"pokazali kako se koristi ovaj alat? Ako je koncept, da li ste s nekim "
+"podijelili ovaj koncept?"
 
 #: site/activities/coaching-checklist-personal.php:177
 #: site/activities/coaching-checklist.php:198 site/dashboard/dashboard.php:238
@@ -781,6 +803,9 @@ msgid ""
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"Jesam li obučio druge da dijele ovaj alat ili koncept? Ako je alat, jesam li "
+"obučio nekoga da dijeli alat s nekim drugim? Ako je koncept, da li sam "
+"nekoga obučio da podijeli koncept s nekim drugim?"
 
 #: site/activities/coaching-checklist-printable.php:99
 msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
@@ -994,9 +1019,8 @@ msgstr "Skenirajte QR kod ili pronađite komad papira."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid "Select a person from your list of 100."
-msgstr "Kreirajte vlastitu listu od 100"
+msgstr "Odaberite osobu sa svoje liste od 100."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 #: site/course/course-content.php:2577
@@ -1004,11 +1028,13 @@ msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"Koristite kontrolnu listu za treniranje i procijenite svoju odabranu osobu. "
+"Zapitajte se: \"Šta je ovoj osobi potrebno za svaki od alata i koncepata?\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 #: site/course/course-content.php:2578
 msgid "Check off the checklist."
-msgstr ""
+msgstr "Označite kontrolnu listu."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -4666,40 +4692,36 @@ msgstr ""
 
 #: site/dashboard/wizard.php:246 site/dashboard/wizard.php:247
 #: site/dashboard/wizard.php:268
-#, fuzzy
 msgid "Location"
-msgstr "Sačuvaj trenutnu lokaciju"
+msgstr "Lokacija"
 
 #: site/dashboard/wizard.php:248
-#, fuzzy
 msgid "Group Name"
-msgstr "Nema imena"
+msgstr "Ime grupe"
 
 #: site/dashboard/wizard.php:249
-#, fuzzy
 msgid "Group name"
-msgstr "Nema imena"
+msgstr "Ime grupe"
 
 #: site/dashboard/wizard.php:250
-#, fuzzy
 msgid "Start Date"
-msgstr "Kreni"
+msgstr "Datum početka"
 
 #: site/dashboard/wizard.php:254 site/dashboard/wizard.php:269
 msgid "Time"
-msgstr ""
+msgstr "Vrijeme"
 
 #: site/dashboard/wizard.php:255
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: site/dashboard/wizard.php:256
 msgid "Summary"
-msgstr ""
+msgstr "Sažetak"
 
 #: site/dashboard/wizard.php:257
 msgid "Clear Calendar"
-msgstr ""
+msgstr "Očisti kalendar"
 
 #: site/dashboard/wizard.php:258
 msgid "Add"
@@ -4707,36 +4729,36 @@ msgstr "Dodaj"
 
 #: site/dashboard/wizard.php:259
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "Dodajte neke datume svom rasporedu"
 
 #: site/dashboard/wizard.php:260
-#, fuzzy
 msgid "Change"
-msgstr "Promijenite ključ"
+msgstr "Promjena"
 
 #: site/dashboard/wizard.php:264
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "Pozovite svoje prijatelje da se pridruže vašem kursu"
 
 #: site/dashboard/wizard.php:265
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"Podijelite pozivnicu ili link ispod sa svojim prijateljima kako bi se mogli "
+"pridružiti vašoj obuci."
 
 #: site/dashboard/wizard.php:266
 msgid "Join my zume plan"
-msgstr ""
+msgstr "Pridružite se mom Zume planu"
 
 #: site/dashboard/wizard.php:267
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s vas poziva u Zume kurs grupu"
 
 #: site/dashboard/wizard.php:273
-#, fuzzy
 msgid "Copy Invite"
-msgstr "Veza"
+msgstr "Kopiraj pozivnicu"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -4800,7 +4822,7 @@ msgstr "Lozinka ne odgovara. Molimo vas, pokušajte ponovo."
 #: site/login/login-template.php:217
 #, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
-msgstr ""
+msgstr "Vaša lozinka je poništena. %1$s Možete se prijaviti ovdje %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -4818,7 +4840,7 @@ msgstr "Lozinka"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "Molimo odaberite jaču lozinku. Ova je preslaba."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -4827,11 +4849,11 @@ msgstr "Ponovo unesite lozinku"
 
 #: site/login/login-template.php:365
 msgid "Hello!"
-msgstr ""
+msgstr "Zdravo!"
 
 #: site/login/login-template.php:366
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "Kreirajte Zume nalog"
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
 #: site/login/login-template.php:690 site/pages/follow-jesus.php:151
@@ -4843,20 +4865,19 @@ msgstr "Registracija"
 
 #: site/login/login-template.php:400
 msgid "Or"
-msgstr ""
+msgstr "ili"
 
 #: site/login/login-template.php:402
-#, fuzzy
 msgid "Register with Email"
-msgstr "Registrujte se sada!"
+msgstr "Registrirajte se putem e-pošte"
 
 #: site/login/login-template.php:440
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "Loše formatirana adresa e-pošte"
 
 #: site/login/login-template.php:447
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "Lozinka nije dovoljno jaka"
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -4867,9 +4888,8 @@ msgid "User action confirmed."
 msgstr "Potvrđena je radnja korisnika."
 
 #: site/login/login-template.php:582
-#, fuzzy
 msgid "Welcome back!"
-msgstr "Dobrodošli!"
+msgstr "Dobrodošli nazad!"
 
 #: site/login/login-template.php:589 site/login/login-template.php:638
 #: site/login/login-template.php:713 site/pages/home.php:112
@@ -4879,7 +4899,7 @@ msgstr "Prijava"
 
 #: site/login/login-template.php:612
 msgid "or sign in with email"
-msgstr ""
+msgstr "ili se prijavite putem e-pošte"
 
 #: site/login/login-template.php:618
 msgid "Username or password does not match. Try again."
@@ -4891,7 +4911,7 @@ msgstr "Zapamti me"
 
 #: site/login/login-template.php:689
 msgid "Don't have an account?"
-msgstr ""
+msgstr "Nemate račun?"
 
 #: site/login/login-template.php:701
 msgid "Lost your password?"
@@ -4899,16 +4919,15 @@ msgstr "Zaboravili ste lozinku?"
 
 #: site/login/login-template.php:712
 msgid "Already have an account?"
-msgstr ""
+msgstr "Već imate račun?"
 
 #: site/login/login-template.php:768
-#, fuzzy
 msgid "Username or Email Address"
-msgstr "Nedostaje korisničko ime ili e-mail adresa."
+msgstr "Korisničko ime ili adresa e-pošte"
 
 #: site/login/login-template.php:771
 msgid "Log In"
-msgstr ""
+msgstr "Prijavi se"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5031,12 +5050,10 @@ msgid "Storage"
 msgstr "Skladištenje"
 
 #: site/pages/about.php:87
-#, fuzzy
 msgid "What is Zúme Training?"
-msgstr "Zume kurs"
+msgstr "Šta je Zúme trening?"
 
 #: site/pages/about.php:91
-#, fuzzy
 msgid ""
 "Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew "
 "13:33, Jesus compared the kingdom of heaven to yeast mixed into a large "
@@ -5044,19 +5061,19 @@ msgid ""
 "ordinary people, using ordinary resources, can have exponential impact for "
 "the Kingdom of God."
 msgstr ""
-"Zúme na grčkom znači kvasac. U Mateju 13:33 citira se Isus, koji kaže: "
-"\"Kraljevstvo nebesko je poput žene koja je uzimala kvasac i miješala ga u "
-"veliku količinu brašna dok se sve nije diglo.\" To ilustrira kako obični "
-"ljudi, koristeći obične resurse, mogu imati izvanredan utjecaj na "
-"Kraljevstvo Božje. Zúme želi opremiti i osnažiti obične vjernike da dođu do "
-"svakog susjedstva."
+"Zúme, grčka riječ za 'kvasac', ima značajno značenje. U Mateju 13:33, Isus "
+"je uporedio kraljevstvo nebesko s kvascem pomiješanim u veliku količinu "
+"brašna, prožimajući cijelo tijesto. Ova parabola ilustruje kako obični "
+"ljudi, koristeći obične resurse, mogu imati eksponencijalni utjecaj na "
+"Kraljevstvo Božje."
 
 #: site/pages/about.php:95 site/pages/messages.php:258
-#, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
-msgstr "preplaviti svijet multipliciranjem učenika"
+msgstr ""
+"Zúme kurs postoji kako bi nastanio Zemlju brojnim učenicima u našoj "
+"generaciji."
 
 #: site/pages/about.php:100
 msgid ""
@@ -5068,6 +5085,13 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"U 2015., mala grupa posvećena ispunjavanju Isusovog Velikog poslanja sastala "
+"se za sastanak rukovodstva projekta Jonathan. Molili su se i razgovarali o "
+"izazovima u umnažanju učenika širom svijeta. Prepoznajući potrebu za "
+"pristupačnom, višejezičnom i fleksibilnom obukom koja je u skladu s Isusovim "
+"pozivom da obični ljudi budu 'kvasac' za Kraljevstvo, rodila se ideja o "
+"online video treningu. Na kraju, ova ideja je evoluirala u ono što je danas "
+"poznato kao Zúme."
 
 #: site/pages/about.php:101
 msgid ""
@@ -5077,9 +5101,13 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"Temeljni principi stvaranja učenika u Zúme treningu dolaze direktno iz "
+"Biblije i testirani su širom svijeta više od trideset godina. Ova načela "
+"osnažuju obične vjernike da postanu učenici koji, zauzvrat, stvaraju "
+"učenike, što rezultira milionima učenika koji napreduju u Kraljevstvu na "
+"duhovno mračnim mjestima."
 
 #: site/pages/about.php:114
-#, fuzzy
 msgid ""
 "Launched on February 14, 2017, through Kingdom collaboration, Zúme Training "
 "remains an open initiative without formal organizational control or a "
@@ -5087,8 +5115,10 @@ msgid ""
 "formal statement of faith. All involved, however, would agree with the "
 "Lausanne Covenant."
 msgstr ""
-"Budući da Zúmeom ne upravlja organizacija, ne postoji formalna izjava vjere. "
-"Svi koji smo se uključili, složili bismo se oko Lozanskog saveza."
+"Pokrenut 14. februara 2017, kroz saradnju Kraljevstva, Zúme kurs ostaje "
+"otvorena inicijativa bez formalne organizacione kontrole ili zasebnog "
+"entiteta. Budući da Zúme ne vodi organizacija, ne postoji formalna izjava o "
+"vjeri. Međutim, svi uključeni bi se složili sa Sporazumom iz Lozane."
 
 #: site/pages/about.php:120
 msgid ""
@@ -5096,16 +5126,21 @@ msgid ""
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"Cilj je čitavu zemlju nastaniti brojnim učenicima u našoj generaciji. "
+"Biblijska načela koja se nalaze u ovoj obuci su jednostavna. Potencijal "
+"promjene svijeta je u praksi ovih principa."
 
 #: site/pages/about.php:121
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Vizija Zúmea je uporediva s kvascem koji djeluje kroz cijelo tijesto, šireći "
+"osnovne alate Kraljevstva u susjedstva širom svijeta."
 
 #: site/pages/about.php:128
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "Vizija Zúmea ima dva dijela:"
 
 #: site/pages/about.php:132
 msgid "1 Training"
@@ -5113,13 +5148,16 @@ msgstr "1 kurs"
 
 #: site/pages/about.php:136
 msgid "Part 1:"
-msgstr ""
+msgstr "1. dio"
 
 #: site/pages/about.php:137
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"Obučiti najmanje jednog čovjeka koji stvara učenika na svakih 5.000 ljudi u "
+"Sjevernoj Americi i jednog čovjeka koji stvara učenika na svakih 50.000 "
+"ljudi u svijetu."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
@@ -5127,7 +5165,7 @@ msgstr "2 Jednostavne crkve"
 
 #: site/pages/about.php:147
 msgid "Part 2:"
-msgstr ""
+msgstr "2 dio:"
 
 #: site/pages/about.php:148
 msgid ""
@@ -5135,6 +5173,9 @@ msgid ""
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"Za obučene ljude koji stvaraju učenike da osnuju najmanje 2 jednostavne "
+"crkve za umnažanje na svakih 5000 ljudi u Sjevernoj Americi i 2 jednostavne "
+"crkve na svakih 50,000 ljudi širom svijeta."
 
 #: site/pages/about.php:154
 msgid ""
@@ -5142,6 +5183,9 @@ msgid ""
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"Sa ovim malim počecima... to je ono što Biblija naziva kvascem... mogli smo "
+"vidjeti svijet prekriven umnažanjem učenika i crkava. Istražite Zúme kurs i "
+"saznajte više o tome!"
 
 #: site/pages/about.php:157
 #, fuzzy
@@ -5149,9 +5193,8 @@ msgid "Get Started"
 msgstr "Započnite"
 
 #: site/pages/about.php:162
-#, fuzzy
 msgid "How does Zúme Training Work?"
-msgstr "Zume kurs"
+msgstr "Kako funkcionira Zúme kurs?"
 
 #: site/pages/about.php:167 site/pages/home.php:213
 #, php-format
@@ -5159,53 +5202,55 @@ msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sBesplatna registracija%2$s vam daje potpuni pristup svim materijalima za "
+"obuku i online obuci."
 
 #: site/pages/about.php:171 site/pages/home.php:217
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr ""
-"Video i audio snimak pomoći će vašoj grupi da shvati osnovne principe "
-"multipliciranja učenika."
+"%1$sVideozapisi s uputama%2$s pomažu vašoj grupi da razumije osnovne "
+"principe umnažanja učenika."
 
 #: site/pages/about.php:175 site/pages/home.php:221
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
-"Grupne diskusije pomoći će vašoj grupi da razmisle o onome što se dijeli."
+"%1$sGrupne diskusije%2$s pomažu vašoj grupi da razmisli o onome što se "
+"dijeli."
 
 #: site/pages/about.php:179 site/pages/home.php:225
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
-"Jednostavne vježbe pomoći će vašoj grupi da primjene ono što uče u praksi."
+"%1$sJednostavne vježbe%2$s pomažu vašoj grupi da ono što naučite provede u "
+"praksi."
 
 #: site/pages/about.php:183 site/pages/home.php:229
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"Izazovi na kraju lekcije pomoći će vašoj grupi nastaviti učiti i rasti u "
-"vremenu između lekcija."
+"%1$sIzazovi sesije%2$s pomažu vašoj grupi da nastavi da uči i raste između "
+"sesija."
 
 #: site/pages/about.php:194
 msgid "Before you start."
-msgstr ""
+msgstr "Prije nego počnete."
 
 #: site/pages/about.php:201
-#, fuzzy
 msgid "Zúme is NOT like other trainings!"
-msgstr "Želite li započeti s obukom?"
+msgstr "Zúme NIJE kao druge obuke!"
 
 #: site/pages/about.php:203
-#, fuzzy
 msgid "First:"
-msgstr "Prvi"
+msgstr "Prvo:"
 
 #: site/pages/about.php:204
 msgid ""
@@ -5213,10 +5258,13 @@ msgid ""
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme je dizajniran da se radi u grupi. Grupne vježbe, diskusije i "
+"uvježbavanje vještina će biti bolje raditi s drugima, pa okupite grupu, ako "
+"je moguće."
 
 #: site/pages/about.php:207
 msgid "Second:"
-msgstr ""
+msgstr "Sekunda:"
 
 #: site/pages/about.php:208
 msgid ""
@@ -5225,54 +5273,62 @@ msgid ""
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme se bavi razvojem vještina, izgradnjom kompetencija, a ne samo "
+"stjecanjem znanja. U svakoj sesiji, cilj je akcija koja će dati plodove. "
+"Najbolji ishod obuke će biti promijenjen način života i iskustvo povećane "
+"moći vaše vjeri."
 
 #: site/pages/about.php:216
-#, fuzzy
 msgid "What's required"
-msgstr "Potrebna lozinka"
+msgstr "Šta je potrebno"
 
 #: site/pages/about.php:219
-#, fuzzy
 msgid "Needed for the training:"
-msgstr "Želite li započeti s obukom?"
+msgstr "Za obuku potrebno:"
 
 #: site/pages/about.php:221 site/pages/training.php:262
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "Najmanje 3 osobe, ali idealno manje od 12."
 
 #: site/pages/about.php:222 site/pages/training.php:263
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"Posvećenost da provedete 20 sati učeći i praktikujući koncepte i alate na "
+"kursu."
 
 #: site/pages/about.php:223 site/pages/training.php:264
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"Osoba koja će olakšati (potencijalno vama) vrijeme i lokaciju sastanka, "
+"voditi daljnju diskusiju i olakšati upute za akciju."
 
 #: site/pages/about.php:232
-#, fuzzy
 msgid "NOT needed for the training:"
-msgstr "Želite li započeti s obukom?"
+msgstr "NIJE potrebno za obuku:"
 
 #: site/pages/about.php:234 site/pages/training.php:268
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"Više znanja ili iskustva od ostatka vaše grupe nije potrebno! Ako možete "
+"kliknuti na dalje, možete voditi Zúme kurs."
 
 #: site/pages/about.php:235
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"Za vođenje obuke nije potrebna posebna dozvola! Zúme pomaže, "
+"samoinicijativni, i možete početi već danas."
 
 #: site/pages/about.php:246
-#, fuzzy
 msgid "Connecting with a Coach."
-msgstr "povezati se s trenerom"
+msgstr "Povezivanje sa trenerom."
 
 #: site/pages/about.php:253
 msgid ""
@@ -5280,10 +5336,13 @@ msgid ""
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"Čitavo vrijeme, Zúme zajednica je željna da vas podrži pružanjem TRENERA "
+"koji će pomoći vama i vašoj grupi da uspješno provedete obuku. Ne "
+"ustručavajte se kontaktirati nas sa pitanjima ili nedoumicama!"
 
 #: site/pages/about.php:263
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "Da li si spreman? Registrujte se danas."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 #, fuzzy
@@ -5292,45 +5351,44 @@ msgstr "Registrujte se besplatno"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "Unesite šifru prijatelja."
 
 #: site/pages/checkin.php:157
-#, fuzzy
 msgid "Checkin"
-msgstr "Kontrolna lista"
+msgstr "Provjeri"
 
 #: site/pages/checkin.php:159
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "Koristite kod na ekranu ili u knjizi"
 
 #: site/pages/checkin.php:164 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
 msgid "Connect"
-msgstr ""
+msgstr "Povežite se"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
 msgid "Donate"
-msgstr ""
+msgstr "Donirajte"
 
 #: site/pages/donate.php:95
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
+"Mi smo finansirani iz grupe i drago nam je što želite da budete dio vizije "
+"Zúmea."
 
 #: site/pages/donate.php:103
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "Pogledajte sve mogućnosti davanja"
 
 #: site/pages/faq.php:88
-#, fuzzy
 msgid "FAQ"
-msgstr "FAQs"
+msgstr "Najčešće postavljena pitanja"
 
 #: site/pages/faq.php:90 site/pages/home.php:188 site/profile/profile.php:162
-#, fuzzy
 msgid "User Profile"
-msgstr "Vaš profil"
+msgstr "Profil korisnika"
 
 #: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
@@ -5480,13 +5538,12 @@ msgstr ""
 "Što ako mnogi prijatelji, porodica i drugi počnu slijediti Isusa sa mnom?"
 
 #: site/pages/friend-invite.php:164
-#, fuzzy
 msgid "Friend Invitation"
-msgstr "Prihvaćen poziv"
+msgstr "Pozivnica prijatelja"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "Koristite kod koji vam je poslao prijatelj."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
@@ -5499,46 +5556,48 @@ msgid ""
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"U svakom atletskom sportu, posebno na višim nivoima, postoji trening. Čak i "
+"olimpijski sportisti imaju trenere, a često i više od jednog. Stvaranje "
+"učenika može jednako imati koristi od podučavanja onih koji imaju više "
+"iskustva."
 
 #: site/pages/get-a-coach.php:92
 msgid "No Cost"
-msgstr ""
+msgstr "Bez troškova"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
 #: site/pages/training.php:142
-#, fuzzy
 msgid "Join a training group"
-msgstr "Budite organizator"
+msgstr "Pridružite se grupi za obuku"
 
 #: site/pages/get-a-coach.php:95
-#, fuzzy
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
-"Naša mreža trenera volontera su ljudi poput vas, ljudi koji su strastveni u "
-"ljubavi prema Bogu, vole druge i pokoravaju se Velikom poslanju."
+"Naša mreža dobrovoljnih trenera nije plaćena, već je vođena strašću za "
+"ljubavlju prema Bogu, ljubavi prema drugima i pokoravanjem Velikom poslanju."
 
 #: site/pages/get-a-coach.php:99
-#, fuzzy
 msgid "Localized"
-msgstr "Lokalno"
+msgstr "Lokalizirano"
 
 #: site/pages/get-a-coach.php:102
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"Naš tim za povezivanje pokušava da vas poveže sa trenerom koji govori vaš "
+"jezik i koji je geografski što je bliže moguće."
 
 #: site/pages/get-a-coach.php:106
 msgid "Experienced"
-msgstr ""
+msgstr "Iskusni"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
-#, fuzzy
 msgid "Join a training"
-msgstr "Budite organizator"
+msgstr "Pridružite se treningu"
 
 #: site/pages/get-a-coach.php:109
 msgid ""
@@ -5546,10 +5605,13 @@ msgid ""
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"Svi naši treneri su obučeni i praktikuju koncepte i alate koji se nalaze u "
+"Zûmeu. Svi naši treneri mogu vam pomoći da savladate barijere i napravite "
+"korake na vašem putovanju."
 
 #: site/pages/home.php:86
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:87
 #, fuzzy

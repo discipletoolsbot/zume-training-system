@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-21 12:25-0600\n"
-"PO-Revision-Date: 2024-05-22 10:11+0000\n"
+"PO-Revision-Date: 2024-05-22 12:55+0000\n"
 "Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
 "translate@weblate.org>\n"
 "Language-Team: Romanian <https://translate.disciple.tools/projects/"
@@ -1835,6 +1835,8 @@ msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
+"Zúme este o comunitate de practică pentru cei care doresc să vadă discipolii "
+"făcând mișcări."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3343 site/course/course-content.php:3348
@@ -2077,7 +2079,6 @@ msgstr ""
 "același timp."
 
 #: site/course/course-content.php:1288
-#, fuzzy
 msgid ""
 "What is one area of discipleship (reading/understanding the Bible, praying, "
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
@@ -2085,7 +2086,7 @@ msgid ""
 msgstr ""
 "Care este un domeniu al uceniciei (citirea / înțelegerea Bibliei, "
 "rugăciunea, împărtășirea Istoriei lui Dumnezeu, etc.) despre care vrei să "
-"afli mai multe? Cine  te-ar putea ajuta să înveți?"
+"afli mai multe? Cine te-ar putea ajuta să înveți?"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2628,9 +2629,8 @@ msgstr "Creștere Simultană (non-secvențială)"
 #: site/course/course-content.php:2396 site/course/course-content.php:2638
 #: site/course/course-content.php:2644 site/course/course-content.php:2779
 #: site/course/course-content.php:5422 site/course/course-content.php:5452
-#, fuzzy
 msgid "Four Fields"
-msgstr "Instrumentul „Cele Patru Câmpuri”"
+msgstr "Patru Câmpuri"
 
 #: site/course/course-content.php:2415
 #, fuzzy
@@ -2729,9 +2729,8 @@ msgid "Which tools and concepts did you feel you would be able to train well?"
 msgstr "Ce instrumente și concepte ați simțit că veți putea să instruiți bine?"
 
 #: site/course/course-content.php:2600
-#, fuzzy
 msgid "Which tools and concepts did you feel you would struggle to train well?"
-msgstr "Ce instrumente de instruire ați simțit că veți putea să instruiți bine?"
+msgstr "Ce instrumente și concepte simțiti că veți putea să instruiți bine?"
 
 #: site/course/course-content.php:2601
 msgid ""
@@ -3069,13 +3068,15 @@ msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"În Biblia Sa, Dumnezeu spune: „Căci Eu cunosc planurile pe care le am cu "
+"privire la voi, zice Domnul, planuri de pace şi nu de nenorocire, ca să vă "
+"dau un viitor şi o nădejde.”."
 
 #: site/course/course-content.php:3018
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Dumnezeu face planuri și El se așteaptă să facem și noi planuri."
 
 #: site/course/course-content.php:3019 site/dashboard/dashboard.php:208
-#, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
@@ -3083,56 +3084,61 @@ msgid ""
 msgstr ""
 "Un plan de trei luni este un instrument pe care îl puteți utiliza pentru a "
 "vă ajuta să vă concentrați atenția și eforturile și să le mențineți aliniate "
-"cu prioritățile lui Dumnezeu pentru a face discipoli care se înmulțesc. "
-"Petreceți următoarele 30 de minute rugându-vă, citind și apoi completând "
-"angajamentele enumerate în Planul de trei luni."
+"cu prioritățile lui Dumnezeu pentru a face discipoli care se înmulțesc."
 
 #: site/course/course-content.php:3020
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"Următorul diapozitiv vă va arăta cum să vă faceți planul pe trei luni. Vă "
+"recomandăm să utilizați instrumentul online."
 
 #: site/course/course-content.php:3033
-#, fuzzy
 msgid "Make your Three Month Plan"
-msgstr "Planul de trei luni"
+msgstr "Fă-ți un plan pe trei luni"
 
 #: site/course/course-content.php:3035
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Citiți - Scanați codul QR. Nu este necesar să vă înregistrați pentru fiecare "
+"articol, acestea sunt doar menționate ca sugestii pentru planul dvs. (5 "
+"minute)"
 
 #: site/course/course-content.php:3036
-#, fuzzy
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
-"Luați cel puțin 10 minute pentru a fi cât mai liniștit posibil și ascultați "
-"cu atenție ce are de spus Dumnezeu și ce alege să dezvăluie. Faceți un efort "
-"pentru a auzi vocea Lui."
+"Ascultă - Alocă timp pentru a fi în cea mai mare liniște posibilă și ascultă "
+"ceea ce Dumnezeu decide să îți reveleze. (10 minute)"
 
 #: site/course/course-content.php:3037
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"Înregistrați-vă planul - Scrieți angajamentele pe o foaie de hârtie sau "
+"utilizați instrumentul online pentru a vă salva răspunsurile. (15 minute)"
 
 #: site/course/course-content.php:3043
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "Instrumentul Plan online"
 
 #: site/course/course-content.php:3056
 msgid "Take turns sharing your Three Month Plans with each other."
 msgstr ""
+"Vă rog să împărtășiți planurile dumneavoastră pentru următoarele trei luni."
 
 #: site/course/course-content.php:3057
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"Găsiți un partener(i) de antrenament care este dispus(ă) să vă verifice "
+"săptămânal. Angajați-vă să faceți același lucru pentru ei."
 
 #: site/course/course-content.php:3198
 msgid ""
@@ -3140,62 +3146,76 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"Exersați să împărtășiți aceste definiții cu un prieten și rugați-vă ca "
+"Domnul să le înrădăcineze adânc în inima și sufletul vostru. Întreabă-L pe "
+"Domnul cu cine ar vrea să le împărtășești."
 
 #: site/course/course-content.php:3199
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"Împărtășiți definițiile cu cei cu care Domnul vă îndeamnă să faceți acest "
+"lucru. Apoi echipați-i să-l împărtășească cu altcineva."
 
 #: site/course/course-content.php:3261
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr ""
-"Rugați-vă și mulțumiți lui Dumnezeu pentru rezultate și invitați-L pe Duhul "
-"Său  cel Sfânt să vă conducă timpul împreună."
+msgstr "Cereți Duhului Sfânt al lui Dumnezeu să vă conducă timpul împreună."
 
 #: site/course/course-content.php:3289 site/course/course-content.php:3410
 #: site/course/course-content.php:3662 site/course/course-content.php:4486
 #: site/course/course-content.php:5557 site/course/course-content.php:5697
 msgid "In this session, we will add this tool to our toolkit:"
 msgstr ""
+"În această sesiune, vom adăuga acest instrument la setul nostru de "
+"instrumente:"
 
 #: site/course/course-content.php:3382
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Roagă-te și mulțumește lui Dumnezeu pentru prezența Sa în viețile noastre. "
+"Să ne rugăm pentru fiecare persoană din grup, să aibă urechi de auzit vocea "
+"Lui și harul de a asculta ceea ce El spune."
 
 #: site/course/course-content.php:3443
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"Căutați un partener de responsabilitate de același sex și începeți "
+"întâlnirile săptămânale."
 
 #: site/course/course-content.php:3444
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"Cereți Domnului să vă îndrume să provocați cel puțin cinci oameni pe care îi "
+"cunoașteți și care sunt credincioși să înceapă propria lor întâlnire a "
+"grupului de responsabilitate și apoi să facă acest lucru."
 
 #: site/course/course-content.php:3504
-#, fuzzy
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
 msgstr ""
-"Rugați-vă și mulțumiți lui Dumnezeu pentru rezultate și invitați-L pe Duhul "
-"Său  cel Sfânt să vă conducă timpul împreună."
+"Rugați-vă și mulțumiți-i lui Dumnezeu că ne modelează după chipul lui Isus. "
+"Invitați Duhul Sfânt să vă călăuzească timpul petrecut împreună."
 
 #: site/course/course-content.php:3532 site/course/course-content.php:4600
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "În această sesiune, vom auzi și vom discuta despre conceptul:"
 
 #: site/course/course-content.php:3634
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru dragostea Sa față de toți "
+"oamenii din viețile noastre. Roagă-te pentru fiecare persoană din grupul "
+"tău, să poată vedea pe ceilalți așa cum îi vede Dumnezeu."
 
 #: site/course/course-content.php:3664 site/course/course-content.php:3700
 #, fuzzy
@@ -3207,23 +3227,32 @@ msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"Dacă aveți un program flexibil, dedicați o oră completă. Petreceți cinci "
+"minute întregi pe fiecare secțiune. Aceasta va extinde sesiunea la mai mult "
+"de o oră de exerciții."
 
 #: site/course/course-content.php:3680
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"Dacă nu este posibil să aveți o sesiune mai extinsă, scurtați secțiunile de "
+"rugăciune de la cinci minute la trei minute fiecare."
 
 #: site/course/course-content.php:3715
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"Folosiți ciclul de rugăciune ca ghid pe parcursul unei ore de rugăciune în "
+"această săptămână."
 
 #: site/course/course-content.php:3716
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"Distribuiți ciclul de rugăciune oricui vă îndrumă Domnul. Încurajați-i să-l "
+"partajeze și cu alții."
 
 #: site/course/course-content.php:3842
 msgid ""
@@ -3231,17 +3260,19 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"Exersați să împărtășiți conceptul de Economie Spirituală cu un prieten și "
+"rugați-vă ca Domnul să îl înrădăcineze adânc în inima și sufletul vostru. "
+"Întreabă-L pe Domnul cu cine vrea să-l împărtășești."
 
 #: site/course/course-content.php:3843
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share with about the Greatest Blessing. Have "
 "them practice it as well. Share this person‘s name with the group before you "
 "go and reach out to them."
 msgstr ""
-"Întreabă-l pe Dumnezeu cui dorește El să împărtășești acest instrument „"
-"lista de 100”. Împărtășește numele acestei persoane cu grupul înainte de a "
-"merge și ajunge la ea până la următoarea sesiune."
+"Cereți lui Dumnezeu să vă arate cu cine dorește să împărtășiți cea Mai Mare "
+"Binecuvântare. Încurajați-i și pe alții să facă la fel. Împărtășiți numele "
+"persoanei respective grupului înainte de a iniția contactul cu ea."
 
 #: site/course/course-content.php:3904
 msgid ""
@@ -3249,16 +3280,20 @@ msgid ""
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"Roagă-te pentru ca fiecare membru al grupului tău să experimenteze "
+"binecuvântările de a-l urma pe Isus, de a-i determina pe alții să-L urmeze "
+"pe Isus și de ai echipa pe alții pentru a întemeia noi familii spirituale."
 
 #: site/course/course-content.php:3932 site/course/course-content.php:4201
 #: site/course/course-content.php:4885
 msgid "In this session, we will practice this tool in our toolkit:"
 msgstr ""
+"În această sesiune, vom exersa acest instrument din setul nostru de "
+"instrumente:"
 
 #: site/course/course-content.php:3934 site/course/course-content.php:3972
-#, fuzzy
 msgid "Sharing the Gospel"
-msgstr "Practică - Împărtășirea Evangheliei"
+msgstr "Împărtășirea Evangheliei"
 
 #: site/course/course-content.php:3947
 #, fuzzy
@@ -3266,34 +3301,36 @@ msgid "Practice Sharing the Gospel"
 msgstr "Practică - Împărtășirea Evangheliei"
 
 #: site/course/course-content.php:3950
-#, fuzzy
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
-msgstr "Împărțiți-vă în grupuri de două sau trei persoane de același gen."
+msgstr ""
+"Împărțiți-vă în grupuri de două sau trei persoane și exersați să vă spuneți "
+"Istoria lui Dumnezeu unul altuia."
 
 #: site/course/course-content.php:3951
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"După ce ai exersat, schimbați-vă. Repetiția va crește încrederea. Când vei "
+"termina, vei fi pregătit să împărtășești Istoria lui Dumnezeu."
 
 #: site/course/course-content.php:4049
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others. "
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"Rugați-vă și mulțumiți lui Dumnezeu că gândurile Lui nu sunt gândurile "
-"noastre și căile Sale nu sunt căile noastre. Roagă-L să dea fiecărui membru "
-"al grupului tău mintea lui Hristos - ca să fie concentrat întotdeauna la "
-"lucrarea Tatălui Său. Cereți-I Duhului Sfânt să vă conducă timpul împreună "
-"și să faceți acum cea mai bună sesiune."
+"Rugați-vă și mulțumiți lui Dumnezeu pentru că ne-a invitat să împărtășim "
+"vestea Sa bună cu ceilalți. Cereți-I să ofere fiecărui membru al grupului "
+"vostru mintea lui Hristos și să-i umple pe toți cu Duhul Său."
 
 #: site/course/course-content.php:4077
 msgid "In this session, we will add these tools to our toolkit:"
 msgstr ""
+"În această sesiune, vom adăuga aceste instrumente la setul nostru de "
+"instrumente:"
 
 #: site/course/course-content.php:4112
 msgid ""
@@ -3301,41 +3338,41 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"Dacă cunoști pe cineva care îl urmează pe Isus și nu a fost încă botezat, "
+"încurajează-l să facă acest pas și oferă-te să-l botezi. Dacă nu, poți să "
+"exersezi cu un prieten cum se face botezul."
 
 #: site/course/course-content.php:4113
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share with about what baptism is and how to do "
 "it. Have them practice it as well. Share this person‘s name with the group "
 "before you go and reach out to them before the next session."
 msgstr ""
-"Întreabă-l pe Dumnezeu cui dorește El să împărtășești acest instrument „"
-"lista de 100”. Împărtășește numele acestei persoane cu grupul înainte de a "
-"merge și ajunge la ea până la următoarea sesiune."
+"Întreabă-L pe Dumnezeu cu cine vrea să împărtășești despre ce este botezul "
+"și cum să-l faci. Pune-i să-l practice și ei. Distribuiți numele acestei "
+"persoane grupului înainte de a merge și contactați-i înainte de următoarea "
+"sesiune."
 
 #: site/course/course-content.php:4173
-#, fuzzy
 msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
 msgstr ""
-"Rugați-vă și mulțumiți lui Dumnezeu pentru rezultate, cereți-I să vă ajute "
-"atunci când vi se pare greu de ascultat și invitați Duhul Sfânt să vă "
-"conducă timpul împreună."
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru darul unității cu "
+"moartea, înmormântarea și învierea lui Hristos. Solicitați Duhului Sfânt al "
+"lui Dumnezeu să vă ghideze timpul petrecut împreună."
 
 #: site/course/course-content.php:4216
-#, fuzzy
 msgid "Share Your Testimony"
-msgstr "Pregătiți-vă Mărturia în 3 Minute"
+msgstr "Împărtășește-ți mărturia"
 
 #: site/course/course-content.php:4218
-#, fuzzy
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
-"ÎMPĂRTĂȘIREA MĂRTURIEI dvs. - Împărțiți-vă în grupuri de două sau trei "
-"persoane și exersați cum veți împărtășiți mărturia cu alții. (45 de minute)"
+"Împărțiți-vă în grupuri de câte doi din trei și exersați-vă împărtășirea "
+"mărturiei dvs. de trei minute."
 
 #: site/course/course-content.php:4219
 msgid ""
@@ -3343,6 +3380,9 @@ msgid ""
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"Selectează cinci persoane din lista ta de o sută. Găsește pe cineva care să "
+"joace rolul fiecăreia dintre aceste cinci persoane și exersează-ți mărturia "
+"într-un mod care ți se pare că ar rezona cu fiecare persoană în parte."
 
 #: site/course/course-content.php:4220
 msgid ""
@@ -3350,40 +3390,45 @@ msgid ""
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"După ce te-ai antrenat, schimbă rolurile. Prefă-te că ești cei cinci oameni "
+"din lista altcuiva. Când ai terminat, ar trebui să poți să-ți spui povestea "
+"în aproximativ trei minute sau mai puțin."
 
 #: site/course/course-content.php:4222
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "Repetarea creează încredere."
 
 #: site/course/course-content.php:4236
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "Instrument exersat în această sesiune:"
 
 #: site/course/course-content.php:4253
-#, fuzzy
 msgid ""
 "Spend time this week practicing your testimony, and then share it with at "
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
-"Puneți-vă timp săptămâna aceasta ca să practicați mărturia în 3 minute și "
-"apoi împărtășiți-o cu cel puțin o persoană din lista dvs. de 100 pe care i-"
-"ați marcat drept „necredincios” sau „necunoscut”."
+"Petrece timp săptămâna aceasta exersându-ți mărturia și apoi împărtășește-o "
+"cu cel puțin o persoană din Lista ta de 100 pe care ai marcat-o ca "
+"„Necredincios” sau „Necunoscut”."
 
 #: site/course/course-content.php:4326
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
 msgstr ""
-"Rugați-vă și mulțumiți lui Dumnezeu pentru rezultate și invitați-L pe Duhul "
-"Său  cel Sfânt să vă conducă timpul împreună."
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru felurile în care El "
+"acționează prin mărturia voastră și cereți Duhului Său Sfânt să vă "
+"călăuzească timpul petrecut împreună."
 
 #: site/course/course-content.php:4397
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"Dacă familia ta este religioasă și locuiește în apropiere, săvârșiți "
+"împreună Cina Domnului. Dacă nu, practicați ritualul cu un prieten care "
+"împărtășește aceeași credință."
 
 #: site/course/course-content.php:4398
 msgid ""
@@ -3391,10 +3436,13 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"Distribuiți „Ucenicia urmând exemplul bobocilor” și „Ochi pentru a vedea "
+"unde nu este Împărăția” oricui vă îndrumă Domnul. Apoi pregătiți-i să "
+"împărtășească acestea cu alții."
 
 #: site/course/course-content.php:4419 site/course/course-content.php:4424
 msgid "SESSION 11"
-msgstr ""
+msgstr "SESIUNEA 11"
 
 #: site/course/course-content.php:4458
 msgid ""
@@ -3402,43 +3450,52 @@ msgid ""
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"Roagă-te și adu mulțumiri lui Dumnezeu pentru modul în care intervine în "
+"viața ta și în cea a celor din jur. Rugați-vă ca grupul să aibă discernământ "
+"pentru a recunoaște unde Împărăția nu s-a manifestat încă."
 
 #: site/course/course-content.php:4533 site/course/course-content.php:4538
 msgid "SESSION 12"
-msgstr ""
+msgstr "SESIUNEA 12"
 
 #: site/course/course-content.php:4641
 msgid "Pray for someone in their presence using the BLESS pattern this week."
 msgstr ""
+"În această săptămână, folosiți modelul B.L.E.S.S pentru a vă ruga pentru "
+"cineva în prezența sa."
 
 #: site/course/course-content.php:4642
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"Înarmează pe cineva să se roage pentru alții utilizând modelul B.L.E.S.S și "
+"însoțește-l în timp ce efectuează această rugăciune."
 
 #: site/course/course-content.php:4664 site/course/course-content.php:4669
 msgid "SESSION 13"
-msgstr ""
+msgstr "SESIUNEA 13"
 
 #: site/course/course-content.php:4703
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru cunoștințele dobândite în "
+"ultima sesiune. Cereți ca Duhul Sfânt să vă asiste în a fi consecvent și în "
+"aplicarea a tot ce ați învățat."
 
 #: site/course/course-content.php:4818 site/course/course-content.php:4823
 msgid "SESSION 14"
-msgstr ""
+msgstr "SESIUNEA 14"
 
 #: site/course/course-content.php:4905
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
-"PRIVEȘTE ÎNAPOI - Folosiți provocările Ascultați, Instruiți și Împărtășiți "
-"din ultima sesiune pentru a vă verifica reciproc."
+"PRIVEȘTE ÎNAPOI – Utilizați provocările Ascultați, Instruiți și Împărtășiți "
+"din ultima sesiune pentru a vă înregistra unul cu celălalt. (15 minute)"
 
 #: site/course/course-content.php:4906
 #, fuzzy
@@ -3464,42 +3521,43 @@ msgid ""
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"Roagă-te și întreabă-L pe Dumnezeu dacă este voia Lui să începi un Grup 3/3. "
+"Dacă răspunsul este afirmativ, consultă lista ta de 100 și cere-i Lui să te "
+"îndrume către cine ar trebui să inviți să se alăture. Apoi, fă invitațiile "
+"în această săptămână și ai încredere că Dumnezeu va dezvolta grupul."
 
 #: site/course/course-content.php:4944
-#, fuzzy
 msgid ""
 "Find someone to share the 3/3 Group format with before your group meets "
 "again. Share this person’s name with the group before you go."
 msgstr ""
-"Rugați-vă și întrebați-l pe Dumnezeu cu cine dorește să împărtășiți despre "
-"formatul grupului 3/3 înainte ca grupul dvs. să se întâlnească din nou. "
-"Împărtășește numele acelei persoane cu grupul înainte de a pleca."
+"Identificați o persoană căreia să îi transmiteți formatul de grup 3/3 "
+"înainte de următoarea întâlnire a grupului. Comunicați numele acestei "
+"persoane grupului înainte de a vă despărți."
 
 #: site/course/course-content.php:4966 site/course/course-content.php:4971
 msgid "SESSION 15"
-msgstr ""
+msgstr "SESIUNEA 15"
 
 #: site/course/course-content.php:5005
-#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
-"Întrebați dacă cineva din grup are nevoi specifice pentru care ar dori ca "
-"grupul să se roage. Cereți cuiva să se roage și să-I ceară lui Dumnezeu să "
-"ajute în domeniile pe care grupul le-a împărtășit. Mulțumiți-I lui Dumnezeu "
-"pentru că El promite în Cuvântul Său să asculte și să acționeze atunci când "
-"oamenii Lui se roagă. Și, ca întotdeauna, cereți-i Duhului Sfânt al lui "
-"Dumnezeu să vă conducă timpul vostru împreună."
+"Întrebați dacă cineva din grup are nevoi specifice pentru care ar dori să se "
+"roage împreună. Mulțumim lui Dumnezeu pentru promisiunea Sa din Cuvânt că va "
+"asculta și va interveni când poporul Său se roagă. Invocați Duhul Sfânt al "
+"lui Dumnezeu să vă ghideze în timpul petrecut împreună."
 
 #: site/course/course-content.php:5069
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr ""
+"Împărtășește „Ciclul de instruire” unui credincios de pe lista ta de 100."
 
 #: site/course/course-content.php:5091 site/course/course-content.php:5096
 msgid "SESSION 16"
-msgstr ""
+msgstr "SESIUNEA 16"
 
 #: site/course/course-content.php:5196
 msgid ""
@@ -3507,10 +3565,13 @@ msgid ""
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Dacă ai inițiat deja propria ta biserică simplă, prezintă modelul "
+"\"Întotdeauna parte din două biserici\" membrilor acesteia. Dacă nu, oferă-l "
+"unui alt credincios pe care îl cunoști."
 
 #: site/course/course-content.php:5220 site/course/course-content.php:5225
 msgid "SESSION 17"
-msgstr ""
+msgstr "SESIUNEA 17"
 
 #: site/course/course-content.php:5259
 msgid ""
@@ -3518,6 +3579,10 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru modul în care El comunică "
+"prin Cuvânt, Rugăciune, Trup, Persecuție și Suferință. Rugați-vă ca fiecare "
+"membru al grupului să aibă urechile deschise pentru a auzi vocea Lui și să "
+"primească harul de a se conforma la ceea ce El le revelează."
 
 #: site/course/course-content.php:5328
 msgid ""
@@ -3525,38 +3590,52 @@ msgid ""
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"Identificați următorul pas pentru dvs., fie că este vorba de modelare, "
+"asistare, supraveghere sau retragere, pe care trebuie să-l efectuați "
+"împreună cu ucenicul pe care l-ați evaluat folosind lista de verificare."
+"nstruirii."
 
 #: site/course/course-content.php:5329
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"Împărtășiți conceptul de „Conducere în rețele” cu altcineva. Apoi antrenează-"
+"i să-l împărtășească cu altcineva."
 
 #: site/course/course-content.php:5353 site/course/course-content.php:5358
 msgid "SESSION 18"
-msgstr ""
+msgstr "SESIUNEA 18"
 
 #: site/course/course-content.php:5437
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"Alocați timp pentru a asculta de Dumnezeu și întrebați-l dacă tu sau grupul "
+"tău ar trebui să acționați conform discuției pe care tocmai ați avut-o "
+"despre cele Patru Câmpuri."
 
 #: site/course/course-content.php:5468
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"Examinați fiecare element al instruirii Zúme și stabiliți pentru ce "
+"domeniu(i) este relevant fiecare, apoi etichetați o diagramă cu patru "
+"câmpuri cu aceste elemente."
 
 #: site/course/course-content.php:5469
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"Distribuiți unui alt credincios cunoscut instrumentul de cartografiere "
+"generațională ca metodă de exercițiu pentru împărtășirea viziunii."
 
 #: site/course/course-content.php:5490 site/course/course-content.php:5495
 msgid "SESSION 19"
-msgstr ""
+msgstr "SESIUNEA 19"
 
 #: site/course/course-content.php:5529
 msgid ""
@@ -3564,6 +3643,10 @@ msgid ""
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"Rugați-vă și aduceți mulțumiri lui Dumnezeu pentru Trupul lui Cristos. "
+"Rugați-vă pentru dragoste și încurajare reciprocă, pentru a crește continuu "
+"între membrii grupului dumneavoastră pe măsură ce vă apropiați mai mult de "
+"Isus."
 
 #: site/course/course-content.php:5590
 msgid ""
@@ -3571,93 +3654,100 @@ msgid ""
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"Discutați cu grupul dvs. Zúme dacă membrii sunt deschiși să continue "
+"întâlnirile după finalizarea cursului, ca un grup de mentorat între egali."
 
 #: site/course/course-content.php:5591
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"Împărtășește conceptul „Grupului de mentorat de la egal la egal” cu doi "
+"credincioși de pe lista ta de 100."
 
 #: site/course/course-content.php:5614 site/course/course-content.php:5619
 msgid "SESSION 20"
-msgstr ""
+msgstr "SESIUNEA 20"
 
 #: site/course/course-content.php:5653
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"Roagă-te și mulțumește-i lui Dumnezeu că El este fidel să ducă la "
+"îndeplinire lucrarea Sa bună în noi."
 
 #: site/course/course-content.php:5682
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"Cu toate acestea, Zúme Training este doar începutul! În această sesiune, vom "
+"face un plan pentru ceea ce se întâmplă după antrenament."
 
 #: site/course/course-content.php:5724 site/course/course-content.php:5729
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "SESIUNEA INTENSIVA 1"
 
 #: site/course/course-content.php:5775 site/course/course-content.php:5780
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "SESIUNEA INTENSIVA 2"
 
 #: site/course/course-content.php:5824 site/course/course-content.php:5829
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "SESIUNEA INTENSIVA 3"
 
 #: site/course/course-content.php:5873 site/course/course-content.php:5878
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "SESIUNEA INTENSIVA 4"
 
 #: site/course/course-content.php:5922 site/course/course-content.php:5927
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "SESIUNEA INTENSIVA 5"
 
 #: site/course/course-content.php:5979
 msgid "NEXT STEP"
-msgstr ""
+msgstr "URMATORUL PAS"
 
 #: site/course/course-content.php:5982 site/course/course-content.php:5990
 #: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:141
 #: site/parts/nav.php:94
-#, fuzzy
 msgid "Join the Community"
-msgstr "Comunitate"
+msgstr "Alăturați-vă comunității"
 
 #: site/course/course-content.php:5983
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"Partea de formare a Zúme se termină, dar exersarea instrumentelor și "
+"conceptelor continuă."
 
 #: site/course/course-content.php:5984
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
+msgstr "Nu o face singur. Găsiți o comunitate pentru încurajare și creștere."
 
 #: site/course/course-content.php:5985
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "Alăturați-vă comunității Zume folosind codul QR."
 
 #: site/course/course-content.php:5999
-#, fuzzy
 msgid "CONGRATULATIONS on completing Zume Training!"
-msgstr "Finalizarea instruirii"
+msgstr "FELICITĂRI pentru finalizarea Zume Training!"
 
 #: site/course/course-content.php:6011
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "IA O PAUZĂ"
 
 #: site/course/presenter.php:131
-#, fuzzy
 msgid "Course Presenter"
-msgstr "Cursul Zúme v4"
+msgstr "Prezentatorul cursului"
 
 #: site/course/presenter.php:148
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "Descărcați diapozitivele offline aici"
 
 #: site/course/presenter.php:166
 msgid "Links"
-msgstr ""
+msgstr "Link-uri"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3679,100 +3769,89 @@ msgid "Resources"
 msgstr "Resurse"
 
 #: site/course/presenter.php:191
-#, fuzzy
 msgid "Exit Course"
-msgstr "Curs"
+msgstr "Ieșire din curs"
 
 #: site/course/presenter.php:192
 msgid "Switch Views"
-msgstr ""
+msgstr "Schimbați vederea"
 
 #: site/course/presenter.php:193
-#, fuzzy
 msgid "Next slide"
-msgstr "Sesiunea următoare"
+msgstr "Următorul diapozitiv"
 
 #: site/course/presenter.php:194
-#, fuzzy
 msgid "Previous slide"
-msgstr "Anterior"
+msgstr "Diapozitivul anterior"
 
 #: site/course/presenter.php:195
-#, fuzzy
 msgid "Session"
-msgstr "Sesiunea 1"
+msgstr "Sesiune"
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
-msgstr ""
+msgstr "Woops"
 
 #: site/dashboard/checkin-dashboard.php:153
-#, fuzzy
 msgid "Something went wrong with your checkin process."
-msgstr "Hopa. Ceva n-a mers bine. Încearcă din nou!"
+msgstr "A apărut o eroare în procesul de înregistrare."
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
 #: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
 #: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
 #: utilities/apis/cta-api.php:338
 msgid "Congratulations!"
-msgstr ""
+msgstr "Felicitări!"
 
 #: site/dashboard/checkin-dashboard.php:163
-#, fuzzy
 msgid "Checked into session:"
-msgstr "Bine ați venit la sesiune"
+msgstr "Intrat în sesiune:"
 
 #: site/dashboard/checkin-dashboard.php:164
 #, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%1$d din %2$d"
 
 #: site/dashboard/checkin-dashboard.php:167
-#, fuzzy
 msgid "Course Progress:"
-msgstr "Progresul Zúme"
+msgstr "Progresul cursului:"
 
 #: site/dashboard/checkin-dashboard.php:168
 #, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
 #: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:251
 msgid "Done"
-msgstr ""
+msgstr "Terminat"
 
 #: site/dashboard/dashboard.php:156
 msgid "Edit"
-msgstr ""
+msgstr "Editați  ×"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "Șterge"
 
 #: site/dashboard/dashboard.php:159
-#, fuzzy
 msgid "Active"
-msgstr "Activati"
+msgstr "Activ"
 
 #: site/dashboard/dashboard.php:160
-#, fuzzy
 msgid "Completed"
-msgstr "Prezentare generală"
+msgstr "Efectuat"
 
 #: site/dashboard/dashboard.php:161
-#, fuzzy
 msgid "Uncompleted"
-msgstr "Prezentare generală"
+msgstr "Nefinalizat"
 
 #: site/dashboard/dashboard.php:162
-#, fuzzy
 msgid "Not Heard"
-msgstr "Auzit"
+msgstr "Neauzit"
 
 #: site/dashboard/dashboard.php:163 site/pages/share.php:122
 msgid "All"
-msgstr ""
+msgstr "Toate"
 
 #: site/dashboard/dashboard.php:164 site/profile/profile.php:159
 msgid "Logout"
@@ -3780,33 +3859,31 @@ msgstr "Deconectare"
 
 #: site/dashboard/dashboard.php:165 site/pages/share.php:125
 msgid "Filter"
-msgstr ""
+msgstr "Filtru"
 
 #: site/dashboard/dashboard.php:166
 msgid "List View"
-msgstr ""
+msgstr "Vizualizare listă"
 
 #: site/dashboard/dashboard.php:167
 msgid "Grid View"
-msgstr ""
+msgstr "Vizualizare grilă"
 
 #: site/dashboard/dashboard.php:168
-#, fuzzy
 msgid "View Now"
-msgstr "Vezi grupul"
+msgstr "Vezi acum"
 
 #: site/dashboard/dashboard.php:169
-#, fuzzy
 msgid "Complete Now"
-msgstr "Prezentare generală"
+msgstr "Completează acum"
 
 #: site/dashboard/dashboard.php:170
 msgid "View"
-msgstr ""
+msgstr "Vedere"
 
 #: site/dashboard/dashboard.php:171
 msgid "Menu"
-msgstr ""
+msgstr "Meniul"
 
 #: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:146
 #: site/dashboard/wizard.php:192 site/profile/profile.php:116
@@ -3827,7 +3904,7 @@ msgstr "E-mail"
 
 #: site/dashboard/dashboard.php:175
 msgid "Communications Email"
-msgstr ""
+msgstr "E-mail de comunicații"
 
 #: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:145
 #: site/profile/profile.php:128
@@ -3835,9 +3912,8 @@ msgid "City"
 msgstr "Orașul"
 
 #: site/dashboard/dashboard.php:177
-#, fuzzy
 msgid "No Locations found"
-msgstr "Nu a fost găsit niciun utilizator."
+msgstr "Nu s-au găsit locații"
 
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:168
 #: site/dashboard/wizard.php:196 site/pages/_strings-mobile-pwa.php:16
@@ -3847,119 +3923,114 @@ msgid "Language"
 msgstr "Limba"
 
 #: site/dashboard/dashboard.php:180
-#, fuzzy
 msgid "Edit Profile"
-msgstr "Profilul Zume"
+msgstr "Editează profilul"
 
 #: site/dashboard/dashboard.php:181
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "Consultați acest concept Zúme"
 
 #: site/dashboard/dashboard.php:182
-#, fuzzy
 msgid "Preview"
-msgstr "vedere"
+msgstr "previzualizare"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
 #: site/dashboard/dashboard.php:259
 #, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "Adăugați %s nou"
 
 #: site/dashboard/dashboard.php:183
-#, fuzzy
 msgid "Commitment"
-msgstr "Alte angajamente:"
+msgstr "Angajament"
 
 #: site/dashboard/dashboard.php:184 site/pages/share.php:82
-#, fuzzy
 msgid "Copy Link"
-msgstr "Link"
+msgstr "Copiază Link-ul"
 
 #: site/dashboard/dashboard.php:185
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "Copiază acest link și trimite-l prietenilor tăi 🙂"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
 msgid "Thanks!"
-msgstr ""
+msgstr "Mulțumiri!"
 
 #: site/dashboard/dashboard.php:187
-#, fuzzy
 msgid "Link copied"
-msgstr "Conectat la"
+msgstr "Link copiat"
 
 #: site/dashboard/dashboard.php:188
-#, fuzzy
 msgid "Getting Started"
-msgstr "Începeți"
+msgstr "Noțiuni de bază"
 
 #: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
 #: utilities/apis/cta-api.php:252
-#, fuzzy
 msgid "Set Profile"
-msgstr "Profilul Zume"
+msgstr "Setați profilul"
 
 #: site/dashboard/dashboard.php:190
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "Finalizați un scurt Profile Wizard pentru a vă seta profilul"
 
 #: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:215
-#, fuzzy
 msgid "Join or create a training group"
-msgstr "Găzduiește un training"
+msgstr "Alăturați-vă sau creați un grup de instruire"
 
 #: site/dashboard/dashboard.php:192
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"Alăturați-vă unuia dintre cursurile noastre online sau creați-vă propriul "
+"grup de instruire cu ajutorul asistentului nostru ușor de configurat"
 
 #: site/dashboard/dashboard.php:193
-#, fuzzy
 msgid "Create Training Group"
-msgstr "1 Training"
+msgstr "Creați grup de instruire"
 
 #: site/dashboard/dashboard.php:194
-#, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Creați-vă propria listă de 100"
+msgstr ""
+"Creați-vă propriul grup de instruire cu ajutorul asistentului nostru ușor de "
+"configurat"
 
 #: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:270
-#, fuzzy
 msgid "Join Training Group"
-msgstr "Găzduiește un training"
+msgstr "Alăturați-vă grupului de instruire"
 
 #: site/dashboard/dashboard.php:196
-#, fuzzy
 msgid "Join an online training group run by a coach"
-msgstr "Găzduiește un training"
+msgstr "Alăturați-vă unui grup de formare online condus de un antrenor"
 
 #: site/dashboard/dashboard.php:198
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"Luați legătura cu un antrenor pentru orice ajutor sau încurajare înainte, în "
+"timpul sau după antrenament."
 
 #: site/dashboard/dashboard.php:200
-#, fuzzy
 msgid "My Progress"
-msgstr "Progresul"
+msgstr "Progresul meu"
 
 #: site/dashboard/dashboard.php:201
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"Urmăriți progresul cursului dvs. cu această vizualizare interactivă. Învață "
+"să auzi, să asculți, să împărtășești și să-i antrenezi pe alții cu ceea ce "
+"ai învățat."
 
 #: site/dashboard/dashboard.php:202
 msgid "Information about progress"
-msgstr ""
+msgstr "Informații despre progres"
 
 #: site/dashboard/dashboard.php:203
-#, fuzzy
 msgid "My Training"
-msgstr "1 Training"
+msgstr "Antrenamentul meu"
 
 #: site/dashboard/dashboard.php:204
 #, fuzzy
