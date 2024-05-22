@@ -119,7 +119,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <em><?php echo __( 'Self-Evaluation', 'zume' ) ?> ...</em>
                     </td>
                     <td>
-
+                        1
                     </td>
                     <td class="coaching_column coaching_bottom">
                         <strong><?php echo __( 'Heard', 'zume' ) ?></strong>
@@ -139,7 +139,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <em><?php echo __( 'Mentee Development Level', 'zume' ) ?> ...</em>
                     </td>
                     <td>
-                        1
+                        2
                     </td>
                     <td class="coaching_column coaching_bottom">
                         <?php echo __( 'Unaware', 'zume' ) ?>
@@ -159,7 +159,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <em><?php echo __( 'Mentor’s Role', 'zume' ) ?> ...</em>
                     </td>
                     <td>
-                        2
+                        3
                     </td>
                     <td class="coaching_column coaching_bottom">
                         <strong> <?php echo __( 'Model', 'zume' ) ?> </strong><br><?php echo __( 'Train new information and ensure understanding', 'zume' ) ?>
@@ -179,7 +179,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <em><?php echo __( 'Mentor’s Behaviors', 'zume' ) ?> ...</em>
                     </td>
                     <td>
-                        3
+                        4
                     </td>
                     <td class="coaching_column coaching_bottom">
                         <?php echo __( 'Direct and inform', 'zume' ) ?>
@@ -199,7 +199,7 @@ class Zume_Activites_Coaching extends Zume_Activites
                         <em><?php echo __( 'Planning Responsibilities', 'zume' ) ?> ...</em>
                     </td>
                     <td>
-                        4
+                        5
                     </td>
                     <td class="coaching_column">
                         <?php echo __( 'Mentor decides', 'zume' ) ?>
