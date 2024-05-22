@@ -2573,15 +2573,12 @@ function zume_content( $lang_code = 'en') {
                 __( 'Coaching Checklist', 'zume' ),
                 [
                     __( 'Scan the QR code or find a piece of paper.', 'zume' ),
-                    __( 'Select a person from your list of 100.', 'zume' ),
-                    __( 'Use the coaching checklist and evaluate your selected person. Ask yourself, "What does this person need for each of the tools and concepts?"', 'zume' ),
-                    __( 'Check off the checklist.', 'zume' ),
-
+                    __( 'Self-Evaluate yourself using line 1 and mark the corresponding columns on the Coaching Checklist.', 'zume' ),
                 ]
             ],
             'right' => [
-                $activity_base_url . 'coaching_mawl',
-                zume_create_qr_url( $activity_base_url . 'coaching_mawl' ),
+            $activity_base_url . 'coachingchecklist',
+            zume_create_qr_url( $activity_base_url . 'coachingchecklist' ),
                 __( 'Activity Resource', 'zume' ),
             ],
         ],
