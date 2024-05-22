@@ -433,10 +433,10 @@ export class MakeTraining extends LitElement {
                         <span class="zume-start-date brand-light f-7"></span>
                         <h2>${this.t.question_when_will_you_start}</h2>
                         <div class="cluster justify-content-center gapy-0">
-                            <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} >
+                            <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
                             ${
                                 this.state.date ? html`
-                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300"/>
+                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300" onclick="this.showPicker()" />
                                 ` : ''
                             }
                         </div>

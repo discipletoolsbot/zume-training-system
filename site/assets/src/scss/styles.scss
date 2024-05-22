@@ -153,6 +153,10 @@ a, a:visited {
   );
 }
 
+input::-webkit-calendar-picker-indicator {
+  filter: brightness(0);
+}
+
 .offset-anchor {
   position: absolute;
   top: -5rem;
