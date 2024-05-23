@@ -94,12 +94,10 @@ function pieces_content( $postid, $lang, $strings ) {
             <img class="hidden" src="<?php echo esc_url( $image_url ) ?>" alt="<?php echo esc_html( $h1_title ) ?>"/>
         <?php endif; ?>
 
-        <div>
+        <div class="stack-1">
             <h1 class="center brand"><?php echo esc_html( $h1_title ) ?></h1>
 
-            <div>
-                <?php echo wp_kses_post( wpautop( $pre_video_content ) ) ?>
-            </div>
+            <div class="stack"><?php echo wp_kses_post( wpautop( $pre_video_content ) ) ?></div>
         </div>
 
 
@@ -133,10 +131,10 @@ function pieces_content( $postid, $lang, $strings ) {
         <?php endif; ?>
 
         <!-- post-video block -->
-        <div><?php echo wp_kses_post( wpautop( $post_video_content ) ) ?></div>
+        <div class="stack"><?php echo wp_kses_post( wpautop( $post_video_content ) ) ?></div>
 
         <!-- question block -->
-        <div>
+        <div class="stack">
             <h3 class="center"><?php echo esc_html( $strings['ay'] ) ?? '' ?></h3>
             <?php echo wp_kses_post( wpautop( $ask_content ) ) ?>
         </div>

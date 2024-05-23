@@ -103,7 +103,7 @@ class Zume_Training_Share extends Zume_Magic_Page
         foreach ( $posts as $post ) {
             $share_items[] = [
                 'page_title' => $post['zume_piece_h1'],
-                'page_url' => $post['post_name'],
+                'page_url' => zume_pieces_pages_url( $post['post_name'] ),
                 'type' => $training_items[$post['zume_piece']]['type'],
                 'key' => $training_items[$post['zume_piece']]['key'],
                 'description' => $training_items[$post['zume_piece']]['description'],
@@ -115,7 +115,6 @@ class Zume_Training_Share extends Zume_Magic_Page
 
         <script>
             const zumeShare = [<?php echo json_encode([
-                'share_items' => $share_items,
                 'translations' => array_merge(
                     $share_translations,
                     [
@@ -150,7 +149,7 @@ class Zume_Training_Share extends Zume_Magic_Page
 
             <?php else : ?>
 
-                <share-list></share-list>
+                <share-list items="<?php echo esc_attr( json_encode( $share_items ) ) ?>"></share-list>
 
             <?php endif; ?>
 

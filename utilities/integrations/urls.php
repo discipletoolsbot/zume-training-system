@@ -197,6 +197,9 @@ function zume_20_session_url() {
 function zume_intensive_session_url() {
     return zume_url( 'presenter?type=intensive&session=index' );
 }
+function zume_pieces_pages_url( $slug ) {
+    return zume_url( $slug );
+}
 
 
 

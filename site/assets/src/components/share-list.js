@@ -4,7 +4,7 @@ import { repeat } from 'lit/directives/repeat.js'
 export class ShareList extends LitElement {
     static get properties() {
         return {
-            items: { type: Array, attribute: false },
+            items: { type: Array },
             filterType: { type: String, attribute: false },
             isSortedAlphabetically: { type: Boolean, attribute: false },
         };
@@ -49,19 +49,23 @@ export class ShareList extends LitElement {
         /* WARNING this list item is a copy of the one in share.php for noscript users */
         return html`
             <li class="share-cards" data-type=${type}>
-                <div class="stack | share card">
-                    <a class="f-1 bold mt-0" href=${page_url}>
-                        ${page_title}
-                    </a>
-                    <p class="f--1 show-for-large">
-                        ${description}
-                    </p>
-                    <div class="fit-content ms-auto">
-                        <share-links
-                            url=${page_url}
-                            title=${page_title}
-                            .t=${zumeShare.translations}>
-                        </share-links>
+                <div class="share card">
+                    <div class="switcher | switcher-width-25 align-items-center gapx--4">
+                        <div class="stack grow-2">
+                            <a class="f-1 bold mt-0" href=${page_url}>
+                                ${page_title}
+                            </a>
+                            <p class="f--1 show-for-large">
+                                ${description}
+                            </p>
+                        </div>
+                        <div class="fit-content ms-auto">
+                            <share-links
+                                url=${page_url}
+                                title=${page_title}
+                                .t=${zumeShare.translations}>
+                            </share-links>
+                        </div>
                     </div>
                 </div>
             </li>

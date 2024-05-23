@@ -81,7 +81,7 @@ export class ShareLinks extends LitElement {
                           ${
                             this.alwaysShow ? html`<p><code>${this.url}</code></p>` : ''
                           }
-                          <div class="position-relative">
+                          <div class="position-relative fit-content mx-auto">
                             <button class="btn light uppercase fit-content mx-auto" @click=${this.copyLink}>
                               <!-- Link icon -->
                               <span>${this.t.copy_link}</span>
