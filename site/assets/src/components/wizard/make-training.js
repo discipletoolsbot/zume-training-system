@@ -262,6 +262,10 @@ export class MakeTraining extends LitElement {
     }
 
     _handleCreate() {
+        if (this.loading) {
+            return
+        }
+        this.loading = true
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
         const name = this.stateManager.get(Steps.name)
@@ -294,7 +298,6 @@ export class MakeTraining extends LitElement {
             set: this._buildSet(this.selectedDays)
         }
 
-        this.loading = true
         makeRequest( 'POST', 'plan', postData, 'zume_system/v1' )
             .then((data) => {
                 this._handleFinish(data.join_key)
@@ -531,6 +534,7 @@ export class MakeTraining extends LitElement {
                                     @click=${this._handleCreate}
                                 >
                                     ${this.t.create}
+                                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                                 </button>
                             </div>
                         </div>

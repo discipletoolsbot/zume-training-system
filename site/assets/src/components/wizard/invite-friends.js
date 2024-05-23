@@ -107,7 +107,7 @@ export class InviteFriends extends LitElement {
     getInviteText() {
         const nextSession = this.getNextSession()
         const note = this.t.note.replace('%s', this.training.post_author_display_name)
-        const location = this.t.location.replace('%s', this.training.location_note ?? '')
+        const location = this.training.location_note
         const timeOfDayNote = this.training.time_of_day_note ? `, ${this.training.time_of_day_note}` : ''
         const timezoneNote = this.training.timezone_note ? `, ${this.training.timezone_note}` : ''
 
