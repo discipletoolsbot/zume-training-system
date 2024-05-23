@@ -2,6 +2,7 @@ import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
+import { zumeRequest } from '../../js/scripts';
 
 export class DashProgress extends DashPage {
     static get properties() {
@@ -10,6 +11,7 @@ export class DashProgress extends DashPage {
             filteredItems: { type: Array, attribute: false },
             filterStatus: { type: String, attribute: false },
             hostProgress: { type: Object, attribute: false},
+            errorMessage: { type: String, attribute: false },
         };
     }
 
@@ -20,6 +22,7 @@ export class DashProgress extends DashPage {
 
         this.trainingItems = Object.values(jsObject.training_items)
         this.hostProgress = jsObject.host_progress
+        this.errorMessage = ''
 
         this.filterName = 'my-progress-filter'
         this.filterStatus = ZumeStorage.load(this.filterName)
@@ -55,7 +58,6 @@ export class DashProgress extends DashPage {
     filterProgress(status) {
         this.filterStatus = status
         this.filteredItems = this.filterItems(status)
-        console.log(this.filteredItems)
         ZumeStorage.save(this.filterName, status)
         this.closeFilter()
     }
@@ -90,31 +92,59 @@ export class DashProgress extends DashPage {
         const currentState = this.hostProgress.list[key]
 
         if (currentState === false) {
-            makeRequest('POST', 'host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id }, 'zume_system/v1' )
-                .done( ( data ) => {
-                    if ( Array.isArray(data) ) {
-                        this.hostProgress.list[key] = true
-                    }
+            this.changeHost(key, true)
+            return zumeRequest.post('host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id } )
+                .then( ( data ) => {
+                    console.log(data)
+                })
+                .catch((error) => {
+                    this.changeHost(key, false)
+                    this.displayError(jsObject.translations.error_with_request)
+                })
+                .finally(() => {
                     this.loadHostStatus()
                 })
         }
 
         if (currentState === true) {
-            makeRequest('DELETE', 'host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id }, 'zume_system/v1' )
-                .done( ( data ) => {
-                    if ( Array.isArray(data) ) {
-                        this.hostProgress.list[key] = false
-                    }
+            this.changeHost(key, false)
+            return zumeRequest.delete('host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id } )
+                .then( ( data ) => {
                     this.loadHostStatus()
                 })
+                .catch((error) => {
+                    this.changeHost(key, false)
+                    this.displayError(jsObject.translations.error_with_request)
+                })
+                .finally(() => {
+                    this.loadHostStatus()
+                })
+
         }
     }
 
+    displayError(message) {
+        this.errorMessage = message
+        setTimeout(() => {
+            this.errorMessage = ''
+        }, 4000)
+    }
+
     loadHostStatus() {
-        makeRequest('GET', 'host', { user_id: jsObject.profile.user_id }, 'zume_system/v1' )
-            .done( ( data ) => {
+        zumeRequest.get('host', { user_id: jsObject.profile.user_id } )
+            .then( ( data ) => {
                 this.hostProgress = data
             })
+            .catch((error) => {
+                this.displayError(jsObject.translations.error_with_request)
+            })
+    }
+
+    changeHost(key, value) {
+        const newHostProgress = { ...this.hostProgress }
+        newHostProgress.list = { ...this.hostProgress.list }
+        newHostProgress.list[key] = value
+        this.hostProgress = { ...newHostProgress }
     }
 
     toggleDetails(key) {
@@ -251,7 +281,7 @@ export class DashProgress extends DashPage {
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main content">
+                <div class="dashboard__main content position-relative">
                     ${
                         html`
                             <ul class="list">
@@ -261,6 +291,10 @@ export class DashProgress extends DashPage {
                             </ul>
                         `
                     }
+
+                    <div class="fixed bottom left right ${this.errorMessage.length ? 'p-1' : ''}">
+                        <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
+                    </div>
                 </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>

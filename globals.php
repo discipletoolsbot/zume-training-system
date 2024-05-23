@@ -6103,7 +6103,9 @@ if ( ! class_exists('Zume_System_Log_API') ) {
 
             $type = $data['type'];
             $subtype = $data['subtype'];
-            $pre = substr($subtype, 0, 3);
+
+            $_pos = strpos( $subtype, '_' );
+            $pre = substr($subtype, 0, $_pos + 1);
 
             /**
              * business logic:

@@ -40,7 +40,7 @@ function zume_training_load_scripts( $hook ) {
     wp_register_style( 'vite_bundle_css', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main.css', array( 'foundation_css' ), filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main.css' ) );
     wp_enqueue_style( 'vite_bundle_css' );
 
-    wp_register_script( 'vite_bundle_js', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js', array( 'lodash' ), filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js' ) );
+    wp_register_script( 'vite_bundle_js', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js', array( 'lodash', 'shared-functions' ), filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js' ) );
     wp_enqueue_script( 'vite_bundle_js' );
 }
 

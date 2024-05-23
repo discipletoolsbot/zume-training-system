@@ -280,6 +280,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'join_key' => __( 'Join key', 'zume' ),
             'bad_code' => __( 'Not a recognized code. Please check the number.', 'zume' ),
             'not_authorized' => __( 'You are not authorized to access this page', 'zume' ),
+            'error_with_request' => __( 'There has been an error with your request', 'zume' ),
         ];
     }
 
