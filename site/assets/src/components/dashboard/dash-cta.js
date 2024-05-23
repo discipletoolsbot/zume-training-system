@@ -59,6 +59,8 @@ export class DashCta extends LitElement {
         /* Get the new CTAs */
         const newCtas = this.getCtas()
 
+        console.log(newCtas)
+
         /* Compare new to old to get the diff */
         const [ comingCtas, stayingCtas, goingCtas ] = this.diffCtas(newCtas, this.ctas)
 
@@ -78,7 +80,7 @@ export class DashCta extends LitElement {
         this.removedCtaKeys = [...goingCtaKeys, ...organisedCtaKeys.slice(DashCta.MAX_CTAS)]
         this.initialCtaKeys = organisedCtaKeys.slice(0, DashCta.MAX_CTAS)
 
-        if (this.ctas.length > 1) {
+        if (this.ctas.length > 0) {
             this.dispatchEventAfterUpdated = true
         }
     }

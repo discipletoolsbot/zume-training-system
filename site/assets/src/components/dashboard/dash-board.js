@@ -520,7 +520,9 @@ export class DashBoard extends navigator(router(LitElement)) {
                                         href=${this.makeHref('getting-started')}
                                         class="menu-section__title menu-btn"
                                         icon="zume-start"
-                                        text=${jsObject.translations.getting_started}>
+                                        text=${jsObject.translations.getting_started}
+                                        as="nav"
+                                    >
                                     </nav-link>
                                     ${
                                         this.isGettingStartedActive() ? html`
@@ -560,6 +562,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     class="menu-section__title menu-btn"
                                     icon="zume-training"
                                     text=${jsObject.translations.training}
+                                    as="nav"
                                 >
                                 </nav-link>
                                 <ul id="training-menu" class="nested accordion-menu menu vertical" data-accordion-menu>
@@ -626,6 +629,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     class="menu-section__title menu-btn"
                                     icon="zume-practicing"
                                     text=${jsObject.translations.practicing}
+                                    as="nav"
                                 ></nav-link>
                                 <ul class="nested">
                                     ${
@@ -638,6 +642,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         icon=${route.icon}
                                                         text=${route.translation}
                                                         ?locked=${DashBoard.getLockedStatus(route.name, this.userState)}
+                                                        as="nav"
                                                     ></nav-link>
                                                     <span class="icon zume-locked gray-500"></span>
                                                 </li>

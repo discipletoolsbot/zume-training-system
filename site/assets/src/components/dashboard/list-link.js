@@ -18,31 +18,29 @@ export class ListLink extends NavLink {
 
     render() {
         return html`
-            <div class="container-inline">
-                <div
-                    class="dash-menu__list-item"
-                    ?data-locked=${this.locked}
-                    ?data-completed=${this.completed}
-                    ?data-button=${this.disableNavigate}
-                    role="button"
-                    @click=${this.handleClick}
-                >
-                    <div class="dash-menu__icon-area | stack--5">
-                        <span class="icon ${this.getIcon()} dash-menu__list-icon"></span>
+            <div
+                class="dash-menu__list-item"
+                ?data-locked=${this.locked}
+                ?data-completed=${this.completed}
+                ?data-button=${this.disableNavigate}
+                role="button"
+                @click=${this.handleClick}
+            >
+                <div class="dash-menu__icon-area | stack--5">
+                    <span class="icon ${this.getIcon()} dash-menu__list-icon"></span>
+                </div>
+                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                    <div>
+                        <h3 class="f-1 bold uppercase">${this.text}</h3>
+                        <p>${this.explanation}</p>
                     </div>
-                    <div class="dash-menu__text-area | switcher | switcher-width-20">
-                        <div>
-                            <h3 class="f-1 bold uppercase">${this.text}</h3>
-                            <p>${this.explanation}</p>
-                        </div>
-                        ${
-                            this.completed
+                    ${
+                        this.completed
                             ? html`
-                                <div class="grow-0"><span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span></div>
-                            `
-                            : ''
-                        }
-                    </div>
+                            <div class="grow-0"><span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span></div>
+                        `
+                        : ''
+                    }
                 </div>
             </div>
         `

@@ -263,7 +263,7 @@ export class DashTrainings extends DashPage {
                 <div class="dashboard__main content">
                     ${this.loading ? html`<div class="p-1"><span class="loading-spinner active"></span></div>` : '' }
                     ${!this.loading && this.error ? html`
-                        <div class="container-inline p-1">
+                        <div class="p-1">
                             <h3 class="f-1 bold uppercase">${jsObject.translations.error}</h3>
                             ${
                                 this.error === 'bad-plan-code' ? html`
@@ -282,7 +282,7 @@ export class DashTrainings extends DashPage {
                     ${
                         this.showTeaser && !this.loading && !this.error
                         ? html`
-                            <div class="container-inline p-1">
+                            <div class="p-1">
                               <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
                                   <span class="icon zume-locked dash-menu__list-icon"></span>

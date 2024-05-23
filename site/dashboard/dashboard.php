@@ -281,6 +281,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'bad_code' => __( 'Not a recognized code. Please check the number.', 'zume' ),
             'not_authorized' => __( 'You are not authorized to access this page', 'zume' ),
             'error_with_request' => __( 'There has been an error with your request', 'zume' ),
+            'connecting_with_coach' => __( 'Thank you for your coaching request. Our team will be working to connect you with an available coach in your language and region.' ),
+            'wait_for_coach' => __( 'Please watch for communication from your coach within the communication preference you indicated.' ),
         ];
     }
 
