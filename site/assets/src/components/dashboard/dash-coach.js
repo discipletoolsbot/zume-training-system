@@ -27,7 +27,7 @@ export class DashCoach extends DashPage {
                       this.showTeaser ? html`
                           <div class="dash-menu__list-item">
                             <div class="dash-menu__icon-area | stack--5">
-                              <span class="icon zume-locked dash-menu__list-icon"></span>
+                              <span class="icon z-icon-locked dash-menu__list-icon"></span>
                             </div>
                             <div class="dash-menu__text-area | switcher | switcher-width-20">
                               <div>

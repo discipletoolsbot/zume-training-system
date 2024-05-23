@@ -100,10 +100,10 @@ export class DashTopLevel extends DashPage {
                     </div>
                     <div class="icon-btn-group">
                         <button class="${this.view === 'list' ? 'selected' : ''}" title=${jsObject.translations.list} @click=${() => this.switchView('list')}>
-                            <span class="icon zume-list" aria-hidden="true"></span>
+                            <span class="icon z-icon-list" aria-hidden="true"></span>
                         </button>
                         <button class="${this.view === 'grid' ? 'selected' : ''}" title=${jsObject.translations.grid} @click=${() => this.switchView('grid')}>
-                            <span class="icon zume-grid" aria-hidden="true"></span>
+                            <span class="icon z-icon-grid" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>

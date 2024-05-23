@@ -185,7 +185,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                     if ( $item['type'] === 'concept' ) {
                                         ?>
                                         <li class="d-flex gap-2 align-items-center">
-                                            <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html( $item['title'] ) ?></span>
+                                            <span class="concepts__tick"><span class="icon brand-light z-icon-check-mark f-2"></span></span><span><?php echo esc_html( $item['title'] ) ?></span>
                                         </li>
                                         <?php
                                     }
@@ -199,7 +199,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                     if ( $item['type'] === 'tool' ) {
                                         ?>
                                         <li class="d-flex gap-2 align-items-center">
-                                            <span class="concepts__tick"><span class="icon brand-light zume-check-mark f-2"></span></span><span><?php echo esc_html( $item['title'] ) ?></span>
+                                            <span class="concepts__tick"><span class="icon brand-light z-icon-check-mark f-2"></span></span><span><?php echo esc_html( $item['title'] ) ?></span>
                                         </li>
                                         <?php
                                     }

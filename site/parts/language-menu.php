@@ -39,6 +39,6 @@
         }
     </style>
     <button class="close-btn | ms-auto m--1" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
-        <span class="icon zume-close"></span>
+        <span class="icon z-icon-close"></span>
     </button>
 </div>

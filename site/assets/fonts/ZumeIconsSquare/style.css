@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Zume-Icons-Square';
-  src:  url('fonts/Zume-Icons-Square.eot?e6lrm7');
-  src:  url('fonts/Zume-Icons-Square.eot?e6lrm7#iefix') format('embedded-opentype'),
-    url('fonts/Zume-Icons-Square.ttf?e6lrm7') format('truetype'),
-    url('fonts/Zume-Icons-Square.woff?e6lrm7') format('woff'),
-    url('fonts/Zume-Icons-Square.svg?e6lrm7#Zume-Icons-Square') format('svg');
+  src:  url('fonts/Zume-Icons-Square.eot?d5jqe2');
+  src:  url('fonts/Zume-Icons-Square.eot?d5jqe2#iefix') format('embedded-opentype'),
+    url('fonts/Zume-Icons-Square.ttf?d5jqe2') format('truetype'),
+    url('fonts/Zume-Icons-Square.woff?d5jqe2') format('woff'),
+    url('fonts/Zume-Icons-Square.svg?d5jqe2#Zume-Icons-Square') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="zume-"], [class*=" zume-"] {
+[class^="z-icon-"], [class*=" z-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Zume-Icons-Square' !important;
   speak: never;
@@ -25,186 +25,186 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.zume-look-back:before {
+.z-icon-look-back:before {
   content: "\e93c";
 }
-.zume-dashboard:before {
+.z-icon-dashboard:before {
   content: "\e93b";
 }
-.zume-watch:before {
+.z-icon-watch:before {
   content: "\e937";
 }
-.zume-review:before {
+.z-icon-review:before {
   content: "\e938";
 }
-.zume-overview:before {
+.z-icon-overview:before {
   content: "\e939";
 }
-.zume-discuss:before {
+.z-icon-discuss:before {
   content: "\e93a";
 }
-.zume-pray:before {
+.z-icon-pray:before {
   content: "\e935";
 }
-.zume-checkin:before {
+.z-icon-checkin:before {
   content: "\e936";
 }
-.zume-progress-locked:before {
+.z-icon-progress-locked:before {
   content: "\e928";
 }
-.zume-close:before {
+.z-icon-close:before {
   content: "\e91d";
 }
-.zume-sort-all:before {
+.z-icon-sort-all:before {
   content: "\e91e";
 }
-.zume-sort-done:before {
+.z-icon-sort-done:before {
   content: "\e91f";
 }
-.zume-sort-todo:before {
+.z-icon-sort-todo:before {
   content: "\e920";
 }
-.zume-plans-locked:before {
+.z-icon-plans-locked:before {
   content: "\e912";
 }
-.zume-coach-locked:before {
+.z-icon-coach-locked:before {
   content: "\e926";
 }
-.zume-my-training-locked:before {
+.z-icon-my-training-locked:before {
   content: "\e927";
 }
-.zume-tools-locked:before {
+.z-icon-tools-locked:before {
   content: "\e929";
 }
-.zume-churches-locked:before {
+.z-icon-churches-locked:before {
   content: "\e92a";
 }
-.zume-maps-locked:before {
+.z-icon-maps-locked:before {
   content: "\e92b";
 }
-.zume-locked-circle:before {
+.z-icon-locked-circle:before {
   content: "\e92c";
 }
-.zume-info:before {
+.z-icon-info:before {
   content: "\e921";
 }
-.zume-community:before {
+.z-icon-community:before {
   content: "\e92d";
 }
-.zume-resources:before {
+.z-icon-resources:before {
   content: "\e922";
 }
-.zume-train-concept:before {
+.z-icon-train-concept:before {
   content: "\e92e";
 }
-.zume-coach-old:before {
+.z-icon-coach-old:before {
   content: "\e92f";
 }
-.zume-my-training:before {
+.z-icon-my-training:before {
   content: "\e930";
 }
-.zume-share-concept:before {
+.z-icon-share-concept:before {
   content: "\e931";
 }
-.zume-tools:before {
+.z-icon-tools:before {
   content: "\e932";
 }
-.zume-obey-concept:before {
+.z-icon-obey-concept:before {
   content: "\e933";
 }
-.zume-heard-concept:before {
+.z-icon-heard-concept:before {
   content: "\e923";
 }
-.zume-play:before {
+.z-icon-play:before {
   content: "\e924";
 }
-.zume-share:before {
+.z-icon-share:before {
   content: "\e925";
 }
-.zume-unlocked:before {
+.z-icon-unlocked:before {
   content: "\e934";
 }
-.zume-check-mark:before {
+.z-icon-check-mark:before {
   content: "\e900";
 }
-.zume-world:before {
+.z-icon-world:before {
   content: "\e916";
 }
-.zume-coach:before {
+.z-icon-coach:before {
   content: "\e90d";
 }
-.zume-start:before {
+.z-icon-start:before {
   content: "\e90e";
 }
-.zume-plans:before {
+.z-icon-plans:before {
   content: "\e911";
 }
-.zume-locked:before {
+.z-icon-locked:before {
   content: "\e90f";
 }
-.zume-group:before {
+.z-icon-group:before {
   content: "\e913";
 }
-.zume-progress:before {
+.z-icon-progress:before {
   content: "\e902";
 }
-.zume-pencil:before {
+.z-icon-pencil:before {
   content: "\e901";
 }
-.zume-churches:before {
+.z-icon-churches:before {
   content: "\e910";
 }
-.zume-maps:before {
+.z-icon-maps:before {
   content: "\e903";
 }
-.zume-practicing:before {
+.z-icon-practicing:before {
   content: "\e914";
 }
-.zume-training:before {
+.z-icon-training:before {
   content: "\e915";
 }
-.zume-plus:before {
+.z-icon-plus:before {
   content: "\e917";
 }
-.zume-grid:before {
+.z-icon-grid:before {
   content: "\e918";
 }
-.zume-filter:before {
+.z-icon-filter:before {
   content: "\e919";
 }
-.zume-trash:before {
+.z-icon-trash:before {
   content: "\e91a";
 }
-.zume-kebab:before {
+.z-icon-kebab:before {
   content: "\e91b";
 }
-.zume-list:before {
+.z-icon-list:before {
   content: "\e91c";
 }
-.zume-invite:before {
+.z-icon-invite:before {
   content: "\e904";
 }
-.zume-profile:before {
+.z-icon-profile:before {
   content: "\e905";
 }
-.zume-phone:before {
+.z-icon-phone:before {
   content: "\e906";
 }
-.zume-start-group:before {
+.z-icon-start-group:before {
   content: "\e907";
 }
-.zume-public-training:before {
+.z-icon-public-training:before {
   content: "\e908";
 }
-.zume-course:before {
+.z-icon-course:before {
   content: "\e909";
 }
-.zume-session-choice:before {
+.z-icon-session-choice:before {
   content: "\e90a";
 }
-.zume-start-date:before {
+.z-icon-start-date:before {
   content: "\e90b";
 }
-.zume-time:before {
+.z-icon-time:before {
   content: "\e90c";
 }

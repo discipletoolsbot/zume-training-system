@@ -6991,7 +6991,7 @@ if ( ! class_exists( 'Zume_User_Genmap' ) ) {
                     </div>
                 </div>
                 <button class="ms-auto m--1 close-btn" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
             </div>
 

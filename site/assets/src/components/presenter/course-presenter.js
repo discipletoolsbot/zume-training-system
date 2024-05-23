@@ -282,7 +282,7 @@ export class CoursePresenter extends LitElement {
                                     >
                                         <h2 class="f-0 bold">${jsObject.translations.session}</h2>
                                         <p class="f-3 bold lh-sm">${sessionNumber + 1}</p>
-                                        <span class="icon zume-course brand-light f-3"></span>
+                                        <span class="icon z-icon-course brand-light f-3"></span>
                                     </button>
                                 `)}
                             </div>
@@ -293,7 +293,7 @@ export class CoursePresenter extends LitElement {
 
             <nav class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir === 'rtl' ? 'position-right' : 'position-left'} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <button class="ms-auto close-btn mb-0" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <div class="stack">

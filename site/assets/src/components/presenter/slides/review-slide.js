@@ -10,7 +10,7 @@ export class ReviewSlide extends CourseSlide {
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-review"></span>
+                                <span class="icon z-icon-review"></span>
                             </div>
                             <h2 class="title">${this.slide['left'][0]}</h2>
                         </div>

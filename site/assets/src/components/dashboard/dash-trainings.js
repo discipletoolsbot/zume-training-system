@@ -205,10 +205,10 @@ export class DashTrainings extends DashPage {
                     ${
                         this.currentSession === id ? html`
                             <button class="icon-btn" @click=${() => this.startSession(id)} aria-label=${jsObject.translations.start_session}>
-                                <span class="icon zume-play brand-light"></span>
+                                <span class="icon z-icon-play brand-light"></span>
                             </button>
                         ` : html `
-                            <span class="icon zume-check-mark success ${completed ? '' : 'invisible'} p--2"></span>
+                            <span class="icon z-icon-check-mark success ${completed ? '' : 'invisible'} p--2"></span>
                         `
                     }
                     <span class="f-medium">${name}</span>
@@ -218,14 +218,14 @@ export class DashTrainings extends DashPage {
                         ${moment(datetime).format("MMM Do YY")}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${id}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${() => this.editSession(id)}><span class="icon zume-pencil"></span>${jsObject.translations.edit_time}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.markSessionCompleted(id)}><span class="icon zume-pencil"></span>${jsObject.translations.mark_completed}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.startSession(id)}><span class="icon zume-play"></span>${jsObject.translations.start_session}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.editSession(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.markSessionCompleted(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.startSession(id)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
                     </ul>
                 </div>
             </li>
@@ -256,7 +256,7 @@ export class DashTrainings extends DashPage {
                         aria-label=${jsObject.translations.create_training_group}
                         @click=${this.createTraining}
                     >
-                        <span class="icon zume-plus"></span>
+                        <span class="icon z-icon-plus"></span>
                     </button>
                 </div>
                 <dash-header-right></dash-header-right>
@@ -285,7 +285,7 @@ export class DashTrainings extends DashPage {
                             <div class="p-1">
                               <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-locked dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -315,7 +315,7 @@ export class DashTrainings extends DashPage {
                     ${!this.loading && !this.error && this.code !== 'teaser' ? html`
                                 <div class="card | group-members | grow-0">
                                     <button class="f-0 f-medium d-flex align-items-center gap--2 black">
-                                        <span class="icon zume-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
+                                        <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
                                     </button>
                                     <div class="collapse" data-state="open">
                                         <!-- The functionality of the .collapse class needs to be refactored from dash-progress.js toggleDetails function to be re-used here -->
