@@ -502,7 +502,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             type="button"
                             @click=${this.toggleSidebar}
                         >
-                            <span class="icon zume-close"></span>
+                            <span class="icon z-icon-close"></span>
                         </button>
                         <div class="profile-area">
                             <button
@@ -527,7 +527,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     ${
                                         this.isGettingStartedActive() ? html`
                                             <progress-circle percent=${this.getGettingStartedPercentage()} radius="12"></progress-circle>
-                                        ` : html`<span class="zume-check-mark success f-2"></span>`
+                                        ` : html`<span class="z-icon-check-mark success f-2"></span>`
                                     }
                                             <ul class="nested ${this.isGettingStartedActive() ? 'is-active' : ''}">
                                                 ${
@@ -549,7 +549,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                     } : null}
                                                                     ?completed=${DashBoard.getCompletedStatus(route.name, this.userState)}
                                                                 ></nav-link>
-                                                                <span class="icon zume-check-mark success"></span>
+                                                                <span class="icon z-icon-check-mark success"></span>
                                                             </li>
                                                         `)
                                                 }
@@ -617,7 +617,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         } : null}
                                                         ?completed=${isCompleted}
                                                     ></nav-link>
-                                                    <span class="icon ${isLocked ? 'zume-locked gray-500' : 'zume-check-mark success'}"></span>
+                                                    <span class="icon ${isLocked ? 'z-icon-locked gray-500' : 'z-icon-check-mark success'}"></span>
                                                 </li>
                                             `})
                                     }
@@ -644,7 +644,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         ?locked=${DashBoard.getLockedStatus(route.name, this.userState)}
                                                         as="nav"
                                                     ></nav-link>
-                                                    <span class="icon zume-locked gray-500"></span>
+                                                    <span class="icon z-icon-locked gray-500"></span>
                                                 </li>
                                             `)
                                     }
@@ -679,7 +679,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             </div>
             <div class="stack | reveal tiny card celebration showing | border-none" id="celebration-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <h2 class="h5 text-center bold">${this.celebrationModalContent.title}</h2>
                 <div class="d-flex align-items-center justify-content-between">
@@ -690,7 +690,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 <div class="stack--3">
                     ${
                         this.celebrationModalContent.content.map((content) => html`
-                            <p><span class="icon zume-check-mark"></span> ${content}</p>
+                            <p><span class="icon z-icon-check-mark"></span> ${content}</p>
                         `)
                     }
                 </div>
@@ -698,7 +698,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             </div>
             <div class="reveal full" id="profile-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
@@ -717,7 +717,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             </div>
             <div class="reveal full" id="activity-3-month-plan-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 ${
                     DashBoard.getLockedStatus('3-month-plan', this.userState)
@@ -725,7 +725,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             <div class="container-sm">
                               <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-progress dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -753,7 +753,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="container">
                     ${

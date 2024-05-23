@@ -85,7 +85,7 @@ export class ShareList extends LitElement {
                     </button>
                     <button class="icon-btn f-2" data-toggle="filter-menu">
                         <span class="visually-hidden">${zumeShare.translations.filter}</span>
-                        <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                        <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="center" data-close-on-click="true" data-close-on-click-inside="true">

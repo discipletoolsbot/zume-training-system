@@ -37,7 +37,7 @@ export class CalendarList extends LitElement {
                 <div class="d-flex align-items-center justify-content-between">
                     <span class="mx-0">${DateTime.fromISO(date).toFormat('DDDD')}</span>
                     <button class="close-btn" @click=${() => this.removeDate(id)}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                     </button>
                 </div>
             </li>

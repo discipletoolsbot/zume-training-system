@@ -128,13 +128,13 @@ export class DashChurches extends DashPage {
                 </div>
                 <div class="list__secondary">
                     <button class="icon-btn" data-toggle="kebab-menu-${id}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${() => this.editChurch(id)}><span class="icon zume-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.deleteChurch(id)}><span class="icon zume-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.editChurch(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.deleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
@@ -154,11 +154,11 @@ export class DashChurches extends DashPage {
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.add_church}</span>
-                                <span class="icon zume-plus" aria-hidden="true"></span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ export class DashChurches extends DashPage {
                         ? html`
                             <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-locked dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -214,7 +214,7 @@ export class DashChurches extends DashPage {
             </div>
             <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearChurchModal}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>

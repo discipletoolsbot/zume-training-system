@@ -10,7 +10,7 @@ export class WatchSlide extends CourseSlide {
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-watch"></span>
+                                <span class="icon z-icon-watch"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide['left'][0]}</h2>

@@ -148,7 +148,7 @@ ${
 
         return html`
             <div class="center stack">
-                <span class="zume-share brand-light f-7"></span>
+                <span class="z-icon-share brand-light f-7"></span>
                 <h2>${this.t.title}</h2>
                 <p>${this.t.share_with_friends}</p>
 

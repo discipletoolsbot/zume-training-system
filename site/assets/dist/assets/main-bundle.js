@@ -36,7 +36,7 @@ var Qn=Object.defineProperty;var Xn=(i,e,t)=>e in i?Qn(i,e,{enumerable:!0,config
                     <label for="name" class="visually-hidden">${this.t.name}</label>
                     <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable} placeholder=${this.t.name}>
                     <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("name")}>
-                        <span class="icon zume-info brand-light"></span>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                 </div>
             `:""}
@@ -58,7 +58,7 @@ var Qn=Object.defineProperty;var Xn=(i,e,t)=>e in i?Qn(i,e,{enumerable:!0,config
                         @invalid=${this._handleInvalid}
                     >
                     <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("phone")}>
-                        <span class="icon zume-info brand-light"></span>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                     <div class="input-error" data-state="${this.phoneError.length?"":"empty"}" >${this.phoneError}</div>
                 </div>
@@ -79,7 +79,7 @@ var Qn=Object.defineProperty;var Xn=(i,e,t)=>e in i?Qn(i,e,{enumerable:!0,config
                             @input=${this._handleCityChange}
                         >
                         <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("location")}>
-                            <span class="icon zume-info brand-light"></span>
+                            <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
                     <span class="loading-spinner ${this.loading?"active":""}"></span>
@@ -132,7 +132,7 @@ ${this.training.zoom_link_note?`
 ${this.training.zoom_link_note}
 `:""}`}copyInvite(){const e=this.getInviteText();navigator.clipboard&&navigator.clipboard.writeText(e).then(()=>{this.copyFeedback=this.t.copy_feedback,setTimeout(()=>{this.copyFeedback=""},3e3)})}render(){const e=this.getInviteText();return c`
             <div class="center stack">
-                <span class="zume-share brand-light f-7"></span>
+                <span class="z-icon-share brand-light f-7"></span>
                 <h2>${this.t.title}</h2>
                 <p>${this.t.share_with_friends}</p>
 
@@ -176,7 +176,7 @@ ${this.training.zoom_link_note}
             <div class="stack-1 position-relative">
                 ${this.variant===h.planDecision?c`
                     <div class="stack">
-                        <span class="zume-start-group brand-light f-7"></span>
+                        <span class="z-icon-start-group brand-light f-7"></span>
                         <h2>${this.t.join_or_start_a_training}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight light" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
@@ -187,7 +187,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.howManySessions?c`
                     <div class="stack">
-                        <span class="zume-session-choice brand-light f-7"></span>
+                        <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_which_session}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state==="20"?"":"outline"}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
@@ -199,7 +199,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.scheduleDecision?c`
                     <div class="stack">
-                        <span class="zume-session-choice brand-light f-7"></span>
+                        <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_schedule_training}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state==="yes"?"":"outline"}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
@@ -210,7 +210,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.howOften?c`
                     <div class="stack">
-                        <span class="zume-time brand-light f-7"></span>
+                        <span class="z-icon-time brand-light f-7"></span>
                         <h2>${this.t.question_how_often}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state==="weekly"?"":"outline"}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
@@ -222,7 +222,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.startDate?c`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_when_will_you_start}</h2>
                         <div class="cluster justify-content-center gapy-0">
                             <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
@@ -237,7 +237,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.location?c`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_where_will_you_meet}</h2>
                         <p>${this.t.question_where_will_you_meet_help_text}</p>
                         <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
@@ -248,7 +248,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.name?c`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_what_is_the_groups_name}</h2>
                         <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
                         <div class="stack" data-fit-content>
@@ -258,7 +258,7 @@ ${this.training.zoom_link_note}
                 `:""}
                 ${this.variant===h.review?c`
                     <div class="stack">
-                        <h2><span class="zume-overview brand-light"></span> ${this.t.review_training}</h2>
+                        <h2><span class="z-icon-overview brand-light"></span> ${this.t.review_training}</h2>
 
                         ${t==="yes"?c`
                                     <div class="cluster">
@@ -561,7 +561,7 @@ ${this.training.zoom_link_note}
                     type="button"
                     @click=${this._onQuit}
                 >
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
             </div>
         `}finishButton(){return c`
@@ -600,7 +600,7 @@ ${this.training.zoom_link_note}
                             type="button"
                             @click=${this.toggleSidebar}
                         >
-                            <span class="icon zume-close"></span>
+                            <span class="icon z-icon-close"></span>
                         </button>
                         <div class="profile-area">
                             <button
@@ -624,7 +624,7 @@ ${this.training.zoom_link_note}
                                     </nav-link>
                                     ${this.isGettingStartedActive()?c`
                                             <progress-circle percent=${this.getGettingStartedPercentage()} radius="12"></progress-circle>
-                                        `:c`<span class="zume-check-mark success f-2"></span>`}
+                                        `:c`<span class="z-icon-check-mark success f-2"></span>`}
                                             <ul class="nested ${this.isGettingStartedActive()?"is-active":""}">
                                                 ${S.childRoutesOf("getting-started").map(e=>c`
                                                             <li>
@@ -637,7 +637,7 @@ ${this.training.zoom_link_note}
                                                                     @click=${e.type==="handled-link"?t=>{if(S.getCompletedStatus(e.name,this.userState)){t.preventDefault();return}e.clickHandler(t,this.dispatchEvent)}:null}
                                                                     ?completed=${S.getCompletedStatus(e.name,this.userState)}
                                                                 ></nav-link>
-                                                                <span class="icon zume-check-mark success"></span>
+                                                                <span class="icon z-icon-check-mark success"></span>
                                                             </li>
                                                         `)}
                                     </ul>
@@ -686,7 +686,7 @@ ${this.training.zoom_link_note}
                                                         @click=${n?a=>{if(s){a.preventDefault();return}e.clickHandler(a,this.dispatchEvent)}:null}
                                                         ?completed=${s}
                                                     ></nav-link>
-                                                    <span class="icon ${t?"zume-locked gray-500":"zume-check-mark success"}"></span>
+                                                    <span class="icon ${t?"z-icon-locked gray-500":"z-icon-check-mark success"}"></span>
                                                 </li>
                                             `})}
                                 </ul>
@@ -710,7 +710,7 @@ ${this.training.zoom_link_note}
                                                         ?locked=${S.getLockedStatus(e.name,this.userState)}
                                                         as="nav"
                                                     ></nav-link>
-                                                    <span class="icon zume-locked gray-500"></span>
+                                                    <span class="icon z-icon-locked gray-500"></span>
                                                 </li>
                                             `)}
                                 </ul>
@@ -742,7 +742,7 @@ ${this.training.zoom_link_note}
             </div>
             <div class="stack | reveal tiny card celebration showing | border-none" id="celebration-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <h2 class="h5 text-center bold">${this.celebrationModalContent.title}</h2>
                 <div class="d-flex align-items-center justify-content-between">
@@ -752,14 +752,14 @@ ${this.training.zoom_link_note}
                 </div>
                 <div class="stack--3">
                     ${this.celebrationModalContent.content.map(e=>c`
-                            <p><span class="icon zume-check-mark"></span> ${e}</p>
+                            <p><span class="icon z-icon-check-mark"></span> ${e}</p>
                         `)}
                 </div>
 
             </div>
             <div class="reveal full" id="profile-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeProfile}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
@@ -778,13 +778,13 @@ ${this.training.zoom_link_note}
             </div>
             <div class="reveal full" id="activity-3-month-plan-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeWizard}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 ${S.getLockedStatus("3-month-plan",this.userState)?c`
                             <div class="container-sm">
                               <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-progress dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-progress dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -810,7 +810,7 @@ ${this.training.zoom_link_note}
             </div>
             <div class="reveal full" id="community-modal" data-reveal>
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="container">
                     ${this.hasJoinedCommunity()?c`
@@ -864,13 +864,13 @@ ${this.training.zoom_link_note}
                 </div>
                 <div class="list__secondary">
                     <button class="icon-btn" data-toggle="kebab-menu-${e}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${e}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${()=>this.editChurch(e)}><span class="icon zume-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn" @click=${()=>this.deleteChurch(e)}><span class="icon zume-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.editChurch(e)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.deleteChurch(e)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
@@ -886,11 +886,11 @@ ${this.training.zoom_link_note}
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.add_church}</span>
-                                <span class="icon zume-plus" aria-hidden="true"></span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -905,7 +905,7 @@ ${this.training.zoom_link_note}
                     ${this.showTeaser?c`
                             <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-locked dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -938,7 +938,7 @@ ${this.training.zoom_link_note}
             </div>
             <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearChurchModal}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
@@ -978,7 +978,7 @@ ${this.training.zoom_link_note}
                   ${this.showTeaser?c`
                           <div class="dash-menu__list-item">
                             <div class="dash-menu__icon-area | stack--5">
-                              <span class="icon zume-locked dash-menu__list-icon"></span>
+                              <span class="icon z-icon-locked dash-menu__list-icon"></span>
                             </div>
                             <div class="dash-menu__text-area | switcher | switcher-width-20">
                               <div>
@@ -1070,10 +1070,10 @@ ${this.training.zoom_link_note}
                     </div>
                     <div class="icon-btn-group">
                         <button class="${this.view==="list"?"selected":""}" title=${jsObject.translations.list} @click=${()=>this.switchView("list")}>
-                            <span class="icon zume-list" aria-hidden="true"></span>
+                            <span class="icon z-icon-list" aria-hidden="true"></span>
                         </button>
                         <button class="${this.view==="grid"?"selected":""}" title=${jsObject.translations.grid} @click=${()=>this.switchView("grid")}>
-                            <span class="icon zume-grid" aria-hidden="true"></span>
+                            <span class="icon z-icon-grid" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>
@@ -1097,7 +1097,7 @@ ${this.training.zoom_link_note}
                     ${this.showTeaser?c`
                           <div class="dash-menu__list-item">
                             <div class="dash-menu__icon-area | stack--5">
-                              <span class="icon zume-locked dash-menu__list-icon"></span>
+                              <span class="icon z-icon-locked dash-menu__list-icon"></span>
                             </div>
                             <div class="dash-menu__text-area | switcher | switcher-width-20">
                               <div>
@@ -1135,7 +1135,7 @@ ${this.training.zoom_link_note}
                 <span>${t} <b>${s}</b></span>
                 <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
-                        ${a==="closed"?c`<span class="icon zume-check-mark success"></span>`:c`
+                        ${a==="closed"?c`<span class="icon z-icon-check-mark success"></span>`:c`
                                 <button
                                     class="btn light uppercase tight break-anywhere"
                                     @click=${()=>this.completeCommitment(n)}
@@ -1145,7 +1145,7 @@ ${this.training.zoom_link_note}
                             `}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${n}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div
@@ -1159,8 +1159,8 @@ ${this.training.zoom_link_note}
                     data-close-on-click-inside="true"
                 >
                     <ul>
-                        <li class="hidden"><button class="menu-btn" @click=${()=>this.editCommitment(n)}><span class="icon zume-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn" @click=${()=>this.deleteCommitment(n)}><span class="icon zume-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li class="hidden"><button class="menu-btn" @click=${()=>this.editCommitment(n)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.deleteCommitment(n)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
@@ -1178,11 +1178,11 @@ ${this.training.zoom_link_note}
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openCommitmentsModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.add_commitments}</span>
-                                <span class="icon zume-plus" aria-hidden="true"></span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -1190,19 +1190,19 @@ ${this.training.zoom_link_note}
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="open"?"selected":""}" @click=${()=>this.filterCommitments("open")}>
-                                    <span class="icon zume-sort-todo" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-todo" aria-hidden="true"></span>
                                     ${jsObject.translations.active}
                                 </button>
                             </li>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="closed"?"selected":""}" @click=${()=>this.filterCommitments("closed")}>
-                                    <span class="icon zume-sort-done" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-done" aria-hidden="true"></span>
                                     ${jsObject.translations.completed}
                                 </button>
                             </li>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus==="all"?"selected":""}" @click=${()=>this.filterCommitments("all")}>
-                                    <span class="icon zume-sort-all" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-all" aria-hidden="true"></span>
                                     ${jsObject.translations.all}
                                 </button>
                             </li>
@@ -1214,7 +1214,7 @@ ${this.training.zoom_link_note}
                           <div class="p-2">
                             <div class="dash-menu__list-item">
                               <div class="dash-menu__icon-area | stack--5">
-                                <span class="icon zume-locked dash-menu__list-icon"></span>
+                                <span class="icon z-icon-locked dash-menu__list-icon"></span>
                               </div>
                               <div class="dash-menu__text-area | switcher | switcher-width-20">
                                 <div>
@@ -1236,7 +1236,7 @@ ${this.training.zoom_link_note}
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearCommitmentsModal}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <activity-3-month-plan
                     .questions=${jsObject.three_month_plan_questions}
@@ -1272,28 +1272,28 @@ ${this.training.zoom_link_note}
                             class=${this.hostProgress.list[n[0].key]?"active":""}
                             @click=${l=>this.toggleHost(n[0],l)}
                         >
-                            <span class="icon zume-heard-concept"></span>
+                            <span class="icon z-icon-heard-concept"></span>
                         </button>
                         <button
                             data-subtype=${n[1].subtype}
                             class=${this.hostProgress.list[n[1].key]?"active":""}
                             @click=${l=>this.toggleHost(n[1],l)}
                         >
-                            <span class="icon zume-obey-concept"></span>
+                            <span class="icon z-icon-obey-concept"></span>
                         </button>
                         <button
                             data-subtype=${n[2].subtype}
                             class=${this.hostProgress.list[n[2].key]?"active":""}
                             @click=${l=>this.toggleHost(n[2],l)}
                         >
-                            <span class="icon zume-share-concept"></span>
+                            <span class="icon z-icon-share-concept"></span>
                         </button>
                         <button
                             data-subtype=${n[3].subtype}
                             class=${this.hostProgress.list[n[3].key]?"active":""}
                             @click=${l=>this.toggleHost(n[3],l)}
                         >
-                            <span class="icon zume-train-concept"></span>
+                            <span class="icon z-icon-train-concept"></span>
                         </button>
                     </div>
                 </div>
@@ -1308,11 +1308,11 @@ ${this.training.zoom_link_note}
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu">
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openInfoModal}>
                                 <span class="visually-hidden">${jsObject.translations.progress_info}</span>
-                                <span class="icon zume-info brand-light" aria-hidden="true"></span>
+                                <span class="icon z-icon-info brand-light" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -1350,7 +1350,7 @@ ${this.training.zoom_link_note}
             </div>
             <div class="reveal large" id="progress-modal" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack-2 host-info mx-2">
                     <div class="switcher gap-1 align-items-center switcher-width-20">
@@ -1389,10 +1389,10 @@ ${this.training.zoom_link_note}
                 <div class="list__primary">
                     ${this.currentSession===t?c`
                             <button class="icon-btn" @click=${()=>this.startSession(t)} aria-label=${jsObject.translations.start_session}>
-                                <span class="icon zume-play brand-light"></span>
+                                <span class="icon z-icon-play brand-light"></span>
                             </button>
                         `:c`
-                            <span class="icon zume-check-mark success ${a?"":"invisible"} p--2"></span>
+                            <span class="icon z-icon-check-mark success ${a?"":"invisible"} p--2"></span>
                         `}
                     <span class="f-medium">${s}</span>
                 </div>
@@ -1401,14 +1401,14 @@ ${this.training.zoom_link_note}
                         ${moment(n).format("MMM Do YY")}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${t}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${t}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${()=>this.editSession(t)}><span class="icon zume-pencil"></span>${jsObject.translations.edit_time}</button></li>
-                        <li><button class="menu-btn" @click=${()=>this.markSessionCompleted(t)}><span class="icon zume-pencil"></span>${jsObject.translations.mark_completed}</button></li>
-                        <li><button class="menu-btn" @click=${()=>this.startSession(t)}><span class="icon zume-play"></span>${jsObject.translations.start_session}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.editSession(t)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.markSessionCompleted(t)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.startSession(t)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
                     </ul>
                 </div>
             </li>
@@ -1430,7 +1430,7 @@ ${this.training.zoom_link_note}
                         aria-label=${jsObject.translations.create_training_group}
                         @click=${this.createTraining}
                     >
-                        <span class="icon zume-plus"></span>
+                        <span class="icon z-icon-plus"></span>
                     </button>
                 </div>
                 <dash-header-right></dash-header-right>
@@ -1452,7 +1452,7 @@ ${this.training.zoom_link_note}
                             <div class="p-1">
                               <div class="dash-menu__list-item">
                                 <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon zume-locked dash-menu__list-icon"></span>
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
                                 </div>
                                 <div class="dash-menu__text-area | switcher | switcher-width-20">
                                   <div>
@@ -1476,7 +1476,7 @@ ${this.training.zoom_link_note}
                     ${!this.loading&&!this.error&&this.code!=="teaser"?c`
                                 <div class="card | group-members | grow-0">
                                     <button class="f-0 f-medium d-flex align-items-center gap--2 black">
-                                        <span class="icon zume-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
+                                        <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
                                     </button>
                                     <div class="collapse" data-state="open">
                                         <!-- The functionality of the .collapse class needs to be refactored from dash-progress.js toggleDetails function to be re-used here -->
@@ -1551,7 +1551,7 @@ ${this.training.zoom_link_note}
                         <p>${this.explanation}</p>
                     </div>
                     ${this.completed?c`
-                            <div class="grow-0"><span class="icon zume-check-mark grow-0 | dash-menu__list-success"></span></div>
+                            <div class="grow-0"><span class="icon z-icon-check-mark grow-0 | dash-menu__list-success"></span></div>
                         `:""}
                 </div>
             </div>
@@ -1569,9 +1569,9 @@ ${this.training.zoom_link_note}
                 data-alignment=${this.isRtl?"right":"left"}
             >
                 <ul>
-                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_ten_session_course}"><span class="icon zume-course"></span>${this.translations.ten_session_course}</a></li>
-                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_twenty_session_course}"><span class="icon zume-course"></span>${this.translations.twenty_session_course}</a></li>
-                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_intensive_session_course}"><span class="icon zume-course"></span>${this.translations.three_day_intensive_course}</a></li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_ten_session_course}"><span class="icon z-icon-course"></span>${this.translations.ten_session_course}</a></li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_twenty_session_course}"><span class="icon z-icon-course"></span>${this.translations.twenty_session_course}</a></li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_intensive_session_course}"><span class="icon z-icon-course"></span>${this.translations.three_day_intensive_course}</a></li>
                 </ul>
             </div>
         `}createRenderRoot(){return this}}customElements.define("launch-course",Ko);class Qo extends w{constructor(){super();x(this,"addressCallback",t=>{t.features.length<1?this.locations=-1:this.locations=t.features});x(this,"processLocation",debounce(getAddressSuggestions(this.addressCallback,jsObject.map_key)));this.userProfile={},this.locations=[]}static get properties(){return{userProfile:{type:Object},loading:{type:Boolean,attribute:!1},locations:{type:Array,attribute:!1}}}firstUpdated(){this.nameInput=this.renderRoot.querySelector("#full_name"),this.phoneInput=this.renderRoot.querySelector("#phone"),this.emailInput=this.renderRoot.querySelector("#email"),this.preferredEmailInput=this.renderRoot.querySelector("#communications_email"),this.cityInput=this.renderRoot.querySelector("#city"),this.prefferedLanguageInput=this.renderRoot.querySelector("#preferred_language"),this.addressResultsContainer=this.renderRoot.querySelector("#address_results")}submitProfileForm(t){t.preventDefault();const s=this.nameInput.value,n=this.emailInput.value,a=this.preferredEmailInput.value,r=this.phoneInput.value,o=this.prefferedLanguageInput.value,l={name:s,phone:r,email:n,communications_email:a,preferred_language:o};l.location_grid_meta=getLocationGridFromMapbox(this.mapboxSelectedId,this.userProfile.location),this.loading=!0,fetch(jsObject.rest_endpoint+"/profile",{method:"POST",body:JSON.stringify(l),headers:{"X-WP-Nonce":jsObject.nonce}}).then(d=>d.json()).then(d=>{const u=new CustomEvent("user-profile:change",{bubbles:!0,detail:d});this.dispatchEvent(u);const m=new CustomEvent("user-state:change",{bubbles:!0});this.dispatchEvent(m)}).catch(d=>{console.error(d)}).finally(()=>{this.loading=!1})}selectAddress(t){const s=t.target.id,n=t.target.dataset.placeName;this.cityInput.value=n,this.mapboxSelectedId=s,this.locations=[]}render(){var t;return c`
@@ -1666,7 +1666,7 @@ ${this.training.zoom_link_note}
                         class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 f-3 bypass-nav-click"
                         @click=${this.openMenu}
                     >
-                        <span class="icon zume-info"></span>
+                        <span class="icon z-icon-info"></span>
                     </button>
                     <h2 class="title text-center" data-small>${this.slide.center[0]} ${this.slide.length}</h2>
                     <div class="two-column right">
@@ -1690,7 +1690,7 @@ ${this.training.zoom_link_note}
                     data-transition="overlap"
                 >
                     <button class="close-btn | ms-auto absolute ${this.dir==="rtl"?"left":"right"} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                     </button>
 
                     <iframe
@@ -1731,7 +1731,7 @@ ${this.training.zoom_link_note}
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon"><span class="icon zume-phone"></span></div>
+                            <div class="title-icon"><span class="icon z-icon-phone"></span></div>
                             <h2 class="title">${this.slide.left[0]}</h2>
                         </div>
                     </div>
@@ -1764,7 +1764,7 @@ ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-discuss"></span>
+                                <span class="icon z-icon-discuss"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
@@ -1839,7 +1839,7 @@ ${this.training.zoom_link_note}
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span class="icon zume-obey-concept"></span>
+                                    <span class="icon z-icon-obey-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[0]}</h2>
                             </div>
@@ -1852,7 +1852,7 @@ ${this.training.zoom_link_note}
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span class="icon zume-share-concept"></span>
+                                    <span class="icon z-icon-share-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[1]}</h2>
                             </div>
@@ -1870,7 +1870,7 @@ ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-overview"></span>
+                                <span class="icon z-icon-overview"></span>
                             </div>
                             <h2 class="title">${this.slide.left[0]}</h2>
                         </div>
@@ -1889,7 +1889,7 @@ ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-pray"></span>
+                                <span class="icon z-icon-pray"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
@@ -1911,7 +1911,7 @@ ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-review"></span>
+                                <span class="icon z-icon-review"></span>
                             </div>
                             <h2 class="title">${this.slide.left[0]}</h2>
                         </div>
@@ -1943,7 +1943,7 @@ ${this.training.zoom_link_note}
                     class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 f-3 bypass-nav-click"
                     @click=${this.openMenu}
                 >
-                    <span class="icon zume-info"></span>
+                    <span class="icon z-icon-info"></span>
                 </button>
 
                 <div class="widescreen flex-video">
@@ -1963,7 +1963,7 @@ ${this.training.zoom_link_note}
                 data-transition="overlap"
             >
                 <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
 
                 <iframe
@@ -1980,7 +1980,7 @@ ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon zume-watch"></span>
+                                <span class="icon z-icon-watch"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
@@ -2001,7 +2001,9 @@ ${this.training.zoom_link_note}
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon"><img src="https://placehold.co/60x60/png" /></div>
+                            <div class="title-icon">
+                                <span class="icon z-icon-look-back"></span>
+                            </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
                                 <span class="subtitle">${this.slide.length}</span>
@@ -2029,7 +2031,7 @@ ${this.training.zoom_link_note}
                                     >
                                         <h2 class="f-0 bold">${jsObject.translations.session}</h2>
                                         <p class="f-3 bold lh-sm">${s+1}</p>
-                                        <span class="icon zume-course brand-light f-3"></span>
+                                        <span class="icon z-icon-course brand-light f-3"></span>
                                     </button>
                                 `)}
                             </div>
@@ -2039,7 +2041,7 @@ ${this.training.zoom_link_note}
 
             <nav class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir==="rtl"?"position-right":"position-left"} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
                 <button class="ms-auto close-btn mb-0" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <div class="stack">
@@ -2273,7 +2275,7 @@ ${this.training.zoom_link_note}
                     </button>
                     <button class="icon-btn f-2" data-toggle="filter-menu">
                         <span class="visually-hidden">${zumeShare.translations.filter}</span>
-                        <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                        <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="center" data-close-on-click="true" data-close-on-click-inside="true">
@@ -2630,7 +2632,7 @@ ${this.training.zoom_link_note}
                 <div class="d-flex align-items-center justify-content-between">
                     <span class="mx-0">${v.fromISO(e).toFormat("DDDD")}</span>
                     <button class="close-btn" @click=${()=>this.removeDate(t)}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                     </button>
                 </div>
             </li>

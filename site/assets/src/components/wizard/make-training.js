@@ -387,7 +387,7 @@ export class MakeTraining extends LitElement {
             <div class="stack-1 position-relative">
                 ${this.variant === Steps.planDecision ? html`
                     <div class="stack">
-                        <span class="zume-start-group brand-light f-7"></span>
+                        <span class="z-icon-start-group brand-light f-7"></span>
                         <h2>${this.t.join_or_start_a_training}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight light" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
@@ -398,7 +398,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.howManySessions ? html`
                     <div class="stack">
-                        <span class="zume-session-choice brand-light f-7"></span>
+                        <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_which_session}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state === '20' ? '' : 'outline'}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
@@ -410,7 +410,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.scheduleDecision ? html`
                     <div class="stack">
-                        <span class="zume-session-choice brand-light f-7"></span>
+                        <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_schedule_training}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state === 'yes' ? '' : 'outline'}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
@@ -421,7 +421,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.howOften ? html`
                     <div class="stack">
-                        <span class="zume-time brand-light f-7"></span>
+                        <span class="z-icon-time brand-light f-7"></span>
                         <h2>${this.t.question_how_often}</h2>
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state === 'weekly' ? '' : 'outline'}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
@@ -433,7 +433,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.startDate ? html`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_when_will_you_start}</h2>
                         <div class="cluster justify-content-center gapy-0">
                             <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
@@ -450,7 +450,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.location ? html`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_where_will_you_meet}</h2>
                         <p>${this.t.question_where_will_you_meet_help_text}</p>
                         <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state === 'string' ? this.state : ''} />
@@ -461,7 +461,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.name ? html`
                     <div class="stack">
-                        <span class="zume-start-date brand-light f-7"></span>
+                        <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_what_is_the_groups_name}</h2>
                         <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state === 'string' ? this.state : ''} />
                         <div class="stack" data-fit-content>
@@ -471,7 +471,7 @@ export class MakeTraining extends LitElement {
                 ` : ''}
                 ${this.variant === Steps.review ? html`
                     <div class="stack">
-                        <h2><span class="zume-overview brand-light"></span> ${this.t.review_training}</h2>
+                        <h2><span class="z-icon-overview brand-light"></span> ${this.t.review_training}</h2>
 
                         ${
                             scheduleDecision === 'yes'

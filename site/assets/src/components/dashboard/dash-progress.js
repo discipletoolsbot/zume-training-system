@@ -216,28 +216,28 @@ export class DashProgress extends DashPage {
                             class=${this.hostProgress.list[host[0].key] ? 'active' : ''}
                             @click=${(event) => this.toggleHost(host[0], event)}
                         >
-                            <span class="icon zume-heard-concept"></span>
+                            <span class="icon z-icon-heard-concept"></span>
                         </button>
                         <button
                             data-subtype=${host[1].subtype}
                             class=${this.hostProgress.list[host[1].key] ? 'active' : ''}
                             @click=${(event) => this.toggleHost(host[1], event)}
                         >
-                            <span class="icon zume-obey-concept"></span>
+                            <span class="icon z-icon-obey-concept"></span>
                         </button>
                         <button
                             data-subtype=${host[2].subtype}
                             class=${this.hostProgress.list[host[2].key] ? 'active' : ''}
                             @click=${(event) => this.toggleHost(host[2], event)}
                         >
-                            <span class="icon zume-share-concept"></span>
+                            <span class="icon z-icon-share-concept"></span>
                         </button>
                         <button
                             data-subtype=${host[3].subtype}
                             class=${this.hostProgress.list[host[3].key] ? 'active' : ''}
                             @click=${(event) => this.toggleHost(host[3], event)}
                         >
-                            <span class="icon zume-train-concept"></span>
+                            <span class="icon z-icon-train-concept"></span>
                         </button>
                     </div>
                 </div>
@@ -256,11 +256,11 @@ export class DashProgress extends DashPage {
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu">
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter brand-light" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openInfoModal}>
                                 <span class="visually-hidden">${jsObject.translations.progress_info}</span>
-                                <span class="icon zume-info brand-light" aria-hidden="true"></span>
+                                <span class="icon z-icon-info brand-light" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -302,7 +302,7 @@ export class DashProgress extends DashPage {
             </div>
             <div class="reveal large" id="progress-modal" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack-2 host-info mx-2">
                     <div class="switcher gap-1 align-items-center switcher-width-20">

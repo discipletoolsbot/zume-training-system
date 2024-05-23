@@ -115,7 +115,7 @@ export class DashPlans extends DashPage {
                 <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
                         ${status === 'closed'
-                            ? html`<span class="icon zume-check-mark success"></span>`
+                            ? html`<span class="icon z-icon-check-mark success"></span>`
                             : html`
                                 <button
                                     class="btn light uppercase tight break-anywhere"
@@ -127,7 +127,7 @@ export class DashPlans extends DashPage {
                         }
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${id}">
-                        <span class="icon zume-kebab brand-light"></span>
+                        <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
                 <div
@@ -141,8 +141,8 @@ export class DashPlans extends DashPage {
                     data-close-on-click-inside="true"
                 >
                     <ul>
-                        <li class="hidden"><button class="menu-btn" @click=${() => this.editCommitment(id)}><span class="icon zume-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.deleteCommitment(id)}><span class="icon zume-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li class="hidden"><button class="menu-btn" @click=${() => this.editCommitment(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn" @click=${() => this.deleteCommitment(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
@@ -164,11 +164,11 @@ export class DashPlans extends DashPage {
                         <div class="s0">
                             <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon zume-filter" aria-hidden="true"></span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
                             <button class="icon-btn f-2" @click=${this.openCommitmentsModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.add_commitments}</span>
-                                <span class="icon zume-plus" aria-hidden="true"></span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -176,19 +176,19 @@ export class DashPlans extends DashPage {
                         <ul>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'open' ? 'selected' : ''}" @click=${() => this.filterCommitments('open')}>
-                                    <span class="icon zume-sort-todo" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-todo" aria-hidden="true"></span>
                                     ${jsObject.translations.active}
                                 </button>
                             </li>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'closed' ? 'selected' : ''}" @click=${() => this.filterCommitments('closed')}>
-                                    <span class="icon zume-sort-done" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-done" aria-hidden="true"></span>
                                     ${jsObject.translations.completed}
                                 </button>
                             </li>
                             <li>
                                 <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterCommitments('all')}>
-                                    <span class="icon zume-sort-all" aria-hidden="true"></span>
+                                    <span class="icon z-icon-sort-all" aria-hidden="true"></span>
                                     ${jsObject.translations.all}
                                 </button>
                             </li>
@@ -201,7 +201,7 @@ export class DashPlans extends DashPage {
                           <div class="p-2">
                             <div class="dash-menu__list-item">
                               <div class="dash-menu__icon-area | stack--5">
-                                <span class="icon zume-locked dash-menu__list-icon"></span>
+                                <span class="icon z-icon-locked dash-menu__list-icon"></span>
                               </div>
                               <div class="dash-menu__text-area | switcher | switcher-width-20">
                                 <div>
@@ -228,7 +228,7 @@ export class DashPlans extends DashPage {
             </div>
             <div class="reveal large" id="new-commitments-form" data-reveal data-v-offset="20">
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearCommitmentsModal}>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <activity-3-month-plan
                     .questions=${jsObject.three_month_plan_questions}

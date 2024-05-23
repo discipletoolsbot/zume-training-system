@@ -86,7 +86,7 @@ export class CompleteProfile extends LitElement {
                     <label for="name" class="visually-hidden">${this.t.name}</label>
                     <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable} placeholder=${this.t.name}>
                     <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('name')}>
-                        <span class="icon zume-info brand-light"></span>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                 </div>
             ` : ''}
@@ -108,7 +108,7 @@ export class CompleteProfile extends LitElement {
                         @invalid=${this._handleInvalid}
                     >
                     <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('phone')}>
-                        <span class="icon zume-info brand-light"></span>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                     <div class="input-error" data-state="${this.phoneError.length ? '' : 'empty'}" >${this.phoneError}</div>
                 </div>
@@ -129,7 +129,7 @@ export class CompleteProfile extends LitElement {
                             @input=${this._handleCityChange}
                         >
                         <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('location')}>
-                            <span class="icon zume-info brand-light"></span>
+                            <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>

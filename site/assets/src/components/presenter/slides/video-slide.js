@@ -49,7 +49,7 @@ export class VideoSlide extends CourseSlide {
                     class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 f-3 bypass-nav-click"
                     @click=${this.openMenu}
                 >
-                    <span class="icon zume-info"></span>
+                    <span class="icon z-icon-info"></span>
                 </button>
 
                 <div class="widescreen flex-video">
@@ -92,7 +92,7 @@ export class VideoSlide extends CourseSlide {
                 data-transition="overlap"
             >
                 <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
 
                 <iframe

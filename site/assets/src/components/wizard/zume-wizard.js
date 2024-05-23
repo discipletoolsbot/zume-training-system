@@ -270,7 +270,7 @@ export class Wizard extends LitElement {
                     type="button"
                     @click=${this._onQuit}
                 >
-                    <span class="icon zume-close"></span>
+                    <span class="icon z-icon-close"></span>
                 </button>
             </div>
         `

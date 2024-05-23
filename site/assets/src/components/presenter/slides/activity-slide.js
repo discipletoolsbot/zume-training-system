@@ -40,7 +40,7 @@ export class ActivitySlide extends CourseSlide {
                         class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 f-3 bypass-nav-click"
                         @click=${this.openMenu}
                     >
-                        <span class="icon zume-info"></span>
+                        <span class="icon z-icon-info"></span>
                     </button>
                     <h2 class="title text-center" data-small>${this.slide['center'][0]} ${this.slide['length']}</h2>
                     <div class="two-column right">
@@ -64,7 +64,7 @@ export class ActivitySlide extends CourseSlide {
                     data-transition="overlap"
                 >
                     <button class="close-btn | ms-auto absolute ${this.dir === 'rtl' ? 'left' : 'right'} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
-                        <span class="icon zume-close"></span>
+                        <span class="icon z-icon-close"></span>
                     </button>
 
                     <iframe

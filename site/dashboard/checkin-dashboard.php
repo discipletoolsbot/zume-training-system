@@ -158,7 +158,7 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
                     <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Congratulations!', 'zume' ) ?></h1>
                     <hr class="mt0">
                     <div class="container-md stack-2 | py-0">
-                        <div><span class="icon zume-check-mark success f-7 border-circle p--2" data-border-color="success" data-border-width="7"></span></div>
+                        <div><span class="icon z-icon-check-mark success f-7 border-circle p--2" data-border-color="success" data-border-width="7"></span></div>
                         <div class="stack">
                             <h2 class="h3 brand-light"><?php echo esc_html__( 'Checked into session:', 'zume' ) ?></h2>
                             <p class="bold f-5"><?php echo esc_html( sprintf( __( '%1$d of %2$d', 'zume' ), $session_number, $number_of_sessions ) ) ?></p>
