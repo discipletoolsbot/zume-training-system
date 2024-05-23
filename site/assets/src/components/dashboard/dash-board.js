@@ -519,7 +519,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     <nav-link
                                         href=${this.makeHref('getting-started')}
                                         class="menu-section__title menu-btn"
-                                        icon="zume-start"
+                                        icon="z-icon-start"
                                         text=${jsObject.translations.getting_started}
                                         as="nav"
                                     >
@@ -560,7 +560,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 <nav-link
                                     href=${this.makeHref('training')}
                                     class="menu-section__title menu-btn"
-                                    icon="zume-training"
+                                    icon="z-icon-training"
                                     text=${jsObject.translations.training}
                                     as="nav"
                                 >
@@ -627,7 +627,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 <nav-link
                                     href=${this.makeHref('practicing')}
                                     class="menu-section__title menu-btn"
-                                    icon="zume-practicing"
+                                    icon="z-icon-practicing"
                                     text=${jsObject.translations.practicing}
                                     as="nav"
                                 ></nav-link>
@@ -657,7 +657,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     <nav-link
                                         class="menu-btn | f--1"
                                         href=''
-                                        icon='zume-community'
+                                        icon='z-icon-community'
                                         text=${this.hasJoinedCommunity() ? jsObject.translations.community : jsObject.translations.join_the_community}
                                         as="link"
                                         @click=${this.openCommunityModal}
@@ -667,7 +667,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             <nav-link
                                 class="menu-btn | f--1"
                                 href=${jsObject.urls.resources}
-                                icon='zume-resources'
+                                icon='z-icon-resources'
                                 text=${jsObject.translations.resources}
                                 as="link"
                             ></nav-link>
