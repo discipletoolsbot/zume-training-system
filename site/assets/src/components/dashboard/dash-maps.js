@@ -5,12 +5,25 @@ export class DashMaps extends DashPage {
     static get properties() {
         return {
             showTeaser: { type: Boolean },
+            scriptUrl: { type: String, attribute: false },
+            loading: { type: Boolean, attribute: false },
         };
     }
 
     constructor() {
         super()
         this.showTeaser = false
+        this.scriptUrl = ''
+    }
+
+    connectedCallback() {
+        super.connectedCallback();
+        this.openModal = this.openModal.bind(this)
+        this.handleLoad = this.handleLoad.bind(this)
+    }
+
+    firstUpdated() {
+        jQuery(document).foundation();
     }
 
     joinCommunity() {
@@ -18,6 +31,38 @@ export class DashMaps extends DashPage {
             const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
             this.dispatchEvent(stateEvent)
         })
+    }
+
+    openModal(event) {
+        this.loading = true
+        let map = event.target.dataset.map
+
+        /* use this to load the iframes by src into one iframe tag in one modal */
+        /* This works but the heatmap sites don't load the heatmap properly */
+        if (true) {
+            if (map === 'hundred-hour-map') {
+                this.scriptUrl = 'https://zume.training/coaching/zume_app/last100_hours/'
+            } else if (map === 'vision-map') {
+                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_practitioner/'
+            } else if (map === 'church-map') {
+                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_churches/'
+            } else {
+                this.scriptUrl = ''
+            }
+            map = 'map'
+        }
+
+        const iframe = document.querySelector('#map-iframe')
+        iframe.onload = this.handleLoad
+
+        /* Having 3 iframes in 3 modals should work, but all 3 have trouble loading for some reason i haven't pushed into yet */
+
+        const modal = document.querySelector(`#${map}-modal`)
+        jQuery(modal).foundation('open')
+    }
+
+    handleLoad() {
+        this.loading = false
     }
 
     render() {
@@ -49,13 +94,90 @@ export class DashMaps extends DashPage {
                           </div>
                         `
                         : html`
-                            <p>You can now see your vision maps here. (If you imagine them hard enough)</p>
+                            <div class="stack">
+                                <button class="btn light uppercase" data-map="hundred-hour-map" @click=${this.openModal}>
+                                    ${jsObject.translations.hundred_hour_map}
+                                </button>
+                                <button class="btn light uppercase" data-map="vision-map" @click=${this.openModal}>
+                                    ${jsObject.translations.training_vision_map}
+                                </button>
+                                <button class="btn light uppercase" data-map="church-map" @click=${this.openModal}>
+                                    ${jsObject.translations.simple_church_planting_map}
+                                </button>
+                            </div>
                         `
                     }
                 </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
+            </div>
+            <div
+                class="reveal full"
+                data-reveal
+                id="map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon z-icon-close"></span>
+                </button>
+                ${this.loading ? html`<span class="loading-spinner active"></span>` : ''}
+                <iframe
+                    id="map-iframe"
+                    class="${this.loading ? 'opacity-0' : ''}"
+                    src=${this.scriptUrl || ''}
+                    frameborder="0"
+                    width="100%"
+                    height="100%"
+                >
+                </iframe>
+            </div>
+            <div
+                class="reveal full"
+                data-reveal
+                id="hundred-hour-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon z-icon-close"></span>
+                </button>
+                <iframe
+                    src='https://zume.training/coaching/zume_app/last100_hours/'
+                    frameborder="0"
+                    width="100%"
+                    height="100%"
+                >
+                </iframe>
+            </div>
+            <div
+                class="reveal full"
+                data-reveal
+                id="vision-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon z-icon-close"></span>
+                </button>
+                <iframe
+                    src='https://zume.training/coaching/zume_app/heatmap_practitioner/'
+                    frameborder="0"
+                    width="100%"
+                    height="100%"
+                >
+                </iframe>
+            </div>
+            <div
+                class="reveal full"
+                data-reveal
+                id="church-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
+                    <span class="icon z-icon-close"></span>
+                </button>
+                <iframe
+                    src='https://zume.training/coaching/zume_app/heatmap_churches/'
+                    frameborder="0"
+                    width="100%"
+                    height="100%"
+                >
+                </iframe>
             </div>
         `;
     }

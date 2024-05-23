@@ -59,8 +59,6 @@ export class DashCta extends LitElement {
         /* Get the new CTAs */
         const newCtas = this.getCtas()
 
-        console.log(newCtas)
-
         /* Compare new to old to get the diff */
         const [ comingCtas, stayingCtas, goingCtas ] = this.diffCtas(newCtas, this.ctas)
 

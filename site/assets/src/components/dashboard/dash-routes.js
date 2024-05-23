@@ -176,6 +176,7 @@ export function dashRoutes() {
                 makeComponent: (isLocked) => html`<dash-churches ?showTeaser=${isLocked}></dash-churches>`,
             },
         },
+         */
         {
             name: 'my-maps',
             pattern: `${jsObject.base_url}/my-maps`,
@@ -187,7 +188,7 @@ export function dashRoutes() {
             data: {
                 makeComponent: (isLocked) => html`<dash-maps ?showTeaser=${isLocked}></dash-maps>`,
             },
-        }, */
+        },
         {
             name: 'not-found',
             pattern: '*',
