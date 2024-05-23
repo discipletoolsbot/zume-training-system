@@ -5,6 +5,7 @@ export class ShareList extends LitElement {
     static get properties() {
         return {
             items: { type: Array },
+            itemsToDisplay: { type: Array, attribute: false },
             filterType: { type: String, attribute: false },
             isSortedAlphabetically: { type: Boolean, attribute: false },
         };
@@ -12,14 +13,20 @@ export class ShareList extends LitElement {
 
     constructor() {
         super()
-        this.items = zumeShare.share_items
+        this.items = []
+        this.itemsToDisplay = []
         this.filterType = 'all'
+    }
+
+    connectedCallback() {
+        super.connectedCallback();
+        this.itemsToDisplay = [ ...this.items ]
     }
 
     filterItems(filterType) {
         this.filterType = filterType
 
-        this.items = this.sortItems(zumeShare.share_items.filter(({ type }) => {
+        this.itemsToDisplay = this.sortItems(this.items.filter(({ type }) => {
             if (filterType === 'all') {
                 return true
             }
@@ -30,7 +37,7 @@ export class ShareList extends LitElement {
     toggleSorting() {
         this.isSortedAlphabetically = !this.isSortedAlphabetically
 
-        this.items = this.sortItems(this.items)
+        this.itemsToDisplay = this.sortItems(this.itemsToDisplay)
     }
     sortItems(items) {
         return items.sort((a, b) => {
@@ -76,8 +83,9 @@ export class ShareList extends LitElement {
         return html`
             <div class="container-xsm">
                 <div class="filter-area d-flex align-items-center justify-flex-end">
+                    <span class="f--1 gray-700 lh-sm">${zumeShare.translations.items}: ${this.itemsToDisplay.length}</span>
                     <button
-                        class="icon-btn f-2 ${this.isSortedAlphabetically ? 'bg-brand-fade' : ''}"
+                        class="icon-btn f-2 ${this.isSortedAlphabetically ? 'bg-gray-300' : ''}"
                         @click=${this.toggleSorting}
                     >
                         <span class="visually-hidden">${zumeShare.translations.sort}</span>
@@ -115,7 +123,7 @@ export class ShareList extends LitElement {
                 <div class="share-list__wrapper">
                     <ul class="stack  | mt-0">
                         ${
-                            repeat(this.items, (share_item) => share_item.key, this.renderListItem)
+                            repeat(this.itemsToDisplay, (share_item) => share_item.key, this.renderListItem)
                         }
                     </ul>
                 </div>
