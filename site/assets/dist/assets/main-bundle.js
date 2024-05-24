@@ -1475,7 +1475,7 @@ ${this.training.zoom_link_note}
                 </div>
                 <div class="list__secondary">
                     <div class="d-flex justify-content-center">
-                        ${moment(n).format("MMM Do YY")}
+                        ${n>0?moment(n).format("MMM Do YY"):jsObject.translations.not_scheduled}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${t}">
                         <span class="icon z-icon-kebab brand-light"></span>

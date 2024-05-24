@@ -286,6 +286,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'hundred_hour_map' => __( '100 Hour Map', 'zume' ),
             'training_vision_map' => __( 'Training vision map', 'zume' ),
             'simple_church_planting_map' => __( 'Simple church planting map', 'zume' ),
+            'not_scheduled' => __( 'No date', 'zume' ),
         ];
     }
 

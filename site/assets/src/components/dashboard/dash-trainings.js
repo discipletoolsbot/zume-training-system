@@ -215,7 +215,7 @@ export class DashTrainings extends DashPage {
                 </div>
                 <div class="list__secondary">
                     <div class="d-flex justify-content-center">
-                        ${moment(datetime).format("MMM Do YY")}
+                        ${datetime > 0 ? moment(datetime).format("MMM Do YY") : jsObject.translations.not_scheduled}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${id}">
                         <span class="icon z-icon-kebab brand-light"></span>
