@@ -403,6 +403,9 @@ export class Wizard extends LitElement {
                     window.location.href = dashboardUrl.href
                     return
                 }
+            } else if (this.type === Wizards.getACoach) {
+                window.location.href = jsObject.coaching_dashboard_url
+                return
             } else {
                 url.searchParams.set( 'completed', this.type )
             }

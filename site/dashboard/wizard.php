@@ -96,6 +96,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'mapbox_selected_id' => 'current',
                 'checkin_dashboard_url' => zume_checkin_dashboard_url(),
                 'training_dashboard_url' => zume_dashboard_page_url( 'my-training' ),
+                'coaching_dashboard_url' => zume_dashboard_page_url( 'my-coach' ),
                 'site_url' => zume_home_url(),
             ]) ?>][0]
         </script>
