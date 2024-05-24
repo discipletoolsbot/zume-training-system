@@ -121,7 +121,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'launch_twenty_session_course' => zume_20_session_url(),
                     'launch_intensive_session_course' => zume_intensive_session_url(),
                     'set_profile_wizard' => esc_url( '#' ),
-                    'plan_training_wizard' => esc_url( zume_make_a_plan_wizard_url() ),
+                    'plan_training_wizard' => esc_url( zume_start_wizard_url() ),
                     'get_coach_wizard' => esc_url( zume_get_a_coach_wizard_url() ),
                     'resources' => esc_url( zume_resources_url() ),
                 ],
