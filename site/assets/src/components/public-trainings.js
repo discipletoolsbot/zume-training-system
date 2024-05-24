@@ -48,6 +48,12 @@ export class PublicTrainings extends LitElement {
             return html`<span class="loading-spinner active"></span>`
         }
 
+        if (this.plans.length === 0) {
+            return html`
+                <p>${this.t.no_plans}</p>
+            `
+        }
+
         return html`
             <table>
                 <thead>
@@ -61,9 +67,7 @@ export class PublicTrainings extends LitElement {
                     </tr>
                 </thead>
                 <tbody>
-                    ${this.plans.length > 0 ? (
-                        this.plans.map(this.renderRow)
-                    ): this.t.no_plans}
+                    ${this.plans.map(this.renderRow)}
                </tbody>
             </table>
         `;

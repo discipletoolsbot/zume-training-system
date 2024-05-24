@@ -59,6 +59,10 @@ export class JoinFriendsTraining extends LitElement {
 
                 this.message = this.t.success.replace('%s', data.name)
 
+                const url = new URL(location.href)
+                url.searchParams.set('joinKey', code)
+                window.history.pushState(null, null, url.href)
+
                 this._sendDoneStepEvent()
             })
             .fail( ({ responseJSON: error }) => {

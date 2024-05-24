@@ -59,9 +59,11 @@ export class JoinTraining extends LitElement {
         this.code = code;
         makeRequest('POST', 'connect/public-plan', { code: code }, 'zume_system/v1')
             .then((data) => {
-                console.log(data);
-
                 this.message = this.t.success.replace('%s', data.name);
+
+                const url = new URL(location.href)
+                url.searchParams.set('joinKey', code)
+                window.history.pushState(null, null, url.href)
 
                 this._sendDoneStepEvent();
             })
