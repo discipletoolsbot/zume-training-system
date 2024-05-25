@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Maithili <https://translate.disciple.tools/projects/zume-"
@@ -618,7 +618,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -626,7 +626,7 @@ msgstr ""
 msgid "Close"
 msgstr "बन्द करह"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3792,7 +3792,7 @@ msgstr "पाठ्यक्रम पुरा भेल"
 msgid "Not Heard"
 msgstr "सुनुँहलू"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3800,7 +3800,7 @@ msgstr ""
 msgid "Logout"
 msgstr "लॉग आउट"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4322,7 +4322,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "अहाँ केँ फार्म मे किछु गलत अछि।"
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "प्रशिक्षण"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "आसान मंडली- परिपूर्णता"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4330,12 +4361,12 @@ msgid ""
 msgstr ""
 "हम अपन खिसा [गवाही] आ परमेश्वरक खिसा [सुसमाचार ]निम्नलिखित व्यक्ति केँ संगे मिलान करब :"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "हम निम्नलिखित लोकक  हमर संग एक जवाबदेही समूह शुरू करत्वऽ  मे आमंत्रित करब : "
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4343,11 +4374,11 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन स्वयं क जवाबदेही समूह शुरू करऽ केँ चुनौती दैब  आ  हुनका उह कोना "
 "करैत अछि एकर  प्रशिक्षण दैब:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "हम निम्नलिखित लोकक  हमर  संग एक  3/3 समूह शुरू करषऽ  मे आमंत्रित करब:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4355,7 +4386,7 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन (स्वयं) खुद केँ 3/3 समूह शुरू  चुनौती करऽ  कि चुनौती दैब आ हुनकर "
 "ओकर  कोना  करैत अछि  एकर प्रशिक्षण दैब:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4364,16 +4395,16 @@ msgstr ""
 "हम निम्नलिखित लोकक  3/3 आशा  या खोज समूह मे भाग लिअ केँ  लेल [ज़ूमे गाइड बुक  परिशिष्ट "
 "देखूं] आमंत्रित करब"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "हम निम्नलिखित लोकक  हमर  संग प्रार्थना चलवै मे भाग लिअ केँ लेल आमंत्रित करब"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "हम प्रार्थना करब चलैत चलैत एक बेर हरेक [ एक/ दिन/ सप्ताह /महीना)"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4382,7 +4413,7 @@ msgstr ""
 "हम निम्नलिखित लोकक अपन खिस्सा आ  परमेश्वरक खिसा  मिलान करऽ केँ लेल  हुनका लैंस करब आ  "
 "हुनके संबंधपरक  नेटवर्क मे लोकक 100  की सूची बनायब:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4390,25 +4421,25 @@ msgstr ""
 "हम निम्नलिखित  लोकक प्रार्थना चलबैत उपकरण एक आवधिक आधार पर  इस्तेमाल करऽ केँ लेल "
 "चुनौती दैब :"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "हम प्रार्थना चलबैत उपकरण इस्तेमाल एक बेर हरेक [ दिन /सप्ताह/ महीना) करब।"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 "हम निम्नलिखित लोकक अगुवाई सेल जकर   हम नेतृत्व करब ओकर हिस्सा हौले केँ लेल आमंत्रित करब:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 "हम निम्नलिखित लोकक ई  ज़ूमे प्रशिक्षण प्रोत्साहित पाठ्यक्रम सँ जाय केँ लेल प्रोत्साहित करब:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "अन्य  प्रतिबद्धता"
@@ -6156,16 +6187,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "उपकरण"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "संकल्पनाएँ"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6438,13 +6473,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "तीन माहक योजना"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "जमा करू"
+msgid "Join a Hub"
+msgstr "समुदाय"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6597,6 +6632,10 @@ msgid "Zume Training System"
 msgstr "ज़ूमे प्रशिक्षण"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "जमा करू"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "अहाँ अपन सेँ पुछूँ"
 
@@ -6684,10 +6723,6 @@ msgstr "ज़ूमे प्रशिक्षण"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "आशीषक प्रार्थनाक स्वरूप"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "समुदाय"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9426,9 +9461,6 @@ msgstr "ज़ूमे प्रशिक्षण"
 #~ msgstr ""
 #~ "हमरा संदेह अछि, विशेष रूप सँ उ जगह पर जोतऽ आगुँ सँ मंडली अछि एकरा सेँ पहिले शिष्य बनावै "
 #~ "केँ प्रक्रिया शुरुआत करी,हमर प्रशिक्षणक प्रक्रिया कऽ शुरुआत करे केँ आवश्यक अछि।"
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "आसान मंडली- परिपूर्णता"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "2 आसान  मंडली -जनसंख्या"

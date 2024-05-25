@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional, Hong Kong) <https://translate.disciple."
@@ -600,7 +600,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -608,7 +608,7 @@ msgstr ""
 msgid "Close"
 msgstr "關閉"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3677,7 +3677,7 @@ msgstr "課程完成"
 msgid "Not Heard"
 msgstr "已聽見"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3685,7 +3685,7 @@ msgstr ""
 msgid "Logout"
 msgstr "登出"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4207,35 +4207,66 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "你的表格填寫有一些錯誤。"
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "訓練"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "讓簡約教會遍滿全地"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr "我要與以下的人分享「我的故事」﹙見證﹚及「神的故事」﹙福音﹚︰"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "我要邀請以下的人﹐與我一起成立一個「守望互勉小組」︰"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr "我要鼓勵以下的人﹐開始他們自己的「守望互勉小組」﹐並教他們如何帶領︰"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "我要邀請以下的人﹐與我一起成立一個「三分三小組」︰"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr "我要鼓勵以下的人﹐開始他們自己的「三分三小組」﹐並教他們如何帶領︰"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4244,16 +4275,16 @@ msgstr ""
 "我要邀請以下的人﹐與我一起完成「三分三小組」的「希望系列」或者「認識系列」"
 "﹙參照「天國酵母」手冊的附錄﹚︰"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "我要邀請以下的人﹐與我一起做「步行禱告」︰"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "我要每隔 ____﹙天/星期/月﹚做一次「步行禱告」。"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4262,29 +4293,29 @@ msgstr ""
 "我要培訓以下的人﹐與人分享他們自己的「見證故事」和「神的故事」﹐並列出在他們"
 "的人際關係圈要關懷的「百人名單」︰"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "我要鼓勵以下的人﹐開始定期用「禱告輪」的方式去禱告︰"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "我要每隔 ____﹙天/星期/月﹚操練一次「禱告輪」。"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "我要邀請以下的人，加入我所帶領的「帶領者培訓小組」︰"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "我要鼓勵以下的人﹐一起完成這套「天國酵母」門徒訓練課程︰"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "其他的立志行動︰"
@@ -6002,16 +6033,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "工具"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "概念"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6284,13 +6319,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "三個月規畫"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "送出"
+msgid "Join a Hub"
+msgstr "社群"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6443,6 +6478,10 @@ msgid "Zume Training System"
 msgstr "「天國酵母」門徒訓練"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "送出"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "問問自己"
 
@@ -6525,10 +6564,6 @@ msgstr "「天國酵母」門徒訓練"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "B.L.E.S.S. 祝福禱告法"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "社群"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9131,9 +9166,6 @@ msgstr "「天國酵母」門徒訓練"
 #~ msgstr ""
 #~ "我們發覺，尤其是在已經有教會建立的地方，我們首先需要一個「培訓運動」，才能"
 #~ "看見「門徒倍增運動」。"
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "讓簡約教會遍滿全地"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "﹙兩個簡約教會 &#xF7；人口﹚"

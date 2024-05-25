@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Odia <https://translate.disciple.tools/projects/zume-training/"
@@ -618,7 +618,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -626,7 +626,7 @@ msgstr ""
 msgid "Close"
 msgstr "ବନ୍ଦ କରନ୍ତୁ"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3793,7 +3793,7 @@ msgstr "ପାଠ୍ୟକ୍ରମ ସମାପ୍ତ"
 msgid "Not Heard"
 msgstr "ଶୁଣିଲେ"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3801,7 +3801,7 @@ msgstr ""
 msgid "Logout"
 msgstr "ଲଗ୍ ଆଉଟ୍"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4323,7 +4323,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "ଆପଣଙ୍କ ଫର୍ମରେ କିଛି ତ୍ରୁଟି ରହିଛି ।"
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "ପ୍ରଶିକ୍ଷଣ"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "ସରଳ ମଣ୍ଡଳୀ ପରିପୃକ୍ତ‍ତା"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4331,12 +4362,12 @@ msgid ""
 msgstr ""
 "ମୁଁ ମୋର କାହାଣୀ [ସାକ୍ଷ] ଏବଂ ଈଶ୍ୱରଙ୍କ କାହାଣୀ [ସୁସମାଚାର] ନିମ୍ଣଲିଖିତ ବ୍ୟକ୍ତିଙ୍କ ସହ ବିତରଣ କରିବି: "
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "ମୋ ସହିତ ଏକ ଉତ୍ତରଦାୟୀ ଦଳ ଆରମ୍ଭ କରିବାକୁ ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ଆମନ୍ତ୍ରଣ କରିବି: "
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4344,11 +4375,11 @@ msgstr ""
 "ମୁଁ ନିମ୍ନଲିଖିତ ଲୋକମାନଙ୍କୁ ତାଙ୍କ ନିଜ ଉତ୍ତରଦାୟୀ ଦଳ ଆରମ୍ଭ କରିବାକୁ ଆହ୍ୱାନ କରିବି ଓ ଏହା କିପରି କରାଯିବ "
 "ସେ ବିଷୟରେ ସେମାନଙ୍କୁ ତାଲିମ୍ ଦେବି:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ମୋ ସହିତ ଏକ ୩/୩ ଦଳର ଆରମ୍ଭ କରିବାକୁ  ଆମନ୍ତ୍ରଣ କରିବି:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4356,7 +4387,7 @@ msgstr ""
 "ମୁଁ ନିମ୍ନଲିଖିତ ଲୋକମାନଙ୍କୁ ତାଙ୍କ ନିଜ ୩/୩ ଦଳ ଆରମ୍ଭ କରିବାକୁ ଆହ୍ୱାନ କରିବି ଓ ଏହା କିପରି କରାଯିବ ସେ "
 "ବିଷୟରେ ସେମାନଙ୍କୁ ତାଲିମ୍ ଦେବି:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4365,16 +4396,16 @@ msgstr ""
 "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ମୋ ସହିତ ୩/୩ ଆଶା ଅଥବା ଆବିଷ୍କାର ଦଳରେ [ ଯୁମେ ସହାୟକ ପୁସ୍ତିକାର ପରିଶିଷ୍ଟକୁ "
 "ଦେଖନ୍ତୁ ] ଅଂଶଗ୍ରହଣ କରିବାକୁ  ଆମନ୍ତ୍ରଣ କରିବି "
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ମୋ ସହିତ ପ୍ରାର୍ଥନା ବିଚରଣରେ ଅଂଶଗ୍ରହଣ କରିବାକୁ  ଆମନ୍ତ୍ରଣ କରିବି:  "
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "ମୁଁ [ଦିନରେ, ସପ୍ତାହରେ, ମାସରେ] ଥରେ ପ୍ରାର୍ଥନା ବିଚରଣ କରିବି |"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4383,18 +4414,18 @@ msgstr ""
 "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ତାଙ୍କ କାହାଣୀ ଓ ଈଶ୍ୱରଙ୍କ କାହାଣୀ ବିତରଣ କରିବାକୁ ସୁସଜ୍ଜିତ କରିବି ଏବଂ ତାଙ୍କ "
 "ସମ୍ପର୍କିତ ନେଟ୍‌ୱାର୍କରେ ଏକ ୧୦୦ଜଣର ତାଲିକା ତିଆରି କରିବି :"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 "ମୁଁ ନିମ୍ନଲିଖିତ ଲୋକମାନଙ୍କୁ ପର୍ଯ୍ୟାୟ ଭିତ୍ତିରେ ପ୍ରାର୍ଥନା ଚକ୍ର ଉପକରଣ ବ୍ୟବହାର କରିବାକୁ ଆହ୍ୱାନ କରିବି: "
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "ମୁଁ [ଦିନରେ, ସପ୍ତାହରେ, ମାସରେ] ଥରେ ଚକ୍ର ଉପକରଣ ବ୍ୟବହାର କରିବି | "
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -4402,13 +4433,13 @@ msgid ""
 msgstr ""
 "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ଏକ ନେତୃତ୍ୱ କକ୍ଷର ଅଂଶ ହେବାକୁ ଆମନ୍ତ୍ରଣ କରିବି ଯାହାର ମୁଁ ନେତୃତ୍ୱ କରିବି: "
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "ମୁଁ ନିମ୍ନ ଲିଖିତ ଲୋକମାନଙ୍କୁ ଯୁମେ ତାଲିମ୍ ପାଠ୍ୟକ୍ରମ ଦେଇ ଯିବାକୁ ପ୍ରତ୍ସାହିତ କରିବି :"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "ଅନ୍ୟ ପ୍ରତିଶୃତିଗୁଡ଼ିକ:"
@@ -6154,16 +6185,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "ଉପକରଣ"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "ପରିକଳ୍ପନା"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6436,13 +6471,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "ତିନି-ମାସ ଯୋଜନା"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "ଦାଖଲ କରନ୍ତୁ"
+msgid "Join a Hub"
+msgstr "ସମୁଦାୟ"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6596,6 +6631,10 @@ msgid "Zume Training System"
 msgstr "ଯୁମେ ପ୍ରଶିକ୍ଷଣ"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "ଦାଖଲ କରନ୍ତୁ"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "ନିଜେ ନିଜକୁ ପଚାରନ୍ତୁ"
 
@@ -6684,10 +6723,6 @@ msgstr "ଯୁମେ ପ୍ରଶିକ୍ଷଣ"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "ବିଏଲ୍‍ଇଏସ୍ଏସ୍‍ ପ୍ରାର୍ଥନା ଶୈଳୀ"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "ସମୁଦାୟ"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9454,9 +9489,6 @@ msgstr "ଯୁମେ ପ୍ରଶିକ୍ଷଣ"
 #~ msgstr ""
 #~ "ଆମେ ସନ୍ଦେହ କରୁ, ବିଶେଷ ରୁପେ ଯେଉଁ ସ୍ଥଳଗୁଡ଼ିକରେ ମଣ୍ଡଳୀ ରହିଆସିଅଛି, ଆମେ ଶିଷ୍ୟ ନିର୍ମାଣର ଆନ୍ଦୋଳନ "
 #~ "ଦେଖିବା ପୁର୍ବରୁ ଆମେ ଏକ ପ୍ରଶିକ୍ଷଣ ଆନ୍ଦଳୋନ ଆବଶ୍ୟକ କରୁ |"
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "ସରଳ ମଣ୍ଡଳୀ ପରିପୃକ୍ତ‍ତା"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(୨ ସରଳ ମଣ୍ଡଳୀ &#xF7; ଜନସଂଖ୍ୟା)"

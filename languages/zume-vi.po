@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/zume-"
@@ -628,7 +628,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -636,7 +636,7 @@ msgstr ""
 msgid "Close"
 msgstr "Đóng"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3832,7 +3832,7 @@ msgstr "Hoàn thành khóa học"
 msgid "Not Heard"
 msgstr "Đã nghe"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3840,7 +3840,7 @@ msgstr ""
 msgid "Logout"
 msgstr "Đăng xuất"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4362,7 +4362,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "Có một vài lỗi trong đơn của bạn."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Đào tạo"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Cô đọng Hội thánh đơn giản"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4371,12 +4402,12 @@ msgstr ""
 "Tôi sẽ chia sẻ Câu chuyện của tôi [Làm chứng] và Câu chuyện của Chúa [Phúc "
 "âm] với những cá nhân sau:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Tôi sẽ mời những người sau để bắt đầu Nhóm Trách nhiệm với tôi:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4384,11 +4415,11 @@ msgstr ""
 "Tôi sẽ thách thức những người dưới đây mở Nhóm Trách nhiệm cho riêng mình và "
 "huấn luyện họ cách thực hiện điều đó:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Tôi sẽ mời những người sau để bắt đầu Nhóm 3/3 với tôi:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4396,7 +4427,7 @@ msgstr ""
 "Tôi sẽ thách những người dưới đây mở Nhóm 3/3 của họ và huấn luyện họ cách "
 "thực hiện điều này:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4405,16 +4436,16 @@ msgstr ""
 "Tôi sẽ mời những người sau đây tham gia vào Nhóm Hy Vọng hay Khám phá 3/3 "
 "[Xem Phụ lục sách Hướng dẫn Zúme]"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Tôi sẽ mời những người sau tham gia Cầu nguyện Tuần hành với tôi:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Tôi sẽ Cầu nguyện Tuần hành một lần mỗi [… Ngày/… tuần/… tháng]"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4423,7 +4454,7 @@ msgstr ""
 "Tôi sẽ trang bị cho những người sau đây chia sẻ câu chuyện của họ và Câu "
 "chuyện của Chúa và lập Danh sách 100 người trong mạng lưới liên hệ của họ:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4431,11 +4462,11 @@ msgstr ""
 "Tôi sẽ thách thức những người dưới đây áp dụng công cụ Chu kỳ Cầu nguyện "
 "trên cơ sở định kỳ:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "Tôi sẽ áp dụng Chu kỳ Cầu nguyện một lần mỗi [… Ngày/… tuần/… tháng]"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4443,13 +4474,13 @@ msgstr ""
 "Tôi sẽ mời những người sau đây để tham gia vào nhóm Lãnh đạo Tế bào mà tôi "
 "dẫn dắt:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Tôi sẽ khích lệ những người dưới đây học khóa Huấn luyện Zúme này:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Những cam kết khác:"
@@ -6221,16 +6252,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "Các công cụ"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Các khái niệm"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6503,13 +6538,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "Kế hoạch 3 tháng"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "Gửi"
+msgid "Join a Hub"
+msgstr "Cộng đồng"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6662,6 +6697,10 @@ msgid "Zume Training System"
 msgstr "Huấn luyện Zume"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "Gửi"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "Tự hỏi chính mình"
 
@@ -6749,10 +6788,6 @@ msgstr "Huấn luyện Zume"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "Mẫu Cầu nguyện BLESS"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Cộng đồng"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9569,9 +9604,6 @@ msgstr "Huấn luyện Zume"
 #~ "Chúng tôi rất đắn đo, đặc biệt là ở nơi đã có Hội thánh, chúng tôi sẽ cần "
 #~ "có một phòng trào huấn luyện trước khi nhìn thấy một phong trào môn đồ "
 #~ "hóa."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Cô đọng Hội thánh đơn giản"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(2 Hội thánh đơn giản &#xF7; Dân số)"
