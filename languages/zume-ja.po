@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Japanese <https://translate.disciple.tools/projects/zume-"
@@ -621,7 +621,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -629,7 +629,7 @@ msgstr ""
 msgid "Close"
 msgstr "閉じる"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3786,7 +3786,7 @@ msgstr "コースを完了"
 msgid "Not Heard"
 msgstr "聞いた"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3794,7 +3794,7 @@ msgstr ""
 msgid "Logout"
 msgstr "ログアウト"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4316,19 +4316,50 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "フォームにエラーがあります。"
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "トレーニング"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "シンプルな教会の彩度"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr "私は、次の個人とマイ・ストーリー[証言]と神の物語[福音]を共有します："
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "私は私と一緒に責任グループを開始するには、次の人を招待します。"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4336,11 +4367,11 @@ msgstr ""
 "私は自分の責任グループを開始し、それを行うにはどのようにそれらを訓練するため"
 "に、次の人に挑戦します。"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "私は私と一緒に3/3グループを開始するには、次の人を招待します。"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4348,7 +4379,7 @@ msgstr ""
 "私は自分の3/3グループを開始し、それを行うにはどのようにそれらを訓練するため"
 "に、次の人に挑戦します。"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4357,16 +4388,16 @@ msgstr ""
 "私は3/3の希望や発見グループに参加するために、次の人を招待します[Zúmeガイド"
 "ブックの付録を参照してください]"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "私は私と一緒に祈りウォーキングに参加するために、次の人を招待します。"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "私はすべての[日/週/月]一度祈りのウォークます。"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4375,17 +4406,17 @@ msgstr ""
 "私は彼らの話と神の物語を共有し、彼らの関係のネットワークの人々の100のリストを"
 "作るために、以下の人々を装備します。"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "私は定期的に祈りサイクルツールを使用するには、次の人に挑戦します。"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "私はすべての[日/週/月]一度祈りサイクルツールを使用します。"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4393,13 +4424,13 @@ msgstr ""
 "私は私がつながることをリーダーシップセルの一部であることを、次の人を招待しま"
 "す。"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "私はこのZúmeトレーニングコースを通過するには、以下の人々を奨励します。"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "その他のコミットメント："
@@ -6162,16 +6193,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "ツール"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "コンセプト"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6444,13 +6479,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "3ヶ月プラン"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "参加する"
+msgid "Join a Hub"
+msgstr "コミュニティ"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6604,6 +6639,10 @@ msgid "Zume Training System"
 msgstr "Zumeトレーニング"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "参加する"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "自問してみてください"
 
@@ -6691,10 +6730,6 @@ msgstr "Zumeトレーニング"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "BLESS 祈りパターン"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "コミュニティ"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9494,9 +9529,6 @@ msgstr "Zumeトレーニング"
 #~ msgstr ""
 #~ "私たちは、弟子を作る動きを見る前に、我々はトレーニングの動きが必要になりま"
 #~ "す、特に教会がされている場所では、容疑者。"
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "シンプルな教会の彩度"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "（2つのシンプル教会＆＃XF7、人口）"

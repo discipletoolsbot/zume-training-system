@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-23 19:50+0000\n"
 "Last-Translator: Zlatko Celik <zlatko.celik@gmail.com>\n"
 "Language-Team: Croatian <https://translate.disciple.tools/projects/zume-"
@@ -606,7 +606,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr "3 kruga"
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -614,7 +614,7 @@ msgstr "3 kruga"
 msgid "Close"
 msgstr "Zatvori"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr "Bez rezultata"
 
@@ -3847,7 +3847,7 @@ msgstr "Nedovršeno"
 msgid "Not Heard"
 msgstr "Nepreslušano"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr "Sve"
 
@@ -3855,7 +3855,7 @@ msgstr "Sve"
 msgid "Logout"
 msgstr "Odjava"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr "Filter"
 
@@ -4368,7 +4368,38 @@ msgstr "Kod nije prepoznat. Provjerite broj."
 msgid "You are not authorized to access this page"
 msgstr "Niste ovlašteni za pristup ovoj stranici"
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "U vašem obrascu postoje neke pogreške."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Treninzi"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Zasićenost Jednostavnim crkvama"
+
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
@@ -4376,12 +4407,12 @@ msgstr ""
 "Podijelit ću Svoju priču [svjedočanstvo] i Božju priču [Evanđelje] sa "
 "sljedećim osobama:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Pozvat ću sljedeće ljude da sa mnom osnuju Grupu odgovornosti:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4389,34 +4420,34 @@ msgstr ""
 "Izazvat ću sljedeće ljude da osnuju vlastite grupe odgovornosti i obučiti ih "
 "za to:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Pozvat ću sljedeće ljude da sa mnom započnu 3/3 grupu:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
 "Izazvat ću sljedeće ljude da osnuju vlastite 3/3 grupe i obučiti ih za to:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr "Pozvat ću sljedeće ljude da sudjeluju u grupi 3/3 Nada ili Otkrivanje:"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Pozvat ću sljedeće ljude da sudjeluju u Molitvenoj šetnji sa mnom:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 "Prakticirat ću Molitvenu šetnju jednom svakih [dana / tjedana / mjeseci]."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
@@ -4424,30 +4455,30 @@ msgstr ""
 "Obučit ću sljedeće ljude da podijele Svoju priču i Božju priču i napraviti "
 "Listu od 100 ljudi:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "Izazvat ću sljedeće ljude da povremeno koriste alat Molitveni krug:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Koristit ću alat Molitveni krug jednom svakih [dana / tjedana / mjeseci]."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "Pozvat ću sljedeće ljude da budu dio Voditeljske grupe koju ću voditi:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Potaknut ću sljedeće ljude da prođu Zúme tečaj:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 msgid "Other commitments:"
 msgstr "Ostale obveze:"
 
@@ -6194,17 +6225,21 @@ msgstr "Kopirajte ovu vezu i pošaljite je svojim prijateljima."
 msgid "Copied"
 msgstr "Kopirano"
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "Alati"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Koncepti"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
 msgstr "Sortiraj"
+
+#: site/pages/share.php:126
+msgid "Items"
+msgstr ""
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6474,12 +6509,14 @@ msgstr "Dovršite svoj Tromjesečni plan koji će vam pomoći da rastete"
 msgid "3 Month Plan Completed"
 msgstr "Tromjesečni plan dovršen"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
-msgid "Submit Report"
-msgstr "Pošaljite izvješće"
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#, fuzzy
+msgid "Join a Hub"
+msgstr "Zajednica"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+#, fuzzy
+msgid "Join a hub to help you grow"
 msgstr "Pošaljite izvješće koje će vam pomoći u rastu"
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6617,6 +6654,9 @@ msgstr "https://github.com/ZumeProject/zume-training-system"
 msgid "Zume Training System"
 msgstr "Zume sustav treninga"
 
+#~ msgid "Submit Report"
+#~ msgstr "Pošaljite izvješće"
+
 #~ msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
 #~ msgstr "1. Samoprocjena uz Čuo, Poslušao, Podijelio, Trenirao."
 
@@ -6721,10 +6761,6 @@ msgstr "Zume sustav treninga"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "Obrazac molitve BLESS"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Zajednica"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9507,9 +9543,6 @@ msgstr "Zume sustav treninga"
 #~ msgstr ""
 #~ "Sumnjamo da će nam, posebno na mjestima gdje je bila crkva, trebati "
 #~ "pokret za vježbanje prije nego što vidimo učenika kako kreće."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Zasićenost Jednostavnim crkvama"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(2 Jednostavne crkve & # xF7; Stanovništvo)"

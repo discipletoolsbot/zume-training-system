@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:06+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Swahili <https://translate.disciple.tools/projects/zume-"
@@ -624,7 +624,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -632,7 +632,7 @@ msgstr ""
 msgid "Close"
 msgstr "Funga"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3816,7 +3816,7 @@ msgstr "Kozi Imekamilika"
 msgid "Not Heard"
 msgstr "Sikika"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3824,7 +3824,7 @@ msgstr ""
 msgid "Logout"
 msgstr "Ondoka"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4346,7 +4346,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "Kuna baadhi ya hitilafu katika fomu yako."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Mafunzo"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Usafirishaji rahisi wa Kanisa"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4355,12 +4386,12 @@ msgstr ""
 "Nitashirikisha hadithi yangu au ushuhuda wangu na hadithi ya Mungu injili na "
 "wafuatao:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Nitaalika watu wafuatao katika kundi kuanza nami kazi ya uwazi:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4368,11 +4399,11 @@ msgstr ""
 "Nitatoa changamoto kwa watu kuanza uhasibu wa kundi na kuwafundisha jinsi ya "
 "kufanya:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Alika wafuatao kuanza kundi la thulithi tatu nami:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4380,7 +4411,7 @@ msgstr ""
 "Nitatoa changamoto kwa watu wafuatao kuanza kundi la thuluthi tatu na "
 "kuwafundisha jinsi ya kufanya:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4389,16 +4420,16 @@ msgstr ""
 "Nitaalika watu wafuatao kushiriki katika  tumani la thuluthi tatu au Gundua "
 "kundi(angalia mwongozo wa kitabu cha Zume hapo chini)"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "NIttalika watu wafuatao kuhudhuria nami katika maombi ya kutembea:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Nitafanya maombi ya kutembea kila (siku/wiki/miezi)."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4407,7 +4438,7 @@ msgstr ""
 "Nitawapa watu wafuatao vifaa kushiriki katika hadithi ya Mungu na "
 "kutengeneza orodha ya watu 100 katika uhusiano wa mtandao wao:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4415,25 +4446,25 @@ msgstr ""
 "Nitawapa changamoto watu wafuatao kutumia kifaa cha maombi ya mzunguko kwa  "
 "msingi wa mara kwa mara:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Nitatumia kifaa cha maombi ya mzunguko mara moja kila (siku/wiki/miezi)."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "Nitaalika watu wafuatao kuwa sehemu ya uongozi seli ambayo nitaongoza:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Nitahimiza watu wafuatao  kupitia kosi ya mafundisho ya Zume:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Kujitolea kwingine:"
@@ -6198,16 +6229,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "Vifaa"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Dhana"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6480,13 +6515,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "Mpango wa miezi mitatu"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "Tuma"
+msgid "Join a Hub"
+msgstr "Jamii"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6641,6 +6676,10 @@ msgid "Zume Training System"
 msgstr "Mafundisho ya Zúme"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "Tuma"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "Jiulize"
 
@@ -6729,10 +6768,6 @@ msgstr "Mafundisho ya Zúme"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "Mfano wa Maombi ya BURE"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Jamii"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9564,9 +9599,6 @@ msgstr "Mafundisho ya Zúme"
 #~ msgstr ""
 #~ "Tunashuku, haswa katika sehemu ambazo kanisa limekuwa, tutahitaji "
 #~ "harakati za mafunzo kabla ya kuona harakati za kufanya wanafunzi."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Usafirishaji rahisi wa Kanisa"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(Makanisa 2 Rahisi & # xF7; Idadi ya watu)"

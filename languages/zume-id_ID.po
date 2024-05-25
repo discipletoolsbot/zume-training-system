@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://translate.disciple.tools/projects/zume-"
@@ -634,7 +634,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -642,7 +642,7 @@ msgstr ""
 msgid "Close"
 msgstr "Tutup"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3880,7 +3880,7 @@ msgstr "Kursus Selesai"
 msgid "Not Heard"
 msgstr "Mendengar"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3888,7 +3888,7 @@ msgstr ""
 msgid "Logout"
 msgstr "Keluar"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4410,7 +4410,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "Terdapat beberapa kesalahan dalam formulir Anda."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Pelatihan"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Kepenuhan Jemaah Sederhana"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4419,14 +4450,14 @@ msgstr ""
 "Saya akan berbagi Kisah Saya [Kesaksian] dan Kisah Allah [Injil] dengan "
 "orang-orang sebagai berikut:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 "Saya akan mengundang orang-orang berikut untuk memulai sebuah Kelempok Yang "
 "Saling Bertanggung Jawab dengan saya:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4435,12 +4466,12 @@ msgstr ""
 "Saling Bertanggung Jawab mereka sendiri dan melatih mereka bagaimana cara "
 "melakukannya:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 "Saya akan mengundang orang berikut untuk memulai Kelompok 3/3 dengan saya:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4448,7 +4479,7 @@ msgstr ""
 "Aku akan menantang orang-orang berikut untuk memulai Kelompok-Kelompok 3/3 "
 "mereka sendiri dan melatih mereka bagaimana caranya untuk melakukannya:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4458,18 +4489,18 @@ msgstr ""
 "Kelompok 3/3 Harapan atau Temukan [lihat bagian Tambahan dari Buku Panduan "
 "Zúme]"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "Saya akan mengundang orang berikut ini untuk berpartisipasi dalam doa "
 "keliling dengan saya:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Saya akan melakukan Doa Keliling sekali setiap [hari/minggu/bulan]."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4479,7 +4510,7 @@ msgstr ""
 "mereka dan Kisah Allah dan membuat Daftar 100 dari orang-orang di dalam "
 "jaringan relasional mereka:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4487,12 +4518,12 @@ msgstr ""
 "Saya akan menantang orang-orang berikut untuk menggunakan alat Siklus Doa "
 "secara berkala:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Saya akan menggunakan alat Siklus Doa sekali setiap [hari/minggu/bulan]."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4500,7 +4531,7 @@ msgstr ""
 "Saya akan mengundang orang-orang berikut ini untuk menjadi bagian dari Sel "
 "Kepemimpinan yang saya akan pimpin:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
@@ -4508,7 +4539,7 @@ msgstr ""
 "Saya akan mendorong orang-orang berikut ini untuk melakukan kursus Pelatihan "
 "Zúme ini:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Komitmen lainnya:"
@@ -6291,16 +6322,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "Alat"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Konsep-konsep"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6573,13 +6608,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "Rencana Tiga-Bulanan"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "Kirimkan"
+msgid "Join a Hub"
+msgstr "Komunitas"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6735,6 +6770,10 @@ msgid "Zume Training System"
 msgstr "Pelatihan Zume"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "Kirimkan"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "Tanyakan Dirimu Sendiri"
 
@@ -6822,10 +6861,6 @@ msgstr "Pelatihan Zume"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "Pola Doa BLESS"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Komunitas"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9714,9 +9749,6 @@ msgstr "Pelatihan Zume"
 #~ "Kita menduga, khususnya di tempat dimana jemaah berada, kita akan "
 #~ "membutuhkan gerakan pelatihan sebelum kita melihat gerakan membuat "
 #~ "pengikut."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Kepenuhan Jemaah Sederhana"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(2 Jemaah Sederhana; Populasi)"

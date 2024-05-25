@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:07+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Latvian <https://translate.disciple.tools/projects/zume-"
@@ -629,7 +629,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -637,7 +637,7 @@ msgstr ""
 msgid "Close"
 msgstr "Aizvērt"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3834,7 +3834,7 @@ msgstr "Kurss pabeigts"
 msgid "Not Heard"
 msgstr "Dzirdēja"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3842,7 +3842,7 @@ msgstr ""
 msgid "Logout"
 msgstr "Izrakstīties"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4364,7 +4364,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "Jūsu formā ir dažas kļūdas."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Treniņapmācība"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Vienkāršas draudzes piesātinājums"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4373,12 +4404,12 @@ msgstr ""
 "Es dalīšos savā stāstā [liecībā] un Dieva stāstā [evaņģēlijā] ar šādiem "
 "cilvēkiem:"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Es uzaicināšu šādas personas kopā ar mani izveidot atbildības grupu:"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4386,11 +4417,11 @@ msgstr ""
 "Es izaicināšu sekojošus cilvēkus izveidot savas atbildības grupas un apmācīt "
 "viņus, kā to paveikt:"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Es uzaicināšu sekojošus cilvēkus izveidot ar mani 3/3 grupu:"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4398,7 +4429,7 @@ msgstr ""
 "Es izaicināšu sekojošus cilvēkus izveidot savas 3/3 grupas un apmācīšu "
 "viņus, kā to paveikt:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4407,16 +4438,16 @@ msgstr ""
 "Es uzaicināšu sekojošus cilvēkus piedalīties 3/3 cerība vai atklājums "
 "grupā[skatīt Zúme rokasgrāmatas papildinājumu]"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Es uzaicināšu sekojošus cilvēkus piedalīties ar mani Lūgšanu pastaigā:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Es došos lūgšanu pastaigā reizi [dienās / nedēļās / mēnešos]."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4425,18 +4456,18 @@ msgstr ""
 "Es apmācīšu sekojošus cilvēkus, lai viņi varētu dalīties savā stāstā un "
 "Dieva stāstā un izveidotu 100 cilvēku sarakstu no viņu attiecību tīkla:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 "Es izaicināšu sekojošus cilvēkus periodiski izmantot lūgšanu cikla rīku:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "Es izmantošu lūgšanu cikla rīku reizi [dienās / nedēļās / mēnešos]."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4444,13 +4475,13 @@ msgstr ""
 "Es uzaicināšu sekojošus cilvēkus būt par daļu no vadības šūnas, kuru es "
 "vadīšu:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Es iedrošināšu sekojošus cilvēkus iziet šo Zúme apmācības kursu:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Citas apņemšanās:"
@@ -6217,16 +6248,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "RĪKI"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Koncepti"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6499,13 +6534,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "Trīs mēnešu plāns"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "Iesniegt"
+msgid "Join a Hub"
+msgstr "Kopiena"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6658,6 +6693,10 @@ msgid "Zume Training System"
 msgstr "Zume treniņapmācība"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "Iesniegt"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "Pajautājiet sev"
 
@@ -6747,10 +6786,6 @@ msgstr "Zume treniņapmācība"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "BLESS lūgšanas paraugs"
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Kopiena"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9567,9 +9602,6 @@ msgstr "Zume treniņapmācība"
 #~ msgstr ""
 #~ "Mums ir aizdomas, it īpaši vietās, kur ir bijusi draudze, mums vajadzēs "
 #~ "apmācības kustību, pirms mēs redzēsim mācekļu veidošanas kustību."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Vienkāršas draudzes piesātinājums"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(2 Vienkāršas draudzes &#xF7; Iedzīvotāju skaits)"

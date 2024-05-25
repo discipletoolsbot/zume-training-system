@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"POT-Creation-Date: 2024-05-25 15:03+0700\n"
 "PO-Revision-Date: 2024-05-21 22:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://translate.disciple.tools/projects/zume-"
@@ -636,7 +636,7 @@ msgstr ""
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6991 site/course/presenter.php:196
+#: globals.php:6993 site/course/presenter.php:196
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
@@ -644,7 +644,7 @@ msgstr ""
 msgid "Close"
 msgstr "Fermer"
 
-#: globals.php:7193
+#: globals.php:7195
 msgid "No Results"
 msgstr ""
 
@@ -3906,7 +3906,7 @@ msgstr "Cours terminé"
 msgid "Not Heard"
 msgstr "Entendu"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:122
+#: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
 msgstr ""
 
@@ -3914,7 +3914,7 @@ msgstr ""
 msgid "Logout"
 msgstr "Se déconnecter"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:125
+#: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
 msgstr ""
 
@@ -4436,7 +4436,38 @@ msgstr ""
 msgid "You are not authorized to access this page"
 msgstr ""
 
+#: site/dashboard/dashboard.php:283
+#, fuzzy
+msgid "There has been an error with your request"
+msgstr "Il y a quelques erreurs dans votre formulaire."
+
+#: site/dashboard/dashboard.php:284
+msgid ""
+"Thank you for your coaching request. Our team will be working to connect you "
+"with an available coach in your language and region."
+msgstr ""
+
+#: site/dashboard/dashboard.php:285
+msgid ""
+"Please watch for communication from your coach within the communication "
+"preference you indicated."
+msgstr ""
+
+#: site/dashboard/dashboard.php:286
+msgid "100 Hour Map"
+msgstr ""
+
+#: site/dashboard/dashboard.php:287
+#, fuzzy
+msgid "Training vision map"
+msgstr "Formation"
+
 #: site/dashboard/dashboard.php:288
+#, fuzzy
+msgid "Simple church planting map"
+msgstr "Saturer le monde d’églises organiques"
+
+#: site/dashboard/dashboard.php:294
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4445,14 +4476,14 @@ msgstr ""
 "Je partagerai Mon histoire [Témoignage] et l'histoire de Dieu [l'Évangile] "
 "avec les personnes suivantes :"
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:295
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 "J'inviterai les personnes suivantes à commencer un groupe d'encouragement "
 "mutuel avec moi :"
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4460,12 +4491,12 @@ msgstr ""
 "Je mettrai au défi les personnes suivantes de commencer leurs propres "
 "groupes de redevabilité et je les formerai à la façon de le faire :"
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:297
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 "J'inviterai les personnes suivantes à commencer un groupe 3/3 avec moi :"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4473,7 +4504,7 @@ msgstr ""
 "Je mettrai au défi les personnes suivantes de commencer leurs propres "
 "groupes 3/3 et je les formerai à la façon de le faire:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4482,18 +4513,18 @@ msgstr ""
 "J'inviterai les personnes suivantes à participer à un groupe 3/3 parcours "
 "Espoir ou de Découverte [voir appendice du guide Zúme]"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "J'inviterai les personnes suivantes à participer à des marches de prière "
 "avec moi :"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:301
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Je ferai une marche de prière une fois par [jour / semaine / mois]."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:302
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4503,7 +4534,7 @@ msgstr ""
 "de Dieu et à faire une liste de 100, des personnes dans leur réseau "
 "relationnel :"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4511,12 +4542,12 @@ msgstr ""
 "Je mettrai au défi les personnes suivantes d'utiliser l'outil de la roue de "
 "prière sur une base périodique:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "J'utiliserai l'outil de roue de prière une fois par [jour / semaine / mois]."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
@@ -4525,14 +4556,14 @@ msgstr ""
 "J'inviterai les personnes suivantes à faire partie d'une cellule de "
 "leadership que je dirigerai :"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:306
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 "J'encouragerai les personnes suivantes à suivre ce cours de formation Zúme :"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Autres engagements :"
@@ -6325,16 +6356,20 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: site/pages/share.php:123
+#: site/pages/share.php:122
 msgid "Tools"
 msgstr "Outils"
 
-#: site/pages/share.php:124
+#: site/pages/share.php:123
 msgid "Concepts"
 msgstr "Concepts"
 
-#: site/pages/share.php:126
+#: site/pages/share.php:125
 msgid "Sort"
+msgstr ""
+
+#: site/pages/share.php:126
+msgid "Items"
 msgstr ""
 
 #: site/pages/share.php:134
@@ -6607,13 +6642,13 @@ msgstr ""
 msgid "3 Month Plan Completed"
 msgstr "Plan de 3 mois"
 
-#: utilities/apis/cta-api.php:351 utilities/apis/cta-api.php:353
+#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 #, fuzzy
-msgid "Submit Report"
-msgstr "Soumettre"
+msgid "Join a Hub"
+msgstr "Communauté"
 
-#: utilities/apis/cta-api.php:352
-msgid "Submit a report to help you grow"
+#: utilities/apis/cta-api.php:368
+msgid "Join a hub to help you grow"
 msgstr ""
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
@@ -6769,6 +6804,10 @@ msgid "Zume Training System"
 msgstr "La formation Zúme"
 
 #, fuzzy
+#~ msgid "Submit Report"
+#~ msgstr "Soumettre"
+
+#, fuzzy
 #~ msgid "Ask yourself, have you"
 #~ msgstr "Se demander"
 
@@ -6857,10 +6896,6 @@ msgstr "La formation Zúme"
 #, fuzzy
 #~ msgid "The BLESS Prayer"
 #~ msgstr "Le modèle de prière P.R.I.E.R."
-
-#, fuzzy
-#~ msgid "Join a Community"
-#~ msgstr "Communauté"
 
 #, fuzzy
 #~ msgid "Join Community"
@@ -9812,9 +9847,6 @@ msgstr "La formation Zúme"
 #~ msgstr ""
 #~ "Dans nos pays francophones, il faudra un réel mouvement de formation "
 #~ "avant de voir émerger un mouvement de disciples."
-
-#~ msgid "Simple Church Saturation"
-#~ msgstr "Saturer le monde d’églises organiques"
 
 #~ msgid "(2 Simple Churches &#xF7; Population)"
 #~ msgstr "(2 églises organiques ÷ Population)"
