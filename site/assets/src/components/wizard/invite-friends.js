@@ -84,7 +84,7 @@ export class InviteFriends extends LitElement {
                 continue
             }
 
-            if (DateTime.fromSeconds(date.timestamp) < now) {
+            if (DateTime.fromSeconds(date.timestamp) > now) {
                 return DateTime.fromSeconds(date.timestamp).toISODate()
             }
         }
@@ -114,7 +114,7 @@ export class InviteFriends extends LitElement {
         const inviteText = `${note}
 
 ${this.t.location}: ${location}
-${this.t.time}: ${nextSession !== '' ? DateTime.fromISO(nextSession).toFormat('DDDD') : ''}${timeOfDayNote}${timezoneNote}
+${this.t.time}: ${nextSession !== '' ? DateTime.fromISO(nextSession).toFormat('DDDD') + timeOfDayNote + timezoneNote : ''}
 
 ${this.t.join_url}
 ${this.url}

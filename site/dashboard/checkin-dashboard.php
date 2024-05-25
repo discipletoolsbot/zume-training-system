@@ -167,7 +167,7 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
                             <h2 class="h3 brand-light"><?php echo esc_html__( 'Course Progress:', 'zume' ) ?></h2>
                             <p class="bold f-5"><?php echo esc_html( sprintf( __( '%d%%', 'zume' ), $percentage_progress ) ) ?></p>
                         </div>
-                        <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                        <a href="<?php echo esc_url( zume_dashboard_page_url( 'my-progress' ) ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
                     </div>
 
                 <?php endif; ?>

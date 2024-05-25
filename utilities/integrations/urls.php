@@ -66,11 +66,15 @@ function zume_login_url( $type = 'login', $redirect_url = false ) {
 
 function zume_getting_started_url( $type ) {
     $params = [ 'flow' => 'start' ];
-    return zume_make_a_plan_wizard_url( $type, $params );
+    return zume_start_wizard_url( $type, $params );
 }
-function zume_make_a_plan_wizard_url( $type = 'login', $params = [] ) {
+function zume_start_wizard_url( $type = 'register', $params = [] ) {
     $redirect_url = zume_wizard_url( 'start', $params );
     return zume_login_url( $type, $redirect_url );
+}
+function zume_make_a_group_wizard_url() {
+    $redirect_url = zume_wizard_url( 'make_a_group' );
+    return zume_login_url( 'register', $redirect_url );
 }
 function zume_set_profile_wizard() {
     $redirect_url = zume_wizard_url( 'profile' );
@@ -143,6 +147,9 @@ function zume_wizard_url( $type = 'start', $params = [] ) {
             break;
         case 'join_the_community':
             $url = "$wizard_root/join-the-community";
+            break;
+        case 'make_a_group':
+            $url = "$wizard_root/make-a-group";
             break;
         default:
             $url = '';

@@ -341,6 +341,10 @@ export class Wizard extends LitElement {
         this._onFinish()
     }
     _onQuit() {
+        if (this._isLastStep()) {
+            this._onFinish()
+            return
+        }
         this._onFinish(true)
     }
     _handleFinish() {
@@ -383,12 +387,34 @@ export class Wizard extends LitElement {
                     window.location.href = checkinDashboardUrl.href
                     return
                 }
+            } else if ( [
+                Wizards.makeAGroup,
+                Wizards.makeFirstGroup,
+                Wizards.makeMoreGroups,
+                Wizards.joinATraining,
+                Wizards.joinFriendsPlan,
+                Wizards.inviteFriends,
+            ].includes(this.type) ) {
+                /* Get the join code for the group just joined and redirect to that page */
+                const url = new URL(location.href)
+                const joinKey = url.searchParams.get('joinKey')
+                if (joinKey) {
+                    const dashboardUrl = new URL(jsObject.training_dashboard_url + '/' + joinKey)
+                    window.location.href = dashboardUrl.href
+                    return
+                }
+            } else if (this.type === Wizards.getACoach) {
+                window.location.href = jsObject.coaching_dashboard_url
+                return
             } else {
                 url.searchParams.set( 'completed', this.type )
             }
         }
 
         window.location.href = url.href
+    }
+    _isLastStep() {
+        return this.stepIndex === this.steps.length - 1
     }
 
     _gotoStep(index, pushState = true, queryParams = {}) {

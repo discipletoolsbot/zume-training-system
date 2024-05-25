@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { zumeRequest } from '../../js/scripts';
 
 export class JoinTraining extends LitElement {
 
@@ -57,15 +58,15 @@ export class JoinTraining extends LitElement {
         this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
         this.message = this.t.please_wait;
         this.code = code;
-        makeRequest('POST', 'connect/public-plan', { code: code }, 'zume_system/v1')
+        zumeRequest.post('connect/public-plan', { code })
             .then((data) => {
-                console.log(data);
-
                 this.message = this.t.success.replace('%s', data.name);
 
-                this._sendDoneStepEvent();
+                const url = new URL(location.href)
+                url.searchParams.set('joinKey', code)
+                window.history.pushState(null, null, url.href)
             })
-            .fail(({ responseJSON: error }) => {
+            .catch((error) => {
                 console.log(error);
                 this.message = '';
                 if (error.code === 'bad_plan_code') {
@@ -73,10 +74,8 @@ export class JoinTraining extends LitElement {
                 } else {
                     this.setErrorMessage(this.t.error);
                 }
-
-                this._sendDoneStepEvent();
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false;
                 this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             });
@@ -91,10 +90,6 @@ export class JoinTraining extends LitElement {
 
     setErrorMessage( message ) {
         this.errorMessage = message
-
-        setTimeout(() => {
-            this.errorMessage = ''
-        }, 3000)
     }
 
     _handleChosenTraining(event) {

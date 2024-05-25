@@ -176,7 +176,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     </div>
                 </div>
             </div>
-            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
         </div>
 
         <?php // @todo unfinished development below?? ?>
@@ -242,11 +242,11 @@ class Zume_Training_Home extends Zume_Magic_Page
 
             <?php if ( is_user_logged_in() ): ?>
 
-                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
+                <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large uppercase light mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
 
             <?php else : ?>
 
-                <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large uppercase light"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
 
             <?php endif; ?>
 
@@ -349,7 +349,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <h3><?php echo esc_html__( 'Change the World.', 'zume' ) ?></h3>
                 </div>
             </div>
-            <a href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>" class="btn large uppercase light fit-content mx-auto"><?php echo esc_html__( 'Get started', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large uppercase light fit-content mx-auto"><?php echo esc_html__( 'Get started', 'zume' ) ?></a>
         </div>
 
         <?php

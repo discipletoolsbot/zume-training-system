@@ -13,7 +13,7 @@
 
                 <?php else : ?>
 
-                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_make_a_plan_wizard_url() ) ?>"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                    <a role="listitem" class="link-light" href="<?php echo esc_url( zume_start_wizard_url() ) ?>"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_how_to_follow_jesus() ) ?>"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></a>
                     <a role="listitem" class="link-light" href="<?php echo esc_url( zume_get_a_coach_url() ) ?>"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
 

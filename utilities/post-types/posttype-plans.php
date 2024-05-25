@@ -604,7 +604,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     jQuery('#install_intensive_sessions').click(function(){
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
-                            'set_type': 'set_c'
+                            'set_type': 'set_c',
                             'set_c_01': date + (0 * 604800 ),
                             'set_c_02': date + (1 * 604800 ),
                             'set_c_03': date + (2 * 604800 ),
@@ -616,7 +616,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                     jQuery('#install_10_sessions').click(function(){
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
-                            'set_type': 'set_a'
+                            'set_type': 'set_a',
                             'set_a_01': date + (0 * 604800 ),
                             'set_a_02': date + (1 * 604800 ),
                             'set_a_03': date + (2 * 604800 ),
@@ -631,10 +631,9 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                         window.API.update_post('zume_plans', post_id, list )
                     });
                     jQuery('#install_20_sessions').click(function(){
-                        console.log('install 20 sessions');
                         let date = Math.floor(new Date(start_date.val()).getTime() / 1000)
                         let list = {
-                            'set_type': 'set_b'
+                            'set_type': 'set_b',
                             'set_b_01': date + ( 0 * 604800 ),
                             'set_b_02': date + ( 1 * 604800 ),
                             'set_b_03': date + ( 2 * 604800 ),

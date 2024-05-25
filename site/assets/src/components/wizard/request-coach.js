@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { Steps } from './wizard-constants';
 import { WizardStateManager } from './wizard-state-manager';
+import { zumeRequest } from '../../js/scripts';
 
 export class RequestCoach extends LitElement {
     static get properties() {
@@ -83,19 +84,15 @@ export class RequestCoach extends LitElement {
                         this.setErrorMessage(this.t.error_connecting)
                     }
                 }
-
-                this._handleFinish()
             }).bind(this)
             const onFail = (() => {
                 this.message = this.t.connect_fail
                 this.setErrorMessage(this.t.error_connecting)
-
-                this._handleFinish()
             }).bind(this)
-            makeRequest('POST', 'get_a_coach', { data }, 'zume_system/v1/' )
-                .done(onCoachRequested)
-                .fail(onFail)
-                .always(() => {
+            zumeRequest.post('get_a_coach', { data } )
+                .then(onCoachRequested)
+                .catch(onFail)
+                .finally(() => {
                     this.loading = false
                     this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
                 })
@@ -104,10 +101,6 @@ export class RequestCoach extends LitElement {
 
     setErrorMessage( message ) {
         this.errorMessage = message
-
-        setTimeout(() => {
-            this.errorMessage = ''
-        }, 3000)
     }
 
     render() {

@@ -91,7 +91,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.refetchState = this.refetchState.bind(this)
         this.refetchHost = this.refetchHost.bind(this)
         this.getCtas = this.getCtas.bind(this)
-        this.getTrainingGroups = this.getTrainingGroups.bind(this)
+        this.redirectToPage = this.redirectToPage.bind(this)
         this.showCelebrationModal = this.showCelebrationModal.bind(this)
     }
 
@@ -103,7 +103,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         window.addEventListener('open-wizard', this.updateWizardType)
         window.addEventListener('wizard-finished', this.closeWizard)
         window.addEventListener('wizard-finished', this.getCtas)
-        window.addEventListener('wizard-finished', this.getTrainingGroups)
+        window.addEventListener('wizard-finished', this.redirectToPage)
         window.addEventListener('open-3-month-plan', this.open3MonthPlan)
         window.addEventListener('user-state:change', this.refetchState)
         window.addEventListener('user-state:change', this.getCtas)
@@ -123,7 +123,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         window.removeEventListener('open-wizard', this.updateWizardType)
         window.removeEventListener('wizard-finished', this.closeWizard)
         window.removeEventListener('wizard-finished', this.getCtas)
-        window.removeEventListener('wizard-finished', this.getTrainingGroups)
+        window.removeEventListener('wizard-finished', this.redirectToPage)
         window.removeEventListener('open-3-month-plan', this.open3MonthPlan)
         window.removeEventListener('user-state:change', this.refetchState)
         window.removeEventListener('user-state:change', this.getCtas)
@@ -460,30 +460,33 @@ export class DashBoard extends navigator(router(LitElement)) {
         jQuery(document).foundation()
         jQuery('#training-menu').foundation('toggle', jQuery('#training-groups-menu'))
     }
-    getTrainingGroups(event) {
+    redirectToPage(event) {
         const { type } = event.detail
 
-        if ( ![ Wizards.makeAGroup, Wizards.makeFirstGroup, Wizards.joinATraining, Wizards.joinFriendsPlan ].includes(type) ) {
-            return
+        if (type === Wizards.getACoach) {
+            this.navigate(this.makeHref('my-coach'))
         }
 
-        makeRequest( 'GET', 'plans', {}, 'zume_system/v1' )
-            .then((results) => {
-                const oldTrainingGroups = { ...this.trainingGroups }
-                const oldTrainingGroupKeys = Object.keys(oldTrainingGroups)
+        if ( [ Wizards.makeAGroup, Wizards.makeFirstGroup, Wizards.joinATraining, Wizards.joinFriendsPlan ].includes(type) ) {
+            makeRequest( 'GET', 'plans', {}, 'zume_system/v1' )
+                .then((results) => {
+                    const oldTrainingGroups = { ...this.trainingGroups }
+                    const oldTrainingGroupKeys = Object.keys(oldTrainingGroups)
 
-                this.trainingGroups = results
+                    this.trainingGroups = results
 
-                const newTrainingGroupIds = Object.keys(this.trainingGroups).filter((key) => !oldTrainingGroupKeys.includes(key))
+                    const newTrainingGroupIds = Object.keys(this.trainingGroups).filter((key) => !oldTrainingGroupKeys.includes(key))
 
-                if ( newTrainingGroupIds.length === 1 ) {
-                    const newTrainingGroup = this.trainingGroups[newTrainingGroupIds[0]]
+                    if ( newTrainingGroupIds.length === 1 ) {
+                        const newTrainingGroup = this.trainingGroups[newTrainingGroupIds[0]]
 
-                    const url = this.makeTrainingHref(newTrainingGroup.join_key)
+                        const url = this.makeTrainingHref(newTrainingGroup.join_key)
 
-                    this.navigate(url)
-                }
-            })
+                        this.navigate(url)
+                    }
+                })
+        }
+
     }
 
     render() {
