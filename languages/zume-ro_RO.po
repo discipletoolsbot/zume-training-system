@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-21 12:25-0600\n"
-"PO-Revision-Date: 2024-05-23 14:21+0000\n"
+"POT-Creation-Date: 2024-05-23 13:49-0600\n"
+"PO-Revision-Date: 2024-05-24 08:44+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Romanian <https://translate.disciple.tools/projects/"
@@ -55,7 +55,7 @@ msgstr "Grupuri"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
-msgstr "Traininguri"
+msgstr "Antrenamente"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
@@ -79,8 +79,8 @@ msgstr "Harta globala"
 
 #: globals.php:1907 globals.php:1909 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
-#: site/course/course-content.php:354 site/course/course-content.php:3163
-#: site/course/course-content.php:3181
+#: site/course/course-content.php:354 site/course/course-content.php:3160
+#: site/course/course-content.php:3178
 msgid "God Uses Ordinary People"
 msgstr "Dumnezeu Folosește Oameni Obișnuiți"
 
@@ -92,8 +92,8 @@ msgstr ""
 "Veți vedea cum Dumnezeu folosește oamenii obișnuiți care fac lucruri simple "
 "pentru a avea un impact mare."
 
-#: globals.php:1918 site/course/course-content.php:3164
-#: site/course/course-content.php:3182
+#: globals.php:1918 site/course/course-content.php:3161
+#: site/course/course-content.php:3179
 msgid "Simple Definition of Disciple and Church"
 msgstr "Definiție simplă a Ucenicului și a Bisericii"
 
@@ -110,8 +110,8 @@ msgstr ""
 msgid "Disciples and the Church"
 msgstr "Ucenicii și Biserica"
 
-#: globals.php:1929 site/course/course-content.php:3165
-#: site/course/course-content.php:3183
+#: globals.php:1929 site/course/course-content.php:3162
+#: site/course/course-content.php:3180
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Respirația Spirituală este Auzirea și Supunerea lui Dumnezeu"
 
@@ -122,11 +122,11 @@ msgstr "A fi ucenic înseamnă a fi ascultător de ceea ce auzim de la Dumnezeu.
 #: globals.php:1931 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr "Auzirea și Supunerea lui Dumnezeu"
+msgstr "Auzindu-l si ascultand de Dumnezeu"
 
 #: globals.php:1940 globals.php:1942
 msgid "S.O.A.P.S. Bible Study"
-msgstr "Studiul biblic devoțional în 5 pași(S.O.A.P.S)"
+msgstr "S.O.A.P.S. Studiu biblic"
 
 #: globals.php:1941 site/pages/follow-jesus.php:209
 msgid ""
@@ -138,8 +138,8 @@ msgstr ""
 
 #: globals.php:1951 globals.php:1953 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
-#: site/course/course-content.php:361 site/course/course-content.php:3412
-#: site/course/course-content.php:3428
+#: site/course/course-content.php:361 site/course/course-content.php:3409
+#: site/course/course-content.php:3425
 msgid "Accountability Groups"
 msgstr "Grupurile de responsabilitate"
 
@@ -150,7 +150,7 @@ msgid ""
 "correction."
 msgstr ""
 "Un instrument pentru două sau trei persoane de același gen, care se vor "
-"întâlni în fiecare săptămână pentru a se încuraja reciproc în domeniile  în "
+"întâlni în fiecare săptămână pentru a se încuraja reciproc în domeniile în "
 "care totul este bine și pentru a se ajuta să-și descopere domeniile în care "
 "mai este de lucru."
 
@@ -191,8 +191,8 @@ msgstr ""
 #: globals.php:1986 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
-#: site/course/course-content.php:671 site/course/course-content.php:3538
-#: site/course/course-content.php:3558
+#: site/course/course-content.php:671 site/course/course-content.php:3535
+#: site/course/course-content.php:3555
 #: utilities/integrations/replace-placeholder.php:101
 #: utilities/integrations/replace-placeholder.php:102
 #: utilities/integrations/replace-placeholder.php:103
@@ -201,7 +201,7 @@ msgstr "Lista de 100"
 
 #: globals.php:1995 globals.php:1997 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
-#: site/course/course-content.php:3806 site/course/course-content.php:3825
+#: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Economia spirituală"
 
@@ -245,8 +245,8 @@ msgstr ""
 
 #: globals.php:2019 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
-#: site/course/course-content.php:1021 site/course/course-content.php:4079
-#: site/course/course-content.php:4096
+#: site/course/course-content.php:1021 site/course/course-content.php:4076
+#: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "Botezul"
 
@@ -264,11 +264,11 @@ msgstr ""
 
 #: globals.php:2030
 msgid "3-Minute Testimony"
-msgstr "Mărturia în trei minute "
+msgstr "Mărturia în 3 minute"
 
 #: globals.php:2039 site/course/course-content.php:1140
-#: site/course/course-content.php:1402 site/course/course-content.php:3807
-#: site/course/course-content.php:3826
+#: site/course/course-content.php:1402 site/course/course-content.php:3804
+#: site/course/course-content.php:3823
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Viziunea care aduce Cele Mai Mari Binecuvântări"
 
@@ -295,15 +295,15 @@ msgstr "Aflați ce au de-a face bobocii cu procesul de facere de ucenici."
 
 #: globals.php:2052 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
-#: site/course/course-content.php:1403 site/course/course-content.php:4356
-#: site/course/course-content.php:4377
+#: site/course/course-content.php:1403 site/course/course-content.php:4353
+#: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Ucenicia urmând exemplul bobocilor"
 
 #: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
-#: site/course/course-content.php:1404 site/course/course-content.php:4357
-#: site/course/course-content.php:4378
+#: site/course/course-content.php:1404 site/course/course-content.php:4354
+#: site/course/course-content.php:4375
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Ochi care văd unde nu este Împărăția"
 
@@ -329,14 +329,14 @@ msgstr ""
 
 #: globals.php:2074 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
-#: site/course/course-content.php:1409 site/course/course-content.php:4361
-#: site/course/course-content.php:4382
+#: site/course/course-content.php:1409 site/course/course-content.php:4358
+#: site/course/course-content.php:4379
 msgid "The Lord’s Supper"
 msgstr "Cina Domnului"
 
 #: globals.php:2083
 msgid "Prayer Walking and How To Do It"
-msgstr "Plimbarea de Rugăciune  și Cum să o Faci"
+msgstr "Plimbarea de Rugăciune și Cum să o Faci"
 
 #: globals.php:2084
 msgid ""
@@ -348,14 +348,14 @@ msgstr ""
 
 #: globals.php:2085 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
-#: site/course/course-content.php:1635 site/course/course-content.php:4488
-#: site/course/course-content.php:4501
+#: site/course/course-content.php:1635 site/course/course-content.php:4485
+#: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "Plimbarea de Rugăciune"
 
 #: globals.php:2094
 msgid "A Person of Peace and How To Find One"
-msgstr "Omul Păcii  și Cum să-l Găsești"
+msgstr "Omul Păcii și Cum să-l Găsești"
 
 #: globals.php:2095
 msgid ""
@@ -365,7 +365,7 @@ msgstr ""
 
 #: globals.php:2096 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
-#: site/course/course-content.php:4602 site/course/course-content.php:4622
+#: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "Omul Păcii"
 
@@ -382,8 +382,8 @@ msgstr ""
 "ceea ce știu."
 
 #: globals.php:2107 site/course/course-content.php:1765
-#: site/course/course-content.php:1774 site/course/course-content.php:4733
-#: site/course/course-content.php:4780
+#: site/course/course-content.php:1774 site/course/course-content.php:4730
+#: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "Credincioșia"
 
@@ -397,7 +397,7 @@ msgstr "Un exemplu simplu care să vă ajute să vă rugați pentru alții."
 
 #: globals.php:2118 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
-msgstr "Rugăciunea B.L.E.S.S."
+msgstr "Rugăciunea B.L.E.S.S"
 
 #: globals.php:2127
 msgid "3/3 Group Meeting Pattern"
@@ -429,15 +429,15 @@ msgstr ""
 "Aflați mai multe despre ciclul de instruire și vedeți cum este folosit "
 "pentru multiplicarea ucenicilor."
 
-#: globals.php:2140 site/course/course-content.php:5035
-#: site/course/course-content.php:5052
+#: globals.php:2140 site/course/course-content.php:5032
+#: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "Ciclul de Instruire"
 
 #: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
-#: site/course/course-content.php:2279 site/course/course-content.php:5036
-#: site/course/course-content.php:5053
+#: site/course/course-content.php:2279 site/course/course-content.php:5033
+#: site/course/course-content.php:5050
 msgid "Leadership Cells"
 msgstr "Celulele Zúme"
 
@@ -451,8 +451,8 @@ msgstr ""
 "se simte chemat să conducă își poate dezvolta abilitățile de a conduce prin "
 "exersarea slujirii."
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5160
-#: site/course/course-content.php:5178
+#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
+#: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
 msgstr "Așteptați-vă la Creștere Simultană"
 
@@ -464,7 +464,7 @@ msgstr ""
 "Aflați că multiplicarea ucenicilor nu trebuie să fie liniară. Se pot "
 "întâmpla multe în același timp."
 
-#: globals.php:2171 site/course/course-content.php:2773
+#: globals.php:2171 site/course/course-content.php:2770
 msgid "Pace of Multiplication Matters"
 msgstr "Ritmul Multiplicării Contează"
 
@@ -478,14 +478,14 @@ msgstr ""
 
 #: globals.php:2173 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
-#: site/course/course-content.php:5161 site/course/course-content.php:5179
+#: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "Ritmul"
 
 #: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
-#: site/course/course-content.php:2774 site/course/course-content.php:5162
-#: site/course/course-content.php:5180
+#: site/course/course-content.php:2771 site/course/course-content.php:5159
+#: site/course/course-content.php:5177
 msgid "Always Part of Two Churches"
 msgstr "Fii Parte a Două Biserici"
 
@@ -493,9 +493,9 @@ msgstr "Fii Parte a Două Biserici"
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "Aflați cum să ascultați de poruncile lui Isus mergând ȘI rămânând."
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2906
-#: site/course/course-content.php:3010 site/course/course-content.php:3016
-#: site/course/course-content.php:3077 site/course/course-content.php:5699
+#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: site/course/course-content.php:3007 site/course/course-content.php:3013
+#: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Plan de trei luni"
 
@@ -508,16 +508,17 @@ msgstr ""
 "instrumentele Zúme în următoarele trei luni."
 
 #: globals.php:2205 globals.php:2207
-#: site/activities/coaching-checklist-mawl.php:97
-#: site/activities/coaching-checklist-personal.php:97
-#: site/activities/coaching-checklist-printable.php:97
-#: site/activities/coaching-checklist.php:97
+#: site/activities/coaching-checklist-host.php:97
+#: site/activities/coaching-checklist-mawl.php:48
+#: site/activities/coaching-checklist-mawl.php:98
+#: site/activities/coaching-checklist-two.php:97
+#: site/activities/coaching-checklist.php:101
 #: site/course/_strings-3-circle-gospel-presentation.php:81
 #: site/course/_strings-3-circle-gospel-presentation.php:106
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
-#: site/course/course-content.php:2778 site/course/course-content.php:5293
-#: site/course/course-content.php:5313
+#: site/course/course-content.php:2775 site/course/course-content.php:5290
+#: site/course/course-content.php:5310
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
@@ -533,10 +534,10 @@ msgstr ""
 "punctele tale forte și vulnerabilitățile atunci când vine vorba de a face "
 "ucenici care se multiplică."
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2901
-#: site/course/course-content.php:2914 site/course/course-content.php:2923
-#: site/course/course-content.php:3072 site/course/course-content.php:5289
-#: site/course/course-content.php:5309
+#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: site/course/course-content.php:2911 site/course/course-content.php:2920
+#: site/course/course-content.php:3069 site/course/course-content.php:5286
+#: site/course/course-content.php:5306
 msgid "Leadership in Networks"
 msgstr "Conducerea în Rețele"
 
@@ -548,10 +549,10 @@ msgstr ""
 "Află cum bisericile care se multiplică continuu rămân conectate și trăiesc "
 "împreună ca o mare familie spirituală."
 
-#: globals.php:2227 site/course/course-content.php:2905
-#: site/course/course-content.php:2957 site/course/course-content.php:2966
-#: site/course/course-content.php:3076 site/course/course-content.php:5559
-#: site/course/course-content.php:5575
+#: globals.php:2227 site/course/course-content.php:2902
+#: site/course/course-content.php:2954 site/course/course-content.php:2963
+#: site/course/course-content.php:3073 site/course/course-content.php:5556
+#: site/course/course-content.php:5572
 msgid "Peer Mentoring Groups"
 msgstr "Grupuri de mentorat de la egal la egal"
 
@@ -584,9 +585,9 @@ msgstr ""
 "analiza starea eforturilor în curs și a activității Împărăției în jurul lor."
 
 #: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
-#: site/course/course-content.php:2712 site/course/course-content.php:2718
-#: site/course/course-content.php:2780 site/course/course-content.php:5423
-#: site/course/course-content.php:5453
+#: site/course/course-content.php:2709 site/course/course-content.php:2715
+#: site/course/course-content.php:2777 site/course/course-content.php:5420
+#: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "Harta Generațiilor"
 
@@ -600,7 +601,7 @@ msgstr ""
 
 #: globals.php:2260
 msgid "3-Circles Gospel Presentation"
-msgstr "Prezentarea Evangheliei Trei Cercuri"
+msgstr "Prezentarea Evangheliei în 3 cercuri"
 
 #: globals.php:2261
 msgid ""
@@ -612,10 +613,10 @@ msgstr ""
 
 #: globals.php:2262
 msgid "3-Circles"
-msgstr "3 - Cercuri"
+msgstr "3-Cercuri"
 
 #: globals.php:6991 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:139
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
 #: site/pages/follow-jesus.php:339 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
@@ -626,59 +627,158 @@ msgstr "Închide"
 msgid "No Results"
 msgstr "Fără rezultate"
 
+#: site/activities/coaching-checklist-host.php:97
+msgid "H.O.S.T."
+msgstr "A.A.Î.A."
+
+#: site/activities/coaching-checklist-host.php:98
+msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
+msgstr "Autoevaluează-te folosind Auzit, Ascultat, Împărtășit, Instruit."
+
+#: site/activities/coaching-checklist-host.php:104
+#: site/activities/coaching-checklist-mawl.php:106
+#: site/activities/coaching-checklist-two.php:105
+#: site/activities/coaching-checklist.php:207
+msgid "Training Tools/Concepts"
+msgstr "Instrumente/Concepte de instruire"
+
+#: site/activities/coaching-checklist-host.php:119
+#: site/activities/coaching-checklist-two.php:120
+msgid "Ask yourself, have I"
+msgstr "Întreabă-te, am"
+
+#: site/activities/coaching-checklist-host.php:125
+#: site/activities/coaching-checklist-host.php:163
+#: site/activities/coaching-checklist-two.php:126
+#: site/activities/coaching-checklist-two.php:184
+#: site/activities/coaching-checklist.php:113
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:231
+msgid "Heard"
+msgstr "Auzit"
+
+#: site/activities/coaching-checklist-host.php:128
+#: site/activities/coaching-checklist-host.php:167
+#: site/activities/coaching-checklist-two.php:129
+#: site/activities/coaching-checklist-two.php:188
+#: site/activities/coaching-checklist.php:116
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:233
+msgid "Obeyed"
+msgstr "Ascultat"
+
+#: site/activities/coaching-checklist-host.php:131
+#: site/activities/coaching-checklist-host.php:171
+#: site/activities/coaching-checklist-two.php:132
+#: site/activities/coaching-checklist-two.php:192
+#: site/activities/coaching-checklist.php:119
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:235
+msgid "Shared"
+msgstr "Împărtășit"
+
+#: site/activities/coaching-checklist-host.php:134
+#: site/activities/coaching-checklist-host.php:175
+#: site/activities/coaching-checklist-two.php:135
+#: site/activities/coaching-checklist-two.php:196
+#: site/activities/coaching-checklist.php:122
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:237
+msgid "Trained"
+msgstr "Instruit"
+
+#: site/activities/coaching-checklist-host.php:165
+#: site/activities/coaching-checklist-two.php:186
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+msgid "Have I heard about this tool or concept?"
+msgstr "Am auzit despre acest instrument sau concept?"
+
+#: site/activities/coaching-checklist-host.php:169
+#: site/activities/coaching-checklist-two.php:190
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+msgid ""
+"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
+"own? If a concept, have you reflected on how it changes your perspective?"
+msgstr ""
+"Am respectat acest instrument sau concept? Dacă este un instrument, l-am "
+"exersat pe cont propriu? Dacă este un concept, te-ai gândit la modul în care "
+"îți schimbă perspectiva?"
+
+#: site/activities/coaching-checklist-host.php:173
+#: site/activities/coaching-checklist-two.php:194
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+msgid ""
+"Have I shared this tool or concept? If a tool, have you shown anyone how to "
+"use this tool? If a concept, have you shared this concept with anyone?"
+msgstr ""
+"Am împărtășit acest instrument sau concept? Dacă este un instrument, ați "
+"arătat cuiva cum să folosească acest instrument? Dacă este un concept, ați "
+"împărtășit acest concept cu cineva?"
+
+#: site/activities/coaching-checklist-host.php:177
+#: site/activities/coaching-checklist-two.php:198
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+msgid ""
+"Have I trained others to share this tool or concept? If a tool, have I "
+"trained someone to share the tool with someone else? If a concept, have I "
+"trained someone to share the concept with someone else?"
+msgstr ""
+"Am instruit pe alții să împărtășească acest instrument sau concept? Dacă "
+"este un instrument, am instruit pe cineva să partajeze instrumentul cu "
+"altcineva? Dacă este un concept, am instruit pe cineva să împărtășească "
+"conceptul cu altcineva?"
+
+#: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
+msgid "M.A.W.L."
+msgstr "M.A.S.R."
+
+#: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
 msgstr "Antrenează-i pe alții cu Modelare, Asistare, Supraveghere, Retragere."
 
-#: site/activities/coaching-checklist-mawl.php:105
-#: site/activities/coaching-checklist-personal.php:104
-#: site/activities/coaching-checklist-printable.php:108
-#: site/activities/coaching-checklist.php:105
-msgid "Training Tools/Concepts"
-msgstr "Instrumente de instruire/Concepte"
-
-#: site/activities/coaching-checklist-mawl.php:120
-#: site/activities/coaching-checklist-printable.php:144
-#: site/activities/coaching-checklist.php:140
+#: site/activities/coaching-checklist-mawl.php:121
+#: site/activities/coaching-checklist-two.php:140
 msgid "Ask yourself, what does my disciple need"
-msgstr "Intreaba-te pe tine insuti,  de ce are nevoie ucenicul meu"
+msgstr "Întrebați-vă, de ce are nevoie ucenicul meu"
 
-#: site/activities/coaching-checklist-mawl.php:125
-#: site/activities/coaching-checklist-mawl.php:163
-#: site/activities/coaching-checklist-printable.php:150
-#: site/activities/coaching-checklist.php:146
-#: site/activities/coaching-checklist.php:203
+#: site/activities/coaching-checklist-mawl.php:126
+#: site/activities/coaching-checklist-mawl.php:164
+#: site/activities/coaching-checklist-two.php:146
+#: site/activities/coaching-checklist-two.php:203
+#: site/activities/coaching-checklist.php:153
+#: site/activities/coaching-checklist.php:282
 msgid "Model"
 msgstr "Modelare"
 
-#: site/activities/coaching-checklist-mawl.php:128
-#: site/activities/coaching-checklist-mawl.php:167
-#: site/activities/coaching-checklist-printable.php:153
-#: site/activities/coaching-checklist.php:149
-#: site/activities/coaching-checklist.php:207
+#: site/activities/coaching-checklist-mawl.php:129
+#: site/activities/coaching-checklist-mawl.php:168
+#: site/activities/coaching-checklist-two.php:149
+#: site/activities/coaching-checklist-two.php:207
+#: site/activities/coaching-checklist.php:156
+#: site/activities/coaching-checklist.php:285
 msgid "Assist"
 msgstr "Asistare"
 
-#: site/activities/coaching-checklist-mawl.php:131
-#: site/activities/coaching-checklist-mawl.php:171
-#: site/activities/coaching-checklist-printable.php:156
-#: site/activities/coaching-checklist.php:152
-#: site/activities/coaching-checklist.php:211
-#: site/course/course-content.php:1813 site/course/course-content.php:4745
+#: site/activities/coaching-checklist-mawl.php:132
+#: site/activities/coaching-checklist-mawl.php:172
+#: site/activities/coaching-checklist-two.php:152
+#: site/activities/coaching-checklist-two.php:211
+#: site/activities/coaching-checklist.php:159
+#: site/activities/coaching-checklist.php:288
+#: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:204
 msgid "Watch"
 msgstr "Supraveghere"
 
-#: site/activities/coaching-checklist-mawl.php:134
-#: site/activities/coaching-checklist-mawl.php:175
-#: site/activities/coaching-checklist-printable.php:159
-#: site/activities/coaching-checklist.php:155
-#: site/activities/coaching-checklist.php:215
+#: site/activities/coaching-checklist-mawl.php:135
+#: site/activities/coaching-checklist-mawl.php:176
+#: site/activities/coaching-checklist-two.php:155
+#: site/activities/coaching-checklist-two.php:215
+#: site/activities/coaching-checklist.php:162
+#: site/activities/coaching-checklist.php:291
 msgid "Leave"
 msgstr "Retragere"
 
-#: site/activities/coaching-checklist-mawl.php:165
-#: site/activities/coaching-checklist.php:205
+#: site/activities/coaching-checklist-mawl.php:166
+#: site/activities/coaching-checklist-two.php:205
+#: site/activities/coaching-checklist.php:282
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -686,14 +786,16 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"Modelarea este un exemplu simplu de practică sau instrument. Reprezintă "
-"partea cea mai scurtă a ciclului de pregătire și, de regulă, se efectuează o "
-"singură dată. Scopul său este de a crea conștientizarea existenței unei "
-"practici sau a unui instrument și de a oferi o idee generală despre aspectul "
-"acestora. Modelarea repetată nu constituie o metodă eficientă de instruire."
+"Modelarea reprezintă pur și simplu un exemplu de practică sau instrument. "
+"Este cea mai scurtă parte a ciclului de pregătire. De obicei, trebuie făcută "
+"o singură dată. Este pur și simplu să creăm conștientizarea faptului că "
+"există o practică sau un instrument și să dai o idee generală despre cum "
+"arată. Modelarea în mod repetat nu este o modalitate eficientă de a echipa "
+"pe cineva."
 
-#: site/activities/coaching-checklist-mawl.php:169
-#: site/activities/coaching-checklist.php:209
+#: site/activities/coaching-checklist-mawl.php:170
+#: site/activities/coaching-checklist-two.php:209
+#: site/activities/coaching-checklist.php:285
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -703,16 +805,18 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
-"Asistența presupune permisiunea acordată cursantului de a-și exersa "
-"abilitățile. Aceasta etapă este mai îndelungată decât faza de modelare și "
-"necesită o implicare activă și directivă din partea mentorului. Mentorul "
-"trebuie să ghideze cursantul, nu doar până când acesta devine complet "
-"competent, ci până când asimilează noțiunile fundamentale ale abilității. "
-"Prea multă dependență de mentor în această fază poate împiedica atingerea "
-"independenței și competenței depline a cursantului."
+"Asistarea înseamnă a permite cursantului să exerseze abilitățile. Acest "
+"lucru durează mai mult decât faza de modelare. Este nevoie de „ținerea de "
+"mână” din partea mentorului. Mentorul trebuie să fie directiv și să aibă un "
+"rol activ în instruirea cursantului. Această fază nu durează până când "
+"cursantul este pe deplin competent, ci doar până când înțelege elementele de "
+"bază ale abilității. Dacă această fază este continuată prea mult timp, "
+"atunci cursantul va dezvolta o dependență de mentor și nu va ajunge "
+"niciodată la competența deplină."
 
-#: site/activities/coaching-checklist-mawl.php:173
-#: site/activities/coaching-checklist.php:213
+#: site/activities/coaching-checklist-mawl.php:174
+#: site/activities/coaching-checklist-two.php:213
+#: site/activities/coaching-checklist.php:288
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -726,8 +830,9 @@ msgstr ""
 "două faze combinate. Pe măsură ce elevul progresează în abilități, contactul "
 "cu mentorul poate deveni mai puțin regulat și mai ad-hoc."
 
-#: site/activities/coaching-checklist-mawl.php:177
-#: site/activities/coaching-checklist.php:217
+#: site/activities/coaching-checklist-mawl.php:178
+#: site/activities/coaching-checklist-two.php:217
+#: site/activities/coaching-checklist.php:291
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
@@ -740,104 +845,133 @@ msgstr ""
 "părinte eliberează copilul să se plimbe cu bicicleta complet nesupravegheat, "
 "aceasta este faza RETRAGEREA."
 
-#: site/activities/coaching-checklist-personal.php:98
-msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "Autoevaluează-te folosind Auzit, Ascultat, Împărtășit, Instruit."
-
-#: site/activities/coaching-checklist-personal.php:119
-#: site/activities/coaching-checklist-printable.php:124
-#: site/activities/coaching-checklist.php:120
-msgid "Ask yourself, have I"
-msgstr "Intreaba-te pe tine insuti"
-
-#: site/activities/coaching-checklist-personal.php:125
-#: site/activities/coaching-checklist-personal.php:163
-#: site/activities/coaching-checklist-printable.php:130
-#: site/activities/coaching-checklist.php:126
-#: site/activities/coaching-checklist.php:184 site/dashboard/dashboard.php:231
-msgid "Heard"
-msgstr "Auzit"
-
-#: site/activities/coaching-checklist-personal.php:128
-#: site/activities/coaching-checklist-personal.php:167
-#: site/activities/coaching-checklist-printable.php:133
-#: site/activities/coaching-checklist.php:129
-#: site/activities/coaching-checklist.php:188 site/dashboard/dashboard.php:233
-msgid "Obeyed"
-msgstr "Ascultat"
-
-#: site/activities/coaching-checklist-personal.php:131
-#: site/activities/coaching-checklist-personal.php:171
-#: site/activities/coaching-checklist-printable.php:136
-#: site/activities/coaching-checklist.php:132
-#: site/activities/coaching-checklist.php:192 site/dashboard/dashboard.php:235
-msgid "Shared"
-msgstr "Împărtășit"
-
-#: site/activities/coaching-checklist-personal.php:134
-#: site/activities/coaching-checklist-personal.php:175
-#: site/activities/coaching-checklist-printable.php:139
-#: site/activities/coaching-checklist.php:135
-#: site/activities/coaching-checklist.php:196 site/dashboard/dashboard.php:237
-msgid "Trained"
-msgstr "Instruit"
-
-#: site/activities/coaching-checklist-personal.php:165
-#: site/activities/coaching-checklist.php:186 site/dashboard/dashboard.php:232
-msgid "Have I heard about this tool or concept?"
-msgstr "Am auzit despre acest instrument sau concept?"
-
-#: site/activities/coaching-checklist-personal.php:169
-#: site/activities/coaching-checklist.php:190 site/dashboard/dashboard.php:234
-msgid ""
-"Have I obeyed this tool or concept? If a tool, have I practiced it on my "
-"own? If a concept, have you reflected on how it changes your perspective?"
-msgstr ""
-"Am respectat acest instrument sau concept? Dacă este un instrument, l-am "
-"exersat singur? Dacă este un concept, m-am gândit la cum îmi schimbă "
-"perspectiva?"
-
-#: site/activities/coaching-checklist-personal.php:173
-#: site/activities/coaching-checklist.php:194 site/dashboard/dashboard.php:236
-msgid ""
-"Have I shared this tool or concept? If a tool, have you shown anyone how to "
-"use this tool? If a concept, have you shared this concept with anyone?"
-msgstr ""
-"Am împărtășit acest instrument sau concept? Dacă este un instrument, ați "
-"arătat cuiva cum să folosească acest instrument? Dacă este un concept, ați "
-"împărtășit acest concept cu cineva?"
-
-#: site/activities/coaching-checklist-personal.php:177
-#: site/activities/coaching-checklist.php:198 site/dashboard/dashboard.php:238
-msgid ""
-"Have I trained others to share this tool or concept? If a tool, have I "
-"trained someone to share the tool with someone else? If a concept, have I "
-"trained someone to share the concept with someone else?"
-msgstr ""
-"Am instruit pe alții să împărtășească acest instrument sau concept? Dacă "
-"este un instrument, am instruit pe cineva să partajeze instrumentul cu "
-"altcineva? Dacă este un concept, am instruit pe cineva să împărtășească "
-"conceptul cu altcineva?"
-
-#: site/activities/coaching-checklist-printable.php:99
-msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
-msgstr "1. Autoevaluează-te cu Auzit, Ascultat, Împărtășit, Instruit."
-
-#: site/activities/coaching-checklist-printable.php:100
-msgid "2. Coach others with Model, Assist, Watch, Leave."
-msgstr ""
-"2. Antrenează-i pe alții cu Modelare, Asistare, Supraveghere, Retragere."
-
-#: site/activities/coaching-checklist.php:98
-#, fuzzy
+#: site/activities/coaching-checklist-two.php:98
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. Autoevaluează-te cu Auzit, Ascultat, Împărtășit, Instruit."
+msgstr "1. Autoevaluează-te cu Auzit, Ascultat, Împărtășit, Antrenat."
 
-#: site/activities/coaching-checklist.php:99
-#, fuzzy
+#: site/activities/coaching-checklist-two.php:99
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
 "2. Antrenează-i pe alții cu Modelare, Asistare, Supraveghere, Retragere."
+
+#: site/activities/coaching-checklist.php:107
+#: site/activities/coaching-checklist.php:247
+msgid "Self-Evaluation"
+msgstr "Autoevaluare"
+
+#: site/activities/coaching-checklist.php:127
+#: site/activities/coaching-checklist.php:263
+msgid "Mentee Development Level"
+msgstr "Nivelul de dezvoltare a ucenicului"
+
+#: site/activities/coaching-checklist.php:133
+#: site/activities/coaching-checklist.php:266
+msgid "Unaware"
+msgstr "Inconstient"
+
+#: site/activities/coaching-checklist.php:136
+#: site/activities/coaching-checklist.php:269
+msgid "Unskilled"
+msgstr "Necalificat"
+
+#: site/activities/coaching-checklist.php:139
+#: site/activities/coaching-checklist.php:272
+msgid "Competent"
+msgstr "Competent"
+
+#: site/activities/coaching-checklist.php:142
+#: site/activities/coaching-checklist.php:275
+msgid "Skilled"
+msgstr "Calificat"
+
+#: site/activities/coaching-checklist.php:147
+#: site/activities/coaching-checklist.php:279
+msgid "Mentor’s Role"
+msgstr "Rolul de mentor"
+
+#: site/activities/coaching-checklist.php:153
+#: site/activities/coaching-checklist.php:282
+msgid "Train new information and ensure understanding"
+msgstr "Instruiește informațiile noi și asigură-te că sunt înțelese"
+
+#: site/activities/coaching-checklist.php:156
+#: site/activities/coaching-checklist.php:285
+msgid "Stop and stay with them until they have the basics"
+msgstr "Petrece timp cu ei pentru a-i ajuta să învețe elementele de bază"
+
+#: site/activities/coaching-checklist.php:159
+#: site/activities/coaching-checklist.php:288
+msgid "Stay engaged until consistently competent"
+msgstr "Dedicați timp și efort pentru a vă consolida competențele"
+
+#: site/activities/coaching-checklist.php:162
+#: site/activities/coaching-checklist.php:291
+msgid "Relate to them as co-laborer"
+msgstr "Creați o relație de colaborare"
+
+#: site/activities/coaching-checklist.php:167
+msgid "Mentor’s Behaviors"
+msgstr "Comportamentele mentorului"
+
+#: site/activities/coaching-checklist.php:173
+msgid "Direct and inform"
+msgstr "Dirijați și informați"
+
+#: site/activities/coaching-checklist.php:176
+msgid "Direct and support"
+msgstr "Direcție și sprijin"
+
+#: site/activities/coaching-checklist.php:179
+msgid "Support and encourage"
+msgstr "Sprijiniți și încurajați"
+
+#: site/activities/coaching-checklist.php:182
+msgid "Receive updates"
+msgstr "Primiți actualizări"
+
+#: site/activities/coaching-checklist.php:187
+msgid "Planning Responsibilities"
+msgstr "Responsabilități de planificare"
+
+#: site/activities/coaching-checklist.php:193
+msgid "Mentor decides"
+msgstr "Mentorul decide"
+
+#: site/activities/coaching-checklist.php:196
+msgid "Discuss and Mentor decides"
+msgstr "Discutați și Mentorul decide"
+
+#: site/activities/coaching-checklist.php:199
+msgid "Discuss and Mentee decides"
+msgstr "Discută și Ucenicul decide"
+
+#: site/activities/coaching-checklist.php:202
+msgid "Mentee decides"
+msgstr "Ucenicul decide"
+
+#: site/activities/coaching-checklist.php:266
+msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
+msgstr ""
+"Ucenicul nu cunoaște, nu este familiarizat sau înțelege greșit instrumentul?"
+
+#: site/activities/coaching-checklist.php:269
+msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
+msgstr ""
+"Ucenicul este oarecum familiarizat cu instrumentul, dar încă nu este sigur "
+"despre acesta?"
+
+#: site/activities/coaching-checklist.php:272
+msgid ""
+"Does the Mentee understand the tool and is able to train the basics of the "
+"tool?"
+msgstr ""
+"Ucenicul înțelege instrumentul și este capabil să antreneze elementele de "
+"bază ale instrumentului?"
+
+#: site/activities/coaching-checklist.php:275
+msgid "Does the Mentee feel confident and able to effectively train the tool?"
+msgstr ""
+"Ucenicul se simte încrezător și capabil să antreneze eficient instrumentul?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -876,7 +1010,7 @@ msgstr ""
 "contrar, puteți utiliza versiunea imprimabilă folosind link-ul de mai sus."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:253 site/profile/profile.php:153
+#: site/dashboard/wizard.php:271 site/profile/profile.php:153
 msgid "Save"
 msgstr "Salvați"
 
@@ -917,9 +1051,9 @@ msgstr ""
 #: site/course/course-content.php:1839 site/course/course-content.php:2018
 #: site/course/course-content.php:2059 site/course/course-content.php:2235
 #: site/course/course-content.php:2437 site/course/course-content.php:2482
-#: site/course/course-content.php:2529 site/course/course-content.php:2595
-#: site/course/course-content.php:2946 site/course/course-content.php:3053
-#: site/course/course-content.php:4759
+#: site/course/course-content.php:2529 site/course/course-content.php:2592
+#: site/course/course-content.php:2943 site/course/course-content.php:3050
+#: site/course/course-content.php:4756
 msgid "DISCUSS"
 msgstr "DISCUTĂ"
 
@@ -966,8 +1100,8 @@ msgstr "Ce te-ar face să te simți mai liber spunând istoria lui Dumnezeu?"
 #: site/course/course-content.php:1771 site/course/course-content.php:1992
 #: site/course/course-content.php:2208 site/course/course-content.php:2411
 #: site/course/course-content.php:2456 site/course/course-content.php:2502
-#: site/course/course-content.php:2545 site/course/course-content.php:2920
-#: site/course/course-content.php:2963
+#: site/course/course-content.php:2545 site/course/course-content.php:2917
+#: site/course/course-content.php:2960
 msgid "WATCH"
 msgstr "PRIVEȘTE"
 
@@ -979,7 +1113,7 @@ msgstr "(5 min)"
 #: site/course/_strings-3-circle-gospel-presentation.php:42
 #: site/course/course-content.php:800 site/course/course-content.php:851
 #: site/course/course-content.php:889 site/course/course-content.php:1020
-#: site/course/course-content.php:3808 site/course/course-content.php:3827
+#: site/course/course-content.php:3805 site/course/course-content.php:3824
 msgid "The Gospel"
 msgstr "Evanghelia"
 
@@ -1018,10 +1152,10 @@ msgstr ""
 #: site/course/course-content.php:1375 site/course/course-content.php:1608
 #: site/course/course-content.php:1632 site/course/course-content.php:2035
 #: site/course/course-content.php:2250 site/course/course-content.php:2570
-#: site/course/course-content.php:2989 site/course/course-content.php:3030
-#: site/course/course-content.php:3674 site/course/course-content.php:3944
-#: site/course/course-content.php:4213 site/course/course-content.php:4498
-#: site/course/course-content.php:4899
+#: site/course/course-content.php:2986 site/course/course-content.php:3027
+#: site/course/course-content.php:3671 site/course/course-content.php:3941
+#: site/course/course-content.php:4210 site/course/course-content.php:4495
+#: site/course/course-content.php:4896
 msgid "ACTIVITY"
 msgstr "ACTIVITATE"
 
@@ -1032,12 +1166,10 @@ msgid "Scan the QR code or find a piece of paper."
 msgstr "Scanați codul QR sau găsiți o bucată de hârtie."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#: site/course/course-content.php:2576
 msgid "Select a person from your list of 100."
 msgstr "Selectează o persoană din lista ta de 100."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
-#: site/course/course-content.php:2577
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
@@ -1047,7 +1179,6 @@ msgstr ""
 "dintre instrumentele și conceptele?”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
-#: site/course/course-content.php:2578
 msgid "Check off the checklist."
 msgstr "Bifați lista de verificare."
 
@@ -1058,11 +1189,11 @@ msgstr "Bifați lista de verificare."
 #: site/course/course-content.php:942 site/course/course-content.php:1199
 #: site/course/course-content.php:1387 site/course/course-content.php:1620
 #: site/course/course-content.php:1647 site/course/course-content.php:2049
-#: site/course/course-content.php:2264 site/course/course-content.php:2585
-#: site/course/course-content.php:2669 site/course/course-content.php:2687
-#: site/course/course-content.php:2738 site/course/course-content.php:3003
-#: site/course/course-content.php:3685 site/course/course-content.php:3957
-#: site/course/course-content.php:4511 site/course/course-content.php:4913
+#: site/course/course-content.php:2264 site/course/course-content.php:2582
+#: site/course/course-content.php:2666 site/course/course-content.php:2684
+#: site/course/course-content.php:2735 site/course/course-content.php:3000
+#: site/course/course-content.php:3682 site/course/course-content.php:3954
+#: site/course/course-content.php:4508 site/course/course-content.php:4910
 msgid "Activity Resource"
 msgstr "Resursă de Activitate"
 
@@ -1147,7 +1278,7 @@ msgid "(60 - 90 min)"
 msgstr "(60-90 min)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
-#: site/course/course-content.php:3109 site/course/course-content.php:3114
+#: site/course/course-content.php:3106 site/course/course-content.php:3111
 msgid "SESSION 1"
 msgstr "SESIUNEA 1"
 
@@ -1160,32 +1291,32 @@ msgstr "SESIUNEA 1"
 #: site/course/course-content.php:1919 site/course/course-content.php:1924
 #: site/course/course-content.php:2135 site/course/course-content.php:2140
 #: site/course/course-content.php:2334 site/course/course-content.php:2339
-#: site/course/course-content.php:2830 site/course/course-content.php:2835
-#: site/course/course-content.php:3123 site/course/course-content.php:3128
-#: site/course/course-content.php:3234 site/course/course-content.php:3239
-#: site/course/course-content.php:3357 site/course/course-content.php:3362
-#: site/course/course-content.php:3479 site/course/course-content.php:3484
-#: site/course/course-content.php:3609 site/course/course-content.php:3614
-#: site/course/course-content.php:3751 site/course/course-content.php:3756
-#: site/course/course-content.php:3879 site/course/course-content.php:3884
-#: site/course/course-content.php:4024 site/course/course-content.php:4029
-#: site/course/course-content.php:4148 site/course/course-content.php:4153
-#: site/course/course-content.php:4301 site/course/course-content.php:4306
-#: site/course/course-content.php:4433 site/course/course-content.php:4438
-#: site/course/course-content.php:4547 site/course/course-content.php:4552
-#: site/course/course-content.php:4678 site/course/course-content.php:4683
-#: site/course/course-content.php:4832 site/course/course-content.php:4837
-#: site/course/course-content.php:4980 site/course/course-content.php:4985
-#: site/course/course-content.php:5105 site/course/course-content.php:5110
-#: site/course/course-content.php:5234 site/course/course-content.php:5239
-#: site/course/course-content.php:5367 site/course/course-content.php:5372
-#: site/course/course-content.php:5504 site/course/course-content.php:5509
-#: site/course/course-content.php:5628 site/course/course-content.php:5633
-#: site/course/course-content.php:5738 site/course/course-content.php:5743
-#: site/course/course-content.php:5789 site/course/course-content.php:5794
-#: site/course/course-content.php:5838 site/course/course-content.php:5843
-#: site/course/course-content.php:5887 site/course/course-content.php:5892
-#: site/course/course-content.php:5936 site/course/course-content.php:5941
+#: site/course/course-content.php:2827 site/course/course-content.php:2832
+#: site/course/course-content.php:3120 site/course/course-content.php:3125
+#: site/course/course-content.php:3231 site/course/course-content.php:3236
+#: site/course/course-content.php:3354 site/course/course-content.php:3359
+#: site/course/course-content.php:3476 site/course/course-content.php:3481
+#: site/course/course-content.php:3606 site/course/course-content.php:3611
+#: site/course/course-content.php:3748 site/course/course-content.php:3753
+#: site/course/course-content.php:3876 site/course/course-content.php:3881
+#: site/course/course-content.php:4021 site/course/course-content.php:4026
+#: site/course/course-content.php:4145 site/course/course-content.php:4150
+#: site/course/course-content.php:4298 site/course/course-content.php:4303
+#: site/course/course-content.php:4430 site/course/course-content.php:4435
+#: site/course/course-content.php:4544 site/course/course-content.php:4549
+#: site/course/course-content.php:4675 site/course/course-content.php:4680
+#: site/course/course-content.php:4829 site/course/course-content.php:4834
+#: site/course/course-content.php:4977 site/course/course-content.php:4982
+#: site/course/course-content.php:5102 site/course/course-content.php:5107
+#: site/course/course-content.php:5231 site/course/course-content.php:5236
+#: site/course/course-content.php:5364 site/course/course-content.php:5369
+#: site/course/course-content.php:5501 site/course/course-content.php:5506
+#: site/course/course-content.php:5625 site/course/course-content.php:5630
+#: site/course/course-content.php:5735 site/course/course-content.php:5740
+#: site/course/course-content.php:5786 site/course/course-content.php:5791
+#: site/course/course-content.php:5835 site/course/course-content.php:5840
+#: site/course/course-content.php:5884 site/course/course-content.php:5889
+#: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
 msgstr "VERIFICAȚI"
 
@@ -1193,7 +1324,28 @@ msgstr "VERIFICAȚI"
 #: site/course/course-content.php:749 site/course/course-content.php:1092
 #: site/course/course-content.php:1468 site/course/course-content.php:1706
 #: site/course/course-content.php:1927 site/course/course-content.php:2143
-#: site/course/course-content.php:2342 site/course/course-content.php:2838
+#: site/course/course-content.php:2342 site/course/course-content.php:2835
+#: site/course/course-content.php:3128 site/course/course-content.php:3239
+#: site/course/course-content.php:3362 site/course/course-content.php:3484
+#: site/course/course-content.php:3614 site/course/course-content.php:3756
+#: site/course/course-content.php:3884 site/course/course-content.php:4029
+#: site/course/course-content.php:4153 site/course/course-content.php:4306
+#: site/course/course-content.php:4438 site/course/course-content.php:4552
+#: site/course/course-content.php:4683 site/course/course-content.php:4837
+#: site/course/course-content.php:4985 site/course/course-content.php:5110
+#: site/course/course-content.php:5239 site/course/course-content.php:5372
+#: site/course/course-content.php:5509 site/course/course-content.php:5633
+#: site/course/course-content.php:5743 site/course/course-content.php:5794
+#: site/course/course-content.php:5843 site/course/course-content.php:5892
+#: site/course/course-content.php:5941
+msgid "Have all of the participants and facilitator check-in."
+msgstr "Rugați toți participanții și facilitatorul să se înregistreze."
+
+#: site/course/course-content.php:57 site/course/course-content.php:426
+#: site/course/course-content.php:752 site/course/course-content.php:1095
+#: site/course/course-content.php:1471 site/course/course-content.php:1709
+#: site/course/course-content.php:1930 site/course/course-content.php:2146
+#: site/course/course-content.php:2345 site/course/course-content.php:2838
 #: site/course/course-content.php:3131 site/course/course-content.php:3242
 #: site/course/course-content.php:3365 site/course/course-content.php:3487
 #: site/course/course-content.php:3617 site/course/course-content.php:3759
@@ -1207,27 +1359,6 @@ msgstr "VERIFICAȚI"
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
-msgid "Have all of the participants and facilitator check-in."
-msgstr "Rugați toți participanții și facilitatorul să se înregistreze."
-
-#: site/course/course-content.php:57 site/course/course-content.php:426
-#: site/course/course-content.php:752 site/course/course-content.php:1095
-#: site/course/course-content.php:1471 site/course/course-content.php:1709
-#: site/course/course-content.php:1930 site/course/course-content.php:2146
-#: site/course/course-content.php:2345 site/course/course-content.php:2841
-#: site/course/course-content.php:3134 site/course/course-content.php:3245
-#: site/course/course-content.php:3368 site/course/course-content.php:3490
-#: site/course/course-content.php:3620 site/course/course-content.php:3762
-#: site/course/course-content.php:3890 site/course/course-content.php:4035
-#: site/course/course-content.php:4159 site/course/course-content.php:4312
-#: site/course/course-content.php:4444 site/course/course-content.php:4558
-#: site/course/course-content.php:4689 site/course/course-content.php:4843
-#: site/course/course-content.php:4991 site/course/course-content.php:5116
-#: site/course/course-content.php:5245 site/course/course-content.php:5378
-#: site/course/course-content.php:5515 site/course/course-content.php:5639
-#: site/course/course-content.php:5749 site/course/course-content.php:5800
-#: site/course/course-content.php:5849 site/course/course-content.php:5898
-#: site/course/course-content.php:5947
 msgid "Or zume.training/checkin and use code:"
 msgstr "Sau zume.training/înregistrarea și folosiți codul:"
 
@@ -1236,21 +1367,21 @@ msgstr "Sau zume.training/înregistrarea și folosiți codul:"
 #: site/course/course-content.php:1482 site/course/course-content.php:1657
 #: site/course/course-content.php:1720 site/course/course-content.php:1941
 #: site/course/course-content.php:2157 site/course/course-content.php:2356
-#: site/course/course-content.php:2852 site/course/course-content.php:3145
-#: site/course/course-content.php:3256 site/course/course-content.php:3379
-#: site/course/course-content.php:3501 site/course/course-content.php:3631
-#: site/course/course-content.php:3773 site/course/course-content.php:3901
-#: site/course/course-content.php:4046 site/course/course-content.php:4170
-#: site/course/course-content.php:4323 site/course/course-content.php:4455
-#: site/course/course-content.php:4569 site/course/course-content.php:4700
-#: site/course/course-content.php:4854 site/course/course-content.php:5002
-#: site/course/course-content.php:5127 site/course/course-content.php:5256
-#: site/course/course-content.php:5389 site/course/course-content.php:5434
-#: site/course/course-content.php:5526 site/course/course-content.php:5650
+#: site/course/course-content.php:2849 site/course/course-content.php:3142
+#: site/course/course-content.php:3253 site/course/course-content.php:3376
+#: site/course/course-content.php:3498 site/course/course-content.php:3628
+#: site/course/course-content.php:3770 site/course/course-content.php:3898
+#: site/course/course-content.php:4043 site/course/course-content.php:4167
+#: site/course/course-content.php:4320 site/course/course-content.php:4452
+#: site/course/course-content.php:4566 site/course/course-content.php:4697
+#: site/course/course-content.php:4851 site/course/course-content.php:4999
+#: site/course/course-content.php:5124 site/course/course-content.php:5253
+#: site/course/course-content.php:5386 site/course/course-content.php:5431
+#: site/course/course-content.php:5523 site/course/course-content.php:5647
 msgid "PRAY"
 msgstr "RUGAȚI-VĂ"
 
-#: site/course/course-content.php:71 site/course/course-content.php:3148
+#: site/course/course-content.php:71 site/course/course-content.php:3145
 msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
@@ -1264,25 +1395,25 @@ msgstr ""
 #: site/course/course-content.php:791 site/course/course-content.php:1135
 #: site/course/course-content.php:1510 site/course/course-content.php:1748
 #: site/course/course-content.php:1969 site/course/course-content.php:2185
-#: site/course/course-content.php:2384 site/course/course-content.php:2896
-#: site/course/course-content.php:3158 site/course/course-content.php:3286
-#: site/course/course-content.php:3407 site/course/course-content.php:3529
-#: site/course/course-content.php:3659 site/course/course-content.php:3801
-#: site/course/course-content.php:3929 site/course/course-content.php:4074
-#: site/course/course-content.php:4198 site/course/course-content.php:4351
-#: site/course/course-content.php:4483 site/course/course-content.php:4597
-#: site/course/course-content.php:4728 site/course/course-content.php:4882
-#: site/course/course-content.php:5030 site/course/course-content.php:5155
-#: site/course/course-content.php:5284 site/course/course-content.php:5417
-#: site/course/course-content.php:5554 site/course/course-content.php:5694
+#: site/course/course-content.php:2384 site/course/course-content.php:2893
+#: site/course/course-content.php:3155 site/course/course-content.php:3283
+#: site/course/course-content.php:3404 site/course/course-content.php:3526
+#: site/course/course-content.php:3656 site/course/course-content.php:3798
+#: site/course/course-content.php:3926 site/course/course-content.php:4071
+#: site/course/course-content.php:4195 site/course/course-content.php:4348
+#: site/course/course-content.php:4480 site/course/course-content.php:4594
+#: site/course/course-content.php:4725 site/course/course-content.php:4879
+#: site/course/course-content.php:5027 site/course/course-content.php:5152
+#: site/course/course-content.php:5281 site/course/course-content.php:5414
+#: site/course/course-content.php:5551 site/course/course-content.php:5691
 msgid "OVERVIEW"
 msgstr "PREZENTARE GENERALĂ"
 
 #: site/course/course-content.php:84 site/course/course-content.php:1138
-#: site/course/course-content.php:2387 site/course/course-content.php:3161
-#: site/course/course-content.php:3804 site/course/course-content.php:4354
-#: site/course/course-content.php:4731 site/course/course-content.php:5033
-#: site/course/course-content.php:5158 site/course/course-content.php:5420
+#: site/course/course-content.php:2387 site/course/course-content.php:3158
+#: site/course/course-content.php:3801 site/course/course-content.php:4351
+#: site/course/course-content.php:4728 site/course/course-content.php:5030
+#: site/course/course-content.php:5155 site/course/course-content.php:5417
 msgid "In this session, we will hear and discuss these concepts:"
 msgstr "În această sesiune, vom auzi și vom discuta aceste concepte:"
 
@@ -1296,15 +1427,15 @@ msgstr "Respirația spirituală"
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
-#: site/course/course-content.php:1517 site/course/course-content.php:2903
+#: site/course/course-content.php:1517 site/course/course-content.php:2900
 msgid "And we will add these tools to our toolkit:"
 msgstr "Și vom adăuga aceste instrumente la setul nostru de instrumente:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
-#: site/course/course-content.php:3291 site/course/course-content.php:3307
+#: site/course/course-content.php:3288 site/course/course-content.php:3304
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "Studiul biblic devoțional în 5 pași "
+msgstr "Studiul biblic devoțional în 5 pași"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
@@ -1418,7 +1549,7 @@ msgstr ""
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
 msgstr ""
-"Grupurile de Responsabilitate  sunt o modalitate excelentă de a ne pregăti!"
+"Grupurile de Responsabilitate sunt o modalitate excelentă de a ne pregăti!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
@@ -1428,8 +1559,8 @@ msgstr "Practicați Grupurile de responsabilitate"
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
 #: site/course/course-content.php:1613 site/course/course-content.php:1637
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
-#: site/course/course-content.php:2994 site/course/course-content.php:3949
-#: site/course/course-content.php:4904
+#: site/course/course-content.php:2991 site/course/course-content.php:3946
+#: site/course/course-content.php:4901
 msgid "Scan the QR code."
 msgstr "Scanați codul QR."
 
@@ -1448,70 +1579,70 @@ msgstr ""
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
 #: site/course/course-content.php:1855 site/course/course-content.php:2075
-#: site/course/course-content.php:2274 site/course/course-content.php:2767
-#: site/course/course-content.php:3067 site/course/course-content.php:3176
-#: site/course/course-content.php:3302 site/course/course-content.php:3423
-#: site/course/course-content.php:3549 site/course/course-content.php:3695
-#: site/course/course-content.php:3820 site/course/course-content.php:3967
-#: site/course/course-content.php:4091 site/course/course-content.php:4233
-#: site/course/course-content.php:4372 site/course/course-content.php:4617
-#: site/course/course-content.php:4775 site/course/course-content.php:4923
-#: site/course/course-content.php:5047 site/course/course-content.php:5173
-#: site/course/course-content.php:5304 site/course/course-content.php:5447
-#: site/course/course-content.php:5570
+#: site/course/course-content.php:2274 site/course/course-content.php:2764
+#: site/course/course-content.php:3064 site/course/course-content.php:3173
+#: site/course/course-content.php:3299 site/course/course-content.php:3420
+#: site/course/course-content.php:3546 site/course/course-content.php:3692
+#: site/course/course-content.php:3817 site/course/course-content.php:3964
+#: site/course/course-content.php:4088 site/course/course-content.php:4230
+#: site/course/course-content.php:4369 site/course/course-content.php:4614
+#: site/course/course-content.php:4772 site/course/course-content.php:4920
+#: site/course/course-content.php:5044 site/course/course-content.php:5170
+#: site/course/course-content.php:5301 site/course/course-content.php:5444
+#: site/course/course-content.php:5567
 msgid "REVIEW"
 msgstr "REVIZUIRE"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
-#: site/course/course-content.php:1858 site/course/course-content.php:2770
-#: site/course/course-content.php:3179 site/course/course-content.php:3823
-#: site/course/course-content.php:4375 site/course/course-content.php:4778
-#: site/course/course-content.php:5050 site/course/course-content.php:5176
-#: site/course/course-content.php:5450
+#: site/course/course-content.php:1858 site/course/course-content.php:2767
+#: site/course/course-content.php:3176 site/course/course-content.php:3820
+#: site/course/course-content.php:4372 site/course/course-content.php:4775
+#: site/course/course-content.php:5047 site/course/course-content.php:5173
+#: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
 msgstr "Concepte auzite în această sesiune:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
-#: site/course/course-content.php:1862 site/course/course-content.php:2776
-#: site/course/course-content.php:3074
+#: site/course/course-content.php:1862 site/course/course-content.php:2773
+#: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
 msgstr "Instrumente auzite în această sesiune:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
 #: site/course/course-content.php:2095 site/course/course-content.php:2294
-#: site/course/course-content.php:2791 site/course/course-content.php:3194
-#: site/course/course-content.php:3318 site/course/course-content.php:3439
-#: site/course/course-content.php:3569 site/course/course-content.php:3711
-#: site/course/course-content.php:3838 site/course/course-content.php:3983
-#: site/course/course-content.php:4108 site/course/course-content.php:4249
-#: site/course/course-content.php:4393 site/course/course-content.php:4637
-#: site/course/course-content.php:4792 site/course/course-content.php:4939
-#: site/course/course-content.php:5064 site/course/course-content.php:5191
-#: site/course/course-content.php:5324 site/course/course-content.php:5464
-#: site/course/course-content.php:5586
+#: site/course/course-content.php:2788 site/course/course-content.php:3191
+#: site/course/course-content.php:3315 site/course/course-content.php:3436
+#: site/course/course-content.php:3566 site/course/course-content.php:3708
+#: site/course/course-content.php:3835 site/course/course-content.php:3980
+#: site/course/course-content.php:4105 site/course/course-content.php:4246
+#: site/course/course-content.php:4390 site/course/course-content.php:4634
+#: site/course/course-content.php:4789 site/course/course-content.php:4936
+#: site/course/course-content.php:5061 site/course/course-content.php:5188
+#: site/course/course-content.php:5321 site/course/course-content.php:5461
+#: site/course/course-content.php:5583
 msgid "OBEY"
 msgstr "ASCULTAȚI"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
 #: site/course/course-content.php:2096 site/course/course-content.php:2295
-#: site/course/course-content.php:2792 site/course/course-content.php:3195
-#: site/course/course-content.php:3319 site/course/course-content.php:3440
-#: site/course/course-content.php:3570 site/course/course-content.php:3712
-#: site/course/course-content.php:3839 site/course/course-content.php:3984
-#: site/course/course-content.php:4109 site/course/course-content.php:4250
-#: site/course/course-content.php:4394 site/course/course-content.php:4638
-#: site/course/course-content.php:4793 site/course/course-content.php:4940
-#: site/course/course-content.php:5065 site/course/course-content.php:5192
-#: site/course/course-content.php:5325 site/course/course-content.php:5465
-#: site/course/course-content.php:5587
+#: site/course/course-content.php:2789 site/course/course-content.php:3192
+#: site/course/course-content.php:3316 site/course/course-content.php:3437
+#: site/course/course-content.php:3567 site/course/course-content.php:3709
+#: site/course/course-content.php:3836 site/course/course-content.php:3981
+#: site/course/course-content.php:4106 site/course/course-content.php:4247
+#: site/course/course-content.php:4391 site/course/course-content.php:4635
+#: site/course/course-content.php:4790 site/course/course-content.php:4937
+#: site/course/course-content.php:5062 site/course/course-content.php:5189
+#: site/course/course-content.php:5322 site/course/course-content.php:5462
+#: site/course/course-content.php:5584
 msgid "SHARE"
 msgstr "ÎMPĂRTĂȘIȚI"
 
-#: site/course/course-content.php:376 site/course/course-content.php:3322
+#: site/course/course-content.php:376 site/course/course-content.php:3319
 msgid ""
 "Begin practicing the S.O.A.P.S. Bible reading between now and your next "
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
@@ -1522,7 +1653,7 @@ msgstr ""
 "puțin o dată pe zi. Faceți însemnări zilnice în jurnalul dvs. în formatul "
 "celor 5 pași."
 
-#: site/course/course-content.php:377 site/course/course-content.php:3323
+#: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
@@ -1533,11 +1664,11 @@ msgstr ""
 "5 pași(S.O.A.P.S). Practicați citirea Bibliei zilnic și apoi faceți asta."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
-#: site/course/course-content.php:3220 site/course/course-content.php:3225
+#: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
 msgstr "SESIUNEA 2"
 
-#: site/course/course-content.php:440 site/course/course-content.php:3259
+#: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
@@ -1545,7 +1676,7 @@ msgstr ""
 "Întrebați dacă cineva din grup are nevoi specifice pentru care ar dori ca "
 "grupul să se roage."
 
-#: site/course/course-content.php:441 site/course/course-content.php:3260
+#: site/course/course-content.php:441 site/course/course-content.php:3257
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
@@ -1561,6 +1692,23 @@ msgstr "Cereți Duhului Sfânt al lui Dumnezeu să vă conducă timpul împreun�
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
 #: site/course/course-content.php:1733 site/course/course-content.php:1954
 #: site/course/course-content.php:2170 site/course/course-content.php:2369
+#: site/course/course-content.php:2864 site/course/course-content.php:3268
+#: site/course/course-content.php:3389 site/course/course-content.php:3511
+#: site/course/course-content.php:3641 site/course/course-content.php:3783
+#: site/course/course-content.php:3911 site/course/course-content.php:4056
+#: site/course/course-content.php:4180 site/course/course-content.php:4333
+#: site/course/course-content.php:4465 site/course/course-content.php:4579
+#: site/course/course-content.php:4710 site/course/course-content.php:4864
+#: site/course/course-content.php:5012 site/course/course-content.php:5137
+#: site/course/course-content.php:5266 site/course/course-content.php:5399
+#: site/course/course-content.php:5536 site/course/course-content.php:5662
+msgid "LOOK BACK"
+msgstr "PRIVEȘTE ÎN URMĂ"
+
+#: site/course/course-content.php:455 site/course/course-content.php:779
+#: site/course/course-content.php:1123 site/course/course-content.php:1498
+#: site/course/course-content.php:1736 site/course/course-content.php:1957
+#: site/course/course-content.php:2173 site/course/course-content.php:2372
 #: site/course/course-content.php:2867 site/course/course-content.php:3271
 #: site/course/course-content.php:3392 site/course/course-content.php:3514
 #: site/course/course-content.php:3644 site/course/course-content.php:3786
@@ -1571,24 +1719,6 @@ msgstr "Cereți Duhului Sfânt al lui Dumnezeu să vă conducă timpul împreun�
 #: site/course/course-content.php:5015 site/course/course-content.php:5140
 #: site/course/course-content.php:5269 site/course/course-content.php:5402
 #: site/course/course-content.php:5539 site/course/course-content.php:5665
-#, fuzzy
-msgid "LOOK BACK"
-msgstr "PRIVIND ÎN URMĂ"
-
-#: site/course/course-content.php:455 site/course/course-content.php:779
-#: site/course/course-content.php:1123 site/course/course-content.php:1498
-#: site/course/course-content.php:1736 site/course/course-content.php:1957
-#: site/course/course-content.php:2173 site/course/course-content.php:2372
-#: site/course/course-content.php:2870 site/course/course-content.php:3274
-#: site/course/course-content.php:3395 site/course/course-content.php:3517
-#: site/course/course-content.php:3647 site/course/course-content.php:3789
-#: site/course/course-content.php:3917 site/course/course-content.php:4062
-#: site/course/course-content.php:4186 site/course/course-content.php:4339
-#: site/course/course-content.php:4471 site/course/course-content.php:4585
-#: site/course/course-content.php:4716 site/course/course-content.php:4870
-#: site/course/course-content.php:5018 site/course/course-content.php:5143
-#: site/course/course-content.php:5272 site/course/course-content.php:5405
-#: site/course/course-content.php:5542 site/course/course-content.php:5668
 msgid "Before getting started, take some time to look back."
 msgstr "Înainte de a începe, luați ceva timp să priviți înapoi."
 
@@ -1596,16 +1726,16 @@ msgstr "Înainte de a începe, luați ceva timp să priviți înapoi."
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
 #: site/course/course-content.php:1737 site/course/course-content.php:1958
 #: site/course/course-content.php:2174 site/course/course-content.php:2373
-#: site/course/course-content.php:2871 site/course/course-content.php:3275
-#: site/course/course-content.php:3396 site/course/course-content.php:3518
-#: site/course/course-content.php:3648 site/course/course-content.php:3790
-#: site/course/course-content.php:3918 site/course/course-content.php:4063
-#: site/course/course-content.php:4187 site/course/course-content.php:4340
-#: site/course/course-content.php:4472 site/course/course-content.php:4586
-#: site/course/course-content.php:4717 site/course/course-content.php:4871
-#: site/course/course-content.php:5019 site/course/course-content.php:5144
-#: site/course/course-content.php:5273 site/course/course-content.php:5406
-#: site/course/course-content.php:5543 site/course/course-content.php:5669
+#: site/course/course-content.php:2868 site/course/course-content.php:3272
+#: site/course/course-content.php:3393 site/course/course-content.php:3515
+#: site/course/course-content.php:3645 site/course/course-content.php:3787
+#: site/course/course-content.php:3915 site/course/course-content.php:4060
+#: site/course/course-content.php:4184 site/course/course-content.php:4337
+#: site/course/course-content.php:4469 site/course/course-content.php:4583
+#: site/course/course-content.php:4714 site/course/course-content.php:4868
+#: site/course/course-content.php:5016 site/course/course-content.php:5141
+#: site/course/course-content.php:5270 site/course/course-content.php:5403
+#: site/course/course-content.php:5540 site/course/course-content.php:5666
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
@@ -1617,16 +1747,16 @@ msgstr ""
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
 #: site/course/course-content.php:1738 site/course/course-content.php:1959
 #: site/course/course-content.php:2175 site/course/course-content.php:2374
-#: site/course/course-content.php:2872 site/course/course-content.php:3276
-#: site/course/course-content.php:3397 site/course/course-content.php:3519
-#: site/course/course-content.php:3649 site/course/course-content.php:3791
-#: site/course/course-content.php:3919 site/course/course-content.php:4064
-#: site/course/course-content.php:4188 site/course/course-content.php:4341
-#: site/course/course-content.php:4473 site/course/course-content.php:4587
-#: site/course/course-content.php:4718 site/course/course-content.php:4872
-#: site/course/course-content.php:5020 site/course/course-content.php:5145
-#: site/course/course-content.php:5274 site/course/course-content.php:5407
-#: site/course/course-content.php:5544 site/course/course-content.php:5670
+#: site/course/course-content.php:2869 site/course/course-content.php:3273
+#: site/course/course-content.php:3394 site/course/course-content.php:3516
+#: site/course/course-content.php:3646 site/course/course-content.php:3788
+#: site/course/course-content.php:3916 site/course/course-content.php:4061
+#: site/course/course-content.php:4185 site/course/course-content.php:4338
+#: site/course/course-content.php:4470 site/course/course-content.php:4584
+#: site/course/course-content.php:4715 site/course/course-content.php:4869
+#: site/course/course-content.php:5017 site/course/course-content.php:5142
+#: site/course/course-content.php:5271 site/course/course-content.php:5404
+#: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
 msgstr ""
 "Luați câteva momente pentru a vedea cum s-a isprăvit grupul dvs. săptămâna "
@@ -1635,13 +1765,13 @@ msgstr ""
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
-#: site/course/course-content.php:2899 site/course/course-content.php:5287
+#: site/course/course-content.php:2896 site/course/course-content.php:5284
 msgid "In this session, we will hear and discuss this concept:"
 msgstr "În această sesiune, vom auzi și vom discuta despre acest concept:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
-#: site/course/course-content.php:3534 site/course/course-content.php:3554
+#: site/course/course-content.php:3531 site/course/course-content.php:3551
 msgid "Producer Not Consumer"
 msgstr "Producător, nu consumator"
 
@@ -1658,7 +1788,7 @@ msgid ""
 msgstr ""
 "Dacă vrem să facem ucenici care se multiplică - producători spirituali și nu "
 "doar consumatori - atunci trebuie să învățăm și să împărtășim patru moduri "
-"principale prin care Dumnezeu îi face pe urmașii  Lui zi cu zi să fie mai "
+"principale prin care Dumnezeu îi face pe urmașii Lui zi cu zi să fie mai "
 "mult ca Isus:"
 
 #: site/course/course-content.php:499
@@ -1690,10 +1820,10 @@ msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
 msgstr ""
-"Biblia ne spune că rugăciunea este șansa noastră de a vorbi și de a-L auzi  "
+"Biblia ne spune că rugăciunea este șansa noastră de a vorbi și de a-L auzi "
 "pe Dumnezeu care ne-a creat!"
 
-#: site/course/course-content.php:571 site/course/course-content.php:3677
+#: site/course/course-content.php:571 site/course/course-content.php:3674
 msgid "Pray the Prayer Cycle for an hour individually"
 msgstr "Rugați-vă CONFORM ciclului de rugăciune timp de o oră individual"
 
@@ -1703,7 +1833,7 @@ msgstr ""
 "Scanați codul QR pentru a obține ghidul despre ciclului de rugăciune pe "
 "telefon d-tră."
 
-#: site/course/course-content.php:573 site/course/course-content.php:3678
+#: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
 "Set a time for the group to return and reconnect. Be sure to add a few extra "
 "minutes for everyone to both find a quiet place to pray and to make their "
@@ -1787,7 +1917,7 @@ msgstr "Ascultă"
 msgid "Share"
 msgstr "Acțiune"
 
-#: site/course/course-content.php:686 site/course/course-content.php:3573
+#: site/course/course-content.php:686 site/course/course-content.php:3570
 msgid ""
 "Spend time this week praying for five people from your List of 100 that you "
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
@@ -1798,21 +1928,21 @@ msgstr ""
 "„Necunoscuți”. Rugați-vă ca Dumnezeu să le pregătească inimile să fie "
 "receptive la povestea Sa."
 
-#: site/course/course-content.php:687 site/course/course-content.php:3574
+#: site/course/course-content.php:687 site/course/course-content.php:3571
 msgid ""
 "Ask God who He wants you to share the List of 100 tool with. Share this "
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
-"Întreabă-l pe Dumnezeu cui dorește El să împărtășești acest instrument „"
-"lista de 100”. Împărtășește numele acestei persoane cu grupul înainte de a "
+"Întreabă-l pe Dumnezeu cui dorește El să împărtășești acest instrument "
+"„lista de 100”. Împărtășește numele acestei persoane cu grupul înainte de a "
 "merge și ajunge la ea până la următoarea sesiune."
 
-#: site/course/course-content.php:697 site/course/course-content.php:6023
+#: site/course/course-content.php:697 site/course/course-content.php:6020
 msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "Să umplem lumea cu ucenici care se multiplică în generația noastră."
 
-#: site/course/course-content.php:699 site/course/course-content.php:6025
+#: site/course/course-content.php:699 site/course/course-content.php:6022
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
@@ -1821,11 +1951,11 @@ msgstr ""
 "făcând mișcări."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
-#: site/course/course-content.php:3343 site/course/course-content.php:3348
+#: site/course/course-content.php:3340 site/course/course-content.php:3345
 msgid "SESSION 3"
 msgstr "SESIUNEA 3"
 
-#: site/course/course-content.php:766 site/course/course-content.php:3776
+#: site/course/course-content.php:766 site/course/course-content.php:3773
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
@@ -1881,8 +2011,8 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"Isus a spus: „ Duceți-vă și faceți ucenici din toate neamurile, botezându-i "
-"în Numele Tatălui și al Fiului și al Sfântului Duh…” "
+"Isus a spus:„ Duceți-vă și faceți ucenici din toate neamurile, botezându-i "
+"în Numele Tatălui și al Fiului și al Sfântului Duh…”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -1912,7 +2042,7 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"Dacă nu, atunci te sfătuim să faci acest lucru  în conformitate cu tradiția "
+"Dacă nu, atunci te sfătuim să faci acest lucru în conformitate cu tradiția "
 "și învățătura bisericii de care te alăturezi. Invită grupul să sărbătorească "
 "împreună cu tine ziua în care îi spui „Da” lui Isus."
 
@@ -1920,7 +2050,7 @@ msgstr ""
 msgid "The Spiritual Economy"
 msgstr "Economia Spirituală"
 
-#: site/course/course-content.php:1036 site/course/course-content.php:3987
+#: site/course/course-content.php:1036 site/course/course-content.php:3984
 msgid ""
 "Ask God who He wants you to train to use the Creation to Judgment story (or "
 "some other way to share God’s story). Share this person’s name with the "
@@ -1930,7 +2060,7 @@ msgstr ""
 "istoria de la Creație la Judecată (sau un alt mod de a împărtăși Istoria lui "
 "Dumnezeu). Împărtășește numele acestei persoane cu grupul înainte de a pleca."
 
-#: site/course/course-content.php:1037 site/course/course-content.php:3988
+#: site/course/course-content.php:1037 site/course/course-content.php:3985
 msgid ""
 "Spend time this week practicing God’s story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
@@ -1949,17 +2079,16 @@ msgstr ""
 "următoarei sesiuni. Puteți face și în conformitate cu tradiția și învățătura "
 "bisericii din care faci parte.Pregătiți cele necesare (pâine și vin/suc)."
 
-#: site/course/course-content.php:1048 site/course/course-content.php:4264
+#: site/course/course-content.php:1048 site/course/course-content.php:4261
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
 "NOTĂ IMPORTANTĂ - Grupul poate să sărbătorească Cina Domnului în timpul "
-"următoarei sesiuni. Puteți face și în conformitate cu tradiția și învățătura "
-"bisericii  din care faci parte.Pregătiți cele necesare (pâine și vin/suc)."
+"următoarei sesiuni. Pregătiți cele necesare (pâine și vin/suc)."
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
-#: site/course/course-content.php:3465 site/course/course-content.php:3470
+#: site/course/course-content.php:3462 site/course/course-content.php:3467
 msgid "SESSION 4"
 msgstr "SESIUNEA 4"
 
@@ -1980,9 +2109,8 @@ msgstr ""
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
-#: site/course/course-content.php:4080 site/course/course-content.php:4097
-#: site/course/course-content.php:4203 site/course/course-content.php:4238
-#, fuzzy
+#: site/course/course-content.php:4077 site/course/course-content.php:4094
+#: site/course/course-content.php:4200 site/course/course-content.php:4235
 msgid "Three-Minute Testimony"
 msgstr "Mărturia în trei minute"
 
@@ -2001,7 +2129,7 @@ msgstr ""
 
 #: site/course/course-content.php:1189
 msgid "Practice sharing your testimony"
-msgstr "Exersați împărtășirea  mărturiei"
+msgstr "Exersați împărtășirea mărturiei"
 
 #: site/course/course-content.php:1192
 msgid ""
@@ -2013,8 +2141,8 @@ msgstr ""
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
 msgstr ""
-"Împărțiți-vă în grupuri de câte doi până la trei și exersați împărtășirea. ("
-"20 min)"
+"Împărțiți-vă în grupuri de câte doi până la trei și exersați împărtășirea. "
+"(20 min)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
@@ -2081,7 +2209,7 @@ msgid ""
 "wants to work the most."
 msgstr ""
 "Ați vizitat vreodată o casă sau un cartier sau chiar un oraș în care părea "
-"că Dumnezeu  ... lipsea? Acestea sunt de obicei locurile în care Dumnezeu "
+"că Dumnezeu ... lipsea? Acestea sunt de obicei locurile în care Dumnezeu "
 "vrea să lucreze cel mai mult."
 
 #: site/course/course-content.php:1334
@@ -2132,7 +2260,7 @@ msgstr ""
 "împărtășește-o cu cel puțin o persoană din Lista ta de 100 pe care ai marcat-"
 "o ca „Necredincios” sau „Necunoscut”."
 
-#: site/course/course-content.php:1425 site/course/course-content.php:4254
+#: site/course/course-content.php:1425 site/course/course-content.php:4251
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
@@ -2142,7 +2270,7 @@ msgstr ""
 "de a pleca."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
-#: site/course/course-content.php:3595 site/course/course-content.php:3600
+#: site/course/course-content.php:3592 site/course/course-content.php:3597
 msgid "SESSION 5"
 msgstr "SESIUNEA 5"
 
@@ -2155,8 +2283,8 @@ msgstr ""
 "acționează prin mărturia poporului Său. Invitați Duhul Sfânt să vă "
 "călăuzească timpul petrecut împreună."
 
-#: site/course/course-content.php:1519 site/course/course-content.php:4606
-#: site/course/course-content.php:4626
+#: site/course/course-content.php:1519 site/course/course-content.php:4603
+#: site/course/course-content.php:4623
 msgid "B.L.E.S.S. Prayer"
 msgstr "rugăciunea B.L.E.S.S.(cele cinci sfere ale vieții omului)"
 
@@ -2167,7 +2295,7 @@ msgid ""
 msgstr ""
 "Plimbarea de rugăciune este o modalitate simplă de a asculta de porunca lui "
 "Dumnezeu care zice să ne rugăm pentru alții. Plimbarea de rugăciune "
-"corespunde exact denumirii - te rogi în timp ce te plimbi."
+"corespunde exact denumirii - te rogi în timp ce te plimbi!"
 
 #: site/course/course-content.php:1567
 msgid ""
@@ -2221,15 +2349,15 @@ msgstr ""
 msgid "Prayer Walking Activity"
 msgstr "Activitate: Plimbarea de Rugăciune"
 
-#: site/course/course-content.php:1638 site/course/course-content.php:4503
+#: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr ""
 "Împărțiți-vă în grupuri de două sau trei persoane și ieșiți în comunitate "
-"pentru a exersa  Plimbarea de Rugăciune."
+"pentru a exersa Plimbarea de Rugăciune."
 
-#: site/course/course-content.php:1639 site/course/course-content.php:4504
+#: site/course/course-content.php:1639 site/course/course-content.php:4501
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
@@ -2237,16 +2365,15 @@ msgstr ""
 "Alegerea unui traseu este destul de simplă: pur și simplu ieșiți afară sau "
 "puteți planifica o călătorie într-un anumit loc."
 
-#: site/course/course-content.php:1640 site/course/course-content.php:4505
+#: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr ""
 "Mergeți așa cum vă conduce Dumnezeu și planificați să cheltuiți 60-90 de "
 "minute pentru această activitate."
 
 #: site/course/course-content.php:1641
-#, fuzzy
 msgid "This session ends with the prayer walking activity."
-msgstr "Această sesiune se încheie cu plimbarea de rugăciune."
+msgstr "Această sesiune se încheie cu activitatea de mers în rugăciune."
 
 #: site/course/course-content.php:1660
 msgid ""
@@ -2272,11 +2399,11 @@ msgstr ""
 "timpul plimbării voastre pentru a fi deschisi la lucrarea Lui."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
-#: site/course/course-content.php:3737 site/course/course-content.php:3742
+#: site/course/course-content.php:3734 site/course/course-content.php:3739
 msgid "SESSION 6"
 msgstr "SESIUNEA 6"
 
-#: site/course/course-content.php:1723 site/course/course-content.php:4572
+#: site/course/course-content.php:1723 site/course/course-content.php:4569
 msgid ""
 "Pray and thank God for what He did in the last session, ask Him to help when "
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
@@ -2291,9 +2418,9 @@ msgid "Faithfulness is Better than Knowledge"
 msgstr "Credincioșia este Mai Bună Decât Cunoașterea"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
-#: site/course/course-content.php:2393 site/course/course-content.php:3536
-#: site/course/course-content.php:4359 site/course/course-content.php:4604
-#: site/course/course-content.php:5291
+#: site/course/course-content.php:2393 site/course/course-content.php:3533
+#: site/course/course-content.php:4356 site/course/course-content.php:4601
+#: site/course/course-content.php:5288
 msgid "And we will add this tool to our toolkit:"
 msgstr "Și vom adăuga acest instrument la setul nostru de instrumente:"
 
@@ -2302,10 +2429,10 @@ msgstr "Și vom adăuga acest instrument la setul nostru de instrumente:"
 #: site/course/course-content.php:1978 site/course/course-content.php:2038
 #: site/course/course-content.php:2084 site/course/course-content.php:2194
 #: site/course/course-content.php:2253 site/course/course-content.php:2283
-#: site/course/course-content.php:4734 site/course/course-content.php:4748
-#: site/course/course-content.php:4781 site/course/course-content.php:4887
-#: site/course/course-content.php:4895 site/course/course-content.php:4902
-#: site/course/course-content.php:4928
+#: site/course/course-content.php:4731 site/course/course-content.php:4745
+#: site/course/course-content.php:4778 site/course/course-content.php:4884
+#: site/course/course-content.php:4892 site/course/course-content.php:4899
+#: site/course/course-content.php:4925
 msgid "3/3 Group Meeting"
 msgstr "Întâlnirile de Grup 3/3"
 
@@ -2327,7 +2454,7 @@ msgstr ""
 "Reflectați asupra poruncilor lui Dumnezeu pe care le cunoașteți. Cât de "
 "„devotați” sunteți în a le respecta și în ce mod le transmiteți celorlalți?"
 
-#: site/course/course-content.php:1817 site/course/course-content.php:4749
+#: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
 "In the following video, you’ll be coached through an interactive 3/3 Group "
 "where you’ll learn a principle and then “press pause” and practice it with "
@@ -2337,7 +2464,7 @@ msgstr ""
 "veți învăța un principiu și apoi „apăsați pauză” și îl veți exersa împreună "
 "cu grupul."
 
-#: site/course/course-content.php:1843 site/course/course-content.php:4763
+#: site/course/course-content.php:1843 site/course/course-content.php:4760
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
@@ -2347,12 +2474,12 @@ msgstr ""
 "mic la care ai participat (sau despre care ai auzit) în trecut? Dacă da, cum "
 "ar influența aceste diferențe dinamica grupului?"
 
-#: site/course/course-content.php:1844 site/course/course-content.php:4764
+#: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 msgstr ""
 "Un grup 3/3 poate fi considerat o biserică simplă? De ce da sau de ce nu?"
 
-#: site/course/course-content.php:1879 site/course/course-content.php:4796
+#: site/course/course-content.php:1879 site/course/course-content.php:4793
 msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
@@ -2360,7 +2487,7 @@ msgstr ""
 "Petreceți timp săptămâna aceasta ascultând, instruind și împărtășind în baza "
 "angajamentelor pe care le-ați luat în timpul exersării Grupului 3/3."
 
-#: site/course/course-content.php:1880 site/course/course-content.php:4797
+#: site/course/course-content.php:1880 site/course/course-content.php:4794
 msgid ""
 "Pray and ask God who He wants you to share the 3/3 Group format with before "
 "your group meets again. Share this person’s name with the group before you "
@@ -2371,11 +2498,11 @@ msgstr ""
 "Împărtășește numele acelei persoane cu grupul înainte de a pleca."
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
-#: site/course/course-content.php:3865 site/course/course-content.php:3870
+#: site/course/course-content.php:3862 site/course/course-content.php:3867
 msgid "SESSION 7"
 msgstr "SESIUNEA 7"
 
-#: site/course/course-content.php:1944 site/course/course-content.php:4857
+#: site/course/course-content.php:1944 site/course/course-content.php:4854
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
@@ -2415,7 +2542,7 @@ msgstr ""
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
-msgstr "Cum ți-ar părea să instruiești pe cineva în așa fel? "
+msgstr "Cum ți-ar părea să instruiești pe cineva în așa fel?"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
 msgid ""
@@ -2439,8 +2566,8 @@ msgid ""
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
 "PRIVEȘTE ÎNAINTE - Folosiți întrebările 5, 6 și 7 din secțiunea Privește "
-"Înainte pentru a dezvolta modul în care veți Asculta, Instrui și Împărtăși.("
-"30 min)"
+"Înainte pentru a dezvolta modul în care veți Asculta, Instrui și Împărtăși."
+"(30 min)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2450,22 +2577,22 @@ msgstr "Ce ți-a plăcut cel mai mult la grupul 3/3? De ce?"
 msgid "What was the most challenging? Why?"
 msgstr "Care a fost cel mai provocator? De ce?"
 
-#: site/course/course-content.php:2078 site/course/course-content.php:3070
-#: site/course/course-content.php:3552 site/course/course-content.php:4620
-#: site/course/course-content.php:5307
+#: site/course/course-content.php:2078 site/course/course-content.php:3067
+#: site/course/course-content.php:3549 site/course/course-content.php:4617
+#: site/course/course-content.php:5304
 msgid "Concept heard in this session:"
 msgstr "Concept auzit în această sesiune:"
 
-#: site/course/course-content.php:2082 site/course/course-content.php:3305
-#: site/course/course-content.php:3426 site/course/course-content.php:3556
-#: site/course/course-content.php:3698 site/course/course-content.php:3970
-#: site/course/course-content.php:4094 site/course/course-content.php:4380
-#: site/course/course-content.php:4624 site/course/course-content.php:4926
-#: site/course/course-content.php:5311 site/course/course-content.php:5573
+#: site/course/course-content.php:2082 site/course/course-content.php:3302
+#: site/course/course-content.php:3423 site/course/course-content.php:3553
+#: site/course/course-content.php:3695 site/course/course-content.php:3967
+#: site/course/course-content.php:4091 site/course/course-content.php:4377
+#: site/course/course-content.php:4621 site/course/course-content.php:4923
+#: site/course/course-content.php:5308 site/course/course-content.php:5570
 msgid "Tool heard in this session:"
 msgstr "Instrument auzit în această sesiune:"
 
-#: site/course/course-content.php:2099 site/course/course-content.php:5068
+#: site/course/course-content.php:2099 site/course/course-content.php:5065
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
@@ -2482,11 +2609,11 @@ msgstr ""
 "generație suplimentară (a cincea)."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
-#: site/course/course-content.php:4010 site/course/course-content.php:4015
+#: site/course/course-content.php:4007 site/course/course-content.php:4012
 msgid "SESSION 8"
 msgstr "SESIUNEA 8"
 
-#: site/course/course-content.php:2160 site/course/course-content.php:5130
+#: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
 "Pray and thank God for giving your group the energy, the focus and the "
 "faithfulness to come so far in this training. Ask God to have His Holy "
@@ -2494,7 +2621,7 @@ msgid ""
 msgstr ""
 "Rugați-vă și mulțumiți lui Dumnezeu că El a oferit grupului dvs. energia, "
 "concentrarea și credincioșia de a ajunge până acum în acest training. Rugați-"
-"vă lui Dumnezeu ca Duhul Său cel Sfânt să  amintească tuturor celor din grup "
+"vă lui Dumnezeu ca Duhul Său cel Sfânt să amintească tuturor celor din grup "
 "că nu pot face nimic fără El!"
 
 #: site/course/course-content.php:2192
@@ -2513,7 +2640,7 @@ msgid ""
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
 "Există un grup de urmași ai lui Isus pe care îi cunoașteți deja sau ar fi "
-"dispuși să se întâlnească și să formeze o Celulă Zúme  pentru a învăța "
+"dispuși să se întâlnească și să formeze o Celulă Zúme pentru a învăța "
 "Trainingul Zúme ?"
 
 #: site/course/course-content.php:2240
@@ -2565,11 +2692,11 @@ msgstr ""
 "Provocă-i să-l împărtășească apoi cu altcineva."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
-#: site/course/course-content.php:4134 site/course/course-content.php:4139
+#: site/course/course-content.php:4131 site/course/course-content.php:4136
 msgid "SESSION 9"
 msgstr "SESIUNEA 9"
 
-#: site/course/course-content.php:2359 site/course/course-content.php:5392
+#: site/course/course-content.php:2359 site/course/course-content.php:5389
 msgid ""
 "Pray and thank God that his ways are not our ways and His thoughts are not "
 "our thoughts. Ask Him to give each member of your group the mind of Christ - "
@@ -2583,13 +2710,13 @@ msgstr ""
 "și să faceți acum cea mai bună sesiune."
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
-#: site/course/course-content.php:2414 site/course/course-content.php:2772
+#: site/course/course-content.php:2414 site/course/course-content.php:2769
 msgid "Non-Sequential Growth"
 msgstr "Creștere Simultană (non-secvențială)"
 
-#: site/course/course-content.php:2396 site/course/course-content.php:2638
-#: site/course/course-content.php:2644 site/course/course-content.php:2779
-#: site/course/course-content.php:5422 site/course/course-content.php:5452
+#: site/course/course-content.php:2396 site/course/course-content.php:2635
+#: site/course/course-content.php:2641 site/course/course-content.php:2776
+#: site/course/course-content.php:5419 site/course/course-content.php:5449
 msgid "Four Fields"
 msgstr "Patru Câmpuri"
 
@@ -2683,15 +2810,23 @@ msgstr ""
 "utilizat pentru a ghida pe alții prin diferitele etape ale devenirii unui "
 "ucenic complet echipat."
 
-#: site/course/course-content.php:2599
+#: site/course/course-content.php:2576
+msgid ""
+"Self-Evaluate yourself using line 1 and mark the corresponding columns on "
+"the Coaching Checklist."
+msgstr ""
+"Autoevaluează-te folosind rândul 1 și marchează coloanele corespunzătoare pe "
+"Lista de verificare a instruirii."
+
+#: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
 msgstr "Ce instrumente și concepte ați simțit că veți putea să instruiți bine?"
 
-#: site/course/course-content.php:2600
+#: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
 msgstr "Ce instrumente și concepte simțiti că veți putea să instruiți bine?"
 
-#: site/course/course-content.php:2601
+#: site/course/course-content.php:2598
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
@@ -2699,7 +2834,7 @@ msgstr ""
 "Există instrumente de instruire sau concepte pe care le-ați adăuga sau "
 "scădea din lista de verificare? De ce?"
 
-#: site/course/course-content.php:2613
+#: site/course/course-content.php:2610
 msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
@@ -2707,15 +2842,15 @@ msgstr ""
 "TINE MINTE - Asigurați-vă că împărtășiți rezultatele listei dvs. de "
 "verificare a antrenorului cu partenerul de instruire sau cu un alt mentor."
 
-#: site/course/course-content.php:2614
+#: site/course/course-content.php:2611
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
 "Dacă nu aveți un antrenor sau un mentor, scanați codul QR și solicitați unul "
 "acum."
 
-#: site/course/course-content.php:2619 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:183 site/pages/about.php:254
+#: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
+#: site/dashboard/wizard.php:201 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
@@ -2724,7 +2859,7 @@ msgstr ""
 msgid "Get a Coach"
 msgstr "Găsește un Antrenor"
 
-#: site/course/course-content.php:2629
+#: site/course/course-content.php:2626
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
@@ -2732,7 +2867,7 @@ msgstr ""
 "Cele Patru Câmpuri și Harta Generațională reprezintă instrumente create "
 "pentru a susține inițiativele în expansiune."
 
-#: site/course/course-content.php:2630
+#: site/course/course-content.php:2627
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
@@ -2740,7 +2875,7 @@ msgstr ""
 "MEMENTO: Antrenorii Zúme sunt disponibili pentru a vă asista în aplicarea "
 "acestor instrumente în zona dumneavoastră locală."
 
-#: site/course/course-content.php:2645
+#: site/course/course-content.php:2642
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
@@ -2748,7 +2883,7 @@ msgstr ""
 "Frecvent, Isus își retrăgea ucenicii din serviciul activ către locuri mai "
 "retrase pentru a evalua progresul lucrării lor."
 
-#: site/course/course-content.php:2646
+#: site/course/course-content.php:2643
 msgid ""
 "Four Fields is used by a leadership cell to reflect on current efforts and "
 "Kingdom activity around them. It especially helps leaders balance efforts, "
@@ -2759,17 +2894,17 @@ msgstr ""
 "mod special liderii să echilibreze eforturile, asigurându-se că niciun "
 "aspect nu este neglijat."
 
-#: site/course/course-content.php:2647
+#: site/course/course-content.php:2644
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
 msgstr ""
 "Examinați următoarele două diapozitive: Descrieri ale Câmpului și Exemplu "
 "din Patru Câmpuri"
 
-#: site/course/course-content.php:2658
+#: site/course/course-content.php:2655
 msgid "Field Descriptions"
 msgstr "Descrierea Câmpului"
 
-#: site/course/course-content.php:2660
+#: site/course/course-content.php:2657
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
@@ -2777,7 +2912,7 @@ msgstr ""
 "Câmpul neprelucrat: Unde sau cu ce grupuri de oameni plănuiți să extindeți "
 "Împărăția?"
 
-#: site/course/course-content.php:2661
+#: site/course/course-content.php:2658
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
@@ -2785,7 +2920,7 @@ msgstr ""
 "Câmpul de semănat: Unde sau cu cine împărtășiți vestea bună a Împărăției? "
 "Cum procedați?"
 
-#: site/course/course-content.php:2662
+#: site/course/course-content.php:2659
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
@@ -2793,7 +2928,7 @@ msgstr ""
 "Câmp în creștere: Cum echipați oamenii și îi creșteți spiritual, individual "
 "și în rețelele lor naturale?"
 
-#: site/course/course-content.php:2663
+#: site/course/course-content.php:2660
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
@@ -2801,7 +2936,7 @@ msgstr ""
 "Câmp de recoltare: Cum se formează noile familii spirituale [bisericile "
 "simple]?"
 
-#: site/course/course-content.php:2664
+#: site/course/course-content.php:2661
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
@@ -2810,15 +2945,15 @@ msgstr ""
 "persoanele credincioase, le pregătești și le responsabilizezi pentru "
 "reproducere?"
 
-#: site/course/course-content.php:2678 site/course/course-content.php:2681
+#: site/course/course-content.php:2675 site/course/course-content.php:2678
 msgid "Four Fields Example"
 msgstr "Exemplu a „Cele Patru Câmpuri”"
 
-#: site/course/course-content.php:2698 site/course/course-content.php:2748
+#: site/course/course-content.php:2695 site/course/course-content.php:2745
 msgid "Discuss"
 msgstr "Discuta"
 
-#: site/course/course-content.php:2702
+#: site/course/course-content.php:2699
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
@@ -2827,7 +2962,7 @@ msgstr ""
 "de persoane cu care aveți legături nu au fost încă atinse de mesajul "
 "Evangheliei?"
 
-#: site/course/course-content.php:2703
+#: site/course/course-content.php:2700
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
@@ -2835,11 +2970,11 @@ msgstr ""
 "Cum este afectată creșterea pe termen lung dacă unul dintre câmpuri este "
 "neglijat? Dă exemple."
 
-#: site/course/course-content.php:2704
+#: site/course/course-content.php:2701
 msgid "Which Zúme tools could help in which field?"
 msgstr "Ce instrumente Zúme ar putea ajuta în ce domeniu?"
 
-#: site/course/course-content.php:2719
+#: site/course/course-content.php:2716
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
@@ -2848,7 +2983,7 @@ msgstr ""
 "generațiilor) este un alt instrument simplu pentru a ajuta liderii dintr-o "
 "mișcare să înțeleagă creșterea din jurul lor."
 
-#: site/course/course-content.php:2720
+#: site/course/course-content.php:2717
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
@@ -2861,37 +2996,37 @@ msgstr ""
 "unei mișcări este o prioritate pentru lideri, iar productivitatea servește "
 "ca principal indicator al acestei sănătăți."
 
-#: site/course/course-content.php:2721
+#: site/course/course-content.php:2718
 msgid "See the example on the next slide."
 msgstr "Vezi exemplul de pe următorul diapozitiv."
 
-#: site/course/course-content.php:2732
+#: site/course/course-content.php:2729
 msgid "Generational Mapping Example"
 msgstr "Exemplu de Harta Generațiilor"
 
-#: site/course/course-content.php:2751
+#: site/course/course-content.php:2748
 msgid "Use the Generational Mapping example to discuss the following:"
 msgstr ""
 "Utilizați exemplul de cartografiere generațională pentru a discuta "
 "următoarele:"
 
-#: site/course/course-content.php:2753
+#: site/course/course-content.php:2750
 msgid "Which leaders are seeing multiplication?"
 msgstr "Ce lideri se înmulțesc?"
 
-#: site/course/course-content.php:2754
+#: site/course/course-content.php:2751
 msgid "Which groups would you expect to multiply next?"
 msgstr "Ce grupuri v-ați aștepta să se multiplice în continuare?"
 
-#: site/course/course-content.php:2755
+#: site/course/course-content.php:2752
 msgid "Which leaders could help and strengthen other leaders?"
 msgstr "Ce fel de lideri pot ajuta și consolida alți lideri?"
 
-#: site/course/course-content.php:2756
+#: site/course/course-content.php:2753
 msgid "Do you see a pattern of weak accountability in any of the generations?"
 msgstr "Vedeți un model de responsabilitate slabă în vreuna dintre generații?"
 
-#: site/course/course-content.php:2795 site/course/course-content.php:5195
+#: site/course/course-content.php:2792 site/course/course-content.php:5192
 msgid ""
 "Practice sharing the concept of “Pace” with a friend and pray for the Lord "
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
@@ -2901,7 +3036,7 @@ msgstr ""
 "Domnul să îl înrădăcineze adânc în inima și sufletul vostru. Întreabă-L pe "
 "Domnul cu cine vrea să-l împărtășești."
 
-#: site/course/course-content.php:2796
+#: site/course/course-content.php:2793
 msgid ""
 "If you have already started your own simple church, share the concept  "
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
@@ -2911,19 +3046,19 @@ msgstr ""
 "parte din două biserici” oamenilor din ea. Dacă nu, împărtășește-l cu alt "
 "credincios pe care îl cunoști."
 
-#: site/course/course-content.php:2816 site/course/course-content.php:2821
-#: site/course/course-content.php:4287 site/course/course-content.php:4292
+#: site/course/course-content.php:2813 site/course/course-content.php:2818
+#: site/course/course-content.php:4284 site/course/course-content.php:4289
 msgid "SESSION 10"
 msgstr "SESIUNEA 10"
 
-#: site/course/course-content.php:2855
+#: site/course/course-content.php:2852
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
 "Roagă-te și mulțumește-i lui Dumnezeu că El este credincios pentru a duce la "
 "bun sfârșit lucrarea Sa bună în noi. "
 
-#: site/course/course-content.php:2856 site/course/course-content.php:5654
+#: site/course/course-content.php:2853 site/course/course-content.php:5651
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
@@ -2932,7 +3067,7 @@ msgstr ""
 "lucrurile grandioase pe care El dorește să le realizeze în și prin "
 "intermediul tău."
 
-#: site/course/course-content.php:2857 site/course/course-content.php:5655
+#: site/course/course-content.php:2854 site/course/course-content.php:5652
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
@@ -2940,11 +3075,11 @@ msgstr ""
 "Cereți Duhului Sfânt să vă ghideze timpul petrecut împreună și să-I "
 "mulțumiți pentru credincioșia Sa. El te-a ajutat să treci!"
 
-#: site/course/course-content.php:2882 site/course/course-content.php:5680
+#: site/course/course-content.php:2879 site/course/course-content.php:5677
 msgid "Be encouraged ..."
 msgstr "Fii incurajat ..."
 
-#: site/course/course-content.php:2883 site/course/course-content.php:5681
+#: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
 "You may not know it, but you now have more practical training on starting "
 "simple churches and making disciples who multiply than many pastors and "
@@ -2954,7 +3089,7 @@ msgstr ""
 "bisericile simple și a face ucenici care se multiplică decât mulți pastori "
 "și misionari din întreaga lume!"
 
-#: site/course/course-content.php:2884
+#: site/course/course-content.php:2881
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training and briefly introduce tools you’ll need "
@@ -2965,7 +3100,7 @@ msgstr ""
 "uneltele necesare pentru etapele ulterioare ale călătoriei dumneavoastră, pe "
 "măsură ce puneți în aplicare cunoștințele dobândite."
 
-#: site/course/course-content.php:2924
+#: site/course/course-content.php:2921
 msgid ""
 "What happens to churches as they grow and start new churches that start new "
 "churches? How do they stay connected and live life together as an extended, "
@@ -2975,7 +3110,7 @@ msgstr ""
 "încep biserici noi? Cum rămân ei conectați și trăiesc viața împreună ca o "
 "familie spirituală extinsă? Ei devin o rețea!"
 
-#: site/course/course-content.php:2949
+#: site/course/course-content.php:2946
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
@@ -2983,14 +3118,14 @@ msgstr ""
 "Există avantaje atunci când rețelele de biserici simple sunt conectate prin "
 "relații personale, profunde? Care sunt câteva exemple care vin în minte?"
 
-#: site/course/course-content.php:2967
+#: site/course/course-content.php:2964
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
 "A forma ucenici care la rândul lor formează ucenici înseamnă a dezvolta "
 "lideri care creează alți lideri."
 
-#: site/course/course-content.php:2968
+#: site/course/course-content.php:2965
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
@@ -2999,11 +3134,11 @@ msgstr ""
 "susțină reciproc și să se încurajeze în credința și rolurile lor de "
 "conducere."
 
-#: site/course/course-content.php:2992
+#: site/course/course-content.php:2989
 msgid "Peer Mentoring Group Practice"
 msgstr "Practică de grup de mentorat între egali"
 
-#: site/course/course-content.php:2995
+#: site/course/course-content.php:2992
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
@@ -3011,7 +3146,7 @@ msgstr ""
 "Formați grupuri de doi sau trei. Aplicați structura grupului de mentorat "
 "între egali, organizată în formatul 3/3."
 
-#: site/course/course-content.php:2996
+#: site/course/course-content.php:2993
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
@@ -3019,20 +3154,20 @@ msgstr ""
 "Alegeți o persoană din grup care să fie „mentorat” și rugați-i pe ceilalți "
 "membri să treacă prin lista de întrebări sugerate ca mentori."
 
-#: site/course/course-content.php:3017
+#: site/course/course-content.php:3014
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
 "În Biblia Sa, Dumnezeu spune: „Căci Eu cunosc planurile pe care le am cu "
 "privire la voi, zice Domnul, planuri de pace şi nu de nenorocire, ca să vă "
-"dau un viitor şi o nădejde.”."
+"dau un viitor şi o nădejde.”"
 
-#: site/course/course-content.php:3018
+#: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr "Dumnezeu face planuri și El se așteaptă să facem și noi planuri."
 
-#: site/course/course-content.php:3019 site/dashboard/dashboard.php:208
+#: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
@@ -3042,7 +3177,7 @@ msgstr ""
 "vă ajuta să vă concentrați atenția și eforturile și să le mențineți aliniate "
 "cu prioritățile lui Dumnezeu pentru a face discipoli care se înmulțesc."
 
-#: site/course/course-content.php:3020
+#: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
@@ -3050,11 +3185,11 @@ msgstr ""
 "Următorul diapozitiv vă va arăta cum să vă faceți planul pe trei luni. Vă "
 "recomandăm să utilizați instrumentul online."
 
-#: site/course/course-content.php:3033
+#: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
 msgstr "Fă-ți un plan pe trei luni"
 
-#: site/course/course-content.php:3035
+#: site/course/course-content.php:3032
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
@@ -3063,7 +3198,7 @@ msgstr ""
 "articol, acestea sunt doar menționate ca sugestii pentru planul dvs. (5 "
 "minute)"
 
-#: site/course/course-content.php:3036
+#: site/course/course-content.php:3033
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
@@ -3071,7 +3206,7 @@ msgstr ""
 "Ascultă - Alocă timp pentru a fi în cea mai mare liniște posibilă și ascultă "
 "ceea ce Dumnezeu decide să îți reveleze. (10 minute)"
 
-#: site/course/course-content.php:3037
+#: site/course/course-content.php:3034
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
@@ -3079,16 +3214,16 @@ msgstr ""
 "Înregistrați-vă planul - Scrieți angajamentele pe o foaie de hârtie sau "
 "utilizați instrumentul online pentru a vă salva răspunsurile. (15 minute)"
 
-#: site/course/course-content.php:3043
+#: site/course/course-content.php:3040
 msgid "Online Plan Tool"
 msgstr "Instrumentul Plan online"
 
-#: site/course/course-content.php:3056
+#: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
 msgstr ""
 "Vă rog să împărtășiți planurile dumneavoastră pentru următoarele trei luni."
 
-#: site/course/course-content.php:3057
+#: site/course/course-content.php:3054
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
@@ -3096,7 +3231,7 @@ msgstr ""
 "Găsiți un partener(i) de antrenament care este dispus(ă) să vă verifice "
 "săptămânal. Angajați-vă să faceți același lucru pentru ei."
 
-#: site/course/course-content.php:3198
+#: site/course/course-content.php:3195
 msgid ""
 "Practice sharing these definitions with a friend and pray for the Lord to "
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
@@ -3106,7 +3241,7 @@ msgstr ""
 "Domnul să le înrădăcineze adânc în inima și sufletul vostru. Întreabă-L pe "
 "Domnul cu cine ar vrea să le împărtășești."
 
-#: site/course/course-content.php:3199
+#: site/course/course-content.php:3196
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
@@ -3114,19 +3249,19 @@ msgstr ""
 "Împărtășiți definițiile cu cei cu care Domnul vă îndeamnă să faceți acest "
 "lucru. Apoi echipați-i să-l împărtășească cu altcineva."
 
-#: site/course/course-content.php:3261
+#: site/course/course-content.php:3258
 msgid "Ask God’s Holy Spirit to lead your time, together."
 msgstr "Cereți Duhului Sfânt al lui Dumnezeu să vă conducă timpul împreună."
 
-#: site/course/course-content.php:3289 site/course/course-content.php:3410
-#: site/course/course-content.php:3662 site/course/course-content.php:4486
-#: site/course/course-content.php:5557 site/course/course-content.php:5697
+#: site/course/course-content.php:3286 site/course/course-content.php:3407
+#: site/course/course-content.php:3659 site/course/course-content.php:4483
+#: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
 msgstr ""
 "În această sesiune, vom adăuga acest instrument la setul nostru de "
 "instrumente:"
 
-#: site/course/course-content.php:3382
+#: site/course/course-content.php:3379
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
@@ -3135,7 +3270,7 @@ msgstr ""
 "Să ne rugăm pentru fiecare persoană din grup, să aibă urechi de auzit vocea "
 "Lui și harul de a asculta ceea ce El spune."
 
-#: site/course/course-content.php:3443
+#: site/course/course-content.php:3440
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
@@ -3143,7 +3278,7 @@ msgstr ""
 "Căutați un partener de responsabilitate de același sex și începeți "
 "întâlnirile săptămânale."
 
-#: site/course/course-content.php:3444
+#: site/course/course-content.php:3441
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
@@ -3152,7 +3287,7 @@ msgstr ""
 "cunoașteți și care sunt credincioși să înceapă propria lor întâlnire a "
 "grupului de responsabilitate și apoi să facă acest lucru."
 
-#: site/course/course-content.php:3504
+#: site/course/course-content.php:3501
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
@@ -3160,11 +3295,11 @@ msgstr ""
 "Rugați-vă și mulțumiți-i lui Dumnezeu că ne modelează după chipul lui Isus. "
 "Invitați Duhul Sfânt să vă călăuzească timpul petrecut împreună."
 
-#: site/course/course-content.php:3532 site/course/course-content.php:4600
+#: site/course/course-content.php:3529 site/course/course-content.php:4597
 msgid "In this session, we will hear and discuss the concept:"
 msgstr "În această sesiune, vom auzi și vom discuta despre conceptul:"
 
-#: site/course/course-content.php:3634
+#: site/course/course-content.php:3631
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
@@ -3173,11 +3308,11 @@ msgstr ""
 "oamenii din viețile noastre. Roagă-te pentru fiecare persoană din grupul "
 "tău, să poată vedea pe ceilalți așa cum îi vede Dumnezeu."
 
-#: site/course/course-content.php:3664 site/course/course-content.php:3700
+#: site/course/course-content.php:3661 site/course/course-content.php:3697
 msgid "The Prayer Cycle"
 msgstr "Ciclul Rugăciunii"
 
-#: site/course/course-content.php:3679
+#: site/course/course-content.php:3676
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
@@ -3186,7 +3321,7 @@ msgstr ""
 "minute întregi pe fiecare secțiune. Aceasta va extinde sesiunea la mai mult "
 "de o oră de exerciții."
 
-#: site/course/course-content.php:3680
+#: site/course/course-content.php:3677
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
@@ -3194,14 +3329,14 @@ msgstr ""
 "Dacă nu este posibil să aveți o sesiune mai extinsă, scurtați secțiunile de "
 "rugăciune de la cinci minute la trei minute fiecare."
 
-#: site/course/course-content.php:3715
+#: site/course/course-content.php:3712
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
 "Folosiți ciclul de rugăciune ca ghid pe parcursul unei ore de rugăciune în "
 "această săptămână."
 
-#: site/course/course-content.php:3716
+#: site/course/course-content.php:3713
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
@@ -3209,7 +3344,7 @@ msgstr ""
 "Distribuiți ciclul de rugăciune oricui vă îndrumă Domnul. Încurajați-i să-l "
 "partajeze și cu alții."
 
-#: site/course/course-content.php:3842
+#: site/course/course-content.php:3839
 msgid ""
 "Practice sharing the Spiritual Economy concept with a friend and pray for "
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
@@ -3219,7 +3354,7 @@ msgstr ""
 "rugați-vă ca Domnul să îl înrădăcineze adânc în inima și sufletul vostru. "
 "Întreabă-L pe Domnul cu cine vrea să-l împărtășești."
 
-#: site/course/course-content.php:3843
+#: site/course/course-content.php:3840
 msgid ""
 "Ask God who He wants you to share with about the Greatest Blessing. Have "
 "them practice it as well. Share this person‘s name with the group before you "
@@ -3229,7 +3364,7 @@ msgstr ""
 "Binecuvântare. Încurajați-i și pe alții să facă la fel. Împărtășiți numele "
 "persoanei respective grupului înainte de a iniția contactul cu ea."
 
-#: site/course/course-content.php:3904
+#: site/course/course-content.php:3901
 msgid ""
 "Pray for each member of your group to experience the blessings of following "
 "Jesus, leading others to follow Jesus, and equipping others to start new "
@@ -3239,22 +3374,22 @@ msgstr ""
 "binecuvântările de a-l urma pe Isus, de a-i determina pe alții să-L urmeze "
 "pe Isus și de ai echipa pe alții pentru a întemeia noi familii spirituale."
 
-#: site/course/course-content.php:3932 site/course/course-content.php:4201
-#: site/course/course-content.php:4885
+#: site/course/course-content.php:3929 site/course/course-content.php:4198
+#: site/course/course-content.php:4882
 msgid "In this session, we will practice this tool in our toolkit:"
 msgstr ""
 "În această sesiune, vom exersa acest instrument din setul nostru de "
 "instrumente:"
 
-#: site/course/course-content.php:3934 site/course/course-content.php:3972
+#: site/course/course-content.php:3931 site/course/course-content.php:3969
 msgid "Sharing the Gospel"
 msgstr "Împărtășirea Evangheliei"
 
-#: site/course/course-content.php:3947
+#: site/course/course-content.php:3944
 msgid "Practice Sharing the Gospel"
 msgstr "Practică - Împărtășirea Evangheliei"
 
-#: site/course/course-content.php:3950
+#: site/course/course-content.php:3947
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
@@ -3262,7 +3397,7 @@ msgstr ""
 "Împărțiți-vă în grupuri de două sau trei persoane și exersați să vă spuneți "
 "Istoria lui Dumnezeu unul altuia."
 
-#: site/course/course-content.php:3951
+#: site/course/course-content.php:3948
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
@@ -3270,7 +3405,7 @@ msgstr ""
 "După ce ai exersat, schimbați-vă. Repetiția va crește încrederea. Când vei "
 "termina, vei fi pregătit să împărtășești Istoria lui Dumnezeu."
 
-#: site/course/course-content.php:4049
+#: site/course/course-content.php:4046
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others. "
 "Ask Him to give each member of your group the mind of Christ — and to fill "
@@ -3280,13 +3415,13 @@ msgstr ""
 "vestea Sa bună cu ceilalți. Cereți-I să ofere fiecărui membru al grupului "
 "vostru mintea lui Hristos și să-i umple pe toți cu Duhul Său."
 
-#: site/course/course-content.php:4077
+#: site/course/course-content.php:4074
 msgid "In this session, we will add these tools to our toolkit:"
 msgstr ""
 "În această sesiune, vom adăuga aceste instrumente la setul nostru de "
 "instrumente:"
 
-#: site/course/course-content.php:4112
+#: site/course/course-content.php:4109
 msgid ""
 "If you know anyone who follows Jesus but has not been baptized, challenge "
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
@@ -3296,7 +3431,7 @@ msgstr ""
 "încurajează-l să facă acest pas și oferă-te să-l botezi. Dacă nu, poți să "
 "exersezi cu un prieten cum se face botezul."
 
-#: site/course/course-content.php:4113
+#: site/course/course-content.php:4110
 msgid ""
 "Ask God who He wants you to share with about what baptism is and how to do "
 "it. Have them practice it as well. Share this person‘s name with the group "
@@ -3307,7 +3442,7 @@ msgstr ""
 "persoane grupului înainte de a merge și contactați-i înainte de următoarea "
 "sesiune."
 
-#: site/course/course-content.php:4173
+#: site/course/course-content.php:4170
 msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
@@ -3316,11 +3451,11 @@ msgstr ""
 "moartea, înmormântarea și învierea lui Hristos. Solicitați Duhului Sfânt al "
 "lui Dumnezeu să vă ghideze timpul petrecut împreună."
 
-#: site/course/course-content.php:4216
+#: site/course/course-content.php:4213
 msgid "Share Your Testimony"
 msgstr "Împărtășește-ți mărturia"
 
-#: site/course/course-content.php:4218
+#: site/course/course-content.php:4215
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
@@ -3328,7 +3463,7 @@ msgstr ""
 "Împărțiți-vă în grupuri de câte doi din trei și exersați-vă împărtășirea "
 "mărturiei dvs. de trei minute."
 
-#: site/course/course-content.php:4219
+#: site/course/course-content.php:4216
 msgid ""
 "Choose 5 people from your List of 100. Have someone pretend to be each of "
 "those five people, and practice your Testimony in a way that you think will "
@@ -3338,7 +3473,7 @@ msgstr ""
 "joace rolul fiecăreia dintre aceste cinci persoane și exersează-ți mărturia "
 "într-un mod care ți se pare că ar rezona cu fiecare persoană în parte."
 
-#: site/course/course-content.php:4220
+#: site/course/course-content.php:4217
 msgid ""
 "After you’ve practiced, switch. Pretend to be someone else’s five people "
 "from the list. By the time you’re finished, you should be able to tell your "
@@ -3348,15 +3483,15 @@ msgstr ""
 "din lista altcuiva. Când ai terminat, ar trebui să poți să-ți spui povestea "
 "în aproximativ trei minute sau mai puțin."
 
-#: site/course/course-content.php:4222
+#: site/course/course-content.php:4219
 msgid "Repetition builds confidence."
 msgstr "Repetarea creează încredere."
 
-#: site/course/course-content.php:4236
+#: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
 msgstr "Instrument exersat în această sesiune:"
 
-#: site/course/course-content.php:4253
+#: site/course/course-content.php:4250
 msgid ""
 "Spend time this week practicing your testimony, and then share it with at "
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
@@ -3366,7 +3501,7 @@ msgstr ""
 "cu cel puțin o persoană din Lista ta de 100 pe care ai marcat-o ca "
 "„Necredincios” sau „Necunoscut”."
 
-#: site/course/course-content.php:4326
+#: site/course/course-content.php:4323
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
@@ -3375,7 +3510,7 @@ msgstr ""
 "acționează prin mărturia voastră și cereți Duhului Său Sfânt să vă "
 "călăuzească timpul petrecut împreună."
 
-#: site/course/course-content.php:4397
+#: site/course/course-content.php:4394
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
@@ -3384,7 +3519,7 @@ msgstr ""
 "împreună Cina Domnului. Dacă nu, practicați ritualul cu un prieten care "
 "împărtășește aceeași credință."
 
-#: site/course/course-content.php:4398
+#: site/course/course-content.php:4395
 msgid ""
 "Share \"Duckling Discipleship\" and \"Eyes to See Where the Kingdom Isn’t\" "
 "with whomever the Lord impresses on you. Then equip them to share it with "
@@ -3394,11 +3529,11 @@ msgstr ""
 "unde nu este Împărăția” oricui vă îndrumă Domnul. Apoi pregătiți-i să "
 "împărtășească acestea cu alții."
 
-#: site/course/course-content.php:4419 site/course/course-content.php:4424
+#: site/course/course-content.php:4416 site/course/course-content.php:4421
 msgid "SESSION 11"
 msgstr "SESIUNEA 11"
 
-#: site/course/course-content.php:4458
+#: site/course/course-content.php:4455
 msgid ""
 "Pray and thank God for how He is at work in your life and the lives of "
 "others around you. Pray for the group to have eyes to see where the Kingdom "
@@ -3408,17 +3543,17 @@ msgstr ""
 "viața ta și în cea a celor din jur. Rugați-vă ca grupul să aibă discernământ "
 "pentru a recunoaște unde Împărăția nu s-a manifestat încă."
 
-#: site/course/course-content.php:4533 site/course/course-content.php:4538
+#: site/course/course-content.php:4530 site/course/course-content.php:4535
 msgid "SESSION 12"
 msgstr "SESIUNEA 12"
 
-#: site/course/course-content.php:4641
+#: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
 msgstr ""
 "În această săptămână, folosiți modelul B.L.E.S.S pentru a vă ruga pentru "
 "cineva în prezența sa."
 
-#: site/course/course-content.php:4642
+#: site/course/course-content.php:4639
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
@@ -3426,11 +3561,11 @@ msgstr ""
 "Înarmează pe cineva să se roage pentru alții utilizând modelul B.L.E.S.S și "
 "însoțește-l în timp ce efectuează această rugăciune."
 
-#: site/course/course-content.php:4664 site/course/course-content.php:4669
+#: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
 msgstr "SESIUNEA 13"
 
-#: site/course/course-content.php:4703
+#: site/course/course-content.php:4700
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
@@ -3439,11 +3574,11 @@ msgstr ""
 "ultima sesiune. Cereți ca Duhul Sfânt să vă asiste în a fi consecvent și în "
 "aplicarea a tot ce ați învățat."
 
-#: site/course/course-content.php:4818 site/course/course-content.php:4823
+#: site/course/course-content.php:4815 site/course/course-content.php:4820
 msgid "SESSION 14"
 msgstr "SESIUNEA 14"
 
-#: site/course/course-content.php:4905
+#: site/course/course-content.php:4902
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
@@ -3451,7 +3586,7 @@ msgstr ""
 "PRIVEȘTE ÎNAPOI – Utilizați provocările Ascultați, Instruiți și Împărtășiți "
 "din ultima sesiune pentru a vă înregistra unul cu celălalt. (15 minute)"
 
-#: site/course/course-content.php:4906
+#: site/course/course-content.php:4903
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
@@ -3460,16 +3595,16 @@ msgstr ""
 "și răspundeți la întrebările 1-4 în timpul secțiunii PRIVEȘTE ÎN SUS. (15 "
 "minute)"
 
-#: site/course/course-content.php:4907
+#: site/course/course-content.php:4904
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
 "PRIVEȘTE ÎNAINTE - Folosiți întrebările 5, 6 și 7 din secțiunea Privește "
-"Înainte pentru a dezvolta modul în care veți Asculta, Instrui și Împărtăși. ("
-"15 min)"
+"Înainte pentru a dezvolta modul în care veți Asculta, Instrui și Împărtăși. "
+"(15 min)"
 
-#: site/course/course-content.php:4943
+#: site/course/course-content.php:4940
 msgid ""
 "Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
 "your list of 100 and ask God who you should invite to join you. Then invite "
@@ -3480,7 +3615,7 @@ msgstr ""
 "îndrume către cine ar trebui să inviți să se alăture. Apoi, fă invitațiile "
 "în această săptămână și ai încredere că Dumnezeu va dezvolta grupul."
 
-#: site/course/course-content.php:4944
+#: site/course/course-content.php:4941
 msgid ""
 "Find someone to share the 3/3 Group format with before your group meets "
 "again. Share this person’s name with the group before you go."
@@ -3489,11 +3624,11 @@ msgstr ""
 "înainte de următoarea întâlnire a grupului. Comunicați numele acestei "
 "persoane grupului înainte de a vă despărți."
 
-#: site/course/course-content.php:4966 site/course/course-content.php:4971
+#: site/course/course-content.php:4963 site/course/course-content.php:4968
 msgid "SESSION 15"
 msgstr "SESIUNEA 15"
 
-#: site/course/course-content.php:5005
+#: site/course/course-content.php:5002
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for. Thank God that He promises in His Word to listen and act when His "
@@ -3504,16 +3639,16 @@ msgstr ""
 "asculta și va interveni când poporul Său se roagă. Invocați Duhul Sfânt al "
 "lui Dumnezeu să vă ghideze în timpul petrecut împreună."
 
-#: site/course/course-content.php:5069
+#: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr ""
 "Împărtășește „Ciclul de instruire” unui credincios de pe lista ta de 100."
 
-#: site/course/course-content.php:5091 site/course/course-content.php:5096
+#: site/course/course-content.php:5088 site/course/course-content.php:5093
 msgid "SESSION 16"
 msgstr "SESIUNEA 16"
 
-#: site/course/course-content.php:5196
+#: site/course/course-content.php:5193
 msgid ""
 "If you have already started your own simple church, share the \"Always Part "
 "of Two Churches\" pattern with the people in it. If not, share it with "
@@ -3523,11 +3658,11 @@ msgstr ""
 "\"Întotdeauna parte din două biserici\" membrilor acesteia. Dacă nu, oferă-l "
 "unui alt credincios pe care îl cunoști."
 
-#: site/course/course-content.php:5220 site/course/course-content.php:5225
+#: site/course/course-content.php:5217 site/course/course-content.php:5222
 msgid "SESSION 17"
 msgstr "SESIUNEA 17"
 
-#: site/course/course-content.php:5259
+#: site/course/course-content.php:5256
 msgid ""
 "Pray and thank God for how He continues to speak through the word, prayer, "
 "the body, and persecution and suffering. Pray for each person in the group "
@@ -3538,7 +3673,7 @@ msgstr ""
 "membru al grupului să aibă urechile deschise pentru a auzi vocea Lui și să "
 "primească harul de a se conforma la ceea ce El le revelează."
 
-#: site/course/course-content.php:5328
+#: site/course/course-content.php:5325
 msgid ""
 "Identify one next step for yourself, either Modeling, Assisting, Watching, "
 "or Leaving, that you need to take with the disciple you assessed with the "
@@ -3549,7 +3684,7 @@ msgstr ""
 "împreună cu ucenicul pe care l-ați evaluat folosind lista de verificare."
 "nstruirii."
 
-#: site/course/course-content.php:5329
+#: site/course/course-content.php:5326
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
@@ -3557,11 +3692,11 @@ msgstr ""
 "Împărtășiți conceptul de „Conducere în rețele” cu altcineva. Apoi antrenează-"
 "i să-l împărtășească cu altcineva."
 
-#: site/course/course-content.php:5353 site/course/course-content.php:5358
+#: site/course/course-content.php:5350 site/course/course-content.php:5355
 msgid "SESSION 18"
 msgstr "SESIUNEA 18"
 
-#: site/course/course-content.php:5437
+#: site/course/course-content.php:5434
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
@@ -3570,7 +3705,7 @@ msgstr ""
 "tău ar trebui să acționați conform discuției pe care tocmai ați avut-o "
 "despre cele Patru Câmpuri."
 
-#: site/course/course-content.php:5468
+#: site/course/course-content.php:5465
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
@@ -3579,7 +3714,7 @@ msgstr ""
 "domeniu(i) este relevant fiecare, apoi etichetați o diagramă cu patru "
 "câmpuri cu aceste elemente."
 
-#: site/course/course-content.php:5469
+#: site/course/course-content.php:5466
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
@@ -3587,11 +3722,11 @@ msgstr ""
 "Distribuiți unui alt credincios cunoscut instrumentul de cartografiere "
 "generațională ca metodă de exercițiu pentru împărtășirea viziunii."
 
-#: site/course/course-content.php:5490 site/course/course-content.php:5495
+#: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
 msgstr "SESIUNEA 19"
 
-#: site/course/course-content.php:5529
+#: site/course/course-content.php:5526
 msgid ""
 "Pray and thank God for the Body of Christ. Pray for mutual love and "
 "encouragement to continue to grow between each member of your group as you "
@@ -3602,7 +3737,7 @@ msgstr ""
 "între membrii grupului dumneavoastră pe măsură ce vă apropiați mai mult de "
 "Isus."
 
-#: site/course/course-content.php:5590
+#: site/course/course-content.php:5587
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
@@ -3611,7 +3746,7 @@ msgstr ""
 "Discutați cu grupul dvs. Zúme dacă membrii sunt deschiși să continue "
 "întâlnirile după finalizarea cursului, ca un grup de mentorat între egali."
 
-#: site/course/course-content.php:5591
+#: site/course/course-content.php:5588
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
@@ -3619,17 +3754,17 @@ msgstr ""
 "Împărtășește conceptul „Grupului de mentorat de la egal la egal” cu doi "
 "credincioși de pe lista ta de 100."
 
-#: site/course/course-content.php:5614 site/course/course-content.php:5619
+#: site/course/course-content.php:5611 site/course/course-content.php:5616
 msgid "SESSION 20"
 msgstr "SESIUNEA 20"
 
-#: site/course/course-content.php:5653
+#: site/course/course-content.php:5650
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
 "Roagă-te și mulțumește-i lui Dumnezeu că El este fidel să ducă la "
 "îndeplinire lucrarea Sa bună în noi."
 
-#: site/course/course-content.php:5682
+#: site/course/course-content.php:5679
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
@@ -3637,37 +3772,37 @@ msgstr ""
 "Cu toate acestea, Zúme Training este doar începutul! În această sesiune, vom "
 "face un plan pentru ceea ce se întâmplă după antrenament."
 
-#: site/course/course-content.php:5724 site/course/course-content.php:5729
+#: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
 msgstr "SESIUNEA INTENSIVA 1"
 
-#: site/course/course-content.php:5775 site/course/course-content.php:5780
+#: site/course/course-content.php:5772 site/course/course-content.php:5777
 msgid "INTENSIVE SESSION 2"
 msgstr "SESIUNEA INTENSIVA 2"
 
-#: site/course/course-content.php:5824 site/course/course-content.php:5829
+#: site/course/course-content.php:5821 site/course/course-content.php:5826
 msgid "INTENSIVE SESSION 3"
 msgstr "SESIUNEA INTENSIVA 3"
 
-#: site/course/course-content.php:5873 site/course/course-content.php:5878
+#: site/course/course-content.php:5870 site/course/course-content.php:5875
 msgid "INTENSIVE SESSION 4"
 msgstr "SESIUNEA INTENSIVA 4"
 
-#: site/course/course-content.php:5922 site/course/course-content.php:5927
+#: site/course/course-content.php:5919 site/course/course-content.php:5924
 msgid "INTENSIVE SESSION 5"
 msgstr "SESIUNEA INTENSIVA 5"
 
-#: site/course/course-content.php:5979
+#: site/course/course-content.php:5976
 msgid "NEXT STEP"
 msgstr "URMATORUL PAS"
 
-#: site/course/course-content.php:5982 site/course/course-content.php:5990
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:141
+#: site/course/course-content.php:5979 site/course/course-content.php:5987
+#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
 #: site/parts/nav.php:94
 msgid "Join the Community"
 msgstr "Alăturați-vă comunității"
 
-#: site/course/course-content.php:5983
+#: site/course/course-content.php:5980
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
@@ -3675,19 +3810,19 @@ msgstr ""
 "Partea de formare a Zúme se termină, dar exersarea instrumentelor și "
 "conceptelor continuă."
 
-#: site/course/course-content.php:5984
+#: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
 msgstr "Nu o face singur. Găsiți o comunitate pentru încurajare și creștere."
 
-#: site/course/course-content.php:5985
+#: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
 msgstr "Alăturați-vă comunității Zume folosind codul QR."
 
-#: site/course/course-content.php:5999
+#: site/course/course-content.php:5996
 msgid "CONGRATULATIONS on completing Zume Training!"
 msgstr "FELICITĂRI pentru finalizarea Zume Training!"
 
-#: site/course/course-content.php:6011
+#: site/course/course-content.php:6008
 msgid "TAKE A BREAK"
 msgstr "IA O PAUZĂ"
 
@@ -3743,7 +3878,7 @@ msgstr "Sesiune"
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
-msgstr "Woops"
+msgstr "Vai"
 
 #: site/dashboard/checkin-dashboard.php:153
 msgid "Something went wrong with your checkin process."
@@ -3774,13 +3909,13 @@ msgstr "Progresul cursului:"
 msgid "%d%%"
 msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:251
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
 msgid "Done"
 msgstr "Terminat"
 
 #: site/dashboard/dashboard.php:156
 msgid "Edit"
-msgstr "Editați  ×"
+msgstr "Editați"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3838,18 +3973,18 @@ msgstr "Vedere"
 msgid "Menu"
 msgstr "Meniul"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:146
-#: site/dashboard/wizard.php:192 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
+#: site/dashboard/wizard.php:210 site/profile/profile.php:116
 msgid "Name"
 msgstr "Nume"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:144
-#: site/dashboard/wizard.php:162 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
+#: site/dashboard/wizard.php:180 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "Telefon"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:160
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
@@ -3859,7 +3994,7 @@ msgstr "E-mail"
 msgid "Communications Email"
 msgstr "E-mail de comunicații"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:145
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "Orașul"
@@ -3868,8 +4003,8 @@ msgstr "Orașul"
 msgid "No Locations found"
 msgstr "Nu s-au găsit locații"
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:168
-#: site/dashboard/wizard.php:196 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3926,7 +4061,7 @@ msgstr "Setați profilul"
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr "Finalizați un scurt Profile Wizard pentru a vă seta profilul"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
 msgid "Join or create a training group"
 msgstr "Alăturați-vă sau creați un grup de instruire"
 
@@ -3948,7 +4083,7 @@ msgstr ""
 "Creați-vă propriul grup de instruire cu ajutorul asistentului nostru ușor de "
 "configurat"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:270
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
 msgid "Join Training Group"
 msgstr "Alăturați-vă grupului de instruire"
 
@@ -4121,7 +4256,7 @@ msgstr "Curs cu 20 de sesiuni"
 msgid "Intensive Course"
 msgstr "Curs intensiv"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:197
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
 msgid "Join"
 msgstr "Alătură-te"
@@ -4235,7 +4370,7 @@ msgstr ""
 "este utilizată pentru comunicarea tranzacțională ca parte a funcționării "
 "site-ului."
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:155
+#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
 #: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
@@ -4244,7 +4379,7 @@ msgstr ""
 "Numărul de telefon al unui utilizator este colectat și stocat pentru a "
 "sprijini serviciul de coaching gratuit."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:156
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
 #: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
@@ -4312,7 +4447,7 @@ msgstr ""
 msgid "Join for Free"
 msgstr "Înscrie-te gratis"
 
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:271
+#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
 msgid "Join key"
 msgstr "Tasta de alăturare"
 
@@ -4408,7 +4543,7 @@ msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
-"Voi invita următorii oameni să facă parte dintr-o Celulă Zúme  pe care o voi "
+"Voi invita următorii oameni să facă parte dintr-o Celulă Zúme pe care o voi "
 "conduce:"
 
 #: site/dashboard/dashboard.php:300
@@ -4421,79 +4556,79 @@ msgstr "Voi încuraja următorii oameni să parcurgă acest curs de formare Zúm
 msgid "Other commitments:"
 msgstr "Alte angajamente:"
 
-#: site/dashboard/wizard.php:131
+#: site/dashboard/wizard.php:149
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
 msgstr "Expertul rău"
 
-#: site/dashboard/wizard.php:132
+#: site/dashboard/wizard.php:150
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
 msgstr "Te-ai întâlnit cu niște experți foarte răi!"
 
-#: site/dashboard/wizard.php:133
+#: site/dashboard/wizard.php:151
 msgid "Wizard is already completed"
 msgstr "Expertul este deja finalizat"
 
-#: site/dashboard/wizard.php:134
+#: site/dashboard/wizard.php:152
 msgid "Get back home"
 msgstr "Întoarce-te acasă"
 
-#: site/dashboard/wizard.php:135 site/login/login-template.php:408
+#: site/dashboard/wizard.php:153 site/login/login-template.php:408
 msgid "Back"
 msgstr "Înapoi"
 
-#: site/dashboard/wizard.php:136 site/dashboard/wizard.php:152
-#: site/dashboard/wizard.php:175 site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "Următor →"
 
-#: site/dashboard/wizard.php:137 site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
 msgid "Skip"
 msgstr "Treci peste"
 
-#: site/dashboard/wizard.php:138 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "Sfârșit"
 
-#: site/dashboard/wizard.php:140
+#: site/dashboard/wizard.php:158
 msgid "No locations found"
 msgstr "Nu s-au găsit locații"
 
-#: site/dashboard/wizard.php:143
+#: site/dashboard/wizard.php:161
 msgid "Complete your profile"
 msgstr "Completează-ți profilul"
 
-#: site/dashboard/wizard.php:147
+#: site/dashboard/wizard.php:165
 msgid "What is your name?"
 msgstr "Cum te numești?"
 
-#: site/dashboard/wizard.php:148
+#: site/dashboard/wizard.php:166
 msgid "What is your phone number?"
 msgstr "Care este numărul tău de telefon?"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:167
 msgid "Phone number can only contain numbers, brackets and hyphens"
 msgstr "Numărul de telefon poate conține doar numere, paranteze și cratime"
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:168
 msgid "What city do you live in?"
 msgstr "In ce oras locuiesti?"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:169
 msgid "This is your approximate location."
 msgstr "Aceasta este locația dvs. aproximativă."
 
-#: site/dashboard/wizard.php:153
+#: site/dashboard/wizard.php:171
 msgid "Privacy Policy"
 msgstr "Politica de confidențialitate"
 
-#: site/dashboard/wizard.php:154 site/pages/privacy-policy.php:108
+#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
 msgid ""
 "A user’s real name or nickname is requested to improve the personal quality "
 "of the site and communication, as well as for customer service requests and "
@@ -4503,94 +4638,93 @@ msgstr ""
 "îmbunătăți calitatea personală a site-ului și a comunicării, precum și "
 "pentru solicitările de servicii pentru clienți și coaching."
 
-#: site/dashboard/wizard.php:159
+#: site/dashboard/wizard.php:177
 msgid "What is your contact preference?"
 msgstr "Cum preferi să fii contactat?"
 
-#: site/dashboard/wizard.php:161 zume-training-system.php:316
+#: site/dashboard/wizard.php:179 zume-training-system.php:316
 msgid "Text"
 msgstr "Text"
 
-#: site/dashboard/wizard.php:163 zume-training-system.php:318
+#: site/dashboard/wizard.php:181 zume-training-system.php:318
 msgid "Whatsapp"
 msgstr "Whatsapp"
 
-#: site/dashboard/wizard.php:164 zume-training-system.php:319
+#: site/dashboard/wizard.php:182 zume-training-system.php:319
 msgid "Signal"
 msgstr "Semnal"
 
-#: site/dashboard/wizard.php:165 zume-training-system.php:320
+#: site/dashboard/wizard.php:183 zume-training-system.php:320
 msgid "Telegram"
 msgstr "Telegram"
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:184
 msgid "Facebook Messenger"
 msgstr "Facebook Messenger"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:185
 msgid "What is your language preference?"
 msgstr "Ce limbă prefer?"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:187
 msgid "How can we serve you?"
 msgstr "Cum pot să te ajut?"
 
-#: site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:188
 msgid "Coaching"
 msgstr "Antrenor"
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:189
 msgid "Technical Assistance"
 msgstr "Asistență tehnică"
 
-#: site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:190
 msgid "Question about implementing the training"
 msgstr "Întrebare despre implementarea instruirii"
 
-#: site/dashboard/wizard.php:173
+#: site/dashboard/wizard.php:191
 msgid "Question about the content"
 msgstr "Întrebare despre conținut"
 
-#: site/dashboard/wizard.php:174
+#: site/dashboard/wizard.php:192
 msgid "Help with what to do after starting a group"
 msgstr "Ajută cu ce trebuie să faci după ce ai început un grup"
 
-#: site/dashboard/wizard.php:176
+#: site/dashboard/wizard.php:194
 msgid "Please give a response to this question"
 msgstr "Vă rugăm să dați un răspuns la această întrebare"
 
-#: site/dashboard/wizard.php:177
-#, fuzzy
+#: site/dashboard/wizard.php:195
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
-"La depunerea acestei solicitări, vom face tot posibilul să vă conectăm cu un "
-"antrenor din apropierea dvs."
+"Solicitare trimisă, vom face tot posibilul pentru a vă pune în legătură cu "
+"un antrenor din apropiere."
 
-#: site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
 "Îmi pare rău. Nu am putut trimite cererea dvs. Vă rugăm să încercați din nou "
 "mai târziu."
 
-#: site/dashboard/wizard.php:179
+#: site/dashboard/wizard.php:197
 msgid "You have already requested a coach"
 msgstr "Ați solicitat deja un antrenor"
 
-#: site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:198
 msgid "Error connecting with a coach"
 msgstr "Eroare la conectarea cu un antrenor"
 
-#: site/dashboard/wizard.php:181
+#: site/dashboard/wizard.php:199
 msgid "Connecting you to a Coach"
 msgstr "Te conectăm cu un antrenor"
 
-#: site/dashboard/wizard.php:182 site/dashboard/wizard.php:188
-#: site/dashboard/wizard.php:202 site/dashboard/wizard.php:209
+#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
+#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
 msgid "Please wait while we connect you"
 msgstr "Vă rugăm să așteptați cât vă conectăm"
 
-#: site/dashboard/wizard.php:184 site/pages/privacy-policy.php:111
+#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
 msgid ""
 "A user’s language preference is stored to support proper site and "
 "communication functioning, and to help us connect the user with appropriate "
@@ -4600,253 +4734,253 @@ msgstr ""
 "funcționarea corectă a site-ului și a comunicării și pentru a ne ajuta să "
 "conectăm utilizatorul cu instruirea și resursele adecvate."
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:205
 msgid "Joining Plan"
 msgstr "Plan de aderare"
 
-#: site/dashboard/wizard.php:189 site/dashboard/wizard.php:272
+#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
 msgid "The training link is broken. Please try again."
 msgstr "Legătura cu antrenamentul este ruptă. Vă rugăm să încercați din nou."
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:208
 #, php-format
 msgid "Successfully joined training %s"
 msgstr "S-a înscris cu succes la formare %s"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:209
 msgid "Something went wrong while joining the plan"
 msgstr "Ceva a mers prost la aderarea la plan"
 
-#: site/dashboard/wizard.php:193
+#: site/dashboard/wizard.php:211
 msgid "Next Session Date"
 msgstr "Data sesiunii următoare"
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:212
 msgid "Start Time"
 msgstr "Timpul de începere"
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:213
 msgid "Timezone"
 msgstr "Fus orar"
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:216
 msgid "There are currently no public trainings available."
 msgstr "În prezent, nu există cursuri publice disponibile."
 
-#: site/dashboard/wizard.php:201
+#: site/dashboard/wizard.php:219
 msgid "Connecting with friend"
 msgstr "Conectarea cu un prieten"
 
-#: site/dashboard/wizard.php:203
+#: site/dashboard/wizard.php:221
 msgid "The friend link is broken. Please try again."
 msgstr "Link-ul prietenului este rupt. Vă rugăm să încercați din nou."
 
-#: site/dashboard/wizard.php:204
+#: site/dashboard/wizard.php:222
 #, php-format
 msgid "Successfully connected with friend %s"
 msgstr "Conectat cu succes cu prietenul %s"
 
-#: site/dashboard/wizard.php:205
+#: site/dashboard/wizard.php:223
 msgid "Something went wrong while connecting with friend"
 msgstr "Ceva a mers prost în timpul conectării cu un prieten"
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:226
 msgid "Checking in"
 msgstr "Înregistrare"
 
-#: site/dashboard/wizard.php:210
+#: site/dashboard/wizard.php:228
 msgid "The checkin link is broken. Please try again."
 msgstr "Link-ul de înregistrare este întrerupt. Vă rugăm să încercați din nou."
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:229
 msgid "Successfully checked in"
 msgstr "S-a înregistrat cu succes"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:230
 msgid "Something went wrong while checking in"
 msgstr "Ceva a mers prost la check-in"
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:234
 msgid "Create a training group"
 msgstr "Creați un grup de antrenament"
 
-#: site/dashboard/wizard.php:217
+#: site/dashboard/wizard.php:235
 msgid "Join a public training group"
 msgstr "Alăturați-vă unui grup de instruire public"
 
-#: site/dashboard/wizard.php:218
+#: site/dashboard/wizard.php:236
 msgid "Skip for now"
 msgstr "Sari peste la moment"
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:237
 msgid "Choose your course format"
 msgstr "Alegeți formatul de curs"
 
-#: site/dashboard/wizard.php:220
+#: site/dashboard/wizard.php:238
 msgid "1 hour (20 sessions)"
 msgstr "1 oră (20 ședințe)"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:239
 msgid "2 hour (10 sessions)"
 msgstr "2 ore (10 sedinte)"
 
-#: site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:240
 msgid "4 hour (5 sessions)"
 msgstr "4 ore (5 sesiuni)"
 
-#: site/dashboard/wizard.php:223
+#: site/dashboard/wizard.php:241
 msgid "Would you like to schedule your training?"
 msgstr "Doriți să vă programați antrenamentul?"
 
-#: site/dashboard/wizard.php:224 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "da"
 
-#: site/dashboard/wizard.php:225 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "Nu"
 
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:244
 msgid "What time of day?"
 msgstr "La ce oră a zilei?"
 
-#: site/dashboard/wizard.php:227
+#: site/dashboard/wizard.php:245
 msgid "Morning"
 msgstr "Dimineaţă"
 
-#: site/dashboard/wizard.php:228
+#: site/dashboard/wizard.php:246
 msgid "Afternoon"
 msgstr "Dupa amiaza"
 
-#: site/dashboard/wizard.php:229
+#: site/dashboard/wizard.php:247
 msgid "Evening"
 msgstr "Seară"
 
-#: site/dashboard/wizard.php:230
+#: site/dashboard/wizard.php:248
 msgid "How often will you meet?"
 msgstr "Cât de des te vei întâlni?"
 
-#: site/dashboard/wizard.php:231
+#: site/dashboard/wizard.php:249
 msgid "Every day"
 msgstr "În fiecare zi"
 
-#: site/dashboard/wizard.php:232
+#: site/dashboard/wizard.php:250
 msgid "Once a week"
 msgstr "O dată pe săptămână"
 
-#: site/dashboard/wizard.php:233
+#: site/dashboard/wizard.php:251
 msgid "Twice a month"
 msgstr "De doua ori pe luna"
 
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:252
 msgid "Once a month"
 msgstr "O data pe luna"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:253
 msgid "Other"
 msgstr "Alte"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:254
 msgid "What is the name of the training group?"
 msgstr "Cum se numește grupul de antrenament?"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:255
 msgid "My first training group"
 msgstr "Primul meu grup de antrenament"
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:256
 msgid "When do you plan to start?"
 msgstr "Când ai de gând să începi?"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:257
 msgid "Where do you plan to meet?"
 msgstr "Unde ai de gând să te întâlnești?"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:258
 msgid "This could be online or in person"
 msgstr "Acesta poate fi online sau în persoană"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:259
 msgid "Review Schedule"
 msgstr "Consultați programul"
 
-#: site/dashboard/wizard.php:242
+#: site/dashboard/wizard.php:260
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
 msgstr "%1$s din %2$s selectat"
 
-#: site/dashboard/wizard.php:243
+#: site/dashboard/wizard.php:261
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "Gata"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:262
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
 msgstr "Prea multe selectate: %s"
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:263
 msgid "Incorrect number of sessions selected"
 msgstr "Număr incorect de sesiuni selectate"
 
-#: site/dashboard/wizard.php:246 site/dashboard/wizard.php:248
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:268
 #, php-format
 msgid "Set %s"
 msgstr "Setați %s"
 
-#: site/dashboard/wizard.php:246 site/dashboard/wizard.php:247
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
+#: site/dashboard/wizard.php:286
 msgid "Location"
 msgstr "Locație"
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:266
 msgid "Group Name"
 msgstr "Numele Grupului"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:267
 msgid "Group name"
 msgstr "Numele Grupului"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:268
 msgid "Start Date"
 msgstr "Data începerii"
 
-#: site/dashboard/wizard.php:254 site/dashboard/wizard.php:269
+#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
 msgid "Time"
 msgstr "Timp"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:273
 msgid "Date"
 msgstr "Data"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:274
 msgid "Summary"
 msgstr "Rezumat"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:275
 msgid "Clear Calendar"
 msgstr "Ștergeți calendarul"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:276
 msgid "Add"
 msgstr "Adăuga"
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:277
 msgid "Add some dates to your schedule"
 msgstr "Adăugați câteva date în programul dvs"
 
-#: site/dashboard/wizard.php:260
+#: site/dashboard/wizard.php:278
 msgid "Change"
 msgstr "Schimbare"
 
-#: site/dashboard/wizard.php:264
+#: site/dashboard/wizard.php:282
 msgid "Invite your friends to join your training"
 msgstr "Invită-ți prietenii să se alăture antrenamentului tău"
 
-#: site/dashboard/wizard.php:265
+#: site/dashboard/wizard.php:283
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
@@ -4854,16 +4988,16 @@ msgstr ""
 "Distribuie invitația sau linkul de mai jos prietenilor tăi, astfel încât "
 "aceștia să se poată înscrie la antrenamentul tău."
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:284
 msgid "Join my zume plan"
 msgstr "Alăturați-vă planului meu zume"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:285
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
 msgstr "%s vă invită la un grup de antrenament Zume"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:291
 msgid "Copy Invite"
 msgstr "Copiați invitația"
 
@@ -4883,7 +5017,8 @@ msgstr ""
 
 #: site/login/login-template.php:80
 msgid "Missing form verification. Refresh and try again."
-msgstr "Lipsește formularul de verificare. Reîmprospătați și încercați din nou."
+msgstr ""
+"Lipsește formularul de verificare. Reîmprospătați și încercați din nou."
 
 #: site/login/login-template.php:81
 msgid "Missing username or email address."
@@ -5067,7 +5202,7 @@ msgstr "Ajutor"
 
 #: site/pages/_strings-mobile-pwa.php:20
 msgid "Workbook"
-msgstr "Workbook"
+msgstr "Caiet de lucru"
 
 #: site/pages/_strings-mobile-pwa.php:21
 msgid "Sign Out"
@@ -5121,7 +5256,7 @@ msgstr "Instalare"
 msgid "This app can be installed to your device. Click to install this app."
 msgstr ""
 "Această aplicație poate fi instalată pe dispozitivul dvs. Faceți clic pentru "
-"a instala această aplicație"
+"a instala această aplicație."
 
 #: site/pages/_strings-mobile-pwa.php:39
 msgid ""
@@ -5140,7 +5275,7 @@ msgid ""
 "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app."
 msgstr ""
 "Atingeți pictograma de partaj Safari și atingeți „Adăugați la ecranul "
-"principal” pentru a instala această aplicație"
+"principal” pentru a instala această aplicație."
 
 #: site/pages/_strings-mobile-pwa.php:42
 msgid "Update"
@@ -5527,7 +5662,7 @@ msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr ""
 "Urmărește acest videoclip important explicând cele 4 relații ale noii tale "
-"vieți."
+"vieți"
 
 #: site/pages/follow-jesus.php:147
 msgid ""
@@ -5535,7 +5670,7 @@ msgid ""
 "of Jesus"
 msgstr ""
 "Secțiunile de mai jos vă vor învăța ce înseamnă să fii urmaș (ucenic) al lui "
-"Isus."
+"Isus"
 
 #: site/pages/follow-jesus.php:162
 msgid "What is a follower of Jesus?"
@@ -5587,7 +5722,7 @@ msgstr "Sacrificiu și suferință"
 #: site/pages/follow-jesus.php:254
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
-"Cum ascult de Isus, cum mă supun Lui și cum  îi ajut pe alții să devină "
+"Cum ascult de Isus, cum mă supun Lui și cum îi ajut pe alții să devină "
 "urmași împreună cu mine?"
 
 #: site/pages/follow-jesus.php:259
@@ -5637,7 +5772,7 @@ msgstr "Vorbind cu oamenii pe care NU-I CUNOȘTI despre Isus"
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
-"Aflați cine poate fi omul păcii și cum să aflați că ați găsit unul dintre ei."
+"Aflați cine poate fi omul păcii și cum să știți că ați găsit unul dintre ei."
 
 #: site/pages/follow-jesus.php:304
 msgid ""
@@ -5687,13 +5822,12 @@ msgid "Join a training group"
 msgstr "Alăturați-vă unui grup de antrenament"
 
 #: site/pages/get-a-coach.php:95
-#, fuzzy
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
 "Rețeaua noastră de antrenori voluntari sunt oameni ca tine, oameni pasionați "
-"care-L iubesc pe Dumnezeu, iubesc oamenii  și  ascultă de  Marea Trimitere."
+"care-L iubesc pe Dumnezeu, iubesc oamenii și ascultă de Marea Trimitere."
 
 #: site/pages/get-a-coach.php:99
 msgid "Localized"
@@ -6070,8 +6204,8 @@ msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
-"Trimitem  e-mail pentru a vă reaminti și încurajări ocazionale, în funcție "
-"de progresul efectuat prin training."
+"Trimitem e-mail pentru a vă reaminti și încurajări ocazionale, în funcție de "
+"progresul efectuat prin training."
 
 #: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
@@ -6355,8 +6489,8 @@ msgid ""
 "day Sunday (8 hours)."
 msgstr ""
 "Zúme poate fi comprimat în 5 secțiuni de jumătate de zi a câte 4 ore "
-"fiecare. Acest lucru se poate face vineri seara (4 ore), sâmbătă toată ziua ("
-"8 ore) și duminică toată ziua (8 ore)."
+"fiecare. Acest lucru se poate face vineri seara (4 ore), sâmbătă toată ziua "
+"(8 ore) și duminică toată ziua (8 ore)."
 
 #: site/pages/training.php:260
 msgid "Needed for the course:"
@@ -6383,7 +6517,7 @@ msgstr "Curs intensiv de 3 zile"
 #: utilities/integrations/replace-placeholder.php:110
 #: utilities/integrations/replace-placeholder.php:111
 msgid "Check-in"
-msgstr "Check-in"
+msgstr "Înregistrarea"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
@@ -6556,19 +6690,19 @@ msgstr "Cineva a solicitat o resetare a parolei pentru următorul cont:"
 #: zume-training-system.php:212
 #, php-format
 msgid "Site Name: %s"
-msgstr "Nume site:% s"
+msgstr "Numele site-ului: %s"
 
 #. translators: %s: user login
 #: zume-training-system.php:214
 #, php-format
 msgid "Username: %s"
-msgstr "Nume utilizator:% s"
+msgstr "Nume utilizator: %s"
 
 #: zume-training-system.php:215
 msgid "If this was a mistake, just ignore this email and nothing will happen."
 msgstr ""
 "Dacă aceasta a fost o greșeală, ignorați doar acest e-mail și nu se va "
-"întâmpla nimic.\n"
+"întâmpla nimic."
 
 #: zume-training-system.php:216
 msgid "To reset your password, visit the following address:"
@@ -6578,7 +6712,7 @@ msgstr "Pentru a reseta parola, accesați următoarea adresă:"
 #: zume-training-system.php:234
 #, php-format
 msgid "[%s] Password Reset"
-msgstr "[% s] Resetare parolă"
+msgstr "[%s] Resetare parolă"
 
 #: zume-training-system.php:250
 msgid "Profile Details"
@@ -6628,6 +6762,13 @@ msgstr "https://github.com/ZumeProject/zume-training-system"
 #. Description of the plugin/theme
 msgid "Zume Training System"
 msgstr "Sistemul de antrenament Zume"
+
+#~ msgid "1. Self-evaluate with Heard, Obeyed, Shared, Trained."
+#~ msgstr "1. Autoevaluează-te cu Auzit, Ascultat, Împărtășit, Instruit."
+
+#~ msgid "2. Coach others with Model, Assist, Watch, Leave."
+#~ msgstr ""
+#~ "2. Antrenează-i pe alții cu Modelare, Asistare, Supraveghere, Retragere."
 
 #~ msgid ""
 #~ "2. Coach others with Model, Assist, Watch, Leave to evaluate a disciple."
@@ -7032,10 +7173,6 @@ msgstr "Sistemul de antrenament Zume"
 #, fuzzy
 #~ msgid "How to Tell Your 3 Minute Testimony"
 #~ msgstr "Pregătiți-vă Mărturia în 3 Minute"
-
-#, fuzzy
-#~ msgid "Leadership Development"
-#~ msgstr "Celulele Zúme"
 
 #, fuzzy
 #~ msgid "How to Facilitate a Leadership Cell"
@@ -8175,25 +8312,11 @@ msgstr "Sistemul de antrenament Zume"
 #~ "coloana NEGRU"
 
 #~ msgid ""
-#~ "If you're somewhat familiar but still not sure about the Tool – check the "
-#~ "RED column"
-#~ msgstr ""
-#~ "Dacă sunteți puțin familiar, dar încă nu sunteți sigur de instrument, "
-#~ "marcați coloana ROȘU."
-
-#~ msgid ""
 #~ "If you understand and can train the basics on the Tool – check the YELLOW "
 #~ "column"
 #~ msgstr ""
 #~ "Dacă înțelegeți și puteți instrui elementele de bază ale instrumentului - "
 #~ "marcați coloana GALBEN"
-
-#~ msgid ""
-#~ "If you feel confident and can effectively train the Tool – check the "
-#~ "GREEN column"
-#~ msgstr ""
-#~ "Dacă vă simțiți încrezători și puteți antrena eficient instrumentul - "
-#~ "marcați coloana VERDE"
 
 #~ msgid "Zúme Video Scripts: Coaching Checklist"
 #~ msgstr "Transcriere Video Zúme: Lista de Verificare a Antrenorului"
