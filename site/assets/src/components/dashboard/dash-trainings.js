@@ -197,6 +197,13 @@ export class DashTrainings extends DashPage {
         /* Update the local store to reflect this change */
     }
 
+    isGroupLeader() {
+        if (this.training && this.training.assigned_to && Number( this.training.assigned_to.id ) === jsObject.profile.user_id) {
+            return true
+        }
+        return false
+    }
+
     renderListItem(session) {
         const { id, name, datetime, completed } = session
         return html`
@@ -223,8 +230,12 @@ export class DashTrainings extends DashPage {
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${() => this.editSession(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.markSessionCompleted(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                        ${
+                            this.isGroupLeader() ? html`
+                                <li><button class="menu-btn" @click=${() => this.editSession(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
+                                <li><button class="menu-btn" @click=${() => this.markSessionCompleted(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                            ` : ''
+                        }
                         <li><button class="menu-btn" @click=${() => this.startSession(id)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
                     </ul>
                 </div>

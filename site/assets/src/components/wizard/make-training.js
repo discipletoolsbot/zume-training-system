@@ -293,7 +293,7 @@ export class MakeTraining extends LitElement {
         const postData = {
             user_id: jsObject.profile.user_id,
             contact_id: jsObject.profile.contact_id,
-            title: !name ? this.t.my_first_training  + ' - ' + jsObject.profile.name : name,
+            title: name || '',
             set_type,
             set: this._buildSet(this.selectedDays)
         }

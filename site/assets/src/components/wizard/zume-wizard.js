@@ -392,6 +392,7 @@ export class Wizard extends LitElement {
                     return
                 }
             } else if ( [
+                Wizards.gettingStarted,
                 Wizards.makeAGroup,
                 Wizards.makeFirstGroup,
                 Wizards.makeMoreGroups,

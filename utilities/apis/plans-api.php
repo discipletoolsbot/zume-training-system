@@ -104,7 +104,7 @@ class Zume_Plans_Endpoints
         $user_id = get_current_user_id();
         $user_contact_id = zume_get_user_contact_id( $user_id );
 
-        $plan = DT_Posts::get_post( self::$post_type, $plan_id );
+        $plan = DT_Posts::get_post( self::$post_type, $plan_id, true, false );
 
         $participant_ids = array_values( array_map( function ( $participant ) {
             return $participant['ID'];
@@ -126,8 +126,21 @@ class Zume_Plans_Endpoints
     public function create_plan( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
+        if ( !isset( $params['title'] ) || empty( $params['title'] ) ) {
+            $current_user = wp_get_current_user();
+            $plans = zume_get_user_plans( $params['user_id'] );
+
+            if ( empty( $plans ) ) {
+                $title = sprintf( _x( 'My first training - %s', 'My first training - username', 'zume' ), $current_user->display_name );
+            } else {
+                $title = sprintf( _x( 'Training %1$d - %2$s', 'Training 2 - username', 'zume' ), count( $plans ) + 1, $current_user->display_name );
+            }
+        } else {
+            $title = $params['title'];
+        }
+
         $fields = [
-            'title' => $params['title'],
+            'title' => $title,
             'assigned_to' => $params['user_id'],
             'set_type' => isset( $params['set_type'] ) ? $params['set_type'] : '',
             'visibility' => 'private',

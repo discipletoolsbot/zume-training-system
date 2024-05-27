@@ -581,6 +581,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                             <li>
                                                                                 <nav-link
                                                                                     class="menu-btn"
+                                                                                    as="nav"
                                                                                     text=${group.title}
                                                                                     href=${this.makeTrainingHref(group.join_key)}
                                                                                 ></nav-link>
