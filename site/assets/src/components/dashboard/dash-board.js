@@ -317,7 +317,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         return Math.round( numberCompleted / itemsToComplete.length * 100 )
     }
 
-    openWizard(type, params) {
+    openWizard(type, params = '') {
         const modal = document.querySelector('#wizard-modal')
         jQuery(modal).foundation('open')
         this.wizardType = type
@@ -434,20 +434,9 @@ export class DashBoard extends navigator(router(LitElement)) {
         jQuery(modal).foundation('close')
     }
 
-    openCommunityModal(event) {
+    openCommunityWizard(event) {
         event.preventDefault()
-        const modal = document.querySelector('#community-modal')
-        jQuery(modal).foundation('open')
-    }
-    closeCommunityModal() {
-        const modal = document.querySelector('#community-modal')
-        jQuery(modal).foundation('close')
-    }
-
-    joinCommunity() {
-        makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( ( data ) => {
-            this.refetchState()
-        })
+        this.openWizard(Wizards.joinCommunity)
     }
     hasJoinedCommunity() {
         return this.userState.join_community ? true : false
@@ -663,7 +652,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                         icon='z-icon-community'
                                         text=${this.hasJoinedCommunity() ? jsObject.translations.community : jsObject.translations.join_the_community}
                                         as="link"
-                                        @click=${this.openCommunityModal}
+                                        @click=${this.openCommunityWizard}
                                     ></nav-link>
                                 ` : ''
                             }
@@ -752,53 +741,6 @@ export class DashBoard extends navigator(router(LitElement)) {
                         ></activity-3-month-plan>
                     `
                 }
-
-            </div>
-            <div class="reveal full" id="community-modal" data-reveal>
-                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommunityModal}>
-                    <span class="icon z-icon-close"></span>
-                </button>
-                <div class="container">
-                    ${
-                        this.hasJoinedCommunity() ? html`
-                            <p>Here is all the community stuff we promised you :)</p>
-                        `
-                        : html`
-                            <div class="container-md stack-2 center | py-2">
-                              <h1 class="text-center">${jsObject.translations.community_title}</h1>
-                              <p>${jsObject.translations.community_description}</p>
-                              <div class="switcher | training-path">
-                                <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">${jsObject.translations.community_peer_title}</h2>
-                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/Gather-A-Group-01.svg" alt="Peer Mentoring">
-                                  <p class="mb-0">
-                                    ${jsObject.translations.community_peer_description}
-                                  </p>
-                                </div>
-                                <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">${jsObject.translations.community_encouragement_title}</h2>
-                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/coach-2guys.svg" alt="Free Tools">
-                                  <p class="mb-0">
-                                    ${jsObject.translations.community_encouragement_description}
-                                  </p>
-                                </div>
-                                <div class="stack | card | switcher-width-40">
-                                  <h2 class="f-1 text-center">${jsObject.translations.community_tools_title}</h2>
-                                  <img class="mx-auto h-6rem" src="/wp-content/plugins/zume-training-system/site/assets/images/JoinTraining.svg" alt="Encouragement">
-                                  <p class="mb-0">
-                                    ${jsObject.translations.community_tools_description}
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="container-md center">
-                              <button class="btn large" style="text-transform:uppercase;" @click=${this.joinCommunity}>
-                                ${jsObject.translations.community_join_free}
-                              </button>
-                            </div>
-                        `
-                    }
-                </div>
 
             </div>
         `;

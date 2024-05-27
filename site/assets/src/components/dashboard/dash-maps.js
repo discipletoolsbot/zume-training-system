@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import { DashPage } from './dash-page';
+import { Wizards } from '../wizard/wizard-constants'
 
 export class DashMaps extends DashPage {
     static get properties() {
@@ -27,10 +28,12 @@ export class DashMaps extends DashPage {
     }
 
     joinCommunity() {
-        makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( ( data ) => {
+        this.dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: Wizards.joinCommunity } }))
+
+        /* makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( ( data ) => {
             const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
             this.dispatchEvent(stateEvent)
-        })
+        }) */
     }
 
     openModal(event) {

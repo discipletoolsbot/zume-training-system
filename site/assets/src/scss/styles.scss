@@ -401,6 +401,11 @@ input::-webkit-calendar-picker-indicator {
 .banner.warning {
   background-color: color('warning-main');
 }
+.banner.success {
+  background-color: color('success');
+  color: color('white');
+  border: none;
+}
 
 .video-frame {
   border: 2px solid color('white');

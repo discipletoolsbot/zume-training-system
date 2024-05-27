@@ -240,6 +240,10 @@ export class Wizard extends LitElement {
                 tag = literal`make-training`
                 translations = this.t.make_training
                 break
+            case Steps.joinCommunity:
+                tag = literal`join-community`
+                translations = this.t.join_community
+                break
             default:
                 break;
         }
