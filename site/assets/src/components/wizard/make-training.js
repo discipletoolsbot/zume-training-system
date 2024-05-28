@@ -265,7 +265,6 @@ export class MakeTraining extends LitElement {
         if (this.loading) {
             return
         }
-        this.loading = true
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
         const name = this.stateManager.get(Steps.name)
@@ -290,6 +289,7 @@ export class MakeTraining extends LitElement {
             }, 3000)
             return
         }
+
         const postData = {
             user_id: jsObject.profile.user_id,
             contact_id: jsObject.profile.contact_id,
@@ -298,6 +298,7 @@ export class MakeTraining extends LitElement {
             set: this._buildSet(this.selectedDays)
         }
 
+        this.loading = true
         makeRequest( 'POST', 'plan', postData, 'zume_system/v1' )
             .then((data) => {
                 this._handleFinish(data.join_key)
