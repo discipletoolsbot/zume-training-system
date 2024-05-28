@@ -57,6 +57,7 @@ export class Wizard extends LitElement {
         this._handleHistoryPopState = this._handleHistoryPopState.bind(this)
         this._handleLoadWizard = this._handleLoadWizard.bind(this)
         this._handleGotoStep = this._handleGotoStep.bind(this)
+        this._handleReloadProfile = this._handleReloadProfile.bind(this)
 
         this.stateManager = new WizardStateManager()
     }
@@ -66,6 +67,7 @@ export class Wizard extends LitElement {
         window.addEventListener('popstate', this._handleHistoryPopState)
         window.addEventListener('wizard:load', this._handleLoadWizard)
         window.addEventListener('wizard:goto-step', this._handleGotoStep)
+        window.addEventListener('profile:reload', this._handleReloadProfile)
     }
 
     disconnectedCallback() {
@@ -73,6 +75,7 @@ export class Wizard extends LitElement {
         window.removeEventListener('popstate', this._handleHistoryPopState)
         window.removeEventListener('wizard:load', this._handleLoadWizard)
         window.removeEventListener('wizard:goto-step', this._handleGotoStep)
+        window.removeEventListener('profile:reload', this._handleReloadProfile)
     }
 
     firstUpdated() {
@@ -512,6 +515,10 @@ export class Wizard extends LitElement {
         const { wizard, queryParams } = event.detail
 
         this.loadWizard(wizard, queryParams)
+    }
+    _handleReloadProfile() {
+        this.user = jsObject.profile
+        this.wizard.updateProfile(this.user)
     }
 
     _handleLoading(event) {

@@ -3,6 +3,7 @@ import { navigator, router } from 'lit-element-router';
 import { dashRoutes } from './dash-routes';
 import { repeat } from 'lit/directives/repeat.js'
 import { Wizards } from '../wizard/wizard-constants';
+import { RouteNames } from './routes';
 
 /**
  * This highest level of the dashboard should mostly be focussed on the routing
@@ -173,7 +174,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             return ''
         }
 
-        if (routeName === 'my-training') {
+        if (routeName === RouteNames.myTraining) {
             const isLocked = DashBoard.getLockedStatus(routeName, this.userState)
 
             if (isLocked) {
@@ -189,7 +190,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         return route.pattern
     }
     makeTrainingHref(code) {
-        const pattern = this.makeHrefRoute('my-training')
+        const pattern = this.makeHrefRoute(RouteNames.myTraining)
 
         return pattern.replace(':code', code)
     }
@@ -201,7 +202,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             return ''
         }
 
-        if (this.route === 'my-training') {
+        if (this.route === RouteNames.myTraining) {
             const code = this.params.code
             return makeComponent(code)
         }
@@ -264,48 +265,51 @@ export class DashBoard extends navigator(router(LitElement)) {
     }
 
     static getCompletedStatus(routeName, userState) {
-        if (routeName === 'set-profile' && userState.set_profile_location && userState.set_profile_name) {
+        if (routeName === RouteNames.setProfile && userState.set_profile_location && userState.set_profile_name) {
             return true
         }
-        if (routeName === 'get-a-coach' && userState.requested_a_coach) {
+        if (routeName === RouteNames.getACoach && userState.requested_a_coach) {
             return true
         }
-        if (routeName === 'join-a-training' && ( userState.plan_created || userState.joined_online_training )) {
+        if (routeName === RouteNames.joinATraining && ( userState.plan_created || userState.joined_online_training )) {
             return true
         }
-        if (routeName === 'create-a-training' && ( userState.plan_created || userState.joined_online_training )) {
+        if (routeName === RouteNames.createATraining && ( userState.plan_created || userState.joined_online_training )) {
             return true
         }
-        if (routeName === '3-month-plan' && ( userState.made_post_training_plan )) {
+        if (routeName === RouteNames.threeMonthPlan && ( userState.made_post_training_plan )) {
             return true
         }
         return false
     }
 
     static getLockedStatus(routeName, userState) {
-        if (routeName === 'my-plans' && !userState.made_post_training_plan) {
+        if (routeName === RouteNames.myPlans && !userState.made_post_training_plan) {
             return true
         }
-        if (['my-churches', 'my-maps'].includes(routeName) && !userState.join_community) {
+        if ([RouteNames.myChurches, RouteNames.myMaps].includes(routeName) && !userState.join_community) {
             return true
         }
-        if (routeName === '3-month-plan' && !userState.can_create_3_month_plan) {
+        if (routeName === RouteNames.threeMonthPlan && !userState.can_create_3_month_plan) {
             return true
         }
-        if (routeName === 'my-training' && !userState.plan_created && !userState.joined_online_training ) {
+        if (routeName === RouteNames.myTraining && !userState.plan_created && !userState.joined_online_training ) {
+            return true
+        }
+        if (routeName === RouteNames.myCoach && !userState.requested_a_coach) {
             return true
         }
         return false
     }
 
     isGettingStartedActive() {
-        const isActive = DashBoard.childRoutesOf('getting-started')
+        const isActive = DashBoard.childRoutesOf(RouteNames.gettingStarted)
             .some((route) => !DashBoard.getCompletedStatus(route.name, this.userState))
         return isActive
     }
 
     getGettingStartedPercentage() {
-        const itemsToComplete = ['get-a-coach', 'set-profile', 'join-a-training'];
+        const itemsToComplete = [RouteNames.getACoach, RouteNames.setProfile, RouteNames.joinATraining];
 
         const numberCompleted = itemsToComplete.reduce((total, item) => {
             if (DashBoard.getCompletedStatus(item, this.userState)) {
@@ -343,7 +347,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     handleCreated3MonthPlan() {
         this.dispatchEvent(new CustomEvent('user-state:change', { bubbles: true }))
         this.close3MonthPlan()
-        this.navigate(this.makeHref('my-plans'))
+        this.navigate(this.makeHref(RouteNames.myPlans))
     }
     unlock3MonthPlan() {
         makeRequest('POST', 'log', { type: 'training', subtype: '26_heard' }, 'zume_system/v1/' ).done( ( data ) => {
@@ -453,7 +457,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         const { type } = event.detail
 
         if (type === Wizards.getACoach) {
-            this.navigate(this.makeHref('my-coach'))
+            this.navigate(this.makeHref(RouteNames.myCoach))
         }
 
         if ( [ Wizards.makeAGroup, Wizards.makeFirstGroup, Wizards.joinATraining, Wizards.joinFriendsPlan ].includes(type) ) {
@@ -509,7 +513,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             <ul class="accordion-menu" data-accordion-menu data-submenu-toggle="true">
                                 <li class="menu-section" data-no-toggle>
                                     <nav-link
-                                        href=${this.makeHref('getting-started')}
+                                        href=${this.makeHref(RouteNames.gettingStarted)}
                                         class="menu-section__title menu-btn"
                                         icon="z-icon-start"
                                         text=${jsObject.translations.getting_started}
@@ -523,7 +527,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     }
                                             <ul class="nested ${this.isGettingStartedActive() ? 'is-active' : ''}">
                                                 ${
-                                                    DashBoard.childRoutesOf('getting-started')
+                                                    DashBoard.childRoutesOf(RouteNames.gettingStarted)
                                                         .map((route) => html`
                                                             <li>
                                                                 <nav-link
@@ -550,7 +554,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             </ul>
                             <div class="menu-section">
                                 <nav-link
-                                    href=${this.makeHref('training')}
+                                    href=${this.makeHref(RouteNames.training)}
                                     class="menu-section__title menu-btn"
                                     icon="z-icon-training"
                                     text=${jsObject.translations.training}
@@ -559,13 +563,13 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 </nav-link>
                                 <ul id="training-menu" class="nested accordion-menu menu vertical" data-accordion-menu>
                                     ${
-                                        DashBoard.childRoutesOf('training')
+                                        DashBoard.childRoutesOf(RouteNames.training)
                                             .map((route) => {
                                                 const isLocked = DashBoard.getLockedStatus(route.name, this.userState)
                                                 const isCompleted = DashBoard.getCompletedStatus(route.name, this.userState)
                                                 const isHandledLink = route.type === 'handled-link'
 
-                                                if (route.name === 'my-training' && this.numberOfGroups() > 1) {
+                                                if (route.name === RouteNames.myTraining && this.numberOfGroups() > 1) {
                                                     return html`
                                                         <li>
                                                             <nav-link
@@ -618,7 +622,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                             </div>
                             <li class="menu-section">
                                 <nav-link
-                                    href=${this.makeHref('practicing')}
+                                    href=${this.makeHref(RouteNames.practicing)}
                                     class="menu-section__title menu-btn"
                                     icon="z-icon-practicing"
                                     text=${jsObject.translations.practicing}
@@ -626,7 +630,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 ></nav-link>
                                 <ul class="nested">
                                     ${
-                                        DashBoard.childRoutesOf('practicing')
+                                        DashBoard.childRoutesOf(RouteNames.practicing)
                                             .map((route) => html`
                                                 <li>
                                                     <nav-link

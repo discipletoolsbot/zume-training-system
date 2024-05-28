@@ -95,4 +95,8 @@ export class WizardModuleManager {
 
         return this.#steps;
     }
+
+    updateProfile(profile) {
+        this.profile = profile
+    }
 }

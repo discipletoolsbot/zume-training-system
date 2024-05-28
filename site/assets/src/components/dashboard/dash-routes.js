@@ -1,5 +1,6 @@
 import { html } from "lit"
 import { Wizards } from "../wizard/wizard-constants"
+import { RouteNames } from "./routes"
 
 function makeClickHandler(type, eventName) {
     return (event, dispatchEvent) => {
@@ -11,7 +12,7 @@ function makeClickHandler(type, eventName) {
 export function dashRoutes() {
     return [
         {
-            name: 'root',
+            name: RouteNames.root,
             pattern: `${jsObject.base_url}`,
             icon: '',
             type: 'dash-link',
@@ -21,7 +22,7 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'getting-started',
+            name: RouteNames.gettingStarted,
             pattern: `${jsObject.base_url}/getting-started`,
             icon: 'z-icon-start',
             type: 'dash-link',
@@ -31,9 +32,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'set-profile',
+            name: RouteNames.setProfile,
             pattern: '#',
-            parent: 'getting-started',
+            parent: RouteNames.gettingStarted,
             icon: 'z-icon-profile',
             type: 'handled-link',
             clickHandler: makeClickHandler(Wizards.setProfile, 'open-wizard'),
@@ -44,9 +45,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'create-a-training',
+            name: RouteNames.createATraining,
             pattern: '#',
-            parent: 'getting-started',
+            parent: RouteNames.gettingStarted,
             icon: 'z-icon-start',
             type: 'handled-link',
             clickHandler: makeClickHandler(Wizards.makeAGroup, 'open-wizard'),
@@ -57,9 +58,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'join-a-training',
+            name: RouteNames.joinATraining,
             pattern: '#',
-            parent: 'getting-started',
+            parent: RouteNames.gettingStarted,
             icon: 'z-icon-public-training',
             type: 'handled-link',
             clickHandler: makeClickHandler(Wizards.joinATraining, 'open-wizard'),
@@ -70,9 +71,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'get-a-coach',
+            name: RouteNames.getACoach,
             pattern: '#',
-            parent: 'getting-started',
+            parent: RouteNames.gettingStarted,
             icon: 'z-icon-coach',
             type: 'handled-link',
             clickHandler: makeClickHandler(Wizards.getACoach, 'open-wizard'),
@@ -83,7 +84,7 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'training',
+            name: RouteNames.training,
             pattern: `${jsObject.base_url}/training`,
             icon: 'z-icon-training',
             type: 'dash-link',
@@ -93,9 +94,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'my-training',
+            name: RouteNames.myTraining,
             pattern: `${jsObject.base_url}/my-training/:code`,
-            parent: 'training',
+            parent: RouteNames.training,
             icon: 'z-icon-my-training',
             type: 'dash-link',
             translation: jsObject.translations['my_training'],
@@ -105,9 +106,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'my-progress',
+            name: RouteNames.myProgress,
             pattern: `${jsObject.base_url}/my-progress`,
-            parent: 'training',
+            parent: RouteNames.training,
             icon: 'z-icon-progress',
             type: 'dash-link',
             translation: jsObject.translations['my_progress'],
@@ -117,9 +118,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: '3-month-plan',
+            name: RouteNames.threeMonthPlan,
             pattern: `${jsObject.base_url}/3-month-plan`,
-            parent: 'training',
+            parent: RouteNames.training,
             icon: 'z-icon-plans',
             type: 'handled-link',
             clickHandler: makeClickHandler('3-month-plan', 'open-3-month-plan'),
@@ -130,7 +131,7 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'practicing',
+            name: RouteNames.practicing,
             pattern: `${jsObject.base_url}/practicing`,
             icon: 'z-icon-practicing',
             type: 'dash-link',
@@ -140,9 +141,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'my-coach',
+            name: RouteNames.myCoach,
             pattern: `${jsObject.base_url}/my-coach`,
-            parent: 'practicing',
+            parent: RouteNames.practicing,
             icon: 'z-icon-coach',
             type: 'dash-link',
             translation: jsObject.translations['my_coach'],
@@ -152,9 +153,9 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'my-plans',
+            name: RouteNames.myPlans,
             pattern: `${jsObject.base_url}/my-plans`,
-            parent: 'practicing',
+            parent: RouteNames.practicing,
             icon: 'z-icon-plans',
             type: 'dash-link',
             translation: jsObject.translations['my_plans'],
@@ -165,9 +166,9 @@ export function dashRoutes() {
         },
         /* Muted until join community is added back in */
         /* {
-            name: 'my-churches',
+            name: RouteNames.myChurches,
             pattern: `${jsObject.base_url}/my-churches`,
-            parent: 'practicing',
+            parent: RouteNames.practicing,
             icon: 'z-icon-churches',
             type: 'dash-link',
             translation: jsObject.translations['my_churches'],
@@ -178,9 +179,9 @@ export function dashRoutes() {
         },
          */
         {
-            name: 'my-maps',
+            name: RouteNames.myMaps,
             pattern: `${jsObject.base_url}/my-maps`,
-            parent: 'practicing',
+            parent: RouteNames.practicing,
             icon: 'z-icon-maps',
             type: 'dash-link',
             translation: jsObject.translations['my_maps'],
@@ -190,7 +191,7 @@ export function dashRoutes() {
             },
         },
         {
-            name: 'not-found',
+            name: RouteNames.notFound,
             pattern: '*',
             icon: '',
             type: 'dash-link',

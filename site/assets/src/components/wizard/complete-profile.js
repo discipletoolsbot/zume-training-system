@@ -214,8 +214,11 @@ export class CompleteProfile extends LitElement {
     }
 
     _sendDoneStepEvent() {
-        const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
-        this.dispatchEvent(doneStepEvent)
+        this.dispatchEvent(new CustomEvent( 'done-step', { bubbles: true } ))
+    }
+
+    _sendProfileUpdateEvent() {
+        this.dispatchEvent(new CustomEvent( 'profile:reload', { bubbles: true } ))
     }
 
     _handleCityChange(event) {
@@ -281,6 +284,7 @@ export class CompleteProfile extends LitElement {
         .then((newProfile) => {
             jsObject.profile = newProfile
 
+            this._sendProfileUpdateEvent()
             successCallback()
         })
         .catch((error) => {
