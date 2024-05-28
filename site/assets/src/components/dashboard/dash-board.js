@@ -467,6 +467,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                     const oldTrainingGroupKeys = Object.keys(oldTrainingGroups)
 
                     this.trainingGroups = results
+                    jsObject.training_groups = results
 
                     const newTrainingGroupIds = Object.keys(this.trainingGroups).filter((key) => !oldTrainingGroupKeys.includes(key))
 
