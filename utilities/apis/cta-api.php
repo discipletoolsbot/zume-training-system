@@ -224,7 +224,10 @@ class Zume_System_CTA_API
                 ],
                 'content_template' => 'celebration',
             ],
-            [
+            /* Mute for the user testing */
+            /* This needs an upgrade to work properly when you have 1 or more trainings */
+            /* The url needs to be set by the dashboard to load the correct invite wizard, or to take them to a list of their trainings */
+/*             [
                 'stages' => [1, 2],
                 'required_keys' => [],
                 'disable_keys' => ['system_invited_friends'],
@@ -238,7 +241,7 @@ class Zume_System_CTA_API
                     'link' => zume_invite_friends_url(),
                 ],
                 'content_template' => 'card',
-            ],
+            ], */
             [
                 'stages' => [1, 2, 3, 4, 5, 6],
                 'required_keys' => [],
