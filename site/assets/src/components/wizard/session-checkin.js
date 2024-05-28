@@ -45,9 +45,9 @@ export class SessionCheckin extends LitElement {
         if ( !url.searchParams.has('code') ) {
             this.message = ""
             this.setErrorMessage(this.t.broken_link)
-            this._sendDoneStepEvent()
             this.loading = false
             this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+            this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             return
         }
 
@@ -56,8 +56,6 @@ export class SessionCheckin extends LitElement {
 
         makeRequest( 'POST', 'checkin', { code: code }, 'zume_system/v1' )
             .then( ( data ) => {
-                this.message = this.t.success.replace('%s', data.name)
-
                 this._sendDoneStepEvent()
             })
             .fail( ({ responseJSON: error }) => {
@@ -68,8 +66,7 @@ export class SessionCheckin extends LitElement {
                 } else {
                     this.setErrorMessage(this.t.error)
                 }
-
-                this._sendDoneStepEvent()
+                this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             })
             .always(() => {
                 this.loading = false
@@ -78,19 +75,11 @@ export class SessionCheckin extends LitElement {
     }
 
     _sendDoneStepEvent() {
-        setTimeout(() => {
-            const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
-            this.dispatchEvent(doneStepEvent)
-        }, 2000);
+        this.dispatchEvent(new CustomEvent( 'done-step', { bubbles: true } ))
     }
 
     setErrorMessage( message ) {
-        console.log(message)
         this.errorMessage = message
-
-        setTimeout(() => {
-            this.errorMessage = ''
-        }, 3000)
     }
 
     render() {

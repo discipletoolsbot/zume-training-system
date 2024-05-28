@@ -37,13 +37,17 @@ class ZumeRequest {
             body: method === 'GET' ? null : JSON.stringify(data),
         } )
             .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`Request rejected with status ${response.status}`)
-                }
-                return response
+                return Promise.all([
+                    Promise.resolve(response.ok),
+                    response.json()
+                ])
             })
-            .then((response) => {
-                return response.json()
+            .then(([ok, body]) => {
+                if (!ok) {
+                    throw new Error(body.code)
+                }
+
+                return body
             })
     }
 

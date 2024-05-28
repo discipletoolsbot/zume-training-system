@@ -42,7 +42,8 @@ export class Wizard extends LitElement {
             /**
              * Is a step running an API request
              */
-            loading: { attribute: false },
+            loading: { type: Boolean, attribute: false },
+            finished: { type: Boolean, attribute: false },
         }
     }
 
@@ -53,11 +54,13 @@ export class Wizard extends LitElement {
         this.step = {}
         this.params = {}
         this.t = window.SHAREDFUNCTIONS.escapeObject(jsObject.translations)
+        this.finished = false
 
         this._handleHistoryPopState = this._handleHistoryPopState.bind(this)
         this._handleLoadWizard = this._handleLoadWizard.bind(this)
         this._handleGotoStep = this._handleGotoStep.bind(this)
         this._handleReloadProfile = this._handleReloadProfile.bind(this)
+        this._handleWizardFinished = this._handleWizardFinished.bind(this)
 
         this.stateManager = new WizardStateManager()
     }
@@ -67,6 +70,7 @@ export class Wizard extends LitElement {
         window.addEventListener('popstate', this._handleHistoryPopState)
         window.addEventListener('wizard:load', this._handleLoadWizard)
         window.addEventListener('wizard:goto-step', this._handleGotoStep)
+        window.addEventListener('wizard:finish', this._handleWizardFinished)
         window.addEventListener('profile:reload', this._handleReloadProfile)
     }
 
@@ -75,6 +79,7 @@ export class Wizard extends LitElement {
         window.removeEventListener('popstate', this._handleHistoryPopState)
         window.removeEventListener('wizard:load', this._handleLoadWizard)
         window.removeEventListener('wizard:goto-step', this._handleGotoStep)
+        window.removeEventListener('wizard:finish', this._handleWizardFinished)
         window.removeEventListener('profile:reload', this._handleReloadProfile)
     }
 
@@ -122,6 +127,7 @@ export class Wizard extends LitElement {
         this.steps = []
         this.step = {}
         this.stepIndex = 0
+        this.finished = false
     }
 
     render() {
@@ -284,13 +290,19 @@ export class Wizard extends LitElement {
     }
 
     finishButton() {
+        if (!this.finished) {
+            return ''
+        }
 
         return html`
-            <div class="text-center d-flex justify-content-between">
-                <div class="cluster ms-auto">
-                    <button @click=${this._handleFinish} ?disabled=${this.loading} class="btn tight light ${this.loading ? 'disabled' : ''}">${this.t.finish}</button>
-                </div>
-            </div>
+            <button
+                @click=${this._handleFinish}
+                ?disabled=${this.loading}
+                class="btn tight light
+                ${this.loading ? 'disabled' : ''} uppercase"
+            >
+                ${this.t.dashboard}
+            </button>
         `
     }
 
@@ -308,8 +320,9 @@ export class Wizard extends LitElement {
     }
 
     footer() {
+        let backButton = ''
         if (this.noUrlChange && this.stepIndex > 0 && this.type !== Wizards.makeAGroup) {
-            return html`
+            backButton = html`
                 <button
                     @click=${this._onBack}
                     class="btn tight light outline fit-content"
@@ -319,6 +332,13 @@ export class Wizard extends LitElement {
             `
 
         }
+
+        return html`
+            <div class="cluster justify-content-center">
+                ${backButton}
+                ${this.finishButton()}
+            </div>
+        `
     }
 
     _onBack() {
@@ -519,6 +539,9 @@ export class Wizard extends LitElement {
     _handleReloadProfile() {
         this.user = jsObject.profile
         this.wizard.updateProfile(this.user)
+    }
+    _handleWizardFinished() {
+        this.finished = true
     }
 
     _handleLoading(event) {

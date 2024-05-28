@@ -55,6 +55,8 @@ export class RequestCoach extends LitElement {
             'telegram',
             'messenger',
         ]
+        this.stateManager = new WizardStateManager(this.module)
+        this.stateManager.clear()
     }
 
     updated() {
@@ -66,36 +68,40 @@ export class RequestCoach extends LitElement {
             this.loading = true
             this.requestSent = true
             this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
-            const onCoachRequested = (( data ) => {
-                if ( data === false ) {
-                    this.message = this.t.connect_fail
-                    this.setErrorMessage(this.t.error_connecting)
-                }
-
-                if (
-                    data.coach_request &&
-                    data.coach_request.errors &&
-                    Object.keys(data.coach_request.errors).length !== 0
-                ) {
-                    const errorKeys = Object.keys(data.coach_request.errors)
-
-                    if (errorKeys[0] === 'already_has_coach') {
-                        this.message = this.t.already_coached
+            zumeRequest.post('get_a_coach', { data } )
+                .then(( data ) => {
+                    if ( data === false ) {
+                        this.message = this.t.connect_fail
                         this.setErrorMessage(this.t.error_connecting)
                     }
-                }
-            }).bind(this)
-            const onFail = (() => {
-                this.message = this.t.connect_fail
-                this.setErrorMessage(this.t.error_connecting)
-            }).bind(this)
-            zumeRequest.post('get_a_coach', { data } )
-                .then(onCoachRequested)
-                .catch(onFail)
+                })
+                .catch((error) => {
+                    if (error.message === 'already_has_coach') {
+                        this.message = ''
+                        this.setErrorMessage(this.t.already_coached)
+                        return
+                    }
+
+                    this.message = this.t.connect_fail
+                    this.setErrorMessage(this.t.error_connecting)
+                })
                 .finally(() => {
                     this.loading = false
                     this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+                    this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
                 })
+        }
+    }
+
+    willUpdate(properties) {
+        if (properties.has('variant')) {
+
+            this.state = this.stateManager.get(this.variant) || {}
+
+            if ( this.variant === Steps.languagePreferences && !this.state.value ) {
+                this.state.value = jsObject.profile.preferred_language || 'en'
+                this.stateManager.add( this.variant, this.state )
+            }
         }
     }
 
@@ -104,20 +110,6 @@ export class RequestCoach extends LitElement {
     }
 
     render() {
-        if ( !this.stateManager ) {
-            this.stateManager = new WizardStateManager(this.module)
-
-            this.state = this.stateManager.get(this.variant) || {}
-
-            if ( this.variant === Steps.languagePreferences && !this.state.value ) {
-                this.state.value = jsObject.profile.preferred_language || 'en'
-                this.stateManager.add( this.variant, this.state )
-            }
-            if ( this.variant === Steps.contactPreferences && Object.keys(this.state).length === 0 ) {
-                this.state = Object.fromEntries(jsObject.profile.contact_preference.map((pref) => ([ pref, 'true' ])))
-            }
-        }
-
         return html`
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${ this.variant === Steps.contactPreferences ? html`
@@ -181,9 +173,8 @@ export class RequestCoach extends LitElement {
             ` : '' }
             ${ this.variant !== Steps.connectingToCoach
                 ? html`
-                    <div class="cluster | mx-auto">
-                        <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-                        <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next}</button>
+                    <div class="mx-auto">
+                        <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading ? 'active' : ''}"></span></button>
                     </div>
                 `
                 : ''}
@@ -197,10 +188,11 @@ export class RequestCoach extends LitElement {
             event.preventDefault()
         }
 
-        if ( Object.keys(this.state).length === 0 ) {
+        if ( Object.keys(this.state).length === 0 || Object.values(this.state).every((item) => !item)) {
             this.setErrorMessage(this.t.missing_response)
-
             return
+        } else {
+            this.setErrorMessage('')
         }
 
         this._sendDoneStepEvent()
@@ -209,12 +201,6 @@ export class RequestCoach extends LitElement {
     _sendDoneStepEvent() {
         const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
         this.dispatchEvent(doneStepEvent)
-    }
-
-    _handleFinish() {
-        setTimeout(() => {
-            this._sendDoneStepEvent()
-        }, 3000);
     }
 
     _handleChange(event) {

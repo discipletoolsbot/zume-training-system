@@ -95,7 +95,7 @@ export class DashProgress extends DashPage {
             this.changeHost(key, true)
             return zumeRequest.post('host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id } )
                 .then( ( data ) => {
-                    console.log(data)
+                    //console.log(data)
                 })
                 .catch((error) => {
                     this.changeHost(key, false)

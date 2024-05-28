@@ -33,6 +33,7 @@ export class JoinCommunity extends LitElement {
             })
             .always(() => {
                 this.loading = false
+                this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             })
     }
 
@@ -85,9 +86,6 @@ export class JoinCommunity extends LitElement {
                             <span class="banner success">
                                 ${this.t.joined_community}
                             </span>
-                            <button class="btn light uppercase" @click=${this._sendDoneStepEvent}>
-                                ${this.t.dashboard}
-                            </button>
                         </div>
                     ` : ''
                 }
@@ -97,9 +95,6 @@ export class JoinCommunity extends LitElement {
                             <span class="banner warning">
                                 ${this.t.error}
                             </span>
-                            <button class="btn light uppercase" @click=${this._sendDoneStepEvent}>
-                                ${this.t.dashboard}
-                            </button>
                         </div>
                     ` : ''
                 }

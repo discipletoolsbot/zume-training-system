@@ -59,8 +59,6 @@ export class ConnectFriend extends LitElement {
                 console.log(data)
 
                 this.message = this.t.success.replace('%s', data.name)
-
-                this._sendDoneStepEvent()
             })
             .fail( ({ responseJSON: error }) => {
                 console.log(error)
@@ -70,28 +68,16 @@ export class ConnectFriend extends LitElement {
                 } else {
                     this.setErrorMessage(this.t.error)
                 }
-
-                this._sendDoneStepEvent()
             })
             .always(() => {
                 this.loading = false
                 this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+                this.dispatchEvent(new CustomEvent( 'wizard:finish', { bubbles: true } ))
             })
-    }
-
-    _sendDoneStepEvent() {
-        setTimeout(() => {
-            const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
-            this.dispatchEvent(doneStepEvent)
-        }, 2000);
     }
 
     setErrorMessage( message ) {
         this.errorMessage = message
-
-        setTimeout(() => {
-            this.errorMessage = ''
-        }, 3000)
     }
 
     render() {

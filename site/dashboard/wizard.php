@@ -158,6 +158,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
             'finish' => __( 'Finish', 'zume' ),
             'close' => __( 'Close', 'zume' ),
             'no_locations_found' => __( 'No locations found', 'zume' ),
+            'dashboard' => __( 'Dashboard', 'zume' ),
             'join_community' => [
                 'community_title' => __( 'Zúme Community', 'zume' ),
                 'community_description' => __( 'Zúme is a community of practice and encouragement for those who want to see disciple making movements. The Zúme vision is to see one trainee and two simple churches for every 5,000 people in the United States and 50,000 people globally.', 'zume' ),

@@ -95,14 +95,6 @@ export class MakeTraining extends LitElement {
         }
     }
 
-    setErrorMessage( message ) {
-        this.errorMessage = message
-
-        setTimeout(() => {
-            this.errorMessage = ''
-        }, 3000)
-    }
-
     _handlePlanDecision(event) {
         const decision = event.target.dataset.decision
         let wizard = ''

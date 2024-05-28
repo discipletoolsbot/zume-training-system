@@ -78,14 +78,8 @@ export class JoinTraining extends LitElement {
             .finally(() => {
                 this.loading = false;
                 this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+                this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             });
-    }
-
-    _sendDoneStepEvent() {
-        setTimeout(() => {
-            const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
-            this.dispatchEvent(doneStepEvent)
-        }, 2000);
     }
 
     setErrorMessage( message ) {

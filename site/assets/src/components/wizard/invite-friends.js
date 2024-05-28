@@ -64,6 +64,8 @@ export class InviteFriends extends LitElement {
             .always(() => {
                 this.loading = false
             })
+
+        this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
     }
 
     getNextSession() {

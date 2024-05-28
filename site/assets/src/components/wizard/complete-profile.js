@@ -159,10 +159,12 @@ export class CompleteProfile extends LitElement {
                 </div>
             </div>
             <div class="cluster | mx-auto">
-                <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next}</button>
-                ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
-                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-                ` : '' }
+                <button type="submit" class="btn tight light" ?disabled=${this.loading}>
+                    ${this.t.next}
+                   ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
+                        <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                    ` : '' }
+                </button>
             </div>
         </form>
 
