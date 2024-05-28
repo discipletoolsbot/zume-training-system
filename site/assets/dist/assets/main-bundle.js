@@ -1045,6 +1045,7 @@ ${this.training.zoom_link_note}
                             text=${t.translation||""}
                             icon=${t.icon}
                             ?disableNavigate=${t.type==="handled-link"}
+                            as=${t.type==="handled-link"?"link":"nav"}
                             @click=${t.type==="handled-link"?s=>{O.getCompletedStatus(t.name,e)||t.clickHandler(s,this.dispatchEvent)}:null}
                             ?completed=${O.getCompletedStatus(t.name,e)}
                             ?locked=${O.getLockedStatus(t.name,e)}
@@ -1061,6 +1062,7 @@ ${this.training.zoom_link_note}
                         explanation=${t.explanation}
                         icon=${t.icon}
                         ?disableNavigate=${t.type==="handled-link"}
+                        as=${t.type==="handled-link"?"link":"nav"}
                         @click=${t.type==="handled-link"?s=>{O.getCompletedStatus(t.name,e)||t.clickHandler(s,this.dispatchEvent)}:null}
                         ?completed=${O.getCompletedStatus(t.name,e)}
                         ?locked=${O.getLockedStatus(t.name,e)}
