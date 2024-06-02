@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-23 19:50+0000\n"
+"PO-Revision-Date: 2024-05-27 14:55+0000\n"
 "Last-Translator: Zlatko Celik <zlatko.celik@gmail.com>\n"
-"Language-Team: Croatian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/hr/>\n"
+"Language-Team: Croatian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -620,7 +620,7 @@ msgstr "Bez rezultata"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
@@ -717,7 +717,7 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
@@ -841,123 +841,115 @@ msgstr "2. Podučavajte druge uz Model, Asistenciju, Nadgledanje, Ostavljanje."
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Samoocjenjivanje"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "Voditeljske grupe"
+msgstr "Razina razvoja polaznika"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr ""
+msgstr "Nesvjestan"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr ""
+msgstr "Nestručan"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
-msgstr "Završeno"
+msgstr "Kompetentan"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr ""
+msgstr "Vješt"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Uloga mentora"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "Obradite nove informacije i osigurajte razumijevanje"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "Stanite i ostanite s njima dok ne savladaju osnove"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "Ostanite angažirani dok ne postanete stalno kompetentni"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Odnosite se prema njima kao prema suradnicima"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Ponašanje mentora"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
-msgstr ""
+msgstr "Usmjeravajte i informirajte"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr ""
+msgstr "Izravno i podrška"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
-msgstr ""
+msgstr "Podržite i ohrabrite"
 
 #: site/activities/coaching-checklist.php:182
 msgid "Receive updates"
-msgstr ""
+msgstr "Primajte ažuriranja"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Planiranje odgovornosti"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr ""
+msgstr "Mentor odlučuje"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Razgovarajte, a mentor odlučuje"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Razgovarajte, a polaznik odlučuje"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr ""
+msgstr "Polaznik odlučuje"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr ""
+msgstr "Je li polaznik nesvjestan, ne poznaje ili pogrešno shvaća alat?"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr ""
-"Ako ste donekle upoznati, ali još uvijek niste sigurni u alat, pogledajte "
-"CRVENI stupac"
+msgstr "Je li polaznik donekle upoznat s alatom, ali još uvijek nije siguran?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr ""
+msgstr "Razumije li polaznik alat i može li naučiti osnove alata?"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
-msgstr ""
-"Ako ste potpuno sigurni i možete učinkovito trenirati Alat - pogledajte "
-"ZELENI stupac"
+msgstr "Osjeća li se polaznik sigurno i sposobno učinkovito obučiti za alat?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -2757,13 +2749,12 @@ msgstr ""
 "učenika."
 
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Samoprocjena - procijenite sebe i označite odgovarajuće stupce na kontrolnom "
-"popisu za trenere."
+"Samoocijenite se pomoću retka 1 i označite odgovarajuće stupce na Kontrolnom "
+"popisu za treniranje."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
@@ -4369,35 +4360,36 @@ msgid "You are not authorized to access this page"
 msgstr "Niste ovlašteni za pristup ovoj stranici"
 
 #: site/dashboard/dashboard.php:283
-#, fuzzy
 msgid "There has been an error with your request"
-msgstr "U vašem obrascu postoje neke pogreške."
+msgstr "Došlo je do pogreške s vašim zahtjevom"
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Hvala vam na zahtjevu za treniranje. Naš tim će raditi na tome da vas poveže "
+"s dostupnim trenerom na vašem jeziku i regiji."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Molimo vas obratite pažnju na komunikaciju od strane trenera unutar "
+"preferiranih kanala."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr ""
+msgstr "Karta od 100 sati"
 
 #: site/dashboard/dashboard.php:287
-#, fuzzy
 msgid "Training vision map"
-msgstr "Treninzi"
+msgstr "Karta vizije treninga"
 
 #: site/dashboard/dashboard.php:288
-#, fuzzy
 msgid "Simple church planting map"
-msgstr "Zasićenost Jednostavnim crkvama"
+msgstr "Karta osnivanja Jednostavnih crkava"
 
 #: site/dashboard/dashboard.php:294
 msgid ""
@@ -6239,7 +6231,7 @@ msgstr "Sortiraj"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr ""
+msgstr "Stavke"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6510,14 +6502,12 @@ msgid "3 Month Plan Completed"
 msgstr "Tromjesečni plan dovršen"
 
 #: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
-#, fuzzy
 msgid "Join a Hub"
-msgstr "Zajednica"
+msgstr "Pridružite se centru"
 
 #: utilities/apis/cta-api.php:368
-#, fuzzy
 msgid "Join a hub to help you grow"
-msgstr "Pošaljite izvješće koje će vam pomoći u rastu"
+msgstr "Pridružite se centru koji će vam pomoći u rastu"
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
 msgid "Share Spiritual Breathing"

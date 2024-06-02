@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-24 09:07+0000\n"
-"Last-Translator: Selena Chang <selena.chang@tast.com.tw>\n"
+"PO-Revision-Date: 2024-05-31 08:59+0000\n"
+"Last-Translator: Sidney Huang <sidney.huang@tast.com.tw>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -22,7 +22,7 @@ msgstr "訓練"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:208
 msgid "How it Works"
-msgstr "怎麼運作的"
+msgstr "如何運作"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -99,7 +99,7 @@ msgstr "門徒與教會的簡單定義"
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
-msgstr "成為門徒﹑又使人成為門徒的精髓意義為何？教會又是什麼？"
+msgstr "探索成為門徒、培養門徒以及什麼是教會的本質。"
 
 #: globals.php:1920 site/course/course-content.php:143
 #: site/course/course-content.php:152
@@ -3620,7 +3620,7 @@ msgstr "電子郵件"
 
 #: site/dashboard/dashboard.php:175
 msgid "Communications Email"
-msgstr "通訊電子郵件"
+msgstr "電子郵件"
 
 #: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
 #: site/profile/profile.php:128
@@ -3629,7 +3629,7 @@ msgstr "鄉/鎮/市/區"
 
 #: site/dashboard/dashboard.php:177
 msgid "No Locations found"
-msgstr "未找到地點"
+msgstr "找不到地點"
 
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
 #: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
@@ -3644,7 +3644,7 @@ msgstr "編輯個人資料"
 
 #: site/dashboard/dashboard.php:181
 msgid "Check out this Zúme concept"
-msgstr "看看這個 Zúme 概念"
+msgstr "什麼是 Zúme 天國酵母"
 
 #: site/dashboard/dashboard.php:182
 msgid "Preview"
@@ -3654,7 +3654,7 @@ msgstr "預覽"
 #: site/dashboard/dashboard.php:259
 #, php-format
 msgid "Add new %s"
-msgstr "新增新的%s"
+msgstr "新增%s"
 
 #: site/dashboard/dashboard.php:183
 msgid "Commitment"
@@ -3666,7 +3666,7 @@ msgstr "複製連結"
 
 #: site/dashboard/dashboard.php:185
 msgid "Copy this link and send it to your friends 🙂"
-msgstr "複製此連結並將其發送給您的朋友 🙂"
+msgstr "複製此連結並發送給朋友 🙂"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
 msgid "Thanks!"
@@ -3687,84 +3687,75 @@ msgstr "設定設定檔"
 
 #: site/dashboard/dashboard.php:190
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr "完成簡短的設定檔精靈來設定您的設定檔"
+msgstr "用設定精靈來完成您的個人資料"
 
 #: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
-#, fuzzy
 msgid "Join or create a training group"
-msgstr "參加培訓"
+msgstr "新增一個或加入現有的學習團體"
 
 #: site/dashboard/dashboard.php:192
-#, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
-msgstr "使用我們易於設定的嚮導創建您自己的培訓小組或加入我們的線上培訓之一"
+msgstr "使用設定精靈，來加入我們的線上課程，或新增一個的學習團體"
 
 #: site/dashboard/dashboard.php:193
-#, fuzzy
 msgid "Create Training Group"
-msgstr "創建培訓"
+msgstr "新增學習小組"
 
 #: site/dashboard/dashboard.php:194
-#, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "使用我們易於設定的嚮導創建您自己的培訓小組或加入我們的線上培訓之一"
+msgstr "用設定精靈來新增一個學習小組"
 
 #: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
-#, fuzzy
 msgid "Join Training Group"
-msgstr "參加培訓"
+msgstr "加入學習小組"
 
 #: site/dashboard/dashboard.php:196
-#, fuzzy
 msgid "Join an online training group run by a coach"
-msgstr "參加線上培訓以了解更多信息"
+msgstr "加入一個有教練帶領的線上學習小組"
 
 #: site/dashboard/dashboard.php:198
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
-msgstr "在訓練之前、期間或之後與教練聯繫以獲得任何幫助或鼓勵。"
+msgstr "來認識一位教練，他可以在課程中與課堂外給予您幫助與鼓勵。"
 
 #: site/dashboard/dashboard.php:200
 msgid "My Progress"
-msgstr "我的進步"
+msgstr "我的進度"
 
 #: site/dashboard/dashboard.php:201
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
-msgstr ""
-"透過此互動式視圖追蹤您的課程進度。學會傾聽、服從、分享並用你所學到的知識訓練"
-"他人。"
+msgstr "此互動式視窗可以追蹤您的課程進度。學習傾聽、順服、分享、教導他人你已學會的。"
 
 #: site/dashboard/dashboard.php:202
 msgid "Information about progress"
-msgstr "有關進展的信息"
+msgstr "關於進度的資訊"
 
 #: site/dashboard/dashboard.php:203
 msgid "My Training"
-msgstr "我的訓練"
+msgstr "我的課程"
 
 #: site/dashboard/dashboard.php:204
 msgid "My Trainings"
-msgstr "我的訓練"
+msgstr "我的課程"
 
 #: site/dashboard/dashboard.php:205
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
-msgstr "完全存取您的培訓內容、日程安排、小組詳細資訊和共享工具。"
+msgstr "您的課程內容、排程、小組詳細資訊、共享工具可完整存取。"
 
 #: site/dashboard/dashboard.php:207
-#, fuzzy
 msgid "Create Your Plan"
-msgstr "制定計劃"
+msgstr "制定您的計劃"
 
 #: site/dashboard/dashboard.php:209
 msgid "Three Month Plan Locked"
-msgstr "三個月計劃已鎖定"
+msgstr "三個月計劃尚未開放"
 
 #: site/dashboard/dashboard.php:210
 msgid ""
@@ -3904,12 +3895,12 @@ msgstr "小組成員"
 
 #: site/dashboard/dashboard.php:247
 msgid "Mark Completed"
-msgstr "標記已完成"
+msgstr "標記為完成"
 
 #: site/dashboard/dashboard.php:248
-#, fuzzy, php-format
+#, php-format
 msgid "Session %d"
-msgstr "第二堂"
+msgstr "課程 %d"
 
 #: site/dashboard/dashboard.php:249 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
@@ -3930,7 +3921,7 @@ msgstr "邀請朋友"
 
 #: site/dashboard/dashboard.php:254
 msgid "Click to add your first church"
-msgstr "點擊新增您的第一個教堂"
+msgstr "新增您的第一個教會"
 
 #: site/dashboard/dashboard.php:255
 msgid "Church Name"
@@ -3942,11 +3933,11 @@ msgstr "人數"
 
 #: site/dashboard/dashboard.php:257
 msgid "Church Location"
-msgstr "教堂位置"
+msgstr "教會地點"
 
 #: site/dashboard/dashboard.php:258
 msgid "Parent Church"
-msgstr "家長會"
+msgstr "母會"
 
 #: site/dashboard/dashboard.php:259
 msgid "Church"
@@ -3962,17 +3953,17 @@ msgstr "您已請求教練"
 
 #: site/dashboard/dashboard.php:263
 msgid "You have joined a training"
-msgstr "您已參加培訓"
+msgstr "您已加入一個課程"
 
 #: site/dashboard/dashboard.php:264
 msgid "You have set your profile"
-msgstr "您已設定您的個人資料"
+msgstr "您已設定個人資料"
 
 #: site/dashboard/dashboard.php:265
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr "%s 已解鎖"
+msgstr "%s 已開放"
 
 #: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
 msgid "3 month plan"
@@ -3980,32 +3971,31 @@ msgstr "3個月計劃"
 
 #: site/dashboard/dashboard.php:266
 msgid "You have joined the community"
-msgstr "您已加入社區"
+msgstr "您已加入社群"
 
 #: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
-msgstr ""
+msgstr "新增帳號必須輸入電郵地址，本系統中的通訊功能需要有電郵地址才能運作。"
 
 #: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
 #: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
-msgstr ""
+msgstr "需要輸入聯絡電話，免費教練功能才能夠運作。"
 
 #: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
 #: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
-msgstr ""
+msgstr "請輸入使用者所在的城市，以便個人化網站資訊，並為您配對當地的教練與客服。"
 
 #: site/dashboard/dashboard.php:271
-#, fuzzy
 msgid "Zúme Community"
-msgstr "加入社區"
+msgstr "Zúme 社群"
 
 #: site/dashboard/dashboard.php:272
 #, fuzzy
@@ -4426,8 +4416,9 @@ msgid "Skip for now"
 msgstr "暫時跳過"
 
 #: site/dashboard/wizard.php:237
+#, fuzzy
 msgid "Choose your course format"
-msgstr ""
+msgstr "選擇您的課程模式"
 
 #: site/dashboard/wizard.php:238
 msgid "1 hour (20 sessions)"
@@ -4438,9 +4429,8 @@ msgid "2 hour (10 sessions)"
 msgstr "2小時（10節）"
 
 #: site/dashboard/wizard.php:240
-#, fuzzy
 msgid "4 hour (5 sessions)"
-msgstr "1小時（20節）"
+msgstr "4小時（5節）"
 
 #: site/dashboard/wizard.php:241
 #, fuzzy
@@ -4939,6 +4929,7 @@ msgstr ""
 "法演變成現在的 Zúme。"
 
 #: site/pages/about.php:101
+#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -4946,9 +4937,9 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
-"Zúme Training 的門徒訓練基本原則直接源自聖經，並已在全球經過了三十多年的檢"
-"驗。這些原則使普通信徒成為門徒，而普通信徒又使門徒成為門徒，從而使數以百萬計"
-"的門徒在靈性黑暗的地方推進王國的發展。"
+"Zúme Training 的門徒訓練基本原則直接源自聖經，並已在全球經過了三十多年的檢驗"
+"。這些原則使普通信徒成為門徒，而普通信徒又使門徒成為門徒，從而使數以百萬計的"
+"門徒在靈性黑暗的地方推進王國的發展。"
 
 #: site/pages/about.php:114
 msgid ""
@@ -5513,11 +5504,12 @@ msgstr "我準備好了！"
 #: site/pages/home.php:193
 #, fuzzy
 msgid "Ordinary People. Simple Steps."
-msgstr "普通人。簡單的步驟。"
+msgstr "平凡人 簡單做"
 
 #: site/pages/home.php:238
+#, fuzzy
 msgid "More about zume"
-msgstr "關於祖梅的更多信息"
+msgstr "關於zume的更多信息"
 
 #: site/pages/home.php:272
 msgid "Real people ... real stories."

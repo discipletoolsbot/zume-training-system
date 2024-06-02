@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-25 08:01+0000\n"
+"PO-Revision-Date: 2024-05-28 14:33+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
-"Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/it_IT/>\n"
+"Language-Team: Italian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -440,7 +440,7 @@ msgstr "Ciclo di Addestramento"
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050
 msgid "Leadership Cells"
-msgstr "Gruppi di Leader"
+msgstr "Cellule di Leadership"
 
 #: globals.php:2150 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:325
@@ -454,7 +454,7 @@ msgstr ""
 #: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
 #: site/course/course-content.php:5175
 msgid "Expect Non-Sequential Growth"
-msgstr "La Crescita Non Sequenziale"
+msgstr "Aspettarsi una Crescita Non Sequenziale"
 
 #: globals.php:2161
 msgid ""
@@ -498,7 +498,7 @@ msgstr ""
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr "Piano trimestrale"
+msgstr "Piano di 3 Mesi"
 
 #: globals.php:2195
 msgid ""
@@ -635,14 +635,14 @@ msgstr "A.O.C.F."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "Fai un'autovalutazione con Ascoltare, Obbedire, Condividere, Formare."
+msgstr "Fai un'autovalutazione con Ascoltato, Obbedito, Condiviso, Formato."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
 msgid "Training Tools/Concepts"
-msgstr "Attrezzi/Concetti della Formazione"
+msgstr "Strumenti/Concetti della Formazione"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
@@ -683,13 +683,13 @@ msgstr "Condiviso"
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:237
 msgid "Trained"
-msgstr "Preparato"
+msgstr "Formato"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
 msgid "Have I heard about this tool or concept?"
-msgstr "Conosco la teoria di questo attrezzo o concetto?"
+msgstr "Ho sentito di questo strumento o concetto?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
@@ -698,7 +698,7 @@ msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
-"Ho messo in pratica questo attrezzo o concetto? Se è un attrezzo, l'ho "
+"Ho messo in pratica questo strumento o concetto? Se è un strumento, l'ho "
 "praticato da solo? Se è un concetto, hai riflettuto su come cambia il tuo "
 "modo di pensare?"
 
@@ -709,9 +709,9 @@ msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
-"Ho condiviso questo attrezzo o concetto con qualcuno? Se è un attrezzo, hai "
-"mostrato a qualcuno come utilizzarlo? Se è un concetto, l'hai condiviso con "
-"qualcuno?"
+"Ho condiviso questo strumento o concetto con qualcuno? Se è un strumento, "
+"hai mostrato a qualcuno come utilizzarlo? Se è un concetto, l'hai condiviso "
+"con qualcuno?"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
@@ -721,8 +721,8 @@ msgid ""
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
-"Ho formato altre persone affinché possano utilizzare questo attrezzo o "
-"concetto? Se è un attrezzo, ho formato qualcuno affinchè possa condividerlo "
+"Ho formato altre persone affinché possano utilizzare questo strumento o "
+"concetto? Se è un strumento, ho formato qualcuno affinchè possa condividerlo "
 "con qualcun altro? Se è un concetto, ho formato qualcuno affinché possano "
 "condividerlo con qualcun altro?"
 
@@ -788,6 +788,12 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"Formare consiste semplicemente nel fornire un esempio di una pratica o di "
+"uno strumento. È la parte più breve del ciclo formativo. Di solito è "
+"necessario farlo solo una volta. Si tratta semplicemente di creare la "
+"consapevolezza che una pratica o uno strumento esiste e dare un'idea "
+"generale di come appare. Formare ripetutamente per molto tempo non è un modo "
+"efficace per equipaggiare qualcuno."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
@@ -801,6 +807,14 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"Assistere significa consentire al discepolo di esercitarsi con la "
+"competenza. Ciò richiede più tempo della fase di formare. Richiede al "
+"mentore di tenere il discepolo per mano. Il mentore deve essere direttivo e "
+"assumere un ruolo attivo nel tutoraggio del discepolo. Questa fase non dura "
+"fino a quando il discepolo raggiunga la piena competenza, ma semplicemente "
+"fino a quando comprenda le basi dell'abilità. Se questa fase viene protratta "
+"troppo a lungo, il discepolo svilupperà una dipendenza dal mentore e non "
+"raggiungerà mai la piena competenza."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
@@ -812,6 +826,12 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"Vegliare è la fase più lunga. Implica un contatto più indiretto con il "
+"discepolo. Cerca di sviluppare la piena abilità in tutti gli aspetti di una "
+"competenza. Potrebbe richiedere dieci volte il tempo o ancora di più delle "
+"prime due fasi messe insieme. Man mano che il discepolo progredisce nelle "
+"sue competenze, il contatto con il mentore può diventare meno regolare e più "
+"ad hoc."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
@@ -822,138 +842,141 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"La fase Lasciare è una sorta di diploma quando il discepolo diventa pari al "
+"mentore. I contatti periodici e il tutoraggio alla pari possono continuare "
+"ad aver luogo se il discepolo e il mentore fanno parte della stessa rete. "
+"Quando un genitore lascia che il bambino possa andare in bicicletta "
+"completamente senza sorveglianza, quella è la fase LASCIARE."
 
 #: site/activities/coaching-checklist-two.php:98
-#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
-"1. Fare un'autovalutazione con Ascoltare, Obbedire, Condividere, Formare."
+msgstr "1. Fare un'autovalutazione con Ascoltato, Obbedito, Condiviso, Formato."
 
 #: site/activities/coaching-checklist-two.php:99
-#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr "2. Come tutor utilizza Formare, Assistere, Vegliare, Lasciare."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Autovalutazione"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "Cellule di Leadership"
+msgstr "Livello di Sviluppo del Discepolo"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr ""
+msgstr "Inconsapevole"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr ""
+msgstr "Inesperto"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
-msgstr "Completato"
+msgstr "Competente"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr ""
+msgstr "Esperto"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Ruolo del Mentore"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
 msgstr ""
+"Formare con nuove informazioni e assicurarsi che il discepolo abbia capito"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "Fermarsi per stare con il discepolo finché abbiano le basi"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
 msgstr ""
+"Rimanere in costante contatto fino a quando il discepolo dimostri di essere "
+"regolarmente competente"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Relazionati a lui/lei come collaboratore"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Comportamenti del Mentore"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
-msgstr ""
+msgstr "Orientare e informare"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr ""
+msgstr "Orientare e supportare"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
-msgstr ""
+msgstr "Supportare e incoraggiare"
 
 #: site/activities/coaching-checklist.php:182
 msgid "Receive updates"
-msgstr ""
+msgstr "Ricevere aggiornamenti"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Responsabilità di pianificare"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr ""
+msgstr "Il Mentore decide"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Si discute e il Mentore decide"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Si discute e il Discepolo decide"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr ""
+msgstr "Il Discepolo decide"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
+"Il Discepolo è inconsapevole, non ha familiarità o non capisce lo strumento?"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Se conoscete in qualche modo lo Strumento, ma non siete ancora sicuri - "
-"spuntate la colonna ROSSA"
+"Il discepolo conosce un po' lo strumento, ma non è ancora sicuro quando lo "
+"usa?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
+"Il Discepolo capisce lo strumento ed è capace di formare qualcuno con le "
+"basi dello strumento?"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
-"Se vi sentite sicuri e potete effettivamente formare altri attraverso questo "
-"strumento - spuntate la colonna VERDE."
+"Il Discepolo si sente sicuro ed è capace di formare altri con lo strumento?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -973,11 +996,11 @@ msgstr "Sconosciuto"
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
 msgid "3-Month Plan"
-msgstr "Piano Trimestrale"
+msgstr "Piano di 3 Mesi"
 
 #: site/activities/three-month-plan.php:67
 msgid "Switch to Printable Version"
-msgstr "Cambiare alla Versione Stampabile"
+msgstr "Cambia alla Versione Stampabile"
 
 #: site/activities/three-month-plan.php:80
 msgid "Scripts are off"
@@ -1150,19 +1173,21 @@ msgid "Scan the QR code or find a piece of paper."
 msgstr "Scansiona il codice QR o trova un foglio."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#, fuzzy
 msgid "Select a person from your list of 100."
-msgstr "Create la vostra lista dei 100"
+msgstr "Scegli una persona dalla tua lista dei 100."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"Utilizza la lista di controllo del tutoraggio e fai una valutazione della "
+"persona selezionata. Chiedi a te stesso, \"Cosa serve a questa persona per "
+"ognuno degli strumenti e dei concetti?\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid "Check off the checklist."
-msgstr ""
+msgstr "Controlla tutta la lista."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1412,7 +1437,7 @@ msgstr "Respiro Spirituale"
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
 msgid "And we will add these tools to our toolkit:"
-msgstr "E aggiungeremo questi attrezzi alla nostra cassetta:"
+msgstr "E aggiungeremo questi strumenti alla nostra cassetta:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
@@ -1582,14 +1607,14 @@ msgstr "RICAPITOLIAMO"
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
-msgstr "I concetti sentiti in questa sessione:"
+msgstr "I concetti ascoltati in questa sessione:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
-msgstr "Gli attrezzi sentiti in questa sessione:"
+msgstr "Gli strumenti ascoltati in questa sessione:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1605,7 +1630,7 @@ msgstr "Gli attrezzi sentiti in questa sessione:"
 #: site/course/course-content.php:5321 site/course/course-content.php:5461
 #: site/course/course-content.php:5583
 msgid "OBEY"
-msgstr "UBBIDIRE"
+msgstr "OBBEDIRE"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -1914,7 +1939,7 @@ msgid ""
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
-"Chiedi a Dio con chi vuole che tu condivida l'attrezzo “Lista dei 100”. "
+"Chiedi a Dio con chi vuole che tu condivida lo strumento “Lista dei 100”. "
 "Condividi il nome di quella persona con il gruppo prima di andare via e "
 "contatta quella persona prima di incontrarti col gruppo per la prossima "
 "sessione."
@@ -2245,7 +2270,7 @@ msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"Chiedi a Dio chi vuole che formi con l'attrezzo Testimonianza di 3 minuti. "
+"Chiedi a Dio chi vuole che formi con lo strumento Testimonianza di 3 minuti. "
 "Condividi il nome di questa persona con il gruppo prima di andare via."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
@@ -2399,7 +2424,7 @@ msgstr "La Fedeltà è Meglio della Conoscenza"
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
 msgid "And we will add this tool to our toolkit:"
-msgstr "E aggiungeremo questo attrezzo alla nostra cassetta:"
+msgstr "E aggiungeremo questo strumento alla nostra cassetta:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2568,7 +2593,7 @@ msgstr "Concetto ascoltato in questa sessione:"
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
 msgid "Tool heard in this session:"
-msgstr "Attrezzo ascoltato in questa sessione:"
+msgstr "Strumento ascoltato in questa sessione:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
 msgid ""
@@ -2604,7 +2629,7 @@ msgstr ""
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
-msgstr "E ci eserciteremo con questo attrezzo dalla nostra cassetta:"
+msgstr "E ci eserciteremo con questo strumento dalla nostra cassetta:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2647,7 +2672,7 @@ msgstr "I Concetti da questa sessione:"
 
 #: site/course/course-content.php:2281
 msgid "Tool from this session:"
-msgstr "Gli Attrezzi da questa sessione:"
+msgstr "Gli Strumenti di questa sessione:"
 
 #: site/course/course-content.php:2298
 msgid ""
@@ -2784,28 +2809,27 @@ msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
-"La Lista di Controllo del Tutoraggio è un semplice attrezzo che puoi "
+"La Lista di Controllo del Tutoraggio è un semplice strumento che puoi "
 "utilizzare per guidarti mentre affianchi gli altri nelle varie fasi affinché "
 "diventino discepoli completamente formati."
 
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Autovalutazione - Fare una valutazione di te stesso e contrassegna le "
-"colonne corrispondenti della Lista di Controllo del Tutoraggio."
+"Fai un'autovalutazione utilizzando la riga 1 e contrassegna le colonne "
+"corrispondenti della Lista di Controllo del Tutoraggio."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
 msgstr ""
-"Con quali attrezzi e concetti ti senti capace di formare bene altre persone?"
+"Con quali strumenti e concetti ti senti capace di formare bene altre persone?"
 
 #: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
 msgstr ""
-"Con quali attrezzi e concetti pensi che avresti difficoltà a formare bene "
+"Con quali strumenti e concetti pensi che avresti difficoltà a formare bene "
 "altre persone?"
 
 #: site/course/course-content.php:2598
@@ -2813,7 +2837,7 @@ msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
-"Ci sono attrezzi o concetti che aggiungeresti o che toglieresti dalla Lista "
+"Ci sono strumenti o concetti che aggiungeresti o che toglieresti dalla Lista "
 "di Controllo del Tutoraggio? Perché?"
 
 #: site/course/course-content.php:2610
@@ -2846,8 +2870,8 @@ msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
-"Il Diagramma dei Quattro Campi e la Mappa Generazionale sono attrezzi creati "
-"per servire gli sforzi di un movimento crescente."
+"Il Diagramma dei Quattro Campi e la Mappa Generazionale sono strumenti "
+"creati per servire gli sforzi di un movimento crescente."
 
 #: site/course/course-content.php:2627
 msgid ""
@@ -2855,7 +2879,7 @@ msgid ""
 "local area."
 msgstr ""
 "DA RICORDARE: I Tutor di Zúme sono disponibili per aiutarti a mettere in "
-"pratica questi attrezzi nella tua zona."
+"pratica questi strumenti nella tua zona."
 
 #: site/course/course-content.php:2642
 msgid ""
@@ -2953,14 +2977,14 @@ msgstr ""
 
 #: site/course/course-content.php:2701
 msgid "Which Zúme tools could help in which field?"
-msgstr "Quali attrezzi di Zúme sarebbero d'aiuto nei vari campi?"
+msgstr "Quali strumenti di Zúme sarebbero d'aiuto nei vari campi?"
 
 #: site/course/course-content.php:2716
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
-"La Mappa Generazionale è un altro semplice attrezzo per aiutare i leader in "
+"La Mappa Generazionale è un altro semplice strumento per aiutare i leader in "
 "un movimento a comprendere la crescita del Regno intorno a loro."
 
 #: site/course/course-content.php:2717
@@ -3076,7 +3100,7 @@ msgid ""
 msgstr ""
 "Eppure la formazione Zúme è solo l'inizio! In questa sessione, creeremo un "
 "piano per ciò che verrà dopo la formazione e introdurremo brevemente degli "
-"attrezzi di cui avrete bisogno successivamente nel vostro cammino mentre "
+"strumenti di cui avrete bisogno successivamente nel vostro cammino mentre "
 "implementate ciò che avete imparato."
 
 #: site/course/course-content.php:2921
@@ -3151,21 +3175,21 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
-"Un Piano Trimestrale è uno strumento che puoi usare per aiutarti a "
-"focalizzare la tua attenzione e i tuoi sforzi e tenerli allineati alle "
-"priorità di Dio di fare discepoli che si moltiplicano."
+"Un Piano di 3 Mesi è uno strumento che puoi usare per aiutarti a focalizzare "
+"la tua attenzione e i tuoi sforzi e tenerli allineati alle priorità di Dio "
+"di fare discepoli che si moltiplicano."
 
 #: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
-"La prossima schermata vi mostrerà come creare il tuo Piano Trimestrale. Vi "
+"La prossima schermata vi mostrerà come creare il tuo Piano di 3 Mesi. Vi "
 "suggeriamo di utilizzare lo strumento online."
 
 #: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
-msgstr "Crea il tuo Piano Trimestrale"
+msgstr "Crea il tuo Piano di 3 Mesi"
 
 #: site/course/course-content.php:3032
 msgid ""
@@ -3197,7 +3221,7 @@ msgstr "Strumento - Il Tuo Piano Online"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr "Condividete a turno il proprio Piano Trimestrale."
+msgstr "Condividete a turno il proprio Piano di 3 Mesi."
 
 #: site/course/course-content.php:3054
 msgid ""
@@ -3233,7 +3257,7 @@ msgstr "Chiedete allo Spirito Santo di Dio a guidare il vostro tempo insieme."
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr "In questa sessione, aggiungeremo questo attrezzo alla nostra cassetta:"
+msgstr "In questa sessione, aggiungeremo questo strumento alla nostra cassetta:"
 
 #: site/course/course-content.php:3379
 msgid ""
@@ -3351,7 +3375,8 @@ msgstr ""
 #: site/course/course-content.php:4882
 msgid "In this session, we will practice this tool in our toolkit:"
 msgstr ""
-"In questa sessione ci eserciteremo con questo attrezzo della nostra cassetta:"
+"In questa sessione ci eserciteremo con questo strumento della nostra "
+"cassetta:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
 msgid "Sharing the Gospel"
@@ -3389,7 +3414,7 @@ msgstr ""
 
 #: site/course/course-content.php:4074
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr "In questa sessione aggiungeremo questi attrezzi alla nostra cassetta:"
+msgstr "In questa sessione aggiungeremo questi strumenti alla nostra cassetta:"
 
 #: site/course/course-content.php:4109
 msgid ""
@@ -3459,7 +3484,7 @@ msgstr "La ripetizione crea fiducia."
 
 #: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
-msgstr "Attrezzo esercitato in questa sessione:"
+msgstr "Strumento esercitato in questa sessione:"
 
 #: site/course/course-content.php:4250
 msgid ""
@@ -3686,8 +3711,8 @@ msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
-"Condividi l'attrezzo \"La Mappa Generazionale\" con un'altra persona che ama "
-"Gesù per allenarti nel lanciare la visione."
+"Condividi lo strumento \"La Mappa Generazionale\" con un'altra persona che "
+"ama Gesù per allenarti nel lanciare la visione."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
@@ -3774,8 +3799,8 @@ msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
-"La parte formativa di Zúme sta finendo, ma la parte pratica degli attrezzi e "
-"i concetti continua."
+"La parte formativa di Zúme sta finendo, ma la parte pratica degli strumenti "
+"e i concetti continua."
 
 #: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
@@ -4097,7 +4122,7 @@ msgid ""
 "tools."
 msgstr ""
 "Accesso completo ai tuoi contenuti, al tuo programma, ai dettagli del tuo "
-"gruppo e alla tua condivisione degli attrezzi della formazione."
+"gruppo e alla tua condivisione degli strumenti della formazione."
 
 #: site/dashboard/dashboard.php:207
 msgid "Create Your Plan"
@@ -4105,7 +4130,7 @@ msgstr "Crea il tuo Piano"
 
 #: site/dashboard/dashboard.php:209
 msgid "Three Month Plan Locked"
-msgstr "Piano Trimestrale Bloccato"
+msgstr "Piano di 3 Mesi Bloccato"
 
 #: site/dashboard/dashboard.php:210
 msgid ""
@@ -4113,9 +4138,9 @@ msgid ""
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
-"Il piano trimestrale è un attrezzo per aiutarti ad agire e a implementare "
-"gli attrezzi e i concetti imparati attraverso la formazione Zúme. È più "
-"utile dopo aver terminato la formazione."
+"Il piano di 3 mesi è un strumento per aiutarti ad agire e a implementare gli "
+"strumenti e i concetti imparati attraverso la formazione Zúme. È più utile "
+"dopo aver terminato la formazione."
 
 #: site/dashboard/dashboard.php:211
 msgid "Unlock now"
@@ -4135,14 +4160,14 @@ msgstr "Accesso rapido al tuo tutor in qualsiasi momento."
 
 #: site/dashboard/dashboard.php:215
 msgid "My Tools"
-msgstr "I Miei Attrezzi"
+msgstr "I Miei Strumenti"
 
 #: site/dashboard/dashboard.php:216
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
-"La tua area 'I Miei Attrezzi' si sbloccherà man mano che vai avanti con la "
+"La tua area 'I Miei Strumenti' si sbloccherà man mano che vai avanti con la "
 "formazione, allenandoti e sviluppando essenziali competenze del discepolato"
 
 #: site/dashboard/dashboard.php:217
@@ -4154,8 +4179,8 @@ msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
-"Sblocca l'area 'I Miei Piani' completando il tuo piano trimestrale "
-"nell'ultima sessione."
+"Sblocca l'area 'I Miei Piani' completando il tuo Piano di 3 Mesi nell'ultima "
+"sessione."
 
 #: site/dashboard/dashboard.php:219
 msgid "My Plans are Locked"
@@ -4166,8 +4191,8 @@ msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
-"Sblocca questa area creando il tuo Piano Trimestrale oppure aggiungendo un "
-"tuo impegno personale."
+"Sblocca questa area creando il tuo Piano di 3 Mesi oppure aggiungendo un tuo "
+"impegno personale."
 
 #: site/dashboard/dashboard.php:221
 msgid "My Churches"
@@ -4255,9 +4280,9 @@ msgid "Mark Completed"
 msgstr "Segna come Completato"
 
 #: site/dashboard/dashboard.php:248
-#, fuzzy, php-format
+#, php-format
 msgid "Session %d"
-msgstr "Sessione 2"
+msgstr "Sessione %d"
 
 #: site/dashboard/dashboard.php:249 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
@@ -4324,7 +4349,7 @@ msgstr "%s sbloccata/e"
 
 #: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
 msgid "3 month plan"
-msgstr "Piano trimestrale"
+msgstr "Piano di 3 Mesi"
 
 #: site/dashboard/dashboard.php:266
 msgid "You have joined the community"
@@ -4399,7 +4424,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:277
 msgid "Free Tools"
-msgstr "Attrezzi Gratuiti"
+msgstr "Strumenti Gratuiti"
 
 #: site/dashboard/dashboard.php:278
 msgid ""
@@ -4407,9 +4432,9 @@ msgid ""
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
-"Accedi ad attrezzi gratuiti per monitorare i progressi nel fare discepoli e "
-"fondare chiese nella tua zona. Ottieni una mappa per lanciare la visione di "
-"saturare la tua città con discepoli e chiese che si moltiplicano."
+"Accedi agli strumentii gratuiti per monitorare i progressi nel fare "
+"discepoli e fondare chiese nella tua zona. Ottieni una mappa per lanciare la "
+"visione di saturare la tua città con discepoli e chiese che si moltiplicano."
 
 #: site/dashboard/dashboard.php:279
 msgid "Join for Free"
@@ -4427,38 +4452,40 @@ msgstr "Non è un codice riconosciuto. Controlla la correttezza."
 
 #: site/dashboard/dashboard.php:282
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "Non hai l'autorizzazione per accedere a questa pagina"
 
 #: site/dashboard/dashboard.php:283
-#, fuzzy
 msgid "There has been an error with your request"
-msgstr "Ci sono errori nel modulo."
+msgstr "C'è stato un errore con la tua richiesta"
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Grazie per la tua richiesta di tutoraggio. La nostra squadra sta lavorando "
+"per metterti in contatto con un tutor disponibile nella tua lingua e nella "
+"tua regione."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Riceverai una comunicazione dal tuo tutor al metodo di comunicazione che hai "
+"indicato come preferenza in fase di registrazione."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr ""
+msgstr "Mappa di 100 Ore"
 
 #: site/dashboard/dashboard.php:287
-#, fuzzy
 msgid "Training vision map"
-msgstr "Formazioni"
+msgstr "Mappa delle Formazioni con la Visione Zúme"
 
 #: site/dashboard/dashboard.php:288
-#, fuzzy
 msgid "Simple church planting map"
-msgstr "Semplice Completamento di Chiesa"
+msgstr "Mappa delle Chiese Semplici Fondate"
 
 #: site/dashboard/dashboard.php:294
 msgid ""
@@ -4534,7 +4561,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:304
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
-"Utilizzerò lo strumento il Ciclo di preghiera una volta ogni [giorni / "
+"Utilizzerò lo strumento il Ciclo di Preghiera una volta ogni [giorni / "
 "settimane / mesi]."
 
 #: site/dashboard/dashboard.php:305
@@ -4941,7 +4968,6 @@ msgid "Group Name"
 msgstr "Nome del Gruppo"
 
 #: site/dashboard/wizard.php:267
-#, fuzzy
 msgid "Group name"
 msgstr "Nome del Gruppo"
 
@@ -5380,7 +5406,7 @@ msgid ""
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
 "La visione di Zúme è paragonabile al lievito che permea l’intero impasto, "
-"diffondendo gli attrezzi fondamentali del Regno nei quartieri di tutto il "
+"diffondendo gli strumenti fondamentali del Regno nei quartieri di tutto il "
 "mondo."
 
 #: site/pages/about.php:128
@@ -5849,7 +5875,7 @@ msgid ""
 "journey."
 msgstr ""
 "Tutti i nostri tutor sono stati formati e mettono in pratica i concetti e "
-"gli attrezzi trovati nella formazione Zúme. Tutti i nostri tutor possono "
+"gli strumenti trovati nella formazione Zúme. Tutti i nostri tutor possono "
 "aiutarti a superare ostacoli e a fare dei passi avanti nel tuo cammino."
 
 #: site/pages/home.php:86
@@ -6304,7 +6330,7 @@ msgid ""
 "content as well!"
 msgstr ""
 "Zúme Training ora è disponibile come un libro di esercizi. Ora tutti i "
-"concetti, attrezzi, domande e sfide della formazione sono nel palmo delle "
+"concetti, strumenti, domande e sfide della formazione sono nel palmo delle "
 "tue mani. In più, i codici QR per ogni sessione ti danno accesso a tutti i "
 "video!"
 
@@ -6338,7 +6364,7 @@ msgstr "Ordinare"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr ""
+msgstr "Elementi"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6467,7 +6493,7 @@ msgstr ""
 "Per una formazione più lunga a ritmo lento con maggiori opportunità di "
 "acquisire padronanza dei concetti e delle competenze, la struttura da 20 "
 "sessioni offre più opportunità di esercitarti con ognuno dei concetti e "
-"attrezzi."
+"strumenti."
 
 #: site/pages/training.php:245
 msgid "Intensive"
@@ -6584,11 +6610,11 @@ msgstr "Profilo Impostato"
 
 #: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
 msgid "Create 3 Month Plan"
-msgstr "Crea un piano trimestrale"
+msgstr "Crea un Piano di 3 Mesi"
 
 #: utilities/apis/cta-api.php:280
 msgid "Create a 3 month plan to help you grow"
-msgstr "Crea un piano trimestrale per aiutarti a crescere"
+msgstr "Crea un Piano di 3 Mesi per aiutarti a crescere"
 
 #: utilities/apis/cta-api.php:294
 #, php-format
@@ -6597,19 +6623,19 @@ msgstr "%s sbloccato/i"
 
 #: utilities/apis/cta-api.php:308
 msgid "3-Month Plan Created"
-msgstr "Piano Trimestrale Creato"
+msgstr "Piano di 3 Mesi Creato"
 
 #: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
 msgid "Complete 3 Month Plan"
-msgstr "Completa il tuo piano trimestrale"
+msgstr "Completa il tuo Piano di 3 Mesi"
 
 #: utilities/apis/cta-api.php:323
 msgid "Complete your 3 month plan to help you grow"
-msgstr "Completa il tuo piano trimestrale per aiutarti a crescere"
+msgstr "Completa il tuo Piano di 3 Mesi per aiutarti a crescere"
 
 #: utilities/apis/cta-api.php:337
 msgid "3 Month Plan Completed"
-msgstr "Piano Trimestrale Completato"
+msgstr "Piano di 3 Mesi Completato"
 
 #: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
 msgid "Join a Hub"
