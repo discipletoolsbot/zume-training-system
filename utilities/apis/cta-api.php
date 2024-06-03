@@ -383,7 +383,6 @@ class Zume_System_CTA_API
                 'subtype' => 'join_community',
                 'content' => [
                     'title' => __( 'Join the community', 'zume' ),
-                    'description' => __( '', 'zume' ),
                     'link_text' => __( 'Join', 'zume' ),
                     'link' => zume_wizard_url( 'join_the_community' ),
                 ],
