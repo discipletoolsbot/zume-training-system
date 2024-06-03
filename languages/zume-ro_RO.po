@@ -2,11 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-24 08:44+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
-"Language-Team: Romanian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ro_RO/>\n"
+"PO-Revision-Date: 2024-05-28 14:33+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Romanian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ro_RO/>\n"
 "Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -122,7 +121,7 @@ msgstr "A fi ucenic înseamnă a fi ascultător de ceea ce auzim de la Dumnezeu.
 #: globals.php:1931 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr "Auzindu-l si ascultand de Dumnezeu"
+msgstr "Auzindu-L si ascultand de Dumnezeu"
 
 #: globals.php:1940 globals.php:1942
 msgid "S.O.A.P.S. Bible Study"
@@ -745,7 +744,7 @@ msgstr "Întrebați-vă, de ce are nevoie ucenicul meu"
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Model"
-msgstr "Modelare"
+msgstr "Modelează"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -754,7 +753,7 @@ msgstr "Modelare"
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Assist"
-msgstr "Asistare"
+msgstr "Asistă"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -765,7 +764,7 @@ msgstr "Asistare"
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:204
 msgid "Watch"
-msgstr "Supraveghere"
+msgstr "Supraveghează"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -774,7 +773,7 @@ msgstr "Supraveghere"
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Leave"
-msgstr "Retragere"
+msgstr "Retrage-te"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
@@ -862,7 +861,7 @@ msgstr "Autoevaluare"
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
 msgid "Mentee Development Level"
-msgstr "Nivelul de dezvoltare a ucenicului"
+msgstr "Nivelul de dezvoltare a mentorbilului"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
@@ -943,35 +942,37 @@ msgstr "Discutați și Mentorul decide"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr "Discută și Ucenicul decide"
+msgstr "Discută și Mentorabilul decide"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr "Ucenicul decide"
+msgstr "Mentorabilul decide"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
-"Ucenicul nu cunoaște, nu este familiarizat sau înțelege greșit instrumentul?"
+"Mentorabilul nu cunoaște, nu este familiarizat sau înțelege greșit "
+"instrumentul?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Ucenicul este oarecum familiarizat cu instrumentul, dar încă nu este sigur "
-"despre acesta?"
+"Mentorabilul este oarecum familiarizat cu instrumentul, dar încă nu este "
+"sigur despre acesta?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
-"Ucenicul înțelege instrumentul și este capabil să antreneze elementele de "
-"bază ale instrumentului?"
+"Mentorabilul înțelege instrumentul și este capabil să antreneze elementele "
+"de bază ale instrumentului?"
 
 #: site/activities/coaching-checklist.php:275
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
-"Ucenicul se simte încrezător și capabil să antreneze eficient instrumentul?"
+"Mentorabilul se simte încrezător și capabil să antreneze eficient "
+"instrumentul?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -1318,7 +1319,7 @@ msgstr "SESIUNEA 1"
 #: site/course/course-content.php:5884 site/course/course-content.php:5889
 #: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
-msgstr "VERIFICAȚI"
+msgstr "ÎNREGISTRAREA"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -3151,8 +3152,8 @@ msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
-"Alegeți o persoană din grup care să fie „mentorat” și rugați-i pe ceilalți "
-"membri să treacă prin lista de întrebări sugerate ca mentori."
+"Alegeți o persoană din grup care să fie „mentorabilul” și rugați-i pe "
+"ceilalți membri să treacă prin lista de întrebări sugerate ca mentori."
 
 #: site/course/course-content.php:3014
 msgid ""
@@ -3584,7 +3585,7 @@ msgid ""
 "with each other. (15 min)"
 msgstr ""
 "PRIVEȘTE ÎNAPOI – Utilizați provocările Ascultați, Instruiți și Împărtășiți "
-"din ultima sesiune pentru a vă înregistra unul cu celălalt. (15 minute)"
+"din ultima sesiune pentru a vă verifica unul pe altul. (15 minute)"
 
 #: site/course/course-content.php:4903
 msgid ""
@@ -4462,35 +4463,37 @@ msgid "You are not authorized to access this page"
 msgstr "Nu esti autorizat sa accesezi aceasta pagina"
 
 #: site/dashboard/dashboard.php:283
-#, fuzzy
 msgid "There has been an error with your request"
-msgstr "Există unele erori în formularul dvs."
+msgstr "A apărut o eroare la solicitarea dvs"
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Vă mulțumim pentru solicitarea dvs. de coaching. Echipa noastră va lucra "
+"pentru a vă pune în legătură cu un antrenor disponibil în limba și regiunea "
+"dumneavoastră."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Vă rugăm să urmăriți comunicarea din partea antrenorului dvs. în cadrul "
+"preferinței de comunicare pe care ați indicat-o."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr ""
+msgstr "Harta de 100 de ore"
 
 #: site/dashboard/dashboard.php:287
-#, fuzzy
 msgid "Training vision map"
-msgstr "Antrenamente"
+msgstr "Plan de viziune pentru antrenament"
 
 #: site/dashboard/dashboard.php:288
-#, fuzzy
 msgid "Simple church planting map"
-msgstr "Saturație cu Biserici Simple"
+msgstr "Hartă simplă pentru plantarea de biserici"
 
 #: site/dashboard/dashboard.php:294
 msgid ""
@@ -4829,7 +4832,7 @@ msgstr "S-a înregistrat cu succes"
 
 #: site/dashboard/wizard.php:230
 msgid "Something went wrong while checking in"
-msgstr "Ceva a mers prost la check-in"
+msgstr "Ceva a mers prost la înregistrare"
 
 #: site/dashboard/wizard.php:234
 msgid "Create a training group"
@@ -5515,8 +5518,8 @@ msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"%1$sProvocări ale sesiunii%2$s vă ajută grupul să continue să învețe și să "
-"se dezvolte între sesiuni."
+"%1$sProvocările sesiunii%2$s vă ajută grupul să continue să învețe și să se "
+"dezvolte între sesiuni."
 
 #: site/pages/about.php:194
 msgid "Before you start."
@@ -5602,8 +5605,8 @@ msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
-"Nu este nevoie de permisiunea specială pentru a conduce un antrenament! Zúme "
-"este auto-facilitat, auto-inițiat și poți începe astăzi."
+"Nu ai nevoie de o permisiune specială pentru a începe un antrenament Zúme! "
+"Este auto-gestionat, auto-demarat și poți începe chiar astăzi."
 
 #: site/pages/about.php:246
 msgid "Connecting with a Coach."
@@ -5634,7 +5637,7 @@ msgstr "Vă rugăm să introduceți un cod de prieten."
 
 #: site/pages/checkin.php:157
 msgid "Checkin"
-msgstr "Check-in"
+msgstr "Registrare"
 
 #: site/pages/checkin.php:159
 msgid "Use the code on the screen or in the book"
@@ -5912,7 +5915,7 @@ msgstr "Discuții de grup"
 
 #: site/pages/home.php:135
 msgid "Self-Facilitated"
-msgstr "Auto-Facilitat"
+msgstr "Auto-Gestionat"
 
 #: site/pages/home.php:136
 msgid "Practice-Oriented"
@@ -5976,7 +5979,7 @@ msgstr "Spune-ți Istoria"
 
 #: site/pages/home.php:171
 msgid "Engaging Seekers"
-msgstr "Căutători angajați"
+msgstr "Exploratori dedicați"
 
 #: site/pages/home.php:172
 msgid "Vision Casting Multiplication"
@@ -6073,7 +6076,7 @@ msgstr "Adună un grup."
 
 #: site/pages/home.php:349
 msgid "Change the World."
-msgstr "Schimba lumea."
+msgstr "Schimbă lumea."
 
 #: site/pages/home.php:352
 msgid "Get started"
@@ -6383,7 +6386,7 @@ msgstr "Sortare"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr ""
+msgstr "Articole"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6464,9 +6467,9 @@ msgid ""
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
-"În acest curs auto-facilitat, tu și grupul tău de formare veți folosi "
-"videoclipuri scurte, întrebări de discuție și exerciții simple pentru a vă "
-"dezvolta abilitățile și cunoștințele în următoarele domenii:"
+"În acest curs auto-gestionat, tu și grupul tău veți utiliza videoclipuri "
+"scurte, întrebări de discuție și exerciții simple pentru a vă dezvolta "
+"abilitățile și cunoștințele în domeniile următoare:"
 
 #: site/pages/training.php:181
 msgid "Discipleship Concepts"
@@ -6541,7 +6544,7 @@ msgid ""
 "self-initiated, and you can start today."
 msgstr ""
 "Nu este nevoie de permisiunea specială pentru a conduce un curs! Zúme este "
-"auto-facilitat, auto-inițiat și poți începe astăzi."
+"auto-gestionat, auto-inițiat și poți începe astăzi."
 
 #: site/parts/footer.php:31
 msgid "3 Day Intensive Course"
@@ -6656,14 +6659,12 @@ msgid "3 Month Plan Completed"
 msgstr "Planul de 3 luni finalizat"
 
 #: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
-#, fuzzy
 msgid "Join a Hub"
-msgstr "Comunitate"
+msgstr "Alăturați-vă unui Hub"
 
 #: utilities/apis/cta-api.php:368
-#, fuzzy
 msgid "Join a hub to help you grow"
-msgstr "Trimiteți un raport pentru a vă ajuta să creșteți"
+msgstr "Alăturați-vă unui hub pentru a vă ajuta să creșteți"
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
 msgid "Share Spiritual Breathing"

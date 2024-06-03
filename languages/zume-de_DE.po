@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-25 14:59+0700\n"
+"PO-Revision-Date: 2024-05-27 14:55+0000\n"
 "Last-Translator: Chris <chris@chasm.solutions>\n"
-"Language-Team: German <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/de_DE/>\n"
+"Language-Team: German <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/de_DE/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:199
@@ -630,7 +630,7 @@ msgstr "Keine Ergebnisse"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
@@ -731,7 +731,7 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
@@ -867,123 +867,123 @@ msgstr ""
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Selbstbewertung"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "Leiterschaftszellen"
+msgstr "Entwicklungsstand des Mentee"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr ""
+msgstr "Unwissend"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr ""
+msgstr "Ungelernte"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
-msgstr "Abgeschlossen"
+msgstr "Ausreichend"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr ""
+msgstr "Geschickt"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Die Rolle des Mentors"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "Neue Informationen vermitteln und Verständnis sicherstellen"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Stop and stay with them until they have the basics"
 msgstr ""
+"Halten Sie an und bleiben Sie bei ihnen, bis sie die Grundlagen beherrschen"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "Bleiben Sie engagiert, bis Sie konsequent kompetent sind"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Sich ihnen als Mitarbeiter zuwenden"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Verhaltensweisen des Mentors"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
-msgstr ""
+msgstr "Leiten und informieren"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr ""
+msgstr "Direkt und unterstützend"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
-msgstr ""
+msgstr "Unterstützung und Förderung"
 
 #: site/activities/coaching-checklist.php:182
 msgid "Receive updates"
-msgstr ""
+msgstr "Erhalten Sie Updates"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Verantwortlichkeiten bei der Planung"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr ""
+msgstr "Mentor entscheidet"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Diskutieren und Mentoren entscheiden"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Diskutieren und Mentee entscheidet"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr ""
+msgstr "Mentee entscheidet"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
+"Ist der Mentee mit dem Instrument nicht vertraut, kennt es nicht oder "
+"versteht es falsch?"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Wenn du schon mal von dem Werkzeug gehört hast, aber noch unsicher bist, "
-"mach ein Kreuz bei ROT."
+"Ist der Mentee mit dem Instrument einigermaßen vertraut, aber noch unsicher?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
+"Versteht der Mentee das Werkzeug und ist er in der Lage, die Grundlagen des "
+"Werkzeugs zu trainieren?"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
-"Wenn du dich richtig sattelfest und im Stande fühlst, das Werkzeug effektiv "
-"an Andere vermitteln zu können, mach ein Kreuz bei GRÜN."
+"Fühlt sich der Mentee sicher und in der Lage, das Tool effektiv zu "
+"trainieren?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -2816,13 +2816,12 @@ msgstr ""
 "zu werden."
 
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Beurteilen Sie sich selbst - Beurteilen Sie sich selbst und markieren Sie "
-"die entsprechenden Spalten auf der Coaching-Checkliste."
+"Beurteilen Sie sich selbst anhand von Zeile 1 und kreuzen Sie die "
+"entsprechenden Spalten auf der Coaching-Checkliste an."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
@@ -4485,35 +4484,36 @@ msgid "You are not authorized to access this page"
 msgstr "Fehlende Berechtigung für Seitenzugriff!"
 
 #: site/dashboard/dashboard.php:283
-#, fuzzy
 msgid "There has been an error with your request"
-msgstr "Wir haben einige Fehler in deinem Formular entdeckt."
+msgstr "Es ist ein Fehler bei Ihrer Anfrage aufgetreten"
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Vielen Dank für Ihre Coaching-Anfrage. Unser Team wird sich bemühen, Sie mit "
+"einem verfügbaren Coach in Ihrer Sprache und Region zu verbinden."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Bitte achten Sie darauf, dass Sie von Ihrem Coach innerhalb der von Ihnen "
+"angegebenen Kommunikationspräferenz eine Mitteilung erhalten."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr ""
+msgstr "100-Stunden-Karte"
 
 #: site/dashboard/dashboard.php:287
-#, fuzzy
 msgid "Training vision map"
-msgstr "Schulungen"
+msgstr "Karte der Ausbildungsvision"
 
 #: site/dashboard/dashboard.php:288
-#, fuzzy
 msgid "Simple church planting map"
-msgstr "Verbreitung der Hausgemeinden"
+msgstr "Einfache Gemeindegründungskarte"
 
 #: site/dashboard/dashboard.php:294
 msgid ""
@@ -6399,7 +6399,7 @@ msgstr "Sortieren"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr ""
+msgstr "Artikel"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6676,14 +6676,12 @@ msgid "3 Month Plan Completed"
 msgstr "3-Monats-Plan abgeschlossen"
 
 #: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
-#, fuzzy
 msgid "Join a Hub"
-msgstr "Gemeinschaft"
+msgstr "Einem Hub beitreten"
 
 #: utilities/apis/cta-api.php:368
-#, fuzzy
 msgid "Join a hub to help you grow"
-msgstr "Einen Bericht einreichen, damit Sie wachsen können"
+msgstr "Treten Sie einem Hub bei, um Ihr Wachstum zu unterstützen"
 
 #: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
 msgid "Share Spiritual Breathing"
