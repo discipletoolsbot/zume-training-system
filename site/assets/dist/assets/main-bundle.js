@@ -1659,28 +1659,78 @@ ${this.training.zoom_link_note}
                     <li><a class="menu-btn no-wrap" href="${this.urls.launch_intensive_session_course}"><span class="icon z-icon-course"></span>${this.translations.three_day_intensive_course}</a></li>
                 </ul>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("launch-course",Qo);class Xo extends k{constructor(){super();x(this,"addressCallback",t=>{t.features.length<1?this.locations=-1:this.locations=t.features});x(this,"processLocation",debounce(getAddressSuggestions(this.addressCallback,jsObject.map_key)));this.userProfile={},this.locations=[]}static get properties(){return{userProfile:{type:Object},loading:{type:Boolean,attribute:!1},locations:{type:Array,attribute:!1}}}firstUpdated(){this.nameInput=this.renderRoot.querySelector("#full_name"),this.phoneInput=this.renderRoot.querySelector("#phone"),this.emailInput=this.renderRoot.querySelector("#email"),this.preferredEmailInput=this.renderRoot.querySelector("#communications_email"),this.cityInput=this.renderRoot.querySelector("#city"),this.prefferedLanguageInput=this.renderRoot.querySelector("#preferred_language"),this.addressResultsContainer=this.renderRoot.querySelector("#address_results")}submitProfileForm(t){t.preventDefault();const s=this.nameInput.value,n=this.emailInput.value,a=this.preferredEmailInput.value,r=this.phoneInput.value,o=this.prefferedLanguageInput.value,l={name:s,phone:r,email:n,communications_email:a,preferred_language:o};l.location_grid_meta=getLocationGridFromMapbox(this.mapboxSelectedId,this.userProfile.location),this.loading=!0,fetch(jsObject.rest_endpoint+"/profile",{method:"POST",body:JSON.stringify(l),headers:{"X-WP-Nonce":jsObject.nonce}}).then(d=>d.json()).then(d=>{const u=new CustomEvent("user-profile:change",{bubbles:!0,detail:d});this.dispatchEvent(u);const p=new CustomEvent("user-state:change",{bubbles:!0});this.dispatchEvent(p)}).catch(d=>{console.error(d)}).finally(()=>{this.loading=!1})}selectAddress(t){const s=t.target.id,n=t.target.dataset.placeName;this.cityInput.value=n,this.mapboxSelectedId=s,this.locations=[]}render(){var t;return c`
-            <form action="" id="profile-form" @submit=${this.submitProfileForm}>
+        `}createRenderRoot(){return this}}customElements.define("launch-course",Qo);class Xo extends k{constructor(){super();x(this,"addressCallback",t=>{t.features.length<1?this.locations=-1:this.locations=t.features});x(this,"processLocation",debounce(getAddressSuggestions(this.addressCallback,jsObject.map_key)));this.userProfile={},this.locations=[],this.infosOpen=[]}static get properties(){return{userProfile:{type:Object},loading:{type:Boolean,attribute:!1},locations:{type:Array,attribute:!1},infosOpen:{type:Array,attribute:!1}}}firstUpdated(){this.nameInput=this.renderRoot.querySelector("#full_name"),this.phoneInput=this.renderRoot.querySelector("#phone"),this.emailInput=this.renderRoot.querySelector("#email"),this.preferredEmailInput=this.renderRoot.querySelector("#communications_email"),this.cityInput=this.renderRoot.querySelector("#city"),this.prefferedLanguageInput=this.renderRoot.querySelector("#preferred_language"),this.addressResultsContainer=this.renderRoot.querySelector("#address_results")}submitProfileForm(t){t.preventDefault();const s=this.nameInput.value,n=this.emailInput.value,a=this.preferredEmailInput.value,r=this.phoneInput.value,o=this.prefferedLanguageInput.value,l={name:s,phone:r,email:n,communications_email:a,preferred_language:o};l.location_grid_meta=getLocationGridFromMapbox(this.mapboxSelectedId,this.userProfile.location),this.loading=!0,fetch(jsObject.rest_endpoint+"/profile",{method:"POST",body:JSON.stringify(l),headers:{"X-WP-Nonce":jsObject.nonce}}).then(d=>d.json()).then(d=>{const u=new CustomEvent("user-profile:change",{bubbles:!0,detail:d});this.dispatchEvent(u);const p=new CustomEvent("user-state:change",{bubbles:!0});this.dispatchEvent(p)}).catch(d=>{console.error(d)}).finally(()=>{this.loading=!1})}selectAddress(t){const s=t.target.id,n=t.target.dataset.placeName;this.cityInput.value=n,this.mapboxSelectedId=s,this.locations=[]}_toggleInfo(t){if(this.infosOpen.includes(t)){const s=[...this.infosOpen];s.splice(s.indexOf(t),1),this.infosOpen=s}else this.infosOpen=[...this.infosOpen,t]}render(){var t;return c`
+            <form action="" class="stack--2" id="profile-form" @submit=${this.submitProfileForm}>
 
                 <div class="">
                     <label for="full_name">${jsObject.translations.name}</label>
-                    <input class="input" required type="text" id="full_name" name="full_name" value=${this.userProfile.name}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" required type="text" id="full_name" name="full_name" value=${this.userProfile.name}>
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("name")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("name")?"mt-0":""}" data-state=${this.infosOpen.includes("name")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_name_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="phone">${jsObject.translations.phone}</label>
-                    <input class="input" type="tel" id="phone" name="phone" value=${this.userProfile.phone}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="tel" id="phone" name="phone" value=${this.userProfile.phone}>
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("phone")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("phone")?"mt-0":""}" data-state=${this.infosOpen.includes("phone")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_phone_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="email">${jsObject.translations.email}</label>
-                    <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("email")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("email")?"mt-0":""}" data-state=${this.infosOpen.includes("email")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_email_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="communications_email">${jsObject.translations.communications_email}</label>
-                    <input class="input" type="email" id="communications_email" name="communications_email" value=${this.userProfile.communications_email}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="email" id="communications_email" name="communications_email" value=${this.userProfile.communications_email}>
+                        <button type="button" class="icon-btn f-1 invisible" @click=${()=>this._toggleInfo("communications_email")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("communications_email")?"mt-0":""}" data-state=${this.infosOpen.includes("communications_email")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_communications_email_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="city">${jsObject.translations.city}</label>
-                    <input class="input" type="text" id="city" name="city" value=${((t=this.userProfile.location)==null?void 0:t.label)??""} @input=${this.processLocation}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="text" id="city" name="city" value=${((t=this.userProfile.location)==null?void 0:t.label)??""} @input=${this.processLocation}>
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("city")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("city")?"mt-0":""}" data-state=${this.infosOpen.includes("city")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_city_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                     ${Array.isArray(this.locations)?"":c`
                             ${jsObject.translations.no_locations}
@@ -1704,18 +1754,29 @@ ${this.training.zoom_link_note}
 
                 <div>
                     <label for="preferred_language">${jsObject.translations.language}</label>
-                    <select class="input" name="preferred_language" id="preferred_language">
+                    <div class="d-flex align-items-center">
+                        <select class="input" name="preferred_language" id="preferred_language">
 
-                    ${Object.values(jsObject.languages).map(s=>c`
-                            <option value=${s.code} ?selected=${this.userProfile.preferred_language===s.code}>
-                                ${s.nativeName} - ${s.enDisplayName}
-                            </option>
-                        `)}
+                        ${Object.values(jsObject.languages).map(s=>c`
+                                <option value=${s.code} ?selected=${this.userProfile.preferred_language===s.code}>
+                                    ${s.nativeName} - ${s.enDisplayName}
+                                </option>
+                            `)}
 
-                    </select>
+                        </select>
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("preferred_language")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes("preferred_language")?"mt-0":""}" data-state=${this.infosOpen.includes("preferred_language")?"open":"closed"}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_preferred_language_disclaimer}</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <button class="btn my-0" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                <button class="btn my-0 fit-content" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
                 <span class="loading-spinner ${this.loading?"active":""}"></span>
 
             </form>

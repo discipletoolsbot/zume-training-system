@@ -6,12 +6,14 @@ export class ProfileForm extends LitElement {
             userProfile: { type: Object },
             loading: { type: Boolean, attribute: false },
             locations: { type: Array, attribute: false },
+            infosOpen: { type: Array, attribute: false }
         };
     }
     constructor() {
         super()
         this.userProfile = {}
         this.locations = []
+        this.infosOpen = []
     }
 
     firstUpdated() {
@@ -91,29 +93,89 @@ export class ProfileForm extends LitElement {
         this.locations = []
     }
 
+    _toggleInfo(type) {
+        if (this.infosOpen.includes(type)) {
+            const newInfosOpen = [...this.infosOpen]
+            newInfosOpen.splice(newInfosOpen.indexOf(type), 1)
+            this.infosOpen = newInfosOpen
+        } else {
+            this.infosOpen = [...this.infosOpen, type]
+        }
+    }
+
     render() {
         return html`
-            <form action="" id="profile-form" @submit=${this.submitProfileForm}>
+            <form action="" class="stack--2" id="profile-form" @submit=${this.submitProfileForm}>
 
                 <div class="">
                     <label for="full_name">${jsObject.translations.name}</label>
-                    <input class="input" required type="text" id="full_name" name="full_name" value=${this.userProfile.name}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" required type="text" id="full_name" name="full_name" value=${this.userProfile.name}>
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('name')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('name') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('name') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_name_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="phone">${jsObject.translations.phone}</label>
-                    <input class="input" type="tel" id="phone" name="phone" value=${this.userProfile.phone}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="tel" id="phone" name="phone" value=${this.userProfile.phone}>
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('phone')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('phone') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('phone') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_phone_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="email">${jsObject.translations.email}</label>
-                    <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('email')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('email') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_email_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="communications_email">${jsObject.translations.communications_email}</label>
-                    <input class="input" type="email" id="communications_email" name="communications_email" value=${this.userProfile.communications_email}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="email" id="communications_email" name="communications_email" value=${this.userProfile.communications_email}>
+                        <button type="button" class="icon-btn f-1 invisible" @click=${() => this._toggleInfo('communications_email')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('communications_email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('communications_email') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_communications_email_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="">
                     <label for="city">${jsObject.translations.city}</label>
-                    <input class="input" type="text" id="city" name="city" value=${this.userProfile.location?.label ?? ''} @input=${this.processLocation}>
+                    <div class="d-flex align-items-center">
+                        <input class="input" type="text" id="city" name="city" value=${this.userProfile.location?.label ?? ''} @input=${this.processLocation}>
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('city')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('city') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('city') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_city_disclaimer}</p>
+                        </div>
+                    </div>
                 </div>
                     ${
                         !Array.isArray(this.locations)
@@ -144,20 +206,31 @@ export class ProfileForm extends LitElement {
 
                 <div>
                     <label for="preferred_language">${jsObject.translations.language}</label>
-                    <select class="input" name="preferred_language" id="preferred_language">
+                    <div class="d-flex align-items-center">
+                        <select class="input" name="preferred_language" id="preferred_language">
 
-                    ${
-                        Object.values(jsObject.languages).map((item) => html`
-                            <option value=${item.code} ?selected=${this.userProfile.preferred_language === item.code}>
-                                ${item.nativeName} - ${item.enDisplayName}
-                            </option>
-                        `)
-                    }
+                        ${
+                            Object.values(jsObject.languages).map((item) => html`
+                                <option value=${item.code} ?selected=${this.userProfile.preferred_language === item.code}>
+                                    ${item.nativeName} - ${item.enDisplayName}
+                                </option>
+                            `)
+                        }
 
-                    </select>
+                        </select>
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('preferred_language')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <div class="info-area collapse ${this.infosOpen.includes('preferred_language') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('preferred_language') ? 'open' : 'closed'}>
+                        <div class="card mw-50ch mx-auto">
+                            <p>${jsObject.translations.user_preferred_language_disclaimer}</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <button class="btn my-0" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                <button class="btn my-0 fit-content" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
                 <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
 
             </form>
