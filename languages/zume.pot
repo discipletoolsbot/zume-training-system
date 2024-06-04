@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-06-03 15:52+0100\n"
+"POT-Creation-Date: 2024-06-04 15:28+0100\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -3607,7 +3607,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
-#: utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:386
 msgid "Join"
 msgstr ""
 
@@ -3710,143 +3710,159 @@ msgstr ""
 msgid "You have joined the community"
 msgstr ""
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:189
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:190
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
 
-#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:305
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
+msgid ""
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
+msgstr ""
+
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 msgid "Join key"
 msgstr ""
 
-#: site/dashboard/dashboard.php:272 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/dashboard/dashboard.php:273
+#: site/dashboard/dashboard.php:275
 msgid "You are not authorized to access this page"
 msgstr ""
 
-#: site/dashboard/dashboard.php:274
+#: site/dashboard/dashboard.php:276
 msgid "There has been an error with your request"
 msgstr ""
 
-#: site/dashboard/dashboard.php:275
+#: site/dashboard/dashboard.php:277
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:278
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:279
 msgid "100 Hour Map"
 msgstr ""
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:280
 msgid "Training vision map"
 msgstr ""
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:281
 msgid "Simple church planting map"
 msgstr ""
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:282
 msgid "No date"
 msgstr ""
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:288
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:289
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:290
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:289
+#: site/dashboard/dashboard.php:291
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:290
+#: site/dashboard/dashboard.php:292
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:291
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:295
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:297
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:298
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:299
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:301
 msgid "Other commitments:"
 msgstr ""
 
@@ -3976,13 +3992,6 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: site/dashboard/wizard.php:188 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
 #: site/dashboard/wizard.php:193
 msgid "What is your contact preference?"
 msgstr ""
@@ -4063,13 +4072,6 @@ msgstr ""
 #: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
 #: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 msgid "Please wait while we connect you"
-msgstr ""
-
-#: site/dashboard/wizard.php:218 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
 msgstr ""
 
 #: site/dashboard/wizard.php:221
@@ -5626,6 +5628,33 @@ msgstr ""
 msgid "Please enable javascript to use this page"
 msgstr ""
 
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+msgid "Update Communication Preferences"
+msgstr ""
+
+#: site/profile/communication-preferences.php:81
+msgid "Recieve emails for:"
+msgstr ""
+
+#: site/profile/communication-preferences.php:84
+msgid "Training session reminders"
+msgstr ""
+
+#: site/profile/communication-preferences.php:88
+msgid "Annual reporting reminders"
+msgstr ""
+
+#: site/profile/communication-preferences.php:92
+msgid "Community updates"
+msgstr ""
+
+#: site/profile/communication-preferences.php:96
+msgid "Encouragements"
+msgstr ""
+
 #: site/profile/profile.php:111
 msgid "Profile"
 msgstr ""
@@ -5719,19 +5748,19 @@ msgstr ""
 msgid "Join the community"
 msgstr ""
 
-#: utilities/apis/cta-api.php:402 utilities/apis/cta-api.php:404
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 msgid "Share Spiritual Breathing"
 msgstr ""
 
-#: utilities/apis/cta-api.php:403
+#: utilities/apis/cta-api.php:402
 msgid "Share Spiritual Breathing with someone"
 msgstr ""
 
-#: utilities/apis/cta-api.php:417 utilities/apis/cta-api.php:419
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 msgid "Share Relational Stewardship"
 msgstr ""
 
-#: utilities/apis/cta-api.php:418
+#: utilities/apis/cta-api.php:417
 msgid "Share Relational Stewardship with someone"
 msgstr ""
 
@@ -5779,6 +5808,12 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
 msgid "Share Zúme Page"
+msgstr ""
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+msgid "Zúme Annual Report"
 msgstr ""
 
 #: utilities/post-types/posttype-pieces.php:301

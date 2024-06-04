@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-function zume_replace_placeholder( $content, $language_code, $user_id = NULL ) {
+function zume_replace_placeholder( $content, $language_code, $user_id = null ) {
      return Zume_Replace_Placeholder::instance()->replace_content( $content, $language_code, $user_id );
 }
 
@@ -79,7 +79,7 @@ class Zume_Replace_Placeholder {
             '[image_prayercycle]',
             '[image_fourfields]',
             '[image_genmap]',
-            '[image_trainingcycle]'
+            '[image_trainingcycle]',
         ];
         $replacement_string = [
             '<a class="button small" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>', // Get a Coach
@@ -166,13 +166,13 @@ class Zume_Replace_Placeholder {
             '[magiclink_preferences]',
         ];
         $replacement_string = [
-            '<a class="button small" href="'.$base_url.'">Zúme Annual Report</a>',
-            '<a class="button large" href="'.$base_url.'">Zúme Annual Report</a>',
-            '<a class="" href="'.$base_url.'">Zúme Annual Report</a>',
+            '<a class="button small" href="'.$base_url.'">'. __( 'Zúme Annual Report', 'zume' ) .'</a>',
+            '<a class="button large" href="'.$base_url.'">'. __( 'Zúme Annual Report', 'zume' ) .'</a>',
+            '<a class="" href="'.$base_url.'">'. __( 'Zúme Annual Report', 'zume' ) .'</a>',
 
-            '<a class="button small" href="'.$base_url.'">Update Communication Preferences</a>',
-            '<a class="button large" href="'.$base_url.'">Update Communication Preferences</a>',
-            '<a class="" href="'.$base_url.'">Update Communication Preferences</a>',
+            '<a class="button small" href="'.$base_url.'">'. __( 'Update Communication Preferences', 'zume' ) . '</a>',
+            '<a class="button large" href="'.$base_url.'">'. __( 'Update Communication Preferences', 'zume' ) . '</a>',
+            '<a class="" href="'.$base_url.'">'. __( 'Update Communication Preferences', 'zume' ) . '</a>',
         ];
 
         return str_replace( $place_holders, $replacement_string, $content );
