@@ -323,7 +323,7 @@ class Zume_Training_Home extends Zume_Magic_Page
 
         <div class="bg-brand-gradient">
             <div class="container stack-2 | py-2 white text-center">
-                <h2 class="position-relative px-4 fit-content mx-auto"><?php echo esc_html__( 'Zúme = Yeast', 'zume' ) ?>
+                <h2 class="position-relative px-4 fit-content mx-auto"><?php echo esc_html( sprintf( __( '%s = Yeast', 'zume' ), 'Zúme' ) ) ?>
                     <div class="d-flex justify-content-center absolute right top bottom h-125 w-20">
                         <?php //phpcs:ignore ?>
                         <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/yeast.svg' ) ?>
