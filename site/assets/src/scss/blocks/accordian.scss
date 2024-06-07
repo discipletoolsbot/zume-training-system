@@ -4,7 +4,7 @@
 .accordion-title {
     color: color('black');
     background-color: color('white');
-    padding-inline: spacing(1);
+    padding-inline: spacing(0) spacing(3);
     border: none;
 }
 .accordion-title:focus, .accordion-title:hover {
@@ -15,7 +15,7 @@
 .accordion-title:before {
     top: 50%;
     right: unset;
-    inset-inline-end: spacing(1);
+    inset-inline-end: spacing(0);
     margin: 0;
     content: url('/wp-content/plugins/zume-training-system/site/assets/images/chevron.svg#Group_649');
     width: font-size(3);
