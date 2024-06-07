@@ -280,6 +280,10 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'training_vision_map' => __( 'Training vision map', 'zume' ),
             'simple_church_planting_map' => __( 'Simple church planting map', 'zume' ),
             'not_scheduled' => __( 'No date', 'zume' ),
+            'whatsapp' => __( 'Whatsapp', 'zume' ),
+            'signal' => __( 'Signal', 'zume' ),
+            'telegram' => __( 'Telegram', 'zume' ),
+            'messenger' => __( 'Facebook Messenger', 'zume' ),
         ];
     }
 
