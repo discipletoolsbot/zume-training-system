@@ -68,12 +68,12 @@ export class DashCoach extends DashPage {
                                     <ul class="stack">
                                       ${
                                         coach.communication_apps.includes('email') ? html`
-                                          <li>Email: <a href="mailto:${coach.email}">${coach.email}</a></li>
+                                          <li>${jsObject.translations.email}: <a href="mailto:${coach.email}">${coach.email}</a></li>
                                         ` : ''
                                       }
                                       ${
                                         coach.communication_apps.includes('phone') ? html`
-                                          <li>Phone: ${coach.phone}</li>
+                                          <li>${jsObject.translations.phone}: ${coach.phone}</li>
                                         ` : ''
                                       }
                                       ${coach.communication_apps.map((app) => {

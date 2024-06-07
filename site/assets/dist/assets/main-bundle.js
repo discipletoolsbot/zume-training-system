@@ -1013,10 +1013,10 @@ ${this.training.zoom_link_note}
                                 ${e.communication_apps.length?c`
                                     <ul class="stack">
                                       ${e.communication_apps.includes("email")?c`
-                                          <li>Email: <a href="mailto:${e.email}">${e.email}</a></li>
+                                          <li>${jsObject.translations.email}: <a href="mailto:${e.email}">${e.email}</a></li>
                                         `:""}
                                       ${e.communication_apps.includes("phone")?c`
-                                          <li>Phone: ${e.phone}</li>
+                                          <li>${jsObject.translations.phone}: ${e.phone}</li>
                                         `:""}
                                       ${e.communication_apps.map(t=>{if(t==="signal")return c`
                                             <li><a class="btn light uppercase" href="sgnl://signal.me/#p/${e.signal}">${jsObject.translations.signal}</a></li>
