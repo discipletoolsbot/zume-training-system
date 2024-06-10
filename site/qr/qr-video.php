@@ -86,12 +86,14 @@ class Zume_QR_Video extends Zume_Magic_Page
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         </head>
         <body>
-        <div style="padding:56.25% 0 0 0;position:relative;">
-            <iframe src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=fcfe2172a8"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
-                    allowfullscreen
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                    title="<?php echo $vimeo_id ?>">
+        <div style="padding:56.25% 0 0 0;position:absolute;inset:0;">
+            <iframe
+                id="video-player"
+                src="https://player.vimeo.com/video/<?php echo $vimeo_id ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=fcfe2172a8"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;max-height:100vh;"
+                title="<?php echo $vimeo_id ?>">
             </iframe>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
