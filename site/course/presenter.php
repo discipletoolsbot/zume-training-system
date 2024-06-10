@@ -195,6 +195,8 @@ class Zume_Training_Presenter extends Zume_Magic_Page
             'previous_slide' => __( 'Previous slide', 'zume' ),
             'session' => __( 'Session', 'zume' ),
             'close' => __( 'Close', 'zume' ),
+            'view_script' => __( 'View Transcript', 'zume' ),
+            'view_activity' => __( 'View Activity', 'zume' ),
         ];
     }
 }

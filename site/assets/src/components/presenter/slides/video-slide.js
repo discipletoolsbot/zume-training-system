@@ -46,10 +46,10 @@ export class VideoSlide extends CourseSlide {
 
                 <button
                     type="button"
-                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 f-3 bypass-nav-click"
+                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
-                    <span class="icon z-icon-info"></span>
+                    <span class="icon z-icon-info"></span><span>${jsObject.translations.view_script}</span>
                 </button>
 
                 <div class="widescreen flex-video">
