@@ -55,6 +55,9 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
         $location = zume_get_user_location( $user_id );
         $contact_preference = get_post_meta( $contact_id, 'user_contact_preference' );
 
+        // add SSO identities
+        $identities = get_user_meta( $user_id, 'firebase_identities', true );
+
         // get coaching connections
         $coaches = [];
         $coaching_contact_id = $wpdb->get_var( $wpdb->prepare(
@@ -123,6 +126,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'friend_key' => $user_friend_key,
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
+                'sso_identities' => $identities,
             ];
             return $zume_user_profile;
         } else {
@@ -143,6 +147,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'friend_key' => $user_friend_key,
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
+                'sso_identities' => $identities,
             ];
         }
     }

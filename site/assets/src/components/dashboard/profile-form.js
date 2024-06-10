@@ -103,6 +103,10 @@ export class ProfileForm extends LitElement {
         }
     }
 
+    isSSOUser() {
+        return this.userProfile.sso_identities !== ''
+    }
+
     render() {
         return html`
             <form action="" class="stack--2" id="profile-form" @submit=${this.submitProfileForm}>
@@ -138,7 +142,7 @@ export class ProfileForm extends LitElement {
                 <div class="">
                     <label for="email">${jsObject.translations.email}</label>
                     <div class="d-flex align-items-center">
-                        <input class="input" type="email" id="email" name="email" value=${this.userProfile.email}>
+                        <input class="input" ?disabled=${this.isSSOUser()} type="email" id="email" name="email" value=${this.userProfile.email}>
                         <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('email')}>
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
