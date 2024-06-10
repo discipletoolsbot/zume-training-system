@@ -135,12 +135,12 @@ export class CompleteProfile extends LitElement {
                     <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                     <p class="input-subtext">${this.t.approximate_location}</p>
                 </div>
-                <div id="address_results">
+                <div id="address_results" class="stack--3 mx-auto fit-content">
                     ${this.locationError}
                     ${this.locations.map((location) => {
                         return html`
                             <div
-                                class="address-result"
+                                class="address-result btn rounded"
                                 id="${location.id}"
                                 data-place-name=${location.place_name}
                                 @click=${this._handleLocationSelection}

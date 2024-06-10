@@ -187,10 +187,10 @@ export class ProfileForm extends LitElement {
                     ${
                         Array.isArray(this.locations) && this.locations.length > 0
                         ? html`
-                            <div id="address_results" class="stack my-0">
+                            <div id="address_results" class="stack--3 fit-content mx-auto my-0">
                                 ${ this.locations.map((feature) => html`
                                     <div
-                                        class="card-btn | text-center"
+                                        class="btn rounded"
                                         role="button"
                                         id="${feature.id}"
                                         data-place-name="${feature.place_name}"
