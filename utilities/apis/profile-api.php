@@ -55,6 +55,11 @@ class Zume_Profile_API
     public function update_profile( WP_REST_Request $request ) {
         $params = dt_recursive_sanitize_array( json_decode( $request->get_body(), true ) );
 
+        /* If user has SSO login disable updating email */
+        if ( key_exists( 'email', $params ) && $this->is_sso_user() ) {
+            unset( $params['email'] );
+        }
+
         $return = Zume_Profile_Model::update( $params );
 
         if ( is_wp_error( $return ) ) {
@@ -92,6 +97,14 @@ class Zume_Profile_API
             $authorized = true;
         }
         return $authorized;
+    }
+
+    private function is_sso_user() {
+        $user_id = get_current_user_id();
+
+        $sso_identities = get_user_meta( $user_id, 'firebase_identities', true );
+
+        return !empty( $sso_identities );
     }
 }
 Zume_Profile_API::instance();
