@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
-"POT-Creation-Date: 2024-06-10 15:27+0100\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
 "PO-Revision-Date: 2024-02-20 08:22-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -71,7 +71,7 @@ msgstr ""
 msgid "Metrics"
 msgstr ""
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr ""
 
@@ -87,105 +87,105 @@ msgstr ""
 msgid "Global Map"
 msgstr ""
 
-#: globals.php:1931 globals.php:1933 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178 site/pages/follow-jesus.php:167
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr ""
 
-#: globals.php:1932 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
 
-#: globals.php:1942 site/course/course-content.php:3161
-#: site/course/course-content.php:3179 site/pages/follow-jesus.php:171
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr ""
 
-#: globals.php:1943 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr ""
 
-#: globals.php:1944 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
 msgstr ""
 
-#: globals.php:1953 site/course/course-content.php:3162
-#: site/course/course-content.php:3180 site/pages/follow-jesus.php:193
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr ""
 
-#: globals.php:1954 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
 
-#: globals.php:1955 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
 msgstr ""
 
-#: globals.php:1964 globals.php:1966
+#: globals.php:1969 globals.php:1971
 msgid "S.O.A.P.S. Bible Study"
 msgstr ""
 
-#: globals.php:1965 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
 
-#: globals.php:1975 globals.php:1977 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425 site/pages/follow-jesus.php:223
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr ""
 
-#: globals.php:1976 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
 
-#: globals.php:1986 site/pages/follow-jesus.php:187
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr ""
 
-#: globals.php:1987 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
 
-#: globals.php:1988
+#: globals.php:1993
 msgid "Producer not Consumer"
 msgstr ""
 
-#: globals.php:1997 globals.php:1999 site/pages/follow-jesus.php:197
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr ""
 
-#: globals.php:1998 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr ""
 
-#: globals.php:2008 site/pages/follow-jesus.php:284
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr ""
 
-#: globals.php:2009 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 
-#: globals.php:2010 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -196,281 +196,281 @@ msgstr ""
 msgid "List of 100"
 msgstr ""
 
-#: globals.php:2019 globals.php:2021 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr ""
 
-#: globals.php:2020 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
 msgstr ""
 
-#: globals.php:2030 site/pages/follow-jesus.php:288
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr ""
 
-#: globals.php:2031 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr ""
 
-#: globals.php:2032
+#: globals.php:2037
 msgid "Sharing God‘s Story"
 msgstr ""
 
-#: globals.php:2041 site/pages/follow-jesus.php:235
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr ""
 
-#: globals.php:2042 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
 
-#: globals.php:2043 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr ""
 
-#: globals.php:2052 site/pages/follow-jesus.php:292
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr ""
 
-#: globals.php:2053 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr ""
 
-#: globals.php:2054
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr ""
 
-#: globals.php:2063 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823 site/pages/follow-jesus.php:175
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr ""
 
-#: globals.php:2064 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
 msgstr ""
 
-#: globals.php:2065
+#: globals.php:2070
 msgid "Great, Greater, and Greatest Blessing"
 msgstr ""
 
-#: globals.php:2074 site/pages/follow-jesus.php:265
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr ""
 
-#: globals.php:2075
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr ""
 
-#: globals.php:2076 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr ""
 
-#: globals.php:2085 globals.php:2087 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375 site/pages/follow-jesus.php:246
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr ""
 
-#: globals.php:2086 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
 msgstr ""
 
-#: globals.php:2096 site/pages/follow-jesus.php:231
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr ""
 
-#: globals.php:2097
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
 
-#: globals.php:2098 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
 msgid "The Lord’s Supper"
 msgstr ""
 
-#: globals.php:2107 site/pages/follow-jesus.php:303
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr ""
 
-#: globals.php:2108
+#: globals.php:2113
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 
-#: globals.php:2109 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr ""
 
-#: globals.php:2118 site/pages/follow-jesus.php:299
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr ""
 
-#: globals.php:2119
+#: globals.php:2124
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 
-#: globals.php:2120 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr ""
 
-#: globals.php:2129 site/pages/follow-jesus.php:212
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr ""
 
-#: globals.php:2130
+#: globals.php:2135
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
 
-#: globals.php:2131 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr ""
 
-#: globals.php:2140 site/pages/follow-jesus.php:201
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr ""
 
-#: globals.php:2141 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 
-#: globals.php:2142 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
 msgstr ""
 
-#: globals.php:2151 site/pages/follow-jesus.php:219
+#: globals.php:2156 site/pages/follow-jesus.php:226
 msgid "3/3 Group Meeting Pattern"
 msgstr ""
 
-#: globals.php:2152
+#: globals.php:2157
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
 
-#: globals.php:2153
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr ""
 
-#: globals.php:2162 site/pages/follow-jesus.php:269
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr ""
 
-#: globals.php:2163 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 
-#: globals.php:2164 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr ""
 
-#: globals.php:2173 globals.php:2175 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050 site/pages/follow-jesus.php:324
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr ""
 
-#: globals.php:2174 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
 
-#: globals.php:2184 globals.php:2186 site/course/course-content.php:5157
-#: site/course/course-content.php:5175 site/pages/follow-jesus.php:273
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr ""
 
-#: globals.php:2185
+#: globals.php:2190
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
 
-#: globals.php:2195 site/course/course-content.php:2770
-#: site/pages/follow-jesus.php:277
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr ""
 
-#: globals.php:2196 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
 
-#: globals.php:2197 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr ""
 
-#: globals.php:2206 globals.php:2208 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177 site/pages/follow-jesus.php:227
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr ""
 
-#: globals.php:2207
+#: globals.php:2212
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr ""
 
-#: globals.php:2218 globals.php:2220 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr ""
 
-#: globals.php:2219
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
 
-#: globals.php:2229 globals.php:2231
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -481,97 +481,97 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310 site/pages/follow-jesus.php:320
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr ""
 
-#: globals.php:2230 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
 
-#: globals.php:2240 globals.php:2242 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306 site/pages/follow-jesus.php:328
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr ""
 
-#: globals.php:2241 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
 
-#: globals.php:2251 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572 site/pages/follow-jesus.php:316
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr ""
 
-#: globals.php:2252 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
 
-#: globals.php:2253 site/dashboard/wizard.php:165
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr ""
 
-#: globals.php:2262 globals.php:2264
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr ""
 
-#: globals.php:2263
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
 
-#: globals.php:2273 globals.php:2275 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr ""
 
-#: globals.php:2274
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
 msgstr ""
 
-#: globals.php:2284
+#: globals.php:2289
 msgid "3-Circles Gospel Presentation"
 msgstr ""
 
-#: globals.php:2285
+#: globals.php:2290
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
 
-#: globals.php:2286
+#: globals.php:2291
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:7017 site/course/presenter.php:197
+#: globals.php:7022 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr ""
 
-#: globals.php:7219
+#: globals.php:7224
 msgid "No Results"
 msgstr ""
 
@@ -1315,7 +1315,7 @@ msgstr ""
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
-#: site/pages/follow-jesus.php:208
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr ""
 
@@ -1388,7 +1388,7 @@ msgid "Application"
 msgstr ""
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr ""
 
@@ -1835,7 +1835,7 @@ msgid ""
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
 
-#: site/course/course-content.php:1016 site/pages/follow-jesus.php:242
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
 msgstr ""
 
@@ -3254,6 +3254,14 @@ msgstr ""
 msgid "Session"
 msgstr ""
 
+#: site/course/presenter.php:198
+msgid "View Transcript"
+msgstr ""
+
+#: site/course/presenter.php:199
+msgid "View Activity"
+msgstr ""
+
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
 msgstr ""
@@ -4423,7 +4431,7 @@ msgid "Create a Zume Account"
 msgstr ""
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -4896,61 +4904,61 @@ msgstr ""
 msgid "How to Follow Jesus"
 msgstr ""
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr ""
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr ""
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr ""
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr ""
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr ""
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr ""
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr ""
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -4959,44 +4967,44 @@ msgid ""
 "you always, to the very end of the age.\""
 msgstr ""
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr ""
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr ""
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr ""
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr ""
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr ""
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
 
