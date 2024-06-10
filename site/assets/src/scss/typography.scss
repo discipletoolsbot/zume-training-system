@@ -7,16 +7,24 @@ h1, .h1 {
     font-weight: bold;
     font-size: font-size(3);
 }
-.hero h1 {
+.hero h1,
+.hero h2 {
     font-family: var(--font-title);
     font-weight: 400;
     line-height: 1;
 }
-.hero .first {
+.hero h1 {
     font-size: clamp(2.5rem, 6.5vw, 6rem);
 }
-.hero .second {
+.hero h2 {
+    color: color('brand-light');
     font-size: clamp(5rem, 10vw, 9rem);
+    --spacing: 0;
+}
+.hero h3 {
+    font-size: font-size(2);
+    --spacing: 0;
+    padding-inline: spacing(2);
 }
 
 h2, .h2 {

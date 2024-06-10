@@ -98,8 +98,8 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="flip-on-rtl" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing">
                 </div>
                 <div class="stack | grow-2 text-center">
-                    <div id="hero-text-section">
-                        <?php echo get_post_meta( '19850', 'home_'.$current_language_code, true ); ?>
+                    <div class="hero">
+                        <?php echo wp_kses( get_post_meta( '19850', 'home_'.$current_language_code, true ), 'post' ); ?>
                     </div>
                     <div class="switcher | switcher-width-20 s-3">
 
