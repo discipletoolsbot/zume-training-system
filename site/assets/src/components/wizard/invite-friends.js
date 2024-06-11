@@ -45,7 +45,7 @@ export class InviteFriends extends LitElement {
             this.invitecode = joinKey
         }
 
-        this.url = jsObject.site_url + `/app/plan_invite${this.invitecode !== '' ? '?code=' + this.invitecode : ''}`
+        this.url = jsObject.site_url + `/app/plan-invite${this.invitecode !== '' ? '?code=' + this.invitecode : ''}`
         this.loading = true
 
         makeRequest( 'GET', `plan/${this.invitecode}`, {}, 'zume_system/v1' )

@@ -172,10 +172,10 @@ function zume_checkin_dashboard_url() {
     return zume_url( 'checkin-dashboard' );
 }
 function zume_invite_friends_url() {
-    return zume_url( 'app/friend_invite' );
+    return zume_url( 'app/friend-invite' );
 }
 function zume_invite_training_url() {
-    return zume_url( 'app/plan_invite' );
+    return zume_url( 'app/plan-invite' );
 }
 function zume_get_a_coach_url() {
     return zume_url( 'get-a-coach' );

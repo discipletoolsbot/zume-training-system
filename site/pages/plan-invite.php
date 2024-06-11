@@ -9,7 +9,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
     public $parts = false;
     public $page_title = 'Zúme Training';
     public $root = 'app';
-    public $type = 'plan_invite';
+    public $type = 'plan-invite';
     public $lang = 'en';
     public static $token = 'app_plan_invite';
 
@@ -29,7 +29,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        if ( isset( $url_parts[0] )  &&  ( 'app' === $url_parts[0] && 'plan_invite' === $url_parts[1] ) && ! dt_is_rest() ) {
+        if ( isset( $url_parts[0] ) && ( 'app' === $url_parts[0] && $this->type === $url_parts[1] ) && ! dt_is_rest() ) {
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
