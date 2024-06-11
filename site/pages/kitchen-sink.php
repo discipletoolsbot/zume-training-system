@@ -145,6 +145,18 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                         <input id="disabled-checkbox" type="checkbox" checked disabled>
                         <label for="disabled-checkbox">disabled checkbox</label>
                     </div>
+                    <div class="form-control f-1">
+                        <input name="radio" id="radio-1" type="radio" checked>
+                        <label for="radio-1">Radio 1</label>
+                    </div>
+                    <div class="form-control f-1">
+                        <input name="radio" id="radio-2" type="radio">
+                        <label for="radio-2">Radio 2</label>
+                    </div>
+                    <div class="form-control f-1">
+                        <input name="radio" id="radio-3" type="radio" disabled>
+                        <label for="radio-3">Radio 3</label>
+                    </div>
                 </div>
             </div>
 
