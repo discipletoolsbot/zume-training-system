@@ -129,7 +129,7 @@ class Zume_Training_Share extends Zume_Magic_Page
             ]) ?>][0]
         </script>
 
-        <div class="container-xsm | my-1">
+        <div class="container-xsm | my-1 text-center">
             <div class="stack">
                 <h1 class="text-center"><?php echo esc_html__( 'Sharing with Others', 'zume' ) ?></h1>
 
