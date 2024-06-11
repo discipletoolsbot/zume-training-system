@@ -117,7 +117,8 @@ export class DashPlans extends DashPage {
             this.fetchCommitments()
         })
     }
-    saveCommitment() {
+    saveCommitment(event) {
+        event.preventDefault()
         this.saving = true
         if (this.mode === 'add') {
             this.addCommitment()
@@ -315,34 +316,36 @@ export class DashPlans extends DashPage {
                 <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommitmentsModal}>
                         <span class="icon z-icon-close"></span>
                 </button>
-                <div class="stack">
+                <form @submit=${this.saveCommitment} class="stack">
                     <div class="form-group">
-                        <label for="edit-question">${jsObject.three_month_plan_translations.question}</label>
+                        <label for="edit-question">${jsObject.three_month_plan_translations.question}*</label>
                         <textarea
                             class="input"
                             id="edit-question"
                             type="text"
                             rows="3"
                             placeholder=${jsObject.three_month_plan_translations.question}
+                            required
                         ></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}</label>
+                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}*</label>
                         <textarea
                             class="input"
                             id="edit-answer"
                             type="text"
                             placeholder=${jsObject.three_month_plan_translations.answer}
+                            required
                         ></textarea>
                     </div>
                     <div class="cluster justify-flex-end">
-                        <button class="btn outline tight" type="button" @click=${this.closeCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
-                        <button class="btn tight" type="button" @click=${this.saveCommitment} ?disabled=${this.saving}>
+                        <button type="button" class="btn outline tight" type="button" @click=${this.closeCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
+                        <button type="submit" class="btn tight" type="button" ?disabled=${this.saving}>
                             ${jsObject.three_month_plan_translations.save}
                             <span class="loading-spinner ${this.saving ? 'active' : ''}"></span>
                         </button>
                     </div>
-                </div>
+                </form>
             </div>
         `;
     }
