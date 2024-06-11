@@ -69,7 +69,7 @@ export class ShareLinks extends LitElement {
                   <div :class="cluster gap--1">
                     ${ this.webShareSupported ? html`
                         <div class="position-relative">
-                          <button class="btn light uppercase" @click=${this.share}>
+                          <button class="btn" @click=${this.share}>
                             <!-- Share icon -->
                             <span>${this.t.share}</span>
                           </button>
@@ -82,7 +82,7 @@ export class ShareLinks extends LitElement {
                             this.alwaysShow ? html`<p><code>${this.url}</code></p>` : ''
                           }
                           <div class="position-relative fit-content mx-auto">
-                            <button class="btn light uppercase fit-content mx-auto" @click=${this.copyLink}>
+                            <button class="btn fit-content mx-auto" @click=${this.copyLink}>
                               <!-- Link icon -->
                               <span>${this.t.copy_link}</span>
                             </button>

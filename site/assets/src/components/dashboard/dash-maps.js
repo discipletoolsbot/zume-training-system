@@ -98,13 +98,13 @@ export class DashMaps extends DashPage {
                         `
                         : html`
                             <div class="stack">
-                                <button class="btn light uppercase" data-map="hundred-hour-map" @click=${this.openModal}>
+                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
                                     ${jsObject.translations.hundred_hour_map}
                                 </button>
-                                <button class="btn light uppercase" data-map="vision-map" @click=${this.openModal}>
+                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
-                                <button class="btn light uppercase" data-map="church-map" @click=${this.openModal}>
+                                <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
                                 </button>
                             </div>

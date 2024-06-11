@@ -154,7 +154,7 @@ class Zume_Training_About extends Zume_Magic_Page
                     <?php echo __( 'With these small beginnings ... what the Bible calls yeast ... we could see the world covered with multiplying disciples and churches. Explore Zúme Training and find out how!', 'zume' ) ?>
                 </p>
             </div>
-            <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
+            <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large fit-content"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
         </div>
 
         <div class="page bg-gray-100">
@@ -251,7 +251,7 @@ class Zume_Training_About extends Zume_Magic_Page
                     </div>
                     <div class="stack-2">
                         <p><?php echo __( 'All along the way, the Zúme community is eager to support you by providing a COACH to help you and your group successfully implement the training. Don’t hesitate to reach out with questions or concerns!', 'zume' ) ?></p>
-                        <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn uppercase light large s-4 fit-content"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
+                        <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn  large s-4 fit-content"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
                     </div>
                 </div>
             </div>
@@ -264,7 +264,7 @@ class Zume_Training_About extends Zume_Magic_Page
                 <div class="center">
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Register-About.svg' ) ?>" alt="person Registering" class="w-50">
                 </div>
-                <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large light uppercase fit-content"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
+                <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large fit-content"><?php echo esc_html__( 'Register Free', 'zume' ) ?></a>
             </div>
 
         <?php endif; ?>

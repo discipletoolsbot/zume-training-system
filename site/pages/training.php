@@ -135,7 +135,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <p class="mb-0">
                         <?php echo esc_html__( 'Gather a few friends or go through the course with an existing small group. Create your own training group and track your progress.', 'zume' ) ?>
                     </p>
-                    <a href="<?php echo esc_url( zume_make_a_group_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Create', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_make_a_group_wizard_url() ) ?>" class="btn mt-auto"><?php echo esc_html__( 'Create', 'zume' ) ?></a>
                 </div>
                 <div class="stack | card | switcher-width-40">
                     <h2 class="f-1 text-center"><?php echo esc_html__( 'Join a training group', 'zume' ) ?></h2>
@@ -143,7 +143,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <p class="mb-0">
                         <?php echo esc_html__( 'If you can‘t gather a group right now, consider joining one of our online training groups lead by an experienced Zúme coach.', 'zume' ) ?>
                     </p>
-                    <a href="<?php echo esc_url( zume_join_a_public_plan_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Join', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_join_a_public_plan_wizard_url() ) ?>" class="btn mt-auto"><?php echo esc_html__( 'Join', 'zume' ) ?></a>
                 </div>
                 <div class="stack | card | switcher-width-40">
                     <h2 class="f-1 text-center"><?php echo esc_html__( 'Request a coach', 'zume' ) ?></h2>
@@ -151,7 +151,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                     <p class="mb-0">
                         <?php echo esc_html__( 'We can connect you with free Zúme coach who is committed to helping you understand the training and become a fruitful disciple.', 'zume' ) ?>
                     </p>
-                    <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn light uppercase mt-auto"><?php echo esc_html__( 'Get Help', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn mt-auto"><?php echo esc_html__( 'Get Help', 'zume' ) ?></a>
                 </div>
             </div>
         </div>

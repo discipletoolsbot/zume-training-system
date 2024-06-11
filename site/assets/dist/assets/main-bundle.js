@@ -107,7 +107,7 @@ var Xn=Object.defineProperty;var ea=(i,e,t)=>e in i?Xn(i,e,{enumerable:!0,config
                 </div>
             </div>
             <div class="cluster | mx-auto">
-                <button type="submit" class="btn tight light" ?disabled=${this.loading}>
+                <button type="submit" class="btn tight" ?disabled=${this.loading}>
                     ${this.t.next}
                    ${[h.updatePhone,h.updateName].includes(this.variant)?c`
                         <span class="loading-spinner ${this.loading?"active":""}"></span>
@@ -144,7 +144,7 @@ ${this.training.zoom_link_note}
                         <textarea class="input" rows="9">${e}</textarea>
                         ${navigator.clipboard?c`
                                 <div class="position-relative">
-                                    <button class="btn light uppercase mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
+                                    <button class="btn mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
                                     <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length?"":"empty"}>${this.copyFeedback}</p>
                                 </div>
                             `:""}
@@ -223,9 +223,9 @@ ${this.training.zoom_link_note}
                         <span class="z-icon-start-group brand-light f-7"></span>
                         <h2>${this.t.join_or_start_a_training}</h2>
                         <div class="stack" data-fit-content>
-                            <button class="btn tight light" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
-                            <button class="btn tight light" data-decision="join" @click=${this._handlePlanDecision}>${this.t.join_a_public_training}</button>
-                            <button class="btn tight light outline" data-decision="skip" @click=${this._handlePlanDecision}>${this.t.skip_for_now}</button>
+                            <button class="btn tight" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
+                            <button class="btn tight" data-decision="join" @click=${this._handlePlanDecision}>${this.t.join_a_public_training}</button>
+                            <button class="btn tight outline" data-decision="skip" @click=${this._handlePlanDecision}>${this.t.skip_for_now}</button>
                         </div>
                     </div>
                 `:""}
@@ -237,7 +237,7 @@ ${this.training.zoom_link_note}
                             <button class="btn tight green ${this.state==="20"?"":"outline"}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
                             <button class="btn tight green ${this.state==="10"?"":"outline"}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
                             <button class="btn tight green ${this.state==="5"?"":"outline"}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
-                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -248,7 +248,7 @@ ${this.training.zoom_link_note}
                         <div class="stack" data-fit-content>
                             <button class="btn tight green ${this.state==="yes"?"":"outline"}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
                             <button class="btn tight green ${this.state==="no"?"":"outline"}" data-value="no" @click=${this._handleSelection}>${this.t.no}</button>
-                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -260,7 +260,7 @@ ${this.training.zoom_link_note}
                             <button class="btn tight green ${this.state==="weekly"?"":"outline"}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
                             <button class="btn tight green ${this.state==="biweekly"?"":"outline"}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
                             <button class="btn tight green ${this.state==="other"?"":"outline"}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
-                            <button class="btn tight light mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -275,7 +275,7 @@ ${this.training.zoom_link_note}
                                 `:""}
                         </div>
                         <div class="stack" data-fit-content>
-                            <button class="btn light fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -286,7 +286,7 @@ ${this.training.zoom_link_note}
                         <p>${this.t.question_where_will_you_meet_help_text}</p>
                         <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
                         <div class="stack" data-fit-content>
-                            <button class="btn light fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -296,7 +296,7 @@ ${this.training.zoom_link_note}
                         <h2>${this.t.question_what_is_the_groups_name}</h2>
                         <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
                         <div class="stack" data-fit-content>
-                            <button class="btn light fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
                 `:""}
@@ -312,7 +312,7 @@ ${this.training.zoom_link_note}
                                         >
                                             ${this.t.clear_calendar}
                                         </button>
-                                        <button class="btn outline light small tight ms-auto" @click=${this.toggleView}>${this.scheduleView==="calendar"?"list":"calendar"}</button>
+                                        <button class="btn outline small tight ms-auto" @click=${this.toggleView}>${this.scheduleView==="calendar"?"list":"calendar"}</button>
                                     </div>
                                 `:""}
                         ${this.scheduleView==="calendar"&&t==="yes"?c`
@@ -350,7 +350,7 @@ ${this.training.zoom_link_note}
                                         </div>
                                     `:c`<span class="grow-1"></span>`}
                                 <button
-                                    class="btn tight light ms-auto"
+                                    class="btn tight ms-auto"
                                     @click=${this._handleCreate}
                                 >
                                     ${this.t.create}
@@ -437,7 +437,7 @@ ${this.training.zoom_link_note}
             `:""}
             ${this.variant!==h.connectingToCoach?c`
                     <div class="mx-auto">
-                        <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading?"active":""}"></span></button>
+                        <button type="submit" class="btn tight" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading?"active":""}"></span></button>
                     </div>
                 `:""}
             <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
@@ -448,7 +448,7 @@ ${this.training.zoom_link_note}
                             ${this.name===""?c`<span></span>`:c`<span>${this.name}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.name}
                                     @click=${this.handleChange}
                                 >
@@ -463,7 +463,7 @@ ${this.training.zoom_link_note}
                             ${this.whatLocation===""?c`<span></span>`:c`<span>${this.whatLocation}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.location}
                                     @click=${this.handleChange}
                                 >
@@ -478,7 +478,7 @@ ${this.training.zoom_link_note}
                             <span>${this.howManyDict[this.howManySessions]||this.howManySessions}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.howManySessions}
                                     @click=${this.handleChange}
                                 >
@@ -493,7 +493,7 @@ ${this.training.zoom_link_note}
                             <span>${this.scheduleDecisionDict[this.scheduleDecision]||this.scheduleDecision}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.scheduleDecision}
                                     @click=${this.handleChange}
                                 >
@@ -508,7 +508,7 @@ ${this.training.zoom_link_note}
                             <span>${this.howOfterDict[this.howOften]||this.howOften}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.howOften}
                                     @click=${this.handleChange}
                                 >
@@ -524,7 +524,7 @@ ${this.training.zoom_link_note}
                                     <span>${new Date(`${this.date} ${this.time==="not-set"?"":this.time}`).toLocaleString(navigator.language||"en-US",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"})}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${h.startDate}
                                     @click=${this.handleChange}
                                 >
@@ -555,7 +555,7 @@ ${this.training.zoom_link_note}
                         <h1 class="brand">${this.t.bad_wizard}</h1>
                         <p>${this.t.found_bad_wizard}</p>
                         <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
-                        <a class="btn tight light" href="/">${this.t.home}</a>
+                        <a class="btn tight" href="/">${this.t.home}</a>
                     </div>
                 </div>
             `;if(this.wizard.isLoaded())return this.steps.length===0?c`
@@ -611,7 +611,7 @@ ${this.training.zoom_link_note}
             <button
                 @click=${this._handleFinish}
                 ?disabled=${this.loading}
-                class="btn tight light
+                class="btn tight
                 ${this.loading?"disabled":""} uppercase"
             >
                 ${this.t.dashboard}
@@ -623,7 +623,7 @@ ${this.training.zoom_link_note}
         `}footer(){let e="";return this.noUrlChange&&this.stepIndex>0&&this.type!==w.makeAGroup&&(e=c`
                 <button
                     @click=${this._onBack}
-                    class="btn tight light outline fit-content"
+                    class="btn tight outline fit-content"
                 >
                     ${this.t.back}
                 </button>
@@ -816,7 +816,7 @@ ${this.training.zoom_link_note}
                 <div class="container-xsm my-0">
                     <h3>${jsObject.translations.edit_profile}</h3>
                     <profile-form .userProfile=${this.userProfile}></profile-form>
-                    <a href=${jsObject.urls.logout} class="btn outline light">${jsObject.translations.logout}</a>
+                    <a href=${jsObject.urls.logout} class="btn outline">${jsObject.translations.logout}</a>
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>
@@ -968,8 +968,8 @@ ${this.training.zoom_link_note}
                             <input id="parent-church" name="parent-church" type="text" />
                         </div>
                         <div class="cluster">
-                            <button class="btn light uppercase" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
-                            <button class="btn light uppercase outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
+                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
+                            <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
                         </div>
                     </div>
                 </div>
@@ -1019,13 +1019,13 @@ ${this.training.zoom_link_note}
                                           <li>${jsObject.translations.phone}: ${e.phone}</li>
                                         `:""}
                                       ${e.communication_apps.map(t=>{if(t==="signal")return c`
-                                            <li><a class="btn light uppercase" href="sgnl://signal.me/#p/${e.signal}">${jsObject.translations.signal}</a></li>
+                                            <li><a class="btn" href="sgnl://signal.me/#p/${e.signal}">${jsObject.translations.signal}</a></li>
                                           `;if(t==="telegram")return c`
-                                            <li><a class="btn light uppercase" href="https://t.me/${e.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
+                                            <li><a class="btn" href="https://t.me/${e.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
                                           `;if(t==="whatsapp")return c`
-                                            <li><a class="btn light uppercase" href="https://wa.me/${e.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
+                                            <li><a class="btn" href="https://wa.me/${e.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
                                           `;if(t==="messenger")return c`
-                                            <li><a class="btn light uppercase" href="https://m.me/${e.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
+                                            <li><a class="btn" href="https://m.me/${e.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
                                           `})}
                                     </ul>
                                   `:""}
@@ -1043,9 +1043,9 @@ ${this.training.zoom_link_note}
                     <h2 class="h5 text-center">${e.title}</h2>
                     <p>${e.description}</p>
                     ${this.isWizardLink(e.link)?c`
-                            <button class="btn light uppercase" @click=${()=>this.openWizard(e.link)}>${e.link_text}</button>
+                            <button class="btn" @click=${()=>this.openWizard(e.link)}>${e.link_text}</button>
                         `:c`
-                            <a href="${e.link}" class="btn light uppercase">${e.link_text}</a>
+                            <a href="${e.link}" class="btn">${e.link_text}</a>
                         `}
 
                 </div>
@@ -1143,13 +1143,13 @@ ${this.training.zoom_link_note}
                           </div>
                         `:c`
                             <div class="stack">
-                                <button class="btn light uppercase" data-map="hundred-hour-map" @click=${this.openModal}>
+                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
                                     ${jsObject.translations.hundred_hour_map}
                                 </button>
-                                <button class="btn light uppercase" data-map="vision-map" @click=${this.openModal}>
+                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
-                                <button class="btn light uppercase" data-map="church-map" @click=${this.openModal}>
+                                <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
                                 </button>
                             </div>
@@ -1246,7 +1246,7 @@ ${this.training.zoom_link_note}
                     <div class="d-flex w-6rem justify-content-center">
                         ${a==="closed"?c`<span class="icon z-icon-check-mark success"></span>`:c`
                                 <button
-                                    class="btn light uppercase tight break-anywhere"
+                                    class="btn tight break-anywhere"
                                     @click=${()=>this.completeCommitment(n)}
                                 >
                                     ${jsObject.translations.done}
@@ -1368,8 +1368,8 @@ ${this.training.zoom_link_note}
                         ></textarea>
                     </div>
                     <div class="cluster justify-flex-end">
-                        <button class="btn outline light tight" type="button" @click=${this.closeEditCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
-                        <button class="btn light tight" type="button" @click=${this.editCommitment} ?disabled=${this.saving}>
+                        <button class="btn outline tight" type="button" @click=${this.closeEditCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
+                        <button class="btn tight" type="button" @click=${this.editCommitment} ?disabled=${this.saving}>
                             ${jsObject.three_month_plan_translations.save}
                             <span class="loading-spinner ${this.saving?"active":""}"></span>
                         </button>
@@ -1401,7 +1401,7 @@ ${this.training.zoom_link_note}
                                 <share-links url=${o} title=${t} .t=${jsObject.share_translations}></share-links>
 
                                 ${jsObject.has_pieces_pages?c`
-                                        <a class="btn light uppercase" href=${o} @click=${l=>l.stopImmediatePropagation()}>${jsObject.translations.view}</a>
+                                        <a class="btn" href=${o} @click=${l=>l.stopImmediatePropagation()}>${jsObject.translations.view}</a>
                                     `:""}
                             </div>
                         </div>
@@ -1632,7 +1632,7 @@ ${this.training.zoom_link_note}
                                     </div>
                                     <button
                                         @click=${this.inviteFriends}
-                                        class="btn brand tight light uppercase mt--2"
+                                        class="btn brand tight mt--2"
                                     >
                                         ${jsObject.translations.invite_friends}
                                     </button>
@@ -1647,7 +1647,7 @@ ${this.training.zoom_link_note}
                 <launch-course></launch-course>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-header-right",Go);class Yo extends k{static get properties(){return{displayOn:{type:String}}}constructor(){super(),this.displayOn="large"}toggleSidebar(){const e=new CustomEvent("toggle-dashboard-sidebar",{bubbles:!0});this.dispatchEvent(e)}render(){return c`
-            <button class="btn f-0 light tight dashboard__sidebar-toggle break-${this.displayOn}" @click=${this.toggleSidebar}>${jsObject.translations.menu}</button>
+            <button class="btn f-0 tight dashboard__sidebar-toggle break-${this.displayOn}" @click=${this.toggleSidebar}>${jsObject.translations.menu}</button>
         `}createRenderRoot(){return this}}customElements.define("dash-sidebar-toggle",Yo);class _s extends qn(k){static get properties(){return{href:{type:String},class:{type:String},as:{type:String},locked:{type:Boolean},completed:{type:Boolean},disableNavigate:{type:Boolean},icon:{type:String},text:{type:String},explanation:{type:String}}}constructor(){super(),this.href="",this.class="",this.as="",this.icon="",this.text="",this.explanation="",this.locked=!1,this.completed=!1,this.disableNavigate=!1}handleClick(e){this.as==="nav"&&(e.preventDefault(),this.navigate(this.href)),this.as!=="link"&&this.as==="button"&&e.preventDefault()}printBool(e){return e?"true":"false"}render(){return c`
             <a
                 href=${this.href}
@@ -1700,7 +1700,7 @@ ${this.training.zoom_link_note}
                 </div>
             </div>
         `}}customElements.define("list-link",Ko);class Qo extends k{static get properties(){return{translations:{type:Object},urls:{type:Object},position:{type:String},asLink:{type:Boolean}}}constructor(){super(),typeof jsObject<"u"&&(this.translations=jsObject.translations,this.urls=jsObject.urls),this.position="bottom";const t=document.querySelector("html").dataset.dir;this.isRtl=t==="rtl"}updated(){jQuery(document).foundation()}render(){return c`
-            <button class="${this.asLink?"btn dark tight":" btn uppercase light tight"}" data-toggle="launch-course-panel">
+            <button class="${this.asLink?"btn dark tight nav__button":" btn  tight"}" data-toggle="launch-course-panel">
                 ${this.translations.launch_course}
             </button>
             <div
@@ -2289,12 +2289,12 @@ ${this.training.zoom_link_note}
                     </div>
                     <div class="">
                         <div class="cluster">
-                            <a class="btn light uppercase tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
-                            <button class="btn d-flex align-items-center justify-content-center gap--4 light tight" data-open="language-menu-reveal">
+                            <a class="btn tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
+                            <button class="btn d-flex align-items-center justify-content-center gap--4 tight" data-open="language-menu-reveal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
                                 ${this.languageCode}
                             </button>
-                            <button class="btn light tight outline" @click=${()=>this.switchViews()}>
+                            <button class="btn tight outline" @click=${()=>this.switchViews()}>
                                 ${this.view==="slideshow"?jsObject.translations.list_view:jsObject.translations.slide_view}
                             </button>
                         </div>
@@ -2350,7 +2350,7 @@ ${this.training.zoom_link_note}
                 <div class="cluster justify-flex-end">
                     ${this.showCancel?c`
                             <button
-                                class="btn light outline uppercase"
+                                class="btn outline uppercase"
                                 @click=${this.handleCancel}
                             >
                                 ${this.translations.cancel}
@@ -2359,7 +2359,7 @@ ${this.training.zoom_link_note}
                     <button
                         ?disabled=${e}
                         aria-disabled=${e?"true":"false"}
-                        class="btn light uppercase"
+                        class="btn"
                         @click=${this.handleSave}
                     >
                         ${this.translations.save}
@@ -2432,7 +2432,7 @@ ${this.training.zoom_link_note}
                   <div :class="cluster gap--1">
                     ${this.webShareSupported?c`
                         <div class="position-relative">
-                          <button class="btn light uppercase" @click=${this.share}>
+                          <button class="btn" @click=${this.share}>
                             <!-- Share icon -->
                             <span>${this.t.share}</span>
                           </button>
@@ -2443,7 +2443,7 @@ ${this.training.zoom_link_note}
                         <div class="stack--2">
                           ${this.alwaysShow?c`<p><code>${this.url}</code></p>`:""}
                           <div class="position-relative fit-content mx-auto">
-                            <button class="btn light uppercase fit-content mx-auto" @click=${this.copyLink}>
+                            <button class="btn fit-content mx-auto" @click=${this.copyLink}>
                               <!-- Link icon -->
                               <span>${this.t.copy_link}</span>
                             </button>
@@ -2866,7 +2866,7 @@ ${this.training.zoom_link_note}
 
                 <div class="d-flex align-items-center gap-0 mx-auto">
                     <input class="input fit-content" type="date" @change=${this.onChange} value=${this.date} />
-                    <button class="btn light tight" @click=${this.addDate}>
+                    <button class="btn tight" @click=${this.addDate}>
                         ${this.t.add}
                     </button>
                 </div>

@@ -131,7 +131,7 @@ switch ( $request_action ) {
                                  */
                                 do_action( 'lostpassword_form' ); ?>
                                 <input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
-                                <input type="submit" name="wp-submit" id="wp-submit" class="btn light uppercase" value="<?php echo esc_html__( 'Get New Password', 'zume' ); ?>" />
+                                <input type="submit" name="wp-submit" id="wp-submit" class="btn" value="<?php echo esc_html__( 'Get New Password', 'zume' ); ?>" />
                             </form>
 
                         <?php elseif ( $sent ): ?>
@@ -292,7 +292,7 @@ switch ( $request_action ) {
 
                             <input type="hidden" name="wp-submit" id="wp-submit" value="" />
 
-                            <button class="btn light">
+                            <button class="btn">
                                 <?php esc_html_e( 'Reset Password', 'zume' ); ?>
                             </button>
 
@@ -461,7 +461,7 @@ switch ( $request_action ) {
                                                 <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                 <div>
                                                     <div class="g-recaptcha" id="g-recaptcha"></div>
-                                                    <button class="btn light w-100" id="submit">
+                                                    <button class="btn w-100" id="submit">
                                                         <?php esc_html_e( 'Register', 'zume' ) ?>
                                                     </button>
                                                 </div>
@@ -862,7 +862,7 @@ function zume_login_form( $args = array() ) {
         ) .
         sprintf(
             '<p class="login-submit">
-                <input type="submit" name="wp-submit" id="%1$s" class="btn light uppercase w-100" value="%2$s" />
+                <input type="submit" name="wp-submit" id="%1$s" class="btn w-100" value="%2$s" />
                 <input type="hidden" name="redirect_to" value="%3$s" />
             </p>',
             esc_attr( $args['id_submit'] ),

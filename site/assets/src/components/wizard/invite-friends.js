@@ -166,7 +166,7 @@ ${
                         ${
                             navigator.clipboard ? html`
                                 <div class="position-relative">
-                                    <button class="btn light uppercase mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
+                                    <button class="btn mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
                                     <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length ? '' : 'empty'}>${this.copyFeedback}</p>
                                 </div>
                             ` : ''

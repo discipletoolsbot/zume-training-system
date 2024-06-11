@@ -236,8 +236,8 @@ export class DashChurches extends DashPage {
                             <input id="parent-church" name="parent-church" type="text" />
                         </div>
                         <div class="cluster">
-                            <button class="btn light uppercase" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
-                            <button class="btn light uppercase outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
+                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
+                            <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
                         </div>
                     </div>
                 </div>

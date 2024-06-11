@@ -341,7 +341,7 @@ export class DashTrainings extends DashPage {
                                     </div>
                                     <button
                                         @click=${this.inviteFriends}
-                                        class="btn brand tight light uppercase mt--2"
+                                        class="btn brand tight mt--2"
                                     >
                                         ${jsObject.translations.invite_friends}
                                     </button>

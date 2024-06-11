@@ -32,7 +32,7 @@ export class LaunchCourse extends LitElement {
 
     render() {
         return html`
-            <button class="${this.asLink ? 'btn dark tight' : ' btn uppercase light tight'}" data-toggle="launch-course-panel">
+            <button class="${this.asLink ? 'btn dark tight nav__button' : ' btn  tight'}" data-toggle="launch-course-panel">
                 ${this.translations.launch_course}
             </button>
             <div

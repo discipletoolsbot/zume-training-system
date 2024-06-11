@@ -106,7 +106,7 @@ function pieces_content( $postid, $lang, $strings ) {
             <div class="stack-1">
                 <?php if ( $audio ) :  ?>
                     <h3 class="center"><?php echo esc_html( $strings['lra'] ) ?? '' ?></h3>
-                    <a class="btn large uppercase text-center"
+                    <a class="btn large text-center"
                        href="<?php echo esc_url( Zume_Course::get_download_by_key( '33' ) ) ?>"
                        target="_blank" rel="noopener noreferrer nofollow">
                         <?php echo esc_html( $strings['d'] ) ?? '' ?>

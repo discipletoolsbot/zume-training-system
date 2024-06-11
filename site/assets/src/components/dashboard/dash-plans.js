@@ -168,7 +168,7 @@ export class DashPlans extends DashPage {
                             ? html`<span class="icon z-icon-check-mark success"></span>`
                             : html`
                                 <button
-                                    class="btn light uppercase tight break-anywhere"
+                                    class="btn tight break-anywhere"
                                     @click=${() => this.completeCommitment(id)}
                                 >
                                     ${jsObject.translations.done}
@@ -301,8 +301,8 @@ export class DashPlans extends DashPage {
                         ></textarea>
                     </div>
                     <div class="cluster justify-flex-end">
-                        <button class="btn outline light tight" type="button" @click=${this.closeEditCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
-                        <button class="btn light tight" type="button" @click=${this.editCommitment} ?disabled=${this.saving}>
+                        <button class="btn outline tight" type="button" @click=${this.closeEditCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
+                        <button class="btn tight" type="button" @click=${this.editCommitment} ?disabled=${this.saving}>
                             ${jsObject.three_month_plan_translations.save}
                             <span class="loading-spinner ${this.saving ? 'active' : ''}"></span>
                         </button>

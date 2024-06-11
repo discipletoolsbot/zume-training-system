@@ -172,10 +172,10 @@ export class DashCta extends LitElement {
                     ${
                         this.isWizardLink(content.link)
                         ? html`
-                            <button class="btn light uppercase" @click=${() => this.openWizard(content.link)}>${content.link_text}</button>
+                            <button class="btn" @click=${() => this.openWizard(content.link)}>${content.link_text}</button>
                         `
                         : html`
-                            <a href="${content.link}" class="btn light uppercase">${content.link_text}</a>
+                            <a href="${content.link}" class="btn">${content.link_text}</a>
                         `
                     }
 

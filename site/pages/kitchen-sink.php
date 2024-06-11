@@ -130,10 +130,9 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                 <div class="cluster">
                     <a class="d-block" href="#">Normal links in a page</a>
                     <button class="btn d-block">.btn</button>
-                    <button class="btn light d-block">.btn.light</button>
+                    <button class="btn d-block">.btn.light</button>
                     <button class="btn outline d-block">.btn.outline</button>
                     <button class="btn large">.btn.large</button>
-                    <button class="btn uppercase">.btn.uppercase</button>
                 </div>
             </div>
             <div class="bg-brand py-4">
@@ -144,7 +143,6 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
                         <button class="btn dark d-block">.btn.dark</button>
                         <button class="btn outline dark d-block">.btn.outline.dark</button>
                         <button class="btn dark large">.btn.dark.large</button>
-                        <button class="btn dark uppercase">.btn.dark.uppercase</button>
                     </div>
                 </div>
             </div>

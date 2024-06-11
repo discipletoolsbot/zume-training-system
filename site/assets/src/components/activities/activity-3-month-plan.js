@@ -108,7 +108,7 @@ export class Activity3MonthPlan extends LitElement {
                     ${
                         this.showCancel ? html`
                             <button
-                                class="btn light outline uppercase"
+                                class="btn outline uppercase"
                                 @click=${this.handleCancel}
                             >
                                 ${this.translations.cancel}
@@ -118,7 +118,7 @@ export class Activity3MonthPlan extends LitElement {
                     <button
                         ?disabled=${disabled}
                         aria-disabled=${disabled ? 'true' : 'false'}
-                        class="btn light uppercase"
+                        class="btn"
                         @click=${this.handleSave}
                     >
                         ${this.translations.save}

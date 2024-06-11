@@ -68,7 +68,7 @@ export class ReviewSteps extends LitElement {
                             }
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.name}
                                     @click=${this.handleChange}
                                 >
@@ -92,7 +92,7 @@ export class ReviewSteps extends LitElement {
                             }
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.location}
                                     @click=${this.handleChange}
                                 >
@@ -113,7 +113,7 @@ export class ReviewSteps extends LitElement {
                             <span>${this.howManyDict[this.howManySessions] || this.howManySessions}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.howManySessions}
                                     @click=${this.handleChange}
                                 >
@@ -130,7 +130,7 @@ export class ReviewSteps extends LitElement {
                             <span>${this.scheduleDecisionDict[this.scheduleDecision] || this.scheduleDecision}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.scheduleDecision}
                                     @click=${this.handleChange}
                                 >
@@ -147,7 +147,7 @@ export class ReviewSteps extends LitElement {
                             <span>${this.howOfterDict[this.howOften] || this.howOften}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.howOften}
                                     @click=${this.handleChange}
                                 >
@@ -174,7 +174,7 @@ export class ReviewSteps extends LitElement {
                             }
                             <span class="d-flex justify-flex-end">
                                 <button
-                                    class="btn small no-outline light tight"
+                                    class="btn small no-outline tight"
                                     data-step=${Steps.startDate}
                                     @click=${this.handleChange}
                                 >

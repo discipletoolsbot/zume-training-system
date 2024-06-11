@@ -151,7 +151,7 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
                     <h1 class="h2 brand-light mb0"><?php echo esc_html__( 'Woops', 'zume' ) ?></h1>
                     <hr class="mt0">
                     <p><?php echo esc_html__( 'Something went wrong with your checkin process.', 'zume' ) ?></p>
-                    <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn "><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
 
                 <?php else : ?>
 
@@ -167,7 +167,7 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
                             <h2 class="h3 brand-light"><?php echo esc_html__( 'Course Progress:', 'zume' ) ?></h2>
                             <p class="bold f-5"><?php echo esc_html( sprintf( __( '%d%%', 'zume' ), $percentage_progress ) ) ?></p>
                         </div>
-                        <a href="<?php echo esc_url( zume_dashboard_page_url( 'my-progress' ) ) ?>" class="btn uppercase light"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                        <a href="<?php echo esc_url( zume_dashboard_page_url( 'my-progress' ) ) ?>" class="btn "><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
                     </div>
 
                 <?php endif; ?>

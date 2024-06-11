@@ -1,7 +1,7 @@
 @mixin button {
     color: inherit;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
     border: solid 2px transparent;
     border-radius: 100px;
@@ -9,9 +9,10 @@
     cursor: pointer;
     transition: all 150ms linear;
     text-align: center;
+    text-transform: uppercase;
 
-    --primary-btn-color: #{color('brand')};
-    --secondary-btn-color: #{color('brand-light')};
+    --primary-btn-color: #{color('brand-light')};
+    --secondary-btn-color: #{color('brand')};
     --bg-btn-color: #{color('white')};
 
     --btn-color: var(--bg-btn-color);
@@ -57,6 +58,8 @@ a {
 
 
     &.dark {
+        --btn-bg-color: #{color('brand')};
+        --btn-border-color: #{color('brand')};
         --btn-hover-border-color: #{color('white')};
         --btn-hover-bg-color: transparent;
     }
@@ -74,6 +77,12 @@ a {
         --btn-border-color: #{color('gray-500')};
         --btn-hover-bg-color: #{color('gray-600')};
         --btn-hover-border-color: #{color('gray-600')};
+    }
+
+    &.brand {
+        --primary-btn-color: #{color('brand')};
+        --secondary-btn-color: #{color('brand-light')};
+        --bg-btn-color: #{color('white')};
     }
 
     &.light {
@@ -148,6 +157,7 @@ a {
     padding: spacing(-3);
     font-weight: 500;
     text-align: start;
+    text-transform: none;
 
     display: flex;
     align-items: center;

@@ -141,7 +141,7 @@ export class Wizard extends LitElement {
                         <h1 class="brand">${this.t.bad_wizard}</h1>
                         <p>${this.t.found_bad_wizard}</p>
                         <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
-                        <a class="btn tight light" href="/">${this.t.home}</a>
+                        <a class="btn tight" href="/">${this.t.home}</a>
                     </div>
                 </div>
             `
@@ -298,7 +298,7 @@ export class Wizard extends LitElement {
             <button
                 @click=${this._handleFinish}
                 ?disabled=${this.loading}
-                class="btn tight light
+                class="btn tight
                 ${this.loading ? 'disabled' : ''} uppercase"
             >
                 ${this.t.dashboard}
@@ -325,7 +325,7 @@ export class Wizard extends LitElement {
             backButton = html`
                 <button
                     @click=${this._onBack}
-                    class="btn tight light outline fit-content"
+                    class="btn tight outline fit-content"
                 >
                     ${this.t.back}
                 </button>

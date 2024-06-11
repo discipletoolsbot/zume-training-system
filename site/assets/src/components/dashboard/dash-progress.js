@@ -201,7 +201,7 @@ export class DashProgress extends DashPage {
                                 ${
                                     jsObject.has_pieces_pages
                                     ? html`
-                                        <a class="btn light uppercase" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${jsObject.translations.view}</a>
+                                        <a class="btn" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${jsObject.translations.view}</a>
                                     `
                                     : ''
                                 }

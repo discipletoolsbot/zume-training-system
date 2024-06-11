@@ -155,7 +155,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
 
                 <?php if ( !is_user_logged_in() ): ?>
 
-                    <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="mx-auto btn large light uppercase"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
+                    <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="mx-auto btn large"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
 
                 <?php endif; ?>
 

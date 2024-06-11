@@ -227,6 +227,7 @@ input::-webkit-calendar-picker-indicator {
   padding-inline: spacing(0);
   padding-block: spacing(-5);
   font-weight: 400;
+  text-transform: none;
 }
 .nav__link {
   display: flex;

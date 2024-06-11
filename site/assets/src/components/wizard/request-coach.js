@@ -174,7 +174,7 @@ export class RequestCoach extends LitElement {
             ${ this.variant !== Steps.connectingToCoach
                 ? html`
                     <div class="mx-auto">
-                        <button type="submit" class="btn tight light" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading ? 'active' : ''}"></span></button>
+                        <button type="submit" class="btn tight" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading ? 'active' : ''}"></span></button>
                     </div>
                 `
                 : ''}
