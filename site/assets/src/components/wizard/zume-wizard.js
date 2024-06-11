@@ -522,6 +522,11 @@ export class Wizard extends LitElement {
             }
         })
 
+        /* The previous step isn't in this wizard, so reload the current wizard journey */
+        if (!this.steps.some(({slug}) => path === slug)) {
+            this.steps = this.wizard.getSteps( this.type )
+            this._gotoStep( this.steps.length - 1 )
+        }
     }
 
     _handleGotoStep(event) {
