@@ -216,7 +216,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                         <?php echo esc_html__( 'Zúme is 20 hours of training. But those 20 hours can be broken up differently depending on your training group‘s availability.', 'zume' ) ?>
                     </p>
                     <div class="stack-1">
-                        <div class="switcher | switcher-width-40 align-items-center mx-auto gapx-2">
+                        <div class="switcher | switcher-width-40 align-items-center gapx-2">
                             <a href="<?php echo esc_url( zume_10_session_url() ) ?>" class="card-btn training-card" role="button">
                                 <h3 class="training-card__title h1"><?php echo esc_html__( '10 Sessions', 'zume' ) ?></h3>
                                 <div class="w-6rem brand-light">
@@ -228,7 +228,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                 <?php echo esc_html__( 'The original Zúme course format is 10 two hour sessions. Each session finishes with practical obedience steps and ways to share in-between sessions. This format is often run once a week for 10 weeks.', 'zume' ) ?>
                             </p>
                         </div>
-                        <div class="switcher | switcher-width-40 align-items-center mx-auto gapx-2">
+                        <div class="switcher | switcher-width-40 align-items-center gapx-2">
                             <a href="<?php echo esc_url( zume_20_session_url() ) ?>" class="card-btn training-card" role="button">
                                 <h3 class="training-card__title h1"><?php echo esc_html__( '20 Sessions', 'zume' ) ?></h3>
                                 <div class="w-6rem brand-light">
@@ -240,7 +240,7 @@ class Zume_Training_Page extends Zume_Magic_Page
                                 <?php echo esc_html__( 'For a longer slower pace course with more opportunity for gaining competence in the concepts and skills, the 20 session format has more practice opportunities for each of the concepts and tools.', 'zume' ) ?>
                             </p>
                         </div>
-                        <div class="switcher | switcher-width-40 align-items-center mx-auto gapx-2">
+                        <div class="switcher | switcher-width-40 align-items-center gapx-2">
                             <a href="<?php echo esc_url( zume_intensive_session_url() ) ?>" class="card-btn training-card" role="button">
                                 <h3 class="training-card__title h1"><?php echo esc_html__( 'Intensive', 'zume' ) ?></h3>
                                 <div class="w-6rem brand-light">
