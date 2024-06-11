@@ -126,6 +126,29 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
             </div>
 
             <div class="container stack">
+                <h2 class="brand">Forms</h2>
+                <div class="stack">
+                    <input class="input" type="text" placeholder="text input">
+                    <div class="form-group">
+                        <label for="this-input" class="input-label">A label</label>
+                        <input id="this-input" type="text">
+                    </div>
+                    <div class="form-control">
+                        <input id="checkbox-1" type="checkbox">
+                        <label for="checkbox-1">Checkbox 1</label>
+                    </div>
+                    <div class="form-control f-1 brand-light">
+                        <input id="larger-checkbox" type="checkbox" checked>
+                        <label for="larger-checkbox">larger checkbox</label>
+                    </div>
+                    <div class="form-control f-1 brand-light">
+                        <input id="disabled-checkbox" type="checkbox" checked disabled>
+                        <label for="disabled-checkbox">disabled checkbox</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container stack">
                 <h2 class="brand">Buttons and links</h2>
                 <div class="cluster">
                     <a class="d-block" href="#">Normal links in a page</a>

@@ -28,7 +28,7 @@ class Zume_Communication_Preferences extends Zume_Magic_Page
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        if ( $url_parts[0] === $this->type && ! dt_is_rest() ) {
+        if ( $url_parts[0] === $this->root && $url_parts[1] === $this->type && ! dt_is_rest() ) {
 
             // register url and access
             add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
@@ -79,19 +79,19 @@ class Zume_Communication_Preferences extends Zume_Magic_Page
             <h1 class="brand-light"><?php echo esc_html__( 'Update Communication Preferences', 'zume' ) ?></h1>
             <div class="stack">
                 <h2 class="h3"><?php echo esc_html__( 'Recieve emails for:', 'zume' ) ?></h2>
-                <div class="input-group gap-1">
+                <div class="form-control brand-light">
                     <input type="checkbox" name="session-reminders" id="session-reminders">
                     <label for="session-reminders"><?php echo esc_html__( 'Training session reminders', 'zume' ) ?></label>
                 </div>
-                <div class="input-group gap-1">
+                <div class="form-control brand-light">
                     <input type="checkbox" name="reporting-reminders" id="reporting-reminders">
                     <label for="reporting-reminders"><?php echo esc_html__( 'Annual reporting reminders', 'zume' ) ?></label>
                 </div>
-                <div class="input-group gap-1">
+                <div class="form-control brand-light">
                     <input type="checkbox" name="community-updates" id="community-updates">
                     <label for="community-updates"><?php echo esc_html__( 'Community updates', 'zume' ) ?></label>
                 </div>
-                <div class="input-group gap-1">
+                <div class="form-control brand-light">
                     <input type="checkbox" name="encouragements" id="encouragements">
                     <label for="encouragements"><?php echo esc_html__( 'Encouragements', 'zume' ) ?></label>
                 </div>

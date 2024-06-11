@@ -854,7 +854,7 @@ function zume_login_form( $args = array() ) {
         $login_form_middle .
         ( $args['remember'] ?
             sprintf(
-                '<p class="login-remember text-start"><label class="input-label"><input class="input" name="rememberme" type="checkbox" id="%1$s" value="forever"%2$s /> %3$s</label></p>',
+                '<p class="login-remember text-start"><label class="input-label form-control"><input class="input" name="rememberme" type="checkbox" id="%1$s" value="forever"%2$s /> %3$s</label></p>',
                 esc_attr( $args['id_remember'] ),
                 ( $args['value_remember'] ? ' checked="checked"' : '' ),
                 esc_html( $args['label_remember'] )

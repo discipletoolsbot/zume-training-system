@@ -116,7 +116,7 @@ export class RequestCoach extends LitElement {
                 <h2>${this.t.contact_preference_question}</h2>
                 <div class="stack center container-sm | align-items-start text-start">
                     ${this.contactPreferences.map((preference) => html`
-                        <div>
+                        <div class="form-control brand-light">
                             <input type="checkbox" name="contact-preference" id=${'prefer_' + preference} value=${preference} @change=${this._handleChange} ?checked=${!!this.state[preference]} />
                             <label for=${'prefer_' + preference}>${this.t[preference]}</label>
                         </div>
@@ -143,23 +143,23 @@ export class RequestCoach extends LitElement {
             ${ this.variant === Steps.howCanWeServe ? html`
                 <h2>${this.t.how_can_we_serve}</h2>
                 <div class="stack center | container-sm align-items-start text-start">
-                    <div class="d-flex align-items-center">
+                    <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="coaching" value="coaching-request" @change=${this._handleChange} ?checked=${!!this.state.coaching} />
                         <label for="coaching">${this.t.coaching}</label>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="technical" value="technical-assistance" @change=${this._handleChange} ?checked=${!!this.state.technical} />
                         <label for="technical">${this.t.technical_assistance}</label>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="implementation" value="question-about-implementation" @change=${this._handleChange} ?checked=${!!this.state.implementation} />
                         <label for="implementation">${this.t.question_implementation}</label>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="content" value="question-about-content" @change=${this._handleChange} ?checked=${!!this.state.content} />
                         <label for="content">${this.t.question_content}</label>
                     </div>
-                    <div class="d-flex align-items-center">
+                    <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="group-started" value="help-with-group" @change=${this._handleChange} ?checked=${!!this.state['group-started']} />
                         <label for="group-started">${this.t.help_with_group}</label>
                     </div>

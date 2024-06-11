@@ -41,6 +41,61 @@
     margin-top: spacing(-4);
 }
 
+.form-control {
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    align-items: center;
+    gap: 0.5em;
+
+    & label {
+        font-size: 1em;
+    }
+}
+
 [type=checkbox], [type=file], [type=radio] {
     margin-bottom: 0;
+}
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(calc( -0.5 * 0.15em ));
+
+    display: grid;
+    place-content: center;
+
+    &:before {
+        content: '\e900';
+        font-family: 'Zume-Icons-Square';
+        color: color('success');
+        transform: scale(0);
+        transform-origin: bottom left;
+        transition: 120ms transform ease-in-out;
+        font-size: 0.8em;
+    }
+
+    &:checked:before {
+        transform: scale(1);
+    }
+
+    &:focus {
+        outline: max(1px, 0.1em) solid currentColor;
+        outline-offset: max(2px, 0.15em);
+    }
+
+    &:disabled {
+        color: color('gray-700');
+
+        &:before {
+            color: color('gray-700');
+        }
+    }
 }
