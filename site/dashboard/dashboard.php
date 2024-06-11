@@ -114,6 +114,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'share_translations' => Zume_Training_Share::translations(),
                 'translations' => $this->translations(),
                 'wizard_translations' => Zume_Training_Wizard::translations(),
+                'three_month_plan_translations' => Zume_Activites_3monthplan::translations(),
                 'three_month_plan_questions' => self::three_month_plan_questions(),
                 'urls' => [
                     'logout' => esc_url( dt_login_url( 'logout' ) ),

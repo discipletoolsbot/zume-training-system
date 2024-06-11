@@ -87,9 +87,12 @@ class Zume_Activites_3monthplan extends Zume_Activites
         <?php
     }
 
-    public function translations() {
+    public static function translations() {
         return [
             'save' => __( 'Save', 'zume' ),
+            'cancel' => __( 'Cancel', 'zume' ),
+            'question' => __( 'Question', 'zume' ),
+            'answer' => __( 'Answer', 'zume' ),
         ];
     }
 }

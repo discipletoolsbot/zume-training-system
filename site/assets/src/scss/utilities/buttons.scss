@@ -163,6 +163,10 @@ a {
         background-color: color('brand-fade');
     }
 
+    &.red {
+        --btn-hover-color: #{color('error-main')};
+    }
+
     &:hover {
         text-decoration: none;
     }

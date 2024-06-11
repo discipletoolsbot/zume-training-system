@@ -738,7 +738,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                         : html`
                         <activity-3-month-plan
                             .questions=${jsObject.three_month_plan_questions}
-                            .translations=${{ save: jsObject.translations.save, cancel: jsObject.translations.cancel }}
+                            .translations=${jsObject.three_month_plan_translations}
                             user_id=${this.userProfile.user_id}
                             contact_id=${this.userProfile.contact_id}
                             @3-month-plan-saved=${this.handleCreated3MonthPlan}

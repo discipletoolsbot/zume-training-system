@@ -116,7 +116,7 @@ export class CompleteProfile extends LitElement {
 
             ${ this.variant === Steps.updateLocation ? html`
                 <h2>${this.t.location_question}</h2>
-                <div class="form-group stack--4">
+                <div class="form-group">
                     <div class="d-flex align-items-center">
                         <label class="input-label visually-hidden" for="city">${this.t.city}</label>
                         <input

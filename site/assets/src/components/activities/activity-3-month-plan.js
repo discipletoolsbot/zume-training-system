@@ -57,7 +57,7 @@ export class Activity3MonthPlan extends LitElement {
                     "user_id": this.user_id,
                     "post_id": this.contact_id,
                     "meta_key": "tasks",
-                    "note": 'Question: ' + question + ' Answer: ' + answer,
+                    "note": `${this.translations.question}: ${question} ${this.translations.answer}: ${answer}`,
                     "question": question,
                     "answer": answer,
                     "date": date,

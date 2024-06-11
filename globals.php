@@ -5619,8 +5619,15 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
             );
             register_rest_route(
                 $namespace, '/commitment', [
-                    'methods' => 'PUT',
+                    'methods' => 'UPDATE',
                     'callback' => [ $this, 'update_commitment' ],
+                    'permission_callback' => '__return_true',
+                ]
+            );
+            register_rest_route(
+                $namespace, '/commitment', [
+                    'methods' => 'PUT',
+                    'callback' => [ $this, 'complete_commitment' ],
                     'permission_callback' => '__return_true',
                 ]
             );
@@ -5742,6 +5749,37 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
             return zume_get_user_commitments( $user_id, $status, $category );
         }
         public function update_commitment( WP_REST_Request $request )
+        {
+            global $wpdb, $table_prefix;
+            $params = dt_recursive_sanitize_array( $request->get_params() );
+            if ( ! isset( $params['id'], $params['user_id'] ) ) {
+                return new WP_Error( __METHOD__, 'Id, user_id required', array( 'status' => 401 ) );
+            }
+
+            $user_id = zume_validate_user_id_request( $params['user_id'] );
+            if ( is_wp_error( $user_id ) ) {
+                return $user_id;
+            }
+
+            $row = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$table_prefix}dt_post_user_meta WHERE id = %d AND user_id = %d", $params['id'], $user_id ), ARRAY_A );
+            $data = maybe_unserialize( $row['meta_value'] );
+            if ( isset( $params['question'] ) ) {
+                $data['question'] = $params['question'];
+            }
+            if ( isset( $params['answer'] ) ) {
+                $data['answer'] = $params['answer'];
+            }
+            $data['note'] = esc_html__( 'Question', 'zume' ) . ': ' . $data['question'] . ' ' . esc_html__( 'Answer', 'zume' ) . ': ' . $data['answer'];
+            $data = maybe_serialize( $data );
+            $where = [
+                'id' => $params['id'],
+                'user_id' => $user_id,
+            ];
+
+            $update = $wpdb->update( "{$table_prefix}dt_post_user_meta", [ 'meta_value' => $data ], $where );
+            return $update;
+        }
+        public function complete_commitment( WP_REST_Request $request )
         {
             global $wpdb, $table_prefix;
             $params = dt_recursive_sanitize_array( $request->get_params() );
