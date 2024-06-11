@@ -53,10 +53,9 @@ export class Activity3MonthPlan extends LitElement {
                  * TODO: refactor the POST commitment API to take a list of commitments
                  * then we can safely fetch all the commitments once the single API request has completed
                  */
+                /* TODO: should the note be created by the API rather than by the POSTer? */
+                /* TODO: same with the category */
                 const request = makeRequest('POST', 'commitment', {
-                    "user_id": this.user_id,
-                    "post_id": this.contact_id,
-                    "meta_key": "tasks",
                     "note": `${this.translations.question}: ${question} ${this.translations.answer}: ${answer}`,
                     "question": question,
                     "answer": answer,
