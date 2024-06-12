@@ -24,6 +24,8 @@ class Zume_Training_Wizard extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
+
+        global $zume_user_profile;
         $this->lang = get_locale();
 
         [
@@ -32,6 +34,15 @@ class Zume_Training_Wizard extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
         $this->wizard_type = $url_parts[1] ?? '';
+
+        if (
+            $this->wizard_type === 'get-a-coach' &&
+            isset( $zume_user_profile['coaching_contact_id'] ) &&
+            !empty( $zume_user_profile['coaching_contact_id'] )
+        ) {
+            wp_redirect( zume_dashboard_page_url( 'my-coach' ) );
+            exit;
+        }
 
         if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
 
