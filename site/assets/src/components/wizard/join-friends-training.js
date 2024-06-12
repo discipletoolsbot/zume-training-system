@@ -55,8 +55,6 @@ export class JoinFriendsTraining extends LitElement {
 
         zumeRequest.post( 'connect/plan', { code: code } )
             .then( ( data ) => {
-                console.log(data)
-
                 this.message = this.t.success.replace('%s', data.name)
 
                 const url = new URL(location.href)

@@ -227,7 +227,7 @@ export class Wizard extends LitElement {
                 translations = this.t.join_training
                 break
             case Steps.joinFriendsPlan:
-                tag = literal`join-friend-training`
+                tag = literal`join-friends-training`
                 translations = this.t.join_training
                 break
             case Steps.connectToFriend:
