@@ -192,6 +192,9 @@ export class DashPlans extends DashPage {
         const menu = this.querySelector(`#kebab-menu-${id}`)
         jQuery(menu).foundation('close')
     }
+    open3MonthPlan() {
+        this.dispatchEvent(new CustomEvent('open-3-month-plan', { bubbles: true }))
+    }
 
     renderListItem(commitment) {
         const { question, answer, id, status } = commitment
@@ -294,7 +297,7 @@ export class DashPlans extends DashPage {
                                   <h3 class="f-1 bold uppercase">${jsObject.translations.my_plans_locked}</h3>
                                   <p>${jsObject.translations.my_plans_locked_explanation}</p>
                                 </div>
-                                <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
+                                <button class="dash-menu__view-button btn tight" @click=${this.open3MonthPlan}>
                                   ${jsObject.translations.create_3_month_plan}
                                 </button>
                               </div>
