@@ -2226,7 +2226,7 @@ ${this.training.zoom_link_note}
                             <div class="grid | grid-min-8rem gutter0">
                                 ${this.zumeSessions.map((t,s)=>c`
                                     <button
-                                        class="card-btn | bg-white black m--2 gap--3 aspect-1 justify-content-evenly"
+                                        class="card-btn | m--2 gap--3 aspect-1 justify-content-evenly"
                                         data-session-number=${s}
                                         @click=${this.handleSessionLink}
                                     >

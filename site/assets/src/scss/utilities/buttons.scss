@@ -208,12 +208,15 @@ button.card-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     cursor: pointer;
     padding: spacing(0);
     box-shadow: var(--z-box-shadow-medium);
     border-radius: var(--border-radius);
     transition: color, background-color 100ms linear;
+    color: color('black');
+    background-color: color('white');
 
     & > * {
         pointer-events: none;
