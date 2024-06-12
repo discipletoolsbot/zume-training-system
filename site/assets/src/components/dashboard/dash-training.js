@@ -1,8 +1,9 @@
 import { DashTopLevel } from './dash-top-level';
+import { RouteNames } from './routes';
 
 export class DashTraining extends DashTopLevel {
     constructor() {
-        super('training')
+        super(RouteNames.training)
     }
 
     createRenderRoot() {

@@ -25,6 +25,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             trainingGroups: { type: Array, attribute: false },
             wizardType: { type: String, attribute: false },
             celbrationModalContent: { type: Object, attribute: false },
+            myTrainingsOpen: { type: Boolean, attribute: false },
         };
     }
 
@@ -144,6 +145,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         celebrationModal?.addEventListener('closed.zf.reveal', () => {
             this.showingCelebrationModal = false
         })
+        this.trainingGroupsOpen = jQuery('#training-groups-menu').hasClass('is-active')
     }
 
     updateWizardType(event) {
@@ -452,6 +454,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     toggleTrainingGroups() {
         jQuery(document).foundation()
         jQuery('#training-menu').foundation('toggle', jQuery('#training-groups-menu'))
+        this.trainingGroupsOpen = jQuery('#training-groups-menu').hasClass('is-active')
     }
     redirectToPage(event) {
         const { type } = event.detail
@@ -577,10 +580,22 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                 class="menu-btn"
                                                                 icon=${route.icon}
                                                                 text=${jsObject.translations.my_trainings}
-                                                                as="button"
-                                                                @click=${this.toggleTrainingGroups}
+                                                                as="nav"
+                                                                href=${this.makeHref('my-trainings')}
                                                             ></nav-link>
-                                                            <ul id="training-groups-menu" class="menu vertical nested">
+                                                            <button
+                                                                class="d-flex justify-content-center"
+                                                                @click=${this.toggleTrainingGroups}
+                                                            >
+                                                                <img
+                                                                    class="training-groups__toggle svg w-1rem h-1rem"
+                                                                    src=${jsObject.images_url + '/chevron.svg'}
+                                                                />
+                                                            </button>
+                                                            <ul
+                                                                id="training-groups-menu"
+                                                                class="menu vertical nested"
+                                                            >
                                                                 ${
                                                                     repeat(Object.entries(this.trainingGroups), ([key]) => key, ([key, group]) => html`
                                                                             <li>

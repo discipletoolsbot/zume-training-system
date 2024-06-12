@@ -135,6 +135,23 @@ dash-header-right {
         --list-item-hover-bg-color: #{color('gray-700')};
     }
 }
+.dash-menu__training-item[role="button"] {
+    border-radius: var(--border-radius, 10px);
+    padding: spacing(1);
+    box-shadow: var(--z-box-shadow-medium);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: color('brand-light');
+        color: color('white');
+    }
+
+    .title {
+        font-size: font-size(1);
+        font-weight: 500;
+    }
+}
 
 .dashboard__main [data-completed] .dash-menu__list-icon,
 .dashboard__main [data-locked] .dash-menu__list-icon {

@@ -94,6 +94,16 @@ export function dashRoutes() {
             },
         },
         {
+            name: RouteNames.myTrainings,
+            pattern: `${jsObject.base_url}/my-trainings`,
+            icon: 'z-icon-my-training',
+            type: 'dash-link',
+            translation: jsObject.translations['my_trainings'],
+            data: {
+                makeComponent: () => html`<dash-trainings-list></dash-trainings-list>`,
+            },
+        },
+        {
             name: RouteNames.myTraining,
             pattern: `${jsObject.base_url}/my-training/:code`,
             parent: RouteNames.training,

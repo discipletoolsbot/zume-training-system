@@ -35,7 +35,6 @@ export class DashTopLevel extends DashPage {
     }
     refetchState() {
         makeRequest('GET', 'user_stage', {}, 'zume_system/v1' ).done( ( data ) => {
-            console.log(this, data)
             if (!data || !data.state) {
                 console.error('Stage or state data not returned from api')
             }
@@ -57,9 +56,9 @@ export class DashTopLevel extends DashPage {
                             if (trainingGroupIds.length === 0) {
                                 href = route.pattern.replace(':code', 'teaser')
                             } else if (trainingGroupIds.length > 0) {
-                                const trainingGroup = jsObject.training_groups[trainingGroupIds[0]]
-                                console.log(trainingGroup)
-                                href = route.pattern.replace(':code', trainingGroup.join_key)
+                                const route = DashBoard.getRoute(RouteNames.myTrainings)
+
+                                href = route.pattern
                             }
                         }
 

@@ -3,6 +3,7 @@ import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
 import { Wizards } from '../wizard/wizard-constants';
+import { RouteNames } from './routes';
 
 export class DashTrainings extends DashPage {
     static get properties() {
@@ -22,7 +23,7 @@ export class DashTrainings extends DashPage {
         this.showTeaser = false
         this.loading = false
         this.error = ''
-        this.route = DashBoard.getRoute('my-training')
+        this.route = DashBoard.getRoute(RouteNames.myTraining)
 
         this.renderListItem = this.renderListItem.bind(this)
     }

@@ -7,6 +7,7 @@ export const RouteNames = {
     getACoach: 'get-a-coach',
     training: 'training',
     myTraining: 'my-training',
+    myTrainings: 'my-trainings',
     myProgress: 'my-progress',
     threeMonthPlan: '3-month-plan',
     practicing: 'practicing',
