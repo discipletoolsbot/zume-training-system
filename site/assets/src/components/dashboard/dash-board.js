@@ -422,12 +422,11 @@ export class DashBoard extends navigator(router(LitElement)) {
                         if (!key) {
                             return Promise.resolve()
                         }
-                        const type = key.substr(key.indexOf('_') + 1)
-                        const subtype = key.substring(0, key.indexOf('_'))
+                        const type = key.substring(0, key.indexOf('_'))
+                        const subtype = key.substr(key.indexOf('_') + 1)
                         return zumeRequest.post('log', { type, subtype })
                     })
 
-                    console.log(promises)
                     Promise.all(promises)
                         .finally(() => {
                             this.dispatchEvent( new CustomEvent( 'ctas:changed', { bubbles: true } ) )
