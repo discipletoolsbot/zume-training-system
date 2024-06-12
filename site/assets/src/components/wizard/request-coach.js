@@ -59,38 +59,38 @@ export class RequestCoach extends LitElement {
         this.stateManager.clear()
     }
 
-    updated() {
-        this.message = this.t.connect_success
-
+    requestCoach() {
+        this.message = this.t.please_wait
         const data = this.stateManager.getAll()
 
-        if ( this.variant === Steps.connectingToCoach && this.requestSent === false ) {
-            this.loading = true
-            this.requestSent = true
-            this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
-            zumeRequest.post('get_a_coach', { data } )
-                .then(( data ) => {
-                    if ( data === false ) {
-                        this.message = this.t.connect_fail
-                        this.setErrorMessage(this.t.error_connecting)
-                    }
-                })
-                .catch((error) => {
-                    if (error.message === 'already_has_coach') {
-                        this.message = ''
-                        this.setErrorMessage(this.t.already_coached)
-                        return
-                    }
+        this.loading = true
+        this.requestSent = true
+        this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+        zumeRequest.post('get_a_coach', { data } )
+            .then(( data ) => {
+                console.log(data, this)
+                this.message = this.t.connect_success
 
+                if ( data === false ) {
                     this.message = this.t.connect_fail
                     this.setErrorMessage(this.t.error_connecting)
-                })
-                .finally(() => {
-                    this.loading = false
-                    this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
-                    this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
-                })
-        }
+                }
+            })
+            .catch((error) => {
+                if (error.message === 'already_has_coach') {
+                    this.message = ''
+                    this.setErrorMessage(this.t.already_coached)
+                    return
+                }
+
+                this.message = this.t.connect_fail
+                this.setErrorMessage(this.t.error_connecting)
+            })
+            .finally(() => {
+                this.loading = false
+                this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+                this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
+            })
     }
 
     willUpdate(properties) {
@@ -110,6 +110,10 @@ export class RequestCoach extends LitElement {
     }
 
     render() {
+        if ( this.variant === Steps.connectingToCoach && this.requestSent === false ) {
+            this.requestCoach()
+        }
+
         return html`
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${ this.variant === Steps.contactPreferences ? html`
