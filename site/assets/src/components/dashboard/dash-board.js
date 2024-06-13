@@ -414,6 +414,7 @@ export class DashBoard extends navigator(router(LitElement)) {
 
                 /* Save it globally for lower down web components to access */
                 jsObject.allCtas = this.allCtas
+                this.dispatchEvent(new CustomEvent( 'ctas:changed', { bubbles: true } ))
 
                 if (filteredOutCtas.length > 0) {
                     const promises = filteredOutCtas.map((cta) => {

@@ -196,6 +196,20 @@ class Zume_System_CTA_API
                 'content_template' => 'celebration',
             ],
             [
+                'stages' => [1, 2, 3, 4, 5, 6],
+                'required_keys' => ['system_connected_to_coach'],
+                'disable_keys' => ['system_celebrated_coach_connect'],
+                'key' => 'system_celebrated_coach_connect',
+                'type' => 'system',
+                'subtype' => 'celebrated_coach_connect',
+                'content' => [
+                    'title' => __( 'Connected to Coach!', 'zume' ),
+                    'description' => __( 'Congratulations', 'zume' ),
+                    'image_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '../site/assets/images/thumbs-up.svg' ),
+                ],
+                'content_template' => 'celebration',
+            ],
+            [
                 'stages' => [1],
                 'required_keys' => [],
                 'disable_keys' => ['system_plan_created'],

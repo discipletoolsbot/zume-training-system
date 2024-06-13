@@ -6184,6 +6184,13 @@ if ( ! class_exists('Zume_System_Log_API') ) {
                 $data_item['subtype'] = 'plan_created';
                 $data_item['hash'] = hash('sha256', maybe_serialize($data_item) . time());
                 $added_log[] = self::insert($data_item, true, false);
+
+                /* Mute the celebration for creating a plan, as we have only joined not created a training */
+                $data_item = $data;
+                $data_item['type'] = 'system';
+                $data_item['subtype'] = 'celebrate_plan_created';
+                $data_item['hash'] = hash('sha256', maybe_serialize($data_item) . time());
+                $added_log[] = self::insert($data_item, true, false);
             }
             /**
              * business logic:

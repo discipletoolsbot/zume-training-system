@@ -217,8 +217,13 @@ class Zume_Get_A_Coach_Endpoints
             }
         }
 
-        // log coaching request
-        Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $user_id ] );
+        if ( $coach_id !== null ) {
+            Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $user_id ] );
+            Zume_System_Log_API::log( 'system', 'celebrated_coach_request', [ 'user_id' => $user_id ] );
+            Zume_System_Log_API::log( 'system', 'connected_to_coach', [ 'user_id' => $user_id, 'payload' => $coach_id ] );
+        } else {
+            Zume_System_Log_API::log( 'system', 'requested_a_coach', [ 'user_id' => $user_id ] );
+        }
 
         return $body;
     }
