@@ -6178,7 +6178,7 @@ if ( ! class_exists('Zume_System_Log_API') ) {
              * business logic:
              * - if a user joins an online training, create a plan_created log entry
              */
-            if ('system' === $type && 'joined_online_training' === $subtype) {
+            if ('system' === $type && ( 'joined_online_training' === $subtype || 'joined_friends_training' === $subtype )) {
                 $data_item = $data;
                 $data_item['type'] = 'system';
                 $data_item['subtype'] = 'plan_created';

@@ -228,7 +228,7 @@ class Zume_Connect_Endpoints
             return new WP_Error( __METHOD__, 'Error updating contact', [ 'status' => 400 ] );
         }
 
-        $sub_type = $public === true ? 'joined_online_training' : 'plan_created';
+        $sub_type = $public === true ? 'joined_online_training' : 'joined_friends_training';
 
         zume_log_insert( 'system', $sub_type, [ 'user_id' => $user_id ], true );
 

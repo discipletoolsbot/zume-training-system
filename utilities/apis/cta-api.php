@@ -89,9 +89,12 @@ class Zume_System_CTA_API
         }
         if ( ! empty( $ctas ) ) {
             foreach ( $ctas as $key => $cta ) {
+                $show_cta = false;
                 foreach ( $cta['required_keys'] as $required_key ) {
-                    if ( ! in_array( $required_key, $log_keys ) ) {
+                    if (  !$show_cta && ! in_array( $required_key, $log_keys ) ) {
                         unset( $ctas[$key] );
+                    } else {
+                        $show_cta = true;
                     }
                 }
                 foreach ( $cta['disable_keys'] as $disable_key ) {
@@ -154,7 +157,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [2, 3, 4, 5, 6],
-                'required_keys' => ['system_joined_online_training'],
+                'required_keys' => ['system_joined_friends_training', 'system_joined_online_training'],
                 'disable_keys' => ['system_celebrated_joining_training'],
                 'key' => 'system_celebrated_joining_training',
                 'type' => 'system',
