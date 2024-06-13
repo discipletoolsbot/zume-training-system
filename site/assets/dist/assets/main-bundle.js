@@ -2373,8 +2373,20 @@ ${this.training.zoom_link_note}
                 <div>
                     <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
-                <div class="visual-indicator left"></div>
-                <div class="visual-indicator right"></div>
+                <div class="visual-indicator left">
+                    <img
+                        src="${jsObject.images_url}/chevron.svg"
+                        alt=${jsObject.translations.previous_slide}
+                        class="svg white rotate-90"
+                    />
+                </div>
+                <div class="visual-indicator right">
+                    <img
+                        src="${jsObject.images_url}/chevron.svg"
+                        alt=${jsObject.translations.next_slide}
+                        class="svg white rotate--90"
+                    />
+                </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("course-slideshow",wl);class kl extends k{static get properties(){return{slide:{type:Object},showControls:{type:Boolean}}}render(){if(this.slide)switch(this.slide.type){case"title":return l`<title-slide .slide=${this.slide} id=${this.slide.key}></title-slide>`;case"checkin":return l`<checkin-slide .slide=${this.slide} id=${this.slide.key}></checkin-slide>`;case"pray":return l`<pray-slide .slide=${this.slide} id=${this.slide.key}></pray-slide>`;case"review":return l`<review-slide .slide=${this.slide} id=${this.slide.key}></review-slide>`;case"overview":return l`<overview-slide .slide=${this.slide} id=${this.slide.key}></overview-slide>`;case"challenge":case"center":return l`<center-slide .slide=${this.slide} id=${this.slide.key}></center-slide>`;case"watch":return l`<watch-slide .slide=${this.slide} id=${this.slide.key}></watch-slide>`;case"video":return l`<video-slide .slide=${this.slide} id=${this.slide.key} ?showButtons=${this.showControls}></video-slide>`;case"look_back":return l`<look-back-slide .slide=${this.slide} id=${this.slide.key}></look-back-slide>`;case"discuss":return l`<discuss-slide .slide=${this.slide} id=${this.slide.key}></discuss-slide>`;case"left_content":case"activity":return l`<activity-slide .slide=${this.slide} id=${this.slide.key}></activity-slide>`;case"obey":return l`<obey-slide .slide=${this.slide} id=${this.slide.key}></obey-slide>`;case"left_image":return l`<left-image-slide .slide=${this.slide} id=${this.slide.key}></left-image-slide>`;case"next_steps":return l`<next-steps-slide .slide=${this.slide} id=${this.slide.key}></next-steps-slide>`;case"break":return l`<break-slide .slide=${this.slide} id=${this.slide.key}></break-slide>`;case"congratulations":return l`<congratulations-slide .slide=${this.slide} id=${this.slide.key}></congratulations-slide>`;case"final":return l`<final-slide .slide=${this.slide} id=${this.slide.key}></final-slide>`;default:return l`<course-slide .slide=${this.slide} id=${this.slide.key}></course-slide>`}}createRenderRoot(){return this}}customElements.define("slide-switcher",kl);class _l extends k{static get properties(){return{questions:{type:Array},translations:{type:Object},contact_id:{type:String},user_id:{type:String},showCancel:{type:Boolean},answers:{type:Array,attribue:!1},error:{type:Boolean,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.questions=[],this.answers=[],this.translations=[],this.contact_id="",this.user_id="",this.error=!1,this.loading=!1}handleInputChange(e){const t=e.target.dataset.i;this.answers[t]=e.target.value,this.update()}handleCancel(){this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-cancelled",{bubbles:!0}))}handleSave(){this.loading=!0;const e=[];if(this.answers.length===0){this.loading=!1;return}return this.answers.forEach((t,s)=>{if(t){const a=this.questions[s];var n=new Date;n.setDate(n.getDate()+30);const r=makeRequest("POST","commitment",{note:`${this.translations.question}: ${a} ${this.translations.answer}: ${t}`,question:a,answer:t,date:n,category:"post_training_plan"},"zume_system/v1");e.push(r.promise())}}),Promise.all(e).then(()=>{this.loading=!1,this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-saved",{bubbles:!0}))}).catch(t=>{console.error(t),this.error=!0,this.loading=!1})}clearAnswers(){this.renderRoot.querySelectorAll(".post-training-plan").forEach(e=>{e.value=""})}render(){const e=this.loading||this.answers.length===0;return l`
             <div id="pieces-content" class="stack">

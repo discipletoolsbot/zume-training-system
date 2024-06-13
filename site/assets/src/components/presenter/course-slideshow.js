@@ -163,8 +163,20 @@ export class CourseSlideshow extends LitElement {
                 <div>
                     <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
-                <div class="visual-indicator left"></div>
-                <div class="visual-indicator right"></div>
+                <div class="visual-indicator left">
+                    <img
+                        src="${jsObject.images_url}/chevron.svg"
+                        alt=${jsObject.translations.previous_slide}
+                        class="svg white rotate-90"
+                    />
+                </div>
+                <div class="visual-indicator right">
+                    <img
+                        src="${jsObject.images_url}/chevron.svg"
+                        alt=${jsObject.translations.next_slide}
+                        class="svg white rotate--90"
+                    />
+                </div>
             </div>
         `;
     }

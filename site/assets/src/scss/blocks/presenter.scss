@@ -28,6 +28,10 @@
         transition: opacity 50ms linear;
         cursor: pointer;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         &.left {
             left: 0;
         }
