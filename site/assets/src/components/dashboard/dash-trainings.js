@@ -215,7 +215,8 @@ export class DashTrainings extends DashPage {
 
         location.href = url
     }
-    editSession(id) {
+    editSession(id, event) {
+        this.stopImmediatePropagation(event)
         const sessionToEdit = this.sessions.find((session) => session.id === id)
 
         const date = DateTime.fromMillis(sessionToEdit.datetime)
@@ -298,7 +299,8 @@ export class DashTrainings extends DashPage {
             })
     }
 
-    markSessionCompleted(id) {
+    markSessionCompleted(id, event) {
+        this.stopImmediatePropagation(event)
         makeRequest( 'POST', 'plan/complete-session', { key: this.training.join_key, session_id: id }, 'zume_system/v1' )
             .then((result) => {
                 this.refreshSessions(result)
@@ -392,11 +394,11 @@ export class DashTrainings extends DashPage {
                     <ul>
                         ${
                             this.isGroupLeader() ? html`
-                                <li><button class="menu-btn" @click=${() => this.editSession(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
-                                <li><button class="menu-btn" @click=${() => this.markSessionCompleted(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                                <li><button class="menu-btn" @click=${(event) => this.editSession(id, event)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
+                                <li><button class="menu-btn" @click=${(event) => this.markSessionCompleted(id, event)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
                             ` : ''
                         }
-                        <li><button class="menu-btn" @click=${() => this.startSession(id)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
+                        <li><button class="menu-btn" @click=${(event) => this.startSession(id, event)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
                     </ul>
                 </div>
             </li>
@@ -572,7 +574,7 @@ export class DashTrainings extends DashPage {
                         <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
-                    <div class="d-flex gap-0 flex-wrap">
+                    <div class="d-flex gap-0 flex-wrap justify-content-center">
                         <h2>${jsObject.translations.edit}:</h2>
                         <h3 class="h2 brand-light">${this.sessionToEdit?.name}</h3>
                     </div>
