@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import { zumeRequest } from '../../js/scripts';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class JoinTraining extends LitElement {
 

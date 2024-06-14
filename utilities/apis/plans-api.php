@@ -45,7 +45,7 @@ class Zume_Plans_Endpoints
             ]
         );
         register_rest_route(
-            $this->namespace, '/plan', [
+            $this->namespace, '/plan/(?P<code>\w+)', [
                 'methods' => 'PUT',
                 'callback' => [ $this, 'update_plan' ],
                 'permission_callback' => '__return_true',
@@ -64,13 +64,22 @@ class Zume_Plans_Endpoints
                 'callback' => [ $this, 'completed_sessions' ],
                 'permission_callback' => '__return_true',
             ]
-        );        register_rest_route(
+        );
+        register_rest_route(
+            $this->namespace, '/plan/edit-session', [
+                'methods' => 'POST',
+                'callback' => [ $this, 'edit_session' ],
+                'permission_callback' => '__return_true',
+            ]
+        );
+        register_rest_route(
             $this->namespace, '/plan/complete-session', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'mark_session_complete' ],
                 'permission_callback' => '__return_true',
             ]
-        );        register_rest_route(
+        );
+        register_rest_route(
             $this->namespace, '/public_plans', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'public_plans' ],
@@ -115,7 +124,6 @@ class Zume_Plans_Endpoints
                 'error_code' => 'not-authorized',
             ];
         }
-
 
         $completed_sessions = $this->get_completed_sessions( $plan_id, $user_id );
 
@@ -164,31 +172,33 @@ class Zume_Plans_Endpoints
         return $new_post;
     }
     public function update_plan( WP_REST_Request $request ){
+        $code = $request['code'];
+
+        $plan_id = Zume_Connect_Endpoints::test_join_key( $code );
+
+        if ( !$plan_id ) {
+            return [
+                'error_code' => 'bad-plan-code',
+            ];
+        }
+
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( ! isset( $params['key'] ) ) {
-            return [
-                'success' => false,
-                'message' => 'Missing params key',
-            ];
+        $fields = [];
+        if ( isset( $params['title'] ) ) {
+            $fields['title'] = $params['title'];
+        }
+        if ( isset( $params['visibility'] ) ) {
+            $fields['visibility'] = $params['visibility'];
         }
 
-        $key = $params['key'];
+        $result = DT_Posts::update_post( self::$post_type, $plan_id, $fields, true, false );
 
-        global $wpdb, $table_prefix;
-        $post_id_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE meta_key = 'join_key' AND meta_value = %s", $key ) );
-
-        if ( empty( $post_id_exists ) ) {
-            return [
-                'success' => false,
-                'message' => 'Invalid key',
-            ];
+        if ( is_wp_error( $result ) ) {
+            return $result;
         }
 
-        $user_id = get_current_user_id();
-        $contact_id = zume_get_user_contact_id( $user_id );
-
-        return DT_Posts::update_post( self::$post_type, $post_id_exists, [ 'participants' => [ 'values' => [ [ 'value' => $contact_id ] ] ] ], true, false );
+        return 1;
     }
     public function delete_plan( WP_REST_Request $request ) {
         global $wpdb, $table_prefix;
@@ -249,6 +259,47 @@ class Zume_Plans_Endpoints
         }
 
         return $filtered_logs;
+    }
+
+    public function edit_session( WP_REST_Request $request ) {
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        if ( !isset( $params['session_id'], $params['key'] ) ) {
+            return new WP_Error( __METHOD__, 'session_id and key required', array( 'status' => 401 ) );
+        }
+
+        $user_id = get_current_user_id();
+
+        if ( !$user_id ) {
+            return new WP_Error( __METHOD__, 'you are not authenticated', array( 'status' => 400 ) );
+        }
+
+        $key = $params['key'];
+
+        $post_id = Zume_Connect_Endpoints::test_join_key( $key );
+
+        if ( !$post_id ) {
+            return new WP_Error( __METHOD__, 'invalid key', array( 'status' => 400 ) );
+        }
+
+        $training_group = DT_Posts::get_post( 'zume_plans', $post_id );
+
+        if ( $training_group['assigned_to']['id'] !== "$user_id" ) {
+            return new WP_Error( __METHOD__, 'you are not authorised', array( 'status' => 400 ) );
+        }
+
+        $meta_key = $params['session_id'];
+        $meta_value = $params['session_time'];
+
+        /* Check that meta_key is of type set_X_YY, where X = {a,b,c} and YY is numeric and 20 or less */
+        $key_parts = explode( '_', $meta_key );
+        if ( count( $key_parts ) !== 3 || !in_array( $key_parts[1], [ 'a', 'b', 'c' ] ) || intval( $key_parts[2] ) > 20 ) {
+            return new WP_Error( __METHOD__, 'wrong session id format', array( 'status' => 401 ) );
+        }
+
+        update_post_meta( $post_id, $meta_key, $meta_value );
+
+        return 1;
     }
 
     public function mark_session_complete( WP_REST_Request $request ) {

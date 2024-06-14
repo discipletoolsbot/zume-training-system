@@ -1,6 +1,9 @@
 .d-flex {
     display: flex;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 .grid-container {
     display: grid;
@@ -9,7 +12,7 @@
 }
 
 .d-block {
-    display: block;
+    display: block !important;
 }
 .d-none {
     display: none;

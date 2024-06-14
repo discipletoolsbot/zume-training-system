@@ -127,6 +127,11 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                     'resources' => esc_url( zume_resources_url() ),
                 ],
             ]) ?>][0]
+            const zumeTrainingPieces = [<?php echo json_encode([
+                5 => Zume_Course_Builder::pieces( 'intensive', $this->lang_code ),
+                10 => Zume_Course_Builder::pieces( '10', $this->lang_code ),
+                20 => Zume_Course_Builder::pieces( '20', $this->lang_code ),
+            ]) ?>][0]
         </script>
 
         <?php

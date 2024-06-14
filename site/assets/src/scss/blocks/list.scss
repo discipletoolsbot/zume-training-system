@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    padding: spacing(0) spacing(1);
+    padding: spacing(0) spacing(0);
     border-block: 2px solid color('gray-100');
     gap: spacing(0);
 
@@ -27,6 +27,9 @@
         line-height: 1;
     }
 
+    &[data-no-flex] {
+        display: block;
+    }
 
     &[data-depth]:not([data-depth="0"]) {
         --child-margin: #{spacing(1)};

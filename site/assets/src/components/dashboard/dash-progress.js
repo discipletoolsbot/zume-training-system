@@ -2,7 +2,8 @@ import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
-import { zumeRequest } from '../../js/scripts';
+import { zumeRequest } from '../../js/zumeRequest';
+import { zumeAttachObservers } from '../../js/zumeAttachObservers';
 
 export class DashProgress extends DashPage {
     static get properties() {
@@ -12,6 +13,7 @@ export class DashProgress extends DashPage {
             filterStatus: { type: String, attribute: false },
             hostProgress: { type: Object, attribute: false},
             errorMessage: { type: String, attribute: false },
+            openStates: { type: Object, attribute: false },
         };
     }
 
@@ -39,6 +41,12 @@ export class DashProgress extends DashPage {
         this.renderListItem = this.renderListItem.bind(this)
         this.closeInfoModal = this.closeInfoModal.bind(this)
 
+    }
+
+    firstUpdated() {
+        super.firstUpdated()
+
+        zumeAttachObservers()
     }
 
     updated() {
@@ -148,34 +156,18 @@ export class DashProgress extends DashPage {
     }
 
     toggleDetails(key) {
-        const collapseElement = this.querySelector(`#details-${key}`)
         const open = this.openStates[key]
-        const height = collapseElement.scrollHeight
-        const transitionDuration = '200'
 
         if (open === false) {
-            collapseElement.style.height = height + 'px'
-            collapseElement.style.transitionDuration = transitionDuration + 'ms'
-            collapseElement.dataset.state = 'opening'
-            this.openStates[key] = true
-
-            setTimeout(() => {
-                collapseElement.style.height = 'auto'
-                collapseElement.dataset.state = 'open'
-            }, transitionDuration);
+            this.openStates = {
+                ...this.openStates,
+                [key]: true
+            }
         } else {
-            /* Add back the height so we can transition back to 0 */
-            collapseElement.style.height = height + 'px'
-            collapseElement.dataset.state = 'closing'
-            this.openStates[key] = false
-
-            /* Set the height to 0 after this function has finished so that we key the transition correctly */
-            setTimeout(() => {
-                collapseElement.style.height = '0'
-            }, 10)
-            setTimeout(() => {
-                collapseElement.dataset.state = 'closed'
-            }, transitionDuration);
+            this.openStates = {
+                ...this.openStates,
+                [key]: false,
+            }
         }
     }
 
@@ -192,7 +184,7 @@ export class DashProgress extends DashPage {
             <li class="switcher | switcher-width-30 list__item tight" @click=${() => this.toggleDetails(key)} role="button">
                 <div>
                     <h2 class="h5 bold m0">${title}</h2>
-                    <div class="collapse" id="details-${key}" data-state="closed">
+                    <div class="collapse" id="details-${key}" ?data-open=${this.openStates[key]}>
                         <div class="stack--2 mt--2">
                             <p class="f--1 gray-700">${description}</p>
                             <div class="cluster">

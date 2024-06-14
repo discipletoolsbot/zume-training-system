@@ -116,6 +116,9 @@ ul[role="list"] {
     top: 0;
     line-height: 0.9;
   }
+  &[data-brand-light] li:before {
+    color: color('brand-light');
+  }
   &.check-list li:before {
     font-family: 'Zume-Icons-Square';
     content: "\e900";

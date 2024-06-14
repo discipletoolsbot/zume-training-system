@@ -4,7 +4,7 @@ import { dashRoutes } from './dash-routes';
 import { repeat } from 'lit/directives/repeat.js'
 import { Wizards } from '../wizard/wizard-constants';
 import { RouteNames } from './routes';
-import { zumeRequest } from '../../js/scripts';
+import { zumeRequest } from '../../js/zumeRequest';
 
 /**
  * This highest level of the dashboard should mostly be focussed on the routing

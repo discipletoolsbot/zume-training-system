@@ -2,7 +2,7 @@ import { html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
-import { zumeRequest } from '../../js/scripts';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class DashPlans extends DashPage {
     static get properties() {

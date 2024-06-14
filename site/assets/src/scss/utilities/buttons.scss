@@ -142,6 +142,7 @@ a {
 
     &[aria-disabled="true"],
     &.disabled {
+        --btn-color: #{color('white')};
         --btn-bg-color: #{color('gray-700')};
         --btn-border-color: #{color('gray-700')};
         --btn-hover-bg-color: #{color('gray-600')};

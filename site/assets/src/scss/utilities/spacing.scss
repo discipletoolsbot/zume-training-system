@@ -30,9 +30,15 @@
     .py-#{$i} {
         padding-block: spacing($i);
     }
+    .pt-#{$i} {
+        padding-block-start: spacing($i);
+    }
 }
 .pt-4 {
     padding-block-start: spacing(4);
+}
+.ps-2 {
+    padding-inline-start: spacing(2);
 }
 
 .p0 {

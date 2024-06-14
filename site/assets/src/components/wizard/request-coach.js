@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { Steps } from './wizard-constants';
 import { WizardStateManager } from './wizard-state-manager';
-import { zumeRequest } from '../../js/scripts';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class RequestCoach extends LitElement {
     static get properties() {

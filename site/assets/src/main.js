@@ -1,7 +1,9 @@
 import './scss/styles.scss'
 
-import './js/scripts'
-import './js/zumeStorage'
+import './js/DataWatcher'
+import './js/zumeAttachObservers'
+import './js/zumeRequest'
+import './js/ZumeStorage'
 
 import './components/wizard/index'
 import './components/dashboard/index'
