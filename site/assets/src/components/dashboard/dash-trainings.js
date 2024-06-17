@@ -292,6 +292,7 @@ export class DashTrainings extends DashPage {
         zumeRequest.put(`plan/${this.training.join_key}`, { title })
             .then((result) => {
                 this.training.title = title
+                this.dispatchEvent(new CustomEvent('training:changed', { bubbles: true }))
             })
             .finally(() => {
                 this.isEditingTitle = false
