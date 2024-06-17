@@ -1,9 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-21 22:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"PO-Revision-Date: 2024-06-10 12:41+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Faroese <https://translate.disciple.tools/projects/zume-"
 "training/zume-training-system/fo/>\n"
 "Language: fo\n"
@@ -35,8 +36,9 @@ msgstr "OSS"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:108
-#: site/parts/nav.php:19 site/parts/nav.php:71
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "Yvirlit"
 
@@ -61,7 +63,7 @@ msgstr "Venjing"
 msgid "Metrics"
 msgstr ""
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr "Samfelag"
 
@@ -78,14 +80,14 @@ msgstr "Goymsla"
 msgid "Global Map"
 msgstr ""
 
-#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "Gud brúkar vanlig fólk"
 
-#: globals.php:1908 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,46 +95,46 @@ msgstr ""
 "Vit fara at síggja, hvussu Gud brúkar vanlig fólk, sum gera okkurt vanligt, "
 "men við stórari ávirkan."
 
-#: globals.php:1918 site/course/course-content.php:3161
-#: site/course/course-content.php:3179
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "Løtt lýsing av lærisveinaskapi og samkomuni"
 
-#: globals.php:1919 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr ""
 "Kjanin í at vera ein lærisveinur, at gera lærisveinar, og hvat ein samkoma er"
 
-#: globals.php:1920 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
 msgstr ""
 
-#: globals.php:1929 site/course/course-content.php:3162
-#: site/course/course-content.php:3180
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "At anda andaliga er at hoyra og akta Gud"
 
-#: globals.php:1930 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
 "At vera ein lærisveinur, merkir at vit hoyra frá Gudi og at vit akta Gud."
 
-#: globals.php:1931 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "At anda andaliga er at hoyra og akta Gud"
 
-#: globals.php:1940 globals.php:1942
+#: globals.php:1969 globals.php:1971
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "S.O.A.P.S. Bíbliulesnaður"
 
-#: globals.php:1941 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -140,14 +142,14 @@ msgstr ""
 "Eitt amboð at granska Bíbliuna eftir, sum hjálpir tær at skilja, akta og "
 "deila Guds orð."
 
-#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "Ábyrgdarbólkur ella Ábyrgdarpersónur"
 
-#: globals.php:1952 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -156,11 +158,11 @@ msgstr ""
 "Eitt amboð til 2-3 fólk av sama kyni, sum møtast vikuliga at eggja hvønn "
 "annan í tí, sum gongur væl og opinbera tað, sum tørvar at vera rætta inn."
 
-#: globals.php:1962
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Geraralívsstílur ella Hoyraralívsstílur"
 
-#: globals.php:1963 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -168,28 +170,28 @@ msgstr ""
 "Vit fara at læra um 4 mátar, sum Gud brúkar sínar fylgjarar at verða meir "
 "sum Jesus."
 
-#: globals.php:1964
+#: globals.php:1993
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "Gerarar ella Hoyrarar"
 
-#: globals.php:1973 globals.php:1975
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "Hvussu tú kanst biðja í ein tíma"
 
-#: globals.php:1974 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Hygg hvussu lætt tað er at brúka ein tíma í bøn."
 
-#: globals.php:1984
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "At hava Samband - Listi við 100"
 
-#: globals.php:1985 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "Eitt amboð, sum hjálpir tær at styrkja tíni sambond."
 
-#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -200,13 +202,13 @@ msgstr "Eitt amboð, sum hjálpir tær at styrkja tíni sambond."
 msgid "List of 100"
 msgstr "Listin við 100"
 
-#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Andalig Fíggjarstýring"
 
-#: globals.php:1996 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -214,26 +216,26 @@ msgstr ""
 "Lærið, hvussu Guds fíggjarsýring er øðrvísi enn okkara. Gud ger íløgur í "
 "tey, sum er trúføst vit tí, tey longu hava fingið."
 
-#: globals.php:2006
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "Evangeliið og hvussu tú kanst deila tað"
 
-#: globals.php:2007 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr "Lærið at deila Evangeliið frá byrjan av mannaættnini heilt til endan."
 
-#: globals.php:2008
+#: globals.php:2037
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "Ven teg í at deila tín vitnisburð (45 min)"
 
-#: globals.php:2017
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "Dópur og hvussu tú gert tað"
 
-#: globals.php:2018 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -243,18 +245,18 @@ msgstr ""
 "teir til navn Faðirsins, Sonarins og Heilaga Andans...\" Lærið, hvussu tit "
 "kunnu gera hetta."
 
-#: globals.php:2019 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "Dópur"
 
-#: globals.php:2028
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "Fyrireika tín vitnisburð í 3 min."
 
-#: globals.php:2029 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -262,18 +264,18 @@ msgstr ""
 "Lær at deila tín vitnisburð upp á 3 minuttir, við at deila, hvussu Gud hevur "
 "ávirkað títt lív."
 
-#: globals.php:2030
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr "Tín vitnisburður í 3 minuttir"
 
-#: globals.php:2039 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Visjónin - Størsta Signingin"
 
-#: globals.php:2040 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
@@ -281,35 +283,35 @@ msgstr ""
 "Lær ein lættan máta at - ikki bara gera ein lærisvein - men heilar andaligar "
 "familjur, sum margfaldast inn í ættarliðini, sum koma."
 
-#: globals.php:2041
+#: globals.php:2070
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "Stórsta Signingin"
 
-#: globals.php:2050
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "Dunnuunga lærisveinaskapur - Leið beinanvegin"
 
-#: globals.php:2051
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "Lærið, hvat dunnuungar og lærisveinaskapur hava til felags."
 
-#: globals.php:2052 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Dunnuunga Lærisveinaskapur"
 
-#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 #, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Eygu at sígga, hvar Guds ríki ikki er"
 
-#: globals.php:2062 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -317,11 +319,11 @@ msgstr ""
 "Byrjið at síggja, hvar Guds ríki IKKI er. Her ynskir Gud vanliga, at vit "
 "fara til verka."
 
-#: globals.php:2072
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "Kvøldmáltíð Harrans og hvussu hon kann leiðast"
 
-#: globals.php:2073
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -329,7 +331,7 @@ msgstr ""
 "Hetta er ein einfaldur máti at hátíðarhalda okkara inniliga samband við "
 "Jesus. Lærið at hátíðarhalda soleiðis."
 
-#: globals.php:2074 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -337,11 +339,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "Kvøldmáltíð Harrans"
 
-#: globals.php:2083
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "Bønargonga og hvussu tú gert"
 
-#: globals.php:2084
+#: globals.php:2113
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -350,18 +352,18 @@ msgstr ""
 "Tað er ein einfaldur máti at akta boð Guds um at biðja fyri øðrum. Og tað er "
 "akkurát tað, sum orðið sigur - bið til Gud, meðan tú gongur runt!"
 
-#: globals.php:2085 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "Bønargonga"
 
-#: globals.php:2094
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "Eitt friðarfólk og hvussu tú finnur eitt"
 
-#: globals.php:2095
+#: globals.php:2124
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
@@ -369,17 +371,17 @@ msgstr ""
 "Lær, hvør eitt friðarfólk kann vera, og hvussu tú veitst, tá tú hevur funnið "
 "eitt."
 
-#: globals.php:2096 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "Friðarfólk"
 
-#: globals.php:2105
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "Trúfesti er betur enn vitan"
 
-#: globals.php:2106
+#: globals.php:2135
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -388,32 +390,32 @@ msgstr ""
 "Tað, sum lærisveinar vita er týdningarmikið - men tað er týdningarmest, hvat "
 "teir GERA við tað, sum teir vita."
 
-#: globals.php:2107 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "Trúfesti"
 
-#: globals.php:2116
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "BLESS bønarmynstrið"
 
-#: globals.php:2117 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "Ven eina lætta ramsu, sum minnir teg á, hvussu tú kanst biðja fyri øðrum."
 
-#: globals.php:2118 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "Ven B.L.E.S.S. bøn (15min)"
 
-#: globals.php:2127
+#: globals.php:2156 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "Møtiætlan hjá 3/3 Bólkum"
 
-#: globals.php:2128
+#: globals.php:2157
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -424,35 +426,35 @@ msgstr ""
 "vaksa, hava samfelag og at venja seg at akta og deila, tað, tey hava lært. "
 "Soleiðis er 3/3 Bólkurin ikki bara ein smábólkur, men er ein einføld samkoma."
 
-#: globals.php:2129
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr "3/3 Bólkur"
 
-#: globals.php:2138
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "Venjingaringur sum mennir lærisveinar"
 
-#: globals.php:2139 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "Venjið tykkum í Venjingaringinum. Hvussu kunnu tit brúka hann í "
 "lærisveinavenjingini?"
 
-#: globals.php:2140 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "Venjingaringur"
 
-#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "Leiðslubólkar"
 
-#: globals.php:2150 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
@@ -460,12 +462,12 @@ msgstr ""
 "Ein leiðslubólkur er ein máti, hjá teimum, sum kenna seg kallaði at leiða, "
 "kunnu menna sína leiðslu við at venja seg at tæna."
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
-#: site/course/course-content.php:5175
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "Væntað vøkstur við óskipaðari tilgongd"
 
-#: globals.php:2161
+#: globals.php:2190
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -474,11 +476,12 @@ msgstr ""
 "Síggið, hvusus lærisveinaskapur ikki noyðist at vera ein skipa tilgongd. "
 "Nógv kann henda samstundis."
 
-#: globals.php:2171 site/course/course-content.php:2770
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "Ferðin í margfaldan hevur týdning"
 
-#: globals.php:2172 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -486,31 +489,31 @@ msgstr ""
 "Margfaldan er týdningarmikil, og at margfalda skjótt hevur størri týdning. "
 "Síggið, hví ferð er týdningarmikil."
 
-#: globals.php:2173 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "Ferð"
 
-#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "Altíð við í tveimum samkomum"
 
-#: globals.php:2183
+#: globals.php:2212
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "Lær at akta Boð Jesusar við at fara OG verða"
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Tríggjar mánaðar ætlan"
 
-#: globals.php:2195
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -518,7 +521,7 @@ msgstr ""
 "Ger og deil, hvussu tú fert at fremja Zúme amboðini næstu tríggjar "
 "mánaðirnar."
 
-#: globals.php:2205 globals.php:2207
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -529,14 +532,14 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "Eftirlitslistin"
 
-#: globals.php:2206 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -544,14 +547,14 @@ msgstr ""
 "Eitt gott amboð til eina skjóta meting um egnar styrkir og veikleikar í mun "
 "til at gera lærisveinar, sum margfalda."
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "Leiðsla í netverkum"
 
-#: globals.php:2217 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -559,14 +562,14 @@ msgstr ""
 "Lærið, hvussu fleiri samkomur hava samfelag og liva saman sum ein víðkað, "
 "andalig familja."
 
-#: globals.php:2227 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "Javnbjóðis mentor bólkar"
 
-#: globals.php:2228 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -576,15 +579,15 @@ msgstr ""
 "eisini meginreglunum í 3/3-amboðnum, har vit kunnu meta um, hvussu tað "
 "gongur andaliga og við tí, sum Gud ger í grannalagnum."
 
-#: globals.php:2229 site/dashboard/dashboard.php:273
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr "Javnbjóðis vegleiðing"
 
-#: globals.php:2238 globals.php:2240
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr "\"Fýra økir\"-amboðið"
 
-#: globals.php:2239
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -594,14 +597,14 @@ msgstr ""
 "leiðslubólkum, sum hugleiða um, hvussu tað gongur og hvussu Guds Ríki "
 "mennist."
 
-#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "Kortleggja ættarlið"
 
-#: globals.php:2250
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -609,29 +612,29 @@ msgstr ""
 "At Kortlegga ættarlið er eitt annað lætt amboð, sum hjálpir leiðarum at "
 "skilja vøksturin."
 
-#: globals.php:2260
+#: globals.php:2289
 msgid "3-Circles Gospel Presentation"
 msgstr ""
 
-#: globals.php:2261
+#: globals.php:2290
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
 
-#: globals.php:2262
+#: globals.php:2291
 msgid "3-Circles"
 msgstr ""
 
-#: globals.php:6993 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: globals.php:7022 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "Lat aftur"
 
-#: globals.php:7195
+#: globals.php:7224
 msgid "No Results"
 msgstr ""
 
@@ -989,7 +992,7 @@ msgid ""
 msgstr ""
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:271 site/profile/profile.php:153
+#: site/dashboard/wizard.php:287 site/profile/profile.php:153
 msgid "Save"
 msgstr "Goym"
 
@@ -1434,6 +1437,7 @@ msgstr ""
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr "S.O.A.P.S. Bíbliulesnaður"
 
@@ -1524,7 +1528,7 @@ msgid "Application"
 msgstr "Stað"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr "Bøn"
 
@@ -2041,7 +2045,7 @@ msgstr ""
 "Bjóða øðrum at vera saman við tær á hesum týdningarmikla degi, tá tú "
 "hátíðarheldur at tú hevur sagt \"JA\" við Jesus."
 
-#: site/course/course-content.php:1016
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
 msgid "The Spiritual Economy"
 msgstr "Andalig Fíggjarstýring"
@@ -2839,7 +2843,7 @@ msgid ""
 msgstr ""
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:201 site/pages/about.php:254
+#: site/dashboard/wizard.php:217 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
@@ -3645,8 +3649,7 @@ msgid "NEXT STEP"
 msgstr ""
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
-#: site/parts/nav.php:94
+#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
 msgstr "Samfelag"
@@ -3684,8 +3687,9 @@ msgid "Download the offline slides here"
 msgstr ""
 
 #: site/course/presenter.php:166
+#, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "Leinkja"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3712,23 +3716,35 @@ msgid "Exit Course"
 msgstr "Skeið"
 
 #: site/course/presenter.php:192
-msgid "Switch Views"
+msgid "Slide View"
 msgstr ""
 
-#: site/course/presenter.php:193
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+msgid "List View"
+msgstr ""
+
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Next slide"
 msgstr "Næsti partur"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Previous slide"
 msgstr "Bakka"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:196
 #, fuzzy
 msgid "Session"
 msgstr "1. partur"
+
+#: site/course/presenter.php:198
+msgid "View Transcript"
+msgstr ""
+
+#: site/course/presenter.php:199
+msgid "View Activity"
+msgstr ""
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
@@ -3740,9 +3756,9 @@ msgid "Something went wrong with your checkin process."
 msgstr "Ups. Okkurt gekk galið. Royn aftur!"
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
-#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
-#: utilities/apis/cta-api.php:338
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:341
 msgid "Congratulations!"
 msgstr ""
 
@@ -3766,7 +3782,7 @@ msgstr "Zume framgongd"
 msgid "%d%%"
 msgstr ""
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
 msgid "Done"
 msgstr ""
 
@@ -3810,10 +3826,6 @@ msgstr "Rita út"
 msgid "Filter"
 msgstr ""
 
-#: site/dashboard/dashboard.php:166
-msgid "List View"
-msgstr ""
-
 #: site/dashboard/dashboard.php:167
 msgid "Grid View"
 msgstr ""
@@ -3836,18 +3848,18 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
-#: site/dashboard/wizard.php:210 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:226 site/profile/profile.php:116
 msgid "Name"
 msgstr "Navn"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
-#: site/dashboard/wizard.php:180 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "Telefon"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
@@ -3857,7 +3869,7 @@ msgstr "Teldupostur"
 msgid "Communications Email"
 msgstr ""
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "Bygd/Býur"
@@ -3867,8 +3879,8 @@ msgstr "Bygd/Býur"
 msgid "No Locations found"
 msgstr "Eingin brúkari funnin"
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3922,8 +3934,8 @@ msgstr "Leinkja til"
 msgid "Getting Started"
 msgstr "Byrja"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
-#: utilities/apis/cta-api.php:252
+#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "Zume vangi"
@@ -3932,7 +3944,7 @@ msgstr "Zume vangi"
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr ""
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
 #, fuzzy
 msgid "Join or create a training group"
 msgstr "Ver vertur fyri venjingunum"
@@ -3953,7 +3965,7 @@ msgstr "1 Venjing"
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "Ger tín egna lista við 100"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
 #, fuzzy
 msgid "Join Training Group"
 msgstr "Ver vertur fyri venjingunum"
@@ -4125,8 +4137,9 @@ msgstr "1. partur"
 msgid "Intensive Course"
 msgstr "1. partur"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
+#: utilities/apis/cta-api.php:386
 msgid "Join"
 msgstr ""
 
@@ -4176,8 +4189,7 @@ msgstr ""
 msgid "Edit time"
 msgstr ""
 
-#: site/dashboard/dashboard.php:253 utilities/apis/cta-api.php:235
-#: utilities/apis/cta-api.php:237
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Invite Friends"
 msgstr "Bjóða nøkrum vinum við"
@@ -4237,7 +4249,7 @@ msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
 msgstr ""
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
 #, fuzzy
 msgid "3 month plan"
 msgstr "Tríggjar mánaðar ætlan"
@@ -4247,131 +4259,127 @@ msgstr "Tríggjar mánaðar ætlan"
 msgid "You have joined the community"
 msgstr "Samfelag"
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
 
-#: site/dashboard/dashboard.php:271
-#, fuzzy
-msgid "Zúme Community"
-msgstr "Samfelag"
-
-#: site/dashboard/dashboard.php:272
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
 msgid ""
-"Zúme is a community of practice and encouragement for those who want to see "
-"disciple making movements. The Zúme vision is to see one trainee and two "
-"simple churches for every 5,000 people in the United States and 50,000 "
-"people globally."
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
 msgstr ""
 
-#: site/dashboard/dashboard.php:274
-msgid ""
-"Connect with others like you who want to see a disciple making movement in "
-"their area. Share your experience with others, and learn from others who are "
-"discovering new things."
-msgstr ""
-
-#: site/dashboard/dashboard.php:275
-msgid "Encouragement"
-msgstr ""
-
-#: site/dashboard/dashboard.php:276
-msgid ""
-"Hear news about disciple making movements in your region and your wider "
-"country, get reports of  progress, and get connected to online and face-to-"
-"face gatherings."
-msgstr ""
-
-#: site/dashboard/dashboard.php:277
-#, fuzzy
-msgid "Free Tools"
-msgstr "Amboð"
-
-#: site/dashboard/dashboard.php:278
-msgid ""
-"Access free tools for tracking disciple-making and church planting in your "
-"area. Get a map to cast vision for saturating your city with multiplying "
-"disciples and churches."
-msgstr ""
-
-#: site/dashboard/dashboard.php:279
-msgid "Join for Free"
-msgstr ""
-
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 msgid "Join key"
 msgstr ""
 
-#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
 msgid "Not a recognized code. Please check the number."
 msgstr ""
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:275
 msgid "You are not authorized to access this page"
 msgstr ""
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "Okkurt er ikki rætt útfylt."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:277
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:278
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:279
 msgid "100 Hour Map"
 msgstr ""
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid "Training vision map"
 msgstr "Venjing"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "Einfaldar samkomur"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:282
+#, fuzzy
+msgid "No date"
+msgstr "Dagfør"
+
+#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: zume-training-system.php:318
+#, fuzzy
+msgid "Whatsapp"
+msgstr "WhatsApp"
+
+#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: zume-training-system.php:319
+#, fuzzy
+msgid "Signal"
+msgstr "Melda til"
+
+#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: zume-training-system.php:320
+msgid "Telegram"
+msgstr ""
+
+#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#, fuzzy
+msgid "Facebook Messenger"
+msgstr "Facebook"
+
+#: site/dashboard/dashboard.php:292
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr "Eg fari at deila mín vitnisburð og evangeliið við hesi:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Eg farið at bjóða øðrum at byrja ein ábyrgdarbólk saman við mær:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4379,11 +4387,11 @@ msgstr ""
 "Eg fari at avbjóða hesum í at byrja ein ábyrgdarbólk, og at læra tey, hvussu "
 "tey kunnu gera:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:295
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Eg fari at bjóða hesum við í ein 3/3  bólk saman við mær:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4391,7 +4399,7 @@ msgstr ""
 "Eg fari at avbjóða hesum í at byrja ein 3/3 Bólk og læra tey, hvussu tey "
 "kunnu gera:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4400,16 +4408,16 @@ msgstr ""
 "Eg fari at bjóða hesum at taka lut í einum 3/3 Bólki - antin ein "
 "\"Vónarbólk\" ella \"Granskingarbólk\" (Sí ískoyti í Zúme handbókini)"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Eg fari at bjóða hesum at koma á Bønargongu saman við mær:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:299
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Eg fari á Bønargongu einaferð um (dagin / vikuna / mánaðin)"
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4418,501 +4426,512 @@ msgstr ""
 "Eg fari at læra hesi í at deila sín vitnisburð og evangeliið, og at gera ein "
 "Lista við 100 fólkum, sum tey hava samband við."
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "Eg fari at eggja hesum í at brúka Bønarringin regluliga:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:302
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "Eg fari at brúka Bønarringin einaferð um (dagin / vikuna / mánaðin)"
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 "Eg fari at bjóða hesum at vera við í einum Leiðslubólki, sum ynskir at leiða:"
 
-#: site/dashboard/dashboard.php:306
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Eg fari at eggja hesum til at taka Zúme skeiðið."
 
-#: site/dashboard/dashboard.php:307
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Aðrar viðmerkingar:"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:151
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
 msgstr ""
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:152
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
 msgstr ""
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
 msgid "Wizard is already completed"
 msgstr ""
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:154
 msgid "Get back home"
 msgstr ""
 
-#: site/dashboard/wizard.php:153 site/login/login-template.php:408
+#: site/dashboard/wizard.php:155 site/login/login-template.php:408
 msgid "Back"
 msgstr ""
 
-#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "Næsta"
 
-#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
 msgid "Skip"
 msgstr ""
 
-#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "Liðugt"
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:160
 #, fuzzy
 msgid "No locations found"
 msgstr "Eingin brúkari funnin"
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:163
+#, fuzzy
+msgid "Zúme Community"
+msgstr "Samfelag"
+
+#: site/dashboard/wizard.php:164
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+
+#: site/dashboard/wizard.php:166
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+
+#: site/dashboard/wizard.php:167
+msgid "Encouragement"
+msgstr ""
+
+#: site/dashboard/wizard.php:168
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+
+#: site/dashboard/wizard.php:169
+#, fuzzy
+msgid "Free Tools"
+msgstr "Amboð"
+
+#: site/dashboard/wizard.php:170
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+
+#: site/dashboard/wizard.php:171
+msgid "Join for Free"
+msgstr ""
+
+#: site/dashboard/wizard.php:172
+#, fuzzy
+msgid "Successfully joined community"
+msgstr "Samfelag"
+
+#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
+#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#, fuzzy
+msgid "Something went wrong"
+msgstr "Ups. Okkurt gekk galið"
+
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid "Complete your profile"
 msgstr "Tín Vangi"
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:181
 msgid "What is your name?"
 msgstr ""
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:182
 msgid "What is your phone number?"
 msgstr ""
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:183
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
-
-#: site/dashboard/wizard.php:168
-#, fuzzy
-msgid "What city do you live in?"
-msgstr "Hvat læra vit um Gud?"
-
-#: site/dashboard/wizard.php:169
-msgid "This is your approximate location."
-msgstr ""
-
-#: site/dashboard/wizard.php:171
-#, fuzzy
-msgid "Privacy Policy"
-msgstr "Zume Privatlivspolitikkur"
-
-#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/wizard.php:177
-#, fuzzy
-msgid "What is your contact preference?"
-msgstr "Hvar býrt tú ella hvat postnummar hevur tú?"
-
-#: site/dashboard/wizard.php:179 zume-training-system.php:316
-msgid "Text"
-msgstr "Tekstur"
-
-#: site/dashboard/wizard.php:181 zume-training-system.php:318
-#, fuzzy
-msgid "Whatsapp"
-msgstr "WhatsApp"
-
-#: site/dashboard/wizard.php:182 zume-training-system.php:319
-#, fuzzy
-msgid "Signal"
-msgstr "Melda til"
-
-#: site/dashboard/wizard.php:183 zume-training-system.php:320
-msgid "Telegram"
 msgstr ""
 
 #: site/dashboard/wizard.php:184
 #, fuzzy
-msgid "Facebook Messenger"
-msgstr "Facebook"
+msgid "What city do you live in?"
+msgstr "Hvat læra vit um Gud?"
 
 #: site/dashboard/wizard.php:185
-msgid "What is your language preference?"
+msgid "This is your approximate location."
 msgstr ""
 
 #: site/dashboard/wizard.php:187
+#, fuzzy
+msgid "Privacy Policy"
+msgstr "Zume Privatlivspolitikkur"
+
+#: site/dashboard/wizard.php:193
+#, fuzzy
+msgid "What is your contact preference?"
+msgstr "Hvar býrt tú ella hvat postnummar hevur tú?"
+
+#: site/dashboard/wizard.php:195 zume-training-system.php:316
+msgid "Text"
+msgstr "Tekstur"
+
+#: site/dashboard/wizard.php:201
+msgid "What is your language preference?"
+msgstr ""
+
+#: site/dashboard/wizard.php:203
 msgid "How can we serve you?"
 msgstr "How can we serve you?"
 
-#: site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "Coaching"
 msgstr "Venjari"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:205
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "I need technical assistance"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:206
 msgid "Question about implementing the training"
 msgstr ""
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:207
 msgid "Question about the content"
 msgstr ""
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:208
 msgid "Help with what to do after starting a group"
 msgstr ""
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:210
 msgid "Please give a response to this question"
 msgstr ""
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:211
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr "Vit gera okkara besta at finna ein venjara tætt við hjá tær."
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:212
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:213
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "Tú hevur biðið um venjing"
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:214
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "Fá samband við ein venjara"
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "Set meg í samband við ein Venjara"
 
-#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
-#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
+#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 msgid "Please wait while we connect you"
 msgstr ""
 
-#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/wizard.php:205
+#: site/dashboard/wizard.php:221
 msgid "Joining Plan"
 msgstr ""
 
-#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
+#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
 msgid "The training link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:224
 #, php-format
 msgid "Successfully joined training %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:209
-#, fuzzy
-msgid "Something went wrong while joining the plan"
-msgstr "Okkurt gekk galið. Royn aftur."
-
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:227
 #, fuzzy
 msgid "Next Session Date"
 msgstr "Næsti partur"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:228
 #, fuzzy
 msgid "Start Time"
 msgstr "Byrja"
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:229
 msgid "Timezone"
 msgstr ""
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:232
 msgid "There are currently no public trainings available."
 msgstr ""
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:235
 msgid "Connecting with friend"
 msgstr ""
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:237
 msgid "The friend link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:238
 #, php-format
 msgid "Successfully connected with friend %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:223
-msgid "Something went wrong while connecting with friend"
-msgstr ""
-
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:242
 #, fuzzy
 msgid "Checking in"
 msgstr "Eftirlistlisti"
 
-#: site/dashboard/wizard.php:228
+#: site/dashboard/wizard.php:244
 msgid "The checkin link is broken. Please try again."
 msgstr ""
 
-#: site/dashboard/wizard.php:229
+#: site/dashboard/wizard.php:245
 msgid "Successfully checked in"
 msgstr ""
 
-#: site/dashboard/wizard.php:230
-#, fuzzy
-msgid "Something went wrong while checking in"
-msgstr "Ups. Okkurt gekk galið. Royn aftur!"
-
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:250
 #, fuzzy
 msgid "Create a training group"
 msgstr "Ger tín egna lista við 100"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:251
 #, fuzzy
 msgid "Join a public training group"
 msgstr "Ver vertur fyri venjingunum"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:252
 msgid "Skip for now"
 msgstr ""
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:253
 msgid "Choose your course format"
 msgstr ""
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:254
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "Partur"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "Partur"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "Partur"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:257
 msgid "Would you like to schedule your training?"
 msgstr ""
 
-#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "Ja"
 
-#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "Nei"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:260
 msgid "What time of day?"
 msgstr ""
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Morning"
 msgstr "Venjing"
 
-#: site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:262
 msgid "Afternoon"
 msgstr ""
 
-#: site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:263
 msgid "Evening"
 msgstr ""
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "Hvussu hevur tú tað nú?"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:265
 msgid "Every day"
 msgstr ""
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:266
 msgid "Once a week"
 msgstr ""
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:267
 msgid "Twice a month"
 msgstr ""
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:268
 msgid "Once a month"
 msgstr ""
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:269
 msgid "Other"
 msgstr "Annað"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:270
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "Hvat inniheldur venjingin?"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "My first training group"
 msgstr "Ver vertur fyri venjingunum"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "Hvat læra vit um Gud?"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "Hvat læra vit um Gud?"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:274
 msgid "This could be online or in person"
 msgstr ""
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "Review Schedule"
 msgstr "Venjingaringur"
 
-#: site/dashboard/wizard.php:260
+#: site/dashboard/wizard.php:276
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
 msgstr ""
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "Les"
 
-#: site/dashboard/wizard.php:262
+#: site/dashboard/wizard.php:278
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:279
 msgid "Incorrect number of sessions selected"
 msgstr ""
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:284
 #, php-format
 msgid "Set %s"
 msgstr ""
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
-#: site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Location"
 msgstr "Goym hetta staðið"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "Group Name"
 msgstr "Einki Navn"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "Group name"
 msgstr "Einki Navn"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Start Date"
 msgstr "Byrja"
 
-#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
+#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
 msgid "Time"
 msgstr ""
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:289
 msgid "Date"
 msgstr ""
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:290
 msgid "Summary"
 msgstr ""
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:291
 msgid "Clear Calendar"
 msgstr ""
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:292
 msgid "Add"
 msgstr "Legg afturat"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:293
 msgid "Add some dates to your schedule"
 msgstr ""
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Change"
 msgstr "Broyt"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:298
 msgid "Invite your friends to join your training"
 msgstr ""
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:299
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:300
 msgid "Join my zume plan"
 msgstr ""
 
-#: site/dashboard/wizard.php:285
+#: site/dashboard/wizard.php:301
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
 msgstr ""
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:307
 #, fuzzy
 msgid "Copy Invite"
 msgstr "Leinkja"
@@ -5010,7 +5029,7 @@ msgid "Create a Zume Account"
 msgstr ""
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -5522,13 +5541,13 @@ msgstr "Lurta og les samstundis"
 msgid "How to Follow Jesus"
 msgstr "Hvussu tú kanst fylgja Jesusi"
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 #, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr "Hygg at sjónbandinum við 4 sambondum í tínum nýggja lívi."
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 #, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
@@ -5537,19 +5556,19 @@ msgstr ""
 "Hesin parturin niðanfyri hjálpir tær at skilja, hvat ein lærisveinur er "
 "(Jesu eftirfylgjari)"
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr "Hvat er ein Jesu eftirfylgjari?"
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr "Hvat gera tey, sum fygjast við Jesusi?"
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr "Bíbliulesnaður"
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
@@ -5557,7 +5576,7 @@ msgstr ""
 "Tað, sum lærisveinar vita er týdningarmikið - men tað er týdningarmest, hvat "
 "teir GERA við tað, sum teir vita."
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
@@ -5567,11 +5586,11 @@ msgstr ""
 "vaksa, hava samfelag og at venja seg at akta og deila, tað, tey hava lært. "
 "Soleiðis er 3/3 Bólkurin ikki bara ein smábólkur, men er ein einføld samkoma."
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "Lær at akta Boð Jesusar við at fara OG verða"
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 #, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
@@ -5580,16 +5599,16 @@ msgstr ""
 "Hetta er ein einfaldur máti at hátíðarhalda okkara inniliga samband við "
 "Jesus. Lærið at hátíðarhalda soleiðis."
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr "Offur og Líðing"
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
 "Hvussu akti eg Jesus og hjálpi øðrum at fylgjast við Jesusi saman við mær?"
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -5603,19 +5622,19 @@ msgstr ""
 "alt, ið Eg havi boðið tykkum! Og Eg eri við tykkum allar dagar, líka til "
 "enda tíðarinnar.\""
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr "Matteus 28,18-20"
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr "At læra onnur at akta og at fylgja Jesusi saman við tær"
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "Lær hvat dunnuungar og lærisveinaskapur hava til felags"
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
@@ -5623,22 +5642,22 @@ msgstr ""
 "Síggið, hvusus lærisveinaskapur ikki noyðist at vera ein skipa tilgongd. "
 "Nógv kann henda samstundis."
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr "At tosa við fólk, TÚ KENNIR, um Jesus"
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr "At tosa við fólk, TÚ IKKI KENNIR, um Jesus"
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
 "Lær, hvør eitt friðarfólk kann vera, og hvussu tú veitst, tá tú hevur funnið "
 "eitt."
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 #, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
@@ -5647,7 +5666,7 @@ msgstr ""
 "Tað er ein einfaldur máti at akta boð Guds um at biðja fyri øðrum. Og tað er "
 "akkurát tað, sum orðið sigur - bið til Gud, meðan tú gongur runt!"
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 #, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
@@ -5875,8 +5894,8 @@ msgid ""
 msgstr ""
 
 #: site/pages/home.php:326
-#, fuzzy
-msgid "Zúme = Yeast"
+#, fuzzy, php-format
+msgid "%s = Yeast"
 msgstr "Zúme netverk"
 
 #: site/pages/home.php:332
@@ -6364,6 +6383,36 @@ msgstr ""
 msgid "Please enable javascript to use this page"
 msgstr ""
 
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+#, fuzzy
+msgid "Update Communication Preferences"
+msgstr "Hvar býrt tú ella hvat postnummar hevur tú?"
+
+#: site/profile/communication-preferences.php:81
+msgid "Recieve emails for:"
+msgstr ""
+
+#: site/profile/communication-preferences.php:84
+#, fuzzy
+msgid "Training session reminders"
+msgstr "Venjing"
+
+#: site/profile/communication-preferences.php:88
+msgid "Annual reporting reminders"
+msgstr ""
+
+#: site/profile/communication-preferences.php:92
+#, fuzzy
+msgid "Community updates"
+msgstr "Samfelag"
+
+#: site/profile/communication-preferences.php:96
+msgid "Encouragements"
+msgstr ""
+
 #: site/profile/profile.php:111
 msgid "Profile"
 msgstr "Skitsa"
@@ -6423,80 +6472,84 @@ msgstr ""
 msgid "Created Training!"
 msgstr "Ger tín egna lista við 100"
 
-#: utilities/apis/cta-api.php:236
-msgid "Invite friends to join you on your journey"
-msgstr ""
-
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:254
 msgid "Set your profile to help others know you"
 msgstr ""
 
-#: utilities/apis/cta-api.php:265
+#: utilities/apis/cta-api.php:268
 #, fuzzy
 msgid "Profile Set"
 msgstr "Skitsa"
 
-#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "Tríggjar Mánaðarætlanin"
 
-#: utilities/apis/cta-api.php:280
+#: utilities/apis/cta-api.php:283
 msgid "Create a 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:294
+#: utilities/apis/cta-api.php:297
 #, php-format
 msgid "%s unlocked"
 msgstr ""
 
-#: utilities/apis/cta-api.php:308
+#: utilities/apis/cta-api.php:311
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "Tríggjar mánaðar ætlan"
 
-#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
+#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "Tríggjar Mánaðarætlanin"
 
-#: utilities/apis/cta-api.php:323
+#: utilities/apis/cta-api.php:326
 msgid "Complete your 3 month plan to help you grow"
 msgstr ""
 
-#: utilities/apis/cta-api.php:337
+#: utilities/apis/cta-api.php:340
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "Tríggjar mánaðar ætlan"
 
-#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#: utilities/apis/cta-api.php:385
 #, fuzzy
-msgid "Join a Hub"
+msgid "Join the community"
 msgstr "Samfelag"
 
-#: utilities/apis/cta-api.php:368
-msgid "Join a hub to help you grow"
-msgstr ""
-
-#: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "Anda Andaliga"
 
-#: utilities/apis/cta-api.php:386
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "Anda Andaliga"
 
-#: utilities/apis/cta-api.php:400 utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "At halda samband - Listin við 100"
 
-#: utilities/apis/cta-api.php:401
+#: utilities/apis/cta-api.php:417
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "At halda samband - Listin við 100"
+
+#: utilities/apis/plans-api.php:134
+#, fuzzy, php-format
+msgctxt "My first training - username"
+msgid "My first training - %s"
+msgstr "Ver vertur fyri venjingunum"
+
+#: utilities/apis/plans-api.php:136
+#, fuzzy, php-format
+msgctxt "Training 2 - username"
+msgid "Training %1$d - %2$s"
+msgstr "Venjing"
 
 #: utilities/hooks/roles-and-permissions.php:56
 #, fuzzy
@@ -6534,6 +6587,12 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
 msgid "Share Zúme Page"
+msgstr ""
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+msgid "Zúme Annual Report"
 msgstr ""
 
 #: utilities/post-types/posttype-pieces.php:301
@@ -6612,21 +6671,29 @@ msgstr ""
 msgid "Messenger"
 msgstr ""
 
-#. Plugin Name of the plugin/theme
 #, fuzzy
-msgid "Zúme - Training System"
-msgstr "Zúme Venjing"
+#~ msgid "Something went wrong while joining the plan"
+#~ msgstr "Okkurt gekk galið. Royn aftur."
 
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr "https://github.com/ZumeProject/zume-training"
+#~ msgid "Something went wrong while checking in"
+#~ msgstr "Ups. Okkurt gekk galið. Royn aftur!"
 
-#. Description of the plugin/theme
 #, fuzzy
-msgid "Zume Training System"
-msgstr "Zúme Venjing"
+#~ msgid "Join a Hub"
+#~ msgstr "Samfelag"
+
+#, fuzzy
+#~ msgid "Zúme - Training System"
+#~ msgstr "Zúme Venjing"
+
+#, fuzzy
+#~ msgid "https://github.com/ZumeProject/zume-training-system"
+#~ msgstr "https://github.com/ZumeProject/zume-training"
+
+#, fuzzy
+#~ msgid "Zume Training System"
+#~ msgstr "Zúme Venjing"
 
 #, fuzzy
 #~ msgid "Submit Report"
@@ -6664,10 +6731,6 @@ msgstr "Zúme Venjing"
 #, fuzzy
 #~ msgid "Zúme Training Dashboard"
 #~ msgstr "Zúme venjingartilfar"
-
-#, fuzzy
-#~ msgid "Update Your Communication Preferences"
-#~ msgstr "Hvar býrt tú ella hvat postnummar hevur tú?"
 
 #~ msgid "Coaches"
 #~ msgstr "Venjarar"
@@ -9239,9 +9302,6 @@ msgstr "Zúme Venjing"
 
 #~ msgid "Facebook already linked with another account."
 #~ msgstr "Facebook er longu leinkja til eina aðra kontu."
-
-#~ msgid "Oops. Something went wrong."
-#~ msgstr "Ups. Okkurt gekk galið"
 
 #~ msgid "Great job! Here's your progress with this concept"
 #~ msgstr "Gott! So langt ert tú nú komin."

@@ -1,11 +1,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-21 22:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Arabic <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ar_JO/>\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"PO-Revision-Date: 2024-06-11 05:53+0000\n"
+"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
+"translate@weblate.org>\n"
+"Language-Team: Arabic <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ar_JO/>\n"
 "Language: ar_JO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,18 +37,21 @@ msgstr "‫أسئلة متكرّرة"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:108
-#: site/parts/nav.php:19 site/parts/nav.php:71
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "لوحة التحكّم"
 
 #: appearance/style-override/navigation.php:112
+#, fuzzy
 msgid "My Zúme"
-msgstr ""
+msgstr "زومي الخاص بي"
 
 #: appearance/style-override/navigation.php:117
+#, fuzzy
 msgid "Contacts"
-msgstr ""
+msgstr "جهات الاتصال"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
@@ -59,10 +63,11 @@ msgid "Trainings"
 msgstr "تدريب"
 
 #: appearance/style-override/navigation.php:135
+#, fuzzy
 msgid "Metrics"
-msgstr ""
+msgstr "المقاييس"
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr "الجماعة"
 
@@ -76,74 +81,76 @@ msgid "Stories"
 msgstr "تخزين"
 
 #: appearance/style-override/navigation.php:160
+#, fuzzy
 msgid "Global Map"
-msgstr ""
+msgstr "الخريطة العالمية"
 
-#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "يستخدم الله أشخاص عاديين. "
 
-#: globals.php:1908 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
 "سوف ترى كيف يستخدم الله أناس عاديون يقومون بأمور بسيطة لإحداث تأثيرًا كبيرًا. "
 
-#: globals.php:1918 site/course/course-content.php:3161
-#: site/course/course-content.php:3179
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "تعريف بسيط للتلميذ والكنيسة"
 
-#: globals.php:1919 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "اكتشف جوهر أن تكون تلميذًا، أن تصنع تلميذًا، وما هي الكنيسة. "
 
-#: globals.php:1920 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
+#, fuzzy
 msgid "Disciples and the Church"
-msgstr ""
+msgstr "التلاميذ والكنيسة"
 
-#: globals.php:1929 site/course/course-content.php:3162
-#: site/course/course-content.php:3180
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "التنفس الروحي هو استماع وطاعة الله"
 
-#: globals.php:1930 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "أن نكون تلميذًا يعني أن نستمع من الله وأن نطيع الله. "
 
-#: globals.php:1931 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "التنفس الروحي هو استماع وطاعة الله"
 
-#: globals.php:1940 globals.php:1942
+#: globals.php:1969 globals.php:1971
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "طريقة لقراءه الكتاب المقدس تدعى \".S.O.A.P.S\""
 
-#: globals.php:1941 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr "أداة لدرس كتاب يومي يساعدك على الفهم، الطاعة، ومشاركة كلمة الله. "
 
-#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "مجموعات المتابعة او المساءلة"
 
-#: globals.php:1952 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -152,11 +159,11 @@ msgstr ""
 "أداة لاثنين أو ثلاثة أشخاص من نفس الجنس للقاء أسبوعيًا وتشجيع بعضهم البعض في "
 "المناطق التي تسير على ما يرام والكشف عن المناطق التي تحتاج إلى تصحيح. "
 
-#: globals.php:1962
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "نمط حياة المستهلك مقابل المنتج "
 
-#: globals.php:1963 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -164,28 +171,28 @@ msgstr ""
 "سوف تكتشف الطرق الأربعة الرئيسية التي يجعل بها الله أتباعه اليوميين أشبه "
 "بيسوع. "
 
-#: globals.php:1964
+#: globals.php:1993
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "“منتجون لا مستهلكون فقط”"
 
-#: globals.php:1973 globals.php:1975
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "كيفية إمضاء ساعة في الصلاة"
 
-#: globals.php:1974 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "أنظر كم من السهل القضاء ساعة واحدة في الصلاة. "
 
-#: globals.php:1984
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "الإشراف العلائقي - قائمة المئة "
 
-#: globals.php:1985 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "أداة مصممة لكي تساعدك أن تكون مضيف جيد لعلاقاتك. "
 
-#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -196,13 +203,13 @@ msgstr "أداة مصممة لكي تساعدك أن تكون مضيف جيد ل
 msgid "List of 100"
 msgstr "\"قائمة المئة شخص\""
 
-#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "“الاقتصاد الروحي”"
 
-#: globals.php:1996 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -210,11 +217,11 @@ msgstr ""
 "تعلم كيف اقتصاد الله مختلف عن اقتصاد العالم. الله يستثمر أكثر في أولئك الذين "
 "كانوا أمناء بما سبق وأعطاهم. "
 
-#: globals.php:2006
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "الإنجيل وكيفية مشاركته"
 
-#: globals.php:2007 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -222,16 +229,16 @@ msgstr ""
 "تعلم طريقة لكي تشارك بها أخبار الله السارة من بدء البشرية حتى نهاية هذا "
 "الزمان. "
 
-#: globals.php:2008
+#: globals.php:2037
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "‫تدرّب على مشاركة ‫شهادتك (٤٥ دقيقة)"
 
-#: globals.php:2017
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "المعمودية وكيفية القيام به"
 
-#: globals.php:2018 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -240,36 +247,36 @@ msgstr ""
 "قال يسوع، \"فَاذْهَبُوا وَتَلْمِذُوا جَمِيعَ الأُمَمِ وَعَمِّدُوهُمْ بِاسْمِ الآب وَالابْنِ وَالرُّوحِ الْقُدُسِ."
 "\" تعلم كيف ية وضع هذا موضع التنفيذ."
 
-#: globals.php:2019 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "\"المعمودية\""
 
-#: globals.php:2028
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "أعدّ شهادة الثلاث دقائق"
 
-#: globals.php:2029 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr ""
 "تعلم كيف تشارك اختبارك خلال ثلاث دقائق من خلال مشاركة كيف أثّر يسوع في حياتك."
 
-#: globals.php:2030
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr "\"أخبر شهادتك في ٣ دقائق\""
 
-#: globals.php:2039 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "سكب رؤية أعظم بركة"
 
-#: globals.php:2040 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
@@ -277,35 +284,35 @@ msgstr ""
 "تعلم نمطًا بسيطًا من صنع ليس فقط من أتباع يسوع ولكن أيضًا عائلات روحية بأكملها "
 "التي تتضاعف لأجيال قادمة. "
 
-#: globals.php:2041
+#: globals.php:2070
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "“أعظم بركة”"
 
-#: globals.php:2050
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "تلمذة فرخ البطة- القيادة على الفور"
 
-#: globals.php:2051
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "تعلم ما علاقة فراخ البط مع صنع التلاميذ"
 
-#: globals.php:2052 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "“تلمذة فروخ البط”"
 
-#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 #, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "عيون لترى الأماكن التي تفتقد الى ملكوت الله"
 
-#: globals.php:2062 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -313,11 +320,11 @@ msgstr ""
 "ابدأ في رؤية أين ليس ملكوت الله. هذه هي أكثر الأماكن التي يريد الله العمل "
 "فيها. "
 
-#: globals.php:2072
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "العشاء الرباني وكيفية قيادته"
 
-#: globals.php:2073
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -325,7 +332,7 @@ msgstr ""
 "إنها طريقة بسيطة لكي نحتفل باتصالنا الحميمي وعلاقتنا المستمرّة مع يسوع. تعلم "
 "طريقة بسيطة لكي تحتفل. "
 
-#: globals.php:2074 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -333,11 +340,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "\"العشاء الرباني\""
 
-#: globals.php:2083
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "صلاة المسير وكيفية فعلها"
 
-#: globals.php:2084
+#: globals.php:2113
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -346,65 +353,65 @@ msgstr ""
 "إنها طريقة بسيطة لإطاعة وصية الله في الصلاة من أجل الآخرين. وهذا ما يبدو "
 "عليه الأمر - الصلاة لله أثناء التجول! "
 
-#: globals.php:2085 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "\"مسير الصلاة\""
 
-#: globals.php:2094
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "إنسان السلام وكيفية إيجاده"
 
-#: globals.php:2095
+#: globals.php:2124
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr "تعرف على إنسان السلام وكيف تعرف أنك عثرت عليه. "
 
-#: globals.php:2096 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "“إنسان السلام”"
 
-#: globals.php:2105
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "الأمانة أفضل من المعرفة"
 
-#: globals.php:2106
+#: globals.php:2135
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr "ما يعرفه التلاميذ مهم- لكن ما يصنعون بما يعرفونه أهم بكثير. "
 
-#: globals.php:2107 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "“الأمانة”"
 
-#: globals.php:2116
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "نمط صلاة المباركة"
 
-#: globals.php:2117 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "مارس أداة بسيطة للذاكرة لتذكيرك بطرق للصلاة من اجل الآخرين. "
 
-#: globals.php:2118 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "‫تدرّب على \"صلاة البركة .B.L.E.S.S\" (١٥ دقيقة)"
 
-#: globals.php:2127
+#: globals.php:2156 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "نمط لقاء مجموعة 3/3"
 
-#: globals.php:2128
+#: globals.php:2157
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -415,33 +422,33 @@ msgstr ""
 "وممارسة طاعة ومشاركة ما تعلموه. بهذه الطريقة، مجموعة 3/3 ليست مجموعة صغيرة "
 "فحسب، بل هي كنيسة بسيطة. "
 
-#: globals.php:2129
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr "“مجموعات ثلاثة على ثلاثة”"
 
-#: globals.php:2138
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "دورة تدريب للتلاميذ النامين"
 
-#: globals.php:2139 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr "تعلم دورة التدريب والنظر في كيفية تطبيقه في صنع التلميذ. "
 
-#: globals.php:2140 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "“دورة التدريب”"
 
-#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "“خلايا القيادة”"
 
-#: globals.php:2150 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
@@ -449,12 +456,12 @@ msgstr ""
 "خلية القيادة هي طريقة يمكن لأي شخص يشعر أنه مدعو للقيادة أن يطور قيادته من "
 "خلال ممارسة الخدمة. "
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
-#: site/course/course-content.php:5175
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "توقع نمو غير متسلسل"
 
-#: globals.php:2161
+#: globals.php:2190
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -463,48 +470,49 @@ msgstr ""
 "انظر كيف أنه ليس من الضرورة أن يكون صنع التلاميذ خطيًا. أشياء متعددة ممكن أن "
 "تحصل في الوقت عينه. "
 
-#: globals.php:2171 site/course/course-content.php:2770
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "سرعة المضاعفة مهمة"
 
-#: globals.php:2172 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr "التضاعف مهم والتضاعف بسرعة مهم أكثر بعد. أنظر لماذا السرعة مهمة."
 
-#: globals.php:2173 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "“السرعة”"
 
-#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "دائمًا جزء من كنيستين"
 
-#: globals.php:2183
+#: globals.php:2212
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "تعلم كيف تطيع وصايا يسوع من خلال الذهاب والبقاء."
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "“خطة الشهور الثلاثة”"
 
-#: globals.php:2195
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
 "قم بإنشاء ومشاركة خطتك لكيفية تطبيق أدوات زومي خلال الأشهر الثلاثة المقبلة. "
 
-#: globals.php:2205 globals.php:2207
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -515,14 +523,14 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "“قائمة التدريب”"
 
-#: globals.php:2206 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -530,28 +538,28 @@ msgstr ""
 "أداة قوية يمكنك استخدامها لتقيّم بسرعة نقاط القوة والضعف الخاصة بك عندما "
 "يتعلق الأمر بصنع تلاميذ يتضاعفون. "
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "“القيادة في شبكات عمل”"
 
-#: globals.php:2217 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
 "تعلم كيف تبقى الكنائس المتضاعفة متّصلة وتحيا حياة سويًا كعائلة روحية ممتدّة. "
 
-#: globals.php:2227 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "“مجموعات الرفقاء الناصحين”"
 
-#: globals.php:2228 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -560,15 +568,15 @@ msgstr ""
 "هذه مجموعة تتألف من أشخاص يقودون ويبدأون مجموعات 3/3. إنها أيضًا تتبع تنسيق "
 "3/3 وهي طريقة قوية لكي تقيّم الصحة الروحية لعمل الله في مجالك. "
 
-#: globals.php:2229 site/dashboard/dashboard.php:273
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr "“مجموعات الرفقاء الناصحين”"
 
-#: globals.php:2238 globals.php:2240
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr "أداة الأربع مجالات"
 
-#: globals.php:2239
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -577,14 +585,14 @@ msgstr ""
 "يُعد مخطط تشخيص الحقول الأربعة أداة بسيطة تستخدمها خلية القيادة للتأمل في "
 "حالة الجهود الحالية ونشاط المملكة من حولهم."
 
-#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "تخطيط الأجيال"
 
-#: globals.php:2250
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -592,39 +600,47 @@ msgstr ""
 "يُعد تخطيط الأجيال أداة بسيطة أخرى لمساعدة القادة في الحركة على فهم النمو من "
 "حولهم. "
 
-#: globals.php:2260
+#: globals.php:2289
+#, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "3- حلقات عرض الإنجيل"
 
-#: globals.php:2261
+#: globals.php:2290
+#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"إن العرض التقديمي للإنجيل المكون من ثلاث دوائر هو وسيلة لرواية الإنجيل "
+"باستخدام رسم توضيحي بسيط يمكن رسمه على قطعة من الورق."
 
-#: globals.php:2262
+#: globals.php:2291
+#, fuzzy
 msgid "3-Circles"
-msgstr ""
+msgstr "3-الدوائر"
 
-#: globals.php:6993 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: globals.php:7022 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "إغلاق"
 
-#: globals.php:7195
+#: globals.php:7224
+#, fuzzy
 msgid "No Results"
-msgstr ""
+msgstr "لا نتائج"
 
 #: site/activities/coaching-checklist-host.php:97
+#, fuzzy
 msgid "H.O.S.T."
-msgstr ""
+msgstr "يستضيف."
 
 #: site/activities/coaching-checklist-host.php:98
+#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "قم بالتقييم الذاتي لنفسك باستخدام سمع، أطاع، شارك، تدرب."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
@@ -679,42 +695,55 @@ msgstr "درّب"
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "هل سمعت عن هذه الأداة أو المفهوم؟"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"هل أطعت هذه الأداة أو المفهوم؟ إذا كانت أداة، فهل تدربت عليها بنفسي؟ إذا كان "
+"المفهوم، هل فكرت في كيفية تغيير وجهة نظرك؟"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"هل قمت بمشاركة هذه الأداة أو المفهوم؟ إذا كانت أداة، هل أوضحت لأي شخص كيفية "
+"استخدام هذه الأداة؟ إذا كان لديك مفهوم، هل شاركت هذا المفهوم مع أي شخص؟"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"هل قمت بتدريب الآخرين على مشاركة هذه الأداة أو المفهوم؟ إذا كانت أداة، فهل "
+"قمت بتدريب شخص ما على مشاركة الأداة مع شخص آخر؟ إذا كان المفهوم، هل قمت "
+"بتدريب شخص ما على مشاركة المفهوم مع شخص آخر؟"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
+#, fuzzy
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
+#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr ""
+msgstr "قم بتدريب الآخرين باستخدام النموذج والمساعدة والمراقبة والمغادرة."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
@@ -728,8 +757,9 @@ msgstr "اسأل نفسك"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Model"
-msgstr ""
+msgstr "نموذج"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -737,8 +767,9 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Assist"
-msgstr ""
+msgstr "يساعد"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -748,8 +779,9 @@ msgstr ""
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:204
+#, fuzzy
 msgid "Watch"
-msgstr ""
+msgstr "يشاهد"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -757,12 +789,14 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Leave"
-msgstr ""
+msgstr "يترك"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -770,10 +804,15 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"النمذجة هي ببساطة تقديم مثال لممارسة أو أداة. هذا هو أقصر جزء من دورة "
+"التدريب. عادة ما يجب القيام به مرة واحدة فقط. إنه ببساطة خلق وعي بوجود "
+"ممارسة أو أداة وإعطاء فكرة عامة عن شكلها. النمذجة بشكل متكرر ليست وسيلة "
+"فعالة لتجهيز شخص ما."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -783,10 +822,17 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"المساعدة هي السماح للمتعلم بممارسة المهارة. وهذا يستغرق وقتًا أطول من مرحلة "
+"النمذجة. يتطلب \"الإمساك باليد\" من جانب المرشد. يجب أن يكون المرشد توجيهيًا "
+"وأن يقوم بدور نشط في تدريب المتعلم. لا تستمر هذه المرحلة حتى يصبح المتعلم "
+"مؤهلاً تمامًا، ولكن فقط حتى يفهم أساسيات المهارة. إذا استمرت هذه المرحلة لفترة "
+"طويلة جدًا، فسيتطور اعتماد المتعلم على المرشد ولن يتقدم أبدًا إلى الكفاءة "
+"الكاملة."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -794,29 +840,40 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"المشاهدة هي أطول مرحلة. أنها تنطوي على مزيد من الاتصال غير المباشر مع "
+"المتعلم. ويسعى إلى تطوير الكفاءة الكاملة في جميع جوانب المهارة. ويجوز أن "
+"تكون عشرة أضعاف أو أكثر ما دامت المرحلتان الأوليتان مجتمعتين. مع تقدم "
+"المتعلم في المهارة، قد يصبح الاتصال بالمرشد أقل انتظامًا وأكثر تخصيصًا."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"المغادرة هي نوع من التخرج عندما يصبح المتعلم نظيرًا للمعلم. قد يستمر الاتصال "
+"الدوري وتوجيه الأقران إذا كان المتعلم والمرشد في نفس الشبكة. عندما يترك أحد "
+"الوالدين طفله لركوب دراجته دون إشراف تمامًا، فهذه هي مرحلة المغادرة."
 
 #: site/activities/coaching-checklist-two.php:98
+#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "1. قم بتقييم نفسك باستخدام سمع، أطاع، شارك، تدرب."
 
 #: site/activities/coaching-checklist-two.php:99
+#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr ""
+msgstr "2. قم بتدريب الآخرين باستخدام النموذج والمساعدة والمراقبة والمغادرة."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
+#, fuzzy
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "التقييم الذاتي"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
@@ -826,13 +883,15 @@ msgstr "“خلايا القيادة”"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Unaware"
-msgstr ""
+msgstr "غير مدرك"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
+#, fuzzy
 msgid "Unskilled"
-msgstr ""
+msgstr "غير ماهر"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
@@ -842,77 +901,94 @@ msgstr "اكتمال الدورة "
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
+#, fuzzy
 msgid "Skilled"
-msgstr ""
+msgstr "ماهر"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
+#, fuzzy
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "دور المرشد"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "تدريب المعلومات الجديدة والتأكد من الفهم"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "سلوكيات المرشد"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "ابق منخرطًا حتى تصبح مختصًا باستمرار"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "تعامل معهم كعامل مشارك"
 
 #: site/activities/coaching-checklist.php:167
+#, fuzzy
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "سلوكيات المرشد"
 
 #: site/activities/coaching-checklist.php:173
+#, fuzzy
 msgid "Direct and inform"
-msgstr ""
+msgstr "توجيه وإعلام"
 
 #: site/activities/coaching-checklist.php:176
+#, fuzzy
 msgid "Direct and support"
-msgstr ""
+msgstr "المباشرة والدعم"
 
 #: site/activities/coaching-checklist.php:179
+#, fuzzy
 msgid "Support and encourage"
-msgstr ""
+msgstr "دعم وتشجيع"
 
 #: site/activities/coaching-checklist.php:182
+#, fuzzy
 msgid "Receive updates"
-msgstr ""
+msgstr "تلقي التحديثات"
 
 #: site/activities/coaching-checklist.php:187
+#, fuzzy
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "مسؤوليات التخطيط"
 
 #: site/activities/coaching-checklist.php:193
+#, fuzzy
 msgid "Mentor decides"
-msgstr ""
+msgstr "المرشد يقرر"
 
 #: site/activities/coaching-checklist.php:196
+#, fuzzy
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "ناقش والمعلم يقرر"
 
 #: site/activities/coaching-checklist.php:199
+#, fuzzy
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "ناقش والمتدرب يقرر"
 
 #: site/activities/coaching-checklist.php:202
+#, fuzzy
 msgid "Mentee decides"
-msgstr ""
+msgstr "المتدرب يقرر"
 
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr ""
+msgstr "المتدرب يقرر"
 
 #: site/activities/coaching-checklist.php:269
 #, fuzzy
@@ -922,10 +998,11 @@ msgstr ""
 "الأحمر"
 
 #: site/activities/coaching-checklist.php:272
+#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr ""
+msgstr "هل يفهم المتدرب الأداة ويكون قادرًا على تدريب أساسيات الأداة؟"
 
 #: site/activities/coaching-checklist.php:275
 #, fuzzy
@@ -942,13 +1019,15 @@ msgstr "“تلمذة فروخ البط”"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unbeliever"
-msgstr ""
+msgstr "كافر"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unknown"
-msgstr ""
+msgstr "مجهول"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
@@ -957,8 +1036,9 @@ msgid "3-Month Plan"
 msgstr "“خطة الشهور الثلاثة”"
 
 #: site/activities/three-month-plan.php:67
+#, fuzzy
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "قم بالتبديل إلى الإصدار القابل للطباعة"
 
 #: site/activities/three-month-plan.php:80
 #, fuzzy
@@ -966,13 +1046,16 @@ msgid "Scripts are off"
 msgstr "مقطع كتابيّ"
 
 #: site/activities/three-month-plan.php:81
+#, fuzzy
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"يرجى تشغيل البرامج النصية لاستخدام هذه الصفحة التفاعلية. وإلا يمكنك استخدام "
+"النسخة القابلة للطباعة باستخدام الرابط أعلاه."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:271 site/profile/profile.php:153
+#: site/dashboard/wizard.php:287 site/profile/profile.php:153
 msgid "Save"
 msgstr "حفظ"
 
@@ -1084,10 +1167,11 @@ msgid "The Gospel"
 msgstr "\"الإنجيل\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
+#, fuzzy
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
-msgstr ""
+msgstr "إحدى الطرق لمشاركة أخبار الله السارة هي استخدام عرض مرئي يسمى 3 دوائر."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1121,14 +1205,16 @@ msgstr ""
 #: site/course/course-content.php:3671 site/course/course-content.php:3941
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
+#, fuzzy
 msgid "ACTIVITY"
-msgstr ""
+msgstr "نشاط"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
+#, fuzzy
 msgid "Scan the QR code or find a piece of paper."
-msgstr ""
+msgstr "امسح رمز الاستجابة السريعة ضوئيًا أو ابحث عن قطعة من الورق."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #, fuzzy
@@ -1136,14 +1222,18 @@ msgid "Select a person from your list of 100."
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
+#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"استخدم قائمة التحقق من التدريب وقم بتقييم الشخص الذي اخترته. اسأل نفسك: \"ما "
+"الذي يحتاجه هذا الشخص لكل من الأدوات والمفاهيم؟\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
+#, fuzzy
 msgid "Check off the checklist."
-msgstr ""
+msgstr "تحقق من القائمة المرجعية."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1162,10 +1252,13 @@ msgid "Activity Resource"
 msgstr "المصادر"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
+#, fuzzy
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"قم بتقييم نفسك - قم بتقييم نفسك ووضع علامة على الأعمدة المقابلة في قائمة "
+"التحقق من التدريب."
 
 #: site/course/course-builder.php:164
 #, fuzzy
@@ -1259,8 +1352,9 @@ msgstr "90 دقيقة"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
+#, fuzzy
 msgid "SESSION 1"
-msgstr ""
+msgstr "الجلسة 1"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1318,8 +1412,9 @@ msgstr "تسجيل دخول"
 #: site/course/course-content.php:5743 site/course/course-content.php:5794
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
+#, fuzzy
 msgid "Have all of the participants and facilitator check-in."
-msgstr ""
+msgstr "اطلب من جميع المشاركين والميسر تسجيل الوصول."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1339,8 +1434,9 @@ msgstr ""
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
+#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "أو zume.training/checkin واستخدم الكود:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1393,8 +1489,9 @@ msgstr "\"نظرة عامّة\""
 #: site/course/course-content.php:3801 site/course/course-content.php:4351
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
+#, fuzzy
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr ""
+msgstr "في هذه الجلسة سنسمع ونناقش هذه المفاهيم:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 #, fuzzy
@@ -1408,12 +1505,14 @@ msgstr "“التنفس الروحي”"
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
+#, fuzzy
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "وسنضيف هذه الأدوات إلى مجموعة أدواتنا:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr "طريقة لقراءه الكتاب المقدس تدعى \".S.O.A.P.S\""
 
@@ -1473,22 +1572,27 @@ msgstr ""
 "وأيضًا في قدرتنا على الالتزام والطاعة والتفاعل مع كل ما يصنعه حولنا."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
+#, fuzzy
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "تدرب على S.O.A.P.S."
 
 #: site/course/course-content.php:274
+#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"امسح رمز الاستجابة السريعة ضوئيًا واعمل بشكل فردي من خلال نمط دراسة الكتاب "
+"المقدس SOAPS باستخدام متى 6: 9-13. (20 دقيقة)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
 msgstr "مقطع كتابيّ"
 
 #: site/course/course-content.php:277
+#, fuzzy
 msgid "Observation"
-msgstr ""
+msgstr "ملاحظة"
 
 #: site/course/course-content.php:278
 #, fuzzy
@@ -1496,7 +1600,7 @@ msgid "Application"
 msgstr "الموقع"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr "صلاة"
 
@@ -1506,9 +1610,10 @@ msgid "Sharing"
 msgstr "شارك"
 
 #: site/course/course-content.php:282
+#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
-msgstr ""
+msgstr "ارجعوا معًا وشاركوا S.O.A.P.S. في مجموعات من اثنين أو ثلاثة. (10 دقائق)"
 
 #: site/course/course-content.php:304
 #, fuzzy
@@ -1520,8 +1625,9 @@ msgstr ""
 "الحساب. \"مجموعات المتابعة أو المساءلة\" هي طريقة رائعة لتّجهزنا لذلك!"
 
 #: site/course/course-content.php:305
+#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "مجموعات المساءلة هي طريقة رائعة للاستعداد!"
 
 #: site/course/course-content.php:329
 #, fuzzy
@@ -1534,8 +1640,9 @@ msgstr "ممارسة- مجموعات المساءلة"
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
+#, fuzzy
 msgid "Scan the QR code."
-msgstr ""
+msgstr "مسح رمز الاستجابة السريعة."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -1575,15 +1682,17 @@ msgstr "\"نظرة عامّة\""
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
+#, fuzzy
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "المفاهيم المستمعة في هذه الجلسة:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
+#, fuzzy
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "الأدوات المسموعة في هذه الجلسة:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1628,28 +1737,36 @@ msgstr ""
 "يوميّة بطريقة نموذج S.O.A.P.S."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"اطلب من الرب أن يرشدك لتحدي ما لا يقل عن خمسة أشخاص تعرفهم من المؤمنين لبدء "
+"S.O.A.P.S الخاص بهم. تدرب على قراءة الكتاب المقدس يوميًا، ثم قم بذلك."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
+#, fuzzy
 msgid "SESSION 2"
-msgstr ""
+msgstr "الجلسة 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
+#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"اسأل إذا كان لدى أي شخص في المجموعة احتياجات محددة يرغب في أن تصلي المجموعة "
+"من أجلها."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
+#, fuzzy
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
-msgstr ""
+msgstr "أشكر الله لأنه وعد في كلمته بالاستماع والعمل عندما يصلي شعبه."
 
 #: site/course/course-content.php:442
 #, fuzzy
@@ -1733,8 +1850,9 @@ msgstr "خذ بضعة لحظات لتعرف كيف كان أداء مجموعت�
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
+#, fuzzy
 msgid "In this session, we will hear and discuss this concept:"
-msgstr ""
+msgstr "وفي هذه الجلسة سنسمع ونناقش هذا المفهوم:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -1792,12 +1910,14 @@ msgstr ""
 "خلقنا!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
+#, fuzzy
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr ""
+msgstr "صل دورة الصلاة لمدة ساعة منفرداً"
 
 #: site/course/course-content.php:572
+#, fuzzy
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
+msgstr "قم بمسح رمز QR للحصول على دليل دورة الصلاة على هاتفك."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
@@ -1826,10 +1946,11 @@ msgid ""
 msgstr "كيف ستكون حياتك إذا صليت بهذه الطريقة بشكل يومي؟"
 
 #: site/course/course-content.php:613
+#, fuzzy
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr ""
+msgstr "لقد أعطانا الله بالفعل العلاقات التي نحتاجها لكي \"نذهب ونتلمذ\"."
 
 #: site/course/course-content.php:614
 #, fuzzy
@@ -1842,16 +1963,18 @@ msgstr ""
 "عرفناهم طوال حياتنا أو ربما التقينا بهم للتوّ."
 
 #: site/course/course-content.php:615
+#, fuzzy
 msgid "Stewarding the relationships you have is the best place to start."
-msgstr ""
+msgstr "إن إدارة العلاقات التي لديك هو أفضل مكان للبدء."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
 #: site/course/course-content.php:643
+#, fuzzy
 msgid "Scan QR code or use a piece of paper."
-msgstr ""
+msgstr "قم بمسح رمز الاستجابة السريعة ضوئيًا أو استخدم قطعة من الورق."
 
 #: site/course/course-content.php:644
 #, fuzzy
@@ -1864,10 +1987,11 @@ msgstr ""
 "زومي. "
 
 #: site/course/course-content.php:645
+#, fuzzy
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
-msgstr ""
+msgstr "ثم حدد فهمك الأفضل لعلاقتهم بالله: تلميذ، أو غير مؤمن، أو مجهول."
 
 #: site/course/course-content.php:682
 #, fuzzy
@@ -1907,15 +2031,17 @@ msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "لإشباع العالم مع تلاميذ يتضاعفون"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
+#, fuzzy
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr ""
+msgstr "Zúme هو مجتمع ممارسة لأولئك الذين يريدون رؤية حركات التلمذة."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
+#, fuzzy
 msgid "SESSION 3"
-msgstr ""
+msgstr "الجلسة 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 #, fuzzy
@@ -2008,7 +2134,7 @@ msgstr ""
 "إذا كان جوابك لا، فإنّنا نشجّعك على أن تدرس ما يعلمه الإنجيل عن الموضوع وتتعمد "
 "بأسرع وقت. أدعوا مجموعتك أن تحضر معموديتك حين تحتفل بقولك “نعم” ليسوع."
 
-#: site/course/course-content.php:1016
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
 msgid "The Spiritual Economy"
 msgstr "“الاقتصاد الروحي”"
@@ -2055,8 +2181,9 @@ msgstr ""
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
+#, fuzzy
 msgid "SESSION 4"
-msgstr ""
+msgstr "الجلسة 4"
 
 #: site/course/course-content.php:1109
 #, fuzzy
@@ -2065,10 +2192,12 @@ msgid ""
 msgstr "صلِّ واشكر الله على النّتائج. ادعُ الروح القدّس أن يقود وقتكم معاً."
 
 #: site/course/course-content.php:1110
+#, fuzzy
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"اطلب منه أن يعطي كل عضو في مجموعتك فكر المسيح – وأن يملأ كل واحد من روحه."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
@@ -2096,9 +2225,10 @@ msgid "Practice sharing your testimony"
 msgstr "ممارسة- شارك اختبارك"
 
 #: site/course/course-content.php:1192
+#, fuzzy
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr ""
+msgstr "اعمل على كتابة قصتك واجعلها مدتها ثلاث دقائق فقط. (10 دقائق)"
 
 #: site/course/course-content.php:1193
 #, fuzzy
@@ -2236,8 +2366,9 @@ msgstr ""
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
+#, fuzzy
 msgid "SESSION 5"
-msgstr ""
+msgstr "الجلسة 5"
 
 #: site/course/course-content.php:1485
 #, fuzzy
@@ -2282,10 +2413,13 @@ msgstr ""
 "لا؟"
 
 #: site/course/course-content.php:1594
+#, fuzzy
 msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"ما هو المجتمع أو الجزء من المجتمع القريب منك والذي يبدو أن حضوره في الملكوت "
+"قليل (أو لا وجود له على الإطلاق)؟"
 
 #: site/course/course-content.php:1595
 #, fuzzy
@@ -2343,26 +2477,32 @@ msgid "This session ends with the prayer walking activity."
 msgstr "تنتهي هذا اللقاء بنشاط \"مسير صلاة\"."
 
 #: site/course/course-content.php:1660
+#, fuzzy
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"قبل أن تخرج في نشاط المشي للصلاة، تأكد من الصلاة مع مجموعتك لإنهاء وقتك معًا."
 
 #: site/course/course-content.php:1661
+#, fuzzy
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
-msgstr ""
+msgstr "الحمد لله أنه يحب الضالين، الأخيرين والأصغر – بما فيهم نحن!"
 
 #: site/course/course-content.php:1662
+#, fuzzy
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"اطلب منه أن يعد قلبك وقلوب من ستقابلهم أثناء مسيرتك ليكونوا منفتحين على عمله."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
+#, fuzzy
 msgid "SESSION 6"
-msgstr ""
+msgstr "الجلسة 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
 #, fuzzy
@@ -2383,8 +2523,9 @@ msgstr "الأمانة أفضل من المعرفة"
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
+#, fuzzy
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "وسنضيف هذه الأداة إلى مجموعة أدواتنا:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2465,8 +2606,9 @@ msgstr ""
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
+#, fuzzy
 msgid "SESSION 7"
-msgstr ""
+msgstr "الجلسة 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
 #, fuzzy
@@ -2549,8 +2691,9 @@ msgstr "أين كان التّحدّي أصعب؟ لماذا؟"
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
+#, fuzzy
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "المفهوم المسموع في هذه الجلسة:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2558,25 +2701,31 @@ msgstr ""
 #: site/course/course-content.php:4091 site/course/course-content.php:4377
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
+#, fuzzy
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "الأداة المسموعة في هذه الجلسة:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
+#, fuzzy
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"اختر مهارة أو مفهومًا واحدًا تعلمته في Zúme وقم بتوجيه شخص ما لإعادة إنتاجه "
+"إلى الجيل الرابع."
 
 #: site/course/course-content.php:2100
+#, fuzzy
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
-msgstr ""
+msgstr "تحدي الشخص الذي قمت بإرشاده لمواصلة العملية إلى جيل إضافي (خامس)."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
+#, fuzzy
 msgid "SESSION 8"
-msgstr ""
+msgstr "الجلسة 8"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
@@ -2589,8 +2738,9 @@ msgstr ""
 "تستطيعون فعل أي شيء!"
 
 #: site/course/course-content.php:2192
+#, fuzzy
 msgid "And we will practice this tool from our toolkit:"
-msgstr ""
+msgstr "وسوف نتدرب على هذه الأداة من مجموعة الأدوات الخاصة بنا:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2626,19 +2776,24 @@ msgstr ""
 "‫\"تطلّع إلى الأمام\" - استخدم الأسئلة ٥ و٦ و٧ لتطوير طاعتك، تدرّبك ومشاركتك."
 
 #: site/course/course-content.php:2277
+#, fuzzy
 msgid "Concept from this session:"
-msgstr ""
+msgstr "فكرة هذه الجلسة:"
 
 #: site/course/course-content.php:2281
+#, fuzzy
 msgid "Tool from this session:"
-msgstr ""
+msgstr "أداة من هذه الجلسة:"
 
 #: site/course/course-content.php:2298
+#, fuzzy
 msgid ""
 "Select some people from your List of 100 who are already believers. Explain "
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
+"اختر بعض الأشخاص من قائمتك التي تضم 100 شخص مؤمنين بالفعل. اشرح لهم خلايا "
+"القيادة واعرف ما إذا كانوا مهتمين بأن يكونوا جزءًا منها."
 
 #: site/course/course-content.php:2299
 #, fuzzy
@@ -2652,8 +2807,9 @@ msgstr ""
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
+#, fuzzy
 msgid "SESSION 9"
-msgstr ""
+msgstr "الجلسة 9"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
 #, fuzzy
@@ -2728,18 +2884,24 @@ msgstr ""
 "ما هو الشيء الذي يمكنك القيام به ابتداءً مِن هذا الأسبوع والذي سيحدث فرقًا؟"
 
 #: site/course/course-content.php:2506
+#, fuzzy
 msgid ""
 "Jesus taught us that we are to stay close — to live as a small, spiritual "
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"لقد علمنا يسوع أننا يجب أن نبقى قريبين – أن نعيش كعائلة روحية صغيرة، أن نحب "
+"ونعطي حياتنا لبعضنا البعض، أن نحتفل ونعاني – معًا."
 
 #: site/course/course-content.php:2507
+#, fuzzy
 msgid ""
 "However, Jesus also taught us to leave our homes and loved ones behind and "
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"ومع ذلك، علمنا يسوع أيضًا أن نترك بيوتنا وأحبائنا وراءنا وأن نكون على استعداد "
+"للذهاب إلى أي مكان - وفي كل مكان - للمشاركة وتكوين عائلات روحية جديدة."
 
 #: site/course/course-content.php:2532
 #, fuzzy
@@ -2753,16 +2915,22 @@ msgstr ""
 "تنمو؟"
 
 #: site/course/course-content.php:2549
+#, fuzzy
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"قائمة التحقق من التدريب هي أداة بسيطة يمكنك استخدامها للمساعدة في إرشادك "
+"أثناء مساعدة الآخرين خلال مختلف مراحل التحول إلى تلميذ مجهز بالكامل."
 
 #: site/course/course-content.php:2576
+#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"قم بتقييم نفسك باستخدام السطر 1 وقم بوضع علامة على الأعمدة المقابلة في قائمة "
+"التحقق من التدريب."
 
 #: site/course/course-content.php:2596
 #, fuzzy
@@ -2794,12 +2962,14 @@ msgstr ""
 "لمساعدتك على تقييم النّواحي التي تحتاج إلى اهتمامك وتدريبك."
 
 #: site/course/course-content.php:2611
+#, fuzzy
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"إذا لم يكن لديك مدرب أو مرشد، قم بمسح رمز الاستجابة السريعة واطلبه الآن."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:201 site/pages/about.php:254
+#: site/dashboard/wizard.php:217 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
@@ -2809,22 +2979,30 @@ msgid "Get a Coach"
 msgstr "اعثر على مُدرِّب"
 
 #: site/course/course-content.php:2626
+#, fuzzy
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"تعد الحقول الأربعة ورسم خرائط الأجيال أدوات مصممة لخدمة جهود الحركة "
+"المتزايدة."
 
 #: site/course/course-content.php:2627
+#, fuzzy
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"تذكير: مدربو Zúme متاحون لمساعدتك في تطبيق هذه الأدوات في منطقتك المحلية."
 
 #: site/course/course-content.php:2642
+#, fuzzy
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"كثيراً ما كان يسوع يسحب التلاميذ بعيداً عن الخدمة إلى أماكن أكثر هدوءاً لمراجعة "
+"كيفية سير العمل."
 
 #: site/course/course-content.php:2643
 #, fuzzy
@@ -2837,42 +3015,53 @@ msgstr ""
 "حالة الجهود الحالية ونشاط المملكة من حولهم."
 
 #: site/course/course-content.php:2644
+#, fuzzy
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
-msgstr ""
+msgstr "قم بمراجعة الشريحتين التاليتين: أوصاف الحقول ومثال على الحقول الأربعة"
 
 #: site/course/course-content.php:2655
+#, fuzzy
 msgid "Field Descriptions"
-msgstr ""
+msgstr "أوصاف الحقول"
 
 #: site/course/course-content.php:2657
+#, fuzzy
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"الحقل الفارغ: أين أو مع من [ما هي المجموعات الشعبية] تخطط لتوسيع المملكة؟"
 
 #: site/course/course-content.php:2658
+#, fuzzy
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
-msgstr ""
+msgstr "حقل البذر: أين أو مع من تشاركون ببشارة الملكوت؟ كيف تفعل ذلك؟"
 
 #: site/course/course-content.php:2659
+#, fuzzy
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"مجال النمو: كيف تقوم بتجهيز الناس وتنميتهم روحياً وفردياً وفي شبكاتهم الطبيعية؟"
 
 #: site/course/course-content.php:2660
+#, fuzzy
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
-msgstr ""
+msgstr "حقل الحصاد: كيف يتم تكوين عائلات روحية جديدة [كنائس بسيطة]؟"
 
 #: site/course/course-content.php:2661
+#, fuzzy
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"مجال التكاثر: مع من وكيف ومتى تقومون بتصفية المؤمنين وتجهيزهم ومحاسبتهم على "
+"التكاثر؟"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 #, fuzzy
@@ -2880,24 +3069,31 @@ msgid "Four Fields Example"
 msgstr "أداة الأربع مجالات"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
+#, fuzzy
 msgid "Discuss"
-msgstr ""
+msgstr "يناقش"
 
 #: site/course/course-content.php:2699
+#, fuzzy
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"تحديد حقل فارغ من حولك. ما هي المجتمعات أو المجموعات البشرية التي ترتبط بها "
+"والتي ليس لها أي نشاط إنجيلي؟"
 
 #: site/course/course-content.php:2700
+#, fuzzy
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"وكيف يتأثر النمو على المدى الطويل إذا تم إهمال أحد المجالات؟ أعط أمثلة."
 
 #: site/course/course-content.php:2701
+#, fuzzy
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "ما هي أدوات Zúme التي يمكن أن تساعد في أي مجال؟"
 
 #: site/course/course-content.php:2716
 #, fuzzy
@@ -2909,16 +3105,21 @@ msgstr ""
 "حولهم. "
 
 #: site/course/course-content.php:2717
+#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"يمكن رسم خريطة شجرة الأجيال على قطعة من الورق أو على عدة قطع من الورق. تساعد "
+"هذه الخريطة في إظهار أماكن التوقف في الضرب وقد يكون التدريب مطلوبًا. تعد صحة "
+"الحركة من أهم اهتمامات القادة، كما أن الإثمار هو أفضل وسيلة لقياس الصحة."
 
 #: site/course/course-content.php:2718
+#, fuzzy
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "انظر المثال في الشريحة التالية."
 
 #: site/course/course-content.php:2729
 #, fuzzy
@@ -2926,12 +3127,14 @@ msgid "Generational Mapping Example"
 msgstr "تخطيط الأجيال"
 
 #: site/course/course-content.php:2748
+#, fuzzy
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "استخدم مثال رسم خريطة الأجيال لمناقشة ما يلي:"
 
 #: site/course/course-content.php:2750
+#, fuzzy
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "من هم القادة الذين يرون الضرب؟"
 
 #: site/course/course-content.php:2751
 #, fuzzy
@@ -2939,52 +3142,69 @@ msgid "Which groups would you expect to multiply next?"
 msgstr "أيّ واحد تعتقد أنّ تضاعفه العددي ستكون أسهل ولماذا؟"
 
 #: site/course/course-content.php:2752
+#, fuzzy
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "من هم القادة الذين يمكنهم مساعدة وتقوية القادة الآخرين؟"
 
 #: site/course/course-content.php:2753
+#, fuzzy
 msgid "Do you see a pattern of weak accountability in any of the generations?"
-msgstr ""
+msgstr "هل ترى نمطاً من ضعف المساءلة لدى أي من الأجيال؟"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
+#, fuzzy
 msgid ""
 "Practice sharing the concept of “Pace” with a friend and pray for the Lord "
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"تدرب على مشاركة مفهوم \"السرعة\" مع صديق وأدعو الرب أن يغرسه بعمق في قلبك "
+"وروحك. اسأل الرب مع من يريد أن تشاركه."
 
 #: site/course/course-content.php:2793
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the concept  "
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"إذا كنت قد بدأت بالفعل كنيستك البسيطة، شارك مفهوم \"دائمًا جزء من كنيستين\" "
+"مع الأشخاص الموجودين فيها. إذا لم يكن الأمر كذلك، شاركها مع مؤمن آخر تعرفه."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
+#, fuzzy
 msgid "SESSION 10"
-msgstr ""
+msgstr "الجلسة 10"
 
 #: site/course/course-content.php:2852
+#, fuzzy
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
-msgstr ""
+msgstr "صلوا واشكروا الله لأنه أمين ليتمم عمله الصالح فينا. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
+#, fuzzy
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"اطلب منه أن يمنح مجموعتك رؤوسًا صافية وقلوبًا مفتوحة للأشياء العظيمة التي يريد "
+"أن يفعلها فيك ومن خلالك."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
+#, fuzzy
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"اطلب من الروح القدس أن يقود وقتكما معًا واشكره على أمانته أيضًا. لقد نجح في "
+"اجتيازك!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
+#, fuzzy
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "تشجع..."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -2996,11 +3216,15 @@ msgstr ""
 "التّلاميذ المتضاعفين أكثر مِن العديد مِن الرّعاة والمبشرين في جميع أنحاء العالم!"
 
 #: site/course/course-content.php:2881
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"ومع ذلك، فإن تدريب زومي هو مجرد البداية! في هذه الجلسة، سنضع خطة لما يحدث "
+"بعد التدريب ونقدم بإيجاز الأدوات التي ستحتاجها لاحقًا في رحلتك أثناء تنفيذ ما "
+"تعلمته."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -3020,15 +3244,20 @@ msgstr ""
 "العلاقات الشّخصيّة العميقة؟ ما هي بعض الأمثلة التي تتبادر إلى ذهنك؟"
 
 #: site/course/course-content.php:2964
+#, fuzzy
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"إن صنع التلاميذ الذين يصنعون التلاميذ يعني صنع القادة الذين يصنعون القادة."
 
 #: site/course/course-content.php:2965
+#, fuzzy
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"تجمع مجموعات توجيه الأقران القادة معًا وتساعدهم على حب وتشجيع بعضهم البعض في "
+"عقيدتهم وقيادتهم."
 
 #: site/course/course-content.php:2989
 #, fuzzy
@@ -3055,14 +3284,18 @@ msgstr ""
 "المُقترحة وتقديم الارشاد والتّشجيع لعمل “المتدرّب”."
 
 #: site/course/course-content.php:3014
+#, fuzzy
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"يقول الله في كتابه المقدس: \"أنا أعرف الخطط التي أضعها لك، خطط لنجاحك وعدم "
+"إيذائك، خطط لإعطائك الأمل والمستقبل\"."
 
 #: site/course/course-content.php:3015
+#, fuzzy
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "الله يضع الخطط، ويتوقع منا أن نضع الخطط أيضًا."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
 #, fuzzy
@@ -3077,10 +3310,13 @@ msgstr ""
 "قراءتها ومِن ثمّ إكمالها."
 
 #: site/course/course-content.php:3017
+#, fuzzy
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"ستوضح لك الشريحة التالية كيفية إعداد خطتك لثلاثة أشهر. نوصي باستخدام الأداة "
+"عبر الإنترنت."
 
 #: site/course/course-content.php:3030
 #, fuzzy
@@ -3088,10 +3324,13 @@ msgid "Make your Three Month Plan"
 msgstr "“خطة الشهور الثلاثة”"
 
 #: site/course/course-content.php:3032
+#, fuzzy
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"القراءة - مسح رمز الاستجابة السريعة. ليس عليك الالتزام بكل عنصر، بل المقصود "
+"منها أن تكون بمثابة مطالبات لخطتك. (5 دقائق)"
 
 #: site/course/course-content.php:3033
 #, fuzzy
@@ -3103,37 +3342,51 @@ msgstr ""
 "يريد الله أن يقوله وما يختار أن يُعلِن. ابذل جهدًا لسماع صوته."
 
 #: site/course/course-content.php:3034
+#, fuzzy
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"سجل خطتك - اكتب الالتزامات على قطعة من الورق أو استخدم الأداة عبر الإنترنت "
+"لحفظ إجاباتك. (15 دقيقة)"
 
 #: site/course/course-content.php:3040
+#, fuzzy
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "أداة الخطة عبر الإنترنت"
 
 #: site/course/course-content.php:3053
+#, fuzzy
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "يتناوبون في مشاركة خطط الثلاثة أشهر الخاصة بك مع بعضهم البعض."
 
 #: site/course/course-content.php:3054
+#, fuzzy
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"ابحث عن شريك (شركاء) تدريب يرغب في التواصل معك أسبوعيًا. الالتزام بفعل الشيء "
+"نفسه بالنسبة لهم."
 
 #: site/course/course-content.php:3195
+#, fuzzy
 msgid ""
 "Practice sharing these definitions with a friend and pray for the Lord to "
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"تدرب على مشاركة هذه التعريفات مع صديق وأدعو الرب أن يغرسها بعمق في قلبك "
+"وروحك. اسأل الرب مع من يريد أن تشاركها؟"
 
 #: site/course/course-content.php:3196
+#, fuzzy
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"شارك التعريفات مع من يريدك الرب أن تفعل ذلك معه. ثم قم بتجهيزهم لمشاركتها مع "
+"شخص آخر."
 
 #: site/course/course-content.php:3258
 #, fuzzy
@@ -3143,26 +3396,34 @@ msgstr "صلِّ واشكر الله على النّتائج. ادعُ الرو�
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
+#, fuzzy
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "في هذه الجلسة، سنضيف هذه الأداة إلى مجموعة أدواتنا:"
 
 #: site/course/course-content.php:3379
+#, fuzzy
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"نصلي ونشكر الله على حضوره في حياتنا. صلوا من أجل أن يكون لكل فرد في المجموعة "
+"آذان لسماع صوته ونعمة لطاعة ما يقول."
 
 #: site/course/course-content.php:3440
+#, fuzzy
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
-msgstr ""
+msgstr "ابحث عن شريك المساءلة (من نفس الجنس) وابدأ في الاجتماع معه أسبوعيًا."
 
 #: site/course/course-content.php:3441
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"اطلب من الرب أن يرشدك لتحدي ما لا يقل عن خمسة أشخاص تعرفهم من المؤمنين لبدء "
+"اجتماع مجموعة المساءلة الخاصة بهم، ثم افعل ذلك."
 
 #: site/course/course-content.php:3501
 #, fuzzy
@@ -3172,14 +3433,18 @@ msgid ""
 msgstr "صلِّ واشكر الله على النّتائج. ادعُ الروح القدّس أن يقود وقتكم معاً."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
+#, fuzzy
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "في هذه الجلسة سنسمع ونناقش المفهوم:"
 
 #: site/course/course-content.php:3631
+#, fuzzy
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"صلوا واشكروا الله على محبته لجميع الأشخاص في حياتنا. صلي من أجل أن يرى كل "
+"شخص في المجموعة من حولك كما يراهم الله."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 #, fuzzy
@@ -3187,34 +3452,46 @@ msgid "The Prayer Cycle"
 msgstr "\"دورة أو دائرة الصلاة\""
 
 #: site/course/course-content.php:3676
+#, fuzzy
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"إذا كان وقتك مرنًا، خذ الساعة الكاملة. صلّي كل قسم لمدة 5 دقائق كاملة. وهذا "
+"سيجعل هذه الجلسة أطول من ساعة واحدة من التدريب."
 
 #: site/course/course-content.php:3677
+#, fuzzy
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"إذا لم تتمكن من أخذ جلسة أطول، فقم بتقليل أقسام الصلاة من 5 دقائق إلى 3 "
+"دقائق لكل منها."
 
 #: site/course/course-content.php:3712
+#, fuzzy
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"استخدم دورة الصلاة لإرشادك أثناء الصلاة لمدة ساعة في وقت ما من هذا الأسبوع."
 
 #: site/course/course-content.php:3713
+#, fuzzy
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
-msgstr ""
+msgstr "شارك دورة الصلاة مع من يوجهك الرب. تحديهم لمشاركتها مع الآخرين أيضا."
 
 #: site/course/course-content.php:3839
+#, fuzzy
 msgid ""
 "Practice sharing the Spiritual Economy concept with a friend and pray for "
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"تدرب على مشاركة مفهوم الاقتصاد الروحي مع صديق وصلي للرب أن يغرسه بعمق في "
+"قلبك وروحك. اسأل الرب مع من يريد أن تشاركه."
 
 #: site/course/course-content.php:3840
 #, fuzzy
@@ -3227,16 +3504,22 @@ msgstr ""
 "المجموعة قبل أن تذهب وتواصل معه قبل اللقاء التّالية."
 
 #: site/course/course-content.php:3901
+#, fuzzy
 msgid ""
 "Pray for each member of your group to experience the blessings of following "
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"صل من أجل أن يختبر كل عضو في مجموعتك بركات اتباع يسوع، وقيادة الآخرين لاتباع "
+"يسوع، وتجهيز الآخرين لبدء عائلات روحية جديدة."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
+#, fuzzy
 msgid "In this session, we will practice this tool in our toolkit:"
 msgstr ""
+"في هذه الجلسة، سوف نتدرب على هذه الأداة الموجودة في مجموعة الأدوات الخاصة "
+"بنا:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
 #, fuzzy
@@ -3256,10 +3539,13 @@ msgid ""
 msgstr "الرجاء الانقسام لمجموعات ذكور وإناث. مِن ٢ الى ٣ أشخاص للمجموعة."
 
 #: site/course/course-content.php:3948
+#, fuzzy
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"بعد التدرب، قم بالتبديل. التكرار سيجلب الثقة. وبحلول الوقت الذي تنتهي فيه، "
+"ستكون جاهزًا لمشاركة قصة الله."
 
 #: site/course/course-content.php:4046
 #, fuzzy
@@ -3273,15 +3559,19 @@ msgstr ""
 "القدس أن يقود وقتكم سويًّا، وأن يجعل هذا اللقاء من أفضل اللقاءات حتّى الآن."
 
 #: site/course/course-content.php:4074
+#, fuzzy
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "في هذه الجلسة، سنضيف هذه الأدوات إلى مجموعة أدواتنا:"
 
 #: site/course/course-content.php:4109
+#, fuzzy
 msgid ""
 "If you know anyone who follows Jesus but has not been baptized, challenge "
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"إذا كنت تعرف أي شخص يتبع يسوع ولكن لم يتم تعميده، فتحداه للقيام بذلك واعرض "
+"عليه تعميده. خلاف ذلك، ممارسة المهارة مع صديق."
 
 #: site/course/course-content.php:4110
 #, fuzzy
@@ -3317,26 +3607,36 @@ msgstr ""
 "على مشاركة شهادتكم مع الآخرين. (٤٥ دقيقة)"
 
 #: site/course/course-content.php:4216
+#, fuzzy
 msgid ""
 "Choose 5 people from your List of 100. Have someone pretend to be each of "
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"اختر 5 أشخاص من قائمة الـ 100 الخاصة بك. اطلب من شخص ما أن يتظاهر بأنه كل من "
+"هؤلاء الأشخاص الخمسة، وممارسة شهادتك بطريقة تعتقد أنها ستكون منطقية لهذا "
+"الشخص المعين."
 
 #: site/course/course-content.php:4217
+#, fuzzy
 msgid ""
 "After you’ve practiced, switch. Pretend to be someone else’s five people "
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"بعد التدرب، قم بالتبديل. تظاهر بأنك الشخص الخمسة الموجود في القائمة. بحلول "
+"الوقت الذي تنتهي فيه، يجب أن تكون قادرًا على إلقاء شهادتك في حوالي 3 دقائق أو "
+"أقل."
 
 #: site/course/course-content.php:4219
+#, fuzzy
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "التكرار يبني الثقة."
 
 #: site/course/course-content.php:4233
+#, fuzzy
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "الأداة التي تم ممارستها في هذه الجلسة:"
 
 #: site/course/course-content.php:4250
 #, fuzzy
@@ -3357,56 +3657,76 @@ msgid ""
 msgstr "صلِّ واشكر الله على النّتائج. ادعُ الروح القدّس أن يقود وقتكم معاً."
 
 #: site/course/course-content.php:4394
+#, fuzzy
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"إذا كانت عائلتك مؤمنة وتعيش محليًا، فقدم معهم العشاء الرباني. وإلا، قم "
+"بممارسة المهارة مع صديق مؤمن."
 
 #: site/course/course-content.php:4395
+#, fuzzy
 msgid ""
 "Share \"Duckling Discipleship\" and \"Eyes to See Where the Kingdom Isn’t\" "
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"شارك \"تلمذة البطة\" و\"عيون لترى أين لا يكون الملكوت\" مع من يعجبك الرب. ثم "
+"قم بتجهيزهم لمشاركتها مع شخص آخر."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
+#, fuzzy
 msgid "SESSION 11"
-msgstr ""
+msgstr "الجلسة 11"
 
 #: site/course/course-content.php:4455
+#, fuzzy
 msgid ""
 "Pray and thank God for how He is at work in your life and the lives of "
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"صلي واشكر الله على كيفية عمله في حياتك وحياة الآخرين من حولك. صلوا من أجل أن "
+"يكون للمجموعة أعين لترى أين لم تصل المملكة بعد."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
+#, fuzzy
 msgid "SESSION 12"
-msgstr ""
+msgstr "الجلسة 12"
 
 #: site/course/course-content.php:4638
+#, fuzzy
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr ""
+msgstr "صلي من أجل شخص ما في حضوره باستخدام نمط BLESS هذا الأسبوع."
 
 #: site/course/course-content.php:4639
+#, fuzzy
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"جهز شخصًا آخر للصلاة من أجل الآخرين باستخدام نمط BLESS واذهب معه أثناء قيامه "
+"بذلك."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
+#, fuzzy
 msgid "SESSION 13"
-msgstr ""
+msgstr "الجلسة 13"
 
 #: site/course/course-content.php:4700
+#, fuzzy
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"صلوا واشكروا الله على ما تعلمتموه في الجلسة الأخيرة. صلي من أجل أن يساعدك "
+"روح الله على أن تكون مخلصًا لتطبيق كل ما تتعلمه."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
+#, fuzzy
 msgid "SESSION 14"
-msgstr ""
+msgstr "الجلسة 14"
 
 #: site/course/course-content.php:4902
 #, fuzzy
@@ -3436,11 +3756,15 @@ msgstr ""
 "لتطوير طاعتك، تدرّبك ومشاركتك."
 
 #: site/course/course-content.php:4940
+#, fuzzy
 msgid ""
 "Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"صلي واسأل الله إذا كان يريدك أن تبدأ مجموعة 3/3. إذا فعل ذلك، فانظر إلى "
+"قائمتك التي تضم 100 شخص واسأل الله عمن يجب أن تدعوه للانضمام إليك. ثم قم "
+"بدعوتهم هذا الأسبوع وتوكل على الله لبناء المجموعة."
 
 #: site/course/course-content.php:4941
 #, fuzzy
@@ -3452,8 +3776,9 @@ msgstr ""
 "ثلاثة\" قبل أن تلتقي مجموعتك مجدّدًا. شارك اسم الشّخص مع المجموعة قبل المغادرة."
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
+#, fuzzy
 msgid "SESSION 15"
-msgstr ""
+msgstr "الجلسة 15"
 
 #: site/course/course-content.php:5002
 #, fuzzy
@@ -3468,148 +3793,198 @@ msgstr ""
 "وكالعادة، اطلب مِن روح الله القدس أن يقود وقتكم معاً."
 
 #: site/course/course-content.php:5066
+#, fuzzy
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr ""
+"شارك \"دورة التدريب\" مع أحد المؤمنين الموجودين في قائمتك المكونة من 100 شخص."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
+#, fuzzy
 msgid "SESSION 16"
-msgstr ""
+msgstr "الجلسة 16"
 
 #: site/course/course-content.php:5193
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the \"Always Part "
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"إذا كنت قد بدأت بالفعل كنيستك البسيطة، شارك نمط \"جزء دائمًا من كنيستين\" مع "
+"الأشخاص الموجودين فيه. إذا لم يكن الأمر كذلك، شاركها مع مؤمن آخر تعرفه."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
+#, fuzzy
 msgid "SESSION 17"
-msgstr ""
+msgstr "الجلسة 17"
 
 #: site/course/course-content.php:5256
+#, fuzzy
 msgid ""
 "Pray and thank God for how He continues to speak through the word, prayer, "
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"صلوا واشكروا الله على كيفية استمراره في التكلم من خلال الكلمة، والصلاة، "
+"والجسد، والاضطهاد والمعاناة. صلوا من أجل أن يكون لكل فرد في المجموعة آذان "
+"لسماع صوته ونعمة لطاعة ما يقول."
 
 #: site/course/course-content.php:5325
+#, fuzzy
 msgid ""
 "Identify one next step for yourself, either Modeling, Assisting, Watching, "
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"حدد خطوة تالية لنفسك، إما عرض الأزياء أو المساعدة أو المشاهدة أو المغادرة، "
+"والتي يتعين عليك اتخاذها مع التلميذ الذي قمت بتقييمه من خلال قائمة مراجعة "
+"التدريب."
 
 #: site/course/course-content.php:5326
+#, fuzzy
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"مشاركة مفهوم \"القيادة في الشبكات\" مع شخص آخر. ثم تدريبهم على مشاركتها مع "
+"شخص آخر."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
+#, fuzzy
 msgid "SESSION 18"
-msgstr ""
+msgstr "الجلسة 18"
 
 #: site/course/course-content.php:5434
+#, fuzzy
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"خذ لحظة للاستماع إلى الله واسأل عما إذا كانت هناك أي خطوات عمل تحتاج أنت أو "
+"مجموعتك إلى اتخاذها بناءً على مناقشة المجالات الأربعة التي أجريتها للتو."
 
 #: site/course/course-content.php:5465
+#, fuzzy
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"قم بمراجعة كل عنصر من عناصر تدريب Zúme وحدد الحقل (المجالات) ذات الصلة بكل "
+"منها وقم بتسمية مخطط الحقول الأربعة بالعناصر."
 
 #: site/course/course-content.php:5466
+#, fuzzy
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
-msgstr ""
+msgstr "شارك أداة رسم خرائط الأجيال مع مؤمن آخر تعرفه كتمرين لصب الرؤية."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
+#, fuzzy
 msgid "SESSION 19"
-msgstr ""
+msgstr "الجلسة 19"
 
 #: site/course/course-content.php:5526
+#, fuzzy
 msgid ""
 "Pray and thank God for the Body of Christ. Pray for mutual love and "
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"صلوا واشكروا الله من أجل جسد المسيح. صلي من أجل الحب المتبادل والتشجيع "
+"لمواصلة النمو بين كل عضو في مجموعتك بينما تقترب من يسوع."
 
 #: site/course/course-content.php:5587
+#, fuzzy
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"ناقش مع مجموعة تدريب Zúme الخاصة بك ما إذا كان الأعضاء منفتحين على الاستمرار "
+"في الاجتماع بعد انتهاء التدريب كمجموعة توجيه أقران أم لا."
 
 #: site/course/course-content.php:5588
+#, fuzzy
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"شارك مفهوم \"مجموعة توجيه الأقران\" مع اثنين من المؤمنين في قائمتك المكونة "
+"من 100 شخص."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
+#, fuzzy
 msgid "SESSION 20"
-msgstr ""
+msgstr "الجلسة 20"
 
 #: site/course/course-content.php:5650
+#, fuzzy
 msgid "Pray and thank God that He is faithful to complete His good work in us."
-msgstr ""
+msgstr "صلوا واشكروا الله لأنه أمين ليتمم عمله الصالح فينا."
 
 #: site/course/course-content.php:5679
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"ومع ذلك، فإن تدريب زومي هو مجرد البداية! في هذه الجلسة، سنضع خطة لما يحدث "
+"بعد التدريب."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
+#, fuzzy
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "الجلسة المكثفة 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
+#, fuzzy
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "الجلسة المكثفة 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
+#, fuzzy
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "الجلسة المكثفة 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
+#, fuzzy
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "الجلسة المكثفة 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
+#, fuzzy
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "الجلسة المكثفة 5"
 
 #: site/course/course-content.php:5976
+#, fuzzy
 msgid "NEXT STEP"
-msgstr ""
+msgstr "الخطوة التالية"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
-#: site/parts/nav.php:94
+#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
 msgstr "الجماعة"
 
 #: site/course/course-content.php:5980
+#, fuzzy
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"الجزء التدريبي من Zúme على وشك الانتهاء، لكن ممارسة الأدوات والمفاهيم مستمرة."
 
 #: site/course/course-content.php:5981
+#, fuzzy
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
+msgstr "لا تفعل ذلك بمفردك. ابحث عن مجتمع للتشجيع والنمو."
 
 #: site/course/course-content.php:5982
+#, fuzzy
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "انضم إلى مجتمع Zume باستخدام رمز الاستجابة السريعة."
 
 #: site/course/course-content.php:5996
 #, fuzzy
@@ -3617,8 +3992,9 @@ msgid "CONGRATULATIONS on completing Zume Training!"
 msgstr "“اكتمال الفيديو التدريبي”"
 
 #: site/course/course-content.php:6008
+#, fuzzy
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "خذ قسطا من الراحة"
 
 #: site/course/presenter.php:131
 #, fuzzy
@@ -3626,12 +4002,14 @@ msgid "Course Presenter"
 msgstr "مواد زومي v4"
 
 #: site/course/presenter.php:148
+#, fuzzy
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "قم بتنزيل الشرائح دون اتصال هنا"
 
 #: site/course/presenter.php:166
+#, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "روابط"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3658,27 +4036,44 @@ msgid "Exit Course"
 msgstr "دورة"
 
 #: site/course/presenter.php:192
-msgid "Switch Views"
-msgstr ""
+#, fuzzy
+msgid "Slide View"
+msgstr "عرض شبكي"
 
-#: site/course/presenter.php:193
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+#, fuzzy
+msgid "List View"
+msgstr "عرض القائمة"
+
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Next slide"
 msgstr "اللقاء التالي"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Previous slide"
 msgstr "السّابق"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:196
 #, fuzzy
 msgid "Session"
 msgstr "اللقاء رقم ١"
 
+#: site/course/presenter.php:198
+#, fuzzy
+msgid "View Transcript"
+msgstr "عرض النص"
+
+#: site/course/presenter.php:199
+#, fuzzy
+msgid "View Activity"
+msgstr "عرض النشاط"
+
 #: site/dashboard/checkin-dashboard.php:151
+#, fuzzy
 msgid "Woops"
-msgstr ""
+msgstr "عفوًا"
 
 #: site/dashboard/checkin-dashboard.php:153
 #, fuzzy
@@ -3686,11 +4081,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "هناك خطأ ما. حاول مجددًا! "
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
-#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
-#: utilities/apis/cta-api.php:338
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:341
+#, fuzzy
 msgid "Congratulations!"
-msgstr ""
+msgstr "تهانينا!"
 
 #: site/dashboard/checkin-dashboard.php:163
 #, fuzzy
@@ -3698,9 +4094,9 @@ msgid "Checked into session:"
 msgstr "مرحباً بك في هذا اللقاء"
 
 #: site/dashboard/checkin-dashboard.php:164
-#, php-format
+#, fuzzy, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%1$d من %2$d"
 
 #: site/dashboard/checkin-dashboard.php:167
 #, fuzzy
@@ -3708,17 +4104,19 @@ msgid "Course Progress:"
 msgstr "تقدّم ‫زومي"
 
 #: site/dashboard/checkin-dashboard.php:168
-#, php-format
+#, fuzzy, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d %%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
+#, fuzzy
 msgid "Done"
-msgstr ""
+msgstr "منتهي"
 
 #: site/dashboard/dashboard.php:156
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "يحرر"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3745,24 +4143,23 @@ msgid "Not Heard"
 msgstr "استمع"
 
 #: site/dashboard/dashboard.php:163 site/pages/share.php:121
+#, fuzzy
 msgid "All"
-msgstr ""
+msgstr "الجميع"
 
 #: site/dashboard/dashboard.php:164 site/profile/profile.php:159
 msgid "Logout"
 msgstr "تسجيل الخروج"
 
 #: site/dashboard/dashboard.php:165 site/pages/share.php:124
+#, fuzzy
 msgid "Filter"
-msgstr ""
-
-#: site/dashboard/dashboard.php:166
-msgid "List View"
-msgstr ""
+msgstr "منقي"
 
 #: site/dashboard/dashboard.php:167
+#, fuzzy
 msgid "Grid View"
-msgstr ""
+msgstr "عرض شبكي"
 
 #: site/dashboard/dashboard.php:168
 #, fuzzy
@@ -3775,35 +4172,38 @@ msgid "Complete Now"
 msgstr "اكتمال الدورة "
 
 #: site/dashboard/dashboard.php:170
+#, fuzzy
 msgid "View"
-msgstr ""
+msgstr "منظر"
 
 #: site/dashboard/dashboard.php:171
+#, fuzzy
 msgid "Menu"
-msgstr ""
+msgstr "قائمة طعام"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
-#: site/dashboard/wizard.php:210 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:226 site/profile/profile.php:116
 msgid "Name"
 msgstr "الاسم"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
-#: site/dashboard/wizard.php:180 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "رقم الهاتف"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "العنوان الإلكترونيّ"
 
 #: site/dashboard/dashboard.php:175
+#, fuzzy
 msgid "Communications Email"
-msgstr ""
+msgstr "البريد الإلكتروني للاتصالات"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "المدينة"
@@ -3813,8 +4213,8 @@ msgstr "المدينة"
 msgid "No Locations found"
 msgstr "لم يتم العثور على المُستخدم."
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3826,8 +4226,9 @@ msgid "Edit Profile"
 msgstr "ملفّ زومي الشّخصي‫ّ"
 
 #: site/dashboard/dashboard.php:181
+#, fuzzy
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "تحقق من مفهوم Zúme هذا"
 
 #: site/dashboard/dashboard.php:182
 #, fuzzy
@@ -3836,9 +4237,9 @@ msgstr "مشاهدة"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
 #: site/dashboard/dashboard.php:259
-#, php-format
+#, fuzzy, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "إضافة %s جديد"
 
 #: site/dashboard/dashboard.php:183
 #, fuzzy
@@ -3851,12 +4252,14 @@ msgid "Copy Link"
 msgstr "رابط"
 
 #: site/dashboard/dashboard.php:185
+#, fuzzy
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "انسخ هذا الرابط وأرسله إلى أصدقائك 🙂"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
+#, fuzzy
 msgid "Thanks!"
-msgstr ""
+msgstr "شكرًا!"
 
 #: site/dashboard/dashboard.php:187
 #, fuzzy
@@ -3868,26 +4271,30 @@ msgstr "رُبِط بـ"
 msgid "Getting Started"
 msgstr "ابدأ"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
-#: utilities/apis/cta-api.php:252
+#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "ملفّ زومي الشّخصي‫ّ"
 
 #: site/dashboard/dashboard.php:190
+#, fuzzy
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "أكمل معالج ملف التعريف القصير لتعيين ملف التعريف الخاص بك"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
 #, fuzzy
 msgid "Join or create a training group"
 msgstr "قم بإستضافة تدريب\n"
 
 #: site/dashboard/dashboard.php:192
+#, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"انضم إلى أحد دوراتنا التدريبية عبر الإنترنت أو قم بإنشاء مجموعة التدريب "
+"الخاصة بك باستخدام معالج الإعداد السهل الخاص بنا"
 
 #: site/dashboard/dashboard.php:193
 #, fuzzy
@@ -3899,7 +4306,7 @@ msgstr "1 تدريب"
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
 #, fuzzy
 msgid "Join Training Group"
 msgstr "قم بإستضافة تدريب\n"
@@ -3910,10 +4317,12 @@ msgid "Join an online training group run by a coach"
 msgstr "قم بإستضافة تدريب\n"
 
 #: site/dashboard/dashboard.php:198
+#, fuzzy
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"تواصل مع المدرب للحصول على أي مساعدة أو تشجيع قبل أو أثناء أو بعد التدريب."
 
 #: site/dashboard/dashboard.php:200
 #, fuzzy
@@ -3921,14 +4330,18 @@ msgid "My Progress"
 msgstr "التّقدّم"
 
 #: site/dashboard/dashboard.php:201
+#, fuzzy
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"تتبع تقدم الدورة التدريبية الخاصة بك مع هذا العرض التفاعلي. تعلم الاستماع "
+"والطاعة والمشاركة وتدريب الآخرين على ما تعلمته."
 
 #: site/dashboard/dashboard.php:202
+#, fuzzy
 msgid "Information about progress"
-msgstr ""
+msgstr "معلومات عن التقدم"
 
 #: site/dashboard/dashboard.php:203
 #, fuzzy
@@ -3941,10 +4354,13 @@ msgid "My Trainings"
 msgstr "1 تدريب"
 
 #: site/dashboard/dashboard.php:205
+#, fuzzy
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
+"الوصول الكامل إلى محتوى التدريب الخاص بك والجدول الزمني وتفاصيل المجموعة "
+"وأدوات المشاركة."
 
 #: site/dashboard/dashboard.php:207
 #, fuzzy
@@ -3957,15 +4373,20 @@ msgid "Three Month Plan Locked"
 msgstr "“خطة الشهور الثلاثة”"
 
 #: site/dashboard/dashboard.php:210
+#, fuzzy
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"تعد خطة الثلاثة أشهر أداة لمساعدتك على اتخاذ الإجراءات وتنفيذ الأدوات "
+"والمفاهيم التي تعلمتها من خلال دورة Zúme. إنه مفيد للغاية، بمجرد الانتهاء من "
+"التدريب."
 
 #: site/dashboard/dashboard.php:211
+#, fuzzy
 msgid "Unlock now"
-msgstr ""
+msgstr "افتح الآن"
 
 #: site/dashboard/dashboard.php:212
 #, fuzzy
@@ -3978,8 +4399,9 @@ msgid "My Coach"
 msgstr "مُدرِّب"
 
 #: site/dashboard/dashboard.php:214
+#, fuzzy
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "الوصول السريع إلى المدرب الخاص بك في جميع الأوقات."
 
 #: site/dashboard/dashboard.php:215
 #, fuzzy
@@ -3987,10 +4409,13 @@ msgid "My Tools"
 msgstr "أدوات"
 
 #: site/dashboard/dashboard.php:216
+#, fuzzy
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"سيتم فتح منطقة \"أدواتي\" الخاصة بك أثناء تقدمك خلال الدورة التدريبية "
+"وممارسة مهارات التلمذة الأساسية وتطويرها"
 
 #: site/dashboard/dashboard.php:217
 #, fuzzy
@@ -3998,10 +4423,11 @@ msgid "My Plans"
 msgstr "“خطة الشهور الثلاثة” الخاصّة بي"
 
 #: site/dashboard/dashboard.php:218
+#, fuzzy
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
-msgstr ""
+msgstr "افتح منطقة \"خططي\" من خلال إكمال خطتك لمدة 3 أشهر في الجلسة النهائية."
 
 #: site/dashboard/dashboard.php:219
 #, fuzzy
@@ -4009,10 +4435,12 @@ msgid "My Plans are Locked"
 msgstr "1 تدريب"
 
 #: site/dashboard/dashboard.php:220
+#, fuzzy
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"افتح هذه المنطقة عن طريق إنشاء خطتك لمدة ثلاثة أشهر أو إضافة التزام خاص بك."
 
 #: site/dashboard/dashboard.php:221
 #, fuzzy
@@ -4020,24 +4448,31 @@ msgid "My Churches"
 msgstr "كنيستان بسيطتان"
 
 #: site/dashboard/dashboard.php:222
+#, fuzzy
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "افتح منطقة كنائسي من خلال الانضمام إلى المجتمع."
 
 #: site/dashboard/dashboard.php:223
+#, fuzzy
 msgid "My Maps"
-msgstr ""
+msgstr "خرائطي"
 
 #: site/dashboard/dashboard.php:224
+#, fuzzy
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "خرائطي مقفلة"
 
 #: site/dashboard/dashboard.php:225
+#, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"تساعد خرائطي في توضيح رؤية زومي لمتدرب واحد وكنيستين لكل 5000 شخص في "
+"الولايات المتحدة، و50000 شخص على مستوى العالم. لفتح خرائطي، انضم إلى مجتمع "
+"Zúme وتواصل مع صناع التلاميذ الآخرين المتحمسين لرؤية المهمة العظيمة تتحقق."
 
 #: site/dashboard/dashboard.php:226
 #, fuzzy
@@ -4071,14 +4506,17 @@ msgstr "اللقاء رقم ١"
 msgid "Intensive Course"
 msgstr "اللقاء رقم ١"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
+#: utilities/apis/cta-api.php:386
+#, fuzzy
 msgid "Join"
-msgstr ""
+msgstr "ينضم"
 
 #: site/dashboard/dashboard.php:241
+#, fuzzy
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "انضم إلى المجتمع للوصول إلى هذه المنطقة."
 
 #: site/dashboard/dashboard.php:242
 #, fuzzy
@@ -4115,22 +4553,24 @@ msgid "Start Session"
 msgstr "بدء اللقاء"
 
 #: site/dashboard/dashboard.php:250
+#, fuzzy
 msgid "Show details"
-msgstr ""
+msgstr "اظهر التفاصيل"
 
 #: site/dashboard/dashboard.php:251
+#, fuzzy
 msgid "Edit time"
-msgstr ""
+msgstr "تحرير الوقت"
 
-#: site/dashboard/dashboard.php:253 utilities/apis/cta-api.php:235
-#: utilities/apis/cta-api.php:237
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Invite Friends"
 msgstr "قم بدعوة بعض أصدقائك"
 
 #: site/dashboard/dashboard.php:254
+#, fuzzy
 msgid "Click to add your first church"
-msgstr ""
+msgstr "انقر لإضافة كنيستك الأولى"
 
 #: site/dashboard/dashboard.php:255
 #, fuzzy
@@ -4178,12 +4618,12 @@ msgid "You have set your profile"
 msgstr "ملفّك الشّخصي"
 
 #: site/dashboard/dashboard.php:265
-#, php-format
+#, fuzzy, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s مفتوح"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
 #, fuzzy
 msgid "3 month plan"
 msgstr "“خطة الشهور الثلاثة”"
@@ -4193,119 +4633,136 @@ msgstr "“خطة الشهور الثلاثة”"
 msgid "You have joined the community"
 msgstr "الجماعة"
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+#, fuzzy
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+"يُطلب الاسم الحقيقي أو اللقب للمستخدم لتحسين الجودة الشخصية للموقع والتواصل، "
+"وكذلك لطلبات خدمة العملاء والتدريب."
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#, fuzzy
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"مطلوب عنوان البريد الإلكتروني للمستخدم لإنشاء حساب ويتم استخدامه لاتصالات "
+"المعاملات كجزء من تشغيل الموقع."
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
+#, fuzzy
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
-msgstr ""
+msgstr "يتم جمع رقم هاتف المستخدم وتخزينه لدعم خدمة التدريب المجانية."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
+#, fuzzy
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"يُطلب من مدينة المستخدم تخصيص موارد الموقع والاتصالات، وربط المستخدمين بموارد "
+"التدريب وخدمة العملاء المناسبة."
 
-#: site/dashboard/dashboard.php:271
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
 #, fuzzy
-msgid "Zúme Community"
-msgstr "الجماعة"
-
-#: site/dashboard/dashboard.php:272
 msgid ""
-"Zúme is a community of practice and encouragement for those who want to see "
-"disciple making movements. The Zúme vision is to see one trainee and two "
-"simple churches for every 5,000 people in the United States and 50,000 "
-"people globally."
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
 msgstr ""
+"يتم تخزين تفضيلات اللغة الخاصة بالمستخدم لدعم الأداء المناسب للموقع "
+"والاتصالات، ولمساعدتنا على توصيل المستخدم بالتدريب والموارد المناسبة."
 
-#: site/dashboard/dashboard.php:274
-msgid ""
-"Connect with others like you who want to see a disciple making movement in "
-"their area. Share your experience with others, and learn from others who are "
-"discovering new things."
-msgstr ""
-
-#: site/dashboard/dashboard.php:275
-msgid "Encouragement"
-msgstr ""
-
-#: site/dashboard/dashboard.php:276
-msgid ""
-"Hear news about disciple making movements in your region and your wider "
-"country, get reports of  progress, and get connected to online and face-to-"
-"face gatherings."
-msgstr ""
-
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 #, fuzzy
-msgid "Free Tools"
-msgstr "أدوات"
-
-#: site/dashboard/dashboard.php:278
-msgid ""
-"Access free tools for tracking disciple-making and church planting in your "
-"area. Get a map to cast vision for saturating your city with multiplying "
-"disciples and churches."
-msgstr ""
-
-#: site/dashboard/dashboard.php:279
-msgid "Join for Free"
-msgstr ""
-
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
 msgid "Join key"
-msgstr ""
+msgstr "مفتاح الانضمام"
 
-#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
+#, fuzzy
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "ليس رمزًا معترفًا به. يرجى التحقق من الرقم."
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:275
+#, fuzzy
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "أنت غير مفوض لدخول هذه الصفحة"
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "للأسف. هناك بعض الأخطاء في محتوى استمارتك."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:277
+#, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"شكرا لطلبك التدريب. سيعمل فريقنا على توصيلك بالمدرب المتوفر بلغتك ومنطقتك."
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:278
+#, fuzzy
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
-msgstr ""
+msgstr "يرجى مراقبة التواصل من مدربك ضمن تفضيلات الاتصال التي حددتها."
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:279
+#, fuzzy
 msgid "100 Hour Map"
-msgstr ""
+msgstr "خريطة 100 ساعة"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid "Training vision map"
 msgstr "تدريب"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "إشباع كنيسة بسيطة"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:282
+#, fuzzy
+msgid "No date"
+msgstr "تجديد"
+
+#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: zume-training-system.php:318
+#, fuzzy
+msgid "Whatsapp"
+msgstr "واتس اب"
+
+#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: zume-training-system.php:319
+#, fuzzy
+msgid "Signal"
+msgstr "تسجَّل"
+
+#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: zume-training-system.php:320
+#, fuzzy
+msgid "Telegram"
+msgstr "برقية"
+
+#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#, fuzzy
+msgid "Facebook Messenger"
+msgstr "فيس بوك"
+
+#: site/dashboard/dashboard.php:292
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4313,22 +4770,22 @@ msgid ""
 msgstr ""
 "سأشارك قصّتي [شهادتي] وقصّة الله [بشارة الإنجيل] مع الأشخاص التالية أسماؤهم:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "سأدعو التالية أسماؤهم لبدء “مجموعة مساءلة” معي:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr "سأشجّع التالية أسماؤهم على بدء “مجموعات مساءلة” وأدرِّبهم على عمل ذلك:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:295
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "سأدعو التالية أسماؤهم إلى بدء “مجموعة ثلاثة على ثلاثة” معي:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4336,7 +4793,7 @@ msgstr ""
 "سأشجِّع التالية أسماؤهم على بدء “مجموعة ثلاثة على ثلاثة”، وأدرِّبهم على كيفية "
 "عمل ذلك:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4345,16 +4802,16 @@ msgstr ""
 "سأدعو التالية أسماؤهم إلى المشاركة بـ “مجموعة رجاء ثلاثة على ثلاثة” أو "
 "“مجموعة اكتشاف ثلاثة على ثلاثة” [انظر الملحَق]:"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "سأدعو التالية أسماؤهم إلى المشاركة في “مسير الصلاة” معي:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:299
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "سأذهب في “مسير الصلاة” مرّة كل [أيام/ أسابيع/ شهور]."
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4363,500 +4820,575 @@ msgstr ""
 "سأُعِدّ وأدرِّب التالية أسماؤهم على مشاركة قصّتهم وقصّة الله وعلى إعداد قائمة "
 "بأسماء مئة شخص ضمن شبكة علاقاتهم:"
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "‫سوف أتحدّى الأشخاص التّاليين لكي يستخدموا أداة “دورة الصلاة” بشكل منتظم:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:302
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "سأستخدم أداة “دورة الصلاة” مرّة كل [أيام/ أسابيع/ شهور]."
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "سأدعو التالية أسماؤهم ليكونوا جزءاً من “خلية قيادة” سأقودها:"
 
-#: site/dashboard/dashboard.php:306
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "سأشجع التالية أسماؤهم على حضور تدريب زوميه:"
 
-#: site/dashboard/dashboard.php:307
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid "Other commitments:"
 msgstr "إلتزامات أخرى:"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:151
+#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "معالج سيء"
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:152
+#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "لقد وقعت مع بعض المعالجات سيئة للغاية!"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
+#, fuzzy
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "اكتمل المعالج بالفعل"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:154
+#, fuzzy
 msgid "Get back home"
-msgstr ""
+msgstr "عد الى المنزل"
 
-#: site/dashboard/wizard.php:153 site/login/login-template.php:408
+#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#, fuzzy
 msgid "Back"
-msgstr ""
+msgstr "خلف"
 
-#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "التّالي"
 
-#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#, fuzzy
 msgid "Skip"
-msgstr ""
+msgstr "يتخطى"
 
-#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "إنهاء"
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:160
 #, fuzzy
 msgid "No locations found"
 msgstr "لم يتم العثور على المُستخدم."
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:163
+#, fuzzy
+msgid "Zúme Community"
+msgstr "الجماعة"
+
+#: site/dashboard/wizard.php:164
+#, fuzzy
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+"Zúme هو مجتمع من الممارسة والتشجيع لأولئك الذين يريدون رؤية حركات التلمذة. "
+"تتمثل رؤية زومي في رؤية متدرب واحد وكنيستين بسيطتين لكل 5000 شخص في الولايات "
+"المتحدة و50000 شخص على مستوى العالم."
+
+#: site/dashboard/wizard.php:166
+#, fuzzy
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+"تواصل مع الآخرين مثلك الذين يريدون رؤية حركة التلاميذ في منطقتهم. شارك "
+"تجربتك مع الآخرين، وتعلم من الآخرين الذين يكتشفون أشياء جديدة."
+
+#: site/dashboard/wizard.php:167
+#, fuzzy
+msgid "Encouragement"
+msgstr "تشجيع"
+
+#: site/dashboard/wizard.php:168
+#, fuzzy
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+"استمع إلى أخبار حول حركات التلمذة في منطقتك وبلدك الأوسع، واحصل على تقارير "
+"عن التقدم، وتواصل مع التجمعات عبر الإنترنت أو وجهًا لوجه."
+
+#: site/dashboard/wizard.php:169
+#, fuzzy
+msgid "Free Tools"
+msgstr "أدوات"
+
+#: site/dashboard/wizard.php:170
+#, fuzzy
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+"يمكنك الوصول إلى الأدوات المجانية لتتبع عملية التلمذة وزراعة الكنائس في "
+"منطقتك. احصل على خريطة لإلقاء الرؤية لتشبع مدينتك بتكاثر التلاميذ والكنائس."
+
+#: site/dashboard/wizard.php:171
+#, fuzzy
+msgid "Join for Free"
+msgstr "انضم مجانا"
+
+#: site/dashboard/wizard.php:172
+#, fuzzy
+msgid "Successfully joined community"
+msgstr "الجماعة"
+
+#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
+#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#, fuzzy
+msgid "Something went wrong"
+msgstr "حصل خطب ما."
+
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid "Complete your profile"
 msgstr "ملفّك الشّخصي"
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:181
+#, fuzzy
 msgid "What is your name?"
-msgstr ""
+msgstr "ما اسمك؟"
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:182
+#, fuzzy
 msgid "What is your phone number?"
-msgstr ""
+msgstr "ما هو رقم هاتفك؟"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:183
+#, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "يمكن أن يحتوي رقم الهاتف فقط على أرقام وأقواس وواصلات"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:184
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "ماذا تعلّمت عن الله؟"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:185
+#, fuzzy
 msgid "This is your approximate location."
-msgstr ""
+msgstr "هذا هو موقعك التقريبي."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:187
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "السّياسة الخصوصيّة لزومي"
 
-#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "ما هي مدينتك أو الولاية أو الرمز البريدي؟ "
 
-#: site/dashboard/wizard.php:179 zume-training-system.php:316
+#: site/dashboard/wizard.php:195 zume-training-system.php:316
 msgid "Text"
 msgstr "النّصّ"
 
-#: site/dashboard/wizard.php:181 zume-training-system.php:318
+#: site/dashboard/wizard.php:201
 #, fuzzy
-msgid "Whatsapp"
-msgstr "واتس اب"
-
-#: site/dashboard/wizard.php:182 zume-training-system.php:319
-#, fuzzy
-msgid "Signal"
-msgstr "تسجَّل"
-
-#: site/dashboard/wizard.php:183 zume-training-system.php:320
-msgid "Telegram"
-msgstr ""
-
-#: site/dashboard/wizard.php:184
-#, fuzzy
-msgid "Facebook Messenger"
-msgstr "فيس بوك"
-
-#: site/dashboard/wizard.php:185
 msgid "What is your language preference?"
-msgstr ""
+msgstr "ما هي اللغة التي تفضلها؟"
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:203
 msgid "How can we serve you?"
 msgstr "كيف يمكننا خدمتك؟"
 
-#: site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "Coaching"
 msgstr "مُدرِّب"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:205
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "أحتاج إلى مساعدة فنية"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:206
+#, fuzzy
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "سؤال حول تنفيذ التدريب"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:207
+#, fuzzy
 msgid "Question about the content"
-msgstr ""
+msgstr "سؤال حول المحتوى"
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:208
+#, fuzzy
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "المساعدة فيما يجب فعله بعد بدء المجموعة"
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:210
+#, fuzzy
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "يرجى إعطاء الرد على هذا السؤال"
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:211
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr "عند تقديم هذا الطّلب، سنبذل أقصى جهودنا لإيصالك بمدرّب قريب منك."
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:212
+#, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
-msgstr ""
+msgstr "آسف. لم نتمكن من تقديم طلبك. الرجاء معاودة المحاولة في وقت لاحق."
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:213
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "لقد طلبت التدريب. "
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:214
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "اتّصل مع مدرّب"
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "إيصال بمُدرّب"
 
-#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
-#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
-msgid "Please wait while we connect you"
-msgstr ""
-
-#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/wizard.php:205
-msgid "Joining Plan"
-msgstr ""
-
-#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
-msgid "The training link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:208
-#, php-format
-msgid "Successfully joined training %s"
-msgstr ""
-
-#: site/dashboard/wizard.php:209
+#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 #, fuzzy
-msgid "Something went wrong while joining the plan"
-msgstr "نأسف فقد حدث خطأ ما. الرجاء المحاولة مرّة أخرى؟"
+msgid "Please wait while we connect you"
+msgstr "يرجى الانتظار بينما نقوم بتوصيلك"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:221
+#, fuzzy
+msgid "Joining Plan"
+msgstr "خطة الانضمام"
+
+#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#, fuzzy
+msgid "The training link is broken. Please try again."
+msgstr "رابط التدريب مكسور. حاول مرة اخرى."
+
+#: site/dashboard/wizard.php:224
+#, fuzzy, php-format
+msgid "Successfully joined training %s"
+msgstr "تم الانضمام إلى التدريب بنجاح %s"
+
+#: site/dashboard/wizard.php:227
 #, fuzzy
 msgid "Next Session Date"
 msgstr "اللقاء التالي"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:228
 #, fuzzy
 msgid "Start Time"
 msgstr "ابدأ"
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:229
+#, fuzzy
 msgid "Timezone"
-msgstr ""
+msgstr "وحدة زمنية"
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:232
+#, fuzzy
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "لا يوجد حاليا أي تدريبات عامة متاحة."
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:235
+#, fuzzy
 msgid "Connecting with friend"
-msgstr ""
+msgstr "التواصل مع صديق"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:237
+#, fuzzy
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "رابط الصديق معطل. حاول مرة اخرى."
 
-#: site/dashboard/wizard.php:222
-#, php-format
+#: site/dashboard/wizard.php:238
+#, fuzzy, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "تم الاتصال بنجاح مع صديق %s"
 
-#: site/dashboard/wizard.php:223
-msgid "Something went wrong while connecting with friend"
-msgstr ""
-
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:242
 #, fuzzy
 msgid "Checking in"
 msgstr "قائمة التدقيق"
 
-#: site/dashboard/wizard.php:228
-msgid "The checkin link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:229
-msgid "Successfully checked in"
-msgstr ""
-
-#: site/dashboard/wizard.php:230
+#: site/dashboard/wizard.php:244
 #, fuzzy
-msgid "Something went wrong while checking in"
-msgstr "هناك خطأ ما. حاول مجددًا! "
+msgid "The checkin link is broken. Please try again."
+msgstr "رابط تسجيل الوصول معطل. حاول مرة اخرى."
 
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:245
+#, fuzzy
+msgid "Successfully checked in"
+msgstr "تم تسجيل الدخول بنجاح"
+
+#: site/dashboard/wizard.php:250
 #, fuzzy
 msgid "Create a training group"
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:251
 #, fuzzy
 msgid "Join a public training group"
 msgstr "قم بإستضافة تدريب\n"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:252
+#, fuzzy
 msgid "Skip for now"
-msgstr ""
+msgstr "تخطي في الوقت الراهن"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:253
+#, fuzzy
 msgid "Choose your course format"
-msgstr ""
+msgstr "اختر تنسيق الدورة التدريبية الخاصة بك"
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:254
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "لقاء"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "لقاء"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "لقاء"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:257
+#, fuzzy
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "هل ترغب في جدولة التدريب الخاص بك؟"
 
-#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "نعم"
 
-#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "لا"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:260
+#, fuzzy
 msgid "What time of day?"
-msgstr ""
+msgstr "في أي وقت من اليوم؟"
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Morning"
 msgstr "تدريب"
 
-#: site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:262
+#, fuzzy
 msgid "Afternoon"
-msgstr ""
+msgstr "بعد الظهر"
 
-#: site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:263
+#, fuzzy
 msgid "Evening"
-msgstr ""
+msgstr "مساء"
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "كيف تشعر؟"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:265
+#, fuzzy
 msgid "Every day"
-msgstr ""
+msgstr "كل يوم"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:266
+#, fuzzy
 msgid "Once a week"
-msgstr ""
+msgstr "مرة في الأسبوع"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:267
+#, fuzzy
 msgid "Twice a month"
-msgstr ""
+msgstr "مرتان شهريا"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:268
+#, fuzzy
 msgid "Once a month"
-msgstr ""
+msgstr "مرة في الشهر"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:269
 msgid "Other"
 msgstr "غير"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:270
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "ما هو مُحتوى التّدريب؟"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "My first training group"
 msgstr "قم بإستضافة تدريب\n"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "ماذا تعلّمت عن الله؟"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "ماذا تعلّمت عن الله؟"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:274
+#, fuzzy
 msgid "This could be online or in person"
-msgstr ""
+msgstr "يمكن أن يكون هذا عبر الإنترنت أو شخصيًا"
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "Review Schedule"
 msgstr "“دورة التدريب”"
 
-#: site/dashboard/wizard.php:260
-#, php-format
+#: site/dashboard/wizard.php:276
+#, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "تم تحديد %1$s من %2$s."
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "قراءة"
 
-#: site/dashboard/wizard.php:262
-#, php-format
+#: site/dashboard/wizard.php:278
+#, fuzzy, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "تم تحديد عدد كبير جدًا: %s"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:279
+#, fuzzy
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "تم تحديد عدد غير صحيح من الجلسات"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
-#: site/dashboard/wizard.php:268
-#, php-format
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:284
+#, fuzzy, php-format
 msgid "Set %s"
 msgstr ""
+"شارك الدعوة أو الرابط أدناه مع أصدقائك حتى يتمكنوا من الانضمام إلى التدريب "
+"الخاص بك."
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
-#: site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Location"
 msgstr "حفظ الموقع الحالي"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "Group Name"
 msgstr "لا اسم"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "Group name"
 msgstr "لا اسم"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Start Date"
 msgstr "ابدأ"
 
-#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
+#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "وقت"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:289
+#, fuzzy
 msgid "Date"
-msgstr ""
+msgstr "تاريخ"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:290
+#, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "ملخص"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:291
+#, fuzzy
 msgid "Clear Calendar"
-msgstr ""
+msgstr "مسح التقويم"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:292
 msgid "Add"
 msgstr "إضافة"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:293
+#, fuzzy
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "أضف بعض التواريخ إلى جدولك الزمني"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Change"
 msgstr "تغيير المفتاح"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:298
+#, fuzzy
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "قم بدعوة أصدقائك للانضمام إلى التدريب الخاص بك"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:299
+#, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"شارك الدعوة أو الرابط أدناه مع أصدقائك حتى يتمكنوا من الانضمام إلى التدريب "
+"الخاص بك."
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:300
+#, fuzzy
 msgid "Join my zume plan"
-msgstr ""
+msgstr "انضم إلى خطة zume الخاصة بي"
 
-#: site/dashboard/wizard.php:285
-#, php-format
+#: site/dashboard/wizard.php:301
+#, fuzzy, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "يدعوك %s إلى مجموعة تدريب Zume"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:307
 #, fuzzy
 msgid "Copy Invite"
 msgstr "رابط"
@@ -4919,9 +5451,10 @@ msgid "Passwords do not match. Please, try again."
 msgstr "للأسف كلمة المرور غير مطابقة. الرجاء المحاولة مرّة أخرى."
 
 #: site/login/login-template.php:217
-#, php-format
+#, fuzzy, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
 msgstr ""
+"تمت إعادة تعيين كلمة المرور الخاصة بك. %1$s يمكنك تسجيل الدخول هنا %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -4938,8 +5471,9 @@ msgid "Password"
 msgstr "كلمة السر"
 
 #: site/login/login-template.php:267
+#, fuzzy
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "الرجاء اختيار كلمة مرور أقوى. هذا واحد ضعيف جدا."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -4947,15 +5481,17 @@ msgid "Re-enter Password"
 msgstr "الرجاء إعِد ادخال كلمة المرور"
 
 #: site/login/login-template.php:365
+#, fuzzy
 msgid "Hello!"
-msgstr ""
+msgstr "مرحبًا!"
 
 #: site/login/login-template.php:366
+#, fuzzy
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "إنشاء حساب زوم"
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -4963,8 +5499,9 @@ msgid "Register"
 msgstr "قم بالتسجيل"
 
 #: site/login/login-template.php:400
+#, fuzzy
 msgid "Or"
-msgstr ""
+msgstr "أو"
 
 #: site/login/login-template.php:402
 #, fuzzy
@@ -4972,12 +5509,14 @@ msgid "Register with Email"
 msgstr "تسجّل الآن!"
 
 #: site/login/login-template.php:440
+#, fuzzy
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "عنوان بريد إلكتروني منسق بشكل سيء"
 
 #: site/login/login-template.php:447
+#, fuzzy
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "كلمة المرور ليست قوية بما فيه الكفاية"
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -4999,8 +5538,9 @@ msgid "Login"
 msgstr "تسجيل الدخول"
 
 #: site/login/login-template.php:612
+#, fuzzy
 msgid "or sign in with email"
-msgstr ""
+msgstr "أو قم بتسجيل الدخول باستخدام البريد الإلكتروني"
 
 #: site/login/login-template.php:618
 msgid "Username or password does not match. Try again."
@@ -5011,16 +5551,18 @@ msgid "Remember Me"
 msgstr "تذكرني"
 
 #: site/login/login-template.php:689
+#, fuzzy
 msgid "Don't have an account?"
-msgstr ""
+msgstr "ليس لديك حساب؟"
 
 #: site/login/login-template.php:701
 msgid "Lost your password?"
 msgstr "هل أضعت كلمة المرور؟"
 
 #: site/login/login-template.php:712
+#, fuzzy
 msgid "Already have an account?"
-msgstr ""
+msgstr "هل لديك حساب؟"
 
 #: site/login/login-template.php:768
 #, fuzzy
@@ -5028,8 +5570,9 @@ msgid "Username or Email Address"
 msgstr "‫للأسف، اسم المُستخدم أو العنوان الإلكترونيّ غير موجود."
 
 #: site/login/login-template.php:771
+#, fuzzy
 msgid "Log In"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5174,6 +5717,7 @@ msgid ""
 msgstr "لإشباع العالم مع تلاميذ يتضاعفون"
 
 #: site/pages/about.php:100
+#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5183,8 +5727,15 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"في عام 2015، اجتمعت مجموعة صغيرة ملتزمة بتحقيق مهمة يسوع العظمى في اجتماع "
+"قيادة مشروع جوناثان. صلوا وناقشوا التحديات التي تواجه تكاثر التلاميذ حول "
+"العالم. وإدراكًا للحاجة إلى تدريب سهل الوصول إليه ومتعدد اللغات ومرن يتماشى "
+"مع دعوة يسوع للأشخاص العاديين ليكونوا \"خميرة\" للملكوت، ولدت فكرة التدريب "
+"المعتمد على الفيديو عبر الإنترنت. وفي نهاية المطاف، تطورت هذه الفكرة إلى ما "
+"يعرف الآن باسم زومي."
 
 #: site/pages/about.php:101
+#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5192,6 +5743,10 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"إن المبادئ الأساسية للتلمذة في تدريب زومي تأتي مباشرة من الكتاب المقدس وتم "
+"اختبارها عالميًا لأكثر من ثلاثين عامًا. تعمل هذه المبادئ على تمكين المؤمنين "
+"العاديين من أن يصبحوا تلاميذًا، والذين بدورهم يتلمذون، مما يؤدي إلى ملايين "
+"التلاميذ الذين يتقدمون بالملكوت في أماكن مظلمة روحيًا."
 
 #: site/pages/about.php:114
 #, fuzzy
@@ -5206,57 +5761,76 @@ msgstr ""
 "جميعنا موافقون على معاهدة لوزان."
 
 #: site/pages/about.php:120
+#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"الهدف هو إشباع العالم بتزايد عدد التلاميذ في جيلنا. المبادئ الكتابية "
+"الموجودة في هذا التدريب بسيطة. إن إمكانية تغيير العالم تكمن في ممارسة هذه "
+"المبادئ."
 
 #: site/pages/about.php:121
+#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"إن رؤية زومي تشبه الخميرة التي تعمل في العجين بأكمله، فتنشر أدوات الملكوت "
+"الأساسية في الأحياء حول العالم."
 
 #: site/pages/about.php:128
+#, fuzzy
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "تتكون رؤية زومي من جزأين:"
 
 #: site/pages/about.php:132
 msgid "1 Training"
 msgstr "1 تدريب"
 
 #: site/pages/about.php:136
+#, fuzzy
 msgid "Part 1:"
-msgstr ""
+msgstr "الجزء 1:"
 
 #: site/pages/about.php:137
+#, fuzzy
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"تدريب صانع تلمذة واحد على الأقل لكل 5000 شخص في أمريكا الشمالية وصانع تلمذة "
+"واحد لكل 50000 شخص على مستوى العالم."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "كنيستان بسيطتان"
 
 #: site/pages/about.php:147
+#, fuzzy
 msgid "Part 2:"
-msgstr ""
+msgstr "الجزء 2:"
 
 #: site/pages/about.php:148
+#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"لصانعي التلاميذ المدربين أن يبدأوا على الأقل كنيستين بسيطتين مضاعفتين لكل "
+"5000 شخص في أمريكا الشمالية وكنيستين بسيطتين لكل 50000 شخص على مستوى العالم."
 
 #: site/pages/about.php:154
+#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"بهذه البدايات الصغيرة... ما يسميه الكتاب المقدس الخميرة... كان بوسعنا أن نرى "
+"العالم مملوءًا بالتلاميذ والكنائس المتزايدة. استكشف تدريب Zúme واكتشف كيف!"
 
 #: site/pages/about.php:157
 #, fuzzy
@@ -5269,11 +5843,13 @@ msgid "How does Zúme Training Work?"
 msgstr "تدريب زومي"
 
 #: site/pages/about.php:167 site/pages/home.php:213
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sيمنحك التسجيل المجاني%2$s إمكانية الوصول الكامل إلى جميع المواد "
+"التدريبية والتدريب عبر الإنترنت."
 
 #: site/pages/about.php:171 site/pages/home.php:217
 #, fuzzy, php-format
@@ -5308,8 +5884,9 @@ msgstr ""
 "الهدف من وجود تحدّيات للقاء هو مساعدة مجموعتك على الاستمرار في التّعلُّم والنّمو."
 
 #: site/pages/about.php:194
+#, fuzzy
 msgid "Before you start."
-msgstr ""
+msgstr "قبل ان تبدا."
 
 #: site/pages/about.php:201
 #, fuzzy
@@ -5322,23 +5899,31 @@ msgid "First:"
 msgstr "الأوّل"
 
 #: site/pages/about.php:204
+#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"تم تصميم Zúme ليتم القيام به كمجموعة. ستكون التمارين الجماعية والمناقشات "
+"وممارسة المهارات أفضل مع الآخرين، لذا اجمع مجموعة، إن أمكن."
 
 #: site/pages/about.php:207
+#, fuzzy
 msgid "Second:"
-msgstr ""
+msgstr "ثانية:"
 
 #: site/pages/about.php:208
+#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"يدور برنامج Zúme حول تطوير المهارات وبناء الكفاءة، وليس مجرد اكتساب المعرفة. "
+"في كل جلسة، الهدف هو العمل المثمر. أفضل نتيجة للتدريب ستكون تغيير نمط الحياة "
+"وتجربة زيادة القوة في إيمانك."
 
 #: site/pages/about.php:216
 #, fuzzy
@@ -5351,20 +5936,26 @@ msgid "Needed for the training:"
 msgstr "هل تريد أن تبدأ التّدريب؟"
 
 #: site/pages/about.php:221 site/pages/training.php:262
+#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "ما لا يقل عن 3 أشخاص، ولكن من الناحية المثالية أقل من 12."
 
 #: site/pages/about.php:222 site/pages/training.php:263
+#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"الالتزام بقضاء 20 ساعة في تعلم وممارسة المفاهيم والأدوات الموجودة في الدورة."
 
 #: site/pages/about.php:223 site/pages/training.php:264
+#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"شخص لتسهيل (من المحتمل أن تكون أنت) وقت الاجتماع ومكانه، لتوجيه مناقشة "
+"المتابعة، وتسهيل الإجراءات المطالب بها."
 
 #: site/pages/about.php:232
 #, fuzzy
@@ -5372,16 +5963,22 @@ msgid "NOT needed for the training:"
 msgstr "هل تريد أن تبدأ التّدريب؟"
 
 #: site/pages/about.php:234 site/pages/training.php:268
+#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"ليست هناك حاجة إلى مزيد من المعرفة أو الخبرة أكثر من بقية مجموعتك! إذا كان "
+"بإمكانك النقر فوق التالي، فيمكنك قيادة تدريب Zúme."
 
 #: site/pages/about.php:235
+#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"ليس هناك حاجة إلى إذن خاص لقيادة التدريب! Zúme هو برنامج تسهيل ذاتي، ومبادرة "
+"ذاتية، ويمكنك البدء اليوم."
 
 #: site/pages/about.php:246
 #, fuzzy
@@ -5389,15 +5986,19 @@ msgid "Connecting with a Coach."
 msgstr "اتّصل مع مدرّب"
 
 #: site/pages/about.php:253
+#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"طوال الطريق، يتطلع مجتمع Zúme إلى دعمك من خلال توفير مدرب لمساعدتك أنت "
+"ومجموعتك في تنفيذ التدريب بنجاح. لا تتردد في التواصل مع الأسئلة أو المخاوف!"
 
 #: site/pages/about.php:263
+#, fuzzy
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "هل أنت جاهز؟ سجل اليوم."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 #, fuzzy
@@ -5405,8 +6006,9 @@ msgid "Register Free"
 msgstr "تسجّل مجانًا"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
+#, fuzzy
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "الرجاء إدخال رمز الصديق."
 
 #: site/pages/checkin.php:157
 #, fuzzy
@@ -5414,27 +6016,32 @@ msgid "Checkin"
 msgstr "قائمة التدقيق"
 
 #: site/pages/checkin.php:159
+#, fuzzy
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "استخدم الرمز الموجود على الشاشة أو في الكتاب"
 
 #: site/pages/checkin.php:164 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
+#, fuzzy
 msgid "Connect"
-msgstr ""
+msgstr "يتصل"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "يتبرع"
 
 #: site/pages/donate.php:95
+#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
-msgstr ""
+msgstr "نحن نحظى بتمويل جماعي، ونحب رغبتك في أن تكون جزءًا من رؤية Zúme."
 
 #: site/pages/donate.php:103
+#, fuzzy
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "عرض جميع فرص العطاء"
 
 #: site/pages/faq.php:88
 #, fuzzy
@@ -5466,38 +6073,38 @@ msgstr "اسمتع واقرأ سويًا "
 msgid "How to Follow Jesus"
 msgstr "كيف تتبع يسوع"
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 #, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr "شاهد هذا الفيديو المهم الذي يشرح العلاقات الأربع في حياتك الجديدة. "
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 #, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr "ستعلمك الأقسام أدناه معنى أن تكون تابعًا (تلميذًا) ليسوع."
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr "ما هو تابع يسوع؟"
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr "ما هي أنشطة تابع يسوع؟"
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr "قراءة الكتاب المقدس"
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr "ما يعرفه التلاميذ مهم- لكن ما يصنعون بما يعرفونه أهم بكثير. "
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
@@ -5507,11 +6114,11 @@ msgstr ""
 "وممارسة طاعة ومشاركة ما تعلموه. بهذه الطريقة، مجموعة 3/3 ليست مجموعة صغيرة "
 "فحسب، بل هي كنيسة بسيطة. "
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "تعلم كيف تطيع وصايا يسوع من خلال الذهاب والبقاء."
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 #, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
@@ -5520,15 +6127,15 @@ msgstr ""
 "إنها طريقة بسيطة لكي نحتفل باتصالنا الحميمي وعلاقتنا المستمرّة مع يسوع. تعلم "
 "طريقة بسيطة لكي تحتفل. "
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr "التضحية والمعاناة"
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr "كيف أطيع يسوع وأساعد الآخرين ليصبحوا أتباع معي؟"
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -5540,19 +6147,19 @@ msgstr ""
 "وَتَلْمِذُوا جَمِيعَ الأُمَمِ وَعَمِّدُوهُمْ بِاسْمِ الآب وَالابْنِ وَالرُّوحِ الْقُدُسِ. وَعَلِّمُوهُمْ أَنْ يَحْفَظُوا "
 "جَمِيعَ مَا أَوْصَيْتُكُمْ بِهِ. وَهَا أَنَا مَعَكُمْ كُلَّ الأَيَّامِ إِلَى انْقِضَاءِ الدَّهْرِ»."
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr "متى 28: 18-20"
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr "تعليم الآخرين أن يطيعوا ويتبعوا يسوع معك "
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "تعلم ما علاقة فرخ البطة مع صُنع التلاميذ"
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
@@ -5560,20 +6167,20 @@ msgstr ""
 "انظر كيف أنه ليس من الضرورة أن يكون صنع التلاميذ خطيًا. أشياء متعددة ممكن أن "
 "تحصل في الوقت عينه. "
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr "التكلم مع أشخاص تعرفهم عن يسوع"
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr "التكلم مع أشخاص لا تعرفهم عن يسوع"
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr "تعرف على إنسان السلام وكيف تعرف أنك عثرت عليه. "
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 #, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
@@ -5582,7 +6189,7 @@ msgstr ""
 "إنها طريقة بسيطة لإطاعة وصية الله في الصلاة من أجل الآخرين. وهذا ما يبدو "
 "عليه الأمر - الصلاة لله أثناء التجول! "
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 #, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr "ماذا لو بدأ العديد من الأصدقاء، العائلة، وغيرهم في اتباع يسوع معي؟ "
@@ -5593,8 +6200,9 @@ msgid "Friend Invitation"
 msgstr "قبل الدعوة"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
+#, fuzzy
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "استخدم الرمز الذي أرسله لك صديقك."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
@@ -5602,15 +6210,20 @@ msgid "Get A Coach"
 msgstr "اعثر على مُدرِّب"
 
 #: site/pages/get-a-coach.php:89
+#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"كل رياضة رياضية، وخاصة في المستويات العليا، تستخدم التدريب. حتى الرياضيين "
+"الأولمبيين لديهم مدربون، وفي كثير من الأحيان أكثر من مدرب واحد. يمكن أن "
+"يستفيد التلمذة أيضًا من التدريب من قبل أولئك الذين لديهم المزيد من الخبرة."
 
 #: site/pages/get-a-coach.php:92
+#, fuzzy
 msgid "No Cost"
-msgstr ""
+msgstr "دون أي تكلفة"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
@@ -5634,14 +6247,18 @@ msgid "Localized"
 msgstr "محليّ"
 
 #: site/pages/get-a-coach.php:102
+#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"يحاول فريق الاتصال لدينا توصيلك بمدرب يتحدث لغتك ويكون أقرب ما يكون جغرافيًا "
+"قدر الإمكان."
 
 #: site/pages/get-a-coach.php:106
+#, fuzzy
 msgid "Experienced"
-msgstr ""
+msgstr "ذوي الخبرة"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
 #, fuzzy
@@ -5649,15 +6266,20 @@ msgid "Join a training"
 msgstr "قم بإستضافة تدريب\n"
 
 #: site/pages/get-a-coach.php:109
+#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"يتم تدريب جميع المدربين لدينا ويمارسون المفاهيم والأدوات الموجودة في زومي. "
+"يمكن لجميع المدربين لدينا مساعدتك في التغلب على العوائق واتخاذ خطوات في "
+"رحلتك."
 
 #: site/pages/home.php:86
+#, fuzzy
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:87
 #, fuzzy
@@ -5665,20 +6287,23 @@ msgid "Languages"
 msgstr "لغة"
 
 #: site/pages/home.php:129
+#, fuzzy
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "أن نصبح أكثر شبهاً بيسوع... معاً"
 
 #: site/pages/home.php:132
 msgid "Overview"
 msgstr "النظرة العامّة"
 
 #: site/pages/home.php:134
+#, fuzzy
 msgid "Group Discussions"
-msgstr ""
+msgstr "المناقشات الجماعية"
 
 #: site/pages/home.php:135
+#, fuzzy
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "تيسير ذاتي"
 
 #: site/pages/home.php:136
 #, fuzzy
@@ -5686,8 +6311,9 @@ msgid "Practice-Oriented"
 msgstr "ممارسة- أربعة مجالات"
 
 #: site/pages/home.php:137
+#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 المفاهيم والمهارات"
 
 #: site/pages/home.php:138
 #, fuzzy
@@ -5695,12 +6321,14 @@ msgid "20 hours of Training"
 msgstr "قم بإستضافة تدريب\n"
 
 #: site/pages/home.php:144
+#, fuzzy
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "حر. في أي وقت. في أى مكان."
 
 #: site/pages/home.php:148
+#, fuzzy
 msgid "Gain insight into..."
-msgstr ""
+msgstr "اكتساب نظرة ثاقبة..."
 
 #: site/pages/home.php:153
 #, fuzzy
@@ -5713,8 +6341,9 @@ msgid "What's a Disciple?"
 msgstr "تعريف بسيط للتلميذ والكنيسة"
 
 #: site/pages/home.php:156
+#, fuzzy
 msgid "What's a Church?"
-msgstr ""
+msgstr "ما هي الكنيسة؟"
 
 #: site/pages/home.php:157
 #, fuzzy
@@ -5722,16 +6351,19 @@ msgid "Keys to Spiritual Growth"
 msgstr "“التنفس الروحي”"
 
 #: site/pages/home.php:158
+#, fuzzy
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "دراسة الكتاب المقدس الشخصية"
 
 #: site/pages/home.php:159
+#, fuzzy
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "حياة الصلاة القوية"
 
 #: site/pages/home.php:160
+#, fuzzy
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "قوة الإيمان المطيع"
 
 #: site/pages/home.php:167
 #, fuzzy
@@ -5749,8 +6381,9 @@ msgid "Telling Your Story"
 msgstr "قيادة مجموعك"
 
 #: site/pages/home.php:171
+#, fuzzy
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "إشراك الباحثين"
 
 #: site/pages/home.php:172
 #, fuzzy
@@ -5768,12 +6401,14 @@ msgid "Training Others"
 msgstr "تدريب"
 
 #: site/pages/home.php:179 site/pages/home.php:245
+#, fuzzy
 msgid "I'm Ready!"
-msgstr ""
+msgstr "أنا مستعد!"
 
 #: site/pages/home.php:193
+#, fuzzy
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "الناس العاديين. خطوات بسيطة."
 
 #: site/pages/home.php:238
 #, fuzzy
@@ -5781,35 +6416,44 @@ msgid "More about zume"
 msgstr "اكتشف المزيد عن برنامج زومي التدريبي"
 
 #: site/pages/home.php:272
+#, fuzzy
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "أناس حقيقيون...قصص حقيقية."
 
 #: site/pages/home.php:283
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"لقد أمضيت سنوات في حضور دراسات الكتاب المقدس والكنيسة بأمانة، ولكن بطريقة ما "
+"لم أفهم الحقائق البسيطة المتعلقة بالتلمذة التي وجدتها هنا في زومي. ~ ج"
 
 #: site/pages/home.php:294
+#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
-msgstr ""
+msgstr "يمكن لأي شخص أن يفعل هذا. لا تحتاج إلى أي مهارات خاصة أو تدريب. ~ ج"
 
 #: site/pages/home.php:305
+#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"هذا لجميع التلاميذ الذين يريدون طاعة المأمورية العظمى. يحدد تدريب زومي أسلوب "
+"حياة مسيحي عادي. ~ د"
 
 #: site/pages/home.php:316
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
-msgstr ""
+msgstr "هذه المفاهيم والمهارات غيرت كنيستنا وتأثيرنا على العالم. ~ ر"
 
 #: site/pages/home.php:326
-#, fuzzy
-msgid "Zúme = Yeast"
+#, fuzzy, php-format
+msgid "%s = Yeast"
 msgstr "شبكة زومي"
 
 #: site/pages/home.php:332
@@ -5828,8 +6472,9 @@ msgstr ""
 "المؤمنين العاديّين ليملأوا العالم بتلاميذ متضاعفين في هذا الجيل."
 
 #: site/pages/home.php:337
+#, fuzzy
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "هل أنت مستعد لاتخاذ خطواتك التالية؟"
 
 #: site/pages/home.php:341
 #, fuzzy
@@ -5842,8 +6487,9 @@ msgid "Gather a Group."
 msgstr "اخلق مجموعة"
 
 #: site/pages/home.php:349
+#, fuzzy
 msgid "Change the World."
-msgstr ""
+msgstr "تغيير العالم."
 
 #: site/pages/home.php:352
 #, fuzzy
@@ -5851,8 +6497,9 @@ msgid "Get started"
 msgstr "ابدأ"
 
 #: site/pages/kitchen-sink.php:86
+#, fuzzy
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "حوض المطبخ"
 
 #: site/pages/messages.php:236
 #, fuzzy
@@ -5860,8 +6507,9 @@ msgid "Friend"
 msgstr "عنوان المُستخدم"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
+#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr ""
+msgstr "تمكين التلاميذ. في أي وقت... وفي أي مكان باستخدام تطبيق Zúme."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
 #, fuzzy
@@ -5869,37 +6517,45 @@ msgid "Zúme Training App"
 msgstr "تدريب زومي"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
+#, fuzzy
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "الوصول إلى التدريب الكامل أينما ذهبت"
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
+#, fuzzy
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "احصل عليه من متجر جوجل للتطبيقات"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
+#, fuzzy
 msgid "Offline App"
-msgstr ""
+msgstr "التطبيق غير متصل"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
+#, fuzzy
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "التدريب الكامل دون الحاجة إلى الإنترنت"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
+#, fuzzy
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "قم بتنزيل محتوى الدورة والفيديو على هاتفك"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
+#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
+msgstr "رائع للمناطق التي يكون فيها الوصول إلى الإنترنت مقيدًا أو محدودًا"
 
 #: site/pages/plan-invite.php:77
+#, fuzzy
 msgid "Please enter a code."
-msgstr ""
+msgstr "رجاءا أدخل الرمز."
 
 #: site/pages/plan-invite.php:170
+#, fuzzy
 msgid "Plan Invitation"
-msgstr ""
+msgstr "دعوة للخطة"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -5929,10 +6585,13 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "ما هي الأذون التي تطلبها تسجيلات الدّخول على مواقع التّواصل الاجتماعيّ؟"
 
 #: site/pages/privacy-policy.php:91
+#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"تتغير عناصر الملف الشخصي أدناه اعتمادًا على ما إذا كان يتم استخدام تسجيل "
+"الدخول عبر Facebook أو Google."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -5967,9 +6626,10 @@ msgid ""
 msgstr "وأيضًا نتتبّع تقدّمك مِن خلال مسار التّدريب."
 
 #: site/pages/privacy-policy.php:136
+#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
-msgstr ""
+msgstr "نطلب المعلومات الضرورية من خلال نماذج التسجيل والطلب المختلفة."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6096,28 +6756,36 @@ msgid "Training Guidebook"
 msgstr "تدريب الإشباع"
 
 #: site/pages/resources.php:103
+#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"تدريب Zúme متاح الآن في مصنف كامل. جميع المفاهيم والأدوات وأسئلة المناقشة "
+"والتحديات من التدريب الآن في راحة يديك. تتيح لك رموز QR لكل جلسة الوصول إلى "
+"جميع محتويات الفيديو أيضًا!"
 
 #: site/pages/resources.php:111
+#, fuzzy
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "تنزيل مجاني (PDF)"
 
 #: site/pages/resources.php:112
+#, fuzzy
 msgid "Order print copy"
-msgstr ""
+msgstr "طلب نسخة مطبوعة"
 
 #: site/pages/share.php:83
+#, fuzzy
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "انسخ هذا الرابط وأرسله إلى أصدقائك."
 
 #: site/pages/share.php:85
+#, fuzzy
 msgid "Copied"
-msgstr ""
+msgstr "نسخ"
 
 #: site/pages/share.php:122
 msgid "Tools"
@@ -6128,22 +6796,27 @@ msgid "Concepts"
 msgstr "مفاهيم"
 
 #: site/pages/share.php:125
+#, fuzzy
 msgid "Sort"
-msgstr ""
+msgstr "نوع"
 
 #: site/pages/share.php:126
+#, fuzzy
 msgid "Items"
-msgstr ""
+msgstr "أغراض"
 
 #: site/pages/share.php:134
+#, fuzzy
 msgid "Sharing with Others"
-msgstr ""
+msgstr "المشاركة مع الآخرين"
 
 #: site/pages/share.php:141
+#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"عندما نكون أمناء في طاعة ما شاركه الرب معنا ومشاركته، يعدنا بمشاركة المزيد."
 
 #: site/pages/training.php:130
 #, fuzzy
@@ -6156,10 +6829,13 @@ msgid "Create your own training group"
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
 #: site/pages/training.php:136
+#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"اجمع عددًا قليلاً من الأصدقاء أو شارك في الدورة التدريبية مع مجموعة صغيرة "
+"موجودة. قم بإنشاء مجموعة التدريب الخاصة بك وتتبع تقدمك."
 
 #: site/pages/training.php:138
 #, fuzzy
@@ -6167,10 +6843,13 @@ msgid "Create"
 msgstr "“خطة الشهور الثلاثة”"
 
 #: site/pages/training.php:144
+#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"إذا لم تتمكن من جمع مجموعة الآن، ففكر في الانضمام إلى إحدى مجموعاتنا "
+"التدريبية عبر الإنترنت التي يقودها مدرب Zúme ذو الخبرة."
 
 #: site/pages/training.php:149
 #, fuzzy
@@ -6178,10 +6857,13 @@ msgid "Request a coach"
 msgstr "اعثر على مُدرِّب"
 
 #: site/pages/training.php:152
+#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"يمكننا توصيلك بمدرب Zúme المجاني الملتزم بمساعدتك على فهم التدريب وتصبح "
+"تلميذًا مثمرًا."
 
 #: site/pages/training.php:154
 #, fuzzy
@@ -6208,15 +6890,20 @@ msgid "What is required?"
 msgstr "العنوان الإلكترونيّ مطلوب."
 
 #: site/pages/training.php:177
+#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"في هذه الدورة التدريبية الذاتية، ستستخدم أنت ومجموعتك التدريبية مقاطع فيديو "
+"قصيرة وأسئلة للمناقشة وتمارين بسيطة لتطوير مهاراتك ومعرفتك في المجالات "
+"التالية:"
 
 #: site/pages/training.php:181
+#, fuzzy
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "مفاهيم التلمذة"
 
 #: site/pages/training.php:195
 #, fuzzy
@@ -6224,10 +6911,13 @@ msgid "Spiritual Practices"
 msgstr "“التنفس الروحي”"
 
 #: site/pages/training.php:216
+#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"زومي هو 20 ساعة من التدريب. ولكن يمكن تقسيم هذه الساعات العشرين بشكل مختلف "
+"اعتمادًا على توفر مجموعة التدريب الخاصة بك."
 
 #: site/pages/training.php:221
 #, fuzzy
@@ -6235,11 +6925,15 @@ msgid "10 Sessions"
 msgstr "لقاء"
 
 #: site/pages/training.php:228
+#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"تنسيق دورة Zúme الأصلي هو 10 جلسات مدتها ساعتان. تنتهي كل جلسة بخطوات الطاعة "
+"العملية وطرق المشاركة بين الجلسات. يتم تشغيل هذا التنسيق غالبًا مرة واحدة في "
+"الأسبوع لمدة 10 أسابيع."
 
 #: site/pages/training.php:233
 #, fuzzy
@@ -6247,22 +6941,30 @@ msgid "20 Sessions"
 msgstr "لقاء"
 
 #: site/pages/training.php:240
+#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"للحصول على دورة تدريبية أطول وأبطأ مع فرصة أكبر لاكتساب الكفاءة في المفاهيم "
+"والمهارات، فإن تنسيق الجلسة العشرين يحتوي على المزيد من فرص التدريب لكل من "
+"المفاهيم والأدوات."
 
 #: site/pages/training.php:245
+#, fuzzy
 msgid "Intensive"
-msgstr ""
+msgstr "كثيف"
 
 #: site/pages/training.php:252
+#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"يمكن ضغط Zúme إلى 5 أقسام نصف يوم مدة كل منها 4 ساعات. ويمكن القيام بذلك "
+"مساء الجمعة (4 ساعات)، وطوال يوم السبت (8 ساعات)، وطوال يوم الأحد (8 ساعات)."
 
 #: site/pages/training.php:260
 #, fuzzy
@@ -6275,14 +6977,18 @@ msgid "NOT needed for the course:"
 msgstr "هل تريد أن تبدأ التّدريب؟"
 
 #: site/pages/training.php:269
+#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"ليس هناك حاجة إلى إذن خاص لقيادة الدورة! Zúme هو برنامج تسهيل ذاتي، ومبادرة "
+"ذاتية، ويمكنك البدء اليوم."
 
 #: site/parts/footer.php:31
+#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "دورة مكثفة لمدة 3 أيام"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
@@ -6293,12 +6999,47 @@ msgid "Check-in"
 msgstr "قائمة التدقيق"
 
 #: site/parts/noscript.php:2
+#, fuzzy
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "عفوًا، لقد تم إيقاف تشغيل جافا سكريبت"
 
 #: site/parts/noscript.php:3
+#, fuzzy
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "الرجاء تمكين جافا سكريبت لاستخدام هذه الصفحة"
+
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+#, fuzzy
+msgid "Update Communication Preferences"
+msgstr "ما هي مدينتك أو الولاية أو الرمز البريدي؟ "
+
+#: site/profile/communication-preferences.php:81
+#, fuzzy
+msgid "Recieve emails for:"
+msgstr "تلقي رسائل البريد الإلكتروني ل:"
+
+#: site/profile/communication-preferences.php:84
+#, fuzzy
+msgid "Training session reminders"
+msgstr "تدريب"
+
+#: site/profile/communication-preferences.php:88
+#, fuzzy
+msgid "Annual reporting reminders"
+msgstr "تذكير بالتقارير السنوية"
+
+#: site/profile/communication-preferences.php:92
+#, fuzzy
+msgid "Community updates"
+msgstr "الجماعة"
+
+#: site/profile/communication-preferences.php:96
+#, fuzzy
+msgid "Encouragements"
+msgstr "التشجيعات"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6310,8 +7051,9 @@ msgid "your friend"
 msgstr "ملفّك الشّخصي"
 
 #: utilities/apis/connect-api.php:235
+#, fuzzy
 msgid "the plan"
-msgstr ""
+msgstr "الخطة"
 
 #: utilities/apis/cta-api.php:134
 #, fuzzy
@@ -6324,8 +7066,9 @@ msgid "Join Online Training"
 msgstr "انظر التدريب بأكمله"
 
 #: utilities/apis/cta-api.php:149
+#, fuzzy
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "انضم إلى التدريب عبر الإنترنت لمعرفة المزيد"
 
 #: utilities/apis/cta-api.php:163
 #, fuzzy
@@ -6333,8 +7076,9 @@ msgid "Joined Training!"
 msgstr "انظر التدريب بأكمله"
 
 #: utilities/apis/cta-api.php:178
+#, fuzzy
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "احصل على مدرب ليساعدك في رحلتك"
 
 #: utilities/apis/cta-api.php:192
 #, fuzzy
@@ -6342,8 +7086,9 @@ msgid "Requested Coach!"
 msgstr "اعثر على مُدرِّب"
 
 #: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#, fuzzy
 msgid "Congratulations"
-msgstr ""
+msgstr "تهانينا"
 
 #: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 #, fuzzy
@@ -6351,88 +7096,96 @@ msgid "Create a Training"
 msgstr "1 تدريب"
 
 #: utilities/apis/cta-api.php:207
+#, fuzzy
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "إنشاء تدريب لمساعدتك على النمو"
 
 #: utilities/apis/cta-api.php:221
 #, fuzzy
 msgid "Created Training!"
 msgstr "قُم بإعداد “قائمة المئة” الخاصّة بك"
 
-#: utilities/apis/cta-api.php:236
-msgid "Invite friends to join you on your journey"
-msgstr ""
-
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:254
+#, fuzzy
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "قم بتعيين ملف التعريف الخاص بك لمساعدة الآخرين في التعرف عليك"
 
-#: utilities/apis/cta-api.php:265
+#: utilities/apis/cta-api.php:268
 #, fuzzy
 msgid "Profile Set"
 msgstr "الملفّ الشّخصيّ"
 
-#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "“خطة الشهور الثلاثة”"
 
-#: utilities/apis/cta-api.php:280
+#: utilities/apis/cta-api.php:283
+#, fuzzy
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "قم بإنشاء خطة لمدة 3 أشهر لمساعدتك على النمو"
 
-#: utilities/apis/cta-api.php:294
-#, php-format
+#: utilities/apis/cta-api.php:297
+#, fuzzy, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s مفتوح"
 
-#: utilities/apis/cta-api.php:308
+#: utilities/apis/cta-api.php:311
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "“خطة الشهور الثلاثة”"
 
-#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
+#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "“خطة الشهور الثلاثة”"
 
-#: utilities/apis/cta-api.php:323
+#: utilities/apis/cta-api.php:326
+#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "أكمل خطتك لمدة 3 أشهر لمساعدتك على النمو"
 
-#: utilities/apis/cta-api.php:337
+#: utilities/apis/cta-api.php:340
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "“خطة الشهور الثلاثة”"
 
-#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#: utilities/apis/cta-api.php:385
 #, fuzzy
-msgid "Join a Hub"
+msgid "Join the community"
 msgstr "الجماعة"
 
-#: utilities/apis/cta-api.php:368
-msgid "Join a hub to help you grow"
-msgstr ""
-
-#: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "“التنفس الروحي”"
 
-#: utilities/apis/cta-api.php:386
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "“التنفس الروحي”"
 
-#: utilities/apis/cta-api.php:400 utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "الإشراف العلائقي - قائمة المئة "
 
-#: utilities/apis/cta-api.php:401
+#: utilities/apis/cta-api.php:417
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "الإشراف العلائقي - قائمة المئة "
+
+#: utilities/apis/plans-api.php:134
+#, fuzzy, php-format
+msgctxt "My first training - username"
+msgid "My first training - %s"
+msgstr "قم بإستضافة تدريب\n"
+
+#: utilities/apis/plans-api.php:136
+#, fuzzy, php-format
+msgctxt "Training 2 - username"
+msgid "Training %1$d - %2$s"
+msgstr "تدريب"
 
 #: utilities/hooks/roles-and-permissions.php:56
 #, fuzzy
@@ -6463,14 +7216,23 @@ msgstr "تدريب زومي"
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
+#, fuzzy
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "تحميل عرض الشرائح"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
+#, fuzzy
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "مشاركة صفحة زومي"
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+#, fuzzy
+msgid "Zúme Annual Report"
+msgstr "تقرير زومي السنوي"
 
 #: utilities/post-types/posttype-pieces.php:301
 #, fuzzy
@@ -6523,16 +7285,19 @@ msgid "User Phone"
 msgstr "رقم الهاتف"
 
 #: zume-training-system.php:279
+#, fuzzy
 msgid "User Timezone"
-msgstr ""
+msgstr "المنطقة الزمنية للمستخدم"
 
 #: zume-training-system.php:287
+#, fuzzy
 msgid "User Friend Key"
-msgstr ""
+msgstr "مفتاح صديق المستخدم"
 
 #: zume-training-system.php:295
+#, fuzzy
 msgid "User Preferred Language"
-msgstr ""
+msgstr "اللغة المفضلة للمستخدم"
 
 #: zume-training-system.php:303
 #, fuzzy
@@ -6540,28 +7305,42 @@ msgid "User Preferred Email"
 msgstr "العنوان الإلكترونيّ"
 
 #: zume-training-system.php:311
+#, fuzzy
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "طرق الاتصال المفضلة"
 
 #: zume-training-system.php:321
+#, fuzzy
 msgid "Messenger"
-msgstr ""
+msgstr "رسول"
 
-#. Plugin Name of the plugin/theme
 #, fuzzy
-msgid "Zúme - Training System"
-msgstr "تدريب زومي"
+#~ msgid "Switch Views"
+#~ msgstr "تبديل وجهات النظر"
 
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr "https://github.com/ZumeProject/zume-training "
+#~ msgid "Something went wrong while joining the plan"
+#~ msgstr "نأسف فقد حدث خطأ ما. الرجاء المحاولة مرّة أخرى؟"
 
-#. Description of the plugin/theme
 #, fuzzy
-msgid "Zume Training System"
-msgstr "تدريب زومي"
+#~ msgid "Something went wrong while checking in"
+#~ msgstr "هناك خطأ ما. حاول مجددًا! "
+
+#, fuzzy
+#~ msgid "Join a Hub"
+#~ msgstr "الجماعة"
+
+#, fuzzy
+#~ msgid "Zúme - Training System"
+#~ msgstr "تدريب زومي"
+
+#, fuzzy
+#~ msgid "https://github.com/ZumeProject/zume-training-system"
+#~ msgstr "https://github.com/ZumeProject/zume-training "
+
+#, fuzzy
+#~ msgid "Zume Training System"
+#~ msgstr "تدريب زومي"
 
 #, fuzzy
 #~ msgid "Submit Report"
@@ -6599,10 +7378,6 @@ msgstr "تدريب زومي"
 #, fuzzy
 #~ msgid "Zúme Training Dashboard"
 #~ msgstr "موارد تدريب زومي"
-
-#, fuzzy
-#~ msgid "Update Your Communication Preferences"
-#~ msgstr "ما هي مدينتك أو الولاية أو الرمز البريدي؟ "
 
 #~ msgid "Coaches"
 #~ msgstr "مدرّبون"
@@ -9145,9 +9920,6 @@ msgstr "تدريب زومي"
 
 #~ msgid "Facebook already linked with another account."
 #~ msgstr "متصل Facebook من خلال حساب آخر."
-
-#~ msgid "Oops. Something went wrong."
-#~ msgstr "حصل خطب ما."
 
 #~ msgid "Great job! Here's your progress with this concept"
 #~ msgstr "عمل عظيم! إليك تقدّمك مع هذا المفهوم"

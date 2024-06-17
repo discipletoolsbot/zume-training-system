@@ -1,11 +1,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-21 22:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Gujarati <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/gu/>\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"PO-Revision-Date: 2024-06-11 05:53+0000\n"
+"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
+"translate@weblate.org>\n"
+"Language-Team: Gujarati <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/gu/>\n"
 "Language: gu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,18 +36,21 @@ msgstr "પ્રશ્નો અને તેના ઉત્તરો"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:108
-#: site/parts/nav.php:19 site/parts/nav.php:71
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "ડેશબોર્ડ"
 
 #: appearance/style-override/navigation.php:112
+#, fuzzy
 msgid "My Zúme"
-msgstr ""
+msgstr "મારા ઝુમ"
 
 #: appearance/style-override/navigation.php:117
+#, fuzzy
 msgid "Contacts"
-msgstr ""
+msgstr "સંપર્કો"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
@@ -58,10 +62,11 @@ msgid "Trainings"
 msgstr "તાલીમ આપવી"
 
 #: appearance/style-override/navigation.php:135
+#, fuzzy
 msgid "Metrics"
-msgstr ""
+msgstr "મેટ્રિક્સ"
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr "લોક સમુદાય"
 
@@ -75,17 +80,18 @@ msgid "Stories"
 msgstr "સંગ્રહ"
 
 #: appearance/style-override/navigation.php:160
+#, fuzzy
 msgid "Global Map"
-msgstr ""
+msgstr "વૈશ્વિક નકશો"
 
-#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "પ્રભુ સામાન્ય લોકોનો ઉપયોગ કરે છે"
 
-#: globals.php:1908 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,44 +99,45 @@ msgstr ""
 "પ્રભુ કેવી રીતે સામાન્ય લોકોના સરળ કાર્યો કરવા દ્વારા મોટી અસર ઉપજાવવા માટે ઉપયોગ કરે "
 "છે તે તમે જોશો."
 
-#: globals.php:1918 site/course/course-content.php:3161
-#: site/course/course-content.php:3179
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "શિષ્ય અને મંડળીની સરળ વ્યાખ્યા"
 
-#: globals.php:1919 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "શિષ્ય હોવાનું, શિષ્ય બનાવવાનું અને મંડળી શું છે તેનું મહત્ત્વ શોધો."
 
-#: globals.php:1920 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
+#, fuzzy
 msgid "Disciples and the Church"
-msgstr ""
+msgstr "શિષ્યો અને ચર્ચ"
 
-#: globals.php:1929 site/course/course-content.php:3162
-#: site/course/course-content.php:3180
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "આત્મિક શ્વાસોચ્છવાસ તો પ્રભુની વાત સાંભળવી અને તેને આધીન થવું છે"
 
-#: globals.php:1930 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "શિષ્ય હોવું એટલે આપણે પ્રભુની વાત સાંભળીએ અને તેને આધીન થઈએ."
 
-#: globals.php:1931 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "આત્મિક શ્વાસોચ્છવાસ તો પ્રભુની વાત સાંભળવી અને તેને આધીન થવું છે"
 
-#: globals.php:1940 globals.php:1942
+#: globals.php:1969 globals.php:1971
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "S.O.A.P.S. બાઇબલ વાંચન"
 
-#: globals.php:1941 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -138,14 +145,14 @@ msgstr ""
 "દૈનિક બાઇબલ અભ્યાસ માટેનું સાધન તમને પ્રભુનાં વચનો સમજવા, આધીન થવા અને બીજાઓને જણાવવા "
 "માટે મદદરૂપ થશે."
 
-#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "જવાબદાર જૂથો"
 
-#: globals.php:1952 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -154,41 +161,41 @@ msgstr ""
 "એક જ જાતિના બે વ્યક્તિઓ અઠવાડિયા દરમ્યાન મળીને એકબીજાને તેઓ જે ક્ષેત્રોમાં સારું કાર્ય કરી "
 "રહ્યા હોય તેમાં ઉત્તેજન આપે અને જે ક્ષેત્રોમાં સુધારાની જરૂર હોય તે વિશે જણાવે."
 
-#: globals.php:1962
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "ગ્રાહક અને ઉત્પાદકની જીવનશૈલી"
 
-#: globals.php:1963 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
 "પ્રભુ દરરોજ પોતાની પાછળ ચાલનારાઓને ઈસુ જેવાં બનાવે છે તે વિશેના ચાર માર્ગો તમે જોશો."
 
-#: globals.php:1964
+#: globals.php:1993
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "ઉત્પાદકો વિ. ગ્રાહકો"
 
-#: globals.php:1973 globals.php:1975
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "કેવી રીતે એક કલાક પ્રાર્થનામાં ગાળવો"
 
-#: globals.php:1974 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "એક કલાક પ્રાર્થનામાં ગાળવો કેટલું સરળ છે તે જુઓ."
 
-#: globals.php:1984
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "સંબંધાત્મક કારભારીપણું - 100 વ્યક્તિઓની યાદી"
 
-#: globals.php:1985 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 "તમારા સંબંધોના સારા કારભારી બનવા માટે તમને મદદરૂપ થઈ શકે તે માટે તૈયાર કરવામાં આવેલું "
 "સાધન."
 
-#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -199,13 +206,13 @@ msgstr ""
 msgid "List of 100"
 msgstr "૧૦૦ વ્યક્તિઓની યાદી"
 
-#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "આત્મિક અર્થતંત્ર"
 
-#: globals.php:1996 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -213,11 +220,11 @@ msgstr ""
 "પ્રભુનું અર્થતંત્ર જગતના અર્થતંત્રથી કેવી રીતે અલગ છે તે શીખો. જેમને અગાઉથી જે કંઈ આપવામાં આવ્યું "
 "છે તેમાં તેઓ વિશ્વાસુ રહે છે તેમને પ્રભુ વધારે આપે છે."
 
-#: globals.php:2006
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "સુવાર્તા અને તેને કેવી રીતે વહેંચવી"
 
-#: globals.php:2007 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -225,16 +232,16 @@ msgstr ""
 "માણસજાતની શરૂઆતથી તેના અંત સુધીની વાત જણાવવા દ્વારા કેવી રીતે સુવાર્તા પ્રગટ કરી શકાય "
 "તે શીખો."
 
-#: globals.php:2008
+#: globals.php:2037
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "તમારી સાક્ષી આપવાનો મહાવરો કરો (૪૫ મિનિટ)"
 
-#: globals.php:2017
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "બાપ્તિસ્મા અને તે કેવી રીતે કરવું"
 
-#: globals.php:2018 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -243,35 +250,35 @@ msgstr ""
 "ઈસુએ કહ્યું કે, ''તમે જઈને સર્વ દેશનાઓને શિષ્ય કરો; બાપ તથા દીકરા તથા પવિત્ર આત્માને નામે "
 "તેઓને બાપ્તિસ્મા આપતા જાઓ...'' આ કાર્યનો કેવી રીતે અભ્યાસ કરવો તે શીખો."
 
-#: globals.php:2019 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "બાપ્તિસ્મા"
 
-#: globals.php:2028
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "તમારી 3 મિનિટની સાક્ષી તૈયાર કરો"
 
-#: globals.php:2029 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr "ઈસુએ તમારા જીવન પર કેવી રીતે અસર ઉપજાવી છે તેની 3 મિનિટની સાક્ષી આપતાં શીખો."
 
-#: globals.php:2030
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr "૩ મિનિટની સાક્ષી"
 
-#: globals.php:2039 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "દર્શન જણાવવું મોટામાં મોટો આશીર્વાદ છે"
 
-#: globals.php:2040 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
@@ -279,35 +286,35 @@ msgstr ""
 "ફક્ત એક જ નહિ પરંતુ આખા કુટુંબો આત્મિક રીતે પ્રભુનાં શિષ્યો બને અને આવનારી પેઢીઓને પણ પ્રભુ "
 "પાસે લાવે તેની સરળ પદ્ધતિ શીખો."
 
-#: globals.php:2041
+#: globals.php:2070
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "મોટામાં મોટો આશીર્વાદ"
 
-#: globals.php:2050
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "બતકના બચ્ચાંના ઉદાહરણ દ્વારા શિષ્યપણાની વાત કરવી - તરત જ આગેવાની આપવી"
 
-#: globals.php:2051
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "શિષ્ય બનાવવાની પદ્ધતિમાં બતકનાં બચ્ચાંની વાત કેવી રીતે ઉપયોગી છે તે શીખો."
 
-#: globals.php:2052 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "બતકના બચ્ચાનાં ઉદાહરણ દ્વારા શિષ્યપણું"
 
-#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 #, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "જ્યાં દેવનું રાજ્ય નથી એવા સ્થળો જોનાર આંખો"
 
-#: globals.php:2062 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -315,11 +322,11 @@ msgstr ""
 "દેવનું રાજ્ય નથી તે જોવાની શરૂઆત કરો. આ એવાં ક્ષેત્રો છે જ્યાં પ્રભુ સૌથી વધારે કાર્ય કરવા "
 "માગે છે."
 
-#: globals.php:2072
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "પ્રભુભોજન અને કેવી રીતે તેમાં આગેવાની આપવી"
 
-#: globals.php:2073
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -327,7 +334,7 @@ msgstr ""
 "આ તો પ્રભુ સાથેના આપણા ગાઢ સંબંધની ઉજવણી કરવાની સરળ રીત છે. તેની ઉજવણી કરવાની સરળ "
 "રીત શીખો."
 
-#: globals.php:2074 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -335,11 +342,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "પ્રભુની પ્રાર્થના"
 
-#: globals.php:2083
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "ચાલતાં-ચાલતાં પ્રાર્થના કરવી અને તે કેવી રીતે કાર્ય કરવું"
 
-#: globals.php:2084
+#: globals.php:2113
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -348,34 +355,34 @@ msgstr ""
 "બીજાઓ માટે પ્રાર્થના કરવા માટેની પ્રભુની આજ્ઞાને આધીન થવાની આ એક સરળ રીત છે. અને તે એવું "
 "લાગે કે - ચાલતાં-ચાલતાં પ્રાર્થના કરવી."
 
-#: globals.php:2085 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "ચાલતાં-ચાલતાં પ્રાર્થના કરવી"
 
-#: globals.php:2094
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "શાંતિનો પુત્ર અને કેવી રીતે તે શોધવો"
 
-#: globals.php:2095
+#: globals.php:2124
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr "શાંતિના પુત્રને શોધો અને તમને તે મળ્યો છે તે કેવી રીતે જાણશો."
 
-#: globals.php:2096 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "શાંતિનો પુત્ર"
 
-#: globals.php:2105
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "જ્ઞાન કરતાં વિશ્વાસુપણું વધારે સારું છે"
 
-#: globals.php:2106
+#: globals.php:2135
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -383,31 +390,31 @@ msgid ""
 msgstr ""
 "શિષ્યો શું જાણે છે તે મહત્ત્વનું છે - પરંતુ તેઓ જે જાણે છે તેનું શું કરે છે તે તેનાથી વધારે મહત્ત્વનું છે."
 
-#: globals.php:2107 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "વિશ્વાસુપણું"
 
-#: globals.php:2116
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "BLESS પ્રાર્થનાની પદ્ધતિ"
 
-#: globals.php:2117 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "બીજાઓ માટે પ્રાર્થના કરવાની રીતો યાદ કરવાની પદ્ધતિનો અભ્યાસ કરો."
 
-#: globals.php:2118 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "B.L.E.S.S. પ્રાર્થનાનો મહાવરો કરો (૧૫ મિનિટ)"
 
-#: globals.php:2127
+#: globals.php:2156 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 જૂથની સભાની પદ્ધતિ\n"
 
-#: globals.php:2128
+#: globals.php:2157
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -418,34 +425,34 @@ msgstr ""
 "અને જે શીખ્યા છે તેનો અભ્યાસ કરીને તેને આધીન થશે અને બીજાઓને જણાવશે. આ રીતે 3/3 સભ્યોનું જૂથ એ "
 "ફક્ત એક નાનું જૂથ જ નહિ પરંતુ એક સરળ મંડળી બની જશે."
 
-#: globals.php:2129
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr "૩/૩ જૂથ"
 
-#: globals.php:2138
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "પરિપક્વ થઈ રહેલા શિષ્યોનું તાલીમ ચક્ર"
 
-#: globals.php:2139 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "તાલીમ ચક્ર વિશે શીખો અને શિષ્યો બનાવવામાં તે કેવી રીતે ઉપયોગી થાય છે તેનો વિચાર કરો."
 
-#: globals.php:2140 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "તાલીમ ચક્ર"
 
-#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "આગેવાનીના જૂથો"
 
-#: globals.php:2150 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
@@ -453,12 +460,12 @@ msgstr ""
 "આગેવાનીનું જૂથ તો એ સ્થાન છે જ્યાં જે વ્યક્તિને આગેવાની આપવાનું તેડું હોય તે વ્યક્તિ તેમાં સેવા "
 "આપવાનો અભ્યાસ કરીને તેના તેડાનો વિકાસ કરી શકે છે."
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
-#: site/course/course-content.php:5175
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "બિનક્રમિક વૃદ્ધિની અપેક્ષા રાખવી"
 
-#: globals.php:2161
+#: globals.php:2190
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -467,42 +474,43 @@ msgstr ""
 "કેવી રીતે શિષ્યો બનાવવાનું કાર્ય ફક્ત એક જ પ્રવૃત્તિ નથી તે જુઓ. એક જ સમયે ઘણાં કાર્યો થઈ "
 "શકે છે."
 
-#: globals.php:2171 site/course/course-content.php:2770
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "વૃદ્ધિની ઝડપ મહત્ત્વની છે"
 
-#: globals.php:2172 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
 "વૃદ્ધિ કરવી અને ખાસ કરીને ઝડપથી વૃદ્ધિ કરવી તે મહત્ત્વનું છે. ઝડપ શા માટે મહત્ત્વની છે તે જુઓ."
 
-#: globals.php:2173 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "ગતિ"
 
-#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "હંમેશા બે મંડળીઓના સભ્ય"
 
-#: globals.php:2183
+#: globals.php:2212
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "ઈસુની એ આજ્ઞા કે જાઓ અને સુવાર્તા પ્રગટ કરો તેને કેવી રીતે આધીન થવું તે શીખો."
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "ત્રણ મહિનાની યોજના"
 
-#: globals.php:2195
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -510,7 +518,7 @@ msgstr ""
 "હવે પછીના ત્રણ મહિનામાં ઝુમ સાધનોનો કેવી રીતે ઉપયોગ કરશો તે વિશેની તમારી યોજના બનાવો "
 "અને તે વિશે જણાવો."
 
-#: globals.php:2205 globals.php:2207
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -521,14 +529,14 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "શિક્ષણની તપાસ યાદી"
 
-#: globals.php:2206 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -536,14 +544,14 @@ msgstr ""
 "વૃદ્ધિ કરનારા શિષ્યો બનાવવા માટે તમારા બળ અને નિર્બળતાઓ વિશે ઝડપથી જાણવા માટેના એક "
 "સમર્થ સાધનનો ઉપયોગ કરી શકો છો."
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "માળખામાં આગેવાની"
 
-#: globals.php:2217 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -551,14 +559,14 @@ msgstr ""
 "વૃદ્ધિ પામતી મંડળીઓ કેવી રીતે એકબીજા સાથે સંપર્કમાં રહી શકે અને વિકાસ પામેલા આત્મિક કુટુંબ "
 "તરીકે સાથે મળીને જીવન જીવી શકે તે વિશે શીખો."
 
-#: globals.php:2227 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "સહકર્મીને શિક્ષણ આપવાના જૂથો"
 
-#: globals.php:2228 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -567,15 +575,15 @@ msgstr ""
 "આ જૂથમાં 3/3 જૂથમાં આગેવાની આપનાર અને તેની શરૂઆત કરનાર લોકોનો સમાવેશ થાય છે. તે 3/3 "
 "જૂથની પદ્ધતિને અનુસરે છે અને તમારા વિસ્તારમાં પ્રભુના કાર્યનું મૂલ્યાંકન કરવાનો સારો માર્ગ છે."
 
-#: globals.php:2229 site/dashboard/dashboard.php:273
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr "સહકર્મીઓને શિક્ષણ આપવું"
 
-#: globals.php:2238 globals.php:2240
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr "ચાર ક્ષેત્રોનું સાધન"
 
-#: globals.php:2239
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -584,14 +592,14 @@ msgstr ""
 "ચાર ક્ષેત્રોનો આલેખ તો આગેવાનોના જૂથ દ્વારા તેમની આસપાસ દેવના રાજ્યની પ્રવૃત્તિ અને હાલના "
 "પ્રયત્નોનું સ્તર જાણવા માટેનું એક સરળ સાધન છે."
 
-#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "પેઢીઓનું મૂલ્યાંકન"
 
-#: globals.php:2250
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -599,39 +607,47 @@ msgstr ""
 "પેઢીઓનો નકશો તૈયાર કરવો એ પણ આગેવાનોને તેમની આસપાસ થતી વૃદ્ધિને સમજવા માટેનું સરળ સાધન "
 "છે."
 
-#: globals.php:2260
+#: globals.php:2289
+#, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "3-વર્તુળો ગોસ્પેલ પ્રસ્તુતિ"
 
-#: globals.php:2261
+#: globals.php:2290
+#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"3-વર્તુળો ગોસ્પેલ પ્રસ્તુતિ એ એક સરળ ચિત્રનો ઉપયોગ કરીને ગોસ્પેલ કહેવાની એક રીત છે જે "
+"કાગળના ટુકડા પર દોરી શકાય છે."
 
-#: globals.php:2262
+#: globals.php:2291
+#, fuzzy
 msgid "3-Circles"
-msgstr ""
+msgstr "3-વર્તુળો"
 
-#: globals.php:6993 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: globals.php:7022 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "બંધ કરો"
 
-#: globals.php:7195
+#: globals.php:7224
+#, fuzzy
 msgid "No Results"
-msgstr ""
+msgstr "પરિણામ નથી"
 
 #: site/activities/coaching-checklist-host.php:97
+#, fuzzy
 msgid "H.O.S.T."
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
+#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "સાંભળેલ, આજ્ઞા કરેલ, વહેંચાયેલ, પ્રશિક્ષિત નો ઉપયોગ કરીને તમારું સ્વ-મૂલ્યાંકન કરો."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
@@ -686,42 +702,56 @@ msgstr "તાલીમ આપી"
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "શું મેં આ સાધન અથવા ખ્યાલ વિશે સાંભળ્યું છે?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"શું મેં આ સાધન અથવા ખ્યાલનું પાલન કર્યું છે? જો કોઈ સાધન હોય, તો શું મેં મારી જાતે તેનો અભ્યાસ "
+"કર્યો છે? જો કોઈ ખ્યાલ હોય, તો શું તમે તેના પર પ્રતિબિંબિત કર્યું છે કે તે તમારા પરિપ્રેક્ષ્યને "
+"કેવી રીતે બદલે છે?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"શું મેં આ સાધન અથવા ખ્યાલ શેર કર્યો છે? જો કોઈ સાધન છે, તો શું તમે કોઈને બતાવ્યું છે કે આ "
+"સાધનનો ઉપયોગ કેવી રીતે કરવો? જો કોન્સેપ્ટ છે, તો શું તમે આ કોન્સેપ્ટ કોઈની સાથે શેર કર્યો છે?"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"શું મેં અન્ય લોકોને આ ટૂલ અથવા કન્સેપ્ટ શેર કરવા માટે તાલીમ આપી છે? જો કોઈ સાધન હોય, તો શું "
+"મેં કોઈને કોઈ બીજા સાથે સાધન શેર કરવા માટે તાલીમ આપી છે? જો કોન્સેપ્ટ હોય, તો શું મેં કોઈને "
+"કોઈ બીજા સાથે કોન્સેપ્ટ શેર કરવા માટે તાલીમ આપી છે?"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
+#, fuzzy
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
+#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr ""
+msgstr "મૉડલ, આસિસ્ટ, વોચ, લીવનો ઉપયોગ કરીને અન્યને કોચ કરો."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
@@ -735,8 +765,9 @@ msgstr "તમારી જાતને પ્રશ્ન પૂછો"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Model"
-msgstr ""
+msgstr "મોડેલ"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -744,8 +775,9 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Assist"
-msgstr ""
+msgstr "સહાય કરો"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -755,8 +787,9 @@ msgstr ""
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:204
+#, fuzzy
 msgid "Watch"
-msgstr ""
+msgstr "જુઓ"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -764,12 +797,14 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Leave"
-msgstr ""
+msgstr "રજા"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -777,10 +812,15 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"મોડેલિંગ એ ફક્ત પ્રેક્ટિસ અથવા સાધનનું ઉદાહરણ પૂરું પાડવું છે. તે તાલીમ ચક્રનો સંક્ષિપ્ત ભાગ છે. "
+"તે સામાન્ય રીતે માત્ર એક જ વાર કરવાની જરૂર છે. તે ફક્ત એક જાગરૂકતા કે પ્રેક્ટિસ અથવા સાધન "
+"અસ્તિત્વમાં છે અને તે કેવું દેખાય છે તેનો સામાન્ય ખ્યાલ આપે છે. વારંવાર મોડેલિંગ એ કોઈને સજ્જ "
+"કરવાની અસરકારક રીત નથી."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -790,10 +830,17 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"મદદ એ શીખનારને કૌશલ્યનો અભ્યાસ કરવાની મંજૂરી આપે છે. આ મોડેલિંગ તબક્કા કરતાં વધુ સમય લે "
+"છે. તેને માર્ગદર્શકના ભાગ પર \"હેન્ડ-હોલ્ડિંગ\" ની જરૂર છે. માર્ગદર્શકે નિર્દેશક હોવા જોઈએ "
+"અને શીખનારને કોચિંગ આપવામાં સક્રિય ભૂમિકા ભજવવી જોઈએ. આ તબક્કો જ્યાં સુધી શીખનાર સંપૂર્ણ "
+"રીતે સક્ષમ ન થાય ત્યાં સુધી ટકી શકતો નથી, પરંતુ માત્ર જ્યાં સુધી તેઓ કૌશલ્યની મૂળભૂત બાબતોને "
+"સમજે નહીં ત્યાં સુધી. જો આ તબક્કો ખૂબ લાંબો ચાલુ રાખવામાં આવે, તો શીખનાર માર્ગદર્શક પર "
+"નિર્ભરતા કેળવશે અને ક્યારેય સંપૂર્ણ યોગ્યતા તરફ આગળ વધશે નહીં."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -801,29 +848,41 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"જોવું એ સૌથી લાંબો તબક્કો છે. તેમાં શીખનાર સાથે વધુ પરોક્ષ સંપર્કનો સમાવેશ થાય છે. તે "
+"કૌશલ્યના તમામ પાસાઓમાં સંપૂર્ણ યોગ્યતા વિકસાવવા માંગે છે. પ્રથમ બે તબક્કાઓ સંયુક્ત હોય તેટલા "
+"તે દસ ગણા અથવા વધુ હોઈ શકે છે. જેમ જેમ શીખનાર કૌશલ્યમાં આગળ વધે છે તેમ, માર્ગદર્શક સાથેનો "
+"સંપર્ક ઓછો નિયમિત અને વધુ તદર્થ બની શકે છે."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"જ્યારે શીખનાર માર્ગદર્શકનો સાથી બને છે ત્યારે છોડવું એ એક પ્રકારનું ગ્રેજ્યુએશન છે. જો શીખનાર "
+"અને માર્ગદર્શક એક જ નેટવર્કમાં હોય તો સમયાંતરે સંપર્ક અને પીઅર મેન્ટરિંગ ચાલુ રહી શકે છે. "
+"જ્યારે માતા-પિતા બાળકને તેમની સાયકલ સંપૂર્ણપણે દેખરેખ વિના ચલાવવા માટે મુક્ત કરે છે, ત્યારે તે "
+"રજાનો તબક્કો છે."
 
 #: site/activities/coaching-checklist-two.php:98
+#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "1. સાંભળેલ, આજ્ઞા કરેલ, વહેંચાયેલ, પ્રશિક્ષિત નો ઉપયોગ કરીને તમારું સ્વ-મૂલ્યાંકન કરો."
 
 #: site/activities/coaching-checklist-two.php:99
+#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr ""
+msgstr "2. મૉડલ, આસિસ્ટ, વોચ, લીવનો ઉપયોગ કરીને અન્યને કોચ કરો."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
+#, fuzzy
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "સ્વ મૂલ્યાંકન"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
@@ -833,13 +892,15 @@ msgstr "આગેવાનીના જૂથો"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Unaware"
-msgstr ""
+msgstr "અજાણ"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
+#, fuzzy
 msgid "Unskilled"
-msgstr ""
+msgstr "અકુશળ"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
@@ -849,77 +910,94 @@ msgstr "અભ્યાસક્રમ પૂરો થયો"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
+#, fuzzy
 msgid "Skilled"
-msgstr ""
+msgstr "કુશળ"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
+#, fuzzy
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "માર્ગદર્શકની ભૂમિકા"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "નવી માહિતીને તાલીમ આપો અને સમજણની ખાતરી કરો"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "જ્યાં સુધી તેમની પાસે મૂળભૂત બાબતો ન હોય ત્યાં સુધી રોકો અને તેમની સાથે રહો"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "સતત સક્ષમ ન થાય ત્યાં સુધી રોકાયેલા રહો"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "તેમની સાથે સહ-મજૂર તરીકે સંબંધ રાખો"
 
 #: site/activities/coaching-checklist.php:167
+#, fuzzy
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "માર્ગદર્શકની વર્તણૂક"
 
 #: site/activities/coaching-checklist.php:173
+#, fuzzy
 msgid "Direct and inform"
-msgstr ""
+msgstr "સીધો અને જાણ કરો"
 
 #: site/activities/coaching-checklist.php:176
+#, fuzzy
 msgid "Direct and support"
-msgstr ""
+msgstr "ડાયરેક્ટ અને સપોર્ટ"
 
 #: site/activities/coaching-checklist.php:179
+#, fuzzy
 msgid "Support and encourage"
-msgstr ""
+msgstr "સમર્થન અને પ્રોત્સાહિત કરો"
 
 #: site/activities/coaching-checklist.php:182
+#, fuzzy
 msgid "Receive updates"
-msgstr ""
+msgstr "અપડેટ્સ મેળવો"
 
 #: site/activities/coaching-checklist.php:187
+#, fuzzy
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "આયોજન જવાબદારીઓ"
 
 #: site/activities/coaching-checklist.php:193
+#, fuzzy
 msgid "Mentor decides"
-msgstr ""
+msgstr "માર્ગદર્શક નક્કી કરે છે"
 
 #: site/activities/coaching-checklist.php:196
+#, fuzzy
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "ચર્ચા કરો અને માર્ગદર્શક નિર્ણય લે છે"
 
 #: site/activities/coaching-checklist.php:199
+#, fuzzy
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "ચર્ચા કરો અને મેન્ટી નિર્ણય લે છે"
 
 #: site/activities/coaching-checklist.php:202
+#, fuzzy
 msgid "Mentee decides"
-msgstr ""
+msgstr "મેન્ટી નક્કી કરે છે"
 
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr ""
+msgstr "શું મેન્ટી ટૂલથી અજાણ છે, અજાણ્યો છે અથવા ગેરસમજ કરી રહ્યો છે?"
 
 #: site/activities/coaching-checklist.php:269
 #, fuzzy
@@ -928,10 +1006,11 @@ msgstr ""
 "જો તમે કોઇ સાધનથી વાકેફ છો પણ તેના વિશે ખાતરી નથી તો લાલ રંગના ખાનામાં નિશાની કરો"
 
 #: site/activities/coaching-checklist.php:272
+#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr ""
+msgstr "શું મેન્ટી ટૂલને સમજે છે અને ટૂલની મૂળભૂત બાબતોને તાલીમ આપવામાં સક્ષમ છે?"
 
 #: site/activities/coaching-checklist.php:275
 #, fuzzy
@@ -948,13 +1027,15 @@ msgstr "બતકના બચ્ચાનાં ઉદાહરણ દ્વા
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unbeliever"
-msgstr ""
+msgstr "અશ્રદ્ધાળુઓ"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unknown"
-msgstr ""
+msgstr "અજાણ્યું"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
@@ -963,8 +1044,9 @@ msgid "3-Month Plan"
 msgstr "ત્રણ મહિનાની યોજના"
 
 #: site/activities/three-month-plan.php:67
+#, fuzzy
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "છાપવા યોગ્ય સંસ્કરણ પર સ્વિચ કરો"
 
 #: site/activities/three-month-plan.php:80
 #, fuzzy
@@ -972,13 +1054,16 @@ msgid "Scripts are off"
 msgstr "વચન"
 
 #: site/activities/three-month-plan.php:81
+#, fuzzy
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"કૃપા કરીને આ ઇન્ટરેક્ટિવ પૃષ્ઠનો ઉપયોગ કરવા માટે સ્ક્રિપ્ટ્સ ચાલુ કરો. નહિંતર તમે ઉપરની "
+"લિંકનો ઉપયોગ કરીને છાપવાયોગ્ય સંસ્કરણનો ઉપયોગ કરી શકો છો."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:271 site/profile/profile.php:153
+#: site/dashboard/wizard.php:287 site/profile/profile.php:153
 msgid "Save"
 msgstr "સેવ"
 
@@ -1089,10 +1174,13 @@ msgid "The Gospel"
 msgstr "સુવાર્તા"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
+#, fuzzy
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
+"ઈશ્વરના સારા સમાચાર શેર કરવાની એક રીત 3 વર્તુળો નામની વિઝ્યુઅલ પ્રેઝન્ટેશનનો ઉપયોગ "
+"કરીને છે."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1124,14 +1212,16 @@ msgstr "શું તમને એમ લાગે છે કે આ રીત�
 #: site/course/course-content.php:3671 site/course/course-content.php:3941
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
+#, fuzzy
 msgid "ACTIVITY"
-msgstr ""
+msgstr "પ્રવૃત્તિ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
+#, fuzzy
 msgid "Scan the QR code or find a piece of paper."
-msgstr ""
+msgstr "QR કોડ સ્કેન કરો અથવા કાગળનો ટુકડો શોધો."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #, fuzzy
@@ -1139,14 +1229,18 @@ msgid "Select a person from your list of 100."
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
+#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"કોચિંગ ચેકલિસ્ટનો ઉપયોગ કરો અને તમારી પસંદ કરેલી વ્યક્તિનું મૂલ્યાંકન કરો. તમારી જાતને "
+"પૂછો, \"આ વ્યક્તિને દરેક સાધનો અને ખ્યાલો માટે શું જોઈએ છે?\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
+#, fuzzy
 msgid "Check off the checklist."
-msgstr ""
+msgstr "ચેકલિસ્ટ બંધ કરો."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1165,10 +1259,12 @@ msgid "Activity Resource"
 msgstr "શ્રોતો"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
+#, fuzzy
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"તમારું મૂલ્યાંકન કરો - તમારું મૂલ્યાંકન કરો અને કોચિંગ ચેકલિસ્ટ પર સંબંધિત કૉલમ્સને ચિહ્નિત કરો."
 
 #: site/course/course-builder.php:164
 #, fuzzy
@@ -1262,8 +1358,9 @@ msgstr "૯૦ મિનિટ"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
+#, fuzzy
 msgid "SESSION 1"
-msgstr ""
+msgstr "સત્ર 1"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1321,8 +1418,9 @@ msgstr "તપાસ-કરો"
 #: site/course/course-content.php:5743 site/course/course-content.php:5794
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
+#, fuzzy
 msgid "Have all of the participants and facilitator check-in."
-msgstr ""
+msgstr "બધા સહભાગીઓ અને ફેસિલિટેટર ચેક-ઇન કરાવો."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1342,8 +1440,9 @@ msgstr ""
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
+#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "અથવા zume.training/checkin અને કોડનો ઉપયોગ કરો:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1396,8 +1495,9 @@ msgstr "નિરીક્ષણ"
 #: site/course/course-content.php:3801 site/course/course-content.php:4351
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
+#, fuzzy
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે આ વિભાવનાઓ સાંભળીશું અને ચર્ચા કરીશું:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 #, fuzzy
@@ -1411,12 +1511,14 @@ msgstr "આત્મિક શ્વાસોચ્છવાસ"
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
+#, fuzzy
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "અને અમે આ સાધનોને અમારી ટૂલકીટમાં ઉમેરીશું:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr "S.O.A.P.S. બાઇબલ વાંચન"
 
@@ -1478,22 +1580,27 @@ msgstr ""
 "થવું એ તો પ્રભુ સાથેના આપણા વ્યક્તિગત સંબંધની ચાવીરૂપ બાબત છે."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
+#, fuzzy
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "પ્રેક્ટિસ S.O.A.P.S."
 
 #: site/course/course-content.php:274
+#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"QR કોડ સ્કેન કરો અને મેથ્યુ 6:9-13 નો ઉપયોગ કરીને SOAPS બાઇબલ અભ્યાસ પેટર્ન દ્વારા "
+"વ્યક્તિગત રીતે કાર્ય કરો. (20 મિનિટ)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
 msgstr "વચન"
 
 #: site/course/course-content.php:277
+#, fuzzy
 msgid "Observation"
-msgstr ""
+msgstr "અવલોકન"
 
 #: site/course/course-content.php:278
 #, fuzzy
@@ -1501,7 +1608,7 @@ msgid "Application"
 msgstr "સ્થળ"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr "પ્રાર્થના"
 
@@ -1511,9 +1618,10 @@ msgid "Sharing"
 msgstr "શેર કરો"
 
 #: site/course/course-content.php:282
+#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
-msgstr ""
+msgstr "સાથે પાછા ફરો અને તમારો S.O.A.P.S શેર કરો. બે અથવા ત્રણ જૂથોમાં. (10 મિનિટ)"
 
 #: site/course/course-content.php:304
 #, fuzzy
@@ -1525,8 +1633,9 @@ msgstr ""
 "હિસાબ આપવો પડશે. જવાબદાર જૂથો તો તેની તૈયારી કરવાનો સારો માર્ગ છે!"
 
 #: site/course/course-content.php:305
+#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "જવાબદારી જૂથો તૈયાર થવા માટે એક સરસ રીત છે!"
 
 #: site/course/course-content.php:329
 #, fuzzy
@@ -1539,8 +1648,9 @@ msgstr "અભ્યાસ કરો - જવાબદારીના જૂથ�
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
+#, fuzzy
 msgid "Scan the QR code."
-msgstr ""
+msgstr "QR કોડ સ્કેન કરો."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -1580,15 +1690,17 @@ msgstr "નિરીક્ષણ"
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
+#, fuzzy
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "આ સત્રમાં સાંભળેલા ખ્યાલો:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
+#, fuzzy
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "આ સત્રમાં સાંભળેલા સાધનો:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1633,28 +1745,36 @@ msgstr ""
 "પદ્ધતિનો ઉપયોગ કરીને દૈનિક નોંધ તૈયાર કરો."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"ઓછામાં ઓછા પાંચ લોકોને પડકારવા માટે ભગવાનને પૂછો કે તમે જાણો છો કે જેઓ વિશ્વાસીઓ છે તેઓ "
+"તેમની પોતાની S.O.A.P.S. શરૂ કરવા. દરરોજ બાઇબલ વાંચનનો અભ્યાસ કરો અને પછી કરો."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
+#, fuzzy
 msgid "SESSION 2"
-msgstr ""
+msgstr "સત્ર 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
+#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
-msgstr ""
+msgstr "પૂછો કે શું જૂથમાં કોઈને ચોક્કસ જરૂરિયાતો છે કે તેઓ ઈચ્છે છે કે જૂથ પ્રાર્થના કરે."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
+#, fuzzy
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"ભગવાનનો આભાર કે તેઓ તેમના શબ્દમાં વચન આપે છે કે તેમના લોકો પ્રાર્થના કરે ત્યારે સાંભળશે અને "
+"કાર્ય કરશે."
 
 #: site/course/course-content.php:442
 #, fuzzy
@@ -1740,8 +1860,9 @@ msgstr "આ અઠવાડિયે તમારા જૂથે કેવી �
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
+#, fuzzy
 msgid "In this session, we will hear and discuss this concept:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે આ ખ્યાલ સાંભળીશું અને તેની ચર્ચા કરીશું:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -1799,12 +1920,14 @@ msgstr ""
 "સાંભળવાની તક છે!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
+#, fuzzy
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr ""
+msgstr "એક કલાક માટે પ્રાર્થના ચક્રને વ્યક્તિગત રીતે પ્રાર્થના કરો"
 
 #: site/course/course-content.php:572
+#, fuzzy
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
+msgstr "તમારા ફોન પર પ્રાર્થના ચક્ર માર્ગદર્શિકા મેળવવા માટે QR કોડ સ્કેન કરો."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
@@ -1833,10 +1956,11 @@ msgid ""
 msgstr "જો તમે આવી પ્રાર્થનાને તમારી નિયમિત આદત બનાવો તો તમારું જીવન કેવું થશે?"
 
 #: site/course/course-content.php:613
+#, fuzzy
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr ""
+msgstr "\"જાઓ અને શિષ્યો બનાવવા\" માટે જરૂરી સંબંધો ભગવાને આપણને પહેલેથી જ આપ્યા છે."
 
 #: site/course/course-content.php:614
 #, fuzzy
@@ -1849,16 +1973,18 @@ msgstr ""
 "અથવા હમણા જ મળ્યા હોય તે લોકો છે."
 
 #: site/course/course-content.php:615
+#, fuzzy
 msgid "Stewarding the relationships you have is the best place to start."
-msgstr ""
+msgstr "તમારી પાસેના સંબંધોનું સંચાલન કરવું એ શરૂ કરવા માટેનું શ્રેષ્ઠ સ્થાન છે."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
 #: site/course/course-content.php:643
+#, fuzzy
 msgid "Scan QR code or use a piece of paper."
-msgstr ""
+msgstr "QR કોડ સ્કેન કરો અથવા કાગળના ટુકડાનો ઉપયોગ કરો."
 
 #: site/course/course-content.php:644
 #, fuzzy
@@ -1870,10 +1996,13 @@ msgstr ""
 "વ્યક્તિઓની યાદી”ના વિભાગમાં જે ફોર્મ આપેલું છે તેને ભરવાનું છે."
 
 #: site/course/course-content.php:645
+#, fuzzy
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
 msgstr ""
+"પછી ભગવાન સાથેના તેમના સંબંધની તમારી શ્રેષ્ઠ સમજણને ચિહ્નિત કરો: શિષ્ય, અવિશ્વાસુ અથવા "
+"અજાણ્યા."
 
 #: site/course/course-content.php:682
 #, fuzzy
@@ -1912,15 +2041,17 @@ msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "વૃદ્ધિ કરનારાં શિષ્યોથી જગતને ભરી દેવું"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
+#, fuzzy
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr ""
+msgstr "Zúme એ લોકો માટે પ્રેક્ટિસનો સમુદાય છે જેઓ શિષ્ય બનાવવાની હિલચાલ જોવા માંગે છે."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
+#, fuzzy
 msgid "SESSION 3"
-msgstr ""
+msgstr "સત્ર 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 #, fuzzy
@@ -2014,7 +2145,7 @@ msgstr ""
 "છીએ. આ મહત્વના દિવસે જ્યારે તમે ઈસુને “હા” કહો છો ત્યારે તેની ઉજવણીમાં ભાગીદાર થવા માટે "
 "તમારા જૂથને આમંત્રણ આપો."
 
-#: site/course/course-content.php:1016
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
 msgid "The Spiritual Economy"
 msgstr "આત્મિક અર્થતંત્ર"
@@ -2059,8 +2190,9 @@ msgstr ""
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
+#, fuzzy
 msgid "SESSION 4"
-msgstr ""
+msgstr "સત્ર 4"
 
 #: site/course/course-content.php:1109
 #, fuzzy
@@ -2071,10 +2203,12 @@ msgstr ""
 "આપો."
 
 #: site/course/course-content.php:1110
+#, fuzzy
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"તમારા જૂથના દરેક સભ્યને ખ્રિસ્તનું મન આપવા માટે તેને કહો - અને દરેકને તેના આત્માથી ભરી દો."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
@@ -2102,9 +2236,10 @@ msgid "Practice sharing your testimony"
 msgstr "અભ્યાસ કરો - તમારી સાક્ષી બીજાઓને જણાવવા વિશે"
 
 #: site/course/course-content.php:1192
+#, fuzzy
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr ""
+msgstr "તમારી વાર્તા લખવા પર કામ કરો અને તેને માત્ર ત્રણ મિનિટ સુધી રાખો. (10 મિનિટ)"
 
 #: site/course/course-content.php:1193
 #, fuzzy
@@ -2243,8 +2378,9 @@ msgstr ""
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
+#, fuzzy
 msgid "SESSION 5"
-msgstr ""
+msgstr "સત્ર 5"
 
 #: site/course/course-content.php:1485
 #, fuzzy
@@ -2290,10 +2426,13 @@ msgstr ""
 "શાંતિનો પુત્ર હોઇ શકે? શા માટે અથવા શા માટે નહિ?"
 
 #: site/course/course-content.php:1594
+#, fuzzy
 msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"તમારી નજીકના સમાજનો એવો કયો સમુદાય અથવા સેગમેન્ટ છે જેમાં રાજ્યની હાજરી ઓછી (અથવા "
+"નહીં) હોય એવું લાગે છે?"
 
 #: site/course/course-content.php:1595
 #, fuzzy
@@ -2351,26 +2490,34 @@ msgid "This session ends with the prayer walking activity."
 msgstr "ચાલતાં-ચાલતાં પ્રાર્થના કરવાની પ્રવૃત્તિ સાથે આ સેશનનો અંત થાય છે."
 
 #: site/course/course-content.php:1660
+#, fuzzy
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"તમે તમારી પ્રાર્થના વૉકિંગ પ્રવૃત્તિ પર જાઓ તે પહેલાં, તમારો સમય એકસાથે સમાપ્ત કરવા માટે "
+"તમારા જૂથ સાથે પ્રાર્થના કરવાની ખાતરી કરો."
 
 #: site/course/course-content.php:1661
+#, fuzzy
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
-msgstr ""
+msgstr "ભગવાનનો આભાર કે તે ખોવાયેલા, છેલ્લા અને સૌથી ઓછાને પ્રેમ કરે છે - અમારા સહિત!"
 
 #: site/course/course-content.php:1662
+#, fuzzy
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"તેને કહો કે તે તમારા હૃદયને તૈયાર કરે અને તમે જેમને તમારી ચાલ દરમિયાન મળશો તેમના હૃદયને "
+"તેમના કાર્ય માટે ખુલ્લા રહેવા માટે તૈયાર કરો."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
+#, fuzzy
 msgid "SESSION 6"
-msgstr ""
+msgstr "સત્ર 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
 #, fuzzy
@@ -2391,8 +2538,9 @@ msgstr "જ્ઞાન કરતાં વિશ્વાસુપણું વ
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
+#, fuzzy
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "અને અમે આ ટૂલને અમારી ટૂલકીટમાં ઉમેરીશું:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2471,8 +2619,9 @@ msgstr ""
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
+#, fuzzy
 msgid "SESSION 7"
-msgstr ""
+msgstr "સત્ર 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
 #, fuzzy
@@ -2551,8 +2700,9 @@ msgstr "સૌથી વધારે પડકારજનક શું હત�
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
+#, fuzzy
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "આ સત્રમાં સાંભળવામાં આવેલ ખ્યાલ:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2560,25 +2710,33 @@ msgstr ""
 #: site/course/course-content.php:4091 site/course/course-content.php:4377
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
+#, fuzzy
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "આ સત્રમાં સાંભળ્યું સાધન:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
+#, fuzzy
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"તમે Zúme માં શીખ્યા છો તે એક કૌશલ્ય અથવા ખ્યાલ પસંદ કરો અને તેને ચોથી પેઢીમાં પુનઃઉત્પાદન "
+"કરવા માટે કોઈને માર્ગદર્શન આપો."
 
 #: site/course/course-content.php:2100
+#, fuzzy
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
 msgstr ""
+"વધારાની (પાંચમી) પેઢી સુધી પ્રક્રિયા ચાલુ રાખવા માટે તમે જે વ્યક્તિને માર્ગદર્શન આપ્યું છે તેને "
+"પડકાર આપો."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
+#, fuzzy
 msgid "SESSION 8"
-msgstr ""
+msgstr "સત્ર 8"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
@@ -2591,8 +2749,9 @@ msgstr ""
 "વગર કંઇ કરી શકતા નથી તે માટે પ્રાર્થના કરો!"
 
 #: site/course/course-content.php:2192
+#, fuzzy
 msgid "And we will practice this tool from our toolkit:"
-msgstr ""
+msgstr "અને અમે અમારી ટૂલકીટમાંથી આ સાધનની પ્રેક્ટિસ કરીશું:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2629,19 +2788,24 @@ msgstr ""
 "તેનો વિકાસ કરો."
 
 #: site/course/course-content.php:2277
+#, fuzzy
 msgid "Concept from this session:"
-msgstr ""
+msgstr "આ સત્રમાંથી ખ્યાલ:"
 
 #: site/course/course-content.php:2281
+#, fuzzy
 msgid "Tool from this session:"
-msgstr ""
+msgstr "આ સત્રમાંથી સાધન:"
 
 #: site/course/course-content.php:2298
+#, fuzzy
 msgid ""
 "Select some people from your List of 100 who are already believers. Explain "
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
+"તમારી 100 ની યાદીમાંથી કેટલાક એવા લોકોને પસંદ કરો જેઓ પહેલેથી જ આસ્થાવાન છે. તેમને "
+"લીડરશીપ કોષો સમજાવો અને જુઓ કે તેઓ એકનો ભાગ બનવામાં રસ ધરાવે છે કે કેમ."
 
 #: site/course/course-content.php:2299
 #, fuzzy
@@ -2655,8 +2819,9 @@ msgstr ""
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
+#, fuzzy
 msgid "SESSION 9"
-msgstr ""
+msgstr "સત્ર 9"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
 #, fuzzy
@@ -2731,18 +2896,24 @@ msgid ""
 msgstr "તમે આ અઠવાડિયે એવું કયું એક કાર્ય કરશો જેનાથી તફાવત લાવી શકાય?"
 
 #: site/course/course-content.php:2506
+#, fuzzy
 msgid ""
 "Jesus taught us that we are to stay close — to live as a small, spiritual "
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"ઈસુએ અમને શીખવ્યું કે આપણે નજીક રહેવાનું છે - એક નાના, આધ્યાત્મિક કુટુંબ તરીકે જીવવું, એકબીજાને "
+"પ્રેમ કરવો અને આપણું જીવન આપવું, ઉજવણી કરવી અને સહન કરવું - સાથે."
 
 #: site/course/course-content.php:2507
+#, fuzzy
 msgid ""
 "However, Jesus also taught us to leave our homes and loved ones behind and "
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"જો કે, ઈસુએ અમને અમારા ઘરો અને પ્રિયજનોને પાછળ છોડી દેવા અને નવા આધ્યાત્મિક કુટુંબોને શેર "
+"કરવા અને શરૂ કરવા માટે ગમે ત્યાં - અને દરેક જગ્યાએ - જવા માટે તૈયાર રહેવાનું પણ શીખવ્યું."
 
 #: site/course/course-content.php:2532
 #, fuzzy
@@ -2755,16 +2926,22 @@ msgstr ""
 "એવાં આત્મિક કુટુંબની સુસંગતતા જાળવવાના કેટલાક લાભો કયા કયા છે?"
 
 #: site/course/course-content.php:2549
+#, fuzzy
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"કોચિંગ ચેકલિસ્ટ એ એક સરળ સાધન છે જેનો ઉપયોગ તમે સંપૂર્ણ રીતે સજ્જ શિષ્ય બનવાના વિવિધ "
+"ભાગોમાં અન્ય લોકોને મદદ કરવા માટે તમને માર્ગદર્શન આપવા માટે કરી શકો છો."
 
 #: site/course/course-content.php:2576
+#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"લાઇન 1 નો ઉપયોગ કરીને તમારું સ્વ-મૂલ્યાંકન કરો અને કોચિંગ ચેકલિસ્ટ પર સંબંધિત કૉલમ્સને "
+"ચિહ્નિત કરો."
 
 #: site/course/course-content.php:2596
 #, fuzzy
@@ -2795,12 +2972,14 @@ msgstr ""
 "સાધનનો ઉપયોગ કયા ક્ષેત્રોમાં તમારે તાલીમ કે ધ્યાન આપવાની જરૂર છે તેનું મૂલ્યાંકન કરો."
 
 #: site/course/course-content.php:2611
+#, fuzzy
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"જો તમારી પાસે કોચ અથવા માર્ગદર્શક ન હોય, તો QR કોડ સ્કેન કરો અને હમણાં એક વિનંતી કરો."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:201 site/pages/about.php:254
+#: site/dashboard/wizard.php:217 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
@@ -2810,22 +2989,30 @@ msgid "Get a Coach"
 msgstr "શિક્ષક મેળવો"
 
 #: site/course/course-content.php:2626
+#, fuzzy
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"ચાર ક્ષેત્રો અને જનરેશનલ મેપિંગ એ વધતા ચળવળના પ્રયત્નોને સેવા આપવા માટે રચાયેલ સાધનો છે."
 
 #: site/course/course-content.php:2627
+#, fuzzy
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"રીમાઇન્ડર: તમારા સ્થાનિક વિસ્તારમાં આ સાધનોને લાગુ કરવામાં તમારી સહાય માટે ઝુમે કોચ "
+"ઉપલબ્ધ છે."
 
 #: site/course/course-content.php:2642
+#, fuzzy
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"કામ કેવી રીતે ચાલી રહ્યું છે તેની સમીક્ષા કરવા ઈસુ ઘણીવાર શિષ્યોને સેવાકાર્યથી દૂર શાંત "
+"સ્થળોએ ખેંચી લેતા."
 
 #: site/course/course-content.php:2643
 #, fuzzy
@@ -2838,42 +3025,57 @@ msgstr ""
 "પ્રયત્નોનું સ્તર જાણવા માટેનું એક સરળ સાધન છે."
 
 #: site/course/course-content.php:2644
+#, fuzzy
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
-msgstr ""
+msgstr "આગળની બે સ્લાઇડ્સની સમીક્ષા કરો: ક્ષેત્ર વર્ણનો અને ચાર ક્ષેત્રોના ઉદાહરણ"
 
 #: site/course/course-content.php:2655
+#, fuzzy
 msgid "Field Descriptions"
-msgstr ""
+msgstr "ક્ષેત્ર વર્ણનો"
 
 #: site/course/course-content.php:2657
+#, fuzzy
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"ખાલી ક્ષેત્ર: તમે ક્યાં અથવા કોની સાથે [કયા લોકોના જૂથો] રાજ્યને વિસ્તારવાનું આયોજન કરી "
+"રહ્યાં છો?"
 
 #: site/course/course-content.php:2658
+#, fuzzy
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"બીજ રોપવાનું ક્ષેત્ર: તમે રાજ્યની ખુશખબર ક્યાં કે કોની સાથે શેર કરો છો? તમે તે કેવી રીતે કરી "
+"રહ્યા છો?"
 
 #: site/course/course-content.php:2659
+#, fuzzy
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"ગ્રોઇંગ ફિલ્ડ: તમે લોકોને કેવી રીતે સજ્જ કરી રહ્યાં છો અને તેમને આધ્યાત્મિક, વ્યક્તિગત રીતે અને "
+"તેમના કુદરતી નેટવર્કમાં કેવી રીતે વધારી રહ્યાં છો?"
 
 #: site/course/course-content.php:2660
+#, fuzzy
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
-msgstr ""
+msgstr "હાર્વેસ્ટિંગ ફિલ્ડ: નવા આધ્યાત્મિક પરિવારો [સરળ ચર્ચો] કેવી રીતે રચાઈ રહ્યા છે?"
 
 #: site/course/course-content.php:2661
+#, fuzzy
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"ગુણાકાર ક્ષેત્ર: તમે વિશ્વાસુ લોકો માટે કોની સાથે, કેવી રીતે અને ક્યારે ફિલ્ટર કરી રહ્યાં છો "
+"અને તેમને સજ્જ કરી રહ્યાં છો અને તેમને પ્રજનન માટે જવાબદાર ગણો છો?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 #, fuzzy
@@ -2881,24 +3083,32 @@ msgid "Four Fields Example"
 msgstr "ચાર ક્ષેત્રોનું સાધન"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
+#, fuzzy
 msgid "Discuss"
-msgstr ""
+msgstr "ચર્ચા કરો"
 
 #: site/course/course-content.php:2699
+#, fuzzy
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"તમારી આસપાસના ખાલી ક્ષેત્રને ઓળખો. તમે કયા સમુદાયો અથવા લોકોના જૂથો સાથે જોડાયેલા છો "
+"જેમાં કોઈ ગોસ્પેલ પ્રવૃત્તિ નથી?"
 
 #: site/course/course-content.php:2700
+#, fuzzy
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"જો કોઈ એક ક્ષેત્રની અવગણના કરવામાં આવે તો લાંબા ગાળાના વિકાસને કેવી રીતે અસર થાય છે? "
+"ઉદાહરણો આપો."
 
 #: site/course/course-content.php:2701
+#, fuzzy
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "કયા Zúme સાધનો કયા ક્ષેત્રમાં મદદ કરી શકે છે?"
 
 #: site/course/course-content.php:2716
 #, fuzzy
@@ -2910,16 +3120,21 @@ msgstr ""
 "છે."
 
 #: site/course/course-content.php:2717
+#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"એક પેઢીના વૃક્ષનો નકશો કાગળના ટુકડા અથવા કાગળના બહુવિધ ટુકડાઓ પર દોરી શકાય છે. આ "
+"નકશો ગુણાકારમાં ક્યાં સ્ટોપ છે તે બતાવવામાં મદદ કરે છે અને તાલીમની જરૂર પડી શકે છે. ચળવળનું "
+"આરોગ્ય એ નેતાઓ માટે ટોચની ચિંતા છે અને ફળદાયીતા એ આરોગ્યને માપવાની ટોચની રીત છે."
 
 #: site/course/course-content.php:2718
+#, fuzzy
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "આગળની સ્લાઈડ પર જુઓ ઉદાહરણ."
 
 #: site/course/course-content.php:2729
 #, fuzzy
@@ -2927,12 +3142,14 @@ msgid "Generational Mapping Example"
 msgstr "પેઢીઓનું મૂલ્યાંકન"
 
 #: site/course/course-content.php:2748
+#, fuzzy
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "નીચેની ચર્ચા કરવા માટે જનરેશનલ મેપિંગ ઉદાહરણનો ઉપયોગ કરો:"
 
 #: site/course/course-content.php:2750
+#, fuzzy
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "કયા નેતાઓ ગુણાકાર જોઈ રહ્યા છે?"
 
 #: site/course/course-content.php:2751
 #, fuzzy
@@ -2940,52 +3157,71 @@ msgid "Which groups would you expect to multiply next?"
 msgstr "તમને શું લાગે છે શેની વૃદ્ધિ કરવી સરળ હશે? કેમ?"
 
 #: site/course/course-content.php:2752
+#, fuzzy
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "કયા નેતાઓ અન્ય નેતાઓને મદદ અને મજબૂત કરી શકે છે?"
 
 #: site/course/course-content.php:2753
+#, fuzzy
 msgid "Do you see a pattern of weak accountability in any of the generations?"
-msgstr ""
+msgstr "શું તમે કોઈ પણ પેઢીમાં નબળા જવાબદારીની પેટર્ન જુઓ છો?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
+#, fuzzy
 msgid ""
 "Practice sharing the concept of “Pace” with a friend and pray for the Lord "
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"મિત્ર સાથે \"પેસ\" ની વિભાવનાને શેર કરવાની પ્રેક્ટિસ કરો અને ભગવાનને પ્રાર્થના કરો કે તે "
+"તમારા હૃદય અને આત્મામાં ઊંડે ઊંડે ઠરે. ભગવાનને પૂછો કે તે તમને કોની સાથે શેર કરવા માંગે છે."
 
 #: site/course/course-content.php:2793
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the concept  "
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"જો તમે પહેલેથી જ તમારું પોતાનું સાદું ચર્ચ શરૂ કર્યું હોય, તો તેમાંના લોકો સાથે \"હંમેશાં બે "
+"ચર્ચનો ભાગ\" નો ખ્યાલ શેર કરો. જો નહીં, તો તમે જાણતા હોય તેવા અન્ય આસ્તિક સાથે શેર કરો."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
+#, fuzzy
 msgid "SESSION 10"
-msgstr ""
+msgstr "સત્ર 10"
 
 #: site/course/course-content.php:2852
+#, fuzzy
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"પ્રાર્થના કરો અને ભગવાનનો આભાર માનો કે તે આપણામાં તેમનું સારું કાર્ય પૂર્ણ કરવા માટે વિશ્વાસુ "
+"છે. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
+#, fuzzy
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"તેને કહો કે તે તમારામાં અને તેના દ્વારા જે મહાન કાર્યો કરવા માંગે છે તેના માટે તમારા જૂથને "
+"સ્પષ્ટ માથું અને ખુલ્લા હૃદય આપવા."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
+#, fuzzy
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"પવિત્ર આત્માને કહો કે તમારો સમય સાથે જીવો અને તેમની વફાદારી માટે પણ તેમનો આભાર માનો. "
+"તેણે તમને પસાર કર્યા!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
+#, fuzzy
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "પ્રોત્સાહિત કરો..."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -2995,11 +3231,15 @@ msgid ""
 msgstr "અભિનંદન! તમે નવમું સેશન પૂરું કર્યું છે."
 
 #: site/course/course-content.php:2881
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"છતાં ઝુમે તાલીમ એ માત્ર શરૂઆત છે! આ સત્રમાં, અમે તાલીમ પછી શું થાય છે તેના માટે એક યોજના "
+"બનાવીશું અને તમે જે શીખ્યા તે અમલમાં મૂકશો ત્યારે તમને તમારી મુસાફરીમાં પાછળથી જરૂર પડશે તેવા "
+"સાધનોનો સંક્ષિપ્તમાં પરિચય કરીશું."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -3020,15 +3260,19 @@ msgstr ""
 "મનમાં કયા ઉદાહરણો આવે છે?"
 
 #: site/course/course-content.php:2964
+#, fuzzy
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
-msgstr ""
+msgstr "શિષ્ય બનાવનારને શિષ્ય બનાવવાનો અર્થ છે કે જે આગેવાનો બનાવે છે."
 
 #: site/course/course-content.php:2965
+#, fuzzy
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"પીઅર મેન્ટરિંગ જૂથો નેતાઓને ભેગા કરે છે અને તેઓને તેમના વિશ્વાસ અને નેતૃત્વમાં એકબીજાને પ્રેમ કરવા "
+"અને પ્રોત્સાહિત કરવામાં મદદ કરે છે."
 
 #: site/course/course-content.php:2989
 #, fuzzy
@@ -3055,14 +3299,19 @@ msgstr ""
 "વિદ્યાર્થીના કાર્યમાં તેને ઉત્તેજન આપો."
 
 #: site/course/course-content.php:3014
+#, fuzzy
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"તેમના બાઇબલમાં, ભગવાન કહે છે, \"હું તમારા માટે જે યોજનાઓ ધરાવી રહ્યો છું તે જાણું છું, તમને "
+"સમૃદ્ધિ આપવાની યોજનાઓ અને તમને નુકસાન ન પહોંચાડવાની, તમને આશા અને ભવિષ્ય આપવાની "
+"યોજનાઓ છે.\""
 
 #: site/course/course-content.php:3015
+#, fuzzy
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "ભગવાન યોજનાઓ બનાવે છે, અને તે અપેક્ષા રાખે છે કે આપણે પણ યોજનાઓ બનાવીએ."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
 #, fuzzy
@@ -3077,10 +3326,13 @@ msgstr ""
 "સમર્પણ પૂરા કરો."
 
 #: site/course/course-content.php:3017
+#, fuzzy
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"આગળની સ્લાઇડ તમને બતાવશે કે તમારો ત્રણ મહિનાનો પ્લાન કેવી રીતે બનાવવો. અમે ઑનલાઇન "
+"સાધનનો ઉપયોગ કરવાની ભલામણ કરીએ છીએ."
 
 #: site/course/course-content.php:3030
 #, fuzzy
@@ -3088,10 +3340,13 @@ msgid "Make your Three Month Plan"
 msgstr "ત્રણ મહિનાની યોજના"
 
 #: site/course/course-content.php:3032
+#, fuzzy
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"વાંચો - QR કોડ સ્કેન કરો. તમારે દરેક આઇટમ માટે પ્રતિબદ્ધ થવાની જરૂર નથી, બલ્કે તે તમારી "
+"યોજના માટે પ્રોમ્પ્ટ તરીકે બનાવાયેલ છે. (5 મિનિટ)"
 
 #: site/course/course-content.php:3033
 #, fuzzy
@@ -3103,37 +3358,51 @@ msgstr ""
 "મિનિટનો સમય શાંત રહો. પ્રભુનો અવાજ સાંભળવાનો પ્રયત્ન કરો. "
 
 #: site/course/course-content.php:3034
+#, fuzzy
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"તમારી યોજના રેકોર્ડ કરો - કાગળના ટુકડા પર પ્રતિબદ્ધતાઓ લખો અથવા તમારા જવાબોને "
+"સાચવવા માટે ઑનલાઇન સાધનનો ઉપયોગ કરો. (15 મિનિટ)"
 
 #: site/course/course-content.php:3040
+#, fuzzy
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "ઓનલાઈન પ્લાન ટૂલ"
 
 #: site/course/course-content.php:3053
+#, fuzzy
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "તમારી ત્રણ મહિનાની યોજનાઓ એકબીજા સાથે શેર કરીને વારાફરતી લો."
 
 #: site/course/course-content.php:3054
+#, fuzzy
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"એક તાલીમ ભાગીદાર(ઓ) શોધો જે તમારી સાથે સાપ્તાહિક ચેક ઇન કરવા ઇચ્છુક હોય. તેમના માટે "
+"તે જ કરવા માટે પ્રતિબદ્ધ."
 
 #: site/course/course-content.php:3195
+#, fuzzy
 msgid ""
 "Practice sharing these definitions with a friend and pray for the Lord to "
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"આ વ્યાખ્યાઓને મિત્ર સાથે શેર કરવાની પ્રેક્ટિસ કરો અને ભગવાનને પ્રાર્થના કરો કે તે તમારા હૃદય "
+"અને આત્મામાં ઊંડે ઊંડે ઠરે. ભગવાનને પૂછો કે તે તમને કોની સાથે શેર કરવા માંગે છે."
 
 #: site/course/course-content.php:3196
+#, fuzzy
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"જેની સાથે પ્રભુ તમને પ્રભાવિત કરે છે તેની સાથે વ્યાખ્યાઓ શેર કરો. પછી તેને અન્ય કોઈ સાથે શેર "
+"કરવા માટે સજ્જ કરો."
 
 #: site/course/course-content.php:3258
 #, fuzzy
@@ -3145,26 +3414,36 @@ msgstr ""
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
+#, fuzzy
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે આ ટૂલને અમારી ટૂલકીટમાં ઉમેરીશું:"
 
 #: site/course/course-content.php:3379
+#, fuzzy
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"પ્રાર્થના કરો અને આપણા જીવનમાં તેમની હાજરી માટે ભગવાનનો આભાર માનો. સમૂહમાં દરેક વ્યક્તિ "
+"માટે પ્રાર્થના કરો કે તેમનો અવાજ સાંભળવા માટે કાન હોય અને તેઓ જે કહે છે તેનું પાલન કરવા માટે "
+"કૃપા કરે."
 
 #: site/course/course-content.php:3440
+#, fuzzy
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"એક જવાબદારી ભાગીદાર (સમાન લિંગ) શોધો અને તેમની સાથે સાપ્તાહિક ધોરણે મળવાનું શરૂ કરો."
 
 #: site/course/course-content.php:3441
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"ભગવાનને પૂછો કે તમે ઓછામાં ઓછા પાંચ લોકોને પડકારવા માટે માર્ગદર્શન આપો જે તમે જાણો છો કે "
+"જેઓ વિશ્વાસીઓ છે તેમની પોતાની જવાબદારી જૂથ મીટિંગ શરૂ કરવા અને પછી આમ કરો."
 
 #: site/course/course-content.php:3501
 #, fuzzy
@@ -3176,14 +3455,19 @@ msgstr ""
 "આપો."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
+#, fuzzy
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે ખ્યાલ સાંભળીશું અને તેની ચર્ચા કરીશું:"
 
 #: site/course/course-content.php:3631
+#, fuzzy
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"પ્રાર્થના કરો અને આપણા જીવનમાં બધા લોકો માટેના તેમના પ્રેમ માટે ભગવાનનો આભાર માનો. "
+"સમૂહમાં દરેક વ્યક્તિ માટે પ્રાર્થના કરો કે તે તમારી આસપાસના લોકોને ભગવાન જે રીતે જુએ છે તે "
+"રીતે જુએ."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 #, fuzzy
@@ -3191,34 +3475,49 @@ msgid "The Prayer Cycle"
 msgstr "પ્રાર્થનાનું ચક્ર"
 
 #: site/course/course-content.php:3676
+#, fuzzy
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"જો તમારો સમય લવચીક છે, તો સંપૂર્ણ કલાક લો. દરેક વિભાગને 5 સંપૂર્ણ મિનિટ માટે પ્રાર્થના "
+"કરો. આનાથી આ સત્ર એક કલાકની તાલીમ કરતાં વધુ લાંબુ બનશે."
 
 #: site/course/course-content.php:3677
+#, fuzzy
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"જો તમે લાંબું સત્ર લઈ શકતા નથી, તો પ્રાર્થના વિભાગોને 5 મિનિટથી ઘટાડીને 3 મિનિટ કરો."
 
 #: site/course/course-content.php:3712
+#, fuzzy
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"જ્યારે તમે આ અઠવાડિયે એક કલાક માટે પ્રાર્થના કરો છો ત્યારે તમને માર્ગદર્શન આપવા માટે "
+"પ્રાર્થના ચક્રનો ઉપયોગ કરો."
 
 #: site/course/course-content.php:3713
+#, fuzzy
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"ભગવાન તમને જેની સાથે માર્ગદર્શન આપે તેની સાથે પ્રાર્થના ચક્ર શેર કરો. તેમને અન્ય લોકો સાથે "
+"પણ શેર કરવા માટે પડકાર આપો."
 
 #: site/course/course-content.php:3839
+#, fuzzy
 msgid ""
 "Practice sharing the Spiritual Economy concept with a friend and pray for "
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"આધ્યાત્મિક અર્થવ્યવસ્થાના ખ્યાલને મિત્ર સાથે શેર કરવાની પ્રેક્ટિસ કરો અને ભગવાનને પ્રાર્થના "
+"કરો કે તે તમારા હૃદય અને આત્મામાં ઊંડે ઊંડે ઠરે. ભગવાનને પૂછો કે તે તમને કોની સાથે શેર કરવા "
+"માંગે છે."
 
 #: site/course/course-content.php:3840
 #, fuzzy
@@ -3231,16 +3530,20 @@ msgstr ""
 "એ વ્યક્તિનું નામ જણાવો અને બીજા સેશનમાં આવતા પહેલાં તે વ્યક્તિને સુવાર્તા આપો."
 
 #: site/course/course-content.php:3901
+#, fuzzy
 msgid ""
 "Pray for each member of your group to experience the blessings of following "
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"તમારા જૂથના દરેક સભ્ય માટે પ્રાર્થના કરો કે તેઓ ઈસુને અનુસરવાના આશીર્વાદનો અનુભવ કરે, અન્ય "
+"લોકો ઈસુને અનુસરે અને અન્ય લોકોને નવા આધ્યાત્મિક કુટુંબો શરૂ કરવા માટે સજ્જ કરે."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
+#, fuzzy
 msgid "In this session, we will practice this tool in our toolkit:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે અમારી ટૂલકીટમાં આ સાધનનો અભ્યાસ કરીશું:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
 #, fuzzy
@@ -3260,10 +3563,13 @@ msgid ""
 msgstr "એક જ જાતિ (લિંગ)ના બે કે ત્રણ વ્યકિતઓના જૂથમાં વિભાજીત થાઓ."
 
 #: site/course/course-content.php:3948
+#, fuzzy
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"તમે પ્રેક્ટિસ કર્યા પછી, સ્વિચ કરો. પુનરાવર્તન આત્મવિશ્વાસ લાવશે. તમે પૂર્ણ કરી લો ત્યાં "
+"સુધીમાં, તમે ભગવાનની વાર્તા શેર કરવા માટે તૈયાર હશો."
 
 #: site/course/course-content.php:4046
 #, fuzzy
@@ -3278,15 +3584,19 @@ msgstr ""
 "શ્રેષ્ઠ સેશન બનાવે તે માટે વિનંતી કરો."
 
 #: site/course/course-content.php:4074
+#, fuzzy
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "આ સત્રમાં, અમે આ સાધનોને અમારી ટૂલકીટમાં ઉમેરીશું:"
 
 #: site/course/course-content.php:4109
+#, fuzzy
 msgid ""
 "If you know anyone who follows Jesus but has not been baptized, challenge "
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"જો તમે કોઈને જાણો છો જે ઈસુને અનુસરે છે પરંતુ બાપ્તિસ્મા લીધું નથી, તો તેઓને તેમ કરવા પડકાર "
+"આપો અને તેમને બાપ્તિસ્મા આપવાની ઑફર કરો. નહિંતર, મિત્ર સાથે કુશળતાનો અભ્યાસ કરો."
 
 #: site/course/course-content.php:4110
 #, fuzzy
@@ -3322,26 +3632,35 @@ msgstr ""
 "જણાવો. (૪૫ મિનિટ)"
 
 #: site/course/course-content.php:4216
+#, fuzzy
 msgid ""
 "Choose 5 people from your List of 100. Have someone pretend to be each of "
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"તમારી 100 ની યાદીમાંથી 5 લોકોને પસંદ કરો. કોઈને તે પાંચ લોકોમાંથી દરેક હોવાનો ડોળ "
+"કરો અને તમારી જુબાની એવી રીતે પ્રેક્ટિસ કરો કે જે તમને લાગે કે તે ચોક્કસ વ્યક્તિ માટે અર્થપૂર્ણ "
+"છે."
 
 #: site/course/course-content.php:4217
+#, fuzzy
 msgid ""
 "After you’ve practiced, switch. Pretend to be someone else’s five people "
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"તમે પ્રેક્ટિસ કર્યા પછી, સ્વિચ કરો. સૂચિમાંથી કોઈ બીજાના પાંચ લોકો હોવાનો ડોળ કરો. તમે "
+"પૂર્ણ કરી લો ત્યાં સુધીમાં, તમે તમારી જુબાની લગભગ 3 મિનિટ કે તેથી ઓછા સમયમાં કહી શકશો."
 
 #: site/course/course-content.php:4219
+#, fuzzy
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "પુનરાવર્તન આત્મવિશ્વાસ બનાવે છે."
 
 #: site/course/course-content.php:4233
+#, fuzzy
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "આ સત્રમાં પ્રેક્ટિસ કરેલ સાધન:"
 
 #: site/course/course-content.php:4250
 #, fuzzy
@@ -3364,56 +3683,78 @@ msgstr ""
 "આપો."
 
 #: site/course/course-content.php:4394
+#, fuzzy
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"જો તમારું કુટુંબ આસ્થાવાન છે અને સ્થાનિક રીતે રહે છે, તો તેમની સાથે ભગવાનના ભોજનનું નેતૃત્વ "
+"કરો. નહિંતર, વિશ્વાસુ મિત્ર સાથે કુશળતાનો અભ્યાસ કરો."
 
 #: site/course/course-content.php:4395
+#, fuzzy
 msgid ""
 "Share \"Duckling Discipleship\" and \"Eyes to See Where the Kingdom Isn’t\" "
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"\"બતકની શિષ્યતા\" અને \"આંખો જોવા માટે ક્યાં કિંગડમ નથી\" શેર કરો જેની સાથે ભગવાન તમને "
+"પ્રભાવિત કરે છે. પછી તેને અન્ય કોઈ સાથે શેર કરવા માટે સજ્જ કરો."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
+#, fuzzy
 msgid "SESSION 11"
-msgstr ""
+msgstr "સત્ર 11"
 
 #: site/course/course-content.php:4455
+#, fuzzy
 msgid ""
 "Pray and thank God for how He is at work in your life and the lives of "
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"પ્રાર્થના કરો અને ભગવાનનો આભાર માનો કે તે તમારા જીવનમાં અને તમારી આસપાસના અન્ય "
+"લોકોના જીવનમાં કેવી રીતે કાર્ય કરે છે. સામ્રાજ્ય હજી ક્યાં નથી તે જોવા માટે જૂથને આંખો મળે તે "
+"માટે પ્રાર્થના કરો."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
+#, fuzzy
 msgid "SESSION 12"
-msgstr ""
+msgstr "સત્ર 12"
 
 #: site/course/course-content.php:4638
+#, fuzzy
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr ""
+msgstr "આ અઠવાડિયે BLESS પેટર્નનો ઉપયોગ કરીને તેમની હાજરીમાં કોઈ માટે પ્રાર્થના કરો."
 
 #: site/course/course-content.php:4639
+#, fuzzy
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"BLESS પેટર્નનો ઉપયોગ કરીને અન્ય લોકો માટે પ્રાર્થના કરવા માટે બીજા કોઈને સજ્જ કરો અને "
+"જેમ તેઓ કરે છે તેમ તેમની સાથે જાઓ."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
+#, fuzzy
 msgid "SESSION 13"
-msgstr ""
+msgstr "સત્ર 13"
 
 #: site/course/course-content.php:4700
+#, fuzzy
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"છેલ્લા સત્રમાં તમે જે શીખ્યા તેના માટે પ્રાર્થના કરો અને ભગવાનનો આભાર માનો. તમે જે શીખો છો "
+"તે બધું અમલમાં મૂકવા માટે વફાદાર રહેવા માટે તમને મદદ કરવા માટે ભગવાનના આત્મા માટે "
+"પ્રાર્થના કરો."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
+#, fuzzy
 msgid "SESSION 14"
-msgstr ""
+msgstr "સત્ર 14"
 
 #: site/course/course-content.php:4902
 #, fuzzy
@@ -3441,11 +3782,15 @@ msgstr ""
 "પ્રશ્નો જુઓ."
 
 #: site/course/course-content.php:4940
+#, fuzzy
 msgid ""
 "Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"પ્રાર્થના કરો અને ભગવાનને પૂછો કે શું તે ઇચ્છે છે કે તમે 3/3 જૂથ શરૂ કરો. જો તે કરે, તો તમારી "
+"100 ની યાદી જુઓ અને ભગવાનને પૂછો કે તમારે તમારી સાથે જોડાવા માટે કોને આમંત્રણ આપવું જોઈએ. "
+"પછી તેમને આ અઠવાડિયે આમંત્રિત કરો અને જૂથ બનાવવા માટે ભગવાન પર વિશ્વાસ કરો."
 
 #: site/course/course-content.php:4941
 #, fuzzy
@@ -3457,8 +3802,9 @@ msgstr ""
 "કરો. જૂથમાંથી જતાં પહેલાં તે વ્યક્તિનું નામ જણાવો."
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
+#, fuzzy
 msgid "SESSION 15"
-msgstr ""
+msgstr "સત્ર 15"
 
 #: site/course/course-content.php:5002
 #, fuzzy
@@ -3473,148 +3819,196 @@ msgstr ""
 "પ્રભુનો આભાર માનો. અને, હંમેશની જેમ પ્રભુનો પવિત્ર આત્મા તમને દોરે તે માટે વિનંતી કરો."
 
 #: site/course/course-content.php:5066
+#, fuzzy
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
-msgstr ""
+msgstr "તમારી 100 ની યાદીમાં આસ્તિક સાથે \"તાલીમ ચક્ર\" શેર કરો."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
+#, fuzzy
 msgid "SESSION 16"
-msgstr ""
+msgstr "સત્ર 16"
 
 #: site/course/course-content.php:5193
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the \"Always Part "
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"જો તમે પહેલેથી જ તમારું પોતાનું સાદું ચર્ચ શરૂ કર્યું હોય, તો તેમાંના લોકો સાથે \"હંમેશાં બે "
+"ચર્ચનો ભાગ\" પેટર્ન શેર કરો. જો નહીં, તો તમે જાણતા હોય તેવા અન્ય આસ્તિક સાથે શેર કરો."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
+#, fuzzy
 msgid "SESSION 17"
-msgstr ""
+msgstr "સત્ર 17"
 
 #: site/course/course-content.php:5256
+#, fuzzy
 msgid ""
 "Pray and thank God for how He continues to speak through the word, prayer, "
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"પ્રાર્થના કરો અને ભગવાનનો આભાર માનો કે તે કેવી રીતે શબ્દ, પ્રાર્થના, શરીર, અને સતાવણી "
+"અને વેદના દ્વારા બોલવાનું ચાલુ રાખે છે. સમૂહમાં દરેક વ્યક્તિ માટે પ્રાર્થના કરો કે તેમનો અવાજ "
+"સાંભળવા માટે કાન હોય અને તેઓ જે કહે છે તેનું પાલન કરવા માટે કૃપા કરે."
 
 #: site/course/course-content.php:5325
+#, fuzzy
 msgid ""
 "Identify one next step for yourself, either Modeling, Assisting, Watching, "
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"તમારા માટે એક આગલું પગલું ઓળખો, કાં તો મોડેલિંગ, સહાયક, જોવું અથવા છોડવું, જે તમારે કોચિંગ "
+"ચેકલિસ્ટ સાથે મૂલ્યાંકન કરેલ શિષ્ય સાથે લેવાની જરૂર છે."
 
 #: site/course/course-content.php:5326
+#, fuzzy
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"\"નેટવર્કમાં નેતૃત્વ\" નો ખ્યાલ બીજા કોઈની સાથે શેર કરો. પછી તેને બીજા કોઈની સાથે શેર "
+"કરવાની તાલીમ આપો."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
+#, fuzzy
 msgid "SESSION 18"
-msgstr ""
+msgstr "સત્ર 18"
 
 #: site/course/course-content.php:5434
+#, fuzzy
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"ભગવાનને સાંભળવા માટે થોડો સમય કાઢો અને પૂછો કે તમે હમણાં જ કરેલી ચાર ક્ષેત્રોની ચર્ચાના "
+"આધારે તમારે અથવા તમારા જૂથને કોઈ પગલાં લેવાની જરૂર છે."
 
 #: site/course/course-content.php:5465
+#, fuzzy
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"દરેક Zúme પ્રશિક્ષણ આઇટમ્સ પર જાઓ અને તે નક્કી કરો કે દરેક કઈ ફીલ્ડ(ઓ) સાથે સંબંધિત છે અને "
+"આઇટમ્સ સાથે ચાર ફીલ્ડ ચાર્ટને લેબલ કરો."
 
 #: site/course/course-content.php:5466
+#, fuzzy
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"જનરેશનલ મેપિંગ ટૂલને અન્ય આસ્તિક સાથે શેર કરો જેને તમે વિઝન કાસ્ટિંગ કવાયત તરીકે જાણો છો."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
+#, fuzzy
 msgid "SESSION 19"
-msgstr ""
+msgstr "સત્ર 19"
 
 #: site/course/course-content.php:5526
+#, fuzzy
 msgid ""
 "Pray and thank God for the Body of Christ. Pray for mutual love and "
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"પ્રાર્થના કરો અને ખ્રિસ્તના શરીર માટે ભગવાનનો આભાર માનો. જ્યારે તમે ઇસુની નજીક જાઓ "
+"ત્યારે તમારા જૂથના દરેક સભ્ય વચ્ચે વધતા રહેવા માટે પરસ્પર પ્રેમ અને પ્રોત્સાહન માટે પ્રાર્થના "
+"કરો."
 
 #: site/course/course-content.php:5587
+#, fuzzy
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"તમારા Zúme તાલીમ જૂથ સાથે ચર્ચા કરો કે શું સભ્યો પીઅર મેન્ટરિંગ ગ્રુપ તરીકે તાલીમના સમાપન "
+"પછી મળવાનું ચાલુ રાખવા માટે ખુલ્લા છે કે નહીં."
 
 #: site/course/course-content.php:5588
+#, fuzzy
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
-msgstr ""
+msgstr "તમારી 100 ની યાદીમાં બે આસ્થાવાનો સાથે \"પીઅર મેન્ટરિંગ ગ્રુપ\" નો ખ્યાલ શેર કરો."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
+#, fuzzy
 msgid "SESSION 20"
-msgstr ""
+msgstr "સત્ર 20"
 
 #: site/course/course-content.php:5650
+#, fuzzy
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"પ્રાર્થના કરો અને ભગવાનનો આભાર માનો કે તે આપણામાં તેમનું સારું કાર્ય પૂર્ણ કરવા માટે વિશ્વાસુ "
+"છે."
 
 #: site/course/course-content.php:5679
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"છતાં ઝુમે તાલીમ એ માત્ર શરૂઆત છે! આ સત્રમાં, અમે તાલીમ પછી શું થાય છે તેની યોજના બનાવીશું."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
+#, fuzzy
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "સઘન સત્ર 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
+#, fuzzy
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "સઘન સત્ર 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
+#, fuzzy
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "સઘન સત્ર 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
+#, fuzzy
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "સઘન સત્ર 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
+#, fuzzy
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "સઘન સત્ર 5"
 
 #: site/course/course-content.php:5976
+#, fuzzy
 msgid "NEXT STEP"
-msgstr ""
+msgstr "આગળનું પગલું"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
-#: site/parts/nav.php:94
+#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
 msgstr "લોક સમુદાય"
 
 #: site/course/course-content.php:5980
+#, fuzzy
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
-msgstr ""
+msgstr "ઝુમેનો તાલીમ ભાગ સમાપ્ત થઈ રહ્યો છે, પરંતુ સાધનો અને ખ્યાલોની પ્રેક્ટિસ ચાલુ છે."
 
 #: site/course/course-content.php:5981
+#, fuzzy
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
+msgstr "તે એકલા ન કરો. પ્રોત્સાહન અને વૃદ્ધિ માટે સમુદાય શોધો."
 
 #: site/course/course-content.php:5982
+#, fuzzy
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "QR કોડનો ઉપયોગ કરીને Zume સમુદાયમાં જોડાઓ."
 
 #: site/course/course-content.php:5996
 #, fuzzy
@@ -3622,8 +4016,9 @@ msgid "CONGRATULATIONS on completing Zume Training!"
 msgstr "તાલીમની પૂર્ણતા"
 
 #: site/course/course-content.php:6008
+#, fuzzy
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "વિરામ લો"
 
 #: site/course/presenter.php:131
 #, fuzzy
@@ -3631,12 +4026,14 @@ msgid "Course Presenter"
 msgstr "ઝુમ અભ્યાસક્રમ ચાર"
 
 #: site/course/presenter.php:148
+#, fuzzy
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "ઑફલાઇન સ્લાઇડ્સ અહીં ડાઉનલોડ કરો"
 
 #: site/course/presenter.php:166
+#, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "લિંક્સ"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3663,27 +4060,44 @@ msgid "Exit Course"
 msgstr "અભ્યાસક્રમ"
 
 #: site/course/presenter.php:192
-msgid "Switch Views"
-msgstr ""
+#, fuzzy
+msgid "Slide View"
+msgstr "ગ્રીડ વ્યૂ"
 
-#: site/course/presenter.php:193
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+#, fuzzy
+msgid "List View"
+msgstr "સૂચિ દૃશ્ય"
+
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Next slide"
 msgstr "આગળ સત્ર"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Previous slide"
 msgstr "અગાઉનું"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:196
 #, fuzzy
 msgid "Session"
 msgstr "સેશન ૧"
 
+#: site/course/presenter.php:198
+#, fuzzy
+msgid "View Transcript"
+msgstr "ટ્રાન્સક્રિપ્ટ જુઓ"
+
+#: site/course/presenter.php:199
+#, fuzzy
+msgid "View Activity"
+msgstr "પ્રવૃત્તિ જુઓ"
+
 #: site/dashboard/checkin-dashboard.php:151
+#, fuzzy
 msgid "Woops"
-msgstr ""
+msgstr "વૂપ્સ"
 
 #: site/dashboard/checkin-dashboard.php:153
 #, fuzzy
@@ -3691,11 +4105,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "અરે... કંઈ ખોટું થયું છે. ફરીથી પ્રયત્ન કરો!"
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
-#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
-#: utilities/apis/cta-api.php:338
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:341
+#, fuzzy
 msgid "Congratulations!"
-msgstr ""
+msgstr "અભિનંદન!"
 
 #: site/dashboard/checkin-dashboard.php:163
 #, fuzzy
@@ -3703,9 +4118,9 @@ msgid "Checked into session:"
 msgstr "સેશનમાં તમારું સ્વાગત છે"
 
 #: site/dashboard/checkin-dashboard.php:164
-#, php-format
+#, fuzzy, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%2$d માંથી %1$d"
 
 #: site/dashboard/checkin-dashboard.php:167
 #, fuzzy
@@ -3713,17 +4128,19 @@ msgid "Course Progress:"
 msgstr "ઝુમની પ્રક્રિયા"
 
 #: site/dashboard/checkin-dashboard.php:168
-#, php-format
+#, fuzzy, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
+#, fuzzy
 msgid "Done"
-msgstr ""
+msgstr "થઈ ગયું"
 
 #: site/dashboard/dashboard.php:156
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "સંપાદિત કરો"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3750,24 +4167,23 @@ msgid "Not Heard"
 msgstr "સાંભળ્યું"
 
 #: site/dashboard/dashboard.php:163 site/pages/share.php:121
+#, fuzzy
 msgid "All"
-msgstr ""
+msgstr "બધા"
 
 #: site/dashboard/dashboard.php:164 site/profile/profile.php:159
 msgid "Logout"
 msgstr "લોગ આઉટ"
 
 #: site/dashboard/dashboard.php:165 site/pages/share.php:124
+#, fuzzy
 msgid "Filter"
-msgstr ""
-
-#: site/dashboard/dashboard.php:166
-msgid "List View"
-msgstr ""
+msgstr "ફિલ્ટર કરો"
 
 #: site/dashboard/dashboard.php:167
+#, fuzzy
 msgid "Grid View"
-msgstr ""
+msgstr "ગ્રીડ વ્યૂ"
 
 #: site/dashboard/dashboard.php:168
 #, fuzzy
@@ -3780,35 +4196,38 @@ msgid "Complete Now"
 msgstr "અભ્યાસક્રમ પૂરો થયો"
 
 #: site/dashboard/dashboard.php:170
+#, fuzzy
 msgid "View"
-msgstr ""
+msgstr "જુઓ"
 
 #: site/dashboard/dashboard.php:171
+#, fuzzy
 msgid "Menu"
-msgstr ""
+msgstr "મેનુ"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
-#: site/dashboard/wizard.php:210 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:226 site/profile/profile.php:116
 msgid "Name"
 msgstr "નામ"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
-#: site/dashboard/wizard.php:180 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "ફોન"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "ઇ-મેઇલ"
 
 #: site/dashboard/dashboard.php:175
+#, fuzzy
 msgid "Communications Email"
-msgstr ""
+msgstr "કોમ્યુનિકેશન્સ ઈમેલ"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "શહેર"
@@ -3818,8 +4237,8 @@ msgstr "શહેર"
 msgid "No Locations found"
 msgstr "કોઇ વપરાશકાર મળેલ નથી."
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3831,8 +4250,9 @@ msgid "Edit Profile"
 msgstr "ઝુમની રૂપરેખા"
 
 #: site/dashboard/dashboard.php:181
+#, fuzzy
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "આ Zúme ખ્યાલ તપાસો"
 
 #: site/dashboard/dashboard.php:182
 #, fuzzy
@@ -3841,9 +4261,9 @@ msgstr "જુઓ"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
 #: site/dashboard/dashboard.php:259
-#, php-format
+#, fuzzy, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "નવું %s ઉમેરો"
 
 #: site/dashboard/dashboard.php:183
 #, fuzzy
@@ -3856,12 +4276,14 @@ msgid "Copy Link"
 msgstr "લિંક (જોડાણ)"
 
 #: site/dashboard/dashboard.php:185
+#, fuzzy
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "આ લિંક કોપી કરો અને તમારા મિત્રોને મોકલો 🙂"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
+#, fuzzy
 msgid "Thanks!"
-msgstr ""
+msgstr "આભાર!"
 
 #: site/dashboard/dashboard.php:187
 #, fuzzy
@@ -3873,26 +4295,30 @@ msgstr "સાથે જોડાણ"
 msgid "Getting Started"
 msgstr "શરૂઆત કરો"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
-#: utilities/apis/cta-api.php:252
+#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "ઝુમની રૂપરેખા"
 
 #: site/dashboard/dashboard.php:190
+#, fuzzy
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "તમારી પ્રોફાઇલ સેટ કરવા માટે ટૂંકી પ્રોફાઇલ વિઝાર્ડ પૂર્ણ કરો"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
 #, fuzzy
 msgid "Join or create a training group"
 msgstr "તાલીમની શરૂઆત કરો"
 
 #: site/dashboard/dashboard.php:192
+#, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"અમારી ઓનલાઈન તાલીમોમાંથી એકમાં જોડાઓ અથવા અમારા સરળ સેટઅપ વિઝાર્ડ સાથે તમારું પોતાનું "
+"તાલીમ જૂથ બનાવો"
 
 #: site/dashboard/dashboard.php:193
 #, fuzzy
@@ -3904,7 +4330,7 @@ msgstr "1 તાલીમ"
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
 #, fuzzy
 msgid "Join Training Group"
 msgstr "તાલીમની શરૂઆત કરો"
@@ -3915,10 +4341,12 @@ msgid "Join an online training group run by a coach"
 msgstr "તાલીમની શરૂઆત કરો"
 
 #: site/dashboard/dashboard.php:198
+#, fuzzy
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"તાલીમ પહેલાં, દરમિયાન અથવા પછી કોઈપણ મદદ અથવા પ્રોત્સાહન માટે કોચ સાથે જોડાઓ."
 
 #: site/dashboard/dashboard.php:200
 #, fuzzy
@@ -3926,14 +4354,18 @@ msgid "My Progress"
 msgstr "પ્રગતિ"
 
 #: site/dashboard/dashboard.php:201
+#, fuzzy
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"આ ઇન્ટરેક્ટિવ વ્યૂ સાથે તમારા અભ્યાસક્રમની પ્રગતિને ટ્રૅક કરો. તમે જે શીખ્યા છો તેનાથી બીજાને "
+"સાંભળવાનું, પાલન કરવાનું, શેર કરવાનું અને તાલીમ આપવાનું શીખો."
 
 #: site/dashboard/dashboard.php:202
+#, fuzzy
 msgid "Information about progress"
-msgstr ""
+msgstr "પ્રગતિ વિશે માહિતી"
 
 #: site/dashboard/dashboard.php:203
 #, fuzzy
@@ -3946,10 +4378,11 @@ msgid "My Trainings"
 msgstr "1 તાલીમ"
 
 #: site/dashboard/dashboard.php:205
+#, fuzzy
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
-msgstr ""
+msgstr "તમારી તાલીમ સામગ્રી, સમયપત્રક, જૂથ વિગતો અને શેરિંગ સાધનોની સંપૂર્ણ ઍક્સેસ."
 
 #: site/dashboard/dashboard.php:207
 #, fuzzy
@@ -3962,15 +4395,20 @@ msgid "Three Month Plan Locked"
 msgstr "ત્રણ મહિનાની યોજના"
 
 #: site/dashboard/dashboard.php:210
+#, fuzzy
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"ત્રણ મહિનાની યોજના એ ઝુમ કોર્સ દ્વારા શીખેલા ટૂલ્સ અને વિભાવનાઓને કાર્ય કરવા અને અમલ "
+"કરવામાં તમારી મદદ કરવા માટેનું એક સાધન છે. એકવાર તમે તાલીમ પૂર્ણ કરી લો તે સૌથી વધુ "
+"ઉપયોગી છે."
 
 #: site/dashboard/dashboard.php:211
+#, fuzzy
 msgid "Unlock now"
-msgstr ""
+msgstr "હવે અનલૉક કરો"
 
 #: site/dashboard/dashboard.php:212
 #, fuzzy
@@ -3983,8 +4421,9 @@ msgid "My Coach"
 msgstr "શિક્ષક"
 
 #: site/dashboard/dashboard.php:214
+#, fuzzy
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "દરેક સમયે તમારા કોચની ઝડપી ઍક્સેસ."
 
 #: site/dashboard/dashboard.php:215
 #, fuzzy
@@ -3992,10 +4431,13 @@ msgid "My Tools"
 msgstr "સાધનો"
 
 #: site/dashboard/dashboard.php:216
+#, fuzzy
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"તમારા માય ટૂલ્સ એરિયા અનલૉક થઈ જશે કારણ કે તમે કોર્સમાંથી આગળ વધશો, પ્રેક્ટિસ કરીને અને "
+"આવશ્યક શિષ્યત્વ કુશળતા વિકસાવશો"
 
 #: site/dashboard/dashboard.php:217
 #, fuzzy
@@ -4003,10 +4445,11 @@ msgid "My Plans"
 msgstr "મારી યોજના"
 
 #: site/dashboard/dashboard.php:218
+#, fuzzy
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
-msgstr ""
+msgstr "અંતિમ સત્રમાં તમારો 3-મહિનાનો પ્લાન પૂર્ણ કરીને મારા પ્લાન વિસ્તારને અનલૉક કરો."
 
 #: site/dashboard/dashboard.php:219
 #, fuzzy
@@ -4014,10 +4457,13 @@ msgid "My Plans are Locked"
 msgstr "1 તાલીમ"
 
 #: site/dashboard/dashboard.php:220
+#, fuzzy
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"તમારી ત્રણ-મહિનાની યોજના બનાવીને અથવા તમારી પોતાની પ્રતિબદ્ધતા ઉમેરીને આ વિસ્તારને "
+"અનલૉક કરો."
 
 #: site/dashboard/dashboard.php:221
 #, fuzzy
@@ -4025,24 +4471,32 @@ msgid "My Churches"
 msgstr "2 સરળ મંડળીઓ"
 
 #: site/dashboard/dashboard.php:222
+#, fuzzy
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "સમુદાયમાં જોડાઈને માય ચર્ચ વિસ્તારને અનલૉક કરો."
 
 #: site/dashboard/dashboard.php:223
+#, fuzzy
 msgid "My Maps"
-msgstr ""
+msgstr "મારા નકશા"
 
 #: site/dashboard/dashboard.php:224
+#, fuzzy
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "મારા નકશા લૉક છે"
 
 #: site/dashboard/dashboard.php:225
+#, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"મારા નકશા યુ.એસ.માં દર 5,000 લોકો અને વૈશ્વિક સ્તરે 50,000 લોકો માટે 1 તાલીમાર્થી અને "
+"2 ચર્ચના ઝુમ વિઝનને સ્પષ્ટ કરવામાં મદદ કરે છે. મારા નકશાને અનલૉક કરવા માટે, Zúme "
+"સમુદાયમાં જોડાઓ અને મહાન કમિશનને પૂર્ણ થતું જોવા માટે ઉત્સાહી અન્ય શિષ્ય નિર્માતાઓ સાથે "
+"જોડાઓ."
 
 #: site/dashboard/dashboard.php:226
 #, fuzzy
@@ -4076,14 +4530,17 @@ msgstr "સેશન ૧"
 msgid "Intensive Course"
 msgstr "સેશન ૧"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
+#: utilities/apis/cta-api.php:386
+#, fuzzy
 msgid "Join"
-msgstr ""
+msgstr "જોડાઓ"
 
 #: site/dashboard/dashboard.php:241
+#, fuzzy
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "આ વિસ્તારની ઍક્સેસ મેળવવા માટે સમુદાયમાં જોડાઓ."
 
 #: site/dashboard/dashboard.php:242
 #, fuzzy
@@ -4120,22 +4577,24 @@ msgid "Start Session"
 msgstr "સત્ર શરૂ કરો"
 
 #: site/dashboard/dashboard.php:250
+#, fuzzy
 msgid "Show details"
-msgstr ""
+msgstr "વિગતો બતાવો"
 
 #: site/dashboard/dashboard.php:251
+#, fuzzy
 msgid "Edit time"
-msgstr ""
+msgstr "સમય સંપાદિત કરો"
 
-#: site/dashboard/dashboard.php:253 utilities/apis/cta-api.php:235
-#: utilities/apis/cta-api.php:237
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Invite Friends"
 msgstr "કેટલાક મિત્રોને બોલાવો"
 
 #: site/dashboard/dashboard.php:254
+#, fuzzy
 msgid "Click to add your first church"
-msgstr ""
+msgstr "તમારું પ્રથમ ચર્ચ ઉમેરવા માટે ક્લિક કરો"
 
 #: site/dashboard/dashboard.php:255
 #, fuzzy
@@ -4183,12 +4642,12 @@ msgid "You have set your profile"
 msgstr "તમારી રૂપરેખા"
 
 #: site/dashboard/dashboard.php:265
-#, php-format
+#, fuzzy, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s અનલૉક"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
 #, fuzzy
 msgid "3 month plan"
 msgstr "ત્રણ મહિનાની યોજના"
@@ -4198,131 +4657,151 @@ msgstr "ત્રણ મહિનાની યોજના"
 msgid "You have joined the community"
 msgstr "લોક સમુદાય"
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+#, fuzzy
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+"સાઈટ અને કોમ્યુનિકેશનની વ્યક્તિગત ગુણવત્તા તેમજ ગ્રાહક સેવાની વિનંતીઓ અને કોચિંગ માટે "
+"વપરાશકર્તાના વાસ્તવિક નામ અથવા ઉપનામની વિનંતી કરવામાં આવે છે."
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#, fuzzy
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"એકાઉન્ટ સ્થાપિત કરવા માટે વપરાશકર્તાનું ઇમેઇલ સરનામું આવશ્યક છે અને તેનો ઉપયોગ સાઇટ "
+"ઓપરેશનના ભાગ રૂપે વ્યવહારિક સંચાર માટે થાય છે."
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
+#, fuzzy
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
+"મફત કોચિંગ સેવાને સમર્થન આપવા માટે વપરાશકર્તાનો ફોન નંબર એકત્રિત અને સંગ્રહિત કરવામાં આવે "
+"છે."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
+#, fuzzy
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"વપરાશકર્તાના શહેરને સાઇટ સંસાધનો અને સંદેશાવ્યવહારને વ્યક્તિગત કરવા અને વપરાશકર્તાઓને યોગ્ય "
+"કોચિંગ અને ગ્રાહક સેવા સંસાધનો સાથે જોડવા વિનંતી કરવામાં આવે છે."
 
-#: site/dashboard/dashboard.php:271
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
 #, fuzzy
-msgid "Zúme Community"
-msgstr "લોક સમુદાય"
-
-#: site/dashboard/dashboard.php:272
 msgid ""
-"Zúme is a community of practice and encouragement for those who want to see "
-"disciple making movements. The Zúme vision is to see one trainee and two "
-"simple churches for every 5,000 people in the United States and 50,000 "
-"people globally."
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
 msgstr ""
+"યોગ્ય સાઇટ અને સંચાર કાર્યને સમર્થન આપવા માટે અને વપરાશકર્તાને યોગ્ય કોચિંગ અને સંસાધનો "
+"સાથે જોડવામાં અમારી મદદ કરવા માટે વપરાશકર્તાની ભાષા પસંદગી સંગ્રહિત કરવામાં આવે છે."
 
-#: site/dashboard/dashboard.php:274
-msgid ""
-"Connect with others like you who want to see a disciple making movement in "
-"their area. Share your experience with others, and learn from others who are "
-"discovering new things."
-msgstr ""
-
-#: site/dashboard/dashboard.php:275
-msgid "Encouragement"
-msgstr ""
-
-#: site/dashboard/dashboard.php:276
-msgid ""
-"Hear news about disciple making movements in your region and your wider "
-"country, get reports of  progress, and get connected to online and face-to-"
-"face gatherings."
-msgstr ""
-
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 #, fuzzy
-msgid "Free Tools"
-msgstr "સાધનો"
-
-#: site/dashboard/dashboard.php:278
-msgid ""
-"Access free tools for tracking disciple-making and church planting in your "
-"area. Get a map to cast vision for saturating your city with multiplying "
-"disciples and churches."
-msgstr ""
-
-#: site/dashboard/dashboard.php:279
-msgid "Join for Free"
-msgstr ""
-
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
 msgid "Join key"
-msgstr ""
+msgstr "જોડાઓ કી"
 
-#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
+#, fuzzy
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "માન્ય કોડ નથી. કૃપા કરીને નંબર તપાસો."
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:275
+#, fuzzy
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "તમને આ પેજમાં જવાની અનુમતિ નથી"
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "તમારા ફોર્મમાં કેટલીક ભૂલો છે."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:277
+#, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"તમારી કોચિંગ વિનંતી બદલ આભાર. અમારી ટીમ તમને તમારી ભાષા અને પ્રદેશમાં ઉપલબ્ધ કોચ સાથે "
+"જોડવા માટે કામ કરશે."
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:278
+#, fuzzy
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
-msgstr ""
+msgstr "કૃપા કરીને તમે દર્શાવેલ સંચાર પસંદગીની અંદર તમારા કોચના સંચાર માટે જુઓ."
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:279
+#, fuzzy
 msgid "100 Hour Map"
-msgstr ""
+msgstr "100 કલાકનો નકશો"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid "Training vision map"
 msgstr "તાલીમ આપવી"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "સરળ મંડળીની વૃદ્ધિ"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:282
+#, fuzzy
+msgid "No date"
+msgstr "અપડેટ કરો"
+
+#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: zume-training-system.php:318
+#, fuzzy
+msgid "Whatsapp"
+msgstr "વ્હોટસએપ"
+
+#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: zume-training-system.php:319
+#, fuzzy
+msgid "Signal"
+msgstr "નોંધણી કરો"
+
+#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: zume-training-system.php:320
+#, fuzzy
+msgid "Telegram"
+msgstr "ટેલિગ્રામ"
+
+#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#, fuzzy
+msgid "Facebook Messenger"
+msgstr "ફેસબુક"
+
+#: site/dashboard/dashboard.php:292
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr "હું નીચે જણાવેલ વ્યક્તિઓને મારી વાત (સાક્ષી) અને ઈશ્વરની વાત (સુવાર્તા) જણાવીશ:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "હું નીચેના વ્યક્તિઓને મારી સાથે જવાબદાર જૂથની શરૂઆત કરવા માટે આમંત્રણ આપીશ:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4330,11 +4809,11 @@ msgstr ""
 "હું નીચેના વ્યક્તિઓને તેમનું પોતાનું જવાબદાર જૂથ શરૂ કરવા અને કેવી રીતે તે ચલાવવું તેની તાલીમ "
 "આપવાનો પડકાર આપીશઃ"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:295
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "હું નીચેના વ્યક્તિઓને મારી સાથે ૩/૩ વ્યક્તિઓના જૂથની શરૂઆત કરવા માટે આમંત્રણ આપીશ:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4342,7 +4821,7 @@ msgstr ""
 "હું નીચેના વ્યક્તિઓને તેમનું પોતાનું ૩/૩ વ્યક્તિઓનું જૂથ શરૂ કરવા અને કેવી રીતે તે કરવું તેની તાલીમ "
 "આપવાનો પડકાર આપીશઃ"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4351,17 +4830,17 @@ msgstr ""
 "હું નીચેના વ્યક્તિઓને ૩/૩ વ્યક્તિઓના આશા કે શોધખોળના જૂથમાં સહભાગી થવાનું આમંત્રણ આપીશ (ઝુમ "
 "માર્ગદર્શિકામાં પરિશિષ્ટ જુઓ)"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "હું નીચેના વ્યક્તિઓને મારી સાથે ચાલતાં-ચાલતાં પ્રાર્થના કરવામાં સહભાગી થવાનું આમંત્રણ આપીશ:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:299
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "હું દર (રોજ / અઠવાડિયે / મહિને) એકવાર ચાલતાં- ચાલતાં પ્રાર્થના કરીશ."
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4370,180 +4849,243 @@ msgstr ""
 "હું નીચેના વ્યક્તિઓને તેમની વાત અને પ્રભુની વાત બીજા લોકોને કહેવા માટે અને તેમની ઓળખાણમાં "
 "હોય એવા ૧૦૦ લોકોની યાદી બનાવવા સુસજ્જ કરીશ:"
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "હું નીચેના વ્યક્તિઓને મુદતસર પ્રાર્થનાના ચક્રનો ઉપયોગ કરવાનો પડકાર આપીશ:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:302
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "હું દર(રોજ / અઠવાડિયે / મહિને) એકવાર પ્રાર્થનાના ચક્રનો ઉપયોગ કરીશ."
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
 "હું નીચેના વ્યક્તિઓને હું જે આગેવાનીના જૂથમાં દોરવણી આપીશ તેમાં સહભાગી થવાનું આમંત્રણ આપીશ:"
 
-#: site/dashboard/dashboard.php:306
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "હું નીચેના વ્યક્તિઓને ઝુમ તાલીમ અભ્યાસક્રમ શીખવા માટે ઉત્તેજન આપીશ:"
 
-#: site/dashboard/dashboard.php:307
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid "Other commitments:"
 msgstr "બીજા વચનો:"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:151
+#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "ખરાબ વિઝાર્ડ"
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:152
+#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "તમે કેટલાક ખૂબ જ ખરાબ વિઝાર્ડ્સ સાથે પડ્યા છો!"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
+#, fuzzy
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "વિઝાર્ડ પહેલેથી જ પૂર્ણ થઈ ગયું છે"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:154
+#, fuzzy
 msgid "Get back home"
-msgstr ""
+msgstr "ઘરે પાછા આવો"
 
-#: site/dashboard/wizard.php:153 site/login/login-template.php:408
+#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#, fuzzy
 msgid "Back"
-msgstr ""
+msgstr "પાછળ"
 
-#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "આગામી"
 
-#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#, fuzzy
 msgid "Skip"
-msgstr ""
+msgstr "છોડો"
 
-#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "પૂરું કરો"
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:160
 #, fuzzy
 msgid "No locations found"
 msgstr "કોઇ વપરાશકાર મળેલ નથી."
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:163
+#, fuzzy
+msgid "Zúme Community"
+msgstr "લોક સમુદાય"
+
+#: site/dashboard/wizard.php:164
+#, fuzzy
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+"Zúme એ લોકો માટે પ્રેક્ટિસ અને પ્રોત્સાહનનો સમુદાય છે જેઓ શિષ્ય બનાવવાની હિલચાલ જોવા "
+"માંગે છે. ઝુમે વિઝન યુનાઇટેડ સ્ટેટ્સમાં દર 5,000 લોકો અને વૈશ્વિક સ્તરે 50,000 લોકો માટે એક "
+"તાલીમાર્થી અને બે સરળ ચર્ચ જોવાનું છે."
+
+#: site/dashboard/wizard.php:166
+#, fuzzy
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+"તમારા જેવા અન્ય લોકો સાથે જોડાઓ જેઓ તેમના વિસ્તારમાં શિષ્ય બનાવવાની હિલચાલ જોવા માંગે "
+"છે. તમારા અનુભવને અન્ય લોકો સાથે શેર કરો અને નવી વસ્તુઓ શોધી રહેલા અન્ય લોકો પાસેથી શીખો."
+
+#: site/dashboard/wizard.php:167
+#, fuzzy
+msgid "Encouragement"
+msgstr "પ્રોત્સાહન"
+
+#: site/dashboard/wizard.php:168
+#, fuzzy
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+"તમારા પ્રદેશ અને તમારા વિશાળ દેશમાં શિષ્ય બનાવવાની હિલચાલ વિશેના સમાચારો સાંભળો, "
+"પ્રગતિના અહેવાલો મેળવો અને ઓનલાઈન અને સામ-સામે મેળાવડાઓ સાથે જોડાઓ."
+
+#: site/dashboard/wizard.php:169
+#, fuzzy
+msgid "Free Tools"
+msgstr "સાધનો"
+
+#: site/dashboard/wizard.php:170
+#, fuzzy
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+"તમારા વિસ્તારમાં શિષ્ય નિર્માણ અને ચર્ચ વાવેતરને ટ્રેક કરવા માટે મફત સાધનોને ઍક્સેસ કરો. "
+"ગુણાકાર કરતા શિષ્યો અને ચર્ચ સાથે તમારા શહેરને સંતૃપ્ત કરવા માટે વિઝન કાસ્ટ કરવા માટે એક "
+"નકશો મેળવો."
+
+#: site/dashboard/wizard.php:171
+#, fuzzy
+msgid "Join for Free"
+msgstr "મફતમાં જોડાઓ"
+
+#: site/dashboard/wizard.php:172
+#, fuzzy
+msgid "Successfully joined community"
+msgstr "લોક સમુદાય"
+
+#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
+#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#, fuzzy
+msgid "Something went wrong"
+msgstr "અરે... કંઈ ખોટું થયું છે."
+
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid "Complete your profile"
 msgstr "તમારી રૂપરેખા"
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:181
+#, fuzzy
 msgid "What is your name?"
-msgstr ""
+msgstr "તમારું નામ શું છે?"
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:182
+#, fuzzy
 msgid "What is your phone number?"
-msgstr ""
+msgstr "તમારો ફોન નંબર શું છે?"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:183
+#, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "ફોન નંબરમાં માત્ર નંબરો, કૌંસ અને હાઇફન્સ હોઈ શકે છે"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:184
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "તમે પ્રભુ વિશે શું શીખો છો?"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:185
+#, fuzzy
 msgid "This is your approximate location."
-msgstr ""
+msgstr "આ તમારું અંદાજિત સ્થાન છે."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:187
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "ઝુમની ગોપનીય નીતિ"
 
-#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "તમારું શહેર અથવા રાજ્ય અથવા પીન કોડ કયો છે?"
 
-#: site/dashboard/wizard.php:179 zume-training-system.php:316
+#: site/dashboard/wizard.php:195 zume-training-system.php:316
 msgid "Text"
 msgstr "લખાણ"
 
-#: site/dashboard/wizard.php:181 zume-training-system.php:318
+#: site/dashboard/wizard.php:201
 #, fuzzy
-msgid "Whatsapp"
-msgstr "વ્હોટસએપ"
-
-#: site/dashboard/wizard.php:182 zume-training-system.php:319
-#, fuzzy
-msgid "Signal"
-msgstr "નોંધણી કરો"
-
-#: site/dashboard/wizard.php:183 zume-training-system.php:320
-msgid "Telegram"
-msgstr ""
-
-#: site/dashboard/wizard.php:184
-#, fuzzy
-msgid "Facebook Messenger"
-msgstr "ફેસબુક"
-
-#: site/dashboard/wizard.php:185
 msgid "What is your language preference?"
-msgstr ""
+msgstr "તમારી ભાષા પસંદગી શું છે?"
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:203
 msgid "How can we serve you?"
 msgstr "અમે તમારી સેવા કેવી રીતે કરી શકીએ?"
 
-#: site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "Coaching"
 msgstr "શિક્ષક"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:205
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "મને તકનીકી સહાયની જરૂર છે"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:206
+#, fuzzy
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "તાલીમના અમલ અંગે પ્રશ્ન"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:207
+#, fuzzy
 msgid "Question about the content"
-msgstr ""
+msgstr "સામગ્રી વિશે પ્રશ્ન"
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:208
+#, fuzzy
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "જૂથ શરૂ કર્યા પછી શું કરવું તે અંગે મદદ કરો"
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:210
+#, fuzzy
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "કૃપા કરીને આ પ્રશ્નનો જવાબ આપો"
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:211
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
@@ -4551,322 +5093,332 @@ msgstr ""
 "તમારી વિનંતી આપતી વખતે અમે તમને તમારી નજીકના વિસ્તારના શિક્ષકની સાથે સંપર્ક કરાવવા "
 "માટે અમારાથી બનતા શ્રેષ્ઠ પ્રયત્નો કરીશું."
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:212
+#, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
-msgstr ""
+msgstr "માફ કરશો. અમે તમારી વિનંતી સબમિટ કરવામાં અસમર્થ હતા. પછીથી ફરી પ્રયત્ન કરો."
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:213
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "તમે પ્રશિક્ષણની વિનંતી કરી છે."
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:214
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "પ્રશિક્ષક સાથે સંપર્ક કરો"
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "મને શિક્ષક સાથે જોડો"
 
-#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
-#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
-msgid "Please wait while we connect you"
-msgstr ""
-
-#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/wizard.php:205
-msgid "Joining Plan"
-msgstr ""
-
-#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
-msgid "The training link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:208
-#, php-format
-msgid "Successfully joined training %s"
-msgstr ""
-
-#: site/dashboard/wizard.php:209
+#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 #, fuzzy
-msgid "Something went wrong while joining the plan"
-msgstr "કંઇક ખોટું છે. શું તમે ફરીથી પ્રયત્ન કરશો?"
+msgid "Please wait while we connect you"
+msgstr "અમે તમને કનેક્ટ કરીએ ત્યાં સુધી કૃપા કરીને રાહ જુઓ"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:221
+#, fuzzy
+msgid "Joining Plan"
+msgstr "જોડાવાની યોજના"
+
+#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#, fuzzy
+msgid "The training link is broken. Please try again."
+msgstr "તાલીમની લિંક તૂટી ગઈ છે. મહેરબાની કરીને ફરીથી પ્રયતન કરો."
+
+#: site/dashboard/wizard.php:224
+#, fuzzy, php-format
+msgid "Successfully joined training %s"
+msgstr "તાલીમમાં સફળતાપૂર્વક જોડાયા %s"
+
+#: site/dashboard/wizard.php:227
 #, fuzzy
 msgid "Next Session Date"
 msgstr "આગળ સત્ર"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:228
 #, fuzzy
 msgid "Start Time"
 msgstr "શરૂ કરો "
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:229
+#, fuzzy
 msgid "Timezone"
-msgstr ""
+msgstr "સમય ઝોન"
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:232
+#, fuzzy
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "હાલમાં કોઈ જાહેર તાલીમ ઉપલબ્ધ નથી."
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:235
+#, fuzzy
 msgid "Connecting with friend"
-msgstr ""
+msgstr "મિત્ર સાથે જોડાણ"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:237
+#, fuzzy
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "મિત્રની લિંક તૂટી ગઈ છે. મહેરબાની કરીને ફરીથી પ્રયતન કરો."
 
-#: site/dashboard/wizard.php:222
-#, php-format
+#: site/dashboard/wizard.php:238
+#, fuzzy, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "મિત્ર %s સાથે સફળતાપૂર્વક જોડાયેલ"
 
-#: site/dashboard/wizard.php:223
-msgid "Something went wrong while connecting with friend"
-msgstr ""
-
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:242
 #, fuzzy
 msgid "Checking in"
 msgstr "તપાસ યાદી"
 
-#: site/dashboard/wizard.php:228
-msgid "The checkin link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:229
-msgid "Successfully checked in"
-msgstr ""
-
-#: site/dashboard/wizard.php:230
+#: site/dashboard/wizard.php:244
 #, fuzzy
-msgid "Something went wrong while checking in"
-msgstr "અરે... કંઈ ખોટું થયું છે. ફરીથી પ્રયત્ન કરો!"
+msgid "The checkin link is broken. Please try again."
+msgstr "ચેકઇન લિંક તૂટેલી છે. મહેરબાની કરીને ફરીથી પ્રયતન કરો."
 
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:245
+#, fuzzy
+msgid "Successfully checked in"
+msgstr "સફળતાપૂર્વક ચેક ઇન કર્યું"
+
+#: site/dashboard/wizard.php:250
 #, fuzzy
 msgid "Create a training group"
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:251
 #, fuzzy
 msgid "Join a public training group"
 msgstr "તાલીમની શરૂઆત કરો"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:252
+#, fuzzy
 msgid "Skip for now"
-msgstr ""
+msgstr "હમણાં માટે છોડી દો"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:253
+#, fuzzy
 msgid "Choose your course format"
-msgstr ""
+msgstr "તમારું કોર્સ ફોર્મેટ પસંદ કરો"
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:254
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "સેશન"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "સેશન"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "સેશન"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:257
+#, fuzzy
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "શું તમે તમારી તાલીમ શેડ્યૂલ કરવા માંગો છો?"
 
-#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "હા"
 
-#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "ના"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:260
+#, fuzzy
 msgid "What time of day?"
-msgstr ""
+msgstr "દિવસના કયા સમયે?"
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Morning"
 msgstr "તાલીમ આપવી"
 
-#: site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:262
+#, fuzzy
 msgid "Afternoon"
-msgstr ""
+msgstr "બપોર"
 
-#: site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:263
+#, fuzzy
 msgid "Evening"
-msgstr ""
+msgstr "સાંજ"
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "તમને કેવો અનુભવ થયો?"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:265
+#, fuzzy
 msgid "Every day"
-msgstr ""
+msgstr "દરરોજ"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:266
+#, fuzzy
 msgid "Once a week"
-msgstr ""
+msgstr "અઠવાડિયા માં એકવાર"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:267
+#, fuzzy
 msgid "Twice a month"
-msgstr ""
+msgstr "મહિના માં બે વાર"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:268
+#, fuzzy
 msgid "Once a month"
-msgstr ""
+msgstr "મહિનામાં એક વાર"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:269
 msgid "Other"
 msgstr "અન્ય"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:270
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "તાલીમની વિષયવસ્તુ શું છે?"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "My first training group"
 msgstr "તાલીમની શરૂઆત કરો"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "તમે પ્રભુ વિશે શું શીખો છો?"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "તમે પ્રભુ વિશે શું શીખો છો?"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:274
+#, fuzzy
 msgid "This could be online or in person"
-msgstr ""
+msgstr "આ ઑનલાઇન અથવા વ્યક્તિગત હોઈ શકે છે"
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "Review Schedule"
 msgstr "તાલીમ ચક્ર"
 
-#: site/dashboard/wizard.php:260
-#, php-format
+#: site/dashboard/wizard.php:276
+#, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "%2$s માંથી %1$s પસંદ કર્યું"
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "વાંચો"
 
-#: site/dashboard/wizard.php:262
-#, php-format
+#: site/dashboard/wizard.php:278
+#, fuzzy, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "ઘણા બધા પસંદ કરેલ છે: %s"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:279
+#, fuzzy
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "પસંદ કરેલ સત્રોની ખોટી સંખ્યા"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
-#: site/dashboard/wizard.php:268
-#, php-format
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:284
+#, fuzzy, php-format
 msgid "Set %s"
-msgstr ""
+msgstr "સેટ કરો %s"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
-#: site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Location"
 msgstr "હાલના સ્થળને સેવ કરો"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "Group Name"
 msgstr "કોઇ નામ નહિ"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "Group name"
 msgstr "કોઇ નામ નહિ"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Start Date"
 msgstr "શરૂ કરો "
 
-#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
+#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "સમય"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:289
+#, fuzzy
 msgid "Date"
-msgstr ""
+msgstr "તારીખ"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:290
+#, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "સારાંશ"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:291
+#, fuzzy
 msgid "Clear Calendar"
-msgstr ""
+msgstr "કૅલેન્ડર સાફ કરો"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:292
 msgid "Add"
 msgstr "ઉમેરો"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:293
+#, fuzzy
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "તમારા શેડ્યૂલમાં કેટલીક તારીખો ઉમેરો"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Change"
 msgstr "કી બદલો"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:298
+#, fuzzy
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "તમારી તાલીમમાં જોડાવા માટે તમારા મિત્રોને આમંત્રિત કરો"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:299
+#, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"તમારા મિત્રો સાથે આમંત્રણ અથવા નીચેની લિંક શેર કરો જેથી તેઓ તમારી તાલીમમાં જોડાઈ શકે."
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:300
+#, fuzzy
 msgid "Join my zume plan"
-msgstr ""
+msgstr "મારા ઝુમ પ્લાનમાં જોડાઓ"
 
-#: site/dashboard/wizard.php:285
-#, php-format
+#: site/dashboard/wizard.php:301
+#, fuzzy, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s તમને ઝુમ તાલીમ જૂથમાં આમંત્રિત કરી રહ્યાં છે"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:307
 #, fuzzy
 msgid "Copy Invite"
 msgstr "લિંક (જોડાણ)"
@@ -4932,9 +5484,9 @@ msgid "Passwords do not match. Please, try again."
 msgstr "પાસવર્ડ સાચો નથી. કૃપા કરીને ફરીથી પ્રયત્ન કરો."
 
 #: site/login/login-template.php:217
-#, php-format
+#, fuzzy, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
-msgstr ""
+msgstr "તમારો પાસવર્ડ રીસેટ થયો છે. %1$s તમે અહીં લૉગિન કરી શકો છો %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -4951,8 +5503,9 @@ msgid "Password"
 msgstr "પાસવર્ડ"
 
 #: site/login/login-template.php:267
+#, fuzzy
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "કૃપા કરીને વધુ મજબૂત પાસવર્ડ પસંદ કરો. આ એક ખૂબ નબળું છે."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -4960,15 +5513,17 @@ msgid "Re-enter Password"
 msgstr "ફરીથી પાસવર્ડ ટાઇપ લખો"
 
 #: site/login/login-template.php:365
+#, fuzzy
 msgid "Hello!"
-msgstr ""
+msgstr "નમસ્તે!"
 
 #: site/login/login-template.php:366
+#, fuzzy
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "ઝુમ એકાઉન્ટ બનાવો"
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -4976,8 +5531,9 @@ msgid "Register"
 msgstr "નોંધણી કરો"
 
 #: site/login/login-template.php:400
+#, fuzzy
 msgid "Or"
-msgstr ""
+msgstr "અથવા"
 
 #: site/login/login-template.php:402
 #, fuzzy
@@ -4985,12 +5541,14 @@ msgid "Register with Email"
 msgstr "હવે નોંધણી કરો!"
 
 #: site/login/login-template.php:440
+#, fuzzy
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "ખરાબ રીતે ફોર્મેટ કરેલ ઇમેઇલ સરનામું"
 
 #: site/login/login-template.php:447
+#, fuzzy
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "પાસવર્ડ પૂરતો મજબૂત નથી"
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -5012,8 +5570,9 @@ msgid "Login"
 msgstr "લોગ ઈન કરો"
 
 #: site/login/login-template.php:612
+#, fuzzy
 msgid "or sign in with email"
-msgstr ""
+msgstr "અથવા ઇમેઇલ સાથે સાઇન ઇન કરો"
 
 #: site/login/login-template.php:618
 msgid "Username or password does not match. Try again."
@@ -5024,16 +5583,18 @@ msgid "Remember Me"
 msgstr "મને યાદ રાખો."
 
 #: site/login/login-template.php:689
+#, fuzzy
 msgid "Don't have an account?"
-msgstr ""
+msgstr "ખાતું નથી?"
 
 #: site/login/login-template.php:701
 msgid "Lost your password?"
 msgstr "તમારો પાસવર્ડ ભૂલી ગયા છો?"
 
 #: site/login/login-template.php:712
+#, fuzzy
 msgid "Already have an account?"
-msgstr ""
+msgstr "પહેલેથી એકાઉન્ટ છે?"
 
 #: site/login/login-template.php:768
 #, fuzzy
@@ -5041,8 +5602,9 @@ msgid "Username or Email Address"
 msgstr "વપરાશકારનું નામ અથવા ઇ-મેઇલ એડ્રેસ ખૂટે છે."
 
 #: site/login/login-template.php:771
+#, fuzzy
 msgid "Log In"
-msgstr ""
+msgstr "પ્રવેશ કરો"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5190,6 +5752,7 @@ msgid ""
 msgstr "વૃદ્ધિ કરનારાં શિષ્યોથી જગતને ભરી દેવું"
 
 #: site/pages/about.php:100
+#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5199,8 +5762,15 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"2015 માં, ઈસુના મહાન કમિશનના આદેશને પરિપૂર્ણ કરવા માટે પ્રતિબદ્ધ એક નાનું જૂથ જોનાથન "
+"પ્રોજેક્ટ લીડરશિપ મીટિંગ માટે બોલાવવામાં આવ્યું હતું. તેઓએ પ્રાર્થના કરી અને વિશ્વભરમાં "
+"શિષ્યોના ગુણાકારમાં પડકારો વિશે ચર્ચા કરી. સુલભ, બહુભાષી અને લવચીક તાલીમની જરૂરિયાતને "
+"ઓળખીને જે ઈસુના સાધારણ લોકોને રાજ્ય માટે 'ખમીર' બનવાની હાકલ સાથે સંરેખિત કરે છે, ઑનલાઇન "
+"વિડિઓ-આધારિત તાલીમનો વિચાર જન્મ્યો હતો. આખરે, આ વિચાર જે હવે ઝુમે તરીકે ઓળખાય છે તેમાં "
+"વિકસિત થયો."
 
 #: site/pages/about.php:101
+#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5208,6 +5778,10 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"ઝુમે તાલીમમાં શિષ્ય-નિર્માણના પાયાના સિદ્ધાંતો સીધા બાઇબલમાંથી આવે છે અને ત્રીસ વર્ષથી "
+"વૈશ્વિક સ્તરે પરીક્ષણ કરવામાં આવે છે. આ સિદ્ધાંતો સામાન્ય વિશ્વાસીઓને શિષ્ય બનવા માટે સમર્થ "
+"બનાવે છે, જેઓ બદલામાં, શિષ્યો બનાવે છે, પરિણામે લાખો શિષ્યો આધ્યાત્મિક રીતે અંધારાવાળી "
+"જગ્યાએ રાજ્યને આગળ ધપાવે છે."
 
 #: site/pages/about.php:114
 #, fuzzy
@@ -5222,57 +5796,75 @@ msgstr ""
 "બધા તેમાં સહભાગી છીએ, પરંતુ અમે લોઝાન કરાર સાથે સંમત થઇએ છીએ."
 
 #: site/pages/about.php:120
+#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"ધ્યેય આપણી પેઢીમાં શિષ્યોના ગુણાકાર સાથે વિશ્વને સંતૃપ્ત કરવાનો છે. આ તાલીમમાં મળેલા "
+"બાઈબલના સિદ્ધાંતો સરળ છે. વિશ્વ બદલવાની સંભાવના આ સિદ્ધાંતોના આચરણમાં છે."
 
 #: site/pages/about.php:121
+#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Zúme ની દ્રષ્ટિ સમગ્ર કણક દ્વારા કામ કરતા યીસ્ટ સાથે તુલનાત્મક છે, જે વિશ્વભરના પડોશમાં "
+"મૂળભૂત સામ્રાજ્ય સાધનો ફેલાવે છે."
 
 #: site/pages/about.php:128
+#, fuzzy
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "ઝુમેની દ્રષ્ટિના બે ભાગો છે:"
 
 #: site/pages/about.php:132
 msgid "1 Training"
 msgstr "1 તાલીમ"
 
 #: site/pages/about.php:136
+#, fuzzy
 msgid "Part 1:"
-msgstr ""
+msgstr "ભાગ 1:"
 
 #: site/pages/about.php:137
+#, fuzzy
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"ઉત્તર અમેરિકામાં દર 5,000 લોકો માટે ઓછામાં ઓછા એક શિષ્ય નિર્માતા અને વૈશ્વિક સ્તરે દર "
+"50,000 લોકો માટે એક શિષ્ય નિર્માતાને તાલીમ આપવી."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "2 સરળ મંડળીઓ"
 
 #: site/pages/about.php:147
+#, fuzzy
 msgid "Part 2:"
-msgstr ""
+msgstr "ભાગ 2:"
 
 #: site/pages/about.php:148
+#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"પ્રશિક્ષિત શિષ્ય નિર્માતાઓ માટે ઉત્તર અમેરિકામાં દર 5,000 લોકો માટે ઓછામાં ઓછા 2 સરળ "
+"ગુણાકાર ચર્ચ અને વૈશ્વિક સ્તરે દર 50,000 લોકો માટે 2 સરળ ચર્ચ શરૂ કરવા."
 
 #: site/pages/about.php:154
+#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"આ નાની શરૂઆત સાથે... બાઇબલ જેને યીસ્ટ કહે છે... આપણે વિશ્વને ગુણાકાર કરતા શિષ્યો અને "
+"ચર્ચોથી ઢંકાયેલું જોઈ શકીએ છીએ. Zúme તાલીમનું અન્વેષણ કરો અને કેવી રીતે શોધો!"
 
 #: site/pages/about.php:157
 #, fuzzy
@@ -5285,11 +5877,12 @@ msgid "How does Zúme Training Work?"
 msgstr "ઝુમ તાલીમ"
 
 #: site/pages/about.php:167 site/pages/home.php:213
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sમફત નોંધણી%2$s તમને તમામ તાલીમ સામગ્રી અને ઑનલાઇન કોચિંગની સંપૂર્ણ ઍક્સેસ આપે છે."
 
 #: site/pages/about.php:171 site/pages/home.php:217
 #, fuzzy, php-format
@@ -5323,8 +5916,9 @@ msgstr ""
 "આપવામાં આવશે."
 
 #: site/pages/about.php:194
+#, fuzzy
 msgid "Before you start."
-msgstr ""
+msgstr "તમે શરૂ કરો તે પહેલાં."
 
 #: site/pages/about.php:201
 #, fuzzy
@@ -5337,23 +5931,31 @@ msgid "First:"
 msgstr "પ્રથમ"
 
 #: site/pages/about.php:204
+#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme એક જૂથ તરીકે કરવા માટે રચાયેલ છે. જૂથ વ્યાયામ, ચર્ચાઓ અને કૌશલ્યોની પ્રેક્ટિસ એ બધું "
+"અન્ય લોકો સાથે વધુ સારું રહેશે, તેથી જો શક્ય હોય તો એક જૂથ એકત્રિત કરો."
 
 #: site/pages/about.php:207
+#, fuzzy
 msgid "Second:"
-msgstr ""
+msgstr "બીજું:"
 
 #: site/pages/about.php:208
+#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme એ કુશળતા વિકસાવવા, યોગ્યતા બનાવવા વિશે છે, માત્ર જ્ઞાન મેળવવાનું નથી. દરેક સત્રમાં, "
+"ધ્યેય ફળદાયી ક્રિયા છે. પ્રશિક્ષણનું શ્રેષ્ઠ પરિણામ એ બદલાયેલ જીવનશૈલી અને તમારા વિશ્વાસમાં "
+"વધેલી શક્તિનો અનુભવ હશે."
 
 #: site/pages/about.php:216
 #, fuzzy
@@ -5366,20 +5968,27 @@ msgid "Needed for the training:"
 msgstr "શું તમે તાલીમ શરૂ કરવા માગો છો?"
 
 #: site/pages/about.php:221 site/pages/training.php:262
+#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "ઓછામાં ઓછા 3 લોકો, પરંતુ આદર્શ રીતે 12 કરતા ઓછા."
 
 #: site/pages/about.php:222 site/pages/training.php:263
+#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"અભ્યાસક્રમમાં વિભાવનાઓ અને સાધનો શીખવા અને પ્રેક્ટિસ કરવામાં 20 કલાક પસાર કરવાની "
+"પ્રતિબદ્ધતા."
 
 #: site/pages/about.php:223 site/pages/training.php:264
+#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"એક વ્યક્તિ (સંભવિત રીતે તમે) મીટિંગનો સમય અને સ્થાન, ફોલો-અપ ચર્ચાને માર્ગદર્શન આપવા અને "
+"ક્રિયાના સંકેતોની સુવિધા આપવા માટે."
 
 #: site/pages/about.php:232
 #, fuzzy
@@ -5387,16 +5996,22 @@ msgid "NOT needed for the training:"
 msgstr "શું તમે તાલીમ શરૂ કરવા માગો છો?"
 
 #: site/pages/about.php:234 site/pages/training.php:268
+#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"તમારા બાકીના જૂથ કરતાં વધુ જ્ઞાન અથવા અનુભવની જરૂર નથી! જો તમે આગળ ક્લિક કરી શકો છો, "
+"તો તમે Zúme તાલીમનું નેતૃત્વ કરી શકો છો."
 
 #: site/pages/about.php:235
+#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"તાલીમનું નેતૃત્વ કરવા માટે વિશેષ પરવાનગીની જરૂર નથી! Zúme સ્વ-સગવડ, સ્વ-પ્રારંભિત છે અને "
+"તમે આજે જ શરૂ કરી શકો છો."
 
 #: site/pages/about.php:246
 #, fuzzy
@@ -5404,15 +6019,20 @@ msgid "Connecting with a Coach."
 msgstr "પ્રશિક્ષક સાથે સંપર્ક કરો"
 
 #: site/pages/about.php:253
+#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"સમગ્ર માર્ગમાં, Zúme સમુદાય તમને અને તમારા જૂથને તાલીમનો સફળતાપૂર્વક અમલ કરવામાં મદદ "
+"કરવા માટે એક COACH પ્રદાન કરીને તમને સમર્થન આપવા આતુર છે. પ્રશ્નો અથવા ચિંતાઓ સાથે સંપર્ક "
+"કરવામાં અચકાશો નહીં!"
 
 #: site/pages/about.php:263
+#, fuzzy
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "તમે તૈયાર છો? આજે જ નોંધણી કરો."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 #, fuzzy
@@ -5420,8 +6040,9 @@ msgid "Register Free"
 msgstr "મફત નોંધણી કરો"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
+#, fuzzy
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "કૃપા કરીને મિત્ર કોડ દાખલ કરો."
 
 #: site/pages/checkin.php:157
 #, fuzzy
@@ -5429,27 +6050,32 @@ msgid "Checkin"
 msgstr "તપાસ યાદી"
 
 #: site/pages/checkin.php:159
+#, fuzzy
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "સ્ક્રીન પર અથવા પુસ્તકમાં કોડનો ઉપયોગ કરો"
 
 #: site/pages/checkin.php:164 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
+#, fuzzy
 msgid "Connect"
-msgstr ""
+msgstr "જોડાવા"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "દાન કરો"
 
 #: site/pages/donate.php:95
+#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
-msgstr ""
+msgstr "અમે ક્રાઉડફંડેડ છીએ, અને અમને ગમે છે કે તમે Zúme વિઝનનો ભાગ બનવા માંગો છો."
 
 #: site/pages/donate.php:103
+#, fuzzy
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "બધી તકો આપવી જુઓ"
 
 #: site/pages/faq.php:88
 #, fuzzy
@@ -5481,39 +6107,39 @@ msgstr "સાંભળો અને સાથે-સાથે વાંચો"
 msgid "How to Follow Jesus"
 msgstr "કેવી રીતે ઈસુને અનુસરો"
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 #, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr "તમારા નવા જીવનના 4 સંબંધો વિશે સમજણ આપતો આ મહત્ત્વનો વિડિયો જુઓ."
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 #, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr "ઈસુના અનુયાયી (શિષ્ય) બનવાનો અર્થ શું છે તે નીચે આપેલા વિભાગો તમને શીખવશે."
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr "ઈસુની પાછળ ચાલનાર કોણ છે?"
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr "ઈસુની પાછળ ચાલનારની પ્રવૃત્તિઓ કઈ-કઈ છે?"
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr "બાઇબલ વાંચન"
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
 "શિષ્યો શું જાણે છે તે મહત્ત્વનું છે - પરંતુ તેઓ જે જાણે છે તેનું શું કરે છે તે તેનાથી વધારે મહત્ત્વનું છે."
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
@@ -5523,11 +6149,11 @@ msgstr ""
 "અને જે શીખ્યા છે તેનો અભ્યાસ કરીને તેને આધીન થશે અને બીજાઓને જણાવશે. આ રીતે 3/3 સભ્યોનું જૂથ એ "
 "ફક્ત એક નાનું જૂથ જ નહિ પરંતુ એક સરળ મંડળી બની જશે."
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "ઈસુની એ આજ્ઞા કે જાઓ અને સુવાર્તા પ્રગટ કરો તેને કેવી રીતે આધીન થવું તે શીખો."
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 #, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
@@ -5536,17 +6162,17 @@ msgstr ""
 "આ તો પ્રભુ સાથેના આપણા ગાઢ સંબંધની ઉજવણી કરવાની સરળ રીત છે. તેની ઉજવણી કરવાની સરળ "
 "રીત શીખો."
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr "બલિદાન અને દુઃખ સહન કરવું"
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
 "હું કેવી રીતે ઈસુને આધીન થઈને બીજાઓને પણ મારી સાથે મળીને ઈસુની પાછળ ચાલવામાં મદદરૂપ બની "
 "શકું?"
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -5559,19 +6185,19 @@ msgstr ""
 "આપતા જાઓ; મેં તમને જે જે આજ્ઞા કરી તે સર્વ પાળવાનું તેઓને શીખવતા જાઓ; અને જુઓ, જગતના અંત "
 "સુધી હું સર્વકાળ તમારી સાથે છું.\""
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr "માથ્થી 28:18-20"
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr "તમારી સાથે બીજાઓને ઈસુની પાછળ ચાલવાનું અને તેની આજ્ઞાઓ પાળવાનું શીખવવું"
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "બતકનાં બચ્ચાંની વાત શિષ્યો બનાવવા વિશે શું જણાવે છે તે શીખો"
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
@@ -5579,20 +6205,20 @@ msgstr ""
 "કેવી રીતે શિષ્યો બનાવવાનું કાર્ય ફક્ત એક જ પ્રવૃત્તિ નથી તે જુઓ. એક જ સમયે ઘણાં કાર્યો થઈ "
 "શકે છે."
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr "તમે ઈસુ વિશે જે જાણો છો તે લોકોને કહેવું"
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr "તમે ઈસુ વિશે જે જાણતા નથી તે લોકોને કહેવું"
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr "શાંતિના પુત્રને શોધો અને તમને તે મળ્યો છે તે કેવી રીતે જાણશો."
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 #, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
@@ -5601,7 +6227,7 @@ msgstr ""
 "બીજાઓ માટે પ્રાર્થના કરવા માટેની પ્રભુની આજ્ઞાને આધીન થવાની આ એક સરળ રીત છે. અને તે એવું "
 "લાગે કે - ચાલતાં-ચાલતાં પ્રાર્થના કરવી."
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 #, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
@@ -5614,8 +6240,9 @@ msgid "Friend Invitation"
 msgstr "સ્વીકૃત આમંત્રણ"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
+#, fuzzy
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "તમારા મિત્રએ તમને મોકલેલ કોડનો ઉપયોગ કરો."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
@@ -5623,15 +6250,20 @@ msgid "Get A Coach"
 msgstr "શિક્ષક મેળવો"
 
 #: site/pages/get-a-coach.php:89
+#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"દરેક એથ્લેટિક રમત, ખાસ કરીને ઉચ્ચ સ્તરે, કોચિંગનો ઉપયોગ કરે છે. ઓલિમ્પિક રમતવીરોમાં પણ "
+"કોચ હોય છે, અને ઘણી વખત એક કરતાં વધુ. જેઓ વધુ અનુભવ ધરાવતા હોય તેમના દ્વારા શિષ્ય "
+"નિર્માણને કોચિંગથી સમાન રીતે ફાયદો થઈ શકે છે."
 
 #: site/pages/get-a-coach.php:92
+#, fuzzy
 msgid "No Cost"
-msgstr ""
+msgstr "કોઈ કિંમત નથી"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
@@ -5655,14 +6287,18 @@ msgid "Localized"
 msgstr "સ્થાનિક"
 
 #: site/pages/get-a-coach.php:102
+#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"અમારી કનેક્શન ટીમ તમને એવા કોચ સાથે જોડવાનો પ્રયાસ કરે છે જે તમારી ભાષા બોલે છે અને "
+"ભૌગોલિક રીતે શક્ય તેટલું નજીક છે."
 
 #: site/pages/get-a-coach.php:106
+#, fuzzy
 msgid "Experienced"
-msgstr ""
+msgstr "અનુભવી"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
 #, fuzzy
@@ -5670,15 +6306,19 @@ msgid "Join a training"
 msgstr "તાલીમની શરૂઆત કરો"
 
 #: site/pages/get-a-coach.php:109
+#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"અમારા બધા કોચ Zûme માં મળેલ વિભાવનાઓ અને સાધનોને પ્રશિક્ષિત અને પ્રેક્ટિસ કરે છે. અમારા "
+"બધા કોચ તમને અવરોધો દૂર કરવામાં અને તમારી મુસાફરીમાં પગલાં ભરવામાં મદદ કરી શકે છે."
 
 #: site/pages/home.php:86
+#, fuzzy
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:87
 #, fuzzy
@@ -5686,20 +6326,23 @@ msgid "Languages"
 msgstr "ભાષા"
 
 #: site/pages/home.php:129
+#, fuzzy
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "વધુ ઇસુ જેવા બનવું... સાથે"
 
 #: site/pages/home.php:132
 msgid "Overview"
 msgstr "નિરીક્ષણ"
 
 #: site/pages/home.php:134
+#, fuzzy
 msgid "Group Discussions"
-msgstr ""
+msgstr "જૂથ ચર્ચાઓ"
 
 #: site/pages/home.php:135
+#, fuzzy
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "સ્વ-સગવડ"
 
 #: site/pages/home.php:136
 #, fuzzy
@@ -5707,8 +6350,9 @@ msgid "Practice-Oriented"
 msgstr "અભ્યાસ કરો - ચાર ક્ષેત્રો"
 
 #: site/pages/home.php:137
+#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 ખ્યાલો અને કૌશલ્યો"
 
 #: site/pages/home.php:138
 #, fuzzy
@@ -5716,12 +6360,14 @@ msgid "20 hours of Training"
 msgstr "તાલીમની શરૂઆત કરો"
 
 #: site/pages/home.php:144
+#, fuzzy
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "મફત. ગમે ત્યારે. ગમે ત્યાં."
 
 #: site/pages/home.php:148
+#, fuzzy
 msgid "Gain insight into..."
-msgstr ""
+msgstr "આ અંગે સમજ મેળવો..."
 
 #: site/pages/home.php:153
 #, fuzzy
@@ -5734,8 +6380,9 @@ msgid "What's a Disciple?"
 msgstr "શિષ્ય અને મંડળીની સરળ વ્યાખ્યા"
 
 #: site/pages/home.php:156
+#, fuzzy
 msgid "What's a Church?"
-msgstr ""
+msgstr "ચર્ચ શું છે?"
 
 #: site/pages/home.php:157
 #, fuzzy
@@ -5743,16 +6390,19 @@ msgid "Keys to Spiritual Growth"
 msgstr "આત્મિક શ્વાસોચ્છવાસ"
 
 #: site/pages/home.php:158
+#, fuzzy
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "વ્યક્તિગત બાઇબલ અભ્યાસ"
 
 #: site/pages/home.php:159
+#, fuzzy
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "મજબૂત પ્રાર્થના જીવન"
 
 #: site/pages/home.php:160
+#, fuzzy
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "આજ્ઞાકારી વિશ્વાસની શક્તિ"
 
 #: site/pages/home.php:167
 #, fuzzy
@@ -5770,8 +6420,9 @@ msgid "Telling Your Story"
 msgstr "તમારા જૂથનું નેતૃત્વ"
 
 #: site/pages/home.php:171
+#, fuzzy
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "સંલગ્ન સાધકો"
 
 #: site/pages/home.php:172
 #, fuzzy
@@ -5789,12 +6440,14 @@ msgid "Training Others"
 msgstr "તાલીમ આપવી"
 
 #: site/pages/home.php:179 site/pages/home.php:245
+#, fuzzy
 msgid "I'm Ready!"
-msgstr ""
+msgstr "હું તૈયાર છું!"
 
 #: site/pages/home.php:193
+#, fuzzy
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "સામાન્ય લોકો. સરળ પગલાં."
 
 #: site/pages/home.php:238
 #, fuzzy
@@ -5802,35 +6455,44 @@ msgid "More about zume"
 msgstr "ઝુમ વિશે વધારે માહિતી મેળવો"
 
 #: site/pages/home.php:272
+#, fuzzy
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "વાસ્તવિક લોકો... વાસ્તવિક વાર્તાઓ."
 
 #: site/pages/home.php:283
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"મેં વર્ષો સુધી વિશ્વાસુપણે બાઇબલ અભ્યાસ અને ચર્ચમાં હાજરી આપી, પરંતુ કોઈક રીતે શિષ્ય "
+"બનાવવાના સાદા સત્યોને હું સમજી શક્યો ન હતો જે મને અહીં ઝુમેમાં મળ્યો હતો. ~ સી"
 
 #: site/pages/home.php:294
+#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
-msgstr ""
+msgstr "કોઈપણ વ્યક્તિ આ કરી શકે છે. તમારે કોઈ વિશેષ કુશળતા અથવા તાલીમની જરૂર નથી. ~ જે"
 
 #: site/pages/home.php:305
+#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"આ તે બધા શિષ્યો માટે છે જેઓ મહાન કમિશનનું પાલન કરવા માંગે છે. ઝુમે તાલીમ સામાન્ય ખ્રિસ્તી "
+"જીવનશૈલીની રૂપરેખા આપે છે. ~ ડી"
 
 #: site/pages/home.php:316
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
-msgstr ""
+msgstr "આ ખ્યાલો અને કૌશલ્યોએ આપણા ચર્ચ અને વિશ્વ પરની આપણી અસરને બદલી નાખી. ~ આર"
 
 #: site/pages/home.php:326
-#, fuzzy
-msgid "Zúme = Yeast"
+#, fuzzy, php-format
+msgid "%s = Yeast"
 msgstr "ઝુમ માળખું"
 
 #: site/pages/home.php:332
@@ -5849,8 +6511,9 @@ msgstr ""
 "તથા બળવાન કરીને આપણી પેઢીમાં વૃદ્ધિ કરનારા શિષ્યોથી વિશ્વને ભરવાનું છે."
 
 #: site/pages/home.php:337
+#, fuzzy
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "તમારા આગલા પગલાં લેવા માટે તૈયાર છો?"
 
 #: site/pages/home.php:341
 #, fuzzy
@@ -5863,8 +6526,9 @@ msgid "Gather a Group."
 msgstr "જૂથ બનાવો"
 
 #: site/pages/home.php:349
+#, fuzzy
 msgid "Change the World."
-msgstr ""
+msgstr "વિશ્વ બદલો."
 
 #: site/pages/home.php:352
 #, fuzzy
@@ -5872,8 +6536,9 @@ msgid "Get started"
 msgstr "શરૂઆત કરો"
 
 #: site/pages/kitchen-sink.php:86
+#, fuzzy
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "કિચન સિંક"
 
 #: site/pages/messages.php:236
 #, fuzzy
@@ -5881,8 +6546,9 @@ msgid "Friend"
 msgstr "વપરાશકારનું સરનામું"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
+#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr ""
+msgstr "શિષ્યોને સશક્તિકરણ. ગમે ત્યારે... Zúme એપ સાથે ગમે ત્યાં."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
 #, fuzzy
@@ -5890,37 +6556,45 @@ msgid "Zúme Training App"
 msgstr "ઝુમ તાલીમ"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
+#, fuzzy
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "તમે જ્યાં પણ જાઓ ત્યાં સંપૂર્ણ તાલીમને ઍક્સેસ કરો"
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
+#, fuzzy
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "તેને Google Play પર મેળવો"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
+#, fuzzy
 msgid "Offline App"
-msgstr ""
+msgstr "ઑફલાઇન એપ્લિકેશન"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
+#, fuzzy
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "ઇન્ટરનેટની આવશ્યકતા વિના સંપૂર્ણ તાલીમ"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
+#, fuzzy
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "તમારા ફોન પર કોર્સ અને વિડિયો સામગ્રી ડાઉનલોડ કરો"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
+#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
+msgstr "જ્યાં ઇન્ટરનેટ ઍક્સેસ પ્રતિબંધિત અથવા મર્યાદિત હોય તેવા વિસ્તારો માટે સરસ"
 
 #: site/pages/plan-invite.php:77
+#, fuzzy
 msgid "Please enter a code."
-msgstr ""
+msgstr "કૃપા કરીને કોડ દાખલ કરો."
 
 #: site/pages/plan-invite.php:170
+#, fuzzy
 msgid "Plan Invitation"
-msgstr ""
+msgstr "આયોજન આમંત્રણ"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -5950,10 +6624,12 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "સોશિયલ લોગ ઇન કરવા કઇ અનુમતિ માગવામાં આવે છે?"
 
 #: site/pages/privacy-policy.php:91
+#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"ફેસબુક અથવા ગૂગલ સાઇન ઓનનો ઉપયોગ થાય છે તેના આધારે નીચેના પ્રોફાઇલ ઘટકો બદલાય છે."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -5988,9 +6664,10 @@ msgid ""
 msgstr "અમે તાલીમ અભ્યાસક્રમ દ્વારા તમારી પ્રગતિ પણ જોઇએ છીએ."
 
 #: site/pages/privacy-policy.php:136
+#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
-msgstr ""
+msgstr "અમે વિવિધ સાઇન અપ અને વિનંતી ફોર્મ દ્વારા જરૂરી માહિતીની વિનંતી કરીએ છીએ."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6119,28 +6796,36 @@ msgid "Training Guidebook"
 msgstr "તાલીમથી પૂરેપૂરા ભરી દેવા"
 
 #: site/pages/resources.php:103
+#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"Zúme તાલીમ હવે સંપૂર્ણ વર્કબુકમાં ઉપલબ્ધ છે. તાલીમના તમામ ખ્યાલો, સાધનો, ચર્ચાના પ્રશ્નો "
+"અને પડકારો હવે તમારા હાથની હથેળીમાં છે. દરેક સત્ર માટેના QR કોડ તમને તમામ વિડિયો "
+"સામગ્રીની ઍક્સેસ પણ આપે છે!"
 
 #: site/pages/resources.php:111
+#, fuzzy
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "મફત ડાઉનલોડ (PDF)"
 
 #: site/pages/resources.php:112
+#, fuzzy
 msgid "Order print copy"
-msgstr ""
+msgstr "પ્રિન્ટ કોપી ઓર્ડર કરો"
 
 #: site/pages/share.php:83
+#, fuzzy
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "આ લિંક કોપી કરો અને તમારા મિત્રોને મોકલો."
 
 #: site/pages/share.php:85
+#, fuzzy
 msgid "Copied"
-msgstr ""
+msgstr "નકલ કરી"
 
 #: site/pages/share.php:122
 msgid "Tools"
@@ -6151,22 +6836,28 @@ msgid "Concepts"
 msgstr "વિચારો"
 
 #: site/pages/share.php:125
+#, fuzzy
 msgid "Sort"
-msgstr ""
+msgstr "સ .ર્ટ કરો"
 
 #: site/pages/share.php:126
+#, fuzzy
 msgid "Items"
-msgstr ""
+msgstr "વસ્તુઓ"
 
 #: site/pages/share.php:134
+#, fuzzy
 msgid "Sharing with Others"
-msgstr ""
+msgstr "અન્ય લોકો સાથે શેરિંગ"
 
 #: site/pages/share.php:141
+#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"જ્યારે આપણે પ્રભુએ આપણી સાથે જે શેર કર્યું છે તેનું પાલન કરવા અને શેર કરવા માટે વફાદાર હોઈએ "
+"છીએ, ત્યારે તે વધુ શેર કરવાનું વચન આપે છે."
 
 #: site/pages/training.php:130
 #, fuzzy
@@ -6179,10 +6870,13 @@ msgid "Create your own training group"
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
 #: site/pages/training.php:136
+#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"થોડા મિત્રોને ભેગા કરો અથવા હાલના નાના જૂથ સાથે અભ્યાસક્રમમાં જાઓ. તમારું પોતાનું તાલીમ "
+"જૂથ બનાવો અને તમારી પ્રગતિને ટ્રૅક કરો."
 
 #: site/pages/training.php:138
 #, fuzzy
@@ -6190,10 +6884,13 @@ msgid "Create"
 msgstr "ત્રણ મહિનાની યોજના"
 
 #: site/pages/training.php:144
+#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"જો તમે અત્યારે કોઈ જૂથ ભેગું કરી શકતા નથી, તો અનુભવી ઝુમ કોચની આગેવાની હેઠળના અમારા "
+"ઑનલાઇન તાલીમ જૂથોમાંથી એકમાં જોડાવાનું વિચારો."
 
 #: site/pages/training.php:149
 #, fuzzy
@@ -6201,10 +6898,13 @@ msgid "Request a coach"
 msgstr "શિક્ષક મેળવો"
 
 #: site/pages/training.php:152
+#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"અમે તમને મફત Zúme કોચ સાથે જોડી શકીએ છીએ જે તમને તાલીમ સમજવામાં અને ફળદાયી શિષ્ય "
+"બનવામાં મદદ કરવા માટે પ્રતિબદ્ધ છે."
 
 #: site/pages/training.php:154
 #, fuzzy
@@ -6231,15 +6931,19 @@ msgid "What is required?"
 msgstr "ઇ-મેઇલ જરૂરી છે."
 
 #: site/pages/training.php:177
+#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"આ સ્વ-સગવડતાવાળા અભ્યાસક્રમમાં, તમે અને તમારું તાલીમ જૂથ નીચેના ક્ષેત્રોમાં તમારી કુશળતા અને "
+"જ્ઞાન વિકસાવવા માટે ટૂંકા વિડિયો, ચર્ચા પ્રશ્નો અને સરળ કસરતોનો ઉપયોગ કરશો:"
 
 #: site/pages/training.php:181
+#, fuzzy
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "શિષ્યત્વ ખ્યાલો"
 
 #: site/pages/training.php:195
 #, fuzzy
@@ -6247,10 +6951,13 @@ msgid "Spiritual Practices"
 msgstr "આત્મિક શ્વાસોચ્છવાસ"
 
 #: site/pages/training.php:216
+#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme એ 20 કલાકની તાલીમ છે. પરંતુ તે 20 કલાક તમારા તાલીમ જૂથની ઉપલબ્ધતાના આધારે અલગ "
+"રીતે વિભાજિત થઈ શકે છે."
 
 #: site/pages/training.php:221
 #, fuzzy
@@ -6258,11 +6965,15 @@ msgid "10 Sessions"
 msgstr "સેશન"
 
 #: site/pages/training.php:228
+#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"મૂળ Zúme કોર્સ ફોર્મેટ 10 બે કલાકના સત્રો છે. દરેક સત્ર વ્યવહારિક આજ્ઞાપાલન પગલાં અને "
+"સત્રો વચ્ચે શેર કરવાની રીતો સાથે સમાપ્ત થાય છે. આ ફોર્મેટ ઘણીવાર અઠવાડિયામાં એકવાર 10 "
+"અઠવાડિયા માટે ચલાવવામાં આવે છે."
 
 #: site/pages/training.php:233
 #, fuzzy
@@ -6270,22 +6981,30 @@ msgid "20 Sessions"
 msgstr "સેશન"
 
 #: site/pages/training.php:240
+#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"વિભાવનાઓ અને કૌશલ્યોમાં યોગ્યતા મેળવવાની વધુ તક સાથે લાંબા ધીમી ગતિના અભ્યાસક્રમ માટે, "
+"20 સત્રના ફોર્મેટમાં દરેક વિભાવનાઓ અને સાધનો માટે વધુ પ્રેક્ટિસની તકો છે."
 
 #: site/pages/training.php:245
+#, fuzzy
 msgid "Intensive"
-msgstr ""
+msgstr "સઘન"
 
 #: site/pages/training.php:252
+#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme ને 4 કલાકના 5 અડધા દિવસના વિભાગોમાં સંકુચિત કરી શકાય છે. આ શુક્રવારની સાંજ (4 "
+"કલાક), અને આખો દિવસ શનિવાર (8 કલાક) અને આખો દિવસ રવિવાર (8 કલાક) સાથે કરી શકાય "
+"છે."
 
 #: site/pages/training.php:260
 #, fuzzy
@@ -6298,14 +7017,18 @@ msgid "NOT needed for the course:"
 msgstr "શું તમે તાલીમ શરૂ કરવા માગો છો?"
 
 #: site/pages/training.php:269
+#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"અભ્યાસક્રમનું નેતૃત્વ કરવા માટે વિશેષ પરવાનગીની જરૂર નથી! Zúme સ્વ-સગવડ, સ્વ-પ્રારંભિત છે "
+"અને તમે આજે જ શરૂ કરી શકો છો."
 
 #: site/parts/footer.php:31
+#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "3 દિવસનો સઘન અભ્યાસક્રમ"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
@@ -6316,12 +7039,47 @@ msgid "Check-in"
 msgstr "તપાસ યાદી"
 
 #: site/parts/noscript.php:2
+#, fuzzy
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "અરે તમે જાવાસ્ક્રિપ્ટ બંધ કરી દીધી છે"
 
 #: site/parts/noscript.php:3
+#, fuzzy
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "કૃપા કરીને આ પૃષ્ઠનો ઉપયોગ કરવા માટે જાવાસ્ક્રિપ્ટને સક્ષમ કરો"
+
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+#, fuzzy
+msgid "Update Communication Preferences"
+msgstr "તમારું શહેર અથવા રાજ્ય અથવા પીન કોડ કયો છે?"
+
+#: site/profile/communication-preferences.php:81
+#, fuzzy
+msgid "Recieve emails for:"
+msgstr "આ માટે ઇમેઇલ્સ પ્રાપ્ત કરો:"
+
+#: site/profile/communication-preferences.php:84
+#, fuzzy
+msgid "Training session reminders"
+msgstr "તાલીમ આપવી"
+
+#: site/profile/communication-preferences.php:88
+#, fuzzy
+msgid "Annual reporting reminders"
+msgstr "વાર્ષિક રિપોર્ટિંગ રીમાઇન્ડર્સ"
+
+#: site/profile/communication-preferences.php:92
+#, fuzzy
+msgid "Community updates"
+msgstr "લોક સમુદાય"
+
+#: site/profile/communication-preferences.php:96
+#, fuzzy
+msgid "Encouragements"
+msgstr "પ્રોત્સાહનો"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6333,8 +7091,9 @@ msgid "your friend"
 msgstr "તમારી રૂપરેખા"
 
 #: utilities/apis/connect-api.php:235
+#, fuzzy
 msgid "the plan"
-msgstr ""
+msgstr "યોજના"
 
 #: utilities/apis/cta-api.php:134
 #, fuzzy
@@ -6347,8 +7106,9 @@ msgid "Join Online Training"
 msgstr "આખી તાલીમ જુઓ"
 
 #: utilities/apis/cta-api.php:149
+#, fuzzy
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "વધુ જાણવા માટે ઑનલાઇન તાલીમમાં જોડાઓ"
 
 #: utilities/apis/cta-api.php:163
 #, fuzzy
@@ -6356,8 +7116,9 @@ msgid "Joined Training!"
 msgstr "આખી તાલીમ જુઓ"
 
 #: utilities/apis/cta-api.php:178
+#, fuzzy
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "તમારી મુસાફરીમાં તમને મદદ કરવા માટે કોચ મેળવો"
 
 #: utilities/apis/cta-api.php:192
 #, fuzzy
@@ -6365,8 +7126,9 @@ msgid "Requested Coach!"
 msgstr "શિક્ષક મેળવો"
 
 #: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#, fuzzy
 msgid "Congratulations"
-msgstr ""
+msgstr "અભિનંદન"
 
 #: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 #, fuzzy
@@ -6374,88 +7136,96 @@ msgid "Create a Training"
 msgstr "1 તાલીમ"
 
 #: utilities/apis/cta-api.php:207
+#, fuzzy
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "તમારી વૃદ્ધિમાં મદદ કરવા માટે એક તાલીમ બનાવો"
 
 #: utilities/apis/cta-api.php:221
 #, fuzzy
 msgid "Created Training!"
 msgstr "તમારી પોતાની ૧૦૦ વ્યક્તિઓની યાદી બનાવો"
 
-#: utilities/apis/cta-api.php:236
-msgid "Invite friends to join you on your journey"
-msgstr ""
-
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:254
+#, fuzzy
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "અન્ય લોકોને તમને ઓળખવામાં મદદ કરવા માટે તમારી પ્રોફાઇલ સેટ કરો"
 
-#: utilities/apis/cta-api.php:265
+#: utilities/apis/cta-api.php:268
 #, fuzzy
 msgid "Profile Set"
 msgstr "રૂપરેખા   "
 
-#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "ત્રણ મહિનાની યોજના"
 
-#: utilities/apis/cta-api.php:280
+#: utilities/apis/cta-api.php:283
+#, fuzzy
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "તમારી વૃદ્ધિમાં મદદ કરવા માટે 3 મહિનાનો પ્લાન બનાવો"
 
-#: utilities/apis/cta-api.php:294
-#, php-format
+#: utilities/apis/cta-api.php:297
+#, fuzzy, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s અનલૉક"
 
-#: utilities/apis/cta-api.php:308
+#: utilities/apis/cta-api.php:311
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "ત્રણ મહિનાની યોજના"
 
-#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
+#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "ત્રણ મહિનાની યોજના"
 
-#: utilities/apis/cta-api.php:323
+#: utilities/apis/cta-api.php:326
+#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "તમારી વૃદ્ધિમાં મદદ કરવા માટે તમારી 3 મહિનાની યોજના પૂર્ણ કરો"
 
-#: utilities/apis/cta-api.php:337
+#: utilities/apis/cta-api.php:340
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "ત્રણ મહિનાની યોજના"
 
-#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#: utilities/apis/cta-api.php:385
 #, fuzzy
-msgid "Join a Hub"
+msgid "Join the community"
 msgstr "લોક સમુદાય"
 
-#: utilities/apis/cta-api.php:368
-msgid "Join a hub to help you grow"
-msgstr ""
-
-#: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "આત્મિક શ્વાસોચ્છવાસ"
 
-#: utilities/apis/cta-api.php:386
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "આત્મિક શ્વાસોચ્છવાસ"
 
-#: utilities/apis/cta-api.php:400 utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "સંબંધાત્મક કારભારીપણું - 100 વ્યક્તિઓની યાદી"
 
-#: utilities/apis/cta-api.php:401
+#: utilities/apis/cta-api.php:417
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "સંબંધાત્મક કારભારીપણું - 100 વ્યક્તિઓની યાદી"
+
+#: utilities/apis/plans-api.php:134
+#, fuzzy, php-format
+msgctxt "My first training - username"
+msgid "My first training - %s"
+msgstr "તાલીમની શરૂઆત કરો"
+
+#: utilities/apis/plans-api.php:136
+#, fuzzy, php-format
+msgctxt "Training 2 - username"
+msgid "Training %1$d - %2$s"
+msgstr "તાલીમ આપવી"
 
 #: utilities/hooks/roles-and-permissions.php:56
 #, fuzzy
@@ -6486,14 +7256,23 @@ msgstr "ઝુમ તાલીમ"
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
+#, fuzzy
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "સ્લાઇડ પ્રેઝન્ટેશન ડાઉનલોડ કરો"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
+#, fuzzy
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Zúme પેજ શેર કરો"
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+#, fuzzy
+msgid "Zúme Annual Report"
+msgstr "Zúme વાર્ષિક અહેવાલ"
 
 #: utilities/post-types/posttype-pieces.php:301
 #, fuzzy
@@ -6546,16 +7325,19 @@ msgid "User Phone"
 msgstr "ફોન"
 
 #: zume-training-system.php:279
+#, fuzzy
 msgid "User Timezone"
-msgstr ""
+msgstr "વપરાશકર્તા સમય ઝોન"
 
 #: zume-training-system.php:287
+#, fuzzy
 msgid "User Friend Key"
-msgstr ""
+msgstr "વપરાશકર્તા મિત્ર કી"
 
 #: zume-training-system.php:295
+#, fuzzy
 msgid "User Preferred Language"
-msgstr ""
+msgstr "વપરાશકર્તાની પસંદગીની ભાષા"
 
 #: zume-training-system.php:303
 #, fuzzy
@@ -6563,28 +7345,42 @@ msgid "User Preferred Email"
 msgstr "ઇ-મેઇલ"
 
 #: zume-training-system.php:311
+#, fuzzy
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "પસંદગીની સંપર્ક પદ્ધતિઓ"
 
 #: zume-training-system.php:321
+#, fuzzy
 msgid "Messenger"
-msgstr ""
+msgstr "મેસેન્જર"
 
-#. Plugin Name of the plugin/theme
 #, fuzzy
-msgid "Zúme - Training System"
-msgstr "ઝુમ તાલીમ"
+#~ msgid "Switch Views"
+#~ msgstr "દૃશ્યો સ્વિચ કરો"
 
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr "https://github.com/ZumeProject/zume-training"
+#~ msgid "Something went wrong while joining the plan"
+#~ msgstr "કંઇક ખોટું છે. શું તમે ફરીથી પ્રયત્ન કરશો?"
 
-#. Description of the plugin/theme
 #, fuzzy
-msgid "Zume Training System"
-msgstr "ઝુમ તાલીમ"
+#~ msgid "Something went wrong while checking in"
+#~ msgstr "અરે... કંઈ ખોટું થયું છે. ફરીથી પ્રયત્ન કરો!"
+
+#, fuzzy
+#~ msgid "Join a Hub"
+#~ msgstr "લોક સમુદાય"
+
+#, fuzzy
+#~ msgid "Zúme - Training System"
+#~ msgstr "ઝુમ તાલીમ"
+
+#, fuzzy
+#~ msgid "https://github.com/ZumeProject/zume-training-system"
+#~ msgstr "https://github.com/ZumeProject/zume-training"
+
+#, fuzzy
+#~ msgid "Zume Training System"
+#~ msgstr "ઝુમ તાલીમ"
 
 #, fuzzy
 #~ msgid "Submit Report"
@@ -6622,10 +7418,6 @@ msgstr "ઝુમ તાલીમ"
 #, fuzzy
 #~ msgid "Zúme Training Dashboard"
 #~ msgstr "ઝુમ તાલીમના શ્રોતો"
-
-#, fuzzy
-#~ msgid "Update Your Communication Preferences"
-#~ msgstr "તમારું શહેર અથવા રાજ્ય અથવા પીન કોડ કયો છે?"
 
 #~ msgid "Coaches"
 #~ msgstr "શિક્ષકો"
@@ -9150,9 +9942,6 @@ msgstr "ઝુમ તાલીમ"
 
 #~ msgid "Facebook already linked with another account."
 #~ msgstr "ફેસબુક અગાઉથી બીજા એકાઉન્ટ સાથે જોડાયેલ છે."
-
-#~ msgid "Oops. Something went wrong."
-#~ msgstr "અરે... કંઈ ખોટું થયું છે."
 
 #~ msgid "Great job! Here's your progress with this concept"
 #~ msgstr "ખૂબ સરસ! આ વિચાર સાથે અહીં તમારી પ્રગતિ જણાવેલ છે"

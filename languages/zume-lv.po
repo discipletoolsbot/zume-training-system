@@ -1,11 +1,12 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-05-21 22:07+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Latvian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/lv/>\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"PO-Revision-Date: 2024-06-11 05:53+0000\n"
+"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
+"translate@weblate.org>\n"
+"Language-Team: Latvian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/lv/>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,18 +37,21 @@ msgstr "Biežāk uzdotie jautājumi"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:108
-#: site/parts/nav.php:19 site/parts/nav.php:71
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "Informācijas panelis"
 
 #: appearance/style-override/navigation.php:112
+#, fuzzy
 msgid "My Zúme"
-msgstr ""
+msgstr "Mans Zúme"
 
 #: appearance/style-override/navigation.php:117
+#, fuzzy
 msgid "Contacts"
-msgstr ""
+msgstr "Kontakti"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
@@ -59,10 +63,11 @@ msgid "Trainings"
 msgstr "Treniņapmācība"
 
 #: appearance/style-override/navigation.php:135
+#, fuzzy
 msgid "Metrics"
-msgstr ""
+msgstr "Metrika"
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr "Kopiena"
 
@@ -76,17 +81,18 @@ msgid "Stories"
 msgstr "Uzglabāšana"
 
 #: appearance/style-override/navigation.php:160
+#, fuzzy
 msgid "Global Map"
-msgstr ""
+msgstr "Globālā karte"
 
-#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "Dievs lieto vienkāršus cilvēkus"
 
-#: globals.php:1908 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -94,13 +100,13 @@ msgstr ""
 "Jūs redzēsiet, kā Dievs lieto vienkāršus cilvēkus, kuri dara vienkāršas "
 "lietas, lai panāktu lielas pārmaiņas."
 
-#: globals.php:1918 site/course/course-content.php:3161
-#: site/course/course-content.php:3179
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "Vienkārša definīcija māceklim un draudzei"
 
-#: globals.php:1919 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
@@ -108,32 +114,33 @@ msgstr ""
 "Atklājiet kāda ir būtība, esot par mācekli, darot citus par mācekļiem un "
 "saprotot kas ir draudze."
 
-#: globals.php:1920 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
+#, fuzzy
 msgid "Disciples and the Church"
-msgstr ""
+msgstr "Mācekļi un Baznīca"
 
-#: globals.php:1929 site/course/course-content.php:3162
-#: site/course/course-content.php:3180
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Garīgā elpošana ir klausīties Dievā un Dievam paklausīt"
 
-#: globals.php:1930 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "Būt māceklim nozīmē, ka dzirdam no Dieva un paklausām Dievam."
 
-#: globals.php:1931 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "Garīgā elpošana ir klausīties Dievā un Dievam paklausīt"
 
-#: globals.php:1940 globals.php:1942
+#: globals.php:1969 globals.php:1971
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "S.O.A.P.S. Bībeles lasīšana"
 
-#: globals.php:1941 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -141,14 +148,14 @@ msgstr ""
 "Rīks ikdienas bībeles studijām, kas palīdz saprast Dieva vārdu, paklausīt un "
 "dalīties ar Dieva vārdu."
 
-#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "Atbildības grupas"
 
-#: globals.php:1952 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -158,11 +165,11 @@ msgstr ""
 "viens otru iedrošinātu jomās, kurās iet labi, un atklātu jomas, kurās "
 "nepieciešama korekcija."
 
-#: globals.php:1962
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Dzīvesveids - patērētājs pretēji ražotājam"
 
-#: globals.php:1963 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -170,30 +177,30 @@ msgstr ""
 "Jūs atklāsit četrus galvenos veidus, kā Dievs padara ikdienas sekotājus "
 "līdzīgākus Jēzum."
 
-#: globals.php:1964
+#: globals.php:1993
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "Ražotāji pretēji patērētājiem"
 
-#: globals.php:1973 globals.php:1975
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "Kā pavadīt stundu lūgšanā "
 
-#: globals.php:1974 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Redziet, cik viegli ir pavadīt stundu lūgšanā."
 
-#: globals.php:1984
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "Attiecību pārvaldība — 100 cilvēku saraksts"
 
-#: globals.php:1985 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 "Rīks, kas izstrādāts, lai palīdzētu jums būt labam savu attiecību "
 "pārvaldniekam."
 
-#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -204,13 +211,13 @@ msgstr ""
 msgid "List of 100"
 msgstr "100 cilvēku saraksts"
 
-#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Garīgā ekonomika"
 
-#: globals.php:1996 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -218,11 +225,11 @@ msgstr ""
 "Uzziniet, kā Dieva ekonomika atšķiras no pasaules ekonomikas. Dievs vairāk "
 "iegulda tajos, kuri ir uzticīgi ar to, kas viņiem jau ir dots."
 
-#: globals.php:2006
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "Evaņģēlijs un kā ar to dalīties"
 
-#: globals.php:2007 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -230,16 +237,16 @@ msgstr ""
 "Uzziniet, kā dalīties ar Dieva labo vēsti - no cilvēces pirmsākumiem līdz "
 "pat šī laikmeta beigām."
 
-#: globals.php:2008
+#: globals.php:2037
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "Praktizējiet daloties ar savu liecību (45min)"
 
-#: globals.php:2017
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "Ūdens kristība/ pagremde un kā to darīt"
 
-#: globals.php:2018 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -248,18 +255,18 @@ msgstr ""
 "Jēzus teica: “Ejiet un dariet par mācekļiem visas tautas, KRISTĪJOT tās Tēva "
 "un Dēla un Svētā Gara Vārdā…” Apgūstiet, kā to pielietot praksē."
 
-#: globals.php:2019 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "ŪDENS PAGREMDE (kristība)"
 
-#: globals.php:2028
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "Sagatavojiet savu 3 minūšu liecību"
 
-#: globals.php:2029 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -267,18 +274,18 @@ msgstr ""
 "Apgūstiet, kā dalīties savā liecībā trīs minūšu laikā, pastāstot, kā Jēzus "
 "ir ietekmējis jūsu dzīvi."
 
-#: globals.php:2030
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr "3 minūšu liecība"
 
-#: globals.php:2039 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Vīzija, kas dod vislielāko svētību"
 
-#: globals.php:2040 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
@@ -286,35 +293,35 @@ msgstr ""
 "Apgūstiet vienkāršu modeli, kā izveidot ne tikai vienu Jēzus sekotāju, bet "
 "veselas garīgās ģimenes, kas vairosies nākamajās paaudzēs."
 
-#: globals.php:2041
+#: globals.php:2070
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "Lielākā svētība"
 
-#: globals.php:2050
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "Pīlēnu māceklība — vadot nekavējoties"
 
-#: globals.php:2051
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "Apgūstiet, kas pīlēniem ir kopīgs ar mācekļu veidošanu."
 
-#: globals.php:2052 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Pīlēnu māceklība"
 
-#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 #, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Acis, lai redzētu, kur Debesu valstība vēl nav"
 
-#: globals.php:2062 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -322,11 +329,11 @@ msgstr ""
 "Sāciet ieraudzīt to, kur Dieva valstības vēl nav. Tās parasti ir vietas, kur "
 "Dievs vēlas strādāt visvairāk."
 
-#: globals.php:2072
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "Svētais Vakarēdiens un kā to vadīt"
 
-#: globals.php:2073
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -334,7 +341,7 @@ msgstr ""
 "Tas ir vienkāršs veids, kā svinēt mūsu ciešo saikni un pastāvīgās attiecības "
 "ar Jēzu. Uzziniet vienkāršu veidu, kā to svinēt."
 
-#: globals.php:2074 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -342,11 +349,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "Tā Kunga mielasts"
 
-#: globals.php:2083
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "Lūgšanu pastaiga un kā to darīt"
 
-#: globals.php:2084
+#: globals.php:2113
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -355,35 +362,35 @@ msgstr ""
 "Tas ir vienkāršs veids, kā paklausīt Dieva pavēlei lūgt par citiem. Un tas "
 "ir tieši tā, kā tas izklausās — Dieva lūgšana pastaigājoties!"
 
-#: globals.php:2085 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "Lūgšanu pastaiga"
 
-#: globals.php:2094
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "Miera cilvēks un kā tādu atrast"
 
-#: globals.php:2095
+#: globals.php:2124
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 "Apgūstiet, kas varētu būt miera cilvēks un kā zināt, kad esat tādu atradis."
 
-#: globals.php:2096 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "Miera cilvēks"
 
-#: globals.php:2105
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "Paklausība ir labāka nekā zināšanas"
 
-#: globals.php:2106
+#: globals.php:2135
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -392,33 +399,33 @@ msgstr ""
 "Ir svarīgi tas, ko mācekļi zina, taču daudz svarīgāk ir tas, ko viņi DARA ar "
 "to, ko zina."
 
-#: globals.php:2107 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "Uzticība"
 
-#: globals.php:2116
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "BLESS lūgšanas paraugs"
 
-#: globals.php:2117 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "Praktizējiet vienkāršu atgādinājumu, lai atcerētos par veidiem, kā lūgt par "
 "citiem."
 
-#: globals.php:2118 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "Prsaktizējiet B.L.E.S.S. lūgšanu (15min)"
 
-#: globals.php:2127
+#: globals.php:2156 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 grupu tikšanās paraugs"
 
-#: globals.php:2128
+#: globals.php:2157
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -430,35 +437,35 @@ msgstr ""
 "iemācījušies. Tādā veidā 3/3 grupa nav tikai mazā grupa, bet gan vienkārša "
 "draudze. "
 
-#: globals.php:2129
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr "3/3 grupa"
 
-#: globals.php:2138
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "Treniņapmācību cikls nobriedušiem mācekļiem"
 
-#: globals.php:2139 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "Apgūstiet treniņapmācības ciklu un apsveriet, kā tas tiek pielietots mācekļu "
 "veidošanā."
 
-#: globals.php:2140 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "Treniņapmācības cikls"
 
-#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "Vadības šūnas"
 
-#: globals.php:2150 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
@@ -466,12 +473,12 @@ msgstr ""
 "Vadības šūna ir veids, kā kāds, kurš jūtas aicināts vadīt, var attīstīt savu "
 "vadību, kalpojot."
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
-#: site/course/course-content.php:5175
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "Sagaidiet nevienmērīgu izaugsmi"
 
-#: globals.php:2161
+#: globals.php:2190
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -480,11 +487,12 @@ msgstr ""
 "Noskaidrojiet, kā mācekļu veidošanai nav jābūt lineārai. Vienlaicīgi var "
 "notikt vairākas lietas."
 
-#: globals.php:2171 site/course/course-content.php:2770
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "Tempam pavairošanā ir nozīme"
 
-#: globals.php:2172 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -492,31 +500,31 @@ msgstr ""
 "Pavairošanai ir nozīme un ātrai pavairošanai ir vēl lielāka nozīme. "
 "Noskaidrojiet, kāpēc tempam ir nozīme."
 
-#: globals.php:2173 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "Temps"
 
-#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "Vienmēr daļa no divām draudzēm"
 
-#: globals.php:2183
+#: globals.php:2212
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "Apgūstiet, kā paklausīt Jēzus pavēlēm, dodoties UN paliekot."
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Trīs mēnešu plāns"
 
-#: globals.php:2195
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -524,7 +532,7 @@ msgstr ""
 "Izveidojiet un dalieties ar savu plānu par to, kā nākamo trīs mēnešu laikā "
 "savā dzīvē ieviesīsiet Zúme rīkus."
 
-#: globals.php:2205 globals.php:2207
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -535,14 +543,14 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "Apmācības kontrolsaraksts"
 
-#: globals.php:2206 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -550,14 +558,14 @@ msgstr ""
 "Spēcīgs rīks, ko varat izmantot, lai ātri novērtētu savas stiprās puses un "
 "ievainojamības, kad runa ir par to mācekļu veidošanu, kuri pavairojas."
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "Vadība draudžu tīklos"
 
-#: globals.php:2217 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -565,14 +573,14 @@ msgstr ""
 "Apgūstiet, kā draudzes, kas pavairojas, saglabā saikni un dzīvo kopā kā "
 "paplašināta, garīgā ģimene."
 
-#: globals.php:2227 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "Vienaudžu mentoringa grupas"
 
-#: globals.php:2228 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -582,15 +590,15 @@ msgstr ""
 "seko 3/3 formātam un ir spēcīgs veids, kā novērtēt Dieva darba garīgo "
 "stāvokli jūsu reģionā."
 
-#: globals.php:2229 site/dashboard/dashboard.php:273
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr "Vienaudžu mentorings"
 
-#: globals.php:2238 globals.php:2240
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr "Četru lauku rīks"
 
-#: globals.php:2239
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -600,14 +608,14 @@ msgstr ""
 "vadības šūnā, lai pārdomātu pašreizējo centienu esošo stāvokli un Debesu "
 "valstības virzību balstoties uz šiem centieniem."
 
-#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "Paaudžu karšu veidošana"
 
-#: globals.php:2250
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -615,39 +623,47 @@ msgstr ""
 "Paaudžu karšu veidošana ir vēl viens vienkāršs rīks, kas palīdz vadītājiem "
 "mācekļu kustībā izprast izaugsmi sev apkārt."
 
-#: globals.php:2260
+#: globals.php:2289
+#, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "3-Circles evaņģēlija prezentācija"
 
-#: globals.php:2261
+#: globals.php:2290
+#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"Evaņģēlija prezentācija 3 apļos ir veids, kā pastāstīt evaņģēliju, "
+"izmantojot vienkāršu ilustrāciju, ko var uzzīmēt uz papīra."
 
-#: globals.php:2262
+#: globals.php:2291
+#, fuzzy
 msgid "3-Circles"
-msgstr ""
+msgstr "3-Apļi"
 
-#: globals.php:6993 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: globals.php:7022 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "Aizvērt"
 
-#: globals.php:7195
+#: globals.php:7224
+#, fuzzy
 msgid "No Results"
-msgstr ""
+msgstr "Nav rezultātu"
 
 #: site/activities/coaching-checklist-host.php:97
+#, fuzzy
 msgid "H.O.S.T."
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
+#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "Novērtējiet sevi, izmantojot Heard, Obeded, Shared, Trained."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
@@ -702,42 +718,58 @@ msgstr "Apmācīja"
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "Vai esmu dzirdējis par šo rīku vai koncepciju?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"Vai esmu ievērojis šo rīku vai koncepciju? Ja instruments, vai esmu to "
+"praktizējis pats? Ja koncepcija, vai esat pārdomājis, kā tas maina jūsu "
+"skatījumu?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"Vai esmu kopīgojis šo rīku vai koncepciju? Ja rīks, vai esat kādam "
+"parādījis, kā šo rīku izmantot? Ja koncepcija, vai esat dalījies ar šo "
+"koncepciju ar kādu?"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"Vai esmu apmācījis citus dalīties ar šo rīku vai koncepciju? Ja rīks, vai "
+"esmu apmācījis kādu koplietot rīku ar kādu citu? Ja koncepcija, vai esmu "
+"apmācījis kādu dalīties koncepcijā ar kādu citu?"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
+#, fuzzy
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
+#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"Trenējiet citus, izmantojot modeli, asistēšanu, skatīšanos un aiziešanu."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
@@ -751,8 +783,9 @@ msgstr "Pajautājiet sev"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Model"
-msgstr ""
+msgstr "Modelis"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -760,8 +793,9 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Assist"
-msgstr ""
+msgstr "Palīdzēt"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -771,8 +805,9 @@ msgstr ""
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 #: site/pages/home.php:204
+#, fuzzy
 msgid "Watch"
-msgstr ""
+msgstr "Skatīties"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -780,12 +815,14 @@ msgstr ""
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Leave"
-msgstr ""
+msgstr "Aiziet"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -793,10 +830,16 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"Modelēšana ir vienkārši prakses vai rīka piemērs. Tā ir apmācības cikla "
+"īsākā daļa. Parasti tas ir jādara tikai vienu reizi. Tas vienkārši rada "
+"apziņu, ka prakse vai instruments pastāv, un sniedz vispārēju priekšstatu "
+"par to, kā tas izskatās. Atkārtota modelēšana nav efektīvs veids, kā kādu "
+"aprīkot."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -806,10 +849,17 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"Asistēšana ir ļaut apmācāmajam praktizēt prasmi. Tas aizņem vairāk laika "
+"nekā modelēšanas posms. Tas prasa no mentora “turēt roku”. Mentoram ir jābūt "
+"direktīvam un aktīvi jāpiedalās apmācāmā apmācībā. Šī fāze neilgst līdz "
+"brīdim, kad apmācāmais ir pilnībā kompetents, bet tikai līdz brīdim, kad "
+"viņš saprot prasmes pamatus. Ja šī fāze tiek turpināta pārāk ilgi, audzēknis "
+"attīstīs atkarību no mentora un nekad nesasniegs pilnu kompetenci."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -817,29 +867,44 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"Skatīšanās ir garākā fāze. Tas ietver vairāk netiešu kontaktu ar "
+"izglītojamo. Tā cenšas attīstīt pilnīgu kompetenci visos prasmes aspektos. "
+"Tas var būt desmit vai vairāk reižu ilgāks nekā pirmās divas fāzes kopā. "
+"Attīstoties apmācāmajam, kontakts ar mentoru var kļūt mazāk regulārs un "
+"vairāk ad hoc."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"Aiziešana ir sava veida izlaidums, kad apmācāmais kļūst par mentora "
+"līdzinieku. Periodisks kontakts un vienaudžu mentorings var turpināties, ja "
+"apmācāmais un mentors atrodas vienā tīklā. Kad vecāks atbrīvo bērnu, lai "
+"viņš brauktu ar velosipēdu pilnīgi bez uzraudzības, tas ir Atvaļinājuma "
+"posms."
 
 #: site/activities/coaching-checklist-two.php:98
+#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr ""
+msgstr "1. Novērtējiet sevi, izmantojot Heard, Obeded, Shared, Trained."
 
 #: site/activities/coaching-checklist-two.php:99
+#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"2. Trenējiet citus, izmantojot modeli, asistēšanu, skatīšanos, aiziešanu."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
+#, fuzzy
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Pašnovērtējums"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
@@ -849,13 +914,15 @@ msgstr "Vadības šūnas"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Unaware"
-msgstr ""
+msgstr "Nezinot"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
+#, fuzzy
 msgid "Unskilled"
-msgstr ""
+msgstr "Nekvalificēts"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
@@ -865,77 +932,94 @@ msgstr "Kurss pabeigts"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
+#, fuzzy
 msgid "Skilled"
-msgstr ""
+msgstr "Prasmīgs"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
+#, fuzzy
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Mentora loma"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
+#, fuzzy
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "Apmāciet jaunu informāciju un nodrošiniet izpratni"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
+#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "Apstājieties un palieciet kopā ar viņiem, līdz viņiem ir pamati"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
+#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "Esiet iesaistīts, līdz esat pastāvīgi kompetents"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
+#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Saistieties ar viņiem kā līdzstrādniekiem"
 
 #: site/activities/coaching-checklist.php:167
+#, fuzzy
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Mentoru uzvedība"
 
 #: site/activities/coaching-checklist.php:173
+#, fuzzy
 msgid "Direct and inform"
-msgstr ""
+msgstr "Tieša un informē"
 
 #: site/activities/coaching-checklist.php:176
+#, fuzzy
 msgid "Direct and support"
-msgstr ""
+msgstr "Tiešs un atbalsts"
 
 #: site/activities/coaching-checklist.php:179
+#, fuzzy
 msgid "Support and encourage"
-msgstr ""
+msgstr "Atbalstiet un iedrošiniet"
 
 #: site/activities/coaching-checklist.php:182
+#, fuzzy
 msgid "Receive updates"
-msgstr ""
+msgstr "Saņemt atjauninājumus"
 
 #: site/activities/coaching-checklist.php:187
+#, fuzzy
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Plānošanas pienākumi"
 
 #: site/activities/coaching-checklist.php:193
+#, fuzzy
 msgid "Mentor decides"
-msgstr ""
+msgstr "Mentors izlemj"
 
 #: site/activities/coaching-checklist.php:196
+#, fuzzy
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Apspriediet un mentors pieņem lēmumu"
 
 #: site/activities/coaching-checklist.php:199
+#, fuzzy
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Apspriediet un Mente pieņem lēmumu"
 
 #: site/activities/coaching-checklist.php:202
+#, fuzzy
 msgid "Mentee decides"
-msgstr ""
+msgstr "Mente izlemj"
 
 #: site/activities/coaching-checklist.php:266
+#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr ""
+msgstr "Vai apmācāmais nezina, nepazīst vai ir pārpratis par rīku?"
 
 #: site/activities/coaching-checklist.php:269
 #, fuzzy
@@ -945,10 +1029,11 @@ msgstr ""
 "SARKANO sleju"
 
 #: site/activities/coaching-checklist.php:272
+#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr ""
+msgstr "Vai apmācāmais saprot rīku un spēj apmācīt rīka pamatus?"
 
 #: site/activities/coaching-checklist.php:275
 #, fuzzy
@@ -965,13 +1050,15 @@ msgstr "Pīlēnu māceklība"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unbeliever"
-msgstr ""
+msgstr "Neticīgais"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unknown"
-msgstr ""
+msgstr "Nezināms"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
@@ -980,8 +1067,9 @@ msgid "3-Month Plan"
 msgstr "Trīs mēnešu plāns"
 
 #: site/activities/three-month-plan.php:67
+#, fuzzy
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "Pārslēdzieties uz drukājamu versiju"
 
 #: site/activities/three-month-plan.php:80
 #, fuzzy
@@ -989,13 +1077,17 @@ msgid "Scripts are off"
 msgstr "Svētie raksti"
 
 #: site/activities/three-month-plan.php:81
+#, fuzzy
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"Lūdzu, ieslēdziet skriptus, lai izmantotu šo interaktīvo lapu. Pretējā "
+"gadījumā varat izmantot drukājamo versiju, izmantojot iepriekš norādīto "
+"saiti."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:271 site/profile/profile.php:153
+#: site/dashboard/wizard.php:287 site/profile/profile.php:153
 msgid "Save"
 msgstr "Saglabāt"
 
@@ -1108,10 +1200,13 @@ msgid "The Gospel"
 msgstr "Evaņģēlijs"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
+#, fuzzy
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
+"Viens veids, kā dalīties ar Dieva labajām ziņām, ir izmantot vizuālu "
+"prezentāciju, ko sauc par 3 apļiem."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1145,14 +1240,16 @@ msgstr ""
 #: site/course/course-content.php:3671 site/course/course-content.php:3941
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
+#, fuzzy
 msgid "ACTIVITY"
-msgstr ""
+msgstr "AKTIVITĀTE"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
+#, fuzzy
 msgid "Scan the QR code or find a piece of paper."
-msgstr ""
+msgstr "Skenējiet QR kodu vai atrodiet papīra lapu."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #, fuzzy
@@ -1160,14 +1257,19 @@ msgid "Select a person from your list of 100."
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
+#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"Izmantojiet apmācību kontrolsarakstu un novērtējiet izvēlēto personu. "
+"Pajautājiet sev: \"Kas šai personai ir vajadzīgs katram no instrumentiem un "
+"koncepcijām?\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
+#, fuzzy
 msgid "Check off the checklist."
-msgstr ""
+msgstr "Pārbaudiet kontrolsarakstu."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1186,10 +1288,13 @@ msgid "Activity Resource"
 msgstr "Resursi"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
+#, fuzzy
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Novērtējiet sevi – novērtējiet sevi un atzīmējiet atbilstošās ailes Koučinga "
+"kontrolsarakstā."
 
 #: site/course/course-builder.php:164
 #, fuzzy
@@ -1283,8 +1388,9 @@ msgstr "90 min"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
+#, fuzzy
 msgid "SESSION 1"
-msgstr ""
+msgstr "1. SESIJA"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1342,8 +1448,9 @@ msgstr "REĢISTRĒTIES"
 #: site/course/course-content.php:5743 site/course/course-content.php:5794
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
+#, fuzzy
 msgid "Have all of the participants and facilitator check-in."
-msgstr ""
+msgstr "Lieciet visiem dalībniekiem un koordinatoram reģistrēties."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1363,8 +1470,9 @@ msgstr ""
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
+#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "Vai arī zume.training/checkin un izmantojiet kodu:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1417,8 +1525,9 @@ msgstr "PĀRSKATS"
 #: site/course/course-content.php:3801 site/course/course-content.php:4351
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
+#, fuzzy
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr ""
+msgstr "Šajā sesijā mēs uzklausīsim un apspriedīsim šos jēdzienus:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 #, fuzzy
@@ -1432,12 +1541,14 @@ msgstr "Garīgā elpošana"
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
+#, fuzzy
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "Un mēs pievienosim mūsu rīku komplektam šos rīkus:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr "S.O.A.P.S. Bībeles lasīšana"
 
@@ -1504,22 +1615,27 @@ msgstr ""
 "mums visapkārt."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
+#, fuzzy
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "Prakse S.O.A.P.S."
 
 #: site/course/course-content.php:274
+#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"Skenējiet QR kodu un strādājiet individuāli, izmantojot SOAPS Bībeles "
+"studiju modeli, izmantojot Mateja 6:9-13. (20 min)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
 msgstr "Svētie raksti"
 
 #: site/course/course-content.php:277
+#, fuzzy
 msgid "Observation"
-msgstr ""
+msgstr "Novērošana"
 
 #: site/course/course-content.php:278
 #, fuzzy
@@ -1527,7 +1643,7 @@ msgid "Application"
 msgstr "Atrašanās vieta"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr "Lūgšana"
 
@@ -1537,9 +1653,12 @@ msgid "Sharing"
 msgstr "Dalīties"
 
 #: site/course/course-content.php:282
+#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
+"Atgriezieties kopā un dalieties ar savu S.O.A.P.S. grupās pa diviem vai "
+"trim. (10 min)"
 
 #: site/course/course-content.php:304
 #, fuzzy
@@ -1552,8 +1671,9 @@ msgstr ""
 "sagatavoties!"
 
 #: site/course/course-content.php:305
+#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "Atbildības grupas ir lielisks veids, kā sagatavoties!"
 
 #: site/course/course-content.php:329
 #, fuzzy
@@ -1566,8 +1686,9 @@ msgstr "Prakse - Atbildības grupas"
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
+#, fuzzy
 msgid "Scan the QR code."
-msgstr ""
+msgstr "Skenējiet QR kodu."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -1607,15 +1728,17 @@ msgstr "PĀRSKATS"
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
+#, fuzzy
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "Šajā sesijā dzirdētie jēdzieni:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
+#, fuzzy
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "Šajā sesijā dzirdētie rīki:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1661,28 +1784,39 @@ msgstr ""
 "formātu."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"Lūdziet To Kungu, lai viņš jūs vada, lai izaicinātu vismaz piecus jums "
+"pazīstamus ticīgos, lai viņi sāktu savu S.O.A.P.S. Lasiet Bībeli katru dienu "
+"un tad dariet to."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
+#, fuzzy
 msgid "SESSION 2"
-msgstr ""
+msgstr "2. SESIJA"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
+#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"Pajautājiet, vai kādam no grupas ir īpašas vajadzības, par kurām viņi "
+"vēlētos, lai grupa lūgtu."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
+#, fuzzy
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"Paldies Dievam, ka Viņš savā Vārdā apsola klausīties un rīkoties, kad Viņa "
+"ļaudis lūdz."
 
 #: site/course/course-content.php:442
 #, fuzzy
@@ -1770,8 +1904,9 @@ msgstr "Veltiet nedaudz laika, lai redzētu, kā šajā nedēļā grupai ir gāj
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
+#, fuzzy
 msgid "In this session, we will hear and discuss this concept:"
-msgstr ""
+msgstr "Šajā sesijā mēs uzklausīsim un apspriedīsim šo koncepciju:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -1832,12 +1967,14 @@ msgstr ""
 "un klausīties Viņa balsī!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
+#, fuzzy
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr ""
+msgstr "Lūdzieties Lūgšanu ciklu stundu individuāli"
 
 #: site/course/course-content.php:572
+#, fuzzy
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
+msgstr "Skenējiet QR kodu, lai tālrunī iegūtu lūgšanu cikla ceļvedi."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
@@ -1868,10 +2005,13 @@ msgstr ""
 "Kāda būtu dzīve, ja jūs padarītu šāda veida lūgšanu par regulāru ieradumu?"
 
 #: site/course/course-content.php:613
+#, fuzzy
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
 msgstr ""
+"Dievs mums jau ir devis vajadzīgās attiecības, lai \"Ejiet un dariet par "
+"mācekļiem\"."
 
 #: site/course/course-content.php:614
 #, fuzzy
@@ -1885,16 +2025,18 @@ msgstr ""
 "vai varbūt esam tikko satikuši."
 
 #: site/course/course-content.php:615
+#, fuzzy
 msgid "Stewarding the relationships you have is the best place to start."
-msgstr ""
+msgstr "Jūsu attiecību pārvaldīšana ir labākā vieta, kur sākt."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
 #: site/course/course-content.php:643
+#, fuzzy
 msgid "Scan QR code or use a piece of paper."
-msgstr ""
+msgstr "Skenējiet QR kodu vai izmantojiet papīra lapu."
 
 #: site/course/course-content.php:644
 #, fuzzy
@@ -1907,10 +2049,13 @@ msgstr ""
 "Zúme rokasgrāmatas sadaļā \"100 cilvēku saraksts\"."
 
 #: site/course/course-content.php:645
+#, fuzzy
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
 msgstr ""
+"Pēc tam atzīmējiet savu labāko izpratni par viņu attiecībām ar Dievu: "
+"māceklis, neticīgais vai nezināmais."
 
 #: site/course/course-content.php:682
 #, fuzzy
@@ -1951,15 +2096,18 @@ msgid "To saturate the world with multiplying disciples in our generation."
 msgstr "piesātināt pasauli ar mācekļiem, kas pavairojas"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
+#, fuzzy
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
+"Zúme ir prakses kopiena tiem, kas vēlas redzēt, kā māceklis veic kustības."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
+#, fuzzy
 msgid "SESSION 3"
-msgstr ""
+msgstr "3. SESIJA"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 #, fuzzy
@@ -2054,7 +2202,7 @@ msgstr ""
 "Uzaiciniet savu grupu piedalīties šajā svarīgajā dienā, kad svinēsiet \"JĀ\" "
 "teikšanu Jēzum."
 
-#: site/course/course-content.php:1016
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
 msgid "The Spiritual Economy"
 msgstr "Garīgā ekonomika"
@@ -2102,8 +2250,9 @@ msgstr ""
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
+#, fuzzy
 msgid "SESSION 4"
-msgstr ""
+msgstr "4. SESIJA"
 
 #: site/course/course-content.php:1109
 #, fuzzy
@@ -2114,10 +2263,13 @@ msgstr ""
 "vadīt jūsu kopā pavadīto laiku."
 
 #: site/course/course-content.php:1110
+#, fuzzy
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"Lūdziet, lai Viņš katram jūsu grupas loceklim piešķir Kristus prātu un "
+"piepilda katru ar Viņa Garu."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
@@ -2146,9 +2298,10 @@ msgid "Practice sharing your testimony"
 msgstr "Prakse - Dalieties ar savu liecību"
 
 #: site/course/course-content.php:1192
+#, fuzzy
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr ""
+msgstr "Uzrakstiet savu stāstu un saglabājiet to tikai trīs minūtes. (10 min)"
 
 #: site/course/course-content.php:1193
 #, fuzzy
@@ -2294,8 +2447,9 @@ msgstr ""
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
+#, fuzzy
 msgid "SESSION 5"
-msgstr ""
+msgstr "5. SESIJA"
 
 #: site/course/course-content.php:1485
 #, fuzzy
@@ -2343,10 +2497,13 @@ msgstr ""
 "kāpēc ne?"
 
 #: site/course/course-content.php:1594
+#, fuzzy
 msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"Kāda ir jūsu tuvumā esošā kopiena vai sabiedrības daļa, kurā, šķiet, ir maz "
+"(vai vispār nav) Valstības klātbūtnes?"
 
 #: site/course/course-content.php:1595
 #, fuzzy
@@ -2406,26 +2563,35 @@ msgid "This session ends with the prayer walking activity."
 msgstr "Sesija beidzas ar lūgšanu - pastaigas aktivitāti."
 
 #: site/course/course-content.php:1660
+#, fuzzy
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"Pirms dodaties uz Lūgšanu pastaigu aktivitāti, noteikti lūdzieties kopā ar "
+"savu grupu, lai beigtu kopā pavadīto laiku."
 
 #: site/course/course-content.php:1661
+#, fuzzy
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
 msgstr ""
+"Paldies Dievam, ka Viņš mīl pazudušos, pēdējos un vismazākos – arī mūs!"
 
 #: site/course/course-content.php:1662
+#, fuzzy
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"Lūdziet Viņu sagatavot jūsu sirdis un to cilvēku sirdis, ar kuriem jūs "
+"satiksit savas pastaigas laikā, lai tie būtu atvērti Viņa darbam."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
+#, fuzzy
 msgid "SESSION 6"
-msgstr ""
+msgstr "6. SESIJA"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
 #, fuzzy
@@ -2447,8 +2613,9 @@ msgstr "Paklausība ir labāka nekā zināšanas"
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
+#, fuzzy
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Un mēs pievienosim šo rīku mūsu rīku komplektam:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2528,8 +2695,9 @@ msgstr ""
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
+#, fuzzy
 msgid "SESSION 7"
-msgstr ""
+msgstr "7. SESIJA"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
 #, fuzzy
@@ -2614,8 +2782,9 @@ msgstr "Kas bija visgrūtākais? Kāpēc?"
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
+#, fuzzy
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "Šajā sesijā dzirdētā koncepcija:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2623,25 +2792,33 @@ msgstr ""
 #: site/course/course-content.php:4091 site/course/course-content.php:4377
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
+#, fuzzy
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "Šajā sesijā dzirdētais rīks:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
+#, fuzzy
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"Izvēlieties kādu prasmi vai jēdzienu, ko esat apguvis programmā Zúme, un "
+"palīdziet kādam to reproducēt ceturtajai paaudzei."
 
 #: site/course/course-content.php:2100
+#, fuzzy
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
 msgstr ""
+"Izaiciniet personu, kuru vadījāt, turpināt procesu līdz papildu (piektajai) "
+"paaudzei."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
+#, fuzzy
 msgid "SESSION 8"
-msgstr ""
+msgstr "8. SESIJA"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
@@ -2655,8 +2832,9 @@ msgstr ""
 "neko nevar izdarīt!"
 
 #: site/course/course-content.php:2192
+#, fuzzy
 msgid "And we will practice this tool from our toolkit:"
-msgstr ""
+msgstr "Un mēs praktizēsim šo rīku no mūsu rīku komplekta:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2694,19 +2872,25 @@ msgstr ""
 "kā jūs paklausīsiet, apmācīsiet un dalīsieties."
 
 #: site/course/course-content.php:2277
+#, fuzzy
 msgid "Concept from this session:"
-msgstr ""
+msgstr "Koncepcija no šīs sesijas:"
 
 #: site/course/course-content.php:2281
+#, fuzzy
 msgid "Tool from this session:"
-msgstr ""
+msgstr "Šīs sesijas rīks:"
 
 #: site/course/course-content.php:2298
+#, fuzzy
 msgid ""
 "Select some people from your List of 100 who are already believers. Explain "
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
+"Izvēlieties dažus cilvēkus no sava 100 saraksta, kuri jau ir ticīgi. "
+"Izskaidrojiet viņiem Leadership Cells un noskaidrojiet, vai viņi būtu "
+"ieinteresēti piedalīties tajā."
 
 #: site/course/course-content.php:2299
 #, fuzzy
@@ -2721,8 +2905,9 @@ msgstr ""
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
+#, fuzzy
 msgid "SESSION 9"
-msgstr ""
+msgstr "9. SESIJA"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
 #, fuzzy
@@ -2799,18 +2984,24 @@ msgstr ""
 "Ko tieši jūs varat darīt, sākot ar šo nedēļu, kas mainītu jūsu situāciju?"
 
 #: site/course/course-content.php:2506
+#, fuzzy
 msgid ""
 "Jesus taught us that we are to stay close — to live as a small, spiritual "
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"Jēzus mums mācīja, ka mums ir jāpaliek tuvu — jādzīvo kā mazai, garīgai "
+"ģimenei, jāmīl un jāatdod vienam otru, svinēt un ciest — kopā."
 
 #: site/course/course-content.php:2507
+#, fuzzy
 msgid ""
 "However, Jesus also taught us to leave our homes and loved ones behind and "
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"Tomēr Jēzus arī mācīja mums atstāt savas mājas un tuviniekus un būt gataviem "
+"doties jebkur un visur, lai dalītos un dibinātu jaunas garīgas ģimenes."
 
 #: site/course/course-content.php:2532
 #, fuzzy
@@ -2824,16 +3015,22 @@ msgstr ""
 "sadalītu, lai tā augtu?"
 
 #: site/course/course-content.php:2549
+#, fuzzy
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"Koučinga kontrolsaraksts ir vienkāršs rīks, ko varat izmantot, lai palīdzētu "
+"jums palīdzēt citiem dažādās daļās, lai kļūtu par pilnībā aprīkotu mācekli."
 
 #: site/course/course-content.php:2576
+#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Pašnovērtējiet sevi, izmantojot 1. rindiņu, un atzīmējiet atbilstošās "
+"kolonnas Koučinga kontrolsarakstā."
 
 #: site/course/course-content.php:2596
 #, fuzzy
@@ -2866,12 +3063,14 @@ msgstr ""
 "nepieciešama jūsu uzmanība un apmācība."
 
 #: site/course/course-content.php:2611
+#, fuzzy
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"Ja jums nav trenera vai mentora, skenējiet QR kodu un pieprasiet to tūlīt."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:201 site/pages/about.php:254
+#: site/dashboard/wizard.php:217 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
@@ -2881,22 +3080,31 @@ msgid "Get a Coach"
 msgstr "Iegūt treneri"
 
 #: site/course/course-content.php:2626
+#, fuzzy
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"Četri lauki un paaudžu kartēšana ir rīki, kas izstrādāti, lai apkalpotu "
+"pieaugošos kustības centienus."
 
 #: site/course/course-content.php:2627
+#, fuzzy
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"ATGĀDINĀJUMS: Zúme treneri ir pieejami, lai palīdzētu jums izmantot šos "
+"rīkus jūsu reģionā."
 
 #: site/course/course-content.php:2642
+#, fuzzy
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"Jēzus bieži aizveda mācekļus no kalpošanas uz klusākām vietām, lai "
+"pārskatītu, kā darbs norit."
 
 #: site/course/course-content.php:2643
 #, fuzzy
@@ -2910,42 +3118,60 @@ msgstr ""
 "valstības virzību balstoties uz šiem centieniem."
 
 #: site/course/course-content.php:2644
+#, fuzzy
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
 msgstr ""
+"Pārskatiet nākamos divus slaidus: Lauku apraksti un Četru lauku piemērs"
 
 #: site/course/course-content.php:2655
+#, fuzzy
 msgid "Field Descriptions"
-msgstr ""
+msgstr "Lauku apraksti"
 
 #: site/course/course-content.php:2657
+#, fuzzy
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"Tukšs lauks: kur vai ar ko [ar kādām cilvēku grupām] jūs plānojat paplašināt "
+"Valstību?"
 
 #: site/course/course-content.php:2658
+#, fuzzy
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"Sēšanas lauks: kur vai ar ko jūs dalāties labajā vēstī par Valstību? Kā tu "
+"to dari?"
 
 #: site/course/course-content.php:2659
+#, fuzzy
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"Augošs lauks: kā jūs aprīkojat cilvēkus un audzējat viņus garīgi, "
+"individuāli un viņu dabiskajos tīklos?"
 
 #: site/course/course-content.php:2660
+#, fuzzy
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
 msgstr ""
+"Ražas novākšanas lauks: Kā tiek veidotas jaunas garīgās ģimenes [vienkāršas "
+"draudzes]?"
 
 #: site/course/course-content.php:2661
+#, fuzzy
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"Pavairošanas lauks: ar ko, kā un kad jūs filtrējat uzticīgos cilvēkus un "
+"aprīkojat tos un saucat tos par vairošanos?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 #, fuzzy
@@ -2953,24 +3179,32 @@ msgid "Four Fields Example"
 msgstr "Četru lauku rīks"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
+#, fuzzy
 msgid "Discuss"
-msgstr ""
+msgstr "Apspriest"
 
 #: site/course/course-content.php:2699
+#, fuzzy
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"Identificējiet tukšu lauku ap sevi. Kurām kopienām vai cilvēku grupām, ar "
+"kurām esat saistīts, nav evaņģēlija aktivitātes?"
 
 #: site/course/course-content.php:2700
+#, fuzzy
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"Kā ilgtermiņa izaugsmi ietekmē, ja kāds no laukiem tiek atstāts novārtā? "
+"Sniedziet piemērus."
 
 #: site/course/course-content.php:2701
+#, fuzzy
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "Kuri Zúme rīki varētu palīdzēt kādā jomā?"
 
 #: site/course/course-content.php:2716
 #, fuzzy
@@ -2982,16 +3216,22 @@ msgstr ""
 "mācekļu kustībā izprast izaugsmi sev apkārt."
 
 #: site/course/course-content.php:2717
+#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"Paaudžu koku karti var uzzīmēt uz papīra lapas vai vairākiem papīra "
+"gabaliem. Šī karte palīdz parādīt, kur ir reizināšanas pieturas, un var būt "
+"nepieciešama apmācība. Kustības veselība ir viens no galvenajiem vadītājiem, "
+"un auglība ir galvenais veids, kā novērtēt veselību."
 
 #: site/course/course-content.php:2718
+#, fuzzy
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "Skatiet piemēru nākamajā slaidā."
 
 #: site/course/course-content.php:2729
 #, fuzzy
@@ -2999,12 +3239,15 @@ msgid "Generational Mapping Example"
 msgstr "Paaudžu karšu veidošana"
 
 #: site/course/course-content.php:2748
+#, fuzzy
 msgid "Use the Generational Mapping example to discuss the following:"
 msgstr ""
+"Izmantojiet paaudžu kartēšanas piemēru, lai apspriestu šādus jautājumus:"
 
 #: site/course/course-content.php:2750
+#, fuzzy
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "Kuri vadītāji redz vairošanos?"
 
 #: site/course/course-content.php:2751
 #, fuzzy
@@ -3012,52 +3255,73 @@ msgid "Which groups would you expect to multiply next?"
 msgstr "Kuru, jūsuprāt, būtu vieglāk pavairot un kāpēc?"
 
 #: site/course/course-content.php:2752
+#, fuzzy
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "Kuri vadītāji varētu palīdzēt un stiprināt citus vadītājus?"
 
 #: site/course/course-content.php:2753
+#, fuzzy
 msgid "Do you see a pattern of weak accountability in any of the generations?"
-msgstr ""
+msgstr "Vai kādā no paaudzēm redzat vājas atbildības modeli?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
+#, fuzzy
 msgid ""
 "Practice sharing the concept of “Pace” with a friend and pray for the Lord "
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"Praktizējiet jēdzienu “Pace” dalīties ar draugu un lūdziet, lai Kungs to "
+"dziļi iesakņo jūsu sirdī un dvēselē. Jautājiet Tam Kungam, ar ko Viņš vēlas, "
+"lai jūs tajā dalītos."
 
 #: site/course/course-content.php:2793
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the concept  "
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Ja jūs jau esat izveidojis savu vienkāršo draudzi, dalieties ar jēdzienu "
+"“Vienmēr divu baznīcu daļa” ar tajā esošajiem cilvēkiem. Ja nē, dalieties "
+"tajā ar citu ticīgo, kuru pazīstat."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
+#, fuzzy
 msgid "SESSION 10"
-msgstr ""
+msgstr "10. SESIJA"
 
 #: site/course/course-content.php:2852
+#, fuzzy
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"Lūdzieties un pateicieties Dievam, ka Viņš ir uzticīgs, lai pabeigtu Savu "
+"labo darbu mūsos. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
+#, fuzzy
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"Lūdziet Viņu dot jūsu grupai skaidru galvu un atvērtu sirdis lielajām "
+"lietām, ko Viņš vēlas darīt jūsos un caur jums."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
+#, fuzzy
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"Lūdziet Svēto Garu pavadīt jūsu laiku kopā un pateikties arī Viņam par Viņa "
+"uzticību. Viņš tev izdevās!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
+#, fuzzy
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "Esiet iedrošināti..."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -3070,11 +3334,15 @@ msgstr ""
 "nekā daudzi mācītāji un misionāri visā pasaulē!"
 
 #: site/course/course-content.php:2881
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"Tomēr Zúme apmācība ir tikai sākums! Šajā sesijā mēs izstrādāsim plānu tam, "
+"kas notiek pēc apmācības, un īsi iepazīstināsim ar rīkiem, kas jums būs "
+"nepieciešami vēlāk jūsu ceļojuma laikā, īstenojot apgūto."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -3095,15 +3363,21 @@ msgstr ""
 "personiskas attiecības? Kādi piemēri nāk prātā?"
 
 #: site/course/course-content.php:2964
+#, fuzzy
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"Padarīt par mācekļiem, kas dara mācekļus, nozīmē veidot vadītājus, kas veido "
+"vadītājus."
 
 #: site/course/course-content.php:2965
+#, fuzzy
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"Vienaudžu mentoringa grupas pulcē vadītājus un palīdz viņiem mīlēt un "
+"iedrošināt vienam otru viņu ticībā un vadībā."
 
 #: site/course/course-content.php:2989
 #, fuzzy
@@ -3131,14 +3405,18 @@ msgstr ""
 "sniedzot norādījumus un iedrošinājumu mentorējamā darbam."
 
 #: site/course/course-content.php:3014
+#, fuzzy
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"Savā Bībelē Dievs saka: \"Es zinu, kādi plāni jums ir, plāni, lai jūs "
+"uzplauktu un nenodarītu jums pāri, plāni, kas jums dos cerību un nākotni.\""
 
 #: site/course/course-content.php:3015
+#, fuzzy
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Dievs plāno plānus, un Viņš sagaida, ka plānojam arī mēs."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
 #, fuzzy
@@ -3153,10 +3431,13 @@ msgstr ""
 "saistību izpildei, kas uzskaitītas trīs mēnešu plānā."
 
 #: site/course/course-content.php:3017
+#, fuzzy
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"Nākamajā slaidā tiks parādīts, kā izveidot trīs mēnešu plānu. Mēs iesakām "
+"izmantot tiešsaistes rīku."
 
 #: site/course/course-content.php:3030
 #, fuzzy
@@ -3164,10 +3445,13 @@ msgid "Make your Three Month Plan"
 msgstr "Trīs mēnešu plāns"
 
 #: site/course/course-content.php:3032
+#, fuzzy
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Lasīt — skenēt QR kodu. Jums nav jāapņemas ievērot katru vienumu, drīzāk tie "
+"ir paredzēti kā uzvednes jūsu plānam. (5 min)"
 
 #: site/course/course-content.php:3033
 #, fuzzy
@@ -3180,37 +3464,52 @@ msgstr ""
 "sadzirdēt Viņa balsi."
 
 #: site/course/course-content.php:3034
+#, fuzzy
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"Ierakstiet savu plānu — uzrakstiet saistības uz papīra vai izmantojiet "
+"tiešsaistes rīku, lai saglabātu atbildes. (15 min)"
 
 #: site/course/course-content.php:3040
+#, fuzzy
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "Tiešsaistes plāna rīks"
 
 #: site/course/course-content.php:3053
+#, fuzzy
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "Pamīšus dalieties ar saviem Trīs mēnešu plāniem."
 
 #: site/course/course-content.php:3054
+#, fuzzy
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"Atrodiet treniņu partneri(-s), kas vēlas sazināties ar jums katru nedēļu. "
+"Apņemieties darīt to pašu viņu labā."
 
 #: site/course/course-content.php:3195
+#, fuzzy
 msgid ""
 "Practice sharing these definitions with a friend and pray for the Lord to "
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"Praktizējiet dalīties šajās definīcijās ar draugu un lūdziet, lai Kungs tās "
+"dziļi iesakņo jūsu sirdī un dvēselē. Jautājiet Tam Kungam, ar ko Viņš vēlas, "
+"lai jūs tajās dalītos."
 
 #: site/course/course-content.php:3196
+#, fuzzy
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"Dalieties definīcijās ar tiem, ar kuriem Tas Kungs jums liek to darīt. Pēc "
+"tam sagatavojiet viņus, lai tos kopīgotu ar kādu citu."
 
 #: site/course/course-content.php:3258
 #, fuzzy
@@ -3222,26 +3521,38 @@ msgstr ""
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
+#, fuzzy
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Šajā sesijā mēs pievienosim šo rīku mūsu rīku komplektam:"
 
 #: site/course/course-content.php:3379
+#, fuzzy
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par Viņa klātbūtni mūsu dzīvē. Lūdziet par "
+"katru cilvēku grupā, lai viņam būtu ausis dzirdēt Viņa balsi un žēlastība "
+"paklausīt Viņa teiktajam."
 
 #: site/course/course-content.php:3440
+#, fuzzy
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"Atrodiet atbildīgu partneri (tāda paša dzimuma) un sāciet tikties ar viņu "
+"katru nedēļu."
 
 #: site/course/course-content.php:3441
+#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"Lūdziet To Kungu vadīt jūs, lai izaicinātu vismaz piecus pazīstamus "
+"cilvēkus, kuri ir ticīgi, sākt savu atbildības grupas sanāksmi, un tad "
+"dariet to."
 
 #: site/course/course-content.php:3501
 #, fuzzy
@@ -3253,14 +3564,19 @@ msgstr ""
 "vadīt jūsu kopā pavadīto laiku."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
+#, fuzzy
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "Šajā sesijā mēs uzklausīsim un apspriedīsim koncepciju:"
 
 #: site/course/course-content.php:3631
+#, fuzzy
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par Viņa mīlestību pret visiem cilvēkiem "
+"mūsu dzīvē. Lūdziet par katru cilvēku grupā, lai viņi redz apkārtējos tā, kā "
+"viņus redz Dievs."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 #, fuzzy
@@ -3268,34 +3584,49 @@ msgid "The Prayer Cycle"
 msgstr "Lūgšanu aplis"
 
 #: site/course/course-content.php:3676
+#, fuzzy
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"Ja jūsu laiks ir elastīgs, izmantojiet pilnu stundu. Lūdziet katru sadaļu 5 "
+"pilnas minūtes. Tādējādi šī sesija būs ilgāka par vienu stundu."
 
 #: site/course/course-content.php:3677
+#, fuzzy
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"Ja nevarat aizņemt ilgāku sesiju, samaziniet lūgšanu daļu no 5 minūtēm līdz "
+"3 minūtēm."
 
 #: site/course/course-content.php:3712
+#, fuzzy
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"Izmantojiet lūgšanu ciklu, lai vadītu jūs, kad jūs lūdzat stundu šajā nedēļā."
 
 #: site/course/course-content.php:3713
+#, fuzzy
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"Dalieties lūgšanu ciklā ar to, ko Tas Kungs jums vada. Izaiciniet viņus "
+"dalīties tajā arī ar citiem."
 
 #: site/course/course-content.php:3839
+#, fuzzy
 msgid ""
 "Practice sharing the Spiritual Economy concept with a friend and pray for "
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"Praktizējiet garīgās ekonomikas koncepciju ar draugu un lūdziet, lai Kungs "
+"to dziļi iesakņo jūsu sirdī un dvēselē. Jautājiet Tam Kungam, ar ko Viņš "
+"vēlas, lai jūs tajā dalītos."
 
 #: site/course/course-content.php:3840
 #, fuzzy
@@ -3309,16 +3640,21 @@ msgstr ""
 "un sazinieties ar viņu pirms nākamās sesijas."
 
 #: site/course/course-content.php:3901
+#, fuzzy
 msgid ""
 "Pray for each member of your group to experience the blessings of following "
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"Lūdziet, lai katrs savas grupas loceklis piedzīvo svētības, ko sniedz "
+"sekošana Jēzum, vedot citus sekot Jēzum un sagatavot citus jaunu garīgu "
+"ģimeņu dibināšanai."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
+#, fuzzy
 msgid "In this session, we will practice this tool in our toolkit:"
-msgstr ""
+msgstr "Šajā sesijā mēs praktizēsim šo rīku mūsu rīku komplektā:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
 #, fuzzy
@@ -3338,10 +3674,13 @@ msgid ""
 msgstr "Sadalieties grupās pa diviem vai trim viena dzimuma cilvēkiem."
 
 #: site/course/course-content.php:3948
+#, fuzzy
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"Pēc treniņa pārejiet. Atkārtošana dos pārliecību. Kad esat pabeidzis, jūs "
+"būsiet gatavs dalīties ar Dieva stāstu."
 
 #: site/course/course-content.php:4046
 #, fuzzy
@@ -3356,15 +3695,20 @@ msgstr ""
 "jūsu laiku kopā un lai šo sesiju Viņš padara par līdz šim labāko."
 
 #: site/course/course-content.php:4074
+#, fuzzy
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "Šajā sesijā mēs pievienosim mūsu rīku komplektam šādus rīkus:"
 
 #: site/course/course-content.php:4109
+#, fuzzy
 msgid ""
 "If you know anyone who follows Jesus but has not been baptized, challenge "
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"Ja pazīstat kādu, kas seko Jēzum, bet nav kristīts, izaiciniet viņu to darīt "
+"un piedāvājiet viņu kristīt. Pretējā gadījumā praktizējiet prasmi kopā ar "
+"draugu."
 
 #: site/course/course-content.php:4110
 #, fuzzy
@@ -3402,26 +3746,36 @@ msgstr ""
 "praktizējiet savas liecības stāstīšanu citiem. (45 minūtes)"
 
 #: site/course/course-content.php:4216
+#, fuzzy
 msgid ""
 "Choose 5 people from your List of 100. Have someone pretend to be each of "
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"Izvēlieties 5 cilvēkus no sava 100 saraksta. Lūdziet, lai kāds uzdodas par "
+"katru no šiem pieciem cilvēkiem, un praktizējiet savu liecību tā, lai, "
+"jūsuprāt, šī konkrētajai personai būtu jēga."
 
 #: site/course/course-content.php:4217
+#, fuzzy
 msgid ""
 "After you’ve practiced, switch. Pretend to be someone else’s five people "
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"Pēc treniņa pārejiet. Izliecieties, ka esat kāda cita pieci cilvēki no "
+"saraksta. Kad esat pabeidzis, jums vajadzētu būt iespējai pastāstīt savu "
+"liecību apmēram 3 minūtēs vai mazāk."
 
 #: site/course/course-content.php:4219
+#, fuzzy
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "Atkārtošana vairo pārliecību."
 
 #: site/course/course-content.php:4233
+#, fuzzy
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "Šajā sesijā izmantotais rīks:"
 
 #: site/course/course-content.php:4250
 #, fuzzy
@@ -3444,56 +3798,78 @@ msgstr ""
 "vadīt jūsu kopā pavadīto laiku."
 
 #: site/course/course-content.php:4394
+#, fuzzy
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"Ja jūsu ģimene ir ticīga un dzīvo uz vietas, vadiet Svēto Vakarēdienu kopā "
+"ar viņiem. Pretējā gadījumā praktizējiet prasmi kopā ar ticīgu draugu."
 
 #: site/course/course-content.php:4395
+#, fuzzy
 msgid ""
 "Share \"Duckling Discipleship\" and \"Eyes to See Where the Kingdom Isn’t\" "
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"Dalieties ar vārdiem \"Pīlēna māceklis\" un \"Acis, lai redzētu, kur nav "
+"Valstības\" ar tiem, ko Tas Kungs jums atstāj iespaidu. Pēc tam sagatavojiet "
+"viņus, lai tos kopīgotu ar kādu citu."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
+#, fuzzy
 msgid "SESSION 11"
-msgstr ""
+msgstr "11. SESIJA"
 
 #: site/course/course-content.php:4455
+#, fuzzy
 msgid ""
 "Pray and thank God for how He is at work in your life and the lives of "
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par to, kā Viņš darbojas jūsu un apkārtējo "
+"dzīvē. Lūdziet, lai grupai būtu acis, lai redzētu, kur Valstības vēl nav."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
+#, fuzzy
 msgid "SESSION 12"
-msgstr ""
+msgstr "12. SESIJA"
 
 #: site/course/course-content.php:4638
+#, fuzzy
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr ""
+msgstr "Šonedēļ lūdzieties par kādu viņu klātbūtnē, izmantojot SVĒTĪT paraugu."
 
 #: site/course/course-content.php:4639
+#, fuzzy
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"Aprīkojiet kādu citu lūgt par citiem, izmantojot BLESS modeli, un dodieties "
+"viņiem līdzi, kad viņi to dara."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
+#, fuzzy
 msgid "SESSION 13"
-msgstr ""
+msgstr "13. SESIJA"
 
 #: site/course/course-content.php:4700
+#, fuzzy
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par to, ko uzzinājāt pēdējā sesijā. "
+"Lūdziet, lai Dieva Gars palīdz jums būt uzticīgam, lai īstenotu visu, ko jūs "
+"mācāties."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
+#, fuzzy
 msgid "SESSION 14"
-msgstr ""
+msgstr "14. SESIJA"
 
 #: site/course/course-content.php:4902
 #, fuzzy
@@ -3524,11 +3900,16 @@ msgstr ""
 "un dalīsieties."
 
 #: site/course/course-content.php:4940
+#, fuzzy
 msgid ""
 "Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"Lūdziet un jautājiet Dievam, vai viņš vēlas, lai jūs izveidotu 3/3 grupu. Ja "
+"Viņš to dara, pārskatiet savu 100 sarakstu un pajautājiet Dievam, kurš jums "
+"jāaicina pievienoties jums. Tad uzaiciniet viņus šonedēļ un uzticieties "
+"Dievam, lai viņš izveidotu grupu."
 
 #: site/course/course-content.php:4941
 #, fuzzy
@@ -3541,8 +3922,9 @@ msgstr ""
 "nosauciet grupai šīs personas vārdu."
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
+#, fuzzy
 msgid "SESSION 15"
-msgstr ""
+msgstr "15. SESIJA"
 
 #: site/course/course-content.php:5002
 #, fuzzy
@@ -3558,148 +3940,205 @@ msgstr ""
 "lūdziet Dieva Svēto Garu vadīt laiku, ko pavadīsiet kopā."
 
 #: site/course/course-content.php:5066
+#, fuzzy
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
-msgstr ""
+msgstr "Kopīgojiet \"Apmācību ciklu\" ar kādu ticīgo savā 100 sarakstā."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
+#, fuzzy
 msgid "SESSION 16"
-msgstr ""
+msgstr "16. SESIJA"
 
 #: site/course/course-content.php:5193
+#, fuzzy
 msgid ""
 "If you have already started your own simple church, share the \"Always Part "
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Ja jūs jau esat izveidojis savu vienkāršo draudzi, kopīgojiet paraugu "
+"“Vienmēr daļa no divām baznīcām” ar tajā esošajiem cilvēkiem. Ja nē, "
+"dalieties tajā ar citu ticīgo, kuru pazīstat."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
+#, fuzzy
 msgid "SESSION 17"
-msgstr ""
+msgstr "17. SESIJA"
 
 #: site/course/course-content.php:5256
+#, fuzzy
 msgid ""
 "Pray and thank God for how He continues to speak through the word, prayer, "
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par to, kā Viņš turpina runāt caur vārdu, "
+"lūgšanu, ķermeni un vajāšanām un ciešanām. Lūdziet par katru cilvēku grupā, "
+"lai viņam būtu ausis dzirdēt Viņa balsi un žēlastība paklausīt Viņa "
+"teiktajam."
 
 #: site/course/course-content.php:5325
+#, fuzzy
 msgid ""
 "Identify one next step for yourself, either Modeling, Assisting, Watching, "
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"Nosakiet sev vienu nākamo soli — modelēšana, asistēšana, skatīšanās vai "
+"aiziešana, kas jums jāveic kopā ar mācekli, kuru novērtējāt ar apmācību "
+"kontrolsarakstu."
 
 #: site/course/course-content.php:5326
+#, fuzzy
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"Dalieties jēdzienā “Līderība tīklos” ar kādu citu. Pēc tam apmāciet viņus "
+"dalīties tajā ar kādu citu."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
+#, fuzzy
 msgid "SESSION 18"
-msgstr ""
+msgstr "18. SESIJA"
 
 #: site/course/course-content.php:5434
+#, fuzzy
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"Veltiet brīdi, lai uzklausītu Dievu un pajautājiet, vai jums vai jūsu grupai "
+"ir jāveic kādi pasākumi, pamatojoties uz tikko notikušo diskusiju par "
+"četriem laukiem."
 
 #: site/course/course-content.php:5465
+#, fuzzy
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"Izlasiet katru no Zúme apmācības vienumiem un nosakiet, kurš(-os) lauks(-i) "
+"katrs ir atbilstošs, un iezīmējiet četru lauku diagrammu ar vienumiem."
 
 #: site/course/course-content.php:5466
+#, fuzzy
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"Kopīgojiet paaudžu kartēšanas rīku ar citu ticīgo, kuru pazīstat kā redzes "
+"liešanas vingrinājumu."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
+#, fuzzy
 msgid "SESSION 19"
-msgstr ""
+msgstr "19. SESIJA"
 
 #: site/course/course-content.php:5526
+#, fuzzy
 msgid ""
 "Pray and thank God for the Body of Christ. Pray for mutual love and "
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"Lūdzieties un pateicieties Dievam par Kristus Miesu. Lūdziet par savstarpēju "
+"mīlestību un iedrošinājumu turpināt augt starp katru jūsu grupas locekli, "
+"tuvojoties Jēzum."
 
 #: site/course/course-content.php:5587
+#, fuzzy
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"Apspriediet ar savu Zúme apmācības grupu, vai dalībnieki ir gatavi turpināt "
+"tikties pēc apmācības beigām kā vienaudžu mentoringa grupai."
 
 #: site/course/course-content.php:5588
+#, fuzzy
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"Dalieties ar \"Līdzaudžu mentora grupas\" koncepciju ar diviem ticīgajiem "
+"savā 100 sarakstā."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
+#, fuzzy
 msgid "SESSION 20"
-msgstr ""
+msgstr "20. SESIJA"
 
 #: site/course/course-content.php:5650
+#, fuzzy
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"Lūdzieties un pateicieties Dievam, ka Viņš ir uzticīgs, lai pabeigtu Savu "
+"labo darbu mūsos."
 
 #: site/course/course-content.php:5679
+#, fuzzy
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"Tomēr Zúme apmācība ir tikai sākums! Šajā sesijā mēs sastādīsim plānu tam, "
+"kas notiek pēc apmācības."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
+#, fuzzy
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "INTENSĪVĀ SESIJA 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
+#, fuzzy
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "INTENSĪVĀ SESIJA 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
+#, fuzzy
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "INTENSĪVĀ SESIJA 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
+#, fuzzy
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "INTENSĪVĀ SESIJA 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
+#, fuzzy
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "INTENSĪVĀ SESIJA 5"
 
 #: site/course/course-content.php:5976
+#, fuzzy
 msgid "NEXT STEP"
-msgstr ""
+msgstr "NĀKAMAIS SOLIS"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
-#: site/parts/nav.php:94
+#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
 msgstr "Kopiena"
 
 #: site/course/course-content.php:5980
+#, fuzzy
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"Zúme apmācības daļa beidzas, bet rīku un koncepciju praktizēšana turpinās."
 
 #: site/course/course-content.php:5981
+#, fuzzy
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
+msgstr "Nedari to vienatnē. Atrodiet kopienu iedrošinājumam un izaugsmei."
 
 #: site/course/course-content.php:5982
+#, fuzzy
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "Pievienojieties Zume kopienai, izmantojot QR kodu."
 
 #: site/course/course-content.php:5996
 #, fuzzy
@@ -3707,8 +4146,9 @@ msgid "CONGRATULATIONS on completing Zume Training!"
 msgstr "Apmācības pabeigšana"
 
 #: site/course/course-content.php:6008
+#, fuzzy
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "PAŅEM PAUZI"
 
 #: site/course/presenter.php:131
 #, fuzzy
@@ -3716,12 +4156,14 @@ msgid "Course Presenter"
 msgstr "Zúme kurss v4"
 
 #: site/course/presenter.php:148
+#, fuzzy
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "Lejupielādējiet bezsaistes slaidus šeit"
 
 #: site/course/presenter.php:166
+#, fuzzy
 msgid "Links"
-msgstr ""
+msgstr "Saites"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3748,27 +4190,44 @@ msgid "Exit Course"
 msgstr "Kurss"
 
 #: site/course/presenter.php:192
-msgid "Switch Views"
-msgstr ""
+#, fuzzy
+msgid "Slide View"
+msgstr "Režģa skats"
 
-#: site/course/presenter.php:193
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+#, fuzzy
+msgid "List View"
+msgstr "Saraksta skats"
+
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Next slide"
 msgstr "Nākamā sesija"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Previous slide"
 msgstr "Iepriekšējā"
 
-#: site/course/presenter.php:195
+#: site/course/presenter.php:196
 #, fuzzy
 msgid "Session"
 msgstr "Sesija nr. 1"
 
+#: site/course/presenter.php:198
+#, fuzzy
+msgid "View Transcript"
+msgstr "Skatīt atšifrējumu"
+
+#: site/course/presenter.php:199
+#, fuzzy
+msgid "View Activity"
+msgstr "Skatīt darbību"
+
 #: site/dashboard/checkin-dashboard.php:151
+#, fuzzy
 msgid "Woops"
-msgstr ""
+msgstr "Ūpā"
 
 #: site/dashboard/checkin-dashboard.php:153
 #, fuzzy
@@ -3776,11 +4235,12 @@ msgid "Something went wrong with your checkin process."
 msgstr "Hmm... Kaut kas nogāja greizi. Mēģini vēlreiz!"
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
-#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
-#: utilities/apis/cta-api.php:338
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:341
+#, fuzzy
 msgid "Congratulations!"
-msgstr ""
+msgstr "Apsveicam!"
 
 #: site/dashboard/checkin-dashboard.php:163
 #, fuzzy
@@ -3788,9 +4248,9 @@ msgid "Checked into session:"
 msgstr "Laipni aicināti sesijā"
 
 #: site/dashboard/checkin-dashboard.php:164
-#, php-format
+#, fuzzy, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%1$d no %2$d"
 
 #: site/dashboard/checkin-dashboard.php:167
 #, fuzzy
@@ -3798,17 +4258,19 @@ msgid "Course Progress:"
 msgstr "Zúme progress"
 
 #: site/dashboard/checkin-dashboard.php:168
-#, php-format
+#, fuzzy, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
+#, fuzzy
 msgid "Done"
-msgstr ""
+msgstr "Gatavs"
 
 #: site/dashboard/dashboard.php:156
+#, fuzzy
 msgid "Edit"
-msgstr ""
+msgstr "Rediģēt"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3835,24 +4297,23 @@ msgid "Not Heard"
 msgstr "Dzirdēja"
 
 #: site/dashboard/dashboard.php:163 site/pages/share.php:121
+#, fuzzy
 msgid "All"
-msgstr ""
+msgstr "Visi"
 
 #: site/dashboard/dashboard.php:164 site/profile/profile.php:159
 msgid "Logout"
 msgstr "Izrakstīties"
 
 #: site/dashboard/dashboard.php:165 site/pages/share.php:124
+#, fuzzy
 msgid "Filter"
-msgstr ""
-
-#: site/dashboard/dashboard.php:166
-msgid "List View"
-msgstr ""
+msgstr "Filtrs"
 
 #: site/dashboard/dashboard.php:167
+#, fuzzy
 msgid "Grid View"
-msgstr ""
+msgstr "Režģa skats"
 
 #: site/dashboard/dashboard.php:168
 #, fuzzy
@@ -3865,35 +4326,38 @@ msgid "Complete Now"
 msgstr "Kurss pabeigts"
 
 #: site/dashboard/dashboard.php:170
+#, fuzzy
 msgid "View"
-msgstr ""
+msgstr "Skatīt"
 
 #: site/dashboard/dashboard.php:171
+#, fuzzy
 msgid "Menu"
-msgstr ""
+msgstr "Izvēlne"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
-#: site/dashboard/wizard.php:210 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:226 site/profile/profile.php:116
 msgid "Name"
 msgstr "Vārds"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
-#: site/dashboard/wizard.php:180 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "Zvans"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "E-pasts"
 
 #: site/dashboard/dashboard.php:175
+#, fuzzy
 msgid "Communications Email"
-msgstr ""
+msgstr "Saziņas e-pasts"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "Pilsēta"
@@ -3903,8 +4367,8 @@ msgstr "Pilsēta"
 msgid "No Locations found"
 msgstr "Nav atrasts lietotājs."
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3916,8 +4380,9 @@ msgid "Edit Profile"
 msgstr "Zume profils"
 
 #: site/dashboard/dashboard.php:181
+#, fuzzy
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "Apskatiet šo Zúme koncepciju"
 
 #: site/dashboard/dashboard.php:182
 #, fuzzy
@@ -3926,9 +4391,9 @@ msgstr "apskatīt"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
 #: site/dashboard/dashboard.php:259
-#, php-format
+#, fuzzy, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "Pievienot jaunu %s"
 
 #: site/dashboard/dashboard.php:183
 #, fuzzy
@@ -3941,12 +4406,14 @@ msgid "Copy Link"
 msgstr "Saite"
 
 #: site/dashboard/dashboard.php:185
+#, fuzzy
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "Kopējiet šo saiti un nosūtiet to saviem draugiem 🙂"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
+#, fuzzy
 msgid "Thanks!"
-msgstr ""
+msgstr "Paldies!"
 
 #: site/dashboard/dashboard.php:187
 #, fuzzy
@@ -3958,26 +4425,30 @@ msgstr "Saistīts ar"
 msgid "Getting Started"
 msgstr "Sāciet darbu"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
-#: utilities/apis/cta-api.php:252
+#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "Zume profils"
 
 #: site/dashboard/dashboard.php:190
+#, fuzzy
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "Pabeidziet īsu profila vedni, lai iestatītu savu profilu"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
 #, fuzzy
 msgid "Join or create a training group"
 msgstr "Organizē apmācību"
 
 #: site/dashboard/dashboard.php:192
+#, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"Pievienojieties kādam no mūsu tiešsaistes apmācībām vai izveidojiet savu "
+"apmācību grupu, izmantojot mūsu viegli iestatāmo vedni"
 
 #: site/dashboard/dashboard.php:193
 #, fuzzy
@@ -3989,7 +4460,7 @@ msgstr "1 Treniņapmācība"
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
 #, fuzzy
 msgid "Join Training Group"
 msgstr "Organizē apmācību"
@@ -4000,10 +4471,13 @@ msgid "Join an online training group run by a coach"
 msgstr "Organizē apmācību"
 
 #: site/dashboard/dashboard.php:198
+#, fuzzy
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"Sazinieties ar treneri, lai saņemtu palīdzību vai iedrošinājumu pirms, "
+"treniņa laikā vai pēc tā."
 
 #: site/dashboard/dashboard.php:200
 #, fuzzy
@@ -4011,14 +4485,18 @@ msgid "My Progress"
 msgstr "Progress"
 
 #: site/dashboard/dashboard.php:201
+#, fuzzy
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"Sekojiet kursa progresam, izmantojot šo interaktīvo skatu. Iemācieties "
+"klausīties, paklausīt, dalīties un apmācīt citus ar to, ko esat iemācījušies."
 
 #: site/dashboard/dashboard.php:202
+#, fuzzy
 msgid "Information about progress"
-msgstr ""
+msgstr "Informācija par progresu"
 
 #: site/dashboard/dashboard.php:203
 #, fuzzy
@@ -4031,10 +4509,13 @@ msgid "My Trainings"
 msgstr "1 Treniņapmācība"
 
 #: site/dashboard/dashboard.php:205
+#, fuzzy
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
+"Pilnīga piekļuve jūsu apmācības saturam, grafikam, grupas informācijai un "
+"koplietošanas rīkiem."
 
 #: site/dashboard/dashboard.php:207
 #, fuzzy
@@ -4047,15 +4528,20 @@ msgid "Three Month Plan Locked"
 msgstr "Trīs mēnešu plāns"
 
 #: site/dashboard/dashboard.php:210
+#, fuzzy
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"Trīs mēnešu plāns ir rīks, kas palīdzēs jums rīkoties un ieviest Zúme kursā "
+"apgūtos rīkus un koncepcijas. Tas ir visnoderīgākais, kad esat pabeidzis "
+"apmācību."
 
 #: site/dashboard/dashboard.php:211
+#, fuzzy
 msgid "Unlock now"
-msgstr ""
+msgstr "Atbloķējiet tūlīt"
 
 #: site/dashboard/dashboard.php:212
 #, fuzzy
@@ -4068,8 +4554,9 @@ msgid "My Coach"
 msgstr "Treneris"
 
 #: site/dashboard/dashboard.php:214
+#, fuzzy
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "Ātra piekļuve savam trenerim jebkurā laikā."
 
 #: site/dashboard/dashboard.php:215
 #, fuzzy
@@ -4077,10 +4564,13 @@ msgid "My Tools"
 msgstr "RĪKI"
 
 #: site/dashboard/dashboard.php:216
+#, fuzzy
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"Apgabals Mani rīki tiks atvērts, virzoties pa kursu, praktizējot un attīstot "
+"būtiskas mācekļu prasmes"
 
 #: site/dashboard/dashboard.php:217
 #, fuzzy
@@ -4088,10 +4578,12 @@ msgid "My Plans"
 msgstr "Mans plāns"
 
 #: site/dashboard/dashboard.php:218
+#, fuzzy
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
+"Atbloķējiet apgabalu Mani plāni, aizpildot savu 3 mēnešu plānu pēdējā sesijā."
 
 #: site/dashboard/dashboard.php:219
 #, fuzzy
@@ -4099,10 +4591,13 @@ msgid "My Plans are Locked"
 msgstr "1 Treniņapmācība"
 
 #: site/dashboard/dashboard.php:220
+#, fuzzy
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"Atveriet šo apgabalu, izveidojot savu trīs mēnešu plānu vai pievienojot "
+"savas saistības."
 
 #: site/dashboard/dashboard.php:221
 #, fuzzy
@@ -4110,24 +4605,32 @@ msgid "My Churches"
 msgstr "2 Vienkāršas draudzes"
 
 #: site/dashboard/dashboard.php:222
+#, fuzzy
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "Atbloķējiet apgabalu Manas baznīcas, pievienojoties kopienai."
 
 #: site/dashboard/dashboard.php:223
+#, fuzzy
 msgid "My Maps"
-msgstr ""
+msgstr "Manas kartes"
 
 #: site/dashboard/dashboard.php:224
+#, fuzzy
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "Manas kartes ir bloķētas"
 
 #: site/dashboard/dashboard.php:225
+#, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"Manas kartes palīdz precizēt Zúme redzējumu par 1 praktikantu un 2 baznīcām "
+"uz katriem 5000 cilvēkiem ASV un 50 000 visā pasaulē. Lai atbloķētu Manas "
+"kartes, pievienojieties Zúme kopienai un sazinieties ar citiem mācekļu "
+"veidotājiem, kuri aizraujas ar lielisko uzdevumu izpildi."
 
 #: site/dashboard/dashboard.php:226
 #, fuzzy
@@ -4161,14 +4664,17 @@ msgstr "Sesija nr. 1"
 msgid "Intensive Course"
 msgstr "Sesija nr. 1"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
+#: utilities/apis/cta-api.php:386
+#, fuzzy
 msgid "Join"
-msgstr ""
+msgstr "Pievienojieties"
 
 #: site/dashboard/dashboard.php:241
+#, fuzzy
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "Pievienojieties kopienai, lai piekļūtu šim apgabalam."
 
 #: site/dashboard/dashboard.php:242
 #, fuzzy
@@ -4205,22 +4711,24 @@ msgid "Start Session"
 msgstr "Sāciet sesiju"
 
 #: site/dashboard/dashboard.php:250
+#, fuzzy
 msgid "Show details"
-msgstr ""
+msgstr "Parādīt detaļas"
 
 #: site/dashboard/dashboard.php:251
+#, fuzzy
 msgid "Edit time"
-msgstr ""
+msgstr "Rediģēt laiku"
 
-#: site/dashboard/dashboard.php:253 utilities/apis/cta-api.php:235
-#: utilities/apis/cta-api.php:237
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Invite Friends"
 msgstr "Uzaicini dažus draugus"
 
 #: site/dashboard/dashboard.php:254
+#, fuzzy
 msgid "Click to add your first church"
-msgstr ""
+msgstr "Noklikšķiniet, lai pievienotu savu pirmo baznīcu"
 
 #: site/dashboard/dashboard.php:255
 #, fuzzy
@@ -4268,12 +4776,12 @@ msgid "You have set your profile"
 msgstr "Jūsu profils"
 
 #: site/dashboard/dashboard.php:265
-#, php-format
+#, fuzzy, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s ir atbloķēts"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
 #, fuzzy
 msgid "3 month plan"
 msgstr "Trīs mēnešu plāns"
@@ -4283,119 +4791,143 @@ msgstr "Trīs mēnešu plāns"
 msgid "You have joined the community"
 msgstr "Kopiena"
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+#, fuzzy
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+"Lietotāja īstais vārds vai segvārds tiek pieprasīts, lai uzlabotu vietnes un "
+"komunikācijas personīgo kvalitāti, kā arī klientu apkalpošanas "
+"pieprasījumiem un apmācībām."
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#, fuzzy
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"Lietotāja e-pasta adrese ir nepieciešama, lai izveidotu kontu, un tā tiek "
+"izmantota darījumu saziņai vietnes darbības ietvaros."
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
+#, fuzzy
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
+"Lietotāja tālruņa numurs tiek apkopots un saglabāts, lai atbalstītu "
+"bezmaksas apmācību pakalpojumu."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
+#, fuzzy
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"Lietotāja pilsēta tiek lūgta personalizēt vietnes resursus un saziņu, kā arī "
+"savienot lietotājus ar atbilstošiem apmācības un klientu apkalpošanas "
+"resursiem."
 
-#: site/dashboard/dashboard.php:271
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
 #, fuzzy
-msgid "Zúme Community"
-msgstr "Kopiena"
-
-#: site/dashboard/dashboard.php:272
 msgid ""
-"Zúme is a community of practice and encouragement for those who want to see "
-"disciple making movements. The Zúme vision is to see one trainee and two "
-"simple churches for every 5,000 people in the United States and 50,000 "
-"people globally."
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
 msgstr ""
+"Lietotāja valodas preference tiek saglabāta, lai atbalstītu pareizu vietnes "
+"un saziņas darbību un palīdzētu mums nodrošināt lietotājam atbilstošu "
+"apmācību un resursus."
 
-#: site/dashboard/dashboard.php:274
-msgid ""
-"Connect with others like you who want to see a disciple making movement in "
-"their area. Share your experience with others, and learn from others who are "
-"discovering new things."
-msgstr ""
-
-#: site/dashboard/dashboard.php:275
-msgid "Encouragement"
-msgstr ""
-
-#: site/dashboard/dashboard.php:276
-msgid ""
-"Hear news about disciple making movements in your region and your wider "
-"country, get reports of  progress, and get connected to online and face-to-"
-"face gatherings."
-msgstr ""
-
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 #, fuzzy
-msgid "Free Tools"
-msgstr "RĪKI"
-
-#: site/dashboard/dashboard.php:278
-msgid ""
-"Access free tools for tracking disciple-making and church planting in your "
-"area. Get a map to cast vision for saturating your city with multiplying "
-"disciples and churches."
-msgstr ""
-
-#: site/dashboard/dashboard.php:279
-msgid "Join for Free"
-msgstr ""
-
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
 msgid "Join key"
-msgstr ""
+msgstr "Pievienošanās atslēga"
 
-#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
+#, fuzzy
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "Nav atpazīts kods. Lūdzu, pārbaudiet numuru."
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:275
+#, fuzzy
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "Jums nav tiesību piekļūt šai lapai"
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "Jūsu formā ir dažas kļūdas."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:277
+#, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Paldies par jūsu trenera pieprasījumu. Mūsu komanda strādās, lai savienotu "
+"jūs ar pieejamu treneri jūsu valodā un reģionā."
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:278
+#, fuzzy
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Lūdzu, uzmanieties no sava trenera saziņas jūsu norādītajā saziņas izvēlē."
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:279
+#, fuzzy
 msgid "100 Hour Map"
-msgstr ""
+msgstr "100 stundu karte"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid "Training vision map"
 msgstr "Treniņapmācība"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "Vienkāršas draudzes piesātinājums"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:282
+#, fuzzy
+msgid "No date"
+msgstr "Atjaunināt"
+
+#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: zume-training-system.php:318
+#, fuzzy
+msgid "Whatsapp"
+msgstr "WhatsApp"
+
+#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: zume-training-system.php:319
+#, fuzzy
+msgid "Signal"
+msgstr "Reģistrēties"
+
+#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: zume-training-system.php:320
+#, fuzzy
+msgid "Telegram"
+msgstr "Telegramma"
+
+#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#, fuzzy
+msgid "Facebook Messenger"
+msgstr "Facebook"
+
+#: site/dashboard/dashboard.php:292
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4404,12 +4936,12 @@ msgstr ""
 "Es dalīšos savā stāstā [liecībā] un Dieva stāstā [evaņģēlijā] ar šādiem "
 "cilvēkiem:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "Es uzaicināšu šādas personas kopā ar mani izveidot atbildības grupu:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4417,11 +4949,11 @@ msgstr ""
 "Es izaicināšu sekojošus cilvēkus izveidot savas atbildības grupas un apmācīt "
 "viņus, kā to paveikt:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:295
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Es uzaicināšu sekojošus cilvēkus izveidot ar mani 3/3 grupu:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4429,7 +4961,7 @@ msgstr ""
 "Es izaicināšu sekojošus cilvēkus izveidot savas 3/3 grupas un apmācīšu "
 "viņus, kā to paveikt:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4438,16 +4970,16 @@ msgstr ""
 "Es uzaicināšu sekojošus cilvēkus piedalīties 3/3 cerība vai atklājums "
 "grupā[skatīt Zúme rokasgrāmatas papildinājumu]"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "Es uzaicināšu sekojošus cilvēkus piedalīties ar mani Lūgšanu pastaigā:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:299
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Es došos lūgšanu pastaigā reizi [dienās / nedēļās / mēnešos]."
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4456,18 +4988,18 @@ msgstr ""
 "Es apmācīšu sekojošus cilvēkus, lai viņi varētu dalīties savā stāstā un "
 "Dieva stāstā un izveidotu 100 cilvēku sarakstu no viņu attiecību tīkla:"
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
 "Es izaicināšu sekojošus cilvēkus periodiski izmantot lūgšanu cikla rīku:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:302
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "Es izmantošu lūgšanu cikla rīku reizi [dienās / nedēļās / mēnešos]."
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4475,163 +5007,229 @@ msgstr ""
 "Es uzaicināšu sekojošus cilvēkus būt par daļu no vadības šūnas, kuru es "
 "vadīšu:"
 
-#: site/dashboard/dashboard.php:306
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "Es iedrošināšu sekojošus cilvēkus iziet šo Zúme apmācības kursu:"
 
-#: site/dashboard/dashboard.php:307
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid "Other commitments:"
 msgstr "Citas apņemšanās:"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:151
+#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "Slikts vednis"
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:152
+#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "Jūs esat iekritis dažu ļoti sliktu burvju vidū!"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
+#, fuzzy
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "Vednis jau ir pabeigts"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:154
+#, fuzzy
 msgid "Get back home"
-msgstr ""
+msgstr "Atgriezieties mājās"
 
-#: site/dashboard/wizard.php:153 site/login/login-template.php:408
+#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#, fuzzy
 msgid "Back"
-msgstr ""
+msgstr "Atpakaļ"
 
-#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "Tālāk"
 
-#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#, fuzzy
 msgid "Skip"
-msgstr ""
+msgstr "Izlaist"
 
-#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "Beigt"
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:160
 #, fuzzy
 msgid "No locations found"
 msgstr "Nav atrasts lietotājs."
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:163
+#, fuzzy
+msgid "Zúme Community"
+msgstr "Kopiena"
+
+#: site/dashboard/wizard.php:164
+#, fuzzy
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+"Zúme ir prakses un iedrošinājuma kopiena tiem, kas vēlas redzēt mācekļu "
+"kustības. Zúme vīzija ir redzēt vienu praktikantu un divas vienkāršas "
+"baznīcas uz katriem 5000 cilvēkiem Amerikas Savienotajās Valstīs un 50 000 "
+"cilvēku visā pasaulē."
+
+#: site/dashboard/wizard.php:166
+#, fuzzy
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+"Sazinieties ar citiem līdzīgiem cilvēkiem, kuri vēlas redzēt, ka māceklis "
+"veic kustību savā reģionā. Dalieties pieredzē ar citiem un mācieties no "
+"citiem, kuri atklāj jaunas lietas."
+
+#: site/dashboard/wizard.php:167
+#, fuzzy
+msgid "Encouragement"
+msgstr "Uzmundrinājums"
+
+#: site/dashboard/wizard.php:168
+#, fuzzy
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+"Klausieties ziņas par mācekļu veidošanas kustībām savā reģionā un plašākā "
+"valstī, saņemiet ziņojumus par progresu un sazinieties ar tiešsaistes un "
+"klātienes sanāksmēm."
+
+#: site/dashboard/wizard.php:169
+#, fuzzy
+msgid "Free Tools"
+msgstr "RĪKI"
+
+#: site/dashboard/wizard.php:170
+#, fuzzy
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+"Piekļūstiet bezmaksas rīkiem, lai izsekotu mācekļu veidošanai un draudžu "
+"dibināšanai jūsu reģionā. Iegūstiet karti, lai radītu vīziju, kā piesātināt "
+"savu pilsētu ar mācekļiem un baznīcām."
+
+#: site/dashboard/wizard.php:171
+#, fuzzy
+msgid "Join for Free"
+msgstr "Pievienojieties bez maksas"
+
+#: site/dashboard/wizard.php:172
+#, fuzzy
+msgid "Successfully joined community"
+msgstr "Kopiena"
+
+#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
+#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#, fuzzy
+msgid "Something went wrong"
+msgstr "Ups, Kaut kas nogāja greizi!"
+
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid "Complete your profile"
 msgstr "Jūsu profils"
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:181
+#, fuzzy
 msgid "What is your name?"
-msgstr ""
+msgstr "Kāds ir tavs vārds?"
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:182
+#, fuzzy
 msgid "What is your phone number?"
-msgstr ""
+msgstr "Kāds ir jūsu tālruņa numurs?"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:183
+#, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "Tālruņa numurs var saturēt tikai ciparus, iekavas un defises"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:184
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "Ko jūs uzzināt par Dievu?"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:185
+#, fuzzy
 msgid "This is your approximate location."
-msgstr ""
+msgstr "Šī ir jūsu aptuvenā atrašanās vieta."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:187
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "Zume privātuma politika"
 
-#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "Kāda ir jūsu pilsēta vai valsts vai pasta indekss?"
 
-#: site/dashboard/wizard.php:179 zume-training-system.php:316
+#: site/dashboard/wizard.php:195 zume-training-system.php:316
 msgid "Text"
 msgstr "Īsziņa"
 
-#: site/dashboard/wizard.php:181 zume-training-system.php:318
+#: site/dashboard/wizard.php:201
 #, fuzzy
-msgid "Whatsapp"
-msgstr "WhatsApp"
-
-#: site/dashboard/wizard.php:182 zume-training-system.php:319
-#, fuzzy
-msgid "Signal"
-msgstr "Reģistrēties"
-
-#: site/dashboard/wizard.php:183 zume-training-system.php:320
-msgid "Telegram"
-msgstr ""
-
-#: site/dashboard/wizard.php:184
-#, fuzzy
-msgid "Facebook Messenger"
-msgstr "Facebook"
-
-#: site/dashboard/wizard.php:185
 msgid "What is your language preference?"
-msgstr ""
+msgstr "Kāda ir jūsu valodas izvēle?"
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:203
 msgid "How can we serve you?"
 msgstr "Kā mēs varam jums kalpot?"
 
-#: site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "Coaching"
 msgstr "Treneris"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:205
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "Man ir nepieciešama tehniskā palīdzība"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:206
+#, fuzzy
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "Jautājums par apmācību īstenošanu"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:207
+#, fuzzy
 msgid "Question about the content"
-msgstr ""
+msgstr "Jautājums par saturu"
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:208
+#, fuzzy
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "Palīdziet, ko darīt pēc grupas dibināšanas"
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:210
+#, fuzzy
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "Lūdzu, sniedziet atbildi uz šo jautājumu"
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:211
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
@@ -4639,322 +5237,335 @@ msgstr ""
 "Pēc šī pieprasījuma iesniegšanas mēs darīsim visu iespējamo, lai jūs varētu "
 "sazināties ar jums tuvumā esošu treneri."
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:212
+#, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
+"Atvainojiet. Mēs nevarējām iesniegt jūsu pieprasījumu. Lūdzu, pamēģiniet "
+"vēlreiz vēlāk."
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:213
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "Jūs esat pieprasījis koučingu."
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:214
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "sazināties ar treneri"
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "Savienot mani ar treneri"
 
-#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
-#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
-msgid "Please wait while we connect you"
-msgstr ""
-
-#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/wizard.php:205
-msgid "Joining Plan"
-msgstr ""
-
-#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
-msgid "The training link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:208
-#, php-format
-msgid "Successfully joined training %s"
-msgstr ""
-
-#: site/dashboard/wizard.php:209
+#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 #, fuzzy
-msgid "Something went wrong while joining the plan"
-msgstr "Kaut kas nogāja greizi. Atvainojiet. Vai varat mēģināt vēlreiz?"
+msgid "Please wait while we connect you"
+msgstr "Lūdzu, uzgaidiet, kamēr mēs jūs savienosim"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:221
+#, fuzzy
+msgid "Joining Plan"
+msgstr "Pievienošanās plāns"
+
+#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#, fuzzy
+msgid "The training link is broken. Please try again."
+msgstr "Apmācības saite ir bojāta. Lūdzu mēģiniet vēlreiz."
+
+#: site/dashboard/wizard.php:224
+#, fuzzy, php-format
+msgid "Successfully joined training %s"
+msgstr "Veiksmīgi pievienojās apmācībai %s"
+
+#: site/dashboard/wizard.php:227
 #, fuzzy
 msgid "Next Session Date"
 msgstr "Nākamā sesija"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:228
 #, fuzzy
 msgid "Start Time"
 msgstr "Uzsākt"
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:229
+#, fuzzy
 msgid "Timezone"
-msgstr ""
+msgstr "Laika zona"
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:232
+#, fuzzy
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "Pašlaik nav pieejami publiski treniņi."
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:235
+#, fuzzy
 msgid "Connecting with friend"
-msgstr ""
+msgstr "Sazināšanās ar draugu"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:237
+#, fuzzy
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "Drauga saite ir bojāta. Lūdzu mēģiniet vēlreiz."
 
-#: site/dashboard/wizard.php:222
-#, php-format
+#: site/dashboard/wizard.php:238
+#, fuzzy, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "Veiksmīgi izveidots savienojums ar draugu %s"
 
-#: site/dashboard/wizard.php:223
-msgid "Something went wrong while connecting with friend"
-msgstr ""
-
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:242
 #, fuzzy
 msgid "Checking in"
 msgstr "Kontrolsaraksts"
 
-#: site/dashboard/wizard.php:228
-msgid "The checkin link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:229
-msgid "Successfully checked in"
-msgstr ""
-
-#: site/dashboard/wizard.php:230
+#: site/dashboard/wizard.php:244
 #, fuzzy
-msgid "Something went wrong while checking in"
-msgstr "Hmm... Kaut kas nogāja greizi. Mēģini vēlreiz!"
+msgid "The checkin link is broken. Please try again."
+msgstr "Reģistrēšanās saite ir bojāta. Lūdzu mēģiniet vēlreiz."
 
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:245
+#, fuzzy
+msgid "Successfully checked in"
+msgstr "Veiksmīgi reģistrēts"
+
+#: site/dashboard/wizard.php:250
 #, fuzzy
 msgid "Create a training group"
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:251
 #, fuzzy
 msgid "Join a public training group"
 msgstr "Organizē apmācību"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:252
+#, fuzzy
 msgid "Skip for now"
-msgstr ""
+msgstr "Pagaidām izlaist"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:253
+#, fuzzy
 msgid "Choose your course format"
-msgstr ""
+msgstr "Izvēlieties kursa formātu"
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:254
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "Sessija"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "Sessija"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "Sessija"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:257
+#, fuzzy
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "Vai vēlaties ieplānot savu apmācību?"
 
-#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "Jā"
 
-#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "Nē"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:260
+#, fuzzy
 msgid "What time of day?"
-msgstr ""
+msgstr "Kāds diennakts laiks?"
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Morning"
 msgstr "Treniņapmācība"
 
-#: site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:262
+#, fuzzy
 msgid "Afternoon"
-msgstr ""
+msgstr "Pēcpusdiena"
 
-#: site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:263
+#, fuzzy
 msgid "Evening"
-msgstr ""
+msgstr "Vakars"
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "Kā jūtaties?"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:265
+#, fuzzy
 msgid "Every day"
-msgstr ""
+msgstr "Katru dienu"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:266
+#, fuzzy
 msgid "Once a week"
-msgstr ""
+msgstr "Reizi nedēļā"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:267
+#, fuzzy
 msgid "Twice a month"
-msgstr ""
+msgstr "Divreiz mēnesī"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:268
+#, fuzzy
 msgid "Once a month"
-msgstr ""
+msgstr "Reizi mēnesī"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:269
 msgid "Other"
 msgstr "Cits"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:270
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "Kāds ir apmācības saturs?"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "My first training group"
 msgstr "Organizē apmācību"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "Ko jūs uzzināt par Dievu?"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "Ko jūs uzzināt par Dievu?"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:274
+#, fuzzy
 msgid "This could be online or in person"
-msgstr ""
+msgstr "Tas var būt tiešsaistē vai klātienē"
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "Review Schedule"
 msgstr "Treniņapmācības cikls"
 
-#: site/dashboard/wizard.php:260
-#, php-format
+#: site/dashboard/wizard.php:276
+#, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "Atlasīts %1$s no %2$s"
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "Lasīt"
 
-#: site/dashboard/wizard.php:262
-#, php-format
+#: site/dashboard/wizard.php:278
+#, fuzzy, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "Atlasīts pārāk daudz: %s"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:279
+#, fuzzy
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "Atlasīts nepareizs sesiju skaits"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
-#: site/dashboard/wizard.php:268
-#, php-format
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:284
+#, fuzzy, php-format
 msgid "Set %s"
-msgstr ""
+msgstr "Iestatīt %s"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
-#: site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Location"
 msgstr "Saglabāt pašreizējo atrašanās vietu"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "Group Name"
 msgstr "Bez vārda"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "Group name"
 msgstr "Bez vārda"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Start Date"
 msgstr "Uzsākt"
 
-#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
+#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "Laiks"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:289
+#, fuzzy
 msgid "Date"
-msgstr ""
+msgstr "Datums"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:290
+#, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "Kopsavilkums"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:291
+#, fuzzy
 msgid "Clear Calendar"
-msgstr ""
+msgstr "Notīrīt kalendāru"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:292
 msgid "Add"
 msgstr "Pievienot"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:293
+#, fuzzy
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "Pievienojiet savam grafikam dažus datumus"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Change"
 msgstr "Izmainīt atslēgu"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:298
+#, fuzzy
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "Uzaiciniet savus draugus pievienoties jūsu apmācībai"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:299
+#, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"Kopīgojiet tālāk esošo uzaicinājumu vai saiti ar saviem draugiem, lai viņi "
+"varētu pievienoties jūsu apmācībai."
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:300
+#, fuzzy
 msgid "Join my zume plan"
-msgstr ""
+msgstr "Pievienojieties manam zume plānam"
 
-#: site/dashboard/wizard.php:285
-#, php-format
+#: site/dashboard/wizard.php:301
+#, fuzzy, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s aicina jūs uz Zume apmācības grupu"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:307
 #, fuzzy
 msgid "Copy Invite"
 msgstr "Saite"
@@ -5020,9 +5631,9 @@ msgid "Passwords do not match. Please, try again."
 msgstr "Paroles nesakrīt. Mēģiniet vēlreiz."
 
 #: site/login/login-template.php:217
-#, php-format
+#, fuzzy, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
-msgstr ""
+msgstr "Jūsu parole ir atiestatīta. %1$s Jūs varat pieteikties šeit %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -5039,8 +5650,9 @@ msgid "Password"
 msgstr "Parole"
 
 #: site/login/login-template.php:267
+#, fuzzy
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "Lūdzu, izvēlieties spēcīgāku paroli. Šis ir pārāk vājš."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -5048,15 +5660,17 @@ msgid "Re-enter Password"
 msgstr "Ievadiet paroli atkārtoti"
 
 #: site/login/login-template.php:365
+#, fuzzy
 msgid "Hello!"
-msgstr ""
+msgstr "Sveiki!"
 
 #: site/login/login-template.php:366
+#, fuzzy
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "Izveidojiet Zume kontu"
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -5064,8 +5678,9 @@ msgid "Register"
 msgstr "Reģistrēties"
 
 #: site/login/login-template.php:400
+#, fuzzy
 msgid "Or"
-msgstr ""
+msgstr "Or"
 
 #: site/login/login-template.php:402
 #, fuzzy
@@ -5073,12 +5688,14 @@ msgid "Register with Email"
 msgstr "Reģistrēties tagad!"
 
 #: site/login/login-template.php:440
+#, fuzzy
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "Slikti formatēta e-pasta adrese"
 
 #: site/login/login-template.php:447
+#, fuzzy
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "Parole nav pietiekami spēcīga"
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -5100,8 +5717,9 @@ msgid "Login"
 msgstr "Pieslēgties"
 
 #: site/login/login-template.php:612
+#, fuzzy
 msgid "or sign in with email"
-msgstr ""
+msgstr "vai pierakstieties ar e-pastu"
 
 #: site/login/login-template.php:618
 msgid "Username or password does not match. Try again."
@@ -5112,16 +5730,18 @@ msgid "Remember Me"
 msgstr "Atcerēties mani"
 
 #: site/login/login-template.php:689
+#, fuzzy
 msgid "Don't have an account?"
-msgstr ""
+msgstr "Vai jums nav konta?"
 
 #: site/login/login-template.php:701
 msgid "Lost your password?"
 msgstr "Aizmirsāt paroli?"
 
 #: site/login/login-template.php:712
+#, fuzzy
 msgid "Already have an account?"
-msgstr ""
+msgstr "Jau ir konts?"
 
 #: site/login/login-template.php:768
 #, fuzzy
@@ -5129,8 +5749,9 @@ msgid "Username or Email Address"
 msgstr "Nav norādīts lietotājvārds vai e-pasta adrese."
 
 #: site/login/login-template.php:771
+#, fuzzy
 msgid "Log In"
-msgstr ""
+msgstr "Pieslēgties"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5281,6 +5902,7 @@ msgid ""
 msgstr "piesātināt pasauli ar mācekļiem, kas pavairojas"
 
 #: site/pages/about.php:100
+#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5290,8 +5912,16 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"2015. gadā neliela grupa apņēmās izpildīt Jēzus Lielās pavēles mandātu, kas "
+"tika sasaukta uz Džonatana projekta vadītāju sanāksmi. Viņi lūdza un "
+"apsprieda izaicinājumus, kas rodas, vairojot mācekļus visā pasaulē. "
+"Apzinoties vajadzību pēc pieejamas, daudzvalodu un elastīgas apmācības, kas "
+"atbilst Jēzus aicinājumam vienkāršiem cilvēkiem būt “raugiem” Valstībai, "
+"radās ideja par tiešsaistes video apmācību. Galu galā šī ideja attīstījās "
+"par to, kas tagad pazīstams kā Zúme."
 
 #: site/pages/about.php:101
+#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5299,6 +5929,11 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"Zúme Training mācekļu veidošanas pamatprincipi nāk tieši no Bībeles un ir "
+"pārbaudīti visā pasaulē vairāk nekā trīsdesmit gadus. Šie principi dod "
+"iespēju parastajiem ticīgajiem kļūt par mācekļiem, kuri savukārt kļūst par "
+"mācekļiem, kā rezultātā miljoniem mācekļu virza Valstību garīgi tumšās "
+"vietās."
 
 #: site/pages/about.php:114
 #, fuzzy
@@ -5313,57 +5948,79 @@ msgstr ""
 "Tomēr mēs visi iesaistītie, piekristu Lozannas paktam."
 
 #: site/pages/about.php:120
+#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"Mērķis ir piesātināt zemeslodi ar mūsu paaudzes mācekļiem, kas vairojas. "
+"Šajā apmācībā atrodamie Bībeles principi ir vienkārši. Pasaules pārmaiņu "
+"potenciāls ir šo principu praksē."
 
 #: site/pages/about.php:121
+#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Zúme vīzija ir salīdzināma ar raugu, kas iestrādā visu mīklu, izplatot "
+"Karalistes pamata rīkus apkaimēs visā pasaulē."
 
 #: site/pages/about.php:128
+#, fuzzy
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "Zúme vīzijai ir divas daļas:"
 
 #: site/pages/about.php:132
 msgid "1 Training"
 msgstr "1 Treniņapmācība"
 
 #: site/pages/about.php:136
+#, fuzzy
 msgid "Part 1:"
-msgstr ""
+msgstr "1. daļa:"
 
 #: site/pages/about.php:137
+#, fuzzy
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"Apmācīt vismaz vienu mācekļu veidotāju uz katriem 5000 cilvēkiem "
+"Ziemeļamerikā un vienu mācekļu veidotāju uz katriem 50 000 cilvēku visā "
+"pasaulē."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "2 Vienkāršas draudzes"
 
 #: site/pages/about.php:147
+#, fuzzy
 msgid "Part 2:"
-msgstr ""
+msgstr "2. daļa:"
 
 #: site/pages/about.php:148
+#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"Apmācītiem mācekļu veidotājiem izveidot vismaz 2 vienkāršas draudzes uz "
+"katriem 5000 cilvēkiem Ziemeļamerikā un 2 vienkāršas draudzes uz katriem 50 "
+"000 cilvēku visā pasaulē."
 
 #: site/pages/about.php:154
+#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"Ar šiem mazajiem pirmsākumiem ... ko Bībele sauc par raugu ... mēs varētu "
+"redzēt pasauli, kas pārklāta ar vairojošiem mācekļiem un draudzēm. Izpētiet "
+"Zúme Training un uzziniet, kā to izdarīt!"
 
 #: site/pages/about.php:157
 #, fuzzy
@@ -5376,11 +6033,13 @@ msgid "How does Zúme Training Work?"
 msgstr "Zume treniņapmācība"
 
 #: site/pages/about.php:167 site/pages/home.php:213
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sBezmaksas reģistrācija%2$s nodrošina pilnīgu piekļuvi visiem mācību "
+"materiāliem un tiešsaistes apmācībām."
 
 #: site/pages/about.php:171 site/pages/home.php:217
 #, fuzzy, php-format
@@ -5414,8 +6073,9 @@ msgstr ""
 "sesiju starplaikā."
 
 #: site/pages/about.php:194
+#, fuzzy
 msgid "Before you start."
-msgstr ""
+msgstr "Pirms sākat."
 
 #: site/pages/about.php:201
 #, fuzzy
@@ -5428,23 +6088,32 @@ msgid "First:"
 msgstr "Pirmais"
 
 #: site/pages/about.php:204
+#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme ir paredzēts darbībai kā grupai. Grupu vingrinājumi, diskusijas un "
+"prasmju praktizēšana būs labāka ar citiem, tāpēc, ja iespējams, izveidojiet "
+"grupu."
 
 #: site/pages/about.php:207
+#, fuzzy
 msgid "Second:"
-msgstr ""
+msgstr "Otrkārt:"
 
 #: site/pages/about.php:208
+#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme ir prasmju attīstīšana, kompetences veidošana, nevis tikai zināšanu "
+"iegūšana. Katrā sesijā mērķis ir auglīga darbība. Labākais apmācības "
+"rezultāts būs mainīts dzīvesveids un pieaugoša spēka pieredze savā ticībā."
 
 #: site/pages/about.php:216
 #, fuzzy
@@ -5457,20 +6126,27 @@ msgid "Needed for the training:"
 msgstr "Vēlies uzsākt apmācību?"
 
 #: site/pages/about.php:221 site/pages/training.php:262
+#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "Vismaz 3 cilvēki, bet ideālā gadījumā mazāk par 12."
 
 #: site/pages/about.php:222 site/pages/training.php:263
+#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"Apņemšanās pavadīt 20 stundas, apgūstot un praktizējot kursā ietvertos "
+"jēdzienus un rīkus."
 
 #: site/pages/about.php:223 site/pages/training.php:264
+#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"Persona, kas atvieglo (iespējams, jūs) tikšanās laiku un vietu, lai vadītu "
+"turpmāko diskusiju un atvieglotu rīcības uzvednes."
 
 #: site/pages/about.php:232
 #, fuzzy
@@ -5478,16 +6154,22 @@ msgid "NOT needed for the training:"
 msgstr "Vēlies uzsākt apmācību?"
 
 #: site/pages/about.php:234 site/pages/training.php:268
+#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"Vairāk zināšanu vai pieredzes nekā pārējai jūsu grupai nav vajadzīgas! Ja "
+"varat noklikšķināt uz nākamo, varat vadīt Zúme apmācību."
 
 #: site/pages/about.php:235
+#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"Speciāla atļauja apmācības vadīšanai nav nepieciešama! Zúme ir "
+"pašiniciatīva, pašiniciatīva, un jūs varat sākt jau šodien."
 
 #: site/pages/about.php:246
 #, fuzzy
@@ -5495,15 +6177,20 @@ msgid "Connecting with a Coach."
 msgstr "sazināties ar treneri"
 
 #: site/pages/about.php:253
+#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"Visā ceļā Zúme kopiena vēlas jūs atbalstīt, nodrošinot COACH, kas palīdzēs "
+"jums un jūsu grupai veiksmīgi īstenot apmācību. Nevilcinieties sazināties ar "
+"jautājumiem vai bažām!"
 
 #: site/pages/about.php:263
+#, fuzzy
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "Vai tu esi gatavs? Reģistrējieties šodien."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 #, fuzzy
@@ -5511,8 +6198,9 @@ msgid "Register Free"
 msgstr "Reģistrēties bez maksas"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
+#, fuzzy
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "Lūdzu, ievadiet drauga kodu."
 
 #: site/pages/checkin.php:157
 #, fuzzy
@@ -5520,27 +6208,34 @@ msgid "Checkin"
 msgstr "Kontrolsaraksts"
 
 #: site/pages/checkin.php:159
+#, fuzzy
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "Izmantojiet kodu ekrānā vai grāmatā"
 
 #: site/pages/checkin.php:164 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
+#, fuzzy
 msgid "Connect"
-msgstr ""
+msgstr "Savienot"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "Ziedot"
 
 #: site/pages/donate.php:95
+#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
+"Mēs saņemam kopfinansējumu, un mums patīk, ka vēlaties būt daļa no Zúme "
+"vīzijas."
 
 #: site/pages/donate.php:103
+#, fuzzy
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "Skatīt visas dāvināšanas iespējas"
 
 #: site/pages/faq.php:88
 #, fuzzy
@@ -5572,7 +6267,7 @@ msgstr "Klausieties un lasiet līdzi"
 msgid "How to Follow Jesus"
 msgstr "Kā sekot Jēzum"
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 #, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
@@ -5580,7 +6275,7 @@ msgstr ""
 "Noskatieties šo svarīgo video, kurā paskaidrotas 4 jūsu jaunās dzīves "
 "attiecības."
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 #, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
@@ -5588,19 +6283,19 @@ msgid ""
 msgstr ""
 "Zemāk esošās sadaļas jums mācīs, ko nozīmē būt Jēzus sekotājam (māceklim)."
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr "Kas ir Jēzus sekotājs?"
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr "Kādas ir Jēzus sekotāja aktivitātes?"
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr "Bībeles lasīšana"
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
@@ -5608,7 +6303,7 @@ msgstr ""
 "Ir svarīgi tas, ko mācekļi zina, taču daudz svarīgāk ir tas, ko viņi DARA ar "
 "to, ko zina."
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
@@ -5619,11 +6314,11 @@ msgstr ""
 "iemācījušies. Tādā veidā 3/3 grupa nav tikai mazā grupa, bet gan vienkārša "
 "draudze. "
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "Apgūstiet, kā paklausīt Jēzus pavēlēm, dodoties UN paliekot."
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 #, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
@@ -5632,17 +6327,17 @@ msgstr ""
 "Tas ir vienkāršs veids, kā svinēt mūsu ciešo saikni un pastāvīgās attiecības "
 "ar Jēzu. Uzziniet vienkāršu veidu, kā to svinēt."
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr "Upurēšanās un ciešanas"
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
 "Kā es varu paklausīt Jēzum un palīdzēt citiem kļūt par sekotājiem kopā ar "
 "mani?"
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -5656,19 +6351,19 @@ msgstr ""
 "Es jums esmu pavēlējis. Un redziet, Es esmu pie jums ik dienas līdz pasaules "
 "galam.\""
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr "Mateja 28:18-20"
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr "Mācot citus paklausīt Jēzum un sekot Jēzum kopā ar jums"
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "Apgūstiet, kas pīlēniem ir kopīgs ar mācekļu veidošanu."
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
@@ -5676,21 +6371,21 @@ msgstr ""
 "Noskaidrojiet, kā mācekļu veidošanai nav jābūt lineārai. Vienlaicīgi var "
 "notikt vairākas lietas."
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr "Runājot ar cilvēkiem, KURUS PAZĪSTAT par Jēzu"
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr "Runājot ar cilvēkiem, KURUS NEPAZĪSTAT par Jēzu\n"
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
 "Apgūstiet, kas varētu būt miera cilvēks un kā zināt, kad esat tādu atradis."
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 #, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
@@ -5699,7 +6394,7 @@ msgstr ""
 "Tas ir vienkāršs veids, kā paklausīt Dieva pavēlei lūgt par citiem. Un tas "
 "ir tieši tā, kā tas izklausās — Dieva lūgšana pastaigājoties!"
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 #, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
@@ -5712,8 +6407,9 @@ msgid "Friend Invitation"
 msgstr "Uzaicinājums pieņemts"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
+#, fuzzy
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "Izmantojiet kodu, kuru jums nosūtīja draugs."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
@@ -5721,15 +6417,21 @@ msgid "Get A Coach"
 msgstr "Iegūt treneri"
 
 #: site/pages/get-a-coach.php:89
+#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"Ikvienā atlētiskā sporta veidā, it īpaši augstākos līmeņos, tiek izmantota "
+"trenera apmācība. Pat olimpiskajiem sportistiem ir treneri, un bieži vien "
+"vairāk nekā viens. Mācekļu veidošana var gūt labumu no apmācības, ko sniedz "
+"tie, kuriem ir lielāka pieredze."
 
 #: site/pages/get-a-coach.php:92
+#, fuzzy
 msgid "No Cost"
-msgstr ""
+msgstr "Bez maksas"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
@@ -5753,14 +6455,18 @@ msgid "Localized"
 msgstr "Lokāli"
 
 #: site/pages/get-a-coach.php:102
+#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"Mūsu sakaru komanda cenšas jūs savienot ar treneri, kurš runā jūsu valodā un "
+"ir pēc iespējas tuvāks ģeogrāfiski."
 
 #: site/pages/get-a-coach.php:106
+#, fuzzy
 msgid "Experienced"
-msgstr ""
+msgstr "Pieredzējis"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
 #, fuzzy
@@ -5768,15 +6474,20 @@ msgid "Join a training"
 msgstr "Organizē apmācību"
 
 #: site/pages/get-a-coach.php:109
+#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"Visi mūsu treneri ir apmācīti un praktizē Zûme piedāvātos jēdzienus un "
+"rīkus. Visi mūsu treneri var jums palīdzēt pārvarēt šķēršļus un spert soļus "
+"jūsu ceļojumā."
 
 #: site/pages/home.php:86
+#, fuzzy
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:87
 #, fuzzy
@@ -5784,20 +6495,23 @@ msgid "Languages"
 msgstr "Valoda"
 
 #: site/pages/home.php:129
+#, fuzzy
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "Kļūstot līdzīgākam Jēzum... Kopā"
 
 #: site/pages/home.php:132
 msgid "Overview"
 msgstr "Pārskats"
 
 #: site/pages/home.php:134
+#, fuzzy
 msgid "Group Discussions"
-msgstr ""
+msgstr "Grupu diskusijas"
 
 #: site/pages/home.php:135
+#, fuzzy
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "Pašapkalpošanās"
 
 #: site/pages/home.php:136
 #, fuzzy
@@ -5805,8 +6519,9 @@ msgid "Practice-Oriented"
 msgstr "Prakse - Četri lauki"
 
 #: site/pages/home.php:137
+#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 Jēdzieni un prasmes"
 
 #: site/pages/home.php:138
 #, fuzzy
@@ -5814,12 +6529,14 @@ msgid "20 hours of Training"
 msgstr "Organizē apmācību"
 
 #: site/pages/home.php:144
+#, fuzzy
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "Bezmaksas. Jebkurā laikā. Jebkur."
 
 #: site/pages/home.php:148
+#, fuzzy
 msgid "Gain insight into..."
-msgstr ""
+msgstr "Gūstiet ieskatu..."
 
 #: site/pages/home.php:153
 #, fuzzy
@@ -5832,8 +6549,9 @@ msgid "What's a Disciple?"
 msgstr "Vienkārša definīcija māceklim un draudzei"
 
 #: site/pages/home.php:156
+#, fuzzy
 msgid "What's a Church?"
-msgstr ""
+msgstr "Kas ir Baznīca?"
 
 #: site/pages/home.php:157
 #, fuzzy
@@ -5841,16 +6559,19 @@ msgid "Keys to Spiritual Growth"
 msgstr "Garīgā elpošana"
 
 #: site/pages/home.php:158
+#, fuzzy
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "Personīgās Bībeles studijas"
 
 #: site/pages/home.php:159
+#, fuzzy
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "Spēcīga lūgšanu dzīve"
 
 #: site/pages/home.php:160
+#, fuzzy
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "Paklausīgas ticības spēks"
 
 #: site/pages/home.php:167
 #, fuzzy
@@ -5868,8 +6589,9 @@ msgid "Telling Your Story"
 msgstr "Vadot jūsu grupu"
 
 #: site/pages/home.php:171
+#, fuzzy
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "Iesaistoši meklētāji"
 
 #: site/pages/home.php:172
 #, fuzzy
@@ -5887,12 +6609,14 @@ msgid "Training Others"
 msgstr "Treniņapmācība"
 
 #: site/pages/home.php:179 site/pages/home.php:245
+#, fuzzy
 msgid "I'm Ready!"
-msgstr ""
+msgstr "Esmu gatavs!"
 
 #: site/pages/home.php:193
+#, fuzzy
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "Vienkāršie Cilvēki. Vienkārši soļi."
 
 #: site/pages/home.php:238
 #, fuzzy
@@ -5900,35 +6624,49 @@ msgid "More about zume"
 msgstr "Uzzini vairāk par Zúme"
 
 #: site/pages/home.php:272
+#, fuzzy
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "Īsti cilvēki... patiesi stāsti."
 
 #: site/pages/home.php:283
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"Es pavadīju gadus, uzticīgi apmeklējot Bībeles studijas un baznīcu, bet kaut "
+"kā nebiju sapratis vienkāršo mācekļu veidošanas patiesību, ko atradu šeit, "
+"Zūmē. ~ C"
 
 #: site/pages/home.php:294
+#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
+"Ikviens var to izdarīt. Jums nav nepieciešamas īpašas prasmes vai apmācība. "
+"~ Dž"
 
 #: site/pages/home.php:305
+#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"Tas ir paredzēts visiem mācekļiem, kuri vēlas paklausīt Lielajam uzdevumam. "
+"Zúme apmācība iezīmē parastu kristiešu dzīvesveidu. ~ D"
 
 #: site/pages/home.php:316
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
 msgstr ""
+"Šīs koncepcijas un prasmes pārveidoja mūsu draudzi un mūsu ietekmi uz "
+"pasauli. ~ R"
 
 #: site/pages/home.php:326
-#, fuzzy
-msgid "Zúme = Yeast"
+#, fuzzy, php-format
+msgid "%s = Yeast"
 msgstr "Zúme tīkls"
 
 #: site/pages/home.php:332
@@ -5948,8 +6686,9 @@ msgstr ""
 "šajā paaudzē ar daudziem mācekļiem."
 
 #: site/pages/home.php:337
+#, fuzzy
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "Vai esat gatavs spert nākamos soļus?"
 
 #: site/pages/home.php:341
 #, fuzzy
@@ -5962,8 +6701,9 @@ msgid "Gather a Group."
 msgstr "Izveidot grupu"
 
 #: site/pages/home.php:349
+#, fuzzy
 msgid "Change the World."
-msgstr ""
+msgstr "Mainīt pasauli."
 
 #: site/pages/home.php:352
 #, fuzzy
@@ -5971,8 +6711,9 @@ msgid "Get started"
 msgstr "Sāciet darbu"
 
 #: site/pages/kitchen-sink.php:86
+#, fuzzy
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "Virtuves izlietne"
 
 #: site/pages/messages.php:236
 #, fuzzy
@@ -5980,8 +6721,10 @@ msgid "Friend"
 msgstr "Lietotāja adrese"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
+#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr ""
+"Spēcinot mācekļus. Jebkurā laikā... jebkurā vietā, izmantojot lietotni Zúme."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
 #, fuzzy
@@ -5989,37 +6732,47 @@ msgid "Zúme Training App"
 msgstr "Zume treniņapmācība"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
+#, fuzzy
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "Piekļūstiet pilnai apmācībai, lai kur jūs dotos"
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
+#, fuzzy
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "Iegūstiet to pakalpojumā Google Play"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
+#, fuzzy
 msgid "Offline App"
-msgstr ""
+msgstr "Bezsaistes lietotne"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
+#, fuzzy
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "Pilna apmācība bez interneta nepieciešamības"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
+#, fuzzy
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "Lejupielādējiet kursu un video saturu savā tālrunī"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
+#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
 msgstr ""
+"Lieliski piemērots apgabaliem, kur piekļuve internetam ir ierobežota vai "
+"ierobežota"
 
 #: site/pages/plan-invite.php:77
+#, fuzzy
 msgid "Please enter a code."
-msgstr ""
+msgstr "Lūdzu, ievadiet kodu."
 
 #: site/pages/plan-invite.php:170
+#, fuzzy
 msgid "Plan Invitation"
-msgstr ""
+msgstr "Plāna ielūgums"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -6051,10 +6804,13 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "Kādas atļaujas tiek pieprasītas, ielogojoties sociālajos tīklos?"
 
 #: site/pages/privacy-policy.php:91
+#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"Tālāk norādītie profila elementi mainās atkarībā no tā, vai tiek izmantota "
+"Facebook vai Google pierakstīšanās."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -6090,9 +6846,12 @@ msgid ""
 msgstr "Mēs arī sekojam līdzi jūsu progresam treniņapmācības kursa laikā."
 
 #: site/pages/privacy-policy.php:136
+#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
+"Mēs pieprasām nepieciešamo informāciju, izmantojot dažādas pierakstīšanās un "
+"pieprasījuma veidlapas."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6225,28 +6984,36 @@ msgid "Training Guidebook"
 msgstr "Treniņapmācības piesātinājums"
 
 #: site/pages/resources.php:103
+#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"Zúme apmācība tagad ir pieejama pilnā darbgrāmatā. Visas apmācības "
+"koncepcijas, rīki, diskusiju jautājumi un izaicinājumi tagad ir jūsu "
+"plaukstā. QR kodi katrai sesijai sniedz piekļuvi arī visam video saturam!"
 
 #: site/pages/resources.php:111
+#, fuzzy
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "Bezmaksas lejupielāde (PDF)"
 
 #: site/pages/resources.php:112
+#, fuzzy
 msgid "Order print copy"
-msgstr ""
+msgstr "Pasūtiet drukas kopiju"
 
 #: site/pages/share.php:83
+#, fuzzy
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "Kopējiet šo saiti un nosūtiet to saviem draugiem."
 
 #: site/pages/share.php:85
+#, fuzzy
 msgid "Copied"
-msgstr ""
+msgstr "Kopēts"
 
 #: site/pages/share.php:122
 msgid "Tools"
@@ -6257,22 +7024,28 @@ msgid "Concepts"
 msgstr "Koncepti"
 
 #: site/pages/share.php:125
+#, fuzzy
 msgid "Sort"
-msgstr ""
+msgstr "Kārtot"
 
 #: site/pages/share.php:126
+#, fuzzy
 msgid "Items"
-msgstr ""
+msgstr "Preces"
 
 #: site/pages/share.php:134
+#, fuzzy
 msgid "Sharing with Others"
-msgstr ""
+msgstr "Dalīšanās ar citiem"
 
 #: site/pages/share.php:141
+#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"Kad mēs esam uzticīgi paklausīt un dalīties tajā, ko Tas Kungs mums ir "
+"dalījis, tad viņš apsola dalīties vēl vairāk."
 
 #: site/pages/training.php:130
 #, fuzzy
@@ -6285,10 +7058,13 @@ msgid "Create your own training group"
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
 #: site/pages/training.php:136
+#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"Sapulciniet dažus draugus vai apmeklējiet kursu esošajā nelielā grupā. "
+"Izveidojiet savu treniņu grupu un sekojiet līdzi savam progresam."
 
 #: site/pages/training.php:138
 #, fuzzy
@@ -6296,10 +7072,13 @@ msgid "Create"
 msgstr "Trīs mēnešu plāns"
 
 #: site/pages/training.php:144
+#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"Ja šobrīd nevarat savākt grupu, apsveriet iespēju pievienoties kādai no mūsu "
+"tiešsaistes apmācību grupām, ko vada pieredzējis Zúme treneris."
 
 #: site/pages/training.php:149
 #, fuzzy
@@ -6307,10 +7086,13 @@ msgid "Request a coach"
 msgstr "Iegūt treneri"
 
 #: site/pages/training.php:152
+#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"Mēs varam jūs savienot ar bezmaksas Zúme treneri, kurš ir apņēmies palīdzēt "
+"jums izprast apmācību un kļūt par auglīgu mācekli."
 
 #: site/pages/training.php:154
 #, fuzzy
@@ -6337,15 +7119,20 @@ msgid "What is required?"
 msgstr "Nepieciešams e-pasts."
 
 #: site/pages/training.php:177
+#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"Šajā pašmācībā jūs un jūsu apmācības grupa izmantosit īsus video, diskusiju "
+"jautājumus un vienkāršus vingrinājumus, lai attīstītu savas prasmes un "
+"zināšanas šādās jomās:"
 
 #: site/pages/training.php:181
+#, fuzzy
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "Mācekļu jēdzieni"
 
 #: site/pages/training.php:195
 #, fuzzy
@@ -6353,10 +7140,13 @@ msgid "Spiritual Practices"
 msgstr "Garīgā elpošana"
 
 #: site/pages/training.php:216
+#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme ir 20 stundu apmācība. Taču šīs 20 stundas var sadalīt atšķirīgi "
+"atkarībā no jūsu apmācību grupas pieejamības."
 
 #: site/pages/training.php:221
 #, fuzzy
@@ -6364,11 +7154,15 @@ msgid "10 Sessions"
 msgstr "Sessija"
 
 #: site/pages/training.php:228
+#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"Sākotnējais Zúme kursa formāts ir 10 divu stundu sesijas. Katra sesija "
+"beidzas ar praktiskiem paklausības soļiem un veidiem, kā dalīties starp "
+"sesijām. Šis formāts bieži tiek palaists reizi nedēļā 10 nedēļas."
 
 #: site/pages/training.php:233
 #, fuzzy
@@ -6376,22 +7170,31 @@ msgid "20 Sessions"
 msgstr "Sessija"
 
 #: site/pages/training.php:240
+#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"Lai iegūtu garāku lēnāka tempa kursu ar vairāk iespēju iegūt kompetenci "
+"jēdzienu un prasmju jomā, 20 sesiju formātā ir vairāk prakses iespēju katram "
+"no jēdzieniem un rīkiem."
 
 #: site/pages/training.php:245
+#, fuzzy
 msgid "Intensive"
-msgstr ""
+msgstr "Intensīvi"
 
 #: site/pages/training.php:252
+#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme var saspiest 5 pusi dienas daļās, katra pa 4 stundām. To var izdarīt "
+"piektdienas vakarā (4 stundas) un visu sestdienas dienu (8 stundas) un visu "
+"svētdienas dienu (8 stundas)."
 
 #: site/pages/training.php:260
 #, fuzzy
@@ -6404,14 +7207,18 @@ msgid "NOT needed for the course:"
 msgstr "Vēlies uzsākt apmācību?"
 
 #: site/pages/training.php:269
+#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"Speciāla atļauja kursu vadīšanai nav nepieciešama! Zúme ir pašiniciatīva, "
+"pašiniciatīva, un jūs varat sākt jau šodien."
 
 #: site/parts/footer.php:31
+#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "3 dienu intensīvais kurss"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
@@ -6422,12 +7229,47 @@ msgid "Check-in"
 msgstr "Kontrolsaraksts"
 
 #: site/parts/noscript.php:2
+#, fuzzy
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "Hmm, javascript ir izslēgts"
 
 #: site/parts/noscript.php:3
+#, fuzzy
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "Lūdzu, iespējojiet javascript, lai izmantotu šo lapu"
+
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+#, fuzzy
+msgid "Update Communication Preferences"
+msgstr "Kāda ir jūsu pilsēta vai valsts vai pasta indekss?"
+
+#: site/profile/communication-preferences.php:81
+#, fuzzy
+msgid "Recieve emails for:"
+msgstr "Saņemt e-pastus par:"
+
+#: site/profile/communication-preferences.php:84
+#, fuzzy
+msgid "Training session reminders"
+msgstr "Treniņapmācība"
+
+#: site/profile/communication-preferences.php:88
+#, fuzzy
+msgid "Annual reporting reminders"
+msgstr "Atgādinājumi par ikgadējiem ziņojumiem"
+
+#: site/profile/communication-preferences.php:92
+#, fuzzy
+msgid "Community updates"
+msgstr "Kopiena"
+
+#: site/profile/communication-preferences.php:96
+#, fuzzy
+msgid "Encouragements"
+msgstr "Pamudinājumi"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6439,8 +7281,9 @@ msgid "your friend"
 msgstr "Jūsu profils"
 
 #: utilities/apis/connect-api.php:235
+#, fuzzy
 msgid "the plan"
-msgstr ""
+msgstr "plāns"
 
 #: utilities/apis/cta-api.php:134
 #, fuzzy
@@ -6453,8 +7296,9 @@ msgid "Join Online Training"
 msgstr "Skatīt visu apmācību"
 
 #: utilities/apis/cta-api.php:149
+#, fuzzy
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "Pievienojieties tiešsaistes apmācībai, lai uzzinātu vairāk"
 
 #: utilities/apis/cta-api.php:163
 #, fuzzy
@@ -6462,8 +7306,9 @@ msgid "Joined Training!"
 msgstr "Skatīt visu apmācību"
 
 #: utilities/apis/cta-api.php:178
+#, fuzzy
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "Saņemiet treneri, kas jums palīdzēs jūsu ceļojumā"
 
 #: utilities/apis/cta-api.php:192
 #, fuzzy
@@ -6471,8 +7316,9 @@ msgid "Requested Coach!"
 msgstr "Iegūt treneri"
 
 #: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#, fuzzy
 msgid "Congratulations"
-msgstr ""
+msgstr "Apsveicu"
 
 #: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 #, fuzzy
@@ -6480,88 +7326,96 @@ msgid "Create a Training"
 msgstr "1 Treniņapmācība"
 
 #: utilities/apis/cta-api.php:207
+#, fuzzy
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "Izveidojiet apmācību, lai palīdzētu jums augt"
 
 #: utilities/apis/cta-api.php:221
 #, fuzzy
 msgid "Created Training!"
 msgstr "Izveidojiet savu 100 cilvēku sarakstu"
 
-#: utilities/apis/cta-api.php:236
-msgid "Invite friends to join you on your journey"
-msgstr ""
-
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:254
+#, fuzzy
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "Iestatiet savu profilu, lai palīdzētu citiem jūs zināt"
 
-#: utilities/apis/cta-api.php:265
+#: utilities/apis/cta-api.php:268
 #, fuzzy
 msgid "Profile Set"
 msgstr "Profils"
 
-#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "Trīs mēnešu plāns"
 
-#: utilities/apis/cta-api.php:280
+#: utilities/apis/cta-api.php:283
+#, fuzzy
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "Izveidojiet 3 mēnešu plānu, lai palīdzētu jums augt"
 
-#: utilities/apis/cta-api.php:294
-#, php-format
+#: utilities/apis/cta-api.php:297
+#, fuzzy, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s ir atbloķēts"
 
-#: utilities/apis/cta-api.php:308
+#: utilities/apis/cta-api.php:311
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "Trīs mēnešu plāns"
 
-#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
+#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "Trīs mēnešu plāns"
 
-#: utilities/apis/cta-api.php:323
+#: utilities/apis/cta-api.php:326
+#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "Pabeidziet savu 3 mēnešu plānu, lai palīdzētu jums augt"
 
-#: utilities/apis/cta-api.php:337
+#: utilities/apis/cta-api.php:340
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "Trīs mēnešu plāns"
 
-#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#: utilities/apis/cta-api.php:385
 #, fuzzy
-msgid "Join a Hub"
+msgid "Join the community"
 msgstr "Kopiena"
 
-#: utilities/apis/cta-api.php:368
-msgid "Join a hub to help you grow"
-msgstr ""
-
-#: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "Garīgā elpošana"
 
-#: utilities/apis/cta-api.php:386
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "Garīgā elpošana"
 
-#: utilities/apis/cta-api.php:400 utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "Attiecību pārvaldība — 100 cilvēku saraksts"
 
-#: utilities/apis/cta-api.php:401
+#: utilities/apis/cta-api.php:417
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "Attiecību pārvaldība — 100 cilvēku saraksts"
+
+#: utilities/apis/plans-api.php:134
+#, fuzzy, php-format
+msgctxt "My first training - username"
+msgid "My first training - %s"
+msgstr "Organizē apmācību"
+
+#: utilities/apis/plans-api.php:136
+#, fuzzy, php-format
+msgctxt "Training 2 - username"
+msgid "Training %1$d - %2$s"
+msgstr "Treniņapmācība"
 
 #: utilities/hooks/roles-and-permissions.php:56
 #, fuzzy
@@ -6592,14 +7446,23 @@ msgstr "Zume treniņapmācība"
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
+#, fuzzy
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "Lejupielādēt slaidu prezentāciju"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
+#, fuzzy
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Kopīgojiet Zúme lapu"
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+#, fuzzy
+msgid "Zúme Annual Report"
+msgstr "Zúme gada pārskats"
 
 #: utilities/post-types/posttype-pieces.php:301
 #, fuzzy
@@ -6652,16 +7515,19 @@ msgid "User Phone"
 msgstr "Zvans"
 
 #: zume-training-system.php:279
+#, fuzzy
 msgid "User Timezone"
-msgstr ""
+msgstr "Lietotāja laika josla"
 
 #: zume-training-system.php:287
+#, fuzzy
 msgid "User Friend Key"
-msgstr ""
+msgstr "Lietotāja drauga atslēga"
 
 #: zume-training-system.php:295
+#, fuzzy
 msgid "User Preferred Language"
-msgstr ""
+msgstr "Lietotāja vēlamā valoda"
 
 #: zume-training-system.php:303
 #, fuzzy
@@ -6669,28 +7535,42 @@ msgid "User Preferred Email"
 msgstr "E-pasts"
 
 #: zume-training-system.php:311
+#, fuzzy
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "Vēlamās saziņas metodes"
 
 #: zume-training-system.php:321
+#, fuzzy
 msgid "Messenger"
-msgstr ""
+msgstr "Messenger"
 
-#. Plugin Name of the plugin/theme
 #, fuzzy
-msgid "Zúme - Training System"
-msgstr "Zúme treniņapmācība"
+#~ msgid "Switch Views"
+#~ msgstr "Pārslēgt skatus"
 
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr "https://github.com/ZumeProject/zume-training"
+#~ msgid "Something went wrong while joining the plan"
+#~ msgstr "Kaut kas nogāja greizi. Atvainojiet. Vai varat mēģināt vēlreiz?"
 
-#. Description of the plugin/theme
 #, fuzzy
-msgid "Zume Training System"
-msgstr "Zume treniņapmācība"
+#~ msgid "Something went wrong while checking in"
+#~ msgstr "Hmm... Kaut kas nogāja greizi. Mēģini vēlreiz!"
+
+#, fuzzy
+#~ msgid "Join a Hub"
+#~ msgstr "Kopiena"
+
+#, fuzzy
+#~ msgid "Zúme - Training System"
+#~ msgstr "Zúme treniņapmācība"
+
+#, fuzzy
+#~ msgid "https://github.com/ZumeProject/zume-training-system"
+#~ msgstr "https://github.com/ZumeProject/zume-training"
+
+#, fuzzy
+#~ msgid "Zume Training System"
+#~ msgstr "Zume treniņapmācība"
 
 #, fuzzy
 #~ msgid "Submit Report"
@@ -6728,10 +7608,6 @@ msgstr "Zume treniņapmācība"
 #, fuzzy
 #~ msgid "Zúme Training Dashboard"
 #~ msgstr "Zúme treniņapmācību resursi"
-
-#, fuzzy
-#~ msgid "Update Your Communication Preferences"
-#~ msgstr "Kāda ir jūsu pilsēta vai valsts vai pasta indekss?"
 
 #~ msgid "Coaches"
 #~ msgstr "Treneri"
@@ -9364,9 +10240,6 @@ msgstr "Zume treniņapmācība"
 
 #~ msgid "Facebook already linked with another account."
 #~ msgstr "Facebook e-pasts jau ir saistīts ar citu kontu."
-
-#~ msgid "Oops. Something went wrong."
-#~ msgstr "Ups, Kaut kas nogāja greizi!"
 
 #~ msgid "Great job! Here's your progress with this concept"
 #~ msgstr "Lieliski pastrādāts! Lūk, jūsu progress saistībā ar šo konceptu"

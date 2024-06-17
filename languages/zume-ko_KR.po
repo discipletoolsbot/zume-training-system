@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-05-25 15:03+0700\n"
-"PO-Revision-Date: 2024-06-02 00:59+0000\n"
+"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"PO-Revision-Date: 2024-06-12 20:29+0000\n"
 "Last-Translator: Zack Han <suburbanideal@gmail.com>\n"
 "Language-Team: Korean <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ko_KR/>\n"
@@ -35,8 +35,9 @@ msgstr "자주 묻는 질문"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/pages/home.php:108
-#: site/parts/nav.php:19 site/parts/nav.php:71
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "대시보드"
 
@@ -61,7 +62,7 @@ msgstr "훈련"
 msgid "Metrics"
 msgstr "분석"
 
-#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:217
+#: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
 msgstr "지역 사회"
 
@@ -78,14 +79,14 @@ msgstr "저장"
 msgid "Global Map"
 msgstr "세계 지도"
 
-#: globals.php:1907 globals.php:1909 site/course/course-content.php:86
+#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
-#: site/course/course-content.php:3178
+#: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "하나님은 평범한 사람들을 사용하십니다"
 
-#: globals.php:1908 site/pages/follow-jesus.php:168
+#: globals.php:1937 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -93,45 +94,45 @@ msgstr ""
 "하나님이 평범한 사람들을 사용하여 간단한 일을 함으로써 큰 영향을 이루는 방법"
 "을 알게 됩니다."
 
-#: globals.php:1918 site/course/course-content.php:3161
-#: site/course/course-content.php:3179
+#: globals.php:1947 site/course/course-content.php:3161
+#: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "제자와 교회의 간단한 정의"
 
-#: globals.php:1919 site/course/course-content.php:153
-#: site/pages/follow-jesus.php:172
+#: globals.php:1948 site/course/course-content.php:153
+#: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "제자 되기, 제자 삼기 및 교회의 본질을 알아보세요. "
 
-#: globals.php:1920 site/course/course-content.php:143
+#: globals.php:1949 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
 msgstr "제자와 교회"
 
-#: globals.php:1929 site/course/course-content.php:3162
-#: site/course/course-content.php:3180
+#: globals.php:1958 site/course/course-content.php:3162
+#: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "영적 호흡은 하나님의 말씀을 듣고 순종하는 것입니다"
 
-#: globals.php:1930 site/pages/follow-jesus.php:194
+#: globals.php:1959 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
 "제자가 된다는 것은 하나님의 말씀을 듣고 하나님께 순종한다는 것을 의미합니다."
 
-#: globals.php:1931 site/course/course-content.php:189
+#: globals.php:1960 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "영적 호흡은 하나님의 말씀을 듣고 순종하는 것입니다"
 
-#: globals.php:1940 globals.php:1942
+#: globals.php:1969 globals.php:1971
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "S.O.A.P.S. 성경 읽기"
 
-#: globals.php:1941 site/pages/follow-jesus.php:209
+#: globals.php:1970 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -139,14 +140,14 @@ msgstr ""
 "하나님의 말씀을 이해하고 순종하며 나누는 데 도움이 되는 매일 성경 공부를 위"
 "한 방법입니다."
 
-#: globals.php:1951 globals.php:1953 site/course/course-content.php:93
+#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
-#: site/course/course-content.php:3425
+#: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "책임 그룹"
 
-#: globals.php:1952 site/pages/follow-jesus.php:224
+#: globals.php:1981 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -155,11 +156,11 @@ msgstr ""
 "같은 성별의 두 세 명의 사람들이 매주 만나 서로 잘 하는 영역에 대해 격려를 하"
 "고, 수정이 필요한 영역에 대해 밝혀주는 방법입니다."
 
-#: globals.php:1962
+#: globals.php:1991 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "소비자 대 생산자 생활 방식"
 
-#: globals.php:1963 site/pages/follow-jesus.php:188
+#: globals.php:1992 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -167,28 +168,28 @@ msgstr ""
 "하나님이 날마다 따르는 제자들을 더욱 예수님을 닮게 하시는 4가지 주요 방법을 "
 "발견하게 됩니다."
 
-#: globals.php:1964
+#: globals.php:1993
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "생산자 대 소비자"
 
-#: globals.php:1973 globals.php:1975
+#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "기도로 시간을 보내는 방법"
 
-#: globals.php:1974 site/pages/follow-jesus.php:198
+#: globals.php:2003 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "한 시간 동안 기도하는 것이 얼마나 쉬운지요."
 
-#: globals.php:1984
+#: globals.php:2013 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "관계 관리 – 100인 명단"
 
-#: globals.php:1985 site/pages/follow-jesus.php:285
+#: globals.php:2014 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "당신의 인맥을 잘 관리할 수 있도록 설계된 방법입니다."
 
-#: globals.php:1986 site/activities/list-of-100-printable.php:78
+#: globals.php:2015 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -199,13 +200,13 @@ msgstr "당신의 인맥을 잘 관리할 수 있도록 설계된 방법입니�
 msgid "List of 100"
 msgstr "100인 명단"
 
-#: globals.php:1995 globals.php:1997 site/course/course-content.php:796
+#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "영적 경제"
 
-#: globals.php:1996 site/pages/follow-jesus.php:243
+#: globals.php:2025 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -213,27 +214,27 @@ msgstr ""
 "하나님의 경제가 세상 경제와 어떻게 다른지 배우십시오. 하나님은 이미 주신 것"
 "에 충실한 사람들에게 더 많은 것을 투자하십니다."
 
-#: globals.php:2006
+#: globals.php:2035 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "복음 및 전하는 방법"
 
-#: globals.php:2007 site/pages/follow-jesus.php:289
+#: globals.php:2036 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr ""
 "인류의 시작부터 이 시대의 끝까지 하나님의 복음을 전하는 방법을 배우십시오."
 
-#: globals.php:2008
+#: globals.php:2037
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "간증 나누기 연습 (45 분)"
 
-#: globals.php:2017
+#: globals.php:2046 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "세례 및 진행 방법"
 
-#: globals.php:2018 site/pages/follow-jesus.php:236
+#: globals.php:2047 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -242,18 +243,18 @@ msgstr ""
 "예수님이 말씀하시길, “가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이"
 "름으로 세례를 베풀고…” 이것을 실천하는 방법을 배우십시오."
 
-#: globals.php:2019 site/course/course-content.php:801
+#: globals.php:2048 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "세례"
 
-#: globals.php:2028
+#: globals.php:2057 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "당신의 3분 간증을 준비하십시오"
 
-#: globals.php:2029 site/pages/follow-jesus.php:293
+#: globals.php:2058 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -261,18 +262,18 @@ msgstr ""
 "예수님이 당신의 삶에 어떤 영향을 주었는지 이야기하는 3 분 간증에 대해 배우십"
 "시오."
 
-#: globals.php:2030
+#: globals.php:2059
 msgid "3-Minute Testimony"
 msgstr "3 분 간증"
 
-#: globals.php:2039 site/course/course-content.php:1140
+#: globals.php:2068 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
-#: site/course/course-content.php:3823
+#: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "가장 큰 축복을 주는 비전"
 
-#: globals.php:2040 site/course/course-content.php:1216
-#: site/pages/follow-jesus.php:176
+#: globals.php:2069 site/course/course-content.php:1216
+#: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
@@ -280,35 +281,35 @@ msgstr ""
 "예수님을 따르는 한 사람이 아닌, 배가하는 다음 세대를 만드는 영적 가정을 세우"
 "는 간단한 패턴을 배우십시오."
 
-#: globals.php:2041
+#: globals.php:2070
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "가장 큰 축복"
 
-#: globals.php:2050
+#: globals.php:2079 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "새끼 오리 제자 훈련 – 즉각적인 인도"
 
-#: globals.php:2051
+#: globals.php:2080
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "새끼오리와 제자 삼기에 어떤 연관이 있는지 알아보세요."
 
-#: globals.php:2052 site/course/course-content.php:1141
+#: globals.php:2081 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "새끼오리 제자훈련"
 
-#: globals.php:2061 globals.php:2063 site/course/course-content.php:1142
+#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
-#: site/course/course-content.php:4375
+#: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 #, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "천국이 닿지 않은 곳에서 볼 수 있는 눈"
 
-#: globals.php:2062 site/pages/follow-jesus.php:247
+#: globals.php:2091 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -316,11 +317,11 @@ msgstr ""
 "하나님 나라가 닿지 않은 곳을 보기 시작하십시오. 이는 대부분 하나님이 가장 일"
 "하고 싶어 하시는 곳입니다."
 
-#: globals.php:2072
+#: globals.php:2101 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "성찬과 진행하는 방법"
 
-#: globals.php:2073
+#: globals.php:2102
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -328,7 +329,7 @@ msgstr ""
 "예수님과의 지속적이고 친밀한 관계를 축하하는 간단한 방법입니다. 축하하는 간단"
 "한 방법을 배우십시오."
 
-#: globals.php:2074 site/course/course-content.php:1147
+#: globals.php:2103 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -336,11 +337,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "성찬"
 
-#: globals.php:2083
+#: globals.php:2112 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "걷기 기도 및 진행 방법"
 
-#: globals.php:2084
+#: globals.php:2113
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -349,35 +350,35 @@ msgstr ""
 "이것은 다른 사람을 위해 기도하라는 하나님의 명령에 순종하는 간단한 방법입니"
 "다. 문장 그대로 주변을 걸으면서 하나님께 기도하는 것입니다."
 
-#: globals.php:2085 site/course/course-content.php:1520
+#: globals.php:2114 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "걷기 기도"
 
-#: globals.php:2094
+#: globals.php:2123 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "평화의 사람과 그를 찾는 방법"
 
-#: globals.php:2095
+#: globals.php:2124
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 "평화의 사람은 누구인지, 그들을 발견했을 때 알아보는 방법을 배우게 됩니다."
 
-#: globals.php:2096 site/course/course-content.php:1515
+#: globals.php:2125 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "평화의 사람"
 
-#: globals.php:2105
+#: globals.php:2134 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "신실함이 지식보다 낫습니다"
 
-#: globals.php:2106
+#: globals.php:2135
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
@@ -386,32 +387,32 @@ msgstr ""
 "제자들이 무엇을 알고 있는냐는 중요합니다. 그러나 그들이 알고 있는 지식으로 무"
 "엇을 하는지는 더욱 중요합니다."
 
-#: globals.php:2107 site/course/course-content.php:1765
+#: globals.php:2136 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "신실함"
 
-#: globals.php:2116
+#: globals.php:2145 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "BLESS 기도 패턴"
 
-#: globals.php:2117 site/pages/follow-jesus.php:202
+#: globals.php:2146 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "다른 사람을 위해 잊지 않고 기도하기 위하여 간단한 기억법을 연습해보세요.  "
 
-#: globals.php:2118 site/course/course-content.php:1603
+#: globals.php:2147 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "B.L.E.S.S. 기도 연습 (15 분)"
 
-#: globals.php:2127
+#: globals.php:2156 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 그룹 모임 패턴"
 
-#: globals.php:2128
+#: globals.php:2157
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -422,33 +423,33 @@ msgstr ""
 "것에 순종하고 나누는 것을 훈련하는 방법입니다. 이런 면에서, 3/3 그룹은 소그룹"
 "이 아닌 단순한 교회입니다. "
 
-#: globals.php:2129
+#: globals.php:2158
 msgid "3/3 Group"
 msgstr "3/3 그룹"
 
-#: globals.php:2138
+#: globals.php:2167 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "성숙한 제자를 위한 훈련 사이클"
 
-#: globals.php:2139 site/pages/follow-jesus.php:270
+#: globals.php:2168 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr "훈련 사이클을 배우고 제자 삼기에 어떻게 적용되는지 생각해보십시오."
 
-#: globals.php:2140 site/course/course-content.php:5032
+#: globals.php:2169 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "훈련 사이클"
 
-#: globals.php:2149 globals.php:2151 site/course/course-content.php:2190
+#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
-#: site/course/course-content.php:5050
+#: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "리더십 소그룹"
 
-#: globals.php:2150 site/course/course-content.php:2213
-#: site/pages/follow-jesus.php:325
+#: globals.php:2179 site/course/course-content.php:2213
+#: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
@@ -456,12 +457,12 @@ msgstr ""
 "리더십 소그룹은 지도자로 부름을 받은 자가 섬김의 연습을 통해 리더십을 개발할 "
 "수 있는 방법입니다."
 
-#: globals.php:2160 globals.php:2162 site/course/course-content.php:5157
-#: site/course/course-content.php:5175
+#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "비순차적 성장을 기대"
 
-#: globals.php:2161
+#: globals.php:2190
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -470,11 +471,12 @@ msgstr ""
 "제자 삼기가 꼭 순차적일 필요가 없는 것을 보게 됩니다. 배가는 동시 진행이 가능"
 "합니다. "
 
-#: globals.php:2171 site/course/course-content.php:2770
+#: globals.php:2200 site/course/course-content.php:2770
+#: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "배가의 속도"
 
-#: globals.php:2172 site/pages/follow-jesus.php:278
+#: globals.php:2201 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -482,38 +484,38 @@ msgstr ""
 "배가는 중요합니다. 신속한 배가는 더욱 중요합니다. 속도가 왜 중요한지 알아보세"
 "요."
 
-#: globals.php:2173 site/course/course-content.php:2390
+#: globals.php:2202 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "속도"
 
-#: globals.php:2182 globals.php:2184 site/course/course-content.php:2391
+#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
-#: site/course/course-content.php:5177
+#: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "항상 두 교회의 한 부분"
 
-#: globals.php:2183
+#: globals.php:2212
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "가서 머물면서 예수님의 명령에 순종하는 방법을 배우십시오."
 
-#: globals.php:2194 globals.php:2196 site/course/course-content.php:2903
+#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "3 개월 계획"
 
-#: globals.php:2195
+#: globals.php:2224
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
 "향후 3 개월 동안 줌 도구를 구현하는 방법에 대한 계획을 작성하고 공유하십시오."
 
-#: globals.php:2205 globals.php:2207
+#: globals.php:2234 globals.php:2236
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -524,14 +526,14 @@ msgstr ""
 #: site/course/course-content.php:2395 site/course/course-content.php:2539
 #: site/course/course-content.php:2548 site/course/course-content.php:2573
 #: site/course/course-content.php:2775 site/course/course-content.php:5290
-#: site/course/course-content.php:5310
+#: site/course/course-content.php:5310 site/pages/follow-jesus.php:327
 #: utilities/integrations/replace-placeholder.php:105
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
 msgstr "코칭 체크리스트"
 
-#: globals.php:2206 site/pages/follow-jesus.php:321
+#: globals.php:2235 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -539,14 +541,14 @@ msgstr ""
 "배가하는 제자를 삼을 때 자신의 강점과 약점을 신속하게 평가해볼 수 있는 훌륭"
 "한 방법입니다."
 
-#: globals.php:2216 globals.php:2218 site/course/course-content.php:2898
+#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
-#: site/course/course-content.php:5306
+#: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "네트워크 속 리더십"
 
-#: globals.php:2217 site/pages/follow-jesus.php:329
+#: globals.php:2246 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -554,14 +556,14 @@ msgstr ""
 "배가하는 교회들이 어떻게 서로 연결되고 확장된 영적인 가족으로서 함께 생활하는"
 "지 배우십시오."
 
-#: globals.php:2227 site/course/course-content.php:2902
+#: globals.php:2256 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
-#: site/course/course-content.php:5572
+#: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "동료 멘토링 그룹"
 
-#: globals.php:2228 site/pages/follow-jesus.php:317
+#: globals.php:2257 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -571,15 +573,15 @@ msgstr ""
 "을 따르며 해당 지역의 하나님의 일의 영적 건강을 평가해볼 수 있는 훌륭한 방법"
 "입니다.\n"
 
-#: globals.php:2229 site/dashboard/dashboard.php:273
+#: globals.php:2258 site/dashboard/wizard.php:165
 msgid "Peer Mentoring"
 msgstr "동료 멘토링"
 
-#: globals.php:2238 globals.php:2240
+#: globals.php:2267 globals.php:2269
 msgid "Four Fields Tool"
 msgstr "4가지 밭 방법"
 
-#: globals.php:2239
+#: globals.php:2268
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -588,14 +590,14 @@ msgstr ""
 "4가지 밭 진단법은 현재 노력 상황과 그들 주변에서의 천국 활동을 반영하기 위해 "
 "리더십 소그룹에서 사용하는 간단한 방법입니다."
 
-#: globals.php:2249 globals.php:2251 site/course/course-content.php:2397
+#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "세대 매핑"
 
-#: globals.php:2250
+#: globals.php:2279
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -603,32 +605,34 @@ msgstr ""
 "세대 매핑은 운동 가운데 있는 지도자가 주변의 성장을 이해하는데 도움을 주는 "
 "또 다른 간단한 방법입니다."
 
-#: globals.php:2260
+#: globals.php:2289
 msgid "3-Circles Gospel Presentation"
 msgstr "세 개의 원으로 제시하는 복음"
 
-#: globals.php:2261
+#: globals.php:2290
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
-msgstr "'세 개의 원으로 제시하는 복음'이란 종이 한장 그리는 그림만으로도 복음을 쉽게 "
+msgstr ""
+"'세 개의 원으로 제시하는 복음'이란 종이 한장 그리는 그림만으로도 복음을 쉽게 "
 "전달할 수 있는 방법입니다."
 
-#: globals.php:2262
+#: globals.php:2291
 msgid "3-Circles"
 msgstr "세 개의 원"
 
-#: globals.php:6993 site/course/presenter.php:196
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:157
-#: site/pages/follow-jesus.php:339 site/parts/footer.php:72
+#: globals.php:7022 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "닫기"
 
-#: globals.php:7195
+#: globals.php:7224
+#, fuzzy
 msgid "No Results"
-msgstr ""
+msgstr "결과 없음"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
@@ -636,8 +640,9 @@ msgstr "스스로 평가하는 방식 H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "Heard(들음), Obeyed(순종함), Shared(나눔), Trained(훈련함)의 방식을 통해서 "
-"자신을 평가해보세요."
+msgstr ""
+"Heard(들음), Obeyed(순종함), Shared(나눔), Trained(훈련함)의 방식을 통해서 자"
+"신을 평가해보세요."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
@@ -721,9 +726,9 @@ msgid ""
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
-"당신은 이 훈련 도구와 개념을 다시고 다른 사람들을 가르쳐 본적이 있는가? "
-"그들이 이 훈련 도구를 통해 다른 사람들을 훈련하게끔 가르쳐본 적이 있는가? "
-"그들이 이 개념을 다른 사람에게 나누도록 가르쳐본 적이 있는가?"
+"당신은 이 훈련 도구와 개념을 다시고 다른 사람들을 가르쳐 본적이 있는가? 그들"
+"이 이 훈련 도구를 통해 다른 사람들을 훈련하게끔 가르쳐본 적이 있는가? 그들이 "
+"이 개념을 다른 사람에게 나누도록 가르쳐본 적이 있는가?"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -790,8 +795,8 @@ msgstr ""
 "모델이 된다는 것은 쉽게 말해 예시나 방법을 제공하는 것을 의미합니다. 이것은 "
 "훈련 과정에서 가장 짧은 부분입니다. 한 번이라도 훈련을 해내기만하면 됩니다. "
 "이를 통해 이런 훈련방식이나 도구가 존재한다는 것을 알리고 어떻게 진행되는지 "
-"일반적인 개념을 제시합니다. 하지만 끊임없이 모델만 되어주는 방법은 "
-"효과적이지 않습니다."
+"일반적인 개념을 제시합니다. 하지만 끊임없이 모델만 되어주는 방법은 효과적이"
+"지 않습니다."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
@@ -805,12 +810,12 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
-"보조한다는 것은 학습자들이 연습할 수 있는 기회를 준다는 것을 의미합니다. "
-"단지 모델이 되어주는 일보다 더 오래걸리는 일입니다. 이를 위해 멘토로서 손을 "
-"잡아주는 과정을 필요로 합니다. 멘토는 지시할 수 있어야 하며 보다 적극적인 "
-"역할을 맡습니다. 이 과정은 학습자가 훈련 기술을 읽히는 초기 단계에 필요한 "
-"과정입니다. 이 과정을 너무 오랫동안 지속하게 되면 학습자는 멘토에게 의지하게 "
-"되고, 스스로 설 수 없습니다."
+"보조한다는 것은 학습자들이 연습할 수 있는 기회를 준다는 것을 의미합니다. 단"
+"지 모델이 되어주는 일보다 더 오래걸리는 일입니다. 이를 위해 멘토로서 손을 잡"
+"아주는 과정을 필요로 합니다. 멘토는 지시할 수 있어야 하며 보다 적극적인 역할"
+"을 맡습니다. 이 과정은 학습자가 훈련 기술을 읽히는 초기 단계에 필요한 과정입"
+"니다. 이 과정을 너무 오랫동안 지속하게 되면 학습자는 멘토에게 의지하게 되고, "
+"스스로 설 수 없습니다."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
@@ -822,10 +827,10 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
-"관찰은 가장 오래 걸리는 과정입니다. 학습자에게 지시하는 것을 줄여나가는 "
-"시기입니다. 그래서 학습자가 이 기술을 모든 분야에서 능숙하게 활용하게 하길 "
-"기대합니다. 첫 두단계에 비해 10배 이상의 시간이 걸릴 수도 있습니다. 학습자가 "
-"능숙해져 갈수록 멘토와의 연락은 덜 정기적으로 바뀌어 갑니다."
+"관찰은 가장 오래 걸리는 과정입니다. 학습자에게 지시하는 것을 줄여나가는 시기"
+"입니다. 그래서 학습자가 이 기술을 모든 분야에서 능숙하게 활용하게 하길 기대합"
+"니다. 첫 두단계에 비해 10배 이상의 시간이 걸릴 수도 있습니다. 학습자가 능숙해"
+"져 갈수록 멘토와의 연락은 덜 정기적으로 바뀌어 갑니다."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
@@ -836,10 +841,10 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
-"떠남은 학습자가 또 다른 동료로 멘토가 되는 졸업식과도 같다. 만약 학습자가 "
-"여전히 같은 네트워크에 있다면 간헐적인 연락과 더불어 동료로서 멘토링 하는 "
-"과정 정도가 지속될 수 있다. 부모가 자녀를 자전거에 태워 떠나보내는 것, "
-"그것이 떠남의 단계이다."
+"떠남은 학습자가 또 다른 동료로 멘토가 되는 졸업식과도 같다. 만약 학습자가 여"
+"전히 같은 네트워크에 있다면 간헐적인 연락과 더불어 동료로서 멘토링 하는 과정 "
+"정도가 지속될 수 있다. 부모가 자녀를 자전거에 태워 떠나보내는 것, 그것이 떠남"
+"의 단계이다."
 
 #: site/activities/coaching-checklist-two.php:98
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
@@ -947,11 +952,13 @@ msgstr "멘티가 결정하는 것"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "멘티가 학습도구에 관해 무지하고 적극적이지 않으며 잘 못 이해하고 있다면?"
+msgstr ""
+"멘티가 학습도구에 관해 무지하고 적극적이지 않으며 잘 못 이해하고 있다면?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr "멘티가 어느 정도 익숙해졌지만 여전히 학습 도구에 대해 잘 모른다면? – 빨간색 "
+msgstr ""
+"멘티가 어느 정도 익숙해졌지만 여전히 학습 도구에 대해 잘 모른다면? – 빨간색 "
 "열을 확인하십시오"
 
 #: site/activities/coaching-checklist.php:272
@@ -980,8 +987,9 @@ msgstr "비신자"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
+#, fuzzy
 msgid "Unknown"
-msgstr ""
+msgstr "알 수 없음"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
@@ -1002,11 +1010,12 @@ msgstr "성경"
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
-msgstr "본 인터랙티브 페이지를 사용하기 위해 성경을 켜십시오. 아니면 위에 있는 "
-"링크를 활용해 프린트 가능한 버전을 활용하십시오."
+msgstr ""
+"본 인터랙티브 페이지를 사용하기 위해 성경을 켜십시오. 아니면 위에 있는 링크"
+"를 활용해 프린트 가능한 버전을 활용하십시오."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:271 site/profile/profile.php:153
+#: site/dashboard/wizard.php:287 site/profile/profile.php:153
 msgid "Save"
 msgstr "저장"
 
@@ -1064,8 +1073,9 @@ msgstr "10 분"
 msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
-msgstr "그 분의 “증인”이 되고, 그 분의 이야기를 전하라는 하나님의 명령을 듣고 어떤 "
-"생각이 들었나요?"
+msgstr ""
+"그 분의 “증인”이 되고, 그 분의 이야기를 전하라는 하나님의 명령을 듣고 어떤 생"
+"각이 들었나요?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:874
@@ -1119,8 +1129,9 @@ msgstr "복음"
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
-msgstr "하나님의 좋은 소식을 전하기 위한 좋은 방법은 '세가지 원'이라는 "
-"프리젠테이션을 활용하는 것입니다."
+msgstr ""
+"하나님의 좋은 소식을 전하기 위한 좋은 방법은 '세가지 원'이라는 프리젠테이션"
+"을 활용하는 것입니다."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1173,8 +1184,8 @@ msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
-"코칭 체크리스트를 활용해서 당신이 고른 사람들을 평가해보고, \"이들에게 "
-"각각의 도구와 개념 중에 어떤 부분이 필요할까?\" 고민해보세요."
+"코칭 체크리스트를 활용해서 당신이 고른 사람들을 평가해보고, \"이들에게 각각"
+"의 도구와 개념 중에 어떤 부분이 필요할까?\" 고민해보세요."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid "Check off the checklist."
@@ -1199,8 +1210,9 @@ msgstr "활동에 필요한 자료"
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
-msgstr "스스로를 평가하기 - 코칭 체크리스트의 문항에 답변해보며 스스로를 "
-"평가해보세요."
+msgstr ""
+"스스로를 평가하기 - 코칭 체크리스트의 문항에 답변해보며 스스로를 평가해보세"
+"요."
 
 #: site/course/course-builder.php:164
 msgid "(1 min)"
@@ -1436,6 +1448,7 @@ msgstr "그리고 우리는 다음과 같은 도구들을 습득하게 될 것�
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
+#: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
 msgstr "S.O.A.P.S. 성경 읽기"
 
@@ -1498,8 +1511,8 @@ msgid ""
 "around us."
 msgstr ""
 "하나님의 음성을 정기적으로 듣는 것은 우리와 그 분과의 일대일 관계에서 하나의 "
-"중요한 요소이며, 그 분이 우리 주변에서 행하시는 일에 우리가 순종적으로 "
-"참여할 수 있는 능력이 되기도 합니다."
+"중요한 요소이며, 그 분이 우리 주변에서 행하시는 일에 우리가 순종적으로 참여"
+"할 수 있는 능력이 되기도 합니다."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
@@ -1509,8 +1522,9 @@ msgstr "S.O.A.P.S. 성경읽기 실습"
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
-msgstr "QR코드를 스캔하여 마태복음 6장 9-13절을 참조해 SOAPS성경 읽기를 개인적으로 "
-"실천해보세요(20분)"
+msgstr ""
+"QR코드를 스캔하여 마태복음 6장 9-13절을 참조해 SOAPS성경 읽기를 개인적으로 실"
+"천해보세요(20분)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -1525,7 +1539,7 @@ msgid "Application"
 msgstr "적용"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
-#: site/pages/follow-jesus.php:191
+#: site/pages/follow-jesus.php:198
 msgid "Prayer"
 msgstr "기도"
 
@@ -1542,8 +1556,9 @@ msgstr "다시 두 세명의 그룹으로 모여 당신의 SOAPS 를 나눠보�
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
-msgstr "성경은 모든 예수님을 따르는 자들은 언젠가 우리가 한 행동과 말, 생각에 "
-"책임지게 될 것이라고 말하고 있습니다."
+msgstr ""
+"성경은 모든 예수님을 따르는 자들은 언젠가 우리가 한 행동과 말, 생각에 책임지"
+"게 될 것이라고 말하고 있습니다."
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
@@ -1570,8 +1585,9 @@ msgstr "같은 성별의 2 ~ 3 명 그룹으로 나눕니다."
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
-msgstr "다음 20 분 동안에는 \"책임 그룹\"과정의 책임 질문 – 목록 2에 대해 함께 "
-"나눠보세요."
+msgstr ""
+"다음 20 분 동안에는 \"책임 그룹\"과정의 책임 질문 – 목록 2에 대해 함께 나눠보"
+"세요."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1656,8 +1672,8 @@ msgid ""
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
-"적어도 5명의 그리스도인들에게 SOAPS 성경 읽기 방식으로 매일 성경 읽기를 "
-"도전할 수 있도록, 또 그렇게 되도록 하나님의 도우심을 구하십시오."
+"적어도 5명의 그리스도인들에게 SOAPS 성경 읽기 방식으로 매일 성경 읽기를 도전"
+"할 수 있도록, 또 그렇게 되도록 하나님의 도우심을 구하십시오."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
@@ -1674,8 +1690,9 @@ msgstr "특별히 그룹과 함께 기도할 제목을 가진 사람이 있는�
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
-msgstr "성경에 하나님은 그의 백성들이 기도할 때 듣고 행하시겠다고 약속하셨습니다. "
-"하나님께 감사합시다."
+msgstr ""
+"성경에 하나님은 그의 백성들이 기도할 때 듣고 행하시겠다고 약속하셨습니다. 하"
+"나님께 감사합시다."
 
 #: site/course/course-content.php:442
 #, fuzzy
@@ -1736,7 +1753,8 @@ msgstr "시작하기 전에 잠시 점검의 시간을 가지십시오."
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
-msgstr "지난 과정의 끝부분에서, 모든 그룹 구성원들은 두 가지 과제를 받았습니다:"
+msgstr ""
+"지난 과정의 끝부분에서, 모든 그룹 구성원들은 두 가지 과제를 받았습니다:"
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1760,7 +1778,8 @@ msgstr "이번 주에 그룹이 어떻게 수행했는지 잠시 돌아보십시
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
 msgid "In this session, we will hear and discuss this concept:"
-msgstr "본 세션에서 우리는 다음과 같은 개념에 대해 배우고 토론하게 될 것입니다:"
+msgstr ""
+"본 세션에서 우리는 다음과 같은 개념에 대해 배우고 토론하게 될 것입니다:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -1811,7 +1830,8 @@ msgstr "다른 사람을 훈련시키는 것에는 어느 정도 준비가 되�
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
-msgstr "성경은 기도가 우리를 창조하신 하나님의 음성을 듣고 또 그 분께 이야기를 할 수 "
+msgstr ""
+"성경은 기도가 우리를 창조하신 하나님의 음성을 듣고 또 그 분께 이야기를 할 수 "
 "있는 기회라고 말합니다!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
@@ -1853,14 +1873,16 @@ msgstr ""
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr "하나님은 우리가 \"가서 제자 삼을 때\" 필요한 관계들을 이미 허락하셨습니다."
+msgstr ""
+"하나님은 우리가 \"가서 제자 삼을 때\" 필요한 관계들을 이미 허락하셨습니다."
 
 #: site/course/course-content.php:614
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
-msgstr "그들은 우리의 가족, 친구, 이웃, 동료, 학급 친구들로서 - 우리가 평생 알고 "
-"지낸 사람들이거나 혹은 금방 만난 사람들입니다."
+msgstr ""
+"그들은 우리의 가족, 친구, 이웃, 동료, 학급 친구들로서 - 우리가 평생 알고 지"
+"낸 사람들이거나 혹은 금방 만난 사람들입니다."
 
 #: site/course/course-content.php:615
 msgid "Stewarding the relationships you have is the best place to start."
@@ -1879,15 +1901,16 @@ msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"다음 30분은 모든 그룹 구성원들이 줌 가이드북의 \"100인 명단\"과정에 있는 "
-"양식을 이용하여, 가능한 한 많이 관계리스트를 작성하십시오."
+"다음 30분은 모든 그룹 구성원들이 줌 가이드북의 \"100인 명단\"과정에 있는 양식"
+"을 이용하여, 가능한 한 많이 관계리스트를 작성하십시오."
 
 #: site/course/course-content.php:645
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
-msgstr "그리고 그들이 하나님과 어떤 관계에 있는지 : 제자인지, 비신자인지, 혹은 "
-"불분명한 사람인지 표시해보세요."
+msgstr ""
+"그리고 그들이 하나님과 어떤 관계에 있는지 : 제자인지, 비신자인지, 혹은 불분명"
+"한 사람인지 표시해보세요."
 
 #: site/course/course-content.php:682
 #, fuzzy
@@ -1906,9 +1929,9 @@ msgid ""
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
 msgstr ""
-"이번 주엔 100인 명단에 있는 사람 중 “불신자”나 “불분명한 사람”으로 표시한 "
-"다섯 사람을 위해 기도해보십시오. 그들이 마음을 열고 당신의 이야기에 귀 기울 "
-"수 있도록 해달라고 하나님께 기도하십시오."
+"이번 주엔 100인 명단에 있는 사람 중 “불신자”나 “불분명한 사람”으로 표시한 다"
+"섯 사람을 위해 기도해보십시오. 그들이 마음을 열고 당신의 이야기에 귀 기울 수 "
+"있도록 해달라고 하나님께 기도하십시오."
 
 #: site/course/course-content.php:687 site/course/course-content.php:3571
 msgid ""
@@ -1916,9 +1939,9 @@ msgid ""
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
-"100인 명단에 있는 사람 중 누구에게 나누기를 원하시는지 하나님께 "
-"물어보십시오. 다음 과정 전에 가서 연락을 취하려는 사람들의 이름을 그룹 "
-"구성원들과 공유하십시오."
+"100인 명단에 있는 사람 중 누구에게 나누기를 원하시는지 하나님께 물어보십시"
+"오. 다음 과정 전에 가서 연락을 취하려는 사람들의 이름을 그룹 구성원들과 공유"
+"하십시오."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
 #, fuzzy
@@ -1929,8 +1952,9 @@ msgstr "제자 배가를 통해 온 세상에 충만하기"
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr "줌은 그리스도의 제자들이 세상을 변화시키길 원하는 사람들을 위한 훈련 "
-"커뮤니티입니다."
+msgstr ""
+"줌은 그리스도의 제자들이 세상을 변화시키길 원하는 사람들을 위한 훈련 커뮤니티"
+"입니다."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
@@ -1941,7 +1965,8 @@ msgstr "세션3"
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
-msgstr "지난 시간 동안 경험하게된 하나님에 대해 감사 기도 드리고, 함께 하는 시간동안 "
+msgstr ""
+"지난 시간 동안 경험하게된 하나님에 대해 감사 기도 드리고, 함께 하는 시간동안 "
 "인도해주시도록 성령님을 초대하십시오."
 
 #: site/course/course-content.php:819
@@ -1992,8 +2017,9 @@ msgstr "돌아가며 서로에게 복음을 전해봅니다."
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
-msgstr "예수님이 말씀하시길 “가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 "
-"이름으로 세례를 주고...”"
+msgstr ""
+"예수님이 말씀하시길 “가서 모든 민족을 제자로 삼아 아버지와 아들과 성령의 이름"
+"으로 세례를 주고...”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -2025,7 +2051,7 @@ msgstr ""
 "권장합니다. 예수님께 \"네\"라고 대답하는 중요한 날에 당신의 그룹을 초대하여 "
 "함께 축하하십시오."
 
-#: site/course/course-content.php:1016
+#: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
 msgid "The Spiritual Economy"
 msgstr "영적 경제"
@@ -2087,7 +2113,8 @@ msgstr ""
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
-msgstr "모든 멤버들에게 그리스도의 마음을 주시고 성경으로 충만하게 해달라고 하나님께 "
+msgstr ""
+"모든 멤버들에게 그리스도의 마음을 주시고 성경으로 충만하게 해달라고 하나님께 "
 "기도하십시오."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
@@ -2107,9 +2134,9 @@ msgid ""
 "can share better than you."
 msgstr ""
 "예수님을 따르는 사람들인 우리는 그 분의 \"증인\"입니다. 우리가 예수님이 우리 "
-"삶에 행하신 영향을 증거하고 있기 때문입니다. 하나님과 당신의 관계는 당신의 "
-"간증이라고 합니다. 이는 강력한 것으로, 다른 어떤 사람도 당신보다 더 잘 나눌 "
-"수 없습니다."
+"삶에 행하신 영향을 증거하고 있기 때문입니다. 하나님과 당신의 관계는 당신의 간"
+"증이라고 합니다. 이는 강력한 것으로, 다른 어떤 사람도 당신보다 더 잘 나눌 수 "
+"없습니다."
 
 #: site/course/course-content.php:1189
 #, fuzzy
@@ -2123,8 +2150,9 @@ msgstr "3분 정도 되는 당신의 이야기를 한번 작성해보세요. (10
 
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
-msgstr "간증 나눔 — 2-3 명의 그룹으로 나누어, 다른 사람에게 간증을 나누는 연습을 "
-"하십시오.(20 분)"
+msgstr ""
+"간증 나눔 — 2-3 명의 그룹으로 나누어, 다른 사람에게 간증을 나누는 연습을 하십"
+"시오.(20 분)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
@@ -2295,24 +2323,25 @@ msgid ""
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
-"\"악평\"(사마리아 여인이나 거라사인의 귀신 들린 남자처럼)을 가진 사람도 "
-"실제로 평화의 사람이 될 수 있을까요? 이유는 무엇인가요? 아니라고 생각하는 "
-"이유는 무엇인가요?"
+"\"악평\"(사마리아 여인이나 거라사인의 귀신 들린 남자처럼)을 가진 사람도 실제"
+"로 평화의 사람이 될 수 있을까요? 이유는 무엇인가요? 아니라고 생각하는 이유는 "
+"무엇인가요?"
 
 #: site/course/course-content.php:1594
 msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
-msgstr "당신의 주변에서 하나님 나라 임재가 적어보이는(혹은 없어보이는) 지역 혹은 "
-"부분적 사회는 무엇인가요?"
+msgstr ""
+"당신의 주변에서 하나님 나라 임재가 적어보이는(혹은 없어보이는) 지역 혹은 부분"
+"적 사회는 무엇인가요?"
 
 #: site/course/course-content.php:1595
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
-"평화의 사람(열린 마음인, 환대하는, 다른 사람들을 알고 있는, 나누는 자)은 "
-"어떻게 그 지역에서 복음의 전파를 가속화 할 수 있을까요?"
+"평화의 사람(열린 마음인, 환대하는, 다른 사람들을 알고 있는, 나누는 자)은 어떻"
+"게 그 지역에서 복음의 전파를 가속화 할 수 있을까요?"
 
 #: site/course/course-content.php:1611
 #, fuzzy
@@ -2362,20 +2391,23 @@ msgstr "본 과정은 걷기 기도 활동으로 마무리합니다."
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
-msgstr "걷기 기도를 떠나기 전에, 당신의 그룹과 기도로 마무리하는 것을 잊지 마세요."
+msgstr ""
+"걷기 기도를 떠나기 전에, 당신의 그룹과 기도로 마무리하는 것을 잊지 마세요."
 
 #: site/course/course-content.php:1661
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
-msgstr "잃어버린 자, 남은 자, 버려진자들 - 우리를 포함하여 을 사랑하시는 하나님께 "
-"감사하십시다!"
+msgstr ""
+"잃어버린 자, 남은 자, 버려진자들 - 우리를 포함하여 을 사랑하시는 하나님께 감"
+"사하십시다!"
 
 #: site/course/course-content.php:1662
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
-msgstr "걷는 동안 하나님이 당신의 마음을 준비시키시고, 하나님의 역사에 열려 있는 "
-"사람들을 만날 수 있게 되길 기도하십시오."
+msgstr ""
+"걷는 동안 하나님이 당신의 마음을 준비시키시고, 하나님의 역사에 열려 있는 사람"
+"들을 만날 수 있게 되길 기도하십시오."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
@@ -2425,8 +2457,8 @@ msgid ""
 "important what they DO with what they know."
 msgstr ""
 "우리는 제자의 배가를 도우면서, 바른 것을 재생하고 있는지 꼭 확인해야 합니다. "
-"제자들이 아는 것도 중요하지만, 그들이 아는 것으로 무엇을 하는지가 더욱 "
-"중요합니다."
+"제자들이 아는 것도 중요하지만, 그들이 아는 것으로 무엇을 하는지가 더욱 중요합"
+"니다."
 
 #: site/course/course-content.php:1800
 #, fuzzy
@@ -2489,8 +2521,8 @@ msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"신실하게 예수님을 따르려는 그룹의 헌신에 대하여 하나님께 감사 기도를 "
-"드리십시오. 모임을 인도해주시도록 하나님의 성령을 초대하십시오."
+"신실하게 예수님을 따르려는 그룹의 헌신에 대하여 하나님께 감사 기도를 드리십시"
+"오. 모임을 인도해주시도록 하나님의 성령을 초대하십시오."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
@@ -2530,22 +2562,25 @@ msgstr "그런 사람을 훈련시키는 것은 어떤 모습일까요?"
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
-msgstr "돌아 보기 – 지난 과정의 순종, 훈련 및 나눔 과제를 사용하여 서로 점검하는 "
-"시간을 가집니다. (30분)"
+msgstr ""
+"돌아 보기 – 지난 과정의 순종, 훈련 및 나눔 과제를 사용하여 서로 점검하는 시간"
+"을 가집니다. (30분)"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
-msgstr "위를 보기 – 마가복음 5 : 1-20을 그룹 통독 구절로 사용하고, 위를 보기 과정의 "
+msgstr ""
+"위를 보기 – 마가복음 5 : 1-20을 그룹 통독 구절로 사용하고, 위를 보기 과정의 "
 "1-4번 질문에 답하십시오.(30분)"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
-msgstr "앞을 보기– 앞을 보기 과정의 질문 5,6,7을 사용하여 순종, 훈련 및 나눔의 "
-"방법을 개발하십시오.(30분)"
+msgstr ""
+"앞을 보기– 앞을 보기 과정의 질문 5,6,7을 사용하여 순종, 훈련 및 나눔의 방법"
+"을 개발하십시오.(30분)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2574,15 +2609,17 @@ msgstr "이번 세션에서 배운 도구:"
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
-msgstr "당신이 줌 과정에서 배운 개념이나 기술 하나를 정해서 다른 사람이 4세대까지 "
-"양산할 수 있도록 지도해보세요."
+msgstr ""
+"당신이 줌 과정에서 배운 개념이나 기술 하나를 정해서 다른 사람이 4세대까지 양"
+"산할 수 있도록 지도해보세요."
 
 #: site/course/course-content.php:2100
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
-msgstr "당신이 지도한 사람이 또 다른 세대(5세대)에까지 이 과정을 지속하도록 "
-"도전해보십시오."
+msgstr ""
+"당신이 지도한 사람이 또 다른 세대(5세대)에까지 이 과정을 지속하도록 도전해보"
+"십시오."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
@@ -2615,8 +2652,8 @@ msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
-"당신이 알고 있는 예수님의 제자들 중에서 이미 모임을 가지고 있거나 혹은 "
-"리더십 소그룹을 구성해 줌 훈련을 배우려고 준비하는 사람들이 있나요?"
+"당신이 알고 있는 예수님의 제자들 중에서 이미 모임을 가지고 있거나 혹은 리더"
+"십 소그룹을 구성해 줌 훈련을 배우려고 준비하는 사람들이 있나요?"
 
 #: site/course/course-content.php:2240
 msgid "What would it take to bring them together?"
@@ -2626,15 +2663,17 @@ msgstr "무엇으로 그들을 하나로 모을 수 있을까요?"
 msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
-msgstr "위를 보기– 사도행전 2 : 42-47을 그룹 통독 구절로 사용하여 질문 1-4에 "
-"답하십시오. (30분)"
+msgstr ""
+"위를 보기– 사도행전 2 : 42-47을 그룹 통독 구절로 사용하여 질문 1-4에 답하십시"
+"오. (30분)"
 
 #: site/course/course-content.php:2258
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
-msgstr "앞을 보기 – 5, 6, 7 번 문제를 사용하여 순종, 훈련 및 나눔의 방법을 "
-"개발하십시오. (30분)"
+msgstr ""
+"앞을 보기 – 5, 6, 7 번 문제를 사용하여 순종, 훈련 및 나눔의 방법을 개발하십시"
+"오. (30분)"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
@@ -2650,8 +2689,8 @@ msgid ""
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
-"당신의 100인 리스트에서 이미 신앙을 가진 사람 몇을 뽑아 그들에게 리더십 "
-"소그룹을 설명하고 거기에 참여하기 원하는지 의사를 물어보세요."
+"당신의 100인 리스트에서 이미 신앙을 가진 사람 몇을 뽑아 그들에게 리더십 소그"
+"룹을 설명하고 거기에 참여하기 원하는지 의사를 물어보세요."
 
 #: site/course/course-content.php:2299
 #, fuzzy
@@ -2699,8 +2738,9 @@ msgid ""
 "When people think about disciples multiplying, they often think of it as a "
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
-msgstr "사람들은 종종 제자 배가를 단계적인 과정으로 생각합니다. 그것의 문제점은, "
-"그것이 최선의 작동 방식이 아니라는 것입니다!"
+msgstr ""
+"사람들은 종종 제자 배가를 단계적인 과정으로 생각합니다. 그것의 문제점은, 그것"
+"이 최선의 작동 방식이 아니라는 것입니다!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -2716,9 +2756,9 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
-"배가가 중요하나 신속한 배가는 더욱 중요합니다. 속도가 중요한 것은 한없이 "
-"짧은 '인생'을 사는 동안 우리의 영원 -시간의 영역을 뛰어 넘는- 이 결정되기 "
-"때문입니다."
+"배가가 중요하나 신속한 배가는 더욱 중요합니다. 속도가 중요한 것은 한없이 짧"
+"은 '인생'을 사는 동안 우리의 영원 -시간의 영역을 뛰어 넘는- 이 결정되기 때문"
+"입니다."
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
@@ -2744,8 +2784,8 @@ msgid ""
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
-"예수님은 우리가 밀접하게 거하길 - 적은 규모의 영적인 가족을 형성해서 함께 "
-"살고 사랑하고 어려움을 이겨내거나 서로 격려하기를 - 원하셨습니다."
+"예수님은 우리가 밀접하게 거하길 - 적은 규모의 영적인 가족을 형성해서 함께 살"
+"고 사랑하고 어려움을 이겨내거나 서로 격려하기를 - 원하셨습니다."
 
 #: site/course/course-content.php:2507
 msgid ""
@@ -2753,8 +2793,8 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
-"동시에 예수님은 우리의 집과 사랑하는 이들을 떠나 당신이 가라고 하시는 곳 - "
-"어디든 - 으로 가서 새로운 영적인 가족을 시작하기를 원하셨습니다."
+"동시에 예수님은 우리의 집과 사랑하는 이들을 떠나 당신이 가라고 하시는 곳 - 어"
+"디든 - 으로 가서 새로운 영적인 가족을 시작하기를 원하셨습니다."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -2762,21 +2802,23 @@ msgid ""
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
 msgstr ""
-"새로운 생명을 낳아 지속적으로 성장 및 배가되는 '영적 가정의 형태'가 어느 "
-"정도 성장하면 분리되는 '일반적인 가정의 형태'에 비해 좋은 점은 무엇일까요?"
+"새로운 생명을 낳아 지속적으로 성장 및 배가되는 '영적 가정의 형태'가 어느 정"
+"도 성장하면 분리되는 '일반적인 가정의 형태'에 비해 좋은 점은 무엇일까요?"
 
 #: site/course/course-content.php:2549
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
-msgstr "당신이 다른 이들을 여러 영역에서 온전한 그리스도의 제자가 되게 할 때 본 "
-"체크리스트가 도움을 줄 것입니다."
+msgstr ""
+"당신이 다른 이들을 여러 영역에서 온전한 그리스도의 제자가 되게 할 때 본 체크"
+"리스트가 도움을 줄 것입니다."
 
 #: site/course/course-content.php:2576
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
-msgstr "첫번 째 줄을 촬용하여 스스로를 평가하고 코칭 체크리스트에 답변해보세요."
+msgstr ""
+"첫번 째 줄을 촬용하여 스스로를 평가하고 코칭 체크리스트에 답변해보세요."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
@@ -2807,108 +2849,127 @@ msgstr ""
 #: site/course/course-content.php:2611
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
-msgstr ""
+msgstr "만일 코치나 멘토가 없다면 QR코드를 스캔하여 멘토나 코치를 구해보세요."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:201 site/pages/about.php:254
+#: site/dashboard/wizard.php:217 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
 #: utilities/integrations/replace-placeholder.php:85
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 msgid "Get a Coach"
-msgstr "코치 받기"
+msgstr "코치 구하기"
 
 #: site/course/course-content.php:2626
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"네가지 밭 진단법과 세대 맵핑은 성장을 위한 노력을 지원하기 위한 도구들입니다."
 
 #: site/course/course-content.php:2627
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"기억하세요 - 줌 코치들은 이런 도구들을 당신의 지역에서 적용하도록 도와줄 것입"
+"니다."
 
 #: site/course/course-content.php:2642
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"예수님은 자주 제자들을 사역의 자리에서 고요한 곳으로 밀어내셨습니다. 제자들"
+"은 그곳에서 어떻게 사역이 진행되는지 돌아보았습니다."
 
 #: site/course/course-content.php:2643
-#, fuzzy
 msgid ""
 "Four Fields is used by a leadership cell to reflect on current efforts and "
 "Kingdom activity around them. It especially helps leaders balance efforts, "
 "so that no field is overlooked."
 msgstr ""
-"4가지 밭 진단법은 현재 노력 상황과 그들 주변에서의 천국 활동을 반영하기 위해 "
-"리더십 소그룹에서 사용하는 간단한 방법입니다."
+"네가지 밭 진단법은 지금 하고 있는 노력들과 하나님 나라의 역사가 리더십 소그룹"
+"에서 실제로 반영되도록 하기 위해 사용하는 간단한 방법입니다. 특히 리더들이 균"
+"형잡힌 노력을 통해 어떤 분야도 간과하지 않게 돕습니다."
 
 #: site/course/course-content.php:2644
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
 msgstr ""
+"다음 두 슬라이드를 확인해보세요 : 각각의 밭에 대한 설명과 네가지 밭 진단법 예"
+"시"
 
 #: site/course/course-content.php:2655
 msgid "Field Descriptions"
-msgstr ""
+msgstr "각각의 밭 설명"
 
 #: site/course/course-content.php:2657
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"빈 밭 : 하나님나라를 어디 혹은 누구에게(어떤 그룹에게) 에 확장해 가기 원하시"
+"나요?"
 
 #: site/course/course-content.php:2658
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"뿌리는 밭 : 어디에 혹은 누구에게 하나님의 좋은 소식을 나누고 있나요? 어떻게 "
+"나누고 있나요?"
 
 #: site/course/course-content.php:2659
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"성장하는 밭 : 그들이 영적으로, 개인적으로, 그리고 일반적인 관계 안에서 성장해"
+"가는 것을 어떻게 돕고 있습니까?"
 
 #: site/course/course-content.php:2660
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
 msgstr ""
+"추수하는 밭 : 어떻게 새로운 영적 가족(간단한 형태의 교회)이 생겨나고 있습니"
+"까?"
 
 #: site/course/course-content.php:2661
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"배가하는 밭 : 누구와, 어떻게 언제 신실한 사람들을 구분해내고 그들이 재생산의 "
+"책임을 가지도록 돕고 있습니까?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
-#, fuzzy
 msgid "Four Fields Example"
-msgstr "4가지 밭 방법"
+msgstr "4가지 영역 진단법 예시"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
 msgid "Discuss"
-msgstr ""
+msgstr "토론하기"
 
 #: site/course/course-content.php:2699
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"당신 주변의 밭을 확인해보세요. 복음과 관련 없는 사람들이나 커뮤니티가 있나요?"
 
 #: site/course/course-content.php:2700
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"네 가지 밭들 중 한 가지가 무시될 때 장기적인 성장에 미치는 영향은 무엇일까"
+"요? 예를 들어서 설명해보세요."
 
 #: site/course/course-content.php:2701
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "각각의 밭에서 어떤 줌의 도구들이 도움을 줄 수 있을까요?"
 
 #: site/course/course-content.php:2716
 #, fuzzy
@@ -2926,36 +2987,38 @@ msgid ""
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"종이에 세대를 나무로 표현해 지도로 그려볼 수 있습니다. 이러한 지도는 배가와 "
+"훈련이 필요한 곳이 어디인지를 확인하는 데 도움을 줍니다. 건강함은 운동을 이끌"
+"어 가는 리더들에게 가장 중요한 것이며 풍성함이야말로 건강을 측정할 수 있는 가"
+"장 좋은 방법입니다."
 
 #: site/course/course-content.php:2718
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "다음 슬라이드에서 예시를 확인해보세요."
 
 #: site/course/course-content.php:2729
-#, fuzzy
 msgid "Generational Mapping Example"
-msgstr "세대 매핑"
+msgstr "세대 매핑의 예시"
 
 #: site/course/course-content.php:2748
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "세대 매핑의 예시를 활용하여 다음을 토의해보세요:"
 
 #: site/course/course-content.php:2750
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "어떤 리더들이 배가를 경험하고 있나요?"
 
 #: site/course/course-content.php:2751
-#, fuzzy
 msgid "Which groups would you expect to multiply next?"
-msgstr "어느 것이 더 쉽게 배가할까요? 이유는 무엇인가요?"
+msgstr "어떤 그룹이 장차 더 쉽게 배가할 것 같은가요?"
 
 #: site/course/course-content.php:2752
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "어떤 리더들이 다른 리더들을 돕고 이끌 수 있을까요?"
 
 #: site/course/course-content.php:2753
 msgid "Do you see a pattern of weak accountability in any of the generations?"
-msgstr ""
+msgstr "약한 책임감을 가진 세대의 패턴을 확인해볼 수 있나요?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
 msgid ""
@@ -2963,6 +3026,9 @@ msgid ""
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"\"속도\"라는 개념에 관해 친구와 나누는 것을 연습해보세요. 그리고 그 개념이 마"
+"음과 생각에 깊이 뿌리내리길 하나님께 기도해보세요. 하나님께 그 마음을 나눠달"
+"라고 기도해보세요."
 
 #: site/course/course-content.php:2793
 msgid ""
@@ -2970,32 +3036,41 @@ msgid ""
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"이미 당신의 교회를 시작했다면 교회를 시작한 사람들과 \"우린 언제나 두 교회에 "
+"속해 있다\"는 개념을 공유해보세요, 만약 아직 교회를 시작하지 않았다면 다른 그"
+"리스도인들과 나눠보세요."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
 msgid "SESSION 10"
-msgstr ""
+msgstr "세션 10"
 
 #: site/course/course-content.php:2852
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"하나님이 우리 안에 선한 일을 시작하고 이루시도록 기도하고 하나님이 이미 그렇"
+"게 하셨음을 감사기도합시다. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"하나님이 당신의 그룹원들 모두의 마음을 여셔서 하나님이 당신을 통해 하실 위대"
+"한 일을 함께 경험할 수 있게 되길 기도해보세요."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"성령께서 당신의 시간을 함께 인도하시도록 기도해보세요. 당신을 통해 여전히 일"
+"하심에 감사해보세요!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "명심하세요."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -3013,6 +3088,9 @@ msgid ""
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"줌 훈련은 시작일 뿐입니다! 이번 세션에서 우리는 훈련 이후에 관해 계획을 세워"
+"볼 것입니다. 그리고 장차 당신이 배운 것을 더 향상시키는 데에 활용할 수 있는 "
+"도구들을 간단히 소개하고자 합니다."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -3021,8 +3099,8 @@ msgid ""
 "spiritual family? They become a network!"
 msgstr ""
 "교회가 성장하면서 새 교회를 개척하는 새 교회를 개척하면 어떨까요? 그들은 확장"
-"된 영적 가정으로서 어떻게 서로 연결되어 함께 생활하는가요? 그들은 네트워크를 "
-"만듭니다. "
+"된 영적 가정으로서 어떻게 서로 연결되어 함께 생활할 수 있을까요? 바로 네트워"
+"크입니다!"
 
 #: site/course/course-content.php:2946
 msgid ""
@@ -3036,26 +3114,26 @@ msgstr ""
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"제자를 만드는 제자를 만드는 것은 리더를 세울 수 있는 리더를 만드는 것을 의미"
+"합니다."
 
 #: site/course/course-content.php:2965
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"동료 멘토링 그룹은 리더들이 한데 모여 그들의 신앙과 리더십을 서로 격려하는 것"
+"입니다."
 
 #: site/course/course-content.php:2989
-#, fuzzy
 msgid "Peer Mentoring Group Practice"
-msgstr "동료 멘토링 그룹"
+msgstr "동료 멘토링 그룹 실습"
 
 #: site/course/course-content.php:2992
-#, fuzzy
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
-msgstr ""
-"동료 멘토링 그룹 — 2-3명의 그룹으로 나누어 동료 멘토링 그룹 양식에 따라 진행"
-"하십시오. (60 분)"
+msgstr "2-3명의 그룹으로 나누어 동료 멘토링 그룹 양식에 따라 진행하십시오."
 
 #: site/course/course-content.php:2993
 #, fuzzy
@@ -3064,17 +3142,21 @@ msgid ""
 "members work through the suggested questions list as peer mentors."
 msgstr ""
 "그룹에서 한 명을 찾아 \"멘티\"로 하고 다른 구성원들은 제시된 질문 목록들을 해"
-"결하고 멘티의 일을 지도 및 격려해주는 멘토 역할을 합니다.  "
+"결하고 멘티의 일을 지도 및 격려해주는 멘토 역할을 합니다."
 
 #: site/course/course-content.php:3014
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"하나님은, \"나 여호와가 말하노라 너희를 향한 나의 생각은 내가 아나니 재앙이 "
+"아니라 곧 평안이요 너희 장래에 소망을 주려하는 생각이라\" 라고 말씀하셨습니"
+"다."
 
 #: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr ""
+"하나님은 계획을 세우시며, 우리도 하나님과 같이 계획을 세우시길 원하십니다."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
 #, fuzzy
@@ -3092,17 +3174,20 @@ msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"다음 슬라이드는 3개월 계획을 어떻게 만드는지 보여줄 것입니다. 온라인 도구를 "
+"활요하시길 추천합니다."
 
 #: site/course/course-content.php:3030
-#, fuzzy
 msgid "Make your Three Month Plan"
-msgstr "3 개월 계획"
+msgstr "3 개월 계획 만들기"
 
 #: site/course/course-content.php:3032
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"읽어보세요 - QR코드를 스캔하세요. 당신의 계획을 세우는 데 도움을 주기 위한 것"
+"이기 때문에 모든 항목을 다 할 필요는 없습니다. (5분)"
 
 #: site/course/course-content.php:3033
 #, fuzzy
@@ -3118,20 +3203,22 @@ msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"당신의 계획을 기록해보세요 - 종이를 활용해 당신의 약속을 적어보거나 온라인 도"
+"구를 이용해 당신의 답변을 저장해보세요. (15분)"
 
 #: site/course/course-content.php:3040
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "온라인 계획 도구"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "서로 돌아가며 각자의 3개월 계획을 나눠보세요."
 
 #: site/course/course-content.php:3054
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
-msgstr ""
+msgstr "매주 서로 체크하며 훈련을 함께할 파트너를 찾아 보세요."
 
 #: site/course/course-content.php:3195
 msgid ""
@@ -3139,12 +3226,16 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"친구과 다음의 정의를 나누는 것을 훈련해보고 그 내용이 마음과 생각에 깊게 뿌리"
+"도록 기도해보세요. 하나님이 나를 사용하시길 기도해보세요."
 
 #: site/course/course-content.php:3196
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"하나님께서 마음에 감동을 주시는 사람에게 다음의 정의를 함께 나눠보세요. 그리"
+"고 그들이 다른 사람에게 다시 나누도록 도와보세요."
 
 #: site/course/course-content.php:3258
 #, fuzzy
@@ -3157,25 +3248,30 @@ msgstr ""
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "본 세션에서는 이런 도구들을 배울 것입니다:"
 
 #: site/course/course-content.php:3379
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"우리 인생 가운데 거하시는 하나님께 기도하고 감사하세요. 이 그룹에 있는 각자 "
+"각자가 하나님의 음성을 듣고 하나님의 말씀에 순종하도록 기도해보세요."
 
 #: site/course/course-content.php:3440
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"(같은 성별의) 믿을 만한 파트너를 찾아서 한주 단위로 만나기를 시작해보세요."
 
 #: site/course/course-content.php:3441
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"내가 아는 그리스도인들 5명에게 그들도 각자의 그룹을 시작하도록 도전할 수 있"
+"는 믿음을 달라고 기도해보세요."
 
 #: site/course/course-content.php:3501
 #, fuzzy
@@ -3188,13 +3284,15 @@ msgstr ""
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "이 세션에서, 우리는 이러한 개념에 관해 배우고 토론하게 될 것입니다:"
 
 #: site/course/course-content.php:3631
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"모든 인생들을 사랑하시는 하나님께 감사하세요. 모든 그룹원들이 하나님이 우리"
+"를 바라보시는 것처럼 서로를 바라볼 수 있게 해달라고 기도해보세요."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 #, fuzzy
@@ -3206,23 +3304,29 @@ msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"만약 시간 조율이 가능하다면 한 시간을 들여서 기도하되 각 부분을 5분씩 채워 기"
+"도해보세요. 한 시간 이상 기도하게 할 것입니다."
 
 #: site/course/course-content.php:3677
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"만약 그렇게 긴 시간을 활용하기가 어렵다면 각 세션의 기도를 5분에서 3분으로 줄"
+"여보세요."
 
 #: site/course/course-content.php:3712
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
-msgstr ""
+msgstr "기도 사이클을 활용해서 이번주에 한 시간 기도하는 일에 활용해보세요."
 
 #: site/course/course-content.php:3713
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"기도 사이클을 하나님이 인도하시는 사람에게 나눠보시고 그들도 또 다른 이들에"
+"게 나누도록 도전해보세요."
 
 #: site/course/course-content.php:3839
 msgid ""
@@ -3230,6 +3334,9 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"영적 경제의 개념을 친구들과 나누길 연습해보시고 하나님께 이런 개념이 마음과 "
+"생각에 깊게 뿌리내리도록 도와달라고 기도해보세요. 하나님이 나를 사용하시길 기"
+"도해보세요."
 
 #: site/course/course-content.php:3840
 #, fuzzy
@@ -3240,7 +3347,7 @@ msgid ""
 msgstr ""
 "100인 명단에 있는 사람 중 누구에게 나누기를 원하시는 지 하나님께 물어보십시"
 "오. 다음 과정 전에 가서 연락을 취하려는 사람들의 이름을 그룹 구성원들과 공유"
-"하십시오. "
+"하십시오."
 
 #: site/course/course-content.php:3901
 msgid ""
@@ -3248,16 +3355,18 @@ msgid ""
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"각 멤버들 예수님을 따르는 복을 경험하기를 위해 기도해보세요. 그들이 다른 사람"
+"을 예수님을 따르도록, 그리고 또 다른 영적 가정을 시작하는 일을 돕도록 기도해"
+"보세요."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
 msgid "In this session, we will practice this tool in our toolkit:"
-msgstr ""
+msgstr "이번 세션에서 우리는 이런 도구를 배우게 될 것입니다:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
-#, fuzzy
 msgid "Sharing the Gospel"
-msgstr "연습-복음 전하기"
+msgstr "복음 전하기"
 
 #: site/course/course-content.php:3944
 #, fuzzy
@@ -3265,33 +3374,33 @@ msgid "Practice Sharing the Gospel"
 msgstr "연습-복음 전하기"
 
 #: site/course/course-content.php:3947
-#, fuzzy
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
-msgstr "같은 성별의 2 ~ 3 명 그룹으로 나눕니다."
+msgstr ""
+"같은 성별의 2 ~ 3 명 그룹으로 나누어 하나님의 이야기를 서로 나누기를 연습해봅"
+"니다."
 
 #: site/course/course-content.php:3948
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"연습이 끝나면 바꿔서 다시 해봅니다. 반복은 자신감을 가져다 줍니다. 이것이 끝"
+"나면 당신은 하나님의 이야기를 나눌 준비가 되어 있을 것입니다."
 
 #: site/course/course-content.php:4046
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others. "
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"그분의 길이 우리의 길이 아니고, 그분의 생각이 우리의 생각이 아닌 것에 대해 감"
-"사드리며 기도하십시오. 그룹의 각 구성원들에게 그리스도의 마음을 주셔서 그들"
-"이 항상 그분의 아버지의 일에 집중할 수 있도록 간구하십시오. 성령님을 초청하"
-"여 그룹을 인도하게 하시어 최고의 과정이 되도록 하십시오."
+"하나님이 당신의 복음 전하는 일에 우리를 초대하시는 것에 대해 감사하십시오. 그"
+"룹원들 각자가 그리스도의 마음을 가지고 성령으로 충만하도록 기도하십시오."
 
 #: site/course/course-content.php:4074
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "이번 세션에서 우리는 이런 도구를 배우게 될 것입니다:"
 
 #: site/course/course-content.php:4109
 msgid ""
@@ -3299,6 +3408,8 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"예수님을 따르지만 세례를 받지 않은 이를 알고 있다면 세례를 받으면 어떻겠냐고 "
+"도전해보세요. 그런 사람이 없다면 친구와 연습해보세요."
 
 #: site/course/course-content.php:4110
 #, fuzzy
@@ -3309,7 +3420,7 @@ msgid ""
 msgstr ""
 "100인 명단에 있는 사람 중 누구에게 나누기를 원하시는 지 하나님께 물어보십시"
 "오. 다음 과정 전에 가서 연락을 취하려는 사람들의 이름을 그룹 구성원들과 공유"
-"하십시오. "
+"하십시오."
 
 #: site/course/course-content.php:4170
 #, fuzzy
@@ -3340,6 +3451,8 @@ msgid ""
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"100인의 명단 중 5명을 골라보세요. 그리고 그 5명 역할을 대신해줄 사람을 찾아"
+"서 그 사람에게 맞는 방식으로 당신의 간증을 다듬고 연습해보세요."
 
 #: site/course/course-content.php:4217
 msgid ""
@@ -3347,14 +3460,17 @@ msgid ""
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"연습하고 또 바꿔서 진행해보세요. 이번엔 당신이 다른 사람들의 목록에 있는 다섯"
+"명이 되어보는 겁니다. 이런 연습들을 마치고 나면 3분 혹은 그 이하로 당신의 간"
+"증을 전할 수 있게 될 것입니다."
 
 #: site/course/course-content.php:4219
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "반복은 곧 자신감입니다."
 
 #: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "이 세션에서 훈련하게 된 도구:"
 
 #: site/course/course-content.php:4250
 #, fuzzy
@@ -3364,7 +3480,7 @@ msgid ""
 "\"Unknown.\""
 msgstr ""
 "이번 주엔 당신의 3 분 간증을 훈련하고, 100인 명단에서 \"불신자\" 혹은 \"불분"
-"명한 자\"로 표시한 사람들 중 한 명 이상에게 나누십시오. "
+"명한 자\"로 표시한 사람들 중 한 명 이상에게 나누십시오."
 
 #: site/course/course-content.php:4323
 #, fuzzy
@@ -3380,6 +3496,8 @@ msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"만약 당신의 가족이 그리스도인이며 근처에 산다면, 주의 만찬을 한번 진행해보세"
+"요. 가족이 멀이 있다면 근처의 그리스도인인 친구들과 진행해보세요."
 
 #: site/course/course-content.php:4395
 msgid ""
@@ -3387,10 +3505,12 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"\"오리 새끼 제자도\"와 \"하나님 나라가 필요한 곳을 찾는 눈\"에 관해 주님이 감"
+"동을 주시는 이들에게 나누고, 그들도 다른 이들에게 나누도록 도와보세요."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
 msgid "SESSION 11"
-msgstr ""
+msgstr "세션 11"
 
 #: site/course/course-content.php:4455
 msgid ""
@@ -3398,61 +3518,65 @@ msgid ""
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"하나님이 당신과 당신 주변의 인생들에게 하신 일들에 대해 감사하고, 이 그룹이 "
+"하나님 나라가 필요한 곳을 찾아내는 눈을 가지도록 기도해보세요."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
 msgid "SESSION 12"
-msgstr ""
+msgstr "세션 12"
 
 #: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
 msgstr ""
+"한 사람을 정해 그 사람이 있는 곳에서 'BLESS'패턴을 활용해 기도해보세요."
 
 #: site/course/course-content.php:4639
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"그들이 또 다른 이들을 위해 직접 가서 'BLESS'패턴을 이용해 기도하도록 도와보세"
+"요."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
-msgstr ""
+msgstr "세션 13"
 
 #: site/course/course-content.php:4700
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"지난 세션에서 배운 것들에 대해 하나님께 감사하세요. 당신이 배운 것들을 성령"
+"의 인도 가운데 잘 실천할 수 있도록 기도해보세요."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
 msgid "SESSION 14"
-msgstr ""
+msgstr "세션 14"
 
 #: site/course/course-content.php:4902
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
 "돌아 보기 – 지난 과정의 순종, 훈련 및 나눔 과제를 사용하여 서로 점검하는 시간"
-"을 가집니다."
+"을 가집니다.(15분)"
 
 #: site/course/course-content.php:4903
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
 msgstr ""
 "위를 보기 – 마가복음 5 : 1-20을 그룹 통독 구절로 사용하고, 위를 보기 과정의 "
-"1-4번 질문에 답하십시오."
+"1-4번 질문에 답하십시오. (15분)"
 
 #: site/course/course-content.php:4904
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
 "앞을 보기– 앞을 보기 과정의 질문 5,6,7을 사용하여 순종, 훈련 및 나눔의 방법"
-"을 개발하십시오."
+"을 개발하십시오.(15분)"
 
 #: site/course/course-content.php:4940
 msgid ""
@@ -3460,6 +3584,9 @@ msgid ""
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"3/3그룹을 시작하는 것에 관해 하나님께 기도하십시오. 만약 하나님의 뜻이라면 "
+"100인의 명단 중에서 초대할 만한 사람들을 살펴보십시오. 그리고 이번주에 초대하"
+"고 하나님이 그들을 통해 그룹을 만드실 것을 신뢰하십시오."
 
 #: site/course/course-content.php:4941
 #, fuzzy
@@ -3472,7 +3599,7 @@ msgstr ""
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
 msgid "SESSION 15"
-msgstr ""
+msgstr "세션 15"
 
 #: site/course/course-content.php:5002
 #, fuzzy
@@ -3489,11 +3616,11 @@ msgstr ""
 
 #: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
-msgstr ""
+msgstr "\"훈련 사이클\"을 100인의 명단 중 그리스도인들에게 나눠보십시오."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
 msgid "SESSION 16"
-msgstr ""
+msgstr "세션 16"
 
 #: site/course/course-content.php:5193
 msgid ""
@@ -3501,10 +3628,12 @@ msgid ""
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"만약 이미 교회를 시작했다면 \"언제나 우리는 두 교회에 소속되어 있음\"을 나누"
+"십시오. 교회를 시작하지 않았다면 다른 그리스도인과 나누십시오."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
 msgid "SESSION 17"
-msgstr ""
+msgstr "세션 17"
 
 #: site/course/course-content.php:5256
 msgid ""
@@ -3512,6 +3641,9 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"하나님이 말씀과 기도와 교회와 핍박, 그리고 고난을 통해 지속적으로 말씀하시는 "
+"것에 대해 감사기도를 합시다. 그룹원 각자 각자가 하나님의 음성을 듣고 그 말씀"
+"에 순종하는 은혜가 있길 기도합시다."
 
 #: site/course/course-content.php:5325
 msgid ""
@@ -3519,38 +3651,48 @@ msgid ""
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"모델이 되기, 돕기, 관찰하기, 떠나기 중에서 당신이 코칭 체크리스트로 체크하고 "
+"있는 제자들과 시작하게 될 다음 단계를 선정해보세요."
 
 #: site/course/course-content.php:5326
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"\"리더십 네트워크\"라는 개념을 다른 이들과 나눠보고 그들이 또 다른 이들과 나"
+"눌 수 있게 독려해보세요."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
 msgid "SESSION 18"
-msgstr ""
+msgstr "세션 18"
 
 #: site/course/course-content.php:5434
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"잠시 시간을 내서 앞서 네가지 밭에 관해 논의한 것을 토대로 당신 혼자 혹은 그룹"
+"과 함께 취해야 할 다음 과정에 대해 하나님께 질문해보세요."
 
 #: site/course/course-content.php:5465
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"각각 줌 트레이닝의 영역을 살펴보고 네가지 밭 중 어떤 영역이 가장 관련 있는지 "
+"확인해보고 차트에 표시해보세요."
 
 #: site/course/course-content.php:5466
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"비전을 제시하는 방법을 연습하기 위해 당신이 알고 있는 다른 신앙인들에게 세대 "
+"매핑 도구를 나눠보세요."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
-msgstr ""
+msgstr "세션 19"
 
 #: site/course/course-content.php:5526
 msgid ""
@@ -3558,6 +3700,8 @@ msgid ""
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"주의 몸된 지체들을 두고 감사 기도합시다. 주님께 가까이 가며 성숙한 사랑과 격"
+"려가 각 멤버들 사이에 끊임 없이 일어나길 기도합시다."
 
 #: site/course/course-content.php:5587
 msgid ""
@@ -3565,80 +3709,86 @@ msgid ""
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"동료 멘토 그룹으로 계속 훈련 하길 원하는 멤버들이 있는지 줌트레이닝을 함께 하"
+"는 그룹과 토의해봅시다."
 
 #: site/course/course-content.php:5588
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"당신의 100인 리스트 중 두명의 신앙인과 \"동료 멘토 그룹\"이라는 개념을 나눠보"
+"십시다."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
 msgid "SESSION 20"
-msgstr ""
+msgstr "세션 20"
 
 #: site/course/course-content.php:5650
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"하나님이 당신의 선한일을 우리 안에서 이루시는 신실하신 분이심을 감사하십시다."
 
 #: site/course/course-content.php:5679
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"줌트레이닝은 시작일 뿐입니다. 이번 세션에서는 훈련 다음 과정에 어떤 계획이 있"
+"는지 알아보게 될 것입니다."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "인텐시브 세션1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "인텐시브 세션2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "인텐시브 세션3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "인텐시브 세션4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "인텐시브 세션 5"
 
 #: site/course/course-content.php:5976
 msgid "NEXT STEP"
-msgstr ""
+msgstr "다음 단계"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/dashboard/wizard.php:159
-#: site/parts/nav.php:94
-#, fuzzy
+#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
 msgid "Join the Community"
-msgstr "지역 사회"
+msgstr "지역 사회에 참여하기"
 
 #: site/course/course-content.php:5980
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"훈련단계의 줌은 끝났습니다. 그러나 도구와 개념을 연습하는 일은 계속될 것입니"
+"다."
 
 #: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
+msgstr "혼자서 하지 마시고, 성장과 격려를 위한 공동체를 찾으세요."
 
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "QR코드를 통해 줌 공동체에 참여하세요."
 
 #: site/course/course-content.php:5996
-#, fuzzy
 msgid "CONGRATULATIONS on completing Zume Training!"
-msgstr "훈련 수료"
+msgstr "줌 훈련 코스를 마치신 것을 축하합니다!"
 
 #: site/course/course-content.php:6008
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "쉬어가기"
 
 #: site/course/presenter.php:131
 #, fuzzy
@@ -3647,11 +3797,11 @@ msgstr "줌 과정 v4"
 
 #: site/course/presenter.php:148
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "오프라인 유인물을 다운받으세요"
 
 #: site/course/presenter.php:166
 msgid "Links"
-msgstr ""
+msgstr "링크"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3660,7 +3810,7 @@ msgstr "홈"
 #: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:13
 #: site/parts/footer.php:10 site/parts/nav.php:23 site/parts/nav.php:75
 msgid "About"
-msgstr "대략"
+msgstr "줌에 관하여"
 
 #: site/course/presenter.php:173
 #, fuzzy
@@ -3673,32 +3823,46 @@ msgid "Resources"
 msgstr "자원"
 
 #: site/course/presenter.php:191
-#, fuzzy
 msgid "Exit Course"
-msgstr "과정"
+msgstr "과정 끝내기"
 
 #: site/course/presenter.php:192
-msgid "Switch Views"
-msgstr ""
+#, fuzzy
+msgid "Slide View"
+msgstr "격자 형태로 보기"
 
-#: site/course/presenter.php:193
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+msgid "List View"
+msgstr "리스트로 보기"
+
+#: site/course/presenter.php:194
 #, fuzzy
 msgid "Next slide"
 msgstr "다음 과정"
 
-#: site/course/presenter.php:194
+#: site/course/presenter.php:195
 #, fuzzy
 msgid "Previous slide"
 msgstr "이전"
 
-#: site/course/presenter.php:195
-#, fuzzy
+#: site/course/presenter.php:196
 msgid "Session"
-msgstr "1과정"
+msgstr "세션"
+
+#: site/course/presenter.php:198
+#, fuzzy
+msgid "View Transcript"
+msgstr "성적표 보기"
+
+#: site/course/presenter.php:199
+#, fuzzy
+msgid "View Activity"
+msgstr "활동 보기"
 
 #: site/dashboard/checkin-dashboard.php:151
+#, fuzzy
 msgid "Woops"
-msgstr ""
+msgstr "웁스"
 
 #: site/dashboard/checkin-dashboard.php:153
 #, fuzzy
@@ -3706,39 +3870,37 @@ msgid "Something went wrong with your checkin process."
 msgstr "죄송합니다. 오류가 있습니다. 다시 시도하십시오."
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:266
-#: utilities/apis/cta-api.php:295 utilities/apis/cta-api.php:309
-#: utilities/apis/cta-api.php:338
+#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
+#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
+#: utilities/apis/cta-api.php:341
 msgid "Congratulations!"
-msgstr ""
+msgstr "축하합니다!"
 
 #: site/dashboard/checkin-dashboard.php:163
-#, fuzzy
 msgid "Checked into session:"
-msgstr "과정에 오신 것을 환영합니다"
+msgstr "과정에 오신 것을 환영합니다:"
 
 #: site/dashboard/checkin-dashboard.php:164
-#, php-format
+#, fuzzy, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "%2$d의 %1$d"
 
 #: site/dashboard/checkin-dashboard.php:167
-#, fuzzy
 msgid "Course Progress:"
-msgstr "줌 진행사항"
+msgstr "줌 진행사항:"
 
 #: site/dashboard/checkin-dashboard.php:168
-#, php-format
+#, fuzzy, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:269
+#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
 msgid "Done"
-msgstr ""
+msgstr "완료"
 
 #: site/dashboard/dashboard.php:156
 msgid "Edit"
-msgstr ""
+msgstr "수정"
 
 #: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3755,18 +3917,16 @@ msgid "Completed"
 msgstr "과정 수료"
 
 #: site/dashboard/dashboard.php:161
-#, fuzzy
 msgid "Uncompleted"
-msgstr "과정 수료"
+msgstr "과정 미완료"
 
 #: site/dashboard/dashboard.php:162
-#, fuzzy
 msgid "Not Heard"
-msgstr "들음"
+msgstr "듣지 못함"
 
 #: site/dashboard/dashboard.php:163 site/pages/share.php:121
 msgid "All"
-msgstr ""
+msgstr "모두"
 
 #: site/dashboard/dashboard.php:164 site/profile/profile.php:159
 msgid "Logout"
@@ -3774,20 +3934,15 @@ msgstr "로그 아웃"
 
 #: site/dashboard/dashboard.php:165 site/pages/share.php:124
 msgid "Filter"
-msgstr ""
-
-#: site/dashboard/dashboard.php:166
-msgid "List View"
-msgstr ""
+msgstr "필터"
 
 #: site/dashboard/dashboard.php:167
 msgid "Grid View"
-msgstr ""
+msgstr "격자 형태로 보기"
 
 #: site/dashboard/dashboard.php:168
-#, fuzzy
 msgid "View Now"
-msgstr "그룹 보기"
+msgstr "바로 보기"
 
 #: site/dashboard/dashboard.php:169
 #, fuzzy
@@ -3796,24 +3951,24 @@ msgstr "과정 수료"
 
 #: site/dashboard/dashboard.php:170
 msgid "View"
-msgstr ""
+msgstr "보기"
 
 #: site/dashboard/dashboard.php:171
 msgid "Menu"
-msgstr ""
+msgstr "메뉴"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:164
-#: site/dashboard/wizard.php:210 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
+#: site/dashboard/wizard.php:226 site/profile/profile.php:116
 msgid "Name"
 msgstr "이름"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:162
-#: site/dashboard/wizard.php:180 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
+#: site/dashboard/wizard.php:196 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "전화"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:178
+#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
@@ -3821,20 +3976,19 @@ msgstr "이메일"
 
 #: site/dashboard/dashboard.php:175
 msgid "Communications Email"
-msgstr ""
+msgstr "이메일"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:163
+#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "도시"
 
 #: site/dashboard/dashboard.php:177
-#, fuzzy
 msgid "No Locations found"
-msgstr "사용자가 없습니다."
+msgstr "지역을 찾을 수 없음"
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:214 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
+#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
@@ -3847,145 +4001,138 @@ msgstr "줌 프로필"
 
 #: site/dashboard/dashboard.php:181
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "줌 개념을 확인해보세요"
 
 #: site/dashboard/dashboard.php:182
-#, fuzzy
 msgid "Preview"
-msgstr "전망"
+msgstr "미리보기"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
 #: site/dashboard/dashboard.php:259
 #, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "추가하기 %s"
 
 #: site/dashboard/dashboard.php:183
-#, fuzzy
 msgid "Commitment"
-msgstr "다른 약속 :"
+msgstr "약속"
 
 #: site/dashboard/dashboard.php:184 site/pages/share.php:82
-#, fuzzy
 msgid "Copy Link"
-msgstr "링크"
+msgstr "링크 복사하기"
 
 #: site/dashboard/dashboard.php:185
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "본 링크를 복사하여 친구에게 보내보세요"
 
 #: site/dashboard/dashboard.php:186 site/pages/share.php:84
 msgid "Thanks!"
-msgstr ""
+msgstr "고맙습니다!"
 
 #: site/dashboard/dashboard.php:187
-#, fuzzy
 msgid "Link copied"
-msgstr "연결"
+msgstr "링크가 복사되었습니다"
 
 #: site/dashboard/dashboard.php:188
-#, fuzzy
 msgid "Getting Started"
-msgstr "시작"
+msgstr "시작하기"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:250
-#: utilities/apis/cta-api.php:252
+#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
+#: utilities/apis/cta-api.php:255
 #, fuzzy
 msgid "Set Profile"
 msgstr "줌 프로필"
 
 #: site/dashboard/dashboard.php:190
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "프로필 마법사를 활용하여 프로필 설정을 완료해보세요"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:233
-#, fuzzy
+#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
 msgid "Join or create a training group"
-msgstr "훈련 진행"
+msgstr "훈련 그룹을 만들어나 기존 그룹에 참여하기"
 
 #: site/dashboard/dashboard.php:192
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"온라인 훈련 그룹에 참여하거나 설정 마법사를 활용하여 새로운 훈련 그룹을 만들"
+"어보세요"
 
 #: site/dashboard/dashboard.php:193
-#, fuzzy
 msgid "Create Training Group"
-msgstr "하나의 훈련"
+msgstr "훈련 그룹 만들기"
 
 #: site/dashboard/dashboard.php:194
-#, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "나만의 100인 명단 만들기"
+msgstr "설정 마법사를 활용하여 훈련 그룹을 만들어보세요"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:288
-#, fuzzy
+#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
 msgid "Join Training Group"
-msgstr "훈련 진행"
+msgstr "훈련 그룹에 참여하기"
 
 #: site/dashboard/dashboard.php:196
-#, fuzzy
 msgid "Join an online training group run by a coach"
-msgstr "훈련 진행"
+msgstr "코치가 진행하는 온라인 훈련 그룹에 참여하기"
 
 #: site/dashboard/dashboard.php:198
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
-msgstr ""
+msgstr "훈련 과정 중에 코치와 연락을 통해 도움을 요청해보세요."
 
 #: site/dashboard/dashboard.php:200
-#, fuzzy
 msgid "My Progress"
-msgstr "진행"
+msgstr "진행상황"
 
 #: site/dashboard/dashboard.php:201
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"인터랙티브 보기를 이용해 당신의 진행사항을 확인해보세요. 듣고, 순종하고, 공유"
+"하고, 당신이 배운 것을 가지고 다른 사람을 훈련하는 것을 배워보세요."
 
 #: site/dashboard/dashboard.php:202
 msgid "Information about progress"
-msgstr ""
+msgstr "진행 과정에 관한 정보"
 
 #: site/dashboard/dashboard.php:203
-#, fuzzy
 msgid "My Training"
-msgstr "하나의 훈련"
+msgstr "나의 훈련"
 
 #: site/dashboard/dashboard.php:204
-#, fuzzy
 msgid "My Trainings"
-msgstr "하나의 훈련"
+msgstr "나의 훈련"
 
 #: site/dashboard/dashboard.php:205
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
-msgstr ""
+msgstr "훈련 내용, 일정, 그룹에 관한 정보와 공유 도구에 접근하기."
 
 #: site/dashboard/dashboard.php:207
-#, fuzzy
 msgid "Create Your Plan"
-msgstr "3 개월 계획"
+msgstr "당신의 계획 세우기"
 
 #: site/dashboard/dashboard.php:209
-#, fuzzy
 msgid "Three Month Plan Locked"
-msgstr "3 개월 계획"
+msgstr "3 개월 계획이 잠김"
 
 #: site/dashboard/dashboard.php:210
+#, fuzzy
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"3개월 계획은 Zúme 과정을 통해 배운 도구와 개념을 실행하고 구현하는 데 도움이 "
+"되는 도구입니다. 교육을 마친 후에는 가장 유용합니다."
 
 #: site/dashboard/dashboard.php:211
+#, fuzzy
 msgid "Unlock now"
-msgstr ""
+msgstr "지금 잠금 해제"
 
 #: site/dashboard/dashboard.php:212
 #, fuzzy
@@ -3998,8 +4145,9 @@ msgid "My Coach"
 msgstr "코치"
 
 #: site/dashboard/dashboard.php:214
+#, fuzzy
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "언제든지 코치에게 빠르게 접근할 수 있습니다."
 
 #: site/dashboard/dashboard.php:215
 #, fuzzy
@@ -4007,10 +4155,13 @@ msgid "My Tools"
 msgstr "도구"
 
 #: site/dashboard/dashboard.php:216
+#, fuzzy
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"과정을 진행하면서 필수적인 제자도 기술을 연습하고 개발하면서 내 도구 영역이 "
+"잠금 해제됩니다."
 
 #: site/dashboard/dashboard.php:217
 #, fuzzy
@@ -4018,10 +4169,11 @@ msgid "My Plans"
 msgstr "나의 계획"
 
 #: site/dashboard/dashboard.php:218
+#, fuzzy
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
-msgstr ""
+msgstr "마지막 세션에서 3개월 계획을 완료하여 내 계획 영역을 잠금 해제하세요."
 
 #: site/dashboard/dashboard.php:219
 #, fuzzy
@@ -4029,10 +4181,12 @@ msgid "My Plans are Locked"
 msgstr "하나의 훈련"
 
 #: site/dashboard/dashboard.php:220
+#, fuzzy
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"3개월 계획을 세우거나 자신만의 약속을 추가하여 이 영역을 잠금 해제하세요."
 
 #: site/dashboard/dashboard.php:221
 #, fuzzy
@@ -4040,24 +4194,32 @@ msgid "My Churches"
 msgstr "2 개의 단순한 교회"
 
 #: site/dashboard/dashboard.php:222
+#, fuzzy
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "커뮤니티에 가입하여 내 교회 영역을 잠금 해제하세요."
 
 #: site/dashboard/dashboard.php:223
+#, fuzzy
 msgid "My Maps"
-msgstr ""
+msgstr "내 지도"
 
 #: site/dashboard/dashboard.php:224
+#, fuzzy
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "내 지도가 잠겨 있습니다."
 
 #: site/dashboard/dashboard.php:225
+#, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"내 지도는 미국 내 5,000명, 전 세계적으로 50,000명당 1명의 훈련생과 2개의 교회"
+"라는 Zúme 비전을 명확히 하는 데 도움이 됩니다. 내 지도를 잠금 해제하려면 "
+"Zúme 커뮤니티에 가입하고 위대한 사명이 완수되는 것을 보고 싶어하는 다른 제자 "
+"양성자들과 연결하세요."
 
 #: site/dashboard/dashboard.php:226
 #, fuzzy
@@ -4091,14 +4253,17 @@ msgstr "1과정"
 msgid "Intensive Course"
 msgstr "1과정"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:215
+#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
 #: site/pages/training.php:146 utilities/apis/cta-api.php:150
+#: utilities/apis/cta-api.php:386
+#, fuzzy
 msgid "Join"
-msgstr ""
+msgstr "가입하다"
 
 #: site/dashboard/dashboard.php:241
+#, fuzzy
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "이 영역에 액세스하려면 커뮤니티에 가입하세요."
 
 #: site/dashboard/dashboard.php:242
 #, fuzzy
@@ -4135,22 +4300,24 @@ msgid "Start Session"
 msgstr "과정 시작"
 
 #: site/dashboard/dashboard.php:250
+#, fuzzy
 msgid "Show details"
-msgstr ""
+msgstr "세부정보 표시"
 
 #: site/dashboard/dashboard.php:251
+#, fuzzy
 msgid "Edit time"
-msgstr ""
+msgstr "시간 편집"
 
-#: site/dashboard/dashboard.php:253 utilities/apis/cta-api.php:235
-#: utilities/apis/cta-api.php:237
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Invite Friends"
 msgstr "친구 초대"
 
 #: site/dashboard/dashboard.php:254
+#, fuzzy
 msgid "Click to add your first church"
-msgstr ""
+msgstr "첫 번째 교회를 추가하려면 클릭하세요."
 
 #: site/dashboard/dashboard.php:255
 #, fuzzy
@@ -4198,12 +4365,12 @@ msgid "You have set your profile"
 msgstr "당신의 프로필"
 
 #: site/dashboard/dashboard.php:265
-#, php-format
+#, fuzzy, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s 잠금 해제됨"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:294
+#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
 #, fuzzy
 msgid "3 month plan"
 msgstr "3 개월 계획"
@@ -4213,119 +4380,138 @@ msgstr "3 개월 계획"
 msgid "You have joined the community"
 msgstr "지역 사회"
 
-#: site/dashboard/dashboard.php:268 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/pages/privacy-policy.php:108
+#, fuzzy
+msgid ""
+"A user’s real name or nickname is requested to improve the personal quality "
+"of the site and communication, as well as for customer service requests and "
+"coaching."
+msgstr ""
+"사이트의 개인적인 질적 향상과 커뮤니케이션, 고객 서비스 요청 및 코칭을 위해 "
+"사용자의 실명이나 닉네임을 요청합니다."
+
+#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#, fuzzy
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"사용자의 이메일 주소는 계정을 생성하는 데 필요하며 사이트 운영의 일부로 거래 "
+"통신에 사용됩니다."
 
-#: site/dashboard/dashboard.php:269 site/dashboard/wizard.php:173
+#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
 #: site/pages/privacy-policy.php:117
+#, fuzzy
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
-msgstr ""
+msgstr "무료 코칭 서비스 지원을 위해 이용자의 전화번호를 수집, 저장합니다."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:174
+#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
 #: site/pages/privacy-policy.php:120
+#, fuzzy
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"사용자의 도시는 사이트 리소스와 커뮤니케이션을 개인화하고 사용자를 적절한 코"
+"칭 및 고객 서비스 리소스에 연결하도록 요청됩니다."
 
-#: site/dashboard/dashboard.php:271
+#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/pages/privacy-policy.php:111
 #, fuzzy
-msgid "Zúme Community"
-msgstr "지역 사회"
-
-#: site/dashboard/dashboard.php:272
 msgid ""
-"Zúme is a community of practice and encouragement for those who want to see "
-"disciple making movements. The Zúme vision is to see one trainee and two "
-"simple churches for every 5,000 people in the United States and 50,000 "
-"people globally."
+"A user’s language preference is stored to support proper site and "
+"communication functioning, and to help us connect the user with appropriate "
+"coaching and resources."
 msgstr ""
+"사용자의 언어 기본 설정은 적절한 사이트 및 커뮤니케이션 기능을 지원하고 사용"
+"자에게 적절한 코칭 및 리소스를 연결하는 데 도움이 되도록 저장됩니다."
 
-#: site/dashboard/dashboard.php:274
-msgid ""
-"Connect with others like you who want to see a disciple making movement in "
-"their area. Share your experience with others, and learn from others who are "
-"discovering new things."
-msgstr ""
-
-#: site/dashboard/dashboard.php:275
-msgid "Encouragement"
-msgstr ""
-
-#: site/dashboard/dashboard.php:276
-msgid ""
-"Hear news about disciple making movements in your region and your wider "
-"country, get reports of  progress, and get connected to online and face-to-"
-"face gatherings."
-msgstr ""
-
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
 #, fuzzy
-msgid "Free Tools"
-msgstr "도구"
-
-#: site/dashboard/dashboard.php:278
-msgid ""
-"Access free tools for tracking disciple-making and church planting in your "
-"area. Get a map to cast vision for saturating your city with multiplying "
-"disciples and churches."
-msgstr ""
-
-#: site/dashboard/dashboard.php:279
-msgid "Join for Free"
-msgstr ""
-
-#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:289
 msgid "Join key"
-msgstr ""
+msgstr "조인 키"
 
-#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
+#, fuzzy
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "인식된 코드가 아닙니다. 번호를 확인해주세요."
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:275
+#, fuzzy
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "이 페이지에 액세스할 권한이 없습니다."
 
-#: site/dashboard/dashboard.php:283
+#: site/dashboard/dashboard.php:276
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "양식에 약간의 오류가 있습니다."
 
-#: site/dashboard/dashboard.php:284
+#: site/dashboard/dashboard.php:277
+#, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"코칭신청해주셔서 감사합니다. 우리 팀은 귀하의 언어와 지역에서 이용 가능한 코"
+"치와 귀하를 연결하기 위해 노력할 것입니다."
 
-#: site/dashboard/dashboard.php:285
+#: site/dashboard/dashboard.php:278
+#, fuzzy
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"귀하가 명시한 의사소통 기본 설정 내에서 코치의 의사소통을 지켜보십시오."
 
-#: site/dashboard/dashboard.php:286
+#: site/dashboard/dashboard.php:279
+#, fuzzy
 msgid "100 Hour Map"
-msgstr ""
+msgstr "100시간 지도"
 
-#: site/dashboard/dashboard.php:287
+#: site/dashboard/dashboard.php:280
 #, fuzzy
 msgid "Training vision map"
 msgstr "훈련"
 
-#: site/dashboard/dashboard.php:288
+#: site/dashboard/dashboard.php:281
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "단순한 교회 충만"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:282
+#, fuzzy
+msgid "No date"
+msgstr "업데이트"
+
+#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: zume-training-system.php:318
+#, fuzzy
+msgid "Whatsapp"
+msgstr "왓츠앱"
+
+#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: zume-training-system.php:319
+#, fuzzy
+msgid "Signal"
+msgstr "회원 가입"
+
+#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: zume-training-system.php:320
+#, fuzzy
+msgid "Telegram"
+msgstr "전보"
+
+#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#, fuzzy
+msgid "Facebook Messenger"
+msgstr "페이스북"
+
+#: site/dashboard/dashboard.php:292
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
@@ -4334,12 +4520,12 @@ msgstr ""
 "나는 나의 이야기[간증]과 하나님의 이야기[복음]를 다음의 사람들과 나누겠습니"
 "다."
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:293
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "다음 사람들을 나와 함께 책임 그룹을 시작하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:294
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4347,11 +4533,11 @@ msgstr ""
 "다음 사람들에게 자신의 책임 그룹을 시작하도록 도전을 주고, 수행하는 방법을 교"
 "육시키겠습니다."
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:295
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "다음 사람들을 나와 함께 3/3 그룹을 시작하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:296
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4359,7 +4545,7 @@ msgstr ""
 "다음 사람들에게 자신의 3/3 그룹을 시작하도록 도전을 주고, 수행하는 방법을 교"
 "육시키겠습니다."
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:297
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
@@ -4368,16 +4554,16 @@ msgstr ""
 "다음 사람들을 3/3 희망 또는 발견 그룹[줌 가이드북 부록 참조]에 초대하겠습니"
 "다."
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:298
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "다음 사람들을 나와 함께 걷기 기도에 참여하도록 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:299
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "매[일 / 주 / 월]마다 한 번씩 걷기 기도를 하겠습니다."
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:300
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4386,501 +4572,576 @@ msgstr ""
 "다음 사람들에게 자신의 이야기와 하나님의 이야기를 나누고, 그들 관계 네트워크"
 "에서 100인 명단을 작성하도록 준비시키겠습니다."
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "다음 사람들이 기도 사이클 도구를 정기적으로 사용하도록 요청하겠습니다."
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:302
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "기도 사이클 도구를 매[일 / 주 / 월]마다 한 번씩 사용하겠습니다."
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:303
 #, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "다음 사람들을 내가 인도하게 될 리더쉽 소그룹에 초대하겠습니다."
 
-#: site/dashboard/dashboard.php:306
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "다음 사람들에게 줌 훈련 과정을 수강할 것을 권장하겠습니다."
 
-#: site/dashboard/dashboard.php:307
+#: site/dashboard/dashboard.php:305
 #, fuzzy
 msgid "Other commitments:"
 msgstr "다른 약속 :"
 
-#: site/dashboard/wizard.php:149
+#: site/dashboard/wizard.php:151
+#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "나쁜 마법사"
 
-#: site/dashboard/wizard.php:150
+#: site/dashboard/wizard.php:152
+#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "당신은 아주 나쁜 마법사들과 어울리고 있어요!"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:153
+#, fuzzy
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "마법사가 이미 완료되었습니다."
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:154
+#, fuzzy
 msgid "Get back home"
-msgstr ""
+msgstr "집으로 돌아가세요"
 
-#: site/dashboard/wizard.php:153 site/login/login-template.php:408
+#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#, fuzzy
 msgid "Back"
-msgstr ""
+msgstr "뒤로"
 
-#: site/dashboard/wizard.php:154 site/dashboard/wizard.php:170
-#: site/dashboard/wizard.php:193 site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
+#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "다음"
 
-#: site/dashboard/wizard.php:155 site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#, fuzzy
 msgid "Skip"
-msgstr ""
+msgstr "건너뛰다"
 
-#: site/dashboard/wizard.php:156 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "완료"
 
-#: site/dashboard/wizard.php:158
+#: site/dashboard/wizard.php:160
 #, fuzzy
 msgid "No locations found"
 msgstr "사용자가 없습니다."
 
-#: site/dashboard/wizard.php:161
+#: site/dashboard/wizard.php:163
+#, fuzzy
+msgid "Zúme Community"
+msgstr "지역 사회"
+
+#: site/dashboard/wizard.php:164
+#, fuzzy
+msgid ""
+"Zúme is a community of practice and encouragement for those who want to see "
+"disciple making movements. The Zúme vision is to see one trainee and two "
+"simple churches for every 5,000 people in the United States and 50,000 "
+"people globally."
+msgstr ""
+"Zúme은 제자양육의 움직임을 보고 싶어하는 사람들을 위한 실천과 격려의 공동체입"
+"니다. Zúme의 비전은 미국 내 5,000명, 전 세계적으로 50,000명당 한 명의 훈련생"
+"과 두 개의 간단한 교회를 보는 것입니다."
+
+#: site/dashboard/wizard.php:166
+#, fuzzy
+msgid ""
+"Connect with others like you who want to see a disciple making movement in "
+"their area. Share your experience with others, and learn from others who are "
+"discovering new things."
+msgstr ""
+"자신의 지역에서 제자가 움직이는 것을 보고 싶은 당신과 같은 다른 사람들과 연결"
+"하십시오. 당신의 경험을 다른 사람들과 공유하고, 새로운 것을 발견하고 있는 다"
+"른 사람들로부터 배우세요."
+
+#: site/dashboard/wizard.php:167
+#, fuzzy
+msgid "Encouragement"
+msgstr "격려"
+
+#: site/dashboard/wizard.php:168
+#, fuzzy
+msgid ""
+"Hear news about disciple making movements in your region and your wider "
+"country, get reports of  progress, and get connected to online and face-to-"
+"face gatherings."
+msgstr ""
+"귀하의 지역과 더 넓은 국가에서 제자 삼는 운동에 관한 소식을 듣고, 진행 상황"
+"에 대한 보고를 받고, 온라인 및 대면 모임에 연결하세요."
+
+#: site/dashboard/wizard.php:169
+#, fuzzy
+msgid "Free Tools"
+msgstr "도구"
+
+#: site/dashboard/wizard.php:170
+#, fuzzy
+msgid ""
+"Access free tools for tracking disciple-making and church planting in your "
+"area. Get a map to cast vision for saturating your city with multiplying "
+"disciples and churches."
+msgstr ""
+"해당 지역의 제자 삼기 및 교회 개척을 추적할 수 있는 무료 도구에 액세스하세"
+"요. 당신의 도시를 제자와 교회가 늘어나는 비전을 제시하기 위한 지도를 얻으세"
+"요."
+
+#: site/dashboard/wizard.php:171
+#, fuzzy
+msgid "Join for Free"
+msgstr "무료로 가입하세요"
+
+#: site/dashboard/wizard.php:172
+#, fuzzy
+msgid "Successfully joined community"
+msgstr "지역 사회"
+
+#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
+#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#, fuzzy
+msgid "Something went wrong"
+msgstr "죄송합니다. 문제가 발생했습니다."
+
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid "Complete your profile"
 msgstr "당신의 프로필"
 
-#: site/dashboard/wizard.php:165
+#: site/dashboard/wizard.php:181
+#, fuzzy
 msgid "What is your name?"
-msgstr ""
+msgstr "이름이 뭐에요?"
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:182
+#, fuzzy
 msgid "What is your phone number?"
-msgstr ""
+msgstr "전화 번호는 뭐 지요?"
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:183
+#, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "전화번호에는 숫자, 대괄호, 하이픈만 포함할 수 있습니다."
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:184
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "하나님에 대해 무엇을 배웠나요?"
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:185
+#, fuzzy
 msgid "This is your approximate location."
-msgstr ""
+msgstr "대략적인 위치는 다음과 같습니다."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:187
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "줌 개인 정보 보호 정책"
 
-#: site/dashboard/wizard.php:172 site/pages/privacy-policy.php:108
-msgid ""
-"A user’s real name or nickname is requested to improve the personal quality "
-"of the site and communication, as well as for customer service requests and "
-"coaching."
-msgstr ""
-
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "당신이 거주하는 도시 또는 도, 우편 번호는 무엇입니까?"
 
-#: site/dashboard/wizard.php:179 zume-training-system.php:316
+#: site/dashboard/wizard.php:195 zume-training-system.php:316
 msgid "Text"
 msgstr "문자"
 
-#: site/dashboard/wizard.php:181 zume-training-system.php:318
+#: site/dashboard/wizard.php:201
 #, fuzzy
-msgid "Whatsapp"
-msgstr "왓츠앱"
-
-#: site/dashboard/wizard.php:182 zume-training-system.php:319
-#, fuzzy
-msgid "Signal"
-msgstr "회원 가입"
-
-#: site/dashboard/wizard.php:183 zume-training-system.php:320
-msgid "Telegram"
-msgstr ""
-
-#: site/dashboard/wizard.php:184
-#, fuzzy
-msgid "Facebook Messenger"
-msgstr "페이스북"
-
-#: site/dashboard/wizard.php:185
 msgid "What is your language preference?"
-msgstr ""
+msgstr "귀하의 언어 기본 설정은 무엇입니까?"
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:203
 msgid "How can we serve you?"
 msgstr "우리는 어떻게 당신을 섬길 수 있습니까?"
 
-#: site/dashboard/wizard.php:188
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "Coaching"
 msgstr "코치"
 
-#: site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:205
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "기술 지원이 필요합니다"
 
-#: site/dashboard/wizard.php:190
+#: site/dashboard/wizard.php:206
+#, fuzzy
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "교육 실시에 관한 질문"
 
-#: site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:207
+#, fuzzy
 msgid "Question about the content"
-msgstr ""
+msgstr "내용에 대한 질문"
 
-#: site/dashboard/wizard.php:192
+#: site/dashboard/wizard.php:208
+#, fuzzy
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "그룹을 시작한 후 해야 할 일에 대한 도움말"
 
-#: site/dashboard/wizard.php:194
+#: site/dashboard/wizard.php:210
+#, fuzzy
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "이 질문에 대한 답변을 부탁드립니다."
 
-#: site/dashboard/wizard.php:195
+#: site/dashboard/wizard.php:211
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr "본 요청을 제출시, 최선을 다해 가까운 코치와 연결해 드리겠습니다."
 
-#: site/dashboard/wizard.php:196
+#: site/dashboard/wizard.php:212
+#, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
+"죄송합니다. 귀하의 요청을 제출할 수 없습니다. 나중에 다시 시도 해주십시오."
 
-#: site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:213
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "코칭을 요청했습니다."
 
-#: site/dashboard/wizard.php:198
+#: site/dashboard/wizard.php:214
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "코치와 연결"
 
-#: site/dashboard/wizard.php:199
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "코치와 연결"
 
-#: site/dashboard/wizard.php:200 site/dashboard/wizard.php:206
-#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:227
-msgid "Please wait while we connect you"
-msgstr ""
-
-#: site/dashboard/wizard.php:202 site/pages/privacy-policy.php:111
-msgid ""
-"A user’s language preference is stored to support proper site and "
-"communication functioning, and to help us connect the user with appropriate "
-"coaching and resources."
-msgstr ""
-
-#: site/dashboard/wizard.php:205
-msgid "Joining Plan"
-msgstr ""
-
-#: site/dashboard/wizard.php:207 site/dashboard/wizard.php:290
-msgid "The training link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:208
-#, php-format
-msgid "Successfully joined training %s"
-msgstr ""
-
-#: site/dashboard/wizard.php:209
+#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
+#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
 #, fuzzy
-msgid "Something went wrong while joining the plan"
-msgstr "문제가 발생했습니다. 죄송합니다. 다시 시도해 주시겠습니까?"
+msgid "Please wait while we connect you"
+msgstr "연결하는 동안 잠시 기다려 주세요."
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:221
+#, fuzzy
+msgid "Joining Plan"
+msgstr "가입 계획"
+
+#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#, fuzzy
+msgid "The training link is broken. Please try again."
+msgstr "훈련 링크가 끊어졌습니다. 다시 시도해 주세요."
+
+#: site/dashboard/wizard.php:224
+#, fuzzy, php-format
+msgid "Successfully joined training %s"
+msgstr "%s 교육에 성공적으로 참여했습니다."
+
+#: site/dashboard/wizard.php:227
 #, fuzzy
 msgid "Next Session Date"
 msgstr "다음 과정"
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:228
 #, fuzzy
 msgid "Start Time"
 msgstr "시작"
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:229
+#, fuzzy
 msgid "Timezone"
-msgstr ""
+msgstr "시간대"
 
-#: site/dashboard/wizard.php:216
+#: site/dashboard/wizard.php:232
+#, fuzzy
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "현재 공개 교육이 없습니다."
 
-#: site/dashboard/wizard.php:219
+#: site/dashboard/wizard.php:235
+#, fuzzy
 msgid "Connecting with friend"
-msgstr ""
+msgstr "친구와 연결 중"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:237
+#, fuzzy
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "친구링크가 깨졌습니다. 다시 시도해 주세요."
 
-#: site/dashboard/wizard.php:222
-#, php-format
+#: site/dashboard/wizard.php:238
+#, fuzzy, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "친구 %s와 성공적으로 연결되었습니다"
 
-#: site/dashboard/wizard.php:223
-msgid "Something went wrong while connecting with friend"
-msgstr ""
-
-#: site/dashboard/wizard.php:226
+#: site/dashboard/wizard.php:242
 #, fuzzy
 msgid "Checking in"
 msgstr "체크리스트"
 
-#: site/dashboard/wizard.php:228
-msgid "The checkin link is broken. Please try again."
-msgstr ""
-
-#: site/dashboard/wizard.php:229
-msgid "Successfully checked in"
-msgstr ""
-
-#: site/dashboard/wizard.php:230
+#: site/dashboard/wizard.php:244
 #, fuzzy
-msgid "Something went wrong while checking in"
-msgstr "죄송합니다. 오류가 있습니다. 다시 시도하십시오."
+msgid "The checkin link is broken. Please try again."
+msgstr "체크인 링크가 깨졌습니다. 다시 시도해 주세요."
 
-#: site/dashboard/wizard.php:234
+#: site/dashboard/wizard.php:245
+#, fuzzy
+msgid "Successfully checked in"
+msgstr "성공적으로 체크인했습니다"
+
+#: site/dashboard/wizard.php:250
 #, fuzzy
 msgid "Create a training group"
 msgstr "나만의 100인 명단 만들기"
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:251
 #, fuzzy
 msgid "Join a public training group"
 msgstr "훈련 진행"
 
-#: site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:252
+#, fuzzy
 msgid "Skip for now"
-msgstr ""
+msgstr "일단은 스킵"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:253
+#, fuzzy
 msgid "Choose your course format"
-msgstr ""
+msgstr "코스 형식을 선택하세요"
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:254
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "과정"
 
-#: site/dashboard/wizard.php:239
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "과정"
 
-#: site/dashboard/wizard.php:240
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "과정"
 
-#: site/dashboard/wizard.php:241
+#: site/dashboard/wizard.php:257
+#, fuzzy
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "교육 일정을 계획하시겠습니까?"
 
-#: site/dashboard/wizard.php:242 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "예"
 
-#: site/dashboard/wizard.php:243 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "아니"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:260
+#, fuzzy
 msgid "What time of day?"
-msgstr ""
+msgstr "하루 중 몇시입니까?"
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Morning"
 msgstr "훈련"
 
-#: site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:262
+#, fuzzy
 msgid "Afternoon"
-msgstr ""
+msgstr "오후"
 
-#: site/dashboard/wizard.php:247
+#: site/dashboard/wizard.php:263
+#, fuzzy
 msgid "Evening"
-msgstr ""
+msgstr "저녁"
 
-#: site/dashboard/wizard.php:248
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "어떤 느낌입니까?"
 
-#: site/dashboard/wizard.php:249
+#: site/dashboard/wizard.php:265
+#, fuzzy
 msgid "Every day"
-msgstr ""
+msgstr "매일"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:266
+#, fuzzy
 msgid "Once a week"
-msgstr ""
+msgstr "일주일에 한 번"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:267
+#, fuzzy
 msgid "Twice a month"
-msgstr ""
+msgstr "한 달에 두 번"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:268
+#, fuzzy
 msgid "Once a month"
-msgstr ""
+msgstr "한달에 한번"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:269
 msgid "Other"
 msgstr "기타"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:270
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "훈련 내용은 무엇인가요?"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "My first training group"
 msgstr "훈련 진행"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "하나님에 대해 무엇을 배웠나요?"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "하나님에 대해 무엇을 배웠나요?"
 
-#: site/dashboard/wizard.php:258
+#: site/dashboard/wizard.php:274
+#, fuzzy
 msgid "This could be online or in person"
-msgstr ""
+msgstr "이는 온라인일 수도 있고 직접 방문일 수도 있습니다."
 
-#: site/dashboard/wizard.php:259
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "Review Schedule"
 msgstr "훈련 사이클"
 
-#: site/dashboard/wizard.php:260
-#, php-format
+#: site/dashboard/wizard.php:276
+#, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "%2$s 중 %1$s개 선택됨"
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "읽기"
 
-#: site/dashboard/wizard.php:262
-#, php-format
+#: site/dashboard/wizard.php:278
+#, fuzzy, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "너무 많이 선택됨: %s"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:279
+#, fuzzy
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "잘못된 세션 수가 선택되었습니다."
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:266
-#: site/dashboard/wizard.php:268
-#, php-format
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:284
+#, fuzzy, php-format
 msgid "Set %s"
-msgstr ""
+msgstr "%s 설정"
 
-#: site/dashboard/wizard.php:264 site/dashboard/wizard.php:265
-#: site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Location"
 msgstr "현재 위치 저장"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "Group Name"
 msgstr "이름 없음"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "Group name"
 msgstr "이름 없음"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Start Date"
 msgstr "시작"
 
-#: site/dashboard/wizard.php:272 site/dashboard/wizard.php:287
+#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#, fuzzy
 msgid "Time"
-msgstr ""
+msgstr "시각"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:289
+#, fuzzy
 msgid "Date"
-msgstr ""
+msgstr "날짜"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:290
+#, fuzzy
 msgid "Summary"
-msgstr ""
+msgstr "요약"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:291
+#, fuzzy
 msgid "Clear Calendar"
-msgstr ""
+msgstr "달력 지우기"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:292
 msgid "Add"
 msgstr "추가"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:293
+#, fuzzy
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "일정에 날짜를 추가하세요"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Change"
 msgstr "키 변경"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:298
+#, fuzzy
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "훈련에 참여하도록 친구를 초대하세요"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:299
+#, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"친구들이 훈련에 참여할 수 있도록 아래 초대 또는 링크를 친구들과 공유하세요."
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:300
+#, fuzzy
 msgid "Join my zume plan"
-msgstr ""
+msgstr "내 zume 플랜에 가입하세요"
 
-#: site/dashboard/wizard.php:285
-#, php-format
+#: site/dashboard/wizard.php:301
+#, fuzzy, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s님이 Zume 교육 그룹에 귀하를 초대합니다"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:307
 #, fuzzy
 msgid "Copy Invite"
 msgstr "링크"
@@ -4944,9 +5205,10 @@ msgid "Passwords do not match. Please, try again."
 msgstr "비밀번호가 일치하지 않습니다. 다시 시도하십시오."
 
 #: site/login/login-template.php:217
-#, php-format
+#, fuzzy, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
 msgstr ""
+"비밀번호가 재설정되었습니다. %1$s 여기에서 로그인하실 수 있습니다. %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -4963,8 +5225,9 @@ msgid "Password"
 msgstr "비밀번호"
 
 #: site/login/login-template.php:267
+#, fuzzy
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "더 강력한 비밀번호를 선택하세요. 이건 너무 약해요."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -4972,15 +5235,17 @@ msgid "Re-enter Password"
 msgstr "비밀번호 재 입력"
 
 #: site/login/login-template.php:365
+#, fuzzy
 msgid "Hello!"
-msgstr ""
+msgstr "안녕하세요!"
 
 #: site/login/login-template.php:366
+#, fuzzy
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "Zume 계정 만들기"
 
 #: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:151
+#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
 #: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:133
 #: utilities/apis/cta-api.php:135
@@ -4988,8 +5253,9 @@ msgid "Register"
 msgstr "등록"
 
 #: site/login/login-template.php:400
+#, fuzzy
 msgid "Or"
-msgstr ""
+msgstr "또는"
 
 #: site/login/login-template.php:402
 #, fuzzy
@@ -4997,12 +5263,14 @@ msgid "Register with Email"
 msgstr "지금 가입하세요!"
 
 #: site/login/login-template.php:440
+#, fuzzy
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "형식이 잘못된 이메일 주소"
 
 #: site/login/login-template.php:447
+#, fuzzy
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "비밀번호가 충분히 강력하지 않습니다."
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -5024,8 +5292,9 @@ msgid "Login"
 msgstr "로그인"
 
 #: site/login/login-template.php:612
+#, fuzzy
 msgid "or sign in with email"
-msgstr ""
+msgstr "또는 이메일로 로그인"
 
 #: site/login/login-template.php:618
 msgid "Username or password does not match. Try again."
@@ -5036,16 +5305,18 @@ msgid "Remember Me"
 msgstr "기억하세요"
 
 #: site/login/login-template.php:689
+#, fuzzy
 msgid "Don't have an account?"
-msgstr ""
+msgstr "계정이 없나요?"
 
 #: site/login/login-template.php:701
 msgid "Lost your password?"
 msgstr "비밀번호를 잊었나요?"
 
 #: site/login/login-template.php:712
+#, fuzzy
 msgid "Already have an account?"
-msgstr ""
+msgstr "이미 계정이 있나요?"
 
 #: site/login/login-template.php:768
 #, fuzzy
@@ -5053,8 +5324,9 @@ msgid "Username or Email Address"
 msgstr "사용자 이름 또는 이메일 주소가 누락되었습니다."
 
 #: site/login/login-template.php:771
+#, fuzzy
 msgid "Log In"
-msgstr ""
+msgstr "로그인"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5199,6 +5471,7 @@ msgid ""
 msgstr "제자 배가를 통해 온 세상에 충만하기"
 
 #: site/pages/about.php:100
+#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5208,8 +5481,15 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"2015년에 예수님의 대위임령을 이행하기 위해 헌신하는 소그룹이 조나단 프로젝트 "
+"리더십 회의를 위해 소집되었습니다. 그들은 전 세계에 제자를 늘리는 데 따르는 "
+"어려움에 대해 기도하고 토론했습니다. 평범한 사람들이 왕국을 위한 '이스트'가 "
+"되라는 예수의 부르심에 부합하는 접근 가능하고 다국어이며 유연한 훈련의 필요성"
+"을 인식하여 온라인 비디오 기반 교육에 대한 아이디어가 탄생했습니다. 궁극적으"
+"로 이 아이디어는 현재 Zúme으로 알려진 아이디어로 발전했습니다."
 
 #: site/pages/about.php:101
+#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5217,6 +5497,10 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"Zúme 훈련의 제자를 삼는 기본 원칙은 성경에서 직접 나온 것이며 30년 넘게 전 세"
+"계적으로 검증되었습니다. 이러한 원칙은 일반 신자들이 제자가 될 수 있도록 힘"
+"을 실어 주고, 제자를 삼아 영적으로 어두운 곳에서 수백만 명의 제자들이 왕국을 "
+"전진하게 합니다."
 
 #: site/pages/about.php:114
 #, fuzzy
@@ -5231,57 +5515,76 @@ msgstr ""
 "리 모두는 로잔 언약에 동의합니다."
 
 #: site/pages/about.php:120
+#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"목표는 우리 세대의 제자 수가 늘어나면서 전 세계가 포화 상태가 되는 것입니다. "
+"이 훈련에서 발견되는 성경적 원칙은 간단합니다. 세상을 변화시키는 잠재력은 이"
+"러한 원칙을 실천하는 데 있습니다."
 
 #: site/pages/about.php:121
+#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Zúme의 비전은 반죽 전체에 효모가 작용하여 기본적인 왕국 도구를 전 세계 이웃"
+"에 전파하는 것과 비슷합니다."
 
 #: site/pages/about.php:128
+#, fuzzy
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "Zúme의 비전은 두 부분으로 구성됩니다."
 
 #: site/pages/about.php:132
 msgid "1 Training"
 msgstr "하나의 훈련"
 
 #: site/pages/about.php:136
+#, fuzzy
 msgid "Part 1:"
-msgstr ""
+msgstr "1 부:"
 
 #: site/pages/about.php:137
+#, fuzzy
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"북미 지역에서는 5,000명당 최소 한 명의 제자 메이커를 훈련하고, 전 세계적으로"
+"는 50,000명당 한 명의 제자 메이커를 훈련합니다."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "2 개의 단순한 교회"
 
 #: site/pages/about.php:147
+#, fuzzy
 msgid "Part 2:"
-msgstr ""
+msgstr "2 부:"
 
 #: site/pages/about.php:148
+#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"훈련받은 제자 양성자들이 북미 지역에서는 5,000명당 최소 2개의 단순 증식 교회"
+"를 시작하고 전 세계적으로는 50,000명당 2개의 단순 교회를 시작할 수 있습니다."
 
 #: site/pages/about.php:154
+#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"성경에서 누룩이라고 부르는 이 작은 시작으로 우리는 세상이 늘어나는 제자와 교"
+"회로 뒤덮이는 것을 볼 수 있었습니다. Zúme 교육을 살펴보고 방법을 알아보세요!"
 
 #: site/pages/about.php:157
 #, fuzzy
@@ -5294,11 +5597,13 @@ msgid "How does Zúme Training Work?"
 msgstr "줌 훈련"
 
 #: site/pages/about.php:167 site/pages/home.php:213
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$s무료 등록%2$s을 통해 모든 교육 자료와 온라인 코칭을 모두 이용할 수 있습니"
+"다."
 
 #: site/pages/about.php:171 site/pages/home.php:217
 #, fuzzy, php-format
@@ -5331,8 +5636,9 @@ msgstr ""
 "와줍니다."
 
 #: site/pages/about.php:194
+#, fuzzy
 msgid "Before you start."
-msgstr ""
+msgstr "시작하기 전에."
 
 #: site/pages/about.php:201
 #, fuzzy
@@ -5345,23 +5651,31 @@ msgid "First:"
 msgstr "처음"
 
 #: site/pages/about.php:204
+#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme은 그룹 단위로 수행되도록 설계되었습니다. 그룹 연습, 토론, 기술 연습 모"
+"두 다른 사람들과 함께 하면 더 좋을 것이므로 가능하면 그룹을 모으십시오."
 
 #: site/pages/about.php:207
+#, fuzzy
 msgid "Second:"
-msgstr ""
+msgstr "두번째:"
 
 #: site/pages/about.php:208
+#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme은 단순히 지식을 얻는 것이 아니라 기술을 개발하고 역량을 구축하는 것입니"
+"다. 모든 세션의 목표는 유익한 행동입니다. 훈련의 가장 좋은 결과는 생활방식의 "
+"변화와 믿음의 능력이 증가되는 경험이 될 것입니다."
 
 #: site/pages/about.php:216
 #, fuzzy
@@ -5374,20 +5688,25 @@ msgid "Needed for the training:"
 msgstr "훈련을 시작하겠습니까?"
 
 #: site/pages/about.php:221 site/pages/training.php:262
+#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "최소 3명, 이상적으로는 12명 미만입니다."
 
 #: site/pages/about.php:222 site/pages/training.php:263
+#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
-msgstr ""
+msgstr "20시간 동안 과정의 개념과 도구를 배우고 연습하는 데 전념합니다."
 
 #: site/pages/about.php:223 site/pages/training.php:264
+#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"회의 시간과 장소를 진행하고(잠재적으로 귀하) 후속 토론을 안내하며 조치 프롬프"
+"트를 진행하는 사람입니다."
 
 #: site/pages/about.php:232
 #, fuzzy
@@ -5395,16 +5714,22 @@ msgid "NOT needed for the training:"
 msgstr "훈련을 시작하겠습니까?"
 
 #: site/pages/about.php:234 site/pages/training.php:268
+#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"나머지 그룹보다 더 많은 지식이나 경험이 필요하지 않습니다! 다음을 클릭하시면 "
+"Zúme 교육을 진행하실 수 있습니다."
 
 #: site/pages/about.php:235
+#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"훈련을 진행하기 위한 특별 허가는 필요하지 않습니다! Zúme은 자기 주도적이고 자"
+"기 주도적이며 오늘부터 시작할 수 있습니다."
 
 #: site/pages/about.php:246
 #, fuzzy
@@ -5412,15 +5737,20 @@ msgid "Connecting with a Coach."
 msgstr "코치와 연결"
 
 #: site/pages/about.php:253
+#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"그 과정에서 Zúme 커뮤니티는 귀하와 귀하의 그룹이 교육을 성공적으로 수행할 수 "
+"있도록 코치를 제공하여 귀하를 지원하기 위해 최선을 다하고 있습니다. 질문이나 "
+"우려 사항이 있으면 주저하지 말고 문의하세요!"
 
 #: site/pages/about.php:263
+#, fuzzy
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "준비 되었나요? 지금 등록하세요."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 #, fuzzy
@@ -5428,8 +5758,9 @@ msgid "Register Free"
 msgstr "무료 가입"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
+#, fuzzy
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "친구코드를 입력해주세요."
 
 #: site/pages/checkin.php:157
 #, fuzzy
@@ -5437,27 +5768,34 @@ msgid "Checkin"
 msgstr "체크리스트"
 
 #: site/pages/checkin.php:159
+#, fuzzy
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "화면이나 책에 있는 코드를 사용하세요."
 
 #: site/pages/checkin.php:164 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
+#, fuzzy
 msgid "Connect"
-msgstr ""
+msgstr "연결하다"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
+#, fuzzy
 msgid "Donate"
-msgstr ""
+msgstr "기부"
 
 #: site/pages/donate.php:95
+#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
+"우리는 크라우드 펀딩을 받고 있으며 여러분이 Zúme 비전의 일부가 되기를 바랍니"
+"다."
 
 #: site/pages/donate.php:103
+#, fuzzy
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "모든 기부 기회 보기"
 
 #: site/pages/faq.php:88
 #, fuzzy
@@ -5489,14 +5827,14 @@ msgstr "듣기 및 읽기"
 msgid "How to Follow Jesus"
 msgstr "예수를 따르는 방법"
 
-#: site/pages/follow-jesus.php:144
+#: site/pages/follow-jesus.php:151
 #, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr ""
 "당신의 새로운 삶의 4가지 관계에 대해 설명한 다음 중요한 영상을 시청하세요. "
 
-#: site/pages/follow-jesus.php:147
+#: site/pages/follow-jesus.php:154
 #, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
@@ -5505,19 +5843,19 @@ msgstr ""
 "아래 섹션에서는 예수님의 제자 (제자)가된다는 것이 무엇을 의미하는지 알려줄 것"
 "입니다."
 
-#: site/pages/follow-jesus.php:162
+#: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
 msgstr "예수님을 따르는 자란 누구인가요?"
 
-#: site/pages/follow-jesus.php:182
+#: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
 msgstr "예수님을 따르는 자들의 활동에는 어떤 것이 있나요?"
 
-#: site/pages/follow-jesus.php:206
+#: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
 msgstr "성경 일기"
 
-#: site/pages/follow-jesus.php:213
+#: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
@@ -5525,7 +5863,7 @@ msgstr ""
 "제자들이 무엇을 알고 있는냐는 중요합니다. 그러나 그들이 알고 있는 지식으로 무"
 "엇을 하는지는 더욱 중요합니다."
 
-#: site/pages/follow-jesus.php:220
+#: site/pages/follow-jesus.php:227
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they've learned. In this "
@@ -5535,11 +5873,11 @@ msgstr ""
 "것에 순종하고 나누는 것을 훈련하는 방법입니다. 이런 면에서, 3/3 그룹은 소그룹"
 "이 아닌 단순한 교회입니다. "
 
-#: site/pages/follow-jesus.php:228
+#: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "가서 머물면서 예수님의 명령에 순종하는 방법을 배우십시오."
 
-#: site/pages/follow-jesus.php:232
+#: site/pages/follow-jesus.php:239
 #, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
@@ -5548,17 +5886,17 @@ msgstr ""
 "예수님과의 지속적이고 친밀한 관계를 축하하는 간단한 방법입니다. 축하하는 간단"
 "한 방법을 배우십시오."
 
-#: site/pages/follow-jesus.php:240
+#: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
 msgstr "희생과 고난"
 
-#: site/pages/follow-jesus.php:254
+#: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
 "예수님께 순종하려면 어떻게 해야 하며, 다른 사람들도 나와 같이 제자가 되도록 "
 "도우려면 어떻게 해야 할까요?"
 
-#: site/pages/follow-jesus.php:259
+#: site/pages/follow-jesus.php:266
 msgid ""
 "Then Jesus came to them and said, \"All authority in heaven and on earth has "
 "been given to me. Therefore go and make disciples of all nations, baptizing "
@@ -5571,19 +5909,19 @@ msgstr ""
 "세례를 베풀고 내가 너희에게 분부한 모든 것을 가르쳐 지키게 하라. 볼지어다 내"
 "가 세상 끝날까지 너희와 항상 함께 있으리라 하시니라.\""
 
-#: site/pages/follow-jesus.php:260
+#: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
 msgstr "마태복음 28:18-20"
 
-#: site/pages/follow-jesus.php:263
+#: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
 msgstr "가르쳐 지키게 하고 당신과 함께 예수님을 따르게 하세요."
 
-#: site/pages/follow-jesus.php:266
+#: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
 msgstr "새끼오리와 제자 삼기가 어떤 연관이 있는지 알아보세요."
 
-#: site/pages/follow-jesus.php:274
+#: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
@@ -5591,21 +5929,21 @@ msgstr ""
 "제자 삼기가 꼭 순차적일 필요가 없는 것을 보게 됩니다. 배가는 동시 진행이 가능"
 "합니다. "
 
-#: site/pages/follow-jesus.php:282
+#: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
 msgstr "지인에게 예수님을 전해보세요."
 
-#: site/pages/follow-jesus.php:297
+#: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
 msgstr "모르는 사람에게 예수님을 전해보세요."
 
-#: site/pages/follow-jesus.php:300
+#: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
 "평화의 사람은 누구인지, 그들을 발견했을 때 알아보는 방법을 배우게 됩니다."
 
-#: site/pages/follow-jesus.php:304
+#: site/pages/follow-jesus.php:311
 #, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
@@ -5614,7 +5952,7 @@ msgstr ""
 "이것은 다른 사람을 위해 기도하라는 하나님의 명령에 순종하는 간단한 방법입니"
 "다. 문장 그대로 주변을 걸으면서 하나님께 기도하는 것입니다."
 
-#: site/pages/follow-jesus.php:311
+#: site/pages/follow-jesus.php:318
 #, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
@@ -5627,8 +5965,9 @@ msgid "Friend Invitation"
 msgstr "수락된 초대"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
+#, fuzzy
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "친구가 보낸 코드를 사용하세요."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 #, fuzzy
@@ -5636,15 +5975,20 @@ msgid "Get A Coach"
 msgstr "코치 받기"
 
 #: site/pages/get-a-coach.php:89
+#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"모든 운동 스포츠, 특히 더 높은 수준의 스포츠에서는 코칭을 사용합니다. 올림픽 "
+"선수들에게도 코치가 있고, 종종 한 명 이상이 있습니다. 제자를 삼는 일에는 경험"
+"이 더 많은 사람들의 지도를 통해서도 똑같이 유익을 얻을 수 있습니다."
 
 #: site/pages/get-a-coach.php:92
+#, fuzzy
 msgid "No Cost"
-msgstr ""
+msgstr "비용 없음"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
@@ -5668,14 +6012,18 @@ msgid "Localized"
 msgstr "현지"
 
 #: site/pages/get-a-coach.php:102
+#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"우리 연결 팀은 귀하의 언어를 구사하고 지리적으로 최대한 가까운 코치와 귀하를 "
+"연결하려고 시도합니다."
 
 #: site/pages/get-a-coach.php:106
+#, fuzzy
 msgid "Experienced"
-msgstr ""
+msgstr "경험이 풍부한"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
 #, fuzzy
@@ -5683,15 +6031,19 @@ msgid "Join a training"
 msgstr "훈련 진행"
 
 #: site/pages/get-a-coach.php:109
+#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"우리의 모든 코치는 Zûme의 개념과 도구를 교육받고 실습합니다. 우리의 모든 코치"
+"는 귀하가 장벽을 극복하고 여정을 밟을 수 있도록 도와줄 수 있습니다."
 
 #: site/pages/home.php:86
+#, fuzzy
 msgid "45+"
-msgstr ""
+msgstr "45세 이상"
 
 #: site/pages/home.php:87
 #, fuzzy
@@ -5699,20 +6051,23 @@ msgid "Languages"
 msgstr "언어"
 
 #: site/pages/home.php:129
+#, fuzzy
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "더욱 예수님을 닮아가는 중... 함께"
 
 #: site/pages/home.php:132
 msgid "Overview"
 msgstr "개요"
 
 #: site/pages/home.php:134
+#, fuzzy
 msgid "Group Discussions"
-msgstr ""
+msgstr "그룹 토론"
 
 #: site/pages/home.php:135
+#, fuzzy
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "자율적"
 
 #: site/pages/home.php:136
 #, fuzzy
@@ -5720,8 +6075,9 @@ msgid "Practice-Oriented"
 msgstr "연습-4가지 밭"
 
 #: site/pages/home.php:137
+#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 개념과 기술"
 
 #: site/pages/home.php:138
 #, fuzzy
@@ -5729,12 +6085,14 @@ msgid "20 hours of Training"
 msgstr "훈련 진행"
 
 #: site/pages/home.php:144
+#, fuzzy
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "무료. 언제든지. 어딘가에."
 
 #: site/pages/home.php:148
+#, fuzzy
 msgid "Gain insight into..."
-msgstr ""
+msgstr "통찰력을 얻으세요..."
 
 #: site/pages/home.php:153
 #, fuzzy
@@ -5747,8 +6105,9 @@ msgid "What's a Disciple?"
 msgstr "제자와 교회의 간단한 정의"
 
 #: site/pages/home.php:156
+#, fuzzy
 msgid "What's a Church?"
-msgstr ""
+msgstr "교회란 무엇입니까?"
 
 #: site/pages/home.php:157
 #, fuzzy
@@ -5756,16 +6115,19 @@ msgid "Keys to Spiritual Growth"
 msgstr "영적 호흡"
 
 #: site/pages/home.php:158
+#, fuzzy
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "개인 성경 공부"
 
 #: site/pages/home.php:159
+#, fuzzy
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "강한 기도생활"
 
 #: site/pages/home.php:160
+#, fuzzy
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "순종하는 믿음의 힘"
 
 #: site/pages/home.php:167
 #, fuzzy
@@ -5783,8 +6145,9 @@ msgid "Telling Your Story"
 msgstr "그룹을 이끌다"
 
 #: site/pages/home.php:171
+#, fuzzy
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "관심을 끄는 구직자"
 
 #: site/pages/home.php:172
 #, fuzzy
@@ -5802,12 +6165,14 @@ msgid "Training Others"
 msgstr "훈련"
 
 #: site/pages/home.php:179 site/pages/home.php:245
+#, fuzzy
 msgid "I'm Ready!"
-msgstr ""
+msgstr "난 준비됐어!"
 
 #: site/pages/home.php:193
+#, fuzzy
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "보통 사람들. 간단한 단계."
 
 #: site/pages/home.php:238
 #, fuzzy
@@ -5815,35 +6180,46 @@ msgid "More about zume"
 msgstr "줌에 대해 더 알아보기"
 
 #: site/pages/home.php:272
+#, fuzzy
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "실제 사람들... 실제 이야기."
 
 #: site/pages/home.php:283
+#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"나는 수년 동안 성경 공부와 교회에 충실하게 참석했지만 여기 Zúme에서 찾은 제자"
+"를 삼는 단순한 진리를 어떻게든 이해하지 못했습니다. ~ C"
 
 #: site/pages/home.php:294
+#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
-msgstr ""
+msgstr "누구나 할 수 있습니다. 특별한 기술이나 훈련이 필요하지 않습니다. ~ J"
 
 #: site/pages/home.php:305
+#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"이것은 대명령에 순종하기를 원하는 모든 제자를 위한 것입니다. Zúme 교육은 일반"
+"적인 기독교 생활 방식을 설명합니다. ~디"
 
 #: site/pages/home.php:316
+#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
 msgstr ""
+"이러한 개념과 기술은 우리 교회와 우리가 세상에 미치는 영향을 변화시켰습니다. "
+"~ R"
 
 #: site/pages/home.php:326
-#, fuzzy
-msgid "Zúme = Yeast"
+#, fuzzy, php-format
+msgid "%s = Yeast"
 msgstr "줌 네트워크"
 
 #: site/pages/home.php:332
@@ -5863,8 +6239,9 @@ msgstr ""
 "어주는 것입니다.  "
 
 #: site/pages/home.php:337
+#, fuzzy
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "다음 단계를 밟을 준비가 되셨나요?"
 
 #: site/pages/home.php:341
 #, fuzzy
@@ -5877,8 +6254,9 @@ msgid "Gather a Group."
 msgstr "그룹 만들기"
 
 #: site/pages/home.php:349
+#, fuzzy
 msgid "Change the World."
-msgstr ""
+msgstr "세상을 바꿔라."
 
 #: site/pages/home.php:352
 #, fuzzy
@@ -5886,8 +6264,9 @@ msgid "Get started"
 msgstr "시작"
 
 #: site/pages/kitchen-sink.php:86
+#, fuzzy
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "부엌 싱크대"
 
 #: site/pages/messages.php:236
 #, fuzzy
@@ -5895,8 +6274,9 @@ msgid "Friend"
 msgstr "사용자 주소"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
+#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr ""
+msgstr "제자에게 힘을 실어줍니다. 언제... Zúme 앱으로 어디서나."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
 #, fuzzy
@@ -5904,37 +6284,45 @@ msgid "Zúme Training App"
 msgstr "줌 훈련"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
+#, fuzzy
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "어디에서나 전체 교육에 액세스하세요."
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
+#, fuzzy
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "Google Play에서 구매하세요"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
+#, fuzzy
 msgid "Offline App"
-msgstr ""
+msgstr "오프라인 앱"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
+#, fuzzy
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "인터넷이 필요 없는 전체 교육"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
+#, fuzzy
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "강좌 및 동영상 콘텐츠를 휴대폰에 다운로드하세요."
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
+#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
+msgstr "인터넷 접속이 제한되거나 제한되는 지역에 적합"
 
 #: site/pages/plan-invite.php:77
+#, fuzzy
 msgid "Please enter a code."
-msgstr ""
+msgstr "코드를 입력하세요."
 
 #: site/pages/plan-invite.php:170
+#, fuzzy
 msgid "Plan Invitation"
-msgstr ""
+msgstr "계획 초대"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -5964,10 +6352,12 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "소셜 사인온 로그인에서 어떤 사용 권한을 요청하나요?"
 
 #: site/pages/privacy-policy.php:91
+#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"아래 프로필 요소는 Facebook 또는 Google 로그인 사용 여부에 따라 변경됩니다."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -6002,9 +6392,10 @@ msgid ""
 msgstr "또한 당신의 훈련 과정 진행 상황도 확인합니다."
 
 #: site/pages/privacy-policy.php:136
+#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
-msgstr ""
+msgstr "다양한 회원가입 및 요청양식을 통해 필요한 정보를 요청하고 있습니다."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6133,28 +6524,36 @@ msgid "Training Guidebook"
 msgstr "훈련 충만"
 
 #: site/pages/resources.php:103
+#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"이제 Zúme 교육을 완전한 통합 문서로 이용할 수 있습니다. 이제 교육의 모든 개"
+"념, 도구, 토론 질문 및 과제를 손 안에서 확인할 수 있습니다. 모든 세션의 QR 코"
+"드를 통해 모든 비디오 콘텐츠에도 액세스할 수 있습니다!"
 
 #: site/pages/resources.php:111
+#, fuzzy
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "무료 다운로드(PDF)"
 
 #: site/pages/resources.php:112
+#, fuzzy
 msgid "Order print copy"
-msgstr ""
+msgstr "인쇄본 주문"
 
 #: site/pages/share.php:83
+#, fuzzy
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "본 링크를 복사하여 친구에게 보내보세요"
 
 #: site/pages/share.php:85
+#, fuzzy
 msgid "Copied"
-msgstr ""
+msgstr "복사됨"
 
 #: site/pages/share.php:122
 msgid "Tools"
@@ -6165,22 +6564,28 @@ msgid "Concepts"
 msgstr "개념"
 
 #: site/pages/share.php:125
+#, fuzzy
 msgid "Sort"
-msgstr ""
+msgstr "정렬"
 
 #: site/pages/share.php:126
+#, fuzzy
 msgid "Items"
-msgstr ""
+msgstr "아이템"
 
 #: site/pages/share.php:134
+#, fuzzy
 msgid "Sharing with Others"
-msgstr ""
+msgstr "다른 사람과 공유"
 
 #: site/pages/share.php:141
+#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"우리가 충실하게 순종하고 주님께서 우리에게 주신 것을 나눌 때, 그분은 더 많은 "
+"것을 나누겠다고 약속하십니다."
 
 #: site/pages/training.php:130
 #, fuzzy
@@ -6193,10 +6598,13 @@ msgid "Create your own training group"
 msgstr "나만의 100인 명단 만들기"
 
 #: site/pages/training.php:136
+#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"친구 몇 명을 모으거나 기존 소그룹과 함께 코스를 진행하세요. 자신만의 교육 그"
+"룹을 만들고 진행 상황을 추적하세요."
 
 #: site/pages/training.php:138
 #, fuzzy
@@ -6204,10 +6612,13 @@ msgid "Create"
 msgstr "3 개월 계획"
 
 #: site/pages/training.php:144
+#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"지금 당장 그룹을 모을 수 없다면 숙련된 Zúme 코치가 이끄는 온라인 교육 그룹 "
+"중 하나에 참여하는 것을 고려해 보세요."
 
 #: site/pages/training.php:149
 #, fuzzy
@@ -6215,10 +6626,13 @@ msgid "Request a coach"
 msgstr "코치 받기"
 
 #: site/pages/training.php:152
+#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"귀하가 훈련을 이해하고 유익한 제자가 되도록 돕기 위해 최선을 다하는 무료 "
+"Zúme 코치와 연결해 드릴 수 있습니다."
 
 #: site/pages/training.php:154
 #, fuzzy
@@ -6245,15 +6659,19 @@ msgid "What is required?"
 msgstr "이메일이 필요합니다."
 
 #: site/pages/training.php:177
+#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"이 자습 과정에서 귀하와 귀하의 교육 그룹은 짧은 비디오, 토론 질문 및 간단한 "
+"연습을 사용하여 다음 분야의 기술과 지식을 개발하게 됩니다."
 
 #: site/pages/training.php:181
+#, fuzzy
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "제자도 개념"
 
 #: site/pages/training.php:195
 #, fuzzy
@@ -6261,10 +6679,13 @@ msgid "Spiritual Practices"
 msgstr "영적 호흡"
 
 #: site/pages/training.php:216
+#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme은 20시간의 훈련입니다. 그러나 해당 20시간은 교육 그룹의 가용성에 따라 다"
+"르게 분할될 수 있습니다."
 
 #: site/pages/training.php:221
 #, fuzzy
@@ -6272,11 +6693,15 @@ msgid "10 Sessions"
 msgstr "과정"
 
 #: site/pages/training.php:228
+#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"원래 Zúme 코스 형식은 2시간 세션 10개입니다. 각 세션은 실용적인 순종 단계와 "
+"세션 사이에 공유하는 방법으로 마무리됩니다. 이 형식은 대개 10주 동안 일주일"
+"에 한 번씩 실행됩니다."
 
 #: site/pages/training.php:233
 #, fuzzy
@@ -6284,22 +6709,31 @@ msgid "20 Sessions"
 msgstr "과정"
 
 #: site/pages/training.php:240
+#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"개념과 기술에 대한 역량을 확보할 수 있는 더 많은 기회와 함께 더 길고 느린 속"
+"도의 과정을 위해 20개 세션 형식에는 각 개념과 도구에 대해 더 많은 연습 기회"
+"가 있습니다."
 
 #: site/pages/training.php:245
+#, fuzzy
 msgid "Intensive"
-msgstr ""
+msgstr "강한"
 
 #: site/pages/training.php:252
+#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme은 각각 4시간씩 5개의 반나절 섹션으로 압축될 수 있습니다. 이는 금요일 저"
+"녁(4시간), 토요일 하루 종일(8시간), 일요일 하루 종일(8시간)로 수행할 수 있습"
+"니다."
 
 #: site/pages/training.php:260
 #, fuzzy
@@ -6312,14 +6746,18 @@ msgid "NOT needed for the course:"
 msgstr "훈련을 시작하겠습니까?"
 
 #: site/pages/training.php:269
+#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"강좌를 진행하기 위해 특별한 허가가 필요하지 않습니다! Zúme은 자기 주도적이고 "
+"자기 주도적이며 오늘부터 시작할 수 있습니다."
 
 #: site/parts/footer.php:31
+#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "3일 집중 코스"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
@@ -6330,12 +6768,47 @@ msgid "Check-in"
 msgstr "체크리스트"
 
 #: site/parts/noscript.php:2
+#, fuzzy
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "이런, 자바스크립트가 꺼져 있습니다"
 
 #: site/parts/noscript.php:3
+#, fuzzy
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "이 페이지를 사용하려면 자바스크립트를 활성화하세요."
+
+#: site/profile/communication-preferences.php:79
+#: utilities/integrations/replace-placeholder.php:173
+#: utilities/integrations/replace-placeholder.php:174
+#: utilities/integrations/replace-placeholder.php:175
+#, fuzzy
+msgid "Update Communication Preferences"
+msgstr "당신이 거주하는 도시 또는 도, 우편 번호는 무엇입니까?"
+
+#: site/profile/communication-preferences.php:81
+#, fuzzy
+msgid "Recieve emails for:"
+msgstr "다음에 대한 이메일 수신:"
+
+#: site/profile/communication-preferences.php:84
+#, fuzzy
+msgid "Training session reminders"
+msgstr "훈련"
+
+#: site/profile/communication-preferences.php:88
+#, fuzzy
+msgid "Annual reporting reminders"
+msgstr "연간 보고 알림"
+
+#: site/profile/communication-preferences.php:92
+#, fuzzy
+msgid "Community updates"
+msgstr "지역 사회"
+
+#: site/profile/communication-preferences.php:96
+#, fuzzy
+msgid "Encouragements"
+msgstr "격려"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6347,8 +6820,9 @@ msgid "your friend"
 msgstr "당신의 프로필"
 
 #: utilities/apis/connect-api.php:235
+#, fuzzy
 msgid "the plan"
-msgstr ""
+msgstr "계획"
 
 #: utilities/apis/cta-api.php:134
 #, fuzzy
@@ -6361,8 +6835,9 @@ msgid "Join Online Training"
 msgstr "전체 훈련과정 보기"
 
 #: utilities/apis/cta-api.php:149
+#, fuzzy
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "자세한 내용을 보려면 온라인 교육에 참여하세요."
 
 #: utilities/apis/cta-api.php:163
 #, fuzzy
@@ -6370,8 +6845,9 @@ msgid "Joined Training!"
 msgstr "전체 훈련과정 보기"
 
 #: utilities/apis/cta-api.php:178
+#, fuzzy
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "여행에 도움을 줄 코치를 구하세요"
 
 #: utilities/apis/cta-api.php:192
 #, fuzzy
@@ -6379,8 +6855,9 @@ msgid "Requested Coach!"
 msgstr "코치 받기"
 
 #: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#, fuzzy
 msgid "Congratulations"
-msgstr ""
+msgstr "축하합니다!"
 
 #: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
 #, fuzzy
@@ -6388,88 +6865,96 @@ msgid "Create a Training"
 msgstr "하나의 훈련"
 
 #: utilities/apis/cta-api.php:207
+#, fuzzy
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "성장에 도움이 되는 교육 만들기"
 
 #: utilities/apis/cta-api.php:221
 #, fuzzy
 msgid "Created Training!"
 msgstr "나만의 100인 명단 만들기"
 
-#: utilities/apis/cta-api.php:236
-msgid "Invite friends to join you on your journey"
-msgstr ""
-
-#: utilities/apis/cta-api.php:251
+#: utilities/apis/cta-api.php:254
+#, fuzzy
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "다른 사람들이 당신을 알 수 있도록 프로필을 설정하세요"
 
-#: utilities/apis/cta-api.php:265
+#: utilities/apis/cta-api.php:268
 #, fuzzy
 msgid "Profile Set"
 msgstr "프로필"
 
-#: utilities/apis/cta-api.php:279 utilities/apis/cta-api.php:281
+#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "3 개월 계획"
 
-#: utilities/apis/cta-api.php:280
+#: utilities/apis/cta-api.php:283
+#, fuzzy
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "성장에 도움이 되는 3개월 계획을 세우세요"
 
-#: utilities/apis/cta-api.php:294
-#, php-format
+#: utilities/apis/cta-api.php:297
+#, fuzzy, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s 잠금 해제됨"
 
-#: utilities/apis/cta-api.php:308
+#: utilities/apis/cta-api.php:311
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "3 개월 계획"
 
-#: utilities/apis/cta-api.php:322 utilities/apis/cta-api.php:324
+#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "3 개월 계획"
 
-#: utilities/apis/cta-api.php:323
+#: utilities/apis/cta-api.php:326
+#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "성장에 도움이 되는 3개월 계획을 완료하세요."
 
-#: utilities/apis/cta-api.php:337
+#: utilities/apis/cta-api.php:340
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "3 개월 계획"
 
-#: utilities/apis/cta-api.php:367 utilities/apis/cta-api.php:369
+#: utilities/apis/cta-api.php:385
 #, fuzzy
-msgid "Join a Hub"
+msgid "Join the community"
 msgstr "지역 사회"
 
-#: utilities/apis/cta-api.php:368
-msgid "Join a hub to help you grow"
-msgstr ""
-
-#: utilities/apis/cta-api.php:385 utilities/apis/cta-api.php:387
+#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "영적 호흡"
 
-#: utilities/apis/cta-api.php:386
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "영적 호흡"
 
-#: utilities/apis/cta-api.php:400 utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "관계 관리-100인 명단"
 
-#: utilities/apis/cta-api.php:401
+#: utilities/apis/cta-api.php:417
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "관계 관리-100인 명단"
+
+#: utilities/apis/plans-api.php:134
+#, fuzzy, php-format
+msgctxt "My first training - username"
+msgid "My first training - %s"
+msgstr "훈련 진행"
+
+#: utilities/apis/plans-api.php:136
+#, fuzzy, php-format
+msgctxt "Training 2 - username"
+msgid "Training %1$d - %2$s"
+msgstr "훈련"
 
 #: utilities/hooks/roles-and-permissions.php:56
 #, fuzzy
@@ -6500,14 +6985,23 @@ msgstr "줌 훈련"
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
+#, fuzzy
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "슬라이드 프레젠테이션 다운로드"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
+#, fuzzy
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Zúme 페이지 공유"
+
+#: utilities/integrations/replace-placeholder.php:169
+#: utilities/integrations/replace-placeholder.php:170
+#: utilities/integrations/replace-placeholder.php:171
+#, fuzzy
+msgid "Zúme Annual Report"
+msgstr "Zúme 연례 보고서"
 
 #: utilities/post-types/posttype-pieces.php:301
 #, fuzzy
@@ -6560,16 +7054,19 @@ msgid "User Phone"
 msgstr "전화"
 
 #: zume-training-system.php:279
+#, fuzzy
 msgid "User Timezone"
-msgstr ""
+msgstr "사용자 시간대"
 
 #: zume-training-system.php:287
+#, fuzzy
 msgid "User Friend Key"
-msgstr ""
+msgstr "사용자 친구 키"
 
 #: zume-training-system.php:295
+#, fuzzy
 msgid "User Preferred Language"
-msgstr ""
+msgstr "사용자 선호 언어"
 
 #: zume-training-system.php:303
 #, fuzzy
@@ -6577,28 +7074,40 @@ msgid "User Preferred Email"
 msgstr "이메일"
 
 #: zume-training-system.php:311
+#, fuzzy
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "선호하는 연락 방법"
 
 #: zume-training-system.php:321
 msgid "Messenger"
-msgstr ""
+msgstr "메신저"
 
-#. Plugin Name of the plugin/theme
-#, fuzzy
-msgid "Zúme - Training System"
-msgstr "줌 교육"
+#~ msgid "Switch Views"
+#~ msgstr "보기 전환"
 
-#. Plugin URI of the plugin/theme
-#. Author URI of the plugin/theme
 #, fuzzy
-msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr "https://github.com/ZumeProject/zume-training"
+#~ msgid "Something went wrong while joining the plan"
+#~ msgstr "문제가 발생했습니다. 죄송합니다. 다시 시도해 주시겠습니까?"
 
-#. Description of the plugin/theme
 #, fuzzy
-msgid "Zume Training System"
-msgstr "줌 훈련"
+#~ msgid "Something went wrong while checking in"
+#~ msgstr "죄송합니다. 오류가 있습니다. 다시 시도하십시오."
+
+#, fuzzy
+#~ msgid "Join a Hub"
+#~ msgstr "지역 사회"
+
+#, fuzzy
+#~ msgid "Zúme - Training System"
+#~ msgstr "줌 교육"
+
+#, fuzzy
+#~ msgid "https://github.com/ZumeProject/zume-training-system"
+#~ msgstr "https://github.com/ZumeProject/zume-training"
+
+#, fuzzy
+#~ msgid "Zume Training System"
+#~ msgstr "줌 훈련"
 
 #, fuzzy
 #~ msgid "Submit Report"
@@ -6636,10 +7145,6 @@ msgstr "줌 훈련"
 #, fuzzy
 #~ msgid "Zúme Training Dashboard"
 #~ msgstr "줌 훈련 자료"
-
-#, fuzzy
-#~ msgid "Update Your Communication Preferences"
-#~ msgstr "당신이 거주하는 도시 또는 도, 우편 번호는 무엇입니까?"
 
 #~ msgid "Coaches"
 #~ msgstr "코치"
@@ -9185,9 +9690,6 @@ msgstr "줌 훈련"
 
 #~ msgid "Facebook already linked with another account."
 #~ msgstr "페이스북은 이미 다른 계정과 연결되어 있습니다."
-
-#~ msgid "Oops. Something went wrong."
-#~ msgstr "죄송합니다. 문제가 발생했습니다."
 
 #~ msgid "Great job! Here's your progress with this concept"
 #~ msgstr "훌륭해요! 본 개념에서 당신의 진행 상황은 다음과 같습니다."
