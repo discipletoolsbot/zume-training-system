@@ -13,7 +13,7 @@
 function debounce(callback, timeout = 500) {
     let timer
 
-    return function(...args) {
+    return function (...args) {
         const context = this
         clearTimeout(timer)
         timer = setTimeout(() => {
@@ -40,18 +40,19 @@ function getLocationGridFromMapbox(mapbox_selected_id, currentLocation) {
             level: currentLocation.level,
             label: currentLocation.label,
             source: 'user',
-            grid_id: false
+            grid_id: false,
         }
-    }
-    else if (id && id !== '' && window.mapbox_results) {
-        const location_meta = window.mapbox_results.features.find((feature) => feature.id === id)
+    } else if (id && id !== '' && window.mapbox_results) {
+        const location_meta = window.mapbox_results.features.find(
+            (feature) => feature.id === id,
+        )
         location_grid_meta = {
             lng: location_meta.center[0],
             lat: location_meta.center[1],
             level: location_meta.place_type[0],
             label: location_meta.place_name,
             source: 'user',
-            grid_id: false
+            grid_id: false,
         }
     }
     return location_grid_meta
@@ -68,9 +69,7 @@ function getLocationGridFromMapbox(mapbox_selected_id, currentLocation) {
  * @returns {function}
  */
 function getAddressSuggestions(dataCallback, mapboxKey) {
-
     return (event) => {
-
         const address = event.target.value
 
         if (address.length < 1) {
@@ -78,15 +77,16 @@ function getAddressSuggestions(dataCallback, mapboxKey) {
         }
 
         const root = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'
-        const settings = '.json?types=country,region,postcode,district,place,locality,neighborhood,address&limit=6&access_token='
+        const settings =
+            '.json?types=country,region,postcode,district,place,locality,neighborhood,address&limit=6&access_token='
         const key = mapboxKey
 
-        const url = root + encodeURI( address ) + settings + key
+        const url = root + encodeURI(address) + settings + key
 
         fetch(url)
             .then((response) => response.json())
             .then((data) => {
-                if ( data.features.length !== 0 ) {
+                if (data.features.length !== 0) {
                     window.mapbox_results = data
                 }
 

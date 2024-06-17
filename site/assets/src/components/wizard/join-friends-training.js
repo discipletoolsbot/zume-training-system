@@ -1,8 +1,7 @@
-import { LitElement, html } from 'lit';
-import { zumeRequest } from '../../js/zumeRequest';
+import { LitElement, html } from 'lit'
+import { zumeRequest } from '../../js/zumeRequest'
 
 export class JoinFriendsTraining extends LitElement {
-
     static get properties() {
         return {
             /**
@@ -26,7 +25,7 @@ export class JoinFriendsTraining extends LitElement {
             message: { attribute: false },
             errorMessage: { attribute: false },
             loading: { attribute: false },
-        };
+        }
     }
 
     constructor() {
@@ -39,12 +38,17 @@ export class JoinFriendsTraining extends LitElement {
 
     firstUpdated() {
         this.loading = true
-        this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
+        this.dispatchEvent(
+            new CustomEvent('loadingChange', {
+                bubbles: true,
+                detail: { loading: this.loading },
+            }),
+        )
         this.message = this.t.please_wait
         /* We need the plan id */
-        const url = new URL( location.href )
-        if ( !url.searchParams.has('code') ) {
-            this.message = ""
+        const url = new URL(location.href)
+        if (!url.searchParams.has('code')) {
+            this.message = ''
             this.setErrorMessage(this.t.broken_link)
             this.loading = false
             return
@@ -53,8 +57,9 @@ export class JoinFriendsTraining extends LitElement {
         const code = url.searchParams.get('code')
         this.code = code
 
-        zumeRequest.post( 'connect/plan', { code: code } )
-            .then( ( data ) => {
+        zumeRequest
+            .post('connect/plan', { code: code })
+            .then((data) => {
                 this.message = this.t.success.replace('%s', data.name)
 
                 const url = new URL(location.href)
@@ -64,7 +69,7 @@ export class JoinFriendsTraining extends LitElement {
             .catch((error) => {
                 console.log(error)
                 this.message = ''
-                if ( error.code === 'bad_plan_code' ) {
+                if (error.code === 'bad_plan_code') {
                     this.setErrorMessage(this.t.broken_link)
                 } else {
                     this.setErrorMessage(this.t.error)
@@ -72,12 +77,19 @@ export class JoinFriendsTraining extends LitElement {
             })
             .finally(() => {
                 this.loading = false
-                this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
-                this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
+                this.dispatchEvent(
+                    new CustomEvent('loadingChange', {
+                        bubbles: true,
+                        detail: { loading: this.loading },
+                    }),
+                )
+                this.dispatchEvent(
+                    new CustomEvent('wizard:finish', { bubbles: true }),
+                )
             })
     }
 
-    setErrorMessage( message ) {
+    setErrorMessage(message) {
         this.errorMessage = message
     }
 
@@ -85,13 +97,20 @@ export class JoinFriendsTraining extends LitElement {
         return html`
             <h1>${this.t.title}</h1>
             <p>${this.message}</p>
-            <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-            <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
-        `;
+            <span
+                class="loading-spinner ${this.loading ? 'active' : ''}"
+            ></span>
+            <div
+                class="warning banner"
+                data-state=${this.errorMessage.length ? '' : 'empty'}
+            >
+                ${this.errorMessage}
+            </div>
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('join-friends-training', JoinFriendsTraining);
+customElements.define('join-friends-training', JoinFriendsTraining)

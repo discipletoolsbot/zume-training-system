@@ -1,7 +1,7 @@
-import { LitElement, html } from 'lit';
-import { Modules, Steps, Wizards } from './wizard-constants';
-import { WizardStateManager } from './wizard-state-manager';
-import { DateTime } from 'luxon';
+import { LitElement, html } from 'lit'
+import { Modules, Steps, Wizards } from './wizard-constants'
+import { WizardStateManager } from './wizard-state-manager'
+import { DateTime } from 'luxon'
 
 export class MakeTraining extends LitElement {
     static get properties() {
@@ -56,10 +56,13 @@ export class MakeTraining extends LitElement {
         this.selectedDays = []
         this.completedSteps = []
         this.calendarStart = DateTime.now().startOf('month').toISODate()
-        this.calendarEnd = DateTime.now().plus({ month: 2 }).endOf('month').toISODate()
+        this.calendarEnd = DateTime.now()
+            .plus({ month: 2 })
+            .endOf('month')
+            .toISODate()
         this.calendarView = 'all'
         this.scheduleView = 'calendar'
-}
+    }
 
     willUpdate(properties) {
         const defaultState = {
@@ -70,10 +73,17 @@ export class MakeTraining extends LitElement {
             [Steps.startDate]: { date: DateTime.now().toISODate() },
         }
         if (properties.has('variant')) {
-            this.state = this.stateManager.get(this.variant) || defaultState[this.variant]
+            this.state =
+                this.stateManager.get(this.variant) ||
+                defaultState[this.variant]
 
-            if (this.variant === Steps.howOften || this.variant === Steps.startDate) {
-                const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
+            if (
+                this.variant === Steps.howOften ||
+                this.variant === Steps.startDate
+            ) {
+                const scheduleDecision = this.stateManager.get(
+                    Steps.scheduleDecision,
+                )
                 if (this.isIntensive() || scheduleDecision === 'no') {
                     this._sendDoneStepEvent()
                 }
@@ -101,28 +111,30 @@ export class MakeTraining extends LitElement {
         switch (decision) {
             case 'make':
                 wizard = Wizards.makeAGroup
-                break;
+                break
             case 'join':
                 wizard = Wizards.joinATraining
-                break;
+                break
             default:
-                break;
+                break
         }
         this._sendLoadWizardEvent(wizard)
     }
 
     _sendLoadWizardEvent(wizard, queryParams = {}) {
         const detail = {
-            wizard
+            wizard,
         }
         if (Object.keys(queryParams).length > 0) {
             detail.queryParams = queryParams
         }
-        this.dispatchEvent(new CustomEvent('wizard:load', { bubbles: true, detail }))
+        this.dispatchEvent(
+            new CustomEvent('wizard:load', { bubbles: true, detail }),
+        )
     }
 
     _handleDone(event) {
-        if ( event ) {
+        if (event) {
             event.preventDefault()
         }
 
@@ -130,7 +142,9 @@ export class MakeTraining extends LitElement {
             this.completedSteps = [...this.completedSteps, this.variant]
         }
         if (this.variant === Steps.scheduleDecision && this.state === 'no') {
-            this.completedSteps = this.completedSteps.filter((step) => step !== Steps.howOften && step !== Steps.startDate)
+            this.completedSteps = this.completedSteps.filter(
+                (step) => step !== Steps.howOften && step !== Steps.startDate,
+            )
         }
 
         this._saveState()
@@ -139,12 +153,15 @@ export class MakeTraining extends LitElement {
     }
 
     _sendDoneStepEvent() {
-        const doneStepEvent = new CustomEvent( 'done-step', { bubbles: true } )
+        const doneStepEvent = new CustomEvent('done-step', { bubbles: true })
         this.dispatchEvent(doneStepEvent)
     }
 
     _gotoStep(step) {
-        const doneStepEvent = new CustomEvent( 'wizard:goto-step', { bubbles: true, detail: { slug: step } } )
+        const doneStepEvent = new CustomEvent('wizard:goto-step', {
+            bubbles: true,
+            detail: { slug: step },
+        })
         this.dispatchEvent(doneStepEvent)
     }
 
@@ -164,14 +181,16 @@ export class MakeTraining extends LitElement {
             this.state = event.target.value
         }
         if (['date', 'time'].includes(event.target.type)) {
-            this.state = {...this.state, [event.target.name]: event.target.value }
+            this.state = {
+                ...this.state,
+                [event.target.name]: event.target.value,
+            }
         }
 
         this.stateManager.add(this.variant, this.state)
     }
 
     _buildSelectedDays() {
-
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const howOften = this.stateManager.get(Steps.howOften)
         const startDate = this.stateManager.get(Steps.startDate)?.date
@@ -196,13 +215,21 @@ export class MakeTraining extends LitElement {
             const date = DateTime.fromISO(startDate)
             for (let i = 1; i < Number(howManySessions) + 1; i++) {
                 selectedDays.push({
-                    date: date.plus({weeks: weekInterval * ( i - 1 )}).toISODate(),
+                    date: date
+                        .plus({ weeks: weekInterval * (i - 1) })
+                        .toISODate(),
                     id: this.createId(),
                 })
             }
             this.selectedDays = selectedDays
-            this.calendarStart = DateTime.fromISO(date).startOf('month').toISODate()
-            this.calendarEnd = DateTime.fromISO(selectedDays[selectedDays.length - 1].date).endOf('month').toISODate()
+            this.calendarStart = DateTime.fromISO(date)
+                .startOf('month')
+                .toISODate()
+            this.calendarEnd = DateTime.fromISO(
+                selectedDays[selectedDays.length - 1].date,
+            )
+                .endOf('month')
+                .toISODate()
             this.calendarView = 'all'
         }
     }
@@ -229,11 +256,11 @@ export class MakeTraining extends LitElement {
         }
 
         const sortedDays = days.sort(this.sortDays)
-        for (let i = 1; i < Number( howManySessions ) + 1; i++) {
+        for (let i = 1; i < Number(howManySessions) + 1; i++) {
             const numberString = i < 10 ? `0${i}` : `${i}`
             let time
-            if ( i-1 < sortedDays.length ) {
-                time = DateTime.fromISO(sortedDays[i-1].date).toSeconds()
+            if (i - 1 < sortedDays.length) {
+                time = DateTime.fromISO(sortedDays[i - 1].date).toSeconds()
             } else {
                 time = ''
             }
@@ -244,10 +271,10 @@ export class MakeTraining extends LitElement {
     }
 
     sortDays(a, b) {
-        if ( a.date === b.date ) {
+        if (a.date === b.date) {
             return 0
         }
-        if ( a.date < b.date ) {
+        if (a.date < b.date) {
             return -1
         }
         return 1
@@ -264,17 +291,20 @@ export class MakeTraining extends LitElement {
         switch (howManySessions) {
             case '10':
                 set_type = 'set_a'
-                break;
+                break
             case '20':
                 set_type = 'set_b'
-                break;
+                break
             case '5':
                 set_type = 'set_c'
-                break;
+                break
             default:
-                break;
+                break
         }
-        if (scheduleDecision === 'yes' && this.selectedDays.length !== Number(howManySessions)) {
+        if (
+            scheduleDecision === 'yes' &&
+            this.selectedDays.length !== Number(howManySessions)
+        ) {
             this.errorMessage = this.t.incorrect_number_of_sessions
             setTimeout(() => {
                 this.errorMessage = ''
@@ -287,11 +317,11 @@ export class MakeTraining extends LitElement {
             contact_id: jsObject.profile.contact_id,
             title: name || '',
             set_type,
-            set: this._buildSet(this.selectedDays)
+            set: this._buildSet(this.selectedDays),
         }
 
         this.loading = true
-        makeRequest( 'POST', 'plan', postData, 'zume_system/v1' )
+        makeRequest('POST', 'plan', postData, 'zume_system/v1')
             .then((data) => {
                 this._handleFinish(data.join_key)
             })
@@ -322,7 +352,7 @@ export class MakeTraining extends LitElement {
     }
 
     createId() {
-        return sha256(Math.random(0,10000)).slice(0, 6)
+        return sha256(Math.random(0, 10000)).slice(0, 6)
     }
     addDate(event) {
         const { date } = event.detail
@@ -339,12 +369,12 @@ export class MakeTraining extends LitElement {
 
         console.log(id)
 
-        const index =  this.selectedDays.findIndex((day) => id === day.id)
+        const index = this.selectedDays.findIndex((day) => id === day.id)
 
         if (index > -1) {
             this.selectedDays = [
                 ...this.selectedDays.slice(0, index),
-                ...this.selectedDays.slice(index + 1)
+                ...this.selectedDays.slice(index + 1),
             ]
         }
     }
@@ -359,199 +389,440 @@ export class MakeTraining extends LitElement {
     }
 
     render() {
-        const howManySessions = Number( this.stateManager.get(Steps.howManySessions) )
+        const howManySessions = Number(
+            this.stateManager.get(Steps.howManySessions),
+        )
         const scheduleDecision = this.stateManager.get(Steps.scheduleDecision)
         let progressText = ''
         let progressColor = ''
         if (this.selectedDays.length < howManySessions) {
-            progressText = this.t.x_of_total_selected.replace('%1$s', this.selectedDays.length).replace('%2$s', howManySessions)
+            progressText = this.t.x_of_total_selected
+                .replace('%1$s', this.selectedDays.length)
+                .replace('%2$s', howManySessions)
             progressColor = 'var(--z-brand-light)'
         }
-        if ( this.selectedDays.length === howManySessions ) {
+        if (this.selectedDays.length === howManySessions) {
             progressText = this.t.all_selected.replace('%s', howManySessions)
             progressColor = 'var(--z-success)'
         }
-        if ( this.selectedDays.length > howManySessions ) {
-            progressText = this.t.too_many_selected.replace('%s', this.selectedDays.length - howManySessions)
+        if (this.selectedDays.length > howManySessions) {
+            progressText = this.t.too_many_selected.replace(
+                '%s',
+                this.selectedDays.length - howManySessions,
+            )
             progressColor = 'var(--z-error-main)'
         }
 
         return html`
             <div class="stack-1 position-relative">
-                ${this.variant === Steps.planDecision ? html`
-                    <div class="stack">
-                        <span class="z-icon-start-group brand-light f-7"></span>
-                        <h2>${this.t.join_or_start_a_training}</h2>
-                        <div class="stack" data-fit-content>
-                            <button class="btn tight" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
-                            <button class="btn tight" data-decision="join" @click=${this._handlePlanDecision}>${this.t.join_a_public_training}</button>
-                            <button class="btn tight outline" data-decision="skip" @click=${this._handlePlanDecision}>${this.t.skip_for_now}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.howManySessions ? html`
-                    <div class="stack">
-                        <span class="z-icon-session-choice brand-light f-7"></span>
-                        <h2>${this.t.question_which_session}</h2>
-                        <div class="stack" data-fit-content>
-                            <button class="btn tight green ${this.state === '20' ? '' : 'outline'}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
-                            <button class="btn tight green ${this.state === '10' ? '' : 'outline'}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
-                            <button class="btn tight green ${this.state === '5' ? '' : 'outline'}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
-                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.scheduleDecision ? html`
-                    <div class="stack">
-                        <span class="z-icon-session-choice brand-light f-7"></span>
-                        <h2>${this.t.question_schedule_training}</h2>
-                        <div class="stack" data-fit-content>
-                            <button class="btn tight green ${this.state === 'yes' ? '' : 'outline'}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
-                            <button class="btn tight green ${this.state === 'no' ? '' : 'outline'}" data-value="no" @click=${this._handleSelection}>${this.t.no}</button>
-                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.howOften ? html`
-                    <div class="stack">
-                        <span class="z-icon-time brand-light f-7"></span>
-                        <h2>${this.t.question_how_often}</h2>
-                        <div class="stack" data-fit-content>
-                            <button class="btn tight green ${this.state === 'weekly' ? '' : 'outline'}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
-                            <button class="btn tight green ${this.state === 'biweekly' ? '' : 'outline'}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
-                            <button class="btn tight green ${this.state === 'other' ? '' : 'outline'}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
-                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.startDate ? html`
-                    <div class="stack">
-                        <span class="z-icon-start-date brand-light f-7"></span>
-                        <h2>${this.t.question_when_will_you_start}</h2>
-                        <div class="cluster justify-content-center gapy-0">
-                            <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
-                            ${
-                                this.state.date ? html`
-                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300" onclick="this.showPicker()" />
-                                ` : ''
-                            }
-                        </div>
-                        <div class="stack" data-fit-content>
-                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.location ? html`
-                    <div class="stack">
-                        <span class="z-icon-start-date brand-light f-7"></span>
-                        <h2>${this.t.question_where_will_you_meet}</h2>
-                        <p>${this.t.question_where_will_you_meet_help_text}</p>
-                        <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state === 'string' ? this.state : ''} />
-                        <div class="stack" data-fit-content>
-                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.name ? html`
-                    <div class="stack">
-                        <span class="z-icon-start-date brand-light f-7"></span>
-                        <h2>${this.t.question_what_is_the_groups_name}</h2>
-                        <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state === 'string' ? this.state : ''} />
-                        <div class="stack" data-fit-content>
-                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant === Steps.review ? html`
-                    <div class="stack">
-                        <h2><span class="z-icon-overview brand-light"></span> ${this.t.review_training}</h2>
+                ${this.variant === Steps.planDecision
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-start-group brand-light f-7"
+                              ></span>
+                              <h2>${this.t.join_or_start_a_training}</h2>
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn tight"
+                                      data-decision="make"
+                                      @click=${this._handlePlanDecision}
+                                  >
+                                      ${this.t.start_a_training}
+                                  </button>
+                                  <button
+                                      class="btn tight"
+                                      data-decision="join"
+                                      @click=${this._handlePlanDecision}
+                                  >
+                                      ${this.t.join_a_public_training}
+                                  </button>
+                                  <button
+                                      class="btn tight outline"
+                                      data-decision="skip"
+                                      @click=${this._handlePlanDecision}
+                                  >
+                                      ${this.t.skip_for_now}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.howManySessions
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-session-choice brand-light f-7"
+                              ></span>
+                              <h2>${this.t.question_which_session}</h2>
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      '20'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="20"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.hour_1_session_20}
+                                  </button>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      '10'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="10"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.hour_2_session_10}
+                                  </button>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      '5'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="5"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.hour_4_session_5}
+                                  </button>
+                                  <button
+                                      class="btn tight mt-2"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.scheduleDecision
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-session-choice brand-light f-7"
+                              ></span>
+                              <h2>${this.t.question_schedule_training}</h2>
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      'yes'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="yes"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.yes}
+                                  </button>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      'no'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="no"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.no}
+                                  </button>
+                                  <button
+                                      class="btn tight mt-2"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.howOften
+                    ? html`
+                          <div class="stack">
+                              <span class="z-icon-time brand-light f-7"></span>
+                              <h2>${this.t.question_how_often}</h2>
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      'weekly'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="weekly"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.weekly}
+                                  </button>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      'biweekly'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="biweekly"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.biweekly}
+                                  </button>
+                                  <button
+                                      class="btn tight green ${this.state ===
+                                      'other'
+                                          ? ''
+                                          : 'outline'}"
+                                      data-value="other"
+                                      @click=${this._handleSelection}
+                                  >
+                                      ${this.t.other}
+                                  </button>
+                                  <button
+                                      class="btn tight mt-2"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.startDate
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-start-date brand-light f-7"
+                              ></span>
+                              <h2>${this.t.question_when_will_you_start}</h2>
+                              <div
+                                  class="cluster justify-content-center gapy-0"
+                              >
+                                  <input
+                                      type="date"
+                                      name="date"
+                                      class="fit-content m0"
+                                      @change=${this._handleChange}
+                                      value=${this.state.date}
+                                      onclick="this.showPicker()"
+                                  />
+                                  ${this.state.date
+                                      ? html`
+                                            <input
+                                                type="time"
+                                                name="time"
+                                                class="fit-content m0"
+                                                @change=${this._handleChange}
+                                                value=${this.state.time}
+                                                min="00:00"
+                                                max="23:55"
+                                                step="300"
+                                                onclick="this.showPicker()"
+                                            />
+                                        `
+                                      : ''}
+                              </div>
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn fit-content mx-auto"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.location
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-start-date brand-light f-7"
+                              ></span>
+                              <h2>${this.t.question_where_will_you_meet}</h2>
+                              <p>
+                                  ${this.t
+                                      .question_where_will_you_meet_help_text}
+                              </p>
+                              <input
+                                  type="text"
+                                  name="location"
+                                  placeholder=${this.t.location}
+                                  @change=${this._handleChange}
+                                  value=${typeof this.state === 'string'
+                                      ? this.state
+                                      : ''}
+                              />
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn fit-content mx-auto"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.name
+                    ? html`
+                          <div class="stack">
+                              <span
+                                  class="z-icon-start-date brand-light f-7"
+                              ></span>
+                              <h2>
+                                  ${this.t.question_what_is_the_groups_name}
+                              </h2>
+                              <input
+                                  type="text"
+                                  name="name"
+                                  placeholder=${this.t.group_name}
+                                  @change=${this._handleChange}
+                                  value=${typeof this.state === 'string'
+                                      ? this.state
+                                      : ''}
+                              />
+                              <div class="stack" data-fit-content>
+                                  <button
+                                      class="btn fit-content mx-auto"
+                                      @click=${this._handleDone}
+                                  >
+                                      ${this.t.next}
+                                  </button>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant === Steps.review
+                    ? html`
+                          <div class="stack">
+                              <h2>
+                                  <span
+                                      class="z-icon-overview brand-light"
+                                  ></span>
+                                  ${this.t.review_training}
+                              </h2>
 
-                        ${
-                            scheduleDecision === 'yes'
-                                ? html`
-                                    <div class="cluster">
-                                        <button
-                                            class="btn outline red small tight fit-content"
-                                            @click=${this._clearCalendar}
-                                        >
-                                            ${this.t.clear_calendar}
-                                        </button>
-                                        <button class="btn outline small tight ms-auto" @click=${this.toggleView}>${this.scheduleView === 'calendar' ? 'list' : 'calendar'}</button>
-                                    </div>
-                                ` : ''
-                        }
-                        ${
-                            this.scheduleView === 'calendar' && scheduleDecision === 'yes'
-                                ? html`
-                                    <calendar-select
-                                        style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
-                                        startDate=${this.calendarStart}
-                                        endDate=${this.calendarEnd}
-                                        .selectedDays=${this.selectedDays.sort(this.sortDays)}
-                                        view=${this.calendarView}
-                                        showToday
-                                        @day-added=${this.addDate}
-                                        @day-removed=${this.removeDate}
-                                        @calendar-extended=${this.updateCalendarEnd}
-                                    ></calendar-select>
-                                ` : ''
-                        }
-                        ${
-                            this.scheduleView === 'list' && scheduleDecision === 'yes'
-                                ? html`
-                                    <calendar-list
-                                        .t=${this.t}
-                                        .selectedDays=${this.selectedDays}
-                                        @day-added=${this.addDate}
-                                        @day-removed=${this.removeDate}
-                                    ></calendar-list>
-                                ` : ''
-                        }
-                        <div class="make-training__save-area stack" ?data-absolute=${scheduleDecision === 'no'}>
-                            <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
-                            <div class="d-flex align-items-center gap-0 bg-white py-0">
-                                ${
-                                    scheduleDecision === 'yes' ? html`
-                                        <div class="grow-1">
-                                            <span>${progressText}</span>
-                                            <progress-slider
-                                                class="grow-1 mt--3"
-                                                percentage=${this.selectedDays.length / howManySessions * 100}
-                                                style="--primary-color: ${progressColor}"
-                                            ></progress-slider>
+                              ${scheduleDecision === 'yes'
+                                  ? html`
+                                        <div class="cluster">
+                                            <button
+                                                class="btn outline red small tight fit-content"
+                                                @click=${this._clearCalendar}
+                                            >
+                                                ${this.t.clear_calendar}
+                                            </button>
+                                            <button
+                                                class="btn outline small tight ms-auto"
+                                                @click=${this.toggleView}
+                                            >
+                                                ${this.scheduleView ===
+                                                'calendar'
+                                                    ? 'list'
+                                                    : 'calendar'}
+                                            </button>
                                         </div>
-                                    ` : html`<span class="grow-1"></span>`
-                                }
-                                <button
-                                    class="btn tight ms-auto"
-                                    @click=${this._handleCreate}
-                                >
-                                    ${this.t.create}
-                                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                ` : ''}
-                ${this.variant !== Steps.planDecision ? html`
-                    <review-steps
-                        .t=${this.t}
-                        name=${this.stateManager.get(Steps.name)}
-                        howManySessions=${this.stateManager.get(Steps.howManySessions)}
-                        scheduleDecision=${this.stateManager.get(Steps.scheduleDecision)}
-                        howOften=${this.stateManager.get(Steps.howOften)}
-                        time=${this.stateManager.get(Steps.startDate)?.time}
-                        date=${this.stateManager.get(Steps.startDate)?.date}
-                        whatLocation=${this.stateManager.get(Steps.location)}
-                        .display=${this.completedSteps}
-                    ></review-steps>
-                ` : ''}
+                                    `
+                                  : ''}
+                              ${this.scheduleView === 'calendar' &&
+                              scheduleDecision === 'yes'
+                                  ? html`
+                                        <calendar-select
+                                            style="--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)"
+                                            startDate=${this.calendarStart}
+                                            endDate=${this.calendarEnd}
+                                            .selectedDays=${this.selectedDays.sort(
+                                                this.sortDays,
+                                            )}
+                                            view=${this.calendarView}
+                                            showToday
+                                            @day-added=${this.addDate}
+                                            @day-removed=${this.removeDate}
+                                            @calendar-extended=${this
+                                                .updateCalendarEnd}
+                                        ></calendar-select>
+                                    `
+                                  : ''}
+                              ${this.scheduleView === 'list' &&
+                              scheduleDecision === 'yes'
+                                  ? html`
+                                        <calendar-list
+                                            .t=${this.t}
+                                            .selectedDays=${this.selectedDays}
+                                            @day-added=${this.addDate}
+                                            @day-removed=${this.removeDate}
+                                        ></calendar-list>
+                                    `
+                                  : ''}
+                              <div
+                                  class="make-training__save-area stack"
+                                  ?data-absolute=${scheduleDecision === 'no'}
+                              >
+                                  <div
+                                      class="warning banner"
+                                      data-state=${this.errorMessage.length
+                                          ? ''
+                                          : 'empty'}
+                                  >
+                                      ${this.errorMessage}
+                                  </div>
+                                  <div
+                                      class="d-flex align-items-center gap-0 bg-white py-0"
+                                  >
+                                      ${scheduleDecision === 'yes'
+                                          ? html`
+                                                <div class="grow-1">
+                                                    <span>${progressText}</span>
+                                                    <progress-slider
+                                                        class="grow-1 mt--3"
+                                                        percentage=${(this
+                                                            .selectedDays
+                                                            .length /
+                                                            howManySessions) *
+                                                        100}
+                                                        style="--primary-color: ${progressColor}"
+                                                    ></progress-slider>
+                                                </div>
+                                            `
+                                          : html`<span class="grow-1"></span>`}
+                                      <button
+                                          class="btn tight ms-auto"
+                                          @click=${this._handleCreate}
+                                      >
+                                          ${this.t.create}
+                                          <span
+                                              class="loading-spinner ${this
+                                                  .loading
+                                                  ? 'active'
+                                                  : ''}"
+                                          ></span>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      `
+                    : ''}
+                ${this.variant !== Steps.planDecision
+                    ? html`
+                          <review-steps
+                              .t=${this.t}
+                              name=${this.stateManager.get(Steps.name)}
+                              howManySessions=${this.stateManager.get(
+                                  Steps.howManySessions,
+                              )}
+                              scheduleDecision=${this.stateManager.get(
+                                  Steps.scheduleDecision,
+                              )}
+                              howOften=${this.stateManager.get(Steps.howOften)}
+                              time=${this.stateManager.get(Steps.startDate)
+                                  ?.time}
+                              date=${this.stateManager.get(Steps.startDate)
+                                  ?.date}
+                              whatLocation=${this.stateManager.get(
+                                  Steps.location,
+                              )}
+                              .display=${this.completedSteps}
+                          ></review-steps>
+                      `
+                    : ''}
             </div>
-        `;
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('make-training', MakeTraining);
+customElements.define('make-training', MakeTraining)

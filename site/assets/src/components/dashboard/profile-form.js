@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html } from 'lit'
 
 export class ProfileForm extends LitElement {
     static get properties() {
@@ -6,8 +6,8 @@ export class ProfileForm extends LitElement {
             userProfile: { type: Object },
             loading: { type: Boolean, attribute: false },
             locations: { type: Array, attribute: false },
-            infosOpen: { type: Array, attribute: false }
-        };
+            infosOpen: { type: Array, attribute: false },
+        }
     }
     constructor() {
         super()
@@ -20,10 +20,15 @@ export class ProfileForm extends LitElement {
         this.nameInput = this.renderRoot.querySelector('#full_name')
         this.phoneInput = this.renderRoot.querySelector('#phone')
         this.emailInput = this.renderRoot.querySelector('#email')
-        this.preferredEmailInput = this.renderRoot.querySelector('#communications_email')
+        this.preferredEmailInput = this.renderRoot.querySelector(
+            '#communications_email',
+        )
         this.cityInput = this.renderRoot.querySelector('#city')
-        this.prefferedLanguageInput = this.renderRoot.querySelector('#preferred_language')
-        this.addressResultsContainer = this.renderRoot.querySelector('#address_results')
+        this.prefferedLanguageInput = this.renderRoot.querySelector(
+            '#preferred_language',
+        )
+        this.addressResultsContainer =
+            this.renderRoot.querySelector('#address_results')
     }
 
     submitProfileForm(e) {
@@ -36,50 +41,60 @@ export class ProfileForm extends LitElement {
         const preferred_language = this.prefferedLanguageInput.value
 
         const data = {
-          name,
-          phone,
-          email,
-          communications_email,
-          preferred_language,
+            name,
+            phone,
+            email,
+            communications_email,
+            preferred_language,
         }
 
-        data.location_grid_meta = getLocationGridFromMapbox(this.mapboxSelectedId, this.userProfile.location)
+        data.location_grid_meta = getLocationGridFromMapbox(
+            this.mapboxSelectedId,
+            this.userProfile.location,
+        )
 
         this.loading = true
 
         /* submit data to profile API endpoint */
-        fetch( jsObject.rest_endpoint + '/profile', {
+        fetch(jsObject.rest_endpoint + '/profile', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
-                'X-WP-Nonce': jsObject.nonce
-            }
-        } )
-        .then((response) => response.json())
-        .then((profile) => {
-            const event = new CustomEvent( 'user-profile:change', { bubbles: true, detail: profile} )
-            this.dispatchEvent(event)
-            const stateChangeEvent = new CustomEvent( 'user-state:change', { bubbles: true } )
-            this.dispatchEvent(stateChangeEvent)
+                'X-WP-Nonce': jsObject.nonce,
+            },
         })
-        .catch((error) => {
-            console.error(error)
-        })
-        .finally(() => {
-            this.loading = false
-        })
+            .then((response) => response.json())
+            .then((profile) => {
+                const event = new CustomEvent('user-profile:change', {
+                    bubbles: true,
+                    detail: profile,
+                })
+                this.dispatchEvent(event)
+                const stateChangeEvent = new CustomEvent('user-state:change', {
+                    bubbles: true,
+                })
+                this.dispatchEvent(stateChangeEvent)
+            })
+            .catch((error) => {
+                console.error(error)
+            })
+            .finally(() => {
+                this.loading = false
+            })
     }
 
     /* I couldn't get this to bind correctly, so have made an arrow function to implicitly gain access to 'this' of the class */
     addressCallback = (data) => {
-        if ( data.features.length < 1 ) {
+        if (data.features.length < 1) {
             this.locations = -1
         } else {
             this.locations = data.features
         }
     }
 
-    processLocation = debounce(getAddressSuggestions(this.addressCallback, jsObject.map_key))
+    processLocation = debounce(
+        getAddressSuggestions(this.addressCallback, jsObject.map_key),
+    )
 
     selectAddress(e) {
         /* Escape placeName */
@@ -183,28 +198,33 @@ export class ProfileForm extends LitElement {
                 </div>
                     ${
                         !Array.isArray(this.locations)
-                        ? html`
-                            ${jsObject.translations.no_locations}
-                        `
-                        : ''
+                            ? html` ${jsObject.translations.no_locations} `
+                            : ''
                     }
                     ${
-                        Array.isArray(this.locations) && this.locations.length > 0
-                        ? html`
-                            <div id="address_results" class="stack--3 fit-content mx-auto my-0">
-                                ${ this.locations.map((feature) => html`
-                                    <div
-                                        class="btn rounded"
-                                        role="button"
-                                        id="${feature.id}"
-                                        data-place-name="${feature.place_name}"
-                                        @click=${this.selectAddress}
-                                    >
-                                        ${feature.place_name}
-                                    </div>
-                                `)}
-                            </div>
-                        ` : ''
+                        Array.isArray(this.locations) &&
+                        this.locations.length > 0
+                            ? html`
+                                  <div
+                                      id="address_results"
+                                      class="stack--3 fit-content mx-auto my-0"
+                                  >
+                                      ${this.locations.map(
+                                          (feature) => html`
+                                              <div
+                                                  class="btn rounded"
+                                                  role="button"
+                                                  id="${feature.id}"
+                                                  data-place-name="${feature.place_name}"
+                                                  @click=${this.selectAddress}
+                                              >
+                                                  ${feature.place_name}
+                                              </div>
+                                          `,
+                                      )}
+                                  </div>
+                              `
+                            : ''
                     }
                 </div>
 
@@ -213,13 +233,17 @@ export class ProfileForm extends LitElement {
                     <div class="d-flex align-items-center">
                         <select class="input" name="preferred_language" id="preferred_language">
 
-                        ${
-                            Object.values(jsObject.languages).map((item) => html`
-                                <option value=${item.code} ?selected=${this.userProfile.preferred_language === item.code}>
+                        ${Object.values(jsObject.languages).map(
+                            (item) => html`
+                                <option
+                                    value=${item.code}
+                                    ?selected=${this.userProfile
+                                        .preferred_language === item.code}
+                                >
                                     ${item.nativeName} - ${item.enDisplayName}
                                 </option>
-                            `)
-                        }
+                            `,
+                        )}
 
                         </select>
                         <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('preferred_language')}>
@@ -238,11 +262,11 @@ export class ProfileForm extends LitElement {
                 <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
 
             </form>
-        `;
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('profile-form', ProfileForm);
+customElements.define('profile-form', ProfileForm)

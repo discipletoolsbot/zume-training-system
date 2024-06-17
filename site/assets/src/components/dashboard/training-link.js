@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html } from 'lit'
 import { NavLink } from './nav-link'
 
 export class TrainingLink extends NavLink {
@@ -21,4 +21,4 @@ export class TrainingLink extends NavLink {
         `
     }
 }
-customElements.define('training-link', TrainingLink);
+customElements.define('training-link', TrainingLink)

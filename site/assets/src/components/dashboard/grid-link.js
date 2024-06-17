@@ -1,4 +1,4 @@
-import { html } from 'lit';
+import { html } from 'lit'
 import { NavLink } from './nav-link'
 
 export class GridLink extends NavLink {
@@ -7,9 +7,7 @@ export class GridLink extends NavLink {
     }
 
     renderText() {
-        return this.text.split(' ').map((word) => html`
-            <span>${word}</span>
-        `)
+        return this.text.split(' ').map((word) => html` <span>${word}</span> `)
     }
 
     getIcon() {
@@ -30,7 +28,7 @@ export class GridLink extends NavLink {
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
             </a>
-        `;
+        `
     }
 }
-customElements.define('grid-link', GridLink);
+customElements.define('grid-link', GridLink)

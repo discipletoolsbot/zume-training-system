@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css } from 'lit'
 
 export class ProgressSlider extends LitElement {
     static styles = [
@@ -6,7 +6,7 @@ export class ProgressSlider extends LitElement {
             :host {
                 display: block;
                 --ps-primary-color: var(--primary-color, #7cb8fc);
-                --ps-secondary-color: var(--secondary-color, #C1C1C1);
+                --ps-secondary-color: var(--secondary-color, #c1c1c1);
             }
             .progress-bar {
                 height: 20px;
@@ -22,20 +22,25 @@ export class ProgressSlider extends LitElement {
                 background-color: var(--ps-primary-color);
                 transition: width 100ms linear;
             }
-        `
-    ];
+        `,
+    ]
     static get properties() {
         return {
             percentage: { type: Number },
-        };
+        }
     }
 
     render() {
         return html`
             <div class="progress-bar">
-                <div class="progress-bar__slider" style="--percentage:${Number(this.percentage) > 100 ? '100' : this.percentage}%"></div>
+                <div
+                    class="progress-bar__slider"
+                    style="--percentage:${Number(this.percentage) > 100
+                        ? '100'
+                        : this.percentage}%"
+                ></div>
             </div>
-        `;
+        `
     }
 }
-customElements.define('progress-slider', ProgressSlider);
+customElements.define('progress-slider', ProgressSlider)

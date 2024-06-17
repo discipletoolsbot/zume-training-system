@@ -1,11 +1,11 @@
-import { LitElement, html } from 'lit';
-import { repeat } from 'lit/directives/repeat.js';
+import { LitElement, html } from 'lit'
+import { repeat } from 'lit/directives/repeat.js'
 
 export class DashCta extends LitElement {
     static get properties() {
         return {
             ctas: { type: Array, attribute: false },
-        };
+        }
     }
 
     static FADE_TIMEOUT = 3000
@@ -29,18 +29,24 @@ export class DashCta extends LitElement {
     }
 
     connectedCallback() {
-        super.connectedCallback();
+        super.connectedCallback()
 
         window.addEventListener('ctas:changed', this.manageCtas)
         this.addEventListener('begin-cta-transitions', this.transitionIn)
-        this.addEventListener('cta-transition-in-ended', this.logCelebrationsSeen)
+        this.addEventListener(
+            'cta-transition-in-ended',
+            this.logCelebrationsSeen,
+        )
     }
     disconnectedCallback() {
-        super.disconnectedCallback();
+        super.disconnectedCallback()
 
         window.removeEventListener('ctas:changed', this.manageCtas)
         this.removeEventListener('begin-cta-transitions', this.transitionIn)
-        this.removeEventListener('cta-transition-in-ended', this.logCelebrationsSeen)
+        this.removeEventListener(
+            'cta-transition-in-ended',
+            this.logCelebrationsSeen,
+        )
     }
     firstUpdated() {
         this.manageCtas()
@@ -60,10 +66,17 @@ export class DashCta extends LitElement {
         const newCtas = this.getCtas()
 
         /* Compare new to old to get the diff */
-        const [ comingCtas, stayingCtas, goingCtas ] = this.diffCtas(newCtas, this.ctas)
+        const [comingCtas, stayingCtas, goingCtas] = this.diffCtas(
+            newCtas,
+            this.ctas,
+        )
 
-        const celebrations = [...comingCtas, ...stayingCtas].filter(({content_template}) => content_template === 'celebration')
-        const nonCelebrations = [...comingCtas, ...stayingCtas].filter(({content_template}) => content_template !== 'celebration')
+        const celebrations = [...comingCtas, ...stayingCtas].filter(
+            ({ content_template }) => content_template === 'celebration',
+        )
+        const nonCelebrations = [...comingCtas, ...stayingCtas].filter(
+            ({ content_template }) => content_template !== 'celebration',
+        )
 
         const organisedCtas = [...celebrations, ...nonCelebrations]
         const organisedCtaKeys = this.getCtaKeys(organisedCtas)
@@ -75,7 +88,10 @@ export class DashCta extends LitElement {
         this.celebrations = celebrations
 
         this.hiddenCtaKeys = this.getCtaKeys(comingCtas)
-        this.removedCtaKeys = [...goingCtaKeys, ...organisedCtaKeys.slice(DashCta.MAX_CTAS)]
+        this.removedCtaKeys = [
+            ...goingCtaKeys,
+            ...organisedCtaKeys.slice(DashCta.MAX_CTAS),
+        ]
         this.initialCtaKeys = organisedCtaKeys.slice(0, DashCta.MAX_CTAS)
 
         if (this.ctas.length > 0) {
@@ -96,9 +112,20 @@ export class DashCta extends LitElement {
     diffCtas(newCtas, oldCtas) {
         /* Get only new, only old and same */
         /* [ a, b, c] [ b, c, d, e ] */
-        const onlyNew = newCtas.filter(({key: newKey}) => oldCtas.findIndex(({key: oldKey}) => oldKey === newKey) === -1)
-        const onlyOld = oldCtas.filter(({key: oldKey}) => newCtas.findIndex(({key: newKey}) => newKey === oldKey) === -1)
-        const inBoth = oldCtas.filter(({key: oldKey}) => newCtas.findIndex(({key: newKey}) => newKey === oldKey) > -1)
+        const onlyNew = newCtas.filter(
+            ({ key: newKey }) =>
+                oldCtas.findIndex(({ key: oldKey }) => oldKey === newKey) ===
+                -1,
+        )
+        const onlyOld = oldCtas.filter(
+            ({ key: oldKey }) =>
+                newCtas.findIndex(({ key: newKey }) => newKey === oldKey) ===
+                -1,
+        )
+        const inBoth = oldCtas.filter(
+            ({ key: oldKey }) =>
+                newCtas.findIndex(({ key: newKey }) => newKey === oldKey) > -1,
+        )
 
         return [onlyNew, inBoth, onlyOld]
     }
@@ -110,18 +137,21 @@ export class DashCta extends LitElement {
         }, DashCta.TRANSITION_TIMEOUT)
     }
     logCelebrationsSeen() {
-        this.celebrations.forEach(({type, subtype}) => {
+        this.celebrations.forEach(({ type, subtype }) => {
             makeRequest('POST', 'log', { type, subtype }, 'zume_system/v1')
         })
         const celebrationKeys = this.getCtaKeys(this.celebrations)
-        jsObject.allCtas = jsObject.allCtas.filter(({key}) => !celebrationKeys.includes(key))
+        jsObject.allCtas = jsObject.allCtas.filter(
+            ({ key }) => !celebrationKeys.includes(key),
+        )
     }
     /**
      * @param {array} outKeys Keys of ctas to transition out
      * @param {array} inKeys Keys of ctas to transition in
      */
     transitionCtas(outKeys, inKeys) {
-        const transitioningInElements = outKeys.length > 0 ? this.getCtaElements(outKeys) : []
+        const transitioningInElements =
+            outKeys.length > 0 ? this.getCtaElements(outKeys) : []
         transitioningInElements.forEach((element) => {
             if (!element) {
                 return
@@ -132,7 +162,8 @@ export class DashCta extends LitElement {
                 element.style.height = ''
             }, 10)
         })
-        const transitioningOutElements = inKeys.length > 0 ? this.getCtaElements(inKeys) : []
+        const transitioningOutElements =
+            inKeys.length > 0 ? this.getCtaElements(inKeys) : []
         transitioningOutElements.forEach((element) => {
             if (!element) {
                 return
@@ -142,7 +173,9 @@ export class DashCta extends LitElement {
         })
     }
     getCtaElements(keys) {
-        return this.renderRoot.querySelectorAll(keys.map((key) => `[data-key="${key}"]`).join(','))
+        return this.renderRoot.querySelectorAll(
+            keys.map((key) => `[data-key="${key}"]`).join(','),
+        )
     }
     /**
      * Get the keys from an arary of CTAs
@@ -150,7 +183,7 @@ export class DashCta extends LitElement {
      * @returns {array}
      */
     getCtaKeys(ctas) {
-        return ctas.map(({key}) => key)
+        return ctas.map(({ key }) => key)
     }
     isWizardLink(link) {
         return link.includes('/wizard/')
@@ -159,37 +192,62 @@ export class DashCta extends LitElement {
         const urlParts = link.split('/')
         const wizardType = urlParts[urlParts.length - 1]
 
-        dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: wizardType } }))
+        dispatchEvent(
+            new CustomEvent('open-wizard', {
+                bubbles: true,
+                detail: { type: wizardType },
+            }),
+        )
     }
 
     renderCta({ content, content_template, key }) {
         const classes = this.hiddenCtaKeys.includes(key) ? 'hiding' : 'showing'
         if (content_template === 'card') {
             return html`
-                <div class="stack | card cta ${classes}" data-key=${key} style="--duration: ${DashCta.TRANSITION_TIMEOUT}ms">
+                <div
+                    class="stack | card cta ${classes}"
+                    data-key=${key}
+                    style="--duration: ${DashCta.TRANSITION_TIMEOUT}ms"
+                >
                     <h2 class="h5 text-center">${content.title}</h2>
                     <p>${content.description}</p>
-                    ${
-                        this.isWizardLink(content.link)
+                    ${this.isWizardLink(content.link)
                         ? html`
-                            <button class="btn" @click=${() => this.openWizard(content.link)}>${content.link_text}</button>
-                        `
+                              <button
+                                  class="btn"
+                                  @click=${() => this.openWizard(content.link)}
+                              >
+                                  ${content.link_text}
+                              </button>
+                          `
                         : html`
-                            <a href="${content.link}" class="btn">${content.link_text}</a>
-                        `
-                    }
-
+                              <a href="${content.link}" class="btn"
+                                  >${content.link_text}</a
+                              >
+                          `}
                 </div>
             `
         }
         if (content_template === 'celebration') {
             return html`
-                <div class="stack | card celebration ${classes}" data-key=${key} style="--duration: ${DashCta.TRANSITION_TIMEOUT}ms">
+                <div
+                    class="stack | card celebration ${classes}"
+                    data-key=${key}
+                    style="--duration: ${DashCta.TRANSITION_TIMEOUT}ms"
+                >
                     <h2 class="h5 text-center bold">${content.title}</h2>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="${jsObject.images_url + '/fireworks-2.svg'}" alt="" />
+                    <div
+                        class="d-flex align-items-center justify-content-between"
+                    >
+                        <img
+                            src="${jsObject.images_url + '/fireworks-2.svg'}"
+                            alt=""
+                        />
                         <img src="${content.image_url}" alt="" />
-                        <img src="${jsObject.images_url + '/fireworks-2.svg'}" alt="" />
+                        <img
+                            src="${jsObject.images_url + '/fireworks-2.svg'}"
+                            alt=""
+                        />
                     </div>
                     <p>${content.description}</p>
                 </div>
@@ -202,11 +260,11 @@ export class DashCta extends LitElement {
             <div class="stack-margin-bottom">
                 ${repeat(this.ctas, (cta) => cta.key, this.renderCta)}
             </div>
-        `;
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('dash-cta', DashCta);
+customElements.define('dash-cta', DashCta)

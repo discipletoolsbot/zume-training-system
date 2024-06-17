@@ -1,8 +1,8 @@
-import { html } from 'lit';
+import { html } from 'lit'
 import { repeat } from 'lit/directives/repeat.js'
-import { DashBoard } from './dash-board';
-import { DashPage } from './dash-page';
-import { zumeRequest } from '../../js/zumeRequest';
+import { DashBoard } from './dash-board'
+import { DashPage } from './dash-page'
+import { zumeRequest } from '../../js/zumeRequest'
 
 export class DashPlans extends DashPage {
     static get properties() {
@@ -15,7 +15,7 @@ export class DashPlans extends DashPage {
             editQuestion: { type: String, attribute: false },
             editAnswer: { type: String, attribute: false },
             editId: { type: Number, attribute: false },
-        };
+        }
     }
 
     constructor() {
@@ -41,13 +41,13 @@ export class DashPlans extends DashPage {
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(document).foundation()
     }
 
     fetchCommitments() {
         const status = this.filterStatus
-        makeRequest('GET', 'commitments', { status }, 'zume_system/v1' )
-            .done( ( data ) => {
+        makeRequest('GET', 'commitments', { status }, 'zume_system/v1')
+            .done((data) => {
                 this.commitments = data
             })
             .always(() => {
@@ -94,28 +94,32 @@ export class DashPlans extends DashPage {
     }
 
     getCommitment(commitmentId) {
-        return this.commitments.find(({id}) => id === commitmentId)
+        return this.commitments.find(({ id }) => id === commitmentId)
     }
 
     completeCommitment(id) {
         let data = {
             id: id,
-            user_id: jsObject.profile.user_id
+            user_id: jsObject.profile.user_id,
         }
-        makeRequest('PUT', 'commitment', data, 'zume_system/v1' ).done( ( data ) => {
-            this.fetchCommitments()
-        })
+        makeRequest('PUT', 'commitment', data, 'zume_system/v1').done(
+            (data) => {
+                this.fetchCommitments()
+            },
+        )
     }
 
     deleteCommitment(id) {
         let data = {
             id: id,
-            user_id: jsObject.profile.user_id
+            user_id: jsObject.profile.user_id,
         }
-        makeRequest('DELETE', 'commitment', data, 'zume_system/v1' ).done( ( data ) => {
-            this.closeMenu(id)
-            this.fetchCommitments()
-        })
+        makeRequest('DELETE', 'commitment', data, 'zume_system/v1').done(
+            (data) => {
+                this.closeMenu(id)
+                this.fetchCommitments()
+            },
+        )
     }
     saveCommitment(event) {
         event.preventDefault()
@@ -130,8 +134,8 @@ export class DashPlans extends DashPage {
         const question = document.querySelector('#edit-question').value
         const answer = document.querySelector('#edit-answer').value
 
-        const date = new Date(); // Now
-        date.setDate(date.getDate() + 30);
+        const date = new Date() // Now
+        date.setDate(date.getDate() + 30)
 
         let data = {
             question,
@@ -140,7 +144,8 @@ export class DashPlans extends DashPage {
             date,
             category: 'post_training_plan',
         }
-        zumeRequest.post('commitment', data)
+        zumeRequest
+            .post('commitment', data)
             .then(() => {
                 this.fetchCommitments()
                 this.closeCommitmentsModal()
@@ -163,7 +168,8 @@ export class DashPlans extends DashPage {
             answer,
         }
         this.saving = true
-        zumeRequest.update('commitment', data)
+        zumeRequest
+            .update('commitment', data)
             .then((response) => {
                 this.closeCommitmentsModal()
                 this.fetchCommitments()
@@ -193,7 +199,9 @@ export class DashPlans extends DashPage {
         jQuery(menu).foundation('close')
     }
     open3MonthPlan() {
-        this.dispatchEvent(new CustomEvent('open-3-month-plan', { bubbles: true }))
+        this.dispatchEvent(
+            new CustomEvent('open-3-month-plan', { bubbles: true }),
+        )
     }
 
     renderListItem(commitment) {
@@ -204,16 +212,18 @@ export class DashPlans extends DashPage {
                 <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
                         ${status === 'closed'
-                            ? html`<span class="icon z-icon-check-mark success"></span>`
+                            ? html`<span
+                                  class="icon z-icon-check-mark success"
+                              ></span>`
                             : html`
-                                <button
-                                    class="btn tight break-anywhere"
-                                    @click=${() => this.completeCommitment(id)}
-                                >
-                                    ${jsObject.translations.done}
-                                </button>
-                            `
-                        }
+                                  <button
+                                      class="btn tight break-anywhere"
+                                      @click=${() =>
+                                          this.completeCommitment(id)}
+                                  >
+                                      ${jsObject.translations.done}
+                                  </button>
+                              `}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${id}">
                         <span class="icon z-icon-kebab brand-light"></span>
@@ -230,12 +240,28 @@ export class DashPlans extends DashPage {
                     data-close-on-click-inside="true"
                 >
                     <ul>
-                        <li><button class="menu-btn" @click=${() => this.openEditCommitmentsModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn red" @click=${() => this.deleteCommitment(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li>
+                            <button
+                                class="menu-btn"
+                                @click=${() =>
+                                    this.openEditCommitmentsModal(id)}
+                            >
+                                <span class="icon z-icon-pencil"></span
+                                >${jsObject.translations.edit}
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                class="menu-btn red"
+                                @click=${() => this.deleteCommitment(id)}
+                            >
+                                <span class="icon z-icon-trash"></span
+                                >${jsObject.translations.delete}
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </li>
-
         `
     }
 
@@ -251,33 +277,97 @@ export class DashPlans extends DashPage {
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
                         <div class="s0">
-                            <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
-                                <span class="visually-hidden">${jsObject.translations.filter}</span>
-                                <span class="icon z-icon-filter" aria-hidden="true"></span>
+                            <button
+                                class="icon-btn f-2"
+                                data-toggle="filter-menu"
+                                ?disabled=${this.showTeaser}
+                                aria-disabled=${this.showTeaser
+                                    ? 'true'
+                                    : 'false'}
+                            >
+                                <span class="visually-hidden"
+                                    >${jsObject.translations.filter}</span
+                                >
+                                <span
+                                    class="icon z-icon-filter"
+                                    aria-hidden="true"
+                                ></span>
                             </button>
-                            <button class="icon-btn f-2" @click=${this.handleOpenCommitmentsModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
-                                <span class="visually-hidden">${jsObject.translations.add_commitments}</span>
-                                <span class="icon z-icon-plus" aria-hidden="true"></span>
+                            <button
+                                class="icon-btn f-2"
+                                @click=${this.handleOpenCommitmentsModal}
+                                ?disabled=${this.showTeaser}
+                                aria-disabled=${this.showTeaser
+                                    ? 'true'
+                                    : 'false'}
+                            >
+                                <span class="visually-hidden"
+                                    >${jsObject.translations
+                                        .add_commitments}</span
+                                >
+                                <span
+                                    class="icon z-icon-plus"
+                                    aria-hidden="true"
+                                ></span>
                             </button>
                         </div>
                     </div>
-                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
+                    <div
+                        class="dropdown-pane"
+                        id="filter-menu"
+                        data-dropdown
+                        data-auto-focus="true"
+                        data-position="bottom"
+                        data-alignment=${this.isRtl ? 'right' : 'left'}
+                        data-close-on-click="true"
+                        data-close-on-click-inside="true"
+                    >
                         <ul>
                             <li>
-                                <button class="menu-btn w-100 ${this.filterStatus === 'open' ? 'selected' : ''}" @click=${() => this.filterCommitments('open')}>
-                                    <span class="icon z-icon-sort-todo" aria-hidden="true"></span>
+                                <button
+                                    class="menu-btn w-100 ${this
+                                        .filterStatus === 'open'
+                                        ? 'selected'
+                                        : ''}"
+                                    @click=${() =>
+                                        this.filterCommitments('open')}
+                                >
+                                    <span
+                                        class="icon z-icon-sort-todo"
+                                        aria-hidden="true"
+                                    ></span>
                                     ${jsObject.translations.active}
                                 </button>
                             </li>
                             <li>
-                                <button class="menu-btn w-100 ${this.filterStatus === 'closed' ? 'selected' : ''}" @click=${() => this.filterCommitments('closed')}>
-                                    <span class="icon z-icon-sort-done" aria-hidden="true"></span>
+                                <button
+                                    class="menu-btn w-100 ${this
+                                        .filterStatus === 'closed'
+                                        ? 'selected'
+                                        : ''}"
+                                    @click=${() =>
+                                        this.filterCommitments('closed')}
+                                >
+                                    <span
+                                        class="icon z-icon-sort-done"
+                                        aria-hidden="true"
+                                    ></span>
                                     ${jsObject.translations.completed}
                                 </button>
                             </li>
                             <li>
-                                <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterCommitments('all')}>
-                                    <span class="icon z-icon-sort-all" aria-hidden="true"></span>
+                                <button
+                                    class="menu-btn w-100 ${this
+                                        .filterStatus === 'all'
+                                        ? 'selected'
+                                        : ''}"
+                                    @click=${() =>
+                                        this.filterCommitments('all')}
+                                >
+                                    <span
+                                        class="icon z-icon-sort-all"
+                                        aria-hidden="true"
+                                    ></span>
                                     ${jsObject.translations.all}
                                 </button>
                             </li>
@@ -285,76 +375,131 @@ export class DashPlans extends DashPage {
                     </div>
                 </div>
                 <div class="dashboard__main content">
-                    ${
-                        this.showTeaser ? html`
-                          <div class="p-2">
-                            <div class="dash-menu__list-item">
-                              <div class="dash-menu__icon-area | stack--5">
-                                <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                    ${this.showTeaser
+                        ? html`
+                              <div class="p-2">
+                                  <div class="dash-menu__list-item">
+                                      <div
+                                          class="dash-menu__icon-area | stack--5"
+                                      >
+                                          <span
+                                              class="icon z-icon-locked dash-menu__list-icon"
+                                          ></span>
+                                      </div>
+                                      <div
+                                          class="dash-menu__text-area | switcher | switcher-width-20"
+                                      >
+                                          <div>
+                                              <h3 class="f-1 bold uppercase">
+                                                  ${jsObject.translations
+                                                      .my_plans_locked}
+                                              </h3>
+                                              <p>
+                                                  ${jsObject.translations
+                                                      .my_plans_locked_explanation}
+                                              </p>
+                                          </div>
+                                          <button
+                                              class="dash-menu__view-button btn tight"
+                                              @click=${this.open3MonthPlan}
+                                          >
+                                              ${jsObject.translations
+                                                  .create_3_month_plan}
+                                          </button>
+                                      </div>
+                                  </div>
                               </div>
-                              <div class="dash-menu__text-area | switcher | switcher-width-20">
-                                <div>
-                                  <h3 class="f-1 bold uppercase">${jsObject.translations.my_plans_locked}</h3>
-                                  <p>${jsObject.translations.my_plans_locked_explanation}</p>
-                                </div>
-                                <button class="dash-menu__view-button btn tight" @click=${this.open3MonthPlan}>
-                                  ${jsObject.translations.create_3_month_plan}
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        ` :  html`
-                                <ul class="list">
-                                  ${
-                                    !this.loading && this.commitments && this.commitments.length > 0
-                                      ? repeat(this.commitments, (commitment) => commitment.id, this.renderListItem)
-                                      : ''
-                                  }
-                                </ul>
-                            `
-                    }
+                          `
+                        : html`
+                              <ul class="list">
+                                  ${!this.loading &&
+                                  this.commitments &&
+                                  this.commitments.length > 0
+                                      ? repeat(
+                                            this.commitments,
+                                            (commitment) => commitment.id,
+                                            this.renderListItem,
+                                        )
+                                      : ''}
+                              </ul>
+                          `}
                 </div>
             </div>
-            <div class="reveal small" id="commitments-form" data-reveal data-v-offset="20">
-                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommitmentsModal}>
-                        <span class="icon z-icon-close"></span>
+            <div
+                class="reveal small"
+                id="commitments-form"
+                data-reveal
+                data-v-offset="20"
+            >
+                <button
+                    class="ms-auto close-btn"
+                    data-close
+                    aria-label=${jsObject.translations.close}
+                    type="button"
+                    @click=${this.closeCommitmentsModal}
+                >
+                    <span class="icon z-icon-close"></span>
                 </button>
                 <form @submit=${this.saveCommitment} class="stack">
                     <div class="form-group">
-                        <label for="edit-question">${jsObject.three_month_plan_translations.question}*</label>
+                        <label for="edit-question"
+                            >${jsObject.three_month_plan_translations
+                                .question}*</label
+                        >
                         <textarea
                             class="input"
                             id="edit-question"
                             type="text"
                             rows="3"
-                            placeholder=${jsObject.three_month_plan_translations.question}
+                            placeholder=${jsObject.three_month_plan_translations
+                                .question}
                             required
                         ></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}*</label>
+                        <label for="edit-answer"
+                            >${jsObject.three_month_plan_translations
+                                .answer}*</label
+                        >
                         <textarea
                             class="input"
                             id="edit-answer"
                             type="text"
-                            placeholder=${jsObject.three_month_plan_translations.answer}
+                            placeholder=${jsObject.three_month_plan_translations
+                                .answer}
                             required
                         ></textarea>
                     </div>
                     <div class="cluster justify-flex-end">
-                        <button type="button" class="btn outline tight" type="button" @click=${this.closeCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
-                        <button type="submit" class="btn tight" type="button" ?disabled=${this.saving}>
+                        <button
+                            type="button"
+                            class="btn outline tight"
+                            type="button"
+                            @click=${this.closeCommitmentsModal}
+                        >
+                            ${jsObject.three_month_plan_translations.cancel}
+                        </button>
+                        <button
+                            type="submit"
+                            class="btn tight"
+                            type="button"
+                            ?disabled=${this.saving}
+                        >
                             ${jsObject.three_month_plan_translations.save}
-                            <span class="loading-spinner ${this.saving ? 'active' : ''}"></span>
+                            <span
+                                class="loading-spinner ${this.saving
+                                    ? 'active'
+                                    : ''}"
+                            ></span>
                         </button>
                     </div>
                 </form>
             </div>
-        `;
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('dash-plans', DashPlans);
+customElements.define('dash-plans', DashPlans)

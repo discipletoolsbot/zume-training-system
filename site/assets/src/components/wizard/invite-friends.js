@@ -1,5 +1,5 @@
-import { LitElement, html } from "lit"
-import { DateTime } from "luxon"
+import { LitElement, html } from 'lit'
+import { DateTime } from 'luxon'
 
 /**
  * Component for inviting friends to a plan
@@ -36,7 +36,7 @@ export class InviteFriends extends LitElement {
     }
 
     connectedCallback() {
-        super.connectedCallback();
+        super.connectedCallback()
 
         const url = new URL(location.href)
 
@@ -45,10 +45,12 @@ export class InviteFriends extends LitElement {
             this.invitecode = joinKey
         }
 
-        this.url = jsObject.site_url + `/app/plan-invite${this.invitecode !== '' ? '?code=' + this.invitecode : ''}`
+        this.url =
+            jsObject.site_url +
+            `/app/plan-invite${this.invitecode !== '' ? '?code=' + this.invitecode : ''}`
         this.loading = true
 
-        makeRequest( 'GET', `plan/${this.invitecode}`, {}, 'zume_system/v1' )
+        makeRequest('GET', `plan/${this.invitecode}`, {}, 'zume_system/v1')
             .then((data) => {
                 if (data.error_code) {
                     this.errorMessage = this.t.broken_link
@@ -102,16 +104,23 @@ export class InviteFriends extends LitElement {
             case 'set_c':
                 return 5
             default:
-                break;
+                break
         }
     }
 
     getInviteText() {
         const nextSession = this.getNextSession()
-        const note = this.t.note.replace('%s', this.training.post_author_display_name)
+        const note = this.t.note.replace(
+            '%s',
+            this.training.post_author_display_name,
+        )
         const location = this.training.location_note
-        const timeOfDayNote = this.training.time_of_day_note ? `, ${this.training.time_of_day_note}` : ''
-        const timezoneNote = this.training.timezone_note ? `, ${this.training.timezone_note}` : ''
+        const timeOfDayNote = this.training.time_of_day_note
+            ? `, ${this.training.time_of_day_note}`
+            : ''
+        const timezoneNote = this.training.timezone_note
+            ? `, ${this.training.timezone_note}`
+            : ''
 
         const inviteText = `${note}
 
@@ -122,9 +131,7 @@ ${this.t.join_url}
 ${this.url}
 
 ${this.t.join_key}: ${this.training.join_key}
-${
-    this.training.zoom_link_note ? `\n${this.training.zoom_link_note}\n` : ''
-}`
+${this.training.zoom_link_note ? `\n${this.training.zoom_link_note}\n` : ''}`
 
         return inviteText
     }
@@ -133,15 +140,13 @@ ${
         const inviteText = this.getInviteText()
 
         if (navigator.clipboard) {
-            navigator.clipboard
-                .writeText(inviteText)
-                .then(() => {
-                    this.copyFeedback = this.t.copy_feedback
+            navigator.clipboard.writeText(inviteText).then(() => {
+                this.copyFeedback = this.t.copy_feedback
 
-                    setTimeout(() => {
-                        this.copyFeedback = ''
-                    }, 3000)
-                })
+                setTimeout(() => {
+                    this.copyFeedback = ''
+                }, 3000)
+            })
         }
     }
 
@@ -154,27 +159,52 @@ ${
                 <h2>${this.t.title}</h2>
                 <p>${this.t.share_with_friends}</p>
 
-                ${
-                    this.loading ? html`<span class="loading-spinner active"></span>` : ''
-                }
-                ${
-                    !this.loading && this.errorMessage !== '' ? html`<span class="banner warning">${this.errorMessage}</span>` : ''
-                }
-                ${
-                    !this.loading && this.errorMessage === '' ? html`
-                        <textarea class="input" rows="9">${inviteText}</textarea>
-                        ${
-                            navigator.clipboard ? html`
-                                <div class="position-relative">
-                                    <button class="btn mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
-                                    <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length ? '' : 'empty'}>${this.copyFeedback}</p>
-                                </div>
-                            ` : ''
-                        }
+                ${this.loading
+                    ? html`<span class="loading-spinner active"></span>`
+                    : ''}
+                ${!this.loading && this.errorMessage !== ''
+                    ? html`<span class="banner warning"
+                          >${this.errorMessage}</span
+                      >`
+                    : ''}
+                ${!this.loading && this.errorMessage === ''
+                    ? html`
+                          <textarea class="input" rows="9">
+${inviteText}</textarea
+                          >
+                          ${navigator.clipboard
+                              ? html`
+                                    <div class="position-relative">
+                                        <button
+                                            class="btn mx-auto fit-content"
+                                            @click=${this.copyInvite}
+                                        >
+                                            ${this.t.copy_invite}
+                                        </button>
+                                        <p
+                                            role="alert"
+                                            aria-live="polite"
+                                            id="copyFeedback"
+                                            class="context-alert"
+                                            data-state=${this.copyFeedback
+                                                .length
+                                                ? ''
+                                                : 'empty'}
+                                        >
+                                            ${this.copyFeedback}
+                                        </p>
+                                    </div>
+                                `
+                              : ''}
 
-                        <share-links url=${this.url} title="${this.t.join_my_plan}" .t=${this.t} alwaysShow ></share-links>
-                    ` : ''
-                }
+                          <share-links
+                              url=${this.url}
+                              title="${this.t.join_my_plan}"
+                              .t=${this.t}
+                              alwaysShow
+                          ></share-links>
+                      `
+                    : ''}
             </div>
         `
     }
@@ -184,4 +214,4 @@ ${
     }
 }
 
-window.customElements.define( 'invite-friends', InviteFriends )
+window.customElements.define('invite-friends', InviteFriends)

@@ -1,7 +1,6 @@
-import { LitElement } from 'lit';
+import { LitElement } from 'lit'
 
 export class DashPage extends LitElement {
-
     constructor() {
         super()
 
@@ -18,7 +17,6 @@ export class DashPage extends LitElement {
     }
 
     attachResizeObeserver() {
-
         /* attach resizeObserver to dash-header-right */
         /* fire updateHeaderStyle when the observer is triggered */
 
@@ -26,7 +24,7 @@ export class DashPage extends LitElement {
 
         const resizeObeserver = new ResizeObserver((entries) => {
             for (let entry of entries) {
-                if ( !entry.contentRect ) {
+                if (!entry.contentRect) {
                     return
                 }
                 const height = Math.round(entry.contentRect.height)
@@ -48,7 +46,7 @@ export class DashPage extends LitElement {
 
         /* If the headerRight is now a lot less than screenwidth, we need to put the headerLeft back to initial */
         let offset
-        if ( width < window.innerWidth / 2 ) {
+        if (width < window.innerWidth / 2) {
             offset = this.initialOffset
         } else {
             offset = this.initialOffset + height

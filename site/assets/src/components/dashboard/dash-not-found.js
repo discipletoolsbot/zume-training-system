@@ -1,8 +1,7 @@
-import { html } from 'lit';
-import { DashPage } from './dash-page';
+import { html } from 'lit'
+import { DashPage } from './dash-page'
 
 export class DashNotFound extends DashPage {
-
     render() {
         return html`
             <div class="dashboard__content">
@@ -11,17 +10,16 @@ export class DashNotFound extends DashPage {
                     <h1 class="h3">Not Found</h1>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main">
-                </div>
+                <div class="dashboard__main"></div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
             </div>
-        `;
+        `
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('dash-not-found', DashNotFound);
+customElements.define('dash-not-found', DashNotFound)

@@ -1,5 +1,5 @@
-import { html } from 'lit';
-import { CourseSlide } from './course-slide';
+import { html } from 'lit'
+import { CourseSlide } from './course-slide'
 
 export class ObeySlide extends CourseSlide {
     render() {
@@ -11,7 +11,9 @@ export class ObeySlide extends CourseSlide {
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span class="icon z-icon-obey-concept"></span>
+                                    <span
+                                        class="icon z-icon-obey-concept"
+                                    ></span>
                                 </div>
                                 <h2 class="title">${this.slide['left'][0]}</h2>
                             </div>
@@ -24,7 +26,9 @@ export class ObeySlide extends CourseSlide {
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span class="icon z-icon-share-concept"></span>
+                                    <span
+                                        class="icon z-icon-share-concept"
+                                    ></span>
                                 </div>
                                 <h2 class="title">${this.slide['left'][1]}</h2>
                             </div>
@@ -35,7 +39,7 @@ export class ObeySlide extends CourseSlide {
                     </div>
                 </div>
             </div>
-        `;
+        `
     }
 }
-customElements.define('obey-slide', ObeySlide);
+customElements.define('obey-slide', ObeySlide)

@@ -1,5 +1,5 @@
-import { html } from 'lit';
-import { CourseSlide } from './course-slide';
+import { html } from 'lit'
+import { CourseSlide } from './course-slide'
 
 export class PraySlide extends CourseSlide {
     render() {
@@ -14,7 +14,9 @@ export class PraySlide extends CourseSlide {
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide['left'][0]}</h2>
-                                <span class="subtitle">${this.slide['length']}</span>
+                                <span class="subtitle"
+                                    >${this.slide['length']}</span
+                                >
                             </div>
                         </div>
                     </div>
@@ -25,7 +27,7 @@ export class PraySlide extends CourseSlide {
                     </div>
                 </div>
             </div>
-        `;
+        `
     }
 }
-customElements.define('pray-slide', PraySlide);
+customElements.define('pray-slide', PraySlide)
