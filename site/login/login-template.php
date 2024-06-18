@@ -473,9 +473,19 @@ switch ( $request_action ) {
                                             </form>
                                         </div>
                                         <script>
+                                            const submitElement = document.getElementById('submit')
                                             function onRegister(token) {
+
+                                                if ( submitElement.getAttribute('aria-disabled') === 'true' ) {
+                                                    return
+                                                }
+
+                                                submitElement.setAttribute('disabled', true)
+                                                submitElement.setAttribute('aria-disabled', 'true')
+                                                submitElement.classList.add('disabled')
                                                 const recaptchaResponseInput = document.querySelector('#g-recaptcha-response')
                                                 recaptchaResponseInput.value = token
+
                                                 document.getElementById('loginform').requestSubmit()
                                             }
                                         </script>
