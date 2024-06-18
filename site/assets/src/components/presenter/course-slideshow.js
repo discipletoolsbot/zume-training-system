@@ -7,7 +7,6 @@ export class CourseSlideshow extends LitElement {
             startSlideKey: { type: String },
             sectionIndex: { attribute: false },
             currentSlide: { attribute: false },
-            index: { attribute: false },
         };
     }
 
@@ -20,6 +19,11 @@ export class CourseSlideshow extends LitElement {
 
         this.listenForKeyboard = this.listenForKeyboard.bind(this)
         this.listenForMouseClick = this.listenForMouseClick.bind(this)
+
+        const html = document.querySelector('html')
+        const dir = html.dataset.dir
+
+        this.isRtl = dir === 'rtl'
     }
 
     reset() {
@@ -154,23 +158,30 @@ export class CourseSlideshow extends LitElement {
         this.currentSlide = slide
     }
 
+    isFirstSlide() {
+        return this.sectionIndex === 0
+    }
+    isSecondSlide() {
+        return this.sectionIndex === 1
+    }
+
     render() {
         if ( this.sectionIndex < 0 ) {
             this.setSlide(0)
         }
         return html`
-            <div class="cover-page course-slideshow">
+            <div class="cover-page course-slideshow" data-index=${this.sectionIndex}>
                 <div>
                     <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
-                <div class="visual-indicator left">
+                <div class="visual-indicator left ${this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''} ${!this.isRtl && this.isFirstSlide() ? 'off' : ''}">
                     <img
                         src="${jsObject.images_url}/chevron.svg"
                         alt=${jsObject.translations.previous_slide}
                         class="svg white rotate-90"
                     />
                 </div>
-                <div class="visual-indicator right">
+                <div class="visual-indicator right ${!this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''}${this.isRtl && this.isFirstSlide() ? 'off' : ''}">
                     <img
                         src="${jsObject.images_url}/chevron.svg"
                         alt=${jsObject.translations.next_slide}
