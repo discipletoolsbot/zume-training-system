@@ -20,6 +20,7 @@ export class DashTrainings extends DashPage {
             sessionToEdit: { type: Object, attribute: false },
             openDetailStates: { type: Object, attribute: false },
             filterStatus: { type: String, attribute: false },
+            filteredItems: { type: Array, attribute: false },
             isEditingTitle: { type: Boolean, attribute: false },
             isSavingTitle: { type: Boolean, attribute: false },
             isSavingSession: { type: Boolean, attribute: false },
@@ -35,6 +36,10 @@ export class DashTrainings extends DashPage {
         this.route = DashBoard.getRoute(RouteNames.myTraining)
         this.sessionToEdit = {}
         this.openDetailStates = {}
+        this.filteredItems = []
+
+        this.filterName = 'my-trainings-filter'
+        this.filterStatus = ZumeStorage.load(this.filterName)
 
         this.renderListItem = this.renderListItem.bind(this)
     }
@@ -90,6 +95,8 @@ export class DashTrainings extends DashPage {
         }
         this.sessions = this.getSessions()
         this.currentSession = this.getCurrentSession()
+
+        this.filteredItems = this.filterItems(this.filterStatus, this.sessions)
     }
     getSessions() {
         const trainingType = this.getTrainingType()
@@ -217,6 +224,7 @@ export class DashTrainings extends DashPage {
     }
     editSession(id, event) {
         this.stopImmediatePropagation(event)
+        this.closeKebabMenu(id)
         const sessionToEdit = this.sessions.find((session) => session.id === id)
 
         const date = DateTime.fromMillis(sessionToEdit.datetime)
@@ -302,6 +310,7 @@ export class DashTrainings extends DashPage {
 
     markSessionCompleted(id, event) {
         this.stopImmediatePropagation(event)
+        this.closeKebabMenu(id)
         makeRequest( 'POST', 'plan/complete-session', { key: this.training.join_key, session_id: id }, 'zume_system/v1' )
             .then((result) => {
                 this.refreshSessions(result)
@@ -334,6 +343,10 @@ export class DashTrainings extends DashPage {
             }
         }
     }
+    closeKebabMenu(sessionId) {
+        console.log(sessionId)
+        jQuery(`#kebab-menu-${sessionId}`).foundation('close')
+    }
     toggleKebabMenu(event) {
         event.stopImmediatePropagation()
         const id = event.currentTarget.dataset.toggle
@@ -341,6 +354,30 @@ export class DashTrainings extends DashPage {
     }
     stopImmediatePropagation(event) {
         event.stopImmediatePropagation()
+    }
+
+    filterSessions(status) {
+        this.filterStatus = status
+        this.filteredItems = this.filterItems(status, this.sessions)
+        ZumeStorage.save(this.filterName, status)
+        this.closeFilter()
+    }
+    filterItems(status, sessions) {
+        if (!this.sessions) {
+            return []
+        }
+        switch (status) {
+            case 'completed':
+                return sessions.filter((item) => item.completed)
+            case 'uncompleted':
+                return sessions.filter((item) => !item.completed)
+            default:
+                return [ ...sessions ]
+        }
+    }
+    closeFilter() {
+        const menu = this.querySelector('#filter-menu')
+        jQuery(menu).foundation('close')
     }
 
     renderListItem(session) {
@@ -415,6 +452,29 @@ export class DashTrainings extends DashPage {
             </li>
         `
     }
+    renderFilterButton() {
+        return html`
+            <button class="icon-btn f-2" data-toggle="filter-menu">
+                <span class="visually-hidden">${jsObject.translations.filter}</span>
+                <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
+            </button>
+            <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
+                <ul>
+                    <li>
+                        <button class="menu-btn w-100 ${this.filterStatus === 'completed' ? 'selected' : ''}" @click=${() => this.filterSessions('completed')}>
+                            ${jsObject.translations.completed}
+                        </button>
+                        <button class="menu-btn w-100 ${this.filterStatus === 'uncompleted' ? 'selected' : ''}" @click=${() => this.filterSessions('uncompleted')}>
+                            ${jsObject.translations.uncompleted}
+                        </button>
+                        <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterSessions('all')}>
+                            ${jsObject.translations.all}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        `
+    }
 
     render() {
         return html`
@@ -459,7 +519,7 @@ export class DashTrainings extends DashPage {
                                                 </div>
                                             </div>
                                         ` : html`
-                                            <div class="d-flex align-items-center gap--5">
+                                            <div class="d-flex align-items-center s--3">
                                                 <h1 class="h3">${this.training?.title ?? ''}</h1>
                                                 <button
                                                     class="icon-btn f-0 brand-light"
@@ -468,15 +528,19 @@ export class DashTrainings extends DashPage {
                                                 >
                                                     <span class="icon z-icon-pencil"></span>
                                                 </button>
+                                                ${this.renderFilterButton()}
                                             </div>
                                         `
                                     }
                                 </div>
                             ` : html`
                                 <h1 class="h3">${this.route.translation}</h1>
+                                ${this.renderFilterButton()}
                             `
                         }
+
                     </div>
+
                     ${
                         this.isEditingTitle ? '' : html`
                             <button
@@ -533,7 +597,7 @@ export class DashTrainings extends DashPage {
                             <ul class="list">
                                 ${
                                     !this.loading && this.sessions && this.sessions.length > 0
-                                    ? repeat(this.sessions, (session) => session.id, this.renderListItem)
+                                    ? repeat(this.filteredItems, (session) => session.id, this.renderListItem)
                                     : ''
                                 }
                             </ul>
