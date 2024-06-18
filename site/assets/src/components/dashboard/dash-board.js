@@ -1014,9 +1014,6 @@ export class DashBoard extends navigator(router(LitElement)) {
                     <profile-form
                         .userProfile=${this.userProfile}
                     ></profile-form>
-                    <a href=${jsObject.urls.logout} class="btn outline"
-                        >${jsObject.translations.logout}</a
-                    >
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>

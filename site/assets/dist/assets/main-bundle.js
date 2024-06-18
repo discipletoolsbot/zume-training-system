@@ -222,7 +222,7 @@ ${this.training.zoom_link_note}
                     <div class="stack">
                         <span class="z-icon-start-group brand-light f-7"></span>
                         <h2>${this.t.join_or_start_a_training}</h2>
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn tight" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
                             <button class="btn tight" data-decision="join" @click=${this._handlePlanDecision}>${this.t.join_a_public_training}</button>
                             <button class="btn tight outline" data-decision="skip" @click=${this._handlePlanDecision}>${this.t.skip_for_now}</button>
@@ -233,7 +233,7 @@ ${this.training.zoom_link_note}
                     <div class="stack">
                         <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_which_session}</h2>
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn tight green ${this.state==="20"?"":"outline"}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
                             <button class="btn tight green ${this.state==="10"?"":"outline"}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
                             <button class="btn tight green ${this.state==="5"?"":"outline"}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
@@ -245,7 +245,7 @@ ${this.training.zoom_link_note}
                     <div class="stack">
                         <span class="z-icon-session-choice brand-light f-7"></span>
                         <h2>${this.t.question_schedule_training}</h2>
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn tight green ${this.state==="yes"?"":"outline"}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
                             <button class="btn tight green ${this.state==="no"?"":"outline"}" data-value="no" @click=${this._handleSelection}>${this.t.no}</button>
                             <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
@@ -256,7 +256,7 @@ ${this.training.zoom_link_note}
                     <div class="stack">
                         <span class="z-icon-time brand-light f-7"></span>
                         <h2>${this.t.question_how_often}</h2>
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn tight green ${this.state==="weekly"?"":"outline"}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
                             <button class="btn tight green ${this.state==="biweekly"?"":"outline"}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
                             <button class="btn tight green ${this.state==="other"?"":"outline"}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
@@ -274,7 +274,7 @@ ${this.training.zoom_link_note}
                                     <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300" onclick="this.showPicker()" />
                                 `:""}
                         </div>
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
@@ -285,7 +285,7 @@ ${this.training.zoom_link_note}
                         <h2>${this.t.question_where_will_you_meet}</h2>
                         <p>${this.t.question_where_will_you_meet_help_text}</p>
                         <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
@@ -295,7 +295,7 @@ ${this.training.zoom_link_note}
                         <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_what_is_the_groups_name}</h2>
                         <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
-                        <div class="stack" data-fit-content>
+                        <div class="stack mx-auto" data-fit-content>
                             <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
                     </div>
@@ -887,9 +887,6 @@ ${this.training.zoom_link_note}
                     <profile-form
                         .userProfile=${this.userProfile}
                     ></profile-form>
-                    <a href=${jsObject.urls.logout} class="btn outline"
-                        >${jsObject.translations.logout}</a
-                    >
                 </div>
             </div>
             <div class="reveal full" id="wizard-modal" data-reveal>
@@ -2091,7 +2088,10 @@ ${this.training.zoom_link_note}
 
                 </div>
 
-                <button class="btn my-0 fit-content" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                <div class="stack my-0" data-fit-content>
+                    <button class="btn" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                    <a href=${jsObject.urls.logout} class="btn outline">${jsObject.translations.logout}</a>
+                </div>
                 <span class="loading-spinner ${this.loading?"active":""}"></span>
 
             </form>

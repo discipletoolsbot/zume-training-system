@@ -234,7 +234,10 @@ export class ProfileForm extends LitElement {
 
                 </div>
 
-                <button class="btn my-0 fit-content" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                <div class="stack my-0" data-fit-content>
+                    <button class="btn" id="submit-profile" ?disabled=${this.loading}>${jsObject.translations.save}</button>
+                    <a href=${jsObject.urls.logout} class="btn outline">${jsObject.translations.logout}</a>
+                </div>
                 <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
 
             </form>
