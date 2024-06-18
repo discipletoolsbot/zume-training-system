@@ -57,6 +57,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // add SSO identities
         $identities = get_user_meta( $user_id, 'firebase_identities', true );
+        $sign_in_providers = get_user_meta( $user_id, 'sign_in_providers', true );
 
         // get coaching connections
         $coaches = [];
@@ -127,6 +128,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
                 'sso_identities' => $identities,
+                'sign_in_providers' => $sign_in_providers,
             ];
             return $zume_user_profile;
         } else {
@@ -148,6 +150,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 'preferred_language' => $user_preferred_language,
                 'contact_preference' => empty( $contact_preference ) ? [] : $contact_preference,
                 'sso_identities' => $identities,
+                'sign_in_providers' => $sign_in_providers,
             ];
         }
     }

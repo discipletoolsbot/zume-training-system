@@ -764,6 +764,12 @@ input::-webkit-calendar-picker-indicator {
 .share-list__wrapper {
   background-color: color('gray-200');
 }
+.token {
+    border-radius: 100px;
+    padding: 0.1rem 0.6rem;
+    background-color: color('brand-fade');
+    color: color('brand-light');
+}
 
 @media (min-width: $break-lg) {
     #share-button,

@@ -108,6 +108,7 @@ export class ProfileForm extends LitElement {
     }
 
     render() {
+        console.log(this.userProfile)
         return html`
             <form action="" class="stack--2" id="profile-form" @submit=${this.submitProfileForm}>
 
@@ -153,6 +154,18 @@ export class ProfileForm extends LitElement {
                         </div>
                     </div>
                 </div>
+                    ${
+                        this.userProfile.sign_in_providers && Array.isArray(this.userProfile.sign_in_providers) ? html`
+                            <label>${jsObject.translations.linked_accounts}</label>
+                            <div class="cluster">
+                                ${
+                                    this.userProfile.sign_in_providers.map((profile) => html`
+                                        <span class="token">${profile}</span>
+                                    `)
+                                }
+                            </div>
+                        ` : ''
+                    }
                 <div class="">
                     <label for="communications_email">${jsObject.translations.communications_email}</label>
                     <div class="d-flex align-items-center">
