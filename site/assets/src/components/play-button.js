@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit'
+import { LitElement, html, css } from "lit"
 
 export class PlayButton extends LitElement {
     constructor() {
@@ -29,6 +29,7 @@ export class PlayButton extends LitElement {
             justify-content: center;
         }
 
+
         .circle {
             width: var(--play-button-size);
             height: var(--play-button-size);
@@ -44,13 +45,12 @@ export class PlayButton extends LitElement {
         }
 
         .triangle {
-            width: 0;
-            height: 0;
-            border-top: calc(var(--play-button-size) / 4.5) solid transparent;
-            border-left: calc(var(--play-button-size) / 2.5) solid
-                var(--play-button-highlight);
-            border-bottom: calc(var(--play-button-size) / 4.5) solid transparent;
-            margin-left: calc(var(--play-button-size) / 10);
+          width: 0;
+          height: 0;
+          border-top: calc(var(--play-button-size) / 4.5) solid transparent;
+          border-left: calc(var(--play-button-size) / 2.5) solid var(--play-button-highlight);
+          border-bottom: calc(var(--play-button-size) / 4.5) solid transparent;
+          margin-left: calc(var(--play-button-size) / 10);
         }
     `
 
@@ -65,4 +65,4 @@ export class PlayButton extends LitElement {
     }
 }
 
-window.customElements.define('play-button', PlayButton)
+window.customElements.define( 'play-button', PlayButton )

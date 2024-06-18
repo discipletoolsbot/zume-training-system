@@ -40,7 +40,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         const redirectRouteIndex = userStage < 4 ? userStage : 3
 
         const redirectRoute = dashRoutes().find(
-            ({ name }) => name === redirectRoutes[redirectRouteIndex],
+            ({ name }) => name === redirectRoutes[redirectRouteIndex]
         )
         const { makeComponent } = redirectRoute.data
 
@@ -129,11 +129,11 @@ export class DashBoard extends navigator(router(LitElement)) {
 
         window.removeEventListener(
             'user-profile:change',
-            this.updateUserProfile,
+            this.updateUserProfile
         )
         window.removeEventListener(
             'toggle-dashboard-sidebar',
-            this.toggleSidebar,
+            this.toggleSidebar
         )
         window.removeEventListener('open-wizard', this.updateWizardType)
         window.removeEventListener('wizard-finished', this.closeWizard)
@@ -145,7 +145,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         window.removeEventListener('user-host:change', this.refetchHost)
         window.removeEventListener(
             'training:changed',
-            this.updateTrainingGroups,
+            this.updateTrainingGroups
         )
 
         window.removeEventListener('load', this.showCelebrationModal)
@@ -164,7 +164,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             this.showingCelebrationModal = false
         })
         this.trainingGroupsOpen = jQuery('#training-groups-menu').hasClass(
-            'is-active',
+            'is-active'
         )
     }
 
@@ -199,7 +199,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         if (routeName === RouteNames.myTraining) {
             const isLocked = DashBoard.getLockedStatus(
                 routeName,
-                this.userState,
+                this.userState
             )
 
             if (isLocked) {
@@ -246,7 +246,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     toggleSidebar() {
         const sidebar = document.querySelector('.dashboard__sidebar')
         const backgroundTrigger = document.querySelector(
-            '.sidebar__trigger-close-background',
+            '.sidebar__trigger-close-background'
         )
         const transitionDuration = '200'
 
@@ -363,10 +363,9 @@ export class DashBoard extends navigator(router(LitElement)) {
 
     isGettingStartedActive() {
         const isActive = DashBoard.childRoutesOf(
-            RouteNames.gettingStarted,
+            RouteNames.gettingStarted
         ).some(
-            (route) =>
-                !DashBoard.getCompletedStatus(route.name, this.userState),
+            (route) => !DashBoard.getCompletedStatus(route.name, this.userState)
         )
         return isActive
     }
@@ -413,7 +412,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     }
     handleCreated3MonthPlan() {
         this.dispatchEvent(
-            new CustomEvent('user-state:change', { bubbles: true }),
+            new CustomEvent('user-state:change', { bubbles: true })
         )
         this.close3MonthPlan()
         this.navigate(this.makeHref(RouteNames.myPlans))
@@ -423,10 +422,10 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.unlockedSection.push(data)
         makeRequest('POST', 'log', data, 'zume_system/v1/').done((data) => {
             this.dispatchEvent(
-                new CustomEvent('user-state:change', { bubbles: true }),
+                new CustomEvent('user-state:change', { bubbles: true })
             )
             this.dispatchEvent(
-                new CustomEvent('user-host:change', { bubbles: true }),
+                new CustomEvent('user-host:change', { bubbles: true })
             )
         })
     }
@@ -464,19 +463,19 @@ export class DashBoard extends navigator(router(LitElement)) {
                 /* If we triggered getting ctas because we unlocked something manually, let's filter out the celebrations due to that */
                 if (this.unlockedSection.length > 0) {
                     const filteredCtaKeys = this.unlockedSection.map(
-                        (data) => data.type + '_' + data.subtype,
+                        (data) => data.type + '_' + data.subtype
                     )
 
                     filteredCtas = ctas.filter(
                         (cta) =>
                             !cta.required_keys.some((key) =>
-                                filteredCtaKeys.includes(key),
-                            ),
+                                filteredCtaKeys.includes(key)
+                            )
                     )
                     filteredOutCtas = ctas.filter((cta) =>
                         cta.required_keys.some((key) =>
-                            filteredCtaKeys.includes(key),
-                        ),
+                            filteredCtaKeys.includes(key)
+                        )
                     )
                 }
 
@@ -491,11 +490,10 @@ export class DashBoard extends navigator(router(LitElement)) {
                 }
 
                 const celebrations = this.allCtas.filter(
-                    ({ content_template }) =>
-                        content_template === 'celebration',
+                    ({ content_template }) => content_template === 'celebration'
                 )
                 const cards = this.allCtas.filter(
-                    ({ content_template }) => content_template === 'card',
+                    ({ content_template }) => content_template === 'card'
                 )
 
                 const organizedCtas = [...celebrations, ...shuffleArray(cards)]
@@ -504,7 +502,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 /* Save it globally for lower down web components to access */
                 jsObject.allCtas = this.allCtas
                 this.dispatchEvent(
-                    new CustomEvent('ctas:changed', { bubbles: true }),
+                    new CustomEvent('ctas:changed', { bubbles: true })
                 )
 
                 if (filteredOutCtas.length > 0) {
@@ -524,7 +522,7 @@ export class DashBoard extends navigator(router(LitElement)) {
 
                     Promise.all(promises).finally(() => {
                         this.dispatchEvent(
-                            new CustomEvent('ctas:changed', { bubbles: true }),
+                            new CustomEvent('ctas:changed', { bubbles: true })
                         )
                     })
                 }
@@ -537,7 +535,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         const ctaArea = this.renderRoot.querySelector('dash-cta')
 
         const celebrations = this.allCtas.filter(
-            ({ content_template }) => content_template === 'celebration',
+            ({ content_template }) => content_template === 'celebration'
         )
 
         if (!ctaArea && celebrations.length > 0) {
@@ -557,16 +555,16 @@ export class DashBoard extends navigator(router(LitElement)) {
                     'POST',
                     'log',
                     { type, subtype },
-                    'zume_system/v1',
+                    'zume_system/v1'
                 ).done(() => {
                     this.dispatchEvent(
-                        new CustomEvent('ctas:changed', { bubbles: true }),
+                        new CustomEvent('ctas:changed', { bubbles: true })
                     )
                 })
             })
             const celebrationKeys = celebrations.map(({ key }) => key)
             this.allCtas = jsObject.allCtas.filter(
-                ({ key }) => !celebrationKeys.includes(key),
+                ({ key }) => !celebrationKeys.includes(key)
             )
             jsObject.allCtas = this.allCtas
         }
@@ -595,10 +593,10 @@ export class DashBoard extends navigator(router(LitElement)) {
         jQuery(document).foundation()
         jQuery('#training-menu').foundation(
             'toggle',
-            jQuery('#training-groups-menu'),
+            jQuery('#training-groups-menu')
         )
         this.trainingGroupsOpen = jQuery('#training-groups-menu').hasClass(
-            'is-active',
+            'is-active'
         )
     }
     redirectToPage(event) {
@@ -625,7 +623,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                     jsObject.training_groups = results
 
                     const newTrainingGroupIds = Object.keys(
-                        this.trainingGroups,
+                        this.trainingGroups
                     ).filter((key) => !oldTrainingGroupKeys.includes(key))
 
                     if (newTrainingGroupIds.length === 1) {
@@ -633,12 +631,12 @@ export class DashBoard extends navigator(router(LitElement)) {
                             this.trainingGroups[newTrainingGroupIds[0]]
 
                         const url = this.makeTrainingHref(
-                            newTrainingGroup.join_key,
+                            newTrainingGroup.join_key
                         )
 
                         this.navigate(url)
                     }
-                },
+                }
             )
         }
     }
@@ -690,7 +688,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 <li class="menu-section" data-no-toggle>
                                     <nav-link
                                         href=${this.makeHref(
-                                            RouteNames.gettingStarted,
+                                            RouteNames.gettingStarted
                                         )}
                                         class="menu-section__title menu-btn"
                                         icon="z-icon-start"
@@ -715,14 +713,14 @@ export class DashBoard extends navigator(router(LitElement)) {
                                             : ''}"
                                     >
                                         ${DashBoard.childRoutesOf(
-                                            RouteNames.gettingStarted,
+                                            RouteNames.gettingStarted
                                         ).map(
                                             (route) => html`
                                                 <li>
                                                     <nav-link
                                                         class="menu-btn"
                                                         href=${this.makeHrefRoute(
-                                                            route.name,
+                                                            route.name
                                                         )}
                                                         icon=${route.icon}
                                                         text=${route.translation}
@@ -737,7 +735,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                       DashBoard.getCompletedStatus(
                                                                           route.name,
                                                                           this
-                                                                              .userState,
+                                                                              .userState
                                                                       )
                                                                   ) {
                                                                       event.preventDefault()
@@ -746,20 +744,20 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                   route.clickHandler(
                                                                       event,
                                                                       this
-                                                                          .dispatchEvent,
+                                                                          .dispatchEvent
                                                                   )
                                                               }
                                                             : null}
                                                         ?completed=${DashBoard.getCompletedStatus(
                                                             route.name,
-                                                            this.userState,
+                                                            this.userState
                                                         )}
                                                     ></nav-link>
                                                     <span
                                                         class="icon z-icon-check-mark success"
                                                     ></span>
                                                 </li>
-                                            `,
+                                            `
                                         )}
                                     </ul>
                                 </li>
@@ -779,17 +777,17 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     data-accordion-menu
                                 >
                                     ${DashBoard.childRoutesOf(
-                                        RouteNames.training,
+                                        RouteNames.training
                                     ).map((route) => {
                                         const isLocked =
                                             DashBoard.getLockedStatus(
                                                 route.name,
-                                                this.userState,
+                                                this.userState
                                             )
                                         const isCompleted =
                                             DashBoard.getCompletedStatus(
                                                 route.name,
-                                                this.userState,
+                                                this.userState
                                             )
                                         const isHandledLink =
                                             route.type === 'handled-link'
@@ -809,7 +807,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                             .my_trainings}
                                                         as="nav"
                                                         href=${this.makeHref(
-                                                            'my-trainings',
+                                                            'my-trainings'
                                                         )}
                                                     ></nav-link>
                                                     <button
@@ -830,7 +828,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         ${repeat(
                                                             Object.entries(
                                                                 this
-                                                                    .trainingGroups,
+                                                                    .trainingGroups
                                                             ),
                                                             ([key]) => key,
                                                             ([
@@ -843,11 +841,11 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                         as="nav"
                                                                         text=${group.title}
                                                                         href=${this.makeTrainingHref(
-                                                                            group.join_key,
+                                                                            group.join_key
                                                                         )}
                                                                     ></nav-link>
                                                                 </li>
-                                                            `,
+                                                            `
                                                         )}
                                                     </ul>
                                                 </li>
@@ -858,7 +856,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                 <nav-link
                                                     class="menu-btn"
                                                     href=${this.makeHrefRoute(
-                                                        route.name,
+                                                        route.name
                                                     )}
                                                     icon=${route.icon}
                                                     text=${route.translation}
@@ -875,7 +873,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                               route.clickHandler(
                                                                   event,
                                                                   this
-                                                                      .dispatchEvent,
+                                                                      .dispatchEvent
                                                               )
                                                           }
                                                         : null}
@@ -901,20 +899,20 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 ></nav-link>
                                 <ul class="nested">
                                     ${DashBoard.childRoutesOf(
-                                        RouteNames.practicing,
+                                        RouteNames.practicing
                                     ).map(
                                         (route) => html`
                                             <li>
                                                 <nav-link
                                                     class="menu-btn"
                                                     href=${this.makeHrefRoute(
-                                                        route.name,
+                                                        route.name
                                                     )}
                                                     icon=${route.icon}
                                                     text=${route.translation}
                                                     ?locked=${DashBoard.getLockedStatus(
                                                         route.name,
-                                                        this.userState,
+                                                        this.userState
                                                     )}
                                                     as="nav"
                                                 ></nav-link>
@@ -922,7 +920,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                     class="icon z-icon-locked gray-500"
                                                 ></span>
                                             </li>
-                                        `,
+                                        `
                                     )}
                                 </ul>
                             </li>
@@ -997,7 +995,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 <span class="icon z-icon-check-mark"></span>
                                 ${content}
                             </p>
-                        `,
+                        `
                     )}
                 </div>
             </div>

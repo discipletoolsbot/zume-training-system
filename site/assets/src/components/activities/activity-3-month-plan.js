@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class Activity3MonthPlan extends LitElement {
     static get properties() {
@@ -11,7 +11,7 @@ export class Activity3MonthPlan extends LitElement {
             answers: { type: Array, attribue: false },
             error: { type: Boolean, attribute: false },
             loading: { type: Boolean, attribute: false },
-        }
+        };
     }
 
     constructor() {
@@ -32,9 +32,7 @@ export class Activity3MonthPlan extends LitElement {
     }
     handleCancel() {
         this.clearAnswers()
-        this.dispatchEvent(
-            new CustomEvent('3-month-plan-cancelled', { bubbles: true }),
-        )
+        this.dispatchEvent(new CustomEvent('3-month-plan-cancelled', { bubbles: true }))
     }
     handleSave() {
         this.loading = true
@@ -44,11 +42,12 @@ export class Activity3MonthPlan extends LitElement {
             return
         }
         this.answers.forEach((answer, i) => {
-            if (answer) {
+            if ( answer ) {
+
                 const question = this.questions[i]
 
-                var date = new Date() // Now
-                date.setDate(date.getDate() + 30)
+                var date = new Date(); // Now
+                date.setDate(date.getDate() + 30);
 
                 /**
                  * TODO: refactor the POST commitment API to take a list of commitments
@@ -56,18 +55,13 @@ export class Activity3MonthPlan extends LitElement {
                  */
                 /* TODO: should the note be created by the API rather than by the POSTer? */
                 /* TODO: same with the category */
-                const request = makeRequest(
-                    'POST',
-                    'commitment',
-                    {
-                        note: `${this.translations.question}: ${question} ${this.translations.answer}: ${answer}`,
-                        question: question,
-                        answer: answer,
-                        date: date,
-                        category: 'post_training_plan',
-                    },
-                    'zume_system/v1',
-                )
+                const request = makeRequest('POST', 'commitment', {
+                    "note": `${this.translations.question}: ${question} ${this.translations.answer}: ${answer}`,
+                    "question": question,
+                    "answer": answer,
+                    "date": date,
+                    "category": "post_training_plan"
+                }, 'zume_system/v1' )
                 requests.push(request.promise())
             }
         })
@@ -75,9 +69,7 @@ export class Activity3MonthPlan extends LitElement {
             .then(() => {
                 this.loading = false
                 this.clearAnswers()
-                this.dispatchEvent(
-                    new CustomEvent('3-month-plan-saved', { bubbles: true }),
-                )
+                this.dispatchEvent(new CustomEvent('3-month-plan-saved', { bubbles: true }))
             })
             .catch((error) => {
                 console.error(error)
@@ -86,18 +78,16 @@ export class Activity3MonthPlan extends LitElement {
             })
     }
     clearAnswers() {
-        this.renderRoot
-            .querySelectorAll('.post-training-plan')
-            .forEach((element) => {
-                element.value = ''
-            })
+        this.renderRoot.querySelectorAll('.post-training-plan').forEach((element) => {
+            element.value = ''
+        })
     }
 
     render() {
         const disabled = this.loading || this.answers.length === 0
         return html`
             <div id="pieces-content" class="stack">
-                ${this.questions.map((question, i) => {
+                ${ this.questions.map( (question, i) => {
                     const questionNumber = `question-${i}`
                     return html`
                         <div class="stack--3">
@@ -111,19 +101,19 @@ export class Activity3MonthPlan extends LitElement {
                                 @input=${this.handleInputChange}
                             ></textarea>
                         </div>
-                    `
+                `
                 })}
                 <div class="cluster justify-flex-end">
-                    ${this.showCancel
-                        ? html`
-                              <button
-                                  class="btn outline uppercase"
-                                  @click=${this.handleCancel}
-                              >
-                                  ${this.translations.cancel}
-                              </button>
-                          `
-                        : ''}
+                    ${
+                        this.showCancel ? html`
+                            <button
+                                class="btn outline uppercase"
+                                @click=${this.handleCancel}
+                            >
+                                ${this.translations.cancel}
+                            </button>
+                            ` : ''
+                    }
                     <button
                         ?disabled=${disabled}
                         aria-disabled=${disabled ? 'true' : 'false'}
@@ -131,19 +121,16 @@ export class Activity3MonthPlan extends LitElement {
                         @click=${this.handleSave}
                     >
                         ${this.translations.save}
-                        <span
-                            class="loading-spinner ${this.loading
-                                ? 'active'
-                                : ''}"
-                        ></span>
+                        <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                     </button>
+
                 </div>
             </div>
-        `
+        `;
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('activity-3-month-plan', Activity3MonthPlan)
+customElements.define('activity-3-month-plan', Activity3MonthPlan);

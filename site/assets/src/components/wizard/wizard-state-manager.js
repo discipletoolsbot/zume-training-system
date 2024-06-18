@@ -3,8 +3,8 @@ export class WizardStateManager {
     STALE_LIFESPAN = 10 * 60 * 1000
     MAX_LIFESPAN = 60 * 60 * 1000
 
-    #wizardState
-    moduleName
+    #wizardState;
+    moduleName;
 
     constructor(moduleName) {
         this.moduleName = moduleName
@@ -15,11 +15,7 @@ export class WizardStateManager {
     #init() {
         const existingState = this.#load()
 
-        if (
-            existingState &&
-            !this.#isOlderThan(existingState, this.MAX_LIFESPAN) &&
-            existingState.module === this.moduleName
-        ) {
+        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) && existingState.module === this.moduleName ) {
             return existingState
         }
 
@@ -27,11 +23,11 @@ export class WizardStateManager {
     }
 
     #createEmpty() {
-        return {
+        return ({
             module: this.moduleName,
             data: {},
             timestamp: Date.now(),
-        }
+        })
     }
 
     #load() {
@@ -41,10 +37,7 @@ export class WizardStateManager {
     #save() {
         this.#refreshTimestamp()
 
-        localStorage.setItem(
-            this.WIZARD_STATE_NAME,
-            JSON.stringify(this.#wizardState),
-        )
+        localStorage.setItem(this.WIZARD_STATE_NAME, JSON.stringify(this.#wizardState))
     }
 
     #refreshTimestamp() {
@@ -63,11 +56,11 @@ export class WizardStateManager {
         return this.#isOlderThan(this.#wizardState, this.STALE_LIFESPAN)
     }
 
-    has(key) {
+    has( key ) {
         return Object.prototype.hasOwnProperty.call(this.#wizardState.data, key)
     }
 
-    get(key) {
+    get( key ) {
         return this.#wizardState.data[key]
     }
 

@@ -1,5 +1,5 @@
-import { html } from 'lit'
-import { CourseSlide } from './course-slide'
+import { html } from 'lit';
+import { CourseSlide } from './course-slide';
 
 export class CheckinSlide extends CourseSlide {
     render() {
@@ -9,9 +9,7 @@ export class CheckinSlide extends CourseSlide {
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon">
-                                <span class="icon z-icon-phone"></span>
-                            </div>
+                            <div class="title-icon"><span class="icon z-icon-phone"></span></div>
                             <h2 class="title">${this.slide['left'][0]}</h2>
                         </div>
                     </div>
@@ -27,17 +25,12 @@ export class CheckinSlide extends CourseSlide {
                                     <img src="${this.slide['right'][2]}" />
                                 </a>
                             </div>
-                            <p>
-                                ${this.slide['right'][3]}
-                                <span style="font-weight:bold;"
-                                    >${this.slide['right'][4]}</span
-                                >
-                            </p>
+                            <p>${this.slide['right'][3]} <span style="font-weight:bold;">${this.slide['right'][4]}</span></p>
                         </div>
                     </div>
                 </div>
             </div>
-        `
+        `;
     }
 }
-customElements.define('checkin-slide', CheckinSlide)
+customElements.define('checkin-slide', CheckinSlide);

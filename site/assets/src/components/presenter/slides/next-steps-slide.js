@@ -1,5 +1,5 @@
-import { html } from 'lit'
-import { CourseSlide } from './course-slide'
+import { html } from 'lit';
+import { CourseSlide } from './course-slide';
 
 export class NextStepsSlide extends CourseSlide {
     render() {
@@ -7,42 +7,26 @@ export class NextStepsSlide extends CourseSlide {
             <div class="slides-card">
                 ${this.renderProgressBar()}
                 <div class="cover-slide">
-                    <h2 class="title text-center" data-small>
-                        ${this.slide['center'][0]}
-                    </h2>
+                    <h2 class="title text-center" data-small>${this.slide['center'][0]}</h2>
                     <div class="two-column middle" data-align-start>
                         <div>
                             <div class="stack align-items-center">
                                 <p><strong>${this.slide['left'][0]}</strong></p>
-                                <div class="qr-code">
-                                    <a
-                                        href="${this.slide['left'][1]}"
-                                        target="_blank"
-                                        ><img src="${this.slide['left'][2]}"
-                                    /></a>
-                                </div>
+                                <div class="qr-code"><a href="${this.slide['left'][1]}" target="_blank"><img src="${this.slide['left'][2]}" /></a></div>
                                 <p>${this.slide['left'][3]}</p>
                             </div>
                         </div>
                         <div>
                             <div class="stack align-items-center">
-                                <p>
-                                    <strong>${this.slide['right'][0]}</strong>
-                                </p>
-                                <div class="qr-code">
-                                    <a
-                                        href="${this.slide['right'][1]}"
-                                        target="_blank"
-                                        ><img src="${this.slide['right'][2]}"
-                                    /></a>
-                                </div>
+                                <p><strong>${this.slide['right'][0]}</strong></p>
+                                <div class="qr-code"><a href="${this.slide['right'][1]}" target="_blank"><img src="${this.slide['right'][2]}" /></a></div>
                                 <p>${this.slide['right'][3]}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        `
+        `;
     }
 }
-customElements.define('next-steps-slide', NextStepsSlide)
+customElements.define('next-steps-slide', NextStepsSlide);

@@ -1,11 +1,11 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class CourseSlide extends LitElement {
     static get properties() {
         return {
             slide: { type: Object },
             id: { type: String },
-        }
+        };
     }
 
     constructor() {
@@ -43,26 +43,23 @@ export class CourseSlide extends LitElement {
 
         const contentAreaHeight = contentArea.getBoundingClientRect().height
 
-        const parentElementTop =
-            contentArea.parentElement.getBoundingClientRect().top
+        const parentElementTop = contentArea.parentElement.getBoundingClientRect().top
         const slideTop = slide.getBoundingClientRect().top
         const slideHeight = slide.getBoundingClientRect().height
 
-        const spaceAvailable = slideHeight - (parentElementTop - slideTop)
+        const spaceAvailable = slideHeight - ( parentElementTop - slideTop )
 
-        const percentageOfSlideHeight =
-            (contentAreaHeight / spaceAvailable) * 100
+        const percentageOfSlideHeight = contentAreaHeight / spaceAvailable * 100
 
         if (percentageOfSlideHeight > this.maxPercentage) {
             /* CurrentFontRatio is hardcoded to match the ratio currently in presenter.scss as --font-size-ratio */
             const currentFontRatio = 2
-            const newFontSize =
-                (currentFontRatio * this.maxPercentage) /
-                percentageOfSlideHeight
+            const newFontSize = currentFontRatio * this.maxPercentage / percentageOfSlideHeight
             contentArea.style.fontSize = `calc( var(--slide-unit) * ${newFontSize} )`
         }
     }
     resizeSlide(target) {
+
         const normalSlides = document.querySelectorAll('.slides-card')
 
         const videoSlides = document.querySelectorAll('.video-slide')
@@ -73,15 +70,15 @@ export class CourseSlide extends LitElement {
 
         const slideWidth = slides[0].getBoundingClientRect().width
 
-        const isScreenWiderThanSlide = screenWidth / screenHeight > 16 / 9
+        const isScreenWiderThanSlide = screenWidth/screenHeight > 16/9
 
         const slideUnit = isScreenWiderThanSlide
-            ? ((16 / 9) * screenHeight) / 100
+            ? 16 / 9 * screenHeight / 100
             : slideWidth / 100
 
         const slideHeight = isScreenWiderThanSlide
             ? screenHeight
-            : (9 / 16) * slideWidth
+            : 9 / 16 * slideWidth
 
         this.slideUnit = slideUnit
         this.slideHeight = slideHeight
@@ -98,7 +95,7 @@ export class CourseSlide extends LitElement {
         let progress_bar = []
         let stage = []
         for (let i = 0; i < this.slide.progress_bar.length; i++) {
-            const item = this.slide.progress_bar[i]
+            const item = this.slide.progress_bar[i];
             if (item === false) {
                 progress_bar.push(stage)
                 progress_bar.push(false)
@@ -113,23 +110,14 @@ export class CourseSlide extends LitElement {
             <div class="stage ${this.slide['key']}-bar">
                 <div class="progress-bar-wrapper">
                     ${progress_bar.map((stage) => {
-                        if (!stage) {
-                            return html`<div
-                                class="progress-bar-divider"
-                            ></div>`
+                        if ( !stage ) {
+                            return html`<div class="progress-bar-divider"></div>`
                         }
                         return html`
                             <div class="progress-bar-stage">
-                                ${stage.map(
-                                    (item) => html`
-                                        <div
-                                            class="progress-bar-item ${this
-                                                .slide.key === item
-                                                ? 'active'
-                                                : ''}"
-                                        ></div>
-                                    `,
-                                )}
+                                ${stage.map((item) => html`
+                                    <div class="progress-bar-item ${this.slide.key === item ? 'active' : ''}"></div>
+                                `)}
                             </div>
                         `
                     })}
@@ -140,13 +128,15 @@ export class CourseSlide extends LitElement {
 
     renderContent(stack = [], boldFirst = false, boldAll = false) {
         return stack.map((item, i) => {
-            if (boldFirst && i === 0) {
+            if ((boldFirst && i === 0)) {
                 return html`<p><strong>${item}</strong></p>`
             }
             if (Array.isArray(item)) {
                 return html`
                     <ul class="bullets">
-                        ${item.map((listItem) => html`<li>${listItem}</li>`)}
+                        ${
+                            item.map((listItem) => html`<li>${listItem}</li>`)
+                        }
                     </ul>
                 `
             }
@@ -169,4 +159,4 @@ export class CourseSlide extends LitElement {
         return this
     }
 }
-customElements.define('course-slide', CourseSlide)
+customElements.define('course-slide', CourseSlide);

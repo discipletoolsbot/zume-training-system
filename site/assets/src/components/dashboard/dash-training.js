@@ -1,5 +1,5 @@
-import { DashTopLevel } from './dash-top-level'
-import { RouteNames } from './routes'
+import { DashTopLevel } from './dash-top-level';
+import { RouteNames } from './routes';
 
 export class DashTraining extends DashTopLevel {
     constructor() {
@@ -10,4 +10,4 @@ export class DashTraining extends DashTopLevel {
         return this
     }
 }
-customElements.define('dash-training', DashTraining)
+customElements.define('dash-training', DashTraining);

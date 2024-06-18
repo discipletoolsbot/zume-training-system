@@ -1,10 +1,10 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class CourseGuide extends LitElement {
     static get properties() {
         return {
             sections: { type: Array },
-        }
+        };
     }
 
     render() {
@@ -20,6 +20,7 @@ export class CourseGuide extends LitElement {
                             </div>
                         `
                     })}
+
                 </div>
             </div>
         `
@@ -28,7 +29,8 @@ export class CourseGuide extends LitElement {
      * Disable the shadow DOM
      */
     createRenderRoot() {
-        return this
+        return this;
     }
+
 }
-customElements.define('course-guide', CourseGuide)
+customElements.define('course-guide', CourseGuide);

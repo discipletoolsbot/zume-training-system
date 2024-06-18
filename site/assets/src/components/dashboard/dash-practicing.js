@@ -1,4 +1,4 @@
-import { DashTopLevel } from './dash-top-level'
+import { DashTopLevel } from './dash-top-level';
 
 export class DashPracticing extends DashTopLevel {
     constructor() {
@@ -9,4 +9,4 @@ export class DashPracticing extends DashTopLevel {
         return this
     }
 }
-customElements.define('dash-practicing', DashPracticing)
+customElements.define('dash-practicing', DashPracticing);

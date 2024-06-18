@@ -1,3 +1,4 @@
+
 class ZumeRequest {
     constructor(root, base, nonce) {
         this.root = root
@@ -17,7 +18,7 @@ class ZumeRequest {
     fetch(method, route, data = {}) {
         let base = this.base
         if (!this.base.endsWith('/') && !route.startsWith('/')) {
-            base += '/'
+            base += '/';
         }
 
         let url = `${this.root}${base}${route}`
@@ -27,18 +28,18 @@ class ZumeRequest {
             url += '?' + queryParams.toString()
         }
 
-        return fetch(url, {
+        return fetch( url, {
             method,
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
                 'X-WP-Nonce': this.nonce,
             },
             body: method === 'GET' ? null : JSON.stringify(data),
-        })
+        } )
             .then((response) => {
                 return Promise.all([
                     Promise.resolve(response.ok),
-                    response.json(),
+                    response.json()
                 ])
             })
             .then(([ok, body]) => {
@@ -107,8 +108,4 @@ class ZumeRequest {
     }
 }
 
-export const zumeRequest = new ZumeRequest(
-    window.wpApiShare.root,
-    'zume_system/v1',
-    window.wpApiShare.nonce,
-)
+export const zumeRequest = new ZumeRequest(window.wpApiShare.root, 'zume_system/v1', window.wpApiShare.nonce)

@@ -22,12 +22,9 @@ export class DataWatcher {
         this.observer.disconnect()
     }
 
-    mutationCallback = (mutationsList) => {
-        for (let mutation of mutationsList) {
-            if (
-                mutation.type === 'attributes' &&
-                mutation.attributeName === 'data-' + this.dataName
-            ) {
+    mutationCallback = mutationsList => {
+        for(let mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-'+this.dataName) {
                 let currentDataState = mutation.target.dataset[this.dataName]
                 this.changedCallback(currentDataState, this.lastDataState)
                 this.lastDataState = currentDataState

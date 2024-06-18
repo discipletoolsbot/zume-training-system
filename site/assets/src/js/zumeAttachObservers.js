@@ -1,10 +1,11 @@
-import { DataWatcher } from './DataWatcher'
+import { DataWatcher } from "./DataWatcher"
 
 export const zumeAttachObservers = () => {
+
     const collapseElements = document.querySelectorAll('.collapse')
 
     collapseElements.forEach((collapse) => {
-        new DataWatcher(collapse, 'open', onDataChanged)
+        new DataWatcher( collapse, 'open', onDataChanged )
     })
     function onDataChanged(openState, oldOpenState) {
         if (openState === oldOpenState) {
@@ -26,7 +27,7 @@ export const zumeAttachObservers = () => {
             setTimeout(() => {
                 node.style.height = 'auto'
                 node.dataset.state = 'open'
-            }, transitionDuration)
+            }, transitionDuration);
         } else {
             /* Add back the height so we can transition back to 0 */
             node.style.height = height + 'px'
@@ -38,7 +39,8 @@ export const zumeAttachObservers = () => {
             }, 10)
             setTimeout(() => {
                 node.dataset.state = 'closed'
-            }, transitionDuration)
+            }, transitionDuration);
         }
+
     }
 }

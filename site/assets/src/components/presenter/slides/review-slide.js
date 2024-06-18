@@ -1,5 +1,5 @@
-import { html } from 'lit'
-import { CourseSlide } from './course-slide'
+import { html } from 'lit';
+import { CourseSlide } from './course-slide';
 
 export class ReviewSlide extends CourseSlide {
     render() {
@@ -17,16 +17,12 @@ export class ReviewSlide extends CourseSlide {
                     </div>
                     <div class="content-area">
                         <div class="stack content-area__text">
-                            ${this.renderContent(
-                                this.slide['right'],
-                                false,
-                                true,
-                            )}
+                            ${this.renderContent(this.slide['right'], false, true)}
                         </div>
                     </div>
                 </div>
             </div>
-        `
+        `;
     }
 }
-customElements.define('review-slide', ReviewSlide)
+customElements.define('review-slide', ReviewSlide);

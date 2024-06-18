@@ -1,12 +1,12 @@
-import { html, svg } from 'lit'
-import { ProgressCircle } from './progress-circle'
+import { html, svg } from 'lit';
+import { ProgressCircle } from './progress-circle';
 
 export class HostProgressCircle extends ProgressCircle {
     static get properties() {
         return {
-            percent: { type: Number },
+            percent: { type: Number},
             type: { type: String },
-        }
+        };
     }
 
     constructor() {
@@ -19,7 +19,7 @@ export class HostProgressCircle extends ProgressCircle {
     }
 
     width() {
-        return (this.radius + this.lineWidth) * 2
+        return ( this.radius + this.lineWidth ) * 2
     }
 
     getIconSvg() {
@@ -44,7 +44,7 @@ export class HostProgressCircle extends ProgressCircle {
                     <path d="M32.898,22.191c-.259.402-.497.772-.735,1.142-.48.747-.962,1.492-1.437,2.242-.041.065-.066.158-.057.233.038.303.09.604.143.904.098.559.309,1.069.618,1.547.923,1.43,1.831,2.869,2.752,4.3.552.858,1.767.912,2.364.114.368-.492.375-1.17.015-1.736-.694-1.093-1.366-2.201-2.093-3.272-.688-1.014-1.054-2.129-1.231-3.324-.098-.66-.201-1.319-.303-1.978-.007-.044-.018-.087-.037-.174Z" stroke-width="0"></path>
                     <path d="M27.479,11.553c1.455,0,2.629-1.176,2.629-2.635,0-1.455-1.178-2.631-2.634-2.631-1.456,0-2.636,1.174-2.64,2.628-.004,1.46,1.176,2.637,2.645,2.638Z" stroke-width="0"></path>
                 `
-            case 'trained':
+             case 'trained':
                 return svg`
                     <path d="M21.796,16.477c-.172.859-.334,1.671-.496,2.484-.05.252-.098.505-.151.757-.01.048-.04.091-.073.164.099.137.216.304.337.468.334.452.67.903,1.006,1.354.626.837,1.044,1.754,1.235,2.794.22,1.198.513,2.383.777,3.574.154.695-.231,1.346-.892,1.498-.659.152-1.31-.259-1.468-.948-.235-1.021-.472-2.042-.677-3.069-.172-.86-.5-1.649-.991-2.369-.658-.964-1.335-1.915-2-2.874-.214-.309-.405-.635-.624-.941-.422-.592-.498-1.238-.355-1.934.208-1.012.403-2.027.603-3.041.003-.014.003-.028.005-.063-.043.033-.075.056-.103.082-.504.459-1.009.917-1.508,1.381-.052.048-.092.133-.097.204-.074,1.117-.139,2.235-.209,3.353-.034.54-.467.916-.999.876-.506-.038-.872-.483-.838-1.008.076-1.189.148-2.378.22-3.567.025-.42.187-.772.499-1.056,1.029-.937,2.056-1.875,3.084-2.814.109-.099.207-.212.325-.3.321-.242.688-.324,1.081-.25.604.113,1.206.234,1.808.359.502.104.874.388,1.053.871.125.338.206.693.291,1.044.205.838.551,1.621.922,2.395.12.25.317.414.582.517.808.314,1.609.644,2.413.968.057.023.115.047.171.073.491.233.695.724.498,1.196-.188.452-.722.669-1.213.486-.33-.123-.655-.261-.982-.392-.698-.28-1.395-.565-2.096-.837-.265-.103-.477-.263-.623-.501-.147-.239-.274-.49-.409-.736-.029-.053-.058-.106-.107-.195Z" stroke-width="0"></path>
                     <path d="M16.958,19.892c.218.339.419.65.619.962.404.629.81,1.258,1.211,1.889.035.055.056.133.048.196-.032.255-.076.509-.12.762-.083.471-.261.901-.521,1.304-.778,1.205-1.543,2.417-2.319,3.623-.465.723-1.489.769-1.992.096-.31-.414-.316-.986-.013-1.462.585-.921,1.151-1.855,1.763-2.757.579-.854.888-1.794,1.037-2.8.082-.556.169-1.111.255-1.667.006-.037.016-.073.031-.147Z" stroke-width="0"></path>
@@ -57,7 +57,7 @@ export class HostProgressCircle extends ProgressCircle {
                     <path d="M31.455,18.345c-.996,0-1.799-.804-1.799-1.803,0-.995.806-1.8,1.802-1.801.996,0,1.804.804,1.806,1.798.003.999-.805,1.804-1.81,1.805Z" stroke-width="0"></path>
                 `
             default:
-                break
+                break;
         }
     }
 
@@ -66,21 +66,22 @@ export class HostProgressCircle extends ProgressCircle {
     }
 
     iconPosition() {
-        const x = (this.width() - this.iconSize()) / 2
+        const x = ( this.width() - this.iconSize() ) / 2
         const y = x
-        return [x, y]
+        return [
+            x,
+            y,
+        ]
     }
 
     render() {
         const iconSize = this.iconSize()
-        const [x, y] = this.iconPosition()
+        const [ x, y ] = this.iconPosition()
 
         return html`
             <div
                 class="progress-circle"
-                style="--percent: ${this
-                    .percent}; --width: ${this.widthPx()}; --circ: ${this.circumferencePx()}; --border-width: ${this
-                    .borderWidth}"
+                style="--percent: ${this.percent}; --width: ${this.widthPx()}; --circ: ${this.circumferencePx()}; --border-width: ${this.borderWidth}"
                 data-border
             >
                 <svg class="svg-wrapper">
@@ -89,19 +90,22 @@ export class HostProgressCircle extends ProgressCircle {
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         class="bar"
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
                         transform="${this.rotate(-90)}"
-                    ></circle>
+                    >
+                    </circle>
                     <svg
                         class="icon"
                         xmlns="http://www.w3.org/2000/svg"
@@ -115,11 +119,11 @@ export class HostProgressCircle extends ProgressCircle {
                     </svg>
                 </svg>
             </div>
-        `
+        `;
     }
 
     createRenderRoot() {
-        return this
+        return this;
     }
 }
-customElements.define('host-progress-circle', HostProgressCircle)
+customElements.define('host-progress-circle', HostProgressCircle);

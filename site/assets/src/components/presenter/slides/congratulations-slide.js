@@ -1,5 +1,5 @@
-import { html } from 'lit'
-import { CourseSlide } from './course-slide'
+import { html } from 'lit';
+import { CourseSlide } from './course-slide';
 
 export class CongratulationsSlide extends CourseSlide {
     render() {
@@ -11,14 +11,12 @@ export class CongratulationsSlide extends CourseSlide {
                             <p>${this.slide['center'][0]}</p>
                         </div>
                         <div class="center">
-                            <p>
-                                <img src="${this.slide['center'][1] ?? ''}" />
-                            </p>
+                          <p><img src="${this.slide['center'][1] ?? ''}" /></p>
                         </div>
                     </div>
                 </div>
             </div>
-        `
+        `;
     }
 }
-customElements.define('congratulations-slide', CongratulationsSlide)
+customElements.define('congratulations-slide', CongratulationsSlide);

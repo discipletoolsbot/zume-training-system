@@ -29,161 +29,98 @@ var ta=Object.defineProperty;var ea=(i,t,e)=>t in i?ta(i,t,{enumerable:!0,config
  * Copyright 2020 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */const $a=Fi(class extends Ui{constructor(i){if(super(i),i.type!==vt.PROPERTY&&i.type!==vt.ATTRIBUTE&&i.type!==vt.BOOLEAN_ATTRIBUTE)throw Error("The `live` directive is not allowed on child or event bindings");if(!va(i))throw Error("`live` bindings can only contain a single expression")}render(i){return i}update(i,[t]){if(t===K||t===D)return t;const e=i.element,s=i.name;if(i.type===vt.PROPERTY){if(t===e[s])return K}else if(i.type===vt.BOOLEAN_ATTRIBUTE){if(!!t===e.hasAttribute(s))return K}else if(i.type===vt.ATTRIBUTE&&e.getAttribute(s)===t+"")return K;return qi(i),t}});class wa extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},variant:{type:String},value:{type:String},locations:{attribute:!1},locationError:{attribute:!1},phoneError:{attribute:!1},city:{attribute:!1},loading:{attribute:!1},state:{attribute:!1},localValue:{attribute:!1},isInfoOpen:{type:Boolean,attribute:!1},infoText:{type:String,attribute:!1}}}constructor(){super(),this.name="",this.module="",this.skippable=!1,this.variant="",this.t={},this.locations=[],this.locationError="",this.city="",this.loading=!1,this.localValue="",this.phoneError="",this.isInfoOpen=!1,this.infoText="",this._clearLocations=this._clearLocations.bind(this),this._handleSuggestions=this._handleSuggestions.bind(this),this._debounceCityChange=debounce(getAddressSuggestions(this._handleSuggestions,jsObject.map_key)).bind(this),this._handleCityInputChange=this._handleCityInputChange.bind(this)}updated(t){t.has("variant")&&(this.renderRoot.querySelector(".inputs input").focus(),this.isInfoOpen=!1)}willUpdate(t){t.has("value")&&this.value!==""&&(this.localValue=JSON.parse(this.value))}render(){var t;return l`
-            <form class="inputs stack" @submit=${this._handleSubmit}>
-                ${this.variant===h.updateName?l`
-                          <h2>${this.t.name_question}</h2>
-                          <div class="d-flex align-items-center">
-                              <label for="name" class="visually-hidden"
-                                  >${this.t.name}</label
-                              >
-                              <input
-                                  class="input"
-                                  type="text"
-                                  id="name"
-                                  name="name"
-                                  value=${this.localValue}
-                                  ?required=${!this.skippable}
-                                  placeholder=${this.t.name}
-                              />
-                              <button
-                                  type="button"
-                                  class="icon-btn f-1"
-                                  @click=${()=>this._toggleInfo("name")}
-                              >
-                                  <span
-                                      class="icon z-icon-info brand-light"
-                                  ></span>
-                              </button>
-                          </div>
-                      `:""}
-                ${this.variant===h.updatePhone?l`
-                          <h2>${this.t.phone_question}</h2>
-                          <div class="d-flex align-items-center">
-                              <label for="phone" class="visually-hidden"
-                                  >${this.t.phone}</label
-                              >
-                              <input
-                                  class="input"
-                                  type="tel"
-                                  id="phone"
-                                  name="phone"
-                                  pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
-                                  value=""
-                                  placeholder=${this.t.phone}
-                                  ?required=${!this.skippable}
-                                  @input=${this._handleInput}
-                                  @invalid=${this._handleInvalid}
-                              />
-                              <button
-                                  type="button"
-                                  class="icon-btn f-1"
-                                  @click=${()=>this._toggleInfo("phone")}
-                              >
-                                  <span
-                                      class="icon z-icon-info brand-light"
-                                  ></span>
-                              </button>
-                              <div
-                                  class="input-error"
-                                  data-state="${this.phoneError.length?"":"empty"}"
-                              >
-                                  ${this.phoneError}
-                              </div>
-                          </div>
-                      `:""}
-                ${this.variant===h.updateLocation?l`
-                          <h2>${this.t.location_question}</h2>
-                          <div class="form-group">
-                              <div class="d-flex align-items-center">
-                                  <label
-                                      class="input-label visually-hidden"
-                                      for="city"
-                                      >${this.t.city}</label
-                                  >
-                                  <input
-                                      class="input"
-                                      type="text"
-                                      id="city"
-                                      name="city"
-                                      placeholder=${this.t.city}
-                                      .value="${this.city?$a(this.city):(t=this.localValue)==null?void 0:t.label}"
-                                      @input=${this._handleCityChange}
-                                  />
-                                  <button
-                                      type="button"
-                                      class="icon-btn f-1"
-                                      @click=${()=>this._toggleInfo("location")}
-                                  >
-                                      <span
-                                          class="icon z-icon-info brand-light"
-                                      ></span>
-                                  </button>
-                              </div>
-                              <span
-                                  class="loading-spinner ${this.loading?"active":""}"
-                              ></span>
-                              <p class="input-subtext">
-                                  ${this.t.approximate_location}
-                              </p>
-                          </div>
-                          <div
-                              id="address_results"
-                              class="stack--3 mx-auto fit-content"
-                          >
-                              ${this.locationError}
-                              ${this.locations.map(e=>l`
-                                      <div
-                                          class="address-result btn rounded"
-                                          id="${e.id}"
-                                          data-place-name=${e.place_name}
-                                          @click=${this._handleLocationSelection}
-                                      >
-                                          ${e.place_name}
-                                      </div>
-                                  `)}
-                          </div>
-                      `:""}
-                <div
-                    class="info-area collapse"
-                    data-state=${this.isInfoOpen?"open":"closed"}
-                >
-                    <div class="card mw-50ch mx-auto">
-                        <p>${this.infoText}</p>
-                        <a
-                            class="f--1 gray-500"
-                            href=${jsObject.privacy_url+"#personal-information"}
-                            target="_blank"
-                            >${this.t.privacy_page}</a
-                        >
-                    </div>
-                </div>
-                <div class="cluster | mx-auto">
-                    <button
-                        type="submit"
-                        class="btn tight"
-                        ?disabled=${this.loading}
-                    >
-                        ${this.t.next}
-                        ${[h.updatePhone,h.updateName].includes(this.variant)?l`
-                                  <span
-                                      class="loading-spinner ${this.loading?"active":""}"
-                                  ></span>
-                              `:""}
+        <form class="inputs stack" @submit=${this._handleSubmit}>
+            ${this.variant===h.updateName?l`
+                <h2>${this.t.name_question}</h2>
+                <div class="d-flex align-items-center">
+                    <label for="name" class="visually-hidden">${this.t.name}</label>
+                    <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable} placeholder=${this.t.name}>
+                    <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("name")}>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                 </div>
-            </form>
+            `:""}
+
+            ${this.variant===h.updatePhone?l`
+                <h2>${this.t.phone_question}</h2>
+                <div class="d-flex align-items-center">
+                    <label for="phone" class="visually-hidden">${this.t.phone}</label>
+                    <input
+                        class="input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
+                        value=""
+                        placeholder=${this.t.phone}
+                        ?required=${!this.skippable}
+                        @input=${this._handleInput}
+                        @invalid=${this._handleInvalid}
+                    >
+                    <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("phone")}>
+                        <span class="icon z-icon-info brand-light"></span>
+                    </button>
+                    <div class="input-error" data-state="${this.phoneError.length?"":"empty"}" >${this.phoneError}</div>
+                </div>
+            `:""}
+
+            ${this.variant===h.updateLocation?l`
+                <h2>${this.t.location_question}</h2>
+                <div class="form-group">
+                    <div class="d-flex align-items-center">
+                        <label class="input-label visually-hidden" for="city">${this.t.city}</label>
+                        <input
+                            class="input"
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder=${this.t.city}
+                            .value="${this.city?$a(this.city):(t=this.localValue)==null?void 0:t.label}"
+                            @input=${this._handleCityChange}
+                        >
+                        <button type="button" class="icon-btn f-1" @click=${()=>this._toggleInfo("location")}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <span class="loading-spinner ${this.loading?"active":""}"></span>
+                    <p class="input-subtext">${this.t.approximate_location}</p>
+                </div>
+                <div id="address_results" class="stack--3 mx-auto fit-content">
+                    ${this.locationError}
+                    ${this.locations.map(e=>l`
+                            <div
+                                class="address-result btn rounded"
+                                id="${e.id}"
+                                data-place-name=${e.place_name}
+                                @click=${this._handleLocationSelection}
+                            >
+                                ${e.place_name}
+                            </div>
+                        `)}
+                </div>
+
+            `:""}
+            <div class="info-area collapse" data-state=${this.isInfoOpen?"open":"closed"}>
+                <div class="card mw-50ch mx-auto">
+                    <p>${this.infoText}</p>
+                    <a class="f--1 gray-500" href=${jsObject.privacy_url+"#personal-information"} target="_blank">${this.t.privacy_page}</a>
+                </div>
+            </div>
+            <div class="cluster | mx-auto">
+                <button type="submit" class="btn tight" ?disabled=${this.loading}>
+                    ${this.t.next}
+                   ${[h.updatePhone,h.updateName].includes(this.variant)?l`
+                        <span class="loading-spinner ${this.loading?"active":""}"></span>
+                    `:""}
+                </button>
+            </div>
+        </form>
+
         `}_handleInput(t){this.phoneError=""}_handleInvalid(t){t.preventDefault(),this.phoneError=this.t.phone_error}_handleSubmit(t){t.preventDefault(),t.srcElement.querySelector("#city")?this._handleSubmitLocation():this._handleDone(t)}_handleDone(t){t&&t.preventDefault();const e=t.target[0];if(e.type==="submit")return;let{name:s,value:n}=e;e.type==="tel"&&(n=e.value.replace(/[\(\)\-\s]/g,"")),this._updateProfile(s,n,()=>{this._sendDoneStepEvent()})}_sendDoneStepEvent(){this.dispatchEvent(new CustomEvent("done-step",{bubbles:!0}))}_sendProfileUpdateEvent(){this.dispatchEvent(new CustomEvent("profile:reload",{bubbles:!0}))}_handleCityChange(t){this._handleCityInputChange(t),this._debounceCityChange(t)}_handleCityInputChange(t){this.city=t.target.value}_handleSuggestions(t){t.features.length<1&&(this.locationError=this.t.no_locations_found),this.locations=t.features}_handleLocationSelection(t){this.city=t.target.dataset.placeName;const e=getLocationGridFromMapbox(t.target.id,jsObject.profile.location);this.localValue=e,this._clearLocations()}_handleSubmitLocation(){if(this.localValue.source==="ip"){const{label:t,level:e,lat:s,lng:n}=this.localValue;this.localValue={source:"user",grid_id:!1,label:t,level:e,lat:Number(s),lng:Number(n)}}this._updateProfile("location_grid_meta",this.localValue,()=>{this._sendDoneStepEvent()})}_updateProfile(t,e,s=()=>{}){this.loading=!0;const n={[t]:e};fetch(jsObject.rest_endpoint+"/profile",{method:"POST",body:JSON.stringify(n),headers:{"X-WP-Nonce":jsObject.nonce}}).then(a=>a.json()).then(a=>{jsObject.profile=a,this._sendProfileUpdateEvent(),s()}).catch(a=>{console.error(a)}).finally(()=>{this.loading=!1})}_clearLocations(){this.locations=[]}_toggleInfo(t){this.isInfoOpen?this.isInfoOpen=!1:this._openInfo(t)}_openInfo(t){switch(this.isInfoOpen=!0,t){case"name":this.infoText=this.t.user_name_disclaimer;break;case"phone":this.infoText=this.t.user_phone_disclaimer;break;case"location":this.infoText=this.t.user_city_disclaimer;break}}createRenderRoot(){return this}}window.customElements.define("complete-profile",wa);class ka extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},code:{attribute:!1},message:{attribute:!1},errorMessage:{attribute:!1},loading:{attribute:!1}}}constructor(){super(),this.code="",this.errorMessage="",this.loading=!1}firstUpdated(){this.loading=!0,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.message=this.t.please_wait;const t=new URL(location.href);if(!t.searchParams.has("code")){this.message="",this.setErrorMessage(this.t.broken_link),this._sendDoneStepEvent(),this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}}));return}const e=t.searchParams.get("code");this.code=e,makeRequest("POST","connect/friend",{code:e},"zume_system/v1").then(s=>{console.log(s),this.message=this.t.success.replace("%s",s.name)}).fail(({responseJSON:s})=>{console.log(s),this.message="",s.code==="bad_friend_code"?this.setErrorMessage(this.t.broken_link):this.setErrorMessage(this.t.error)}).always(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}setErrorMessage(t){this.errorMessage=t}render(){return l`
             <h1>${this.t.title}</h1>
             <p>${this.message}</p>
-            <span
-                class="loading-spinner ${this.loading?"active":""}"
-            ></span>
-            <div
-                class="warning banner"
-                data-state=${this.errorMessage.length?"":"empty"}
-            >
-                ${this.errorMessage}
-            </div>
+            <span class="loading-spinner ${this.loading?"active":""}"></span>
+            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
         `}createRenderRoot(){return this}}customElements.define("connect-friend",ka);class _t extends Error{}class _a extends _t{constructor(t){super(`Invalid DateTime: ${t.toMessage()}`)}}class Sa extends _t{constructor(t){super(`Invalid Interval: ${t.toMessage()}`)}}class Oa extends _t{constructor(t){super(`Invalid Duration: ${t.toMessage()}`)}}class Ct extends _t{}class Wi extends _t{constructor(t){super(`Invalid unit ${t}`)}}class U extends _t{}class ot extends _t{constructor(){super("Zone is an abstract class")}}const f="numeric",X="short",H="long",$e={year:f,month:f,day:f},Vi={year:f,month:X,day:f},ja={year:f,month:X,day:f,weekday:X},Hi={year:f,month:H,day:f},Zi={year:f,month:H,day:f,weekday:H},Bi={hour:f,minute:f},Gi={hour:f,minute:f,second:f},Yi={hour:f,minute:f,second:f,timeZoneName:X},Ji={hour:f,minute:f,second:f,timeZoneName:H},Ki={hour:f,minute:f,hourCycle:"h23"},Qi={hour:f,minute:f,second:f,hourCycle:"h23"},Xi={hour:f,minute:f,second:f,hourCycle:"h23",timeZoneName:X},tn={hour:f,minute:f,second:f,hourCycle:"h23",timeZoneName:H},en={year:f,month:f,day:f,hour:f,minute:f},sn={year:f,month:f,day:f,hour:f,minute:f,second:f},nn={year:f,month:X,day:f,hour:f,minute:f},an={year:f,month:X,day:f,hour:f,minute:f,second:f},Ea={year:f,month:X,day:f,weekday:X,hour:f,minute:f},rn={year:f,month:H,day:f,hour:f,minute:f,timeZoneName:X},on={year:f,month:H,day:f,hour:f,minute:f,second:f,timeZoneName:X},ln={year:f,month:H,day:f,weekday:H,hour:f,minute:f,timeZoneName:H},cn={year:f,month:H,day:f,weekday:H,hour:f,minute:f,second:f,timeZoneName:H};class se{get type(){throw new ot}get name(){throw new ot}get ianaName(){return this.name}get isUniversal(){throw new ot}offsetName(t,e){throw new ot}formatOffset(t,e){throw new ot}offset(t){throw new ot}equals(t){throw new ot}get isValid(){throw new ot}}let Ze=null;class Te extends se{static get instance(){return Ze===null&&(Ze=new Te),Ze}get type(){return"system"}get name(){return new Intl.DateTimeFormat().resolvedOptions().timeZone}get isUniversal(){return!1}offsetName(t,{format:e,locale:s}){return bn(t,e,s)}formatOffset(t,e){return Bt(this.offset(t),e)}offset(t){return-new Date(t).getTimezoneOffset()}equals(t){return t.type==="system"}get isValid(){return!0}}let fe={};function Ca(i){return fe[i]||(fe[i]=new Intl.DateTimeFormat("en-US",{hour12:!1,timeZone:i,year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit",era:"short"})),fe[i]}const xa={year:0,month:1,day:2,era:3,hour:4,minute:5,second:6};function Ta(i,t){const e=i.format(t).replace(/\u200E/g,""),s=/(\d+)\/(\d+)\/(\d+) (AD|BC),? (\d+):(\d+):(\d+)/.exec(e),[,n,a,r,o,c,d,u]=s;return[r,n,a,o,c,d,u]}function Ma(i,t){const e=i.formatToParts(t),s=[];for(let n=0;n<e.length;n++){const{type:a,value:r}=e[n],o=xa[a];a==="era"?s[o]=r:w(o)||(s[o]=parseInt(r,10))}return s}let oe={};class nt extends se{static create(t){return oe[t]||(oe[t]=new nt(t)),oe[t]}static resetCache(){oe={},fe={}}static isValidSpecifier(t){return this.isValidZone(t)}static isValidZone(t){if(!t)return!1;try{return new Intl.DateTimeFormat("en-US",{timeZone:t}).format(),!0}catch{return!1}}constructor(t){super(),this.zoneName=t,this.valid=nt.isValidZone(t)}get type(){return"iana"}get name(){return this.zoneName}get isUniversal(){return!1}offsetName(t,{format:e,locale:s}){return bn(t,e,s,this.name)}formatOffset(t,e){return Bt(this.offset(t),e)}offset(t){const e=new Date(t);if(isNaN(e))return NaN;const s=Ca(this.name);let[n,a,r,o,c,d,u]=s.formatToParts?Ma(s,e):Ta(s,e);o==="BC"&&(n=-Math.abs(n)+1);const g=Ie({year:n,month:a,day:r,hour:c===24?0:c,minute:d,second:u,millisecond:0});let m=+e;const y=m%1e3;return m-=y>=0?y:1e3+y,(g-m)/(60*1e3)}equals(t){return t.type==="iana"&&t.name===this.name}get isValid(){return this.valid}}let Rs={};function Ia(i,t={}){const e=JSON.stringify([i,t]);let s=Rs[e];return s||(s=new Intl.ListFormat(i,t),Rs[e]=s),s}let as={};function rs(i,t={}){const e=JSON.stringify([i,t]);let s=as[e];return s||(s=new Intl.DateTimeFormat(i,t),as[e]=s),s}let os={};function Da(i,t={}){const e=JSON.stringify([i,t]);let s=os[e];return s||(s=new Intl.NumberFormat(i,t),os[e]=s),s}let ls={};function za(i,t={}){const{base:e,...s}=t,n=JSON.stringify([i,s]);let a=ls[n];return a||(a=new Intl.RelativeTimeFormat(i,t),ls[n]=a),a}let Zt=null;function Aa(){return Zt||(Zt=new Intl.DateTimeFormat().resolvedOptions().locale,Zt)}let Fs={};function Na(i){let t=Fs[i];if(!t){const e=new Intl.Locale(i);t="getWeekInfo"in e?e.getWeekInfo():e.weekInfo,Fs[i]=t}return t}function Pa(i){const t=i.indexOf("-x-");t!==-1&&(i=i.substring(0,t));const e=i.indexOf("-u-");if(e===-1)return[i];{let s,n;try{s=rs(i).resolvedOptions(),n=i}catch{const c=i.substring(0,e);s=rs(c).resolvedOptions(),n=c}const{numberingSystem:a,calendar:r}=s;return[n,a,r]}}function La(i,t,e){return(e||t)&&(i.includes("-u-")||(i+="-u"),e&&(i+=`-ca-${e}`),t&&(i+=`-nu-${t}`)),i}function Ra(i){const t=[];for(let e=1;e<=12;e++){const s=v.utc(2009,e,1);t.push(i(s))}return t}function Fa(i){const t=[];for(let e=1;e<=7;e++){const s=v.utc(2016,11,13+e);t.push(i(s))}return t}function le(i,t,e,s){const n=i.listingMode();return n==="error"?null:n==="en"?e(t):s(t)}function Ua(i){return i.numberingSystem&&i.numberingSystem!=="latn"?!1:i.numberingSystem==="latn"||!i.locale||i.locale.startsWith("en")||new Intl.DateTimeFormat(i.intl).resolvedOptions().numberingSystem==="latn"}class qa{constructor(t,e,s){this.padTo=s.padTo||0,this.floor=s.floor||!1;const{padTo:n,floor:a,...r}=s;if(!e||Object.keys(r).length>0){const o={useGrouping:!1,...s};s.padTo>0&&(o.minimumIntegerDigits=s.padTo),this.inf=Da(t,o)}}format(t){if(this.inf){const e=this.floor?Math.floor(t):t;return this.inf.format(e)}else{const e=this.floor?Math.floor(t):ys(t,3);return I(e,this.padTo)}}}class Wa{constructor(t,e,s){this.opts=s,this.originalZone=void 0;let n;if(this.opts.timeZone)this.dt=t;else if(t.zone.type==="fixed"){const r=-1*(t.offset/60),o=r>=0?`Etc/GMT+${r}`:`Etc/GMT${r}`;t.offset!==0&&nt.create(o).valid?(n=o,this.dt=t):(n="UTC",this.dt=t.offset===0?t:t.setZone("UTC").plus({minutes:t.offset}),this.originalZone=t.zone)}else t.zone.type==="system"?this.dt=t:t.zone.type==="iana"?(this.dt=t,n=t.zone.name):(n="UTC",this.dt=t.setZone("UTC").plus({minutes:t.offset}),this.originalZone=t.zone);const a={...this.opts};a.timeZone=a.timeZone||n,this.dtf=rs(e,a)}format(){return this.originalZone?this.formatToParts().map(({value:t})=>t).join(""):this.dtf.format(this.dt.toJSDate())}formatToParts(){const t=this.dtf.formatToParts(this.dt.toJSDate());return this.originalZone?t.map(e=>{if(e.type==="timeZoneName"){const s=this.originalZone.offsetName(this.dt.ts,{locale:this.dt.locale,format:this.opts.timeZoneName});return{...e,value:s}}else return e}):t}resolvedOptions(){return this.dtf.resolvedOptions()}}class Va{constructor(t,e,s){this.opts={style:"long",...s},!e&&gn()&&(this.rtf=za(t,s))}format(t,e){return this.rtf?this.rtf.format(t,e):dr(e,t,this.opts.numeric,this.opts.style!=="long")}formatToParts(t,e){return this.rtf?this.rtf.formatToParts(t,e):[]}}const Ha={firstDay:1,minimalDays:4,weekend:[6,7]};class E{static fromOpts(t){return E.create(t.locale,t.numberingSystem,t.outputCalendar,t.weekSettings,t.defaultToEN)}static create(t,e,s,n,a=!1){const r=t||T.defaultLocale,o=r||(a?"en-US":Aa()),c=e||T.defaultNumberingSystem,d=s||T.defaultOutputCalendar,u=cs(n)||T.defaultWeekSettings;return new E(o,c,d,u,r)}static resetCache(){Zt=null,as={},os={},ls={}}static fromObject({locale:t,numberingSystem:e,outputCalendar:s,weekSettings:n}={}){return E.create(t,e,s,n)}constructor(t,e,s,n,a){const[r,o,c]=Pa(t);this.locale=r,this.numberingSystem=e||o||null,this.outputCalendar=s||c||null,this.weekSettings=n,this.intl=La(this.locale,this.numberingSystem,this.outputCalendar),this.weekdaysCache={format:{},standalone:{}},this.monthsCache={format:{},standalone:{}},this.meridiemCache=null,this.eraCache={},this.specifiedLocale=a,this.fastNumbersCached=null}get fastNumbers(){return this.fastNumbersCached==null&&(this.fastNumbersCached=Ua(this)),this.fastNumbersCached}listingMode(){const t=this.isEnglish(),e=(this.numberingSystem===null||this.numberingSystem==="latn")&&(this.outputCalendar===null||this.outputCalendar==="gregory");return t&&e?"en":"intl"}clone(t){return!t||Object.getOwnPropertyNames(t).length===0?this:E.create(t.locale||this.specifiedLocale,t.numberingSystem||this.numberingSystem,t.outputCalendar||this.outputCalendar,cs(t.weekSettings)||this.weekSettings,t.defaultToEN||!1)}redefaultToEN(t={}){return this.clone({...t,defaultToEN:!0})}redefaultToSystem(t={}){return this.clone({...t,defaultToEN:!1})}months(t,e=!1){return le(this,t,wn,()=>{const s=e?{month:t,day:"numeric"}:{month:t},n=e?"format":"standalone";return this.monthsCache[n][t]||(this.monthsCache[n][t]=Ra(a=>this.extract(a,s,"month"))),this.monthsCache[n][t]})}weekdays(t,e=!1){return le(this,t,Sn,()=>{const s=e?{weekday:t,year:"numeric",month:"long",day:"numeric"}:{weekday:t},n=e?"format":"standalone";return this.weekdaysCache[n][t]||(this.weekdaysCache[n][t]=Fa(a=>this.extract(a,s,"weekday"))),this.weekdaysCache[n][t]})}meridiems(){return le(this,void 0,()=>On,()=>{if(!this.meridiemCache){const t={hour:"numeric",hourCycle:"h12"};this.meridiemCache=[v.utc(2016,11,13,9),v.utc(2016,11,13,19)].map(e=>this.extract(e,t,"dayperiod"))}return this.meridiemCache})}eras(t){return le(this,t,jn,()=>{const e={era:t};return this.eraCache[t]||(this.eraCache[t]=[v.utc(-40,1,1),v.utc(2017,1,1)].map(s=>this.extract(s,e,"era"))),this.eraCache[t]})}extract(t,e,s){const n=this.dtFormatter(t,e),a=n.formatToParts(),r=a.find(o=>o.type.toLowerCase()===s);return r?r.value:null}numberFormatter(t={}){return new qa(this.intl,t.forceSimple||this.fastNumbers,t)}dtFormatter(t,e={}){return new Wa(t,this.intl,e)}relFormatter(t={}){return new Va(this.intl,this.isEnglish(),t)}listFormatter(t={}){return Ia(this.intl,t)}isEnglish(){return this.locale==="en"||this.locale.toLowerCase()==="en-us"||new Intl.DateTimeFormat(this.intl).resolvedOptions().locale.startsWith("en-us")}getWeekSettings(){return this.weekSettings?this.weekSettings:vn()?Na(this.locale):Ha}getStartOfWeek(){return this.getWeekSettings().firstDay}getMinDaysInFirstWeek(){return this.getWeekSettings().minimalDays}getWeekendDays(){return this.getWeekSettings().weekend}equals(t){return this.locale===t.locale&&this.numberingSystem===t.numberingSystem&&this.outputCalendar===t.outputCalendar}}let Be=null;class L extends se{static get utcInstance(){return Be===null&&(Be=new L(0)),Be}static instance(t){return t===0?L.utcInstance:new L(t)}static parseSpecifier(t){if(t){const e=t.match(/^utc(?:([+-]\d{1,2})(?::(\d{2}))?)?$/i);if(e)return new L(De(e[1],e[2]))}return null}constructor(t){super(),this.fixed=t}get type(){return"fixed"}get name(){return this.fixed===0?"UTC":`UTC${Bt(this.fixed,"narrow")}`}get ianaName(){return this.fixed===0?"Etc/UTC":`Etc/GMT${Bt(-this.fixed,"narrow")}`}offsetName(){return this.name}formatOffset(t,e){return Bt(this.fixed,e)}get isUniversal(){return!0}offset(){return this.fixed}equals(t){return t.type==="fixed"&&t.fixed===this.fixed}get isValid(){return!0}}class Za extends se{constructor(t){super(),this.zoneName=t}get type(){return"invalid"}get name(){return this.zoneName}get isUniversal(){return!1}offsetName(){return null}formatOffset(){return""}offset(){return NaN}equals(){return!1}get isValid(){return!1}}function dt(i,t){if(w(i)||i===null)return t;if(i instanceof se)return i;if(Ya(i)){const e=i.toLowerCase();return e==="default"?t:e==="local"||e==="system"?Te.instance:e==="utc"||e==="gmt"?L.utcInstance:L.parseSpecifier(e)||nt.create(i)}else return wt(i)?L.instance(i):typeof i=="object"&&"offset"in i&&typeof i.offset=="function"?i:new Za(i)}let Us=()=>Date.now(),qs="system",Ws=null,Vs=null,Hs=null,Zs=60,Bs,Gs=null;class T{static get now(){return Us}static set now(t){Us=t}static set defaultZone(t){qs=t}static get defaultZone(){return dt(qs,Te.instance)}static get defaultLocale(){return Ws}static set defaultLocale(t){Ws=t}static get defaultNumberingSystem(){return Vs}static set defaultNumberingSystem(t){Vs=t}static get defaultOutputCalendar(){return Hs}static set defaultOutputCalendar(t){Hs=t}static get defaultWeekSettings(){return Gs}static set defaultWeekSettings(t){Gs=cs(t)}static get twoDigitCutoffYear(){return Zs}static set twoDigitCutoffYear(t){Zs=t%100}static get throwOnInvalid(){return Bs}static set throwOnInvalid(t){Bs=t}static resetCaches(){E.resetCache(),nt.resetCache()}}class Q{constructor(t,e){this.reason=t,this.explanation=e}toMessage(){return this.explanation?`${this.reason}: ${this.explanation}`:this.reason}}const dn=[0,31,59,90,120,151,181,212,243,273,304,334],hn=[0,31,60,91,121,152,182,213,244,274,305,335];function B(i,t){return new Q("unit out of range",`you specified ${t} (of type ${typeof t}) as a ${i}, which is invalid`)}function gs(i,t,e){const s=new Date(Date.UTC(i,t-1,e));i<100&&i>=0&&s.setUTCFullYear(s.getUTCFullYear()-1900);const n=s.getUTCDay();return n===0?7:n}function un(i,t,e){return e+(ie(i)?hn:dn)[t-1]}function pn(i,t){const e=ie(i)?hn:dn,s=e.findIndex(a=>a<t),n=t-e[s];return{month:s+1,day:n}}function vs(i,t){return(i-t+7)%7+1}function we(i,t=4,e=1){const{year:s,month:n,day:a}=i,r=un(s,n,a),o=vs(gs(s,n,a),e);let c=Math.floor((r-o+14-t)/7),d;return c<1?(d=s-1,c=Kt(d,t,e)):c>Kt(s,t,e)?(d=s+1,c=1):d=s,{weekYear:d,weekNumber:c,weekday:o,...ze(i)}}function Ys(i,t=4,e=1){const{weekYear:s,weekNumber:n,weekday:a}=i,r=vs(gs(s,1,t),e),o=Tt(s);let c=n*7+a-r-7+t,d;c<1?(d=s-1,c+=Tt(d)):c>o?(d=s+1,c-=Tt(s)):d=s;const{month:u,day:p}=pn(d,c);return{year:d,month:u,day:p,...ze(i)}}function Ge(i){const{year:t,month:e,day:s}=i,n=un(t,e,s);return{year:t,ordinal:n,...ze(i)}}function Js(i){const{year:t,ordinal:e}=i,{month:s,day:n}=pn(t,e);return{year:t,month:s,day:n,...ze(i)}}function Ks(i,t){if(!w(i.localWeekday)||!w(i.localWeekNumber)||!w(i.localWeekYear)){if(!w(i.weekday)||!w(i.weekNumber)||!w(i.weekYear))throw new Ct("Cannot mix locale-based week fields with ISO-based week fields");return w(i.localWeekday)||(i.weekday=i.localWeekday),w(i.localWeekNumber)||(i.weekNumber=i.localWeekNumber),w(i.localWeekYear)||(i.weekYear=i.localWeekYear),delete i.localWeekday,delete i.localWeekNumber,delete i.localWeekYear,{minDaysInFirstWeek:t.getMinDaysInFirstWeek(),startOfWeek:t.getStartOfWeek()}}else return{minDaysInFirstWeek:4,startOfWeek:1}}function Ba(i,t=4,e=1){const s=Me(i.weekYear),n=G(i.weekNumber,1,Kt(i.weekYear,t,e)),a=G(i.weekday,1,7);return s?n?a?!1:B("weekday",i.weekday):B("week",i.weekNumber):B("weekYear",i.weekYear)}function Ga(i){const t=Me(i.year),e=G(i.ordinal,1,Tt(i.year));return t?e?!1:B("ordinal",i.ordinal):B("year",i.year)}function mn(i){const t=Me(i.year),e=G(i.month,1,12),s=G(i.day,1,ke(i.year,i.month));return t?e?s?!1:B("day",i.day):B("month",i.month):B("year",i.year)}function fn(i){const{hour:t,minute:e,second:s,millisecond:n}=i,a=G(t,0,23)||t===24&&e===0&&s===0&&n===0,r=G(e,0,59),o=G(s,0,59),c=G(n,0,999);return a?r?o?c?!1:B("millisecond",n):B("second",s):B("minute",e):B("hour",t)}function w(i){return typeof i>"u"}function wt(i){return typeof i=="number"}function Me(i){return typeof i=="number"&&i%1===0}function Ya(i){return typeof i=="string"}function Ja(i){return Object.prototype.toString.call(i)==="[object Date]"}function gn(){try{return typeof Intl<"u"&&!!Intl.RelativeTimeFormat}catch{return!1}}function vn(){try{return typeof Intl<"u"&&!!Intl.Locale&&("weekInfo"in Intl.Locale.prototype||"getWeekInfo"in Intl.Locale.prototype)}catch{return!1}}function Ka(i){return Array.isArray(i)?i:[i]}function Qs(i,t,e){if(i.length!==0)return i.reduce((s,n)=>{const a=[t(n),n];return s&&e(s[0],a[0])===s[0]?s:a},null)[1]}function Qa(i,t){return t.reduce((e,s)=>(e[s]=i[s],e),{})}function zt(i,t){return Object.prototype.hasOwnProperty.call(i,t)}function cs(i){if(i==null)return null;if(typeof i!="object")throw new U("Week settings must be an object");if(!G(i.firstDay,1,7)||!G(i.minimalDays,1,7)||!Array.isArray(i.weekend)||i.weekend.some(t=>!G(t,1,7)))throw new U("Invalid week settings");return{firstDay:i.firstDay,minimalDays:i.minimalDays,weekend:Array.from(i.weekend)}}function G(i,t,e){return Me(i)&&i>=t&&i<=e}function Xa(i,t){return i-t*Math.floor(i/t)}function I(i,t=2){const e=i<0;let s;return e?s="-"+(""+-i).padStart(t,"0"):s=(""+i).padStart(t,"0"),s}function ct(i){if(!(w(i)||i===null||i===""))return parseInt(i,10)}function ft(i){if(!(w(i)||i===null||i===""))return parseFloat(i)}function bs(i){if(!(w(i)||i===null||i==="")){const t=parseFloat("0."+i)*1e3;return Math.floor(t)}}function ys(i,t,e=!1){const s=10**t;return(e?Math.trunc:Math.round)(i*s)/s}function ie(i){return i%4===0&&(i%100!==0||i%400===0)}function Tt(i){return ie(i)?366:365}function ke(i,t){const e=Xa(t-1,12)+1,s=i+(t-e)/12;return e===2?ie(s)?29:28:[31,null,31,30,31,30,31,31,30,31,30,31][e-1]}function Ie(i){let t=Date.UTC(i.year,i.month-1,i.day,i.hour,i.minute,i.second,i.millisecond);return i.year<100&&i.year>=0&&(t=new Date(t),t.setUTCFullYear(i.year,i.month-1,i.day)),+t}function Xs(i,t,e){return-vs(gs(i,1,t),e)+t-1}function Kt(i,t=4,e=1){const s=Xs(i,t,e),n=Xs(i+1,t,e);return(Tt(i)-s+n)/7}function ds(i){return i>99?i:i>T.twoDigitCutoffYear?1900+i:2e3+i}function bn(i,t,e,s=null){const n=new Date(i),a={hourCycle:"h23",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"};s&&(a.timeZone=s);const r={timeZoneName:t,...a},o=new Intl.DateTimeFormat(e,r).formatToParts(n).find(c=>c.type.toLowerCase()==="timezonename");return o?o.value:null}function De(i,t){let e=parseInt(i,10);Number.isNaN(e)&&(e=0);const s=parseInt(t,10)||0,n=e<0||Object.is(e,-0)?-s:s;return e*60+n}function yn(i){const t=Number(i);if(typeof i=="boolean"||i===""||Number.isNaN(t))throw new U(`Invalid unit value ${i}`);return t}function _e(i,t){const e={};for(const s in i)if(zt(i,s)){const n=i[s];if(n==null)continue;e[t(s)]=yn(n)}return e}function Bt(i,t){const e=Math.trunc(Math.abs(i/60)),s=Math.trunc(Math.abs(i%60)),n=i>=0?"+":"-";switch(t){case"short":return`${n}${I(e,2)}:${I(s,2)}`;case"narrow":return`${n}${e}${s>0?`:${s}`:""}`;case"techie":return`${n}${I(e,2)}${I(s,2)}`;default:throw new RangeError(`Value format ${t} is out of range for property format`)}}function ze(i){return Qa(i,["hour","minute","second","millisecond"])}const tr=["January","February","March","April","May","June","July","August","September","October","November","December"],$n=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],er=["J","F","M","A","M","J","J","A","S","O","N","D"];function wn(i){switch(i){case"narrow":return[...er];case"short":return[...$n];case"long":return[...tr];case"numeric":return["1","2","3","4","5","6","7","8","9","10","11","12"];case"2-digit":return["01","02","03","04","05","06","07","08","09","10","11","12"];default:return null}}const kn=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],_n=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],sr=["M","T","W","T","F","S","S"];function Sn(i){switch(i){case"narrow":return[...sr];case"short":return[..._n];case"long":return[...kn];case"numeric":return["1","2","3","4","5","6","7"];default:return null}}const On=["AM","PM"],ir=["Before Christ","Anno Domini"],nr=["BC","AD"],ar=["B","A"];function jn(i){switch(i){case"narrow":return[...ar];case"short":return[...nr];case"long":return[...ir];default:return null}}function rr(i){return On[i.hour<12?0:1]}function or(i,t){return Sn(t)[i.weekday-1]}function lr(i,t){return wn(t)[i.month-1]}function cr(i,t){return jn(t)[i.year<0?0:1]}function dr(i,t,e="always",s=!1){const n={years:["year","yr."],quarters:["quarter","qtr."],months:["month","mo."],weeks:["week","wk."],days:["day","day","days"],hours:["hour","hr."],minutes:["minute","min."],seconds:["second","sec."]},a=["hours","minutes","seconds"].indexOf(i)===-1;if(e==="auto"&&a){const p=i==="days";switch(t){case 1:return p?"tomorrow":`next ${n[i][0]}`;case-1:return p?"yesterday":`last ${n[i][0]}`;case 0:return p?"today":`this ${n[i][0]}`}}const r=Object.is(t,-0)||t<0,o=Math.abs(t),c=o===1,d=n[i],u=s?c?d[1]:d[2]||d[1]:c?n[i][0]:i;return r?`${o} ${u} ago`:`in ${o} ${u}`}function ti(i,t){let e="";for(const s of i)s.literal?e+=s.val:e+=t(s.val);return e}const hr={D:$e,DD:Vi,DDD:Hi,DDDD:Zi,t:Bi,tt:Gi,ttt:Yi,tttt:Ji,T:Ki,TT:Qi,TTT:Xi,TTTT:tn,f:en,ff:nn,fff:rn,ffff:ln,F:sn,FF:an,FFF:on,FFFF:cn};class P{static create(t,e={}){return new P(t,e)}static parseFormat(t){let e=null,s="",n=!1;const a=[];for(let r=0;r<t.length;r++){const o=t.charAt(r);o==="'"?(s.length>0&&a.push({literal:n||/^\s+$/.test(s),val:s}),e=null,s="",n=!n):n||o===e?s+=o:(s.length>0&&a.push({literal:/^\s+$/.test(s),val:s}),s=o,e=o)}return s.length>0&&a.push({literal:n||/^\s+$/.test(s),val:s}),a}static macroTokenToFormatOpts(t){return hr[t]}constructor(t,e){this.opts=e,this.loc=t,this.systemLoc=null}formatWithSystemDefault(t,e){return this.systemLoc===null&&(this.systemLoc=this.loc.redefaultToSystem()),this.systemLoc.dtFormatter(t,{...this.opts,...e}).format()}dtFormatter(t,e={}){return this.loc.dtFormatter(t,{...this.opts,...e})}formatDateTime(t,e){return this.dtFormatter(t,e).format()}formatDateTimeParts(t,e){return this.dtFormatter(t,e).formatToParts()}formatInterval(t,e){return this.dtFormatter(t.start,e).dtf.formatRange(t.start.toJSDate(),t.end.toJSDate())}resolvedOptions(t,e){return this.dtFormatter(t,e).resolvedOptions()}num(t,e=0){if(this.opts.forceSimple)return I(t,e);const s={...this.opts};return e>0&&(s.padTo=e),this.loc.numberFormatter(s).format(t)}formatDateTimeFromString(t,e){const s=this.loc.listingMode()==="en",n=this.loc.outputCalendar&&this.loc.outputCalendar!=="gregory",a=(m,y)=>this.loc.extract(t,m,y),r=m=>t.isOffsetFixed&&t.offset===0&&m.allowZ?"Z":t.isValid?t.zone.formatOffset(t.ts,m.format):"",o=()=>s?rr(t):a({hour:"numeric",hourCycle:"h12"},"dayperiod"),c=(m,y)=>s?lr(t,m):a(y?{month:m}:{month:m,day:"numeric"},"month"),d=(m,y)=>s?or(t,m):a(y?{weekday:m}:{weekday:m,month:"long",day:"numeric"},"weekday"),u=m=>{const y=P.macroTokenToFormatOpts(m);return y?this.formatWithSystemDefault(t,y):m},p=m=>s?cr(t,m):a({era:m},"era"),g=m=>{switch(m){case"S":return this.num(t.millisecond);case"u":case"SSS":return this.num(t.millisecond,3);case"s":return this.num(t.second);case"ss":return this.num(t.second,2);case"uu":return this.num(Math.floor(t.millisecond/10),2);case"uuu":return this.num(Math.floor(t.millisecond/100));case"m":return this.num(t.minute);case"mm":return this.num(t.minute,2);case"h":return this.num(t.hour%12===0?12:t.hour%12);case"hh":return this.num(t.hour%12===0?12:t.hour%12,2);case"H":return this.num(t.hour);case"HH":return this.num(t.hour,2);case"Z":return r({format:"narrow",allowZ:this.opts.allowZ});case"ZZ":return r({format:"short",allowZ:this.opts.allowZ});case"ZZZ":return r({format:"techie",allowZ:this.opts.allowZ});case"ZZZZ":return t.zone.offsetName(t.ts,{format:"short",locale:this.loc.locale});case"ZZZZZ":return t.zone.offsetName(t.ts,{format:"long",locale:this.loc.locale});case"z":return t.zoneName;case"a":return o();case"d":return n?a({day:"numeric"},"day"):this.num(t.day);case"dd":return n?a({day:"2-digit"},"day"):this.num(t.day,2);case"c":return this.num(t.weekday);case"ccc":return d("short",!0);case"cccc":return d("long",!0);case"ccccc":return d("narrow",!0);case"E":return this.num(t.weekday);case"EEE":return d("short",!1);case"EEEE":return d("long",!1);case"EEEEE":return d("narrow",!1);case"L":return n?a({month:"numeric",day:"numeric"},"month"):this.num(t.month);case"LL":return n?a({month:"2-digit",day:"numeric"},"month"):this.num(t.month,2);case"LLL":return c("short",!0);case"LLLL":return c("long",!0);case"LLLLL":return c("narrow",!0);case"M":return n?a({month:"numeric"},"month"):this.num(t.month);case"MM":return n?a({month:"2-digit"},"month"):this.num(t.month,2);case"MMM":return c("short",!1);case"MMMM":return c("long",!1);case"MMMMM":return c("narrow",!1);case"y":return n?a({year:"numeric"},"year"):this.num(t.year);case"yy":return n?a({year:"2-digit"},"year"):this.num(t.year.toString().slice(-2),2);case"yyyy":return n?a({year:"numeric"},"year"):this.num(t.year,4);case"yyyyyy":return n?a({year:"numeric"},"year"):this.num(t.year,6);case"G":return p("short");case"GG":return p("long");case"GGGGG":return p("narrow");case"kk":return this.num(t.weekYear.toString().slice(-2),2);case"kkkk":return this.num(t.weekYear,4);case"W":return this.num(t.weekNumber);case"WW":return this.num(t.weekNumber,2);case"n":return this.num(t.localWeekNumber);case"nn":return this.num(t.localWeekNumber,2);case"ii":return this.num(t.localWeekYear.toString().slice(-2),2);case"iiii":return this.num(t.localWeekYear,4);case"o":return this.num(t.ordinal);case"ooo":return this.num(t.ordinal,3);case"q":return this.num(t.quarter);case"qq":return this.num(t.quarter,2);case"X":return this.num(Math.floor(t.ts/1e3));case"x":return this.num(t.ts);default:return u(m)}};return ti(P.parseFormat(e),g)}formatDurationFromString(t,e){const s=c=>{switch(c[0]){case"S":return"millisecond";case"s":return"second";case"m":return"minute";case"h":return"hour";case"d":return"day";case"w":return"week";case"M":return"month";case"y":return"year";default:return null}},n=c=>d=>{const u=s(d);return u?this.num(c.get(u),d.length):d},a=P.parseFormat(e),r=a.reduce((c,{literal:d,val:u})=>d?c:c.concat(u),[]),o=t.shiftTo(...r.map(s).filter(c=>c));return ti(a,n(o))}}const En=/[A-Za-z_+-]{1,256}(?::?\/[A-Za-z0-9_+-]{1,256}(?:\/[A-Za-z0-9_+-]{1,256})?)?/;function Nt(...i){const t=i.reduce((e,s)=>e+s.source,"");return RegExp(`^${t}$`)}function Pt(...i){return t=>i.reduce(([e,s,n],a)=>{const[r,o,c]=a(t,n);return[{...e,...r},o||s,c]},[{},null,1]).slice(0,2)}function Lt(i,...t){if(i==null)return[null,null];for(const[e,s]of t){const n=e.exec(i);if(n)return s(n)}return[null,null]}function Cn(...i){return(t,e)=>{const s={};let n;for(n=0;n<i.length;n++)s[i[n]]=ct(t[e+n]);return[s,null,e+n]}}const xn=/(?:(Z)|([+-]\d\d)(?::?(\d\d))?)/,ur=`(?:${xn.source}?(?:\\[(${En.source})\\])?)?`,$s=/(\d\d)(?::?(\d\d)(?::?(\d\d)(?:[.,](\d{1,30}))?)?)?/,Tn=RegExp(`${$s.source}${ur}`),ws=RegExp(`(?:T${Tn.source})?`),pr=/([+-]\d{6}|\d{4})(?:-?(\d\d)(?:-?(\d\d))?)?/,mr=/(\d{4})-?W(\d\d)(?:-?(\d))?/,fr=/(\d{4})-?(\d{3})/,gr=Cn("weekYear","weekNumber","weekDay"),vr=Cn("year","ordinal"),br=/(\d{4})-(\d\d)-(\d\d)/,Mn=RegExp(`${$s.source} ?(?:${xn.source}|(${En.source}))?`),yr=RegExp(`(?: ${Mn.source})?`);function Mt(i,t,e){const s=i[t];return w(s)?e:ct(s)}function $r(i,t){return[{year:Mt(i,t),month:Mt(i,t+1,1),day:Mt(i,t+2,1)},null,t+3]}function Rt(i,t){return[{hours:Mt(i,t,0),minutes:Mt(i,t+1,0),seconds:Mt(i,t+2,0),milliseconds:bs(i[t+3])},null,t+4]}function ne(i,t){const e=!i[t]&&!i[t+1],s=De(i[t+1],i[t+2]),n=e?null:L.instance(s);return[{},n,t+3]}function ae(i,t){const e=i[t]?nt.create(i[t]):null;return[{},e,t+1]}const wr=RegExp(`^T?${$s.source}$`),kr=/^-?P(?:(?:(-?\d{1,20}(?:\.\d{1,20})?)Y)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20}(?:\.\d{1,20})?)W)?(?:(-?\d{1,20}(?:\.\d{1,20})?)D)?(?:T(?:(-?\d{1,20}(?:\.\d{1,20})?)H)?(?:(-?\d{1,20}(?:\.\d{1,20})?)M)?(?:(-?\d{1,20})(?:[.,](-?\d{1,20}))?S)?)?)$/;function _r(i){const[t,e,s,n,a,r,o,c,d]=i,u=t[0]==="-",p=c&&c[0]==="-",g=(m,y=!1)=>m!==void 0&&(y||m&&u)?-m:m;return[{years:g(ft(e)),months:g(ft(s)),weeks:g(ft(n)),days:g(ft(a)),hours:g(ft(r)),minutes:g(ft(o)),seconds:g(ft(c),c==="-0"),milliseconds:g(bs(d),p)}]}const Sr={GMT:0,EDT:-4*60,EST:-5*60,CDT:-5*60,CST:-6*60,MDT:-6*60,MST:-7*60,PDT:-7*60,PST:-8*60};function ks(i,t,e,s,n,a,r){const o={year:t.length===2?ds(ct(t)):ct(t),month:$n.indexOf(e)+1,day:ct(s),hour:ct(n),minute:ct(a)};return r&&(o.second=ct(r)),i&&(o.weekday=i.length>3?kn.indexOf(i)+1:_n.indexOf(i)+1),o}const Or=/^(?:(Mon|Tue|Wed|Thu|Fri|Sat|Sun),\s)?(\d{1,2})\s(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s(\d{2,4})\s(\d\d):(\d\d)(?::(\d\d))?\s(?:(UT|GMT|[ECMP][SD]T)|([Zz])|(?:([+-]\d\d)(\d\d)))$/;function jr(i){const[,t,e,s,n,a,r,o,c,d,u,p]=i,g=ks(t,n,s,e,a,r,o);let m;return c?m=Sr[c]:d?m=0:m=De(u,p),[g,new L(m)]}function Er(i){return i.replace(/\([^()]*\)|[\n\t]/g," ").replace(/(\s\s+)/g," ").trim()}const Cr=/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun), (\d\d) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (\d{4}) (\d\d):(\d\d):(\d\d) GMT$/,xr=/^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday), (\d\d)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(\d\d) (\d\d):(\d\d):(\d\d) GMT$/,Tr=/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) ( \d|\d\d) (\d\d):(\d\d):(\d\d) (\d{4})$/;function ei(i){const[,t,e,s,n,a,r,o]=i;return[ks(t,n,s,e,a,r,o),L.utcInstance]}function Mr(i){const[,t,e,s,n,a,r,o]=i;return[ks(t,o,e,s,n,a,r),L.utcInstance]}const Ir=Nt(pr,ws),Dr=Nt(mr,ws),zr=Nt(fr,ws),Ar=Nt(Tn),In=Pt($r,Rt,ne,ae),Nr=Pt(gr,Rt,ne,ae),Pr=Pt(vr,Rt,ne,ae),Lr=Pt(Rt,ne,ae);function Rr(i){return Lt(i,[Ir,In],[Dr,Nr],[zr,Pr],[Ar,Lr])}function Fr(i){return Lt(Er(i),[Or,jr])}function Ur(i){return Lt(i,[Cr,ei],[xr,ei],[Tr,Mr])}function qr(i){return Lt(i,[kr,_r])}const Wr=Pt(Rt);function Vr(i){return Lt(i,[wr,Wr])}const Hr=Nt(br,yr),Zr=Nt(Mn),Br=Pt(Rt,ne,ae);function Gr(i){return Lt(i,[Hr,In],[Zr,Br])}const si="Invalid Duration",Dn={weeks:{days:7,hours:7*24,minutes:7*24*60,seconds:7*24*60*60,milliseconds:7*24*60*60*1e3},days:{hours:24,minutes:24*60,seconds:24*60*60,milliseconds:24*60*60*1e3},hours:{minutes:60,seconds:60*60,milliseconds:60*60*1e3},minutes:{seconds:60,milliseconds:60*1e3},seconds:{milliseconds:1e3}},Yr={years:{quarters:4,months:12,weeks:52,days:365,hours:365*24,minutes:365*24*60,seconds:365*24*60*60,milliseconds:365*24*60*60*1e3},quarters:{months:3,weeks:13,days:91,hours:91*24,minutes:91*24*60,seconds:91*24*60*60,milliseconds:91*24*60*60*1e3},months:{weeks:4,days:30,hours:30*24,minutes:30*24*60,seconds:30*24*60*60,milliseconds:30*24*60*60*1e3},...Dn},Z=146097/400,St=146097/4800,Jr={years:{quarters:4,months:12,weeks:Z/7,days:Z,hours:Z*24,minutes:Z*24*60,seconds:Z*24*60*60,milliseconds:Z*24*60*60*1e3},quarters:{months:3,weeks:Z/28,days:Z/4,hours:Z*24/4,minutes:Z*24*60/4,seconds:Z*24*60*60/4,milliseconds:Z*24*60*60*1e3/4},months:{weeks:St/7,days:St,hours:St*24,minutes:St*24*60,seconds:St*24*60*60,milliseconds:St*24*60*60*1e3},...Dn},yt=["years","quarters","months","weeks","days","hours","minutes","seconds","milliseconds"],Kr=yt.slice(0).reverse();function lt(i,t,e=!1){const s={values:e?t.values:{...i.values,...t.values||{}},loc:i.loc.clone(t.loc),conversionAccuracy:t.conversionAccuracy||i.conversionAccuracy,matrix:t.matrix||i.matrix};return new S(s)}function zn(i,t){let e=t.milliseconds??0;for(const s of Kr.slice(1))t[s]&&(e+=t[s]*i[s].milliseconds);return e}function ii(i,t){const e=zn(i,t)<0?-1:1;yt.reduceRight((s,n)=>{if(w(t[n]))return s;if(s){const a=t[s]*e,r=i[n][s],o=Math.floor(a/r);t[n]+=o*e,t[s]-=o*r*e}return n},null),yt.reduce((s,n)=>{if(w(t[n]))return s;if(s){const a=t[s]%1;t[s]-=a,t[n]+=a*i[s][n]}return n},null)}function Qr(i){const t={};for(const[e,s]of Object.entries(i))s!==0&&(t[e]=s);return t}class S{constructor(t){const e=t.conversionAccuracy==="longterm"||!1;let s=e?Jr:Yr;t.matrix&&(s=t.matrix),this.values=t.values,this.loc=t.loc||E.create(),this.conversionAccuracy=e?"longterm":"casual",this.invalid=t.invalid||null,this.matrix=s,this.isLuxonDuration=!0}static fromMillis(t,e){return S.fromObject({milliseconds:t},e)}static fromObject(t,e={}){if(t==null||typeof t!="object")throw new U(`Duration.fromObject: argument expected to be an object, got ${t===null?"null":typeof t}`);return new S({values:_e(t,S.normalizeUnit),loc:E.fromObject(e),conversionAccuracy:e.conversionAccuracy,matrix:e.matrix})}static fromDurationLike(t){if(wt(t))return S.fromMillis(t);if(S.isDuration(t))return t;if(typeof t=="object")return S.fromObject(t);throw new U(`Unknown duration argument ${t} of type ${typeof t}`)}static fromISO(t,e){const[s]=qr(t);return s?S.fromObject(s,e):S.invalid("unparsable",`the input "${t}" can't be parsed as ISO 8601`)}static fromISOTime(t,e){const[s]=Vr(t);return s?S.fromObject(s,e):S.invalid("unparsable",`the input "${t}" can't be parsed as ISO 8601`)}static invalid(t,e=null){if(!t)throw new U("need to specify a reason the Duration is invalid");const s=t instanceof Q?t:new Q(t,e);if(T.throwOnInvalid)throw new Oa(s);return new S({invalid:s})}static normalizeUnit(t){const e={year:"years",years:"years",quarter:"quarters",quarters:"quarters",month:"months",months:"months",week:"weeks",weeks:"weeks",day:"days",days:"days",hour:"hours",hours:"hours",minute:"minutes",minutes:"minutes",second:"seconds",seconds:"seconds",millisecond:"milliseconds",milliseconds:"milliseconds"}[t&&t.toLowerCase()];if(!e)throw new Wi(t);return e}static isDuration(t){return t&&t.isLuxonDuration||!1}get locale(){return this.isValid?this.loc.locale:null}get numberingSystem(){return this.isValid?this.loc.numberingSystem:null}toFormat(t,e={}){const s={...e,floor:e.round!==!1&&e.floor!==!1};return this.isValid?P.create(this.loc,s).formatDurationFromString(this,t):si}toHuman(t={}){if(!this.isValid)return si;const e=yt.map(s=>{const n=this.values[s];return w(n)?null:this.loc.numberFormatter({style:"unit",unitDisplay:"long",...t,unit:s.slice(0,-1)}).format(n)}).filter(s=>s);return this.loc.listFormatter({type:"conjunction",style:t.listStyle||"narrow",...t}).format(e)}toObject(){return this.isValid?{...this.values}:{}}toISO(){if(!this.isValid)return null;let t="P";return this.years!==0&&(t+=this.years+"Y"),(this.months!==0||this.quarters!==0)&&(t+=this.months+this.quarters*3+"M"),this.weeks!==0&&(t+=this.weeks+"W"),this.days!==0&&(t+=this.days+"D"),(this.hours!==0||this.minutes!==0||this.seconds!==0||this.milliseconds!==0)&&(t+="T"),this.hours!==0&&(t+=this.hours+"H"),this.minutes!==0&&(t+=this.minutes+"M"),(this.seconds!==0||this.milliseconds!==0)&&(t+=ys(this.seconds+this.milliseconds/1e3,3)+"S"),t==="P"&&(t+="T0S"),t}toISOTime(t={}){if(!this.isValid)return null;const e=this.toMillis();return e<0||e>=864e5?null:(t={suppressMilliseconds:!1,suppressSeconds:!1,includePrefix:!1,format:"extended",...t,includeOffset:!1},v.fromMillis(e,{zone:"UTC"}).toISOTime(t))}toJSON(){return this.toISO()}toString(){return this.toISO()}[Symbol.for("nodejs.util.inspect.custom")](){return this.isValid?`Duration { values: ${JSON.stringify(this.values)} }`:`Duration { Invalid, reason: ${this.invalidReason} }`}toMillis(){return this.isValid?zn(this.matrix,this.values):NaN}valueOf(){return this.toMillis()}plus(t){if(!this.isValid)return this;const e=S.fromDurationLike(t),s={};for(const n of yt)(zt(e.values,n)||zt(this.values,n))&&(s[n]=e.get(n)+this.get(n));return lt(this,{values:s},!0)}minus(t){if(!this.isValid)return this;const e=S.fromDurationLike(t);return this.plus(e.negate())}mapUnits(t){if(!this.isValid)return this;const e={};for(const s of Object.keys(this.values))e[s]=yn(t(this.values[s],s));return lt(this,{values:e},!0)}get(t){return this[S.normalizeUnit(t)]}set(t){if(!this.isValid)return this;const e={...this.values,..._e(t,S.normalizeUnit)};return lt(this,{values:e})}reconfigure({locale:t,numberingSystem:e,conversionAccuracy:s,matrix:n}={}){const r={loc:this.loc.clone({locale:t,numberingSystem:e}),matrix:n,conversionAccuracy:s};return lt(this,r)}as(t){return this.isValid?this.shiftTo(t).get(t):NaN}normalize(){if(!this.isValid)return this;const t=this.toObject();return ii(this.matrix,t),lt(this,{values:t},!0)}rescale(){if(!this.isValid)return this;const t=Qr(this.normalize().shiftToAll().toObject());return lt(this,{values:t},!0)}shiftTo(...t){if(!this.isValid)return this;if(t.length===0)return this;t=t.map(r=>S.normalizeUnit(r));const e={},s={},n=this.toObject();let a;for(const r of yt)if(t.indexOf(r)>=0){a=r;let o=0;for(const d in s)o+=this.matrix[d][r]*s[d],s[d]=0;wt(n[r])&&(o+=n[r]);const c=Math.trunc(o);e[r]=c,s[r]=(o*1e3-c*1e3)/1e3}else wt(n[r])&&(s[r]=n[r]);for(const r in s)s[r]!==0&&(e[a]+=r===a?s[r]:s[r]/this.matrix[a][r]);return ii(this.matrix,e),lt(this,{values:e},!0)}shiftToAll(){return this.isValid?this.shiftTo("years","months","weeks","days","hours","minutes","seconds","milliseconds"):this}negate(){if(!this.isValid)return this;const t={};for(const e of Object.keys(this.values))t[e]=this.values[e]===0?0:-this.values[e];return lt(this,{values:t},!0)}get years(){return this.isValid?this.values.years||0:NaN}get quarters(){return this.isValid?this.values.quarters||0:NaN}get months(){return this.isValid?this.values.months||0:NaN}get weeks(){return this.isValid?this.values.weeks||0:NaN}get days(){return this.isValid?this.values.days||0:NaN}get hours(){return this.isValid?this.values.hours||0:NaN}get minutes(){return this.isValid?this.values.minutes||0:NaN}get seconds(){return this.isValid?this.values.seconds||0:NaN}get milliseconds(){return this.isValid?this.values.milliseconds||0:NaN}get isValid(){return this.invalid===null}get invalidReason(){return this.invalid?this.invalid.reason:null}get invalidExplanation(){return this.invalid?this.invalid.explanation:null}equals(t){if(!this.isValid||!t.isValid||!this.loc.equals(t.loc))return!1;function e(s,n){return s===void 0||s===0?n===void 0||n===0:s===n}for(const s of yt)if(!e(this.values[s],t.values[s]))return!1;return!0}}const Ot="Invalid Interval";function Xr(i,t){return!i||!i.isValid?x.invalid("missing or invalid start"):!t||!t.isValid?x.invalid("missing or invalid end"):t<i?x.invalid("end before start",`The end of an interval must be after its start, but you had start=${i.toISO()} and end=${t.toISO()}`):null}class x{constructor(t){this.s=t.start,this.e=t.end,this.invalid=t.invalid||null,this.isLuxonInterval=!0}static invalid(t,e=null){if(!t)throw new U("need to specify a reason the Interval is invalid");const s=t instanceof Q?t:new Q(t,e);if(T.throwOnInvalid)throw new Sa(s);return new x({invalid:s})}static fromDateTimes(t,e){const s=Vt(t),n=Vt(e),a=Xr(s,n);return a??new x({start:s,end:n})}static after(t,e){const s=S.fromDurationLike(e),n=Vt(t);return x.fromDateTimes(n,n.plus(s))}static before(t,e){const s=S.fromDurationLike(e),n=Vt(t);return x.fromDateTimes(n.minus(s),n)}static fromISO(t,e){const[s,n]=(t||"").split("/",2);if(s&&n){let a,r;try{a=v.fromISO(s,e),r=a.isValid}catch{r=!1}let o,c;try{o=v.fromISO(n,e),c=o.isValid}catch{c=!1}if(r&&c)return x.fromDateTimes(a,o);if(r){const d=S.fromISO(n,e);if(d.isValid)return x.after(a,d)}else if(c){const d=S.fromISO(s,e);if(d.isValid)return x.before(o,d)}}return x.invalid("unparsable",`the input "${t}" can't be parsed as ISO 8601`)}static isInterval(t){return t&&t.isLuxonInterval||!1}get start(){return this.isValid?this.s:null}get end(){return this.isValid?this.e:null}get isValid(){return this.invalidReason===null}get invalidReason(){return this.invalid?this.invalid.reason:null}get invalidExplanation(){return this.invalid?this.invalid.explanation:null}length(t="milliseconds"){return this.isValid?this.toDuration(t).get(t):NaN}count(t="milliseconds",e){if(!this.isValid)return NaN;const s=this.start.startOf(t,e);let n;return e!=null&&e.useLocaleWeeks?n=this.end.reconfigure({locale:s.locale}):n=this.end,n=n.startOf(t,e),Math.floor(n.diff(s,t).get(t))+(n.valueOf()!==this.end.valueOf())}hasSame(t){return this.isValid?this.isEmpty()||this.e.minus(1).hasSame(this.s,t):!1}isEmpty(){return this.s.valueOf()===this.e.valueOf()}isAfter(t){return this.isValid?this.s>t:!1}isBefore(t){return this.isValid?this.e<=t:!1}contains(t){return this.isValid?this.s<=t&&this.e>t:!1}set({start:t,end:e}={}){return this.isValid?x.fromDateTimes(t||this.s,e||this.e):this}splitAt(...t){if(!this.isValid)return[];const e=t.map(Vt).filter(r=>this.contains(r)).sort((r,o)=>r.toMillis()-o.toMillis()),s=[];let{s:n}=this,a=0;for(;n<this.e;){const r=e[a]||this.e,o=+r>+this.e?this.e:r;s.push(x.fromDateTimes(n,o)),n=o,a+=1}return s}splitBy(t){const e=S.fromDurationLike(t);if(!this.isValid||!e.isValid||e.as("milliseconds")===0)return[];let{s}=this,n=1,a;const r=[];for(;s<this.e;){const o=this.start.plus(e.mapUnits(c=>c*n));a=+o>+this.e?this.e:o,r.push(x.fromDateTimes(s,a)),s=a,n+=1}return r}divideEqually(t){return this.isValid?this.splitBy(this.length()/t).slice(0,t):[]}overlaps(t){return this.e>t.s&&this.s<t.e}abutsStart(t){return this.isValid?+this.e==+t.s:!1}abutsEnd(t){return this.isValid?+t.e==+this.s:!1}engulfs(t){return this.isValid?this.s<=t.s&&this.e>=t.e:!1}equals(t){return!this.isValid||!t.isValid?!1:this.s.equals(t.s)&&this.e.equals(t.e)}intersection(t){if(!this.isValid)return this;const e=this.s>t.s?this.s:t.s,s=this.e<t.e?this.e:t.e;return e>=s?null:x.fromDateTimes(e,s)}union(t){if(!this.isValid)return this;const e=this.s<t.s?this.s:t.s,s=this.e>t.e?this.e:t.e;return x.fromDateTimes(e,s)}static merge(t){const[e,s]=t.sort((n,a)=>n.s-a.s).reduce(([n,a],r)=>a?a.overlaps(r)||a.abutsStart(r)?[n,a.union(r)]:[n.concat([a]),r]:[n,r],[[],null]);return s&&e.push(s),e}static xor(t){let e=null,s=0;const n=[],a=t.map(c=>[{time:c.s,type:"s"},{time:c.e,type:"e"}]),r=Array.prototype.concat(...a),o=r.sort((c,d)=>c.time-d.time);for(const c of o)s+=c.type==="s"?1:-1,s===1?e=c.time:(e&&+e!=+c.time&&n.push(x.fromDateTimes(e,c.time)),e=null);return x.merge(n)}difference(...t){return x.xor([this].concat(t)).map(e=>this.intersection(e)).filter(e=>e&&!e.isEmpty())}toString(){return this.isValid?`[${this.s.toISO()} – ${this.e.toISO()})`:Ot}[Symbol.for("nodejs.util.inspect.custom")](){return this.isValid?`Interval { start: ${this.s.toISO()}, end: ${this.e.toISO()} }`:`Interval { Invalid, reason: ${this.invalidReason} }`}toLocaleString(t=$e,e={}){return this.isValid?P.create(this.s.loc.clone(e),t).formatInterval(this):Ot}toISO(t){return this.isValid?`${this.s.toISO(t)}/${this.e.toISO(t)}`:Ot}toISODate(){return this.isValid?`${this.s.toISODate()}/${this.e.toISODate()}`:Ot}toISOTime(t){return this.isValid?`${this.s.toISOTime(t)}/${this.e.toISOTime(t)}`:Ot}toFormat(t,{separator:e=" – "}={}){return this.isValid?`${this.s.toFormat(t)}${e}${this.e.toFormat(t)}`:Ot}toDuration(t,e){return this.isValid?this.e.diff(this.s,t,e):S.invalid(this.invalidReason)}mapEndpoints(t){return x.fromDateTimes(t(this.s),t(this.e))}}class ce{static hasDST(t=T.defaultZone){const e=v.now().setZone(t).set({month:12});return!t.isUniversal&&e.offset!==e.set({month:6}).offset}static isValidIANAZone(t){return nt.isValidZone(t)}static normalizeZone(t){return dt(t,T.defaultZone)}static getStartOfWeek({locale:t=null,locObj:e=null}={}){return(e||E.create(t)).getStartOfWeek()}static getMinimumDaysInFirstWeek({locale:t=null,locObj:e=null}={}){return(e||E.create(t)).getMinDaysInFirstWeek()}static getWeekendWeekdays({locale:t=null,locObj:e=null}={}){return(e||E.create(t)).getWeekendDays().slice()}static months(t="long",{locale:e=null,numberingSystem:s=null,locObj:n=null,outputCalendar:a="gregory"}={}){return(n||E.create(e,s,a)).months(t)}static monthsFormat(t="long",{locale:e=null,numberingSystem:s=null,locObj:n=null,outputCalendar:a="gregory"}={}){return(n||E.create(e,s,a)).months(t,!0)}static weekdays(t="long",{locale:e=null,numberingSystem:s=null,locObj:n=null}={}){return(n||E.create(e,s,null)).weekdays(t)}static weekdaysFormat(t="long",{locale:e=null,numberingSystem:s=null,locObj:n=null}={}){return(n||E.create(e,s,null)).weekdays(t,!0)}static meridiems({locale:t=null}={}){return E.create(t).meridiems()}static eras(t="short",{locale:e=null}={}){return E.create(e,null,"gregory").eras(t)}static features(){return{relative:gn(),localeWeek:vn()}}}function ni(i,t){const e=n=>n.toUTC(0,{keepLocalTime:!0}).startOf("day").valueOf(),s=e(t)-e(i);return Math.floor(S.fromMillis(s).as("days"))}function to(i,t,e){const s=[["years",(c,d)=>d.year-c.year],["quarters",(c,d)=>d.quarter-c.quarter+(d.year-c.year)*4],["months",(c,d)=>d.month-c.month+(d.year-c.year)*12],["weeks",(c,d)=>{const u=ni(c,d);return(u-u%7)/7}],["days",ni]],n={},a=i;let r,o;for(const[c,d]of s)e.indexOf(c)>=0&&(r=c,n[c]=d(i,t),o=a.plus(n),o>t?(n[c]--,i=a.plus(n),i>t&&(o=i,n[c]--,i=a.plus(n))):i=o);return[i,n,o,r]}function eo(i,t,e,s){let[n,a,r,o]=to(i,t,e);const c=t-n,d=e.filter(p=>["hours","minutes","seconds","milliseconds"].indexOf(p)>=0);d.length===0&&(r<t&&(r=n.plus({[o]:1})),r!==n&&(a[o]=(a[o]||0)+c/(r-n)));const u=S.fromObject(a,s);return d.length>0?S.fromMillis(c,s).shiftTo(...d).plus(u):u}const _s={arab:"[٠-٩]",arabext:"[۰-۹]",bali:"[᭐-᭙]",beng:"[০-৯]",deva:"[०-९]",fullwide:"[０-９]",gujr:"[૦-૯]",hanidec:"[〇|一|二|三|四|五|六|七|八|九]",khmr:"[០-៩]",knda:"[೦-೯]",laoo:"[໐-໙]",limb:"[᥆-᥏]",mlym:"[൦-൯]",mong:"[᠐-᠙]",mymr:"[၀-၉]",orya:"[୦-୯]",tamldec:"[௦-௯]",telu:"[౦-౯]",thai:"[๐-๙]",tibt:"[༠-༩]",latn:"\\d"},ai={arab:[1632,1641],arabext:[1776,1785],bali:[6992,7001],beng:[2534,2543],deva:[2406,2415],fullwide:[65296,65303],gujr:[2790,2799],khmr:[6112,6121],knda:[3302,3311],laoo:[3792,3801],limb:[6470,6479],mlym:[3430,3439],mong:[6160,6169],mymr:[4160,4169],orya:[2918,2927],tamldec:[3046,3055],telu:[3174,3183],thai:[3664,3673],tibt:[3872,3881]},so=_s.hanidec.replace(/[\[|\]]/g,"").split("");function io(i){let t=parseInt(i,10);if(isNaN(t)){t="";for(let e=0;e<i.length;e++){const s=i.charCodeAt(e);if(i[e].search(_s.hanidec)!==-1)t+=so.indexOf(i[e]);else for(const n in ai){const[a,r]=ai[n];s>=a&&s<=r&&(t+=s-a)}}return parseInt(t,10)}else return t}function Y({numberingSystem:i},t=""){return new RegExp(`${_s[i||"latn"]}${t}`)}const no="missing Intl.DateTimeFormat.formatToParts support";function O(i,t=e=>e){return{regex:i,deser:([e])=>t(io(e))}}const ao=String.fromCharCode(160),An=`[ ${ao}]`,Nn=new RegExp(An,"g");function ro(i){return i.replace(/\./g,"\\.?").replace(Nn,An)}function ri(i){return i.replace(/\./g,"").replace(Nn," ").toLowerCase()}function J(i,t){return i===null?null:{regex:RegExp(i.map(ro).join("|")),deser:([e])=>i.findIndex(s=>ri(e)===ri(s))+t}}function oi(i,t){return{regex:i,deser:([,e,s])=>De(e,s),groups:t}}function de(i){return{regex:i,deser:([t])=>t}}function oo(i){return i.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g,"\\$&")}function lo(i,t){const e=Y(t),s=Y(t,"{2}"),n=Y(t,"{3}"),a=Y(t,"{4}"),r=Y(t,"{6}"),o=Y(t,"{1,2}"),c=Y(t,"{1,3}"),d=Y(t,"{1,6}"),u=Y(t,"{1,9}"),p=Y(t,"{2,4}"),g=Y(t,"{4,6}"),m=M=>({regex:RegExp(oo(M.val)),deser:([tt])=>tt,literal:!0}),j=(M=>{if(i.literal)return m(M);switch(M.val){case"G":return J(t.eras("short"),0);case"GG":return J(t.eras("long"),0);case"y":return O(d);case"yy":return O(p,ds);case"yyyy":return O(a);case"yyyyy":return O(g);case"yyyyyy":return O(r);case"M":return O(o);case"MM":return O(s);case"MMM":return J(t.months("short",!0),1);case"MMMM":return J(t.months("long",!0),1);case"L":return O(o);case"LL":return O(s);case"LLL":return J(t.months("short",!1),1);case"LLLL":return J(t.months("long",!1),1);case"d":return O(o);case"dd":return O(s);case"o":return O(c);case"ooo":return O(n);case"HH":return O(s);case"H":return O(o);case"hh":return O(s);case"h":return O(o);case"mm":return O(s);case"m":return O(o);case"q":return O(o);case"qq":return O(s);case"s":return O(o);case"ss":return O(s);case"S":return O(c);case"SSS":return O(n);case"u":return de(u);case"uu":return de(o);case"uuu":return O(e);case"a":return J(t.meridiems(),0);case"kkkk":return O(a);case"kk":return O(p,ds);case"W":return O(o);case"WW":return O(s);case"E":case"c":return O(e);case"EEE":return J(t.weekdays("short",!1),1);case"EEEE":return J(t.weekdays("long",!1),1);case"ccc":return J(t.weekdays("short",!0),1);case"cccc":return J(t.weekdays("long",!0),1);case"Z":case"ZZ":return oi(new RegExp(`([+-]${o.source})(?::(${s.source}))?`),2);case"ZZZ":return oi(new RegExp(`([+-]${o.source})(${s.source})?`),2);case"z":return de(/[a-z_+-/]{1,256}?/i);case" ":return de(/[^\S\n\r]/);default:return m(M)}})(i)||{invalidReason:no};return j.token=i,j}const co={year:{"2-digit":"yy",numeric:"yyyyy"},month:{numeric:"M","2-digit":"MM",short:"MMM",long:"MMMM"},day:{numeric:"d","2-digit":"dd"},weekday:{short:"EEE",long:"EEEE"},dayperiod:"a",dayPeriod:"a",hour12:{numeric:"h","2-digit":"hh"},hour24:{numeric:"H","2-digit":"HH"},minute:{numeric:"m","2-digit":"mm"},second:{numeric:"s","2-digit":"ss"},timeZoneName:{long:"ZZZZZ",short:"ZZZ"}};function ho(i,t,e){const{type:s,value:n}=i;if(s==="literal"){const c=/^\s+$/.test(n);return{literal:!c,val:c?" ":n}}const a=t[s];let r=s;s==="hour"&&(t.hour12!=null?r=t.hour12?"hour12":"hour24":t.hourCycle!=null?t.hourCycle==="h11"||t.hourCycle==="h12"?r="hour12":r="hour24":r=e.hour12?"hour12":"hour24");let o=co[r];if(typeof o=="object"&&(o=o[a]),o)return{literal:!1,val:o}}function uo(i){return[`^${i.map(e=>e.regex).reduce((e,s)=>`${e}(${s.source})`,"")}$`,i]}function po(i,t,e){const s=i.match(t);if(s){const n={};let a=1;for(const r in e)if(zt(e,r)){const o=e[r],c=o.groups?o.groups+1:1;!o.literal&&o.token&&(n[o.token.val[0]]=o.deser(s.slice(a,a+c))),a+=c}return[s,n]}else return[s,{}]}function mo(i){const t=a=>{switch(a){case"S":return"millisecond";case"s":return"second";case"m":return"minute";case"h":case"H":return"hour";case"d":return"day";case"o":return"ordinal";case"L":case"M":return"month";case"y":return"year";case"E":case"c":return"weekday";case"W":return"weekNumber";case"k":return"weekYear";case"q":return"quarter";default:return null}};let e=null,s;return w(i.z)||(e=nt.create(i.z)),w(i.Z)||(e||(e=new L(i.Z)),s=i.Z),w(i.q)||(i.M=(i.q-1)*3+1),w(i.h)||(i.h<12&&i.a===1?i.h+=12:i.h===12&&i.a===0&&(i.h=0)),i.G===0&&i.y&&(i.y=-i.y),w(i.u)||(i.S=bs(i.u)),[Object.keys(i).reduce((a,r)=>{const o=t(r);return o&&(a[o]=i[r]),a},{}),e,s]}let Ye=null;function fo(){return Ye||(Ye=v.fromMillis(1555555555555)),Ye}function go(i,t){if(i.literal)return i;const e=P.macroTokenToFormatOpts(i.val),s=Rn(e,t);return s==null||s.includes(void 0)?i:s}function Pn(i,t){return Array.prototype.concat(...i.map(e=>go(e,t)))}function Ln(i,t,e){const s=Pn(P.parseFormat(e),i),n=s.map(r=>lo(r,i)),a=n.find(r=>r.invalidReason);if(a)return{input:t,tokens:s,invalidReason:a.invalidReason};{const[r,o]=uo(n),c=RegExp(r,"i"),[d,u]=po(t,c,o),[p,g,m]=u?mo(u):[null,null,void 0];if(zt(u,"a")&&zt(u,"H"))throw new Ct("Can't include meridiem when specifying 24-hour format");return{input:t,tokens:s,regex:c,rawMatches:d,matches:u,result:p,zone:g,specificOffset:m}}}function vo(i,t,e){const{result:s,zone:n,specificOffset:a,invalidReason:r}=Ln(i,t,e);return[s,n,a,r]}function Rn(i,t){if(!i)return null;const s=P.create(t,i).dtFormatter(fo()),n=s.formatToParts(),a=s.resolvedOptions();return n.map(r=>ho(r,i,a))}const Je="Invalid DateTime",li=864e13;function he(i){return new Q("unsupported zone",`the zone "${i.name}" is not supported`)}function Ke(i){return i.weekData===null&&(i.weekData=we(i.c)),i.weekData}function Qe(i){return i.localWeekData===null&&(i.localWeekData=we(i.c,i.loc.getMinDaysInFirstWeek(),i.loc.getStartOfWeek())),i.localWeekData}function gt(i,t){const e={ts:i.ts,zone:i.zone,c:i.c,o:i.o,loc:i.loc,invalid:i.invalid};return new v({...e,...t,old:e})}function Fn(i,t,e){let s=i-t*60*1e3;const n=e.offset(s);if(t===n)return[s,t];s-=(n-t)*60*1e3;const a=e.offset(s);return n===a?[s,n]:[i-Math.min(n,a)*60*1e3,Math.max(n,a)]}function ue(i,t){i+=t*60*1e3;const e=new Date(i);return{year:e.getUTCFullYear(),month:e.getUTCMonth()+1,day:e.getUTCDate(),hour:e.getUTCHours(),minute:e.getUTCMinutes(),second:e.getUTCSeconds(),millisecond:e.getUTCMilliseconds()}}function ge(i,t,e){return Fn(Ie(i),t,e)}function ci(i,t){const e=i.o,s=i.c.year+Math.trunc(t.years),n=i.c.month+Math.trunc(t.months)+Math.trunc(t.quarters)*3,a={...i.c,year:s,month:n,day:Math.min(i.c.day,ke(s,n))+Math.trunc(t.days)+Math.trunc(t.weeks)*7},r=S.fromObject({years:t.years-Math.trunc(t.years),quarters:t.quarters-Math.trunc(t.quarters),months:t.months-Math.trunc(t.months),weeks:t.weeks-Math.trunc(t.weeks),days:t.days-Math.trunc(t.days),hours:t.hours,minutes:t.minutes,seconds:t.seconds,milliseconds:t.milliseconds}).as("milliseconds"),o=Ie(a);let[c,d]=Fn(o,e,i.zone);return r!==0&&(c+=r,d=i.zone.offset(c)),{ts:c,o:d}}function Wt(i,t,e,s,n,a){const{setZone:r,zone:o}=e;if(i&&Object.keys(i).length!==0||t){const c=t||o,d=v.fromObject(i,{...e,zone:c,specificOffset:a});return r?d:d.setZone(o)}else return v.invalid(new Q("unparsable",`the input "${n}" can't be parsed as ${s}`))}function pe(i,t,e=!0){return i.isValid?P.create(E.create("en-US"),{allowZ:e,forceSimple:!0}).formatDateTimeFromString(i,t):null}function Xe(i,t){const e=i.c.year>9999||i.c.year<0;let s="";return e&&i.c.year>=0&&(s+="+"),s+=I(i.c.year,e?6:4),t?(s+="-",s+=I(i.c.month),s+="-",s+=I(i.c.day)):(s+=I(i.c.month),s+=I(i.c.day)),s}function di(i,t,e,s,n,a){let r=I(i.c.hour);return t?(r+=":",r+=I(i.c.minute),(i.c.millisecond!==0||i.c.second!==0||!e)&&(r+=":")):r+=I(i.c.minute),(i.c.millisecond!==0||i.c.second!==0||!e)&&(r+=I(i.c.second),(i.c.millisecond!==0||!s)&&(r+=".",r+=I(i.c.millisecond,3))),n&&(i.isOffsetFixed&&i.offset===0&&!a?r+="Z":i.o<0?(r+="-",r+=I(Math.trunc(-i.o/60)),r+=":",r+=I(Math.trunc(-i.o%60))):(r+="+",r+=I(Math.trunc(i.o/60)),r+=":",r+=I(Math.trunc(i.o%60)))),a&&(r+="["+i.zone.ianaName+"]"),r}const Un={month:1,day:1,hour:0,minute:0,second:0,millisecond:0},bo={weekNumber:1,weekday:1,hour:0,minute:0,second:0,millisecond:0},yo={ordinal:1,hour:0,minute:0,second:0,millisecond:0},qn=["year","month","day","hour","minute","second","millisecond"],$o=["weekYear","weekNumber","weekday","hour","minute","second","millisecond"],wo=["year","ordinal","hour","minute","second","millisecond"];function ko(i){const t={year:"year",years:"year",month:"month",months:"month",day:"day",days:"day",hour:"hour",hours:"hour",minute:"minute",minutes:"minute",quarter:"quarter",quarters:"quarter",second:"second",seconds:"second",millisecond:"millisecond",milliseconds:"millisecond",weekday:"weekday",weekdays:"weekday",weeknumber:"weekNumber",weeksnumber:"weekNumber",weeknumbers:"weekNumber",weekyear:"weekYear",weekyears:"weekYear",ordinal:"ordinal"}[i.toLowerCase()];if(!t)throw new Wi(i);return t}function hi(i){switch(i.toLowerCase()){case"localweekday":case"localweekdays":return"localWeekday";case"localweeknumber":case"localweeknumbers":return"localWeekNumber";case"localweekyear":case"localweekyears":return"localWeekYear";default:return ko(i)}}function ui(i,t){const e=dt(t.zone,T.defaultZone),s=E.fromObject(t),n=T.now();let a,r;if(w(i.year))a=n;else{for(const d of qn)w(i[d])&&(i[d]=Un[d]);const o=mn(i)||fn(i);if(o)return v.invalid(o);const c=e.offset(n);[a,r]=ge(i,c,e)}return new v({ts:a,zone:e,loc:s,o:r})}function pi(i,t,e){const s=w(e.round)?!0:e.round,n=(r,o)=>(r=ys(r,s||e.calendary?0:2,!0),t.loc.clone(e).relFormatter(e).format(r,o)),a=r=>e.calendary?t.hasSame(i,r)?0:t.startOf(r).diff(i.startOf(r),r).get(r):t.diff(i,r).get(r);if(e.unit)return n(a(e.unit),e.unit);for(const r of e.units){const o=a(r);if(Math.abs(o)>=1)return n(o,r)}return n(i>t?-0:0,e.units[e.units.length-1])}function mi(i){let t={},e;return i.length>0&&typeof i[i.length-1]=="object"?(t=i[i.length-1],e=Array.from(i).slice(0,i.length-1)):e=Array.from(i),[t,e]}class v{constructor(t){const e=t.zone||T.defaultZone;let s=t.invalid||(Number.isNaN(t.ts)?new Q("invalid input"):null)||(e.isValid?null:he(e));this.ts=w(t.ts)?T.now():t.ts;let n=null,a=null;if(!s)if(t.old&&t.old.ts===this.ts&&t.old.zone.equals(e))[n,a]=[t.old.c,t.old.o];else{const o=e.offset(this.ts);n=ue(this.ts,o),s=Number.isNaN(n.year)?new Q("invalid input"):null,n=s?null:n,a=s?null:o}this._zone=e,this.loc=t.loc||E.create(),this.invalid=s,this.weekData=null,this.localWeekData=null,this.c=n,this.o=a,this.isLuxonDateTime=!0}static now(){return new v({})}static local(){const[t,e]=mi(arguments),[s,n,a,r,o,c,d]=e;return ui({year:s,month:n,day:a,hour:r,minute:o,second:c,millisecond:d},t)}static utc(){const[t,e]=mi(arguments),[s,n,a,r,o,c,d]=e;return t.zone=L.utcInstance,ui({year:s,month:n,day:a,hour:r,minute:o,second:c,millisecond:d},t)}static fromJSDate(t,e={}){const s=Ja(t)?t.valueOf():NaN;if(Number.isNaN(s))return v.invalid("invalid input");const n=dt(e.zone,T.defaultZone);return n.isValid?new v({ts:s,zone:n,loc:E.fromObject(e)}):v.invalid(he(n))}static fromMillis(t,e={}){if(wt(t))return t<-li||t>li?v.invalid("Timestamp out of range"):new v({ts:t,zone:dt(e.zone,T.defaultZone),loc:E.fromObject(e)});throw new U(`fromMillis requires a numerical input, but received a ${typeof t} with value ${t}`)}static fromSeconds(t,e={}){if(wt(t))return new v({ts:t*1e3,zone:dt(e.zone,T.defaultZone),loc:E.fromObject(e)});throw new U("fromSeconds requires a numerical input")}static fromObject(t,e={}){t=t||{};const s=dt(e.zone,T.defaultZone);if(!s.isValid)return v.invalid(he(s));const n=E.fromObject(e),a=_e(t,hi),{minDaysInFirstWeek:r,startOfWeek:o}=Ks(a,n),c=T.now(),d=w(e.specificOffset)?s.offset(c):e.specificOffset,u=!w(a.ordinal),p=!w(a.year),g=!w(a.month)||!w(a.day),m=p||g,y=a.weekYear||a.weekNumber;if((m||u)&&y)throw new Ct("Can't mix weekYear/weekNumber units with year/month/day or ordinals");if(g&&u)throw new Ct("Can't mix ordinal dates with month/day");const j=y||a.weekday&&!m;let M,tt,at=ue(c,d);j?(M=$o,tt=bo,at=we(at,r,o)):u?(M=wo,tt=yo,at=Ge(at)):(M=qn,tt=Un);let Ss=!1;for(const Ft of M){const Xn=a[Ft];w(Xn)?Ss?a[Ft]=tt[Ft]:a[Ft]=at[Ft]:Ss=!0}const Yn=j?Ba(a,r,o):u?Ga(a):mn(a),Os=Yn||fn(a);if(Os)return v.invalid(Os);const Jn=j?Ys(a,r,o):u?Js(a):a,[Kn,Qn]=ge(Jn,d,s),Pe=new v({ts:Kn,zone:s,o:Qn,loc:n});return a.weekday&&m&&t.weekday!==Pe.weekday?v.invalid("mismatched weekday",`you can't specify both a weekday of ${a.weekday} and a date of ${Pe.toISO()}`):Pe}static fromISO(t,e={}){const[s,n]=Rr(t);return Wt(s,n,e,"ISO 8601",t)}static fromRFC2822(t,e={}){const[s,n]=Fr(t);return Wt(s,n,e,"RFC 2822",t)}static fromHTTP(t,e={}){const[s,n]=Ur(t);return Wt(s,n,e,"HTTP",e)}static fromFormat(t,e,s={}){if(w(t)||w(e))throw new U("fromFormat requires an input string and a format");const{locale:n=null,numberingSystem:a=null}=s,r=E.fromOpts({locale:n,numberingSystem:a,defaultToEN:!0}),[o,c,d,u]=vo(r,t,e);return u?v.invalid(u):Wt(o,c,s,`format ${e}`,t,d)}static fromString(t,e,s={}){return v.fromFormat(t,e,s)}static fromSQL(t,e={}){const[s,n]=Gr(t);return Wt(s,n,e,"SQL",t)}static invalid(t,e=null){if(!t)throw new U("need to specify a reason the DateTime is invalid");const s=t instanceof Q?t:new Q(t,e);if(T.throwOnInvalid)throw new _a(s);return new v({invalid:s})}static isDateTime(t){return t&&t.isLuxonDateTime||!1}static parseFormatForOpts(t,e={}){const s=Rn(t,E.fromObject(e));return s?s.map(n=>n?n.val:null).join(""):null}static expandFormat(t,e={}){return Pn(P.parseFormat(t),E.fromObject(e)).map(n=>n.val).join("")}get(t){return this[t]}get isValid(){return this.invalid===null}get invalidReason(){return this.invalid?this.invalid.reason:null}get invalidExplanation(){return this.invalid?this.invalid.explanation:null}get locale(){return this.isValid?this.loc.locale:null}get numberingSystem(){return this.isValid?this.loc.numberingSystem:null}get outputCalendar(){return this.isValid?this.loc.outputCalendar:null}get zone(){return this._zone}get zoneName(){return this.isValid?this.zone.name:null}get year(){return this.isValid?this.c.year:NaN}get quarter(){return this.isValid?Math.ceil(this.c.month/3):NaN}get month(){return this.isValid?this.c.month:NaN}get day(){return this.isValid?this.c.day:NaN}get hour(){return this.isValid?this.c.hour:NaN}get minute(){return this.isValid?this.c.minute:NaN}get second(){return this.isValid?this.c.second:NaN}get millisecond(){return this.isValid?this.c.millisecond:NaN}get weekYear(){return this.isValid?Ke(this).weekYear:NaN}get weekNumber(){return this.isValid?Ke(this).weekNumber:NaN}get weekday(){return this.isValid?Ke(this).weekday:NaN}get isWeekend(){return this.isValid&&this.loc.getWeekendDays().includes(this.weekday)}get localWeekday(){return this.isValid?Qe(this).weekday:NaN}get localWeekNumber(){return this.isValid?Qe(this).weekNumber:NaN}get localWeekYear(){return this.isValid?Qe(this).weekYear:NaN}get ordinal(){return this.isValid?Ge(this.c).ordinal:NaN}get monthShort(){return this.isValid?ce.months("short",{locObj:this.loc})[this.month-1]:null}get monthLong(){return this.isValid?ce.months("long",{locObj:this.loc})[this.month-1]:null}get weekdayShort(){return this.isValid?ce.weekdays("short",{locObj:this.loc})[this.weekday-1]:null}get weekdayLong(){return this.isValid?ce.weekdays("long",{locObj:this.loc})[this.weekday-1]:null}get offset(){return this.isValid?+this.o:NaN}get offsetNameShort(){return this.isValid?this.zone.offsetName(this.ts,{format:"short",locale:this.locale}):null}get offsetNameLong(){return this.isValid?this.zone.offsetName(this.ts,{format:"long",locale:this.locale}):null}get isOffsetFixed(){return this.isValid?this.zone.isUniversal:null}get isInDST(){return this.isOffsetFixed?!1:this.offset>this.set({month:1,day:1}).offset||this.offset>this.set({month:5}).offset}getPossibleOffsets(){if(!this.isValid||this.isOffsetFixed)return[this];const t=864e5,e=6e4,s=Ie(this.c),n=this.zone.offset(s-t),a=this.zone.offset(s+t),r=this.zone.offset(s-n*e),o=this.zone.offset(s-a*e);if(r===o)return[this];const c=s-r*e,d=s-o*e,u=ue(c,r),p=ue(d,o);return u.hour===p.hour&&u.minute===p.minute&&u.second===p.second&&u.millisecond===p.millisecond?[gt(this,{ts:c}),gt(this,{ts:d})]:[this]}get isInLeapYear(){return ie(this.year)}get daysInMonth(){return ke(this.year,this.month)}get daysInYear(){return this.isValid?Tt(this.year):NaN}get weeksInWeekYear(){return this.isValid?Kt(this.weekYear):NaN}get weeksInLocalWeekYear(){return this.isValid?Kt(this.localWeekYear,this.loc.getMinDaysInFirstWeek(),this.loc.getStartOfWeek()):NaN}resolvedLocaleOptions(t={}){const{locale:e,numberingSystem:s,calendar:n}=P.create(this.loc.clone(t),t).resolvedOptions(this);return{locale:e,numberingSystem:s,outputCalendar:n}}toUTC(t=0,e={}){return this.setZone(L.instance(t),e)}toLocal(){return this.setZone(T.defaultZone)}setZone(t,{keepLocalTime:e=!1,keepCalendarTime:s=!1}={}){if(t=dt(t,T.defaultZone),t.equals(this.zone))return this;if(t.isValid){let n=this.ts;if(e||s){const a=t.offset(this.ts),r=this.toObject();[n]=ge(r,a,t)}return gt(this,{ts:n,zone:t})}else return v.invalid(he(t))}reconfigure({locale:t,numberingSystem:e,outputCalendar:s}={}){const n=this.loc.clone({locale:t,numberingSystem:e,outputCalendar:s});return gt(this,{loc:n})}setLocale(t){return this.reconfigure({locale:t})}set(t){if(!this.isValid)return this;const e=_e(t,hi),{minDaysInFirstWeek:s,startOfWeek:n}=Ks(e,this.loc),a=!w(e.weekYear)||!w(e.weekNumber)||!w(e.weekday),r=!w(e.ordinal),o=!w(e.year),c=!w(e.month)||!w(e.day),d=o||c,u=e.weekYear||e.weekNumber;if((d||r)&&u)throw new Ct("Can't mix weekYear/weekNumber units with year/month/day or ordinals");if(c&&r)throw new Ct("Can't mix ordinal dates with month/day");let p;a?p=Ys({...we(this.c,s,n),...e},s,n):w(e.ordinal)?(p={...this.toObject(),...e},w(e.day)&&(p.day=Math.min(ke(p.year,p.month),p.day))):p=Js({...Ge(this.c),...e});const[g,m]=ge(p,this.o,this.zone);return gt(this,{ts:g,o:m})}plus(t){if(!this.isValid)return this;const e=S.fromDurationLike(t);return gt(this,ci(this,e))}minus(t){if(!this.isValid)return this;const e=S.fromDurationLike(t).negate();return gt(this,ci(this,e))}startOf(t,{useLocaleWeeks:e=!1}={}){if(!this.isValid)return this;const s={},n=S.normalizeUnit(t);switch(n){case"years":s.month=1;case"quarters":case"months":s.day=1;case"weeks":case"days":s.hour=0;case"hours":s.minute=0;case"minutes":s.second=0;case"seconds":s.millisecond=0;break}if(n==="weeks")if(e){const a=this.loc.getStartOfWeek(),{weekday:r}=this;r<a&&(s.weekNumber=this.weekNumber-1),s.weekday=a}else s.weekday=1;if(n==="quarters"){const a=Math.ceil(this.month/3);s.month=(a-1)*3+1}return this.set(s)}endOf(t,e){return this.isValid?this.plus({[t]:1}).startOf(t,e).minus(1):this}toFormat(t,e={}){return this.isValid?P.create(this.loc.redefaultToEN(e)).formatDateTimeFromString(this,t):Je}toLocaleString(t=$e,e={}){return this.isValid?P.create(this.loc.clone(e),t).formatDateTime(this):Je}toLocaleParts(t={}){return this.isValid?P.create(this.loc.clone(t),t).formatDateTimeParts(this):[]}toISO({format:t="extended",suppressSeconds:e=!1,suppressMilliseconds:s=!1,includeOffset:n=!0,extendedZone:a=!1}={}){if(!this.isValid)return null;const r=t==="extended";let o=Xe(this,r);return o+="T",o+=di(this,r,e,s,n,a),o}toISODate({format:t="extended"}={}){return this.isValid?Xe(this,t==="extended"):null}toISOWeekDate(){return pe(this,"kkkk-'W'WW-c")}toISOTime({suppressMilliseconds:t=!1,suppressSeconds:e=!1,includeOffset:s=!0,includePrefix:n=!1,extendedZone:a=!1,format:r="extended"}={}){return this.isValid?(n?"T":"")+di(this,r==="extended",e,t,s,a):null}toRFC2822(){return pe(this,"EEE, dd LLL yyyy HH:mm:ss ZZZ",!1)}toHTTP(){return pe(this.toUTC(),"EEE, dd LLL yyyy HH:mm:ss 'GMT'")}toSQLDate(){return this.isValid?Xe(this,!0):null}toSQLTime({includeOffset:t=!0,includeZone:e=!1,includeOffsetSpace:s=!0}={}){let n="HH:mm:ss.SSS";return(e||t)&&(s&&(n+=" "),e?n+="z":t&&(n+="ZZ")),pe(this,n,!0)}toSQL(t={}){return this.isValid?`${this.toSQLDate()} ${this.toSQLTime(t)}`:null}toString(){return this.isValid?this.toISO():Je}[Symbol.for("nodejs.util.inspect.custom")](){return this.isValid?`DateTime { ts: ${this.toISO()}, zone: ${this.zone.name}, locale: ${this.locale} }`:`DateTime { Invalid, reason: ${this.invalidReason} }`}valueOf(){return this.toMillis()}toMillis(){return this.isValid?this.ts:NaN}toSeconds(){return this.isValid?this.ts/1e3:NaN}toUnixInteger(){return this.isValid?Math.floor(this.ts/1e3):NaN}toJSON(){return this.toISO()}toBSON(){return this.toJSDate()}toObject(t={}){if(!this.isValid)return{};const e={...this.c};return t.includeConfig&&(e.outputCalendar=this.outputCalendar,e.numberingSystem=this.loc.numberingSystem,e.locale=this.loc.locale),e}toJSDate(){return new Date(this.isValid?this.ts:NaN)}diff(t,e="milliseconds",s={}){if(!this.isValid||!t.isValid)return S.invalid("created by diffing an invalid DateTime");const n={locale:this.locale,numberingSystem:this.numberingSystem,...s},a=Ka(e).map(S.normalizeUnit),r=t.valueOf()>this.valueOf(),o=r?this:t,c=r?t:this,d=eo(o,c,a,n);return r?d.negate():d}diffNow(t="milliseconds",e={}){return this.diff(v.now(),t,e)}until(t){return this.isValid?x.fromDateTimes(this,t):this}hasSame(t,e,s){if(!this.isValid)return!1;const n=t.valueOf(),a=this.setZone(t.zone,{keepLocalTime:!0});return a.startOf(e,s)<=n&&n<=a.endOf(e,s)}equals(t){return this.isValid&&t.isValid&&this.valueOf()===t.valueOf()&&this.zone.equals(t.zone)&&this.loc.equals(t.loc)}toRelative(t={}){if(!this.isValid)return null;const e=t.base||v.fromObject({},{zone:this.zone}),s=t.padding?this<e?-t.padding:t.padding:0;let n=["years","months","days","hours","minutes","seconds"],a=t.unit;return Array.isArray(t.unit)&&(n=t.unit,a=void 0),pi(e,this.plus(s),{...t,numeric:"always",units:n,unit:a})}toRelativeCalendar(t={}){return this.isValid?pi(t.base||v.fromObject({},{zone:this.zone}),this,{...t,numeric:"auto",units:["years","months","days"],calendary:!0}):null}static min(...t){if(!t.every(v.isDateTime))throw new U("min requires all arguments be DateTimes");return Qs(t,e=>e.valueOf(),Math.min)}static max(...t){if(!t.every(v.isDateTime))throw new U("max requires all arguments be DateTimes");return Qs(t,e=>e.valueOf(),Math.max)}static fromFormatExplain(t,e,s={}){const{locale:n=null,numberingSystem:a=null}=s,r=E.fromOpts({locale:n,numberingSystem:a,defaultToEN:!0});return Ln(r,t,e)}static fromStringExplain(t,e,s={}){return v.fromFormatExplain(t,e,s)}static get DATE_SHORT(){return $e}static get DATE_MED(){return Vi}static get DATE_MED_WITH_WEEKDAY(){return ja}static get DATE_FULL(){return Hi}static get DATE_HUGE(){return Zi}static get TIME_SIMPLE(){return Bi}static get TIME_WITH_SECONDS(){return Gi}static get TIME_WITH_SHORT_OFFSET(){return Yi}static get TIME_WITH_LONG_OFFSET(){return Ji}static get TIME_24_SIMPLE(){return Ki}static get TIME_24_WITH_SECONDS(){return Qi}static get TIME_24_WITH_SHORT_OFFSET(){return Xi}static get TIME_24_WITH_LONG_OFFSET(){return tn}static get DATETIME_SHORT(){return en}static get DATETIME_SHORT_WITH_SECONDS(){return sn}static get DATETIME_MED(){return nn}static get DATETIME_MED_WITH_SECONDS(){return an}static get DATETIME_MED_WITH_WEEKDAY(){return Ea}static get DATETIME_FULL(){return rn}static get DATETIME_FULL_WITH_SECONDS(){return on}static get DATETIME_HUGE(){return ln}static get DATETIME_HUGE_WITH_SECONDS(){return cn}}function Vt(i){if(v.isDateTime(i))return i;if(i&&i.valueOf&&wt(i.valueOf()))return v.fromJSDate(i);if(i&&typeof i=="object")return v.fromObject(i);throw new U(`Unknown datetime argument: ${i}, of type ${typeof i}`)}class _o extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},invitecode:{type:String},loading:{type:Boolean,attribute:!1},errorMessage:{type:String,attribute:!1},copyFeedback:{type:String,attribute:!1},training:{type:Object,attribute:!1}}}constructor(){super(),this.name="",this.module="",this.skippable=!1,this.t={},this.training={},this.loading=!1,this.errorMessage="",this.copyFeedback="",this.url=""}connectedCallback(){super.connectedCallback();const t=new URL(location.href);if(!this.invitecode){const e=t.searchParams.get("joinKey");this.invitecode=e}this.url=jsObject.site_url+`/app/plan-invite${this.invitecode!==""?"?code="+this.invitecode:""}`,this.loading=!0,makeRequest("GET",`plan/${this.invitecode}`,{},"zume_system/v1").then(e=>{if(e.error_code){this.errorMessage=this.t.broken_link;return}this.training=e,this.errorMessage=""}).fail(e=>{console.error(e),this.errorMessage=this.t.broken_link}).always(()=>{this.loading=!1}),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))}getNextSession(){if(Object.keys(this.training).length===0)return;const{set_type:t}=this.training,e=this.numberOfSessions(t.key),s=v.now();for(let n=1;n<e+1;n++){const a=n<10?`0${n}`:`${n}`,r=this.training[t.key+"_"+a];if(r&&v.fromSeconds(r.timestamp)>s)return v.fromSeconds(r.timestamp).toISODate()}return""}numberOfSessions(t){switch(t){case"set_a":return 10;case"set_b":return 20;case"set_c":return 5}}getInviteText(){const t=this.getNextSession(),e=this.t.note.replace("%s",this.training.post_author_display_name),s=this.training.location_note,n=this.training.time_of_day_note?`, ${this.training.time_of_day_note}`:"",a=this.training.timezone_note?`, ${this.training.timezone_note}`:"";return`${e}
 
 ${this.t.location}: ${s}
@@ -202,617 +139,312 @@ ${this.training.zoom_link_note}
                 <p>${this.t.share_with_friends}</p>
 
                 ${this.loading?l`<span class="loading-spinner active"></span>`:""}
-                ${!this.loading&&this.errorMessage!==""?l`<span class="banner warning"
-                          >${this.errorMessage}</span
-                      >`:""}
+                ${!this.loading&&this.errorMessage!==""?l`<span class="banner warning">${this.errorMessage}</span>`:""}
                 ${!this.loading&&this.errorMessage===""?l`
-                          <textarea class="input" rows="9">
-${t}</textarea
-                          >
-                          ${navigator.clipboard?l`
-                                    <div class="position-relative">
-                                        <button
-                                            class="btn mx-auto fit-content"
-                                            @click=${this.copyInvite}
-                                        >
-                                            ${this.t.copy_invite}
-                                        </button>
-                                        <p
-                                            role="alert"
-                                            aria-live="polite"
-                                            id="copyFeedback"
-                                            class="context-alert"
-                                            data-state=${this.copyFeedback.length?"":"empty"}
-                                        >
-                                            ${this.copyFeedback}
-                                        </p>
-                                    </div>
-                                `:""}
+                        <textarea class="input" rows="9">${t}</textarea>
+                        ${navigator.clipboard?l`
+                                <div class="position-relative">
+                                    <button class="btn mx-auto fit-content" @click=${this.copyInvite}>${this.t.copy_invite}</button>
+                                    <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length?"":"empty"}>${this.copyFeedback}</p>
+                                </div>
+                            `:""}
 
-                          <share-links
-                              url=${this.url}
-                              title="${this.t.join_my_plan}"
-                              .t=${this.t}
-                              alwaysShow
-                          ></share-links>
-                      `:""}
+                        <share-links url=${this.url} title="${this.t.join_my_plan}" .t=${this.t} alwaysShow ></share-links>
+                    `:""}
             </div>
         `}createRenderRoot(){return this}}window.customElements.define("invite-friends",_o);class So extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},code:{attribute:!1},message:{attribute:!1},errorMessage:{attribute:!1},loading:{attribute:!1}}}constructor(){super(),this.code="",this.errorMessage="",this.showTrainings=!1,this.loading=!1}firstUpdated(){const t=new URL(location.href);if(!t.searchParams.has("code")){this.message="",this.loading=!1,this.showTrainings=!0;return}const e=t.searchParams.get("code");this.connectToPlan(e)}connectToPlan(t){this.loading=!0,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.message=this.t.please_wait,this.code=t,V.post("connect/public-plan",{code:t}).then(e=>{this.message=this.t.success.replace("%s",e.name);const s=new URL(location.href);s.searchParams.set("joinKey",t),window.history.pushState(null,null,s.href)}).catch(e=>{console.log(e),this.message="",e.code==="bad_plan_code"?this.setErrorMessage(this.t.broken_link):this.setErrorMessage(this.t.error)}).finally(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}setErrorMessage(t){this.errorMessage=t}_handleChosenTraining(t){console.log(t);const{code:e}=t.detail;this.showTrainings=!1,this.connectToPlan(e)}render(){return l`
             <h1>${this.t.title}</h1>
             <p>${this.message}</p>
             ${this.showTrainings?l`
-                      <public-trainings
-                          .t=${this.t}
-                          @chosen-training=${this._handleChosenTraining}
-                      ></public-trainings>
-                  `:""}
-            <span
-                class="loading-spinner ${this.loading?"active":""}"
-            ></span>
-            <div
-                class="warning banner"
-                data-state=${this.errorMessage.length?"":"empty"}
-            >
-                ${this.errorMessage}
-            </div>
+                <public-trainings .t=${this.t} @chosen-training=${this._handleChosenTraining}></public-trainings>
+            `:""}
+            <span class="loading-spinner ${this.loading?"active":""}"></span>
+            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
         `}createRenderRoot(){return this}}customElements.define("join-training",So);class Oo extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},loading:{type:Boolean,attribute:!1},success:{type:Boolean,atrtibute:!1}}}joinCommunity(){this.loading=!0,makeRequest("POST","log",{type:"system",subtype:"join_community"},"zume_system/v1/").done(t=>{console.log(t),this.success=!0}).always(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}_sendDoneStepEvent(){const t=new CustomEvent("done-step",{bubbles:!0});this.dispatchEvent(t)}render(){return l`
             <div class="container-md stack-2 center | py-2">
-                <h1 class="text-center">${this.t.community_title}</h1>
-                <p>${this.t.community_description}</p>
-                <div class="switcher | training-path">
-                    <div class="stack | card | switcher-width-40">
-                        <h2 class="f-1 text-center">
-                            ${this.t.community_peer_title}
-                        </h2>
-                        <img
-                            class="mx-auto h-6rem"
-                            src=${jsObject.images_url+"/Gather-A-Group-01.svg"}
-                            alt="Peer Mentoring"
-                        />
-                        <p class="mb-0">${this.t.community_peer_description}</p>
-                    </div>
-                    <div class="stack | card | switcher-width-40">
-                        <h2 class="f-1 text-center">
-                            ${this.t.community_encouragement_title}
-                        </h2>
-                        <img
-                            class="mx-auto h-6rem"
-                            src=${jsObject.images_url+"/coach-2guys.svg"}
-                            alt="Free Tools"
-                        />
-                        <p class="mb-0">
-                            ${this.t.community_encouragement_description}
-                        </p>
-                    </div>
-                    <div class="stack | card | switcher-width-40">
-                        <h2 class="f-1 text-center">
-                            ${this.t.community_tools_title}
-                        </h2>
-                        <img
-                            class="mx-auto h-6rem"
-                            src=${jsObject.images_url+"/JoinTraining.svg"}
-                            alt="Encouragement"
-                        />
-                        <p class="mb-0">
-                            ${this.t.community_tools_description}
-                        </p>
-                    </div>
+              <h1 class="text-center">${this.t.community_title}</h1>
+              <p>${this.t.community_description}</p>
+              <div class="switcher | training-path">
+                <div class="stack | card | switcher-width-40">
+                  <h2 class="f-1 text-center">${this.t.community_peer_title}</h2>
+                  <img class="mx-auto h-6rem" src=${jsObject.images_url+"/Gather-A-Group-01.svg"} alt="Peer Mentoring">
+                  <p class="mb-0">
+                    ${this.t.community_peer_description}
+                  </p>
                 </div>
+                <div class="stack | card | switcher-width-40">
+                  <h2 class="f-1 text-center">${this.t.community_encouragement_title}</h2>
+                  <img class="mx-auto h-6rem" src=${jsObject.images_url+"/coach-2guys.svg"}  alt="Free Tools">
+                  <p class="mb-0">
+                    ${this.t.community_encouragement_description}
+                  </p>
+                </div>
+                <div class="stack | card | switcher-width-40">
+                  <h2 class="f-1 text-center">${this.t.community_tools_title}</h2>
+                  <img class="mx-auto h-6rem" src=${jsObject.images_url+"/JoinTraining.svg"} alt="Encouragement">
+                  <p class="mb-0">
+                    ${this.t.community_tools_description}
+                  </p>
+                </div>
+              </div>
             </div>
             <div class="container-md center">
                 ${this.success?"":l`
-                          <button
-                              class="btn large uppercase"
-                              @click=${this.joinCommunity}
-                          >
-                              ${this.t.community_join_free}
-                              ${this.loading===!0?l`<span
-                                        class="loading-spinner active"
-                                    ></span>`:""}
-                          </button>
-                      `}
+                      <button class="btn large uppercase" @click=${this.joinCommunity}>
+                        ${this.t.community_join_free}
+                        ${this.loading===!0?l`<span class="loading-spinner active"></span>`:""}
+                      </button>
+                    `}
                 ${this.success===!0?l`
-                          <div class="stack">
-                              <span class="banner success">
-                                  ${this.t.joined_community}
-                              </span>
-                          </div>
-                      `:""}
+                        <div class="stack">
+                            <span class="banner success">
+                                ${this.t.joined_community}
+                            </span>
+                        </div>
+                    `:""}
                 ${this.success===!1?l`
-                          <div class="stack">
-                              <span class="banner warning">
-                                  ${this.t.error}
-                              </span>
-                          </div>
-                      `:""}
+                        <div class="stack">
+                            <span class="banner warning">
+                                ${this.t.error}
+                            </span>
+                        </div>
+                    `:""}
+
             </div>
         `}createRenderRoot(){return this}}customElements.define("join-community",Oo);class jo extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},code:{attribute:!1},message:{attribute:!1},errorMessage:{attribute:!1},loading:{attribute:!1}}}constructor(){super(),this.code="",this.errorMessage="",this.loading=!1}firstUpdated(){this.loading=!0,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.message=this.t.please_wait;const t=new URL(location.href);if(!t.searchParams.has("code")){this.message="",this.setErrorMessage(this.t.broken_link),this.loading=!1;return}const e=t.searchParams.get("code");this.code=e,V.post("connect/plan",{code:e}).then(s=>{this.message=this.t.success.replace("%s",s.name);const n=new URL(location.href);n.searchParams.set("joinKey",e),window.history.pushState(null,null,n.href)}).catch(s=>{console.log(s),this.message="",s.code==="bad_plan_code"?this.setErrorMessage(this.t.broken_link):this.setErrorMessage(this.t.error)}).finally(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}setErrorMessage(t){this.errorMessage=t}render(){return l`
             <h1>${this.t.title}</h1>
             <p>${this.message}</p>
-            <span
-                class="loading-spinner ${this.loading?"active":""}"
-            ></span>
-            <div
-                class="warning banner"
-                data-state=${this.errorMessage.length?"":"empty"}
-            >
-                ${this.errorMessage}
-            </div>
+            <span class="loading-spinner ${this.loading?"active":""}"></span>
+            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
         `}createRenderRoot(){return this}}customElements.define("join-friends-training",jo);class Eo extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},variant:{type:String},state:{attribute:!1},selectedDays:{type:Array,attribute:!1},completedSteps:{type:Array,attribute:!1},calendarStart:{type:String,attribute:!1},calendarEnd:{type:String,attribute:!1},calendarView:{type:String,attribute:!1},scheduleView:{type:String,attribute:!1},errorMessage:{type:String,attribute:!1},message:{type:String,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.name="",this.module="",this.skippable=!1,this.variant="",this.t={},this.state={},this.errorMessage="",this.message="",this.loading=!1,this.stateManager=new hs(A.makePlan),this.stateManager.clear(),this.trainingSchedule=[],this.selectedDays=[],this.completedSteps=[],this.calendarStart=v.now().startOf("month").toISODate(),this.calendarEnd=v.now().plus({month:2}).endOf("month").toISODate(),this.calendarView="all",this.scheduleView="calendar"}willUpdate(t){const e={[h.howManySessions]:"10",[h.scheduleDecision]:"yes",[h.howOften]:"weekly",[h.location]:"",[h.startDate]:{date:v.now().toISODate()}};if(t.has("variant")){if(this.state=this.stateManager.get(this.variant)||e[this.variant],this.variant===h.howOften||this.variant===h.startDate){const s=this.stateManager.get(h.scheduleDecision);(this.isIntensive()||s==="no")&&this._sendDoneStepEvent()}this.variant===h.review&&this._buildSelectedDays(),this.variant===h.review&&this.isIntensive()&&(this.scheduleView="list")}}_handlePlanDecision(t){const e=t.target.dataset.decision;let s="";switch(e){case"make":s=$.makeAGroup;break;case"join":s=$.joinATraining;break}this._sendLoadWizardEvent(s)}_sendLoadWizardEvent(t,e={}){const s={wizard:t};Object.keys(e).length>0&&(s.queryParams=e),this.dispatchEvent(new CustomEvent("wizard:load",{bubbles:!0,detail:s}))}_handleDone(t){t&&t.preventDefault(),this.completedSteps.includes(this.variant)||(this.completedSteps=[...this.completedSteps,this.variant]),this.variant===h.scheduleDecision&&this.state==="no"&&(this.completedSteps=this.completedSteps.filter(e=>e!==h.howOften&&e!==h.startDate)),this._saveState(),this._sendDoneStepEvent()}_sendDoneStepEvent(){const t=new CustomEvent("done-step",{bubbles:!0});this.dispatchEvent(t)}_gotoStep(t){const e=new CustomEvent("wizard:goto-step",{bubbles:!0,detail:{slug:t}});this.dispatchEvent(e)}_handleSelection(t){const e=t.target.dataset.value;this.state=e,this._saveState()}_saveState(){this.stateManager.add(this.variant,this.state)}_handleChange(t){t.target.type==="text"&&(this.state=t.target.value),["date","time"].includes(t.target.type)&&(this.state={...this.state,[t.target.name]:t.target.value}),this.stateManager.add(this.variant,this.state)}_buildSelectedDays(){var n;const t=this.stateManager.get(h.howManySessions),e=this.stateManager.get(h.howOften),s=(n=this.stateManager.get(h.startDate))==null?void 0:n.date;if(!(this.selectedDays.length>0)&&t&&e&&s){let a=0;e==="weekly"&&(a=1),e==="biweekly"&&(a=2),e==="monthly"&&(a=4);const r=[],o=v.fromISO(s);for(let c=1;c<Number(t)+1;c++)r.push({date:o.plus({weeks:a*(c-1)}).toISODate(),id:this.createId()});this.selectedDays=r,this.calendarStart=v.fromISO(o).startOf("month").toISODate(),this.calendarEnd=v.fromISO(r[r.length-1].date).endOf("month").toISODate(),this.calendarView="all"}}_buildSet(t){var c;const e=this.stateManager.get(h.howManySessions),s=(c=this.stateManager.get(h.startDate))==null?void 0:c.time,a={location_note:this.stateManager.get(h.location)||"",time_of_day_note:s||""};let r="";e==="10"&&(r="set_a_"),e==="20"&&(r="set_b_"),e==="5"&&(r="set_c_");const o=t.sort(this.sortDays);for(let d=1;d<Number(e)+1;d++){const u=d<10?`0${d}`:`${d}`;let p;d-1<o.length?p=v.fromISO(o[d-1].date).toSeconds():p="",a[r+u]=p}return a}sortDays(t,e){return t.date===e.date?0:t.date<e.date?-1:1}_handleCreate(){if(this.loading)return;const t=this.stateManager.get(h.howManySessions),e=this.stateManager.get(h.scheduleDecision),s=this.stateManager.get(h.name);let n="";switch(t){case"10":n="set_a";break;case"20":n="set_b";break;case"5":n="set_c";break}if(e==="yes"&&this.selectedDays.length!==Number(t)){this.errorMessage=this.t.incorrect_number_of_sessions,setTimeout(()=>{this.errorMessage=""},3e3);return}const a={user_id:jsObject.profile.user_id,contact_id:jsObject.profile.contact_id,title:s||"",set_type:n,set:this._buildSet(this.selectedDays)};this.loading=!0,makeRequest("POST","plan",a,"zume_system/v1").then(r=>{this._handleFinish(r.join_key)}).fail(r=>{console.log(r)}).always(()=>{this.loading=!1})}_handleFinish(t){this._sendLoadWizardEvent($.inviteFriends,{joinKey:t})}isIntensive(){return this.stateManager.get(h.howManySessions)==="5"}toggleView(){this.scheduleView==="calendar"?this.scheduleView="list":this.scheduleView="calendar"}createId(){return sha256(Math.random(0,1e4)).slice(0,6)}addDate(t){const{date:e}=t.detail,s={date:e,id:this.createId()};this.selectedDays=[...this.selectedDays,s]}removeDate(t){const{id:e}=t.detail;console.log(e);const s=this.selectedDays.findIndex(n=>e===n.id);s>-1&&(this.selectedDays=[...this.selectedDays.slice(0,s),...this.selectedDays.slice(s+1)])}updateCalendarEnd(t){const{newEndDate:e}=t.detail;this.calendarEnd=e}_clearCalendar(){this.selectedDays=[]}render(){var a,r;const t=Number(this.stateManager.get(h.howManySessions)),e=this.stateManager.get(h.scheduleDecision);let s="",n="";return this.selectedDays.length<t&&(s=this.t.x_of_total_selected.replace("%1$s",this.selectedDays.length).replace("%2$s",t),n="var(--z-brand-light)"),this.selectedDays.length===t&&(s=this.t.all_selected.replace("%s",t),n="var(--z-success)"),this.selectedDays.length>t&&(s=this.t.too_many_selected.replace("%s",this.selectedDays.length-t),n="var(--z-error-main)"),l`
             <div class="stack-1 position-relative">
                 ${this.variant===h.planDecision?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-start-group brand-light f-7"
-                              ></span>
-                              <h2>${this.t.join_or_start_a_training}</h2>
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn tight"
-                                      data-decision="make"
-                                      @click=${this._handlePlanDecision}
-                                  >
-                                      ${this.t.start_a_training}
-                                  </button>
-                                  <button
-                                      class="btn tight"
-                                      data-decision="join"
-                                      @click=${this._handlePlanDecision}
-                                  >
-                                      ${this.t.join_a_public_training}
-                                  </button>
-                                  <button
-                                      class="btn tight outline"
-                                      data-decision="skip"
-                                      @click=${this._handlePlanDecision}
-                                  >
-                                      ${this.t.skip_for_now}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-start-group brand-light f-7"></span>
+                        <h2>${this.t.join_or_start_a_training}</h2>
+                        <div class="stack" data-fit-content>
+                            <button class="btn tight" data-decision="make" @click=${this._handlePlanDecision}>${this.t.start_a_training}</button>
+                            <button class="btn tight" data-decision="join" @click=${this._handlePlanDecision}>${this.t.join_a_public_training}</button>
+                            <button class="btn tight outline" data-decision="skip" @click=${this._handlePlanDecision}>${this.t.skip_for_now}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.howManySessions?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-session-choice brand-light f-7"
-                              ></span>
-                              <h2>${this.t.question_which_session}</h2>
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn tight green ${this.state==="20"?"":"outline"}"
-                                      data-value="20"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.hour_1_session_20}
-                                  </button>
-                                  <button
-                                      class="btn tight green ${this.state==="10"?"":"outline"}"
-                                      data-value="10"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.hour_2_session_10}
-                                  </button>
-                                  <button
-                                      class="btn tight green ${this.state==="5"?"":"outline"}"
-                                      data-value="5"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.hour_4_session_5}
-                                  </button>
-                                  <button
-                                      class="btn tight mt-2"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-session-choice brand-light f-7"></span>
+                        <h2>${this.t.question_which_session}</h2>
+                        <div class="stack" data-fit-content>
+                            <button class="btn tight green ${this.state==="20"?"":"outline"}" data-value="20" @click=${this._handleSelection}>${this.t.hour_1_session_20}</button>
+                            <button class="btn tight green ${this.state==="10"?"":"outline"}" data-value="10" @click=${this._handleSelection}>${this.t.hour_2_session_10}</button>
+                            <button class="btn tight green ${this.state==="5"?"":"outline"}" data-value="5" @click=${this._handleSelection}>${this.t.hour_4_session_5}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.scheduleDecision?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-session-choice brand-light f-7"
-                              ></span>
-                              <h2>${this.t.question_schedule_training}</h2>
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn tight green ${this.state==="yes"?"":"outline"}"
-                                      data-value="yes"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.yes}
-                                  </button>
-                                  <button
-                                      class="btn tight green ${this.state==="no"?"":"outline"}"
-                                      data-value="no"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.no}
-                                  </button>
-                                  <button
-                                      class="btn tight mt-2"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-session-choice brand-light f-7"></span>
+                        <h2>${this.t.question_schedule_training}</h2>
+                        <div class="stack" data-fit-content>
+                            <button class="btn tight green ${this.state==="yes"?"":"outline"}" data-value="yes" @click=${this._handleSelection}>${this.t.yes}</button>
+                            <button class="btn tight green ${this.state==="no"?"":"outline"}" data-value="no" @click=${this._handleSelection}>${this.t.no}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.howOften?l`
-                          <div class="stack">
-                              <span class="z-icon-time brand-light f-7"></span>
-                              <h2>${this.t.question_how_often}</h2>
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn tight green ${this.state==="weekly"?"":"outline"}"
-                                      data-value="weekly"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.weekly}
-                                  </button>
-                                  <button
-                                      class="btn tight green ${this.state==="biweekly"?"":"outline"}"
-                                      data-value="biweekly"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.biweekly}
-                                  </button>
-                                  <button
-                                      class="btn tight green ${this.state==="other"?"":"outline"}"
-                                      data-value="other"
-                                      @click=${this._handleSelection}
-                                  >
-                                      ${this.t.other}
-                                  </button>
-                                  <button
-                                      class="btn tight mt-2"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-time brand-light f-7"></span>
+                        <h2>${this.t.question_how_often}</h2>
+                        <div class="stack" data-fit-content>
+                            <button class="btn tight green ${this.state==="weekly"?"":"outline"}" data-value="weekly" @click=${this._handleSelection}>${this.t.weekly}</button>
+                            <button class="btn tight green ${this.state==="biweekly"?"":"outline"}" data-value="biweekly" @click=${this._handleSelection}>${this.t.biweekly}</button>
+                            <button class="btn tight green ${this.state==="other"?"":"outline"}" data-value="other" @click=${this._handleSelection}>${this.t.other}</button>
+                            <button class="btn tight mt-2" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.startDate?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-start-date brand-light f-7"
-                              ></span>
-                              <h2>${this.t.question_when_will_you_start}</h2>
-                              <div
-                                  class="cluster justify-content-center gapy-0"
-                              >
-                                  <input
-                                      type="date"
-                                      name="date"
-                                      class="fit-content m0"
-                                      @change=${this._handleChange}
-                                      value=${this.state.date}
-                                      onclick="this.showPicker()"
-                                  />
-                                  ${this.state.date?l`
-                                            <input
-                                                type="time"
-                                                name="time"
-                                                class="fit-content m0"
-                                                @change=${this._handleChange}
-                                                value=${this.state.time}
-                                                min="00:00"
-                                                max="23:55"
-                                                step="300"
-                                                onclick="this.showPicker()"
-                                            />
-                                        `:""}
-                              </div>
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn fit-content mx-auto"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-start-date brand-light f-7"></span>
+                        <h2>${this.t.question_when_will_you_start}</h2>
+                        <div class="cluster justify-content-center gapy-0">
+                            <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
+                            ${this.state.date?l`
+                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300" onclick="this.showPicker()" />
+                                `:""}
+                        </div>
+                        <div class="stack" data-fit-content>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.location?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-start-date brand-light f-7"
-                              ></span>
-                              <h2>${this.t.question_where_will_you_meet}</h2>
-                              <p>
-                                  ${this.t.question_where_will_you_meet_help_text}
-                              </p>
-                              <input
-                                  type="text"
-                                  name="location"
-                                  placeholder=${this.t.location}
-                                  @change=${this._handleChange}
-                                  value=${typeof this.state=="string"?this.state:""}
-                              />
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn fit-content mx-auto"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-start-date brand-light f-7"></span>
+                        <h2>${this.t.question_where_will_you_meet}</h2>
+                        <p>${this.t.question_where_will_you_meet_help_text}</p>
+                        <input type="text" name="location" placeholder=${this.t.location} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
+                        <div class="stack" data-fit-content>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.name?l`
-                          <div class="stack">
-                              <span
-                                  class="z-icon-start-date brand-light f-7"
-                              ></span>
-                              <h2>
-                                  ${this.t.question_what_is_the_groups_name}
-                              </h2>
-                              <input
-                                  type="text"
-                                  name="name"
-                                  placeholder=${this.t.group_name}
-                                  @change=${this._handleChange}
-                                  value=${typeof this.state=="string"?this.state:""}
-                              />
-                              <div class="stack" data-fit-content>
-                                  <button
-                                      class="btn fit-content mx-auto"
-                                      @click=${this._handleDone}
-                                  >
-                                      ${this.t.next}
-                                  </button>
-                              </div>
-                          </div>
-                      `:""}
+                    <div class="stack">
+                        <span class="z-icon-start-date brand-light f-7"></span>
+                        <h2>${this.t.question_what_is_the_groups_name}</h2>
+                        <input type="text" name="name" placeholder=${this.t.group_name} @change=${this._handleChange} value=${typeof this.state=="string"?this.state:""} />
+                        <div class="stack" data-fit-content>
+                            <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant===h.review?l`
-                          <div class="stack">
-                              <h2>
-                                  <span
-                                      class="z-icon-overview brand-light"
-                                  ></span>
-                                  ${this.t.review_training}
-                              </h2>
+                    <div class="stack">
+                        <h2><span class="z-icon-overview brand-light"></span> ${this.t.review_training}</h2>
 
-                              ${e==="yes"?l`
-                                        <div class="cluster">
-                                            <button
-                                                class="btn outline red small tight fit-content"
-                                                @click=${this._clearCalendar}
-                                            >
-                                                ${this.t.clear_calendar}
-                                            </button>
-                                            <button
-                                                class="btn outline small tight ms-auto"
-                                                @click=${this.toggleView}
-                                            >
-                                                ${this.scheduleView==="calendar"?"list":"calendar"}
-                                            </button>
+                        ${e==="yes"?l`
+                                    <div class="cluster">
+                                        <button
+                                            class="btn outline red small tight fit-content"
+                                            @click=${this._clearCalendar}
+                                        >
+                                            ${this.t.clear_calendar}
+                                        </button>
+                                        <button class="btn outline small tight ms-auto" @click=${this.toggleView}>${this.scheduleView==="calendar"?"list":"calendar"}</button>
+                                    </div>
+                                `:""}
+                        ${this.scheduleView==="calendar"&&e==="yes"?l`
+                                    <calendar-select
+                                        style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
+                                        startDate=${this.calendarStart}
+                                        endDate=${this.calendarEnd}
+                                        .selectedDays=${this.selectedDays.sort(this.sortDays)}
+                                        view=${this.calendarView}
+                                        showToday
+                                        @day-added=${this.addDate}
+                                        @day-removed=${this.removeDate}
+                                        @calendar-extended=${this.updateCalendarEnd}
+                                    ></calendar-select>
+                                `:""}
+                        ${this.scheduleView==="list"&&e==="yes"?l`
+                                    <calendar-list
+                                        .t=${this.t}
+                                        .selectedDays=${this.selectedDays}
+                                        @day-added=${this.addDate}
+                                        @day-removed=${this.removeDate}
+                                    ></calendar-list>
+                                `:""}
+                        <div class="make-training__save-area stack" ?data-absolute=${e==="no"}>
+                            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
+                            <div class="d-flex align-items-center gap-0 bg-white py-0">
+                                ${e==="yes"?l`
+                                        <div class="grow-1">
+                                            <span>${s}</span>
+                                            <progress-slider
+                                                class="grow-1 mt--3"
+                                                percentage=${this.selectedDays.length/t*100}
+                                                style="--primary-color: ${n}"
+                                            ></progress-slider>
                                         </div>
-                                    `:""}
-                              ${this.scheduleView==="calendar"&&e==="yes"?l`
-                                        <calendar-select
-                                            style="--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)"
-                                            startDate=${this.calendarStart}
-                                            endDate=${this.calendarEnd}
-                                            .selectedDays=${this.selectedDays.sort(this.sortDays)}
-                                            view=${this.calendarView}
-                                            showToday
-                                            @day-added=${this.addDate}
-                                            @day-removed=${this.removeDate}
-                                            @calendar-extended=${this.updateCalendarEnd}
-                                        ></calendar-select>
-                                    `:""}
-                              ${this.scheduleView==="list"&&e==="yes"?l`
-                                        <calendar-list
-                                            .t=${this.t}
-                                            .selectedDays=${this.selectedDays}
-                                            @day-added=${this.addDate}
-                                            @day-removed=${this.removeDate}
-                                        ></calendar-list>
-                                    `:""}
-                              <div
-                                  class="make-training__save-area stack"
-                                  ?data-absolute=${e==="no"}
-                              >
-                                  <div
-                                      class="warning banner"
-                                      data-state=${this.errorMessage.length?"":"empty"}
-                                  >
-                                      ${this.errorMessage}
-                                  </div>
-                                  <div
-                                      class="d-flex align-items-center gap-0 bg-white py-0"
-                                  >
-                                      ${e==="yes"?l`
-                                                <div class="grow-1">
-                                                    <span>${s}</span>
-                                                    <progress-slider
-                                                        class="grow-1 mt--3"
-                                                        percentage=${this.selectedDays.length/t*100}
-                                                        style="--primary-color: ${n}"
-                                                    ></progress-slider>
-                                                </div>
-                                            `:l`<span class="grow-1"></span>`}
-                                      <button
-                                          class="btn tight ms-auto"
-                                          @click=${this._handleCreate}
-                                      >
-                                          ${this.t.create}
-                                          <span
-                                              class="loading-spinner ${this.loading?"active":""}"
-                                          ></span>
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      `:""}
+                                    `:l`<span class="grow-1"></span>`}
+                                <button
+                                    class="btn tight ms-auto"
+                                    @click=${this._handleCreate}
+                                >
+                                    ${this.t.create}
+                                    <span class="loading-spinner ${this.loading?"active":""}"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `:""}
                 ${this.variant!==h.planDecision?l`
-                          <review-steps
-                              .t=${this.t}
-                              name=${this.stateManager.get(h.name)}
-                              howManySessions=${this.stateManager.get(h.howManySessions)}
-                              scheduleDecision=${this.stateManager.get(h.scheduleDecision)}
-                              howOften=${this.stateManager.get(h.howOften)}
-                              time=${(a=this.stateManager.get(h.startDate))==null?void 0:a.time}
-                              date=${(r=this.stateManager.get(h.startDate))==null?void 0:r.date}
-                              whatLocation=${this.stateManager.get(h.location)}
-                              .display=${this.completedSteps}
-                          ></review-steps>
-                      `:""}
+                    <review-steps
+                        .t=${this.t}
+                        name=${this.stateManager.get(h.name)}
+                        howManySessions=${this.stateManager.get(h.howManySessions)}
+                        scheduleDecision=${this.stateManager.get(h.scheduleDecision)}
+                        howOften=${this.stateManager.get(h.howOften)}
+                        time=${(a=this.stateManager.get(h.startDate))==null?void 0:a.time}
+                        date=${(r=this.stateManager.get(h.startDate))==null?void 0:r.date}
+                        whatLocation=${this.stateManager.get(h.location)}
+                        .display=${this.completedSteps}
+                    ></review-steps>
+                `:""}
             </div>
         `}createRenderRoot(){return this}}customElements.define("make-training",Eo);class Co extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},variant:{type:String},state:{attribute:!1},errorMessage:{attribute:!1},message:{attribute:!1},loading:{attribute:!1},requestSent:{attribute:!1}}}constructor(){super(),this.name="",this.module="",this.skippable=!1,this.variant="",this.t={},this.state={},this.errorMessage="",this.message="",this.loading=!1,this.requestSent=!1,this.contactPreferences=["email","text","phone","whatsapp","signal","telegram","messenger"],this.stateManager=new hs(this.module),this.stateManager.clear()}requestCoach(){this.message=this.t.please_wait;const t=this.stateManager.getAll();this.loading=!0,this.requestSent=!0,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),V.post("get_a_coach",{data:t}).then(e=>{console.log(e,this),this.message=this.t.connect_success,e===!1&&(this.message=this.t.connect_fail,this.setErrorMessage(this.t.error_connecting))}).catch(e=>{if(e.message==="already_has_coach"){this.message="",this.setErrorMessage(this.t.already_coached);return}this.message=this.t.connect_fail,this.setErrorMessage(this.t.error_connecting)}).finally(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}willUpdate(t){t.has("variant")&&(this.state=this.stateManager.get(this.variant)||{},this.variant===h.languagePreferences&&!this.state.value&&(this.state.value=jsObject.profile.preferred_language||"en",this.stateManager.add(this.variant,this.state)))}setErrorMessage(t){this.errorMessage=t}render(){return this.variant===h.connectingToCoach&&this.requestSent===!1&&this.requestCoach(),l`
-            <form class="inputs stack-2" @submit=${this._handleDone}>
-                ${this.variant===h.contactPreferences?l`
-                          <h2>${this.t.contact_preference_question}</h2>
-                          <div
-                              class="stack center container-sm | align-items-start text-start"
-                          >
-                              ${this.contactPreferences.map(t=>l`
-                                      <div class="form-control brand-light">
-                                          <input
-                                              type="checkbox"
-                                              name="contact-preference"
-                                              id=${"prefer_"+t}
-                                              value=${t}
-                                              @change=${this._handleChange}
-                                              ?checked=${!!this.state[t]}
-                                          />
-                                          <label for=${"prefer_"+t}
-                                              >${this.t[t]}</label
-                                          >
-                                      </div>
-                                  `)}
-                          </div>
-                      `:""}
-                ${this.variant===h.languagePreferences?l`
-                          <h2>${this.t.language_preference_question}</h2>
-                          <div class="stack">
-                              <label for="preferred-language"
-                                  >${this.t.language_preference}</label
-                              >
-                              <select
-                                  name="preferred-language"
-                                  id="preferred-language"
-                                  @change=${this._handleChange}
-                              >
-                                  ${Object.values(jsObject.languages).map(t=>l`
-                                          <option
-                                              value=${t.code}
-                                              ?selected=${t.code===this.state.value}
-                                          >
-                                              ${t.nativeName} -
-                                              ${t.enDisplayName}
-                                          </option>
-                                      `)}
-                              </select>
-                          </div>
-                      `:""}
-                ${this.variant===h.howCanWeServe?l`
-                          <h2>${this.t.how_can_we_serve}</h2>
-                          <div
-                              class="stack center | container-sm align-items-start text-start"
-                          >
-                              <div class="form-control brand-light">
-                                  <input
-                                      type="checkbox"
-                                      name="how-can-we-serve"
-                                      id="coaching"
-                                      value="coaching-request"
-                                      @change=${this._handleChange}
-                                      ?checked=${!!this.state.coaching}
-                                  />
-                                  <label for="coaching"
-                                      >${this.t.coaching}</label
-                                  >
-                              </div>
-                              <div class="form-control brand-light">
-                                  <input
-                                      type="checkbox"
-                                      name="how-can-we-serve"
-                                      id="technical"
-                                      value="technical-assistance"
-                                      @change=${this._handleChange}
-                                      ?checked=${!!this.state.technical}
-                                  />
-                                  <label for="technical"
-                                      >${this.t.technical_assistance}</label
-                                  >
-                              </div>
-                              <div class="form-control brand-light">
-                                  <input
-                                      type="checkbox"
-                                      name="how-can-we-serve"
-                                      id="implementation"
-                                      value="question-about-implementation"
-                                      @change=${this._handleChange}
-                                      ?checked=${!!this.state.implementation}
-                                  />
-                                  <label for="implementation"
-                                      >${this.t.question_implementation}</label
-                                  >
-                              </div>
-                              <div class="form-control brand-light">
-                                  <input
-                                      type="checkbox"
-                                      name="how-can-we-serve"
-                                      id="content"
-                                      value="question-about-content"
-                                      @change=${this._handleChange}
-                                      ?checked=${!!this.state.content}
-                                  />
-                                  <label for="content"
-                                      >${this.t.question_content}</label
-                                  >
-                              </div>
-                              <div class="form-control brand-light">
-                                  <input
-                                      type="checkbox"
-                                      name="how-can-we-serve"
-                                      id="group-started"
-                                      value="help-with-group"
-                                      @change=${this._handleChange}
-                                      ?checked=${!!this.state["group-started"]}
-                                  />
-                                  <label for="group-started"
-                                      >${this.t.help_with_group}</label
-                                  >
-                              </div>
-                          </div>
-                      `:""}
-                ${this.variant===h.connectingToCoach?l`
-                          <h1>${this.t.connecting_coach_title}</h1>
-                          <p>${this.message}</p>
-                          <span
-                              class="loading-spinner ${this.loading?"active":""}"
-                          ></span>
-                      `:""}
-                ${this.variant!==h.connectingToCoach?l`
-                          <div class="mx-auto">
-                              <button
-                                  type="submit"
-                                  class="btn tight"
-                                  ?disabled=${this.loading}
-                              >
-                                  ${this.t.next}
-                                  <span
-                                      class="loading-spinner ${this.loading?"active":""}"
-                                  ></span>
-                              </button>
-                          </div>
-                      `:""}
-                <div
-                    class="warning banner"
-                    data-state=${this.errorMessage.length?"":"empty"}
-                >
-                    ${this.errorMessage}
+        <form class="inputs stack-2" @submit=${this._handleDone}>
+            ${this.variant===h.contactPreferences?l`
+                <h2>${this.t.contact_preference_question}</h2>
+                <div class="stack center container-sm | align-items-start text-start">
+                    ${this.contactPreferences.map(t=>l`
+                        <div class="form-control brand-light">
+                            <input type="checkbox" name="contact-preference" id=${"prefer_"+t} value=${t} @change=${this._handleChange} ?checked=${!!this.state[t]} />
+                            <label for=${"prefer_"+t}>${this.t[t]}</label>
+                        </div>
+                    `)}
                 </div>
-            </form>
+            `:""}
+
+            ${this.variant===h.languagePreferences?l`
+                <h2>${this.t.language_preference_question}</h2>
+                <div class="stack">
+                    <label for="preferred-language">${this.t.language_preference}</label>
+                    <select name="preferred-language" id="preferred-language" @change=${this._handleChange} >
+
+                        ${Object.values(jsObject.languages).map(t=>l`
+                            <option value=${t.code} ?selected=${t.code===this.state.value} >
+                                ${t.nativeName} - ${t.enDisplayName}
+                            </option>
+                        `)}
+
+                    </select>
+                </div>
+            `:""}
+
+            ${this.variant===h.howCanWeServe?l`
+                <h2>${this.t.how_can_we_serve}</h2>
+                <div class="stack center | container-sm align-items-start text-start">
+                    <div class="form-control brand-light">
+                        <input type="checkbox" name="how-can-we-serve" id="coaching" value="coaching-request" @change=${this._handleChange} ?checked=${!!this.state.coaching} />
+                        <label for="coaching">${this.t.coaching}</label>
+                    </div>
+                    <div class="form-control brand-light">
+                        <input type="checkbox" name="how-can-we-serve" id="technical" value="technical-assistance" @change=${this._handleChange} ?checked=${!!this.state.technical} />
+                        <label for="technical">${this.t.technical_assistance}</label>
+                    </div>
+                    <div class="form-control brand-light">
+                        <input type="checkbox" name="how-can-we-serve" id="implementation" value="question-about-implementation" @change=${this._handleChange} ?checked=${!!this.state.implementation} />
+                        <label for="implementation">${this.t.question_implementation}</label>
+                    </div>
+                    <div class="form-control brand-light">
+                        <input type="checkbox" name="how-can-we-serve" id="content" value="question-about-content" @change=${this._handleChange} ?checked=${!!this.state.content} />
+                        <label for="content">${this.t.question_content}</label>
+                    </div>
+                    <div class="form-control brand-light">
+                        <input type="checkbox" name="how-can-we-serve" id="group-started" value="help-with-group" @change=${this._handleChange} ?checked=${!!this.state["group-started"]} />
+                        <label for="group-started">${this.t.help_with_group}</label>
+                    </div>
+                </div>
+            `:""}
+            ${this.variant===h.connectingToCoach?l`
+
+                <h1>${this.t.connecting_coach_title}</h1>
+                <p>${this.message}</p>
+                <span class="loading-spinner ${this.loading?"active":""}"></span>
+            `:""}
+            ${this.variant!==h.connectingToCoach?l`
+                    <div class="mx-auto">
+                        <button type="submit" class="btn tight" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading?"active":""}"></span></button>
+                    </div>
+                `:""}
+            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
+        </form>
         `}_handleDone(t){if(t&&t.preventDefault(),Object.keys(this.state).length===0||Object.values(this.state).every(e=>!e)){this.setErrorMessage(this.t.missing_response);return}else this.setErrorMessage("");this._sendDoneStepEvent()}_sendDoneStepEvent(){const t=new CustomEvent("done-step",{bubbles:!0});this.dispatchEvent(t)}_handleChange(t){t.target.type==="checkbox"&&(this.state[t.target.value]=t.target.checked),t.target.type==="text"&&(this.state.value=t.target.value),t.target.type==="select-one"&&(this.state.value=t.target.value),this.stateManager.add(this.variant,this.state)}createRenderRoot(){return this}}customElements.define("request-coach",Co);class xo extends k{constructor(){super();C(this,"module");C(this,"steps");this.t={},this.display=[]}static get properties(){return{t:{type:Object},name:{type:String},howOften:{type:String},howManySessions:{type:String},scheduleDecision:{type:String},whatLocation:{type:String},date:{type:String},time:{type:String},display:{type:Array}}}connectedCallback(){super.connectedCallback(),this.howOfterDict={weekly:this.t.weekly,biweekly:this.t.biweekly,monthly:this.t.monthly,other:this.t.other},this.howManyDict={20:this.t.hour_1_session_20,10:this.t.hour_2_session_10,5:this.t.hour_4_session_5},this.scheduleDecisionDict={yes:this.t.yes,no:this.t.no}}handleChange(e){const s=e.target.dataset.step;this.dispatchEvent(new CustomEvent("wizard:goto-step",{bubbles:!0,detail:{slug:s}})),window.scrollTo(0,0)}shouldDisplay(){return this.display.length>0}renderSummary(e){switch(e){case h.name:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
                             ${this.name===""?l`<span></span>`:l`<span>${this.name}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
@@ -827,9 +459,7 @@ ${t}</textarea
                     </div>
                 `;case h.location:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
                             ${this.whatLocation===""?l`<span></span>`:l`<span>${this.whatLocation}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
@@ -844,12 +474,8 @@ ${t}</textarea
                     </div>
                 `;case h.howManySessions:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
-                            <span
-                                >${this.howManyDict[this.howManySessions]||this.howManySessions}</span
-                            >
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
+                            <span>${this.howManyDict[this.howManySessions]||this.howManySessions}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
                                     class="btn small no-outline tight"
@@ -863,12 +489,8 @@ ${t}</textarea
                     </div>
                 `;case h.scheduleDecision:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
-                            <span
-                                >${this.scheduleDecisionDict[this.scheduleDecision]||this.scheduleDecision}</span
-                            >
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
+                            <span>${this.scheduleDecisionDict[this.scheduleDecision]||this.scheduleDecision}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
                                     class="btn small no-outline tight"
@@ -882,12 +504,8 @@ ${t}</textarea
                     </div>
                 `;case h.howOften:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
-                            <span
-                                >${this.howOfterDict[this.howOften]||this.howOften}</span
-                            >
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
+                            <span>${this.howOfterDict[this.howOften]||this.howOften}</span>
                             <span class="d-flex justify-flex-end grow-0">
                                 <button
                                     class="btn small no-outline tight"
@@ -901,12 +519,9 @@ ${t}</textarea
                     </div>
                 `;case h.startDate:return l`
                     <div class="stack--1">
-                        <div
-                            class="switcher switcher-width-15 justify-content-between gap--3"
-                        >
-                            ${this.date===""&&this.time===""?l`<span></span>`:l` <span
-                                      >${new Date(`${this.date} ${this.time==="not-set"?"":this.time}`).toLocaleString(navigator.language||"en-US",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"})}</span
-                                  >`}
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
+                            ${this.date===""&&this.time===""?l`<span></span>`:l`
+                                    <span>${new Date(`${this.date} ${this.time==="not-set"?"":this.time}`).toLocaleString(navigator.language||"en-US",{day:"numeric",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"})}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
                                     class="btn small no-outline tight"
@@ -921,23 +536,14 @@ ${t}</textarea
                 `;default:return""}}render(){if(this.shouldDisplay())return l`
             <div class="stack mw-50ch mx-auto text-start mt-2">
                 <hr />
-                <h5 class="gray-700 text-left f-medium mt-2">
-                    ${this.t.summary}
-                </h5>
+                <h5 class="gray-700 text-left f-medium mt-2">${this.t.summary}</h5>
                 ${this.display.map(e=>this.renderSummary(e))}
             </div>
         `}createRenderRoot(){return this}}customElements.define("review-steps",xo);class To extends k{static get properties(){return{name:{type:String},module:{type:String},skippable:{type:Boolean},t:{type:Object},code:{attribute:!1},message:{attribute:!1},errorMessage:{attribute:!1},loading:{attribute:!1}}}constructor(){super(),this.code="",this.errorMessage="",this.loading=!1}firstUpdated(){this.loading=!0,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.message=this.t.please_wait;const t=new URL(location.href);if(!t.searchParams.has("code")){this.message="",this.setErrorMessage(this.t.broken_link),this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}})),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}));return}const e=t.searchParams.get("code");this.code=e,makeRequest("POST","checkin",{code:e},"zume_system/v1").then(s=>{this._sendDoneStepEvent()}).fail(({responseJSON:s})=>{console.log(s),this.message="",s.code==="bad_checkin_code"?this.setErrorMessage(this.t.broken_link):this.setErrorMessage(this.t.error),this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))}).always(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("loadingChange",{bubbles:!0,detail:{loading:this.loading}}))})}_sendDoneStepEvent(){this.dispatchEvent(new CustomEvent("done-step",{bubbles:!0}))}setErrorMessage(t){this.errorMessage=t}render(){return l`
             <h1>${this.t.title}</h1>
             <p>${this.message}</p>
-            <span
-                class="loading-spinner ${this.loading?"active":""}"
-            ></span>
-            <div
-                class="warning banner"
-                data-state=${this.errorMessage.length?"":"empty"}
-            >
-                ${this.errorMessage}
-            </div>
+            <span class="loading-spinner ${this.loading?"active":""}"></span>
+            <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
         `}createRenderRoot(){return this}}customElements.define("session-checkin",To);/**
  * @license
  * Copyright 2020 Google LLC
@@ -948,13 +554,7 @@ ${t}</textarea
                     <div class="stack center | text-center">
                         <h1 class="brand">${this.t.bad_wizard}</h1>
                         <p>${this.t.found_bad_wizard}</p>
-                        <div class="center">
-                            <img
-                                class="w-50"
-                                src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg"
-                                alt="bad wizards"
-                            />
-                        </div>
+                        <div class="center"><img class="w-50" src="https://imgs.search.brave.com/3f3MurVApxsoxJlmqxLF0fs5-WlAk6sEu9IV3sICb_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YWR2ZXJ0aXNlY2Fz/dC5jb20vcG9kY2Fz/dC9pbWFnZS9WZXJ5/QmFkV2l6YXJkcw.jpeg" alt="bad wizards" /></div>
                         <a class="btn tight" href="/">${this.t.home}</a>
                     </div>
                 </div>
@@ -967,22 +567,22 @@ ${t}</textarea
                     </div>
                 </div>
             `:l`
-            <div class="container center">
-                <header class="py-1 px--4 w-100 position-relative">
-                    <div class="text-end" id="wizard-skip-button">
-                        ${this.headerButtons()}
-                    </div>
-                    <div class="center">${this.stepCounter()}</div>
-                </header>
+        <div class="container center">
 
-                <article class="${this.containerSize()} center text-center">
-                    ${this.currentStep()}
-                </article>
+            <header class="py-1 px--4 w-100 position-relative">
+                <div class="text-end" id="wizard-skip-button">${this.headerButtons()}</div>
+                <div class="center">${this.stepCounter()}</div>
+            </header>
 
-                <footer class="stack-1 ${this.containerSize()} | my-3">
-                    ${this.footer()}
-                </footer>
-            </div>
+            <article class="${this.containerSize()} center text-center">
+                ${this.currentStep()}
+            </article>
+
+            <footer class="stack-1 ${this.containerSize()} | my-3">
+                ${this.footer()}
+            </footer>
+
+        </div>
         `}}containerSize(){return{...this.step},h.joinTraining?"container-md":"container-xsm"}currentStep(){const t={...this.step};let e="",s="";switch(t.slug){case h.updateName:case h.updateLocation:case h.updatePhone:e=st`complete-profile`,s=this.t.complete_profile;break;case h.contactPreferences:case h.languagePreferences:case h.howCanWeServe:case h.connectingToCoach:e=st`request-coach`,s=this.t.get_a_coach;break;case h.inviteFriends:e=st`invite-friends`,s=this.t.share;break;case h.joinTraining:e=st`join-training`,s=this.t.join_training;break;case h.joinFriendsPlan:e=st`join-friends-training`,s=this.t.join_training;break;case h.connectToFriend:e=st`connect-friend`,s=this.t.connect_friend;break;case h.checkinSubmit:e=st`session-checkin`,s=this.t.checkin;break;case h.planDecision:case h.howManySessions:case h.scheduleDecision:case h.howOften:case h.startDate:case h.location:case h.name:case h.review:e=st`make-training`,s=this.t.make_training;break;case h.joinCommunity:e=st`join-community`,s=this.t.join_community;break}return Do`
             <${e}
                 class="w-100"
@@ -1018,9 +618,7 @@ ${t}</textarea
             </button>
         `:""}stepCounter(){const t=this.steps.length<2;return l`
             <div class="cluster">
-                ${this.steps.map((e,s)=>{const n=s<=this.stepIndex;return l`<div
-                        class="step-circle ${t?"hidden":""} ${n?"complete":""}"
-                    ></div>`})}
+                ${this.steps.map((e,s)=>{const n=s<=this.stepIndex;return l`<div class="step-circle ${t?"hidden":""} ${n?"complete":""}"></div>`})}
             </div>
         `}footer(){let t="";return this.noUrlChange&&this.stepIndex>0&&this.type!==$.makeAGroup&&(t=l`
                 <button
@@ -1031,14 +629,10 @@ ${t}</textarea
                 </button>
             `),l`
             <div class="cluster justify-content-center">
-                ${t} ${this.finishButton()}
+                ${t}
+                ${this.finishButton()}
             </div>
-        `}_onBack(){if(this.stepIndex>0){const t=this.stepIndex-1;this._gotoStep(t)}}_onNext(){if(this.stepIndex+1<this.steps.length){const t=this.stepIndex+1;this._gotoStep(t)}else this._onFinish()}_onSkip(){const t=this.step.module;for(let e=this.stepIndex+1;e<this.steps.length;e++)if(this.steps[e].module!==t){this._gotoStep(e);return}this._onFinish()}_onQuit(){if(this._isLastStep()){this._onFinish();return}this._onFinish(!0)}_handleFinish(){this._onFinish()}_onFinish(t=!1){if(this.stateManager.clear(),this.resetWizard(),!this.finishUrl){this.dispatchEvent(new CustomEvent("user-state:change",{bubbles:!0})),this.dispatchEvent(new CustomEvent("wizard-finished",{bubbles:!0,detail:{type:this.type}}));return}const e=new URL(this.finishUrl);if(t===!1)if(this.type===$.checkin){const n=new URL(location.href).searchParams.get("code");if(n!==null){const a=new URL(jsObject.checkin_dashboard_url);a.searchParams.set("code",n),window.location.href=a.href;return}}else if([$.gettingStarted,$.makeAGroup,$.makeFirstGroup,$.makeMoreGroups,$.joinATraining,$.joinFriendsPlan,$.inviteFriends].includes(this.type)){const n=new URL(location.href).searchParams.get("joinKey");if(n){const a=new URL(jsObject.training_dashboard_url+"/"+n);window.location.href=a.href;return}}else if(this.type===$.getACoach){window.location.href=jsObject.coaching_dashboard_url;return}else e.searchParams.set("completed",this.type);window.location.href=e.href}_isLastStep(){return this.stepIndex===this.steps.length-1}_gotoStep(t,e=!0,s={}){if(this.steps.length!==0){if(this.stepIndex=this.clampSteps(t),this.step={...this.steps[this.stepIndex]},e&&!this.noUrlChange){const n=new URL(window.location.href),a=n.pathname.split("/"),r=a[a.length-1];Object.keys(s).length>0&&Object.entries(s).forEach(([c,d])=>{n.searchParams.set(c,d)});let o="";Object.values($).includes(r)?o=a.join("/")+"/"+this.step.slug+n.search:o=a.slice(0,-1).join("/")+"/"+this.step.slug+n.search,window.history.pushState(null,null,o)}this.noUrlChange&&Object.keys(s).length>0&&Object.entries(s).forEach(([n,a])=>{this.step={...this.step,[n]:a}})}}clampSteps(t){let e=t;return t>this.steps.length-1&&(e=this.steps.length-1),t<0&&(e=0),e}_handleHistoryPopState(t=!1){const s=new URL(window.location.href).pathname.split("/"),n=s[s.length-1];Object.values($).includes(n)&&this._gotoStep(0,!1);let a="",r=0;this.steps.forEach(({slug:o,module:c},d)=>{if(a!==c&&(a=c,r=d),n===o){if(t===!0&&this.stateManager.isDataStale()){this._gotoStep(r);return}this._gotoStep(d,!1)}}),this.steps.some(({slug:o})=>n===o)||(this.steps=this.wizard.getSteps(this.type),this._gotoStep(this.steps.length-1))}_handleGotoStep(t){const{slug:e}=t.detail,s=this.steps.findIndex(n=>n.slug===e);this._gotoStep(s)}_handleLoadWizard(t){const{wizard:e,queryParams:s}=t.detail;this.loadWizard(e,s)}_handleReloadProfile(){this.user=jsObject.profile,this.wizard.updateProfile(this.user)}_handleWizardFinished(){this.finished=!0}_handleLoading(t){const{loading:e}=t.detail;this.loading=e}createRenderRoot(){return this}}window.customElements.define("zume-wizard",zo);function Ao(i){return i?JSON.parse('{"'+i.substring(1).replace(/&/g,'","').replace(/=/g,'":"')+'"}'):{}}function No(i,t){let e={};const s=i.split("/").filter(a=>a!=""),n=t.split("/").filter(a=>a!="");return s.map((a,r)=>{/^:/.test(a)&&(e[a.substring(1)]=n[r])}),e}function Po(i){return i?new RegExp("^(|/)"+i.replace(/:[^\s/]+/g,"([\\wÀ-ÖØ-öø-ÿ-]+)")+"(|/)$"):new RegExp("(^$|^/$)")}function Lo(i,t){if(Po(t).test(i))return!0}function Ro(i){return class extends i{static get properties(){return{route:{type:String,reflect:!0,attribute:"route"},canceled:{type:Boolean}}}constructor(...t){super(...t),this.route="",this.canceled=!1}connectedCallback(...t){super.connectedCallback(...t),this.routing(this.constructor.routes,(...e)=>this.router(...e)),window.addEventListener("route",()=>{this.routing(this.constructor.routes,(...e)=>this.router(...e))}),window.onpopstate=()=>{window.dispatchEvent(new CustomEvent("route"))}}routed(t,e,s,n,a,r){r&&r(t,e,s,n),a(t,e,s,n)}routing(t,e){this.canceled=!0;const s=decodeURI(window.location.pathname),n=decodeURI(window.location.search);let a=t.filter(c=>c.pattern==="*")[0],r=t.filter(c=>c.pattern!=="*"&&Lo(s,c.pattern))[0],o=Ao(n);r?(r.params=No(r.pattern,s),r.data=r.data||{},r.authentication&&r.authentication.authenticate&&typeof r.authentication.authenticate=="function"?(this.canceled=!1,Promise.resolve(r.authentication.authenticate.bind(this).call()).then(c=>{this.canceled||(c?r.authorization&&r.authorization.authorize&&typeof r.authorization.authorize=="function"?(this.canceled=!1,Promise.resolve(r.authorization.authorize.bind(this).call()).then(d=>{this.canceled||(d?this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authorization.unauthorized.name,r.params,o,r.data,e,r.callback))})):this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authentication.unauthenticated.name,r.params,o,r.data,e,r.callback))})):r.authorization&&r.authorization.authorize&&typeof r.authorization.authorize=="function"?(this.canceled=!1,Promise.resolve(r.authorization.authorize.bind(this).call()).then(c=>{this.canceled||(c?this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authorization.unauthorized.name,r.params,o,r.data,e,r.callback))})):this.routed(r.name,r.params,o,r.data,e,r.callback)):a&&(a.data=a.data||{},this.routed(a.name,{},o,a.data,e,a.callback))}}}function Vn(i){return class extends i{navigate(t){window.history.pushState({},null,t),window.dispatchEvent(new CustomEvent("route"))}}}const b={root:"root",gettingStarted:"getting-started",setProfile:"set-profile",createATraining:"create-a-training",joinATraining:"join-a-training",getACoach:"get-a-coach",training:"training",myTraining:"my-training",myTrainings:"my-trainings",myProgress:"my-progress",threeMonthPlan:"3-month-plan",practicing:"practicing",myCoach:"my-coach",myPlans:"my-plans",myChurches:"my-churches",myMaps:"my-maps",notFound:"not-found"};function Ht(i,t){return(e,s)=>{e.preventDefault(),s(new CustomEvent(t,{bubbles:!0,detail:{type:i}}))}}function gi(){return[{name:b.root,pattern:`${jsObject.base_url}`,icon:"",type:"dash-link",translation:"",data:{makeComponent:()=>""}},{name:b.gettingStarted,pattern:`${jsObject.base_url}/getting-started`,icon:"z-icon-start",type:"dash-link",translation:jsObject.translations.getting_started,data:{makeComponent:i=>l`<dash-getting-started></dash-getting-started>`}},{name:b.setProfile,pattern:"#",parent:b.gettingStarted,icon:"z-icon-profile",type:"handled-link",clickHandler:Ht($.setProfile,"open-wizard"),translation:jsObject.translations.set_profile,explanation:jsObject.translations.set_profile_explanation,data:{makeComponent:()=>""}},{name:b.createATraining,pattern:"#",parent:b.gettingStarted,icon:"z-icon-start",type:"handled-link",clickHandler:Ht($.makeAGroup,"open-wizard"),translation:jsObject.translations.create_training_group,explanation:jsObject.translations.create_training_group_explanation,data:{makeComponent:()=>""}},{name:b.joinATraining,pattern:"#",parent:b.gettingStarted,icon:"z-icon-public-training",type:"handled-link",clickHandler:Ht($.joinATraining,"open-wizard"),translation:jsObject.translations.join_training_group,explanation:jsObject.translations.join_training_group_explanation,data:{makeComponent:()=>""}},{name:b.getACoach,pattern:"#",parent:b.gettingStarted,icon:"z-icon-coach",type:"handled-link",clickHandler:Ht($.getACoach,"open-wizard"),translation:jsObject.translations.get_a_coach,explanation:jsObject.translations.get_a_coach_explanation,data:{makeComponent:()=>""}},{name:b.training,pattern:`${jsObject.base_url}/training`,icon:"z-icon-training",type:"dash-link",translation:jsObject.translations.training,data:{makeComponent:i=>l`<dash-training></dash-training>`}},{name:b.myTrainings,pattern:`${jsObject.base_url}/my-trainings`,icon:"z-icon-my-training",type:"dash-link",translation:jsObject.translations.my_trainings,data:{makeComponent:()=>l`<dash-trainings-list></dash-trainings-list>`}},{name:b.myTraining,pattern:`${jsObject.base_url}/my-training/:code`,parent:b.training,icon:"z-icon-my-training",type:"dash-link",translation:jsObject.translations.my_training,explanation:jsObject.translations.my_training_explanation,data:{makeComponent:i=>l`<dash-trainings
-                        ?showTeaser=${i==="teaser"}
-                        code=${i}
-                    ></dash-trainings>`}},{name:b.myProgress,pattern:`${jsObject.base_url}/my-progress`,parent:b.training,icon:"z-icon-progress",type:"dash-link",translation:jsObject.translations.my_progress,explanation:jsObject.translations.my_progress_explanation,data:{makeComponent:i=>l`<dash-progress
-                        ?showTeaser=${i}
-                    ></dash-progress>`}},{name:b.threeMonthPlan,pattern:`${jsObject.base_url}/3-month-plan`,parent:b.training,icon:"z-icon-plans",type:"handled-link",clickHandler:Ht("3-month-plan","open-3-month-plan"),translation:jsObject.translations.create_3_month_plan,explanation:jsObject.translations["3_month_plan_explanation"],data:{makeComponent:()=>""}},{name:b.practicing,pattern:`${jsObject.base_url}/practicing`,icon:"z-icon-practicing",type:"dash-link",translation:jsObject.translations.practicing,data:{makeComponent:i=>l`<dash-practicing></dash-practicing>`}},{name:b.myCoach,pattern:`${jsObject.base_url}/my-coach`,parent:b.practicing,icon:"z-icon-coach",type:"dash-link",translation:jsObject.translations.my_coach,explanation:jsObject.translations.my_coach_explanation,data:{makeComponent:i=>l`<dash-coach ?showTeaser=${i}></dash-coach>`}},{name:b.myPlans,pattern:`${jsObject.base_url}/my-plans`,parent:b.practicing,icon:"z-icon-plans",type:"dash-link",translation:jsObject.translations.my_plans,explanation:jsObject.translations.my_plans_explanation,data:{makeComponent:i=>l`<dash-plans ?showTeaser=${i}></dash-plans>`}},{name:b.myMaps,pattern:`${jsObject.base_url}/my-maps`,parent:b.practicing,icon:"z-icon-maps",type:"dash-link",translation:jsObject.translations.my_maps,explanation:jsObject.translations.my_maps_explanation,data:{makeComponent:i=>l`<dash-maps ?showTeaser=${i}></dash-maps>`}},{name:b.notFound,pattern:"*",icon:"",type:"dash-link",data:{makeComponent:i=>l`<dash-not-found></dash-not-found>`}}]}/**
+        `}_onBack(){if(this.stepIndex>0){const t=this.stepIndex-1;this._gotoStep(t)}}_onNext(){if(this.stepIndex+1<this.steps.length){const t=this.stepIndex+1;this._gotoStep(t)}else this._onFinish()}_onSkip(){const t=this.step.module;for(let e=this.stepIndex+1;e<this.steps.length;e++)if(this.steps[e].module!==t){this._gotoStep(e);return}this._onFinish()}_onQuit(){if(this._isLastStep()){this._onFinish();return}this._onFinish(!0)}_handleFinish(){this._onFinish()}_onFinish(t=!1){if(this.stateManager.clear(),this.resetWizard(),!this.finishUrl){this.dispatchEvent(new CustomEvent("user-state:change",{bubbles:!0})),this.dispatchEvent(new CustomEvent("wizard-finished",{bubbles:!0,detail:{type:this.type}}));return}const e=new URL(this.finishUrl);if(t===!1)if(this.type===$.checkin){const n=new URL(location.href).searchParams.get("code");if(n!==null){const a=new URL(jsObject.checkin_dashboard_url);a.searchParams.set("code",n),window.location.href=a.href;return}}else if([$.gettingStarted,$.makeAGroup,$.makeFirstGroup,$.makeMoreGroups,$.joinATraining,$.joinFriendsPlan,$.inviteFriends].includes(this.type)){const n=new URL(location.href).searchParams.get("joinKey");if(n){const a=new URL(jsObject.training_dashboard_url+"/"+n);window.location.href=a.href;return}}else if(this.type===$.getACoach){window.location.href=jsObject.coaching_dashboard_url;return}else e.searchParams.set("completed",this.type);window.location.href=e.href}_isLastStep(){return this.stepIndex===this.steps.length-1}_gotoStep(t,e=!0,s={}){if(this.steps.length!==0){if(this.stepIndex=this.clampSteps(t),this.step={...this.steps[this.stepIndex]},e&&!this.noUrlChange){const n=new URL(window.location.href),a=n.pathname.split("/"),r=a[a.length-1];Object.keys(s).length>0&&Object.entries(s).forEach(([c,d])=>{n.searchParams.set(c,d)});let o="";Object.values($).includes(r)?o=a.join("/")+"/"+this.step.slug+n.search:o=a.slice(0,-1).join("/")+"/"+this.step.slug+n.search,window.history.pushState(null,null,o)}this.noUrlChange&&Object.keys(s).length>0&&Object.entries(s).forEach(([n,a])=>{this.step={...this.step,[n]:a}})}}clampSteps(t){let e=t;return t>this.steps.length-1&&(e=this.steps.length-1),t<0&&(e=0),e}_handleHistoryPopState(t=!1){const s=new URL(window.location.href).pathname.split("/"),n=s[s.length-1];Object.values($).includes(n)&&this._gotoStep(0,!1);let a="",r=0;this.steps.forEach(({slug:o,module:c},d)=>{if(a!==c&&(a=c,r=d),n===o){if(t===!0&&this.stateManager.isDataStale()){this._gotoStep(r);return}this._gotoStep(d,!1)}}),this.steps.some(({slug:o})=>n===o)||(this.steps=this.wizard.getSteps(this.type),this._gotoStep(this.steps.length-1))}_handleGotoStep(t){const{slug:e}=t.detail,s=this.steps.findIndex(n=>n.slug===e);this._gotoStep(s)}_handleLoadWizard(t){const{wizard:e,queryParams:s}=t.detail;this.loadWizard(e,s)}_handleReloadProfile(){this.user=jsObject.profile,this.wizard.updateProfile(this.user)}_handleWizardFinished(){this.finished=!0}_handleLoading(t){const{loading:e}=t.detail;this.loading=e}createRenderRoot(){return this}}window.customElements.define("zume-wizard",zo);function Ao(i){return i?JSON.parse('{"'+i.substring(1).replace(/&/g,'","').replace(/=/g,'":"')+'"}'):{}}function No(i,t){let e={};const s=i.split("/").filter(a=>a!=""),n=t.split("/").filter(a=>a!="");return s.map((a,r)=>{/^:/.test(a)&&(e[a.substring(1)]=n[r])}),e}function Po(i){return i?new RegExp("^(|/)"+i.replace(/:[^\s/]+/g,"([\\wÀ-ÖØ-öø-ÿ-]+)")+"(|/)$"):new RegExp("(^$|^/$)")}function Lo(i,t){if(Po(t).test(i))return!0}function Ro(i){return class extends i{static get properties(){return{route:{type:String,reflect:!0,attribute:"route"},canceled:{type:Boolean}}}constructor(...t){super(...t),this.route="",this.canceled=!1}connectedCallback(...t){super.connectedCallback(...t),this.routing(this.constructor.routes,(...e)=>this.router(...e)),window.addEventListener("route",()=>{this.routing(this.constructor.routes,(...e)=>this.router(...e))}),window.onpopstate=()=>{window.dispatchEvent(new CustomEvent("route"))}}routed(t,e,s,n,a,r){r&&r(t,e,s,n),a(t,e,s,n)}routing(t,e){this.canceled=!0;const s=decodeURI(window.location.pathname),n=decodeURI(window.location.search);let a=t.filter(c=>c.pattern==="*")[0],r=t.filter(c=>c.pattern!=="*"&&Lo(s,c.pattern))[0],o=Ao(n);r?(r.params=No(r.pattern,s),r.data=r.data||{},r.authentication&&r.authentication.authenticate&&typeof r.authentication.authenticate=="function"?(this.canceled=!1,Promise.resolve(r.authentication.authenticate.bind(this).call()).then(c=>{this.canceled||(c?r.authorization&&r.authorization.authorize&&typeof r.authorization.authorize=="function"?(this.canceled=!1,Promise.resolve(r.authorization.authorize.bind(this).call()).then(d=>{this.canceled||(d?this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authorization.unauthorized.name,r.params,o,r.data,e,r.callback))})):this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authentication.unauthenticated.name,r.params,o,r.data,e,r.callback))})):r.authorization&&r.authorization.authorize&&typeof r.authorization.authorize=="function"?(this.canceled=!1,Promise.resolve(r.authorization.authorize.bind(this).call()).then(c=>{this.canceled||(c?this.routed(r.name,r.params,o,r.data,e,r.callback):this.routed(r.authorization.unauthorized.name,r.params,o,r.data,e,r.callback))})):this.routed(r.name,r.params,o,r.data,e,r.callback)):a&&(a.data=a.data||{},this.routed(a.name,{},o,a.data,e,a.callback))}}}function Vn(i){return class extends i{navigate(t){window.history.pushState({},null,t),window.dispatchEvent(new CustomEvent("route"))}}}const b={root:"root",gettingStarted:"getting-started",setProfile:"set-profile",createATraining:"create-a-training",joinATraining:"join-a-training",getACoach:"get-a-coach",training:"training",myTraining:"my-training",myTrainings:"my-trainings",myProgress:"my-progress",threeMonthPlan:"3-month-plan",practicing:"practicing",myCoach:"my-coach",myPlans:"my-plans",myChurches:"my-churches",myMaps:"my-maps",notFound:"not-found"};function Ht(i,t){return(e,s)=>{e.preventDefault(),s(new CustomEvent(t,{bubbles:!0,detail:{type:i}}))}}function gi(){return[{name:b.root,pattern:`${jsObject.base_url}`,icon:"",type:"dash-link",translation:"",data:{makeComponent:()=>""}},{name:b.gettingStarted,pattern:`${jsObject.base_url}/getting-started`,icon:"z-icon-start",type:"dash-link",translation:jsObject.translations.getting_started,data:{makeComponent:i=>l`<dash-getting-started></dash-getting-started>`}},{name:b.setProfile,pattern:"#",parent:b.gettingStarted,icon:"z-icon-profile",type:"handled-link",clickHandler:Ht($.setProfile,"open-wizard"),translation:jsObject.translations.set_profile,explanation:jsObject.translations.set_profile_explanation,data:{makeComponent:()=>""}},{name:b.createATraining,pattern:"#",parent:b.gettingStarted,icon:"z-icon-start",type:"handled-link",clickHandler:Ht($.makeAGroup,"open-wizard"),translation:jsObject.translations.create_training_group,explanation:jsObject.translations.create_training_group_explanation,data:{makeComponent:()=>""}},{name:b.joinATraining,pattern:"#",parent:b.gettingStarted,icon:"z-icon-public-training",type:"handled-link",clickHandler:Ht($.joinATraining,"open-wizard"),translation:jsObject.translations.join_training_group,explanation:jsObject.translations.join_training_group_explanation,data:{makeComponent:()=>""}},{name:b.getACoach,pattern:"#",parent:b.gettingStarted,icon:"z-icon-coach",type:"handled-link",clickHandler:Ht($.getACoach,"open-wizard"),translation:jsObject.translations.get_a_coach,explanation:jsObject.translations.get_a_coach_explanation,data:{makeComponent:()=>""}},{name:b.training,pattern:`${jsObject.base_url}/training`,icon:"z-icon-training",type:"dash-link",translation:jsObject.translations.training,data:{makeComponent:i=>l`<dash-training></dash-training>`}},{name:b.myTrainings,pattern:`${jsObject.base_url}/my-trainings`,icon:"z-icon-my-training",type:"dash-link",translation:jsObject.translations.my_trainings,data:{makeComponent:()=>l`<dash-trainings-list></dash-trainings-list>`}},{name:b.myTraining,pattern:`${jsObject.base_url}/my-training/:code`,parent:b.training,icon:"z-icon-my-training",type:"dash-link",translation:jsObject.translations.my_training,explanation:jsObject.translations.my_training_explanation,data:{makeComponent:i=>l`<dash-trainings ?showTeaser=${i==="teaser"} code=${i}></dash-trainings>`}},{name:b.myProgress,pattern:`${jsObject.base_url}/my-progress`,parent:b.training,icon:"z-icon-progress",type:"dash-link",translation:jsObject.translations.my_progress,explanation:jsObject.translations.my_progress_explanation,data:{makeComponent:i=>l`<dash-progress ?showTeaser=${i}></dash-progress>`}},{name:b.threeMonthPlan,pattern:`${jsObject.base_url}/3-month-plan`,parent:b.training,icon:"z-icon-plans",type:"handled-link",clickHandler:Ht("3-month-plan","open-3-month-plan"),translation:jsObject.translations.create_3_month_plan,explanation:jsObject.translations["3_month_plan_explanation"],data:{makeComponent:()=>""}},{name:b.practicing,pattern:`${jsObject.base_url}/practicing`,icon:"z-icon-practicing",type:"dash-link",translation:jsObject.translations.practicing,data:{makeComponent:i=>l`<dash-practicing></dash-practicing>`}},{name:b.myCoach,pattern:`${jsObject.base_url}/my-coach`,parent:b.practicing,icon:"z-icon-coach",type:"dash-link",translation:jsObject.translations.my_coach,explanation:jsObject.translations.my_coach_explanation,data:{makeComponent:i=>l`<dash-coach ?showTeaser=${i}></dash-coach>`}},{name:b.myPlans,pattern:`${jsObject.base_url}/my-plans`,parent:b.practicing,icon:"z-icon-plans",type:"dash-link",translation:jsObject.translations.my_plans,explanation:jsObject.translations.my_plans_explanation,data:{makeComponent:i=>l`<dash-plans ?showTeaser=${i}></dash-plans>`}},{name:b.myMaps,pattern:`${jsObject.base_url}/my-maps`,parent:b.practicing,icon:"z-icon-maps",type:"dash-link",translation:jsObject.translations.my_maps,explanation:jsObject.translations.my_maps_explanation,data:{makeComponent:i=>l`<dash-maps ?showTeaser=${i}></dash-maps>`}},{name:b.notFound,pattern:"*",icon:"",type:"dash-link",data:{makeComponent:i=>l`<dash-not-found></dash-not-found>`}}]}/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -1376,35 +970,10 @@ ${t}</textarea
                         <span class="icon z-icon-kebab brand-light"></span>
                     </button>
                 </div>
-                <div
-                    class="dropdown-pane"
-                    id="kebab-menu-${t}"
-                    data-dropdown
-                    data-auto-focus="true"
-                    data-position="bottom"
-                    data-alignment=${this.isRtl?"right":"left"}
-                    data-close-on-click="true"
-                    data-close-on-click-inside="true"
-                >
+                <div class="dropdown-pane" id="kebab-menu-${t}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li>
-                            <button
-                                class="menu-btn"
-                                @click=${()=>this.editChurch(t)}
-                            >
-                                <span class="icon z-icon-pencil"></span
-                                >${jsObject.translations.edit}
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                class="menu-btn"
-                                @click=${()=>this.deleteChurch(t)}
-                            >
-                                <span class="icon z-icon-trash"></span
-                                >${jsObject.translations.delete}
-                            </button>
-                        </li>
+                        <li><button class="menu-btn" @click=${()=>this.editChurch(t)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn" @click=${()=>this.deleteChurch(t)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
@@ -1418,167 +987,84 @@ ${t}</textarea
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
                         <div class="s0">
-                            <button
-                                class="icon-btn f-2"
-                                data-toggle="filter-menu"
-                                ?disabled=${this.showTeaser}
-                                aria-disabled=${this.showTeaser?"true":"false"}
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.filter}</span
-                                >
-                                <span
-                                    class="icon z-icon-filter"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
+                                <span class="visually-hidden">${jsObject.translations.filter}</span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
-                            <button
-                                class="icon-btn f-2"
-                                @click=${this.openChurchModal}
-                                ?disabled=${this.showTeaser}
-                                aria-disabled=${this.showTeaser?"true":"false"}
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.add_church}</span
-                                >
-                                <span
-                                    class="icon z-icon-plus"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" @click=${this.openChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
+                                <span class="visually-hidden">${jsObject.translations.add_church}</span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="dropdown-pane"
-                        id="filter-menu"
-                        data-dropdown
-                        data-auto-focus="true"
-                        data-position="bottom"
-                        data-alignment=${this.isRtl?"right":"left"}
-                        data-close-on-click="true"
-                        data-close-on-click-inside="true"
-                    >
-                        <ul></ul>
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
+                        <ul>
+                        </ul>
                     </div>
                 </div>
                 <dash-header-right></dash-header-right>
 
                 <div class="dashboard__main content p-2">
                     ${this.showTeaser?l`
-                              <div class="dash-menu__list-item">
-                                  <div class="dash-menu__icon-area | stack--5">
-                                      <span
-                                          class="icon z-icon-locked dash-menu__list-icon"
-                                      ></span>
+                            <div class="dash-menu__list-item">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
+                                    <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
                                   </div>
-                                  <div
-                                      class="dash-menu__text-area | switcher | switcher-width-20"
-                                  >
-                                      <div>
-                                          <h3 class="f-1 bold uppercase">
-                                              My Churches are Locked
-                                          </h3>
-                                          <p>
-                                              My Churches tool makes it easy for
-                                              you to track your simple church
-                                              and the simple church generations
-                                              that grow out of your spiritual
-                                              family.
-                                          </p>
-                                      </div>
-                                      <button
-                                          class="dash-menu__view-button btn tight"
-                                          @click=${this.joinCommunity}
-                                      >
-                                          ${jsObject.translations.join}
-                                      </button>
-                                  </div>
-                              </div>
-                          `:l`
-                              <ul class="list">
-                                  ${this.churches.length===0?l`
-                                            <li
-                                                role="button"
-                                                class="list__item bg-brand-light white f-medium"
-                                                data-depth=${0}
-                                                @click=${this.addChurch}
-                                            >
-                                                ${jsObject.translations.add_first_church}
-                                            </li>
-                                        `:et(this.churches,t=>`${t.id}`,this.renderChurch)}
-                              </ul>
-                          `}
+                                  <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
+                                    ${jsObject.translations.join}
+                                  </button>
+                                </div>
+                            </div>
+
+                        `:l`
+                            <ul class="list">
+                                ${this.churches.length===0?l`
+                                        <li
+                                            role="button"
+                                            class="list__item bg-brand-light white f-medium"
+                                            data-depth=${0}
+                                            @click=${this.addChurch}
+                                        >
+                                            ${jsObject.translations.add_first_church}
+                                        </li>
+                                    `:et(this.churches,t=>`${t.id}`,this.renderChurch)}
+                            </ul>
+
+                        `}
                 </div>
+
             </div>
-            <div
-                class="reveal medium"
-                id="new-church-form"
-                data-reveal
-                data-v-offset="20"
-            >
-                <button
-                    class="ms-auto close-btn"
-                    data-close
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    @click=${this.clearChurchModal}
-                >
-                    <span class="icon z-icon-close"></span>
+            <div class="reveal medium" id="new-church-form" data-reveal data-v-offset="20">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.clearChurchModal}>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
                     <div id="add-church-form">
                         <div>
-                            <label for="church-name"
-                                >${jsObject.translations.church_name}</label
-                            >
-                            <input
-                                id="church-name"
-                                name="church-name"
-                                type="text"
-                            />
+                            <label for="church-name">${jsObject.translations.church_name}</label>
+                            <input id="church-name" name="church-name" type="text" />
                         </div>
                         <div>
-                            <label for="number-of-people"
-                                >${jsObject.translations.number_of_people}</label
-                            >
-                            <input
-                                id="number-of-people"
-                                name="number-of-people"
-                                type="text"
-                            />
+                            <label for="number-of-people">${jsObject.translations.number_of_people}</label>
+                            <input id="number-of-people" name="number-of-people" type="text" />
                         </div>
                         <div>
-                            <label for="church-location"
-                                >${jsObject.translations.church_location}</label
-                            >
-                            <input
-                                id="church-location"
-                                name="church-location"
-                                type="text"
-                            />
+                            <label for="church-location">${jsObject.translations.church_location}</label>
+                            <input id="church-location" name="church-location" type="text" />
                         </div>
                         <div>
-                            <label for="parent-church"
-                                >${jsObject.translations.parent_church}</label
-                            >
-                            <input
-                                id="parent-church"
-                                name="parent-church"
-                                type="text"
-                            />
+                            <label for="parent-church">${jsObject.translations.parent_church}</label>
+                            <input id="parent-church" name="parent-church" type="text" />
                         </div>
                         <div class="cluster">
-                            <button class="btn" @click=${this.addChurch}>
-                                ${jsObject.translations.add_new_church}
-                            </button>
-                            <button
-                                class="btn outline"
-                                type="button"
-                                @click=${this.closeChurchModal}
-                            >
-                                ${jsObject.translations.cancel}
-                            </button>
+                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
+                            <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
                         </div>
                     </div>
                 </div>
@@ -1591,100 +1077,56 @@ ${t}</textarea
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main content p-2">
-                    ${this.showTeaser?l`
-                              <div class="dash-menu__list-item">
-                                  <div class="dash-menu__icon-area | stack--5">
-                                      <span
-                                          class="icon z-icon-locked dash-menu__list-icon"
-                                      ></span>
-                                  </div>
-                                  <div
-                                      class="dash-menu__text-area | switcher | switcher-width-20"
-                                  >
-                                      <div>
-                                          <h3 class="f-1 bold uppercase">
-                                              ${jsObject.translations.get_a_coach}
-                                          </h3>
-                                          <p>
-                                              ${jsObject.translations.get_a_coach_explanation}
-                                          </p>
-                                      </div>
-                                      <button
-                                          class="dash-menu__view-button btn tight"
-                                          @click=${this.getACoach}
-                                      >
-                                          ${jsObject.translations.get_a_coach}
-                                      </button>
-                                  </div>
+              <div class="dashboard__main content p-2">
+                  ${this.showTeaser?l`
+                          <div class="dash-menu__list-item">
+                            <div class="dash-menu__icon-area | stack--5">
+                              <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                            </div>
+                            <div class="dash-menu__text-area | switcher | switcher-width-20">
+                              <div>
+                                <h3 class="f-1 bold uppercase">${jsObject.translations.get_a_coach}</h3>
+                                <p>${jsObject.translations.get_a_coach_explanation}</p>
                               </div>
-                          `:""}
-                    ${!this.showTeaser&&this.coaches.length===0?l`
-                              <p>
-                                  ${jsObject.translations.connecting_with_coach}
-                              </p>
-                              <p>${jsObject.translations.wait_for_coach}</p>
-                          `:""}
-                    ${!this.showTeaser&&this.coaches.length>0?this.coaches.map(t=>l`
-                                  <div class="card stack">
-                                      <h3>${t.name}</h3>
-                                      ${t.communication_apps.length?l`
-                                                <ul class="stack">
-                                                    ${t.communication_apps.includes("email")?l`
-                                                              <li>
-                                                                  ${jsObject.translations.email}:
-                                                                  <a
-                                                                      href="mailto:${t.email}"
-                                                                      >${t.email}</a
-                                                                  >
-                                                              </li>
-                                                          `:""}
-                                                    ${t.communication_apps.includes("phone")?l`
-                                                              <li>
-                                                                  ${jsObject.translations.phone}:
-                                                                  ${t.phone}
-                                                              </li>
-                                                          `:""}
-                                                    ${t.communication_apps.map(e=>{if(e==="signal")return l`
-                                                                    <li>
-                                                                        <a
-                                                                            class="btn"
-                                                                            href="sgnl://signal.me/#p/${t.signal}"
-                                                                            >${jsObject.translations.signal}</a
-                                                                        >
-                                                                    </li>
-                                                                `;if(e==="telegram")return l`
-                                                                    <li>
-                                                                        <a
-                                                                            class="btn"
-                                                                            href="https://t.me/${t.telegram}"
-                                                                            target="_blank"
-                                                                            >${jsObject.translations.telegram}</a
-                                                                        >
-                                                                    </li>
-                                                                `;if(e==="whatsapp")return l`
-                                                                    <li>
-                                                                        <a
-                                                                            class="btn"
-                                                                            href="https://wa.me/${t.whatsapp}"
-                                                                            target="_blank"
-                                                                            >${jsObject.translations.whatsapp}</a
-                                                                        >
-                                                                    </li>
-                                                                `;if(e==="messenger")return l`
-                                                                    <li>
-                                                                        <a
-                                                                            class="btn"
-                                                                            href="https://m.me/${t.messenger}"
-                                                                            target="_blank"
-                                                                            >${jsObject.translations.messenger}</a
-                                                                        >
-                                                                    </li>
-                                                                `})}
-                                                </ul>
-                                            `:""}
-                                  </div>
-                              `):""}
+                              <button class="dash-menu__view-button btn tight" @click=${this.getACoach}>
+                                ${jsObject.translations.get_a_coach}
+                              </button>
+                            </div>
+                          </div>
+                      `:""}
+                  ${!this.showTeaser&&this.coaches.length===0?l`
+                          <p>
+                            ${jsObject.translations.connecting_with_coach}
+                          </p>
+                          <p>
+                            ${jsObject.translations.wait_for_coach}
+                          </p>
+                      `:""}
+                  ${!this.showTeaser&&this.coaches.length>0?this.coaches.map(t=>l`
+                              <div class="card stack">
+                                <h3>${t.name}</h3>
+                                ${t.communication_apps.length?l`
+                                    <ul class="stack">
+                                      ${t.communication_apps.includes("email")?l`
+                                          <li>${jsObject.translations.email}: <a href="mailto:${t.email}">${t.email}</a></li>
+                                        `:""}
+                                      ${t.communication_apps.includes("phone")?l`
+                                          <li>${jsObject.translations.phone}: ${t.phone}</li>
+                                        `:""}
+                                      ${t.communication_apps.map(e=>{if(e==="signal")return l`
+                                            <li><a class="btn" href="sgnl://signal.me/#p/${t.signal}">${jsObject.translations.signal}</a></li>
+                                          `;if(e==="telegram")return l`
+                                            <li><a class="btn" href="https://t.me/${t.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
+                                          `;if(e==="whatsapp")return l`
+                                            <li><a class="btn" href="https://wa.me/${t.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
+                                          `;if(e==="messenger")return l`
+                                            <li><a class="btn" href="https://m.me/${t.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
+                                          `})}
+                                    </ul>
+                                  `:""}
+
+                              </div>
+                          `):""}
                 </div>
 
                 <div class="dashboard__secondary">
@@ -1692,45 +1134,23 @@ ${t}</textarea
                 </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-coach",Uo);const bt=class extends k{static get properties(){return{ctas:{type:Array,attribute:!1}}}constructor(){super(),this.allCtas=[],this.ctas=[],this.celebrations=[],this.hiddenCtaKeys=[],this.initialCtaKeys=[],this.removedCtaKeys=[],this.manageCtas=this.manageCtas.bind(this),this.transitionIn=this.transitionIn.bind(this),this.transitionCtas=this.transitionCtas.bind(this),this.renderCta=this.renderCta.bind(this)}connectedCallback(){super.connectedCallback(),window.addEventListener("ctas:changed",this.manageCtas),this.addEventListener("begin-cta-transitions",this.transitionIn),this.addEventListener("cta-transition-in-ended",this.logCelebrationsSeen)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("ctas:changed",this.manageCtas),this.removeEventListener("begin-cta-transitions",this.transitionIn),this.removeEventListener("cta-transition-in-ended",this.logCelebrationsSeen)}firstUpdated(){this.manageCtas()}updated(){this.dispatchEventAfterUpdated&&(this.dispatchEventAfterUpdated=!1,setTimeout(()=>{this.dispatchEvent(new CustomEvent("begin-cta-transitions"))},10))}manageCtas(){const t=this.getCtas(),[e,s,n]=this.diffCtas(t,this.ctas),a=[...e,...s].filter(({content_template:u})=>u==="celebration"),r=[...e,...s].filter(({content_template:u})=>u!=="celebration"),o=[...a,...r],c=this.getCtaKeys(o),d=this.getCtaKeys(n);this.ctas=o,this.celebrations=a,this.hiddenCtaKeys=this.getCtaKeys(e),this.removedCtaKeys=[...d,...c.slice(bt.MAX_CTAS)],this.initialCtaKeys=c.slice(0,bt.MAX_CTAS),this.ctas.length>0&&(this.dispatchEventAfterUpdated=!0)}getCtas(){return jsObject.allCtas??[]}diffCtas(t,e){const s=t.filter(({key:r})=>e.findIndex(({key:o})=>o===r)===-1),n=e.filter(({key:r})=>t.findIndex(({key:o})=>o===r)===-1),a=e.filter(({key:r})=>t.findIndex(({key:o})=>o===r)>-1);return[s,a,n]}transitionIn(){this.transitionCtas(this.removedCtaKeys,this.initialCtaKeys),setTimeout(()=>{this.dispatchEvent(new CustomEvent("cta-transition-in-ended"))},bt.TRANSITION_TIMEOUT)}logCelebrationsSeen(){this.celebrations.forEach(({type:e,subtype:s})=>{makeRequest("POST","log",{type:e,subtype:s},"zume_system/v1")});const t=this.getCtaKeys(this.celebrations);jsObject.allCtas=jsObject.allCtas.filter(({key:e})=>!t.includes(e))}transitionCtas(t,e){(t.length>0?this.getCtaElements(t):[]).forEach(a=>{a&&(a.style.height=a.clientHeight+"px",setTimeout(()=>{a.classList.add("transition-out"),a.style.height=""},10))}),(e.length>0?this.getCtaElements(e):[]).forEach(a=>{a&&(a.classList.remove("hiding"),a.classList.add("showing"))})}getCtaElements(t){return this.renderRoot.querySelectorAll(t.map(e=>`[data-key="${e}"]`).join(","))}getCtaKeys(t){return t.map(({key:e})=>e)}isWizardLink(t){return t.includes("/wizard/")}openWizard(t){const e=t.split("/"),s=e[e.length-1];dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:s}}))}renderCta({content:t,content_template:e,key:s}){const n=this.hiddenCtaKeys.includes(s)?"hiding":"showing";if(e==="card")return l`
-                <div
-                    class="stack | card cta ${n}"
-                    data-key=${s}
-                    style="--duration: ${bt.TRANSITION_TIMEOUT}ms"
-                >
+                <div class="stack | card cta ${n}" data-key=${s} style="--duration: ${bt.TRANSITION_TIMEOUT}ms">
                     <h2 class="h5 text-center">${t.title}</h2>
                     <p>${t.description}</p>
                     ${this.isWizardLink(t.link)?l`
-                              <button
-                                  class="btn"
-                                  @click=${()=>this.openWizard(t.link)}
-                              >
-                                  ${t.link_text}
-                              </button>
-                          `:l`
-                              <a href="${t.link}" class="btn"
-                                  >${t.link_text}</a
-                              >
-                          `}
+                            <button class="btn" @click=${()=>this.openWizard(t.link)}>${t.link_text}</button>
+                        `:l`
+                            <a href="${t.link}" class="btn">${t.link_text}</a>
+                        `}
+
                 </div>
             `;if(e==="celebration")return l`
-                <div
-                    class="stack | card celebration ${n}"
-                    data-key=${s}
-                    style="--duration: ${bt.TRANSITION_TIMEOUT}ms"
-                >
+                <div class="stack | card celebration ${n}" data-key=${s} style="--duration: ${bt.TRANSITION_TIMEOUT}ms">
                     <h2 class="h5 text-center bold">${t.title}</h2>
-                    <div
-                        class="d-flex align-items-center justify-content-between"
-                    >
-                        <img
-                            src="${jsObject.images_url+"/fireworks-2.svg"}"
-                            alt=""
-                        />
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="${jsObject.images_url+"/fireworks-2.svg"}" alt="" />
                         <img src="${t.image_url}" alt="" />
-                        <img
-                            src="${jsObject.images_url+"/fireworks-2.svg"}"
-                            alt=""
-                        />
+                        <img src="${jsObject.images_url+"/fireworks-2.svg"}" alt="" />
                     </div>
                     <p>${t.description}</p>
                 </div>
@@ -1741,31 +1161,31 @@ ${t}</textarea
         `}createRenderRoot(){return this}};let Et=bt;C(Et,"FADE_TIMEOUT",3e3),C(Et,"TRANSITION_TIMEOUT",500),C(Et,"MAX_CTAS",3);customElements.define("dash-cta",Et);class Ae extends ut{static get properties(){return{view:{type:String,attribute:!1},userState:{type:Object,attribute:!1}}}constructor(t){super(),this.routeName=t,this.route=_.getRoute(this.routeName),this.routes=_.childRoutesOf(this.routeName),this.view="list",this.userState=jsObject.user_stage.state,this.refetchState=this.refetchState.bind(this)}connectedCallback(){super.connectedCallback(),window.addEventListener("user-state:change",this.refetchState)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("user-state:change",this.refetchState)}switchView(t="list"){this.view=t}refetchState(){makeRequest("GET","user_stage",{},"zume_system/v1").done(t=>{(!t||!t.state)&&console.error("Stage or state data not returned from api"),jsObject.user_stage=t,this.userState=t.state})}renderLinks(t){return l`
             <div class="${this.view==="grid"?"nav-grid":"stack"}">
                 ${this.routes.map(e=>{let s=e.pattern;const n=Object.keys(jsObject.training_groups);return e.name===b.myTraining&&(n.length===0?s=e.pattern.replace(":code","teaser"):n.length>0&&(s=_.getRoute(b.myTrainings).pattern)),this.view==="grid"?l`
-                            <grid-link
-                                href=${s}
-                                text=${e.translation||""}
-                                icon=${e.icon}
-                                ?disableNavigate=${e.type==="handled-link"}
-                                as=${e.type==="handled-link"?"link":"nav"}
-                                @click=${e.type==="handled-link"?a=>{_.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
-                                ?completed=${_.getCompletedStatus(e.name,t)}
-                                ?locked=${_.getLockedStatus(e.name,t)}
-                            >
-                            </grid-link>
-                        `:l`
-                            <list-link
-                                href=${s}
-                                text=${e.translation}
-                                explanation=${e.explanation}
-                                icon=${e.icon}
-                                ?disableNavigate=${e.type==="handled-link"}
-                                as=${e.type==="handled-link"?"link":"nav"}
-                                @click=${e.type==="handled-link"?a=>{_.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
-                                ?completed=${_.getCompletedStatus(e.name,t)}
-                                ?locked=${_.getLockedStatus(e.name,t)}
-                            >
-                            </list-link>
-                        `})}
+                                <grid-link
+                                    href=${s}
+                                    text=${e.translation||""}
+                                    icon=${e.icon}
+                                    ?disableNavigate=${e.type==="handled-link"}
+                                    as=${e.type==="handled-link"?"link":"nav"}
+                                    @click=${e.type==="handled-link"?a=>{_.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
+                                    ?completed=${_.getCompletedStatus(e.name,t)}
+                                    ?locked=${_.getLockedStatus(e.name,t)}
+                                >
+                                </grid-link>
+                            `:l`
+                               <list-link
+                                    href=${s}
+                                    text=${e.translation}
+                                    explanation=${e.explanation}
+                                    icon=${e.icon}
+                                    ?disableNavigate=${e.type==="handled-link"}
+                                    as=${e.type==="handled-link"?"link":"nav"}
+                                    @click=${e.type==="handled-link"?a=>{_.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
+                                    ?completed=${_.getCompletedStatus(e.name,t)}
+                                    ?locked=${_.getLockedStatus(e.name,t)}
+                                >
+                                </list-link>
+                            `})}
             </div>
         `}render(){return l`
             <div class="dashboard__content">
@@ -1776,25 +1196,11 @@ ${t}</textarea
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
                     <div class="icon-btn-group">
-                        <button
-                            class="${this.view==="list"?"selected":""}"
-                            title=${jsObject.translations.list}
-                            @click=${()=>this.switchView("list")}
-                        >
-                            <span
-                                class="icon z-icon-list"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view==="list"?"selected":""}" title=${jsObject.translations.list} @click=${()=>this.switchView("list")}>
+                            <span class="icon z-icon-list" aria-hidden="true"></span>
                         </button>
-                        <button
-                            class="${this.view==="grid"?"selected":""}"
-                            title=${jsObject.translations.grid}
-                            @click=${()=>this.switchView("grid")}
-                        >
-                            <span
-                                class="icon z-icon-grid"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view==="grid"?"selected":""}" title=${jsObject.translations.grid} @click=${()=>this.switchView("grid")}>
+                            <span class="icon z-icon-grid" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>
@@ -1816,68 +1222,44 @@ ${t}</textarea
 
                 <div class="dashboard__main content p-2">
                     ${this.showTeaser?l`
-                              <div class="dash-menu__list-item">
-                                  <div class="dash-menu__icon-area | stack--5">
-                                      <span
-                                          class="icon z-icon-locked dash-menu__list-icon"
-                                      ></span>
-                                  </div>
-                                  <div
-                                      class="dash-menu__text-area | switcher | switcher-width-20"
-                                  >
-                                      <div>
-                                          <h3 class="f-1 bold uppercase">
-                                              ${jsObject.translations.my_maps_locked}
-                                          </h3>
-                                          <p>
-                                              ${jsObject.translations.my_maps_explanation}
-                                          </p>
-                                      </div>
-                                      <button
-                                          class="dash-menu__view-button btn tight"
-                                          @click=${this.joinCommunity}
-                                      >
-                                          ${jsObject.translations.join_the_community}
-                                      </button>
-                                  </div>
+                          <div class="dash-menu__list-item">
+                            <div class="dash-menu__icon-area | stack--5">
+                              <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                            </div>
+                            <div class="dash-menu__text-area | switcher | switcher-width-20">
+                              <div>
+                                <h3 class="f-1 bold uppercase">${jsObject.translations.my_maps_locked}</h3>
+                                <p>${jsObject.translations.my_maps_explanation}</p>
                               </div>
-                          `:l`
-                              <div class="stack">
-                                  <button
-                                      class="btn"
-                                      data-map="hundred-hour-map"
-                                      @click=${this.openModal}
-                                  >
-                                      ${jsObject.translations.hundred_hour_map}
-                                  </button>
-                                  <button
-                                      class="btn"
-                                      data-map="vision-map"
-                                      @click=${this.openModal}
-                                  >
-                                      ${jsObject.translations.training_vision_map}
-                                  </button>
-                                  <button
-                                      class="btn"
-                                      data-map="church-map"
-                                      @click=${this.openModal}
-                                  >
-                                      ${jsObject.translations.simple_church_planting_map}
-                                  </button>
-                              </div>
-                          `}
+                              <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
+                                ${jsObject.translations.join_the_community}
+                              </button>
+                            </div>
+                          </div>
+                        `:l`
+                            <div class="stack">
+                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
+                                    ${jsObject.translations.hundred_hour_map}
+                                </button>
+                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
+                                    ${jsObject.translations.training_vision_map}
+                                </button>
+                                <button class="btn" data-map="church-map" @click=${this.openModal}>
+                                    ${jsObject.translations.simple_church_planting_map}
+                                </button>
+                            </div>
+                        `}
                 </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
             </div>
-            <div class="reveal full" data-reveal id="map-modal">
-                <button
-                    class="close-btn | ms-auto mb--1"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+            <div
+                class="reveal full"
+                data-reveal
+                id="map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
                 ${this.loading?l`<span class="loading-spinner active"></span>`:""}
@@ -1891,51 +1273,48 @@ ${t}</textarea
                 >
                 </iframe>
             </div>
-            <div class="reveal full" data-reveal id="hundred-hour-map-modal">
-                <button
-                    class="close-btn | ms-auto mb--1"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+            <div
+                class="reveal full"
+                data-reveal
+                id="hundred-hour-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src="https://zume.training/coaching/zume_app/last100_hours/"
+                    src='https://zume.training/coaching/zume_app/last100_hours/'
                     frameborder="0"
                     width="100%"
                     height="100%"
                 >
                 </iframe>
             </div>
-            <div class="reveal full" data-reveal id="vision-map-modal">
-                <button
-                    class="close-btn | ms-auto mb--1"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+            <div
+                class="reveal full"
+                data-reveal
+                id="vision-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src="https://zume.training/coaching/zume_app/heatmap_practitioner/"
+                    src='https://zume.training/coaching/zume_app/heatmap_practitioner/'
                     frameborder="0"
                     width="100%"
                     height="100%"
                 >
                 </iframe>
             </div>
-            <div class="reveal full" data-reveal id="church-map-modal">
-                <button
-                    class="close-btn | ms-auto mb--1"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+            <div
+                class="reveal full"
+                data-reveal
+                id="church-map-modal"
+            >
+                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src="https://zume.training/coaching/zume_app/heatmap_churches/"
+                    src='https://zume.training/coaching/zume_app/heatmap_churches/'
                     frameborder="0"
                     width="100%"
                     height="100%"
@@ -1949,7 +1328,8 @@ ${t}</textarea
                     <h1 class="h3">Not Found</h1>
                 </div>
                 <dash-header-right></dash-header-right>
-                <div class="dashboard__main"></div>
+                <div class="dashboard__main">
+                </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
@@ -1959,16 +1339,14 @@ ${t}</textarea
                 <span>${e} <b>${s}</b></span>
                 <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
-                        ${a==="closed"?l`<span
-                                  class="icon z-icon-check-mark success"
-                              ></span>`:l`
-                                  <button
-                                      class="btn tight break-anywhere"
-                                      @click=${()=>this.completeCommitment(n)}
-                                  >
-                                      ${jsObject.translations.done}
-                                  </button>
-                              `}
+                        ${a==="closed"?l`<span class="icon z-icon-check-mark success"></span>`:l`
+                                <button
+                                    class="btn tight break-anywhere"
+                                    @click=${()=>this.completeCommitment(n)}
+                                >
+                                    ${jsObject.translations.done}
+                                </button>
+                            `}
                     </div>
                     <button class="icon-btn" data-toggle="kebab-menu-${n}">
                         <span class="icon z-icon-kebab brand-light"></span>
@@ -1985,27 +1363,12 @@ ${t}</textarea
                     data-close-on-click-inside="true"
                 >
                     <ul>
-                        <li>
-                            <button
-                                class="menu-btn"
-                                @click=${()=>this.openEditCommitmentsModal(n)}
-                            >
-                                <span class="icon z-icon-pencil"></span
-                                >${jsObject.translations.edit}
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                class="menu-btn red"
-                                @click=${()=>this.deleteCommitment(n)}
-                            >
-                                <span class="icon z-icon-trash"></span
-                                >${jsObject.translations.delete}
-                            </button>
-                        </li>
+                        <li><button class="menu-btn" @click=${()=>this.openEditCommitmentsModal(n)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
+                        <li><button class="menu-btn red" @click=${()=>this.deleteCommitment(n)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
                     </ul>
                 </div>
             </li>
+
         `}render(){return l`
             <div class="dashboard__content" data-no-secondary-area>
                 <dash-header-right></dash-header-right>
@@ -2017,80 +1380,33 @@ ${t}</textarea
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
                         <div class="s0">
-                            <button
-                                class="icon-btn f-2"
-                                data-toggle="filter-menu"
-                                ?disabled=${this.showTeaser}
-                                aria-disabled=${this.showTeaser?"true":"false"}
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.filter}</span
-                                >
-                                <span
-                                    class="icon z-icon-filter"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
+                                <span class="visually-hidden">${jsObject.translations.filter}</span>
+                                <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
-                            <button
-                                class="icon-btn f-2"
-                                @click=${this.handleOpenCommitmentsModal}
-                                ?disabled=${this.showTeaser}
-                                aria-disabled=${this.showTeaser?"true":"false"}
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.add_commitments}</span
-                                >
-                                <span
-                                    class="icon z-icon-plus"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" @click=${this.handleOpenCommitmentsModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
+                                <span class="visually-hidden">${jsObject.translations.add_commitments}</span>
+                                <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="dropdown-pane"
-                        id="filter-menu"
-                        data-dropdown
-                        data-auto-focus="true"
-                        data-position="bottom"
-                        data-alignment=${this.isRtl?"right":"left"}
-                        data-close-on-click="true"
-                        data-close-on-click-inside="true"
-                    >
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                             <li>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="open"?"selected":""}"
-                                    @click=${()=>this.filterCommitments("open")}
-                                >
-                                    <span
-                                        class="icon z-icon-sort-todo"
-                                        aria-hidden="true"
-                                    ></span>
+                                <button class="menu-btn w-100 ${this.filterStatus==="open"?"selected":""}" @click=${()=>this.filterCommitments("open")}>
+                                    <span class="icon z-icon-sort-todo" aria-hidden="true"></span>
                                     ${jsObject.translations.active}
                                 </button>
                             </li>
                             <li>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="closed"?"selected":""}"
-                                    @click=${()=>this.filterCommitments("closed")}
-                                >
-                                    <span
-                                        class="icon z-icon-sort-done"
-                                        aria-hidden="true"
-                                    ></span>
+                                <button class="menu-btn w-100 ${this.filterStatus==="closed"?"selected":""}" @click=${()=>this.filterCommitments("closed")}>
+                                    <span class="icon z-icon-sort-done" aria-hidden="true"></span>
                                     ${jsObject.translations.completed}
                                 </button>
                             </li>
                             <li>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="all"?"selected":""}"
-                                    @click=${()=>this.filterCommitments("all")}
-                                >
-                                    <span
-                                        class="icon z-icon-sort-all"
-                                        aria-hidden="true"
-                                    ></span>
+                                <button class="menu-btn w-100 ${this.filterStatus==="all"?"selected":""}" @click=${()=>this.filterCommitments("all")}>
+                                    <span class="icon z-icon-sort-all" aria-hidden="true"></span>
                                     ${jsObject.translations.all}
                                 </button>
                             </li>
@@ -2099,62 +1415,36 @@ ${t}</textarea
                 </div>
                 <div class="dashboard__main content">
                     ${this.showTeaser?l`
-                              <div class="p-2">
-                                  <div class="dash-menu__list-item">
-                                      <div
-                                          class="dash-menu__icon-area | stack--5"
-                                      >
-                                          <span
-                                              class="icon z-icon-locked dash-menu__list-icon"
-                                          ></span>
-                                      </div>
-                                      <div
-                                          class="dash-menu__text-area | switcher | switcher-width-20"
-                                      >
-                                          <div>
-                                              <h3 class="f-1 bold uppercase">
-                                                  ${jsObject.translations.my_plans_locked}
-                                              </h3>
-                                              <p>
-                                                  ${jsObject.translations.my_plans_locked_explanation}
-                                              </p>
-                                          </div>
-                                          <button
-                                              class="dash-menu__view-button btn tight"
-                                              @click=${this.open3MonthPlan}
-                                          >
-                                              ${jsObject.translations.create_3_month_plan}
-                                          </button>
-                                      </div>
-                                  </div>
+                          <div class="p-2">
+                            <div class="dash-menu__list-item">
+                              <div class="dash-menu__icon-area | stack--5">
+                                <span class="icon z-icon-locked dash-menu__list-icon"></span>
                               </div>
-                          `:l`
-                              <ul class="list">
+                              <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                <div>
+                                  <h3 class="f-1 bold uppercase">${jsObject.translations.my_plans_locked}</h3>
+                                  <p>${jsObject.translations.my_plans_locked_explanation}</p>
+                                </div>
+                                <button class="dash-menu__view-button btn tight" @click=${this.open3MonthPlan}>
+                                  ${jsObject.translations.create_3_month_plan}
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        `:l`
+                                <ul class="list">
                                   ${!this.loading&&this.commitments&&this.commitments.length>0?et(this.commitments,t=>t.id,this.renderListItem):""}
-                              </ul>
-                          `}
+                                </ul>
+                            `}
                 </div>
             </div>
-            <div
-                class="reveal small"
-                id="commitments-form"
-                data-reveal
-                data-v-offset="20"
-            >
-                <button
-                    class="ms-auto close-btn"
-                    data-close
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    @click=${this.closeCommitmentsModal}
-                >
-                    <span class="icon z-icon-close"></span>
+            <div class="reveal small" id="commitments-form" data-reveal data-v-offset="20">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button" @click=${this.closeCommitmentsModal}>
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <form @submit=${this.saveCommitment} class="stack">
                     <div class="form-group">
-                        <label for="edit-question"
-                            >${jsObject.three_month_plan_translations.question}*</label
-                        >
+                        <label for="edit-question">${jsObject.three_month_plan_translations.question}*</label>
                         <textarea
                             class="input"
                             id="edit-question"
@@ -2165,9 +1455,7 @@ ${t}</textarea
                         ></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="edit-answer"
-                            >${jsObject.three_month_plan_translations.answer}*</label
-                        >
+                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}*</label>
                         <textarea
                             class="input"
                             id="edit-answer"
@@ -2177,58 +1465,27 @@ ${t}</textarea
                         ></textarea>
                     </div>
                     <div class="cluster justify-flex-end">
-                        <button
-                            type="button"
-                            class="btn outline tight"
-                            type="button"
-                            @click=${this.closeCommitmentsModal}
-                        >
-                            ${jsObject.three_month_plan_translations.cancel}
-                        </button>
-                        <button
-                            type="submit"
-                            class="btn tight"
-                            type="button"
-                            ?disabled=${this.saving}
-                        >
+                        <button type="button" class="btn outline tight" type="button" @click=${this.closeCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
+                        <button type="submit" class="btn tight" type="button" ?disabled=${this.saving}>
                             ${jsObject.three_month_plan_translations.save}
-                            <span
-                                class="loading-spinner ${this.saving?"active":""}"
-                            ></span>
+                            <span class="loading-spinner ${this.saving?"active":""}"></span>
                         </button>
                     </div>
                 </form>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-plans",Ho);class Zo extends Ae{constructor(){super("practicing")}createRenderRoot(){return this}}customElements.define("dash-practicing",Zo);class Bo extends ut{static get properties(){return{loading:{type:Boolean,attribute:!1},filteredItems:{type:Array,attribute:!1},filterStatus:{type:String,attribute:!1},hostProgress:{type:Object,attribute:!1},errorMessage:{type:String,attribute:!1},openStates:{type:Object,attribute:!1}}}constructor(){super(),this.loading=!1,this.route=_.getRoute("my-progress"),this.trainingItems=Object.values(jsObject.training_items),this.hostProgress=jsObject.host_progress,this.errorMessage="",this.filterName="my-progress-filter",this.filterStatus=ZumeStorage.load(this.filterName),this.filteredItems=this.filterItems(this.filterStatus),this.openStates={},this.trainingItems.forEach(t=>{this.openStates[t.key]=!1}),this.renderListItem=this.renderListItem.bind(this),this.closeInfoModal=this.closeInfoModal.bind(this)}firstUpdated(){super.firstUpdated(),wi()}updated(){jQuery(document).foundation()}openInfoModal(){const t=document.querySelector("#progress-modal");jQuery(t).foundation("open")}closeInfoModal(){const t=document.querySelector("#progress-modal");jQuery(t).foundation("close")}filterProgress(t){this.filterStatus=t,this.filteredItems=this.filterItems(t),ZumeStorage.save(this.filterName,t),this.closeFilter()}filterItems(t){switch(t){case"heard":return this.trainingItems.filter(e=>{const s=e.host[0].key;return!!(this.hostProgress.list[s]||!1)});case"not-heard":return this.trainingItems.filter(e=>{const s=e.host[0].key;return!(this.hostProgress.list[s]||!1)});default:return[...this.trainingItems]}}closeFilter(){const t=this.querySelector("#filter-menu");jQuery(t).foundation("close")}toggleHost(t,e){e.stopImmediatePropagation();const{type:s,subtype:n,key:a}=t,r=this.hostProgress.list[a];if(r===!1)return this.changeHost(a,!0),V.post("host",{type:s,subtype:n,user_id:jsObject.profile.user_id}).then(o=>{}).catch(o=>{this.changeHost(a,!1),this.displayError(jsObject.translations.error_with_request)}).finally(()=>{this.loadHostStatus()});if(r===!0)return this.changeHost(a,!1),V.delete("host",{type:s,subtype:n,user_id:jsObject.profile.user_id}).then(o=>{this.loadHostStatus()}).catch(o=>{this.changeHost(a,!1),this.displayError(jsObject.translations.error_with_request)}).finally(()=>{this.loadHostStatus()})}displayError(t){this.errorMessage=t,setTimeout(()=>{this.errorMessage=""},4e3)}loadHostStatus(){V.get("host",{user_id:jsObject.profile.user_id}).then(t=>{this.hostProgress=t}).catch(t=>{this.displayError(jsObject.translations.error_with_request)})}changeHost(t,e){const s={...this.hostProgress};s.list={...this.hostProgress.list},s.list[t]=e,this.hostProgress={...s}}toggleDetails(t){this.openStates[t]===!1?this.openStates={...this.openStates,[t]:!0}:this.openStates={...this.openStates,[t]:!1}}renderListItem(t){const{title:e,description:s,host:n,slug:a,key:r}=t;let o=[jsObject.site_url,jsObject.language,a].join("/");return jsObject.language==="en"&&(o=[jsObject.site_url,a].join("/")),l`
-            <li
-                class="switcher | switcher-width-30 list__item tight"
-                @click=${()=>this.toggleDetails(r)}
-                role="button"
-            >
+            <li class="switcher | switcher-width-30 list__item tight" @click=${()=>this.toggleDetails(r)} role="button">
                 <div>
                     <h2 class="h5 bold m0">${e}</h2>
-                    <div
-                        class="collapse"
-                        id="details-${r}"
-                        ?data-open=${this.openStates[r]}
-                    >
+                    <div class="collapse" id="details-${r}" ?data-open=${this.openStates[r]}>
                         <div class="stack--2 mt--2">
                             <p class="f--1 gray-700">${s}</p>
                             <div class="cluster">
-                                <share-links
-                                    url=${o}
-                                    title=${e}
-                                    .t=${jsObject.share_translations}
-                                ></share-links>
+                                <share-links url=${o} title=${e} .t=${jsObject.share_translations}></share-links>
 
                                 ${jsObject.has_pieces_pages?l`
-                                          <a
-                                              class="btn"
-                                              href=${o}
-                                              @click=${c=>c.stopImmediatePropagation()}
-                                              >${jsObject.translations.view}</a
-                                          >
-                                      `:""}
+                                        <a class="btn" href=${o} @click=${c=>c.stopImmediatePropagation()}>${jsObject.translations.view}</a>
+                                    `:""}
                             </div>
                         </div>
                     </div>
@@ -2274,60 +1531,26 @@ ${t}</textarea
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
                         <div class="s0">
-                            <button
-                                class="icon-btn f-2"
-                                data-toggle="filter-menu"
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.filter}</span
-                                >
-                                <span
-                                    class="icon z-icon-filter brand-light"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" data-toggle="filter-menu">
+                                <span class="visually-hidden">${jsObject.translations.filter}</span>
+                                <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                             </button>
-                            <button
-                                class="icon-btn f-2"
-                                @click=${this.openInfoModal}
-                            >
-                                <span class="visually-hidden"
-                                    >${jsObject.translations.progress_info}</span
-                                >
-                                <span
-                                    class="icon z-icon-info brand-light"
-                                    aria-hidden="true"
-                                ></span>
+                            <button class="icon-btn f-2" @click=${this.openInfoModal}>
+                                <span class="visually-hidden">${jsObject.translations.progress_info}</span>
+                                <span class="icon z-icon-info brand-light" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
-                    <div
-                        class="dropdown-pane"
-                        id="filter-menu"
-                        data-dropdown
-                        data-auto-focus="true"
-                        data-position="bottom"
-                        data-alignment=${this.isRtl?"right":"left"}
-                        data-close-on-click="true"
-                        data-close-on-click-inside="true"
-                    >
+                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                             <li>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="heard"?"selected":""}"
-                                    @click=${()=>this.filterProgress("heard")}
-                                >
+                                <button class="menu-btn w-100 ${this.filterStatus==="heard"?"selected":""}" @click=${()=>this.filterProgress("heard")}>
                                     ${jsObject.translations.heard}
                                 </button>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="not-heard"?"selected":""}"
-                                    @click=${()=>this.filterProgress("not-heard")}
-                                >
+                                <button class="menu-btn w-100 ${this.filterStatus==="not-heard"?"selected":""}" @click=${()=>this.filterProgress("not-heard")}>
                                     ${jsObject.translations.not_heard}
                                 </button>
-                                <button
-                                    class="menu-btn w-100 ${this.filterStatus==="all"?"selected":""}"
-                                    @click=${()=>this.filterProgress("all")}
-                                >
+                                <button class="menu-btn w-100 ${this.filterStatus==="all"?"selected":""}" @click=${()=>this.filterProgress("all")}>
                                     ${jsObject.translations.all}
                                 </button>
                             </li>
@@ -2337,159 +1560,79 @@ ${t}</textarea
                 <dash-header-right></dash-header-right>
                 <div class="dashboard__main content position-relative">
                     ${l`
-                        <ul class="list">
-                            ${et(this.filteredItems,d=>d.key,this.renderListItem)}
-                        </ul>
-                    `}
+                            <ul class="list">
+                                ${et(this.filteredItems,d=>d.key,this.renderListItem)}
+                            </ul>
+                        `}
 
-                    <div
-                        class="fixed bottom left right ${this.errorMessage.length?"p-1":""}"
-                    >
-                        <div
-                            class="warning banner"
-                            data-state=${this.errorMessage.length?"":"empty"}
-                        >
-                            ${this.errorMessage}
-                        </div>
+                    <div class="fixed bottom left right ${this.errorMessage.length?"p-1":""}">
+                        <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
                     </div>
                 </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
             </div>
-            <div
-                class="reveal large"
-                id="progress-modal"
-                data-reveal
-                data-v-offset="20"
-            >
-                <button
-                    class="ms-auto close-btn"
-                    data-close
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                >
-                    <span class="icon z-icon-close"></span>
+            <div class="reveal large" id="progress-modal" data-reveal data-v-offset="20">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack-2 host-info mx-2">
-                    <div
-                        class="switcher gap-1 align-items-center switcher-width-20"
-                    >
-                        <host-progress-circle
-                            class="grow-0"
-                            type="heard"
-                            percent=${((e=(t=this.hostProgress)==null?void 0:t.percent)==null?void 0:e.h)||0}
-                        ></host-progress-circle>
+                    <div class="switcher gap-1 align-items-center switcher-width-20">
+                        <host-progress-circle class="grow-0" type="heard" percent=${((e=(t=this.hostProgress)==null?void 0:t.percent)==null?void 0:e.h)||0}></host-progress-circle>
                         <div class="stack--2">
                             <h3 class="bold">${jsObject.translations.heard}</h3>
-                            <p class="italic">
-                                ${jsObject.translations.heard_explanation}
-                            </p>
+                            <p class="italic">${jsObject.translations.heard_explanation}</p>
                         </div>
                     </div>
-                    <div
-                        class="switcher gap-1 align-items-center switcher-width-20"
-                    >
-                        <host-progress-circle
-                            class="grow-0"
-                            type="obeyed"
-                            percent=${((n=(s=this.hostProgress)==null?void 0:s.percent)==null?void 0:n.o)||0}
-                        ></host-progress-circle>
+                    <div class="switcher gap-1 align-items-center switcher-width-20">
+                        <host-progress-circle class="grow-0" type="obeyed" percent=${((n=(s=this.hostProgress)==null?void 0:s.percent)==null?void 0:n.o)||0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">
-                                ${jsObject.translations.obeyed}
-                            </h3>
-                            <p class="italic">
-                                ${jsObject.translations.obeyed_explanation}
-                            </p>
+                            <h3 class="bold">${jsObject.translations.obeyed}</h3>
+                            <p class="italic">${jsObject.translations.obeyed_explanation}</p>
                         </div>
                     </div>
-                    <div
-                        class="switcher gap-1 align-items-center switcher-width-20"
-                    >
-                        <host-progress-circle
-                            class="grow-0"
-                            type="shared"
-                            percent=${((r=(a=this.hostProgress)==null?void 0:a.percent)==null?void 0:r.s)||0}
-                        ></host-progress-circle>
+                    <div class="switcher gap-1 align-items-center switcher-width-20">
+                        <host-progress-circle class="grow-0" type="shared" percent=${((r=(a=this.hostProgress)==null?void 0:a.percent)==null?void 0:r.s)||0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">
-                                ${jsObject.translations.shared}
-                            </h3>
-                            <p class="italic">
-                                ${jsObject.translations.shared_explanation}
-                            </p>
+                            <h3 class="bold">${jsObject.translations.shared}</h3>
+                            <p class="italic">${jsObject.translations.shared_explanation}</p>
                         </div>
                     </div>
 
-                    <div
-                        class="switcher gap-1 align-items-center switcher-width-20"
-                    >
-                        <host-progress-circle
-                            class="grow-0"
-                            type="trained"
-                            percent=${((c=(o=this.hostProgress)==null?void 0:o.percent)==null?void 0:c.t)||0}
-                        ></host-progress-circle>
+                    <div class="switcher gap-1 align-items-center switcher-width-20">
+                        <host-progress-circle class="grow-0" type="trained" percent=${((c=(o=this.hostProgress)==null?void 0:o.percent)==null?void 0:c.t)||0}></host-progress-circle>
                         <div class="stack--2">
-                            <h3 class="bold">
-                                ${jsObject.translations.trained}
-                            </h3>
-                            <p class="italic">
-                                ${jsObject.translations.trained_explanation}
-                            </p>
+                            <h3 class="bold">${jsObject.translations.trained}</h3>
+                            <p class="italic">${jsObject.translations.trained_explanation}</p>
                         </div>
                     </div>
                 </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-progress",Bo);class Go extends Ae{constructor(){super(b.training)}createRenderRoot(){return this}}customElements.define("dash-training",Go);class Yo extends ut{static get properties(){return{showTeaser:{type:Boolean},code:{type:String},loading:{type:Boolean,attribute:!1},error:{type:String,attribute:!1},training:{type:Object,attribute:!1},sessions:{type:Array,attribute:!1},sessionToEdit:{type:Object,attribute:!1},openDetailStates:{type:Object,attribute:!1},filterStatus:{type:String,attribute:!1},isEditingTitle:{type:Boolean,attribute:!1},isSavingTitle:{type:Boolean,attribute:!1},isSavingSession:{type:Boolean,attribute:!1}}}constructor(){super(),this.showTeaser=!1,this.loading=!1,this.isEditingTitle=!1,this.error="",this.route=_.getRoute(b.myTraining),this.sessionToEdit={},this.openDetailStates={},this.renderListItem=this.renderListItem.bind(this)}connectedCallback(){super.connectedCallback(),this.code!=="teaser"&&this.getTraining()}willUpdate(t){t.has("code")&&this.code!=="teaser"&&this.getTraining()}firstUpdated(){super.firstUpdated()}updated(){jQuery(document).foundation(),wi()}getTraining(){return this.loading=!0,makeRequest("GET",`plan/${this.code}`,{},"zume_system/v1").then(t=>{if(t.error_code)throw new Error(t.error_code);this.training=t}).then(()=>{this.refreshSessions(),this.groupMembers=this.getGroupMembers()}).fail(t=>{this.error=t.message}).always(()=>{this.loading=!1})}refreshSessions(t){t&&(this.training.completed_sessions=t),this.sessions=this.getSessions(),this.currentSession=this.getCurrentSession()}getSessions(){const t=this.getTrainingType(),e=this.getNumberOfSessions(),s=[];for(let n=1;n<e+1;n++){const a=n<10?`0${n}`:`${n}`,r=t+"_"+a,o=this.training[r];s.push({id:r,name:jsObject.translations.session_x.replace("%d",n),datetime:o?Number(o.timestamp)*1e3:0,completed:this.training.completed_sessions.includes(r)})}return s}getGroupMembers(){if(!this.training.participants||!Array.isArray(this.training.participants))return[];const t=[];return this.training.participants.forEach(e=>{t.push({id:e.ID,name:e.post_title})}),t}getTrainingType(){return this.training.set_type.key}getSessionNumber(t){const e=this.getTrainingType()+"_";return t.slice(e.length)}getSessionUrl(t){const e=this.getTrainingType(),s=this.getSessionNumber(t);let n="";e==="set_a"&&(n=jsObject.urls.launch_ten_session_course),e==="set_b"&&(n=jsObject.urls.launch_twenty_session_course),e==="set_c"&&(n=jsObject.urls.launch_intensive_session_course);const a=new URL(n);return a.searchParams.set("session",s),a.href}getNumberOfSessions(){switch(this.training.set_type.key){case"set_a":return 10;case"set_b":return 20;case"set_c":return 5}}getSlideKey(t){const e=t.split("_");if(e.length!==3)return"";switch(e[1]){case"a":return`s1_${Number(e[2])}_1`;case"b":return`s2_${Number(e[2])}_1`;case"c":return`s3_${Number(e[2])}_1`}}getCurrentSession(){for(let t=0;t<this.sessions.length;t++){const e=this.sessions[t];if(!e.completed)return e.id}return""}createTraining(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.makeAGroup}}))}inviteFriends(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.inviteFriends,params:{joinKey:this.code}}}))}startSession(t,e){e.stopImmediatePropagation();const s=this.getSessionUrl(t);location.href=s}editSession(t,e){this.stopImmediatePropagation(e);const s=this.sessions.find(a=>a.id===t),n=v.fromMillis(s.datetime);s.date=n.toISODate(),s.time=n.toFormat("HH:mm"),this.sessionToEdit=s,document.querySelector("#session-date-picker").value=s.date,document.querySelector("#session-time-picker").value=s.time,this.openEditSessionModal()}saveSession(){if(this.isSavingSession)return;this.isSavingSession=!0;const t=document.querySelector("#session-date-picker").value,e=document.querySelector("#session-time-picker").value,s=v.fromFormat(`${t} ${e}`,"y-LL-dd HH:mm");V.post("plan/edit-session",{key:this.training.join_key,session_id:this.sessionToEdit.id,session_time:s.toSeconds()}).then(n=>{this.training={...this.training,[this.sessionToEdit.id]:{timestamp:s.toSeconds(),formatted:s.toISODate()}},this.refreshSessions(),this.closeEditSessionModal()}).finally(()=>{this.isSavingSession=!1})}cancelEditingSession(){this.sessionToEdit={},this.closeEditSessionModal()}openEditSessionModal(){const t=document.querySelector("#edit-session-modal");jQuery(t).foundation("open")}closeEditSessionModal(){const t=document.querySelector("#edit-session-modal");jQuery(t).foundation("close")}editTitle(){this.isEditingTitle=!0}cancelEditingTitle(){this.isEditingTitle=!1}inputSaveTitle(t){t.code==="Enter"&&this.saveTitle()}saveTitle(){if(this.isSavingTitle)return;this.isSavingTitle=!0;const t=document.querySelector("#training-title-input").value;V.put(`plan/${this.training.join_key}`,{title:t}).then(e=>{this.training.title=t,this.dispatchEvent(new CustomEvent("training:changed",{bubbles:!0}))}).finally(()=>{this.isEditingTitle=!1,this.isSavingTitle=!1})}markSessionCompleted(t,e){this.stopImmediatePropagation(e),makeRequest("POST","plan/complete-session",{key:this.training.join_key,session_id:t},"zume_system/v1").then(s=>{this.refreshSessions(s)})}isGroupLeader(){return!!(this.training&&this.training.assigned_to&&Number(this.training.assigned_to.id)===jsObject.profile.user_id)}hasMultipleTrainingGroups(){return jsObject.training_groups&&Object.keys(jsObject.training_groups).length>1}toggleDetails(t){this.openDetailStates[t]?this.openDetailStates={...this.openDetailStates,[t]:!1}:this.openDetailStates={...this.openDetailStates,[t]:!0}}toggleKebabMenu(t){t.stopImmediatePropagation();const e=t.currentTarget.dataset.toggle;jQuery(`#${e}`).foundation("toggle")}stopImmediatePropagation(t){t.stopImmediatePropagation()}renderListItem(t){var d;const{id:e,name:s,datetime:n,completed:a}=t,r=this.getNumberOfSessions(),o=this.getSlideKey(e),c=((d=zumeTrainingPieces[r][o])==null?void 0:d.pieces)??[];return l`
-            <li
-                class="list__item"
-                data-no-flex
-                @click=${()=>this.toggleDetails(e)}
-            >
+            <li class="list__item" data-no-flex @click=${()=>this.toggleDetails(e)}>
                 <div class="switcher | switcher-width-20 gapy0">
                     <div class="list__primary">
                         ${this.currentSession===e?l`
-                                  <button
-                                      class="icon-btn"
-                                      @click=${u=>this.startSession(e,u)}
-                                      aria-label=${jsObject.translations.start_session}
-                                  >
-                                      <span
-                                          class="icon z-icon-play brand-light"
-                                      ></span>
-                                  </button>
-                              `:l`
-                                  <span
-                                      class="icon z-icon-check-mark success ${a?"":"invisible"} p--2"
-                                  ></span>
-                              `}
-                        <span class="f-medium">${s}</span>
+                                <button class="icon-btn" @click=${u=>this.startSession(e,u)} aria-label=${jsObject.translations.start_session}>
+                                    <span class="icon z-icon-play brand-light"></span>
+                                </button>
+                            `:l`
+                                <span class="icon z-icon-check-mark success ${a?"":"invisible"} p--2"></span>
+                            `}
+                                <span class="f-medium">${s}</span>
                     </div>
 
                     <div class="list__secondary" data-align-start>
-                        <div
-                            class="d-flex justify-content-center align-items-center gap--2"
-                        >
-                            <span
-                                >${n>0?moment(n).format("MMM Do YY"):jsObject.translations.not_scheduled}</span
-                            >
-                            <button
-                                class="icon-btn"
-                                data-toggle="kebab-menu-${e}"
-                                @click=${this.toggleKebabMenu}
-                            >
-                                <span
-                                    class="icon z-icon-kebab brand-light"
-                                ></span>
+                        <div class="d-flex justify-content-center align-items-center gap--2">
+                            <span>${n>0?moment(n).format("MMM Do YY"):jsObject.translations.not_scheduled}</span>
+                            <button class="icon-btn" data-toggle="kebab-menu-${e}" @click=${this.toggleKebabMenu}>
+                                <span class="icon z-icon-kebab brand-light"></span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="list__tertiary collapse"
-                    ?data-open=${this.openDetailStates[e]}
-                >
+                <div class="list__tertiary collapse" ?data-open=${this.openDetailStates[e]}>
                     <ul class="pt-0 ps-2" role="list" data-brand-light>
                         ${c.map(u=>l`
                                 <li>
@@ -2503,53 +1646,22 @@ ${t}</textarea
                             `)}
                     </ul>
                 </div>
-                <div
-                    class="dropdown-pane"
-                    id="kebab-menu-${e}"
-                    data-dropdown
-                    data-auto-focus="true"
-                    data-position="bottom"
-                    data-alignment=${this.isRtl?"right":"left"}
-                    data-close-on-click="true"
-                    data-close-on-click-inside="true"
-                >
+                <div class="dropdown-pane" id="kebab-menu-${e}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
                         ${this.isGroupLeader()?l`
-                                  <li>
-                                      <button
-                                          class="menu-btn"
-                                          @click=${u=>this.editSession(e,u)}
-                                      >
-                                          <span
-                                              class="icon z-icon-pencil"
-                                          ></span
-                                          >${jsObject.translations.edit_time}
-                                      </button>
-                                  </li>
-                                  <li>
-                                      <button
-                                          class="menu-btn"
-                                          @click=${u=>this.markSessionCompleted(e,u)}
-                                      >
-                                          <span
-                                              class="icon z-icon-pencil"
-                                          ></span
-                                          >${jsObject.translations.mark_completed}
-                                      </button>
-                                  </li>
-                              `:""}
-                        <li>
-                            <button
-                                class="menu-btn"
-                                @click=${u=>this.startSession(e,u)}
-                            >
-                                <span class="icon z-icon-play"></span>${jsObject.translations.start_session}
-                            </button>
-                        </li>
+                                <li><button class="menu-btn" @click=${u=>this.editSession(e,u)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit_time}</button></li>
+                                <li><button class="menu-btn" @click=${u=>this.markSessionCompleted(e,u)}><span class="icon z-icon-pencil"></span>${jsObject.translations.mark_completed}</button></li>
+                            `:""}
+                        <li><button class="menu-btn" @click=${u=>this.startSession(e,u)}><span class="icon z-icon-play"></span>${jsObject.translations.start_session}</button></li>
                     </ul>
                 </div>
             </li>
-        `}renderMemberItem(t){const{name:e}=t;return l` <li>${e}</li> `}render(){var t,e;return l`
+
+        `}renderMemberItem(t){const{name:e}=t;return l`
+            <li>
+                ${e}
+            </li>
+        `}render(){var t,e;return l`
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <div class="dashboard__title">
@@ -2557,194 +1669,136 @@ ${t}</textarea
                         <span class="icon ${this.route.icon}"></span>
                         ${this.hasMultipleTrainingGroups()?l`
                                     ${this.isEditingTitle?l`
-                                                  <div
-                                                      class="switcher switcher-width-20 gap--5"
-                                                  >
-                                                      <div
-                                                          class="position-relative"
-                                                      >
-                                                          <input
-                                                              class="input grow-1"
-                                                              id="training-title-input"
-                                                              type="text"
-                                                              value=${this.training.title||""}
-                                                              @keydown=${this.inputSaveTitle}
-                                                          />
-                                                          <div
-                                                              class="absolute ${this.isRtl?"left":"right"} top bottom d-flex align-items-center mx-0"
-                                                          >
-                                                              <span
-                                                                  class="loading-spinner ${this.isSavingTitle?"active":""}"
-                                                              ></span>
-                                                          </div>
-                                                      </div>
-                                                      <div
-                                                          class="d-flex align-items-center gap--1 grow-0"
-                                                      >
-                                                          <button
-                                                              class="btn tight grow-0 f--1"
-                                                              @click=${this.saveTitle}
-                                                              ?disabled=${this.isSavingTitle}
-                                                              aria-disabled=${this.isSavingTitle?"true":"false"}
-                                                          >
-                                                              ${jsObject.translations.save}
-                                                          </button>
-                                                          <button
-                                                              class="btn outline grow-0 tight f--1"
-                                                              @click=${this.cancelEditingTitle}
-                                                              ?disabled=${this.isSavingTitle}
-                                                          >
-                                                              ${jsObject.translations.cancel}
-                                                          </button>
-                                                      </div>
-                                                  </div>
-                                              `:l`
-                                                  <div
-                                                      class="d-flex align-items-center gap--5"
-                                                  >
-                                                      <h1 class="h3">
-                                                          ${((t=this.training)==null?void 0:t.title)??""}
-                                                      </h1>
-                                                      <button
-                                                          class="icon-btn f-0 brand-light"
-                                                          aria-label=${jsObject.translations.edit}
-                                                          @click=${this.editTitle}
-                                                      >
-                                                          <span
-                                                              class="icon z-icon-pencil"
-                                                          ></span>
-                                                      </button>
-                                                  </div>
-                                              `}
+                                            <div class="switcher switcher-width-20 gap--5">
+                                                <div class="position-relative">
+                                                    <input
+                                                        class="input grow-1"
+                                                        id="training-title-input"
+                                                        type="text"
+                                                        value=${this.training.title||""}
+                                                        @keydown=${this.inputSaveTitle}
+                                                    />
+                                                    <div class="absolute ${this.isRtl?"left":"right"} top bottom d-flex align-items-center mx-0">
+                                                        <span class="loading-spinner ${this.isSavingTitle?"active":""}"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center gap--1 grow-0">
+                                                    <button
+                                                        class="btn tight grow-0 f--1"
+                                                        @click=${this.saveTitle}
+                                                        ?disabled=${this.isSavingTitle}
+                                                        aria-disabled=${this.isSavingTitle?"true":"false"}
+                                                    >
+                                                        ${jsObject.translations.save}
+                                                    </button>
+                                                    <button
+                                                        class="btn outline grow-0 tight f--1"
+                                                        @click=${this.cancelEditingTitle}
+                                                        ?disabled=${this.isSavingTitle}
+                                                    >
+                                                        ${jsObject.translations.cancel}
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        `:l`
+                                            <div class="d-flex align-items-center gap--5">
+                                                <h1 class="h3">${((t=this.training)==null?void 0:t.title)??""}</h1>
+                                                <button
+                                                    class="icon-btn f-0 brand-light"
+                                                    aria-label=${jsObject.translations.edit}
+                                                    @click=${this.editTitle}
+                                                >
+                                                    <span class="icon z-icon-pencil"></span>
+                                                </button>
+                                            </div>
+                                        `}
                                 </div>
                             `:l`
-                                  <h1 class="h3">${this.route.translation}</h1>
-                              `}
+                                <h1 class="h3">${this.route.translation}</h1>
+                            `}
                     </div>
                     ${this.isEditingTitle?"":l`
-                              <button
-                                  class="icon-btn f-2 brand-light"
-                                  aria-label=${jsObject.translations.create_training_group}
-                                  @click=${this.createTraining}
-                              >
-                                  <span class="icon z-icon-plus"></span>
-                              </button>
-                          `}
+                            <button
+                                class="icon-btn f-2 brand-light"
+                                aria-label=${jsObject.translations.create_training_group}
+                                @click=${this.createTraining}
+                            >
+                                <span class="icon z-icon-plus"></span>
+                            </button>
+                        `}
                 </div>
                 <dash-header-right></dash-header-right>
                 <div class="dashboard__main content">
-                    ${this.loading?l`<div class="p-1">
-                              <span class="loading-spinner active"></span>
-                          </div>`:""}
+                    ${this.loading?l`<div class="p-1"><span class="loading-spinner active"></span></div>`:""}
                     ${!this.loading&&this.error?l`
-                              <div class="p-1">
-                                  <h3 class="f-1 bold uppercase">
-                                      ${jsObject.translations.error}
-                                  </h3>
-                                  ${this.error==="bad-plan-code"?l`
-                                            <p>
-                                                ${jsObject.translations.bad_code}
-                                            </p>
-                                            <p>
-                                                ${jsObject.translations.join_key}:
-                                                ${this.code}
-                                            </p>
-                                        `:""}
-                                  ${this.error==="not-authorized"?l`
-                                            <p>
-                                                ${jsObject.translations.not_authorized}
-                                            </p>
-                                        `:""}
-                              </div>
-                          `:""}
+                        <div class="p-1">
+                            <h3 class="f-1 bold uppercase">${jsObject.translations.error}</h3>
+                            ${this.error==="bad-plan-code"?l`
+                                    <p>${jsObject.translations.bad_code}</p>
+                                    <p>${jsObject.translations.join_key}: ${this.code}</p>
+                                `:""}
+                            ${this.error==="not-authorized"?l`
+                                    <p>${jsObject.translations.not_authorized}</p>
+                                `:""}
+                        </div>
+                        `:""}
                     ${this.showTeaser&&!this.loading&&!this.error?l`
-                              <div class="p-1">
-                                  <div class="dash-menu__list-item">
-                                      <div
-                                          class="dash-menu__icon-area | stack--5"
-                                      >
-                                          <span
-                                              class="icon z-icon-locked dash-menu__list-icon"
-                                          ></span>
-                                      </div>
-                                      <div
-                                          class="dash-menu__text-area | switcher | switcher-width-20"
-                                      >
-                                          <div>
-                                              <h3 class="f-1 bold uppercase">
-                                                  ${jsObject.translations.my_training_locked}
-                                              </h3>
-                                              <p>
-                                                  ${jsObject.translations.plan_a_training_explanation}
-                                              </p>
-                                          </div>
-                                          <button
-                                              class="dash-menu__view-button btn tight"
-                                              @click=${this.createTraining}
-                                          >
-                                              ${jsObject.translations.unlock}
-                                          </button>
-                                      </div>
+                            <div class="p-1">
+                              <div class="dash-menu__list-item">
+                                <div class="dash-menu__icon-area | stack--5">
+                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                                </div>
+                                <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                  <div>
+                                    <h3 class="f-1 bold uppercase">${jsObject.translations.my_training_locked}</h3>
+                                    <p>${jsObject.translations.plan_a_training_explanation}</p>
                                   </div>
+                                  <button class="dash-menu__view-button btn tight" @click=${this.createTraining}>
+                                    ${jsObject.translations.unlock}
+                                  </button>
+                                </div>
                               </div>
-                          `:l`
-                              <ul class="list">
-                                  ${!this.loading&&this.sessions&&this.sessions.length>0?et(this.sessions,s=>s.id,this.renderListItem):""}
-                              </ul>
-                          `}
+                            </div>
+                        `:l`
+                            <ul class="list">
+                                ${!this.loading&&this.sessions&&this.sessions.length>0?et(this.sessions,s=>s.id,this.renderListItem):""}
+                            </ul>
+                        `}
                 </div>
                 <div class="dashboard__secondary stack">
                     ${this.loading&&!this.error?l`<span class="loading-spinner active"></span>`:""}
                     ${!this.loading&&!this.error&&this.code!=="teaser"?l`
-                              <div class="card | group-members | grow-0">
-                                  <button
-                                      class="f-0 f-medium d-flex align-items-center gap--2 black"
-                                  >
-                                      <span
-                                          class="icon z-icon-group brand-light"
-                                      ></span>
-                                      ${jsObject.translations.group_members}
-                                      (${this.groupMembers.length})
-                                  </button>
-                                  <div class="collapse" data-state="open">
-                                      <!-- The functionality of the .collapse class needs to be refactored from dash-progress.js toggleDetails function to be re-used here -->
-                                      ${!this.loading&&this.groupMembers&&this.groupMembers.length>0?l`
+                                <div class="card | group-members | grow-0">
+                                    <button class="f-0 f-medium d-flex align-items-center gap--2 black">
+                                        <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
+                                    </button>
+                                    <div class="collapse" data-state="open">
+                                        <!-- The functionality of the .collapse class needs to be refactored from dash-progress.js toggleDetails function to be re-used here -->
+                                        ${!this.loading&&this.groupMembers&&this.groupMembers.length>0?l`
                                                 <ol class="ps-1">
                                                     ${et(this.groupMembers,s=>s.id,this.renderMemberItem)}
                                                 </ol>
                                             `:""}
-                                  </div>
-                                  <button
-                                      @click=${this.inviteFriends}
-                                      class="btn brand tight mt--2"
-                                  >
-                                      ${jsObject.translations.invite_friends}
-                                  </button>
-                              </div>
-                          `:""}
+                                    </div>
+                                    <button
+                                        @click=${this.inviteFriends}
+                                        class="btn brand tight mt--2"
+                                    >
+                                        ${jsObject.translations.invite_friends}
+                                    </button>
+                                </div>
+                            `:""}
                     <dash-cta></dash-cta>
                 </div>
             </div>
-            <div
-                class="reveal small"
-                id="edit-session-modal"
-                data-reveal
-                data-v-offset="20"
-            >
-                <button
-                    class="ms-auto close-btn"
-                    data-close
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                >
-                    <span class="icon z-icon-close"></span>
+            <div class="reveal small" id="edit-session-modal" data-reveal data-v-offset="20">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
+                        <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
                     <div class="d-flex gap-0 flex-wrap justify-content-center">
                         <h2>${jsObject.translations.edit}:</h2>
-                        <h3 class="h2 brand-light">
-                            ${(e=this.sessionToEdit)==null?void 0:e.name}
-                        </h3>
+                        <h3 class="h2 brand-light">${(e=this.sessionToEdit)==null?void 0:e.name}</h3>
                     </div>
                     <div class="cluster justify-content-center gapy-0">
                         <input
@@ -2753,7 +1807,7 @@ ${t}</textarea
                             name="date"
                             class="fit-content m0"
                             onclick="this.showPicker()"
-                        />
+                        >
                         <input
                             id="session-time-picker"
                             type="time"
@@ -2763,11 +1817,9 @@ ${t}</textarea
                             max="23:55"
                             step="300"
                             onclick="this.showPicker()"
-                        />
+                        >
                     </div>
-                    <div
-                        class="d-flex align-items-center justify-content-center gap--1"
-                    >
+                    <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
                             class="btn tight"
                             @click=${this.saveSession}
@@ -2775,9 +1827,7 @@ ${t}</textarea
                             aria-disabled=${this.isSavingSession?"true":"false"}
                         >
                             ${jsObject.translations.save}
-                            <span
-                                class="loading-spinner ${this.isSavingSession?"active":""}"
-                            ></span>
+                            <span class="loading-spinner ${this.isSavingSession?"active":""}"></span>
                         </button>
                         <button
                             class="btn outline tight"
@@ -2799,25 +1849,11 @@ ${t}</textarea
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
                     <div class="icon-btn-group">
-                        <button
-                            class="${this.view==="list"?"selected":""}"
-                            title=${jsObject.translations.list}
-                            @click=${()=>this.switchView("list")}
-                        >
-                            <span
-                                class="icon z-icon-list"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view==="list"?"selected":""}" title=${jsObject.translations.list} @click=${()=>this.switchView("list")}>
+                            <span class="icon z-icon-list" aria-hidden="true"></span>
                         </button>
-                        <button
-                            class="${this.view==="grid"?"selected":""}"
-                            title=${jsObject.translations.grid}
-                            @click=${()=>this.switchView("grid")}
-                        >
-                            <span
-                                class="icon z-icon-grid"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view==="grid"?"selected":""}" title=${jsObject.translations.grid} @click=${()=>this.switchView("grid")}>
+                            <span class="icon z-icon-grid" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>
@@ -2832,7 +1868,7 @@ ${t}</textarea
                                 ></training-link>
                             `)}
                     </div>
-                </div>
+                    </div>
                 <div class="dashboard__secondary">
                     <dash-cta></dash-cta>
                 </div>
@@ -2843,12 +1879,7 @@ ${t}</textarea
                 <launch-course></launch-course>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-header-right",Ko);class Qo extends k{static get properties(){return{displayOn:{type:String}}}constructor(){super(),this.displayOn="large"}toggleSidebar(){const t=new CustomEvent("toggle-dashboard-sidebar",{bubbles:!0});this.dispatchEvent(t)}render(){return l`
-            <button
-                class="btn f-0 tight dashboard__sidebar-toggle break-${this.displayOn}"
-                @click=${this.toggleSidebar}
-            >
-                ${jsObject.translations.menu}
-            </button>
+            <button class="btn f-0 tight dashboard__sidebar-toggle break-${this.displayOn}" @click=${this.toggleSidebar}>${jsObject.translations.menu}</button>
         `}createRenderRoot(){return this}}customElements.define("dash-sidebar-toggle",Qo);class Ne extends Vn(k){static get properties(){return{href:{type:String},class:{type:String},as:{type:String},locked:{type:Boolean},completed:{type:Boolean},disableNavigate:{type:Boolean},icon:{type:String},text:{type:String},explanation:{type:String}}}constructor(){super(),this.href="",this.class="",this.as="",this.icon="",this.text="",this.explanation="",this.locked=!1,this.completed=!1,this.disableNavigate=!1}handleClick(t){this.as==="nav"&&(t.preventDefault(),this.navigate(this.href)),this.as!=="link"&&this.as==="button"&&t.preventDefault()}printBool(t){return t?"true":"false"}render(){return l`
             <a
                 href=${this.href}
@@ -2861,7 +1892,9 @@ ${t}</textarea
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>
             </a>
-        `}createRenderRoot(){return this}}customElements.define("nav-link",Ne);class Xo extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l` <span>${t}</span> `)}getIcon(){return this.locked?this.icon+"-locked":this.icon}render(){return l`
+        `}createRenderRoot(){return this}}customElements.define("nav-link",Ne);class Xo extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l`
+            <span>${t}</span>
+        `)}getIcon(){return this.locked?this.icon+"-locked":this.icon}render(){return l`
             <a
                 href=${this.href}
                 class="card-btn grid-link"
@@ -2874,7 +1907,9 @@ ${t}</textarea
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
             </a>
-        `}}customElements.define("grid-link",Xo);class tl extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l` <span>${t}</span> `)}getIcon(){return this.locked?this.icon+"-locked":this.icon}render(){return l`
+        `}}customElements.define("grid-link",Xo);class tl extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l`
+            <span>${t}</span>
+        `)}getIcon(){return this.locked?this.icon+"-locked":this.icon}render(){return l`
             <div
                 class="dash-menu__list-item"
                 ?data-locked=${this.locked}
@@ -2884,31 +1919,20 @@ ${t}</textarea
                 @click=${this.handleClick}
             >
                 <div class="dash-menu__icon-area | stack--5">
-                    <span
-                        class="icon ${this.getIcon()} dash-menu__list-icon"
-                    ></span>
+                    <span class="icon ${this.getIcon()} dash-menu__list-icon"></span>
                 </div>
-                <div
-                    class="dash-menu__text-area | switcher | switcher-width-20"
-                >
+                <div class="dash-menu__text-area | switcher | switcher-width-20">
                     <div>
                         <h3 class="f-1 bold uppercase">${this.text}</h3>
                         <p>${this.explanation}</p>
                     </div>
                     ${this.completed?l`
-                              <div class="grow-0">
-                                  <span
-                                      class="icon z-icon-check-mark grow-0 | dash-menu__list-success"
-                                  ></span>
-                              </div>
-                          `:""}
+                            <div class="grow-0"><span class="icon z-icon-check-mark grow-0 | dash-menu__list-success"></span></div>
+                        `:""}
                 </div>
             </div>
         `}}customElements.define("list-link",tl);class el extends k{static get properties(){return{translations:{type:Object},urls:{type:Object},position:{type:String},asLink:{type:Boolean}}}constructor(){super(),typeof jsObject<"u"&&(this.translations=jsObject.translations,this.urls=jsObject.urls),this.position="bottom";const e=document.querySelector("html").dataset.dir;this.isRtl=e==="rtl"}updated(){jQuery(document).foundation()}render(){return l`
-            <button
-                class="${this.asLink?"btn dark tight nav__button":" btn  tight"}"
-                data-toggle="launch-course-panel"
-            >
+            <button class="${this.asLink?"btn dark tight nav__button":" btn  tight"}" data-toggle="launch-course-panel">
                 ${this.translations.launch_course}
             </button>
             <div
@@ -2921,27 +1945,9 @@ ${t}</textarea
                 data-alignment=${this.isRtl?"right":"left"}
             >
                 <ul>
-                    <li>
-                        <a
-                            class="menu-btn no-wrap"
-                            href="${this.urls.launch_ten_session_course}"
-                            ><span class="icon z-icon-course"></span>${this.translations.ten_session_course}</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="menu-btn no-wrap"
-                            href="${this.urls.launch_twenty_session_course}"
-                            ><span class="icon z-icon-course"></span>${this.translations.twenty_session_course}</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            class="menu-btn no-wrap"
-                            href="${this.urls.launch_intensive_session_course}"
-                            ><span class="icon z-icon-course"></span>${this.translations.three_day_intensive_course}</a
-                        >
-                    </li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_ten_session_course}"><span class="icon z-icon-course"></span>${this.translations.ten_session_course}</a></li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_twenty_session_course}"><span class="icon z-icon-course"></span>${this.translations.twenty_session_course}</a></li>
+                    <li><a class="menu-btn no-wrap" href="${this.urls.launch_intensive_session_course}"><span class="icon z-icon-course"></span>${this.translations.three_day_intensive_course}</a></li>
                 </ul>
             </div>
         `}createRenderRoot(){return this}}customElements.define("launch-course",el);class sl extends k{constructor(){super();C(this,"addressCallback",e=>{e.features.length<1?this.locations=-1:this.locations=e.features});C(this,"processLocation",debounce(getAddressSuggestions(this.addressCallback,jsObject.map_key)));this.userProfile={},this.locations=[],this.infosOpen=[]}static get properties(){return{userProfile:{type:Object},loading:{type:Boolean,attribute:!1},locations:{type:Array,attribute:!1},infosOpen:{type:Array,attribute:!1}}}firstUpdated(){this.nameInput=this.renderRoot.querySelector("#full_name"),this.phoneInput=this.renderRoot.querySelector("#phone"),this.emailInput=this.renderRoot.querySelector("#email"),this.preferredEmailInput=this.renderRoot.querySelector("#communications_email"),this.cityInput=this.renderRoot.querySelector("#city"),this.prefferedLanguageInput=this.renderRoot.querySelector("#preferred_language"),this.addressResultsContainer=this.renderRoot.querySelector("#address_results")}submitProfileForm(e){e.preventDefault();const s=this.nameInput.value,n=this.emailInput.value,a=this.preferredEmailInput.value,r=this.phoneInput.value,o=this.prefferedLanguageInput.value,c={name:s,phone:r,email:n,communications_email:a,preferred_language:o};c.location_grid_meta=getLocationGridFromMapbox(this.mapboxSelectedId,this.userProfile.location),this.loading=!0,fetch(jsObject.rest_endpoint+"/profile",{method:"POST",body:JSON.stringify(c),headers:{"X-WP-Nonce":jsObject.nonce}}).then(d=>d.json()).then(d=>{const u=new CustomEvent("user-profile:change",{bubbles:!0,detail:d});this.dispatchEvent(u);const p=new CustomEvent("user-state:change",{bubbles:!0});this.dispatchEvent(p)}).catch(d=>{console.error(d)}).finally(()=>{this.loading=!1})}selectAddress(e){const s=e.target.id,n=e.target.dataset.placeName;this.cityInput.value=n,this.mapboxSelectedId=s,this.locations=[]}_toggleInfo(e){if(this.infosOpen.includes(e)){const s=[...this.infosOpen];s.splice(s.indexOf(e),1),this.infosOpen=s}else this.infosOpen=[...this.infosOpen,e]}isSSOUser(){return this.userProfile.sso_identities!==""}render(){var e;return l`
@@ -3017,25 +2023,24 @@ ${t}</textarea
                         </div>
                     </div>
                 </div>
-                    ${Array.isArray(this.locations)?"":l` ${jsObject.translations.no_locations} `}
+                    ${Array.isArray(this.locations)?"":l`
+                            ${jsObject.translations.no_locations}
+                        `}
                     ${Array.isArray(this.locations)&&this.locations.length>0?l`
-                                  <div
-                                      id="address_results"
-                                      class="stack--3 fit-content mx-auto my-0"
-                                  >
-                                      ${this.locations.map(s=>l`
-                                              <div
-                                                  class="btn rounded"
-                                                  role="button"
-                                                  id="${s.id}"
-                                                  data-place-name="${s.place_name}"
-                                                  @click=${this.selectAddress}
-                                              >
-                                                  ${s.place_name}
-                                              </div>
-                                          `)}
-                                  </div>
-                              `:""}
+                            <div id="address_results" class="stack--3 fit-content mx-auto my-0">
+                                ${this.locations.map(s=>l`
+                                    <div
+                                        class="btn rounded"
+                                        role="button"
+                                        id="${s.id}"
+                                        data-place-name="${s.place_name}"
+                                        @click=${this.selectAddress}
+                                    >
+                                        ${s.place_name}
+                                    </div>
+                                `)}
+                            </div>
+                        `:""}
                 </div>
 
                 <div>
@@ -3044,10 +2049,7 @@ ${t}</textarea
                         <select class="input" name="preferred_language" id="preferred_language">
 
                         ${Object.values(jsObject.languages).map(s=>l`
-                                <option
-                                    value=${s.code}
-                                    ?selected=${this.userProfile.preferred_language===s.code}
-                                >
+                                <option value=${s.code} ?selected=${this.userProfile.preferred_language===s.code}>
                                     ${s.nativeName} - ${s.enDisplayName}
                                 </option>
                             `)}
@@ -3089,14 +2091,10 @@ ${t}</textarea
                     ${t.map(s=>s?l`
                             <div class="progress-bar-stage">
                                 ${s.map(n=>l`
-                                        <div
-                                            class="progress-bar-item ${this.slide.key===n?"active":""}"
-                                        ></div>
-                                    `)}
+                                    <div class="progress-bar-item ${this.slide.key===n?"active":""}"></div>
+                                `)}
                             </div>
-                        `:l`<div
-                                class="progress-bar-divider"
-                            ></div>`)}
+                        `:l`<div class="progress-bar-divider"></div>`)}
                 </div>
             </div>
         `}renderContent(t=[],e=!1,s=!1){return t.map((n,a)=>e&&a===0?l`<p><strong>${n}</strong></p>`:Array.isArray(n)?l`
@@ -3116,31 +2114,18 @@ ${t}</textarea
                         class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 f-0 bypass-nav-click d-flex gap--2"
                         @click=${this.openMenu}
                     >
-                        <span class="icon z-icon-info"></span
-                        ><span>${jsObject.translations.view_activity}</span>
+                        <span class="icon z-icon-info"></span><span>${jsObject.translations.view_activity}</span>
                     </button>
-                    <h2 class="title text-center" data-small>
-                        ${this.slide.center[0]} ${this.slide.length}
-                    </h2>
+                    <h2 class="title text-center" data-small>${this.slide.center[0]} ${this.slide.length}</h2>
                     <div class="two-column right">
                         <div>
-                            <div
-                                class="activity-card | stack--2"
-                                data-expanded-padding
-                            >
+                            <div class="activity-card | stack--2" data-expanded-padding>
                                 ${this.renderContent(this.slide.left,!0)}
                             </div>
                         </div>
                         <div class="content-area">
                             <div class="stack center | text-center">
-                                <div class="qr-code">
-                                    <a
-                                        href="${this.slide.right[0]}"
-                                        target="_blank"
-                                        class="bypass-nav-click"
-                                        ><img src="${this.slide.right[1]}"
-                                    /></a>
-                                </div>
+                                <div class="qr-code"><a href="${this.slide.right[0]}" target="_blank" class="bypass-nav-click"><img src="${this.slide.right[1]}" /></a></div>
                                 <p>${this.slide.right[2]}</p>
                             </div>
                         </div>
@@ -3152,12 +2137,7 @@ ${t}</textarea
                     data-off-canvas
                     data-transition="overlap"
                 >
-                    <button
-                        class="close-btn | ms-auto absolute ${this.dir==="rtl"?"left":"right"} top my--2 mx-1 f-0 invert"
-                        aria-label=${jsObject.translations.close}
-                        type="button"
-                        data-close
-                    >
+                    <button class="close-btn | ms-auto absolute ${this.dir==="rtl"?"left":"right"} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
                         <span class="icon z-icon-close"></span>
                     </button>
 
@@ -3185,10 +2165,7 @@ ${t}</textarea
             <div class="slides-card">
                 ${this.renderProgressBar()}
                 <div class="cover-slide">
-                    <h2 class="title text-center">
-                        ${this.slide.center[0]??""}
-                        ${this.slide.length??""}
-                    </h2>
+                    <h2 class="title text-center">${this.slide.center[0]??""} ${this.slide.length??""}</h2>
                     <div class="center w-70 grow-1 justify-content-center">
                         <div class="stack--2 activity-card">
                             ${this.renderContent(this.slide.left,!0)}
@@ -3202,9 +2179,7 @@ ${t}</textarea
                 <div class="two-column left">
                     <div>
                         <div class="title-area">
-                            <div class="title-icon">
-                                <span class="icon z-icon-phone"></span>
-                            </div>
+                            <div class="title-icon"><span class="icon z-icon-phone"></span></div>
                             <h2 class="title">${this.slide.left[0]}</h2>
                         </div>
                     </div>
@@ -3220,12 +2195,7 @@ ${t}</textarea
                                     <img src="${this.slide.right[2]}" />
                                 </a>
                             </div>
-                            <p>
-                                ${this.slide.right[3]}
-                                <span style="font-weight:bold;"
-                                    >${this.slide.right[4]}</span
-                                >
-                            </p>
+                            <p>${this.slide.right[3]} <span style="font-weight:bold;">${this.slide.right[4]}</span></p>
                         </div>
                     </div>
                 </div>
@@ -3238,9 +2208,7 @@ ${t}</textarea
                             <p>${this.slide.center[0]}</p>
                         </div>
                         <div class="center">
-                            <p>
-                                <img src="${this.slide.center[1]??""}" />
-                            </p>
+                          <p><img src="${this.slide.center[1]??""}" /></p>
                         </div>
                     </div>
                 </div>
@@ -3256,9 +2224,7 @@ ${t}</textarea
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
-                                <span class="subtitle"
-                                    >${this.slide.length??""}</span
-                                >
+                                <span class="subtitle">${this.slide.length??""}</span>
                             </div>
                         </div>
                     </div>
@@ -3273,13 +2239,9 @@ ${t}</textarea
             <div class="slides-card">
                 <div class="cover-page">
                     <div class="center stack | text-center w-50">
-                        <div class="w-30">
-                            <img src="${this.slide.center[0]}" />
-                        </div>
+                        <div class="w-30"><img src="${this.slide.center[0]}" /></div>
                         <p>${this.slide.center[1]}</p>
-                        <div class="w-30">
-                            <img src="${this.slide.center[2]}" />
-                        </div>
+                        <div class="w-30"><img src="${this.slide.center[2]}" /></div>
                         <p>${this.slide.center[3]}</p>
                     </div>
                 </div>
@@ -3291,20 +2253,12 @@ ${t}</textarea
                     <div>
                         <div class="cover-slide center text-center">
                             <p><strong>${this.slide.left[0]}</strong></p>
-                            <div class="mw-60">
-                                <img src="${this.slide.left[1]}" />
-                            </div>
+                            <div class="mw-60"><img src="${this.slide.left[1]}" /></div>
                         </div>
                     </div>
                     <div class="content-area">
                         <div class="stack center | text-center">
-                            <div class="qr-code">
-                                <a
-                                    href="${this.slide.right[0]}"
-                                    target="_blank"
-                                    ><img src="${this.slide.right[1]}"
-                                /></a>
-                            </div>
+                            <div class="qr-code"><a href="${this.slide.right[0]}" target="_blank"><img src="${this.slide.right[1]}" /></a></div>
                             <p>${this.slide.right[2]}</p>
                         </div>
                     </div>
@@ -3314,35 +2268,19 @@ ${t}</textarea
             <div class="slides-card">
                 ${this.renderProgressBar()}
                 <div class="cover-slide">
-                    <h2 class="title text-center" data-small>
-                        ${this.slide.center[0]}
-                    </h2>
+                    <h2 class="title text-center" data-small>${this.slide.center[0]}</h2>
                     <div class="two-column middle" data-align-start>
                         <div>
                             <div class="stack align-items-center">
                                 <p><strong>${this.slide.left[0]}</strong></p>
-                                <div class="qr-code">
-                                    <a
-                                        href="${this.slide.left[1]}"
-                                        target="_blank"
-                                        ><img src="${this.slide.left[2]}"
-                                    /></a>
-                                </div>
+                                <div class="qr-code"><a href="${this.slide.left[1]}" target="_blank"><img src="${this.slide.left[2]}" /></a></div>
                                 <p>${this.slide.left[3]}</p>
                             </div>
                         </div>
                         <div>
                             <div class="stack align-items-center">
-                                <p>
-                                    <strong>${this.slide.right[0]}</strong>
-                                </p>
-                                <div class="qr-code">
-                                    <a
-                                        href="${this.slide.right[1]}"
-                                        target="_blank"
-                                        ><img src="${this.slide.right[2]}"
-                                    /></a>
-                                </div>
+                                <p><strong>${this.slide.right[0]}</strong></p>
+                                <div class="qr-code"><a href="${this.slide.right[1]}" target="_blank"><img src="${this.slide.right[2]}" /></a></div>
                                 <p>${this.slide.right[3]}</p>
                             </div>
                         </div>
@@ -3357,9 +2295,7 @@ ${t}</textarea
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span
-                                        class="icon z-icon-obey-concept"
-                                    ></span>
+                                    <span class="icon z-icon-obey-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[0]}</h2>
                             </div>
@@ -3372,9 +2308,7 @@ ${t}</textarea
                         <div>
                             <div class="title-area">
                                 <div class="title-icon">
-                                    <span
-                                        class="icon z-icon-share-concept"
-                                    ></span>
+                                    <span class="icon z-icon-share-concept"></span>
                                 </div>
                                 <h2 class="title">${this.slide.left[1]}</h2>
                             </div>
@@ -3415,9 +2349,7 @@ ${t}</textarea
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
-                                <span class="subtitle"
-                                    >${this.slide.length}</span
-                                >
+                                <span class="subtitle">${this.slide.length}</span>
                             </div>
                         </div>
                     </div>
@@ -3452,12 +2384,8 @@ ${t}</textarea
                 <div class="slides-card">
                     ${this.renderProgressBar()}
                     <div class="cover-slide | title-slide | text-center">
-                        <div
-                            class="stack-1 | w-100 grow-1 justify-content-center"
-                        >
-                            <div class="center | w-40">
-                                <img src=${this.slide.center[0]} />
-                            </div>
+                        <div class="stack-1 | w-100 grow-1 justify-content-center">
+                            <div class="center | w-40"><img src=${this.slide.center[0]} /></div>
                             <h2>${this.slide.center[1]}</h2>
                         </div>
                     </div>
@@ -3465,20 +2393,19 @@ ${t}</textarea
             </div>
         `}}customElements.define("title-slide",vl);class bl extends z{static get properties(){return{slide:{type:Object},showButtons:{type:Boolean},id:{type:String},scriptUrl:{type:String,attribute:!1},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(document).foundation(),this.offCanvasId="informationOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,this.loadScriptIntoFrame()}openMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}loadScriptIntoFrame(){const t=this.slide.script_id,e=jsObject.language,s=new URL(location.href),n=new URL(s.origin);n.pathname=[e,"app","script"].join("/"),n.searchParams.append("s",t),this.scriptUrl=n.href}render(){return l`
             <div class="video-slide">
+
                 <button
                     type="button"
                     class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m-0 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
-                    <span class="icon z-icon-info"></span
-                    ><span>${jsObject.translations.view_script}</span>
+                    <span class="icon z-icon-info"></span><span>${jsObject.translations.view_script}</span>
                 </button>
 
                 <div class="widescreen flex-video">
-                    <iframe
-                        src="${this.slide.center[0]}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        frameborder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
+                    <iframe src="${this.slide.center[0]}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture"
                     >
                     </iframe>
                 </div>
@@ -3491,12 +2418,7 @@ ${t}</textarea
                 data-off-canvas
                 data-transition="overlap"
             >
-                <button
-                    class="close-btn | ms-auto m--1"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+                <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
 
@@ -3518,9 +2440,7 @@ ${t}</textarea
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
-                                <span class="subtitle"
-                                    >${this.slide.length??""}</span
-                                >
+                                <span class="subtitle">${this.slide.length??""}</span>
                             </div>
                         </div>
                     </div>
@@ -3542,9 +2462,7 @@ ${t}</textarea
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>
-                                <span class="subtitle"
-                                    >${this.slide.length}</span
-                                >
+                                <span class="subtitle">${this.slide.length}</span>
                             </div>
                         </div>
                     </div>
@@ -3557,48 +2475,28 @@ ${t}</textarea
             </div>
         `}}customElements.define("look-back-slide",$l);const bi=["slideshow","guide"];class wl extends k{static get properties(){return{languageCode:{type:String},homeUrl:{type:String},assetsPath:{type:String},zumeSessions:{attribute:!1},menu:{attribute:!1},lessonIndex:{attribute:!1},sessionKey:{attribute:!1},view:{attribute:!1},linkNodes:{attribute:!1},showIndex:{attribute:!1}}}constructor(){super(),this.handleSessionLink=this.handleSessionLink.bind(this),this.handleHistoryPopState=this.handleHistoryPopState.bind(this)}connectedCallback(){super.connectedCallback();const t=new URL(window.location.href),{sessions:e,menu:s}=this.getZumeSessions(t);this.zumeSessions=e,this.menu=s;const n=this.getLessonIndex(t);this.lessonIndex=n,this.sessionKey="",this.view=this.getView(t),this.changeSession(n,!1,e),window.addEventListener("popstate",this.handleHistoryPopState)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("popstate",this.handleHistoryPopState)}firstUpdated(){document.querySelectorAll(".language-selector").forEach(function(e){e.addEventListener("click",()=>{const s=e.dataset.value,n=new URL(location.href),a=n.pathname.substring(1).split("/");let r="";a.length>0&&jsObject.zume_languages.includes(a[0])?r=a.slice(1).join("/"):r=a.join("/"),s!=="en"?r="/"+s+"/"+r:r="/"+r,r+=n.search,location.href=r})})}getView(t){if(t.searchParams.has("view")){const e=t.searchParams.get("view");if(bi.includes(e))return e}else return"slideshow"}getLessonIndex(t){if(t.searchParams.has("session")){const e=t.searchParams.get("session");if(e==="index")return"index";const s=Number(e);return Number.isInteger(s)?s-1:0}else return 0}getZumeSessions(t){const e=t.searchParams.get("type")||"10";this.type=e;let s,n;switch(e){case"10":s=zume10Sessions,n=zume10SessionsMenu;break;case"20":s=zume20Sessions,n=zume20SessionsMenu;break;case"intensive":s=zumeIntensiveSessions,n=zumeIntensiveSessionsMenu;break;default:s=zume10Sessions,n=zume10SessionsMenu;break}return{sessions:s,menu:n}}handleSessionLink(t){const e=t.target,s=Number(e.dataset.sessionNumber);this.lessonIndex=s,this.showIndex===!0&&(this.showIndex=!1),this.changeSession(this.lessonIndex),this.closeMenu()}handleSubSectionLink(t,e){this.lessonIndex=t,this.showIndex===!0&&(this.showIndex=!1),this.changeSession(this.lessonIndex),this.sessionKey=e,this.closeMenu()}getNextSession(){this.lessonIndex+=1,this.changeSession(this.lessonIndex)}getPreviousSession(){this.lessonIndex-=1,this.changeSession(this.lessonIndex)}changeSession(t,e=!0,s=null){if(t==="index"){this.showIndex=!0;return}else this.showIndex=!1;const n=s||this.zumeSessions;let a=t;t<0&&(a=0),t>n.length-1&&(a=n.length-1),this.lessonIndex=a,this.session=n[a],e&&this.pushHistory()}pushHistory(){const t=this.lessonIndex,e=this.view,s=new URL(window.location.href);t!==null&&Number.isInteger(t)&&s.searchParams.set("session",t+1),e&&s.searchParams.set("view",e),window.history.pushState(null,null,s.href)}handleHistoryPopState(){var n;const t=new URL(location.href),e=t.searchParams.has("session")?t.searchParams.get("session"):null,s=t.searchParams.get("view");(n=document.querySelector(".js-off-canvas-overlay"))==null||n.classList.remove("is-visible"),Number.isInteger(Number(e))&&(this.lessonIndex=e-1,this.changeSession(this.lessonIndex,!1)),e==="index"&&(this.lessonIndex="index",this.changeSession("index",!1)),s&&bi.includes(s)&&(this.view=s)}getSessionSections(){return this.session?this.session:[]}switchViews(t=!0){this.view==="guide"?this.view="slideshow":this.view="guide",t===!0&&this.pushHistory()}openMenu(){const t=this.querySelector("#offCanvas");jQuery(t).foundation("open")}closeMenu(){const t=this.querySelector("#offCanvas");jQuery(t).foundation("close")}render(){this.showIndex;const t=this.type==="intensive"?"container-xsm":"container-sm";return l`
             ${this.showIndex?l`
-                      <div class="course-index | bg-brand-gradient">
-                          <img
-                              src="${jsObject.images_url}/zume-training-logo-white.svg"
-                              alt="Zume Logo"
-                              class="mx-auto w-70 py-1"
-                          />
-                          <div class="${t}" data-max-width="750">
-                              <div class="grid | grid-min-8rem gutter0">
-                                  ${this.zumeSessions.map((e,s)=>l`
-                                          <button
-                                              class="card-btn | m--2 gap--3 aspect-1 justify-content-evenly"
-                                              data-session-number=${s}
-                                              @click=${this.handleSessionLink}
-                                          >
-                                              <h2 class="f-0 bold">
-                                                  ${jsObject.translations.session}
-                                              </h2>
-                                              <p class="f-3 bold lh-sm">
-                                                  ${s+1}
-                                              </p>
-                                              <span
-                                                  class="icon z-icon-course brand-light f-3"
-                                              ></span>
-                                          </button>
-                                      `)}
-                              </div>
-                          </div>
-                      </div>
-                  `:""}
+                    <div class="course-index | bg-brand-gradient">
+                        <img src="${jsObject.images_url}/zume-training-logo-white.svg" alt="Zume Logo" class="mx-auto w-70 py-1" />
+                        <div class="${t}" data-max-width="750">
+                            <div class="grid | grid-min-8rem gutter0">
+                                ${this.zumeSessions.map((e,s)=>l`
+                                    <button
+                                        class="card-btn | m--2 gap--3 aspect-1 justify-content-evenly"
+                                        data-session-number=${s}
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        <h2 class="f-0 bold">${jsObject.translations.session}</h2>
+                                        <p class="f-3 bold lh-sm">${s+1}</p>
+                                        <span class="icon z-icon-course brand-light f-3"></span>
+                                    </button>
+                                `)}
+                            </div>
+                        </div>
+                    </div>
+                `:""}
 
-            <nav
-                class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir==="rtl"?"position-right":"position-left"} justify-content-between py-1"
-                id="offCanvas"
-                data-off-canvas
-                data-transition="overlap"
-            >
-                <button
-                    class="ms-auto close-btn mb-0"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
+            <nav class="bg-white px-0 text-center | presenter-menu off-canvas ${this.dir==="rtl"?"position-right":"position-left"} justify-content-between py-1" id="offCanvas" data-off-canvas data-transition="overlap">
+                <button class="ms-auto close-btn mb-0" aria-label=${jsObject.translations.close} type="button" data-close>
                     <span class="icon z-icon-close"></span>
                 </button>
                 <div class="stack">
@@ -3606,92 +2504,40 @@ ${t}</textarea
                         <!-- Close button -->
 
                         <!-- Menu -->
-                        <ul
-                            class="vertical menu accordion-menu"
-                            data-accordion-menu
-                            data-submenu-toggle="true"
-                            data-multi-open="false"
-                        >
+                        <ul class="vertical menu accordion-menu" data-accordion-menu data-submenu-toggle="true" data-multi-open="false">
                             ${Object.values(this.menu).map(({title:e,submenu:s},n)=>l`
-                                    <li>
-                                        <a
-                                            class="session-link"
-                                            data-session-number="${n}"
-                                            @click=${this.handleSessionLink}
-                                        >
-                                            ${e}
-                                        </a>
-                                        <ul
-                                            class="menu vertical nested ${this.lessonIndex===n?"is-active":""}"
-                                        >
-                                            ${s.map(({key:a,title:r,length:o})=>l`
-                                                    <a
-                                                        class="session-link"
-                                                        data-subitem
-                                                        href=${`#${a}`}
-                                                        @click=${()=>this.handleSubSectionLink(n,a)}
-                                                    >
-                                                        <span>${r}</span>
-                                                        <span>${o}</span>
-                                                    </a>
-                                                `)}
-                                        </ul>
-                                    </li>
-                                `)}
+                                <li>
+                                    <a
+                                        class="session-link"
+                                        data-session-number="${n}"
+                                        @click=${this.handleSessionLink}
+                                    >
+                                        ${e}
+                                    </a>
+                                    <ul class="menu vertical nested ${this.lessonIndex===n?"is-active":""}">
+                                        ${s.map(({key:a,title:r,length:o})=>l`
+                                                <a
+                                                    class="session-link"
+                                                    data-subitem
+                                                    href=${`#${a}`}
+                                                    @click=${()=>this.handleSubSectionLink(n,a)}
+                                                >
+                                                    <span>${r}</span> <span>${o}</span>
+                                                </a>
+                                            `)}
+                                    </ul>
+                                </li>
+                            `)}
                         </ul>
                     </div>
                     <div class="">
                         <div class="cluster">
-                            <a class="btn tight" href="${this.homeUrl}"
-                                >${jsObject.translations.home}</a
-                            >
-                            <button
-                                class="btn d-flex align-items-center justify-content-center gap--4 tight"
-                                data-open="language-menu-reveal"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="1.4em"
-                                    height="1.4em"
-                                    class="ionicon"
-                                    viewBox="0 0 512 512"
-                                >
-                                    <path
-                                        d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-miterlimit="10"
-                                        stroke-width="32"
-                                    />
-                                    <path
-                                        d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-miterlimit="10"
-                                        stroke-width="32"
-                                    />
-                                    <path
-                                        d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="32"
-                                    />
-                                    <path
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-miterlimit="10"
-                                        stroke-width="32"
-                                        d="M256 48v416M464 256H48"
-                                    />
-                                </svg>
+                            <a class="btn tight" href="${this.homeUrl}">${jsObject.translations.home}</a>
+                            <button class="btn d-flex align-items-center justify-content-center gap--4 tight" data-open="language-menu-reveal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
                                 ${this.languageCode}
                             </button>
-                            <button
-                                class="btn tight outline"
-                                @click=${()=>this.switchViews()}
-                            >
+                            <button class="btn tight outline" @click=${()=>this.switchViews()}>
                                 ${this.view==="slideshow"?jsObject.translations.list_view:jsObject.translations.slide_view}
                             </button>
                         </div>
@@ -3700,22 +2546,13 @@ ${t}</textarea
             </nav>
 
             <span class="p-1 d-block fixed top z-2">
-                <button
-                    id="hamburger-menu"
-                    class="nav-toggle show ${this.showIndex?"invert":""}"
-                    @click=${this.openMenu}
-                >
+                <button id="hamburger-menu" class="nav-toggle show ${this.showIndex?"invert":""}" @click=${this.openMenu}>
                     <span class="hamburger"></span>
                 </button>
             </span>
 
             <div class="">
-                ${this.view==="guide"?l`<course-guide
-                          .sections=${this.getSessionSections()}
-                      ></course-guide>`:l`<course-slideshow
-                          .sections=${this.getSessionSections()}
-                          startSlideKey=${this.sessionKey}
-                      ></course-slideshow>`}
+                ${this.view==="guide"?l`<course-guide .sections=${this.getSessionSections()}></course-guide>`:l`<course-slideshow .sections=${this.getSessionSections()} startSlideKey=${this.sessionKey}></course-slideshow>`}
             </div>
         `}createRenderRoot(){return this}}customElements.define("course-presenter",wl);class kl extends k{static get properties(){return{sections:{type:Array}}}render(){return l`
             <div class="course-guide">
@@ -3727,15 +2564,13 @@ ${t}</textarea
                                 ></slide-switcher>
                             </div>
                         `)}
+
                 </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("course-guide",kl);class _l extends k{static get properties(){return{sections:{type:Array},startSlideKey:{type:String},sectionIndex:{attribute:!1},currentSlide:{attribute:!1},index:{attribute:!1}}}constructor(){super(),this.reset(),this.sections=[],this.startSlideKey="",this.listenForKeyboard=this.listenForKeyboard.bind(this),this.listenForMouseClick=this.listenForMouseClick.bind(this)}reset(){this.sectionIndex=-1,this.currentSlide=null}connectedCallback(){super.connectedCallback(),document.addEventListener("keydown",this.listenForKeyboard),document.addEventListener("mousedown",this.listenForMouseClick)}disconnectedCallback(){super.disconnectedCallback(),document.removeEventListener("keydown",this.listenForKeyboard),document.removeEventListener("mousedown",this.listenForMouseClick)}update(t){if(t.has("sections")&&this.reset(),t.has("startSlideKey")&&this.startSlideKey!==""){const e=this.sections.findIndex(({key:s})=>s===this.startSlideKey);this.setSlide(e)}super.update(t)}nextSlide(){if(this.sectionIndex>=this.sections.length-1){this.sectionIndex=this.sections.length-1;return}this.setSlide(this.sectionIndex+1)}previousSlide(){this.sectionIndex<0&&(this.sectionIndex=0),this.setSlide(this.sectionIndex-1)}leftSlide(){document.querySelector("html").dir==="rtl"?this.nextSlide():this.previousSlide()}rightSlide(){document.querySelector("html").dir==="rtl"?this.previousSlide():this.nextSlide()}listenForKeyboard(t){["ArrowRight"].includes(t.code)&&this.rightSlide(),["Space"].includes(t.code)&&this.nextSlide(),["ArrowLeft"].includes(t.code)&&this.leftSlide(),["Backspace"].includes(t.code)&&this.previousSlide()}listenForMouseClick(t){if(t.target.id==="hamburger-menu")return;const e=c=>c.id==="offCanvas"||c.classList.contains("js-off-canvas-overlay")||c.classList.contains("bypass-nav-click");if(this.hasParent(t.target,e))return;const{x:s,type:n,which:a}=t;if(n!=="mousedown"||a!==1)return;const{innerWidth:r}=window,o=1/2*r;s<o&&this.leftSlide(),s>r-o&&this.rightSlide()}hasParent(t,e){let s=t;const n=50;let a=0;for(;s;){if(e(s))return!0;if(s=s.parentElement,a=a+1,a>n)return!1}return!1}setSlide(t){this.sectionIndex=t;const e=this.sections[t];this.currentSlide=e}render(){return this.sectionIndex<0&&this.setSlide(0),l`
             <div class="cover-page course-slideshow">
                 <div>
-                    <slide-switcher
-                        .slide=${this.currentSlide}
-                        showControls
-                    ></slide-switcher>
+                    <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
                 <div class="visual-indicator left">
                     <img
@@ -3752,62 +2587,7 @@ ${t}</textarea
                     />
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("course-slideshow",_l);class Sl extends k{static get properties(){return{slide:{type:Object},showControls:{type:Boolean}}}render(){if(this.slide)switch(this.slide.type){case"title":return l`<title-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></title-slide>`;case"checkin":return l`<checkin-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></checkin-slide>`;case"pray":return l`<pray-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></pray-slide>`;case"review":return l`<review-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></review-slide>`;case"overview":return l`<overview-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></overview-slide>`;case"challenge":case"center":return l`<center-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></center-slide>`;case"watch":return l`<watch-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></watch-slide>`;case"video":return l`<video-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                    ?showButtons=${this.showControls}
-                ></video-slide>`;case"look_back":return l`<look-back-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></look-back-slide>`;case"discuss":return l`<discuss-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></discuss-slide>`;case"left_content":case"activity":return l`<activity-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></activity-slide>`;case"obey":return l`<obey-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></obey-slide>`;case"left_image":return l`<left-image-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></left-image-slide>`;case"next_steps":return l`<next-steps-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></next-steps-slide>`;case"break":return l`<break-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></break-slide>`;case"congratulations":return l`<congratulations-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></congratulations-slide>`;case"final":return l`<final-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></final-slide>`;default:return l`<course-slide
-                    .slide=${this.slide}
-                    id=${this.slide.key}
-                ></course-slide>`}}createRenderRoot(){return this}}customElements.define("slide-switcher",Sl);class Ol extends k{static get properties(){return{questions:{type:Array},translations:{type:Object},contact_id:{type:String},user_id:{type:String},showCancel:{type:Boolean},answers:{type:Array,attribue:!1},error:{type:Boolean,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.questions=[],this.answers=[],this.translations=[],this.contact_id="",this.user_id="",this.error=!1,this.loading=!1}handleInputChange(t){const e=t.target.dataset.i;this.answers[e]=t.target.value,this.update()}handleCancel(){this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-cancelled",{bubbles:!0}))}handleSave(){this.loading=!0;const t=[];if(this.answers.length===0){this.loading=!1;return}return this.answers.forEach((e,s)=>{if(e){const a=this.questions[s];var n=new Date;n.setDate(n.getDate()+30);const r=makeRequest("POST","commitment",{note:`${this.translations.question}: ${a} ${this.translations.answer}: ${e}`,question:a,answer:e,date:n,category:"post_training_plan"},"zume_system/v1");t.push(r.promise())}}),Promise.all(t).then(()=>{this.loading=!1,this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-saved",{bubbles:!0}))}).catch(e=>{console.error(e),this.error=!0,this.loading=!1})}clearAnswers(){this.renderRoot.querySelectorAll(".post-training-plan").forEach(t=>{t.value=""})}render(){const t=this.loading||this.answers.length===0;return l`
+        `}createRenderRoot(){return this}}customElements.define("course-slideshow",_l);class Sl extends k{static get properties(){return{slide:{type:Object},showControls:{type:Boolean}}}render(){if(this.slide)switch(this.slide.type){case"title":return l`<title-slide .slide=${this.slide} id=${this.slide.key}></title-slide>`;case"checkin":return l`<checkin-slide .slide=${this.slide} id=${this.slide.key}></checkin-slide>`;case"pray":return l`<pray-slide .slide=${this.slide} id=${this.slide.key}></pray-slide>`;case"review":return l`<review-slide .slide=${this.slide} id=${this.slide.key}></review-slide>`;case"overview":return l`<overview-slide .slide=${this.slide} id=${this.slide.key}></overview-slide>`;case"challenge":case"center":return l`<center-slide .slide=${this.slide} id=${this.slide.key}></center-slide>`;case"watch":return l`<watch-slide .slide=${this.slide} id=${this.slide.key}></watch-slide>`;case"video":return l`<video-slide .slide=${this.slide} id=${this.slide.key} ?showButtons=${this.showControls}></video-slide>`;case"look_back":return l`<look-back-slide .slide=${this.slide} id=${this.slide.key}></look-back-slide>`;case"discuss":return l`<discuss-slide .slide=${this.slide} id=${this.slide.key}></discuss-slide>`;case"left_content":case"activity":return l`<activity-slide .slide=${this.slide} id=${this.slide.key}></activity-slide>`;case"obey":return l`<obey-slide .slide=${this.slide} id=${this.slide.key}></obey-slide>`;case"left_image":return l`<left-image-slide .slide=${this.slide} id=${this.slide.key}></left-image-slide>`;case"next_steps":return l`<next-steps-slide .slide=${this.slide} id=${this.slide.key}></next-steps-slide>`;case"break":return l`<break-slide .slide=${this.slide} id=${this.slide.key}></break-slide>`;case"congratulations":return l`<congratulations-slide .slide=${this.slide} id=${this.slide.key}></congratulations-slide>`;case"final":return l`<final-slide .slide=${this.slide} id=${this.slide.key}></final-slide>`;default:return l`<course-slide .slide=${this.slide} id=${this.slide.key}></course-slide>`}}createRenderRoot(){return this}}customElements.define("slide-switcher",Sl);class Ol extends k{static get properties(){return{questions:{type:Array},translations:{type:Object},contact_id:{type:String},user_id:{type:String},showCancel:{type:Boolean},answers:{type:Array,attribue:!1},error:{type:Boolean,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.questions=[],this.answers=[],this.translations=[],this.contact_id="",this.user_id="",this.error=!1,this.loading=!1}handleInputChange(t){const e=t.target.dataset.i;this.answers[e]=t.target.value,this.update()}handleCancel(){this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-cancelled",{bubbles:!0}))}handleSave(){this.loading=!0;const t=[];if(this.answers.length===0){this.loading=!1;return}return this.answers.forEach((e,s)=>{if(e){const a=this.questions[s];var n=new Date;n.setDate(n.getDate()+30);const r=makeRequest("POST","commitment",{note:`${this.translations.question}: ${a} ${this.translations.answer}: ${e}`,question:a,answer:e,date:n,category:"post_training_plan"},"zume_system/v1");t.push(r.promise())}}),Promise.all(t).then(()=>{this.loading=!1,this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-saved",{bubbles:!0}))}).catch(e=>{console.error(e),this.error=!0,this.loading=!1})}clearAnswers(){this.renderRoot.querySelectorAll(".post-training-plan").forEach(t=>{t.value=""})}render(){const t=this.loading||this.answers.length===0;return l`
             <div id="pieces-content" class="stack">
                 ${this.questions.map((e,s)=>{const n=`question-${s}`;return l`
                         <div class="stack--3">
@@ -3821,16 +2601,16 @@ ${t}</textarea
                                 @input=${this.handleInputChange}
                             ></textarea>
                         </div>
-                    `})}
+                `})}
                 <div class="cluster justify-flex-end">
                     ${this.showCancel?l`
-                              <button
-                                  class="btn outline uppercase"
-                                  @click=${this.handleCancel}
-                              >
-                                  ${this.translations.cancel}
-                              </button>
-                          `:""}
+                            <button
+                                class="btn outline uppercase"
+                                @click=${this.handleCancel}
+                            >
+                                ${this.translations.cancel}
+                            </button>
+                            `:""}
                     <button
                         ?disabled=${t}
                         aria-disabled=${t?"true":"false"}
@@ -3838,10 +2618,9 @@ ${t}</textarea
                         @click=${this.handleSave}
                     >
                         ${this.translations.save}
-                        <span
-                            class="loading-spinner ${this.loading?"active":""}"
-                        ></span>
+                        <span class="loading-spinner ${this.loading?"active":""}"></span>
                     </button>
+
                 </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("activity-3-month-plan",Ol);class Hn extends k{constructor(){super()}render(){return l`
@@ -3874,6 +2653,7 @@ ${t}</textarea
             justify-content: center;
         }
 
+
         .circle {
             width: var(--play-button-size);
             height: var(--play-button-size);
@@ -3889,93 +2669,65 @@ ${t}</textarea
         }
 
         .triangle {
-            width: 0;
-            height: 0;
-            border-top: calc(var(--play-button-size) / 4.5) solid transparent;
-            border-left: calc(var(--play-button-size) / 2.5) solid
-                var(--play-button-highlight);
-            border-bottom: calc(var(--play-button-size) / 4.5) solid transparent;
-            margin-left: calc(var(--play-button-size) / 10);
+          width: 0;
+          height: 0;
+          border-top: calc(var(--play-button-size) / 4.5) solid transparent;
+          border-left: calc(var(--play-button-size) / 2.5) solid var(--play-button-highlight);
+          border-bottom: calc(var(--play-button-size) / 4.5) solid transparent;
+          margin-left: calc(var(--play-button-size) / 10);
         }
     `);window.customElements.define("play-button",Hn);class jl extends k{constructor(){super();C(this,"webShareSupported",!!window.navigator.share);C(this,"clipboardSupported",!!window.navigator.clipboard);this.shareFeedback="",this.copyFeedback=""}static get properties(){return{url:{type:String},title:{type:String},t:{type:Object},alwaysShow:{type:Boolean},shareFeedback:{attribute:!1},copyFeedback:{attribute:!1}}}share(){navigator.share({title:this.title,url:this.url,text:title}).then(()=>{this.shareFeedback=this.t.share_feedback,setTimeout(()=>{this.shareFeedback=""},3e3)}).catch(e=>console.error("Error sharing",e))}copyLink(e){e.stopImmediatePropagation(),navigator.clipboard.writeText(this.url).then(()=>{this.copyFeedback=this.t.copy_feedback,setTimeout(()=>{this.copyFeedback=""},3e3)}).catch(s=>console.error(s))}noOptionsAvailable(){return!this.clipboardSupported&&!this.webShareSupported}render(){return l`
             <div id="share" tabindex="-1" class="stack--2">
-                ${this.noOptionsAvailable()?l`
-                          <div class="stack--2">
-                              <p>${this.t.copy_and_share_text}</p>
-                              <p><code>${this.url}</code></p>
+              ${this.noOptionsAvailable()?l`
+                  <div class="stack--2">
+                    <p>${this.t.copy_and_share_text}</p>
+                    <p><code>${this.url}</code></p>
+                  </div>
+              `:l`
+                  <div :class="cluster gap--1">
+                    ${this.webShareSupported?l`
+                        <div class="position-relative">
+                          <button class="btn" @click=${this.share}>
+                            <!-- Share icon -->
+                            <span>${this.t.share}</span>
+                          </button>
+                          <p role="alert" aria-live="polite" id="shareFeedback" class="context-alert" data-state=${this.shareFeedback.length?"":"empty"}>${this.shareFeedback}</p>
+                        </div>
+                    `:""}
+                    ${this.clipboardSupported?l`
+                        <div class="stack--2">
+                          ${this.alwaysShow?l`<p><code>${this.url}</code></p>`:""}
+                          <div class="position-relative fit-content mx-auto">
+                            <button class="btn fit-content mx-auto" @click=${this.copyLink}>
+                              <!-- Link icon -->
+                              <span>${this.t.copy_link}</span>
+                            </button>
+                            <p role="alert" aria-live="polite" id="copyFeedback" class="context-alert" data-state=${this.copyFeedback.length?"":"empty"}>${this.copyFeedback}</p>
                           </div>
-                      `:l`
-                          <div :class="cluster gap--1">
-                              ${this.webShareSupported?l`
-                                        <div class="position-relative">
-                                            <button
-                                                class="btn"
-                                                @click=${this.share}
-                                            >
-                                                <!-- Share icon -->
-                                                <span>${this.t.share}</span>
-                                            </button>
-                                            <p
-                                                role="alert"
-                                                aria-live="polite"
-                                                id="shareFeedback"
-                                                class="context-alert"
-                                                data-state=${this.shareFeedback.length?"":"empty"}
-                                            >
-                                                ${this.shareFeedback}
-                                            </p>
-                                        </div>
-                                    `:""}
-                              ${this.clipboardSupported?l`
-                                        <div class="stack--2">
-                                            ${this.alwaysShow?l`<p>
-                                                      <code>${this.url}</code>
-                                                  </p>`:""}
-                                            <div
-                                                class="position-relative fit-content mx-auto"
-                                            >
-                                                <button
-                                                    class="btn fit-content mx-auto"
-                                                    @click=${this.copyLink}
-                                                >
-                                                    <!-- Link icon -->
-                                                    <span
-                                                        >${this.t.copy_link}</span
-                                                    >
-                                                </button>
-                                                <p
-                                                    role="alert"
-                                                    aria-live="polite"
-                                                    id="copyFeedback"
-                                                    class="context-alert"
-                                                    data-state=${this.copyFeedback.length?"":"empty"}
-                                                >
-                                                    ${this.copyFeedback}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    `:""}
-                          </div>
-                      `}
+                        </div>
+                    `:""}
+                  </div>
+              `}
+
+
             </div>
         `}createRenderRoot(){return this}}customElements.define("share-links",jl);class El extends k{constructor(){super();C(this,"sortAlphabetically",(e,s)=>e.page_title<s.page_title?-1:1);C(this,"sortByKey",(e,s)=>Number(e.key)<Number(s.key)?-1:1);this.items=[],this.itemsToDisplay=[],this.filterType="all"}static get properties(){return{items:{type:Array},itemsToDisplay:{type:Array,attribute:!1},filterType:{type:String,attribute:!1},isSortedAlphabetically:{type:Boolean,attribute:!1}}}connectedCallback(){super.connectedCallback(),this.itemsToDisplay=[...this.items]}filterItems(e){this.filterType=e,this.itemsToDisplay=this.sortItems(this.items.filter(({type:s})=>e==="all"?!0:s===e))}toggleSorting(){this.isSortedAlphabetically=!this.isSortedAlphabetically,this.itemsToDisplay=this.sortItems(this.itemsToDisplay)}sortItems(e){return e.sort((s,n)=>this.isSortedAlphabetically?this.sortAlphabetically(s,n):this.sortByKey(s,n))}renderListItem({page_url:e,page_title:s,type:n,description:a}){return l`
             <li class="share-cards" data-type=${n}>
                 <div class="share card">
-                    <div
-                        class="switcher | switcher-width-25 align-items-center gapx--4"
-                    >
+                    <div class="switcher | switcher-width-25 align-items-center gapx--4">
                         <div class="stack grow-2">
                             <a class="f-1 bold mt-0" href=${e}>
                                 ${s}
                             </a>
-                            <p class="f--1 show-for-large">${a}</p>
+                            <p class="f--1 show-for-large">
+                                ${a}
+                            </p>
                         </div>
                         <div class="fit-content ms-auto">
                             <share-links
                                 url=${e}
                                 title=${s}
-                                .t=${zumeShare.translations}
-                            >
+                                .t=${zumeShare.translations}>
                             </share-links>
                         </div>
                     </div>
@@ -3983,52 +2735,21 @@ ${t}</textarea
             </li>
         `}render(){return l`
             <div class="container-xsm">
-                <div
-                    class="filter-area d-flex align-items-center justify-flex-end"
-                >
-                    <span class="f--1 gray-700 lh-sm"
-                        >${zumeShare.translations.items}:
-                        ${this.itemsToDisplay.length}</span
-                    >
+                <div class="filter-area d-flex align-items-center justify-flex-end">
+                    <span class="f--1 gray-700 lh-sm">${zumeShare.translations.items}: ${this.itemsToDisplay.length}</span>
                     <button
                         class="icon-btn f-2 ${this.isSortedAlphabetically?"bg-gray-300":""}"
                         @click=${this.toggleSorting}
                     >
-                        <span class="visually-hidden"
-                            >${zumeShare.translations.sort}</span
-                        >
-                        <svg
-                            class="w-2rem brand-light"
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M12.93 2.65c-.2-.2-.51-.2-.71 0l-2.01 2.01h4.72zm-.7 18.7c.2.2.51.2.71 0l1.98-1.98h-4.66zm-1.25-3.62c.6 0 1.01-.6.79-1.16L8.04 7.03c-.18-.46-.63-.76-1.12-.76-.49 0-.94.3-1.12.76l-3.74 9.53c-.22.56.19 1.16.79 1.16.35 0 .67-.22.8-.55l.71-1.9h5.11l.71 1.9c.13.34.45.56.8.56m-6.01-4.09 1.94-5.18 1.94 5.18zm16.08 2.5h-5.33l5.72-8.29c.46-.66-.02-1.57-.82-1.57h-6.48c-.44 0-.79.36-.79.8v.01c0 .44.36.8.79.8h5.09l-5.73 8.28c-.46.66.02 1.57.82 1.57h6.72c.44 0 .79-.36.79-.79.02-.45-.34-.81-.78-.81"
-                            ></path>
-                        </svg>
+                        <span class="visually-hidden">${zumeShare.translations.sort}</span>
+                        <svg class="w-2rem brand-light" focusable="false" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12.93 2.65c-.2-.2-.51-.2-.71 0l-2.01 2.01h4.72zm-.7 18.7c.2.2.51.2.71 0l1.98-1.98h-4.66zm-1.25-3.62c.6 0 1.01-.6.79-1.16L8.04 7.03c-.18-.46-.63-.76-1.12-.76-.49 0-.94.3-1.12.76l-3.74 9.53c-.22.56.19 1.16.79 1.16.35 0 .67-.22.8-.55l.71-1.9h5.11l.71 1.9c.13.34.45.56.8.56m-6.01-4.09 1.94-5.18 1.94 5.18zm16.08 2.5h-5.33l5.72-8.29c.46-.66-.02-1.57-.82-1.57h-6.48c-.44 0-.79.36-.79.8v.01c0 .44.36.8.79.8h5.09l-5.73 8.28c-.46.66.02 1.57.82 1.57h6.72c.44 0 .79-.36.79-.79.02-.45-.34-.81-.78-.81"></path></svg>
                     </button>
                     <button class="icon-btn f-2" data-toggle="filter-menu">
-                        <span class="visually-hidden"
-                            >${zumeShare.translations.filter}</span
-                        >
-                        <span
-                            class="icon z-icon-filter brand-light"
-                            aria-hidden="true"
-                        ></span>
+                        <span class="visually-hidden">${zumeShare.translations.filter}</span>
+                        <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
                     </button>
                 </div>
-                <div
-                    class="dropdown-pane"
-                    id="filter-menu"
-                    data-dropdown
-                    data-auto-focus="true"
-                    data-position="bottom"
-                    data-alignment="center"
-                    data-close-on-click="true"
-                    data-close-on-click-inside="true"
-                >
+                <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment="center" data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
                         <li>
                             <button
@@ -4058,7 +2779,9 @@ ${t}</textarea
                     </ul>
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("share-list",El);class Cl extends k{static get properties(){return{t:{type:Object},joinLink:{type:String},loading:{attribute:!1},posts:{attribute:!1}}}constructor(){super(),this.loading=!0,this.plans=[],this.getTrainings(),this.renderRow=this.renderRow.bind(this)}getTrainings(){makeRequest("POST","public_plans",{},"zume_system/v1").then(t=>{this.plans=t}).catch(t=>{console.log(t)}).always(()=>{this.loading=!1})}render(){return this.loading?l`<span class="loading-spinner active"></span>`:this.plans.length===0?l` <p>${this.t.no_plans}</p> `:l`
+        `}createRenderRoot(){return this}}customElements.define("share-list",El);class Cl extends k{static get properties(){return{t:{type:Object},joinLink:{type:String},loading:{attribute:!1},posts:{attribute:!1}}}constructor(){super(),this.loading=!0,this.plans=[],this.getTrainings(),this.renderRow=this.renderRow.bind(this)}getTrainings(){makeRequest("POST","public_plans",{},"zume_system/v1").then(t=>{this.plans=t}).catch(t=>{console.log(t)}).always(()=>{this.loading=!1})}render(){return this.loading?l`<span class="loading-spinner active"></span>`:this.plans.length===0?l`
+                <p>${this.t.no_plans}</p>
+            `:l`
             <table>
                 <thead>
                     <tr>
@@ -4072,7 +2795,7 @@ ${t}</textarea
                 </thead>
                 <tbody>
                     ${this.plans.map(this.renderRow)}
-                </tbody>
+               </tbody>
             </table>
         `}renderRow({join_key:t,language_note:e,post_title:s,time_of_day_note:n,timezone_note:a,...r}){const o=r.set_a_01?"a":"b",c=o==="a"?10:20,d=`set_${o}_`,u=Date.now()/1e3;let p="";for(let m=1;m<c+1;m++){const y=m<10?`0${m}`:`${m}`,j=r[d+y];if(p=j.timestamp,u<j.timestamp)break}const g=moment(p*1e3).format("MMM Do 'YY");return l`
             <tr>
@@ -4081,15 +2804,7 @@ ${t}</textarea
                 <td data-label="${this.t.start_time}">${n}</td>
                 <td data-label="${this.t.timezone}">${a}</td>
                 <td data-label="${this.t.language}">${e}</td>
-                <td>
-                    <button
-                        class="btn"
-                        data-code=${t}
-                        @click=${this._handleJoinTraining}
-                    >
-                        ${this.t.join}
-                    </button>
-                </td>
+                <td><button class="btn" data-code=${t} @click=${this._handleJoinTraining}>${this.t.join}</button></td>
             </tr>
         `}_handleJoinTraining(t){console.log(t);const e=t.target.dataset.code,s=new CustomEvent("chosen-training",{bubbles:!0,detail:{code:e}});this.dispatchEvent(s)}createRenderRoot(){return this}}customElements.define("public-trainings",Cl);class Zn extends k{static get properties(){return{radius:{type:Number},lineWidth:{type:Number},percent:{type:Number}}}constructor(){super(),this.radius=100,this.lineWidth=10,this.percent=30}width(){return this.radius*2+this.lineWidth}widthPx(){return this.appendPx(this.width())}center(){return this.width()/2}circumference(){return this.radius*2*Math.PI}circumferencePx(){return this.appendPx(this.circumference())}appendPx(t){return`${t}px`}rotate(t){return`rotate(${t}, ${this.center()}, ${this.center()})`}render(){return l`
             <div
@@ -4101,14 +2816,16 @@ ${t}</textarea
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         class="bar"
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
                         transform="${this.rotate(-90)}"
-                    ></circle>
+                    >
+                    </circle>
                 </svg>
             </div>
         `}createRenderRoot(){return this}}customElements.define("progress-circle",Zn);class xl extends Zn{static get properties(){return{percent:{type:Number},type:{type:String}}}constructor(){super(),this.radius=50,this.lineWidth=15,this.percent=0,this.borderWidth=3,this.type="heard"}width(){return(this.radius+this.lineWidth)*2}getIconSvg(){switch(this.type){case"heard":return re`
@@ -4147,19 +2864,22 @@ ${t}</textarea
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         class="bar"
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
                         transform="${this.rotate(-90)}"
-                    ></circle>
+                    >
+                    </circle>
                     <svg
                         class="icon"
                         xmlns="http://www.w3.org/2000/svg"
@@ -4182,8 +2902,14 @@ ${t}</textarea
  * Copyright 2021 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
  */function*$i(i,t){if(i!==void 0){let e=0;for(const s of i)yield t(s,e++)}}class Bn extends k{static get properties(){return{startDate:{type:String},endDate:{type:String},selectedDays:{type:Array},view:{type:String},showToday:{type:Boolean},monthToShow:{attribute:!1}}}constructor(){super(),this.monthToShow=null,this.startDate="",this.endDate="",this.selectedDays=[],this.showToday=!1,this.today=v.now().toISODate(),this.view="slider"}nextView(t){this.shadowRoot.querySelectorAll(".selected-time").forEach(e=>e.classList.remove("selected-time")),this.monthToShow=t}selectDay(t,e){const s=this.selectedDays.filter(n=>n.date===e);s.length===0?this.dispatchEvent(new CustomEvent("day-added",{detail:{date:e}})):s.forEach(({id:n})=>{this.dispatchEvent(new CustomEvent("day-removed",{detail:{id:n}}))}),this.shadowRoot.querySelectorAll(".selected-time").forEach(n=>n.classList.remove("selected-time")),t.target.classList.add("selected-time")}getDaysOfTheWeekInitials(t="en-US",e="long"){const s=new Date,n=864e5,a=new Intl.DateTimeFormat(t,{weekday:e}).format;return[...Array(7).keys()].map(r=>a(new Date().getTime()-(s.getDay()-r)*n))}buildCalendarDays(t="en-US",e){const s=e.startOf("month").startOf("day"),n=[],a=new Intl.DateTimeFormat(t,{day:"numeric"}).format;for(let r=0;r<e.daysInMonth;r++){const o=s.plus({days:r}),c=o.plus({days:1}),d=this.endDate&&o>v.fromISO(this.endDate)||c<=v.fromISO(this.startDate),u={key:o.toISODate(),formatted:a(o.toMillis()),disabled:d};n.push(u)}return n}addMonth(){const t=v.fromISO(this.endDate).plus({months:1}).endOf("month").toISODate();this.dispatchEvent(new CustomEvent("calendar-extended",{detail:{newEndDate:t}})),this.endDate=t}isSelected(t){return!!this.selectedDays.find(s=>s.date===t)}renderCalendar(t){const e=this.getDaysOfTheWeekInitials(navigator.language,"narrow"),s=t.startOf("month").weekday,n=this.buildCalendarDays(navigator.language,t);return l`
-            ${e.map(a=>l` <div class="cell week-day">${a}</div> `)}
-            ${$i(yi(s%7),a=>l` <div class="cell"></div> `)}
+            ${e.map(a=>l`
+                    <div class="cell week-day">
+                        ${a}
+                    </div>
+                `)}
+            ${$i(yi(s%7),a=>l`
+                    <div class="cell"></div>
+                `)}
             ${n.map(a=>l`
                     <div
                         class="cell day ${a.disabled?"disabled":""} ${this.isSelected(a.key)?"selected-day":""} ${this.showToday&&a.key===this.today?"today":""}"
@@ -4194,6 +2920,7 @@ ${t}</textarea
                     </div>
                 `)}
         `}renderSlider(){const t=v.now({locale:navigator.language}),e=this.monthToShow||v.max(t,v.fromISO(this.startDate)),s=e.startOf("month"),n=e.minus({months:1}),a=s.plus({months:1});return l`
+
             <div class="calendar-wrapper">
                 <div class="calendar">
                     <button
@@ -4201,38 +2928,20 @@ ${t}</textarea
                         ?disabled=${s<t}
                         @click=${()=>this.nextView(n)}
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-                            <path
-                                d="M15 6L8 12L15 18"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 6L8 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
-                    <h3 class="month-title">${e.toFormat("LLLL y")}</h3>
+                    <h3 class="month-title">
+                        ${e.toFormat("LLLL y")}
+                    </h3>
                     <button
                         class="month-next"
                         ?disabled=${a>v.fromISO(this.endDate)}
                         @click=${()=>this.nextView(a)}
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-                            <path
-                                d="M10 6L17 12L10 18"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M10 6L17 12L10 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </button>
                     ${this.renderCalendar(e)}
@@ -4241,183 +2950,161 @@ ${t}</textarea
         `}render(){if(this.view==="all"){const e=v.fromISO(this.startDate).startOf("month");let s=0;for(;e.plus({months:s})<v.fromISO(this.endDate);)s=s+1;return l`
                 <div class="calendar-wrapper">
                     ${$i(yi(s),n=>{const a=e.plus({months:n});return l`
-                            <div class="calendar">
-                                <h3 class="month-title full-width">
-                                    ${a.toFormat("LLLL y")}
-                                </h3>
-                                ${this.renderCalendar(a)}
-                            </div>
-                        `})}
+                                <div class="calendar">
+                                    <h3 class="month-title full-width">
+                                        ${a.toFormat("LLLL y")}
+                                    </h3>
+                                    ${this.renderCalendar(a)}
+                                </div>
+                            `})}
                     ${this.view!=="slider"?l`
-                              <div
-                                  class="add-month-button"
-                                  role="button"
-                                  @click=${this.addMonth}
-                              >
-                                  <svg
-                                      id="Layer_1"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      color="currentColor"
-                                      width="40"
-                                      height="40"
-                                      viewBox="0 0 40 40"
-                                  >
-                                      <path
-                                          d="M32.104,18.262h-10.365V7.896c0-.96-.777-1.738-1.738-1.738s-1.738.778-1.738,1.738v10.366H7.896c-.961,0-1.738.778-1.738,1.738s.777,1.738,1.738,1.738h10.367v10.367c0,.96.777,1.738,1.738,1.738s1.738-.778,1.738-1.738v-10.367h10.365c.961,0,1.738-.778,1.738-1.738s-.777-1.738-1.738-1.738Z"
-                                          stroke-width="0"
-                                      />
-                                  </svg>
-                              </div>
-                          `:""}
+                            <div class="add-month-button" role="button" @click=${this.addMonth}>
+                                <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" color="currentColor" width="40" height="40" viewBox="0 0 40 40">
+                                    <path d="M32.104,18.262h-10.365V7.896c0-.96-.777-1.738-1.738-1.738s-1.738.778-1.738,1.738v10.366H7.896c-.961,0-1.738.778-1.738,1.738s.777,1.738,1.738,1.738h10.367v10.367c0,.96.777,1.738,1.738,1.738s1.738-.778,1.738-1.738v-10.367h10.365c.961,0,1.738-.778,1.738-1.738s-.777-1.738-1.738-1.738Z" stroke-width="0"/>
+                                </svg>
+                            </div>
+                        `:""}
                 </div>
             `}else return this.renderSlider()}}C(Bn,"styles",[ms`
-            :host {
-                display: block;
-                container-type: inline-size;
-                container-name: calendar;
-            }
-            .calendar-wrapper {
-                --cp-color: var(--primary-color, #489bfa);
-                --cp-color-darker: var(--primary-darker, #387cc9);
-                --cp-hover-color: var(--hover-color, #4676fa1a);
-                --cp-grid-min-size: var(--grid-min-size, 190px);
+          :host {
+            display: block;
+            container-type: inline-size;
+            container-name: calendar;
+          }
+          .calendar-wrapper {
+            --cp-color: var(--primary-color, #489bfa);
+            --cp-color-darker: var(--primary-darker, #387cc9);
+            --cp-hover-color: var(--hover-color, #4676fa1a);
+            --cp-grid-min-size: var(--grid-min-size, 190px);
 
-                display: grid;
-                grid-gap: 1rem;
-                grid-auto-rows: 1fr;
+            display: grid;
+            grid-gap: 1rem;
+            grid-auto-rows: 1fr;
+          }
+          @supports (width: min(250px, 100%)) {
+            .calendar-wrapper {
+              grid-template-columns: repeat(auto-fit, minmax(min(var(--cp-grid-min-size), 100%), 1fr));
             }
-            @supports (width: min(250px, 100%)) {
-                .calendar-wrapper {
-                    grid-template-columns: repeat(
-                        auto-fit,
-                        minmax(min(var(--cp-grid-min-size), 100%), 1fr)
-                    );
-                }
-            }
-            .calendar {
-                display: grid;
-                grid-template-columns: repeat(7, 14.2%);
-                row-gap: 4px;
-                justify-items: center;
-            }
-            .cell {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                aspect-ratio: 1;
-                max-width: 40px;
-                border-radius: 50%;
-                border-width: 2px;
-                border-style: solid;
-                border-color: transparent;
-                transition: background-color 50ms linear;
-                width: 100%;
-            }
-            .day.cell:hover {
-                background-color: var(--cp-hover-color);
-                cursor: pointer;
-            }
-            .day.cell.disabled {
-                color: lightgrey;
-                cursor: default;
-            }
-            .day.cell.disabled:hover {
-                background-color: transparent;
-            }
-            .week-day {
-                font-weight: 600;
-                font-size: clamp(0.75em, 0.65rem + 2cqi, 1em);
-            }
-            .selected-time {
-                color: black;
-                border-color: var(--cp-color);
-                background-color: var(--cp-hover-color);
-            }
-            .selected-day {
-                color: white;
-                background-color: var(--cp-color);
-            }
-            .today {
-                border-color: black;
-            }
-            .day.cell.selected-day:hover {
-                color: white;
-                background-color: var(--cp-color-darker);
-            }
-            .month-title {
-                display: flex;
-                justify-content: space-between;
-                font-size: 1.2rem;
-                font-weight: 600;
-                grid-column: 2 / 7;
-                margin-block: 0;
-            }
-            .month-title.full-width {
-                grid-column: 1 / 8;
-            }
-            .month-next {
-                padding: 0.2rem 0.25rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .month-next svg {
-                width: 1.5rem;
-            }
-            button {
-                padding: 0.25rem 0.5rem;
-                color: rgb(254, 254, 254);
-                font-size: 1rem;
-                border-radius: 5px;
-                border: 1px solid transparent;
-                font-weight: normal;
-                padding: 0.85rem 1rem;
-                cursor: pointer;
-                background-color: var(--cp-color);
-                line-height: 1;
-                transition: all 50ms linear;
-            }
-            button:not([disabled]):hover {
-                background-color: transparent;
-                border-color: var(--cp-color);
-                color: var(--cp-color);
-            }
-            button[disabled] {
-                opacity: 0.25;
-                cursor: default;
-            }
-            .add-month-button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                fill: var(--cp-color);
-                background-color: var(--cp-hover-color);
-                margin-inline: 10%;
-                margin-block: auto;
-                aspect-ratio: 3 / 4;
-                border-radius: 10%;
-                transition: all 50ms linear;
-                cursor: pointer;
-            }
-            .add-month-button:hover svg,
-            .add-month-button:active svg,
-            .add-month-button:focus svg {
-                transform: scale(1.2);
-            }
-            .add-month-button svg {
-                transition: transform 100ms linear;
-                width: 30%;
-            }
+          }
+          .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 14.2%);
+            row-gap: 4px;
+            justify-items: center;
+          }
+          .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1;
+            max-width: 40px;
+            border-radius: 50%;
+            border-width: 2px;
+            border-style: solid;
+            border-color: transparent;
+            transition: background-color 50ms linear;
+            width: 100%;
+          }
+          .day.cell:hover {
+            background-color: var(--cp-hover-color);
+            cursor: pointer;
+          }
+          .day.cell.disabled  {
+            color:lightgrey;
+            cursor: default;
+          }
+          .day.cell.disabled:hover {
+            background-color: transparent;
+          }
+          .week-day {
+            font-weight: 600;
+            font-size:clamp(0.75em, 0.65rem + 2cqi, 1em);
+          }
+          .selected-time {
+            color: black;
+            border-color: var(--cp-color);
+            background-color: var(--cp-hover-color);
+          }
+          .selected-day {
+            color: white;
+            background-color: var(--cp-color);
+          }
+          .today {
+            border-color: black;
+          }
+          .day.cell.selected-day:hover {
+            color: white;
+            background-color: var(--cp-color-darker);
+          }
+          .month-title {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            font-weight: 600;
+            grid-column: 2 / 7;
+            margin-block: 0;
+          }
+          .month-title.full-width {
+            grid-column: 1 / 8;
+          }
+          .month-next {
+            padding: 0.2rem 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .month-next svg {
+            width: 1.5rem;
+          }
+          button {
+            padding: 0.25rem 0.5rem;
+            color: rgb(254, 254, 254);
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            font-weight: normal;
+            padding: 0.85rem 1rem;
+            cursor: pointer;
+            background-color: var(--cp-color);
+            line-height: 1;
+            transition: all 50ms linear;
+          }
+          button:not([disabled]):hover {
+            background-color: transparent;
+            border-color: var(--cp-color);
+            color: var(--cp-color);
+          }
+          button[disabled] {
+            opacity: 0.25;
+            cursor: default;
+          }
+          .add-month-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            fill: var(--cp-color);
+            background-color: var(--cp-hover-color);
+            margin-inline: 10%;
+            margin-block: auto;
+            aspect-ratio: 3 / 4;
+            border-radius: 10%;
+            transition: all 50ms linear;
+            cursor: pointer;
+          }
+          .add-month-button:hover svg,
+          .add-month-button:active svg,
+          .add-month-button:focus svg {
+            transform: scale(1.2);
+          }
+          .add-month-button svg {
+            transition: transform 100ms linear;
+            width: 30%;
+          }
         `]);customElements.define("calendar-select",Bn);class Tl extends k{static get properties(){return{t:{type:Object},selectedDays:{type:Array},date:{type:String,attribute:!1}}}connectedCallback(){super.connectedCallback(),this.renderDate=this.renderDate.bind(this)}onChange(t){this.date=t.target.value}addDate(){this.date&&this.dispatchEvent(new CustomEvent("day-added",{detail:{date:this.date}}))}removeDate(t){this.dispatchEvent(new CustomEvent("day-removed",{detail:{id:t}}))}renderDate({date:t,id:e},s){return l`
             <li>
                 <div class="d-flex align-items-center justify-content-between">
-                    <span class="mx-0"
-                        >${v.fromISO(t).toFormat("DDDD")}</span
-                    >
-                    <button
-                        class="close-btn"
-                        @click=${()=>this.removeDate(e)}
-                    >
+                    <span class="mx-0">${v.fromISO(t).toFormat("DDDD")}</span>
+                    <button class="close-btn" @click=${()=>this.removeDate(e)}>
                         <span class="icon z-icon-close"></span>
                     </button>
                 </div>
@@ -4425,18 +3112,15 @@ ${t}</textarea
         `}sortDays(t,e){return t.date===e.date?0:t.date<e.date?-1:1}render(){return l`
             <div class="stack">
                 <ol class="stack">
-                    ${this.selectedDays.length===0?l` <span>${this.t.no_days_selected}</span> `:l`
-                              ${et(this.selectedDays.sort(this.sortDays),t=>t.id,this.renderDate)}
-                          `}
+                ${this.selectedDays.length===0?l`
+                        <span>${this.t.no_days_selected}</span>
+                    `:l`
+                        ${et(this.selectedDays.sort(this.sortDays),t=>t.id,this.renderDate)}
+                    `}
                 </ol>
 
                 <div class="d-flex align-items-center gap-0 mx-auto">
-                    <input
-                        class="input fit-content"
-                        type="date"
-                        @change=${this.onChange}
-                        value=${this.date}
-                    />
+                    <input class="input fit-content" type="date" @change=${this.onChange} value=${this.date} />
                     <button class="btn tight" @click=${this.addDate}>
                         ${this.t.add}
                     </button>
@@ -4444,16 +3128,13 @@ ${t}</textarea
             </div>
         `}createRenderRoot(){return this}}customElements.define("calendar-list",Tl);class Gn extends k{static get properties(){return{percentage:{type:Number}}}render(){return l`
             <div class="progress-bar">
-                <div
-                    class="progress-bar__slider"
-                    style="--percentage:${Number(this.percentage)>100?"100":this.percentage}%"
-                ></div>
+                <div class="progress-bar__slider" style="--percentage:${Number(this.percentage)>100?"100":this.percentage}%"></div>
             </div>
         `}}C(Gn,"styles",[ms`
             :host {
                 display: block;
                 --ps-primary-color: var(--primary-color, #7cb8fc);
-                --ps-secondary-color: var(--secondary-color, #c1c1c1);
+                --ps-secondary-color: var(--secondary-color, #C1C1C1);
             }
             .progress-bar {
                 height: 20px;

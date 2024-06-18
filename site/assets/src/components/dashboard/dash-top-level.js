@@ -1,14 +1,14 @@
-import { html } from 'lit'
-import { DashBoard } from './dash-board'
-import { DashPage } from './dash-page'
-import { RouteNames } from './routes'
+import { html } from 'lit';
+import { DashBoard } from './dash-board';
+import { DashPage } from './dash-page';
+import { RouteNames } from './routes';
 
 export class DashTopLevel extends DashPage {
     static get properties() {
         return {
             view: { type: String, attribute: false },
             userState: { type: Object, attribute: false },
-        }
+        };
     }
 
     constructor(routeName) {
@@ -22,11 +22,11 @@ export class DashTopLevel extends DashPage {
         this.refetchState = this.refetchState.bind(this)
     }
     connectedCallback() {
-        super.connectedCallback()
+        super.connectedCallback();
         window.addEventListener('user-state:change', this.refetchState)
     }
     disconnectedCallback() {
-        super.disconnectedCallback()
+        super.disconnectedCallback();
         window.removeEventListener('user-state:change', this.refetchState)
     }
 
@@ -34,7 +34,7 @@ export class DashTopLevel extends DashPage {
         this.view = view
     }
     refetchState() {
-        makeRequest('GET', 'user_stage', {}, 'zume_system/v1').done((data) => {
+        makeRequest('GET', 'user_stage', {}, 'zume_system/v1' ).done( ( data ) => {
             if (!data || !data.state) {
                 console.error('Stage or state data not returned from api')
             }
@@ -46,102 +46,60 @@ export class DashTopLevel extends DashPage {
     renderLinks(userState) {
         return html`
             <div class="${this.view === 'grid' ? 'nav-grid' : 'stack'}">
-                ${this.routes.map((route) => {
-                    let href = route.pattern
+                ${
+                    this.routes.map((route) => {
+                        let href = route.pattern
 
-                    const trainingGroupIds = Object.keys(
-                        jsObject.training_groups,
-                    )
+                        const trainingGroupIds = Object.keys(jsObject.training_groups)
 
-                    if (route.name === RouteNames.myTraining) {
-                        if (trainingGroupIds.length === 0) {
-                            href = route.pattern.replace(':code', 'teaser')
-                        } else if (trainingGroupIds.length > 0) {
-                            const route = DashBoard.getRoute(
-                                RouteNames.myTrainings,
-                            )
+                        if (route.name === RouteNames.myTraining) {
+                            if (trainingGroupIds.length === 0) {
+                                href = route.pattern.replace(':code', 'teaser')
+                            } else if (trainingGroupIds.length > 0) {
+                                const route = DashBoard.getRoute(RouteNames.myTrainings)
 
-                            href = route.pattern
+                                href = route.pattern
+                            }
                         }
-                    }
 
-                    if (this.view === 'grid') {
-                        return html`
-                            <grid-link
-                                href=${href}
-                                text=${route.translation || ''}
-                                icon=${route.icon}
-                                ?disableNavigate=${route.type ===
-                                'handled-link'}
-                                as=${route.type === 'handled-link'
-                                    ? 'link'
-                                    : 'nav'}
-                                @click=${route.type === 'handled-link'
-                                    ? (event) => {
-                                          if (
-                                              DashBoard.getCompletedStatus(
-                                                  route.name,
-                                                  userState,
-                                              )
-                                          )
-                                              return
-                                          route.clickHandler(
-                                              event,
-                                              this.dispatchEvent,
-                                          )
-                                      }
-                                    : null}
-                                ?completed=${DashBoard.getCompletedStatus(
-                                    route.name,
-                                    userState,
-                                )}
-                                ?locked=${DashBoard.getLockedStatus(
-                                    route.name,
-                                    userState,
-                                )}
-                            >
-                            </grid-link>
-                        `
-                    } else {
-                        return html`
-                            <list-link
-                                href=${href}
-                                text=${route.translation}
-                                explanation=${route.explanation}
-                                icon=${route.icon}
-                                ?disableNavigate=${route.type ===
-                                'handled-link'}
-                                as=${route.type === 'handled-link'
-                                    ? 'link'
-                                    : 'nav'}
-                                @click=${route.type === 'handled-link'
-                                    ? (event) => {
-                                          if (
-                                              DashBoard.getCompletedStatus(
-                                                  route.name,
-                                                  userState,
-                                              )
-                                          )
-                                              return
-                                          route.clickHandler(
-                                              event,
-                                              this.dispatchEvent,
-                                          )
-                                      }
-                                    : null}
-                                ?completed=${DashBoard.getCompletedStatus(
-                                    route.name,
-                                    userState,
-                                )}
-                                ?locked=${DashBoard.getLockedStatus(
-                                    route.name,
-                                    userState,
-                                )}
-                            >
-                            </list-link>
-                        `
-                    }
-                })}
+                        if (this.view === 'grid') {
+                            return html`
+                                <grid-link
+                                    href=${href}
+                                    text=${route.translation || ''}
+                                    icon=${route.icon}
+                                    ?disableNavigate=${route.type === 'handled-link'}
+                                    as=${route.type === 'handled-link' ? 'link' : 'nav'}
+                                    @click=${route.type === 'handled-link' ? (event) => {
+                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        route.clickHandler(event, this.dispatchEvent)
+                                    } : null}
+                                    ?completed=${DashBoard.getCompletedStatus(route.name, userState)}
+                                    ?locked=${DashBoard.getLockedStatus(route.name, userState)}
+                                >
+                                </grid-link>
+                            `
+                        } else {
+                            return html`
+                               <list-link
+                                    href=${href}
+                                    text=${route.translation}
+                                    explanation=${route.explanation}
+                                    icon=${route.icon}
+                                    ?disableNavigate=${route.type === 'handled-link'}
+                                    as=${route.type === 'handled-link' ? 'link' : 'nav'}
+                                    @click=${route.type === 'handled-link' ? (event) => {
+                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        route.clickHandler(event, this.dispatchEvent)
+                                    } : null}
+                                    ?completed=${DashBoard.getCompletedStatus(route.name, userState)}
+                                    ?locked=${DashBoard.getLockedStatus(route.name, userState)}
+                                >
+                                </list-link>
+                            `
+                        }
+                    })
+                }
             </div>
         `
     }
@@ -156,25 +114,11 @@ export class DashTopLevel extends DashPage {
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
                     <div class="icon-btn-group">
-                        <button
-                            class="${this.view === 'list' ? 'selected' : ''}"
-                            title=${jsObject.translations.list}
-                            @click=${() => this.switchView('list')}
-                        >
-                            <span
-                                class="icon z-icon-list"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view === 'list' ? 'selected' : ''}" title=${jsObject.translations.list} @click=${() => this.switchView('list')}>
+                            <span class="icon z-icon-list" aria-hidden="true"></span>
                         </button>
-                        <button
-                            class="${this.view === 'grid' ? 'selected' : ''}"
-                            title=${jsObject.translations.grid}
-                            @click=${() => this.switchView('grid')}
-                        >
-                            <span
-                                class="icon z-icon-grid"
-                                aria-hidden="true"
-                            ></span>
+                        <button class="${this.view === 'grid' ? 'selected' : ''}" title=${jsObject.translations.grid} @click=${() => this.switchView('grid')}>
+                            <span class="icon z-icon-grid" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>
@@ -183,16 +127,18 @@ export class DashTopLevel extends DashPage {
                     ${this.renderLinks(this.userState)}
                 </div>
                 <div class="dashboard__secondary">
-                    ${this.routeName === 'getting-started'
-                        ? ''
-                        : html`<dash-cta></dash-cta>`}
+                    ${
+                        this.routeName === 'getting-started'
+                            ? ''
+                            : html`<dash-cta></dash-cta>`
+                    }
                 </div>
             </div>
-        `
+        `;
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('dash-top-level', DashTopLevel)
+customElements.define('dash-top-level', DashTopLevel);

@@ -8,7 +8,7 @@ const addressResultsContainer = document.getElementById('address_results')
 
 const old_preferred_language = prefferedLanguageInput.value
 
-profileForm.addEventListener('submit', submitProfileForm)
+profileForm.addEventListener( 'submit', submitProfileForm )
 function submitProfileForm(e) {
     e.preventDefault()
 
@@ -18,16 +18,13 @@ function submitProfileForm(e) {
     const preferred_language = prefferedLanguageInput.value
 
     const data = {
-        name,
-        phone,
-        email,
-        preferred_language,
+      name,
+      phone,
+      email,
+      preferred_language,
     }
 
-    data.location_grid_meta = getLocationGridFromMapbox(
-        jsObject.mapbox_selected_id,
-        jsObject.profile.location,
-    )
+    data.location_grid_meta = getLocationGridFromMapbox(jsObject.mapbox_selected_id, jsObject.profile.location)
 
     /* start loading spinner */
     const submitButton = document.querySelector('#submit-profile')
@@ -37,27 +34,25 @@ function submitProfileForm(e) {
     loadingSpinner.classList.add('active')
 
     /* submit data to profile API endpoint */
-    fetch(jsObject.rest_endpoint + '/profile', {
+    fetch( jsObject.rest_endpoint + '/profile', {
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
-            'X-WP-Nonce': jsObject.nonce,
-        },
+            'X-WP-Nonce': jsObject.nonce
+        }
+    } )
+    .then((response) => response.json())
+    .catch((error) => {
+        console.error(error)
     })
-        .then((response) => response.json())
-        .catch((error) => {
-            console.error(error)
-        })
-        .finally(() => {
-            submitButton.removeAttribute('disabled')
-            loadingSpinner.classList.remove('active')
-        })
+    .finally(() => {
+        submitButton.removeAttribute('disabled')
+        loadingSpinner.classList.remove('active')
+    })
 }
 
-const processLocation = debounce(
-    getAddressSuggestions(addressCallback, jsObject.map_key),
-)
-cityInput.addEventListener('input', processLocation)
+const processLocation = debounce(getAddressSuggestions(addressCallback, jsObject.map_key))
+cityInput.addEventListener( 'input', processLocation )
 
 function addressCallback(data) {
     if (data.features.length < 1) {
@@ -79,7 +74,7 @@ function addressCallback(data) {
 
     addressResults = document.querySelectorAll('.address-result')
     addressResults.forEach((result) => {
-        result.addEventListener('click', function (e) {
+        result.addEventListener('click', function(e) {
             console.log('click')
             /* Escape placeName */
             const id = e.target.id

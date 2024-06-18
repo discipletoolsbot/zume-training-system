@@ -15,5 +15,5 @@ export const RouteNames = {
     myPlans: 'my-plans',
     myChurches: 'my-churches',
     myMaps: 'my-maps',
-    notFound: 'not-found',
+    notFound: 'not-found'
 }

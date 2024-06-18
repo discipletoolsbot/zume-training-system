@@ -1,12 +1,12 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class ProgressCircle extends LitElement {
     static get properties() {
         return {
-            radius: { type: Number },
-            lineWidth: { type: Number },
-            percent: { type: Number },
-        }
+            radius: { type: Number},
+            lineWidth: { type: Number},
+            percent: { type: Number},
+        };
     }
 
     constructor() {
@@ -21,7 +21,7 @@ export class ProgressCircle extends LitElement {
     }
 
     widthPx() {
-        return this.appendPx(this.width())
+        return this.appendPx( this.width() )
     }
 
     center() {
@@ -33,10 +33,10 @@ export class ProgressCircle extends LitElement {
     }
 
     circumferencePx() {
-        return this.appendPx(this.circumference())
+        return this.appendPx( this.circumference() )
     }
 
-    appendPx(number) {
+    appendPx( number ) {
         return `${number}px`
     }
 
@@ -48,29 +48,30 @@ export class ProgressCircle extends LitElement {
         return html`
             <div
                 class="progress-circle"
-                style="--percent: ${this
-                    .percent}; --width: ${this.widthPx()}; --circ: ${this.circumferencePx()}"
+                style="--percent: ${this.percent}; --width: ${this.widthPx()}; --circ: ${this.circumferencePx()}"
             >
                 <svg class="svg-wrapper">
                     <circle
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
-                    ></circle>
+                    >
+                    </circle>
                     <circle
                         class="bar"
                         cx="${this.center()}"
                         cy="${this.center()}"
                         r="${this.radius}"
                         transform="${this.rotate(-90)}"
-                    ></circle>
+                    >
+                    </circle>
                 </svg>
             </div>
-        `
+        `;
     }
 
     createRenderRoot() {
-        return this
+        return this;
     }
 }
-customElements.define('progress-circle', ProgressCircle)
+customElements.define('progress-circle', ProgressCircle);

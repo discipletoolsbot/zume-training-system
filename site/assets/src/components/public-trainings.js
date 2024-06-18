@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit'
+import { LitElement, html, css } from 'lit';
 
 export class PublicTrainings extends LitElement {
     static get properties() {
@@ -31,7 +31,7 @@ export class PublicTrainings extends LitElement {
     }
 
     getTrainings() {
-        makeRequest('POST', 'public_plans', {}, 'zume_system/v1')
+        makeRequest( 'POST', 'public_plans', {}, 'zume_system/v1' )
             .then((plans) => {
                 this.plans = plans
             })
@@ -44,12 +44,14 @@ export class PublicTrainings extends LitElement {
     }
 
     render() {
-        if (this.loading) {
+        if ( this.loading ) {
             return html`<span class="loading-spinner active"></span>`
         }
 
         if (this.plans.length === 0) {
-            return html` <p>${this.t.no_plans}</p> `
+            return html`
+                <p>${this.t.no_plans}</p>
+            `
         }
 
         return html`
@@ -66,12 +68,12 @@ export class PublicTrainings extends LitElement {
                 </thead>
                 <tbody>
                     ${this.plans.map(this.renderRow)}
-                </tbody>
+               </tbody>
             </table>
-        `
+        `;
     }
 
-    renderRow({
+    renderRow ({
         join_key,
         language_note,
         post_title,
@@ -86,16 +88,16 @@ export class PublicTrainings extends LitElement {
         const now = Date.now() / 1000
 
         let latestPlanDate = ''
-        for (let i = 1; i < plan_length + 1; i++) {
-            const sessionIndex = i < 10 ? `0${i}` : `${i}`
-            const sessionDate = fields[plan_prefix + sessionIndex]
-            latestPlanDate = sessionDate['timestamp']
-            if (now < sessionDate['timestamp']) {
-                break
+        for ( let i = 1; i < plan_length + 1; i++ ) {
+            const sessionIndex = i < 10 ? `0${i}` : `${i}`;
+            const sessionDate = fields[plan_prefix + sessionIndex];
+            latestPlanDate = sessionDate['timestamp'];
+            if ( now < sessionDate['timestamp'] ) {
+                break;
             }
         }
 
-        const formattedDate = moment(latestPlanDate * 1000).format("MMM Do 'YY")
+        const formattedDate = moment(latestPlanDate * 1000).format('MMM Do \'YY')
 
         return html`
             <tr>
@@ -104,15 +106,7 @@ export class PublicTrainings extends LitElement {
                 <td data-label="${this.t.start_time}">${time_of_day_note}</td>
                 <td data-label="${this.t.timezone}">${timezone_note}</td>
                 <td data-label="${this.t.language}">${language_note}</td>
-                <td>
-                    <button
-                        class="btn"
-                        data-code=${join_key}
-                        @click=${this._handleJoinTraining}
-                    >
-                        ${this.t.join}
-                    </button>
-                </td>
+                <td><button class="btn" data-code=${join_key} @click=${this._handleJoinTraining}>${this.t.join}</button></td>
             </tr>
         `
     }
@@ -122,10 +116,7 @@ export class PublicTrainings extends LitElement {
 
         const code = event.target.dataset.code
 
-        const chosenTrainingEvent = new CustomEvent('chosen-training', {
-            bubbles: true,
-            detail: { code },
-        })
+        const chosenTrainingEvent = new CustomEvent( 'chosen-training', { bubbles: true, detail: { code } } )
         this.dispatchEvent(chosenTrainingEvent)
     }
 
@@ -133,4 +124,4 @@ export class PublicTrainings extends LitElement {
         return this
     }
 }
-customElements.define('public-trainings', PublicTrainings)
+customElements.define('public-trainings', PublicTrainings);

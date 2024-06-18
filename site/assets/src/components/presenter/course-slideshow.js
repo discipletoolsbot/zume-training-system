@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class CourseSlideshow extends LitElement {
     static get properties() {
@@ -8,7 +8,7 @@ export class CourseSlideshow extends LitElement {
             sectionIndex: { attribute: false },
             currentSlide: { attribute: false },
             index: { attribute: false },
-        }
+        };
     }
 
     constructor() {
@@ -23,33 +23,28 @@ export class CourseSlideshow extends LitElement {
     }
 
     reset() {
-        this.sectionIndex = -1
-        this.currentSlide = null
+        this.sectionIndex = -1;
+        this.currentSlide = null;
     }
 
     connectedCallback() {
-        super.connectedCallback()
+        super.connectedCallback();
 
         document.addEventListener('keydown', this.listenForKeyboard)
         document.addEventListener('mousedown', this.listenForMouseClick)
     }
     disconnectedCallback() {
-        super.disconnectedCallback()
+        super.disconnectedCallback();
 
         document.removeEventListener('keydown', this.listenForKeyboard)
         document.removeEventListener('mousedown', this.listenForMouseClick)
     }
     update(changedProperties) {
-        if (changedProperties.has('sections')) {
+        if ( changedProperties.has('sections') ) {
             this.reset()
         }
-        if (
-            changedProperties.has('startSlideKey') &&
-            this.startSlideKey !== ''
-        ) {
-            const slideIndex = this.sections.findIndex(
-                ({ key }) => key === this.startSlideKey,
-            )
+        if (changedProperties.has('startSlideKey') && this.startSlideKey !== '') {
+            const slideIndex = this.sections.findIndex(({key}) => key === this.startSlideKey)
 
             this.setSlide(slideIndex)
         }
@@ -57,7 +52,7 @@ export class CourseSlideshow extends LitElement {
     }
 
     nextSlide() {
-        if (this.sectionIndex >= this.sections.length - 1) {
+        if ( this.sectionIndex >= this.sections.length - 1 ) {
             this.sectionIndex = this.sections.length - 1
             return
         }
@@ -65,7 +60,7 @@ export class CourseSlideshow extends LitElement {
         this.setSlide(this.sectionIndex + 1)
     }
     previousSlide() {
-        if (this.sectionIndex < 0) {
+        if ( this.sectionIndex < 0 ) {
             this.sectionIndex = 0
         }
 
@@ -88,13 +83,13 @@ export class CourseSlideshow extends LitElement {
         }
     }
     listenForKeyboard(event) {
-        if (['ArrowRight'].includes(event.code)) {
+        if ( [ 'ArrowRight' ].includes(event.code) ) {
             this.rightSlide()
         }
-        if (['Space'].includes(event.code)) {
+        if ( ['Space'].includes(event.code) ) {
             this.nextSlide()
         }
-        if (['ArrowLeft'].includes(event.code)) {
+        if ( [ 'ArrowLeft' ].includes(event.code) ) {
             this.leftSlide()
         }
         if (['Backspace'].includes(event.code)) {
@@ -107,31 +102,30 @@ export class CourseSlideshow extends LitElement {
         }
 
         const matcher = (target) => {
-            return (
-                target.id === 'offCanvas' ||
-                target.classList.contains('js-off-canvas-overlay') ||
-                target.classList.contains('bypass-nav-click')
-            )
+            return target.id === 'offCanvas'
+                || target.classList.contains('js-off-canvas-overlay')
+                || target.classList.contains('bypass-nav-click')
         }
-        if (this.hasParent(event.target, matcher)) {
+        if (this.hasParent(event.target, matcher)
+        ) {
             return
         }
 
         const { x, type, which } = event
 
-        if (type !== 'mousedown' || which !== 1) {
+        if ( type !== 'mousedown' || which !== 1 ) {
             return
         }
 
         const { innerWidth } = window
 
-        const threshhold = (1 / 2) * innerWidth
+        const threshhold = 1 / 2 * innerWidth
 
-        if (x < threshhold) {
+        if ( x < threshhold ) {
             this.leftSlide()
         }
 
-        if (x > innerWidth - threshhold) {
+        if ( x > innerWidth - threshhold ) {
             this.rightSlide()
         }
     }
@@ -161,16 +155,13 @@ export class CourseSlideshow extends LitElement {
     }
 
     render() {
-        if (this.sectionIndex < 0) {
+        if ( this.sectionIndex < 0 ) {
             this.setSlide(0)
         }
         return html`
             <div class="cover-page course-slideshow">
                 <div>
-                    <slide-switcher
-                        .slide=${this.currentSlide}
-                        showControls
-                    ></slide-switcher>
+                    <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
                 <div class="visual-indicator left">
                     <img
@@ -187,14 +178,14 @@ export class CourseSlideshow extends LitElement {
                     />
                 </div>
             </div>
-        `
+        `;
     }
 
     /**
      * Disable the shadow DOM
      */
     createRenderRoot() {
-        return this
+        return this;
     }
 }
-customElements.define('course-slideshow', CourseSlideshow)
+customElements.define('course-slideshow', CourseSlideshow);

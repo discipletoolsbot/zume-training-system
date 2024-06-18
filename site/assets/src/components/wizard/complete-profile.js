@@ -1,6 +1,6 @@
-import { LitElement, html } from 'lit'
-import { live } from 'lit/directives/live.js'
-import { Steps } from './wizard-constants'
+import { LitElement, html } from "lit"
+import { live } from 'lit/directives/live.js';
+import { Steps } from "./wizard-constants";
 
 export class CompleteProfile extends LitElement {
     static get properties() {
@@ -60,9 +60,7 @@ export class CompleteProfile extends LitElement {
 
         this._clearLocations = this._clearLocations.bind(this)
         this._handleSuggestions = this._handleSuggestions.bind(this)
-        this._debounceCityChange = debounce(
-            getAddressSuggestions(this._handleSuggestions, jsObject.map_key),
-        ).bind(this)
+        this._debounceCityChange = debounce(getAddressSuggestions(this._handleSuggestions, jsObject.map_key)).bind(this)
         this._handleCityInputChange = this._handleCityInputChange.bind(this)
     }
 
@@ -81,172 +79,95 @@ export class CompleteProfile extends LitElement {
 
     render() {
         return html`
-            <form class="inputs stack" @submit=${this._handleSubmit}>
-                ${this.variant === Steps.updateName
-                    ? html`
-                          <h2>${this.t.name_question}</h2>
-                          <div class="d-flex align-items-center">
-                              <label for="name" class="visually-hidden"
-                                  >${this.t.name}</label
-                              >
-                              <input
-                                  class="input"
-                                  type="text"
-                                  id="name"
-                                  name="name"
-                                  value=${this.localValue}
-                                  ?required=${!this.skippable}
-                                  placeholder=${this.t.name}
-                              />
-                              <button
-                                  type="button"
-                                  class="icon-btn f-1"
-                                  @click=${() => this._toggleInfo('name')}
-                              >
-                                  <span
-                                      class="icon z-icon-info brand-light"
-                                  ></span>
-                              </button>
-                          </div>
-                      `
-                    : ''}
-                ${this.variant === Steps.updatePhone
-                    ? html`
-                          <h2>${this.t.phone_question}</h2>
-                          <div class="d-flex align-items-center">
-                              <label for="phone" class="visually-hidden"
-                                  >${this.t.phone}</label
-                              >
-                              <input
-                                  class="input"
-                                  type="tel"
-                                  id="phone"
-                                  name="phone"
-                                  pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
-                                  value=""
-                                  placeholder=${this.t.phone}
-                                  ?required=${!this.skippable}
-                                  @input=${this._handleInput}
-                                  @invalid=${this._handleInvalid}
-                              />
-                              <button
-                                  type="button"
-                                  class="icon-btn f-1"
-                                  @click=${() => this._toggleInfo('phone')}
-                              >
-                                  <span
-                                      class="icon z-icon-info brand-light"
-                                  ></span>
-                              </button>
-                              <div
-                                  class="input-error"
-                                  data-state="${this.phoneError.length
-                                      ? ''
-                                      : 'empty'}"
-                              >
-                                  ${this.phoneError}
-                              </div>
-                          </div>
-                      `
-                    : ''}
-                ${this.variant === Steps.updateLocation
-                    ? html`
-                          <h2>${this.t.location_question}</h2>
-                          <div class="form-group">
-                              <div class="d-flex align-items-center">
-                                  <label
-                                      class="input-label visually-hidden"
-                                      for="city"
-                                      >${this.t.city}</label
-                                  >
-                                  <input
-                                      class="input"
-                                      type="text"
-                                      id="city"
-                                      name="city"
-                                      placeholder=${this.t.city}
-                                      .value="${this.city
-                                          ? live(this.city)
-                                          : this.localValue?.label}"
-                                      @input=${this._handleCityChange}
-                                  />
-                                  <button
-                                      type="button"
-                                      class="icon-btn f-1"
-                                      @click=${() =>
-                                          this._toggleInfo('location')}
-                                  >
-                                      <span
-                                          class="icon z-icon-info brand-light"
-                                      ></span>
-                                  </button>
-                              </div>
-                              <span
-                                  class="loading-spinner ${this.loading
-                                      ? 'active'
-                                      : ''}"
-                              ></span>
-                              <p class="input-subtext">
-                                  ${this.t.approximate_location}
-                              </p>
-                          </div>
-                          <div
-                              id="address_results"
-                              class="stack--3 mx-auto fit-content"
-                          >
-                              ${this.locationError}
-                              ${this.locations.map((location) => {
-                                  return html`
-                                      <div
-                                          class="address-result btn rounded"
-                                          id="${location.id}"
-                                          data-place-name=${location.place_name}
-                                          @click=${this
-                                              ._handleLocationSelection}
-                                      >
-                                          ${location.place_name}
-                                      </div>
-                                  `
-                              })}
-                          </div>
-                      `
-                    : ''}
-                <div
-                    class="info-area collapse"
-                    data-state=${this.isInfoOpen ? 'open' : 'closed'}
-                >
-                    <div class="card mw-50ch mx-auto">
-                        <p>${this.infoText}</p>
-                        <a
-                            class="f--1 gray-500"
-                            href=${jsObject.privacy_url +
-                            '#personal-information'}
-                            target="_blank"
-                            >${this.t.privacy_page}</a
-                        >
-                    </div>
-                </div>
-                <div class="cluster | mx-auto">
-                    <button
-                        type="submit"
-                        class="btn tight"
-                        ?disabled=${this.loading}
-                    >
-                        ${this.t.next}
-                        ${[Steps.updatePhone, Steps.updateName].includes(
-                            this.variant,
-                        )
-                            ? html`
-                                  <span
-                                      class="loading-spinner ${this.loading
-                                          ? 'active'
-                                          : ''}"
-                                  ></span>
-                              `
-                            : ''}
+        <form class="inputs stack" @submit=${this._handleSubmit}>
+            ${ this.variant === Steps.updateName ? html`
+                <h2>${this.t.name_question}</h2>
+                <div class="d-flex align-items-center">
+                    <label for="name" class="visually-hidden">${this.t.name}</label>
+                    <input class="input" type="text" id="name" name="name" value=${this.localValue} ?required=${!this.skippable} placeholder=${this.t.name}>
+                    <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('name')}>
+                        <span class="icon z-icon-info brand-light"></span>
                     </button>
                 </div>
-            </form>
+            ` : ''}
+
+            ${ this.variant === Steps.updatePhone ? html`
+                <h2>${this.t.phone_question}</h2>
+                <div class="d-flex align-items-center">
+                    <label for="phone" class="visually-hidden">${this.t.phone}</label>
+                    <input
+                        class="input"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="\\(?\\+?[\\(\\)\\-\\s0-9]*"
+                        value=""
+                        placeholder=${this.t.phone}
+                        ?required=${!this.skippable}
+                        @input=${this._handleInput}
+                        @invalid=${this._handleInvalid}
+                    >
+                    <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('phone')}>
+                        <span class="icon z-icon-info brand-light"></span>
+                    </button>
+                    <div class="input-error" data-state="${this.phoneError.length ? '' : 'empty'}" >${this.phoneError}</div>
+                </div>
+            ` : ''}
+
+            ${ this.variant === Steps.updateLocation ? html`
+                <h2>${this.t.location_question}</h2>
+                <div class="form-group">
+                    <div class="d-flex align-items-center">
+                        <label class="input-label visually-hidden" for="city">${this.t.city}</label>
+                        <input
+                            class="input"
+                            type="text"
+                            id="city"
+                            name="city"
+                            placeholder=${this.t.city}
+                            .value="${this.city ? live(this.city) : this.localValue?.label}"
+                            @input=${this._handleCityChange}
+                        >
+                        <button type="button" class="icon-btn f-1" @click=${() => this._toggleInfo('location')}>
+                            <span class="icon z-icon-info brand-light"></span>
+                        </button>
+                    </div>
+                    <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                    <p class="input-subtext">${this.t.approximate_location}</p>
+                </div>
+                <div id="address_results" class="stack--3 mx-auto fit-content">
+                    ${this.locationError}
+                    ${this.locations.map((location) => {
+                        return html`
+                            <div
+                                class="address-result btn rounded"
+                                id="${location.id}"
+                                data-place-name=${location.place_name}
+                                @click=${this._handleLocationSelection}
+                            >
+                                ${location.place_name}
+                            </div>
+                        `
+                    })}
+                </div>
+
+            ` : '' }
+            <div class="info-area collapse" data-state=${this.isInfoOpen ? 'open' : 'closed'}>
+                <div class="card mw-50ch mx-auto">
+                    <p>${this.infoText}</p>
+                    <a class="f--1 gray-500" href=${jsObject.privacy_url + '#personal-information'} target="_blank">${this.t.privacy_page}</a>
+                </div>
+            </div>
+            <div class="cluster | mx-auto">
+                <button type="submit" class="btn tight" ?disabled=${this.loading}>
+                    ${this.t.next}
+                   ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
+                        <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
+                    ` : '' }
+                </button>
+            </div>
+        </form>
+
         `
     }
 
@@ -295,11 +216,11 @@ export class CompleteProfile extends LitElement {
     }
 
     _sendDoneStepEvent() {
-        this.dispatchEvent(new CustomEvent('done-step', { bubbles: true }))
+        this.dispatchEvent(new CustomEvent( 'done-step', { bubbles: true } ))
     }
 
     _sendProfileUpdateEvent() {
-        this.dispatchEvent(new CustomEvent('profile:reload', { bubbles: true }))
+        this.dispatchEvent(new CustomEvent( 'profile:reload', { bubbles: true } ))
     }
 
     _handleCityChange(event) {
@@ -322,10 +243,7 @@ export class CompleteProfile extends LitElement {
     _handleLocationSelection(event) {
         this.city = event.target.dataset.placeName
 
-        const value = getLocationGridFromMapbox(
-            event.target.id,
-            jsObject.profile.location,
-        )
+        const value = getLocationGridFromMapbox(event.target.id, jsObject.profile.location)
 
         this.localValue = value
         this._clearLocations()
@@ -354,29 +272,29 @@ export class CompleteProfile extends LitElement {
         this.loading = true
 
         const updates = {
-            [key]: value,
+            [key]: value
         }
 
-        fetch(jsObject.rest_endpoint + '/profile', {
+        fetch( jsObject.rest_endpoint + '/profile', {
             method: 'POST',
             body: JSON.stringify(updates),
             headers: {
-                'X-WP-Nonce': jsObject.nonce,
-            },
-        })
-            .then((response) => response.json())
-            .then((newProfile) => {
-                jsObject.profile = newProfile
+                'X-WP-Nonce': jsObject.nonce
+            }
+        } )
+        .then((response) => response.json())
+        .then((newProfile) => {
+            jsObject.profile = newProfile
 
-                this._sendProfileUpdateEvent()
-                successCallback()
-            })
-            .catch((error) => {
-                console.error(error)
-            })
-            .finally(() => {
-                this.loading = false
-            })
+            this._sendProfileUpdateEvent()
+            successCallback()
+        })
+        .catch((error) => {
+            console.error(error)
+        })
+        .finally(() => {
+            this.loading = false
+        })
     }
 
     _clearLocations() {
@@ -396,15 +314,15 @@ export class CompleteProfile extends LitElement {
         switch (type) {
             case 'name':
                 this.infoText = this.t.user_name_disclaimer
-                break
+                break;
             case 'phone':
                 this.infoText = this.t.user_phone_disclaimer
-                break
+                break;
             case 'location':
                 this.infoText = this.t.user_city_disclaimer
-                break
+                break;
             default:
-                break
+                break;
         }
     }
 
@@ -413,4 +331,4 @@ export class CompleteProfile extends LitElement {
     }
 }
 
-window.customElements.define('complete-profile', CompleteProfile)
+window.customElements.define( 'complete-profile', CompleteProfile )

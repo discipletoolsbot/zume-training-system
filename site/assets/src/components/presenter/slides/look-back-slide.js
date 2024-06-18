@@ -1,9 +1,9 @@
-import { html } from 'lit'
-import { CourseSlide } from './course-slide'
+import { html } from 'lit';
+import { CourseSlide } from './course-slide';
 
 export class LookBackSlide extends CourseSlide {
-    render() {
-        return html`
+  render() {
+    return html`
             <div class="slides-card">
                 ${this.renderProgressBar()}
                 <div class="two-column left">
@@ -14,9 +14,7 @@ export class LookBackSlide extends CourseSlide {
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide['left'][0]}</h2>
-                                <span class="subtitle"
-                                    >${this.slide['length']}</span
-                                >
+                                <span class="subtitle">${this.slide['length']}</span>
                             </div>
                         </div>
                     </div>
@@ -27,7 +25,7 @@ export class LookBackSlide extends CourseSlide {
                     </div>
                 </div>
             </div>
-        `
-    }
+        `;
+  }
 }
-customElements.define('look-back-slide', LookBackSlide)
+customElements.define('look-back-slide', LookBackSlide);

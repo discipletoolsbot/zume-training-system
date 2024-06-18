@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit'
+import { LitElement, html } from 'lit';
 
 export class DashHeaderRight extends LitElement {
     firstUpdated() {
@@ -12,11 +12,11 @@ export class DashHeaderRight extends LitElement {
                 <dash-sidebar-toggle displayOn="medium"></dash-sidebar-toggle>
                 <launch-course></launch-course>
             </div>
-        `
+        `;
     }
 
     createRenderRoot() {
         return this
     }
 }
-customElements.define('dash-header-right', DashHeaderRight)
+customElements.define('dash-header-right', DashHeaderRight);
