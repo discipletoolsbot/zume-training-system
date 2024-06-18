@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-10 17:23+0100\n"
-"PO-Revision-Date: 2024-06-14 09:53+0000\n"
+"PO-Revision-Date: 2024-06-18 09:10+0000\n"
 "Last-Translator: Sidney Huang <sidney.huang@tast.com.tw>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
@@ -807,131 +807,106 @@ msgstr "發展領袖能力"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Unaware"
 msgstr "不知情"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Unskilled"
 msgstr "不熟練"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
 msgstr "完全的"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Skilled"
 msgstr "技能的"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
-#, fuzzy
 msgid "Mentor’s Role"
 msgstr "導師的角色"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Train new information and ensure understanding"
 msgstr "培訓新資訊並確保理解"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr "停下來和他們在一起，直到他們掌握了基礎知識"
+msgstr "停下來並陪伴著他們，直到他們掌握了基礎知識"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
-#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr "保持敬業度，直到始終有能力"
+msgstr "保持參與，直到始終有能力"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr "將他們視為合作者"
+msgstr "將他們視為合作夥伴"
 
 #: site/activities/coaching-checklist.php:167
-#, fuzzy
 msgid "Mentor’s Behaviors"
 msgstr "導師的行為"
 
 #: site/activities/coaching-checklist.php:173
-#, fuzzy
 msgid "Direct and inform"
-msgstr "直接並告知"
+msgstr "指導並告知"
 
 #: site/activities/coaching-checklist.php:176
-#, fuzzy
 msgid "Direct and support"
-msgstr "直接和支持"
+msgstr "指導與支持"
 
 #: site/activities/coaching-checklist.php:179
-#, fuzzy
 msgid "Support and encourage"
 msgstr "支持和鼓勵"
 
 #: site/activities/coaching-checklist.php:182
-#, fuzzy
 msgid "Receive updates"
 msgstr "接收更新"
 
 #: site/activities/coaching-checklist.php:187
-#, fuzzy
 msgid "Planning Responsibilities"
 msgstr "規劃職責"
 
 #: site/activities/coaching-checklist.php:193
-#, fuzzy
 msgid "Mentor decides"
 msgstr "導師決定"
 
 #: site/activities/coaching-checklist.php:196
-#, fuzzy
 msgid "Discuss and Mentor decides"
 msgstr "討論並由導師決定"
 
 #: site/activities/coaching-checklist.php:199
-#, fuzzy
 msgid "Discuss and Mentee decides"
 msgstr "討論並由學員決定"
 
 #: site/activities/coaching-checklist.php:202
-#, fuzzy
 msgid "Mentee decides"
 msgstr "學員決定"
 
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "學員是否不知道、不熟悉或誤解了該工具？"
+msgstr "1. 學員是否不知道、不熟悉或誤解了該工具？請在紅色欄位底下打勾。"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr ""
-"2. 若是知道大概﹐但對怎麼應用這個工具還不很確定﹐就在紅色欄位底下打勾。"
+msgstr "2. 學員是否對該工具有大概的了解但不是很確定？"
 
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr "學員是否了解該工具並能夠培訓該工具的基礎知識？"
+msgstr "3. 學員是否了解該工具並能夠培訓該工具的基礎知識？"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
-msgstr ""
-"4. 如果你對這工具很有把握﹐而且能有效培訓別人使用﹐請在綠色欄位底下打勾。"
+msgstr "4. 如果你對這工具很有把握﹐而且能有效培訓別人使用﹐請在綠色欄位底下打勾。"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -994,8 +969,7 @@ msgid ""
 "connects with the audience they’re sharing with."
 msgstr ""
 "沒有一種「最好的方式」來講述神的故事（也稱為福音），因為最好的方式取決於你與"
-"誰分享。每個門徒都應該學習以符合聖經的方式講述上帝的故事，並與他們分享的聽眾"
-"建立聯繫。"
+"誰分享。每個門徒都應該學習以符合聖經的方式講述上帝的故事，並與聽眾產生共鳴。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:22
 #: site/course/_strings-3-circle-gospel-presentation.php:60
@@ -1075,7 +1049,7 @@ msgstr "簡述福音"
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
-msgstr "分享上帝好消息的一種方法是使用稱為「3 個圓圈」的視覺演示。"
+msgstr "分享上帝好消息的一種方法是使用叫做「3 個圓圈」的視覺演示。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1113,22 +1087,19 @@ msgstr "活動"
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr "掃描二維碼或找到一張紙。"
+msgstr "掃QR Code 或找一張紙。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#, fuzzy
 msgid "Select a person from your list of 100."
 msgstr "每人擬出自己的「百人關注名單」"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
-#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
-msgstr "使用輔導清單並評估您選擇的人。問問自己，“這個人需要什麼工具和概念？”"
+msgstr "使用輔導清單並評估您選擇的人。問問自己“這個人需要什麼工具和觀念？”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
-#, fuzzy
 msgid "Check off the checklist."
 msgstr "檢查清單。"
 
@@ -1151,7 +1122,7 @@ msgstr "活動來源"
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
-msgstr "評估自己 - 評估自己並標記輔導清單上的相應欄。"
+msgstr "評估自己 - 評估自己並在輔導清單上的對應欄做標記。"
 
 #: site/course/course-builder.php:164
 msgid "(1 min)"
@@ -1159,7 +1130,7 @@ msgstr "（1分鐘）"
 
 #: site/course/course-builder.php:167
 msgid "(15 min)"
-msgstr "（1分鐘）"
+msgstr "（15分鐘）"
 
 #: site/course/course-builder.php:168
 msgid "(20 min)"
@@ -1308,7 +1279,7 @@ msgstr "讓所有參與者和輔導員簽到。"
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
 msgid "Or zume.training/checkin and use code:"
-msgstr "或 zume.training/checkin 並使用程式碼："
+msgstr "或到 zume.training/checkin 並使用代碼："
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1334,9 +1305,8 @@ msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
-msgstr ""
-"從禱告開始！若沒有聖靈的同在，就不可能有屬靈洞見與轉變。鼓勵弟兄姊妹撥出時間"
-"一起尋求神，祈求祂在這堂課中親自引導你們。"
+msgstr "從禱告開始！若沒有聖靈的同在，就不可能有屬靈的洞察力與轉變。鼓勵弟兄姊妹撥出"
+"點時間一起尋求神，祈求祂在這堂課中親自引導你們。"
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1362,11 +1332,11 @@ msgstr "概述"
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr "在本次會議中，我們將聽到並討論這些概念："
+msgstr "在本章節中，我們將學習並討論這些觀念："
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr "門徒與教會的簡單定義"
+msgstr "簡單定義門徒與教會"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1383,7 +1353,7 @@ msgstr "我們將把這些工具加入我們的工具包："
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
 #: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "SOAPS香皂讀經法"
+msgstr "S.O.A.P.S.香皂讀經法"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
@@ -1398,7 +1368,7 @@ msgstr ""
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr "一提到教會﹐你們有什麼看法？你們馬上想到什麼？"
+msgstr "一提到教會﹐你們有什麼看法？你們會馬上想到什麼？"
 
 #: site/course/course-content.php:180
 msgid ""
@@ -1414,7 +1384,7 @@ msgstr "你們認為哪一種教會比較容易倍增發展？為什麼？"
 msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
-msgstr "精神呼吸。我們吸氣。我們呼氣。我們還活著。聆聽和順服神也是如此。"
+msgstr "精神呼吸。我們吸氣。我們呼氣。我們活著。我們聆聽和順服神也是如此。"
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
@@ -1430,9 +1400,8 @@ msgid ""
 "Hearing from God regularly is a key element in our personal relationship "
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
-msgstr ""
-"每天聆聽神的話語﹐是我們與神建立關係的要素﹐也使我們能夠不斷順服而經歷神在我"
-"們身上的作為。"
+msgstr "每天聆聽神的話語﹐是我們與神建立關係的重要因素﹐也是使我們能夠不斷順服而經歷"
+"神在我們身上的作為。"
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
@@ -1442,12 +1411,12 @@ msgstr "練習 S.O.A.P.S."
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
-msgstr ""
-"掃描二維碼並使用馬太福音 6:9-13 透過 SOAPS 聖經學習模式單獨工作。 （20 分鐘）"
+msgstr "掃描QR Code並用馬太福音 6:9-13 透過S.O.A.P.S.聖經學習模式單獨工作。 （20 "
+"分鐘）"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr "查考聖經"
+msgstr "查詢聖經"
 
 #: site/course/course-content.php:277
 msgid "Observation"
@@ -1469,18 +1438,17 @@ msgstr "分享"
 #: site/course/course-content.php:282
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
-msgstr "一起返回並分享您的 S.O.A.P.S.兩三人一組。 （10 分鐘）"
+msgstr "两人或三人一组，一起返回並分享你们的 S.O.A.P.S.。 (10 分钟）"
 
 #: site/course/course-content.php:304
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
-msgstr ""
-"聖經告訴我們，每一位耶穌的跟隨者有一天都會為我們的所作所為、所說所想負責。"
+msgstr "聖經告訴我們，每一位耶穌的跟隨者有一天都會為自己的所作所為、所言所想負責。"
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
-msgstr "問責小組是做好準備的好方法！"
+msgstr "責任小組是做好準備的好方法！"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
@@ -1493,11 +1461,11 @@ msgstr "操練 - 守望互勉小組"
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
 msgid "Scan the QR code."
-msgstr "掃描二維碼。"
+msgstr "掃描QR code。"
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr "分成每組2到3人的小組，同小組同性別。"
+msgstr "每一組2到3人，同性別同小組。"
 
 #: site/course/course-content.php:333
 msgid ""
@@ -1530,14 +1498,14 @@ msgstr "審查"
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
-msgstr "本次會議中聽到的概念："
+msgstr "本課堂中學到的觀念："
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
-msgstr "本次會議中聽到的工具："
+msgstr "本課堂中學到的工具："
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1577,17 +1545,17 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
-"開始操練 SOAPS 香皂讀經法吧！下次聚會前﹐專注在馬太福音五至七章﹐每天至少讀過"
-"一遍﹐並且要每天寫下 SOAPS 香皂讀經日誌。"
+"開始操練S.O.A.P.S. "
+"香皂讀經法吧！下次聚會前﹐專注在馬太福音五到七章﹐每天至少讀過一遍﹐"
+"並且要每天寫下S.O.A.P.S. 香皂讀經日誌。"
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
-msgstr ""
-"求主引導你挑戰至少五個你認識的信徒，開始他們自己的 S.O.A.P.S.每天練習讀聖經，"
-"然後這樣做。"
+msgstr "求主引導你挑戰至少五個你認識的信徒，開始他們自己的每日 S.O.A.P.S. "
+"讀經練習，然後這樣做。"
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
@@ -1598,7 +1566,7 @@ msgstr "第二節"
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
-msgstr "詢問小組中是否有人有特定的需要，希望小組為之禱告。"
+msgstr "詢問小組中是否有人有特殊需求，希望小組為此禱告。"
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
 msgid ""
@@ -1661,7 +1629,7 @@ msgstr "在開始之前，花一些時間回顧一下。"
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
-msgstr "在上一堂課結束時，小組中的每個人都面臨著練習所學的挑戰。"
+msgstr "在上一堂課結束時，小組中的每個人都面臨著練習你所學的挑戰。"
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1678,14 +1646,14 @@ msgstr "在上一堂課結束時，小組中的每個人都面臨著練習所學
 #: site/course/course-content.php:5271 site/course/course-content.php:5404
 #: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
-msgstr "所以花一些時間評估組員們這星期做得如何。"
+msgstr "花一些時間評估組員們這星期做得如何。"
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
 msgid "In this session, we will hear and discuss this concept:"
-msgstr "在本次會議中，我們將聽到並討論這個概念："
+msgstr "在本次課堂中，我們將聽到並討論這個觀念："
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -1703,9 +1671,8 @@ msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
-msgstr ""
-"如果我們希望帶出能倍增的門徒——靈性生產型而非消費型的門徒，那麼我們必須學習並"
-"分享以下四種方式，好使我們這些天天跟隨基督的門徒，更像耶穌："
+msgstr "如果我們希望培養出倍增的門徒——靈性生產型而非消費型的門徒，那麼我們必須學習並"
+"分享以下四種方式，好使我們這些天天跟隨基督的門徒更像耶穌："
 
 #: site/course/course-content.php:499
 msgid "Body Life"
@@ -1723,39 +1690,37 @@ msgstr "上面詳細描述的四種方式﹙靈修禱告、查考聖經…等﹚
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr "你不太有把握的有哪幾種？"
+msgstr "哪種是你沒有把握的？"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
-msgstr "在訓練他人的事上，你覺得你預備得如何？"
+msgstr "在訓練他人的事上，你覺得你準備得如何？"
 
 #: site/course/course-content.php:547
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
-msgstr ""
-"聖經告訴我們﹐禱告給我們機會向那造我們的神說話﹐同時聆聽祂要對我們說的話！"
+msgstr "聖經告訴我們﹐禱告給我們機會向那創造我們的神說話﹐同時聆聽祂要對我們說的話！"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr "單獨進行一小時的祈禱週期祈禱"
+msgstr "單獨進行一小時的循環祈禱"
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr "掃描二維碼即可在手機上取得祈禱週期指南。"
+msgstr "掃描QR Code即可在手機上獲得祈禱週期指南。"
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
 "Set a time for the group to return and reconnect. Be sure to add a few extra "
 "minutes for everyone to both find a quiet place to pray and to make their "
 "way back to the group."
-msgstr ""
-"分開前要事先定好小組集合的時間﹐但要記得多留一點時間﹐讓每一位成員找到安靜的"
-"地點來禱告﹐也有充裕的時間回到集合地點。"
+msgstr "替小組設定一個重新回來集合建立關係的時間﹐但要記得多留一點時間給大家﹐讓每一"
+"位成員既能找到安靜的地點來禱告﹐也有充裕的時間回到小組中。"
 
 #: site/course/course-content.php:592
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr "請問你對撥出一個鐘頭時間來禱告有什麼看法？"
+msgstr "請問你對出花一個小時的時間來禱告有什麼看法？"
 
 #: site/course/course-content.php:593
 msgid "How do you feel?"
@@ -1763,7 +1728,7 @@ msgstr "你覺得如何？"
 
 #: site/course/course-content.php:594
 msgid "Did you learn or hear anything?"
-msgstr "有學到或聽到什麼嗎？"
+msgstr "你有學到或聽到什麼嗎？"
 
 #: site/course/course-content.php:595
 msgid ""
@@ -1792,13 +1757,13 @@ msgstr "每人擬出自己的「百人關注名單」"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
-msgstr "掃描二維碼或使用一張紙。"
+msgstr "掃描QR Code或用一張紙。"
 
 #: site/course/course-content.php:644
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
-msgstr "讓小組中的每個人在接下來的 30 分鐘內填寫自己的關係清單。盡可能多列出。"
+msgstr "讓小組中的每個人在接下來的 30 分鐘內填寫自己的關係清單。盡可能地列出。"
 
 #: site/course/course-content.php:645
 msgid ""
@@ -1821,9 +1786,8 @@ msgid ""
 "Spend time this week praying for five people from your List of 100 that you "
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
-msgstr ""
-"這一週﹐從你的「百人關注名單」裡﹐挑選出五位你們列為「非信徒」或「不清楚」的"
-"人，並為他們禱告。求神預備他們的心﹐使他們敞開心聆聽神的故事。"
+msgstr "這一週﹐從你的「百人關注名單」裡﹐挑選出五位你們列為「非信徒」或「不清楚」的"
+"人，並為他們禱告。求神預備他們的心﹐使他們敞開心來聆聽神的故事。"
 
 #: site/course/course-content.php:687 site/course/course-content.php:3571
 msgid ""
@@ -1836,25 +1800,24 @@ msgstr ""
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
 msgid "To saturate the world with multiplying disciples in our generation."
-msgstr "讓我們這一代的門徒數量不斷增加，從而使世界充滿。"
+msgstr "讓我們這一代的門徒數量不斷增加，從而充滿世界。"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr "Zúme 是一個為那些希望看到門徒訓練運動的人提供的實踐社區。"
+msgstr "Zúme 是一個為那些希望看到門徒培訓運動的人提供的實踐社區。"
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
 msgid "SESSION 3"
-msgstr "第三節"
+msgstr "第三堂"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
-msgstr ""
-"為您在上一次會議中經歷祂的方式祈禱並感謝上帝，並邀請祂的聖靈帶領您一起度過這"
+msgstr "為您在上一次課堂中經歷祂的方式祈禱並感謝上帝，並邀請祂的聖靈帶領您一起度過這"
 "段時間。"
 
 #: site/course/course-content.php:819
@@ -1864,9 +1827,9 @@ msgid ""
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
-"在這個破碎的世界上﹐人們只有在比別人獲取得多﹑接受更多、獲益更大時才肯罷休，"
-"覺得夠本了。但是神的屬靈經濟學不一樣──那些在已得的事上忠心的人﹐神會更加添給"
-"他們。"
+"在這個支離破碎的世界裡﹐人們只有在比其他人獲取得多﹑接受更多、獲益更大時才肯"
+"罷休，覺得自己有獲得回報。但是神的屬靈經濟學不一樣──那些在已得的事上忠心的人"
+"﹐神會加倍的添給他們。"
 
 #: site/course/course-content.php:844
 msgid ""
@@ -1879,9 +1842,8 @@ msgid ""
 "One way to share God’s good news is by telling God’s story from Creation to "
 "Judgement – from the beginning of humankind all the way to the end of this "
 "age."
-msgstr ""
-"分享上帝好消息的一種方法是講述上帝從創造到審判的故事——從人類的開始一直到這個"
-"時代的結束。"
+msgstr "分享上帝好消息的一種方法是講述上帝從創造到審判的故事——從人類的開始直到這個世"
+"代的結束。"
 
 #: site/course/course-content.php:931
 msgid "Share the Gospel"
@@ -1889,7 +1851,7 @@ msgstr "分享福音"
 
 #: site/course/course-content.php:934
 msgid "Break into groups of two or three people."
-msgstr "分成兩到三人一組。"
+msgstr "兩到三人分成一組。"
 
 #: site/course/course-content.php:935
 msgid "Take turns telling the Gospel to each other."
@@ -1899,9 +1861,8 @@ msgstr "輪流互相傳講福音。"
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
-msgstr ""
-"耶穌說︰「所以，你們要去，使萬民作我的門徒，奉父、子聖靈的名給他們施洗…」（太"
-"二十八19）"
+msgstr "耶穌說︰「所以，你們要去，使萬民作我的門徒，奉父、子聖靈的名給他們施洗…」（"
+"太 28:19）"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -1915,13 +1876,12 @@ msgstr "你想過為別人施洗嗎？"
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
-msgstr ""
-"如果耶穌吩咐所有跟隨祂的人來遵守大使命，那是否表示每一位真實跟隨耶穌的人都可"
-"以為別人施洗？為什麼可以？或為什麼不是這樣？"
+msgstr "如果耶穌吩咐所有跟隨祂的人來遵守大使命，那是否表示每一位跟隨耶穌的人都可以為"
+"別人施洗？為什麼可以？為什麼不行？"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr "重要提醒︰請問你自己受洗了嗎？"
+msgstr "重要提醒︰請問你受洗了嗎？"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -1929,31 +1889,29 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"如果還沒有，我們鼓勵你在下一堂門徒訓練課之前安排受洗，邀請跟你一起上課的組員"
-"也來，與你一同慶祝這個重要的日子，見證你跟隨耶穌的心志，在眾人面前說︰「是"
-"的！我願意跟隨主！」"
+"如果還沒有，那麼我們鼓勵你在下一堂門徒訓練課之前安排受洗，邀請跟你一起上課的"
+"組員也來，與你一同慶祝這個重要的日子，見證你跟隨耶穌的心志，在眾人面前說︰「"
+"是的！我願意跟隨主！」"
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
-msgstr "精神經濟"
+msgstr "心靈經濟"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
 msgid ""
 "Ask God who He wants you to train to use the Creation to Judgment story (or "
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
-msgstr ""
-"問上帝他希望你訓練誰使用從創造到審判的故事（或其他分享上帝故事的方式）。在您"
-"離開之前，請與小組成員分享此人的名字。"
+msgstr "問上帝祂希望你訓練誰使用從創世紀到審判的故事（或其他分享上帝故事的方式）。在"
+"你開始前，請與小組成員分享此人的名字。"
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3985
 msgid ""
 "Spend time this week practicing God’s story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
-msgstr ""
-"本週花時間練習上帝的故事，然後與你的 100 名名單中至少一個被你標記為「不信者」"
-"或「未知」的人分享。"
+msgstr "本週花時間練習上帝的故事，然後與你的百名清單中至少一個被你標記為「不信者」或"
+"「未知」的人分享。"
 
 #: site/course/course-content.php:1038
 msgid ""
