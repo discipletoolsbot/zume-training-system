@@ -40,14 +40,14 @@
         }
 
         &.show {
-            opacity: 0.4;
+            opacity: 0.2;
         }
         &.off {
             opacity: 0 !important;
         }
 
         &:hover {
-            opacity: 0.2;
+            opacity: 0.4;
         }
     }
 }
