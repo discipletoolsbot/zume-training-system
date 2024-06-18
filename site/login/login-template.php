@@ -460,18 +460,30 @@ switch ( $request_action ) {
                                                 </div>
                                                 <?php wp_nonce_field( 'login_form', 'login_form_nonce' ) ?>
                                                 <div>
-                                                    <div class="g-recaptcha" id="g-recaptcha"></div>
-                                                    <button class="btn w-100" id="submit">
+                                                    <button
+                                                        class="btn w-100 g-recaptcha"
+                                                        id="submit"
+                                                        data-sitekey="<?php echo esc_attr( isset( $dt_login['google_captcha_client_key'] ) ? $dt_login['google_captcha_client_key'] : '' ) ?>"
+                                                        data-callback="onRegister"
+                                                        data-action="submit"
+                                                    >
                                                         <?php esc_html_e( 'Register', 'zume' ) ?>
                                                     </button>
                                                 </div>
                                             </form>
                                         </div>
+                                        <script>
+                                            function onRegister(token) {
+                                                const recaptchaResponseInput = document.querySelector('#g-recaptcha-response')
+                                                recaptchaResponseInput.value = token
+                                                document.getElementById('loginform').requestSubmit()
+                                            }
+                                        </script>
 
                                         <?php // @codingStandardsIgnoreStart
                                         if ( isset( $dt_login['google_captcha_client_key'] ) && !empty( $dt_login['google_captcha_client_key'] ) ) :
                                             ?>
-                                            <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+                                            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                                         <?php // @codingStandardsIgnoreEnd
                                         endif;
                                         ?>
