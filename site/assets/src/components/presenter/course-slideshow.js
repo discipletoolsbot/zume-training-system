@@ -164,6 +164,9 @@ export class CourseSlideshow extends LitElement {
     isSecondSlide() {
         return this.sectionIndex === 1
     }
+    isLastSlide() {
+        return this.sectionIndex === this.sections.length - 1
+    }
 
     render() {
         if ( this.sectionIndex < 0 ) {
@@ -174,14 +177,14 @@ export class CourseSlideshow extends LitElement {
                 <div>
                     <slide-switcher .slide=${this.currentSlide} showControls></slide-switcher>
                 </div>
-                <div class="visual-indicator left ${this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''} ${!this.isRtl && this.isFirstSlide() ? 'off' : ''}">
+                <div class="visual-indicator left ${this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''} ${!this.isRtl && this.isFirstSlide() || this.isRtl && this.isLastSlide() ? 'off' : ''}">
                     <img
                         src="${jsObject.images_url}/chevron.svg"
                         alt=${jsObject.translations.previous_slide}
                         class="svg white rotate-90"
                     />
                 </div>
-                <div class="visual-indicator right ${!this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''}${this.isRtl && this.isFirstSlide() ? 'off' : ''}">
+                <div class="visual-indicator right ${!this.isRtl && this.isFirstSlide() || this.isSecondSlide() ? 'show' : ''} ${this.isRtl && this.isFirstSlide() || !this.isRtl && this.isLastSlide() ? 'off' : ''}">
                     <img
                         src="${jsObject.images_url}/chevron.svg"
                         alt=${jsObject.translations.next_slide}
