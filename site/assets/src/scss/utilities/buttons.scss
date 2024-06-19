@@ -261,6 +261,32 @@ button.card-btn {
     & .icon {
         font-size: 6rem;
     }
+
+    &[data-completed],
+    &[data-locked] {
+        & .icon {
+            color: color('gray-500');
+        }
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        &[data-completed] {
+            background-color: color('white');
+            color: color('gray-500');
+
+            & .icon {
+                color: color('gray-500');
+            }
+        }
+        &[data-locked] {
+            background-color: color('gray-700');
+
+            & .icon {
+                color: color('white');
+            }
+        }
+    }
 }
 
 .link-light {
