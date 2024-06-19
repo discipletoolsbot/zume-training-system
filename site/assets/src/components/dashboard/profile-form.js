@@ -108,7 +108,6 @@ export class ProfileForm extends LitElement {
     }
 
     render() {
-        console.log(this.userProfile)
         return html`
             <form action="" class="stack--2" id="profile-form" @submit=${this.submitProfileForm}>
 

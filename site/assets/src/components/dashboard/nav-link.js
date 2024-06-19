@@ -10,6 +10,7 @@ export class NavLink extends navigator(LitElement) {
             locked: { type: Boolean },
             completed: { type: Boolean },
             disableNavigate: { type: Boolean },
+            active: { type: Boolean },
             icon: { type: String },
             text: { type: String },
             explanation: { type: String },
@@ -27,6 +28,7 @@ export class NavLink extends navigator(LitElement) {
         this.locked = false
         this.completed = false
         this.disableNavigate = false
+        this.active = false
     }
 
     handleClick(event) {
@@ -55,6 +57,7 @@ export class NavLink extends navigator(LitElement) {
                 aria-disabled=${this.completed}
                 ?data-completed=${this.completed}
                 ?data-locked=${this.locked}
+                ?data-active=${this.active}
             >
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>

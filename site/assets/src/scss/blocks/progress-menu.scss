@@ -10,10 +10,12 @@
         grid-template-columns: 4fr 3rem;
         align-items: center;
 
-        background: var(--z-white);
+        background: color('gray-50');
         border-radius: 10px;
         box-shadow: var(--z-box-shadow-medium);
         padding: spacing(-1);
+
+        transition: background 100ms linear;
 
         &:first-child .submenu-toggle{
             display: none;
@@ -21,6 +23,14 @@
 
         & > * + * {
             justify-self: flex-end;
+        }
+
+        &[data-active] {
+            background: color('white');
+
+            .menu-section__title .icon {
+                color: color('brand-light');
+            }
         }
     }
     .menu-section:nth-child(2):before,
@@ -45,6 +55,7 @@
 
         .icon {
             font-size: 1.3em;
+            color: color('gray-400');
         }
     }
 

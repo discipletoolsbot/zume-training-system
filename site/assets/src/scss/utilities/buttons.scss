@@ -202,6 +202,11 @@ a {
         margin-inline-end: 0.5em;
         font-size: 1.3em;
     }
+
+    &[data-active] {
+        color: var(--btn-hover-color);
+        font-weight: 600;
+    }
 }
 
 .card-btn[role="button"],

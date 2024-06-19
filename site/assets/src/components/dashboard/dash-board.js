@@ -26,11 +26,26 @@ export class DashBoard extends navigator(router(LitElement)) {
             trainingGroups: { type: Array, attribute: false },
             wizardType: { type: String, attribute: false },
             celbrationModalContent: { type: Object, attribute: false },
-            myTrainingsOpen: { type: Boolean, attribute: false },
+            trainingGroupsOpen: { type: Boolean, attribute: false },
         }
     }
 
     static get routes() {
+        const redirectRoute = DashBoard.rootRoute
+        const { makeComponent } = redirectRoute.data
+        /* Setup the route of the /dashboard url to point to the appropriate landing stage of the user */
+        const routes = dashRoutes().map((route) => {
+            if (route.name === 'root') {
+                route.data = { makeComponent }
+            }
+
+            return route
+        })
+
+        return routes
+    }
+
+    static get rootRoute() {
         const redirectRoutes = {
             1: 'getting-started',
             2: 'training',
@@ -42,18 +57,8 @@ export class DashBoard extends navigator(router(LitElement)) {
         const redirectRoute = dashRoutes().find(
             ({ name }) => name === redirectRoutes[redirectRouteIndex]
         )
-        const { makeComponent } = redirectRoute.data
 
-        /* Setup the route of the /dashboard url to point to the appropriate landing stage of the user */
-        const routes = dashRoutes().map((route) => {
-            if (route.name === 'root') {
-                route.data = { makeComponent }
-            }
-
-            return route
-        })
-
-        return routes
+        return redirectRoute
     }
 
     static getRoute(name) {
@@ -646,6 +651,30 @@ export class DashBoard extends navigator(router(LitElement)) {
         })
     }
 
+    isParentSectionActive(parentRoute) {
+        let route = DashBoard.getRoute(this.route)
+
+        if (this.route === 'root') {
+            route = DashBoard.rootRoute
+        }
+
+        if (route.name === parentRoute) {
+            return true
+        }
+
+        if (route.parent === parentRoute) {
+            return true
+        }
+
+        return false
+    }
+    isChildRouteActive(routeName) {
+        return routeName === this.route
+    }
+    isTrainingRouteActive(key) {
+        return key === this.params.code
+    }
+
     render() {
         return html`
             <div
@@ -685,7 +714,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 data-accordion-menu
                                 data-submenu-toggle="true"
                             >
-                                <li class="menu-section" data-no-toggle>
+                                <li class="menu-section" data-no-toggle ?data-active=${this.isParentSectionActive(RouteNames.gettingStarted)}>
                                     <nav-link
                                         href=${this.makeHref(
                                             RouteNames.gettingStarted
@@ -722,6 +751,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         href=${this.makeHrefRoute(
                                                             route.name
                                                         )}
+                                                        ?active=${this.isChildRouteActive(route.name)}
                                                         icon=${route.icon}
                                                         text=${route.translation}
                                                         as=${route.type ===
@@ -762,7 +792,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     </ul>
                                 </li>
                             </ul>
-                            <div class="menu-section">
+                            <div class="menu-section" ?data-active=${this.isParentSectionActive(RouteNames.training)}>
                                 <nav-link
                                     href=${this.makeHref(RouteNames.training)}
                                     class="menu-section__title menu-btn"
@@ -802,6 +832,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                     <nav-link
                                                         class="menu-btn"
                                                         icon=${route.icon}
+                                                        ?active=${this.isChildRouteActive(RouteNames.myTrainings) || !this.trainingGroupsOpen && this.isChildRouteActive(RouteNames.myTraining)}
                                                         text=${jsObject
                                                             .translations
                                                             .my_trainings}
@@ -838,6 +869,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                                 <li>
                                                                     <nav-link
                                                                         class="menu-btn"
+                                                                        ?active=${this.isTrainingRouteActive(group.join_key)}
                                                                         as="nav"
                                                                         text=${group.title}
                                                                         href=${this.makeTrainingHref(
@@ -858,6 +890,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                     href=${this.makeHrefRoute(
                                                         route.name
                                                     )}
+                                                    ?active=${this.isChildRouteActive(route.name)}
                                                     icon=${route.icon}
                                                     text=${route.translation}
                                                     ?locked=${isLocked}
@@ -889,7 +922,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     })}
                                 </ul>
                             </div>
-                            <li class="menu-section">
+                            <li class="menu-section" ?data-active=${this.isParentSectionActive(RouteNames.practicing)}>
                                 <nav-link
                                     href=${this.makeHref(RouteNames.practicing)}
                                     class="menu-section__title menu-btn"
@@ -908,6 +941,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                     href=${this.makeHrefRoute(
                                                         route.name
                                                     )}
+                                                    ?active=${this.isChildRouteActive(route.name)}
                                                     icon=${route.icon}
                                                     text=${route.translation}
                                                     ?locked=${DashBoard.getLockedStatus(
