@@ -276,11 +276,13 @@ export class DashBoard extends navigator(router(LitElement)) {
 
     updateLanguageSwitcher() {
         this.languageSelectorElements.forEach((element) => {
+            const pageUrl = location.href
             const currentUrl = element.dataset.url
             const indexOfDashboard = currentUrl.indexOf('dashboard')
+            const pageIndexOfDashboard = pageUrl.indexOf('dashboard')
             const newUrl =
                 currentUrl.slice(0, indexOfDashboard + 'dashboard/'.length) +
-                this.route
+                pageUrl.slice(pageIndexOfDashboard + 'dashboard/'.length)
             element.dataset.url = newUrl
         })
     }
