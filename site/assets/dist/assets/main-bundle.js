@@ -3189,5 +3189,5 @@ ${this.training.zoom_link_note}
                 background-color: var(--ps-primary-color);
                 transition: width 100ms linear;
             }
-        `]);customElements.define("progress-slider",Gn);
+        `]);customElements.define("progress-slider",Gn);jQuery(document).ready(()=>{cookieStore.get("zume_language").then(i=>{T.defaultLocale=i.value||"en"})});
 //# sourceMappingURL=main-bundle.js.map

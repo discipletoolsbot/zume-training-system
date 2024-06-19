@@ -19,3 +19,12 @@ import './components/host-progress-circle'
 import './components/calendar-select'
 import './components/calendar-list'
 import './components/progress-slider'
+
+import { Settings } from 'luxon'
+
+jQuery(document).ready(() => {
+    cookieStore.get('zume_language')
+        .then((result) => {
+            Settings.defaultLocale = result.value || 'en'
+        })
+})
