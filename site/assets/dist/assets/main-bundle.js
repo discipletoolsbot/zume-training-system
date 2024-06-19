@@ -1627,7 +1627,8 @@ ${this.training.zoom_link_note}
 
                     <div class="list__secondary" data-align-start>
                         <div class="d-flex justify-content-center align-items-center gap--2">
-                            <span>${n>0?moment(n).format("MMM Do YY"):jsObject.translations.not_scheduled}</span>
+                            <!-- TODO: only use the YY if it's not in the current year -->
+                            <span>${n>0?moment(n).format("MMM Do, YY"):jsObject.translations.not_scheduled}</span>
                             <button class="icon-btn" data-toggle="kebab-menu-${e}" @click=${this.toggleKebabMenu}>
                                 <span class="icon z-icon-kebab brand-light"></span>
                             </button>

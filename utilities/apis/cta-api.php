@@ -241,9 +241,7 @@ class Zume_System_CTA_API
                 ],
                 'content_template' => 'celebration',
             ],
-            /* Mute for the user testing */
-            /* This needs an upgrade to work properly when you have 1 or more trainings */
-            /* The url needs to be set by the dashboard to load the correct invite wizard, or to take them to a list of their trainings */
+            /* Mute for Go live: this one is for inviting people to become friends with you. */
 /*             [
                 'stages' => [1, 2],
                 'required_keys' => [],
