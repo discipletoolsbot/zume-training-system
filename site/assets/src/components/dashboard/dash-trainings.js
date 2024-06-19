@@ -458,21 +458,7 @@ export class DashTrainings extends DashPage {
                 <span class="visually-hidden">${jsObject.translations.filter}</span>
                 <span class="icon z-icon-filter brand-light" aria-hidden="true"></span>
             </button>
-            <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
-                <ul>
-                    <li>
-                        <button class="menu-btn w-100 ${this.filterStatus === 'completed' ? 'selected' : ''}" @click=${() => this.filterSessions('completed')}>
-                            ${jsObject.translations.completed}
-                        </button>
-                        <button class="menu-btn w-100 ${this.filterStatus === 'uncompleted' ? 'selected' : ''}" @click=${() => this.filterSessions('uncompleted')}>
-                            ${jsObject.translations.uncompleted}
-                        </button>
-                        <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterSessions('all')}>
-                            ${jsObject.translations.all}
-                        </button>
-                    </li>
-                </ul>
-            </div>
+
         `
     }
 
@@ -603,6 +589,21 @@ export class DashTrainings extends DashPage {
                             </ul>
                         `
                     }
+                </div>
+                <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
+                    <ul>
+                        <li>
+                            <button class="menu-btn w-100 ${this.filterStatus === 'completed' ? 'selected' : ''}" @click=${() => this.filterSessions('completed')}>
+                                ${jsObject.translations.completed}
+                            </button>
+                            <button class="menu-btn w-100 ${this.filterStatus === 'uncompleted' ? 'selected' : ''}" @click=${() => this.filterSessions('uncompleted')}>
+                                ${jsObject.translations.uncompleted}
+                            </button>
+                            <button class="menu-btn w-100 ${this.filterStatus === 'all' ? 'selected' : ''}" @click=${() => this.filterSessions('all')}>
+                                ${jsObject.translations.all}
+                            </button>
+                        </li>
+                    </ul>
                 </div>
                 <div class="dashboard__secondary stack">
                     ${this.loading && !this.error ? html`<span class="loading-spinner active"></span>` : '' }
