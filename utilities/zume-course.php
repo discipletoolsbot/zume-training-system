@@ -56,7 +56,9 @@ class Zume_Course {
         if ( ! $player ) { // if not the player, then return just the vimeo url.
             return $video_id;
         }
-        return 'https://player.vimeo.com/video/' . $video_id;
+
+        $query_params = '?transcript=false&pip=false';
+        return 'https://player.vimeo.com/video/' . $video_id . $query_params;
     }
 
     public static function get_alt_video_by_key( $meta_key ) {

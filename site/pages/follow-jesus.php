@@ -145,7 +145,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                             $video_link = Zume_Course::get_video_by_key( '10' );
                         }
                         ?>
-                        <iframe width="640" height="360" src="<?php echo esc_url( $video_link ) ?>" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="640" height="360" src="<?php echo esc_url( $video_link ) ?>" frameborder="0"></iframe>
                     </div>
                     <div class="video-thumbnail__footer bg-brand-light white text-center stack p-1">
                         <p class="w-80 mx-auto"><?php echo esc_html__( 'Watch this important video explaining the 4 relationships of your new life', 'zume' ) ?></p>
