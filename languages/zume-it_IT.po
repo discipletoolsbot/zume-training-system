@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"POT-Creation-Date: 2024-06-18 18:03+0100\n"
 "PO-Revision-Date: 2024-06-17 08:27+0000\n"
 "Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
-"Language-Team: Italian <https://translate.disciple.tools/projects/"
-"zume-training/zume-training-system/it_IT/>\n"
+"Language-Team: Italian <https://translate.disciple.tools/projects/zume-"
+"training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,13 +14,13 @@ msgstr ""
 "X-Generator: Weblate 5.5.5\n"
 
 #: appearance/style-override/navigation.php:75
-#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:199
-#: site/dashboard/dashboard.php:252 site/parts/footer.php:11
+#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
+#: site/dashboard/dashboard.php:259 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "Formazione"
 
-#: appearance/style-override/navigation.php:85 site/pages/home.php:208
+#: appearance/style-override/navigation.php:85 site/pages/home.php:207
 msgid "How it Works"
 msgstr "Come Funziona"
 
@@ -34,8 +34,8 @@ msgstr "FAQ"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
-#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "Pannello di Controllo"
@@ -76,14 +76,14 @@ msgstr "Storie"
 msgid "Global Map"
 msgstr "Mappa Globale"
 
-#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
+#: globals.php:1939 globals.php:1941 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "Dio Usa La Gente Comune"
 
-#: globals.php:1937 site/pages/follow-jesus.php:175
+#: globals.php:1940 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
@@ -91,12 +91,12 @@ msgstr ""
 "Vedrete come Dio usa la gente comune facendo cose semplici per avere un "
 "grande impatto."
 
-#: globals.php:1947 site/course/course-content.php:3161
+#: globals.php:1951 site/course/course-content.php:3161
 #: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "Una Definizione Semplice di Discepolo e Chiesa"
 
-#: globals.php:1948 site/course/course-content.php:153
+#: globals.php:1952 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
@@ -105,30 +105,30 @@ msgstr ""
 "Scopri l'essenza dell'essere un discepolo, del fare discepoli, e di ciò che "
 "è la chiesa."
 
-#: globals.php:1949 site/course/course-content.php:143
+#: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
 msgstr "I Discepoli e la Chiesa"
 
-#: globals.php:1958 site/course/course-content.php:3162
+#: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Il Respiro Spirituale significa Ascoltare e Obbedire a Dio"
 
-#: globals.php:1959 site/pages/follow-jesus.php:201
+#: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "Essere un discepolo significa che ascoltiamo e obbediamo Dio."
 
-#: globals.php:1960 site/course/course-content.php:189
+#: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
 msgstr "Ascoltare e Obbedire Dio"
 
-#: globals.php:1969 globals.php:1971
+#: globals.php:1975 globals.php:1977
 msgid "S.O.A.P.S. Bible Study"
 msgstr "Studio della Bibbia S.O.A.P.C."
 
-#: globals.php:1970 site/pages/follow-jesus.php:216
+#: globals.php:1976 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
@@ -136,14 +136,14 @@ msgstr ""
 "Uno strumento per lo studio quotidiano della Bibbia che ti aiuta a "
 "comprendere, obbedire, e condividere la Parola di Dio."
 
-#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
+#: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "Gruppi di Corresponsabilità"
 
-#: globals.php:1981 site/pages/follow-jesus.php:231
+#: globals.php:1988 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
@@ -153,11 +153,11 @@ msgstr ""
 "settimanalmente e incoraggiarsi reciprocamente nelle aree che vanno bene e "
 "rivelare aree che hanno bisogno di correzione."
 
-#: globals.php:1991 site/pages/follow-jesus.php:194
+#: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Lo Stile di Vita dei Produttori vs Consumatori"
 
-#: globals.php:1992 site/pages/follow-jesus.php:195
+#: globals.php:2000 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
@@ -165,29 +165,29 @@ msgstr ""
 "Scoprirai i quattro modi principali in cui Dio ogni giorno rende i discepoli "
 "più simili a Gesù."
 
-#: globals.php:1993
+#: globals.php:2001
 msgid "Producer not Consumer"
 msgstr "Un Produttore e non un Consumatore"
 
-#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
+#: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "Come Trascorrere un'Ora in Preghiera"
 
-#: globals.php:2003 site/pages/follow-jesus.php:205
+#: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "Vedi come è facile trascorrere un'ora in preghiera."
 
-#: globals.php:2013 site/pages/follow-jesus.php:291
+#: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "Lista dei 100"
 
-#: globals.php:2014 site/pages/follow-jesus.php:292
+#: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 "Uno strumento disegnato per aiutarti ad essere un buon amministratore delle "
 "tue relazioni."
 
-#: globals.php:2015 site/activities/list-of-100-printable.php:78
+#: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -198,13 +198,13 @@ msgstr ""
 msgid "List of 100"
 msgstr "Lista dei 100"
 
-#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
+#: globals.php:2035 globals.php:2037 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "Economia Spirituale"
 
-#: globals.php:2025 site/pages/follow-jesus.php:250
+#: globals.php:2036 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -212,11 +212,11 @@ msgstr ""
 "Impara come l'economia di Dio è differente da quella del mondo. Dio investe "
 "più in quelli che sono fedeli con quello che a loro è già stato dato."
 
-#: globals.php:2035 site/pages/follow-jesus.php:295
+#: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "Il Vangelo e Come Condividerlo"
 
-#: globals.php:2036 site/pages/follow-jesus.php:296
+#: globals.php:2048 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
@@ -224,15 +224,15 @@ msgstr ""
 "Impara un modo per condividere la Buona Notizia di Dio dall'inizio "
 "dell'umanità fino alla fine di questo tempo."
 
-#: globals.php:2037
+#: globals.php:2049
 msgid "Sharing God‘s Story"
 msgstr "Condividere la Storia di Dio"
 
-#: globals.php:2046 site/pages/follow-jesus.php:242
+#: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "Il Battesimo e Come Farlo"
 
-#: globals.php:2047 site/pages/follow-jesus.php:243
+#: globals.php:2060 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -242,18 +242,18 @@ msgstr ""
 "nome del Padre e del Figlio e dello Spirito Santo....\". Imparate a mettere "
 "ciò in pratica."
 
-#: globals.php:2048 site/course/course-content.php:801
+#: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "Il Battesimo"
 
-#: globals.php:2057 site/pages/follow-jesus.php:299
+#: globals.php:2071 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "La Tua Testimonianza in 3 Minuti"
 
-#: globals.php:2058 site/pages/follow-jesus.php:300
+#: globals.php:2072 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
@@ -261,17 +261,17 @@ msgstr ""
 "Impara come condividere la tua testimonianza in tre minuti parlando di come "
 "Gesù ha avuto un impatto nella tua vita."
 
-#: globals.php:2059
+#: globals.php:2073
 msgid "3-Minute Testimony"
 msgstr "Testimonianza in 3 minuti"
 
-#: globals.php:2068 site/course/course-content.php:1140
+#: globals.php:2083 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "Condividere la Visione la Massima Benedizione"
 
-#: globals.php:2069 site/course/course-content.php:1216
+#: globals.php:2084 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -280,33 +280,33 @@ msgstr ""
 "Impara un semplice metodo di fare non solo un seguace di Gesù ma intere "
 "famiglie spirituali che moltiplicano nelle generazioni future."
 
-#: globals.php:2070
+#: globals.php:2085
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "La Grande Benedizione, L'Immensa Benedizione, e La Massima Benedizione"
 
-#: globals.php:2079 site/pages/follow-jesus.php:272
+#: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "Discepolare Come Anatroccoli - Diventare un Leader Subito"
 
-#: globals.php:2080
+#: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "Imparate cosa hanno a che fare gli anatroccoli con il fare discepoli."
 
-#: globals.php:2081 site/course/course-content.php:1141
+#: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "Discepolare come anatroccoli"
 
-#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
+#: globals.php:2107 globals.php:2109 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Occhi per vedere dove non c'è il Regno di Dio"
 
-#: globals.php:2091 site/pages/follow-jesus.php:254
+#: globals.php:2108 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -314,11 +314,11 @@ msgstr ""
 "Cominciate a vedere dove non c'è il Regno di Dio. Questi di solito sono i "
 "posti dove Dio vuole lavorare di più."
 
-#: globals.php:2101 site/pages/follow-jesus.php:238
+#: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "La Cena del Signore e Come Celebrarla"
 
-#: globals.php:2102
+#: globals.php:2120
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -326,18 +326,18 @@ msgstr ""
 "È un modo semplice per celebrare il nostro legame intimo e la nostra "
 "continua relazione con Gesù. Imparate un modo semplice di celebrarla."
 
-#: globals.php:2103 site/course/course-content.php:1147
+#: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
 msgid "The Lord’s Supper"
 msgstr "La Cena del Signore"
 
-#: globals.php:2112 site/pages/follow-jesus.php:310
+#: globals.php:2131 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "La Camminata di Preghiera e Come Farla"
 
-#: globals.php:2113
+#: globals.php:2132
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
@@ -345,35 +345,35 @@ msgstr ""
 "E' un modo semplice per obbedire al comandamento di Dio di pregare per gli "
 "altri. Ed è proprio questo: pregare Dio mentre si cammina!"
 
-#: globals.php:2114 site/course/course-content.php:1520
+#: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "La Camminata di Preghiera"
 
-#: globals.php:2123 site/pages/follow-jesus.php:306
+#: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "Le Persone di Pace e Come Riconscerle"
 
-#: globals.php:2124
+#: globals.php:2144
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 "Impara chi potrebbe essere una persona di pace e come capire quando ne hai "
 "trovata una."
 
-#: globals.php:2125 site/course/course-content.php:1515
+#: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "Persona di Pace"
 
-#: globals.php:2134 site/pages/follow-jesus.php:219
+#: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "La Fedeltà è Meglio della Conoscenza"
 
-#: globals.php:2135
+#: globals.php:2156
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
@@ -381,31 +381,31 @@ msgstr ""
 "È importante ciò che i discepoli conoscono – ma è molto più importante cosa "
 "FANNO con ciò che conoscono."
 
-#: globals.php:2136 site/course/course-content.php:1765
+#: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "Fedeltà"
 
-#: globals.php:2145 site/pages/follow-jesus.php:208
+#: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "La Preghiera B.L.E.S.S."
 
-#: globals.php:2146 site/pages/follow-jesus.php:209
+#: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
 "Fate pratica con un semplice promemoria per ricordarvi i modi di pregare per "
 "gli altri."
 
-#: globals.php:2147 site/course/course-content.php:1603
+#: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
 msgstr "La Preghiera B.L.E.S.S."
 
-#: globals.php:2156 site/pages/follow-jesus.php:226
+#: globals.php:2179 site/pages/follow-jesus.php:226
 msgid "3/3 Group Meeting Pattern"
 msgstr "La Struttura del Gruppo 3/3"
 
-#: globals.php:2157
+#: globals.php:2180
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
@@ -416,34 +416,34 @@ msgstr ""
 "che hanno imparato. In questo modo, un Gruppo 3/3 non è solo un piccolo "
 "gruppo, ma una Chiesa Semplice."
 
-#: globals.php:2158
+#: globals.php:2181
 msgid "3/3 Group"
 msgstr "Gruppo 3/3"
 
-#: globals.php:2167 site/pages/follow-jesus.php:276
+#: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "Il Ciclo di Addestramento"
 
-#: globals.php:2168 site/pages/follow-jesus.php:277
+#: globals.php:2192 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
 "Imparate il ciclo di addestramento e considerate come si applica alla "
 "formazione dei discepoli."
 
-#: globals.php:2169 site/course/course-content.php:5032
+#: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "Ciclo di Addestramento"
 
-#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
+#: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "Cellule di Leadership"
 
-#: globals.php:2179 site/course/course-content.php:2213
+#: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -452,12 +452,12 @@ msgstr ""
 "Un Gruppo di Leader è un modo in cui qualcuno che sente di essere chiamato a "
 "condurre può sviluppare la propria leadership con la pratica del servire."
 
-#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "Aspettarsi una Crescita Non Sequenziale"
 
-#: globals.php:2190
+#: globals.php:2216
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
@@ -465,12 +465,12 @@ msgstr ""
 "Vedi come il fare discepoli non deve essere lineare. Molteplici cose possono "
 "accadere allo stesso tempo."
 
-#: globals.php:2200 site/course/course-content.php:2770
+#: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "La Velocità della Moltiplicazione è Importante"
 
-#: globals.php:2201 site/pages/follow-jesus.php:285
+#: globals.php:2228 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -478,31 +478,31 @@ msgstr ""
 "Moltiplicare è importante e moltiplicare rapidamente è ancora più "
 "importante. Ecco perché il ritmo è importante."
 
-#: globals.php:2202 site/course/course-content.php:2390
+#: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "Velocità"
 
-#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
+#: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "Sempre Parte di Due Chiese"
 
-#: globals.php:2212
+#: globals.php:2240
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr ""
 "Impara come obbedire ai comandi di Gesù attraverso l'andare E il dimorare."
 
-#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
+#: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "Piano di 3 Mesi"
 
-#: globals.php:2224
+#: globals.php:2253
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
@@ -510,7 +510,7 @@ msgstr ""
 "Crea e condividi il tuo piano per come utilizzerai gli strumenti di Zúme "
 "durante i prossimi tre mesi."
 
-#: globals.php:2234 globals.php:2236
+#: globals.php:2263 globals.php:2265
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -528,7 +528,7 @@ msgstr ""
 msgid "Coaching Checklist"
 msgstr "Lista di Controllo del Tutoraggio"
 
-#: globals.php:2235 site/pages/follow-jesus.php:328
+#: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
@@ -537,14 +537,14 @@ msgstr ""
 "potenzialità e vulnerabilità quando accadrà di fare discepoli che "
 "moltiplicano."
 
-#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
+#: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "Leadership in Collegamento"
 
-#: globals.php:2246 site/pages/follow-jesus.php:336
+#: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -552,14 +552,14 @@ msgstr ""
 "Impara come chiese che si moltiplicano rimangono connessi e vivono la vita "
 "insieme come una famiglia spirituale allargata."
 
-#: globals.php:2256 site/course/course-content.php:2902
+#: globals.php:2287 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "Gruppi di Mentori alla Pari"
 
-#: globals.php:2257 site/pages/follow-jesus.php:324
+#: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -569,15 +569,15 @@ msgstr ""
 "iniziato Gruppi 3/3. Segue anche la struttura 3/3 ed è un efficace modo per "
 "valutare la salute spirituale dell'opera di Dio nella tua zona."
 
-#: globals.php:2258 site/dashboard/wizard.php:165
+#: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
 msgstr "Mentori alla Pari"
 
-#: globals.php:2267 globals.php:2269
+#: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
 msgstr "Il Diagramma dei Quattro Campi"
 
-#: globals.php:2268
+#: globals.php:2300
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
@@ -587,14 +587,14 @@ msgstr ""
 "gruppi di leader per riflettere sullo stato degli sforzi attuali e "
 "l'attività del regno intorno a loro."
 
-#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
+#: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "La Mappa Generazionale"
 
-#: globals.php:2279
+#: globals.php:2312
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -602,11 +602,11 @@ msgstr ""
 "La generazione della mappatura è un altro semplice strumento per aiutare i "
 "responsabili in un movimento a comprendere la crescita intorno a loro."
 
-#: globals.php:2289
+#: globals.php:2323
 msgid "3-Circles Gospel Presentation"
 msgstr "3 Cerchi - un metodo per condividere il Vangelo"
 
-#: globals.php:2290
+#: globals.php:2324
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
@@ -615,19 +615,27 @@ msgstr ""
 "vangelo con una semplice illustrazione che si può disegnare su un foglio di "
 "carta."
 
-#: globals.php:2291
+#: globals.php:2325
 msgid "3-Circles"
 msgstr "3 Cerchi"
 
-#: globals.php:7022 site/course/presenter.php:197
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: globals.php:5808 site/activities/three-month-plan.php:94
+msgid "Question"
+msgstr ""
+
+#: globals.php:5808 site/activities/three-month-plan.php:95
+msgid "Answer"
+msgstr ""
+
+#: globals.php:7103 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
 #: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "Chiudere"
 
-#: globals.php:7224
+#: globals.php:7305
 msgid "No Results"
 msgstr "Nessun Risultato"
 
@@ -656,7 +664,7 @@ msgstr "Chiedi a te stesso, ho"
 #: site/activities/coaching-checklist-two.php:126
 #: site/activities/coaching-checklist-two.php:184
 #: site/activities/coaching-checklist.php:113
-#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:231
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
 msgstr "Ascoltato"
 
@@ -665,7 +673,7 @@ msgstr "Ascoltato"
 #: site/activities/coaching-checklist-two.php:129
 #: site/activities/coaching-checklist-two.php:188
 #: site/activities/coaching-checklist.php:116
-#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:233
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
 msgstr "Obbedito"
 
@@ -674,7 +682,7 @@ msgstr "Obbedito"
 #: site/activities/coaching-checklist-two.php:132
 #: site/activities/coaching-checklist-two.php:192
 #: site/activities/coaching-checklist.php:119
-#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:235
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
 msgstr "Condiviso"
 
@@ -683,19 +691,19 @@ msgstr "Condiviso"
 #: site/activities/coaching-checklist-two.php:135
 #: site/activities/coaching-checklist-two.php:196
 #: site/activities/coaching-checklist.php:122
-#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:237
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
 msgstr "Formato"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
-#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
 msgid "Have I heard about this tool or concept?"
 msgstr "Ho sentito di questo strumento o concetto?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
-#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
@@ -706,7 +714,7 @@ msgstr ""
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
-#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:243
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
@@ -717,7 +725,7 @@ msgstr ""
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
-#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:245
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
@@ -767,7 +775,6 @@ msgstr "Assistere"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:204
 msgid "Watch"
 msgstr "Guardate"
 
@@ -997,7 +1004,7 @@ msgid "Unknown"
 msgstr "Sconosciuto"
 
 #: site/activities/three-month-plan-printable.php:46
-#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
 msgid "3-Month Plan"
 msgstr "Piano di 3 Mesi"
 
@@ -1017,10 +1024,15 @@ msgstr ""
 "Attiva lo script per utilizzare questa pagina interattiva. Altrimenti puoi "
 "utilizzare la versione stampabile cliccando sul link sopra."
 
-#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:287 site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
+#: site/dashboard/wizard.php:298 site/profile/profile.php:153
 msgid "Save"
 msgstr "Salva"
+
+#: site/activities/three-month-plan.php:93
+#, fuzzy
+msgid "Cancel"
+msgstr "Annulla"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -1067,7 +1079,7 @@ msgstr "DISCUTERE"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
-#: site/course/course-builder.php:166
+#: site/course/course-builder.php:196
 msgid "(10 min)"
 msgstr "(10 min)"
 
@@ -1116,7 +1128,7 @@ msgid "WATCH"
 msgstr "GUARDARE"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
-#: site/course/course-builder.php:165
+#: site/course/course-builder.php:195
 msgid "(5 min)"
 msgstr "(5 min)"
 
@@ -1215,75 +1227,75 @@ msgstr ""
 "Autovalutazione - Fare una valutazione di te stesso e contrassegna le "
 "colonne corrispondenti della Lista di Controllo del Tutoraggio."
 
-#: site/course/course-builder.php:164
+#: site/course/course-builder.php:194
 msgid "(1 min)"
 msgstr "(1 min)"
 
-#: site/course/course-builder.php:167
+#: site/course/course-builder.php:197
 msgid "(15 min)"
 msgstr "(15 min)"
 
-#: site/course/course-builder.php:168
+#: site/course/course-builder.php:198
 msgid "(20 min)"
 msgstr "(20 min)"
 
-#: site/course/course-builder.php:169
+#: site/course/course-builder.php:199
 msgid "(25 min)"
 msgstr "(25 min)"
 
-#: site/course/course-builder.php:170
+#: site/course/course-builder.php:200
 msgid "(30 min)"
 msgstr "(30 min)"
 
-#: site/course/course-builder.php:171
+#: site/course/course-builder.php:201
 msgid "(35 min)"
 msgstr "(35 min)"
 
-#: site/course/course-builder.php:172
+#: site/course/course-builder.php:202
 msgid "(40 min)"
 msgstr "(40 min)"
 
-#: site/course/course-builder.php:173
+#: site/course/course-builder.php:203
 msgid "(45 min)"
 msgstr "(45 min)"
 
-#: site/course/course-builder.php:174
+#: site/course/course-builder.php:204
 msgid "(50 min)"
 msgstr "(50 min)"
 
-#: site/course/course-builder.php:175
+#: site/course/course-builder.php:205
 msgid "(55 min)"
 msgstr "(55 min)"
 
-#: site/course/course-builder.php:176
+#: site/course/course-builder.php:206
 msgid "(60 min)"
 msgstr "(60 min)"
 
-#: site/course/course-builder.php:177
+#: site/course/course-builder.php:207
 msgid "(65 min)"
 msgstr "(65 min)"
 
-#: site/course/course-builder.php:178
+#: site/course/course-builder.php:208
 msgid "(70 min)"
 msgstr "(70 min)"
 
-#: site/course/course-builder.php:179
+#: site/course/course-builder.php:209
 msgid "(75 min)"
 msgstr "(75 min)"
 
-#: site/course/course-builder.php:180
+#: site/course/course-builder.php:210
 msgid "(80 min)"
 msgstr "(80 min)"
 
-#: site/course/course-builder.php:181
+#: site/course/course-builder.php:211
 msgid "(85 min)"
 msgstr "(85 min)"
 
-#: site/course/course-builder.php:182
+#: site/course/course-builder.php:212
 msgid "(90 min)"
 msgstr "(90 min)"
 
-#: site/course/course-builder.php:183
+#: site/course/course-builder.php:213
 msgid "(60 - 90 min)"
 msgstr "(60-90 min)"
 
@@ -1921,7 +1933,7 @@ msgstr ""
 msgid "Obey"
 msgstr "Obbedire"
 
-#: site/course/course-content.php:683 site/dashboard/dashboard.php:158
+#: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
 msgid "Share"
@@ -2859,10 +2871,10 @@ msgstr ""
 "Se non hai un mentore o tutor, scansiona il codice QR e richiedine uno "
 "adesso."
 
-#: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:217 site/pages/about.php:254
+#: site/course/course-content.php:2616 site/dashboard/dashboard.php:204
+#: site/dashboard/wizard.php:228 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
+#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
 #: utilities/integrations/replace-placeholder.php:85
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
@@ -3173,7 +3185,7 @@ msgstr ""
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr "Dio fa progetti, e aspetta che anche noi li facciamo."
 
-#: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
+#: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
@@ -3794,7 +3806,7 @@ msgid "NEXT STEP"
 msgstr "PROSSIMO PASSO"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
+#: site/dashboard/dashboard.php:246 site/parts/nav.php:94
 msgid "Join the Community"
 msgstr "Unisciti alla Communità"
 
@@ -3849,7 +3861,7 @@ msgstr "Info"
 msgid "Course"
 msgstr "Formazione"
 
-#: site/course/presenter.php:174 site/dashboard/dashboard.php:243
+#: site/course/presenter.php:174 site/dashboard/dashboard.php:250
 #: site/pages/resources.php:88 site/parts/footer.php:41
 msgid "Resources"
 msgstr "Risorse"
@@ -3862,7 +3874,7 @@ msgstr "Esci dalla Formazione"
 msgid "Slide View"
 msgstr "Visualizzazione a Slide"
 
-#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 msgid "List View"
 msgstr "Visualizza Come Lista"
 
@@ -3894,10 +3906,10 @@ msgstr "Ops"
 msgid "Something went wrong with your checkin process."
 msgstr "Qualcosa è andato storto nell'effettuare il check-in."
 
-#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
-#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
-#: utilities/apis/cta-api.php:341
+#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:268
+#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:286
+#: utilities/apis/cta-api.php:315 utilities/apis/cta-api.php:329
+#: utilities/apis/cta-api.php:358
 msgid "Congratulations!"
 msgstr "Congratulazioni!"
 
@@ -3919,159 +3931,163 @@ msgstr "Progressi:"
 msgid "%d%%"
 msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
+#: site/dashboard/dashboard.php:161 site/dashboard/wizard.php:296
 msgid "Done"
 msgstr "Fatto"
 
-#: site/dashboard/dashboard.php:156
+#: site/dashboard/dashboard.php:162
 msgid "Edit"
 msgstr "Modifica"
 
-#: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
+#: site/dashboard/dashboard.php:163 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "Elimina"
 
-#: site/dashboard/dashboard.php:159
+#: site/dashboard/dashboard.php:165
 msgid "Active"
 msgstr "Attivo"
 
-#: site/dashboard/dashboard.php:160
+#: site/dashboard/dashboard.php:166
 msgid "Completed"
 msgstr "Completato"
 
-#: site/dashboard/dashboard.php:161
+#: site/dashboard/dashboard.php:167
 msgid "Uncompleted"
 msgstr "Incompleto"
 
-#: site/dashboard/dashboard.php:162
+#: site/dashboard/dashboard.php:168
 msgid "Not Heard"
 msgstr "Non Ascoltato"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:121
+#: site/dashboard/dashboard.php:169 site/pages/share.php:121
 msgid "All"
 msgstr "Tutti"
 
-#: site/dashboard/dashboard.php:164 site/profile/profile.php:159
+#: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
 msgstr "Logout"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:124
+#: site/dashboard/dashboard.php:171 site/pages/share.php:124
 msgid "Filter"
 msgstr "Filtra"
 
-#: site/dashboard/dashboard.php:167
+#: site/dashboard/dashboard.php:173
 msgid "Grid View"
 msgstr "Visualizza a Griglia"
 
-#: site/dashboard/dashboard.php:168
+#: site/dashboard/dashboard.php:174
 msgid "View Now"
 msgstr "Guarda Ora"
 
-#: site/dashboard/dashboard.php:169
+#: site/dashboard/dashboard.php:175
 msgid "Complete Now"
 msgstr "Completa Ora"
 
-#: site/dashboard/dashboard.php:170
+#: site/dashboard/dashboard.php:176
 msgid "View"
 msgstr "Visualizza"
 
-#: site/dashboard/dashboard.php:171
+#: site/dashboard/dashboard.php:177
 msgid "Menu"
 msgstr "Menu"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
-#: site/dashboard/wizard.php:226 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:237 site/profile/profile.php:116
 msgid "Name"
 msgstr "Nome"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
-#: site/dashboard/wizard.php:196 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:179 site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:207 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "Telefono"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
+#: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:205
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "Email"
 
-#: site/dashboard/dashboard.php:175
+#: site/dashboard/dashboard.php:181
+msgid "Linked Accounts"
+msgstr "Account Collegati"
+
+#: site/dashboard/dashboard.php:182
 msgid "Communications Email"
 msgstr "Email di Comunicazione"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
+#: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:190
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "Città"
 
-#: site/dashboard/dashboard.php:177
+#: site/dashboard/dashboard.php:184
 msgid "No Locations found"
 msgstr "Nessuna Località Trovata"
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
-#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:241 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
 msgstr "linguaggio"
 
-#: site/dashboard/dashboard.php:180
+#: site/dashboard/dashboard.php:187
 msgid "Edit Profile"
 msgstr "Modifica Profilo"
 
-#: site/dashboard/dashboard.php:181
+#: site/dashboard/dashboard.php:188
 msgid "Check out this Zúme concept"
 msgstr "Dai un'occhiata a questo concetto di Zúme"
 
-#: site/dashboard/dashboard.php:182
+#: site/dashboard/dashboard.php:189
 msgid "Preview"
 msgstr "Anteprima"
 
-#: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:190 site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:266
 #, php-format
 msgid "Add new %s"
 msgstr "Aggiungi nuovo %s"
 
-#: site/dashboard/dashboard.php:183
+#: site/dashboard/dashboard.php:190
 msgid "Commitment"
 msgstr "Impegno"
 
-#: site/dashboard/dashboard.php:184 site/pages/share.php:82
+#: site/dashboard/dashboard.php:191 site/pages/share.php:82
 msgid "Copy Link"
 msgstr "Copia Link"
 
-#: site/dashboard/dashboard.php:185
+#: site/dashboard/dashboard.php:192
 msgid "Copy this link and send it to your friends 🙂"
 msgstr "Copia questo link e invialo ai tuoi amici 🙂"
 
-#: site/dashboard/dashboard.php:186 site/pages/share.php:84
+#: site/dashboard/dashboard.php:193 site/pages/share.php:84
 msgid "Thanks!"
 msgstr "Grazie!"
 
-#: site/dashboard/dashboard.php:187
+#: site/dashboard/dashboard.php:194
 msgid "Link copied"
 msgstr "Link Copiato"
 
-#: site/dashboard/dashboard.php:188
+#: site/dashboard/dashboard.php:195
 msgid "Getting Started"
 msgstr "Per Iniziare"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
-#: utilities/apis/cta-api.php:255
+#: site/dashboard/dashboard.php:196 utilities/apis/cta-api.php:270
+#: utilities/apis/cta-api.php:272
 msgid "Set Profile"
 msgstr "Imposta il tuo profilo"
 
-#: site/dashboard/dashboard.php:190
+#: site/dashboard/dashboard.php:197
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr "Segui una breve procedura guidata per creare il tuo profilo"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
+#: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
 msgstr "Unisciti a un gruppo o creane uno tuo"
 
-#: site/dashboard/dashboard.php:192
+#: site/dashboard/dashboard.php:199
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
@@ -4079,23 +4095,23 @@ msgstr ""
 "Unisciti a uno dei nostri gruppi online o crea un tuo gruppo con la nostra "
 "facile procedura guidata"
 
-#: site/dashboard/dashboard.php:193
+#: site/dashboard/dashboard.php:200
 msgid "Create Training Group"
 msgstr "Crea Un Gruppo Per La Formazione"
 
-#: site/dashboard/dashboard.php:194
+#: site/dashboard/dashboard.php:201
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "Crea un tuo gruppo con la nostra facile procedura guidata"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
+#: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 msgid "Join Training Group"
 msgstr "Unisciti A Un Gruppo"
 
-#: site/dashboard/dashboard.php:196
+#: site/dashboard/dashboard.php:203
 msgid "Join an online training group run by a coach"
 msgstr "Unisciti a un gruppo online guidato da un tutor"
 
-#: site/dashboard/dashboard.php:198
+#: site/dashboard/dashboard.php:205
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
@@ -4103,11 +4119,11 @@ msgstr ""
 "Richiedi un tutor per qualsiasi tipo di aiuto o incoraggiamento prima, "
 "durante o dopo la formazione."
 
-#: site/dashboard/dashboard.php:200
+#: site/dashboard/dashboard.php:207
 msgid "My Progress"
 msgstr "I Miei Progressi"
 
-#: site/dashboard/dashboard.php:201
+#: site/dashboard/dashboard.php:208
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
@@ -4116,19 +4132,19 @@ msgstr ""
 "interattiva. Impara ad ascoltare, obbedire, condividere e formare altre "
 "persone utilizzando ciò che hai imparato."
 
-#: site/dashboard/dashboard.php:202
+#: site/dashboard/dashboard.php:209
 msgid "Information about progress"
 msgstr "Informazioni sui tuoi progressi"
 
-#: site/dashboard/dashboard.php:203
+#: site/dashboard/dashboard.php:210
 msgid "My Training"
 msgstr "La Mia Formazione"
 
-#: site/dashboard/dashboard.php:204
+#: site/dashboard/dashboard.php:211
 msgid "My Trainings"
 msgstr "Le Mie Formazioni"
 
-#: site/dashboard/dashboard.php:205
+#: site/dashboard/dashboard.php:212
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
@@ -4136,15 +4152,15 @@ msgstr ""
 "Accesso completo ai tuoi contenuti, al tuo programma, ai dettagli del tuo "
 "gruppo e alla tua condivisione degli strumenti della formazione."
 
-#: site/dashboard/dashboard.php:207
+#: site/dashboard/dashboard.php:214
 msgid "Create Your Plan"
 msgstr "Crea il tuo Piano"
 
-#: site/dashboard/dashboard.php:209
+#: site/dashboard/dashboard.php:216
 msgid "Three Month Plan Locked"
 msgstr "Piano di 3 Mesi Bloccato"
 
-#: site/dashboard/dashboard.php:210
+#: site/dashboard/dashboard.php:217
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
 "tools and concepts learned through the Zúme course. It is most useful, once "
@@ -4154,27 +4170,27 @@ msgstr ""
 "strumenti e i concetti imparati attraverso la formazione Zúme. È più utile "
 "dopo aver terminato la formazione."
 
-#: site/dashboard/dashboard.php:211
+#: site/dashboard/dashboard.php:218
 msgid "Unlock now"
 msgstr "Sblocca adesso"
 
-#: site/dashboard/dashboard.php:212
+#: site/dashboard/dashboard.php:219
 msgid "Practicing"
 msgstr "Fase Di Allenamento"
 
-#: site/dashboard/dashboard.php:213
+#: site/dashboard/dashboard.php:220
 msgid "My Coach"
 msgstr "Il Mio Tutor"
 
-#: site/dashboard/dashboard.php:214
+#: site/dashboard/dashboard.php:221
 msgid "Quick access to your coach at all times."
 msgstr "Accesso rapido al tuo tutor in qualsiasi momento."
 
-#: site/dashboard/dashboard.php:215
+#: site/dashboard/dashboard.php:222
 msgid "My Tools"
 msgstr "I Miei Strumenti"
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:223
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
@@ -4182,11 +4198,11 @@ msgstr ""
 "La tua area 'I Miei Strumenti' si sbloccherà man mano che vai avanti con la "
 "formazione, allenandoti e sviluppando essenziali competenze del discepolato"
 
-#: site/dashboard/dashboard.php:217
+#: site/dashboard/dashboard.php:224
 msgid "My Plans"
 msgstr "I Miei Piani"
 
-#: site/dashboard/dashboard.php:218
+#: site/dashboard/dashboard.php:225
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
@@ -4194,11 +4210,11 @@ msgstr ""
 "Sblocca l'area 'I Miei Piani' completando il tuo Piano di 3 Mesi nell'ultima "
 "sessione."
 
-#: site/dashboard/dashboard.php:219
+#: site/dashboard/dashboard.php:226
 msgid "My Plans are Locked"
 msgstr "I Miei Piani sono Bloccati"
 
-#: site/dashboard/dashboard.php:220
+#: site/dashboard/dashboard.php:227
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
@@ -4206,23 +4222,23 @@ msgstr ""
 "Sblocca questa area creando il tuo Piano di 3 Mesi oppure aggiungendo un tuo "
 "impegno personale."
 
-#: site/dashboard/dashboard.php:221
+#: site/dashboard/dashboard.php:228
 msgid "My Churches"
 msgstr "Le Mie Chiese"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:229
 msgid "Unlock the My Churches area by joining the community."
 msgstr "Sblocca l'area 'Le Mie Chiese' unendoti alla comunità."
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:230
 msgid "My Maps"
 msgstr "Le Mie Mappe"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:231
 msgid "My Maps are Locked"
 msgstr "Le Mie Mappe sono Bloccate"
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:232
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -4235,139 +4251,139 @@ msgstr ""
 "connettiti con altri moltiplicatori di discepoli che perseguono "
 "appassionatamente il compimento del Grande Mandato."
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:233
 msgid "My Training is Locked"
 msgstr "La Mia Formazione è Bloccata"
 
-#: site/dashboard/dashboard.php:227 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:234 site/parts/footer.php:25
 #: site/parts/footer.php:28
 msgid "Launch Course"
 msgstr "Avvia Formazione"
 
-#: site/dashboard/dashboard.php:228 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:235 site/parts/footer.php:29
 #: utilities/integrations/replace-placeholder.php:113
 #: utilities/integrations/replace-placeholder.php:114
 #: utilities/integrations/replace-placeholder.php:115
 msgid "10 Session Course"
 msgstr "Formazione di 10 Sessioni"
 
-#: site/dashboard/dashboard.php:229 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:236 site/parts/footer.php:30
 #: utilities/integrations/replace-placeholder.php:117
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
 msgid "20 Session Course"
 msgstr "Formazione di 20 Sessioni"
 
-#: site/dashboard/dashboard.php:230
+#: site/dashboard/dashboard.php:237
 msgid "Intensive Course"
 msgstr "Formazione Intensiva"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
-#: site/pages/training.php:146 utilities/apis/cta-api.php:150
-#: utilities/apis/cta-api.php:386
+#: site/dashboard/dashboard.php:247 site/dashboard/wizard.php:242
+#: site/pages/training.php:146 utilities/apis/cta-api.php:153
+#: utilities/apis/cta-api.php:403
 msgid "Join"
 msgstr "Partecipa"
 
-#: site/dashboard/dashboard.php:241
+#: site/dashboard/dashboard.php:248
 msgid "Join the community to get access to this area."
 msgstr "Unisciti alla comunità per accedere a questa area."
 
-#: site/dashboard/dashboard.php:242
+#: site/dashboard/dashboard.php:249
 msgid "Community links"
 msgstr "I Link della Comunità"
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:251
 msgid "Previous Slide"
 msgstr "Slide Precedente"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:252
 msgid "Next Slide"
 msgstr "Slide Successiva"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:253
 msgid "Group Members"
 msgstr "I Membri del Gruppo"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:254
 msgid "Mark Completed"
 msgstr "Segna come Completato"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:255
 #, php-format
 msgid "Session %d"
 msgstr "Sessione %d"
 
-#: site/dashboard/dashboard.php:249 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:256 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "Inizia la Sessione"
 
-#: site/dashboard/dashboard.php:250
+#: site/dashboard/dashboard.php:257
 msgid "Show details"
 msgstr "Mostra Dettagli"
 
-#: site/dashboard/dashboard.php:251
+#: site/dashboard/dashboard.php:258
 msgid "Edit time"
 msgstr "Modifica Orario"
 
-#: site/dashboard/dashboard.php:253
+#: site/dashboard/dashboard.php:260
 msgid "Invite Friends"
 msgstr "Invita i tuoi amici"
 
-#: site/dashboard/dashboard.php:254
+#: site/dashboard/dashboard.php:261
 msgid "Click to add your first church"
 msgstr "Clicca per aggiungere la tua prima chiesa"
 
-#: site/dashboard/dashboard.php:255
+#: site/dashboard/dashboard.php:262
 msgid "Church Name"
 msgstr "Nome della Chiesa"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:263
 msgid "Number of People"
 msgstr "Numero di Persone"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:264
 msgid "Church Location"
 msgstr "Luogo d'Incontro della Chiesa"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:265
 msgid "Parent Church"
 msgstr "Chiesa Genitore"
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:266
 msgid "Church"
 msgstr "Chiesa"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:267
 msgid "cancel"
 msgstr "Annulla"
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:269
 msgid "You have requested a coach"
 msgstr "Hai richiesto un tutor"
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:270
 msgid "You have joined a training"
 msgstr "Ti sei unito a un gruppo"
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:271
 msgid "You have set your profile"
 msgstr "Hai impostato il tuo profilo"
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:272
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
 msgstr "%s sbloccata/e"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
+#: site/dashboard/dashboard.php:272 utilities/apis/cta-api.php:314
 msgid "3 month plan"
 msgstr "Piano di 3 Mesi"
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:273
 msgid "You have joined the community"
 msgstr "Ti sei unito alla comunità"
 
-#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/dashboard/dashboard.php:275 site/dashboard/wizard.php:199
 #: site/pages/privacy-policy.php:108
 msgid ""
 "A user’s real name or nickname is requested to improve the personal quality "
@@ -4378,7 +4394,7 @@ msgstr ""
 "l'esperienza personale del sito e la comunicazione, oltre alle richieste di "
 "assistenza e tutoraggio."
 
-#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:276 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
@@ -4386,7 +4402,7 @@ msgstr ""
 "L'indirizzo email dell'utente è necessario per creare un profilo e viene "
 "usato per le comunicazioni in linea con il funzionamento del sito."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
+#: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:200
 #: site/pages/privacy-policy.php:117
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
@@ -4395,7 +4411,7 @@ msgstr ""
 "Il numero telefonico dell'utente è memorizzato per facilitare il servizio "
 "gratuito di tutoraggio."
 
-#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
+#: site/dashboard/dashboard.php:278 site/dashboard/wizard.php:201
 #: site/pages/privacy-policy.php:120
 msgid ""
 "A user’s city is requested to personalize site resources and communication, "
@@ -4405,7 +4421,7 @@ msgstr ""
 "comunicazioni, e anche per mettere gli utenti in contatto con l'appropriato "
 "tutor e le risorse del servizio clienti."
 
-#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/dashboard/dashboard.php:279 site/dashboard/wizard.php:229
 #: site/pages/privacy-policy.php:111
 msgid ""
 "A user’s language preference is stored to support proper site and "
@@ -4416,25 +4432,25 @@ msgstr ""
 "funzionamento del sito e della comunicazione, e per aiutarci a connettere "
 "l'utente con un tutor e con le risorse adeguate."
 
-#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
+#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:316
 msgid "Join key"
 msgstr "Chiave di Partecipazione"
 
-#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
 msgid "Not a recognized code. Please check the number."
 msgstr "Non è un codice riconosciuto. Controlla la correttezza."
 
-#: site/dashboard/dashboard.php:275
+#: site/dashboard/dashboard.php:282
 msgid "You are not authorized to access this page"
 msgstr "Non hai l'autorizzazione per accedere a questa pagina"
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:283
 msgid "There has been an error with your request"
 msgstr "C'è stato un errore con la tua richiesta"
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
@@ -4443,7 +4459,7 @@ msgstr ""
 "per metterti in contatto con un tutor disponibile nella tua lingua e nella "
 "tua regione."
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
@@ -4451,42 +4467,42 @@ msgstr ""
 "Riceverai una comunicazione dal tuo tutor al metodo di comunicazione che hai "
 "indicato come preferenza in fase di registrazione."
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
 msgstr "Mappa di 100 Ore"
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:287
 msgid "Training vision map"
 msgstr "Mappa delle Formazioni con la Visione Zúme"
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:288
 msgid "Simple church planting map"
 msgstr "Mappa delle Chiese Semplici Fondate"
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:289
 msgid "No date"
 msgstr "Nessuna data"
 
-#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
 msgid "Whatsapp"
 msgstr "WhatsApp"
 
-#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: site/dashboard/dashboard.php:291 site/dashboard/wizard.php:209
 #: zume-training-system.php:319
 msgid "Signal"
 msgstr "Signal"
 
-#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: site/dashboard/dashboard.php:292 site/dashboard/wizard.php:210
 #: zume-training-system.php:320
 msgid "Telegram"
 msgstr "Telegram"
 
-#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:211
 msgid "Facebook Messenger"
 msgstr "Facebook Messenger"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:299
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
@@ -4494,14 +4510,14 @@ msgstr ""
 "Condividerò la Mia Storia [Testimonianza] e la Storia di Dio [il Vangelo] "
 "con le seguenti persone:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
 "Inviterò le seguenti persone a dare inizio ad un Gruppo di Corresponsabilità "
 "con me:"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4509,11 +4525,11 @@ msgstr ""
 "Sfiderò le seguenti persone a dare inizio a Gruppi di Corresponsabilità loro "
 "e a formarli su come fare:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:302
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "Inviterò le seguenti persone ad iniziare un Gruppo 3/3 con me:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
@@ -4521,7 +4537,7 @@ msgstr ""
 "Sfiderò le seguenti persone a dare inizio ai propri Gruppi 3/3 e a formarli "
 "su come fare:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:304
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
@@ -4529,19 +4545,19 @@ msgstr ""
 "Inviterò le seguenti persone a partecipare a un Gruppo 3/3 di Speranza o di "
 "Scoperta:"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
 "Inviterò le seguenti persone a partecipare alla Camminata di Preghiera con "
 "me:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:306
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr ""
 "Farò la Camminata di Preghiera una volta ogni [giorni / settimane / mesi]."
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:307
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
@@ -4549,7 +4565,7 @@ msgstr ""
 "Formerò le seguenti persone a condividere la loro storia e la storia di Dio "
 "e a fare una 'Lista dei 100' delle persone nella loro rete relazionale:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:308
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
@@ -4557,13 +4573,13 @@ msgstr ""
 "Sfiderò le seguenti persone a utilizzare periodicamente lo strumento del "
 "Ciclo di Preghiera:"
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:309
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
 "Utilizzerò lo strumento il Ciclo di Preghiera una volta ogni [giorni / "
 "settimane / mesi]."
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:310
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
@@ -4571,66 +4587,66 @@ msgstr ""
 "Inviterò le seguenti persone a far parte di un Gruppo di Leader che guiderò "
 "io:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:311
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
 "Incoraggerò le seguenti persone a seguire questo corso di Zúme Training:"
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:312
 msgid "Other commitments:"
 msgstr "Altri impegni:"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:162
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
 msgstr "Procedura Guidata Difettosa"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:163
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
 msgstr "La procedura guidata ti ha guidato male!"
 
-#: site/dashboard/wizard.php:153
+#: site/dashboard/wizard.php:164
 msgid "Wizard is already completed"
 msgstr "La procedura guidata è stata già completata"
 
-#: site/dashboard/wizard.php:154
+#: site/dashboard/wizard.php:165
 msgid "Get back home"
 msgstr "Torna alla pagina principale"
 
-#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#: site/dashboard/wizard.php:166 site/login/login-template.php:408
 msgid "Back"
 msgstr "Indietro"
 
-#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
+#: site/dashboard/wizard.php:167 site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:306
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "Successivo"
 
-#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
 msgid "Skip"
 msgstr "Salta"
 
-#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "Fine"
 
-#: site/dashboard/wizard.php:160
+#: site/dashboard/wizard.php:171
 msgid "No locations found"
 msgstr "Nessuna località trovata"
 
-#: site/dashboard/wizard.php:163
+#: site/dashboard/wizard.php:174
 msgid "Zúme Community"
 msgstr "Comunità Zúme"
 
-#: site/dashboard/wizard.php:164
+#: site/dashboard/wizard.php:175
 msgid ""
 "Zúme is a community of practice and encouragement for those who want to see "
 "disciple making movements. The Zúme vision is to see one trainee and two "
@@ -4642,7 +4658,7 @@ msgstr ""
 "quella di vedere un discepolo e due chiese semplici per ogni 5.000 persone "
 "negli Stati Uniti e per ogni 50.000 persone a livello globale."
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:177
 msgid ""
 "Connect with others like you who want to see a disciple making movement in "
 "their area. Share your experience with others, and learn from others who are "
@@ -4652,11 +4668,11 @@ msgstr ""
 "che fanno discepoli nella loro zona. Condividi la tua esperienza con altri e "
 "impara da altri che stanno scoprendo cose nuove."
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:178
 msgid "Encouragement"
 msgstr "Incoraggiamento"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:179
 msgid ""
 "Hear news about disciple making movements in your region and your wider "
 "country, get reports of  progress, and get connected to online and face-to-"
@@ -4666,11 +4682,11 @@ msgstr ""
 "regione e nel tuo Paese, ricevi rapporti sui progressi e collegati a "
 "incontri online e di persona."
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:180
 msgid "Free Tools"
 msgstr "Strumenti Gratuiti"
 
-#: site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:181
 msgid ""
 "Access free tools for tracking disciple-making and church planting in your "
 "area. Get a map to cast vision for saturating your city with multiplying "
@@ -4680,352 +4696,352 @@ msgstr ""
 "discepoli e fondare chiese nella tua zona. Ottieni una mappa per lanciare la "
 "visione di saturare la tua città con discepoli e chiese che si moltiplicano."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:182
 msgid "Join for Free"
 msgstr "Partecipa Gratuitamente"
 
-#: site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:183
 msgid "Successfully joined community"
 msgstr "Iscrizione alla comunità riuscita"
 
-#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
-#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
 msgid "Something went wrong"
 msgstr "Qualcosa è andato storto"
 
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:188
 msgid "Complete your profile"
 msgstr "Completa il tuo profilo"
 
-#: site/dashboard/wizard.php:181
+#: site/dashboard/wizard.php:192
 msgid "What is your name?"
 msgstr "Come ti chiami?"
 
-#: site/dashboard/wizard.php:182
+#: site/dashboard/wizard.php:193
 msgid "What is your phone number?"
 msgstr "Qual è il tuo numero di telefono?"
 
-#: site/dashboard/wizard.php:183
+#: site/dashboard/wizard.php:194
 msgid "Phone number can only contain numbers, brackets and hyphens"
 msgstr "Il numero di telefono può contenere solo numeri, parentesi e trattini"
 
-#: site/dashboard/wizard.php:184
+#: site/dashboard/wizard.php:195
 msgid "What city do you live in?"
 msgstr "In quale città risiedi?"
 
-#: site/dashboard/wizard.php:185
+#: site/dashboard/wizard.php:196
 msgid "This is your approximate location."
 msgstr "Questa è la tua posizione approssimativa."
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:198
 msgid "Privacy Policy"
 msgstr "Informativa sulla privacy"
 
-#: site/dashboard/wizard.php:193
+#: site/dashboard/wizard.php:204
 msgid "What is your contact preference?"
 msgstr "Come preferisci che ti contattiamo?"
 
-#: site/dashboard/wizard.php:195 zume-training-system.php:316
+#: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
 msgstr "Testo"
 
-#: site/dashboard/wizard.php:201
+#: site/dashboard/wizard.php:212
 msgid "What is your language preference?"
 msgstr "Qual è la tua lingua preferita?"
 
-#: site/dashboard/wizard.php:203
+#: site/dashboard/wizard.php:214
 msgid "How can we serve you?"
 msgstr "Come possiamo aiutarti?"
 
-#: site/dashboard/wizard.php:204
+#: site/dashboard/wizard.php:215
 msgid "Coaching"
 msgstr "Tutoraggio"
 
-#: site/dashboard/wizard.php:205
+#: site/dashboard/wizard.php:216
 msgid "Technical Assistance"
 msgstr "Assistenza Tecnica"
 
-#: site/dashboard/wizard.php:206
+#: site/dashboard/wizard.php:217
 msgid "Question about implementing the training"
 msgstr "Domanda su come implementare la formazione"
 
-#: site/dashboard/wizard.php:207
+#: site/dashboard/wizard.php:218
 msgid "Question about the content"
 msgstr "Domanda sui contenuti"
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:219
 msgid "Help with what to do after starting a group"
 msgstr "Aiuto riguardo a cosa fare dopo aver avviato un gruppo"
 
-#: site/dashboard/wizard.php:210
+#: site/dashboard/wizard.php:221
 msgid "Please give a response to this question"
 msgstr "Dai una risposta a questa domanda"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:222
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
 "Richiesta Inoltrata, faremo il nostro meglio per metterti in contatto con un "
 "tutor vicino a te."
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:223
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
 "Ci dispiace. Non siamo riusciti ad inoltrare la tua richiesta. Riprova più "
 "tardi."
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:224
 msgid "You have already requested a coach"
 msgstr "Hai già fatto richiesta per un tutor"
 
-#: site/dashboard/wizard.php:214
+#: site/dashboard/wizard.php:225
 msgid "Error connecting with a coach"
 msgstr "C'è stato un errore nel connetterti con un tutor"
 
-#: site/dashboard/wizard.php:215
+#: site/dashboard/wizard.php:226
 msgid "Connecting you to a Coach"
 msgstr "Mettendoti in contatto con un Tutor"
 
-#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
-#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
+#: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
+#: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
 msgid "Please wait while we connect you"
 msgstr "Attendi mentre ti mettiamo in contatto"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:232
 msgid "Joining Plan"
 msgstr "Unendoti al Piano"
 
-#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#: site/dashboard/wizard.php:234 site/dashboard/wizard.php:317
 msgid "The training link is broken. Please try again."
 msgstr "Il link non funziona. Riprova."
 
-#: site/dashboard/wizard.php:224
+#: site/dashboard/wizard.php:235
 #, php-format
 msgid "Successfully joined training %s"
 msgstr "Inserito nel gruppo %s con successo"
 
-#: site/dashboard/wizard.php:227
+#: site/dashboard/wizard.php:238
 msgid "Next Session Date"
 msgstr "Data della Prossima Sessione"
 
-#: site/dashboard/wizard.php:228
+#: site/dashboard/wizard.php:239
 msgid "Start Time"
 msgstr "Ora d'Inizio"
 
-#: site/dashboard/wizard.php:229
+#: site/dashboard/wizard.php:240
 msgid "Timezone"
 msgstr "Fuso Orario"
 
-#: site/dashboard/wizard.php:232
+#: site/dashboard/wizard.php:243
 msgid "There are currently no public trainings available."
 msgstr "Al momento non sono disponibili formazioni aperte al pubblico."
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:246
 msgid "Connecting with friend"
 msgstr "Connettendo con un amico"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:248
 msgid "The friend link is broken. Please try again."
 msgstr "Il link per invitare un amico non funziona. Riprova."
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:249
 #, php-format
 msgid "Successfully connected with friend %s"
 msgstr "Connesso correttamente al tuo amico %s"
 
-#: site/dashboard/wizard.php:242
+#: site/dashboard/wizard.php:253
 msgid "Checking in"
 msgstr "Effettuando il check-in"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:255
 msgid "The checkin link is broken. Please try again."
 msgstr "Il link per effettuare il check-in non ha funzionato. Riprova."
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:256
 msgid "Successfully checked in"
 msgstr "Hai effettuato il check-in con successo"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:261
 msgid "Create a training group"
 msgstr "Crea un tuo gruppo per la formazione"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:262
 msgid "Join a public training group"
 msgstr "Unisciti a un gruppo aperto al pubblico per la formazione"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:263
 msgid "Skip for now"
 msgstr "Salta per ora"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:264
 msgid "Choose your course format"
 msgstr "Scegli la struttura che vuoi per la formazione"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:265
 msgid "1 hour (20 sessions)"
 msgstr "1 ora (20 sessioni)"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:266
 msgid "2 hour (10 sessions)"
 msgstr "2 ore (10 sessioni)"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:267
 msgid "4 hour (5 sessions)"
 msgstr "4 ore (5 sessioni)"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:268
 msgid "Would you like to schedule your training?"
 msgstr "Vorresti programmare gli incontri della tua formazione?"
 
-#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "sì"
 
-#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:270 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "No"
 
-#: site/dashboard/wizard.php:260
+#: site/dashboard/wizard.php:271
 msgid "What time of day?"
 msgstr "A che ora?"
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:272
 msgid "Morning"
 msgstr "Mattina"
 
-#: site/dashboard/wizard.php:262
+#: site/dashboard/wizard.php:273
 msgid "Afternoon"
 msgstr "Pomeriggio"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:274
 msgid "Evening"
 msgstr "Sera"
 
-#: site/dashboard/wizard.php:264
+#: site/dashboard/wizard.php:275
 msgid "How often will you meet?"
 msgstr "Quanto spesso vi incontrerete?"
 
-#: site/dashboard/wizard.php:265
+#: site/dashboard/wizard.php:276
 msgid "Every day"
 msgstr "Ogni giorno"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:277
 msgid "Once a week"
 msgstr "Una volta a settimana"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:278
 msgid "Twice a month"
 msgstr "Due volte al mese"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:279
 msgid "Once a month"
 msgstr "Una volta al mese"
 
-#: site/dashboard/wizard.php:269
+#: site/dashboard/wizard.php:280
 msgid "Other"
 msgstr "Altro"
 
-#: site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:281
 msgid "What is the name of the training group?"
 msgstr "Qual è il nome del vostro gruppo?"
 
-#: site/dashboard/wizard.php:271
+#: site/dashboard/wizard.php:282
 msgid "My first training group"
 msgstr "Il mio primo gruppo"
 
-#: site/dashboard/wizard.php:272
+#: site/dashboard/wizard.php:283
 msgid "When do you plan to start?"
 msgstr "Quando intendete iniziare?"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:284
 msgid "Where do you plan to meet?"
 msgstr "Dove vi incontrerete?"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:285
 msgid "This could be online or in person"
 msgstr "Può essere online o dal vivo"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:286
 msgid "Review Schedule"
 msgstr "Rivedere il Programma"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:287
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
 msgstr "%1$s di %2$s selezionati"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:288
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "Pronto"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:289
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
 msgstr "Troppi selezionati: %s"
 
-#: site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:290
 msgid "Incorrect number of sessions selected"
 msgstr "Errato numero di sessioni selezionato"
 
-#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:291 site/dashboard/wizard.php:293
+#: site/dashboard/wizard.php:295
 #, php-format
 msgid "Set %s"
 msgstr "Imposta %s"
 
-#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
-#: site/dashboard/wizard.php:302
+#: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
+#: site/dashboard/wizard.php:313
 msgid "Location"
 msgstr "Località"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:293
 msgid "Group Name"
 msgstr "Nome del Gruppo"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:294
 msgid "Group name"
 msgstr "Nome del Gruppo"
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:295
 msgid "Start Date"
 msgstr "Data d'Inizio"
 
-#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#: site/dashboard/wizard.php:299 site/dashboard/wizard.php:314
 msgid "Time"
 msgstr "Orario"
 
-#: site/dashboard/wizard.php:289
+#: site/dashboard/wizard.php:300
 msgid "Date"
 msgstr "Data"
 
-#: site/dashboard/wizard.php:290
+#: site/dashboard/wizard.php:301
 msgid "Summary"
 msgstr "Riassunto"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:302
 msgid "Clear Calendar"
 msgstr "Cancella Programma"
 
-#: site/dashboard/wizard.php:292
+#: site/dashboard/wizard.php:303
 msgid "Add"
 msgstr "Aggiungi"
 
-#: site/dashboard/wizard.php:293
+#: site/dashboard/wizard.php:304
 msgid "Add some dates to your schedule"
 msgstr "Aggiungi delle date al tuo programma"
 
-#: site/dashboard/wizard.php:294
+#: site/dashboard/wizard.php:305
 msgid "Change"
 msgstr "Cambia"
 
-#: site/dashboard/wizard.php:298
+#: site/dashboard/wizard.php:309
 msgid "Invite your friends to join your training"
 msgstr "Invita i tuoi amici a partecipare alla formazione insieme a te"
 
-#: site/dashboard/wizard.php:299
+#: site/dashboard/wizard.php:310
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
@@ -5033,16 +5049,16 @@ msgstr ""
 "Condividi l'invito o il link sottostante con i tuoi amici affinché possano "
 "partecipare insieme a te alla formazione."
 
-#: site/dashboard/wizard.php:300
+#: site/dashboard/wizard.php:311
 msgid "Join my zume plan"
 msgstr "Fai parte del mio piano Zúme"
 
-#: site/dashboard/wizard.php:301
+#: site/dashboard/wizard.php:312
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
 msgstr "%s ti sta invitando a partecipare a un gruppo della formazione Zúme"
 
-#: site/dashboard/wizard.php:307
+#: site/dashboard/wizard.php:318
 msgid "Copy Invite"
 msgstr "Copia l'Invito"
 
@@ -5089,7 +5105,7 @@ msgid "Get New Password"
 msgstr "Ricevi una nuova password"
 
 #: site/login/login-template.php:123 site/login/login-template.php:124
-#: site/login/login-template.php:635
+#: site/login/login-template.php:657
 msgid "Email Address"
 msgstr "indirizzo email"
 
@@ -5120,8 +5136,8 @@ msgid "Password Required"
 msgstr "É richiesta la Password"
 
 #: site/login/login-template.php:265 site/login/login-template.php:444
-#: site/login/login-template.php:445 site/login/login-template.php:636
-#: site/login/login-template.php:769
+#: site/login/login-template.php:445 site/login/login-template.php:658
+#: site/login/login-template.php:791
 msgid "Password"
 msgstr "Password"
 
@@ -5142,11 +5158,11 @@ msgstr "Ciao!"
 msgid "Create a Zume Account"
 msgstr "Crea un profilo Zúme"
 
-#: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
-#: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
-#: site/parts/nav.php:100 utilities/apis/cta-api.php:133
-#: utilities/apis/cta-api.php:135
+#: site/login/login-template.php:374 site/login/login-template.php:470
+#: site/login/login-template.php:712 site/pages/follow-jesus.php:158
+#: site/pages/home.php:248 site/parts/footer.php:16 site/parts/nav.php:38
+#: site/parts/nav.php:100 utilities/apis/cta-api.php:136
+#: utilities/apis/cta-api.php:138
 msgid "Register"
 msgstr "Registrati"
 
@@ -5170,49 +5186,49 @@ msgstr "La password non è abbastanza forte"
 msgid "There are some errors in your form."
 msgstr "Ci sono errori nel modulo."
 
-#: site/login/login-template.php:570
+#: site/login/login-template.php:592
 msgid "User action confirmed."
 msgstr "Azione dell'utente confermata."
 
-#: site/login/login-template.php:582
+#: site/login/login-template.php:604
 msgid "Welcome back!"
 msgstr "Bentornato!"
 
-#: site/login/login-template.php:589 site/login/login-template.php:638
-#: site/login/login-template.php:713 site/pages/home.php:112
+#: site/login/login-template.php:611 site/login/login-template.php:660
+#: site/login/login-template.php:735 site/pages/home.php:112
 #: site/parts/nav.php:39 site/parts/nav.php:101
 msgid "Login"
 msgstr "Accedi"
 
-#: site/login/login-template.php:612
+#: site/login/login-template.php:634
 msgid "or sign in with email"
 msgstr "oppure accedi con il tuo indirizzo email"
 
-#: site/login/login-template.php:618
+#: site/login/login-template.php:640
 msgid "Username or password does not match. Try again."
 msgstr "La username o la password non coincidono. Prova di nuovo."
 
-#: site/login/login-template.php:637 site/login/login-template.php:770
+#: site/login/login-template.php:659 site/login/login-template.php:792
 msgid "Remember Me"
 msgstr "Ricordami"
 
-#: site/login/login-template.php:689
+#: site/login/login-template.php:711
 msgid "Don't have an account?"
 msgstr "Non hai un profilo?"
 
-#: site/login/login-template.php:701
+#: site/login/login-template.php:723
 msgid "Lost your password?"
 msgstr "Password dimenticata?"
 
-#: site/login/login-template.php:712
+#: site/login/login-template.php:734
 msgid "Already have an account?"
 msgstr "Hai già un profilo?"
 
-#: site/login/login-template.php:768
+#: site/login/login-template.php:790
 msgid "Username or Email Address"
 msgstr "Nome Utente o Indirizzo Email"
 
-#: site/login/login-template.php:771
+#: site/login/login-template.php:793
 msgid "Log In"
 msgstr "Accedi"
 
@@ -5483,7 +5499,7 @@ msgstr "Inizia"
 msgid "How does Zúme Training Work?"
 msgstr "Come funziona la formazione Zúme?"
 
-#: site/pages/about.php:167 site/pages/home.php:213
+#: site/pages/about.php:167 site/pages/home.php:212
 #, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
@@ -5492,7 +5508,7 @@ msgstr ""
 "%1$sIscrizione Gratuita%2$s ti dà accesso a tutti i materiali della "
 "formazione e al tutoraggio online."
 
-#: site/pages/about.php:171 site/pages/home.php:217
+#: site/pages/about.php:171 site/pages/home.php:216
 #, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
@@ -5501,7 +5517,7 @@ msgstr ""
 "%1$sVideo Formativi%2$s aiutano il tuo gruppo a comprendere i principi "
 "fondamentali della moltiplicazione di discepoli."
 
-#: site/pages/about.php:175 site/pages/home.php:221
+#: site/pages/about.php:175 site/pages/home.php:220
 #, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
@@ -5509,7 +5525,7 @@ msgstr ""
 "%1$sDiscussioni di Gruppo%2$s aiutano il tuo gruppo a riflettere su ciò che "
 "viene presentato nella formazione."
 
-#: site/pages/about.php:179 site/pages/home.php:225
+#: site/pages/about.php:179 site/pages/home.php:224
 #, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
@@ -5518,7 +5534,7 @@ msgstr ""
 "%1$sEsercizi Semplici%2$s aiutano il tuo gruppo a mettere in pratica ciò che "
 "state imparando."
 
-#: site/pages/about.php:183 site/pages/home.php:229
+#: site/pages/about.php:183 site/pages/home.php:228
 #, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
@@ -5639,18 +5655,44 @@ msgstr "Registrati Gratuitamente"
 msgid "Please enter a friend code."
 msgstr "Inserisci un codice amico."
 
-#: site/pages/checkin.php:157
+#: site/pages/checkin.php:235
 msgid "Checkin"
 msgstr "Effettuare Check-In"
 
-#: site/pages/checkin.php:159
+#: site/pages/checkin.php:237
 msgid "Use the code on the screen or in the book"
 msgstr "Usa il codice sullo schermo o nel libro"
 
-#: site/pages/checkin.php:164 site/pages/friend-invite.php:171
+#: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
 msgid "Connect"
 msgstr "Connettiti"
+
+#: site/pages/checkin.php:246
+#, fuzzy
+msgid "or"
+msgstr "Ordinare"
+
+#: site/pages/checkin.php:248
+msgid "Choose session to checkin"
+msgstr ""
+
+#: site/pages/checkin.php:250 site/pages/training.php:163
+#: site/pages/training.php:214
+msgid "Training Schedules"
+msgstr "Programma della Formazione"
+
+#: site/pages/checkin.php:254 site/pages/training.php:221
+msgid "10 Sessions"
+msgstr "10 Sessioni"
+
+#: site/pages/checkin.php:258 site/pages/training.php:233
+msgid "20 Sessions"
+msgstr "20 Sessioni"
+
+#: site/pages/checkin.php:262 site/pages/training.php:245
+msgid "Intensive"
+msgstr "Intensiva"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
@@ -5996,7 +6038,7 @@ msgstr "Condurre una Chiesa Semplice"
 msgid "Training Others"
 msgstr "Formare Altri"
 
-#: site/pages/home.php:179 site/pages/home.php:245
+#: site/pages/home.php:179 site/pages/home.php:244
 msgid "I'm Ready!"
 msgstr "Sono pronto/a!"
 
@@ -6004,15 +6046,15 @@ msgstr "Sono pronto/a!"
 msgid "Ordinary People. Simple Steps."
 msgstr "Persone Comuni. Passi Semplici."
 
-#: site/pages/home.php:238
+#: site/pages/home.php:237
 msgid "More about zume"
 msgstr "Maggiori informazioni su Zúme"
 
-#: site/pages/home.php:272
+#: site/pages/home.php:271
 msgid "Real people ... real stories."
 msgstr "Persone vere ... storie vere."
 
-#: site/pages/home.php:283
+#: site/pages/home.php:282
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
@@ -6022,13 +6064,13 @@ msgstr ""
 "frequentando una chiesa, ma per qualche motivo non avevo mai compreso le "
 "semplici verità del fare discepoli che ho trovato in Zúme. - C"
 
-#: site/pages/home.php:294
+#: site/pages/home.php:293
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 "Chiunque può farlo. Non devi avere competenze particolari o formazioni "
 "speciali. - J"
 
-#: site/pages/home.php:305
+#: site/pages/home.php:304
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
@@ -6036,7 +6078,7 @@ msgstr ""
 "Questa formazione è per tutti i discepoli che vogliono obbedire al Grande "
 "Mandato. Zúme descrive un normale stile di vita cristiano. - D"
 
-#: site/pages/home.php:316
+#: site/pages/home.php:315
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
@@ -6044,12 +6086,12 @@ msgstr ""
 "Questi concetti e competenze hanno trasformato la nostra chiesa e il nostro "
 "impatto sul mondo. - R"
 
-#: site/pages/home.php:326
+#: site/pages/home.php:325
 #, php-format
 msgid "%s = Yeast"
 msgstr "%s = Lievito"
 
-#: site/pages/home.php:332
+#: site/pages/home.php:331
 msgid ""
 "Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, "
 "\"The Kingdom of Heaven is like a woman who took yeast and mixed it into a "
@@ -6066,23 +6108,23 @@ msgstr ""
 "mira a preparare e a dare potenza a comuni credenti per riempire la Terra "
 "con discepoli che si moltiplicano nella nostra generazione."
 
-#: site/pages/home.php:337
+#: site/pages/home.php:336
 msgid "Ready to take your next steps?"
 msgstr "Sei pronto/a a fare i tuoi prossimi passi?"
 
-#: site/pages/home.php:341
+#: site/pages/home.php:340
 msgid "Register Free."
 msgstr "Registrati Gratuitamente."
 
-#: site/pages/home.php:345
+#: site/pages/home.php:344
 msgid "Gather a Group."
 msgstr "Forma un Gruppo."
 
-#: site/pages/home.php:349
+#: site/pages/home.php:348
 msgid "Change the World."
 msgstr "Cambia il Mondo."
 
-#: site/pages/home.php:352
+#: site/pages/home.php:351
 msgid "Get started"
 msgstr "Comincia"
 
@@ -6450,10 +6492,6 @@ msgstr "Panoramica del Corso"
 msgid "Course Concepts"
 msgstr "Concetti della Formazione"
 
-#: site/pages/training.php:163 site/pages/training.php:214
-msgid "Training Schedules"
-msgstr "Programma della Formazione"
-
 #: site/pages/training.php:164 site/pages/training.php:259
 msgid "What is required?"
 msgstr "Cosa è richiesto?"
@@ -6484,10 +6522,6 @@ msgstr ""
 "La durata di Zúme è 20 ore. Ma quelle 20 ore possono essere suddivise in "
 "base alle esigenze e la disponibilità del tuo gruppo."
 
-#: site/pages/training.php:221
-msgid "10 Sessions"
-msgstr "10 Sessioni"
-
 #: site/pages/training.php:228
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
@@ -6499,10 +6533,6 @@ msgstr ""
 "tra una sessione e l'altra. Questa struttura viene spesso eseguita una volta "
 "alla settimana per 10 settimane."
 
-#: site/pages/training.php:233
-msgid "20 Sessions"
-msgstr "20 Sessioni"
-
 #: site/pages/training.php:240
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
@@ -6513,10 +6543,6 @@ msgstr ""
 "acquisire padronanza dei concetti e delle competenze, la struttura da 20 "
 "sessioni offre più opportunità di esercitarti con ognuno dei concetti e "
 "strumenti."
-
-#: site/pages/training.php:245
-msgid "Intensive"
-msgstr "Intensiva"
 
 #: site/pages/training.php:252
 msgid ""
@@ -6602,110 +6628,116 @@ msgstr "Il tuo amico"
 msgid "the plan"
 msgstr "il piano"
 
-#: utilities/apis/cta-api.php:134
+#: utilities/apis/cta-api.php:137
 msgid "Register to start your training"
 msgstr "Registrati per iniziare la tua formazione"
 
-#: utilities/apis/cta-api.php:148
+#: utilities/apis/cta-api.php:151
 msgid "Join Online Training"
 msgstr "Partecipa alla Formazione Online"
 
-#: utilities/apis/cta-api.php:149
+#: utilities/apis/cta-api.php:152
 msgid "Join the online training to learn more"
 msgstr "Registrati alla formazione online per saperne di più"
 
-#: utilities/apis/cta-api.php:163
+#: utilities/apis/cta-api.php:166
 msgid "Joined Training!"
 msgstr "Ti sei registrato per una formazione!"
 
-#: utilities/apis/cta-api.php:178
+#: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
 msgstr "Richiedi un tutor che ti aiuterà nel tuo cammino"
 
-#: utilities/apis/cta-api.php:192
+#: utilities/apis/cta-api.php:195
 msgid "Requested Coach!"
 msgstr "Tutor Richiesto!"
 
-#: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
+#: utilities/apis/cta-api.php:239
 msgid "Congratulations"
 msgstr "Congratulazioni"
 
-#: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
+#: utilities/apis/cta-api.php:209
+#, fuzzy
+msgid "Connected to Coach!"
+msgstr "Mettendoti in contatto con un Tutor"
+
+#: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
 msgstr "Crea una Formazione"
 
-#: utilities/apis/cta-api.php:207
+#: utilities/apis/cta-api.php:224
 msgid "Create a training to help you grow"
 msgstr "Crea una formazione che ti aiuterà a crescere"
 
-#: utilities/apis/cta-api.php:221
+#: utilities/apis/cta-api.php:238
 msgid "Created Training!"
 msgstr "Formazione Creata!"
 
-#: utilities/apis/cta-api.php:254
+#: utilities/apis/cta-api.php:271
 msgid "Set your profile to help others know you"
 msgstr "Imposta il tuo profilo per aiutare gli altri a conoscerti"
 
-#: utilities/apis/cta-api.php:268
+#: utilities/apis/cta-api.php:285
 msgid "Profile Set"
 msgstr "Profilo Impostato"
 
-#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
+#: utilities/apis/cta-api.php:299 utilities/apis/cta-api.php:301
 msgid "Create 3 Month Plan"
 msgstr "Crea un Piano di 3 Mesi"
 
-#: utilities/apis/cta-api.php:283
+#: utilities/apis/cta-api.php:300
 msgid "Create a 3 month plan to help you grow"
 msgstr "Crea un Piano di 3 Mesi per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:297
+#: utilities/apis/cta-api.php:314
 #, php-format
 msgid "%s unlocked"
 msgstr "%s sbloccato/i"
 
-#: utilities/apis/cta-api.php:311
+#: utilities/apis/cta-api.php:328
 msgid "3-Month Plan Created"
 msgstr "Piano di 3 Mesi Creato"
 
-#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
+#: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
 msgid "Complete 3 Month Plan"
 msgstr "Completa il tuo Piano di 3 Mesi"
 
-#: utilities/apis/cta-api.php:326
+#: utilities/apis/cta-api.php:343
 msgid "Complete your 3 month plan to help you grow"
 msgstr "Completa il tuo Piano di 3 Mesi per aiutarti a crescere"
 
-#: utilities/apis/cta-api.php:340
+#: utilities/apis/cta-api.php:357
 msgid "3 Month Plan Completed"
 msgstr "Piano di 3 Mesi Completato"
 
-#: utilities/apis/cta-api.php:385
+#: utilities/apis/cta-api.php:402
 msgid "Join the community"
 msgstr "Unisciti alla Comunità"
 
-#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
+#: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 msgid "Share Spiritual Breathing"
 msgstr "Condivi il Respiro Spirituale"
 
-#: utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:419
 msgid "Share Spiritual Breathing with someone"
 msgstr "Respiro Spirituale condiviso"
 
-#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
+#: utilities/apis/cta-api.php:433 utilities/apis/cta-api.php:435
 msgid "Share Relational Stewardship"
 msgstr "Condividi Amministrare le Relazioni"
 
-#: utilities/apis/cta-api.php:417
+#: utilities/apis/cta-api.php:434
 msgid "Share Relational Stewardship with someone"
 msgstr "Amministrare le Relazioni Condiviso"
 
-#: utilities/apis/plans-api.php:134
+#: utilities/apis/plans-api.php:142
 #, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
 msgstr "La mia prima formazione - %s"
 
-#: utilities/apis/plans-api.php:136
+#: utilities/apis/plans-api.php:144
 #, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
@@ -10071,9 +10103,6 @@ msgstr "Messenger"
 
 #~ msgid "example: Denver, CO 80120"
 #~ msgstr "Esempio: Ancona, AN, 60123"
-
-#~ msgid "Linked Accounts"
-#~ msgstr "Account Collegati"
 
 #~ msgid "Welcome to God’s Family!"
 #~ msgstr "Benvenuto/a alla Famiglia di Dio!"

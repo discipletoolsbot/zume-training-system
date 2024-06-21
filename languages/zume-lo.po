@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
-"POT-Creation-Date: 2024-06-10 17:23+0100\n"
+"POT-Creation-Date: 2024-06-18 18:03+0100\n"
 "PO-Revision-Date: 2024-06-11 05:53+0000\n"
 "Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
 "translate@weblate.org>\n"
@@ -15,13 +15,13 @@ msgstr ""
 "X-Generator: Weblate 5.5.5\n"
 
 #: appearance/style-override/navigation.php:75
-#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:199
-#: site/dashboard/dashboard.php:252 site/parts/footer.php:11
+#: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
+#: site/dashboard/dashboard.php:259 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
 msgstr "ການຝຶກອົບຮົມ"
 
-#: appearance/style-override/navigation.php:85 site/pages/home.php:208
+#: appearance/style-override/navigation.php:85 site/pages/home.php:207
 #, fuzzy
 msgid "How it Works"
 msgstr "​ຊູ​ເມ້​ເຮັດ​ວຽກ​ແນວ​ໃດ"
@@ -36,8 +36,8 @@ msgstr "​ຄຳ​ຖາມ​ທີ່​ພົບ​ເລື້ອຍໆ"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
-#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:161
-#: site/dashboard/wizard.php:174 site/pages/home.php:108 site/parts/nav.php:19
+#: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
 msgid "Dashboard"
 msgstr "​ແຜງ​ຄວບ​ຄຸມ"
@@ -84,110 +84,110 @@ msgstr "ບ່ອນເກັບມ້ຽນ"
 msgid "Global Map"
 msgstr "ແຜນທີ່ທົ່ວໂລກ"
 
-#: globals.php:1936 globals.php:1938 site/course/course-content.php:86
+#: globals.php:1939 globals.php:1941 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
 msgstr "ພຣະເຈົ້າໃຊ້ຄົນທຳມະດາ"
 
-#: globals.php:1937 site/pages/follow-jesus.php:175
+#: globals.php:1940 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr "ທ່ານຈະເຫັນວິທີທີ່ພຣະເຈົ້າໃຊ້ຄົນທຳມະດາເຮັດສິ່ງທີ່ລຽບງ່າຍເພື່ອສ້າງຜົນກະທົບທີ່ຍິ່ງໃຫຍ່."
 
-#: globals.php:1947 site/course/course-content.php:3161
+#: globals.php:1951 site/course/course-content.php:3161
 #: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
 msgstr "ຄຳນິຍາມງ່າຍໆຂອງສາວົກແລະຄຣິສຕະຈັກ"
 
-#: globals.php:1948 site/course/course-content.php:153
+#: globals.php:1952 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr "ຄົ້ນພົບໃຈຄວາມສຳຄັນຂອງການເປັນສາວົກ,ການສ້າງສາວົກ, ແລະຄຣິສຕະຈັກແມ່ນຫຍັງ."
 
-#: globals.php:1949 site/course/course-content.php:143
+#: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
 #, fuzzy
 msgid "Disciples and the Church"
 msgstr "ສານຸສິດ ແລະ ສາດສະໜາຈັກ"
 
-#: globals.php:1958 site/course/course-content.php:3162
+#: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "ລົມຫາຍໃຈຝ່າຍຈິດວິນຍານແມ່ນການໄດ້ຍິນຈາກພຣະເຈົ້າແລະການເຊື່ອຟັງພຣະເຈົ້າ."
 
-#: globals.php:1959 site/pages/follow-jesus.php:201
+#: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr "ການເປັນສາວົກໝາຍເຖິງພວກເຮົາໄດ້ຍິນຈາກພຣະເຈົ້າແລະພວກເຮົາເຊື່ອຟັງພຣະເຈົ້າ."
 
-#: globals.php:1960 site/course/course-content.php:189
+#: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
 #, fuzzy
 msgid "Hearing and Obeying God"
 msgstr "ລົມຫາຍໃຈຝ່າຍຈິດວິນຍານແມ່ນການໄດ້ຍິນຈາກພຣະເຈົ້າແລະການເຊື່ອຟັງພຣະເຈົ້າ."
 
-#: globals.php:1969 globals.php:1971
+#: globals.php:1975 globals.php:1977
 #, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "​ວິ​ທີ​ສຶກ​ສາ​ພ​ຣະ​ຄຳ​ພີ"
 
-#: globals.php:1970 site/pages/follow-jesus.php:216
+#: globals.php:1976 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
 "ເຄື່ອງມືສຳລັບການສຶກສາພຣະຄຳພີປະຈຳວັນທີ່ຊ່ວຍໃຫ້ທ່ານເຂົ້າໃຈ,ເຊື່ອຟັງ,ແລະແບ່ງປັນພຣະຄຳຂອງພຣະເຈົ້າ."
 
-#: globals.php:1980 globals.php:1982 site/course/course-content.php:93
+#: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
 msgstr "​ກຸ່ມ​ທີ່​ມີ​ໜ້າ​ທີ່​ຮັບ​ຜິດ​ຊອບ"
 
-#: globals.php:1981 site/pages/follow-jesus.php:231
+#: globals.php:1988 site/pages/follow-jesus.php:231
 msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr "ເຄື່ອງມືສຳລັບສອງຫຼືສາມຄົນທີ່ເປັນເພດດຽວກັນເພື່ອພົບກັນທຸກໆອາທິດແລະໜຸນໃຈເຊິ່ງກັນແລະກັນໃນດ້ານທີ່ກຳລັງດຳເນີນໄປດ້ວຍດີແລະເປີດເຜີຍດ້ານຕ້ອງການແກ້ໄຂ."
 
-#: globals.php:1991 site/pages/follow-jesus.php:194
+#: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
 msgstr "ຮູບແບບການດຳເນີນຊີວິດເປັນຜູ້ຜະລິດບໍ່ແມ່ນຜູ້ຊົມໃຊ້"
 
-#: globals.php:1992 site/pages/follow-jesus.php:195
+#: globals.php:2000 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr "ທ່ານຈະຄົ້ນພົບສີ່ວິທີຫຼັກທີ່ພຣະເຈົ້າສ້າງບັນດາຜູ້ເຊື່ອໃຫ້ເປັນຄືກັບພຣະເຢຊູເຈົ້າຫຼາຍຂຶ້ນທຸກໆມື້."
 
-#: globals.php:1993
+#: globals.php:2001
 #, fuzzy
 msgid "Producer not Consumer"
 msgstr "ຜູ້​ຜະ​ລິດ VS ຜູ້​ຊົມ​ໃຊ້"
 
-#: globals.php:2002 globals.php:2004 site/pages/follow-jesus.php:204
+#: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
 msgstr "ວິທີໃຊ້ເວລາໜຶ່ງຊົ່ວໂມງໃນການອະທິຖານແນວໃດ"
 
-#: globals.php:2003 site/pages/follow-jesus.php:205
+#: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
 msgstr "ມາເບິ່ງວ່າການໃຊ້ເວລາໜຶ່ງຊົ່ວໂມງໃນການອະທິຖານນັ້ນມັນງ່າຍແນວໃດ"
 
-#: globals.php:2013 site/pages/follow-jesus.php:291
+#: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
 msgstr "ຜູ້ຮັບມອບໝາຍໃຫ້ເບິ່ງແຍງຄົນໃນສາຍສຳພັນ-ລາຍຊື່100ຄົນ"
 
-#: globals.php:2014 site/pages/follow-jesus.php:292
+#: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr "ເຄື່ອງມືທີ່ຖືກອອກແບບມາເພື່ອຊ່ວຍໃຫ້ທ່ານເປັນຜູ້ເບິ່ງແຍງທີ່ດີໃນຄວາມສຳພັນຂອງທ່ານ."
 
-#: globals.php:2015 site/activities/list-of-100-printable.php:78
+#: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
 #: site/course/course-content.php:603 site/course/course-content.php:612
 #: site/course/course-content.php:671 site/course/course-content.php:3535
@@ -198,13 +198,13 @@ msgstr "ເຄື່ອງມືທີ່ຖືກອອກແບບມາເພ
 msgid "List of 100"
 msgstr "ລາຍ​ຊື່ 100 ຄົນ"
 
-#: globals.php:2024 globals.php:2026 site/course/course-content.php:796
+#: globals.php:2035 globals.php:2037 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
 msgstr "ຫຼັກ​ການ​ຝ່າຍ​ຈິດ​ວິນ​ຍານ"
 
-#: globals.php:2025 site/pages/follow-jesus.php:250
+#: globals.php:2036 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
@@ -212,26 +212,26 @@ msgstr ""
 "ຮຽນຮູ້ວ່າຫຼັກການຂອງພຣະເຈົ້າແມ່ນແຕກຕ່າງຈາກຂອງໂລກແນວໃດ. "
 "ພຣະເຈົ້າລົງທືນຫຼາຍຂຶ້ນໃນຜູ້ທີ່ສັດຊື່ກັບສິ່ງທີ່ພວກເຂົາເຈົ້າໄດ້ຖືກມອບໃຫ້ແລ້ວ."
 
-#: globals.php:2035 site/pages/follow-jesus.php:295
+#: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
 msgstr "ຂ່າວປະເສີດແລະວິທີການເລົ່າຂ່າວປະເສີດ"
 
-#: globals.php:2036 site/pages/follow-jesus.php:296
+#: globals.php:2048 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr "ຮຽນຮູ້ວິທີທີ່ຈະແບ່ງປັນຂ່າວປະເສີດຂອງພຣະເຈົ້າຕັ້ງແຕ່ຈຸດເລີ່ມຕົ້ນຂອງມວນມະນຸດໄປຈົນເຖິງຍຸກສຸດທ້າຍນີ້."
 
-#: globals.php:2037
+#: globals.php:2049
 #, fuzzy
 msgid "Sharing God‘s Story"
 msgstr "​ຝຶກ​ເລົ່າຄຳ​ພະ​ຍານ​ຊີ​ວິດ​ຂອງ​ທ່ານ(45ນາ​ທີ)"
 
-#: globals.php:2046 site/pages/follow-jesus.php:242
+#: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
 msgstr "ບັບຕິສະມາແລະວິທີການໃຫ້ບັບຕິສະມາ"
 
-#: globals.php:2047 site/pages/follow-jesus.php:243
+#: globals.php:2060 site/pages/follow-jesus.php:243
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
@@ -241,34 +241,34 @@ msgstr ""
 "ໃຫ້ພວກເຂົາຮັບບັບຕິສະມາໃນພຣະນາມແຫ່ງພຣະບິດາ,"
 "ພຣະບຸດແລະພຣະວິນຍານບໍຣິສຸດເຈົ້າ...”ຮຽນຮູ້ວິທີການນຳເອົາສິ່ງນີ້ໄປຝຶກຝົນ."
 
-#: globals.php:2048 site/course/course-content.php:801
+#: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
 msgstr "ບັບ​ຕິ​ສະ​ມາ"
 
-#: globals.php:2057 site/pages/follow-jesus.php:299
+#: globals.php:2071 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
 msgstr "ກະກຽມຄຳພະຍານ 3 ນາທີ ຂອງທ່ານ "
 
-#: globals.php:2058 site/pages/follow-jesus.php:300
+#: globals.php:2072 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr "ຮຽນຮູ້ວິທີທີ່ຈະເລົ່າຄຳພະຍານຂອງທ່ານໃນ3ນາທີໂດຍແບ່ງປັນວ່າພຣະເຢຊູເຈົ້າໄດ້ສົ່ງຜົນກະທົບຕໍ່ຊີວິດຂອງທ່ານແນວໃດ."
 
-#: globals.php:2059
+#: globals.php:2073
 msgid "3-Minute Testimony"
 msgstr "ຄຳ​ພະ​ຍານ 3 ນາ​ທີ"
 
-#: globals.php:2068 site/course/course-content.php:1140
+#: globals.php:2083 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
 msgstr "ນິມິດການໃຫ້ພຣະພອນທີ່ຍິ່ງໃຫຍ່ທີ່ສຸດ"
 
-#: globals.php:2069 site/course/course-content.php:1216
+#: globals.php:2084 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:183
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
@@ -277,27 +277,27 @@ msgstr ""
 "ຮຽນຮູ້ແບບແຜນທີ່ງ່າຍໆຂອງການສ້າງບໍ່ພຽງແຕ່ເປັນຜູ້ເຊື່ອ "
 "ພຣະເຢຊູເຈົ້າຄົນດຽວເທົ່ານັ້ນແຕ່ຍັງລວມເຖິງຄອບຄົວຝ່າຍວິນຍານທັງໝົດທີ່ເພີ່ມທະວີຈຳນວນເປັນຫຼາຍລຸ້ນຄົນຕໍ່ໆໄປ."
 
-#: globals.php:2070
+#: globals.php:2085
 #, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
 msgstr "​ພ​ຣະ​ພອນ​ທີ່​ຍິ່ງ​ໃຫຍ່​ທີ່​ສຸດ"
 
-#: globals.php:2079 site/pages/follow-jesus.php:272
+#: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
 msgstr "ການສ້າງສາວົກແບບເປັດນ້ອຍ-ການເປັນຜູ້ນຳໃນທັນທີທັນໃດ"
 
-#: globals.php:2080
+#: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
 msgstr "ຮຽນຮູ້ວ່າສິ່ງທີ່ເປັດນ້ອຍເຮັດກ່ຽວຂ້ອງກັບການສ້າງສາວົກແນວໃດ."
 
-#: globals.php:2081 site/course/course-content.php:1141
+#: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
 msgstr "​ການ​ສ້າງ​ສາ​ວົກ​ແບບ​ເປັດ​ນ້ອຍ"
 
-#: globals.php:2090 globals.php:2092 site/course/course-content.php:1142
+#: globals.php:2107 globals.php:2109 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
@@ -305,7 +305,7 @@ msgstr "​ການ​ສ້າງ​ສາ​ວົກ​ແບບ​ເປັ
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "ຕາທີ່ເບິ່ງເຫັນບ່ອນທີ່ອານາຈັກຂອງພຣະເຈົ້າຍັງບໍ່ທັນມາຕັ້ງຢູ່"
 
-#: globals.php:2091 site/pages/follow-jesus.php:254
+#: globals.php:2108 site/pages/follow-jesus.php:254
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
@@ -313,11 +313,11 @@ msgstr ""
 "ເລີ່ມຕົ້ນທີ່ຈະເບິ່ງເຫັນວ່າອານາຈັກຂອງພຣະເຈົ້າຍັງບໍ່ໄດ້ມາຕັ້ງຢູ່ບ່ອນໃດ."
 "ປົກກະຕິແລ້ວນີ້ແມ່ນສະຖານທີ່ທີ່ພຣະເຈົ້າຕ້ອງການເຮັດວຽກຫຼາຍທີ່ສຸດ"
 
-#: globals.php:2101 site/pages/follow-jesus.php:238
+#: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "ພິທີມະຫາສະໜິດແລະວິທີການນຳປະກອບພິທີ"
 
-#: globals.php:2102
+#: globals.php:2120
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -325,7 +325,7 @@ msgstr ""
 "ມັນເປັນວິທີທີ່ງ່າຍດາຍທີ່ຈະສະຫຼອງຄວາມສຳພັນອັນໃກ້ຊິດແລະຄວາມສຳພັນທີ່ຕໍ່ເນື່ອງຂອງພວກເຮົາກັບພຣະເຢຊູເຈົ້າ. "
 "ຮຽນຮູ້ວິທີງ່າຍໆໃນການສະເຫຼີມສະຫຼອງ."
 
-#: globals.php:2103 site/course/course-content.php:1147
+#: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
@@ -333,11 +333,11 @@ msgstr ""
 msgid "The Lord’s Supper"
 msgstr "ພິ​ທີ​ມະ​ຫາ​ສະ​ໜິດ/ອາ​ຫານ​ຄາບ​ສຸດ​ທ້າຍ"
 
-#: globals.php:2112 site/pages/follow-jesus.php:310
+#: globals.php:2131 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
 msgstr "ການຍ່າງອະທິຖານແລະວິທີການ"
 
-#: globals.php:2113
+#: globals.php:2132
 #, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
@@ -346,65 +346,65 @@ msgstr ""
 "ມັນເປັນວິທີງ່າຍໆທີ່ຈະເຊື່ອຟັງຄຳສັ່ງຂອງພຣະເຈົ້າທີ່ຈະອະທິຖານເພື່ອຄົນອື່ນ. ແລະມັນເປັນສິ່ງທີ່ຄືກັບວ່າ - "
 "ການອະທິຖານຕໍ່ພຣະເຈົ້າໃນຂະນະທີ່ຍ່າງອ້ອມຮອບ!"
 
-#: globals.php:2114 site/course/course-content.php:1520
+#: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
 msgstr "ການ​ຍ່າງ​ອະ​ທິ​ຖານ"
 
-#: globals.php:2123 site/pages/follow-jesus.php:306
+#: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
 msgstr "ບຸກຄົນແຫ່ງສັນຕິສຸກແລະວິທີການຊອກຫາບຸກຄົນແຫ່ງສັນຕິສຸກ"
 
-#: globals.php:2124
+#: globals.php:2144
 #, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr "ຮຽນຮູ້ວ່າບຸກຄົນແຫ່ງສັນຕິສຸກແມ່ນໃຜແລະຈະຮູ້ໄດ້ແນວໃດວ່າທ່ານພົບລາວແລ້ວ"
 
-#: globals.php:2125 site/course/course-content.php:1515
+#: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
 msgstr "ບຸກ​ຄົນ​ແຫ່ງ​ສັນ​ຕິ​ສຸກ"
 
-#: globals.php:2134 site/pages/follow-jesus.php:219
+#: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "ຄວາມສັດຊື່ດີກວ່າຄວາມຮູ້"
 
-#: globals.php:2135
+#: globals.php:2156
 #, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr "ມັນເປັນສິ່ງສຳຄັນທີ່ພວກສາວົກຮູ້-ແຕ່ມັນສຳຄັນກວ່າທີ່ພວກເຂົາຈະເຮັດຕາມສິ່ງທີ່ພວກເຂົາຮູ້."
 
-#: globals.php:2136 site/course/course-content.php:1765
+#: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
 msgstr "ຄວາມ​ສັດ​ຊື່"
 
-#: globals.php:2145 site/pages/follow-jesus.php:208
+#: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
 msgstr "ຮູບແບບການອະທິຖານຕາມຫົວຂໍ້ BLESS"
 
-#: globals.php:2146 site/pages/follow-jesus.php:209
+#: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "ຝຶກຝົນຄວາມຈື່ຈຳງ່າຍໆເພື່ອເຕືອນທ່ານກ່ຽວກັບວິທີການອະທິຖານເພື່ອຄົນອື່ນ."
 
-#: globals.php:2147 site/course/course-content.php:1603
+#: globals.php:2169 site/course/course-content.php:1603
 #, fuzzy
 msgid "The B.L.E.S.S. Prayer"
 msgstr "ຝຶກ​ຝົນ​ການ​ອະ​ທິ​ຖານອວຍ​ພອນ(15 ນາ​ທີ)."
 
-#: globals.php:2156 site/pages/follow-jesus.php:226
+#: globals.php:2179 site/pages/follow-jesus.php:226
 #, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "ຮູບແບບການເຂົ້າຮ່ວມໜ່ວຍສ້າງສາວົກ"
 
-#: globals.php:2157
+#: globals.php:2180
 #, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
@@ -415,32 +415,32 @@ msgstr ""
 "ສາມັກຄີທຳກັນແລະຝຶກຝົນການເຊື່ອຟັງແລະແບ່ງປັນສິ່ງທີ່ພວກເຂົາໄດ້ຮຽນຮູ້. ດ້ວຍວິທີນີ້, "
 "ໜ່ວຍສ້າງສາວົກບໍ່ພຽງແຕ່ເປັນໜ່ວຍນ້ອຍໆເທົ່ານັ້ນ ແຕ່ຍັງເປັນຄຣິສຕະຈັກລຽບງ່າຍອີກດ້ວຍ."
 
-#: globals.php:2158
+#: globals.php:2181
 msgid "3/3 Group"
 msgstr "​ກຸ່ມ 3/3"
 
-#: globals.php:2167 site/pages/follow-jesus.php:276
+#: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
 msgstr "ວົງຈອນການຮຽນຮູ້ເພື່ອການເປັນສາວົກທີ່ເຕີບໃຫຍ່"
 
-#: globals.php:2168 site/pages/follow-jesus.php:277
+#: globals.php:2192 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr "ຮຽນຮູ້ເລື່ອງວົງຈອນການຮຽນຮູ້ແລະພິຈາລະນາວ່າມັນໃຊ້ກັບການສ້າງສາວົກໄດ້ແນວໃດ."
 
-#: globals.php:2169 site/course/course-content.php:5032
+#: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
 msgstr "ວົງ​ຈອນ​ການ​ຮຽນ​ຮູ້"
 
-#: globals.php:2178 globals.php:2180 site/course/course-content.php:2190
+#: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
 msgstr "ກຸ່ມ​ສ້າງຜູ້​ນຳ"
 
-#: globals.php:2179 site/course/course-content.php:2213
+#: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
@@ -449,12 +449,12 @@ msgstr ""
 "ໜ່ວຍສ້າງເປັນຜູ້ນຳແມ່ນວິທີທີ່ຜູ້ໃດຜູ້ ໜຶ່ງ "
 "ຮູ້ສຶກຖືກເອີ້ນໃຫ້ເປັນຜູ້ນຳສາມາດພັດທະນາຄວາມເປັນຜູ້ນຳຂອງເຂົາເຈົ້າໂດຍການຝຶກຝົນການຮັບໃຊ້"
 
-#: globals.php:2189 globals.php:2191 site/course/course-content.php:5157
+#: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
 msgstr "ຄາດຫວັງການເຕີບໃຫຍ່ແບບບໍ່ເປັນຂັ້ນຕອນ"
 
-#: globals.php:2190
+#: globals.php:2216
 #, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
@@ -463,12 +463,12 @@ msgstr ""
 "ມາເບິ່ງວ່າການສ້າງສາວົກບໍ່ຈຳເປັນຕ້ອງເປັນເສັ້ນຊື່ຕາມຂັ້ນຕອນແນວໃດ. "
 "ການເພີ່ມທະວີຈຳນວນສາມາດເກີດຂື້ນໃນເວລາດຽວກັນໄດ້."
 
-#: globals.php:2200 site/course/course-content.php:2770
+#: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
 msgstr "ການຂັບເຄື່ອນໃນການເພີ່ມທະວີຈຳນວນເປັນເລື່ອງສຳຄັນ"
 
-#: globals.php:2201 site/pages/follow-jesus.php:285
+#: globals.php:2228 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
@@ -476,37 +476,37 @@ msgstr ""
 "ການເພີ່ມທະວີຈຳນວນສາວົກສຳຄັນແລະການເພີ່ມທະວີຈຳນວນຢ່າງໄວວາເປັນເລື່ອງສຳຄັນຍິ່ງກວ່າ."
 "ມາເບິ່ງວ່າເປັນຫຍັງການຂັບເຄື່ອນຈຶ່ງເປັນເລື່ອງສຳຄັນ"
 
-#: globals.php:2202 site/course/course-content.php:2390
+#: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
 msgstr "​ການ​ຂັບ​ເຄື່ອນ"
 
-#: globals.php:2211 globals.php:2213 site/course/course-content.php:2391
+#: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
 msgstr "ການເປັນສ່ວນໜຶ່ງຂອງສອງຄຣິສຕະຈັກສະເໝີ"
 
-#: globals.php:2212
+#: globals.php:2240
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "ຮຽນຮູ້ວິທີທີ່ຈະເຊື່ອຟັງຄຳສັ່ງຂອງພຣະເຢຊູເຈົ້າໂດຍການໄປແລະການຢູ່."
 
-#: globals.php:2223 globals.php:2225 site/course/course-content.php:2903
+#: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: globals.php:2224
+#: globals.php:2253
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr "ສ້າງແລະແບ່ງປັນແຜນການຂອງທ່ານສຳລັບວິທີທີ່ທ່ານຈະໃຊ້ເຄື່ອງມືຊູເມ້ໃນສາມເດືອນຕໍ່ໜ້າ."
 
-#: globals.php:2234 globals.php:2236
+#: globals.php:2263 globals.php:2265
 #: site/activities/coaching-checklist-host.php:97
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
@@ -524,20 +524,20 @@ msgstr "ສ້າງແລະແບ່ງປັນແຜນການຂອງທ
 msgid "Coaching Checklist"
 msgstr "ລາຍ​ການກວດ​ກາ​ການ​ສອນ"
 
-#: globals.php:2235 site/pages/follow-jesus.php:328
+#: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr "ເຄື່ອງມືທີ່ມີປະສິດທິພາບທີ່ທ່ານສາມາດໃຊ້ເພື່ອປະເມີນຄວາມເຂັ້ມແຂງແລະຄວາມອ່ອນແອຂອງທ່ານເອງຢ່າງວ່ອງໄວເມື່ອເວົ້າເຖິງການສ້າງສາວົກທີ່ເພີ່ມທະວີຈຳນວນ"
 
-#: globals.php:2245 globals.php:2247 site/course/course-content.php:2898
+#: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
 msgstr "​ຄວາມ​ເປັນ​ຜູ້​ນຳ​ໃນ​ເຄືອ​ຂ່າຍ​ຕ່າງໆ"
 
-#: globals.php:2246 site/pages/follow-jesus.php:336
+#: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
@@ -545,14 +545,14 @@ msgstr ""
 "ຮຽນຮູ້ວ່າຄຣິສຕະຈັກທີ່ເພີ່ມທະວີຈຳນວນເຊື່ອມຕໍ່ກັນແລະດຳ "
 "ລົງຊີວິດຮ່ວມກັນເປັນຄອບຄົວຝ່າຍວິນຍານທີ່ຂະຫຍາຍຕົວແນວໃດ."
 
-#: globals.php:2256 site/course/course-content.php:2902
+#: globals.php:2287 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
 msgstr "ກຸ່ມ​ພີ່​ລ້ຽງ​ໃຫ້​ຄຳ​ປຶກ​ສາ"
 
-#: globals.php:2257 site/pages/follow-jesus.php:324
+#: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -561,29 +561,29 @@ msgstr ""
 "ນີ້ແມ່ນໜ່ວຍທີ່ປະກອບດ້ວຍຄົນທີ່ເປັນຜູ້ນຳແລະເລີ່ມຕົ້ນໜ່ວຍສ້າງສາວົກ. "
 "ນອກຈາກນັ້ນຍັງໃຊ້ຮູບແບບໜ່ວຍສ້າງສາວົກແລະເປັນວິທີທີ່ມີປະສິດທິພາບໃນການປະເມີນຄວາມເຂັ້ມແຂງທາງວິນຍານຂອງວຽກຂອງພຣະເຈົ້າໃນພື້ນທີ່ຂອງທ່ານ"
 
-#: globals.php:2258 site/dashboard/wizard.php:165
+#: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
 msgstr "​ກຸ່ມ​ພີ່​ລ້ຽງ​ໃຫ້​ຄຳ​ປຶກ​ສາ"
 
-#: globals.php:2267 globals.php:2269
+#: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
 msgstr "ເຄື່ອງມືດິນສີ່ປະເພດ"
 
-#: globals.php:2268
+#: globals.php:2300
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr "ຕາຕະລາງດິນສີ່ປະເພດແມ່ນເຄື່ອງມືທີ່ງ່າຍໆທີ່ໜ່ວຍສ້າງຜູ້ນຳຈະນຳໃຊ້ເພື່ອສະທ້ອນໃຫ້ເຫັນເຖິງສະພາບຂອງຄວາມພະຍາຍາມໃນປະຈຸບັນແລະວຽກງານອານາຈັກທີ່ຢູ່ອ້ອມຮອບພວກເພິ່ນ."
 
-#: globals.php:2278 globals.php:2280 site/course/course-content.php:2397
+#: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
 msgstr "ຕາຕະລາງສະແດງລຸ້ນ"
 
-#: globals.php:2279
+#: globals.php:2312
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
@@ -591,12 +591,12 @@ msgstr ""
 "ຕາຕະລາງສະແດງລຸ້ນແມ່ນເຄື່ອງມືທີ່ງ່າຍໆອີກຢ່າງໜຶ່ງ "
 "ເພື່ອຊ່ວຍຜູ້ນຳໃນຂະບວນການເຂົ້າໃຈການເຕີບໃຫຍ່ທີ່ຢູ່ອ້ອມຂ້າງພວກເພິ່ນ."
 
-#: globals.php:2289
+#: globals.php:2323
 #, fuzzy
 msgid "3-Circles Gospel Presentation"
 msgstr "3-ການນຳສະເໜີພຣະກິດຕິຄຸນ"
 
-#: globals.php:2290
+#: globals.php:2324
 #, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
@@ -604,20 +604,28 @@ msgid ""
 msgstr ""
 "ການນໍາສະເຫນີພຣະກິດຕິຄຸນ 3 ວົງແມ່ນວິທີການບອກພຣະກິດຕິຄຸນໂດຍໃຊ້ຕົວຢ່າງງ່າຍໆທີ່ສາມາດແຕ້ມໃສ່ເຈ້ຍໄດ້."
 
-#: globals.php:2291
+#: globals.php:2325
 #, fuzzy
 msgid "3-Circles"
 msgstr "3- ວົງ"
 
-#: globals.php:7022 site/course/presenter.php:197
-#: site/dashboard/dashboard.php:267 site/dashboard/wizard.php:159
+#: globals.php:5808 site/activities/three-month-plan.php:94
+msgid "Question"
+msgstr ""
+
+#: globals.php:5808 site/activities/three-month-plan.php:95
+msgid "Answer"
+msgstr ""
+
+#: globals.php:7103 site/course/presenter.php:197
+#: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
 #: site/pages/follow-jesus.php:346 site/parts/footer.php:72
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
 msgstr "ປິດ"
 
-#: globals.php:7224
+#: globals.php:7305
 #, fuzzy
 msgid "No Results"
 msgstr "ບໍ່ມີຜົນໄດ້ຮັບ"
@@ -651,7 +659,7 @@ msgstr "ຖາມຕົວທ່ານເອງ"
 #: site/activities/coaching-checklist-two.php:126
 #: site/activities/coaching-checklist-two.php:184
 #: site/activities/coaching-checklist.php:113
-#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:231
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
 msgstr "ໄດ້ຍິນ"
 
@@ -660,7 +668,7 @@ msgstr "ໄດ້ຍິນ"
 #: site/activities/coaching-checklist-two.php:129
 #: site/activities/coaching-checklist-two.php:188
 #: site/activities/coaching-checklist.php:116
-#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:233
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
 msgstr "ເຊື່ອຟັງ"
 
@@ -669,7 +677,7 @@ msgstr "ເຊື່ອຟັງ"
 #: site/activities/coaching-checklist-two.php:132
 #: site/activities/coaching-checklist-two.php:192
 #: site/activities/coaching-checklist.php:119
-#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:235
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
 msgstr "ແບ່ງປັນ"
 
@@ -678,20 +686,20 @@ msgstr "ແບ່ງປັນ"
 #: site/activities/coaching-checklist-two.php:135
 #: site/activities/coaching-checklist-two.php:196
 #: site/activities/coaching-checklist.php:122
-#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:237
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
 msgstr "ຝຶກອົບຮົມ"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
-#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:232
+#: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
 #, fuzzy
 msgid "Have I heard about this tool or concept?"
 msgstr "ຂ້ອຍໄດ້ຍິນກ່ຽວກັບເຄື່ອງມືຫຼືແນວຄວາມຄິດນີ້ບໍ?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
-#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:234
+#: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
 #, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
@@ -702,7 +710,7 @@ msgstr ""
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
-#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:236
+#: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:243
 #, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
@@ -713,7 +721,7 @@ msgstr ""
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
-#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:238
+#: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:245
 #, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
@@ -768,7 +776,6 @@ msgstr "ຊ່ວຍ"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#: site/pages/home.php:204
 #, fuzzy
 msgid "Watch"
 msgstr "ເບິ່ງ"
@@ -1017,7 +1024,7 @@ msgid "Unknown"
 msgstr "ບໍ່ຮູ້"
 
 #: site/activities/three-month-plan-printable.php:46
-#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:206
+#: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
 #, fuzzy
 msgid "3-Month Plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
@@ -1039,10 +1046,15 @@ msgid ""
 "the printable version using the link above."
 msgstr "ກະລຸນາເປີດໃຊ້ສະຄຣິບເພື່ອໃຊ້ໜ້າໂຕ້ຕອບນີ້. ຖ້າບໍ່ດັ່ງນັ້ນທ່ານອາດຈະໃຊ້ສະບັບພິມໄດ້ໂດຍໃຊ້ລິ້ງຂ້າງເທິງ."
 
-#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:179
-#: site/dashboard/wizard.php:287 site/profile/profile.php:153
+#: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
+#: site/dashboard/wizard.php:298 site/profile/profile.php:153
 msgid "Save"
 msgstr "​ບັນ​ທຶກ"
+
+#: site/activities/three-month-plan.php:93
+#, fuzzy
+msgid "Cancel"
+msgstr "ຍົກ​ເລີກ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -1088,7 +1100,7 @@ msgstr "ໂອ້​ລົມ​ກັນ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
-#: site/course/course-builder.php:166
+#: site/course/course-builder.php:196
 #, fuzzy
 msgid "(10 min)"
 msgstr "10 ນາທີ"
@@ -1139,7 +1151,7 @@ msgid "WATCH"
 msgstr "ເບິ່ງ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
-#: site/course/course-builder.php:165
+#: site/course/course-builder.php:195
 #, fuzzy
 msgid "(5 min)"
 msgstr "5 ນາທີ"
@@ -1242,92 +1254,92 @@ msgid ""
 msgstr ""
 "ປະເມີນຕົວທ່ານເອງ - ປະເມີນຕົວທ່ານເອງແລະຫມາຍຄໍລໍາທີ່ສອດຄ້ອງກັນຢູ່ໃນລາຍການກວດສອບການຝຶກສອນ."
 
-#: site/course/course-builder.php:164
+#: site/course/course-builder.php:194
 #, fuzzy
 msgid "(1 min)"
 msgstr "10 ນາທີ"
 
-#: site/course/course-builder.php:167
+#: site/course/course-builder.php:197
 #, fuzzy
 msgid "(15 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:168
+#: site/course/course-builder.php:198
 #, fuzzy
 msgid "(20 min)"
 msgstr "20 ນາທີ"
 
-#: site/course/course-builder.php:169
+#: site/course/course-builder.php:199
 #, fuzzy
 msgid "(25 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:170
+#: site/course/course-builder.php:200
 #, fuzzy
 msgid "(30 min)"
 msgstr "30 ນາທີ"
 
-#: site/course/course-builder.php:171
+#: site/course/course-builder.php:201
 #, fuzzy
 msgid "(35 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:172
+#: site/course/course-builder.php:202
 #, fuzzy
 msgid "(40 min)"
 msgstr "10 ນາທີ"
 
-#: site/course/course-builder.php:173
+#: site/course/course-builder.php:203
 #, fuzzy
 msgid "(45 min)"
 msgstr "45 ນາທີ"
 
-#: site/course/course-builder.php:174
+#: site/course/course-builder.php:204
 #, fuzzy
 msgid "(50 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:175
+#: site/course/course-builder.php:205
 #, fuzzy
 msgid "(55 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:176
+#: site/course/course-builder.php:206
 #, fuzzy
 msgid "(60 min)"
 msgstr "60 ນາທີ"
 
-#: site/course/course-builder.php:177
+#: site/course/course-builder.php:207
 #, fuzzy
 msgid "(65 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:178
+#: site/course/course-builder.php:208
 #, fuzzy
 msgid "(70 min)"
 msgstr "10 ນາທີ"
 
-#: site/course/course-builder.php:179
+#: site/course/course-builder.php:209
 #, fuzzy
 msgid "(75 min)"
 msgstr "75 ນາທີ"
 
-#: site/course/course-builder.php:180
+#: site/course/course-builder.php:210
 #, fuzzy
 msgid "(80 min)"
 msgstr "10 ນາທີ"
 
-#: site/course/course-builder.php:181
+#: site/course/course-builder.php:211
 #, fuzzy
 msgid "(85 min)"
 msgstr "5 ນາທີ"
 
-#: site/course/course-builder.php:182
+#: site/course/course-builder.php:212
 #, fuzzy
 msgid "(90 min)"
 msgstr "10 ນາທີ"
 
-#: site/course/course-builder.php:183
+#: site/course/course-builder.php:213
 #, fuzzy
 msgid "(60 - 90 min)"
 msgstr "90 ນາທີ"
@@ -1976,7 +1988,7 @@ msgstr ""
 msgid "Obey"
 msgstr "ເຊື່ອຟັງ"
 
-#: site/course/course-content.php:683 site/dashboard/dashboard.php:158
+#: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
 msgid "Share"
@@ -2915,10 +2927,10 @@ msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr "ຖ້າທ່ານບໍ່ມີຄູຝຶກສອນ ຫຼືຜູ້ໃຫ້ຄຳແນະນຳ, ໃຫ້ສະແກນລະຫັດ QR ແລະຮ້ອງຂໍເອົາດຽວນີ້."
 
-#: site/course/course-content.php:2616 site/dashboard/dashboard.php:197
-#: site/dashboard/wizard.php:217 site/pages/about.php:254
+#: site/course/course-content.php:2616 site/dashboard/dashboard.php:204
+#: site/dashboard/wizard.php:228 site/pages/about.php:254
 #: site/parts/footer.php:12 site/parts/footer.php:18 site/parts/nav.php:88
-#: utilities/apis/cta-api.php:177 utilities/apis/cta-api.php:179
+#: utilities/apis/cta-api.php:180 utilities/apis/cta-api.php:182
 #: utilities/integrations/replace-placeholder.php:85
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
@@ -3236,7 +3248,7 @@ msgstr ""
 msgid "God makes plans, and He expects us to make plans, too."
 msgstr "ພຣະເຈົ້າເຮັດໃຫ້ແຜນການ, ແລະພຣະອົງຄາດຫວັງໃຫ້ພວກເຮົາເຮັດແຜນການ, ເຊັ່ນດຽວກັນ."
 
-#: site/course/course-content.php:3016 site/dashboard/dashboard.php:208
+#: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
 #, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
@@ -3893,7 +3905,7 @@ msgid "NEXT STEP"
 msgstr "ຂັ້ນຕອນຕໍ່ໄປ"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
-#: site/dashboard/dashboard.php:239 site/parts/nav.php:94
+#: site/dashboard/dashboard.php:246 site/parts/nav.php:94
 #, fuzzy
 msgid "Join the Community"
 msgstr "ການຮ່ວມກັນ"
@@ -3954,7 +3966,7 @@ msgstr "​ກ່ຽວ​ກັບ"
 msgid "Course"
 msgstr "ຫຼັກສູດ"
 
-#: site/course/presenter.php:174 site/dashboard/dashboard.php:243
+#: site/course/presenter.php:174 site/dashboard/dashboard.php:250
 #: site/pages/resources.php:88 site/parts/footer.php:41
 msgid "Resources"
 msgstr "ແຫຼ່​ງ​ຂໍ້​ມູນ"
@@ -3969,7 +3981,7 @@ msgstr "ຫຼັກສູດ"
 msgid "Slide View"
 msgstr "Grid View"
 
-#: site/course/presenter.php:193 site/dashboard/dashboard.php:166
+#: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 #, fuzzy
 msgid "List View"
 msgstr "ລາຍການເບິ່ງ"
@@ -4009,10 +4021,10 @@ msgstr "ວ້າວ"
 msgid "Something went wrong with your checkin process."
 msgstr "ອຸ່ຍ. ມີບາງຢ່າງຜິດປົກກະຕິ. ລອງອີກຄັ້ງ!"
 
-#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:261
-#: utilities/apis/cta-api.php:164 utilities/apis/cta-api.php:269
-#: utilities/apis/cta-api.php:298 utilities/apis/cta-api.php:312
-#: utilities/apis/cta-api.php:341
+#: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:268
+#: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:286
+#: utilities/apis/cta-api.php:315 utilities/apis/cta-api.php:329
+#: utilities/apis/cta-api.php:358
 #, fuzzy
 msgid "Congratulations!"
 msgstr "ຊົມເຊີຍ!"
@@ -4037,225 +4049,229 @@ msgstr "​ໂຄງ​ການ​ຊູ​ເມ້"
 msgid "%d%%"
 msgstr "%d%%"
 
-#: site/dashboard/dashboard.php:155 site/dashboard/wizard.php:285
+#: site/dashboard/dashboard.php:161 site/dashboard/wizard.php:296
 #, fuzzy
 msgid "Done"
 msgstr "ສຳເລັດແລ້ວ"
 
-#: site/dashboard/dashboard.php:156
+#: site/dashboard/dashboard.php:162
 #, fuzzy
 msgid "Edit"
 msgstr "ແກ້ໄຂ"
 
-#: site/dashboard/dashboard.php:157 site/pages/_strings-mobile-pwa.php:26
+#: site/dashboard/dashboard.php:163 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
 msgstr "​ຕັດ​ອອກ"
 
-#: site/dashboard/dashboard.php:159
+#: site/dashboard/dashboard.php:165
 #, fuzzy
 msgid "Active"
 msgstr "activate"
 
-#: site/dashboard/dashboard.php:160
+#: site/dashboard/dashboard.php:166
 #, fuzzy
 msgid "Completed"
 msgstr "ຈົບຫຼັກສູດ"
 
-#: site/dashboard/dashboard.php:161
+#: site/dashboard/dashboard.php:167
 #, fuzzy
 msgid "Uncompleted"
 msgstr "ຈົບຫຼັກສູດ"
 
-#: site/dashboard/dashboard.php:162
+#: site/dashboard/dashboard.php:168
 #, fuzzy
 msgid "Not Heard"
 msgstr "ໄດ້ຍິນ"
 
-#: site/dashboard/dashboard.php:163 site/pages/share.php:121
+#: site/dashboard/dashboard.php:169 site/pages/share.php:121
 #, fuzzy
 msgid "All"
 msgstr "ທັງ ໝົດ"
 
-#: site/dashboard/dashboard.php:164 site/profile/profile.php:159
+#: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
 msgstr "​ອອກ​ຈາກ​ລະ​​ບົບ"
 
-#: site/dashboard/dashboard.php:165 site/pages/share.php:124
+#: site/dashboard/dashboard.php:171 site/pages/share.php:124
 #, fuzzy
 msgid "Filter"
 msgstr "ການກັ່ນຕອງ"
 
-#: site/dashboard/dashboard.php:167
+#: site/dashboard/dashboard.php:173
 #, fuzzy
 msgid "Grid View"
 msgstr "Grid View"
 
-#: site/dashboard/dashboard.php:168
+#: site/dashboard/dashboard.php:174
 #, fuzzy
 msgid "View Now"
 msgstr "ເບິ່ງ​ກຸ່ມ"
 
-#: site/dashboard/dashboard.php:169
+#: site/dashboard/dashboard.php:175
 #, fuzzy
 msgid "Complete Now"
 msgstr "ຈົບຫຼັກສູດ"
 
-#: site/dashboard/dashboard.php:170
+#: site/dashboard/dashboard.php:176
 #, fuzzy
 msgid "View"
 msgstr "ເບິ່ງ"
 
-#: site/dashboard/dashboard.php:171
+#: site/dashboard/dashboard.php:177
 #, fuzzy
 msgid "Menu"
 msgstr "ເມນູ"
 
-#: site/dashboard/dashboard.php:172 site/dashboard/wizard.php:180
-#: site/dashboard/wizard.php:226 site/profile/profile.php:116
+#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
+#: site/dashboard/wizard.php:237 site/profile/profile.php:116
 msgid "Name"
 msgstr "​ຊື່"
 
-#: site/dashboard/dashboard.php:173 site/dashboard/wizard.php:178
-#: site/dashboard/wizard.php:196 site/profile/profile.php:120
+#: site/dashboard/dashboard.php:179 site/dashboard/wizard.php:189
+#: site/dashboard/wizard.php:207 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
 msgstr "​ເບີ​ໂທ"
 
-#: site/dashboard/dashboard.php:174 site/dashboard/wizard.php:194
+#: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:205
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
 msgstr "ອີ​ເມວ"
 
-#: site/dashboard/dashboard.php:175
+#: site/dashboard/dashboard.php:181
+msgid "Linked Accounts"
+msgstr "ບັນຊີທີ່ເຊື່ອມໂຍງ"
+
+#: site/dashboard/dashboard.php:182
 #, fuzzy
 msgid "Communications Email"
 msgstr "ອີເມວການສື່ສານ"
 
-#: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:179
+#: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:190
 #: site/profile/profile.php:128
 msgid "City"
 msgstr "​ເມືອງ"
 
-#: site/dashboard/dashboard.php:177
+#: site/dashboard/dashboard.php:184
 #, fuzzy
 msgid "No Locations found"
 msgstr "ບໍ່​ພົບ​ຜູ້​ໃຊ້."
 
-#: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:202
-#: site/dashboard/wizard.php:230 site/pages/_strings-mobile-pwa.php:16
+#: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:241 site/pages/_strings-mobile-pwa.php:16
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
 msgstr "ພາສາ"
 
-#: site/dashboard/dashboard.php:180
+#: site/dashboard/dashboard.php:187
 #, fuzzy
 msgid "Edit Profile"
 msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ​ຂອງ​ທ່ານ"
 
-#: site/dashboard/dashboard.php:181
+#: site/dashboard/dashboard.php:188
 #, fuzzy
 msgid "Check out this Zúme concept"
 msgstr "ກວດເບິ່ງແນວຄວາມຄິດ Zúme ນີ້"
 
-#: site/dashboard/dashboard.php:182
+#: site/dashboard/dashboard.php:189
 #, fuzzy
 msgid "Preview"
 msgstr "​ເບິ່ງ"
 
-#: site/dashboard/dashboard.php:183 site/dashboard/dashboard.php:252
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:190 site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:266
 #, fuzzy, php-format
 msgid "Add new %s"
 msgstr "ເພີ່ມ %s ໃໝ່"
 
-#: site/dashboard/dashboard.php:183
+#: site/dashboard/dashboard.php:190
 #, fuzzy
 msgid "Commitment"
 msgstr "ຄຳ​ໝັ້ນ​ສັນ​ຍາ​ອື່ນໆ:"
 
-#: site/dashboard/dashboard.php:184 site/pages/share.php:82
+#: site/dashboard/dashboard.php:191 site/pages/share.php:82
 #, fuzzy
 msgid "Copy Link"
 msgstr "​ເຊື່ອ​ມຕໍ່"
 
-#: site/dashboard/dashboard.php:185
+#: site/dashboard/dashboard.php:192
 #, fuzzy
 msgid "Copy this link and send it to your friends 🙂"
 msgstr "ສຳເນົາລິ້ງນີ້ແລ້ວສົ່ງໃຫ້ໝູ່ຂອງເຈົ້າ 🙂"
 
-#: site/dashboard/dashboard.php:186 site/pages/share.php:84
+#: site/dashboard/dashboard.php:193 site/pages/share.php:84
 #, fuzzy
 msgid "Thanks!"
 msgstr "ຂອບໃຈ!"
 
-#: site/dashboard/dashboard.php:187
+#: site/dashboard/dashboard.php:194
 #, fuzzy
 msgid "Link copied"
 msgstr "​ເຊື່ອ​ມ​ຕໍ່ໄປ​ທີ່"
 
-#: site/dashboard/dashboard.php:188
+#: site/dashboard/dashboard.php:195
 #, fuzzy
 msgid "Getting Started"
 msgstr "​ເລີ່ມ​ລົງ​ມື"
 
-#: site/dashboard/dashboard.php:189 utilities/apis/cta-api.php:253
-#: utilities/apis/cta-api.php:255
+#: site/dashboard/dashboard.php:196 utilities/apis/cta-api.php:270
+#: utilities/apis/cta-api.php:272
 #, fuzzy
 msgid "Set Profile"
 msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ​ຂອງ​ທ່ານ"
 
-#: site/dashboard/dashboard.php:190
+#: site/dashboard/dashboard.php:197
 #, fuzzy
 msgid "Complete a short Profile Wizard to set your profile"
 msgstr "ເຮັດສຳເລັດຕົວຊ່ວຍສ້າງໂປຣໄຟລ໌ສັ້ນໆເພື່ອຕັ້ງໂປຣໄຟລ໌ຂອງເຈົ້າ"
 
-#: site/dashboard/dashboard.php:191 site/dashboard/wizard.php:249
+#: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 #, fuzzy
 msgid "Join or create a training group"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/dashboard.php:192
+#: site/dashboard/dashboard.php:199
 #, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr "ເຂົ້າຮ່ວມຫນຶ່ງໃນການຝຶກອົບຮົມອອນໄລນ໌ຂອງພວກເຮົາຫຼືສ້າງກຸ່ມການຝຶກອົບຮົມຂອງທ່ານເອງກັບຕົວຊ່ວຍສ້າງທີ່ງ່າຍຂອງພວກເຮົາ"
 
-#: site/dashboard/dashboard.php:193
+#: site/dashboard/dashboard.php:200
 #, fuzzy
 msgid "Create Training Group"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:194
+#: site/dashboard/dashboard.php:201
 #, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
 msgstr "ຂຽນ​ລາຍ​ຊື່ 100 ຄົນ​ຂອງ​ທ່ານ​ຂຶ້ນ​ມາ"
 
-#: site/dashboard/dashboard.php:195 site/dashboard/wizard.php:304
+#: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 #, fuzzy
 msgid "Join Training Group"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/dashboard.php:196
+#: site/dashboard/dashboard.php:203
 #, fuzzy
 msgid "Join an online training group run by a coach"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/dashboard.php:198
+#: site/dashboard/dashboard.php:205
 #, fuzzy
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr "ເຊື່ອມຕໍ່ກັບຄູຝຶກສອນສໍາລັບການຊ່ວຍເຫຼືອຫຼືກໍາລັງໃຈໃດໆກ່ອນ, ໃນລະຫວ່າງຫຼືຫຼັງຈາກການຝຶກອົບຮົມ."
 
-#: site/dashboard/dashboard.php:200
+#: site/dashboard/dashboard.php:207
 #, fuzzy
 msgid "My Progress"
 msgstr "​ຄວາມ​ກ້າວ​ໜ້າ"
 
-#: site/dashboard/dashboard.php:201
+#: site/dashboard/dashboard.php:208
 #, fuzzy
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
@@ -4264,39 +4280,39 @@ msgstr ""
 "ຕິດຕາມຄວາມຄືບຫນ້າຂອງຫຼັກສູດຂອງທ່ານດ້ວຍທັດສະນະໂຕ້ຕອບນີ້. ຮຽນຮູ້ທີ່ຈະຟັງ, ເຊື່ອຟັງ, "
 "ແບ່ງປັນແລະຝຶກອົບຮົມຄົນອື່ນກັບສິ່ງທີ່ທ່ານໄດ້ຮຽນຮູ້."
 
-#: site/dashboard/dashboard.php:202
+#: site/dashboard/dashboard.php:209
 #, fuzzy
 msgid "Information about progress"
 msgstr "ຂໍ້ມູນກ່ຽວກັບຄວາມຄືບຫນ້າ"
 
-#: site/dashboard/dashboard.php:203
+#: site/dashboard/dashboard.php:210
 #, fuzzy
 msgid "My Training"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:204
+#: site/dashboard/dashboard.php:211
 #, fuzzy
 msgid "My Trainings"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:205
+#: site/dashboard/dashboard.php:212
 #, fuzzy
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr "ເຂົ້າເຖິງເນື້ອຫາການຝຶກອົບຮົມ, ກຳນົດເວລາ, ລາຍລະອຽດກຸ່ມ ແລະເຄື່ອງມືແບ່ງປັນ."
 
-#: site/dashboard/dashboard.php:207
+#: site/dashboard/dashboard.php:214
 #, fuzzy
 msgid "Create Your Plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: site/dashboard/dashboard.php:209
+#: site/dashboard/dashboard.php:216
 #, fuzzy
 msgid "Three Month Plan Locked"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: site/dashboard/dashboard.php:210
+#: site/dashboard/dashboard.php:217
 #, fuzzy
 msgid ""
 "The three month plan is a tool to help you take action and implement the "
@@ -4306,32 +4322,32 @@ msgstr ""
 "ແຜນການສາມເດືອນແມ່ນເຄື່ອງມືທີ່ຈະຊ່ວຍໃຫ້ທ່ານປະຕິບັດແລະປະຕິບັດເຄື່ອງມືແລະແນວຄວາມຄິດທີ່ໄດ້ຮຽນຮູ້ຜ່ານຫຼັກສູດZúme. "
 "ມັນເປັນປະໂຫຍດທີ່ສຸດ, ເມື່ອທ່ານໄດ້ສໍາເລັດການຝຶກອົບຮົມ."
 
-#: site/dashboard/dashboard.php:211
+#: site/dashboard/dashboard.php:218
 #, fuzzy
 msgid "Unlock now"
 msgstr "ປົດລັອກດຽວນີ້"
 
-#: site/dashboard/dashboard.php:212
+#: site/dashboard/dashboard.php:219
 #, fuzzy
 msgid "Practicing"
 msgstr "ຝຶກ​ຝົນ"
 
-#: site/dashboard/dashboard.php:213
+#: site/dashboard/dashboard.php:220
 #, fuzzy
 msgid "My Coach"
 msgstr "​ຄູ​ຝຶກ​ສອນ"
 
-#: site/dashboard/dashboard.php:214
+#: site/dashboard/dashboard.php:221
 #, fuzzy
 msgid "Quick access to your coach at all times."
 msgstr "ເຂົ້າເຖິງຄູຝຶກຂອງທ່ານໄດ້ໄວຕະຫຼອດເວລາ."
 
-#: site/dashboard/dashboard.php:215
+#: site/dashboard/dashboard.php:222
 #, fuzzy
 msgid "My Tools"
 msgstr "​ເຄື່ອງ​ມື​ຕ່າງໆ"
 
-#: site/dashboard/dashboard.php:216
+#: site/dashboard/dashboard.php:223
 #, fuzzy
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
@@ -4339,51 +4355,51 @@ msgid ""
 msgstr ""
 "ພື້ນທີ່ເຄື່ອງມືຂອງຂ້ອຍຈະປົດລັອກເມື່ອທ່ານກ້າວຜ່ານຫຼັກສູດ, ຝຶກຝົນ ແລະ ພັດທະນາທັກສະການເປັນສານຸສິດທີ່ຈຳເປັນ"
 
-#: site/dashboard/dashboard.php:217
+#: site/dashboard/dashboard.php:224
 #, fuzzy
 msgid "My Plans"
 msgstr "​ແຜນ​ການ​ຂອງ​ຂ້ອຍ"
 
-#: site/dashboard/dashboard.php:218
+#: site/dashboard/dashboard.php:225
 #, fuzzy
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr "ປົດລັອກພື້ນທີ່ແຜນຂອງຂ້ອຍໂດຍການເຮັດສຳເລັດແຜນ 3 ເດືອນຂອງທ່ານໃນເຊດຊັນສຸດທ້າຍ."
 
-#: site/dashboard/dashboard.php:219
+#: site/dashboard/dashboard.php:226
 #, fuzzy
 msgid "My Plans are Locked"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:220
+#: site/dashboard/dashboard.php:227
 #, fuzzy
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr "ປົດລັອກພື້ນທີ່ນີ້ໂດຍການສ້າງແຜນສາມເດືອນຂອງທ່ານ ຫຼືເພີ່ມຄໍາຫມັ້ນສັນຍາຂອງທ່ານເອງ."
 
-#: site/dashboard/dashboard.php:221
+#: site/dashboard/dashboard.php:228
 #, fuzzy
 msgid "My Churches"
 msgstr "2 ຄຣິສຕະຈັກລຽບງ່າຍ"
 
-#: site/dashboard/dashboard.php:222
+#: site/dashboard/dashboard.php:229
 #, fuzzy
 msgid "Unlock the My Churches area by joining the community."
 msgstr "ປົດລັອກພື້ນທີ່ໂບດຂອງຂ້ອຍໂດຍການເຂົ້າຮ່ວມຊຸມຊົນ."
 
-#: site/dashboard/dashboard.php:223
+#: site/dashboard/dashboard.php:230
 #, fuzzy
 msgid "My Maps"
 msgstr "ແຜນທີ່ຂອງຂ້ອຍ"
 
-#: site/dashboard/dashboard.php:224
+#: site/dashboard/dashboard.php:231
 #, fuzzy
 msgid "My Maps are Locked"
 msgstr "ແຜນທີ່ຂອງຂ້ອຍຖືກລັອກ"
 
-#: site/dashboard/dashboard.php:225
+#: site/dashboard/dashboard.php:232
 #, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
@@ -4396,18 +4412,18 @@ msgstr ""
 "ເຂົ້າຮ່ວມຊຸມຊົນ Zúme "
 "ແລະເຊື່ອມຕໍ່ກັບຜູ້ສ້າງສານຸສິດອື່ນໆທີ່ມີຄວາມກະຕືລືລົ້ນທີ່ຈະເຫັນຄະນະກໍາມະການທີ່ຍິ່ງໃຫຍ່ສໍາເລັດ."
 
-#: site/dashboard/dashboard.php:226
+#: site/dashboard/dashboard.php:233
 #, fuzzy
 msgid "My Training is Locked"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:227 site/parts/footer.php:25
+#: site/dashboard/dashboard.php:234 site/parts/footer.php:25
 #: site/parts/footer.php:28
 #, fuzzy
 msgid "Launch Course"
 msgstr "ຫຼັກສູດ"
 
-#: site/dashboard/dashboard.php:228 site/parts/footer.php:29
+#: site/dashboard/dashboard.php:235 site/parts/footer.php:29
 #: utilities/integrations/replace-placeholder.php:113
 #: utilities/integrations/replace-placeholder.php:114
 #: utilities/integrations/replace-placeholder.php:115
@@ -4415,7 +4431,7 @@ msgstr "ຫຼັກສູດ"
 msgid "10 Session Course"
 msgstr "​ບົດ​ຮຽນ​ທີ 1"
 
-#: site/dashboard/dashboard.php:229 site/parts/footer.php:30
+#: site/dashboard/dashboard.php:236 site/parts/footer.php:30
 #: utilities/integrations/replace-placeholder.php:117
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
@@ -4423,139 +4439,139 @@ msgstr "​ບົດ​ຮຽນ​ທີ 1"
 msgid "20 Session Course"
 msgstr "​ບົດ​ຮຽນ​ທີ 1"
 
-#: site/dashboard/dashboard.php:230
+#: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Intensive Course"
 msgstr "​ບົດ​ຮຽນ​ທີ 1"
 
-#: site/dashboard/dashboard.php:240 site/dashboard/wizard.php:231
-#: site/pages/training.php:146 utilities/apis/cta-api.php:150
-#: utilities/apis/cta-api.php:386
+#: site/dashboard/dashboard.php:247 site/dashboard/wizard.php:242
+#: site/pages/training.php:146 utilities/apis/cta-api.php:153
+#: utilities/apis/cta-api.php:403
 #, fuzzy
 msgid "Join"
 msgstr "ເຂົ້າຮ່ວມ"
 
-#: site/dashboard/dashboard.php:241
+#: site/dashboard/dashboard.php:248
 #, fuzzy
 msgid "Join the community to get access to this area."
 msgstr "ເຂົ້າຮ່ວມຊຸມຊົນເພື່ອເຂົ້າເຖິງພື້ນທີ່ນີ້."
 
-#: site/dashboard/dashboard.php:242
+#: site/dashboard/dashboard.php:249
 #, fuzzy
 msgid "Community links"
 msgstr "ການຮ່ວມກັນ"
 
-#: site/dashboard/dashboard.php:244
+#: site/dashboard/dashboard.php:251
 #, fuzzy
 msgid "Previous Slide"
 msgstr "​ອັນ​ທີ່​ຜ່ານ​ມາ"
 
-#: site/dashboard/dashboard.php:245
+#: site/dashboard/dashboard.php:252
 #, fuzzy
 msgid "Next Slide"
 msgstr "ບົດຮຽນຕໍ່ໄປ"
 
-#: site/dashboard/dashboard.php:246
+#: site/dashboard/dashboard.php:253
 #, fuzzy
 msgid "Group Members"
 msgstr "​ຊື່​ກຸ່ມ"
 
-#: site/dashboard/dashboard.php:247
+#: site/dashboard/dashboard.php:254
 #, fuzzy
 msgid "Mark Completed"
 msgstr "ຈົບຫຼັກສູດ"
 
-#: site/dashboard/dashboard.php:248
+#: site/dashboard/dashboard.php:255
 #, fuzzy, php-format
 msgid "Session %d"
 msgstr "​ບົດ​ຮຽນ​ທີ 2"
 
-#: site/dashboard/dashboard.php:249 site/pages/_strings-mobile-pwa.php:30
+#: site/dashboard/dashboard.php:256 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
 msgstr "ເລີ່ມບົດຮຽນ"
 
-#: site/dashboard/dashboard.php:250
+#: site/dashboard/dashboard.php:257
 #, fuzzy
 msgid "Show details"
 msgstr "ສະແດງລາຍລະອຽດ"
 
-#: site/dashboard/dashboard.php:251
+#: site/dashboard/dashboard.php:258
 #, fuzzy
 msgid "Edit time"
 msgstr "ແກ້ໄຂເວລາ"
 
-#: site/dashboard/dashboard.php:253
+#: site/dashboard/dashboard.php:260
 #, fuzzy
 msgid "Invite Friends"
 msgstr "ເຊີນ​ຊວນ​ໝູ່​ເພື່ອນ"
 
-#: site/dashboard/dashboard.php:254
+#: site/dashboard/dashboard.php:261
 #, fuzzy
 msgid "Click to add your first church"
 msgstr "ຄລິກເພື່ອເພີ່ມໂບດທໍາອິດຂອງທ່ານ"
 
-#: site/dashboard/dashboard.php:255
+#: site/dashboard/dashboard.php:262
 #, fuzzy
 msgid "Church Name"
 msgstr "2 ຄຣິສຕະຈັກລຽບງ່າຍ"
 
-#: site/dashboard/dashboard.php:256
+#: site/dashboard/dashboard.php:263
 #, fuzzy
 msgid "Number of People"
 msgstr "ຈຳນວນສະມາຊິກ"
 
-#: site/dashboard/dashboard.php:257
+#: site/dashboard/dashboard.php:264
 #, fuzzy
 msgid "Church Location"
 msgstr "ບັນທຶກສະຖານທີ່ປະຈຸບັນ"
 
-#: site/dashboard/dashboard.php:258
+#: site/dashboard/dashboard.php:265
 #, fuzzy
 msgid "Parent Church"
 msgstr "​ເປັນ​ສ່ວນ​ໜຶ່ງ​ຂອງ​ຄ​ຣິ​ສ​ຕະ​ຈັກ"
 
-#: site/dashboard/dashboard.php:259
+#: site/dashboard/dashboard.php:266
 #, fuzzy
 msgid "Church"
 msgstr "2 ຄຣິສຕະຈັກລຽບງ່າຍ"
 
-#: site/dashboard/dashboard.php:260
+#: site/dashboard/dashboard.php:267
 #, fuzzy
 msgid "cancel"
 msgstr "ຍົກ​ເລີກ"
 
-#: site/dashboard/dashboard.php:262
+#: site/dashboard/dashboard.php:269
 #, fuzzy
 msgid "You have requested a coach"
 msgstr "ທ່ານໄດ້ຮຽກຮ້ອງການຝຶກສອນ."
 
-#: site/dashboard/dashboard.php:263
+#: site/dashboard/dashboard.php:270
 #, fuzzy
 msgid "You have joined a training"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/dashboard.php:264
+#: site/dashboard/dashboard.php:271
 #, fuzzy
 msgid "You have set your profile"
 msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ​ຂອງ​ທ່ານ"
 
-#: site/dashboard/dashboard.php:265
+#: site/dashboard/dashboard.php:272
 #, fuzzy, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
 msgstr "%s ປົດລັອກແລ້ວ"
 
-#: site/dashboard/dashboard.php:265 utilities/apis/cta-api.php:297
+#: site/dashboard/dashboard.php:272 utilities/apis/cta-api.php:314
 #, fuzzy
 msgid "3 month plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: site/dashboard/dashboard.php:266
+#: site/dashboard/dashboard.php:273
 #, fuzzy
 msgid "You have joined the community"
 msgstr "ການຮ່ວມກັນ"
 
-#: site/dashboard/dashboard.php:268 site/dashboard/wizard.php:188
+#: site/dashboard/dashboard.php:275 site/dashboard/wizard.php:199
 #: site/pages/privacy-policy.php:108
 #, fuzzy
 msgid ""
@@ -4566,7 +4582,7 @@ msgstr ""
 "ຊື່ແທ້ ຫຼືຊື່ຫຼິ້ນຂອງຜູ້ໃຊ້ໄດ້ຖືກຮ້ອງຂໍເພື່ອປັບປຸງຄຸນນະພາບສ່ວນຕົວຂອງເວັບໄຊ ແລະການສື່ສານ, "
 "ເຊັ່ນດຽວກັນກັບການຮ້ອງຂໍການບໍລິການລູກຄ້າ ແລະເປັນຄູຝຶກສອນ."
 
-#: site/dashboard/dashboard.php:269 site/pages/privacy-policy.php:114
+#: site/dashboard/dashboard.php:276 site/pages/privacy-policy.php:114
 #, fuzzy
 msgid ""
 "A user’s email address is required to establish an account and is used for "
@@ -4575,7 +4591,7 @@ msgstr ""
 "ທີ່ຢູ່ອີເມວຂອງຜູ້ໃຊ້ແມ່ນຕ້ອງການເພື່ອສ້າງຕັ້ງບັນຊີ "
 "ແລະຖືກນໍາໃຊ້ສໍາລັບການສື່ສານທຸລະກໍາເປັນສ່ວນຫນຶ່ງຂອງການດໍາເນີນງານຂອງເວັບໄຊ."
 
-#: site/dashboard/dashboard.php:270 site/dashboard/wizard.php:189
+#: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:200
 #: site/pages/privacy-policy.php:117
 #, fuzzy
 msgid ""
@@ -4583,7 +4599,7 @@ msgid ""
 "coaching service."
 msgstr "ເບີໂທລະສັບຂອງຜູ້ໃຊ້ຖືກເກັບກຳ ແລະເກັບຮັກສາໄວ້ເພື່ອສະໜັບສະໜູນການບໍລິການຄູຝຶກສອນຟຣີ."
 
-#: site/dashboard/dashboard.php:271 site/dashboard/wizard.php:190
+#: site/dashboard/dashboard.php:278 site/dashboard/wizard.php:201
 #: site/pages/privacy-policy.php:120
 #, fuzzy
 msgid ""
@@ -4593,7 +4609,7 @@ msgstr ""
 "ເມືອງຂອງຜູ້ໃຊ້ໄດ້ຖືກຮ້ອງຂໍໃຫ້ປັບແຕ່ງຊັບພະຍາກອນເວັບໄຊທ໌ແລະການສື່ສານ, "
 "ແລະເພື່ອເຊື່ອມຕໍ່ຜູ້ໃຊ້ກັບແຫຼ່ງຄູຝຶກສອນແລະການບໍລິການລູກຄ້າທີ່ເຫມາະສົມ."
 
-#: site/dashboard/dashboard.php:272 site/dashboard/wizard.php:218
+#: site/dashboard/dashboard.php:279 site/dashboard/wizard.php:229
 #: site/pages/privacy-policy.php:111
 #, fuzzy
 msgid ""
@@ -4604,29 +4620,29 @@ msgstr ""
 "ການຕັ້ງຄ່າພາສາຂອງຜູ້ໃຊ້ຖືກເກັບຮັກສາໄວ້ເພື່ອຮອງຮັບການເຮັດວຽກຂອງເວັບໄຊ ແລະການສື່ສານທີ່ເຫມາະສົມ, "
 "ແລະເພື່ອຊ່ວຍໃຫ້ພວກເຮົາເຊື່ອມຕໍ່ຜູ້ໃຊ້ດ້ວຍຄູຝຶກ ແລະຊັບພະຍາກອນທີ່ເຫມາະສົມ."
 
-#: site/dashboard/dashboard.php:273 site/dashboard/wizard.php:305
+#: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:316
 #, fuzzy
 msgid "Join key"
 msgstr "ເຂົ້າຮ່ວມກະແຈ"
 
-#: site/dashboard/dashboard.php:274 site/pages/checkin.php:88
+#: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
 #, fuzzy
 msgid "Not a recognized code. Please check the number."
 msgstr "ບໍ່ແມ່ນລະຫັດທີ່ຮັບຮູ້. ກະລຸນາກວດເບິ່ງຕົວເລກ."
 
-#: site/dashboard/dashboard.php:275
+#: site/dashboard/dashboard.php:282
 #, fuzzy
 msgid "You are not authorized to access this page"
 msgstr "ທ່ານບໍ່ໄດ້ຮັບອະນຸຍາດໃຫ້ເຂົ້າເຖິງຫນ້ານີ້"
 
-#: site/dashboard/dashboard.php:276
+#: site/dashboard/dashboard.php:283
 #, fuzzy
 msgid "There has been an error with your request"
 msgstr "ມີ​ຂໍ້​ຜິດ​ພາດ​ບາງ​ຢ່າງ​ໃນ​ແບບ​ຟອມ​ຂອງ​ທ່ານ."
 
-#: site/dashboard/dashboard.php:277
+#: site/dashboard/dashboard.php:284
 #, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
@@ -4635,69 +4651,69 @@ msgstr ""
 "ຂໍຂອບໃຈທ່ານສໍາລັບການຮ້ອງຂໍການຝຶກອົບຮົມຂອງທ່ານ. "
 "ທີມງານຂອງພວກເຮົາຈະເຮັດວຽກເພື່ອເຊື່ອມຕໍ່ທ່ານກັບຄູຝຶກສອນທີ່ມີຢູ່ໃນພາສາ ແລະພາກພື້ນຂອງທ່ານ."
 
-#: site/dashboard/dashboard.php:278
+#: site/dashboard/dashboard.php:285
 #, fuzzy
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr "ກະລຸນາສັງເກດເບິ່ງສໍາລັບການສື່ສານຈາກຄູຝຶກສອນຂອງທ່ານພາຍໃນຄວາມຕ້ອງການການສື່ສານທີ່ທ່ານຊີ້ບອກ."
 
-#: site/dashboard/dashboard.php:279
+#: site/dashboard/dashboard.php:286
 #, fuzzy
 msgid "100 Hour Map"
 msgstr "ແຜນທີ່ 100 ຊົ່ວໂມງ"
 
-#: site/dashboard/dashboard.php:280
+#: site/dashboard/dashboard.php:287
 #, fuzzy
 msgid "Training vision map"
 msgstr "ການຝຶກອົບຮົມ"
 
-#: site/dashboard/dashboard.php:281
+#: site/dashboard/dashboard.php:288
 #, fuzzy
 msgid "Simple church planting map"
 msgstr "ຄຣິສຕະຈັກລຽບງ່າຍທີ່ເຕັມສົມບູນ"
 
-#: site/dashboard/dashboard.php:282
+#: site/dashboard/dashboard.php:289
 #, fuzzy
 msgid "No date"
 msgstr "ອັບ​ເດດ"
 
-#: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:197
+#: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
 #, fuzzy
 msgid "Whatsapp"
 msgstr "WhatsApp"
 
-#: site/dashboard/dashboard.php:284 site/dashboard/wizard.php:198
+#: site/dashboard/dashboard.php:291 site/dashboard/wizard.php:209
 #: zume-training-system.php:319
 #, fuzzy
 msgid "Signal"
 msgstr "ສະ​ໝັກ​ສະ​ມາ​ຊິກ"
 
-#: site/dashboard/dashboard.php:285 site/dashboard/wizard.php:199
+#: site/dashboard/dashboard.php:292 site/dashboard/wizard.php:210
 #: zume-training-system.php:320
 #, fuzzy
 msgid "Telegram"
 msgstr "ໂທລະເລກ"
 
-#: site/dashboard/dashboard.php:286 site/dashboard/wizard.php:200
+#: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:211
 #, fuzzy
 msgid "Facebook Messenger"
 msgstr "Facebook"
 
-#: site/dashboard/dashboard.php:292
+#: site/dashboard/dashboard.php:299
 #, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr "ຂ້ອຍ​ຈະ​ເລົ່າ​ເລື່ອງ​ລາວ​ຂອງ​ຂ້ອຍ(ຄຳພະ​ຍານ)ແລະ​ເລື່ອງ​ລາວ​ຂອງ​ພ​ຣະ​ເຈົ້າ(ຂ່າວ​ປະ​ເສີດ)ໃຫ້​ຄົນ​ເຫຼົ່າ​ນີ້​ຟັງ:"
 
-#: site/dashboard/dashboard.php:293
+#: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr "ຂ້ອຍ​ຈະ​ເຊີນ​ຄົນ​ເຫຼົ່າ​ນີ້​ມາ​ຮ່ວມ​ເຮັດ​ກຸ່ມ​ທີ່​ມີ​ໜ້າ​ທີ່​ຮັບ​ຜິດ​ຊອບ​ນຳ​ກັນ​ກັບ​ຂ້ອຍ:"
 
-#: site/dashboard/dashboard.php:294
+#: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
@@ -4705,34 +4721,34 @@ msgstr ""
 "ຂ້ອຍ​ຈະ​ທ້າ​ທາຍຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​ຕັ້ງ​ກຸ່ມ​ທີ່​ມີ​ໜ້າ​ທີ່​ຮັບ​ຜິດ​ຊອບ​​ຂອງ​ພວກ​ເຂົາ​ແລະ​ຂ້ອຍ​ຈະ​ຝຶກ​ອົບ​ຮົມ​ພວກ​ເຂົ້າ​ວ່າ​ຈະຕ້ອງ​ເຮັດ​ແນວ​"
 "ໃດ​ແດ່:"
 
-#: site/dashboard/dashboard.php:295
+#: site/dashboard/dashboard.php:302
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr "ຂ້ອຍ​ຈະ​ເຊີນຊວນ​ຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​ເລີ່ມ​ເຮັດ​ກຸ່ມ 3/3 ກັບ​ຂ້ອຍ:"
 
-#: site/dashboard/dashboard.php:296
+#: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
 "ຂ້ອຍ​ຈະ​ທ້າ​ທາຍຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​ເລີ່ມ​ກຸ່ມ 3/3ຂອງ​ພວກ​ເຂົາເອງ​ແລະ​ຂ້ອຍ​ຈະ​ຝຶກ​ອົບ​ຮົມ​ພວກ​ເຂົ້າ​ວ່າ​ຈະຕ້ອງ​ເຮັດ​ແນວ​ໃດ​ແດ່:"
 
-#: site/dashboard/dashboard.php:297
+#: site/dashboard/dashboard.php:304
 #, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr "ຂ້ອຍ​ຈະ​ເຊີນຊວນ​ຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​ເຂົ້າ​ຮ່ວມ​ກຸ່ມ​ຄວາມ​ຫວັງ 3/3 ຫຼື​ກຸ່ມ​ການ​ຄົ້ນ​ພົບ(ກະ​ລຸ​ນາ​ເບິ່ງ​ພາກ​ເພີ່ມ​ເຕີມ):"
 
-#: site/dashboard/dashboard.php:298
+#: site/dashboard/dashboard.php:305
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr "ຂ້ອຍ​ຈະ​ເຊີນຊວນ​ຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​ມາ​ຮ່ວມ​ຍ່າງ​ອະ​ທິ​ຖານ​ກັບ​ຂ້ອຍ:"
 
-#: site/dashboard/dashboard.php:299
+#: site/dashboard/dashboard.php:306
 msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "ຂ້ອຍ​ຈະຍ່າງ​ອະ​ທິ​ຖານ​ກັບທຸກໆ (ມື້/ ອາ​ທິດ/ ເດືອນ)"
 
-#: site/dashboard/dashboard.php:300
+#: site/dashboard/dashboard.php:307
 #, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
@@ -4741,34 +4757,34 @@ msgstr ""
 "ຂ້ອຍ​ຈະ​ກຽມ​ຄົນ​ເຫຼົ່າ​ນີ້​ໃຫ້​ພ້ອມ​ເລົ່າ​ເລື່ອງ​ລາວ​ຂອງ​ພວກ​ເຂົາ​ແລະ​ເລື່ອງ​ລາວ​ຂອງ​ພ​ຣະ​ເຈົ້າ​ແລະ​ໃຫ້​ພວ​ກ​ເຂົາ​ຂຽນ​ລ​າຍ​ຊື່ "
 "100 ຄົນ​​ໃນ​ສາຍ​ສຳ​ພັນ​ຂອງ​ພວກ​ເຂົາ:"
 
-#: site/dashboard/dashboard.php:301
+#: site/dashboard/dashboard.php:308
 msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr "ຂ້ອຍ​ຈະ​ທ້າ​ທາຍຄົນ​ເຫຼົ່າ​ນີ້​​ໃຫ້​​ໃຊ້​ວົງ​ຈອນ​ການ​ອະ​ທິ​ຖານ​ຍ່າງ​ສະ​ໝ່ຳ​ສະ​ເໝີ:"
 
-#: site/dashboard/dashboard.php:302
+#: site/dashboard/dashboard.php:309
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr "ຂ້ອຍ​ຈະ​ໃຊ້ວົງ​ຈອນ​ການ​ອະ​ທິ​ຖານ​​ທຸກໆ (ມື້ / ອາ​ທິດ /ເດືອນ)"
 
-#: site/dashboard/dashboard.php:303
+#: site/dashboard/dashboard.php:310
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr "ຂ້ອຍ​ຈະ​ເຊີນຊວນ​ຄົນ​ເຫຼົ່າ​ນີ້​ໃຫ້​ເປັນ​ສ່ວນ​ໜຶ່ງ​ຂອງ​ກຸ່ມ​ຜູ້​ນຳ​ທີ່​ຂ້ອຍ​ຈະ​ເປັນ​ຄົນ​ນຳ​:"
 
-#: site/dashboard/dashboard.php:304
+#: site/dashboard/dashboard.php:311
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr "ຂ້ອຍ​ຈະ​ໜຸນ​ໃຈ​ຄົນ​ເຫຼົ່າ​ນີ້​ໃຫ້​ເຂົ້າ​ຮ່ວມ​ການ​ອົບ​ຮົມ​ຊູ​ເມ້:"
 
-#: site/dashboard/dashboard.php:305
+#: site/dashboard/dashboard.php:312
 #, fuzzy
 msgid "Other commitments:"
 msgstr "ຄຳ​ໝັ້ນ​ສັນ​ຍາ​ອື່ນໆ:"
 
-#: site/dashboard/wizard.php:151
+#: site/dashboard/wizard.php:162
 #, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
@@ -4776,7 +4792,7 @@ msgctxt ""
 msgid "Bad Wizard"
 msgstr "ຂອງຄວາມຍາວປາທີ່ບໍ່ດີ"
 
-#: site/dashboard/wizard.php:152
+#: site/dashboard/wizard.php:163
 #, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
@@ -4784,47 +4800,47 @@ msgctxt ""
 msgid "You have fallen in with some very bad wizards!"
 msgstr "ເຈົ້າໄດ້ຕົກຢູ່ໃນກັບຂອງຄວາມຍາວປາທີ່ບໍ່ດີຫຼາຍ!"
 
-#: site/dashboard/wizard.php:153
+#: site/dashboard/wizard.php:164
 #, fuzzy
 msgid "Wizard is already completed"
 msgstr "Wizard ແມ່ນສໍາເລັດແລ້ວ"
 
-#: site/dashboard/wizard.php:154
+#: site/dashboard/wizard.php:165
 #, fuzzy
 msgid "Get back home"
 msgstr "ກັບຄືນບ້ານ"
 
-#: site/dashboard/wizard.php:155 site/login/login-template.php:408
+#: site/dashboard/wizard.php:166 site/login/login-template.php:408
 #, fuzzy
 msgid "Back"
 msgstr "ກັບໄປ"
 
-#: site/dashboard/wizard.php:156 site/dashboard/wizard.php:186
-#: site/dashboard/wizard.php:209 site/dashboard/wizard.php:295
+#: site/dashboard/wizard.php:167 site/dashboard/wizard.php:197
+#: site/dashboard/wizard.php:220 site/dashboard/wizard.php:306
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
 msgstr "​ອັນ​ຕໍ່​ໄປ"
 
-#: site/dashboard/wizard.php:157 site/dashboard/wizard.php:286
+#: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
 #, fuzzy
 msgid "Skip"
 msgstr "ຂ້າມ"
 
-#: site/dashboard/wizard.php:158 site/pages/_strings-mobile-pwa.php:35
+#: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
 msgstr "ສຳ​ເລັດ"
 
-#: site/dashboard/wizard.php:160
+#: site/dashboard/wizard.php:171
 #, fuzzy
 msgid "No locations found"
 msgstr "ບໍ່​ພົບ​ຜູ້​ໃຊ້."
 
-#: site/dashboard/wizard.php:163
+#: site/dashboard/wizard.php:174
 #, fuzzy
 msgid "Zúme Community"
 msgstr "ການຮ່ວມກັນ"
 
-#: site/dashboard/wizard.php:164
+#: site/dashboard/wizard.php:175
 #, fuzzy
 msgid ""
 "Zúme is a community of practice and encouragement for those who want to see "
@@ -4836,7 +4852,7 @@ msgstr ""
 "Zúme ແມ່ນເພື່ອເຫັນຜູ້ຝຶກຫັດຫນຶ່ງຄົນແລະໂບດງ່າຍໆສອງແຫ່ງສໍາລັບທຸກໆ 5,000 ຄົນໃນສະຫະລັດແລະ 50,000 "
 "ຄົນທົ່ວໂລກ."
 
-#: site/dashboard/wizard.php:166
+#: site/dashboard/wizard.php:177
 #, fuzzy
 msgid ""
 "Connect with others like you who want to see a disciple making movement in "
@@ -4846,12 +4862,12 @@ msgstr ""
 "ເຊື່ອມຕໍ່ກັບຄົນອື່ນຄືກັບເຈົ້າທີ່ຕ້ອງການເຫັນການເຄື່ອນໄຫວຂອງສາວົກໃນພື້ນທີ່ຂອງເຂົາເຈົ້າ. "
 "ແບ່ງປັນປະສົບການຂອງທ່ານກັບຜູ້ອື່ນ, ແລະຮຽນຮູ້ຈາກຜູ້ອື່ນທີ່ກໍາລັງຄົ້ນພົບສິ່ງໃຫມ່."
 
-#: site/dashboard/wizard.php:167
+#: site/dashboard/wizard.php:178
 #, fuzzy
 msgid "Encouragement"
 msgstr "ກໍາລັງໃຈ"
 
-#: site/dashboard/wizard.php:168
+#: site/dashboard/wizard.php:179
 #, fuzzy
 msgid ""
 "Hear news about disciple making movements in your region and your wider "
@@ -4861,12 +4877,12 @@ msgstr ""
 "ໄດ້ຍິນຂ່າວກ່ຽວກັບການເຄື່ອນໄຫວສ້າງສານຸສິດໃນພາກພື້ນ ແລະປະເທດທີ່ກວ້າງໃຫຍ່ກວ່າຂອງເຈົ້າ, "
 "ໄດ້ຮັບລາຍງານຄວາມຄືບໜ້າ, ແລະເຊື່ອມຕໍ່ກັບການຊຸມນຸມທາງອອນລາຍ ແລະແບບເຫັນໜ້າ."
 
-#: site/dashboard/wizard.php:169
+#: site/dashboard/wizard.php:180
 #, fuzzy
 msgid "Free Tools"
 msgstr "​ເຄື່ອງ​ມື​ຕ່າງໆ"
 
-#: site/dashboard/wizard.php:170
+#: site/dashboard/wizard.php:181
 #, fuzzy
 msgid ""
 "Access free tools for tracking disciple-making and church planting in your "
@@ -4876,436 +4892,436 @@ msgstr ""
 "ເຂົ້າເຖິງເຄື່ອງມືຟຣີສໍາລັບການຕິດຕາມການສ້າງສານຸສິດ ແລະການປູກຄຣິສຕະຈັກໃນພື້ນທີ່ຂອງທ່ານ. "
 "ເອົາແຜນທີ່ເພື່ອສະແດງວິໄສທັດສໍາລັບການອີ່ມຕົວເມືອງຂອງເຈົ້າດ້ວຍສານຸສິດແລະໂບດທີ່ເພີ່ມຂຶ້ນ."
 
-#: site/dashboard/wizard.php:171
+#: site/dashboard/wizard.php:182
 #, fuzzy
 msgid "Join for Free"
 msgstr "ເຂົ້າຮ່ວມຟຣີ"
 
-#: site/dashboard/wizard.php:172
+#: site/dashboard/wizard.php:183
 #, fuzzy
 msgid "Successfully joined community"
 msgstr "ການຮ່ວມກັນ"
 
-#: site/dashboard/wizard.php:173 site/dashboard/wizard.php:225
-#: site/dashboard/wizard.php:239 site/dashboard/wizard.php:246
+#: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
+#: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
 #, fuzzy
 msgid "Something went wrong"
 msgstr "ອຸ້ຍ,ມີບາງຢ່າງຜິດປົກກະຕິ."
 
-#: site/dashboard/wizard.php:177
+#: site/dashboard/wizard.php:188
 #, fuzzy
 msgid "Complete your profile"
 msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ​ຂອງ​ທ່ານ"
 
-#: site/dashboard/wizard.php:181
+#: site/dashboard/wizard.php:192
 #, fuzzy
 msgid "What is your name?"
 msgstr "ເຈົ້າຊື່ຫຍັງ?"
 
-#: site/dashboard/wizard.php:182
+#: site/dashboard/wizard.php:193
 #, fuzzy
 msgid "What is your phone number?"
 msgstr "ເບີໂທລະສັບຂອງເຈົ້າແມ່ນຫຍັງ?"
 
-#: site/dashboard/wizard.php:183
+#: site/dashboard/wizard.php:194
 #, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
 msgstr "ເບີໂທລະສັບສາມາດມີສະເພາະຕົວເລກ, ວົງເລັບ ແລະຂີດຕໍ່"
 
-#: site/dashboard/wizard.php:184
+#: site/dashboard/wizard.php:195
 #, fuzzy
 msgid "What city do you live in?"
 msgstr "ທ່ານ​ຮຽນ​ຮູ້​ຫຍັງ​ແດ່​ກ່ຽວ​ກັບ​ພ​ຣະ​ເຈົ້າ?"
 
-#: site/dashboard/wizard.php:185
+#: site/dashboard/wizard.php:196
 #, fuzzy
 msgid "This is your approximate location."
 msgstr "ນີ້ແມ່ນສະຖານທີ່ໂດຍປະມານຂອງທ່ານ."
 
-#: site/dashboard/wizard.php:187
+#: site/dashboard/wizard.php:198
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "​ນະ​ໂຍ​ບາຍ​ຄວາມ​ເປັນ​ສ່ວນ​ຕົວ​ຂອງ​ຊູ​ເມ້"
 
-#: site/dashboard/wizard.php:193
+#: site/dashboard/wizard.php:204
 #, fuzzy
 msgid "What is your contact preference?"
 msgstr "ເມືອງຫຼືແຂວງຫຼືລະຫັດໄປສະນີຂອງທ່ານແມ່ນຫຍັງ?"
 
-#: site/dashboard/wizard.php:195 zume-training-system.php:316
+#: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
 msgstr "ຂໍ້​ຄວາມ"
 
-#: site/dashboard/wizard.php:201
+#: site/dashboard/wizard.php:212
 #, fuzzy
 msgid "What is your language preference?"
 msgstr "ຄວາມມັກພາສາຂອງເຈົ້າແມ່ນຫຍັງ?"
 
-#: site/dashboard/wizard.php:203
+#: site/dashboard/wizard.php:214
 msgid "How can we serve you?"
 msgstr "ພວກເຮົາສາມາດຮັບໃຊ້ເຈົ້າໄດ້ແນວໃດ?"
 
-#: site/dashboard/wizard.php:204
+#: site/dashboard/wizard.php:215
 #, fuzzy
 msgid "Coaching"
 msgstr "​ຄູ​ຝຶກ​ສອນ"
 
-#: site/dashboard/wizard.php:205
+#: site/dashboard/wizard.php:216
 #, fuzzy
 msgid "Technical Assistance"
 msgstr "ຂ້ອຍຕ້ອງການຄວາມຊ່ວຍເຫຼືອດ້ານວິຊາການ"
 
-#: site/dashboard/wizard.php:206
+#: site/dashboard/wizard.php:217
 #, fuzzy
 msgid "Question about implementing the training"
 msgstr "ຄໍາຖາມກ່ຽວກັບການຈັດຕັ້ງປະຕິບັດການຝຶກອົບຮົມ"
 
-#: site/dashboard/wizard.php:207
+#: site/dashboard/wizard.php:218
 #, fuzzy
 msgid "Question about the content"
 msgstr "ຄໍາຖາມກ່ຽວກັບເນື້ອໃນ"
 
-#: site/dashboard/wizard.php:208
+#: site/dashboard/wizard.php:219
 #, fuzzy
 msgid "Help with what to do after starting a group"
 msgstr "ຊ່ວຍໃນສິ່ງທີ່ຕ້ອງເຮັດຫຼັງຈາກເລີ່ມກຸ່ມ"
 
-#: site/dashboard/wizard.php:210
+#: site/dashboard/wizard.php:221
 #, fuzzy
 msgid "Please give a response to this question"
 msgstr "ກະລຸນາຕອບຄໍາຖາມນີ້"
 
-#: site/dashboard/wizard.php:211
+#: site/dashboard/wizard.php:222
 #, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr "ເມື່ອ​ສົ່ງ​ຄຳ​ຂໍ​ນີ້, ພວກ​ເຮົາ​ຈະ​ພະ​ຍາ​ຍາມ​ຢ່າງ​ດີ​ທີ່​ສຸດ​ໃນ​ການ​ເຊື່ອມ​ຕໍ່​ທ່ານ​ກັບ​ຄູຝຶກ​ສອນ​ທີ່​ຢູ່​ໃກ້​ທ່ານ."
 
-#: site/dashboard/wizard.php:212
+#: site/dashboard/wizard.php:223
 #, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr "ຂໍໂທດ. ພວກເຮົາບໍ່ສາມາດສົ່ງຄຳຮ້ອງຂໍຂອງທ່ານໄດ້. ກະລຸນາລອງໃໝ່ໃນພາຍຫຼັງ."
 
-#: site/dashboard/wizard.php:213
+#: site/dashboard/wizard.php:224
 #, fuzzy
 msgid "You have already requested a coach"
 msgstr "ທ່ານໄດ້ຮຽກຮ້ອງການຝຶກສອນ."
 
-#: site/dashboard/wizard.php:214
+#: site/dashboard/wizard.php:225
 #, fuzzy
 msgid "Error connecting with a coach"
 msgstr "ຕິດຕໍ່ກັບຄູຝຶກສອນ"
 
-#: site/dashboard/wizard.php:215
+#: site/dashboard/wizard.php:226
 #, fuzzy
 msgid "Connecting you to a Coach"
 msgstr "​ເຊື່ອມ​ຕໍ່​ກັບ​ຜູ້​ຝຶກ"
 
-#: site/dashboard/wizard.php:216 site/dashboard/wizard.php:222
-#: site/dashboard/wizard.php:236 site/dashboard/wizard.php:243
+#: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
+#: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
 #, fuzzy
 msgid "Please wait while we connect you"
 msgstr "ກະລຸນາລໍຖ້າໃນຂະນະທີ່ພວກເຮົາເຊື່ອມຕໍ່ທ່ານ"
 
-#: site/dashboard/wizard.php:221
+#: site/dashboard/wizard.php:232
 #, fuzzy
 msgid "Joining Plan"
 msgstr "ແຜນການເຂົ້າຮ່ວມ"
 
-#: site/dashboard/wizard.php:223 site/dashboard/wizard.php:306
+#: site/dashboard/wizard.php:234 site/dashboard/wizard.php:317
 #, fuzzy
 msgid "The training link is broken. Please try again."
 msgstr "ການເຊື່ອມຕໍ່ການຝຶກອົບຮົມແມ່ນແຕກ. ກະລຸນາລອງອີກຄັ້ງ."
 
-#: site/dashboard/wizard.php:224
+#: site/dashboard/wizard.php:235
 #, fuzzy, php-format
 msgid "Successfully joined training %s"
 msgstr "ເຂົ້າຮ່ວມການຝຶກອົບຮົມສຳເລັດແລ້ວ %s"
 
-#: site/dashboard/wizard.php:227
+#: site/dashboard/wizard.php:238
 #, fuzzy
 msgid "Next Session Date"
 msgstr "ບົດຮຽນຕໍ່ໄປ"
 
-#: site/dashboard/wizard.php:228
+#: site/dashboard/wizard.php:239
 #, fuzzy
 msgid "Start Time"
 msgstr "ເລີ່ມຕົ້ນ"
 
-#: site/dashboard/wizard.php:229
+#: site/dashboard/wizard.php:240
 #, fuzzy
 msgid "Timezone"
 msgstr "ເຂດເວລາ"
 
-#: site/dashboard/wizard.php:232
+#: site/dashboard/wizard.php:243
 #, fuzzy
 msgid "There are currently no public trainings available."
 msgstr "ໃນປັດຈຸບັນບໍ່ມີການຝຶກອົບຮົມສາທາລະນະ."
 
-#: site/dashboard/wizard.php:235
+#: site/dashboard/wizard.php:246
 #, fuzzy
 msgid "Connecting with friend"
 msgstr "ການເຊື່ອມຕໍ່ກັບຫມູ່ເພື່ອນ"
 
-#: site/dashboard/wizard.php:237
+#: site/dashboard/wizard.php:248
 #, fuzzy
 msgid "The friend link is broken. Please try again."
 msgstr "ການເຊື່ອມຕໍ່ເພື່ອນຖືກແຕກ. ກະລຸນາລອງອີກຄັ້ງ."
 
-#: site/dashboard/wizard.php:238
+#: site/dashboard/wizard.php:249
 #, fuzzy, php-format
 msgid "Successfully connected with friend %s"
 msgstr "ສຳເລັດການເຊື່ອມຕໍ່ກັບໝູ່ %s"
 
-#: site/dashboard/wizard.php:242
+#: site/dashboard/wizard.php:253
 #, fuzzy
 msgid "Checking in"
 msgstr "ລາຍການກວດກາ"
 
-#: site/dashboard/wizard.php:244
+#: site/dashboard/wizard.php:255
 #, fuzzy
 msgid "The checkin link is broken. Please try again."
 msgstr "ລິ້ງເຊັກອິນຖືກຫັກ. ກະລຸນາລອງອີກຄັ້ງ."
 
-#: site/dashboard/wizard.php:245
+#: site/dashboard/wizard.php:256
 #, fuzzy
 msgid "Successfully checked in"
 msgstr "ເຊັກອິນສຳເລັດແລ້ວ"
 
-#: site/dashboard/wizard.php:250
+#: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Create a training group"
 msgstr "ຂຽນ​ລາຍ​ຊື່ 100 ຄົນ​ຂອງ​ທ່ານ​ຂຶ້ນ​ມາ"
 
-#: site/dashboard/wizard.php:251
+#: site/dashboard/wizard.php:262
 #, fuzzy
 msgid "Join a public training group"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/wizard.php:252
+#: site/dashboard/wizard.php:263
 #, fuzzy
 msgid "Skip for now"
 msgstr "ຂ້າມໄປດຽວນີ້"
 
-#: site/dashboard/wizard.php:253
+#: site/dashboard/wizard.php:264
 #, fuzzy
 msgid "Choose your course format"
 msgstr "ເລືອກຮູບແບບຫຼັກສູດຂອງທ່ານ"
 
-#: site/dashboard/wizard.php:254
+#: site/dashboard/wizard.php:265
 #, fuzzy
 msgid "1 hour (20 sessions)"
 msgstr "ບົດ​ຮຽນ"
 
-#: site/dashboard/wizard.php:255
+#: site/dashboard/wizard.php:266
 #, fuzzy
 msgid "2 hour (10 sessions)"
 msgstr "ບົດ​ຮຽນ"
 
-#: site/dashboard/wizard.php:256
+#: site/dashboard/wizard.php:267
 #, fuzzy
 msgid "4 hour (5 sessions)"
 msgstr "ບົດ​ຮຽນ"
 
-#: site/dashboard/wizard.php:257
+#: site/dashboard/wizard.php:268
 #, fuzzy
 msgid "Would you like to schedule your training?"
 msgstr "ທ່ານຕ້ອງການຈັດຕາຕະລາງການຝຶກອົບຮົມຂອງທ່ານບໍ?"
 
-#: site/dashboard/wizard.php:258 site/pages/_strings-mobile-pwa.php:9
+#: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
 msgstr "ແມ່ນແລ້ວ"
 
-#: site/dashboard/wizard.php:259 site/pages/_strings-mobile-pwa.php:10
+#: site/dashboard/wizard.php:270 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
 msgstr "ບໍ່"
 
-#: site/dashboard/wizard.php:260
+#: site/dashboard/wizard.php:271
 #, fuzzy
 msgid "What time of day?"
 msgstr "ມື້ໃດ?"
 
-#: site/dashboard/wizard.php:261
+#: site/dashboard/wizard.php:272
 #, fuzzy
 msgid "Morning"
 msgstr "ການຝຶກອົບຮົມ"
 
-#: site/dashboard/wizard.php:262
+#: site/dashboard/wizard.php:273
 #, fuzzy
 msgid "Afternoon"
 msgstr "ຕອນບ່າຍ"
 
-#: site/dashboard/wizard.php:263
+#: site/dashboard/wizard.php:274
 #, fuzzy
 msgid "Evening"
 msgstr "ຕອນແລງ"
 
-#: site/dashboard/wizard.php:264
+#: site/dashboard/wizard.php:275
 #, fuzzy
 msgid "How often will you meet?"
 msgstr "ທ່ານ​ຮູ້​ສຶກ​ແນວ​ໃດ​ແດ່?"
 
-#: site/dashboard/wizard.php:265
+#: site/dashboard/wizard.php:276
 #, fuzzy
 msgid "Every day"
 msgstr "ທຸກໆມື້"
 
-#: site/dashboard/wizard.php:266
+#: site/dashboard/wizard.php:277
 #, fuzzy
 msgid "Once a week"
 msgstr "ອາທິດລະຄັ້ງ"
 
-#: site/dashboard/wizard.php:267
+#: site/dashboard/wizard.php:278
 #, fuzzy
 msgid "Twice a month"
 msgstr "ສອງຄັ້ງຕໍ່ເດືອນ"
 
-#: site/dashboard/wizard.php:268
+#: site/dashboard/wizard.php:279
 #, fuzzy
 msgid "Once a month"
 msgstr "ເດືອນລະເທື່ອ"
 
-#: site/dashboard/wizard.php:269
+#: site/dashboard/wizard.php:280
 msgid "Other"
 msgstr "​ອື່ນໆ"
 
-#: site/dashboard/wizard.php:270
+#: site/dashboard/wizard.php:281
 #, fuzzy
 msgid "What is the name of the training group?"
 msgstr "ເນື້ອ​ໃນ​ຂອງ​ການ​ຝຶກ​ອົບ​ຮົມ​ນີ້​ແມ່ນ​ຫຍັງ?"
 
-#: site/dashboard/wizard.php:271
+#: site/dashboard/wizard.php:282
 #, fuzzy
 msgid "My first training group"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: site/dashboard/wizard.php:272
+#: site/dashboard/wizard.php:283
 #, fuzzy
 msgid "When do you plan to start?"
 msgstr "ທ່ານ​ຮຽນ​ຮູ້​ຫຍັງ​ແດ່​ກ່ຽວ​ກັບ​ພ​ຣະ​ເຈົ້າ?"
 
-#: site/dashboard/wizard.php:273
+#: site/dashboard/wizard.php:284
 #, fuzzy
 msgid "Where do you plan to meet?"
 msgstr "ທ່ານ​ຮຽນ​ຮູ້​ຫຍັງ​ແດ່​ກ່ຽວ​ກັບ​ພ​ຣະ​ເຈົ້າ?"
 
-#: site/dashboard/wizard.php:274
+#: site/dashboard/wizard.php:285
 #, fuzzy
 msgid "This could be online or in person"
 msgstr "ອັນນີ້ອາດຈະອອນໄລນ໌ ຫຼືດ້ວຍຕົນເອງ"
 
-#: site/dashboard/wizard.php:275
+#: site/dashboard/wizard.php:286
 #, fuzzy
 msgid "Review Schedule"
 msgstr "ວົງ​ຈອນ​ການ​ຮຽນ​ຮູ້"
 
-#: site/dashboard/wizard.php:276
+#: site/dashboard/wizard.php:287
 #, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
 msgstr "ເລືອກ %1$s ຂອງ %2$s ແລ້ວ"
 
-#: site/dashboard/wizard.php:277
+#: site/dashboard/wizard.php:288
 #, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
 msgstr "ອ່ານ"
 
-#: site/dashboard/wizard.php:278
+#: site/dashboard/wizard.php:289
 #, fuzzy, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
 msgstr "ເລືອກຫຼາຍເກີນໄປ: %s"
 
-#: site/dashboard/wizard.php:279
+#: site/dashboard/wizard.php:290
 #, fuzzy
 msgid "Incorrect number of sessions selected"
 msgstr "ເລືອກຈໍານວນເຊດຊັນບໍ່ຖືກຕ້ອງ"
 
-#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:282
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:291 site/dashboard/wizard.php:293
+#: site/dashboard/wizard.php:295
 #, fuzzy, php-format
 msgid "Set %s"
 msgstr "ຕັ້ງ %s"
 
-#: site/dashboard/wizard.php:280 site/dashboard/wizard.php:281
-#: site/dashboard/wizard.php:302
+#: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
+#: site/dashboard/wizard.php:313
 #, fuzzy
 msgid "Location"
 msgstr "ບັນທຶກສະຖານທີ່ປະຈຸບັນ"
 
-#: site/dashboard/wizard.php:282
+#: site/dashboard/wizard.php:293
 #, fuzzy
 msgid "Group Name"
 msgstr "​ບໍ່​ມີ​ຊື່"
 
-#: site/dashboard/wizard.php:283
+#: site/dashboard/wizard.php:294
 #, fuzzy
 msgid "Group name"
 msgstr "​ບໍ່​ມີ​ຊື່"
 
-#: site/dashboard/wizard.php:284
+#: site/dashboard/wizard.php:295
 #, fuzzy
 msgid "Start Date"
 msgstr "ເລີ່ມຕົ້ນ"
 
-#: site/dashboard/wizard.php:288 site/dashboard/wizard.php:303
+#: site/dashboard/wizard.php:299 site/dashboard/wizard.php:314
 #, fuzzy
 msgid "Time"
 msgstr "ເວລາ"
 
-#: site/dashboard/wizard.php:289
+#: site/dashboard/wizard.php:300
 #, fuzzy
 msgid "Date"
 msgstr "ວັນທີ"
 
-#: site/dashboard/wizard.php:290
+#: site/dashboard/wizard.php:301
 #, fuzzy
 msgid "Summary"
 msgstr "ສະຫຼຸບ"
 
-#: site/dashboard/wizard.php:291
+#: site/dashboard/wizard.php:302
 #, fuzzy
 msgid "Clear Calendar"
 msgstr "ລຶບປະຕິທິນ"
 
-#: site/dashboard/wizard.php:292
+#: site/dashboard/wizard.php:303
 msgid "Add"
 msgstr "​ເພີ່ມ"
 
-#: site/dashboard/wizard.php:293
+#: site/dashboard/wizard.php:304
 #, fuzzy
 msgid "Add some dates to your schedule"
 msgstr "ເພີ່ມບາງວັນທີໃສ່ຕາຕະລາງຂອງທ່ານ"
 
-#: site/dashboard/wizard.php:294
+#: site/dashboard/wizard.php:305
 #, fuzzy
 msgid "Change"
 msgstr "​ປ່ຽນ​ລະ​ຫັດ"
 
-#: site/dashboard/wizard.php:298
+#: site/dashboard/wizard.php:309
 #, fuzzy
 msgid "Invite your friends to join your training"
 msgstr "ເຊີນເພື່ອນຂອງທ່ານເຂົ້າຮ່ວມການຝຶກອົບຮົມຂອງທ່ານ"
 
-#: site/dashboard/wizard.php:299
+#: site/dashboard/wizard.php:310
 #, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr "ແບ່ງປັນການເຊື້ອເຊີນຫຼືການເຊື່ອມຕໍ່ຂ້າງລຸ່ມນີ້ກັບຫມູ່ເພື່ອນຂອງທ່ານເພື່ອໃຫ້ພວກເຂົາເຂົ້າຮ່ວມການຝຶກອົບຮົມຂອງທ່ານ."
 
-#: site/dashboard/wizard.php:300
+#: site/dashboard/wizard.php:311
 #, fuzzy
 msgid "Join my zume plan"
 msgstr "ເຂົ້າຮ່ວມແຜນ zume ຂອງຂ້ອຍ"
 
-#: site/dashboard/wizard.php:301
+#: site/dashboard/wizard.php:312
 #, fuzzy, php-format
 msgid "%s is inviting you to a Zume Training Group"
 msgstr "%s ກຳລັງເຊີນທ່ານເຂົ້າຮ່ວມກຸ່ມຝຶກອົບຮົມ Zume"
 
-#: site/dashboard/wizard.php:307
+#: site/dashboard/wizard.php:318
 #, fuzzy
 msgid "Copy Invite"
 msgstr "​ເຊື່ອ​ມຕໍ່"
@@ -5349,7 +5365,7 @@ msgid "Get New Password"
 msgstr "​ຮັບ​ລະ​ຫັດ​ຜ່ານ​ໃໝ່"
 
 #: site/login/login-template.php:123 site/login/login-template.php:124
-#: site/login/login-template.php:635
+#: site/login/login-template.php:657
 msgid "Email Address"
 msgstr "​ທີ່​ຢູ່​ອີ​ເມ​ວ"
 
@@ -5380,8 +5396,8 @@ msgid "Password Required"
 msgstr "ຕ້ອງ​​ແຈ້ງລະ​ຫັດ​ຜ່ານ"
 
 #: site/login/login-template.php:265 site/login/login-template.php:444
-#: site/login/login-template.php:445 site/login/login-template.php:636
-#: site/login/login-template.php:769
+#: site/login/login-template.php:445 site/login/login-template.php:658
+#: site/login/login-template.php:791
 msgid "Password"
 msgstr "ລະຫັດຜ່ານ"
 
@@ -5405,11 +5421,11 @@ msgstr "ສະບາຍດີ!"
 msgid "Create a Zume Account"
 msgstr "ສ້າງບັນຊີ Zume"
 
-#: site/login/login-template.php:374 site/login/login-template.php:465
-#: site/login/login-template.php:690 site/pages/follow-jesus.php:158
-#: site/pages/home.php:249 site/parts/footer.php:16 site/parts/nav.php:38
-#: site/parts/nav.php:100 utilities/apis/cta-api.php:133
-#: utilities/apis/cta-api.php:135
+#: site/login/login-template.php:374 site/login/login-template.php:470
+#: site/login/login-template.php:712 site/pages/follow-jesus.php:158
+#: site/pages/home.php:248 site/parts/footer.php:16 site/parts/nav.php:38
+#: site/parts/nav.php:100 utilities/apis/cta-api.php:136
+#: utilities/apis/cta-api.php:138
 msgid "Register"
 msgstr "ສະໝັກສະມາຊິກ"
 
@@ -5437,54 +5453,54 @@ msgstr "ລະຫັດຜ່ານບໍ່ແຂງແຮງພໍ"
 msgid "There are some errors in your form."
 msgstr "ມີ​ຂໍ້​ຜິດ​ພາດ​ບາງ​ຢ່າງ​ໃນ​ແບບ​ຟອມ​ຂອງ​ທ່ານ."
 
-#: site/login/login-template.php:570
+#: site/login/login-template.php:592
 msgid "User action confirmed."
 msgstr "​ຮັບ​ຮອງການ​ເຮັດ​ວຽ​ກ​ຂອງ​ຜູ້​ໃຊ້​ແລ້ວ."
 
-#: site/login/login-template.php:582
+#: site/login/login-template.php:604
 #, fuzzy
 msgid "Welcome back!"
 msgstr "ຍິນ​ດີ​ຕ້ອນ​ຮັບ!"
 
-#: site/login/login-template.php:589 site/login/login-template.php:638
-#: site/login/login-template.php:713 site/pages/home.php:112
+#: site/login/login-template.php:611 site/login/login-template.php:660
+#: site/login/login-template.php:735 site/pages/home.php:112
 #: site/parts/nav.php:39 site/parts/nav.php:101
 msgid "Login"
 msgstr "​ເຂົ້າ​ສູ່​ລະ​ບົບ"
 
-#: site/login/login-template.php:612
+#: site/login/login-template.php:634
 #, fuzzy
 msgid "or sign in with email"
 msgstr "ຫຼືເຂົ້າສູ່ລະບົບດ້ວຍອີເມວ"
 
-#: site/login/login-template.php:618
+#: site/login/login-template.php:640
 msgid "Username or password does not match. Try again."
 msgstr "ຊື່ຜູ້ໃຊ້ຫຼືລະຫັດຜ່ານບໍ່ກົງກັນ. ລອງອີກຄັ້ງ."
 
-#: site/login/login-template.php:637 site/login/login-template.php:770
+#: site/login/login-template.php:659 site/login/login-template.php:792
 msgid "Remember Me"
 msgstr "ຈື່ຂ້ອຍ"
 
-#: site/login/login-template.php:689
+#: site/login/login-template.php:711
 #, fuzzy
 msgid "Don't have an account?"
 msgstr "ບໍ່ມີບັນຊີບໍ?"
 
-#: site/login/login-template.php:701
+#: site/login/login-template.php:723
 msgid "Lost your password?"
 msgstr "​ລືມ​ລະ​ຫັດ​ຜ່ານ?"
 
-#: site/login/login-template.php:712
+#: site/login/login-template.php:734
 #, fuzzy
 msgid "Already have an account?"
 msgstr "ມີບັນຊີຢູ່ແລ້ວບໍ?"
 
-#: site/login/login-template.php:768
+#: site/login/login-template.php:790
 #, fuzzy
 msgid "Username or Email Address"
 msgstr "ບໍ່​ພົບອີ​ເມ​ລ​ຜູ້​ໃຊ້​ງານ."
 
-#: site/login/login-template.php:771
+#: site/login/login-template.php:793
 #, fuzzy
 msgid "Log In"
 msgstr "ເຂົ້າສູ່ລະບົບ"
@@ -5753,7 +5769,7 @@ msgstr "​ເລີ່ມ​ລົງ​ມື"
 msgid "How does Zúme Training Work?"
 msgstr "ການອົບຮົມຊູເມ້"
 
-#: site/pages/about.php:167 site/pages/home.php:213
+#: site/pages/about.php:167 site/pages/home.php:212
 #, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
@@ -5761,27 +5777,27 @@ msgid ""
 msgstr ""
 "%1$sການລົງທະບຽນຟຣີ%2$s ໃຫ້ທ່ານເຂົ້າເຖິງອຸປະກອນການຝຶກອົບຮົມທັງໝົດ ແລະການຝຶກອົບຮົມອອນໄລນ໌."
 
-#: site/pages/about.php:171 site/pages/home.php:217
+#: site/pages/about.php:171 site/pages/home.php:216
 #, fuzzy, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr "ວິ​ດີ​ໂອ​ພາບ​ແລະ​ສຽງ​ຈະ​ຊ່ວຍ​ໃຫ້​ກຸ່ມ​ຂອງ​ທ່ານ​ເຂົ້າ​ໃຈຫຼັກ​ການ​ພື້ນ​ຖານ​ຂອງ​ການ​ເພີ່ມ​ທະ​ວີ​ຈຳ​ນວນ​ສາ​ວົກ."
 
-#: site/pages/about.php:175 site/pages/home.php:221
+#: site/pages/about.php:175 site/pages/home.php:220
 #, fuzzy, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr "ການ​ໂອ້​ລົມ​ໃນ​ກຸ່ມ​ຈະ​ຊ່ວຍ​ໃຫ້​ກຸ່ມ​ຂອງ​ທ່ານ​ໃຫ້​ຄິດ​ຕຶກ​ຕອງ​ໃນ​ສິ່ງ​ທີ່​ກຳ​ລັງ​ເວົ້າ​ເຖິງນັ້ນ."
 
-#: site/pages/about.php:179 site/pages/home.php:225
+#: site/pages/about.php:179 site/pages/home.php:224
 #, fuzzy, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr "ການ​ຝຶກ​ຫັດງ່າຍໆ​ຈະ​ຊ່ວຍ​ໃຫ້​ກຸ່ມ​ຂອງ​ທ່ານ​ນຳ​ເອົາ​ສິ່ງ​ທີ່​​ໄດ້ຮຽນ​ຮູ້​ໄປ​ປະ​ຕິ​ບັດ."
 
-#: site/pages/about.php:183 site/pages/home.php:229
+#: site/pages/about.php:183 site/pages/home.php:228
 #, fuzzy, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
@@ -5917,21 +5933,51 @@ msgstr "ສະໝັກໂດຍບໍ່ເສຍຄ່າ"
 msgid "Please enter a friend code."
 msgstr "ກະລຸນາໃສ່ລະຫັດເພື່ອນ."
 
-#: site/pages/checkin.php:157
+#: site/pages/checkin.php:235
 #, fuzzy
 msgid "Checkin"
 msgstr "ລາຍການກວດກາ"
 
-#: site/pages/checkin.php:159
+#: site/pages/checkin.php:237
 #, fuzzy
 msgid "Use the code on the screen or in the book"
 msgstr "ໃຊ້ລະຫັດໃນຫນ້າຈໍຫຼືໃນຫນັງສື"
 
-#: site/pages/checkin.php:164 site/pages/friend-invite.php:171
+#: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
 #, fuzzy
 msgid "Connect"
 msgstr "ເຊື່ອມຕໍ່"
+
+#: site/pages/checkin.php:246
+#, fuzzy
+msgid "or"
+msgstr "ຄັດ"
+
+#: site/pages/checkin.php:248
+msgid "Choose session to checkin"
+msgstr ""
+
+#: site/pages/checkin.php:250 site/pages/training.php:163
+#: site/pages/training.php:214
+#, fuzzy
+msgid "Training Schedules"
+msgstr "ວົງ​ຈອນ​ການ​ຮຽນ​ຮູ້"
+
+#: site/pages/checkin.php:254 site/pages/training.php:221
+#, fuzzy
+msgid "10 Sessions"
+msgstr "ບົດ​ຮຽນ"
+
+#: site/pages/checkin.php:258 site/pages/training.php:233
+#, fuzzy
+msgid "20 Sessions"
+msgstr "ບົດ​ຮຽນ"
+
+#: site/pages/checkin.php:262 site/pages/training.php:245
+#, fuzzy
+msgid "Intensive"
+msgstr "ສຸມ"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
@@ -6308,7 +6354,7 @@ msgstr "2 ຄຣິສຕະຈັກລຽບງ່າຍ"
 msgid "Training Others"
 msgstr "ການຝຶກອົບຮົມ"
 
-#: site/pages/home.php:179 site/pages/home.php:245
+#: site/pages/home.php:179 site/pages/home.php:244
 #, fuzzy
 msgid "I'm Ready!"
 msgstr "ຂ້ອຍພ້ອມແລ້ວ!"
@@ -6318,17 +6364,17 @@ msgstr "ຂ້ອຍພ້ອມແລ້ວ!"
 msgid "Ordinary People. Simple Steps."
 msgstr "ຄົນທຳມະດາ. ຂັ້ນຕອນງ່າຍໆ."
 
-#: site/pages/home.php:238
+#: site/pages/home.php:237
 #, fuzzy
 msgid "More about zume"
 msgstr "ຫາ​ຂໍ້​ມູນ​ກ່ຽວ​ກັບ​ຊູ​ເມ້​ເພີ່ມ​ເຕີມ"
 
-#: site/pages/home.php:272
+#: site/pages/home.php:271
 #, fuzzy
 msgid "Real people ... real stories."
 msgstr "ຄົນຈິງ...ເລື່ອງຈິງ."
 
-#: site/pages/home.php:283
+#: site/pages/home.php:282
 #, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
@@ -6338,12 +6384,12 @@ msgstr ""
 "ຂ້າພະເຈົ້າໄດ້ໃຊ້ເວລາຫລາຍປີໃນການເຂົ້າຮ່ວມການສຶກສາພຣະຄໍາພີແລະສາດສະຫນາຈັກຢ່າງຊື່ສັດ, "
 "ແຕ່ບາງຢ່າງບໍ່ເຂົ້າໃຈຄວາມຈິງທີ່ງ່າຍດາຍຂອງການສ້າງສານຸສິດທີ່ຂ້າພະເຈົ້າພົບເຫັນຢູ່ທີ່ນີ້ໃນ Zúme. ~ ຄ"
 
-#: site/pages/home.php:294
+#: site/pages/home.php:293
 #, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr "ທຸກຄົນສາມາດເຮັດສິ່ງນີ້ໄດ້. ທ່ານບໍ່ຕ້ອງການທັກສະພິເສດຫຼືການຝຶກອົບຮົມ. ~ ຈ"
 
-#: site/pages/home.php:305
+#: site/pages/home.php:304
 #, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
@@ -6352,7 +6398,7 @@ msgstr ""
 "ນີ້ແມ່ນສໍາລັບສາວົກທຸກຄົນທີ່ຕ້ອງການເຊື່ອຟັງຄະນະກໍາມະການທີ່ຍິ່ງໃຫຍ່. ການຝຶກອົບຮົມ Zúme ຊີ້ແຈງວິຖີຊີວິດ "
 "Christian ປົກກະຕິ. ~ ງ"
 
-#: site/pages/home.php:316
+#: site/pages/home.php:315
 #, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
@@ -6360,12 +6406,12 @@ msgid ""
 msgstr ""
 "ແນວຄວາມຄິດແລະຄວາມສາມາດເຫຼົ່ານີ້ໄດ້ປ່ຽນສາດສະຫນາຈັກຂອງພວກເຮົາແລະຜົນກະທົບຂອງພວກເຮົາຕໍ່ໂລກ. ~ ຣ"
 
-#: site/pages/home.php:326
+#: site/pages/home.php:325
 #, fuzzy, php-format
 msgid "%s = Yeast"
 msgstr "ເຄືອຂ່າຍຊູເມ້"
 
-#: site/pages/home.php:332
+#: site/pages/home.php:331
 msgid ""
 "Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, "
 "\"The Kingdom of Heaven is like a woman who took yeast and mixed it into a "
@@ -6380,27 +6426,27 @@ msgstr ""
 "ໄປ​ທີ່​ຊ່ວຍ​ໃຫ້​ຜູ້​ເຊື່ອ​ທຳ​ມະ​ດາ​ຄົນ​ໜຶ່ງ​ມີ​ຄວາມ​ພ້ອມ​ແລະ​ມີ​ພະ​ລັງ​ທີ່​ຈະ​ອອກ​ໄປ​ທຸກໆ​ຊຸມ​ຊົນ​ເພື່ອ​ເພີ່ມ​ທະ​ວີ​ຈຳ​ນວນ​ສາ​ວົກໃນ​ຍຸກສະ​"
 "ໄໝ​ຂອງ​ພວກ​ເ​ຮົາ."
 
-#: site/pages/home.php:337
+#: site/pages/home.php:336
 #, fuzzy
 msgid "Ready to take your next steps?"
 msgstr "ພ້ອມທີ່ຈະເຮັດຂັ້ນຕອນຕໍ່ໄປຂອງເຈົ້າບໍ?"
 
-#: site/pages/home.php:341
+#: site/pages/home.php:340
 #, fuzzy
 msgid "Register Free."
 msgstr "ສະໝັກໂດຍບໍ່ເສຍຄ່າ"
 
-#: site/pages/home.php:345
+#: site/pages/home.php:344
 #, fuzzy
 msgid "Gather a Group."
 msgstr "​ສ້າງ​ກຸ່ມ"
 
-#: site/pages/home.php:349
+#: site/pages/home.php:348
 #, fuzzy
 msgid "Change the World."
 msgstr "ປ່ຽນແປງໂລກ."
 
-#: site/pages/home.php:352
+#: site/pages/home.php:351
 #, fuzzy
 msgid "Get started"
 msgstr "​ເລີ່ມ​ລົງ​ມື"
@@ -6782,11 +6828,6 @@ msgstr "ພາບລວມຂອງຫຼັກສູດ"
 msgid "Course Concepts"
 msgstr "ຈົບຫຼັກສູດ"
 
-#: site/pages/training.php:163 site/pages/training.php:214
-#, fuzzy
-msgid "Training Schedules"
-msgstr "ວົງ​ຈອນ​ການ​ຮຽນ​ຮູ້"
-
 #: site/pages/training.php:164 site/pages/training.php:259
 #, fuzzy
 msgid "What is required?"
@@ -6821,11 +6862,6 @@ msgstr ""
 "Zúme ແມ່ນ 20 ຊົ່ວໂມງຂອງການຝຶກອົບຮົມ. ແຕ່ 20 "
 "ຊົ່ວໂມງເຫຼົ່ານັ້ນສາມາດແບ່ງອອກໄດ້ແຕກຕ່າງກັນຂຶ້ນຢູ່ກັບຄວາມພ້ອມຂອງກຸ່ມການຝຶກອົບຮົມຂອງທ່ານ."
 
-#: site/pages/training.php:221
-#, fuzzy
-msgid "10 Sessions"
-msgstr "ບົດ​ຮຽນ"
-
 #: site/pages/training.php:228
 #, fuzzy
 msgid ""
@@ -6837,11 +6873,6 @@ msgstr ""
 "ເຊື່ອ ຟັງ ພາກ ປະ ຕິ ບັດ ແລະ ວິ ທີ ການ ທີ່ ຈະ ແບ່ງ ປັນ ໃນ ລະ ຫວ່າງ ກອງ ປະ ຊຸມ. "
 "ຮູບແບບນີ້ມັກຈະດໍາເນີນການຫນຶ່ງຄັ້ງຕໍ່ອາທິດສໍາລັບ 10 ອາທິດ."
 
-#: site/pages/training.php:233
-#, fuzzy
-msgid "20 Sessions"
-msgstr "ບົດ​ຮຽນ"
-
 #: site/pages/training.php:240
 #, fuzzy
 msgid ""
@@ -6851,11 +6882,6 @@ msgid ""
 msgstr ""
 "ສໍາລັບຫຼັກສູດທີ່ຊ້າກວ່າທີ່ມີໂອກາດຫຼາຍສໍາລັບການໄດ້ຮັບຄວາມສາມາດໃນແນວຄວາມຄິດແລະທັກສະ, ຮູບແບບກອງປະຊຸມ "
 "20 ມີໂອກາດປະຕິບັດຫຼາຍສໍາລັບແຕ່ລະແນວຄວາມຄິດແລະເຄື່ອງມື."
-
-#: site/pages/training.php:245
-#, fuzzy
-msgid "Intensive"
-msgstr "ສຸມ"
 
 #: site/pages/training.php:252
 #, fuzzy
@@ -6957,133 +6983,139 @@ msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ​ຂອງ​ທ່
 msgid "the plan"
 msgstr "ແຜນການ"
 
-#: utilities/apis/cta-api.php:134
+#: utilities/apis/cta-api.php:137
 #, fuzzy
 msgid "Register to start your training"
 msgstr "ທ່ານ​ຕ້ອງ​ການ​ເລີ່ມ​ການ​ຝຶກ​ອົບ​ຮົມຫຼືບໍ່ ?"
 
-#: utilities/apis/cta-api.php:148
+#: utilities/apis/cta-api.php:151
 #, fuzzy
 msgid "Join Online Training"
 msgstr "ເບິ່ງການຝຶກອົບຮົມທັງໝົດ"
 
-#: utilities/apis/cta-api.php:149
+#: utilities/apis/cta-api.php:152
 #, fuzzy
 msgid "Join the online training to learn more"
 msgstr "ເຂົ້າຮ່ວມການຝຶກອົບຮົມອອນໄລນ໌ເພື່ອຮຽນຮູ້ເພີ່ມເຕີມ"
 
-#: utilities/apis/cta-api.php:163
+#: utilities/apis/cta-api.php:166
 #, fuzzy
 msgid "Joined Training!"
 msgstr "ເບິ່ງການຝຶກອົບຮົມທັງໝົດ"
 
-#: utilities/apis/cta-api.php:178
+#: utilities/apis/cta-api.php:181
 #, fuzzy
 msgid "Get a coach to help you on your journey"
 msgstr "ເອົາຄູຝຶກສອນເພື່ອຊ່ວຍເຈົ້າໃນການເດີນທາງຂອງເຈົ້າ"
 
-#: utilities/apis/cta-api.php:192
+#: utilities/apis/cta-api.php:195
 #, fuzzy
 msgid "Requested Coach!"
 msgstr "ຄູຜູ້ຝຶກ​ສອນ"
 
-#: utilities/apis/cta-api.php:193 utilities/apis/cta-api.php:222
+#: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
+#: utilities/apis/cta-api.php:239
 #, fuzzy
 msgid "Congratulations"
 msgstr "ຊົມເຊີຍ"
 
-#: utilities/apis/cta-api.php:206 utilities/apis/cta-api.php:208
+#: utilities/apis/cta-api.php:209
+#, fuzzy
+msgid "Connected to Coach!"
+msgstr "​ເຊື່ອມ​ຕໍ່​ກັບ​ຜູ້​ຝຶກ"
+
+#: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 #, fuzzy
 msgid "Create a Training"
 msgstr "1 ການຝຶກອົບຮົມ"
 
-#: utilities/apis/cta-api.php:207
+#: utilities/apis/cta-api.php:224
 #, fuzzy
 msgid "Create a training to help you grow"
 msgstr "ສ້າງການຝຶກອົບຮົມເພື່ອຊ່ວຍໃຫ້ທ່ານເຕີບໂຕ"
 
-#: utilities/apis/cta-api.php:221
+#: utilities/apis/cta-api.php:238
 #, fuzzy
 msgid "Created Training!"
 msgstr "ຂຽນ​ລາຍ​ຊື່ 100 ຄົນ​ຂອງ​ທ່ານ​ຂຶ້ນ​ມາ"
 
-#: utilities/apis/cta-api.php:254
+#: utilities/apis/cta-api.php:271
 #, fuzzy
 msgid "Set your profile to help others know you"
 msgstr "ຕັ້ງໂປຣໄຟລ໌ຂອງທ່ານເພື່ອຊ່ວຍໃຫ້ຄົນອື່ນຮູ້ຈັກທ່ານ"
 
-#: utilities/apis/cta-api.php:268
+#: utilities/apis/cta-api.php:285
 #, fuzzy
 msgid "Profile Set"
 msgstr "​ຂໍ້​ມູນ​ສ່ວນ​ຕົວ"
 
-#: utilities/apis/cta-api.php:282 utilities/apis/cta-api.php:284
+#: utilities/apis/cta-api.php:299 utilities/apis/cta-api.php:301
 #, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: utilities/apis/cta-api.php:283
+#: utilities/apis/cta-api.php:300
 #, fuzzy
 msgid "Create a 3 month plan to help you grow"
 msgstr "ສ້າງແຜນການ 3 ເດືອນເພື່ອຊ່ວຍໃຫ້ທ່ານເຕີບໂຕ"
 
-#: utilities/apis/cta-api.php:297
+#: utilities/apis/cta-api.php:314
 #, fuzzy, php-format
 msgid "%s unlocked"
 msgstr "%s ປົດລັອກແລ້ວ"
 
-#: utilities/apis/cta-api.php:311
+#: utilities/apis/cta-api.php:328
 #, fuzzy
 msgid "3-Month Plan Created"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: utilities/apis/cta-api.php:325 utilities/apis/cta-api.php:327
+#: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
 #, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: utilities/apis/cta-api.php:326
+#: utilities/apis/cta-api.php:343
 #, fuzzy
 msgid "Complete your 3 month plan to help you grow"
 msgstr "ເຮັດສຳເລັດແຜນການ 3 ເດືອນຂອງເຈົ້າເພື່ອຊ່ວຍໃຫ້ທ່ານເຕີບໃຫຍ່"
 
-#: utilities/apis/cta-api.php:340
+#: utilities/apis/cta-api.php:357
 #, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "​ແຜນ​ການ​ສາມ​ເດືອນ"
 
-#: utilities/apis/cta-api.php:385
+#: utilities/apis/cta-api.php:402
 #, fuzzy
 msgid "Join the community"
 msgstr "ການຮ່ວມກັນ"
 
-#: utilities/apis/cta-api.php:401 utilities/apis/cta-api.php:403
+#: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 #, fuzzy
 msgid "Share Spiritual Breathing"
 msgstr "ລົມ​ຫາຍ​ໃຈ​ຝ່າຍ​ຈິດ​ວິນ​ຍານ"
 
-#: utilities/apis/cta-api.php:402
+#: utilities/apis/cta-api.php:419
 #, fuzzy
 msgid "Share Spiritual Breathing with someone"
 msgstr "ລົມ​ຫາຍ​ໃຈ​ຝ່າຍ​ຈິດ​ວິນ​ຍານ"
 
-#: utilities/apis/cta-api.php:416 utilities/apis/cta-api.php:418
+#: utilities/apis/cta-api.php:433 utilities/apis/cta-api.php:435
 #, fuzzy
 msgid "Share Relational Stewardship"
 msgstr "ຜູ້ຮັບມອບໝາຍໃຫ້ເບິ່ງແຍງຄົນໃນສາຍສຳພັນ-ລາຍຊື່100ຄົນ"
 
-#: utilities/apis/cta-api.php:417
+#: utilities/apis/cta-api.php:434
 #, fuzzy
 msgid "Share Relational Stewardship with someone"
 msgstr "ຜູ້ຮັບມອບໝາຍໃຫ້ເບິ່ງແຍງຄົນໃນສາຍສຳພັນ-ລາຍຊື່100ຄົນ"
 
-#: utilities/apis/plans-api.php:134
+#: utilities/apis/plans-api.php:142
 #, fuzzy, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
 msgstr "ເປັນ​ເຈົ້າ​ພາບ​ການ​ຝຶກ​ອົບ​ຮົມ"
 
-#: utilities/apis/plans-api.php:136
+#: utilities/apis/plans-api.php:144
 #, fuzzy, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
@@ -10112,9 +10144,6 @@ msgstr "Messenger"
 
 #~ msgid "example: Denver, CO 80120"
 #~ msgstr "ຍົກຕົວຢ່າງ: Denver, CO 80120"
-
-#~ msgid "Linked Accounts"
-#~ msgstr "ບັນຊີທີ່ເຊື່ອມໂຍງ"
 
 #~ msgid "Welcome to God’s Family!"
 #~ msgstr "ຍິນດີຕ້ອນຮັບສູ່ຄອບຄົວຂອງພຣະເຈົ້າ!"
