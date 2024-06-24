@@ -30,6 +30,7 @@ const makeAPlanSteps = {
     scheduleDecision: 'schedule-decision',
     howOften: 'how-often',
     startDate: 'what-start-date',
+    timeNote: 'time-note',
     location: 'what-location',
     review: 'review-steps',
     name: 'group-name',

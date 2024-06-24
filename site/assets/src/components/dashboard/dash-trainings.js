@@ -24,6 +24,8 @@ export class DashTrainings extends DashPage {
             isEditingTitle: { type: Boolean, attribute: false },
             isSavingTitle: { type: Boolean, attribute: false },
             isSavingSession: { type: Boolean, attribute: false },
+            groupMembersOpen: { type: Boolean, attribute: false },
+            groupDetailsOpen: { type: Boolean, attribute: false },
         };
     }
 
@@ -37,6 +39,8 @@ export class DashTrainings extends DashPage {
         this.sessionToEdit = {}
         this.openDetailStates = {}
         this.filteredItems = []
+        this.groupMembersOpen = false
+        this.groupDetailsOpen = false
 
         this.filterName = 'my-trainings-filter'
         this.filterStatus = ZumeStorage.load(this.filterName)
@@ -62,6 +66,8 @@ export class DashTrainings extends DashPage {
 
     firstUpdated() {
         super.firstUpdated()
+
+        zumeAttachObservers()
     }
 
     updated() {
@@ -118,6 +124,16 @@ export class DashTrainings extends DashPage {
         }
 
         return sessions
+    }
+    getHighlightedDays() {
+        if (!this.sessions) {
+            return []
+        }
+        return this.sessions.map((session) => {
+            return {
+                date: DateTime.fromMillis(session.datetime).toISODate()
+            }
+        })
     }
     getGroupMembers() {
         if (!this.training.participants || !Array.isArray(this.training.participants)) {
@@ -229,23 +245,29 @@ export class DashTrainings extends DashPage {
 
         const date = DateTime.fromMillis(sessionToEdit.datetime)
         sessionToEdit.date = date.toISODate()
-        sessionToEdit.time = date.toFormat('HH:mm')
 
         this.sessionToEdit = sessionToEdit
 
-        document.querySelector('#session-date-picker').value = sessionToEdit.date
-        document.querySelector('#session-time-picker').value = sessionToEdit.time
-
         this.openEditSessionModal()
     }
-    saveSession() {
+    selectDay(event) {
+        const { date } = event.detail
+
+        const newSession = {
+            ...this.sessionToEdit,
+            date
+        }
+        this.sessionToEdit = newSession
+    }
+    saveSession(event) {
         if (this.isSavingSession) {
             return
         }
         this.isSavingSession = true
-        const date = document.querySelector('#session-date-picker').value
-        const time = document.querySelector('#session-time-picker').value
-        const sessionTime = DateTime.fromFormat(`${date} ${time}`, 'y-LL-dd HH:mm')
+
+        const { date } = this.sessionToEdit
+
+        const sessionTime = DateTime.fromFormat(`${date}`, 'y-LL-dd')
         zumeRequest.post( 'plan/edit-session', {
             key: this.training.join_key,
             session_id: this.sessionToEdit.id,
@@ -278,6 +300,44 @@ export class DashTrainings extends DashPage {
     closeEditSessionModal() {
         const modal = document.querySelector('#edit-session-modal')
         jQuery(modal).foundation('close')
+    }
+
+    editSessionDetails() {
+        document.querySelector('#location-note').value = this.training.location_note
+        document.querySelector('#time-of-day-note').value = this.training.time_of_day_note
+
+        this.openEditSessionDetailsModal()
+    }
+    openEditSessionDetailsModal() {
+        const modal = document.querySelector('#edit-session-details-modal')
+        jQuery(modal).foundation('open')
+    }
+    closeEditSessionDetailsModal() {
+        const modal = document.querySelector('#edit-session-details-modal')
+        jQuery(modal).foundation('close')
+    }
+    saveSessionDetails() {
+        if (this.isSavingSession) {
+            return
+        }
+        this.isSavingSession = true
+
+        const locationNote = document.querySelector('#location-note').value
+        const timeNote = document.querySelector('#time-of-day-note').value
+
+        zumeRequest.put(`plan/${this.training.join_key}`, {
+            location_note: locationNote,
+            time_of_day_note: timeNote,
+        })
+            .then((result) => {
+                this.training.location_note = locationNote
+                this.training.time_of_day_note = timeNote
+            })
+            .finally(() => {
+                this.isSavingSession = false
+                this.closeEditSessionDetailsModal()
+            })
+
     }
 
     editTitle() {
@@ -344,7 +404,6 @@ export class DashTrainings extends DashPage {
         }
     }
     closeKebabMenu(sessionId) {
-        console.log(sessionId)
         jQuery(`#kebab-menu-${sessionId}`).foundation('close')
     }
     toggleKebabMenu(event) {
@@ -379,6 +438,12 @@ export class DashTrainings extends DashPage {
         const menu = this.querySelector('#filter-menu')
         jQuery(menu).foundation('close')
     }
+    toggleGroupMembers() {
+        this.groupMembersOpen = !this.groupMembersOpen
+    }
+    toggleGroupDetails() {
+        this.groupDetailsOpen = !this.groupDetailsOpen
+    }
 
     renderListItem(session) {
         const { id, name, datetime, completed } = session
@@ -406,7 +471,7 @@ export class DashTrainings extends DashPage {
                     <div class="list__secondary" data-align-start>
                         <div class="d-flex justify-content-center align-items-center gap--2">
                             <!-- TODO: only use the YY if it's not in the current year -->
-                            <span>${datetime > 0 ? moment(datetime).format("MMM Do, YY") : jsObject.translations.not_scheduled}</span>
+                            <span>${datetime > 0 ? DateTime.fromMillis(datetime).toFormat("DDD") : jsObject.translations.not_scheduled}</span>
                             <button class="icon-btn" data-toggle="kebab-menu-${id}" @click=${this.toggleKebabMenu}>
                                 <span class="icon z-icon-kebab brand-light"></span>
                             </button>
@@ -610,11 +675,13 @@ export class DashTrainings extends DashPage {
                     ${this.loading && !this.error ? html`<span class="loading-spinner active"></span>` : '' }
                     ${!this.loading && !this.error && this.code !== 'teaser' ? html`
                                 <div class="card | group-members | grow-0">
-                                    <button class="f-0 f-medium d-flex align-items-center gap--2 black">
+                                    <button
+                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        @click=${this.toggleGroupMembers}
+                                    >
                                         <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
                                     </button>
-                                    <div class="collapse" data-state="open">
-                                        <!-- The functionality of the .collapse class needs to be refactored from dash-progress.js toggleDetails function to be re-used here -->
+                                    <div class="collapse" ?data-open=${this.groupMembersOpen}>
                                         ${!this.loading && this.groupMembers && this.groupMembers.length > 0
                                             ? html`
                                                 <ol class="ps-1">
@@ -631,6 +698,31 @@ export class DashTrainings extends DashPage {
                                         ${jsObject.translations.invite_friends}
                                     </button>
                                 </div>
+                                <div class="card | group-members | grow-0">
+                                    <button
+                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        @click=${this.toggleGroupDetails}
+                                    >
+                                        <span class="icon z-icon-overview brand-light"></span> ${jsObject.translations.group_details}
+                                    </button>
+                                    <div class="collapse" ?data-open=${this.groupDetailsOpen}>
+                                        <div class="stack--2">
+                                            <p class="text-left"><span class="f-medium">${jsObject.translations.location}:</span> ${this.training.location_note}</p>
+                                            <p class="text-left"><span class="f-medium">${jsObject.translations.time}:</span> ${this.training.time_of_day_note}</p>
+                                            ${
+                                                this.isGroupLeader() ? html`
+                                                    <button
+                                                        @click=${this.editSessionDetails}
+                                                        class="btn brand tight mt--2"
+                                                    >
+                                                        ${jsObject.translations.edit}
+                                                    </button>
+                                                ` : ''
+                                            }
+                                        </div>
+                                    </div>
+
+                                </div>
                             ` : ''
                     }
                     <dash-cta></dash-cta>
@@ -645,25 +737,13 @@ export class DashTrainings extends DashPage {
                         <h2>${jsObject.translations.edit}:</h2>
                         <h3 class="h2 brand-light">${this.sessionToEdit?.name}</h3>
                     </div>
-                    <div class="cluster justify-content-center gapy-0">
-                        <input
-                            id="session-date-picker"
-                            type="date"
-                            name="date"
-                            class="fit-content m0"
-                            onclick="this.showPicker()"
-                        >
-                        <input
-                            id="session-time-picker"
-                            type="time"
-                            name="time"
-                            class="fit-content m0"
-                            min="00:00"
-                            max="23:55"
-                            step="300"
-                            onclick="this.showPicker()"
-                        >
-                    </div>
+                    <calendar-select
+                        style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
+                        showToday
+                        .selectedDays=${this.sessionToEdit?.date ? [{ date: this.sessionToEdit.date }] : []}
+                        .highlightedDays=${this.getHighlightedDays()}
+                        @day-added=${this.selectDay}
+                    ></calendar-select>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
                             class="btn tight"
@@ -677,6 +757,44 @@ export class DashTrainings extends DashPage {
                         <button
                             class="btn outline tight"
                             @click=${this.cancelEditingSession}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
+                        >
+                            ${jsObject.translations.cancel}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal small" id="edit-session-details-modal" data-reveal data-v-offset="20">
+                <button class="ms-auto close-btn" data-close aria-label=${jsObject.translations.close} type="button">
+                        <span class="icon z-icon-close"></span>
+                </button>
+                <div class="stack">
+                    <div class="d-flex gap-0 flex-wrap justify-content-center">
+                        <h2>${jsObject.translations.edit}:</h2>
+                        <h3 class="h2 brand-light">${jsObject.translations.group_details}</h3>
+                    </div>
+                    <div>
+                        <label for="location-note">${jsObject.translations.location}</label>
+                        <input class="input" type="text" id="location-note"/>
+                    </div>
+                    <div>
+                        <label for="time-of-day-note">${jsObject.translations.time}</label>
+                        <input class="input" type="text" id="time-of-day-note"/>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center gap--1">
+                        <button
+                            class="btn tight"
+                            @click=${this.saveSessionDetails}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
+                        >
+                            ${jsObject.translations.save}
+                            <span class="loading-spinner ${this.isSavingSession ? 'active' : ''}"></span>
+                        </button>
+                        <button
+                            class="btn outline tight"
+                            @click=${this.closeEditSessionDetailsModal}
                             ?disabled=${this.isSavingSession}
                             aria-disabled=${this.isSavingSession ? 'true' : 'false'}
                         >

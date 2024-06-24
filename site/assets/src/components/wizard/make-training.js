@@ -27,6 +27,7 @@ export class MakeTraining extends LitElement {
              */
             variant: { type: String },
             state: { attribute: false },
+            state: { type: String, attribute: false },
             selectedDays: { type: Array, attribute: false },
             completedSteps: { type: Array, attribute: false },
             calendarStart: { type: String, attribute: false },
@@ -47,6 +48,7 @@ export class MakeTraining extends LitElement {
         this.variant = ''
         this.t = {}
         this.state = {}
+        this.timeNote = ''
         this.errorMessage = ''
         this.message = ''
         this.loading = false
@@ -56,7 +58,9 @@ export class MakeTraining extends LitElement {
         this.selectedDays = []
         this.completedSteps = []
         this.calendarStart = DateTime.now().startOf('month').toISODate()
+        this.calendarStartMinusOneYear = DateTime.now().minus({ year: 1 }).startOf('month').toISODate()
         this.calendarEnd = DateTime.now().plus({ month: 2 }).endOf('month').toISODate()
+        this.calendarEndTwoYears = DateTime.now().plus({ years: 2 }).endOf('month').toISODate()
         this.calendarView = 'all'
         this.scheduleView = 'calendar'
 }
@@ -67,7 +71,7 @@ export class MakeTraining extends LitElement {
             [Steps.scheduleDecision]: 'yes',
             [Steps.howOften]: 'weekly',
             [Steps.location]: '',
-            [Steps.startDate]: { date: DateTime.now().toISODate() },
+            [Steps.startDate]: DateTime.now().toISODate(),
         }
         if (properties.has('variant')) {
             this.state = this.stateManager.get(this.variant) || defaultState[this.variant]
@@ -89,7 +93,7 @@ export class MakeTraining extends LitElement {
                 this.variant = Steps.review
                 this.stateManager.add(Steps.howManySessions, '10')
                 this.stateManager.add(Steps.howOften, 'weekly')
-                this.stateManager.add(Steps.startDate, { date: '2024-07-12' })
+                this.stateManager.add(Steps.startDate, '2024-07-12')
                 this._buildSelectedDays()
             }
         }
@@ -160,11 +164,14 @@ export class MakeTraining extends LitElement {
     }
 
     _handleChange(event) {
+        if (event.target.name === 'time') {
+            this.timeNote = event.target.value
+            this.stateManager.add(Steps.timeNote, this.timeNote)
+            return
+        }
+
         if (event.target.type === 'text') {
             this.state = event.target.value
-        }
-        if (['date', 'time'].includes(event.target.type)) {
-            this.state = {...this.state, [event.target.name]: event.target.value }
         }
 
         this.stateManager.add(this.variant, this.state)
@@ -174,7 +181,7 @@ export class MakeTraining extends LitElement {
 
         const howManySessions = this.stateManager.get(Steps.howManySessions)
         const howOften = this.stateManager.get(Steps.howOften)
-        const startDate = this.stateManager.get(Steps.startDate)?.date
+        const startDate = this.stateManager.get(Steps.startDate)
 
         if (this.selectedDays.length > 0) {
             return
@@ -208,7 +215,7 @@ export class MakeTraining extends LitElement {
     }
     _buildSet(days) {
         const howManySessions = this.stateManager.get(Steps.howManySessions)
-        const startTime = this.stateManager.get(Steps.startDate)?.time
+        const startTime = this.stateManager.get(Steps.timeNote)
         const location = this.stateManager.get(Steps.location)
 
         /* TODO: create localised time_of_day_note from startDate and startTime */
@@ -324,6 +331,16 @@ export class MakeTraining extends LitElement {
     createId() {
         return sha256(Math.random(0,10000)).slice(0, 6)
     }
+    selectStartDate(event) {
+        const { date } = event.detail
+
+        this.state = date
+        this.stateManager.add(Steps.startDate, this.state)
+    }
+    clearStartDate(event) {
+        this.state = ''
+        this.stateManager.remove(this.variant)
+    }
     addDate(event) {
         const { date } = event.detail
 
@@ -428,14 +445,20 @@ export class MakeTraining extends LitElement {
                     <div class="stack">
                         <span class="z-icon-start-date brand-light f-7"></span>
                         <h2>${this.t.question_when_will_you_start}</h2>
-                        <div class="cluster justify-content-center gapy-0">
-                            <input type="date" name="date" class="fit-content m0" @change=${this._handleChange} value=${this.state.date} onclick="this.showPicker()" >
-                            ${
-                                this.state.date ? html`
-                                    <input type="time" name="time" class="fit-content m0" @change=${this._handleChange} value=${this.state.time} min="00:00" max="23:55" step="300" onclick="this.showPicker()" />
-                                ` : ''
-                            }
-                        </div>
+                        <calendar-select
+                            style='--primary-color: var(--z-brand-light); --hover-color: var(--z-brand-fade)'
+                            showToday
+                            showClearButton
+                            showTodayButton
+                            .translations=${{
+                                clear: this.t.clear,
+                                today: this.t.today,
+                            }}
+                            .selectedDays=${typeof this.state === 'string' && this.state ? [{ date: this.state}] : []}
+                            @day-added=${this.selectStartDate}
+                            @clear=${this.clearStartDate}
+                        ></calendar-select>
+                        <input type="text" name="time" placeholder=${this.t.time} @change=${this._handleChange} value=${this.timeNote} />
                         <div class="stack mx-auto" data-fit-content>
                             <button class="btn fit-content mx-auto" @click=${this._handleDone}>${this.t.next}</button>
                         </div>
@@ -490,6 +513,10 @@ export class MakeTraining extends LitElement {
                                         .selectedDays=${this.selectedDays.sort(this.sortDays)}
                                         view=${this.calendarView}
                                         showToday
+                                        .translations=${{
+                                            clear: this.t.clear,
+                                            today: this.t.today,
+                                        }}
                                         @day-added=${this.addDate}
                                         @day-removed=${this.removeDate}
                                         @calendar-extended=${this.updateCalendarEnd}
@@ -540,8 +567,8 @@ export class MakeTraining extends LitElement {
                         howManySessions=${this.stateManager.get(Steps.howManySessions)}
                         scheduleDecision=${this.stateManager.get(Steps.scheduleDecision)}
                         howOften=${this.stateManager.get(Steps.howOften)}
-                        time=${this.stateManager.get(Steps.startDate)?.time}
-                        date=${this.stateManager.get(Steps.startDate)?.date}
+                        time=${this.stateManager.get(Steps.timeNote)}
+                        date=${this.stateManager.get(Steps.startDate)}
                         whatLocation=${this.stateManager.get(Steps.location)}
                         .display=${this.completedSteps}
                     ></review-steps>

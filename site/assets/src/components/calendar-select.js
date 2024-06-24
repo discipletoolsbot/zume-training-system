@@ -1,7 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { range } from 'lit/directives/range.js'
 import { map } from 'lit/directives/map.js'
-import { DateTime } from 'luxon'
+import { DateTime, Info } from 'luxon'
 
 export class CalendarSelect extends LitElement {
     static styles = [
@@ -11,18 +11,36 @@ export class CalendarSelect extends LitElement {
             container-type: inline-size;
             container-name: calendar;
           }
+          button {
+            background-color: transparent;
+            color: inherit;
+            font-size: inherit;
+            font-family: inherit
+          }
+          button:hover {
+            color: inherit
+          }
           .calendar-wrapper {
             --cp-color: var(--primary-color, #489bfa);
             --cp-color-darker: var(--primary-darker, #387cc9);
             --cp-hover-color: var(--hover-color, #4676fa1a);
             --cp-grid-min-size: var(--grid-min-size, 190px);
-
+            font-size: min(6cqw, 18px);
+          }
+          .calendar-footer {
+            margin-inline: 5%;
+          }
+          .repel {
+            display: flex;
+            justify-content: space-between;
+          }
+          .grid {
             display: grid;
             grid-gap: 1rem;
             grid-auto-rows: 1fr;
           }
           @supports (width: min(250px, 100%)) {
-            .calendar-wrapper {
+            .grid {
               grid-template-columns: repeat(auto-fit, minmax(min(var(--cp-grid-min-size), 100%), 1fr));
             }
           }
@@ -65,6 +83,9 @@ export class CalendarSelect extends LitElement {
             border-color: var(--cp-color);
             background-color: var(--cp-hover-color);
           }
+          .highlighted-day {
+            background-color: var(--cp-hover-color);
+          }
           .selected-day {
             color: white;
             background-color: var(--cp-color);
@@ -79,7 +100,7 @@ export class CalendarSelect extends LitElement {
           .month-title {
             display: flex;
             justify-content: space-between;
-            font-size: 1.2rem;
+            font-size: 1.1em;
             font-weight: 600;
             grid-column: 2 / 7;
             margin-block: 0;
@@ -94,29 +115,34 @@ export class CalendarSelect extends LitElement {
             justify-content: center;
           }
           .month-next svg {
-            width: 1.5rem;
+            width: 1.5em;
           }
-          button {
-            padding: 0.25rem 0.5rem;
+          [dir="rtl"] .month-next svg {
+            transform: rotate(180deg);
+          }
+          .button {
+            padding: 0.25em 0.5em;
             color: rgb(254, 254, 254);
-            font-size: 1rem;
+            font-size: 1em;
             border-radius: 5px;
             border: 1px solid transparent;
             font-weight: normal;
-            padding: 0.85rem 1rem;
             cursor: pointer;
             background-color: var(--cp-color);
             line-height: 1;
             transition: all 50ms linear;
           }
-          button:not([disabled]):hover {
+          .button:not([disabled]):hover {
             background-color: transparent;
             border-color: var(--cp-color);
             color: var(--cp-color);
           }
-          button[disabled] {
+          .button[disabled] {
             opacity: 0.25;
             cursor: default;
+          }
+          .button.small {
+            padding: 0.4rem 0.5rem;
           }
           .add-month-button {
             display: flex;
@@ -148,21 +174,41 @@ export class CalendarSelect extends LitElement {
             startDate: { type: String },
             endDate: { type: String },
             selectedDays: { type: Array },
+            highlightedDays: { type: Array },
             view: { type: String },
+            translations: { type: Object },
             showToday: { type: Boolean },
+            showTodayButton: { type: Boolean },
+            showClearButton: { type: Boolean },
             monthToShow: { attribute: false },
         }
     }
 
     constructor() {
         super();
-        this.monthToShow = null;
+        this.monthToShow = DateTime.now();
         this.startDate = ''
         this.endDate = ''
         this.selectedDays = []
+        this.highlightedDays = []
         this.showToday = false
+        this.showTodayButton = false
+        this.showClearButton = false
         this.today = DateTime.now().toISODate()
         this.view = 'slider'
+        this.translations = {
+            'clear': 'Clear',
+            'today': 'Today',
+        }
+        const htmlElement = document.querySelector('html')
+        this.isRtl = htmlElement.getAttribute('dir') === 'rtl'
+    }
+
+    willUpdate(properties) {
+        if (properties.has('selectedDays') && this.selectedDays.length > 0) {
+            const firstSelectedDay = this.selectedDays[0]
+            this.monthToShow = DateTime.fromFormat(`${firstSelectedDay.date}`, 'y-LL-dd')
+        }
     }
 
     nextView(month){
@@ -170,7 +216,11 @@ export class CalendarSelect extends LitElement {
         this.monthToShow = month
     }
 
-    selectDay(event, date){
+    handleSelectDay(event, date){
+        const target = event.target
+        this.selectDay(date, target)
+    }
+    selectDay(date, target) {
         const days = this.selectedDays.filter((day) => day.date === date)
         if (days.length === 0) {
             this.dispatchEvent(new CustomEvent('day-added', { detail: { date } }));
@@ -180,13 +230,15 @@ export class CalendarSelect extends LitElement {
             })
         }
         this.shadowRoot.querySelectorAll('.selected-time').forEach(element => element.classList.remove('selected-time'))
-        event.target.classList.add('selected-time');
+        if (target) {
+            target.classList.add('selected-time');
+        }
     }
 
     getDaysOfTheWeekInitials(localeName = 'en-US', weekday = 'long') {
         const now = new Date()
         const dayInMilliseconds = 86400000
-        const format = new Intl.DateTimeFormat(localeName, { weekday }).format
+        const format = (millis) => DateTime.fromMillis(millis).toLocaleString({ weekday })
         return [...Array(7).keys()]
             .map((day) => format(new Date().getTime() - ( now.getDay() - day  ) * dayInMilliseconds  ))
     }
@@ -194,7 +246,7 @@ export class CalendarSelect extends LitElement {
     buildCalendarDays(localeName = 'en-US', monthDate){
         const monthStart = monthDate.startOf('month').startOf('day');
         const monthDays = []
-        const format = new Intl.DateTimeFormat(localeName, { day: 'numeric' }).format
+        const format = (millis) => DateTime.fromMillis(millis).toLocaleString({ day: 'numeric' })
         for ( let i = 0; i < monthDate.daysInMonth; i++ ){
             const dayDate = monthStart.plus({ days: i })
             const nextDay = dayDate.plus({ days: 1 })
@@ -216,9 +268,13 @@ export class CalendarSelect extends LitElement {
         this.endDate = newEndDate
     }
 
+    isHighlighted(date) {
+        const days = this.highlightedDays.find((day) => day.date === date)
+        return !!days
+    }
+
     isSelected(date) {
         const days = this.selectedDays.find((day) => day.date === date)
-
         return !!days
     }
 
@@ -241,21 +297,34 @@ export class CalendarSelect extends LitElement {
             )}
             ${
                 monthDays.map(day => html`
-                    <div
-                        class="cell day ${day.disabled ? 'disabled':''} ${this.isSelected(day.key) ? 'selected-day'  : ''} ${this.showToday && day.key === this.today ? 'today' : ''}"
+                    <button
+                        class="cell day ${day.disabled ? 'disabled':''} ${this.isHighlighted(day.key) ? 'highlighted-day' : ''} ${this.isSelected(day.key) ? 'selected-day'  : ''} ${this.showToday && day.key === this.today ? 'today' : ''}"
                         data-day=${day.key}
-                        @click=${event => !day.disabled && this.selectDay(event, day.key)}
+                        @click=${event => !day.disabled && this.handleSelectDay(event, day.key)}
                     >
                         ${day.formatted}
-                    </div>
+                    </button>
                 `
             )}
         `
     }
 
+    clearCalendar() {
+        this.dispatchEvent(new CustomEvent('clear'))
+        this.shadowRoot.querySelectorAll('.selected-time').forEach((element) => {
+            element.classList.remove('selected-time')
+        })
+    }
+    selectToday() {
+        this.monthToShow = DateTime.now({ locale: navigator.language})
+        const nowDate = this.monthToShow.toISODate()
+        const target = this.shadowRoot.querySelector(`.day[data-day="${nowDate}"]`)
+        this.selectDay(nowDate, target)
+    }
+
     renderSlider() {
         const now = DateTime.now({ locale: navigator.language })
-        const monthDate = this.monthToShow || DateTime.max(now, DateTime.fromISO(this.startDate))
+        const monthDate = this.monthToShow || DateTime.fromISO(this.startDate)
         const monthStart = monthDate.startOf('month')
 
 
@@ -264,11 +333,11 @@ export class CalendarSelect extends LitElement {
 
         return html`
 
-            <div class="calendar-wrapper">
+            <div class="calendar-wrapper" dir=${this.isRtl ? 'rtl' : 'ltr'}>
                 <div class="calendar">
                     <button
-                        class="month-next"
-                        ?disabled=${monthStart < now}
+                        class="button month-next"
+                        ?disabled=${this.startDate ? monthStart <= DateTime.fromISO(this.startDate).startOf('month') : false}
                         @click=${() => this.nextView(previousMonth)}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -279,8 +348,8 @@ export class CalendarSelect extends LitElement {
                         ${monthDate.toFormat('LLLL y')}
                     </h3>
                     <button
-                        class="month-next"
-                        ?disabled=${nextMonth > DateTime.fromISO(this.endDate)}
+                        class="button month-next"
+                        ?disabled=${this.endDate ? nextMonth > DateTime.fromISO(this.endDate) : false}
                         @click=${() => this.nextView(nextMonth)}
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
@@ -289,6 +358,32 @@ export class CalendarSelect extends LitElement {
                     </button>
                     ${this.renderCalendar(monthDate)}
                 </div>
+                ${ this.showClearButton || this.showTodayButton ? html`
+                        <div class="calendar-footer repel">
+                            ${
+                                this.showClearButton ? html`
+                                    <button
+                                        class="button small"
+                                        @click=${() => this.clearCalendar()}
+                                    >
+                                        ${this.translations.clear}
+                                    </button>
+                                ` : ''
+                            }
+                            ${
+                                this.showTodayButton ? html`
+                                    <button
+                                        class="button small"
+                                        @click=${() => this.selectToday()}
+                                    >
+                                        ${this.translations.today}
+                                    </button>
+                                ` : ''
+                            }
+                        </div>
+                    ` : ''
+                }
+
             </div>
         `
     }
@@ -309,7 +404,7 @@ export class CalendarSelect extends LitElement {
             }
 
             return html`
-                <div class="calendar-wrapper">
+                <div class="calendar-wrapper grid" dir=${this.isRtl ? 'rtl' : 'ltr'}>
                     ${
                         map( range( i ), (index) => {
                             const currentMonth = monthStart.plus({ months: index })

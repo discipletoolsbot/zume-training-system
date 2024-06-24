@@ -161,15 +161,13 @@ export class ReviewSteps extends LitElement {
                 return html`
                     <div class="stack--1">
                         <div class="switcher switcher-width-15 justify-content-between gap--3">
-                            ${this.date === '' && this.time === ''
+                            ${this.date === ''
                                 ? html`<span></span>`
                                 : html`
-                                    <span>${(new Date(`${this.date} ${this.time === 'not-set' ? '' : this.time}`)).toLocaleString(navigator.language || 'en-US', {
+                                    <span>${(new Date(this.date)).toLocaleString(navigator.language || 'en-US', {
                                         day: "numeric",
                                         month: "short",
                                         year: "numeric",
-                                        hour: "2-digit",
-                                        minute: "2-digit",
                                     })}</span>`
                             }
                             <span class="d-flex justify-flex-end">
@@ -179,9 +177,29 @@ export class ReviewSteps extends LitElement {
                                     @click=${this.handleChange}
                                 >
                                     ${
-                                        this.date !== '' || this.time !== ''
+                                        this.date !== ''
                                             ? this.t.change
                                             : this.t.set_start_date
+                                    }
+                                </button>
+                            </span>
+                        </div>
+                        <div class="switcher switcher-width-15 justify-content-between gap--3">
+                            ${this.time === ''
+                                ? html`<span></span>`
+                                : html`
+                                    <span>${this.time}</span>`
+                            }
+                            <span class="d-flex justify-flex-end">
+                                <button
+                                    class="btn small no-outline tight"
+                                    data-step=${Steps.startDate}
+                                    @click=${this.handleChange}
+                                >
+                                    ${
+                                        this.time !== ''
+                                            ? this.t.change
+                                            : this.t.set_start_time
                                     }
                                 </button>
                             </span>

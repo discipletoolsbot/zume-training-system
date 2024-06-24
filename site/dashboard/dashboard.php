@@ -182,6 +182,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'communications_email' => __( 'Communications Email', 'zume' ),
             'city' => __( 'City', 'zume' ),
             'no_locations' => __( 'No Locations found', 'zume' ),
+            'location' => __( 'Location', 'zume' ),
+            'time' => __( 'Time', 'zume' ),
             'language' => __( 'Language', 'zume' ),
             'save' => __( 'Save', 'zume' ),
             'edit_profile' => __( 'Edit Profile', 'zume' ),
@@ -251,6 +253,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'previous_slide' => __( 'Previous Slide', 'zume' ),
             'next_slide' => __( 'Next Slide', 'zume' ),
             'group_members' => __( 'Group Members', 'zume' ),
+            'group_details' => __( 'Group Details', 'zume' ),
             'mark_completed' => __( 'Mark Completed', 'zume' ),
             'session_x' => __( 'Session %d', 'zume' ),
             'start_session' => __( 'Start Session', 'zume' ),
@@ -291,6 +294,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'signal' => __( 'Signal', 'zume' ),
             'telegram' => __( 'Telegram', 'zume' ),
             'messenger' => __( 'Facebook Messenger', 'zume' ),
+            'clear' => __( 'Clear', 'zume' ),
+            'today' => __( 'Today', 'zume' ),
         ];
     }
 

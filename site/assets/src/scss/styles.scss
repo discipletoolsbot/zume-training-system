@@ -13,6 +13,7 @@
 
 @import 'composition/center';
 @import 'composition/cover';
+@import 'composition/repel';
 @import 'composition/stack';
 @import 'composition/box';
 @import 'composition/cluster';
@@ -769,6 +770,10 @@ input::-webkit-calendar-picker-indicator {
     padding: 0.1rem 0.6rem;
     background-color: color('brand-fade');
     color: color('brand-light');
+}
+.zume-date-picker {
+  max-width: 250px;
+  width: 100%;
 }
 
 @media (min-width: $break-lg) {

@@ -191,6 +191,12 @@ class Zume_Plans_Endpoints
         if ( isset( $params['visibility'] ) ) {
             $fields['visibility'] = $params['visibility'];
         }
+        if ( isset( $params['location_note'] ) ) {
+            $fields['location_note'] = $params['location_note'];
+        }
+        if ( isset( $params['time_of_day_note'] ) ) {
+            $fields['time_of_day_note'] = $params['time_of_day_note'];
+        }
 
         $result = DT_Posts::update_post( self::$post_type, $plan_id, $fields, true, false );
 
