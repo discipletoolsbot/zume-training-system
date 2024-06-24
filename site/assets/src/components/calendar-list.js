@@ -87,20 +87,18 @@ export class CalendarList extends LitElement {
                 }
                 </ol>
 
-                <div class="d-flex align-items-center gap-0 mx-auto">
-                    <div class="cluster">
-                        <div>${this.date ? DateTime.fromISO(this.date).toFormat('DDDD') : ''}</div>
+                <div class="cluster align-items-center gap-0 mx-auto">
+                    <div class="mx-auto">${this.date ? DateTime.fromISO(this.date).toFormat('DDDD') : ''}</div>
+                    <div class="cluster mx-auto">
                         <button
                             data-toggle="date-picker"
                             class="icon-btn brand-light f-3"
                             @click=${this.openDatePicker}
                         ><span class="icon z-icon-start-date"></span></button>
+                        <button class="btn tight" @click=${this.addDate}>
+                            ${this.t.add}
+                        </button>
                     </div>
-
-
-                    <button class="btn tight" @click=${this.addDate}>
-                        ${this.t.add}
-                    </button>
                 </div>
                 <div
                     class="dropdown-pane zume-date-picker ${this.datePickerOpen ? 'is-open' : ''}"
