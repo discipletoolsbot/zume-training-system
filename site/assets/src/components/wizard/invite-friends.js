@@ -86,7 +86,7 @@ export class InviteFriends extends LitElement {
                 continue
             }
 
-            if (DateTime.fromSeconds(date.timestamp) > now) {
+            if (DateTime.fromSeconds(date.timestamp).endOf('day') > now.startOf('day')) {
                 return DateTime.fromSeconds(date.timestamp).toISODate()
             }
         }

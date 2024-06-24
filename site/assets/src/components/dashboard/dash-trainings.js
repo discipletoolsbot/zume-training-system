@@ -452,6 +452,13 @@ export class DashTrainings extends DashPage {
         const slideKey = this.getSlideKey(id)
         const trainingItems = zumeTrainingPieces[numberOfSessions][slideKey]?.pieces ?? []
 
+        const dateFormatOptions = {
+            month: "short",
+            day: "numeric",
+        }
+        if (DateTime.fromMillis(datetime).year !== DateTime.now().year) {
+            dateFormatOptions.year = "2-digit"
+        }
         return html`
             <li class="list__item" data-no-flex @click=${() => this.toggleDetails(id)}>
                 <div class="switcher | switcher-width-20 gapy0">
@@ -471,7 +478,7 @@ export class DashTrainings extends DashPage {
                     <div class="list__secondary" data-align-start>
                         <div class="d-flex justify-content-center align-items-center gap--2">
                             <!-- TODO: only use the YY if it's not in the current year -->
-                            <span>${datetime > 0 ? DateTime.fromMillis(datetime).toFormat("DDD") : jsObject.translations.not_scheduled}</span>
+                            <span>${datetime > 0 ? DateTime.fromMillis(datetime).toLocaleString(dateFormatOptions) : jsObject.translations.not_scheduled}</span>
                             <button class="icon-btn" data-toggle="kebab-menu-${id}" @click=${this.toggleKebabMenu}>
                                 <span class="icon z-icon-kebab brand-light"></span>
                             </button>
