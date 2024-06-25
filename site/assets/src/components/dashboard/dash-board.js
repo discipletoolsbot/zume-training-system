@@ -220,9 +220,15 @@ export class DashBoard extends navigator(router(LitElement)) {
         return route.pattern
     }
     makeTrainingHref(code) {
-        const pattern = this.makeHrefRoute(RouteNames.myTraining)
+        const routes = DashBoard.routes
 
-        return pattern.replace(':code', code)
+        const route = routes.find(({ name }) => name === RouteNames.myTraining)
+
+        if (!route) {
+            return ''
+        }
+
+        return route.pattern.replace(':code', code)
     }
 
     renderRoute() {
