@@ -3334,5 +3334,5 @@ ${this.training.zoom_link_note}
                 background-color: var(--ps-primary-color);
                 transition: width 100ms linear;
             }
-        `]);customElements.define("progress-slider",Gn);jQuery(document).ready(()=>{cookieStore.get("zume_language").then(i=>{const t=i.value||"en";let e=t;t.includes("_")?e=t.replace("_","-"):t.length===4&&(e=t.slice(0,2)+"-"+t.slice(2)),T.defaultLocale=e})});
+        `]);customElements.define("progress-slider",Gn);jQuery(document).ready(()=>{cookieStore.get("zume_language").then(t=>{const e=t.value||"en";let s=e;e.includes("_")?s=e.replace("_","-"):e.length===4&&(s=e.slice(0,2)+"-"+e.slice(2)),T.defaultLocale=s}),document.querySelectorAll(".video-player").forEach(t=>{const e=t.getAttribute("data-video-src"),s=t.querySelector("iframe"),n=t.querySelector(".video-trigger");if(!n||!s||!e){console.log(".video-player is missing something (.video-trigger || iframe || data-video-src)");return}n.addEventListener("click",a);function a(r){s.src=e,n.style.display="none"}})});
 //# sourceMappingURL=main-bundle.js.map
