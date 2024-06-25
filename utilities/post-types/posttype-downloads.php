@@ -707,36 +707,36 @@ class Zume_Downloads_Post_Type
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['key_10_session'] = array(
-            'name'        => 'KEY 10 Session',
+        $fields['pdf_10_session'] = array(
+            'name'        => 'PDF 10 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
         $fields['ppx_20_session'] = array(
-            'name'        => 'PPX 10 Session',
+            'name'        => 'PPX 20 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['key_20_session'] = array(
-            'name'        => 'KEY 10 Session',
+        $fields['pdf_20_session'] = array(
+            'name'        => 'PDF 20 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['ppx_intense_session'] = array(
-            'name'        => 'PPX 10 Session',
+        $fields['ppx_intensive'] = array(
+            'name'        => 'PPX Intensive',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['key_intense_session'] = array(
-            'name'        => 'KEY 10 Session',
+        $fields['pdf_intensive'] = array(
+            'name'        => 'PDF Intensive',
             'description' => '',
             'type'        => 'link',
             'default'     => '',

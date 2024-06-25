@@ -6228,6 +6228,7 @@ if ( ! class_exists('Zume_System_Log_API') ) {
                 $data_item['hash'] = hash('sha256', maybe_serialize($data_item) . time());
                 $added_log[] = self::insert($data_item, true, false);
             }
+
             /**
              * business logic:
              * - if a user completes a plan, create a made_post_training_plan log entry
@@ -6273,7 +6274,9 @@ if ( ! class_exists('Zume_System_Log_API') ) {
                     $data_item['hash'] = hash('sha256', maybe_serialize($data_item) . time());
                     $added_log[] = self::insert($data_item, true, false);
                 }
-            } /**
+            }
+
+            /**
              * business logic:
              * - if a user submits a training HOST log, create low level training log entries if needed
              */
