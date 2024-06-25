@@ -1631,11 +1631,18 @@ ${this.training.zoom_link_note}
                 </div>
             </div>
         `}createRenderRoot(){return this}}customElements.define("dash-progress",Bo);class Go extends Ae{constructor(){super(b.training)}createRenderRoot(){return this}}customElements.define("dash-training",Go);class Yo extends ut{static get properties(){return{showTeaser:{type:Boolean},code:{type:String},loading:{type:Boolean,attribute:!1},error:{type:String,attribute:!1},training:{type:Object,attribute:!1},sessions:{type:Array,attribute:!1},sessionToEdit:{type:Object,attribute:!1},openDetailStates:{type:Object,attribute:!1},filterStatus:{type:String,attribute:!1},filteredItems:{type:Array,attribute:!1},isEditingTitle:{type:Boolean,attribute:!1},isSavingTitle:{type:Boolean,attribute:!1},isSavingSession:{type:Boolean,attribute:!1},groupMembersOpen:{type:Boolean,attribute:!1},groupDetailsOpen:{type:Boolean,attribute:!1}}}constructor(){super(),this.showTeaser=!1,this.loading=!1,this.isEditingTitle=!1,this.error="",this.route=k.getRoute(b.myTraining),this.sessionToEdit={},this.openDetailStates={},this.filteredItems=[],this.groupMembersOpen=!1,this.groupDetailsOpen=!1,this.filterName="my-trainings-filter",this.filterStatus=ZumeStorage.load(this.filterName),this.renderListItem=this.renderListItem.bind(this)}connectedCallback(){super.connectedCallback(),this.code!=="teaser"&&this.getTraining()}willUpdate(t){t.has("code")&&this.code!=="teaser"&&this.getTraining()}firstUpdated(){super.firstUpdated(),es()}updated(){jQuery(document).foundation(),es()}getTraining(){return this.loading=!0,makeRequest("GET",`plan/${this.code}`,{},"zume_system/v1").then(t=>{if(t.error_code)throw new Error(t.error_code);this.training=t}).then(()=>{this.refreshSessions(),this.groupMembers=this.getGroupMembers()}).fail(t=>{this.error=t.message}).always(()=>{this.loading=!1})}refreshSessions(t){t&&(this.training.completed_sessions=t),this.sessions=this.getSessions(),this.currentSession=this.getCurrentSession(),this.filteredItems=this.filterItems(this.filterStatus,this.sessions)}getSessions(){const t=this.getTrainingType(),e=this.getNumberOfSessions(),s=[];for(let n=1;n<e+1;n++){const a=n<10?`0${n}`:`${n}`,r=t+"_"+a,o=this.training[r];s.push({id:r,name:jsObject.translations.session_x.replace("%d",n),datetime:o?Number(o.timestamp)*1e3:0,completed:this.training.completed_sessions.includes(r)})}return s}getHighlightedDays(){return this.sessions?this.sessions.map(t=>({date:f.fromMillis(t.datetime).toISODate()})):[]}getGroupMembers(){if(!this.training.participants||!Array.isArray(this.training.participants))return[];const t=[];return this.training.participants.forEach(e=>{t.push({id:e.ID,name:e.post_title})}),t}getTrainingType(){return this.training.set_type.key}getSessionNumber(t){const e=this.getTrainingType()+"_";return t.slice(e.length)}getSessionUrl(t){const e=this.getTrainingType(),s=this.getSessionNumber(t);let n="";e==="set_a"&&(n=jsObject.urls.launch_ten_session_course),e==="set_b"&&(n=jsObject.urls.launch_twenty_session_course),e==="set_c"&&(n=jsObject.urls.launch_intensive_session_course);const a=new URL(n);return a.searchParams.set("session",s),a.href}getNumberOfSessions(){switch(this.training.set_type.key){case"set_a":return 10;case"set_b":return 20;case"set_c":return 5}}getSlideKey(t){const e=t.split("_");if(e.length!==3)return"";switch(e[1]){case"a":return`s1_${Number(e[2])}_1`;case"b":return`s2_${Number(e[2])}_1`;case"c":return`s3_${Number(e[2])}_1`}}getCurrentSession(){for(let t=0;t<this.sessions.length;t++){const e=this.sessions[t];if(!e.completed)return e.id}return""}createTraining(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.makeAGroup}}))}inviteFriends(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.inviteFriends,params:{joinKey:this.code}}}))}startSession(t,e){e.stopImmediatePropagation();const s=this.getSessionUrl(t);location.href=s}editSession(t,e){this.stopImmediatePropagation(e),this.closeKebabMenu(t);const s=this.sessions.find(a=>a.id===t),n=f.fromMillis(s.datetime);s.date=n.toISODate(),this.sessionToEdit=s,this.openEditSessionModal()}selectDay(t){const{date:e}=t.detail,s={...this.sessionToEdit,date:e};this.sessionToEdit=s}saveSession(t){if(this.isSavingSession)return;this.isSavingSession=!0;const{date:e}=this.sessionToEdit,s=f.fromFormat(`${e}`,"y-LL-dd");q.post("plan/edit-session",{key:this.training.join_key,session_id:this.sessionToEdit.id,session_time:s.toSeconds()}).then(n=>{this.training={...this.training,[this.sessionToEdit.id]:{timestamp:s.toSeconds(),formatted:s.toISODate()}},this.refreshSessions(),this.closeEditSessionModal()}).finally(()=>{this.isSavingSession=!1})}cancelEditingSession(){this.sessionToEdit={},this.closeEditSessionModal()}openEditSessionModal(){const t=document.querySelector("#edit-session-modal");jQuery(t).foundation("open")}closeEditSessionModal(){const t=document.querySelector("#edit-session-modal");jQuery(t).foundation("close")}editSessionDetails(){document.querySelector("#location-note").value=this.training.location_note,document.querySelector("#time-of-day-note").value=this.training.time_of_day_note,this.openEditSessionDetailsModal()}openEditSessionDetailsModal(){const t=document.querySelector("#edit-session-details-modal");jQuery(t).foundation("open")}closeEditSessionDetailsModal(){const t=document.querySelector("#edit-session-details-modal");jQuery(t).foundation("close")}saveSessionDetails(){if(this.isSavingSession)return;this.isSavingSession=!0;const t=document.querySelector("#location-note").value,e=document.querySelector("#time-of-day-note").value;q.put(`plan/${this.training.join_key}`,{location_note:t,time_of_day_note:e}).then(s=>{this.training.location_note=t,this.training.time_of_day_note=e}).finally(()=>{this.isSavingSession=!1,this.closeEditSessionDetailsModal()})}editTitle(){this.isEditingTitle=!0}cancelEditingTitle(){this.isEditingTitle=!1}inputSaveTitle(t){t.code==="Enter"&&this.saveTitle()}saveTitle(){if(this.isSavingTitle)return;this.isSavingTitle=!0;const t=document.querySelector("#training-title-input").value;q.put(`plan/${this.training.join_key}`,{title:t}).then(e=>{this.training.title=t,this.dispatchEvent(new CustomEvent("training:changed",{bubbles:!0}))}).finally(()=>{this.isEditingTitle=!1,this.isSavingTitle=!1})}markSessionCompleted(t,e){this.stopImmediatePropagation(e),this.closeKebabMenu(t),makeRequest("POST","plan/complete-session",{key:this.training.join_key,session_id:t},"zume_system/v1").then(s=>{this.refreshSessions(s)})}isGroupLeader(){return!!(this.training&&this.training.assigned_to&&Number(this.training.assigned_to.id)===jsObject.profile.user_id)}hasMultipleTrainingGroups(){return jsObject.training_groups&&Object.keys(jsObject.training_groups).length>1}toggleDetails(t){this.openDetailStates[t]?this.openDetailStates={...this.openDetailStates,[t]:!1}:this.openDetailStates={...this.openDetailStates,[t]:!0}}closeKebabMenu(t){jQuery(`#kebab-menu-${t}`).foundation("close")}toggleKebabMenu(t){t.stopImmediatePropagation();const e=t.currentTarget.dataset.toggle;jQuery(`#${e}`).foundation("toggle")}stopImmediatePropagation(t){t.stopImmediatePropagation()}filterSessions(t){this.filterStatus=t,this.filteredItems=this.filterItems(t,this.sessions),ZumeStorage.save(this.filterName,t),this.closeFilter()}filterItems(t,e){if(!this.sessions)return[];switch(t){case"completed":return e.filter(s=>s.completed);case"uncompleted":return e.filter(s=>!s.completed);default:return[...e]}}closeFilter(){const t=this.querySelector("#filter-menu");jQuery(t).foundation("close")}toggleGroupMembers(){this.groupMembersOpen=!this.groupMembersOpen}toggleGroupDetails(){this.groupDetailsOpen=!this.groupDetailsOpen}renderListItem(t){var u;const{id:e,name:s,datetime:n,completed:a}=t,r=this.getNumberOfSessions(),o=this.getSlideKey(e),c=((u=zumeTrainingPieces[r][o])==null?void 0:u.pieces)??[],d={month:"short",day:"numeric"};return f.fromMillis(n).year!==f.now().year&&(d.year="2-digit"),l`
-            <li class="list__item" data-no-flex @click=${()=>this.toggleDetails(e)}>
+            <li
+                class="list__item"
+                data-no-flex
+            >
                 <div class="switcher | switcher-width-20 gapy0">
                     <div class="list__primary">
                         ${this.currentSession===e?l`
-                                <button class="icon-btn" @click=${p=>this.startSession(e,p)} aria-label=${jsObject.translations.start_session}>
+                                <button
+                                    class="icon-btn"
+                                    @click=${p=>this.startSession(e,p)}
+                                    aria-label=${jsObject.translations.start_session}
+                                >
                                     <span class="icon z-icon-play brand-light"></span>
                                 </button>
                             `:l`
@@ -1646,10 +1653,24 @@ ${this.training.zoom_link_note}
 
                     <div class="list__secondary" data-align-start>
                         <div class="d-flex justify-content-center align-items-center gap--2">
-                            <!-- TODO: only use the YY if it's not in the current year -->
                             <span>${n>0?f.fromMillis(n).toLocaleString(d):jsObject.translations.not_scheduled}</span>
-                            <button class="icon-btn" data-toggle="kebab-menu-${e}" @click=${this.toggleKebabMenu}>
+                            <button
+                                class="icon-btn"
+                                data-toggle="kebab-menu-${e}"
+                                @click=${this.toggleKebabMenu}
+                            >
                                 <span class="icon z-icon-kebab brand-light"></span>
+                            </button>
+                            <button
+                                class="icon-btn"
+                                aria-label=${jsObject.translations.show_details}
+                                aria-pressed=${this.openDetailStates[e]?"true":"false"}
+                                @click=${()=>this.toggleDetails(e)}
+                            >
+                                <img
+                                    class="chevron | svg w-1rem h-1rem ${this.openDetailStates[e]?"rotate-180":""}"
+                                    src=${jsObject.images_url+"/chevron.svg"}
+                                />
                             </button>
                         </div>
                     </div>
@@ -1659,7 +1680,6 @@ ${this.training.zoom_link_note}
                         ${c.map(p=>l`
                                 <li>
                                     <a
-                                        @click=${this.stopImmediatePropagation}
                                         href=${[jsObject.site_url,jsObject.language,p.slug].join("/")}
                                     >
                                         ${p.title}
@@ -1817,10 +1837,15 @@ ${this.training.zoom_link_note}
                     ${!this.loading&&!this.error&&this.code!=="teaser"?l`
                                 <div class="card | group-members | grow-0">
                                     <button
-                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        class="f-0 f-medium d-flex align-items-center justify-content-between gap--2 black"
                                         @click=${this.toggleGroupMembers}
                                     >
-                                        <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
+                                        <span class="icon z-icon-group brand-light"></span>
+                                        <span>${jsObject.translations.group_members} (${this.groupMembers.length})</span>
+                                        <img
+                                            class="chevron | svg w-1rem h-1rem ${this.groupMembersOpen?"rotate-180":""}"
+                                            src=${jsObject.images_url+"/chevron.svg"}
+                                        />
                                     </button>
                                     <div class="collapse" ?data-open=${this.groupMembersOpen}>
                                         ${!this.loading&&this.groupMembers&&this.groupMembers.length>0?l`
@@ -1838,10 +1863,15 @@ ${this.training.zoom_link_note}
                                 </div>
                                 <div class="card | group-members | grow-0">
                                     <button
-                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        class="f-0 f-medium d-flex align-items-center justify-content-between gap--2 black"
                                         @click=${this.toggleGroupDetails}
                                     >
-                                        <span class="icon z-icon-overview brand-light"></span> ${jsObject.translations.group_details}
+                                        <span class="icon z-icon-overview brand-light"></span>
+                                        <span>${jsObject.translations.group_details}</span>
+                                        <img
+                                            class="chevron | svg w-1rem h-1rem ${this.groupDetailsOpen?"rotate-180":""}"
+                                            src=${jsObject.images_url+"/chevron.svg"}
+                                        />
                                     </button>
                                     <div class="collapse" ?data-open=${this.groupDetailsOpen}>
                                         <div class="stack--2">
