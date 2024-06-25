@@ -249,9 +249,9 @@ class Zume_Plans_Endpoints
 
     public function get_completed_sessions( $post_id, $user_id ) {
 
-        $logs = Disciple_Tools_Reports::where( [
-            'user_id' => $user_id,
-            'post_id' => $post_id,
+        $logs = Disciple_Tools_Reports::list( [
+            'user_id' => [ 'value' => $user_id ],
+            'post_id' => [ 'value' => $post_id ],
         ] );
 
         $filtered_logs = [];
