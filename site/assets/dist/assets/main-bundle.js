@@ -1991,12 +1991,12 @@ ${this.training.zoom_link_note}
                 <span class="icon ${this.icon} brand-light"></span>
                 <span>${this.text}</span>
             </a>
-        `}createRenderRoot(){return this}}customElements.define("nav-link",Ne);class Xo extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l`
+        `}createRenderRoot(){return this}}customElements.define("nav-link",Ne);class Xo extends Ne{constructor(){super(),this.isRtl=document.querySelector("html").getAttribute("dir")==="rtl"}renderText(){return this.text.split(" ").map(t=>l`
             <span>${t}</span>
         `)}getIcon(){return this.locked?this.icon+"-locked":this.icon}render(){return l`
             <a
                 href=${this.href}
-                class="card-btn grid-link"
+                class="card-btn grid-link position-relative"
                 role="button"
                 @click=${this.handleClick}
                 aria-disabled=${this.printBool(this.locked)}
@@ -2005,6 +2005,7 @@ ${this.training.zoom_link_note}
             >
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
+                <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl?"left":"right"}"></span>
             </a>
         `}}customElements.define("grid-link",Xo);class tl extends Ne{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l`
             <span>${t}</span>
