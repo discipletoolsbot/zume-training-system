@@ -193,11 +193,18 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h2 class="white"><?php echo esc_html__( 'Ordinary People. Simple Steps.', 'zume' ) ?></h2>
             <div class="container-md | align-items-center">
                 <div class="w-80 video-frame mx-auto position-relative bg-white rounded hard-shadow">
-                    <div class="mx-auto">
+                    <div class="video-player mx-auto position-relative" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '69', true, null, true ) ) ?>">
                         <div class="responsive-embed widescreen m0">
-                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '69' ) ) ?>" frameborder="0"></iframe>
+                            <iframe width="640" height="360" src="" frameborder="0"></iframe>
                         </div>
-                        <!-- <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"> -->
+                        <div class="video-trigger absolute inset">
+                            <div class="w-60 mx-auto"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"></div>
+                            <button class="icon-btn absolute inset">
+                                <play-button
+                                    style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand); --play-button-size: 5rem"
+                                ></play-button>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,8 +237,16 @@ class Zume_Training_Home extends Zume_Magic_Page
                 </div>
                 <div class="px-3">
                     <div class="position-relative">
-                        <div class="responsive-embed widescreen m0">
-                            <iframe width="640" height="360" src="<?php echo esc_url( Zume_Course::get_video_by_key( '70' ) ) ?>" frameborder="0"></iframe>
+                        <div class="video-player responsive-embed widescreen m0" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '70', true, null, true ) ) ?>">
+                            <iframe width="640" height="360" src="" frameborder="0"></iframe>
+                            <div class="video-trigger absolute inset">
+                                <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Howitworks-thumbnail.png' ) ?>" alt="zume video">
+                                <button class="icon-btn absolute inset">
+                                    <play-button
+                                        style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand); --play-button-size: 5rem"
+                                    ></play-button>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <a href="<?php echo esc_url( zume_about_url() ) ?>" class="d-block uppercase bold brand fit-content mx-auto"><?php echo esc_html__( 'More about zume', 'zume' ) ?></a>

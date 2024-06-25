@@ -604,7 +604,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                 if ( ((string) (int) $connection['meta_value'] === $connection['meta_value'])
                     && ($connection['meta_value'] <= PHP_INT_MAX)
                     && ($connection['meta_value'] >= ~PHP_INT_MAX)
-                    && $connection['meta_key'] !== 'last_modified') {
+                    && strpos( $connection['meta_key'], 'set_' ) === 0
+                ) {
                     $plans[$connection['post_id']][$connection['meta_key']] = [
                         'timestamp' => $connection['meta_value'],
                         'date' => date( 'Y-m-d', $connection['meta_value'] ),

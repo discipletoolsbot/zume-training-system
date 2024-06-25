@@ -4,6 +4,8 @@ import { NavLink } from './nav-link'
 export class GridLink extends NavLink {
     constructor() {
         super()
+
+        this.isRtl = document.querySelector('html').getAttribute('dir') === 'rtl'
     }
 
     renderText() {
@@ -20,7 +22,7 @@ export class GridLink extends NavLink {
         return html`
             <a
                 href=${this.href}
-                class="card-btn grid-link"
+                class="card-btn grid-link position-relative"
                 role="button"
                 @click=${this.handleClick}
                 aria-disabled=${this.printBool(this.locked)}
@@ -29,6 +31,7 @@ export class GridLink extends NavLink {
             >
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
+                <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl ? 'left' : 'right'}"></span>
             </a>
         `;
     }

@@ -36,7 +36,7 @@ class Zume_Course {
     public function __construct() {
     } // End __construct()
 
-    public static function get_video_by_key( $meta_key, $player = true, $lang = null ) {
+    public static function get_video_by_key( $meta_key, $player = true, $lang = null, $autoplay = false ) {
         // get language
         if ( empty( $lang ) ) {
             $current_lang = zume_current_language();
@@ -58,6 +58,9 @@ class Zume_Course {
         }
 
         $query_params = '?transcript=false&pip=false';
+        if ( $autoplay ) {
+            $query_params .= '&autoplay=true';
+        }
         return 'https://player.vimeo.com/video/' . $video_id . $query_params;
     }
 

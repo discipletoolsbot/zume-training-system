@@ -38,4 +38,22 @@ jQuery(document).ready(() => {
 
             Settings.defaultLocale = locale
         })
+
+        const videoPlayers = document.querySelectorAll('.video-player')
+        videoPlayers.forEach((videoPlayer) => {
+            const videoSrc = videoPlayer.getAttribute('data-video-src')
+            const iframe = videoPlayer.querySelector('iframe')
+            const videoTrigger = videoPlayer.querySelector('.video-trigger')
+
+            if (!videoTrigger || !iframe || !videoSrc) {
+                console.log('.video-player is missing something (.video-trigger || iframe || data-video-src)')
+                return
+            }
+
+            videoTrigger.addEventListener('click', loadVideo)
+            function loadVideo(event) {
+                iframe.src = videoSrc
+                videoTrigger.style.display = 'none'
+            }
+        })
 })

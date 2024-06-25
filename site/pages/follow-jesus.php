@@ -129,6 +129,12 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
         global $zume_user_profile;
 
         require __DIR__ . '/../parts/nav.php';
+
+        $video_link = Zume_Course::get_video_by_key( '68' );
+
+        if ( empty( $video_link ) ) {
+            $video_link = Zume_Course::get_video_by_key( '10' );
+        }
         ?>
 
         <div class="cover | position-relative">
@@ -138,13 +144,6 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                 <h1 class="text-center"><?php echo esc_html__( 'How to Follow Jesus', 'zume' ) ?></h1>
                 <div class="video-thumbnail shadow position-relative rounded">
                     <div class="responsive-embed widescreen m0">
-                        <?php
-                        $video_link = Zume_Course::get_video_by_key( '68' );
-
-                        if ( empty( $video_link ) ) {
-                            $video_link = Zume_Course::get_video_by_key( '10' );
-                        }
-                        ?>
                         <iframe width="640" height="360" src="<?php echo esc_url( $video_link ) ?>" frameborder="0"></iframe>
                     </div>
                     <div class="video-thumbnail__footer bg-brand-light white text-center stack p-1">
