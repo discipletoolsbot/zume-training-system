@@ -775,6 +775,9 @@ input::-webkit-calendar-picker-indicator {
   max-width: 250px;
   width: 100%;
 }
+.chevron {
+  transition: transform 120ms linear;
+}
 
 @media (min-width: $break-lg) {
     #share-button,

@@ -460,12 +460,19 @@ export class DashTrainings extends DashPage {
             dateFormatOptions.year = "2-digit"
         }
         return html`
-            <li class="list__item" data-no-flex @click=${() => this.toggleDetails(id)}>
+            <li
+                class="list__item"
+                data-no-flex
+            >
                 <div class="switcher | switcher-width-20 gapy0">
                     <div class="list__primary">
                         ${
                             this.currentSession === id ? html`
-                                <button class="icon-btn" @click=${(event) => this.startSession(id, event)} aria-label=${jsObject.translations.start_session}>
+                                <button
+                                    class="icon-btn"
+                                    @click=${(event) => this.startSession(id, event)}
+                                    aria-label=${jsObject.translations.start_session}
+                                >
                                     <span class="icon z-icon-play brand-light"></span>
                                 </button>
                             ` : html `
@@ -477,10 +484,25 @@ export class DashTrainings extends DashPage {
 
                     <div class="list__secondary" data-align-start>
                         <div class="d-flex justify-content-center align-items-center gap--2">
-                            <!-- TODO: only use the YY if it's not in the current year -->
                             <span>${datetime > 0 ? DateTime.fromMillis(datetime).toLocaleString(dateFormatOptions) : jsObject.translations.not_scheduled}</span>
-                            <button class="icon-btn" data-toggle="kebab-menu-${id}" @click=${this.toggleKebabMenu}>
+                            <button
+                                class="icon-btn"
+                                data-toggle="kebab-menu-${id}"
+                                @click=${this.toggleKebabMenu}
+                            >
                                 <span class="icon z-icon-kebab brand-light"></span>
+                            </button>
+                            <button
+                                class="icon-btn"
+                                aria-label=${jsObject.translations.show_details}
+                                aria-pressed=${this.openDetailStates[id] ? 'true' : 'false'}
+                                @click=${() => this.toggleDetails(id)}
+                            >
+                                <img
+                                    class="chevron | svg w-1rem h-1rem ${this.openDetailStates[id] ? 'rotate-180' : ''}"
+                                    src=${jsObject.images_url +
+                                    '/chevron.svg'}
+                                />
                             </button>
                         </div>
                     </div>
@@ -491,7 +513,6 @@ export class DashTrainings extends DashPage {
                             trainingItems.map((item) => html`
                                 <li>
                                     <a
-                                        @click=${this.stopImmediatePropagation}
                                         href=${[ jsObject.site_url, jsObject.language, item.slug ].join('/')}
                                     >
                                         ${item.title}
@@ -683,10 +704,16 @@ export class DashTrainings extends DashPage {
                     ${!this.loading && !this.error && this.code !== 'teaser' ? html`
                                 <div class="card | group-members | grow-0">
                                     <button
-                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        class="f-0 f-medium d-flex align-items-center justify-content-between gap--2 black"
                                         @click=${this.toggleGroupMembers}
                                     >
-                                        <span class="icon z-icon-group brand-light"></span> ${jsObject.translations.group_members} (${this.groupMembers.length})
+                                        <span class="icon z-icon-group brand-light"></span>
+                                        <span>${jsObject.translations.group_members} (${this.groupMembers.length})</span>
+                                        <img
+                                            class="chevron | svg w-1rem h-1rem ${this.groupMembersOpen ? 'rotate-180' : ''}"
+                                            src=${jsObject.images_url +
+                                            '/chevron.svg'}
+                                        />
                                     </button>
                                     <div class="collapse" ?data-open=${this.groupMembersOpen}>
                                         ${!this.loading && this.groupMembers && this.groupMembers.length > 0
@@ -707,10 +734,16 @@ export class DashTrainings extends DashPage {
                                 </div>
                                 <div class="card | group-members | grow-0">
                                     <button
-                                        class="f-0 f-medium d-flex align-items-center gap--2 black"
+                                        class="f-0 f-medium d-flex align-items-center justify-content-between gap--2 black"
                                         @click=${this.toggleGroupDetails}
                                     >
-                                        <span class="icon z-icon-overview brand-light"></span> ${jsObject.translations.group_details}
+                                        <span class="icon z-icon-overview brand-light"></span>
+                                        <span>${jsObject.translations.group_details}</span>
+                                        <img
+                                            class="chevron | svg w-1rem h-1rem ${this.groupDetailsOpen ? 'rotate-180' : ''}"
+                                            src=${jsObject.images_url +
+                                            '/chevron.svg'}
+                                        />
                                     </button>
                                     <div class="collapse" ?data-open=${this.groupDetailsOpen}>
                                         <div class="stack--2">

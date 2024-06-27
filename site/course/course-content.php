@@ -1782,7 +1782,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '20', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '19', true, $lang_code ), // video
             ],
             'left' => [],
             'right' => [],
