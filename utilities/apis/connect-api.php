@@ -29,21 +29,21 @@ class Zume_Connect_Endpoints
             $this->namespace, '/connect/friend', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'connect_to_friend_callback' ],
-                'permission_callback' => '__return_true',
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
         register_rest_route(
             $this->namespace, '/connect/plan', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'connect_to_plan_callback' ],
-                'permission_callback' => '__return_true',
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
         register_rest_route(
             $this->namespace, '/connect/public-plan', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'connect_to_public_plan_callback' ],
-                'permission_callback' => '__return_true',
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
     }

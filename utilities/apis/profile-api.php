@@ -27,27 +27,21 @@ class Zume_Profile_API
             $namespace, '/profile', [
                 'methods' => [ 'POST' ],
                 'callback' => [ $this, 'update_profile' ],
-                'permission_callback' => function () {
-                    return is_user_logged_in();
-                },
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
         register_rest_route(
             $namespace, '/user_stage', [
                 'methods' => [ 'GET' ],
                 'callback' => [ $this, 'get_user_stage' ],
-                'permission_callback' => function () {
-                    return is_user_logged_in();
-                },
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
         register_rest_route(
             $namespace, '/user_host', [
                 'methods' => [ 'GET' ],
                 'callback' => [ $this, 'get_user_host' ],
-                'permission_callback' => function () {
-                    return is_user_logged_in();
-                },
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
     }

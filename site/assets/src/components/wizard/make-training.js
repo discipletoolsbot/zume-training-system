@@ -218,7 +218,6 @@ export class MakeTraining extends LitElement {
         const startTime = this.stateManager.get(Steps.timeNote)
         const location = this.stateManager.get(Steps.location)
 
-        /* TODO: create localised time_of_day_note from startDate and startTime */
         const trainingSchedule = {
             location_note: location || '',
             time_of_day_note: startTime || '',

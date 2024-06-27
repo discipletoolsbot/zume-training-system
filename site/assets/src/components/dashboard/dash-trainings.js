@@ -183,7 +183,7 @@ export class DashTrainings extends DashPage {
         return url.href
     }
     getNumberOfSessions() {
-        const set_type = this.training.set_type.key
+        const set_type = this.getTrainingType()
         switch (set_type) {
             case 'set_a':
                 return 10

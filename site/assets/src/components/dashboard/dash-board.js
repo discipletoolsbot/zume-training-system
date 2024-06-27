@@ -654,7 +654,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         }
     }
     updateTrainingGroups() {
-        zumeRequest.get('plans', {}).then((results) => {
+        zumeRequest.get('plans').then((results) => {
             this.trainingGroups = results
         })
     }

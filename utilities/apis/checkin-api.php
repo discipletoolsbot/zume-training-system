@@ -29,7 +29,7 @@ class Zume_Checkin
             $this->namespace, '/checkin', [
                 'methods' => [ 'GET', 'POST' ],
                 'callback' => [ $this, 'checkin_rest' ],
-                'permission_callback' => '__return_true',
+                'permission_callback' => 'is_user_logged_in',
             ]
         );
     }
@@ -45,11 +45,7 @@ class Zume_Checkin
             return new WP_Error( 'bad_checkin_code', 'Key not found', [ 'status' => 400 ] );
         }
 
-        if ( ! isset( $params['user_id'] ) ) {
-            $user_id = get_current_user_id();
-        } else {
-            $user_id = $params['user_id'];
-        }
+        $user_id = get_current_user_id();
 
         zume_log_insert( 'training', $list[ $params['code'] ], [ 'user_id' => $user_id ] );
 

@@ -3,8 +3,6 @@ import { DateTime } from "luxon"
 
 /**
  * Component for inviting friends to a plan
- *
- * TODO: this needs fleshing out to be given a training code and title for sharing
  */
 export class InviteFriends extends LitElement {
     static get properties() {

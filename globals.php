@@ -5661,14 +5661,14 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 $namespace, '/user_data/profile', [
                     'methods' => [ 'GET', 'POST' ],
                     'callback' => [ $this, 'user_data_profile' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/user_data/stage', [
                     'methods' => [ 'GET', 'POST' ],
                     'callback' => [ $this, 'user_data_stage' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
 
@@ -5679,35 +5679,35 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 $namespace, '/commitment', [
                     'methods' => 'POST',
                     'callback' => [ $this, 'create_commitment' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/commitments', [
                     'methods' => 'GET',
                     'callback' => [ $this, 'list_commitments' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/commitment', [
                     'methods' => 'UPDATE',
                     'callback' => [ $this, 'update_commitment' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/commitment', [
                     'methods' => 'PUT',
                     'callback' => [ $this, 'complete_commitment' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/commitment', [
                     'methods' => 'DELETE',
                     'callback' => [ $this, 'delete_commitment' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             /**
@@ -5717,21 +5717,21 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 $namespace, '/host', [
                     'methods' => 'GET',
                     'callback' => [ $this, 'list_host' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/host', [
                     'methods' => 'POST',
                     'callback' => [ $this, 'create_host' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
             register_rest_route(
                 $namespace, '/host', [
                     'methods' => 'DELETE',
                     'callback' => [ $this, 'delete_host' ],
-                    'permission_callback' => '__return_true',
+                    'permission_callback' => 'is_user_logged_in',
                 ]
             );
         }
@@ -5748,10 +5748,6 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
 
         public function create_commitment( WP_REST_Request $request )
         {
-            if ( ! is_user_logged_in() ) {
-                return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-            }
-
             global $wpdb, $table_prefix;
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( isset( $params['user_id'] ) ) {
@@ -5792,10 +5788,6 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
         }
         public function list_commitments( WP_REST_Request $request )
         {
-            if ( ! is_user_logged_in() ) {
-                return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-            }
-
             $params = dt_recursive_sanitize_array( $request->get_params() );
 
             if ( isset( $params['user_id'] ) ) {
@@ -5899,9 +5891,6 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
 
         /** Host */
         public function list_host( WP_REST_Request $request ) {
-            if ( ! is_user_logged_in() ) {
-                return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-            }
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( ! isset( $params['user_id'] ) ) {
                 return new WP_Error( __METHOD__, 'User_id required.', array( 'status' => 401 ) );
@@ -5914,9 +5903,6 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
             return zume_get_user_host( $user_id );
         }
         public function create_host( WP_REST_Request $request ) {
-            if ( ! is_user_logged_in() ) {
-                return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-            }
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( ! isset( $params['type'], $params['subtype'], $params['user_id'] ) ) {
                 return new WP_Error( __METHOD__, 'Type, subtype, and user_id required.', array( 'status' => 401 ) );
@@ -5933,9 +5919,6 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
         }
         public function delete_host( WP_REST_Request $request ) {
             global $wpdb, $table_prefix;
-            if ( ! is_user_logged_in() ) {
-                return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
-            }
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( ! isset( $params['type'], $params['subtype'], $params['user_id'] ) ) {
                 return new WP_Error( __METHOD__, 'Type, subtype, and user_id required.', array( 'status' => 401 ) );
@@ -6040,14 +6023,14 @@ if ( ! class_exists('Zume_System_Log_API') ) {
                 $namespace, '/log', [
                     'methods' => ['POST'],
                     'callback' => [$this, 'rest_log'],
-                    'permission_callback' => '__return_true'
+                    'permission_callback' => 'is_user_logged_in'
                 ]
             );
             register_rest_route(
                 $namespace, '/log', [
                     'methods' => ['GET'],
                     'callback' => [$this, 'get_log'],
-                    'permission_callback' => '__return_true'
+                    'permission_callback' => 'is_user_logged_in'
                 ]
             );
         }
