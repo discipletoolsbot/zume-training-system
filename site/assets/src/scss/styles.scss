@@ -644,12 +644,12 @@ input::-webkit-calendar-picker-indicator {
   z-index: 1;
 }
 
-.collapse {
+.zume-collapse {
   height: 0;
   transition: height 0.2s ease-out;
   overflow: hidden;
 }
-.collapse[data-state="open"] {
+.zume-collapse[data-state="open"] {
   overflow: initial;
   height: auto;
 }

@@ -152,7 +152,7 @@ export class CompleteProfile extends LitElement {
                 </div>
 
             ` : '' }
-            <div class="info-area collapse" data-state=${this.isInfoOpen ? 'open' : 'closed'}>
+            <div class="info-area zume-collapse" data-state=${this.isInfoOpen ? 'open' : 'closed'}>
                 <div class="card mw-50ch mx-auto">
                     <p>${this.infoText}</p>
                     <a class="f--1 gray-500" href=${jsObject.privacy_url + '#personal-information'} target="_blank">${this.t.privacy_page}</a>

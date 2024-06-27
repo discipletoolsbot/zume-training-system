@@ -119,7 +119,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('name') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('name') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('name') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('name') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_name_disclaimer}</p>
                         </div>
@@ -133,7 +133,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('phone') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('phone') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('phone') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('phone') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_phone_disclaimer}</p>
                         </div>
@@ -147,7 +147,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('email') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('email') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_email_disclaimer}</p>
                         </div>
@@ -173,7 +173,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('communications_email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('communications_email') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('communications_email') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('communications_email') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_communications_email_disclaimer}</p>
                         </div>
@@ -187,7 +187,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('city') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('city') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('city') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('city') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_city_disclaimer}</p>
                         </div>
@@ -238,7 +238,7 @@ export class ProfileForm extends LitElement {
                             <span class="icon z-icon-info brand-light"></span>
                         </button>
                     </div>
-                    <div class="info-area collapse ${this.infosOpen.includes('preferred_language') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('preferred_language') ? 'open' : 'closed'}>
+                    <div class="info-area zume-collapse ${this.infosOpen.includes('preferred_language') ? 'mt-0' : ''}" data-state=${this.infosOpen.includes('preferred_language') ? 'open' : 'closed'}>
                         <div class="card mw-50ch mx-auto">
                             <p>${jsObject.translations.user_preferred_language_disclaimer}</p>
                         </div>
