@@ -42,11 +42,7 @@ function zume_default_language() {
     }
 }
 
-function zume_set_language_cookie( string $lang, array $args = [] ) {
-    if ( zume_get_language_cookie() !== $lang ) {
-        setcookie( ZUME_LANGUAGE_COOKIE, $lang, 0, '/' );
-    }
-}
+
 
 function zume_get_translation( $post_id, $slug = 'en' ) {
 }

@@ -4,32 +4,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 
 // resource functions
-function zume_get_url_pieces( $url = null ) {
 
-    if ( !$url ) {
-        $url = dt_get_url_path();
-    }
-
-    $dt_url = new DT_URL( $url );
-
-    $codes = zume_language_codes();
-
-    $path = isset( $dt_url->parsed_url['path'] ) ? $dt_url->parsed_url['path'] : '';
-
-    $url_parts = explode( '/', $path );
-
-    $lang_code = 'en';
-    if ( in_array( $url_parts[0], $codes ) ) {
-        $lang_code = array_shift( $url_parts );
-    }
-    $path = implode( '/', $url_parts );
-
-    return [
-        'lang_code' => (string) $lang_code ?? 'en',
-        'path' => $path,
-        'url_parts' => ( $url_parts ) ? $url_parts : [],
-    ];
-}
 function zume_mirror_url() {
     return 'https://storage.googleapis.com/zume-file-mirror/';
 }
