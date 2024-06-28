@@ -40,7 +40,9 @@ export class DashProgress extends DashPage {
 
         this.renderListItem = this.renderListItem.bind(this)
         this.closeInfoModal = this.closeInfoModal.bind(this)
-
+        document.querySelectorAll('.reveal-overlay #progress-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     firstUpdated() {
@@ -50,7 +52,7 @@ export class DashProgress extends DashPage {
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     openInfoModal() {

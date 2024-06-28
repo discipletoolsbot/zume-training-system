@@ -54,6 +54,12 @@ export class DashTrainings extends DashPage {
         if ( this.code !== 'teaser' ) {
             this.getTraining()
         }
+        document.querySelectorAll('.reveal-overlay #edit-session-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
+        document.querySelectorAll('.reveal-overlay #edit-session-details-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     willUpdate(properties) {
@@ -67,11 +73,12 @@ export class DashTrainings extends DashPage {
     firstUpdated() {
         super.firstUpdated()
 
+        jQuery(this.renderRoot).foundation();
         zumeAttachObservers()
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
         zumeAttachObservers()
     }
 
@@ -311,7 +318,6 @@ export class DashTrainings extends DashPage {
     }
     openEditSessionDetailsModal() {
         const modal = document.querySelector('#edit-session-details-modal')
-        console.log(modal)
         jQuery(modal).foundation('open')
     }
     closeEditSessionDetailsModal() {

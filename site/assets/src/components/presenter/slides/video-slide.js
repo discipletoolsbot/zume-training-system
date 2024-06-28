@@ -12,7 +12,7 @@ export class VideoSlide extends CourseSlide {
         };
     }
     firstUpdated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
 
         this.offCanvasId = 'informationOffCanvas' + this.id
         this.offCanvasSelector = '#' + this.offCanvasId

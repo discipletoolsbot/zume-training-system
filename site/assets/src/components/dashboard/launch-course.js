@@ -27,7 +27,7 @@ export class LaunchCourse extends LitElement {
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     render() {

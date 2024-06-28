@@ -186,7 +186,6 @@ export class CalendarSelect extends LitElement {
 
     constructor() {
         super();
-        this.monthToShow = DateTime.now();
         this.startDate = ''
         this.endDate = ''
         this.selectedDays = []
@@ -202,6 +201,11 @@ export class CalendarSelect extends LitElement {
         }
         const htmlElement = document.querySelector('html')
         this.isRtl = htmlElement.getAttribute('dir') === 'rtl'
+
+    }
+    firstUpdated() {
+        super.firstUpdated()
+        this.monthToShow = DateTime.now();
     }
 
     willUpdate(properties) {

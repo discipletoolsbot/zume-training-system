@@ -603,7 +603,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         return Object.keys(this.trainingGroups).length
     }
     toggleTrainingGroups() {
-        jQuery(document).foundation()
+        jQuery(this.renderRoot).foundation()
         jQuery('#training-menu').foundation(
             'toggle',
             jQuery('#training-groups-menu')
