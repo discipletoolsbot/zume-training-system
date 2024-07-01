@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@kucrut/vite-for-wp": "^0.5.2",
-    "@webcomponents/webcomponentsjs": "^2.8.0",
     "lit": "^2.6.1",
     "lit-element-router": "^2.0.3",
     "luxon": "^3.4.4"
