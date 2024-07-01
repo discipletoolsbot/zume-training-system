@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-20 10:39+0000\n"
+"PO-Revision-Date: 2024-06-24 10:12+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -23,8 +23,9 @@ msgid "Training"
 msgstr "التّدريب"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
+#, fuzzy
 msgid "How it Works"
-msgstr "كيفاه يخدم تدريب زومّي"
+msgstr "كيفاه يخدم"
 
 #: appearance/style-override/navigation.php:91
 #, fuzzy
@@ -41,6 +42,7 @@ msgstr "التّعليمات"
 #: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:172
 #: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
+#, fuzzy
 msgid "Dashboard"
 msgstr "لوحة التحكّم"
 
@@ -112,6 +114,7 @@ msgstr "تعريف بسيط للتّلميذ والكنيسة"
 
 #: globals.php:1952 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:179
+#, fuzzy
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
@@ -157,6 +160,7 @@ msgstr ""
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
+#, fuzzy
 msgid "Accountability Groups"
 msgstr "مجموعات المساءلة"
 
@@ -200,8 +204,9 @@ msgid "See how easy it is to spend an hour in prayer."
 msgstr "شوف قدّاه ساهلة تعدّي ساعة كاملة تصلّي."
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
+#, fuzzy
 msgid "Relational Stewardship – List of 100"
-msgstr "نهتّموا بالعلاقات - قائمة المئة"
+msgstr "نهتّموا بالعلاقات - قائمة ال100"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 #, fuzzy
@@ -223,6 +228,7 @@ msgstr "قائمة 100"
 #: globals.php:2035 globals.php:2037 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
+#, fuzzy
 msgid "Spiritual Economy"
 msgstr "الإقتصاد الرّوحي"
 
@@ -236,6 +242,7 @@ msgstr ""
 "أمناء بالّي عطاهم."
 
 #: globals.php:2047 site/pages/follow-jesus.php:295
+#, fuzzy
 msgid "The Gospel and How to Share It"
 msgstr "الإنجيل وكيفاه نشاركوه"
 
@@ -252,6 +259,7 @@ msgid "Sharing God‘s Story"
 msgstr "مشاركة قصّة ربّي"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
+#, fuzzy
 msgid "Baptism and How To Do It"
 msgstr "المعمودية وكيفاه نعملُوها"
 
@@ -269,6 +277,7 @@ msgstr ""
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
+#, fuzzy
 msgid "Baptism"
 msgstr "المعمودية"
 
@@ -285,6 +294,7 @@ msgid ""
 msgstr "تعلّم كيفاه تشارك شهادتك في ثلاث دقايق و بكيفاه أثّر يسوع في حياتك."
 
 #: globals.php:2073
+#, fuzzy
 msgid "3-Minute Testimony"
 msgstr "‫شهادة في 3 دقائق"
 
@@ -324,6 +334,7 @@ msgstr "تعلمّ شنّوة علاقة فروخ البطّ في صنع تلا�
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
+#, fuzzy
 msgid "Duckling Discipleship"
 msgstr "تلمذة فروخ البطّ"
 
@@ -345,21 +356,24 @@ msgstr ""
 "ديما."
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
+#, fuzzy
 msgid "The Lord’s Supper and How To Lead It"
 msgstr "العشاء الربّاني وكيفاه نقودوه"
 
 #: globals.php:2120
+#, fuzzy
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
-"طريقة بسيطة نحتفلوا بعلاقتنا المتواصلة والباهية مع يسوع.تعلّم طريقة بسيطة باشْ "
-"تحتفل."
+"طريقة بسيطة نحتفلوا بعلاقتنا المتواصلة والباهية مع يسوع.تعلّم طريقة بسيطة "
+"باشْ تحتفل."
 
 #: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
+#, fuzzy
 msgid "The Lord’s Supper"
 msgstr "العشاء الربّاني"
 
@@ -381,6 +395,7 @@ msgstr ""
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
+#, fuzzy
 msgid "Prayer Walking"
 msgstr "مسير الصّلاة"
 
@@ -398,10 +413,12 @@ msgstr "تعرّف على شكون الّي يكون إنسان السّلام �
 #: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
+#, fuzzy
 msgid "Person of Peace"
 msgstr "إنسان السّلام"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
+#, fuzzy
 msgid "Faithfulness is Better Than Knowledge"
 msgstr "الأمانة خير مالمعرفة"
 
@@ -415,14 +432,17 @@ msgstr "الّي يعرفوه التلامذة مهمّ برشة. أما الّ�
 #: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
+#, fuzzy
 msgid "Faithfulness"
 msgstr "الأمانة"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
+#, fuzzy
 msgid "The BLESS Prayer Pattern"
 msgstr "نمط الصّلاة المباركة"
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
+#, fuzzy
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "إدّرب على طريقة بسيطة تذكّرك بطرق الصّلاة على خاطر لخرين"
 
@@ -453,16 +473,19 @@ msgid "3/3 Group"
 msgstr "مجموعات 3/3"
 
 #: globals.php:2191 site/pages/follow-jesus.php:276
+#, fuzzy
 msgid "Training Cycle for Maturing Disciples"
 msgstr "دورة تدريبية لتّلامذة النّامين"
 
 #: globals.php:2192 site/pages/follow-jesus.php:277
+#, fuzzy
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
-msgstr "تعلّم دورة التّدريب كيفاه نصنعوا تلامذة."
+msgstr "تعلّم دورة التّدريب وخمّم كيفاه إطّبقها على التّلمذة"
 
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
+#, fuzzy
 msgid "Training Cycle"
 msgstr "دورة التّدريب"
 
@@ -470,6 +493,7 @@ msgstr "دورة التّدريب"
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
+#, fuzzy
 msgid "Leadership Cells"
 msgstr "خلايا القيادة"
 
@@ -484,6 +508,7 @@ msgstr ""
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
+#, fuzzy
 msgid "Expect Non-Sequential Growth"
 msgstr "نتّوقعوا نمّو موش متسلسل"
 
@@ -497,6 +522,7 @@ msgstr ""
 
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
+#, fuzzy
 msgid "Pace of Multiplication Matters"
 msgstr "سرعة المضاعفة مهمّة"
 
@@ -510,6 +536,7 @@ msgstr "التّضاعف حاجة مهمّة والتّضاعف فيسع أهم�
 #: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
+#, fuzzy
 msgid "Pace"
 msgstr "السّرعة"
 
@@ -517,6 +544,7 @@ msgstr "السّرعة"
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
+#, fuzzy
 msgid "Always Part of Two Churches"
 msgstr "ديما جزء من كنيستين"
 
@@ -528,6 +556,7 @@ msgstr "تعلّم كيفاه إطّيع وصايا يسوع وقت تِمشي �
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
+#, fuzzy
 msgid "Three-Month Plan"
 msgstr "خطّة الشهور الثلاثة"
 
@@ -571,6 +600,7 @@ msgstr ""
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
+#, fuzzy
 msgid "Leadership in Networks"
 msgstr "القيادة في شبكات خدمة"
 
@@ -592,6 +622,7 @@ msgid "Peer Mentoring Groups"
 msgstr "مجموعات الأصحاب الناصحين"
 
 #: globals.php:2288 site/pages/follow-jesus.php:324
+#, fuzzy
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
@@ -606,6 +637,7 @@ msgid "Peer Mentoring"
 msgstr "مجموعات إشراف الزّملاء والأصحاب"
 
 #: globals.php:2299 globals.php:2301
+#, fuzzy
 msgid "Four Fields Tool"
 msgstr "أداة الحقول الأربعة"
 
@@ -623,6 +655,7 @@ msgstr ""
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
+#, fuzzy
 msgid "Generational Mapping"
 msgstr "رسم خرائط الأجيال"
 
@@ -708,6 +741,7 @@ msgstr "أسأل روحك,عملتها؟"
 #: site/activities/coaching-checklist-two.php:184
 #: site/activities/coaching-checklist.php:113
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
+#, fuzzy
 msgid "Heard"
 msgstr "أسمع"
 
@@ -717,6 +751,7 @@ msgstr "أسمع"
 #: site/activities/coaching-checklist-two.php:188
 #: site/activities/coaching-checklist.php:116
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
+#, fuzzy
 msgid "Obeyed"
 msgstr "طاعْ"
 
@@ -726,6 +761,7 @@ msgstr "طاعْ"
 #: site/activities/coaching-checklist-two.php:192
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
+#, fuzzy
 msgid "Shared"
 msgstr "شارك"
 
@@ -735,6 +771,7 @@ msgstr "شارك"
 #: site/activities/coaching-checklist-two.php:196
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
+#, fuzzy
 msgid "Trained"
 msgstr "درّب"
 
@@ -1072,6 +1109,7 @@ msgstr "موش معروف"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
+#, fuzzy
 msgid "3-Month Plan"
 msgstr "خطّة الشهور الثلاثة"
 
@@ -1107,13 +1145,15 @@ msgstr "إلغاء"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
+#, fuzzy
 msgid ""
 "Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"قال يسوع، آمَا وَقْتِلِّي يَهْبِطْ عْلِيكُمْ الرُّوحْ القُدُسْ، بِاشْ تَاخْذُوا قُوَّة، وتْكُونُولِي شْهُودْ فِي "
-"أُورْشَلِيمْ واليَهُودِيَّة الكُلْ وفِي السَّامْرَة وحَتَّى لْآخِرْ الأَرْضْ»."
+"قال يسوع، آمَا وَقْتِلِّي يَهْبِطْ عْلِيكُمْ الرُّوحْ القُدُسْ، بِاشْ تَاخْذُ"
+"وا قُوَّة، وتْكُونُولِي شْهُودْ فِي أُورْشَلِيمْ واليَهُودِيَّة الكُلْ وفِي "
+"السَّامْرَة وحَتَّى لْآخِرْ الأَرْضْ»."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -1150,6 +1190,7 @@ msgstr "المناقشة"
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:196
+#, fuzzy
 msgid "(10 min)"
 msgstr "10 دقائق"
 
@@ -1199,6 +1240,7 @@ msgstr "فرجة"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
+#, fuzzy
 msgid "(5 min)"
 msgstr "5 دقائق"
 
@@ -1206,6 +1248,7 @@ msgstr "5 دقائق"
 #: site/course/course-content.php:800 site/course/course-content.php:851
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3805 site/course/course-content.php:3824
+#, fuzzy
 msgid "The Gospel"
 msgstr "الإنجيل"
 
@@ -1218,11 +1261,13 @@ msgstr "مالطّرق لمشاركة أخبار ربّي السّارة هي إ
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
+#, fuzzy
 msgid "What do you learn about mankind from this story?"
 msgstr "‫شنوّة تعلّمت على الجنس البشري مالقصّة هذي؟"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:917
+#, fuzzy
 msgid "What do you learn about God?"
 msgstr "شنوّة تعلّمت على ربّي؟"
 
@@ -1498,6 +1543,7 @@ msgstr "تدريب زومّيه/ سجّل وإستعمل الرّمز:"
 #: site/course/course-content.php:5124 site/course/course-content.php:5253
 #: site/course/course-content.php:5386 site/course/course-content.php:5431
 #: site/course/course-content.php:5523 site/course/course-content.php:5647
+#, fuzzy
 msgid "PRAY"
 msgstr "صلّي"
 
@@ -1526,6 +1572,7 @@ msgstr ""
 #: site/course/course-content.php:5027 site/course/course-content.php:5152
 #: site/course/course-content.php:5281 site/course/course-content.php:5414
 #: site/course/course-content.php:5551 site/course/course-content.php:5691
+#, fuzzy
 msgid "OVERVIEW"
 msgstr "نظرة عامّة"
 
@@ -1539,10 +1586,12 @@ msgid "In this session, we will hear and discuss these concepts:"
 msgstr "في الجلسة هذي باش نسمع وناقش المفاهيم هذي :"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
+#, fuzzy
 msgid "Simple Definition of Disciple & Church"
 msgstr "تعريف بسيط للتّلميذ والكنيسة"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
+#, fuzzy
 msgid "Spiritual Breathing"
 msgstr "التنفسّ الرّوحي"
 
@@ -1698,6 +1747,7 @@ msgid "Scan the QR code."
 msgstr "سكاني الكر ,كود."
 
 #: site/course/course-content.php:332
+#, fuzzy
 msgid "Break into groups of two or three people of the same gender."
 msgstr "تقسّموا لمجموعة من2 ل 3 حسب الجنس."
 
@@ -1722,6 +1772,7 @@ msgstr "‫عدّيوا 20 دقيقة إخدموا مع بعضكم على أسئ
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
+#, fuzzy
 msgid "REVIEW"
 msgstr "نظرة عامّة"
 
@@ -1918,23 +1969,28 @@ msgstr "منتجين موش مستهلكين"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
+#, fuzzy
 msgid "Prayer Cycle"
 msgstr "دورة الصّلاة"
 
 #: site/course/course-content.php:495
+#, fuzzy
 msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
 "إذا نحبّوا نصنعوا تلامذة يتضاعفوا - منتجين روحياً وموش مستهلكين أكهوْ. أحنا "
-"مستحقين نتعلّموا ونشاركوا 4 طرق يستعملها ربّي باشْ نخلّيوا أتباع يسوع يشبهولوا:"
+"مستحقين نتعلّموا ونشاركوا 4 طرق يستعملها ربّي باشْ نخلّيوا أتباع يسوع "
+"يشبهولوا:"
 
 #: site/course/course-content.php:499
+#, fuzzy
 msgid "Body Life"
 msgstr "حياة الجسد"
 
 #: site/course/course-content.php:500
+#, fuzzy
 msgid "Persecution and Suffering"
 msgstr "الإضطّهاد والمعانات"
 
@@ -1991,6 +2047,7 @@ msgid "What is your reaction to spending an hour in prayer?"
 msgstr "بعد معديّت ساعة تصلّي شنوّة كانت ردّت فعلك؟"
 
 #: site/course/course-content.php:593
+#, fuzzy
 msgid "How do you feel?"
 msgstr "كيفاه تحسّ؟"
 
@@ -2060,6 +2117,7 @@ msgstr "طيع"
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
+#, fuzzy
 msgid "Share"
 msgstr "شارك"
 
@@ -2103,6 +2161,7 @@ msgid "SESSION 3"
 msgstr "الجلسة 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
+#, fuzzy
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
@@ -2155,14 +2214,17 @@ msgid "Take turns telling the Gospel to each other."
 msgstr "يتبادلوا في حكيان الإنجيل مع بعضهم."
 
 #: site/course/course-content.php:959
+#, fuzzy
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"قال يسوع، \"مَالَا إِمْشِيوْ لِلشْعُوبْ الكُلْ وخَلِّيوْ النَّاسْ يْوَلِّيوْ تْلَامْذَة لِيَّا، وعَمْدُوهُمْ "
-"بْإِسْمْ الآبْ والإِبْنْ والرُّوحْ القُدُسْ..\""
+"قال يسوع، \"مَالَا إِمْشِيوْ لِلشْعُوبْ الكُلْ وخَلِّيوْ النَّاسْ يْوَلِّيوْ "
+"تْلَامْذَة لِيَّا، وعَمْدُوهُمْ بْإِسْمْ الآبْ والإِبْنْ والرُّوحْ القُدُسْ.."
+"\""
 
 #: site/course/course-content.php:985
+#, fuzzy
 msgid "Have you ever baptized someone?"
 msgstr "عمّدت عبْد قبل؟"
 
@@ -2196,6 +2258,7 @@ msgstr ""
 "أطلب من مجموعتك تكون جزء كبير برشة ماليوم هذا وقت تحتفل وتقول أي ليسوع."
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
+#, fuzzy
 msgid "The Spiritual Economy"
 msgstr "الإقتصاد الرّوحي"
 
@@ -2322,6 +2385,7 @@ msgstr ""
 "توّا؟"
 
 #: site/course/course-content.php:1262
+#, fuzzy
 msgid ""
 "What do ducklings have to do with disciple making? They lead and follow at "
 "the same time."
@@ -2370,22 +2434,26 @@ msgstr ""
 "مازلت مقابلتهمش؟"
 
 #: site/course/course-content.php:1335
+#, fuzzy
 msgid "Why do you think that is?"
-msgstr "شنوّة السّببْ حسب رايك؟"
+msgstr "شنية تخمّم في هذا ؟"
 
 #: site/course/course-content.php:1336
+#, fuzzy
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr "كيفاه تنجّم تحسّن في مشاركتك مع العباد إلّي مرتحتِلهمش؟"
 
 #: site/course/course-content.php:1354
+#, fuzzy
 msgid ""
 "Jesus said, “I am the living bread that came down from heaven. Whoever eats "
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"قال يسوع: “آنَا هُوَّ الخُبْزْ الحَيْ الِّي هْبَطْ مِالسْمَاء. الِّي يَاكِلْ مِالخُبْزْ هَاذَا يَحْيَا "
-"لِلْأَبَدْ. والخُبْزْ هَاذَا هُوَّ بْدَنِي، الِّي نَعْطِيهْ بَاشْ النَّاسْ يَحْيَاوْ\"."
+"قال يسوع: “آنَا هُوَّ الخُبْزْ الحَيْ الِّي هْبَطْ مِالسْمَاء. الِّي يَاكِلْ "
+"مِالخُبْزْ هَاذَا يَحْيَا لِلْأَبَدْ. والخُبْزْ هَاذَا هُوَّ بْدَنِي، الِّي "
+"نَعْطِيهْ بَاشْ النَّاسْ يَحْيَاوْ\"."
 
 #: site/course/course-content.php:1378
 #, fuzzy
@@ -2425,10 +2493,13 @@ msgid "SESSION 5"
 msgstr "الجلسة 5"
 
 #: site/course/course-content.php:1485
+#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
-msgstr "صلِّي وأشكر ربّي على النتائج، و خلّي روحوُ القدّوس يقود وقتكم مع بعضكم."
+msgstr ""
+"صلِّي وأشكر ربّي على الطرق الّي يخدم بيها بشهادة شعبوا.، و خلّي روحوُ القدّ"
+"وس يقود وقتكم مع بعضكم."
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
@@ -2455,13 +2526,14 @@ msgstr ""
 "شوّية ومتباعدين."
 
 #: site/course/course-content.php:1593
+#, fuzzy
 msgid ""
 "Can someone who has a \"bad reputation\" (like the Samaritan woman or the "
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
-"ينجّم عبد عندو\" سمعة مسّخة\" (كيما المرا الساميرية وِلاَّ الرّاجل إلّي كانت فيه "
-"روح مسّخة من كورة الجدرييّن) يكون إنسان السّلام؟ علاه أي وعلاه لا؟"
+"ينجّم عبد عندو\" سمعة مسّخة\" (كيما المرا الساميرية وِلاَّ الرّاجل إلّي كانت "
+"فيه روح مسّخة من كورة الجدرييّن) يكون إنسان السّلام؟ علاه أي وعلاه لا؟"
 
 #: site/course/course-content.php:1594
 #, fuzzy
@@ -2565,6 +2637,7 @@ msgstr ""
 "الرّوح القدّوس يقود وقتكم."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
+#, fuzzy
 msgid "Faithfulness is Better than Knowledge"
 msgstr "الأمانة خير مالمعرفة"
 
@@ -2620,14 +2693,15 @@ msgstr ""
 "إنزل على زرّ \" آقف شوّية وقت\"وباشْ تتدّرب عليه مع المجموعة."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
+#, fuzzy
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
 msgstr ""
-"لاحظت فرق كبير بين مجموعات ثلاثة على ثلاثة، دروس الكتاب والمجموعات الصغيرة "
-"إلّي كنت جزء منها قبل( إلّي سمعت عليها) إذا كان الجواب أي كيفاه تأثّر الفروقات "
-"هذي على المجموعة؟"
+"لاحظت فرق كبير بين مجموعة 3/3، دروس الكتاب والمجموعات الصغيرة إلّي كنت جزء "
+"منها قبل( إلّي سمعت عليها) إذا كان الجواب أي كيفاه تأثّر الفروقات هذي على "
+"المجموعة؟"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 #, fuzzy
@@ -2660,15 +2734,17 @@ msgid "SESSION 7"
 msgstr "الجلسة 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
+#, fuzzy
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"صلّي وأشكر ربّي على إلتزام مجموعتك بتتْبيع يسوع بأمانة و خلّي روح ربّي القدّوس "
-"يقود وقتكم."
+"صلّي وأشكر ربّي على إلتزام مجموعتك بتتْبيع يسوع بأمانة و خلّي روح ربّي القدّ"
+"وس يقود وقتكم."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
+#, fuzzy
 msgid "The Training Cycle"
 msgstr "دورة التّدريب"
 
@@ -2682,10 +2758,12 @@ msgstr ""
 "وقتها بالحقّ تعرْفوا دورة التّدريب."
 
 #: site/course/course-content.php:2022
+#, fuzzy
 msgid "Have you ever been a part of a Training Cycle?"
 msgstr "كنت قبل جزء من دورة تدريبية؟"
 
 #: site/course/course-content.php:2023
+#, fuzzy
 msgid "Who did you train? Or who trained you?"
 msgstr "شكون درّبت؟ شكون درّبك؟"
 
@@ -2796,11 +2874,12 @@ msgid "And we will practice this tool from our toolkit:"
 msgstr "وباش ندرّبوا على الأداة هذي من مجموعة الأدوات الخاصة بينا:"
 
 #: site/course/course-content.php:2212
+#, fuzzy
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
-"قال يسوع، \"وهَاذَا مَا يِلْزْمُوشْ يْكُونْ بِينَاتْكُمْ، آمَا الِّي يْحِبْ يْكُونْ فِيكُمْ عْظِيمْ، لَازِمْ "
-"يْكُونْ لِيكُمْ خْدِيمْ\"."
+"قال يسوع، \"وهَاذَا مَا يِلْزْمُوشْ يْكُونْ بِينَاتْكُمْ، آمَا الِّي يْحِبْ "
+"يْكُونْ فِيكُمْ عْظِيمْ، لَازِمْ يْكُونْ لِيكُمْ خْدِيمْ\"."
 
 #: site/course/course-content.php:2239
 #, fuzzy
@@ -2890,8 +2969,9 @@ msgstr "النمّو الموش المتسلسل"
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
+#, fuzzy
 msgid "Four Fields"
-msgstr "أداة الحقول الأربعة"
+msgstr "الحقول الأربعة"
 
 #: site/course/course-content.php:2415
 #, fuzzy
@@ -2924,6 +3004,7 @@ msgstr ""
 "أبدييتنا لكلّ و إلّي نحددّوها في فترة قصيرة برشة إلّي هي الحياة."
 
 #: site/course/course-content.php:2486
+#, fuzzy
 msgid "Why is pace important?"
 msgstr "علاه السرعة مهمّة؟"
 
@@ -3506,6 +3587,7 @@ msgstr ""
 "في المجموعة كيما يراهم ربّي."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
+#, fuzzy
 msgid "The Prayer Cycle"
 msgstr "دورة الصّلاة"
 
@@ -4264,6 +4346,7 @@ msgid "Email"
 msgstr "العنوان الإلكتروني"
 
 #: site/dashboard/dashboard.php:181
+#, fuzzy
 msgid "Linked Accounts"
 msgstr "الحسابات المربوطة"
 
@@ -6627,7 +6710,7 @@ msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
-"هذا لكلّ لتّلامذة الّي يحبّوا يطيعوا المأمورية العظمى. يحدّد تدريب زومّيه "
+"هذا لتّلامذة الكلّ الّي يحبّوا يطيعوا المأمورية العظمى. يحدّد تدريب زومّيه "
 "أسلوب حياة مسيحي عادي. ~ د"
 
 #: site/pages/home.php:315

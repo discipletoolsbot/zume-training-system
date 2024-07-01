@@ -2,17 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Swahili <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/sw/>\n"
+"PO-Revision-Date: 2024-06-24 10:11+0000\n"
+"Last-Translator: Leila Mohamed <nevergvup.leila@gmail.com>\n"
+"Language-Team: Swahili <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/sw/>\n"
 "Language: swa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -613,11 +612,11 @@ msgstr "3-Miduara"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "Swali"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "Jibu"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -1009,9 +1008,8 @@ msgid "Save"
 msgstr "Hifadhi"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
-msgstr "ghauri"
+msgstr "Ghairi"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -3787,9 +3785,8 @@ msgid "Exit Course"
 msgstr "Toka kwenye Kozi"
 
 #: site/course/presenter.php:192
-#, fuzzy
 msgid "Slide View"
-msgstr "Mwonekano wa Gridi"
+msgstr "Mwonekano wa Slaidi"
 
 #: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 msgid "List View"
@@ -3808,12 +3805,10 @@ msgid "Session"
 msgstr "Kikao"
 
 #: site/course/presenter.php:198
-#, fuzzy
 msgid "View Transcript"
 msgstr "Tazama Nakala"
 
 #: site/course/presenter.php:199
-#, fuzzy
 msgid "View Activity"
 msgstr "Tazama Shughuli"
 
@@ -5569,13 +5564,12 @@ msgid "Connect"
 msgstr "Unganisha"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
-msgstr "Panga"
+msgstr "au"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Chagua kipindi cha kuingia"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -5980,9 +5974,9 @@ msgstr ""
 "Dhana na ujuzi huu ulibadilisha kanisa letu na athari zetu kwa ulimwengu. ~ R"
 
 #: site/pages/home.php:325
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Zume = Chachu"
+msgstr "%s = Chachu"
 
 #: site/pages/home.php:331
 msgid ""
@@ -6546,9 +6540,8 @@ msgid "Congratulations"
 msgstr "Hongera sana"
 
 #: utilities/apis/cta-api.php:209
-#, fuzzy
 msgid "Connected to Coach!"
-msgstr "Niunganishe kwa mkufunzi"
+msgstr "Imeunganishwa na Kocha!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
