@@ -1,4 +1,5 @@
-<style src="https://unpkg.com/@webcomponents/webcomponentsjs@%5E2/"></style>
+<?php //phpcs:ignore ?>
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@%5E2/"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
 </style>
