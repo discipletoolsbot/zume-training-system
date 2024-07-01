@@ -32,10 +32,20 @@
 }
 
 .reel > * + * {
-  margin-inline-start: 1rem;
+  margin-left: 1rem;
+
+  [dir="rtl"] & {
+    margin-left: unset;
+    margin-right: 1rem;
+  }
 }
 
 .reel.overflowing {
-  padding-block-end: 1rem;
-  padding-inline-end: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+
+  [dir="rtl"] & {
+    padding-right: unset;
+    padding-left: 1rem;
+  }
 }

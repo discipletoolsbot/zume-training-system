@@ -1,4 +1,5 @@
 import create_config from '@kucrut/vite-for-wp'
+import autoprefixer from 'autoprefixer'
 
 const config = create_config(
     [
@@ -13,6 +14,13 @@ const config = create_config(
                     chunkFileNames: `assets/[name]-bundle.js`,
                     assetFileNames: `assets/[name].[ext]`
                 }
+            }
+        },
+        css: {
+            postcss: {
+                plugins: [
+                    autoprefixer({})
+                ]
             }
         }
     }

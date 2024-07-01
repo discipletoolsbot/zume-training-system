@@ -28,7 +28,8 @@ export class CalendarSelect extends LitElement {
             font-size: min(6cqw, 18px);
           }
           .calendar-footer {
-            margin-inline: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
           }
           .repel {
             display: flex;
@@ -103,7 +104,8 @@ export class CalendarSelect extends LitElement {
             font-size: 1.1em;
             font-weight: 600;
             grid-column: 2 / 7;
-            margin-block: 0;
+            margin-top: 0;
+            margin-bottom: 0;
           }
           .month-title.full-width {
             grid-column: 1 / 8;
@@ -150,8 +152,10 @@ export class CalendarSelect extends LitElement {
             justify-content: center;
             fill: var(--cp-color);
             background-color: var(--cp-hover-color);
-            margin-inline: 10%;
-            margin-block: auto;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: auto;
+            margin-bottom: auto;
             aspect-ratio: 3 / 4;
             border-radius: 10%;
             transition: all 50ms linear;
