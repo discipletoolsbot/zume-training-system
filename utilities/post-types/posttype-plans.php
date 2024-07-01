@@ -542,6 +542,16 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             ];
 
 
+            $fields['created_date'] = [
+                'name'        => 'Created Date',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+
+
             $fields['participants'] = [
                 'name' => 'Participants',
                 'description' => '',
@@ -577,14 +587,14 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     public function dt_details_additional_tiles( $tiles, $post_type = '' ){
         if ( $post_type === $this->post_type ){
             $tiles['participants'] = [ 'label' => 'Participants' ];
-            $tiles['install'] = [ 'label' => 'Install' ];
+//            $tiles['install'] = [ 'label' => 'Install' ];
         }
         return $tiles;
     }
 
     public function dt_details_additional_section( $section, $post_type ){
-
-        if ( $post_type === $this->post_type && $section === 'install' ) {
+/*
+//        if ( $post_type === $this->post_type && $section === 'install' ) {
 //            $fields = DT_Posts::get_post_field_settings( $post_type );
 //            $post = DT_Posts::get_post( $this->post_type, get_the_ID() );
             ?>
@@ -660,6 +670,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 });
             </script>
         <?php }
+    */
     }
 
     public function post_connection_added( $post_type, $post_id, $field_key, $value ){
