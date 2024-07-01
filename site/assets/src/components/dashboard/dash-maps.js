@@ -24,7 +24,7 @@ export class DashMaps extends DashPage {
     }
 
     firstUpdated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     joinCommunity() {

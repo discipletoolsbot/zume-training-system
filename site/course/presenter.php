@@ -132,8 +132,6 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
                             <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
 
-                            <?php /* TODO: Generate/create list of language names+codes that have translated course slides
-                                    @note This could be set up to default to english if the the language called is not available.  */ ?>
                             <?php $languages = zume_feature_flag( 'course_slides_download' ); ?>
                             <?php $any_downloads_available = false ?>
                             <?php

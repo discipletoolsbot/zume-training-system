@@ -32,6 +32,9 @@ export class DashPlans extends DashPage {
 
         this.renderListItem = this.renderListItem.bind(this)
         this.closeCommitmentsModal = this.closeCommitmentsModal.bind(this)
+        document.querySelectorAll('.reveal-overlay #commitments-form').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     firstUpdated() {
@@ -41,7 +44,7 @@ export class DashPlans extends DashPage {
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     fetchCommitments() {

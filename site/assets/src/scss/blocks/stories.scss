@@ -1,7 +1,15 @@
 .story-reel {
+    position: absolute;
+    bottom: 0;
     left: 40%;
+    right: 0;
     margin-bottom: spacing(0);
     padding-bottom: spacing(0);
+
+    [dir="rtl"] & {
+        right: 40%;
+        left: 0;
+    }
 }
 
 .story-card {
@@ -42,7 +50,12 @@
 
     .story-reel {
         margin-top: spacing(0);
-        margin-inline-start: spacing(0);
+        margin-left: spacing(0);
+
+        [dir="rtl"] & {
+            margin-left: unset;
+            margin-right: spacing(0);
+        }
     }
 
     .story-card {

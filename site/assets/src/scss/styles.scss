@@ -99,7 +99,12 @@ ul {
 .activity-page ul,
 ul.bullets {
   list-style: disc;
-  margin-inline-start: spacing(3);
+  left: spacing(3);
+
+  [dir="rtl"] & {
+    left: unset;
+    right: spacing(3);
+  }
 }
 
 ul[role="list"] {
@@ -116,6 +121,18 @@ ul[role="list"] {
     left: 0;
     top: 0;
     line-height: 0.9;
+  }
+
+  [dir="rtl"] & {
+    li {
+      padding-left: unset;
+      padding-right: 1.7em;
+    }
+
+    li:before {
+      left: unset;
+      right: 0;
+    }
   }
   &[data-brand-light] li:before {
     color: color('brand-light');
@@ -170,19 +187,22 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .container {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(90% + ( 10 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $max-width;
 }
 
 .container-md {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(70% + ( 30 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $width-lg;
 }
 
 .container-sm {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(50% + ( 50 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $width-md;
 
@@ -192,13 +212,15 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .container-xsm {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(30% + ( 80 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $width-sm;
 }
 
 .container-xsm {
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(30% + ( 80 / 100 * $min-width ) - ( 2 * $small-margin ) );
   max-width: $break-lg;
 }
@@ -212,7 +234,8 @@ input::-webkit-calendar-picker-indicator {
   z-index: 20;
   background-color: color('brand');
   color: color('white');
-  padding-block: spacing(-2);
+  padding-top: spacing(-2);
+  padding-bottom: spacing(-2);
   text-align: center;
   font-size: 14px;
 }
@@ -228,8 +251,10 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .nav__button {
-  padding-inline: spacing(0);
-  padding-block: spacing(-5);
+  padding-left: spacing(0);
+  padding-right: spacing(0);
+  padding-top: spacing(-5);
+  padding-bottom: spacing(-5);
   font-weight: 400;
   text-transform: none;
 }
@@ -238,8 +263,10 @@ input::-webkit-calendar-picker-indicator {
   align-items: center;
   gap: spacing(-2);
   flex-grow: 0;
-  padding-block: spacing(-3);
-  padding-inline: spacing(-1);
+  padding-top: spacing(-3);
+  padding-bottom: spacing(-3);
+  padding-left: spacing(-1);
+  padding-right: spacing(-1);
   border-radius: 100px;
   transition: all 100ms linear;
   transition-property: color, background-color;
@@ -334,10 +361,11 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .page {
-  padding-block: spacing(4)
+  padding-top: spacing(4);
+  padding-bottom: spacing(4);
 }
 .content {
-  margin-block-end: spacing(7);
+  margin-bottom: spacing(7);
 }
 
 .line-text {
@@ -376,10 +404,15 @@ input::-webkit-calendar-picker-indicator {
   opacity: 0.05;
 }
 .bg-path {
-  inset-block-end: -59%;
-  inset-inline-start: -25%;
-  inset-inline-end: -100%;
+  bottom: -59%;
+  left: -25%;
+  right: -100%;
   z-index: -1;
+
+  [dir="rtl"] & {
+    left: -100%;
+    right: -25%;
+  }
 }
 
 .flip {
@@ -472,8 +505,9 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .resources-cover {
-  margin-inline: -1rem;
-  margin-block-end: -1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
 
   background: linear-gradient( transparent, color('gray-100') 50% );
 }
@@ -504,18 +538,22 @@ input::-webkit-calendar-picker-indicator {
     z-index: -1;
   }
   &.right::after {
-    inset-inline-end: 1px;
+    right: 1px;
     transform: translateX(100%);
 
     [dir="rtl"] & {
+      right: unset;
+      left: 1px;
       transform: translateX(-100%);
     }
   }
   &.left::after {
-    inset-inline-start: 1px;
+    left: 1px;
     transform: translateX(-100%);
 
     [dir="rtl"] & {
+      left: unset;
+      right: 1px;
       transform: translateX(100%);
     }
   }
@@ -542,17 +580,21 @@ input::-webkit-calendar-picker-indicator {
   }
   &.right::before {
     transform: translateX(-50%);
-    inset-inline-start: 0;
+    left: 0;
 
     [dir="rtl"] & {
+      left: unset;
+      right: 0;
       transform: translateX(50%);
     }
   }
   &.left::before {
     transform: translateX(50%);
-    inset-inline-end: 0;
+    right: 0;
 
     [dir="rtl"] & {
+      right: unset;
+      left: 0;
       transform: translateX(-50%);
     }
   }
@@ -614,7 +656,10 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .context-alert {
-  inset: auto 0 85% 0;
+  top: auto;
+  right: 0;
+  bottom: 85%;
+  left: 0;
   padding: 0.25em;
   color: color('white');
   font-weight: bold;
@@ -627,7 +672,10 @@ input::-webkit-calendar-picker-indicator {
     content: "";
     display: block;
     height: 0.5em;
-    inset: auto auto -0.25em 50%;
+    top: auto;
+    right: auto;
+    bottom: -0.25em;
+    left: 50%;
     transform: translateX(-50%) rotate(45deg);
     width: 0.5em;
 }
@@ -636,20 +684,24 @@ input::-webkit-calendar-picker-indicator {
   position: absolute;
 }
 .course-index {
-  min-block-size: 100vh;
-  padding-block: spacing(2);
+  min-height: 100vh;
+  padding-top: spacing(2);
+  padding-bottom: spacing(2);
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: auto;
   z-index: 1;
 }
 
-.collapse {
+.zume-collapse {
   height: 0;
   transition: height 0.2s ease-out;
   overflow: hidden;
 }
-.collapse[data-state="open"] {
+.zume-collapse[data-state="open"] {
   overflow: initial;
   height: auto;
 }
@@ -673,7 +725,8 @@ input::-webkit-calendar-picker-indicator {
   grid-template-columns: auto 1fr;
   width: 100%;
   max-width: $max-width;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   & .left-menu {
     display: flex;
@@ -691,12 +744,14 @@ input::-webkit-calendar-picker-indicator {
   }
 
   & .content {
-    margin-inline: spacing(2);
+    margin-left: spacing(2);
+    margin-right: spacing(2);
   }
 }
 
 .training-link {
-  padding-block: spacing(-3);
+  padding-top: spacing(-3);
+  padding-bottom: spacing(-3);
   transition: all 100ms linear;
 
   & > a {
@@ -756,7 +811,8 @@ input::-webkit-calendar-picker-indicator {
   color: color('black');
   justify-content: center;
   aspect-ratio: 1;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: spacing(1);
   max-width: 16rem;
   width: 100%;
@@ -818,7 +874,7 @@ input::-webkit-calendar-picker-indicator {
     }
 
     launch-course {
-        margin-inline-end: calc( -1 * var(--s0, 1em) );
+        margin-right: calc( -1 * var(--s0, 1em) );
     }
 }
 @media (max-width: $break-lg) {

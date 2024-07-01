@@ -77,7 +77,8 @@
 
     aspect-ratio: 16 / 9;
     max-height: 100vh;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: color(white);
 
@@ -90,19 +91,24 @@
         color: color('brand-dark');
     }
     p {
-        margin-block-end: unset;
+        margin-bottom: unset;
     }
     strong {
         font-weight: 600;
     }
     ul.bullets {
-        margin-inline-start: spacing(2);
+        margin-left: spacing(2);
+
+        [dir="rtl"] & {
+            margin-left: unset;
+            margin-right: spacing(2);
+        }
     }
 
     /* Composition */
     & > :nth-child(2) {
         height: calc( var(--slide-height, 100%) - calc( 3.5 * var(--slide-unit) ) );
-        min-block-size: calc( var(--slide-height, 100%) - calc( 3.5 * var(--slide-unit) ) );
+        min-height: calc( var(--slide-height, 100%) - calc( 3.5 * var(--slide-unit) ) );
         position: relative;
     }
 
@@ -114,7 +120,7 @@
         flex-direction: column;
     }
     .cover-page {
-        min-block-size: var(--slide-height, 100%);
+        min-height: var(--slide-height, 100%);
     }
 
     /* Blocks */
@@ -164,7 +170,8 @@
         box-shadow: 0px calc( var(--slide-unit) * 0.3 ) calc( var(--slide-unit) * 0.2 ) 0px #0c1a2130;
 
         &[data-expanded-padding] {
-            padding-block: calc( var(--slide-unit) * 4 );
+            padding-top: calc( var(--slide-unit) * 4 );
+            padding-bottom: calc( var(--slide-unit) * 4 );
         }
 
         &[data-large] {
@@ -182,7 +189,7 @@
 
         & > .two-column {
             position: static;
-            min-block-size: auto;
+            min-height: auto;
             flex-grow: 0;
 
             & > *::after {
@@ -205,7 +212,8 @@
     overflow: hidden;
     background-color: #2DADE2;
     max-height: 100vh;
-    margin-inline: auto;
+    margin-left: auto;
+  margin-right: auto;
     position: relative;
     max-width: calc( 100% - 2 * 8.125% );
 
@@ -238,7 +246,8 @@ not of the 2 column section */
 /* The divider is contained in the ::after pseudoelement of the first column (:first-child) */
 .two-column {
     --gap-width: calc( 8 * var(--slide-unit) );
-    padding-inline: calc( var(--gap-width) / 2 );
+    padding-left: calc( var(--gap-width) / 2 );
+    padding-right: calc( var(--gap-width) / 2 );
     display: flex;
     align-items: stretch;
     width: 100%;
@@ -331,12 +340,21 @@ not of the 2 column section */
     align-items: center;
 
     & > * {
-        border-inline-end: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        border-right: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         border-top: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         border-bottom: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+
+        [dir="rtl"] & {
+            border-right: unset;
+            border-left: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        }
     }
     & > :first-child {
-        border-inline-start: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        border-left: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+
+        [dir="rtl"] & {
+            border-right: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        }
     }
 }
 .progress-bar-item {

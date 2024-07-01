@@ -3,7 +3,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    border-inline-end: 2px solid color('gray-100');
+    border-right: 2px solid color('gray-100');
+
+    [dir="rtl"] & {
+        border-right: unset;
+        border-left: 2px solid color('gray-100');
+    }
 }
 
 .list__item {
@@ -12,18 +17,21 @@
     justify-content: space-between;
     align-items: stretch;
     padding: spacing(0) spacing(0);
-    border-block: 2px solid color('gray-100');
+    border-top: 2px solid color('gray-100');
+    border-bottom: 2px solid color('gray-100');
     gap: spacing(0);
 
     /* Prevent double width borders by pulling each list item up to overlap their borders */
-    margin-block-start: -2px;
+    margin-top: -2px;
 
     &.tight {
-        padding-block: spacing(-2);
+        padding-top: spacing(-2);
+        padding-bottom: spacing(-2);
     }
 
     & .btn {
-        padding-block: spacing(-2);
+        padding-top: spacing(-2);
+        padding-bottom: spacing(-2);
         line-height: 1;
     }
 
@@ -33,9 +41,15 @@
 
     &[data-depth]:not([data-depth="0"]) {
         --child-margin: #{spacing(1)};
-        border-inline-start: 2px solid color('gray-100');
+        border-left: 2px solid color('gray-100');
         transform-style: preserve-3d;
-        margin-inline-start: calc( var(--depth, 0) * var(--child-margin) );
+        margin-left: calc( var(--depth, 0) * var(--child-margin) );
+
+        [dir="rtl"] & {
+            border-right: 2px solid color('gray-100');
+            margin-left: unset;
+            margin-right: calc( var(--depth, 0) * var(--child-margin) );
+        }
 
         &::before {
             --pipe-width: 5px;
@@ -46,9 +60,14 @@
             width: calc( 0.5 * var(--child-margin) + var(--pipe-width, 5px) );
             height: 120%;
             transform: translate(-100%, -50%) translateZ(-10px);
-            border-inline-start: var(--pipe-width, 5px) solid color('brand-light');
-            border-block-end: var(--pipe-width, 5px) solid color('brand-light');
-            border-end-start-radius: 10px;
+            border-left: var(--pipe-width, 5px) solid color('brand-light');
+            border-bottom: var(--pipe-width, 5px) solid color('brand-light');
+            border-bottom-left-radius: 10px;
+
+            [dir="rtl"] & {
+                border-bottom-left-radius: unset;
+                border-bottom-right-radius: 10px;
+            }
         }
     }
 }
@@ -73,7 +92,12 @@
     gap: spacing(0);
 
     & > :first-child {
-        margin-inline-start: auto;
+        margin-left: auto;
+
+        [dir="rtl"] & {
+            margin-left: unset;
+            margin-right: auto;
+        }
     }
 
     & .icon {

@@ -57,5 +57,8 @@
     $intercept-rems: math.div( $intercept, $rem-value-in-pixels );
     $gradient-vw: $gradient * 100;
 
-    @return clamp( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw, $max-size-rems * 1rem );
+    @return min( $max-size-rems * 1rem, max( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw ) );
+
+    /* Browser support for clamp isn't close to 100% yet, so falling back to a min/max implementation of clamp */
+    //@return clamp( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw, $max-size-rems * 1rem );
 }

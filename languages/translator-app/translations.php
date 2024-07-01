@@ -137,10 +137,10 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     color: var(--z-brand-light);
                 }
                 ol, ul {
-                    margin-block-end: var(--s2);
+                    margin-bottom: var(--s2);
                 }
                 img {
-                    margin-block-end: var(--s2)
+                    margin-bottom: var(--s2)
                 }
                 .checkmark {
                     display: inline-block;

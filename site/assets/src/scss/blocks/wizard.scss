@@ -1,10 +1,15 @@
 #wizard-skip-button {
     position: absolute;
     top: 0;
-    inset-inline-end: 0;
+    right: 0;
     bottom: 0;
     display: flex;
     align-items: center;
+
+    [dir="rtl"] & {
+        right: unset;
+        left: 0;
+    }
 }
 
 .make-training__save-area {

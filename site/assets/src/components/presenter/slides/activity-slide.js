@@ -11,7 +11,7 @@ export class ActivitySlide extends CourseSlide {
     }
 
     firstUpdated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
 
         this.offCanvasId = 'activityOffCanvas' + this.id
         this.offCanvasSelector = '#' + this.offCanvasId

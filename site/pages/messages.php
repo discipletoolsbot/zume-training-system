@@ -162,7 +162,8 @@ class Zume_Messages extends Zume_Magic_Page
                     #zmail .zmail-topbar {
                         background-color: #008cc7;
                         color: white;
-                        padding-block: .3em;
+                        padding-top: .3em;
+                        padding-bottom: .3em;
                         display: flex;
                         align-items: center;
                     }

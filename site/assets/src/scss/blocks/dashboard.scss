@@ -13,7 +13,12 @@
 
 .dashboard__sidebar {
     grid-area: sidebar;
-    border-inline-end: 2px solid var(--border-color-main);
+    border-right: 2px solid var(--border-color-main);
+
+    [dir="rtl"] & {
+        border-right: unset;
+        border-left: 2px solid var(--border-color-main);
+    }
 
     .footer-links {
         margin-top: spacing(0);
@@ -29,8 +34,9 @@
 .profile-area {
     display: flex;
     flex-direction: column;
-    margin-inline: auto;
-    margin-block-end: spacing(1);
+    margin-left: auto;
+  margin-right: auto;
+    margin-bottom: spacing(1);
 }
 .profile-btn {
     border-radius: 100px;
@@ -41,11 +47,12 @@
     font-weight: bold;
     line-height: 1;
     width: fit-content;
-    margin-inline: auto;
+    margin-left: auto;
+  margin-right: auto;
     padding: var(--s-1);
 }
 .profile-name {
-    margin-block-start: var(--s-3);
+    margin-top: var(--s-3);
     font-size: font-size(-2);
     text-align: center;
 }
@@ -60,8 +67,6 @@ dash-sidebar-toggle {
 .sidebar-wrapper {
     position: sticky;
     overflow-y: auto;
-    padding-inline-end: 4px;
-    padding-block-end: 4px;
     background-color: color('white');
     padding: spacing(0);
 }
@@ -82,7 +87,7 @@ dash-sidebar-toggle {
 
 .dashboard__header {
     background-color: var(--bg-color-main);
-    border-block-end: 2px solid var(--border-color-main);
+    border-bottom: 2px solid var(--border-color-main);
     padding: spacing(0);
     display: flex;
     justify-content: space-between;
@@ -92,6 +97,7 @@ dash-sidebar-toggle {
 
     h1 {
         margin-bottom: 0;
+        word-break: break-word;
     }
 }
 .dashboard__header.left {
@@ -234,7 +240,10 @@ dash-header-right {
     .sidebar__trigger-close-background {
         background-color: rgba(0,0,0,0.5);
         position: fixed;
-        inset: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         transition: opacity 200ms ease-in-out;
         z-index: 99;
         opacity: 0;

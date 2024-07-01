@@ -54,6 +54,12 @@ export class DashTrainings extends DashPage {
         if ( this.code !== 'teaser' ) {
             this.getTraining()
         }
+        document.querySelectorAll('.reveal-overlay #edit-session-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
+        document.querySelectorAll('.reveal-overlay #edit-session-details-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     willUpdate(properties) {
@@ -67,11 +73,12 @@ export class DashTrainings extends DashPage {
     firstUpdated() {
         super.firstUpdated()
 
+        jQuery(this.renderRoot).foundation();
         zumeAttachObservers()
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
         zumeAttachObservers()
     }
 
@@ -183,7 +190,7 @@ export class DashTrainings extends DashPage {
         return url.href
     }
     getNumberOfSessions() {
-        const set_type = this.training.set_type.key
+        const set_type = this.getTrainingType()
         switch (set_type) {
             case 'set_a':
                 return 10
@@ -302,7 +309,8 @@ export class DashTrainings extends DashPage {
         jQuery(modal).foundation('close')
     }
 
-    editSessionDetails() {
+    editSessionDetails(event) {
+        event.stopImmediatePropagation()
         document.querySelector('#location-note').value = this.training.location_note
         document.querySelector('#time-of-day-note').value = this.training.time_of_day_note
 
@@ -507,7 +515,7 @@ export class DashTrainings extends DashPage {
                         </div>
                     </div>
                 </div>
-                <div class="list__tertiary collapse" ?data-open=${this.openDetailStates[id]}>
+                <div class="list__tertiary zume-collapse" ?data-open=${this.openDetailStates[id]}>
                     <ul class="pt-0 ps-2" role="list" data-brand-light>
                         ${
                             trainingItems.map((item) => html`
@@ -715,7 +723,7 @@ export class DashTrainings extends DashPage {
                                             '/chevron.svg'}
                                         />
                                     </button>
-                                    <div class="collapse" ?data-open=${this.groupMembersOpen}>
+                                    <div class="zume-collapse" ?data-open=${this.groupMembersOpen}>
                                         ${!this.loading && this.groupMembers && this.groupMembers.length > 0
                                             ? html`
                                                 <ol class="ps-1">
@@ -745,7 +753,7 @@ export class DashTrainings extends DashPage {
                                             '/chevron.svg'}
                                         />
                                     </button>
-                                    <div class="collapse" ?data-open=${this.groupDetailsOpen}>
+                                    <div class="zume-collapse" ?data-open=${this.groupDetailsOpen}>
                                         <div class="stack--2">
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.location}:</span> ${this.training.location_note}</p>
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.time}:</span> ${this.training.time_of_day_note}</p>

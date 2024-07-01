@@ -20,7 +20,7 @@ export class CalendarList extends LitElement {
     }
 
     firstUpdated() {
-        jQuery(document).foundation()
+        jQuery(this.renderRoot).foundation()
     }
 
     connectedCallback() {

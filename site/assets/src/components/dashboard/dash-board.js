@@ -603,7 +603,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         return Object.keys(this.trainingGroups).length
     }
     toggleTrainingGroups() {
-        jQuery(document).foundation()
+        jQuery(this.renderRoot).foundation()
         jQuery('#training-menu').foundation(
             'toggle',
             jQuery('#training-groups-menu')
@@ -654,7 +654,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         }
     }
     updateTrainingGroups() {
-        zumeRequest.get('plans', {}).then((results) => {
+        zumeRequest.get('plans').then((results) => {
             this.trainingGroups = results
         })
     }
@@ -693,9 +693,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 <div class="dashboard__sidebar">
                     <div
                         class="sidebar-wrapper"
-                        style="top: ${this
-                            .menuOffset}px; height: calc( min( 100%, 100vh ) - ${this
-                            .menuOffset}px - var(--s0) );"
+                        style="top: ${this.menuOffset}px; height: calc( min( 100%, 100vh ) - ${this.menuOffset}px );"
                     >
                         <button
                             class="close-btn ms-auto dashboard__sidebar-toggle break-large break-medium"

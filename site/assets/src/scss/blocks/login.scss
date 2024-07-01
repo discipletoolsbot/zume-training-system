@@ -15,7 +15,7 @@
     }
 
     .firebaseui-idp-list> * + *, .firebaseui-tenant-list> * + * {
-        margin-block-start: spacing(-1);
+        margin-top: spacing(-1);
     }
 
     .firebaseui-idp-list>.firebaseui-list-item, .firebaseui-tenant-list>.firebaseui-list-item {
@@ -25,7 +25,8 @@
     .firebaseui-idp-button, .firebaseui-tenant-button {
         max-width: 100%;
 
-        padding-block: 2px;
+        padding-top: 2px;
+        padding-bottom: 2px;
         border-radius: 50px;
         font-family: var(--font-family);
     }

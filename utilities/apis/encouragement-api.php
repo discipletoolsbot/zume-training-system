@@ -61,9 +61,9 @@ class Zume_System_Encouragement_API
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
         if ( is_user_logged_in() ) {
-            return $this->user($params);
+            return $this->user( $params );
         } else {
-            return $this->guest($params);
+            return $this->guest( $params );
         }
     }
     public function user($params)

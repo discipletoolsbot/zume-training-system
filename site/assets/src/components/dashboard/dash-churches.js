@@ -21,6 +21,9 @@ export class DashChurches extends DashPage {
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     firstUpdated() {
@@ -30,7 +33,7 @@ export class DashChurches extends DashPage {
         addChurchForm.addEventListener('submit', this.handleSubmit)
     }
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     joinCommunity() {

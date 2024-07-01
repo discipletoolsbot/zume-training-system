@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-12 08:47+0000\n"
-"Last-Translator: Ruby <rubina_shakya@live.com>\n"
-"Language-Team: Nepali <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ne_NP/>\n"
+"PO-Revision-Date: 2024-06-22 14:59+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Nepali <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ne_NP/>\n"
 "Language: ne_NP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -599,11 +599,11 @@ msgstr "३-चक्रहरु"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "प्रश्न"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "जवाफ"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -992,7 +992,6 @@ msgid "Save"
 msgstr "सेभ"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
 msgstr "रद्द गर्नुहोस्"
 
@@ -5439,13 +5438,12 @@ msgid "Connect"
 msgstr "जडान गर्नुहोस्"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
 msgstr "क्रमबद्ध गर्नुहोस्"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "चेकइन गर्न सत्र छान्नुहोस्"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -6393,9 +6391,8 @@ msgid "Congratulations"
 msgstr "बधाई छ"
 
 #: utilities/apis/cta-api.php:209
-#, fuzzy
 msgid "Connected to Coach!"
-msgstr "तपाईंलाई प्रशिक्षक सँग जडान गर्दै"
+msgstr "कोचमा जडान भयो!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"

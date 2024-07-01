@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-15 18:59+0000\n"
+"PO-Revision-Date: 2024-06-25 16:31+0000\n"
 "Last-Translator: Dragana <celikdragana0@gmail.com>\n"
-"Language-Team: Bosnian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/bs_BA/>\n"
+"Language-Team: Bosnian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/bs_BA/>\n"
 "Language: bs_BA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.1\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -611,11 +611,11 @@ msgstr "3-kruga"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "Pitanja"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "Odgovor"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -1006,9 +1006,8 @@ msgid "Save"
 msgstr "Sačuvaj"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
-msgstr "Otkaži"
+msgstr "Otkažite"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -5558,13 +5557,12 @@ msgid "Connect"
 msgstr "Povežite se"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
-msgstr "Poredajte"
+msgstr "ili"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Izaberi lekcije da se prijaviš"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -6532,9 +6530,8 @@ msgid "Congratulations"
 msgstr "Čestitam"
 
 #: utilities/apis/cta-api.php:209
-#, fuzzy
 msgid "Connected to Coach!"
-msgstr "Povezivanje sa trenerom"
+msgstr "Povezano s trenerom!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"

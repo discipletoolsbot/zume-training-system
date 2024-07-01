@@ -2,7 +2,7 @@ import { DataWatcher } from "./DataWatcher"
 
 export const zumeAttachObservers = () => {
 
-    const collapseElements = document.querySelectorAll('.collapse')
+    const collapseElements = document.querySelectorAll('.zume-collapse')
 
     collapseElements.forEach((collapse) => {
         new DataWatcher( collapse, 'open', onDataChanged )

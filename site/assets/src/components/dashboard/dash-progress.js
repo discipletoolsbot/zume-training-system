@@ -40,7 +40,9 @@ export class DashProgress extends DashPage {
 
         this.renderListItem = this.renderListItem.bind(this)
         this.closeInfoModal = this.closeInfoModal.bind(this)
-
+        document.querySelectorAll('.reveal-overlay #progress-modal').forEach((element) => {
+            element.parentElement.remove()
+        })
     }
 
     firstUpdated() {
@@ -50,7 +52,7 @@ export class DashProgress extends DashPage {
     }
 
     updated() {
-        jQuery(document).foundation();
+        jQuery(this.renderRoot).foundation();
     }
 
     openInfoModal() {
@@ -184,7 +186,7 @@ export class DashProgress extends DashPage {
             <li class="switcher | switcher-width-30 list__item tight" @click=${() => this.toggleDetails(key)} role="button">
                 <div>
                     <h2 class="h5 bold m0">${title}</h2>
-                    <div class="collapse" id="details-${key}" ?data-open=${this.openStates[key]}>
+                    <div class="zume-collapse" id="details-${key}" ?data-open=${this.openStates[key]}>
                         <div class="stack--2 mt--2">
                             <p class="f--1 gray-700">${description}</p>
                             <div class="cluster">
