@@ -693,9 +693,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 <div class="dashboard__sidebar">
                     <div
                         class="sidebar-wrapper"
-                        style="top: ${this
-                            .menuOffset}px; height: calc( min( 100%, 100vh ) - ${this
-                            .menuOffset}px - var(--s0) );"
+                        style="top: ${this.menuOffset}px; height: calc( min( 100%, 100vh ) - ${this.menuOffset}px );"
                     >
                         <button
                             class="close-btn ms-auto dashboard__sidebar-toggle break-large break-medium"
