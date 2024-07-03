@@ -222,6 +222,28 @@ class Zume_Training_Translations extends Zume_Magic_Page
         $strings = zume_word_count_english();
 
         ?>
+        <style>
+            span.green {
+                background-color: green;
+                width: 20px;
+                height: 20px;
+                padding: 0 .6em;
+                color: white;
+            }
+            span.green::after {
+                content: "\2713";
+            }
+            span.red {
+                background-color: red;
+                width: 20px;
+                height: 20px;
+                padding: 0 .7em;
+            }
+            span.red::after {
+                content: "\2717";
+            }
+
+        </style>
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <div class="grid-x grid-padding-x" >
                 <div class="cell medium-9" id="translator-tabs">
@@ -285,17 +307,19 @@ class Zume_Training_Translations extends Zume_Magic_Page
                 </table>
             </div>
 
-            <div class="cell medium-6">
+            <div class="cell medium-12">
                 <h3>Global List</h3><hr></hr>
                 <table>
                     <thead>
                     <tr>
-                        <th>Language</th>
-                        <th>Code</th>
-                        <th>Locale</th>
-                        <th style="width:5%">Active</th>
-                        <th style="width:5%">Selector</th>
-                        <th style="width:5%">Pieces</th>
+                        <th style="width:10%">Language</th>
+                        <th style="width:5%">Code</th>
+                        <th style="width:5%">Locale</th>
+                        <th style="width:10%">v4 Available</th>
+                        <th style="width:10%">Translator Enabled</th>
+                        <th style="width:10%">v5 Ready</th>
+                        <th style="width:10%">Pieces</th>
+                        <th style="width:10%">Slide Download Ready</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -307,9 +331,11 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             <td><?php echo $language['name'] ?></td>
                             <td><?php echo $language['code'] ?></td>
                             <td><?php echo $language['locale'] ?></td>
-                            <td><span style="font-weight:bold;"><?php echo ( $language['enabled'] ) ? 'Yes' : 'No' ?></span></td>
-                            <td><?php echo ( $language['feature_flags']['language_selector'] ) ? 'Yes' : 'No' ?></td>
-                            <td><?php echo ( $language['feature_flags']['pieces_pages'] ) ? 'Yes' : 'No' ?></td>
+                            <td><?php echo ( $language['enable_flags']['version_4_available'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $language['enable_flags']['translator_enabled'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $language['enable_flags']['version_5_ready'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $language['enable_flags']['pieces_pages'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $language['enable_flags']['course_slides_download'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                         </tr>
                         <?php
                     }

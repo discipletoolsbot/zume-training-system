@@ -10,7 +10,7 @@
         $url_pieces = zume_get_url_pieces();
 
         foreach ( $zume_languages_by_code as $item ){
-            if ( $item['feature_flags']['language_selector'] === false ) {
+            if ( ! ( $item['enable_flags']['version_5_ready'] || $item['enable_flags']['version_4_available'] ) ) {
                 continue;
             }
 
