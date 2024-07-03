@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-24 10:11+0000\n"
+"PO-Revision-Date: 2024-07-02 19:18+0000\n"
 "Last-Translator: Leila Mohamed <nevergvup.leila@gmail.com>\n"
 "Language-Team: Swahili <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/sw/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -30,7 +30,7 @@ msgstr "Pakua Kitabu cha Mwongozo cha Zume"
 
 #: appearance/style-override/navigation.php:97
 msgid "FAQs"
-msgstr "Orodha ya maswali na majibu yanayohusiana na somo fulani"
+msgstr "Maswali na majibu"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
@@ -58,7 +58,7 @@ msgstr "Mafunzo"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
-msgstr "Vipimo"
+msgstr "Metriki"
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
@@ -122,7 +122,7 @@ msgstr ""
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr "kusikia na kumtii Mungu"
+msgstr "Kumsikia na Kumtii Mungu"
 
 #: globals.php:1975 globals.php:1977
 msgid "S.O.A.P.S. Bible Study"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: globals.php:2001
 msgid "Producer not Consumer"
-msgstr "Wazalishaji si Watumiaji"
+msgstr "Mtayarishaji sio Mtumiaji"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
@@ -280,7 +280,7 @@ msgstr ""
 
 #: globals.php:2085
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Kubwa, Kubwa, na Baraka Kubwa Zaidi"
+msgstr "Baraka Kuu, Kubwa, na Kubwa Zaidi"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -340,8 +340,8 @@ msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
-"Ni njia rahisi kutii amri ya Mungu ya kuwaombea wengine. Ni kama "
-"inavyosemekana tu - kuomba kwa Mungu wakati unazunguka!"
+"Ni njia rahisi kutii amri ya Mungu ya kuwaombea wengine. Na ni nini "
+"inaonekana tu - kuomba kwa Mungu wakati unazunguka!"
 
 #: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
@@ -394,7 +394,7 @@ msgstr "Fanya mazoezi rahisi ya kukumbusha njia za kuwaombea wengine."
 
 #: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
-msgstr "maombi ya BARAKA"
+msgstr "Taasisi ya B.L.E.S.S. Maombi"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
 msgid "3/3 Group Meeting Pattern"
@@ -435,7 +435,7 @@ msgstr "Mzunguko wa Mafundisho"
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
-msgstr "Chembe za Uongozi"
+msgstr "Seli za Uongozi"
 
 #: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
@@ -636,14 +636,14 @@ msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "Jitathmini mwenyewe kwa kutumia Kusikika, Kutii, Kushiriki, Kufunzwa."
+msgstr "Jitathmini mwenyewe kwa kutumia Heard, Obeyed, Shared, Funzwa."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
 msgid "Training Tools/Concepts"
-msgstr "Zana za Mafundisho"
+msgstr "Zana/Dhana za Mafunzo"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
@@ -731,7 +731,7 @@ msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "Wafundishe wengine kwa kutumia kielelezo, Saidia, Tazama, Ondoka."
+msgstr "Kocha wengine kwa kutumia Model, Assist, Watch, Ondoka."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
@@ -754,7 +754,7 @@ msgstr "Mfano"
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Assist"
-msgstr "Saidia"
+msgstr "Kusaidia"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -803,8 +803,8 @@ msgid ""
 "and never advance to full competence."
 msgstr ""
 "Kusaidia ni kumruhusu mwanafunzi kufanya mazoezi ya ustadi. Hii inachukua "
-"muda mrefu zaidi ya awamu ya mfano. Inahitaji \"kushika mkono\" kwa upande "
-"wa mshauri. Mshauri anahitaji kuwa muongozo na kuchukua jukumu kubwa katika "
+"muda mrefu zaidi ya awamu ya modeli. Inahitaji \"kushika mkono\" kwa sehemu "
+"ya mshauri. Mshauri anahitaji kuwa muongozo na kuchukua jukumu kubwa katika "
 "kumfundisha mwanafunzi. Awamu hii haidumu hadi mwanafunzi awe na uwezo "
 "kamili, lakini hadi tu aelewe misingi ya ujuzi. Ikiwa awamu hii itaendelezwa "
 "kwa muda mrefu sana, basi mwanafunzi atakuza utegemezi kwa mshauri na "
@@ -843,11 +843,11 @@ msgstr ""
 
 #: site/activities/coaching-checklist-two.php:98
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. Jitathimini kwa kutumia Kusikika, Kutii, Kushirikishwa, Kufunzwa."
+msgstr "1. Jitathimini kwa kutumia Heard, Obeyed, Shared, Trained."
 
 #: site/activities/coaching-checklist-two.php:99
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr "2. wafundishe wengine kwa kutumia Mfano, Saidia, Tazama, Ondoka."
+msgstr "2. Kocha wengine kwa kutumia Model, Assist, Watch, Ondoka."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
@@ -862,32 +862,32 @@ msgstr "Kiwango cha Maendeleo ya Wafadhili"
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr "kutokufahamu"
+msgstr "Bila kujua"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr "Kutokuwa na ujuzi"
+msgstr "Wasio na ujuzi"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
 msgid "Competent"
-msgstr "mhitimu"
+msgstr "Mwenye uwezo"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr "Wenye ujuzi"
+msgstr "Mwenye ujuzi"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr "Jukumu la mshauri"
+msgstr "Jukumu la Mshauri"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
-msgstr "Fundisha habari mpya na uhakikishe kueleweka"
+msgstr "Funza habari mpya na uhakikishe kuelewa"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
@@ -897,7 +897,7 @@ msgstr "Achana nao mpaka wapate mambo ya msingi"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
-msgstr "Endelea kujishughulisha hadi uwe na uwezo wa kustahimili wakati wote"
+msgstr "Kaa mchumba hadi uweze kustahimili kila wakati"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
@@ -906,15 +906,15 @@ msgstr "Shirikiana nao kama mfanyakazi mwenza"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr "Tabia za Mshauri"
+msgstr "Tabia za Mentor"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
-msgstr "Elekeza na Julisha"
+msgstr "Moja kwa moja na taarifa"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr "Elekeza na Saidia"
+msgstr "Moja kwa moja na msaada"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
@@ -926,15 +926,15 @@ msgstr "Pokea masasisho"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
-msgstr "Kupanga majukumu"
+msgstr "Majukumu ya Kupanga"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr "Mshauri anaamua"
+msgstr "Mentor anaamua"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr "Jadili na mshauri anaamua"
+msgstr "Jadili na Mentor anaamua"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
@@ -946,12 +946,12 @@ msgstr "Mentee anaamua"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "Je mshauri Hajui, hafahamu, au haelewi chombo hiki?"
+msgstr "Je, Mshauri hajui, hafahamu, au haelewi chombo hiki?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Je, Mshauri anaifahamu kwa kiasi fulani lakini bado hana uhakika kuhusu "
+"Je, Mentee anaifahamu kwa kiasi fulani lakini bado hana uhakika kuhusu "
 "chombo?"
 
 #: site/activities/coaching-checklist.php:272
@@ -963,12 +963,12 @@ msgstr ""
 
 #: site/activities/coaching-checklist.php:275
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
-msgstr "Je, Mshauri anajiamini na ana uwezo wa kufundisha chombo kwa ufanisi?"
+msgstr "Je, Mshauri anajiamini na anaweza kutoa mafunzo kwa zana kwa ufanisi?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
 msgid "Disciple"
-msgstr "wanafunzi"
+msgstr "Mwanafunzi"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -983,15 +983,15 @@ msgstr "Haijulikani"
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
 msgid "3-Month Plan"
-msgstr "Mpango wa miezi mitatu"
+msgstr "Mpango wa Miezi 3"
 
 #: site/activities/three-month-plan.php:67
 msgid "Switch to Printable Version"
-msgstr "adili hadi Toleo Linaloweza Kuchapishwa"
+msgstr "Badili hadi Toleo Linaloweza Kuchapishwa"
 
 #: site/activities/three-month-plan.php:80
 msgid "Scripts are off"
-msgstr "Maandiko yamefungwa"
+msgstr "Hati zimezimwa"
 
 #: site/activities/three-month-plan.php:81
 msgid ""
@@ -1018,9 +1018,9 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"Yesu alisema, “mtapokea nguvu wakati Rioho Mtakatifu atawajiaeni.Na mtakuwa "
-"mashahidi wangu,kuelezea watu kuhusu mimi kila sehemu-kule Yerusalemu,Yudea "
-"yote,Samaria,na mwisho wa dunia.”"
+"Yesu alisema, “Mtapokea nguvu akiisha kuwajilia juu yenu Roho Mtakatifu. "
+"Nanyi mtakuwa mashahidi wangu, mkihubiri habari zangu kila mahali, katika "
+"Yerusalemu, na katika Uyahudi wote, na Samaria, na hata miisho ya dunia.\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -1057,7 +1057,7 @@ msgstr "JADILI"
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:196
 msgid "(10 min)"
-msgstr "(Dakika 10)"
+msgstr "(dakika 10)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:27
 #: site/course/course-content.php:873
@@ -1199,7 +1199,7 @@ msgid ""
 "the Coaching Checklist."
 msgstr ""
 "Jitathmini - Jitathmini na uweke alama kwenye safu wima zinazolingana kwenye "
-"Orodha ya Uhakiki ya Ufundishaji."
+"Orodha ya Hakiki ya Ufundishaji."
 
 #: site/course/course-builder.php:194
 msgid "(1 min)"
@@ -1255,7 +1255,7 @@ msgstr "(dakika 70)"
 
 #: site/course/course-builder.php:209
 msgid "(75 min)"
-msgstr "(Dakika 75)"
+msgstr "(dakika 75)"
 
 #: site/course/course-builder.php:210
 msgid "(80 min)"
@@ -1642,8 +1642,7 @@ msgid ""
 msgstr ""
 "Anza kufanya mazoezi ya S.O.A.P.S. Kusoma Biblia kati ya sasa na mkutano "
 "wako ujao. Zingatia Mathayo 5-7, soma angalau mara moja kwa siku. Weka "
-"jarida la kila siku kwa kutumia S.O.A.P.S. muundo\n"
-"."
+"jarida la kila siku kwa kutumia S.O.A.P.S. muundo."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
@@ -1695,7 +1694,7 @@ msgstr "Omba Roho Mtakatifu wa Mungu aongoze wakati wako pamoja."
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
 msgid "LOOK BACK"
-msgstr "TAZAMA NYUMA"
+msgstr "ANGALIA NYUMA"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1763,7 +1762,7 @@ msgstr "Katika kikao hiki, tutasikia na kujadili dhana hii:"
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3531 site/course/course-content.php:3551
 msgid "Producer Not Consumer"
-msgstr "Mzalishaji si Mtumiaji"
+msgstr "Mtayarishaji Sio Mtumiaji"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
@@ -1881,8 +1880,8 @@ msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"Acha kila mtu katika kikundi chako achukue dakika 30 zinazofuata kujaza "
-"orodha yao ya mahusiano. Orodhesha nyingi uwezavyo."
+"Acha kila mtu katika kikundi chako achukue dakika 30 zijazo kujaza orodha "
+"yao ya mahusiano. Orodhesha nyingi uwezavyo."
 
 #: site/course/course-content.php:645
 msgid ""
@@ -1993,8 +1992,8 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"Yesu alisema, Enendeni, mkawafanye mataifa yote kuwa wanafunzi, mkiwabatiza "
-"kwa jina la Baba, na Mwana, na Roho Mtakatifu...\""
+"Yesu alisema, “Enendeni, mkawafanye mataifa yote kuwa wanafunzi, mkiwabatiza "
+"kwa jina la Baba, na Mwana, na Roho Mtakatifu…”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -2055,8 +2054,8 @@ msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
-"KUMBUSHO MUHIMU - Kikundi chako kitaadhimisha Meza ya Bwana kipindi kijacho. "
-"Hakikisha kukumbuka vifaa (mkate na divai / juisi)."
+"UZURI WA ANAYEKUKUMBUSHA-Kundi lako litasherehekea Meza ya Bwana awamu "
+"inayokuja.Kuwa na hakika kusambaza(mikate na divai/mvinyo)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4261
 msgid ""
@@ -2177,7 +2176,7 @@ msgstr ""
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
-msgstr "Je, umewahi kuacha kufikiria kuhusu Ufalme wa Mungu... sivyo?"
+msgstr "Je, umewahi kufikiria ni wapi Ufalme wa Mungu ... haupo?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -2211,9 +2210,9 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"Yesu alisema, “Mimi ndimi mkate ulio hai ulioshuka kutoka mbinguni. Yeyote "
-"anayekula mkate huu ataishi milele. Mkate huu ni mwili wangu, ambao nitautoa "
-"kwa ajili ya uzima wa ulimwengu.”"
+"Yesu alisema, “Mimi ndimi mkate ulio hai ulioshuka kutoka mbinguni. Alaye "
+"mkate huu ataishi milele. Mkate huu ni mwili wangu, ambao nitautoa kwa ajili "
+"ya uzima wa ulimwengu.”"
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
@@ -2260,7 +2259,7 @@ msgstr ""
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
 msgid "B.L.E.S.S. Prayer"
-msgstr "Maombi BARAKA"
+msgstr "B.L.E.S.S. Maombi"
 
 #: site/course/course-content.php:1538
 msgid ""
@@ -2305,7 +2304,7 @@ msgstr ""
 
 #: site/course/course-content.php:1611
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "Fanya mazoezi ya maombi ya BARAKA"
+msgstr "Fanya mazoezi ya B.L.E.S.S. Maombi"
 
 #: site/course/course-content.php:1614
 msgid ""
@@ -2313,11 +2312,11 @@ msgid ""
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
 "Gawa katika vikundi vya wawili au watatu na ujizoeze kusali maeneo matano ya "
-"Salaya BARAKA juu ya kila mmoja."
+"B.L.E.S.S. Sala juu ya kila mmoja."
 
 #: site/course/course-content.php:1627
 msgid "Prayer Walking Activity"
-msgstr "Shughuli ya Maombi ya Kutembea"
+msgstr "Shughuli ya Kutembea kwa Maombi"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
@@ -2465,7 +2464,7 @@ msgid ""
 "go."
 msgstr ""
 "Omba na umuulize Mungu yule anataka ushiriki naye muundo wa Kundi 3/3 kabla "
-"kundi kukutana tena.  Shiriki jina la mtu huyu na kundi kabla ya kwenda."
+"kundi kukutana tena. Shiriki jina la mtu huyu na kundi kabla ya kwenda."
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
@@ -2477,13 +2476,13 @@ msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"Ombeni na kumshukuru Mungu kwa kujitolea kwa kundi kwa kumfuata Yesu kwa "
-"uaminifu na kumualika Roho Mtakatifu wa Mungu kuongoza muda wanu pamoja."
+"Omba na kumshukuru Mungu kwa kujitolea kwa kikundi kumfuata Yesu kwa "
+"uaminifu na kumwalika Roho Mtakatifu wa Mungu kuongoza wakati wako pamoja."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
 msgid "The Training Cycle"
-msgstr "Mzunguko wa Mafundisho"
+msgstr "Mzunguko wa Mafunzo"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2506,8 +2505,8 @@ msgid ""
 "Could the same person be at different parts of the Training Cycle while "
 "learning different skills?"
 msgstr ""
-"Je, mtu yule yule anaweza kuwa katika sehemu tofauti ya Mfutano wa "
-"Mafundisho wakati anajifunza ujuzi tofauti?"
+"Je, mtu yuleyule anaweza kuwa sehemu tofauti za Mzunguko wa Mafunzo huku "
+"akijifunza ujuzi tofauti?"
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
@@ -2518,24 +2517,24 @@ msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
-"ANGALIA NYUMA - Tumia awamu iliyopita Kutii, Kufundisha na Shiriki "
-"changamoto za kipindi kilichopita ili kuingia pamoja. (dakika 30)"
+"ANGALIA NYUMA - Tumia Tii, Treni na Shiriki changamoto za kipindi "
+"kilichopita ili kuingia pamoja. (dakika 30)"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
-"TAZAMA JUU-Tumia Marko 5:1-20 kwa kundi lako kusoma na kujibu maswali 1-4 "
-"wakati wa awamu ya Tazama Juu. (dakika 30)"
+"TAZAMA JUU - Tumia Marko 5:1-20 kama kifungu cha kusoma cha kikundi chako na "
+"ujibu maswali 1-4 katika sehemu ya Angalia. (dakika 30)"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
-"TAZAMA MBELE-Tumia maswali 5,6,7 katika awamu ya Kutazma Mbele ili kuendelea "
-"kutii,Fundisha na Kushiriki."
+"TAZAMA KWA MBELE - Tumia swali la 5, 6, na 7 katika sehemu ya Tazama Mbele "
+"ili kukuza jinsi utakavyotii, Kufunza na Kushiriki. (dakika 30)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2587,13 +2586,13 @@ msgid ""
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
-"Ombeni na kumshukuru Mungu kwa kumpa kundi lenu nguvu, lengo na uaminifu "
-"kufikia sasa katika mafundisho haya. Mwombe Mungu ili Roho Mtakatifu "
-"awakumbushe kila mtu katika kundi kwamba hawezi kufanya chochote bila Yeye!"
+"Omba na kumshukuru Mungu kwa kuwapa kundi lako nguvu, umakini na uaminifu "
+"kufika mbali katika mafunzo haya. Mwambie Mungu awe na Roho wake Mtakatifu "
+"awakumbushe kila mtu katika kundi kwamba hawezi kufanya lolote bila yeye!"
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
-msgstr "Na tutafanya mazoezi ya zana hii kutoka kwenye vifaa vyetu"
+msgstr "Na tutafanya mazoezi ya zana hii kutoka kwa zana yetu ya zana:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2632,11 +2631,11 @@ msgstr ""
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
-msgstr "Dhana kutoka kwenye kipindi hiki:"
+msgstr "Dhana kutoka kwa kipindi hiki:"
 
 #: site/course/course-content.php:2281
 msgid "Tool from this session:"
-msgstr "Zana kutoka kwenye kipindi hiki:"
+msgstr "Zana kutoka kwa kipindi hiki:"
 
 #: site/course/course-content.php:2298
 msgid ""
@@ -2678,13 +2677,13 @@ msgstr ""
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2769
 msgid "Non-Sequential Growth"
-msgstr "Ukuaji usio wa mfuatano"
+msgstr "Ukuaji Usio wa Mfuatano"
 
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
 msgid "Four Fields"
-msgstr "Sehemu nne"
+msgstr "Uga"
 
 #: site/course/course-content.php:2415
 msgid ""
@@ -2692,9 +2691,9 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
-"Wakati watu wanafikiria juu ya wanafunzi kuzidisha, mara nyingi wanafikiria "
-"kama mchakato wa hatua kwa hatua. Tatizo ni kwamba - sivyo inavyofanya kazi "
-"vizuri zaidi!"
+"Wakati watu wanafikiria kuhusu kujizidisha kwa wanafunzi, wao hufikiria kama "
+"mchakato wa hatua kwa hatua. Tatizo na hilo ni - sivyo linalofanya kazi "
+"vyema!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -2724,8 +2723,8 @@ msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
 msgstr ""
-"Je, unahitaji kubadilisha nini katika kufikiri kwako, matendo yako, au "
-"mtazamo wako ili kupatana vyema na kipaumbele cha Mungu kwa mwendo?"
+"Unahiyaji kitu kibadilishwe katika kufikiria kwako, matendo yako, au mtazamo "
+"wako uwe bora zaidi na kipaumbele kasi kwa Mungu?"
 
 #: site/course/course-content.php:2488
 msgid ""
@@ -2738,9 +2737,9 @@ msgid ""
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
-"Yesu alitufundisha kwamba tunapaswa kukaa karibu - kuishi kama familia "
-"ndogo, ya kiroho, kupenda na kutoa maisha yetu kwa mtu mwingine, "
-"kusherehekea na kuteseka - pamoja."
+"Yesu alitufundisha kwamba tunapaswa kukaa karibu—kuishi kama familia ndogo, "
+"ya kiroho, kupenda na kutoa maisha yetu sisi kwa sisi, kusherehekea na "
+"kuteseka—pamoja."
 
 #: site/course/course-content.php:2507
 msgid ""
@@ -2758,9 +2757,9 @@ msgid ""
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
 msgstr ""
-"Ni zipi baadhi ya faida za kudumisha familia ya kiroho yenye uthabiti ambayo "
-"huzaa wapya wanaokua na kuongezeka, badala ya kuendelea kukuza familia na "
-"kuigawanya ili ikue?"
+"Je, ni faida gani za kudumisha jamaa ya kiroho thabiti ambayo inazaa wengine "
+"wapya ambao wanakua na kujizidisha na kuzidi badala ya kuendelea kukua na "
+"jamaa na kuitawanya ili ikue?"
 
 #: site/course/course-content.php:2549
 msgid ""
@@ -2768,8 +2767,8 @@ msgid ""
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
 "Orodha ya Hakiki ya Kufundisha ni zana rahisi unayoweza kutumia ili "
-"kukusaidia kukuongoza unapowasaidia wengine kupitia sehemu mbalimbali za "
-"kuwa mfuasi aliye na vifaa kamili."
+"kukusaidia kukuongoza unaposaidia wengine kupitia sehemu mbalimbali za kuwa "
+"mfuasi aliye na vifaa kamili."
 
 #: site/course/course-content.php:2576
 msgid ""
@@ -2832,7 +2831,7 @@ msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
-"KUMBUSHO: Mafunzo ya Zúme yanapatikana ili kukusaidia kutumia zana hizi "
+"KUMBUSHO: Makocha ya Zúme yanapatikana ili kukusaidia kutumia zana hizi "
 "katika eneo lako."
 
 #: site/course/course-content.php:2642
@@ -2860,7 +2859,7 @@ msgstr ""
 
 #: site/course/course-content.php:2655
 msgid "Field Descriptions"
-msgstr "Maelezo ya Sehemu"
+msgstr "Maelezo ya uwanja"
 
 #: site/course/course-content.php:2657
 msgid ""
@@ -2873,7 +2872,7 @@ msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
-"Eneo la Kupanda Mbegu: Unahubiri habari njema ya Ufalme wapi au na nani? "
+"Shamba la Kupanda Mbegu: Unahubiri habari njema ya Ufalme wapi au na nani? "
 "Unafanyaje hivyo?"
 
 #: site/course/course-content.php:2659
@@ -2888,7 +2887,7 @@ msgstr ""
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
-msgstr "Eneo la Kuvuna: Familia mpya za kiroho [makanisa rahisi] zinaundwaje?"
+msgstr "Shamba la Kuvuna: Familia mpya za kiroho [makanisa rahisi] zinaundwaje?"
 
 #: site/course/course-content.php:2661
 msgid ""
@@ -2900,7 +2899,7 @@ msgstr ""
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 msgid "Four Fields Example"
-msgstr "Mfano wa Sehemu nne"
+msgstr "Sehemu Nne Mfano"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
 msgid "Discuss"
@@ -2911,8 +2910,8 @@ msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
-"Tambua sehemu tupu karibu yako. Je, ni jumuiya au vikundi gani vya watu "
-"ambavyo umeunganishwa bila shughuli za injili?"
+"Tambua uga tupu karibu nawe. Je, ni jumuiya au vikundi gani vya watu ambavyo "
+"umeunganishwa bila shughuli za injili?"
 
 #: site/course/course-content.php:2700
 msgid ""
@@ -2981,7 +2980,7 @@ msgid ""
 "have you share it with."
 msgstr ""
 "Jizoeze kushiriki wazo la \"Pace\" na rafiki na uombe kwa Bwana kuliweka kwa "
-"kina ndani ya moyo na nafsi yako. Muulize Bwana nani ambaye angependa "
+"kina ndani ya moyo na nafsi yako. Muulize Bwana ambaye angependa "
 "umshirikishe."
 
 #: site/course/course-content.php:2793
@@ -2991,7 +2990,7 @@ msgid ""
 "another believer you know."
 msgstr ""
 "Ikiwa tayari umeanzisha kanisa lako rahisi, shiriki dhana \"Daima Sehemu ya "
-"Makanisa Mawili\" na watu ndani yake. Ikiwa sivyo, shiriki na muumini "
+"Makanisa Mawili\" na watu ndani yake. Ikiwa sivyo, shiriki na mwamini "
 "mwingine unayemjua."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
@@ -3011,8 +3010,8 @@ msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
-"Mwambie alipe kundi lako vichwa vitupu na mioyo iliyo wazi kwa mambo makuu "
-"anayotaka kufanya ndani yako na kupitia kwako."
+"Mwambie alipe kundi lako vichwa vilivyo wazi na mioyo iliyo wazi kwa mambo "
+"makuu anayotaka kufanya ndani yako na kupitia kwako."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
 msgid ""
@@ -3052,9 +3051,9 @@ msgid ""
 "churches? How do they stay connected and live life together as an extended, "
 "spiritual family? They become a network!"
 msgstr ""
-"Ni kitu gani hutendeka kwa makanisa zinapokua na kuanzisha makanisa mapya "
-"ambayo huanzisha makanisa mapya? Je! zinaendelea kuunganika na kukaa pamoja "
-"pamoja kama jamaa pana? Zinakuwa mtandao!"
+"Nini kinatokea kwa makanisa yanapokua na kuanzisha makanisa mapya "
+"yanayoanzisha makanisa mapya? Je, wanabakije kushikamana na kuishi maisha "
+"pamoja kama familia iliyopanuliwa ya kiroho? Wanakuwa mtandao!"
 
 #: site/course/course-content.php:2946
 msgid ""
@@ -3068,7 +3067,7 @@ msgstr ""
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
-"Kufanya wanafunzi wanaofanya wanafunzi inamaanisha kufanya viongozi "
+"Kufanya wanafunzi wanaofanya wanafunzi kunamaanisha kufanya viongozi "
 "wanaofanya viongozi."
 
 #: site/course/course-content.php:2965
@@ -3105,13 +3104,13 @@ msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
-"Katika Biblia yake, Mungu anasema, “Ninajua mipango niliyo nayo kwa ajili "
-"yenu, ni mipango ya kuwafanikisha na wala si ya kuwadhuru, ni mipango ya "
-"kuwapa tumaini katika siku zijazo.\""
+"Katika Biblia yake, Mungu anasema, “Najua mipango niliyo nayo kwa ajili "
+"yako, mipango ya kukufanikisha na si ya kukudhuru, mipango ya kukupa tumaini "
+"na siku zijazo.\""
 
 #: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr "Mungu hufanya mipango, na Yeye hutarajia sisi kufanya mipango, pia"
+msgstr "Mungu hufanya mipango, na Yeye hututarajia sisi kufanya mipango, pia."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
 msgid ""
@@ -3165,7 +3164,7 @@ msgstr "Zana ya Mpango Mtandaoni"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr "Chukua zamu kushiriki Mipango yako ya Miezi Mitatu kwa kila mmoja."
+msgstr "Chukua zamu kushiriki Mipango yako ya Miezi Mitatu na kila mmoja."
 
 #: site/course/course-content.php:3054
 msgid ""
@@ -3183,7 +3182,7 @@ msgid ""
 msgstr ""
 "Jizoeze kushiriki ufafanuzi huu na rafiki na uombe kwa Bwana aziweke kwa "
 "kina ndani ya moyo wako na nafsi yako. Muulize Bwana ambaye angependa "
-"uwashirikishe."
+"uwashiriki."
 
 #: site/course/course-content.php:3196
 msgid ""
@@ -3449,8 +3448,8 @@ msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
-"Ikiwa familia yako ni waumini na wanaishi ndani yako, ongoza Meza ya Bwana "
-"pamoja nao. Vinginevyo, fanya ujuzi huo na rafiki muumini."
+"Ikiwa jamaa yako ni waamini na wanaishi ndani yako, ongoza Meza ya Bwana "
+"pamoja nao. Vinginevyo, fanya ujuzi huo na rafiki mwamini."
 
 #: site/course/course-content.php:4395
 msgid ""
@@ -3482,7 +3481,7 @@ msgstr "KIKAO CHA 12"
 
 #: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr "Ombea mtu akiwepo kwa kutumia mtindo wa BARAKA wiki hii."
+msgstr "Ombea mtu akiwepo kwa kutumia mtindo wa BLESS wiki hii."
 
 #: site/course/course-content.php:4639
 msgid ""
@@ -3595,8 +3594,8 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
-"Omba na kumshukuru Mungu kwa jinsi anavyoendelea kunena kupitia neno, "
-"maombi, mwili, na mateso. Ombea kila mtu katika kundi awe na masikio ya "
+"Omba na kumshukuru Mungu kwa jinsi anavyoendelea kunena kwa neno, maombi, "
+"mwili, na mateso na mateso. Ombea kila mtu katika kundi awe na masikio ya "
 "kusikia sauti yake na neema ya kutii kile anachosema."
 
 #: site/course/course-content.php:5325
@@ -3659,7 +3658,7 @@ msgid ""
 msgstr ""
 "Omba na kumshukuru Mungu kwa ajili ya Mwili wa Kristo. Ombea upendo na "
 "kutiana moyo ili kuendelea kukua kati ya kila mshiriki wa kikundi chako "
-"kadiri unapomkaribia Yesu."
+"unapomkaribia Yesu."
 
 #: site/course/course-content.php:5587
 msgid ""
@@ -3699,23 +3698,23 @@ msgstr ""
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
-msgstr "KIKAO KIGUMU CHA 1"
+msgstr "KIKAO KALI CHA 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
 msgid "INTENSIVE SESSION 2"
-msgstr "KIKAO KIGUMU CHA 2"
+msgstr "KIKAO KALI CHA 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
 msgid "INTENSIVE SESSION 3"
-msgstr "KIKAO KIGUMU CHA 3"
+msgstr "KIKAO KALI CHA 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
 msgid "INTENSIVE SESSION 4"
-msgstr "KIKAO KIGUMU CHA 4"
+msgstr "KIKAO KALI CHA 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
 msgid "INTENSIVE SESSION 5"
-msgstr "KIKAO KIGUMU CHA 5"
+msgstr "KIKAO KALI CHA 5"
 
 #: site/course/course-content.php:5976
 msgid "NEXT STEP"
@@ -3736,7 +3735,7 @@ msgstr ""
 
 #: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr "Usifanye peke yako. Tafuta jumuiya kwa ajili ya kutiana moyo na kukua."
+msgstr "Usifanye peke yako. Tafuta jumuiya kwa ajili ya kutia moyo na kukua."
 
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
@@ -3748,7 +3747,7 @@ msgstr "HONGERA kwa kumaliza Mafunzo ya Zume!"
 
 #: site/course/course-content.php:6008
 msgid "TAKE A BREAK"
-msgstr "PUMZIKA"
+msgstr "PUNGUZA"
 
 #: site/course/presenter.php:131
 msgid "Course Presenter"
@@ -3814,7 +3813,7 @@ msgstr "Tazama Shughuli"
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
-msgstr "Loh!"
+msgstr "Lo"
 
 #: site/dashboard/checkin-dashboard.php:153
 msgid "Something went wrong with your checkin process."
@@ -3847,7 +3846,7 @@ msgstr "%d%%"
 
 #: site/dashboard/dashboard.php:161 site/dashboard/wizard.php:296
 msgid "Done"
-msgstr "Tayari"
+msgstr "Imekamilika"
 
 #: site/dashboard/dashboard.php:162
 msgid "Edit"
@@ -3875,7 +3874,7 @@ msgstr "Haijasikika"
 
 #: site/dashboard/dashboard.php:169 site/pages/share.php:121
 msgid "All"
-msgstr "Vyote"
+msgstr "Wote"
 
 #: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
@@ -3962,7 +3961,7 @@ msgstr "Hakiki"
 #: site/dashboard/dashboard.php:266
 #, php-format
 msgid "Add new %s"
-msgstr "Ongeza mpya%s"
+msgstr "Ongeza %s mpya"
 
 #: site/dashboard/dashboard.php:190
 msgid "Commitment"
@@ -3995,7 +3994,7 @@ msgstr "Weka Wasifu"
 
 #: site/dashboard/dashboard.php:197
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr "Kamilisha Wasifu mfupi wa Wizard ili kuweka wasifu wako"
+msgstr "Kamilisha Mchawi mfupi wa Wasifu ili kuweka wasifu wako"
 
 #: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
@@ -4007,7 +4006,7 @@ msgid ""
 "easy to set up wizard"
 msgstr ""
 "Jiunge na mojawapo ya mafunzo yetu ya mtandaoni au uunde kikundi chako cha "
-"mafunzo kwa kutumia wizard rahisi kupangilia"
+"mafunzo kwa kutumia mchawi wetu rahisi wa kusanidi"
 
 #: site/dashboard/dashboard.php:200
 msgid "Create Training Group"
@@ -4051,7 +4050,7 @@ msgstr "Taarifa kuhusu maendeleo"
 
 #: site/dashboard/dashboard.php:210
 msgid "My Training"
-msgstr "Mafunzo Yangu"
+msgstr "Funzo Langu"
 
 #: site/dashboard/dashboard.php:211
 msgid "My Trainings"
@@ -4267,7 +4266,7 @@ msgstr "Kanisa"
 
 #: site/dashboard/dashboard.php:267
 msgid "cancel"
-msgstr "ghauri"
+msgstr "ghairi"
 
 #: site/dashboard/dashboard.php:269
 msgid "You have requested a coach"
@@ -4397,12 +4396,12 @@ msgstr "Hakuna tarehe"
 #: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
 msgid "Whatsapp"
-msgstr "WhatsApp"
+msgstr "Whatsapp"
 
 #: site/dashboard/dashboard.php:291 site/dashboard/wizard.php:209
 #: zume-training-system.php:319
 msgid "Signal"
-msgstr "Inshara"
+msgstr "Mawimbi"
 
 #: site/dashboard/dashboard.php:292 site/dashboard/wizard.php:210
 #: zume-training-system.php:320
@@ -4474,7 +4473,7 @@ msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
-"Nitawapa changamoto watu wafuatao kutumia kifaa cha maombi ya mzunguko kwa  "
+"Nitawapa changamoto watu wafuatao kutumia kifaa cha maombi ya mzunguko kwa "
 "msingi wa mara kwa mara:"
 
 #: site/dashboard/dashboard.php:309
@@ -4493,7 +4492,7 @@ msgstr ""
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
-msgstr "Nitahimiza watu wafuatao  kupitia kosi ya mafundisho ya Zume:"
+msgstr "Nitahimiza watu wafuatao kupitia kosi ya mafundisho ya Zume:"
 
 #: site/dashboard/dashboard.php:312
 msgid "Other commitments:"
@@ -4504,14 +4503,14 @@ msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr "Wizard mbaya"
+msgstr "Mchawi mbaya"
 
 #: site/dashboard/wizard.php:163
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr "Umezama na wizard mbaya sana!"
+msgstr "Umeingia na wachawi wabaya sana!"
 
 #: site/dashboard/wizard.php:164
 msgid "Wizard is already completed"
@@ -4599,7 +4598,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:182
 msgid "Join for Free"
-msgstr "Jiunge Bure"
+msgstr "Jiunge Bila Malipo"
 
 #: site/dashboard/wizard.php:183
 msgid "Successfully joined community"
@@ -4624,7 +4623,7 @@ msgstr "Namba yako ya simu ni ipi?"
 
 #: site/dashboard/wizard.php:194
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr "Nambari ya simu inaweza kuwa na nambari pekee, mabano na vistari"
+msgstr "Nambari ya simu inaweza kuwa na nambari, mabano na vistari pekee"
 
 #: site/dashboard/wizard.php:195
 msgid "What city do you live in?"
@@ -4660,7 +4659,7 @@ msgstr "Kufundisha"
 
 #: site/dashboard/wizard.php:216
 msgid "Technical Assistance"
-msgstr "usaidizi wa Kiufundi"
+msgstr "Usaidizi wa Kiufundi"
 
 #: site/dashboard/wizard.php:217
 msgid "Question about implementing the training"
@@ -4682,7 +4681,7 @@ msgstr "Tafadhali toa jibu la swali hili"
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
-"Ombi Limewasilishwa, tutafanya tuwezavyo kukuunganisha na mkufunzi aliye "
+"Ombi Limewasilishwa, tutafanya tuwezavyo ili kukuunganisha na kocha aliye "
 "karibu nawe."
 
 #: site/dashboard/wizard.php:223
@@ -4691,7 +4690,7 @@ msgstr "Pole. Hatukuweza kuwasilisha ombi lako. Tafadhali jaribu tena baadae."
 
 #: site/dashboard/wizard.php:224
 msgid "You have already requested a coach"
-msgstr "Tayari, umeomba Kocha"
+msgstr "Tayari umeomba kocha"
 
 #: site/dashboard/wizard.php:225
 msgid "Error connecting with a coach"
@@ -4699,7 +4698,7 @@ msgstr "Hitilafu katika kuunganisha na kocha"
 
 #: site/dashboard/wizard.php:226
 msgid "Connecting you to a Coach"
-msgstr "Niunganishe kwa mkufunzi"
+msgstr "Kukuunganisha kwa Kocha"
 
 #: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
 #: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
@@ -4721,7 +4720,7 @@ msgstr "Umejiunga na mafunzo kwa ufanisi %s"
 
 #: site/dashboard/wizard.php:238
 msgid "Next Session Date"
-msgstr "Tarehe ya Kikao kKijacho"
+msgstr "Tarehe ya Kikao Kijacho"
 
 #: site/dashboard/wizard.php:239
 msgid "Start Time"
@@ -4729,7 +4728,7 @@ msgstr "Wakati wa Kuanza"
 
 #: site/dashboard/wizard.php:240
 msgid "Timezone"
-msgstr "majira ya eneo"
+msgstr "Saa za eneo"
 
 #: site/dashboard/wizard.php:243
 msgid "There are currently no public trainings available."
@@ -4774,11 +4773,11 @@ msgstr "Ruka kwa sasa"
 
 #: site/dashboard/wizard.php:264
 msgid "Choose your course format"
-msgstr "Chagua fomati ya kozi yako"
+msgstr "Chagua umbizo la kozi yako"
 
 #: site/dashboard/wizard.php:265
 msgid "1 hour (20 sessions)"
-msgstr "Lisaa 1 (vipindi 20)"
+msgstr "Saa 1 (vipindi 20)"
 
 #: site/dashboard/wizard.php:266
 msgid "2 hour (10 sessions)"
@@ -4997,7 +4996,7 @@ msgstr "Dosari:Hakuna jina la mtumiaji lililosajiliwa."
 
 #: site/login/login-template.php:85
 msgid "ERROR: Invalid username or email."
-msgstr "KOSA: Jina la mtumiaji lisilo sahihi ama barua pepe. "
+msgstr "KOSA: Jina la mtumiaji lisilo sahihi ama barua pepe."
 
 #: site/login/login-template.php:98 site/login/login-template.php:134
 msgid "Get New Password"
@@ -5302,7 +5301,7 @@ msgid ""
 msgstr ""
 "Kanuni za msingi za kufanya wanafunzi katika Mafunzo ya Zúme huja moja kwa "
 "moja kutoka kwa Biblia na zimejaribiwa duniani kote kwa zaidi ya miaka "
-"thelathini. Kanuni hizo huwapa waumini wa kawaida nguvu za kuwa wanafunzi "
+"thelathini. Kanuni hizo huwapa waamini wa kawaida nguvu za kuwa wanafunzi "
 "ambao nao hufanya wanafunzi, jambo linalotokeza mamilioni ya wanafunzi "
 "kuendeleza Ufalme katika mahali penye giza kiroho."
 
@@ -5586,7 +5585,7 @@ msgstr "20 Vikao"
 
 #: site/pages/checkin.php:262 site/pages/training.php:245
 msgid "Intensive"
-msgstr "Ngumu"
+msgstr "Kali"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
@@ -5753,8 +5752,8 @@ msgstr ""
 #: site/pages/follow-jesus.php:318
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
-"Je! Itakuwaje marafiki wengi, familia, na wengine wataanza kumfuata Yesu "
-"pamoja nami?"
+"Je! Ikiwa marafiki wengi, familia, na wengine wataanza kumfuata Yesu pamoja "
+"nami?"
 
 #: site/pages/friend-invite.php:164
 msgid "Friend Invitation"
@@ -5766,7 +5765,7 @@ msgstr "Tumia msimbo ambao rafiki yako alikutumia."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 msgid "Get A Coach"
-msgstr "Pata kocha"
+msgstr "Pata Kocha"
 
 #: site/pages/get-a-coach.php:89
 msgid ""
@@ -5774,10 +5773,10 @@ msgid ""
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
-"Kila mchezo wa riadha, haswa katika viwango vya juu, hutumia kufundisha. "
-"Hata wanariadha wa Olimpiki wana makocha, na mara nyingi zaidi ya mmoja. "
-"Kufanya wanafunzi kunaweza kufaidika vile vile kutokana na kufundishwa na "
-"wale ambao wana uzoefu zaidi."
+"Kila mchezo wa riadha, haswa katika viwango vya juu, hutumia kocha. Hata "
+"wanariadha wa Olimpiki wana makocha, na mara nyingi zaidi ya mmoja. Kufanya "
+"wanafunzi kunaweza kufaidika vile vile kutokana na kufundishwa na wale ambao "
+"wana uzoefu zaidi."
 
 #: site/pages/get-a-coach.php:92
 msgid "No Cost"
@@ -5853,7 +5852,7 @@ msgstr "Kujiwezesha"
 
 #: site/pages/home.php:136
 msgid "Practice-Oriented"
-msgstr "Mazoezi yaliyoelekezwa"
+msgstr "Mwenye Mazoezi"
 
 #: site/pages/home.php:137
 msgid "32 Concepts and Skills"
@@ -5913,7 +5912,7 @@ msgstr "Kusimulia Hadithi Yako"
 
 #: site/pages/home.php:171
 msgid "Engaging Seekers"
-msgstr "Watafutaji wa Kushirikisha"
+msgstr "Watafutaji Kushirikisha"
 
 #: site/pages/home.php:172
 msgid "Vision Casting Multiplication"
@@ -5937,7 +5936,7 @@ msgstr "Watu wa Kawaida. Hatua Rahisi."
 
 #: site/pages/home.php:237
 msgid "More about zume"
-msgstr "Zaidi kuhusu Zúme"
+msgstr "Pata maelezo zaidi kuhusu Zume"
 
 #: site/pages/home.php:271
 msgid "Real people ... real stories."
@@ -6082,11 +6081,11 @@ msgstr ""
 "Sera ya kibinafsi imewekwa kwa njia bora kuhudumi wale wanaojali “ubinafsi "
 "wao utabulishi wa habari” (PII) inapotumiwa mtandaoni. PII,vile "
 "imezungumziwa katika sheria za kibinafsi za Marekani na usalama wa habari,ni "
-"habari inaweza kutumika yenyewe au kupitia habari zingine kuzitambua,"
-"wasiliana,au pata mtu mmoja,au kutambua mtu katika maudhui.Tafadhali soma "
-"sera zetu za kibinafsi  kwa uangalifu kupata kuelewa jinsi ya kukusanya,"
-"kutumia,kutunza au njiaa nyingine kushughulikia habari ya utambulisho wako "
-"kulingana na wavuti wetu."
+"habari inaweza kutumika yenyewe au kupitia habari zingine "
+"kuzitambua,wasiliana,au pata mtu mmoja,au kutambua mtu katika "
+"maudhui.Tafadhali soma sera zetu za kibinafsi kwa uangalifu kupata kuelewa "
+"jinsi ya kukusanya,kutumia,kutunza au njiaa nyingine kushughulikia habari ya "
+"utambulisho wako kulingana na wavuti wetu."
 
 #: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
@@ -6140,7 +6139,7 @@ msgstr ""
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
-"Tunaomba maelezo ya muhimu kupitia fomu mbalimbali za kujisajili na kuomba."
+"Tunaomba maelezo ya lazima kupitia fomu mbalimbali za kujisajili na kuomba."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6194,11 +6193,11 @@ msgid ""
 "addition, all sensitive/credit information you supply is encrypted via "
 "Secure Socket Layer (SSL) technology."
 msgstr ""
-"Habari zako za kibinafsi zimelindwa mtandaoni na zinafikiwa na hidadi ndogo "
-"ya watu ambao wana kibali cha mfumo huo,na wanatakikana kuficha habari hizo."
-"Kwa kuongeza,habari zote nyeti/mikopo unasambaza zinahifadhiwa zinapokuwa "
-"zikihamishwa ktoka sehemu moja hadi nyingine kupitia njia ya teknolojia ya "
-"encrypted via Secure Socket Layer (SSL)"
+"Taarifa zako za kibinafsi ziko nyuma ya mitandao iliyolindwa na zinaweza "
+"kufikiwa tu na idadi ndogo ya watu ambao wana haki maalum za kufikia mifumo "
+"kama hiyo, na wanatakiwa kuweka taarifa hiyo kwa usiri. Zaidi ya hayo, "
+"maelezo yote nyeti/ya mkopo unayotoa yamesimbwa kwa njia fiche kupitia "
+"teknolojia ya Secure Socket Layer (SSL)."
 
 #: site/pages/privacy-policy.php:167
 msgid ""
@@ -6305,11 +6304,11 @@ msgstr "Dhana"
 
 #: site/pages/share.php:125
 msgid "Sort"
-msgstr "Panga"
+msgstr "Panga kwa Aina"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr "Vipengele"
+msgstr "Vipengee"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6412,9 +6411,9 @@ msgid ""
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
-"fomati asili ya kozi ya Zúme ni vipindi 10 vya saa mbili. Kila kipindi "
+"Umbizo asili la kozi ya Zúme ni vipindi 10 vya saa mbili. Kila kipindi "
 "hukamilika kwa hatua za utii wa vitendo na njia za kushiriki kati ya "
-"vipindi. fomati hiii mara nyingi huendeshwa mara moja kwa wiki kwa wiki 10."
+"vipindi. Umbizo hili mara nyingi huendeshwa mara moja kwa wiki kwa wiki 10."
 
 #: site/pages/training.php:240
 msgid ""
@@ -6423,8 +6422,8 @@ msgid ""
 "opportunities for each of the concepts and tools."
 msgstr ""
 "Kwa kozi ndefu ya polepole yenye fursa zaidi ya kupata umahiri katika dhana "
-"na ujuzi, fomati ya vipindi 20 ina fursa nyingi za mazoezi kwa kila dhana na "
-"zana."
+"na ujuzi, umbizo la vipindi 20 lina fursa nyingi za mazoezi kwa kila dhana "
+"na zana."
 
 #: site/pages/training.php:252
 msgid ""
@@ -6454,7 +6453,7 @@ msgstr ""
 
 #: site/parts/footer.php:31
 msgid "3 Day Intensive Course"
-msgstr "Kozi ngumu ya Siku 3"
+msgstr "Kozi ya Siku 3 ya Intensive"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
@@ -6465,7 +6464,7 @@ msgstr "Ingia"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
-msgstr "Looh umezima javascript"
+msgstr "Lo, umezimwa javascript"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
@@ -6626,7 +6625,7 @@ msgstr "Mafunzo %1$d - %2$s"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
-msgstr "msimamizi"
+msgstr "Msimamizi wa ukumbi"
 
 #: utilities/integrations/replace-placeholder.php:89
 #: utilities/integrations/replace-placeholder.php:90
@@ -6718,7 +6717,7 @@ msgstr "Saa za Mtumiaji"
 
 #: zume-training-system.php:287
 msgid "User Friend Key"
-msgstr "Ufunguo Rafiki wa Mtumiaji"
+msgstr "Ufunguo wa Rafiki wa Mtumiaji"
 
 #: zume-training-system.php:295
 msgid "User Preferred Language"

@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-01 09:58+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
+"PO-Revision-Date: 2024-07-01 10:39+0000\n"
+"Last-Translator: Esther Schoenborn <esther.schoenborn@email.de>\n"
 "Language-Team: German <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/de_DE/>\n"
 "Language: de_DE\n"
@@ -449,7 +448,7 @@ msgid ""
 "their leadership by practicing serving."
 msgstr ""
 "In einer Leiterschaftszelle können diejenigen, die sich berufen fühlen zu "
-"leiten, ihre Führungsqualitäten weiterentwickeln, indem sie Anderen dienen."
+"leiten, ihre Führungsqualitäten weiterentwickeln, indem sie anderen dienen."
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
@@ -498,7 +497,7 @@ msgstr "Lernt, wie wir Jesu Auftrag ausführen, indem wir gehen UND bleiben."
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr "Dreimonatsplan"
+msgstr "3-Monats-Plan"
 
 #: globals.php:2253
 msgid ""
@@ -1095,7 +1094,7 @@ msgid ""
 "share His good news?"
 msgstr ""
 "Warum hat Jesus deiner Meinung nach gewöhnliche Menschen ausgewählt und "
-"nicht eine andere Wege gefunden, seine gute Nachricht weiterzugeben?"
+"nicht andere Wege gefunden, seine frohe Botschaft weiterzugeben?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
@@ -1140,8 +1139,8 @@ msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
-"Eine Möglichkeit, Gottes gute Nachricht weiterzugeben, ist eine visuelle "
-"Präsentation namens \"3 Kreise\"."
+"Eine Möglichkeit, Gottes gute Nachricht weiterzugeben, ist die Verwendung "
+"einer visuellen Präsentation namens \"3 Kreise\"."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1526,7 +1525,7 @@ msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
-"Scanne den QR-Code und arbeite anhand von Matthäus 6,9-13 individuell das "
+"Scannt den QR-Code und arbeitet anhand von Matthäus 6,9-13 individuell das "
 "SOAPS-Bibelstudienmuster durch. (20 Minuten)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
@@ -1691,7 +1690,7 @@ msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
-"Frage nach, ob jemand in der Gruppe konkrete BeDürfnisse hat, für die er die "
+"Frage nach, ob jemand in der Gruppe konkrete Bedürfnisse hat, für die er die "
 "Gruppe beten lassen möchte."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
@@ -2532,7 +2531,7 @@ msgid ""
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
 "Habt ihr irgendwann mal Fahrradfahren gelernt? Und habt ihr es schon mal "
-"einer anderen Person beigebracht? Falls ja, kennt ihr den Trainingzyklus "
+"einer anderen Person beigebracht? Falls ja, kennt ihr den Trainingszyklus "
 "bereits."
 
 #: site/course/course-content.php:2022
@@ -2759,9 +2758,9 @@ msgid ""
 "is determined in the very short time we call “life.“"
 msgstr ""
 "Es kommt auf Vervielfältigung an und sogar noch mehr auf schnelle "
-"Vervielfältigung. Das Tempo ist wichtig, denn der Ort, an dem wir alle "
-"unsere Ewigkeit verbringen - eine Existenz, die die Zeit überdauert - wird "
-"in der sehr kurzen Zeit festgelegt, die wir \"Leben\" nennen."
+"Vervielfältigung. Das Tempo ist wichtig, denn der Ort, an dem wir alle die "
+"Ewigkeit verbringen - eine Existenz, die die Zeit überdauert - wird in der "
+"sehr kurzen Zeit festgelegt, die wir \"Leben\" nennen."
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
@@ -3186,21 +3185,21 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
-"Ein Dreimonatsplan ist ein Werkzeug, mit dessen Hilfe du deine "
-"Aufmerksamkeit und Bemühungen auf Gottes Prioritäten ausgerichtet halten "
-"kannst, um Jünger zu machen, die sich vermehren."
+"Ein 3-Monats-Plan ist ein Werkzeug, mit dessen Hilfe du deine Aufmerksamkeit "
+"und Bemühungen auf Gottes Prioritäten ausgerichtet halten kannst, um Jünger "
+"zu machen, die sich vermehren."
 
 #: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
-"Die nächste Folie zeigt dir, wie du deinen Dreimonatsplan erstellst. Wir "
+"Die nächste Folie zeigt dir, wie du deinen 3-Monats-Plan erstellst. Wir "
 "empfehlen die Verwendung des Online-Tools."
 
 #: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
-msgstr "Erstelle deinen Dreimonatsplan"
+msgstr "Erstelle deinen 3-Monats-Plan"
 
 #: site/course/course-content.php:3032
 msgid ""
@@ -3440,8 +3439,8 @@ msgid ""
 "a friend."
 msgstr ""
 "Wenn du jemanden kennst, der Jesus nachfolgt, aber noch nicht getauft ist, "
-"fordere ihn heraus dies zu tun, und biete ihm an, ihn zu taufen. Andernfalls "
-"übe diese Fähigkeit mit einem Freund."
+"fordere ihn heraus dies zu tun, und biete an, ihn zu taufen. Andernfalls übe "
+"diese Fähigkeit mit einem Freund."
 
 #: site/course/course-content.php:4110
 msgid ""
@@ -3961,7 +3960,7 @@ msgstr "Alle"
 
 #: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
-msgstr "Logout"
+msgstr "Abmelden"
 
 #: site/dashboard/dashboard.php:171 site/pages/share.php:124
 msgid "Filter"
@@ -4158,7 +4157,7 @@ msgstr "Erstelle deinen Plan"
 
 #: site/dashboard/dashboard.php:216
 msgid "Three Month Plan Locked"
-msgstr "Dreimonatsplan gesperrt"
+msgstr "3-Monats-Plan gesperrt"
 
 #: site/dashboard/dashboard.php:217
 msgid ""
@@ -4166,8 +4165,8 @@ msgid ""
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
-"Der Dreimonatsplan ist ein Werkzeug, das dir dabei hilft, aktiv zu werden "
-"und die im Zúme-Kurs erlernten Werkzeuge und Konzepte umzusetzen. Am "
+"Der 3-Monats-Plan ist ein Werkzeug, das dir dabei hilft, aktiv zu werden und "
+"die im Zúme-Kurs erlernten Werkzeuge und Konzepte umzusetzen. Am "
 "nützlichsten ist er, sobald du das Training abgeschlossen hast."
 
 #: site/dashboard/dashboard.php:218
@@ -4209,7 +4208,7 @@ msgid ""
 "session."
 msgstr ""
 "Schalte den Bereich \"Meine Pläne\" frei, indem du in der letzten Sitzung "
-"deinen Dreimonatsplan fertigstellst."
+"deinen 3-Monats-Plan fertigstellst."
 
 #: site/dashboard/dashboard.php:226
 msgid "My Plans are Locked"
@@ -4220,7 +4219,7 @@ msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
-"Schalte diesen Bereich frei, indem du deinen Dreimonatsplan erstellst oder "
+"Schalte diesen Bereich frei, indem du deinen 3-Monats-Plan erstellst oder "
 "eine eigene Selbstverpflichtung hinzufügst."
 
 #: site/dashboard/dashboard.php:228
@@ -4380,7 +4379,7 @@ msgstr "%s freigeschaltet"
 
 #: site/dashboard/dashboard.php:272 utilities/apis/cta-api.php:314
 msgid "3 month plan"
-msgstr "Dreimonatsplan"
+msgstr "3-Monats-Plan"
 
 #: site/dashboard/dashboard.php:273
 msgid "You have joined the community"
@@ -6855,7 +6854,7 @@ msgstr "Telefonnummer des Benutzers"
 
 #: zume-training-system.php:279
 msgid "User Timezone"
-msgstr "Benutzer-Zeitzone"
+msgstr "Zeitzone des Benutzers"
 
 #: zume-training-system.php:287
 msgid "User Friend Key"
