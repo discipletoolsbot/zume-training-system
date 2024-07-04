@@ -38,7 +38,7 @@
                 <?php if ( $is_v5 ) {
                     ?>
                     <td><strong><?php echo esc_html( $item['nativeName'] ) ?></strong></td>
-                    <td><strong><?php echo esc_html( $item['enDisplayName'] ) ?></td>
+                    <td><strong><?php echo esc_html( $item['enDisplayName'] ) ?></strong></td>
                     <?php
                 } else {
                     ?>
