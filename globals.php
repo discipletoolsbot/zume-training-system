@@ -693,7 +693,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
      * @return array
      */
     function zume_languages( $type = 'code' ) {
-        global $zume_languages_by_code, $zume_languages_by_locale, $zume_languages_full_list;
+        global $zume_languages_by_code, $zume_languages_by_locale, $zume_languages_full_list, $zume_languages_v5_ready;
         $list = array(
             'en' => array(
                 'name' => 'English',
@@ -1809,6 +1809,9 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 $zume_languages_by_code[$lang['code']] = $lang;
                 $zume_languages_by_locale[$lang['locale']] = $lang;
             }
+            if ( $lang['enable_flags']['version_5_ready'] ) {
+                $zume_languages_v5_ready[$lang['code']] = $lang;
+            }
             if ( $lang['enable_flags']['translator_enabled'] ) {
                 $zume_languages_full_list[$lang['code']] = $lang;
             }
@@ -1816,6 +1819,9 @@ if ( ! function_exists( 'zume_languages' ) ) {
 
         if ( $type === 'full' ) {
             return $zume_languages_full_list;
+        }
+        else if ( $type === 'v5_only' ) {
+            return $zume_languages_v5_ready;
         }
         else if ( $type === 'locale' ) {
             return $zume_languages_by_locale;
