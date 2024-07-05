@@ -89,7 +89,7 @@ $three_circles_for_translation = [
         ],
         'right' => [
 //            $activity_base_url . 'coaching_mawl',
-//            zume_create_qr_url( $activity_base_url . 'coaching_mawl' ),
+//            create_qr_url( $activity_base_url . 'coaching_mawl' ),
             __( 'Activity Resource', 'zume' ),
         ],
     ],
@@ -111,7 +111,7 @@ $three_circles_for_translation = [
         ],
         'right' => [
 //            $activity_base_url . 'coachingchecklist',
-//            zume_create_qr_url( $activity_base_url . 'coachingchecklist' ),
+//            create_qr_url( $activity_base_url . 'coachingchecklist' ),
             __( 'Activity Resource', 'zume' ),
         ],
     ],

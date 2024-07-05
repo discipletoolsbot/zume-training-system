@@ -12,6 +12,7 @@ require_once( __DIR__ . '/login/login-functions.php' );
 $skip_folders = [
     'parts',
     'login',
+    'template'
 ];
 
 // Load all other files
@@ -23,12 +24,18 @@ foreach ( $dir as $file ){
     if ( 'index.php' !== $file && 'loader.php' !== $file && substr( $file, 0, 1 ) !== '.' && is_dir( __DIR__ . '/' . $file ) && !in_array( $file, $skip_folders ) ) {
         $subdir = scandir( __DIR__ . '/'. $file );
         foreach ( $subdir as $subfile ){
+            if ( in_array( $subfile, $skip_folders ) ) {
+                continue;
+            }
             if ( 'php' === substr( $subfile, -3, 3 ) && 'index.php' !== $subfile && 'loader.php' !== $subfile && substr( $subfile, 0, 1 ) !== '.' ) {
                 require_once( __DIR__ . '/'. $file . '/' . $subfile );
             }
             if ( substr( $subfile, 0, 1 ) !== '.' && is_dir( __DIR__ . '/'. $file . '/' . $subfile ) ) {
                 $subsubdir = scandir( __DIR__ . '/'. $file . '/' . $subfile );
                 foreach ( $subsubdir as $subsubfile ){
+                    if ( in_array( $subsubfile, $skip_folders ) ) {
+                        continue;
+                    }
                     if ( 'php' === substr( $subsubfile, -3, 3 ) && 'index.php' !== $subsubfile && 'loader.php' !== $subsubfile && substr( $subsubfile, 0, 1 ) !== '.' ) {
                         require_once( __DIR__ . '/'. $file . '/' . $subfile . '/' . $subsubfile );
                     }

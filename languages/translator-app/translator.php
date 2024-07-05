@@ -2030,7 +2030,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     foreach( $activities as $item ) {
                         $url = $site_url . 'app/qr/?l='.$this->language_code.'&a='.$item;
                         $url_short = 'l='.$this->language_code.'&a='.$item;
-                        $qr_url = zume_create_qr_url( $url );
+                        $qr_url = create_qr_url( $url );
                         ?>
                         <div class="qr-card">
                             <div class="overflow"><h3><?php echo $item ?></h3></div>
@@ -2063,7 +2063,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                         $id =  intval( $item['key'] );
                         $url = $site_url . 'app/qr/?l='.$this->language_code. '&v='. $id;
                         $url_short = 'l='.$this->language_code.'&v='.$id;
-                        $qr_url = zume_create_qr_url( $url );
+                        $qr_url = create_qr_url( $url );
                         ?>
                             <div class="qr-card">
                                 <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
@@ -2133,7 +2133,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 foreach( $list as $i => $v ) {
                     $url = $site_url . 'app/qr/?l='.$this->language_code. '&c='. $i;
                     $url_short = 'l='.$this->language_code. '&c='. $i;
-                    $qr_url = zume_create_qr_url( $url );
+                    $qr_url = create_qr_url( $url );
                     ?>
                     <div class="qr-card">
                         <h3><?php echo $v ?></h3>
@@ -2169,7 +2169,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     $id =  intval( $item['key'] );
                     $url = $site_url . 'app/qr/?l='.$this->language_code. '&s='. $item['script'];
                     $url_short = 'l='.$this->language_code.'&s='.$item['script'];
-                    $qr_url = zume_create_qr_url( $url );
+                    $qr_url = create_qr_url( $url );
                     ?>
                     <div class="qr-card">
                         <div class="overflow"><h3><?php echo $item['video_title'] ?></h3></div>
