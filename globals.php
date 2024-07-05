@@ -784,7 +784,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'displayCode' => 'ar_tn',
                 'locale' => 'ar_TN',
                 'weblate' => 'ar_TN',
-                'nativeName' => 'العربية - الأردن',
+                'nativeName' => ' العربية التونسية',
                 'rtl' => true,
                 'flag' => '🇹🇳',
                 'population' => 0,
