@@ -10,7 +10,6 @@ export class WatchSlide extends CourseSlide {
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
-                                <span class="icon z-icon-watch"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide['left'][0]}</h2>
@@ -21,6 +20,12 @@ export class WatchSlide extends CourseSlide {
                     <div class="content-area">
                         <div class="stack content-area__text">
                             ${this.renderContent(this.slide['right'], true)}
+                            <div>
+                                <button class="btn tight d-flex align-items-center gap--1" type="button">
+                                    <span>${this.slide['left'][0]}</span>
+                                    <span class="icon z-icon-watch f-3"></span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

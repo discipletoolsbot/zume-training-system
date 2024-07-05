@@ -118,7 +118,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '1', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '1', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -160,7 +160,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '2', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '2', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -206,7 +206,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '3', true, $lang_code), // video
+                Zume_Course::get_video_by_key( '3', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -251,7 +251,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '4', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '4', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -312,7 +312,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '5', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '5', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -508,7 +508,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '6', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '6', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -554,7 +554,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '7', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '7', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -622,7 +622,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '8', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '8', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -826,7 +826,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '9', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '9', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -897,7 +897,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '10', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '10', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -966,7 +966,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '11', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '11', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1172,7 +1172,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '12', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '12', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1223,7 +1223,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '13', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '13', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1269,7 +1269,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '14', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '14', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1315,7 +1315,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '15', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '15', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1361,7 +1361,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '16', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '16', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1545,7 +1545,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '17', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '17', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1574,7 +1574,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '18', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '18', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1782,7 +1782,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '19', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '19', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -1824,7 +1824,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '21', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '21', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2003,7 +2003,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '22', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '22', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2220,7 +2220,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '23', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '23', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2422,7 +2422,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '24', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '24', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2467,7 +2467,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '25', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '25', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2514,7 +2514,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '26', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '26', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2556,7 +2556,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '28', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '28', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2928,7 +2928,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '29', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '29', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],
@@ -2972,7 +2972,7 @@ function zume_content( $lang_code = 'en') {
             'menu' => [],
             'length' => [],
             'center' => [
-                Zume_Course::get_video_by_key( '30', true, $lang_code ), // video
+                Zume_Course::get_video_by_key( '30', true, $lang_code, true ), // video
             ],
             'left' => [],
             'right' => [],

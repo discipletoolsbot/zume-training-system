@@ -87,6 +87,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'rest_endpoint' => esc_url_raw( rest_url() ) . 'zume_system/v1',
                 'images_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . 'assets/images' ),
                 'language' => $this->lang_code,
+                'home_url' => is_user_logged_in() ? zume_dashboard_url() : zume_home_url(),
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'zume_languages' => zume_language_codes(),
                 'translations' => self::translations(),
@@ -118,7 +119,6 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
                 <course-presenter
                     languageCode="<?php echo esc_html( strtoupper( $display_code ) ) ?>"
-                    homeUrl="<?php echo esc_url( zume_home_url() ) ?>"
                     assetsPath="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images' ) ?>"
                 ></course-presenter>
             </div>
