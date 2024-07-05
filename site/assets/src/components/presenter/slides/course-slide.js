@@ -96,11 +96,6 @@ export class CourseSlide extends LitElement {
             slideHeight = slideWidth * 9 / 16
         }
 
-        console.log(isScreenWiderThanSlide)
-        console.log(screenWidth, screenHeight)
-
-        console.log(slideWidth, slideHeight)
-
         const slideUnit = slideWidth / 100
 
         slides.forEach((slide) => {

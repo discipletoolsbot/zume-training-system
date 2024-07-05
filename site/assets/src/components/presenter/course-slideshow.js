@@ -20,8 +20,7 @@ export class CourseSlideshow extends LitElement {
         this.listenForKeyboard = this.listenForKeyboard.bind(this)
         this.listenForMouseClick = this.listenForMouseClick.bind(this)
 
-        const html = document.querySelector('html')
-        const dir = html.dataset.dir
+        const dir = document.querySelector('html').getAttribute('dir')
 
         this.isRtl = dir === 'rtl'
     }
@@ -71,16 +70,14 @@ export class CourseSlideshow extends LitElement {
         this.setSlide(this.sectionIndex - 1)
     }
     leftSlide() {
-        const dir = document.querySelector('html').dir
-        if (dir === 'rtl') {
+        if (this.isRtl) {
             this.nextSlide()
         } else {
             this.previousSlide()
         }
     }
     rightSlide() {
-        const dir = document.querySelector('html').dir
-        if (dir === 'rtl') {
+        if (this.isRtl) {
             this.previousSlide()
         } else {
             this.nextSlide()
@@ -123,13 +120,13 @@ export class CourseSlideshow extends LitElement {
 
         const { innerWidth } = window
 
-        const threshhold = 1 / 2 * innerWidth
+        const threshhold = this.isRtl ? 3 / 4 * innerWidth : 1 / 4 * innerWidth
 
         if ( x < threshhold ) {
             this.leftSlide()
         }
 
-        if ( x > innerWidth - threshhold ) {
+        if ( x > threshhold ) {
             this.rightSlide()
         }
     }
