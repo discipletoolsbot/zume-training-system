@@ -14,10 +14,12 @@ h1, .h1 {
     line-height: 1;
 }
 .hero h1 {
+    font-size: 2.5rem;
     font-size: clamp(2.5rem, 6.5vw, 6rem);
 }
 .hero h2 {
     color: color('brand-light');
+    font-size: 5rem;
     font-size: clamp(5rem, 10vw, 9rem);
     --spacing: 0;
 }

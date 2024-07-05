@@ -59,7 +59,7 @@ export class ShareList extends LitElement {
                 <div class="share card">
                     <div class="switcher | switcher-width-25 align-items-center gapx--4">
                         <div class="stack grow-2">
-                            <a class="f-1 bold mt-0" href=${page_url}>
+                            <a class="f-1 bold" href=${page_url}>
                                 ${page_title}
                             </a>
                             <p class="f--1 show-for-large">

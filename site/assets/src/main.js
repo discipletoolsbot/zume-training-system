@@ -23,21 +23,19 @@ import './components/progress-slider'
 import { Settings } from 'luxon'
 
 jQuery(document).ready(() => {
-    cookieStore.get('zume_language')
-        .then((result) => {
-            const zumeLocale = result.value || 'en'
+    const cookies = document.cookie ? Object.fromEntries(document.cookie.split(';').map((cookie) => cookie.trim().split('='))) : {}
+    const zumeLocale = cookies.zume_language || 'en'
 
-            let locale = zumeLocale
-            if (zumeLocale.includes('_')) {
-                /* DateTime locales should only have - not _ */
-                locale = zumeLocale.replace('_', '-')
-            } else if (zumeLocale.length === 4) {
-                /* chinese locales should be e.g zh-cn not zhcn */
-                locale = zumeLocale.slice(0,2) + '-' + zumeLocale.slice(2)
-            }
+    let locale = zumeLocale
+    if (zumeLocale.includes('_')) {
+        /* DateTime locales should only have - not _ */
+        locale = zumeLocale.replace('_', '-')
+    } else if (zumeLocale.length === 4) {
+        /* chinese locales should be e.g zh-cn not zhcn */
+        locale = zumeLocale.slice(0,2) + '-' + zumeLocale.slice(2)
+    }
 
-            Settings.defaultLocale = locale
-        })
+    Settings.defaultLocale = locale
 
         const videoPlayers = document.querySelectorAll('.video-player')
         videoPlayers.forEach((videoPlayer) => {

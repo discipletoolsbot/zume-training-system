@@ -2165,7 +2165,7 @@ if ( ! function_exists( 'zume_training_items' ) ) {
                 'title' => __( 'Spiritual Economy', 'zume' ),
                 'description' => __( "Learn how God's economy is different from the world's. God invests more in those who are faithful with what they've already been given.", 'zume' ),
                 'video_title' => __( 'Spiritual Economy', 'zume' ),
-                'slug' => 'the-spiritual-economy',
+                'slug' => 'the-kingdom-economy',
                 'video' => 9,
                 'script' => 42,
                 'type' => 'concept',

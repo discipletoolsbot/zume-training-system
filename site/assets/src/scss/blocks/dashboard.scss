@@ -48,8 +48,13 @@
     line-height: 1;
     width: fit-content;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
     padding: var(--s-1);
+}
+@supports not (aspect-ratio: 1) {
+    .profile-btn {
+        line-height: 0.8;
+    }
 }
 .profile-name {
     margin-top: var(--s-3);
@@ -189,6 +194,8 @@ dash-header-right {
     gap: spacing(0);
     font-size: font-size(3);
 
+    @include gap-fallback(0);
+
     & .icon {
         color: color('brand-light');
     }
@@ -201,8 +208,9 @@ dash-header-right {
         display: flex;
         align-items: center;
         gap: var(--space, spacing(0));
-    }
 
+        @include gap-fallback(0);
+    }
 }
 
 @media (max-width: $break-lg) {

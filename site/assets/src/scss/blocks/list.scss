@@ -21,6 +21,8 @@
     border-bottom: 2px solid color('gray-100');
     gap: spacing(0);
 
+    @include gap-fallback(0);
+
     /* Prevent double width borders by pulling each list item up to overlap their borders */
     margin-top: -2px;
 
@@ -77,6 +79,8 @@
     align-items: center;
     gap: spacing(0);
 
+    @include gap-fallback(0);
+
     & .icon {
         font-size: font-size(2);
     }
@@ -90,6 +94,8 @@
     display: flex;
     align-items: center;
     gap: spacing(0);
+
+    @include gap-fallback(0);
 
     & > :first-child {
         margin-left: auto;

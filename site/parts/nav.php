@@ -68,16 +68,16 @@
 
             <?php if ( is_user_logged_in() ) : ?>
 
-                <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__link"><span class="icon z-icon-dashboard"></span><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__link"><span class="icon z-icon-dashboard"></span><span><?php echo esc_html__( 'Dashboard', 'zume' ) ?></span></a>
 
             <?php else : ?>
 
-            <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="link-light nav__link"><span class="icon z-icon-info"></span> <?php echo esc_html__( 'About', 'zume' ) ?></a>
-            <a role="listitem" href="<?php echo esc_url( zume_training_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-my-training"></div> <?php echo esc_html__( 'Training', 'zume' ) ?></a>
+            <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="link-light nav__link"><span class="icon z-icon-info"></span> <span><?php echo esc_html__( 'About', 'zume' ) ?></span></a>
+            <a role="listitem" href="<?php echo esc_url( zume_training_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-my-training"></div> <span><?php echo esc_html__( 'Training', 'zume' ) ?></span></a>
 
             <?php endif; ?>
 
-            <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-checkin"></div> <?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+            <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-checkin"></div> <span><?php echo esc_html__( 'Check-in', 'zume' ) ?></span></a>
 
             <?php if ( is_user_logged_in() ) : ?>
 
@@ -85,20 +85,20 @@
 
                 <?php if ( !isset( $user_stage['state']['requested_a_coach'] ) ) : ?>
 
-                    <a role="listitem" href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-coach"></div> <?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
+                    <a role="listitem" href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-coach"></div> <span><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></span></a>
 
                 <?php endif; ?>
 
                 <?php if ( !isset( $user_stage['state']['join_community'] ) ) : ?>
 
-                    <a role="listitem" href="<?php echo esc_url( zume_join_the_community_wizard_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-community"></div> <?php echo esc_html__( 'Join the Community', 'zume' ) ?></a>
+                    <a role="listitem" href="<?php echo esc_url( zume_join_the_community_wizard_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-community"></div> <span><?php echo esc_html__( 'Join the Community', 'zume' ) ?></span></a>
 
                 <?php endif; ?>
 
             <?php else : ?>
 
-                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="link-light nav__link outline"><div class="icon z-icon-invite"></div> <?php echo esc_html__( 'Register', 'zume' ) ?></a>
-                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="link-light nav__link"><div class="icon z-icon-profile"></div> <?php echo esc_html__( 'Login', 'zume' ) ?></a>
+                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="link-light nav__link outline"><div class="icon z-icon-invite"></div> <span><?php echo esc_html__( 'Register', 'zume' ) ?></span></a>
+                <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="link-light nav__link"><div class="icon z-icon-profile"></div> <span><?php echo esc_html__( 'Login', 'zume' ) ?></span></a>
 
             <?php endif; ?>
 

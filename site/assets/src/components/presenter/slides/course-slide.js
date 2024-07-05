@@ -1,10 +1,11 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, isServer } from 'lit';
 
 export class CourseSlide extends LitElement {
     static get properties() {
         return {
             slide: { type: Object },
             id: { type: String },
+            inContainer: { type: Boolean },
         };
     }
 
@@ -12,6 +13,7 @@ export class CourseSlide extends LitElement {
         super()
 
         this.maxPercentage = 80
+        this.inContainer = false
 
         this.resizeCallback = this.resizeCallback.bind(this)
     }
@@ -68,25 +70,44 @@ export class CourseSlide extends LitElement {
 
         const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 
-        const slideWidth = slides[0].getBoundingClientRect().width
+        const isScreenWiderThanSlide = this.inContainer
+            ? screenWidth / screenHeight > 16/10
+            : screenWidth / screenHeight > 16/9
 
-        const isScreenWiderThanSlide = screenWidth/screenHeight > 16/9
+        let slideHeight
+        let slideWidth
 
-        const slideUnit = isScreenWiderThanSlide
-            ? 16 / 9 * screenHeight / 100
-            : slideWidth / 100
+        if (isScreenWiderThanSlide) {
+            slideHeight = screenHeight
+            slideWidth = screenHeight * 16 / 9
 
-        const slideHeight = isScreenWiderThanSlide
-            ? screenHeight
-            : 9 / 16 * slideWidth
+            if (this.inContainer && slideWidth > screenWidth * 90 / 100 + 12) {
+                slideWidth = screenWidth * 90 / 100 + 12
+                slideHeight = slideWidth * 9 / 16
+            }
 
-        this.slideUnit = slideUnit
-        this.slideHeight = slideHeight
+        } else {
+            slideWidth = screenWidth
+
+            if (this.inContainer) {
+                slideWidth = screenWidth * 90 / 100 + 12
+            }
+
+            slideHeight = slideWidth * 9 / 16
+        }
+
+        console.log(isScreenWiderThanSlide)
+        console.log(screenWidth, screenHeight)
+
+        console.log(slideWidth, slideHeight)
+
+        const slideUnit = slideWidth / 100
 
         slides.forEach((slide) => {
             slide.style = `
                 --slide-unit: ${slideUnit}px;
                 --slide-height: ${slideHeight}px;
+                --slide-width: ${slideWidth}px;
             `
         })
     }

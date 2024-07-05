@@ -24,6 +24,16 @@
    @return fluid-clamp($i, $min-base-font, $max-base-font, $min-text-ratio, $max-text-ratio, $min-screen-width, $max-screen-width);
 }
 
+@function fluid-type-fallback(
+    $i,
+    $base-font: $max-base-font,
+    $text-ratio: $max-text-ratio,
+    $min-screen-width: $min-screen-width,
+    $max-screen-width: $max-screen-width,
+) {
+   @return fluid-clamp-fallback($i, $base-font, $text-ratio, $min-screen-width, $max-screen-width);
+}
+
 @function fluid-space(
     $i,
     $min-base-space: $min-base-space,
@@ -34,6 +44,16 @@
     $max-screen-width: $max-screen-width,
 ) {
    @return fluid-clamp($i, $min-base-space, $max-base-space, $min-spacing-ratio, $max-spacing-ratio, $min-screen-width, $max-screen-width);
+}
+
+@function fluid-space-fallback(
+    $i,
+    $base-space: $max-base-space,
+    $spacing-ratio: $max-spacing-ratio,
+    $min-screen-width: $min-screen-width,
+    $max-screen-width: $max-screen-width,
+) {
+   @return fluid-clamp-fallback($i, $base-space, $spacing-ratio, $min-screen-width, $max-screen-width);
 }
 
 @function fluid-clamp(
@@ -58,7 +78,17 @@
     $gradient-vw: $gradient * 100;
 
     @return min( $max-size-rems * 1rem, max( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw ) );
+}
 
-    /* Browser support for clamp isn't close to 100% yet, so falling back to a min/max implementation of clamp */
-    //@return clamp( math.round($min-size-rems * 100) / 100 * 1rem, math.round($intercept-rems*100) / 100 * 1rem + math.round($gradient-vw*100) / 100 * 1vw, $max-size-rems * 1rem );
+@function fluid-clamp-fallback(
+    $i,
+    $base: 18,
+    $ratio: 1.3,
+    $min-screen-width: 320,
+    $max-screen-width: 1500,
+) {
+    $size: $base* math.pow( $ratio, $i );
+    $size-rems: math.div( $size, $rem-value-in-pixels );
+
+    @return $size-rems * 1rem;
 }

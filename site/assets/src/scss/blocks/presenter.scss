@@ -75,8 +75,9 @@
     font-size: var(--font-size);
     line-height: 1.5;
 
-    aspect-ratio: 16 / 9;
+    height: var(--slide-height);
     max-height: 100vh;
+    width: var(--slide-width);
     margin-left: auto;
     margin-right: auto;
 
@@ -255,6 +256,14 @@ not of the 2 column section */
     position: relative;
     flex-grow: 2;
 
+    /* We can't specify flex-box gap property, so using inset as a close approximation of compatibility versions */
+    /* see https://caniuse.com/?search=gap and https://caniuse.com/?search=inset */
+    @supports not (inset: 1rem) {
+        & > :first-child {
+            margin-inline-end: var(--gap-width);
+        }
+    }
+
     & > * {
         display: flex;
         align-items: center;
@@ -327,12 +336,26 @@ not of the 2 column section */
     align-items: center;
 
     & > .progress-bar-stage:first-child > :first-child {
-        border-end-start-radius: calc( 3 * var(--slide-unit) );
-        border-start-start-radius: calc( 3 * var(--slide-unit) );
+        border-top-left-radius: calc( 3 * var(--slide-unit) );
+        border-bottom-left-radius: calc( 3 * var(--slide-unit) );
+
+        [dir="rtl"] & {
+            border-top-left-radius: unset;
+            border-bottom-left-radius: unset;
+            border-top-right-radius: calc( 3 * var(--slide-unit) );
+            border-bottom-right-radius: calc( 3 * var(--slide-unit) );
+        }
     }
     & > .progress-bar-stage:last-child > :last-child {
-        border-end-end-radius: calc( 3 * var(--slide-unit) );
-        border-start-end-radius: calc( 3 * var(--slide-unit) );
+        border-top-right-radius: calc( 3 * var(--slide-unit) );
+        border-bottom-right-radius: calc( 3 * var(--slide-unit) );
+
+        [dir="rtl"] & {
+            border-top-right-radius: unset;
+            border-bottom-right-radius: unset;
+            border-top-left-radius: calc( 3 * var(--slide-unit) );
+            border-bottom-left-radius: calc( 3 * var(--slide-unit) );
+        }
     }
 }
 .progress-bar-stage {

@@ -1,0 +1,9 @@
+@mixin gap-fallback($spacing: 0){
+
+    @supports not (inset: 0) {
+        & > * + * {
+            margin-inline-start: spacing($spacing);
+        }
+    }
+
+}

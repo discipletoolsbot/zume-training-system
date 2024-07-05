@@ -708,7 +708,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 class="profile-btn"
                                 @click=${this.openProfile}
                             >
-                                ${this.createInitials(this.userProfile.name)}
+                                <div>${this.createInitials(this.userProfile.name)}</div>
                             </button>
                             <span class="profile-name"
                                 >${this.userProfile.name}</span

@@ -1,33 +1,66 @@
 html {
 
-    // spacing
-    --s-5: #{fluid-space(-5)};
-    --s-4: #{fluid-space(-4)};
-    --s-3: #{fluid-space(-3)};
-    --s-2: #{fluid-space(-2)};
-    --s-1: #{fluid-space(-1)};
-    --s0: #{fluid-space(0)};
-    --s1: #{fluid-space(1)};
-    --s2: #{fluid-space(2)};
-    --s3: #{fluid-space(3)};
-    --s4: #{fluid-space(4)};
-    --s5: #{fluid-space(5)};
-    --s6: #{fluid-space(6)};
-    --s7: #{fluid-space(7)};
+    // fallback spacing
+    --s-5: #{fluid-space-fallback(-5)};
+    --s-4: #{fluid-space-fallback(-4)};
+    --s-3: #{fluid-space-fallback(-3)};
+    --s-2: #{fluid-space-fallback(-2)};
+    --s-1: #{fluid-space-fallback(-1)};
+    --s0: #{fluid-space-fallback(0)};
+    --s1: #{fluid-space-fallback(1)};
+    --s2: #{fluid-space-fallback(2)};
+    --s3: #{fluid-space-fallback(3)};
+    --s4: #{fluid-space-fallback(4)};
+    --s5: #{fluid-space-fallback(5)};
+    --s6: #{fluid-space-fallback(6)};
+    --s7: #{fluid-space-fallback(7)};
 
-    // font-sizes
+    @supports (padding: min(1, 2)) {
+        // spacing
+        --s-5: #{fluid-space(-5)};
+        --s-4: #{fluid-space(-4)};
+        --s-3: #{fluid-space(-3)};
+        --s-2: #{fluid-space(-2)};
+        --s-1: #{fluid-space(-1)};
+        --s0: #{fluid-space(0)};
+        --s1: #{fluid-space(1)};
+        --s2: #{fluid-space(2)};
+        --s3: #{fluid-space(3)};
+        --s4: #{fluid-space(4)};
+        --s5: #{fluid-space(5)};
+        --s6: #{fluid-space(6)};
+        --s7: #{fluid-space(7)};
+    }
+
+    // fallback font-sizes
     /* clamp value based on reducing font at 425px width */
-    --t-2: #{fluid-type(-2)};
-    --t-1: #{fluid-type(-1)};
-    --t0: #{fluid-type(0)};
-    --t1: #{fluid-type(1)};
-    --t2: #{fluid-type(2)};
-    --t3: #{fluid-type(3)};
-    --t4: #{fluid-type(4)};
-    --t5: #{fluid-type(5)};
-    --t6: #{fluid-type(6)};
-    --t7: #{fluid-type(7)};
-    --t8: #{fluid-type(8)};
+    --t-2: #{fluid-type-fallback(-2)};
+    --t-1: #{fluid-type-fallback(-1)};
+    --t0: #{fluid-type-fallback(0)};
+    --t1: #{fluid-type-fallback(1)};
+    --t2: #{fluid-type-fallback(2)};
+    --t3: #{fluid-type-fallback(3)};
+    --t4: #{fluid-type-fallback(4)};
+    --t5: #{fluid-type-fallback(5)};
+    --t6: #{fluid-type-fallback(6)};
+    --t7: #{fluid-type-fallback(7)};
+    --t8: #{fluid-type-fallback(8)};
+
+    @supports (padding: min(1, 2)) {
+        // font-sizes
+        /* clamp value based on reducing font at 425px width */
+        --t-2: #{fluid-type(-2)};
+        --t-1: #{fluid-type(-1)};
+        --t0: #{fluid-type(0)};
+        --t1: #{fluid-type(1)};
+        --t2: #{fluid-type(2)};
+        --t3: #{fluid-type(3)};
+        --t4: #{fluid-type(4)};
+        --t5: #{fluid-type(5)};
+        --t6: #{fluid-type(6)};
+        --t7: #{fluid-type(7)};
+        --t8: #{fluid-type(8)};
+    }
 
     --border-thin: 1px;
     --border-radius: 10px;

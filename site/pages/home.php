@@ -82,9 +82,12 @@ class Zume_Training_Home extends Zume_Magic_Page
         $current_language_code = zume_current_language();
         ?>
 
-        <div class="stack | s0 justify-content-center absolute top left mx-0 my-3 p--1 hard-shadow | sticker">
-            <h2 class="f-3 lh-sm"><?php echo esc_html__( '45+', 'zume' ) ?></h2>
-            <h3 class="uppercase f--2 lh-sm"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
+        <div class="stack | s0 justify-content-center absolute top left mx-0 my-3 p--1 hard-shadow aspect-ratio | sticker">
+            <svg class="aspect-ratio__fallback" viewBox="0 0 1 1"></svg>
+            <div class="my-auto">
+                <h2 class="f-3 lh-sm"><?php echo esc_html__( '45+', 'zume' ) ?></h2>
+                <h3 class="uppercase f--2 lh-sm"><?php echo esc_html__( 'Languages', 'zume' ) ?></h3>
+            </div>
         </div>
         <?php require __DIR__ . '/../parts/nav.php'; ?>
 
@@ -129,14 +132,16 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h2 class="text-center h1"><?php echo esc_html__( 'Becoming more like Jesus... Together', 'zume' ) ?></h2>
             <div class="grid | grid-min-24rem">
                 <div class="stack | left tail circle-end-small bg-brand-light white p-2">
-                    <h3 class="h2"><?php echo esc_html__( 'Overview', 'zume' ) ?></h3>
-                    <ul role="list" class="check-list f-2 bold lh-md">
-                        <li><?php echo esc_html__( 'Group Discussions', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( 'Self-Facilitated', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( 'Practice-Oriented', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( '32 Concepts and Skills', 'zume' ) ?></li>
-                        <li><?php echo esc_html__( '20 hours of Training', 'zume' ) ?></li>
-                    </ul>
+                    <div class="my-auto">
+                        <h3 class="h2"><?php echo esc_html__( 'Overview', 'zume' ) ?></h3>
+                        <ul role="list" class="check-list f-2 bold lh-md">
+                            <li><?php echo esc_html__( 'Group Discussions', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Self-Facilitated', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Practice-Oriented', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( '32 Concepts and Skills', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( '20 hours of Training', 'zume' ) ?></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="cover">
                     <div class="center stack">

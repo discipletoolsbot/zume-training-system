@@ -66,7 +66,7 @@ export class ShareLinks extends LitElement {
                     <p><code>${this.url}</code></p>
                   </div>
               ` : html`
-                  <div :class="cluster gap--1">
+                  <div class="stack--1">
                     ${ this.webShareSupported ? html`
                         <div class="position-relative">
                           <button class="btn" @click=${this.share}>
@@ -81,7 +81,7 @@ export class ShareLinks extends LitElement {
                           ${
                             this.alwaysShow ? html`<p><code>${this.url}</code></p>` : ''
                           }
-                          <div class="position-relative fit-content mx-auto">
+                          <div class="position-relative">
                             <button class="btn fit-content mx-auto" @click=${this.copyLink}>
                               <!-- Link icon -->
                               <span>${this.t.copy_link}</span>

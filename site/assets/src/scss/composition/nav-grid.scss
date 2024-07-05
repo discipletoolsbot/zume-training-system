@@ -6,5 +6,9 @@
 
     & > * {
         flex: 0 1 0;
+
+        @supports not (inset: 0) {
+            margin: calc( var(--gutter, 2rem) / 2 );
+        }
     }
 }

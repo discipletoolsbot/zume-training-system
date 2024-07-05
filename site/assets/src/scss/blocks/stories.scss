@@ -24,6 +24,8 @@
     width: 25em;
     padding: spacing(2) spacing(1);
     gap: spacing(1);
+
+    @include gap-fallback(1);
 }
 
 .story-card__logo {
