@@ -599,6 +599,10 @@ export class DashBoard extends navigator(router(LitElement)) {
         return this.userState.join_community ? true : false
     }
 
+    openJoinTrainingWizard(event) {
+        event.preventDefault()
+        this.openWizard(Wizards.joinATraining)
+    }
     numberOfGroups() {
         return Object.keys(this.trainingGroups).length
     }
@@ -980,10 +984,11 @@ export class DashBoard extends navigator(router(LitElement)) {
                             ></nav-link>
                             <nav-link
                                 class="menu-btn | f--1"
+                                href=""
                                 icon="z-icon-public-training"
                                 text=${jsObject.translations.join_training_group}
                                 as="link"
-                                @click=${() => this.dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: Wizards.joinATraining } }))}
+                                @click=${this.openJoinTrainingWizard}
                             ></nav-link>
                         </div>
                     </div>

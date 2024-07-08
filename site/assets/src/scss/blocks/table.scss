@@ -22,7 +22,8 @@
 
     table td {
         border-bottom: 1px solid #ddd;
-        display: block;
+        display: flex;
+        justify-content: space-between;
         font-size: .8em;
         text-align: right;
     }
@@ -33,7 +34,6 @@
         content: attr(aria-label);
         */
         content: attr(data-label);
-        float: left;
         font-weight: bold;
         text-transform: uppercase;
     }
