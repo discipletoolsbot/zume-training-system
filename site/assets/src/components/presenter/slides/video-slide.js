@@ -40,6 +40,18 @@ export class VideoSlide extends CourseSlide {
         this.scriptUrl = scriptUrl.href
     }
 
+    maybeRemoveAutoplay(videoUrl) {
+        if (!this.inContainer) {
+            return videoUrl
+        }
+
+        const url = new URL(videoUrl)
+
+        url.searchParams.delete('autoplay')
+
+        return url.href
+    }
+
     render() {
         return html`
             <div class="video-slide">
@@ -53,7 +65,7 @@ export class VideoSlide extends CourseSlide {
                 </button>
 
                 <div class="widescreen flex-video">
-                    <iframe src="${this.slide['center'][0]}"
+                    <iframe src="${this.maybeRemoveAutoplay(this.slide['center'][0])}"
                             frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
                     >
