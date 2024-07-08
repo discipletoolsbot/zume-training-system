@@ -1188,14 +1188,14 @@ ${this.training.zoom_link_note}
             </div>
         `}createRenderRoot(){return this}};E(et,"FADE_TIMEOUT",3e3),E(et,"TRANSITION_TIMEOUT",500),E(et,"MAX_CTAS",3);let hs=et;customElements.define("dash-cta",hs);class ze extends pt{static get properties(){return{view:{type:String,attribute:!1},userState:{type:Object,attribute:!1}}}constructor(t){super(),this.routeName=t,this.route=k.getRoute(this.routeName),this.routes=k.childRoutesOf(this.routeName),this.view="list",this.userState=jsObject.user_stage.state,this.refetchState=this.refetchState.bind(this)}connectedCallback(){super.connectedCallback(),window.addEventListener("user-state:change",this.refetchState)}disconnectedCallback(){super.disconnectedCallback(),window.removeEventListener("user-state:change",this.refetchState)}switchView(t="list"){this.view=t}refetchState(){makeRequest("GET","user_stage",{},"zume_system/v1").done(t=>{(!t||!t.state)&&console.error("Stage or state data not returned from api"),jsObject.user_stage=t,this.userState=t.state})}renderLinks(t){return l`
             <div class="${this.view==="grid"?"nav-grid":"stack"}">
-                ${this.routes.map(e=>{let s=e.pattern;const n=Object.keys(jsObject.training_groups);return e.name===b.myTraining&&(n.length===0?s=e.pattern.replace(":code","teaser"):n.length>0&&(s=k.getRoute(b.myTrainings).pattern)),this.view==="grid"?l`
+                ${this.routes.map(e=>{let s=e.pattern;const n=Object.keys(jsObject.training_groups);e.name===b.myTraining&&(n.length===0?s=e.pattern.replace(":code","teaser"):n.length>0&&(s=k.getRoute(b.myTrainings).pattern));let a=e.translation;return Object.keys(jsObject.training_groups).length>1&&e.name===b.myTraining&&(a=jsObject.translations.my_trainings),this.view==="grid"?l`
                                 <grid-link
                                     href=${s}
-                                    text=${e.translation||""}
+                                    text=${a}
                                     icon=${e.icon}
                                     ?disableNavigate=${e.type==="handled-link"}
                                     as=${e.type==="handled-link"?"link":"nav"}
-                                    @click=${e.type==="handled-link"?a=>{!e.data.neverDisabled&&k.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
+                                    @click=${e.type==="handled-link"?r=>{!e.data.neverDisabled&&k.getCompletedStatus(e.name,t)||e.clickHandler(r,this.dispatchEvent)}:null}
                                     ?completed=${k.getCompletedStatus(e.name,t)}
                                     ?locked=${k.getLockedStatus(e.name,t)}
                                 >
@@ -1203,12 +1203,12 @@ ${this.training.zoom_link_note}
                             `:l`
                                <list-link
                                     href=${s}
-                                    text=${e.translation}
+                                    text=${a}
                                     explanation=${e.explanation}
                                     icon=${e.icon}
                                     ?disableNavigate=${e.type==="handled-link"}
                                     as=${e.type==="handled-link"?"link":"nav"}
-                                    @click=${e.type==="handled-link"?a=>{!e.data.neverDisabled&&k.getCompletedStatus(e.name,t)||e.clickHandler(a,this.dispatchEvent)}:null}
+                                    @click=${e.type==="handled-link"?r=>{!e.data.neverDisabled&&k.getCompletedStatus(e.name,t)||e.clickHandler(r,this.dispatchEvent)}:null}
                                     ?completed=${k.getCompletedStatus(e.name,t)}
                                     ?locked=${k.getLockedStatus(e.name,t)}
                                 >
