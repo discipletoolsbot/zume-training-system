@@ -68,6 +68,7 @@ export function dashRoutes() {
             explanation: jsObject.translations['join_training_group_explanation'],
             data: {
                 makeComponent: () => '',
+                neverDisabled: true,
             },
         },
         {

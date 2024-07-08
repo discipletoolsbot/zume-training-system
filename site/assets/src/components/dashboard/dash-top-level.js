@@ -71,7 +71,7 @@ export class DashTopLevel extends DashPage {
                                     ?disableNavigate=${route.type === 'handled-link'}
                                     as=${route.type === 'handled-link' ? 'link' : 'nav'}
                                     @click=${route.type === 'handled-link' ? (event) => {
-                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, userState)) return
                                         route.clickHandler(event, this.dispatchEvent)
                                     } : null}
                                     ?completed=${DashBoard.getCompletedStatus(route.name, userState)}
@@ -89,7 +89,7 @@ export class DashTopLevel extends DashPage {
                                     ?disableNavigate=${route.type === 'handled-link'}
                                     as=${route.type === 'handled-link' ? 'link' : 'nav'}
                                     @click=${route.type === 'handled-link' ? (event) => {
-                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, userState)) return
                                         route.clickHandler(event, this.dispatchEvent)
                                     } : null}
                                     ?completed=${DashBoard.getCompletedStatus(route.name, userState)}
