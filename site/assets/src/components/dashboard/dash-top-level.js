@@ -62,16 +62,21 @@ export class DashTopLevel extends DashPage {
                             }
                         }
 
+                        let routeName = route.translation
+                        if (Object.keys(jsObject.training_groups).length > 1 && route.name === RouteNames.myTraining) {
+                            routeName = jsObject.translations.my_trainings
+                        }
+
                         if (this.view === 'grid') {
                             return html`
                                 <grid-link
                                     href=${href}
-                                    text=${route.translation || ''}
+                                    text=${routeName}
                                     icon=${route.icon}
                                     ?disableNavigate=${route.type === 'handled-link'}
                                     as=${route.type === 'handled-link' ? 'link' : 'nav'}
                                     @click=${route.type === 'handled-link' ? (event) => {
-                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, userState)) return
                                         route.clickHandler(event, this.dispatchEvent)
                                     } : null}
                                     ?completed=${DashBoard.getCompletedStatus(route.name, userState)}
@@ -83,13 +88,13 @@ export class DashTopLevel extends DashPage {
                             return html`
                                <list-link
                                     href=${href}
-                                    text=${route.translation}
+                                    text=${routeName}
                                     explanation=${route.explanation}
                                     icon=${route.icon}
                                     ?disableNavigate=${route.type === 'handled-link'}
                                     as=${route.type === 'handled-link' ? 'link' : 'nav'}
                                     @click=${route.type === 'handled-link' ? (event) => {
-                                        if (DashBoard.getCompletedStatus(route.name, userState)) return
+                                        if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, userState)) return
                                         route.clickHandler(event, this.dispatchEvent)
                                     } : null}
                                     ?completed=${DashBoard.getCompletedStatus(route.name, userState)}

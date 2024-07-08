@@ -112,8 +112,6 @@ export class PublicTrainings extends LitElement {
     }
 
     _handleJoinTraining(event) {
-        console.log(event)
-
         const code = event.target.dataset.code
 
         const chosenTrainingEvent = new CustomEvent( 'chosen-training', { bubbles: true, detail: { code } } )

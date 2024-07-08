@@ -599,6 +599,10 @@ export class DashBoard extends navigator(router(LitElement)) {
         return this.userState.join_community ? true : false
     }
 
+    openJoinTrainingWizard(event) {
+        event.preventDefault()
+        this.openWizard(Wizards.joinATraining)
+    }
     numberOfGroups() {
         return Object.keys(this.trainingGroups).length
     }
@@ -767,21 +771,11 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         @click=${route.type ===
                                                         'handled-link'
                                                             ? (event) => {
-                                                                  if (
-                                                                      DashBoard.getCompletedStatus(
-                                                                          route.name,
-                                                                          this
-                                                                              .userState
-                                                                      )
-                                                                  ) {
+                                                                  if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, this.userState)) {
                                                                       event.preventDefault()
                                                                       return
                                                                   }
-                                                                  route.clickHandler(
-                                                                      event,
-                                                                      this
-                                                                          .dispatchEvent
-                                                                  )
+                                                                  route.clickHandler(event, this.dispatchEvent)
                                                               }
                                                             : null}
                                                         ?completed=${DashBoard.getCompletedStatus(
@@ -987,6 +981,14 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 icon="z-icon-resources"
                                 text=${jsObject.translations.resources}
                                 as="link"
+                            ></nav-link>
+                            <nav-link
+                                class="menu-btn | f--1"
+                                href=""
+                                icon="z-icon-public-training"
+                                text=${jsObject.translations.join_training_group}
+                                as="link"
+                                @click=${this.openJoinTrainingWizard}
                             ></nav-link>
                         </div>
                     </div>
