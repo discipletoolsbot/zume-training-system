@@ -19,6 +19,8 @@ class Zume_Activites_Coaching_Host extends Zume_Activites
     public function __construct() {
         parent::__construct();
 
+        $this->page_title = esc_html__( 'Coaching Checklist', 'zume' ) . ' - ' . esc_html__( 'H.O.S.T', 'zume' );
+
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,

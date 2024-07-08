@@ -25,6 +25,8 @@ class Zume_Training_Resources extends Zume_Magic_Page
         parent::__construct();
         $this->lang = get_locale();
 
+        $this->page_title = esc_html__( 'Resources', 'zume' );
+
         [
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();

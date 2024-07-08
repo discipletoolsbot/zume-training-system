@@ -7,7 +7,7 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Dashboard / Checkin';
     public $root = 'app';
     public $type = 'checkin-dashboard';
     public $lang = 'en_US';
@@ -25,6 +25,9 @@ class Zume_Training_Checkin_Dashboard extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = esc_html__( 'Checkin', 'zume' ) . ' - ' . esc_html__( 'Dashboard', 'zume' );
+
         $this->lang = get_locale();
 
         [

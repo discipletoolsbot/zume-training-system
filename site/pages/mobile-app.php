@@ -7,7 +7,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Mobile App';
     public $root = 'app';
     public $type = 'mobile-app';
     public $lang = 'en';
@@ -24,6 +24,8 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
     public function __construct() {
         parent::__construct();
         $this->lang = get_locale();
+
+        $this->page_title = esc_html__( 'Zúme Training App', 'zume' );
 
         [
             'url_parts' => $url_parts,

@@ -19,6 +19,8 @@ class Zume_Activites_3monthplan extends Zume_Activites
     public function __construct() {
         parent::__construct();
 
+        $this->page_title = esc_html__( '3 Month Plan', 'zume' );
+
         if ( $this->url_matches_this_activity() ) {
             $this->require_authentication();
         }

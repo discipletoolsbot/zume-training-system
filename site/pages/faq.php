@@ -7,7 +7,7 @@ class Zume_Training_FAQ extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'FAQ';
     public $root = 'app';
     public $type = 'faq';
     public $lang = 'en';

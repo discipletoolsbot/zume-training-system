@@ -5,3 +5,5 @@
 </style>
 <?php //phpcs:ignore ?>
 <script defer src="https://umami.gospelambition.com/script.js" data-website-id="e503fecf-00f2-4556-a7e3-40dd2671bdac"></script>
+
+<link rel="icon" type="image/x-icon" href="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/../../favicon.ico' ) ?>"></link>

@@ -95,10 +95,11 @@ class Zume_Training {
         $this->setup_hooks();
         require_once( 'utilities/loader.php' );
         require_once( 'globals.php' );
-        require_once( 'appearance/loader.php' );
-        require_once( 'site/loader.php' );
 
         $this->i18n();
+
+        require_once( 'appearance/loader.php' );
+        require_once( 'site/loader.php' );
 
         require_once( 'languages/translator-app/loader.php' );
     }

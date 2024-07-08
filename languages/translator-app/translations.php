@@ -9,7 +9,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training - Translations';
+    public $page_title = 'Translations';
     public $root = 'app';
     public $type = 'translations';
     public $user;
