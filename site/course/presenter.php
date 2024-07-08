@@ -7,7 +7,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Presenter';
     public $root = 'course_app';
     public $type = 'presenter';
     public $lang = 'en_US';
@@ -24,6 +24,9 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = esc_html__( 'Presenter', 'zume' );
+
         $this->lang = get_locale();
 
         [

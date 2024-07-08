@@ -7,7 +7,7 @@ class Zume_Training_Vision extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Vision';
     public $root = 'app';
     public $type = 'vision';
     public $lang = 'en';
@@ -24,6 +24,8 @@ class Zume_Training_Vision extends Zume_Magic_Page
     public function __construct() {
         parent::__construct();
         $this->lang = get_locale();
+
+        $this->page_title = esc_html__( 'Vision', 'zume' );
 
         [
             'url_parts' => $url_parts,

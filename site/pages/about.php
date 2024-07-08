@@ -7,7 +7,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'About';
     public $root = 'app';
     public $type = 'about';
     public $lang = 'en';
@@ -22,6 +22,9 @@ class Zume_Training_About extends Zume_Magic_Page
     }
 
     public function __construct() {
+
+        $this->page_title = esc_html__( 'About', 'zume' );
+
         parent::__construct();
         $this->lang = get_locale();
 

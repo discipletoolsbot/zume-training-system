@@ -25,6 +25,8 @@ class Zume_Activites extends Zume_Magic_Page
     public function __construct() {
         parent::__construct();
 
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) );
+
         [
             'lang_code' => $lang_code,
         ] = zume_get_url_pieces();
@@ -154,6 +156,8 @@ class Zume_Activites_Accountability extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'SOAPS', 'zume' );
     }
 }
 Zume_Activites_Accountability::instance();
@@ -174,6 +178,8 @@ class Zume_Activites_Prayer_Cycle extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Prayer Cycle', 'zume' );
     }
 }
 Zume_Activites_Prayer_Cycle::instance();
@@ -194,6 +200,8 @@ class Zume_Activites_Sharegospel extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Share the Gospel', 'zume' );
     }
 }
 Zume_Activites_Sharegospel::instance();
@@ -214,6 +222,8 @@ class Zume_Activites_Sharetestimony extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Three-Minute Testimony', 'zume' );
     }
 }
 Zume_Activites_Sharetestimony::instance();
@@ -234,6 +244,8 @@ class Zume_Activites_Supper extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'The Lord’s Supper', 'zume' );
     }
 }
 Zume_Activites_Supper::instance();
@@ -254,6 +266,8 @@ class Zume_Activites_Bless extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'B.L.E.S.S. Prayer', 'zume' );
     }
 }
 Zume_Activites_Bless::instance();
@@ -274,6 +288,8 @@ class Zume_Activites_33group extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( '3/3 Group Meeting', 'zume' );
     }
 }
 Zume_Activites_33group::instance();
@@ -294,6 +310,8 @@ class Zume_Activites_Prayerwalk extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Prayer Walking', 'zume' );
     }
 }
 Zume_Activites_Prayerwalk::instance();
@@ -314,6 +332,8 @@ class Zume_Activites_Peermentoring extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Peer Mentoring', 'zume' );
     }
 }
 Zume_Activites_Peermentoring::instance();
@@ -334,6 +354,8 @@ class Zume_Activites_4fields extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Four Fields', 'zume' );
     }
 }
 Zume_Activites_4fields::instance();
@@ -354,6 +376,8 @@ class Zume_Activites_Genmap extends Zume_Activites
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = strtolower( esc_html__( 'ACTIVITY', 'zume' ) ) . ' - ' . esc_html__( 'Generational Mapping', 'zume' );
     }
 }
 Zume_Activites_Genmap::instance();

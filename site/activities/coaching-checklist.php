@@ -19,6 +19,8 @@ class Zume_Activites_Coaching extends Zume_Activites
     public function __construct() {
         parent::__construct();
 
+        $this->page_title = esc_html__( 'Coaching Checklist', 'zume' );
+
         [
             'lang_code' => $lang_code,
             'url_parts' => $url_parts,

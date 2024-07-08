@@ -7,7 +7,7 @@ class Zume_Communication_Preferences extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training - Communication Preferences';
+    public $page_title = 'Communication Preferences';
     public $root = 'app';
     public $type = 'communication-preferences';
     public $lang = 'en_US';
@@ -23,6 +23,8 @@ class Zume_Communication_Preferences extends Zume_Magic_Page
 
     public function __construct() {
         parent::__construct();
+
+        $this->page_title = esc_html__( 'Update Communication Preferences', 'zume' );
 
         [
             'url_parts' => $url_parts,

@@ -7,7 +7,7 @@ class Zume_QR_Video extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'QR Video';
     public $root = 'app';
     public $type = 'video';
     public $lang = 'en';

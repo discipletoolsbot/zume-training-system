@@ -2534,7 +2534,7 @@ ${this.training.zoom_link_note}
                     </div>
                 </div>
             </div>
-        `}}customElements.define("title-slide",vl);class bl extends z{static get properties(){return{slide:{type:Object},showButtons:{type:Boolean},id:{type:String},scriptUrl:{type:String,attribute:!1},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="informationOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,this.loadScriptIntoFrame()}openMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}loadScriptIntoFrame(){const t=this.slide.script_id,e=jsObject.language,s=new URL(location.href),n=new URL(s.origin);n.pathname=[e,"app","script"].join("/"),n.searchParams.append("s",t),this.scriptUrl=n.href}render(){return l`
+        `}}customElements.define("title-slide",vl);class bl extends z{static get properties(){return{slide:{type:Object},showButtons:{type:Boolean},id:{type:String},scriptUrl:{type:String,attribute:!1},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="informationOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,this.loadScriptIntoFrame()}openMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}loadScriptIntoFrame(){const t=this.slide.script_id,e=jsObject.language,s=new URL(location.href),n=new URL(s.origin);n.pathname=[e,"app","script"].join("/"),n.searchParams.append("s",t),this.scriptUrl=n.href}maybeRemoveAutoplay(t){if(!this.inContainer)return t;const e=new URL(t);return e.searchParams.delete("autoplay"),e.href}render(){return l`
             <div class="video-slide">
 
                 <button
@@ -2546,7 +2546,7 @@ ${this.training.zoom_link_note}
                 </button>
 
                 <div class="widescreen flex-video">
-                    <iframe src="${this.slide.center[0]}"
+                    <iframe src="${this.maybeRemoveAutoplay(this.slide.center[0])}"
                             frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture"
                     >

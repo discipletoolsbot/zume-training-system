@@ -129,6 +129,8 @@ class Zume_Scripts extends Zume_Magic_Page
             <?php
             return;
         } else {
+            $this->page_title = esc_html( $training_items[$script_id]['title'] ) ?? ''
+
             ?>
             <div class="activity__wrapper content">
                 <div class="text-center">

@@ -7,7 +7,7 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Get A Coach';
     public $root = 'app';
     public $type = 'get-a-coach';
     public $lang = 'en';
@@ -24,6 +24,8 @@ class Zume_Training_Get_A_Coach extends Zume_Magic_Page
     public function __construct() {
         parent::__construct();
         $this->lang = get_locale();
+
+        $this->page_title = esc_html__( 'Get A Coach', 'zume' );
 
         [
             'url_parts' => $url_parts,

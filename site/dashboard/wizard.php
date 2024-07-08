@@ -7,7 +7,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
 
     public $magic = false;
     public $parts = false;
-    public $page_title = 'Zúme Training';
+    public $page_title = 'Wizard';
     public $root = 'app';
     public $type = 'wizard';
     public $wizard_type = '';
@@ -26,6 +26,9 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         parent::__construct();
 
         global $zume_user_profile;
+
+        $this->page_title = esc_html__( 'Wizard', 'zume' );
+
         $this->lang = get_locale();
 
         [
