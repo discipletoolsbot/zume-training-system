@@ -88,6 +88,7 @@ class Zume_Course_Builder {
                 $pieces[$key]['pieces'][] = [
                     'title' => $training_item['title'],
                     'slug' => $training_item['slug'],
+                    'slide_key' => str_replace( 'b', 'a', $slide['key'] ),
                 ];
             }
         }

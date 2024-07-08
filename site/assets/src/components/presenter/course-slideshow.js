@@ -4,7 +4,7 @@ export class CourseSlideshow extends LitElement {
     static get properties() {
         return {
             sections: { type: Array },
-            startSlideKey: { type: String },
+            slideKey: { type: String },
             sectionIndex: { attribute: false },
             currentSlide: { attribute: false },
         };
@@ -15,7 +15,7 @@ export class CourseSlideshow extends LitElement {
         this.reset()
 
         this.sections = []
-        this.startSlideKey = ''
+        this.slideKey = ''
 
         this.listenForKeyboard = this.listenForKeyboard.bind(this)
         this.listenForMouseClick = this.listenForMouseClick.bind(this)
@@ -46,10 +46,10 @@ export class CourseSlideshow extends LitElement {
         if ( changedProperties.has('sections') ) {
             this.reset()
         }
-        if (changedProperties.has('startSlideKey') && this.startSlideKey !== '') {
-            const slideIndex = this.sections.findIndex(({key}) => key === this.startSlideKey)
+        if (changedProperties.has('slideKey') && this.slideKey !== '') {
+            const slideIndex = this.sections.findIndex(({key}) => key === this.slideKey)
 
-            this.setSlide(slideIndex)
+            this.updateSlide(slideIndex)
         }
         super.update(changedProperties)
     }
@@ -149,7 +149,16 @@ export class CourseSlideshow extends LitElement {
         return false
     }
 
-    setSlide(sectionIndex) {
+    setSlide(sectionIndex, sendEvent = true) {
+        const slide = this.sections[sectionIndex]
+        if (sendEvent) {
+            this.dispatchEvent(new CustomEvent('set-slide', { detail: { key: slide.key } }))
+        }
+    }
+    updateSlide(sectionIndex) {
+        if (sectionIndex === -1) {
+            return
+        }
         this.sectionIndex = sectionIndex
         const slide = this.sections[sectionIndex]
         this.currentSlide = slide
