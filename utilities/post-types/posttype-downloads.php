@@ -701,7 +701,14 @@ class Zume_Downloads_Post_Type
 
         // slides
         $fields['ppx_10_session'] = array(
-            'name'        => 'PPX 10 Session',
+            'name'        => 'Powerpoint 10 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_10_session'] = array(
+            'name'        => 'Keynote 10 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
@@ -715,21 +722,35 @@ class Zume_Downloads_Post_Type
             'section'     => 'slides',
         );
         $fields['ppx_20_session'] = array(
-            'name'        => 'PPX 20 Session',
+            'name'        => 'Powerpoint 20 Session',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_20_session'] = array(
+            'name'        => 'Keynote 20 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
         $fields['pdf_20_session'] = array(
-            'name'        => 'PDF 20 Session',
+            'name'        => 'Keynote 20 Session',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
             'section'     => 'slides',
         );
         $fields['ppx_intensive'] = array(
-            'name'        => 'PPX Intensive',
+            'name'        => 'Powerpoint Intensive',
+            'description' => '',
+            'type'        => 'link',
+            'default'     => '',
+            'section'     => 'slides',
+        );
+        $fields['key_intensive'] = array(
+            'name'        => 'Keynote Intensive',
             'description' => '',
             'type'        => 'link',
             'default'     => '',
@@ -742,7 +763,6 @@ class Zume_Downloads_Post_Type
             'default'     => '',
             'section'     => 'slides',
         );
-
 
         return apply_filters( 'zume_pdf_download_fields_settings', $fields );
     }
