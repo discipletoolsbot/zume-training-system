@@ -2042,7 +2042,9 @@ ${this.training.zoom_link_note}
             >
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
-                <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl?"left":"right"}"></span>
+                ${this.completed?l`
+                        <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl?"left":"right"}"></span>
+                    `:""}
             </a>
         `}}customElements.define("grid-link",Xo);class tl extends Ae{constructor(){super()}renderText(){return this.text.split(" ").map(t=>l`
             <span>${t}</span>

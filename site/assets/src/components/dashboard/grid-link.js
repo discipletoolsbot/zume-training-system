@@ -31,7 +31,11 @@ export class GridLink extends NavLink {
             >
                 <span class="icon ${this.getIcon()} brand-light"></span>
                 ${this.renderText()}
-                <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl ? 'left' : 'right'}"></span>
+                ${
+                    this.completed ? html`
+                        <span class="z-icon-check-mark f-2 m--3 success absolute bottom ${this.isRtl ? 'left' : 'right'}"></span>
+                    ` : ''
+                }
             </a>
         `;
     }
