@@ -263,8 +263,19 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+
+            // planned dates
+
             $fields['set_a_01'] = [
                 'name'        => '10 Session 01',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_a_01_completed'] = [
+                'name'        => '10 Session 01 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -279,8 +290,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_a_02_completed'] = [
+                'name'        => '10 Session 02 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_a_03'] = [
                 'name'        => '10 Session 03',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_a_03_completed'] = [
+                'name'        => '10 Session 03 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -295,8 +322,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_a_04_completed'] = [
+                'name'        => '10 Session 04 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_a_05'] = [
                 'name'        => '10 Session 05',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_a_05_completed'] = [
+                'name'        => '10 Session 05 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -311,8 +354,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_a_06_completed'] = [
+                'name'        => '10 Session 06 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_a_07'] = [
                 'name'        => '10 Session 07',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_a_07_completed'] = [
+                'name'        => '10 Session 07 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -327,8 +386,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_a_08_completed'] = [
+                'name'        => '10 Session 08 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_a_09'] = [
                 'name'        => '10 Session 09',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_a_09_completed'] = [
+                'name'        => '10 Session 09 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -343,10 +418,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
-
-
+            $fields['set_a_10_completed'] = [
+                'name'        => '10 Session 10 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_01'] = [
                 'name'        => '20 Session 01',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_01_completed'] = [
+                'name'        => '20 Session 01 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -361,8 +450,26 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+
+            $fields['set_b_02_completed'] = [
+                'name'        => '20 Session 02 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_03'] = [
                 'name'        => '20 Session 03',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+
+            $fields['set_b_03_completed'] = [
+                'name'        => '20 Session 03 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -377,8 +484,25 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+
+            $fields['set_b_04_completed'] = [
+                'name'        => '20 Session 04 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_05'] = [
                 'name'        => '20 Session 05',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_05_completed'] = [
+                'name'        => '20 Session 05 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -393,8 +517,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_06_completed'] = [
+                'name'        => '20 Session 06 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_07'] = [
                 'name'        => '20 Session 07',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_07_completed'] = [
+                'name'        => '20 Session 07 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -409,8 +549,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_08_completed'] = [
+                'name'        => '20 Session 08 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_09'] = [
                 'name'        => '20 Session 09',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_09_completed'] = [
+                'name'        => '20 Session 09 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -425,8 +581,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_10_completed'] = [
+                'name'        => '20 Session 10 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_11'] = [
                 'name'        => '20 Session 11',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_11_completed'] = [
+                'name'        => '20 Session 11 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -441,8 +613,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_12_completed'] = [
+                'name'        => '20 Session 12 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_13'] = [
                 'name'        => '20 Session 13',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_13_completed'] = [
+                'name'        => '20 Session 13 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -457,8 +645,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_14_completed'] = [
+                'name'        => '20 Session 14 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_15'] = [
                 'name'        => '20 Session 15',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_15_completed'] = [
+                'name'        => '20 Session 15 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -473,8 +677,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_16_completed'] = [
+                'name'        => '20 Session 16 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_17'] = [
                 'name'        => '20 Session 17',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_17_completed'] = [
+                'name'        => '20 Session 17 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -489,8 +709,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_b_18_completed'] = [
+                'name'        => '20 Session 18 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_b_19'] = [
                 'name'        => '20 Session 19',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_b_19_completed'] = [
+                'name'        => '20 Session 19 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -505,9 +741,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
-
+            $fields['set_b_20_completed'] = [
+                'name'        => '20 Session 20 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_c_01'] = [
                 'name'        => '5 Session 01',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_01_completed'] = [
+                'name'        => '5 Session 01 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -522,8 +773,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_c_02_completed'] = [
+                'name'        => '5 Session 02 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_c_03'] = [
                 'name'        => '5 Session 03',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_03_completed'] = [
+                'name'        => '5 Session 03 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
@@ -538,8 +805,24 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
                 'tile' => 'details',
                 'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
             ];
+            $fields['set_c_04_completed'] = [
+                'name'        => '5 Session 04 Completed',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
             $fields['set_c_05'] = [
                 'name'        => '5 Session 05',
+                'description' => '',
+                'type'        => 'date',
+                'default'     => '',
+                'tile' => 'details',
+                'icon' => get_template_directory_uri() . '/dt-assets/images/date-start.svg',
+            ];
+            $fields['set_c_05_completed'] = [
+                'name'        => '5 Session 05 Completed',
                 'description' => '',
                 'type'        => 'date',
                 'default'     => '',
