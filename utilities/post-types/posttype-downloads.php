@@ -714,13 +714,13 @@ class Zume_Downloads_Post_Type
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['pdf_10_session'] = array(
-            'name'        => 'PDF 10 Session',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'slides',
-        );
+//        $fields['pdf_10_session'] = array(
+//            'name'        => 'PDF 10 Session',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'slides',
+//        );
         $fields['ppx_20_session'] = array(
             'name'        => 'Powerpoint 20 Session',
             'description' => '',
@@ -735,13 +735,13 @@ class Zume_Downloads_Post_Type
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['pdf_20_session'] = array(
-            'name'        => 'Keynote 20 Session',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'slides',
-        );
+//        $fields['pdf_20_session'] = array(
+//            'name'        => 'PDF 20 Session',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'slides',
+//        );
         $fields['ppx_intensive'] = array(
             'name'        => 'Powerpoint Intensive',
             'description' => '',
@@ -756,13 +756,13 @@ class Zume_Downloads_Post_Type
             'default'     => '',
             'section'     => 'slides',
         );
-        $fields['pdf_intensive'] = array(
-            'name'        => 'PDF Intensive',
-            'description' => '',
-            'type'        => 'link',
-            'default'     => '',
-            'section'     => 'slides',
-        );
+//        $fields['pdf_intensive'] = array(
+//            'name'        => 'PDF Intensive',
+//            'description' => '',
+//            'type'        => 'link',
+//            'default'     => '',
+//            'section'     => 'slides',
+//        );
 
         return apply_filters( 'zume_pdf_download_fields_settings', $fields );
     }
