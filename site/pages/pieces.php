@@ -44,16 +44,8 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
             $this->meta = get_post_meta( $this->postid );
 
 
-            // register url and access
-            add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', '__return_true', 100, 1 ); // allows non-logged in visit
-            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
-            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
-
-            // header content
-            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
-            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 );
-            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
+            $this->register_url_and_access();
+            $this->header_content();
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
