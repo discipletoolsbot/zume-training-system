@@ -93,16 +93,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->script_fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
             $this->video_fields = Zume_Video_Post_Type::instance()->get_custom_fields_settings();
 
-            // register url and access
-            add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', '__return_true', 100, 1 );
-            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
-            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
-
-            // header content
-            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
-            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 );
-            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
+            $this->register_url_and_access();
+            $this->header_content();
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );

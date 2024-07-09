@@ -13,7 +13,7 @@ export class CoursePresenter extends LitElement {
             zumeSessions: { attribute: false },
             menu: { attribute: false },
             lessonIndex: { attribute: false },
-            sessionKey: { attribute: false },
+            slideKey: { attribute: false },
             view: { attribute: false },
             linkNodes: { attribute: false },
             showIndex: { attribute: false },
@@ -37,7 +37,8 @@ export class CoursePresenter extends LitElement {
 
         const lessonIndex = this.getLessonIndex(url);
         this.lessonIndex = lessonIndex
-        this.sessionKey = ''
+        this.slideKey = ''
+        this.slideKey = this.getSlideKey(url)
 
         this.view = this.getView(url);
 
@@ -110,6 +111,14 @@ export class CoursePresenter extends LitElement {
             return 0;
         }
     }
+    getSlideKey(url) {
+        if (url.searchParams.has('slide')) {
+            const slideKey = url.searchParams.get('slide')
+
+            return slideKey
+        }
+        return ''
+    }
 
     getZumeSessions(url) {
         const type = url.searchParams.get('type') || '10';
@@ -158,8 +167,17 @@ export class CoursePresenter extends LitElement {
             this.showIndex = false
         }
         this.changeSession(this.lessonIndex)
-        this.sessionKey = subsectionKey
+        this.slideKey = subsectionKey
+
+        this.pushHistory()
         this.closeMenu()
+    }
+    handleSetSlide(event) {
+        const slideKey = event.detail.key
+
+        this.slideKey = slideKey
+
+        this.pushHistory()
     }
 
     getNextSession() {
@@ -199,12 +217,16 @@ export class CoursePresenter extends LitElement {
 
     pushHistory() {
         const sessionIndex = this.lessonIndex
+        const slideKey = this.slideKey
         const view = this.view
-
 
         const url = new URL(window.location.href)
         if (sessionIndex !== null && Number.isInteger(sessionIndex)) {
             url.searchParams.set('session', sessionIndex + 1)
+        }
+
+        if (slideKey !== '') {
+            url.searchParams.set('slide', slideKey)
         }
         if (view) {
             url.searchParams.set('view', view)
@@ -214,6 +236,7 @@ export class CoursePresenter extends LitElement {
     handleHistoryPopState() {
         const url = new URL(location.href)
         const sessionIndex = url.searchParams.has('session') ? url.searchParams.get('session') : null
+        const slideKey = url.searchParams.has('slide') ? url.searchParams.get('slide') : null
         const view = url.searchParams.get('view')
 
         /* hide any left open overlays from the menu */
@@ -227,6 +250,7 @@ export class CoursePresenter extends LitElement {
             this.lessonIndex = 'index'
             this.changeSession('index', false)
         }
+        this.slideKey = slideKey
 
         if (view && courseViews.includes(view)) {
             this.view = view
@@ -317,7 +341,7 @@ export class CoursePresenter extends LitElement {
                                                 <a
                                                     class="session-link"
                                                     data-subitem
-                                                    href=${`#${key}`}
+                                                    href="#"
                                                     @click=${() => this.handleSubSectionLink(sessionNumber, key)}
                                                 >
                                                     <span>${title}</span> <span>${length}</span>
@@ -357,8 +381,16 @@ export class CoursePresenter extends LitElement {
             <div class="">
                 ${
                     this.view === 'guide'
-                    ? html`<course-guide .sections=${this.getSessionSections()}></course-guide>`
-                    : html`<course-slideshow .sections=${this.getSessionSections()} startSlideKey=${this.sessionKey}></course-slideshow>`
+                    ? html`
+                        <course-guide
+                            .sections=${this.getSessionSections()
+                        }></course-guide>`
+                    : html`
+                        <course-slideshow
+                            .sections=${this.getSessionSections()}
+                            slideKey=${this.slideKey}
+                            @set-slide=${this.handleSetSlide}
+                        ></course-slideshow>`
                 }
             </div>
         `

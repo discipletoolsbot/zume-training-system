@@ -452,6 +452,13 @@ export class DashTrainings extends DashPage {
     toggleGroupDetails() {
         this.groupDetailsOpen = !this.groupDetailsOpen
     }
+    makeTrainingItemHref(item, sessionId) {
+        console.log(item, sessionId)
+        //const href = [ jsObject.site_url, jsObject.language, item.slug ].join('/')
+
+        const href = this.getSessionUrl(sessionId) + '&slide=' + item.slide_key
+        return href
+    }
 
     renderListItem(session) {
         const { id, name, datetime, completed } = session
@@ -467,6 +474,7 @@ export class DashTrainings extends DashPage {
         if (DateTime.fromMillis(datetime).year !== DateTime.now().year) {
             dateFormatOptions.year = "2-digit"
         }
+
         return html`
             <li
                 class="list__item"
@@ -521,7 +529,7 @@ export class DashTrainings extends DashPage {
                             trainingItems.map((item) => html`
                                 <li>
                                     <a
-                                        href=${[ jsObject.site_url, jsObject.language, item.slug ].join('/')}
+                                        href=${this.makeTrainingItemHref(item, id)}
                                     >
                                         ${item.title}
                                     </a>

@@ -8,8 +8,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public $magic = false;
     public $parts = false;
     public $page_title = 'Dashboard';
-    public $root = 'app';
-    public $type = 'dashboard';
+    public $root = 'dashboard';
+    public $type = '';
     public $lang = 'en_US';
     public $lang_code = 'en';
     public $base_url = '';
@@ -41,7 +41,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
         $post = zume_get_post_by_slug( $page_slug );
 
-        if ( $post && str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
+        if ( $post && str_contains( $page_slug, $this->root ) && ! dt_is_rest() ) {
 
             if ( $lang_code === 'en' ) {
                 $this->base_url = '/' . $page_slug;
@@ -51,16 +51,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
             $this->require_authentication();
 
-            // register url and access
-            add_action( 'template_redirect', [ $this, 'theme_redirect' ] );
-            add_filter( 'dt_blank_access', '__return_true', 100, 1 );
-            add_filter( 'dt_allow_non_login_access', '__return_true', 100, 1 );
-            add_filter( 'dt_override_header_meta', '__return_true', 100, 1 );
-
-            // header content
-            add_filter( 'dt_blank_title', [ $this, 'page_tab_title' ] );
-            add_action( 'wp_print_scripts', [ $this, 'print_scripts' ], 1500 );
-            add_action( 'wp_print_styles', [ $this, 'print_styles' ], 1500 );
+            $this->register_url_and_access();
+            $this->header_content();
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
