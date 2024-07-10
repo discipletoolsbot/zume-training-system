@@ -642,7 +642,6 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
 
         // @todo embelish the array with more info and convert the dates from unix.
 
-
         return $plans;
     }
 }
