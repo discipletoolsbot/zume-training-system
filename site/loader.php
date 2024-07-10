@@ -12,7 +12,7 @@ require_once( __DIR__ . '/login/login-functions.php' );
 $skip_folders = [
     'parts',
     'login',
-    'template'
+    'template',
 ];
 
 // Load all other files

@@ -65,6 +65,16 @@ function zume_training() {
 }
 add_action( 'after_setup_theme', 'zume_training', 15 );
 
+add_action( 'template_redirect', 'action_template_redirect' );
+
+/**
+ * Fires before determining which template to load.
+ *
+ */
+function action_template_redirect() : void {
+    require_once( __DIR__ . '/404.php' );
+}
+
 //register the D.T Plugin
 add_filter( 'dt_plugins', function ( $plugins ){
     $plugin_data = get_file_data( __FILE__, [ 'Version' => 'Version', 'Plugin Name' => 'Zúme Training' ], false );
@@ -133,6 +143,7 @@ class Zume_Training {
         add_action( 'dt_create_users_corresponding_contact', [ $this, 'dt_create_users_corresponding_contact' ], 10, 2 );
         add_action( 'dt_post_updated', [ $this, 'update_coaching_contact' ], 10, 5 );
         add_filter( 'pre_redirect_guess_404_permalink', '__return_false' );
+        add_filter( '404_template_hierarchy', [ $this, 'filter_404_template_hierarchy' ], 100, 3 );
         add_filter( 'language_attributes', [ $this, 'filter_language_attributes' ], 10, 2 );
 
         /* Ensure that Login is enabled and settings set to the correct values */
@@ -156,6 +167,20 @@ class Zume_Training {
         if ( class_exists( 'DT_Login_Fields' ) ) { // if outside DT context, don't run this
             DT_Login_Fields::update( $fields );
         }
+    }
+
+    /**
+     * Filters the path of the queried template by type.
+     *
+     * @param string[] $templates A list of template candidates, in descending order of priority.
+     * @return string[] Path to the template. See locate_template().
+     */
+    public function filter_404_template_hierarchy( array $templates ) : array {
+        $templates = [
+            'template-blank.php',
+        ];
+
+        return $templates;
     }
 
     /**

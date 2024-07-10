@@ -453,7 +453,6 @@ export class DashTrainings extends DashPage {
         this.groupDetailsOpen = !this.groupDetailsOpen
     }
     makeTrainingItemHref(item, sessionId) {
-        console.log(item, sessionId)
         //const href = [ jsObject.site_url, jsObject.language, item.slug ].join('/')
 
         const href = this.getSessionUrl(sessionId) + '&slide=' + item.slide_key
