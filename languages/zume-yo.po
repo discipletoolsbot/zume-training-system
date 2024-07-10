@@ -2,29 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Yoruba <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/yo/>\n"
+"PO-Revision-Date: 2024-07-10 12:16+0000\n"
+"Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
+"Language-Team: Yoruba <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/yo/>\n"
 "Language: yo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
 #: site/dashboard/dashboard.php:259 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
-msgstr "Ikẹkọ"
+msgstr "idanileko"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
-#, fuzzy
 msgid "How it Works"
-msgstr "Ise Ti Zume Se"
+msgstr "bi o se n sise"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -75,9 +73,8 @@ msgid "Vision"
 msgstr "Iran"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
-msgstr "Ibi ipamọ"
+msgstr "awon itan"
 
 #: appearance/style-override/navigation.php:160
 #, fuzzy
@@ -89,7 +86,7 @@ msgstr "Map agbaye"
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
-msgstr "Ọlọrun Nlo Awọn eniyan arinrin"
+msgstr "Ọlọrun Nlo Awọn eniyan lasan"
 
 #: globals.php:1940 site/pages/follow-jesus.php:175
 msgid ""
@@ -115,9 +112,8 @@ msgstr ""
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
-#, fuzzy
 msgid "Disciples and the Church"
-msgstr "Awọn ọmọ-ẹhin ati awọn Ìjọ"
+msgstr "Awọn ọmọ-ẹhin ati awọn Ìjọ na"
 
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
@@ -130,22 +126,20 @@ msgstr "Jije ọmọ-ẹhin tumọ si pe a gbọ lati ọdọ Ọlọrun a gbọ
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
-#, fuzzy
 msgid "Hearing and Obeying God"
-msgstr "Nípa tẹ̀mí mimi ni gbọ ati gbigbọran si Ọlọrun"
+msgstr "sise ati gbigbo oro olorun"
 
 #: globals.php:1975 globals.php:1977
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
-msgstr "Ka Bibeli"
+msgstr "kika Bibeli S.O.A.P.S"
 
 #: globals.php:1976 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
-"Ọpa kan fun ikẹkọọ Bibeli lojoojumọ ti o ṣe iranlọwọ fun ọ lati ni oye, "
-"gbọràn, ki o pin Ọrọ Ọlọrun."
+"Irinse kan fun ikẹkọọ Bibeli lojoojumọ ti o ṣe iranlọwọ fun ọ lati ni oye, "
+"gbọràn, ati pin Ọrọ Ọlọrun."
 
 #: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
@@ -160,13 +154,13 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
-"Ọpa kan fun eniyan meji tabi mẹta ti akọ tabi abo kanna lati pade ni ọsẹ "
+"irinse kan fun eniyan meji tabi mẹta ti akọ tabi abo kanna lati pade ni ọsẹ "
 "kọọkan ati lati fun ara wọn ni iyanju ni awọn agbegbe ti o nlọ daradara ati "
 "ṣafihan awọn agbegbe ti o nilo atunṣe."
 
 #: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
-msgstr "Alabara aye vs aṣelọpọ Igbesi aye"
+msgstr "igbe aye onibara ati aṣelọpọ"
 
 #: globals.php:2000 site/pages/follow-jesus.php:195
 msgid ""
@@ -177,13 +171,12 @@ msgstr ""
 "diẹ sii bi Jesu."
 
 #: globals.php:2001
-#, fuzzy
 msgid "Producer not Consumer"
-msgstr "O n se pelu Olumulo"
+msgstr "aselopo kii se Olumulo"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
-msgstr "Bi a ṣe le na Wakati ni Adura"
+msgstr "Bi a ṣe le lo Wakati kan ni Adura"
 
 #: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
@@ -191,7 +184,7 @@ msgstr "Wo bi o ti rọrun to lati lo wakati kan ninu adura."
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
-msgstr "Ibatan iriju - Atokọ 100"
+msgstr "Ibatan iriju - Atokọ 100 (ogorun)"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
@@ -235,9 +228,8 @@ msgstr ""
 "gbogbo ọna titi de opin ọjọ-ori yii."
 
 #: globals.php:2049
-#, fuzzy
 msgid "Sharing God‘s Story"
-msgstr "Gbiyanju lati pin oro Idupe"
+msgstr "pinpin itan olorun"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
@@ -249,19 +241,19 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
-"Jésù sọ pé, “Ẹ lọ máa sọ àwọn orílẹ̀-èdè di ọmọ ẹ̀yìn, BẸ́RẸ wọn l’orukọ Baba, "
-"ati ti Ọmọ ati ti Ẹmi Mimọ…” Kọ ẹkọ bi o ṣe le ṣe eyi."
+"Jésù sọ pé, “Ẹ lọ máa sọ àwọn orílẹ̀-èdè di ọmọ ẹ̀yìn, se iribomi fun wọn l’"
+"orukọ Baba, ati ti Ọmọ ati ti Ẹmi Mimọ…” Kọ ẹkọ bi o ṣe le ṣe eyi."
 
 #: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
-msgstr "Baptisi"
+msgstr "iribomi"
 
 #: globals.php:2071 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
-msgstr "Mura Ẹri 3-Iṣẹju Rẹ"
+msgstr "Mura Ẹri Iṣẹju meta Rẹ sile"
 
 #: globals.php:2072 site/pages/follow-jesus.php:300
 msgid ""
@@ -273,13 +265,13 @@ msgstr ""
 
 #: globals.php:2073
 msgid "3-Minute Testimony"
-msgstr "Ẹri fun Iṣẹju meta"
+msgstr "Ẹri Iṣẹju meta"
 
 #: globals.php:2083 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
-msgstr "Wiwo Iran si Nla Ibukun Nla julọ"
+msgstr "riri Iran ona Ibukun Nla julọ"
 
 #: globals.php:2084 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:183
@@ -287,13 +279,12 @@ msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
 msgstr ""
-"Kọ ẹkọ ti o rọrun ti ṣiṣe kii ṣe ọmọ-ẹhin Jesu nikan ṣugbọn gbogbo awọn "
-"idile ẹmí ti o pọ si fun awọn iran ti mbọ."
+"Kọ ẹkọ nipa ona kan ti o rọrun lati ṣe omo ehin ti kii ṣe okan ọmọ-ẹhin Jesu "
+"nikan ṣugbọn gbogbo awọn idile ẹmí ti o pọ si fun awọn iran ti mbọ."
 
 #: globals.php:2085
-#, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Ibukun to Tobi"
+msgstr "Ibukun to Tobi ati eyi to tobi julo"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -308,7 +299,7 @@ msgstr "Kọ ẹkọ kini awọn ducklings ni ṣe pẹlu ṣiṣe ọmọ-ẹhi
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
-msgstr "Omo eyin ni Duck"
+msgstr "Omo eyin Duckling"
 
 #: globals.php:2107 globals.php:2109 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
@@ -323,8 +314,8 @@ msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
 msgstr ""
-"Bẹrẹ lati wo ibiti ijọba Ọlọrun ko si. Iwọnyi jẹ igbagbogbo awọn ibiti "
-"Ọlọrun fẹ lati ṣiṣẹ julọ."
+"Bẹrẹ lati wo ibiti ijọba Ọlọrun ko si. Iwọnyi jẹ agbegbe awọn ibiti Ọlọrun "
+"fẹ lati ṣiṣẹ julọ."
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
@@ -342,22 +333,20 @@ msgstr ""
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
-#, fuzzy
 msgid "The Lord’s Supper"
-msgstr "Ounje Olohun"
+msgstr "Ounje ale Oluwa"
 
 #: globals.php:2131 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
-msgstr "Nrin Adura ati Bii O Ṣe Le ṣe"
+msgstr "Adura irin ati Bii O Ṣe Le ṣe"
 
 #: globals.php:2132
-#, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 "O jẹ ọna ti o rọrun lati gbọràn si aṣẹ Ọlọrun lati gbadura fun awọn miiran. "
-"Ati pe o kan ohun ti o dun bi - gbigbadura si Ọlọrun lakoko ti nrin ni ayika!"
+"Ati gege bi o se dun leti- gbigbadura si Ọlọrun lakoko ti o nrin ni ayika!"
 
 #: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
@@ -381,11 +370,11 @@ msgstr ""
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr "Alafia fun Eniyan"
+msgstr "Eniyan alafia"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
-msgstr "Igbagbọ jẹ Dara julọ ju Imọ lọ"
+msgstr "Igbagbọ Dara ju Imọ lọ"
 
 #: globals.php:2156
 #, fuzzy
@@ -400,22 +389,21 @@ msgstr ""
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
-msgstr "Otito"
+msgstr "igbagbo"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
-msgstr "Apẹrẹ Ibukun Ibukun"
+msgstr "Apẹrẹ adura ibukun"
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
-"Ṣe ikẹkọ akọsilẹ ti o rọrun lati leti fun ọ awọn ọna lati gbadura fun awọn "
-"miiran."
+"Ṣe ikẹkọ akọsilẹ ti o rọrun ti yoo ran o leti awon ona lati gbadura fun awon "
+"miran."
 
 #: globals.php:2169 site/course/course-content.php:1603
-#, fuzzy
 msgid "The B.L.E.S.S. Prayer"
-msgstr "Idanrawo ranpe B.L.E.S.S. Adura"
+msgstr "Adura ibukun"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
 #, fuzzy
@@ -439,12 +427,12 @@ msgstr "Ẹgbẹ 3/3"
 
 #: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
-msgstr "Ipilẹṣẹ Ikẹkọ fun Awọn ọmọ-ẹhin Maturing"
+msgstr "Ipilẹṣẹ Ikẹkọ fun idagbasoke Awọn ọmọ-ẹhin"
 
 #: globals.php:2192 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
-msgstr "Kọ ẹkọ eto ikẹkọ ki o ronu bi o ṣe kan si ṣiṣe ọmọ-ẹhin."
+msgstr "Kọ ẹkọ eto ikẹkọ ki o ro bi o ṣe kan si ṣiṣe ọmọ-ẹhin."
 
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
@@ -456,7 +444,7 @@ msgstr "Ikeko Omo"
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
-msgstr "Olori Seli"
+msgstr "awon seeli olori"
 
 #: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
@@ -464,8 +452,8 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
-"Ẹjẹ Alakoso jẹ ọna ti ẹnikan ti o rilara pe a darukọ lati ṣe idagbasoke "
-"idagbasoke wọn nipa adaṣe iṣẹ iranṣẹ."
+"Seeli Alakoso jẹ ọna ti ẹnikan ti o lero pe a pe ohun lati se idagbasoke ipo "
+"olori wọn nipa adaṣe iṣẹ iranṣẹ."
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
@@ -483,21 +471,21 @@ msgstr ""
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
-msgstr "Pace ti Awọn ọrọ Isodipupo"
+msgstr "iyara Isodipupo se pataki"
 
 #: globals.php:2228 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
-"Isodipupo awọn ọrọ ati isodipupo awọn nkan iyara paapaa diẹ sii. Wo idi idi "
-"ọrọ Pace."
+"Isodipupo se pataki ati yiyara isodipupo tun se pataki julo. wo idi ti iyara "
+"se se pataki"
 
 #: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
-msgstr "Pace"
+msgstr "iyara"
 
 #: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
@@ -515,7 +503,7 @@ msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lil
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: globals.php:2253
 msgid ""
@@ -540,22 +528,22 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
-msgstr "Oluko"
+msgstr "akojo ayewo Oluko"
 
 #: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
-"Ọpa ti o lagbara ti o le lo lati ṣe ayẹwo awọn agbara ati awọn ailagbara rẹ "
-"ni kiakia nigbati o ba di ṣiṣe awọn ọmọ-ẹhin ti o ṣe isodipupo."
+"irinse agbara ti o wulo lati ṣe ayẹwo awọn agbara ati awọn ailera rẹ ni "
+"kiakia nigbati o ba di ṣiṣe awọn ọmọ-ẹhin ti o ṣe isodipupo."
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
-msgstr "Olori ninu Netiwoki"
+msgstr "Olori ninu egbe"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
@@ -635,11 +623,11 @@ msgstr "3-Awọn iyika"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "ibeere"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "idahun"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -771,9 +759,8 @@ msgstr "Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Ṣọra, Fi silẹ.
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
-#, fuzzy
 msgid "Ask yourself, what does my disciple need"
-msgstr "Beere lọwọ ararẹ"
+msgstr "Beere lọwọ ara rẹ, kini ọmọ-ẹhin mi nilo"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -781,7 +768,6 @@ msgstr "Beere lọwọ ararẹ"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Model"
 msgstr "Awoṣe"
 
@@ -791,7 +777,6 @@ msgstr "Awoṣe"
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Assist"
 msgstr "Iranlọwọ"
 
@@ -802,7 +787,6 @@ msgstr "Iranlọwọ"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#, fuzzy
 msgid "Watch"
 msgstr "Ṣọ"
 
@@ -812,14 +796,12 @@ msgstr "Ṣọ"
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Leave"
 msgstr "Fi silẹ"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -835,7 +817,6 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -855,7 +836,6 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
 #: site/activities/coaching-checklist.php:288
-#, fuzzy
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -863,16 +843,15 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
-"Wiwo jẹ ipele ti o gunjulo. Ó kan ìfarakanra aláìtaara pẹ̀lú akẹ́kọ̀ọ́. O n wa "
-"lati ṣe idagbasoke agbara ni kikun ni gbogbo awọn aaye ti oye kan. O le jẹ "
-"igba mẹwa tabi diẹ ẹ sii niwọn igba ti awọn ipele meji akọkọ ni idapo. Bi "
+"Wiwo jẹ ipele ti o gunjulo. Ó kan ìfarakanra aláìtaara pẹ̀lú akẹ́kọ̀ọ́. O n "
+"wa lati ṣe idagbasoke agbara ni kikun ni gbogbo awọn aaye ti oye kan. O le "
+"jẹ igba mẹwa tabi diẹ ẹ sii niwọn igba ti awọn ipele meji akọkọ ni idapo. Bi "
 "akẹẹkọ ti nlọsiwaju ni ọgbọn, olubasọrọ pẹlu olukọ le di diẹ sii deede ati "
 "siwaju sii ad hoc."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
@@ -885,32 +864,27 @@ msgstr ""
 "lati gun kẹkẹ wọn patapata laisi abojuto, iyẹn ni ipele JADE."
 
 #: site/activities/coaching-checklist-two.php:98
-#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr "1. Ṣe ayẹwo ararẹ nipa lilo Gbo, Igbọran, Pipin, Ikẹkọ."
 
 #: site/activities/coaching-checklist-two.php:99
-#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr "2. Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Ṣọra, Fi silẹ."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
-#, fuzzy
 msgid "Self-Evaluation"
 msgstr "Igbelewọn ara-ẹni"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "Olori Seli"
+msgstr "ipele idagbasoke akeko"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Unaware"
-msgstr "Alaimoye"
+msgstr "aimoye"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
@@ -920,9 +894,8 @@ msgstr "Alailagbara"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
-msgstr "Pari Ẹkọ Pari"
+msgstr "oye"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
@@ -938,15 +911,13 @@ msgstr "Ipa Mentor"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Train new information and ensure understanding"
-msgstr "Kọ alaye titun ati rii daju oye"
+msgstr "Kọ alaye titun ati rii aridaju oye"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr "Duro ki o duro pẹlu wọn titi ti wọn fi ni awọn ipilẹ"
+msgstr "Duro ki o wa pẹlu wọn titi ti wọn o fi ni awọn ipilẹ"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
@@ -1006,19 +977,16 @@ msgid "Discuss and Mentee decides"
 msgstr "Ṣe ijiroro ati Mentee pinnu"
 
 #: site/activities/coaching-checklist.php:202
-#, fuzzy
 msgid "Mentee decides"
-msgstr "Mentee pinnu"
+msgstr "akeko pinnu"
 
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "Njẹ Mentee ko mọ, aimọ, tabi agbọye ohun elo naa?"
+msgstr "Njẹ akeko ko mọ, aimọ, tabi agbọye ohun elo naa?"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr "Ti o ba da e loju, o le mo awon eroja na."
+msgstr "Njẹ Mentee faramọ pẹlu ṣugbọn ko ni idaniloju nipa ohun elo naa?"
 
 #: site/activities/coaching-checklist.php:272
 #, fuzzy

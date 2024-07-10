@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-08 13:05+0000\n"
+"PO-Revision-Date: 2024-07-09 12:53+0000\n"
 "Last-Translator: Heloísa Menzen Campos <heloisamenzen@hotmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/pt_PT/>\n"
@@ -74,7 +74,7 @@ msgstr "Histórias"
 
 #: appearance/style-override/navigation.php:160
 msgid "Global Map"
-msgstr "Mapa global"
+msgstr "Mapa Global"
 
 #: globals.php:1939 globals.php:1941 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
@@ -112,7 +112,7 @@ msgstr "Discípulos e igreja"
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr "Respiração espiritual envolve ouvir e obedecer a Deus"
+msgstr "Respiração Espiritual envolve ouvir e obedecer a Deus."
 
 #: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
@@ -178,13 +178,13 @@ msgstr "Veja como é fácil passar uma hora em oração."
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
-msgstr "Administração relacional - Lista de Cem"
+msgstr "Administração relacional – Lista de Cem"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
 "Ferramenta projetada para ajudar você a ser um bom administrador dos seus "
-"relacionamentos"
+"relacionamentos."
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
@@ -284,11 +284,11 @@ msgstr "Grande bênção, bênção maior e a maior bênção"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
-msgstr "Discipulado de patinhos - liderando imediatamente"
+msgstr "Discipulado de patinhos – liderando imediatamente"
 
 #: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr "Aprenda o que patinhos têm a ver com discipulado"
+msgstr "Aprenda o que patinhos têm a ver com fazer discípulos"
 
 #: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
@@ -341,7 +341,7 @@ msgid ""
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 "Maneira simples de obedecer à ordem de Deus para orar pelos outros. E é "
-"exatamente o que parece - orar a Deus enquanto se caminha!"
+"exatamente o que parece – orar a Deus enquanto se caminha!"
 
 #: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
@@ -368,14 +368,14 @@ msgstr "Pessoa de Paz"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
-msgstr "Fidelidade é melhor do que conhecimento"
+msgstr "Fidelidade é melhor que conhecimento"
 
 #: globals.php:2156
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
-"É importante o que os discípulos sabem - mas é muito mais importante o que "
+"É importante o que os discípulos sabem – mas é muito mais importante o que "
 "eles FAZEM com o que sabem."
 
 #: globals.php:2157 site/course/course-content.php:1765
@@ -496,7 +496,7 @@ msgstr "Aprenda a obedecer aos mandamentos de Jesus, indo E ficando."
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr "Plano de três meses"
+msgstr "Plano de Três Meses"
 
 #: globals.php:2253
 msgid ""
@@ -522,7 +522,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
-msgstr "Lista de verificação do treinamento"
+msgstr "Lista de Verificação do Treinamento"
 
 #: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
@@ -538,7 +538,7 @@ msgstr ""
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
-msgstr "Liderança em redes"
+msgstr "Liderança em Redes"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
@@ -596,7 +596,7 @@ msgid ""
 "understand the growth around them."
 msgstr ""
 "Mapeamento geracional é outra ferramenta simples para ajudar os líderes de "
-"um movimento a entender o crescimento ao seu redor"
+"um movimento a entender o crescimento ao seu redor."
 
 #: globals.php:2323
 msgid "3-Circles Gospel Presentation"
@@ -636,7 +636,7 @@ msgstr "Sem resultados"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
-msgstr "HOSPEDAR"
+msgstr "OOCT"
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
@@ -731,7 +731,7 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
 msgid "M.A.W.L."
-msgstr "MAWL"
+msgstr "MAOS"
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
@@ -1184,7 +1184,7 @@ msgstr ""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid "Check off the checklist."
-msgstr "Marque a lista de verificação."
+msgstr "Marque a Lista de Verificação."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1279,7 +1279,7 @@ msgstr "(90 min)"
 
 #: site/course/course-builder.php:213
 msgid "(60 - 90 min)"
-msgstr "(60 - 90 min)"
+msgstr "(60 – 90 min)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
@@ -1427,7 +1427,7 @@ msgstr "Definição simples de discípulo e igreja"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
-msgstr "Respiração espiritual"
+msgstr "Respiração Espiritual"
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
@@ -1477,7 +1477,7 @@ msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
-"Respiração espiritual. Respiramos. Expiramos. Estamos vivos. Ouvir e "
+"Respiração Espiritual. Respiramos. Expiramos. Estamos vivos. Ouvir e "
 "obedecer a Deus também é assim."
 
 #: site/course/course-content.php:225
@@ -1555,7 +1555,7 @@ msgstr ""
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr "Prática - Grupos de Prestação de Contas"
+msgstr "Prática – Grupos de Prestação de Contas"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1998,7 +1998,7 @@ msgstr "Divida em grupos de duas ou três pessoas."
 
 #: site/course/course-content.php:935
 msgid "Take turns telling the Gospel to each other."
-msgstr "Revezem-se, contando o evangelho uns aos outros."
+msgstr "Reveze-se com outros, contando o evangelho uns aos outros."
 
 #: site/course/course-content.php:959
 msgid ""
@@ -2026,7 +2026,7 @@ msgstr ""
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr "LEMBRETE IMPORTANTE - Você foi batizado?"
+msgstr "LEMBRETE IMPORTANTE – Você foi batizado?"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -2137,7 +2137,7 @@ msgstr ""
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
-msgstr "Grande bênção - bênção maior - a maior bênção"
+msgstr "Grande bênção – bênção maior - a maior bênção"
 
 #: site/course/course-content.php:1242
 msgid ""
@@ -2247,7 +2247,7 @@ msgid ""
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
-"Nesta semana, passe algum tempo praticando seu Testemunho de três minutos e "
+"Nesta semana, passe algum tempo praticando seu Testemunho de Três Minutos e "
 "o compartilhe com pelo menos uma pessoa da sua Lista de Cem que você marcou "
 "como não crente ou pessoa cuja situação espiritual não é clara para você."
 
@@ -2257,7 +2257,7 @@ msgid ""
 "Share this person’s name with the group before you go."
 msgstr ""
 "Pergunte a Deus a quem Ele quer que você treine com a ferramenta Testemunho "
-"de três minutos. Compartilhe o nome da pessoa com os integrantes do grupo "
+"de Três Minutos. Compartilhe o nome da pessoa com os integrantes do grupo "
 "enquanto ainda estiverem reunidos."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
@@ -2401,7 +2401,7 @@ msgstr ""
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
 msgid "Faithfulness is Better than Knowledge"
-msgstr "Fidelidade é melhor do que conhecimento"
+msgstr "Fidelidade é melhor que conhecimento"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
@@ -2430,7 +2430,7 @@ msgid ""
 msgstr ""
 "Quando ajudamos a multiplicar discípulos, precisamos ter certeza de que "
 "estamos reproduzindo as coisas certas. É importante o que os discípulos "
-"sabem - mas é muito mais importante o que os discípulos FAZEM com o que "
+"sabem – mas é muito mais importante o que os discípulos FAZEM com o que "
 "sabem."
 
 #: site/course/course-content.php:1800
@@ -2473,7 +2473,7 @@ msgid ""
 "you’ve made during your 3/3 Group practice."
 msgstr ""
 "Nesta semana, passe algum tempo obedecendo, treinando e compartilhando com "
-"base nos compromissos que você assumiu durante a prática do seu grupo de 3/3."
+"base nos compromissos que você assumiu durante a prática do seu Grupo de 3/3."
 
 #: site/course/course-content.php:1880 site/course/course-content.php:4794
 msgid ""
@@ -2536,7 +2536,7 @@ msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
-"OLHE PARA TRÁS - Usem os desafios Obedecer, Treinar e Compartilhar da sessão "
+"OLHE PARA TRÁS – Usem os desafios Obedecer, Treinar e Compartilhar da sessão "
 "anterior para fazer a verificação uns com os outros (30 min)."
 
 #: site/course/course-content.php:2042
@@ -2690,7 +2690,7 @@ msgid ""
 msgstr ""
 "Ore, agradecendo a Deus porque os seus caminhos não são os nossos caminhos e "
 "os seus pensamentos não são os nossos pensamentos. Peça a Ele para que dê a "
-"cada membro do seu grupo a mente de Cristo - sempre focado no trabalho do "
+"cada membro do seu grupo a mente de Cristo – sempre focado no trabalho do "
 "seu Pai. Peça ao Espírito Santo para que conduza seu tempo juntos e faça a "
 "sessão ser ainda melhor."
 
@@ -2730,8 +2730,8 @@ msgid ""
 "is determined in the very short time we call “life.“"
 msgstr ""
 "Multiplicar importa, e multiplicar rapidamente importa ainda mais. O ritmo é "
-"importante porque o local no qual todos nós passaremos nossa eternidade - "
-"existência que dura mais que o tempo - é determinado no curto espaço de "
+"importante porque o local no qual todos nós passaremos nossa eternidade – "
+"existência que dura mais que o tempo – é determinado no curto espaço de "
 "tempo ao qual chamamos vida."
 
 #: site/course/course-content.php:2486
@@ -2821,7 +2821,7 @@ msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
-"LEMBRE-SE - Compartilhe os resultados da sua Lista de Verificação do "
+"LEMBRE-SE – Compartilhe os resultados da sua Lista de Verificação do "
 "Treinamento com um parceiro do treinamento ou outro mentor."
 
 #: site/course/course-content.php:2611
@@ -2968,11 +2968,10 @@ msgid ""
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
-"O mapa da árvore geracional pode ser desenhado em um pedaço de papel ou em "
-"vários pedaços de papel. Esse mapa ajuda a mostrar onde há paradas na "
-"multiplicação e o treinamento pode ser necessário. A saúde do movimento é "
-"uma das principais preocupações dos líderes, e a frutificação é a principal "
-"maneira para medi-la."
+"O mapa da árvore geracional pode ser desenhado em um papel ou vários papéis. "
+"Esse mapa ajuda a mostrar onde há paradas na multiplicação e o treinamento "
+"pode ser necessário. A saúde do movimento é uma das principais preocupações "
+"dos líderes, e a frutificação é a principal maneira para medi-la."
 
 #: site/course/course-content.php:2718
 msgid "See the example on the next slide."
@@ -3168,7 +3167,7 @@ msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
-"Leia - Escaneie o QR code. Você não precisa se comprometer com todos os "
+"Leia – Escaneie o QR code. Você não precisa se comprometer com todos os "
 "itens, mas eles servem como instruções para seu plano (5 min)."
 
 #: site/course/course-content.php:3033
@@ -3176,7 +3175,7 @@ msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
-"Ouça - Reserve pelo menos dez minutos para ficar o mais quieto possível e "
+"Ouça – Reserve pelo menos dez minutos para ficar o mais quieto possível e "
 "ouvir ao que Deus escolhe revelar (10 min)."
 
 #: site/course/course-content.php:3034
@@ -3184,7 +3183,7 @@ msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
-"Registre seu plano - Escreva os compromissos em um papel ou use a ferramenta "
+"Registre seu plano – Escreva os compromissos em um papel ou use a ferramenta "
 "online para salvar suas respostas (15 minutos)."
 
 #: site/course/course-content.php:3040
@@ -3193,16 +3192,15 @@ msgstr "Ferramenta do plano online"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
-"Revezem-se para compartilhar seus Planos de Três Meses uns com os outros."
+msgstr "Reveze-se com outros para compartilhar seu Planos de Três Meses."
 
 #: site/course/course-content.php:3054
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
-"Encontre um(s) parceiro(s) de treinamento que esteja disposto a fazer a "
-"verificação com você semanalmente. Comprometa-se a fazer o mesmo por ele(s)."
+"Encontre parceiros(as) de treinamento dispostos(as) a fazerem a verificação "
+"com você semanalmente. Comprometa-se a fazer o mesmo por ele(as)."
 
 #: site/course/course-content.php:3195
 msgid ""
@@ -3357,14 +3355,14 @@ msgstr "Compartilhamento do Evangelho"
 
 #: site/course/course-content.php:3944
 msgid "Practice Sharing the Gospel"
-msgstr "Prática - Compartilhamento do Evangelho"
+msgstr "Prática – Compartilhamento do Evangelho"
 
 #: site/course/course-content.php:3947
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
 msgstr ""
-"Dividam em grupos de duas ou três pessoas e pratiquem contar a história do "
+"Divida em grupos de duas ou três pessoas, e pratiquem contar a história do "
 "evangelho uns para os outros."
 
 #: site/course/course-content.php:3948
@@ -3384,7 +3382,7 @@ msgid ""
 msgstr ""
 "Ore, agradecendo a Deus porque os seus caminhos não são os nossos caminhos e "
 "os seus pensamentos não são os nossos pensamentos. Peça a Ele para que dê a "
-"cada membro do seu grupo a mente de Cristo - sempre focado no trabalho do "
+"cada membro do seu grupo a mente de Cristo – sempre focado no trabalho do "
 "seu Pai. Peça ao Espírito Santo para que conduza seu tempo juntos e torne a "
 "sessão ainda melhor."
 
@@ -3433,7 +3431,7 @@ msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
-"Divida em grupos de dois ou três e pratique o compartilhamento do seu "
+"Divida em grupos de dois ou três, e pratiquem o compartilhamento do seu "
 "Testemunho de Três Minutos."
 
 #: site/course/course-content.php:4216
@@ -3496,8 +3494,8 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
-"Compartilhe “Discipulado dos patinhos” e “Olhos para ver onde o Reino não "
-"está” com quem o Senhor mostrar a você. Em seguida, equipe as pessoas para "
+"Compartilhe “Discipulado de patinhos” e “Olhos para ver onde o Reino não "
+"está” com quem o Senhor mostrar a você. Em seguida, equipe pessoas para "
 "compartilhá-los com outras pessoas."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
@@ -3527,8 +3525,8 @@ msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
-"Equipe outras pessoas para orar pelos outros, usando o padrão BLESS, e "
-"acompanhe-as enquanto elas fazem isso."
+"Equipe pessoas para orar por outras, usando o padrão BLESS, e acompanhe-as "
+"enquanto fizerem isso."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
@@ -3568,7 +3566,7 @@ msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
-"OLHE PARA A FRENTE - Use as perguntas 5, 6 e 7 da seção Olhe para a Frente "
+"OLHE PARA A FRENTE – Use as perguntas 5, 6 e 7 da seção Olhe para a Frente "
 "para desenvolver como você Obedecerá, Treinará e Compartilhará (15 min)."
 
 #: site/course/course-content.php:4940
@@ -3579,8 +3577,8 @@ msgid ""
 msgstr ""
 "Ore e pergunte a Deus se Ele quer que você comece um grupo de 3/3. Se Ele "
 "quiser, dê uma olhada na sua Lista de Cem e pergunte a Deus a quem você deve "
-"convidar para juntar-se a você. Então, nesta semana, convide as pessoas e "
-"confie em Deus para construir o grupo."
+"convidar para juntar-se a você. Nesta semana, convide pessoas e confie em "
+"Deus para construir o grupo."
 
 #: site/course/course-content.php:4941
 msgid ""
@@ -3762,7 +3760,7 @@ msgstr "PRÓXIMO PASSO"
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
 #: site/dashboard/dashboard.php:246 site/parts/nav.php:94
 msgid "Join the Community"
-msgstr "Junte-se à comunidade"
+msgstr "Participe da comunidade"
 
 #: site/course/course-content.php:5980
 msgid ""
@@ -3780,7 +3778,7 @@ msgstr ""
 
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
-msgstr "Junte-se à comunidade Zume usando o QR code."
+msgstr "Participe da comunidade Zume usando o QR code."
 
 #: site/course/course-content.php:5996
 msgid "CONGRATULATIONS on completing Zume Training!"
@@ -3846,11 +3844,11 @@ msgstr "Sessão"
 
 #: site/course/presenter.php:198
 msgid "View Transcript"
-msgstr "Exibir transcrição"
+msgstr "Exibição da transcrição"
 
 #: site/course/presenter.php:199
 msgid "View Activity"
-msgstr "Exibir atividade"
+msgstr "Exibição da atividade"
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
@@ -3939,7 +3937,7 @@ msgstr "Complete agora"
 
 #: site/dashboard/dashboard.php:176
 msgid "View"
-msgstr "Visualizar"
+msgstr "Visualização"
 
 #: site/dashboard/dashboard.php:177
 msgid "Menu"
@@ -4039,14 +4037,14 @@ msgstr "Conclua um breve Assistente de Perfil para definir seu perfil"
 
 #: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
-msgstr "Participe de um grupo de treinamento ou crie um grupo de treinamento"
+msgstr "Participe de um Grupo de Treinamento ou crie um Grupo de Treinamento"
 
 #: site/dashboard/dashboard.php:199
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
-"Participe de um dos nossos treinamentos ou crie seu grupo de treinamento com "
+"Participe de um dos nossos treinamentos ou crie seu Grupo de treinamento com "
 "nosso assistente fácil de configurar"
 
 #: site/dashboard/dashboard.php:200
@@ -4055,7 +4053,7 @@ msgstr "Crie Grupo de Treinamento"
 
 #: site/dashboard/dashboard.php:201
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Crie seu grupo de treinamento com nosso assistente fácil de configurar"
+msgstr "Crie seu Grupo de Treinamento com nosso assistente fácil de configurar"
 
 #: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 msgid "Join Training Group"
@@ -4155,7 +4153,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:224
 msgid "My Plans"
-msgstr "Meus planos"
+msgstr "Meus Planos"
 
 #: site/dashboard/dashboard.php:225
 msgid ""
@@ -4167,7 +4165,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:226
 msgid "My Plans are Locked"
-msgstr "Meus planos estão bloqueados"
+msgstr "Meus Planos estão bloqueados"
 
 #: site/dashboard/dashboard.php:227
 msgid ""
@@ -4187,11 +4185,11 @@ msgstr "Desbloqueie a área Minhas Igrejas, participando da comunidade."
 
 #: site/dashboard/dashboard.php:230
 msgid "My Maps"
-msgstr "Meus mapas"
+msgstr "Meus Mapas"
 
 #: site/dashboard/dashboard.php:231
 msgid "My Maps are Locked"
-msgstr "Meus mapas estão bloqueados"
+msgstr "Meus Mapas estão bloqueados"
 
 #: site/dashboard/dashboard.php:232
 msgid ""
@@ -4200,9 +4198,9 @@ msgid ""
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
-"Meus mapas ajudam a esclarecer a visão Zume de um estagiário e duas igrejas "
-"para cada cinco mil pessoas nos EUA e 50 mil, globalmente. Para desbloquear "
-"Meus mapas, junte-se à comunidade Zume e se conecte a outros discipuladores "
+"Meus Mapas ajudam a esclarecer a visão Zume de 1 estagiário e 2 igrejas para "
+"cada 5 mil pessoas no Brasil e 50 mil, globalmente. Para desbloquear Meus "
+"Mapas, participe da comunidade Zume e se conecte a outros discipuladores "
 "apaixonados por ver a Grande Comissão cumprida."
 
 #: site/dashboard/dashboard.php:233
@@ -4606,8 +4604,7 @@ msgid ""
 msgstr ""
 "Zume é uma comunidade de prática e encorajamento para quem quer ver "
 "movimentos de discipulado. A visão Zume prevê 1 estagiário e 2 igrejas "
-"simples para cada 5 mil pessoas nos Estados Unidos e 50 mil pessoas em todo "
-"o mundo."
+"simples para cada 5 mil pessoas no Brasil e 50 mil pessoas em todo o mundo."
 
 #: site/dashboard/wizard.php:177
 msgid ""
@@ -4649,11 +4646,11 @@ msgstr ""
 
 #: site/dashboard/wizard.php:182
 msgid "Join for Free"
-msgstr "Participe de graça"
+msgstr "Participe gratuitamente"
 
 #: site/dashboard/wizard.php:183
 msgid "Successfully joined community"
-msgstr "Participou da comunidade com sucesso"
+msgstr "Ingressou na comunidade com sucesso"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
@@ -4674,7 +4671,7 @@ msgstr "Qual é o número do seu telefone?"
 
 #: site/dashboard/wizard.php:194
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr "O número do telefone só pode conter números, parênteses e hifens"
+msgstr "O número do telefone só pode conter números, parênteses e traços"
 
 #: site/dashboard/wizard.php:195
 msgid "What city do you live in?"
@@ -4802,25 +4799,25 @@ msgstr "Conectado ao amigo com sucesso %s"
 
 #: site/dashboard/wizard.php:253
 msgid "Checking in"
-msgstr "Lista de verificação"
+msgstr "Lista de Verificação"
 
 #: site/dashboard/wizard.php:255
 msgid "The checkin link is broken. Please try again."
 msgstr ""
-"O link da lista de verificação não está funcionando. Por favor, tente "
+"O link da Lista de Verificação não está funcionando. Por favor, tente "
 "novamente."
 
 #: site/dashboard/wizard.php:256
 msgid "Successfully checked in"
-msgstr "Lista de verificação realizada com sucesso"
+msgstr "Lista de Verificação realizada com sucesso"
 
 #: site/dashboard/wizard.php:261
 msgid "Create a training group"
-msgstr "Crie um grupo de treinamento"
+msgstr "Crie um Grupo de Treinamento"
 
 #: site/dashboard/wizard.php:262
 msgid "Join a public training group"
-msgstr "Participe de um grupo de treinamento público"
+msgstr "Participe de um Grupo de Treinamento público"
 
 #: site/dashboard/wizard.php:263
 msgid "Skip for now"
@@ -4856,7 +4853,7 @@ msgstr "Não"
 
 #: site/dashboard/wizard.php:271
 msgid "What time of day?"
-msgstr "A que horas do dia?"
+msgstr "A que momento do dia?"
 
 #: site/dashboard/wizard.php:272
 msgid "Morning"
@@ -4999,12 +4996,12 @@ msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
-"Compartilhe o convite ou o link abaixo com seus amigos para que eles possam "
+"Compartilhar o convite ou o link abaixo com seus amigos para que eles possam "
 "participar do seu treinamento"
 
 #: site/dashboard/wizard.php:311
 msgid "Join my zume plan"
-msgstr "Participe do meu plano Zume"
+msgstr "Participar do meu plano Zume"
 
 #: site/dashboard/wizard.php:312
 #, php-format
@@ -5033,15 +5030,15 @@ msgstr "Falta a verificação do formulário. Atualize e tente novamente."
 
 #: site/login/login-template.php:81
 msgid "Missing username or email address."
-msgstr "Nome de usuário ou E-mail ausente."
+msgstr "Nome de usuário ou endereço de E-mail ausente."
 
 #: site/login/login-template.php:82
 msgid "ERROR: Enter a username or email address."
-msgstr "ERRO: Digite um nome de usuário ou E-mail."
+msgstr "ERRO: Digite um nome de usuário ou endereço de E-mail."
 
 #: site/login/login-template.php:83
 msgid "ERROR: There is no user registered with that email address."
-msgstr "ERRO: Não há usuário registrado com esse E-mail."
+msgstr "ERRO: Não há usuário registrado com este endereço de E-mail."
 
 #: site/login/login-template.php:84
 msgid "ERROR: There is no user registered with that username."
@@ -5058,7 +5055,7 @@ msgstr "Obtenha uma nova senha"
 #: site/login/login-template.php:123 site/login/login-template.php:124
 #: site/login/login-template.php:657
 msgid "Email Address"
-msgstr "E-mail"
+msgstr "Endereço de E-mail"
 
 #: site/login/login-template.php:139
 msgid ""
@@ -5115,7 +5112,7 @@ msgstr "Crie uma conta Zume"
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:136
 #: utilities/apis/cta-api.php:138
 msgid "Register"
-msgstr "Cadastre-se"
+msgstr "Registrar-se"
 
 #: site/login/login-template.php:400
 msgid "Or"
@@ -5123,7 +5120,7 @@ msgstr "Ou"
 
 #: site/login/login-template.php:402
 msgid "Register with Email"
-msgstr "Cadastre-se com E-mail"
+msgstr "Registrar-se com E-mail"
 
 #: site/login/login-template.php:440
 msgid "Badly formatted email address"
@@ -5161,7 +5158,7 @@ msgstr "Nome de usuário ou senha não corresponde. Tente novamente."
 
 #: site/login/login-template.php:659 site/login/login-template.php:792
 msgid "Remember Me"
-msgstr "Lembre-se de mim"
+msgstr "Lembrar-se de mim"
 
 #: site/login/login-template.php:711
 msgid "Don't have an account?"
@@ -5177,11 +5174,11 @@ msgstr "Você tem conta?"
 
 #: site/login/login-template.php:790
 msgid "Username or Email Address"
-msgstr "Nome do usuário ou E-mail"
+msgstr "Nome do usuário ou endereço de E-mail"
 
 #: site/login/login-template.php:793
 msgid "Log In"
-msgstr "Conecte-se"
+msgstr "Conectar-se"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5203,8 +5200,8 @@ msgstr "Redefinir o App"
 msgid ""
 "Resetting the app will delete all app data. Are you sure you want to reset?"
 msgstr ""
-"A redefinição do aplicativo excluirá todos os dados do aplicativo. Tem "
-"certeza de que deseja redefini-lo?"
+"A redefinição do app excluirá todos os dados do app. Tem certeza de que "
+"deseja redefini-lo?"
 
 #: site/pages/_strings-mobile-pwa.php:19
 msgid "Help"
@@ -5240,11 +5237,11 @@ msgstr "Deseja limpar esses erros de download?"
 
 #: site/pages/_strings-mobile-pwa.php:28
 msgid "Tap to persist"
-msgstr "Toque para persistir"
+msgstr "Tocar para persistir"
 
 #: site/pages/_strings-mobile-pwa.php:29
 msgid "Select Language"
-msgstr "Selecione o idioma"
+msgstr "Selecionar o idioma"
 
 #: site/pages/_strings-mobile-pwa.php:31
 msgid "No sessions available"
@@ -5252,7 +5249,7 @@ msgstr "Nenhuma sessão disponível"
 
 #: site/pages/_strings-mobile-pwa.php:32
 msgid "Exit"
-msgstr "Saída"
+msgstr "Sair"
 
 #: site/pages/_strings-mobile-pwa.php:33
 msgid "Previous"
@@ -5265,7 +5262,7 @@ msgstr "Instalar"
 #: site/pages/_strings-mobile-pwa.php:38
 msgid "This app can be installed to your device. Click to install this app."
 msgstr ""
-"Este app pode ser instalado no seu dispositivo. Clique para instalar este "
+"Este app pode ser instalado no seu dispositivo. Clicar para instalar este "
 "app."
 
 #: site/pages/_strings-mobile-pwa.php:39
@@ -5273,7 +5270,7 @@ msgid ""
 "This app can be installed to your device. Please use the Chrome browser to "
 "do so."
 msgstr ""
-"Este app pode ser instalado no seu dispositivo. Por favor, use o navegador "
+"Este app pode ser instalado no seu dispositivo. Por favor, usar o navegador "
 "Chrome para fazer isso."
 
 #: site/pages/_strings-mobile-pwa.php:40
@@ -5284,7 +5281,7 @@ msgstr "Saber mais"
 msgid ""
 "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app."
 msgstr ""
-"Toque no ícone de compartilhamento do Safari e toque em 'Adicionar à tela "
+"Tocar no ícone de compartilhamento do Safari e tocar em 'Adicionar à tela "
 "inicial' para instalar este app."
 
 #: site/pages/_strings-mobile-pwa.php:42
@@ -5294,7 +5291,7 @@ msgstr "Atualizar"
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "A new version of this app is available. Click to update this app."
 msgstr ""
-"Uma nova versão deste app está disponível. Clique para atualizar este app."
+"Uma nova versão deste app está disponível. Clicar para atualizar este app."
 
 #: site/pages/_strings-mobile-pwa.php:44
 msgid "Storage"
@@ -5581,7 +5578,7 @@ msgstr ""
 
 #: site/pages/about.php:246
 msgid "Connecting with a Coach."
-msgstr "Conectar-se a um treinador"
+msgstr "Conectando-me a um treinador"
 
 #: site/pages/about.php:253
 msgid ""
@@ -5604,11 +5601,11 @@ msgstr "Registre-se gratuitamente"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
 msgid "Please enter a friend code."
-msgstr "Por favor, insira um código de amigo"
+msgstr "Por favor, inserir um código de amigo"
 
 #: site/pages/checkin.php:235
 msgid "Checkin"
-msgstr "Lista de verificação"
+msgstr "Lista de Verificação"
 
 #: site/pages/checkin.php:237
 msgid "Use the code on the screen or in the book"
@@ -5705,11 +5702,11 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
-msgstr "O que é seguidor de Jesus?"
+msgstr "O que é discípulo de Jesus?"
 
 #: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
-msgstr "Quais são as atividades do seguidor de Jesus?"
+msgstr "Quais são as atividades do discípulo de Jesus?"
 
 #: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
@@ -5720,7 +5717,7 @@ msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
-"É importante o que os discípulos sabem - mas é muito mais importante o que "
+"É importante o que os discípulos sabem – mas é muito mais importante o que "
 "eles FAZEM com o que sabem."
 
 #: site/pages/follow-jesus.php:227
@@ -5808,7 +5805,7 @@ msgid ""
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 "É uma maneira simples para obedecer à ordem de Deus para orar pelos outros. "
-"E é exatamente o que parece - orar a Deus enquanto se caminha!"
+"E é exatamente o que parece – orar a Deus enquanto se caminha!"
 
 #: site/pages/follow-jesus.php:318
 msgid "What if many friends, family and others start following Jesus with me?"
@@ -6061,7 +6058,7 @@ msgstr "Você está pronto(a) para dar seus próximos passos?"
 
 #: site/pages/home.php:340
 msgid "Register Free."
-msgstr "Registre-se gratuitamente"
+msgstr "Registrar-se gratuitamente"
 
 #: site/pages/home.php:344
 msgid "Gather a Group."
@@ -6077,7 +6074,7 @@ msgstr "Iniciar"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
-msgstr "Pia da cozinha"
+msgstr "Tudo, e mais um pouco!"
 
 #: site/pages/messages.php:236
 msgid "Friend"
@@ -6111,7 +6108,7 @@ msgstr "Treinamento completo sem necessidade de internet"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
 msgid "Download the course and video content to your phone"
-msgstr "Faça o download do curso e do conteúdo do vídeo para seu telefone"
+msgstr "Fazer download do curso e do conteúdo do vídeo para seu telefone"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
 msgid "Great for areas where internet access is restricted or limited"
@@ -6119,7 +6116,7 @@ msgstr "Ótimo para áreas nas quais o acesso à Internet é restrito ou limitad
 
 #: site/pages/plan-invite.php:77
 msgid "Please enter a code."
-msgstr "Por favor, insira um código"
+msgstr "Por favor, inserir um código"
 
 #: site/pages/plan-invite.php:170
 msgid "Plan Invitation"
@@ -6159,20 +6156,20 @@ msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
-"Os elementos do perfil abaixo mudam, dependendo de qual login - Facebook ou "
-"Google - é usado."
+"Os elementos do perfil abaixo mudam, dependendo de qual login – Facebook ou "
+"Google – é usado."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
 "Public Profile. This includes certain User’s Data such as id, name, picture, "
 "gender, and their locale."
 msgstr ""
-"Perfil público. Isso inclui determinados dados do usuário, como ID, nome, "
-"foto, sexo e local."
+"Perfil público. Inclui determinados dados do usuário, como ID, nome, foto, "
+"sexo e local."
 
 #: site/pages/privacy-policy.php:97
 msgid "Email Address."
-msgstr "E-mail"
+msgstr "Endereço de E-mail"
 
 #: site/pages/privacy-policy.php:104
 msgid ""
@@ -6213,7 +6210,7 @@ msgid ""
 "your email address."
 msgstr ""
 "Usamos sua informação para criar uma conta de usuário no sistema Zume "
-"baseada no seu E-mail."
+"baseada no seu endereço de E-mail."
 
 #: site/pages/privacy-policy.php:149
 msgid ""
@@ -6282,7 +6279,7 @@ msgid ""
 "serves to identify Users and remember their preferences, for the sole "
 "purpose of providing the service required by the User."
 msgstr ""
-"Qualquer utilização de cookies - ou de outras ferramentas de rastreamento -, "
+"Qualquer utilização de cookies – ou de outras ferramentas de rastreamento –, "
 "salvo indicação do contrário, serve para identificar usuários e recordar "
 "suas preferências, com o único propósito de fornecer o serviço requerido "
 "pelo usuário."
@@ -6297,7 +6294,7 @@ msgid ""
 "following at any time by contacting us via our contact email address:"
 msgstr ""
 "Você pode cancelar qualquer contato futuro nosso a qualquer momento. Entre "
-"em contato conosco por meio do nosso E-mail e faça o seguinte:"
+"em contato conosco por meio do nosso endereço de E-mail e faça o seguinte:"
 
 #: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
@@ -6305,15 +6302,15 @@ msgstr "Veja quais dados agregamos das suas atividades conosco."
 
 #: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
-msgstr "Altere/corrija todos os dados que temos sobre você"
+msgstr "Alterar/corrigir todos os dados que temos sobre você"
 
 #: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
-msgstr "Deixe-nos deletar todos os dados que temos sobre você"
+msgstr "Deixar-nos deletar todos os dados que temos sobre você"
 
 #: site/pages/privacy-policy.php:196
 msgid "Express any concern you have about our use of your data."
-msgstr "Expresse qualquer preocupação que você tem com o uso dos seus dados"
+msgstr "Expressar qualquer preocupação que você tenha com o uso dos seus dados"
 
 #: site/pages/privacy-policy.php:203
 msgid "Updates"
@@ -6329,7 +6326,7 @@ msgstr ""
 
 #: site/pages/resources.php:100
 msgid "Training Guidebook"
-msgstr "Guia do treinamento"
+msgstr "Guia do Treinamento"
 
 #: site/pages/resources.php:103
 msgid ""
@@ -6353,7 +6350,7 @@ msgstr "Solicitar cópia impressa"
 
 #: site/pages/share.php:83
 msgid "Copy this link and send it to your friends."
-msgstr "Copie este link e o envie para seus amigos"
+msgstr "Copiar este link e enviá-lo para seus amigos"
 
 #: site/pages/share.php:85
 msgid "Copied"
@@ -6393,7 +6390,7 @@ msgstr "Comece com o Treinamento Zume"
 
 #: site/pages/training.php:133
 msgid "Create your own training group"
-msgstr "Crie seu grupo de treinamento"
+msgstr "Criar seu Grupo de Treinamento"
 
 #: site/pages/training.php:136
 msgid ""
@@ -6401,7 +6398,7 @@ msgid ""
 "Create your own training group and track your progress."
 msgstr ""
 "Reúna alguns amigos ou faça o curso com um pequeno grupo existente. Crie seu "
-"grupo de treinamento e acompanhe seu progresso."
+"Grupo de Treinamento e acompanhe seu progresso."
 
 #: site/pages/training.php:138
 msgid "Create"
@@ -6413,12 +6410,12 @@ msgid ""
 "training groups lead by an experienced Zúme coach."
 msgstr ""
 "Se você não conseguir reunir um grupo agora, considere participar de um dos "
-"nossos grupos de treinamento on-line liderados por um treinador Zume "
+"nossos Grupos de Treinamento on-line liderados por um treinador Zume "
 "experiente."
 
 #: site/pages/training.php:149
 msgid "Request a coach"
-msgstr "Solicite um treinador"
+msgstr "Solicitar um treinador"
 
 #: site/pages/training.php:152
 msgid ""
@@ -6430,7 +6427,7 @@ msgstr ""
 
 #: site/pages/training.php:154
 msgid "Get Help"
-msgstr "Obtenha ajuda"
+msgstr "Obter ajuda"
 
 #: site/pages/training.php:160
 msgid "Course Overview"
@@ -6456,7 +6453,7 @@ msgstr ""
 
 #: site/pages/training.php:181
 msgid "Discipleship Concepts"
-msgstr "Conceitos de discipulado"
+msgstr "Conceitos do discipulado"
 
 #: site/pages/training.php:195
 msgid "Spiritual Practices"
@@ -6468,8 +6465,8 @@ msgid ""
 "differently depending on your training group‘s availability."
 msgstr ""
 "O Zume abrange 20 horas de treinamento, mas essas 20 horas podem ser "
-"divididas de forma diferente, dependendo da disponibilidade do seu grupo de "
-"treinamento."
+"divididas de forma diferente, dependendo da disponibilidade do seu Grupo de "
+"Treinamento."
 
 #: site/pages/training.php:228
 msgid ""
@@ -6528,7 +6525,7 @@ msgstr "Curso Intensivo de Três Dias"
 #: utilities/integrations/replace-placeholder.php:110
 #: utilities/integrations/replace-placeholder.php:111
 msgid "Check-in"
-msgstr "Lista de verificação"
+msgstr "Lista de Verificação"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
@@ -6536,7 +6533,7 @@ msgstr "Ops! O javascript está desativado"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
-msgstr "Ative o javascript para usar esta página"
+msgstr "Ativar o javascript para usar esta página"
 
 #: site/profile/communication-preferences.php:79
 #: utilities/integrations/replace-placeholder.php:173
@@ -6547,7 +6544,7 @@ msgstr "Atualizar preferências de comunicação"
 
 #: site/profile/communication-preferences.php:81
 msgid "Recieve emails for:"
-msgstr "Receba E-mails para:"
+msgstr "Receber E-mails para:"
 
 #: site/profile/communication-preferences.php:84
 msgid "Training session reminders"
@@ -6579,27 +6576,27 @@ msgstr "Plano"
 
 #: utilities/apis/cta-api.php:137
 msgid "Register to start your training"
-msgstr "Registre-se para iniciar seu treinamento"
+msgstr "Registrar-se para iniciar seu treinamento"
 
 #: utilities/apis/cta-api.php:151
 msgid "Join Online Training"
-msgstr "Participe do treinamento on-line"
+msgstr "Participar do treinamento on-line"
 
 #: utilities/apis/cta-api.php:152
 msgid "Join the online training to learn more"
-msgstr "Participe do treinamento on-line para saber mais"
+msgstr "Participar do treinamento on-line para saber mais"
 
 #: utilities/apis/cta-api.php:166
 msgid "Joined Training!"
-msgstr "Participe do treinamento!"
+msgstr "Participar do treinamento!"
 
 #: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
-msgstr "Obtenha um treinador para ajudar você em sua jornada"
+msgstr "Obter um treinador para ajudar você em sua jornada"
 
 #: utilities/apis/cta-api.php:195
 msgid "Requested Coach!"
-msgstr "Solicite um treinador!"
+msgstr "Solicitar um treinador!"
 
 #: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
 #: utilities/apis/cta-api.php:239
@@ -6612,11 +6609,11 @@ msgstr "Conectado(a) a um treinador!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
-msgstr "Crie um treinamento"
+msgstr "Criar um treinamento"
 
 #: utilities/apis/cta-api.php:224
 msgid "Create a training to help you grow"
-msgstr "Crie um treinamento para ajudar você a crescer"
+msgstr "Criar um treinamento para ajudar você a crescer"
 
 #: utilities/apis/cta-api.php:238
 msgid "Created Training!"
@@ -6624,7 +6621,7 @@ msgstr "Treinamento criado!"
 
 #: utilities/apis/cta-api.php:271
 msgid "Set your profile to help others know you"
-msgstr "Defina seu perfil para ajudar outras pessoas a conhecer você"
+msgstr "Definir seu perfil para ajudar outras pessoas a conhecer você"
 
 #: utilities/apis/cta-api.php:285
 msgid "Profile Set"
@@ -6632,11 +6629,11 @@ msgstr "Perfil definido"
 
 #: utilities/apis/cta-api.php:299 utilities/apis/cta-api.php:301
 msgid "Create 3 Month Plan"
-msgstr "Crie um Plano de Três Meses"
+msgstr "Criar um Plano de Três Meses"
 
 #: utilities/apis/cta-api.php:300
 msgid "Create a 3 month plan to help you grow"
-msgstr "Crie um plano de três meses para ajudar você a crescer"
+msgstr "Criar um Plano de Três Meses para ajudar você a crescer"
 
 #: utilities/apis/cta-api.php:314
 #, php-format
@@ -6645,39 +6642,39 @@ msgstr "%s desbloqueado"
 
 #: utilities/apis/cta-api.php:328
 msgid "3-Month Plan Created"
-msgstr "Plano de três meses criado"
+msgstr "Plano de Três Meses criado"
 
 #: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
 msgid "Complete 3 Month Plan"
-msgstr "Complete o plano de três meses"
+msgstr "Completar o Plano de Três Meses"
 
 #: utilities/apis/cta-api.php:343
 msgid "Complete your 3 month plan to help you grow"
-msgstr "Complete seu plano de três meses para ajudar você a crescer"
+msgstr "Completar seu Plano de Três Meses para ajudar você a crescer"
 
 #: utilities/apis/cta-api.php:357
 msgid "3 Month Plan Completed"
-msgstr "Plano de três meses completado"
+msgstr "Plano de Três meses Completado"
 
 #: utilities/apis/cta-api.php:402
 msgid "Join the community"
-msgstr "Participe da comunidade"
+msgstr "Participar da comunidade"
 
 #: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 msgid "Share Spiritual Breathing"
-msgstr "Compartilhe a respiração espiritual"
+msgstr "Compartilhar a Respiração Espiritual"
 
 #: utilities/apis/cta-api.php:419
 msgid "Share Spiritual Breathing with someone"
-msgstr "Compartilhe a respiração espiritual com alguém"
+msgstr "Compartilhar a Respiração Espiritual com alguém"
 
 #: utilities/apis/cta-api.php:433 utilities/apis/cta-api.php:435
 msgid "Share Relational Stewardship"
-msgstr "Compartilhe a administração relacional"
+msgstr "Compartilhar a administração relacional"
 
 #: utilities/apis/cta-api.php:434
 msgid "Share Relational Stewardship with someone"
-msgstr "Compartilhe a mordomia relacional com alguém"
+msgstr "Compartilhar a mordomia relacional com alguém"
 
 #: utilities/apis/plans-api.php:142
 #, php-format
@@ -6711,7 +6708,7 @@ msgstr "Painel de dados Zume"
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
 msgid "Zúme Online Training Groups"
-msgstr "Grupos de treinamento on-line Zume"
+msgstr "Grupos de Treinamento on-line Zume"
 
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
@@ -6723,7 +6720,7 @@ msgstr "Download do slide de apresentação"
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
 msgid "Share Zúme Page"
-msgstr "Compartilhe a página do Zume"
+msgstr "Compartilhar a página do Zume"
 
 #: utilities/integrations/replace-placeholder.php:169
 #: utilities/integrations/replace-placeholder.php:170

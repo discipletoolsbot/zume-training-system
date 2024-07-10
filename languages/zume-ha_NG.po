@@ -2,17 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Hausa <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ha_NG/>\n"
+"PO-Revision-Date: 2024-07-10 12:16+0000\n"
+"Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
+"Language-Team: Hausa <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ha_NG/>\n"
 "Language: ha_NG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -22,7 +21,6 @@ msgid "Training"
 msgstr "Horarwa"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
-#, fuzzy
 msgid "How it Works"
 msgstr "Yadda Zúme ke Aiki"
 
@@ -75,9 +73,8 @@ msgid "Vision"
 msgstr "Waya"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
-msgstr "Adanawa"
+msgstr "labarai"
 
 #: appearance/style-override/navigation.php:160
 #, fuzzy
@@ -129,9 +126,8 @@ msgstr ""
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
-#, fuzzy
 msgid "Hearing and Obeying God"
-msgstr "Buguwa ta Ruhaniya ji ne da Biyayya ga Allah"
+msgstr "ji da Biyayya ga Allah"
 
 #: globals.php:1975 globals.php:1977
 #, fuzzy
@@ -176,9 +172,8 @@ msgstr ""
 "kullun su zama kamar Yesu."
 
 #: globals.php:2001
-#, fuzzy
 msgid "Producer not Consumer"
-msgstr "Masu samarwa da masu ba da izini"
+msgstr "Masu samarwa ba Mabukaci ba"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
@@ -236,9 +231,8 @@ msgstr ""
 "har zuwa zuwa wannan zamanin."
 
 #: globals.php:2049
-#, fuzzy
 msgid "Sharing God‘s Story"
-msgstr "Yi musayar Shaida (minti Arba'in da hudu)"
+msgstr "Raba Labarin Allah"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
@@ -292,9 +286,8 @@ msgstr ""
 "ruhaniya waɗanda zasu ninka don tsararraki masu zuwa."
 
 #: globals.php:2085
-#, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Mafi girma Albarka"
+msgstr "Mafi girma, Mafi Girma, Mafi Girma Albarka"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -315,9 +308,8 @@ msgstr "Dalibin almajirai"
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
-msgstr "Idanu Ganin Inda Mulkin ba shi bane"
+msgstr "Idanu Ganin Inda Mulkin ba ya"
 
 #: globals.php:2108 site/pages/follow-jesus.php:254
 msgid ""
@@ -372,12 +364,11 @@ msgid "A Person of Peace and How To Find One"
 msgstr "Mutumin Salama da Yadda ake Nemo Guda Guda"
 
 #: globals.php:2144
-#, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 "Koyi wane ne mutumin da zai kasance mai kwanciyar hankali da yadda zaka san "
-"lokacin da ka samu mutum."
+"lokacin da ka samu daya ."
 
 #: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
@@ -413,14 +404,12 @@ msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "Yi ɗan saurin mnemonic don tunatar da ku hanyoyin yin addu'a don wasu."
 
 #: globals.php:2169 site/course/course-content.php:1603
-#, fuzzy
 msgid "The B.L.E.S.S. Prayer"
-msgstr "Yi da B.L.E.S.S. Addu'a (minti goma sha biyar)"
+msgstr "Farashin B.L.E.S.S. Addu'a"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
-#, fuzzy
 msgid "3/3 Group Meeting Pattern"
-msgstr "3/3 Tsarin Taro na Taro"
+msgstr "3/3 Tsarin Taron Rukuni"
 
 #: globals.php:2180
 #, fuzzy
@@ -640,11 +629,11 @@ msgstr "3-Da'irori"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "Tambaya"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "Amsa"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -673,15 +662,13 @@ msgstr "Kimanta kanka ta amfani da Ji, Biyayya, Rabawa, Horarwa."
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
-#, fuzzy
 msgid "Training Tools/Concepts"
-msgstr "Sake zagayowar horo"
+msgstr "Kayayyakin Horowa/Ka'idoji"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
-#, fuzzy
 msgid "Ask yourself, have I"
-msgstr "Tambayi kanka"
+msgstr "Tambayi kanka ina I"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -775,9 +762,8 @@ msgstr "Koyar da wasu ta amfani da Model, Taimako, Kallo, Bar."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
-#, fuzzy
 msgid "Ask yourself, what does my disciple need"
-msgstr "Tambayi kanka"
+msgstr "Tambayi kanka menene almajirina yake bukata"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -823,7 +809,6 @@ msgstr "Bar"
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -831,7 +816,7 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"Modeling shine kawai samar da misali na aiki ko kayan aiki. Shi ne mafi "
+"Yin samurai shine kawai samar da misali na aiki ko kayan aiki. Shi ne mafi "
 "ƙanƙanta sashi na zagayowar horo. Yawanci yana buƙatar yin sau ɗaya kawai. "
 "Ƙirƙirar wayar da kan jama'a ne kawai cewa akwai aiki ko kayan aiki da kuma "
 "ba da cikakken ra'ayi na yadda yake kama. Yin samfuri akai-akai ba hanya ce "
@@ -909,9 +894,8 @@ msgstr "Kimanta Kai"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "Kwayoyin jagoranci"
+msgstr "Matsayin Ci gaban Mentee"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
@@ -998,14 +982,12 @@ msgid "Planning Responsibilities"
 msgstr "Nauyin Tsara"
 
 #: site/activities/coaching-checklist.php:193
-#, fuzzy
 msgid "Mentor decides"
-msgstr "Mentor ya yanke shawara"
+msgstr "Jagora ya yanke shawara"
 
 #: site/activities/coaching-checklist.php:196
-#, fuzzy
 msgid "Discuss and Mentor decides"
-msgstr "Tattaunawa kuma Mentor ya yanke shawara"
+msgstr "Tattaunawa kuma Jagora ya yanke shawara"
 
 #: site/activities/coaching-checklist.php:199
 #, fuzzy
@@ -1013,37 +995,32 @@ msgid "Discuss and Mentee decides"
 msgstr "Tattaunawa kuma Mentee ya yanke shawara"
 
 #: site/activities/coaching-checklist.php:202
-#, fuzzy
 msgid "Mentee decides"
-msgstr "Mentee ya yanke shawara"
+msgstr "Jagora ya yanke shawara"
 
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
-"Shin Mentee bai sani ba, wanda ba a sani ba, ko rashin fahimtar kayan aikin?"
+"Shin Jagora bai sani ba, wanda ba a sani ba, ko rashin fahimtar kayan aikin?"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Idan kun ɗan saba amma har yanzu ba ku da tabbacin game da Kayan aikin- duba "
-"layin RED"
+"Shin Jagora ya ɗan saba da shi amma har yanzu bai da tabbas game da kayan "
+"aikin?"
 
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
-"Shin Mentee ya fahimci kayan aiki kuma yana iya horar da tushen kayan aikin?"
+"Shin Jagora ya fahimci kayan aiki kuma yana iya horar da tushen kayan aikin?"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
-"Idan kuna jin kwarin gwiwa kuma zaku iya horar da kayan aiki yadda yakamata "
-"ku duba shafin GREEN"
+"Shin jagora yana jin kwarin gwiwa kuma yana iya horar da kayan aikin yadda "
+"ya kamata?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -1075,9 +1052,8 @@ msgid "Switch to Printable Version"
 msgstr "Canja zuwa Sigar Mai Bugawa"
 
 #: site/activities/three-month-plan.php:80
-#, fuzzy
 msgid "Scripts are off"
-msgstr "Littafi"
+msgstr "Rubutun sun kashe"
 
 #: site/activities/three-month-plan.php:81
 #, fuzzy
@@ -1095,7 +1071,6 @@ msgid "Save"
 msgstr "Tanada"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
 msgstr "Soke"
 
@@ -1171,10 +1146,9 @@ msgstr ""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
-#, fuzzy
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
-msgstr "Abinda wata hanyar musayar Labarin Allah?"
+msgstr "Menene zai ɗauka don jin daɗin raba labarin Allah?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:38
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1260,9 +1234,8 @@ msgid "Scan the QR code or find a piece of paper."
 msgstr "Duba lambar QR ko nemo takarda."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#, fuzzy
 msgid "Select a person from your list of 100."
-msgstr "Yourirƙiri naka Tsarin Sunaye na dari"
+msgstr "Zaɓi mutum daga lissafin ku na dari."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 #, fuzzy
@@ -1304,14 +1277,12 @@ msgstr ""
 "abubuwan da aka ba da horo."
 
 #: site/course/course-builder.php:194
-#, fuzzy
 msgid "(1 min)"
-msgstr "Minti goma"
+msgstr "Minti daya"
 
 #: site/course/course-builder.php:197
-#, fuzzy
 msgid "(15 min)"
-msgstr "Minti biyar"
+msgstr "Minti goma sha biyar"
 
 #: site/course/course-builder.php:198
 #, fuzzy
@@ -1319,9 +1290,8 @@ msgid "(20 min)"
 msgstr "Minti ashirin"
 
 #: site/course/course-builder.php:199
-#, fuzzy
 msgid "(25 min)"
-msgstr "Minti biyar"
+msgstr "Minti ashirin da biyar"
 
 #: site/course/course-builder.php:200
 #, fuzzy
@@ -1329,29 +1299,24 @@ msgid "(30 min)"
 msgstr "Minti talatin"
 
 #: site/course/course-builder.php:201
-#, fuzzy
 msgid "(35 min)"
-msgstr "Minti biyar"
+msgstr "Minti talatin da biyar"
 
 #: site/course/course-builder.php:202
-#, fuzzy
 msgid "(40 min)"
-msgstr "Minti goma"
+msgstr "Minti arba'in"
 
 #: site/course/course-builder.php:203
-#, fuzzy
 msgid "(45 min)"
-msgstr "Minti arba'in da hudu"
+msgstr "Minti arba'in da biyar"
 
 #: site/course/course-builder.php:204
-#, fuzzy
 msgid "(50 min)"
-msgstr "Minti biyar"
+msgstr "Minti Hamsin"
 
 #: site/course/course-builder.php:205
-#, fuzzy
 msgid "(55 min)"
-msgstr "Minti biyar"
+msgstr "Minti hamsin da biyar"
 
 #: site/course/course-builder.php:206
 #, fuzzy
@@ -1359,14 +1324,12 @@ msgid "(60 min)"
 msgstr "Minti sittin"
 
 #: site/course/course-builder.php:207
-#, fuzzy
 msgid "(65 min)"
-msgstr "Minti biyar"
+msgstr "Minti sittin da biyar"
 
 #: site/course/course-builder.php:208
-#, fuzzy
 msgid "(70 min)"
-msgstr "Minti goma"
+msgstr "Minti saba'in"
 
 #: site/course/course-builder.php:209
 #, fuzzy
@@ -1374,28 +1337,23 @@ msgid "(75 min)"
 msgstr "Minti saba'in da biyar"
 
 #: site/course/course-builder.php:210
-#, fuzzy
 msgid "(80 min)"
-msgstr "Minti goma"
+msgstr "Minti tamanin"
 
 #: site/course/course-builder.php:211
-#, fuzzy
 msgid "(85 min)"
-msgstr "Minti biyar"
+msgstr "Minti tamanin da biyar"
 
 #: site/course/course-builder.php:212
-#, fuzzy
 msgid "(90 min)"
-msgstr "Minti goma"
+msgstr "minti casa'in"
 
 #: site/course/course-builder.php:213
-#, fuzzy
 msgid "(60 - 90 min)"
-msgstr "Minti casa'in"
+msgstr "Minti sittin- casa'in"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
-#, fuzzy
 msgid "SESSION 1"
 msgstr "ZAMA NA 1"
 
@@ -1477,9 +1435,8 @@ msgstr "Sanya dukkan mahalarta da mai gudanarwa su shiga."
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
-#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr "Ko zume.training/checkin da amfani da lamba:"
+msgstr "Ko zume.horo/rajistan shiga da amfani da lamba:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1506,9 +1463,9 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
-"Fara da addu'a. Fahimtar ruhaniya da canji ba zai yiwu ba tare da Ruhu "
-"maitsarki. Timeauki lokaci a matsayinku don kira Shi don ya jagorance ku a "
-"wannan zaman."
+"A fara da addu'a. Hankali na ruhaniya da canji ba zai yiwu ba sai da Ruhu "
+"Mai Tsarki. Ɗauki lokaci a matsayin ƙungiya don gayyatarsa ya jagorance ku "
+"kan wannan zaman."
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1538,9 +1495,8 @@ msgid "In this session, we will hear and discuss these concepts:"
 msgstr "A cikin wannan zama, za mu ji kuma mu tattauna waɗannan ra'ayoyin:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
-#, fuzzy
 msgid "Simple Definition of Disciple & Church"
-msgstr "Ma'anar Ka'idar Ka'ida da Coci"
+msgstr "Sauƙaƙan Ma'anar Almajiri & Coci"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1549,7 +1505,6 @@ msgstr "Numfashi na Ruhaniya"
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
-#, fuzzy
 msgid "And we will add these tools to our toolkit:"
 msgstr "Kuma za mu ƙara waɗannan kayan aikin zuwa kayan aikin mu:"
 
@@ -1561,49 +1516,46 @@ msgid "S.O.A.P.S. Bible Reading"
 msgstr "S.0.A.P.S. Karatun Littafi Mai Tsarki"
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Za ku ga yadda Allah yake amfani da talakawa suna yin abubuwa masu sauƙi don "
-"yin babban tasiri."
+"Allah yana amfani da mutane na gari suna yin abubuwa masu sauƙi don yin "
+"babban tasiri."
 
 #: site/course/course-content.php:136
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
-"Idan Yesu yana nufin kowane ɗayan mabiyansa yayi biyayya da Babban "
-"Kwamishina, me yasa mutane kaɗan ke yin almajirai?"
+"Idan Yesu yana nufin kowane mabiyansa su yi biyayya ga Babban Umurninsa, me "
+"ya sa kaɗan ne suke almajirantarwa?"
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
 msgstr "Idan kayi tunanin coci, menene ya shiga tunani?"
 
 #: site/course/course-content.php:180
-#, fuzzy
 msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
 msgstr ""
-"Menene banbanci tsakanin wannan hoton da kuma abin da aka bayyana a bidiyon "
-"a matsayin \"Simple Church\"?"
+"Menene bambanci tsakanin wannan hoton da abin da aka kwatanta a cikin "
+"bidiyon a matsayin \"Coci Mai Sauƙi\"?"
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
 msgstr "Wanne kuke tsammani zai fi sauƙin ninka kuma me yasa?"
 
 #: site/course/course-content.php:199
-#, fuzzy
 msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
-"Muna hura ciki. Muna hurawa. Muna da rai. Busawa ta Ruhaniya kamar haka ne."
+"Numfashi na ruhaniya. Muna numfasawa.Muna numfashi. Muna raye. Ji da biyayya "
+"ga Allah haka ne ma."
 
 #: site/course/course-content.php:225
-#, fuzzy
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr "Me yasa yake da muhimmanci a koyi ji da gane muryar Allah?"
+msgstr "Me ya sa yake da muhimmanci mu koyi ji da kuma gane muryar Allah?"
 
 #: site/course/course-content.php:226
 msgid ""
@@ -1623,18 +1575,16 @@ msgstr ""
 "da mu."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
-#, fuzzy
 msgid "Practice S.O.A.P.S."
 msgstr "Yin Karatu a S.O.A.P.S."
 
 #: site/course/course-content.php:274
-#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
 "Duba lambar QR kuma kuyi aiki daidaiku ta tsarin nazarin Littafi Mai Tsarki "
-"na SOAPS ta amfani da Matta 6:9-13. (minti 20)"
+"na SOAPS ta amfani da Matta 6: 9-13. (minti ashirin)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -1646,9 +1596,8 @@ msgid "Observation"
 msgstr "Lura"
 
 #: site/course/course-content.php:278
-#, fuzzy
 msgid "Application"
-msgstr "Wuri"
+msgstr "Aikace-aikace"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
@@ -1656,25 +1605,21 @@ msgid "Prayer"
 msgstr "Addu'a"
 
 #: site/course/course-content.php:280
-#, fuzzy
 msgid "Sharing"
-msgstr "Raba"
+msgstr "Rabawa"
 
 #: site/course/course-content.php:282
-#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
-msgstr "Ku dawo tare ku raba S.O.A.P.S. a rukuni na biyu ko uku. (minti 10)"
+msgstr "Ku dawo tare ku raba S.O.A.P.S. a rukuni na biyu ko uku. (minti goma)"
 
 #: site/course/course-content.php:304
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
 msgstr ""
-"Littafi Mai Tsarki tana gaya mana cewa kowace mai bin Yesu wata rana za a "
-"dauki alhakin abin da muke yi da fada da tunani. Raba Kungiyoyi na Raba Kudi "
-"sune babbar hanyar shirya!"
+"Littafi Mai Tsarki ya gaya mana cewa kowane mabiyin Yesu wata rana za a ba "
+"da lissafin abin da muke yi da abin da muke faɗa da tunani."
 
 #: site/course/course-content.php:305
 #, fuzzy
@@ -1682,9 +1627,8 @@ msgid "Accountability Groups are a great way to get ready!"
 msgstr "Ƙungiyoyin Lissafi hanya ce mai kyau don shiryawa!"
 
 #: site/course/course-content.php:329
-#, fuzzy
 msgid "Practice Accountability Groups"
-msgstr "Aiwatarwa - abilityungiyoyin lissafi"
+msgstr "Aiwatarwa - kungiyoyin lissafi"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1698,16 +1642,14 @@ msgstr "Duba lambar QR."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr "Ku rabu cikin mutane biyu ko uku daga jinsi ɗaya."
+msgstr "Rarrabu zuwa rukuni na mutane biyu ko uku masu jinsi ɗaya."
 
 #: site/course/course-content.php:333
-#, fuzzy
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
-"Ku ciyar a cikin mintuna 45 masu zuwa ku yi aiki tare. Tambayoyi Masu Amsawa "
-"Ungiyoyin '' Raƙatar Accountable '' a cikin jerin Jeruka 2 a cikin"
+"Ku ciyar da mintuna ashirin masu zuwa aiki tare ta cikin Tambayoyin Lissafi."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1723,9 +1665,8 @@ msgstr ""
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
-#, fuzzy
 msgid "REVIEW"
-msgstr "SIFFAR"
+msgstr "BINCIKE"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1734,15 +1675,13 @@ msgstr "SIFFAR"
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
-#, fuzzy
 msgid "Concepts heard in this session:"
-msgstr "Ra'ayoyin da aka ji a wannan zaman:"
+msgstr "Ra'ayoyin da aka ji a wannan zama:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
-#, fuzzy
 msgid "Tools heard in this session:"
 msgstr "Kayayyakin da aka ji a wannan zaman:"
 
@@ -1760,7 +1699,7 @@ msgstr "Kayayyakin da aka ji a wannan zaman:"
 #: site/course/course-content.php:5321 site/course/course-content.php:5461
 #: site/course/course-content.php:5583
 msgid "OBEY"
-msgstr "BI UMURNI"
+msgstr "BIYAYYA"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -1825,11 +1764,8 @@ msgstr ""
 "aikata sa’ad da mutanensa suke addu’a."
 
 #: site/course/course-content.php:442
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+msgstr "Tambayi Ruhu Mai Tsarki na Allah ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -1845,9 +1781,8 @@ msgstr ""
 #: site/course/course-content.php:5012 site/course/course-content.php:5137
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
-#, fuzzy
 msgid "LOOK BACK"
-msgstr "KALLON BAYA"
+msgstr "KALLO"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1863,9 +1798,8 @@ msgstr "KALLON BAYA"
 #: site/course/course-content.php:5015 site/course/course-content.php:5140
 #: site/course/course-content.php:5269 site/course/course-content.php:5402
 #: site/course/course-content.php:5539 site/course/course-content.php:5665
-#, fuzzy
 msgid "Before getting started, take some time to look back."
-msgstr "Kafin farawa, ɗauki ɗan lokaci don bincika."
+msgstr "Kafin farawa, ɗauki ɗan lokaci don duba baya."
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -1881,13 +1815,12 @@ msgstr "Kafin farawa, ɗauki ɗan lokaci don bincika."
 #: site/course/course-content.php:5016 site/course/course-content.php:5141
 #: site/course/course-content.php:5270 site/course/course-content.php:5403
 #: site/course/course-content.php:5540 site/course/course-content.php:5666
-#, fuzzy
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
 msgstr ""
-"A karshen zaman da ya gabata, an kalubalanci kowa a cikin kungiyar ku ta "
-"hanyoyi biyu:"
+"A ƙarshen zama na ƙarshe, an ƙalubalanci kowa a cikin ƙungiyar ku don "
+"aiwatar da abin da kuka koya."
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1904,8 +1837,7 @@ msgstr ""
 #: site/course/course-content.php:5271 site/course/course-content.php:5404
 #: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
-msgstr ""
-"Takeauki momentsan ɗan lokaci don ganin yadda ƙungiyar ku ta yi wannan makon."
+msgstr "Ɗauki ɗan lokaci don ganin yadda ƙungiyar ku ta yi a wannan makon."
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
@@ -1918,14 +1850,13 @@ msgstr "A cikin wannan zaman, za mu ji kuma mu tattauna wannan batu:"
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3531 site/course/course-content.php:3551
-#, fuzzy
 msgid "Producer Not Consumer"
-msgstr "Masu samarwa da masu ba da izini"
+msgstr "Furodusa Ba Mabukaci ba"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
 msgid "Prayer Cycle"
-msgstr "Tsarin Sallah"
+msgstr "Zagayowar Sallah"
 
 #: site/course/course-content.php:495
 msgid ""
@@ -1933,9 +1864,9 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
-"Idan muna son sanya almajirai masu haɓaka - masu samar da ruhaniya ba kawai "
-"masu cin kuɗi ba to lallai muna buƙatar koyon hanyoyi da manyan hanyoyi guda "
-"huɗu waɗanda Allah ya sa mabiyan yau da kullun su zama kamar Yesu:"
+"Idan muna so mu yi almajirai waɗanda suke haɓaka - masu samarwa na ruhaniya "
+"ba kawai masu amfani ba - to muna buƙatar mu koya kuma mu raba manyan "
+"hanyoyi huɗu da Allah ya sa mabiyan yau da kullun su zama kamar Yesu:"
 
 #: site/course/course-content.php:499
 msgid "Body Life"
@@ -1943,7 +1874,7 @@ msgstr "Rayuwar Jiki"
 
 #: site/course/course-content.php:500
 msgid "Persecution and Suffering"
-msgstr "Tsanantawa da Wahala"
+msgstr "Zalunci da Wahala"
 
 #: site/course/course-content.php:527
 #, fuzzy
@@ -2018,14 +1949,12 @@ msgstr ""
 "\""
 
 #: site/course/course-content.php:614
-#, fuzzy
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
 msgstr ""
-"Allah ya rigaya ya bamu danganin da muke buqatar \"Ku je ku almajirtar da "
-"mutane.\" Waɗannan namu ne iyali, abokai, maƙwabta, abokan aiki da abokan "
-"aiki - mutanen da muka san duk rayuwarmu ko wataƙila sun sadu."
+"Waɗannan su ne danginmu, abokai, maƙwabta, abokan aiki da abokan karatunmu - "
+"mutanen da muka san duk rayuwarmu ko wataƙila mun hadu."
 
 #: site/course/course-content.php:615
 #, fuzzy
@@ -2034,7 +1963,7 @@ msgstr "Gudanar da dangantakar da kuke da ita shine wuri mafi kyau don farawa."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr "Yourirƙiri naka Tsarin Sunaye na dari"
+msgstr "Ƙirƙiri lissafin ku na dari"
 
 #: site/course/course-content.php:643
 #, fuzzy
@@ -2042,14 +1971,12 @@ msgid "Scan QR code or use a piece of paper."
 msgstr "Duba lambar QR ko amfani da takarda."
 
 #: site/course/course-content.php:644
-#, fuzzy
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"Ka sa kowa a cikin rukuninku ya ɗauki mintuna 30 masu zuwa don cike tarin "
-"abubuwanda aka yi amfani da su ta hanyar amfani da adabin da ke cikin "
-"\"Jerin 100\" a cikin Littafin Jagora naka na Zúme. "
+"Ka sa kowa a cikin rukuninku ya ɗauki mintuna 30 masu zuwa don cika nasu "
+"jerin alaƙa. Yi lissafin adadin iyawa."
 
 #: site/course/course-content.php:645
 #, fuzzy
@@ -2061,9 +1988,8 @@ msgstr ""
 "kafiri, ko wanda ba a sani ba."
 
 #: site/course/course-content.php:682
-#, fuzzy
 msgid "Obey"
-msgstr "Yin biyayya"
+msgstr "Yi biyayya"
 
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
@@ -2093,9 +2019,8 @@ msgstr ""
 "mutumin tare da kungiyar kafin ku tafi ku yi musu jagora kafin zaman na gaba."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
-#, fuzzy
 msgid "To saturate the world with multiplying disciples in our generation."
-msgstr "don daidaita duniya da yawan almajirai"
+msgstr "Domin cika duniya da almajirai masu yawa a cikin tsararrakinmu."
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
 #, fuzzy
@@ -2112,13 +2037,12 @@ msgid "SESSION 3"
 msgstr "ZAMA NA 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
 msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+"Yi addu'a da gode wa Allah don hanyoyin da kuka dandana shi a cikin zama na "
+"ƙarshe kuma ku gayyaci Ruhunsa Mai Tsarki don ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:819
 #, fuzzy
