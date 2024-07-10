@@ -1,3 +1,4 @@
+<?php //phpcs:ignore ?>
 <?php
 
 class Zume_PWA_Strings {

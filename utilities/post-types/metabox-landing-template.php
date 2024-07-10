@@ -15,19 +15,18 @@ function zume_landing_box() {
             'normal',            // Where on the page to show the box
         'high' );            // Priority of box in display order
     }
-
 }
 
 function zume_landing_list_templates(){
     return [
         'full' => [
             'key' => 'full',
-            'label' => 'Full List (default)'
+            'label' => 'Full List (default)',
         ],
         'leading_yourself' => [
             'key' => 'leading_yourself',
-            'label' => 'Leading Yourself (4 part, abbreviated)'
-        ]
+            'label' => 'Leading Yourself (4 part, abbreviated)',
+        ],
     ];
 }
 
@@ -63,12 +62,12 @@ function zume_landing_content( $post ) {
         $list = [
             'yes' => [
                 'key' => 'yes',
-                'label' => 'Yes'
+                'label' => 'Yes',
             ],
             'no' => [
                 'key' => 'no',
-                'label' => 'No'
-            ]
+                'label' => 'No',
+            ],
         ];
         foreach ( $list as $value ){
             echo '<option value="'. esc_attr( $value['key'] ).'">'. esc_html( $value['label'] ) . '</option>';

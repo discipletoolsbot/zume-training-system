@@ -1,7 +1,7 @@
 <?php
 if ( !defined( 'ABSPATH' ) ) { exit; } // Exit if accessed directly.
 
-function zume_content( $lang_code = 'en') {
+function zume_content( $lang_code = 'en' ) {
 
 //    if ( get_transient( __FUNCTION__.'_'.$lang_code ) ) {
 //        return get_transient( __FUNCTION__.'_'.$lang_code );
@@ -55,7 +55,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '5678',
                 create_qr_url( $checkin_base_url . '5678' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '5678'
+                '5678',
             ],
         ],
         [
@@ -68,7 +68,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'PRAY', 'zume' ),
             ],
             'right' => [
-                __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' )
+                __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' ),
             ],
         ],
         [
@@ -85,13 +85,13 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple & Church', 'zume' ),
-                    __( 'Spiritual Breathing', 'zume' )
+                    __( 'Spiritual Breathing', 'zume' ),
                 ],
                 __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
                     __( 'S.O.A.P.S. Bible Reading', 'zume' ),
-                    __( 'Accountability Groups', 'zume' )
-                ]
+                    __( 'Accountability Groups', 'zume' ),
+                ],
             ],
         ],
         [
@@ -108,7 +108,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'God Uses Ordinary People', 'zume' ),
-                __( 'God uses ordinary people doing simple things to make a big impact.', 'zume' )
+                __( 'God uses ordinary people doing simple things to make a big impact.', 'zume' ),
             ],
         ],
         [
@@ -133,7 +133,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'DISCUSS', 'zume' ),
             ],
             'right' => [
-                __( 'If Jesus intended every one of His followers to obey His Great Commission, why do so few actually make disciples?', 'zume' )
+                __( 'If Jesus intended every one of His followers to obey His Great Commission, why do so few actually make disciples?', 'zume' ),
             ],
         ],
         [
@@ -178,8 +178,8 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'When you think of a church, what comes to mind?', 'zume' ),
                     __( 'What’s the difference between that picture and what’s described in the video as a "Simple Church"?', 'zume' ),
-                    __( 'Which one do you think would be easier to multiply and why?', 'zume' )
-                ]
+                    __( 'Which one do you think would be easier to multiply and why?', 'zume' ),
+                ],
             ],
         ],
         [
@@ -196,7 +196,7 @@ function zume_content( $lang_code = 'en') {
             ],
             'right' => [
                 __( 'Hearing and Obeying God', 'zume' ),
-                __( 'Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and obeying God is like that, too.', 'zume' )
+                __( 'Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and obeying God is like that, too.', 'zume' ),
             ],
         ],
         [
@@ -224,7 +224,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Why is it essential to learn to hear and recognize God’s voice?', 'zume' ),
                     __( 'Is hearing and responding to the Lord really like breathing? Why or why not?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -232,7 +232,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'watch',
             'menu' => [
                 __( 'S.O.A.P.S. Bible Reading', 'zume' ),
-                [35]
+                [35],
             ],
             'length' => [5],
             'center' => [],
@@ -279,7 +279,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Prayer', 'zume' ),
                     __( 'Sharing', 'zume' ),
                 ],
-                __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' )
+                __( 'Return together and share your S.O.A.P.S. in groups of two or three. (10 min)', 'zume' ),
             ],
             'right' => [
                 $activity_base_url . 'soaps',
@@ -331,7 +331,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Scan the QR code.', 'zume' ),
                     __( 'Break into groups of two or three people of the same gender.', 'zume' ),
                     __( 'Spend the next 20 minutes working together through the Accountability Questions.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . 'accountability',
@@ -353,13 +353,13 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple & Church', 'zume' ),
-                    __( 'Spiritual Breathing', 'zume' )
+                    __( 'Spiritual Breathing', 'zume' ),
                 ],
                 __( 'Tools heard in this session:', 'zume' ),
                 [
                     __( 'S.O.A.P.S. Bible Reading', 'zume' ),
-                    __( 'Accountability Groups', 'zume' )
-                ]
+                    __( 'Accountability Groups', 'zume' ),
+                ],
             ],
         ],
         [
@@ -424,7 +424,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2468',
                 create_qr_url( $checkin_base_url . '2468' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2468'
+                '2468',
             ],
         ],
         [
@@ -474,8 +474,8 @@ function zume_content( $lang_code = 'en') {
                 __( 'And we will add these tools to our toolkit:', 'zume' ),
                 [
                     __( 'Prayer Cycle', 'zume' ),
-                    __( 'List of 100', 'zume' )
-                ]
+                    __( 'List of 100', 'zume' ),
+                ],
             ],
         ],
         [
@@ -497,8 +497,8 @@ function zume_content( $lang_code = 'en') {
                     __( 'Prayer', 'zume' ),
                     __( 'Scripture', 'zume' ),
                     __( 'Body Life', 'zume' ),
-                    __( 'Persecution and Suffering', 'zume' )
-                ]
+                    __( 'Persecution and Suffering', 'zume' ),
+                ],
             ],
         ],
         [
@@ -527,7 +527,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Of the four areas detailed above (prayer, God’s Word, etc.), which ones do you already practice?', 'zume' ),
                     __( 'Which ones do you feel unsure about?', 'zume' ),
                     __( 'How ready do you feel when it comes to training others?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -540,7 +540,7 @@ function zume_content( $lang_code = 'en') {
             'length' => [],
             'center' => [],
             'left' => [
-                __( 'WATCH', 'zume' )
+                __( 'WATCH', 'zume' ),
             ],
             'right' => [
                 __( 'Prayer Cycle', 'zume' ),
@@ -593,7 +593,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'How do you feel?', 'zume' ),
                     __( 'Did you learn or hear anything?', 'zume' ),
                     __( 'What would life be like if you made this kind of prayer a regular habit?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -606,7 +606,7 @@ function zume_content( $lang_code = 'en') {
             'length' => [5],
             'center' => [],
             'left' => [
-                __( 'WATCH', 'zume' )
+                __( 'WATCH', 'zume' ),
             ],
             'right' => [
                 __( 'List of 100', 'zume' ),
@@ -643,7 +643,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Scan QR code or use a piece of paper.', 'zume' ),
                     __( 'Have everyone in your group take the next 30 minutes to fill out their own list of relationships. List as many as you can.', 'zume' ),
                     __( 'Then mark your best understanding of their relationship to God: disciple, unbeliever, or unknown.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . 'listof100',
@@ -750,7 +750,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '6543',
                 create_qr_url( $checkin_base_url . '6543' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '6543'
+                '6543',
             ],
         ],
         [
@@ -778,7 +778,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'Before getting started, take some time to look back.', 'zume' ),
                 __( 'At the end of the last session, everyone in your group was challenged to practice what you learned.', 'zume' ),
-                __( 'Take a few moments to see how your group did this week.', 'zume' )
+                __( 'Take a few moments to see how your group did this week.', 'zume' ),
             ],
         ],
         [
@@ -799,13 +799,13 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'The Gospel', 'zume' ),
                     __( 'Baptism', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
             'key' => 't9_a',
             'type' => 'watch',
-            'menu' =>  [
+            'menu' => [
                 __( 'Spiritual Economy', 'zume' ),
                 [15],
             ],
@@ -873,7 +873,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'What comes to mind when you hear God’s command to be His "witness" and to tell His story?', 'zume' ),
                     __( 'Why do you think Jesus chose ordinary people instead of some other way to share His good news?', 'zume' ),
                     __( 'What would it take for you to feel more comfortable sharing God’s story?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -916,7 +916,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'What do you learn about mankind from this story?', 'zume' ),
                     __( 'What do you learn about God?', 'zume' ),
                     __( 'Do you think it would be easier or harder to share God’s story by telling a story like this?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -985,7 +985,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Have you ever baptized someone?', 'zume' ),
                     __( 'Would you even consider it?', 'zume' ),
                     __( 'If the Great Commission is for every follower of Jesus, does that mean every follower is allowed to baptize others? Why or why not?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1093,7 +1093,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '8764',
                 create_qr_url( $checkin_base_url . '8764' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '8764'
+                '8764',
             ],
         ],
         [
@@ -1188,10 +1188,10 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Practice sharing your testimony', 'zume' ),
                 [
-                    __('Scan the QR code.', 'zume'),
-                    __('Work on writing out your story and keeping it to only three minutes. (10 min)', 'zume'),
-                    __('Break into groups of two to three and practice sharing. (20 min)', 'zume'),
-                ]
+                    __( 'Scan the QR code.', 'zume' ),
+                    __( 'Work on writing out your story and keeping it to only three minutes. (10 min)', 'zume' ),
+                    __( 'Break into groups of two to three and practice sharing. (20 min)', 'zume' ),
+                ],
             ],
             'right' => [
                 $activity_base_url . 'sharetestimony',
@@ -1242,7 +1242,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Is this the pattern you were taught when you first began to follow Jesus? If not, what was different?', 'zume' ),
                     __( 'After you came to faith, how long was it before you began to disciple others?', 'zume' ),
                     __( 'What do you think would happen if new followers started sharing and discipling others, immediately?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1287,7 +1287,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'What is one area of discipleship (reading/understanding the Bible, praying, sharing God’s story, etc.) that you want to learn more about? Who is someone that could help you learn?', 'zume' ),
                     __( 'What is one area of discipleship that you feel you could share with others? Who is someone that you could share with?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1334,7 +1334,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Who are you more comfortable sharing with -- people you already know or people you haven’t met, yet?', 'zume' ),
                     __( 'Why do you think that is?', 'zume' ),
                     __( 'How could you get better at sharing with people you’re less comfortable with?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1377,9 +1377,9 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Celebrate the Lord’s Supper', 'zume' ),
                 [
-                    __( 'Scan the QR code.', 'zume'),
+                    __( 'Scan the QR code.', 'zume' ),
                     __( 'Spend the next 10 minutes celebrating the Lord’s Supper with your group.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . 'lordssupper',
@@ -1469,7 +1469,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '6542',
                 create_qr_url( $checkin_base_url . '6542' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '6542'
+                '6542',
             ],
         ],
         [
@@ -1593,7 +1593,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Can someone who has a "bad reputation" (like the Samaritan woman or the demon-possessed man in the Gadarenes) really be a Person of Peace? Why or why not?', 'zume' ),
                     __( 'What is a community or segment of society near you that seems to have little (or no) Kingdom presence?', 'zume' ),
                     __( 'How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS and SHARES) accelerate the spread of the Gospel in that community?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1634,12 +1634,12 @@ function zume_content( $lang_code = 'en') {
             'left' => [
                 __( 'Prayer Walking', 'zume' ),
                 [
-                    __( 'Scan the QR code.', 'zume'),
+                    __( 'Scan the QR code.', 'zume' ),
                     __( 'Break into groups of two or three and go out into the community to practice Prayer Walking.', 'zume' ),
                     __( 'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.', 'zume' ),
                     __( 'Go as God leads, and plan on spending 60-90 minutes on this activity.', 'zume' ),
                     __( 'This session ends with the prayer walking activity.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . 'prayerwalking',
@@ -1707,7 +1707,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '1235',
                 create_qr_url( $checkin_base_url . '1235' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '1235'
+                '1235',
             ],
         ],
         [
@@ -1842,7 +1842,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Did you notice any differences between a 3/3 Group and a Bible Study or Small Group you’ve been a part of (or have heard about) in the past? If so, how would those differences impact the group?', 'zume' ),
                     __( 'Could a 3/3 Group be considered a Simple Church? Why or why not?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -1928,7 +1928,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '4322',
                 create_qr_url( $checkin_base_url . '4322' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '4322'
+                '4322',
             ],
         ],
         [
@@ -2023,7 +2023,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Who did you train? Or who trained you?', 'zume' ),
                     __( 'Could the same person be at different parts of the Training Cycle while learning different skills?', 'zume' ),
                     __( 'What would it look like to train someone like that?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2041,7 +2041,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)', 'zume' ),
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (30 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (30 min)', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . '33group',
@@ -2062,7 +2062,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'What did you like best about the 3/3 Group? Why?', 'zume' ),
                     __( 'What was the most challenging? Why?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2144,7 +2144,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '9870',
                 create_qr_url( $checkin_base_url . '9870' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '9870'
+                '9870',
             ],
         ],
         [
@@ -2238,7 +2238,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Is there a group of followers of Jesus you know that are already meeting or would be willing to meet and form a Leadership Cell to learn Zúme Training?', 'zume' ),
                     __( 'What would it take to bring them together?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2256,7 +2256,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (30 min)', 'zume' ),
                     __( 'LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer questions 1- 4. (30 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train and Share. (30 min)', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . '33group',
@@ -2343,7 +2343,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '1355',
                 create_qr_url( $checkin_base_url . '1355' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '1355'
+                '1355',
             ],
         ],
         [
@@ -2440,7 +2440,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'What is the most exciting idea you heard in this video? Why?', 'zume' ),
                     __( 'What is the most challenging idea? Why?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2486,7 +2486,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Why is pace important?', 'zume' ),
                     __( 'What do you need to change in your thinking, your actions, or your attitude to be better aligned with God’s priority for pace?', 'zume' ),
                     __( 'What is one thing you can do starting this week that will make a difference?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2574,7 +2574,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Scan the QR code or find a piece of paper.', 'zume' ),
                     __( 'Self-Evaluate yourself using line 1 and mark the corresponding columns on the Coaching Checklist.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
             $activity_base_url . 'coachingchecklist',
@@ -2596,7 +2596,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Which tools and concepts did you feel you would be able to train well?', 'zume' ),
                     __( 'Which tools and concepts did you feel you would struggle to train well?', 'zume' ),
                     __( 'Are there any tools or concepts that you would add or subtract from the checklist? Why?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2604,8 +2604,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'activity',
             'menu' => [],
             'length' => [],
-            'center' => [
-            ],
+            'center' => [],
             'left' => [
                 __( 'REMEMBER - Be sure to share your Coaching Checklist results with a training partner or other mentor.', 'zume' ),
                 __( 'If you don’t have a coach or mentor, scan the QR code and request one now.', 'zume' ),
@@ -2689,8 +2688,7 @@ function zume_content( $lang_code = 'en') {
             'type' => 'discuss',
             'menu' => [],
             'length' => [10],
-            'center' => [
-            ],
+            'center' => [],
             'left' => [
                 __( 'Discuss', 'zume' ),
             ],
@@ -2698,14 +2696,14 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Identify an empty field around you. What communities or people groups that you are connected to have no gospel activity?', 'zume' ),
                     __( 'How is long-term growth affected if one of the fields is neglected? Give examples.', 'zume' ),
-                    __( 'Which Zúme tools could help in which field?', 'zume')
-                ]
+                    __( 'Which Zúme tools could help in which field?', 'zume' ),
+                ],
             ],
         ],
         [
             'key' => 't32_a',
             'type' => 'center',
-            'menu' =>  [
+            'menu' => [
                 __( 'Generational Mapping', 'zume' ),
                 [15],
             ],
@@ -2751,7 +2749,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Which groups would you expect to multiply next?', 'zume' ),
                     __( 'Which leaders could help and strengthen other leaders?', 'zume' ),
                     __( 'Do you see a pattern of weak accountability in any of the generations?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -2836,7 +2834,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '5430',
                 create_qr_url( $checkin_base_url . '5430' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '5430'
+                '5430',
             ],
         ],
         [
@@ -2880,8 +2878,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!', 'zume' ),
                 __( 'Yet Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training and briefly introduce tools you’ll need later in your journey as you implement what you’ve learned.', 'zume' ),
             ],
-            'right' => [
-            ],
+            'right' => [],
         ],
         [
             'key' => 's1_10_6',
@@ -2990,8 +2987,8 @@ function zume_content( $lang_code = 'en') {
                [
                    __( 'Scan the QR code.', 'zume' ),
                    __( 'Break into groups of two or three. Use the 3/3 formatted Peer Mentoring Group outline.', 'zume' ),
-                   __( 'Choose one person in the group to be the "mentee" and have the other members work through the suggested questions list as peer mentors.',  'zume' ),
-               ],
+                   __( 'Choose one person in the group to be the "mentee" and have the other members work through the suggested questions list as peer mentors.', 'zume' ),
+                ],
 
             ],
             'right' => [
@@ -3129,7 +3126,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '3354',
                 create_qr_url( $checkin_base_url . '3354' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '3354'
+                '3354',
             ],
         ],
         [
@@ -3142,7 +3139,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'PRAY', 'zume' ),
             ],
             'right' => [
-                __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' )
+                __( 'Begin with prayer. Spiritual insight and transformation is not possible without the Holy Spirit. Take time as a group to invite Him to guide you over this session.', 'zume' ),
             ],
         ],
         [
@@ -3160,7 +3157,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple and Church', 'zume' ),
                     __( 'Spiritual Breathing is Hearing and Obeying God', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -3178,7 +3175,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'God Uses Ordinary People', 'zume' ),
                     __( 'Simple Definition of Disciple and Church', 'zume' ),
                     __( 'Spiritual Breathing is Hearing and Obeying God', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -3240,7 +3237,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '4568',
                 create_qr_url( $checkin_base_url . '4568' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '4568'
+                '4568',
             ],
         ],
         [
@@ -3363,7 +3360,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '8767',
                 create_qr_url( $checkin_base_url . '8767' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '8767'
+                '8767',
             ],
         ],
         [
@@ -3407,7 +3404,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
                     __( 'Accountability Groups', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -3485,7 +3482,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '6787',
                 create_qr_url( $checkin_base_url . '6787' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '6787'
+                '6787',
             ],
         ],
         [
@@ -3498,7 +3495,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'PRAY', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.',  'zume' ),
+                __( 'Pray and thank God that He is making us like Jesus. Invite the Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -3615,7 +3612,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '3450',
                 create_qr_url( $checkin_base_url . '3450' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '3450'
+                '3450',
             ],
         ],
         [
@@ -3659,7 +3656,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'In this session, we will add this tool to our toolkit:', 'zume' ),
                 [
                     __( 'The Prayer Cycle', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -3757,7 +3754,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2344',
                 create_qr_url( $checkin_base_url . '2344' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2344'
+                '2344',
             ],
         ],
         [
@@ -3803,7 +3800,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Spiritual Economy', 'zume' ),
                     __( 'Vision Casting the Greatest Blessing', 'zume' ),
                     __( 'The Gospel', 'zume' ),
-                ]
+                ],
 
             ],
         ],
@@ -3885,7 +3882,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '1116',
                 create_qr_url( $checkin_base_url . '1116' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '1116'
+                '1116',
             ],
         ],
         [
@@ -4030,7 +4027,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '5431',
                 create_qr_url( $checkin_base_url . '5431' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '5431'
+                '5431',
             ],
         ],
         [
@@ -4108,7 +4105,7 @@ function zume_content( $lang_code = 'en') {
             'right' => [
                 __( 'If you know anyone who follows Jesus but has not been baptized, challenge them to do so and offer to baptize them. Otherwise, practice the skill with a friend.', 'zume' ),
                 __( 'Ask God who He wants you to share with about what baptism is and how to do it. Have them practice it as well. Share this person‘s name with the group before you go and reach out to them before the next session.', 'zume' ),
-            ]
+            ],
         ],
 
 
@@ -4154,7 +4151,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '8768',
                 create_qr_url( $checkin_base_url . '8768' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '8768'
+                '8768',
             ],
         ],
         [
@@ -4307,7 +4304,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2347',
                 create_qr_url( $checkin_base_url . '2347' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2347'
+                '2347',
             ],
         ],
         [
@@ -4320,7 +4317,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'PRAY', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God for the ways He works through our testimony and invite His Holy Spirit to lead your time together.',  'zume' ),
+                __( 'Pray and thank God for the ways He works through our testimony and invite His Holy Spirit to lead your time together.', 'zume' ),
             ],
         ],
         [
@@ -4439,7 +4436,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '9434',
                 create_qr_url( $checkin_base_url . '9434' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '9434'
+                '9434',
             ],
         ],
         [
@@ -4452,7 +4449,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'PRAY', 'zume' ),
             ],
             'right' => [
-                __( 'Pray and thank God for how He is at work in your life and the lives of others around you. Pray for the group to have eyes to see where the Kingdom isn‘t, yet.',  'zume' ),
+                __( 'Pray and thank God for how He is at work in your life and the lives of others around you. Pray for the group to have eyes to see where the Kingdom isn‘t, yet.', 'zume' ),
             ],
         ],
         [
@@ -4500,7 +4497,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'Break into groups of two or three and go out into the community to practice Prayer Walking.', 'zume' ),
                     __( 'Choosing a location can be as simple as walking outside from where you are now, or you could plan to go to a specific destination.', 'zume' ),
                     __( 'Go as God leads, and plan on spending 60-90 minutes on this activity.', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . 'prayerwalking',
@@ -4553,7 +4550,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2348',
                 create_qr_url( $checkin_base_url . '2348' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2348'
+                '2348',
             ],
         ],
         [
@@ -4684,7 +4681,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '6785',
                 create_qr_url( $checkin_base_url . '6785' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '6785'
+                '6785',
             ],
         ],
         [
@@ -4759,7 +4756,7 @@ function zume_content( $lang_code = 'en') {
                 [
                     __( 'Did you notice any differences between a 3/3 Group and a Bible Study or Small Group you’ve been a part of (or have heard about) in the past? If so, how would those differences impact the group?', 'zume' ),
                     __( 'Could a 3/3 Group be considered a Simple Church? Why or why not?', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -4838,7 +4835,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '9872',
                 create_qr_url( $checkin_base_url . '9872' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '9872'
+                '9872',
             ],
         ],
         [
@@ -4902,7 +4899,7 @@ function zume_content( $lang_code = 'en') {
                     __( 'LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in with each other. (15 min)', 'zume' ),
                     __( 'LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer questions 1-4 during the Look Up section. (15 min)', 'zume' ),
                     __( 'LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to develop how you will Obey, Train and Share. (15 min)', 'zume' ),
-                ]
+                ],
             ],
             'right' => [
                 $activity_base_url . '33group',
@@ -4986,7 +4983,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '4327',
                 create_qr_url( $checkin_base_url . '4327' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '4327'
+                '4327',
             ],
         ],
         [
@@ -5085,7 +5082,7 @@ function zume_content( $lang_code = 'en') {
             'key' => 's2_16_1',
             'type' => 'title',
             'menu' => [
-                __( 'SESSION 16', 'zume' )
+                __( 'SESSION 16', 'zume' ),
             ],
             'length' => [],
             'center' => [
@@ -5111,7 +5108,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2871',
                 create_qr_url( $checkin_base_url . '2871' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2871'
+                '2871',
             ],
         ],
         [
@@ -5240,7 +5237,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '4328',
                 create_qr_url( $checkin_base_url . '4328' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '4328'
+                '4328',
             ],
         ],
         [
@@ -5288,7 +5285,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'And we will add this tool to our toolkit:', 'zume' ),
                 [
                     __( 'Coaching Checklist', 'zume' ),
-                ]
+                ],
             ],
         ],
         [
@@ -5373,7 +5370,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '6548',
                 create_qr_url( $checkin_base_url . '6548' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '6548'
+                '6548',
             ],
         ],
         [
@@ -5510,7 +5507,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '7657',
                 create_qr_url( $checkin_base_url . '7657' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '7657'
+                '7657',
             ],
         ],
         [
@@ -5634,7 +5631,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2767',
                 create_qr_url( $checkin_base_url . '2767' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2767'
+                '2767',
             ],
         ],
         [
@@ -5678,8 +5675,7 @@ function zume_content( $lang_code = 'en') {
                 __( 'You may not know it, but you now have more practical training on starting simple churches and making disciples who multiply than many pastors and missionaries around the world!', 'zume' ),
                 __( 'Yet Zúme Training is only the beginning! In this session, we will make a plan for what happens post-training.', 'zume' ),
             ],
-            'right' => [
-            ],
+            'right' => [],
         ],
         [
             'key' => 's2_20_6',
@@ -5744,7 +5740,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '1397',
                 create_qr_url( $checkin_base_url . '1397' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '1397'
+                '1397',
             ],
         ],
 
@@ -5795,7 +5791,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '2341',
                 create_qr_url( $checkin_base_url . '2341' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '2341'
+                '2341',
             ],
         ],
 
@@ -5844,7 +5840,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '3455',
                 create_qr_url( $checkin_base_url . '3455' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '3455'
+                '3455',
             ],
         ],
 
@@ -5893,7 +5889,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '4329',
                 create_qr_url( $checkin_base_url . '4329' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '4329'
+                '4329',
             ],
         ],
 
@@ -5942,7 +5938,7 @@ function zume_content( $lang_code = 'en') {
                 $checkin_base_url . '5451',
                 create_qr_url( $checkin_base_url . '5451' ),
                 __( 'Or zume.training/checkin and use code:', 'zume' ),
-                '5451'
+                '5451',
             ],
         ],
 
@@ -6030,5 +6026,4 @@ function zume_content( $lang_code = 'en') {
     set_transient( __FUNCTION__.'_'.$lang_code, $content, 24 * HOUR_IN_SECONDS );
 
     return $content;
-
 } // end function

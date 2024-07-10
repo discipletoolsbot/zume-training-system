@@ -76,7 +76,7 @@ function action_template_redirect() : void {
 }
 
 //register the D.T Plugin
-add_filter( 'dt_plugins', function ( $plugins ){
+add_filter( 'dt_plugins', function ( $plugins ) {
     $plugin_data = get_file_data( __FILE__, [ 'Version' => 'Version', 'Plugin Name' => 'Zúme Training' ], false );
     $plugins['zume-coaching'] = [
         'plugin_url' => trailingslashit( plugin_dir_url( __FILE__ ) ),
@@ -380,10 +380,10 @@ class Zume_Training {
 
         global $wpdb, $table_prefix;
         $user_friend_key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
-        $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
+        $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         while ( $key_exists ){
             $user_friend_key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
-            $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
+            $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         }
 
         $fields = [
@@ -477,7 +477,7 @@ class Zume_Training {
          * When the login fails with bad email/password, we need to get the lang_code from the
          * HTTP_REFERER url, otherwise it redirects back to english
          */
-        if ( isset( $url_parts[0] ) &&  $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
+        if ( isset( $url_parts[0] ) && $url_parts[0] === 'wp-login.php' && isset( $_SERVER['HTTP_REFERER'] ) ) {
             $url = wp_parse_url( esc_url_raw( wp_unslash( $_SERVER['HTTP_REFERER'] ) ) );
             [
                 'lang_code' => $lang_code,

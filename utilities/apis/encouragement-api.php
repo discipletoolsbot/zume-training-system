@@ -8,7 +8,7 @@ class Zume_System_Encouragement_API
 
     public static function instance()
     {
-        if (is_null(self::$_instance)) {
+        if ( is_null( self::$_instance ) ) {
             self::$_instance = new self();
         }
         return self::$_instance;
@@ -16,17 +16,17 @@ class Zume_System_Encouragement_API
     public function __construct()
     {
         add_action( 'zume_verify_encouragement_plan', [$this, 'verify_encouragement_plan'], 10, 3 );
-        if (dt_is_rest()) {
-            add_action('rest_api_init', [$this, 'add_api_routes']);
-            add_filter('dt_allow_rest_access', [$this, 'authorize_url'], 10, 1);
+        if ( dt_is_rest() ) {
+            add_action( 'rest_api_init', [$this, 'add_api_routes'] );
+            add_filter( 'dt_allow_rest_access', [$this, 'authorize_url'], 10, 1 );
         }
     }
     public function verify_encouragement_plan( $user_id, $type, $subtype ) {
-        Zume_System_Encouragement_API::_verify_encouragement_plan( $user_id, $type, $subtype );
+        self::_verify_encouragement_plan( $user_id, $type, $subtype );
     }
-    public function authorize_url($authorized)
+    public function authorize_url( $authorized )
     {
-        if (isset($_SERVER['REQUEST_URI']) && strpos(sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])), $this->namespace) !== false) {
+        if ( isset( $_SERVER['REQUEST_URI'] ) && strpos( sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ), $this->namespace ) !== false ) {
             $authorized = true;
         }
         return $authorized;
@@ -38,21 +38,21 @@ class Zume_System_Encouragement_API
             $namespace, '/encouragement/get', [
                 'methods' => ['GET', 'POST'],
                 'callback' => [$this, 'request_sorter'],
-                'permission_callback' => '__return_true'
+                'permission_callback' => '__return_true',
             ]
         );
         register_rest_route(
             $namespace, '/send_encouragement', [
                 'methods' => ['GET', 'POST'],
                 'callback' => [$this, 'send_encouragement'],
-                'permission_callback' => '__return_true'
+                'permission_callback' => '__return_true',
             ]
         );
         register_rest_route(
             $namespace, '/respond_encouragement', [
                 'methods' => ['GET', 'POST'],
                 'callback' => [$this, 'respond_encouragement'],
-                'permission_callback' => '__return_true'
+                'permission_callback' => '__return_true',
             ]
         );
     }
@@ -66,7 +66,7 @@ class Zume_System_Encouragement_API
             return $this->guest( $params );
         }
     }
-    public function user($params)
+    public function user( $params )
     {
         if ( ! isset( $params['user_id'] ) ) {
             $user_id = get_current_user_id();
@@ -97,8 +97,8 @@ class Zume_System_Encouragement_API
     public static function _get_current_plan( $user_id ) {
         global $wpdb, $table_prefix;
         $raw_plan = $wpdb->get_results( $wpdb->prepare(
-            "SELECT * FROM {$table_prefix}dt_zume_message_plan WHERE user_id = %d"
-            , $user_id ), ARRAY_A );
+            'SELECT * FROM zume_dt_zume_message_plan WHERE user_id = %d',
+        $user_id ), ARRAY_A );
 
         $log = zume_get_user_log( $user_id );
 //        dt_write_log($log);
@@ -108,18 +108,18 @@ class Zume_System_Encouragement_API
         else {
             $relays = [
                 'sent' => [],
-                'responded' => []
+                'responded' => [],
             ];
-            foreach( $log as $item ) {
-                if( 'sent' === $item['subtype'] ) {
+            foreach ( $log as $item ) {
+                if ( 'sent' === $item['subtype'] ) {
                     $relays['sent'][] = $item['post_id'];
                 }
-                if( 'responded' === $item['subtype'] ) {
+                if ( 'responded' === $item['subtype'] ) {
                     $relays['responded'][] = $item['post_id'];
                 }
             }
 //            dt_write_log( $relays );
-            foreach( $raw_plan as $index => $item ) {
+            foreach ( $raw_plan as $index => $item ) {
                 $raw_plan[$index]['sent'] = false;
                 $raw_plan[$index]['responded'] = false;
                 if ( in_array( $item['message_post_id'], $relays['sent'] ) ) {
@@ -135,7 +135,7 @@ class Zume_System_Encouragement_API
     }
     public static function _delete_current_plan( $user_id ) {
         global $wpdb, $table_prefix;
-        $wpdb->query($wpdb->prepare( "DELETE FROM {$table_prefix}dt_zume_message_plan WHERE user_id = %s AND sent IS NULL", $user_id ) );
+        $wpdb->query( $wpdb->prepare( 'DELETE FROM zume_dt_zume_message_plan WHERE user_id = %s AND sent IS NULL', $user_id ) );
     }
     public static function _install_plan( $user_id, $plan ) {
         global $wpdb, $table_prefix;
@@ -145,7 +145,7 @@ class Zume_System_Encouragement_API
         }
 
         $user = get_user_by( 'id', $user_id );
-        foreach( $plan as $message ) {
+        foreach ( $plan as $message ) {
             $message['user_id'] = $user_id;
             $message['to'] = $user->user_email;
             $wpdb->insert( $table_prefix .'dt_zume_message_plan', $message );
@@ -164,7 +164,7 @@ class Zume_System_Encouragement_API
                     'subject' => 'Registered Post 1 Day',
                     'message' => 'laskjdf ;laskd jf;alskj df;aslkd jf;laskj df;laskj d;flaskj d;flaks djf;l',
                     'headers' => '',
-                    'drop_date' => strtotime('+1 day'),
+                    'drop_date' => strtotime( '+1 day' ),
                 ],
                 [
                     'user_id' => $user_id,
@@ -174,7 +174,7 @@ class Zume_System_Encouragement_API
                     'subject' => 'Registered Post 2 Days',
                     'message' => 'laskjdf ;laskd jf;alskj df;aslkd jf;laskj df;laskj d;flaskj d;flaks djf;l',
                     'headers' => '',
-                    'drop_date' => strtotime('+2 day'),
+                    'drop_date' => strtotime( '+2 day' ),
                 ],
                 [
                     'user_id' => $user_id,
@@ -184,7 +184,7 @@ class Zume_System_Encouragement_API
                     'subject' => 'Registered Post 3 Days',
                     'message' => 'laskjdf ;laskd jf;alskj df;aslkd jf;laskj df;laskj d;flaskj d;flaks djf;l',
                     'headers' => '',
-                    'drop_date' => strtotime('+3 day'),
+                    'drop_date' => strtotime( '+3 day' ),
                 ],
                 [
                     'user_id' => $user_id,
@@ -194,7 +194,7 @@ class Zume_System_Encouragement_API
                     'subject' => 'Registered Post 4 Days',
                     'message' => 'laskjdf ;laskd jf;alskj df;aslkd jf;laskj df;laskj d;flaskj d;flaks djf;l',
                     'headers' => '',
-                    'drop_date' => strtotime('+1 week'),
+                    'drop_date' => strtotime( '+1 week' ),
                 ],
             ];
         }
@@ -405,17 +405,17 @@ class Zume_System_Encouragement_API
         global $wpdb, $table_prefix;
         $raw_plans = $wpdb->get_results( "
             SELECT p.ID, p.post_parent, pm.meta_value as subject, pm1.meta_value as body, pm2.meta_value as footer, pm3.meta_value as action_keys
-                FROM {$table_prefix}posts p
-                LEFT JOIN {$table_prefix}postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_email_subject'
-                LEFT JOIN {$table_prefix}postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_email_body'
-                LEFT JOIN {$table_prefix}postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_email_footer'
-                LEFT JOIN {$table_prefix}postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_action_keys'
+                FROM zume_posts p
+                LEFT JOIN zume_postmeta pm ON p.ID = pm.post_id AND pm.meta_key = 'zume_email_subject'
+                LEFT JOIN zume_postmeta pm1 ON p.ID = pm1.post_id AND pm1.meta_key = 'zume_email_body'
+                LEFT JOIN zume_postmeta pm2 ON p.ID = pm2.post_id AND pm2.meta_key = 'zume_email_footer'
+                LEFT JOIN zume_postmeta pm3 ON p.ID = pm3.post_id AND pm3.meta_key = 'zume_action_keys'
                 WHERE p.post_type = 'zume_messages'
                 AND p.post_status = 'publish'", ARRAY_A
         );
 
         $plans = [];
-        foreach( $raw_plans as $plan ) {
+        foreach ( $raw_plans as $plan ) {
             $plans[$plan['ID']] = $plan;
         }
 
@@ -433,7 +433,7 @@ class Zume_System_Encouragement_API
         return $params;
     }
 
-    public function guest($params)
+    public function guest( $params )
     {
         return [];
     }

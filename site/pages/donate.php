@@ -89,6 +89,7 @@ class Zume_Training_Donate extends Zume_Magic_Page
                     <p><?php echo esc_html__( 'We are crowdfunded, and we love that you want to be part of the Zúme vision.', 'zume' ) ?></p>
                     <div>
                         <div class="grassroot-project-widget" data-handle="default"></div>
+                        <?php //phpcs:ignore ?>
                         <script src="https://give.zume.vision/-/project-embed.js"></script>
                     </div>
                 </div>

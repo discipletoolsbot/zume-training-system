@@ -59,14 +59,14 @@ if ( is_admin() ) {
         /**
          * Packages and prints tab page
          *
-         * @param $tab
+         * @param string $tab
          */
         public function content( $tab ) {
             if ( $tab == 'ipstack' ) :
-            $this->template( 'begin' );
+                $this->template( 'begin' );
                 DT_Ipstack_API::metabox_for_admin();
-            $this->box( 'bottom' );
-            $this->template( 'end' );
+                $this->box( 'bottom' );
+                $this->template( 'end' );
             endif;
         }
 
@@ -74,8 +74,8 @@ if ( is_admin() ) {
         /**
          * Display admin notice
          *
-         * @param $notice string
-         * @param $type string error|success|warning
+         * @param string $notice
+         * @param string $type error|success|warning
          */
         public static function admin_notice( string $notice, string $type ) {
             ?>

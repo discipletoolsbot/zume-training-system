@@ -66,7 +66,7 @@ class Zume_Activites_3monthplan extends Zume_Activites
             </header>
             <div class="container-md">
                 <h1 class="activity-title"><?php echo esc_html__( '3-Month Plan', 'zume' ) ?></h1>
-                <a class="f-0 center" href="<?php site_url() ?>/<?php echo $this->lang ?>/activities/3monthplan_printable" target="_blank"><?php echo esc_html__( 'Switch to Printable Version', 'zume' ) ?></a>
+                <a class="f-0 center" href="<?php site_url() ?>/<?php echo esc_url( $this->lang ) ?>/activities/3monthplan_printable" target="_blank"><?php echo esc_html__( 'Switch to Printable Version', 'zume' ) ?></a>
             </div>
             <hr>
             <div class="container-md activity-content">
@@ -91,10 +91,10 @@ class Zume_Activites_3monthplan extends Zume_Activites
 
     public static function translations() {
         return [
-            'save' => __( 'Save', 'zume' ),
-            'cancel' => __( 'Cancel', 'zume' ),
-            'question' => __( 'Question', 'zume' ),
-            'answer' => __( 'Answer', 'zume' ),
+            'save' => esc_html__( 'Save', 'zume' ),
+            'cancel' => esc_html__( 'Cancel', 'zume' ),
+            'question' => esc_html__( 'Question', 'zume' ),
+            'answer' => esc_html__( 'Answer', 'zume' ),
         ];
     }
 }

@@ -55,7 +55,7 @@ class DT_Porch_Landing_Roles
             $expected_roles['porch_admin'] = [
                 'label' => __( 'Porch Admin', 'disciple_tools' ),
                 'description' => 'Administrates porch public pages',
-                'permissions' => $permissions
+                'permissions' => $permissions,
             ];
         }
         if ( isset( $expected_roles['administrator']['permissions'] ) ){
@@ -118,6 +118,5 @@ class DT_Porch_Landing_Roles
         }
         return $allowed_wp_v2_paths;
     }
-
 } // End Class
 DT_Porch_Landing_Roles::instance();

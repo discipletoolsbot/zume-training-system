@@ -144,7 +144,7 @@ class Zume_Training_Messages_Post_Type
                     'search_items' => 'Search '.$this->plural, /* Search Custom Type Title */
                     'not_found' => 'Nothing found in the Database.', /* This displays if there are no entries yet */
                     'not_found_in_trash' => 'Nothing found in Trash', /* This displays if there is nothing in the trash */
-                    'parent_item_colon' => ''
+                    'parent_item_colon' => '',
                 ), /* end of arrays */
                 'description' => $this->singular, /* Custom Type Description */
                 'public' => true,
@@ -172,7 +172,7 @@ class Zume_Training_Messages_Post_Type
                 'capability_type' => 'page',
                 'hierarchical' => true,
                 'show_in_rest' => true,
-                'supports' => array( 'title',  'page-attributes',  'wp-block-styles' , 'align-wide', )
+                'supports' => array( 'title', 'page-attributes', 'wp-block-styles', 'align-wide' ),
             )
         );
     } // End register_post_type()
@@ -193,16 +193,16 @@ class Zume_Training_Messages_Post_Type
             case 'delay':
                 $days = get_post_meta( $post_id, 'delay', true );
                 if ( $days ) {
-                    echo $days;
+                    echo esc_html( $days );
                 } else {
                     echo '0';
                 }
                 break;
             case 'logic':
-                echo get_post_meta( $post_id, 'logic', true );
+                echo esc_html( get_post_meta( $post_id, 'logic', true ) );
                 break;
             case 'stage':
-                echo get_post_meta( $post_id, 'stage', true );
+                echo esc_html( get_post_meta( $post_id, 'stage', true ) );
                 break;
 
             default:
@@ -277,7 +277,7 @@ class Zume_Training_Messages_Post_Type
                 strtolower( $this->singular ),
                 // translators: Publish box date format, see http://php.net/date
                 '<strong>' . date_i18n( 'M j, Y @ G:i',
-                    strtotime( $post->post_date ) ) . '</strong>',
+                strtotime( $post->post_date ) ) . '</strong>',
                 '<a target="_blank" href="' . esc_url( get_permalink( $post->ID ) ) . '">',
                 '</a>'
             ),
@@ -321,9 +321,9 @@ class Zume_Training_Messages_Post_Type
     public function set_postmeta_fields( $post_id ) {
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
-        foreach($field_data as $k => $v){
-            if( !isset($fields[$k]) ) {
-                if ( str_starts_with($k, 'end_') || str_starts_with($k, 'begin_') ) {
+        foreach ( $field_data as $k => $v ){
+            if ( !isset( $fields[$k] ) ) {
+                if ( str_starts_with( $k, 'end_' ) || str_starts_with( $k, 'begin_' ) ) {
                     continue;
                 }
                 update_post_meta( $post_id, $k, '' );
@@ -356,16 +356,16 @@ class Zume_Training_Messages_Post_Type
         global $wpdb, $table_prefix;
         $list = $wpdb->get_results(
             "SELECT ID, post_parent, post_title
-                    FROM {$table_prefix}posts
+                    FROM zume_posts
                     WHERE post_type = 'zume_messages'", ARRAY_A );
 
         $children = $this->get_message_children( $post_id, $list, [], $post_id );
 
-        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true);
+        $parents = array_reverse( $this->get_message_parent( $post_id, $list, [], $post_id ), true );
 
         return [
             'parents' => $parents,
-            'children' => $children
+            'children' => $children,
         ];
     }
 
@@ -432,7 +432,7 @@ class Zume_Training_Messages_Post_Type
                             break;
                         case 'textarea':
                             echo '<tr valign="top"><td style="padding:2px;vertical-align: top;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
-                                <td style="padding:2px;"><textarea name="' . esc_attr( $k ) . '" type="text" id="' . esc_attr( $k ) . '" class="regular-text" style="width:100%;height:150px;" />' .  $data  . '</textarea>';
+                                <td style="padding:2px;"><textarea name="' . esc_attr( $k ) . '" type="text" id="' . esc_attr( $k ) . '" class="regular-text" style="width:100%;height:150px;" />' .  esc_html( $data ) . '</textarea>';
                             echo '</td></tr>' . "\n";
                             break;
                         case 'link':
@@ -505,10 +505,8 @@ class Zume_Training_Messages_Post_Type
             if ( !current_user_can( 'edit_page', $post_id ) ) {
                 return $post_id;
             }
-        } else {
-            if ( !current_user_can( 'edit_post', $post_id ) ) {
+        } elseif ( !current_user_can( 'edit_post', $post_id ) ) {
                 return $post_id;
-            }
         }
 
         if ( isset( $_GET['action'] ) ) {
@@ -527,7 +525,7 @@ class Zume_Training_Messages_Post_Type
                 continue;
             }
 
-            ${$f} =  trim( wp_unslash( $_POST[ $f ] ) );
+            ${$f} = trim( sanitize_text_field( wp_unslash( $_POST[ $f ] ) ) );
 
             // Escape the URLs.
             if ( 'url' == $field_data[ $f ]['type'] ) {
@@ -535,7 +533,7 @@ class Zume_Training_Messages_Post_Type
             }
 
             if ( 'textarea' == $field_data[ $f ]['type'] ) {
-                update_post_meta( $post_id, $f, trim( wp_unslash( $_POST[ $f ] ) ) );
+                update_post_meta( $post_id, $f, trim( sanitize_text_field( wp_unslash( $_POST[ $f ] ) ) ) );
             } elseif ( get_post_meta( $post_id, $f ) == '' ) {
                 add_post_meta( $post_id, $f, ${$f}, true );
             } elseif ( ${$f} != get_post_meta( $post_id, $f, true ) ) {
@@ -578,7 +576,7 @@ class Zume_Training_Messages_Post_Type
         $fields = array();
         global $zume_languages_full_list;
         $languages = $zume_languages_full_list;
-        foreach( $languages as $language ) {
+        foreach ( $languages as $language ) {
             $fields['begin_'.$language['code']] = array(
                 'name'        => strtoupper( $language['name'] ),
                 'default'     => '',
@@ -667,6 +665,5 @@ class Zume_Training_Messages_Post_Type
         $this->register_post_type();
         flush_rewrite_rules();
     } // End flush_rewrite_rules()
-
 } // End Class
 Zume_Training_Messages_Post_Type::instance();

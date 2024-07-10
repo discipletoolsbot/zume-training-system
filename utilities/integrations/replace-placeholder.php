@@ -80,7 +80,7 @@ class Zume_Replace_Placeholder {
             '[image_fourfields]',
             '[image_genmap]',
             '[image_trainingcycle]',
-            '[image_3circles]'
+            '[image_3circles]',
         ];
         $replacement_string = [
             '<a class="button small" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>', // Get a Coach

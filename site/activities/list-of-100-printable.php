@@ -38,7 +38,6 @@ class Zume_Activites_List100_Printable extends Zume_Activites
                 exit;
             }
         }
-
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         return [];
@@ -83,12 +82,12 @@ class Zume_Activites_List100_Printable extends Zume_Activites
             <div>
                 <table class="unstriped print_table" >
                 <?php
-                for ($x = 1; $x <= 100; $x++) {
+                for ( $x = 1; $x <= 100; $x++ ) {
                     ?>
                     <tr class="print_table_row">
-                        <td class="print_cell print_table_number"><?php echo $x; ?></td>
+                        <td class="print_cell print_table_number"><?php echo esc_html( $x ); ?></td>
                         <td class="print_cell print_table_line"></td>
-                        <td class="print_cell print_table_check_column">&#9744; <?php echo __( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo __( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo __( 'Unknown', 'zume' ) ?></td>
+                        <td class="print_cell print_table_check_column">&#9744; <?php echo esc_html__( 'Disciple', 'zume' ) ?>&nbsp;&nbsp; &#9744; <?php echo esc_html__( 'Unbeliever', 'zume' ) ?>&nbsp;&nbsp;  &#9744; <?php echo esc_html__( 'Unknown', 'zume' ) ?></td>
                     </tr>
                     <?php
                 }

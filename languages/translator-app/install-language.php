@@ -5,7 +5,7 @@ if ( is_admin() ) {
     add_action( 'admin_menu', 'install_language_admin_menu' );
 
     function install_language_admin_menu() {
-        add_menu_page( 'Install Language', 'Install Language', 'manage_options', 'install-language', ['Zume_Install_Languages','install_language_admin_page'], 'dashicons-tickets', 6  );
+        add_menu_page( 'Install Language', 'Install Language', 'manage_options', 'install-language', ['Zume_Install_Languages','install_language_admin_page'], 'dashicons-tickets', 6 );
     }
 
     class Zume_Install_Languages {
@@ -22,11 +22,11 @@ if ( is_admin() ) {
                             <option value="">Select Language</option>
                             <option value="" disable>---</option>
                             <?php
-                            foreach ($zume_languages_full_list as $value) {
-                                if ( $value['code'] === 'en') {
+                            foreach ( $zume_languages_full_list as $value ) {
+                                if ( $value['code'] === 'en' ) {
                                     continue;
                                 }
-                                echo '<option value="' . $value['code'] . '">' . $value['name'] . '</option>';
+                                echo '<option value="' . esc_html( $value['code'] ) . '">' . esc_html( $value['name'] ) . '</option>';
                             }
                             ?>
                         </select>
@@ -42,13 +42,13 @@ if ( is_admin() ) {
 
 
                 <?php
-                if ( isset( $_POST['language'] ) && wp_verify_nonce( $_POST[__FUNCTION__ . '_nonce'], __FUNCTION__ ) ) {
-                    $language = $zume_languages_full_list[ $_POST['language'] ];
+                if ( isset( $_POST['language'] ) && isset( $_POST[__FUNCTION__ . '_nonce'] ) && wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST[__FUNCTION__ . '_nonce'] ) ), __FUNCTION__ ) ) {
+                    $language = $zume_languages_full_list[ sanitize_text_field( wp_unslash( $_POST['language'] ) ) ];
                     $language_code = $language['code'];
                     ?>
 
 
-                    <h1><?php echo 'Language: ' . $language['name'] ?></h1>
+                    <h1><?php echo 'Language: ' . esc_html( $language['name'] ) ?></h1>
 
 
                     <hr></hr>
@@ -59,7 +59,7 @@ if ( is_admin() ) {
                     <?php
                     /* Check that all training items are installed as pieces pages. */
                     $training_items = zume_training_items();
-                    foreach( $training_items as $item ) {
+                    foreach ( $training_items as $item ) {
                         if ( $item['key'] === 27 ) {
                             continue;
                         }
@@ -70,13 +70,13 @@ if ( is_admin() ) {
                             JOIN zume_postmeta pm1 ON p.ID=pm1.post_id AND pm1.meta_key = 'zume_piece' AND pm1.meta_value = %s
                             WHERE p.post_type = 'zume_pieces'", $language_code, $item['key'] ) );
                         if ( $installed ) {
-                            echo '<p>' . $item['title'] . ' - <a href="'.site_url().'/wp-admin/post.php?post='.$installed.'&action=edit">&#10003;</a></p>';
+                            echo '<p>' . esc_html( $item['title'] ) . ' - <a href="'.esc_url( site_url() ).'/wp-admin/post.php?post='.esc_url( $installed ).'&action=edit">&#10003;</a></p>';
                         } else {
                             $added = self::install_piece( $item, $language );
                             if ( is_wp_error( $added ) || empty( $added ) ) {
-                                echo '<p>' . $item['title'] . ' - &#x2718;</p>';
+                                echo '<p>' . esc_html( $item['title'] ) . ' - &#x2718;</p>';
                             } else {
-                                echo '<p>' . $item['title'] . ' - <a href="'.site_url().'/wp-admin/post.php?post='.$added.'&action=edit">&#10003; (Added New - '.$added.')</a></p>';
+                                echo '<p>' . esc_html( $item['title'] ) . ' - <a href="'.esc_url( site_url() ).'/wp-admin/post.php?post='.esc_url( $added ) .'&action=edit">&#10003; (Added New - '.esc_url( $added ) .')</a></p>';
                             }
                         }
                     }
@@ -100,11 +100,11 @@ if ( is_admin() ) {
                         $fields = Zume_Scripts_Post_Type::instance()->get_custom_fields_settings();
 
                         if ( $meta ) {
-                            foreach( $fields as $key => $item ) {
-                               if ( ! isset( $meta[$key] ) ) {
-                                   update_post_meta( $script_id, $key, '' );
-                                   echo '<p>Added ' . $item['title'] . '('. $key .') - &#10003;</p>';
-                               }
+                            foreach ( $fields as $key => $item ) {
+                                if ( ! isset( $meta[$key] ) ) {
+                                    update_post_meta( $script_id, $key, '' );
+                                    echo '<p>Added ' . esc_html( $item['title'] ) . '('. esc_html( $key ) .') - &#10003;</p>';
+                                }
                             }
                         }
                     } else {
@@ -132,10 +132,10 @@ if ( is_admin() ) {
                         $meta = get_post_meta( $download_id );
                         $fields = Zume_Downloads_Post_Type::instance()->get_custom_fields_settings();
 
-                        foreach( $fields as $key => $item ) {
+                        foreach ( $fields as $key => $item ) {
                             if ( ! isset( $meta[$key] ) ) {
                                 update_post_meta( $download_id, $key, '' );
-                                echo '<p>Added ' . $item['title'] . '('. $key .') - &#10003;</p>';
+                                echo '<p>Added ' . esc_html( $item['title'] ) . '('. esc_html( $key ) .') - &#10003;</p>';
                             }
                         }
                     } else {
@@ -163,10 +163,10 @@ if ( is_admin() ) {
                         $fields = Zume_Video_Post_Type::instance()->get_custom_fields_settings();
 
                         $training_items = zume_training_items();
-                        foreach( $fields as $key => $item ) {
+                        foreach ( $fields as $key => $item ) {
                             if ( ! isset( $meta[$key] ) ) {
                                 update_post_meta( $video_id, $key, '' );
-                                echo '<p>Added ' . $item['title'] . '('.$key.') - &#10003;</p>';
+                                echo '<p>Added ' . esc_html( $item['title'] ) . '('.esc_html( $key ) .') - &#10003;</p>';
                             }
                         }
                     } else {
@@ -191,17 +191,17 @@ if ( is_admin() ) {
                     if ( $message_ids ) {
                         echo '<p>Message - &#10003;</p>';
 
-                        foreach( $message_ids as $message ) {
+                        foreach ( $message_ids as $message ) {
                             $meta = get_post_meta( $message );
                             if ( $meta ) {
-                                foreach( $zume_languages_full_list as $item ) {
+                                foreach ( $zume_languages_full_list as $item ) {
                                     if ( ! isset( $meta['subject_'.$item['code']] ) ) {
                                         update_post_meta( $message, 'subject_'.$item['code'], '' );
-                                        echo '<p>Added ' . $item['name'] . ' subject_'.$item['code'].' - &#10003;</p>';
+                                        echo '<p>Added ' . esc_html( $item['name'] ) . ' subject_'.esc_html( $item['code'] ) .' - &#10003;</p>';
                                     }
                                     if ( ! isset( $meta['body_'.$item['code']] ) ) {
                                         update_post_meta( $message, 'body_'.$item['code'], '' );
-                                        echo '<p>Added ' . $item['name'] . ' body_'.$item['code'].'  - &#10003;</p>';
+                                        echo '<p>Added ' . esc_html( $item['name'] ) . ' body_'.esc_html( $item['code'] ) .'  - &#10003;</p>';
                                     }
                                 }
                             }
@@ -216,16 +216,16 @@ if ( is_admin() ) {
                     <h2>.po and .mo Files</h2>
                     <?php
                     /* Check that .po and .mo files are installed. */
-                    $po_file = plugin_dir_path(__DIR__) .'zume-'. $language['locale'] . '.po';
-                    echo $po_file;
-                    if ( file_exists( $po_file )  ) {
+                    $po_file = plugin_dir_path( __DIR__ ) .'zume-'. $language['locale'] . '.po';
+                    echo esc_html( $po_file );
+                    if ( file_exists( $po_file ) ) {
                         echo ' &#10003;';
                     } else {
                         echo ' &#x2718;';
                     }
                     echo '<br>';
-                    $mo_file = plugin_dir_path(__DIR__) .'zume-'. $language['locale'] . '.mo';
-                    echo $mo_file;
+                    $mo_file = plugin_dir_path( __DIR__ ) .'zume-'. $language['locale'] . '.mo';
+                    echo esc_html( $mo_file );
                     if ( file_exists( $mo_file ) ) {
                         echo ' &#10003;';
                     } else {
@@ -273,7 +273,7 @@ if ( is_admin() ) {
         public static function install_options() {
             global $zume_languages_full_list;
             $options = [];
-            foreach( $zume_languages_full_list as $lang ) {
+            foreach ( $zume_languages_full_list as $lang ) {
                 $options[$lang['code']] = [
                     'label' => $lang['name'],
                     'native_name' => $lang['nativeName'],
@@ -284,7 +284,7 @@ if ( is_admin() ) {
 
             $current_options = get_option( 'dt_working_languages' );
             $needs_update = false;
-            foreach( $options as $key => $value ) {
+            foreach ( $options as $key => $value ) {
                 if ( !isset( $current_options[$key] ) ) {
                     $needs_update = true;
                     break;
@@ -315,7 +315,6 @@ if ( is_admin() ) {
 
 
 /*
-
 $global_languages_list = [
     'en' => [ 'label' => 'English', 'native_name' => 'English', 'flag' => '🇺🇸', 'rtl' => false ],
     'am' => [ 'label' => 'Amharic', 'native_name' => 'አማርኛ (AmarəÑña)', 'flag' => '🇪🇹', 'rtl' => false ],

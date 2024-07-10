@@ -1,3 +1,4 @@
+<?php //phpcs:ignore ?>
 <?php
 
 /**
@@ -20,14 +21,14 @@ $three_circles_for_translation = [
         'center' => [],
         'left' => [
             __( 'DISCUSS', 'zume' ),
-            __( '(10 min)', 'zume' )
+            __( '(10 min)', 'zume' ),
         ],
         'right' => [
             [
                 __( 'What comes to mind when you hear God’s command to be His "witness" and to tell His story?', 'zume' ),
                 __( 'Why do you think Jesus chose ordinary people instead of some other way to share His good news?', 'zume' ),
                 __( 'What would it take for you to feel more comfortable sharing God’s story?', 'zume' ),
-            ]
+            ],
         ],
     ],
     [
@@ -58,14 +59,14 @@ $three_circles_for_translation = [
         'center' => [],
         'left' => [
             __( 'DISCUSS', 'zume' ),
-            __( '(10 min)', 'zume' )
+            __( '(10 min)', 'zume' ),
         ],
         'right' => [
             [
                 __( 'What do you learn about mankind from this story?', 'zume' ),
                 __( 'What do you learn about God?', 'zume' ),
                 __( 'Do you think it would be easier or harder to share God’s story by telling a story like this?', 'zume' ),
-            ]
+            ],
         ],
     ],
     // coaching checklist alternative version
@@ -85,7 +86,7 @@ $three_circles_for_translation = [
                 __( 'Use the coaching checklist and evaluate your selected person. Ask yourself, "What does this person need for each of the tools and concepts?"', 'zume' ),
                 __( 'Check off the checklist.', 'zume' ),
 
-            ]
+            ],
         ],
         'right' => [
 //            $activity_base_url . 'coaching_mawl',
@@ -107,7 +108,7 @@ $three_circles_for_translation = [
             [
                 __( 'Scan the QR code or find a piece of paper.', 'zume' ),
                 __( 'Assess Yourself - Evaluate yourself and mark the corresponding columns on the Coaching Checklist.', 'zume' ),
-            ]
+            ],
         ],
         'right' => [
 //            $activity_base_url . 'coachingchecklist',

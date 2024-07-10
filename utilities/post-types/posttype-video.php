@@ -140,7 +140,7 @@ class Zume_Video_Post_Type
                 'search_items' => 'Search Zume Videos', /* Search Custom Type Title */
                 'not_found' => 'Nothing found in the Database.', /* This displays if there are no entries yet */
                 'not_found_in_trash' => 'Nothing found in Trash', /* This displays if there is nothing in the trash */
-                'parent_item_colon' => ''
+                'parent_item_colon' => '',
             ), /* end of arrays */
                   'description' => 'Zume video catalog for language videos', /* Custom Type Description */
                   'public' => false,
@@ -152,13 +152,13 @@ class Zume_Video_Post_Type
                   'menu_icon' => 'dashicons-editor-customchar', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
                   'rewrite' => array(
             'slug' => 'zume_video',
-            'with_front' => false
+            'with_front' => false,
             ), /* you can specify its url slug */
                   'has_archive' => 'zume_video', /* you can rename the slug here */
                   'capability_type' => 'post',
                   'hierarchical' => false,
                 /* the next one is important, it tells what's enabled in the post editor */
-                  'supports' => array( 'title' )
+                  'supports' => array( 'title' ),
             ) /* end of options */
         ); /* end of register post type */
     } // End register_post_type()
@@ -464,10 +464,8 @@ class Zume_Video_Post_Type
             if ( !current_user_can( 'edit_page', $post_id ) ) {
                 return $post_id;
             }
-        } else {
-            if ( !current_user_can( 'edit_post', $post_id ) ) {
+        } elseif ( !current_user_can( 'edit_post', $post_id ) ) {
                 return $post_id;
-            }
         }
 
         if ( isset( $_GET['action'] ) ) {
@@ -788,6 +786,5 @@ class Zume_Video_Post_Type
         $this->register_post_type();
         flush_rewrite_rules();
     } // End flush_rewrite_rules()
-
 } // End Class
 Zume_Video_Post_Type::instance();

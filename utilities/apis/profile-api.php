@@ -103,6 +103,7 @@ class Zume_Profile_API
 }
 Zume_Profile_API::instance();
 
+//phpcs:ignore
 class Zume_Profile_Model {
 
     public static function get() {

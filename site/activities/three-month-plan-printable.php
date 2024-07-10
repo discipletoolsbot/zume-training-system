@@ -38,7 +38,6 @@ class Zume_Activites_3monthplan_Printable extends Zume_Activites
                 exit;
             }
         }
-
     }
     public function body(){
         $questions = Zume_Training_Dashboard::three_month_plan_questions();

@@ -83,7 +83,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
             <div class="center stack-2">
                 <p>
-                    <?php echo __( 'Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew 13:33, Jesus compared the kingdom of heaven to yeast mixed into a large amount of flour, permeating the entire dough. This parable illustrates how ordinary people, using ordinary resources, can have exponential impact for the Kingdom of God.', 'zume' ) ?>
+                    <?php echo esc_html__( 'Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew 13:33, Jesus compared the kingdom of heaven to yeast mixed into a large amount of flour, permeating the entire dough. This parable illustrates how ordinary people, using ordinary resources, can have exponential impact for the Kingdom of God.', 'zume' ) ?>
                 </p>
             </div>
 
@@ -92,8 +92,8 @@ class Zume_Training_About extends Zume_Magic_Page
             <div class="switcher align-items-center">
                 <div class="stack-3">
                     <p>
-                        <?php echo __( 'In 2015, a small group committed to fulfilling Jesus’ Great Commission mandate convened for a Jonathan Project Leadership Meeting. They prayed and discussed the challenges in multiplying disciples around the world. Recognizing the need for accessible, multilingual, and flexible training that aligns with Jesus’ call for ordinary people to be ‘yeast’ for the Kingdom, the idea for online video-based training was born. Ultimately, this idea evolved into what is now known as Zúme.', 'zume' ) ?><br><br>
-                        <?php echo __( 'The foundational disciple-making principles in Zúme Training come straight from the Bible and have been tested globally for over thirty years. These principles empower ordinary believers to become disciples who, in turn, make disciples, resulting in millions of disciples advancing the Kingdom in spiritually dark places.', 'zume' ) ?>
+                        <?php echo esc_html__( 'In 2015, a small group committed to fulfilling Jesus’ Great Commission mandate convened for a Jonathan Project Leadership Meeting. They prayed and discussed the challenges in multiplying disciples around the world. Recognizing the need for accessible, multilingual, and flexible training that aligns with Jesus’ call for ordinary people to be ‘yeast’ for the Kingdom, the idea for online video-based training was born. Ultimately, this idea evolved into what is now known as Zúme.', 'zume' ) ?><br><br>
+                        <?php echo esc_html__( 'The foundational disciple-making principles in Zúme Training come straight from the Bible and have been tested globally for over thirty years. These principles empower ordinary believers to become disciples who, in turn, make disciples, resulting in millions of disciples advancing the Kingdom in spiritually dark places.', 'zume' ) ?>
                     </p>
                 </div>
                 <div class="center">
@@ -106,21 +106,21 @@ class Zume_Training_About extends Zume_Magic_Page
                     <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/CellPhone.svg' ) ?>" alt="computer devices">
                 </div>
                 <p>
-                    <?php echo __( 'Launched on February 14, 2017, through Kingdom collaboration, Zúme Training remains an open initiative without formal organizational control or a separate entity. Since Zúme is not run by an organization, there is no formal statement of faith. All involved, however, would agree with the Lausanne Covenant.', 'zume' ) ?>
+                    <?php echo esc_html__( 'Launched on February 14, 2017, through Kingdom collaboration, Zúme Training remains an open initiative without formal organizational control or a separate entity. Since Zúme is not run by an organization, there is no formal statement of faith. All involved, however, would agree with the Lausanne Covenant.', 'zume' ) ?>
                 </p>
             </div>
 
             <div class="switcher align-items-center">
                 <p>
-                    <?php echo __( 'The goal is to saturate the globe with multiplying disciples in our generation. The Biblical principles found in this training are simple. The world changing potential is in the practice of these principles.', 'zume' ) ?><br></br>
-                    <?php echo __( 'The vision of Zúme is comparable to yeast working through the entire dough, spreading basic Kingdom tools into neighborhoods worldwide.', 'zume' ) ?><br></br>
+                    <?php echo esc_html__( 'The goal is to saturate the globe with multiplying disciples in our generation. The Biblical principles found in this training are simple. The world changing potential is in the practice of these principles.', 'zume' ) ?><br></br>
+                    <?php echo esc_html__( 'The vision of Zúme is comparable to yeast working through the entire dough, spreading basic Kingdom tools into neighborhoods worldwide.', 'zume' ) ?><br></br>
                 </p>
                 <div class="center">
                     <img class="w-70" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/WorldGroups.svg' ) ?>" alt="groups around the globe">
                 </div>
             </div>
 
-            <h2 class="brand text-center bold"><?php echo __( 'The vision of Zúme has two parts:', 'zume' ) ?></h2>
+            <h2 class="brand text-center bold"><?php echo esc_html__( 'The vision of Zúme has two parts:', 'zume' ) ?></h2>
 
             <div class="switcher align-items-center">
                 <div class="center">
@@ -128,8 +128,8 @@ class Zume_Training_About extends Zume_Magic_Page
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/1Training.svg' ) ?>" alt="One training">
                 </div>
                 <p>
-                    <span class="bold"><?php echo __( 'Part 1:', 'zume' ) ?></span><br>
-                    <?php echo __( 'To train at least one disciple maker for every 5,000 people in North America and one disciple maker for every 50,000 people globally.', 'zume' ) ?>
+                    <span class="bold"><?php echo esc_html__( 'Part 1:', 'zume' ) ?></span><br>
+                    <?php echo esc_html__( 'To train at least one disciple maker for every 5,000 people in North America and one disciple maker for every 50,000 people globally.', 'zume' ) ?>
                 </p>
             </div>
 
@@ -139,14 +139,14 @@ class Zume_Training_About extends Zume_Magic_Page
                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/2Churches.svg' ) ?>" alt="2 simple churches">
                 </div>
                 <p>
-                    <span class="bold"><?php echo __( 'Part 2:', 'zume' ) ?></span><br>
-                    <?php echo __( 'For trained disciple makers to start at least 2 simple multiplying churches for every 5,000 people in North America and 2 simple churches for every 50,000 people globally.', 'zume' ) ?><br></br>
+                    <span class="bold"><?php echo esc_html__( 'Part 2:', 'zume' ) ?></span><br>
+                    <?php echo esc_html__( 'For trained disciple makers to start at least 2 simple multiplying churches for every 5,000 people in North America and 2 simple churches for every 50,000 people globally.', 'zume' ) ?><br></br>
                 </p>
             </div>
             <br>
             <div class="center stack-2">
                 <p>
-                    <?php echo __( 'With these small beginnings ... what the Bible calls yeast ... we could see the world covered with multiplying disciples and churches. Explore Zúme Training and find out how!', 'zume' ) ?>
+                    <?php echo esc_html__( 'With these small beginnings ... what the Bible calls yeast ... we could see the world covered with multiplying disciples and churches. Explore Zúme Training and find out how!', 'zume' ) ?>
                 </p>
             </div>
             <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large fit-content"><?php echo esc_html__( 'Get Started', 'zume' ) ?></a>
@@ -221,9 +221,9 @@ class Zume_Training_About extends Zume_Magic_Page
                     <div class="stack-2">
                         <h3 class="white bold"><?php echo esc_html__( 'Needed for the training:', 'zume' ) ?></h3>
                         <ul role="list" class="stack-1">
-                            <li><?php echo __( 'At least 3 people, but ideally less than 12.', 'zume' ) ?></li>
-                            <li><?php echo __( 'Commitment to spend 20 hours learning and practicing the concepts and tools in the course.', 'zume' ) ?></li>
-                            <li><?php echo __( 'A person to facilitate (potentially you) the meeting time and location, to guide the follow-up discussion, and facilitate action prompts.', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'At least 3 people, but ideally less than 12.', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Commitment to spend 20 hours learning and practicing the concepts and tools in the course.', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'A person to facilitate (potentially you) the meeting time and location, to guide the follow-up discussion, and facilitate action prompts.', 'zume' ) ?></li>
                         </ul>
                     </div>
                     <div class="center">
@@ -234,8 +234,8 @@ class Zume_Training_About extends Zume_Magic_Page
                     <div class="stack-2">
                         <h3 class="white bold"><?php echo esc_html__( 'NOT needed for the training:', 'zume' ) ?></h3>
                         <ul role="list" class="stack-1">
-                            <li><?php echo __( 'More knowledge or experience than the rest of your group is not needed! If you can click next, you can lead a Zúme Training.', 'zume' ) ?></li>
-                            <li><?php echo __( 'Special permission to lead a training is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'More knowledge or experience than the rest of your group is not needed! If you can click next, you can lead a Zúme Training.', 'zume' ) ?></li>
+                            <li><?php echo esc_html__( 'Special permission to lead a training is not needed! Zúme is self-facilitated, self-initiated, and you can start today.', 'zume' ) ?></li>
                         </ul>
                     </div>
                     <div class="center">
@@ -253,7 +253,7 @@ class Zume_Training_About extends Zume_Magic_Page
                         <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/coach-2guys.svg' ) ?>" alt="guy with a coach" class="w-50">
                     </div>
                     <div class="stack-2">
-                        <p><?php echo __( 'All along the way, the Zúme community is eager to support you by providing a COACH to help you and your group successfully implement the training. Don’t hesitate to reach out with questions or concerns!', 'zume' ) ?></p>
+                        <p><?php echo esc_html__( 'All along the way, the Zúme community is eager to support you by providing a COACH to help you and your group successfully implement the training. Don’t hesitate to reach out with questions or concerns!', 'zume' ) ?></p>
                         <a href="<?php echo esc_url( zume_get_a_coach_wizard_url() ) ?>" class="btn  large s-4 fit-content"><?php echo esc_html__( 'Get a Coach', 'zume' ) ?></a>
                     </div>
                 </div>

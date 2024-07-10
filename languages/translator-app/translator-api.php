@@ -51,7 +51,7 @@ class Zume_Translation_Endpoints
         // is user translator role
         $this->user = wp_get_current_user();
         if ( ! in_array( 'custom_language_translator', (array) $this->user->roles ) ) {  // test if approved translator role
-            return new WP_Error( '', "User " . $this->user->user_email . " is not a translator.", [ 'status' => 403 ] );
+            return new WP_Error( '', 'User ' . $this->user->user_email . ' is not a translator.', [ 'status' => 403 ] );
         }
 
         $params = $request->get_params();
@@ -69,7 +69,7 @@ class Zume_Translation_Endpoints
         }
 
         // Log the change
-        $previous_value = get_post_meta ( $params['postid'], $params['key'], true );
+        $previous_value = get_post_meta( $params['postid'], $params['key'], true );
         $log = array(
             'meta_key' => $meta_key,
             'post_id' => $post_id,
@@ -87,7 +87,7 @@ class Zume_Translation_Endpoints
         // Save new value
         update_post_meta( $post_id, $meta_key, $current_value );
 
-        $last_activity = zume_last_activity( $post_type);
+        $last_activity = zume_last_activity( $post_type );
 
         if ( isset( $last_activity[$meta_key.$post_id] ) ) {
             return $last_activity[$meta_key.$post_id];
@@ -112,7 +112,7 @@ class Zume_Translation_Endpoints
         // is user translator role
         $this->user = wp_get_current_user();
         if ( ! in_array( 'custom_language_translator', (array) $this->user->roles ) ) {  // test if approved translator role
-            return new WP_Error( '', "User " . $this->user->user_email . " is not a translator.", [ 'status' => 403 ] );
+            return new WP_Error( '', 'User ' . $this->user->user_email . ' is not a translator.', [ 'status' => 403 ] );
         }
 
         $params = $request->get_params();

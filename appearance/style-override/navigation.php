@@ -99,7 +99,7 @@ class Zume_Training_Navigation
                         'hidden' => false,
                     ],
 
-                ]
+                ],
             ],
             [
                 'link' => esc_url( site_url( '/dashboard/' ) ),
@@ -135,8 +135,8 @@ class Zume_Training_Navigation
                         'label' => esc_html__( 'Metrics', 'zume' ),
                         'icon' => '',
                         'hidden' => false,
-                    ]
-                ]
+                    ],
+                ],
             ],
             [
                 'link' => '#',
@@ -161,7 +161,7 @@ class Zume_Training_Navigation
                         'icon' => '',
                         'hidden' => false,
                     ],
-                ]
+                ],
             ]
         );
 
@@ -174,23 +174,23 @@ class Zume_Training_Navigation
             [
                 'label' => 'First Training Focus',
                 'link' => '',
-                'value' => 'first'
+                'value' => 'first',
             ],
             [
                 'label' => 'Evangelism Focus',
                 'link' => '',
-                'value' => 'multi'
+                'value' => 'multi',
             ],
             [
                 'label' => 'Group Growing Focus',
                 'link' => '',
-                'value' => 'movement'
+                'value' => 'movement',
             ],
             [
                 'label' => 'Training Focus',
                 'link' => '',
-                'value' => 'training'
-            ]
+                'value' => 'training',
+            ],
         ];
         ?>
         <li>

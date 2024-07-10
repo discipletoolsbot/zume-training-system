@@ -140,7 +140,7 @@ class Zume_Downloads_Post_Type
                     'search_items' => 'Search '.$this->plural, /* Search Custom Type Title */
                     'not_found' => 'Nothing found in the Database.', /* This displays if there are no entries yet */
                     'not_found_in_trash' => 'Nothing found in Trash', /* This displays if there is nothing in the trash */
-                    'parent_item_colon' => ''
+                    'parent_item_colon' => '',
                 ), /* end of arrays */
                 'description' => '', /* Custom Type Description */
                 'public' => false,
@@ -152,13 +152,13 @@ class Zume_Downloads_Post_Type
                 'menu_icon' => 'dashicons-editor-customchar', /* the icon for the custom post type menu. uses built-in dashicons (CSS class name) */
                 'rewrite' => array(
                     'slug' => 'zume_video',
-                    'with_front' => false
+                    'with_front' => false,
                 ), /* you can specify its url slug */
                 'has_archive' => 'zume_video', /* you can rename the slug here */
                 'capability_type' => 'post',
                 'hierarchical' => false,
                 /* the next one is important, it tells what's enabled in the post editor */
-                'supports' => array( 'title' )
+                'supports' => array( 'title' ),
             ) /* end of options */
         ); /* end of register post type */
     } // End register_post_type()
@@ -250,7 +250,7 @@ class Zume_Downloads_Post_Type
                 strtolower( $this->singular ),
                 // translators: Publish box date format, see http://php.net/date
                 '<strong>' . date_i18n( 'M j, Y @ G:i',
-                    strtotime( $post->post_date ) ) . '</strong>',
+                strtotime( $post->post_date ) ) . '</strong>',
                 '<a target="_blank" href="' . esc_url( get_permalink( $post->ID ) ) . '">',
                 '</a>'
             ),
@@ -285,14 +285,14 @@ class Zume_Downloads_Post_Type
     public function load_downloads_meta_box() {
         global $post_id;
 
-        echo 'Scripts content must be edited in <a href="'. site_url().'/app/translator">app/translator</a><br><hr>';
+        echo 'Scripts content must be edited in <a href="'. esc_html( site_url() ) .'/app/translator">app/translator</a><br><hr>';
         $this->meta_box_content( 'downloads' ); // prints
 
         // make sure fields exist
         $fields = get_post_custom( $post_id );
         $field_data = $this->get_custom_fields_settings();
-        foreach($field_data as $k => $v){
-            if( !isset($fields[$k]) ) {
+        foreach ( $field_data as $k => $v ){
+            if ( !isset( $fields[$k] ) ) {
                 update_post_meta( $post_id, $k, '' );
             }
         }
@@ -354,7 +354,7 @@ class Zume_Downloads_Post_Type
                         case 'textarea':
                             echo '<tr valign="top"><td style="padding:2px;vertical-align: top;font-weight:bold;"><label for="' . esc_attr( $k ) . '">' . esc_html( $v['name'] ) . '</label></td>
                                 <td style="padding:2px;">';
-                            echo $data;
+                            echo esc_html( $data );
                             echo '</td></tr>' . "\n";
                             break;
                         case 'select':
@@ -411,10 +411,8 @@ class Zume_Downloads_Post_Type
             if ( !current_user_can( 'edit_page', $post_id ) ) {
                 return $post_id;
             }
-        } else {
-            if ( !current_user_can( 'edit_post', $post_id ) ) {
+        } elseif ( !current_user_can( 'edit_post', $post_id ) ) {
                 return $post_id;
-            }
         }
 
         if ( isset( $_GET['action'] ) ) {
@@ -787,6 +785,5 @@ class Zume_Downloads_Post_Type
         $this->register_post_type();
         flush_rewrite_rules();
     } // End flush_rewrite_rules()
-
 } // End Class
 Zume_Downloads_Post_Type::instance();

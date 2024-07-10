@@ -48,12 +48,11 @@ class Zume_Training_Menu_Post_Type
             add_filter( 'manage_'.$this->post_type.'_posts_columns', [ $this, 'set_custom_edit_columns' ] );
             add_action( 'manage_'.$this->post_type.'_posts_custom_column', [ $this, 'custom_column' ], 10, 2 );
         }
-
     }
 
     public function add_metabox_qr( $post_type ) {
-        if ( $this->post_type === $post_type ) {
-        }
+        //if ( $this->post_type === $post_type ) {
+        //}
     }
 
 
@@ -80,7 +79,7 @@ class Zume_Training_Menu_Post_Type
                     'search_items' => 'Search '.$this->plural, /* Search Custom Type Title */
                     'not_found' => 'Nothing found in the Database.', /* This displays if there are no entries yet */
                     'not_found_in_trash' => 'Nothing found in Trash', /* This displays if there is nothing in the trash */
-                    'parent_item_colon' => ''
+                    'parent_item_colon' => '',
                 ), /* end of arrays */
                 'description' => $this->singular, /* Custom Type Description */
                 'public' => true,
@@ -108,7 +107,7 @@ class Zume_Training_Menu_Post_Type
                 'capability_type' => 'page',
                 'hierarchical' => false,
                 'show_in_rest' => true,
-                'supports' => array( 'title',  'wp-block-styles' , 'align-wide' )
+                'supports' => array( 'title', 'wp-block-styles', 'align-wide' ),
             )
         );
     }
@@ -134,7 +133,7 @@ class Zume_Training_Menu_Post_Type
             if ( $slug !== $current_public_key ) {
                 update_post_meta( $post_id, $this->meta_key, $slug );
                 global $wpdb, $table_prefix;
-                $wpdb->query( $wpdb->prepare( "UPDATE {$table_prefix}posts SET guid = %s WHERE ID = %s;", trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
+                $wpdb->query( $wpdb->prepare( 'UPDATE zume_posts SET guid = %s WHERE ID = %s;', trailingslashit( site_url() ) . $this->root . '/' . $this->type . '/' . $slug, $post_id ) );
             }
         }
     }
@@ -158,5 +157,3 @@ class Zume_Training_Menu_Post_Type
     }
 } // End Class
 //Zume_Training_Menu_Post_Type::instance();
-
-

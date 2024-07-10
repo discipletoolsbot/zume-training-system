@@ -80,6 +80,8 @@ class Zume_Activites extends Zume_Magic_Page
     public function body(){
         global $wpdb;
         $sql = $wpdb->prepare( "SELECT ID FROM zume_posts p WHERE p.post_type = 'zume_activities' AND p.post_title = %s", $this->type );
+
+        //phpcs:ignore
         $post_id = $wpdb->get_var( $sql );
 
         ?>
@@ -102,15 +104,16 @@ class Zume_Activites extends Zume_Magic_Page
     }
     public function content_header( $post_id ){
         $title = get_post_meta( $post_id, 'title_'.$this->language_code, true );
-        echo $title;
+        echo wp_kses( $title, 'post' );
     }
     public function content_body( $post_id ){
         $content = zume_replace_placeholder( get_post_meta( $post_id, 'content_'.$this->language_code, true ), $this->language_code );
-        echo $content;
+        echo wp_kses( $content, 'post' );
     }
 }
 Zume_Activites::instance();
 
+//phpcs:ignore
 class Zume_Activites_SOAPS extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - SOAPS';
@@ -132,6 +135,7 @@ class Zume_Activites_SOAPS extends Zume_Activites
 }
 Zume_Activites_SOAPS::instance();
 
+//phpcs:ignore
 class Zume_Activites_Accountability extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Accountability';
@@ -154,6 +158,7 @@ class Zume_Activites_Accountability extends Zume_Activites
 }
 Zume_Activites_Accountability::instance();
 
+//phpcs:ignore
 class Zume_Activites_Prayer_Cycle extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Prayer Cycle';
@@ -176,6 +181,7 @@ class Zume_Activites_Prayer_Cycle extends Zume_Activites
 }
 Zume_Activites_Prayer_Cycle::instance();
 
+//phpcs:ignore
 class Zume_Activites_Sharegospel extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Share the Gospel';
@@ -198,6 +204,7 @@ class Zume_Activites_Sharegospel extends Zume_Activites
 }
 Zume_Activites_Sharegospel::instance();
 
+//phpcs:ignore
 class Zume_Activites_Sharetestimony extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Share Testimony';
@@ -220,6 +227,7 @@ class Zume_Activites_Sharetestimony extends Zume_Activites
 }
 Zume_Activites_Sharetestimony::instance();
 
+//phpcs:ignore
 class Zume_Activites_Supper extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Lords Supper';
@@ -242,6 +250,7 @@ class Zume_Activites_Supper extends Zume_Activites
 }
 Zume_Activites_Supper::instance();
 
+//phpcs:ignore
 class Zume_Activites_Bless extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - Blessing Prayer';
@@ -264,6 +273,7 @@ class Zume_Activites_Bless extends Zume_Activites
 }
 Zume_Activites_Bless::instance();
 
+//phpcs:ignore
 class Zume_Activites_33group extends Zume_Activites
 {
     public $page_title = 'Zúme Activity - 3/3 Group Meeting';
@@ -286,6 +296,7 @@ class Zume_Activites_33group extends Zume_Activites
 }
 Zume_Activites_33group::instance();
 
+//phpcs:ignore
 class Zume_Activites_Prayerwalk extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
@@ -308,6 +319,7 @@ class Zume_Activites_Prayerwalk extends Zume_Activites
 }
 Zume_Activites_Prayerwalk::instance();
 
+//phpcs:ignore
 class Zume_Activites_Peermentoring extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
@@ -330,6 +342,7 @@ class Zume_Activites_Peermentoring extends Zume_Activites
 }
 Zume_Activites_Peermentoring::instance();
 
+//phpcs:ignore
 class Zume_Activites_4fields extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';
@@ -352,6 +365,7 @@ class Zume_Activites_4fields extends Zume_Activites
 }
 Zume_Activites_4fields::instance();
 
+//phpcs:ignore
 class Zume_Activites_Genmap extends Zume_Activites
 {
     public $page_title = 'Zúme Activity';

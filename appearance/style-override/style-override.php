@@ -3,7 +3,7 @@
 /**
  * Zúme style override
  */
-add_action( 'wp_head', function(){
+add_action( 'wp_head', function () {
     ?>
     <style>
         body {

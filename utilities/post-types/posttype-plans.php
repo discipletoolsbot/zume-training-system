@@ -917,4 +917,3 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
     }
 }
 Zume_Plans_Post_Type::instance();
-

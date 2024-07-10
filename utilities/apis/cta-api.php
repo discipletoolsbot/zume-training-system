@@ -91,7 +91,7 @@ class Zume_System_CTA_API
             foreach ( $ctas as $key => $cta ) {
                 $show_cta = false;
                 foreach ( $cta['required_keys'] as $required_key ) {
-                    if (  !$show_cta && ! in_array( $required_key, $log_keys ) ) {
+                    if ( !$show_cta && ! in_array( $required_key, $log_keys ) ) {
                         unset( $ctas[$key] );
                     } else {
                         $show_cta = true;

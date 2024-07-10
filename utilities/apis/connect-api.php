@@ -99,7 +99,7 @@ class Zume_Connect_Endpoints
 
     public static function test_friend_key( $key ) : bool|int {
         global $wpdb, $table_prefix;
-        $sql = $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE `meta_key` = 'user_friend_key' AND meta_value = %s", $key );
+        $sql = $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE `meta_key` = 'user_friend_key' AND meta_value = %s", $key );
         //phpcs:ignore
         $result = $wpdb->get_var( $sql );
         if ( $result && ! is_wp_error( $result ) ) {
@@ -181,7 +181,7 @@ class Zume_Connect_Endpoints
         $coach_id = $wpdb->get_var(
             $wpdb->prepare(
                 "SELECT post_id
-                    FROM {$table_prefix}3_postmeta
+                    FROM zume_3_postmeta
                     WHERE meta_key = 'corresponds_to_user'
                     AND meta_value = %d",
                 $coach_user_id
@@ -245,7 +245,7 @@ class Zume_Connect_Endpoints
 
     public static function test_join_key( $key ) : bool|int {
         global $wpdb, $table_prefix;
-        $sql = $wpdb->prepare( "SELECT post_id FROM {$table_prefix}postmeta WHERE `meta_key` = 'join_key' AND meta_value = %s", $key );
+        $sql = $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE `meta_key` = 'join_key' AND meta_value = %s", $key );
         //phpcs:ignore
         $result = $wpdb->get_var( $sql );
         if ( $result && ! is_wp_error( $result ) ) {
