@@ -217,7 +217,7 @@ class Zume_Plans_Endpoints
     public function completed_sessions( WP_REST_Request $request ) {
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( !isset( $params['post_id'] ) || empty( $params['post_id']) ) {
+        if ( !isset( $params['post_id'] ) || empty( $params['post_id'] ) ) {
             return new WP_Error( __METHOD__, 'post_id required', array( 'status' => 401 ) );
         }
 
@@ -298,9 +298,9 @@ class Zume_Plans_Endpoints
             return new WP_Error( __METHOD__, 'Failed to get training group.', array( 'status' => 401 ) );
         }
 
-        foreach( $training_group as $key => $value ) {
+        foreach ( $training_group as $key => $value ) {
             if ( 'set_' === substr( $key, 0, 4 ) && '_completed' === substr( $key, -10, 10 ) ) {
-                $completed_sessions[] = str_replace('_completed', '', $key );
+                $completed_sessions[] = str_replace( '_completed', '', $key );
             }
         }
         return $completed_sessions;
@@ -334,7 +334,7 @@ class Zume_Plans_Endpoints
         }, $training_group['participants'] ) );
 
         if ( !in_array( $user_contact_id, $participant_ids ) ) {
-            return new WP_Error(__METHOD__, 'Not a participant of this group', array( 'status' => 400 ) );
+            return new WP_Error( __METHOD__, 'Not a participant of this group', array( 'status' => 400 ) );
         }
 
         return $post_id;
@@ -393,6 +393,5 @@ class Zume_Plans_Endpoints
     public static function get_public_plans() {
         return DT_Posts::list_posts( self::$post_type, [ 'fields' => [ [ 'visibility' => [ 'public' ] ] ] ], false );
     }
-
 }
 Zume_Plans_Endpoints::instance();
