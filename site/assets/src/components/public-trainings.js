@@ -59,6 +59,7 @@ export class PublicTrainings extends LitElement {
                 <thead>
                     <tr>
                         <td>${this.t.name}</td>
+                        <td>${this.t.session}</td>
                         <td>${this.t.next_date}</td>
                         <td>${this.t.start_time}</td>
                         <td>${this.t.timezone}</td>
@@ -79,19 +80,35 @@ export class PublicTrainings extends LitElement {
         post_title,
         time_of_day_note,
         timezone_note,
+        set_type,
         ...fields
     }) {
-        const set = fields['set_a_01'] ? 'a' : 'b'
-        const plan_length = set === 'a' ? 10 : 20
-        const plan_prefix = `set_${set}_`
+
+        let plan_length
+        switch (set_type.key) {
+            case 'set_a':
+                plan_length = 10
+                break;
+            case 'set_b':
+                plan_length = 20
+                break;
+            case 'set_c':
+                plan_length = 5
+                break;
+            default:
+                break;
+        }
+        const plan_prefix = set_type.key + '_'
 
         const now = Date.now() / 1000
 
         let latestPlanDate = ''
+        let latestSessionNumber
         for ( let i = 1; i < plan_length + 1; i++ ) {
             const sessionIndex = i < 10 ? `0${i}` : `${i}`;
             const sessionDate = fields[plan_prefix + sessionIndex];
             latestPlanDate = sessionDate['timestamp'];
+            latestSessionNumber = i
             if ( now < sessionDate['timestamp'] ) {
                 break;
             }
@@ -102,6 +119,7 @@ export class PublicTrainings extends LitElement {
         return html`
             <tr>
                 <td data-label="${this.t.name}">${post_title}</td>
+                <td data-label="${this.t.session}">${latestSessionNumber} / ${plan_length}</td>
                 <td data-label="${this.t.next_date}">${formattedDate}</td>
                 <td data-label="${this.t.start_time}">${time_of_day_note}</td>
                 <td data-label="${this.t.timezone}">${timezone_note}</td>

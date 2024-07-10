@@ -231,6 +231,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'error' => __( 'Something went wrong', 'zume' ),
                 'name' => __( 'Name', 'zume' ),
                 'next_date' => __( 'Next Session Date', 'zume' ),
+                'session' => __( 'Session', 'zume' ),
                 'start_time' => __( 'Start Time', 'zume' ),
                 'timezone' => __( 'Timezone', 'zume' ),
                 'language' => __( 'Language', 'zume' ),

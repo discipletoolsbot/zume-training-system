@@ -370,11 +370,12 @@ class Zume_Plans_Endpoints
             'time_of_day_note',
             'timezone_note',
             'zoom_link_note',
+            'set_type',
         ];
         foreach ( $result['posts'] as $plan ) {
             $post = [];
             foreach ( array_keys( $plan ) as $key ) {
-                if ( in_array( $key, $fields_to_include ) || str_contains( $key, 'set_a' ) || str_contains( $key, 'set_b' ) ) {
+                if ( in_array( $key, $fields_to_include ) || str_contains( $key, 'set_a' ) || str_contains( $key, 'set_b' ) || str_contains( $key, 'set_c' ) ) {
                     $post[$key] = $plan[$key];
                 }
             }
