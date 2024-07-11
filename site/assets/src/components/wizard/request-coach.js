@@ -6,18 +6,7 @@ import { zumeRequest } from '../../js/zumeRequest';
 export class RequestCoach extends LitElement {
     static get properties() {
         return {
-            /**
-             * The step name
-             */
-            name: { type: String },
-            /**
-             * The module name that this step is part of
-             */
-            module: { type: String },
-            /**
-             * Is this step skippable
-             */
-            skippable: { type: Boolean },
+            hasNextStep: { type: Boolean },
             /**
              * Translation strings
              */
@@ -36,9 +25,7 @@ export class RequestCoach extends LitElement {
 
     constructor() {
         super()
-        this.name = ''
-        this.module = ''
-        this.skippable = false
+        this.hasNextStep = false
         this.variant = ''
         this.t = {}
         this.state = {}
@@ -114,6 +101,8 @@ export class RequestCoach extends LitElement {
             this.requestCoach()
         }
 
+        console.log(this.hasNextStep)
+
         return html`
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${ this.variant === Steps.contactPreferences ? html`
@@ -175,7 +164,7 @@ export class RequestCoach extends LitElement {
                 <p>${this.message}</p>
                 <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
             ` : '' }
-            ${ this.variant !== Steps.connectingToCoach
+            ${ this.hasNextStep
                 ? html`
                     <div class="mx-auto">
                         <button type="submit" class="btn tight" ?disabled=${this.loading}>${this.t.next} <span class="loading-spinner ${this.loading ? 'active' : ''}"></span></button>
@@ -192,7 +181,8 @@ export class RequestCoach extends LitElement {
             event.preventDefault()
         }
 
-        if ( Object.keys(this.state).length === 0 || Object.values(this.state).every((item) => !item)) {
+        console.log(this.variant, Steps.connectingToCoach)
+        if (this.variant !== Steps.connectingToCoach && ( Object.keys(this.state).length === 0 || Object.values(this.state).every((item) => !item) ) ) {
             this.setErrorMessage(this.t.missing_response)
             return
         } else {

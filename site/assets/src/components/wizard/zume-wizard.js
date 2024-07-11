@@ -257,11 +257,12 @@ export class Wizard extends LitElement {
                 break;
         }
 
+        console.log(this.stepIndex, this.steps.length)
+
         return staticHtml`
             <${tag}
                 class="w-100"
-                name=${currentStep.slug}
-                module=${currentStep.module}
+                ?hasNextStep=${this.stepIndex < this.steps.length - 1}
                 variant=${currentStep.slug}
                 ?skippable=${currentStep.skippable}
                 .t=${translations}
@@ -336,7 +337,7 @@ export class Wizard extends LitElement {
         return html`
             <div class="cluster justify-content-center">
                 ${backButton}
-                ${this.finishButton()}
+                ${this.stepIndex === this.steps.length - 1 ? this.finishButton() : ''}
             </div>
         `
     }

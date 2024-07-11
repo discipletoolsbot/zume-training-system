@@ -10,6 +10,7 @@ export const Wizards = {
     checkin: 'checkin',
     setProfile: 'set-profile',
     joinCommunity: 'join-the-community',
+    joinCommunityFromVision: 'join-the-community-vision',
     inviteFriends: 'invite'
 }
 export const Modules = {
@@ -23,6 +24,7 @@ export const Modules = {
     checkin: 'checkin',
     planDecision: 'planDecision',
     joinCommunity: 'joinCommunity',
+    joinCommunityFromVision: 'joinCommunityFromVision',
 }
 const makeAPlanSteps = {
     planDecision: 'plan-decision',

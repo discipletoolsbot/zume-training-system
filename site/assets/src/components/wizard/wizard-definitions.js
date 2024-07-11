@@ -92,6 +92,21 @@ export const wizardDefinitions = {
             Steps.joinCommunity,
         ], true),
     },
+    [Wizards.joinCommunityFromVision]: {
+        [Modules.joinCommunityFromVision]: makeModule([
+            Steps.joinCommunity,
+        ], true),
+        [Modules.completeProfile]: makeModule([
+            Steps.updateName,
+            Steps.updateLocation,
+            Steps.updatePhone,
+        ]),
+        [Modules.getACoach]: makeModule([
+            Steps.contactPreferences,
+            Steps.languagePreferences,
+            Steps.connectingToCoach,
+        ], true),
+    },
     [Wizards.checkin]: {
         [Modules.checkin]: makeModule([
             Steps.checkinSubmit,

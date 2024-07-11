@@ -7,18 +7,6 @@ export class MakeTraining extends LitElement {
     static get properties() {
         return {
             /**
-             * The step name
-             */
-            name: { type: String },
-            /**
-             * The module name that this step is part of
-             */
-            module: { type: String },
-            /**
-             * Is this step skippable
-             */
-            skippable: { type: Boolean },
-            /**
              * Translation strings
              */
             t: { type: Object },
@@ -42,9 +30,6 @@ export class MakeTraining extends LitElement {
 
     constructor() {
         super()
-        this.name = ''
-        this.module = ''
-        this.skippable = false
         this.variant = ''
         this.t = {}
         this.state = {}

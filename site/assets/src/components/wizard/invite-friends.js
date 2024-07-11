@@ -7,9 +7,6 @@ import { DateTime } from "luxon"
 export class InviteFriends extends LitElement {
     static get properties() {
         return {
-            name: { type: String },
-            module: { type: String },
-            skippable: { type: Boolean },
             t: { type: Object },
             invitecode: { type: String },
             loading: { type: Boolean, attribute: false },
@@ -21,9 +18,6 @@ export class InviteFriends extends LitElement {
 
     constructor() {
         super()
-        this.name = ''
-        this.module = ''
-        this.skippable = false
         this.t = {}
 
         this.training = {}

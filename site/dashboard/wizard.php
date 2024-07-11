@@ -126,11 +126,21 @@ class Zume_Training_Wizard extends Zume_Magic_Page
         global $zume_user_profile;
 
         if ( !is_user_logged_in() ) {
-            wp_redirect( zume_login_url( 'login', dt_get_url_path( false, true ) ) );
+            $url = dt_get_url_path();
+
+            if ( str_contains( $url, 'wizard/join-the-community-vision' ) ) {
+                $type = 'register';
+            } else {
+                $type = 'login';
+            }
+
+            wp_redirect( zume_login_url( $type, dt_get_url_path( false, true ) ) );
+            exit;
         }
 
         if ( $this->should_wizard_redirect() ) {
             wp_redirect( zume_dashboard_url() );
+            exit;
         }
         ?>
 
@@ -178,6 +188,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'joined_community' => __( 'Successfully joined community', 'zume' ),
                 'error' => __( 'Something went wrong', 'zume' ),
                 'dashboard' => __( 'Dashboard', 'zume' ),
+                'next' => __( 'Next', 'zume' ),
             ],
             'complete_profile' => [
                 'title' => __( 'Complete your profile', 'zume' ),

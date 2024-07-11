@@ -3,9 +3,6 @@ import { LitElement, html, css } from 'lit';
 export class PublicTrainings extends LitElement {
     static get properties() {
         return {
-            /**
-             * Translation strings
-             */
             t: { type: Object },
             /**
              * Join link
