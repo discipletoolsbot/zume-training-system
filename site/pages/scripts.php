@@ -52,7 +52,7 @@ class Zume_Scripts extends Zume_Magic_Page
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css( $allowed_css );
+        return zume_training_magic_url_base_allowed_css();
     }
 
     public function header_style(){
@@ -124,7 +124,7 @@ class Zume_Scripts extends Zume_Magic_Page
             $this->page_title = esc_html( $training_items[$script_id]['title'] ) ?? ''
 
             ?>
-            <div class="activity__wrapper content">
+            <div class="activity__wrapper activity content">
                 <div class="text-center">
                     <h1><?php echo esc_html( $training_items[$script_id]['title'] ) ?? '' ?></h1>
                     <hr>

@@ -88,10 +88,10 @@ function pieces_content( $postid, $lang, $strings ) {
 
     ?>
 
-    <div class="container-xsm stack-2 | py-2 f-1 | pieces-page content">
+    <div class="container-xsm stack-2 | py-2 f-1 | pieces-page activity content">
 
         <?php if ( ! empty( $image_url ) ) : ?>
-            <img class="hidden" src="<?php echo esc_url( $image_url ) ?>" alt="<?php echo esc_html( $h1_title ) ?>"/>
+            <!-- <img src="<?php echo esc_url( $image_url ) ?>" alt="<?php echo esc_html( $h1_title ) ?>"/> -->
         <?php endif; ?>
 
         <div class="stack-1">
