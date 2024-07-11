@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-07 04:26+0000\n"
+"PO-Revision-Date: 2024-07-11 10:57+0000\n"
 "Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
@@ -345,7 +345,7 @@ msgstr "了解誰是和平的人，以及如何知道自己什麼時後會找到
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr "和平的人"
+msgstr "和平之子"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
@@ -361,7 +361,7 @@ msgstr "門徒知道什麼很重要，但更重要的是他們用他們所知道
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
-msgstr "要忠誠"
+msgstr "要忠心"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
@@ -404,7 +404,7 @@ msgstr "瞭解培訓週期並思考如何應用在門徒培訓上，以致不斷
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
-msgstr "培訓週期"
+msgstr "培訓循環"
 
 #: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
@@ -507,7 +507,7 @@ msgstr ""
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
-msgstr "網路領導力"
+msgstr "領袖聯絡網"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
