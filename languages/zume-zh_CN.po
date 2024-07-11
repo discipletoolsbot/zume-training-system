@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
+"PO-Revision-Date: 2024-07-11 10:57+0000\n"
+"Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -22,9 +21,8 @@ msgid "Training"
 msgstr "训练"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
-#, fuzzy
 msgid "How it Works"
-msgstr "「天国酵母」Zúme运作方式"
+msgstr "如何运作"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -39,16 +37,15 @@ msgstr "常见问题"
 #: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:172
 #: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
+#, fuzzy
 msgid "Dashboard"
 msgstr "工具板"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
 msgstr "我的 Zúme"
 
 #: appearance/style-override/navigation.php:117
-#, fuzzy
 msgid "Contacts"
 msgstr "联络人"
 
@@ -57,12 +54,10 @@ msgid "Groups"
 msgstr "小组"
 
 #: appearance/style-override/navigation.php:129
-#, fuzzy
 msgid "Trainings"
-msgstr "训练"
+msgstr "培训课程"
 
 #: appearance/style-override/navigation.php:135
-#, fuzzy
 msgid "Metrics"
 msgstr "指标"
 
@@ -75,12 +70,10 @@ msgid "Vision"
 msgstr "异象"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
-msgstr "存储"
+msgstr "故事"
 
 #: appearance/style-override/navigation.php:160
-#, fuzzy
 msgid "Global Map"
 msgstr "全球地图"
 
@@ -107,39 +100,36 @@ msgstr "门徒与教会的简单定义"
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
-msgstr "成为门徒﹑又使人成为门徒的精髓意义为何？教会又是什么？"
+msgstr "探索成为门徒、培养门徒以及什么是教会的本质。"
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
-#, fuzzy
 msgid "Disciples and the Church"
 msgstr "门徒与教会"
 
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr "属灵呼吸是聆听并遵行神的吩咐"
+msgstr "属灵呼吸就是聆听并遵行神的吩咐"
 
 #: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
-msgstr "作为跟随主的门徒就是要聆听神的话﹐遵行神的吩咐。"
+msgstr "作为跟随主的门徒就是要聆听神的话且遵行神的吩咐。"
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
-#, fuzzy
 msgid "Hearing and Obeying God"
-msgstr "属灵呼吸是聆听并遵行神的吩咐"
+msgstr "聆听并顺服神"
 
 #: globals.php:1975 globals.php:1977
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
-msgstr "SOAPS香皂读经法"
+msgstr "S.O.A.P.S. 香皂读经法"
 
 #: globals.php:1976 site/pages/follow-jesus.php:216
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
-msgstr "运用这种每日研读圣经的工具﹐更多明白﹑顺服﹑分享神的话。"
+msgstr "日常学习圣经的工具﹑帮助你理解﹑遵行以及分享上帝的话语。"
 
 #: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
@@ -153,40 +143,38 @@ msgid ""
 "A tool for two or three people of the same gender to meet weekly and "
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
-msgstr ""
-"由两位到三位同性别的人组成小组，每个星期聚会一次，借此小组彼此鼓励进步，切磋"
-"互勉。"
+msgstr "由两位到三位同性别的人组成小组，每个星期聚会一次，借此小组彼此鼓励进步、切磋"
+"勉励。"
 
 #: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
-msgstr "「生产者」还是「消费者」？"
+msgstr "生产者跟消费者的生活方式"
 
 #: globals.php:2000 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
-msgstr "学习神所用的四个主要方式﹐使每一位跟随主的门徒更像耶稣。"
+msgstr "你会发现上帝让每天追随的人更像耶稣的四种主要方式。"
 
 #: globals.php:2001
-#, fuzzy
 msgid "Producer not Consumer"
-msgstr "「生产者」还是「消费者」？"
+msgstr "生产者而非消费者"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
-msgstr "如何用一整个钟头来祷告"
+msgstr "如何用一整个小时来祷告"
 
 #: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
-msgstr "体验用一整个钟头来祷告并不会很难呢。"
+msgstr "体会看看用一整个小时来祷告有多简单。"
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
-msgstr "成为人际网络的好管家——百人关注名单"
+msgstr "成为人际关系的好管家——百人关注名单"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
-msgstr "这个简单的工具可以帮助你成为人际网络的好管家"
+msgstr "这个工具可以帮助你成为人际关系的好管家。"
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
@@ -209,7 +197,7 @@ msgstr "属灵的经济学"
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
-msgstr "属神的经济学与属世的经济学有什么不同？神看重那忠心于所托的人。"
+msgstr "了解上帝的经济学与世俗的经济学有何不同？神更看重那忠心于所托的人。"
 
 #: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
@@ -219,14 +207,11 @@ msgstr "如何分享「福音」"
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
-msgstr ""
-"学习如何分享神救赎我们的好消息，这个救赎的故事从人类起源一路迈开，直到世界的"
-"末了。"
+msgstr "学习如何分享神救赎我们的福音，这个救赎的故事从人类起源开始，直到世界结束。"
 
 #: globals.php:2049
-#, fuzzy
 msgid "Sharing God‘s Story"
-msgstr "操练分享你们各人的见证﹙45 分钟﹚"
+msgstr "分享神的故事"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
@@ -237,9 +222,8 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
-msgstr ""
-"耶稣说︰「你们要去﹐使万民作我的门徒﹐奉父﹑子圣灵的名给他们施洗…」我们也可以"
-"操练施洗。"
+msgstr "耶稣说︰「你们要去使万民作我的门徒﹐奉圣父﹑圣子、圣灵的名给他们施洗......」"
+"学习如何实践这句话。"
 
 #: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
@@ -273,14 +257,12 @@ msgstr "异象：「最好的祝福」"
 msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
-msgstr ""
-"这个简单的模式可以装备人成为耶稣的门徒，从一个、两个人，然后成为一个教会—属灵"
-"的家，一直代代倍增延续。"
+msgstr "这个简单的模式可以装备人成为耶稣的门徒，不仅仅是让一个人成为耶稣的门徒，而是"
+"让整个属灵家庭世世代代延续下去。"
 
 #: globals.php:2085
-#, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "最好的祝福"
+msgstr "伟大、更伟大、最伟大的祝福"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -288,7 +270,7 @@ msgstr "「小鸭门徒训练法」- 马上开始带领"
 
 #: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr "小鸭？跟建造门徒有什么关联？"
+msgstr "了解小鸭跟培训门徒有什么关联？"
 
 #: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
@@ -301,7 +283,6 @@ msgstr "小鸭门徒训练法"
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "看见神国还未临到的地方"
 
@@ -309,7 +290,7 @@ msgstr "看见神国还未临到的地方"
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
-msgstr "开始在信心里看见神国还未临到的地方，而那里是神最渴望动工的地方。"
+msgstr "开始在信心里看见神国还未临到的地方，而这些地方是神最渴望动工的地方。"
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
@@ -319,15 +300,12 @@ msgstr "操练如何领圣餐"
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
-msgstr ""
-"领圣餐是又简单又隆重的教会礼仪﹐是为记念主，并庆祝我们与耶稣之间那亲密愈恒的"
-"关系。让我们学习这个礼仪吧。"
+msgstr "领圣餐是庆祝我们与耶稣的亲密联系和持续关系的简单方法。让我们学习如何领圣餐。"
 
 #: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
-#, fuzzy
 msgid "The Lord’s Supper"
 msgstr "领圣餐"
 
@@ -336,13 +314,10 @@ msgid "Prayer Walking and How To Do It"
 msgstr "如何「行走祷告」"
 
 #: globals.php:2132
-#, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
-msgstr ""
-"是一个简单的祷告方式，学习顺服神要我们为他人祷告的命令。 「行走祷告」按字面就"
-"知道，是「一面走路，一面祷告」的意思。"
+msgstr "这是遵守上帝命令为他人祈祷的简单方法。顾名思义，就是一边走一边向上帝祈祷！"
 
 #: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
@@ -353,30 +328,28 @@ msgstr "行走祷告"
 
 #: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
-msgstr "找出「平安之子」"
+msgstr "一个和平的人及如何找到这样的人"
 
 #: globals.php:2144
-#, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
-msgstr "学习分辨谁是「平安之子」，以及如何知道你已经找到这人。"
+msgstr "了解谁是和平的人，以及如何知道自己什么时后会找到一个和平的人。"
 
 #: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr "找出平安之子"
+msgstr "和平之子"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
-msgstr "忠心比知识更重要"
+msgstr "忠诚远胜于知识"
 
 #: globals.php:2156
-#, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
-msgstr "所知所学很重要，但更重要的是，真正的门徒是在「知道」之后会「做」出来。"
+msgstr "门徒知道什么很重要，但更重要的是他们用他们所知道的去做。"
 
 #: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
@@ -386,30 +359,26 @@ msgstr "要忠心"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
-msgstr "BLESS祝福祷告法"
+msgstr "B.L.E.S.S. 祝福祷告法"
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "学习用这五个简单易记的英文字母为人代祷。"
 
 #: globals.php:2169 site/course/course-content.php:1603
-#, fuzzy
 msgid "The B.L.E.S.S. Prayer"
-msgstr "操练 BLESS 祝福祷告法﹙15分钟﹚"
+msgstr "B.L.E.S.S.祷告"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
-#, fuzzy
 msgid "3/3 Group Meeting Pattern"
-msgstr "三合一小组聚会模式"
+msgstr "三合一小组会议模式"
 
 #: globals.php:2180
-#, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
-msgstr ""
-"三合一小组让一群耶稣的跟随者聚在一起祷告、学习、成长与交通，并操练顺服主道、"
+msgstr "三合一小组让一群耶稣的跟随者聚在一起祷告、学习、成长与交通，并操练顺服主道、"
 "分享所学。于此，三合一小组不仅仅是一个小组，也是个微型教会。"
 
 #: globals.php:2181
@@ -418,24 +387,22 @@ msgstr "三合一小组"
 
 #: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
-msgstr "培訓循環不息"
+msgstr "培训循环不息"
 
 #: globals.php:2192 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
-msgstr ""
-"学习循环培训模式如何应用在门徒训练上，以致不断倍增能带领人成为门徒的门徒。"
+msgstr "了解培训周期并思考如何应用在门徒培训上，以致不断倍增能带领人成为门徒。"
 
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
-msgstr "培训循环不息"
+msgstr "培训循环"
 
 #: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
-#, fuzzy
 msgid "Leadership Cells"
 msgstr "带领者培育小组"
 
@@ -444,28 +411,25 @@ msgstr "带领者培育小组"
 msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
-msgstr ""
-"蒙神呼召来带领别人的人，可以在这带领者培育小组里，学习以服侍他人而带出领导"
-"力。"
+msgstr "领导小组是那些蒙神呼召有领导责任的人可以透过这个小组实践服务来发展领导力方式"
+"。"
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
-msgstr "多管齐下的增长"
+msgstr "多管齐下的成长"
 
 #: globals.php:2216
-#, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
-msgstr ""
-"一起学习突破传统直线模式增长的门徒训练方式，而以多管齐下，齐头并进式带动倍数"
-"增长。"
+msgstr "一起学习突破传统直线模式成长的门徒训练方式，而是多管齐下、并进式带动倍数成长"
+"。"
 
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
-msgstr "加快倍增步调"
+msgstr "倍增速度的重要"
 
 #: globals.php:2228 site/pages/follow-jesus.php:285
 msgid ""
@@ -487,9 +451,8 @@ msgid "Always Part of Two Churches"
 msgstr "两个教会并进"
 
 #: globals.php:2240
-#, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "学习如何在两个教会既「去」也「留」同时进行，来促进具体遵守主的使命。"
+msgstr "透过去和留来学习如何遵守耶稣的命令。"
 
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
@@ -527,8 +490,7 @@ msgstr "教练指南"
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
-msgstr ""
-"这是个很棒的工具﹐可以有效评估自己在使人成为倍增门徒的事工上有什么优缺点。"
+msgstr "在培训倍增门徒的方面，你可以使用这个有力的工具来快速地评估自己的优点和弱点。"
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
@@ -541,29 +503,26 @@ msgstr "领袖联络网"
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
-msgstr ""
-"正在操练门徒倍增的教会，学习如何彼此连结、一齐成长，开枝散叶成为属灵的大家"
-"庭。"
+msgstr "了解倍增的教会如何彼此保持联系并学习一起成长，成为属灵的大家庭。"
 
 #: globals.php:2287 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
-msgstr "同侪切磋机制"
+msgstr "同侪指导小组"
 
 #: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
 "This is a group that consists of people who are leading and starting 3/3 "
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
-msgstr ""
-"「同侪切磋机制」就是一群组成、并带领三合一小组聚会的人，遵循三合一聚会形式，"
-"来有效评估在你们负责的区域，所做的属灵成果。"
+msgstr "这是一个由3/3小组组成领导且开始的小组。它也采用三合一聚会的形式，是一个有效评"
+"估上帝在您所在地区动属灵的工的方法。"
 
 #: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
-msgstr "同侪切磋机制"
+msgstr "同侪指导"
 
 #: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
@@ -574,9 +533,8 @@ msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
-msgstr ""
-"领袖联络网可以使用「四个领域诊断图」这个简单的工具，来检视群体当前的状态以及"
-"周遭的神国事工。"
+msgstr "带领者可以使用「四个领域诊断图」这个简单的工具，来检视群体当前的状态以及周遭"
+"的神国事工。"
 
 #: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
@@ -594,29 +552,26 @@ msgstr ""
 "况。"
 
 #: globals.php:2323
-#, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr "三圈福音宣讲"
+msgstr "三圈福音演讲"
 
 #: globals.php:2324
-#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
-msgstr "三圈福音展示法是一种使用可以在纸上画出的简单插图来讲述福音的方式。"
+msgstr "三圈福音示范是一种使用可以画在纸上的简单插图来讲述福音的方式。"
 
 #: globals.php:2325
-#, fuzzy
 msgid "3-Circles"
 msgstr "3 圈"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "问题"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "答案"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -627,19 +582,16 @@ msgid "Close"
 msgstr "关闭"
 
 #: globals.php:7305
-#, fuzzy
 msgid "No Results"
-msgstr "无结果"
+msgstr "没有结果"
 
 #: site/activities/coaching-checklist-host.php:97
-#, fuzzy
 msgid "H.O.S.T."
-msgstr "主持人。"
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
-#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "使用“听到”、“服从”、“分享”、“训练”进行自我评估。"
+msgstr "1. 以听见、顺服、分享、训练方面来进行自我评估。"
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
