@@ -498,9 +498,11 @@ switch ( $request_action ) {
                                                 4: "Strong"
                                             }
                                             const minStrength = 3
+                                            let isSubmitting = false
 
                                             const form = document.getElementById('loginform')
                                             const password = document.getElementById('password');
+                                            const password2 = document.getElementById('password2');
                                             const passwordStrengthError = document.getElementById('password-error-too-weak')
                                             const meter = document.getElementById('password-strength-meter');
 
@@ -520,7 +522,21 @@ switch ( $request_action ) {
                                                 if ( result.score < minStrength ) {
                                                     event.preventDefault()
                                                     passwordStrengthError.style.display = 'block'
+                                                    return
                                                 }
+
+                                                if (password.value !== password2.value) {
+                                                    event.preventDefault()
+                                                    return
+                                                }
+
+                                                if (isSubmitting) {
+                                                    event.preventDefault()
+                                                    return
+                                                }
+
+                                                isSubmitting = true
+
                                             })
 
                                             function getPasswordStrength() {
