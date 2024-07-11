@@ -698,7 +698,7 @@ class Zume_Downloads_Post_Type
 
 
         // slides
-        $fields['ppx_10_session'] = array(
+        $fields['ppt_10_session'] = array(
             'name'        => 'Powerpoint 10 Session',
             'description' => '',
             'type'        => 'link',
@@ -719,7 +719,7 @@ class Zume_Downloads_Post_Type
 //            'default'     => '',
 //            'section'     => 'slides',
 //        );
-        $fields['ppx_20_session'] = array(
+        $fields['ppt_20_session'] = array(
             'name'        => 'Powerpoint 20 Session',
             'description' => '',
             'type'        => 'link',
@@ -740,7 +740,7 @@ class Zume_Downloads_Post_Type
 //            'default'     => '',
 //            'section'     => 'slides',
 //        );
-        $fields['ppx_intensive'] = array(
+        $fields['ppt_intensive'] = array(
             'name'        => 'Powerpoint Intensive',
             'description' => '',
             'type'        => 'link',

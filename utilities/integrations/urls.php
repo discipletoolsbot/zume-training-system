@@ -8,6 +8,7 @@ if ( !defined( 'ABSPATH' ) ) {
 function zume_mirror_url() {
     return 'https://storage.googleapis.com/zume-file-mirror/';
 }
+
 function zume_url( $slug ) {
     $current_lang = zume_current_language();
 
@@ -222,43 +223,22 @@ function zume_about_url() {
     $url = zume_get_posts_translation_url( 'About', $current_lang );
     return $url;
 }
+function zume_download_url( $meta_key, $current_language = false ) {
+    global $wpdb;
+    if ( ! $current_language ) {
+        $current_language = zume_current_language();
+    }
+    $url = '';
 
+    $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT p.ID FROM zume_posts p WHERE p.post_type = 'zume_download' AND p.post_title = 'en'", $current_language ) );
+    if ( empty( $post_id ) ) {
+        return $url;
+    }
+    $file_name = get_post_meta( $post_id, $meta_key, true );
+    if ( empty( $file_name ) ) {
+        return $url;
+    }
 
-
-
-
-
-
-
-/**
- * @remove Deprecated functions below?? maybe?
- */
-function zume_faq_url() {
-    $current_lang = zume_current_language();
-    $url = zume_get_posts_translation_url( 'FAQ', $current_lang );
-    return $url;
+    return zume_mirror_url() . $current_language . '/' . $file_name;
 }
-function zume_profile_url() {
-    $current_lang = zume_current_language();
-    $url = zume_get_posts_translation_url( 'Profile', $current_lang );
-    return $url;
-}
-function zume_three_month_plan_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Three-Month Plan', $current_lang );
-}
-function zume_mobile_app_url() {
-    return zume_url( 'mobile-app' );
-}
-function zume_follow_jesus_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Follow Jesus', $current_lang );
-}
-function zume_overview_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Overview', $current_lang );
-}
-function zume_vision_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Vision', $current_lang );
-}
+
