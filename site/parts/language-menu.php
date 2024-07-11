@@ -25,15 +25,15 @@
                 $url = esc_url( trailingslashit( site_url() ) ) . $item['code'] . '/' . $url_pieces['path'] . $query;
             }
             else if ( $is_v4 ) {
-                $path = $url_pieces['path'];
-                if ( in_array( $path, ['training', 'about', 'resources'] ) ) {
-                    $path = $path . '-' . $item['code'];
+                $requested_path = $url_pieces['path'];
+                if ( in_array( $requested_path, ['training', 'about', 'resources'] ) ) {
+                    $requested_path = $requested_path . '-' . $item['code'];
                 }
-                if ( in_array( $path, ['get-a-coach', 'checkin', 'share', 'login', 'dashboard', 'presenter'] ) ) {
-                    $path = 'training-' . $item['code'];
+                if ( in_array( $requested_path, ['get-a-coach', 'checkin', 'share', 'login', 'dashboard', 'presenter'] ) ) {
+                    $requested_path = 'training-' . $item['code'];
                 }
 
-                $url = 'https://legacy.zume.training/' . $item['code'] . '/' . $path . $query;
+                $url = 'https://legacy.zume.training/' . $item['code'] . '/' . $requested_path . $query;
             } else {
                 continue;
             }
