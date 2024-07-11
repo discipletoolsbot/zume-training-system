@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-10 12:16+0000\n"
+"PO-Revision-Date: 2024-07-10 15:46+0000\n"
 "Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ha_NG/>\n"
@@ -2059,7 +2059,6 @@ msgstr ""
 "abin da aka riga aka basu."
 
 #: site/course/course-content.php:844
-#, fuzzy
 msgid ""
 "What are some differences you see between God’s Spiritual Economy and our "
 "earthly way of getting things done?"
@@ -2079,27 +2078,24 @@ msgstr ""
 "karshen wannan zamani."
 
 #: site/course/course-content.php:931
-#, fuzzy
 msgid "Share the Gospel"
-msgstr "Bishara"
+msgstr "Raba Bishara"
 
 #: site/course/course-content.php:934
-#, fuzzy
 msgid "Break into groups of two or three people."
-msgstr "Ku rabu cikin mutane biyu ko uku daga jinsi ɗaya."
+msgstr "Rarrabu zuwa rukuni na mutane biyu ko uku."
 
 #: site/course/course-content.php:935
-#, fuzzy
 msgid "Take turns telling the Gospel to each other."
-msgstr "Ku rabu cikin mutane biyu ko uku daga jinsi ɗaya."
+msgstr "Ku bi da bi suna gaya wa juna bishara."
 
 #: site/course/course-content.php:959
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
-"Yesu ya ce, \"Ku je ku almajirtar da dukkan al'ummai, ku yi musu BAFTISMA a "
-"cikin sunan Uba da na Da da na Ruhu Mai Tsarki...\""
+"Yesu ya ce, “Ku tafi, ku almajirtar da dukan al’ummai, kuna yi musu baftisma "
+"cikin sunan Uba, da Ɗa, da na Ruhu Mai Tsarki . . ..”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -2114,8 +2110,9 @@ msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
-"Idan Babbar umarni ta kasance ga kowane mai bin Yesu, wannan na nuna kowane "
-"an yarda an yi wa wasu baftisma? Me yasa ko me yasa ba?"
+"Idan Babban Hukunci na kowane mabiyin Yesu ne, hakan yana nufin kowane "
+"mabiyi yana nufin an ƙyale kowane mabiyi ya yi wa wasu baftisma? Me yasa ko "
+"me yasa?"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
@@ -2127,9 +2124,9 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"Idan ba haka ba, to muna karfafa ka ka shirya wannan tun ma kafin kara zama "
-"daya na wannan horon. Gayyato rukunin ku kasance cikin wannan muhimmiyar "
-"ranar da kuka yi bikin kuna cewa \"Ee\" ga Yesu."
+"Idan ba haka ba, to muna ƙarfafa ku ku tsara wannan kafin ma wani zama na "
+"wannan horon. Ka gayyaci rukuninku su kasance cikin wannan muhimmiyar rana "
+"lokacin da kuke bikin cewa “eh” ga Yesu."
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 #, fuzzy
@@ -2183,12 +2180,10 @@ msgid "SESSION 4"
 msgstr "ZAMA NA 4"
 
 #: site/course/course-content.php:1109
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
 msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+"Mu yi addu’a da gode wa Allah da Ya gayyace mu don mu yi wa wasu bishara."
 
 #: site/course/course-content.php:1110
 #, fuzzy
@@ -2203,12 +2198,10 @@ msgstr ""
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
 #: site/course/course-content.php:4077 site/course/course-content.php:4094
 #: site/course/course-content.php:4200 site/course/course-content.php:4235
-#, fuzzy
 msgid "Three-Minute Testimony"
-msgstr "3-Shaidar Minti"
+msgstr "Shaida ta Minti Uku"
 
 #: site/course/course-content.php:1165
-#, fuzzy
 msgid ""
 "As followers of Jesus, we are “witnesses\" for Him, because we “testify” "
 "about the impact Jesus has had on our lives. Your story of your relationship "
@@ -2221,9 +2214,8 @@ msgstr ""
 "iya raba fiye da kai."
 
 #: site/course/course-content.php:1189
-#, fuzzy
 msgid "Practice sharing your testimony"
-msgstr "Aiwatarwa - Raba shaidarka"
+msgstr "Koyi musayar shaidarka"
 
 #: site/course/course-content.php:1192
 #, fuzzy
@@ -2234,24 +2226,20 @@ msgstr ""
 "10)"
 
 #: site/course/course-content.php:1193
-#, fuzzy
 msgid "Break into groups of two to three and practice sharing. (20 min)"
-msgstr ""
-"RAYAR DA SHAWARWARKA - Ka rabu cikin rukuni biyu ko uku kuma ka riqa musayar "
-"shaidarka tare da wasu. (Minti arba'in da biyar)"
+msgstr "A rabu gida biyu zuwa uku kuma kuyi sharing. (minti 20)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
-#, fuzzy
 msgid "Great - Greater - Greatest Blessings"
-msgstr "Mafi girma Albarka"
+msgstr "Mafi Girma - Mafi Girma - Mafi Girma Albarka"
 
 #: site/course/course-content.php:1242
 msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
 msgstr ""
-"Shin wannan tsarin ne da aka koya muku lokacin da kuka fara bin Yesu? Idan "
-"ba haka ba, menene ya bambanta?"
+"Wannan shine misalin da aka koya muku sa’ad da kuka fara bin Yesu? Idan ba "
+"haka ba, me ya bambanta?"
 
 #: site/course/course-content.php:1243
 msgid ""
@@ -2318,7 +2306,7 @@ msgstr ""
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
-msgstr "Me yasa kuke ganin hakan?"
+msgstr "Me yasa kuke tunanin haka?"
 
 #: site/course/course-content.php:1336
 #, fuzzy
@@ -2334,42 +2322,38 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"Jesu yace, \"Ni ne Gurasa rai da ya sauko daga Sama. Kowa ya ci Gurasan nan, "
-"zai rayu har abada. Har ma gurasar da zan bayar naman jikina ne, domin "
-"duniya ta rayu.\""
+"Yesu ya ce, “Ni ne abinci mai rai wanda ya sauko daga sama. Duk wanda ya ci "
+"wannan gurasar, zai rayu har abada. Wannan burodin naman jikina ne, wanda "
+"zan bayar domin rayuwar duniya.”"
 
 #: site/course/course-content.php:1378
-#, fuzzy
 msgid "Celebrate the Lord’s Supper"
-msgstr "Aiwatarwa - Jibin Ubangiji"
+msgstr "Yi bikin Jibin Ubangiji"
 
 #: site/course/course-content.php:1381
-#, fuzzy
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
 msgstr ""
-"Ku ciyar da mintuna goma masu zuwa na bikin Jibin Ubangiji tare da rukunin "
-"ku ta amfani da abin da ya shafi shafi na 15 na Littafin Jagorarku Zúme."
+"Ku ciyar da mintuna 10 masu zuwa don yin bikin Jibin Ubangiji tare da "
+"ƙungiyar ku."
 
 #: site/course/course-content.php:1424
-#, fuzzy
 msgid ""
 "Spend time this week practicing your Three-Minute Testimony, and then share "
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
-"Ku ciyar lokaci a wannan makon kuna aiwatar da Shaidani na Minti 3, sannan "
-"ku raba shi da akalla mutum daya daga cikin jerin 100 din da kuka yiwa alama "
-"a matsayin \"kafiri\" ko \"Ba a sani ba.\""
+"Ku ciyar da lokaci a cikin wannan makon don gwada Shaidar ku ta Minti Uku, "
+"sannan ku raba ta tare da aƙalla mutum ɗaya daga cikin Jerin ku na 100 "
+"waɗanda kuka yiwa alama \"Kafiri\" ko \"Ba a sani ba.\""
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4251
-#, fuzzy
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"Tambayi Allah wanda Ya so ku horar da kayan aikin Shaida na Minti 3. Ku ɓoye "
-"sunan wannan mutumin tare da ƙungiyar kafin ku tafi."
+"Ka tambayi Allah wanda yake so ka horar da kayan aikin Shaida na Minti Uku. "
+"Raba sunan wannan mutumin tare da ƙungiyar kafin ku tafi."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
@@ -2378,40 +2362,34 @@ msgid "SESSION 5"
 msgstr "ZAMA NA 5"
 
 #: site/course/course-content.php:1485
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+"Yi addu'a da gode wa Allah don hanyoyin da yake aiki ta wurin shaidar "
+"mutanensa. Ka gayyaci Ruhunsa Mai Tsarki ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
-#, fuzzy
 msgid "B.L.E.S.S. Prayer"
-msgstr "Yi da B.L.E.S.S. Addu'a (minti goma sha biyar)"
+msgstr "B.L.E.S.S. Addu'a"
 
 #: site/course/course-content.php:1538
-#, fuzzy
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
-"Yin tafiya Walda wata hanya ce mai sauƙi ta yin biyayya ga umarnin Allah na "
-"yin wa wasu addu'a. Abin da ya yi dai dai yake - addu'a ga Allah yayin "
-"tafiya!"
+"Tafiya Addu'a hanya ce mai sauƙi don yin biyayya ga umarnin Allah na yin "
+"addu'a ga wasu. Kuma shi ne kawai abin da yake sauti - yin addu'a ga Allah "
+"yayin tafiya!"
 
 #: site/course/course-content.php:1567
-#, fuzzy
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
 msgstr ""
-"Yin almajirai na iya haɓaka cikin hanzari ta hanyar samo mutum mai aminci, "
-"har a cikin inda mabiyan Yesu kalilan ne da ɗan nisa tsakanin su. Taya zaka "
-"san lokacin da ka sami mutumin zaman lafiya kuma me kake yi lokacin da ka "
-"same su?"
+"Almajirai na iya samun ci gaba da sauri ta wajen samun mutum mai aminci, har "
+"ma a wurin da mabiyan Yesu ba su da yawa."
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -2419,9 +2397,9 @@ msgid ""
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
-"Shin mutumin da ke da \"mummunan suna\" (kamar matar Basamariya ko kuma "
-"aljannun mutum mai mallakar Gadarenes) da gaske ya kasance Mutumin Salama? "
-"Me yasa ko me yasa ba haka ba?"
+"Shin wanda yake da “mummunan suna” (kamar macen Basamariya ko kuma aljanu a "
+"cikin Gadariyawa) zai iya zama Mutum Mai Zaman Lafiya da gaske? Me yasa ko "
+"me yasa?"
 
 #: site/course/course-content.php:1594
 #, fuzzy
@@ -2433,60 +2411,53 @@ msgstr ""
 "ƙaranci (ko a'a) kasancewar Mulki?"
 
 #: site/course/course-content.php:1595
-#, fuzzy
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
-"Wace yanki ko yanki na jama'a kusa da ku da ke alama ba shi da Iittle (ko "
-"a'a) kasancewar Mulkin? Ta yaya Mutumin Salama (wanda yake MAI MAI KYAU, MAI "
-"KYAU, SAN MUTANE DA SHARES) zai iya haɓaka yaduwar Bishara a waccan al'umma?"
+"Ta yaya Mutum Mai Aminci (wanda yake BUDE, MAI BUDURWA, SAN WASU KUMA YA "
+"RABATA) zai hanzarta yaduwar Bishara a cikin wannan al'umma?"
 
 #: site/course/course-content.php:1611
-#, fuzzy
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "Yi da B.L.E.S.S. Addu'a (minti goma sha biyar)"
+msgstr "Yin Karatu a B.L.E.S.S. Addu'a"
 
 #: site/course/course-content.php:1614
-#, fuzzy
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
-"Rage cikin rukuni biyu ko uku da kuma aikatawa B.L.E.S.S. Addu'a. Ana iya "
-"samun tsarin addu'a a cikin Littafin Jagora na Zúme. Yi ƙoƙarin yin addu'a a "
-"wurare biyar na B.L.E.S.S. Addu'a."
+"Ku rabu gida biyu ko uku ku yi addu'a a wurare biyar na B.L.E.S.S. Addu'a "
+"akan juna."
 
 #: site/course/course-content.php:1627
-#, fuzzy
 msgid "Prayer Walking Activity"
-msgstr "Tafiya Sallah"
+msgstr "Ayyukan Tafiya na Sallah"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr ""
-"Ka rabu cikin rukuni biyu ko uku ka fita cikin jama'a ka yi Sallar Isha."
+"Ku rabu gida biyu ko uku ku fita cikin al'umma don yin Tafiya na Sallah."
 
 #: site/course/course-content.php:1639 site/course/course-content.php:4501
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
 msgstr ""
-"Zabar wani yanki na iya zama mai sauqi kamar yin tafiya waje da inda kake, "
-"ko kuma kana iya shirin zuwa wani takamaiman wurin."
+"Zaɓin wuri na iya zama mai sauƙi kamar tafiya a waje daga inda kuke yanzu, "
+"ko kuna iya shirin zuwa wani takamaiman makoma."
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr ""
 "Ku tafi kamar yadda Allah yake jagoranta, kuma kuyi shirin ciyarwa mintuna "
-"60 - 90 akan wannan aiki."
+"sittin - casa'in akan wannan aiki."
 
 #: site/course/course-content.php:1641
-#, fuzzy
 msgid "This session ends with the prayer walking activity."
-msgstr "Taron ya ƙare da aikin tafiya da salla."
+msgstr "Wannan zaman yana ƙarewa da ayyukan tafiya na sallah."
 
 #: site/course/course-content.php:1660
 #, fuzzy
@@ -2521,15 +2492,14 @@ msgid "SESSION 6"
 msgstr "ZAMA NA 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
-#, fuzzy
 msgid ""
 "Pray and thank God for what He did in the last session, ask Him to help when "
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
 msgstr ""
-"Yi addu'a ka gode wa Allah saboda sakamakon, rokon shi ya taimaka lokacin da "
-"wahala ka yi biyayya, ka gayyata Ruhunsa Mai Tsarki zai jagoranci lokacinku "
-"tare."
+"Yi addu'a da gode wa Allah don abin da ya yi a zama na ƙarshe, ku roƙe shi "
+"ya taimake ku idan kuna da wuyar biyayya, kuma ku gayyaci Ruhunsa Mai Tsarki "
+"don ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
 #, fuzzy
@@ -2553,9 +2523,8 @@ msgstr "Kuma za mu ƙara wannan kayan aiki zuwa kayan aikin mu:"
 #: site/course/course-content.php:4778 site/course/course-content.php:4884
 #: site/course/course-content.php:4892 site/course/course-content.php:4899
 #: site/course/course-content.php:4925
-#, fuzzy
 msgid "3/3 Group Meeting"
-msgstr "3/3 Tsarin Taro na Taro"
+msgstr "3/3 Taron Rukuni"
 
 #: site/course/course-content.php:1775
 #, fuzzy
@@ -2601,9 +2570,7 @@ msgstr ""
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr ""
-"Shin ana iya ɗaukar 3ungiyoyi 3/3 a matsayin Coci mai Sauƙi? Me yasa ko me "
-"yasa ba haka ba?"
+msgstr "Za a iya ɗaukar rukunin 3/3 Ikilisiya Mai Sauƙi? Me yasa ko me yasa?"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4793
 #, fuzzy
@@ -2630,19 +2597,17 @@ msgid "SESSION 7"
 msgstr "ZAMA NA 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
-#, fuzzy
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"Yi addu'a ku gode wa Allah saboda jajircewar kungiyar ku bi Yesu da aminci "
-"da kuma gayyato Ruhun Allah."
+"Yi addu'a da gode wa Allah don sadaukarwar ƙungiyar don bin Yesu da aminci "
+"kuma ku gayyaci Ruhu Mai Tsarki na Allah don ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
-#, fuzzy
 msgid "The Training Cycle"
-msgstr "Sake zagayowar horo"
+msgstr "Zagayen Horarwa"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2673,31 +2638,28 @@ msgid "What would it look like to train someone like that?"
 msgstr "Me zai zama kama da horar da wani?"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
-"KYAUTA KYAUTA - Yi amfani da Biyayya a Rukunin karshe, Raya, da Rarraba "
-"kalubale don shiga tare da kowannensu wani."
+"DUBI BAYA - Yi amfani da Biyayya, Horo da Raba ƙalubalen zama na ƙarshe don "
+"shiga tare da juna. (minti talatin)"
 
 #: site/course/course-content.php:2042
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
-"KA DUBI - Yi amfani da Mark 5: 1-20 azaman hanyar karatun gungun ka kuma "
-"amsa tambayoyin 1-4 a yayin Bincike."
+"DUBI – Yi amfani da Markus 5:1-20 a matsayin sashe na karatun ƙungiyarku "
+"kuma ku amsa tambayoyi 1-4 a sashe na Duba Up. (minti talatin)"
 
 #: site/course/course-content.php:2043
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
-"KA Nemi KYAUTA - Yi amfani da tambayoyi na 5, 6, da 7 a sashen Duba Forward "
-"don bunkasa yadda zaku yi biyayya, Horo da Rarrabawa."
+"DUBI GABA - Yi amfani da tambayoyi 5, 6, da 7 a cikin sashin Neman gaba don "
+"haɓaka yadda zaku Biyayya, Horon da Rabawa. (minti talatin)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2784,22 +2746,20 @@ msgid "What would it take to bring them together?"
 msgstr "Me zai iya hadawa tare?"
 
 #: site/course/course-content.php:2257
-#, fuzzy
 msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
 msgstr ""
-"KU KARANTA - Yi amfani da Ayukan Manzanni 2: 42-47 a matsayin wurin karatun "
-"kungiyar ku kuma amsa tambayoyi 1-4."
+"DUBI – Ku yi amfani da Ayyukan Manzanni 2:42-47 sa’ad da rukuninku zai "
+"karanta kuma ku amsa tambayoyi 1-4. (minti talatin)"
 
 #: site/course/course-content.php:2258
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
 msgstr ""
-"KA NISI KYAUTA - Yi amfani da tambayoyi na 5, 6, da 7 don haɓaka yadda zaku "
-"Yi biyayya, Horo da Rarraba."
+"DUBI GABA - Yi amfani da tambayoyi 5, 6, da 7 don haɓaka yadda zaku Biyayya, "
+"Horon da Rabawa. (minti talatin)"
 
 #: site/course/course-content.php:2277
 #, fuzzy
@@ -2812,26 +2772,23 @@ msgid "Tool from this session:"
 msgstr "Kayan aiki daga wannan zaman:"
 
 #: site/course/course-content.php:2298
-#, fuzzy
 msgid ""
 "Select some people from your List of 100 who are already believers. Explain "
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
-"Zaɓi wasu mutane daga Jerin ku na 100 waɗanda suka riga sun yi imani. "
+"Zaɓi wasu mutane daga Jerin ku na dari waɗanda suka riga sun yi imani. "
 "Bayyana musu Ƙungiyoyin Jagoranci kuma duba ko za su yi sha'awar kasancewa "
 "ɗaya."
 
 #: site/course/course-content.php:2299
-#, fuzzy
 msgid ""
 "Pray and ask God who He wants you to share the Leadership Cell tool with "
 "before your group meets again. Challenge them to then share it with someone "
 "else."
 msgstr ""
-"Yi addu'a ku roki Allah wanda yake so ku raba kayan aikin Jagoranci kafin "
-"kungiyarku ta sake haduwa. Raba sunan mutumin da rukunin mutanen kafin ku "
-"tafi."
+"Yi addu'a kuma ku roƙi Allah wanda yake so ku raba kayan aikin Jagoranci "
+"kafin ƙungiyar ku ta sake haduwa. Kalubalanci su sannan su raba shi da wani."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
@@ -2840,41 +2797,38 @@ msgid "SESSION 9"
 msgstr "ZAMA NA 9"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
-#, fuzzy
 msgid ""
 "Pray and thank God that his ways are not our ways and His thoughts are not "
 "our thoughts. Ask Him to give each member of your group the mind of Christ - "
 "always focused on His Father‘s work. Ask the Holy Spirit to lead your time "
 "together and make it the best session yet."
 msgstr ""
-"Addu'a ku godewa Allah cewa hanyoyinsa ba hanyoyin mu bane kuma tunanin sa "
-"ba tunanin mu bane. Nemi Shi ya ba kowane ɗayan ƙungiyar ku hankalin Kristi "
-"— koyaushe ya mai da hankali ga aikin Ubansa. Tambayi Ruhu Mai Tsarki don "
-"jagorantar lokacin ku kuma kuyi shi mafi kyawun zaman tukuna."
+"Mu yi addu’a mu gode wa Allah cewa hanyoyinsa ba hanyoyinmu ba ne, tunaninsa "
+"kuma ba tunaninmu ba ne. Ka roƙe shi ya ba kowane memba na ƙungiyarku "
+"tunanin Kristi - koyaushe yana mai da hankali kan aikin Ubansa. Tambayi Ruhu "
+"Mai Tsarki ya jagoranci lokacinku tare kuma ya sa ya zama mafi kyawun zama "
+"tukuna."
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2769
-#, fuzzy
 msgid "Non-Sequential Growth"
-msgstr "Yi tsammanin Haɓaka Rashin Tsabta"
+msgstr "Ci gaban da ba a jere ba"
 
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
-#, fuzzy
 msgid "Four Fields"
-msgstr "Kayan Filaye Guda Hudu"
+msgstr "Filaye Hudu"
 
 #: site/course/course-content.php:2415
-#, fuzzy
 msgid ""
 "When people think about disciples multiplying, they often think of it as a "
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
-"Idan mutane suna tunanin batun almajirai suna yawaita, galibi suna tunanin "
-"hakan a zaman mataki-mataki-mataki. Matsalar tare da ita ita ce - wannan ba "
-"yadda yake aiki mafi kyau ba!"
+"Lokacin da mutane suke tunanin haɓaka almajirai, galibi suna ɗaukarsa azaman "
+"mataki-mataki tsari. Matsalar ita ce - wannan ba shine yadda yake aiki mafi "
+"kyau ba!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -2890,9 +2844,9 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
-"Mirƙirari al'amura da yawaita cikin sauri da sauri. Pace al'amura saboda "
-"inda duk muna yin rayuwa har abada - kasancewar da ta wuce lokaci - an "
-"ƙaddara ta a cikin kankanin lokaci da muke kira \"rayuwa.\""
+"Ƙirƙirar al'amura da ninka cikin sauri ya fi mahimmanci. Tafiya al'amura "
+"domin inda dukan mu ke ciyar da mu dawwama - wani wanzuwar da ya wuce lokaci "
+"- an ƙaddara a cikin kankanin lokacin da muka kira \"rayuwa.\""
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
@@ -2957,43 +2911,38 @@ msgstr ""
 "zama cikakken ingantattun almajiri."
 
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Ƙimar da kanka ta amfani da layi na 1 kuma yi alama a kan ginshiƙai masu "
-"dacewa a kan Lissafin Koyarwa."
+"Ƙimar da kanka ta amfani da layi na 1 kuma yi alama a kan ginshiƙan da suka "
+"dace a kan Lissafin Koyarwa."
 
 #: site/course/course-content.php:2596
-#, fuzzy
 msgid "Which tools and concepts did you feel you would be able to train well?"
-msgstr "Wadanne kayan aikin Horarwa kuka ji cewa zaku iya samun horo sosai?"
+msgstr "Wadanne kayan aiki da dabaru kuka ji za ku iya horarwa da kyau?"
 
 #: site/course/course-content.php:2597
-#, fuzzy
 msgid "Which tools and concepts did you feel you would struggle to train well?"
-msgstr "Wadanne kayan aikin Horarwa kuka ji cewa zaku iya samun horo sosai?"
+msgstr ""
+"Wadanne kayan aiki da dabaru kuka ji za ku yi gwagwarmaya don horarwa da "
+"kyau?"
 
 #: site/course/course-content.php:2598
-#, fuzzy
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
-"Shin akwai wasu Kayan Aikin Ilmi wanda zaku ƙara ko rage daga Jerin "
-"Binciken? Me yasa?"
+"Shin akwai wasu kayan aiki ko ra'ayoyi da za ku ƙara ko ragewa daga jerin "
+"abubuwan dubawa? Me yasa?"
 
 #: site/course/course-content.php:2610
-#, fuzzy
 msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
-"TATTAUNA - Tabbatar raba sakamakon binciken Koyarwa tare da abokin horo ko "
-"waninsa mashawarci. Idan kuna taimakawa kocin ko jagoranci wani, yi amfani "
-"da wannan kayan aiki don taimaka muku tantance wanne yanki kuke buƙatar "
-"hankalin ku da horo."
+"TUNA - Tabbatar da raba sakamakon Binciken Koyarwar ku tare da abokin horo "
+"ko wani mai ba da shawara."
 
 #: site/course/course-content.php:2611
 #, fuzzy
@@ -3039,15 +2988,14 @@ msgstr ""
 "don su yi bitar yadda aikin yake gudana."
 
 #: site/course/course-content.php:2643
-#, fuzzy
 msgid ""
 "Four Fields is used by a leadership cell to reflect on current efforts and "
 "Kingdom activity around them. It especially helps leaders balance efforts, "
 "so that no field is overlooked."
 msgstr ""
-"Tsarin binciken filaye guda huɗu kayan aiki ne mai sauƙi wanda ƙungiyar "
-"jagoranci za ta yi amfani da ita don tunani a kan matsayin ƙoƙarin yanzu da "
-"ayyukan masarautar da ke kewaye da su."
+"Ƙungiyar jagoranci tana amfani da Filaye huɗu don yin tunani a kan ƙoƙarce-"
+"ƙoƙarce na yanzu da ayyukan Mulki da ke kewaye da su. Musamman yana taimaka "
+"wa shugabanni daidaita yunƙurin, ta yadda ba a yi watsi da filin ba."
 
 #: site/course/course-content.php:2644
 #, fuzzy
@@ -3104,9 +3052,8 @@ msgstr ""
 "aminci da ba su kayan aiki da kuma riƙe su da alhakin haifuwa?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
-#, fuzzy
 msgid "Four Fields Example"
-msgstr "Kayan Filaye Guda Hudu"
+msgstr "Misalin Filaye Hudu"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
 #, fuzzy
@@ -3137,13 +3084,13 @@ msgid "Which Zúme tools could help in which field?"
 msgstr "Wadanne kayan aikin Zúme ne zasu iya taimakawa a wane fanni?"
 
 #: site/course/course-content.php:2716
-#, fuzzy
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
-"Taswirar ƙarni wata hanya ce mai sauƙi don taimakawa jagora a cikin motsi "
-"fahimtar yanayin da ke kewaye da su."
+"Taswirar tsararraki (aka tsara taswira ko taswira taswira) wani kayan aiki "
+"ne mai sauƙi don taimakawa shugabannin cikin motsi su fahimci ci gaban da ke "
+"kewaye da su."
 
 #: site/course/course-content.php:2717
 #, fuzzy
@@ -3159,14 +3106,12 @@ msgstr ""
 "itace babbar hanyar auna lafiya."
 
 #: site/course/course-content.php:2718
-#, fuzzy
 msgid "See the example on the next slide."
-msgstr "Dubi misalin akan faifai na gaba."
+msgstr "Dubi misalin akan nunin faifai na gaba."
 
 #: site/course/course-content.php:2729
-#, fuzzy
 msgid "Generational Mapping Example"
-msgstr "Tsarin Maimaitawar Kasa"
+msgstr "Misalin Taswira na Zamani"
 
 #: site/course/course-content.php:2748
 #, fuzzy
@@ -3180,9 +3125,8 @@ msgid "Which leaders are seeing multiplication?"
 msgstr "Wadanne shugabanni ne ke ganin yawaitar?"
 
 #: site/course/course-content.php:2751
-#, fuzzy
 msgid "Which groups would you expect to multiply next?"
-msgstr "Wanne kuke tsammani zai fi sauƙin ninka kuma me yasa?"
+msgstr "Wadanne kungiyoyi kuke tsammanin za su ninka gaba?"
 
 #: site/course/course-content.php:2752
 #, fuzzy
@@ -3190,9 +3134,8 @@ msgid "Which leaders could help and strengthen other leaders?"
 msgstr "Wadanne shugabanni ne zasu iya taimakawa da karfafa sauran shugabanni?"
 
 #: site/course/course-content.php:2753
-#, fuzzy
 msgid "Do you see a pattern of weak accountability in any of the generations?"
-msgstr "Shin kuna ganin alamar rashin ƙarfi a cikin kowane tsararraki?"
+msgstr "Shin kuna ganin alamar raunin hisabi a cikin kowane tsararraki?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
 #, fuzzy
@@ -3314,33 +3257,29 @@ msgid "Peer Mentoring Group Practice"
 msgstr "Erungiyoyi Na Kula"
 
 #: site/course/course-content.php:2992
-#, fuzzy
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
 msgstr ""
-"KALMAR TAKAITACCEN TALAKAWA - Ya rabu zuwa rukuni biyu ko uku kuma kuyi aiki "
-"ta hanyar tsarin jagoranci na tsara. (Minti Sittin)"
+"Kasu kashi biyu ko uku. Yi amfani da ƙayyadaddun 3/3 da aka tsara na Ƙungiya "
+"Mentoring Group."
 
 #: site/course/course-content.php:2993
-#, fuzzy
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
-"Don gudanar da aiki, zaɓi mutum ɗaya cikin rukunin ku don zama \"mentee\" "
-"don wannan zaman kuma sauran membobin su ɓata lokaci su zama matsayin eraƙan "
-"Masanaita ta wurin aiki ta jerin abubuwan da aka ba da shawara da bayar da "
-"jagora da ƙarfafawa don aikin Mentee."
+"Zaɓi mutum ɗaya a cikin ƙungiyar don zama \"manti\" kuma a sa sauran "
+"membobin suyi aiki ta jerin tambayoyin da aka ba da shawara a matsayin masu "
+"ba da shawara ta tsara."
 
 #: site/course/course-content.php:3014
-#, fuzzy
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
 "A cikin Littafi Mai-Tsarki, Allah ya ce, \"Na san shirin da nake yi muku, "
-"shirin wadata ku, ba don cutar da ku ba, shirin ba ku bege da makoma.\""
+"shirin wadata ku, ba domin in cutar da ku ba, shirin ba ku bege da makoma.\""
 
 #: site/course/course-content.php:3015
 #, fuzzy
@@ -3348,17 +3287,14 @@ msgid "God makes plans, and He expects us to make plans, too."
 msgstr "Allah ya shirya, kuma yana sa ran mu yi shiri, mu ma."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
-#, fuzzy
 msgid ""
 "A Three Month Plan is a tool you can use to help focus your attention and "
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
-"Tsarin Watan Uku kayan aiki ne wanda zaku iya amfani da shi don taimakawa "
-"wajen mai da hankalin ku da ƙoƙarinku kuma a kiyaye su bisa abubuwan da "
-"Allah ya tanadar game da almajirai masu yawa. Ku ciyar da na mintuna 30 masu "
-"zuwa na yin addu'a, ta hanyar karantawa, sannan kuma ku cika alƙawaran da "
-"aka lissafa cikin Watan Uku Tsara."
+"Shirin Wata Uku kayan aiki ne da za ku iya amfani da su don taimakawa wajen "
+"mai da hankalinku da ƙoƙarinku kuma ku sa su daidaita da abubuwan da Allah "
+"ya ba da fifiko don almajirtar da su da yawa."
 
 #: site/course/course-content.php:3017
 #, fuzzy
@@ -3370,36 +3306,32 @@ msgstr ""
 "shawarar amfani da kayan aikin kan layi."
 
 #: site/course/course-content.php:3030
-#, fuzzy
 msgid "Make your Three Month Plan"
-msgstr "Tsarin Watanni Uku"
+msgstr "Yi Shirin Watanni Uku"
 
 #: site/course/course-content.php:3032
-#, fuzzy
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
 "Karanta - Duba lambar QR. Ba dole ba ne ka ƙaddamar da kowane abu, a'a, an "
-"yi nufin su ne don faɗakarwa ga shirinka. (minti 5)"
+"yi nufin su ne don faɗakarwa ga shirinka. (minti biyar)"
 
 #: site/course/course-content.php:3033
-#, fuzzy
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
-"A kalla aƙalla minti 10 don yin shuru kamar yadda zai yiwu ka saurara da "
-"kyau ga abin da Allah ya ce da abin da Ya zaɓa. Yi ƙoƙarin jin muryarsa."
+"Saurara - Ɗauki lokaci don yin shiru kamar yadda zai yiwu kuma ku saurari "
+"abin da Allah ya zaɓa ya bayyana. (minti goma)"
 
 #: site/course/course-content.php:3034
-#, fuzzy
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
-"Yi rikodin Shirinku - Rubuta alkawuran akan takarda ko amfani da kayan aikin "
-"kan layi don adana amsoshinku. (minti 15)"
+"(Yi rikodin Shirinku - Rubuta alkawuran akan takarda ko amfani da kayan "
+"aikin kan layi don adana amsoshinku. (minti goma sha biyar"
 
 #: site/course/course-content.php:3040
 #, fuzzy
@@ -3441,11 +3373,8 @@ msgstr ""
 "ba su kayan aiki don raba shi da wani."
 
 #: site/course/course-content.php:3258
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+msgstr "Tambayi Ruhu Mai Tsarki na Allah ya jagoranci lokacinku, tare."
 
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
@@ -3466,13 +3395,10 @@ msgstr ""
 "don yin biyayya ga abin da ya faɗa."
 
 #: site/course/course-content.php:3440
-#, fuzzy
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
-msgstr ""
-"Nemo abokin tarayya da ake ba da lissafi (jinsi ɗaya) kuma fara saduwa da su "
-"a kowane mako."
+msgstr "Nemo abokin tarayya (jinsi ɗaya) kuma fara saduwa da su a kowane mako."
 
 #: site/course/course-content.php:3441
 #, fuzzy
@@ -3485,13 +3411,12 @@ msgstr ""
 "haka."
 
 #: site/course/course-content.php:3501
-#, fuzzy
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
 msgstr ""
-"Yi addu'a kuma gode wa Allah saboda sakamakon kuma kirawo da Ruhu Mai Tsarki "
-"don jagorantar lokacin ku tare."
+"Yi addu'a kuma mu gode wa Allah da yake sa mu zama kamar Yesu. Ka gayyaci "
+"Ruhu Mai Tsarki ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
 #, fuzzy
@@ -3540,13 +3465,12 @@ msgstr ""
 "awa ɗaya a wani lokaci a wannan makon."
 
 #: site/course/course-content.php:3713
-#, fuzzy
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
-"Ka raba zagayowar sallah ga wanda Ubangiji ya umarce ka. Kalubalanci su su "
-"raba shi da wasu kuma."
+"Raba zagayowar sallah ga wanda Ubangiji ya umarce ku. Kalubalanci su su raba "
+"shi da wasu kuma."
 
 #: site/course/course-content.php:3839
 #, fuzzy
@@ -3633,7 +3557,6 @@ msgstr ""
 "A cikin wannan zaman, za mu ƙara waɗannan kayan aikin zuwa kayan aikin mu:"
 
 #: site/course/course-content.php:4109
-#, fuzzy
 msgid ""
 "If you know anyone who follows Jesus but has not been baptized, challenge "
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
@@ -3669,13 +3592,11 @@ msgid "Share Your Testimony"
 msgstr "Shirya Shaidarka ta Minti uku"
 
 #: site/course/course-content.php:4215
-#, fuzzy
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
-"RAYAR DA SHAWARWARKA - Ka rabu cikin rukuni biyu ko uku kuma ka riqa musayar "
-"shaidarka tare da wasu. (Minti arba'in da biyar)"
+"Rarraba ƙungiyoyi biyu cikin uku kuma ku gwada raba Shaidar ku ta Minti Uku."
 
 #: site/course/course-content.php:4216
 #, fuzzy
@@ -3790,7 +3711,6 @@ msgid "SESSION 13"
 msgstr "ZAMA NA 13"
 
 #: site/course/course-content.php:4700
-#, fuzzy
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
@@ -3800,48 +3720,43 @@ msgstr ""
 "kake koya."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
-#, fuzzy
 msgid "SESSION 14"
 msgstr "ZAMA NA 14"
 
 #: site/course/course-content.php:4902
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
-"KYAUTA KYAUTA - Yi amfani da Biyayya a Rukunin karshe, Raya, da Rarraba "
-"kalubale don shiga tare da kowannensu wani."
+"DUBI BAYA - Yi amfani da Biyayya, Horo da Raba ƙalubalen zama na ƙarshe don "
+"shiga tare da juna. (minti goma sha biyar)"
 
 #: site/course/course-content.php:4903
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
 msgstr ""
-"KA DUBI - Yi amfani da Mark 5: 1-20 azaman hanyar karatun gungun ka kuma "
-"amsa tambayoyin 1-4 a yayin Bincike."
+"DUBI – Yi amfani da Markus 5:1-20 a matsayin sashe na karatun ƙungiyarku "
+"kuma ku amsa tambayoyi 1-4 a sashe na Duba Up. (minti goma sha biyar)"
 
 #: site/course/course-content.php:4904
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
-"KA Nemi KYAUTA - Yi amfani da tambayoyi na 5, 6, da 7 a sashen Duba Forward "
-"don bunkasa yadda zaku yi biyayya, Horo da Rarrabawa."
+"DUBI GABA - Yi amfani da tambayoyi 5, 6, da 7 a cikin sashin Neman gaba don "
+"haɓaka yadda zaku Biyayya, Horon da Rabawa. (minti goma sha biyar)"
 
 #: site/course/course-content.php:4940
-#, fuzzy
 msgid ""
 "Pray and ask God if he wants you to start a 3/3 Group. If He does, look over "
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
 "Yi addu'a kuma ka roki Allah idan yana so ka kafa Group 3/3. Idan ya aikata, "
-"duba jerin sunayen ku guda 100 kuma ku roƙi Allah wanda ya kamata ku gayyace "
-"ku. Sannan a gayyace su a wannan makon kuma a dogara ga Allah ya gina "
-"kungiyar."
+"duba jerin sunayen ku guda dari kuma ku roƙi Allah wanda ya kamata ku "
+"gayyace ku. Sannan a gayyace su a wannan makon kuma a dogara ga Allah ya "
+"gina kungiyar."
 
 #: site/course/course-content.php:4941
 #, fuzzy

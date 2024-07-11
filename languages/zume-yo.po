@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-10 12:16+0000\n"
+"PO-Revision-Date: 2024-07-10 15:46+0000\n"
 "Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
 "Language-Team: Yoruba <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/yo/>\n"
@@ -986,15 +986,14 @@ msgstr "Njẹ akeko ko mọ, aimọ, tabi agbọye ohun elo naa?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr "Njẹ Mentee faramọ pẹlu ṣugbọn ko ni idaniloju nipa ohun elo naa?"
+msgstr "Njẹ akeko faramọ pẹlu ṣugbọn ko ni idaniloju nipa ohun elo naa?"
 
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
-"Njẹ Mentee loye ohun elo ati pe o ni anfani lati kọ awọn ipilẹ ti ohun elo "
+"Njẹ akeko loye ohun elo ati pe o ni anfani lati kọ awọn ipilẹ ti ohun elo "
 "naa?"
 
 #: site/activities/coaching-checklist.php:275
@@ -1004,9 +1003,8 @@ msgstr "Tio ba ni igboya to, o le ko awon eroja na"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Disciple"
-msgstr "Omo eyin ni Duck"
+msgstr "omo ehin"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -1024,17 +1022,15 @@ msgstr "Aimọ"
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
 #, fuzzy
 msgid "3-Month Plan"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: site/activities/three-month-plan.php:67
-#, fuzzy
 msgid "Switch to Printable Version"
-msgstr "Yipada si Printable Version"
+msgstr "Yipada si eyi ti ale te jade"
 
 #: site/activities/three-month-plan.php:80
-#, fuzzy
 msgid "Scripts are off"
-msgstr "Mimo"
+msgstr "ati pa awon iwe afowoko"
 
 #: site/activities/three-month-plan.php:81
 #, fuzzy
@@ -1048,7 +1044,7 @@ msgstr ""
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
 msgid "Save"
-msgstr "Fi"
+msgstr "Fipamo"
 
 #: site/activities/three-month-plan.php:93
 #, fuzzy
@@ -1062,19 +1058,22 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"Jesu wi pe, “Iwọ yoo gba agbara nigbati Ẹmi Mimọ ba ba le yin. Ẹnyin o si jẹ "
+"Jesu wi pe, “Iwọ yoo gba agbara nigbati Ẹmi Mimọ ba ba le o. Ẹnyin o si jẹ "
 "ẹlẹri mi, yoo sọ fun awọn eniyan nipa mi kaakiri - ni Jerusalẹmu, ni gbogbo "
 "Judea, ati ni Samaria, ati si opin ilẹ aye. ”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
-#, fuzzy
 msgid ""
 "There’s no one “best way” to tell God’s story (also called the gospel), "
 "because the best way will depend on who you’re sharing with. Every disciple "
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
-msgstr "Kosi ona miran lati so itan."
+msgstr ""
+"Kosi ona miran lati so itan olorun (ti a tun pe ni ihinrere), nitori ona to "
+"darajulo yoo da le lori eni ti o n sofun. ki gbogbo omo ehin ko bi o se le "
+"so itan olorun ni ona to je otito si iwemimo ati sopo pelu awon eniyan ti o "
+"pin fun."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:22
 #: site/course/_strings-3-circle-gospel-presentation.php:60
@@ -1097,32 +1096,32 @@ msgstr "SALAYE"
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:196
-#, fuzzy
 msgid "(10 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju (mewa) 10"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:27
 #: site/course/course-content.php:873
-#, fuzzy
 msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
-msgstr "Kilo wa si okan re ti o ba gburo olohun, eri ati itan."
+msgstr ""
+"Kilo wa si okan re nigba ti o ba gbo ase olorun lati je olujeri re ati ki o "
+"so itan re?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:874
-#, fuzzy
 msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
-msgstr "Kini idi ti jesu fi yan arinrin eniyan dipo iroyin ayo."
+msgstr ""
+"Kini idi ti o ro pe jesu yan awon eniyan lasan dipo awon eniyan miran lati "
+"pin ihinrere re ?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
-#, fuzzy
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
-msgstr "Kilo maje itura ninu gbo itan olohun"
+msgstr "Kinni yoo gba o lati pin oro olorun ninu itura?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:38
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1144,16 +1143,15 @@ msgstr "WO"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
-#, fuzzy
 msgid "(5 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju marun (5)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:42
 #: site/course/course-content.php:800 site/course/course-content.php:851
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3805 site/course/course-content.php:3824
 msgid "The Gospel"
-msgstr "Awon Iyinrere"
+msgstr "ihinrere na"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 #, fuzzy
@@ -1167,7 +1165,7 @@ msgstr ""
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
 msgid "What do you learn about mankind from this story?"
-msgstr "Kini o ko nipa iran eniyan ninu itan yi? "
+msgstr "Kini o ko nipa iran eniyan ninu itan yi?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:917
@@ -1176,11 +1174,10 @@ msgstr "Kkilo ko nipa Olohun?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:918
-#, fuzzy
 msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
-msgstr "Se o ro boya yio rorun lati pin itan Olohn?"
+msgstr "Se o ro pe yoo rorun tabi le lati pin itan Olohn nipa siso itan bayi?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:78
 #: site/course/_strings-3-circle-gospel-presentation.php:103
@@ -1194,24 +1191,20 @@ msgstr "Se o ro boya yio rorun lati pin itan Olohn?"
 #: site/course/course-content.php:3671 site/course/course-content.php:3941
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
-#, fuzzy
 msgid "ACTIVITY"
-msgstr "IṢẸ"
+msgstr "asayan IṢẸ-sise"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
-#, fuzzy
 msgid "Scan the QR code or find a piece of paper."
-msgstr "Ṣayẹwo koodu QR tabi wa nkan ti iwe kan."
+msgstr "Ṣayẹwo koodu QR tabi wa iwe kekere kan."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#, fuzzy
 msgid "Select a person from your list of 100."
-msgstr "Seda akojo re "
+msgstr "yan eniyan kan ninu akojo ogorun (100) eniyan re"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
-#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
@@ -1220,7 +1213,6 @@ msgstr ""
 "eniyan yii nilo fun ọkọọkan awọn irinṣẹ ati awọn imọran?”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
-#, fuzzy
 msgid "Check off the checklist."
 msgstr "Ṣayẹwo pa akojọ ayẹwo."
 
@@ -1236,12 +1228,10 @@ msgstr "Ṣayẹwo pa akojọ ayẹwo."
 #: site/course/course-content.php:2735 site/course/course-content.php:3000
 #: site/course/course-content.php:3682 site/course/course-content.php:3954
 #: site/course/course-content.php:4508 site/course/course-content.php:4910
-#, fuzzy
 msgid "Activity Resource"
-msgstr "Awon orisun"
+msgstr "awọn oluşewadi aṣayan iṣẹ-ṣiṣe"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
-#, fuzzy
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
@@ -1250,98 +1240,79 @@ msgstr ""
 "Iṣayẹwo Ikẹkọ."
 
 #: site/course/course-builder.php:194
-#, fuzzy
 msgid "(1 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju kan (1)"
 
 #: site/course/course-builder.php:197
-#, fuzzy
 msgid "(15 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju medogun (15)"
 
 #: site/course/course-builder.php:198
-#, fuzzy
 msgid "(20 min)"
-msgstr "iṣẹju 20"
+msgstr "iṣẹju ogun (20)"
 
 #: site/course/course-builder.php:199
-#, fuzzy
 msgid "(25 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju aarundinlogbon (25)"
 
 #: site/course/course-builder.php:200
-#, fuzzy
 msgid "(30 min)"
-msgstr "Iṣẹju 30"
+msgstr "Iṣẹju ogbon (30)"
 
 #: site/course/course-builder.php:201
-#, fuzzy
 msgid "(35 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju marundinlogoji (35)"
 
 #: site/course/course-builder.php:202
-#, fuzzy
 msgid "(40 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju ogoji"
 
 #: site/course/course-builder.php:203
-#, fuzzy
 msgid "(45 min)"
-msgstr "iṣẹju 45 “or” iṣẹju ogoji marun"
+msgstr "iṣẹju marundiladota"
 
 #: site/course/course-builder.php:204
-#, fuzzy
 msgid "(50 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju adota"
 
 #: site/course/course-builder.php:205
-#, fuzzy
 msgid "(55 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju marundinlogota"
 
 #: site/course/course-builder.php:206
-#, fuzzy
 msgid "(60 min)"
-msgstr "iṣẹju 60 “or” iṣẹju ọgọta"
+msgstr "iṣẹju ogota"
 
 #: site/course/course-builder.php:207
-#, fuzzy
 msgid "(65 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju marundinladorin"
 
 #: site/course/course-builder.php:208
-#, fuzzy
 msgid "(70 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju adorin"
 
 #: site/course/course-builder.php:209
-#, fuzzy
 msgid "(75 min)"
-msgstr "iṣẹju 75"
+msgstr "iṣẹju marundinlogorin"
 
 #: site/course/course-builder.php:210
-#, fuzzy
 msgid "(80 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju ogorin"
 
 #: site/course/course-builder.php:211
-#, fuzzy
 msgid "(85 min)"
-msgstr "Iṣẹju 5 “or” Iṣẹju marun"
+msgstr "Iṣẹju marundiladorun"
 
 #: site/course/course-builder.php:212
-#, fuzzy
 msgid "(90 min)"
-msgstr "iṣẹju 10"
+msgstr "iṣẹju adorun"
 
 #: site/course/course-builder.php:213
-#, fuzzy
 msgid "(60 - 90 min)"
-msgstr "iṣẹju 90"
+msgstr "iṣẹju ogota - adorun"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
-#, fuzzy
 msgid "SESSION 1"
 msgstr "IKOKO 1"
 
@@ -1401,9 +1372,8 @@ msgstr "WOLE SINU"
 #: site/course/course-content.php:5743 site/course/course-content.php:5794
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
-#, fuzzy
 msgid "Have all of the participants and facilitator check-in."
-msgstr "Ṣe gbogbo awọn olukopa ati oluṣeto wọle."
+msgstr "je ki gbogbo awọn alabase ati oluṣeto wọle-sinu."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1423,9 +1393,8 @@ msgstr "Ṣe gbogbo awọn olukopa ati oluṣeto wọle."
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
-#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr "Tabi zume.training/checkin ati lo koodu:"
+msgstr "Tabi idanileko.zume/wolewo ati lo koodu:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1451,7 +1420,9 @@ msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
-msgstr "Bere pelu adua, emi ijinle pelu irapada lai si emi mimo."
+msgstr ""
+"Bere pelu adura, emi ijinle pelu irapada ko see se lai si emi mimo. gba "
+"akoko bi egbe lati pe e ko wa se itosona fun o ninu asiko yi."
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1476,23 +1447,20 @@ msgstr "AKOPO"
 #: site/course/course-content.php:3801 site/course/course-content.php:4351
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
-#, fuzzy
 msgid "In this session, we will hear and discuss these concepts:"
 msgstr "Ni igba yii, a yoo gbọ ati jiroro awọn imọran wọnyi:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
-#, fuzzy
 msgid "Simple Definition of Disciple & Church"
 msgstr "Itumọ ti o rọrun ti ọmọ ẹ̀yìn ati Ijo"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
-msgstr "Ee Mi Mimis"
+msgstr "mimi eemi mimo."
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
-#, fuzzy
 msgid "And we will add these tools to our toolkit:"
 msgstr "Ati pe a yoo ṣafikun awọn irinṣẹ wọnyi si ohun elo irinṣẹ wa:"
 
@@ -1501,26 +1469,24 @@ msgstr "Ati pe a yoo ṣafikun awọn irinṣẹ wọnyi si ohun elo irinṣẹ 
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
 #: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "Ka Bibeli"
+msgstr "Ka Bibeli S.O.A.P.S"
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Iwọ yoo wo bi Ọlọrun ṣe nlo awọn eniyan lasan n ṣe awọn ohun ti o rọrun lati "
-"ni ipa nla."
+"Ọlọrun nlo awọn eniyan lasan lati ṣe awọn ohun ti o rọrun lati ni ipa nla."
 
 #: site/course/course-content.php:136
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
-"Ti jesu ba pinnu pe ki awon omo leyin oun gboran. kini idi ti o fi ni awon "
-"omo leyin"
+"Ti jesu ba pinnu pe ki awon omo leyin ohun gbo ohun. kini idi ti eyo kekere "
+"fi je omo eyin."
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr "Ti o ba ro nipa ile ijosin kan. kilo wa si o lokan"
+msgstr "Ti o ba ronu nipa ile ijosin kan. kilo wa si o lokan"
 
 #: site/course/course-content.php:180
 #, fuzzy
@@ -1534,33 +1500,34 @@ msgid "Which one do you think would be easier to multiply and why?"
 msgstr "Ewo lo ro pe o rorun ju lati sodi pupo ati pe kini idi"
 
 #: site/course/course-content.php:199
-#, fuzzy
 msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
-msgstr "An min sinu, An min sita, A wa laye, Bee na ni Emi Mimi"
+msgstr ""
+"mimi eemi emi mimo, A mi si inu, A mi si ita, a wa laye. bee noni gbigbo ati "
+"sise ife olorun se ri."
 
 #: site/course/course-content.php:225
-#, fuzzy
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr "Kini awon ibara eni soro lati  ko eko ati lati gbo ohun olohun"
+msgstr "Kinni idi ti o fi se pataki lati gbo ati mo ohun olorun?"
 
 #: site/course/course-content.php:226
 msgid ""
 "Is hearing and responding to the Lord really like breathing? Why or why not?"
-msgstr "Ie gbigbo ati idahun si oro olohun je gege bi mimi. kini idi"
+msgstr "se gbigbo ati didahun si oluwa jo bi eemi mimi? kilode tabi"
 
 #: site/course/course-content.php:244
 msgid ""
 "Hearing from God regularly is a key element in our personal relationship "
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
-msgstr "Gbigbo oro Olohun ni gbogbo igba je kokoro ninu ibasepo pelu re"
+msgstr ""
+"Gbigbo lati odo Olorun nigba gbogbo je ohun pataki ninu ibasepo wa pelu re, "
+"ati ninu agbara wa lati segboran si ohun gbogbo ti o n se lagbegbe wa."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
-#, fuzzy
 msgid "Practice S.O.A.P.S."
-msgstr "Iwa S.O.A.P.S."
+msgstr "Igbaradi S.O.A.P.S."
 
 #: site/course/course-content.php:274
 #, fuzzy
