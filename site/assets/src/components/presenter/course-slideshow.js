@@ -151,7 +151,7 @@ export class CourseSlideshow extends LitElement {
 
     setSlide(sectionIndex, sendEvent = true) {
         const slide = this.sections[sectionIndex]
-        if (sendEvent) {
+        if (sendEvent && slide) {
             this.dispatchEvent(new CustomEvent('set-slide', { detail: { key: slide.key } }))
         }
     }
