@@ -213,6 +213,20 @@ class Zume_System_CTA_API
                 'content_template' => 'celebration',
             ],
             [
+                'stages' => [1, 2, 3, 4, 5, 6],
+                'required_keys' => ['system_join_community'],
+                'disable_keys' => ['system_celebrated_join_community'],
+                'key' => 'system_celebrated_join_community',
+                'type' => 'system',
+                'subtype' => 'celebrated_join_community',
+                'content' => [
+                    'title' => __( 'Joined Community', 'zume' ),
+                    'description' => __( 'Congratulations', 'zume' ),
+                    'image_url' => esc_url_raw( plugin_dir_url( __DIR__ ) . '../site/assets/images/thumbs-up.svg' ),
+                ],
+                'content_template' => 'celebration',
+            ],
+            [
                 'stages' => [1],
                 'required_keys' => [],
                 'disable_keys' => ['system_plan_created'],
