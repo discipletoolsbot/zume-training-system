@@ -25,7 +25,15 @@
                 $url = esc_url( trailingslashit( site_url() ) ) . $item['code'] . '/' . $url_pieces['path'] . $query;
             }
             else if ( $is_v4 ) {
-                $url = 'https://legacy.zume.training/' . $item['code'] . '/' . $url_pieces['path'] . $query;
+                $path = $url_pieces['path'];
+                if ( in_array( $path, ['training', 'about', 'resources'] ) ) {
+                    $path = $path . '-' . $item['code'];
+                }
+                if ( in_array( $path, ['get-a-coach', 'checkin', 'share', 'login', 'dashboard', 'presenter'] ) ) {
+                    $path = 'training-' . $item['code'];
+                }
+
+                $url = 'https://legacy.zume.training/' . $item['code'] . '/' . $path . $query;
             } else {
                 continue;
             }
