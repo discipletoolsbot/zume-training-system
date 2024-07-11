@@ -20,6 +20,7 @@ export const zumeAttachObservers = () => {
         const transitionDuration = '200'
 
         if (open) {
+            node.style.display = 'block'
             node.style.height = height + 'px'
             node.style.transitionDuration = transitionDuration + 'ms'
             node.dataset.state = 'opening'
@@ -39,6 +40,7 @@ export const zumeAttachObservers = () => {
             }, 10)
             setTimeout(() => {
                 node.dataset.state = 'closed'
+                node.style.display = 'none'
             }, transitionDuration);
         }
 
