@@ -611,9 +611,9 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                     $plans[$connection['post_id']][$connection['meta_key']] = [
                         'timestamp' => $connection['meta_value'],
                         // phpcs:ignore
-                        'date' => date( 'Y-m-d', $connection['meta_value'] ),
+                        'date' => gmdate( 'Y-m-d', $connection['meta_value'] ),
                         // phpcs:ignore
-                        'date_formatted' => date( 'M j, Y', $connection['meta_value'] ),
+                        'date_formatted' => gmdate( 'M j, Y', $connection['meta_value'] ),
                         'completed' => in_array( $connection['meta_key'], $log_subtypes ),
                     ];
                 } else {
@@ -5905,7 +5905,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                     'answer' => $params['answer'] ?? '',
                 ]),
                 // phpcs:ignore
-                'date' => $params['date'] ?? date( 'Y-m-d H:i:s' ),
+                'date' => $params['date'] ?? gmdate( 'Y-m-d H:i:s' ),
                 'category' => $params['category'] ?? 'custom',
             ];
 
