@@ -96,7 +96,7 @@ class Zume_Translation_Endpoints
         }
 
 //        $log['author'] = $this->user->display_name;
-//        $log['time'] = date("n-j (g:i a)", strtotime($log['timestamp']));
+//        $log['time'] = gmdate("n-j (g:i a)", strtotime($log['timestamp']));
 //        $log['color'] = 'green';
 //
 //        return $log;
