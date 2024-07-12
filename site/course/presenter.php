@@ -120,56 +120,27 @@ class Zume_Training_Presenter extends Zume_Magic_Page
 
             <noscript>
 
-                <div class="cover-page container-xsm">
-                    <div class="center">
+                    <div class="center container-md">
                         <div class="stack">
                             <h1 class="text-center"><?php echo esc_html__( 'Course Presenter', 'zume' ) ?></h1>
-
                             <?php require plugin_dir_path( __DIR__ ) . 'parts/noscript.php' ?>
-
-                            <?php $languages = zume_feature_flag( 'course_slides_download' ); ?>
-                            <?php $any_downloads_available = false ?>
-                            <?php
-                            foreach ( $languages as $download_available ) {
-                                if ( $download_available ) {
-                                    $any_downloads_available = true;
-                                    break;
-                                }
-                            }
-                            ?>
-                            <?php if ( $any_downloads_available ) : ?>
-                                <p><?php echo esc_html__( 'Download the offline slides here', 'zume' ) ?></p>
-                                <ul role="list">
-                                <?php foreach ( $languages as $language_code => $download_available ) {
-                                    if ( !$download_available ) {
-                                        continue;
-                                    }
-                                    $language_details = isset( $zume_languages_by_code[$language_code] ) ? $zume_languages_by_code[$language_code] : null;
-                                    if ( empty( $language_details ) ) {
-                                        continue;
-                                    }
-
-                                    /* TODO: get the correct link for the slide download for this language code */
-                                    ?>
-                                    <li><a href="#"><?php echo esc_html( $language_details['name'] ) ?></a></li>
-                                <?php } ?>
-                                </ul>
-                            <?php endif; ?>
-                            <div class="stack">
-                                <h3><?php echo esc_html__( 'Links', 'zume' ) ?></h3>
-                                <div class="cluster">
-                                    <a href="<?php echo esc_url( zume_home_url() ) ?>"><?php echo esc_html__( 'Home', 'zume' ) ?></a>
-                                    <?php if ( is_user_logged_in() ) : ?>
-                                        <a href="<?php echo esc_url( zume_dashboard_url() ) ?>"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
-                                    <?php endif; ?>
-                                    <a href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
-                                    <a href="<?php echo esc_url( zume_course_url() ) ?>"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
-                                    <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                </div>
+
+                    <?php include( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'parts/download-slides.php' ) ?>
+
+                    <div class="stack container-xsm pb-5">
+                        <h3><?php echo esc_html__( 'Links', 'zume' ) ?></h3>
+                        <div class="cluster">
+                            <a href="<?php echo esc_url( zume_home_url() ) ?>"><?php echo esc_html__( 'Home', 'zume' ) ?></a>
+                            <?php if ( is_user_logged_in() ) : ?>
+                                <a href="<?php echo esc_url( zume_dashboard_url() ) ?>"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                            <?php endif; ?>
+                            <a href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_course_url() ) ?>"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
+                        </div>
+                    </div>
 
             </noscript>
 
