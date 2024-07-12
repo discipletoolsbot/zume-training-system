@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-11 10:57+0000\n"
-"Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
+"PO-Revision-Date: 2024-07-12 06:34+0000\n"
+"Last-Translator: Jack Wu <jack.wu@tast.com.tw>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -37,9 +37,8 @@ msgstr "常見問題"
 #: site/dashboard/checkin-dashboard.php:170 site/dashboard/wizard.php:172
 #: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
-#, fuzzy
 msgid "Dashboard"
-msgstr "工具板"
+msgstr "動態板"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
@@ -904,7 +903,7 @@ msgstr "學員決定"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "1. 學員是否不知道、不熟悉或誤解了該工具？請在紅色欄位底下打勾。"
+msgstr "1. 學員是否不知道、不熟悉或誤解了該工具？"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
@@ -929,13 +928,12 @@ msgstr "門徒"
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
 msgid "Unbeliever"
-msgstr "不信者"
+msgstr "未信者"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Unknown"
-msgstr "未知"
+msgstr "不知"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
@@ -1106,7 +1104,7 @@ msgstr "掃QR Code 或找一張紙。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 msgid "Select a person from your list of 100."
-msgstr "每人擬出自己的「百人關注名單」"
+msgstr "從「百人關注名單」選出一人"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid ""
@@ -1214,7 +1212,7 @@ msgstr "（60 - 90 分鐘）"
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
 msgid "SESSION 1"
-msgstr "第一節"
+msgstr "第一堂課"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1252,7 +1250,7 @@ msgstr "第一節"
 #: site/course/course-content.php:5884 site/course/course-content.php:5889
 #: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
-msgstr "看看做的如何？"
+msgstr "簽到"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -1579,7 +1577,7 @@ msgstr ""
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
-msgstr "第二節"
+msgstr "第二堂課"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
@@ -1834,7 +1832,7 @@ msgstr "Zúme 是一個為那些希望看到門徒培訓運動的人提供的實
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
 msgid "SESSION 3"
-msgstr "第三堂"
+msgstr "第三堂課"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 msgid ""
@@ -1922,7 +1920,7 @@ msgstr ""
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
-msgstr "心靈經濟"
+msgstr "屬靈經濟學"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
 msgid ""
@@ -2250,7 +2248,7 @@ msgstr "我們將把這個工具加入我們的工具包："
 #: site/course/course-content.php:4892 site/course/course-content.php:4899
 #: site/course/course-content.php:4925
 msgid "3/3 Group Meeting"
-msgstr "三合一小組會議"
+msgstr "三合一小組聚會模式"
 
 #: site/course/course-content.php:1775
 msgid ""
@@ -2265,7 +2263,7 @@ msgstr ""
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
-msgstr "回想一下你們已經知道了哪些神的命令？在遵守並分享這些命令上﹐你們有多「忠誠」"
+msgstr "回想一下你們已經知道了哪些神的命令？在遵守並分享這些命令上﹐你們有多「忠心」"
 "？"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
@@ -2318,7 +2316,7 @@ msgstr "為大家竭力忠心跟隨耶穌來禱告感謝神，並求聖靈繼續
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
 msgid "The Training Cycle"
-msgstr "培訓週期"
+msgstr "培訓循環"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2493,7 +2491,7 @@ msgstr ""
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2769
 msgid "Non-Sequential Growth"
-msgstr "非連續成長"
+msgstr "多管齊下的增長"
 
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
@@ -5499,9 +5497,9 @@ msgid ""
 msgstr "這些概念和技能改變了我們的教會以及我們對世界的影響。 〜R"
 
 #: site/pages/home.php:325
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Zúme = 酵母"
+msgstr "%s = 酵母"
 
 #: site/pages/home.php:331
 msgid ""

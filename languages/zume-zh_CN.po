@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-11 10:57+0000\n"
+"PO-Revision-Date: 2024-07-12 06:34+0000\n"
 "Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hans/>\n"
@@ -597,15 +597,13 @@ msgstr "1. 以听见、顺服、分享、训练方面来进行自我评估。"
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
-#, fuzzy
 msgid "Training Tools/Concepts"
-msgstr "培训循环不息"
+msgstr "培训工具/观念"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
-#, fuzzy
 msgid "Ask yourself, have I"
-msgstr "问问自己"
+msgstr "问问自己，我是否有"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -614,7 +612,7 @@ msgstr "问问自己"
 #: site/activities/coaching-checklist.php:113
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
-msgstr "已听见"
+msgstr "听见"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:167
@@ -623,7 +621,7 @@ msgstr "已听见"
 #: site/activities/coaching-checklist.php:116
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
-msgstr "已顺服"
+msgstr "顺服"
 
 #: site/activities/coaching-checklist-host.php:131
 #: site/activities/coaching-checklist-host.php:171
@@ -632,7 +630,7 @@ msgstr "已顺服"
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
-msgstr "已分享"
+msgstr "分享"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:175
@@ -641,65 +639,55 @@ msgstr "已分享"
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
-msgstr "已培训"
+msgstr "培训"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
-#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr "我听说过这个工具或概念吗？"
+msgstr "我有听过这个工具或观念吗？"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
-#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
-msgstr ""
-"我是否遵守过这个工具或概念？如果是工具，我是否亲自实践过？如果是概念，你是否"
-"反思过它如何改变了你的观点？"
+msgstr "我遵守了这个工具或观念？如果有工具的话，我自己有练习过吗？如果是一个观念，您"
+"是否思考过它如何改变您的观点？"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:243
-#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
-msgstr ""
-"我是否分享过这个工具或概念？如果是工具，您是否向任何人展示过如何使用该工具？"
-"如果是概念，您是否与任何人分享过该概念？"
+msgstr "我分享过这个工具或观念吗？如果是工具，您是否曾向任何人展示过如何使用该工具？"
+"如果有这个观念，您是否与任何人分享过这个观念？"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:245
-#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
-msgstr ""
-"我是否培训过其他人分享这个工具或概念？如果是工具，我是否培训过某人与其他人分"
-"享这个工具？如果是概念，我是否培训过某人与其他人分享这个概念？"
+msgstr "我是否已训练他人分享这个工具或观念？如果是工具，我是否训练过某人与其他人分享"
+"该工具？如果是个观念，我是否训练过某人与其他人分享这个观念？"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
-#, fuzzy
 msgid "M.A.W.L."
-msgstr "军方"
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
-#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "通过使用“模范”、“协助”、“观察”、“离开”来指导他人。"
+msgstr "透过「榜样」、「协助」、「观察」、「放手」等方式引导他人。"
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
-#, fuzzy
 msgid "Ask yourself, what does my disciple need"
-msgstr "问问自己"
+msgstr "问问自己，我的门徒需要什么"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -707,9 +695,8 @@ msgstr "问问自己"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Model"
-msgstr "模型"
+msgstr "示范"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -717,9 +704,8 @@ msgstr "模型"
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Assist"
-msgstr "助攻"
+msgstr "协助"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -728,9 +714,8 @@ msgstr "助攻"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#, fuzzy
 msgid "Watch"
-msgstr "看"
+msgstr "观察"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -738,14 +723,12 @@ msgstr "看"
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Leave"
-msgstr "离开"
+msgstr "放手"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid ""
 "Modeling is simply providing an example of a practice or tool. It is the "
 "briefest part of the training cycle. It usually only needs to be done once. "
@@ -753,14 +736,13 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"建模只是提供实践或工具的示例。它是培训周期中最简短的部分。通常只需做一次。它"
-"只是让人们意识到一种实践或工具的存在，并给出它是什么样子的大致概念。反复建模"
-"并不是装备某人的有效方法。"
+"示范只是提供练习或工具的范例。这是培训周期中最简短的部分。通常只需要进行一次"
+"。它只是让人们意识到练习或工具的存在，让人们对其有一个大致的了解。反覆示范并"
+"不是装备一个人的有效方法。"
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -770,15 +752,14 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
-"协助阶段是让学习者练习技能。这比示范阶段花费的时间更长。它需要导师的“手把手指"
-"导”。导师需要发挥指导作用，积极指导学习者。这个阶段不会持续到学习者完全掌握技"
-"能，而只是持续到他们理解技能的基础知识。如果这个阶段持续太久，那么学习者就会"
-"对导师产生依赖，永远无法完全掌握技能。"
+"协助是让学习者练习技能。这比示范阶段花费的时间更长。这需要指导者的「手把手」"
+"教学。导师需要具有指导性，并在指导学习者的过程中发挥积极作用。这个阶段不会持"
+"续到学习者完全胜任，而只会持续到他们了解该技能的基本要素为止。如果这个阶段持"
+"续过长，学习者就会对指导者产生依赖，永远无法达到完全胜任的能力。"
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
 #: site/activities/coaching-checklist.php:288
-#, fuzzy
 msgid ""
 "Watching is the longest phase. It involves more indirect contact with the "
 "learner. It seeks to develop full competence in all facets of a skill. It "
@@ -786,183 +767,151 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
-"观察是最长的阶段。它涉及与学习者的更多间接接触。它力求全面发展技能的各个方"
-"面。它可能是前两个阶段总和的十倍甚至更长。随着学习者技能的进步，与导师的联系"
-"可能会变得不那么规律，而更加临时。"
+"观看是时间最长的阶段。它涉及与学习者更多的间接接触。它旨在培养学习者掌握各方"
+"面技能的能力。所费时间可能是前两个阶段总和的十倍或更多。随着学习者技能的进步"
+"，与指导者的接触可能会变得不那么定期，而是变得具有临时性。"
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid ""
 "Leaving is a sort of graduation when the learner becomes a peer of the "
 "mentor. Periodic contact and peer mentoring may continue to take place if "
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
-"离开是一种毕业，学习者成为导师的同辈。如果学习者和导师在同一个网络中，定期联"
-"系和同辈指导可能会继续进行。当父母让孩子完全不受监督地骑自行车时，这就是离开"
-"阶段。"
+"当学习者成为指导者的同伴时，放手就是一种毕业。如果学习者和指导者处于同一网络"
+"中，则可以继续进行定期联系和同侪指导。当父母让孩子在完全无人监督的情况下骑自"
+"行车时，这就是「放手」阶段。"
 
 #: site/activities/coaching-checklist-two.php:98
-#, fuzzy
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. 使用“听到”、“服从”、“分享”、“训练”四个维度进行自我评估。"
+msgstr "1. 以听见、顺服、分享、训练方面来进行自我评估。"
 
 #: site/activities/coaching-checklist-two.php:99
-#, fuzzy
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr "2. 使用“模范、协助、观察、离开”的方法来指导他人。"
+msgstr "2. 教导他人从示范、协助、观察、放手的观点来评估一个门徒。"
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
-#, fuzzy
 msgid "Self-Evaluation"
 msgstr "自我评估"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
-#, fuzzy
 msgid "Mentee Development Level"
-msgstr "带领者培育小组"
+msgstr "发展领袖能力"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Unaware"
-msgstr "不知道"
+msgstr "不知情"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Unskilled"
 msgstr "不熟练"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid "Competent"
-msgstr "课程完成"
+msgstr "完全的"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Skilled"
 msgstr "技能的"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
-#, fuzzy
 msgid "Mentor’s Role"
 msgstr "导师的角色"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Train new information and ensure understanding"
-msgstr "培训新信息并确保理解"
+msgstr "培训新资讯并确保理解"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Stop and stay with them until they have the basics"
-msgstr "停下来，陪着他们，直到他们掌握基础知识"
+msgstr "停下来并陪伴着他们，直到他们掌握了基础知识"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
-#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr "保持参与直到始终保持能力"
+msgstr "保持参与，直到始终有能力"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr "把他们视为同事"
+msgstr "将他们视为合作伙伴"
 
 #: site/activities/coaching-checklist.php:167
-#, fuzzy
 msgid "Mentor’s Behaviors"
 msgstr "导师的行为"
 
 #: site/activities/coaching-checklist.php:173
-#, fuzzy
 msgid "Direct and inform"
-msgstr "指导和告知"
+msgstr "指导并告知"
 
 #: site/activities/coaching-checklist.php:176
-#, fuzzy
 msgid "Direct and support"
-msgstr "直接和支持"
+msgstr "指导与支持"
 
 #: site/activities/coaching-checklist.php:179
-#, fuzzy
 msgid "Support and encourage"
 msgstr "支持和鼓励"
 
 #: site/activities/coaching-checklist.php:182
-#, fuzzy
 msgid "Receive updates"
 msgstr "接收更新"
 
 #: site/activities/coaching-checklist.php:187
-#, fuzzy
 msgid "Planning Responsibilities"
 msgstr "规划职责"
 
 #: site/activities/coaching-checklist.php:193
-#, fuzzy
 msgid "Mentor decides"
 msgstr "导师决定"
 
 #: site/activities/coaching-checklist.php:196
-#, fuzzy
 msgid "Discuss and Mentor decides"
 msgstr "讨论并由导师决定"
 
 #: site/activities/coaching-checklist.php:199
-#, fuzzy
 msgid "Discuss and Mentee decides"
 msgstr "讨论并由学员决定"
 
 #: site/activities/coaching-checklist.php:202
-#, fuzzy
 msgid "Mentee decides"
 msgstr "学员决定"
 
 #: site/activities/coaching-checklist.php:266
-#, fuzzy
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "受指导者是否不知道、不熟悉或者误解了该工具？"
+msgstr "1. 学员是否不知道、不熟悉或误解了该工具？"
 
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr ""
-"2. 若是知道大概﹐但对怎么应用这个工具还不很确定﹐就在红色栏位底下打勾。"
+msgstr "2. 学员是否对该工具有大概的了解但不是很确定？"
 
 #: site/activities/coaching-checklist.php:272
-#, fuzzy
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr "受训者是否理解该工具并且能够培训该工具的基础知识？"
+msgstr "3. 学员是否了解该工具并能够培训该工具的基础知识？"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
-msgstr ""
-"4. 如果你对这工具很有把握﹐而且能有效培训别人使用﹐请在绿色栏位底下打勾。"
+msgstr "4. 如果你对这工具很有把握﹐而且能有效培训别人使用﹐请在绿色栏位底下打勾。"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Disciple"
-msgstr "小鸭门徒训练法"
+msgstr "门徒"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Unbeliever"
 msgstr "不信者"
 
@@ -974,27 +923,22 @@ msgstr "未知"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
-#, fuzzy
 msgid "3-Month Plan"
-msgstr "三个月规划"
+msgstr "3个月计划"
 
 #: site/activities/three-month-plan.php:67
-#, fuzzy
 msgid "Switch to Printable Version"
-msgstr "切换到可打印版本"
+msgstr "切换到列印版本"
 
 #: site/activities/three-month-plan.php:80
-#, fuzzy
 msgid "Scripts are off"
-msgstr "查考圣经"
+msgstr "脚本已关闭"
 
 #: site/activities/three-month-plan.php:81
-#, fuzzy
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
-msgstr ""
-"请启用脚本来使用此交互式页面。否则，您可以使用上面的链接使用可打印版本。"
+msgstr "请开启脚本以使用此互动页面。否则，您可以透过上面的连结使用可列印版本。"
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
@@ -1002,33 +946,28 @@ msgid "Save"
 msgstr "储存"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
 msgstr "取消"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
-#, fuzzy
 msgid ""
 "Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
-msgstr ""
-"耶稣说︰「但圣灵降临在你们身上﹐你们就必得着能力﹐并要在耶路撒冷﹑犹太全地和"
+msgstr "耶稣说︰「但圣灵降临在你们身上﹐你们就必得着能力﹐并要在耶路撒冷﹑犹太全地和"
 "撒马利亚﹐直到地极﹐作我的见证。」（徒一8）"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
-#, fuzzy
 msgid ""
 "There’s no one “best way” to tell God’s story (also called the gospel), "
 "because the best way will depend on who you’re sharing with. Every disciple "
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
 msgstr ""
-"要传讲神的福音故事﹐没有所谓的「最好的方式」﹐因为最好的方式是根据你们分享的"
-"对象而决定。每一个门徒都要来学习述说神的福音故事﹐讲的既要合乎圣经﹐又要让听"
-"的人明白且与对方产生关联。"
+"没有一种「最好的方式」来讲述神的故事（也称为福音），因为最好的方式取决于你与"
+"谁分享。每个门徒都应该学习以符合圣经的方式讲述上帝的故事，并与听众产生共鸣。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:22
 #: site/course/_strings-3-circle-gospel-presentation.php:60
@@ -1051,13 +990,11 @@ msgstr "讨论"
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:196
-#, fuzzy
 msgid "(10 min)"
-msgstr "10分钟"
+msgstr "(10分钟)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:27
 #: site/course/course-content.php:873
-#, fuzzy
 msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
@@ -1065,18 +1002,16 @@ msgstr "当你听见神命令你作祂的见证人，并宣扬祂的故事，你
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:874
-#, fuzzy
 msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
-msgstr "你想耶稣怎么拣选一般平凡的人来传讲祂好消息﹐为什么？"
+msgstr "你认为耶稣为什么选择普通人而不是其他方式来分享祂的好消息？"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
-#, fuzzy
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
-msgstr "要如何做﹐才能让你很自在自然地与别人分享神的救恩故事？"
+msgstr "怎么样才能让你更自在地分享上帝的故事？"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:38
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1098,23 +1033,21 @@ msgstr "看影片"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
-#, fuzzy
 msgid "(5 min)"
-msgstr "5分钟"
+msgstr "(5分钟)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:42
 #: site/course/course-content.php:800 site/course/course-content.php:851
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3805 site/course/course-content.php:3824
 msgid "The Gospel"
-msgstr "简述福音"
+msgstr "福音"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
-#, fuzzy
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
-msgstr "分享上帝的好消息的一种方法是使用名为“3个圆圈”的视觉呈现。"
+msgstr "分享上帝好消息的一种方法是使用叫做「3 个圆圈」的视觉演示。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1128,11 +1061,10 @@ msgstr "你对神又有什么新的认识？"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:918
-#, fuzzy
 msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
-msgstr "如果要你如此向别人讲说福音的故事﹐你觉得容不容易？"
+msgstr "你认为透过讲述这样的故事来分享神的故事会更容易还是更困难？"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:78
 #: site/course/_strings-3-circle-gospel-presentation.php:103
@@ -1146,35 +1078,28 @@ msgstr "如果要你如此向别人讲说福音的故事﹐你觉得容不容易
 #: site/course/course-content.php:3671 site/course/course-content.php:3941
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
-#, fuzzy
 msgid "ACTIVITY"
 msgstr "活动"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
-#, fuzzy
 msgid "Scan the QR code or find a piece of paper."
-msgstr "扫描二维码或者找到一张纸。"
+msgstr "扫QR Code 或找一张纸。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
-#, fuzzy
 msgid "Select a person from your list of 100."
 msgstr "每人拟出自己的「百人关注名单」"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
-#, fuzzy
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
-msgstr ""
-"使用辅导清单并评估您选择的人员。问问自己，“对于每个工具和概念，这个人需要什"
-"么？”"
+msgstr "使用辅导清单并评估您选择的人。问问自己“这个人需要什么工具和观念？”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
-#, fuzzy
 msgid "Check off the checklist."
-msgstr "核对清单。"
+msgstr "检查清单。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1193,107 +1118,87 @@ msgid "Activity Resource"
 msgstr "资源"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
-#, fuzzy
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
-msgstr "评估自己——评估自己并在辅导清单上的相应栏中标记。"
+msgstr "评估自己 - 评估自己并在辅导清单上的对应栏做标记。"
 
 #: site/course/course-builder.php:194
-#, fuzzy
 msgid "(1 min)"
-msgstr "10分钟"
+msgstr "(1分钟)"
 
 #: site/course/course-builder.php:197
-#, fuzzy
 msgid "(15 min)"
-msgstr "5分钟"
+msgstr "(15分钟)"
 
 #: site/course/course-builder.php:198
-#, fuzzy
 msgid "(20 min)"
-msgstr "20分钟"
+msgstr "(20分钟)"
 
 #: site/course/course-builder.php:199
-#, fuzzy
 msgid "(25 min)"
-msgstr "5分钟"
+msgstr "(25分钟)"
 
 #: site/course/course-builder.php:200
-#, fuzzy
 msgid "(30 min)"
-msgstr "30分钟"
+msgstr "(30分钟)"
 
 #: site/course/course-builder.php:201
-#, fuzzy
 msgid "(35 min)"
-msgstr "5分钟"
+msgstr "(35分钟)"
 
 #: site/course/course-builder.php:202
-#, fuzzy
 msgid "(40 min)"
-msgstr "10分钟"
+msgstr "(40分钟)"
 
 #: site/course/course-builder.php:203
-#, fuzzy
 msgid "(45 min)"
-msgstr "45分钟"
+msgstr "(45分钟)"
 
 #: site/course/course-builder.php:204
-#, fuzzy
 msgid "(50 min)"
-msgstr "5分钟"
+msgstr "(50分钟)"
 
 #: site/course/course-builder.php:205
-#, fuzzy
 msgid "(55 min)"
-msgstr "5分钟"
+msgstr "(55分钟)"
 
 #: site/course/course-builder.php:206
-#, fuzzy
 msgid "(60 min)"
-msgstr "60分钟"
+msgstr "(60分钟)"
 
 #: site/course/course-builder.php:207
-#, fuzzy
 msgid "(65 min)"
-msgstr "5分钟"
+msgstr "(65分钟)"
 
 #: site/course/course-builder.php:208
-#, fuzzy
 msgid "(70 min)"
-msgstr "10分钟"
+msgstr "(70分钟)"
 
 #: site/course/course-builder.php:209
-#, fuzzy
 msgid "(75 min)"
-msgstr "75分钟"
+msgstr "(75分钟)"
 
 #: site/course/course-builder.php:210
-#, fuzzy
 msgid "(80 min)"
-msgstr "10分钟"
+msgstr "(80分钟)"
 
 #: site/course/course-builder.php:211
-#, fuzzy
 msgid "(85 min)"
-msgstr "5分钟"
+msgstr "(85分钟)"
 
 #: site/course/course-builder.php:212
-#, fuzzy
 msgid "(90 min)"
-msgstr "10分钟"
+msgstr "(90分钟)"
 
 #: site/course/course-builder.php:213
-#, fuzzy
 msgid "(60 - 90 min)"
-msgstr "90分钟"
+msgstr "(60-90分钟)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
-#, fuzzy
 msgid "SESSION 1"
-msgstr "第 1 节"
+msgstr "第一堂课"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1331,7 +1236,7 @@ msgstr "第 1 节"
 #: site/course/course-content.php:5884 site/course/course-content.php:5889
 #: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
-msgstr "看看做的如何？"
+msgstr "签到"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -1351,9 +1256,8 @@ msgstr "看看做的如何？"
 #: site/course/course-content.php:5743 site/course/course-content.php:5794
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
-#, fuzzy
 msgid "Have all of the participants and facilitator check-in."
-msgstr "让所有参与者和主持人签到。"
+msgstr "让所有参与者和辅导员签到。"
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1373,9 +1277,8 @@ msgstr "让所有参与者和主持人签到。"
 #: site/course/course-content.php:5746 site/course/course-content.php:5797
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
-#, fuzzy
 msgid "Or zume.training/checkin and use code:"
-msgstr "或者 zume.training/checkin 并使用代码："
+msgstr "或到 zume.training/checkin 并使用代码："
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1397,14 +1300,12 @@ msgid "PRAY"
 msgstr "祷告"
 
 #: site/course/course-content.php:71 site/course/course-content.php:3145
-#, fuzzy
 msgid ""
 "Begin with prayer. Spiritual insight and transformation is not possible "
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
-msgstr ""
-"从祷告开始！若没有圣灵的同在﹐就不可能有属灵洞见与转变。鼓励弟兄姊妹拨出时间"
-"一起寻求神﹐祈求祂在这堂课中亲自引导你们。"
+msgstr "从祷告开始！若没有圣灵的同在，就不可能有属灵的洞察力与转变。鼓励弟兄姊妹拨出"
+"点时间一起寻求神，祈求祂在这堂课中亲自引导你们。"
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1429,14 +1330,12 @@ msgstr "概述"
 #: site/course/course-content.php:3801 site/course/course-content.php:4351
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
-#, fuzzy
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr "在本次会议中，我们将听取并讨论以下概念："
+msgstr "在本章节中，我们将学习并讨论这些观念："
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
-#, fuzzy
 msgid "Simple Definition of Disciple & Church"
-msgstr "门徒与教会的简单定义"
+msgstr "简单定义门徒与教会"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1445,54 +1344,47 @@ msgstr "属灵的呼吸"
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
-#, fuzzy
 msgid "And we will add these tools to our toolkit:"
-msgstr "我们将把这些工具添加到我们的工具包中："
+msgstr "我们将把这些工具加入我们的工具包："
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
 #: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "SOAPS香皂读经法"
+msgstr "S.O.A.P.S.香皂读经法"
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
-msgstr "你将看见神如何使用平凡人借着微不足道的小事造成巨大的影响。"
+msgstr "上帝使用普通人做简单的事情来产生巨大的影响。"
 
 #: site/course/course-content.php:136
-#, fuzzy
 msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
-msgstr ""
-"如果耶稣要每一位跟随祂的人遵守祂的大使命﹐为什么只有少数人起来带领门徒？"
+msgstr "如果耶稣要每一位跟随祂的人遵守祂的大使命，为什么只有少数人起来带领门徒？"
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr "一提到教会﹐你们有什么看法？你们马上想到什么？"
+msgstr "一提到教会﹐你们有什么看法？你们会马上想到什么？"
 
 #: site/course/course-content.php:180
-#, fuzzy
 msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
-msgstr "你们对教会的看法﹐和影片里面描述的「微型教会」有什么不同？"
+msgstr "你们对教会的看法，和影片里面描述的「微型教会」有什么不同？"
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
 msgstr "你们认为哪一种教会比较容易倍增发展？为什么？"
 
 #: site/course/course-content.php:199
-#, fuzzy
 msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
-msgstr "我们会吸气、会吐气，我们活着。属灵呼吸也是如此。"
+msgstr "精神呼吸。我们吸气。我们呼气。我们活着。我们聆听和顺服神也是如此。"
 
 #: site/course/course-content.php:225
-#, fuzzy
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
 msgstr "为什么我们必须学习聆听﹑辨识神的声音？"
 
@@ -1506,36 +1398,31 @@ msgid ""
 "Hearing from God regularly is a key element in our personal relationship "
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
-msgstr ""
-"每天聆听神的话语﹐是我们与神建立关系的要素﹐也使我们能够不断顺服而经历神在我"
-"们身上的作为。"
+msgstr "每天聆听神的话语﹐是我们与神建立关系的重要因素﹐也是使我们能够不断顺服而经历"
+"神在我们身上的作为。"
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
-#, fuzzy
 msgid "Practice S.O.A.P.S."
-msgstr "练习 S.O.A.P.S。"
+msgstr "练习 S.O.A.P.S."
 
 #: site/course/course-content.php:274
-#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
-msgstr ""
-"扫描二维码，按照 SOAPS 圣经学习模式单独学习马太福音 6:9-13。（20 分钟）"
+msgstr "扫描QR Code并用马太福音 6:9-13 透过S.O.A.P.S.圣经学习模式单独工作。 （20 "
+"分钟）"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr "查考圣经"
+msgstr "查询圣经"
 
 #: site/course/course-content.php:277
-#, fuzzy
 msgid "Observation"
 msgstr "观察"
 
 #: site/course/course-content.php:278
-#, fuzzy
 msgid "Application"
-msgstr "位置"
+msgstr "应用"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
@@ -1543,32 +1430,25 @@ msgid "Prayer"
 msgstr "灵修祷告"
 
 #: site/course/course-content.php:280
-#, fuzzy
 msgid "Sharing"
 msgstr "分享"
 
 #: site/course/course-content.php:282
-#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
-msgstr "返回并以两到三人为一组分享您的 S.O.A.P.S。（10 分钟）"
+msgstr "两人或三人一组，一起返回并分享你们的 S.O.A.P.S.。 (10 分钟）"
 
 #: site/course/course-content.php:304
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
-msgstr ""
-"圣经告诉我们﹐每一位跟随耶稣的人﹐都要在自己的行为﹑言语﹑思想上向神负责﹐"
-"「守望互勉小组」就是为此做准备的最好方式！"
+msgstr "圣经告诉我们，每一位耶稣的跟随者有一天都会为自己的所作所为、所言所想负责。"
 
 #: site/course/course-content.php:305
-#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr "问责小组是做好准备的好方法！"
+msgstr "责任小组是做好准备的好方法！"
 
 #: site/course/course-content.php:329
-#, fuzzy
 msgid "Practice Accountability Groups"
 msgstr "操练 - 守望互勉小组"
 
@@ -1578,22 +1458,18 @@ msgstr "操练 - 守望互勉小组"
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
-#, fuzzy
 msgid "Scan the QR code."
-msgstr "扫描二维码。"
+msgstr "扫描QR code。"
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr "分成每组2到3人的小组，同小组同性别。"
+msgstr "每一组2到3人，同性别同小组。"
 
 #: site/course/course-content.php:333
-#, fuzzy
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
-msgstr ""
-"接下来的 45 分钟﹐请各位在自己的「守望互勉」小组里﹐彼此回答「守望互勉小组」"
-"表二所列出的问题。"
+msgstr "在接下来的 20 分钟内一起解决责任问题。"
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1609,9 +1485,8 @@ msgstr ""
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
-#, fuzzy
 msgid "REVIEW"
-msgstr "概述"
+msgstr "审查"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1620,17 +1495,15 @@ msgstr "概述"
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
-#, fuzzy
 msgid "Concepts heard in this session:"
-msgstr "本次会议中听到的概念："
+msgstr "本课堂中学到的观念："
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
-#, fuzzy
 msgid "Tools heard in this session:"
-msgstr "本次会议中听到的工具："
+msgstr "本课堂中学到的工具："
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1670,43 +1543,38 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
-"开始操练 SOAPS 香皂读经法吧！下次聚会前﹐专注在马太福音五至七章﹐每天至少读过"
-"一遍﹐并且要每天写下 SOAPS 香皂读经日志。"
+"开始操练S.O.A.P.S. "
+"香皂读经法吧！下次聚会前﹐专注在马太福音五到七章﹐每天至少读过一遍﹐"
+"并且要每天写下S.O.A.P.S. 香皂读经日志。"
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
-#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
-msgstr ""
-"请求主指引你挑战至少五个你认识的信徒，让他们每天开始自己的 S.O.A.P.S. 圣经阅"
-"读练习，然后你就这么做吧。"
+msgstr "求主引导你挑战至少五个你认识的信徒，开始他们自己的每日 S.O.A.P.S. "
+"读经练习，然后这样做。"
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
-#, fuzzy
 msgid "SESSION 2"
-msgstr "第 2 节"
+msgstr "第 2 堂课"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
-#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
-msgstr "询问小组中是否有人有特殊需要，希望小组为他们祈祷。"
+msgstr "询问小组中是否有人有特殊需求，希望小组为此祷告。"
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
-#, fuzzy
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
-msgstr "感谢上帝，他在他的圣言中承诺当他的子民祈祷时他会倾听并采取行动。"
+msgstr "感谢神，祂在话语中应许，当祂的子民祷告时，祂会聆听并采取行动。"
 
 #: site/course/course-content.php:442
-#, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领引导。"
+msgstr "祈求上帝的圣灵带领你们共度时光。"
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -1722,9 +1590,8 @@ msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领
 #: site/course/course-content.php:5012 site/course/course-content.php:5137
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
-#, fuzzy
 msgid "LOOK BACK"
-msgstr "回顾"
+msgstr "回望"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1740,9 +1607,8 @@ msgstr "回顾"
 #: site/course/course-content.php:5015 site/course/course-content.php:5140
 #: site/course/course-content.php:5269 site/course/course-content.php:5402
 #: site/course/course-content.php:5539 site/course/course-content.php:5665
-#, fuzzy
 msgid "Before getting started, take some time to look back."
-msgstr "在开始前﹐花点时间让大家彼此分享，看看做的如何。"
+msgstr "在开始之前，花一些时间回顾一下。"
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -1758,11 +1624,10 @@ msgstr "在开始前﹐花点时间让大家彼此分享，看看做的如何。
 #: site/course/course-content.php:5016 site/course/course-content.php:5141
 #: site/course/course-content.php:5270 site/course/course-content.php:5403
 #: site/course/course-content.php:5540 site/course/course-content.php:5666
-#, fuzzy
 msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
-msgstr "上一堂课结束时，我们提醒每一位组员要做到两件事："
+msgstr "在上一堂课结束时，小组中的每个人都面临着练习你所学的挑战。"
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1779,22 +1644,20 @@ msgstr "上一堂课结束时，我们提醒每一位组员要做到两件事：
 #: site/course/course-content.php:5271 site/course/course-content.php:5404
 #: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
-msgstr "所以花一些时间评估组员们这星期做得如何。"
+msgstr "花一些时间评估组员们这星期做得如何。"
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
-#, fuzzy
 msgid "In this session, we will hear and discuss this concept:"
-msgstr "在本次会议中，我们将听取并讨论这一概念："
+msgstr "在本次课堂中，我们将听到并讨论这个观念："
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3531 site/course/course-content.php:3551
-#, fuzzy
 msgid "Producer Not Consumer"
-msgstr "「生产者」还是「消费者」？"
+msgstr "生产者而非消费者"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
@@ -1802,14 +1665,12 @@ msgid "Prayer Cycle"
 msgstr "祷告循环圈"
 
 #: site/course/course-content.php:495
-#, fuzzy
 msgid ""
 "If we want to make disciples who multiply – spiritual producers and not just "
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
-msgstr ""
-"如果我们希望带出能倍增的门徒——灵性生产型而非消费型的门徒，那么我们必须学习并"
-"分享以下四种方式，好使我们这些天天跟随基督的门徒，更像耶稣："
+msgstr "如果我们希望培养出倍增的门徒——灵性生产型而非消费型的门徒，那么我们必须学习并"
+"分享以下四种方式，好使我们这些天天跟随基督的门徒更像耶稣："
 
 #: site/course/course-content.php:499
 msgid "Body Life"
@@ -1820,7 +1681,6 @@ msgid "Persecution and Suffering"
 msgstr "逼迫与受苦"
 
 #: site/course/course-content.php:527
-#, fuzzy
 msgid ""
 "Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
 "you already practice?"
@@ -1828,41 +1688,37 @@ msgstr "上面详细描述的四种方式﹙灵修祷告、查考圣经…等﹚
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr "你不太有把握的有哪几种？"
+msgstr "哪种是你没有把握的？"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
-msgstr "在训练他人的事上，你觉得你预备得如何？"
+msgstr "在训练他人的事上，你觉得你准备得如何？"
 
 #: site/course/course-content.php:547
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
-msgstr ""
-"圣经告诉我们﹐祷告给我们机会向那造我们的神说话﹐同时聆听祂要对我们说的话！"
+msgstr "圣经告诉我们﹐祷告给我们机会向那创造我们的神说话﹐同时聆听祂要对我们说的话！"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
-#, fuzzy
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr "单独进行一小时的祷告循环"
+msgstr "单独进行一小时的循环祈祷"
 
 #: site/course/course-content.php:572
-#, fuzzy
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr "扫描二维码即可在手机上获取祈祷周期指南。"
+msgstr "扫描QR Code即可在手机上获得祈祷周期指南。"
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
 "Set a time for the group to return and reconnect. Be sure to add a few extra "
 "minutes for everyone to both find a quiet place to pray and to make their "
 "way back to the group."
-msgstr ""
-"分开前要事先定好小组集合的时间﹐但要记得多留一点时间﹐让每一位成员找到安静的"
-"地点来祷告﹐也有充裕的时间回到集合地点。"
+msgstr "替小组设定一个重新回来集合建立关系的时间﹐但要记得多留一点时间给大家﹐让每一"
+"位成员既能找到安静的地点来祷告﹐也有充裕的时间回到小组中。"
 
 #: site/course/course-content.php:592
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr "请问你对拨出一个钟头时间来祷告有什么看法？"
+msgstr "请问你对出花一个小时的时间来祷告有什么看法？"
 
 #: site/course/course-content.php:593
 msgid "How do you feel?"
@@ -1870,7 +1726,7 @@ msgstr "你觉得如何？"
 
 #: site/course/course-content.php:594
 msgid "Did you learn or hear anything?"
-msgstr "有学到或听到什么吗？"
+msgstr "你有学到或听到什么吗？"
 
 #: site/course/course-content.php:595
 msgid ""
@@ -1878,56 +1734,44 @@ msgid ""
 msgstr "如果你养成这种祷告的习惯，你的生活将会变成什么样子呢？"
 
 #: site/course/course-content.php:613
-#, fuzzy
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr "上帝已经赐予我们“去使万民作我的门徒”所需要的关系。"
+msgstr "神已经给了我们「去使人作门徒」所需的关系。"
 
 #: site/course/course-content.php:614
-#, fuzzy
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
-msgstr ""
-"在我们的人生中神安排了一些跟我们有关系的人﹐让我们可以「去，使人做祂的门"
-"徒」﹐就是我们的家人﹑朋友﹑邻居﹑同事以及同学等等﹐这些在我们身边很亲、熟"
-"识、甚或初识的人。"
+msgstr "他们是我们的家人、朋友、邻居、同事和同学——我们认识一辈子或刚认识的人。"
 
 #: site/course/course-content.php:615
-#, fuzzy
 msgid "Stewarding the relationships you have is the best place to start."
-msgstr "管理好你现有的关系是最好的起点。"
+msgstr "管理你所拥有的关系是最好的起点。"
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
 msgstr "每人拟出自己的「百人关注名单」"
 
 #: site/course/course-content.php:643
-#, fuzzy
 msgid "Scan QR code or use a piece of paper."
-msgstr "扫描二维码或使用一张纸。"
+msgstr "扫描QR Code或用一张纸。"
 
 #: site/course/course-content.php:644
-#, fuzzy
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
-msgstr ""
-"用「天国酵母」手册里的「百人关注人名单」表格﹐让每一位小组员﹐在接下来30分"
-"钟﹐各自思想并拟出人际关系网络清单。"
+msgstr "让小组中的每个人在接下来的 30 分钟内填写自己的关系清单。尽可能地列出。"
 
 #: site/course/course-content.php:645
-#, fuzzy
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
-msgstr "然后标出你对他们与上帝的关系的最佳理解：门徒、非信徒或未知者。"
+msgstr "然后标出你对他们与神的关系的最佳理解：门徒、非信徒或未知。"
 
 #: site/course/course-content.php:682
-#, fuzzy
 msgid "Obey"
-msgstr "已顺服"
+msgstr "遵守"
 
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
@@ -1936,102 +1780,86 @@ msgid "Share"
 msgstr "分享"
 
 #: site/course/course-content.php:686 site/course/course-content.php:3570
-#, fuzzy
 msgid ""
 "Spend time this week praying for five people from your List of 100 that you "
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
-msgstr ""
-"这一周﹐从你的「百人关注名单」里﹐挑选出五位你们列为「非信徒」或「不清楚」的"
-"人，并为他们祷告。求神预备他们的心﹐使他们敞开心聆听神的故事。"
+msgstr "这一周﹐从你的「百人关注名单」里﹐挑选出五位你们列为「非信徒」或「不清楚」的"
+"人，并为他们祷告。求神预备他们的心﹐使他们敞开心来聆听神的故事。"
 
 #: site/course/course-content.php:687 site/course/course-content.php:3571
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share the List of 100 tool with. Share this "
 "person’s name with the group before you go and reach out to them before the "
 "next session."
-msgstr ""
-"求神让你明白接下来该去跟谁分享「百人关注名单」这个工具。在离开前﹐让组员也知"
+msgstr "求神让你明白接下来该去跟谁分享「百人关注名单」这个工具。在离开前﹐让组员也知"
 "道这个人的名字﹐然后在下一堂课以前，联系那个人并与他分享。"
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
-#, fuzzy
 msgid "To saturate the world with multiplying disciples in our generation."
-msgstr "在我们的世代让世界充满"
+msgstr "让我们这一代的门徒数量不断增加，从而充满世界。"
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
-#, fuzzy
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr "Zúme 是为那些希望看到门徒训练运动的人而设的实践社区。"
+msgstr "Zúme 是一个为那些希望看到门徒培训运动的人提供的实践社区。"
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
-#, fuzzy
 msgid "SESSION 3"
-msgstr "第三节"
+msgstr "第三堂课"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
-msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领引导。"
+msgstr "为您在上一次课堂中经历祂的方式祈祷并感谢上帝，并邀请祂的圣灵带领您一起度过这"
+"段时间。"
 
 #: site/course/course-content.php:819
-#, fuzzy
 msgid ""
 "In this broken world, people feel rewarded when they take, when they receive "
 "and when they gain more than those around them. But God’s Spiritual Economy "
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
-"在这个破碎的世界上﹐人们只有在比别人获取得多﹑接受更多、获益更大时才肯罢休，"
-"觉得够本了。但是神的属灵经济学不一样──那些在已得的事上忠心的人﹐神会更加添给"
-"他们。"
+"在这个支离破碎的世界里﹐人们只有在比其他人获取得多﹑接受更多、获益更大时才肯"
+"罢休，觉得自己有获得回报。但是神的属灵经济学不一样──那些在已得的事上忠心的人"
+"﹐神会加倍的添给他们。"
 
 #: site/course/course-content.php:844
-#, fuzzy
 msgid ""
 "What are some differences you see between God’s Spiritual Economy and our "
 "earthly way of getting things done?"
-msgstr "你们看到神的属灵经济学与属世的方法有什么不同？"
+msgstr "你們看到神的屬靈經濟學與屬世的方法有什麼不同？"
 
 #: site/course/course-content.php:890
-#, fuzzy
 msgid ""
 "One way to share God’s good news is by telling God’s story from Creation to "
 "Judgement – from the beginning of humankind all the way to the end of this "
 "age."
-msgstr ""
-"与人分享神的好消息﹐其中一个方法就是简述救恩故事的来龙去脉﹐从创造到审判﹐从"
-"人类的起源到世界的末了。"
+msgstr "分享上帝好消息的一种方法是讲述上帝从创造到审判的故事——从人类的开始直到这个世"
+"代的结束。"
 
 #: site/course/course-content.php:931
-#, fuzzy
 msgid "Share the Gospel"
-msgstr "简述福音"
+msgstr "分享福音"
 
 #: site/course/course-content.php:934
-#, fuzzy
 msgid "Break into groups of two or three people."
-msgstr "分成每组2到3人的小组，同小组同性别。"
+msgstr "两到三人分成一组。"
 
 #: site/course/course-content.php:935
-#, fuzzy
 msgid "Take turns telling the Gospel to each other."
-msgstr "分成每组2到3人的小组，同小组同性别。"
+msgstr "轮流互相传讲福音。"
 
 #: site/course/course-content.php:959
-#, fuzzy
 msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
-msgstr ""
-"耶稣说︰「所以，你们要去﹐使万民作我的门徒﹐奉父﹑子圣灵的名给他们施洗…」（太"
-"二十八19）"
+msgstr "耶稣说︰「所以，你们要去，使万民作我的门徒，奉父、子圣灵的名给他们施洗…」（"
+"太 28:19）"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -2042,101 +1870,84 @@ msgid "Would you even consider it?"
 msgstr "你想过为别人施洗吗？"
 
 #: site/course/course-content.php:987
-#, fuzzy
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
-msgstr ""
-"你想过为别人施洗如果耶稣吩咐所有跟随祂的人来遵守大使命﹐那是否表示每一位真实"
-"跟随耶稣的人都可以为别人施洗？为什么可以？或为什么不是这样？吗？"
+msgstr "如果耶稣吩咐所有跟随祂的人来遵守大使命，那是否表示每一位跟随耶稣的人都可以为"
+"别人施洗？为什么可以？为什么不行？"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr "重要提醒︰请问你自己受洗了吗？"
+msgstr "重要提醒︰请问你受洗了吗？"
 
 #: site/course/course-content.php:999
-#, fuzzy
 msgid ""
 "If not, then we encourage you to plan this before even one more session of "
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
-"如果还没有﹐我们鼓励你在下一堂门徒训练课之前安排受洗﹐邀请跟你一起上课的组员"
-"也来﹐与你一同庆祝这个重要的日子﹐见证你跟随耶稣的心志，在众人面前说︰「是"
-"的！我愿意跟随主！」"
+"如果还没有，那么我们鼓励你在下一堂门徒训练课之前安排受洗，邀请跟你一起上课的"
+"组员也来，与你一同庆祝这个重要的日子，见证你跟随耶稣的心志，在众人面前说︰「"
+"是的！我愿意跟随主！」"
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
-#, fuzzy
 msgid "The Spiritual Economy"
-msgstr "属灵的经济学"
+msgstr "属灵经济学"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
-#, fuzzy
 msgid ""
 "Ask God who He wants you to train to use the Creation to Judgment story (or "
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
-msgstr ""
-"然后求神让你明白﹐接下来应当去装备谁来用简述「从创造到审判的故事」﹙或者其它"
-"方式﹚来分享福音﹐在离开小组之前把这个人的名字告知组员。"
+msgstr "问上帝祂希望你训练谁使用从创世纪到审判的故事（或其他分享上帝故事的方式）。在"
+"你开始前，请与小组成员分享此人的名字。"
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3985
-#, fuzzy
 msgid ""
 "Spend time this week practicing God’s story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
-msgstr ""
-"这周一花时间练习神的救恩故事﹐并从你的「百人关注名单」里﹐挑出至少一位被列为"
-"「非信徒」或「不清楚」的人，与他分享神的故事。"
+msgstr "本周花时间练习上帝的故事，然后与你的百名清单中至少一个被你标记为「不信者」或"
+"「未知」的人分享。"
 
 #: site/course/course-content.php:1038
-#, fuzzy
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
-msgstr ""
-"重要提醒︰下一次的门徒训练小组，将会在小组里守圣餐。请记得带圣餐的饼与酒﹙或"
+msgstr "重要提醒︰下一次的门徒训练小组，将会在小组里守圣餐。请记得带圣餐的饼与酒﹙或"
 "葡萄汁﹚。"
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4261
-#, fuzzy
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
-msgstr ""
-"重要提醒︰下一次的门徒训练小组，将会在小组里守圣餐。请记得带圣餐的饼与酒﹙或"
-"葡萄汁﹚。"
+msgstr "重要提醒 - "
+"您的小组将在下一次聚会中庆祝圣餐。一定要记住供应品（面包和酒/果汁）。"
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
-#, fuzzy
 msgid "SESSION 4"
-msgstr "第四节"
+msgstr "第四堂课"
 
 #: site/course/course-content.php:1109
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
-msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领引导。"
+msgstr "祷告并感谢上帝邀请我们与他人分享祂的好消息。"
 
 #: site/course/course-content.php:1110
-#, fuzzy
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
-msgstr "请求他赋予你们小组的每个成员基督的思想 — — 并让每个人充满他的精神。"
+msgstr "求神赐给你团体中的每一位成员基督的心，并用圣灵充满每个人。"
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
 #: site/course/course-content.php:4077 site/course/course-content.php:4094
 #: site/course/course-content.php:4200 site/course/course-content.php:4235
-#, fuzzy
 msgid "Three-Minute Testimony"
 msgstr "三分钟见证"
 
 #: site/course/course-content.php:1165
-#, fuzzy
 msgid ""
 "As followers of Jesus, we are “witnesses\" for Him, because we “testify” "
 "about the impact Jesus has had on our lives. Your story of your relationship "
@@ -2144,39 +1955,31 @@ msgid ""
 "can share better than you."
 msgstr ""
 "我们是跟随耶稣的人﹐也是耶稣的「见证人」，「见证」耶稣带给我们生命何等巨大的"
-"改变。各位认识神，跟神之间有了崭新的关系，这故事就是你们自己的见证﹐是很有能"
-"力的见证﹐而且没有别人可以讲得比你自己讲得更好。"
+"改变。你认识神，跟神之间有了崭新的关系，这故事就是你们自己的见证﹐是很有能力"
+"的见证﹐而且没有别人可以讲得比你自己讲得更好。"
 
 #: site/course/course-content.php:1189
-#, fuzzy
 msgid "Practice sharing your testimony"
-msgstr "操练 - 分享自己的见证"
+msgstr "练习分享你的见证"
 
 #: site/course/course-content.php:1192
-#, fuzzy
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr "写出你的故事并控制在三分钟内。（10分钟）"
+msgstr "努力写出你的故事，并将其控制在三分钟以内。 （10 分钟）"
 
 #: site/course/course-content.php:1193
-#, fuzzy
 msgid "Break into groups of two to three and practice sharing. (20 min)"
-msgstr ""
-"分享见证——分成两到三人的小组﹐彼此练习向别人分享你们自己的见证故事。﹙45分"
-"钟﹚"
+msgstr "分成两到三人一组并练习分享。 （20 分钟）"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
-#, fuzzy
 msgid "Great - Greater - Greatest Blessings"
-msgstr "最好的祝福"
+msgstr "大 - 更大 - 最大的祝福"
 
 #: site/course/course-content.php:1242
-#, fuzzy
 msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
-msgstr ""
-"这种方式与你在初信主作主门徒时所学到的模式一样吗？如果不是﹐有哪些地方不一"
+msgstr "这种方式与你在初信主成为主门徒时所学到的模式一样吗？如果不是，有哪些地方不一"
 "样？"
 
 #: site/course/course-content.php:1243
@@ -2198,14 +2001,12 @@ msgstr ""
 "小鸭跟门徒训练之间有什么关联？原来是因为每一只小鸭都同时是跟随者又是带领者。"
 
 #: site/course/course-content.php:1288
-#, fuzzy
 msgid ""
 "What is one area of discipleship (reading/understanding the Bible, praying, "
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
-msgstr ""
-"请问你想要多了解哪一方面的门徒训练课题﹙阅读或了解圣经、祷告、分享神的故事"
-"等﹚？有谁能在这方面帮助你们吗？"
+msgstr "您想更了解门徒训练的哪一个领域（阅读/理解圣经、祷告、分享神的故事等）？谁是可"
+"以帮助你学习的人？"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2215,7 +2016,6 @@ msgstr ""
 "哪一方面的门徒训练课题是你觉得可以开始与别人分享的？想一想可以跟谁分享呢？"
 
 #: site/course/course-content.php:1307
-#, fuzzy
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
 msgstr "你可曾静下来思想那些神的国度尚未临到的地方吗？"
 
@@ -2224,12 +2024,10 @@ msgid ""
 "Have you ever visited a home or a neighborhood or even a city where it "
 "seemed as if God was just... missing? These are usually the places where God "
 "wants to work the most."
-msgstr ""
-"你是否去过某个家庭﹑某个社区或是某个市镇﹐在那里你们感到神就是…不在那里？这些"
-"地方就是神最要动工的地方。"
+msgstr "你是否曾去过某个家庭﹑某个社区或是某个城市﹐在那里你们感到神似乎......"
+"不见了？这些地方通常是神最想要动工的地方。"
 
 #: site/course/course-content.php:1334
-#, fuzzy
 msgid ""
 "Who are you more comfortable sharing with -- people you already know or "
 "people you haven’t met, yet?"
@@ -2237,91 +2035,75 @@ msgstr "通常你在哪些人面前比较能自在地交流分享？是熟识的
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
-msgstr "为什么会这样？"
+msgstr "你认为为什么会这样？"
 
 #: site/course/course-content.php:1336
-#, fuzzy
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr "那么面对你感到不自在的人，要怎么做才容易跟他们交流分享？"
 
 #: site/course/course-content.php:1354
-#, fuzzy
 msgid ""
 "Jesus said, “I am the living bread that came down from heaven. Whoever eats "
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
-msgstr ""
-"耶稣说︰「我就是从天上降下来生命的食物﹐人若吃了这食物﹐就必活到永远。我要赐"
-"的食物就是我的肉﹐是为了世人的生命而赐的。」（约六51）"
+msgstr "耶稣说︰「我就是从天上降下来生命的食物，人若吃了这食物，就必活到永远。我要赐"
+"的食物就是我的肉，是为了世人的生命而赐的。」（约6 :51）"
 
 #: site/course/course-content.php:1378
-#, fuzzy
 msgid "Celebrate the Lord’s Supper"
-msgstr "操练 - 领圣餐"
+msgstr "庆祝主的圣餐"
 
 #: site/course/course-content.php:1381
-#, fuzzy
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
-msgstr ""
-"使用「天国酵母」手册里的「领圣餐」这段﹐花10分钟的时间，与组员一同守圣餐。"
+msgstr "在接下来的 10 分钟内与您的小组一起庆祝圣餐。"
 
 #: site/course/course-content.php:1424
-#, fuzzy
 msgid ""
 "Spend time this week practicing your Three-Minute Testimony, and then share "
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
-msgstr ""
-"这个星期﹐请拨出时间练习讲述你个人的三分钟见证﹐接着从你的「百人关注名单」"
-"中﹐挑出至少一位「非信徒」或「不清楚」的人，向他分享你的见证。"
+msgstr "本周花时间练习你的三分钟见证，然后与你的百名清单中至少一个被你标记为「不信者"
+"」或「未知」的人分享。"
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4251
-#, fuzzy
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
-msgstr ""
-"接着向神求问祂要你跟谁分享「三分钟见证」。分享之前，请先让小组知道这个人的名"
-"字。"
+msgstr "问神祂希望你用三分钟见证工具来训练谁。在结束之前，请与小组成员分享此人的名字"
+"。"
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
-#, fuzzy
 msgid "SESSION 5"
 msgstr "第五节"
 
 #: site/course/course-content.php:1485
-#, fuzzy
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
-msgstr "为你目前所看到的果效祷告感谢神﹐并求圣灵继续带领引导。"
+msgstr "为神透过祂子民的见证所采取的工作方式祷告并感谢祂。邀请祂的圣灵来带领你们共度"
+"时光。"
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
-#, fuzzy
 msgid "B.L.E.S.S. Prayer"
-msgstr "操练 BLESS 祝福祷告法﹙15分钟﹚"
+msgstr "B.L.E.S.S. 祝福祷告"
 
 #: site/course/course-content.php:1538
-#, fuzzy
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
-msgstr ""
-"行走祷告是个顺服神要我们为他人祷告的命令很简单的方式。顾名思义，行走祷告是边"
-"走路、边祷告！"
+msgstr "行走祷告是顺服神的命令为他人祷告的一种简单方式。顾名思义，行走祷告就是边走路"
+"、边祷告！"
 
 #: site/course/course-content.php:1567
-#, fuzzy
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
-msgstr ""
-"即使在又远又很少有人信耶稣的地方，如果能找出「平安之子」，那么门徒训练还是可"
-"以进展得非常快。怎么知道找到了「平安之子」？找到之后你又该做什么？"
+msgstr "即使在耶稣的追随者稀少且相距遥远的地方，找到一个和蔼可亲的人也能迅速推进门徒"
+"训练。"
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -2333,40 +2115,31 @@ msgstr ""
 "么可以？若不可以是为什么？"
 
 #: site/course/course-content.php:1594
-#, fuzzy
 msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
-msgstr "您附近的哪个社区或社会阶层似乎很少（或完全没有）王国的存在？"
+msgstr "你附近的哪个社区或社会阶层似乎很少（或根本没有）神国的存在？"
 
 #: site/course/course-content.php:1595
-#, fuzzy
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
-msgstr ""
-"在你们周遭有哪些社区或者族群，看起来几乎没有（或者完全没有）神国度临在的迹"
-"象？那当得平安的人，就是心里敞开﹑乐意接待﹑友多识广﹑善于分享的人，我们称为"
-"「平安之子」，何以在他所处的地区会加速福音的传扬？"
+msgstr "一个和平的人（一个开放、好客、了解他人并乐于分享的人）如何加速福音在该社区的"
+"传播？"
 
 #: site/course/course-content.php:1611
-#, fuzzy
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "操练 BLESS 祝福祷告法﹙15分钟﹚"
+msgstr "练习 B.L.E.S.S. 祝福祷告法"
 
 #: site/course/course-content.php:1614
-#, fuzzy
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
-msgstr ""
-"也是分成两到三人的小组﹐用15分钟来操练BLESS祝福祷告法﹐这个祷告模式可以在「天"
-"国酵母」训练手册里找到﹐学习为这五个方面祷告。"
+msgstr "两三个人分成一组，练习为 B.L.E.S.S. 祝福祷告法的五个领域祷告，彼此互相代祷。"
 
 #: site/course/course-content.php:1627
-#, fuzzy
 msgid "Prayer Walking Activity"
-msgstr "行走祷告"
+msgstr "行走祷告活动"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
@@ -2378,68 +2151,56 @@ msgstr "将大家分成两到三人的小组﹐去附近社区操练「行走祷
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
-msgstr "你们可以在聚会地点就近进行﹐或者计划好到特定地点做「行走祷告」。"
+msgstr "你们可以在聚会地点就近进行，或者计划好到特定地点做「行走祷告」。"
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr "安排60到90分钟的时间，由神带领来进行这个操练。"
 
 #: site/course/course-content.php:1641
-#, fuzzy
 msgid "This session ends with the prayer walking activity."
-msgstr "这堂课就以行走祷告这个操练来结束。"
+msgstr "本堂课以行走祷告操练结束。"
 
 #: site/course/course-content.php:1660
-#, fuzzy
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
-msgstr ""
-"在出去进行祈祷行走活动之前，请务必与您的小组一起祈祷，以结束你们在一起的时"
-"间。"
+msgstr "在您出去进行走祈祷活动之前，请务必与您的小组一起祈祷以结束你们在一起的时间。"
 
 #: site/course/course-content.php:1661
-#, fuzzy
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
-msgstr "感谢上帝，他爱迷失的人、最后的人和最弱小的人——包括我们！"
+msgstr "感谢神，祂爱那些迷失的、最后的和最小的人──包括我们！"
 
 #: site/course/course-content.php:1662
-#, fuzzy
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
-msgstr ""
-"请求他准备好你的心以及你在行走过程中会遇到的那些人的心，以便接受他的工作。"
+msgstr "请求祂准备好你的心以及你在过程中遇到的人的心，向神的工敞开心胸。"
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
-#, fuzzy
 msgid "SESSION 6"
-msgstr "第 6 节"
+msgstr "第 6 堂课"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
-#, fuzzy
 msgid ""
 "Pray and thank God for what He did in the last session, ask Him to help when "
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
-msgstr ""
-"为你们目前所看到的果效祷告感谢神﹐若有什么困难求神帮助﹐也求圣灵继续带领教"
-"导。"
+msgstr "为神在上一次课堂中所做的事祷告并感谢祂，当你发现很难服从时求神帮助，并邀请祂"
+"的圣灵带领你们一起度过这段时间。"
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
-#, fuzzy
 msgid "Faithfulness is Better than Knowledge"
-msgstr "忠心比知识更重要"
+msgstr "忠诚比知识更重要"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
-#, fuzzy
 msgid "And we will add this tool to our toolkit:"
-msgstr "我们将此工具添加到我们的工具包中："
+msgstr "我们将把这个工具加入我们的工具包："
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2450,61 +2211,49 @@ msgstr "我们将此工具添加到我们的工具包中："
 #: site/course/course-content.php:4778 site/course/course-content.php:4884
 #: site/course/course-content.php:4892 site/course/course-content.php:4899
 #: site/course/course-content.php:4925
-#, fuzzy
 msgid "3/3 Group Meeting"
 msgstr "三合一小组聚会模式"
 
 #: site/course/course-content.php:1775
-#, fuzzy
 msgid ""
 "When we help multiply disciples, we need to make sure we’re reproducing the "
 "right things. It’s important what disciples know – but it’s much more "
 "important what they DO with what they know."
-msgstr ""
-"我们在协助倍增门徒时﹐固然需要确定我们所传递的是正确的﹐门徒所知所学很重要﹐"
+msgstr "我们在协助倍增门徒时﹐固然需要确定我们所传递的是正确的﹐门徒所知所学很重要﹐"
 "但更重要的是门徒行出神所吩咐的。"
 
 #: site/course/course-content.php:1800
-#, fuzzy
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
-msgstr ""
-"回想一下你们已经知道了哪些神的命令？在遵守并分享这些命令上﹐你们有多「忠"
-"心」？"
+msgstr "回想一下你们已经知道了哪些神的命令？在遵守并分享这些命令上﹐你们有多「忠心」"
+"？"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
 "In the following video, you’ll be coached through an interactive 3/3 Group "
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
-msgstr ""
-"接下来的影片要透过互动式的三合一小组来培训你。我们会告诉你一个准则，之后将影"
+msgstr "接下来的影片要透过互动式的三合一小组来培训你。我们会告诉你一个准则，然后将影"
 "片按「暂停」，先在小组中实作。"
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
-#, fuzzy
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
-msgstr ""
-"这种「三合一小组」聚会模式﹐与你们参加过或听过的查经班或小组聚会相较﹐有哪些"
+msgstr "这种「三合一小组」聚会模式﹐与你们参加过或听过的查经班或小组聚会相比﹐有哪些"
 "不一样的地方？如果有﹐这些不一样之处，会带给小组什么样的影响？"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
-#, fuzzy
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr ""
-"「三合一小组」聚会能不能当成微型教会来看待？为什么可以？或为什么不可以？"
+msgstr "「三合一小组」聚会能不能当成微型教会来看待？为什么可以？为什么不可以？"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4793
-#, fuzzy
 msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
-msgstr ""
-"在这个星期拨出时间操练你们在「三合一小组」要求的顺服﹑训练﹑分享里面所承诺的"
+msgstr "在这个星期拨出时间操练你们在「三合一小组」要求的顺服﹑训练﹑分享里面所承诺的"
 "事项。"
 
 #: site/course/course-content.php:1880 site/course/course-content.php:4794
@@ -2512,28 +2261,24 @@ msgid ""
 "Pray and ask God who He wants you to share the 3/3 Group format with before "
 "your group meets again. Share this person’s name with the group before you "
 "go."
-msgstr ""
-"祷告寻求在下次聚会之前﹐你要跟谁分享「三合一小组聚会」模式﹐在离开之前把这个"
-"人的名字告知组员。"
+msgstr "祷告寻求在下次聚会之前﹐你要跟谁分享「三合一小组聚会」模式﹐在结束前把这个人"
+"的名字告诉组员。"
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
-#, fuzzy
 msgid "SESSION 7"
-msgstr "第七节"
+msgstr "第七堂课"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
-#, fuzzy
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
-msgstr "最后为大家竭力忠心跟随耶稣来祷告感谢神，并求圣灵继续引导帮助你们。"
+msgstr "为大家竭力忠心跟随耶稣来祷告感谢神，并求圣灵继续引导帮助你们。"
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
-#, fuzzy
 msgid "The Training Cycle"
-msgstr "培训循环不息"
+msgstr "培训循环"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2545,7 +2290,7 @@ msgstr ""
 
 #: site/course/course-content.php:2022
 msgid "Have you ever been a part of a Training Cycle?"
-msgstr "有人曾经参与过任何循环的培训模式吗？"
+msgstr "你参加过循环培训吗？"
 
 #: site/course/course-content.php:2023
 msgid "Who did you train? Or who trained you?"
@@ -2555,51 +2300,46 @@ msgstr "你们培训过哪些人？或者有谁培训过你们？"
 msgid ""
 "Could the same person be at different parts of the Training Cycle while "
 "learning different skills?"
-msgstr ""
-"同一个人﹐有没有办法同时是循环模式培训当中的不同角色？有没有可能一边学习操练"
-"各种技巧﹐一边去教导别人怎么用那工具？"
+msgstr "同一个人﹐有没有办法同时是循环培训中的不同角色？有没有可能一边学习操练各种技"
+"巧﹐一边去教导别人怎么用那工具？"
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
 msgstr "以这个方式去装备人﹐会产生什么果效？"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
-#, fuzzy
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
-msgstr ""
-"回顾——照着上一堂课的挑战﹐顺服﹑训练与分享步骤﹐来彼此评量鼓励做得如何。"
+msgstr "回顾 - 使用上一课的「服从」、「训练」和「分享」挑战来互相检视。 （30分钟）"
 
 #: site/course/course-content.php:2042
-#, fuzzy
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
-msgstr "仰望—各组查考马可福音五1-20﹐并回答仰望单元里 a 到 d 的问题。"
+msgstr "查阅－用马可福音 5:1-20 作为小组的阅读文章，并在查阅部分回答问题 1-4。 "
+"（30分钟）"
 
 #: site/course/course-content.php:2043
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
-msgstr ""
-"前瞻—使用前瞻单元里 e 到 g 的问题﹐来进一步思考你们要怎么顺服﹑训练与分享。"
+msgstr "前瞻 - 使用「前瞻」部分中的问题 5、6 和 7 来制定你将如何服从、训练和分享。 "
+"（30分钟）"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
-msgstr "你最喜欢「三合一小组」聚会的哪些方面？为什么？"
+msgstr "你最喜欢「三合一小组」聚会的什么？为什么？"
 
 #: site/course/course-content.php:2064
 msgid "What was the most challenging? Why?"
-msgstr "你们认为最有挑战的是什么？为什么？"
+msgstr "你们认为最具有挑战的是什么？为什么？"
 
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
-#, fuzzy
 msgid "Concept heard in this session:"
-msgstr "本次会议中听到的概念："
+msgstr "本次课堂中学到的观念："
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2607,142 +2347,119 @@ msgstr "本次会议中听到的概念："
 #: site/course/course-content.php:4091 site/course/course-content.php:4377
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
-#, fuzzy
 msgid "Tool heard in this session:"
-msgstr "本次会话中听到的工具："
+msgstr "本次课堂中学到的工具："
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
-#, fuzzy
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
-msgstr "选择你在 Zúme 中学到的一项技能或概念，并指导某人将其复制到第四代。"
+msgstr "选择您在 Zúme 中学到的一项技能或观念，并指导某人将其复制到第四代。"
 
 #: site/course/course-content.php:2100
-#, fuzzy
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
-msgstr "挑战你所指导的人继续这一过程，直到第五代。"
+msgstr "挑战你指导的人将这个过程延续到另外的（第五代）世代。"
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
-#, fuzzy
 msgid "SESSION 8"
-msgstr "第 8 节"
+msgstr "第 8 堂课"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
-#, fuzzy
 msgid ""
 "Pray and thank God for giving your group the energy, the focus and the "
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
-"祷告感谢神赐给你们有活力﹐能专注﹐且忠心于这个门徒训练课程的学习。求圣灵提醒"
-"每一位记得﹐主说：「离了我﹐你们就不能做什么。」（约十五5）"
+"祷告感谢神赐给你们有活力、专注力，且忠诚于这个门徒训练课程的学习。求圣灵提醒"
+"小组中的每一位，主说：「离了我，你们就不能做什么。」（约 15:5）"
 
 #: site/course/course-content.php:2192
-#, fuzzy
 msgid "And we will practice this tool from our toolkit:"
 msgstr "我们将从我们的工具包中练习这个工具："
 
 #: site/course/course-content.php:2212
-#, fuzzy
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
-msgstr "耶稣说︰「你们中间谁愿为大﹐就必做你们的用人。」（太廿26；可十43）"
+msgstr "耶稣说︰「你们中间谁愿为大﹐就必做你们的用人。」（太 20:26；可 10:43）"
 
 #: site/course/course-content.php:2239
-#, fuzzy
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
-msgstr ""
-"你可知，有哪群弟兄姐妹已经稳定参与聚会﹐或愿意另外组成一个「带领者培育小"
-"组」﹐一同来学习「天国酵母」门徒训练？"
+msgstr "你可知，有哪些弟兄姊妹已经稳定参与聚会，或愿意另外组成一个「带领者培育小组」"
+"，一同来学习「天国酵母」门徒训练？"
 
 #: site/course/course-content.php:2240
 msgid "What would it take to bring them together?"
 msgstr "要怎么把这些人聚集起来呢？"
 
 #: site/course/course-content.php:2257
-#, fuzzy
 msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
-msgstr ""
-"仰望——各组请查考使徒行传二42-47，并回答「仰望」这一小节里 a 到 d 的问题。"
+msgstr "寻找 – 使用使徒行传 2:42-47 作为小组的阅读文章并回答问题 1-4。 （30 分钟）"
 
 #: site/course/course-content.php:2258
-#, fuzzy
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
-msgstr "前瞻——照手册上 e 到 g 的问题﹐来进一步思考你们要怎么顺服﹑训练与分享。"
+msgstr "前瞻 – 用问题 5、6 和 7 来发展您将如何服从、训练和分享。 （30分钟）"
 
 #: site/course/course-content.php:2277
-#, fuzzy
 msgid "Concept from this session:"
-msgstr "本次会议的概念："
+msgstr "本堂课的概念："
 
 #: site/course/course-content.php:2281
-#, fuzzy
 msgid "Tool from this session:"
-msgstr "本次会议的工具："
+msgstr "本堂课的工具："
 
 #: site/course/course-content.php:2298
-#, fuzzy
 msgid ""
 "Select some people from your List of 100 who are already believers. Explain "
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
-msgstr ""
-"从你的 100 人名单中选择一些已经是信徒的人。向他们解释领导小组，看看他们是否有"
-"兴趣成为其中的一员。"
+msgstr "从你的百人清单中选择一些已经是信徒的人。向他们解释领导小组，看看他们是否有兴"
+"趣成为其中的一员。"
 
 #: site/course/course-content.php:2299
-#, fuzzy
 msgid ""
 "Pray and ask God who He wants you to share the Leadership Cell tool with "
 "before your group meets again. Challenge them to then share it with someone "
 "else."
-msgstr ""
-"祷告寻求在下次聚会之前﹐你要跟哪一位分享「带领者培育小组」这个工具﹐在离开之"
-"前别忘了把这个人的名字告知组员。"
+msgstr "祷告并询问上帝，在您的小组再次聚会之前，祂希望您与谁分享领导小组工具。挑战他"
+"们然后与其他人分享。"
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
-#, fuzzy
 msgid "SESSION 9"
-msgstr "第九节"
+msgstr "第九堂课"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
-#, fuzzy
 msgid ""
 "Pray and thank God that his ways are not our ways and His thoughts are not "
 "our thoughts. Ask Him to give each member of your group the mind of Christ - "
 "always focused on His Father‘s work. Ask the Holy Spirit to lead your time "
 "together and make it the best session yet."
 msgstr ""
-"祷告感谢神﹐祂的道路高过我们的道路﹐祂的意念非同我们的意念﹐求祂给每一位组员"
-"都有基督的心——总是专注在天父的事上。求圣灵继续帮助引导﹐让这堂课成为你们到目"
+"祷告感谢神，祂的道路高过我们的道路，祂的意念非同我们的意念，求祂给每一位组员"
+"都有基督的心——总是专注在天父的事上。求圣灵继续帮助引导，让这堂课成为你们到目"
 "前为止最棒的一堂。"
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2769
-#, fuzzy
 msgid "Non-Sequential Growth"
 msgstr "多管齐下的增长"
 
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
-#, fuzzy
 msgid "Four Fields"
-msgstr "四个领域诊断图"
+msgstr "四个领域"
 
 #: site/course/course-content.php:2415
-#, fuzzy
 msgid ""
 "When people think about disciples multiplying, they often think of it as a "
 "step-by-step process. The problem with that is — that’s not how it works "
@@ -2751,7 +2468,7 @@ msgstr "一说到倍增门徒，大家通常想到的是按部就班去做，但
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
-msgstr "影片里最让你感到振奋的是哪个观念？为什么？"
+msgstr "影片里最让你感到兴奋的是哪个观念？为什么？"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
@@ -2762,21 +2479,18 @@ msgid ""
 "Multiplying matters and multiplying quickly matters even more. Pace matters "
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
-msgstr ""
-"倍增重要﹐快快地倍增更是重要﹐速度很关键﹐因为永生超越时间的存在﹐而我们永生"
-"会居住在哪里﹐是在短暂的一段我们称之为「生命」的时间里面决定的。"
+msgstr "倍增很重要﹐快速地倍增更是重要﹐速度是关键﹐因为永生超越时间的存在﹐而我们永"
+"生会居住在哪里﹐是在一段短暂我们称之为「生命」的时间里面决定的。"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
 msgstr "为什么步调很重要？"
 
 #: site/course/course-content.php:2487
-#, fuzzy
 msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
-msgstr ""
-"现在想想你的想法﹑行动与态度﹐需要做什么改变﹐才能更符合神对步调的看重？"
+msgstr "现在想想你的想法﹑行动与态度﹐需要做什么改变﹐才能更符合神对步调的看重？"
 
 #: site/course/course-content.php:2488
 msgid ""
@@ -2784,50 +2498,41 @@ msgid ""
 msgstr "在这个星期﹐你可以做哪件带来改变的事？"
 
 #: site/course/course-content.php:2506
-#, fuzzy
 msgid ""
 "Jesus taught us that we are to stay close — to live as a small, spiritual "
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
-msgstr ""
-"耶稣教导我们，我们要亲密地生活，像一个精神上的小家庭一样，彼此相爱、奉献生"
-"命，共同庆祝和受苦。"
+msgstr "耶稣教导我们要保持亲密关系——作为一个精神上的小家庭生活，彼此相爱并奉献生命，"
+"一起庆祝和吃苦。"
 
 #: site/course/course-content.php:2507
-#, fuzzy
 msgid ""
 "However, Jesus also taught us to leave our homes and loved ones behind and "
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
-msgstr ""
-"然而，耶稣也教导我们要离开家园和所爱的人，愿意去任何地方分享和建立新的精神家"
-"庭。"
+msgstr "然而，耶稣也教导我们离开家园和亲人，愿意去任何地方——任何地方——分享和建立新的"
+"精神家庭。"
 
 #: site/course/course-content.php:2532
-#, fuzzy
 msgid ""
 "What are some advantages of maintaining a consistent spiritual family that "
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
-msgstr ""
-"相较于将原有的属灵家庭切分为几个小组，保有原来属灵家庭的样貌，倍增出新的属灵"
+msgstr "相较于将原有的属灵家庭切分为几个小组，保有原来属灵家庭的样貌，倍增出新的属灵"
 "家庭，有何益处？"
 
 #: site/course/course-content.php:2549
-#, fuzzy
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
-msgstr ""
-"辅导清单是一个简单的工具，你可以使用它来帮助指导你如何帮助他人成为一个完全合"
-"格的门徒。"
+msgstr "辅导清单是一个简单的工具，可以用来帮助引导当你帮助他人成为装备齐全的门徒的各"
+"个环节。"
 
 #: site/course/course-content.php:2576
-#, fuzzy
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
-msgstr "使用第 1 行进行自我评估，并在辅导清单上标记相应的列。"
+msgstr "评估自己 - 评估自己并在辅导清单上的对应栏做标记。"
 
 #: site/course/course-content.php:2596
 #, fuzzy
@@ -3057,9 +2762,8 @@ msgstr ""
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
-#, fuzzy
 msgid "SESSION 10"
-msgstr "第十节"
+msgstr "第十堂课"
 
 #: site/course/course-content.php:2852
 #, fuzzy
@@ -3536,9 +3240,8 @@ msgstr ""
 "然后让他们有能力与其他人分享。"
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
-#, fuzzy
 msgid "SESSION 11"
-msgstr "第 11 节"
+msgstr "第 11 堂课"
 
 #: site/course/course-content.php:4455
 #, fuzzy
@@ -3551,9 +3254,8 @@ msgstr ""
 "眼睛看到王国尚未到来的地方。"
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
-#, fuzzy
 msgid "SESSION 12"
-msgstr "第 12 节"
+msgstr "第 12 堂课"
 
 #: site/course/course-content.php:4638
 #, fuzzy
@@ -3568,9 +3270,8 @@ msgid ""
 msgstr "指导其他人使用 BLESS 模式为他人祈祷，并陪伴他们这样做。"
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
-#, fuzzy
 msgid "SESSION 13"
-msgstr "第 13 节"
+msgstr "第 13堂课"
 
 #: site/course/course-content.php:4700
 #, fuzzy
@@ -3582,9 +3283,8 @@ msgstr ""
 "践。"
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
-#, fuzzy
 msgid "SESSION 14"
-msgstr "第 14 节"
+msgstr "第 14 堂课"
 
 #: site/course/course-content.php:4902
 #, fuzzy
@@ -3629,9 +3329,8 @@ msgstr ""
 "人的名字告知组员。"
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
-#, fuzzy
 msgid "SESSION 15"
-msgstr "第 15 节"
+msgstr "第 15 堂课"
 
 #: site/course/course-content.php:5002
 #, fuzzy
@@ -3650,9 +3349,8 @@ msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr "与您名单上的100名信徒分享“训练周期”。"
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
-#, fuzzy
 msgid "SESSION 16"
-msgstr "第 16 节"
+msgstr "第 16 堂课"
 
 #: site/course/course-content.php:5193
 #, fuzzy
@@ -3665,9 +3363,8 @@ msgstr ""
 "式。如果没有，请与你认识的另一个信徒分享。"
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
-#, fuzzy
 msgid "SESSION 17"
-msgstr "第 17 节"
+msgstr "第 17 堂课"
 
 #: site/course/course-content.php:5256
 #, fuzzy
@@ -3697,9 +3394,8 @@ msgid ""
 msgstr "与他人分享“网络领导力”的概念。然后培训他们与他人分享。"
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
-#, fuzzy
 msgid "SESSION 18"
-msgstr "第 18 节"
+msgstr "第 18 堂课"
 
 #: site/course/course-content.php:5434
 #, fuzzy
@@ -3727,9 +3423,8 @@ msgid ""
 msgstr "与您认识的另一个信徒分享世代映射工具，作为一种愿景铸造练习。"
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
-#, fuzzy
 msgid "SESSION 19"
-msgstr "第 19 节"
+msgstr "第 19 堂课"
 
 #: site/course/course-content.php:5526
 #, fuzzy
@@ -3759,9 +3454,8 @@ msgid ""
 msgstr "与您名单上的 100 人中的两位信徒分享“同伴辅导小组”的概念。"
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
-#, fuzzy
 msgid "SESSION 20"
-msgstr "第 20 节"
+msgstr "第 20 堂课"
 
 #: site/course/course-content.php:5650
 #, fuzzy
