@@ -228,7 +228,7 @@ function zume_download_url( $meta_key, $current_language = false ) {
     if ( ! $current_language ) {
         $current_language = zume_current_language();
     }
-    $url = '';
+    $url = null;
 
     $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT p.ID FROM zume_posts p WHERE p.post_type = 'zume_download' AND p.post_title = %s", $current_language ) );
     if ( empty( $post_id ) ) {
@@ -241,4 +241,3 @@ function zume_download_url( $meta_key, $current_language = false ) {
 
     return zume_mirror_url() . $current_language . '/' . $file_name;
 }
-
