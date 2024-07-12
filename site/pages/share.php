@@ -26,6 +26,7 @@ class Zume_Training_Share extends Zume_Magic_Page
         $this->lang = get_locale();
 
         $this->page_title = esc_html__( 'Share', 'zume' );
+        $this->page_description = esc_html__( 'Links to share the concepts and tools of the zume training course', 'zume' );
 
         [
             'url_parts' => $url_parts,
@@ -40,6 +41,7 @@ class Zume_Training_Share extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );

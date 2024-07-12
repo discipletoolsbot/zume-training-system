@@ -35,6 +35,7 @@ class Zume_Training_Home extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );
@@ -83,7 +84,7 @@ class Zume_Training_Home extends Zume_Magic_Page
         </div>
         <?php require __DIR__ . '/../parts/nav.php'; ?>
 
-        <div class="cover-page | hero min-vh-90 position-relative">
+        <div class="cover-page | min-vh-90 position-relative">
 
             <div class="switcher container | align-items-center gap0 pt-4">
                 <div class="show-for-large position-relative">
@@ -93,9 +94,9 @@ class Zume_Training_Home extends Zume_Magic_Page
                     <img class="flip-on-rtl" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JesusPointing-1.svg' ) ?>" alt="Jesus pointing">
                 </div>
                 <div class="stack | grow-2 text-center">
-                    <div class="hero">
-                        <?php echo wp_kses( get_post_meta( '19850', 'home_'.$current_language_code, true ), 'post' ); ?>
-                    </div>
+                    <h1 class="hero">
+                        <?php echo wp_kses( str_replace( 'h3', 'span', str_replace( 'h2', 'span', str_replace( 'h1', 'span', get_post_meta( '19850', 'home_'.$current_language_code, true ) ) ) ), 'post' ); ?>
+                    </h1>
                     <div class="switcher | switcher-width-20 s-3">
 
                         <?php if ( is_user_logged_in() ): ?>
@@ -174,16 +175,6 @@ class Zume_Training_Home extends Zume_Magic_Page
                 </div>
             </div>
             <a href="<?php echo esc_url( zume_start_wizard_url() ) ?>" class="btn large  mx-auto fit-content"><?php echo esc_html__( "I'm Ready!", 'zume' ) ?></a>
-        </div>
-
-        <?php // @todo unfinished development below?? ?>
-        <div class="hidden bg-gray-500" style="max-height: 100vh; overflow-y: scroll">
-            <div class="container">
-                <h2>Development Area</h2>
-                <a href="/wizard/make-a-plan" class="btn">Wizard: Example Make a plan</a>
-                <a href="/wizard/connect-to-coach" class="btn">Wizard: Connect to a coach</a>
-                <p><strong><?php echo esc_html__( 'User Profile', 'zume' ) ?></strong><pre><?php print_r( $zume_user_profile ); ?></pre></p>
-            </div>
         </div>
 
         <div class="stack-3 | py-3 text-center bg-brand-gradient">

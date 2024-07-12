@@ -24,6 +24,7 @@ class Zume_Training_About extends Zume_Magic_Page
     public function __construct() {
 
         $this->page_title = esc_html__( 'About', 'zume' );
+        $this->page_description = esc_html__( 'Zúme Training exists to saturate the globe with multiplying disciples in our generation.', 'zume' );
 
         parent::__construct();
         $this->lang = get_locale();
@@ -43,6 +44,7 @@ class Zume_Training_About extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );

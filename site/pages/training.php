@@ -26,6 +26,7 @@ class Zume_Training_Page extends Zume_Magic_Page
         $this->lang = get_locale();
 
         $this->page_title = esc_html__( 'Training', 'zume' );
+        $this->page_description = esc_html__( 'Zúme is 20 hours of training. But those 20 hours can be broken up differently depending on your training group‘s availability.', 'zume' );
 
         [
             'url_parts' => $url_parts,
@@ -42,6 +43,7 @@ class Zume_Training_Page extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );

@@ -54,6 +54,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 

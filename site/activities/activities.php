@@ -10,6 +10,7 @@ class Zume_Activites extends Zume_Magic_Page
     public $language_code = 'en';
 
     public $page_title = 'Zúme Activity';
+    public $page_description = '';
     public $root = 'activities';
     public $type = 'base';
     public static $token = 'zume_activity_base';
@@ -42,6 +43,7 @@ class Zume_Activites extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
 

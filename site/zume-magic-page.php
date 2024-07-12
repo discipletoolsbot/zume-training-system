@@ -6,7 +6,6 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
     public function __construct() {
         parent::__construct();
 
-        add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
         add_filter( 'dt_custom_dir_attr_override', '__return_true' );
     }
 
@@ -33,6 +32,19 @@ class Zume_Magic_Page extends DT_Magic_Url_Base {
 
     public function consistent_head() {
         require_once trailingslashit( __DIR__ ) . 'parts/head.php';
+        ?>
+
+        <?php if ( isset( $this->page_description ) && !empty( $this->page_description ) ) : ?>
+
+            <meta name="description" content="<?php echo esc_attr( $this->page_description ) ?>">
+
+        <?php else : ?>
+
+            <meta name="description" content="<?php echo esc_attr__( 'Zúme Training is an on-line and in-life learning experience designed for small groups who follow Jesus. An online, in-life disciple making movement training', 'zume' ) ?>">
+
+        <?php endif; ?>
+
+        <?php
     }
 
     /**

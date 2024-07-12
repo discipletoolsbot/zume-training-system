@@ -17,7 +17,7 @@
                         <?php echo esc_html__( 'Download Course Slides', 'zume' ) ?>
                     </h2>
                     <p>
-                        <?php echo esc_html__( 'The entire Zúme course can be downloaded and ran through Powerpoint or Keynote. This is a great solution for training in areas with weak internet. The videos are embedded in the slides and can be easily played without internet. The QR code system still requires online access for trainee checkins and activity resources.', 'zume' ) ?>
+                        <?php echo esc_html__( 'The entire Zúme course can be downloaded and run through Powerpoint or Keynote. This is a great solution for training in areas with weak internet. The videos are embedded in the slides and can be easily played without internet. The QR code system still requires online access for trainee checkins and activity resources.', 'zume' ) ?>
                     </p>
                 </div>
             </div>

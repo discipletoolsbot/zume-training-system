@@ -40,6 +40,7 @@ class Zume_Training_Mobile_App extends Zume_Magic_Page
 
             // page content
             add_action( 'dt_blank_head', [ $this, '_header' ] );
+            add_action( 'dt_blank_head', [ $this, 'consistent_head' ], 5 );
             add_action( 'dt_blank_body', [ $this, 'body' ] );
             add_action( 'dt_blank_footer', [ $this, '_footer' ] );
             add_action( 'wp_footer', [ $this, 'action_wp_footer' ] );
