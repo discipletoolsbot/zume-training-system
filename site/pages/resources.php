@@ -127,24 +127,24 @@ class Zume_Training_Resources extends Zume_Magic_Page
             <div class="switcher | gap-3">
                 <div class="stack-1 | grow-2">
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'ppt_10_session', $zume_current_language ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (PPT)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'ppt_10_session', $zume_current_language ) ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (PPT)</a>
                     </p>
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'ppt_20_session', $zume_current_language ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (PPT)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'ppt_20_session', $zume_current_language ) ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (PPT)</a>
                     </p>
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'ppt_intensive', $zume_current_language ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (PPT)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'ppt_intensive', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (PPT)</a>
                     </p>
                 </div>
                 <div class="stack-1 | grow-2">
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'key_10_session', $zume_current_language ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (KEY)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'key_10_session', $zume_current_language ) ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (KEY)</a>
                     </p>
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'key_20_session', $zume_current_language ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (KEY)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'key_20_session', $zume_current_language ) ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (KEY)</a>
                     </p>
                     <p>
-                        <a class="btn px--6" target="_blank" href="<?php echo zume_download_url( 'key_intensive', $zume_current_language ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (KEY)</a>
+                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( 'key_intensive', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (KEY)</a>
                     </p>
                 </div>
             </div>
@@ -159,6 +159,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
 
         <!-- Mobile App Section -->
         <?php
+        /*
         $lang_code = zume_current_language();
         $google_locales = zume_google_locales();
         $apple_codes = zume_apple_locales( 'codes' );
@@ -200,6 +201,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
                     $apple_lang = 'en-us';
             }
         }
+        */
         ?>
         <!--
         <hr>

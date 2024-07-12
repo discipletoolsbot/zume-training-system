@@ -230,7 +230,7 @@ function zume_download_url( $meta_key, $current_language = false ) {
     }
     $url = '';
 
-    $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT p.ID FROM zume_posts p WHERE p.post_type = 'zume_download' AND p.post_title = 'en'", $current_language ) );
+    $post_id = $wpdb->get_var( $wpdb->prepare( "SELECT p.ID FROM zume_posts p WHERE p.post_type = 'zume_download' AND p.post_title = %s", $current_language ) );
     if ( empty( $post_id ) ) {
         return $url;
     }
