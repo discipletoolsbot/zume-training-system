@@ -4,8 +4,7 @@
 .accordion-title {
     color: color('black');
     background-color: color('white');
-    padding-left: spacing(0) spacing(3);
-    padding-right: spacing(0) spacing(3);
+    padding: spacing(0) spacing(3);
     border: none;
 }
 .accordion-title:focus, .accordion-title:hover {
