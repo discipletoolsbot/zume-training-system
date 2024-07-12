@@ -40,6 +40,10 @@ $stack-sizes: (-5, -4, -3, -2, -1, 1, 2, 3, 4, 5);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    &[data-fit-content] {
+      display: grid;
+    }
   }
 
   .stack-#{$i} > * {

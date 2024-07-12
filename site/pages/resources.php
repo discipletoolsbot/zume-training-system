@@ -89,19 +89,19 @@ class Zume_Training_Resources extends Zume_Magic_Page
         <div class="container-md stack-2 | py-1 w-70">
             <div class="switcher | gap-3">
                 <div class="stack-1 | grow-2">
-                    <h2 class="brand h3 d-flex align-items-center gap-1">
+                    <h2 class="brand h3 cluster align-items-center gap-1">
                         <img class="w-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/guys-reading.svg' ) ?>" alt="guys reading">
                         <?php echo esc_html__( 'Training Guidebook', 'zume' ) ?>
                     </h2>
                     <p>
                         <?php echo esc_html__( 'Zúme Training is now available in a complete workbook. All the concepts, tools, discussion questions and challenges from the training now in the palm of your hands. QR codes for every session give you access to all the video content as well!', 'zume' ) ?>
                     </p>
-                    <p>
+                    <div class="cluster">
                         <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( '33', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
                         <?php if ( 'en' === $zume_current_language ) { ?>
                             <a class="btn outline px--6" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
                         <?php }  ?>
-                    </p>
+                    </div>
                 </div>
                 <div class="stack center | text-center">
                     <img class="w-16rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/workbooksample.png' ) ?>" alt="zume training book">
@@ -123,7 +123,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
             <hr>
             <div class="container-md stack-2 | py-1 w-70">
                 <div class="switcher | gap-3">
-                    <h2 class="brand h3 d-flex align-items-center gap-1">
+                    <h2 class="brand h3 cluster align-items-center gap-1">
                         <img class="w-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/guys-reading.svg' ) ?>" alt="guys reading">
                         <?php echo esc_html__( 'Download Course Slides', 'zume' ) ?>
                     </h2>
@@ -133,39 +133,27 @@ class Zume_Training_Resources extends Zume_Magic_Page
                 </div>
             </div>
             <div class="container-md | py-1 w-70">
-                <div class="switcher | gap-3">
-                    <div class="stack-1 | grow-2">
+                <div class="switcher | gap-3 switcher-width-40">
+                    <div class="stack-1 | grow-2 justify-content-center" data-fit-content>
                         <?php if ( $ppt_10 ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $ppt_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (PPT)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $ppt_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (PPT)</a>
                         <?php } ?>
                         <?php if ( $ppt_20 ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $ppt_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (PPT)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $ppt_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (PPT)</a>
                         <?php } ?>
                         <?php if ( $ppt_intense ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $ppt_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (PPT)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $ppt_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (PPT)</a>
                         <?php } ?>
                     </div>
-                    <div class="stack-1 | grow-2">
+                    <div class="stack-1 | grow-2 justify-content-center" data-fit-content>
                         <?php if ( $key_10 ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $key_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (KEY)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $key_10 ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?> (KEY)</a>
                         <?php } ?>
                         <?php if ( $key_20 ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $key_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (KEY)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $key_20 ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?> (KEY)</a>
                         <?php } ?>
                         <?php if ( $key_intense ) { ?>
-                            <p>
-                                <a class="btn px--6" target="_blank" href="<?php echo esc_url( $key_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (KEY)</a>
-                            </p>
+                                <a class="btn" target="_blank" href="<?php echo esc_url( $key_intense ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?> (KEY)</a>
                         <?php } ?>
                     </div>
                 </div>
