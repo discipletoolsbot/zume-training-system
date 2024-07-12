@@ -3,6 +3,8 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly.
 
+// phpcs:disable
+
 use Gettext\Loader\PoLoader;
 
 class Zume_Training_Translator extends Zume_Magic_Page
@@ -180,6 +182,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             <?php
         } else {
             ?>
+            <?php //phpcs:ignore ?>
             <script src="https://cdn.tiny.cloud/1/q7cy7hksisjrvfcglos9jqi7xvy0orfu9w2ydbfig0x37ylw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
             <style>
                 table tr td {
@@ -719,7 +722,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 <p>
                     <strong><?php echo $language['name'] ?>: </strong> <?php echo number_format( $weblate[$language['weblate']]['translated_words'] ); ?>
                 </p>
-                <p>Last Updated: <?php echo date( 'Y-m-d H:i:s', strtotime( $weblate[$language['weblate']]['last_change'] ) ) ?></p>
+                <p>Last Updated: <?php echo gmdate( 'Y-m-d H:i:s', strtotime( $weblate[$language['weblate']]['last_change'] ) ) ?></p>
                 <p>Last Author: <?php echo $weblate[$language['weblate']]['last_author'] ?></p>
              </div>
              <div class="cell center">
@@ -2352,7 +2355,7 @@ function zume_last_activity( $post_type = null ) {
         }
 
         $data[$item['meta_key'].$item['post_id']][$item['type']] = [
-            'time' => date( 'n-j (g:i a)', strtotime( $item['timestamp'] ) ),
+            'time' => gmdate( 'n-j (g:i a)', strtotime( $item['timestamp'] ) ),
             'author' => $item['display_name'],
             'color' => 'green',
             'timestamp' => strtotime( $item['timestamp'] ),
@@ -2592,3 +2595,5 @@ function zume_get_weblate() {
 
     return $languages;
 }
+
+// phpcs:enable
