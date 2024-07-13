@@ -97,15 +97,16 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
 
 //        if ( !isset( $expected_roles['my_starter_role'] ) ){
 //            $expected_roles['multiplier'] = [
-//
 //                'label' => 'Plans',
 //                'description' => 'Does something Cool',
 //                'permissions' => [
-//                    'access_zume_plans' => true,
+//                    'access_'.$this->post_type => true,
 //                    // @todo more capabilities
 //                ],
 //            ];
 //        }
+
+        $expected_roles['multiplier']['permissions']['access_' . $this->post_type ] = true;
 
         // if the user can access contact they also can access this post type
         foreach ( $expected_roles as $role => $role_value ){
