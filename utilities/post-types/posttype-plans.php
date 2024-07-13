@@ -129,8 +129,6 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             $expected_roles['administrator']['permissions']['update_' . $this->post_type] = true;
         }
 
-        dt_write_log($expected_roles);
-
         return $expected_roles;
     }
 
