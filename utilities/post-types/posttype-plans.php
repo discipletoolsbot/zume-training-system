@@ -119,6 +119,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
         if ( isset( $expected_roles['dt_admin'] ) ){
             $expected_roles['dt_admin']['permissions']['view_any_'.$this->post_type ] = true;
             $expected_roles['dt_admin']['permissions']['update_any_'.$this->post_type ] = true;
+            $expected_roles['dt_admin']['permissions']['assign_any_'.$this->post_type ] = true;
             $expected_roles['dt_admin']['permissions']['access_' . $this->post_type ] = true;
             $expected_roles['dt_admin']['permissions']['create_' . $this->post_type] = true;
             $expected_roles['dt_admin']['permissions']['update_' . $this->post_type] = true;
@@ -127,6 +128,7 @@ class Zume_Plans_Post_Type extends DT_Module_Base {
             $expected_roles['administrator']['permissions']['view_any_'.$this->post_type ] = true;
             $expected_roles['administrator']['permissions']['update_any_'.$this->post_type ] = true;
             $expected_roles['administrator']['permissions']['delete_any_'.$this->post_type ] = true;
+            $expected_roles['administrator']['permissions']['assign_any_'.$this->post_type ] = true;
             $expected_roles['administrator']['permissions']['access_' . $this->post_type ] = true;
             $expected_roles['administrator']['permissions']['create_' . $this->post_type] = true;
             $expected_roles['administrator']['permissions']['update_' . $this->post_type] = true;
