@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { RouteNames } from './routes';
+import { Wizards } from '../wizard/wizard-constants';
 
 export class DashTrainingsList extends LitElement {
     static get properties() {
@@ -24,6 +25,9 @@ export class DashTrainingsList extends LitElement {
 
         return route.pattern.replace(':code', code)
     }
+    createTraining() {
+        this.dispatchEvent(new CustomEvent( 'open-wizard', { bubbles: true, detail: { type: Wizards.makeAGroup } } ))
+    }
 
     render() {
         return html`
@@ -34,12 +38,13 @@ export class DashTrainingsList extends LitElement {
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
-                    <div class="icon-btn-group">
-                        <button class="${this.view === 'list' ? 'selected' : ''}" title=${jsObject.translations.list} @click=${() => this.switchView('list')}>
-                            <span class="icon z-icon-list" aria-hidden="true"></span>
-                        </button>
-                        <button class="${this.view === 'grid' ? 'selected' : ''}" title=${jsObject.translations.grid} @click=${() => this.switchView('grid')}>
-                            <span class="icon z-icon-grid" aria-hidden="true"></span>
+                    <div class="">
+                        <button
+                            class="icon-btn f-2 brand-light"
+                            aria-label=${jsObject.translations.create_training_group}
+                            @click=${this.createTraining}
+                        >
+                            <span class="icon z-icon-plus"></span>
                         </button>
                     </div>
                 </div>

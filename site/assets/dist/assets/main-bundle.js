@@ -1979,7 +1979,7 @@ ${this.training.zoom_link_note}
                     </div>
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("dash-trainings",Yo);class Ko extends _{static get properties(){return{trainingGroups:{type:Object,attribute:!1}}}constructor(){super(),this.trainingGroups=jsObject.training_groups,this.routeName=b.myTrainings,this.route=k.getRoute(this.routeName)}makeTrainingHref(t){return k.routes.find(({name:n})=>n===b.myTraining).pattern.replace(":code",t)}render(){return l`
+        `}createRenderRoot(){return this}}customElements.define("dash-trainings",Yo);class Ko extends _{static get properties(){return{trainingGroups:{type:Object,attribute:!1}}}constructor(){super(),this.trainingGroups=jsObject.training_groups,this.routeName=b.myTrainings,this.route=k.getRoute(this.routeName)}makeTrainingHref(t){return k.routes.find(({name:n})=>n===b.myTraining).pattern.replace(":code",t)}createTraining(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.makeAGroup}}))}render(){return l`
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <div class="dashboard__title">
@@ -1987,12 +1987,13 @@ ${this.training.zoom_link_note}
                         <span class="icon ${this.route.icon}"></span>
                         <h1 class="h3">${this.route.translation}</h1>
                     </div>
-                    <div class="icon-btn-group">
-                        <button class="${this.view==="list"?"selected":""}" title=${jsObject.translations.list} @click=${()=>this.switchView("list")}>
-                            <span class="icon z-icon-list" aria-hidden="true"></span>
-                        </button>
-                        <button class="${this.view==="grid"?"selected":""}" title=${jsObject.translations.grid} @click=${()=>this.switchView("grid")}>
-                            <span class="icon z-icon-grid" aria-hidden="true"></span>
+                    <div class="">
+                        <button
+                            class="icon-btn f-2 brand-light"
+                            aria-label=${jsObject.translations.create_training_group}
+                            @click=${this.createTraining}
+                        >
+                            <span class="icon z-icon-plus"></span>
                         </button>
                     </div>
                 </div>
