@@ -23,6 +23,8 @@ export class CourseSlideshow extends LitElement {
         const dir = document.querySelector('html').getAttribute('dir')
 
         this.isRtl = dir === 'rtl'
+
+        this.nextSlide = this.nextSlide.bind(this)
     }
 
     reset() {
@@ -35,12 +37,14 @@ export class CourseSlideshow extends LitElement {
 
         document.addEventListener('keydown', this.listenForKeyboard)
         document.addEventListener('mousedown', this.listenForMouseClick)
+        document.addEventListener('next-slide', this.nextSlide)
     }
     disconnectedCallback() {
         super.disconnectedCallback();
 
         document.removeEventListener('keydown', this.listenForKeyboard)
         document.removeEventListener('mousedown', this.listenForMouseClick)
+        document.removeEventListener('next-slide', this.nextSlide)
     }
     update(changedProperties) {
         if ( changedProperties.has('sections') ) {
@@ -120,13 +124,13 @@ export class CourseSlideshow extends LitElement {
 
         const { innerWidth } = window
 
-        const threshhold = this.isRtl ? 3 / 4 * innerWidth : 1 / 4 * innerWidth
+        const threshhold = this.isRtl ? 1 / 4 * innerWidth : 1 / 4 * innerWidth
 
         if ( x < threshhold ) {
             this.leftSlide()
         }
 
-        if ( x > threshhold ) {
+        if ( x > innerWidth - threshhold ) {
             this.rightSlide()
         }
     }
