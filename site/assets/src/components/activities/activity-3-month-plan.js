@@ -56,7 +56,6 @@ export class Activity3MonthPlan extends LitElement {
                 /* TODO: should the note be created by the API rather than by the POSTer? */
                 /* TODO: same with the category */
                 const request = makeRequest('POST', 'commitment', {
-                    "note": `${this.translations.question}: ${question} ${this.translations.answer}: ${answer}`,
                     "question": question,
                     "answer": answer,
                     "date": date,
