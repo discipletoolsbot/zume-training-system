@@ -61,20 +61,24 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // get coaching connections
         $coaches = [];
-        $coaching_contact_id = $wpdb->get_var( $wpdb->prepare(
-            "SELECT post_id
-                FROM zume_3_postmeta
-                WHERE meta_key = 'trainee_user_id'
-                  AND meta_value = %s",
-            $user_id ) );
-        $coach_list = $wpdb->get_results( $wpdb->prepare(
-            "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
-                FROM zume_3_p2p p2
-                LEFT JOIN zume_3_posts p ON p2.p2p_to=p.ID
-                LEFT JOIN zume_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
-                WHERE p2p_from = %d
-                  AND p2p_type = 'contacts_to_contacts'",
-            $coaching_contact_id ), ARRAY_A );
+        $coaching_contact_id = $wpdb->get_var(
+            $wpdb->prepare(
+                "SELECT post_id
+                    FROM zume_3_postmeta
+                    WHERE meta_key = 'trainee_user_id'
+                      AND meta_value = %s",
+            $user_id )
+        );
+        $coach_list = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
+                    FROM zume_3_p2p p2
+                    LEFT JOIN zume_3_posts p ON p2.p2p_to=p.ID
+                    LEFT JOIN zume_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
+                    WHERE p2p_from = %d
+                      AND p2p_type = 'contacts_to_contacts'",
+            $coaching_contact_id ), ARRAY_A
+        );
         if ( ! empty( $coach_list ) ) {
             foreach ( $coach_list as $key => $value ) {
                 $communication_apps = $wpdb->get_results( $wpdb->prepare(
@@ -299,14 +303,16 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
             $user_id = get_current_user_id();
         }
         global $wpdb, $table_prefix;
-        $location = $wpdb->get_row( $wpdb->prepare(
-            "SELECT lng, lat, level, label, grid_id, source
-                    FROM zume_postmeta pm
-                    JOIN zume_dt_location_grid_meta lgm ON pm.post_id=lgm.post_id
-                    WHERE pm.meta_key = 'corresponds_to_user' AND pm.meta_value = %d
-                    ORDER BY grid_meta_id desc
-                    LIMIT 1",
-            $user_id ), ARRAY_A );
+        $location = $wpdb->get_row(
+            $wpdb->prepare(
+                "SELECT lng, lat, level, label, grid_id, source
+                        FROM zume_postmeta pm
+                        JOIN zume_dt_location_grid_meta lgm ON pm.post_id=lgm.post_id
+                        WHERE pm.meta_key = 'corresponds_to_user' AND pm.meta_value = %d
+                        ORDER BY grid_meta_id desc
+                        LIMIT 1",
+            $user_id ), ARRAY_A
+        );
 
         if ( empty( $location ) && $ip_lookup ) {
             $result = DT_Ipstack_API::get_location_grid_meta_from_current_visitor();
@@ -492,23 +498,27 @@ if ( ! function_exists( 'zume_get_user_friends' ) ) {
 
         // query user friends
         global $wpdb, $table_prefix;
-        $from = $wpdb->get_results($wpdb->prepare(
-            "SELECT p.post_title as name, p.ID as contact_id, um.user_id
-                FROM zume_p2p p2
-                LEFT JOIN zume_posts p ON p.ID=p2.p2p_to
-                LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
-                WHERE p2.p2p_type = 'contacts_to_relation'
-                AND p2.p2p_from = %d",
-            $contact_id ), ARRAY_A);
+        $from = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT p.post_title as name, p.ID as contact_id, um.user_id
+                    FROM zume_p2p p2
+                    LEFT JOIN zume_posts p ON p.ID=p2.p2p_to
+                    LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
+                    WHERE p2.p2p_type = 'contacts_to_relation'
+                    AND p2.p2p_from = %d",
+            $contact_id ), ARRAY_A
+        );
 
-        $to = $wpdb->get_results($wpdb->prepare(
-            "SELECT p.post_title as name, p.ID as contact_id, um.user_id
-                FROM zume_p2p p2
-                LEFT JOIN zume_posts p ON p.ID=p2.p2p_from
-                LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
-                WHERE p2.p2p_type = 'contacts_to_relation'
-                AND p2.p2p_to = %d",
-            $contact_id ), ARRAY_A);
+        $to = $wpdb->get_results(
+            $wpdb->prepare(
+                "SELECT p.post_title as name, p.ID as contact_id, um.user_id
+                    FROM zume_p2p p2
+                    LEFT JOIN zume_posts p ON p.ID=p2.p2p_from
+                    LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
+                    WHERE p2.p2p_type = 'contacts_to_relation'
+                    AND p2.p2p_to = %d",
+            $contact_id ), ARRAY_A
+        );
 
         if ( empty( $from ) && empty( $to ) ) {
             return [];
@@ -534,11 +544,13 @@ if ( ! function_exists( 'zume_get_user_commitments' ) ) {
         }
         global $wpdb, $table_prefix;
         ;
-        $results = $wpdb->get_results($wpdb->prepare(
-            'SELECT * FROM zume_dt_post_user_meta
-                    WHERE user_id = %d
-                    ORDER BY date DESC',
-            $user_id), ARRAY_A);
+        $results = $wpdb->get_results(
+            $wpdb->prepare(
+                'SELECT * FROM zume_dt_post_user_meta
+                        WHERE user_id = %d
+                        ORDER BY date DESC',
+            $user_id), ARRAY_A
+        );
 
         $list = [];
         foreach ( $results as $result ) {
