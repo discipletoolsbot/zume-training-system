@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-15 09:02+0000\n"
+"PO-Revision-Date: 2024-07-15 12:36+0000\n"
 "Last-Translator: Zuzanna Sierotnik <zuzanna.sierotnik@gmail.com>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/pl/>\n"
@@ -112,7 +112,7 @@ msgstr "Uczniowie i Kościół"
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr "Duchowe oddychanie to słuchanie i posłuszeństwo Bogu"
+msgstr "Duchowe oddychanie to słuchanie Boga i bycie Mu posłusznym"
 
 #: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
@@ -183,7 +183,7 @@ msgstr "Wierność w relacjach – lista 100"
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
-"Narzędzie zaprojektowane, aby pomóc Ci być wiernym w swoich relacjach z "
+"Narzędzie zaprojektowane, aby pomóc Ci być wiernym/ą w swoich relacjach z "
 "innymi."
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
@@ -311,7 +311,7 @@ msgid ""
 "God wants to work the most."
 msgstr ""
 "Zacznij zauważać, gdzie brakuje Królestwa Bożego. Są to zazwyczaj miejsca, w "
-"których Bóg chce działać najbardziej."
+"których Bóg najbardziej chce działać."
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
@@ -323,7 +323,7 @@ msgid ""
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
 "To prosty sposób na uczczenie naszej bliskiej i trwałej więzi z Jezusem. "
-"Poznajcie prosty sposób na świętowanie."
+"Poznajcie prosty sposób na jej świętowanie."
 
 #: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
@@ -361,7 +361,7 @@ msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
 "Dowiedz się, kim może być człowiek pokoju i skąd wiedzieć, kiedy go "
-"znalazłeś."
+"znalazłeś/aś."
 
 #: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
@@ -378,8 +378,8 @@ msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
-"Ważne jest, co uczniowie wiedzą — ale o wiele ważniejsze jest to, co ROBIĄ z "
-"tym, co wiedzą."
+"To, co uczniowie wiedzą, jest ważne — ale o wiele ważniejsze jest to, co "
+"ROBIĄ z tym, co wiedzą."
 
 #: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
@@ -396,17 +396,14 @@ msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr "5 sfer modlitwy pomoże Wam modlić się za innych."
 
 #: globals.php:2169 site/course/course-content.php:1603
-#, fuzzy
 msgid "The B.L.E.S.S. Prayer"
-msgstr "5 sfer modlitwy (15 min)"
+msgstr "5 sfer modlitwy"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
-#, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "Format spotkania Grupy 3/3"
 
 #: globals.php:2180
-#, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
@@ -435,7 +432,7 @@ msgstr ""
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
-msgstr "Cykl treningowy"
+msgstr "Cykl szkoleniowy"
 
 #: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
@@ -451,7 +448,7 @@ msgid ""
 "their leadership by practicing serving."
 msgstr ""
 "Komórka przywództwa jest sposobem, na który ktoś, kto czuje się powołany do "
-"bycia liderem, może rozwijać swoje przywództwo poprzez  służenie innym."
+"bycia liderem, może rozwijać swoje przywództwo poprzez służenie innym."
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
@@ -459,7 +456,6 @@ msgid "Expect Non-Sequential Growth"
 msgstr "Spodziewaj się niesekwencyjnego wzrostu"
 
 #: globals.php:2216
-#, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
@@ -494,9 +490,8 @@ msgid "Always Part of Two Churches"
 msgstr "Zawsze częścią dwóch Kościołów"
 
 #: globals.php:2240
-#, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Naucz się słuchać poleceń Jezusa,  jednocześnie idąc i zostając."
+msgstr "Naucz się słuchać poleceń Jezusa, jednocześnie idąc i zostając."
 
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
@@ -567,8 +562,8 @@ msgid ""
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
-"Jest to grupa składająca się z osób, które prowadzą i rozpoczynają 3/3 "
-"Grupy. Jej spotkania również odbywają się w formacie Grupy 3/3 i są świetnym "
+"Jest to grupa składająca się z osób, które prowadzą i rozpoczynają Grupy 3/3 "
+". Jej spotkania również odbywają się w formacie Grupy 3/3 i są świetnym "
 "narzędziem oceny duchowego zdrowia Bożego dzieła w twojej okolicy."
 
 #: globals.php:2289 site/dashboard/wizard.php:176
@@ -585,7 +580,7 @@ msgid ""
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
-"Diagram czterech pól jest prostym narzędziem dla przywódców służącym  "
+"Diagram czterech pól jest prostym narzędziem dla przywódców, służącym "
 "refleksji nad stanem bieżących wysiłków i działaniem Królestwa wokół nich."
 
 #: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
@@ -604,12 +599,10 @@ msgstr ""
 "zrozumieniu otaczającego ich wzrostu."
 
 #: globals.php:2323
-#, fuzzy
 msgid "3-Circles Gospel Presentation"
 msgstr "Prezentacja ewangelii w trzech kręgach"
 
 #: globals.php:2324
-#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
@@ -618,9 +611,8 @@ msgstr ""
 "za pomocą prostej ilustracji, którą można narysować na kartce papieru."
 
 #: globals.php:2325
-#, fuzzy
 msgid "3-Circles"
-msgstr "3-Kręgi"
+msgstr "3 kręgi"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
@@ -639,35 +631,30 @@ msgid "Close"
 msgstr "Zamknij"
 
 #: globals.php:7305
-#, fuzzy
 msgid "No Results"
 msgstr "Brak wyników"
 
 #: site/activities/coaching-checklist-host.php:97
-#, fuzzy
 msgid "H.O.S.T."
-msgstr "GOSPODARZ."
+msgstr "S.Z.O.P."
 
 #: site/activities/coaching-checklist-host.php:98
-#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr ""
-"Dokonaj samooceny, korzystając z usłyszanych, posłusznych, udostępnionych, "
-"przeszkolonych."
+"Dokonaj samooceny w kategoriach: słyszałem, zastosowałem, opowiedziałem, "
+"przeszkoliłem."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
-#, fuzzy
 msgid "Training Tools/Concepts"
-msgstr "Cykl treningowy"
+msgstr "Narzędzia/koncepcje szkoleniowe"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
-#, fuzzy
 msgid "Ask yourself, have I"
-msgstr "Zapytaj siebie"
+msgstr "Zadaj sobie pytanie: Czy..."
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -676,7 +663,7 @@ msgstr "Zapytaj siebie"
 #: site/activities/coaching-checklist.php:113
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
-msgstr "Usłyszał/a"
+msgstr "Słyszałem/am"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:167
@@ -685,7 +672,7 @@ msgstr "Usłyszał/a"
 #: site/activities/coaching-checklist.php:116
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
-msgstr "Wykonał/a"
+msgstr "Zastosowałem/am"
 
 #: site/activities/coaching-checklist-host.php:131
 #: site/activities/coaching-checklist-host.php:171
@@ -694,7 +681,7 @@ msgstr "Wykonał/a"
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
-msgstr "Podzielił/a się"
+msgstr "Opowiedziałem/am"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:175
@@ -703,69 +690,62 @@ msgstr "Podzielił/a się"
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
-msgstr "Wyszkolił/a"
+msgstr "Przeszkoliłem/am"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
-#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr "Czy słyszałem o tym narzędziu lub koncepcji?"
+msgstr "Czy słyszałem/am o tym narzędziu lub koncepcji?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
-#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
-"Czy zastosowałem się do tego narzędzia lub koncepcji? Jeśli jest to "
-"narzędzie, czy ćwiczyłem je samodzielnie? Jeśli jest to koncepcja, czy "
-"zastanawiałeś się, jak zmienia ona twoją perspektywę?"
+"Czy zastosowałem/am to narzędzie lub koncepcję? Jeśli to narzędzie: czy "
+"ćwiczyłem/am je samodzielnie? Jeśli to koncepcja: czy zastanawiałem/am się, "
+"jak zmienia ona moją perspektywę?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:243
-#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
-"Czy udostępniłem to narzędzie lub koncepcję? Jeśli jest to narzędzie, czy "
-"pokazałeś komuś, jak go używać? Jeśli jest to koncepcja, czy podzieliłeś się "
-"nią z kimkolwiek?"
+"Czy opowiedziałem/am komuś o tym narzędziu lub koncepcji? Jeśli to narzędzie:"
+" czy pokazałem/am komuś, jak go używać? Jeśli to koncepcja: czy z kimś się "
+"nią podzieliłem/am?"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:245
-#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
 "Czy przeszkoliłem innych, aby dzielili się tym narzędziem lub koncepcją? "
-"Jeśli jest to narzędzie, czy przeszkoliłem kogoś, aby mógł dzielić się "
-"narzędziem z kimś innym? Jeśli jest to koncepcja, czy przeszkoliłem kogoś, "
-"aby dzielił się tą koncepcją z kimś innym?"
+"Jeśli jest to narzędzie, czy przeszkoliłem/am kogoś, aby mógł dzielić się "
+"narzędziem z innymi? Jeśli jest to koncepcja, czy przeszkoliłem/am kogoś, "
+"aby dzielił się tą koncepcją z innymi?"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
-#, fuzzy
 msgid "M.A.W.L."
-msgstr "MAWL"
+msgstr "P.P.O.O."
 
 #: site/activities/coaching-checklist-mawl.php:99
-#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "Trenuj innych, korzystając z Modelu, Asystowania, Oglądania, Odejścia."
+msgstr "Trenuj innych metodą Pokaż, Pomóż, Obserwuj, Odejdź."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
-#, fuzzy
 msgid "Ask yourself, what does my disciple need"
-msgstr "Zapytaj siebie"
+msgstr "Zadaj sobie pytanie: Czego potrzebuje mój uczeń?"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -773,9 +753,8 @@ msgstr "Zapytaj siebie"
 #: site/activities/coaching-checklist-two.php:203
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Model"
-msgstr "Model"
+msgstr "Pokaż"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -783,9 +762,8 @@ msgstr "Model"
 #: site/activities/coaching-checklist-two.php:207
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid "Assist"
-msgstr "Wspierać"
+msgstr "Pomóż"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -794,9 +772,8 @@ msgstr "Wspierać"
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
-#, fuzzy
 msgid "Watch"
-msgstr "Oglądać"
+msgstr "Obserwuj"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -804,9 +781,8 @@ msgstr "Oglądać"
 #: site/activities/coaching-checklist-two.php:215
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Leave"
-msgstr "Wyjechać"
+msgstr "Odejdź"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
