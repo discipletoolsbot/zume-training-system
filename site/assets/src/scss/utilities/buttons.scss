@@ -68,6 +68,11 @@ a {
         font-weight: 600;
     }
 
+    &.lowercase {
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+
     &.tight {
         padding-left: spacing(0);
         padding-right: spacing(0);
