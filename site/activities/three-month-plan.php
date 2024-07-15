@@ -95,6 +95,7 @@ class Zume_Activites_3monthplan extends Zume_Activites
             'cancel' => esc_html__( 'Cancel', 'zume' ),
             'question' => esc_html__( 'Question', 'zume' ),
             'answer' => esc_html__( 'Answer', 'zume' ),
+            'note' => esc_html__( 'Note', 'zume' ),
         ];
     }
 }

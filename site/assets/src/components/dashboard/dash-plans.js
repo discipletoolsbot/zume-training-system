@@ -12,8 +12,7 @@ export class DashPlans extends DashPage {
             saving: { type: Boolean, attribute: false },
             commitments: { type: Array, attribute: false },
             filterStatus: { type: String, attribute: false },
-            editQuestion: { type: String, attribute: false },
-            editAnswer: { type: String, attribute: false },
+            editCategory: { type: String, attribute: false },
             editId: { type: Number, attribute: false },
         };
     }
@@ -27,8 +26,7 @@ export class DashPlans extends DashPage {
         this.filterName = 'my-plans-filter'
         this.filterStatus = ZumeStorage.load(this.filterName)
         this.commitments = []
-        this.editQuestion = ''
-        this.editAnswer = ''
+        this.editCategory = ''
 
         this.renderListItem = this.renderListItem.bind(this)
         this.closeCommitmentsModal = this.closeCommitmentsModal.bind(this)
@@ -62,17 +60,32 @@ export class DashPlans extends DashPage {
         this.closeMenu(id)
         const commitment = this.getCommitment(id)
 
-        document.querySelector('#edit-question').value = commitment.question
-        document.querySelector('#edit-answer').value = commitment.answer
+        this.editCategory = commitment.category
+
+        console.log(commitment, commitment.category)
+
+        if (commitment.category === 'post_training_plan') {
+            document.querySelector('#edit-question').value = commitment.question
+            document.querySelector('#edit-answer').value = commitment.answer
+        } else {
+            document.querySelector('#edit-note').value = commitment.note
+        }
+
         this.editId = id
 
         this.openCommitmentsModal('edit')
 
-        document.querySelector('#edit-question').focus()
+        if (commitment.category === 'post_training_plan') {
+            document.querySelector('#edit-question').focus()
+        } else {
+            document.querySelector('#edit-note').focus()
+        }
     }
     closeCommitmentsModal() {
-        document.querySelector('#edit-question').value = ''
-        document.querySelector('#edit-answer').value = ''
+        this.editQuestion = ''
+        this.editAnswer = ''
+        this.editNote = ''
+        this.editCategory = ''
         const modal = document.querySelector('#commitments-form')
         jQuery(modal).foundation('close')
     }
@@ -86,6 +99,10 @@ export class DashPlans extends DashPage {
             return
         }
         this.mode = mode
+
+        if (mode === 'add') {
+            this.editCategory = 'custom'
+        }
 
         const modal = document.querySelector('#commitments-form')
         jQuery(modal).foundation('open')
@@ -130,18 +147,15 @@ export class DashPlans extends DashPage {
         }
     }
     addCommitment() {
-        const question = document.querySelector('#edit-question').value
-        const answer = document.querySelector('#edit-answer').value
+        const note = document.querySelector('#edit-note').value
 
         const date = new Date(); // Now
         date.setDate(date.getDate() + 30);
 
         let data = {
-            question,
-            answer,
-            note: `${jsObject.translations.question}: ${question} ${jsObject.translations.answer}: ${answer}`,
+            note,
             date,
-            category: 'post_training_plan',
+            category: 'custom',
         }
         zumeRequest.post('commitment', data)
             .then(() => {
@@ -157,14 +171,18 @@ export class DashPlans extends DashPage {
     }
 
     editCommitment() {
-        const question = document.querySelector('#edit-question').value
-        const answer = document.querySelector('#edit-answer').value
         let data = {
             id: this.editId,
             user_id: jsObject.profile.user_id,
-            question,
-            answer,
         }
+
+        if (this.editCategory === 'post_training_plan') {
+            data.question = this.editQuestion
+            data.answer = this.editAnswer
+        } else {
+            data.note = this.editNote
+        }
+
         this.saving = true
         zumeRequest.update('commitment', data)
             .then((response) => {
@@ -200,7 +218,6 @@ export class DashPlans extends DashPage {
     }
 
     renderListItem(commitment) {
-      console.log(commitment)
         const { note, question, answer, id, status, category } = commitment
         return html`
             <li class="list__item | switcher | switcher-width-30">
@@ -327,8 +344,8 @@ export class DashPlans extends DashPage {
                         <span class="icon z-icon-close"></span>
                 </button>
                 <form @submit=${this.saveCommitment} class="stack">
-                    <div class="form-group">
-                        <label for="edit-question">${jsObject.three_month_plan_translations.question}*</label>
+                    <div class="form-group ${this.editCategory === 'post_training_plan' ? '' : 'hidden'}">
+                        <label for="edit-question">${jsObject.three_month_plan_translations.question}</label>
                         <textarea
                             class="input"
                             id="edit-question"
@@ -336,18 +353,31 @@ export class DashPlans extends DashPage {
                             rows="3"
                             placeholder=${jsObject.three_month_plan_translations.question}
                             required
-                        ></textarea>
+                            disabled
+                        >${this.editQuestion}</textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}*</label>
+                    <div class="form-group ${this.editCategory === 'post_training_plan' ? '' : 'hidden'}">
+                        <label for="edit-answer">${jsObject.three_month_plan_translations.answer}</label>
                         <textarea
                             class="input"
                             id="edit-answer"
                             type="text"
                             placeholder=${jsObject.three_month_plan_translations.answer}
                             required
-                        ></textarea>
+                        >${this.editAnswer}</textarea>
                     </div>
+                    <div class="form-group ${this.editCategory === 'post_training_plan' ? 'hidden' : ''}">
+                        <label for="edit-note">${jsObject.three_month_plan_translations.note}</label>
+                        <textarea
+                            class="input"
+                            id="edit-note"
+                            type="text"
+                            rows="3"
+                            placeholder=${jsObject.three_month_plan_translations.note}
+                            required
+                        >${this.editNote}</textarea>
+                    </div>
+
                     <div class="cluster justify-flex-end">
                         <button type="button" class="btn outline tight" type="button" @click=${this.closeCommitmentsModal}>${jsObject.three_month_plan_translations.cancel}</button>
                         <button type="submit" class="btn tight" type="button" ?disabled=${this.saving}>

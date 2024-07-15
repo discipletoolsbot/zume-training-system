@@ -139,7 +139,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                                 <a href="<?php echo esc_url( zume_dashboard_url() ) ?>"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
                             <?php endif; ?>
                             <a href="<?php echo esc_url( zume_about_url() ) ?>"><?php echo esc_html__( 'About', 'zume' ) ?></a>
-                            <a href="<?php echo esc_url( zume_course_url() ) ?>"><?php echo esc_html__( 'Course', 'zume' ) ?></a>
+                            <a href="<?php echo esc_url( zume_training_url() ) ?>"><?php echo esc_html__( 'Training', 'zume' ) ?></a>
                             <a href="<?php echo esc_url( zume_resources_url() ) ?>"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
                         </div>
                     </div>

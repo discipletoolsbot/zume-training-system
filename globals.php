@@ -622,9 +622,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                 ) {
                     $plans[$connection['post_id']][$connection['meta_key']] = [
                         'timestamp' => $connection['meta_value'],
-                        // phpcs:ignore
                         'date' => gmdate( 'Y-m-d', $connection['meta_value'] ),
-                        // phpcs:ignore
                         'date_formatted' => gmdate( 'M j, Y', $connection['meta_value'] ),
                         'completed' => in_array( $connection['meta_key'], $log_subtypes ),
                     ];
@@ -5907,16 +5905,20 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
             }
             $contact_id = zume_get_user_contact_id( $user_id );
 
+            $meta_value = [];
+
+            if ( isset( $params['category'] ) && $params['category'] === 'custom' ) {
+                $meta_value['note'] = $params['note'] ?? '';
+            } else {
+                $meta_value['question'] = $params['question'] ?? '';
+                $meta_value['answer'] = $params['answer'] ?? '';
+            }
+
             $fields = [
                 'user_id' => $user_id,
                 'post_id' => $contact_id,
                 'meta_key' => 'tasks',
-                'meta_value' => maybe_serialize([
-                    'note' => $params['note'] ?? '',
-                    'question' => $params['question'] ?? '',
-                    'answer' => $params['answer'] ?? '',
-                ]),
-                // phpcs:ignore
+                'meta_value' => maybe_serialize( $meta_value ),
                 'date' => $params['date'] ?? gmdate( 'Y-m-d H:i:s' ),
                 'category' => $params['category'] ?? 'custom',
             ];

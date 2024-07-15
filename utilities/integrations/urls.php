@@ -214,10 +214,6 @@ function zume_training_url( $current_language = null ) {
     $url = zume_get_posts_translation_url( 'Training', $current_language );
     return $url;
 }
-function zume_course_url() {
-    $current_lang = zume_current_language();
-    return zume_get_posts_translation_url( 'Course', $current_lang );
-}
 function zume_about_url() {
     $current_lang = zume_current_language();
     $url = zume_get_posts_translation_url( 'About', $current_lang );
