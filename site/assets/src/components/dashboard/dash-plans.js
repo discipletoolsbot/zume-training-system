@@ -200,10 +200,14 @@ export class DashPlans extends DashPage {
     }
 
     renderListItem(commitment) {
-        const { question, answer, id, status } = commitment
+      console.log(commitment)
+        const { note, question, answer, id, status, category } = commitment
         return html`
             <li class="list__item | switcher | switcher-width-30">
-                <span>${question} <b>${answer}</b></span>
+                ${category === 'custom'
+                    ? html`<span>${note}</span>`
+                    : html`<span>${question} <b>${answer}</b></span>`
+                }
                 <div class="list__secondary | grow-0">
                     <div class="d-flex w-6rem justify-content-center">
                         ${status === 'closed'

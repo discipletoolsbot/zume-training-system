@@ -66,7 +66,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 FROM zume_3_postmeta
                 WHERE meta_key = 'trainee_user_id'
                   AND meta_value = %s",
-        $user_id ) );
+            $user_id ) );
         $coach_list = $wpdb->get_results( $wpdb->prepare(
             "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
                 FROM zume_3_p2p p2
@@ -74,7 +74,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                 LEFT JOIN zume_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
                 WHERE p2p_from = %d
                   AND p2p_type = 'contacts_to_contacts'",
-        $coaching_contact_id ), ARRAY_A );
+            $coaching_contact_id ), ARRAY_A );
         if ( ! empty( $coach_list ) ) {
             foreach ( $coach_list as $key => $value ) {
                 $communication_apps = $wpdb->get_results( $wpdb->prepare(
@@ -306,7 +306,7 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
                     WHERE pm.meta_key = 'corresponds_to_user' AND pm.meta_value = %d
                     ORDER BY grid_meta_id desc
                     LIMIT 1",
-        $user_id ), ARRAY_A );
+            $user_id ), ARRAY_A );
 
         if ( empty( $location ) && $ip_lookup ) {
             $result = DT_Ipstack_API::get_location_grid_meta_from_current_visitor();
@@ -499,7 +499,7 @@ if ( ! function_exists( 'zume_get_user_friends' ) ) {
                 LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
                 WHERE p2.p2p_type = 'contacts_to_relation'
                 AND p2.p2p_from = %d",
-        $contact_id ), ARRAY_A);
+            $contact_id ), ARRAY_A);
 
         $to = $wpdb->get_results($wpdb->prepare(
             "SELECT p.post_title as name, p.ID as contact_id, um.user_id
@@ -508,7 +508,7 @@ if ( ! function_exists( 'zume_get_user_friends' ) ) {
                 LEFT JOIN zume_usermeta um ON um.meta_value=p.ID AND um.meta_key = 'zume_corresponds_to_contact'
                 WHERE p2.p2p_type = 'contacts_to_relation'
                 AND p2.p2p_to = %d",
-        $contact_id ), ARRAY_A);
+            $contact_id ), ARRAY_A);
 
         if ( empty( $from ) && empty( $to ) ) {
             return [];
@@ -538,7 +538,7 @@ if ( ! function_exists( 'zume_get_user_commitments' ) ) {
             'SELECT * FROM zume_dt_post_user_meta
                     WHERE user_id = %d
                     ORDER BY date DESC',
-        $user_id), ARRAY_A);
+            $user_id), ARRAY_A);
 
         $list = [];
         foreach ( $results as $result ) {
@@ -714,14 +714,14 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 500000000,
                 'enable_flags' => [
                     'version_4_available' => true,
-                        // has a published version in zume 4.0
-                        // if version 5 not ready, then language will be listed and redirect to legacy.zume.training
+                    // has a published version in zume 4.0
+                    // if version 5 not ready, then language will be listed and redirect to legacy.zume.training
                     'translator_enabled' => true,
-                        // enables the translator app to begin translation
+                    // enables the translator app to begin translation
                     'version_5_ready' => true,
-                        // publishes publicly the version 5.0 system with minimum support
-                        // has translated (weblate, scripts, activities, videos, files)
-                        // allows the language to show up in the selection  list, and disables redirect to 4.0
+                    // publishes publicly the version 5.0 system with minimum support
+                    // has translated (weblate, scripts, activities, videos, files)
+                    // allows the language to show up in the selection  list, and disables redirect to 4.0
                     'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
