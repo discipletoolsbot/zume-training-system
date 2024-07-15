@@ -2,6 +2,11 @@ import { html } from 'lit';
 import { CourseSlide } from './course-slide';
 
 export class WatchSlide extends CourseSlide {
+
+    nextSlide() {
+        this.dispatchEvent(new CustomEvent('next-slide', { bubbles: true }))
+    }
+
     render() {
         return html`
             <div class="slides-card">
@@ -21,7 +26,11 @@ export class WatchSlide extends CourseSlide {
                         <div class="stack content-area__text">
                             ${this.renderContent(this.slide['right'], true)}
                             <div>
-                                <button class="btn tight d-flex align-items-center gap--1" type="button">
+                                <button
+                                    class="btn tight d-flex align-items-center gap--1"
+                                    type="button"
+                                    @click=${this.nextSlide}
+                                >
                                     <span>${this.slide['left'][0]}</span>
                                     <span class="icon z-icon-watch f-3"></span>
                                 </button>

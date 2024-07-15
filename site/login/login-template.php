@@ -131,7 +131,7 @@ switch ( $request_action ) {
                                  */
                                 do_action( 'lostpassword_form' ); ?>
                                 <input type="hidden" name="redirect_to" value="<?php echo esc_attr( $redirect_to ); ?>" />
-                                <input type="submit" name="wp-submit" id="wp-submit" class="btn" value="<?php echo esc_html__( 'Get New Password', 'zume' ); ?>" />
+                                <input type="submit" name="wp-submit" id="wp-submit" class="btn lowercase" value="<?php echo esc_html__( 'Get New Password', 'zume' ); ?>" />
                             </form>
 
                         <?php elseif ( $sent ): ?>
@@ -292,7 +292,7 @@ switch ( $request_action ) {
 
                             <input type="hidden" name="wp-submit" id="wp-submit" value="" />
 
-                            <button class="btn">
+                            <button class="btn lowercase">
                                 <?php esc_html_e( 'Reset Password', 'zume' ); ?>
                             </button>
 
@@ -399,13 +399,13 @@ switch ( $request_action ) {
 
                                 <span class="line-text f--1"><span><?php echo esc_html__( 'Or', 'zume' ) ?></span></span>
 
-                                <button class="btn register-email-toggle"><?php echo esc_html__( 'Register with Email', 'zume' ) ?></button>
+                                <button class="btn lowercase register-email-toggle"><?php echo esc_html__( 'Register with Email', 'zume' ) ?></button>
 
                             </div>
 
                             <div id="email_signup_form" class="<?php echo $has_email_error ? '' : 'hidden' ?> stack">
 
-                                <button class="btn fit-content register-email-toggle"><?php echo esc_html__( 'Back', 'zume' ) ?></button>
+                                <button class="btn lowercase fit-content register-email-toggle"><?php echo esc_html__( 'Back', 'zume' ) ?></button>
 
                                 <?php if ( is_wp_error( $reg_status ) ) :?>
                                     <div class="cell warning banner">
@@ -892,7 +892,7 @@ function zume_login_form( $args = array() ) {
         ) .
         sprintf(
             '<p class="login-submit">
-                <input type="submit" name="wp-submit" id="%1$s" class="btn w-100" value="%2$s" />
+                <input type="submit" name="wp-submit" id="%1$s" class="btn lowercase w-100" value="%2$s" />
                 <input type="hidden" name="redirect_to" value="%3$s" />
             </p>',
             esc_attr( $args['id_submit'] ),

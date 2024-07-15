@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-12 06:34+0000\n"
-"Last-Translator: Jack Wu <jack.wu@tast.com.tw>\n"
+"PO-Revision-Date: 2024-07-13 12:17+0000\n"
+"Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -1212,7 +1212,7 @@ msgstr "（60 - 90 分鐘）"
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
 msgid "SESSION 1"
-msgstr "第一堂課"
+msgstr "第1課"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1346,7 +1346,7 @@ msgstr "概述"
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr "在本章節中，我們將學習並討論這些觀念："
+msgstr "在本堂課中，我們將學習並討論這些觀念："
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
@@ -1577,7 +1577,7 @@ msgstr ""
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
-msgstr "第二堂課"
+msgstr "第2課"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
@@ -1610,7 +1610,7 @@ msgstr "祈求上帝的聖靈帶領你們共度時光。"
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
 msgid "LOOK BACK"
-msgstr "回望"
+msgstr "回顧"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1759,7 +1759,7 @@ msgstr "如果你養成這種禱告的習慣，你的生活將會變成什麼樣
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr "神已經給了我們「去使人作門徒」所需的關係。"
+msgstr "神已經給了我們「使人作門徒」所需的人際關係。"
 
 #: site/course/course-content.php:614
 msgid ""
@@ -1832,7 +1832,7 @@ msgstr "Zúme 是一個為那些希望看到門徒培訓運動的人提供的實
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
 msgid "SESSION 3"
-msgstr "第三堂課"
+msgstr "第3課"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 msgid ""
@@ -1959,7 +1959,7 @@ msgstr ""
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
 msgid "SESSION 4"
-msgstr "第四堂課"
+msgstr "第4課"
 
 #: site/course/course-content.php:1109
 msgid ""
@@ -2110,7 +2110,7 @@ msgstr "問神祂希望你用三分鐘見證工具來訓練誰。在結束之前
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
 msgid "SESSION 5"
-msgstr "第五堂課"
+msgstr "第5課"
 
 #: site/course/course-content.php:1485
 msgid ""
@@ -2217,7 +2217,7 @@ msgstr "請求祂準備好你的心以及你在過程中遇到的人的心，向
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
 msgid "SESSION 6"
-msgstr "第六堂課"
+msgstr "第6課"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
 msgid ""
@@ -2305,7 +2305,7 @@ msgstr "禱告尋求在下次聚會之前﹐你要跟誰分享「三合一小組
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
 msgid "SESSION 7"
-msgstr "第七堂課"
+msgstr "第7課"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
 msgid ""
@@ -2356,14 +2356,14 @@ msgstr ""
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
-msgstr "查閱－用馬可福音 5:1-20 作為小組的閱讀文章，並在查閱部分回答問題 1-4。 "
+msgstr "仰望－用馬可福音 5:1-20 作為小組的閱讀文章，並在仰望部分回答問題 1-4。 "
 "（30分鐘）"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
-msgstr "展望 - 使用「展望」部分中的問題 5、6 和 7 來製定你將如何服從、訓練和分享。 "
+msgstr "前瞻 - 使用「前瞻」部分中的問題 5、6 和 7 來製定你將如何服從、訓練和分享。 "
 "（30分鐘）"
 
 #: site/course/course-content.php:2063
@@ -2404,7 +2404,7 @@ msgstr "挑戰你指導的人將這個過程延續到另外的（第五代）世
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
 msgid "SESSION 8"
-msgstr "第8堂課"
+msgstr "第8課"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
@@ -2446,7 +2446,7 @@ msgstr ""
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
-msgstr "展望未來 – 用問題 5、6 和 7 來發展您將如何服從、訓練和分享。 （30分鐘）"
+msgstr "前瞻未來 – 用問題 5、6 和 7 來發展您將如何服從、訓練和分享。 （30分鐘）"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
@@ -2475,7 +2475,7 @@ msgstr "禱告並詢問上帝，在您的小組再次聚會之前，祂希望您
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
 msgid "SESSION 9"
-msgstr "第九堂課"
+msgstr "第9課"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
 msgid ""
@@ -2764,7 +2764,7 @@ msgstr "如果你已經建立了自己的簡單教堂，請與會中的人們分
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
 msgid "SESSION 10"
-msgstr "第10堂課"
+msgstr "第10課"
 
 #: site/course/course-content.php:2852
 msgid ""
@@ -2976,7 +2976,7 @@ msgstr ""
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 msgid "The Prayer Cycle"
-msgstr "禱告週期"
+msgstr "禱告循環圈"
 
 #: site/course/course-content.php:3676
 msgid ""
@@ -2994,13 +2994,13 @@ msgstr "如果你無法進行更長時間的祈禱，請將每個祈禱部分的
 #: site/course/course-content.php:3712
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
-msgstr "使用禱告週期來指引你在本週的某段時間禱告一小時。"
+msgstr "使用禱告循環圈來指引你在本週的某段時間禱告一小時。"
 
 #: site/course/course-content.php:3713
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
-msgstr "與主指示你的任何人分享禱告週期。挑戰他們也與其他人分享。"
+msgstr "與主指示你的任何人分享禱告循環圈。挑戰他們也與其他人分享。"
 
 #: site/course/course-content.php:3839
 msgid ""
@@ -3122,7 +3122,7 @@ msgstr "重複可以建立信心。"
 
 #: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
-msgstr "本次練習的工具："
+msgstr "本次課堂練習的工具："
 
 #: site/course/course-content.php:4250
 msgid ""
@@ -3157,7 +3157,7 @@ msgstr ""
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
 msgid "SESSION 11"
-msgstr "第11堂課"
+msgstr "第11課"
 
 #: site/course/course-content.php:4455
 msgid ""
@@ -3169,21 +3169,21 @@ msgstr "為神在你的生活以及你周圍其他人的生活中所做的工作
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
 msgid "SESSION 12"
-msgstr "第12堂課"
+msgstr "第12課"
 
 #: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr "本週使用祝福模式為在場的人禱告。"
+msgstr "本週使用B.L.E.S.S.祝福模式為在場的人禱告。"
 
 #: site/course/course-content.php:4639
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
-msgstr "裝備其他人使用祝福模式為他人禱告，並與他們一起做。"
+msgstr "裝備其他人使用B.L.E.S.S.祝福模式為他人禱告，並與他們一起做。"
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
-msgstr "第13堂課"
+msgstr "第13課"
 
 #: site/course/course-content.php:4700
 msgid ""
@@ -3194,7 +3194,7 @@ msgstr "為你在上一次課程中學到的東西祈禱並感謝上帝。祈求
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
 msgid "SESSION 14"
-msgstr "第14堂課"
+msgstr "第14課"
 
 #: site/course/course-content.php:4902
 msgid ""
@@ -3207,15 +3207,14 @@ msgstr ""
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
-msgstr ""
-"查閱－使用馬可福音 5:1-20 作為小組的閱讀文章，並在查閱部分回答問題 1-4。 "
-"（15 分鐘）"
+msgstr "仰望－使用馬可福音 5:1-20 作為小組的閱讀文章，並在仰望部分回答問題 1-4。 （"
+"15 分鐘）"
 
 #: site/course/course-content.php:4904
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
-msgstr "展望 - 使用「展望」部分中的問題 5、6 和 7 來製定你將如何服從、訓練和分享。 （"
+msgstr "前瞻 - 使用「前瞻」部分中的問題 5、6 和 7 來製定你將如何服從、訓練和分享。 （"
 "15 分鐘）"
 
 #: site/course/course-content.php:4940
@@ -3236,7 +3235,7 @@ msgstr "在你的小組再次聚會之前，找人分享三合一小組格式。
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
 msgid "SESSION 15"
-msgstr "第15堂課"
+msgstr "第15課"
 
 #: site/course/course-content.php:5002
 msgid ""
@@ -3249,23 +3248,23 @@ msgstr ""
 
 #: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
-msgstr "與你名單上的百名清單信徒分享「訓練週期」。"
+msgstr "與你名單上的百名清單信徒分享「培訓循環」。"
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
 msgid "SESSION 16"
-msgstr "第16堂課"
+msgstr "第16課"
 
 #: site/course/course-content.php:5193
 msgid ""
 "If you have already started your own simple church, share the \"Always Part "
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
-msgstr "如果你已經建立了自己的簡單教堂，請與其中的人們分享「始終屬於兩個教堂」的模式"
-"。如果沒有，請與你認識的另一位信徒分享。"
+msgstr "如果你已經建立了自己的簡單教堂，請與其中的人們分享「兩個教會並進」的模式。如"
+"果沒有，請與你認識的另一位信徒分享。"
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
 msgid "SESSION 17"
-msgstr "第17堂課"
+msgstr "第17課"
 
 #: site/course/course-content.php:5256
 msgid ""
@@ -3288,11 +3287,11 @@ msgstr "為自己確定下一步，無論是示範、協助、觀察或放手，
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
-msgstr "與其他人分享「網路領導力」的概念。然後訓練他們與其他人分享。"
+msgstr "與其他人分享「領袖聯絡網」的概念。然後訓練他們與其他人分享。"
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
 msgid "SESSION 18"
-msgstr "第18堂課"
+msgstr "第18課"
 
 #: site/course/course-content.php:5434
 msgid ""
@@ -3317,7 +3316,7 @@ msgstr "與你認識的另一位信徒分享世代分布圖工具，作為異象
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
-msgstr "第19堂課"
+msgstr "第19課"
 
 #: site/course/course-content.php:5526
 msgid ""
@@ -3343,7 +3342,7 @@ msgstr "與百名清單上的兩位信徒分享「同儕輔導小組」的概念
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
 msgid "SESSION 20"
-msgstr "第20堂課"
+msgstr "第20課"
 
 #: site/course/course-content.php:5650
 msgid "Pray and thank God that He is faithful to complete His good work in us."
@@ -3353,8 +3352,7 @@ msgstr "禱告並感謝神，讓祂信實地在我們身上完成祂美好的工
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
-msgstr ""
-"然而 Zúme 培訓只是開始！在本次會議中，我們將為培訓後發生的事情制定計劃。"
+msgstr "然而 Zúme 培訓只是開始！在本次課堂中，我們將為培訓後發生的事情制定計劃。"
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
@@ -3409,7 +3407,7 @@ msgstr "休息一下"
 
 #: site/course/presenter.php:131
 msgid "Course Presenter"
-msgstr "Zúme 課程主持人"
+msgstr "Zúme 課程展示工具"
 
 #: site/course/presenter.php:148
 msgid "Download the offline slides here"
@@ -3451,11 +3449,11 @@ msgstr "顯示清單"
 
 #: site/course/presenter.php:194
 msgid "Next slide"
-msgstr "下一張投影片"
+msgstr "下一張"
 
 #: site/course/presenter.php:195
 msgid "Previous slide"
-msgstr "上一張投影片"
+msgstr "上一張"
 
 #: site/course/presenter.php:196
 msgid "Session"
@@ -3491,7 +3489,7 @@ msgstr "課程簽到："
 #: site/dashboard/checkin-dashboard.php:164
 #, php-format
 msgid "%1$d of %2$d"
-msgstr "%2$d 的 %1$d"
+msgstr "%2$d 共%1$d個"
 
 #: site/dashboard/checkin-dashboard.php:167
 msgid "Course Progress:"
@@ -3516,7 +3514,7 @@ msgstr "刪除"
 
 #: site/dashboard/dashboard.php:165
 msgid "Active"
-msgstr "活動"
+msgstr "啟用"
 
 #: site/dashboard/dashboard.php:166
 msgid "Completed"
@@ -3609,7 +3607,7 @@ msgstr "編輯個人資料"
 
 #: site/dashboard/dashboard.php:188
 msgid "Check out this Zúme concept"
-msgstr "什麼是 Zúme 天國酵母"
+msgstr "看看這個 Zúme 概念"
 
 #: site/dashboard/dashboard.php:189
 msgid "Preview"
@@ -3684,7 +3682,7 @@ msgstr "加入由教練營運的線上培訓小組"
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
-msgstr "在訓練之前、期間或之後與教練聯繫以獲得任何幫助或鼓勵"
+msgstr "在訓練之前、期間或之後與教練聯繫以獲得任何幫助或鼓勵。"
 
 #: site/dashboard/dashboard.php:207
 msgid "My Progress"
@@ -3846,11 +3844,11 @@ msgstr "社群連結"
 
 #: site/dashboard/dashboard.php:251
 msgid "Previous Slide"
-msgstr "上一張投影片"
+msgstr "上一張"
 
 #: site/dashboard/dashboard.php:252
 msgid "Next Slide"
-msgstr "下一張投影片"
+msgstr "下一張"
 
 #: site/dashboard/dashboard.php:253
 msgid "Group Members"
@@ -4028,7 +4026,7 @@ msgstr "Whatsapp"
 #: site/dashboard/dashboard.php:291 site/dashboard/wizard.php:209
 #: zume-training-system.php:319
 msgid "Signal"
-msgstr "信號"
+msgstr "Signal"
 
 #: site/dashboard/dashboard.php:292 site/dashboard/wizard.php:210
 #: zume-training-system.php:320
@@ -4064,7 +4062,7 @@ msgstr "我要邀請以下的人﹐與我一起成立一個「三合一小組」
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
-msgstr "我要督促以下的人﹐開始他們自己的「三合一小組」﹐並教他們怎麼做︰"
+msgstr "我會督促以下的人﹐開始他們自己的「三合一小組」﹐並教他們怎麼做︰"
 
 #: site/dashboard/dashboard.php:304
 msgid ""
@@ -4352,7 +4350,7 @@ msgstr "好友連結已失效，請重新試一次。"
 #: site/dashboard/wizard.php:249
 #, php-format
 msgid "Successfully connected with friend %s"
-msgstr "已成功與好友聯繫 %s"
+msgstr "已成功與好友%s聯繫"
 
 #: site/dashboard/wizard.php:253
 msgid "Checking in"
@@ -5011,7 +5009,7 @@ msgstr "Zúme 與其他培訓不同！"
 
 #: site/pages/about.php:203
 msgid "First:"
-msgstr "第一的："
+msgstr "第一："
 
 #: site/pages/about.php:204
 msgid ""
@@ -5136,7 +5134,7 @@ msgstr "20 堂課"
 
 #: site/pages/checkin.php:262 site/pages/training.php:245
 msgid "Intensive"
-msgstr "密集的"
+msgstr "密集課程"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
@@ -5315,7 +5313,7 @@ msgstr ""
 
 #: site/pages/get-a-coach.php:92
 msgid "No Cost"
-msgstr "不用費用"
+msgstr "免費"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
@@ -5522,15 +5520,15 @@ msgstr "準備好採取下一步行動了嗎？"
 
 #: site/pages/home.php:340
 msgid "Register Free."
-msgstr "免費註冊。"
+msgstr "免費註冊"
 
 #: site/pages/home.php:344
 msgid "Gather a Group."
-msgstr "聚集一個小組。"
+msgstr "聚集一個小組"
 
 #: site/pages/home.php:348
 msgid "Change the World."
-msgstr "改變世界。"
+msgstr "改變世界"
 
 #: site/pages/home.php:351
 msgid "Get started"
@@ -6113,7 +6111,7 @@ msgstr "加入 Zúme 社區"
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
 msgid "Zúme Dashboard"
-msgstr "「天國酵母」Zúme 工具板"
+msgstr "「天國酵母」Zúme 動態板"
 
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
@@ -6141,7 +6139,7 @@ msgstr "Zúme年度報告"
 
 #: utilities/post-types/posttype-pieces.php:301
 msgid "Piece"
-msgstr "片"
+msgstr "一塊"
 
 #: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"

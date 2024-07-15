@@ -84,21 +84,20 @@ export class DashTrainings extends DashPage {
 
     getTraining() {
         this.loading = true
-        return makeRequest( 'GET', `plan/${this.code}`, {}, 'zume_system/v1' )
+        return zumeRequest.get( `plan/${this.code}`, {} )
             .then((result) => {
-                if ( result.error_code ) {
-                    throw new Error( result.error_code )
-                }
                 this.training = result
             })
             .then(() => {
                 this.refreshSessions()
                 this.groupMembers = this.getGroupMembers()
             })
-            .fail((error) => {
+            .catch((error) => {
+                console.log(error)
                 this.error = error.message
             })
-            .always(() => {
+            .finally(() => {
+                console.log('finally')
                 this.loading = false
             })
     }

@@ -232,7 +232,7 @@ class Zume_Plans_Endpoints
 
         $user_id = get_current_user_id();
         if ( !$user_id ) {
-            return new WP_Error( __METHOD__, 'you are not authenticated', array( 'status' => 400 ) );
+            return new WP_Error( 'not-authorized', 'you are not authenticated', array( 'status' => 400 ) );
         }
 
         $key = $params['key'];
@@ -319,14 +319,14 @@ class Zume_Plans_Endpoints
         $post_id = Zume_Connect_Endpoints::test_join_key( $join_key );
 
         if ( !$post_id ) {
-            return new WP_Error( __METHOD__, 'invalid key', array( 'status' => 400 ) );
+            return new WP_Error( 'bad-plan-code', 'invalid key', array( 'status' => 400 ) );
         }
 
         $user_contact_id = zume_get_user_contact_id( $user_id );
 
         $training_group = DT_Posts::get_post( self::$post_type, $post_id, true, false );
         if ( is_wp_error( $training_group ) ) {
-            return new WP_Error( __METHOD__, 'Failed to update post.', array( 'status' => 401 ) );
+            return new WP_Error( __METHOD__, 'Failed to get post.', array( 'status' => 401 ) );
         }
 
         $participant_ids = array_values( array_map( function ( $participant ) {
@@ -334,7 +334,7 @@ class Zume_Plans_Endpoints
         }, $training_group['participants'] ) );
 
         if ( !in_array( $user_contact_id, $participant_ids ) ) {
-            return new WP_Error( __METHOD__, 'Not a participant of this group', array( 'status' => 400 ) );
+            return new WP_Error( 'not-authorized', 'Not a participant of this group', array( 'status' => 400 ) );
         }
 
         return $post_id;
@@ -347,7 +347,7 @@ class Zume_Plans_Endpoints
         $post_id = Zume_Connect_Endpoints::test_join_key( $join_key );
 
         if ( !$post_id ) {
-            return new WP_Error( __METHOD__, 'invalid key', array( 'status' => 400 ) );
+            return new WP_Error( 'bad-plan-code', 'invalid key', array( 'status' => 400 ) );
         }
 
         $training_group = DT_Posts::get_post( 'zume_plans', $post_id );
@@ -356,7 +356,7 @@ class Zume_Plans_Endpoints
         }
 
         if ( $training_group['assigned_to']['id'] !== "$user_id" ) {
-            return new WP_Error( __METHOD__, 'you are not authorised', array( 'status' => 400 ) );
+            return new WP_Error( 'not-authorized', 'you are not authorised', array( 'status' => 400 ) );
         }
 
         return $post_id;

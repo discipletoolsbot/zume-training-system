@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-11 16:58+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
+"PO-Revision-Date: 2024-07-15 09:02+0000\n"
+"Last-Translator: Zuzanna Sierotnik <zuzanna.sierotnik@gmail.com>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/pl/>\n"
 "Language: pl_PL\n"
@@ -23,7 +22,6 @@ msgid "Training"
 msgstr "Szkolenie"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
-#, fuzzy
 msgid "How it Works"
 msgstr "Jak działa Zúme"
 
@@ -44,26 +42,22 @@ msgid "Dashboard"
 msgstr "Pulpit"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
-msgstr "Mój Zúme"
+msgstr "Moje Zúme"
 
 #: appearance/style-override/navigation.php:117
-#, fuzzy
 msgid "Contacts"
-msgstr "Osoby"
+msgstr "Kontakty"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
 msgstr "Grupy"
 
 #: appearance/style-override/navigation.php:129
-#, fuzzy
 msgid "Trainings"
-msgstr "Szkolenie"
+msgstr "Szkolenia"
 
 #: appearance/style-override/navigation.php:135
-#, fuzzy
 msgid "Metrics"
 msgstr "Statystyki"
 
@@ -76,12 +70,10 @@ msgid "Vision"
 msgstr "Wizja"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
-msgstr "Przechowywanie"
+msgstr "Historie"
 
 #: appearance/style-override/navigation.php:160
-#, fuzzy
 msgid "Global Map"
 msgstr "Mapa globalna"
 
@@ -114,7 +106,6 @@ msgstr "Odkryj istotę bycia uczniem, czynienia uczniami i Kościoła."
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
-#, fuzzy
 msgid "Disciples and the Church"
 msgstr "Uczniowie i Kościół"
 
@@ -129,12 +120,10 @@ msgstr "Bycie uczniem oznacza słuchanie Boga i posłuszeństwo Bogu."
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
-#, fuzzy
 msgid "Hearing and Obeying God"
-msgstr "Duchowe oddychanie to słuchanie i posłuszeństwo Bogu"
+msgstr "Słuchanie Boga i posłuszeństwo Bogu"
 
 #: globals.php:1975 globals.php:1977
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "Studium biblijne P.O.Z.M.O."
 
@@ -176,9 +165,8 @@ msgstr ""
 "bardziej podobnymi do Jezusa."
 
 #: globals.php:2001
-#, fuzzy
 msgid "Producer not Consumer"
-msgstr "Producenci kontra konsumenci"
+msgstr "Producent, a nie konsument"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
@@ -221,7 +209,7 @@ msgid ""
 "those who are faithful with what they've already been given."
 msgstr ""
 "Dowiedz się, czym Boża gospodarka różni się od światowej. Bóg inwestuje "
-"więcej w tych, którzy są wierni temu, co już otrzymali."
+"więcej w tych, którzy są wierni w tym, co już otrzymali."
 
 #: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
@@ -236,9 +224,8 @@ msgstr ""
 "kres czasów."
 
 #: globals.php:2049
-#, fuzzy
 msgid "Sharing God‘s Story"
-msgstr "Przećwiczcie dzielenie się swoim świadectwem (45 min)"
+msgstr "Dzielenie się Bożą historią"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
@@ -251,7 +238,7 @@ msgid ""
 "this into practice."
 msgstr ""
 "Jezus powiedział: „Idźcie więc i pozyskujcie uczniów pośród wszystkich "
-"narodów.  CHRZCIJCIE ich w imię Ojca, Syna i Ducha Świętego…”. Nauczcie się, "
+"narodów. CHRZCIJCIE ich w imię Ojca, Syna i Ducha Świętego…”. Nauczcie się, "
 "jak wprowadzić to w życie."
 
 #: globals.php:2061 site/course/course-content.php:801
@@ -293,9 +280,8 @@ msgstr ""
 "całych duchowych rodzin, które pomnażają się na przyszłe pokolenia."
 
 #: globals.php:2085
-#, fuzzy
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Największe błogosławieństwo"
+msgstr "Wielkie, większe i największe błogosławieństwo"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -316,7 +302,6 @@ msgstr "Kaczątko"
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Oczy, które widzą, gdzie brakuje Królestwa"
 
@@ -344,7 +329,6 @@ msgstr ""
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
-#, fuzzy
 msgid "The Lord’s Supper"
 msgstr "Wieczerza Pańska"
 
@@ -373,7 +357,6 @@ msgid "A Person of Peace and How To Find One"
 msgstr "Człowiek pokoju i jak go znaleźć"
 
 #: globals.php:2144
-#, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
@@ -391,7 +374,6 @@ msgid "Faithfulness is Better Than Knowledge"
 msgstr "Wierność jest lepsza niż wiedza"
 
 #: globals.php:2156
-#, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."

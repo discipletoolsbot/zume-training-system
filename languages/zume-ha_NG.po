@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-10 15:46+0000\n"
+"PO-Revision-Date: 2024-07-15 03:11+0000\n"
 "Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ha_NG/>\n"
@@ -361,7 +361,7 @@ msgstr "Tafiya Sallah"
 
 #: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
-msgstr "Mutumin Salama da Yadda ake Nemo Guda Guda"
+msgstr "Mutum Mai Zaman Lafiya Da Yadda Ake Samun Daya"
 
 #: globals.php:2144
 msgid ""
@@ -374,7 +374,7 @@ msgstr ""
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr "Mutumin Salama"
+msgstr "Mutumin Zaman Lafiya"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
@@ -397,11 +397,12 @@ msgstr "Amincin"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
-msgstr "Tsarin Sallar LADA"
+msgstr "Tsarin Sallah ALBARKA"
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
-msgstr "Yi ɗan saurin mnemonic don tunatar da ku hanyoyin yin addu'a don wasu."
+msgstr ""
+"Yi aiki da sauƙi mai sauƙi don tunatar da ku hanyoyin yin addu'a ga wasu."
 
 #: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
@@ -488,14 +489,14 @@ msgstr ""
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
-msgstr "Pace"
+msgstr "Taki"
 
 #: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
-msgstr "Kullum bangare na Majami'u Guda biyu"
+msgstr "Koyaushe Bangaren Ikklisiya Biyu"
 
 #: globals.php:2240
 #, fuzzy
@@ -513,8 +514,8 @@ msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
-"Kirkira da raba shirin ku yadda zaku aiwatar da kayan aikin na Zume a zangon "
-"ukunku mai zuwa."
+"Ƙirƙiri kuma raba tsarin ku don yadda zaku aiwatar da kayan aikin Zúme cikin "
+"watanni uku masu zuwa."
 
 #: globals.php:2263 globals.php:2265
 #: site/activities/coaching-checklist-host.php:97
@@ -540,8 +541,8 @@ msgid ""
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
 "Kayan aiki mai karfi wanda zakuyi amfani dasu domin tantance karfin gwiwarku "
-"da raunin ku da sauri lokacin da yake mintuna 20 zuwa ga yin almajirai masu "
-"yawa."
+"da raunin ku da sauri lokacin da yake mintuna ashirin zuwa ga yin almajirai "
+"masu yawa."
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
@@ -563,7 +564,7 @@ msgstr ""
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
-msgstr "Erungiyoyi Na Kula"
+msgstr "Ƙungiyoyin Jagoran Tsara"
 
 #: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
@@ -571,17 +572,17 @@ msgid ""
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
-"Wannan rukuni ne wanda ya kunshi mutane da ke jagorantarwa kuma suka fara "
-"3ungiyoyi 3/3. Hakanan yana bin tsarin 3/3 kuma hanya ce mai ƙarfi don "
-"kimanta lafiyar ruhaniya na aikin Allah a cikin ku yanki."
+"Wannan rukuni ne wanda ya ƙunshi mutanen da ke jagorantar kuma suna farawa 3/"
+"3 Groups. Hakanan yana bin tsarin 3/3 kuma hanya ce mai ƙarfi don tantance "
+"lafiyar ruhaniya na aikin Allah a yankinku."
 
 #: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
-msgstr "Erungiyoyi Na Kula"
+msgstr "Jagorar Tsara"
 
 #: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
-msgstr "Kayan Filaye Guda Hudu"
+msgstr "Kayan Aikin Filaye Hudu"
 
 #: globals.php:2300
 msgid ""
@@ -589,9 +590,9 @@ msgid ""
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
-"Tsarin binciken filaye guda huɗu kayan aiki ne mai sauƙi wanda ƙungiyar "
-"jagoranci za ta yi amfani da ita don tunani a kan matsayin ƙoƙarin yanzu da "
-"ayyukan masarautar da ke kewaye da su."
+"Taswirar gano fage guda huɗu kayan aiki ne mai sauƙi da ƙungiyar jagoranci "
+"za ta yi amfani da ita don yin tunani a kan matsayin ƙoƙarin da ake yi na "
+"yanzu da ayyukan masarauta da ke kewaye da su."
 
 #: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
@@ -609,12 +610,10 @@ msgstr ""
 "fahimtar yanayin da ke kewaye da su."
 
 #: globals.php:2323
-#, fuzzy
 msgid "3-Circles Gospel Presentation"
 msgstr "3- Gabatar da Injila"
 
 #: globals.php:2324
-#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
@@ -623,7 +622,6 @@ msgstr ""
 "kwatanci mai sauƙi wanda za a iya zana a kan takarda."
 
 #: globals.php:2325
-#, fuzzy
 msgid "3-Circles"
 msgstr "3-Da'irori"
 
@@ -654,7 +652,6 @@ msgid "H.O.S.T."
 msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
-#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr "Kimanta kanka ta amfani da Ji, Biyayya, Rabawa, Horarwa."
 
@@ -695,7 +692,7 @@ msgstr "Yin biyayya"
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
-msgstr "Raba hannun"
+msgstr "Raba hanu"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:175
@@ -704,7 +701,7 @@ msgstr "Raba hannun"
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
-msgstr "Aka horar da"
+msgstr "An horar da"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
@@ -716,13 +713,12 @@ msgstr "Na ji labarin wannan kayan aiki ko ra'ayi?"
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
-#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
 "Na yi biyayya da wannan kayan aiki ko ra'ayi? Idan kayan aiki, na yi aiki da "
-"kaina? Idan ra'ayi, shin kun yi tunani kan yadda take canza ra'ayin ku?"
+"kaina? Idan ra'ayi, shin kun yi tunani kan yadda take canza hangen nesa?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
@@ -1902,7 +1898,6 @@ msgstr ""
 "kuma ji daga wurin Allah wanda ya halicce mu!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
-#, fuzzy
 msgid "Pray the Prayer Cycle for an hour individually"
 msgstr "Yi Sallar Zagayowar Sa'a guda ɗaya ɗaya"
 
@@ -1975,8 +1970,8 @@ msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"Ka sa kowa a cikin rukuninku ya ɗauki mintuna 30 masu zuwa don cika nasu "
-"jerin alaƙa. Yi lissafin adadin iyawa."
+"Ka sa kowa a cikin rukuninku ya ɗauki mintuna talatin masu zuwa don cika "
+"nasu jerin alaƙa. Yi lissafin adadin iyawa."
 
 #: site/course/course-content.php:645
 #, fuzzy
@@ -1998,24 +1993,22 @@ msgid "Share"
 msgstr "Raba"
 
 #: site/course/course-content.php:686 site/course/course-content.php:3570
-#, fuzzy
 msgid ""
 "Spend time this week praying for five people from your List of 100 that you "
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
 msgstr ""
 "Ka ɓata lokaci a wannan makon ka yi addu'a ga mutane biyar daga cikin "
-"jerinka 100 waɗanda ka yiwa alama a matsayin \"kafiri\" ko \"Ba a sani ba.\" "
-"Tambayi Allah ya shirya zukatansu don buɗe wa labarinsa."
+"jerinka dari waɗanda ka yiwa alama a matsayin \"kafiri\" ko \"Ba a sani ba.\""
+" Tambayi Allah ya shirya zukatansu don buɗe wa labarinsa."
 
 #: site/course/course-content.php:687 site/course/course-content.php:3571
-#, fuzzy
 msgid ""
 "Ask God who He wants you to share the List of 100 tool with. Share this "
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
-"Tambayi Allah wanda Ya so ka raba jerin kayan aikin 100 tare da. Raba sunan "
+"Tambayi Allah wanda Ya so ka raba jerin kayan aikin dari tare da. Raba sunan "
 "mutumin tare da kungiyar kafin ku tafi ku yi musu jagora kafin zaman na gaba."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
@@ -2145,14 +2138,13 @@ msgstr ""
 "da rukunin mutanen kafin ku tafi."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3985
-#, fuzzy
 msgid ""
 "Spend time this week practicing God’s story, and then share it with at least "
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
 "Ku ɓata lokaci a wannan satin kuna aiwatar da Labarin Allah, sannan ku raba "
-"shi da mutum ɗaya a cikin Jerin 100 ɗin da kuka yiwa alama \"Kafirci\" ko "
+"shi da mutum ɗaya a cikin Jerin dari ɗin da kuka yiwa alama \"Kafirci\" ko "
 "\"Ba a sani ba.\""
 
 #: site/course/course-content.php:1038
@@ -2218,16 +2210,15 @@ msgid "Practice sharing your testimony"
 msgstr "Koyi musayar shaidarka"
 
 #: site/course/course-content.php:1192
-#, fuzzy
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
 msgstr ""
 "Yi aiki don rubuta labarin ku kuma ajiye shi zuwa mintuna uku kawai. (minti "
-"10)"
+"goma)"
 
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
-msgstr "A rabu gida biyu zuwa uku kuma kuyi sharing. (minti 20)"
+msgstr "A rabu gida biyu zuwa uku kuma kuyi sharing. (minti ashirin)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
@@ -2334,7 +2325,7 @@ msgstr "Yi bikin Jibin Ubangiji"
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
 msgstr ""
-"Ku ciyar da mintuna 10 masu zuwa don yin bikin Jibin Ubangiji tare da "
+"Ku ciyar da mintuna goma masu zuwa don yin bikin Jibin Ubangiji tare da "
 "ƙungiyar ku."
 
 #: site/course/course-content.php:1424
@@ -2344,7 +2335,7 @@ msgid ""
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
 "Ku ciyar da lokaci a cikin wannan makon don gwada Shaidar ku ta Minti Uku, "
-"sannan ku raba ta tare da aƙalla mutum ɗaya daga cikin Jerin ku na 100 "
+"sannan ku raba ta tare da aƙalla mutum ɗaya daga cikin Jerin ku na dari "
 "waɗanda kuka yiwa alama \"Kafiri\" ko \"Ba a sani ba.\""
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4251
@@ -2557,16 +2548,15 @@ msgstr ""
 "rukunin."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
-#, fuzzy
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
 msgstr ""
-"Shin kun lura da wasu bambance-bambance tsakanin 3ungiyoyin 3/3 da Nazarin "
-"Littafi Mai Tsarki ko Grouparamin Groupan da kuka kasance ɓangare na (ko kun "
-"ji labarin) a da? Idan haka ne, ta yaya waɗannan bambance-bambancen zasu "
-"shafi kungiyar?"
+"Shin kun lura da wani bambance-bambance tsakanin Rukunin 3/3 da Nazarin "
+"Littafi Mai Tsarki ko Ƙananan Ƙungiya da kuka kasance ɓangare na (ko kun ji "
+"labarin) a baya? Idan haka ne, ta yaya waɗannan bambance-bambancen za su yi "
+"tasiri ga ƙungiyar?"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"

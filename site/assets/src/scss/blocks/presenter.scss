@@ -223,6 +223,13 @@
         height: 100%;
     }
 }
+@media (max-width: $break-md) {
+    .video-slide {
+        .script-button__text {
+            display: none;
+        }
+    }
+}
 .course-guide .snap-content {
     scroll-snap-type: block mandatory;
     max-height: 100vh;

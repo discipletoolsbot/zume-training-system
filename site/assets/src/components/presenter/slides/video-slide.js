@@ -58,10 +58,11 @@ export class VideoSlide extends CourseSlide {
 
                 <button
                     type="button"
-                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m-0 bypass-nav-click d-flex gap--2"
+                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m--1 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
-                    <span class="icon z-icon-info"></span><span>${jsObject.translations.view_script}</span>
+                    <span class="icon z-icon-info"></span>
+                    <span class="script-button__text">${jsObject.translations.view_script}</span>
                 </button>
 
                 <div class="widescreen flex-video">
@@ -71,31 +72,6 @@ export class VideoSlide extends CourseSlide {
                     >
                     </iframe>
                 </div>
-
-                ${ false && this.showButtons === true ? html`
-                     <!-- These buttons have no click handlers. They essentially give a space to allow the
-                mouse click to trigger the click left/right side of screen event -->
-                    <button
-                        type="button"
-                        class="btn icon-btn absolute middle left mx-0"
-                    >
-                        <img
-                            src="${jsObject.images_url}/chevron.svg"
-                            alt=${jsObject.translations.previous_slide}
-                            class="svg white rotate-90 w-1rem h-1rem"
-                        />
-                    </button>
-                    <button
-                        type="button"
-                        class="btn icon-btn absolute middle right mx-0"
-                    >
-                        <img
-                            src="${jsObject.images_url}/chevron.svg"
-                            alt=${jsObject.translations.next_slide}
-                            class="svg white rotate--90 w-1rem h-1rem"
-                        />
-                    </button>
-                ` : '' }
             </div>
             <div
                 class="bg-white | information-flyout bypass-nav-click off-canvas ${this.dir === 'rtl' ? 'position-left' : 'position-right'}"
