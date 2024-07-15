@@ -159,7 +159,7 @@ export class DashMaps extends DashPage {
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src='https://zume.training/coaching/zume_app/heatmap_practitioner/'
+                    src='https://zume.training/coaching/zume_app/heatmap_practitioners/'
                     frameborder="0"
                     width="100%"
                     height="100%"
