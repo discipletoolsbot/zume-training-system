@@ -101,6 +101,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'template_dir' => get_template_directory_uri(),
                 'profile' => zume_get_user_profile(),
                 'user_stage' => zume_get_user_stage(),
+                'is_coach' => ! empty( get_user_meta( get_current_user_id(), 'zume_3_corresponds_to_contact', true ) ),
                 'training_items' => zume_training_items(),
                 'training_groups' => zume_get_user_plans( get_current_user_id() ),
                 'host_progress' => zume_get_user_host(),
@@ -292,6 +293,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'messenger' => __( 'Facebook Messenger', 'zume' ),
             'clear' => __( 'Clear', 'zume' ),
             'today' => __( 'Today', 'zume' ),
+            'coaching_portal' => __( 'Coaching Portal', 'zume' ),
         ];
     }
 

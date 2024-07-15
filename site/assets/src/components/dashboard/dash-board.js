@@ -990,6 +990,16 @@ export class DashBoard extends navigator(router(LitElement)) {
                                 as="link"
                                 @click=${this.openJoinTrainingWizard}
                             ></nav-link>
+                            ${jsObject.is_coach
+                              ? html`
+                                    <nav-link
+                                        class="menu-btn | f--1"
+                                        href="/coaching"
+                                        icon="z-icon-coach"
+                                        text="${jsObject.translations.coaching_portal}"
+                                    ></nav-link>
+                                    `
+                              : ''}
                         </div>
                     </div>
                 </div>
