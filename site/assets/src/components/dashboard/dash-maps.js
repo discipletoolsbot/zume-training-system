@@ -46,7 +46,7 @@ export class DashMaps extends DashPage {
             if (map === 'hundred-hour-map') {
                 this.scriptUrl = 'https://zume.training/coaching/zume_app/last100_hours/'
             } else if (map === 'vision-map') {
-                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_practitioner/'
+                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_practitioners/'
             } else if (map === 'church-map') {
                 this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_churches/'
             } else {
@@ -98,9 +98,9 @@ export class DashMaps extends DashPage {
                         `
                         : html`
                             <div class="stack">
-                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
+                                <!-- <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
                                     ${jsObject.translations.hundred_hour_map}
-                                </button>
+                                </button> -->
                                 <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
@@ -134,7 +134,7 @@ export class DashMaps extends DashPage {
                 >
                 </iframe>
             </div>
-            <div
+            <!-- <div
                 class="reveal full"
                 data-reveal
                 id="hundred-hour-map-modal"
@@ -149,7 +149,7 @@ export class DashMaps extends DashPage {
                     height="100%"
                 >
                 </iframe>
-            </div>
+            </div> -->
             <div
                 class="reveal full"
                 data-reveal
