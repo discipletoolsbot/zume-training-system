@@ -63,7 +63,7 @@ switch ( $request_action ) {
             }
         }
 
-        if ( isset( $_GET['error'] ) ) {
+        if ( isset( $_GET['error'] ) && is_wp_error( $form_errors ) ) {
             if ( 'invalidkey' == $_GET['error'] ) {
                 $form_errors->add( 'invalidkey', __( 'Your password reset link appears to be invalid. Please request a new link below.', 'zume' ) );
             } elseif ( 'expiredkey' == $_GET['error'] ) {
