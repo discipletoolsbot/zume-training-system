@@ -168,12 +168,7 @@ switch ( $request_action ) {
             list( $rp_login, $rp_key ) = explode( ':', wp_unslash( $_COOKIE[ $rp_cookie ] ), 2 );
             dt_write_log( '$rp_login = ' . $rp_login . ' $rp_key = ' . $rp_key );
             $user                      = check_password_reset_key( $rp_key, $rp_login );
-
-            if ( is_wp_error( $user ) ) {
-                dt_write_log( $user );
-            } else {
-                dt_write_log( 'user nickname = ' . $user->nickname );
-            }
+            dt_write_log( 'user nickname = ' . $user->nickname );
             dt_write_log( 'POST pass1 = ' . $_POST['pass1'] );
             dt_write_log( 'POST rp_key = ' . $_POST['rp_key'] . ' $rp_key = ' . $rp_key );
             if ( isset( $_POST['pass1'] ) && ! hash_equals( $rp_key, $_POST['rp_key'] ) ) {
