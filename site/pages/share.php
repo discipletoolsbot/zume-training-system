@@ -34,7 +34,7 @@ class Zume_Training_Share extends Zume_Magic_Page
 
         $page_slug = $url_parts[0] ?? '';
 
-        if ( str_contains( $page_slug, $this->type ) && ! dt_is_rest() ) {
+        if ( $page_slug === $this->type && ! dt_is_rest() ) {
 
             $this->register_url_and_access();
             $this->header_content();
