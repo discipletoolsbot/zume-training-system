@@ -94,12 +94,6 @@ class Zume_Translation_Endpoints
         } else {
             return false;
         }
-
-//        $log['author'] = $this->user->display_name;
-//        $log['time'] = gmdate("n-j (g:i a)", strtotime($log['timestamp']));
-//        $log['color'] = 'green';
-//
-//        return $log;
     }
     public function verify( WP_REST_Request $request ) {
         global $wpdb;

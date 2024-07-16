@@ -3,6 +3,7 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly.
 
+use Gettext\Loader\PoLoader;
 
 class Zume_Training_Translations extends Zume_Magic_Page
 {
@@ -157,6 +158,25 @@ class Zume_Training_Translations extends Zume_Magic_Page
                 .grey-back strong {
                     color: white;
                 }
+                span.green {
+                    background-color: green;
+                    width: 20px;
+                    height: 20px;
+                    padding: 0 .6em;
+                    color: white;
+                }
+                span.green::after {
+                    content: "\2713";
+                }
+                span.red {
+                    background-color: red;
+                    width: 20px;
+                    height: 20px;
+                    padding: 0 .7em;
+                }
+                span.red::after {
+                    content: "\2717";
+                }
             </style>
             <?php
         }
@@ -205,7 +225,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
         $this->body();
     }
     public function body(){
-
+        /* variables */
         global $zume_languages_full_list;
         ksort( $zume_languages_full_list );
 
@@ -215,29 +235,10 @@ class Zume_Training_Translations extends Zume_Magic_Page
         $messages = zume_word_count_messages( 'en' );
         $strings = zume_word_count_english();
 
-        ?>
-        <style>
-            span.green {
-                background-color: green;
-                width: 20px;
-                height: 20px;
-                padding: 0 .6em;
-                color: white;
-            }
-            span.green::after {
-                content: "\2713";
-            }
-            span.red {
-                background-color: red;
-                width: 20px;
-                height: 20px;
-                padding: 0 .7em;
-            }
-            span.red::after {
-                content: "\2717";
-            }
+        $weblate = zume_get_weblate_completion();
 
-        </style>
+        ?>
+
         <div style="top:0; left:0; position: fixed; background-color: white; padding: .5em; z-index:100; width: 100%; border-bottom: 1px solid lightgrey;">
             <div class="grid-x grid-padding-x" >
                 <div class="cell medium-9" id="translator-tabs">
@@ -253,8 +254,10 @@ class Zume_Training_Translations extends Zume_Magic_Page
             </div>
         </div>
         <div class="grid-x grid-padding-x" style="margin-top: 100px;">
+
+            <!-- OVERVIEW SECTION -->
             <div class="cell medium-12" style="border-bottom: 1px solid lightgrey; padding-bottom: 1.5em;margin-bottom:1.5em;">
-                <strong style="text-decoration: underline;">ENGLISH CONTENT</strong>:
+                <strong style="text-decoration: underline;">ENGLISH WORDS</strong>:
                 <strong>Weblate:</strong> <?php echo number_format( $strings ); ?> words |
                 <strong>Scripts:</strong> <?php echo number_format( $scripts ); ?> words |
                 <strong>Activities:</strong> <?php echo number_format( $activities ); ?> words |
@@ -263,18 +266,14 @@ class Zume_Training_Translations extends Zume_Magic_Page
                 <strong style="text-decoration: underline;">TOTAL:</strong> <?php echo number_format( $pieces + $scripts + $activities + $messages + $strings ); ?> words
             </div>
 
-            <div class="cell medium-6">
-                <h3>Weblate Content</h3><hr></hr>
-                <a href="https://translate.disciple.tools/engage/zume-training/">
-                    <img src="https://translate.disciple.tools/widget/zume-training/zume-training-system/multi-auto.svg" alt="Translation status" style="width:100%;" />
-                </a>
-            </div>
-            <div class="cell medium-6">
-                <h3>Portal Content</h3><hr></hr>
-                <table>
+            <!-- CONTENT LIST SECTION -->
+            <div class="cell medium-12">
+                <table class="hover click-table" id="content-table">
                     <thead>
                     <tr>
-                        <th>Language Word Count</th>
+                        <th style="width:20px;"></th>
+                        <th>Language</th>
+                        <th>Weblate</th>
                         <th>Scripts</th>
                         <th>Activities</th>
                         <th>Messages</th>
@@ -282,66 +281,256 @@ class Zume_Training_Translations extends Zume_Magic_Page
                     </tr>
                     </thead>
                     <tbody>
+
                     <?php
+                    $count = 1;
                     $column = array_column( $zume_languages_full_list, 'code', 'name' );
                     ksort( $column );
                     foreach ( $column as $name => $code ) {
+                        $s = zume_string_count_scripts( $code );
+                        $a = zume_string_count_activities( $code );
+                        $m = zume_string_count_messages( $code );
+                        $p = zume_string_count_pieces( $code );
                         ?>
-                        <tr>
+                        <tr class="<?php echo $code ?>" data-value="<?php echo esc_html( $code)  ?>">
+                            <td><?php echo $count ?></td>
                             <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_attr( $name ) ?></a></td>
-                            <td><?php echo number_format( zume_word_count_scripts( $code ) ) ?></td>
-                            <td><?php echo number_format( zume_word_count_activities( $code ) ) ?></td>
-                            <td><?php echo number_format( zume_word_count_messages( $code ) ) ?></td>
-                            <td><?php echo number_format( zume_word_count_pieces( $code ) ) ?></td>
+                            <td><?php echo round( $weblate[$code] ) ?>%</td>
+                            <td><?php echo $s ?>/30 | <?php echo translation_get_percent($s, 30 ) ?>%</td>
+                            <td><?php echo $a ?>/24 | <?php echo translation_get_percent($a, 24 ) ?>%</td>
+                            <td><?php echo $m ?>/32 | <?php echo translation_get_percent($m, 32 ) ?>%</td>
+                            <td><?php echo $p ?>/160 | <?php echo translation_get_percent($p, 160 ) ?>%</td>
                         </tr>
                         <?php
+                        $count++;
                     }
                     ?>
                     </tbody>
                 </table>
+
             </div>
 
+            <!-- PUBLISH STATUS SECTION -->
             <div class="cell medium-12">
-                <h3>Global List</h3><hr></hr>
-                <table>
+                <h3>PUBLISHED STATUS</h3><hr></hr>
+                <table class="hover click-table" id="global-table">
                     <thead>
                     <tr>
-                        <th style="width:10%">Language</th>
-                        <th style="width:5%">Code</th>
-                        <th style="width:5%">Locale</th>
-                        <th style="width:10%">v4 Available</th>
-                        <th style="width:10%">Translator Enabled</th>
-                        <th style="width:10%">v5 Ready</th>
-                        <th style="width:10%">Pieces</th>
-                        <th style="width:10%">Slide Download Ready</th>
+                        <th style="width:1%"></th>
+                        <th style="width:8%">Display</th>
+                        <th style="width:8%">Native</th>
+                        <th style="width:4%">Population</th>
+                        <th style="width:2%">RTL</th>
+                        <th style="width:2%">Code</th>
+                        <th style="width:2%">Locale</th>
+                        <th style="width:2%">Weblate</th>
+                        <th style="width:4%">v4 Available</th>
+                        <th style="width:4%">Translator Enabled</th>
+                        <th style="width:4%">v5 Ready</th>
+                        <th style="width:4%">Pieces</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php
-
-                    foreach ( $zume_languages_full_list as $language ) {
+                    $globe_count = 1;
+                    foreach ( $column as $name => $code ) {
+                        $language = $zume_languages_full_list[$code];
                         ?>
-                        <tr>
-                            <td><?php echo esc_html( $language['name'] ) ?></td>
+                        <tr class="<?php echo esc_html( $language['code'] )  ?>" data-value="<?php echo esc_html( $language['code'] )  ?>">
+                            <td><?php echo esc_html( $globe_count ) ?></td>
+                            <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
+                            <td><?php echo esc_html( $language['nativeName'] ) ?></td>
+                            <td><?php echo esc_html( number_format( $language['population'] ) ) ?></td>
+                            <td><?php echo ($language['rtl'])?'Yes':'No' ?></td>
                             <td><?php echo esc_html( $language['code'] ) ?></td>
                             <td><?php echo esc_html( $language['locale'] ) ?></td>
+                            <td><?php echo esc_html( $language['weblate'] ) ?></td>
                             <td><?php echo ( $language['enable_flags']['version_4_available'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['translator_enabled'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['version_5_ready'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['pieces_pages'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
-                            <td><?php echo ( $language['enable_flags']['course_slides_download'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                         </tr>
                         <?php
+                        $globe_count++;
                     }
                     ?>
                     </tbody>
                 </table>
             </div>
-            <div class="cell medium-6">
+            <script>
+                jQuery(document).ready(function(){
+                    jQuery('.en').css('background-color', 'yellow' )
 
-            </div>
+                    jQuery('.click-table tr').on('click', function(e){
+                        jQuery('tr').css('background-color', '')
+                        let code = jQuery(this).data('value')
+                        jQuery('.'+code).css('background-color', 'yellow' )
+                    })
+                })
+            </script>
+
         </div>
         <?php
     }
 }
 Zume_Training_Translations::instance();
+
+
+function zume_string_count_scripts( $language ) {
+    $count = 0;
+    $scripts = list_zume_scripts( $language );
+    foreach ( $scripts as $script ) {
+        $count += ( $script['content'] ) ? 1 : 0 ;
+    }
+
+    return $count;
+}
+function zume_string_count_activities( $language ) {
+    $count = 0;
+    $activities = list_zume_activities( $language );
+    foreach ( $activities as $activity ) {
+        $count += ( $activity['title'] ) ? 1 : 0 ;
+        $count += ( $activity['content'] ) ? 1 : 0 ;
+    }
+
+    return $count;
+}
+function zume_string_count_messages( $language ) {
+    $count = 0;
+    $messages = list_zume_messages( $language );
+    foreach ( $messages as $message ) {
+        $count += ( $message['subject'] ) ? 1 : 0 ;
+        $count += ( $message['body'] ) ? 1 : 0 ;
+    }
+
+    return $count;
+}
+function zume_string_count_pieces( $language ) {
+    $count = 0;
+    $pieces = list_zume_pieces( $language );
+    foreach ( $pieces as $piece ) {
+        $count += ( $piece['zume_piece_h1'] ) ? 1 : 0 ;
+        $count += ( $piece['zume_pre_video_content'] ) ? 1 : 0 ;
+        $count += ( $piece['zume_post_video_content'] ) ? 1 : 0 ;
+        $count += ( $piece['zume_ask_content'] ) ? 1 : 0 ;
+        $count += ( $piece['zume_seo_meta_description'] ) ? 1 : 0 ;
+    }
+
+    return $count;
+}
+function zume_string_count_english() {
+    $count = 0;
+    $loader = new PoLoader();
+    $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume.pot' );
+
+    $strings = array_keys( $translations->getTranslations() );
+    foreach ( $strings as $string ) {
+        $count += str_word_count( $string );
+    }
+
+    return $count;
+}
+function zume_strings_po_count( $locale ) {
+
+    $count = 0;
+    $loader = new PoLoader();
+    $strings = [];
+
+    if ( $locale == 'en' ) {
+        $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume.pot' );
+        $strings = array_keys( $translations->getTranslations() );
+    } else {
+        if ( file_exists( plugin_dir_path( __DIR__ ) . 'zume-'.$locale.'.po' ) ) {
+            $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume-'.$locale.'.po' );
+            $strings = array_keys( $translations->getTranslations() );
+        }
+    }
+
+    foreach ( $strings as $string ) {
+        if ( !empty( $string ) ) {
+            $count++;
+        }
+    }
+
+    if ( 'asl' === $locale ) {
+        $count = 1128;
+    }
+
+    return $count;
+}
+function zume_strings_get_weblate() {
+
+    if ( get_transient( __METHOD__ ) ) {
+        return get_transient( __METHOD__ );
+    }
+
+    $results = [];
+
+    $page_1 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json';
+    $body_1 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_1 ) ), true );
+    if ( ! isset( $body_1['results'] ) ) {
+        return $results;
+    }
+    if ( ! empty( $body_1['next'] ) ) {
+        $page_2 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json&page=2';
+        $body_2 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_2 ) ), true );
+        if ( isset( $body_2['results'] ) ) {
+            $results = array_merge( $body_1['results'], $body_2['results'] );
+        }
+    }
+    if ( ! empty( $body_2['next'] ) ) {
+        $page_3 = 'https://translate.disciple.tools/api/components/zume-training/zume-training-system/translations/?format=json&page=3';
+        $body_3 = json_decode( wp_remote_retrieve_body( wp_remote_get( $page_3 ) ), true );
+        if ( isset( $body_3['results'] ) ) {
+            $results = array_merge( $results, $body_3['results'] );
+        }
+    }
+
+    $languages = [];
+    foreach ( $results as $result ) {
+        $languages[ $result['language']['code'] ] = $result;
+    }
+
+    set_transient( __METHOD__, $languages, 60 *60 ); // 60 minutes
+
+    return $languages;
+}
+function zume_get_weblate_completion() {
+    $languages = zume_strings_get_weblate();
+    global $zume_languages_full_list;
+
+    $list = [];
+    foreach($zume_languages_full_list as $item ) {
+        $list[$item['weblate']] = [
+            'code' => $item['code'],
+            'percent' => 0
+        ];
+    }
+
+    foreach($languages as $index => $language ) {
+        if ( ! isset( $list[$index]['percent'] ) ) {
+            $list[$index] = [
+                'code' => '',
+                'percent' => 0
+            ];
+        }
+        $list[$index]['percent'] = $language['translated_percent'];
+    }
+
+    $codes = [];
+    foreach( $list as $value ) {
+        $codes[$value['code']] = $value['percent'];
+    }
+
+    $codes['asl'] = 100;
+
+    dt_write_log($codes);
+    return $codes;
+}
+
+function translation_get_percent( $current_value, $target_value ) {
+    if ( $current_value < 1 ) {
+        return 0;
+    }
+    return round( $current_value/$target_value*100 );
+}
