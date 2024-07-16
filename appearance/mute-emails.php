@@ -9,9 +9,6 @@ function zume_system_patches_disable_dt_email(){
 
 add_filter( 'pre_wp_mail', 'zume_system_patches_disable_wp_emails', 10, 2 );
 function zume_system_patches_disable_wp_emails( $_, $args ){
-    dt_write_log( __METHOD__ );
-    dt_write_log( $args );
-
     if ( !isset( $args['headers'] ) || empty( $args['headers'] ) ) {
         return false;
     }

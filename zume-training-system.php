@@ -216,7 +216,7 @@ class Zume_Training {
      * @return array
      */
     public function filter_email_change_email( array $email_change_email ) : array {
-        $email_change_email['headers'] .= ' ' . ZUME_EMAIL_HEADER;
+        $email_change_email['headers'] = self::add_zume_email_header( $email_change_email['headers'] );
 
         return $email_change_email;
     }
@@ -262,13 +262,23 @@ class Zume_Training {
         return $title;
     }
 
-    public function filter_retrieve_password_headers( string $headers ): string {
+    /**
+     * @param string|string[] $headers
+     * @return string
+     */
+    public function filter_retrieve_password_headers( $headers ): string {
+        return self::add_zume_email_header( $headers );
+    }
 
-        $headers .= ' ' . ZUME_EMAIL_HEADER;
+    public static function add_zume_email_header( $headers ) {
+        if ( is_array( $headers ) ) {
+            $headers[ZUME_EMAIL_HEADER] = 1;
+        }
+
+        $headers .= ' ' . ZUME_EMAIL_HEADER . ": 1\n\r";
 
         return $headers;
     }
-
 
     public function dt_details_additional_tiles( $tiles, $post_type = '' ) {
         if ( $post_type === 'contacts' ) {
