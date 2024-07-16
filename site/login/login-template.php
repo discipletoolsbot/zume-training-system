@@ -163,9 +163,14 @@ switch ( $request_action ) {
             exit;
         }
 
+
         if ( isset( $_COOKIE[ $rp_cookie ] ) && 0 < strpos( sanitize_text_field( wp_unslash( $_COOKIE[ $rp_cookie ] ) ), ':' ) ) {
             list( $rp_login, $rp_key ) = explode( ':', wp_unslash( $_COOKIE[ $rp_cookie ] ), 2 );
             $user                      = check_password_reset_key( $rp_key, $rp_login );
+
+            dt_write_log( get_user_by( 'login', $rp_login ) );
+            dt_write_log( $rp_key . '  ' . $rp_login );
+
             if ( isset( $_POST['pass1'] ) && ! hash_equals( $rp_key, $_POST['rp_key'] ) ) {
                 $user = false;
             }
