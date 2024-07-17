@@ -2,18 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/sl_SI/>\n"
+"PO-Revision-Date: 2024-07-17 22:59+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Slovenian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/sl_SI/>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -612,11 +611,11 @@ msgstr "3-Krogi"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "vprašanje"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "Odgovori"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -1006,7 +1005,6 @@ msgid "Save"
 msgstr "Shrani"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
 msgstr "prekliči"
 
@@ -3766,7 +3764,6 @@ msgid "Exit Course"
 msgstr "Izhod iz tečaja"
 
 #: site/course/presenter.php:192
-#, fuzzy
 msgid "Slide View"
 msgstr "Mrežni pogled"
 
@@ -3787,12 +3784,10 @@ msgid "Session"
 msgstr "Seja"
 
 #: site/course/presenter.php:198
-#, fuzzy
 msgid "View Transcript"
 msgstr "Ogled prepisa"
 
 #: site/course/presenter.php:199
-#, fuzzy
 msgid "View Activity"
 msgstr "Ogled dejavnosti"
 
@@ -4377,9 +4372,8 @@ msgid "Simple church planting map"
 msgstr "Preprost zemljevid postavitve cerkva"
 
 #: site/dashboard/dashboard.php:289
-#, fuzzy
 msgid "No date"
-msgstr "Posodobi"
+msgstr "Brez datuma"
 
 #: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
@@ -4587,15 +4581,13 @@ msgid "Join for Free"
 msgstr "Pridružite se brezplačno"
 
 #: site/dashboard/wizard.php:183
-#, fuzzy
 msgid "Successfully joined community"
-msgstr "Uspešno se je pridružil usposabljanju %s"
+msgstr "Uspešno pridružen skupnosti"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
-#, fuzzy
 msgid "Something went wrong"
-msgstr "Ups. Nekaj se je zalomilo."
+msgstr "Nekaj je šlo narobe"
 
 #: site/dashboard/wizard.php:188
 msgid "Complete your profile"
@@ -5552,13 +5544,12 @@ msgid "Connect"
 msgstr "Poveži"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
-msgstr "Razvrsti"
+msgstr "oz"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Izberite sejo za prijavo"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -5963,9 +5954,9 @@ msgstr ""
 "Ti koncepti in veščine so spremenili našo cerkev in naš vpliv na svet. ~ R"
 
 #: site/pages/home.php:325
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Zúme = kvas"
+msgstr "%s = kvas"
 
 #: site/pages/home.php:331
 msgid ""
@@ -6459,34 +6450,28 @@ msgstr "Za uporabo te strani omogočite javascript"
 #: utilities/integrations/replace-placeholder.php:173
 #: utilities/integrations/replace-placeholder.php:174
 #: utilities/integrations/replace-placeholder.php:175
-#, fuzzy
 msgid "Update Communication Preferences"
-msgstr "Kakšne so vaše želje glede stikov?"
+msgstr "Posodobite komunikacijske nastavitve"
 
 #: site/profile/communication-preferences.php:81
-#, fuzzy
 msgid "Recieve emails for:"
 msgstr "Prejemajte e-poštna sporočila za:"
 
 #: site/profile/communication-preferences.php:84
-#, fuzzy
 msgid "Training session reminders"
-msgstr "Zemljevid vida za usposabljanje"
+msgstr "Opomniki za vadbo"
 
 #: site/profile/communication-preferences.php:88
-#, fuzzy
 msgid "Annual reporting reminders"
 msgstr "Opomniki za letno poročanje"
 
 #: site/profile/communication-preferences.php:92
-#, fuzzy
 msgid "Community updates"
-msgstr "Skupnost"
+msgstr "Posodobitve skupnosti"
 
 #: site/profile/communication-preferences.php:96
-#, fuzzy
 msgid "Encouragements"
-msgstr "Spodbuda"
+msgstr "Spodbude"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6530,9 +6515,8 @@ msgid "Congratulations"
 msgstr "Čestitke"
 
 #: utilities/apis/cta-api.php:209
-#, fuzzy
 msgid "Connected to Coach!"
-msgstr "Povezovanje s trenerjem"
+msgstr "Povezan s trenerjem!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
@@ -6584,7 +6568,6 @@ msgid "3 Month Plan Completed"
 msgstr "izpolnjen 3-mesečni načrt"
 
 #: utilities/apis/cta-api.php:402
-#, fuzzy
 msgid "Join the community"
 msgstr "Pridružite se skupnosti"
 
@@ -6605,16 +6588,16 @@ msgid "Share Relational Stewardship with someone"
 msgstr "Delite Relational Stewardship z nekom"
 
 #: utilities/apis/plans-api.php:142
-#, fuzzy, php-format
+#, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "Moja prva skupina za usposabljanje"
+msgstr "Moj prvi trening - %s"
 
 #: utilities/apis/plans-api.php:144
-#, fuzzy, php-format
+#, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr "Treningi"
+msgstr "Usposabljanje %1$d - %2$s"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -6653,7 +6636,6 @@ msgstr "Delite stran Zúme"
 #: utilities/integrations/replace-placeholder.php:169
 #: utilities/integrations/replace-placeholder.php:170
 #: utilities/integrations/replace-placeholder.php:171
-#, fuzzy
 msgid "Zúme Annual Report"
 msgstr "Letno poročilo Zúme"
 
