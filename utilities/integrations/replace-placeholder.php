@@ -143,7 +143,7 @@ class Zume_Replace_Placeholder {
         // simple placeholder replacements
         // @note a copy of this also lives in Zume_Training_Translator->assets()
         $place_holders = self::place_holders();
-        $replacement_string = self::replacement_string($language_code);
+        $replacement_string = self::replacement_string( $language_code );
 
         $content = str_replace( $place_holders, $replacement_string, $content );
 

@@ -3,6 +3,8 @@ if ( !defined( 'ABSPATH' ) ) {
     exit;
 } // Exit if accessed directly.
 
+// phpcs:disable
+
 use Gettext\Loader\PoLoader;
 
 class Zume_Training_Translations extends Zume_Magic_Page
@@ -177,6 +179,9 @@ class Zume_Training_Translations extends Zume_Magic_Page
                 span.red::after {
                     content: "\2717";
                 }
+                span.percent-100 {
+                    font-weight: 900;
+                }
             </style>
             <?php
         }
@@ -291,15 +296,20 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         $a = zume_string_count_activities( $code );
                         $m = zume_string_count_messages( $code );
                         $p = zume_string_count_pieces( $code );
+                        $sp = translation_get_percent( $s, 30 ) ;
+                        $ap = translation_get_percent( $a, 24 );
+                        $mp = translation_get_percent( $m, 32 );
+                        $pp = translation_get_percent( $p, 160 );
+                        $web = round( $weblate[$code] );
                         ?>
-                        <tr class="<?php echo $code ?>" data-value="<?php echo esc_html( $code)  ?>">
+                        <tr class="<?php echo $code ?>" data-value="<?php echo esc_html( $code )  ?>">
                             <td><?php echo $count ?></td>
                             <td><a href="/<?php echo esc_attr( $code ) ?>/app/translator/?tab=status"><?php echo esc_attr( $name ) ?></a></td>
-                            <td><?php echo round( $weblate[$code] ) ?>%</td>
-                            <td><?php echo $s ?>/30 | <?php echo translation_get_percent($s, 30 ) ?>%</td>
-                            <td><?php echo $a ?>/24 | <?php echo translation_get_percent($a, 24 ) ?>%</td>
-                            <td><?php echo $m ?>/32 | <?php echo translation_get_percent($m, 32 ) ?>%</td>
-                            <td><?php echo $p ?>/160 | <?php echo translation_get_percent($p, 160 ) ?>%</td>
+                            <td><span class="percent-<?php echo $web ?>"><?php echo $web ?>%</span></td>
+                            <td><span class="percent-<?php echo $sp ?>"><?php echo $s ?>/30 | <?php echo $sp ?>%</span></td>
+                            <td><span class="percent-<?php echo $ap ?>"><?php echo $a ?>/24 | <?php echo $ap ?>%</span></td>
+                            <td><span class="percent-<?php echo $mp ?>"><?php echo $m ?>/32 | <?php echo $mp ?>%</span></td>
+                            <td><span class="percent-<?php echo $pp ?>"><?php echo $p ?>/160 | <?php echo $pp ?>%</span></td>
                         </tr>
                         <?php
                         $count++;
@@ -341,7 +351,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             <td><?php echo esc_html( $language['enDisplayName'] ) ?></td>
                             <td><?php echo esc_html( $language['nativeName'] ) ?></td>
                             <td><?php echo esc_html( number_format( $language['population'] ) ) ?></td>
-                            <td><?php echo ($language['rtl'])?'Yes':'No' ?></td>
+                            <td><?php echo ( $language['rtl'] ) ?'Yes' :'No' ?></td>
                             <td><?php echo esc_html( $language['code'] ) ?></td>
                             <td><?php echo esc_html( $language['locale'] ) ?></td>
                             <td><?php echo esc_html( $language['weblate'] ) ?></td>
@@ -380,7 +390,7 @@ function zume_string_count_scripts( $language ) {
     $count = 0;
     $scripts = list_zume_scripts( $language );
     foreach ( $scripts as $script ) {
-        $count += ( $script['content'] ) ? 1 : 0 ;
+        $count += ( $script['content'] ) ? 1 : 0;
     }
 
     return $count;
@@ -389,8 +399,8 @@ function zume_string_count_activities( $language ) {
     $count = 0;
     $activities = list_zume_activities( $language );
     foreach ( $activities as $activity ) {
-        $count += ( $activity['title'] ) ? 1 : 0 ;
-        $count += ( $activity['content'] ) ? 1 : 0 ;
+        $count += ( $activity['title'] ) ? 1 : 0;
+        $count += ( $activity['content'] ) ? 1 : 0;
     }
 
     return $count;
@@ -399,8 +409,8 @@ function zume_string_count_messages( $language ) {
     $count = 0;
     $messages = list_zume_messages( $language );
     foreach ( $messages as $message ) {
-        $count += ( $message['subject'] ) ? 1 : 0 ;
-        $count += ( $message['body'] ) ? 1 : 0 ;
+        $count += ( $message['subject'] ) ? 1 : 0;
+        $count += ( $message['body'] ) ? 1 : 0;
     }
 
     return $count;
@@ -409,51 +419,11 @@ function zume_string_count_pieces( $language ) {
     $count = 0;
     $pieces = list_zume_pieces( $language );
     foreach ( $pieces as $piece ) {
-        $count += ( $piece['zume_piece_h1'] ) ? 1 : 0 ;
-        $count += ( $piece['zume_pre_video_content'] ) ? 1 : 0 ;
-        $count += ( $piece['zume_post_video_content'] ) ? 1 : 0 ;
-        $count += ( $piece['zume_ask_content'] ) ? 1 : 0 ;
-        $count += ( $piece['zume_seo_meta_description'] ) ? 1 : 0 ;
-    }
-
-    return $count;
-}
-function zume_string_count_english() {
-    $count = 0;
-    $loader = new PoLoader();
-    $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume.pot' );
-
-    $strings = array_keys( $translations->getTranslations() );
-    foreach ( $strings as $string ) {
-        $count += str_word_count( $string );
-    }
-
-    return $count;
-}
-function zume_strings_po_count( $locale ) {
-
-    $count = 0;
-    $loader = new PoLoader();
-    $strings = [];
-
-    if ( $locale == 'en' ) {
-        $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume.pot' );
-        $strings = array_keys( $translations->getTranslations() );
-    } else {
-        if ( file_exists( plugin_dir_path( __DIR__ ) . 'zume-'.$locale.'.po' ) ) {
-            $translations = $loader->loadFile( plugin_dir_path( __DIR__ ) . 'zume-'.$locale.'.po' );
-            $strings = array_keys( $translations->getTranslations() );
-        }
-    }
-
-    foreach ( $strings as $string ) {
-        if ( !empty( $string ) ) {
-            $count++;
-        }
-    }
-
-    if ( 'asl' === $locale ) {
-        $count = 1128;
+        $count += ( $piece['zume_piece_h1'] ) ? 1 : 0;
+        $count += ( $piece['zume_pre_video_content'] ) ? 1 : 0;
+        $count += ( $piece['zume_post_video_content'] ) ? 1 : 0;
+        $count += ( $piece['zume_ask_content'] ) ? 1 : 0;
+        $count += ( $piece['zume_seo_meta_description'] ) ? 1 : 0;
     }
 
     return $count;
@@ -500,31 +470,31 @@ function zume_get_weblate_completion() {
     global $zume_languages_full_list;
 
     $list = [];
-    foreach($zume_languages_full_list as $item ) {
+    foreach ( $zume_languages_full_list as $item ) {
         $list[$item['weblate']] = [
             'code' => $item['code'],
-            'percent' => 0
+            'percent' => 0,
         ];
     }
 
-    foreach($languages as $index => $language ) {
+    foreach ( $languages as $index => $language ) {
         if ( ! isset( $list[$index]['percent'] ) ) {
             $list[$index] = [
                 'code' => '',
-                'percent' => 0
+                'percent' => 0,
             ];
         }
         $list[$index]['percent'] = $language['translated_percent'];
     }
 
     $codes = [];
-    foreach( $list as $value ) {
+    foreach ( $list as $value ) {
         $codes[$value['code']] = $value['percent'];
     }
 
     $codes['asl'] = 100;
 
-    dt_write_log($codes);
+    dt_write_log( $codes );
     return $codes;
 }
 
@@ -532,5 +502,6 @@ function translation_get_percent( $current_value, $target_value ) {
     if ( $current_value < 1 ) {
         return 0;
     }
-    return round( $current_value/$target_value*100 );
+    return round( $current_value /$target_value *100 );
 }
+// phpcs:enable
