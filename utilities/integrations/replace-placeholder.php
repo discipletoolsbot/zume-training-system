@@ -16,17 +16,8 @@ class Zume_Replace_Placeholder {
 
     public function __construct() {}
 
-    public function replace_content( $content, $language_code, $user_id ) {
-        if ( empty( $language_code ) ) {
-            $language_code = 'en';
-        }
-
-        $base_url = trailingslashit( site_url() ). $language_code . '/';
-        $mirror_url = zume_mirror_url();
-        $wizard_root = 'wizard/';
-
-        // simple placeholder replacements
-        $place_holders = [
+    public static function place_holders() : array {
+        return [
             '[buttonsmall_getacoach]', // Get a Coach
             '[buttonlarge_getacoach]',
             '[link_getacoach]',
@@ -71,18 +62,23 @@ class Zume_Replace_Placeholder {
             '[buttonlarge_share]',
             '[link_share]',
 
-            '[image_pace1]',
+            '[image_pace1]', // pace images
             '[image_pace2]',
             '[image_pace3]',
             '[image_pace4]',
 
-            '[image_prayercycle]',
+            '[image_prayercycle]', // images
             '[image_fourfields]',
             '[image_genmap]',
             '[image_trainingcycle]',
             '[image_3circles]',
         ];
-        $replacement_string = [
+    }
+    public static function replacement_string( $language_code ) {
+        $base_url = trailingslashit( site_url() ). $language_code . '/';
+        $mirror_url = zume_mirror_url();
+        $wizard_root = 'wizard/';
+        return [
             '<a class="button small" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>', // Get a Coach
             '<a class="button large" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>',
             '<a class="" href="'.$base_url.$wizard_root.'get-a-coach">'. __( 'Get a Coach', 'zume' ) .'</a>',
@@ -137,8 +133,17 @@ class Zume_Replace_Placeholder {
             '<img src="'.$mirror_url.$language_code.'/104.png" alt="genmap">', // genmap
             '<img src="'.$mirror_url.$language_code.'/101.png" alt="training cycle">', // training cycle
             '<img src="'.$mirror_url.'images/3-circles-graphic.png" alt="3 circles">', // 3-circles
-
         ];
+    }
+    public function replace_content( $content, $language_code, $user_id ) {
+        if ( empty( $language_code ) ) {
+            $language_code = 'en';
+        }
+
+        // simple placeholder replacements
+        // @note a copy of this also lives in Zume_Training_Translator->assets()
+        $place_holders = self::place_holders();
+        $replacement_string = self::replacement_string($language_code);
 
         $content = str_replace( $place_holders, $replacement_string, $content );
 

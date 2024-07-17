@@ -498,6 +498,9 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 </a>
             </div>
 
+
+
+
              <!-- HOME -->
             <div class="cell center grey-back">
                 <strong>HOME</strong>
@@ -1910,8 +1913,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
+        /* copied from replace-placeholder.php:Zume_Replace_Placeholder::replace_content() */
         $language = $this->language;
-        $training_items = zume_training_items();
         ?>
         <div class="grid-x grid-padding-x" >
 
@@ -1921,7 +1924,6 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 </div>
                 <div class="cell">
                     <?php
-                        global $wpdb;
                         $video_fields = $this->video_fields;
                         $video_results = list_zume_videos( $this->language_code );
 
@@ -1969,29 +1971,23 @@ class Zume_Training_Translator extends Zume_Magic_Page
                     }
                 </style>
                 <div class="cell center grey-back" style="margin-top:100px;">
-                    <h2 style="color:white;">IMAGE ASSETS</h2>
+                    <h2 style="color:white;">SHORTCODES FOR MESSAGES</h2>
                 </div>
                 <div class="cell">
-                    <?php
-                    foreach ( $this->images as $image_number ) {
-                        $file = $this->mirror_url . $this->language_code .'/'. $image_number . '.png';
+                    <br>
+                    <div class="grid-x grid-padding-x" >
+                        <?php
+                            $place_holders = Zume_Replace_Placeholder::place_holders();
+                            foreach ( $place_holders as $place_holder ) {
+                                ?>
+                                <div class="cell"><?php echo zume_replace_placeholder( $place_holder, $language['key'] ) ?> <?php echo $place_holder ?></div>
+                                <?php
+                            }
                         ?>
-                                <div class="img-wrapper">
-                                    <div>
-                                        <strong><?php echo $image_number . '.png'?></strong>
-                                    </div>
-                                    <div>
-                                        <img src="<?php echo $file ?>" >
-                                    </div>
-                                </div>
-                            <?php
-                    }
-                    ?>
+                    </div>
                 </div>
 
-
             </div> <!-- wrapping div -->
-
 
         <?php
     }
@@ -2592,7 +2588,7 @@ function zume_get_weblate() {
         $languages[ $result['language']['code'] ] = $result;
     }
 
-    set_transient( __METHOD__, $languages, 60 *60 ); // 60 minutes
+    set_transient( __METHOD__, $languages, 60 * 60 ); // 60 minutes
 
     return $languages;
 }
