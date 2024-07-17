@@ -2,17 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Hindi <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/hi_IN/>\n"
+"PO-Revision-Date: 2024-07-17 11:47+0000\n"
+"Last-Translator: Manikumar Miriyala <mani@zume.training>\n"
+"Language-Team: Hindi <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/hi_IN/>\n"
 "Language: hi_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -607,7 +606,7 @@ msgstr "3-सर्कल्स (वृत्त)"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "प्रश्न"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
@@ -644,7 +643,7 @@ msgstr "प्रशिक्षण उपकरण/अवधारणाएँ"
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
 msgid "Ask yourself, have I"
-msgstr "खुद से पूछें, क्या आपने"
+msgstr "खुद से पूछें, क्या मैनें"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -1056,8 +1055,8 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
-"यीशु ने कहा, “परन्तु जब पवित्र आत्मा तुम पर आएगा तब तुम सामर्थ पाओगे; और यरूशलेम और सारे "
-"यहूदिया और सामरिया में, और पृथ्वी की छोर तक मेरे गवाह होंगे।\""
+"यीशु ने कहा, “परन्तु जब पवित्र आत्मा तुम पर आएगा तब तुम सामर्थ्य पाओगे; और "
+"यरूशलेम और सारे यहूदिया और सामरिया में, और पृथ्वी की छोर तक मेरे गवाह होगे।\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
