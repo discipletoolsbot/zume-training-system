@@ -96,38 +96,34 @@ export class DashProgress extends DashPage {
         jQuery(menu).foundation('close')
     }
 
-    toggleHost(host, event) {
+    toggleHost(host, event, additionalHostToCredit = []) {
         event.stopImmediatePropagation()
         const {type, subtype, key} = host
         const currentState = this.hostProgress.list[key]
 
         if (currentState === false) {
             this.changeHost(key, true)
+
+            additionalHostToCredit.forEach(({key}) => this.changeHost(key, true))
+
             return zumeRequest.post('host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id } )
                 .then( ( data ) => {
                     //console.log(data)
                 })
                 .catch((error) => {
                     this.changeHost(key, false)
+                    additionalHostToCredit.forEach(({key}) => this.changeHost(key, false))
+
                     this.displayError(jsObject.translations.error_with_request)
-                })
-                .finally(() => {
-                    this.loadHostStatus()
                 })
         }
 
         if (currentState === true) {
             this.changeHost(key, false)
             return zumeRequest.delete('host', { type: type, subtype: subtype, user_id: jsObject.profile.user_id } )
-                .then( ( data ) => {
-                    this.loadHostStatus()
-                })
                 .catch((error) => {
                     this.changeHost(key, false)
                     this.displayError(jsObject.translations.error_with_request)
-                })
-                .finally(() => {
-                    this.loadHostStatus()
                 })
 
         }
@@ -215,21 +211,21 @@ export class DashProgress extends DashPage {
                         <button
                             data-subtype=${host[1].subtype}
                             class=${this.hostProgress.list[host[1].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[1], event)}
+                            @click=${(event) => this.toggleHost(host[1], event, [ host[0] ])}
                         >
                             <span class="icon z-icon-obey-concept"></span>
                         </button>
                         <button
                             data-subtype=${host[2].subtype}
                             class=${this.hostProgress.list[host[2].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[2], event)}
+                            @click=${(event) => this.toggleHost(host[2], event, [ host[0], host[1] ])}
                         >
                             <span class="icon z-icon-share-concept"></span>
                         </button>
                         <button
                             data-subtype=${host[3].subtype}
                             class=${this.hostProgress.list[host[3].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[3], event)}
+                            @click=${(event) => this.toggleHost(host[3], event, [ host[0], host[1], host[2] ])}
                         >
                             <span class="icon z-icon-train-concept"></span>
                         </button>
