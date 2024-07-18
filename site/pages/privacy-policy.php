@@ -175,7 +175,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'Your Access to and Control Over Information.', 'zume' ) ?></h3>
                 <p>
-                    <?php echo sprintf(
+                    <?php printf(
                         esc_html_x( 'You can do the following at any time by contacting us via our %s form:', 'You can do the following at any time by contacting us via our contact us form:', 'prayer-global-porch' ),
                         '<a href="https://zume.training/webform/ml/2ae70f7a646137700aaa8759af237214" target="_blank">' . esc_html( __( 'contact us', 'zume' ) ) . '</a>'
                     ) ?>
@@ -195,7 +195,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
                         <?php esc_html_e( 'Express any concern you have about our use of your data.', 'zume' ) ?>
                     </li>
                     <li>
-                        <?php echo esc_html__( 'Opt out of any future contact from us.', 'prayer-global-porch' ) ?>
+                        <?php echo esc_html__( 'Opt out of any future contact from us.', 'zume' ) ?>
                     </li>
                 </ul>
             </div>
