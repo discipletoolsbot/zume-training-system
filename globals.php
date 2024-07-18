@@ -1654,7 +1654,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'code' => 'swa',
                 'displayCode' => 'swa',
                 'locale' => 'swa',
-                'weblate' => 'swa',
+                'weblate' => 'sw',
                 'nativeName' => 'Kiswahili',
                 'rtl' => false,
                 'flag' => '🇹🇿',
