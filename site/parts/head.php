@@ -7,3 +7,11 @@
 <script defer src="https://umami.gospelambition.com/script.js" data-website-id="e503fecf-00f2-4556-a7e3-40dd2671bdac"></script>
 
 <link rel="icon" type="image/x-icon" href="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/../../favicon.ico' ) ?>"></link>
+<?php //phpcs:ignore ?>
+<script src="https://browser.sentry-cdn.com/7.60.0/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+  Sentry.init({
+    dsn: "https://fd1b2f60ca0b4e899eaa09266736d634@red-gopher.pikapod.net/4",
+    tracesSampleRate: 0.01,
+  });
+</script>

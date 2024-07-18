@@ -51,7 +51,12 @@
         </div>
 
         <div class="cluster | justify-content-between gapx-4 gapy-2 | footer-links">
-            <span class="copyright">&copy; 2016-<?php echo esc_html( gmdate( 'Y' ) ); ?> Zúme. All rights reserved.</span>
+            <div class="cluster | s-1">
+                <span class="copyright">&copy; 2016-<?php echo esc_html( gmdate( 'Y' ) ); ?> Zúme. All rights reserved.</span>
+                <a href="<?php echo esc_url( zume_privacy_url() ) ?>" class="link-light" role="listitem">
+                    <?php echo esc_html__( 'Privacy Policy', 'zume' ) ?>
+                </a>
+            </div>
             <div class="cluster | s-1 justify-flex-end f-0" role="list">
                 <a href="https://www.facebook.com/zumemultiplyingdisciples" class="link-light" role="listitem">
                     <div class="icon"><?php require plugin_dir_path( __DIR__ ) . 'assets/images/facebook.svg' ?></div>

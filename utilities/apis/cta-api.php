@@ -419,7 +419,7 @@ class Zume_System_CTA_API
             ],
 
             // HOST triggers
-            [
+/*             [
                 'stages' => [2],
                 'required_keys' => ['training_3_heard'],
                 'disable_keys' => ['training_3_shared'],
@@ -448,7 +448,7 @@ class Zume_System_CTA_API
                     'link' => '/training_8_shared',
                 ],
                 'content_template' => 'card',
-            ],
+            ], */
         ];
         return $templates;
     }
