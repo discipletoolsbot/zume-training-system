@@ -175,20 +175,27 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'Your Access to and Control Over Information.', 'zume' ) ?></h3>
                 <p>
-                    <?php esc_html_e( 'You may opt out of any future contact from us at any time. You can do the following at any time by contacting us via our contact email address:', 'zume' ) ?>
+                    <?php printf(
+                        esc_html_x( 'You can do the following at any time by contacting us via our %s form:', 'You can do the following at any time by contacting us via our contact us form:', 'prayer-global-porch' ),
+                        '<a href="https://zume.training/webform/ml/2ae70f7a646137700aaa8759af237214" target="_blank">' . esc_html( __( 'contact us', 'zume' ) ) . '</a>'
+                    ) ?>
                 </p>
-                <p>
-                    <?php esc_html_e( 'See what data we\'ve aggregated from your activities with us.', 'zume' ) ?>
-                </p>
+
                 <ul class="bullets">
+                    <li>
+                        <?php esc_html_e( 'See what data we\'ve aggregated from your activities with us.', 'zume' ) ?>
+                    </li>
                     <li>
                         <?php esc_html_e( 'Change/correct any data we have about you.', 'zume' ) ?>
                     </li>
                     <li>
-                        <?php esc_html_e( 'Have us delete any data we have about you.', 'zume' ) ?>
+                        <?php esc_html_e( 'Have us delete your account or any data we have about you.', 'zume' ) ?>
                     </li>
                     <li>
                         <?php esc_html_e( 'Express any concern you have about our use of your data.', 'zume' ) ?>
+                    </li>
+                    <li>
+                        <?php echo esc_html__( 'Opt out of any future contact from us.', 'zume' ) ?>
                     </li>
                 </ul>
             </div>
