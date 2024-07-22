@@ -97,7 +97,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <hr>
             <div class="stack" id="personal-information">
                 <h3 class="brand-light"><?php esc_html_e( 'What personal information do we collect from the people through our website?', 'zume' ) ?></h3>
-                <p>Some personal information is tracked for the proper functioning of the website, and other information is requested and saved for additional coaching and support.</p>
+                <p><?php esc_html_e( 'Some personal information is tracked for the proper functioning of the website, and other information is requested and saved for additional coaching and support.', 'zume' ) ?></p>
                 <ul class="bullets">
                     <li>
                         <?php esc_html_e( 'A user’s real name or nickname is requested to improve the personal quality of the site and communication, as well as for customer service requests and coaching.', 'zume' ) ?>
@@ -175,10 +175,7 @@ class Zume_Training_Privacy_Policy extends Zume_Magic_Page
             <div class="stack">
                 <h3 class="brand-light"><?php esc_html_e( 'Your Access to and Control Over Information.', 'zume' ) ?></h3>
                 <p>
-                    <?php printf(
-                        esc_html_x( 'You can do the following at any time by contacting us via our %s form:', 'You can do the following at any time by contacting us via our contact us form:', 'prayer-global-porch' ),
-                        '<a href="https://zume.training/webform/ml/2ae70f7a646137700aaa8759af237214" target="_blank">' . esc_html( __( 'contact us', 'zume' ) ) . '</a>'
-                    ) ?>
+                    <?php esc_html_e( 'You can do the following at any time by contacting us via our "Get a Coach" form and choosing "Technical Assistance" from your user dashboard.', 'zume' ) ?>
                 </p>
 
                 <ul class="bullets">
