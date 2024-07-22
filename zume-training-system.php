@@ -404,9 +404,9 @@ class Zume_Training {
             'user_phone' => '',
             'user_timezone' => $ip_result['time_zone']['id'] ?? '',
             'user_friend_key' => $user_friend_key,
-            'user_ui_language' => $user_language['key'],
-            'user_language' => $user_language['key'],
-            'user_preferred_language' => $user_language['key'],
+            'user_ui_language' => $user_language['code'] ?? 'en',
+            'user_language' => $user_language['code'] ?? 'en',
+            'user_preferred_language' => $user_language['code'] ?? 'en',
             'location_grid_meta' => [
                 'values' => [
                     [
