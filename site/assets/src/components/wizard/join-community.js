@@ -15,7 +15,7 @@ export class JoinCommunity extends LitElement {
 
     joinCommunity() {
         this.loading = true
-        makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' )
+        makeRequest('POST', 'log', { type: 'system', subtype: 'join_community', log_once: true }, 'zume_system/v1/' )
             .done( ( data ) => {
                 this.success = true
             })

@@ -47,7 +47,7 @@ class Zume_Checkin
 
         $user_id = get_current_user_id();
 
-        zume_log_insert( 'training', $list[ $params['code'] ], [ 'user_id' => $user_id ] );
+        zume_log_insert( 'training', $list[ $params['code'] ], [ 'user_id' => $user_id ], true );
 
         return true;
     }

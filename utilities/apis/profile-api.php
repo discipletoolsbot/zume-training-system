@@ -200,15 +200,15 @@ class Zume_Profile_Model {
         $profile = zume_get_user_profile( $user_id );
 
         if ( !empty( $profile['name'] ) ) {
-            zume_log_insert( 'system', 'set_profile_name' );
+            zume_log_insert( 'system', 'set_profile_name', [], true );
         }
 
         if ( !empty( $profile['phone'] ) ) {
-            zume_log_insert( 'system', 'set_profile_phone' );
+            zume_log_insert( 'system', 'set_profile_phone', [], true );
         }
 
         if ( $profile['location']['source'] !== 'ip' ) {
-            zume_log_insert( 'system', 'set_profile_location' );
+            zume_log_insert( 'system', 'set_profile_location', [], true );
         }
     }
 }

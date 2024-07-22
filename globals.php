@@ -5930,7 +5930,7 @@ if ( ! class_exists( 'Zume_Global_Endpoints' ) ) {
                 $log = zume_get_user_log( $user_id );
                 $subtypes = array_column( $log, 'subtype' );
                 if ( ! in_array( 'made_post_training_plan', $subtypes ) ) {
-                    zume_log_insert( 'system', 'made_post_training_plan', [ 'user_id' => $user_id ] );
+                    zume_log_insert( 'system', 'made_post_training_plan', [ 'user_id' => $user_id ], true );
                 }
             }
 
@@ -6192,7 +6192,11 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
             if ( !isset( $params['type'], $params['subtype'] ) ) {
                 return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
             }
-            return self::log( $params['type'], $params['subtype'], $params );
+            $log_once = false;
+            if ( isset( $params['log_once'] ) ) {
+                $log_once = true;
+            }
+            return self::log( $params['type'], $params['subtype'], $params, $log_once );
         }
 
         public function get_log( WP_REST_Request $request )
@@ -6428,7 +6432,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                     $data_item['type'] = 'system';
                     $data_item['subtype'] = 'set_profile';
                     $data_item['hash'] = hash( 'sha256', maybe_serialize( $data_item ) . time() );
-                    $added_log[] = self::insert( $data_item, true, false );
+                    $added_log[] = self::insert( $data_item, true, true );
                 }
             }
 

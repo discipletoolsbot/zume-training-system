@@ -396,12 +396,17 @@ class Zume_Training {
             $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         }
 
+        $user_language = zume_get_user_language();
+
         $fields = [
             'user_email' => $user->user_email,
             'user_communications_email' => $user->user_email,
             'user_phone' => '',
             'user_timezone' => $ip_result['time_zone']['id'] ?? '',
             'user_friend_key' => $user_friend_key,
+            'user_ui_language' => $user_language['key'],
+            'user_language' => $user_language['key'],
+            'user_preferred_language' => $user_language['key'],
             'location_grid_meta' => [
                 'values' => [
                     [
@@ -429,7 +434,7 @@ class Zume_Training {
             'label' => $contact_location['location_grid_meta'][0]['label'],
             'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
             'time_end' => time(),
-        ] );
+        ], true );
 
         zume_log_insert('stage', 'current_level', [
             'user_id' => $user->ID,
@@ -444,7 +449,7 @@ class Zume_Training {
             'label' => $contact_location['location_grid_meta'][0]['label'],
             'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
             'time_end' => time(),
-        ] );
+        ], true );
 
         Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'system', 'registered' ) );
     }
