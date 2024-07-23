@@ -84,7 +84,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
                 let has_scrolled = false
                 jQuery(document).scroll(function() {
                     if (jQuery(document).scrollTop() >= 200 && has_scrolled === false ) {
-                        makeRequest( 'POST', 'log_anonymous', { type: 'studying', subtype: piece_id, language_code: language_code }, 'zume_system/v1' )
+                        makeRequest( 'POST', 'log_anonymous', { type: 'training', subtype: piece_id+'_heard', language_code: language_code }, 'zume_system/v1' )
                             .then((log) => {
                                 console.log(log)
                             })
