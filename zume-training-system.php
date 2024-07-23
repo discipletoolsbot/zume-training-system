@@ -434,6 +434,7 @@ class Zume_Training {
             'label' => $contact_location['location_grid_meta'][0]['label'],
             'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
             'time_end' => time(),
+            'language_code' => $user_language['code'] ?? 'en',
         ], true );
 
         zume_log_insert('stage', 'current_level', [
@@ -449,6 +450,7 @@ class Zume_Training {
             'label' => $contact_location['location_grid_meta'][0]['label'],
             'grid_id' => $contact_location['location_grid_meta'][0]['grid_id'],
             'time_end' => time(),
+            'language_code' => $user_language['code'] ?? 'en',
         ], true );
 
         Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'system', 'registered' ) );
