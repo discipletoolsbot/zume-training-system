@@ -6178,6 +6178,13 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                 ]
             );
             register_rest_route(
+                $namespace, '/log_anonymous', [
+                    'methods' => ['POST'],
+                    'callback' => [$this, 'rest_log_anonymous'],
+                    'permission_callback' => '__return_true',
+                ]
+            );
+            register_rest_route(
                 $namespace, '/log', [
                     'methods' => ['GET'],
                     'callback' => [$this, 'get_log'],
@@ -6197,6 +6204,15 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                 $log_once = true;
             }
             return self::log( $params['type'], $params['subtype'], $params, $log_once );
+        }
+
+        public function rest_log_anonymous( WP_REST_Request $request )
+        {
+            $params = dt_recursive_sanitize_array( $request->get_params() );
+            if ( !isset( $params['type'], $params['subtype'] ) ) {
+                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
+            }
+            return self::log_anonymous( $params['type'], $params['subtype'], $params, true );
         }
 
         public function get_log( WP_REST_Request $request )
@@ -7134,7 +7150,6 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                     'time_end' => null,
                     'hash' => null,
                     'language_code' => null,
-                    'meta_input' => [],
                 ]
             );
 
@@ -7218,11 +7233,177 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                 $args['id'] = $report_id;
             }
 
-            if ( !empty( $args['meta_input'] ) ) {
-                foreach ( $args['meta_input'] as $meta_key => $meta_value ) {
-                    self::add_meta( $report_id, $meta_key, $meta_value );
+
+            return $report_id;
+        }
+
+        /**
+         * @param string $type
+         * @param string $subtype
+         * @param array $data
+         * @return array|WP_Error
+         */
+        public static function log_anonymous( string $type, string $subtype, array $data = [], bool $log_once = false )
+        {
+            $added_log = [];
+            if ( !isset( $type, $subtype ) ) {
+                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
+            }
+            $data = dt_recursive_sanitize_array( $data );
+
+            $report = [
+                'user_id' => null,
+                'post_id' => null,
+                'parent_id' => null,
+                'post_type' => 'zume',
+                'type' => $type,
+                'subtype' => $subtype,
+                'value' => 0,
+                'payload' => null,
+                'lng' => null,
+                'lat' => null,
+                'level' => null,
+                'label' => null,
+                'grid_id' => null,
+                'time_end' => null,
+                'hash' => null,
+                'language_code' => null,
+            ];
+
+            $report['payload'] = DT_Ipstack_API::get_real_ip_address();
+
+            if ( isset( $data['language_code'] ) ) {
+                $report['language_code'] = $data['language_code'];
+            } else {
+                $url = zume_get_url_pieces();
+                $report['language_code'] = $url['lang_code'];
+            }
+
+
+            $result = DT_Ipstack_API::get_location_grid_meta_from_current_visitor();
+            if ( ! empty( $result ) ) {
+                $report['lng'] = $result['lng'];
+                $report['lat'] = $result['lat'];
+                $report['level'] = $result['level'];
+                $report['label'] = $result['label'];
+                $report['grid_id'] = $result['grid_id'];
+            }
+
+            $report['hash'] = hash( 'sha256', maybe_serialize( $report ) );
+
+            $report['time_end'] = time();
+
+            $report['payload'] = null; // clear payload ip address
+
+            $added_log[] = self::insert_anonymous( $report );
+
+            return $added_log;
+        }
+
+        public static function insert_anonymous( array $args, bool $save_hash = true, bool $duplicate_check = true )
+        {
+            global $wpdb;
+            if ( !isset( $args['type'] ) ) {
+                return false;
+            }
+
+            $args = wp_parse_args(
+                $args,
+                [
+                    'user_id' => null,
+                    'parent_id' => null,
+                    'post_id' => null,
+                    'post_type' => null,
+                    'type' => null, // required
+                    'subtype' => null,
+                    'payload' => null,
+                    'value' => 1,
+                    'lng' => null,
+                    'lat' => null,
+                    'level' => null,
+                    'label' => null,
+                    'grid_id' => null,
+                    'time_begin' => null,
+                    'time_end' => null,
+                    'hash' => null,
+                    'language_code' => null,
+                ]
+            );
+
+            if ( $save_hash ) {
+                if ( empty( $args['hash'] ) ) {
+                    $args['hash'] = hash( 'sha256', maybe_serialize( $args ) );
+                }
+
+                if ( $duplicate_check ) {
+                    // Make sure no duplicate is found.
+                    $duplicate_found = $wpdb->get_row(
+                        $wpdb->prepare(
+                            'SELECT
+                                        `id`
+                                    FROM
+                                        zume_dt_reports_anonymous
+                                    WHERE hash = %s AND hash IS NOT NULL;',
+                            $args['hash']
+                        )
+                    );
+                    if ( $duplicate_found ) {
+                        return false;
+                    }
                 }
             }
+
+            $args['timestamp'] = time();
+
+            if ( is_array( $args['payload'] ) || is_object( $args['payload'] ) ) {
+                $args['payload'] = serialize( $args['payload'] );
+            }
+
+            $wpdb->insert(
+                'zume_dt_reports_anonymous',
+                [
+                    'user_id' => $args['user_id'],
+                    'parent_id' => $args['parent_id'],
+                    'post_id' => $args['post_id'],
+                    'post_type' => $args['post_type'],
+                    'type' => $args['type'],
+                    'subtype' => $args['subtype'],
+                    'payload' => $args['payload'],
+                    'value' => $args['value'],
+                    'lng' => $args['lng'],
+                    'lat' => $args['lat'],
+                    'level' => $args['level'],
+                    'label' => $args['label'],
+                    'grid_id' => $args['grid_id'],
+                    'time_begin' => $args['time_begin'],
+                    'time_end' => $args['time_end'],
+                    'timestamp' => time(),
+                    'hash' => $args['hash'],
+                    'language_code' => $args['language_code'],
+                ],
+                [
+                    '%d', // user_id
+                    '%d', // parent_id
+                    '%d', // post_id
+                    '%s', // post_type
+                    '%s', // type
+                    '%s', // subtype
+                    '%s', // payload
+                    '%d', // value
+                    '%f', // lng
+                    '%f', // lat
+                    '%s', // level
+                    '%s', // label
+                    '%d', // grid_id
+                    '%d', // time_begin
+                    '%d', // time_end
+                    '%d', // timestamp
+                    '%s', // hash
+                    '%s', // language code
+                ]
+            );
+
+            $report_id = $wpdb->insert_id;
 
             return $report_id;
         }
