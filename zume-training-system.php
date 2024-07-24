@@ -280,6 +280,8 @@ class Zume_Training {
         return $headers;
     }
 
+    // @todo maybe the following functions should be moved into the system and out of this root file. @c
+
     public function dt_details_additional_tiles( $tiles, $post_type = '' ) {
         if ( $post_type === 'contacts' ) {
             $tiles['profile_details'] = [
@@ -326,7 +328,7 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
-            if ( !isset( $fields['user_preferred_language'] ) ){
+            if ( !isset( $fields['user_preferred_language'] ) ){ // @todo should user_ui_language and user_language be included here as well? @c
                 $fields['user_preferred_language'] = [
                     'name' => __( 'User Preferred Language', 'zume' ),
                     'type' => 'text',
@@ -388,7 +390,7 @@ class Zume_Training {
             $level = '';
         }
 
-        global $wpdb, $table_prefix;
+        global $wpdb;
         $user_friend_key = substr( md5( rand( 10000, 100000 ) ), 0, 3 ) . substr( md5( rand( 10000, 100000 ) ), 0, 3 );
         $key_exists = $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE meta_key = 'user_friend_key' AND meta_value = %s", $user_friend_key ) );
         while ( $key_exists ){
@@ -421,11 +423,11 @@ class Zume_Training {
         ];
         $contact_location = DT_Posts::update_post( 'contacts', $new_user_contact['ID'], $fields, true, false );
 
-        zume_log_insert('system', 'registered', [
+        zume_log_insert('training', 'registered', [
             'user_id' => $user->ID,
             'post_id' => $new_user_contact['ID'],
             'post_type' => 'zume',
-            'type' => 'system',
+            'type' => 'training',
             'subtype' => 'registered',
             'value' => 0,
             'lng' => $contact_location['location_grid_meta'][0]['lng'],
