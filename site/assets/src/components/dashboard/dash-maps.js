@@ -98,15 +98,15 @@ export class DashMaps extends DashPage {
                         `
                         : html`
                             <div class="stack">
-                                <!-- <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
-                                    ${jsObject.translations.hundred_hour_map}
-                                </button> -->
-                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
+                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
+                                    ${jsObject.translations.thousand_hour_map}
+                                </button>
+                                <!-- <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
                                 <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
-                                </button>
+                                </button> -->
                             </div>
                         `
                     }
@@ -134,7 +134,7 @@ export class DashMaps extends DashPage {
                 >
                 </iframe>
             </div>
-            <!-- <div
+            <div
                 class="reveal full"
                 data-reveal
                 id="hundred-hour-map-modal"
@@ -149,7 +149,8 @@ export class DashMaps extends DashPage {
                     height="100%"
                 >
                 </iframe>
-            </div> -->
+            </div>
+            <!--
             <div
                 class="reveal full"
                 data-reveal
@@ -182,6 +183,7 @@ export class DashMaps extends DashPage {
                 >
                 </iframe>
             </div>
+            -->
         `;
     }
 

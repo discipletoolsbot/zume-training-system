@@ -1278,15 +1278,15 @@ ${this.training.zoom_link_note}
                           </div>
                         `:l`
                             <div class="stack">
-                                <!-- <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
-                                    ${jsObject.translations.hundred_hour_map}
-                                </button> -->
-                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
+                                <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
+                                    ${jsObject.translations.thousand_hour_map}
+                                </button>
+                                <!-- <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
                                 <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
-                                </button>
+                                </button> -->
                             </div>
                         `}
                 </div>
@@ -1313,7 +1313,7 @@ ${this.training.zoom_link_note}
                 >
                 </iframe>
             </div>
-            <!-- <div
+            <div
                 class="reveal full"
                 data-reveal
                 id="hundred-hour-map-modal"
@@ -1328,7 +1328,8 @@ ${this.training.zoom_link_note}
                     height="100%"
                 >
                 </iframe>
-            </div> -->
+            </div>
+            <!--
             <div
                 class="reveal full"
                 data-reveal
@@ -1361,6 +1362,7 @@ ${this.training.zoom_link_note}
                 >
                 </iframe>
             </div>
+            -->
         `}createRenderRoot(){return this}}customElements.define("dash-maps",Wo);class Vo extends pt{render(){return l`
             <div class="dashboard__content">
                 <div class="dashboard__header left">
