@@ -6433,11 +6433,14 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                 $added_log[] = self::insert( $data_item, true, false );
 
                 /* Mute the celebration for creating a plan, as we have only joined not created a training */
-                $data_item = $data;
-                $data_item['type'] = 'system';
-                $data_item['subtype'] = 'celebrate_plan_created';
-                $data_item['hash'] = hash( 'sha256', maybe_serialize( $data_item ) . time() );
-                $added_log[] = self::insert( $data_item, true, false );
+                if ( self::_needs_to_be_logged( $log, 'system', 'celebrate_plan_created' ) ) {
+                    $data_item = $data;
+                    $data_item['type'] = 'system';
+                    $data_item['subtype'] = 'celebrate_plan_created';
+                    $data_item['hash'] = hash( 'sha256', maybe_serialize( $data_item ) . time() );
+                    $added_log[] = self::insert( $data_item, true, false );
+                }
+
             }
 
             /**
@@ -7112,9 +7115,9 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
              * business logic:
              * - if a user is logged in, and the system has not yet logged that the user has registered, then log it
              */
-            if ( is_user_logged_in() && self::_needs_to_be_logged( $log, 'system', 'registered' ) ) {
+            if ( is_user_logged_in() && self::_needs_to_be_logged( $log, 'training', 'registered' ) ) {
                 $data_item = $data;
-                $data_item['type'] = 'system';
+                $data_item['type'] = 'training';
                 $data_item['subtype'] = 'registered';
                 $data_item['hash'] = hash( 'sha256', maybe_serialize( $data_item ) . time() );
                 $added_log[] = self::insert( $data_item, true, true );

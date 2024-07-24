@@ -172,9 +172,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [1, 2, 3, 4, 5, 6],
                 'required_keys' => [],
-                'disable_keys' => ['system_requested_a_coach'],
-                'key' => 'system_requested_a_coach',
-                'type' => 'system',
+                'disable_keys' => ['coaching_requested_a_coach'],
+                'key' => 'coaching_requested_a_coach',
+                'type' => 'coaching',
                 'subtype' => 'requested_a_coach',
                 'content' => [
                     'title' => __( 'Get a Coach', 'zume' ),
@@ -186,7 +186,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2, 3, 4, 5, 6],
-                'required_keys' => ['system_requested_a_coach'],
+                'required_keys' => ['coaching_requested_a_coach'],
                 'disable_keys' => ['system_celebrated_coach_request'],
                 'key' => 'system_celebrated_coach_request',
                 'type' => 'system',
