@@ -1,5 +1,5 @@
 <?php
-
+if ( !defined( 'ABSPATH' ) ) { exit; }
 
 class Zume_Training_Pieces_URL extends Zume_Magic_Page
 {
@@ -71,42 +71,17 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     public function header_style(){
         $zume_piece_id = get_post_meta( $this->postid, 'zume_piece', true );
         $zume_language_code = $this->lang_code;
+        zume_content_logger( 'training', $zume_piece_id.'_heard', $zume_language_code );
         ?>
         <script>
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
             });
-
-            jQuery(document).ready(function(){
-                let piece_id = '<?php echo esc_attr( $zume_piece_id ) ?>'
-                let language_code = '<?php echo esc_attr( $zume_language_code ) ?>'
-
-                let has_scrolled = false
-                jQuery(document).scroll(function() {
-                    if (jQuery(document).scrollTop() >= 200 && has_scrolled === false ) {
-                        makeRequest( 'POST', 'log_anonymous', { type: 'training', subtype: piece_id+'_heard', language_code: language_code }, 'zume_system/v1' )
-                            .then((log) => {
-                                console.log(log)
-                            })
-                            .catch((error) => {
-                                console.log(error)
-                            })
-                            .always(() => {
-                                this.loading = false
-                            })
-                        has_scrolled = true
-                    }
-                });
-            })
-
         </script>
         <?php
     }
 
     public function body(){
-        global $zume_user_profile;
-
-
         require __DIR__ . '/../parts/nav.php';
 
         pieces_content( $this->postid, $this->lang_code, [
