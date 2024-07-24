@@ -71,7 +71,7 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
     public function header_style(){
         $zume_piece_id = get_post_meta( $this->postid, 'zume_piece', true );
         $zume_language_code = $this->lang_code;
-        zume_content_logger( 'training', $zume_piece_id.'_heard', $zume_language_code );
+        zume_content_logger( 'studying', $zume_piece_id.'_heard', $zume_language_code );
         ?>
         <script>
             jQuery(document).ready(function(){
