@@ -1168,7 +1168,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
+                    'version_5_ready' => true,
                     'pieces_pages' => true,
                     'course_slides_download' => false,
                 ],
@@ -6125,7 +6125,7 @@ if ( ! function_exists( 'zume_validate_user_id_request' ) ) {
                 return (int) $user_id;
             } else if ( $profile['coaching_contact_id '] ) {
                 global $wpdb;
-                $is_shared = $wpdb->get_var( $wpdb->prepare( 'SELECT count(*) FROM wp_dt_share WHERE user_id = %d AND post_id = %d', $current_user_id, $profile['coaching_contact_id '] ) );
+                $is_shared = $wpdb->get_var( $wpdb->prepare( 'SELECT count(*) FROM zume_dt_share WHERE user_id = %d AND post_id = %d', $current_user_id, $profile['coaching_contact_id'] ) );
                 if ( $is_shared ) {
                     return (int) $user_id;
                 }
