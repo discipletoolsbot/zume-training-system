@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-30 02:59+0000\n"
+"PO-Revision-Date: 2024-07-30 12:04+0000\n"
 "Last-Translator: Charlie Ritchie <ritchiecharlie@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/vi/>\n"
@@ -1303,9 +1303,8 @@ msgstr "(60 - 90 phút)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
-#, fuzzy
 msgid "SESSION 1"
-msgstr "BUỔI 1"
+msgstr "BÀI 1"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1499,15 +1498,19 @@ msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
+"Hô hấp thuộc linh. Chúng ta hít vào. Chúng ta thở ra. Chúng ta sống. Lắng "
+"nghe và làm theo lời Chúa cũng như vậy."
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr ""
+msgstr "Tại sao việc học cách nghe và nhận ra tiếng Chúa là điều cần thiết?"
 
 #: site/course/course-content.php:226
 msgid ""
 "Is hearing and responding to the Lord really like breathing? Why or why not?"
 msgstr ""
+"Việc nghe và đáp lại Chúa có thật sự giống như thở không? Tại sao hoặc tại "
+"sao không?"
 
 #: site/course/course-content.php:244
 msgid ""
@@ -1515,56 +1518,66 @@ msgid ""
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
 msgstr ""
+"Việc thường xuyên nghe Chúa nói là yếu tố then chốt trong mối quan hệ cá "
+"nhân của chúng ta với Ngài, và trong khả năng chúng ta tham gia nhiệt thành "
+"vào những gì Ngài đang làm xung quanh chúng ta."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "Thực hành S.O.A.P.S."
 
 #: site/course/course-content.php:274
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"Quét mã QR và tự nghiên cứu thông qua phương pháp nghiên cứu Kinh thánh "
+"SOAPS bằng cách sử dụng Ma-thi-ơ 6:9-13. (20 phút)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr ""
+msgstr "Kinh Thánh"
 
 #: site/course/course-content.php:277
 msgid "Observation"
-msgstr ""
+msgstr "Quan sát"
 
 #: site/course/course-content.php:278
 msgid "Application"
-msgstr ""
+msgstr "Ứng dụng"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
 msgid "Prayer"
-msgstr ""
+msgstr "Cầu nguyện"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
-msgstr ""
+msgstr "Chia sẻ"
 
 #: site/course/course-content.php:282
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
+"Trở lại và cùng chia sẻ S.O.A.P.S. theo nhóm hai hoặc ba người. (10 phút)"
 
 #: site/course/course-content.php:304
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
 msgstr ""
+"Kinh Thánh cho chúng ta biết rằng một ngày nào đó tất cả những người theo "
+"Chúa Jêsus sẽ phải chịu trách nhiệm về những gì chúng ta làm, nói và suy "
+"nghĩ."
 
 #: site/course/course-content.php:305
+#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "Nhóm Trách nhiệm là một cách tuyệt vời để sẵn sàng!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr ""
+msgstr "Thực hành các Nhóm Trách nhiệm"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1573,17 +1586,19 @@ msgstr ""
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
 msgid "Scan the QR code."
-msgstr ""
+msgstr "Quét mã QR."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr ""
+msgstr "Chia thành các nhóm gồm hai hoặc ba người cùng giới tính."
 
 #: site/course/course-content.php:333
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
+"Dành 20 phút tiếp theo để cùng nhau giải đáp các Câu hỏi về Trách nhiệm giải "
+"trình."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1600,7 +1615,7 @@ msgstr ""
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
 msgid "REVIEW"
-msgstr ""
+msgstr "ÔN TẬP"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1610,14 +1625,14 @@ msgstr ""
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "Những khái niệm đã học trong bài này:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "Những công cụ đã học trong bài này:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1633,7 +1648,7 @@ msgstr ""
 #: site/course/course-content.php:5321 site/course/course-content.php:5461
 #: site/course/course-content.php:5583
 msgid "OBEY"
-msgstr ""
+msgstr "LÀM THEO"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -1649,7 +1664,7 @@ msgstr ""
 #: site/course/course-content.php:5322 site/course/course-content.php:5462
 #: site/course/course-content.php:5584
 msgid "SHARE"
-msgstr ""
+msgstr "CHIA SẺ"
 
 #: site/course/course-content.php:376 site/course/course-content.php:3319
 msgid ""
@@ -1657,6 +1672,9 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
+"Bắt đầu thực hành đọc Kinh thánh S.O.A.P.S. từ bây giờ đến buổi tiếp theo "
+"của bạn. Tập trung vào Ma-thi-ơ 5-7, đọc ít nhất một lần một ngày. Viết nhật "
+"ký hàng ngày bằng cách sử dụng S.O.A.P.S."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
@@ -1664,27 +1682,33 @@ msgid ""
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"Hãy xin Chúa hướng dẫn bạn giới thiệu ít nhất năm người tin Chúa mà bạn biết "
+"để bắt đầu đọc Kinh Thánh theo phương pháp S.O.A.P.S. hàng ngày, và họ sẽ "
+"tiếp tục giới thiệu với người khác."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
-msgstr ""
+msgstr "BÀI 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"Hỏi xem có ai trong nhóm có nhu cầu cụ thể mà họ muốn được cầu nguyện không."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"Cảm ơn Chúa vì lời hứa của Chúa rằng Ngài sẽ lắng nghe và hành động khi dân "
+"Ngài cầu nguyện."
 
 #: site/course/course-content.php:442
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr ""
+msgstr "Hãy cầu xin Đức Thánh Linh dẫn dắt thời gian của các bạn."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
