@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-17 11:47+0000\n"
+"PO-Revision-Date: 2024-07-30 02:59+0000\n"
 "Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ha_NG/>\n"
@@ -46,7 +46,6 @@ msgid "My Zúme"
 msgstr "Zume mu"
 
 #: appearance/style-override/navigation.php:117
-#, fuzzy
 msgid "Contacts"
 msgstr "Lambobin sadarwa"
 
@@ -110,9 +109,8 @@ msgstr "Gano asalin zama almajiri, yin almajirai, menene coci."
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
-#, fuzzy
 msgid "Disciples and the Church"
-msgstr "Almajirai da Coci"
+msgstr "Almajirai da Ikilisiya"
 
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
@@ -413,15 +411,14 @@ msgid "3/3 Group Meeting Pattern"
 msgstr "3/3 Tsarin Taron Rukuni"
 
 #: globals.php:2180
-#, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
-"Rukunin 3/3 hanya ce don mabiyan Yesu su hadu, su yi addu'a, koya, girma, "
-"abota da yi biyayya da kuma musayar abin da suka koya. Ta wannan hanyar, "
-"3ungiyoyin 3/3 ba ƙaramin abu bane rukuni amma Ikilisiya mai sauƙi."
+"Ƙungiya ta 3/3 hanya ce don mabiyan Yesu su sadu, yin addu'a, koyo, girma, "
+"zumunci da aiwatar da biyayya da raba abin da suka koya. Ta wannan hanyar, "
+"Ƙungiyar 3/3 ba ƙaramin rukuni ba ne kawai amma Ikilisiya mai sauƙi."
 
 #: globals.php:2181
 msgid "3/3 Group"
@@ -819,7 +816,6 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
 #: site/activities/coaching-checklist.php:285
-#, fuzzy
 msgid ""
 "Assisting is allowing the learner to practice the skill. This takes longer "
 "than the modeling phase. It requires “hand-holding” on the part of the "
@@ -898,7 +894,6 @@ msgstr "Rashin sani"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Unskilled"
 msgstr "Marasa ƙwarewa"
 
@@ -922,7 +917,6 @@ msgstr "Matsayin Jagora"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
-#, fuzzy
 msgid "Train new information and ensure understanding"
 msgstr "Horar da sabbin bayanai kuma tabbatar da fahimta"
 
@@ -940,7 +934,6 @@ msgstr "Ci gaba da aiki har sai kun kware sosai"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Relate to them as co-laborer"
 msgstr "Yi dangantaka da su a matsayin abokin aiki"
 
@@ -1078,7 +1071,6 @@ msgstr ""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
-#, fuzzy
 msgid ""
 "There’s no one “best way” to tell God’s story (also called the gospel), "
 "because the best way will depend on who you’re sharing with. Every disciple "
@@ -2023,18 +2015,17 @@ msgstr ""
 "ƙarshe kuma ku gayyaci Ruhunsa Mai Tsarki don ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:819
-#, fuzzy
 msgid ""
 "In this broken world, people feel rewarded when they take, when they receive "
 "and when they gain more than those around them. But God’s Spiritual Economy "
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
-"A cikin wannan lalatacciyar duniyar, mutane suna jin daɗin lada lokacin da "
-"suke ɗauka, lokacin da suka karɓa da kuma lokacin da suka sami kuɗi fiye da "
-"waɗanda suke kewaye da su. Amma tattalin arzikin Allah na Ruhaniya ya "
-"banbanta - Allah ya saka hannun jari cikin waɗanda suke da aminci tare da "
-"abin da aka riga aka basu."
+"A cikin wannan duniyar da ta lalace, mutane suna jin lada lokacin da suka "
+"ɗauka, lokacin da suka karɓa da kuma lokacin da suka sami fiye da waɗanda ke "
+"kewaye da su. Amma Tattalin Arziƙin Ruhaniya na Allah ya bambanta – Allah "
+"yana ƙara saka hannun jari ga waɗanda suke da aminci da abin da aka riga aka "
+"ba su."
 
 #: site/course/course-content.php:844
 msgid ""
@@ -2107,9 +2098,8 @@ msgstr ""
 "lokacin da kuke bikin cewa “eh” ga Yesu."
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
-#, fuzzy
 msgid "The Spiritual Economy"
-msgstr "Tattalin arziki Ruhaniya"
+msgstr "Tattalin Arziki na Ruhaniya"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
 #, fuzzy
@@ -2257,9 +2247,9 @@ msgstr ""
 "wani da zaku iya rabawa tare da shi?"
 
 #: site/course/course-content.php:1307
-#, fuzzy
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
-msgstr "Shin kun taɓa yin tunani game da inda Mulkin Allah ... ba?"
+msgstr ""
+"Shin kun taɓa tsayawa don yin tunani game da inda Mulkin Allah ba... ba?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -2476,15 +2466,13 @@ msgstr ""
 "don ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
-#, fuzzy
 msgid "Faithfulness is Better than Knowledge"
-msgstr "Aminci ya fi Ilimi"
+msgstr "Amincin Allah ya fi ilimi"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
-#, fuzzy
 msgid "And we will add this tool to our toolkit:"
 msgstr "Kuma za mu ƙara wannan kayan aiki zuwa kayan aikin mu:"
 
@@ -2735,7 +2723,6 @@ msgstr ""
 "Horon da Rabawa. (minti talatin)"
 
 #: site/course/course-content.php:2277
-#, fuzzy
 msgid "Concept from this session:"
 msgstr "Ra'ayi daga wannan zaman:"
 
@@ -2933,7 +2920,6 @@ msgid "Get a Coach"
 msgstr "Samu Koci"
 
 #: site/course/course-content.php:2626
-#, fuzzy
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
@@ -2970,7 +2956,6 @@ msgstr ""
 "wa shugabanni daidaita yunƙurin, ta yadda ba a yi watsi da filin ba."
 
 #: site/course/course-content.php:2644
-#, fuzzy
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
 msgstr ""
 "Yi nazarin nunin faifai guda biyu na gaba: Bayanin Filin da Misalin Filaye "
@@ -2988,7 +2973,6 @@ msgid ""
 msgstr "Filin Bako: A ina ko da wa kuke shirin faɗaɗa Mulkin?"
 
 #: site/course/course-content.php:2658
-#, fuzzy
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
@@ -3032,7 +3016,6 @@ msgid "Discuss"
 msgstr "Tattaunawa"
 
 #: site/course/course-content.php:2699
-#, fuzzy
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
@@ -3064,7 +3047,6 @@ msgstr ""
 "kewaye da su."
 
 #: site/course/course-content.php:2717
-#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
@@ -3153,7 +3135,6 @@ msgstr ""
 "da yake so ya yi a ciki da ta wurin ku."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
-#, fuzzy
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
@@ -3481,14 +3462,12 @@ msgid "Practice Sharing the Gospel"
 msgstr "Aiwatarwa - Rarraba Bishara"
 
 #: site/course/course-content.php:3947
-#, fuzzy
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
-msgstr "Ku rabu cikin mutane biyu ko uku daga jinsi ɗaya."
+msgstr "Ku rabu gida biyu ko uku kuma ku gwada gaya wa juna labarin Allah."
 
 #: site/course/course-content.php:3948
-#, fuzzy
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
@@ -3497,15 +3476,14 @@ msgstr ""
 "gama, za ku kasance a shirye don raba labarin Allah."
 
 #: site/course/course-content.php:4046
-#, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others. "
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
 "Addu'a ku godewa Allah cewa hanyoyinsa ba hanyoyin mu bane kuma tunanin sa "
-"ba tunanin mu bane. Nemi Shi ya ba kowane ɗayan ƙungiyar ku hankalin Kristi "
-"— koyaushe ya mai da hankali ga aikin Ubansa. Tambayi Ruhu Mai Tsarki don "
+"ba tunanin mu bane. Nemi Shi ya ba kowane ɗayan ƙungiyar ku hankalin Kristi —"
+" koyaushe ya mai da hankali ga aikin Ubansa. Tambayi Ruhu Mai Tsarki don "
 "jagorantar lokacin ku kuma kuyi shi mafi kyawun zaman tukuna."
 
 #: site/course/course-content.php:4074
@@ -3601,7 +3579,6 @@ msgstr ""
 "ya gayyaci Ruhunsa Mai Tsarki ya jagoranci lokacinku tare."
 
 #: site/course/course-content.php:4394
-#, fuzzy
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
@@ -3610,7 +3587,6 @@ msgstr ""
 "tare da su. In ba haka ba, yi wannan fasaha tare da aboki mai bi."
 
 #: site/course/course-content.php:4395
-#, fuzzy
 msgid ""
 "Share \"Duckling Discipleship\" and \"Eyes to See Where the Kingdom Isn’t\" "
 "with whomever the Lord impresses on you. Then equip them to share it with "
@@ -3636,15 +3612,12 @@ msgstr ""
 "Mulkin ba ya, tukuna."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
-#, fuzzy
 msgid "SESSION 12"
-msgstr "ZAMA NA 12"
+msgstr "SZAMA NA 12"
 
 #: site/course/course-content.php:4638
-#, fuzzy
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr ""
-"Yi wa wani addu'a a gabansu ta amfani da tsarin ALBARKA a wannan makon."
+msgstr "Yi wa wani addu'a a gabansu ta amfani da tsarin ALBARKA a wannan makon."
 
 #: site/course/course-content.php:4639
 #, fuzzy
@@ -3722,18 +3695,15 @@ msgid "SESSION 15"
 msgstr "ZAMA NA 15"
 
 #: site/course/course-content.php:5002
-#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
-"Tambayi ko akwai wani a rukunin da yake da takamaiman bukatun da suke so "
-"mahalarta su yi addu’a. Nemi wani yayi adu'a ka roki Allah ya taimaka a "
-"bangarorin da kungiyar ta rabawa. Tabbatar godewa Allah cewa yayi alkawura a "
-"cikin maganarsa cewa zai saurareni kuma yayi aiki lokacin da mutanen sa "
-"sukayi addu'a. Kuma, kamar yadda koyaushe, roƙi Ruhun Allah don ya jagoranci "
-"lokacinku, tare."
+"Tambayi ko wani a cikin group din yana da takamaiman bukatu da zai so "
+"kungiyar tayi addu'a. Godiya ga Allah da ya yi alkawari a cikin Kalmarsa "
+"cewa zai ji kuma ya aikata sa’ad da mutanensa suke addu’a. Tambayi Ruhu Mai "
+"Tsarki na Allah ya jagoranci lokacinku, tare."
 
 #: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
@@ -3761,7 +3731,6 @@ msgid "SESSION 17"
 msgstr "ZAMA NA 17"
 
 #: site/course/course-content.php:5256
-#, fuzzy
 msgid ""
 "Pray and thank God for how He continues to speak through the word, prayer, "
 "the body, and persecution and suffering. Pray for each person in the group "
@@ -3773,13 +3742,12 @@ msgstr ""
 "da ya faɗa."
 
 #: site/course/course-content.php:5325
-#, fuzzy
 msgid ""
 "Identify one next step for yourself, either Modeling, Assisting, Watching, "
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
-"Gano mataki ɗaya na gaba don kanka, ko dai Modeling, Taimako, Kallo, ko "
+"Gano mataki ɗaya na gaba don kanka, ko dai Yin samfuri, Taimako, Kallo, ko "
 "Barin, wanda kuke buƙatar ɗauka tare da almajirin da kuka tantance tare da "
 "lissafin koyawa."
 
@@ -3805,13 +3773,12 @@ msgstr ""
 "kuke buƙatar ɗauka ko ƙungiyar ku bisa tattaunawar Filaye Hudu da kuka yi."
 
 #: site/course/course-content.php:5465
-#, fuzzy
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
 "Tafi cikin kowane ɗayan abubuwan horo na Zúme kuma ƙayyade ko wane filin "
-"(filaye) kowanne ya dace da kuma sanya alamar fage guda huɗu tare da "
+"(filaye) kowannensu ya dace da kuma sanya alamar fage guda huɗu tare da "
 "abubuwan."
 
 #: site/course/course-content.php:5466
@@ -3828,7 +3795,6 @@ msgid "SESSION 19"
 msgstr "ZAMA NA 19"
 
 #: site/course/course-content.php:5526
-#, fuzzy
 msgid ""
 "Pray and thank God for the Body of Christ. Pray for mutual love and "
 "encouragement to continue to grow between each member of your group as you "
@@ -3839,7 +3805,6 @@ msgstr ""
 "kuke kusaci Yesu."
 
 #: site/course/course-content.php:5587
-#, fuzzy
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
@@ -3862,11 +3827,10 @@ msgid "SESSION 20"
 msgstr "ZAMA NA 20"
 
 #: site/course/course-content.php:5650
-#, fuzzy
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
-"Yi addu'a da gode wa Allah da Ya tabbatar da cewa ya kammala aikinsa na "
-"alheri a cikinmu."
+"Addu'a da godewa Allah da ya sa a yi imani ya kammala aikinsa na alheri a "
+"cikinmu."
 
 #: site/course/course-content.php:5679
 #, fuzzy
@@ -3913,7 +3877,6 @@ msgid "Join the Community"
 msgstr "Shiga Al'umma"
 
 #: site/course/course-content.php:5980
-#, fuzzy
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
@@ -3922,7 +3885,6 @@ msgstr ""
 "da dabaru."
 
 #: site/course/course-content.php:5981
-#, fuzzy
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
 msgstr "Kada ku yi shi kadai. Nemo al'umma don ƙarfafawa da haɓaka."
 
@@ -3945,7 +3907,6 @@ msgid "Course Presenter"
 msgstr "Mai Gabatarwa Hakika"
 
 #: site/course/presenter.php:148
-#, fuzzy
 msgid "Download the offline slides here"
 msgstr "Zazzage nunin faifan layi a nan"
 
@@ -3977,9 +3938,8 @@ msgid "Exit Course"
 msgstr "Hanyar fita Hakika"
 
 #: site/course/presenter.php:192
-#, fuzzy
 msgid "Slide View"
-msgstr "Duban Grid"
+msgstr "Duban Slide"
 
 #: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 #, fuzzy
@@ -4062,9 +4022,8 @@ msgid "Active"
 msgstr "Mai aiki"
 
 #: site/dashboard/dashboard.php:166
-#, fuzzy
 msgid "Completed"
-msgstr "Darasi Na Kammala"
+msgstr "An kammala"
 
 #: site/dashboard/dashboard.php:167
 msgid "Uncompleted"
@@ -4133,7 +4092,6 @@ msgid "Linked Accounts"
 msgstr "Asusuwa masu alaƙa"
 
 #: site/dashboard/dashboard.php:182
-#, fuzzy
 msgid "Communications Email"
 msgstr "Imel na Sadarwa"
 
@@ -4158,14 +4116,12 @@ msgid "Edit Profile"
 msgstr "Shirya Bayanan martaba"
 
 #: site/dashboard/dashboard.php:188
-#, fuzzy
 msgid "Check out this Zúme concept"
 msgstr "Duba wannan tunanin Zume"
 
 #: site/dashboard/dashboard.php:189
-#, fuzzy
 msgid "Preview"
-msgstr "hangi"
+msgstr "Dubawa"
 
 #: site/dashboard/dashboard.php:190 site/dashboard/dashboard.php:259
 #: site/dashboard/dashboard.php:266
@@ -4204,16 +4160,14 @@ msgid "Set Profile"
 msgstr "Saita Bayanan martaba"
 
 #: site/dashboard/dashboard.php:197
-#, fuzzy
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr "Kammala gajeriyar Mayen Bayani don saita bayanin martaba"
+msgstr "Kammala gajeriyar Mayen Bayanan Bayani don saita bayanin martabarka"
 
 #: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
 msgstr "Shiga ko ƙirƙirar ƙungiyar horo"
 
 #: site/dashboard/dashboard.php:199
-#, fuzzy
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
@@ -4222,19 +4176,16 @@ msgstr ""
 "tare da sauƙin saita maye"
 
 #: site/dashboard/dashboard.php:200
-#, fuzzy
 msgid "Create Training Group"
-msgstr "Horo daya"
+msgstr "Ƙirƙiri Ƙungiya Horo"
 
 #: site/dashboard/dashboard.php:201
-#, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Yourirƙiri naka Tsarin Sunaye na dari"
+msgstr "Ƙirƙiri ƙungiyar horon ku tare da sauƙi don saita maye"
 
 #: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
-#, fuzzy
 msgid "Join Training Group"
-msgstr "Shirya wani horo"
+msgstr "Shiga Rukunin Horarwa"
 
 #: site/dashboard/dashboard.php:203
 msgid "Join an online training group run by a coach"
@@ -4306,9 +4257,8 @@ msgid "Unlock now"
 msgstr "Buɗe yanzu"
 
 #: site/dashboard/dashboard.php:219
-#, fuzzy
 msgid "Practicing"
-msgstr "Aiwatarwa"
+msgstr "Yin aiki"
 
 #: site/dashboard/dashboard.php:220
 msgid "My Coach"
@@ -4589,12 +4539,11 @@ msgid "There has been an error with your request"
 msgstr "An sami kuskure tare da buƙatarku"
 
 #: site/dashboard/dashboard.php:284
-#, fuzzy
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
-"Na gode da bukatar ku na horarwa. Ƙungiyarmu za ta yi aiki don haɗa ku tare "
+"Na gode da bukatar ku ta horarwa. Ƙungiyarmu za ta yi aiki don haɗa ku tare "
 "da koci mai samuwa a cikin harshenku da yankinku."
 
 #: site/dashboard/dashboard.php:285
@@ -4640,17 +4589,16 @@ msgid "Telegram"
 msgstr "Telegram"
 
 #: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:211
-#, fuzzy
 msgid "Facebook Messenger"
-msgstr "Facebook"
+msgstr "Facebook Manzo"
 
 #: site/dashboard/dashboard.php:299
-#, fuzzy
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
-"Zan raba Labari [Shaida] da Labarin Allah [Bishara tare da wadannan mutane:"
+"Zan raba Labari na [Shaida] da Labarin Allah [Linjila] tare da mutane masu "
+"zuwa:"
 
 #: site/dashboard/dashboard.php:300
 msgid ""
@@ -4719,13 +4667,12 @@ msgstr ""
 "watanni]."
 
 #: site/dashboard/dashboard.php:310
-#, fuzzy
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
-"Ina rashin lafiya na kira ga wadannan mutanen da su zama jagora a sashin "
-"Jagoranci wanda zan jagoranci:"
+"Zan gayyaci mutane masu zuwa don kasancewa cikin Ƙungiyar Jagoranci da zan "
+"jagoranta:"
 
 #: site/dashboard/dashboard.php:311
 msgid ""
@@ -4739,15 +4686,13 @@ msgid "Other commitments:"
 msgstr "Sauran alkawura:"
 
 #: site/dashboard/wizard.php:162
-#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr "Mugun Wizard"
+msgstr "Mugun mayen"
 
 #: site/dashboard/wizard.php:163
-#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
@@ -4785,17 +4730,14 @@ msgid "Finish"
 msgstr "Gama"
 
 #: site/dashboard/wizard.php:171
-#, fuzzy
 msgid "No locations found"
-msgstr "Babu mai amfani da aka samu."
+msgstr "Babu wuraren da aka samu"
 
 #: site/dashboard/wizard.php:174
-#, fuzzy
 msgid "Zúme Community"
-msgstr "Al'umma"
+msgstr "Al'ummar Zume"
 
 #: site/dashboard/wizard.php:175
-#, fuzzy
 msgid ""
 "Zúme is a community of practice and encouragement for those who want to see "
 "disciple making movements. The Zúme vision is to see one trainee and two "
@@ -4803,8 +4745,9 @@ msgid ""
 "people globally."
 msgstr ""
 "Zúme al'umma ce ta aiki da ƙarfafawa ga waɗanda suke son ganin almajirai "
-"suna motsi. Hasashen Zúme shine ganin mai horarwa ɗaya da majami'u masu "
-"sauƙi guda biyu ga kowane mutum 5,000 a Amurka da mutane 50,000 a duniya."
+"suna motsi. Manufar Zúme ita ce ganin mai horarwa ɗaya da majami'u masu "
+"sauƙi guda biyu ga kowane mutum dubu biyar a Amurka da mutane dubu hamsin a "
+"duniya."
 
 #: site/dashboard/wizard.php:177
 #, fuzzy
@@ -4833,9 +4776,8 @@ msgstr ""
 "rahotannin ci gaba, kuma ku haɗa ta kan layi da tarukan ido-da-ido."
 
 #: site/dashboard/wizard.php:180
-#, fuzzy
 msgid "Free Tools"
-msgstr "Kayan aiki"
+msgstr "Kayan Aikin Kyauta"
 
 #: site/dashboard/wizard.php:181
 #, fuzzy
@@ -4854,20 +4796,17 @@ msgid "Join for Free"
 msgstr "Shiga Kyauta"
 
 #: site/dashboard/wizard.php:183
-#, fuzzy
 msgid "Successfully joined community"
-msgstr "Al'umma"
+msgstr "Nasarar shiga al'umma"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
-#, fuzzy
 msgid "Something went wrong"
-msgstr "Kash! Wani abu bai faru ba."
+msgstr "Wani abu ya faru"
 
 #: site/dashboard/wizard.php:188
-#, fuzzy
 msgid "Complete your profile"
-msgstr "Bayaninku"
+msgstr "Kammala bayanin martabarka"
 
 #: site/dashboard/wizard.php:192
 #, fuzzy
@@ -4895,9 +4834,8 @@ msgid "This is your approximate location."
 msgstr "Wannan shine kusan wurin ku."
 
 #: site/dashboard/wizard.php:198
-#, fuzzy
 msgid "Privacy Policy"
-msgstr "Zume Sirri na Sirri"
+msgstr "takardar kebantawa"
 
 #: site/dashboard/wizard.php:204
 #, fuzzy
@@ -4923,9 +4861,8 @@ msgid "Coaching"
 msgstr "Kocin"
 
 #: site/dashboard/wizard.php:216
-#, fuzzy
 msgid "Technical Assistance"
-msgstr "Ina bukatan taimakon fasaha"
+msgstr "Taimakon Fasaha"
 
 #: site/dashboard/wizard.php:217
 #, fuzzy
@@ -4943,7 +4880,6 @@ msgid "Help with what to do after starting a group"
 msgstr "Taimaka da abin da za ku yi bayan fara ƙungiya"
 
 #: site/dashboard/wizard.php:221
-#, fuzzy
 msgid "Please give a response to this question"
 msgstr "Da fatan za a ba da amsa ga wannan tambayar"
 
@@ -4963,14 +4899,12 @@ msgstr ""
 "daga baya."
 
 #: site/dashboard/wizard.php:224
-#, fuzzy
 msgid "You have already requested a coach"
-msgstr "Kun nemi koyawa."
+msgstr "Kun riga kun nemi koci"
 
 #: site/dashboard/wizard.php:225
-#, fuzzy
 msgid "Error connecting with a coach"
-msgstr "haɗa tare da koci"
+msgstr "Kuskuren haɗawa da koci"
 
 #: site/dashboard/wizard.php:226
 #, fuzzy
@@ -4999,14 +4933,12 @@ msgid "Successfully joined training %s"
 msgstr "Nasarar shiga horo %s"
 
 #: site/dashboard/wizard.php:238
-#, fuzzy
 msgid "Next Session Date"
 msgstr "Zama Na gaba"
 
 #: site/dashboard/wizard.php:239
-#, fuzzy
 msgid "Start Time"
-msgstr "Fara"
+msgstr "Lokacin farawa"
 
 #: site/dashboard/wizard.php:240
 #, fuzzy
@@ -5418,7 +5350,6 @@ msgid "Lost your password?"
 msgstr "Asarar kalmar sirri?"
 
 #: site/login/login-template.php:734
-#, fuzzy
 msgid "Already have an account?"
 msgstr "Kuna da asusu?"
 
@@ -5661,9 +5592,8 @@ msgid "2 Simple Churches"
 msgstr "Ikilisiyoyi Masu Sauki biyu"
 
 #: site/pages/about.php:147
-#, fuzzy
 msgid "Part 2:"
-msgstr "Kashi na 2:"
+msgstr "Kashi na biyu:"
 
 #: site/pages/about.php:148
 msgid ""
@@ -5797,7 +5727,6 @@ msgstr ""
 "cikin kwas."
 
 #: site/pages/about.php:223 site/pages/training.php:264
-#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
@@ -5806,9 +5735,8 @@ msgstr ""
 "tattaunawar da aka biyo baya, da sauƙaƙe abubuwan da suka dace."
 
 #: site/pages/about.php:232
-#, fuzzy
 msgid "NOT needed for the training:"
-msgstr "Kuna son fara horo?"
+msgstr "BA a buƙata don horon:"
 
 #: site/pages/about.php:234 site/pages/training.php:268
 #, fuzzy
@@ -5829,20 +5757,18 @@ msgstr ""
 "mai son kansa, kuma za ku iya farawa a yau."
 
 #: site/pages/about.php:246
-#, fuzzy
 msgid "Connecting with a Coach."
-msgstr "haɗa tare da koci"
+msgstr "Haɗawa da Koci."
 
 #: site/pages/about.php:253
-#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
 "A duk hanyar, al'ummar Zúme suna da sha'awar tallafa muku ta hanyar samar da "
-"COACH don taimaka muku da ƙungiyar ku cikin nasarar aiwatar da horon. Kada "
-"ku yi shakka don tuntuɓar tambayoyi ko damuwa!"
+"COCI don taimaka muku da ƙungiyar ku cikin nasarar aiwatar da horon. Kada ku "
+"yi shakka don tuntuɓar tambayoyi ko damuwa!"
 
 #: site/pages/about.php:263
 #, fuzzy
@@ -5855,7 +5781,6 @@ msgid "Register Free"
 msgstr "Yi rijista kyauta"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
-#, fuzzy
 msgid "Please enter a friend code."
 msgstr "Da fatan za a shigar da lambar aboki."
 
@@ -5876,13 +5801,12 @@ msgid "Connect"
 msgstr "Haɗa"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
-msgstr "Tsara"
+msgstr "Ko kuma"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Zaɓi zaman don dubawa"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -5891,19 +5815,16 @@ msgid "Training Schedules"
 msgstr "Sake zagayowar horo"
 
 #: site/pages/checkin.php:254 site/pages/training.php:221
-#, fuzzy
 msgid "10 Sessions"
-msgstr "Zaman"
+msgstr "Zama goma"
 
 #: site/pages/checkin.php:258 site/pages/training.php:233
-#, fuzzy
 msgid "20 Sessions"
-msgstr "Zaman"
+msgstr "Zaman ashirin"
 
 #: site/pages/checkin.php:262 site/pages/training.php:245
-#, fuzzy
 msgid "Intensive"
-msgstr "M"
+msgstr "matsanancin"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
@@ -5912,7 +5833,6 @@ msgid "Donate"
 msgstr "Ba da gudummawa"
 
 #: site/pages/donate.php:95
-#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
@@ -5920,7 +5840,6 @@ msgstr ""
 "nesa na Zúme."
 
 #: site/pages/donate.php:103
-#, fuzzy
 msgid "View All Giving Opportunities"
 msgstr "Duba Duk Damar Ba da Dama"
 
@@ -5930,9 +5849,8 @@ msgid "FAQ"
 msgstr "FAQs"
 
 #: site/pages/faq.php:90 site/pages/home.php:188 site/profile/profile.php:162
-#, fuzzy
 msgid "User Profile"
-msgstr "Bayaninku"
+msgstr "Bayanan mai amfani"
 
 #: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
@@ -5955,21 +5873,18 @@ msgid "How to Follow Jesus"
 msgstr "Yadda za'a Bi Yesu"
 
 #: site/pages/follow-jesus.php:151
-#, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr ""
-"Kalli wannan bidiyon mai mahimmanci yana bayyana dangantakar udu na rayuwar "
-"ku."
+"Kalli wannan bidiyo mai mahimmanci da ke bayanin alaƙa hudu na sabuwar "
+"rayuwar ku"
 
 #: site/pages/follow-jesus.php:154
-#, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr ""
-"Sassan da ke ƙasa, za su koya maka abin da ake nufi da zama mai bi "
-"(almajiri) na Yesu."
+"Sassan da ke ƙasa, za su koya maka ma’anar zama mabiyin (almajirin) Yesu"
 
 #: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
@@ -6006,13 +5921,12 @@ msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "Koyi yadda zaka yi biyayya da dokokin Yesu ta hanyar tafiya DA tsaya."
 
 #: site/pages/follow-jesus.php:239
-#, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
-"Hanya ce mai sauƙi don murnar dangantakarmu da keɓaɓɓiyar alaƙarmu da Yesu."
-"Ka bi hanya mai sauƙi don bikin."
+"Hanya ce mai sauƙi don bikin dangantakarmu ta kud da kud da dangantaka mai "
+"gudana da Yesu. Koyi hanya mai sauƙi don bikin."
 
 #: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
@@ -6073,26 +5987,23 @@ msgstr ""
 "lokacin da ka samu mutum."
 
 #: site/pages/follow-jesus.php:311
-#, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
-"Hanya ce mai sauƙaƙa don bi umarnin Allah na yi wa wasu addu'a. Kuma shine "
-"kawai abin da yake sauti yin addu'a ga Allah yayin tafiya!"
+"Hanya ce mai sauƙi don yin biyayya ga umurnin Allah na yin addu’a domin "
+"wasu. Kuma shi ne kawai yadda sauti yake - yin addu'a ga Allah yayin tafiya!"
 
 #: site/pages/follow-jesus.php:318
-#, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
-msgstr "Me zai faru idan abokai da abokai da abokai da yawa sun fara bin Yesu?"
+msgstr ""
+"Idan abokai da yawa, dangi da sauransu suka fara bin Yesu tare da ni fa?"
 
 #: site/pages/friend-invite.php:164
-#, fuzzy
 msgid "Friend Invitation"
-msgstr "An karɓi gayyatar"
+msgstr "Gayyatar abokai"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
-#, fuzzy
 msgid "Use the code your friend sent you."
 msgstr "Yi amfani da lambar da abokinka ya aiko maka."
 
@@ -6102,28 +6013,25 @@ msgid "Get A Coach"
 msgstr "Samu Koci"
 
 #: site/pages/get-a-coach.php:89
-#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
 "Kowane wasanni na motsa jiki, musamman a manyan matakai, yana amfani da "
-"horarwa. Hatta 'yan wasan Olympics suna da kociyoyin, kuma sau da yawa fiye "
-"da ɗaya. Almajirai na iya amfana daidai da koyarwa ta waɗanda suka fi "
+"horarwa. Hatta 'yan wasan Gasar Olympics suna da kociyoyin, kuma sau da yawa "
+"fiye da ɗaya. Almajirai na iya amfana daidai da koyarwa ta waɗanda suka fi "
 "ƙwarewa."
 
 #: site/pages/get-a-coach.php:92
-#, fuzzy
 msgid "No Cost"
 msgstr "Babu Kudin"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
 #: site/pages/training.php:142
-#, fuzzy
 msgid "Join a training group"
-msgstr "Shirya wani horo"
+msgstr "Shiga ƙungiyar horo"
 
 #: site/pages/get-a-coach.php:95
 #, fuzzy
@@ -6135,9 +6043,8 @@ msgstr ""
 "mutane masu sona kaunar Allah, kaunar wasu, da yin biyayya ga Babban Koma."
 
 #: site/pages/get-a-coach.php:99
-#, fuzzy
 msgid "Localized"
-msgstr "Na wuri"
+msgstr "Na gida"
 
 #: site/pages/get-a-coach.php:102
 #, fuzzy
@@ -6154,9 +6061,8 @@ msgid "Experienced"
 msgstr "Kwarewa"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
-#, fuzzy
 msgid "Join a training"
-msgstr "Shirya wani horo"
+msgstr "Shiga horo"
 
 #: site/pages/get-a-coach.php:109
 #, fuzzy
@@ -6170,17 +6076,14 @@ msgstr ""
 "da yin matakai a cikin tafiyarku."
 
 #: site/pages/home.php:86
-#, fuzzy
 msgid "45+"
-msgstr "45+"
+msgstr "arba'in da biyar+"
 
 #: site/pages/home.php:87
-#, fuzzy
 msgid "Languages"
-msgstr "Harshe"
+msgstr "Harsuna"
 
 #: site/pages/home.php:129
-#, fuzzy
 msgid "Becoming more like Jesus... Together"
 msgstr "Zama kamar Yesu... Tare"
 
@@ -6189,32 +6092,26 @@ msgid "Overview"
 msgstr "Siffar"
 
 #: site/pages/home.php:134
-#, fuzzy
 msgid "Group Discussions"
 msgstr "Tattaunawar Rukuni"
 
 #: site/pages/home.php:135
-#, fuzzy
 msgid "Self-Facilitated"
-msgstr "Sauƙaƙan Kai"
+msgstr "Cancantar Kai"
 
 #: site/pages/home.php:136
-#, fuzzy
 msgid "Practice-Oriented"
-msgstr "Aiwatarwa - Filaye Hudu"
+msgstr "Aiki-daidaitacce"
 
 #: site/pages/home.php:137
-#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr "32 Hanyoyi da Ƙwarewa"
+msgstr "Hanyoyi da Ƙwarewa talatin da biyu"
 
 #: site/pages/home.php:138
-#, fuzzy
 msgid "20 hours of Training"
-msgstr "Shirya wani horo"
+msgstr "Awanni ashirin na horo"
 
 #: site/pages/home.php:144
-#, fuzzy
 msgid "Free. Anytime. Anywhere."
 msgstr "Kyauta. Kowane lokaci. Ko'ina."
 
@@ -6229,9 +6126,8 @@ msgid "Being A Disciple"
 msgstr "Dalibin almajirai"
 
 #: site/pages/home.php:155
-#, fuzzy
 msgid "What's a Disciple?"
-msgstr "Ma'anar Ka'idar Ka'ida da Coci"
+msgstr "Menene Almajiri?"
 
 #: site/pages/home.php:156
 #, fuzzy
@@ -6259,19 +6155,16 @@ msgid "The Power of Obedient Faith"
 msgstr "Ikon Imani Biyayya"
 
 #: site/pages/home.php:167
-#, fuzzy
 msgid "Making Disciples"
-msgstr "Dalibin almajirai"
+msgstr "Yin Almajirai"
 
 #: site/pages/home.php:169
-#, fuzzy
 msgid "Sharing God's Story"
-msgstr "Yi musayar Shaida (minti Arba'in da hudu)"
+msgstr "Raba Labarin Allah"
 
 #: site/pages/home.php:170
-#, fuzzy
 msgid "Telling Your Story"
-msgstr "Jagorancin Rukuninku"
+msgstr "Bayar da Labarinku"
 
 #: site/pages/home.php:171
 #, fuzzy
@@ -6279,19 +6172,16 @@ msgid "Engaging Seekers"
 msgstr "Masu Neman Shiga"
 
 #: site/pages/home.php:172
-#, fuzzy
 msgid "Vision Casting Multiplication"
-msgstr "Hanyar Gyara Mafi Girma"
+msgstr "Hannun Simintin Ɗaukaka"
 
 #: site/pages/home.php:173
-#, fuzzy
 msgid "Leading a Simple Church"
-msgstr "Ikilisiyoyi Masu Sauki biyu"
+msgstr "Jagoranci Sauƙaƙan Coci"
 
 #: site/pages/home.php:174
-#, fuzzy
 msgid "Training Others"
-msgstr "Horarwa"
+msgstr "Horar da Wasu"
 
 #: site/pages/home.php:179 site/pages/home.php:244
 #, fuzzy
@@ -6325,13 +6215,10 @@ msgstr ""
 "nan Zúme ba. ~C"
 
 #: site/pages/home.php:293
-#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
-msgstr ""
-"Kowa na iya yin wannan. Ba kwa buƙatar ƙwarewa ko horo na musamman. ~ J"
+msgstr "Kowa na iya yin wannan. Ba kwa buƙatar ƙwarewa ko horo na musamman. ~ J"
 
 #: site/pages/home.php:304
-#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
@@ -6340,7 +6227,6 @@ msgstr ""
 "Hukumar. Horon Zúme ya zayyana salon rayuwar Kirista na yau da kullun. ~D"
 
 #: site/pages/home.php:315
-#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
@@ -6348,9 +6234,9 @@ msgstr ""
 "Waɗannan ra'ayoyi da basira sun canza cocinmu da tasirinmu ga duniya. ~ R"
 
 #: site/pages/home.php:325
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Zúme Network"
+msgstr "%s = Yisti"
 
 #: site/pages/home.php:331
 msgid ""
@@ -6369,14 +6255,12 @@ msgstr ""
 "tare da ƙara almajirai a cikin tsararrakinmu."
 
 #: site/pages/home.php:336
-#, fuzzy
 msgid "Ready to take your next steps?"
 msgstr "Shirya don ɗaukar matakanku na gaba?"
 
 #: site/pages/home.php:340
-#, fuzzy
 msgid "Register Free."
-msgstr "Yi rijista kyauta"
+msgstr "Yi Rajista Kyauta."
 
 #: site/pages/home.php:344
 msgid "Gather a Group."
@@ -6405,9 +6289,8 @@ msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr "Ƙarfafa Almajirai. Kowane lokaci... Ko'ina tare da Zúme App."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
-#, fuzzy
 msgid "Zúme Training App"
-msgstr "Karatun Zume"
+msgstr "Aikace-aikacen horo Zume"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
 #, fuzzy
@@ -6438,12 +6321,10 @@ msgid "Great for areas where internet access is restricted or limited"
 msgstr "Mai girma ga wuraren da aka ƙuntata ko iyakance damar intanet"
 
 #: site/pages/plan-invite.php:77
-#, fuzzy
 msgid "Please enter a code."
 msgstr "Da fatan za a shigar da lamba."
 
 #: site/pages/plan-invite.php:170
-#, fuzzy
 msgid "Plan Invitation"
 msgstr "Shirin Gayyata"
 
@@ -6511,11 +6392,12 @@ msgid "We collect your information at login."
 msgstr "Mun tattara bayananka a login."
 
 #: site/pages/privacy-policy.php:133
-#, fuzzy
 msgid ""
 "We also track your progress through the training course and through site "
 "usage."
-msgstr "Hakanan muna bin diddigin cigaban Ku ta hanyar horo."
+msgstr ""
+"Muna kuma bin diddigin ci gaban ku ta hanyar kwas ɗin horo da kuma amfani da "
+"rukunin yanar gizo."
 
 #: site/pages/privacy-policy.php:136
 #, fuzzy
@@ -6649,12 +6531,10 @@ msgstr ""
 "sabuntawa a wannan shafin."
 
 #: site/pages/resources.php:100
-#, fuzzy
 msgid "Training Guidebook"
-msgstr "Sana'ar Horarwa"
+msgstr "Littafin Jagorancin horo"
 
 #: site/pages/resources.php:103
-#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
@@ -6672,12 +6552,10 @@ msgid "Free Download (PDF)"
 msgstr "Zazzagewa Kyauta (PDF)"
 
 #: site/pages/resources.php:112
-#, fuzzy
 msgid "Order print copy"
 msgstr "Yi oda kwafin bugawa"
 
 #: site/pages/share.php:83
-#, fuzzy
 msgid "Copy this link and send it to your friends."
 msgstr "Kwafi wannan hanyar haɗin yanar gizon kuma aika zuwa abokanka."
 
@@ -6710,13 +6588,12 @@ msgid "Sharing with Others"
 msgstr "Rabawa da Wasu"
 
 #: site/pages/share.php:141
-#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
-"Sa’ad da muka kasance da aminci mu yi biyayya da kuma raba abin da Ubangiji "
-"ya raba da mu, sa’an nan ya yi alkawari zai raba fiye da haka."
+"Sa’ad da muka kasance da aminci don mu yi biyayya da kuma raba abin da "
+"Ubangiji ya raba mana, sai ya yi alkawari zai raba fiye da haka."
 
 #: site/pages/training.php:130
 msgid "Get started with Zúme Training"
@@ -6771,85 +6648,74 @@ msgid "Course Concepts"
 msgstr "Ka'idojin Darasi"
 
 #: site/pages/training.php:164 site/pages/training.php:259
-#, fuzzy
 msgid "What is required?"
-msgstr "Ana bukatar Imel."
+msgstr "Me ake bukata?"
 
 #: site/pages/training.php:177
-#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
-"A cikin wannan kwasa-kwasan da kai da kai, kai da ƙungiyar horon ku za ku yi "
-"amfani da gajerun bidiyoyi, tambayoyin tattaunawa, da motsa jiki masu sauƙi "
-"don haɓaka ƙwarewarku da iliminku a cikin fagage masu zuwa:"
+"A cikin wannan kwasa-kwasan da kai da kai, kai da ƙungiyar horarwar ku za ku "
+"yi amfani da gajerun bidiyoyi, tambayoyin tattaunawa, da motsa jiki masu "
+"sauƙi don haɓaka ƙwarewarku da iliminku a cikin fagage masu zuwa:"
 
 #: site/pages/training.php:181
-#, fuzzy
 msgid "Discipleship Concepts"
 msgstr "Ka'idodin Almajirai"
 
 #: site/pages/training.php:195
-#, fuzzy
 msgid "Spiritual Practices"
-msgstr "Numfashi na Ruhaniya"
+msgstr "Ayyukan Ruhaniya"
 
 #: site/pages/training.php:216
-#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
-"Zúme shine horo na awanni 20. Amma waɗannan sa'o'i 20 za a iya watse daban-"
-"daban dangane da kasancewar ƙungiyar horon ku."
+"Zúme horo ne na awanni ashirin. Amma waɗannan sa'o'i ashirin za a iya watse "
+"daban-daban dangane da kasancewar ƙungiyar horon ku."
 
 #: site/pages/training.php:228
-#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
-"Tsarin kwas na asali na Zúme shine zaman awa 10 biyu. Kowane zama yana "
+"Tsarin kwas na asali na Zúme shine zaman awa biyu goma. Kowane zama yana "
 "ƙarewa tare da matakai na biyayya da kuma hanyoyin raba tsakanin zama. Ana "
-"gudanar da wannan tsari sau ɗaya a mako har tsawon makonni 10."
+"gudanar da wannan tsari sau ɗaya a mako har tsawon makonni goma."
 
 #: site/pages/training.php:240
-#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
-"Don mafi tsayi a hankali hanya hanya tare da ƙarin dama don samun ƙwarewa a "
-"cikin dabaru da ƙwarewa, tsarin zaman 20 yana da ƙarin damar yin aiki ga "
+"Don hanya mafi tsayi a hankali tare da ƙarin dama don samun ƙwarewa a cikin "
+"dabaru da ƙwarewa, tsarin zaman ashirin yana da ƙarin damar yin aiki ga "
 "kowane ra'ayi da kayan aikin."
 
 #: site/pages/training.php:252
-#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
-"Za a iya matse Zúme cikin sassan rabin yini 5 na sa'o'i 4 kowace. Ana iya "
-"yin wannan tare da yammacin Juma'a (awanni 4), da duk ranar Asabar (awanni "
-"8) da duk ranar Lahadi (awanni 8)."
+"Za a iya matse Zúme cikin sassan rabin yini biyar na sa'o'i huɗu kowace. Ana "
+"iya yin haka da yammacin Juma'a (awanni huɗu), da duk ranar Asabar (awanni "
+"takwas) da duk ranar Lahadi (awanni takwas)."
 
 #: site/pages/training.php:260
-#, fuzzy
 msgid "Needed for the course:"
-msgstr "Kuna son fara horo?"
+msgstr "Ana buƙata don kwas ɗin:"
 
 #: site/pages/training.php:266
-#, fuzzy
 msgid "NOT needed for the course:"
-msgstr "Kuna son fara horo?"
+msgstr "BA a buƙata don kwas ɗin:"
 
 #: site/pages/training.php:269
-#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
@@ -6858,20 +6724,17 @@ msgstr ""
 "mai son kansa, kuma za ku iya farawa a yau."
 
 #: site/parts/footer.php:31
-#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr "Kwanaki 3 Mai Tsanani"
+msgstr "Kwas ɗin Tsananin Kwanaki uku"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
 #: utilities/integrations/replace-placeholder.php:110
 #: utilities/integrations/replace-placeholder.php:111
-#, fuzzy
 msgid "Check-in"
-msgstr "Jerin bincike"
+msgstr "Rajistan shiga"
 
 #: site/parts/noscript.php:2
-#, fuzzy
 msgid "Oops you have javascript turned off"
 msgstr "Kash kana da javascript a kashe"
 
