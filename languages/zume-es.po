@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-09 16:44+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-07-18 09:52+0000\n"
+"Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
 "Language-Team: Spanish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/es/>\n"
 "Language: es\n"
@@ -651,11 +651,13 @@ msgstr "Sin resultados"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
-msgstr "ANFITRIÓN."
+msgstr "H. O. S. T."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "Autoevalúese usando Escuchado, Obedecido, Compartido, Entrenado."
+msgstr ""
+"Evalúate a ti mismo utilizando Heard (Oído), Obeyed (Obedecido), Shared "
+"(Compartido), Trained (Formado)."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
@@ -667,7 +669,7 @@ msgstr "Herramientas y conceptos del entrenamiento"
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
 msgid "Ask yourself, have I"
-msgstr "Pregúntese"
+msgstr "Pregúntate a ti mismo si has"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -749,16 +751,18 @@ msgstr ""
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
 msgid "M.A.W.L."
-msgstr "MAWL"
+msgstr "M. A. W. L."
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "Entrene a otros usando Modelar, Ayudar, Observar, Dejar."
+msgstr ""
+"Entrena a otros usando Model (Modelar), Assist (Ayudar), Watch (Observar), "
+"Leave (Dejar)."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
 msgid "Ask yourself, what does my disciple need"
-msgstr "Pregúntese"
+msgstr "Pregúntate: ¿Qué necesita mi discípulo?"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -807,11 +811,11 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"Modelar es simplemente proporcionar un ejemplo de una práctica o "
-"herramienta. Es la parte más breve del ciclo formativo. Por lo general, sólo "
-"es necesario hacerlo una vez. Se trata simplemente de crear conciencia de "
-"que existe una práctica o herramienta y dar una idea general de cómo se ve. "
-"Modelar repetidamente no es una forma eficaz de equipar a alguien."
+"Modelar consiste simplemente en ofrecer un ejemplo de una práctica o "
+"herramienta. Es la parte más breve del ciclo de formación y, por lo general, "
+"solo hay que hacerla una vez. Consiste en dar a conocer la existencia de una "
+"práctica o herramienta y dar una idea general de cómo es. Modelar varias "
+"veces no es una forma eficaz de equipar a una persona."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
@@ -825,14 +829,14 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
-"Ayudar es permitir que el alumno practique la habilidad. Esto lleva más "
-"tiempo que la fase de modelado. Requiere \"tomar la mano\" por parte del "
-"mentor. El mentor debe ser directivo y desempeñar un papel activo en la "
-"formación del alumno. Esta fase no dura hasta que el alumno sea "
-"completamente competente, sino simplemente hasta que comprenda los conceptos "
-"básicos de la habilidad. Si esta fase se prolonga demasiado, el alumno "
-"desarrollará una dependencia del mentor y nunca avanzará hasta alcanzar la "
-"competencia total."
+"Ayudar es permitir que el alumno ponga en práctica la habilidad. Esto lleva "
+"más tiempo que la fase de modelado y requiere el acompañamiento del mentor. "
+"Este debe tomar la iniciativa y desempeñar un papel activo en el "
+"entrenamiento del alumno. Esta fase no dura hasta que el alumno haya "
+"adquirido todas las competencias, sino hasta que haya comprendido los "
+"fundamentos de la habilidad. Si esta fase se prolonga demasiado, el alumno "
+"desarrollará una dependencia del tutor y nunca alcanzará la plena "
+"competencia."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
@@ -844,11 +848,11 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
-"Observar es la fase más larga. Implica un contacto más indirecto con el "
-"alumno. Busca desarrollar la competencia total en todas las facetas de una "
-"habilidad. Puede ser diez veces o más largo que las dos primeras fases "
-"combinadas. A medida que el alumno progresa en sus habilidades, el contacto "
-"con el mentor puede volverse menos regular y más ad hoc."
+"La fase de observación es la más larga de todas. Implica un contacto menos "
+"directo con el alumno y busca desarrollar la plena competencia para dominar "
+"todos los aspectos de una habilidad. Puede durar diez veces o más la suma de "
+"las dos primeras fases. A medida que el alumno progresa en la habilidad, el "
+"contacto con el mentor puede ser menos regular y más específica."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
@@ -859,19 +863,23 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
-"Dejar es una especie de graduación cuando el alumno se convierte en un "
-"compañero del mentor. Es posible que se mantengan contactos periódicos y "
-"tutorías entre pares si el alumno y el mentor están en la misma red. Cuando "
-"un padre deja que un niño ande en bicicleta sin supervisión, esa es la fase "
-"DE SALIDA."
+"Dejar al alumno es una especie de graduación en la que este se convierte en "
+"compañero del mentor. El contacto periódico y la tutoría entre pares pueden "
+"continuar si el alumno y el mentor están en la misma red. Igual que cuando "
+"un padre permite que su hijo monte en bicicleta sin supervisión, así es la "
+"fase de DEJAR."
 
 #: site/activities/coaching-checklist-two.php:98
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. Autoevalúese usando Escuchado, Obedecido, Compartido, Entrenado."
+msgstr ""
+"1. Evalúte a ti mismo utilizando Heard (Oído), Obeyed (Obedecido), Shared "
+"(Compartido), Trained (Formado)."
 
 #: site/activities/coaching-checklist-two.php:99
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr "2. Entrene a otros usando Modelar, Ayudar, Observar, Dejar."
+msgstr ""
+"2. Entrena a otros utilizando Model (Modelar), Assist (Ayudar), Watch "
+"(Observar), Leave (Dejar)."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
@@ -881,56 +889,58 @@ msgstr "Autoevaluación"
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
 msgid "Mentee Development Level"
-msgstr "Células de Liderazgo"
+msgstr "Nivel de desarrollo del alumno"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr "Inconsciente"
+msgstr "Sin conocimiento"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr "No capacitado"
+msgstr "Inexperto"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
 msgid "Competent"
-msgstr "Curso completo"
+msgstr "Competente"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr "Experto"
+msgstr "Cualificado"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr "El papel del mentor"
+msgstr "Papel del tutor"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
-msgstr "Entrenar nueva información y asegurar la comprensión."
+msgstr "Enseñar la nueva información y asegurarse de que se entiende"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Stop and stay with them until they have the basics"
-msgstr "Entrenar nueva información y asegurar la comprensión."
+msgstr ""
+"Detenerse y permanecer con el alumno hasta que adquiera los conocimientos "
+"básicos"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
-msgstr "Manténgase comprometido hasta que sea consistentemente competente"
+msgstr "Seguir comprometido hasta que sea competente"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Relate to them as co-laborer"
-msgstr "Relacionarse con ellos como colaborador."
+msgstr "Relacionarse con el alumno como colaborador"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr "Comportamientos del mentor"
+msgstr "Comportamiento del tutor"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
@@ -938,15 +948,15 @@ msgstr "Dirigir e informar"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr "Directo y soporte"
+msgstr "Dirigir y dar apoyo"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
-msgstr "Apoyar y alentar"
+msgstr "Dar apoyo y animar"
 
 #: site/activities/coaching-checklist.php:182
 msgid "Receive updates"
-msgstr "Recibir actualizaciones"
+msgstr "Recibir informes"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
@@ -954,45 +964,44 @@ msgstr "Responsabilidades de planificación"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr "El mentor decide"
+msgstr "Decisión del tutor"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr "Discute y el mentor decide"
+msgstr "Debate y decisión del tutor"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr "Discute y el mentorizado decide"
+msgstr "Debate y decisión del alumno"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr "El aprendiz decide"
+msgstr "Decisión del alumno"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
-"¿El aprendiz desconoce, no está familiarizado o no comprende bien la "
+"¿El alumno desconoce, no está familiarizado o no entiende bien la "
 "herramienta?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
-"Si estás un poco familiarizado pero no muy seguro de las Herramientas - "
-"marca la columna ROJA"
+"¿Está el alumno un poco familiarizado con la herramienta, pero aún no la "
+"conoce bien?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
-"¿El aprendiz entiende la herramienta y es capaz de entrenar los conceptos "
+"¿Comprende el alumno la herramienta y es capaz de enseñar los conceptos "
 "básicos de la misma?"
 
 #: site/activities/coaching-checklist.php:275
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
-"Si te siente seguro y puedes entrenar efectivamente la Herramienta - marca "
-"la columna VERDE"
+"¿El alumno se siente seguro y capaz de enseñar eficazmente la herramienta?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -1194,20 +1203,20 @@ msgstr "Escanea el código QR o busca una hoja de papel."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 msgid "Select a person from your list of 100."
-msgstr "Crea tu propia lista de 100"
+msgstr "Selecciona a una persona de tu lista de cien."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
-"Utilice la lista de verificación de coaching y evalúe a la persona "
-"seleccionada. Pregúntese: \"¿Qué necesita esta persona para cada una de las "
-"herramientas y conceptos?\""
+"Utiliza la lista de control de entrenamiento y evalúe a la persona "
+"seleccionada. Pregúntate: «¿Qué necesita esta persona en cada una de las "
+"herramientas y conceptos?»."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid "Check off the checklist."
-msgstr "Marque la lista de verificación."
+msgstr "Marca la lista de control."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1446,7 +1455,7 @@ msgstr "En esta sesión, escucharemos y hablaremos de los siguientes conceptos:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr ""
+msgstr "Una definición sencilla de discípulo e iglesia"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -2827,8 +2836,8 @@ msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Autoevalúese utilizando la línea 1 y marque las columnas correspondientes en "
-"la Lista de verificación de coaching."
+"Evalúate a ti mismo utilizando la línea 1 y marca las columnas "
+"correspondientes en la lista de control de entrenamiento."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
@@ -3116,8 +3125,8 @@ msgid ""
 "spiritual family? They become a network!"
 msgstr ""
 "¿Qué ocurre con las iglesias cuando crecen y fundan nuevas iglesias que a su "
-"vez fundan otras?  ¿Cómo se mantienen conectadas y comparten la vida como "
-"una gran familia espiritual? ¡Se convierten en una red!"
+"vez fundan otras? ¿Cómo se mantienen conectadas y comparten la vida como una "
+"gran familia espiritual? ¡Se convierten en una red!"
 
 #: site/course/course-content.php:2946
 msgid ""
@@ -3829,11 +3838,11 @@ msgstr "HAZ UNA PAUSA"
 
 #: site/course/presenter.php:131
 msgid "Course Presenter"
-msgstr "Curso Zúme"
+msgstr "Presentador del curso"
 
 #: site/course/presenter.php:148
 msgid "Download the offline slides here"
-msgstr "Descargue las diapositivas sin conexión aquí"
+msgstr "Descargar aquí las diapositivas sin conexión"
 
 #: site/course/presenter.php:166
 msgid "Links"
@@ -3863,7 +3872,7 @@ msgstr "Salir del curso"
 
 #: site/course/presenter.php:192
 msgid "Slide View"
-msgstr "Vista de cuadrícula"
+msgstr "Vista de diapositivas"
 
 #: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 msgid "List View"
@@ -4001,7 +4010,7 @@ msgstr "Correo electrónico"
 
 #: site/dashboard/dashboard.php:181
 msgid "Linked Accounts"
-msgstr "Cuenta"
+msgstr "Cuentas vinculadas"
 
 #: site/dashboard/dashboard.php:182
 msgid "Communications Email"
@@ -4076,31 +4085,31 @@ msgstr "Utiliza el asistente para configurar tu perfil"
 
 #: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
-msgstr "Organiza un entrenamiento"
+msgstr "Únete o crea un grupo de entrenamiento"
 
 #: site/dashboard/dashboard.php:199
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
-"Únase a una de nuestras capacitaciones en línea o cree su propio grupo de "
-"capacitación con nuestro asistente fácil de configurar"
+"Únete a uno de nuestros cursos de entrenamiento en línea o crea tu propio "
+"grupo de entrenamiento con nuestro asistente de fácil configuración"
 
 #: site/dashboard/dashboard.php:200
 msgid "Create Training Group"
-msgstr "1 entrenamiento"
+msgstr "Crear un grupo de entrenamiento"
 
 #: site/dashboard/dashboard.php:201
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Crea tu propia lista de 100"
+msgstr "Crea tu propio grupo de entrenamiento con nuestro sencillo asistente"
 
 #: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 msgid "Join Training Group"
-msgstr "Organiza un entrenamiento"
+msgstr "Unirse a un grupo de entrenamiento"
 
 #: site/dashboard/dashboard.php:203
 msgid "Join an online training group run by a coach"
-msgstr "Organiza un entrenamiento"
+msgstr "Únete a un grupo de entrenamiento en línea dirigido por un entrenador"
 
 #: site/dashboard/dashboard.php:205
 msgid ""
@@ -4435,43 +4444,43 @@ msgstr "No se reconoce el código. Por favor, comprueba el número."
 
 #: site/dashboard/dashboard.php:282
 msgid "You are not authorized to access this page"
-msgstr "No tiene permisos para acceder a esta página"
+msgstr "No estás autorizado a acceder a esta página."
 
 #: site/dashboard/dashboard.php:283
 msgid "There has been an error with your request"
-msgstr "Hay errores en el llenado del formulario."
+msgstr "Se ha producido un error en tu solicitud."
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
-"Gracias por su solicitud de entrenamiento. Nuestro equipo trabajará para "
-"conectarlo con un entrenador disponible en su idioma y región."
+"Gracias por tu solicitud de entrenamiento. Nuestro equipo trabajará para "
+"ponerte en contacto con un entrenador disponible en tu idioma y región."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
-"Esté atento a las comunicaciones de su entrenador dentro de la preferencia "
-"de comunicación que indicó."
+"Por favor, espera la respuesta de tu entrenador en la opción de comunicación "
+"que has elegido."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr "Mapa de 100 horas"
+msgstr "Mapa de cien horas"
 
 #: site/dashboard/dashboard.php:287
 msgid "Training vision map"
-msgstr "Formación"
+msgstr "Mapa de visión del entrenamiento"
 
 #: site/dashboard/dashboard.php:288
 msgid "Simple church planting map"
-msgstr "Iglesia simple saturación"
+msgstr "Mapa sencillo para plantar iglesias"
 
 #: site/dashboard/dashboard.php:289
 msgid "No date"
-msgstr "Actualizar"
+msgstr "Sin fecha"
 
 #: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
@@ -4693,12 +4702,12 @@ msgstr "Únete gratis"
 
 #: site/dashboard/wizard.php:183
 msgid "Successfully joined community"
-msgstr "Comunidad"
+msgstr "Te has unido a la comunidad"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
 msgid "Something went wrong"
-msgstr "Ups Algo salió mal."
+msgstr "Algo ha salido mal"
 
 #: site/dashboard/wizard.php:188
 msgid "Complete your profile"
@@ -4726,7 +4735,7 @@ msgstr "Esta es su ubicación aproximada."
 
 #: site/dashboard/wizard.php:198
 msgid "Privacy Policy"
-msgstr "Política de Privacidad Zúme"
+msgstr "Política de privacidad"
 
 #: site/dashboard/wizard.php:204
 msgid "What is your contact preference?"
@@ -4838,7 +4847,7 @@ msgstr "El enlace a un amigo no funciona. Vuelve a intentarlo."
 #: site/dashboard/wizard.php:249
 #, php-format
 msgid "Successfully connected with friend %s"
-msgstr "Te has contactado correctamente con un amigo %s"
+msgstr "Te has conectado correctamente con un amigo %s"
 
 #: site/dashboard/wizard.php:253
 msgid "Checking in"
@@ -4854,11 +4863,11 @@ msgstr "El registro se ha realizado correctamente"
 
 #: site/dashboard/wizard.php:261
 msgid "Create a training group"
-msgstr "Crea tu propia lista de 100"
+msgstr "Crear un grupo de entrenamiento"
 
 #: site/dashboard/wizard.php:262
 msgid "Join a public training group"
-msgstr "Organiza un entrenamiento"
+msgstr "Unirse a un grupo de entrenamiento público"
 
 #: site/dashboard/wizard.php:263
 msgid "Skip for now"
@@ -4878,11 +4887,11 @@ msgstr "2 horas (10 sesiones)"
 
 #: site/dashboard/wizard.php:267
 msgid "4 hour (5 sessions)"
-msgstr "Sesión"
+msgstr "4 horas (5 sesiones)"
 
 #: site/dashboard/wizard.php:268
 msgid "Would you like to schedule your training?"
-msgstr "¿Quieres programar tu entrenamiento?"
+msgstr "¿Deseas programar tu entrenamiento?"
 
 #: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
@@ -4930,15 +4939,15 @@ msgstr "Una vez al mes"
 
 #: site/dashboard/wizard.php:280
 msgid "Other"
-msgstr "Otro"
+msgstr "Otros"
 
 #: site/dashboard/wizard.php:281
 msgid "What is the name of the training group?"
-msgstr "¿Cuál es el contenido del entrenamiento?"
+msgstr "¿Cómo se llama el grupo de entrenamiento?"
 
 #: site/dashboard/wizard.php:282
 msgid "My first training group"
-msgstr "Organiza un entrenamiento"
+msgstr "Mi primer grupo de entrenamiento"
 
 #: site/dashboard/wizard.php:283
 msgid "When do you plan to start?"
@@ -4946,32 +4955,32 @@ msgstr "¿Cuándo tienes previsto empezar?"
 
 #: site/dashboard/wizard.php:284
 msgid "Where do you plan to meet?"
-msgstr "¿Dónde planeas encontrarte?"
+msgstr "¿Dónde tienes previsto reunirte?"
 
 #: site/dashboard/wizard.php:285
 msgid "This could be online or in person"
-msgstr "Esto podría ser en línea o en persona."
+msgstr "Puede ser en línea o en persona"
 
 #: site/dashboard/wizard.php:286
 msgid "Review Schedule"
-msgstr "Ciclo de Entrenamiento"
+msgstr "Revisar calendario"
 
 #: site/dashboard/wizard.php:287
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr "%1$s de %2$s seleccionado"
+msgstr "%1$s de %2$s seleccionadas"
 
 #: site/dashboard/wizard.php:288
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
-msgstr "Leer"
+msgstr "Listo"
 
 #: site/dashboard/wizard.php:289
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr "Demasiados seleccionados: %s"
+msgstr "Se han seleccionado demasiadas: %s"
 
 #: site/dashboard/wizard.php:290
 msgid "Incorrect number of sessions selected"
@@ -4981,24 +4990,24 @@ msgstr "Número incorrecto de sesiones seleccionadas"
 #: site/dashboard/wizard.php:295
 #, php-format
 msgid "Set %s"
-msgstr "Establecer %s"
+msgstr "Fijar %s"
 
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
 #: site/dashboard/wizard.php:313
 msgid "Location"
-msgstr "Guardar ubicación actual"
+msgstr "Ubicación"
 
 #: site/dashboard/wizard.php:293
 msgid "Group Name"
-msgstr "Sin nombre"
+msgstr "Nombre del grupo"
 
 #: site/dashboard/wizard.php:294
 msgid "Group name"
-msgstr "Sin nombre"
+msgstr "Nombre del grupo"
 
 #: site/dashboard/wizard.php:295
 msgid "Start Date"
-msgstr "comienzo"
+msgstr "Fecha de inicio"
 
 #: site/dashboard/wizard.php:299 site/dashboard/wizard.php:314
 msgid "Time"
@@ -5018,15 +5027,15 @@ msgstr "Borrar calendario"
 
 #: site/dashboard/wizard.php:303
 msgid "Add"
-msgstr "Agregar"
+msgstr "Añadir"
 
 #: site/dashboard/wizard.php:304
 msgid "Add some dates to your schedule"
-msgstr "Añade algunas fechas a tu agenda"
+msgstr "Añade algunas fechas a tu calendario"
 
 #: site/dashboard/wizard.php:305
 msgid "Change"
-msgstr "Cambiar Clave"
+msgstr "Cambiar"
 
 #: site/dashboard/wizard.php:309
 msgid "Invite your friends to join your training"
@@ -5037,21 +5046,21 @@ msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
-"Comparte la invitación o el enlace a continuación con tus amigos para que "
-"puedan unirse a tu capacitación."
+"Comparte la invitación o el enlace siguiente con tus amigos para que puedan "
+"unirse a tu entrenamiento."
 
 #: site/dashboard/wizard.php:311
 msgid "Join my zume plan"
-msgstr "Unirse a mi plan Zúme"
+msgstr "Únete a mi plan Zúme"
 
 #: site/dashboard/wizard.php:312
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr "%s te invita a un grupo de entrenamiento de Zume"
+msgstr "%s te invita a un grupo de entrenamiento Zume"
 
 #: site/dashboard/wizard.php:318
 msgid "Copy Invite"
-msgstr "Enlazar"
+msgstr "Copiar invitación"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -5666,15 +5675,15 @@ msgstr "Utiliza el código que aparece en la pantalla o en el libro"
 #: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
 msgid "Connect"
-msgstr "Contactar"
+msgstr "Conectar"
 
 #: site/pages/checkin.php:246
 msgid "or"
-msgstr "Ordenar"
+msgstr "o"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr "Escoger sesión para registro"
+msgstr "Elegir sesión para registrarse"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -6088,9 +6097,9 @@ msgstr ""
 "impacto en el mundo. ~ R"
 
 #: site/pages/home.php:325
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Zúme = Levadura"
+msgstr "%s = Levadura"
 
 #: site/pages/home.php:331
 msgid ""
@@ -6432,7 +6441,7 @@ msgstr "Ordenar"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr "Artículos"
+msgstr "Elementos"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
@@ -6484,7 +6493,7 @@ msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
-"Podemos ponerte en contacto de forma gratuita con un entrenador Zúme  que "
+"Podemos ponerte en contacto de forma gratuita con un entrenador Zúme que "
 "esté comprometido a ayudarte a entender el entrenamiento y convertirte en un "
 "discípulo que da fruto."
 
@@ -6592,18 +6601,18 @@ msgstr "Registro"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
-msgstr "Ups tienes javascript desactivado"
+msgstr "¡Ups! Javascript está desactivado"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
-msgstr "Por favor habilite javascript para usar esta página"
+msgstr "Por favor, activa javascript para utilizar esta página"
 
 #: site/profile/communication-preferences.php:79
 #: utilities/integrations/replace-placeholder.php:173
 #: utilities/integrations/replace-placeholder.php:174
 #: utilities/integrations/replace-placeholder.php:175
 msgid "Update Communication Preferences"
-msgstr "¿Cuál es su ciudad o estado o código postal?"
+msgstr "Actualizar preferencias de comunicación"
 
 #: site/profile/communication-preferences.php:81
 msgid "Recieve emails for:"
@@ -6611,7 +6620,7 @@ msgstr "Recibir correos electrónicos para:"
 
 #: site/profile/communication-preferences.php:84
 msgid "Training session reminders"
-msgstr "Formación"
+msgstr "Recordatorios de sesiones de entrenamiento"
 
 #: site/profile/communication-preferences.php:88
 msgid "Annual reporting reminders"
@@ -6619,11 +6628,11 @@ msgstr "Recordatorios de informes anuales"
 
 #: site/profile/communication-preferences.php:92
 msgid "Community updates"
-msgstr "Comunidad"
+msgstr "Novedades de la comunidad"
 
 #: site/profile/communication-preferences.php:96
 msgid "Encouragements"
-msgstr "Ánimo"
+msgstr "Mensajes de ánimo"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -6668,7 +6677,7 @@ msgstr "Felicitaciones"
 
 #: utilities/apis/cta-api.php:209
 msgid "Connected to Coach!"
-msgstr "Conectando con un entrenador"
+msgstr "¡Te has conectado con el entrenador!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
@@ -6721,7 +6730,7 @@ msgstr "Plan trimestral completado"
 
 #: utilities/apis/cta-api.php:402
 msgid "Join the community"
-msgstr "Comunidad"
+msgstr "Únete a la comunidad"
 
 #: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 msgid "Share Spiritual Breathing"
@@ -6740,16 +6749,16 @@ msgid "Share Relational Stewardship with someone"
 msgstr "Comparte la mayordomía relacional con alguien"
 
 #: utilities/apis/plans-api.php:142
-#, fuzzy, php-format
+#, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "Organiza un entrenamiento"
+msgstr "Mi primer entrenamiento - %s"
 
 #: utilities/apis/plans-api.php:144
-#, fuzzy, php-format
+#, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr "Formación"
+msgstr "Entrenamiento %1$d - %2$s"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -6765,31 +6774,31 @@ msgstr "Únete a la comunidad Zúme"
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
 msgid "Zúme Dashboard"
-msgstr "Panel de Control Zúme"
+msgstr "Panel de control Zúme"
 
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
 msgid "Zúme Online Training Groups"
-msgstr "Entrenamiento Zume"
+msgstr "Grupos de entrenamiento en línea Zúme"
 
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
 msgid "Download Slide Presentation"
-msgstr "Descargar presentación de diapositivas"
+msgstr "Descargar presentación"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
 msgid "Share Zúme Page"
-msgstr "Compartir página de Zúme"
+msgstr "Compartir página Zúme"
 
 #: utilities/integrations/replace-placeholder.php:169
 #: utilities/integrations/replace-placeholder.php:170
 #: utilities/integrations/replace-placeholder.php:171
 msgid "Zúme Annual Report"
-msgstr "Informe Anual Zume"
+msgstr "Informe anual Zúme"
 
 #: utilities/post-types/posttype-pieces.php:301
 msgid "Piece"
