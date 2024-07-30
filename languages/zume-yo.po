@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-10 15:46+0000\n"
+"PO-Revision-Date: 2024-07-24 15:44+0000\n"
 "Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
 "Language-Team: Yoruba <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/yo/>\n"
@@ -1600,7 +1600,7 @@ msgstr "Ṣayẹwo koodu QR naa."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr "Adehun sinu egbe meji tabi meta. "
+msgstr "Adehun sinu egbe meji tabi meta."
 
 #: site/course/course-content.php:333
 #, fuzzy
@@ -1723,7 +1723,7 @@ msgstr ""
 #: site/course/course-content.php:442
 #, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -1739,9 +1739,8 @@ msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
 #: site/course/course-content.php:5012 site/course/course-content.php:5137
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
-#, fuzzy
 msgid "LOOK BACK"
-msgstr "NWA PADA"
+msgstr "WO EYIN"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1843,7 +1842,7 @@ msgstr "Lara agbegbe merin ti a daruko"
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr "E wo ni ko yee "
+msgstr "E wo ni ko yee"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
@@ -1914,7 +1913,7 @@ msgstr "Ṣiṣakoso awọn ibatan ti o ni ni aaye ti o dara julọ lati bẹr�
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr "Seda akojo re "
+msgstr "Seda akojo re"
 
 #: site/course/course-content.php:643
 #, fuzzy
@@ -1926,7 +1925,7 @@ msgstr "Ṣayẹwo koodu QR tabi lo iwe kan."
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
-msgstr "Se gbogbo won ni won ti ni egbe, fi ogbon iseju fowosi asepo. "
+msgstr "Se gbogbo won ni won ti ni egbe, fi ogbon iseju fowosi asepo."
 
 #: site/course/course-content.php:645
 #, fuzzy
@@ -1962,7 +1961,7 @@ msgid ""
 "Ask God who He wants you to share the List of 100 tool with. Share this "
 "person’s name with the group before you go and reach out to them before the "
 "next session."
-msgstr "Bere lowo olohun "
+msgstr "Bere lowo olohun"
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
 #, fuzzy
@@ -1989,7 +1988,7 @@ msgstr "IPIN 3"
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:819
 #, fuzzy
@@ -2027,12 +2026,12 @@ msgstr "Awon Iyinrere"
 #: site/course/course-content.php:934
 #, fuzzy
 msgid "Break into groups of two or three people."
-msgstr "Adehun sinu egbe meji tabi meta. "
+msgstr "Adehun sinu egbe meji tabi meta."
 
 #: site/course/course-content.php:935
 #, fuzzy
 msgid "Take turns telling the Gospel to each other."
-msgstr "Adehun sinu egbe meji tabi meta. "
+msgstr "Adehun sinu egbe meji tabi meta."
 
 #: site/course/course-content.php:959
 msgid ""
@@ -2096,14 +2095,14 @@ msgstr "Wa asiko ninu ose yi lati gbo itan olohun kio si pin fun awon egbe ."
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
-msgstr "IRANILETI TO SE KOKO- egbe re "
+msgstr "IRANILETI TO SE KOKO- egbe re"
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4261
 #, fuzzy
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
-msgstr "IRANILETI TO SE KOKO- egbe re "
+msgstr "IRANILETI TO SE KOKO- egbe re"
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
@@ -2115,7 +2114,7 @@ msgstr "IPIN 4"
 #, fuzzy
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:1110
 #, fuzzy
@@ -2195,7 +2194,7 @@ msgid ""
 "What is one area of discipleship (reading/understanding the Bible, praying, "
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
-msgstr "Ona wo ni awon egbe wa "
+msgstr "Ona wo ni awon egbe wa"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2280,7 +2279,7 @@ msgstr "IPIN 5"
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
@@ -2364,7 +2363,7 @@ msgstr "O dara lati ri adugbo tia o ti rin irin yi."
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
-msgstr "Lo bi Olohun se to e sona "
+msgstr "Lo bi Olohun se to e sona"
 
 #: site/course/course-content.php:1641
 #, fuzzy
@@ -2452,7 +2451,7 @@ msgstr "Tia ba se isiro awon egbe, mon pe koni si iro nbe."
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
-msgstr "Ronnu nipa ase Olohun tio ti mo nipa re "
+msgstr "Ronnu nipa ase Olohun tio ti mo nipa re"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
@@ -2462,7 +2461,6 @@ msgid ""
 msgstr "Ninu fidio yi, ao ko gbogbo ipin meteta yi."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
-#, fuzzy
 msgid ""
 "Did you notice any differences between a 3/3 Group and a Bible Study or "
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
@@ -2643,7 +2641,7 @@ msgstr "Gboju Soke."
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
-msgstr "Te siwaju ninu awon ibere re. "
+msgstr "Te siwaju ninu awon ibere re."
 
 #: site/course/course-content.php:2277
 #, fuzzy
@@ -2968,7 +2966,6 @@ msgstr ""
 "oludari ni gbigbe kan ni oye idagba ni ayika wọn."
 
 #: site/course/course-content.php:2717
-#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
@@ -2981,12 +2978,10 @@ msgstr ""
 "lati wiwọn ilera."
 
 #: site/course/course-content.php:2718
-#, fuzzy
 msgid "See the example on the next slide."
 msgstr "Wo apẹẹrẹ lori ifaworanhan atẹle."
 
 #: site/course/course-content.php:2729
-#, fuzzy
 msgid "Generational Mapping Example"
 msgstr "Iwadi iran"
 
@@ -3144,10 +3139,9 @@ msgid ""
 msgstr ""
 "Lati adase, yan eniyan kan ninu egbe re lati je omo ile-iwe fun igba yii ki "
 "o je ki awon omo egbe miiran lo akoko sise bi awon ibeere ti o ni imoran ati "
-"pese itosona ati iwuri fun ise awon omo ile-iwe.  "
+"pese itosona ati iwuri fun ise awon omo ile-iwe."
 
 #: site/course/course-content.php:3014
-#, fuzzy
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
@@ -3250,7 +3244,7 @@ msgstr ""
 #: site/course/course-content.php:3258
 #, fuzzy
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
@@ -3292,7 +3286,7 @@ msgstr ""
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
 #, fuzzy
@@ -3365,10 +3359,9 @@ msgid ""
 "Ask God who He wants you to share with about the Greatest Blessing. Have "
 "them practice it as well. Share this person‘s name with the group before you "
 "go and reach out to them."
-msgstr "Bere lowo olohun "
+msgstr "Bere lowo olohun"
 
 #: site/course/course-content.php:3901
-#, fuzzy
 msgid ""
 "Pray for each member of your group to experience the blessings of following "
 "Jesus, leading others to follow Jesus, and equipping others to start new "
@@ -3399,7 +3392,7 @@ msgstr "ÌSE Ṣiṣẹ - Pinpin Ihinrere"
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
-msgstr "Adehun sinu egbe meji tabi meta. "
+msgstr "Adehun sinu egbe meji tabi meta."
 
 #: site/course/course-content.php:3948
 #, fuzzy
@@ -3441,7 +3434,7 @@ msgid ""
 "Ask God who He wants you to share with about what baptism is and how to do "
 "it. Have them practice it as well. Share this person‘s name with the group "
 "before you go and reach out to them before the next session."
-msgstr "Bere lowo olohun "
+msgstr "Bere lowo olohun"
 
 #: site/course/course-content.php:4170
 #, fuzzy
@@ -3509,7 +3502,7 @@ msgstr "o asiko re lati fi keko nipa eri"
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
-msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona. "
+msgstr "Gbadura ki o dupe lowo olohun kio pe emi mimo lati to o sona."
 
 #: site/course/course-content.php:4394
 #, fuzzy
@@ -3914,7 +3907,7 @@ msgstr "Ti tele"
 #: site/course/presenter.php:196
 #, fuzzy
 msgid "Session"
-msgstr "Igba Akoko  "
+msgstr "Igba Akoko"
 
 #: site/course/presenter.php:198
 #, fuzzy
@@ -4013,9 +4006,8 @@ msgid "Filter"
 msgstr "Àlẹmọ"
 
 #: site/dashboard/dashboard.php:173
-#, fuzzy
 msgid "Grid View"
-msgstr "Wiwo akoj"
+msgstr "Wiwo akojo"
 
 #: site/dashboard/dashboard.php:174
 #, fuzzy
@@ -4033,9 +4025,8 @@ msgid "View"
 msgstr "Wo"
 
 #: site/dashboard/dashboard.php:177
-#, fuzzy
 msgid "Menu"
-msgstr "Akojọ aṣyn"
+msgstr "Akojọ aṣayan"
 
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
 #: site/dashboard/wizard.php:237 site/profile/profile.php:116
@@ -4164,7 +4155,7 @@ msgstr "1 Ikẹkọ"
 #: site/dashboard/dashboard.php:201
 #, fuzzy
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Seda akojo re "
+msgstr "Seda akojo re"
 
 #: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 #, fuzzy
@@ -4231,7 +4222,7 @@ msgstr "Eto Losoosu"
 #: site/dashboard/dashboard.php:216
 #, fuzzy
 msgid "Three Month Plan Locked"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: site/dashboard/dashboard.php:217
 #, fuzzy
@@ -4324,7 +4315,6 @@ msgid "My Maps are Locked"
 msgstr "Awọn maapu mi ti wa ni Titiipa"
 
 #: site/dashboard/dashboard.php:232
-#, fuzzy
 msgid ""
 "My maps help clarify the Zúme vision of 1 trainee and 2 churches for every "
 "5,000 people in the US, and 50,000 globally. To unlock My Maps, join the "
@@ -4353,7 +4343,7 @@ msgstr "Ẹkọ"
 #: utilities/integrations/replace-placeholder.php:115
 #, fuzzy
 msgid "10 Session Course"
-msgstr "Igba Akoko  "
+msgstr "Igba Akoko"
 
 #: site/dashboard/dashboard.php:236 site/parts/footer.php:30
 #: utilities/integrations/replace-placeholder.php:117
@@ -4361,12 +4351,12 @@ msgstr "Igba Akoko  "
 #: utilities/integrations/replace-placeholder.php:119
 #, fuzzy
 msgid "20 Session Course"
-msgstr "Igba Akoko  "
+msgstr "Igba Akoko"
 
 #: site/dashboard/dashboard.php:237
 #, fuzzy
 msgid "Intensive Course"
-msgstr "Igba Akoko  "
+msgstr "Igba Akoko"
 
 #: site/dashboard/dashboard.php:247 site/dashboard/wizard.php:242
 #: site/pages/training.php:146 utilities/apis/cta-api.php:153
@@ -4488,7 +4478,7 @@ msgstr "%s ṣiṣi silẹ"
 #: site/dashboard/dashboard.php:272 utilities/apis/cta-api.php:314
 #, fuzzy
 msgid "3 month plan"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: site/dashboard/dashboard.php:273
 #, fuzzy
@@ -4638,7 +4628,7 @@ msgstr "Ma pin itan mi."
 #: site/dashboard/dashboard.php:300
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
-msgstr "Ma gba awon eyan niyanju lati bere isiro Egbe: "
+msgstr "Ma gba awon eyan niyanju lati bere isiro Egbe:"
 
 #: site/dashboard/dashboard.php:301
 msgid ""
@@ -4657,7 +4647,6 @@ msgid ""
 msgstr "Ma gba awon eyan niyanju lati bere egbe olukoni:"
 
 #: site/dashboard/dashboard.php:304
-#, fuzzy
 msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
@@ -4944,11 +4933,10 @@ msgstr "sopọ pẹlu olukọ kan"
 #: site/dashboard/wizard.php:226
 #, fuzzy
 msgid "Connecting you to a Coach"
-msgstr "Dari mi si odo Oludari Kan "
+msgstr "Dari mi si odo Oludari Kan"
 
 #: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
 #: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
-#, fuzzy
 msgid "Please wait while we connect you"
 msgstr "Jọwọ duro nigba ti a ba so o"
 
@@ -5020,7 +5008,7 @@ msgstr "Ti ṣayẹwo ni aṣeyọri"
 #: site/dashboard/wizard.php:261
 #, fuzzy
 msgid "Create a training group"
-msgstr "Seda akojo re "
+msgstr "Seda akojo re"
 
 #: site/dashboard/wizard.php:262
 #, fuzzy
@@ -5226,7 +5214,7 @@ msgstr "Ṣafikun awọn ọjọ diẹ si iṣeto rẹ"
 #: site/dashboard/wizard.php:305
 #, fuzzy
 msgid "Change"
-msgstr "Yi Pada "
+msgstr "Yi Pada"
 
 #: site/dashboard/wizard.php:309
 #, fuzzy
@@ -5887,7 +5875,7 @@ msgstr "Too"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "yan akoko lati wo"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
@@ -6609,7 +6597,7 @@ msgid ""
 "following at any time by contacting us via our contact email address:"
 msgstr ""
 "O le jade kuro ninu adehun iwaju lodo wa nigba kugba. o le se awon eleyi "
-"lati bawa soro loti ero ayelujara wa: "
+"lati bawa soro loti ero ayelujara wa:"
 
 #: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
@@ -6717,7 +6705,7 @@ msgstr "Kaabo si eto Idanileko Zume!"
 #: site/pages/training.php:133
 #, fuzzy
 msgid "Create your own training group"
-msgstr "Seda akojo re "
+msgstr "Seda akojo re"
 
 #: site/pages/training.php:136
 #, fuzzy
@@ -6943,9 +6931,8 @@ msgid "Join the online training to learn more"
 msgstr "Darapọ mọ ikẹkọ ori ayelujara lati kọ ẹkọ diẹ sii"
 
 #: utilities/apis/cta-api.php:166
-#, fuzzy
 msgid "Joined Training!"
-msgstr "Wo Gbogbo ikẹkọ"
+msgstr "ikeeko ti o bere"
 
 #: utilities/apis/cta-api.php:181
 #, fuzzy
@@ -6959,14 +6946,13 @@ msgstr "Wa Oluko"
 
 #: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
 #: utilities/apis/cta-api.php:239
-#, fuzzy
 msgid "Congratulations"
-msgstr "Oriire"
+msgstr "aseyori"
 
 #: utilities/apis/cta-api.php:209
 #, fuzzy
 msgid "Connected to Coach!"
-msgstr "Dari mi si odo Oludari Kan "
+msgstr "Dari mi si odo Oludari Kan"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 #, fuzzy
@@ -6981,7 +6967,7 @@ msgstr "Ṣẹda ikẹkọ lati ṣe iranlọwọ fun ọ lati dagba"
 #: utilities/apis/cta-api.php:238
 #, fuzzy
 msgid "Created Training!"
-msgstr "Seda akojo re "
+msgstr "Seda akojo re"
 
 #: utilities/apis/cta-api.php:271
 #, fuzzy
@@ -7011,10 +6997,9 @@ msgstr "%s ṣiṣi silẹ"
 #: utilities/apis/cta-api.php:328
 #, fuzzy
 msgid "3-Month Plan Created"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
-#, fuzzy
 msgid "Complete 3 Month Plan"
 msgstr "Eto Losoosu"
 
@@ -7026,12 +7011,11 @@ msgstr "Pari ero oṣu mẹta rẹ lati ṣe iranlọwọ fun ọ lati dagba"
 #: utilities/apis/cta-api.php:357
 #, fuzzy
 msgid "3 Month Plan Completed"
-msgstr "Eto Osu Meta "
+msgstr "Eto Osu Meta"
 
 #: utilities/apis/cta-api.php:402
-#, fuzzy
 msgid "Join the community"
-msgstr "Agbegbe"
+msgstr "darapo mo Agbegbe"
 
 #: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 #, fuzzy
@@ -7049,15 +7033,14 @@ msgid "Share Relational Stewardship"
 msgstr "Ibatan iriju - Atokọ 100"
 
 #: utilities/apis/cta-api.php:434
-#, fuzzy
 msgid "Share Relational Stewardship with someone"
-msgstr "Ibatan iriju - Atokọ 100"
+msgstr "Ibatan iriju pelu eniyan"
 
 #: utilities/apis/plans-api.php:142
 #, fuzzy, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "Gbalejo ikeko kan"
+msgstr "ikeko mi akoko"
 
 #: utilities/apis/plans-api.php:144
 #, fuzzy, php-format
@@ -7073,9 +7056,8 @@ msgstr "Ifuni"
 #: utilities/integrations/replace-placeholder.php:89
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
-#, fuzzy
 msgid "Join the Zúme Community"
-msgstr "Agbegbe"
+msgstr "darapo mon egbe zume"
 
 #: utilities/integrations/replace-placeholder.php:93
 #: utilities/integrations/replace-placeholder.php:94
@@ -7087,9 +7069,8 @@ msgstr "Dasibodu Zume"
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
-#, fuzzy
 msgid "Zúme Online Training Groups"
-msgstr "Ikẹkọ Zume"
+msgstr "egbe Ikẹkọ Zume ori afefe"
 
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
