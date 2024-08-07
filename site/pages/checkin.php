@@ -103,6 +103,11 @@ class Zume_Training_Checkin extends Zume_Magic_Page
 
                 });
 
+                function show_error( message ) {
+                    warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(message)
+                    jQuery(warningBanner).show()
+                }
+
                 function get_redirect_to_login( code ) {
                     const checkinURL = new URL( jsObject.checkin_url )
 

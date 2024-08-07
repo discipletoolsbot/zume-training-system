@@ -91,6 +91,11 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
 
                 });
 
+                function show_error( message ) {
+                    warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(message)
+                    jQuery(warningBanner).show()
+                }
+
                 function redirect_to_login( code ) {
                     const connectFriendUrl = new URL( jsObject.connect_friend_url )
 
