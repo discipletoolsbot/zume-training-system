@@ -13,14 +13,15 @@ export class LaunchCourse extends LitElement {
     constructor() {
         super()
 
+        this.translations = {}
+        this.urls = {}
+
         if ( typeof jsObject !== 'undefined' ) {
             this.translations = jsObject.translations
             this.urls = jsObject.urls
         }
 
         this.position = 'bottom'
-        this.translations = {}
-        this.urls = {}
 
         const html = document.querySelector('html')
         const dir = html.dataset.dir
