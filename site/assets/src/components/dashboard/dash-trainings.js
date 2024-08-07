@@ -97,7 +97,6 @@ export class DashTrainings extends DashPage {
                 this.error = error.message
             })
             .finally(() => {
-                console.log('finally')
                 this.loading = false
             })
     }
@@ -528,6 +527,7 @@ export class DashTrainings extends DashPage {
                                 <li>
                                     <a
                                         href=${this.makeTrainingItemHref(item, id)}
+                                        @click=${this.stopImmediatePropagation}
                                     >
                                         ${item.title}
                                     </a>
