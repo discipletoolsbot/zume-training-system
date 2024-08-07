@@ -19,6 +19,7 @@ export class LaunchCourse extends LitElement {
         }
 
         this.position = 'bottom'
+        this.translations = {}
 
         const html = document.querySelector('html')
         const dir = html.dataset.dir
