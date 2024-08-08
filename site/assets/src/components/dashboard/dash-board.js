@@ -313,6 +313,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     static getCompletedStatus(routeName, userState) {
         if (
             routeName === RouteNames.setProfile &&
+            userState &&
             userState.set_profile_location &&
             userState.set_profile_name
         ) {
