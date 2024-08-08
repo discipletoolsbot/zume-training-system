@@ -9,9 +9,21 @@
 <link rel="icon" type="image/x-icon" href="<?php echo esc_url( plugin_dir_url( __DIR__ ) . '/../../favicon.ico' ) ?>"></link>
 <?php //phpcs:ignore ?>
 <script src="https://browser.sentry-cdn.com/7.60.0/bundle.min.js" crossorigin="anonymous"></script>
+<?php
+
+$server_name = isset( $_SERVER['SERVER_NAME'] ) ? sanitize_text_field( wp_unslash( $_SERVER['SERVER_NAME'] ) ) : '';
+$environment = 'development';
+
+if ( $server_name === 'zume.training' ) {
+    $environment = 'production';
+}
+
+?>
+
 <script>
-  Sentry.init({
-    dsn: "https://fd1b2f60ca0b4e899eaa09266736d634@red-gopher.pikapod.net/4",
-    tracesSampleRate: 0.01,
-  });
+    Sentry.init({
+        dsn: "https://fd1b2f60ca0b4e899eaa09266736d634@red-gopher.pikapod.net/4",
+        tracesSampleRate: 0.01,
+        environment: '<?php echo esc_js( $environment ) ?>'
+    });
 </script>
