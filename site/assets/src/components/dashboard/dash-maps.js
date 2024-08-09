@@ -44,11 +44,11 @@ export class DashMaps extends DashPage {
         /* This works but the heatmap sites don't load the heatmap properly */
         if (true) {
             if (map === 'hundred-hour-map') {
-                this.scriptUrl = 'https://zume.training/coaching/zume_app/last100_hours/'
+                this.scriptUrl = 'https://zume.training/zume_app/last100_hours/'
             } else if (map === 'vision-map') {
-                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_practitioners/'
+                this.scriptUrl = 'https://zume.training/zume_app/heatmap_trainees/'
             } else if (map === 'church-map') {
-                this.scriptUrl = 'https://zume.training/coaching/zume_app/heatmap_churches/'
+                this.scriptUrl = 'https://zume.training/zume_app/heatmap_churches/'
             } else {
                 this.scriptUrl = ''
             }
@@ -99,7 +99,7 @@ export class DashMaps extends DashPage {
                         : html`
                             <div class="stack">
                                 <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
-                                    ${jsObject.translations.thousand_hour_map}
+                                    ${jsObject.translations.hundred_hour_map}
                                 </button>
                                 <!-- <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
@@ -143,7 +143,7 @@ export class DashMaps extends DashPage {
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src='https://zume.training/coaching/zume_app/last100_hours/'
+                    src='https://zume.training/zume_app/last100_hours/'
                     frameborder="0"
                     width="100%"
                     height="100%"
@@ -160,7 +160,7 @@ export class DashMaps extends DashPage {
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src='https://zume.training/coaching/zume_app/heatmap_practitioners/'
+                    src='https://zume.training/zume_app/heatmap_trainees/'
                     frameborder="0"
                     width="100%"
                     height="100%"
@@ -176,7 +176,7 @@ export class DashMaps extends DashPage {
                     <span class="icon z-icon-close"></span>
                 </button>
                 <iframe
-                    src='https://zume.training/coaching/zume_app/heatmap_churches/'
+                    src='https://zume.training/zume_app/heatmap_churches/'
                     frameborder="0"
                     width="100%"
                     height="100%"

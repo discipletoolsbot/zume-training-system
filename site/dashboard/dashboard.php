@@ -284,7 +284,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'connecting_with_coach' => __( 'Thank you for your coaching request. Our team will be working to connect you with an available coach in your language and region.' ),
             'wait_for_coach' => __( 'Please watch for communication from your coach within the communication preference you indicated.' ),
             'hundred_hour_map' => __( '100 Hour Map', 'zume' ),
-            'thousand_hour_map' => __( '1000 Hour Map', 'zume' ),
             'training_vision_map' => __( 'Training vision map', 'zume' ),
             'simple_church_planting_map' => __( 'Simple church planting map', 'zume' ),
             'not_scheduled' => __( 'No date', 'zume' ),
