@@ -13,6 +13,9 @@ export class LaunchCourse extends LitElement {
     constructor() {
         super()
 
+        this.translations = {}
+        this.urls = {}
+
         if ( typeof jsObject !== 'undefined' ) {
             this.translations = jsObject.translations
             this.urls = jsObject.urls

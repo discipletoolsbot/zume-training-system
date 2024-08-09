@@ -78,7 +78,20 @@ class Zume_Training_404 extends Zume_Magic_Page
                 <li><a href="<?php esc_url( zume_dashboard_url() ) ?>"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a></li>
             </ul>
 
-            <launch-course></launch-course>
+            <launch-course
+                translations="<?php echo esc_attr( json_encode( [
+                    'launch_course' => __( 'Launch Course', 'zume' ),
+                    'ten_session_course' => __( '10 Session Course', 'zume' ),
+                    'twenty_session_course' => __( '20 Session Course', 'zume' ),
+                    'three_day_intensive_course' => __( '3 Day Intensive Course', 'zume' ),
+                ] ) ) ?>"
+                urls="<?php echo esc_attr( json_encode( [
+                    'launch_ten_session_course' => zume_10_session_url(),
+                    'launch_twenty_session_course' => zume_20_session_url(),
+                    'launch_intensive_session_course' => zume_intensive_session_url(),
+                ] ) ) ?>"
+                position="top"
+            ></launch-course>
         </div>
 
         <?php

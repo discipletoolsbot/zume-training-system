@@ -338,6 +338,19 @@ switch ( $request_action ) {
 
             function getPasswordStrength() {
                 const val = password.value;
+
+                if (typeof zxcvbn !== 'function') {
+                    if (val.length >= 8) {
+                        return {
+                            score: 3,
+                        }
+                    } else {
+                        return {
+                            score: 0,
+                        }
+                    }
+                }
+
                 const result = zxcvbn(val);
 
                 return result
@@ -540,7 +553,20 @@ switch ( $request_action ) {
                                             })
 
                                             function getPasswordStrength() {
-                                                const val = password.value;
+                                               const val = password.value;
+
+                                                if (typeof zxcvbn !== 'function') {
+                                                    if (val.length >= 8) {
+                                                        return {
+                                                            score: 3,
+                                                        }
+                                                    } else {
+                                                        return {
+                                                            score: 0,
+                                                        }
+                                                    }
+                                                }
+
                                                 const result = zxcvbn(val);
 
                                                 return result

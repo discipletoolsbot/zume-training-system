@@ -22,12 +22,13 @@ export class ShareLinks extends LitElement {
         this.copyFeedback = ''
     }
 
-    share() {
-       navigator
+    share(event) {
+      event.stopImmediatePropagation()
+      navigator
         .share({
           title: this.title,
           url: this.url,
-          text: title,
+          text: this.title,
         })
         .then(() => {
           this.shareFeedback = this.t.share_feedback

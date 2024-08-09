@@ -40,7 +40,9 @@ class Zume_Activites_Coaching_Two extends Zume_Activites
         }
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return [];
+        return [
+            'jquery',
+        ];
     }
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return [];

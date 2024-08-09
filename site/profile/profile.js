@@ -75,7 +75,6 @@ function addressCallback(data) {
     addressResults = document.querySelectorAll('.address-result')
     addressResults.forEach((result) => {
         result.addEventListener('click', function(e) {
-            console.log('click')
             /* Escape placeName */
             const id = e.target.id
             const placeName = e.target.dataset.placeName

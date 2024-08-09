@@ -57,8 +57,11 @@ class Zume_System_CTA_API
 
     public function user( $params )
     {
-        if ( ! isset( $params['user_id'], $params['language'] ) ) {
-            return new WP_Error( 'no_user_id', 'Missing parames user_id or language', array( 'status' => 400 ) );
+        if ( ! isset( $params['user_id'] ) ) {
+            return new WP_Error( 'no_user_id', 'Missing params user_id', array( 'status' => 400 ) );
+        }
+        if ( ! isset( $params['language'] ) ) {
+            return new WP_Error( 'no_language', 'Missing params language', array( 'status' => 400 ) );
         }
 
         return self::_get_ctas( $params['user_id'] );

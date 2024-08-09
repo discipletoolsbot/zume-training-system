@@ -28,7 +28,7 @@ export class WizardModuleManager {
     #updateWizard( type ) {
         const wizard = this.#getWizard(type)
 
-        if ( Object.keys(wizard).length === 0 ) {
+        if ( typeof wizard === 'object' && Object.keys(wizard).length === 0 ) {
             return
         }
 

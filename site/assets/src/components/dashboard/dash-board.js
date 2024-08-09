@@ -80,7 +80,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.data = {}
         this.menuOffset = 0
         this.userProfile = jsObject.profile
-        this.userState = jsObject.user_stage.state ?? {}
+        this.userState = jsObject?.user_stage?.state ?? {}
         this.trainingGroups = jsObject.training_groups
         this.wizardType = ''
         this.celebrationModalContent = {
@@ -313,6 +313,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     static getCompletedStatus(routeName, userState) {
         if (
             routeName === RouteNames.setProfile &&
+            userState &&
             userState.set_profile_location &&
             userState.set_profile_name
         ) {
