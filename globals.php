@@ -6440,7 +6440,6 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                     $data_item['hash'] = hash( 'sha256', maybe_serialize( $data_item ) . time() );
                     $added_log[] = self::insert( $data_item, true, false );
                 }
-
             }
 
             /**

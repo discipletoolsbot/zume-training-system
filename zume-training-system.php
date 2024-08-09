@@ -110,6 +110,7 @@ class Zume_Training {
 
         require_once( 'appearance/loader.php' );
         require_once( 'site/loader.php' );
+        require_once( 'maps/loader.php' );
 
         require_once( 'languages/translator-app/loader.php' );
     }
