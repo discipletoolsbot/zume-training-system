@@ -520,7 +520,7 @@ export class DashTrainings extends DashPage {
                         </div>
                     </div>
                 </div>
-                <div class="list__tertiary zume-collapse" ?data-open=${this.openDetailStates[id]}>
+                <div class="list__tertiary zume-collapse" ?data-expand=${this.openDetailStates[id]}>
                     <ul class="pt-0 ps-2" role="list" data-brand-light>
                         ${
                             trainingItems.map((item) => html`
@@ -729,7 +729,7 @@ export class DashTrainings extends DashPage {
                                             '/chevron.svg'}
                                         />
                                     </button>
-                                    <div class="zume-collapse" ?data-open=${this.groupMembersOpen}>
+                                    <div class="zume-collapse" ?data-expand=${this.groupMembersOpen}>
                                         ${!this.loading && this.groupMembers && this.groupMembers.length > 0
                                             ? html`
                                                 <ol class="ps-1">
@@ -759,7 +759,7 @@ export class DashTrainings extends DashPage {
                                             '/chevron.svg'}
                                         />
                                     </button>
-                                    <div class="zume-collapse" ?data-open=${this.groupDetailsOpen}>
+                                    <div class="zume-collapse" ?data-expand=${this.groupDetailsOpen}>
                                         <div class="stack--2">
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.location}:</span> ${this.training.location_note}</p>
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.time}:</span> ${this.training.time_of_day_note}</p>

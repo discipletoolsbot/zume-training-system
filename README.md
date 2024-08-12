@@ -44,3 +44,4 @@ On looking at the data of which browsers are most used on zume.training in the l
 * Macintosh Intel 10.15+ (Catalina), Safari 13.1+
 * iOS 14+ (Safari 14+)
 * Android 7+
+* Chrome 85+
