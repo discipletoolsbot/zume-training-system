@@ -202,14 +202,14 @@ class Zume_Funnel_Public_Heatmap_Practitioner extends DT_Magic_Url_Base
             case 'a1':
             case 'a0':
             case 'world':
-                $list = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( $action, [ '4','5','6' ] );
+                $list = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( $action, [ '4', '5', '6' ] );
                 return Zume_Funnel_App_Heatmap::endpoint_get_level( $params['grid_id'], $action, $list, $this->global_div, $this->us_div );
             case 'activity_data':
                 $grid_id = sanitize_text_field( wp_unslash( $params['grid_id'] ) );
                 $offset = sanitize_text_field( wp_unslash( $params['offset'] ) );
-                return Zume_Funnel_App_Heatmap::query_activity_data( $grid_id, $offset );
+                return Zume_Funnel_App_Heatmap::get_activity_grid_id( $grid_id, $offset );
             case 'grid_data':
-                $grid_totals = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( null, [ '4','5','6' ] );
+                $grid_totals = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( null, [ '4', '5', '6' ] );
                 return Zume_Funnel_App_Heatmap::_initial_polygon_value_list( $grid_totals, $this->global_div, $this->us_div );
             default:
                 return new WP_Error( __METHOD__, 'Missing valid action', [ 'status' => 400 ] );

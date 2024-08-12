@@ -3033,8 +3033,8 @@ class Zume_Funnel_App_Heatmap {
 
         $list = $wpdb->get_results( $sql, ARRAY_A );
 
-        dt_write_log( __METHOD__ );
-        dt_write_log($list);
+//        dt_write_log( __METHOD__ );
+//        dt_write_log($list);
 
         // phpcs:enable
         if ( empty( $list ) ){
