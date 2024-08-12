@@ -43,5 +43,3 @@ function zume_training_load_scripts( $hook ) {
     wp_register_script( 'vite_bundle_js', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js', array( 'lodash', 'shared-functions' ), filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main-bundle.js' ) );
     wp_enqueue_script( 'vite_bundle_js' );
 }
-
-add_filter( 'script_loader_tag', 'add_type_attribute', 10, 3 );
