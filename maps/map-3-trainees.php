@@ -90,7 +90,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends DT_Magic_Url_Base
                 'post_type' => $this->post_type,
                 'translation' => [
                     'add' => __( 'Zúme', 'zume_funnels' ),
-                    'title' => 'Practitioner',
+                    'title' => 'Trainees',
                 ],
                 'grid_data' => [ 'data' => [], 'highest_value' => 1 ],
                 'custom_marks' => [],
@@ -202,14 +202,14 @@ class Zume_Funnel_Public_Heatmap_Trainees extends DT_Magic_Url_Base
             case 'a1':
             case 'a0':
             case 'world':
-                $list = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( $action, [ '1','2','3' ] );
+                $list = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( $action, [ '3', '4', '5', '6' ] );
                 return Zume_Funnel_App_Heatmap::endpoint_get_level( $params['grid_id'], $action, $list, $this->global_div, $this->us_div );
             case 'activity_data':
                 $grid_id = sanitize_text_field( wp_unslash( $params['grid_id'] ) );
                 $offset = sanitize_text_field( wp_unslash( $params['offset'] ) );
                 return Zume_Funnel_App_Heatmap::query_activity_data( $grid_id, $offset );
             case 'grid_data':
-                $grid_totals = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( null, [ '1','2','3' ] );
+                $grid_totals = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( null, [ '3', '4', '5', '6' ] );
                 return Zume_Funnel_App_Heatmap::_initial_polygon_value_list( $grid_totals, $this->global_div, $this->us_div );
             default:
                 return new WP_Error( __METHOD__, 'Missing valid action', [ 'status' => 400 ] );

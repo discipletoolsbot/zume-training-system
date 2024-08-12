@@ -2881,7 +2881,7 @@ class Zume_Funnel_App_Heatmap {
                        payload,
                        timestamp,
                        'A Zúme partner' as site_name
-                FROM $wpdb->dt_movement_log
+                FROM zume_dt_reports
                 WHERE grid_id IN ($prepared_list)
                 ORDER BY timestamp DESC", ARRAY_A);
         // phpcs:enable
