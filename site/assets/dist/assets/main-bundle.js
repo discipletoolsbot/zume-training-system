@@ -3356,7 +3356,7 @@ ${this.training.zoom_link_note}
             transition: transform 100ms linear;
             width: 30%;
           }
-        `]);customElements.define("calendar-select",Bn);class Tl extends k{static get properties(){return{t:{type:Object},selectedDays:{type:Array},date:{type:String,attribute:!1},datePickerOpen:{type:Boolean,attribute:!1}}}constructor(){super(),this.datePickerOpen=!1,this.openDatePicker=this.openDatePicker.bind(this)}firstUpdated(){jQuery(this.renderRoot).foundation()}connectedCallback(){super.connectedCallback(),this.renderDate=this.renderDate.bind(this)}addDate(){this.date&&this.dispatchEvent(new CustomEvent("day-added",{detail:{date:this.date}}))}removeDate(t){this.dispatchEvent(new CustomEvent("day-removed",{detail:{id:t}}))}renderDate({date:t,id:e},s){return l`
+        `]);customElements.define("calendar-select",Bn);class Tl extends k{static get properties(){return{t:{type:Object},selectedDays:{type:Array},date:{type:String,attribute:!1},datePickerOpen:{type:Boolean,attribute:!1}}}constructor(){super(),this.datePickerOpen=!1,this.toggleDatePicker=this.toggleDatePicker.bind(this)}firstUpdated(){jQuery(this.renderRoot).foundation()}connectedCallback(){super.connectedCallback(),this.renderDate=this.renderDate.bind(this)}addDate(){this.date&&this.dispatchEvent(new CustomEvent("day-added",{detail:{date:this.date}}))}removeDate(t){this.dispatchEvent(new CustomEvent("day-removed",{detail:{id:t}}))}renderDate({date:t,id:e},s){return l`
             <li>
                 <div class="d-flex align-items-center justify-content-between">
                     <span class="mx-0">${g.fromISO(t).toFormat("DDDD")}</span>
@@ -3365,7 +3365,7 @@ ${this.training.zoom_link_note}
                     </button>
                 </div>
             </li>
-        `}sortDays(t,e){return t.date===e.date?0:t.date<e.date?-1:1}openDatePicker(t){t.preventDefault(),this.openDatePicker=!0}setDate(t){const{date:e}=t.detail;this.date=e}clearDate(){this.date=""}render(){return l`
+        `}sortDays(t,e){return t.date===e.date?0:t.date<e.date?-1:1}toggleDatePicker(t){t.preventDefault(),this.datePickerOpen=!this.datePickerOpen}setDate(t){const{date:e}=t.detail;this.date=e}clearDate(){this.date=""}render(){return l`
             <div class="stack">
                 <ol class="stack">
                 ${this.selectedDays.length===0?l`
@@ -3380,16 +3380,22 @@ ${this.training.zoom_link_note}
                     <div class="cluster mx-auto">
                         <button
                             data-toggle="date-picker"
-                            class="icon-btn brand-light f-3"
-                            @click=${this.openDatePicker}
-                        ><span class="icon z-icon-start-date"></span></button>
+                            class="icon-btn brand-light f-3 gap--3"
+                            @click=${this.toggleDatePicker}
+                        >
+                            <span class="icon z-icon-start-date"></span>
+                            <img
+                                class="chevron | svg w-1rem h-1rem ${this.datePickerOpen?"rotate-180":"foobar"}"
+                                src=${jsObject.images_url+"/chevron.svg"}
+                            />
+                        </button>
                         <button class="btn tight" @click=${this.addDate}>
                             ${this.t.add}
                         </button>
                     </div>
                 </div>
                 <div
-                    class="dropdown-pane zume-date-picker ${this.datePickerOpen?"is-open":""}"
+                    class="dropdown-pane zume-date-picker"
                     id="date-picker"
                     data-dropdown
                     data-close-on-click="true"

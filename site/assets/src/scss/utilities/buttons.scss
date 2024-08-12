@@ -315,6 +315,12 @@ button.card-btn {
     line-height: 1;
     padding: spacing(-2);
     border-radius: 100px;
+    border: 2px solid transparent;
+    transition: border-color 100ms linear;
+
+    &:hover, &:active, &:focus {
+        border-color: color('brand-light');
+    }
 }
 
 .icon-btn-group {
