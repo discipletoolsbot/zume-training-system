@@ -16,7 +16,7 @@ export class CalendarList extends LitElement {
         super()
 
         this.datePickerOpen = false
-        this.openDatePicker = this.openDatePicker.bind(this)
+        this.toggleDatePicker = this.toggleDatePicker.bind(this)
     }
 
     firstUpdated() {
@@ -62,9 +62,9 @@ export class CalendarList extends LitElement {
         return 1
     }
 
-    openDatePicker(event) {
+    toggleDatePicker(event) {
         event.preventDefault()
-        this.openDatePicker = true
+        this.datePickerOpen = !this.datePickerOpen
     }
     setDate(event) {
         const { date } = event.detail
@@ -92,16 +92,22 @@ export class CalendarList extends LitElement {
                     <div class="cluster mx-auto">
                         <button
                             data-toggle="date-picker"
-                            class="icon-btn brand-light f-3"
-                            @click=${this.openDatePicker}
-                        ><span class="icon z-icon-start-date"></span></button>
+                            class="icon-btn brand-light f-3 gap--3"
+                            @click=${this.toggleDatePicker}
+                        >
+                            <span class="icon z-icon-start-date"></span>
+                            <img
+                                class="chevron | svg w-1rem h-1rem ${this.datePickerOpen ? 'rotate-180' : 'foobar'}"
+                                src=${jsObject.images_url + '/chevron.svg'}
+                            />
+                        </button>
                         <button class="btn tight" @click=${this.addDate}>
                             ${this.t.add}
                         </button>
                     </div>
                 </div>
                 <div
-                    class="dropdown-pane zume-date-picker ${this.datePickerOpen ? 'is-open' : ''}"
+                    class="dropdown-pane zume-date-picker"
                     id="date-picker"
                     data-dropdown
                     data-close-on-click="true"

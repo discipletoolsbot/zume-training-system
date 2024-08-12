@@ -1,5 +1,7 @@
 import create_config from '@kucrut/vite-for-wp'
 import autoprefixer from 'autoprefixer'
+import { getBabelOutputPlugin } from '@rollup/plugin-babel';
+import path from 'path';
 
 const config = create_config(
     [
@@ -12,7 +14,10 @@ const config = create_config(
                 output: {
                     entryFileNames: `assets/[name]-bundle.js`,
                     chunkFileNames: `assets/[name]-bundle.js`,
-                    assetFileNames: `assets/[name].[ext]`
+                    assetFileNames: `assets/[name].[ext]`,
+/*                     manualChunks: {
+                        lit: 'lit',
+                    } */
                 }
             }
         },
@@ -22,7 +27,12 @@ const config = create_config(
                     autoprefixer({})
                 ]
             }
-        }
+        },
+        plugins: [
+            getBabelOutputPlugin({
+                configFile: path.resolve(__dirname, 'babel.config.js'),
+            }),
+        ]
     }
 )
 

@@ -5,6 +5,7 @@
   "type": "module",
   "browserslist": [
     "iOS > 10",
+    "android > 6",
     "> 1%",
     "not dead"
   ],
@@ -16,12 +17,18 @@
   },
   "dependencies": {
     "@kucrut/vite-for-wp": "^0.5.2",
+    "@rollup/plugin-babel": "^6.0.4",
     "lit": "^2.6.1",
     "lit-element-router": "^2.0.3",
     "luxon": "^3.4.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/runtime": "^7.25.0",
     "autoprefixer": "^10.4.19",
+    "path": "^0.12.7",
     "postcss": "^8.4.38",
     "sass": "^1.62.1",
     "vite": "^4.3.2"
