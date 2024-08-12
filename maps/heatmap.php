@@ -25,9 +25,9 @@ class Zume_Funnel_App_Heatmap {
 
             SELECT
             lg1.grid_id, lg1.population, lg1.country_code
-            FROM $wpdb->dt_location_grid lg1
+            FROM zume_dt_location_grid lg1
             WHERE lg1.level = 0
-			AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM $wpdb->dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
+			AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM zume_dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
  			#'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
             AND lg1.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
             #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -40,9 +40,9 @@ class Zume_Funnel_App_Heatmap {
             --
             SELECT
             lg2.grid_id, lg2.population, lg2.country_code
-            FROM $wpdb->dt_location_grid lg2
+            FROM zume_dt_location_grid lg2
             WHERE lg2.level = 1
-			AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM $wpdb->dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
+			AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM zume_dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
              #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
             AND lg2.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
             #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -54,7 +54,7 @@ class Zume_Funnel_App_Heatmap {
             --
 			SELECT
             lg3.grid_id, lg3.population,  lg3.country_code
-            FROM $wpdb->dt_location_grid lg3
+            FROM zume_dt_location_grid lg3
             WHERE lg3.level = 2
             #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
             AND lg3.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -67,7 +67,7 @@ class Zume_Funnel_App_Heatmap {
             --
             SELECT
             lg4.grid_id, lg4.population,  lg4.country_code
-            FROM $wpdb->dt_location_grid lg4
+            FROM zume_dt_location_grid lg4
             WHERE lg4.level = 1
             #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
             AND lg4.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -81,7 +81,7 @@ class Zume_Funnel_App_Heatmap {
             --
             SELECT
             lg5.grid_id, lg5.population, lg5.country_code
-            FROM $wpdb->dt_location_grid as lg5
+            FROM zume_dt_location_grid as lg5
             WHERE
             lg5.level = 3
             #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
@@ -125,15 +125,15 @@ class Zume_Funnel_App_Heatmap {
                           IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                           IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                     ) as full_name
-            FROM $wpdb->dt_location_grid lg1
-                     LEFT JOIN $wpdb->dt_location_grid as gc ON lg1.admin0_grid_id=gc.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg1.admin1_grid_id=ga1.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg1.admin2_grid_id=ga2.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg1.admin3_grid_id=ga3.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg1.admin4_grid_id=ga4.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg1.admin5_grid_id=ga5.grid_id
+            FROM zume_dt_location_grid lg1
+                     LEFT JOIN zume_dt_location_grid as gc ON lg1.admin0_grid_id=gc.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga1 ON lg1.admin1_grid_id=ga1.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga2 ON lg1.admin2_grid_id=ga2.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga3 ON lg1.admin3_grid_id=ga3.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga4 ON lg1.admin4_grid_id=ga4.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga5 ON lg1.admin5_grid_id=ga5.grid_id
             WHERE lg1.level = 0
-              AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM $wpdb->dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
+              AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM zume_dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
               #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
               AND lg1.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
               #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -154,15 +154,15 @@ class Zume_Funnel_App_Heatmap {
                           IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                           IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                     ) as full_name
-            FROM $wpdb->dt_location_grid lg2
-                     LEFT JOIN $wpdb->dt_location_grid as gc ON lg2.admin0_grid_id=gc.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg2.admin1_grid_id=ga1.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg2.admin2_grid_id=ga2.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg2.admin3_grid_id=ga3.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg2.admin4_grid_id=ga4.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg2.admin5_grid_id=ga5.grid_id
+            FROM zume_dt_location_grid lg2
+                     LEFT JOIN zume_dt_location_grid as gc ON lg2.admin0_grid_id=gc.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga1 ON lg2.admin1_grid_id=ga1.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga2 ON lg2.admin2_grid_id=ga2.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga3 ON lg2.admin3_grid_id=ga3.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga4 ON lg2.admin4_grid_id=ga4.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga5 ON lg2.admin5_grid_id=ga5.grid_id
             WHERE lg2.level = 1
-              AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM $wpdb->dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
+              AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM zume_dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
               #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
               AND lg2.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
               #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -182,13 +182,13 @@ class Zume_Funnel_App_Heatmap {
                           IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                           IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                     ) as full_name
-            FROM $wpdb->dt_location_grid lg3
-                     LEFT JOIN $wpdb->dt_location_grid as gc ON lg3.admin0_grid_id=gc.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg3.admin1_grid_id=ga1.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg3.admin2_grid_id=ga2.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg3.admin3_grid_id=ga3.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg3.admin4_grid_id=ga4.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg3.admin5_grid_id=ga5.grid_id
+            FROM zume_dt_location_grid lg3
+                     LEFT JOIN zume_dt_location_grid as gc ON lg3.admin0_grid_id=gc.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga1 ON lg3.admin1_grid_id=ga1.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga2 ON lg3.admin2_grid_id=ga2.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga3 ON lg3.admin3_grid_id=ga3.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga4 ON lg3.admin4_grid_id=ga4.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga5 ON lg3.admin5_grid_id=ga5.grid_id
             WHERE lg3.level = 2
               #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
               AND lg3.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -208,13 +208,13 @@ class Zume_Funnel_App_Heatmap {
                           IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                           IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                     ) as full_name
-            FROM $wpdb->dt_location_grid lg4
-                     LEFT JOIN $wpdb->dt_location_grid as gc ON lg4.admin0_grid_id=gc.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg4.admin1_grid_id=ga1.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg4.admin2_grid_id=ga2.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg4.admin3_grid_id=ga3.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg4.admin4_grid_id=ga4.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg4.admin5_grid_id=ga5.grid_id
+            FROM zume_dt_location_grid lg4
+                     LEFT JOIN zume_dt_location_grid as gc ON lg4.admin0_grid_id=gc.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga1 ON lg4.admin1_grid_id=ga1.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga2 ON lg4.admin2_grid_id=ga2.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga3 ON lg4.admin3_grid_id=ga3.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga4 ON lg4.admin4_grid_id=ga4.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga5 ON lg4.admin5_grid_id=ga5.grid_id
             WHERE lg4.level = 1
               #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
               AND lg4.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -235,13 +235,13 @@ class Zume_Funnel_App_Heatmap {
                           IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                           IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                     ) as full_name
-            FROM $wpdb->dt_location_grid as lg5
-                     LEFT JOIN $wpdb->dt_location_grid as gc ON lg5.admin0_grid_id=gc.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg5.admin1_grid_id=ga1.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg5.admin2_grid_id=ga2.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg5.admin3_grid_id=ga3.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg5.admin4_grid_id=ga4.grid_id
-                     LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg5.admin5_grid_id=ga5.grid_id
+            FROM zume_dt_location_grid as lg5
+                     LEFT JOIN zume_dt_location_grid as gc ON lg5.admin0_grid_id=gc.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga1 ON lg5.admin1_grid_id=ga1.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga2 ON lg5.admin2_grid_id=ga2.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga3 ON lg5.admin3_grid_id=ga3.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga4 ON lg5.admin4_grid_id=ga4.grid_id
+                     LEFT JOIN zume_dt_location_grid as ga5 ON lg5.admin5_grid_id=ga5.grid_id
             WHERE
                     lg5.level = 3
               #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
@@ -296,15 +296,15 @@ class Zume_Funnel_App_Heatmap {
                               IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                               IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                         ) as full_name
-                FROM $wpdb->dt_location_grid lg1
-                         LEFT JOIN $wpdb->dt_location_grid as gc ON lg1.admin0_grid_id=gc.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg1.admin1_grid_id=ga1.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg1.admin2_grid_id=ga2.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg1.admin3_grid_id=ga3.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg1.admin4_grid_id=ga4.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg1.admin5_grid_id=ga5.grid_id
+                FROM zume_dt_location_grid lg1
+                         LEFT JOIN zume_dt_location_grid as gc ON lg1.admin0_grid_id=gc.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga1 ON lg1.admin1_grid_id=ga1.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga2 ON lg1.admin2_grid_id=ga2.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga3 ON lg1.admin3_grid_id=ga3.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga4 ON lg1.admin4_grid_id=ga4.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga5 ON lg1.admin5_grid_id=ga5.grid_id
                 WHERE lg1.level = 0
-                  AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM $wpdb->dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
+                  AND lg1.grid_id NOT IN ( SELECT lg11.admin0_grid_id FROM zume_dt_location_grid lg11 WHERE lg11.level = 1 AND lg11.admin0_grid_id = lg1.grid_id )
                   #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
                   AND lg1.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
                   #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -325,15 +325,15 @@ class Zume_Funnel_App_Heatmap {
                               IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                               IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                         ) as full_name
-                FROM $wpdb->dt_location_grid lg2
-                         LEFT JOIN $wpdb->dt_location_grid as gc ON lg2.admin0_grid_id=gc.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg2.admin1_grid_id=ga1.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg2.admin2_grid_id=ga2.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg2.admin3_grid_id=ga3.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg2.admin4_grid_id=ga4.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg2.admin5_grid_id=ga5.grid_id
+                FROM zume_dt_location_grid lg2
+                         LEFT JOIN zume_dt_location_grid as gc ON lg2.admin0_grid_id=gc.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga1 ON lg2.admin1_grid_id=ga1.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga2 ON lg2.admin2_grid_id=ga2.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga3 ON lg2.admin3_grid_id=ga3.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga4 ON lg2.admin4_grid_id=ga4.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga5 ON lg2.admin5_grid_id=ga5.grid_id
                 WHERE lg2.level = 1
-                  AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM $wpdb->dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
+                  AND lg2.grid_id NOT IN ( SELECT lg22.admin1_grid_id FROM zume_dt_location_grid lg22 WHERE lg22.level = 2 AND lg22.admin1_grid_id = lg2.grid_id )
                   #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
                   AND lg2.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
                   #'Romania', 'Estonia', 'Bhutan', 'Croatia', 'Solomon Islands', 'Guyana', 'Iceland', 'Vanuatu', 'Cape Verde', 'Samoa', 'Faroe Islands', 'Norway', 'Uruguay', 'Mongolia', 'United Arab Emirates', 'Slovenia', 'Bulgaria', 'Honduras', 'Columbia', 'Namibia', 'Switzerland', 'Western Sahara'
@@ -353,13 +353,13 @@ class Zume_Funnel_App_Heatmap {
                               IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                               IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                         ) as full_name
-                FROM $wpdb->dt_location_grid lg3
-                         LEFT JOIN $wpdb->dt_location_grid as gc ON lg3.admin0_grid_id=gc.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg3.admin1_grid_id=ga1.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg3.admin2_grid_id=ga2.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg3.admin3_grid_id=ga3.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg3.admin4_grid_id=ga4.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg3.admin5_grid_id=ga5.grid_id
+                FROM zume_dt_location_grid lg3
+                         LEFT JOIN zume_dt_location_grid as gc ON lg3.admin0_grid_id=gc.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga1 ON lg3.admin1_grid_id=ga1.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga2 ON lg3.admin2_grid_id=ga2.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga3 ON lg3.admin3_grid_id=ga3.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga4 ON lg3.admin4_grid_id=ga4.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga5 ON lg3.admin5_grid_id=ga5.grid_id
                 WHERE lg3.level = 2
                   #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
                   AND lg3.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -379,13 +379,13 @@ class Zume_Funnel_App_Heatmap {
                               IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                               IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                         ) as full_name
-                FROM $wpdb->dt_location_grid lg4
-                         LEFT JOIN $wpdb->dt_location_grid as gc ON lg4.admin0_grid_id=gc.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg4.admin1_grid_id=ga1.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg4.admin2_grid_id=ga2.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg4.admin3_grid_id=ga3.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg4.admin4_grid_id=ga4.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg4.admin5_grid_id=ga5.grid_id
+                FROM zume_dt_location_grid lg4
+                         LEFT JOIN zume_dt_location_grid as gc ON lg4.admin0_grid_id=gc.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga1 ON lg4.admin1_grid_id=ga1.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga2 ON lg4.admin2_grid_id=ga2.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga3 ON lg4.admin3_grid_id=ga3.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga4 ON lg4.admin4_grid_id=ga4.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga5 ON lg4.admin5_grid_id=ga5.grid_id
                 WHERE lg4.level = 1
                   #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
                   AND lg4.admin0_grid_id NOT IN (100050711,100219347, 100089589,100074576,100259978,100018514)
@@ -406,13 +406,13 @@ class Zume_Funnel_App_Heatmap {
                               IF(LENGTH(ga1.alt_name),ga1.alt_name,NULL),
                               IF(LENGTH(gc.alt_name),gc.alt_name,NULL)
                         ) as full_name
-                FROM $wpdb->dt_location_grid as lg5
-                         LEFT JOIN $wpdb->dt_location_grid as gc ON lg5.admin0_grid_id=gc.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga1 ON lg5.admin1_grid_id=ga1.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga2 ON lg5.admin2_grid_id=ga2.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga3 ON lg5.admin3_grid_id=ga3.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga4 ON lg5.admin4_grid_id=ga4.grid_id
-                         LEFT JOIN $wpdb->dt_location_grid as ga5 ON lg5.admin5_grid_id=ga5.grid_id
+                FROM zume_dt_location_grid as lg5
+                         LEFT JOIN zume_dt_location_grid as gc ON lg5.admin0_grid_id=gc.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga1 ON lg5.admin1_grid_id=ga1.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga2 ON lg5.admin2_grid_id=ga2.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga3 ON lg5.admin3_grid_id=ga3.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga4 ON lg5.admin4_grid_id=ga4.grid_id
+                         LEFT JOIN zume_dt_location_grid as ga5 ON lg5.admin5_grid_id=ga5.grid_id
                 WHERE
                         lg5.level = 3
                   #'China', 'India', 'France', 'Spain', 'Pakistan', 'Bangladesh'
@@ -462,10 +462,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -482,10 +482,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -502,7 +502,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -518,7 +518,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -534,7 +534,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -542,7 +542,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb0
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb0.admin0_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb0.admin0_grid_id=loc.grid_id
                     GROUP BY tb0.admin0_grid_id
                 ", ARRAY_A );
                 break;
@@ -559,10 +559,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -579,10 +579,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -599,7 +599,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -615,7 +615,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -631,7 +631,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -639,7 +639,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb1
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb1.admin1_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb1.admin1_grid_id=loc.grid_id
                     GROUP BY tb1.admin1_grid_id
                 ", ARRAY_A );
                 break;
@@ -656,10 +656,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                 FROM $wpdb->dt_location_grid lg11
+                                 FROM zume_dt_location_grid lg11
                                  WHERE lg11.level = 1
                                AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -676,10 +676,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                 FROM $wpdb->dt_location_grid lg22
+                                 FROM zume_dt_location_grid lg22
                                  WHERE lg22.level = 2
                                AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -696,7 +696,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -712,7 +712,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -728,7 +728,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -736,7 +736,7 @@ class Zume_Funnel_App_Heatmap {
                                  100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                  100054605, 100253456, 100342975, 100074571)
                     ) as tb2
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb2.admin2_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb2.admin2_grid_id=loc.grid_id
                     GROUP BY tb2.admin2_grid_id
                 ", ARRAY_A );
                 break;
@@ -754,10 +754,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -774,10 +774,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -794,7 +794,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -810,7 +810,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -826,7 +826,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -834,7 +834,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb3
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb3.admin3_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb3.admin3_grid_id=loc.grid_id
                     WHERE tb3.admin3_grid_id IS NOT NULL
                     GROUP BY tb3.admin3_grid_id
                 ", ARRAY_A );
@@ -854,10 +854,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -875,10 +875,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -896,7 +896,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -913,7 +913,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -930,7 +930,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -938,7 +938,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tbw
-                    LEFT JOIN $wpdb->dt_location_grid loc ON 1=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON 1=loc.grid_id
                     GROUP BY 'World';
                 ", ARRAY_A );
                 break;
@@ -957,10 +957,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -977,10 +977,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -997,7 +997,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -1013,7 +1013,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -1029,7 +1029,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -1037,7 +1037,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb3
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb3.admin3_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb3.admin3_grid_id=loc.grid_id
                     WHERE tb3.admin3_grid_id IS NOT NULL
                     GROUP BY tb3.admin3_grid_id
 
@@ -1054,10 +1054,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                 FROM $wpdb->dt_location_grid lg11
+                                 FROM zume_dt_location_grid lg11
                                  WHERE lg11.level = 1
                                AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1074,10 +1074,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                 FROM $wpdb->dt_location_grid lg22
+                                 FROM zume_dt_location_grid lg22
                                  WHERE lg22.level = 2
                                AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1094,7 +1094,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -1110,7 +1110,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -1126,7 +1126,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                  ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -1134,7 +1134,7 @@ class Zume_Funnel_App_Heatmap {
                                  100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                  100054605, 100253456, 100342975, 100074571)
                     ) as tb2
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb2.admin2_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb2.admin2_grid_id=loc.grid_id
                     GROUP BY tb2.admin2_grid_id
 
                     UNION ALL
@@ -1150,10 +1150,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1170,10 +1170,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1190,7 +1190,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -1206,7 +1206,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -1222,7 +1222,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -1230,7 +1230,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb1
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb1.admin1_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb1.admin1_grid_id=loc.grid_id
                     GROUP BY tb1.admin1_grid_id
 
                     UNION ALL
@@ -1247,10 +1247,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1267,10 +1267,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1287,7 +1287,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -1303,7 +1303,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -1319,7 +1319,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -1327,7 +1327,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tb0
-                    LEFT JOIN $wpdb->dt_location_grid loc ON tb0.admin0_grid_id=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON tb0.admin0_grid_id=loc.grid_id
                     GROUP BY tb0.admin0_grid_id
 
                     UNION ALL
@@ -1345,10 +1345,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg1.population,
                                  IF(ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg1.population / IF(lg1.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg1
+                             FROM zume_dt_location_grid lg1
                              WHERE lg1.level = 0
                                AND lg1.grid_id NOT IN (SELECT lg11.admin0_grid_id
-                                                       FROM $wpdb->dt_location_grid lg11
+                                                       FROM zume_dt_location_grid lg11
                                                        WHERE lg11.level = 1
                                                          AND lg11.admin0_grid_id = lg1.grid_id)
                                AND lg1.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1366,10 +1366,10 @@ class Zume_Funnel_App_Heatmap {
                                  lg2.population,
                                  IF(ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg2.population / IF(lg2.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg2
+                             FROM zume_dt_location_grid lg2
                              WHERE lg2.level = 1
                                AND lg2.grid_id NOT IN (SELECT lg22.admin1_grid_id
-                                                       FROM $wpdb->dt_location_grid lg22
+                                                       FROM zume_dt_location_grid lg22
                                                        WHERE lg22.level = 2
                                                          AND lg22.admin1_grid_id = lg2.grid_id)
                                AND lg2.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
@@ -1387,7 +1387,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg3.population,
                                  IF(ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg3.population / IF(lg3.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg3
+                             FROM zume_dt_location_grid lg3
                              WHERE lg3.level = 2
                                AND lg3.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg3.admin0_grid_id NOT IN
@@ -1404,7 +1404,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg4.population,
                                  IF(ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg4.population / IF(lg4.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid lg4
+                             FROM zume_dt_location_grid lg4
                              WHERE lg4.level = 1
                                AND lg4.admin0_grid_id NOT IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg4.admin0_grid_id IN
@@ -1421,7 +1421,7 @@ class Zume_Funnel_App_Heatmap {
                                  lg5.population,
                                  IF(ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div )) < 1, 1,
                                     ROUND(lg5.population / IF(lg5.country_code = 'US', $wpdb->us_div, $wpdb->global_div ))) as needed
-                             FROM $wpdb->dt_location_grid as lg5
+                             FROM zume_dt_location_grid as lg5
                              WHERE lg5.level = 3
                                AND lg5.admin0_grid_id IN (100050711, 100219347, 100089589, 100074576, 100259978, 100018514)
                                AND lg5.admin0_grid_id NOT IN
@@ -1429,7 +1429,7 @@ class Zume_Funnel_App_Heatmap {
                                     100379993, 100130389, 100255271, 100363975, 100248845, 100001527, 100342458, 100024289, 100132795,
                                     100054605, 100253456, 100342975, 100074571)
                     ) as tbw
-                    LEFT JOIN $wpdb->dt_location_grid loc ON 1=loc.grid_id
+                    LEFT JOIN zume_dt_location_grid loc ON 1=loc.grid_id
                     GROUP BY 'World';
                 ", ARRAY_A );
         }
@@ -1458,7 +1458,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log ml
-                        JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
                     GROUP BY t0.admin0_grid_id
@@ -1470,7 +1470,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log ml
-                        JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
                     GROUP BY t1.admin1_grid_id
@@ -1482,7 +1482,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log ml
-                        JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
                     GROUP BY t2.admin2_grid_id
@@ -1494,7 +1494,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log ml
-                        JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
                     GROUP BY t3.admin2_grid_id
@@ -1506,7 +1506,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT 'World'
                         FROM $wpdb->dt_movement_log ml
-                        LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id != 0
                     ) as tw
                     GROUP BY 'World'
@@ -1518,7 +1518,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
                     GROUP BY t0.admin0_grid_id
@@ -1527,7 +1527,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
                     GROUP BY t1.admin1_grid_id
@@ -1536,7 +1536,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
                     GROUP BY t2.admin2_grid_id
@@ -1545,7 +1545,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
                     GROUP BY t3.admin3_grid_id
@@ -1554,7 +1554,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t4
                     GROUP BY t4.admin4_grid_id
@@ -1563,7 +1563,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t5
                     GROUP BY t5.admin5_grid_id
@@ -1572,7 +1572,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT 'World'
                         FROM $wpdb->dt_movement_log ml
-                        LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                        LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id != 0
                     ) as tw
                     GROUP BY 'World'
@@ -1584,7 +1584,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
                     GROUP BY t0.admin0_grid_id
@@ -1593,7 +1593,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
                     GROUP BY t1.admin1_grid_id
@@ -1602,7 +1602,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
                     GROUP BY t2.admin2_grid_id
@@ -1611,7 +1611,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
                     GROUP BY t3.admin3_grid_id
@@ -1620,7 +1620,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t4
                     GROUP BY t4.admin4_grid_id
@@ -1629,7 +1629,7 @@ class Zume_Funnel_App_Heatmap {
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                         FROM $wpdb->dt_movement_log as ml
-                        JOIN $wpdb->dt_location_grid as lg ON ml.grid_id=lg.grid_id
+                        JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t5
                     GROUP BY t5.admin5_grid_id
@@ -1665,7 +1665,7 @@ class Zume_Funnel_App_Heatmap {
             FROM (
              SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                 FROM $wpdb->dt_movement_log ml
-                LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t0
             GROUP BY t0.admin0_grid_id
@@ -1674,7 +1674,7 @@ class Zume_Funnel_App_Heatmap {
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                 FROM $wpdb->dt_movement_log ml
-                LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t1
             GROUP BY t1.admin1_grid_id
@@ -1683,7 +1683,7 @@ class Zume_Funnel_App_Heatmap {
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                 FROM $wpdb->dt_movement_log ml
-                LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t2
             GROUP BY t2.admin2_grid_id
@@ -1692,7 +1692,7 @@ class Zume_Funnel_App_Heatmap {
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
                 FROM $wpdb->dt_movement_log ml
-                LEFT JOIN $wpdb->dt_location_grid lg ON lg.grid_id=ml.grid_id
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t3
             GROUP BY t3.admin3_grid_id;
@@ -1720,6 +1720,7 @@ class Zume_Funnel_App_Heatmap {
 
         switch ( $administrative_level ) {
             case 'a0':
+
                 $results = $wpdb->get_results( "
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
@@ -2482,156 +2483,18 @@ class Zume_Funnel_App_Heatmap {
                    lg0.population as a0_population,
                    lgw.population as world_population,
                    lg.country_code
-            FROM $wpdb->dt_location_grid lg
-            LEFT JOIN $wpdb->dt_location_grid lg0 ON lg.admin0_grid_id=lg0.grid_id
-            LEFT JOIN $wpdb->dt_location_grid lg1 ON lg.admin1_grid_id=lg1.grid_id
-            LEFT JOIN $wpdb->dt_location_grid lg2 ON lg.admin2_grid_id=lg2.grid_id
-            LEFT JOIN $wpdb->dt_location_grid lg3 ON lg.admin3_grid_id=lg3.grid_id
-            LEFT JOIN $wpdb->dt_location_grid lgw ON 1=lgw.grid_id
+            FROM zume_dt_location_grid lg
+            LEFT JOIN zume_dt_location_grid lg0 ON lg.admin0_grid_id=lg0.grid_id
+            LEFT JOIN zume_dt_location_grid lg1 ON lg.admin1_grid_id=lg1.grid_id
+            LEFT JOIN zume_dt_location_grid lg2 ON lg.admin2_grid_id=lg2.grid_id
+            LEFT JOIN zume_dt_location_grid lg3 ON lg.admin3_grid_id=lg3.grid_id
+            LEFT JOIN zume_dt_location_grid lgw ON 1=lgw.grid_id
             WHERE lg.grid_id = %s
         ", $grid_id ), ARRAY_A );
 
         return $result;
     }
 
-    /**
-     * Shared heatmap functions
-     */
-    public static function _header(){
-        ?>
-        <link rel="dns-prefetch" href="https://storage.googleapis.com/" >
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/1.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/2.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/3.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/4.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/5.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/6.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/7.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/8.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/9.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/10.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/11.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/12.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/13.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/14.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/15.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/16.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/17.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/18.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/19.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/20.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/21.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/22.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/23.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/24.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/25.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/26.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/27.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/28.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/29.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/30.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/31.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/32.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/33.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/34.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/35.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/36.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/37.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/38.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/39.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/40.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/41.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/42.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/43.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/44.geojson">
-        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/45.geojson">
-        <style>
-            #initialize-screen {
-                background-image: url("<?php echo esc_url( plugin_dir_url( __FILE__ ) ) ?>/images/initialize-background.jpg");
-                background-size:cover;
-            }
-        </style>
-        <?php
-        wp_head();
-    }
-
-    /**
-     * Grid list build initial map list of elements and drives sidebar
-     * @return array
-     */
-    public static function _initial_polygon_value_list( $grid_totals, $global_div, $us_div ){
-        $flat_grid = self::query_saturation_list();
-
-        $data = [];
-        $highest_value = 1;
-        foreach ( $flat_grid as $i => $v ){
-            $data[$i] = [
-                'grid_id' => $i,
-                'population' => number_format_i18n( $v['population'] ),
-                'needed' => 1,
-                'reported' => 0,
-                'percent' => 0,
-            ];
-
-            $population_division = self::_get_population_division( $v['country_code'], $global_div, $us_div );
-
-            $needed = round( $v['population'] / $population_division );
-            if ( $needed < 1 ){
-                $needed = 1;
-            }
-
-            if ( isset( $grid_totals[$v['grid_id']] ) && ! empty( $grid_totals[$v['grid_id']] ) ){
-                $reported = $grid_totals[$v['grid_id']];
-
-                if ( ! empty( $reported ) && ! empty( $needed ) ){
-                    $data[$v['grid_id']]['needed'] = $needed;
-
-                    $data[$v['grid_id']]['reported'] = $reported;
-                    $percent = ceil( $reported / $needed * 100 );
-                    if ( 100 < $percent ) {
-                        $percent = 100;
-                    } else {
-                        $percent = number_format_i18n( $percent, 2 );
-                    }
-
-                    $data[$v['grid_id']]['percent'] = $percent;
-                }
-            }
-            else {
-                $data[$v['grid_id']]['percent'] = 0;
-                $data[$v['grid_id']]['reported'] = 0;
-                $data[$v['grid_id']]['needed'] = $needed;
-            }
-
-            if ( $highest_value < $data[$v['grid_id']]['reported'] ){
-                $highest_value = $data[$v['grid_id']]['reported'];
-            }
-        }
-
-        return [
-            'highest_value' => (int) $highest_value,
-            'data' => $data,
-        ];
-    }
-
-    public static function _wp_enqueue_scripts(){
-        wp_enqueue_script( 'lodash' );
-        wp_enqueue_script( 'jquery-ui' );
-        wp_enqueue_script( 'jquery-touch-punch' );
-
-        wp_enqueue_script( 'heatmap-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'heatmap.js', [
-            'jquery',
-            'mapbox-cookie',
-            'jquery-cookie',
-        ], filemtime( plugin_dir_path( __FILE__ ) .'heatmap.js' ), true );
-
-        wp_enqueue_style( 'heatmap-css', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'heatmap.css', [], filemtime( plugin_dir_path( __FILE__ ) .'heatmap.css' ) );
-
-        wp_enqueue_script( 'jquery-cookie', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'js.cookie.min.js', [ 'jquery' ],
-        filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'js.cookie.min.js' ), true );
-
-        wp_enqueue_script( 'mapbox-cookie', trailingslashit( get_stylesheet_directory_uri() ) . 'dt-mapping/geocode-api/mapbox-cookie.js', [ 'jquery', 'jquery-cookie' ], '3.0.0' );
-    }
 
     public static function get_self( $grid_id, $global_div, $us_div ) {
         global $wpdb;
@@ -2647,9 +2510,9 @@ class Zume_Funnel_App_Heatmap {
               g.population,
               IF(ROUND(g.population / IF(g.country_code = 'US', %d, %d)) < 1, 1,
                  ROUND(g.population / IF(g.country_code = 'US', %d, %d))) as needed,
-              (SELECT COUNT(prs.grid_id) FROM $wpdb->dt_location_grid as prs WHERE prs.parent_id = g.parent_id ) as peers
-            FROM $wpdb->dt_location_grid as g
-            LEFT JOIN $wpdb->dt_location_grid as gn ON g.parent_id=gn.grid_id
+              (SELECT COUNT(prs.grid_id) FROM zume_dt_location_grid as prs WHERE prs.parent_id = g.parent_id ) as peers
+            FROM zume_dt_location_grid as g
+            LEFT JOIN zume_dt_location_grid as gn ON g.parent_id=gn.grid_id
             WHERE g.grid_id = %s
         ", $us_div, $global_div, $us_div, $global_div, $grid_id ), ARRAY_A );
 
@@ -2827,37 +2690,318 @@ class Zume_Funnel_App_Heatmap {
         return $data;
     }
 
-    /**
-     * Function limits counts to no higher than the location need. This keeps from inflating the counts up the levels.
-     * @param $flat_grid
-     * @param $list
-     * @return array
-     */
-    public static function _limit_counts( $flat_grid, $list ) {
-        $flat_grid_limited = [];
-        foreach ( $flat_grid as $value ) {
-            $flat_grid_limited[$value['grid_id']] = $value;
 
-            if ( isset( $list[$value['grid_id']] ) && ! empty( $list[$value['grid_id']] ) ) {
-                if ( $list[$value['grid_id']] <= $value['needed'] ) {
-                    $flat_grid_limited[$value['grid_id']]['reported'] = $list[$value['grid_id']];
-                } else {
-                    $flat_grid_limited[$value['grid_id']]['reported'] = $value['needed'];
-                }
+    public static function get_activity_list( $filters, $limit = false ) {
+        global $zume_languages_by_code;
+        $languages = [];
+        $utc_time = new DateTime( 'now', new DateTimeZone( $filters['timezone'] ) );
+        $timezone_offset = $utc_time->format( 'Z' );
+
+        $training_items = zume_training_items();
+        $records = 0;
+
+        $activity_list = self::query_activity_list( $filters );
+
+        foreach ( $activity_list as $record ) {
+
+            // time string
+            $time_string = self::_create_time_string( $record['timestamp'], $timezone_offset );
+
+            // language
+            $language_name = self::_create_in_language_string( $record, $zume_languages_by_code );
+
+            // location string
+//            $location = self::_create_location_precision( $record['lng'], $record['lat'], $record['label'] );
+            $location_name = $record['label'];
+
+            // note and type data
+            $note = self::_create_note_data( $record, $language_name, $location_name, $training_items );
+            if ( ! $note ) {
+                continue;
             }
+
+            $prepared_array = array(
+                'note' => $note['note'],
+                'time' => $time_string,
+                'type' => $note['type'],
+                'language' => $record['language_code'],
+                'country' => $record['country_code'],
+            );
+
+            // COUNTERS FOR TOTALS
+            // count types
+            if ( isset( $note['type'] ) && ! empty( $note['type'] ) )
+            {
+                if ( ! isset( $types[$note['type']] ) ) {
+                    $types[$note['type']] = [
+                        'code' => $note['type'],
+                        'name' => ucwords( $note['type'] ),
+                        'count' => 0,
+                    ];
+                }
+                $types[$note['type']]['count']++;
+            }
+            // count country
+            if ( isset( $record['country_code'] ) && !empty( $record['country_code'] ) && ! isset( $countries[$record['country_name']] ) ) {
+                $countries[$record['country_name']] = [
+                    'code' => $record['country_code'],
+                    'name' => $record['country_name'],
+                    'count' => 0,
+                ];
+            }
+            if ( isset( $record['country_code'] ) ) {
+                $countries[$record['country_name']]['count']++;
+            }
+
+            // count language
+            $language_code = $record['language_code'];
+            if ( ! isset( $zume_languages_by_code[$language_code] ) ) {
+                continue;
+            }
+            $language = $zume_languages_by_code[$language_code];
+            $language_name = $language['name'];
+            if ( isset( $language['name'] )
+                && isset( $language_code )
+                && ! isset( $languages[$language_name] )
+            ) {
+                $languages[$language_name] = [
+                    'code' => $language_code,
+                    'name' => $language_name,
+                    'count' => 0,
+                ];
+            }
+            if ( isset( $language_name ) ) {
+                $languages[$language_name]['count']++;
+            }
+
+            // APPLY FILTER
+            // filter out non selected country
+            // no filter set
+            if ( 'none' === $filters['country'] && 'none' === $filters['language'] && 'none' === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // country set
+            else if ( $prepared_array['country'] === $filters['country'] && 'none' === $filters['language'] && 'none' === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // language set
+            else if ( 'none' === $filters['country'] && $prepared_array['language'] === $filters['language'] && 'none' === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // type set
+            else if ( 'none' === $filters['country'] && 'none' === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // language & type set
+            else if ( 'none' === $filters['country'] && $prepared_array['language'] === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // country & type set
+            else if ( $prepared_array['country'] === $filters['country'] && 'none' === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // country & language set
+            else if ( $prepared_array['country'] === $filters['country'] && $prepared_array['language'] === $filters['language'] && 'none' === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+            // country & language & type set
+            else if ( $prepared_array['country'] === $filters['country'] && $prepared_array['language'] === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
+                $list[] = $prepared_array;
+            }
+
+            $records++;
+
+        } // end foreach loop
+
+        if ( empty( $list ) ) {
+            return [
+                'list' => [],
+                'count' => 0,
+            ];
         }
-        return $flat_grid_limited;
+
+        ksort( $countries );
+        ksort( $languages );
+
+        $c = array_chunk( $list, 250 );
+        return [
+            'list' => $c[0] ?? $list,
+            'count' => count( $list ),
+            'countries' => $countries,
+            'countries_count' => count( $countries ),
+            'languages' => $languages,
+            'languages_count' => count( $languages ),
+            'types' => $types,
+            'total' => $records,
+        ];
     }
 
-    public static function _get_population_division( $country_code, $global_div, $us_div ){
-        $population_division = $global_div;
-        if ( $country_code === 'US' ){
-            $population_division = $us_div;
+    public static function get_activity_grid_id( $grid_id, $timezone_offset ) {
+        global $zume_languages_by_code;
+        $list = [];
+
+        $training_items = zume_training_items();
+
+        $activity_list = self::query_activity_grid_id( $grid_id );
+        // @phpcs:enable
+
+        foreach ( $activity_list as $record ) {
+
+            // time string
+            $time_string = self::_create_time_string( $record['timestamp'], $timezone_offset, true );
+
+            // language
+            $language_name = self::_create_in_language_string( $record, $zume_languages_by_code );
+
+            // location string
+//            $location = self::_create_location_precision( $record['lng'], $record['lat'], $record['label'] );
+            $location_name = $record['label'];
+
+            // note and type data
+            $note = self::_create_note_data( $record, $language_name, $location_name, $training_items );
+            if ( ! $note ) {
+                continue;
+            }
+
+            $prepared_array = array(
+                'note' => $note['note'],
+                'time' => $time_string,
+                'type' => $note['type'],
+                'language' => $record['language_code'],
+                'country' => $record['country_code'],
+            );
+
+            $list[] = $prepared_array;
+
+        } // end foreach loop
+
+        if ( empty( $list ) ) {
+            return [
+                'list' => [],
+                'count' => 0,
+            ];
         }
-        return $population_division;
+
+        return [
+            'list' => $list,
+            'count' => count( $list ),
+        ];
+    }
+
+    public static function get_activity_geojson() {
+        global $zume_languages_by_code;
+        $list = self::query_activity_geojson();
+        if ( empty( $list ) ) {
+            $list = [];
+        }
+
+        $training_items = zume_training_items();
+        $countries = [];
+        $languages = [];
+        $types = [];
+        $records = 0;
+
+        $features = [];
+        foreach ( $list as $record ) {
+            $note = self::_create_note_data( $record, '', '', $training_items );
+            if ( ! $note ) {
+                continue;
+            }
+
+            // count country
+            if ( isset( $record['country_code'] ) && !empty( $record['country_code'] ) && ! isset( $countries[$record['country_name']] ) ) {
+                $countries[$record['country_name']] = [
+                    'code' => $record['country_code'],
+                    'name' => $record['country_name'],
+                    'count' => 0,
+                ];
+            }
+            if ( isset( $record['country_code'] ) ) {
+                $countries[$record['country_name']]['count']++;
+            }
+
+            // count language
+            $language_code = $record['language_code'];
+            if ( ! isset( $zume_languages_by_code[$language_code] ) ) {
+                continue;
+            }
+            $language = $zume_languages_by_code[$language_code];
+            $language_name = $language['name'];
+            if ( isset( $language['name'] )
+                && isset( $language_code )
+                && ! isset( $languages[$language_name] )
+            ) {
+                $languages[$language_name] = [
+                    'code' => $language_code,
+                    'name' => $language_name,
+                    'count' => 0,
+                ];
+            }
+            if ( isset( $language_name ) ) {
+                $languages[$language_name]['count']++;
+            }
+
+            // count types
+            if ( isset( $note['type'] ) && ! empty( $note['type'] ) )
+            {
+                if ( ! isset( $types[$note['type']] ) ) {
+                    $types[$note['type']] = [
+                        'code' => $note['type'],
+                        'name' => ucwords( $note['type'] ),
+                        'count' => 0,
+                    ];
+                }
+                $types[$note['type']]['count']++;
+            }
+
+            // reduce lng to 1.1 km
+            $lng = round( $record['lng'], 2 );
+            $lat = round( $record['lat'], 2 );
+
+            $features[] = array(
+                'type' => 'Feature',
+                'properties' => [
+                    'type' => $note['type'],
+                    'language' => $record['language_code'],
+                    'country' => $record['country_code'],
+                ],
+                'geometry' => array(
+                    'type' => 'Point',
+                    'coordinates' => array(
+                        $lng,
+                        $lat,
+                        1,
+                    ),
+                ),
+            );
+
+            $records++;
+
+        } // end foreach loop
+
+        ksort( $countries );
+        ksort( $languages );
+
+        $new_data = array(
+            'type' => 'FeatureCollection',
+            'features' => $features,
+            'countries' => $countries,
+            'countries_count' => count( $countries ),
+            'languages' => $languages,
+            'languages_count' => count( $languages ),
+            'types' => $types,
+            'total' => $records,
+        );
+
+        return $new_data;
     }
 
     public static function query_activity_data( $grid_id, $offset ) {
+        dt_write_log( __METHOD__ . 'Needs updated. Deprecated function.' );
+        return self::query_activity_grid_id( $grid_id, $offset );
+    }
+
+    public static function query_activity_grid_id( $grid_id ) {
         global $wpdb;
         $ids = [];
         $ids[] = $grid_id;
@@ -2869,47 +3013,32 @@ class Zume_Funnel_App_Heatmap {
         }
         $prepared_list = dt_array_to_sql( $ids );
         // phpcs:disable
-        $list = $wpdb->get_results("
-                SELECT
-                       id,
-                       action,
-                       category,
-                       lng,
-                       lat,
-                       label,
-                       grid_id,
-                       payload,
-                       timestamp,
-                       'A Zúme partner' as site_name
-                FROM zume_dt_reports
-                WHERE grid_id IN ($prepared_list)
-                ORDER BY timestamp DESC", ARRAY_A);
+        $sql = "
+                SELECT *
+                FROM (
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                FROM zume_dt_reports r
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
+                LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                WHERE r.type != 'system' AND r.grid_id IN ($prepared_list)
+                UNION ALL
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                FROM zume_dt_reports_anonymous r
+                LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
+                LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                WHERE r.type != 'system' AND r.grid_id IN ($prepared_list)
+                ) as tb
+                ORDER BY tb.timestamp DESC
+        ";
+
+        $list = $wpdb->get_results( $sql, ARRAY_A );
+
+        dt_write_log( __METHOD__ );
+        dt_write_log($list);
+
         // phpcs:enable
         if ( empty( $list ) ){
             return [];
-        }
-
-        foreach ( $list as $index => $item ){
-            $list[$index]['payload'] = maybe_unserialize( $item['payload'] );
-            $list[$index]['formatted_time'] = gmdate( 'M, d Y, g:i a', $item['timestamp'] + $offset );
-        }
-
-        if ( function_exists( 'zume_log_actions' ) ) {
-            $list = zume_log_actions( $list );
-        }
-        if ( function_exists( 'dt_network_dashboard_translate_log_generations' ) ) {
-            $list = dt_network_dashboard_translate_log_generations( $list );
-        }
-        if ( function_exists( 'dt_network_dashboard_translate_log_new_posts' ) ) {
-            $list = dt_network_dashboard_translate_log_new_posts( $list );
-        }
-
-        $list = apply_filters( 'dt_network_dashboard_build_message', $list );
-
-        foreach ( $list as $index => $item ){
-            if ( ! isset( $item['message'] ) ) {
-                $list[$index]['message'] = 'Non-public movement event reported.';
-            }
         }
 
         return $list;
@@ -2992,114 +3121,7 @@ class Zume_Funnel_App_Heatmap {
         return $results;
     }
 
-    public static function create_time_string( $timestamp, $timezone_offset ): string {
-        $adjusted_time = $timestamp + $timezone_offset;
-        if ( $timestamp > strtotime( '-1 hour' ) ) {
-            $time_string = self::_time_elapsed_string( '@'.$timestamp );
-        }
-        else if ( $timestamp > strtotime( 'today+00:00' ) + $timezone_offset ) {
-            $time_string = date( 'g:i a', $adjusted_time ); // @phpcs:ignore
-        }
-        else {
-            $time_string = date( 'D g:i a', $adjusted_time ); // @phpcs:ignore
-        }
-        return $time_string;
-    }
-
-    public static function create_in_language_string( $data, $languages ): string {
-        $language = $languages[$data['language_code']] ?? $languages['en'];
-        return $language['name'];
-    }
-
-    public static function create_location_precision( $lng, $lat, $label ): array {
-        $location = [
-            'lng' => $lng,
-            'lat' => $lat,
-            'label' => $label,
-        ];
-
-        // @todo remove the precision reduction
-
-//        $restricted = self::_persecuted_countries();
-//
-//        if ( ! isset( $payload['country'] ) ) { // if country is not set, reduce precision to 111km
-//            $location['lng'] = round( $location['lng'], 0 );
-//            $location['lat'] = round( $location['lat'], 0 );
-//            $location['label'] = '';
-//        }
-//        else if ( in_array( $payload['country'], $restricted ) ) { // if persecuted country, reduce precision to 111km
-//            $location['label'] = ' (' . $payload['country'] . ')';
-//            $location['lng'] = round( $location['lng'], 0 );
-//            $location['lat'] = round( $location['lat'], 0 );
-//        } else { // if non-persecuted country, reduce precision to 11km
-//            $location['label'] = ' (' . $location['label'] . ')';
-//            $location['lng'] = round( $location['lng'], 3 );
-//            $location['lat'] = round( $location['lat'], 3 );
-//        }
-
-        return $location;
-    }
-
-    public static function _persecuted_countries(): array {
-
-        // Top 50 most persecuted countries
-        // @link https://www.opendoorsusa.org/christian-persecution/world-watch-list/
-
-        return [
-            'North Korea',
-            'Afghanistan',
-            'Somolia',
-            'Libya',
-            'Pakistan',
-            'Eritrea',
-            'Sudan',
-            'Yemen',
-            'Iran',
-            'India',
-            'Syria',
-            'Nigeria',
-            'Saudi Arabia',
-            'Maldives',
-            'Iraq',
-            'Egypt',
-            'Algeria',
-            'Uzbekistan',
-            'Myanmar',
-            'Laos',
-            'Vietnam',
-            'Turkmenistan',
-            'China',
-            'Mauritania',
-            'Central African Republic',
-            'Morocco',
-            'Qatar',
-            'Burkina Faso',
-            'Mali',
-            'Sri Lanka',
-            'Tajikistan',
-            'Nepal',
-            'Jordan',
-            'Tunisia',
-            'Kazakhstan',
-            'Turkey',
-            'Brunei',
-            'Bangladesh',
-            'Ethiopia',
-            'Malaysia',
-            'Colombia',
-            'Oman',
-            'Kuwait',
-            'Kenya',
-            'Bhutan',
-            'Russian Federation',
-            'United Arab Emirates',
-            'Cameroon',
-            'Indonesia',
-            'Niger',
-        ];
-    }
-
-    public static function create_note_data( $record, $language_name, $location_name, $training_items ) {
+    public static function _create_note_data( $record, $language_name, $location_name, $training_items ) {
         // studying - anonymous viewing of pieces content
         // training - registration to training completion
         // coaching - request for coach and all mawl and coaching effort
@@ -3473,6 +3495,153 @@ class Zume_Funnel_App_Heatmap {
         return $data;
     }
 
+
+    /**
+     * Function limits counts to no higher than the location need. This keeps from inflating the counts up the levels.
+     * @param $flat_grid
+     * @param $list
+     * @return array
+     */
+    public static function _limit_counts( $flat_grid, $list ) {
+        $flat_grid_limited = [];
+        foreach ( $flat_grid as $value ) {
+            $flat_grid_limited[$value['grid_id']] = $value;
+
+            if ( isset( $list[$value['grid_id']] ) && ! empty( $list[$value['grid_id']] ) ) {
+                if ( $list[$value['grid_id']] <= $value['needed'] ) {
+                    $flat_grid_limited[$value['grid_id']]['reported'] = $list[$value['grid_id']];
+                } else {
+                    $flat_grid_limited[$value['grid_id']]['reported'] = $value['needed'];
+                }
+            }
+        }
+        return $flat_grid_limited;
+    }
+
+    public static function _get_population_division( $country_code, $global_div, $us_div ){
+        $population_division = $global_div;
+        if ( $country_code === 'US' ){
+            $population_division = $us_div;
+        }
+        return $population_division;
+    }
+
+
+
+    public static function _create_time_string( $timestamp, $timezone_offset, $year = false ): string {
+        $adjusted_time = $timestamp + $timezone_offset;
+        if ( $timestamp > strtotime( '-1 hour' ) ) {
+            $time_string = self::_time_elapsed_string( '@'.$timestamp );
+            return $time_string;
+        }
+
+        if ( $timestamp > strtotime( 'today+00:00' ) + $timezone_offset ) {
+            $time_string = date( 'g:i a', $adjusted_time ); // @phpcs:ignore
+            return $time_string;
+        }
+        if ( $year ) {
+            $time_string = date( 'D g:i a, Y', $adjusted_time ); // @phpcs:ignore
+        } else {
+            $time_string = date( 'D g:i a', $adjusted_time ); // @phpcs:ignore
+        }
+        return $time_string;
+    }
+
+    public static function _create_in_language_string( $data, $languages ): string {
+        $language = $languages[$data['language_code']] ?? $languages['en'];
+        return $language['name'];
+    }
+
+    public static function _create_location_precision( $lng, $lat, $label ): array {
+        $location = [
+            'lng' => $lng,
+            'lat' => $lat,
+            'label' => $label,
+        ];
+
+        // @todo remove the precision reduction
+
+//        $restricted = self::_persecuted_countries();
+//
+//        if ( ! isset( $payload['country'] ) ) { // if country is not set, reduce precision to 111km
+//            $location['lng'] = round( $location['lng'], 0 );
+//            $location['lat'] = round( $location['lat'], 0 );
+//            $location['label'] = '';
+//        }
+//        else if ( in_array( $payload['country'], $restricted ) ) { // if persecuted country, reduce precision to 111km
+//            $location['label'] = ' (' . $payload['country'] . ')';
+//            $location['lng'] = round( $location['lng'], 0 );
+//            $location['lat'] = round( $location['lat'], 0 );
+//        } else { // if non-persecuted country, reduce precision to 11km
+//            $location['label'] = ' (' . $location['label'] . ')';
+//            $location['lng'] = round( $location['lng'], 3 );
+//            $location['lat'] = round( $location['lat'], 3 );
+//        }
+
+        return $location;
+    }
+
+    public static function _persecuted_countries(): array {
+
+        // Top 50 most persecuted countries
+        // @link https://www.opendoorsusa.org/christian-persecution/world-watch-list/
+
+        return [
+            'North Korea',
+            'Afghanistan',
+            'Somolia',
+            'Libya',
+            'Pakistan',
+            'Eritrea',
+            'Sudan',
+            'Yemen',
+            'Iran',
+            'India',
+            'Syria',
+            'Nigeria',
+            'Saudi Arabia',
+            'Maldives',
+            'Iraq',
+            'Egypt',
+            'Algeria',
+            'Uzbekistan',
+            'Myanmar',
+            'Laos',
+            'Vietnam',
+            'Turkmenistan',
+            'China',
+            'Mauritania',
+            'Central African Republic',
+            'Morocco',
+            'Qatar',
+            'Burkina Faso',
+            'Mali',
+            'Sri Lanka',
+            'Tajikistan',
+            'Nepal',
+            'Jordan',
+            'Tunisia',
+            'Kazakhstan',
+            'Turkey',
+            'Brunei',
+            'Bangladesh',
+            'Ethiopia',
+            'Malaysia',
+            'Colombia',
+            'Oman',
+            'Kuwait',
+            'Kenya',
+            'Bhutan',
+            'Russian Federation',
+            'United Arab Emirates',
+            'Cameroon',
+            'Indonesia',
+            'Niger',
+        ];
+    }
+
+
+
     public static function _time_elapsed_string( $datetime, $full = false ) {
         $now = new DateTime();
         $ago = new DateTime( $datetime );
@@ -3503,266 +3672,142 @@ class Zume_Funnel_App_Heatmap {
         return $string ? implode( ', ', $string ) . ' ago' : 'just now';
     }
 
-    public static function get_activity_list( $filters, $limit = false ) {
-        global $zume_languages_by_code;
-        $languages = [];
-        $utc_time = new DateTime( 'now', new DateTimeZone( $filters['timezone'] ) );
-        $timezone_offset = $utc_time->format( 'Z' );
+    /**
+     * Grid list build initial map list of elements and drives sidebar
+     * @return array
+     */
+    public static function _initial_polygon_value_list( $grid_totals, $global_div, $us_div ){
+        $flat_grid = self::query_saturation_list();
 
-        $training_items = zume_training_items();
-        $records = 0;
-
-        $activity_list = self::query_activity_list( $filters );
-        // @phpcs:enable
-
-        foreach ( $activity_list as $record ) {
-
-            // time string
-            $time_string = self::create_time_string( $record['timestamp'], $timezone_offset );
-
-            // language
-            $language_name = self::create_in_language_string( $record, $zume_languages_by_code );
-
-            // location string
-//            $location = self::create_location_precision( $record['lng'], $record['lat'], $record['label'] );
-            $location_name = $record['label'];
-
-            // note and type data
-            $note = self::create_note_data( $record, $language_name, $location_name, $training_items );
-            if ( ! $note ) {
-                continue;
-            }
-
-            $prepared_array = array(
-                'note' => $note['note'],
-                'time' => $time_string,
-                'type' => $note['type'],
-                'language' => $record['language_code'],
-                'country' => $record['country_code'],
-            );
-
-            // COUNTERS FOR TOTALS
-            // count types
-            if ( isset( $note['type'] ) && ! empty( $note['type'] ) )
-            {
-                if ( ! isset( $types[$note['type']] ) ) {
-                    $types[$note['type']] = [
-                        'code' => $note['type'],
-                        'name' => ucwords( $note['type'] ),
-                        'count' => 0,
-                    ];
-                }
-                $types[$note['type']]['count']++;
-            }
-            // count country
-            if ( isset( $record['country_code'] ) && !empty( $record['country_code'] ) && ! isset( $countries[$record['country_name']] ) ) {
-                $countries[$record['country_name']] = [
-                    'code' => $record['country_code'],
-                    'name' => $record['country_name'],
-                    'count' => 0,
-                ];
-            }
-            if ( isset( $record['country_code'] ) ) {
-                $countries[$record['country_name']]['count']++;
-            }
-
-            // count language
-            $language_code = $record['language_code'];
-            if ( ! isset( $zume_languages_by_code[$language_code] ) ) {
-                continue;
-            }
-            $language = $zume_languages_by_code[$language_code];
-            $language_name = $language['name'];
-            if ( isset( $language['name'] )
-                && isset( $language_code )
-                && ! isset( $languages[$language_name] )
-            ) {
-                $languages[$language_name] = [
-                    'code' => $language_code,
-                    'name' => $language_name,
-                    'count' => 0,
-                ];
-            }
-            if ( isset( $language_name ) ) {
-                $languages[$language_name]['count']++;
-            }
-
-            // APPLY FILTER
-            // filter out non selected country
-            // no filter set
-            if ( 'none' === $filters['country'] && 'none' === $filters['language'] && 'none' === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // country set
-            else if ( $prepared_array['country'] === $filters['country'] && 'none' === $filters['language'] && 'none' === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // language set
-            else if ( 'none' === $filters['country'] && $prepared_array['language'] === $filters['language'] && 'none' === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // type set
-            else if ( 'none' === $filters['country'] && 'none' === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // language & type set
-            else if ( 'none' === $filters['country'] && $prepared_array['language'] === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // country & type set
-            else if ( $prepared_array['country'] === $filters['country'] && 'none' === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // country & language set
-            else if ( $prepared_array['country'] === $filters['country'] && $prepared_array['language'] === $filters['language'] && 'none' === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-            // country & language & type set
-            else if ( $prepared_array['country'] === $filters['country'] && $prepared_array['language'] === $filters['language'] && $prepared_array['type'] === $filters['type'] ) {
-                $list[] = $prepared_array;
-            }
-
-            $records++;
-
-        } // end foreach loop
-
-        if ( empty( $list ) ) {
-            return [
-                'list' => [],
-                'count' => 0,
+        $data = [];
+        $highest_value = 1;
+        foreach ( $flat_grid as $i => $v ){
+            $data[$i] = [
+                'grid_id' => $i,
+                'population' => number_format_i18n( $v['population'] ),
+                'needed' => 1,
+                'reported' => 0,
+                'percent' => 0,
             ];
+
+            $population_division = self::_get_population_division( $v['country_code'], $global_div, $us_div );
+
+            $needed = round( $v['population'] / $population_division );
+            if ( $needed < 1 ){
+                $needed = 1;
+            }
+
+            if ( isset( $grid_totals[$v['grid_id']] ) && ! empty( $grid_totals[$v['grid_id']] ) ){
+                $reported = $grid_totals[$v['grid_id']];
+
+                if ( ! empty( $reported ) && ! empty( $needed ) ){
+                    $data[$v['grid_id']]['needed'] = $needed;
+
+                    $data[$v['grid_id']]['reported'] = $reported;
+                    $percent = ceil( $reported / $needed * 100 );
+                    if ( 100 < $percent ) {
+                        $percent = 100;
+                    } else {
+                        $percent = number_format_i18n( $percent, 2 );
+                    }
+
+                    $data[$v['grid_id']]['percent'] = $percent;
+                }
+            }
+            else {
+                $data[$v['grid_id']]['percent'] = 0;
+                $data[$v['grid_id']]['reported'] = 0;
+                $data[$v['grid_id']]['needed'] = $needed;
+            }
+
+            if ( $highest_value < $data[$v['grid_id']]['reported'] ){
+                $highest_value = $data[$v['grid_id']]['reported'];
+            }
         }
 
-        ksort( $countries );
-        ksort( $languages );
-
-        $c = array_chunk( $list, 250 );
         return [
-            'list' => $c[0] ?? $list,
-            'count' => count( $list ),
-            'countries' => $countries,
-            'countries_count' => count( $countries ),
-            'languages' => $languages,
-            'languages_count' => count( $languages ),
-            'types' => $types,
-            'total' => $records,
+            'highest_value' => (int) $highest_value,
+            'data' => $data,
         ];
     }
 
-    public static function get_activity_geojson() {
-        global $zume_languages_by_code;
-        $list = self::query_activity_geojson();
-        if ( empty( $list ) ) {
-            $list = [];
-        }
+    public static function _wp_enqueue_scripts(){
+        wp_enqueue_script( 'lodash' );
+        wp_enqueue_script( 'jquery-ui' );
+        wp_enqueue_script( 'jquery-touch-punch' );
 
-        $training_items = zume_training_items();
-        $countries = [];
-        $languages = [];
-        $types = [];
-        $records = 0;
+        wp_enqueue_script( 'heatmap-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'heatmap.js', [
+            'jquery',
+            'mapbox-cookie',
+            'jquery-cookie',
+        ], filemtime( plugin_dir_path( __FILE__ ) .'heatmap.js' ), true );
 
-        $features = [];
-        foreach ( $list as $record ) {
-            $note = self::create_note_data( $record, '', '', $training_items );
-            if ( ! $note ) {
-                continue;
-            }
+        wp_enqueue_style( 'heatmap-css', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'heatmap.css', [], filemtime( plugin_dir_path( __FILE__ ) .'heatmap.css' ) );
 
-            // count country
-            if ( isset( $record['country_code'] ) && !empty( $record['country_code'] ) && ! isset( $countries[$record['country_name']] ) ) {
-                $countries[$record['country_name']] = [
-                    'code' => $record['country_code'],
-                    'name' => $record['country_name'],
-                    'count' => 0,
-                ];
-            }
-            if ( isset( $record['country_code'] ) ) {
-                $countries[$record['country_name']]['count']++;
-            }
+        wp_enqueue_script( 'jquery-cookie', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'js.cookie.min.js', [ 'jquery' ],
+        filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'js.cookie.min.js' ), true );
 
-            // count language
-            $language_code = $record['language_code'];
-            if ( ! isset( $zume_languages_by_code[$language_code] ) ) {
-                continue;
-            }
-            $language = $zume_languages_by_code[$language_code];
-            $language_name = $language['name'];
-            if ( isset( $language['name'] )
-                && isset( $language_code )
-                && ! isset( $languages[$language_name] )
-            ) {
-                $languages[$language_name] = [
-                    'code' => $language_code,
-                    'name' => $language_name,
-                    'count' => 0,
-                ];
-            }
-            if ( isset( $language_name ) ) {
-                $languages[$language_name]['count']++;
-            }
-
-            // count types
-            if ( isset( $note['type'] ) && ! empty( $note['type'] ) )
-            {
-                if ( ! isset( $types[$note['type']] ) ) {
-                    $types[$note['type']] = [
-                        'code' => $note['type'],
-                        'name' => ucwords( $note['type'] ),
-                        'count' => 0,
-                    ];
-                }
-                $types[$note['type']]['count']++;
-            }
-
-            // reduce lng to 1.1 km
-            $lng = round( $record['lng'], 2 );
-            $lat = round( $record['lat'], 2 );
-
-            $features[] = array(
-                'type' => 'Feature',
-                'properties' => [
-                    'type' => $note['type'],
-                    'language' => $record['language_code'],
-                    'country' => $record['country_code'],
-                ],
-                'geometry' => array(
-                    'type' => 'Point',
-                    'coordinates' => array(
-                        $lng,
-                        $lat,
-                        1,
-                    ),
-                ),
-            );
-
-            $records++;
-
-        } // end foreach loop
-
-        ksort( $countries );
-        ksort( $languages );
-
-        $new_data = array(
-            'type' => 'FeatureCollection',
-            'features' => $features,
-            'countries' => $countries,
-            'countries_count' => count( $countries ),
-            'languages' => $languages,
-            'languages_count' => count( $languages ),
-            'types' => $types,
-            'total' => $records,
-        );
-
-        return $new_data;
+        wp_enqueue_script( 'mapbox-cookie', trailingslashit( get_stylesheet_directory_uri() ) . 'dt-mapping/geocode-api/mapbox-cookie.js', [ 'jquery', 'jquery-cookie' ], '3.0.0' );
     }
 
-    public static function noteworthy_record( $record, $training_items ) {
-        $noteworthy_subtypes = self::create_note_data( $record, '', '', $training_items );
-        if ( $noteworthy_subtypes ) {
-            return true;
-        }
-
-        return false;
+    /**
+     * Shared heatmap functions
+     */
+    public static function _header(){
+        ?>
+        <link rel="dns-prefetch" href="https://storage.googleapis.com/" >
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/1.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/2.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/3.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/4.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/5.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/6.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/7.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/8.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/9.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/10.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/11.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/12.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/13.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/14.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/15.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/16.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/17.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/18.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/19.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/20.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/21.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/22.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/23.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/24.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/25.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/26.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/27.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/28.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/29.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/30.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/31.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/32.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/33.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/34.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/35.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/36.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/37.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/38.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/39.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/40.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/41.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/42.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/43.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/44.geojson">
+        <link rel="prefetch" href="https://storage.googleapis.com/location-grid-mirror-v2/tiles/world/saturation/45.geojson">
+        <style>
+            #initialize-screen {
+                background-image: url("<?php echo esc_url( plugin_dir_url( __FILE__ ) ) ?>/images/initialize-background.jpg");
+                background-size:cover;
+            }
+        </style>
+        <?php
+        wp_head();
     }
 }

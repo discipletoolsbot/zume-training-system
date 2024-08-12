@@ -1281,10 +1281,10 @@ ${this.training.zoom_link_note}
                                 <button class="btn" data-map="hundred-hour-map" @click=${this.openModal}>
                                     ${jsObject.translations.hundred_hour_map}
                                 </button>
-                                <!-- <button class="btn" data-map="vision-map" @click=${this.openModal}>
+                                <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
-                                <button class="btn" data-map="church-map" @click=${this.openModal}>
+                                <!-- <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
                                 </button> -->
                             </div>
@@ -1329,7 +1329,6 @@ ${this.training.zoom_link_note}
                 >
                 </iframe>
             </div>
-            <!--
             <div
                 class="reveal full"
                 data-reveal
@@ -1346,6 +1345,7 @@ ${this.training.zoom_link_note}
                 >
                 </iframe>
             </div>
+            <!--
             <div
                 class="reveal full"
                 data-reveal

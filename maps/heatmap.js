@@ -176,9 +176,9 @@ function load_map() {
   jQuery('#initialize-screen').hide()
 
   // set title
-  $('#panel-type-title').html(jsObject.translation.title)
+  jQuery('#panel-type-title').html(jsObject.translation.title)
 
-  $('.loading-spinner').removeClass('active')
+  jQuery('.loading-spinner').removeClass('active')
 
   let center = [-98, 38.88]
   let maxzoom = jsObject.zoom
@@ -345,25 +345,25 @@ function load_map() {
                 window.previous_hover,
                 {hover: true}
               );
-              $('#title').html(e.features[0].properties.full_name)
-              $('#meter').val(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
-              $('#saturation-goal').html(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
-              $('#population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
+              jQuery('#title').html(e.features[0].properties.full_name)
+              jQuery('#meter').val(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
+              jQuery('#saturation-goal').html(jsObject.grid_data.data[e.features[0].properties.grid_id].percent)
+              jQuery('#population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
 
               //report
-              $('#report-modal-title').val(e.features[0].properties.full_name)
-              $('#report-grid-id').val(e.features[0].properties.grid_id)
+              jQuery('#report-modal-title').val(e.features[0].properties.full_name)
+              jQuery('#report-grid-id').val(e.features[0].properties.grid_id)
 
               let reported = jsObject.grid_data.data[e.features[0].properties.grid_id].reported
-              $('#reported').html(reported)
+              jQuery('#reported').html(reported)
 
               let needed = jsObject.grid_data.data[e.features[0].properties.grid_id].needed
-              $('#needed').html(needed)
+              jQuery('#needed').html(needed)
             }
           });
           map.on('click', i.toString()+'fills', function (e) {
-            $('#modal_tile').html(e.features[0].properties.full_name)
-            $('#modal_population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
+            jQuery('#modal_tile').html(e.features[0].properties.full_name)
+            jQuery('#modal_population').html(jsObject.grid_data.data[e.features[0].properties.grid_id].population)
 
             jQuery('.temp-spinner').html(`<span class="loading-spinner active"></span>`)
 
@@ -392,23 +392,25 @@ function load_map() {
                 load_level_content( data, 'world' )
               })
 
-            let ac = $('#activity-content')
-            ac.html('<span class="loading-spinner active"></span>')
+            let ac = jQuery('#activity-content .loading-spinner')
+            ac.addClass('active')
+            let lc = jQuery('#activity-content-list')
+            lc.empty()
             window.get_activity_data(e.features[0].properties.grid_id)
               .done(function(data){
-                ac.empty()
+                ac.removeClass('active')
                 if ( data.length < 1 ) {
-                  ac.append(`<div>No Movement Activity</div>`)
+                  lc.append(`<li>No Movement Activity</li>`)
                 } else {
-                  $.each(data, function(i,v){
-                    if ( typeof v.message !== 'undefined' ){
-                      ac.append(`<div><div style="float:left;width:180px;"><strong>${v.formatted_time}</strong></div> <span>${v.message}</span></div>`)
+                  jQuery.each(data.list, function(i,v){
+                    if ( typeof v.note !== 'undefined' ){
+                      lc.append(`<li><strong>(${v.time})</strong> ${v.note} </li>`)
                     }
                   })
                 }
               })
 
-            $('#offCanvasNestedPush').foundation('toggle', e);
+            jQuery('#offCanvasNestedPush').foundation('toggle', e);
           });
 
         })
@@ -423,11 +425,11 @@ Support Functions
 ***************************/
 
 function show_details_panel(){
-  $('#details-panel').show()
-  $('#training-start-screen').hide()
+  jQuery('#details-panel').show()
+  jQuery('#training-start-screen').hide()
 }
 function hide_details_panel(){
-  $('#details-panel').hide()
+  jQuery('#details-panel').hide()
 }
 
 
