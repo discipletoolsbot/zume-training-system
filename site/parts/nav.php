@@ -17,19 +17,13 @@
                     <?php if ( is_user_logged_in() ) : ?>
 
                         <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Dashboard', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_resources_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
 
                     <?php else : ?>
 
                         <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'About', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_training_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Training', 'zume' ) ?></a>
-
-                    <?php endif; ?>
-
-                    <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
-
-                    <?php if ( zume_feature_flag( 'pieces_pages', zume_current_language() ) ) : ?>
-
-                        <a role="listitem" href="<?php echo esc_url( zume_share_url() ) ?>" class="btn dark nav__button d-flex align-items-center"><?php echo esc_html__( 'Share', 'zume' ) ?></a>
+                        <a role="listitem" href="<?php echo esc_url( zume_resources_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Resources', 'zume' ) ?></a>
 
                     <?php endif; ?>
 
@@ -37,6 +31,14 @@
 
                         <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'register' ) ) ?>" class="btn outline dark nav__button"><?php echo esc_html__( 'Register', 'zume' ) ?></a>
                         <a role="listitem" href="<?php echo esc_url( zume_getting_started_url( 'login' ) ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Login', 'zume' ) ?></a>
+
+                    <?php endif; ?>
+
+                    | <a role="listitem" href="<?php echo esc_url( zume_checkin_url() ) ?>" class="btn dark nav__button"><?php echo esc_html__( 'Check-in', 'zume' ) ?></a>
+
+                    <?php if ( zume_feature_flag( 'pieces_pages', zume_current_language() ) ) : ?>
+
+                        <a role="listitem" href="<?php echo esc_url( zume_share_url() ) ?>" class="btn dark nav__button d-flex align-items-center"><?php echo esc_html__( 'Share', 'zume' ) ?></a>
 
                     <?php endif; ?>
 
@@ -69,11 +71,13 @@
             <?php if ( is_user_logged_in() ) : ?>
 
                 <a role="listitem" href="<?php echo esc_url( zume_dashboard_url() ) ?>" class="btn dark nav__link"><span class="icon z-icon-dashboard"></span><span><?php echo esc_html__( 'Dashboard', 'zume' ) ?></span></a>
+                <a role="listitem" href="<?php echo esc_url( zume_resources_url() ) ?>" class="btn dark nav__link"><span class="icon z-icon-resources"></span><span><?php echo esc_html__( 'Resources', 'zume' ) ?></span></a>
 
             <?php else : ?>
 
-            <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="link-light nav__link"><span class="icon z-icon-info"></span> <span><?php echo esc_html__( 'About', 'zume' ) ?></span></a>
-            <a role="listitem" href="<?php echo esc_url( zume_training_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-my-training"></div> <span><?php echo esc_html__( 'Training', 'zume' ) ?></span></a>
+                <a role="listitem" href="<?php echo esc_url( zume_about_url() ) ?>" class="link-light nav__link"><span class="icon z-icon-info"></span> <span><?php echo esc_html__( 'About', 'zume' ) ?></span></a>
+                <a role="listitem" href="<?php echo esc_url( zume_training_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-my-training"></div> <span><?php echo esc_html__( 'Training', 'zume' ) ?></span></a>
+                <a role="listitem" href="<?php echo esc_url( zume_resources_url() ) ?>" class="link-light nav__link"><div class="icon z-icon-resources"></div> <span><?php echo esc_html__( 'Resources', 'zume' ) ?></span></a>
 
             <?php endif; ?>
 
