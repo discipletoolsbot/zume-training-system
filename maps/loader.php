@@ -6,7 +6,7 @@
 //require_once( '' );
 
 $skip_folders = [
-//    'folder_name',
+    'html',
 ];
 
 // Load all other files

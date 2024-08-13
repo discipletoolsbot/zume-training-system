@@ -74,7 +74,7 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
 
     public function body(){
         DT_Mapbox_API::geocoder_scripts();
-        include( 'heatmap.html' );
+        include( 'html/heatmap-html.php' );
     }
 
     public function footer_javascript(){

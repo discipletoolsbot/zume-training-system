@@ -113,6 +113,10 @@ class Zume_Training_Resources extends Zume_Magic_Page
 
         <?php include( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'parts/download-slides.php' ) ?>
 
+        <br></br>
+        <br></br>
+        <br></br>
+
 
 
 
