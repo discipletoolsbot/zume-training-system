@@ -29,16 +29,12 @@ export class DashMaps extends DashPage {
 
     joinCommunity() {
         this.dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: Wizards.joinCommunity } }))
-
-        /* makeRequest('POST', 'log', { type: 'system', subtype: 'join_community' }, 'zume_system/v1/' ).done( ( data ) => {
-            const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
-            this.dispatchEvent(stateEvent)
-        }) */
     }
 
     openModal(event) {
-        this.loading = true
         let map = event.target.dataset.map
+
+        const currentUrl = this.scriptUrl
 
         /* use this to load the iframes by src into one iframe tag in one modal */
         /* This works but the heatmap sites don't load the heatmap properly */
@@ -55,8 +51,11 @@ export class DashMaps extends DashPage {
             map = 'map'
         }
 
-        const iframe = document.querySelector('#map-iframe')
-        iframe.onload = this.handleLoad
+        if (currentUrl !== this.scriptUrl) {
+            this.loading = true
+            const iframe = document.querySelector('#map-iframe')
+            iframe.onload = this.handleLoad
+        }
 
         /* Having 3 iframes in 3 modals should work, but all 3 have trouble loading for some reason i haven't pushed into yet */
 
@@ -117,13 +116,25 @@ export class DashMaps extends DashPage {
             </div>
             <div
                 class="reveal full"
+                style="padding: 0 !important; overflow: hidden;"
                 data-reveal
                 id="map-modal"
             >
-                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
+                <button
+                    class="exit-btn tight | absolute top center mt-0 z-2"
+                    aria-label=${jsObject.translations.close}
+                    type="button"
+                    data-close
+                >
+                    <span>${jsObject.translations.close}</span><span class="icon z-icon-close"></span>
                 </button>
-                ${this.loading ? html`<span class="loading-spinner active"></span>` : ''}
+                ${this.loading ? html`
+                    <div class="cover-page">
+                        <div class="center">
+                            <span class="loading-spinner active"></span>
+                        </div>
+                    </div>
+                ` : ''}
                 <iframe
                     id="map-iframe"
                     class="${this.loading ? 'opacity-0' : ''}"
@@ -134,7 +145,7 @@ export class DashMaps extends DashPage {
                 >
                 </iframe>
             </div>
-            <div
+<!--             <div
                 class="reveal full"
                 data-reveal
                 id="hundred-hour-map-modal"
@@ -165,7 +176,7 @@ export class DashMaps extends DashPage {
                     height="100%"
                 >
                 </iframe>
-            </div>
+            </div> -->
             <!--
             <div
                 class="reveal full"

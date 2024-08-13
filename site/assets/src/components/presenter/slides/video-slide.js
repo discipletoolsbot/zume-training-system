@@ -58,7 +58,7 @@ export class VideoSlide extends CourseSlide {
 
                 <button
                     type="button"
-                    class="btn icon-btn absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m--1 bypass-nav-click d-flex gap--2"
+                    class="btn tight dark align-items-center absolute top ${this.dir === 'rtl' ? 'left' : 'right'} z-1 m--1 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
                     <span class="icon z-icon-info"></span>
@@ -79,9 +79,11 @@ export class VideoSlide extends CourseSlide {
                 data-off-canvas
                 data-transition="overlap"
             >
-                <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
-                </button>
+                <div class="ms-auto absolute ${this.dir === 'rtl' ? 'left' : 'right'} top">
+                    <button class="close-btn | my--2 mx-1 f-0" aria-label=${jsObject.translations.close} type="button" data-close>
+                        <span class="icon z-icon-close"></span>
+                    </button>
+                </div>
 
                 <iframe
                     src=${this.scriptUrl || ''}

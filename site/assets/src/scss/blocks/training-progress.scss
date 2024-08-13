@@ -7,12 +7,12 @@
     overflow: hidden;
 
     & > button {
-        padding: spacing(-3) spacing(0);
         background-color: color('gray-300');
         display: flex;
         align-items: center;
         line-height: 1;
         transition: background-color .1s linear;
+        min-width: 0;
 
         &:hover,
         &:active,
@@ -22,9 +22,11 @@
     }
 
     & .icon {
+        margin: spacing(-3) spacing(0);
         color: color('gray-100');
         font-size: font-size('1');
         transition: color .1s linear;
+        min-width: 0;
     }
 
     .active[data-subtype*="heard"] {

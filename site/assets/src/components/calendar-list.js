@@ -93,6 +93,7 @@ export class CalendarList extends LitElement {
                         <button
                             data-toggle="date-picker"
                             class="icon-btn brand-light f-3 gap--3"
+                            aria-pressed=${this.datePickerOpen ? 'true' : 'false'}
                             @click=${this.toggleDatePicker}
                         >
                             <span class="icon z-icon-start-date"></span>

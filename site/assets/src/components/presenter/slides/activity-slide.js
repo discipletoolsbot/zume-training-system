@@ -29,6 +29,12 @@ export class ActivitySlide extends CourseSlide {
         jQuery(menu).foundation('close')
     }
 
+    closeButtonStyles() {
+        if (['t8_c'].includes(this.id)) {
+            return ''
+        }
+        return 'invert'
+    }
 
     render() {
         return html`
@@ -63,9 +69,11 @@ export class ActivitySlide extends CourseSlide {
                     data-off-canvas
                     data-transition="overlap"
                 >
-                    <button class="close-btn | ms-auto absolute ${this.dir === 'rtl' ? 'left' : 'right'} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
-                        <span class="icon z-icon-close"></span>
-                    </button>
+                    <div class="ms-auto absolute ${this.dir === 'rtl' ? 'left' : 'right'} top">
+                        <button class="close-btn | my--2 mx-1 f-0 ${this.closeButtonStyles()}" aria-label=${jsObject.translations.close} type="button" data-close>
+                            <span class="icon z-icon-close"></span>
+                        </button>
+                    </div>
 
                     <iframe
                         src=${this.slide['right'][0] || ''}

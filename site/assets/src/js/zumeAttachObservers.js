@@ -1,12 +1,18 @@
 import { DataWatcher } from "./DataWatcher"
 
-export const zumeAttachObservers = () => {
+const dataWatchers = {}
 
-    const collapseElements = document.querySelectorAll('.zume-collapse')
+export const zumeAttachObservers = (element, id) => {
 
-    collapseElements.forEach((collapse) => {
-        new DataWatcher( collapse, 'expand', onDataChanged )
-    })
+    const collapseElements = element.querySelectorAll('.zume-collapse')
+
+    if (!Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
+        dataWatchers[id] = []
+        collapseElements.forEach((collapse) => {
+            const expandWatcher = new DataWatcher( collapse, 'expand', onDataChanged )
+            dataWatchers[id].push(expandWatcher)
+        })
+    }
     function onDataChanged(openState, oldOpenState) {
         if (openState === oldOpenState) {
             return
@@ -21,9 +27,12 @@ export const zumeAttachObservers = () => {
 
         if (open) {
             node.style.display = 'block'
-            node.style.height = height + 'px'
             node.style.transitionDuration = transitionDuration + 'ms'
             node.dataset.state = 'opening'
+
+            setTimeout(() => {
+                node.style.height = node.scrollHeight + 'px'
+            }, 10)
 
             setTimeout(() => {
                 node.style.height = 'auto'
