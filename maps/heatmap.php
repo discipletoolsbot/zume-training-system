@@ -1457,7 +1457,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
@@ -1469,7 +1469,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t1.admin1_grid_id as grid_id, count(t1.admin1_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
@@ -1481,7 +1481,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t2.admin2_grid_id as grid_id, count(t2.admin2_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
@@ -1493,7 +1493,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t3.admin3_grid_id as grid_id, count(t3.admin3_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
@@ -1505,7 +1505,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT 1 as grid_id, count('World') as count
                     FROM (
                         SELECT 'World'
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id != 0
                     ) as tw
@@ -1517,7 +1517,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
@@ -1526,7 +1526,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t1.admin1_grid_id as grid_id, count(t1.admin1_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
@@ -1535,7 +1535,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t2.admin2_grid_id as grid_id, count(t2.admin2_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
@@ -1544,7 +1544,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t3.admin3_grid_id as grid_id, count(t3.admin3_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
@@ -1553,7 +1553,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t4.admin4_grid_id as grid_id, count(t4.admin4_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t4
@@ -1562,7 +1562,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t5.admin5_grid_id as grid_id, count(t5.admin5_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t5
@@ -1571,7 +1571,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT 1 as grid_id, count('World') as count
                     FROM (
                         SELECT 'World'
-                        FROM $wpdb->dt_movement_log ml
+                        FROM zume_dt_reports ml
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                         WHERE ml.grid_id != 0
                     ) as tw
@@ -1583,7 +1583,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t0
@@ -1592,7 +1592,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t1.admin1_grid_id as grid_id, count(t1.admin1_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t1
@@ -1601,7 +1601,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t2.admin2_grid_id as grid_id, count(t2.admin2_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t2
@@ -1610,7 +1610,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t3.admin3_grid_id as grid_id, count(t3.admin3_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t3
@@ -1619,7 +1619,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t4.admin4_grid_id as grid_id, count(t4.admin4_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t4
@@ -1628,7 +1628,7 @@ class Zume_Funnel_App_Heatmap {
                     SELECT t5.admin5_grid_id as grid_id, count(t5.admin5_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                        FROM $wpdb->dt_movement_log as ml
+                        FROM zume_dt_reports as ml
                         JOIN zume_dt_location_grid as lg ON ml.grid_id=lg.grid_id
                         WHERE ml.grid_id > 0
                     ) as t5
@@ -1664,7 +1664,7 @@ class Zume_Funnel_App_Heatmap {
         SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
             FROM (
              SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                FROM $wpdb->dt_movement_log ml
+                FROM zume_dt_reports ml
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t0
@@ -1673,7 +1673,7 @@ class Zume_Funnel_App_Heatmap {
             SELECT t1.admin1_grid_id as grid_id, count(t1.admin1_grid_id) as count
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                FROM $wpdb->dt_movement_log ml
+                FROM zume_dt_reports ml
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t1
@@ -1682,7 +1682,7 @@ class Zume_Funnel_App_Heatmap {
             SELECT t2.admin2_grid_id as grid_id, count(t2.admin2_grid_id) as count
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                FROM $wpdb->dt_movement_log ml
+                FROM zume_dt_reports ml
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t2
@@ -1691,7 +1691,7 @@ class Zume_Funnel_App_Heatmap {
             SELECT t3.admin3_grid_id as grid_id, count(t3.admin3_grid_id) as count
             FROM (
                 SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
-                FROM $wpdb->dt_movement_log ml
+                FROM zume_dt_reports ml
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=ml.grid_id
                 WHERE ml.grid_id != 0
             ) as t3
@@ -2283,12 +2283,12 @@ class Zume_Funnel_App_Heatmap {
     }
 
     public static function query_church_grid_totals( $administrative_level = null ) {
-            dt_write_log( __METHOD__ );
+        dt_write_log( __METHOD__ );
 //        if ( false !== ( $value = get_transient( __METHOD__ . $administrative_level ) ) ) { // phpcs:ignore
 //            return $value;
 //        }
 
-            global $wpdb;
+        global $wpdb;
 
         switch ( $administrative_level ) {
             case 'a0':
@@ -2711,7 +2711,6 @@ class Zume_Funnel_App_Heatmap {
             $language_name = self::_create_in_language_string( $record, $zume_languages_by_code );
 
             // location string
-//            $location = self::_create_location_precision( $record['lng'], $record['lat'], $record['label'] );
             $location_name = $record['label'];
 
             // note and type data
@@ -2854,7 +2853,6 @@ class Zume_Funnel_App_Heatmap {
             $language_name = self::_create_in_language_string( $record, $zume_languages_by_code );
 
             // location string
-//            $location = self::_create_location_precision( $record['lng'], $record['lat'], $record['label'] );
             $location_name = $record['label'];
 
             // note and type data
@@ -2954,9 +2952,7 @@ class Zume_Funnel_App_Heatmap {
                 $types[$note['type']]['count']++;
             }
 
-            // reduce lng to 1.1 km
-            $lng = round( $record['lng'], 2 );
-            $lat = round( $record['lat'], 2 );
+            $location = self::_create_location_precision( $record['lng'], $record['lat'], $record['label'], $record['country_code'] );
 
             $features[] = array(
                 'type' => 'Feature',
@@ -2968,8 +2964,8 @@ class Zume_Funnel_App_Heatmap {
                 'geometry' => array(
                     'type' => 'Point',
                     'coordinates' => array(
-                        $lng,
-                        $lat,
+                        $location['lng'],
+                        $location['lat'],
                         1,
                     ),
                 ),
@@ -2996,10 +2992,7 @@ class Zume_Funnel_App_Heatmap {
         return $new_data;
     }
 
-    public static function query_activity_data( $grid_id, $offset ) {
-        dt_write_log( __METHOD__ . 'Needs updated. Deprecated function.' );
-        return self::query_activity_grid_id( $grid_id, $offset );
-    }
+
 
     public static function query_activity_grid_id( $grid_id ) {
         global $wpdb;
@@ -3526,8 +3519,6 @@ class Zume_Funnel_App_Heatmap {
         return $population_division;
     }
 
-
-
     public static function _create_time_string( $timestamp, $timezone_offset, $year = false ): string {
         $adjusted_time = $timestamp + $timezone_offset;
         if ( $timestamp > strtotime( '-1 hour' ) ) {
@@ -3540,7 +3531,7 @@ class Zume_Funnel_App_Heatmap {
             return $time_string;
         }
         if ( $year ) {
-            $time_string = date( 'D g:i a, Y', $adjusted_time ); // @phpcs:ignore
+            $time_string = date( 'M d, Y', $adjusted_time ); // @phpcs:ignore
         } else {
             $time_string = date( 'D g:i a', $adjusted_time ); // @phpcs:ignore
         }
@@ -3552,31 +3543,23 @@ class Zume_Funnel_App_Heatmap {
         return $language['name'];
     }
 
-    public static function _create_location_precision( $lng, $lat, $label ): array {
+    public static function _create_location_precision( $lng, $lat, $label, $country_code ) : array {
         $location = [
-            'lng' => $lng,
-            'lat' => $lat,
+            'lng' => (float) $lng,
+            'lat' => (float) $lat,
             'label' => $label,
         ];
 
-        // @todo remove the precision reduction
+        $restricted = self::_persecuted_countries();
 
-//        $restricted = self::_persecuted_countries();
-//
-//        if ( ! isset( $payload['country'] ) ) { // if country is not set, reduce precision to 111km
-//            $location['lng'] = round( $location['lng'], 0 );
-//            $location['lat'] = round( $location['lat'], 0 );
-//            $location['label'] = '';
-//        }
-//        else if ( in_array( $payload['country'], $restricted ) ) { // if persecuted country, reduce precision to 111km
-//            $location['label'] = ' (' . $payload['country'] . ')';
-//            $location['lng'] = round( $location['lng'], 0 );
-//            $location['lat'] = round( $location['lat'], 0 );
-//        } else { // if non-persecuted country, reduce precision to 11km
-//            $location['label'] = ' (' . $location['label'] . ')';
-//            $location['lng'] = round( $location['lng'], 3 );
-//            $location['lat'] = round( $location['lat'], 3 );
-//        }
+        if ( in_array( $country_code, $restricted ) ) { // if persecuted country, reduce precision to 111km
+            $location['lng'] = round( $location['lng'], 1 );
+            $location['lat'] = round( $location['lat'], 1 );
+        } else {
+            // reduce lng to 1.1 km
+            $location['lng'] = round( $location['lng'], 2 );
+            $location['lat'] = round( $location['lat'], 2 );
+        }
 
         return $location;
     }
@@ -3587,56 +3570,55 @@ class Zume_Funnel_App_Heatmap {
         // @link https://www.opendoorsusa.org/christian-persecution/world-watch-list/
 
         return [
-            'North Korea',
-            'Afghanistan',
-            'Somolia',
-            'Libya',
-            'Pakistan',
-            'Eritrea',
-            'Sudan',
-            'Yemen',
-            'Iran',
-            'India',
-            'Syria',
-            'Nigeria',
-            'Saudi Arabia',
-            'Maldives',
-            'Iraq',
-            'Egypt',
-            'Algeria',
-            'Uzbekistan',
-            'Myanmar',
-            'Laos',
-            'Vietnam',
-            'Turkmenistan',
-            'China',
-            'Mauritania',
-            'Central African Republic',
-            'Morocco',
-            'Qatar',
-            'Burkina Faso',
-            'Mali',
-            'Sri Lanka',
-            'Tajikistan',
-            'Nepal',
-            'Jordan',
-            'Tunisia',
-            'Kazakhstan',
-            'Turkey',
-            'Brunei',
-            'Bangladesh',
-            'Ethiopia',
-            'Malaysia',
-            'Colombia',
-            'Oman',
-            'Kuwait',
-            'Kenya',
-            'Bhutan',
-            'Russian Federation',
-            'United Arab Emirates',
-            'Cameroon',
-            'Indonesia',
-            'Niger',
+            'KP', // 'North Korea',
+            'AF', // 'Afghanistan',
+            'SO', // 'Somalia',
+            'LY', // 'Libya',
+            'PK', // 'Pakistan',
+            'ER', // 'Eritrea',
+            'SD', // 'Sudan',
+            'YE', // 'Yemen',
+            'IR', // 'Iran',
+            'IN', // 'India',
+            'SY', // 'Syria',
+            'NG', // 'Nigeria',
+            'SA', // 'Saudi Arabia',
+            'MV', // 'Maldives',
+            'IQ', // 'Iraq',
+            'EG', // 'Egypt',
+            'DZ', // 'Algeria',
+            'UZ', // 'Uzbekistan',
+            'MM', // 'Myanmar',
+            'LA', // 'Laos',
+            'VN', // 'Vietnam',
+            'TM', // 'Turkmenistan',
+            'CN', // 'China',
+            'MR', // 'Mauritania',
+            'CF', // 'Central African Republic',
+            'MA', // 'Morocco',
+            'QA', // 'Qatar',
+            'BF', // 'Burkina Faso',
+            'ML', // 'Mali',
+            'SL', // 'Sri Lanka',
+            'TJ', // 'Tajikistan',
+            'NP', // 'Nepal',
+            'JO', // 'Jordan',
+            'TN', // 'Tunisia',
+            'KZ', // 'Kazakhstan',
+            'TR', // 'Turkey',
+            'BN', // 'Brunei',
+            'BD', // 'Bangladesh',
+            'ET', // 'Ethiopia',
+            'MY', // 'Malaysia',
+            'CO', // 'Colombia',
+            'OM', // 'Oman',
+            'KW', // 'Kuwait',
+            'BT', // 'Bhutan',
+            'RU', // 'Russian Federation',
+            'AE', // 'United Arab Emirates',
+            'CM', // 'Cameroon',
+            'ID', // 'Indonesia',
+            'NE', // 'Niger',
         ];
     }
 

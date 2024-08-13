@@ -200,7 +200,7 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
             case 'activity_data':
                 $grid_id = sanitize_text_field( wp_unslash( $params['grid_id'] ) );
                 $offset = sanitize_text_field( wp_unslash( $params['offset'] ) );
-                return Zume_Funnel_App_Heatmap::query_activity_data( $grid_id, $offset );
+                return Zume_Funnel_App_Heatmap::get_activity_grid_id( $grid_id, $offset );
             case 'grid_data':
                 return $this->_initial_polygon_value_list();
             default:
