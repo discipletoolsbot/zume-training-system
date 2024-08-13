@@ -74,12 +74,12 @@ export class DashTrainings extends DashPage {
         super.firstUpdated()
 
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers()
+        zumeAttachObservers(this.renderRoot, 'dash-trainings')
     }
 
     updated() {
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers()
+        zumeAttachObservers(this.renderRoot, 'dash-trainings')
     }
 
     getTraining() {

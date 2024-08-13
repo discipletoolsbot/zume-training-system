@@ -48,11 +48,12 @@ export class DashProgress extends DashPage {
     firstUpdated() {
         super.firstUpdated()
 
-        zumeAttachObservers()
+        zumeAttachObservers(this.renderRoot, 'dash-progress')
     }
 
     updated() {
         jQuery(this.renderRoot).foundation();
+        zumeAttachObservers(this.renderRoot, 'dash-progress')
     }
 
     openInfoModal() {
@@ -179,56 +180,69 @@ export class DashProgress extends DashPage {
         }
 
         return html`
-            <li class="switcher | switcher-width-30 list__item tight" @click=${() => this.toggleDetails(key)} role="button">
-                <div>
-                    <h2 class="h5 bold m0">${title}</h2>
-                    <div class="zume-collapse" id="details-${key}" ?data-expand=${this.openStates[key]}>
-                        <div class="stack--2 mt--2">
-                            <p class="f--1 gray-700">${description}</p>
-                            <div class="cluster">
-                                <share-links url=${url} title=${title} .t=${jsObject.share_translations}></share-links>
-
-                                ${
-                                    jsObject.has_pieces_pages
-                                    ? html`
-                                        <a class="btn" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${jsObject.translations.view}</a>
-                                    `
-                                    : ''
-                                }
-                            </div>
+            <li class=" list__item tight" role="button" data-no-flex>
+                <div class="switcher | switcher-width-30">
+                    <div>
+                        <h2 class="h5 bold m0">${title}</h2>
+                    </div>
+                    <div class="list__secondary">
+                        <div class="training-progress">
+                            <button
+                                data-subtype=${host[0].subtype}
+                                class=${this.hostProgress.list[host[0].key] ? 'active' : ''}
+                                @click=${(event) => this.toggleHost(host[0], event)}
+                            >
+                                <span class="icon z-icon-heard-concept"></span>
+                            </button>
+                            <button
+                                data-subtype=${host[1].subtype}
+                                class=${this.hostProgress.list[host[1].key] ? 'active' : ''}
+                                @click=${(event) => this.toggleHost(host[1], event, [ host[0] ])}
+                            >
+                                <span class="icon z-icon-obey-concept"></span>
+                            </button>
+                            <button
+                                data-subtype=${host[2].subtype}
+                                class=${this.hostProgress.list[host[2].key] ? 'active' : ''}
+                                @click=${(event) => this.toggleHost(host[2], event, [ host[0], host[1] ])}
+                            >
+                                <span class="icon z-icon-share-concept"></span>
+                            </button>
+                            <button
+                                data-subtype=${host[3].subtype}
+                                class=${this.hostProgress.list[host[3].key] ? 'active' : ''}
+                                @click=${(event) => this.toggleHost(host[3], event, [ host[0], host[1], host[2] ])}
+                            >
+                                <span class="icon z-icon-train-concept"></span>
+                            </button>
                         </div>
+                        <button
+                            class="icon-btn"
+                            aria-label=${jsObject.translations.show_details}
+                            aria-pressed=${this.openStates[key] ? 'true' : 'false'}
+                            @click=${() => this.toggleDetails(key)}
+                        >
+                            <img
+                                class="chevron | svg w-1rem h-1rem ${this.openStates[key] ? 'rotate-180' : ''}"
+                                src=${jsObject.images_url + '/chevron.svg'}
+                            />
+                        </button>
                     </div>
                 </div>
-                <div class="list__secondary grow-0" data-align-start>
-                    <div class="training-progress">
-                        <button
-                            data-subtype=${host[0].subtype}
-                            class=${this.hostProgress.list[host[0].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[0], event)}
-                        >
-                            <span class="icon z-icon-heard-concept"></span>
-                        </button>
-                        <button
-                            data-subtype=${host[1].subtype}
-                            class=${this.hostProgress.list[host[1].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[1], event, [ host[0] ])}
-                        >
-                            <span class="icon z-icon-obey-concept"></span>
-                        </button>
-                        <button
-                            data-subtype=${host[2].subtype}
-                            class=${this.hostProgress.list[host[2].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[2], event, [ host[0], host[1] ])}
-                        >
-                            <span class="icon z-icon-share-concept"></span>
-                        </button>
-                        <button
-                            data-subtype=${host[3].subtype}
-                            class=${this.hostProgress.list[host[3].key] ? 'active' : ''}
-                            @click=${(event) => this.toggleHost(host[3], event, [ host[0], host[1], host[2] ])}
-                        >
-                            <span class="icon z-icon-train-concept"></span>
-                        </button>
+                <div class="list__tertiary zume-collapse" id="details-${key}" ?data-expand=${this.openStates[key]}>
+                    <div class="stack--2 mt--2">
+                        <p class="f--1 gray-700">${description}</p>
+                        <div class="cluster">
+                            <share-links url=${url} title=${title} .t=${jsObject.share_translations}></share-links>
+
+                            ${
+                                jsObject.has_pieces_pages
+                                ? html`
+                                    <a class="btn" href=${url} @click=${(event) => event.stopImmediatePropagation()}>${jsObject.translations.view}</a>
+                                `
+                                : ''
+                            }
+                        </div>
                     </div>
                 </div>
             </li>
