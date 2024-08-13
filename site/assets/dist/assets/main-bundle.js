@@ -2310,7 +2310,7 @@ ${this.training.zoom_link_note}
             <div class="slides-card">
                 <div class="center"></div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("course-slide",N);class al extends N{static get properties(){return{slide:{type:Object},id:{type:String},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="activityOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,super.firstUpdated()}openMenu(){const t=document.querySelector(this.offCanvasSelector);console.log(t,this.offCanvasSelector),jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}render(){return l`
+        `}createRenderRoot(){return this}}customElements.define("course-slide",N);class al extends N{static get properties(){return{slide:{type:Object},id:{type:String},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="activityOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,super.firstUpdated()}openMenu(){const t=document.querySelector(this.offCanvasSelector);console.log(t,this.offCanvasSelector),jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}closeButtonStyles(){return["t8_c"].includes(this.id)?"":"invert"}render(){return l`
             <div class="slides-card activity-slide | position-relative">
                 ${this.renderProgressBar()}
                 <div class="cover-slide">
@@ -2342,9 +2342,11 @@ ${this.training.zoom_link_note}
                     data-off-canvas
                     data-transition="overlap"
                 >
-                    <button class="close-btn | ms-auto absolute ${this.dir==="rtl"?"left":"right"} top my--2 mx-1 f-0 invert" aria-label=${jsObject.translations.close} type="button" data-close>
-                        <span class="icon z-icon-close"></span>
-                    </button>
+                    <div class="ms-auto absolute ${this.dir==="rtl"?"left":"right"} top">
+                        <button class="close-btn | my--2 mx-1 f-0 ${this.closeButtonStyles()}" aria-label=${jsObject.translations.close} type="button" data-close>
+                            <span class="icon z-icon-close"></span>
+                        </button>
+                    </div>
 
                     <iframe
                         src=${this.slide.right[0]||""}
@@ -2602,7 +2604,7 @@ ${this.training.zoom_link_note}
 
                 <button
                     type="button"
-                    class="btn icon-btn absolute top ${this.dir==="rtl"?"left":"right"} z-1 m--1 bypass-nav-click d-flex gap--2"
+                    class="btn tight dark align-items-center absolute top ${this.dir==="rtl"?"left":"right"} z-1 m--1 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
                     <span class="icon z-icon-info"></span>
@@ -2623,9 +2625,11 @@ ${this.training.zoom_link_note}
                 data-off-canvas
                 data-transition="overlap"
             >
-                <button class="close-btn | ms-auto m--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
-                </button>
+                <div class="ms-auto absolute ${this.dir==="rtl"?"left":"right"} top">
+                    <button class="close-btn | my--2 mx-1 f-0" aria-label=${jsObject.translations.close} type="button" data-close>
+                        <span class="icon z-icon-close"></span>
+                    </button>
+                </div>
 
                 <iframe
                     src=${this.scriptUrl||""}
