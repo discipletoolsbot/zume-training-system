@@ -373,3 +373,12 @@ button.card-btn {
         }
     }
 }
+.exit-btn {
+    @include button;
+
+    display: flex;
+    align-items: center;
+    gap: spacing(0);
+    padding-left: spacing(0);
+    padding-right: spacing(0);
+}

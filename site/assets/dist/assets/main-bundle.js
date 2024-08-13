@@ -1252,7 +1252,7 @@ ${this.training.zoom_link_note}
                     ${this.routeName==="getting-started"?"":l`<dash-cta></dash-cta>`}
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("dash-top-level",Ne);class Wo extends Ne{constructor(){super("getting-started")}createRenderRoot(){return this}}customElements.define("dash-getting-started",Wo);class Vo extends pt{static get properties(){return{showTeaser:{type:Boolean},scriptUrl:{type:String,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.showTeaser=!1,this.scriptUrl=""}connectedCallback(){super.connectedCallback(),this.openModal=this.openModal.bind(this),this.handleLoad=this.handleLoad.bind(this)}firstUpdated(){jQuery(this.renderRoot).foundation()}joinCommunity(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.joinCommunity}}))}openModal(t){this.loading=!0;let e=t.target.dataset.map;e==="hundred-hour-map"?this.scriptUrl="https://zume.training/zume_app/last100_hours/":e==="vision-map"?this.scriptUrl="https://zume.training/zume_app/heatmap_trainees/":e==="church-map"?this.scriptUrl="https://zume.training/zume_app/heatmap_churches/":this.scriptUrl="",e="map";const s=document.querySelector("#map-iframe");s.onload=this.handleLoad;const n=document.querySelector(`#${e}-modal`);jQuery(n).foundation("open")}handleLoad(){this.loading=!1}render(){return l`
+        `}createRenderRoot(){return this}}customElements.define("dash-top-level",Ne);class Wo extends Ne{constructor(){super("getting-started")}createRenderRoot(){return this}}customElements.define("dash-getting-started",Wo);class Vo extends pt{static get properties(){return{showTeaser:{type:Boolean},scriptUrl:{type:String,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.showTeaser=!1,this.scriptUrl=""}connectedCallback(){super.connectedCallback(),this.openModal=this.openModal.bind(this),this.handleLoad=this.handleLoad.bind(this)}firstUpdated(){jQuery(this.renderRoot).foundation()}joinCommunity(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.joinCommunity}}))}openModal(t){let e=t.target.dataset.map;const s=this.scriptUrl;if(e==="hundred-hour-map"?this.scriptUrl="https://zume.training/zume_app/last100_hours/":e==="vision-map"?this.scriptUrl="https://zume.training/zume_app/heatmap_trainees/":e==="church-map"?this.scriptUrl="https://zume.training/zume_app/heatmap_churches/":this.scriptUrl="",e="map",s!==this.scriptUrl){this.loading=!0;const a=document.querySelector("#map-iframe");a.onload=this.handleLoad}const n=document.querySelector(`#${e}-modal`);jQuery(n).foundation("open")}handleLoad(){this.loading=!1}render(){return l`
             <div class="dashboard__content">
                 <div class="dashboard__header left">
                     <dash-sidebar-toggle></dash-sidebar-toggle>
@@ -1296,13 +1296,25 @@ ${this.training.zoom_link_note}
             </div>
             <div
                 class="reveal full"
+                style="padding: 0 !important; overflow: hidden;"
                 data-reveal
                 id="map-modal"
             >
-                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
+                <button
+                    class="exit-btn tight | absolute top center mt-0 z-2"
+                    aria-label=${jsObject.translations.close}
+                    type="button"
+                    data-close
+                >
+                    <span>${jsObject.translations.close}</span><span class="icon z-icon-close"></span>
                 </button>
-                ${this.loading?l`<span class="loading-spinner active"></span>`:""}
+                ${this.loading?l`
+                    <div class="cover-page">
+                        <div class="center">
+                            <span class="loading-spinner active"></span>
+                        </div>
+                    </div>
+                `:""}
                 <iframe
                     id="map-iframe"
                     class="${this.loading?"opacity-0":""}"
@@ -1313,7 +1325,7 @@ ${this.training.zoom_link_note}
                 >
                 </iframe>
             </div>
-            <div
+<!--             <div
                 class="reveal full"
                 data-reveal
                 id="hundred-hour-map-modal"
@@ -1344,7 +1356,7 @@ ${this.training.zoom_link_note}
                     height="100%"
                 >
                 </iframe>
-            </div>
+            </div> -->
             <!--
             <div
                 class="reveal full"
