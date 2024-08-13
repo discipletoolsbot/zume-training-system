@@ -13,17 +13,17 @@
 <div id="initialize-screen">
     <div id="initialize-spinner-wrapper" class="center">
         <progress class="success initialize-progress" max="46" value="0"></progress><br>
-        Loading the planet ...<br>
-        <span id="initialize-people" style="display:none;">Locating world population...</span><br>
-        <span id="initialize-activity" style="display:none;">Calculating movement activity...</span><br>
-        <span id="initialize-coffee" style="display:none;">Shamelessly brewing coffee...</span><br>
-        <span id="initialize-dothis" style="display:none;">Let's do this...</span><br>
+        <?php echo esc_html__( 'Loading the planet', 'zume' ) ?> ...<br>
+        <span id="initialize-people" style="display:none;"><?php echo esc_html__( 'Locating world population', 'zume' ) ?> ...</span><br>
+        <span id="initialize-activity" style="display:none;"><?php echo esc_html__( 'Calculating movement activity', 'zume' ) ?> ...</span><br>
+        <span id="initialize-coffee" style="display:none;"><?php echo esc_html__( 'Shamelessly brewing coffee', 'zume' ) ?> ...</span><br>
+        <span id="initialize-dothis" style="display:none;"><?php echo esc_html__( 'Let‘s do this', 'zume' ) ?> ...</span><br>
     </div>
 </div>
 
 <div class="large reveal" id="welcome-modal" data-v-offset="10px" data-reveal>
     <div id="welcome-content" data-close></div>
-    <div class="center"><button class="button" id="welcome-close-button" data-close>Get Started!</button></div>
+    <div class="center"><button class="button" id="welcome-close-button" data-close><?php echo esc_html__( 'Get Started!', 'zume' ) ?></button></div>
 </div>
 
 
@@ -41,23 +41,23 @@
                 <div class="grid-x grid-padding-x" >
                     <div class="cell">
                         <h1 id="title"></h1>
-                        <h3>Population: <span id="population">0</span></h3>
+                        <h3><?php echo esc_html__( 'Population', 'zume' ) ?>: <span id="population">0</span></h3>
                         <hr>
                     </div>
                     <div class="cell">
-                        <h2 id="panel-type-title">Churches</h2>
+                        <h2 id="panel-type-title"><?php echo esc_html__( 'Churches', 'zume' ) ?></h2>
                     </div>
                     <div class="cell" id="needed-row">
-                        <h3>Needed: <span id="needed">0</span></h3>
+                        <h3><?php echo esc_html__( 'Needed', 'zume' ) ?>: <span id="needed">0</span></h3>
                     </div>
                     <div class="cell">
-                        <h3>Reported: <span id="reported">0</span></h3>
+                        <h3><?php echo esc_html__( 'Reported', 'zume' ) ?>: <span id="reported">0</span></h3>
                     </div>
                     <div class="cell">
                         <hr>
                     </div>
                     <div class="cell" id="goal-row">
-                        <h2>Goal: <span id="saturation-goal">0</span>%</h2>
+                        <h2><?php echo esc_html__( 'Goal', 'zume' ) ?>: <span id="saturation-goal">0</span>%</h2>
                         <meter id="meter" class="meter" value="30" min="0" low="33" high="66" optimum="100" max="100"></meter>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
             <div class="grid-x">
                 <div class="cell">
                     <h1 id="modal_tile"></h1>
-                    <h3>Population: <span id="modal_population">0</span></h3>
+                    <h3><?php echo esc_html__( 'Population', 'zume' ) ?>: <span id="modal_population">0</span></h3>
                 </div>
             </div>
             <hr>
@@ -89,7 +89,7 @@
                 <div class="cell medium-6">
                     <div class="grid-x">
                         <div class="cell">
-                            <h3>PROGRESS</h3>
+                            <h3><?php echo esc_html__( 'PROGRESS', 'zume' ) ?></h3>
                         </div>
                         <div class="cell" id="progress-content">
                             <div class="grid-x">
@@ -109,7 +109,7 @@
                 <div class="cell medium-6">
                     <div class="grid-x">
                         <div class="cell">
-                            <h3>ACTIVITY</h3>
+                            <h3><?php echo esc_html__( 'ACTIVITY', 'zume' ) ?></h3>
                         </div>
                         <div class="cell"><hr></div>
                         <div class="cell" id="activity-content">

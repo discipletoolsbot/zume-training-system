@@ -9,7 +9,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 window.get_grid_data = ( action, grid_id) => {
   return jQuery.ajax({
     type: "POST",
-    data: JSON.stringify({ action: action, parts: jsObject.parts, grid_id: grid_id }),
+    data: JSON.stringify({ action: action, parts: jsObject.parts, grid_id: grid_id, lang_code: jsObject.lang_code }),
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     url: jsObject.root + jsObject.parts.root + '/v1/' + jsObject.parts.type,
@@ -25,7 +25,7 @@ window.get_activity_data = (grid_id) => {
   let offset = new Date().getTimezoneOffset();
   return jQuery.ajax({
     type: "POST",
-    data: JSON.stringify({ action: 'activity_data', parts: jsObject.parts, grid_id: grid_id, offset: offset }),
+    data: JSON.stringify({ action: 'activity_data', parts: jsObject.parts, grid_id: grid_id, offset: offset, lang_code: jsObject.lang_code }),
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     url: jsObject.root + jsObject.parts.root + '/v1/' + jsObject.parts.type,
@@ -176,7 +176,7 @@ function load_map() {
   jQuery('#initialize-screen').hide()
 
   // set title
-  jQuery('#panel-type-title').html(jsObject.translation.title)
+  jQuery('#panel-type-title').html(jsObject.title)
 
   jQuery('.loading-spinner').removeClass('active')
 
@@ -222,7 +222,6 @@ function load_map() {
   }
   map.dragRotate.disable();
   map.touchZoomRotate.disableRotation();
-
 
   if ( get_map_start( 'heatmap_zoom_memory' ) ) {
     map.fitBounds(get_map_start( 'heatmap_zoom_memory' ))
