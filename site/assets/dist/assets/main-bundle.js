@@ -2310,7 +2310,7 @@ ${this.training.zoom_link_note}
             <div class="slides-card">
                 <div class="center"></div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("course-slide",N);class al extends N{static get properties(){return{slide:{type:Object},id:{type:String},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="activityOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,super.firstUpdated()}openMenu(){const t=document.querySelector(this.offCanvasSelector);console.log(t,this.offCanvasSelector),jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}closeButtonStyles(){return["t8_c"].includes(this.id)?"":"invert"}render(){return l`
+        `}createRenderRoot(){return this}}customElements.define("course-slide",N);class al extends N{static get properties(){return{slide:{type:Object},id:{type:String},offCanvasId:{type:String,attribute:!1},activityUrl:{type:String,attribute:!1},loading:{type:Boolean,attribute:!1}}}connectedCallback(){super.connectedCallback(),this.handleLoad=this.handleLoad.bind(this)}async firstUpdated(){this.loading=!0,jQuery(this.renderRoot).foundation(),this.offCanvasId="activityOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,super.firstUpdated(),await this.updateComplete;const t=document.querySelector(this.offCanvasSelector+" iframe");t.onload=this.handleLoad,this.activityUrl=this.slide.right[0]}handleLoad(){this.loading=!1}openMenu(){const t=document.querySelector(this.offCanvasSelector);console.log(t,this.offCanvasSelector),jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}closeButtonStyles(){return["t8_c"].includes(this.id)?"":"invert"}render(){return l`
             <div class="slides-card activity-slide | position-relative">
                 ${this.renderProgressBar()}
                 <div class="cover-slide">
@@ -2348,12 +2348,16 @@ ${this.training.zoom_link_note}
                         </button>
                     </div>
 
+                    ${this.loading?l`
+                            <div class="cover-page">
+                                <div class="center"><span class="loading-spinner active"></span></div>
+                            </div>
+                        `:""}
                     <iframe
-                        src=${this.slide.right[0]||""}
+                        src=${this.activityUrl||""}
                         frameborder="0"
                         width="100%"
-                    >
-                    </iframe>
+                    ></iframe>
                 </div>
             </div>
         `}}customElements.define("activity-slide",al);class rl extends N{render(){return l`
@@ -2599,12 +2603,12 @@ ${this.training.zoom_link_note}
                     </div>
                 </div>
             </div>
-        `}}customElements.define("title-slide",bl);class yl extends N{static get properties(){return{slide:{type:Object},showButtons:{type:Boolean},id:{type:String},scriptUrl:{type:String,attribute:!1},offCanvasId:{type:String,attribute:!1}}}firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="informationOffCanvas"+this.id,this.offCanvasSelector="#"+this.offCanvasId,this.loadScriptIntoFrame()}openMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}loadScriptIntoFrame(){const t=this.slide.script_id,e=jsObject.language,s=new URL(location.href),n=new URL(s.origin);n.pathname=[e,"app","script"].join("/"),n.searchParams.append("s",t),this.scriptUrl=n.href}maybeRemoveAutoplay(t){if(!this.inContainer)return t;const e=new URL(t);return e.searchParams.delete("autoplay"),e.href}render(){return l`
+        `}}customElements.define("title-slide",bl);class yl extends N{static get properties(){return{slide:{type:Object},showButtons:{type:Boolean},id:{type:String},scriptUrl:{type:String,attribute:!1},offCanvasId:{type:String,attribute:!1},loading:{type:Boolean,attribute:!1}}}connectedCallback(){super.connectedCallback(),this.handleLoad=this.handleLoad.bind(this)}async firstUpdated(){jQuery(this.renderRoot).foundation(),this.offCanvasId="informationOffCanvas"+this.id,this.iframeId="iframe"+this.id,this.offCanvasSelector="#"+this.offCanvasId,await this.loadScriptIntoFrame()}openMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("open")}closeMenu(){const t=document.querySelector(this.offCanvasSelector);jQuery(t).foundation("close")}async loadScriptIntoFrame(){this.loading=!0;const t=this.slide.script_id,e=jsObject.language,s=new URL(location.href),n=new URL(s.origin);n.pathname=[e,"app","script"].join("/"),n.searchParams.append("s",t),await this.updateComplete;const a=this.renderRoot.querySelector(`#${this.offCanvasId} iframe`);a.onload=this.handleLoad,this.scriptUrl=n.href}handleLoad(){this.loading=!1}maybeRemoveAutoplay(t){if(!this.inContainer)return t;const e=new URL(t);return e.searchParams.delete("autoplay"),e.href}render(){return l`
             <div class="video-slide">
 
                 <button
                     type="button"
-                    class="btn tight dark align-items-center absolute top ${this.dir==="rtl"?"left":"right"} z-1 m--1 bypass-nav-click d-flex gap--2"
+                    class="btn tight outline align-items-center absolute top ${this.dir==="rtl"?"left":"right"} z-1 m--1 bypass-nav-click d-flex gap--2"
                     @click=${this.openMenu}
                 >
                     <span class="icon z-icon-info"></span>
@@ -2630,8 +2634,13 @@ ${this.training.zoom_link_note}
                         <span class="icon z-icon-close"></span>
                     </button>
                 </div>
-
+                ${this.loading?l`
+                        <div class="cover-page">
+                            <div class="center"><span class="loading-spinner active"></span></div>
+                        </div>
+                    `:""}
                 <iframe
+                    id=${this.iframeId||"iframe"}
                     src=${this.scriptUrl||""}
                     frameborder="0"
                     width="100%"
