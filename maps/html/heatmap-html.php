@@ -40,6 +40,7 @@
             <div id="details-panel">
                 <div class="grid-x grid-padding-x" >
                     <div class="cell">
+                        <br></br>
                         <h1 id="title"></h1>
                         <h3><?php echo esc_html__( 'Population', 'zume' ) ?>: <span id="population">0</span></h3>
                         <hr>
