@@ -5,7 +5,7 @@ if ( strpos( dt_get_url_path(), 'zume_app' ) !== false || dt_is_rest() ){
     Zume_Funnel_Public_Heatmap_Activity::instance();
 }
 
-class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
+class Zume_Funnel_Public_Heatmap_Activity extends Zume_Magic_Page
 {
     public $page_title = 'Zúme Activity';
     public $root = 'zume_app';
@@ -66,18 +66,6 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
 
     public function _header(){
         Zume_Funnel_App_Heatmap::_header();
-    }
-
-    public static function _wp_enqueue_scripts(){
-        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
-    }
-
-    public function body(){
-        DT_Mapbox_API::geocoder_scripts();
-        include( 'html/heatmap-html.php' );
-    }
-
-    public function footer_javascript(){
         ?>
         <script>
             let jsObject = [<?php echo json_encode([
@@ -110,8 +98,8 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
                     gl.append(`
                       <div class="cell">
                           <strong>${data.name}</strong><br>
-                          Population: <span>${data.population}</span><br>
-                          Activities Reported: <span>${data.reported}</span><br>
+                          ${jsObject.translation.population}: <span>${data.population}</span><br>
+                          ${jsObject.translation.activities_reported}: <span>${data.reported}</span><br>
                           <hr>
                       </div>
                     `)
@@ -124,6 +112,18 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
         return true;
     }
 
+    public static function _wp_enqueue_scripts(){
+        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
+    }
+
+    public function body(){
+        DT_Mapbox_API::geocoder_scripts();
+        include( 'html/heatmap-html.php' );
+    }
+
+    public function footer_javascript(){
+    }
+
     public function customized_welcome_script(){
         ?>
         <style>#needed-row { display:none;} #goal-row { display:none; }</style>
@@ -134,26 +134,28 @@ class Zume_Funnel_Public_Heatmap_Activity extends DT_Magic_Url_Base
                 <div class="grid-x grid-padding-x" >
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'search.svg'}" alt="search icon" />
-                        <h2>Search</h2>
-                        <p>Search for any city or place with the search input.</p>
+                        <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'zoom.svg'}" alt="zoom icon"  />
-                        <h2>Zoom</h2>
-                        <p>Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.</p>
+                        <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'drag.svg'}" alt="drag icon"  />
-                        <h2>Drag</h2>
-                        <p>Click and drag the map any direction to look at a different part of the map.</p>
+                        <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'click.svg'}" alt="click icon" />
-                        <h2>Click</h2>
-                        <p>Click a single section and reveal a details panel with more information about the location.</p>
+                        <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
                     </div>
                 </div>
                 `)
+
+                $('#panel-type-title').html('<?php echo esc_html__( 'Activities', 'zume' ) ?>')
             })
         </script>
         <?php

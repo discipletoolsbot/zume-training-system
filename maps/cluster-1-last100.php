@@ -8,7 +8,7 @@ if ( strpos( dt_get_url_path(), 'zume_app' ) !== false || dt_is_rest() ){
 /**
  * Class Disciple_Tools_Plugin_Starter_Template_Magic_Link
  */
-class Zume_Funnel_Public_Heatmap_100hours_V2 extends DT_Magic_Url_Base {
+class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
 
     public $magic = false;
     public $parts = false;
@@ -104,6 +104,7 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends DT_Magic_Url_Base {
                 'root' => esc_url_raw( rest_url() ),
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'parts' => $this->parts,
+                'translation' => zume_map_translation_strings(),
             ]) ?>][0]
             /* <![CDATA[ */
 

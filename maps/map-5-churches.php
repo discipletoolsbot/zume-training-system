@@ -5,7 +5,7 @@ if ( strpos( dt_get_url_path(), 'zume_app' ) !== false || dt_is_rest() ){
     Zume_Funnel_Public_Heatmap_Churches::instance();
 }
 
-class Zume_Funnel_Public_Heatmap_Churches extends DT_Magic_Url_Base
+class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
 {
     public $page_title = 'Zúme Churches Map';
     public $root = 'zume_app';
@@ -51,8 +51,6 @@ class Zume_Funnel_Public_Heatmap_Churches extends DT_Magic_Url_Base
         add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
         add_filter( 'dt_magic_url_base_allowed_js', [ $this, 'dt_magic_url_base_allowed_js' ], 10, 1 );
         add_action( 'wp_enqueue_scripts', [ $this, '_wp_enqueue_scripts' ], 99 );
-
-        switch_to_locale($selected_language['locale']);
     }
 
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
@@ -139,7 +137,6 @@ class Zume_Funnel_Public_Heatmap_Churches extends DT_Magic_Url_Base
     }
 
     public function footer_javascript(){
-
     }
 
     public function customized_welcome_script(){
@@ -151,23 +148,23 @@ class Zume_Funnel_Public_Heatmap_Churches extends DT_Magic_Url_Base
                 <div class="grid-x grid-padding-x" >
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'search.svg'}" alt="search icon" />
-                        <h2><?php echo esc_html__('Search', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__('Search for any city or place with the search input.', 'zume' ) ?></p>
+                        <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'zoom.svg'}" alt="zoom icon"  />
-                        <h2><?php echo esc_html__('Zoom', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__('Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
+                        <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'drag.svg'}" alt="drag icon"  />
-                        <h2><?php echo esc_html__('Drag', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__('Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
+                        <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
                         <img class="training-screen-image" src="${asset_url + 'click.svg'}" alt="click icon" />
-                        <h2><?php echo esc_html__('Click', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__('Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
+                        <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
+                        <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
                     </div>
                 </div>
                 `)

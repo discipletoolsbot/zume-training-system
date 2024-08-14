@@ -1453,7 +1453,7 @@ class Zume_Funnel_App_Heatmap {
 
         switch ( $administrative_level ) {
             case 'a0':
-                $results = $wpdb->get_results( "
+                $results = $wpdb->get_results( '
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1462,10 +1462,10 @@ class Zume_Funnel_App_Heatmap {
                         WHERE ml.grid_id > 0
                     ) as t0
                     GROUP BY t0.admin0_grid_id
-                    ", ARRAY_A );
+                    ', ARRAY_A );
                 break;
             case 'a1':
-                $results = $wpdb->get_results( "
+                $results = $wpdb->get_results( '
                     SELECT t1.admin1_grid_id as grid_id, count(t1.admin1_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1474,10 +1474,10 @@ class Zume_Funnel_App_Heatmap {
                         WHERE ml.grid_id > 0
                     ) as t1
                     GROUP BY t1.admin1_grid_id
-                    ", ARRAY_A );
+                    ', ARRAY_A );
                 break;
             case 'a2':
-                $results = $wpdb->get_results( "
+                $results = $wpdb->get_results( '
                     SELECT t2.admin2_grid_id as grid_id, count(t2.admin2_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1486,10 +1486,10 @@ class Zume_Funnel_App_Heatmap {
                         WHERE ml.grid_id > 0
                     ) as t2
                     GROUP BY t2.admin2_grid_id
-                    ", ARRAY_A );
+                    ', ARRAY_A );
                 break;
             case 'a3':
-                $results = $wpdb->get_results( "
+                $results = $wpdb->get_results( '
                     SELECT t3.admin3_grid_id as grid_id, count(t3.admin3_grid_id) as count
                     FROM (
                         SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1498,7 +1498,7 @@ class Zume_Funnel_App_Heatmap {
                         WHERE ml.grid_id > 0
                     ) as t3
                     GROUP BY t3.admin2_grid_id
-                    ", ARRAY_A );
+                    ', ARRAY_A );
                 break;
             case 'world':
                 $results = $wpdb->get_results( "
@@ -1579,7 +1579,7 @@ class Zume_Funnel_App_Heatmap {
                     ", ARRAY_A );
                 break;
             default:
-                $results = $wpdb->get_results( "
+                $results = $wpdb->get_results( '
                     SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
                     FROM (
                      SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1634,7 +1634,7 @@ class Zume_Funnel_App_Heatmap {
                     ) as t5
                     GROUP BY t5.admin5_grid_id
 
-                    ", ARRAY_A );
+                    ', ARRAY_A );
                 break;
         }
 
@@ -1660,7 +1660,7 @@ class Zume_Funnel_App_Heatmap {
 
         global $wpdb;
 
-        $results = $wpdb->get_results( "
+        $results = $wpdb->get_results( '
         SELECT t0.admin0_grid_id as grid_id, count(t0.admin0_grid_id) as count
             FROM (
              SELECT lg.admin0_grid_id, lg.admin1_grid_id, lg.admin2_grid_id, lg.admin3_grid_id, lg.admin4_grid_id, lg.admin5_grid_id
@@ -1696,7 +1696,7 @@ class Zume_Funnel_App_Heatmap {
                 WHERE ml.grid_id != 0
             ) as t3
             GROUP BY t3.admin3_grid_id;
-        ", ARRAY_A );
+        ', ARRAY_A );
 
         $list = [];
         if ( is_array( $results ) ) {
@@ -2283,7 +2283,7 @@ class Zume_Funnel_App_Heatmap {
     }
 
     public static function query_church_grid_totals( $administrative_level = null ) {
-        dt_write_log( __METHOD__ );
+//        dt_write_log( __METHOD__ );
 //        if ( false !== ( $value = get_transient( __METHOD__ . $administrative_level ) ) ) { // phpcs:ignore
 //            return $value;
 //        }
@@ -2470,7 +2470,7 @@ class Zume_Funnel_App_Heatmap {
     public static function query_grid_elements( $grid_id ) {
         global $wpdb;
 
-        $result = $wpdb->get_row($wpdb->prepare( "
+        $result = $wpdb->get_row($wpdb->prepare( '
             SELECT
                    lg.admin3_grid_id as a3,
                    lg.admin2_grid_id as a2,
@@ -2490,7 +2490,7 @@ class Zume_Funnel_App_Heatmap {
             LEFT JOIN zume_dt_location_grid lg3 ON lg.admin3_grid_id=lg3.grid_id
             LEFT JOIN zume_dt_location_grid lgw ON 1=lgw.grid_id
             WHERE lg.grid_id = %s
-        ", $grid_id ), ARRAY_A );
+        ', $grid_id ), ARRAY_A );
 
         return $result;
     }
@@ -3132,13 +3132,13 @@ class Zume_Funnel_App_Heatmap {
         }
 
         if ( $record['value'] < 4 && $record['value'] > 0 ) {
-            $identity = 'trainee';
+            $identity = __( 'trainee', 'zume' );
         }
         else if ( $record['value'] > 3 ) { // value = 4+
-            $identity = 'practitioner';
+            $identity = __( 'practitioner', 'zume' );
         }
         else { // value = 0
-            $identity = 'visitor';
+            $identity = __( 'visitor', 'zume' );
         }
 
         $data = [
@@ -3198,7 +3198,7 @@ class Zume_Funnel_App_Heatmap {
             case 'set_c_4':
             case 'set_c_5':
                 $elements = explode( '_', $subtype );
-                $data['note'] = sprintf( 'A %s is starting SESSION %s in %s. %s', $identity, $elements[2], $location_name, $language_name );
+                $data['note'] = sprintf( __( 'A %1$s is starting SESSION %2$s in %3$s. %4$s', 'zume' ), $identity, $elements[2], $location_name, $language_name );
                 $data['type'] = 'training';
                 break;
             case '1_heard':

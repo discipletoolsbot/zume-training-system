@@ -45,7 +45,7 @@
                         <hr>
                     </div>
                     <div class="cell">
-                        <h2 id="panel-type-title"><?php echo esc_html__( 'Churches', 'zume' ) ?></h2>
+                        <h2 id="panel-type-title"></h2>
                     </div>
                     <div class="cell" id="needed-row">
                         <h3><?php echo esc_html__( 'Needed', 'zume' ) ?>: <span id="needed">0</span></h3>
@@ -78,6 +78,7 @@
         <div class="cell">
             <div class="grid-x">
                 <div class="cell">
+                    <br></br><!-- remove conflict with close button -->
                     <h1 id="modal_tile"></h1>
                     <h3><?php echo esc_html__( 'Population', 'zume' ) ?>: <span id="modal_population">0</span></h3>
                 </div>
