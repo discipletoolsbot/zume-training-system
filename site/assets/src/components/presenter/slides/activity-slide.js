@@ -7,16 +7,35 @@ export class ActivitySlide extends CourseSlide {
             slide: { type: Object },
             id: { type: String },
             offCanvasId: { type: String, attribute: false },
+            activityUrl: { type: String, attribute: false },
+            loading: { type: Boolean, attribute: false },
         };
     }
+    connectedCallback() {
+        super.connectedCallback()
 
-    firstUpdated() {
+        this.handleLoad = this.handleLoad.bind(this)
+    }
+
+    async firstUpdated() {
+        this.loading = true
         jQuery(this.renderRoot).foundation();
 
         this.offCanvasId = 'activityOffCanvas' + this.id
         this.offCanvasSelector = '#' + this.offCanvasId
 
         super.firstUpdated()
+
+        await this.updateComplete
+
+        const iframe = document.querySelector(this.offCanvasSelector + ' iframe')
+        iframe.onload = this.handleLoad
+
+        this.activityUrl = this.slide['right'][0]
+    }
+
+    handleLoad() {
+        this.loading = false
     }
 
     openMenu() {
@@ -75,12 +94,18 @@ export class ActivitySlide extends CourseSlide {
                         </button>
                     </div>
 
+                    ${
+                        this.loading ? html`
+                            <div class="cover-page">
+                                <div class="center"><span class="loading-spinner active"></span></div>
+                            </div>
+                        ` : ''
+                    }
                     <iframe
-                        src=${this.slide['right'][0] || ''}
+                        src=${this.activityUrl || ''}
                         frameborder="0"
                         width="100%"
-                    >
-                    </iframe>
+                    ></iframe>
                 </div>
             </div>
         `
