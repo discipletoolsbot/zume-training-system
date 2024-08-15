@@ -1,6 +1,9 @@
 <?php global $zume_languages_by_code; ?>
 
 <div id="language-menu-reveal" class="reveal" data-reveal data-v-offset="0">
+    <button class="close-btn | ms-auto m--1" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
+        <span class="icon z-icon-close"></span>
+    </button>
     <h3><?php esc_html_e( 'Language', 'zume' ) ?></h3>
     <hr>
     <table class="hover bypass-nav-click" id="language-table">
@@ -52,7 +55,5 @@
             cursor: pointer;
         }
     </style>
-    <button class="close-btn | ms-auto m--1" data-close aria-label="<?php esc_html_e( 'Close', 'zume' ); ?>" type="button">
-        <span class="icon z-icon-close"></span>
-    </button>
+
 </div>
