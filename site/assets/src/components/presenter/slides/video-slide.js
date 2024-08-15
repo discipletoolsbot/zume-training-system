@@ -50,7 +50,11 @@ export class VideoSlide extends CourseSlide {
         await this.updateComplete
 
         const iframe = this.renderRoot.querySelector(`#${this.offCanvasId} iframe`)
-        iframe.onload = this.handleLoad
+        if (iframe) {
+            iframe.onload = this.handleLoad
+        } else {
+            console.error('no iframe to attach onload to')
+        }
 
         this.scriptUrl = scriptUrl.href
     }

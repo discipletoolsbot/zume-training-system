@@ -29,7 +29,11 @@ export class ActivitySlide extends CourseSlide {
         await this.updateComplete
 
         const iframe = document.querySelector(this.offCanvasSelector + ' iframe')
-        iframe.onload = this.handleLoad
+        if (iframe) {
+            iframe.onload = this.handleLoad
+        } else {
+            console.error('no iframe to attach onload to')
+        }
 
         this.activityUrl = this.slide['right'][0]
     }
