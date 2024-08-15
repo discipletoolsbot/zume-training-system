@@ -13,10 +13,11 @@
 
 .dashboard__sidebar {
     grid-area: sidebar;
-    border-right: 2px solid var(--border-color-main);
 
+    [dir="ltr"] & {
+        border-right: 2px solid var(--border-color-main);
+    }
     [dir="rtl"] & {
-        border-right: unset;
         border-left: 2px solid var(--border-color-main);
     }
 
@@ -222,7 +223,6 @@ dash-header-right {
     .dashboard__sidebar {
         grid-area: unset;
         position: fixed;
-        left: 0;
         top: 2.5rem;
         transform: translateX(-100%);
         transition: transform 200ms ease-in-out;
@@ -233,8 +233,10 @@ dash-header-right {
             height: 100% !important;
         }
 
+        [dir="ltr"] & {
+            left: 0;
+        }
         [dir="rtl"] & {
-            left: unset;
             right: 0;
             transform: translateX(100%);
         }

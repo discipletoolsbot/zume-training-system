@@ -32,20 +32,20 @@
 }
 
 .reel > * + * {
-  margin-left: 1rem;
-
+  [dir="ltr"] & {
+    margin-left: 1rem;
+  }
   [dir="rtl"] & {
-    margin-left: unset;
     margin-right: 1rem;
   }
 }
 
 .reel.overflowing {
   padding-bottom: 1rem;
-  padding-right: 1rem;
-
+  [dir="ltr"] & {
+    padding-right: 1rem;
+  }
   [dir="rtl"] & {
-    padding-right: unset;
     padding-left: 1rem;
   }
 }

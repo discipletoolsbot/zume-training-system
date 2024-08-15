@@ -98,10 +98,10 @@
         font-weight: 600;
     }
     ul.bullets {
-        margin-left: spacing(2);
-
+        [dir="ltr"] & {
+            margin-left: spacing(2);
+        }
         [dir="rtl"] & {
-            margin-left: unset;
             margin-right: spacing(2);
         }
     }
@@ -343,23 +343,21 @@ not of the 2 column section */
     align-items: center;
 
     & > .progress-bar-stage:first-child > :first-child {
-        border-top-left-radius: calc( 3 * var(--slide-unit) );
-        border-bottom-left-radius: calc( 3 * var(--slide-unit) );
-
+        [dir="ltr"] & {
+            border-top-left-radius: calc( 3 * var(--slide-unit) );
+            border-bottom-left-radius: calc( 3 * var(--slide-unit) );
+        }
         [dir="rtl"] & {
-            border-top-left-radius: unset;
-            border-bottom-left-radius: unset;
             border-top-right-radius: calc( 3 * var(--slide-unit) );
             border-bottom-right-radius: calc( 3 * var(--slide-unit) );
         }
     }
     & > .progress-bar-stage:last-child > :last-child {
-        border-top-right-radius: calc( 3 * var(--slide-unit) );
-        border-bottom-right-radius: calc( 3 * var(--slide-unit) );
-
+        [dir="ltr"] & {
+            border-top-right-radius: calc( 3 * var(--slide-unit) );
+            border-bottom-right-radius: calc( 3 * var(--slide-unit) );
+        }
         [dir="rtl"] & {
-            border-top-right-radius: unset;
-            border-bottom-right-radius: unset;
             border-top-left-radius: calc( 3 * var(--slide-unit) );
             border-bottom-left-radius: calc( 3 * var(--slide-unit) );
         }
@@ -370,18 +368,20 @@ not of the 2 column section */
     align-items: center;
 
     & > * {
-        border-right: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         border-top: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         border-bottom: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
 
+        [dir="ltr"] & {
+            border-right: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        }
         [dir="rtl"] & {
-            border-right: unset;
             border-left: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         }
     }
     & > :first-child {
-        border-left: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
-
+        [dir="ltr"] & {
+            border-left: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
+        }
         [dir="rtl"] & {
             border-right: calc( 0.1 * var(--slide-unit) )solid color('gray-300');
         }

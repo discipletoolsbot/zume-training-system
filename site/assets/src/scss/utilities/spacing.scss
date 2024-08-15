@@ -42,11 +42,21 @@
     padding-top: spacing(4);
 }
 .ps-2 {
-    padding-left: spacing(2);
+    [dir="ltr"] & {
+        padding-left: spacing(2);
+    }
 
     [dir="rtl"] & {
-        padding-left: unset;
         padding-right: spacing(2);
+    }
+}
+.ps-0 {
+    [dir="ltr"] & {
+        padding-left: spacing(0);
+    }
+
+    [dir="rtl"] & {
+        padding-right: spacing(0);
     }
 }
 
@@ -95,10 +105,10 @@
     margin-bottom: auto;
 }
 .ms-auto {
-    margin-left: auto;
-
+    [dir="ltr"] & {
+        margin-left: auto;
+    }
     [dir="rtl"] & {
-        margin-left: unset;
         margin-right: auto;
     }
 }

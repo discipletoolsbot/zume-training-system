@@ -2,7 +2,7 @@
 
     <div class="container stack-2 | position-relative">
 
-        <div class="cluster | justify-content-between gapx-4 gapy-2 | footer-links">
+        <div class="d-flex | justify-content-between gapx-4 gapy-2 | footer-links" data-top>
             <div class="cluster gapx-4 gapy-2 | footer-links-list" role="list">
 
                 <?php if ( is_user_logged_in() ) : ?>

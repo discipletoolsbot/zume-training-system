@@ -10,11 +10,32 @@ $widths: (100, 90, 80, 75, 70, 60, 50, 40, 30, 25, 20, 15, 10);
     max-width: 50ch;
 }
 
+.mw-100 {
+    max-width: 100%;
+}
 .mw-60 {
     max-width: 60%;
 }
 .mw-20 {
     max-width: 20%;
+}
+.min-4rem {
+    min-width: 4rem;
+}
+.min-8rem {
+    min-width: 8rem;
+}
+.min-12rem {
+    min-width: 12rem;
+}
+.mw-20vw {
+    max-width: 20vw;
+}
+.mw-30vw {
+    max-width: 30vw;
+}
+.mw-20rem {
+    max-width: 20rem;
 }
 
 @for $i from -5 through 5 {

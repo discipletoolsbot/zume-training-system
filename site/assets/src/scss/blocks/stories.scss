@@ -52,10 +52,11 @@
 
     .story-reel {
         margin-top: spacing(0);
-        margin-left: spacing(0);
 
+        [dir="ltr"] & {
+            margin-left: spacing(0);
+        }
         [dir="rtl"] & {
-            margin-left: unset;
             margin-right: spacing(0);
         }
     }

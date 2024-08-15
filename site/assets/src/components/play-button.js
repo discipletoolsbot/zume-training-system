@@ -1,8 +1,59 @@
 import { LitElement, html, css } from "lit"
 
 export class PlayButton extends LitElement {
+
+    static get properties() {
+        return {
+            size: { type: String, attribute: false },
+        };
+    }
+
     constructor() {
         super()
+
+        const oneRem = 16
+        this.minSize = 3 * oneRem
+        this.percentage = 15.0 / 100.0
+        this.maxSize = 8 * this.minSize
+        this.size = this.maxSize
+
+        this.widthObserver = this.widthObserver.bind(this)
+    }
+
+    firstUpdated() {
+        this.resizeObserver = new ResizeObserver(this.widthObserver)
+
+        this.resizeObserver.observe(this)
+    }
+
+    disconnectedCallback() {
+        super.disconnectedCallback();
+
+        this.resizeObserver.disconnect()
+    }
+    widthObserver(entries) {
+        for (const entry of entries) {
+            if (entry.contentBoxSize) {
+                this.size = entry.contentBoxSize[0].inlineSize * this.percentage
+
+                if (this.size < this.minSize) {
+                    this.size = this.minSize
+                }
+                if (this.size > this.maxSize) {
+                    this.size = this.maxSize
+                }
+            }
+        }
+    }
+
+    render() {
+        return html`
+            <div class="container" style="--play-button-size: ${this.size}px">
+                <div class="circle">
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        `
     }
 
     static styles = css`
@@ -29,7 +80,6 @@ export class PlayButton extends LitElement {
             justify-content: center;
         }
 
-
         .circle {
             width: var(--play-button-size);
             height: var(--play-button-size);
@@ -53,16 +103,6 @@ export class PlayButton extends LitElement {
           margin-left: calc(var(--play-button-size) / 10);
         }
     `
-
-    render() {
-        return html`
-            <div class="container">
-                <div class="circle">
-                    <div class="triangle"></div>
-                </div>
-            </div>
-        `
-    }
 }
 
 window.customElements.define( 'play-button', PlayButton )

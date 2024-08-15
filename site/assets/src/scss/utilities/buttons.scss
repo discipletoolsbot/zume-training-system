@@ -205,11 +205,12 @@ a {
     }
 
     .icon {
-        margin-right: 0.5em;
         font-size: 1.3em;
 
+        [dir="ltr"] & {
+            margin-right: 0.5em;
+        }
         [dir="rtl"] & {
-            margin-right: unset;
             margin-left: 0.5em;
         }
     }

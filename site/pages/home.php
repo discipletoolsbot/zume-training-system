@@ -123,8 +123,8 @@ class Zume_Training_Home extends Zume_Magic_Page
 
         <div class="container stack-4 | page pt0">
             <h2 class="text-center h1"><?php echo esc_html__( 'Becoming more like Jesus... Together', 'zume' ) ?></h2>
-            <div class="grid | grid-min-24rem">
-                <div class="stack | left tail circle-end-small bg-brand-light white p-2">
+            <div class="switcher">
+                <div class="stack | overview-banner | left tail circle-end-small">
                     <div class="my-auto">
                         <h3 class="h2"><?php echo esc_html__( 'Overview', 'zume' ) ?></h3>
                         <ul role="list" class="check-list f-2 bold lh-md">
@@ -138,7 +138,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                 </div>
                 <div class="cover">
                     <div class="center stack">
-                        <img class="" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
+                        <img class="min-12rem w-100 mw-30vw " src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Whats-Required-NEW.svg' ) ?>" alt="Group doing zume">
                         <h3 class="text-center f-1 mx-2"><?php echo esc_html__( 'Free. Anytime. Anywhere.', 'zume' ) ?></h3>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h2 class="text-center"><?php echo esc_html__( 'Gain insight into...', 'zume' ) ?></h2>
             <div class="switcher | s-3">
                 <div class="stack">
-                    <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Being-A-Disciple-01.svg' ) ?>" alt="Being a disciple">
+                    <img class="min-8rem mw-20 mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Being-A-Disciple-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Being A Disciple', 'zume' ) ?></h3>
                         <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
@@ -160,7 +160,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                     </div>
                 </div>
                 <div class="stack">
-                    <img class="mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Making-Disciples-01.svg' ) ?>" alt="Being a disciple">
+                    <img class="min-8rem mw-30vw mx-auto w-25" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Making-Disciples-01.svg' ) ?>" alt="Being a disciple">
                     <div class="mx-auto">
                         <h3 class="h2 brand"><?php echo esc_html__( 'Making Disciples', 'zume' ) ?></h3>
                         <ul role="list" class="f-1 f-medium | check-list" data-check-size="1" data-check-color="brand">
@@ -178,9 +178,9 @@ class Zume_Training_Home extends Zume_Magic_Page
         </div>
 
         <div class="stack-3 | py-3 text-center bg-brand-gradient">
-            <h2 class="white"><?php echo esc_html__( 'Ordinary People. Simple Steps.', 'zume' ) ?></h2>
+            <h2 class="container-md | white"><?php echo esc_html__( 'Ordinary People. Simple Steps.', 'zume' ) ?></h2>
             <div class="container-md | align-items-center">
-                <div class="w-80 video-frame mx-auto position-relative bg-white rounded hard-shadow">
+                <div class="container-md video-frame mx-auto position-relative bg-white rounded hard-shadow">
                     <div class="video-player mx-auto position-relative" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '69', true, null, true ) ) ?>">
                         <div class="responsive-embed widescreen m0">
                             <iframe width="640" height="360" src="" frameborder="0"></iframe>
@@ -189,7 +189,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <div class="w-60 mx-auto"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"></div>
                             <button class="icon-btn absolute inset">
                                 <play-button
-                                    style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand); --play-button-size: 5rem"
+                                    style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand);"
                                 ></play-button>
                             </button>
                         </div>
@@ -202,36 +202,36 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h2 class="text-center"><?php echo esc_html__( 'How it Works', 'zume' ) ?></h2>
             <div class="switcher | switcher-width-40 align-items-center">
                 <div class="stack px-0">
-                    <div class="d-flex align-items-center">
-                        <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/free-01.svg' ) ?>" alt="play button">
+                    <div class="d-flex align-items-center gap-0">
+                        <img class="w-4rem h-4rem min-4rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/free-01.svg' ) ?>" alt="play button">
                         <p class="w-80"><?php printf( esc_html__( '%1$sFree Registration%2$s gives you full access to all training materials and online coaching.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play button">
+                    <div class="d-flex align-items-center gap-0">
+                        <img class="w-4rem h-4rem min-4rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Play-Button.svg' ) ?>" alt="play button">
                         <p class="w-80"><?php printf( esc_html__( '%1$sInstructional Videos%2$s help your group understand basic principles of multiplying disciples.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GroupDiscussions.svg' ) ?>" alt="play button">
+                    <div class="d-flex align-items-center gap-0">
+                        <img class="w-4rem h-4rem min-4rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/GroupDiscussions.svg' ) ?>" alt="play button">
                         <p class="w-80"><?php printf( esc_html__( '%1$sGroup Discussions%2$s help your group think through what is being shared.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SimpleExercises.svg' ) ?>" alt="play button">
+                    <div class="d-flex align-items-center gap-0">
+                        <img class="w-4rem h-4rem min-4rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SimpleExercises.svg' ) ?>" alt="play button">
                         <p class="w-80"><?php printf( esc_html__( '%1$sSimple Exercises%2$s help your group put what you are learning into practice.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <img class="w-20 p-0" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SessionChallenges.svg' ) ?>" alt="play button">
+                    <div class="d-flex align-items-center gap-0">
+                        <img class="w-4rem h-4rem min-4rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/SessionChallenges.svg' ) ?>" alt="play button">
                         <p class="w-80"><?php printf( esc_html__( '%1$sSession Challenges%2$s help your group keep learning and growing between sessions.', 'zume' ), '<b>', '</b>' ) ?></p>
                     </div>
                 </div>
-                <div class="px-3">
-                    <div class="position-relative">
+                <div>
+                    <div class="position-relative mx-auto mw-20rem">
                         <div class="video-player responsive-embed widescreen m0" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '70', true, null, true ) ) ?>">
                             <iframe width="640" height="360" src="" frameborder="0"></iframe>
                             <div class="video-trigger absolute inset">
                                 <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Howitworks-thumbnail.png' ) ?>" alt="zume video">
                                 <button class="icon-btn absolute inset">
                                     <play-button
-                                        style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand); --play-button-size: 5rem"
+                                        style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand);"
                                     ></play-button>
                                 </button>
                             </div>
@@ -286,7 +286,7 @@ class Zume_Training_Home extends Zume_Magic_Page
 
         <div class="page bg-gray-300 | real-stories">
             <div class="position-relative">
-                <h2 class="white absolute z-1 top left right px-3 py-1"><?php echo esc_html__( 'Real people ... real stories.', 'zume' ) ?></h2>
+                <h2 class="white absolute z-1 top left right ps-0 px-3 py-1"><?php echo esc_html__( 'Real people ... real stories.', 'zume' ) ?></h2>
                 <div class="absolute top right bottom w-40 bg-world show-for-extra-large"></div>
                 <img class="clip-rounded-end real-people" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/RealPeople.jpg' ) ?>" alt="Real people">
                 <div class="reel absolute | story-reel overflowing">
@@ -339,13 +339,12 @@ class Zume_Training_Home extends Zume_Magic_Page
         </div>
 
         <div class="bg-brand-gradient">
-            <div class="container stack-2 | py-2 white text-center">
-                <h2 class="position-relative px-4 fit-content mx-auto"><?php echo esc_html( sprintf( __( '%s = Yeast', 'zume' ), 'Zúme' ) ) ?>
-                    <div class="d-flex justify-content-center absolute right top bottom h-125 w-20">
-                        <?php //phpcs:ignore ?>
-                        <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/yeast.svg' ) ?>
-                    </div>
-                </h2>
+            <div class="container stack--2 | py-2 white text-center">
+                <h2><?php echo esc_html( sprintf( __( '%s = Yeast', 'zume' ), 'Zúme' ) ) ?></h2>
+                <div class="w-3rem mx-auto">
+                    <?php //phpcs:ignore ?>
+                    <?php echo file_get_contents( plugin_dir_path( __DIR__ ) . '/assets/images/yeast.svg' ) ?>
+                </div>
                 <p class="bold"><?php echo esc_html__( 'Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, "The Kingdom of Heaven is like a woman who took yeast and mixed it into a large amount of flour until it was all leavened." This illustrates how ordinary people, using ordinary resources, can have an extraordinary impact for the Kingdom of God. Zúme aims to equip and empower ordinary believers to saturate the globe with multiplying disciples in our generation.', 'zume' ) ?></p>
             </div>
         </div>
