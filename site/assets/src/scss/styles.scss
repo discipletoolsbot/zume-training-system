@@ -252,6 +252,9 @@ input::-webkit-calendar-picker-indicator {
   font-weight: 600;
   font-family: var(--font-family);
 }
+.nav__bar {
+  display: none;
+}
 
 .nav__list {
   padding: 0;
@@ -281,18 +284,27 @@ input::-webkit-calendar-picker-indicator {
   transition: all 100ms linear;
   transition-property: color, background-color;
 
-  &:hover, &:active, &:focus {
-    text-decoration: none;
-    background-color: color('white');
-    color: color('brand');
-  }
-
   &.outline {
     border: 2px solid color('white');
   }
 
   & .icon {
     font-size: 1.3em;
+  }
+
+  &[data-tool] {
+    color: color('white');
+    gap: spacing(-4);
+
+    span {
+      display: none;
+    }
+  }
+
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    background-color: color('white');
+    color: color('brand');
   }
 }
 
@@ -312,6 +324,12 @@ input::-webkit-calendar-picker-indicator {
         fill: color('brand-lighter');
     }
   }
+}
+
+.bar {
+  height: 80%;
+  width: 0.1rem;
+  border-radius: 100px;
 }
 
 .nav-toggle {
@@ -356,13 +374,6 @@ input::-webkit-calendar-picker-indicator {
 
 .hamburger::after {
   transform: translateY( var(--bar-spacing) );
-}
-
-#share-button {
-  display: block;
-}
-.language-display-code {
-  display: none;
 }
 
 .logo {
@@ -904,7 +915,11 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media (min-width: $break-lg) {
-    #share-button,
+    .nav__link[data-tool] {
+      span {
+        display: inline;
+      }
+    }
     .nav-toggle {
         display: none;
     }
@@ -919,6 +934,9 @@ input::-webkit-calendar-picker-indicator {
 
     .nav {
         display: flex;
+    }
+    .nav__bar {
+      display: block;
     }
 
 }
