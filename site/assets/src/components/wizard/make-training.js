@@ -14,8 +14,7 @@ export class MakeTraining extends LitElement {
              * What inputs to display
              */
             variant: { type: String },
-            state: { attribute: false },
-            state: { type: String, attribute: false },
+            state: { type: Object, attribute: false },
             selectedDays: { type: Array, attribute: false },
             completedSteps: { type: Array, attribute: false },
             calendarStart: { type: String, attribute: false },
@@ -555,6 +554,7 @@ export class MakeTraining extends LitElement {
                         date=${this.stateManager.get(Steps.startDate)}
                         whatLocation=${this.stateManager.get(Steps.location)}
                         .display=${this.completedSteps}
+                        ?summaryOpen=${this.variant === Steps.review}
                     ></review-steps>
                 ` : ''}
             </div>

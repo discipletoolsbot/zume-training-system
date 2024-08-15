@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { Steps } from './wizard-constants';
+import { zumeAttachObservers } from '../../js/zumeAttachObservers';
 
 export class ReviewSteps extends LitElement {
     static get properties() {
@@ -13,6 +14,7 @@ export class ReviewSteps extends LitElement {
             date: { type: String },
             time: { type: String },
             display: { type: Array },
+            summaryOpen: { type: Boolean },
         };
     }
 
@@ -23,6 +25,7 @@ export class ReviewSteps extends LitElement {
         super()
         this.t = {}
         this.display = []
+        this.summaryOpen = false
     }
 
     connectedCallback() {
@@ -43,7 +46,11 @@ export class ReviewSteps extends LitElement {
             'yes': this.t.yes,
             'no': this.t.no,
         }
-   }
+    }
+
+    updated() {
+        zumeAttachObservers(this.renderRoot, 'review-steps')
+    }
 
     handleChange(event) {
         const slug = event.target.dataset.step
@@ -54,6 +61,10 @@ export class ReviewSteps extends LitElement {
 
     shouldDisplay() {
         return this.display.length > 0
+    }
+
+    toggleSummary() {
+        this.summaryOpen = !this.summaryOpen
     }
 
     renderSummary(step) {
@@ -219,8 +230,20 @@ export class ReviewSteps extends LitElement {
         return html`
             <div class="stack mw-50ch mx-auto text-start mt-2">
                 <hr />
-                <h5 class="gray-700 text-left f-medium mt-2">${this.t.summary}</h5>
-                ${this.display.map((step) => this.renderSummary(step))}
+                <button
+                    class="h5 gray-700 text-left f-medium mt-2 repel"
+                    @click=${this.toggleSummary}
+                >
+                    ${this.t.summary}
+                    <img
+                        class="chevron | svg w-1rem h-1rem ${this.groupMembersOpen ? 'rotate-180' : ''}"
+                        src=${jsObject.images_url +
+                        '/chevron.svg'}
+                    />
+                </button>
+                <div class="zume-collapse" ?data-expand=${this.summaryOpen}>
+                    ${this.display.map((step) => this.renderSummary(step))}
+                </div>
             </div>
         `
     }
