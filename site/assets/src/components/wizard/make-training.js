@@ -2,6 +2,8 @@ import { LitElement, html } from 'lit';
 import { Modules, Steps, Wizards } from './wizard-constants';
 import { WizardStateManager } from './wizard-state-manager';
 import { DateTime } from 'luxon';
+import { sha256 } from '../../js/sha256';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class MakeTraining extends LitElement {
     static get properties() {
@@ -281,14 +283,14 @@ export class MakeTraining extends LitElement {
         }
 
         this.loading = true
-        makeRequest( 'POST', 'plan', postData, 'zume_system/v1' )
+        zumeRequest.post( 'plan', postData)
             .then((data) => {
                 this._handleFinish(data.join_key)
             })
-            .fail((error) => {
+            .catch((error) => {
                 console.log(error)
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
             })
     }

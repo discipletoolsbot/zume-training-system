@@ -209,8 +209,8 @@ class Zume_Training_Navigation
             // add listeners
             jQuery(document).ready(function(){
                 jQuery('.user_view').on('click', function(e){
-                    makeRequest('POST', '/user_view', {'view': e.currentTarget.dataset.value}, 'zume-training/v1')
-                        .done(function(data){
+                    zumeRequest.post( '/user_view', {'view': e.currentTarget.dataset.value})
+                        .then(function(data){
                             console.log('return')
                             console.log(data)
 

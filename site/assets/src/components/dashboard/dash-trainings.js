@@ -378,7 +378,7 @@ export class DashTrainings extends DashPage {
     markSessionCompleted(id, event) {
         this.stopImmediatePropagation(event)
         this.closeKebabMenu(id)
-        makeRequest( 'POST', 'plan/complete-session', { key: this.training.join_key, session_id: id }, 'zume_system/v1' )
+        zumeRequest.post( 'plan/complete-session', { key: this.training.join_key, session_id: id })
             .then((result) => {
                 this.refreshSessions(result)
             })

@@ -27,7 +27,7 @@ export class WatchSlide extends CourseSlide {
                             ${this.renderContent(this.slide['right'], true)}
                             <div>
                                 <button
-                                    class="btn tight d-flex align-items-center gap--1"
+                                    class="watch-btn | btn tight d-flex align-items-center gap--1"
                                     type="button"
                                     @click=${this.nextSlide}
                                 >

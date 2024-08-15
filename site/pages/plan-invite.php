@@ -92,7 +92,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                         return redirect_to_login( code )
                     }
 
-                    makeRequest( 'GET', `plan/${code}`, {}, 'zume_system/v1' )
+                    zumeRequest.get( `plan/${code}`, {})
                         .then((data) => {
                             if ( data.error_code === 'bad-plan-code' ) {
                                 show_error(jsObject.translations.bad_code)
@@ -107,7 +107,7 @@ class Zume_Training_Plan_Invite extends Zume_Magic_Page
                 });
 
                 function show_error( message ) {
-                    warningBanner.innerHTML = SHAREDFUNCTIONS.escapeHTML(message)
+                    warningBanner.innerHTML = zumeApiShare.escapeHTML(message)
                     jQuery(warningBanner).show()
                 }
 

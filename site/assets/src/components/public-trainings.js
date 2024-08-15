@@ -1,4 +1,6 @@
 import { LitElement, html, css } from 'lit';
+import { zumeRequest } from '../js/zumeRequest';
+import { DateTime } from 'luxon';
 
 export class PublicTrainings extends LitElement {
     static get properties() {
@@ -28,14 +30,14 @@ export class PublicTrainings extends LitElement {
     }
 
     getTrainings() {
-        makeRequest( 'POST', 'public_plans', {}, 'zume_system/v1' )
+        zumeRequest.post( 'public_plans', {})
             .then((plans) => {
                 this.plans = plans
             })
             .catch((error) => {
                 console.log(error)
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
             })
     }
@@ -111,7 +113,7 @@ export class PublicTrainings extends LitElement {
             }
         }
 
-        const formattedDate = moment(latestPlanDate * 1000).format('MMM Do \'YY')
+        const formattedDate =  DateTime.fromMillis(latestPlanDate * 1000).toFormat('DD')
 
         return html`
             <tr>

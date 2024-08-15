@@ -47,13 +47,22 @@ export class DashPlans extends DashPage {
 
     fetchCommitments() {
         const status = this.filterStatus
-        makeRequest('GET', 'commitments', { status }, 'zume_system/v1' )
-            .done( ( data ) => {
+        zumeRequest.get( 'commitments', { status })
+            .then( ( data ) => {
                 this.commitments = data
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
             })
+    }
+    editQuestion() {
+        return document.querySelector('#edit-question')
+    }
+    editAnswer() {
+        return document.querySelector('#edit-answer')
+    }
+    editNote() {
+        return document.querySelector('#edit-note')
     }
 
     openEditCommitmentsModal(id) {
@@ -62,13 +71,11 @@ export class DashPlans extends DashPage {
 
         this.editCategory = commitment.category
 
-        console.log(commitment, commitment.category)
-
         if (commitment.category === 'post_training_plan') {
-            document.querySelector('#edit-question').value = commitment.question
-            document.querySelector('#edit-answer').value = commitment.answer
+            this.editQuestion().value = commitment.question
+            this.editAnswer().value = commitment.answer
         } else {
-            document.querySelector('#edit-note').value = commitment.note
+            this.editNote().value = commitment.note
         }
 
         this.editId = id
@@ -76,15 +83,16 @@ export class DashPlans extends DashPage {
         this.openCommitmentsModal('edit')
 
         if (commitment.category === 'post_training_plan') {
-            document.querySelector('#edit-question').focus()
+            document.querySelector('#edit-answer').focus()
         } else {
             document.querySelector('#edit-note').focus()
         }
     }
+
     closeCommitmentsModal() {
-        this.editQuestion = ''
-        this.editAnswer = ''
-        this.editNote = ''
+        this.editQuestion().value = ''
+        this.editAnswer().value = ''
+        this.editNote().value = ''
         this.editCategory = ''
         const modal = document.querySelector('#commitments-form')
         jQuery(modal).foundation('close')
@@ -122,7 +130,7 @@ export class DashPlans extends DashPage {
             id: id,
             user_id: jsObject.profile.user_id
         }
-        makeRequest('PUT', 'commitment', data, 'zume_system/v1' ).done( ( data ) => {
+        zumeRequest.put('commitment', data).then( ( data ) => {
             this.fetchCommitments()
         })
     }
@@ -132,7 +140,7 @@ export class DashPlans extends DashPage {
             id: id,
             user_id: jsObject.profile.user_id
         }
-        makeRequest('DELETE', 'commitment', data, 'zume_system/v1' ).done( ( data ) => {
+        zumeRequest.delete('commitment', data).then( ( data ) => {
             this.closeMenu(id)
             this.fetchCommitments()
         })
@@ -177,11 +185,13 @@ export class DashPlans extends DashPage {
         }
 
         if (this.editCategory === 'post_training_plan') {
-            data.question = this.editQuestion
-            data.answer = this.editAnswer
+            data.question = this.editQuestion().value
+            data.answer = this.editAnswer().value
         } else {
-            data.note = this.editNote
+            data.note = this.editNote().value
         }
+
+        console.log(this.editCategory)
 
         this.saving = true
         zumeRequest.update('commitment', data)
@@ -349,33 +359,35 @@ export class DashPlans extends DashPage {
                         <textarea
                             class="input"
                             id="edit-question"
+                            name="edit-question"
                             type="text"
                             rows="3"
                             placeholder=${jsObject.three_month_plan_translations.question}
-                            required
                             disabled
-                        >${this.editQuestion}</textarea>
+                        ></textarea>
                     </div>
                     <div class="form-group ${this.editCategory === 'post_training_plan' ? '' : 'hidden'}">
                         <label for="edit-answer">${jsObject.three_month_plan_translations.answer}</label>
                         <textarea
                             class="input"
                             id="edit-answer"
+                            name="edit-answer"
                             type="text"
                             placeholder=${jsObject.three_month_plan_translations.answer}
-                            required
-                        >${this.editAnswer}</textarea>
+                            ?required=${this.editCategory === 'post_training_plan'}
+                        ></textarea>
                     </div>
                     <div class="form-group ${this.editCategory === 'post_training_plan' ? 'hidden' : ''}">
                         <label for="edit-note">${jsObject.three_month_plan_translations.note}</label>
                         <textarea
                             class="input"
                             id="edit-note"
+                            name="edit-note"
                             type="text"
                             rows="3"
                             placeholder=${jsObject.three_month_plan_translations.note}
-                            required
-                        >${this.editNote}</textarea>
+                            ?required=${this.editCategory !== 'post_training_plan'}
+                        ></textarea>
                     </div>
 
                     <div class="cluster justify-flex-end">

@@ -3,6 +3,7 @@ import { html as staticHtml, literal } from "lit/static-html.js"
 import { Steps,  Wizards } from "./wizard-constants"
 import { WizardStateManager } from "./wizard-state-manager"
 import { WizardModuleManager } from "./wizard-module-manager"
+import { escapeObject } from "../../main"
 
 export class Wizard extends LitElement {
     static get properties() {
@@ -53,7 +54,7 @@ export class Wizard extends LitElement {
         this.steps = []
         this.step = {}
         this.params = {}
-        this.t = window.SHAREDFUNCTIONS.escapeObject(jsObject.translations)
+        this.t = escapeObject(jsObject.translations)
         this.finished = false
 
         this._handleHistoryPopState = this._handleHistoryPopState.bind(this)
@@ -87,7 +88,7 @@ export class Wizard extends LitElement {
         this._handleHistoryPopState( true )
 
         if (this.translations) {
-            this.t = window.SHAREDFUNCTIONS.escapeObject(this.translations)
+            this.t = escapeObject(this.translations)
         }
     }
 
@@ -256,8 +257,6 @@ export class Wizard extends LitElement {
             default:
                 break;
         }
-
-        console.log(this.stepIndex, this.steps.length)
 
         return staticHtml`
             <${tag}
