@@ -204,6 +204,15 @@
             }
         }
     }
+
+    .watch-btn {
+        border-width: calc( 0.1 * var(--slide-unit) );
+        padding: calc( 1 * var(--slide-unit)) calc( 2 * var(--slide-unit) );
+
+        .icon {
+            font-size: calc( 3 * var(--slide-unit) );
+        }
+    }
 }
 
 .video-slide {
@@ -214,7 +223,7 @@
     background-color: #2DADE2;
     max-height: 100vh;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
     position: relative;
     max-width: calc( 100% - 2 * 8.125% );
 
@@ -222,6 +231,7 @@
         width: 100%;
         height: 100%;
     }
+
 }
 @media (max-width: $break-md) {
     .video-slide {

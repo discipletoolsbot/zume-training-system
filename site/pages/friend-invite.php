@@ -115,7 +115,7 @@ class Zume_Training_Friend_Invite extends Zume_Magic_Page
                     jQuery('.warning.banner').hide()
                     let user_id = '<?php echo esc_html( $zume_user_profile['user_id'] ); ?>';
 
-                    makeRequest('POST', 'connect/friend', { code: code, user_id: user_id }, 'zume_system/v1' ).done( function( data ) {
+                    zumeRequest.post( 'connect/friend', { code: code, user_id: user_id }).then( function( data ) {
                         console.log(data)
                         successBanner.innerHTML = successBanner.innerHTML.replace('::name::', data.name)
                         jQuery(successBanner).show()

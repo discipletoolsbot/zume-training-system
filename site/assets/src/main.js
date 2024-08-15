@@ -61,3 +61,50 @@ jQuery(document).ready(() => {
         }
     })
 })
+
+
+/**
+* Lodash escape all string values in a simple key, value object.
+*
+* @param obj Must be a simple map of key, value pairs. E.g. a translation mapping.
+*/
+export function escapeObject(obj) {
+    return Object.fromEntries(
+        Object.entries(obj)
+            .map(([key, value]) => {
+                return [key, escapeHTML(value)]
+            })
+    )
+}
+export function escapeHTML(str) {
+    if (typeof str === 'undefined') {
+        return ''
+    }
+    if (typeof str !== 'string') {
+        return str
+    }
+    return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;')
+}
+export function setCookie(cname, cvalue, path = '', exdays = 0) {
+    let cookie = `${cname}=${cvalue};`;
+    if (Number.isInteger(exdays) && exdays > 0) {
+        var d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        cookie += 'expires=' + d.toUTCString() + ';';
+    }
+    if (path) {
+        let newPath = window.location.pathname.split(path)[0] + path;
+        newPath = newPath.replace(/^\/?([^\/]+(?:\/[^\/]+)*)\/?$/, '/$1'); // add leading and remove trailing slashes
+        cookie += 'path=' + newPath + ';';
+    }
+    document.cookie = cookie;
+}
+
+window.zumeApiShare.escapeObject = escapeObject
+window.zumeApiShare.escapeHTML = escapeHTML
+window.zumeApiShare.setCookie = setCookie

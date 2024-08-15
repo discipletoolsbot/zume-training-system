@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class JoinCommunity extends LitElement {
     static get properties() {
@@ -15,11 +16,11 @@ export class JoinCommunity extends LitElement {
 
     joinCommunity() {
         this.loading = true
-        makeRequest('POST', 'log', { type: 'system', subtype: 'join_community', log_once: true }, 'zume_system/v1/' )
-            .done( ( data ) => {
+        zumeRequest.post( 'log', { type: 'system', subtype: 'join_community', log_once: true }, 'zume_system/v1/' )
+            .then( ( data ) => {
                 this.success = true
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
                 this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             })

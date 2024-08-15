@@ -40,9 +40,10 @@ class Zume_Activites_List100 extends Zume_Activites
         }
     }
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
-        return [
+        $allowed_js = [
             'jquery',
         ];
+        return $allowed_js;
     }
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         return [];

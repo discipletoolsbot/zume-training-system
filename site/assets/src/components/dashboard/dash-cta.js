@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class DashCta extends LitElement {
     static get properties() {
@@ -111,7 +112,7 @@ export class DashCta extends LitElement {
     }
     logCelebrationsSeen() {
         this.celebrations.forEach(({type, subtype}) => {
-            makeRequest('POST', 'log', { type: type, subtype: subtype,log_once: true }, 'zume_system/v1')
+            zumeRequest.post( 'log', { type, subtype, log_once: true })
         })
         const celebrationKeys = this.getCtaKeys(this.celebrations)
         jsObject.allCtas = jsObject.allCtas.filter(({key}) => !celebrationKeys.includes(key))

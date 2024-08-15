@@ -2,6 +2,7 @@ import { html } from 'lit';
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
 import { RouteNames } from './routes';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class DashTopLevel extends DashPage {
     static get properties() {
@@ -34,7 +35,7 @@ export class DashTopLevel extends DashPage {
         this.view = view
     }
     refetchState() {
-        makeRequest('GET', 'user_stage', {}, 'zume_system/v1' ).done( ( data ) => {
+        zumeRequest.get( 'user_stage', {}).then( ( data ) => {
             if (!data || !data.state) {
                 console.error('Stage or state data not returned from api')
             }

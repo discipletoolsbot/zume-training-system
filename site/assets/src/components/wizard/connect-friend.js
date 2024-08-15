@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class ConnectFriend extends LitElement {
 
@@ -42,13 +43,13 @@ export class ConnectFriend extends LitElement {
         const code = url.searchParams.get('code')
         this.code = code
 
-        makeRequest( 'POST', 'connect/friend', { code: code }, 'zume_system/v1' )
+        zumeRequest.post( 'connect/friend', { code: code })
             .then( ( data ) => {
                 console.log(data)
 
                 this.message = this.t.success.replace('%s', data.name)
             })
-            .fail( ({ responseJSON: error }) => {
+            .catch( ({ responseJSON: error }) => {
                 console.log(error)
                 this.message = ''
                 if ( error.code === 'bad_friend_code' ) {
@@ -57,7 +58,7 @@ export class ConnectFriend extends LitElement {
                     this.setErrorMessage(this.t.error)
                 }
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
                 this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
                 this.dispatchEvent(new CustomEvent( 'wizard:finish', { bubbles: true } ))

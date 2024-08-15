@@ -443,7 +443,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     unlock3MonthPlan() {
         const data = { type: 'training', subtype: '26_heard' }
         this.unlockedSection.push(data)
-        makeRequest('POST', 'log', data, 'zume_system/v1/').done((data) => {
+        zumeRequest.post( 'log', data, 'zume_system/v1/').then((data) => {
             this.dispatchEvent(
                 new CustomEvent('user-state:change', { bubbles: true })
             )
@@ -455,7 +455,7 @@ export class DashBoard extends navigator(router(LitElement)) {
 
     refetchState() {
         this.getCtas()
-        makeRequest('GET', 'user_stage', {}, 'zume_system/v1').done((data) => {
+        zumeRequest.get( 'user_stage', {}).then((data) => {
             if (!data || !data.state) {
                 console.error('Stage or state data not returned from api')
             }
@@ -464,7 +464,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         })
     }
     refetchHost() {
-        makeRequest('GET', 'user_host', {}, 'zume_system/v1').done((data) => {
+        zumeRequest.get( 'user_host', {}).then((data) => {
             if (!data) {
                 console.error('Host not returned from api')
             }
@@ -574,12 +574,11 @@ export class DashBoard extends navigator(router(LitElement)) {
             jQuery(celebrationModal).foundation('open')
 
             celebrations.forEach(({ type, subtype }) => {
-                makeRequest(
-                    'POST',
+                zumeRequest.post(
                     'log',
                     { type, subtype },
                     'zume_system/v1'
-                ).done(() => {
+                ).then(() => {
                     this.dispatchEvent(
                         new CustomEvent('ctas:changed', { bubbles: true })
                     )
@@ -641,7 +640,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 Wizards.joinFriendsPlan,
             ].includes(type)
         ) {
-            makeRequest('GET', 'plans', {}, 'zume_system/v1').then(
+            zumeRequest.get( 'plans', {}).then(
                 (results) => {
                     const oldTrainingGroups = { ...this.trainingGroups }
                     const oldTrainingGroupKeys = Object.keys(oldTrainingGroups)

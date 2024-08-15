@@ -101,8 +101,6 @@ export class RequestCoach extends LitElement {
             this.requestCoach()
         }
 
-        console.log(this.hasNextStep)
-
         return html`
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${ this.variant === Steps.contactPreferences ? html`

@@ -15,13 +15,17 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    fetch(method, route, data = {}) {
-        let base = this.base
-        if (!this.base.endsWith('/') && !route.startsWith('/')) {
-            base += '/';
+    fetch(method, route, data = {}, base = '') {
+        let thisBase = this.base
+        if (base.length > 0) {
+            thisBase = base
         }
 
-        let url = `${this.root}${base}${route}`
+        if (!this.base.endsWith('/') && !route.startsWith('/')) {
+            thisBase += '/';
+        }
+
+        let url = `${this.root}${thisBase}${route}`
 
         if (method === 'GET' && Object.keys(data).length > 0) {
             const queryParams = new URLSearchParams(data)
@@ -59,8 +63,8 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    get(route, data = {}) {
-        return this.fetch('GET', route, data)
+    get(route, data = {}, base = '') {
+        return this.fetch('GET', route, data, base)
     }
     /**
      * Send a POST fetch request to zume_system/v1 API endpoints
@@ -70,8 +74,8 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    post(route, data = {}) {
-        return this.fetch('POST', route, data)
+    post(route, data = {}, base = '') {
+        return this.fetch('POST', route, data, base)
     }
     /**
      * Send a PUT fetch request to zume_system/v1 API endpoints
@@ -81,8 +85,8 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    put(route, data = {}) {
-        return this.fetch('PUT', route, data)
+    put(route, data = {}, base = '') {
+        return this.fetch('PUT', route, data, base)
     }
     /**
      * Send an UPDATE fetch request to zume_system/v1 API endpoints
@@ -92,8 +96,8 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    update(route, data = {}) {
-        return this.fetch('UPDATE', route, data)
+    update(route, data = {}, base = '') {
+        return this.fetch('UPDATE', route, data, base)
     }
     /**
      * Send a DELETE fetch request to zume_system/v1 API endpoints
@@ -103,9 +107,11 @@ class ZumeRequest {
      *
      * @returns Promise
      */
-    delete(route, data = {}) {
-        return this.fetch('DELETE', route, data)
+    delete(route, data = {}, base = '') {
+        return this.fetch('DELETE', route, data, base)
     }
 }
 
-export const zumeRequest = new ZumeRequest(window.wpApiShare.root, 'zume_system/v1', window.wpApiShare.nonce)
+export const zumeRequest = new ZumeRequest(window.zumeApiShare.root, 'zume_system/v1', window.zumeApiShare.nonce)
+// only for use in PHP files ;)
+window.zumeRequest = zumeRequest

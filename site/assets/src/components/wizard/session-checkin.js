@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class SessionCheckin extends LitElement {
 
@@ -42,11 +43,11 @@ export class SessionCheckin extends LitElement {
         const code = url.searchParams.get('code')
         this.code = code
 
-        makeRequest( 'POST', 'checkin', { code: code }, 'zume_system/v1' )
+        zumeRequest.post( 'checkin', { code: code })
             .then( ( data ) => {
                 this._sendDoneStepEvent()
             })
-            .fail( ({ responseJSON: error }) => {
+            .catch( ({ responseJSON: error }) => {
                 console.log(error)
                 this.message = ''
                 if ( error.code === 'bad_checkin_code' ) {
@@ -56,7 +57,7 @@ export class SessionCheckin extends LitElement {
                 }
                 this.dispatchEvent(new CustomEvent('wizard:finish', { bubbles: true }))
             })
-            .always(() => {
+            .finally(() => {
                 this.loading = false
                 this.dispatchEvent(new CustomEvent( 'loadingChange', { bubbles: true, detail: { loading: this.loading } } ))
             })

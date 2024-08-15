@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { zumeRequest } from '../../js/zumeRequest';
 
 export class Activity3MonthPlan extends LitElement {
     static get properties() {
@@ -55,12 +56,12 @@ export class Activity3MonthPlan extends LitElement {
                  */
                 /* TODO: should the note be created by the API rather than by the POSTer? */
                 /* TODO: same with the category */
-                const request = makeRequest('POST', 'commitment', {
+                const request = zumeRequest.post( 'commitment', {
                     "question": question,
                     "answer": answer,
                     "date": date,
                     "category": "post_training_plan"
-                }, 'zume_system/v1' )
+                })
                 requests.push(request.promise())
             }
         })
