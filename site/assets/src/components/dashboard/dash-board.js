@@ -284,8 +284,8 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.languageSelectorElements.forEach((element) => {
             const pageUrl = location.href
             const currentUrl = element.dataset.url
-            const indexOfDashboard = currentUrl.indexOf('dashboard')
-            const pageIndexOfDashboard = pageUrl.indexOf('dashboard')
+            const indexOfDashboard = currentUrl.indexOf('/dashboard') + 1
+            const pageIndexOfDashboard = pageUrl.indexOf('/dashboard') + 1
             const newUrl =
                 currentUrl.slice(0, indexOfDashboard + 'dashboard/'.length) +
                 pageUrl.slice(pageIndexOfDashboard + 'dashboard/'.length)
