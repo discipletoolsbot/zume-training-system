@@ -87,6 +87,7 @@ export class DashTrainings extends DashPage {
         return zumeRequest.get( `plan/${this.code}`, {} )
             .then((result) => {
                 this.training = result
+                this.error = ''
             })
             .then(() => {
                 this.refreshSessions()
