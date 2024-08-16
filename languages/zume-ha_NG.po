@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-30 02:59+0000\n"
+"PO-Revision-Date: 2024-08-16 18:44+0000\n"
 "Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ha_NG/>\n"
@@ -41,7 +41,6 @@ msgid "Dashboard"
 msgstr "Gaban"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
 msgstr "Zume mu"
 
@@ -59,7 +58,6 @@ msgid "Trainings"
 msgstr "Horarwa"
 
 #: appearance/style-override/navigation.php:135
-#, fuzzy
 msgid "Metrics"
 msgstr "Ma'auni"
 
@@ -76,7 +74,6 @@ msgid "Stories"
 msgstr "labarai"
 
 #: appearance/style-override/navigation.php:160
-#, fuzzy
 msgid "Global Map"
 msgstr "Taswirar Duniya"
 
@@ -128,7 +125,6 @@ msgid "Hearing and Obeying God"
 msgstr "ji da Biyayya ga Allah"
 
 #: globals.php:1975 globals.php:1977
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
 msgstr "S.0.A.P.S. Karatun Littafi Mai Tsarki"
 
@@ -333,7 +329,6 @@ msgstr ""
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
-#, fuzzy
 msgid "The Lord’s Supper"
 msgstr "Jibin Maraice na Ubangiji"
 
@@ -342,7 +337,6 @@ msgid "Prayer Walking and How To Do It"
 msgstr "Tafiya Sallah da Yadda Ake yi"
 
 #: globals.php:2132
-#, fuzzy
 msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
@@ -379,7 +373,6 @@ msgid "Faithfulness is Better Than Knowledge"
 msgstr "Aminci ya fi Ilimi"
 
 #: globals.php:2156
-#, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
@@ -461,7 +454,6 @@ msgid "Expect Non-Sequential Growth"
 msgstr "Yi tsammanin Haɓaka Rashin Tsabta"
 
 #: globals.php:2216
-#, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
@@ -496,7 +488,6 @@ msgid "Always Part of Two Churches"
 msgstr "Koyaushe Bangaren Ikklisiya Biyu"
 
 #: globals.php:2240
-#, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr "Koyi yadda zaka yi biyayya da dokokin Yesu ta hanyar tafiya DA tsaya."
 
@@ -2657,7 +2648,6 @@ msgstr ""
 "jagora don sake haifar da shi zuwa tsara na huɗu."
 
 #: site/course/course-content.php:2100
-#, fuzzy
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
@@ -2682,7 +2672,6 @@ msgstr ""
 "tunatar da kowa cikin kungiyar cewa ba za su iya yin komai ba tare da Shi!"
 
 #: site/course/course-content.php:2192
-#, fuzzy
 msgid "And we will practice this tool from our toolkit:"
 msgstr "Kuma za mu yi amfani da wannan kayan aiki daga kayan aikin mu:"
 
@@ -2727,7 +2716,6 @@ msgid "Concept from this session:"
 msgstr "Ra'ayi daga wannan zaman:"
 
 #: site/course/course-content.php:2281
-#, fuzzy
 msgid "Tool from this session:"
 msgstr "Kayan aiki daga wannan zaman:"
 
@@ -2752,7 +2740,6 @@ msgstr ""
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
-#, fuzzy
 msgid "SESSION 9"
 msgstr "ZAMA NA 9"
 
@@ -2813,7 +2800,6 @@ msgid "Why is pace important?"
 msgstr "Me yasa yake da mahimmanci?"
 
 #: site/course/course-content.php:2487
-#, fuzzy
 msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
@@ -2839,7 +2825,6 @@ msgstr ""
 "tare."
 
 #: site/course/course-content.php:2507
-#, fuzzy
 msgid ""
 "However, Jesus also taught us to leave our homes and loved ones behind and "
 "be willing to go anywhere — and everywhere — to share and start new "
@@ -2980,13 +2965,12 @@ msgstr ""
 "Filin Tsari: A ina ko wa kuke wa’azin bisharar Mulki? Yaya kuke yin haka?"
 
 #: site/course/course-content.php:2659
-#, fuzzy
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
-"Filin Haɓaka: Ta yaya kuke ba mutane kayan aiki da haɓaka su cikin ruhaniya, "
-"ɗaiɗaiku kuma a cikin hanyoyin sadarwar su na halitta?"
+"/Filin Haɓaka: Ta yaya kuke ba mutane kayan aiki da haɓaka su cikin "
+"ruhaniya, ɗaiɗaiku kuma a cikin hanyoyin sadarwar su na halitta?"
 
 #: site/course/course-content.php:2660
 #, fuzzy
@@ -4681,9 +4665,8 @@ msgid ""
 msgstr "Zan ƙarfafa mutanen da ke biye da su shiga wannan makarantar ta Zúme:"
 
 #: site/dashboard/dashboard.php:312
-#, fuzzy
 msgid "Other commitments:"
-msgstr "Sauran alkawura:"
+msgstr "Sauran alkawurra:"
 
 #: site/dashboard/wizard.php:162
 msgctxt ""

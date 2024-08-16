@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-24 15:44+0000\n"
+"PO-Revision-Date: 2024-08-15 15:49+0000\n"
 "Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
 "Language-Team: Yoruba <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/yo/>\n"
@@ -41,12 +41,10 @@ msgid "Dashboard"
 msgstr "Dasibodu"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
 msgstr "Zúme mi"
 
 #: appearance/style-override/navigation.php:117
-#, fuzzy
 msgid "Contacts"
 msgstr "Awọn olubasọrọ"
 
@@ -55,12 +53,10 @@ msgid "Groups"
 msgstr "Awọn ẹgbẹ"
 
 #: appearance/style-override/navigation.php:129
-#, fuzzy
 msgid "Trainings"
 msgstr "Ikẹkọ"
 
 #: appearance/style-override/navigation.php:135
-#, fuzzy
 msgid "Metrics"
 msgstr "Awọn iṣiro"
 
@@ -77,7 +73,6 @@ msgid "Stories"
 msgstr "awon itan"
 
 #: appearance/style-override/navigation.php:160
-#, fuzzy
 msgid "Global Map"
 msgstr "Map agbaye"
 
@@ -305,7 +300,6 @@ msgstr "Omo eyin Duckling"
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
 msgstr "Oju lati Wo Nibiti Ijọba naa ko si"
 
@@ -360,7 +354,6 @@ msgid "A Person of Peace and How To Find One"
 msgstr "Eniyan Alaafia ati bii O ṣe le Wa Kan"
 
 #: globals.php:2144
-#, fuzzy
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
@@ -377,7 +370,6 @@ msgid "Faithfulness is Better Than Knowledge"
 msgstr "Igbagbọ Dara ju Imọ lọ"
 
 #: globals.php:2156
-#, fuzzy
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
@@ -406,12 +398,10 @@ msgid "The B.L.E.S.S. Prayer"
 msgstr "Adura ibukun"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
-#, fuzzy
 msgid "3/3 Group Meeting Pattern"
 msgstr "Ilana Ipade Ẹgbẹ 3/3"
 
 #: globals.php:2180
-#, fuzzy
 msgid ""
 "A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
@@ -461,7 +451,6 @@ msgid "Expect Non-Sequential Growth"
 msgstr "Reti Idagbasoke Kii-So Koko-ọrọ"
 
 #: globals.php:2216
-#, fuzzy
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
@@ -495,9 +484,8 @@ msgid "Always Part of Two Churches"
 msgstr "Nigbagbogbo Apakan ti Awọn Ijo meji"
 
 #: globals.php:2240
-#, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lilọ ATI duro."
+msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lilọ ati duro."
 
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
@@ -603,23 +591,20 @@ msgstr ""
 "oludari ni gbigbe kan ni oye idagba ni ayika wọn."
 
 #: globals.php:2323
-#, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr "3-Igbejade Ihinrere Circle"
+msgstr "Igbejade 3-iyipo ihinrere"
 
 #: globals.php:2324
-#, fuzzy
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
-"Igbejade ihinrere 3-Circles jẹ ọna lati sọ ihinrere nipa lilo apejuwe ti o "
+"Igbejade ihinrere 3-iyipo jẹ ọna lati sọ ihinrere nipa lilo apejuwe ti o "
 "rọrun ti a le fa lori iwe kan."
 
 #: globals.php:2325
-#, fuzzy
 msgid "3-Circles"
-msgstr "3-Awọn iyika"
+msgstr "Iyika meta"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
@@ -638,17 +623,14 @@ msgid "Close"
 msgstr "Pade"
 
 #: globals.php:7305
-#, fuzzy
 msgid "No Results"
-msgstr "Ko si Awọn abajade"
+msgstr "Ko si esi"
 
 #: site/activities/coaching-checklist-host.php:97
-#, fuzzy
 msgid "H.O.S.T."
 msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:98
-#, fuzzy
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr "Ṣe ayẹwo ararẹ nipa lilo Gboran, Igbọran, Pipin, Ikẹkọ."
 
@@ -656,15 +638,13 @@ msgstr "Ṣe ayẹwo ararẹ nipa lilo Gboran, Igbọran, Pipin, Ikẹkọ."
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
-#, fuzzy
 msgid "Training Tools/Concepts"
-msgstr "Ikeko Omo"
+msgstr "Irinse Ikeko/agbekale"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
-#, fuzzy
 msgid "Ask yourself, have I"
-msgstr "Beere lọwọ ararẹ"
+msgstr "Beere lọwọ ararẹ, Ṣé mo ti"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -705,26 +685,22 @@ msgstr "Oṣiṣẹ"
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
-#, fuzzy
 msgid "Have I heard about this tool or concept?"
-msgstr "Njẹ Mo ti gbọ nipa ọpa tabi ero yii?"
+msgstr "Njẹ Mo ti gbọ nipa irinṣẹ́ yi tabi eronga yi?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:241
-#, fuzzy
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
-"Njẹ Mo ti gbọran si ọpa tabi imọran yii? Ti o ba jẹ ohun elo kan, Njẹ Mo ti "
-"ṣe adaṣe rẹ funrararẹ? Ti ero kan ba jẹ, ṣe o ti ronu lori bi o ṣe yi irisi "
-"rẹ pada?"
+"Ṣé mo ti ṣègbọràn sí irinṣẹ́ tàbí èrò yìí? Tí ó bá jẹ́ irinṣẹ́, ṣé mo ti ṣe "
+"é fúnra mi ni? Ti ero kan ba jẹ, ṣe o ti ronu lori bi o ṣe yi irisi rẹ pada?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:243
-#, fuzzy
 msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
@@ -736,7 +712,6 @@ msgstr ""
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:245
-#, fuzzy
 msgid ""
 "Have I trained others to share this tool or concept? If a tool, have I "
 "trained someone to share the tool with someone else? If a concept, have I "
@@ -748,14 +723,12 @@ msgstr ""
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
-#, fuzzy
 msgid "M.A.W.L."
 msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:99
-#, fuzzy
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Ṣọra, Fi silẹ."
+msgstr "Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Sọ́ọ̀nà, Lọ."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
@@ -888,9 +861,8 @@ msgstr "aimoye"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
-#, fuzzy
 msgid "Unskilled"
-msgstr "Alailagbara"
+msgstr "Alaimose"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
@@ -899,15 +871,13 @@ msgstr "oye"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Skilled"
-msgstr "Ogbon"
+msgstr "oye oye"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
-#, fuzzy
 msgid "Mentor’s Role"
-msgstr "Ipa Mentor"
+msgstr "Ipa olùkọ́ni"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
@@ -921,43 +891,35 @@ msgstr "Duro ki o wa pẹlu wọn titi ti wọn o fi ni awọn ipilẹ"
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
-#, fuzzy
 msgid "Stay engaged until consistently competent"
-msgstr "Duro adehun titi di igba ti o yẹ"
+msgstr "Wà ní ìfọwọ́sowọ́pọ̀ títí di ìgbà gbogbo tí ó mọ̀ọ́mọṣẹ́."
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
-#, fuzzy
 msgid "Relate to them as co-laborer"
-msgstr "Ṣe ibatan si wọn bi alabaṣiṣẹpọ"
+msgstr "Ṣe ibatan si wọn bi alaba ṣi ṣẹpọ"
 
 #: site/activities/coaching-checklist.php:167
-#, fuzzy
 msgid "Mentor’s Behaviors"
-msgstr "Awọn ihuwasi olutojueni"
+msgstr "Awọn ihuwasi oludamọran"
 
 #: site/activities/coaching-checklist.php:173
-#, fuzzy
 msgid "Direct and inform"
 msgstr "Taara ati sọfun"
 
 #: site/activities/coaching-checklist.php:176
-#, fuzzy
 msgid "Direct and support"
 msgstr "Taara ati atilẹyin"
 
 #: site/activities/coaching-checklist.php:179
-#, fuzzy
 msgid "Support and encourage"
 msgstr "Atilẹyin ati iwuri"
 
 #: site/activities/coaching-checklist.php:182
-#, fuzzy
 msgid "Receive updates"
 msgstr "Gba awọn imudojuiwọn"
 
 #: site/activities/coaching-checklist.php:187
-#, fuzzy
 msgid "Planning Responsibilities"
 msgstr "Awọn ojuse Eto"
 
@@ -967,14 +929,12 @@ msgid "Mentor decides"
 msgstr "Mentor pinnu"
 
 #: site/activities/coaching-checklist.php:196
-#, fuzzy
 msgid "Discuss and Mentor decides"
-msgstr "Jiroro ati Mentor pinnu"
+msgstr "Jiroro ati Olùdarí pinnu"
 
 #: site/activities/coaching-checklist.php:199
-#, fuzzy
 msgid "Discuss and Mentee decides"
-msgstr "Ṣe ijiroro ati Mentee pinnu"
+msgstr "Ṣe ijiroro ati e ni tí ń gba ìtọ́ni pinnu"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
@@ -997,9 +957,10 @@ msgstr ""
 "naa?"
 
 #: site/activities/coaching-checklist.php:275
-#, fuzzy
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
-msgstr "Tio ba ni igboya to, o le ko awon eroja na"
+msgstr ""
+"se eni tí ń gba ìtọ́ni yi naa ni igboya ati ni anfani lati ṣe ikẹkọ ohun elo "
+"naa ni imunadoko"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
@@ -1008,19 +969,16 @@ msgstr "omo ehin"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Unbeliever"
-msgstr "Awọn alaigbagbọ"
+msgstr "aláìgbàgbọ́"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
-#, fuzzy
 msgid "Unknown"
-msgstr "Aimọ"
+msgstr "aimọ"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
-#, fuzzy
 msgid "3-Month Plan"
 msgstr "Eto Osu Meta"
 
@@ -1033,13 +991,12 @@ msgid "Scripts are off"
 msgstr "ati pa awon iwe afowoko"
 
 #: site/activities/three-month-plan.php:81
-#, fuzzy
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
-"Jọwọ tan awọn iwe afọwọkọ lati lo oju-iwe ibaraenisepo yii. Bibẹẹkọ, o le lo "
-"ẹya ti a tẹjade nipa lilo ọna asopọ loke."
+"Jọwọ tan awọn iwe afọwọkọ lati lo oju-iwe ìfọwọ́sowọ́pò yii. Bibẹẹkọ, o le "
+"lo ẹya ti a tẹjade nipa lilo ọna asopọ loke."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
@@ -1047,7 +1004,6 @@ msgid "Save"
 msgstr "Fipamo"
 
 #: site/activities/three-month-plan.php:93
-#, fuzzy
 msgid "Cancel"
 msgstr "Fagile"
 
@@ -1154,13 +1110,12 @@ msgid "The Gospel"
 msgstr "ihinrere na"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
-#, fuzzy
 msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
-"Ọ̀nà kan láti ṣàjọpín ìhìn rere Ọlọ́run ni nípa lílo ìgbékalẹ̀ ìríran tí a ń pè "
-"ní 3 Circles."
+"Ọ̀nà kan tá a lè gbà wàásù ìhìn rere Ọlọ́run ni pé ká lo àwòrán kan tí wọ́n "
+"pè ní 3 Circles."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1489,11 +1444,12 @@ msgid "When you think of a church, what comes to mind?"
 msgstr "Ti o ba ronu nipa ile ijosin kan. kilo wa si o lokan"
 
 #: site/course/course-content.php:180
-#, fuzzy
 msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
-msgstr "Kini iyato larin aworan ati nkan ti an pe ni ile ijosin to rorun"
+msgstr ""
+"Kí ni ìyàtọ̀ tó wà láàárín àwòrán yìí àti èyí tí wọ́n ṣàpèjúwe nínú fídíò "
+"náà gẹ́gẹ́ bí \"Ṣọ́ọ̀ṣì Rírẹlẹ̀\""
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
@@ -1530,7 +1486,6 @@ msgid "Practice S.O.A.P.S."
 msgstr "Igbaradi S.O.A.P.S."
 
 #: site/course/course-content.php:274
-#, fuzzy
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
@@ -1543,14 +1498,12 @@ msgid "Scripture"
 msgstr "Mimo"
 
 #: site/course/course-content.php:277
-#, fuzzy
 msgid "Observation"
 msgstr "Akiyesi"
 
 #: site/course/course-content.php:278
-#, fuzzy
 msgid "Application"
-msgstr "Ipo"
+msgstr "ohun elo"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
@@ -1558,19 +1511,16 @@ msgid "Prayer"
 msgstr "Adua"
 
 #: site/course/course-content.php:280
-#, fuzzy
 msgid "Sharing"
-msgstr "Pin"
+msgstr "pínpín"
 
 #: site/course/course-content.php:282
-#, fuzzy
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
 "Pada papọ ki o pin S.O.A.P.S. ni awọn ẹgbẹ ti meji tabi mẹta. (iṣẹju 10)"
 
 #: site/course/course-content.php:304
-#, fuzzy
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
@@ -1579,14 +1529,12 @@ msgstr ""
 "se, ohun te so ati ohun te ro. ki egbe isiro o gbaradi"
 
 #: site/course/course-content.php:305
-#, fuzzy
 msgid "Accountability Groups are a great way to get ready!"
-msgstr "Awọn ẹgbẹ Iṣiro jẹ ọna nla lati murasilẹ!"
+msgstr "Àwọn Ẹgbẹ́ Ìdáhùn jẹ́ ọ̀nà tó dára láti múra sílẹ̀!"
 
 #: site/course/course-content.php:329
-#, fuzzy
 msgid "Practice Accountability Groups"
-msgstr "Iwa - Awọn ẹgbẹ iṣiro"
+msgstr "Àwọn Ẹgbẹ́ Ìdáhùn Ìṣe"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1594,20 +1542,18 @@ msgstr "Iwa - Awọn ẹgbẹ iṣiro"
 #: site/course/course-content.php:2040 site/course/course-content.php:2255
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
-#, fuzzy
 msgid "Scan the QR code."
-msgstr "Ṣayẹwo koodu QR naa."
+msgstr "Ṣe àgbéyẹ̀wò koodu QR naa."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
 msgstr "Adehun sinu egbe meji tabi meta."
 
 #: site/course/course-content.php:333
-#, fuzzy
 msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
-msgstr "Lo akoko yi lati sise isiro pelu ibere."
+msgstr "E lo ogún ìṣẹ́jú tó tẹ̀ lé e láti jọ ṣiṣẹ́ lórí àwọn Ìbéèrè Ìdáhùn"
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1623,9 +1569,8 @@ msgstr "Lo akoko yi lati sise isiro pelu ibere."
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
-#, fuzzy
 msgid "REVIEW"
-msgstr "AKOPO"
+msgstr "àtúnyẹwò"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1634,7 +1579,6 @@ msgstr "AKOPO"
 #: site/course/course-content.php:4372 site/course/course-content.php:4775
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
-#, fuzzy
 msgid "Concepts heard in this session:"
 msgstr "Awọn imọran ti a gbọ ni igba yii:"
 
@@ -1642,7 +1586,6 @@ msgstr "Awọn imọran ti a gbọ ni igba yii:"
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
-#, fuzzy
 msgid "Tools heard in this session:"
 msgstr "Awọn irinṣẹ ti a gbọ ni igba yii:"
 
@@ -1686,33 +1629,29 @@ msgid ""
 msgstr "Bbiyanju S.O.A.P.S. Bibeli kika larin bayi ati ipade to n bo."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
-#, fuzzy
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
-"Beere lọwọ Oluwa lati dari ọ lati koju o kere ju eniyan marun ti o mọ ti o "
-"jẹ onigbagbọ lati bẹrẹ S.O.A.P.S tiwọn. Biblu hihia egbesọegbesọ, podọ to "
-"enẹgodo nọ wàmọ."
+"Gbàdúrà pé kí Olúwa tọ́ ọ sọ́nà láti pe àwọn èèyàn márùn-ún okere ju  tí o "
+"mọ̀ tí wọ́n jẹ́ onígbàgbọ́ láti bẹ̀rẹ̀ S.O.A.P. tiwọn. Máa ka Bíbélì "
+"lójoojúmọ́, kó o sì máa kà á."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
-#, fuzzy
 msgid "SESSION 2"
-msgstr "IKOKO 2"
+msgstr "Igba keji"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
-#, fuzzy
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
-"Beere boya ẹnikẹni ninu ẹgbẹ ba ni awọn iwulo pato ti wọn yoo fẹ ki ẹgbẹ naa "
-"gbadura fun."
+"Béèrè bóyá ẹnikẹ́ni nínú àwùjọ náà ní àwọn àìní kan pàtó tí wọ́n fẹ́ kí "
+"àwùjọ náà gbàdúrà fún."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
-#, fuzzy
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
@@ -7144,7 +7083,6 @@ msgid "User Phone"
 msgstr "Ero ibaraeni soro"
 
 #: zume-training-system.php:279
-#, fuzzy
 msgid "User Timezone"
 msgstr "Aago olumulo"
 
@@ -7164,7 +7102,6 @@ msgid "User Preferred Email"
 msgstr "Imeeli"
 
 #: zume-training-system.php:311
-#, fuzzy
 msgid "Preferred Contact Methods"
 msgstr "Awọn ọna Olubasọrọ ti o fẹ"
 

@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-02-20 08:22-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-07-31 10:40+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Punjabi <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/pa_IN/>\n"
 "Language: pa_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -29,7 +30,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:259 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
-msgstr ""
+msgstr "ਸਿਖਲਾਈ"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
 msgid "How it Works"
@@ -37,11 +38,11 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
-msgstr ""
+msgstr "ਸਹਾਇਕ ਪੁਸਤਕ ਡਾਊਨਲੋਡ ਕਰੋ"
 
 #: appearance/style-override/navigation.php:97
 msgid "FAQs"
-msgstr ""
+msgstr "ਵਾਰ-ਵਾਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਪ੍ਰਸ਼ਨ"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
@@ -49,7 +50,7 @@ msgstr ""
 #: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
 msgid "Dashboard"
-msgstr ""
+msgstr "ਡੈਸ਼ਬੋਰਡ"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
@@ -61,7 +62,7 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
-msgstr ""
+msgstr "ਸਮੂਹ"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
@@ -73,11 +74,11 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
-msgstr ""
+msgstr "ਸਮਾਜ"
 
 #: appearance/style-override/navigation.php:148 site/pages/vision.php:88
 msgid "Vision"
-msgstr ""
+msgstr "ਦਰਸ਼ਣ"
 
 #: appearance/style-override/navigation.php:154
 msgid "Stories"
@@ -92,25 +93,27 @@ msgstr ""
 #: site/course/course-content.php:354 site/course/course-content.php:3160
 #: site/course/course-content.php:3178 site/pages/follow-jesus.php:174
 msgid "God Uses Ordinary People"
-msgstr ""
+msgstr "ਪਰਮੇਸ਼ੁਰ ਆਮ ਲੋਕਾਂ ਨੂੰ ਇਸਤੇਮਾਲ ਕਰਦਾ ਹੈ"
 
 #: globals.php:1940 site/pages/follow-jesus.php:175
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
+"ਤੁਸੀਂ ਵੇਖੋਗੇ ਕਿ ਕਿਵੇਂ ਪਰਮੇਸ਼ੁਰ ਆਮ ਲੋਕਾਂ ਨੂੰ ਇੱਕ ਵੱਡੇ ਪ੍ਰਭਾਅ ਵਾਸਤੇ ਇਸਤੇਮਾਲ ਕਰਦਾ"
+" ਹੈ।"
 
 #: globals.php:1951 site/course/course-content.php:3161
 #: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
-msgstr ""
+msgstr "ਚੇਲਾ ਅਤੇ ਕਲੀਸਿਯਾ ਦੀ ਇੱਕ ਸਾਧਾਰਣ ਪਰਿਭਾਸ਼ਾ"
 
 #: globals.php:1952 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:179
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
-msgstr ""
+msgstr "ਇੱਕ ਚੇਲਾ ਹੋਣ, ਇੱਕ ਚੇਲਾ ਬਣਾਉਣ, ਅਤੇ ਕਲੀਸਿਯਾ ਕੀ ਹੁੰਦੀ ਹੈ ਦੇ ਸਾਰ ਨੂੰ ਖੋਜਣਾ।"
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
@@ -120,11 +123,13 @@ msgstr ""
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr ""
+msgstr "ਆਤਮਿਕ ਸਾਹ ਲੈਣਾ ਪਰਮੇਸ਼ੁਰ ਦੀ ਸੁਣਨਾ ਅਤੇ ਆਗਿਆ ਪਾਲਨ ਕਰਨਾ ਹੈ"
 
 #: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
+"ਇੱਕ ਚੇਲਾ ਹੋਣ ਦਾ ਅਰਥ ਹੈ ਕਿ ਅਸੀਂ ਪਰਮੇਸ਼ੁਰ ਤੋਂ ਸੁਣਦੇ ਅਤੇ ਪਰਮੇਸ਼ੁਰ ਦੀ ਆਗਿਆ ਪਾਲਨ "
+"ਕਰਦੇ ਹਾਂ।"
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
@@ -140,13 +145,15 @@ msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
+"ਰੋਜ਼ਾਨਾ ਬਾਈਬਲ ਅਧਿਐਨ ਲਈ ਇੱਕ ਸਾਧਨ ਜਿਹੜਾ ਤੁਹਾਨੂੰ ਪਰਮੇਸ਼ੁਰ ਦੇ ਵਚਨ ਨੂੰ ਸਮਝਣ, ਆਗਿਆ ਪਾ"
+"ਲਨ ਕਰਨ ਅਤੇ ਵੰਡਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਦਾ ਹੈ।"
 
 #: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
-msgstr ""
+msgstr "ਜਵਾਬਦੇਹੀ ਸਮੂਹ"
 
 #: globals.php:1988 site/pages/follow-jesus.php:231
 msgid ""
@@ -154,16 +161,21 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
+"ਹਫ਼ਤੇ ਵਿੱਚ ਦੋ ਜਾਂ ਤਿੰਨ ਪੁਰਖ ਜਾਂ ਇਸਤਰੀਆਂ ਦੇ ਸਮੂਹ ਲਈ ਇਕੱਠੇ ਹੋਣ ਅਤੇ ਉਨ੍ਹਾਂ ਖੇਤਰਾਂ"
+" ਜਿਹੜੇ ਠੀਕ ਚੱਲ ਰਹੇ ਹਨ ਵਿੱਚ ਇੱਕ ਦੂਜੇ ਨੂੰ ਉਤਸ਼ਾਹਿਤ ਕਰਨ ਅਤੇ ਸੁਧਾਰਨ ਦੇ ਖੇਤਰਾਂ ਨੂੰ "
+"ਪਰਗਟ ਕਰਨ ਲਈ ਸਾਧਨ।"
 
 #: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
-msgstr ""
+msgstr "ਉਪਭੋਗਤਾ ਬਨਾਮ ਉਤਪਾਦਕ ਜੀਵਨਸ਼ੈਲੀ"
 
 #: globals.php:2000 site/pages/follow-jesus.php:195
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
+"ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਚਾਰ ਢੰਗਾਂ ਨੂੰ ਖੋਜੋਗੇ ਜਿਨ੍ਹਾਂ ਵਿੱਚ ਪਰਮੇਸ਼ੁਰ ਹਰ ਦਿਨ ਦੇ ਅਨੁਯਾਈਆਂ ਨੂੰ"
+" ਹੋਰ ਜ਼ਿਆਦਾ ਯਿਸੂ ਵਰਗਾ ਬਣਾਉਂਦਾ ਹੈ।"
 
 #: globals.php:2001
 msgid "Producer not Consumer"
@@ -171,19 +183,21 @@ msgstr ""
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
-msgstr ""
+msgstr "ਕਿਵੇਂ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਇੱਕ ਘੰਟਾ ਬਿਤਾਈਏ"
 
 #: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
-msgstr ""
+msgstr "ਵੇਖੋ ਕਿ ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਇੱਕ ਘੰਟਾ ਬਿਤਾਉਣਾ ਕਿੰਨਾ ਸੌਖਾ ਹੁੰਦਾ ਹੈ।"
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
-msgstr ""
+msgstr "ਸੰਬੰਧਾਂ ਦਾ ਭੰਡਾਰੀ – 100 ਦੀ ਸੂਚੀ"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
+"ਤੁਹਾਡੇ ਸੰਬੰਧਾਂ ਵਿੱਚ ਇੱਕ ਚੰਗਾ ਭੰਡਾਰੀ ਹੋਣ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਨ ਲਈ ਤਿਆਰ ਕੀਤਾ ਗਿਆ ਇੱਕ "
+"ਸਾਧਨ।"
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
@@ -194,29 +208,34 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:102
 #: utilities/integrations/replace-placeholder.php:103
 msgid "List of 100"
-msgstr ""
+msgstr "100 ਦੀ ਸੂਚੀ"
 
 #: globals.php:2035 globals.php:2037 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
-msgstr ""
+msgstr "ਆਤਮਿਕ ਅਰਥਪ੍ਰਬੰਧ"
 
 #: globals.php:2036 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
 msgstr ""
+"ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ ਪਰਮੇਸ਼ੁਰ ਦਾ ਅਰਥਪ੍ਰਬੰਧ ਸੰਸਾਰ ਦੇ ਨਾਲੋਂ ਵੱਖਰਾ ਹੈ। ਪਰਮੇਸ਼ੁਰ ਉਨ੍ਹਾਂ "
+"ਵਿੱਚ ਜ਼ਿਆਦਾ ਨਿਵੇਸ਼ ਕਰਦਾ ਹੈ ਜਿਹੜੇ ਕਿ ਜੋ ਉਨ੍ਹਾਂ ਨੂੰ ਪਹਿਲਾਂ ਦਿੱਤਾ ਗਿਆ ਸੀ ਉਸ ਵਿੱਚ "
+"ਵਫ਼ਾਦਾਰ ਹੁੰਦੇ ਹਨ।"
 
 #: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
-msgstr ""
+msgstr "ਖੁਸ਼ਖਬਰੀ ਅਤੇ ਕਿਵੇਂ ਇਸ ਨੂੰ ਵੰਡਣਾ ਹੈ"
 
 #: globals.php:2048 site/pages/follow-jesus.php:296
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr ""
+"ਮਨੁੱਖਤਾ ਦੇ ਅਰੰਭ ਤੋਂ ਇਸ ਯੁੱਗ ਦੇ ਅੰਤ ਤੱਕ ਪਰਮੇਸ਼ੁਰ ਦੀ ਖੁਸ਼ਖਬਰੀ ਨੂੰ ਵੰਡਣ ਦਾ ਇੱਕ ਢੰ"
+"ਗ ਸਿੱਖੋ।"
 
 #: globals.php:2049
 msgid "Sharing God‘s Story"
@@ -224,7 +243,7 @@ msgstr ""
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
-msgstr ""
+msgstr "ਬਪਤਿਸਮਾ ਅਤੇ ਕਿਵੇਂ ਇਸ ਨੂੰ ਕਰਨਾ ਹੈ"
 
 #: globals.php:2060 site/pages/follow-jesus.php:243
 msgid ""
@@ -232,33 +251,38 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
+"ਯਿਸੂ ਨੇ ਆਖਿਆ, “ਤੁਸੀਂ ਜਾ ਕੇ ਸਾਰੀਆਂ ਕੌਮਾਂ ਨੂੰ ਚੇਲਾ ਬਣਾਓ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਪਿਤਾ ਅਤੇ"
+" ਪੁੱਤਰ ਅਤੇ ਪਵਿੱਤਰ ਆਤਮਾ ਦੇ ਨਾਮ ਵਿੱਚ ਬਪਤਿਸਮਾ ਦਿਓ...।” ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ ਇਹ ਅਭਿਆਸ "
+"ਵਿੱਚ ਲਿਆਉਣਾ ਹੈ।"
 
 #: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
-msgstr ""
+msgstr "ਬਪਤਿਸਮਾ"
 
 #: globals.php:2071 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
-msgstr ""
+msgstr "ਆਪਣੀ 3 ਮਿੰਟ ਦੀ ਗਵਾਹੀ ਦਾ ਅਭਿਆਸ ਕਰੋ"
 
 #: globals.php:2072 site/pages/follow-jesus.php:300
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr ""
+"ਤਿੰਨ ਮਿੰਟ ਵਿੱਚ ਆਪਣੀ ਇਹ ਗਵਾਹੀ ਦੱਸਣਾ ਸਿੱਖੋ ਕਿ ਯਿਸੂ ਨੇ ਤੁਹਾਡੇ ਜੀਵਨ ਉੱਤੇ ਕਿਵੇਂ "
+"ਪ੍ਰਭਾਅ ਪਾਇਆ ਹੈ।"
 
 #: globals.php:2073
 msgid "3-Minute Testimony"
-msgstr ""
+msgstr "3 ਮਿੰਟ ਦੀ ਗਵਾਹੀ"
 
 #: globals.php:2083 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
 #: site/course/course-content.php:3823 site/pages/follow-jesus.php:182
 msgid "Vision Casting the Greatest Blessing"
-msgstr ""
+msgstr "ਦਰਸ਼ਣ ਦੱਸਣਾ ਅਤੇ ਸਭ ਤੋਂ ਮਹਾਨ ਬਰਕਤ"
 
 #: globals.php:2084 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:183
@@ -266,6 +290,8 @@ msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
 msgstr ""
+"ਯਿਸੂ ਮਸੀਹ ਦਾ ਸਿਰਫ ਇੱਕ ਚੇਲਾ ਹੀ ਨਹੀਂ ਪਰ ਸਮੁੱਚੇ ਆਤਮਿਕ ਪਰਿਵਾਰਾਂ ਨੂੰ ਤਿਆਰ ਕਰਨਾ "
+"ਸਿੱਖੋ ਜਿਹੜੇ ਆਉਣ ਵਾਲੀਆਂ ਪੀੜ੍ਹੀਆਂ ਲਈ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਦੇ ਹਨ।"
 
 #: globals.php:2085
 msgid "Great, Greater, and Greatest Blessing"
@@ -273,18 +299,18 @@ msgstr ""
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
-msgstr ""
+msgstr "ਬਤਖਾਂ ਦੇ ਨਮੂਨੇ ਵਿੱਚ  ਚੇਲਾਪਣ – ਤੁਰੰਤ ਅਗਵਾਈ ਕਰਨਾ"
 
 #: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr ""
+msgstr "ਸਿੱਖੋ ਕਿ ਬਤਖਾਂ ਵਾਂਙ ਚੇਲੇ ਦੇ ਨਮੂਨੇ ਦਾ ਚੇਲੇ ਬਣਾਉਣ ਦੇ ਨਾਲ ਕੀ ਸੰਬੰਧ ਹੈ।"
 
 #: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
-msgstr ""
+msgstr "ਚੇਲੇਪਣ ਬਿੱਚ ਬਤਖਾਂ ਦਾ ਉਦਾਹਰਣ"
 
 #: globals.php:2107 globals.php:2109 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
@@ -298,16 +324,20 @@ msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
 msgstr ""
+"ਇਹ ਵੇਖਣਾ ਅਰੰਭ ਕਰੋ ਕਿ ਕਿੱਥੇ ਪਰਮੇਸ਼ੁਰ ਦਾ ਰਾਜ ਨਹੀਂ ਹੈ। ਇਹ ਆਮ ਤੌਰ ਤੇ ਉਹ ਸਥਾਨ ਹੁੰਦੇ"
+" ਹਨ ਜਿੱਥੇ ਪਰਮੇਸ਼ੁਰ ਚਾਹੁੰਦਾ ਹੈ ਕਿ ਸਭ ਤੋਂ ਜ਼ਿਆਦਾ ਕੰਮ ਕੀਤਾ ਜਾਵੇ।"
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
-msgstr ""
+msgstr "ਪ੍ਰਭੂ ਭੋਜ ਅਤੇ ਕਿਵੇਂ ਇਸ ਵਿੱਚ ਅਗਵਾਈ ਕਰਨੀ ਹੈ"
 
 #: globals.php:2120
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
+"ਇਹ ਯਿਸੂ ਨਾਲ ਸਾਡੇ ਨਜ਼ਦੀਕੀ ਸੰਬੰਧ ਅਤੇ ਲਗਾਤਾਰ ਜਾਰੀ ਸੰਬੰਧ ਨੂੰ ਜਸ਼ਨ ਮਨਾਉਣ ਦਾ ਇੱਕ ਸਾਧਾ"
+"ਰਣ ਢੰਗ ਹੈ। ਜਸ਼ਨ ਮਨਾਉਣ ਦੇ ਇੱਕ ਸਾਧਾਰਣ ਢੰਗ ਨੂੰ ਸਿੱਖੋ।"
 
 #: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
@@ -318,7 +348,7 @@ msgstr ""
 
 #: globals.php:2131 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਯਾਤਰਾ ਅਤੇ ਕਿਵੇਂ ਇਸ ਨੂੰ ਕਰਨਾ ਹੈ"
 
 #: globals.php:2132
 msgid ""
@@ -331,11 +361,11 @@ msgstr ""
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਯਾਤਰਾ"
 
 #: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
-msgstr ""
+msgstr "ਇੱਕ ਸ਼ਾਂਤੀ ਦਾ ਮਨੁੱਖ ਅਤੇ ਕਿਵੇਂ ਇਸ ਨੂੰ ਲੱਭਣਾ ਹੈ"
 
 #: globals.php:2144
 msgid ""
@@ -346,11 +376,11 @@ msgstr ""
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr ""
+msgstr "ਸ਼ਾਂਤੀ ਦਾ ਮਨੁੱਖ"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
-msgstr ""
+msgstr "ਵਫ਼ਾਦਾਰੀ ਗਿਆਨ ਨਾਲੋਂ ਉੱਤਮ ਹੈ"
 
 #: globals.php:2156
 msgid ""
@@ -362,15 +392,17 @@ msgstr ""
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
-msgstr ""
+msgstr "ਵਫ਼ਾਦਾਰੀ"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
-msgstr ""
+msgstr "BLESS ਪ੍ਰਾਰਥਨਾ ਨਮੂਨਾ"
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
+"ਹੋਰਨਾਂ ਲਈ ਪ੍ਰਾਰਥਨਾ ਕਰਨ ਦੇ ਢੰਗਾਂ ਨੂੰ ਤੁਹਾਨੂੰ ਤੁਹਾਨੂੰ ਯਾਦ ਕਰਾਉਣ ਲਈ ਇੱਕ ਸਾਧਾਰਣ "
+"ਯਾਦ-ਪੱਤਰ ਦਾ ਅਭਿਆਸ ਕਰੋ।"
 
 #: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
@@ -378,7 +410,7 @@ msgstr ""
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
 msgid "3/3 Group Meeting Pattern"
-msgstr ""
+msgstr "3/3 ਸਮੂਹ ਮੀਟਿੰਗ ਦਾ ਨਮੂਨਾ"
 
 #: globals.php:2180
 msgid ""
@@ -389,28 +421,29 @@ msgstr ""
 
 #: globals.php:2181
 msgid "3/3 Group"
-msgstr ""
+msgstr "3/3 ਸਮੂਹ"
 
 #: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
-msgstr ""
+msgstr "ਸਿੱਧ ਚੇਲਿਆਂ ਲਈ ਸਿਖਲਾਈ ਚੱਕਰ"
 
 #: globals.php:2192 site/pages/follow-jesus.php:277
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
+"ਸਿਖਲਾਈ ਚੱਕਰ ਨੂੰ ਸਿੱਖੋ ਅਤੇ ਗੌਰ ਕਰੋ ਕਿ ਕਿਵੇਂ ਇਹ ਚੇਲਾ ਬਣਾਉਣ ਉੱਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।"
 
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
-msgstr ""
+msgstr "ਸਿਖਲਾਈ ਕ੍ਰਮ-ਚੱਕਰ"
 
 #: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
-msgstr ""
+msgstr "ਅਗਵਾਈ ਸੈੱਲ"
 
 #: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
@@ -418,11 +451,14 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
+"ਇੱਕ ਅਗਵਾਈ ਸੈੱਲ ਉਹ ਢੰਗ ਹੈ ਜਿਸ ਵਿੱਚ ਇੱਕ ਵਿਅਕਤੀ ਜਿਹੜਾ ਅਗਵਾਈ ਕੀਤੇ ਜਾਣ ਲਈ ਸੱਦਿਆ "
+"ਮਹਿਸੂਸ ਕਰਦਾ ਉਹ ਸੇਵਾ ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰਨ ਦੇ ਦੁਆਰਾ ਆਪਣੀ ਅਗਵਾਈ ਯੋਗਤਾ ਨੂੰ ਵਿਕਸਿਤ "
+"ਕਰਦਾ ਹੈ।"
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
 msgid "Expect Non-Sequential Growth"
-msgstr ""
+msgstr "ਗੈਰ-ਕ੍ਰਮ ਅਨੁਸਾਰ ਵਾਧਾ"
 
 #: globals.php:2216
 msgid ""
@@ -433,26 +469,28 @@ msgstr ""
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
 msgid "Pace of Multiplication Matters"
-msgstr ""
+msgstr "ਗੁਣਾਤਮਕ ਵਾਧੇ ਦੀ ਗਤੀ ਫ਼ਰਕ ਰੱਖਦੀ ਹੈ"
 
 #: globals.php:2228 site/pages/follow-jesus.php:285
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
+"ਬਹੁਭਾਗੀ ਮੁੱਦੇ ਅਤੇ ਤੇਜੀ ਨਾਲ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨਾ ਹੋਰ ਵੀ ਜ਼ਿਆਦਾ ਮਾਇਨੇ ਰੱਖਦਾ ਹੈ। "
+"ਵੇਖੋ ਕਿ ਕਿਉਂ ਗਤੀ ਮਹੱਤਵਪੂਰਣ ਹੁੰਦੀ ਹੈ।"
 
 #: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
-msgstr ""
+msgstr "ਸ਼ਾਂਤੀ"
 
 #: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2771 site/course/course-content.php:5159
 #: site/course/course-content.php:5177 site/pages/follow-jesus.php:234
 msgid "Always Part of Two Churches"
-msgstr ""
+msgstr "ਸਦਾ ਦੋ ਕਲੀਸਿਯਾਵਾਂ ਦਾ ਹਿੱਸਾ"
 
 #: globals.php:2240
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
@@ -462,13 +500,15 @@ msgstr ""
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr ""
+msgstr "ਤਿੰਨ ਮਹੀਨੇ ਦੀ ਯੋਜਨਾ"
 
 #: globals.php:2253
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
+"ਆਪਣੀ ਯੋਜਨਾ ਬਣਾਓ ਅਤੇ ਵੰਡੋ ਕਿ ਕਿਵੇਂ ਤੁਸੀਂ ਜ਼ੁਮੇ ਸਾਧਨ ਨੂੰ ਅਗਲੇ ਤਿੰਨ ਮਹੀਨਿਆਂ ਦੇ "
+"ਵਿੱਚ ਲਾਗੂ ਕਰੋਗੇ।"
 
 #: globals.php:2263 globals.php:2265
 #: site/activities/coaching-checklist-host.php:97
@@ -486,33 +526,37 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
-msgstr ""
+msgstr "ਕੋਚਿੰਗ ਜਾਂਚਸੂਚੀ"
 
 #: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
+"ਜਦੋਂ ਉਹ ਚੇਲੇ ਬਣਾਉਣ ਦੀ ਜਿਹੜੇ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਦੇ ਹਨ ਗੱਲ ਆਉਂਦੀ ਤਾਂ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ "
+"ਸਾਧਨ ਤੁਹਾਡੀ ਆਪਣੀ ਤਾਕਤ ਅਤੇ ਕਮਜ਼ੋਰੀਆਂ ਨੂੰ ਤੇਜੀ ਨਾਲ ਪਤਾ ਕਰਨ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।"
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
-msgstr ""
+msgstr "ਨੈਟਵਰਕ ਵਿੱਚ ਅਗਵਾਈ"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
+"ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨ ਵਾਲੀਆਂ ਕਲੀਸਿਯਾਵਾਂ ਇਕੱਠੇ ਇੱਕ ਵਿਸਤ੍ਰਤ, ਆਤਮਿਕ "
+"ਪਰਿਵਾਰ ਵਜੋਂ ਇਕੱਠੇ ਰਹਿ ਅਤੇ ਜੀਵਨ ਬਿਤਾ ਸਕਦੀਆਂ ਹਨ।"
 
 #: globals.php:2287 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
-msgstr ""
+msgstr "ਕੁਲੀਨ ਸਿਖਲਾਈ ਸਮੂਹ"
 
 #: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
@@ -520,14 +564,17 @@ msgid ""
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
+"ਇਹ ਇੱਕ ਉਹ ਸਮੂਹ ਹੈ ਜਿਸ ਵਿੱਚ ਉਹ ਲੋਕ ਸ਼ਾਮਲ ਹਨ ਜਿਹੜੇ ਕਿ 3/3 ਸਮੂਹ ਦੀ ਅਗਵਾਈ ਅਤੇ ਅਰੰ"
+"ਭ ਕਰ ਰਹੇ ਹਨ। ਇਹ ਇੱਕ 3/3 ਢਾਂਚੇ ਦਾ ਅਨੁਸਰਣ ਵੀ ਕਰਦਾ ਅਤੇ ਤੁਹਾਡੇ ਖੇਤਰ ਵਿੱਚ ਪਰਮੇਸ਼ੁਰ "
+"ਦੇ ਕੰਮ ਦੀ ਆਤਮਿਕ ਸੇਹਤ ਨੂੰ ਜਾਂਚਣ ਦਾ ਇੱਕ ਸ਼ਕਤੀਸ਼ਾਲੀ ਢੰਗ ਹੈ।"
 
 #: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
-msgstr ""
+msgstr "ਕੁਲੀਨ ਸਿਖਲਾਈ"
 
 #: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
-msgstr ""
+msgstr "ਚਾਰ ਖੇਤਰੀ ਸਾਧਨ"
 
 #: globals.php:2300
 msgid ""
@@ -535,19 +582,24 @@ msgid ""
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
+"ਚਾਰ ਖੇਤਰੀ ਤਸ਼ਖੀਸ਼ ਚਾਰਟ ਇੱਕ ਸਾਧਰਨ ਸਾਧਨ ਹੈ ਜਿਹੜਾ ਕਿ ਇੱਕ ਅਗਵਾਈ ਸੈੱਲ ਦੇ ਦੁਆਰਾ ਵਰਤਮਾ"
+"ਨ ਕੋਸ਼ਿਸ਼ਾਂ ਦੇ ਹਾਲਤ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਰਾਜ ਦੀ ਕਿਰਿਆ ਤੇ ਚਿੰਤਨ ਕਰਨ ਲਈ ਵਰਤਿਆ "
+"ਜਾਂਦਾ ਹੈ।"
 
 #: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
 #: site/course/course-content.php:2777 site/course/course-content.php:5420
 #: site/course/course-content.php:5450
 msgid "Generational Mapping"
-msgstr ""
+msgstr "ਕੁਲਪੱਤਰੀ ਨਕਸ਼ਾ"
 
 #: globals.php:2312
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
 msgstr ""
+"ਕੁਲਪੱਤਰੀ ਨਕਸ਼ਾ ਆਗੂਆਂ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਆਲੇ-ਦੁਆਲੇ ਇੱਕ ਅੰਦਲੋਨ ਦੇ ਵਾਧੇ ਨੂੰ ਸਮਝਣ ਵਿੱਚ "
+"ਸਹਾਇਤਾ ਕਰਨ ਲਈ ਇੱਕ ਹੋਰ ਸਾਧਾਰਣ ਸਾਧਨ ਹੈ।"
 
 #: globals.php:2323
 msgid "3-Circles Gospel Presentation"
@@ -577,7 +629,7 @@ msgstr ""
 #: site/parts/footer.php:79 site/parts/footer.php:86
 #: site/parts/language-menu.php:41
 msgid "Close"
-msgstr ""
+msgstr "ਬੰਦ ਕਰੋ"
 
 #: globals.php:7305
 msgid "No Results"
@@ -610,7 +662,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:113
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
-msgstr ""
+msgstr "ਸੁਣ ਲਿਆ"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:167
@@ -619,7 +671,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:116
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
-msgstr ""
+msgstr "ਪਾਲਨ ਕੀਤਾ"
 
 #: site/activities/coaching-checklist-host.php:131
 #: site/activities/coaching-checklist-host.php:171
@@ -628,7 +680,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
-msgstr ""
+msgstr "ਸ਼ੇਅਰ ਕੀਤਾ"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:175
@@ -637,7 +689,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
-msgstr ""
+msgstr "ਸਿੱਖ ਲਿਆ"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
@@ -924,11 +976,11 @@ msgstr ""
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
 msgid "Save"
-msgstr ""
+msgstr "ਸੇਵ"
 
 #: site/activities/three-month-plan.php:93
 msgid "Cancel"
-msgstr ""
+msgstr "ਰੱਦ ਕਰੋ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -937,6 +989,9 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
+"ਯਿਸੂ ਨੇ ਆਖਿਆ, “ਜਦ ਪਵਿੱਤਰ ਆਤਮਾ ਤੁਹਾਡੇ ਉੱਤੇ ਆਵੇਗਾ ਤਾਂ ਤੁਸੀਂ ਸ਼ਕਤੀ ਪਾਓਗੇ ਅਤੇ ਯਰੂ"
+"ਸ਼ਲਮ ਅਰ ਸਾਰੇ ਯਹੂਦਿਯਾ ਅਤੇ ਸਾਮਰਿਯਾ ਵਿੱਚ ਸਗੋਂ ਧਰਤੀ ਦੇ ਬੰਨੇ ਤੀਕੁਰ ਮੇਰੇ ਗਵਾਹ "
+"ਹੋਵੋਗੇ।”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -963,7 +1018,7 @@ msgstr ""
 #: site/course/course-content.php:2943 site/course/course-content.php:3050
 #: site/course/course-content.php:4756
 msgid "DISCUSS"
-msgstr ""
+msgstr "ਚਰਚਾ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
@@ -1007,7 +1062,7 @@ msgstr ""
 #: site/course/course-content.php:2545 site/course/course-content.php:2917
 #: site/course/course-content.php:2960
 msgid "WATCH"
-msgstr ""
+msgstr "ਵੇਖੋ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
@@ -1019,7 +1074,7 @@ msgstr ""
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3805 site/course/course-content.php:3824
 msgid "The Gospel"
-msgstr ""
+msgstr "ਇੰਜੀਲ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 msgid ""
@@ -1030,12 +1085,12 @@ msgstr ""
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
 msgid "What do you learn about mankind from this story?"
-msgstr ""
+msgstr "ਇਸ ਕਹਾਣੀ ਤੋਂ ਤੁਸੀਂ ਮਨੁੱਖਜਾਤੀ ਦੇ ਬਾਰੇ ਕੀ ਸਿੱਖਦੇ ਹੋ?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:917
 msgid "What do you learn about God?"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਪਰਮੇਸ਼ੁਰ ਦੇ ਬਾਰੇ ਕੀ ਸਿੱਖਦੇ ਹੋ?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:918
@@ -1213,7 +1268,7 @@ msgstr ""
 #: site/course/course-content.php:5884 site/course/course-content.php:5889
 #: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
-msgstr ""
+msgstr "ਚੈਕ-ਇੰਨ"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -1274,7 +1329,7 @@ msgstr ""
 #: site/course/course-content.php:5386 site/course/course-content.php:5431
 #: site/course/course-content.php:5523 site/course/course-content.php:5647
 msgid "PRAY"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਕਰੋ"
 
 #: site/course/course-content.php:71 site/course/course-content.php:3145
 msgid ""
@@ -1282,6 +1337,9 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
+"ਪ੍ਰਾਰਥਨਾ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ। ਆਤਮਿਕ ਅੰਤਰਦ੍ਰਿਸ਼ਟੀ ਅਤੇ ਬਦਲਾਅ ਪਵਿੱਤਰ ਆਤਮਾ ਤੋਂ ਬਿਨਾਂ ਸੰ"
+"ਭਵ ਨਹੀਂ ਹੈ। ਇੱਕ ਸਮੂਹ ਵਜੋਂ ਇਸ ਸੈਸ਼ਨ ਵਿੱਚ ਤੁਹਾਡੀ ਅਗਵਾਈ ਕਰਨ ਲਈ ਉਸ ਨੂੰ ਸੱਦਾ ਦੇਣ "
+"ਵਾਸਤੇ ਸਮਾਂ ਕਢੋ।"
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1299,7 +1357,7 @@ msgstr ""
 #: site/course/course-content.php:5281 site/course/course-content.php:5414
 #: site/course/course-content.php:5551 site/course/course-content.php:5691
 msgid "OVERVIEW"
-msgstr ""
+msgstr "ਨਿਰੀਖਣ"
 
 #: site/course/course-content.php:84 site/course/course-content.php:1138
 #: site/course/course-content.php:2387 site/course/course-content.php:3158
@@ -1315,7 +1373,7 @@ msgstr ""
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
-msgstr ""
+msgstr "ਆਤਮਿਕ ਸਾਹ ਲੈਣਾ"
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
@@ -1328,7 +1386,7 @@ msgstr ""
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
 #: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
-msgstr ""
+msgstr "S.O.A.P.S. ਬਾਈਬਲ ਪੜ੍ਹਾਈ"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
@@ -1339,10 +1397,12 @@ msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
+"ਜੇਕਰ ਯਿਸੂ ਨੇ ਚਾਹਿਆ ਸੀ ਕਿ ਉਸ ਦਾ ਹਰ ਚੇਲਾ ਉਸ ਦੀ ਮਹਾਨ ਆਗਿਆ ਨੂੰ ਪੂਰਾ ਕਰੇ, ਤਾਂ ਫਿਰ "
+"ਕਿਉਂ ਸਿਰਫ ਕੁਝ ਕੁ ਚੇਲੇ ਹੀ ਅਜਿਹਾ ਕਰਦੇ ਹਨ?"
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr ""
+msgstr "ਜਦੋਂ ਤੁਸੀਂ ਇੱਕ ਚਰਚ ਬਾਰੇ ਸੋਚਦੇ ਹਾਂ ਤੁਹਾਡੇ ਮਨ ਵਿੱਚ ਕੀ ਆਉਂਦਾ ਹੈ?"
 
 #: site/course/course-content.php:180
 msgid ""
@@ -1352,7 +1412,7 @@ msgstr ""
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਅਨੁਸਾਰ ਗੁਣਾਤਾਮਕ ਵਾਧਾ ਕਰਨ ਵਿੱਚ ਕਿਹੜਾ ਸੌਖਾ ਹੋਵੇਗਾ ਅਤੇ ਕਿਉਂ?"
 
 #: site/course/course-content.php:199
 msgid ""
@@ -1368,6 +1428,8 @@ msgstr ""
 msgid ""
 "Is hearing and responding to the Lord really like breathing? Why or why not?"
 msgstr ""
+"ਕੀ ਸੁਣਨਾ ਅਤੇ ਪ੍ਰਭੂ ਦਾ ਜਵਾਬ ਦੇਣਾ ਸੱਚਮੁੱਚ ਸਾਹ ਲੈਣ ਦੇ ਵਾਂਙ ਹੀ ਹੈ? ਕਿਉਂ ਜਾਂ ਕਿਉਂ "
+"ਨਹੀਂ?"
 
 #: site/course/course-content.php:244
 msgid ""
@@ -1375,6 +1437,9 @@ msgid ""
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
 msgstr ""
+"ਪਰਮੇਸ਼ੁਰ ਤੋਂ ਨਿਯਮਿਤ ਸੁਣਨਾ ਉਸ ਦੇ ਨਾਲ ਸਾਡੇ ਨਿੱਜੀ ਸੰਬੰਧ ਵਿੱਚ ਇੱਕ ਕੁੰਜ਼ੀ ਖੰਡ ਹੈ, "
+"ਅਤੇ ਆਗਿਆਕਾਰੀ ਵਿੱਚ ਬਣੇ ਰਹਿਣ ਦੀ ਸਾਡੀ ਯੋਗਤਾ ਉਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੁੰਦੀ ਜੋ ਉਹ ਸਾਡੇ "
+"ਆਲੇ-ਦੁਆਲੇ ਕਰ ਰਿਹਾ ਹੈ।"
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
@@ -1388,7 +1453,7 @@ msgstr ""
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr ""
+msgstr "ਵਚਨ"
 
 #: site/course/course-content.php:277
 msgid "Observation"
@@ -1401,7 +1466,7 @@ msgstr ""
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
 msgid "Prayer"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਕਰਨਾ"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
@@ -1437,7 +1502,7 @@ msgstr ""
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr ""
+msgstr "ਇਸਤਰੀਆਂ ਅਤੇ ਪੁਰਖਾਂ ਦੇ ਦੋ ਜਾਂ ਤਿੰਨ ਲੋਕਾਂ ਦੇ ਸਮੂਹਾਂ ਵਿੱਚ ਚਲੇ ਜਾਓ।"
 
 #: site/course/course-content.php:333
 msgid ""
@@ -1493,7 +1558,7 @@ msgstr ""
 #: site/course/course-content.php:5321 site/course/course-content.php:5461
 #: site/course/course-content.php:5583
 msgid "OBEY"
-msgstr ""
+msgstr "ਆਗਿਆ ਪਾਲਨ ਕਰਨਾ"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -1509,7 +1574,7 @@ msgstr ""
 #: site/course/course-content.php:5322 site/course/course-content.php:5462
 #: site/course/course-content.php:5584
 msgid "SHARE"
-msgstr ""
+msgstr "ਵੰਡੋ"
 
 #: site/course/course-content.php:376 site/course/course-content.php:3319
 msgid ""
@@ -1517,6 +1582,9 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
+"ਬਾਈਬਲ ਪੜ੍ਹਾਈ ਦਾ ਅਭਿਆਸ ਹੁਣ ਤੋਂ ਲੈ ਕੇ ਅਗਲੀ ਮੀਟਿੰਗ ਤੱਕ ਅਭਿਆਸ ਕਰੋ। ਮੱਤੀ 5-7 ਉੱਤੇ "
+"ਕੇਂਦਰਿਤ ਰਹੋ। ਘੱਟੋ ਘੱਟ ਇਸ ਨੂੰ ਦਿਨ ਵਿੱਚ ਇੱਕ ਵਾਰ ਪੜ੍ਹੋ - S.O.A.P.S. ਢਾਂਚੇ ਦਾ "
+"ਇਸਤੇਮਾਲ ਕਰਦੇ ਹੋਏ ਲਿਖਤੀ ਵੇਰਵਾ ਰੱਖੋ।"
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
@@ -1614,7 +1682,7 @@ msgstr ""
 #: site/course/course-content.php:5271 site/course/course-content.php:5404
 #: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
-msgstr ""
+msgstr "ਇਹ ਵੇਖਣ ਲਈ ਕਿ ਸਮੂਹ ਨੇ ਕਿਵੇਂ ਕੀਤਾ, ਕੁਝ ਸਮਾਂ ਕੱਢੋ।"
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
@@ -1632,7 +1700,7 @@ msgstr ""
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
 msgid "Prayer Cycle"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਚੱਕਰ"
 
 #: site/course/course-content.php:495
 msgid ""
@@ -1640,14 +1708,17 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
+"ਜੇਕਰ ਤੁਸੀਂ ਉਹ ਚੇਲੇ ਬਣਾਉਂਦੇ ਹੋ ਜਿਹੜੇ ਕਿ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਦੇ ਹਨ, ਤਦ ਸਾਨੂੰ ਉਨ੍ਹਾਂ "
+"ਨਾਲ ਇਹ ਵੰਡਣ ਦੀ ਲੋੜ ਹੈ ਕਿ ਕਿਵੇਂ ਉਹ ਸਿਰਫ ਉਪਭੋਗਤਾ ਹੀ ਨਹੀਂ ਪਰ ਉਤਪਾਦਕ ਹੋ ਸਕਦੇ ਹਨ। "
+"ਉਹ ਹੋ ਸਕਦੇ ਹਨ:"
 
 #: site/course/course-content.php:499
 msgid "Body Life"
-msgstr ""
+msgstr "ਸਰੀਰ ਵਿੱਚ ਜੀਵਨ"
 
 #: site/course/course-content.php:500
 msgid "Persecution and Suffering"
-msgstr ""
+msgstr "ਸਤਾਅ ਅਤੇ ਦੁੱਖ"
 
 #: site/course/course-content.php:527
 msgid ""
@@ -1657,17 +1728,21 @@ msgstr ""
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr ""
+msgstr "ਕਿੰਨਾ ਬਾਰੇ ਤੁਸੀਂ ਸ਼ੱਕ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
 msgstr ""
+"ਜਦੋਂ ਦੂਜਿਆਂ ਨੂੰ ਸਿਖਾਉਣ ਦੀ ਗੱਲ ਆਉਂਦੀ ਹੈ ਤਾਂ ਤੁਸੀਂ ਕਿੰਨਾ ਜ਼ਿਆਦਾ ਤਿਆਰ ਮਹਿਸੂਸ ਕਰਦੇ"
+" ਹੋ?"
 
 #: site/course/course-content.php:547
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
 msgstr ""
+"ਬਾਈਬਲ ਸਾਨੂੰ ਦੱਸਦੀ ਹੈ ਕਿ ਪ੍ਰਾਰਥਨਾ ਉਸੇ ਪਰਮੇਸ਼ੁਰ ਦੇ ਨਾਲ ਬੋਲਣ ਅਤੇ ਉਸ ਤੋਂ ਸੁਣਨ ਦਾ "
+"ਸਾਡਾ ਮੌਕਾ ਹੁੰਦਾ ਹੈ ਜਿਸ ਨੇ ਸਾਨੂੰ ਉਤਪੰਨ ਕੀਤਾ ਹੈ!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
 msgid "Pray the Prayer Cycle for an hour individually"
@@ -1683,23 +1758,26 @@ msgid ""
 "minutes for everyone to both find a quiet place to pray and to make their "
 "way back to the group."
 msgstr ""
+"ਸਮੂਹ ਦੇ ਲਈ ਵਾਪਸ ਆਉਣ ਅਤੇ ਫਿਰ ਇਕੱਠੇ ਹੋਣ ਦਾ ਸਮਾਂ ਨਿਰਧਾਰਿਤ ਕਰੋ। ਹਰੇਕ ਦੇ ਲਈ ਇੱਕ "
+"ਸਾਂਤ ਸਥਾਨ ਲੱਭਣ ਅਤੇ ਸਮੂਹ ਵਿੱਚ ਵਾਪਸ ਆਪਣੀ ਜਗ੍ਹਾ ਤੇ ਆਉਣ ਲਈ ਕੁਝ ਵਾਧੂ ਮਿੰਟ ਜ਼ਰੂਰ "
+"ਰੱਖੋ।"
 
 #: site/course/course-content.php:592
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr ""
+msgstr "ਪ੍ਰਾਰਥਨਾ ਵਿੱਚ ਇੱਕ ਘੰਟਾ ਖਰਚ ਲਈ ਤੁਹਾਡੀ ਪ੍ਰਤੀਕਿਰਿਆ ਕੀ ਹੈ?"
 
 #: site/course/course-content.php:593
 msgid "How do you feel?"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਕਿਵੇਂ ਦਾ ਮਹਿਸੂਸ ਕਰਦੇ ਹੋ?"
 
 #: site/course/course-content.php:594
 msgid "Did you learn or hear anything?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਕੁਝ ਸਿੱਖਦੇ ਜਾਂ ਸੁਣਦੇ ਹੋ? ਜੇਕਰ ਹਾਂ, ਤਾਂ ਕੀ?"
 
 #: site/course/course-content.php:595
 msgid ""
 "What would life be like if you made this kind of prayer a regular habit?"
-msgstr ""
+msgstr "ਜੇਕਰ ਤੁਸੀਂ ਇਸ ਪ੍ਰਾਰਥਨਾ ਨੂੰ ਆਪਣੀ ਰੋਜ਼ਾਨਾ ਦੀ ਆਦਤ ਬਣਾਉਂਦੇ ਹੋ ਤਾਂ ਕੀ ਹੋਵੇਗਾ?"
 
 #: site/course/course-content.php:613
 msgid ""
@@ -1719,7 +1797,7 @@ msgstr ""
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr ""
+msgstr "ਤੁਹਾਡੀ ਆਪਣੀ 100 ਦੀ ਸੂਚੀ ਤਿਆਰ ਕਰੋ"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
@@ -1745,7 +1823,7 @@ msgstr ""
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
 #: site/parts/nav.php:32
 msgid "Share"
-msgstr ""
+msgstr "ਸਾਂਝਾ ਕਰੋ"
 
 #: site/course/course-content.php:686 site/course/course-content.php:3570
 msgid ""
@@ -1820,24 +1898,28 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
+"ਯਿਸੂ ਨੇ ਆਖਿਆ – “ਜਾਓ ਅਤੇ ਜਾ ਕੇ ਸਾਰੀਆਂ ਕੌਮਾਂ ਨੂੰ, ਉਨ੍ਹਾਂ ਨੂੰ ਪਿਤਾ, ਪੁੱਤਰ ਅਤੇ "
+"ਪਵਿੱਤਰ ਆਤਮਾ ਦੇ ਨਾਮ ਵਿੱਚ ਬਪਤਿਸਮਾ ਦਿੰਦੇ ਹੋਏ ਮੇਰੇ ਚੇਲੇ ਬਣਾਓ...”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਕਦੇ ਕਿਸੇ ਨੂੰ ਬਪਤਿਸਮਾ ਦਿੱਤਾ ਹੈ?"
 
 #: site/course/course-content.php:986
 msgid "Would you even consider it?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਇਸ ਦੇ ਬਾਰੇ ਵਿਚਾਰ ਕਰੋਗੇ?"
 
 #: site/course/course-content.php:987
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
+"ਜੇਕਰ ਮਹਾਨ ਆਗਿਆ ਯਿਸੂ ਦੇ ਹਰੇਕ ਚੇਲੇ ਲਈ ਹੈ, ਤਾਂ ਕੀ ਇਸ ਦਾ ਇਹ ਅਰਥ ਹੈ ਕਿ ਯਿਸੂ ਦਾ ਹਰੇ"
+"ਕ ਚੇਲਾ ਦੂਜਿਆਂ ਨੂੰ ਬਪਤਿਸਮਾ ਦੇ ਸਕਦਾ ਹੈ? ਕਿਉਂ ਜਾਂ ਕਿਉਂ ਨਹੀਂ?"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr ""
+msgstr "ਮਹੱਤਵਪੂਰਣ ਚੇਤਾਵਨੀ: ਕੀ ਤੁਸੀਂ ਬਪਤਿਸਮਾ ਲਿਆ ਹੈ?"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -1845,6 +1927,9 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
+"ਜੇਕਰ ਨਹੀਂ ਤਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਇਸ ਸਿਖਲਾਈ ਤੋਂ ਇੱਕ ਸੈਸ਼ਨ ਪਹਿਲਾਂ ਇਸ ਦੀ ਯੋਜਨਾ ਬਣਾਉਣ "
+"ਲਈ ਉਤਸ਼ਾਹਿਤ ਕਰਦੇ ਹਾਂ। ਆਪਣੇ ਸਮੂਹ ਨੂੰ ਇਸ ਮਹੱਤਵਪੂਰਣ ਦਿਨ ਦਾ ਇੱਕ ਹਿੱਸਾ ਬਣਨ ਲਈ ਸੱਦਾ "
+"ਦਿਓ ਜਦੋਂ ਅਸੀਂ ਤੁਹਾਡੇ ਯਿਸੂ ਨੂੰ “ਕਬੂਲ” ਕਰਨ ਦੀ ਖੁਸ਼ੀ ਮਨਾਉਂਦੇ ਹਾਂ।"
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
@@ -1929,23 +2014,31 @@ msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
 msgstr ""
+"ਕੀ ਇਹੋ ਢੰਗ ਤੁਹਾਨੂੰ ਸਿਖਾਇਆ ਗਿਆ ਸੀ ਜਦੋਂ ਤੁਸੀਂ ਪਹਿਲੀ ਵਾਰ ਯਿਸੂ ਦੇ ਪਿੱਛੇ ਚੱਲਣਾ ਅਰੰ"
+"ਭ ਕੀਤਾ ਸੀ? ਜੇਕਰ ਨਹੀਂ, ਤਾਂ ਕੀ ਫ਼ਰਕ ਸੀ?"
 
 #: site/course/course-content.php:1243
 msgid ""
 "After you came to faith, how long was it before you began to disciple others?"
 msgstr ""
+"ਤੁਹਾਡੇ ਵਿਸ਼ਵਾਸ ਵਿੱਚ ਆਉਣ ਤੋਂ ਬਾਅਦ, ਕਿੰਨੇ ਚਿਰ ਬਾਅਦ ਤੁਸੀਂ ਹੋਰਨਾਂ ਨੂੰ ਚੇਲੇ ਬਣਾਉਣਾ "
+"ਸ਼ੁਰੂ ਕੀਤਾ ਸੀ?"
 
 #: site/course/course-content.php:1244
 msgid ""
 "What do you think would happen if new followers started sharing and "
 "discipling others, immediately?"
 msgstr ""
+"ਤੁਹਾਡੇ ਅਨੁਸਾਰ ਜੇਕਰ ਵਿਸ਼ਵਾਸੀ, ਤੁਰੰਤ ਹੋਰਨਾਂ ਨੂੰ ਯਿਸੂ ਬਾਰੇ ਦੱਸਣਾ ਅਤੇ ਚੇਲੇ ਬਣਾਉਣਾ "
+"ਸ਼ੁਰੂ ਕਰ ਦਿੰਦੇ ਹਨ ਤਾਂ ਕੀ ਹੋਵੇਗਾ?"
 
 #: site/course/course-content.php:1262
 msgid ""
 "What do ducklings have to do with disciple making? They lead and follow at "
 "the same time."
 msgstr ""
+"ਨਵੇਂ ਚੇਲਿਆਂ ਨੇ ਚੇਲੇ ਬਣਾਉਣ ਦੇ ਬਾਰੇ ਕੀ ਕਰਨਾ ਹੈ? ਉਹ ਇੱਕ ਹੀ ਸਮੇਂ ਪਿੱਛੇ ਵੀ ਚੱਲਦੇ "
+"ਅਤੇ ਅਗਵਾਈ ਵੀ ਕਰਦੇ ਹਨ।"
 
 #: site/course/course-content.php:1288
 msgid ""
@@ -1959,6 +2052,8 @@ msgid ""
 "What is one area of discipleship that you feel you could share with others? "
 "Who is someone that you could share with?"
 msgstr ""
+"ਚੇਲੇਪਣ ਦਾ ਕਿਹੜਾ ਖੇਤਰ ਹੈ ਜਿਹੜਾ ਤੁਸੀਂ ਦੂਜਿਆਂ ਨਾਲ ਵੰਡ ਸਕਦੇ ਹੋ? ਤੁਸੀਂ ਕਿਸ ਨਾਲ ਇਸ "
+"ਨੂੰ ਵੰਡ ਸਕਦੇ ਹੋ?"
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
@@ -1970,6 +2065,9 @@ msgid ""
 "seemed as if God was just... missing? These are usually the places where God "
 "wants to work the most."
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਕਦੇ ਇੱਕ ਅਜਿਹੇ ਘਰ ਜਾਂ ਗੁਆਂਢ ਵਿੱਚ ਜਾਂ ਇੱਕ ਸ਼ਹਿਰ ਵਿੱਚ ਗਏ ਜਿੱਥੇ ਕਿ ਤੁਸੀਂ "
+"ਵੇਖਿਆ ਕਿ ਪਰਮੇਸ਼ੁਰ ਉੱਥੇ ਨਹੀਂ ਸੀ? ਇਹੋ ਹੀ ਆਮ ਤੌਰ ਤੇ ਉਹ ਸਥਾਨ ਹੁੰਦੇ ਹਨ ਜਿੱਥੇ ਪਰਮੇਸ਼ੁ"
+"ਰ ਚਾਹੁੰਦਾ ਕਿ ਤੁਸੀਂ ਜ਼ਿਆਦਾ ਕੰਮ ਕਰੋ।"
 
 #: site/course/course-content.php:1334
 msgid ""
@@ -1979,7 +2077,7 @@ msgstr ""
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਅਨੁਸਾਰ ਇਹ ਕੀ ਹੈ?"
 
 #: site/course/course-content.php:1336
 msgid ""
@@ -1992,6 +2090,9 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
+"ਯਿਸੂ ਨੇ ਆਖਿਆ, “ਉਹ ਜੀਉਂਦੀ ਰੋਟੀ ਜੋ ਸਵਰਗੋਂ ਉੱਤਰੀ ਸੋ ਮੈਂ ਹਾਂ। ਜੇ ਕੋਈ ਇਸ ਰੋਟੀਓਂ ਕੁ"
+"ਝ ਖਾਵੇ ਤਾਂ ਉਹ ਸਦਾ ਤੀਕ ਜੀਉਂਦਾ ਰਹੇਗਾ ਜੋ ਰੋਟੀ ਮੈਂ ਦਿਆਂਗਾ ਸੋ ਮੇਰਾ ਮਾਸ ਹੈ ਜਿਹੜਾ "
+"ਜਗਤ ਦੇ ਜੀਉਣ ਲਈ ਮੈਂ ਦਿਆਂਗਾ।”"
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
@@ -2049,6 +2150,9 @@ msgid ""
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
+"ਕੀ ਕੋਈ ਵਿਅਕਤੀ ਜਿਹੜਾ “ਬਦਨਾਮ” ਹੈ (ਜਿਵੇਂ ਕਿ ਸਾਮਰੀ ਔਰਤ ਜਾਂ ਉਹ ਮਨੁੱਖ ਜਿਹੜਾ "
+"ਗਦਰੇਨਿਆਂ ਵਿੱਚ ਦੁਸ਼ਟ ਆਤਮਾ ਨਾਲ ਜਕੜਿਆ ਸੀ) ਇੱਕ ਸ਼ਾਂਤੀ ਦਾ ਪੁੱਤਰ ਹੋ ਸਕਦਾ ਹੈ? ਕਿਉਂ ਜਾਂ"
+" ਕਿਉਂ ਨਹੀਂ?"
 
 #: site/course/course-content.php:1594
 msgid ""
@@ -2081,16 +2185,22 @@ msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr ""
+"ਦੋ ਜਾਂ ਤਿੰਨ ਲੋਕਾਂ ਦੇ ਛੋਟੇ ਸਮੂਹ ਬਣਾ ਲਵੋ ਅਤੇ ਪ੍ਰਾਰਥਨਾ ਯਾਤਰਾ ਦਾ ਅਭਿਆਸ ਕਰਨ ਦੇ ਲਈ "
+"ਸਮਾਜ ਵਿੱਚ ਜਾਓ।"
 
 #: site/course/course-content.php:1639 site/course/course-content.php:4501
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
 msgstr ""
+"ਇੱਕ ਸਥਾਨ ਨੂੰ ਚੁਣਨਾ ਓਨਾ ਹੀ ਸੌਖਾ ਹੋ ਸਕਦਾ ਹੈ ਜਿੰਨਾ ਕਿ ਜਿੱਥੇ ਤੁਸੀਂ ਹੋ ਉੱਥੋਂ ਬਾਹਰ "
+"ਸੈਰ ਦੇ ਲਈ ਜਾਣਾ, ਜਾਂ ਤੁਸੀਂ ਇੱਕ ਖਾਸ ਜਗ੍ਹਾ ਤੇ ਜਾਣਾ ਵੀ ਚੁਣ ਸਕਦੇ ਹੋ।"
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr ""
+"ਜਿਵੇਂ ਪਰਮੇਸ਼ੁਰ ਅਗਵਾਈ ਕਰਦਾ ਉਵੇਂ ਜਾਓ, ਅਤੇ ਇਸ ਕਿਰਿਆ ਉੱਤੇ 60-90 ਮਿੰਟ ਖਰਚ ਕਰਨ ਦੀ "
+"ਯੋਜਨਾ ਬਣਾਓ।"
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
@@ -2167,6 +2277,9 @@ msgid ""
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
 msgstr ""
+"ਹੇਠਾਂ ਦਿੱਤੀ ਵੀਡਿਓ ਵਿੱਚ, ਤੁਹਾਨੂੰ ਇੱਕ ਪਰਸਪਰ 3/3 ਸਮੂਹ ਦੀ ਸਿਖਲਾਈ ਦਿੱਤੀ ਜਾਵੇਗੀ "
+"ਜਿੱਥੇ ਤੁਸੀਂ ਇੱਕ ਸਿਧਾਂਤ ਸਿੱਖੋਗੇ ਅਤੇ ਫਿਰ “ਚਲਾਓ ਰੁੱਕੋ” ਅਤੇ ਇਸ ਨੂੰ ਸਮੂਹ ਦੇ ਨਾਲ "
+"ਅਭਿਆਸ ਕਰੋ।"
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
 msgid ""
@@ -2177,7 +2290,7 @@ msgstr ""
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr ""
+msgstr "ਕੀ ਇੱਕ 3/3 ਸਮੂਹ ਇੱਕ ਛੋਟੀ ਕਲੀਸਿਯਾ ਗਿਣਿਆ ਜਾ ਸਕਦਾ ਹੈ? ਕਿਉਂ ਜਾਂ ਕਿਉਂ ਨਹੀਂ?"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4793
 msgid ""
@@ -2191,6 +2304,8 @@ msgid ""
 "your group meets again. Share this person’s name with the group before you "
 "go."
 msgstr ""
+"ਪ੍ਰਾਰਥਨਾ ਕਰੋ ਅਤੇ ਪਰਮੇਸ਼ੁਰ ਤੋਂ ਪੁੱਛੋ ਕਿ ਤੁਹਾਡੇ ਦੁਬਾਰਾ ਸਮੂਹ ਵਿੱਚ ਇਕੱਠੇ ਹੋਣ ਤੋਂ "
+"ਪਹਿਲਾਂ ਉਹ ਕਿਸ ਨਾਲ ਚਾਹੁੰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ 3/3 ਸਮੂਹ ਨੂੰ ਵੰਡੋ।"
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
@@ -2213,24 +2328,29 @@ msgid ""
 "Have you ever learned how to ride a bicycle? Have you ever helped someone "
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਕਦੇ ਸਾਈਕਲ ਚਲਾਉਣਾ ਸਿੱਖਿਆ ਹੈ? ਕੀ ਤੁਸੀਂ ਕਦੇ ਕਿਸੇ ਹੋਰ ਦੇ ਸਿੱਖਣ ਵਿੱਚ "
+"ਸਹਾਇਤਾ ਕੀਤੀ ਹੈ? ਜੇਕਰ ਹਾਂ, ਤਾਂ ਤੁਸੀਂ ਪਹਿਲਾਂ ਤੋਂ ਹੀ ਸਿਖਲਾਈ ਕ੍ਰਮ-ਚੱਕਰ ਨੂੰ ਜਾਣਦੇ "
+"ਹੋ ਸਕਦੇ ਹੋ?"
 
 #: site/course/course-content.php:2022
 msgid "Have you ever been a part of a Training Cycle?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਕਦੇ ਕਿਸੇ ਸਿਖਲਾਈ ਕ੍ਰਮ-ਚੱਕਰ ਦਾ ਹਿੱਸਾ ਰਹੇ ਹੋ?"
 
 #: site/course/course-content.php:2023
 msgid "Who did you train? Or who trained you?"
-msgstr ""
+msgstr "ਤੁਸੀਂ ਕਿਸ ਨੂੰ ਸਿਖਾਇਆ? ਜਾਂ ਤੁਹਾਨੂੰ ਕਿਸ ਨੇ ਸਿਖਾਇਆ ਸੀ?"
 
 #: site/course/course-content.php:2024
 msgid ""
 "Could the same person be at different parts of the Training Cycle while "
 "learning different skills?"
 msgstr ""
+"ਕੀ ਉਹੀ ਵਿਅਕਤੀ ਵੱਖ-ਵੱਖ ਸਿਖਲਾਈ ਹੁਨਰਾਂ ਨੂੰ ਸਿੱਖਦਾ ਹੋਇਆ ਸਿਖਲਾਈ ਕ੍ਰਮ-ਚੱਕਰ ਦੇ "
+"ਵੱਖ-ਵੱਖ ਭਾਗਾਂ ਦਾ ਹਿੱਸਾ ਹੋ ਸਕਦਾ ਹੈ?"
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
-msgstr ""
+msgstr "ਕਿਸੇ ਹੋਰ ਨੂੰ ਇਸੇ ਢੰਗ ਨਾਲ ਸਿਖਾਉਣਾ ਕਿਹੋ ਜਿਹਾ ਲੱਗੇਗਾ?"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
 msgid ""
@@ -2252,11 +2372,11 @@ msgstr ""
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
-msgstr ""
+msgstr "ਤੁਹਾਨੂੰ 3/3 ਸਮੂਹ ਬਾਰੇ ਸਭ ਤੋਂ ਵਧੀਆ ਕੀ ਲੱਗਾ? ਕਿਉਂ?"
 
 #: site/course/course-content.php:2064
 msgid "What was the most challenging? Why?"
-msgstr ""
+msgstr "ਸਭ ਤੋਂ ਵੱਧ ਚੁਣੌਤੀ ਵਾਲਾ ਕੀ ਸੀ? ਕਿਉਂ?"
 
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
@@ -2296,6 +2416,10 @@ msgid ""
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
+"ਤੁਹਾਡੇ ਸਮੂਹ ਨੂੰ ਇਸ ਸਿਖਲਾਈ ਵਿੱਚ ਇੱਥੇ ਤੱਕ ਆਉਣ ਲਈ ਊਰਜਾ ਦੇਣ, ਕੇਂਦਰਿਤ ਹੋਣ ਅਤੇ "
+"ਵਫ਼ਾਦਾਰ ਹੋਣ ਲਈ ਪਰਮੇਸ਼ੁਰ ਅੱਗੇ ਪ੍ਰਾਰਥਨਾ ਕਰੋ ਅਤੇ ਧੰਨਵਾਦ ਦਿਓ। ਪਰਮੇਸ਼ੁਰ ਨੂੰ ਕਹੋ ਕਿ "
+"ਉਹ ਸਮੂਹ ਵਿੱਚ ਹਰੇਕ ਨੂੰ ਪਵਿੱਤਰ ਆਤਮਾ ਦੁਆਰਾ ਯਾਦ ਕਰਾਵੇ ਕਿ ਉਹ ਉਸ ਦੀ ਸਹਾਇਤਾ ਤੋਂ "
+"ਬਿਨਾਂ ਕੁਝ ਨਹੀਂ ਕਰ ਸਕਦੇ ਹਨ।"
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
@@ -2305,16 +2429,20 @@ msgstr ""
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
+"ਯਿਸੂ ਨੇ ਆਖਿਆ, “ਜਿਹੜਾ ਤੁਹਾਡੇ ਵਿੱਚੋਂ ਵੱਡਾ ਹੋਣਾ ਚਾਹੁੰਦਾ ਹੈ ਉਹ ਤੁਹਾਡਾ ਟਹਿਲੂਆ "
+"ਬਣੇ।”"
 
 #: site/course/course-content.php:2239
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
+"ਕੀ ਤੁਸੀਂ ਯਿਸੂ ਦੇ ਚੇਲਿਆਂ ਦੇ ਇੱਕ ਸਮੂਹ ਨੂੰ ਜਾਣਦੇ ਹੋ ਜਿਹੜਾ ਕਿ ਇਕੱਠਾ ਹੁੰਦਾ ਜਾਂ "
+"ਇਕੱਠੇ ਹੋਣ ਅਤੇ ਜ਼ੁਮੇ ਸਿਖਲਾਈ ਸਿੱਖਣ ਲਈ ਇੱਕ ਅਗਵਾਈ ਸੈੱਲ ਨੂੰ ਬਣਾਉਣ ਦਾ ਇਛੁੱਕ ਹੋਵੇਗਾ?"
 
 #: site/course/course-content.php:2240
 msgid "What would it take to bring them together?"
-msgstr ""
+msgstr "ਉਨ੍ਹਾਂ ਨੂੰ ਇਕੱਠਾ ਕਰਨ ਲਈ ਕੀ ਕਰਨਾ ਹੋਵੇਗਾ?"
 
 #: site/course/course-content.php:2257
 msgid ""
@@ -2384,10 +2512,11 @@ msgstr ""
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
 msgstr ""
+"ਇਸ ਵੀਡਿਓ ਦੇ ਵਿੱਚ ਤੁਸੀਂ ਕਿਹੜਾ ਸਭ ਤੋਂ ਉਤਸ਼ਾਹਿਤ ਕਰਨ ਵਾਲਾ ਵਿਚਾਰ ਸੁਣਿਆ ਸੀ? ਕਿਉਂ?"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
-msgstr ""
+msgstr "ਸਭ ਤੋਂ ਵੱਧ ਚੁਣੌਤੀ ਵਾਲਾ ਵਿਚਾਰ ਕਿਹੜਾ ਹੈ? ਕਿਉਂ?"
 
 #: site/course/course-content.php:2460
 msgid ""
@@ -2395,10 +2524,14 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
+"ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨਾ ਫਰਕ ਬਣਾਉਂਦਾ ਹੈ ਅਤੇ ਤੇਜੀ ਨਾਲ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨਾ ਹੋਰ ਵੀ ਫਰਕ "
+"ਨੂੰ ਬਣਾਉਂਦਾ ਹੈ। ਗਤੀ ਨਾਲ ਫਰਕ ਪੈਂਦਾ ਹੈ ਕਿਉਂਕਿ ਕਿੱਥੇ ਅਸੀਂ ਆਪਣਾ ਸਦੀਪਕ ਕਾਲ "
+"ਬਿਤਾਵਾਂਗੇ – ਇੱਕ ਹੋਂਦ ਜਿਹੜੀ ਸਦਾ ਲਈ ਹੁੰਦੀ – ਇਸ ਛੋਟੇ ਸਮੇਂ ਉੱਤੇ ਹੀ ਨਿਰਧਾਰਿਤ ਹੁੰਦੀ"
+" ਹੈ ਜਿਸ ਨੂੰ ਜੀਵਨ ਆਖਿਆ ਜਾਂਦਾ ਹੈ।"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
-msgstr ""
+msgstr "ਗਤੀ ਕਿਉਂ ਮਹੱਤਵਪੂਰਣ ਹੈ?"
 
 #: site/course/course-content.php:2487
 msgid ""
@@ -2410,6 +2543,7 @@ msgstr ""
 msgid ""
 "What is one thing you can do starting this week that will make a difference?"
 msgstr ""
+"ਇਸ ਹਫ਼ਤੇ ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ ਕਿਹੜੀ ਇੱਕ ਗੱਲ ਹੈ ਜੋ ਤੁਸੀਂ ਫਰਕ ਬਣਾਉਣ ਲਈ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋਗੇ?"
 
 #: site/course/course-content.php:2506
 msgid ""
@@ -2477,7 +2611,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 msgid "Get a Coach"
-msgstr ""
+msgstr "ਕੋਚ ਪ੍ਰਾਪਤ ਕਰੋ"
 
 #: site/course/course-content.php:2626
 msgid ""
@@ -2654,6 +2788,9 @@ msgid ""
 "simple churches and making disciples who multiply than many pastors and "
 "missionaries around the world!"
 msgstr ""
+"ਹੋ ਸਕਦਾ ਤੁਹਾਨੂੰ ਇਸ ਦਾ ਨਾਮ ਪਤਾ ਹੋਵੇ, ਪਰ ਤੁਹਾਡੇ ਸੰਸਾਰ ਵਿੱਚ ਬਹੁਤ ਸਾਰੇ ਪਾਸਟਰਾਂ "
+"ਅਤੇ ਮਿਸ਼ਨਰੀਆਂ ਨਾਲੋਂ ਛੋਟੀ ਕਲੀਸਿਯਾ ਅਰੰਭ ਕਰਨ ਅਤੇ ਚੇਲੇ ਬਣਾਉਣ ਜਿਹੜੇ ਕਿ ਗੁਣਾਤਮਕ ਵਾਧਾ"
+" ਕਰਦੇ ਉੱਤੇ ਜ਼ਿਆਦਾ ਸਿਖਲਾਈ ਮਿਲੀ ਹੈ।"
 
 #: site/course/course-content.php:2881
 msgid ""
@@ -2668,12 +2805,18 @@ msgid ""
 "churches? How do they stay connected and live life together as an extended, "
 "spiritual family? They become a network!"
 msgstr ""
+"ਜਦੋਂ ਕਲੀਸਿਯਾਵਾਂ ਵਧਦੀਆਂ ਅਤੇ ਨਵੀਆਂ ਕਲੀਸਿਯਾਵਾਂ ਨੂੰ ਸਥਾਪਿਤ ਕਰਦੀਆਂ ਜਿਹੜੀਆਂ ਅੱਗੇ ਫਿ"
+"ਰ ਨਵੀਆਂ ਕਲੀਸਿਯਾਵਾਂ ਨੂੰ ਸਥਾਪਿਤ ਕਰਦੀਆਂ ਉਨ੍ਹਾਂ ਨਾਲ ਕੀ ਹੁੰਦਾ ਹੈ? ਉਹ ਕਿਵੇਂ ਆਪੋਂ "
+"ਵਿੱਚੀਂ ਸੰਬੰਧਤ ਰਹਿੰਦੀਆਂ ਅਤੇ ਇੱਕ ਵੱਡੇ, ਆਤਮਿਕ ਪਰਿਵਾਰ ਵਜੋਂ ਜੀਵਨ ਬਿਤਾਉਂਦੀਆਂ ਹਨ? "
+"ਉਹ ਇੱਕ ਨੈਟਵਰਕ ਬਣ ਜਾਂਦੇ ਹਨ!"
 
 #: site/course/course-content.php:2946
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
+"ਕੀ ਜਦੋਂ ਸਾਧਾਰਨ ਕਲੀਸਿਯਾਵਾਂ ਦਾ ਨੈਟਵਰਕ ਡੂੰਘੇ, ਵਿਅਕਤੀਗਤ ਸੰਬੰਧਾਂ ਵਿੱਚ ਜੁੜਿਆ ਰਹਿੰਦਾ"
+" ਤਾਂ ਕੀ ਇੱਥੇ ਲਾਭ ਹੁੰਦੇ ਹਨ? ਕਿਹੜੀਆਂ ਕੁਝ ਉਦਾਹਰਣਾਂ ਤੁਹਾਡੇ ਮਨ ਵਿੱਚ ਆਉਂਦੀਆਂ ਹਨ?"
 
 #: site/course/course-content.php:2964
 msgid ""
@@ -3225,21 +3368,21 @@ msgstr ""
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
-msgstr ""
+msgstr "ਹੋਮ"
 
 #: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:13
 #: site/parts/footer.php:10 site/parts/nav.php:23 site/parts/nav.php:75
 msgid "About"
-msgstr ""
+msgstr "ਬਾਰੇ"
 
 #: site/course/presenter.php:173
 msgid "Course"
-msgstr ""
+msgstr "ਕੋਰਸ"
 
 #: site/course/presenter.php:174 site/dashboard/dashboard.php:250
 #: site/pages/resources.php:88 site/parts/footer.php:41
 msgid "Resources"
-msgstr ""
+msgstr "ਸਾਧਨ"
 
 #: site/course/presenter.php:191
 msgid "Exit Course"
@@ -3263,7 +3406,7 @@ msgstr ""
 
 #: site/course/presenter.php:196
 msgid "Session"
-msgstr ""
+msgstr "ਸੈਸ਼ਨ"
 
 #: site/course/presenter.php:198
 msgid "View Transcript"
@@ -3316,7 +3459,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:163 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
-msgstr ""
+msgstr "ਡੀਲੀਟ"
 
 #: site/dashboard/dashboard.php:165
 msgid "Active"
@@ -3340,7 +3483,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
-msgstr ""
+msgstr "ਲੋਗਆਊਟ"
 
 #: site/dashboard/dashboard.php:171 site/pages/share.php:124
 msgid "Filter"
@@ -3369,23 +3512,23 @@ msgstr ""
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
 #: site/dashboard/wizard.php:237 site/profile/profile.php:116
 msgid "Name"
-msgstr ""
+msgstr "ਨਾਮ"
 
 #: site/dashboard/dashboard.php:179 site/dashboard/wizard.php:189
 #: site/dashboard/wizard.php:207 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
-msgstr ""
+msgstr "ਫੋਨ"
 
 #: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:205
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
-msgstr ""
+msgstr "ਈਮੇਲ"
 
 #: site/dashboard/dashboard.php:181
 msgid "Linked Accounts"
-msgstr ""
+msgstr "ਨਾਲ ਜੋੜੇ ਗਏ ਅਕਾਉਂਟ"
 
 #: site/dashboard/dashboard.php:182
 msgid "Communications Email"
@@ -3394,7 +3537,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:190
 #: site/profile/profile.php:128
 msgid "City"
-msgstr ""
+msgstr "ਸ਼ਹਿਰ"
 
 #: site/dashboard/dashboard.php:184
 msgid "No Locations found"
@@ -3405,7 +3548,7 @@ msgstr ""
 #: site/parts/language-menu.php:4 site/profile/profile.php:138
 #: utilities/post-types/posttype-pieces.php:302
 msgid "Language"
-msgstr ""
+msgstr "ਭਾਸ਼ਾ"
 
 #: site/dashboard/dashboard.php:187
 msgid "Edit Profile"
@@ -3667,7 +3810,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:256 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
-msgstr ""
+msgstr "ਸੈਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ"
 
 #: site/dashboard/dashboard.php:257
 msgid "Show details"
@@ -3846,22 +3989,29 @@ msgstr ""
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲਿਖੇ ਲੋਕਾਂ ਨੂੰ ਮੇਰੇ ਨਾਲ ਜਵਾਬਦੇਹੀ ਸਮੂਹ ਅਰੰਭ ਕਰਨ ਲਈ ਸੱਦਾ "
+"ਦੇਵਾਂਗਾ:"
 
 #: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨਾਲ ਉਨ੍ਹਾਂ ਦੇ ਆਪਣੇ ਜਵਾਬਦੇਹੀ ਸਮੂਹਾਂ ਨੂੰ ਅਰੰਭ ਕਰਨ ਲਈ "
+"ਚੁਣੌਤੀ ਦੇਵਾਂਗਾ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਸਿਖਾਵਾਂਗਾ ਕਿ ਕਿਵੇਂ ਕਰਨਾ ਹੈ:"
 
 #: site/dashboard/dashboard.php:302
 msgid "I will invite the following people to begin a 3/3 Group with me:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਮੇਰੇ ਨਾਲ ਇੱਕ 3/3 ਸਮੂਹ ਅਰੰਭ ਕਰਨ ਲਈ ਸੱਦਾ ਦੇਵਾਂਗਾ:"
 
 #: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਆਪਣੇ ਇੱਕ 3/3 ਸਮੂਹਾਂ ਨੂੰ ਅਰੰਭ ਕਰਨ ਦੀ "
+"ਚੁਣੌਤੀ ਦੇਵਾਂਗਾ ਅਤੇ ਇਹ ਕਰਨ ਲਈ ਉਨ੍ਹਾਂ ਨੂੰ ਚੁਣੋਤੀ ਦੇਵਾਂਗਾ:"
 
 #: site/dashboard/dashboard.php:304
 msgid ""
@@ -3873,10 +4023,12 @@ msgstr ""
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਮੇਰੇ ਨਾਲ ਪ੍ਰਾਰਥਨਾ ਯਾਤਰਾ ਵਿੱਚ ਭਾਗ ਲੈਣ ਲਈ ਸੱਦਾ "
+"ਦਿਆਂਗਾ:"
 
 #: site/dashboard/dashboard.php:306
 msgid "I will Prayer Walk once every [days / weeks / months]."
-msgstr ""
+msgstr "ਮੈਂ ਹਰੇਕ {ਦਿਨ/ਹਫ਼ਤੇ/ਮਹੀਨੇ} ਇੱਕ ਵਾਰ ਪ੍ਰਾਰਥਨਾ ਯਾਤਰਾ ਕਰਾਂਗਾ।"
 
 #: site/dashboard/dashboard.php:307
 msgid ""
@@ -3889,26 +4041,32 @@ msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਇੱਕ ਨਿਯਮਤ ਆਧਾਰ ਤੇ ਪ੍ਰਾਰਥਨਾ ਕ੍ਰਮ-ਚੱਕਰ ਸਾਧਨ ਦੀ ਵਰਤੋਂ "
+"ਕਰਨ ਦੀ ਚੁਣੌਤੀ ਦੇਵਾਂਗਾ:"
 
 #: site/dashboard/dashboard.php:309
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
+"ਮੈਂ ਹਰੇਕ {ਦਿਨ/ਹਫ਼ਤੇ/ਮਹੀਨੇ} ਇੱਕ ਵਾਰ ਪ੍ਰਾਰਥਨਾ ਕ੍ਰਮ-ਚੱਕਰ ਸਾਧਨ ਦੀ ਵਰਤੋਂ ਕਰਾਂਗਾ।"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਇੱਕ ਅਗਵਾਈ ਸੈੱਲ ਜਿਸ ਦੀ ਮੈਂ ਅਗਵਾਈ ਕਰਦਾ ਦਾ ਹਿੱਸਾ ਹੋਣ "
+"ਲਈ ਸੱਦਾ ਦਿਆਂਗਾ:"
 
 #: site/dashboard/dashboard.php:311
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
+"ਮੈਂ ਹੇਠਾਂ ਦਿੱਤੇ ਲੋਕਾਂ ਨੂੰ ਇਸ ਜ਼ੁਮੇ ਸਿਖਲਾਈ ਪਾਠਕ੍ਰਮ ਵਿੱਚ ਜਾਣ ਲਈ ਉਤਸ਼ਾਹਿਤ ਕਰਾਂਗਾ:"
 
 #: site/dashboard/dashboard.php:312
 msgid "Other commitments:"
-msgstr ""
+msgstr "ਹੋਰ ਟਿੱਪਣੀਆਂ:"
 
 #: site/dashboard/wizard.php:162
 msgctxt ""
@@ -3940,7 +4098,7 @@ msgstr ""
 #: site/dashboard/wizard.php:220 site/dashboard/wizard.php:306
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
-msgstr ""
+msgstr "ਅਗਲਾ"
 
 #: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
 msgid "Skip"
@@ -3948,7 +4106,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
-msgstr ""
+msgstr "ਸਮਾਪਤ"
 
 #: site/dashboard/wizard.php:171
 msgid "No locations found"
@@ -4042,7 +4200,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
-msgstr ""
+msgstr "ਸੰਦੇਸ਼ ਰਾਹੀਂ"
 
 #: site/dashboard/wizard.php:212
 msgid "What is your language preference?"
@@ -4050,7 +4208,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:214
 msgid "How can we serve you?"
-msgstr ""
+msgstr "ਅਸੀਂ ਤੁਹਾਡੀ ਸੇਵਾ ਕਿਵੇਂ ਕਰ ਸਕਦੇ ਹਾਂ?"
 
 #: site/dashboard/wizard.php:215
 msgid "Coaching"
@@ -4190,11 +4348,11 @@ msgstr ""
 
 #: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
-msgstr ""
+msgstr "ਹਾਂ"
 
 #: site/dashboard/wizard.php:270 site/pages/_strings-mobile-pwa.php:10
 msgid "No"
-msgstr ""
+msgstr "ਨਹੀਂ"
 
 #: site/dashboard/wizard.php:271
 msgid "What time of day?"
@@ -4234,7 +4392,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:280
 msgid "Other"
-msgstr ""
+msgstr "ਹੋਰ"
 
 #: site/dashboard/wizard.php:281
 msgid "What is the name of the training group?"
@@ -4290,11 +4448,11 @@ msgstr ""
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
 #: site/dashboard/wizard.php:313
 msgid "Location"
-msgstr ""
+msgstr "ਸਥਾਨ"
 
 #: site/dashboard/wizard.php:293
 msgid "Group Name"
-msgstr ""
+msgstr "ਸਮੂਹ ਦਾ ਨਾਮ"
 
 #: site/dashboard/wizard.php:294
 msgid "Group name"
@@ -4322,7 +4480,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:303
 msgid "Add"
-msgstr ""
+msgstr "ਸ਼ਾਮਲ ਕਰੋ"
 
 #: site/dashboard/wizard.php:304
 msgid "Add some dates to your schedule"
@@ -4360,54 +4518,60 @@ msgid ""
 "Your password reset link appears to be invalid. Please request a new link "
 "below."
 msgstr ""
+"ਤੁਹਾਡਾ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰਨ ਦਾ ਲਿੰਕ ਅਵੈਧ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਇੱਕ ਨਵੇਂ ਲਿੰਕ ਲਈ "
+"ਬੇਨਤੀ ਕਰੋ।"
 
 #: site/login/login-template.php:70
 msgid "Your password reset link has expired. Please request a new link below."
 msgstr ""
+"ਤੁਹਾਡੇ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਦੇ ਲਿੰਕ ਦਾ ਸਮਾਂ ਸਮਾਪਤ ਹੋ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਹੇਠਾਂ ਇੱਕ "
+"ਨਵੇਂ ਲਿੰਕ ਲਈ ਬੇਨਤੀ ਕਰੋ।"
 
 #: site/login/login-template.php:80
 msgid "Missing form verification. Refresh and try again."
-msgstr ""
+msgstr "ਤਸਦੀਕ ਕਰਨ ਵਾਲਾ ਫਾਰਮ ਨਹੀਂ ਹੈ। ਰਿਫਰੈਸ਼ ਅਤੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
 #: site/login/login-template.php:81
 msgid "Missing username or email address."
-msgstr ""
+msgstr "ਯੂਜ਼ਰ ਦਾ ਨਾਮ ਜਾਂ ਈਮੇਲ ਨਹੀਂ ਹੈ।"
 
 #: site/login/login-template.php:82
 msgid "ERROR: Enter a username or email address."
-msgstr ""
+msgstr "ਗਲਤੀ: ਯੂਜ਼ਰ ਨਾਮ ਜਾਂ ਈਮੇਲ ਪਤਾ ਭਰੋ।"
 
 #: site/login/login-template.php:83
 msgid "ERROR: There is no user registered with that email address."
-msgstr ""
+msgstr "ਗਲਤੀ: ਇਸ ਈਮੇਲ ਪਤੇ ਤੇ ਕਿਸੇ ਵੀ ਯੂਜ਼ਰ ਦਾ ਪੰਜੀਕਰਣ ਨਹੀਂ ਹੈ।"
 
 #: site/login/login-template.php:84
 msgid "ERROR: There is no user registered with that username."
-msgstr ""
+msgstr "ਗਲਤੀ: ਇਸ ਯੂਜ਼ਰ ਨਾਮ ਦਾ ਕਿਸੇ ਨੇ ਪੰਜੀਕਰਣ ਨਹੀਂ ਕੀਤਾ ਹੈ।"
 
 #: site/login/login-template.php:85
 msgid "ERROR: Invalid username or email."
-msgstr ""
+msgstr "ਗ਼ਲਤ: ਯੂਜ਼ਰਨੇਮ ਜਾਂ ਈਮੇਲ ਗ਼ਲਤ ਹੈ।"
 
 #: site/login/login-template.php:98 site/login/login-template.php:134
 msgid "Get New Password"
-msgstr ""
+msgstr "ਨਵਾਂ ਪਾਸਵਰਡ ਪ੍ਰਾਪਤ ਕਰੋ"
 
 #: site/login/login-template.php:123 site/login/login-template.php:124
 #: site/login/login-template.php:657
 msgid "Email Address"
-msgstr ""
+msgstr "ਈਮੇਲ ਪਤਾ"
 
 #: site/login/login-template.php:139
 msgid ""
 "Your password reset email has been sent. Check your email or junk mail for "
 "the link to reset your password."
 msgstr ""
+"ਤੁਹਾਡੇ ਪਾਸਵਰਡ ਨੂੰ ਰੀਸੈਟ ਕਰਨ ਦੀ ਈਮੇਲ ਭੇਜ ਦਿੱਤੀ ਗਈ ਹੈ। ਆਪਣਾ ਪਾਸਵਰਡ ਰੀਸੈਟ ਕਰਨ "
+"ਲਈ ਆਪਣੀ ਈਮੇਲ ਜਾਂ ਜੰਕਮੇਲ ਵੇਖੋ।"
 
 #: site/login/login-template.php:190 site/login/login-template.php:276
 #: site/login/login-template.php:455
 msgid "Passwords do not match. Please, try again."
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਮਿਲਦਾ ਨਹੀਂ। ਕਿਰਪਾ ਕਰਕੇ, ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
 #: site/login/login-template.php:217
 #, php-format
@@ -4416,17 +4580,17 @@ msgstr ""
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਦੁਬਾਰਾ ਰੀਸੈੱਟ ਕਰੋ"
 
 #: site/login/login-template.php:264
 msgid "Password Required"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਲਾਜ਼ਮੀ ਹੈ"
 
 #: site/login/login-template.php:265 site/login/login-template.php:444
 #: site/login/login-template.php:445 site/login/login-template.php:658
 #: site/login/login-template.php:791
 msgid "Password"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
@@ -4435,7 +4599,7 @@ msgstr ""
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
 msgid "Re-enter Password"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਮੁੜ ਤੋਂ ਭਰੋ"
 
 #: site/login/login-template.php:365
 msgid "Hello!"
@@ -4451,7 +4615,7 @@ msgstr ""
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:136
 #: utilities/apis/cta-api.php:138
 msgid "Register"
-msgstr ""
+msgstr "ਪੰਜੀਕਰਣ ਕਰੋ"
 
 #: site/login/login-template.php:400
 msgid "Or"
@@ -4471,11 +4635,11 @@ msgstr ""
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਫਾਰਮ ਵਿੱਚ ਕੁਝ ਗ਼ਲਤੀਆਂ ਹਨ।"
 
 #: site/login/login-template.php:592
 msgid "User action confirmed."
-msgstr ""
+msgstr "ਯੂਜ਼ਰ ਦੀ ਕਿਰਿਆ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਗਈ।"
 
 #: site/login/login-template.php:604
 msgid "Welcome back!"
@@ -4485,7 +4649,7 @@ msgstr ""
 #: site/login/login-template.php:735 site/pages/home.php:112
 #: site/parts/nav.php:39 site/parts/nav.php:101
 msgid "Login"
-msgstr ""
+msgstr "ਲੋਗਿਨ"
 
 #: site/login/login-template.php:634
 msgid "or sign in with email"
@@ -4493,11 +4657,11 @@ msgstr ""
 
 #: site/login/login-template.php:640
 msgid "Username or password does not match. Try again."
-msgstr ""
+msgstr "ਯੂਜ਼ਰਨੇਮ ਜਾਂ ਪਾਸਵਰਡ ਮਿਲਦਾ ਨਹੀਂ ਹੈ। ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
 
 #: site/login/login-template.php:659 site/login/login-template.php:792
 msgid "Remember Me"
-msgstr ""
+msgstr "ਮੈਨੂੰ ਯਾਦ ਰੱਖੋ"
 
 #: site/login/login-template.php:711
 msgid "Don't have an account?"
@@ -4505,7 +4669,7 @@ msgstr ""
 
 #: site/login/login-template.php:723
 msgid "Lost your password?"
-msgstr ""
+msgstr "ਪਾਸਵਰਡ ਗੁਆਚ ਗਿਆ?"
 
 #: site/login/login-template.php:734
 msgid "Already have an account?"
@@ -4521,36 +4685,38 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
-msgstr ""
+msgstr "ਖਾਤਾ"
 
 #: site/pages/_strings-mobile-pwa.php:14
 msgid "Settings"
-msgstr ""
+msgstr "ਸੈਟਿੰਗ"
 
 #: site/pages/_strings-mobile-pwa.php:15
 msgid "Downloads"
-msgstr ""
+msgstr "ਡਾਉਨਲੋਡਸ"
 
 #: site/pages/_strings-mobile-pwa.php:17
 msgid "Reset App"
-msgstr ""
+msgstr "ਐਪ ਰੀਸੈਟ ਕਰੋ"
 
 #: site/pages/_strings-mobile-pwa.php:18
 msgid ""
 "Resetting the app will delete all app data. Are you sure you want to reset?"
 msgstr ""
+"ਐਪ ਨੂੰ ਰੀਸੈਟ ਕਰਨਾ ਸਾਰੇ ਐਪ ਡਾਟਾ ਮਿਟਾ ਦੇਵੇਗਾ. ਕੀ ਤੁਸੀਂ ਯਕੀਨਨ ਰੀਸੈਟ ਕਰਨਾ ਚਾਹੁੰਦੇ"
+" ਹੋ?"
 
 #: site/pages/_strings-mobile-pwa.php:19
 msgid "Help"
-msgstr ""
+msgstr "ਮਦਦ ਕਰੋ"
 
 #: site/pages/_strings-mobile-pwa.php:20
 msgid "Workbook"
-msgstr ""
+msgstr "ਵਰਕਬੁੱਕ"
 
 #: site/pages/_strings-mobile-pwa.php:21
 msgid "Sign Out"
-msgstr ""
+msgstr "ਸਾਇਨ ਆਉਟ"
 
 #: site/pages/_strings-mobile-pwa.php:22
 msgid "Download All"
@@ -4558,43 +4724,43 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:23
 msgid "Download"
-msgstr ""
+msgstr "ਡਾਊਨਲੋਡ"
 
 #: site/pages/_strings-mobile-pwa.php:24
 msgid "Downloading"
-msgstr ""
+msgstr "ਡਾ .ਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
 
 #: site/pages/_strings-mobile-pwa.php:25
 msgid "Queued"
-msgstr ""
+msgstr "ਕਤਾਰ ਵਿੱਚ"
 
 #: site/pages/_strings-mobile-pwa.php:27
 msgid "Do you want to clear these download errors?"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਇਹਨਾਂ ਡਾਉਨਲੋਡ ਗਲਤੀਆਂ ਨੂੰ ਸਾਫ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?"
 
 #: site/pages/_strings-mobile-pwa.php:28
 msgid "Tap to persist"
-msgstr ""
+msgstr "ਜਾਰੀ ਰੱਖਣ ਲਈ ਟੈਪ ਕਰੋ"
 
 #: site/pages/_strings-mobile-pwa.php:29
 msgid "Select Language"
-msgstr ""
+msgstr "ਭਾਸ਼ਾ ਚੁਣੋ"
 
 #: site/pages/_strings-mobile-pwa.php:31
 msgid "No sessions available"
-msgstr ""
+msgstr "ਕੋਈ ਸੈਸ਼ਨ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"
 
 #: site/pages/_strings-mobile-pwa.php:32
 msgid "Exit"
-msgstr ""
+msgstr "ਨਿਕਾਸ"
 
 #: site/pages/_strings-mobile-pwa.php:33
 msgid "Previous"
-msgstr ""
+msgstr "ਪਿਛਲਾ"
 
 #: site/pages/_strings-mobile-pwa.php:37
 msgid "Install"
-msgstr ""
+msgstr "ਸਥਾਪਿਤ ਕਰੋ"
 
 #: site/pages/_strings-mobile-pwa.php:38
 msgid "This app can be installed to your device. Click to install this app."
@@ -4605,27 +4771,31 @@ msgid ""
 "This app can be installed to your device. Please use the Chrome browser to "
 "do so."
 msgstr ""
+"ਇਹ ਐਪ ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਤੇ ਸਥਾਪਿਤ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ. ਕਿਰਪਾ ਕਰਕੇ ਅਜਿਹਾ ਕਰਨ ਲਈ ਕਰੋਮ "
+"ਬ੍ਰਾ .ਜ਼ਰ ਦੀ ਵਰਤੋਂ ਕਰੋ."
 
 #: site/pages/_strings-mobile-pwa.php:40
 msgid "Learn more"
-msgstr ""
+msgstr "ਜਿਆਦਾ ਜਾਣੋ"
 
 #: site/pages/_strings-mobile-pwa.php:41
 msgid ""
 "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app."
 msgstr ""
+"ਇਸ ਐਪ ਨੂੰ ਸਥਾਪਤ ਕਰਨ ਲਈ ਸਫਾਰੀ ਦੇ ਸ਼ੇਅਰ ਆਈਕਨ 'ਤੇ ਟੈਪ ਕਰੋ ਅਤੇ' ਹੋਮ ਸਕ੍ਰੀਨ ਵਿੱਚ "
+"ਸ਼ਾਮਲ ਕਰੋ 'ਨੂੰ ਟੈਪ ਕਰੋ."
 
 #: site/pages/_strings-mobile-pwa.php:42
 msgid "Update"
-msgstr ""
+msgstr "ਨਵੀਨੀਕਰਣ"
 
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "A new version of this app is available. Click to update this app."
-msgstr ""
+msgstr "ਇਸ ਐਪ ਦਾ ਨਵਾਂ ਸੰਸਕਰਣ ਉਪਲਬਧ ਹੈ. ਇਸ ਐਪ ਨੂੰ ਅਪਡੇਟ ਕਰਨ ਲਈ ਕਲਿੱਕ ਕਰੋ."
 
 #: site/pages/_strings-mobile-pwa.php:44
 msgid "Storage"
-msgstr ""
+msgstr "ਸਟੋਰੇਜ"
 
 #: site/pages/about.php:87
 msgid "What is Zúme Training?"
@@ -4694,7 +4864,7 @@ msgstr ""
 
 #: site/pages/about.php:132
 msgid "1 Training"
-msgstr ""
+msgstr "1 ਸਿਖਲਾਈ"
 
 #: site/pages/about.php:136
 msgid "Part 1:"
@@ -4708,7 +4878,7 @@ msgstr ""
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
-msgstr ""
+msgstr "2 ਸਾਧਾਰਣ ਕਲੀਸਿਯਾਵਾਂ"
 
 #: site/pages/about.php:147
 msgid "Part 2:"
@@ -4730,7 +4900,7 @@ msgstr ""
 
 #: site/pages/about.php:157
 msgid "Get Started"
-msgstr ""
+msgstr "ਸ਼ੁਰੂ ਕਰੋ"
 
 #: site/pages/about.php:162
 msgid "How does Zúme Training Work?"
@@ -4926,23 +5096,23 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
-msgstr ""
+msgstr "ਇਸ ਵੀਡਿਓ ਨੂੰ ਵੇਖੋ"
 
 #: site/pages/follow-jesus.php:95 site/pages/pieces.php:95
 msgid "Ask Yourself"
-msgstr ""
+msgstr "ਆਪਣੇ ਆਪ ਨੂੰ ਪੁੱਛੋ"
 
 #: site/pages/follow-jesus.php:96 site/pages/pieces.php:96
 msgid "Download Free Guidebook"
-msgstr ""
+msgstr "ਮੁਫ਼ਤ ਸਹਾਇਕ ਪੁਸਤਕ ਡਾਊਨਲੋਡ ਕਰੋ"
 
 #: site/pages/follow-jesus.php:97 site/pages/pieces.php:97
 msgid "Listen and Read Along"
-msgstr ""
+msgstr "ਸੁਣੋ ਅਤੇ ਨਾਲ-ਨਾਲ ਪੜ੍ਹੋ"
 
 #: site/pages/follow-jesus.php:138 site/parts/footer.php:17
 msgid "How to Follow Jesus"
-msgstr ""
+msgstr "ਯਿਸੂ ਨੂੰ ਕਿਸ ਦੀ ਪਾਲਣਾ ਕਰਨ ਲਈ"
 
 #: site/pages/follow-jesus.php:151
 msgid ""
@@ -4957,21 +5127,23 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
-msgstr ""
+msgstr "ਇੱਕ ਯਿਸੂ ਦਾ ਚੇਲਾ ਕੌਣ ਹੁੰਦਾ ਹੈ?"
 
 #: site/pages/follow-jesus.php:189
 msgid "What are the activities of a follower of Jesus?"
-msgstr ""
+msgstr "ਇੱਕ ਯਿਸੂ ਦੇ ਚੇਲੇ ਦਾ ਕੰਮ ਕੀ ਹੁੰਦਾ ਹੈ?"
 
 #: site/pages/follow-jesus.php:213
 msgid "Bible Reading"
-msgstr ""
+msgstr "ਬਾਈਬਲ ਪੜ੍ਹਾਈ"
 
 #: site/pages/follow-jesus.php:220
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
+"ਚੇਲੇ ਕੀ ਜਾਣਦੇ ਹਨ ਇਹ ਮਹੱਤਵਪੂਰਣ ਹੈ – ਪਰ ਜੋ ਉਹ ਜਾਣਦੇ ਹਨ ਉਸ ਦੇ ਨਾਲ ਕੀ ਕਰਦੇ ਹਨ ਇਹ "
+"ਹੋਰ ਵੀ ਜ਼ਿਆਦਾ ਮਹੱਤਵਪੂਰਣ ਹੈ।"
 
 #: site/pages/follow-jesus.php:227
 msgid ""
@@ -4979,10 +5151,14 @@ msgid ""
 "fellowship and practice obeying and sharing what they've learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
+"ਇੱਕ 3/3 ਸਮੂਹ ਯਿਸੂ ਦੇ ਚੇਲਿਆਂ ਲਈ ਇਕੱਠੇ ਹੋਣ, ਪ੍ਰਾਰਥਨਾ ਕਰਨ, ਸਿੱਖਣ, ਵਧਣ, ਸੰਗਤੀ "
+"ਕਰਨ ਅਤੇ ਜੋ ਉਨ੍ਹਾਂ ਸਿੱਖਿਆ ਹੈ ਦਾ ਆਗਿਆ ਪਾਲਨ ਕਰਨ ਅਤੇ ਉਸ ਨੂੰ ਵੰਡਣ ਦਾ ਇੱਕ ਢੰਗ ਹੈ। "
+"ਇਸ ਢੰਗ ਵਿੱਚ, ਇੱਕ 3/3 ਸਮੂਹ ਇੱਕ ਛੋਟਾ ਸਮੂਹ ਹੀ ਨਹੀਂ ਹੈ ਪਰ ਇੱਕ ਸਾਧਾਰਨ ਕਲੀਸਿਯਾ ਹੈ।"
 
 #: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr ""
+"ਜਾਣ ਅਤੇ ਟਿਕੇ ਰਹਿਣ ਦੇ ਦੁਆਰਾ ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ ਯਿਸੂ ਦੇ ਹੁਕਮਾਂ ਦੀ ਪਾਲਨਾ ਕਰਨੀ ਹੈ।"
 
 #: site/pages/follow-jesus.php:239
 msgid ""
@@ -4992,11 +5168,13 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
-msgstr ""
+msgstr "ਬਲੀਦਾਨ ਅਤੇ ਦੁੱਖ"
 
 #: site/pages/follow-jesus.php:261
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
+"ਮੈਂ ਕਿਵੇਂ ਯਿਸੂ ਦਾ ਆਗਿਆ ਪਾਲਨ ਕਰਾਂ ਅਤੇ ਹੋਰਨਾਂ ਦੀ ਮੇਰੇ ਨਾਲ ਚੇਲੇ ਬਣਨ ਵਿੱਚ ਸਹਾਇਤਾ "
+"ਕਰਾਂ?"
 
 #: site/pages/follow-jesus.php:266
 msgid ""
@@ -5006,37 +5184,46 @@ msgid ""
 "teaching them to obey everything I have commanded you. And surely I am with "
 "you always, to the very end of the age.\""
 msgstr ""
+"ਫਿਰ ਯਿਸੂ ਉਨ੍ਹਾਂ ਦੇ ਕੋਲ ਆਇਆ ਅਤੇ ਆਖਿਆ, “ਅਕਾਸ਼ ਅਤੇ ਧਰਤੀ ਦਾ ਸਾਰਾ ਇਖ਼ਤਿਆਰ ਮੈਨੂੰ "
+"ਦਿੱਤਾ ਗਿਆ ਹੈ। ਇਸ ਲਈ ਤੁਸੀਂ ਜਾ ਕੇ ਸਾਰੀਆਂ ਕੌਮਾਂ ਨੂੰ ਚੇਲੇ ਬਣਾਓ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ "
+"ਪਿਤਾ ਅਤੇ ਪੁੱਤਰ ਅਤੇ ਪਵਿੱਤਰ ਆਤਮਾ ਦੇ ਨਾਮ ਵਿੱਚ ਬਪਤਿਸਮਾ ਦਿਓ। ਅਰ ਉਨ੍ਹਾਂ ਨੂੰ ਸਿਖਾਓ "
+"ਭਈ ਉਨ੍ਹਾਂ ਸਾਰੀਆਂ ਗੱਲਾਂ ਦੀ ਪਾਲਨਾ ਕਰਨ ਜਿਨ੍ਹਾਂ ਦਾ ਮੈਂ ਤੁਹਾਨੂੰ ਹੁਕਮ ਦਿੱਤਾ ਹੈ ਅਤੇ "
+"ਵੇਖੋ ਮੈਂ ਜੁਗ ਦੇ ਅੰਤ ਤੀਕਰ ਹਰ ਵੇਲੇ ਤੁਹਾਡੇ ਨਾਲ ਹਾਂ।”"
 
 #: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
-msgstr ""
+msgstr "ਮੱਤੀ 28:18-20"
 
 #: site/pages/follow-jesus.php:270
 msgid "Teaching others to obey and follow Jesus with you"
-msgstr ""
+msgstr "ਹੋਰਨਾਂ ਨੂੰ ਆਗਿਆ ਪਾਲਨ ਕਰਨਾ ਅਤੇ ਤੁਹਾਡੇ ਨਾਲ ਯਿਸੂ ਦੇ ਪਿੱਛੇ ਚੱਲਣਾ ਸਿਖਾਉਣਾ"
 
 #: site/pages/follow-jesus.php:273
 msgid "Learn what ducklings have to do with disciple-making"
-msgstr ""
+msgstr "ਸਿੱਖੋ ਕਿ ਬਤਖ ਵਾਂਙ ਚੇਲੇ ਦੇ ਨਮੂਨੇ ਦਾ ਚੇਲੇ ਬਣਾਉਣ ਦੇ ਨਾਲ ਕੀ ਸੰਬੰਧ ਹੈ"
 
 #: site/pages/follow-jesus.php:281
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
+"ਵੇਖੋ ਕਿ ਕਿਵੇਂ ਚੇਲੇ ਬਣਾਉਣ ਨੂੰ ਰੇਖਾਬੱਧ ਹੋਣ ਦੀ ਲੋੜ ਨਹੀਂ ਹੈ। ਬਹੁਭਾਗੀ ਗੱਲਾਂ ਇੱਕ ਹੀ"
+" ਸਮੇਂ ਹੋ ਸਕਦੀਆਂ ਹਨ।"
 
 #: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
-msgstr ""
+msgstr "ਕੀ ਤੁਸੀਂ ਯਿਸੂ ਨੂੰ ਜਾਣਦੇ ਹੋ ਬਾਰੇ ਲੋਕਾਂ ਨਾਲ ਗੱਲ ਕਰਨਾ"
 
 #: site/pages/follow-jesus.php:304
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
-msgstr ""
+msgstr "ਲੋਕਾਂ ਨਾਲ ਤੁਸੀਂ ਯਿਸੂ ਬਾਰੇ ਨਹੀਂ ਜਾਣਦੇ ਗੱਲ ਕਰਨਾ"
 
 #: site/pages/follow-jesus.php:307
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
+"ਸਿੱਖੋ ਕਿ ਕੌਣ ਇੱਕ ਸ਼ਾਂਤੀ ਦਾ ਪੁੱਤਰ ਹੋ ਸਕਦਾ ਹੈ ਅਤੇ ਜਦੋਂ ਤੁਹਾਨੂੰ ਇੱਕ ਮਿਲ ਜਾਵੇ ਤਾਂ "
+"ਇਹ ਕਿਵੇਂ ਜਾਣਨਾ ਹੈ।"
 
 #: site/pages/follow-jesus.php:311
 msgid ""
@@ -5122,7 +5309,7 @@ msgstr ""
 
 #: site/pages/home.php:132
 msgid "Overview"
-msgstr ""
+msgstr "ਨਿਰੀਖਣ"
 
 #: site/pages/home.php:134
 msgid "Group Discussions"
@@ -5261,6 +5448,12 @@ msgid ""
 "for the Kingdom of God. Zúme aims to equip and empower ordinary believers to "
 "saturate the globe with multiplying disciples in our generation."
 msgstr ""
+"ਜ਼ੁਮੇ ਦਾ ਅਰਥ ਯੂਨਾਨੀ ਵਿੱਚ ਖਮੀਰ ਹੈ। ਮੱਤੀ 13:33 ਦੇ ਵਿੱਚ, ਯਿਸੂ ਇਹ ਆਖਦੇ ਹੋਏ ਹਵਾਲਾ "
+"ਦਿੰਦਾ ਹੈ: “ਸੁਰਗ ਦਾ ਰਾਜ ਖਮੀਰ ਵਰਗਾ ਹੈ ਜਿਹ ਨੂੰ ਇੱਕ ਤੀਵੀਂ ਨੇ ਲੈ ਕੇ ਤਿੰਨ ਸੇਰ ਆਟੇ "
+"ਵਿੱਚ ਮਿਲਾਇਆ ਐਥੋਂ ਤੋੜੀ ਜੋ ਸਾਰਾ ਖ਼ਮੀਰਾ ਹੋ ਗਿਆ।” ਇਹ ਦ੍ਰਿਸ਼ਟਾਂਤ ਦਿੰਦਾ ਹੈ ਕਿ ਕਿਵੇਂ "
+"ਆਮ ਲੋਕ, ਆਮ ਸਾਧਨਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ, ਪਰਮੇਸ਼ੁਰ ਦੇ ਰਾਜ ਉੱਤੇ ਇੱਕ ਅਨੂਠਾ ਪ੍ਰਭਾਵ ਪਾ "
+"ਸਕਦੇ ਹਨ। ਜ਼ੁਮੇ ਆਮ ਵਿਸ਼ਵਾਸੀਆਂ ਨੂੰ ਸਾਡੀ ਪੀੜ੍ਹੀ ਵਿੱਚ ਗੁਣਾਤਮਕ ਵਾਧਾ ਕਰਨ ਵਾਲੇ ਚੇਲਿਆਂ "
+"ਨਾਲ ਵਿਸ਼ਵ ਨੂੰ ਭਰਨ ਲਈ ਤਿਆਰ ਕਰਨ ਅਤੇ ਸ਼ਕਤੀ ਭਰਨ ਦਾ ਨਿਸ਼ਾਨਾ ਰੱਖਦਾ ਹੈ।"
 
 #: site/pages/home.php:336
 msgid "Ready to take your next steps?"
@@ -5333,7 +5526,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
-msgstr ""
+msgstr "ਜ਼ੁਮੇ ਨਿੱਜੀ ਨੀਤੀ"
 
 #: site/pages/privacy-policy.php:86
 msgid ""
@@ -5346,10 +5539,18 @@ msgid ""
 "clear understanding of how we collect, use, protect or otherwise handle your "
 "Personally Identifiable Information in accordance with our website."
 msgstr ""
+"ਇਹ ਨਿੱਜੀ ਨੀਤੀ ਉਨ੍ਹਾਂ ਦੀ ਉੱਤਮ ਢੰਗ ਨਾਲ ਸੇਵਾ ਕਰਨ ਵਾਸਤੇ ਤਿਆਰ ਕੀਤੀ ਗਈ ਹੈ ਜਿਹੜੇ "
+"“ਨਿੱਜੀ ਪਛਾਣਯੋਗ ਸੂਚਨਾ” (PII) ਕਿਵੇਂ ਅੋਨਲਾਇਨ ਵਰਤੀ ਜਾਂਦੀ ਦੇ ਪ੍ਰਤੀ ਚਿੰਤਿਤ ਹੁੰਦੇ "
+"ਹਨ। PII, ਯੂ.ਐਸ. ਦੇ ਨਿੱਜੀ ਕਾਨੂੰਨ ਅਤੇ ਸੂਚਨਾ ਸੁਰੱਖਿਆ ਵਿੱਚ ਜਿਵੇਂ ਕਿ ਵਰਣਨ ਕੀਤੀ "
+"ਗਈ, ਉਹ ਸੂਚਨਾ ਹੈ ਜਿਹੜੀ ਕਿ ਇਸ ਦੇ ਆਪਣੇ ਆਪ ਜਾਂ ਹੋਰਨਾਂ ਨਾਲ ਇੱਕ ਵਿਅਕਤੀ ਨੂੰ ਪਛਾਣਨ, "
+"ਸੰਪਰਕ ਕਰਨ, ਜਾਂ ਉਸ ਦਾ ਸਥਾਨ ਜਾਣਨ ਜਾਂ ਇੱਕ ਪਰਸੰਗ ਵਿੱਚ ਵਿਅਕਤੀ ਨੂੰ ਪਛਾਣਨ ਲਈ ਵਰਤੀ "
+"ਜਾਂਦੀ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਾਡੀ ਨਿੱਜੀ ਨੀਤੀ ਨੂੰ ਚੰਗੀ ਤਰ੍ਹਾਂ ਪੜ੍ਹੋ ਕਿ ਕਿਵੇਂ ਅਸੀਂ "
+"ਤੁਹਾਡੀ ਨਿੱਜੀ ਪਛਾਣਯੋਗ ਸੂਚਨ ਨੂੰ ਸਾਡੀ ਵੈਬਸਾਈਟ ਦੇ ਸੰਬੰਧ ਵਿੱਚ ਇਕੱਠਾ ਕਰਦੇ, ਵਰਤਦੇ "
+"ਅਤੇ ਸੁਰੱਖਿਆ ਕਰਦੇ ਹਾਂ।"
 
 #: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
-msgstr ""
+msgstr "ਸੋਸ਼ਲ ਸਾਈਨ-ਓਨ ਲੋਗਿਨ ਤੇ ਕੀ ਇਜਾਜ਼ਤ ਮੰਗੀ ਜਾਂਦੀ ਹੈ?"
 
 #: site/pages/privacy-policy.php:91
 msgid ""
@@ -5362,23 +5563,25 @@ msgid ""
 "Public Profile. This includes certain User’s Data such as id, name, picture, "
 "gender, and their locale."
 msgstr ""
+"ਸਾਰਵਜਨਿਕ ਪ੍ਰੋਫਾਈਲ। ਇਸ ਦੇ ਵਿੱਚ ਨਿਸ਼ਤਿਚ ਡਾਟਾ ਇਸਤੇਮਾਲ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਜਿਵੇਂ ਕਿ ਆਈ."
+"ਡੀ, ਤਸਵੀਰ, ਲਿੰਗ, ਅਤੇ ਰਹਿਣ ਦਾ ਸਥਾਨ।"
 
 #: site/pages/privacy-policy.php:97
 msgid "Email Address."
-msgstr ""
+msgstr "ਈਮੇਲ ਪਤਾ।"
 
 #: site/pages/privacy-policy.php:104
 msgid ""
 "What personal information do we collect from the people through our website?"
-msgstr ""
+msgstr "ਸਾਡੀ ਵੈਬਸਾਈਟ ਦੇ ਰਾਹੀਂ ਅਸੀਂ ਕਿਹੜੀ ਨਿੱਜੀ ਜਾਣਕਾਰੀ ਇਕੱਠਾ ਕਰਦੇ ਹਾਂ?"
 
 #: site/pages/privacy-policy.php:127
 msgid "When do we collect information?"
-msgstr ""
+msgstr "ਅਸੀਂ ਕਦੋਂ ਸੂਚਨਾ ਇਕੱਠੀ ਕਰਦੇ ਹਾਂ?"
 
 #: site/pages/privacy-policy.php:130
 msgid "We collect your information at login."
-msgstr ""
+msgstr "ਅਸੀਂ ਲੋਗਿਨ ਦੇ ਸਮੇਂ ਤੁਹਾਡੀ ਸੂਚਨਾ ਇਕੱਠਾ ਕਰਦੇ ਹਾਂ।"
 
 #: site/pages/privacy-policy.php:133
 msgid ""
@@ -5393,29 +5596,35 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
-msgstr ""
+msgstr "ਅਸੀਂ ਤੁਹਾਡੀ ਸੂਚਨਾ ਦਾ ਕਿਵੇਂ ਇਸਤੇਮਾਲ ਕਰਦੇ ਹਾਂ?"
 
 #: site/pages/privacy-policy.php:146
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
 msgstr ""
+"ਅਸੀਂ ਤੁਹਾਡੀ ਈਮੇਲ ਉੱਤੇ ਅਧਾਰਿਤ ਜ਼ੁਮੇ ਪ੍ਰਣਾਲੀ ਵਿੱਚ ਇੱਕ ਯੂਜ਼ਰ ਅਕਾਉਂਟ ਬਣਾਉਣ ਲਈ "
+"ਤੁਹਾਡੀ ਸੂਚਨਾ ਦਾ ਇਸਤੇਮਾਲ ਕਰਦੇ ਹਾਂ।"
 
 #: site/pages/privacy-policy.php:149
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
 msgstr ""
+"ਅਸੀਂ ਤੁਹਾਡੀ ਬੁਨਿਆਦੀ ਈਮੇਲ ਗੱਲਾਂ ਬਾਰੇ ਈਮੇਲ ਭੇਜਾਂਗੇ ਜਿਵੇਂ ਪਾਸਵਰਡ ਰੀਸੈੱਟ ਕਰਨ ਲਈ "
+"ਬੇਨਤੀ ਅਤੇ ਹੋਰ ਪ੍ਰਣਾਲੀ ਦੇ ਨੋਟੀਫਕੇਸ਼ਨ।"
 
 #: site/pages/privacy-policy.php:152
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
+"ਅਸੀਂ ਸਿਖਲਾਈ ਰਾਹੀਂ ਤੁਹਾਡੀ ਉਨੱਤੀ ਉੱਤੇ ਅਧਾਰਿਤ ਕਦੇਂ-ਕਦਾਈਂ ਚੇਤਾਵਨੀਆਂ ਅਤੇ ਉਤਸ਼ਾਹ ਲਈ "
+"ਈਮੇਲ ਭੇਜਦੇ ਹਾਂ।"
 
 #: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
-msgstr ""
+msgstr "ਅਸੀਂ ਕਿਵੇਂ ਤੁਹਾਡੀ ਸੂਚਨਾ ਦੀ ਸੁਰੱਖਿਆ ਕਰਦੇ ਹਾਂ?"
 
 #: site/pages/privacy-policy.php:161
 msgid ""
@@ -5424,6 +5633,10 @@ msgid ""
 "information to perform a specific job (for example, web administrator or "
 "customer service) are granted access to personally identifiable information."
 msgstr ""
+"ਜਦੋਂ ਕਿ ਅਸੀਂ ਅੋਨਲਾਇਨ ਦਿੱਤੀ ਜਾਣੀ ਵਾਲੀ ਸੰਵੇਦਨਸ਼ੀਲ ਸੂਚਨਾ ਦੀ ਸੁਰੱਖਿਆ ਕਰਦੇ ਹਾਂ, ਪਰ "
+"ਅਸੀਂ ਅੋਫਲਾਈਨ ਵੀ ਤੁਹਾਡੀ ਸੂਚਨਾ ਦੀ ਸੁਰੱਖਿਆ ਕਰਦੇ ਹਾਂ। ਸਿਰਫ ਟੀਮ ਦੇ ਮੈਂਬਰ ਜਿੰਨਾ ਨੂੰ"
+" ਇੱਕ ਖਾਸ ਕੰਮ ਦੇ ਲਈ ਸੂਚਨਾ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ (ਉਦਾਹਰਣ ਲਈ, ਵੈਬ ਪ੍ਰਬੰਧਕ ਜਾਂ ਕਸਟਮਰ "
+"ਸਰਵਿਸ) ਉਦੋਂ ਹੀ ਉਸ ਨੂੰ ਨਿੱਜੀ ਪਛਾਣਯੋਗ ਜਾਣਕਾਰੀ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ।"
 
 #: site/pages/privacy-policy.php:164
 msgid ""
@@ -5433,16 +5646,22 @@ msgid ""
 "addition, all sensitive/credit information you supply is encrypted via "
 "Secure Socket Layer (SSL) technology."
 msgstr ""
+"ਤੁਹਾਡੀ ਨਿੱਜੀ ਸੂਚਨਾ ਸੁਰੱਖਿਅਤ ਨੈਟਵਰਕ ਵਿੱਚ ਜਮ੍ਹਾ ਹੁੰਦੀ ਹੈ ਅਤੇ ਸਿਰਫ ਕੁਝ ਹੀ ਸੀਮਿਤ "
+"ਮੈਂਬਰ ਉਸ ਨੂੰ ਵੇਖ ਸਕਦੇ ਹਨ ਜਿੰਨਾ ਕੋਲ ਅਜਿਹੀ ਪ੍ਰਣਾਲੀ ਤੱਕ ਪਹੁੰਚ ਦੇ ਖਾਸ ਅਧਿਕਾਰ ਹਨ, "
+"ਅਤੇ ਉਹ ਸੂਚਨਾ ਨੂੰ ਗੁਪਤ ਰੱਖਦੇ ਹਨ। ਇਸ ਤੋਂ ਇਲਾਵਾ, ਸਾਰੀ ਸੰਵੇਦਨਸ਼ੀਲ਼/ਸੂਚਨਾ ਜਿਹੜੀ "
+"ਤੁਸੀਂ ਦਿੰਦੇ ਉਹ ਸਕੀਓਰ ਸਾਕੇਟ ਲੇਅਰ (SSL) ਟੈਕਨੋਲੋਜੀ ਦੁਆਰਾ ਗੁਪਤ ਰੱਖੀ ਜਾਂਦੀ ਹੈ।"
 
 #: site/pages/privacy-policy.php:167
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
 msgstr ""
+"ਅਸੀਂ ਤੁਹਾਡੀ ਨਿੱਜੀ ਸੂਚਨਾ ਨੂੰ ਕਾਇਮ ਰੱਖਣ ਲਈ ਜਦੋਂ ਇੱਕ ਯੂਜ਼ਰ ਆਪਣੀ ਸੂਚਨਾ ਨੂੰ ਦਿੰਦਾ, "
+"ਜਾਂ ਵੇਖਦਾ ਤਾਂ ਵੱਖ-ਵੱਖ ਸੁਰੱਖਿਆ ਦੇ ਮਾਪਾਂ ਦਾ ਇਸਤੇਮਾਲ ਕਰਦੇ ਹਾਂ।"
 
 #: site/pages/privacy-policy.php:173
 msgid "Do we use \"cookies\"?"
-msgstr ""
+msgstr "ਕੀ ਅਸੀਂ “ਕੂਕੀਸ” ਦਾ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ?"
 
 #: site/pages/privacy-policy.php:175
 msgid ""
@@ -5453,39 +5672,44 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
-msgstr ""
+msgstr "ਸੂਚਨਾ ਉੱਤੇ ਤੁਹਾਡੀ ਪਹੁੰਚ ਅਤੇ ਨਿਯੰਤ੍ਰਣ।"
 
 #: site/pages/privacy-policy.php:183
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
 msgstr ""
+"ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਕਿਸੇ ਵੀ ਭਵਿੱਖ ਦੇ ਸੰਪਰਕ ਤੋਂ ਬਾਹਰ ਹੋ ਸਕਦੇ ਹੋ। ਤੁਸੀਂ ਸਾਡੀ ਈਮੇ"
+"ਲ ਪਤੇ ਤੇ ਸਾਨੂੰ ਸੰਪਰਕ ਕਰਨ ਦੇ ਦੁਆਰਾ ਕਿਸੇ ਵੀ ਵੇਲੇ ਸੰਪਰਕ ਕਰਨ ਦੁਆਰਾ ਹੇਠਾਂ ਲਿਖੀਆਂ "
+"ਗੱਲਾਂ ਨੂੰ ਕਰ ਸਕਦੇ ਹੋ:"
 
 #: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
-msgstr ""
+msgstr "ਸਾਡੇ ਨਾਲ ਤੁਹਾਡੀਆਂ ਕਿਰਿਆਵਾਂ ਤੋਂ ਅਸੀਂ ਕਿਹੜਾ ਡਾਟਾ ਇਕੱਠਾ ਕੀਤਾ ਹੈ।"
 
 #: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਬਾਰੇ ਕੋਈ ਵੀ ਡਾਟਾ ਜਿਹੜਾ ਸਾਡੇ ਕੋਲ ਹੈ ਨੂੰ ਬਦਲਣਾ/ਸੋਧ ਕਰਨਾ।"
 
 #: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
-msgstr ""
+msgstr "ਕੋਈ ਵੀ ਡਾਟਾ ਜੋ ਤੁਹਾਡੇ ਬਾਰੇ ਸਾਡੇ ਕੋਲ ਹੈ ਉਸ ਨੂੰ ਡੀਲੀਟ ਕਰਨਾ।"
 
 #: site/pages/privacy-policy.php:196
 msgid "Express any concern you have about our use of your data."
-msgstr ""
+msgstr "ਤੁਹਾਡੇ ਡਾਟੇ ਦੀ ਵਰਤੋਂ ਬਾਰੇ ਕੋਈ ਵੀ ਆਪਣੀ ਚਿੰਤਾ ਨੂੰ ਪਰਗਟ ਕਰਨਾ।"
 
 #: site/pages/privacy-policy.php:203
 msgid "Updates"
-msgstr ""
+msgstr "ਨਵੀਨੀਕਰਣ"
 
 #: site/pages/privacy-policy.php:205
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
 msgstr ""
+"ਸਾਡੀ ਨਿੱਜੀ ਨੀਤੀ ਸਮੇਂ-ਸਮੇਂ ਤੇ ਬਦਲ ਸਕਦੀ ਹੈ ਅਤੇ ਇਸ ਸਫੇ ਤੇ ਉਸ ਬਾਰੇ ਨਵੀਂ ਜਾਣਕਾਰੀ "
+"ਦਿੱਤੀ ਜਾਵੇਗੀ।"
 
 #: site/pages/resources.php:100
 msgid "Training Guidebook"
@@ -5517,11 +5741,11 @@ msgstr ""
 
 #: site/pages/share.php:122
 msgid "Tools"
-msgstr ""
+msgstr "ਸਾਧਨ"
 
 #: site/pages/share.php:123
 msgid "Concepts"
-msgstr ""
+msgstr "ਸਿਧਾਂਤ"
 
 #: site/pages/share.php:125
 msgid "Sort"
@@ -5581,7 +5805,7 @@ msgstr ""
 
 #: site/pages/training.php:160
 msgid "Course Overview"
-msgstr ""
+msgstr "ਕੋਰਸ ਅਵਲੋਕਨ"
 
 #: site/pages/training.php:162 site/pages/training.php:174
 msgid "Course Concepts"
@@ -5695,7 +5919,7 @@ msgstr ""
 
 #: site/profile/profile.php:111
 msgid "Profile"
-msgstr ""
+msgstr "ਪ੍ਰੋਫਾਈਲ"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
@@ -5833,7 +6057,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
 msgid "Zúme Dashboard"
-msgstr ""
+msgstr "ਜ਼ੁਮੇ ਡੈਸ਼ਬੋਰਡ"
 
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
@@ -5865,33 +6089,34 @@ msgstr ""
 
 #: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"
-msgstr ""
+msgstr "ਕਿਸੇ ਨੇ ਹੇਠਾਂ ਦਿਤੇ ਅਕਾਉਂਟ ਵਾਸਤੇ ਪਾਸਵਰਡ ਮੁੜ ਸੈੱਟ ਕਰਨ ਲਈ ਬੇਨਤੀ ਕੀਤੀ ਹੈ:"
 
 #. translators: %s: site name
 #: zume-training-system.php:212
 #, php-format
 msgid "Site Name: %s"
-msgstr ""
+msgstr "ਸਾਈਟ ਦਾ ਨਾਮ:%s"
 
 #. translators: %s: user login
 #: zume-training-system.php:214
 #, php-format
 msgid "Username: %s"
-msgstr ""
+msgstr "ਯੂਜ਼ਰ ਦਾ ਨਾਮ:%s"
 
 #: zume-training-system.php:215
 msgid "If this was a mistake, just ignore this email and nothing will happen."
 msgstr ""
+"ਜੇਕਰ ਇਹ ਗਲਤੀ ਨਾਲ ਹੋਇਆ, ਤਾਂ ਇਸ ਈਮੇਲ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ ਕਰ ਦਿਓ ਅਤੇ ਕੁਝ ਨਹੀਂ ਹੋਵੇਗਾ।"
 
 #: zume-training-system.php:216
 msgid "To reset your password, visit the following address:"
-msgstr ""
+msgstr "ਆਪਣਾ ਪਾਸਵਰਡ ਮੁੜ ਸੈਟ ਕਰਨ ਲਈ, ਹੇਠਾਂ ਦਿੱਤੇ ਪਤੇ ਤੇ ਕਲਿੱਕ ਕਰੋ:"
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:234
 #, php-format
 msgid "[%s] Password Reset"
-msgstr ""
+msgstr "[%s] ਪਾਸਵਰਡ ਮੁੜ ਸੈਟ ਕਰਨਾ"
 
 #: zume-training-system.php:250
 msgid "Profile Details"

@@ -2,15 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-02-20 08:22-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-07-31 10:40+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Amharic <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/am/>\n"
 "Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -29,7 +30,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:259 site/parts/footer.php:11
 #: site/parts/nav.php:24 site/parts/nav.php:76
 msgid "Training"
-msgstr ""
+msgstr "Training"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
 msgid "How it Works"
@@ -37,11 +38,11 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
-msgstr ""
+msgstr "Download Guidebook"
 
 #: appearance/style-override/navigation.php:97
 msgid "FAQs"
-msgstr ""
+msgstr "FAQs"
 
 #: appearance/style-override/navigation.php:106 site/course/presenter.php:170
 #: site/dashboard/checkin-dashboard.php:154
@@ -49,7 +50,7 @@ msgstr ""
 #: site/dashboard/wizard.php:185 site/pages/home.php:108 site/parts/nav.php:19
 #: site/parts/nav.php:71
 msgid "Dashboard"
-msgstr ""
+msgstr "Dashboard"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
@@ -61,7 +62,7 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
-msgstr ""
+msgstr "Groups"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
@@ -99,6 +100,8 @@ msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
+"You'll see how God uses ordinary people doing simple things to make a big "
+"impact."
 
 #: globals.php:1951 site/course/course-content.php:3161
 #: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
@@ -111,6 +114,8 @@ msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr ""
+"Discover the essence of being a disciple, making a disciple, and what is the "
+"church."
 
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
@@ -124,7 +129,7 @@ msgstr ""
 
 #: globals.php:1964 site/pages/follow-jesus.php:201
 msgid "Being a disciple means we hear from God and we obey God."
-msgstr ""
+msgstr "Being a disciple means we hear from God and we obey God."
 
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
@@ -140,13 +145,15 @@ msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
+"A tool for daily Bible study that helps you understand, obey, and share God’"
+"s Word."
 
 #: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3409
 #: site/course/course-content.php:3425 site/pages/follow-jesus.php:230
 msgid "Accountability Groups"
-msgstr ""
+msgstr "Accountability Groups"
 
 #: globals.php:1988 site/pages/follow-jesus.php:231
 msgid ""
@@ -154,6 +161,9 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
+"A tool for two or three people of the same gender to meet weekly and "
+"encourage each other in areas that are going well and reveal areas that need "
+"correction."
 
 #: globals.php:1999 site/pages/follow-jesus.php:194
 msgid "Consumer vs Producer Lifestyle"
@@ -164,6 +174,8 @@ msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
+"You'll discover the four main ways God makes everyday followers more like "
+"Jesus."
 
 #: globals.php:2001
 msgid "Producer not Consumer"
@@ -175,7 +187,7 @@ msgstr ""
 
 #: globals.php:2012 site/pages/follow-jesus.php:205
 msgid "See how easy it is to spend an hour in prayer."
-msgstr ""
+msgstr "See how easy it is to spend an hour in prayer."
 
 #: globals.php:2023 site/pages/follow-jesus.php:291
 msgid "Relational Stewardship – List of 100"
@@ -183,7 +195,7 @@ msgstr ""
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
 msgid "A tool designed to help you be a good steward of your relationships."
-msgstr ""
+msgstr "A tool designed to help you be a good steward of your relationships."
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
@@ -194,19 +206,21 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:102
 #: utilities/integrations/replace-placeholder.php:103
 msgid "List of 100"
-msgstr ""
+msgstr "List of 100"
 
 #: globals.php:2035 globals.php:2037 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3803 site/course/course-content.php:3822
 msgid "Spiritual Economy"
-msgstr ""
+msgstr "Spiritual Economy"
 
 #: globals.php:2036 site/pages/follow-jesus.php:250
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
 msgstr ""
+"Learn how God's economy is different from the world's. God invests more in "
+"those who are faithful with what they've already been given."
 
 #: globals.php:2047 site/pages/follow-jesus.php:295
 msgid "The Gospel and How to Share It"
@@ -217,6 +231,8 @@ msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr ""
+"Learn a way to share God’s Good News from the beginning of humanity all the "
+"way to the end of this age."
 
 #: globals.php:2049
 msgid "Sharing God‘s Story"
@@ -232,13 +248,16 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
+"Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
+"name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
+"this into practice."
 
 #: globals.php:2061 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4076
 #: site/course/course-content.php:4093
 msgid "Baptism"
-msgstr ""
+msgstr "Baptism"
 
 #: globals.php:2071 site/pages/follow-jesus.php:299
 msgid "Prepare Your 3-Minute Testimony"
@@ -249,10 +268,12 @@ msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr ""
+"Learn how to share your testimony in three minutes by sharing how Jesus has "
+"impacted your life."
 
 #: globals.php:2073
 msgid "3-Minute Testimony"
-msgstr ""
+msgstr "3-Minute Testimony"
 
 #: globals.php:2083 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3804
@@ -266,6 +287,8 @@ msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
 msgstr ""
+"Learn a simple pattern of making not just one follower of Jesus but entire "
+"spiritual families who multiply for generations to come."
 
 #: globals.php:2085
 msgid "Great, Greater, and Greatest Blessing"
@@ -277,14 +300,14 @@ msgstr ""
 
 #: globals.php:2096
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr ""
+msgstr "Learn what ducklings have to do with disciple-making."
 
 #: globals.php:2097 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4353
 #: site/course/course-content.php:4374
 msgid "Duckling Discipleship"
-msgstr ""
+msgstr "Duckling Discipleship"
 
 #: globals.php:2107 globals.php:2109 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
@@ -298,6 +321,8 @@ msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
 msgstr ""
+"Begin to see where God’s Kingdom isn’t. These are usually the places where "
+"God wants to work the most."
 
 #: globals.php:2119 site/pages/follow-jesus.php:238
 msgid "The Lord’s Supper and How To Lead It"
@@ -308,6 +333,8 @@ msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
+"It’s a simple way to celebrate our intimate connection and ongoing "
+"relationship with Jesus. Learn a simple way to celebrate."
 
 #: globals.php:2121 site/course/course-content.php:1147
 #: site/course/course-content.php:1344 site/course/course-content.php:1353
@@ -331,7 +358,7 @@ msgstr ""
 #: site/course/course-content.php:1635 site/course/course-content.php:4485
 #: site/course/course-content.php:4498
 msgid "Prayer Walking"
-msgstr ""
+msgstr "Prayer Walking"
 
 #: globals.php:2143 site/pages/follow-jesus.php:306
 msgid "A Person of Peace and How To Find One"
@@ -346,7 +373,7 @@ msgstr ""
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4599 site/course/course-content.php:4619
 msgid "Person of Peace"
-msgstr ""
+msgstr "Person of Peace"
 
 #: globals.php:2155 site/pages/follow-jesus.php:219
 msgid "Faithfulness is Better Than Knowledge"
@@ -362,7 +389,7 @@ msgstr ""
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
 #: site/course/course-content.php:4777
 msgid "Faithfulness"
-msgstr ""
+msgstr "Faithfulness"
 
 #: globals.php:2167 site/pages/follow-jesus.php:208
 msgid "The BLESS Prayer Pattern"
@@ -370,7 +397,7 @@ msgstr ""
 
 #: globals.php:2168 site/pages/follow-jesus.php:209
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
-msgstr ""
+msgstr "Practice a simple mnemonic to remind you of ways to pray for others."
 
 #: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
@@ -389,7 +416,7 @@ msgstr ""
 
 #: globals.php:2181
 msgid "3/3 Group"
-msgstr ""
+msgstr "3/3 Group"
 
 #: globals.php:2191 site/pages/follow-jesus.php:276
 msgid "Training Cycle for Maturing Disciples"
@@ -399,18 +426,19 @@ msgstr ""
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
+"Learn the training cycle and consider how it applies to disciple making."
 
 #: globals.php:2193 site/course/course-content.php:5032
 #: site/course/course-content.php:5049
 msgid "Training Cycle"
-msgstr ""
+msgstr "Training Cycle"
 
 #: globals.php:2203 globals.php:2205 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5033
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 msgid "Leadership Cells"
-msgstr ""
+msgstr "Leadership Cells"
 
 #: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
@@ -418,6 +446,8 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
+"A Leadership Cell is a way someone who feels called to lead can develop "
+"their leadership by practicing serving."
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
 #: site/course/course-content.php:5175 site/pages/follow-jesus.php:280
@@ -440,12 +470,14 @@ msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
+"Multiplying matters and multiplying quickly matters even more. See why pace "
+"matters."
 
 #: globals.php:2229 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5158 site/course/course-content.php:5176
 msgid "Pace"
-msgstr ""
+msgstr "Pace"
 
 #: globals.php:2239 globals.php:2241 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
@@ -462,13 +494,15 @@ msgstr ""
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
 #: site/course/course-content.php:3074 site/course/course-content.php:5696
 msgid "Three-Month Plan"
-msgstr ""
+msgstr "Three-Month Plan"
 
 #: globals.php:2253
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
+"Create and share your plan for how you will implement the Zúme tools over "
+"the next three months."
 
 #: globals.php:2263 globals.php:2265
 #: site/activities/coaching-checklist-host.php:97
@@ -486,33 +520,37 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 msgid "Coaching Checklist"
-msgstr ""
+msgstr "Coaching Checklist"
 
 #: globals.php:2264 site/pages/follow-jesus.php:328
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
+"A powerful tool you can use to quickly assess your own strengths and "
+"vulnerabilities when it comes to making disciples who multiply."
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
 msgid "Leadership in Networks"
-msgstr ""
+msgstr "Leadership in Networks"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
+"Learn how multiplying churches stay connected and live life together as an "
+"extended, spiritual family."
 
 #: globals.php:2287 site/course/course-content.php:2902
 #: site/course/course-content.php:2954 site/course/course-content.php:2963
 #: site/course/course-content.php:3073 site/course/course-content.php:5556
 #: site/course/course-content.php:5572 site/pages/follow-jesus.php:323
 msgid "Peer Mentoring Groups"
-msgstr ""
+msgstr "Peer Mentoring Groups"
 
 #: globals.php:2288 site/pages/follow-jesus.php:324
 msgid ""
@@ -520,10 +558,13 @@ msgid ""
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
+"This is a group that consists of people who are leading and starting 3/3 "
+"Groups. It also follows a 3/3 format and is a powerful way to assess the "
+"spiritual health of God’s work in your area."
 
 #: globals.php:2289 site/dashboard/wizard.php:176
 msgid "Peer Mentoring"
-msgstr ""
+msgstr "Peer Mentoring"
 
 #: globals.php:2299 globals.php:2301
 msgid "Four Fields Tool"
@@ -535,6 +576,9 @@ msgid ""
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
+"The four fields diagnostic chart is a simple tool to be used by a leadership "
+"cell to reflect on the status of current efforts and the kingdom activity "
+"around them."
 
 #: globals.php:2311 globals.php:2313 site/course/course-content.php:2397
 #: site/course/course-content.php:2709 site/course/course-content.php:2715
@@ -548,6 +592,8 @@ msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
 msgstr ""
+"Generation mapping is another simple tool to help leaders in a movement "
+"understand the growth around them."
 
 #: globals.php:2323
 msgid "3-Circles Gospel Presentation"
@@ -610,7 +656,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:113
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:238
 msgid "Heard"
-msgstr ""
+msgstr "Heard"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:167
@@ -619,7 +665,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:116
 #: site/activities/coaching-checklist.php:253 site/dashboard/dashboard.php:240
 msgid "Obeyed"
-msgstr ""
+msgstr "Obeyed"
 
 #: site/activities/coaching-checklist-host.php:131
 #: site/activities/coaching-checklist-host.php:171
@@ -628,7 +674,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:119
 #: site/activities/coaching-checklist.php:256 site/dashboard/dashboard.php:242
 msgid "Shared"
-msgstr ""
+msgstr "Shared"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:175
@@ -637,7 +683,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:122
 #: site/activities/coaching-checklist.php:259 site/dashboard/dashboard.php:244
 msgid "Trained"
-msgstr ""
+msgstr "Trained"
 
 #: site/activities/coaching-checklist-host.php:165
 #: site/activities/coaching-checklist-two.php:186
@@ -924,11 +970,11 @@ msgstr ""
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: site/activities/three-month-plan.php:93
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:12
 #: site/course/course-content.php:857
@@ -937,6 +983,9 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
+"Jesus said, “You will receive power when the Holy Spirit comes upon you. And "
+"you will be my witnesses, telling people about me everywhere – in Jerusalem, "
+"throughout Judea, in Samaria, and to the ends of the earth.”"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:858
@@ -963,7 +1012,7 @@ msgstr ""
 #: site/course/course-content.php:2943 site/course/course-content.php:3050
 #: site/course/course-content.php:4756
 msgid "DISCUSS"
-msgstr ""
+msgstr "DISCUSS"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
@@ -1007,7 +1056,7 @@ msgstr ""
 #: site/course/course-content.php:2545 site/course/course-content.php:2917
 #: site/course/course-content.php:2960
 msgid "WATCH"
-msgstr ""
+msgstr "WATCH"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
@@ -1019,7 +1068,7 @@ msgstr ""
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3805 site/course/course-content.php:3824
 msgid "The Gospel"
-msgstr ""
+msgstr "The Gospel"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 msgid ""
@@ -1030,12 +1079,12 @@ msgstr ""
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
 msgid "What do you learn about mankind from this story?"
-msgstr ""
+msgstr "What do you learn about mankind from this story?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:917
 msgid "What do you learn about God?"
-msgstr ""
+msgstr "What do you learn about God?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:918
@@ -1213,7 +1262,7 @@ msgstr ""
 #: site/course/course-content.php:5884 site/course/course-content.php:5889
 #: site/course/course-content.php:5933 site/course/course-content.php:5938
 msgid "CHECK-IN"
-msgstr ""
+msgstr "CHECK-IN"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -1274,7 +1323,7 @@ msgstr ""
 #: site/course/course-content.php:5386 site/course/course-content.php:5431
 #: site/course/course-content.php:5523 site/course/course-content.php:5647
 msgid "PRAY"
-msgstr ""
+msgstr "PRAY"
 
 #: site/course/course-content.php:71 site/course/course-content.php:3145
 msgid ""
@@ -1282,6 +1331,9 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
+"Begin with prayer. Spiritual insight and transformation is not possible "
+"without the Holy Spirit. Take time as a group to invite Him to guide you "
+"over this session."
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1299,7 +1351,7 @@ msgstr ""
 #: site/course/course-content.php:5281 site/course/course-content.php:5414
 #: site/course/course-content.php:5551 site/course/course-content.php:5691
 msgid "OVERVIEW"
-msgstr ""
+msgstr "OVERVIEW"
 
 #: site/course/course-content.php:84 site/course/course-content.php:1138
 #: site/course/course-content.php:2387 site/course/course-content.php:3158
@@ -1315,7 +1367,7 @@ msgstr ""
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
-msgstr ""
+msgstr "Spiritual Breathing"
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
@@ -1328,7 +1380,7 @@ msgstr ""
 #: site/course/course-content.php:3288 site/course/course-content.php:3304
 #: site/pages/follow-jesus.php:215
 msgid "S.O.A.P.S. Bible Reading"
-msgstr ""
+msgstr "S.O.A.P.S. Bible Reading"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
@@ -1339,10 +1391,12 @@ msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
+"If Jesus intended every one of His followers to obey His Great Commission, "
+"why do so few actually make disciples?"
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr ""
+msgstr "When you think of a church, what comes to mind?"
 
 #: site/course/course-content.php:180
 msgid ""
@@ -1352,7 +1406,7 @@ msgstr ""
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
-msgstr ""
+msgstr "Which one do you think would be easier to multiply and why?"
 
 #: site/course/course-content.php:199
 msgid ""
@@ -1368,6 +1422,7 @@ msgstr ""
 msgid ""
 "Is hearing and responding to the Lord really like breathing? Why or why not?"
 msgstr ""
+"Is hearing and responding to the Lord really like breathing? Why or why not?"
 
 #: site/course/course-content.php:244
 msgid ""
@@ -1375,6 +1430,9 @@ msgid ""
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
 msgstr ""
+"Hearing from God regularly is a key element in our personal relationship "
+"with Him, and in our ability to stay obediently engaged in what He is doing "
+"around us."
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
@@ -1388,7 +1446,7 @@ msgstr ""
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr ""
+msgstr "Scripture"
 
 #: site/course/course-content.php:277
 msgid "Observation"
@@ -1401,7 +1459,7 @@ msgstr ""
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
 msgid "Prayer"
-msgstr ""
+msgstr "Prayer"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
@@ -1437,7 +1495,7 @@ msgstr ""
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr ""
+msgstr "Break into groups of two or three people of the same gender."
 
 #: site/course/course-content.php:333
 msgid ""
@@ -1493,7 +1551,7 @@ msgstr ""
 #: site/course/course-content.php:5321 site/course/course-content.php:5461
 #: site/course/course-content.php:5583
 msgid "OBEY"
-msgstr ""
+msgstr "OBEY"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -1509,7 +1567,7 @@ msgstr ""
 #: site/course/course-content.php:5322 site/course/course-content.php:5462
 #: site/course/course-content.php:5584
 msgid "SHARE"
-msgstr ""
+msgstr "SHARE"
 
 #: site/course/course-content.php:376 site/course/course-content.php:3319
 msgid ""
@@ -1517,6 +1575,9 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
+"Begin practicing the S.O.A.P.S. Bible reading between now and your next "
+"meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
+"journal using the S.O.A.P.S. format."
 
 #: site/course/course-content.php:377 site/course/course-content.php:3320
 msgid ""
@@ -1614,7 +1675,7 @@ msgstr ""
 #: site/course/course-content.php:5271 site/course/course-content.php:5404
 #: site/course/course-content.php:5541 site/course/course-content.php:5667
 msgid "Take a few moments to see how your group did this week."
-msgstr ""
+msgstr "Take a few moments to see how your group did this week."
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
@@ -1632,7 +1693,7 @@ msgstr ""
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
 msgid "Prayer Cycle"
-msgstr ""
+msgstr "Prayer Cycle"
 
 #: site/course/course-content.php:495
 msgid ""
@@ -1640,14 +1701,17 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
+"If we want to make disciples who multiply – spiritual producers and not just "
+"consumers – then we need to learn and share four main ways God makes "
+"everyday followers more like Jesus:"
 
 #: site/course/course-content.php:499
 msgid "Body Life"
-msgstr ""
+msgstr "Body Life"
 
 #: site/course/course-content.php:500
 msgid "Persecution and Suffering"
-msgstr ""
+msgstr "Persecution and Suffering"
 
 #: site/course/course-content.php:527
 msgid ""
@@ -1657,17 +1721,19 @@ msgstr ""
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr ""
+msgstr "Which ones do you feel unsure about?"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
-msgstr ""
+msgstr "How ready do you feel when it comes to training others?"
 
 #: site/course/course-content.php:547
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
 msgstr ""
+"The Bible tells us that prayer is our chance to speak to and hear from the "
+"same God who created us!"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
 msgid "Pray the Prayer Cycle for an hour individually"
@@ -1683,23 +1749,27 @@ msgid ""
 "minutes for everyone to both find a quiet place to pray and to make their "
 "way back to the group."
 msgstr ""
+"Set a time for the group to return and reconnect. Be sure to add a few extra "
+"minutes for everyone to both find a quiet place to pray and to make their "
+"way back to the group."
 
 #: site/course/course-content.php:592
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr ""
+msgstr "What is your reaction to spending an hour in prayer?"
 
 #: site/course/course-content.php:593
 msgid "How do you feel?"
-msgstr ""
+msgstr "How do you feel?"
 
 #: site/course/course-content.php:594
 msgid "Did you learn or hear anything?"
-msgstr ""
+msgstr "Did you learn or hear anything?"
 
 #: site/course/course-content.php:595
 msgid ""
 "What would life be like if you made this kind of prayer a regular habit?"
 msgstr ""
+"What would life be like if you made this kind of prayer a regular habit?"
 
 #: site/course/course-content.php:613
 msgid ""
@@ -1719,7 +1789,7 @@ msgstr ""
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr ""
+msgstr "Create your own list of 100"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
@@ -1820,24 +1890,28 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
+"Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
+"name of the Father and of the Son and of the Holy Spirit…”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
-msgstr ""
+msgstr "Have you ever baptized someone?"
 
 #: site/course/course-content.php:986
 msgid "Would you even consider it?"
-msgstr ""
+msgstr "Would you even consider it?"
 
 #: site/course/course-content.php:987
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
+"If the Great Commission is for every follower of Jesus, does that mean every "
+"follower is allowed to baptize others? Why or why not?"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr ""
+msgstr "IMPORTANT REMINDER – Have you been baptized?"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -1845,6 +1919,9 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
+"If not, then we encourage you to plan this before even one more session of "
+"this training. Invite your group to be a part of this important day when you "
+"celebrate saying \"yes\" to Jesus."
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
@@ -1929,23 +2006,30 @@ msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
 msgstr ""
+"Is this the pattern you were taught when you first began to follow Jesus? If "
+"not, what was different?"
 
 #: site/course/course-content.php:1243
 msgid ""
 "After you came to faith, how long was it before you began to disciple others?"
 msgstr ""
+"After you came to faith, how long was it before you began to disciple others?"
 
 #: site/course/course-content.php:1244
 msgid ""
 "What do you think would happen if new followers started sharing and "
 "discipling others, immediately?"
 msgstr ""
+"What do you think would happen if new followers started sharing and "
+"discipling others, immediately?"
 
 #: site/course/course-content.php:1262
 msgid ""
 "What do ducklings have to do with disciple making? They lead and follow at "
 "the same time."
 msgstr ""
+"What do ducklings have to do with disciple making? They lead and follow at "
+"the same time."
 
 #: site/course/course-content.php:1288
 msgid ""
@@ -1959,6 +2043,8 @@ msgid ""
 "What is one area of discipleship that you feel you could share with others? "
 "Who is someone that you could share with?"
 msgstr ""
+"What is one area of discipleship that you feel you could share with others? "
+"Who is someone that you could share with?"
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
@@ -1970,6 +2056,9 @@ msgid ""
 "seemed as if God was just... missing? These are usually the places where God "
 "wants to work the most."
 msgstr ""
+"Have you ever visited a home or a neighborhood or even a city where it "
+"seemed as if God was just... missing? These are usually the places where God "
+"wants to work the most."
 
 #: site/course/course-content.php:1334
 msgid ""
@@ -1979,7 +2068,7 @@ msgstr ""
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
-msgstr ""
+msgstr "Why do you think that is?"
 
 #: site/course/course-content.php:1336
 msgid ""
@@ -1992,6 +2081,9 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
+"Jesus said, “I am the living bread that came down from heaven. Whoever eats "
+"this bread will live forever. This bread is my flesh, which I will give for "
+"the life of the world.”"
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
@@ -2049,6 +2141,9 @@ msgid ""
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
+"Can someone who has a \"bad reputation\" (like the Samaritan woman or the "
+"demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
+"why not?"
 
 #: site/course/course-content.php:1594
 msgid ""
@@ -2081,16 +2176,20 @@ msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr ""
+"Break into groups of two or three and go out into the community to practice "
+"Prayer Walking."
 
 #: site/course/course-content.php:1639 site/course/course-content.php:4501
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
 msgstr ""
+"Choosing a location can be as simple as walking outside from where you are "
+"now, or you could plan to go to a specific destination."
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4502
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
-msgstr ""
+msgstr "Go as God leads, and plan on spending 60-90 minutes on this activity."
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
@@ -2167,6 +2266,9 @@ msgid ""
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
 msgstr ""
+"In the following video, you’ll be coached through an interactive 3/3 Group "
+"where you’ll learn a principle and then “press pause” and practice it with "
+"the group."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4760
 msgid ""
@@ -2177,7 +2279,7 @@ msgstr ""
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr ""
+msgstr "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4793
 msgid ""
@@ -2191,6 +2293,9 @@ msgid ""
 "your group meets again. Share this person’s name with the group before you "
 "go."
 msgstr ""
+"Pray and ask God who He wants you to share the 3/3 Group format with before "
+"your group meets again. Share this person’s name with the group before you "
+"go."
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
@@ -2213,24 +2318,28 @@ msgid ""
 "Have you ever learned how to ride a bicycle? Have you ever helped someone "
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
+"Have you ever learned how to ride a bicycle? Have you ever helped someone "
+"else learn? If so, chances are you already know the Training Cycle."
 
 #: site/course/course-content.php:2022
 msgid "Have you ever been a part of a Training Cycle?"
-msgstr ""
+msgstr "Have you ever been a part of a Training Cycle?"
 
 #: site/course/course-content.php:2023
 msgid "Who did you train? Or who trained you?"
-msgstr ""
+msgstr "Who did you train? Or who trained you?"
 
 #: site/course/course-content.php:2024
 msgid ""
 "Could the same person be at different parts of the Training Cycle while "
 "learning different skills?"
 msgstr ""
+"Could the same person be at different parts of the Training Cycle while "
+"learning different skills?"
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
-msgstr ""
+msgstr "What would it look like to train someone like that?"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
 msgid ""
@@ -2252,11 +2361,11 @@ msgstr ""
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
-msgstr ""
+msgstr "What did you like best about the 3/3 Group? Why?"
 
 #: site/course/course-content.php:2064
 msgid "What was the most challenging? Why?"
-msgstr ""
+msgstr "What was the most challenging? Why?"
 
 #: site/course/course-content.php:2078 site/course/course-content.php:3067
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
@@ -2296,6 +2405,9 @@ msgid ""
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
+"Pray and thank God for giving your group the energy, the focus and the "
+"faithfulness to come so far in this training. Ask God to have His Holy "
+"Spirit remind everyone in the group that they can do nothing without Him!"
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
@@ -2305,16 +2417,19 @@ msgstr ""
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 msgstr ""
+"Jesus said, “Whoever wishes to become great among you shall be your servant.”"
 
 #: site/course/course-content.php:2239
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
+"Is there a group of followers of Jesus you know that are already meeting or "
+"would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 
 #: site/course/course-content.php:2240
 msgid "What would it take to bring them together?"
-msgstr ""
+msgstr "What would it take to bring them together?"
 
 #: site/course/course-content.php:2257
 msgid ""
@@ -2383,11 +2498,11 @@ msgstr ""
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
-msgstr ""
+msgstr "What is the most exciting idea you heard in this video? Why?"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
-msgstr ""
+msgstr "What is the most challenging idea? Why?"
 
 #: site/course/course-content.php:2460
 msgid ""
@@ -2395,10 +2510,13 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
+"Multiplying matters and multiplying quickly matters even more. Pace matters "
+"because where we all spend our eternity — an existence that outlasts time — "
+"is determined in the very short time we call “life.“"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
-msgstr ""
+msgstr "Why is pace important?"
 
 #: site/course/course-content.php:2487
 msgid ""
@@ -2410,6 +2528,7 @@ msgstr ""
 msgid ""
 "What is one thing you can do starting this week that will make a difference?"
 msgstr ""
+"What is one thing you can do starting this week that will make a difference?"
 
 #: site/course/course-content.php:2506
 msgid ""
@@ -2477,7 +2596,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 msgid "Get a Coach"
-msgstr ""
+msgstr "Get a Coach"
 
 #: site/course/course-content.php:2626
 msgid ""
@@ -2654,6 +2773,9 @@ msgid ""
 "simple churches and making disciples who multiply than many pastors and "
 "missionaries around the world!"
 msgstr ""
+"You may not know it, but you now have more practical training on starting "
+"simple churches and making disciples who multiply than many pastors and "
+"missionaries around the world!"
 
 #: site/course/course-content.php:2881
 msgid ""
@@ -2668,12 +2790,17 @@ msgid ""
 "churches? How do they stay connected and live life together as an extended, "
 "spiritual family? They become a network!"
 msgstr ""
+"What happens to churches as they grow and start new churches that start new "
+"churches? How do they stay connected and live life together as an extended, "
+"spiritual family? They become a network!"
 
 #: site/course/course-content.php:2946
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
+"Are there advantages when networks of simple churches are connected by deep, "
+"personal relationships? What are some examples that come to mind?"
 
 #: site/course/course-content.php:2964
 msgid ""
@@ -3225,12 +3352,12 @@ msgstr ""
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: site/course/presenter.php:172 site/pages/_strings-mobile-pwa.php:13
 #: site/parts/footer.php:10 site/parts/nav.php:23 site/parts/nav.php:75
 msgid "About"
-msgstr ""
+msgstr "About"
 
 #: site/course/presenter.php:173
 msgid "Course"
@@ -3239,7 +3366,7 @@ msgstr ""
 #: site/course/presenter.php:174 site/dashboard/dashboard.php:250
 #: site/pages/resources.php:88 site/parts/footer.php:41
 msgid "Resources"
-msgstr ""
+msgstr "Resources"
 
 #: site/course/presenter.php:191
 msgid "Exit Course"
@@ -3263,7 +3390,7 @@ msgstr ""
 
 #: site/course/presenter.php:196
 msgid "Session"
-msgstr ""
+msgstr "Session"
 
 #: site/course/presenter.php:198
 msgid "View Transcript"
@@ -3316,7 +3443,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:163 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #: site/dashboard/dashboard.php:165
 msgid "Active"
@@ -3340,7 +3467,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
-msgstr ""
+msgstr "Logout"
 
 #: site/dashboard/dashboard.php:171 site/pages/share.php:124
 msgid "Filter"
@@ -3369,19 +3496,19 @@ msgstr ""
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
 #: site/dashboard/wizard.php:237 site/profile/profile.php:116
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #: site/dashboard/dashboard.php:179 site/dashboard/wizard.php:189
 #: site/dashboard/wizard.php:207 site/profile/profile.php:120
 #: zume-training-system.php:317
 msgid "Phone"
-msgstr ""
+msgstr "Phone"
 
 #: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:205
 #: site/login/login-template.php:437 site/login/login-template.php:438
 #: site/profile/profile.php:124 zume-training-system.php:315
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: site/dashboard/dashboard.php:181
 msgid "Linked Accounts"
@@ -3394,7 +3521,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:190
 #: site/profile/profile.php:128
 msgid "City"
-msgstr ""
+msgstr "City"
 
 #: site/dashboard/dashboard.php:184
 msgid "No Locations found"
@@ -3667,7 +3794,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:256 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
-msgstr ""
+msgstr "Start Session"
 
 #: site/dashboard/dashboard.php:257
 msgid "Show details"
@@ -3846,22 +3973,27 @@ msgstr ""
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
+"I will invite the following people to begin an Accountability Group with me:"
 
 #: site/dashboard/dashboard.php:301
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
+"I will challenge the following people to begin their own Accountability "
+"Groups and train them how to do it:"
 
 #: site/dashboard/dashboard.php:302
 msgid "I will invite the following people to begin a 3/3 Group with me:"
-msgstr ""
+msgstr "I will invite the following people to begin a 3/3 Group with me:"
 
 #: site/dashboard/dashboard.php:303
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
+"I will challenge the following people to begin their own 3/3 Groups and "
+"train them how to do it:"
 
 #: site/dashboard/dashboard.php:304
 msgid ""
@@ -3873,10 +4005,11 @@ msgstr ""
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
 msgstr ""
+"I will invite the following people to participate in Prayer Walking with me:"
 
 #: site/dashboard/dashboard.php:306
 msgid "I will Prayer Walk once every [days / weeks / months]."
-msgstr ""
+msgstr "I will Prayer Walk once every [days / weeks / months]."
 
 #: site/dashboard/dashboard.php:307
 msgid ""
@@ -3889,26 +4022,32 @@ msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
+"I will challenge the following people to use the Prayer Cycle tool on a "
+"periodic basis:"
 
 #: site/dashboard/dashboard.php:309
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
-msgstr ""
+msgstr "I will use the Prayer Cycle tool once every [days / weeks / months]."
 
 #: site/dashboard/dashboard.php:310
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
+"I will invite the following people to be part of a Leadership Cell that I "
+"will lead:"
 
 #: site/dashboard/dashboard.php:311
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
 msgstr ""
+"I will encourage the following people to go through this Zúme Training "
+"course:"
 
 #: site/dashboard/dashboard.php:312
 msgid "Other commitments:"
-msgstr ""
+msgstr "Other commitments:"
 
 #: site/dashboard/wizard.php:162
 msgctxt ""
@@ -3940,7 +4079,7 @@ msgstr ""
 #: site/dashboard/wizard.php:220 site/dashboard/wizard.php:306
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Next"
-msgstr ""
+msgstr "Next"
 
 #: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
 msgid "Skip"
@@ -3948,7 +4087,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
-msgstr ""
+msgstr "Finish"
 
 #: site/dashboard/wizard.php:171
 msgid "No locations found"
@@ -4042,7 +4181,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: site/dashboard/wizard.php:212
 msgid "What is your language preference?"
@@ -4234,7 +4373,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:280
 msgid "Other"
-msgstr ""
+msgstr "Other"
 
 #: site/dashboard/wizard.php:281
 msgid "What is the name of the training group?"
@@ -4294,7 +4433,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:293
 msgid "Group Name"
-msgstr ""
+msgstr "Group Name"
 
 #: site/dashboard/wizard.php:294
 msgid "Group name"
@@ -4322,7 +4461,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:303
 msgid "Add"
-msgstr ""
+msgstr "Add"
 
 #: site/dashboard/wizard.php:304
 msgid "Add some dates to your schedule"
@@ -4360,54 +4499,58 @@ msgid ""
 "Your password reset link appears to be invalid. Please request a new link "
 "below."
 msgstr ""
+"Your password reset link appears to be invalid. Please request a new link "
+"below."
 
 #: site/login/login-template.php:70
 msgid "Your password reset link has expired. Please request a new link below."
-msgstr ""
+msgstr "Your password reset link has expired. Please request a new link below."
 
 #: site/login/login-template.php:80
 msgid "Missing form verification. Refresh and try again."
-msgstr ""
+msgstr "Missing form verification. Refresh and try again."
 
 #: site/login/login-template.php:81
 msgid "Missing username or email address."
-msgstr ""
+msgstr "Missing username or email address."
 
 #: site/login/login-template.php:82
 msgid "ERROR: Enter a username or email address."
-msgstr ""
+msgstr "ERROR: Enter a username or email address."
 
 #: site/login/login-template.php:83
 msgid "ERROR: There is no user registered with that email address."
-msgstr ""
+msgstr "ERROR: There is no user registered with that email address."
 
 #: site/login/login-template.php:84
 msgid "ERROR: There is no user registered with that username."
-msgstr ""
+msgstr "ERROR: There is no user registered with that username."
 
 #: site/login/login-template.php:85
 msgid "ERROR: Invalid username or email."
-msgstr ""
+msgstr "ERROR: Invalid username or email."
 
 #: site/login/login-template.php:98 site/login/login-template.php:134
 msgid "Get New Password"
-msgstr ""
+msgstr "Get New Password"
 
 #: site/login/login-template.php:123 site/login/login-template.php:124
 #: site/login/login-template.php:657
 msgid "Email Address"
-msgstr ""
+msgstr "Email Address"
 
 #: site/login/login-template.php:139
 msgid ""
 "Your password reset email has been sent. Check your email or junk mail for "
 "the link to reset your password."
 msgstr ""
+"Your password reset email has been sent. Check your email or junk mail for "
+"the link to reset your password."
 
 #: site/login/login-template.php:190 site/login/login-template.php:276
 #: site/login/login-template.php:455
 msgid "Passwords do not match. Please, try again."
-msgstr ""
+msgstr "Passwords do not match. Please, try again."
 
 #: site/login/login-template.php:217
 #, php-format
@@ -4416,17 +4559,17 @@ msgstr ""
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
-msgstr ""
+msgstr "Reset Password"
 
 #: site/login/login-template.php:264
 msgid "Password Required"
-msgstr ""
+msgstr "Password Required"
 
 #: site/login/login-template.php:265 site/login/login-template.php:444
 #: site/login/login-template.php:445 site/login/login-template.php:658
 #: site/login/login-template.php:791
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
@@ -4435,7 +4578,7 @@ msgstr ""
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
 msgid "Re-enter Password"
-msgstr ""
+msgstr "Re-enter Password"
 
 #: site/login/login-template.php:365
 msgid "Hello!"
@@ -4451,7 +4594,7 @@ msgstr ""
 #: site/parts/nav.php:100 utilities/apis/cta-api.php:136
 #: utilities/apis/cta-api.php:138
 msgid "Register"
-msgstr ""
+msgstr "Register"
 
 #: site/login/login-template.php:400
 msgid "Or"
@@ -4471,11 +4614,11 @@ msgstr ""
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
-msgstr ""
+msgstr "There are some errors in your form."
 
 #: site/login/login-template.php:592
 msgid "User action confirmed."
-msgstr ""
+msgstr "User action confirmed."
 
 #: site/login/login-template.php:604
 msgid "Welcome back!"
@@ -4485,7 +4628,7 @@ msgstr ""
 #: site/login/login-template.php:735 site/pages/home.php:112
 #: site/parts/nav.php:39 site/parts/nav.php:101
 msgid "Login"
-msgstr ""
+msgstr "Login"
 
 #: site/login/login-template.php:634
 msgid "or sign in with email"
@@ -4493,11 +4636,11 @@ msgstr ""
 
 #: site/login/login-template.php:640
 msgid "Username or password does not match. Try again."
-msgstr ""
+msgstr "Username or password does not match. Try again."
 
 #: site/login/login-template.php:659 site/login/login-template.php:792
 msgid "Remember Me"
-msgstr ""
+msgstr "Remember Me"
 
 #: site/login/login-template.php:711
 msgid "Don't have an account?"
@@ -4505,7 +4648,7 @@ msgstr ""
 
 #: site/login/login-template.php:723
 msgid "Lost your password?"
-msgstr ""
+msgstr "Lost your password?"
 
 #: site/login/login-template.php:734
 msgid "Already have an account?"
@@ -4525,7 +4668,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:14
 msgid "Settings"
-msgstr ""
+msgstr "Settings"
 
 #: site/pages/_strings-mobile-pwa.php:15
 msgid "Downloads"
@@ -4558,7 +4701,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:23
 msgid "Download"
-msgstr ""
+msgstr "Download"
 
 #: site/pages/_strings-mobile-pwa.php:24
 msgid "Downloading"
@@ -4590,7 +4733,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:33
 msgid "Previous"
-msgstr ""
+msgstr "Previous"
 
 #: site/pages/_strings-mobile-pwa.php:37
 msgid "Install"
@@ -4617,7 +4760,7 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:42
 msgid "Update"
-msgstr ""
+msgstr "Update"
 
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "A new version of this app is available. Click to update this app."
@@ -4730,7 +4873,7 @@ msgstr ""
 
 #: site/pages/about.php:157
 msgid "Get Started"
-msgstr ""
+msgstr "Get Started"
 
 #: site/pages/about.php:162
 msgid "How does Zúme Training Work?"
@@ -4930,7 +5073,7 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:95 site/pages/pieces.php:95
 msgid "Ask Yourself"
-msgstr ""
+msgstr "Ask Yourself"
 
 #: site/pages/follow-jesus.php:96 site/pages/pieces.php:96
 msgid "Download Free Guidebook"
@@ -4972,6 +5115,8 @@ msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
+"It's important what disciples know — but it's much more important what they "
+"DO with what they know."
 
 #: site/pages/follow-jesus.php:227
 msgid ""
@@ -4979,10 +5124,13 @@ msgid ""
 "fellowship and practice obeying and sharing what they've learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
+"A 3/3 Group is a way for followers of Jesus to meet, pray, learn, grow, "
+"fellowship and practice obeying and sharing what they've learned. In this "
+"way, a 3/3 Group is not just a small group but a Simple Church."
 
 #: site/pages/follow-jesus.php:235
 msgid "Learn how to obey Jesus' commands by going AND staying."
-msgstr ""
+msgstr "Learn how to obey Jesus' commands by going AND staying."
 
 #: site/pages/follow-jesus.php:239
 msgid ""
@@ -5024,6 +5172,8 @@ msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
+"See how disciple making doesn't have to be linear. Multiple things can "
+"happen at the same time."
 
 #: site/pages/follow-jesus.php:289
 msgid "Speaking to people YOU KNOW about Jesus"
@@ -5037,6 +5187,7 @@ msgstr ""
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
+"Learn who a person of peace might be and how to know when you've found one."
 
 #: site/pages/follow-jesus.php:311
 msgid ""
@@ -5122,7 +5273,7 @@ msgstr ""
 
 #: site/pages/home.php:132
 msgid "Overview"
-msgstr ""
+msgstr "Overview"
 
 #: site/pages/home.php:134
 msgid "Group Discussions"
@@ -5261,6 +5412,12 @@ msgid ""
 "for the Kingdom of God. Zúme aims to equip and empower ordinary believers to "
 "saturate the globe with multiplying disciples in our generation."
 msgstr ""
+"Zúme means yeast in Greek. In Matthew 13:33, Jesus is quoted as saying, \"The"
+" Kingdom of Heaven is like a woman who took yeast and mixed it into a large "
+"amount of flour until it was all leavened.\" This illustrates how ordinary "
+"people, using ordinary resources, can have an extraordinary impact for the "
+"Kingdom of God. Zúme aims to equip and empower ordinary believers to "
+"saturate the globe with multiplying disciples in our generation."
 
 #: site/pages/home.php:336
 msgid "Ready to take your next steps?"
@@ -5333,7 +5490,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
-msgstr ""
+msgstr "Zúme Privacy Policy"
 
 #: site/pages/privacy-policy.php:86
 msgid ""
@@ -5346,10 +5503,18 @@ msgid ""
 "clear understanding of how we collect, use, protect or otherwise handle your "
 "Personally Identifiable Information in accordance with our website."
 msgstr ""
+"This privacy policy has been compiled to better serve those who are "
+"concerned with how their \"Personally Identifiable Information\" (PII) is "
+"being used online. PII, as described in US privacy law and information "
+"security, is information that can be used on its own or with other "
+"information to identify, contact, or locate a single person, or to identify "
+"an individual in context. Please read our privacy policy carefully to get a "
+"clear understanding of how we collect, use, protect or otherwise handle your "
+"Personally Identifiable Information in accordance with our website."
 
 #: site/pages/privacy-policy.php:90
 msgid "What permissions do the social sign-on logins ask for?"
-msgstr ""
+msgstr "What permissions do the social sign-on logins ask for?"
 
 #: site/pages/privacy-policy.php:91
 msgid ""
@@ -5362,23 +5527,26 @@ msgid ""
 "Public Profile. This includes certain User’s Data such as id, name, picture, "
 "gender, and their locale."
 msgstr ""
+"Public Profile. This includes certain User’s Data such as id, name, picture, "
+"gender, and their locale."
 
 #: site/pages/privacy-policy.php:97
 msgid "Email Address."
-msgstr ""
+msgstr "Email Address."
 
 #: site/pages/privacy-policy.php:104
 msgid ""
 "What personal information do we collect from the people through our website?"
 msgstr ""
+"What personal information do we collect from the people through our website?"
 
 #: site/pages/privacy-policy.php:127
 msgid "When do we collect information?"
-msgstr ""
+msgstr "When do we collect information?"
 
 #: site/pages/privacy-policy.php:130
 msgid "We collect your information at login."
-msgstr ""
+msgstr "We collect your information at login."
 
 #: site/pages/privacy-policy.php:133
 msgid ""
@@ -5393,29 +5561,35 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
-msgstr ""
+msgstr "How do we use your information?"
 
 #: site/pages/privacy-policy.php:146
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
 msgstr ""
+"We use your information to create a user account in the zume system based on "
+"your email address."
 
 #: site/pages/privacy-policy.php:149
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
 msgstr ""
+"We will email you with basic transactional emails like password reset "
+"requests and other system notifications."
 
 #: site/pages/privacy-policy.php:152
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
+"We email occasional reminders and encouragements depending on your progress "
+"through the training."
 
 #: site/pages/privacy-policy.php:159
 msgid "How do we protect your information?"
-msgstr ""
+msgstr "How do we protect your information?"
 
 #: site/pages/privacy-policy.php:161
 msgid ""
@@ -5424,6 +5598,10 @@ msgid ""
 "information to perform a specific job (for example, web administrator or "
 "customer service) are granted access to personally identifiable information."
 msgstr ""
+"While we use encryption to protect sensitive information transmitted online, "
+"we also protect your information offline. Only team members who need the "
+"information to perform a specific job (for example, web administrator or "
+"customer service) are granted access to personally identifiable information."
 
 #: site/pages/privacy-policy.php:164
 msgid ""
@@ -5433,16 +5611,23 @@ msgid ""
 "addition, all sensitive/credit information you supply is encrypted via "
 "Secure Socket Layer (SSL) technology."
 msgstr ""
+"Your personal information is contained behind secured networks and is only "
+"accessible by a limited number of persons who have special access rights to "
+"such systems, and are required to keep the information confidential. In "
+"addition, all sensitive/credit information you supply is encrypted via "
+"Secure Socket Layer (SSL) technology."
 
 #: site/pages/privacy-policy.php:167
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
 msgstr ""
+"We implement a variety of security measures when a user submits, or accesses "
+"their information to maintain the safety of your personal information."
 
 #: site/pages/privacy-policy.php:173
 msgid "Do we use \"cookies\"?"
-msgstr ""
+msgstr "Do we use \"cookies\"?"
 
 #: site/pages/privacy-policy.php:175
 msgid ""
@@ -5453,39 +5638,43 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
-msgstr ""
+msgstr "Your Access to and Control Over Information."
 
 #: site/pages/privacy-policy.php:183
 msgid ""
 "You may opt out of any future contact from us at any time. You can do the "
 "following at any time by contacting us via our contact email address:"
 msgstr ""
+"You may opt out of any future contact from us at any time. You can do the "
+"following at any time by contacting us via our contact email address:"
 
 #: site/pages/privacy-policy.php:186
 msgid "See what data we've aggregated from your activities with us."
-msgstr ""
+msgstr "See what data we've aggregated from your activities with us."
 
 #: site/pages/privacy-policy.php:190
 msgid "Change/correct any data we have about you."
-msgstr ""
+msgstr "Change/correct any data we have about you."
 
 #: site/pages/privacy-policy.php:193
 msgid "Have us delete any data we have about you."
-msgstr ""
+msgstr "Have us delete any data we have about you."
 
 #: site/pages/privacy-policy.php:196
 msgid "Express any concern you have about our use of your data."
-msgstr ""
+msgstr "Express any concern you have about our use of your data."
 
 #: site/pages/privacy-policy.php:203
 msgid "Updates"
-msgstr ""
+msgstr "Updates"
 
 #: site/pages/privacy-policy.php:205
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
 msgstr ""
+"Our Privacy Policy may change from time to time and all updates will be "
+"posted on this page."
 
 #: site/pages/resources.php:100
 msgid "Training Guidebook"
@@ -5517,11 +5706,11 @@ msgstr ""
 
 #: site/pages/share.php:122
 msgid "Tools"
-msgstr ""
+msgstr "Tools"
 
 #: site/pages/share.php:123
 msgid "Concepts"
-msgstr ""
+msgstr "Concepts"
 
 #: site/pages/share.php:125
 msgid "Sort"
@@ -5581,7 +5770,7 @@ msgstr ""
 
 #: site/pages/training.php:160
 msgid "Course Overview"
-msgstr ""
+msgstr "Course Overview"
 
 #: site/pages/training.php:162 site/pages/training.php:174
 msgid "Course Concepts"
@@ -5695,7 +5884,7 @@ msgstr ""
 
 #: site/profile/profile.php:111
 msgid "Profile"
-msgstr ""
+msgstr "Profile"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
@@ -5833,7 +6022,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
 msgid "Zúme Dashboard"
-msgstr ""
+msgstr "Zúme Dashboard"
 
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
@@ -5865,33 +6054,33 @@ msgstr ""
 
 #: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"
-msgstr ""
+msgstr "Someone has requested a password reset for the following account:"
 
 #. translators: %s: site name
 #: zume-training-system.php:212
 #, php-format
 msgid "Site Name: %s"
-msgstr ""
+msgstr "Site Name: %s"
 
 #. translators: %s: user login
 #: zume-training-system.php:214
 #, php-format
 msgid "Username: %s"
-msgstr ""
+msgstr "Username: %s"
 
 #: zume-training-system.php:215
 msgid "If this was a mistake, just ignore this email and nothing will happen."
-msgstr ""
+msgstr "If this was a mistake, just ignore this email and nothing will happen."
 
 #: zume-training-system.php:216
 msgid "To reset your password, visit the following address:"
-msgstr ""
+msgstr "To reset your password, visit the following address:"
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:234
 #, php-format
 msgid "[%s] Password Reset"
-msgstr ""
+msgstr "[%s] Password Reset"
 
 #: zume-training-system.php:250
 msgid "Profile Details"
