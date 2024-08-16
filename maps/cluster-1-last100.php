@@ -112,16 +112,9 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
         <?php
     }
 
-    public function footer_javascript(){}
-
     public function body(){
-        ?>
-
-        <?php DT_Mapbox_API::geocoder_scripts(); ?>
-
-        <div id="chart"></div>
-
-        <?php
+        DT_Mapbox_API::geocoder_scripts();
+        ?><div id="chart"></div><?php
     }
 
     /**
