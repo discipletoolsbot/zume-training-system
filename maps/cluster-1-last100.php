@@ -61,7 +61,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
         $allowed_js[] = 'mapbox-cookie';
         $allowed_js[] = 'mapbox-gl';
         $allowed_js[] = 'last100-hours-js';
-        $allowed_js[] = 'lodash';
         return $allowed_js;
     }
 
@@ -71,7 +70,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
     }
 
     public function scripts() {
-        wp_enqueue_script( 'lodash' );
         wp_enqueue_script( 'last100-hours-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'cluster-1-last100.js', [ 'jquery' ],
         filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'cluster-1-last100.js' ), true );
     }
@@ -83,12 +81,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
      */
     public function header_style(){
         ?>
-        <style>
-            body {
-                background-color: white;
-                padding: 0;
-            }
-        </style>
         <script>
             let jsObject = [<?php echo json_encode([
                 'map_key' => DT_Mapbox_API::get_key(),
@@ -120,41 +112,15 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
         <?php
     }
 
-    /**
-     * Writes javascript to the footer
-     * @see DT_Magic_Url_Base()->footer_javascript() for default state
-     */
-    public function footer_javascript(){
-    }
+    public function footer_javascript(){}
 
     public function body(){
-        DT_Mapbox_API::geocoder_scripts();
         ?>
+
+        <?php DT_Mapbox_API::geocoder_scripts(); ?>
+
         <div id="chart"></div>
-        <div class="reveal" id="welcome-modal" data-reveal>
-            <h1><?php echo esc_html__( 'Purpose of the Map', 'zume' ) ?></h1>
-            <p><?php echo esc_html__( 'The Last 100 Hours map shows the Holy Spirit moving his people to disciple making through Zúme around the world. The 100 hours begins now and covers activity over roughly the last 4 days.', 'zume' ) ?></p>
-            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'Types of Activities', 'zume' ) ?></strong></p>
-            <p><strong>( <?php echo esc_html__( 'Studying', 'zume' ) ?> )</strong> <?php echo esc_html__( 'Someone who is "studying" is not logged into the system, but is studying the course material.', 'zume' ) ?></p>
-            <p><strong>( <?php echo esc_html__( 'Training', 'zume' ) ?> )</strong> <?php echo esc_html__( 'Someone who is "training" is logged into to the system and is going through the training process.', 'zume' ) ?></p>
-            <p><strong>( <?php echo esc_html__( 'Practicing', 'zume' ) ?> )</strong> <?php echo esc_html__( 'Someone who is "practicing" is taking action by sharing tools and concepts, training others to share, reporting on movement growth, etc.', 'zume' ) ?></p>
-            <p><strong>( <?php echo esc_html__( 'Coaching', 'zume' ) ?> )</strong> <?php echo esc_html__( 'Someone who is in "coaching" is interacting with a peer mentor Zúme coach.', 'zume' ) ?></p>
-            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'How to Get on The Map', 'zume' ) ?></strong></p>
-            <ul>
-                <li><?php echo esc_html__( 'Always sign in when you are studying the content.', 'zume' ) ?></li>
-                <li><?php echo esc_html__( 'Always checkin when you are going through a session.', 'zume' ) ?></li>
-                <li><?php echo esc_html__( 'Always update your progress in the training section as you are sharing and training others.', 'zume' ) ?></li>
-                <li><?php echo esc_html__( 'Always report new simple churches that you are starting.', 'zume' ) ?></li>
-            </ul>
-            <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <script>
-            jQuery(document).ready(function(){
-                jQuery('#welcome-modal').foundation('open');
-            })
-        </script>
+
         <?php
     }
 

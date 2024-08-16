@@ -21,12 +21,6 @@
     </div>
 </div>
 
-<div class="large reveal" id="welcome-modal" data-v-offset="10px" data-reveal>
-    <div id="welcome-content" data-close></div>
-    <div class="center"><button class="button" id="welcome-close-button" data-close><?php echo esc_html__( 'Get Started!', 'zume' ) ?></button></div>
-</div>
-
-
 <div id="wrapper">
     <div class="grid-x">
         <div class="cell medium-9" id="map-container">
@@ -123,18 +117,6 @@
             </div>
         </div>
     </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-
-
-<!-- report modal -->
-<div class="reveal" id="report-modal" data-v-offset="10px" data-close-on-click="false" data-reveal>
-    <div>
-        <h3 id="report-modal-title"></h3>
-    </div>
-    <div id="report-modal-content"></div>
     <button class="close-button" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
