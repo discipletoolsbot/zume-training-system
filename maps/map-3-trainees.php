@@ -105,7 +105,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
                                   ${jsObject.translation.population}: <span>${data.population}</span><br>
                                   ${jsObject.translation.trainees_needed}: <span>${data.needed}</span><br>
                                   ${jsObject.translation.trainees_reported}: <span class="reported_number">${data.reported}</span><br>
-                                  ${jsObject.translation.trainees_goal_reached}: <span>${data.percent}</span>%
+                                  ${jsObject.translation.goal_reached}: <span>${data.percent}</span>%
                                   <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
                                 </div>
                             </div>
