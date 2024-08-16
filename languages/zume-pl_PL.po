@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-27 08:59+0000\n"
+"PO-Revision-Date: 2024-08-14 17:07+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
@@ -4506,13 +4506,12 @@ msgid "I will Prayer Walk once every [days / weeks / months]."
 msgstr "Będę chodzić na spacer z modlitwą co [dzień/tydzień/miesiąc]."
 
 #: site/dashboard/dashboard.php:307
-#, fuzzy
 msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
-"Osoby, które wyposażę do dzielenia się swoją historią i historią Boga oraz "
-"stworzenia listy 100 osób, z którymi są w relacjach:"
+"Osoby, które wyposażę do dzielenia się ich i Bożą historią oraz do "
+"stworzenia listy 100 osób z sieci ich relacji:"
 
 #: site/dashboard/dashboard.php:308
 msgid ""
@@ -4539,38 +4538,32 @@ msgid ""
 msgstr "Osoby, które zachęcę do odbycia Szkolenia Zúme:"
 
 #: site/dashboard/dashboard.php:312
-#, fuzzy
 msgid "Other commitments:"
 msgstr "Inne zobowiązania:"
 
 #: site/dashboard/wizard.php:162
-#, fuzzy
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr "Zły czarodziej"
+msgstr "Zły Kreator"
 
 #: site/dashboard/wizard.php:163
-#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr "Wpadłeś w konflikt z bardzo złymi czarodziejami!"
+msgstr "Wpadłeś w szemrane towarzystwo!"
 
 #: site/dashboard/wizard.php:164
-#, fuzzy
 msgid "Wizard is already completed"
-msgstr "Kreator jest już ukończony"
+msgstr "Kreator został już ukończony"
 
 #: site/dashboard/wizard.php:165
-#, fuzzy
 msgid "Get back home"
-msgstr "Wrócić do domu"
+msgstr "Wróć na stronę główną"
 
 #: site/dashboard/wizard.php:166 site/login/login-template.php:408
-#, fuzzy
 msgid "Back"
 msgstr "Powrót"
 
@@ -4581,9 +4574,8 @@ msgid "Next"
 msgstr "Następny"
 
 #: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
-#, fuzzy
 msgid "Skip"
-msgstr "Pominąć"
+msgstr "Pomiń"
 
 #: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
@@ -4594,75 +4586,65 @@ msgid "No locations found"
 msgstr "Nie znaleziono lokalizacji"
 
 #: site/dashboard/wizard.php:174
-#, fuzzy
 msgid "Zúme Community"
-msgstr "Społeczność"
+msgstr "Społeczność Zúme"
 
 #: site/dashboard/wizard.php:175
-#, fuzzy
 msgid ""
 "Zúme is a community of practice and encouragement for those who want to see "
 "disciple making movements. The Zúme vision is to see one trainee and two "
 "simple churches for every 5,000 people in the United States and 50,000 "
 "people globally."
 msgstr ""
-"Zúme to wspólnota praktyki i zachęty dla tych, którzy chcą widzieć ruchy "
-"czyniące uczniów. Wizją Zúme jest zapewnienie jednego stażysty i dwóch "
-"prostych kościołów na każde 5000 osób w Stanach Zjednoczonych i 50 000 osób "
-"na całym świecie."
+"Zúme jest wspólnota praktyki i zachęty dla tych, którzy chcą oglądać ruchy "
+"czyniące uczniów. Wizją Zúme jest jedna przeszkolona osoba i dwa proste "
+"Kościoły na każde 5000 osób w Stanach Zjednoczonych i 50 000 osób na całym "
+"świecie."
 
 #: site/dashboard/wizard.php:177
-#, fuzzy
 msgid ""
 "Connect with others like you who want to see a disciple making movement in "
 "their area. Share your experience with others, and learn from others who are "
 "discovering new things."
 msgstr ""
-"Nawiąż kontakt z innymi osobami takimi jak Ty, które chcą zobaczyć ruch "
-"czyniący uczniów na swoim obszarze. Podziel się swoim doświadczeniem z "
-"innymi i ucz się od innych, którzy odkrywają nowe rzeczy."
+"Nawiąż kontakt z podobnymi do Ciebie osobami, chcącymi oglądać ruch "
+"czynienia uczniów tam, gdzie mieszkają. Dziel się swoimi doświadczeniami i "
+"ucz się od innych, by odkrywać coraz więcej."
 
 #: site/dashboard/wizard.php:178
-#, fuzzy
 msgid "Encouragement"
 msgstr "Zachęta"
 
 #: site/dashboard/wizard.php:179
-#, fuzzy
 msgid ""
 "Hear news about disciple making movements in your region and your wider "
 "country, get reports of  progress, and get connected to online and face-to-"
 "face gatherings."
 msgstr ""
-"Słuchaj wiadomości o ruchach pozyskiwania uczniów w swoim regionie i całym "
-"kraju, otrzymuj raporty o postępach i bierz udział w spotkaniach online i "
-"bezpośrednich."
+"Dowiaduj się o ruchach pozyskiwania uczniów w swoim regionie i całym kraju, "
+"śledź raporty o postępach i bierz udział w spotkaniach online i w realu."
 
 #: site/dashboard/wizard.php:180
-#, fuzzy
 msgid "Free Tools"
-msgstr "Narzędzia"
+msgstr "Darmowe narzędzia"
 
 #: site/dashboard/wizard.php:181
-#, fuzzy
 msgid ""
 "Access free tools for tracking disciple-making and church planting in your "
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
-"Uzyskaj dostęp do bezpłatnych narzędzi do śledzenia pozyskiwania uczniów i "
-"zakładania kościołów w Twojej okolicy. Zdobądź mapę, aby przedstawić wizję "
-"nasycenia swojego miasta pomnażaniem uczniów i kościołów."
+"Uzyskaj dostęp do bezpłatnych narzędzi do monitorowania czynienia uczniów i "
+"zakładania kościołów w Twojej okolicy. Mapa pomoże Ci zobrazować wizję "
+"wypełnienia Twojego miasta pomnażającymi się uczniami i Kościołami."
 
 #: site/dashboard/wizard.php:182
-#, fuzzy
 msgid "Join for Free"
 msgstr "Dołącz za darmo"
 
 #: site/dashboard/wizard.php:183
-#, fuzzy
 msgid "Successfully joined community"
-msgstr "Społeczność"
+msgstr "Dołączyłeś/aś do społeczności"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
@@ -4670,51 +4652,42 @@ msgid "Something went wrong"
 msgstr "Coś poszło nie tak"
 
 #: site/dashboard/wizard.php:188
-#, fuzzy
 msgid "Complete your profile"
-msgstr "Twój profil"
+msgstr "Uzupełnij swój profil"
 
 #: site/dashboard/wizard.php:192
-#, fuzzy
 msgid "What is your name?"
 msgstr "Jak masz na imię?"
 
 #: site/dashboard/wizard.php:193
-#, fuzzy
 msgid "What is your phone number?"
 msgstr "Jaki jest Twój numer telefonu?"
 
 #: site/dashboard/wizard.php:194
-#, fuzzy
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr "Numer telefonu może zawierać tylko cyfry, nawiasy i łączniki"
+msgstr "Numer telefonu może zawierać tylko cyfry, nawiasy i myślniki"
 
 #: site/dashboard/wizard.php:195
-#, fuzzy
 msgid "What city do you live in?"
-msgstr "Czego dowiadujemy się o Bogu?"
+msgstr "W jakim mieście mieszkasz?"
 
 #: site/dashboard/wizard.php:196
-#, fuzzy
 msgid "This is your approximate location."
-msgstr "To jest Twoja przybliżona lokalizacja."
+msgstr "Oto Twoja przybliżona lokalizacja."
 
 #: site/dashboard/wizard.php:198
-#, fuzzy
 msgid "Privacy Policy"
-msgstr "Polityka prywatności Zume"
+msgstr "Polityka prywatności"
 
 #: site/dashboard/wizard.php:204
-#, fuzzy
 msgid "What is your contact preference?"
-msgstr "Jakie jest Twoje miasto, stan lub kod pocztowy?"
+msgstr "Jakie są Twoje preferencje dotyczące kontaktu?"
 
 #: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
 msgstr "SMS"
 
 #: site/dashboard/wizard.php:212
-#, fuzzy
 msgid "What is your language preference?"
 msgstr "Jakie są Twoje preferencje językowe?"
 
@@ -4723,48 +4696,40 @@ msgid "How can we serve you?"
 msgstr "Jak możemy Ci służyć?"
 
 #: site/dashboard/wizard.php:215
-#, fuzzy
 msgid "Coaching"
-msgstr "Coach"
+msgstr "Coaching"
 
 #: site/dashboard/wizard.php:216
-#, fuzzy
 msgid "Technical Assistance"
-msgstr "Potrzebuję pomocy technicznej"
+msgstr "Pomoc techniczna"
 
 #: site/dashboard/wizard.php:217
-#, fuzzy
 msgid "Question about implementing the training"
-msgstr "Pytanie dotyczące realizacji szkolenia"
+msgstr "Pytanie dotyczące przeprowadzenia szkolenia"
 
 #: site/dashboard/wizard.php:218
-#, fuzzy
 msgid "Question about the content"
 msgstr "Pytanie o treść"
 
 #: site/dashboard/wizard.php:219
-#, fuzzy
 msgid "Help with what to do after starting a group"
-msgstr "Pomoc w tym, co zrobić po założeniu grupy"
+msgstr "Pomoc odnośnie dalszych kroków po założeniu grupy"
 
 #: site/dashboard/wizard.php:221
-#, fuzzy
 msgid "Please give a response to this question"
-msgstr "Proszę o odpowiedź na to pytanie"
+msgstr "Prosimy o odpowiedź na to pytanie"
 
 #: site/dashboard/wizard.php:222
-#, fuzzy
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
-"Po przesłaniu tej prośby dołożymy wszelkich starań, aby połączyć Cię z "
-"trenerem w Twojej okolicy."
+"Prośba przesłana. Dołożymy wszelkich starań, aby połączyć Cię z trenerem w "
+"Twojej okolicy."
 
 #: site/dashboard/wizard.php:223
-#, fuzzy
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
-"Przepraszam. Nie udało nam się przesłać Twojej prośby. Spróbuj ponownie "
+"Przepraszamy. Nie udało nam się przesłać Twojej prośby. Spróbuj ponownie "
 "później."
 
 #: site/dashboard/wizard.php:224
@@ -4772,125 +4737,103 @@ msgid "You have already requested a coach"
 msgstr "Prosiłeś/aś już o trenera"
 
 #: site/dashboard/wizard.php:225
-#, fuzzy
 msgid "Error connecting with a coach"
-msgstr "kontakt z trenerem"
+msgstr "Błąd połączenia z trenerem"
 
 #: site/dashboard/wizard.php:226
-#, fuzzy
 msgid "Connecting you to a Coach"
-msgstr "Połącz mnie z trenerem"
+msgstr "Łączymy Cię z trenerem"
 
 #: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
 #: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
-#, fuzzy
 msgid "Please wait while we connect you"
-msgstr "Proszę czekać, aż Cię połączymy"
+msgstr "Zaczekaj na połączenie"
 
 #: site/dashboard/wizard.php:232
-#, fuzzy
 msgid "Joining Plan"
-msgstr "Plan dołączenia"
+msgstr "Łączenie z planem"
 
 #: site/dashboard/wizard.php:234 site/dashboard/wizard.php:317
-#, fuzzy
 msgid "The training link is broken. Please try again."
 msgstr "Link do szkolenia jest uszkodzony. Proszę spróbuj ponownie."
 
 #: site/dashboard/wizard.php:235
-#, fuzzy, php-format
+#, php-format
 msgid "Successfully joined training %s"
 msgstr "Pomyślnie dołączono do szkolenia %s"
 
 #: site/dashboard/wizard.php:238
-#, fuzzy
 msgid "Next Session Date"
-msgstr "Następna sesja"
+msgstr "Data następnej sesji"
 
 #: site/dashboard/wizard.php:239
-#, fuzzy
 msgid "Start Time"
-msgstr "Start"
+msgstr "Czas rozpoczęcia"
 
 #: site/dashboard/wizard.php:240
-#, fuzzy
 msgid "Timezone"
 msgstr "Strefa czasowa"
 
 #: site/dashboard/wizard.php:243
-#, fuzzy
 msgid "There are currently no public trainings available."
-msgstr "Obecnie nie ma dostępnych szkoleń publicznych."
+msgstr "Obecnie nie ma dostępnych publicznych szkoleń."
 
 #: site/dashboard/wizard.php:246
-#, fuzzy
 msgid "Connecting with friend"
-msgstr "Łączenie się z przyjacielem"
+msgstr "Połączenie ze znajomym/ą"
 
 #: site/dashboard/wizard.php:248
-#, fuzzy
 msgid "The friend link is broken. Please try again."
-msgstr "Link do znajomego jest uszkodzony. Proszę spróbuj ponownie."
+msgstr "Link do znajomego/ej jest uszkodzony. Proszę spróbuj ponownie."
 
 #: site/dashboard/wizard.php:249
-#, fuzzy, php-format
+#, php-format
 msgid "Successfully connected with friend %s"
-msgstr "Pomyślnie połączono ze znajomym %s"
+msgstr "Pomyślnie połączono ze znajomym/ą %s"
 
 #: site/dashboard/wizard.php:253
-#, fuzzy
 msgid "Checking in"
-msgstr "Lista kontrolna"
+msgstr "Logowanie"
 
 #: site/dashboard/wizard.php:255
-#, fuzzy
 msgid "The checkin link is broken. Please try again."
-msgstr "Link do meldowania się jest uszkodzony. Proszę spróbuj ponownie."
+msgstr "Link do logowania jest uszkodzony. Proszę spróbuj ponownie."
 
 #: site/dashboard/wizard.php:256
-#, fuzzy
 msgid "Successfully checked in"
-msgstr "Zameldowano się pomyślnie"
+msgstr "Pomyślnie zalogowano"
 
 #: site/dashboard/wizard.php:261
-#, fuzzy
 msgid "Create a training group"
-msgstr "Stwórz własną listę 100"
+msgstr "Utwórz grupę szkoleniową"
 
 #: site/dashboard/wizard.php:262
-#, fuzzy
 msgid "Join a public training group"
-msgstr "Poprowadź szkolenie"
+msgstr "Dołącz do publicznej grupy szkoleniowej"
 
 #: site/dashboard/wizard.php:263
-#, fuzzy
 msgid "Skip for now"
-msgstr "Pomiń to na razie"
+msgstr "Na razie pomiń"
 
 #: site/dashboard/wizard.php:264
-#, fuzzy
 msgid "Choose your course format"
 msgstr "Wybierz format kursu"
 
 #: site/dashboard/wizard.php:265
-#, fuzzy
 msgid "1 hour (20 sessions)"
-msgstr "Sesja"
+msgstr "1 godzina (20 sesji)"
 
 #: site/dashboard/wizard.php:266
-#, fuzzy
 msgid "2 hour (10 sessions)"
-msgstr "Sesja"
+msgstr "2 godziny (10 sesji)"
 
 #: site/dashboard/wizard.php:267
-#, fuzzy
 msgid "4 hour (5 sessions)"
-msgstr "Sesja"
+msgstr "4 godziny (5 sesji)"
 
 #: site/dashboard/wizard.php:268
-#, fuzzy
 msgid "Would you like to schedule your training?"
-msgstr "Chcesz zaplanować swój trening?"
+msgstr "Czy chcesz zaplanować szkolenie?"
 
 #: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
@@ -4901,47 +4844,38 @@ msgid "No"
 msgstr "Nie"
 
 #: site/dashboard/wizard.php:271
-#, fuzzy
 msgid "What time of day?"
 msgstr "O której porze dnia?"
 
 #: site/dashboard/wizard.php:272
-#, fuzzy
 msgid "Morning"
-msgstr "Szkolenie"
+msgstr "Rano"
 
 #: site/dashboard/wizard.php:273
-#, fuzzy
 msgid "Afternoon"
-msgstr "Popołudnie"
+msgstr "Popołudniu"
 
 #: site/dashboard/wizard.php:274
-#, fuzzy
 msgid "Evening"
-msgstr "Wieczór"
+msgstr "Wieczorem"
 
 #: site/dashboard/wizard.php:275
-#, fuzzy
 msgid "How often will you meet?"
-msgstr "Jak się czujesz?"
+msgstr "Jak często będziecie się spotykać?"
 
 #: site/dashboard/wizard.php:276
-#, fuzzy
 msgid "Every day"
 msgstr "Codziennie"
 
 #: site/dashboard/wizard.php:277
-#, fuzzy
 msgid "Once a week"
 msgstr "Raz w tygodniu"
 
 #: site/dashboard/wizard.php:278
-#, fuzzy
 msgid "Twice a month"
 msgstr "Dwa razy w miesiącu"
 
 #: site/dashboard/wizard.php:279
-#, fuzzy
 msgid "Once a month"
 msgstr "Raz w miesiącu"
 
@@ -4950,34 +4884,28 @@ msgid "Other"
 msgstr "Inne"
 
 #: site/dashboard/wizard.php:281
-#, fuzzy
 msgid "What is the name of the training group?"
-msgstr "Jaka jest treść szkolenia?"
+msgstr "Jak nazywa się grupa szkoleniowa?"
 
 #: site/dashboard/wizard.php:282
-#, fuzzy
 msgid "My first training group"
-msgstr "Poprowadź szkolenie"
+msgstr "Moja pierwsza grupa szkoleniowa"
 
 #: site/dashboard/wizard.php:283
-#, fuzzy
 msgid "When do you plan to start?"
-msgstr "Czego dowiadujemy się o Bogu?"
+msgstr "Kiedy planujecie zacząć?"
 
 #: site/dashboard/wizard.php:284
-#, fuzzy
 msgid "Where do you plan to meet?"
-msgstr "Czego dowiadujemy się o Bogu?"
+msgstr "Gdzie planujecie się spotykać?"
 
 #: site/dashboard/wizard.php:285
-#, fuzzy
 msgid "This could be online or in person"
-msgstr "Może to odbywać się online lub osobiście"
+msgstr "Szkolenie może odbywać się online lub osobiście"
 
 #: site/dashboard/wizard.php:286
-#, fuzzy
 msgid "Review Schedule"
-msgstr "Cykl treningowy"
+msgstr "Przegląd harmonogramu"
 
 #: site/dashboard/wizard.php:287
 #, php-format
@@ -4986,66 +4914,56 @@ msgid "%1$s of %2$s selected"
 msgstr "Wybrano %1$s z %2$s"
 
 #: site/dashboard/wizard.php:288
-#, fuzzy
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
-msgstr "Przeczytaj"
+msgstr "Gotowe"
 
 #: site/dashboard/wizard.php:289
-#, fuzzy, php-format
+#, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
 msgstr "Wybrano zbyt wiele: %s"
 
 #: site/dashboard/wizard.php:290
-#, fuzzy
 msgid "Incorrect number of sessions selected"
 msgstr "Wybrano nieprawidłową liczbę sesji"
 
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:293
 #: site/dashboard/wizard.php:295
-#, fuzzy, php-format
+#, php-format
 msgid "Set %s"
 msgstr "Ustaw %s"
 
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
 #: site/dashboard/wizard.php:313
-#, fuzzy
 msgid "Location"
-msgstr "Zapisz bieżącą lokalizację"
+msgstr "Lokalizacja"
 
 #: site/dashboard/wizard.php:293
-#, fuzzy
 msgid "Group Name"
-msgstr "Bez nazwy"
+msgstr "Nazwa grupy"
 
 #: site/dashboard/wizard.php:294
-#, fuzzy
 msgid "Group name"
-msgstr "Bez nazwy"
+msgstr "Nazwa grupy"
 
 #: site/dashboard/wizard.php:295
-#, fuzzy
 msgid "Start Date"
-msgstr "Start"
+msgstr "Data rozpoczęcia"
 
 #: site/dashboard/wizard.php:299 site/dashboard/wizard.php:314
-#, fuzzy
 msgid "Time"
 msgstr "Czas"
 
 #: site/dashboard/wizard.php:300
-#, fuzzy
 msgid "Date"
 msgstr "Data"
 
 #: site/dashboard/wizard.php:301
-#, fuzzy
 msgid "Summary"
-msgstr "Streszczenie"
+msgstr "Podsumowanie"
 
 #: site/dashboard/wizard.php:302
-#, fuzzy
 msgid "Clear Calendar"
 msgstr "Wyczyść kalendarz"
 
@@ -5054,22 +4972,18 @@ msgid "Add"
 msgstr "Dodaj"
 
 #: site/dashboard/wizard.php:304
-#, fuzzy
 msgid "Add some dates to your schedule"
-msgstr "Dodaj kilka dat do swojego harmonogramu"
+msgstr "Dodaj kilka dat do swojego kalendarza"
 
 #: site/dashboard/wizard.php:305
-#, fuzzy
 msgid "Change"
-msgstr "Zmień klucz"
+msgstr "Zmień"
 
 #: site/dashboard/wizard.php:309
-#, fuzzy
 msgid "Invite your friends to join your training"
-msgstr "Zaproś znajomych na swój trening"
+msgstr "Zaproś znajomych na swoje szkolenie"
 
 #: site/dashboard/wizard.php:310
-#, fuzzy
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
@@ -5078,19 +4992,17 @@ msgstr ""
 "do Twojego szkolenia."
 
 #: site/dashboard/wizard.php:311
-#, fuzzy
 msgid "Join my zume plan"
 msgstr "Dołącz do mojego planu zume"
 
 #: site/dashboard/wizard.php:312
-#, fuzzy, php-format
+#, php-format
 msgid "%s is inviting you to a Zume Training Group"
 msgstr "%s zaprasza Cię do grupy szkoleniowej Zume"
 
 #: site/dashboard/wizard.php:318
-#, fuzzy
 msgid "Copy Invite"
-msgstr "Połącz"
+msgstr "Skopiuj zaproszenie"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -5151,7 +5063,7 @@ msgid "Passwords do not match. Please, try again."
 msgstr "Hasła nie pasują do siebie. Spróbuj ponownie."
 
 #: site/login/login-template.php:217
-#, fuzzy, php-format
+#, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
 msgstr "Twoje hasło zostało zresetowane. %1$s Tutaj możesz się zalogować %2$s"
 
@@ -5170,9 +5082,8 @@ msgid "Password"
 msgstr "Hasło"
 
 #: site/login/login-template.php:267
-#, fuzzy
 msgid "Please choose a stronger password. This one is too weak."
-msgstr "Wybierz silniejsze hasło. Ten jest za słaby."
+msgstr "Wybierz mocniejsze hasło. To jest za słabe."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -5180,12 +5091,10 @@ msgid "Re-enter Password"
 msgstr "Wprowadź ponownie hasło"
 
 #: site/login/login-template.php:365
-#, fuzzy
 msgid "Hello!"
 msgstr "Cześć!"
 
 #: site/login/login-template.php:366
-#, fuzzy
 msgid "Create a Zume Account"
 msgstr "Utwórz konto Zume"
 
@@ -5198,7 +5107,6 @@ msgid "Register"
 msgstr "Zarejestruj"
 
 #: site/login/login-template.php:400
-#, fuzzy
 msgid "Or"
 msgstr "Lub"
 
@@ -5207,12 +5115,10 @@ msgid "Register with Email"
 msgstr "Zarejestruj się za pomocą adresu email"
 
 #: site/login/login-template.php:440
-#, fuzzy
 msgid "Badly formatted email address"
 msgstr "Źle sformatowany adres e-mail"
 
 #: site/login/login-template.php:447
-#, fuzzy
 msgid "Password is not strong enough"
 msgstr "Hasło nie jest wystarczająco silne"
 
@@ -5225,9 +5131,8 @@ msgid "User action confirmed."
 msgstr "Działanie użytkownika potwierdzone."
 
 #: site/login/login-template.php:604
-#, fuzzy
 msgid "Welcome back!"
-msgstr "Witamy!"
+msgstr "Witamy z powrotem!"
 
 #: site/login/login-template.php:611 site/login/login-template.php:660
 #: site/login/login-template.php:735 site/pages/home.php:112
@@ -5236,7 +5141,6 @@ msgid "Login"
 msgstr "Zaloguj się"
 
 #: site/login/login-template.php:634
-#, fuzzy
 msgid "or sign in with email"
 msgstr "lub zaloguj się za pomocą e-maila"
 
@@ -5249,7 +5153,6 @@ msgid "Remember Me"
 msgstr "Zapamiętaj mnie"
 
 #: site/login/login-template.php:711
-#, fuzzy
 msgid "Don't have an account?"
 msgstr "Nie masz konta?"
 
@@ -5258,7 +5161,6 @@ msgid "Lost your password?"
 msgstr "Zgubiłeś hasło?"
 
 #: site/login/login-template.php:734
-#, fuzzy
 msgid "Already have an account?"
 msgstr "Posiadasz już konto?"
 
@@ -5267,9 +5169,8 @@ msgid "Username or Email Address"
 msgstr "Nazwa użytkownika lub adres e-mail"
 
 #: site/login/login-template.php:793
-#, fuzzy
 msgid "Log In"
-msgstr "Zaloguj sie"
+msgstr "Zaloguj się"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -5307,7 +5208,6 @@ msgid "Sign Out"
 msgstr "Wyloguj się"
 
 #: site/pages/_strings-mobile-pwa.php:22
-#, fuzzy
 msgid "Download All"
 msgstr "Pobierz wszystko"
 
