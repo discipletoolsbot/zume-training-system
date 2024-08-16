@@ -16,7 +16,7 @@ export class JoinCommunity extends LitElement {
 
     joinCommunity() {
         this.loading = true
-        zumeRequest.post( 'log', { type: 'system', subtype: 'join_community', log_once: true }, 'zume_system/v1/' )
+        zumeRequest.post( 'log', { type: 'system', subtype: 'join_community', log_once: true }, 'zume_system/v1' )
             .then( ( data ) => {
                 this.success = true
             })

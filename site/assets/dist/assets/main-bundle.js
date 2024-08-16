@@ -160,7 +160,7 @@ ${this.training.zoom_link_note}
             `:""}
             <span class="loading-spinner ${this.loading?"active":""}"></span>
             <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
-        `}createRenderRoot(){return this}}customElements.define("join-training",xo);class Eo extends k{static get properties(){return{hasNextStep:{type:Boolean},t:{type:Object},loading:{type:Boolean,attribute:!1},success:{type:Boolean,atrtibute:!1}}}joinCommunity(){this.loading=!0,S.post("log",{type:"system",subtype:"join_community",log_once:!0},"zume_system/v1/").then(t=>{this.success=!0}).finally(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}_sendDoneStepEvent(){const t=new CustomEvent("done-step",{bubbles:!0});this.dispatchEvent(t)}render(){return this.hasNextStep&&!this.loading&&!this.success&&this.joinCommunity(),c`
+        `}createRenderRoot(){return this}}customElements.define("join-training",xo);class Eo extends k{static get properties(){return{hasNextStep:{type:Boolean},t:{type:Object},loading:{type:Boolean,attribute:!1},success:{type:Boolean,atrtibute:!1}}}joinCommunity(){this.loading=!0,S.post("log",{type:"system",subtype:"join_community",log_once:!0},"zume_system/v1").then(t=>{this.success=!0}).finally(()=>{this.loading=!1,this.dispatchEvent(new CustomEvent("wizard:finish",{bubbles:!0}))})}_sendDoneStepEvent(){const t=new CustomEvent("done-step",{bubbles:!0});this.dispatchEvent(t)}render(){return this.hasNextStep&&!this.loading&&!this.success&&this.joinCommunity(),c`
             <div class="container-md stack-2 center | py-2">
               <h1 class="text-center">${this.t.community_title}</h1>
               <p>${this.t.community_description}</p>
