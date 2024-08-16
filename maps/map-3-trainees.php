@@ -121,7 +121,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
                 jQuery('#welcome-modal').foundation('open');
                 jQuery('#panel-type-title').html('<?php echo esc_html__( 'Trainees', 'zume' ) ?>');
                 jQuery('#map-header-title').html('<?php echo esc_html__( 'Map of Zúme Trainees', 'zume' ) ?>');
-                jQuery('#map-header-description').html('<?php echo esc_html__( 'Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per 50,000 globally', 'zume' ) ?>');
+                jQuery('#map-header-description').html('<p style="max-width: 400px;"><?php echo esc_html__( 'Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 trainee per 50,000 people globally.', 'zume' ) ?></p>');
 
             })
         </script>
@@ -151,14 +151,9 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
             </ul>
             <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'How to Get on The Map', 'zume' ) ?></strong></p>
             <ol>
-                <li><?php echo esc_html__( 'Register for a free account on zume.training.', 'zume' ) ?></li>
+                <li><a href="<?php echo zume_wizard_url('join_the_community' ) ?>"><?php echo esc_html__( 'Join the Zúme community.', 'zume' ) ?></a></li>
                 <li><?php echo esc_html__( 'Update your profile with your location.', 'zume' ) ?></li>
-                <li><?php echo esc_html__( 'Choose to join the community.', 'zume' ) ?></li>
             </ol>
-
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
 
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>

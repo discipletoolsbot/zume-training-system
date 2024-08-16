@@ -154,11 +154,6 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
                 <li><a href="<?php echo zume_wizard_url('join_the_community' ) ?>"><?php echo esc_html__( 'Join the Zúme community.', 'zume' ) ?></a></li>
                 <li><?php echo esc_html__( 'Add your churches in the "My Churches" section of the dashboard.', 'zume' ) ?></li>
             </ol>
-
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
-            <p><?php echo esc_html__( '', 'zume' ) ?></p>
-
             <button class="close-button" data-close aria-label="Close modal" type="button">
                 <span aria-hidden="true">&times;</span>
             </button>
