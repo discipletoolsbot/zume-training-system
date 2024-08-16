@@ -10,13 +10,11 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
     public $page_title = 'Zúme Churches Map';
     public $root = 'zume_app';
     public $type = 'heatmap_churches';
-    public $type_name = '';
-    public $post_type = 'groups';
+    public $type_name = 'Churches';
+    public $post_type = 'contacts';
     private $meta_key = '';
-    public $lang_code = 'en';
-    public $locale = '';
-    public $us_div = 2500; // this is 2 for every 5000
-    public $global_div = 25000; // this equals 2 for every 50000
+    public $us_div = 5000; // this is 2 for every 5000
+    public $global_div = 50000; // this equals 2 for every 50000
 
     private static $_instance = null;
     public static function instance() {
@@ -34,18 +32,13 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
 
         // fail if not valid url
         $url = dt_get_url_path();
-        if ( str_contains( $url, $this->root . '/' . $this->type ) === false ) {
+        if ( strpos( $url, $this->root . '/' . $this->type ) === false ) {
             return;
         }
 
         if ( !$this->check_parts_match( false ) ){
             return;
         }
-
-        $this->lang_code = sanitize_key( ( $_GET['lang'] ) ?? 'en' );
-        $languages = zume_languages();
-        $selected_language = $languages[$this->lang_code] ?? $languages['en'];
-        $this->locale = $selected_language['locale'];
 
         add_action( 'dt_blank_body', [ $this, 'body' ] );
         add_filter( 'dt_magic_url_base_allowed_css', [ $this, 'dt_magic_url_base_allowed_css' ], 10, 1 );
@@ -70,6 +63,10 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
         return $allowed_css;
     }
 
+    public static function _wp_enqueue_scripts(){
+        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
+    }
+
     public function _header(){
         Zume_Funnel_App_Heatmap::_header();
         ?>
@@ -81,10 +78,8 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
                 'root' => esc_url_raw( rest_url() ),
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'parts' => $this->parts,
-                'lang_code' => $this->lang_code,
-                'locale' => $this->locale,
                 'post_type' => $this->post_type,
-                'title' => $this->page_title,
+                'image_url' => trailingslashit( plugin_dir_url( __FILE__ ) ) . 'images/',
                 'translation' => zume_map_translation_strings(),
                 'grid_data' => [ 'data' => [], 'highest_value' => 1 ],
                 'custom_marks' => [],
@@ -92,85 +87,82 @@ class Zume_Funnel_Public_Heatmap_Churches extends Zume_Magic_Page
             ]) ?>][0]
 
             /* custom content */
-            function load_self_content( data ) {
-                let pop_div = data.population_division_int * 2
+            function load_self_content(data) {
                 jQuery('#custom-paragraph').html(`
-                  <span class="self_name ucwords temp-spinner bold">${data.name}</span> is one of <span class="self_peers  bold">${data.peers}</span>
-                  administrative divisions in <span class="parent_name ucwords bold">${data.parent_name}</span> and it has a population of
-                  <span class="self_population  bold">${data.population}</span>.
-                  In order to reach the community goal of 2 churches for every <span class="population_division  bold">${pop_div.toLocaleString("en-US")}</span> people,
-                  <span class="self_name ucwords  bold">${data.name}</span> needs
-                  <span class="self_needed bold">${data.needed}</span> new churches.
-                `)
-            }
-            /* custom level content */
-            function load_level_content( data, level ) {
-                let gl = jQuery('#'+level+'-list-item')
-                gl.empty()
-                if ( false !== data ) {
-                    gl.append(`
-                        <div class="cell">
-                          <strong>${data.name}</strong><br>
-                          ${jsObject.translation.population}: <span>${data.population}</span><br>
-                          ${jsObject.translation.needed}: <span>${data.needed}</span><br>
-                          ${jsObject.translation.churches_needed}: <span class="reported_number">${data.reported}</span><br>
-                          ${jsObject.translation.churches_reported}: <span>${data.percent}</span>%
-                          <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
-                        </div>
+
                     `)
+            }
+
+            /* custom level content */
+            function load_level_content(data, level) {
+                let gl = jQuery('#' + level + '-list-item')
+                gl.empty()
+                if (false !== data) {
+                    gl.append(`
+                            <div class="progress-list-item">
+                                <div class="cell">
+                                  <strong>${data.name}</strong><br>
+                                  ${jsObject.translation.population}: <span>${data.population}</span><br>
+                                  ${jsObject.translation.churches_needed}: <span>${data.needed}</span><br>
+                                  ${jsObject.translation.churches_reported}: <span class="reported_number">${data.reported}</span><br>
+                                  ${jsObject.translation.goal_reached}: <span>${data.percent}</span>%
+                                  <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
+                                </div>
+                            </div>
+                        `)
+                }
+                else {
+                    jQuery('.' + level + '-list-wrapper')
                 }
             }
-        </script>
-        <?php
 
-        $this->customized_welcome_script();
-        return true;
-    }
+            jQuery(document).ready(function($) {
 
-    public static function _wp_enqueue_scripts(){
-        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
-    }
-
-    public function body(){
-        DT_Mapbox_API::geocoder_scripts();
-        include( 'html/heatmap-html.php' );
-    }
-
-    public function footer_javascript(){
-    }
-
-    public function customized_welcome_script(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                let asset_url = '<?php echo esc_url( trailingslashit( plugin_dir_url( __FILE__ ) ) . 'images/' ) ?>'
-                $('.training-content').append(`
-                <div class="grid-x grid-padding-x" >
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'search.svg'}" alt="search icon" />
-                        <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'zoom.svg'}" alt="zoom icon"  />
-                        <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'drag.svg'}" alt="drag icon"  />
-                        <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'click.svg'}" alt="click icon" />
-                        <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
-                    </div>
-                </div>
-                `)
+                jQuery('#welcome-modal').foundation('open');
+                jQuery('#panel-type-title').html('<?php echo esc_html__( 'Churches', 'zume' ) ?>');
+                jQuery('#map-header-title').html('<?php echo esc_html__( 'Map of Zúme Churches', 'zume' ) ?>');
+                jQuery('#map-header-description').html('<p style="max-width: 400px;"><?php echo esc_html__( 'Saturation Goal: 2 simple churches per 5,000 people in the United States, and 2 simple churches per 50,000 people globally', 'zume' ) ?></p>');
 
             })
         </script>
+        <?php
+    }
+
+    public function body(){
+        DT_Mapbox_API::geocoder_scripts(); // load mapping
+        include( 'html/heatmap-html.php' ); // load saturation map template
+        $this->customized_elements(); // load map specific elements
+    }
+
+    public function customized_elements(){
+        ?>
+        <div class="reveal" id="welcome-modal" data-reveal>
+            <h1><?php echo esc_html__( 'Purpose of the Map', 'zume' ) ?></h1>
+            <p><?php echo esc_html__( 'We want to saturate the world with multiplying disciples and churches. The "Map of Zúme Churches" shows what is needed and what is reported for global saturation of multiplying simple churches.', 'zume' ) ?></p>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'Saturation Goal', 'zume' ) ?></strong></p>
+            <ul>
+                <li><?php echo esc_html__( '2 simple churches per 5,000 people in the United States', 'zume' ) ?></li>
+                <li><?php echo esc_html__( '2 simple churches per 50,000 people globally', 'zume' ) ?></li>
+            </ul>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'Measurements Used', 'zume' ) ?></strong></p>
+            <ul>
+                <li><?php echo esc_html__( '"Needed" refers to what is missing in the location listed according to population.', 'zume' ) ?></li>
+                <li><?php echo esc_html__( '"Reported" refers to churches who have registered themselves to the Zúme community.', 'zume' ) ?></li>
+            </ul>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'How to Get on The Map', 'zume' ) ?></strong></p>
+            <ol>
+                <li><a href="<?php echo zume_wizard_url('join_the_community' ) ?>"><?php echo esc_html__( 'Join the Zúme community.', 'zume' ) ?></a></li>
+                <li><?php echo esc_html__( 'Add your churches in the "My Churches" section of the dashboard.', 'zume' ) ?></li>
+            </ol>
+
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <?php
     }
 

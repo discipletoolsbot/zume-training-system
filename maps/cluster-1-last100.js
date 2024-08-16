@@ -22,6 +22,10 @@ jQuery(document).ready(function(){
   }
   chartDiv.empty().html(`
       <style>
+          body {
+                background-color: white;
+                padding: 0;
+            }
           #activity-wrapper {
               height: ${window.innerHeight - 200}px !important;
               overflow: scroll;
@@ -92,6 +96,25 @@ jQuery(document).ready(function(){
             </div>
         </div>
       </div>
+      <div class="reveal" id="welcome-modal" data-reveal>
+            <h1>${jsObject.translation.purpose_of_the_map}</h1>
+            <p>${jsObject.translation.last100_hours}</p>
+            <p><strong style="text-transform: uppercase;">${jsObject.translation.types_of_activities}</strong></p>
+            <p><strong>( ${jsObject.translation.studying} )</strong> ${jsObject.translation.studying_description}</p>
+            <p><strong>( ${jsObject.translation.training} )</strong> ${jsObject.translation.training_description}</p>
+            <p><strong>( ${jsObject.translation.practicing} )</strong> ${jsObject.translation.practicing_description}</p>
+            <p><strong>( ${jsObject.translation.coaching})</strong> ${jsObject.translation.coaching_description}</p>
+            <p><strong style="text-transform: uppercase;">${jsObject.translation.get_on_the_map}</strong></p>
+            <ul>
+                <li>${jsObject.translation.always_sign_in}</li>
+                <li>${jsObject.translation.always_checkin}</li>
+                <li>${jsObject.translation.always_update_progress}</li>
+                <li>${jsObject.translation.always_report}</li>
+            </ul>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
   `)
   let container = jQuery('#activity-list');
 
@@ -395,4 +418,9 @@ jQuery(document).ready(function(){
     jQuery('#country_count').html(window.activity_geojson.countries_count)
     jQuery('#languages_count').html(window.activity_geojson.languages_count)
   }
+})
+
+jQuery(document).ready(function(){
+  jQuery(document).foundation()
+  jQuery('#welcome-modal').foundation('open');
 })

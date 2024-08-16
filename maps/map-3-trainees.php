@@ -30,7 +30,6 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
 
         add_action( 'rest_api_init', [ $this, 'add_endpoints' ] );
 
-
         // fail if not valid url
         $url = dt_get_url_path();
         if ( strpos( $url, $this->root . '/' . $this->type ) === false ) {
@@ -64,6 +63,10 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
         return $allowed_css;
     }
 
+    public static function _wp_enqueue_scripts(){
+        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
+    }
+
     public function _header(){
         Zume_Funnel_App_Heatmap::_header();
         ?>
@@ -76,95 +79,91 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
                 'nonce' => wp_create_nonce( 'wp_rest' ),
                 'parts' => $this->parts,
                 'post_type' => $this->post_type,
+                'image_url' => trailingslashit( plugin_dir_url( __FILE__ ) ) . 'images/',
                 'translation' => zume_map_translation_strings(),
                 'grid_data' => [ 'data' => [], 'highest_value' => 1 ],
                 'custom_marks' => [],
                 'zoom' => 8,
             ]) ?>][0]
 
-
             /* custom content */
-            function load_self_content( data ) {
+            function load_self_content(data) {
                 jQuery('#custom-paragraph').html(`
-                  <span class="self_name ucwords temp-spinner bold">${data.name}</span> is one of <span class="self_peers  bold">${data.peers}</span>
-                  administrative divisions in <span class="parent_name ucwords bold">${data.parent_name}</span> and it has a population of
-                  <span class="self_population  bold">${data.population}</span>.
-                  In order to reach the community goal of 1 trainee for every <span class="population_division  bold">${data.population_division}</span> people,
-                  <span class="self_name ucwords  bold">${data.name}</span> needs
-                  <span class="self_needed bold">${data.needed}</span> trainees.
-                `)
-            }
-            /* custom level content */
-            function load_level_content( data, level ) {
-                let gl = jQuery('#'+level+'-list-item')
-                gl.empty()
-                if ( false !== data ) {
-                    gl.append(`
-                        <div class="cell">
-                          <strong>${data.name}</strong><br>
-                          ${jsObject.translation.population}: <span>${data.population}</span><br>
-                          ${jsObject.translation.trainees_needed}: <span>${data.needed}</span><br>
-                          ${jsObject.translation.trainees_reported}: <span class="reported_number">${data.reported}</span><br>
-                          ${jsObject.translation.trainees_goal_reached}: <span>${data.percent}</span>%
-                          <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
-                        </div>
+
                     `)
+            }
+
+            /* custom level content */
+            function load_level_content(data, level) {
+                let gl = jQuery('#' + level + '-list-item')
+                gl.empty()
+                if (false !== data) {
+                    gl.append(`
+                            <div class="progress-list-item">
+                                <div class="cell">
+                                  <strong>${data.name}</strong><br>
+                                  ${jsObject.translation.population}: <span>${data.population}</span><br>
+                                  ${jsObject.translation.trainees_needed}: <span>${data.needed}</span><br>
+                                  ${jsObject.translation.trainees_reported}: <span class="reported_number">${data.reported}</span><br>
+                                  ${jsObject.translation.goal_reached}: <span>${data.percent}</span>%
+                                  <meter class="meter" value="${data.percent}" min="0" low="33" high="66" optimum="100" max="100"></meter>
+                                </div>
+                            </div>
+                        `)
+                }
+                else {
+                    jQuery('.' + level + '-list-wrapper')
                 }
             }
 
-        </script>
-        <?php
+            jQuery(document).ready(function($) {
 
-        $this->customized_welcome_script();
-        return true;
-    }
-
-    public static function _wp_enqueue_scripts(){
-        Zume_Funnel_App_Heatmap::_wp_enqueue_scripts();
-    }
-
-    public function body(){
-        DT_Mapbox_API::geocoder_scripts();
-        include( 'html/heatmap-html.php' );
-    }
-
-    public function footer_javascript(){
-    }
-
-    public function customized_welcome_script(){
-        ?>
-        <script>
-            jQuery(document).ready(function($){
-                let asset_url = '<?php echo esc_url( trailingslashit( plugin_dir_url( __FILE__ ) ) . 'images/' ) ?>'
-                $('.training-content').append(`
-                <div class="grid-x grid-padding-x" >
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'search.svg'}" alt="search icon" />
-                        <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'zoom.svg'}" alt="zoom icon"  />
-                        <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'drag.svg'}" alt="drag icon"  />
-                        <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
-                    </div>
-                    <div class="cell center">
-                        <img class="training-screen-image" src="${asset_url + 'click.svg'}" alt="click icon" />
-                        <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
-                        <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
-                    </div>
-                </div>
-                `)
-
-                $('#panel-type-title').html('<?php echo esc_html__( 'Trainees', 'zume' ) ?>')
+                jQuery('#welcome-modal').foundation('open');
+                jQuery('#panel-type-title').html('<?php echo esc_html__( 'Trainees', 'zume' ) ?>');
+                jQuery('#map-header-title').html('<?php echo esc_html__( 'Map of Zúme Trainees', 'zume' ) ?>');
+                jQuery('#map-header-description').html('<?php echo esc_html__( 'Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per 50,000 globally', 'zume' ) ?>');
 
             })
         </script>
+        <?php
+    }
+
+    public function body(){
+        DT_Mapbox_API::geocoder_scripts(); // load mapping
+        include( 'html/heatmap-html.php' ); // load saturation map template
+        $this->customized_elements(); // load map specific elements
+    }
+
+    public function customized_elements(){
+        ?>
+        <div class="reveal" id="welcome-modal" data-reveal>
+            <h1><?php echo esc_html__( 'Purpose of the Map', 'zume' ) ?></h1>
+            <p><?php echo esc_html__( 'We want to saturate the world with multiplying disciples. The "Map of Zúme Trainees" shows what is needed and what is reported for global saturation of trained multiplying disciples.', 'zume' ) ?></p>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'Saturation Goal', 'zume' ) ?></strong></p>
+            <ul>
+                <li><?php echo esc_html__( '1 trained multiplying disciple per 5,000 in the United States', 'zume' ) ?></li>
+                <li><?php echo esc_html__( '1 trained multiplying disciple per 50,000 globally', 'zume' ) ?></li>
+            </ul>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'Measurements Used', 'zume' ) ?></strong></p>
+            <ul>
+                <li><?php echo esc_html__( '"Needed" refers to what is missing in the location listed according to population.', 'zume' ) ?></li>
+                <li><?php echo esc_html__( '"Reported" refers to trainees who have registered themselves to the Zúme community.', 'zume' ) ?></li>
+            </ul>
+            <p><strong style="text-transform: uppercase;"><?php echo esc_html__( 'How to Get on The Map', 'zume' ) ?></strong></p>
+            <ol>
+                <li><?php echo esc_html__( 'Register for a free account on zume.training.', 'zume' ) ?></li>
+                <li><?php echo esc_html__( 'Update your profile with your location.', 'zume' ) ?></li>
+                <li><?php echo esc_html__( 'Choose to join the community.', 'zume' ) ?></li>
+            </ol>
+
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+            <p><?php echo esc_html__( '', 'zume' ) ?></p>
+
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <?php
     }
 

@@ -66,9 +66,6 @@ jQuery(document).ready(function($){
         #initialize-screen {
             height: ${window.innerHeight}px !important;
         }
-        #welcome-modal {
-            height: ${window.innerHeight - 30}px !important;
-        }
         #map-sidebar-wrapper {
             height: ${window.innerHeight}px !important;
         }
@@ -366,10 +363,6 @@ function load_map() {
 
             jQuery('.temp-spinner').html(`<span class="loading-spinner active"></span>`)
 
-            window.get_grid_data( 'self', e.features[0].properties.grid_id )
-              .done(function(data){
-                load_self_content( data )
-              })
             window.get_grid_data( 'a0', e.features[0].properties.grid_id )
               .done(function(data){
                 load_level_content( data, 'a0' )

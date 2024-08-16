@@ -61,7 +61,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
         $allowed_js[] = 'mapbox-cookie';
         $allowed_js[] = 'mapbox-gl';
         $allowed_js[] = 'last100-hours-js';
-        $allowed_js[] = 'lodash';
         return $allowed_js;
     }
 
@@ -71,7 +70,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
     }
 
     public function scripts() {
-        wp_enqueue_script( 'lodash' );
         wp_enqueue_script( 'last100-hours-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'cluster-1-last100.js', [ 'jquery' ],
         filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'cluster-1-last100.js' ), true );
     }
@@ -82,21 +80,6 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
      * @see DT_Magic_Url_Base()->header_style() for default state
      */
     public function header_style(){
-        ?>
-        <style>
-            body {
-                background-color: white;
-                padding: 0;
-            }
-        </style>
-        <?php
-    }
-
-    /**
-     * Writes javascript to the footer
-     * @see DT_Magic_Url_Base()->footer_javascript() for default state
-     */
-    public function footer_javascript(){
         ?>
         <script>
             let jsObject = [<?php echo json_encode([
@@ -131,9 +114,7 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
 
     public function body(){
         DT_Mapbox_API::geocoder_scripts();
-        ?>
-        <div id="chart"></div>
-        <?php
+        ?><div id="chart"></div><?php
     }
 
     /**
