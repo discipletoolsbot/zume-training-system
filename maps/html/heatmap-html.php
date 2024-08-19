@@ -86,22 +86,22 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
             <div id="training-start-screen" class="training-content">
                 <div class="grid-x grid-padding-x" >
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'search.svg' ?>" alt="search icon" />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'search.svg' ?>" alt="search icon" />
                         <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'zoom.svg' ?>" alt="zoom icon"  />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'zoom.svg' ?>" alt="zoom icon"  />
                         <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'drag.svg' ?>" alt="drag icon"  />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'drag.svg' ?>" alt="drag icon"  />
                         <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'click.svg' ?>" alt="click icon" />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'click.svg' ?>" alt="click icon" />
                         <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
                     </div>
@@ -110,22 +110,22 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
             <div id="training-help-screen" class="training-content" style="display:none;"><hr>
                 <div class="grid-x grid-padding-x" >
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'search.svg' ?>" alt="search icon" />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'search.svg' ?>" alt="search icon" />
                         <h2><?php echo esc_html__( 'Search', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Search for any city or place with the search input.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'zoom.svg' ?>" alt="zoom icon"  />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'zoom.svg' ?>" alt="zoom icon"  />
                         <h2><?php echo esc_html__( 'Zoom', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Scroll zoom with your mouse or pinch zoom with track pads and phones to focus on sections of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'drag.svg' ?>" alt="drag icon"  />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'drag.svg' ?>" alt="drag icon"  />
                         <h2><?php echo esc_html__( 'Drag', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Click and drag the map any direction to look at a different part of the map.', 'zume' ) ?></p>
                     </div>
                     <div class="cell center">
-                        <img class="training-screen-image" src="<?php echo $map_image_url . 'click.svg' ?>" alt="click icon" />
+                        <img class="training-screen-image" src="<?php echo esc_url( $map_image_url ) . 'click.svg' ?>" alt="click icon" />
                         <h2><?php echo esc_html__( 'Click', 'zume' ) ?></h2>
                         <p><?php echo esc_html__( 'Click a single section and reveal a details panel with more information about the location.', 'zume' ) ?></p>
                     </div>

@@ -98,18 +98,39 @@ class Zume_Training_Resources extends Zume_Magic_Page
                     <p>
                         <?php echo esc_html__( 'Zúme Training is now available in a complete workbook. All the concepts, tools, discussion questions and challenges from the training now in the palm of your hands. QR codes for every session give you access to all the video content as well!', 'zume' ) ?>
                     </p>
-                    <div class="cluster">
-                        <a class="btn px--6" target="_blank" href="<?php echo esc_url( zume_download_url( '33', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
-                        <?php if ( 'en' === $zume_current_language ) { ?>
-                            <a class="btn outline px--6" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
-                        <?php }  ?>
-                    </div>
                 </div>
                 <div class="stack center | text-center">
-                    <img class="w-16rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/workbooksample.png' ) ?>" alt="zume training book">
+                    <a class="btn w-100" target="_blank" href="<?php echo esc_url( zume_download_url( '33', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
+                    <?php if ( 'en' === $zume_current_language ) { ?>
+                        <a class="btn outline w-100" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
+                        <img class="w-16rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/workbooksample.png' ) ?>" alt="zume training book">
+                    <?php }  ?>
                 </div>
             </div>
         </div>
+
+        <hr>
+
+        <div class="container-md stack-2 | py-1 w-70">
+            <div class="switcher | gap-3">
+                <div class="stack-1 | grow-2">
+                    <h2 class="brand h3 cluster align-items-center gap-1">
+                        <img class="w-6rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/JoinTraining.svg' ) ?>" alt="guys reading">
+                        <?php echo esc_html__( 'Course Slides Online', 'zume' ) ?>
+                    </h2>
+                    <p>
+                        <?php echo esc_html__( 'The Zúme course content, videos and activities, can be presented from the online presenter in your web browser.', 'zume' ) ?>
+                    </p>
+                </div>
+                <div class="stack center | text-center">
+                    <a class="btn w-100" href="<?php echo esc_url( site_url() . '/' . $zume_current_language . '/presenter?session=index' ) ?>"><?php echo esc_html__( '10 Session Course', 'zume' ) ?></a>
+                    <a class="btn w-100" href="<?php echo esc_url( site_url() . '/' . $zume_current_language . '/presenter?session=index' ) ?>"><?php echo esc_html__( '20 Session Course', 'zume' ) ?></a>
+                    <a class="btn w-100" href="<?php echo esc_url( site_url() . '/' . $zume_current_language . '/presenter?session=index' ) ?>"><?php echo esc_html__( 'Intensive Course', 'zume' ) ?></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
 
         <?php include( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'parts/download-slides.php' ) ?>
 
