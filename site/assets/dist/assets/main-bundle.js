@@ -389,7 +389,7 @@ ${this.training.zoom_link_note}
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${this.variant===h.contactPreferences?c`
                 <h2>${this.t.contact_preference_question}</h2>
-                <div class="stack center container-sm | align-items-start text-start">
+                <div class="stack | mx-auto fit-content text-start">
                     ${this.contactPreferences.map(t=>c`
                         <div class="form-control brand-light">
                             <input type="checkbox" name="contact-preference" id=${"prefer_"+t} value=${t} @change=${this._handleChange} ?checked=${!!this.state[t]} />
@@ -417,7 +417,7 @@ ${this.training.zoom_link_note}
 
             ${this.variant===h.howCanWeServe?c`
                 <h2>${this.t.how_can_we_serve}</h2>
-                <div class="stack center | container-sm align-items-start text-start">
+                <div class="stack | mx-auto fit-content text-start">
                     <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="coaching" value="coaching-request" @change=${this._handleChange} ?checked=${!!this.state.coaching} />
                         <label for="coaching">${this.t.coaching}</label>
@@ -654,7 +654,7 @@ ${this.training.zoom_link_note}
             <div class="cluster">
                 ${this.steps.map((e,s)=>{const n=s<=this.stepIndex;return c`<div class="step-circle ${t?"hidden":""} ${n?"complete":""}"></div>`})}
             </div>
-        `}footer(){let t="";return this.noUrlChange&&this.stepIndex>0&&this.type!==$.makeAGroup&&(t=c`
+        `}footer(){let t="";return this.noUrlChange&&this.stepIndex>0&&this.type!==$.makeAGroup&&this.step.slug!==h.connectingToCoach&&(t=c`
                 <button
                     @click=${this._onBack}
                     class="btn tight outline fit-content"

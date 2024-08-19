@@ -321,7 +321,12 @@ export class Wizard extends LitElement {
 
     footer() {
         let backButton = ''
-        if (this.noUrlChange && this.stepIndex > 0 && this.type !== Wizards.makeAGroup) {
+        if (
+            this.noUrlChange &&
+            this.stepIndex > 0
+            && this.type !== Wizards.makeAGroup
+            && this.step.slug !== Steps.connectingToCoach
+        ) {
             backButton = html`
                 <button
                     @click=${this._onBack}
