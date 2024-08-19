@@ -62,7 +62,7 @@ export class Activity3MonthPlan extends LitElement {
                     "date": date,
                     "category": "post_training_plan"
                 })
-                requests.push(request.promise())
+                requests.push(request)
             }
         })
         return Promise.all(requests)

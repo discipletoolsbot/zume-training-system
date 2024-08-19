@@ -1806,19 +1806,19 @@ ${this.training.zoom_link_note}
                                                 </div>
                                                 <div class="d-flex align-items-center gap--1 grow-0">
                                                     <button
+                                                        class="btn outline grow-0 tight f--1"
+                                                        @click=${this.cancelEditingTitle}
+                                                        ?disabled=${this.isSavingTitle}
+                                                    >
+                                                        ${jsObject.translations.cancel}
+                                                    </button>
+                                                    <button
                                                         class="btn tight grow-0 f--1"
                                                         @click=${this.saveTitle}
                                                         ?disabled=${this.isSavingTitle}
                                                         aria-disabled=${this.isSavingTitle?"true":"false"}
                                                     >
                                                         ${jsObject.translations.save}
-                                                    </button>
-                                                    <button
-                                                        class="btn outline grow-0 tight f--1"
-                                                        @click=${this.cancelEditingTitle}
-                                                        ?disabled=${this.isSavingTitle}
-                                                    >
-                                                        ${jsObject.translations.cancel}
                                                     </button>
                                                 </div>
                                             </div>
@@ -1985,6 +1985,14 @@ ${this.training.zoom_link_note}
                     ></calendar-select>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
+                            class="btn outline tight"
+                            @click=${this.cancelEditingSession}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession?"true":"false"}
+                        >
+                            ${jsObject.translations.cancel}
+                        </button>
+                        <button
                             class="btn tight"
                             @click=${this.saveSession}
                             ?disabled=${this.isSavingSession}
@@ -1992,14 +2000,6 @@ ${this.training.zoom_link_note}
                         >
                             ${jsObject.translations.save}
                             <span class="loading-spinner ${this.isSavingSession?"active":""}"></span>
-                        </button>
-                        <button
-                            class="btn outline tight"
-                            @click=${this.cancelEditingSession}
-                            ?disabled=${this.isSavingSession}
-                            aria-disabled=${this.isSavingSession?"true":"false"}
-                        >
-                            ${jsObject.translations.cancel}
                         </button>
                     </div>
                 </div>
@@ -2023,6 +2023,14 @@ ${this.training.zoom_link_note}
                     </div>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
+                            class="btn outline tight"
+                            @click=${this.closeEditSessionDetailsModal}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession?"true":"false"}
+                        >
+                            ${jsObject.translations.cancel}
+                        </button>
+                        <button
                             class="btn tight"
                             @click=${this.saveSessionDetails}
                             ?disabled=${this.isSavingSession}
@@ -2030,14 +2038,6 @@ ${this.training.zoom_link_note}
                         >
                             ${jsObject.translations.save}
                             <span class="loading-spinner ${this.isSavingSession?"active":""}"></span>
-                        </button>
-                        <button
-                            class="btn outline tight"
-                            @click=${this.closeEditSessionDetailsModal}
-                            ?disabled=${this.isSavingSession}
-                            aria-disabled=${this.isSavingSession?"true":"false"}
-                        >
-                            ${jsObject.translations.cancel}
                         </button>
                     </div>
                 </div>
@@ -2837,7 +2837,7 @@ ${this.training.zoom_link_note}
                     />
                 </div>
             </div>
-        `}createRenderRoot(){return this}}customElements.define("course-slideshow",Cl);class xl extends k{static get properties(){return{slide:{type:Object},showControls:{type:Boolean},inContainer:{type:Boolean}}}render(){if(this.slide)switch(this.slide.type){case"title":return c`<title-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></title-slide>`;case"checkin":return c`<checkin-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></checkin-slide>`;case"pray":return c`<pray-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></pray-slide>`;case"review":return c`<review-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></review-slide>`;case"overview":return c`<overview-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></overview-slide>`;case"challenge":case"center":return c`<center-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></center-slide>`;case"watch":return c`<watch-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></watch-slide>`;case"video":return c`<video-slide .slide=${this.slide} id=${this.slide.key} ?showButtons=${this.showControls} ?inContainer=${this.inContainer}></video-slide>`;case"look_back":return c`<look-back-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></look-back-slide>`;case"discuss":return c`<discuss-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></discuss-slide>`;case"left_content":case"activity":return c`<activity-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></activity-slide>`;case"obey":return c`<obey-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></obey-slide>`;case"left_image":return c`<left-image-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></left-image-slide>`;case"next_steps":return c`<next-steps-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></next-steps-slide>`;case"break":return c`<break-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></break-slide>`;case"congratulations":return c`<congratulations-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></congratulations-slide>`;case"final":return c`<final-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></final-slide>`;default:return c`<course-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></course-slide>`}}createRenderRoot(){return this}}customElements.define("slide-switcher",xl);class El extends k{static get properties(){return{questions:{type:Array},translations:{type:Object},contact_id:{type:String},user_id:{type:String},showCancel:{type:Boolean},answers:{type:Array,attribue:!1},error:{type:Boolean,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.questions=[],this.answers=[],this.translations=[],this.contact_id="",this.user_id="",this.error=!1,this.loading=!1}handleInputChange(t){const e=t.target.dataset.i;this.answers[e]=t.target.value,this.update()}handleCancel(){this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-cancelled",{bubbles:!0}))}handleSave(){this.loading=!0;const t=[];if(this.answers.length===0){this.loading=!1;return}return this.answers.forEach((e,s)=>{if(e){const a=this.questions[s];var n=new Date;n.setDate(n.getDate()+30);const r=S.post("commitment",{question:a,answer:e,date:n,category:"post_training_plan"});t.push(r.promise())}}),Promise.all(t).then(()=>{this.loading=!1,this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-saved",{bubbles:!0}))}).catch(e=>{console.error(e),this.error=!0,this.loading=!1})}clearAnswers(){this.renderRoot.querySelectorAll(".post-training-plan").forEach(t=>{t.value=""})}render(){const t=this.loading||this.answers.length===0;return c`
+        `}createRenderRoot(){return this}}customElements.define("course-slideshow",Cl);class xl extends k{static get properties(){return{slide:{type:Object},showControls:{type:Boolean},inContainer:{type:Boolean}}}render(){if(this.slide)switch(this.slide.type){case"title":return c`<title-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></title-slide>`;case"checkin":return c`<checkin-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></checkin-slide>`;case"pray":return c`<pray-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></pray-slide>`;case"review":return c`<review-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></review-slide>`;case"overview":return c`<overview-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></overview-slide>`;case"challenge":case"center":return c`<center-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></center-slide>`;case"watch":return c`<watch-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></watch-slide>`;case"video":return c`<video-slide .slide=${this.slide} id=${this.slide.key} ?showButtons=${this.showControls} ?inContainer=${this.inContainer}></video-slide>`;case"look_back":return c`<look-back-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></look-back-slide>`;case"discuss":return c`<discuss-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></discuss-slide>`;case"left_content":case"activity":return c`<activity-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></activity-slide>`;case"obey":return c`<obey-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></obey-slide>`;case"left_image":return c`<left-image-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></left-image-slide>`;case"next_steps":return c`<next-steps-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></next-steps-slide>`;case"break":return c`<break-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></break-slide>`;case"congratulations":return c`<congratulations-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></congratulations-slide>`;case"final":return c`<final-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></final-slide>`;default:return c`<course-slide .slide=${this.slide} id=${this.slide.key} ?inContainer=${this.inContainer}></course-slide>`}}createRenderRoot(){return this}}customElements.define("slide-switcher",xl);class El extends k{static get properties(){return{questions:{type:Array},translations:{type:Object},contact_id:{type:String},user_id:{type:String},showCancel:{type:Boolean},answers:{type:Array,attribue:!1},error:{type:Boolean,attribute:!1},loading:{type:Boolean,attribute:!1}}}constructor(){super(),this.questions=[],this.answers=[],this.translations=[],this.contact_id="",this.user_id="",this.error=!1,this.loading=!1}handleInputChange(t){const e=t.target.dataset.i;this.answers[e]=t.target.value,this.update()}handleCancel(){this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-cancelled",{bubbles:!0}))}handleSave(){this.loading=!0;const t=[];if(this.answers.length===0){this.loading=!1;return}return this.answers.forEach((e,s)=>{if(e){const a=this.questions[s];var n=new Date;n.setDate(n.getDate()+30);const r=S.post("commitment",{question:a,answer:e,date:n,category:"post_training_plan"});t.push(r)}}),Promise.all(t).then(()=>{this.loading=!1,this.clearAnswers(),this.dispatchEvent(new CustomEvent("3-month-plan-saved",{bubbles:!0}))}).catch(e=>{console.error(e),this.error=!0,this.loading=!1})}clearAnswers(){this.renderRoot.querySelectorAll(".post-training-plan").forEach(t=>{t.value=""})}render(){const t=this.loading||this.answers.length===0;return c`
             <div id="pieces-content" class="stack">
                 ${this.questions.map((e,s)=>{const n=`question-${s}`;return c`
                         <div class="stack--3">
