@@ -407,8 +407,9 @@ class Zume_Training {
             'user_phone' => '',
             'user_timezone' => $ip_result['time_zone']['id'] ?? '',
             'user_friend_key' => $user_friend_key,
-            'user_ui_language' => $user_language['code'] ?? 'en',
-            'user_language' => $user_language['code'] ?? 'en',
+            // @TODO These language codes aren't being used anywhere. Commented out ready for stripping out entirely
+            //'user_ui_language' => $user_language['code'] ?? 'en',
+            //'user_language' => $user_language['code'] ?? 'en',
             'user_preferred_language' => $user_language['code'] ?? 'en',
             'location_grid_meta' => [
                 'values' => [

@@ -155,6 +155,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
     public static function translations() {
         return [
             'home' => __( 'Exit Course', 'zume' ),
+            'menu' => __( 'Menu', 'zume' ),
             'slide_view' => __( 'Slide View', 'zume' ),
             'list_view' => __( 'List View', 'zume' ),
             'next_slide' => __( 'Next slide', 'zume' ),

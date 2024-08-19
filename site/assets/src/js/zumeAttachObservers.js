@@ -2,11 +2,12 @@ import { DataWatcher } from "./DataWatcher"
 
 const dataWatchers = {}
 
-export const zumeAttachObservers = (element, id) => {
+export const zumeAttachObservers = (element, id, refresh) => {
+    console.log(dataWatchers)
 
     const collapseElements = element.querySelectorAll('.zume-collapse')
 
-    if (!Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
+    if (refresh || !Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
         dataWatchers[id] = []
         collapseElements.forEach((collapse) => {
             const expandWatcher = new DataWatcher( collapse, 'expand', onDataChanged )

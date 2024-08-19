@@ -48,7 +48,7 @@ export class DashProgress extends DashPage {
     firstUpdated() {
         super.firstUpdated()
 
-        zumeAttachObservers(this.renderRoot, 'dash-progress')
+        zumeAttachObservers(this.renderRoot, 'dash-progress', true)
     }
 
     updated() {

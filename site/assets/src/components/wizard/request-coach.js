@@ -105,7 +105,7 @@ export class RequestCoach extends LitElement {
         <form class="inputs stack-2" @submit=${this._handleDone}>
             ${ this.variant === Steps.contactPreferences ? html`
                 <h2>${this.t.contact_preference_question}</h2>
-                <div class="stack center container-sm | align-items-start text-start">
+                <div class="stack | mx-auto fit-content text-start">
                     ${this.contactPreferences.map((preference) => html`
                         <div class="form-control brand-light">
                             <input type="checkbox" name="contact-preference" id=${'prefer_' + preference} value=${preference} @change=${this._handleChange} ?checked=${!!this.state[preference]} />
@@ -133,7 +133,7 @@ export class RequestCoach extends LitElement {
 
             ${ this.variant === Steps.howCanWeServe ? html`
                 <h2>${this.t.how_can_we_serve}</h2>
-                <div class="stack center | container-sm align-items-start text-start">
+                <div class="stack | mx-auto fit-content text-start">
                     <div class="form-control brand-light">
                         <input type="checkbox" name="how-can-we-serve" id="coaching" value="coaching-request" @change=${this._handleChange} ?checked=${!!this.state.coaching} />
                         <label for="coaching">${this.t.coaching}</label>

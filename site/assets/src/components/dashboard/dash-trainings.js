@@ -74,7 +74,7 @@ export class DashTrainings extends DashPage {
         super.firstUpdated()
 
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers(this.renderRoot, 'dash-trainings')
+        zumeAttachObservers(this.renderRoot, 'dash-trainings', true)
     }
 
     updated() {
@@ -597,19 +597,19 @@ export class DashTrainings extends DashPage {
                                                 </div>
                                                 <div class="d-flex align-items-center gap--1 grow-0">
                                                     <button
+                                                        class="btn outline grow-0 tight f--1"
+                                                        @click=${this.cancelEditingTitle}
+                                                        ?disabled=${this.isSavingTitle}
+                                                    >
+                                                        ${jsObject.translations.cancel}
+                                                    </button>
+                                                    <button
                                                         class="btn tight grow-0 f--1"
                                                         @click=${this.saveTitle}
                                                         ?disabled=${this.isSavingTitle}
                                                         aria-disabled=${this.isSavingTitle ? 'true' : 'false'}
                                                     >
                                                         ${jsObject.translations.save}
-                                                    </button>
-                                                    <button
-                                                        class="btn outline grow-0 tight f--1"
-                                                        @click=${this.cancelEditingTitle}
-                                                        ?disabled=${this.isSavingTitle}
-                                                    >
-                                                        ${jsObject.translations.cancel}
                                                     </button>
                                                 </div>
                                             </div>
@@ -801,6 +801,14 @@ export class DashTrainings extends DashPage {
                     ></calendar-select>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
+                            class="btn outline tight"
+                            @click=${this.cancelEditingSession}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
+                        >
+                            ${jsObject.translations.cancel}
+                        </button>
+                        <button
                             class="btn tight"
                             @click=${this.saveSession}
                             ?disabled=${this.isSavingSession}
@@ -808,14 +816,6 @@ export class DashTrainings extends DashPage {
                         >
                             ${jsObject.translations.save}
                             <span class="loading-spinner ${this.isSavingSession ? 'active' : ''}"></span>
-                        </button>
-                        <button
-                            class="btn outline tight"
-                            @click=${this.cancelEditingSession}
-                            ?disabled=${this.isSavingSession}
-                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
-                        >
-                            ${jsObject.translations.cancel}
                         </button>
                     </div>
                 </div>
@@ -839,6 +839,14 @@ export class DashTrainings extends DashPage {
                     </div>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
+                            class="btn outline tight"
+                            @click=${this.closeEditSessionDetailsModal}
+                            ?disabled=${this.isSavingSession}
+                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
+                        >
+                            ${jsObject.translations.cancel}
+                        </button>
+                        <button
                             class="btn tight"
                             @click=${this.saveSessionDetails}
                             ?disabled=${this.isSavingSession}
@@ -846,14 +854,6 @@ export class DashTrainings extends DashPage {
                         >
                             ${jsObject.translations.save}
                             <span class="loading-spinner ${this.isSavingSession ? 'active' : ''}"></span>
-                        </button>
-                        <button
-                            class="btn outline tight"
-                            @click=${this.closeEditSessionDetailsModal}
-                            ?disabled=${this.isSavingSession}
-                            aria-disabled=${this.isSavingSession ? 'true' : 'false'}
-                        >
-                            ${jsObject.translations.cancel}
                         </button>
                     </div>
                 </div>

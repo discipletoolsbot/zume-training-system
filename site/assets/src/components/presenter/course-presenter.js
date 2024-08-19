@@ -24,6 +24,7 @@ export class CoursePresenter extends LitElement {
         super()
         this.handleSessionLink = this.handleSessionLink.bind(this)
         this.handleHistoryPopState = this.handleHistoryPopState.bind(this)
+        this.openMenu = this.openMenu.bind(this)
     }
 
     connectedCallback() {
@@ -47,6 +48,7 @@ export class CoursePresenter extends LitElement {
         this.dir = document.querySelector('html').dir
 
         window.addEventListener('popstate', this.handleHistoryPopState)
+        window.addEventListener('presenter:open-menu', this.openMenu)
     }
     disconnectedCallback() {
         super.disconnectedCallback()
