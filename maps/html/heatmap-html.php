@@ -174,7 +174,7 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
                 <div class="cell medium-6">
                     <div class="grid-x">
                         <div class="cell">
-                            <h3 style="text-transform: uppercase;"><?php echo esc_html__( 'PROGRESS BREAKDOWN BY BOUNDARY', 'zume' ) ?></h3>
+                            <h3 style="text-transform: uppercase;"><?php echo esc_html__( 'PROGRESS BREAKDOWN', 'zume' ) ?></h3>
                         </div>
                         <div class="cell" id="progress-content">
                             <div class="grid-x">

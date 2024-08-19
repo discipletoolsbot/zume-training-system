@@ -443,7 +443,7 @@ export class DashBoard extends navigator(router(LitElement)) {
     unlock3MonthPlan() {
         const data = { type: 'training', subtype: '26_heard' }
         this.unlockedSection.push(data)
-        zumeRequest.post( 'log', data, 'zume_system/v1/').then((data) => {
+        zumeRequest.post( 'log', data ).then((data) => {
             this.dispatchEvent(
                 new CustomEvent('user-state:change', { bubbles: true })
             )
@@ -576,8 +576,7 @@ export class DashBoard extends navigator(router(LitElement)) {
             celebrations.forEach(({ type, subtype }) => {
                 zumeRequest.post(
                     'log',
-                    { type, subtype },
-                    'zume_system/v1'
+                    { type, subtype }
                 ).then(() => {
                     this.dispatchEvent(
                         new CustomEvent('ctas:changed', { bubbles: true })
