@@ -144,12 +144,13 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
 
         $params = dt_recursive_sanitize_array( $params );
         $action = sanitize_text_field( wp_unslash( $params['action'] ) );
+        $language_code = 'en'; // @todo get parameter
 
         switch ( $action ) {
             case 'load_geojson':
-                return Zume_Funnel_App_Heatmap::get_activity_geojson();
+                return Zume_Funnel_App_Heatmap::get_activity_geojson( $language_code );
             case 'activity_list':
-                return Zume_Funnel_App_Heatmap::get_activity_list( $params['data'], true );
+                return Zume_Funnel_App_Heatmap::get_activity_list( $params['data'], true, $language_code );
             default:
                 return new WP_Error( __METHOD__, 'Missing valid action', [ 'status' => 400 ] );
         }

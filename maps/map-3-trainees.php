@@ -186,6 +186,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
 
         $params = dt_recursive_sanitize_array( $params );
         $action = sanitize_text_field( wp_unslash( $params['action'] ) );
+        $language_code = 'de'; // @todo get parameter
 
         switch ( $action ) {
             case 'self':
@@ -200,7 +201,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
             case 'activity_data':
                 $grid_id = sanitize_text_field( wp_unslash( $params['grid_id'] ) );
                 $offset = sanitize_text_field( wp_unslash( $params['offset'] ) );
-                return Zume_Funnel_App_Heatmap::get_activity_grid_id( $grid_id, $offset );
+                return Zume_Funnel_App_Heatmap::get_activity_grid_id( $grid_id, $offset, $language_code );
             case 'grid_data':
                 $grid_totals = Zume_Funnel_App_Heatmap::query_funnel_grid_totals( null, [ '3', '4', '5', '6' ] );
                 return Zume_Funnel_App_Heatmap::_initial_polygon_value_list( $grid_totals, $this->global_div, $this->us_div );

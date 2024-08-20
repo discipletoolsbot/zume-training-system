@@ -2691,16 +2691,17 @@ class Zume_Funnel_App_Heatmap {
     }
 
 
-    public static function get_activity_list( $filters, $limit = false ) {
+    public static function get_activity_list( $filters, $limit = false, $language_code = 'en' ) {
         global $zume_languages_by_code;
         $languages = [];
         $utc_time = new DateTime( 'now', new DateTimeZone( $filters['timezone'] ) );
         $timezone_offset = $utc_time->format( 'Z' );
+        switch_to_locale( $zume_languages_by_code[$language_code]['locale'] );
 
         $training_items = zume_training_items();
         $records = 0;
 
-        $activity_list = self::query_activity_list( $filters );
+        $activity_list = self::query_activity_list( $filters, $language_code );
 
         foreach ( $activity_list as $record ) {
 
@@ -2835,13 +2836,13 @@ class Zume_Funnel_App_Heatmap {
         ];
     }
 
-    public static function get_activity_grid_id( $grid_id, $timezone_offset ) {
+    public static function get_activity_grid_id( $grid_id, $timezone_offset, $language_code ) {
         global $zume_languages_by_code;
         $list = [];
 
         $training_items = zume_training_items();
 
-        $activity_list = self::query_activity_grid_id( $grid_id );
+        $activity_list = self::query_activity_grid_id( $grid_id, $language_code );
         // @phpcs:enable
 
         foreach ( $activity_list as $record ) {
@@ -2886,9 +2887,9 @@ class Zume_Funnel_App_Heatmap {
         ];
     }
 
-    public static function get_activity_geojson() {
+    public static function get_activity_geojson( $language_code = 'en' ) {
         global $zume_languages_by_code;
-        $list = self::query_activity_geojson();
+        $list = self::query_activity_geojson( $language_code );
         if ( empty( $list ) ) {
             $list = [];
         }
@@ -2994,7 +2995,7 @@ class Zume_Funnel_App_Heatmap {
 
 
 
-    public static function query_activity_grid_id( $grid_id ) {
+    public static function query_activity_grid_id( $grid_id, $language_code = 'en' ) {
         global $wpdb;
         $ids = [];
         $ids[] = $grid_id;
@@ -3009,16 +3010,18 @@ class Zume_Funnel_App_Heatmap {
         $sql = "
                 SELECT *
                 FROM (
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = '$language_code'
                 WHERE r.type != 'system' AND r.grid_id IN ($prepared_list)
                 UNION ALL
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.grid_id, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports_anonymous r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = '$language_code'
                 WHERE r.type != 'system' AND r.grid_id IN ($prepared_list)
                 ) as tb
                 ORDER BY tb.timestamp DESC
@@ -3037,7 +3040,7 @@ class Zume_Funnel_App_Heatmap {
         return $list;
     }
 
-    public static function query_activity_list( $filters ): array {
+    public static function query_activity_list( $filters, $language_code = 'en' ): array {
         global $wpdb;
         $additional_where = '';
         if ( ! empty( $filters['bounds'] ) && is_array( $filters['bounds'] ) && $filters['zoom'] > 1.5 ) {
@@ -3064,16 +3067,18 @@ class Zume_Funnel_App_Heatmap {
         $sql = "
                 SELECT *
                 FROM (
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = '$language_code'
                 WHERE r.timestamp > $timestamp AND r.type != 'system'
                 UNION ALL
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports_anonymous r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = '$language_code'
                 WHERE r.timestamp > $timestamp AND r.type != 'system'
                 ) as tb
                 WHERE tb.timestamp > $timestamp
@@ -3090,26 +3095,28 @@ class Zume_Funnel_App_Heatmap {
         return $results;
     }
 
-    public static function query_activity_geojson() {
+    public static function query_activity_geojson( $language_code = 'en' ) {
         global $wpdb;
         $timestamp = strtotime( '-100 hours' );
         $results = $wpdb->get_results( $wpdb->prepare( "
                 SELECT *
                 FROM (
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = %s
                 WHERE r.timestamp > %d AND r.type != 'system'
                 UNION ALL
-                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code
+                SELECT r.type, r.subtype, r.value, r.lng, r.lat, r.label, r.timestamp, lga0.name as country_name, lga0.country_code, r.language_code, lgn.full_name
                 FROM zume_dt_reports_anonymous r
                 LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=r.grid_id
                 LEFT JOIN zume_dt_location_grid lga0 ON lga0.grid_id=lg.admin0_grid_id
+                LEFT JOIN zume_location_grid_names lgn ON lgn.grid_id=lg.grid_id AND lgn.language_code = %s
                 WHERE r.timestamp > %d AND r.type != 'system'
                 ) as tb
                 ORDER BY tb.timestamp DESC
-                ", $timestamp, $timestamp), ARRAY_A );
+                ", $language_code, $timestamp, $language_code, $timestamp), ARRAY_A );
 
         return $results;
     }
