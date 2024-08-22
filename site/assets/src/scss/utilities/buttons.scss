@@ -322,6 +322,10 @@ button.card-btn {
     &:hover, &:active, &:focus {
         border-color: color('brand-light');
     }
+
+    &[data-no-border] {
+        border-color: transparent !important;
+    }
 }
 
 .icon-btn-group {

@@ -187,7 +187,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                         </div>
                         <div class="video-trigger absolute inset">
                             <div class="w-60 mx-auto"><img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/VideoGraphic-2.svg' ) ?>" alt="zume video"></div>
-                            <button class="icon-btn absolute inset">
+                            <button class="icon-btn absolute inset" data-no-border>
                                 <play-button
                                     style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand);"
                                 ></play-button>
@@ -229,7 +229,7 @@ class Zume_Training_Home extends Zume_Magic_Page
                             <iframe width="640" height="360" src="" frameborder="0"></iframe>
                             <div class="video-trigger absolute inset">
                                 <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Howitworks-thumbnail.png' ) ?>" alt="zume video">
-                                <button class="icon-btn absolute inset">
+                                <button class="icon-btn absolute inset" data-no-border>
                                     <play-button
                                         style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand);"
                                     ></play-button>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-08-15 08:50+0000\n"
+"PO-Revision-Date: 2024-08-20 18:08+0000\n"
 "Last-Translator: Charlie Ritchie <ritchiecharlie@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/vi/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -34,7 +34,7 @@ msgstr "Đào tạo"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
 msgid "How it Works"
-msgstr "Hoạt động như thế nào"
+msgstr "Hoạt động"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -547,9 +547,8 @@ msgstr ""
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
 #: site/course/course-content.php:3069 site/course/course-content.php:5286
 #: site/course/course-content.php:5306 site/pages/follow-jesus.php:335
-#, fuzzy
 msgid "Leadership in Networks"
-msgstr "Lãnh đạo trong các mạng lưới"
+msgstr "Lãnh đạo các Mạng lưới"
 
 #: globals.php:2276 site/pages/follow-jesus.php:336
 #, fuzzy
@@ -2716,7 +2715,7 @@ msgstr ""
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
 msgid "Four Fields"
-msgstr ""
+msgstr "Bốn Trường"
 
 #: site/course/course-content.php:2415
 msgid ""
@@ -2724,14 +2723,17 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
+"Khi nghĩ về việc nhân bội môn đồ, mọi người thường nghĩ đó là một quá trình "
+"thực hiện từng bước một. Vấn đề là - đó không phải là cách nó hoạt động tốt "
+"nhất!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
-msgstr ""
+msgstr "Ý tưởng thú vị nhất bạn nghe được trong video này là gì? Tại sao?"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
-msgstr ""
+msgstr "Ý tưởng thách thức nhất là gì? Tại sao?"
 
 #: site/course/course-content.php:2460
 msgid ""
@@ -2739,21 +2741,27 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
+"Nhân bội là vấn đề và nhân bội một cách nhanh chóng thậm chí còn là vấn đề "
+"lớn hơn. Tốc độ quan trọng vì nơi mà chúng ta sẽ sống mãi mãi sau này - một "
+"nơi vĩnh cửu- được quyết định trong một khoảng thời gian ngắn ngủi mà chúng "
+"ta gọi là “cuộc đời.”"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
-msgstr ""
+msgstr "Vì sao tốc độ quan trọng?"
 
 #: site/course/course-content.php:2487
 msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
 msgstr ""
+"Bạn cần thay đổi điều gì trong suy nghĩ, hành động hoặc thái độ của mình để "
+"phù hợp hơn với ưu tiên về tốc độ của Chúa?"
 
 #: site/course/course-content.php:2488
 msgid ""
 "What is one thing you can do starting this week that will make a difference?"
-msgstr ""
+msgstr "Điều gì bạn có thể bắt đầu làm từ tuần này sẽ tạo ra sự khác biệt?"
 
 #: site/course/course-content.php:2506
 msgid ""
@@ -2761,6 +2769,9 @@ msgid ""
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"Chúa Jêsus dạy chúng ta rằng chúng ta phải ở gần nhau - sống như một gia "
+"đình thuộc linh nhỏ, yêu thương và trao hiến mạng sống cho nhau, chia sẻ vui "
+"buồn, khổ đau với nhau."
 
 #: site/course/course-content.php:2507
 msgid ""
@@ -2768,6 +2779,9 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"Tuy nhiên, Chúa Jêsus cũng dạy chúng ta hãy bỏ lại gia đình và những người "
+"thân yêu ở phía sau và sẵn sàng đi bất cứ đâu - và bất cứ nơi nào - để chia "
+"sẻ và bắt đầu những gia đình thuộc linh mới."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -2775,43 +2789,59 @@ msgid ""
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
 msgstr ""
+"Việc duy trì một gia đình thuộc linh nhất quán để sinh ra những gia đình mới "
+"lớn mạnh và sinh sôi nảy nở, thay vì liên tục phát triển một gia đình và "
+"chia rẽ để phát triển có những lợi ích nào?"
 
 #: site/course/course-content.php:2549
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"Danh sách kiểm tra huấn luyện là một công cụ đơn giản mà bạn có thể sử dụng "
+"để hướng dẫn bạn khi bạn hỗ trợ người khác thông qua các phần khác nhau để "
+"trở thành một môn đồ được trang bị đầy đủ."
 
 #: site/course/course-content.php:2576
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Tự đánh giá bản thân bằng cách sử dụng dòng 1 và đánh dấu các cột tương ứng "
+"trên Danh sách kiểm tra Huấn luyện."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
-msgstr ""
+msgstr "Bạn cảm thấy mình có thể đào tạo tốt những công cụ và khái niệm nào?"
 
 #: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
 msgstr ""
+"Bạn cảm thấy mình sẽ gặp khó khăn trong việc đào tạo tốt những công cụ và "
+"khái niệm nào?"
 
 #: site/course/course-content.php:2598
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
+"Có bất kỳ công cụ hoặc khái niệm nào mà bạn sẽ thêm hoặc bớt khỏi danh sách "
+"kiểm tra không? Tại sao?"
 
 #: site/course/course-content.php:2610
 msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
+"HÃY NHỚ - Chia sẻ kết quả Danh sách kiểm tra huấn luyện của bạn với đối tác "
+"đào tạo hoặc người cố vấn khác."
 
 #: site/course/course-content.php:2611
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"Nếu bạn không có huấn luyện viên hoặc người cố vấn, hãy quét mã QR và yêu "
+"cầu ngay bây giờ."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:204
 #: site/dashboard/wizard.php:228 site/pages/about.php:254
@@ -2821,25 +2851,31 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 msgid "Get a Coach"
-msgstr ""
+msgstr "Yêu cầu Huấn luyện viên"
 
 #: site/course/course-content.php:2626
 msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"Bốn Cánh Đồng và Bản đồ thế hệ là những công cụ được thiết kế để phục vụ các "
+"phong trào ngày càng phát triển."
 
 #: site/course/course-content.php:2627
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"NHẮC NHỞ: Các huấn luyện viên của Zúme luôn sẵn sàng giúp bạn áp dụng những "
+"công cụ này tại địa phương của bạn."
 
 #: site/course/course-content.php:2642
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"Chúa Jêsus thường đưa các môn đồ rời mục vụ đến những nơi yên tĩnh hơn để "
+"xem xét công việc đang diễn ra như thế nào."
 
 #: site/course/course-content.php:2643
 msgid ""
@@ -2847,110 +2883,139 @@ msgid ""
 "Kingdom activity around them. It especially helps leaders balance efforts, "
 "so that no field is overlooked."
 msgstr ""
+"Biểu đồ Bốn Cánh Đồng được nhóm lãnh đạo sử dụng để tham chiếu giữa những nỗ "
+"lực hiện tại và hoạt động của Vương quốc xung quanh họ. Nó đặc biệt giúp "
+"lãnh đạo cân bằng, không lĩnh vực nào bị bỏ sót."
 
 #: site/course/course-content.php:2644
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
 msgstr ""
+"Xem hai trang trình chiếu tiếp theo: Mô tả Cánh Đồng và Ví dụ về Bốn Cánh "
+"Đồng"
 
 #: site/course/course-content.php:2655
 msgid "Field Descriptions"
-msgstr ""
+msgstr "Mô tả Cánh Đồng"
 
 #: site/course/course-content.php:2657
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"Cánh Đồng Trống: Bạn dự định mở rộng Vương quốc ở đâu hoặc với ai [nhóm "
+"người]?"
 
 #: site/course/course-content.php:2658
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"Cánh Đồng Gieo Hạt: Bạn đang chia sẻ tin mừng về Vương quốc ở đâu hoặc với "
+"ai? Bạn đang làm điều đó như thế nào?"
 
 #: site/course/course-content.php:2659
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"Cánh Đồng Phát triển: Bạn định trang bị cho mọi người và sẽ phát triển họ về "
+"mặt tinh thần, cá nhân và trong mạng lưới của họ như thế nào?"
 
 #: site/course/course-content.php:2660
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
 msgstr ""
+"Cánh Đồng Thu hoạch: Các gia đình thuộc linh mới [các hội thánh đơn giản] "
+"đang được hình thành như thế nào?"
 
 #: site/course/course-content.php:2661
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"Cánh Đồng Nhân bội: Bạn sẽ sàng lọc những người trung thành với ai, bằng "
+"cách nào và khi nào rồi trang bị cho họ và giao cho họ trách nhiệm tiếp tục "
+"phát triển?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 msgid "Four Fields Example"
-msgstr ""
+msgstr "Ví dụ Bốn Cánh Đồng"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
 msgid "Discuss"
-msgstr ""
+msgstr "Thảo luận"
 
 #: site/course/course-content.php:2699
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"Xác định một cánh đồng trống xung quanh bạn. Những cộng đồng hoặc nhóm người "
+"nào mà bạn kết nối mà chưa có hoạt động truyền giáo?"
 
 #: site/course/course-content.php:2700
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"Nếu một trong các trường này bị bỏ qua sẽ ảnh hưởng tới sự tăng trưởng dài "
+"hạn như thế nào? Ví dụ minh hoạ."
 
 #: site/course/course-content.php:2701
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "Công cụ Zúme nào sẽ hỗ trợ cho trường nào?"
 
 #: site/course/course-content.php:2716
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
+"Bản đồ thế hệ (còn gọi là định vị bản đồ thế hệ hoặc lập bản đồ gen) là một "
+"công cụ đơn giản khác giúp các nhà lãnh đạo trong một phong trào hiểu được "
+"sự phát triển xung quanh họ."
 
 #: site/course/course-content.php:2717
+#, fuzzy
 msgid ""
 "A generation tree map can be drawn on a piece of paper or multiple pieces of "
 "paper. This map helps show where there are stops in multiplication and "
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"Bản đồ cây thế hệ có thể được vẽ trên một tờ giấy hoặc nhiều tờ giấy. Bản đồ "
+"này giúp hiển thị những điểm dừng trong quá trình nhân bội và có thể cần "
+"phải đào tạo. Sức khỏe của phong trào là mối quan tâm hàng đầu của các nhà "
+"lãnh đạo và kết quả là thước đo sức khỏe hàng đầu."
 
 #: site/course/course-content.php:2718
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "Xem ví dụ ở trình chiếu tiếp theo."
 
 #: site/course/course-content.php:2729
 msgid "Generational Mapping Example"
-msgstr ""
+msgstr "Ví dụ Bản đồ thế hệ"
 
 #: site/course/course-content.php:2748
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "Sử dụng ví dụ Bản đồ thế hệ để thảo luận về những điều sau:"
 
 #: site/course/course-content.php:2750
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "Những nhà lãnh đạo nào đang nhìn thấy sự nhân bội?"
 
 #: site/course/course-content.php:2751
 msgid "Which groups would you expect to multiply next?"
-msgstr ""
+msgstr "Bạn mong đợi những nhóm nào sẽ nhân bội tiếp theo?"
 
 #: site/course/course-content.php:2752
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "Những nhà lãnh đạo nào có thể giúp đỡ và củng cố các nhà lãnh đạo khác?"
 
 #: site/course/course-content.php:2753
 msgid "Do you see a pattern of weak accountability in any of the generations?"
 msgstr ""
+"Bạn có thấy hình mẫu về trách nhiệm giải trình yếu kém ở thế hệ nào không?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
 msgid ""
@@ -2958,6 +3023,9 @@ msgid ""
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"Hãy thực hành chia sẻ khái niệm “Tốc độ” với một người bạn và cầu nguyện để "
+"Chúa khắc sâu nó vào trái tim và tâm hồn bạn. Hãy hỏi Chúa xem Ngài muốn bạn "
+"chia sẻ điều đó với ai."
 
 #: site/course/course-content.php:2793
 msgid ""
@@ -2965,32 +3033,42 @@ msgid ""
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Nếu bạn đã thành lập hội thánh đơn giản của riêng mình, hãy chia sẻ khái "
+"niệm “Luôn là Một Phần của Hai Hội Thánh” với những người trong đó. Nếu "
+"không, hãy chia sẻ nó với một tín đồ khác mà bạn biết."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
 msgid "SESSION 10"
-msgstr ""
+msgstr "BÀI 10"
 
 #: site/course/course-content.php:2852
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"Hãy cầu nguyện và tạ ơn Chúa vì Ngài thành tín hoàn thành công việc tốt lành "
+"của Ngài nơi chúng ta. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"Xin Chúa ban cho nhóm của bạn những cái đầu tỉnh táo và tấm lòng rộng mở đón "
+"nhận những điều tuyệt vời mà Ngài muốn thực hiện trong và thông qua bạn."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"Xin Đức Thánh Linh dẫn dắt thời gian của các bạn và biết ơn vì sự thành tín "
+"của Ngài. Chính Ngài đã giúp bạn vượt qua!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
+#, fuzzy
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "Hãy thấy được khích lệ"
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -2998,6 +3076,9 @@ msgid ""
 "simple churches and making disciples who multiply than many pastors and "
 "missionaries around the world!"
 msgstr ""
+"Có thể bạn chưa biết, nhưng giờ đây bạn đã được đào tạo thực tế hơn về việc "
+"bắt đầu các hội thánh đơn giản và làm cho các môn đồ được nhân lên gấp bội "
+"so với nhiều mục sư và nhà truyền giáo trên khắp thế giới!"
 
 #: site/course/course-content.php:2881
 msgid ""
@@ -3005,6 +3086,10 @@ msgid ""
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"Tuy nhiên, khoá Huấn luyện Zúme mới chỉ là khởi đầu! Trong phần này, chúng "
+"tôi sẽ lập kế hoạch cho những gì xảy ra sau đào tạo và giới thiệu ngắn gọn "
+"các công cụ mà bạn sẽ cần sau này trong hành trình khi bạn triển khai những "
+"gì đã học."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -3012,49 +3097,66 @@ msgid ""
 "churches? How do they stay connected and live life together as an extended, "
 "spiritual family? They become a network!"
 msgstr ""
+"Điều gì xảy ra với các Hội thánh khi chúng phát triển và mở ra các Hội thánh "
+"mới sản sinh thêm Hội thánh mới? Làm thế nào để họ kết nối và sống với nhau "
+"như một gia đình thuộc linh lớn mạnh? Họ phải trở thành một mạng lưới!"
 
 #: site/course/course-content.php:2946
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
+"Khi mạng lưới các Hội thánh đơn giản được kết nối bởi các mối quan hệ cá "
+"nhân sâu sắc mang đến những lợi ích gì? Ví dụ?"
 
 #: site/course/course-content.php:2964
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"Môn đồ hoá những người đi môn đồ hoá chính là đào tạo những lãnh đạo sẽ đào "
+"tạo lãnh đạo."
 
 #: site/course/course-content.php:2965
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"Các nhóm Cố vấn tập hợp các nhà lãnh đạo lại và giúp họ yêu thương cũng như "
+"khích lệ lẫn nhau về đức tin và khả năng lãnh đạo của họ."
 
 #: site/course/course-content.php:2989
 msgid "Peer Mentoring Group Practice"
-msgstr ""
+msgstr "Thực hành Nhóm Cố vấn Ngang hàng"
 
 #: site/course/course-content.php:2992
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
 msgstr ""
+"Chia thành nhóm hai hoặc ba người. Sử dụng đề cương Nhóm cố vấn ngang hàng "
+"được định dạng 3/3."
 
 #: site/course/course-content.php:2993
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
+"Chọn một người trong nhóm làm \"người được cố vấn\" và yêu cầu các thành "
+"viên khác tập luyện dùng danh sách câu hỏi gợi ý với tư cách là người cố vấn "
+"ngang hàng."
 
 #: site/course/course-content.php:3014
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"Trong Kinh thánh, Đức Chúa Trời phán: \"Ta biết chương trình mà Ta hoạch "
+"định cho các con, đó là chương trình bình an chứ không phải tai họa, để ban "
+"cho các con một tương lai và một hi vọng.\""
 
 #: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Đức Chúa Trời luôn có kế hoạch, và Ngài cũng muốn chúng ta làm điều đó."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
 msgid ""
@@ -3062,22 +3164,29 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
+"Kế hoạch Ba Tháng là một công cụ bạn có thể sử dụng để giúp tập trung sự chú "
+"ý và nỗ lực của bạn, đồng thời giữ chúng phù hợp với những ưu tiên của Chúa "
+"trong việc đào tạo môn đồ nhân bội."
 
 #: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"Trang trình chiếu tiếp theo sẽ chỉ cho bạn cách lập Kế hoạch Ba tháng. Chúng "
+"tôi khuyên bạn nên sử dụng công cụ trực tuyến."
 
 #: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
-msgstr ""
+msgstr "Lập Kế Hoạch Ba tháng của bạn"
 
 #: site/course/course-content.php:3032
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Đọc - Quét mã QR. Bạn không cần phải cam kết mọi mục, các mục này là gợi ý "
+"cho kế hoạch của bạn. (5 phút)"
 
 #: site/course/course-content.php:3033
 msgid ""

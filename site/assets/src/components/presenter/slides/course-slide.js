@@ -1,4 +1,4 @@
-import { LitElement, html, isServer } from 'lit';
+import { LitElement, html } from 'lit';
 
 export class CourseSlide extends LitElement {
     static get properties() {
@@ -61,12 +61,11 @@ export class CourseSlide extends LitElement {
         }
     }
     resizeSlide(target) {
-
         const normalSlides = document.querySelectorAll('.slides-card')
 
         const videoSlides = document.querySelectorAll('.video-slide')
 
-        const slides = [...normalSlides, videoSlides]
+        const slides = [...normalSlides, ...videoSlides]
 
         const { innerWidth: screenWidth, innerHeight: screenHeight } = target
 

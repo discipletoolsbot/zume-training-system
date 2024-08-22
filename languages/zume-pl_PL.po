@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-08-14 17:07+0000\n"
+"PO-Revision-Date: 2024-08-21 09:54+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79 site/dashboard/dashboard.php:206
@@ -5315,7 +5315,6 @@ msgstr ""
 "naszym pokoleniu."
 
 #: site/pages/about.php:100
-#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5325,17 +5324,15 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
-"W 2015 roku mała grupa zaangażowana w wypełnianie mandatu Wielkiej Komisji "
-"Jezusa zwołała spotkanie przywódców projektu Jonathan. Modlili się i "
-"omawiali wyzwania związane z pomnażaniem uczniów na całym świecie. "
-"Dostrzegając potrzebę dostępnych, wielojęzycznych i elastycznych szkoleń, "
-"które byłyby zgodne z wezwaniem Jezusa, aby zwykli ludzie byli „drożdżami” "
-"dla Królestwa, narodził się pomysł szkoleń online opartych na wideo. "
-"Ostatecznie pomysł ten przekształcił się w coś, co jest obecnie znane jako "
-"Zúme."
+"W 2015 roku mała grupa osób oddanych wypełnianiu Wielkiego Posłannictwa "
+"zwołała spotkanie liderów projektu Jonathan. Modlili się i omawiali wyzwania "
+"związane z pomnażaniem uczniów na całym świecie. Dostrzegając potrzebę "
+"dostępnych, wielojęzycznych i elastycznych szkoleń zgodnych z wezwaniem "
+"Jezusa, aby zwykli ludzie byli „zakwasem” dla Królestwa, narodził się pomysł "
+"szkoleń online opartych na wideo. Ostatecznie pomysł ten przekształcił się w "
+"coś, co jest obecnie znane jako Zúme."
 
 #: site/pages/about.php:101
-#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5345,12 +5342,11 @@ msgid ""
 msgstr ""
 "Podstawowe zasady pozyskiwania uczniów zawarte w Szkoleniu Zúme pochodzą "
 "prosto z Biblii i są testowane na całym świecie od ponad trzydziestu lat. "
-"Zasady te umożliwiają zwykłym wierzącym stanie się uczniami, którzy z kolei "
-"czynią uczniów, dzięki czemu miliony uczniów rozwijają Królestwo w duchowo "
-"ciemnych miejscach."
+"Umożliwiają one zwykłym wierzącym stawanie się uczniami, którzy z kolei "
+"czynią kolejnych uczniów, dzięki czemu miliony uczniów przynoszą Królestwo "
+"do miejsc, w których panują duchowe ciemności."
 
 #: site/pages/about.php:114
-#, fuzzy
 msgid ""
 "Launched on February 14, 2017, through Kingdom collaboration, Zúme Training "
 "remains an open initiative without formal organizational control or a "
@@ -5358,33 +5354,32 @@ msgid ""
 "formal statement of faith. All involved, however, would agree with the "
 "Lausanne Covenant."
 msgstr ""
-"Ponieważ Zúme nie jest prowadzone przez żadną organizację, nie ma formalnego "
-"wyznania wiary. Jednak wszyscy zaangażowani w to dzieło zgadzamy się z "
+"Szkolenia Zúme, zapoczątkowane 14 lutego 2017, są współpracą na rzecz "
+"Królestwa Bożego. Ponieważ jest to otwarta, niebędąca oddzielnym podmiotem "
+"inicjatywa, której nie przewodzi żadna organizacja, nie ma formalnego "
+"wyznania wiary. Jednak wszyscy zaangażowani w to dzieło zgadzają się z "
 "treścią Deklaracji Lozańśkiej [Lausanne Covenant]."
 
 #: site/pages/about.php:120
-#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
-"Celem jest nasycenie globu pomnażaniem uczniów w naszym pokoleniu. Zasady "
-"biblijne zawarte w tym szkoleniu są proste. Potencjał zmiany świata tkwi w "
-"praktyce tych zasad."
+"Celem jest napełnienie ziemi pomnażającymi się uczniami w naszym pokoleniu. "
+"Zawarte w tym szkoleniu zasady biblijne są proste. Ich rewolucyjny potencjał "
+"tkwi we wprowadzaniu ich w życie."
 
 #: site/pages/about.php:121
-#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
-"Wizję Zúme można porównać do drożdży pracujących nad całym ciastem, "
-"rozprzestrzeniających podstawowe narzędzia Królestwa w dzielnicach na całym "
-"świecie."
+"Wizję Zúme można porównać do zakwasu rozprzestrzeniającego się w całym "
+"cieście, odpowiadającego rozpowszechnianiu podstawowych narzędzi Królestwa w "
+"każdym miejscu na całym świecie."
 
 #: site/pages/about.php:128
-#, fuzzy
 msgid "The vision of Zúme has two parts:"
 msgstr "Wizja Zúme składa się z dwóch części:"
 
@@ -5393,53 +5388,46 @@ msgid "1 Training"
 msgstr "1 szkolenie"
 
 #: site/pages/about.php:136
-#, fuzzy
 msgid "Part 1:"
 msgstr "Część 1:"
 
 #: site/pages/about.php:137
-#, fuzzy
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
-"Wyszkolić co najmniej jednego czyniącego uczniów na każde 5000 osób w "
-"Ameryce Północnej i jednego czyniącego uczniów na każde 50 000 osób na całym "
-"świecie."
+"Wyszkolić co najmniej jedną czyniącą uczniów osobę na każde 5000 w Ameryce "
+"Północnej i jedną czyniącą uczniów osobę na każde 50 000 na całym świecie."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
 msgstr "2 proste Kościoły"
 
 #: site/pages/about.php:147
-#, fuzzy
 msgid "Part 2:"
 msgstr "Część 2:"
 
 #: site/pages/about.php:148
-#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
-"Aby wyszkoleni czyniący uczniów założyli co najmniej 2 proste kościoły "
-"pomnażające się na każde 5000 ludzi w Ameryce Północnej i 2 proste kościoły "
-"na każde 50 000 ludzi na całym świecie."
+"Założenie przez wyszkolonych uczniów co najmniej 2 pomnażających się "
+"prostych Kościołów na każde 5000 osób w Ameryce Północnej i 2 prostych "
+"Kościołów na każde 50 000 osób na całym świecie."
 
 #: site/pages/about.php:154
-#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
-"Dzięki tym drobnym początkom… tym, co Biblia nazywa drożdżami… mogliśmy "
-"zobaczyć świat pokryty rosnącą liczbą uczniów i kościołów. Poznaj szkolenie "
-"Zúme i dowiedz się, jak to zrobić!"
+"Dzięki tym skromnym początkom… temu, co Biblia nazywa zakwasem… będziemy "
+"mogli oglądać, jak świat napełnia się rosnącą liczbą uczniów i Kościołów. "
+"Poznaj szkolenie Zúme i dowiedz się, jak to zrobić!"
 
 #: site/pages/about.php:157
-#, fuzzy
 msgid "Get Started"
 msgstr "Start"
 
@@ -5448,7 +5436,7 @@ msgid "How does Zúme Training Work?"
 msgstr "Jak działa Szkolenie Zúme?"
 
 #: site/pages/about.php:167 site/pages/home.php:212
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
@@ -5487,7 +5475,6 @@ msgid ""
 msgstr "%1$sWyzwania%2$s pomogą Wam uczyć się i rozwijać między sesjami."
 
 #: site/pages/about.php:194
-#, fuzzy
 msgid "Before you start."
 msgstr "Zanim zaczniesz."
 
@@ -5497,136 +5484,120 @@ msgstr "Zúme NIE jest jak inne szkolenia!"
 
 #: site/pages/about.php:203
 msgid "First:"
-msgstr "Pierwsze:"
+msgstr "Po pierwsze:"
 
 #: site/pages/about.php:204
-#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
-"Zúme jest przeznaczone do wykonywania w grupie. Ćwiczenia grupowe, dyskusje "
-"i ćwiczenie umiejętności będą lepsze z innymi, więc jeśli to możliwe, zbierz "
-"grupę."
+"Zúme jest przeznaczone do zastosowania w grupie. Ćwiczenia, dyskusje i "
+"nabywanie umiejętności będą skuteczniejsze w grupie, więc jeśli to możliwe, "
+"zbierz grupę."
 
 #: site/pages/about.php:207
-#, fuzzy
 msgid "Second:"
-msgstr "Drugi:"
+msgstr "Po drugie:"
 
 #: site/pages/about.php:208
-#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
-"W Zúme chodzi o rozwijanie umiejętności, budowanie kompetencji, a nie tylko "
+"W Zúme chodzi o rozwijanie umiejętności i budowanie kompetencji, a nie tylko "
 "zdobywanie wiedzy. Celem każdej sesji jest owocne działanie. Najlepszym "
-"rezultatem treningu będzie zmiana stylu życia i doświadczenie większej mocy "
+"rezultatem szkolenia będzie zmiana stylu życia i doświadczenie większej mocy "
 "w wierze."
 
 #: site/pages/about.php:216
-#, fuzzy
 msgid "What's required"
-msgstr "Wymagane hasło"
+msgstr "Wymagania"
 
 #: site/pages/about.php:219
 msgid "Needed for the training:"
 msgstr "Potrzebne do szkolenia:"
 
 #: site/pages/about.php:221 site/pages/training.php:262
-#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
 msgstr "Co najmniej 3 osoby, ale najlepiej mniej niż 12."
 
 #: site/pages/about.php:222 site/pages/training.php:263
-#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
-"Zobowiąż się do spędzenia 20 godzin na nauce i ćwiczeniu koncepcji i "
+"Zobowiązanie do spędzenia 20 godzin na nauce i ćwiczeniu koncepcji i "
 "narzędzi zawartych w kursie."
 
 #: site/pages/about.php:223 site/pages/training.php:264
-#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
-"Osoba, która pomoże (potencjalnie Tobie) w ustaleniu czasu i miejsca "
-"spotkania, poprowadzi dalszą dyskusję i ułatwi podejmowanie działań."
+"Osoba (być może Ty), która ustali czas i miejsce spotkań, poprowadzi "
+"dyskusje i będzie pobudzać innych do działania."
 
 #: site/pages/about.php:232
 msgid "NOT needed for the training:"
 msgstr "NIEpotrzebne do szkolenia:"
 
 #: site/pages/about.php:234 site/pages/training.php:268
-#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
-"Nie jest potrzebna większa wiedza i doświadczenie niż reszta Twojej grupy! "
-"Jeśli możesz kliknąć Dalej, możesz poprowadzić szkolenie Zúme."
+"Nie wymaga to większej wiedzy i doświadczenia od reszty Twojej grupy! Jeśli "
+"potrafisz kliknąć Dalej, możesz poprowadzić szkolenie Zúme."
 
 #: site/pages/about.php:235
-#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
-"Do prowadzenia szkolenia nie jest potrzebne specjalne zezwolenie! Zúme jest "
-"osobą samodzielną, samoinicjującą i możesz zacząć już dziś."
+"Do prowadzenia szkolenia nie jest potrzebne specjalne zezwolenie! Zúme może "
+"poprowadzić każdy w dowolnym momencie. Możesz zacząć już dziś."
 
 #: site/pages/about.php:246
 msgid "Connecting with a Coach."
 msgstr "Łączenie z trenerem."
 
 #: site/pages/about.php:253
-#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
-"Przez cały czas społeczność Zúme chętnie Cię wspiera, zapewniając COACHA, "
-"który pomoże Tobie i Twojej grupie pomyślnie wdrożyć szkolenie. Nie wahaj "
-"się z nami skontaktować, jeśli masz pytania lub wątpliwości!"
+"Społeczność Zúme chętnie zapewni Wam wsparcie na każdym etapie. Możecie "
+"poprosić o COACHA, który pomoże Wam pomyślnie wdrożyć szkolenie. "
+"Skontaktujcie się z nami, jeśli macie pytania lub wątpliwości!"
 
 #: site/pages/about.php:263
-#, fuzzy
 msgid "Are you ready? Register today."
-msgstr "Jesteś gotowy? Zarejestruj się dziś."
+msgstr "Gotowy/a? Zarejestruj się dziś."
 
 #: site/pages/about.php:267 site/pages/home.php:113
-#, fuzzy
 msgid "Register Free"
 msgstr "Zarejestruj się za darmo"
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
-#, fuzzy
 msgid "Please enter a friend code."
-msgstr "Proszę wprowadzić kod znajomego."
+msgstr "Wprowadź kod znajomego."
 
 #: site/pages/checkin.php:235
-#, fuzzy
 msgid "Checkin"
-msgstr "Lista kontrolna"
+msgstr "Logowanie"
 
 #: site/pages/checkin.php:237
-#, fuzzy
 msgid "Use the code on the screen or in the book"
 msgstr "Użyj kodu na ekranie lub w książce"
 
 #: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
-#, fuzzy
 msgid "Connect"
-msgstr "Łączyć"
+msgstr "Połącz"
 
 #: site/pages/checkin.php:246
 msgid "or"
@@ -5638,33 +5609,27 @@ msgstr "Wybierz sesję, by się zalogować"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
-#, fuzzy
 msgid "Training Schedules"
-msgstr "Cykl treningowy"
+msgstr "Harmonogramy szkoleń"
 
 #: site/pages/checkin.php:254 site/pages/training.php:221
-#, fuzzy
 msgid "10 Sessions"
-msgstr "Sesja"
+msgstr "10 sesji"
 
 #: site/pages/checkin.php:258 site/pages/training.php:233
-#, fuzzy
 msgid "20 Sessions"
-msgstr "Sesja"
+msgstr "20 sesji"
 
 #: site/pages/checkin.php:262 site/pages/training.php:245
-#, fuzzy
 msgid "Intensive"
-msgstr "Intensywny"
+msgstr "Intensywne"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
-#, fuzzy
 msgid "Donate"
-msgstr "Podarować"
+msgstr "Dorzuć się"
 
 #: site/pages/donate.php:95
-#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
@@ -5672,19 +5637,16 @@ msgstr ""
 "częścią wizji Zúme."
 
 #: site/pages/donate.php:103
-#, fuzzy
 msgid "View All Giving Opportunities"
-msgstr "Zobacz wszystkie możliwości dawania"
+msgstr "Zobacz wszystkie możliwości wsparcia"
 
 #: site/pages/faq.php:88
-#, fuzzy
 msgid "FAQ"
 msgstr "Często zadawane pytania"
 
 #: site/pages/faq.php:90 site/pages/home.php:188 site/profile/profile.php:162
-#, fuzzy
 msgid "User Profile"
-msgstr "Twój profil"
+msgstr "Profil użytkownika"
 
 #: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
@@ -5754,7 +5716,6 @@ msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "Naucz się słuchać poleceń Jezusa, jednocześnie idąc i zostając."
 
 #: site/pages/follow-jesus.php:239
-#, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -5830,29 +5791,24 @@ msgstr ""
 "podczas spaceru."
 
 #: site/pages/follow-jesus.php:318
-#, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
 "Co się stanie, jeśli wielu przyjaciół, członków rodziny i innych osób "
 "zacznie razem ze mną iść za Jezusem?"
 
 #: site/pages/friend-invite.php:164
-#, fuzzy
 msgid "Friend Invitation"
-msgstr "Przyjęto zaproszenie"
+msgstr "Zaproszenie od znajomego"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
-#, fuzzy
 msgid "Use the code your friend sent you."
 msgstr "Użyj kodu, który wysłał Ci znajomy."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
-#, fuzzy
 msgid "Get A Coach"
-msgstr "Zdobądź trenera"
+msgstr "Poproś o trenera"
 
 #: site/pages/get-a-coach.php:89
-#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
@@ -5860,77 +5816,66 @@ msgid ""
 msgstr ""
 "W każdym sporcie lekkoatletycznym, zwłaszcza na wyższych poziomach, stosuje "
 "się coaching. Nawet sportowcy olimpijscy mają trenerów, a często jest ich "
-"więcej niż jeden. Czynienie uczniów może w równym stopniu skorzystać na "
-"coachingu prowadzonym przez osoby z większym doświadczeniem."
+"więcej niż jeden. W czynieniu uczniów także możemy odnieść korzyści z "
+"coachingu prowadzonego przez osoby z większym doświadczeniem."
 
 #: site/pages/get-a-coach.php:92
-#, fuzzy
 msgid "No Cost"
 msgstr "Bez kosztów"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
 #: site/pages/training.php:142
-#, fuzzy
 msgid "Join a training group"
-msgstr "Poprowadź szkolenie"
+msgstr "Dołącz do grupy szkoleniowej"
 
 #: site/pages/get-a-coach.php:95
-#, fuzzy
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
-"Nasza sieć trenerów-wolontariuszy to ludzie tacy jak Ty: ludzie, którzy z "
-"pasją kochają Boga, kochają innych i są posłuszni Wielkiemu Posłannictwu."
+"Trenerzy z naszej sieci są wolontariuszami: to ludzie, którzy gorąco kochają "
+"Boga i innych oraz są posłuszni Wielkiemu Posłannictwu."
 
 #: site/pages/get-a-coach.php:99
-#, fuzzy
 msgid "Localized"
-msgstr "Lokalny"
+msgstr "Lokalnie"
 
 #: site/pages/get-a-coach.php:102
-#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
-"Nasz zespół ds. połączeń stara się połączyć Cię z trenerem, który mówi w "
-"Twoim języku i jest możliwie najbliżej Ciebie pod względem geograficznym."
+"Nasz zespół postara się połączyć Cię z trenerem, który mówi w Twoim języku i "
+"jest możliwie najbliżej Ciebie pod względem geograficznym."
 
 #: site/pages/get-a-coach.php:106
-#, fuzzy
 msgid "Experienced"
-msgstr "Doświadczony"
+msgstr "Doświadczenie"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
-#, fuzzy
 msgid "Join a training"
-msgstr "Poprowadź szkolenie"
+msgstr "Dołącz do szkolenia"
 
 #: site/pages/get-a-coach.php:109
-#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
-"Wszyscy nasi trenerzy są przeszkoleni i ćwiczą koncepcje i narzędzia "
-"znalezione w Zûme. Wszyscy nasi trenerzy mogą pomóc Ci pokonać bariery i "
-"postawić kolejne kroki na Twojej drodze."
+"Wszyscy nasi trenerzy są przeszkoleni i stosują koncepcje oraz narzędzia "
+"Zûme. Wszyscy nasi trenerzy mogą pomóc Ci pokonać bariery i postawić kolejne "
+"kroki na Twojej drodze."
 
 #: site/pages/home.php:86
-#, fuzzy
 msgid "45+"
 msgstr "45+"
 
 #: site/pages/home.php:87
-#, fuzzy
 msgid "Languages"
-msgstr "Język"
+msgstr "Języki"
 
 #: site/pages/home.php:129
-#, fuzzy
 msgid "Becoming more like Jesus... Together"
 msgstr "Stawać się bardziej podobnymi do Jezusa... Razem"
 
@@ -5939,164 +5884,136 @@ msgid "Overview"
 msgstr "Przegląd"
 
 #: site/pages/home.php:134
-#, fuzzy
 msgid "Group Discussions"
 msgstr "Dyskusje grupowe"
 
 #: site/pages/home.php:135
-#, fuzzy
 msgid "Self-Facilitated"
 msgstr "Samodzielne"
 
 #: site/pages/home.php:136
-#, fuzzy
 msgid "Practice-Oriented"
-msgstr "Ćwiczenie – Cztery pola"
+msgstr "Orientacja na praktykę"
 
 #: site/pages/home.php:137
-#, fuzzy
 msgid "32 Concepts and Skills"
-msgstr "32 Koncepcje i umiejętności"
+msgstr "32 koncepcje i umiejętności"
 
 #: site/pages/home.php:138
-#, fuzzy
 msgid "20 hours of Training"
-msgstr "Poprowadź szkolenie"
+msgstr "20 godzin szkolenia"
 
 #: site/pages/home.php:144
-#, fuzzy
 msgid "Free. Anytime. Anywhere."
-msgstr "Bezpłatny. W każdej chwili. Gdziekolwiek."
+msgstr "Bezpłatne. Zawsze. Wszędzie."
 
 #: site/pages/home.php:148
-#, fuzzy
 msgid "Gain insight into..."
-msgstr "Uzyskaj wgląd w..."
+msgstr "Odkryj..."
 
 #: site/pages/home.php:153
-#, fuzzy
 msgid "Being A Disciple"
-msgstr "Kaczątko"
+msgstr "Uczniostwo"
 
 #: site/pages/home.php:155
 msgid "What's a Disciple?"
 msgstr "Kim jest uczeń?"
 
 #: site/pages/home.php:156
-#, fuzzy
 msgid "What's a Church?"
-msgstr "Co to jest Kościół?"
+msgstr "Czym jest Kościół?"
 
 #: site/pages/home.php:157
-#, fuzzy
 msgid "Keys to Spiritual Growth"
-msgstr "Duchowe oddychanie"
+msgstr "Klucze do duchowego wzrostu"
 
 #: site/pages/home.php:158
-#, fuzzy
 msgid "Personal Bible Study"
 msgstr "Osobiste studium Biblii"
 
 #: site/pages/home.php:159
-#, fuzzy
 msgid "Strong Prayer Life"
 msgstr "Silne życie modlitewne"
 
 #: site/pages/home.php:160
-#, fuzzy
 msgid "The Power of Obedient Faith"
 msgstr "Moc posłusznej wiary"
 
 #: site/pages/home.php:167
-#, fuzzy
 msgid "Making Disciples"
-msgstr "Kaczątko"
+msgstr "Czynienie uczniów"
 
 #: site/pages/home.php:169
-#, fuzzy
 msgid "Sharing God's Story"
-msgstr "Przećwiczcie dzielenie się swoim świadectwem (45 min)"
+msgstr "Dzielenie się Bożą historią"
 
 #: site/pages/home.php:170
-#, fuzzy
 msgid "Telling Your Story"
-msgstr "Prowadzenie grupy"
+msgstr "Opowiadanie swojej historii"
 
 #: site/pages/home.php:171
-#, fuzzy
 msgid "Engaging Seekers"
-msgstr "Angażowanie poszukiwaczy"
+msgstr "Angażowanie poszukujących"
 
 #: site/pages/home.php:172
-#, fuzzy
 msgid "Vision Casting Multiplication"
-msgstr "Wizja największego błogosławieństwa"
+msgstr "Wizja pomnażania"
 
 #: site/pages/home.php:173
-#, fuzzy
 msgid "Leading a Simple Church"
-msgstr "2 proste Kościoły"
+msgstr "Prowadzenie prostego Kościoła"
 
 #: site/pages/home.php:174
-#, fuzzy
 msgid "Training Others"
-msgstr "Szkolenie"
+msgstr "Szkolenie innych"
 
 #: site/pages/home.php:179 site/pages/home.php:244
-#, fuzzy
 msgid "I'm Ready!"
-msgstr "Jestem gotowy!"
+msgstr "Jestem gotowy/a!"
 
 #: site/pages/home.php:193
-#, fuzzy
 msgid "Ordinary People. Simple Steps."
 msgstr "Zwykli ludzie. Proste kroki."
 
 #: site/pages/home.php:237
-#, fuzzy
 msgid "More about zume"
-msgstr "Dowiedz się więcej o Zúme"
+msgstr "Więcej o Zúme"
 
 #: site/pages/home.php:271
-#, fuzzy
 msgid "Real people ... real stories."
 msgstr "Prawdziwi ludzie... prawdziwe historie."
 
 #: site/pages/home.php:282
-#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
-"Spędziłem lata wiernie uczęszczając na studia biblijne i do kościoła, ale "
-"jakimś cudem nie rozumiałem prostych prawd o pozyskiwaniu uczniów, które "
-"znalazłem tutaj, w Zúme. ~ C"
+"Przez lata wiernie uczęszczałem na studia biblijne i do kościoła, ale jakimś "
+"cudem nie rozumiałem prostych prawd o czynieniu uczniami, które znalazłem "
+"tutaj, w Zúme. ~ C"
 
 #: site/pages/home.php:293
-#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
 "Każdy może to zrobić. Nie potrzebujesz żadnych specjalnych umiejętności ani "
 "szkolenia. ~J"
 
 #: site/pages/home.php:304
-#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
-"To jest dla wszystkich uczniów, którzy chcą być posłuszni Wielkiemu Nakazowi "
-"Nakazu Misyjnego. Szkolenie Zúme przedstawia normalny chrześcijański styl "
-"życia. ~D"
+"To coś dla wszystkich uczniów, którzy chcą być posłuszni Wielkiemu "
+"Posłannictwu. Szkolenie Zúme przedstawia normalny chrześcijański styl życia. "
+"~D"
 
 #: site/pages/home.php:315
-#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
 msgstr ""
-"Te koncepcje i umiejętności zmieniły nasz kościół i nasz wpływ na świat. ~R"
+"Te koncepcje i umiejętności zmieniły nasz Kościół i nasz wpływ na świat. ~R"
 
 #: site/pages/home.php:325
 #, php-format
@@ -6121,9 +6038,8 @@ msgstr ""
 "pokoleniu."
 
 #: site/pages/home.php:336
-#, fuzzy
 msgid "Ready to take your next steps?"
-msgstr "Gotowy do podjęcia kolejnych kroków?"
+msgstr "Gotowy/a na kolejne kroki?"
 
 #: site/pages/home.php:340
 msgid "Register Free."
@@ -6134,77 +6050,61 @@ msgid "Gather a Group."
 msgstr "Zbierz grupę."
 
 #: site/pages/home.php:348
-#, fuzzy
 msgid "Change the World."
-msgstr "Zmienić świat."
+msgstr "Zmieniaj świat."
 
 #: site/pages/home.php:351
-#, fuzzy
 msgid "Get started"
-msgstr "Start"
+msgstr "Rozpocznij"
 
 #: site/pages/kitchen-sink.php:86
-#, fuzzy
 msgid "Kitchen Sink"
 msgstr "Zlew kuchenny"
 
 #: site/pages/messages.php:236
-#, fuzzy
 msgid "Friend"
-msgstr "Adres użytkownika"
+msgstr "Znajomy"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
-#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr "Wzmacnianie uczniów. Zawsze i wszędzie dzięki aplikacji Zúme."
+msgstr "Wyposażanie uczniów. Zawsze i wszędzie... Dzięki aplikacji Zúme."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
-#, fuzzy
 msgid "Zúme Training App"
-msgstr "Szkolenie Zume"
+msgstr "Aplikacja szkolenia Zúme"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
-#, fuzzy
 msgid "Access the full training wherever you go"
-msgstr "Uzyskaj dostęp do pełnego szkolenia, gdziekolwiek jesteś"
+msgstr "Dostęp do całego szkolenia, gdziekolwiek jesteś"
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
-#, fuzzy
 msgid "Get it on Google Play"
-msgstr "Pobierz go w Google Play"
+msgstr "Pobierz w Google Play"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
-#, fuzzy
 msgid "Offline App"
 msgstr "Aplikacja offline"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
-#, fuzzy
 msgid "Full Training with no internet required"
-msgstr "Pełne szkolenie bez konieczności korzystania z Internetu"
+msgstr "Całe szkolenie bez konieczności korzystania z Internetu"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
-#, fuzzy
 msgid "Download the course and video content to your phone"
 msgstr "Pobierz kurs i zawartość wideo na swój telefon"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
-#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
-"Świetnie sprawdza się w obszarach, w których dostęp do Internetu jest "
-"ograniczony lub ograniczony"
+msgstr "Świetnie sprawdza się w obszarach z ograniczonym dostępem do Internetu"
 
 #: site/pages/plan-invite.php:77
-#, fuzzy
 msgid "Please enter a code."
 msgstr "Proszę wprowadzić kod."
 
 #: site/pages/plan-invite.php:170
-#, fuzzy
 msgid "Plan Invitation"
-msgstr "Zaplanuj zaproszenie"
+msgstr "Zaproszenie do planu"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -6237,13 +6137,12 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "Jakich uprawnień wymaga logowanie przez serwisy społecznościowe?"
 
 #: site/pages/privacy-policy.php:91
-#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
 "Poniższe elementy profilu zmieniają się w zależności od tego, czy korzystasz "
-"z logowania przez Facebook czy Google."
+"z logowania przez Facebook lub Google."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -6273,19 +6172,18 @@ msgid "We collect your information at login."
 msgstr "Gromadzimy Twoje dane podczas logowania."
 
 #: site/pages/privacy-policy.php:133
-#, fuzzy
 msgid ""
 "We also track your progress through the training course and through site "
 "usage."
-msgstr "Śledzimy również Twoje postępy podczas szkolenia."
+msgstr ""
+"Śledzimy również Twoje postępy w trakcie szkolenia i korzystania z witryny."
 
 #: site/pages/privacy-policy.php:136
-#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
 "Prosimy o podanie niezbędnych informacji za pośrednictwem różnych formularzy "
-"rejestracyjnych i wniosków."
+"rejestracyjnych."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -6360,17 +6258,14 @@ msgid "Do we use \"cookies\"?"
 msgstr "Czy używamy plików „cookies”?"
 
 #: site/pages/privacy-policy.php:175
-#, fuzzy
 msgid ""
 "Any use of Cookies - or of other tracking tools - unless stated otherwise, "
 "serves to identify Users and remember their preferences, for the sole "
 "purpose of providing the service required by the User."
 msgstr ""
-"Jakiekolwiek użycie plików cookie - lub innych narzędzi śledzących - przez "
-"tę Aplikację lub przez właścicieli usług stron trzecich wykorzystywanych "
-"przez tę Aplikację, o ile nie określono inaczej, służy identyfikacji "
-"Użytkowników i zapamiętywaniu ich preferencji, wyłącznie w celu świadczenia "
-"usługi wymaganej przez Użytkownika."
+"Jakiekolwiek użycie plików cookie lub innych narzędzi śledzących, o ile nie "
+"określono inaczej, służy identyfikacji Użytkowników i zapamiętywaniu ich "
+"preferencji, wyłącznie w celu świadczenia usługi wymaganej przez Użytkownika."
 
 #: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
@@ -6414,40 +6309,34 @@ msgstr ""
 "aktualizacje będą publikowane na tej stronie."
 
 #: site/pages/resources.php:100
-#, fuzzy
 msgid "Training Guidebook"
-msgstr "Nasycenie szkoleniem"
+msgstr "Przewodnik szkoleniowy"
 
 #: site/pages/resources.php:103
-#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
-"Szkolenie Zúme jest teraz dostępne w formie kompletnego skoroszytu. "
+"Szkolenie Zúme jest teraz dostępne w formie kompletnego zeszytu ćwiczeń. "
 "Wszystkie koncepcje, narzędzia, pytania do dyskusji i wyzwania ze szkolenia "
-"są teraz w zasięgu ręki. Kody QR na każdą sesję zapewniają także dostęp do "
-"całej zawartości wideo!"
+"są teraz w zasięgu ręki. Kody QR dla każdej sesji dają także dostęp do całej "
+"zawartości wideo!"
 
 #: site/pages/resources.php:111
-#, fuzzy
 msgid "Free Download (PDF)"
 msgstr "Bezpłatne pobieranie (PDF)"
 
 #: site/pages/resources.php:112
-#, fuzzy
 msgid "Order print copy"
 msgstr "Zamów kopię drukowaną"
 
 #: site/pages/share.php:83
-#, fuzzy
 msgid "Copy this link and send it to your friends."
 msgstr "Skopiuj ten link i wyślij go swoim znajomym."
 
 #: site/pages/share.php:85
-#, fuzzy
 msgid "Copied"
 msgstr "Skopiowano"
 
@@ -6460,54 +6349,46 @@ msgid "Concepts"
 msgstr "Koncepcje"
 
 #: site/pages/share.php:125
-#, fuzzy
 msgid "Sort"
-msgstr "Sortuj"
+msgstr "Sortowanie"
 
 #: site/pages/share.php:126
-#, fuzzy
 msgid "Items"
-msgstr "Przedmiotów"
+msgstr "Elementy"
 
 #: site/pages/share.php:134
-#, fuzzy
 msgid "Sharing with Others"
 msgstr "Dzielenie się z innymi"
 
 #: site/pages/share.php:141
-#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
-"Kiedy będziemy wierni i będziemy posłuszni temu, czym Pan się z nami "
-"podzielił, wtedy On obiecuje dzielić się jeszcze więcej."
+"Kiedy jesteśmy wierni i posłuszni temu, co dostajemy od Pana, i przekazujemy "
+"to dalej, On obiecuje dawać nam jeszcze więcej."
 
 #: site/pages/training.php:130
 msgid "Get started with Zúme Training"
 msgstr "Rozpocznij szkolenie Zúme"
 
 #: site/pages/training.php:133
-#, fuzzy
 msgid "Create your own training group"
-msgstr "Stwórz własną listę 100"
+msgstr "Stwórz własną grupę szkoleniową"
 
 #: site/pages/training.php:136
-#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
-"Zbierz kilku przyjaciół lub weź udział w kursie w już istniejącej małej "
-"grupie. Stwórz własną grupę treningową i śledź swoje postępy."
+"Zbierz kilku znajomych lub dołącz do już istniejącej małej grupy, by wziąć "
+"udział w szkoleniu. Stwórz własną grupę szkoleniową i śledź jej postępy."
 
 #: site/pages/training.php:138
-#, fuzzy
 msgid "Create"
-msgstr "Plan trzymiesięczny"
+msgstr "Utwórz"
 
 #: site/pages/training.php:144
-#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
@@ -6516,100 +6397,89 @@ msgstr ""
 "grup szkoleniowych online prowadzonych przez doświadczonego trenera Zúme."
 
 #: site/pages/training.php:149
-#, fuzzy
 msgid "Request a coach"
-msgstr "Zdobądź trenera"
+msgstr "Poproś o trenera"
 
 #: site/pages/training.php:152
-#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
-"Możemy skontaktować Cię z bezpłatnym trenerem Zúme, który pomoże Ci "
-"zrozumieć szkolenie i stać się owocnym uczniem."
+"Możemy skontaktować Cię z trenerem Zúme, który pomoże Ci zrozumieć szkolenie "
+"i stać się owocnym uczniem. Jest to bezpłatne."
 
 #: site/pages/training.php:154
-#, fuzzy
 msgid "Get Help"
-msgstr "Pomoc"
+msgstr "Uzyskaj pomoc"
 
 #: site/pages/training.php:160
 msgid "Course Overview"
 msgstr "Przegląd kursu"
 
 #: site/pages/training.php:162 site/pages/training.php:174
-#, fuzzy
 msgid "Course Concepts"
-msgstr "Kurs ukończony"
+msgstr "Koncepcje szkoleniowe"
 
 #: site/pages/training.php:164 site/pages/training.php:259
 msgid "What is required?"
 msgstr "Co jest wymagane?"
 
 #: site/pages/training.php:177
-#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
-"Podczas tego samodzielnego kursu Ty i Twoja grupa szkoleniowa będziecie "
+"Podczas tego szkolenia Ty i Twoja grupa szkoleniowa będziecie samodzielnie "
 "korzystać z krótkich filmów, pytań do dyskusji i prostych ćwiczeń, aby "
 "rozwijać swoje umiejętności i wiedzę w następujących obszarach:"
 
 #: site/pages/training.php:181
-#, fuzzy
 msgid "Discipleship Concepts"
-msgstr "Koncepcje bycia uczniem"
+msgstr "Koncepcje uczniostwa"
 
 #: site/pages/training.php:195
-#, fuzzy
 msgid "Spiritual Practices"
-msgstr "Duchowe oddychanie"
+msgstr "Praktyki duchowe"
 
 #: site/pages/training.php:216
-#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
-"Zúme to 20 godzin szkolenia. Jednak te 20 godzin można rozbić w różny sposób "
-"w zależności od dostępności grupy szkoleniowej."
+"Zúme to 20 godzin szkolenia. Może być przeprowadzone na różne sposoby w "
+"zależności od ram czasowych, którymi dysponują członkowie grupy szkoleniowej."
 
 #: site/pages/training.php:228
-#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
 "Oryginalny format kursu Zúme obejmuje 10 dwugodzinnych sesji. Każda sesja "
-"kończy się praktycznymi krokami posłuszeństwa i sposobami dzielenia się "
-"pomiędzy sesjami. Ten format jest często uruchamiany raz w tygodniu przez 10 "
+"kończy się praktycznymi krokami posłuszeństwa i dzielenia się z innymi "
+"pomiędzy sesjami. Ten format jest często stosowany raz w tygodniu przez 10 "
 "tygodni."
 
 #: site/pages/training.php:240
-#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
-"W przypadku dłuższego kursu w wolniejszym tempie i dającego więcej "
-"możliwości zdobycia kompetencji w zakresie koncepcji i umiejętności, format "
-"20 sesji zapewnia więcej możliwości ćwiczenia każdej koncepcji i narzędzi."
+"W przypadku dłuższego kursu w wolniejszym tempie, dającego większe "
+"możliwości opanowania omawianych koncepcji i umiejętności, format 20 sesji "
+"zapewnia więcej możliwości przećwiczenia wszystkich koncepcji i narzędzi."
 
 #: site/pages/training.php:252
-#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
-"Zúme można skompresować w 5 półdniowych sekcjach po 4 godziny każda. Można "
-"to zrobić w piątkowy wieczór (4 godziny), całą sobotę (8 godzin) i całą "
-"niedzielę (8 godzin)."
+"Zúme można skompresować do 5 bloków po 4 godziny. Można przeprowadzić je w "
+"ciągu piątkowego wieczora (4 godziny), całej soboty (8 godzin) i całej "
+"niedzieli (8 godzin)."
 
 #: site/pages/training.php:260
 msgid "Needed for the course:"
@@ -6620,34 +6490,29 @@ msgid "NOT needed for the course:"
 msgstr "NIE są potrzebne do kursu:"
 
 #: site/pages/training.php:269
-#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
 "Do prowadzenia kursu nie jest potrzebne specjalne zezwolenie! Zúme jest "
-"osobą samodzielną, samoinicjującą i możesz zacząć już dziś."
+"szkoleniem, które możesz rozpocząć i poprowadzić samodzielnie już dziś."
 
 #: site/parts/footer.php:31
-#, fuzzy
 msgid "3 Day Intensive Course"
-msgstr "3-dniowy intensywny kurs"
+msgstr "3-dniowe intensywne szkolenie"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
 #: utilities/integrations/replace-placeholder.php:110
 #: utilities/integrations/replace-placeholder.php:111
-#, fuzzy
 msgid "Check-in"
-msgstr "Lista kontrolna"
+msgstr "Zaloguj się"
 
 #: site/parts/noscript.php:2
-#, fuzzy
 msgid "Oops you have javascript turned off"
 msgstr "Ups, masz wyłączony JavaScript"
 
 #: site/parts/noscript.php:3
-#, fuzzy
 msgid "Please enable javascript to use this page"
 msgstr "Aby korzystać z tej strony, włącz JavaScript"
 
@@ -6659,55 +6524,46 @@ msgid "Update Communication Preferences"
 msgstr "Zaktualizuj preferencje dot. komunikacji"
 
 #: site/profile/communication-preferences.php:81
-#, fuzzy
 msgid "Recieve emails for:"
-msgstr "Otrzymuj e-maile dla:"
+msgstr "Otrzymuj e-maile:"
 
 #: site/profile/communication-preferences.php:84
-#, fuzzy
 msgid "Training session reminders"
-msgstr "Szkolenie"
+msgstr "Przypomnienia o sesjach treningowych"
 
 #: site/profile/communication-preferences.php:88
-#, fuzzy
 msgid "Annual reporting reminders"
-msgstr "Przypomnienia dotyczące sprawozdań rocznych"
+msgstr "Przypomnienia o rocznych sprawozdaniach"
 
 #: site/profile/communication-preferences.php:92
-#, fuzzy
 msgid "Community updates"
-msgstr "Społeczność"
+msgstr "Aktualizacje dotyczące społeczności"
 
 #: site/profile/communication-preferences.php:96
-#, fuzzy
 msgid "Encouragements"
-msgstr "Zachęty"
+msgstr "Słowa zachęty"
 
 #: site/profile/profile.php:111
 msgid "Profile"
 msgstr "Profil"
 
 #: utilities/apis/connect-api.php:85
-#, fuzzy
 msgid "your friend"
-msgstr "Twój profil"
+msgstr "Twój znajomy"
 
 #: utilities/apis/connect-api.php:235
-#, fuzzy
 msgid "the plan"
-msgstr "planu"
+msgstr "plan"
 
 #: utilities/apis/cta-api.php:137
 msgid "Register to start your training"
 msgstr "Zarejestruj się, aby rozpocząć szkolenie"
 
 #: utilities/apis/cta-api.php:151
-#, fuzzy
 msgid "Join Online Training"
-msgstr "Zobacz całe szkolenie"
+msgstr "Dołącz do szkolenia on-line"
 
 #: utilities/apis/cta-api.php:152
-#, fuzzy
 msgid "Join the online training to learn more"
 msgstr "Dołącz do szkolenia online i dowiedz się więcej"
 
@@ -6716,7 +6572,6 @@ msgid "Joined Training!"
 msgstr "Dołączyłeś do szkolenia!"
 
 #: utilities/apis/cta-api.php:181
-#, fuzzy
 msgid "Get a coach to help you on your journey"
 msgstr "Znajdź trenera, który pomoże Ci w podróży"
 
@@ -6726,7 +6581,6 @@ msgstr "Poprosiłeś/aś o trenera!"
 
 #: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
 #: utilities/apis/cta-api.php:239
-#, fuzzy
 msgid "Congratulations"
 msgstr "Gratulacje"
 
@@ -6735,12 +6589,10 @@ msgid "Connected to Coach!"
 msgstr "Połączono z trenerem!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
-#, fuzzy
 msgid "Create a Training"
-msgstr "1 szkolenie"
+msgstr "Utwórz szkolenie"
 
 #: utilities/apis/cta-api.php:224
-#, fuzzy
 msgid "Create a training to help you grow"
 msgstr "Stwórz szkolenie, które pomoże Ci się rozwijać"
 
@@ -6749,74 +6601,61 @@ msgid "Created Training!"
 msgstr "Utworzono szkolenie!"
 
 #: utilities/apis/cta-api.php:271
-#, fuzzy
 msgid "Set your profile to help others know you"
-msgstr "Ustaw swój profil, aby inni mogli Cię poznać"
+msgstr "Wypełnij swój profil, aby inni mogli Cię poznać"
 
 #: utilities/apis/cta-api.php:285
-#, fuzzy
 msgid "Profile Set"
-msgstr "Profil"
+msgstr "Profil wypełniony"
 
 #: utilities/apis/cta-api.php:299 utilities/apis/cta-api.php:301
-#, fuzzy
 msgid "Create 3 Month Plan"
-msgstr "Plan trzymiesięczny"
+msgstr "Utwórz plan 3-miesięczny"
 
 #: utilities/apis/cta-api.php:300
-#, fuzzy
 msgid "Create a 3 month plan to help you grow"
 msgstr "Stwórz 3-miesięczny plan, który pomoże Ci się rozwijać"
 
 #: utilities/apis/cta-api.php:314
-#, fuzzy, php-format
+#, php-format
 msgid "%s unlocked"
 msgstr "%s odblokowany"
 
 #: utilities/apis/cta-api.php:328
-#, fuzzy
 msgid "3-Month Plan Created"
-msgstr "Plan trzymiesięczny"
+msgstr "Utworzono plan 3-miesięczny"
 
 #: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
-#, fuzzy
 msgid "Complete 3 Month Plan"
-msgstr "Plan trzymiesięczny"
+msgstr "Wypełnij plan 3-miesięczny"
 
 #: utilities/apis/cta-api.php:343
-#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
 msgstr "Wypełnij swój 3-miesięczny plan, który pomoże Ci się rozwijać"
 
 #: utilities/apis/cta-api.php:357
-#, fuzzy
 msgid "3 Month Plan Completed"
-msgstr "Plan trzymiesięczny"
+msgstr "Wypełniono plan 3-miesięczny"
 
 #: utilities/apis/cta-api.php:402
-#, fuzzy
 msgid "Join the community"
-msgstr "Społeczność"
+msgstr "Dołącz do społeczności"
 
 #: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
-#, fuzzy
 msgid "Share Spiritual Breathing"
-msgstr "Duchowe oddychanie"
+msgstr "Podziel się duchowym oddychaniem"
 
 #: utilities/apis/cta-api.php:419
-#, fuzzy
 msgid "Share Spiritual Breathing with someone"
-msgstr "Duchowe oddychanie"
+msgstr "Podziel się z kimś duchowym oddychaniem"
 
 #: utilities/apis/cta-api.php:433 utilities/apis/cta-api.php:435
-#, fuzzy
 msgid "Share Relational Stewardship"
-msgstr "Wierność w relacjach — Lista 100"
+msgstr "Podziel się wiernością w relacjach"
 
 #: utilities/apis/cta-api.php:434
-#, fuzzy
 msgid "Share Relational Stewardship with someone"
-msgstr "Wierność w relacjach — Lista 100"
+msgstr "Podziel się z kimś wiernością w relacjach"
 
 #: utilities/apis/plans-api.php:142
 #, php-format
@@ -6831,56 +6670,48 @@ msgid "Training %1$d - %2$s"
 msgstr "Szkolenie %1$d - %2$s"
 
 #: utilities/hooks/roles-and-permissions.php:56
-#, fuzzy
 msgid "Porch Admin"
-msgstr "Administrator"
+msgstr "Admin podstrony"
 
 #: utilities/integrations/replace-placeholder.php:89
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
-#, fuzzy
 msgid "Join the Zúme Community"
-msgstr "Społeczność"
+msgstr "Dołącz do społeczności Zúme"
 
 #: utilities/integrations/replace-placeholder.php:93
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
-#, fuzzy
 msgid "Zúme Dashboard"
 msgstr "Pulpit nawigacyjny Zúme"
 
 #: utilities/integrations/replace-placeholder.php:97
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
-#, fuzzy
 msgid "Zúme Online Training Groups"
-msgstr "Szkolenie Zume"
+msgstr "Grupy szkoleniowe Zúme online"
 
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
-#, fuzzy
 msgid "Download Slide Presentation"
-msgstr "Pobierz prezentację slajdów"
+msgstr "Pobierz pokaz slajdów"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
-#, fuzzy
 msgid "Share Zúme Page"
 msgstr "Udostępnij stronę Zúme"
 
 #: utilities/integrations/replace-placeholder.php:169
 #: utilities/integrations/replace-placeholder.php:170
 #: utilities/integrations/replace-placeholder.php:171
-#, fuzzy
 msgid "Zúme Annual Report"
 msgstr "Sprawozdanie roczne Zúme"
 
 #: utilities/post-types/posttype-pieces.php:301
-#, fuzzy
 msgid "Piece"
-msgstr "Różne"
+msgstr "L.p."
 
 #: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"
@@ -6913,9 +6744,8 @@ msgid "[%s] Password Reset"
 msgstr "[%s] Resetowanie hasła"
 
 #: zume-training-system.php:250
-#, fuzzy
 msgid "Profile Details"
-msgstr "Profil"
+msgstr "szczegóły profilu"
 
 #: zume-training-system.php:262
 #, fuzzy
