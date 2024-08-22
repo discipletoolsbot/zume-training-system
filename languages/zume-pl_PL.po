@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-08-21 09:54+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-08-21 16:12+0000\n"
+"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
+"translate@weblate.org>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/pl/>\n"
 "Language: pl_PL\n"
@@ -2014,7 +2014,7 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
 "Jezus powiedział: „ Idźcie więc i pozyskujcie uczniów pośród wszystkich "
-"narodów. CGRZCIJCIE ich w imię Ojca, Syna i Ducha Świętego…”."
+"narodów. CHRZCIJCIE ich w imię Ojca, Syna i Ducha Świętego…”."
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -3056,7 +3056,7 @@ msgstr ""
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
 msgid "Be encouraged ..."
-msgstr "Niech będzie dla Was zachętą, że"
+msgstr "Niech będzie dla Was zachętą, że..."
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -3064,7 +3064,7 @@ msgid ""
 "simple churches and making disciples who multiply than many pastors and "
 "missionaries around the world!"
 msgstr ""
-"możecie o tym nie wiedzieć, ale macie teraz bardziej praktyczne "
+"Możecie o tym nie wiedzieć, ale macie teraz bardziej praktyczne "
 "przeszkolenie w zakresie zakładania prostych Kościołów i czynienia uczniów, "
 "którzy się pomnażają, niż wielu pastorów i misjonarzy na całym świecie!"
 
@@ -3165,7 +3165,7 @@ msgstr ""
 
 #: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
-msgstr "Plan 3-miesięczny"
+msgstr "Stwórz swój Plan 3-miesięczny"
 
 #: site/course/course-content.php:3032
 msgid ""
@@ -3180,8 +3180,8 @@ msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
-"Słuchanie – Poświęćcie czas na wyciszenie się i uważne słuchanie, co Bóg ma "
-"Wam do powiedzenia i co chce Wam objawić. (10 min)"
+"Słuchanie – Poświęćcie czas na wyciszenie się i uważne słuchanie, co Bóg "
+"chce Wam objawić. (10 min)"
 
 #: site/course/course-content.php:3034
 msgid ""
@@ -3430,7 +3430,7 @@ msgid ""
 "Testimony."
 msgstr ""
 "Podzielcie się na dwu- lub trzyosobowe grupy i przećwiczcie dzielenie się z "
-"innymi Waszym świadectwem."
+"innymi swoim trzyminutowym świadectwem."
 
 #: site/course/course-content.php:4216
 msgid ""
@@ -5433,7 +5433,7 @@ msgstr "Start"
 
 #: site/pages/about.php:162
 msgid "How does Zúme Training Work?"
-msgstr "Jak działa Szkolenie Zúme?"
+msgstr "Jak działa szkolenie Zúme?"
 
 #: site/pages/about.php:167 site/pages/home.php:212
 #, php-format
@@ -5472,7 +5472,7 @@ msgstr ""
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
-msgstr "%1$sWyzwania%2$s pomogą Wam uczyć się i rozwijać między sesjami."
+msgstr "%1$sWyzwania%2$s pomogą Wam uczyć się i rozwijać pomiędzy sesjami."
 
 #: site/pages/about.php:194
 msgid "Before you start."
@@ -5740,11 +5740,11 @@ msgid ""
 "teaching them to obey everything I have commanded you. And surely I am with "
 "you always, to the very end of the age.\""
 msgstr ""
-"A Jezus podszedł i zwrócił się do nich w tych słowach: Otrzymałem wszelką "
+"A Jezus podszedł i zwrócił się do nich w tych słowach: „Otrzymałem wszelką "
 "władzę w niebie i na ziemi. Idźcie więc i pozyskujcie uczniów pośród "
 "wszystkich narodów. Chrzcijcie ich w imię Ojca, Syna i Ducha Świętego i "
 "uczcie przestrzegać wszystkiego, co wam przykazałem. A oto Ja jestem z wami "
-"przez wszystkie dni aż po kres tego wieku."
+"przez wszystkie dni aż po kres tego wieku”."
 
 #: site/pages/follow-jesus.php:267
 msgid "Matthew 28:18-20"
@@ -6569,7 +6569,7 @@ msgstr "Dołącz do szkolenia online i dowiedz się więcej"
 
 #: utilities/apis/cta-api.php:166
 msgid "Joined Training!"
-msgstr "Dołączyłeś do szkolenia!"
+msgstr "Dołączono do szkolenia!"
 
 #: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
@@ -6577,7 +6577,7 @@ msgstr "Znajdź trenera, który pomoże Ci w podróży"
 
 #: utilities/apis/cta-api.php:195
 msgid "Requested Coach!"
-msgstr "Poprosiłeś/aś o trenera!"
+msgstr "Poproszono o trenera!"
 
 #: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
 #: utilities/apis/cta-api.php:239
@@ -6745,47 +6745,39 @@ msgstr "[%s] Resetowanie hasła"
 
 #: zume-training-system.php:250
 msgid "Profile Details"
-msgstr "szczegóły profilu"
+msgstr "Szczegóły profilu"
 
 #: zume-training-system.php:262
-#, fuzzy
 msgid "User Email"
-msgstr "Email"
+msgstr "Adres e-mail użytkownika"
 
 #: zume-training-system.php:271
-#, fuzzy
 msgid "User Phone"
-msgstr "Telefon"
+msgstr "Telefon użytkownika"
 
 #: zume-training-system.php:279
-#, fuzzy
 msgid "User Timezone"
 msgstr "Strefa czasowa użytkownika"
 
 #: zume-training-system.php:287
-#, fuzzy
 msgid "User Friend Key"
 msgstr "Klucz znajomego użytkownika"
 
 #: zume-training-system.php:295
-#, fuzzy
 msgid "User Preferred Language"
 msgstr "Preferowany język użytkownika"
 
 #: zume-training-system.php:303
-#, fuzzy
 msgid "User Preferred Email"
-msgstr "Email"
+msgstr "Preferowany przez użytkownika adres e-mail"
 
 #: zume-training-system.php:311
-#, fuzzy
 msgid "Preferred Contact Methods"
 msgstr "Preferowane metody kontaktu"
 
 #: zume-training-system.php:321
-#, fuzzy
 msgid "Messenger"
-msgstr "Posłaniec"
+msgstr "Messenger"
 
 #, fuzzy
 #~ msgid "Switch Views"
