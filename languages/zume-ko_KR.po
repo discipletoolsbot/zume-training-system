@@ -2,24 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-07-03 18:48+0000\n"
-"Last-Translator: Zack Han <suburbanideal@gmail.com>\n"
-"Language-Team: Korean <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ko_KR/>\n"
+"PO-Revision-Date: 2024-08-22 22:08+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Korean <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ko_KR/>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Epic 404 - 찾을 수 없음"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "찾고 있던 페이지가 없거나 삭제되었습니다."
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -670,18 +670,16 @@ msgid "No Results"
 msgstr "결과 없음"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "훈련함"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "연습"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "방문자"
 
 #: maps/heatmap.php:3158
 #, php-format
@@ -721,24 +719,24 @@ msgstr ""
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "코치가 %2$s의 트레이너를 위해 \"%1$s\"을 모델링하고 있습니다. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "코치가 %2$s의 교육생을 위해 \"%1$s\"을 지원하고 있습니다. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
 msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
-msgstr ""
+msgstr "코치가 %2$s의 \"%1$s\"에 대해 트레이너를 관찰하는 단계에 들어갔습니다. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
-msgstr ""
+msgstr "코치가 %2$s의 \"%1$s\"에 대해 트레이너를 완전히 시작했습니다. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
@@ -746,92 +744,92 @@ msgid "A %1$s created at post training plan in %2$s. %3$s"
 msgstr ""
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "계획"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "전 세계 인구 찾기"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "운동 활동 계산"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "뻔뻔하게 커피 추출하기"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "이렇게 해봅시다"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "적용"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "필요"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "신고"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "서명 목표인원"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "검색"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "검색 입력란에 도시나 장소를 검색하세요."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "확대"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
 msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
-msgstr ""
+msgstr "마우스로 스크롤 줌하거나 트랙 패드와 휴대폰으로 핀치 줌하여 지도의 특정 "
+"부분에 초점을 맞출 수 있습니다."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "끌기"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
-msgstr ""
+msgstr "지도의 다른 부분을 보려면 지도를 아무 방향으로나 클릭하고 드래그하세요."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "클릭"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
 msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
-msgstr ""
+msgstr "하나의 섹션을 클릭하면 해당 위치에 대한 자세한 정보가 담긴 세부 정보 패널이 "
+"표시됩니다."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "진행 상황 분석"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -857,46 +855,41 @@ msgstr "활동"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "목표 달성"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "교회 이름"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "보고된 교회"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "훈련함"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "교육생 보고"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "활동에 필요한 자료"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "필요한 실무자"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "실천 중심"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "지난 100시간 동안의 운동 활동"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "이야기"
 
@@ -906,29 +899,27 @@ msgstr "언어"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "모든타입"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "모든 국ㄱ"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "언어"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "결과 없음"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
-msgstr ""
+msgstr "추가 기록. (지도를 확대하거나 필터링하여 결과 초점 맞추기)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "공부하기"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -941,7 +932,7 @@ msgstr "코칭"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "지도의 목적"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -949,50 +940,54 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"마지막 100시간 지도는 성령께서 전 세계 주메를 통해 제자 삼으시는 하나님의 "
+"백성을 움직이시는 것을 보여줍니다. 100시간은 지금부터 시작되며 대략 지난 4일 "
+"동안의 활동을 다룹니다."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "활동 유형"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr ""
+msgstr "'학습 중'인 사람은 시스템에 로그인하지는 않았지만 코스 자료를 공부하고 있는 "
+"사람입니다."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
-msgstr ""
+msgstr "'교육 중'인 사람은 시스템에 로그인하여 교육 과정을 진행 중입니다."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"'실천'하는 사람은 도구와 개념을 공유하고, 다른 사람들이 공유하도록 교육하고, "
+"운동의 성장에 대해 보고하는 등의 행동을 취합니다."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
-msgstr ""
+msgstr "'코칭'을 받고 있는 사람이 동료 멘토인 줌 코치와 상호작용하고 있습니다."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "세대 매핑"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "콘텐츠를 공부할 때는 항상 로그인하세요."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "세션을 진행할 때는 항상 체크인하세요."
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -1000,31 +995,27 @@ msgstr "또한 우리는 당신의 사이트 사용을 통해 교육의 진행 �
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "새로 시작하는 간단한 교회는 항상 보고하세요."
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "활성화"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "훈련함"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
 msgstr "Zúme 교육이란?"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
-"북미 지역에서는 5,000명당 최소 한 명의 제자 삼는 사람을 훈련하고, 전 세계적으"
-"로는 50,000명당 한 명의 제자 삼는 사람을 훈련합니다."
+"북미 지역에서는 5,000명당 최소 한 명의 제자 삼는 사람을 훈련하고, 전 "
+"세계적으로는 50,000명당 한 명의 제자 삼는 사람을 훈련합니다."
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1032,78 +1023,76 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"우리는 증식하는 제자들로 전 세계를 포화 상태로 만들고 싶습니다. '줌 제자 "
+"지도'는 훈련된 증식 제자가 전 세계에 포화 상태에 도달하기 위해 무엇이 "
+"필요하고 무엇이 보고되었는지를 보여줍니다."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "포화 목표"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "미국 내 5,000명당 1명의 훈련된 증식 제자 수"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "전 세계 50,000명당 1명의 훈련된 증식 제자 수"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "사용된 측정값"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
-msgstr ""
+msgstr "'필요'는 인구에 따라 나열된 위치에서 누락된 것을 의미합니다."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
-msgstr ""
+msgstr "\"신고자\"는 줌 커뮤니티에 자신을 등록한 교육생을 의미합니다."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "Zúme 커뮤니티에 가입하세요"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "내 위치로 프로필을 업데이트하세요."
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "관행"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "줌 실무자 지도"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
-msgstr ""
+msgstr "포화 목표: 미국 5,000명당 교육생 1명, 전 세계 50,000명당 교육생 1명"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "교회"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "2 개의 단순한 교회"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
-"훈련받은 제자 삼는 이들이 북미 지역에서는 5,000명당 최소 2개의 두개의 배가하"
-"는 교회를 시작하고, 전 세계적으로는 50,000명당 2개의 배가하는 교회를 시작하"
-"게 할 것입니다."
+"훈련받은 제자 삼는 이들이 북미 지역에서는 5,000명당 최소 2개의 두개의 "
+"배가하는 교회를 시작하고, 전 세계적으로는 50,000명당 2개의 배가하는 교회를 "
+"시작하게 할 것입니다."
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1111,13 +1100,15 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"우리는 전 세계에 제자와 교회가 번성하여 포화 상태가 되기를 원합니다. \"줌 "
+"교회 지도\"는 전 세계적으로 단순한 교회가 포화 상태에 이르렀을 때 필요한 "
+"것과 보고된 것을 보여줍니다."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "미국 인구 5,000명당 2개의 간이 교회 수"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "50,000 명마다 (전 세계)"
 
@@ -1125,15 +1116,15 @@ msgstr "50,000 명마다 (전 세계)"
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
-msgstr ""
+msgstr "\"보고된 교회\"는 줌 커뮤니티에 등록한 교회를 의미합니다."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "대시보드의 '내 교회' 섹션에서 교회를 추가합니다."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1178,7 +1169,6 @@ msgid "Four Fields"
 msgstr "4가지 밭"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "스스로 평가하는 방식 H.O.S.T."
 
@@ -1533,7 +1523,6 @@ msgstr "알 수 없음"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "3 개월 계획"
 
@@ -1577,7 +1566,7 @@ msgstr "답"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "메모"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -4206,13 +4195,12 @@ msgid "TAKE A BREAK"
 msgstr "쉬어가기"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
 msgstr "코스 발표자"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
-msgstr ""
+msgstr "20시간의 코스 콘텐츠로 제자 양육 방법 교육하기"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4415,13 +4403,12 @@ msgid "Timezone"
 msgstr "시간대"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "만날 시간"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "줌, 구글 미트, 마이크로소프트 팀즈 등"
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4664,7 +4651,6 @@ msgid "Group Members"
 msgstr "그룹 멤버"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "프로필 세부정보"
 
@@ -4861,14 +4847,13 @@ msgstr "페이스북 메신저"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "지우기"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "오늘"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "코칭"
 
@@ -4876,15 +4861,15 @@ msgstr "코칭"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s 그룹"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "비공개"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "공개"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -4971,7 +4956,6 @@ msgid "Other commitments:"
 msgstr "다른 약속 :"
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "설정 마법사에 오류가 있습니다"
 
@@ -6592,7 +6576,8 @@ msgid ""
 "Some personal information is tracked for the proper functioning of the "
 "website, and other information is requested and saved for additional "
 "coaching and support."
-msgstr ""
+msgstr "일부 개인정보는 웹사이트의 적절한 기능을 위해 추적되며, 기타 정보는 추가 "
+"코칭 및 지원을 위해 요청 및 저장됩니다."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6699,7 +6684,8 @@ msgstr "당신의 정보 접근 및 통제"
 msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
-msgstr ""
+msgstr "언제든지 '코치 받기' 양식을 통해 문의하고 사용자 대시보드에서 '기술 지원'을 "
+"선택하면 다음 작업을 수행할 수 있습니다."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6710,7 +6696,6 @@ msgid "Change/correct any data we have about you."
 msgstr "당신과 관련된 데이터를 변경/수정하십시오."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "당신의 모든 데이터를 삭제하도록 요청하십시오."
 
@@ -6720,7 +6705,7 @@ msgstr "당신의 데이터 사용에 대한 우려를 알려주세요."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "향후 당사로부터의 모든 연락을 수신 거부합니다."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6736,7 +6721,7 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "줌 교육을 진행하는 데 도움이 되는 다운로드 가능한 리소스입니다."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6762,7 +6747,6 @@ msgid "Order print copy"
 msgstr "인쇄본 주문"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "줌 과정"
 
@@ -6770,11 +6754,12 @@ msgstr "줌 과정"
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
-msgstr ""
+msgstr "웹 브라우저의 온라인 프레젠터에서 줌 코스 콘텐츠, 비디오 및 활동을 "
+"프레젠테이션할 수 있습니다."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "Zume 교육 과정의 개념과 도구를 공유할 수 있는 링크"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -6899,13 +6884,12 @@ msgstr ""
 "오늘부터 시작할 수 있습니다."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "무료 가이드북 다운로드"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "대용량 파일 다운로드. (1기가바이트)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -6915,14 +6899,19 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"전체 Zúme 과정을 다운로드하여 파워포인트 또는 키노트를 통해 실행할 수 "
+"있습니다. 인터넷 환경이 열악한 지역의 교육에 적합한 솔루션입니다. 동영상은 "
+"슬라이드에 내장되어 있어 인터넷 없이도 쉽게 재생할 수 있습니다. QR코드 "
+"시스템은 여전히 교육생 체크인 및 활동 리소스를 위해 온라인 액세스가 "
+"필요합니다."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "파워포인트"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "키노트"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -6972,14 +6961,13 @@ msgid "Profile"
 msgstr "프로필"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
-"줌 훈련은 예수님을 따르며 그 분의 지상 명령에 순종하며 제자 삼는 제자가 되기"
-"를 지망하는 소그룹을 위한 평생 학습 경험장인 온라인 과정입니다."
+"줌 훈련은 예수님을 따르며 그 분의 지상 명령에 순종하며 제자 삼는 제자가 "
+"되기를 지망하는 소그룹을 위한 평생 학습 경험장인 온라인 과정입니다."
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
@@ -7023,7 +7011,6 @@ msgid "Connected to Coach!"
 msgstr "코치와 연결되었습니다!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "지역 사회"
 
@@ -7094,11 +7081,11 @@ msgstr "훈련 %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -7211,18 +7198,15 @@ msgid "Messenger"
 msgstr "메신저"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Zúme - Training System"
 msgstr "줌 교육"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://github.com/ZumeProject/zume-training-system"
 msgstr "https://github.com/ZumeProject/zume-training"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
 msgstr "줌 훈련"
 

@@ -2,26 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-06-20 08:21+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Croatian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/hr/>\n"
+"PO-Revision-Date: 2024-08-22 20:22+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Croatian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/hr/>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.6\n"
+"X-Generator: Weblate 5.7\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Epic 404 - Nije pronađeno"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "Stranica koju ste tražili nije pronađena ili je izbrisana"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -676,63 +675,61 @@ msgid "No Results"
 msgstr "Bez rezultata"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "Trenirao"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "Vježbanje"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "posjetitelj"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Registrirao se novi pripravnik iz %1$s!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "%1$s u %2$s zatražio je treniranje za %3$s!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Nova grupa za obuku zakazana je za %1$s. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s počinje SESIJU %2$s u %3$s. %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s proučava \"%2$s\" u %3$s. %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s dijeli \"%2$s\" s nekim u %3$s. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s je nekoga obučio da koristi \"%2$s\" u %3$s. %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Trener modelira \"%1$s\" za polaznika u %2$s. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Trener pomaže s \"%1$s\" za pripravnika u %2$s. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -740,70 +737,70 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Trener je ušao u fazu promatranja za polaznika u vezi s \"%1$s\" u %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"Trener je u potpunosti pokrenuo pripravnika u vezi s \"%1$s\" u %2$s. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "%1$s stvoren nakon plana obuke u %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "plan"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Lociranje svjetske populacije"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Izračunavanje aktivnosti kretanja"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Besramno kuhanje kave"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Učinimo ovo"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "Primjena"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "potrebno"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Prijavljena"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Cilj"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Traži"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Potražite bilo koji grad ili mjesto s unosom pretraživanja."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -811,22 +808,26 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Zumirajte pomicanjem pomoću miša ili zumirajte prstima pomoću track padova i "
+"telefona kako biste se fokusirali na dijelove karte."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Drag"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"Kliknite i povucite kartu u bilo kojem smjeru da biste pogledali drugi dio "
+"karte."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Klikni"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -834,10 +835,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Pritisnite jedan odjeljak i otkrijte ploču s detaljima s više informacija o "
+"lokaciji."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "NAPREDAK KVAR"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -863,46 +866,41 @@ msgstr "AKTIVNOST"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Cilj postignut"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "Ime crkve"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Crkve prijavljene"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "Trenirao"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Prijavljeni pripravnici"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "Resurs aktivnosti"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Potrebni praktičari"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "Orijentirano na praksu"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Zadnjih 100 sati aktivnosti kretanja"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "Priče"
 
@@ -912,29 +910,28 @@ msgstr "Jezici"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Sve vrste"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Sve zemlje"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "Jezici"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "Bez rezultata"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
 msgstr ""
+"Dodatni zapisi. (Zumirajte ili filtrirajte kartu za fokusiranje rezultata)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "studiranje"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -947,7 +944,7 @@ msgstr "Treniranje"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Namjena karte"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -955,50 +952,55 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"Karta Posljednjih 100 sati prikazuje Duha Svetoga koji pokreće svoje ljude "
+"na stvaranje učenika kroz Zúme diljem svijeta. 100 sati počinje sada i "
+"pokriva aktivnosti tijekom otprilike posljednja 4 dana."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Vrste aktivnosti"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr ""
+msgstr "Netko tko \"uči\" nije ulogiran u sustav, ali uči gradivo kolegija."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"Netko tko \"trenira\" je ulogiran u sustav i prolazi kroz proces treninga."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Netko tko \"vježba\" poduzima akciju dijeljenjem alata i koncepata, "
+"obučavanjem drugih za dijeljenje, izvješćivanjem o rastu pokreta itd."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"Netko tko je u \"coachingu\" komunicira s vršnjačkim mentorom Zúme trenerom."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "Mapiranje generacija"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Uvijek se prijavite kada proučavate sadržaj."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Uvijek se prijavite kada prolazite kroz sesiju."
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -1007,25 +1009,21 @@ msgstr ""
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Uvijek prijavite nove jednostavne crkve koje pokrećete."
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "Aktivan"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "Trenirao"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
 msgstr "Što je Zúme trening?"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
@@ -1039,71 +1037,75 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"Želimo zasititi svijet množenjem učenika. \"Mapa Zúme pripravnika\" pokazuje "
+"što je potrebno i što je prijavljeno za globalno zasićenje obučenih učenika "
+"množenja."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "Cilj zasićenja"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "1 obučeni učenik množenja na 5000 u Sjedinjenim Državama"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "1 obučeni učenik množenja na 50 000 u svijetu"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "Korištene mjere"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"\"Potrebno\" se odnosi na ono što nedostaje na lokaciji navedenoj prema "
+"broju stanovnika."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Prijavljeno\" se odnosi na polaznike koji su se registrirali u zajednici "
+"Zúme."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "Pridružite se Zúme zajednici"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "Ažurirajte svoj profil svojom lokacijom."
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "Prakse"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Karta Zúme praktičara"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"Cilj zasićenja: 1 pripravnik na 5000 u Sjedinjenim Državama, 1 pripravnik na "
+"50 000 globalno"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "Crkva"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "2 Jednostavne crkve"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
@@ -1118,13 +1120,15 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"Želimo zasititi svijet množenjem učenika i crkava. \"Karta Zúme crkava\" "
+"pokazuje što je potrebno i što je prijavljeno za globalno zasićenje "
+"umnožavanjem jednostavnih crkava."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "2 jednostavne crkve na 5000 ljudi u Sjedinjenim Državama"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "Svakih 50 000 ljudi (globalno)"
 
@@ -1133,14 +1137,15 @@ msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Prijavljeno\" se odnosi na crkve koje su se registrirale u zajednicu Zúme."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "Dodajte svoje crkve u odjeljak \"Moje crkve\" na nadzornoj ploči."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1185,7 +1190,6 @@ msgid "Four Fields"
 msgstr "Četiri polja"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "H.O.S.T."
 
@@ -1539,7 +1543,6 @@ msgstr "Nepoznato"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "Tromjesečni plan"
 
@@ -1583,7 +1586,7 @@ msgstr "Odgovor"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "Napomena"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -4267,13 +4270,12 @@ msgid "TAKE A BREAK"
 msgstr "ODMORITE SE"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
 msgstr "Predavač tečaja"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
-msgstr ""
+msgstr "Obučite učenike kako stvoriti učenike uz 20 sati sadržaja tečaja"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4476,13 +4478,12 @@ msgid "Timezone"
 msgstr "Vremenska zona"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "Vrijeme sastanka"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Zoom, Google Meet, Microsoft Teams itd."
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4734,7 +4735,6 @@ msgid "Group Members"
 msgstr "Članovi grupe"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "Pojedinosti o profilu"
 
@@ -4936,14 +4936,13 @@ msgstr "Facebook Messenger"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "Očisti"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "Danas"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "Treniranje"
 
@@ -4951,15 +4950,15 @@ msgstr "Treniranje"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s grupa"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "Privatno"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "Javno"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -5045,7 +5044,6 @@ msgid "Other commitments:"
 msgstr "Ostale obveze:"
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "Loš čarobnjak"
 
@@ -6686,6 +6684,8 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"Neki se osobni podaci prate za ispravno funkcioniranje web stranice, a drugi "
+"se podaci traže i spremaju za dodatno podučavanje i podršku."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6799,6 +6799,9 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"U bilo kojem trenutku možete učiniti sljedeće tako da nas kontaktirate putem "
+"našeg obrasca \"Nabavite trenera\" i odaberete \"Tehnička pomoć\" na svojoj "
+"korisničkoj nadzornoj ploči."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6809,7 +6812,6 @@ msgid "Change/correct any data we have about you."
 msgstr "Promijenite / ispravite sve podatke koje imamo o vama."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "Brišemo sve podatke koje imamo o vama."
 
@@ -6819,7 +6821,7 @@ msgstr "Izrazite bilo kakvu zabrinutost zbog naše upotrebe vaših podataka."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "Isključite sve buduće kontakte s nama."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6835,7 +6837,7 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "Resursi koji se mogu preuzeti za pomoć pri vođenju zume treninga."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6861,7 +6863,6 @@ msgid "Order print copy"
 msgstr "Naručite ispis"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "Zúme tečaj"
 
@@ -6870,10 +6871,12 @@ msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Sadržaj tečaja Zúme, video zapisi i aktivnosti mogu se prikazati putem "
+"mrežnog prezentera u vašem web pregledniku."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "Veze za dijeljenje koncepata i alata tečaja zume obuke"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -7000,13 +7003,12 @@ msgstr ""
 "samoinicijativni, a možete početi danas."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "Preuzmite besplatni vodič"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "Preuzimanje velike datoteke. (1 gigabajt)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7016,14 +7018,19 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Cijeli Zúme tečaj može se preuzeti i pokrenuti putem Powerpointa ili "
+"Keynotea. Ovo je izvrsno rješenje za obuku u područjima sa slabim "
+"internetom. Videozapisi su ugrađeni u slajdove i mogu se jednostavno "
+"reproducirati bez interneta. Sustav QR kodova i dalje zahtijeva mrežni "
+"pristup za prijave polaznika i resurse aktivnosti."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Powerpoint"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Keynote"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -7073,7 +7080,6 @@ msgid "Profile"
 msgstr "Profil"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
@@ -7125,7 +7131,6 @@ msgid "Connected to Coach!"
 msgstr "Povezano s trenerom!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "Zajednica"
 
@@ -7196,11 +7201,11 @@ msgstr "Trening %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"

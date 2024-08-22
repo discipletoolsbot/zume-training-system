@@ -2,26 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-06-11 05:53+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Romanian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/ro_RO/>\n"
+"PO-Revision-Date: 2024-08-22 22:16+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Romanian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/ro_RO/>\n"
 "Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.7\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Epic 404 - Nu a fost găsit"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "Pagina pe care o căutați nu a fost găsită sau a fost ștearsă"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -684,63 +683,61 @@ msgid "No Results"
 msgstr "Fără rezultate"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "Instruit"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "Exersând"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "vizitator"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Un nou stagiar din %1$s s-a înregistrat!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "Un %1$s în %2$s a solicitat %3$s coaching!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Nou grup de formare programat în %1$s. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "A %1$s începe SESIUNEA %2$s în %3$s. %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "Un %1$s studiază \"%2$s\" în %3$s. %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "Un %1$s a partajat \"%2$s\" cu cineva din %3$s. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "Un %1$s a instruit pe cineva să folosească \"%2$s\" în %3$s. %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Un antrenor este modelarea \"%1$s\" pentru un stagiar în %2$s. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Un antrenor ajută cu \"%1$s\" un stagiar în %2$s. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -748,70 +745,71 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Un antrenor a intrat într-o etapă de supraveghere a unui cursant în ceea ce "
+"privește \"%1$s\" în %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"Un antrenor a lansat complet un stagiar cu privire la \"%1$s\" în %2$s. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "A %1$s a creat la post planul de formare în %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "planul"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Localizarea populației mondiale"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Calcularea activității de mișcare"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Prepararea fără rușine a cafelei"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Să facem acest lucru"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "Aplicarea"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "Necesar"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Raportat"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Scop"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Caută"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Căutați orice oraș sau loc cu ajutorul rubricii de căutare."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -819,22 +817,26 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Derulați zoomul cu ajutorul mouse-ului sau faceți pinch zoom cu trackpad-"
+"urile și telefoanele pentru a vă concentra pe anumite secțiuni ale hărții."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Glisaţi"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"Faceți clic și trageți harta în orice direcție pentru a vizualiza o altă "
+"parte a hărții."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Click"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -842,10 +844,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Faceți clic pe o singură secțiune și veți descoperi un panou de detalii cu "
+"mai multe informații despre locație."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "DEFALCAREA PROGRESULUI"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -871,46 +875,41 @@ msgstr "ACTIVITATE"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Obiectiv atins"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "Numele bisericii"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Biserici raportate"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "Instruit"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Stagiari raportați"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "Resursă de Activitate"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Practicieni necesari"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "Orientat spre practică"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Ultimele 100 de ore de activitate de mișcare"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "Istorii"
 
@@ -920,29 +919,29 @@ msgstr "Limbi"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Toate Tipurile"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Toate țările"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "Limbi"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "Fără rezultate"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
 msgstr ""
+"Înregistrări suplimentare. (Mărește sau filtrează harta pentru a concentra "
+"rezultatele)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "Studierea"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -955,7 +954,7 @@ msgstr "Antrenor"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Scopul hărții"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -963,50 +962,59 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"Harta ultimelor 100 de ore arată cum Duhul Sfânt își mișcă oamenii pentru a "
+"face ucenici prin Zúme în întreaga lume. Cele 100 de ore încep acum și "
+"acoperă activitatea din aproximativ ultimele 4 zile."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Tipuri de activități"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"Cineva care \"studiază\" nu este conectat la sistem, dar studiază materialul "
+"de curs."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"Cineva care este \"în formare\" este conectat la sistem și trece prin "
+"procesul de formare."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Cineva care \"practică\" trece la acțiune, împărtășind instrumente și "
+"concepte, formându-i pe alții să împărtășească, raportând despre creșterea "
+"mișcării etc."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"Cineva care este în \"coaching\" interacționează cu un mentor Zúme coach."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "Harta Generațiilor"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Conectați-vă întotdeauna atunci când studiați conținutul."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Întotdeauna faceți checkin atunci când treceți printr-o sesiune."
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -1016,25 +1024,21 @@ msgstr ""
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Raportați întotdeauna noile biserici simple pe care le începeți."
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "Activ"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "Instruit"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
 msgstr "Ce este Zúme Training?"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
@@ -1049,71 +1053,75 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"Dorim să saturăm lumea cu ucenici multiplicatori. \"Harta cursanților Zúme\" "
+"arată ce este necesar și ce este raportat pentru saturarea globală de "
+"ucenici înmulțitori instruiți."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "Obiectiv de saturație"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "1 ucenic multiplicator instruit la 5.000 în Statele Unite"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "1 ucenic multiplicator instruit la 50.000 la nivel global"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "Măsurători utilizate"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"\"Necesar\" se referă la ceea ce lipsește în locația enumerată în funcție de "
+"populație."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Raportat\" se referă la stagiarii care s-au înregistrat în comunitatea "
+"Zúme."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "Alăturați-vă comunității Zúme"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "Actualizați-vă profilul cu locația dvs."
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "Practici"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Harta Zúme Practitioners"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"Obiectiv de saturație: 1 stagiar la 5.000 în Statele Unite, 1 stagiar la "
+"50.000 la nivel mondial"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "Biserică"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "2 Biserici Simple"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
@@ -1128,13 +1136,15 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"Dorim să saturăm lumea cu ucenici și biserici înmulțitoare. \"Harta "
+"bisericilor zúme\" arată ce este necesar și ce este raportat pentru "
+"saturarea globală de biserici simple care se înmulțesc."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "2 biserici simple la 5.000 de persoane în Statele Unite"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "La fiecare 50.000 de oameni (la nivel global)"
 
@@ -1143,14 +1153,17 @@ msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Raportate\" se referă la bisericile care s-au înregistrat în comunitatea "
+"Zúme."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
 msgstr ""
+"Adăugați-vă bisericile în secțiunea \"Bisericile mele\" din tabloul de bord."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1195,7 +1208,6 @@ msgid "Four Fields"
 msgstr "Patru Câmpuri"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "A.A.Î.A."
 
@@ -1564,7 +1576,6 @@ msgstr "Necunoscut"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "Plan de 3 luni"
 
@@ -1595,21 +1606,20 @@ msgid "Save"
 msgstr "Salvați"
 
 #: site/activities/three-month-plan.php:95
-#, fuzzy
 msgid "Cancel"
 msgstr "Anulare"
 
 #: site/activities/three-month-plan.php:96 site/dashboard/dashboard.php:299
 msgid "Question"
-msgstr ""
+msgstr "Întrebare"
 
 #: site/activities/three-month-plan.php:97 site/dashboard/dashboard.php:300
 msgid "Answer"
-msgstr ""
+msgstr "Raspuns"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "Notiță"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -4370,13 +4380,13 @@ msgid "TAKE A BREAK"
 msgstr "IA O PAUZĂ"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
 msgstr "Prezentatorul cursului"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
 msgstr ""
+"Pregătiți discipolii cum să facă discipoli cu 20 de ore de conținut de curs"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4402,7 +4412,6 @@ msgid "Menu"
 msgstr "Meniul"
 
 #: site/course/presenter.php:159
-#, fuzzy
 msgid "Slide View"
 msgstr "Vizualizare grilă"
 
@@ -4423,12 +4432,10 @@ msgid "Session"
 msgstr "Sesiune"
 
 #: site/course/presenter.php:165
-#, fuzzy
 msgid "View Transcript"
 msgstr "Vedeți transcrierea"
 
 #: site/course/presenter.php:166
-#, fuzzy
 msgid "View Activity"
 msgstr "Vedeți activitatea"
 
@@ -4582,13 +4589,12 @@ msgid "Timezone"
 msgstr "Fus orar"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "Timpul întâlnirii"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Zoom, Google Meet, Microsoft Teams etc."
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4841,7 +4847,6 @@ msgid "Group Members"
 msgstr "Membrii grupului"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "Detalii profil"
 
@@ -5022,7 +5027,6 @@ msgid "Simple church planting map"
 msgstr "Hartă simplă pentru plantarea de biserici"
 
 #: site/dashboard/dashboard.php:292
-#, fuzzy
 msgid "No date"
 msgstr "Actualizați"
 
@@ -5047,14 +5051,13 @@ msgstr "Facebook Messenger"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "Șterge"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "Astăzi"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "Antrenor"
 
@@ -5062,15 +5065,15 @@ msgstr "Antrenor"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s grup"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "Privat"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "Public"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -5168,7 +5171,6 @@ msgid "Other commitments:"
 msgstr "Alte angajamente:"
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "Expertul rău"
 
@@ -5275,13 +5277,11 @@ msgid "Join for Free"
 msgstr "Înscrie-te gratis"
 
 #: site/dashboard/wizard.php:189
-#, fuzzy
 msgid "Successfully joined community"
 msgstr "S-a înscris cu succes la formare %s"
 
 #: site/dashboard/wizard.php:190 site/dashboard/wizard.php:243
 #: site/dashboard/wizard.php:258 site/dashboard/wizard.php:265
-#, fuzzy
 msgid "Something went wrong"
 msgstr "Oops. Ceva n-a mers bine."
 
@@ -6230,13 +6230,12 @@ msgid "Connect"
 msgstr "Conectați"
 
 #: site/pages/checkin.php:246
-#, fuzzy
 msgid "or"
 msgstr "Sortare"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Alegeți sesiunea pentru check-in"
 
 #: site/pages/checkin.php:250 site/pages/training.php:159
 #: site/pages/training.php:210
@@ -6844,6 +6843,9 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"Unele informații personale sunt urmărite pentru buna funcționare a site-"
+"ului, iar alte informații sunt solicitate și salvate pentru asistență și "
+"suport suplimentar."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6961,6 +6963,9 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"Puteți face următoarele în orice moment contactându-ne prin intermediul "
+"formularului nostru \"Obțineți un antrenor\" și alegând \"Asistență tehnică\""
+" din tabloul de bord al utilizatorului."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6971,7 +6976,6 @@ msgid "Change/correct any data we have about you."
 msgstr "Modificați / corectați toate datele pe care le avem despre dvs."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "Solicitați-ne să ștergem orice date avem despre dvs."
 
@@ -6983,7 +6987,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "Renunțați la orice contact viitor din partea noastră."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -7000,6 +7004,8 @@ msgstr ""
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
 msgstr ""
+"Resurse care pot fi descărcate pentru a vă ajuta să desfășurați o formare "
+"zume."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -7026,7 +7032,6 @@ msgid "Order print copy"
 msgstr "Comandați o copie tipărită"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "Curs Zúme"
 
@@ -7035,10 +7040,14 @@ msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Conținutul cursului Zúme, videoclipurile și activitățile, pot fi prezentate "
+"din prezentatorul online din browserul dvs. web."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
 msgstr ""
+"Legături pentru împărtășirea conceptelor și instrumentelor din cursul de "
+"formare zume"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -7166,13 +7175,12 @@ msgstr ""
 "auto-gestionat, auto-inițiat și poți începe astăzi."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "Descarcă Ghidul gratuit"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "Descărcare fișier mare. (1 gigabyte)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7182,14 +7190,19 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Întregul curs Zúme poate fi descărcat și rulat prin Powerpoint sau Keynote. "
+"Aceasta este o soluție excelentă pentru formarea în zone cu internet slab. "
+"Videoclipurile sunt încorporate în diapozitive și pot fi redate cu ușurință "
+"fără internet. Sistemul de coduri QR necesită în continuare acces online "
+"pentru verificarea cursanților și pentru resursele activităților."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Powerpoint"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Cuvânt cheie"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -7211,32 +7224,26 @@ msgstr "Vă rugăm să activați javascript pentru a utiliza această pagină"
 #: utilities/integrations/replace-placeholder.php:181
 #: utilities/integrations/replace-placeholder.php:182
 #: utilities/integrations/replace-placeholder.php:183
-#, fuzzy
 msgid "Update Communication Preferences"
 msgstr "Care este orașul, statul sau codul poștal?"
 
 #: site/profile/communication-preferences.php:76
-#, fuzzy
 msgid "Recieve emails for:"
 msgstr "Primiți e-mailuri pentru:"
 
 #: site/profile/communication-preferences.php:79
-#, fuzzy
 msgid "Training session reminders"
 msgstr "Plan de viziune pentru antrenament"
 
 #: site/profile/communication-preferences.php:83
-#, fuzzy
 msgid "Annual reporting reminders"
 msgstr "Mementouri de raportare anuală"
 
 #: site/profile/communication-preferences.php:87
-#, fuzzy
 msgid "Community updates"
 msgstr "Comunitate"
 
 #: site/profile/communication-preferences.php:91
-#, fuzzy
 msgid "Encouragements"
 msgstr "Încurajare"
 
@@ -7245,7 +7252,6 @@ msgid "Profile"
 msgstr "Profil"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
@@ -7293,12 +7299,10 @@ msgid "Congratulations"
 msgstr "Felicitări"
 
 #: utilities/apis/cta-api.php:212
-#, fuzzy
 msgid "Connected to Coach!"
 msgstr "Te conectăm cu un antrenor"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "Comunitate"
 
@@ -7352,7 +7356,6 @@ msgid "3 Month Plan Completed"
 msgstr "Planul de 3 luni finalizat"
 
 #: utilities/apis/cta-api.php:417
-#, fuzzy
 msgid "Join the community"
 msgstr "Alăturați-vă comunității"
 
@@ -7370,11 +7373,11 @@ msgstr "Antrenamente"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -7413,7 +7416,6 @@ msgstr "Distribuiți pagina Zúme"
 #: utilities/integrations/replace-placeholder.php:177
 #: utilities/integrations/replace-placeholder.php:178
 #: utilities/integrations/replace-placeholder.php:179
-#, fuzzy
 msgid "Zúme Annual Report"
 msgstr "Raport anual Zúme"
 
