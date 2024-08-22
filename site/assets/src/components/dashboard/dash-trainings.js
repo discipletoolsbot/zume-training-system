@@ -72,6 +72,7 @@ export class DashTrainings extends DashPage {
         if (properties.has('code')) {
             if ( this.code !== 'teaser' ) {
                 zumeDetachObservers(this.tagName)
+                this.openDetailStates = {}
                 this.getTraining()
             }
         }

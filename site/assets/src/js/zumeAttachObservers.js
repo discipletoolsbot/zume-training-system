@@ -9,8 +9,6 @@ export const zumeDetachObservers = (id) => {
 }
 
 export const zumeAttachObservers = (element, id) => {
-    console.log(dataWatchers)
-
     const collapseElements = element.querySelectorAll('.zume-collapse')
 
     if (!Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
