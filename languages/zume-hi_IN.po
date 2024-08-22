@@ -2,25 +2,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-07-30 12:04+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
-"Language-Team: Hindi <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/hi_IN/>\n"
+"PO-Revision-Date: 2024-08-22 22:08+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Hindi <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/hi_IN/>\n"
 "Language: hi_IN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "एपिक 404 - नही मिला"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "आप जिस पेज को ढूंढ रहे थे वो नही मिला या डिलीट हो गया था"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -672,63 +671,64 @@ msgid "No Results"
 msgstr "कोई परिणाम नहीं"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "प्रशिक्षित किया"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "अभ्यास करना"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "आगंतुक"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "%1$s से एक नए प्रशिक्षु ने पंजीकरण कराया है!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "%2$s में से %1$s ने %3$s कोचिंग का अनुरोध किया है!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "नया प्रशिक्षण समूह %1$s में निर्धारित किया गया. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s %3$s में सत्र %2$s शुरू कर रहा है। %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s %3$s में \"%2$s\" का अध्ययन कर रहा है। %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s ने %3$s में किसी के साथ \"%2$s\" साझा किया. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
 msgstr ""
+"%1$s ने किसी व्यक्ति को %3$s में \"%2$s\" का उपयोग करने के लिए प्रशिक्षित किया। %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"एक प्रशिक्षक %2$s में एक प्रशिक्षु के लिए \"%1$s\" मॉडलिंग कर रहा है। %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"एक प्रशिक्षक %2$s में एक प्रशिक्षु के लिए \"%1$s\" के साथ सहायता कर रहा है। %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -736,70 +736,74 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"एक प्रशिक्षक ने %2$s में \"%1$s\" के संबंध में एक प्रशिक्षु के लिए निगरानी चरण में प्रवेश किया है। %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"एक प्रशिक्षक ने %2$s में \"%1$s\" के बारे में एक प्रशिक्षु को पूरी तरह से लॉन्च किया है। %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "%2$s में पोस्ट प्रशिक्षण योजना पर %1$s बनाया गया. %3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "योजना"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "विश्व की जनसंख्या का पता लगाना"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "आंदोलन गतिविधि की गणना"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "बेशर्मी से कॉफी बनाना"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "आओ इसे करें"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "अनुप्रयोग"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "आवश्यकता है"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "रिपोर्ट"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
 msgstr ""
+"पहला फेज संयुक्त राज्य अमेरिका और अंग्रेजी पर केंद्रित है । प्रारंभिक लक्ष्य देश में हर ५,००० लोगों के प्रति चा"
+"र से बारह लोगों का एक प्रशिक्षण समूह को उत्प्रेरित करें । इन प्रशिक्षण समूहों को चुनौती दी जाएगी की वे पहली पीढ़ी"
+" के दो चर्च की शुरुवात करें जो आगे बढ़ते रहने चाहिए। संयुक्त राज्य अमेरिका के लिए लक्ष्य हैं की शुरू करें "
+"६५,००० से अधिक अंग्रेजी भाषा Zúme समूह और १३०,००० चर्च ।"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "खोजें"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "खोज इनपुट के साथ किसी भी शहर या स्थान को खोजें।"
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "ज़ूम"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -807,22 +811,26 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"मानचित्र के भागों पर ध्यान केंद्रित करने के लिए अपने माउस से स्क्रॉल ज़ूम करें या ट्रैक पैड और फोन से पिंच ज़ूम "
+"करें।"
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "खींचना"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"मानचित्र के किसी भिन्न भाग को देखने के लिए मानचित्र पर क्लिक करें और उसे किसी भी दिशा में खींचें।"
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
 msgstr ""
+"नए सदस्यों को जोड़ने के लिए, 'क्रिएट' या 'सेलेक्ट' पर क्लिक करें और नाम पर क्लिक करें या उनकी खोज करें।"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -830,10 +838,11 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"किसी एक अनुभाग पर क्लिक करने पर स्थान के बारे में अधिक जानकारी वाला विवरण पैनल दिखाई देगा।"
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "प्रगति का विवरण"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -859,10 +868,9 @@ msgstr "गतिविधि"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "लक्ष्य प्राप्त हुआ"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "चर्च का नाम"
 
@@ -871,34 +879,30 @@ msgid "Churches Reported"
 msgstr ""
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "प्रशिक्षित किया"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "प्रशिक्षुओं की रिपोर्ट"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "गतिविधि संसाधन"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "चिकित्सकों की आवश्यकता है"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "अभ्यास-उन्मुख"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "पिछले 100 घंटों की गतिविधि"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "कहानियाँ"
 
@@ -908,29 +912,28 @@ msgstr "भाषाएँ"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "सभी प्रकार"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "सभी देश"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "भाषाएँ"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "कोई परिणाम नहीं"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
 msgstr ""
+"अतिरिक्त रिकॉर्ड. (परिणामों पर ध्यान केंद्रित करने के लिए मानचित्र को ज़ूम या फ़िल्टर करें)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "पढ़ना"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -943,7 +946,7 @@ msgstr "कोचिंग"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "मानचित्र का उद्देश्य"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -951,50 +954,56 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"अंतिम 100 घंटे का नक्शा पवित्र आत्मा को दुनिया भर में ज़ूमे के माध्यम से शिष्य बनाने के लिए अपने लोगों को आगे बढ़ाते"
+" हुए दिखाता है। 100 घंटे अब शुरू होते हैं और लगभग पिछले 4 दिनों की गतिविधि को कवर करते हैं।"
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "गतिविधियों के प्रकार"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"जो व्यक्ति \"अध्ययन\" कर रहा है, वह सिस्टम में लॉग इन नहीं है, बल्कि पाठ्यक्रम सामग्री का अध्ययन कर रहा"
+" है।"
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"जो व्यक्ति \"प्रशिक्षण\" ले रहा है, वह सिस्टम में लॉग इन है और प्रशिक्षण प्रक्रिया से गुजर रहा है।"
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"जो व्यक्ति \"अभ्यास\" कर रहा है, वह उपकरण और अवधारणाओं को साझा करके, दूसरों को साझा करने के लिए प्रशिक्षि"
+"त करके, आंदोलन के विकास पर रिपोर्टिंग करके, आदि कार्य कर रहा है।"
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"कोई व्यक्ति जो \"कोचिंग\" में है, वह एक सहकर्मी सलाहकार ज़ूमे कोच के साथ बातचीत कर रहा है।"
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "कुलपत्री नक्शा"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "जब आप सामग्री का अध्ययन कर रहे हों तो हमेशा साइन इन करें।"
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "जब आप किसी सत्र से गुजर रहे हों तो हमेशा जांच करते रहें।"
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -1002,31 +1011,27 @@ msgstr "हम प्रशिक्षण पाठ्यक्रम के �
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "हमेशा उन नये सरल चर्चों की रिपोर्ट करें जिन्हें आप शुरू कर रहे हैं।"
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "सक्रिय"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "प्रशिक्षित किया"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
 msgstr "Zúme प्रशिक्षण क्या है?"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
-"उत्तरी अमेरिका में हर 5,000 लोगों के लिए कम से कम एक शिष्य निर्माता को प्रशिक्षित करना "
-"और वैश्विक स्तर पर हर 50,000 लोगों के लिए एक शिष्य निर्माता को प्रशिक्षित करना।"
+"उत्तरी अमेरिका में हर 5,000 लोगों के लिए कम से कम एक शिष्य निर्माता को प्रशिक्षित करना और वैश्विक स्तर पर "
+"हर 50,000 लोगों के लिए एक शिष्य निर्माता को प्रशिक्षित करना।"
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1034,77 +1039,78 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"हम दुनिया को बढ़ते शिष्यों से संतृप्त करना चाहते हैं। \"ज़ूमे प्रशिक्षुओं का मानचित्र\" दिखाता है कि प्रशिक्षित बढ़ते "
+"शिष्यों की वैश्विक संतृप्ति के लिए क्या आवश्यक है और क्या रिपोर्ट किया गया है।"
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "संतृप्ति लक्ष्य"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "संयुक्त राज्य अमेरिका में प्रति 5,000 पर 1 प्रशिक्षित गुणन शिष्य"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "विश्व स्तर पर प्रति 50,000 पर 1 प्रशिक्षित गुणन शिष्य"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "प्रयुक्त माप"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"\"आवश्यक\" का तात्पर्य जनसंख्या के अनुसार सूचीबद्ध स्थान में मौजूद कमी से है।"
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"रिपोर्ट किया गया\" का तात्पर्य उन प्रशिक्षुओं से है जिन्होंने स्वयं को ज़ूमे समुदाय में पंजीकृत किया है।"
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "Zúme समुदाय में शामिल हों जाएं"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "अपना प्रोफ़ाइल अपने स्थान के साथ अपडेट करें।"
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "आचरण"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "ज़ूमे चिकित्सकों का मानचित्र"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"संतृप्ति लक्ष्य: संयुक्त राज्य अमेरिका में प्रति 5,000 पर 1 प्रशिक्षु, विश्व स्तर पर प्रति 50,000 पर 1 "
+"प्रशिक्षु"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "चर्च"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "2 साधारण चर्च"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
-"प्रशिक्षित शिष्य निर्माताओं के लिए उत्तरी अमेरिका में हर 5,000 लोगों के लिए कम से कम 2 "
-"सरल गुणनशील चर्च और वैश्विक स्तर पर हर 50,000 लोगों के लिए 2 साधारण चर्च शुरू करना।"
+"प्रशिक्षित शिष्य निर्माताओं के लिए उत्तरी अमेरिका में हर 5,000 लोगों के लिए कम से कम 2 सरल गुणनशील चर्च "
+"और वैश्विक स्तर पर हर 50,000 लोगों के लिए 2 साधारण चर्च शुरू करना।"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1112,13 +1118,14 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"हम दुनिया को शिष्यों और चर्चों की संख्या बढ़ाने से संतृप्त करना चाहते हैं। \"ज़ूमे चर्चों का नक्शा\" दिखाता है कि क्या "
+"आवश्यक है और सरल चर्चों की वैश्विक संतृप्ति के लिए क्या रिपोर्ट किया गया है।"
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "संयुक्त राज्य अमेरिका में प्रति 5,000 लोगों पर 2 साधारण चर्च"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "प्रत्येक 50,000 लोग (विश्वव्यापी)"
 
@@ -1127,6 +1134,7 @@ msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"रिपोर्ट\" का तात्पर्य उन चर्चों से है जिन्होंने स्वयं को ज़ूमे समुदाय में पंजीकृत किया है।"
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
@@ -1134,7 +1142,7 @@ msgstr ""
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1179,7 +1187,6 @@ msgid "Four Fields"
 msgstr "चार फील्ड्स (क्षेत्र)"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "एच्. ओ. एस. टी।"
 
@@ -1546,7 +1553,6 @@ msgstr "अज्ञात"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "तीन माह की योजना"
 
@@ -1590,7 +1596,7 @@ msgstr "उत्तर"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "टिप्पणी"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -4240,13 +4246,13 @@ msgid "TAKE A BREAK"
 msgstr "ब्रेक लें"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
 msgstr "Zúme कोर्स प्रस्तुतकर्ता"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
 msgstr ""
+"20 घंटे के पाठ्यक्रम की सामग्री के साथ शिष्यों को शिष्य बनाने का प्रशिक्षण दें"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4449,13 +4455,12 @@ msgid "Timezone"
 msgstr "समय क्षेत्र"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "बैठक का समय"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "ज़ूम, गूगल मीट, माइक्रोसॉफ्ट टीम्स आदि।"
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4701,7 +4706,6 @@ msgid "Group Members"
 msgstr "समूह के सदस्य"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "प्रोफ़ाइल विवरण"
 
@@ -4903,14 +4907,13 @@ msgstr "फेसबुक मैसेंजर"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "साफ़"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "आज"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "कोचिंग"
 
@@ -4918,15 +4921,15 @@ msgstr "कोचिंग"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s समूह"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "निजी"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "जनता"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -5016,7 +5019,6 @@ msgid "Other commitments:"
 msgstr "अन्य प्रतिबद्धताएं:"
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "बुरा विजार्ड"
 
@@ -6628,6 +6630,8 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"वेबसाइट के समुचित संचालन के लिए कुछ व्यक्तिगत जानकारी पर नज़र रखी जाती है, तथा अन्य जानकारी का अनुरोध किया "
+"जाता है तथा उसे अतिरिक्त प्रशिक्षण और सहायता के लिए सहेज लिया जाता है।"
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6739,6 +6743,8 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"आप किसी भी समय हमारे \"कोच प्राप्त करें\" फॉर्म के माध्यम से हमसे संपर्क करके और अपने उपयोगकर्ता डैशबोर्"
+"ड से \"तकनीकी सहायता\" चुनकर निम्नलिखित कार्य कर सकते हैं।"
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6749,7 +6755,6 @@ msgid "Change/correct any data we have about you."
 msgstr "हमारे पास आपके बारे में जो डेटा हैं उसे बदले/सही करें।"
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "हमारे पास आपके बारे में जो डेटा हैं उसे डिलीट करें (हटाएं)।"
 
@@ -6759,7 +6764,7 @@ msgstr "आप अपने डेटा के हमारे उपयोग 
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "भविष्य में हमसे किसी भी प्रकार का संपर्क न करें।"
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6775,7 +6780,7 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "ज़ूम प्रशिक्षण चलाने में सहायता के लिए डाउनलोड करने योग्य संसाधन।"
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6801,7 +6806,6 @@ msgid "Order print copy"
 msgstr "प्रिंट कॉपी ऑर्डर करें"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "Zúme कोर्स"
 
@@ -6810,10 +6814,13 @@ msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"ज़ूमे पाठ्यक्रम सामग्री, वीडियो और गतिविधियों को आपके वेब ब्राउज़र में ऑनलाइन प्रस्तुतकर्ता से प्रस्तुत किया जा सकता"
+" है।"
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
 msgstr ""
+"ज़ूम प्रशिक्षण पाठ्यक्रम की अवधारणाओं और उपकरणों को साझा करने के लिए लिंक"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -6938,13 +6945,12 @@ msgstr ""
 "आरंभिक है, और आप आज ही शुरू कर सकते हैं।"
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "मुफ्त सहायक पुस्तक (गाइडबुक) डाऊनलोड करे"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "बड़ी फ़ाइल डाउनलोड. (1 गीगाबाइट)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -6954,14 +6960,18 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"संपूर्ण Zúme पाठ्यक्रम को डाउनलोड किया जा सकता है और पावरपॉइंट या कीनोट के माध्यम से चलाया जा सकता है। यह "
+"कमजोर इंटरनेट वाले क्षेत्रों में प्रशिक्षण के लिए एक बढ़िया समाधान है। वीडियो स्लाइड में एम्बेडेड हैं और इंटरनेट के"
+" बिना आसानी से चलाए जा सकते हैं। क्यूआर कोड सिस्टम को अभी भी प्रशिक्षु चेकइन और गतिविधि संसाधनों के लिए ऑनला"
+"इन पहुँच की आवश्यकता है।"
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "पावर प्वाइंट"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "मुख्य भाषण"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -7011,15 +7021,14 @@ msgid "Profile"
 msgstr "प्रोफ़ाइल"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
-"Zúme प्रशिक्षण एक ऑन - लाइन और जीवन में सीखने का अनुभव है जो उन छोटे समूहों के लिए "
-"डिज़ाइन किया गया है जो यीशु के पीछे चलते है यह सीखने के लिए की कैसे हम उसके महान आदेश का "
-"पालन कर सकते है और शिष्य बनाये जो बढ़ते रहे ।"
+"Zúme प्रशिक्षण एक ऑन - लाइन और जीवन में सीखने का अनुभव है जो उन छोटे समूहों के लिए डिज़ाइन किया गया है जो"
+" यीशु के पीछे चलते है यह सीखने के लिए की कैसे हम उसके महान आदेश का पालन कर सकते है और शिष्य बनाये जो "
+"बढ़ते रहे ।"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
@@ -7063,7 +7072,6 @@ msgid "Connected to Coach!"
 msgstr "मुझे एक कोच (प्रशिक्षक) से कनेक्ट करें!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "समाज"
 
@@ -7134,11 +7142,11 @@ msgstr "प्रशिक्षण %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "आईपीस्टैक"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "आईपीस्टैक"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -7251,18 +7259,15 @@ msgid "Messenger"
 msgstr "मैसेंजर"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Zúme - Training System"
 msgstr "Zúme प्रशिक्षण"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://github.com/ZumeProject/zume-training-system"
 msgstr "https://github.com/ZumeProject/zume-training"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
 msgstr "Zúme प्रशिक्षण"
 

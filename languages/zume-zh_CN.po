@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-07-13 12:17+0000\n"
-"Last-Translator: Chad Edwards <credwards73@gmail.com>\n"
+"PO-Revision-Date: 2024-08-22 22:08+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
 "Language-Team: Chinese (Simplified) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -11,15 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "史诗404-找不到"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "找不到或删除了您要查找的页面"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -643,168 +643,164 @@ msgid "No Results"
 msgstr "没有结果"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "培训"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "练习"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "游客"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "来自 %1$s 的一名新学员注册！"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "1] 中的 %1$s %2$s 请求 %3$s 教练！"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "新的培训组计划在 %1$s。%2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "A %1$s 正在 %3$s 中启动会话 %2$s。%4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "一个 %1$s 正在学习 %3$s 中的\"%2$s\"。%4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "一个 %1$s 与 %3$s 中的某人共享 \"%2$s\"。%4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "一个 %1$s 训练某人在 %3$s 中使用 \"%2$s\"。%4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "教练为 %2$s 中的受训人员建模\"%1$s\"。%3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "教练员正在为 %2$s 中的学员提供\"%1$s\"协助。%3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
 msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
-msgstr ""
+msgstr "教练员已就 %2$s 中的\"%1$s\"进入学员观察阶段。%3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
-msgstr ""
+msgstr "教练员已就 %2$s 中的\"%1$s\"完全启动一名学员。%3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "A %1$s 在 %2$s 中创建了岗位培训计划。%3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "计划"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "世界人口定位"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "计算运动量"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "无耻地冲泡咖啡"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "我们开始吧"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "应用"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "需要"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "报道"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "目标"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "搜索"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "使用搜索输入搜索任何城市或地点。"
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
 msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
-msgstr ""
+msgstr "使用鼠标滚动缩放，或使用轨迹垫和手机捏合缩放，聚焦地图的各个部分。"
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "拖动"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
-msgstr ""
+msgstr "点击并拖动地图的任意方向，即可查看地图的不同部分。"
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "点击"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
 msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
-msgstr ""
+msgstr "单击一个部分，就会显示一个详细信息面板，其中包含有关该地点的更多信息。"
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "进展明细"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -830,46 +826,41 @@ msgstr "活动"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "已达成目标"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "教会名称"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "报告的教堂"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "培训"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "学员报告"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "来源文件"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "需要从业人员"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "实践导向"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "最近 100 小时的运动活动"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "故事"
 
@@ -879,29 +870,27 @@ msgstr "语言"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "所有类型"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "所有国家"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "语言"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "没有结果"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
-msgstr ""
+msgstr "其他记录。(缩放或过滤地图以聚焦结果）"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "学习"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -914,58 +903,58 @@ msgstr "辅导课程"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "地图的目的"
 
 #: maps/js-translation-strings.php:31
 msgid ""
 "The Last 100 Hours map shows the Holy Spirit moving his people to disciple "
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
-msgstr ""
+msgstr "最后 100 小时 \"地图显示了圣灵通过世界各地的 Zúme 动员祂的子民造就门徒。这 "
+"100 小时从现在开始，大致涵盖过去 4 天的活动。"
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "活动类型"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr ""
+msgstr "正在 \"学习 \"的人没有登录系统，但正在学习教材。"
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
-msgstr ""
+msgstr "正在接受 \"培训 \"的人已登录系统，并正在进行培训。"
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
-msgstr ""
+msgstr "正在 \"实践 \"的人正在采取行动"
+"，分享工具和概念，培训他人分享，报告运动的发展情况，等等。"
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
-msgstr ""
+msgstr "接受 \"辅导 \"的人正在与同侪导师 Zúme 教练互动。"
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "微型教会族谱"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "学习内容时，请务必登录。"
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "在进行会话时，一定要签到。"
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -973,123 +962,113 @@ msgstr "我们也透过培训课程和网站使用来追踪您的进度。"
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "随时报告您新成立的简单教会。"
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "启用"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "培训"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
 msgstr "什么是 Zúme 培训？"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
-msgstr ""
-"在北美，每 5,000 人中至少有一名门徒训练者； 在全球，每 50,000 人中至少有一名"
-"门徒训练者。"
+msgstr "在北美，每 5,000 人中至少有一名门徒训练者； 在全球，每 50,000 "
+"人中至少有一名门徒训练者。"
 
 #: maps/map-3-trainees.php:141
 msgid ""
 "We want to saturate the world with multiplying disciples. The \"Map of Zúme "
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
-msgstr ""
+msgstr "我们希望倍增的门徒遍布全球。Zúme 受训人员地图 "
+"\"显示了全球饱和的倍增门徒所需要的和报告的情况。"
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "饱和目标"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "美国每 5,000 人中有 1 名训练有素的倍增门徒"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "全球每 50,000 人中有 1 名训练有素的倍增门徒"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "使用的测量方法"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
-msgstr ""
+msgstr "\"需要 \"是指根据人口列出的地点所缺少的东西。"
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
-msgstr ""
+msgstr "\"报到 \"是指已在 Zúme 社区登记的学员。"
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "加入 Zúme 社区"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "在个人资料中更新您的位置。"
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "实践"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Zúme Practitioners 的地图"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
-msgstr ""
+msgstr "饱和目标：美国每 5 000 人中有 1 名受训人员，全球每 50 000 人中有 1 名受训人员"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "教会"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "两个微型教会"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
-msgstr ""
-"让训练有素的门徒训练者在北美每 5,000 人中建立至少 2 个简单的倍增教会，并在全"
-"球每 50,000 人建立 2 个简单的教会。"
+msgstr "让训练有素的门徒训练者在北美每 5,000 人中建立至少 2 个简单的倍增教会，"
+"并在全球每 50,000 人建立 2 个简单的教会。"
 
 #: maps/map-5-churches.php:141
 msgid ""
 "We want to saturate the world with multiplying disciples and churches. The "
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
-msgstr ""
+msgstr "我们希望门徒和教会倍增，使世界饱和。Zúme 教会地图 "
+"\"显示了全球倍增的简单教会达到饱和所需要的和报告的内容。"
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "美国每 5,000 人中有 2 个简易教堂"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "每五万人(全球)"
 
@@ -1097,15 +1076,15 @@ msgstr "每五万人(全球)"
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
-msgstr ""
+msgstr "\"已报告 \"是指已在 Zúme 社区登记的教会。"
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "在仪表板的 \"我的教会 \"部分添加您的教会。"
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1150,7 +1129,6 @@ msgid "Four Fields"
 msgstr "四个领域"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "H.O.S.T."
 
@@ -1496,7 +1474,6 @@ msgstr "未知"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "3个月计划"
 
@@ -1538,7 +1515,7 @@ msgstr "答案"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "注意"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -3989,13 +3966,12 @@ msgid "TAKE A BREAK"
 msgstr "休息一下"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
 msgstr "Zúme 课程展示工具"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
-msgstr ""
+msgstr "通过 20 个小时的课程内容，培训门徒如何造就门徒"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4198,13 +4174,12 @@ msgid "Timezone"
 msgstr "时区"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "聚会时间"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Zoom、Google Meet、Microsoft Teams 等。"
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4441,7 +4416,6 @@ msgid "Group Members"
 msgstr "小组成员"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "个人资料详情"
 
@@ -4634,14 +4608,13 @@ msgstr "Facebook 信息"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "明确"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "今天"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "辅导课程"
 
@@ -4649,15 +4622,15 @@ msgstr "辅导课程"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s 组"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "私有"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "公开"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -4736,7 +4709,6 @@ msgid "Other commitments:"
 msgstr "其他承诺："
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "坏巫师"
 
@@ -6296,7 +6268,8 @@ msgid ""
 "Some personal information is tracked for the proper functioning of the "
 "website, and other information is requested and saved for additional "
 "coaching and support."
-msgstr ""
+msgstr "有些个人信息是为了网站的正常运行而跟踪的，而其他信息则是为了额外的指导和支持"
+"而要求和保存的。"
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6398,7 +6371,8 @@ msgstr "你的资讯的管理权限"
 msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
-msgstr ""
+msgstr "您可以随时通过 \"获取教练 \"表单与我们联系，并从用户仪表板中选择 \"技术援助\""
+"。"
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6409,7 +6383,6 @@ msgid "Change/correct any data we have about you."
 msgstr "更改/修正我们所持有关于你的任何资料。"
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "删除我们所持有关于你的任何资料。"
 
@@ -6419,7 +6392,7 @@ msgstr "陈述你对我们使用你个人资料之顾虑。"
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "今后不再与我们联系。"
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6433,7 +6406,7 @@ msgstr "我们的隐私权政策可能随时变更﹐所有的变更都会公布
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "可下载的资源，帮助开展 zume 培训。"
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
@@ -6458,7 +6431,6 @@ msgid "Order print copy"
 msgstr "订购印刷本"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "「天国酵母」Zúme 课程"
 
@@ -6466,11 +6438,11 @@ msgstr "「天国酵母」Zúme 课程"
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
-msgstr ""
+msgstr "Zúme 课程内容、视频和活动可通过网络浏览器中的在线演示器呈现。"
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "分享 zume 培训课程概念和工具的链接"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -6590,13 +6562,12 @@ msgstr ""
 "领导培训不需要特别许可！ Zúme 是自己主持、自己发起的，您可以从今天就开始。"
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "免费下载手册"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "大文件下载。(1 千兆字节）"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -6606,14 +6577,17 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"可以下载整个 Zúme 课程，并通过 Powerpoint 或 Keynote 运行。这是在网络薄弱地区"
+"进行培训的绝佳解决方案。视频嵌入在幻灯片中，没有网络也能轻松播放。QR "
+"码系统仍然需要在线访问，以便学员签到和获取活动资源。"
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "微软演示文稿"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "演示"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
@@ -6663,13 +6637,11 @@ msgid "Profile"
 msgstr "个人资料"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
-msgstr ""
-"「天国酵母」Zúme门徒训练是一套网路和生活结合的学习课程，这设计是让跟随耶稣的"
+msgstr "「天国酵母」Zúme门徒训练是一套网路和生活结合的学习课程，这设计是让跟随耶稣的"
 "小组学习如何遵行祂的大使命，同时造就倍增的门徒。"
 
 #: utilities/apis/connect-api.php:85
@@ -6714,7 +6686,6 @@ msgid "Connected to Coach!"
 msgstr "为您联系教练"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "社群"
 
@@ -6785,11 +6756,11 @@ msgstr "训练 %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
@@ -6902,18 +6873,15 @@ msgid "Messenger"
 msgstr "信息"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Zúme - Training System"
 msgstr "「天国酵母」(Zúme) 门徒训练"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://github.com/ZumeProject/zume-training-system"
 msgstr "https://github.com/ZumeProject/zume-training"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
 msgstr "「天国酵母」Zúme 门徒训练"
 

@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 09:16+0000\n"
-"Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
-"Language-Team: Yoruba <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/yo/>\n"
+"PO-Revision-Date: 2024-08-22 22:16+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Yoruba <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/yo/>\n"
 "Language: yo\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,11 +15,11 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Apọju 404 - Ko ri"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "Oju-iwe ti o n wa ko rii tabi paarẹ"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -63,7 +63,6 @@ msgid "20 Session Course"
 msgstr "ogun Àkókò Ìkẹ́kọ̀ọ́"
 
 #: 404.php:86 site/parts/footer.php:31
-#, fuzzy
 msgid "3 Day Intensive Course"
 msgstr "3 Day Aladanla papa"
 
@@ -674,63 +673,61 @@ msgid "No Results"
 msgstr "Ko si esi"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
 msgstr "Oṣiṣẹ"
 
 #: maps/heatmap.php:3145
-#, fuzzy
 msgid "practitioner"
 msgstr "Iwa adaṣe"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "alejo"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Olukọni titun lati %1$s ti forukọsilẹ!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "%1$s kan ninu %2$s ti beere fun ikẹkọ %3$s!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Ẹgbẹ ikẹkọ tuntun ti ṣeto ni %1$s. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s kan n bere IKOKO %2$s ni %3$s. %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s kan n keko \"%2$s\" ni %3$s. %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s kan pín \"%2$s\" pẹlu ẹnikan ninu %3$s. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s kan ko enikan lati lo \"%2$s\" ni %3$s. %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Olukọni kan nṣe apẹẹrẹ \"%1$s\" fun olukọni ni %2$s. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Olukọni kan n ṣe iranlọwọ pẹlu \"%1$s\" fun olukọni ni %2$s. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -738,70 +735,69 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Olukọni kan ti wọ inu ipele wiwo fun olukọni nipa \"%1$s\" ni %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
-msgstr ""
+msgstr "Olukọni kan ti ṣe ifilọlẹ olukọni ni kikun nipa “%1$s” ni %2$s. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "%1$s kan ti a ṣẹda ni eto ikẹkọ ifiweranṣẹ ni %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
 msgstr "ètò"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Wiwa awọn olugbe agbaye"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Iṣiro aṣayan iṣẹ-ṣiṣe"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Alaitìjú pipọn kofi"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Jẹ ki a ṣe eyi"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
 msgstr "ohun elo"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "Ti nilo"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Iroyin"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Ibi-afẹde"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Wa"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Wa eyikeyi ilu tabi aaye pẹlu titẹ sii wiwa."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Sun-un"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -809,22 +805,26 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Yi lọ sun-un pẹlu asin rẹ tabi fun pọ pẹlu awọn paadi orin ati awọn foonu "
+"lati dojukọ awọn apakan ti maapu naa."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Fa"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"Tẹ ki o si fa maapu naa ni itọsọna eyikeyi lati wo apakan ti o yatọ ti maapu "
+"naa."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Tẹ"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -832,10 +832,11 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Tẹ apakan kan ki o ṣafihan nronu alaye kan pẹlu alaye diẹ sii nipa ipo naa."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "Ilọsiwaju Ilọsiwaju"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -861,79 +862,71 @@ msgstr "asayan IṢẸ-sise"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Ibi-afẹde Dide"
 
 #: maps/js-translation-strings.php:8
-#, fuzzy
 msgid "Churches Needed"
 msgstr "Orúkọ Ìjọ"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Awọn ijọsin royin"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
 msgstr "Oṣiṣẹ"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Awọn olukọni Iroyin"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
 msgstr "awọn oluşewadi aṣayan iṣẹ-ṣiṣe"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Nilo Awọn oṣiṣẹ"
 
 #: maps/js-translation-strings.php:15
-#, fuzzy
 msgid "Practitioners Reported"
 msgstr "ÌSE Ṣiṣẹ - Awọn aaye Mẹrin"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Awọn wakati 100 ti o kẹhin ti Iṣẹ iṣe gbigbe"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
 msgstr "awon itan"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
-#, fuzzy
 msgid "Languages"
 msgstr "Ede"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Gbogbo Orisi"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Gbogbo Awọn orilẹ-ede"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
 msgstr "Ede"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
 msgstr "Ko si esi"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
-msgstr ""
+msgstr "Awọn igbasilẹ afikun. (Sun tabi Ajọ maapu si awọn abajade idojukọ)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "Ikẹkọ"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -946,7 +939,7 @@ msgstr "Olukoni"
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Idi ti Maapu naa"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -954,50 +947,57 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"Maapu Awọn wakati 100 ti o kẹhin fihan Ẹmi Mimọ ti nrin awọn eniyan rẹ si "
+"ṣiṣe ọmọ-ẹhin nipasẹ Zúme ni ayika agbaye. Awọn wakati 100 naa bẹrẹ ni bayi "
+"ati bo iṣẹ ṣiṣe ni aijọju awọn ọjọ mẹrin to kọja."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Orisi ti akitiyan"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"Ẹnikan ti o \"keko\" ko wọle si eto, ṣugbọn o nkọ awọn ohun elo ẹkọ naa."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"Ẹnikan ti o jẹ \"ikẹkọ\" ti wa ni ibuwolu wọle sinu eto ati pe o nlo nipasẹ "
+"ilana ikẹkọ."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Ẹnikan ti o “ṣe adaṣe” n ṣe iṣe nipasẹ pinpin awọn irinṣẹ ati awọn imọran, "
+"ikẹkọ awọn miiran lati pin, ijabọ lori idagbasoke gbigbe, ati bẹbẹ lọ."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"Ẹnikan ti o wa ni \"ikẹkọ\" n ṣe ajọṣepọ pẹlu olukọni ẹlẹgbẹ ẹlẹgbẹ Zúme."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
 msgstr "Iwadi iran"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Wọle nigbagbogbo nigbati o ba nkọ akoonu naa."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Ṣayẹwo nigbagbogbo nigbati o ba nlọ nipasẹ igba kan."
 
 #: maps/js-translation-strings.php:40
-#, fuzzy
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
@@ -1005,25 +1005,21 @@ msgstr "A tun da orin ilosiwaju nipase ikeko to daju."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Nigbagbogbo jabo awọn ile ijọsin ti o rọrun tuntun ti o bẹrẹ."
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
 msgstr "Àwọn tó ń ṣiṣẹ́"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
 msgstr "Oṣiṣẹ"
 
 #: maps/map-3-trainees.php:123
-#, fuzzy
 msgid "Map of Zúme Trainees"
-msgstr "Kí ni Ìdánilẹ́kọ̀ọ́ Zúme?"
+msgstr "Kí ni Ìdánilẹ́kọ̀ọ́ Zúme?"
 
 #: maps/map-3-trainees.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
@@ -1037,52 +1033,57 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"A fẹ lati saturate aye pẹlu isodipupo ọmọ-ẹhin. “Map of Zúme Trainees” fihan "
+"ohun ti o nilo ati ohun ti o royin fun itẹlọrun agbaye ti awọn ọmọ-ẹhin "
+"isodipupo ikẹkọ."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "Ifojusi Ikunrere"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
-msgstr ""
+msgstr "1 koni ọmọ-ẹhin isodipupo fun 5,000 ni Amẹrika"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
-msgstr ""
+msgstr "1 oṣiṣẹ isodipupo ọmọ-ẹhin fun 50,000 agbaye"
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "Awọn wiwọn Lo"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"\"Nilo\" n tọka si ohun ti o padanu ni ipo ti a ṣe akojọ ni ibamu si iye "
+"eniyan."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Iroyin\" n tọka si awọn olukọni ti o ti forukọsilẹ fun ara wọn si agbegbe "
+"Zúme."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
-#, fuzzy
 msgid "Join the Zúme community."
 msgstr "darapo mon egbe zume"
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "Ṣe imudojuiwọn profaili rẹ pẹlu ipo rẹ."
 
 #: maps/map-4-practitioners.php:121
-#, fuzzy
 msgid "Practitioners"
 msgstr "Awọn iṣe"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Maapu ti Zúme Practitioners"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
@@ -1091,17 +1092,14 @@ msgid ""
 msgstr ""
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
 msgstr "Ìjọ"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
 msgstr "2 Awọn Ijo ti o rọrun"
 
 #: maps/map-5-churches.php:124
-#, fuzzy
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
@@ -1116,13 +1114,15 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"A fẹ lati saturate aye pẹlu isodipupo ọmọ-ẹhin ati awọn ijo. \"Map of Zúme "
+"Churches\" fihan ohun ti a nilo ati ohun ti a royin fun imudara agbaye ti "
+"isodipupo awọn ile ijọsin rọrun."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "Awọn ile ijọsin ti o rọrun 2 fun eniyan 5,000 ni Amẹrika"
 
 #: maps/map-5-churches.php:145
-#, fuzzy
 msgid "2 simple churches per 50,000 people globally"
 msgstr "Gbogbo eniyan 50,000 (Ni kariaye)"
 
@@ -1131,14 +1131,17 @@ msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"\"Iroyin\" n tọka si awọn ile ijọsin ti o ti forukọsilẹ fun ara wọn si "
+"agbegbe Zúme."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
 msgstr ""
+"Ṣafikun awọn ile ijọsin rẹ ni apakan “Awọn ile ijọsin Mi” ti dasibodu naa."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "ỌṢẸ"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1183,7 +1186,6 @@ msgid "Four Fields"
 msgstr "Àwọn Apá Mẹ́rin"
 
 #: site/activities/coaching-checklist-host.php:22
-#, fuzzy
 msgid "H.O.S.T"
 msgstr "H.O.S.T."
 
@@ -1540,7 +1542,6 @@ msgstr "aimọ"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
 msgstr "Eto Osu Meta"
 
@@ -1584,7 +1585,7 @@ msgstr "idahun"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "Akiyesi"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -4213,13 +4214,14 @@ msgid "TAKE A BREAK"
 msgstr "Ẹ sinmi díẹ̀ ná"
 
 #: site/course/presenter.php:28
-#, fuzzy
 msgid "Presenter"
-msgstr "Ẹni tó ń ṣètò ìdánilẹ́kọ̀ọ́"
+msgstr "Ẹni tó ń ṣètò ìdánilẹ́kọ̀ọ́"
 
 #: site/course/presenter.php:29
 msgid "Train disciples how to make disciples with 20 hours of course content"
 msgstr ""
+"Kọ awọn ọmọ-ẹhin bi o ṣe le ṣe ọmọ-ẹhin pẹlu awọn wakati 20 ti akoonu "
+"dajudaju"
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
@@ -4274,7 +4276,6 @@ msgstr "Wo Ìṣẹ̀lẹ̀"
 
 #: site/dashboard/checkin-dashboard.php:29 site/pages/checkin.php:27
 #: site/pages/checkin.php:235
-#, fuzzy
 msgid "Checkin"
 msgstr "Akosile"
 
@@ -4423,13 +4424,12 @@ msgid "Timezone"
 msgstr "Àkókò"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
-#, fuzzy
 msgid "Meeting link"
 msgstr "Asiko Ipade"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Sun-un, Ipade Google, Awọn ẹgbẹ Microsoft ati bẹbẹ lọ."
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
@@ -4676,7 +4676,6 @@ msgid "Group Members"
 msgstr "Awọn ọmọ ẹgbẹ"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
 msgstr "Profaili"
 
@@ -4878,14 +4877,13 @@ msgstr "Facebook Oníṣẹ"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "Ko o"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "Loni"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
 msgstr "Olukoni"
 
@@ -4893,15 +4891,15 @@ msgstr "Olukoni"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "%s ẹgbẹ"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "Ikọkọ"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "Gbangba"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
@@ -4983,7 +4981,6 @@ msgid "Other commitments:"
 msgstr "Àwọn àdéhùn míràn:"
 
 #: site/dashboard/wizard.php:30
-#, fuzzy
 msgid "Wizard"
 msgstr "Ògbóǹkangí Èṣù"
 
@@ -5709,7 +5706,6 @@ msgid "Storage"
 msgstr "Ibi ipamọ"
 
 #: site/pages/about.php:27 site/pages/about.php:92 site/pages/messages.php:251
-#, fuzzy
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
@@ -5720,7 +5716,6 @@ msgid "What is Zúme Training?"
 msgstr "Kí ni Ìdánilẹ́kọ̀ọ́ Zúme?"
 
 #: site/pages/about.php:88
-#, fuzzy
 msgid ""
 "Zúme, the Greek word for ‘yeast,’ holds a significant meaning. In Matthew "
 "13:33, Jesus compared the kingdom of heaven to yeast mixed into a large "
@@ -5730,7 +5725,6 @@ msgid ""
 msgstr "Itumo Zume ni iwukara ni ede Giriki."
 
 #: site/pages/about.php:97
-#, fuzzy
 msgid ""
 "In 2015, a small group committed to fulfilling Jesus’ Great Commission "
 "mandate convened for a Jonathan Project Leadership Meeting. They prayed and "
@@ -5748,7 +5742,6 @@ msgstr ""
 "lórí Íńtánẹ́ẹ̀tì. Nikẹhin, ero yii wa si ohun ti a mọ ni bayi bi Zúme."
 
 #: site/pages/about.php:98
-#, fuzzy
 msgid ""
 "The foundational disciple-making principles in Zúme Training come straight "
 "from the Bible and have been tested globally for over thirty years. These "
@@ -5763,7 +5756,6 @@ msgstr ""
 "òkùnkùn tẹ̀mí."
 
 #: site/pages/about.php:111
-#, fuzzy
 msgid ""
 "Launched on February 14, 2017, through Kingdom collaboration, Zúme Training "
 "remains an open initiative without formal organizational control or a "
@@ -5773,7 +5765,6 @@ msgid ""
 msgstr "Kooshi."
 
 #: site/pages/about.php:117
-#, fuzzy
 msgid ""
 "The goal is to saturate the globe with multiplying disciples in our "
 "generation. The Biblical principles found in this training are simple. The "
@@ -5784,7 +5775,6 @@ msgstr ""
 "iṣe ti awọn ilana wọnyi."
 
 #: site/pages/about.php:118
-#, fuzzy
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
@@ -5817,12 +5807,10 @@ msgid "2 Simple Churches"
 msgstr "2 Awọn Ijo ti o rọrun"
 
 #: site/pages/about.php:144
-#, fuzzy
 msgid "Part 2:"
 msgstr "Apa keji:"
 
 #: site/pages/about.php:145
-#, fuzzy
 msgid ""
 "For trained disciple makers to start at least 2 simple multiplying churches "
 "for every 5,000 people in North America and 2 simple churches for every "
@@ -5833,7 +5821,6 @@ msgstr ""
 "ijọsin 2 ti o rọrun fun gbogbo eniyan 50,000 ni agbaye."
 
 #: site/pages/about.php:151
-#, fuzzy
 msgid ""
 "With these small beginnings ... what the Bible calls yeast ... we could see "
 "the world covered with multiplying disciples and churches. Explore Zúme "
@@ -5844,17 +5831,15 @@ msgstr ""
 "Zúme ki o wa bii!"
 
 #: site/pages/about.php:154
-#, fuzzy
 msgid "Get Started"
 msgstr "Je ka bere"
 
 #: site/pages/about.php:159
-#, fuzzy
 msgid "How does Zúme Training Work?"
 msgstr "Ikẹkọ Zume"
 
 #: site/pages/about.php:164 site/pages/home.php:207
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
@@ -5890,22 +5875,18 @@ msgid ""
 msgstr "Ipenija lati ran egbe eko agbara ati dagba ninu igba."
 
 #: site/pages/about.php:199
-#, fuzzy
 msgid "Before you start."
 msgstr "Ṣaaju ki o to bẹrẹ."
 
 #: site/pages/about.php:206
-#, fuzzy
 msgid "Zúme is NOT like other trainings!"
 msgstr "Afe bere ekiko?"
 
 #: site/pages/about.php:208
-#, fuzzy
 msgid "First:"
 msgstr "Akoko"
 
 #: site/pages/about.php:209
-#, fuzzy
 msgid ""
 "Zúme is designed to be done as a group. Group exercise, discussions, and "
 "practicing of skills all will be better with others, so gather a group, if "
@@ -5916,12 +5897,10 @@ msgstr ""
 "ti o ba ṣeeṣe."
 
 #: site/pages/about.php:212
-#, fuzzy
 msgid "Second:"
 msgstr "Ikeji:"
 
 #: site/pages/about.php:213
-#, fuzzy
 msgid ""
 "Zúme is about developing skills, building competence, not just gaining "
 "knowledge . In every session, the goal is fruitful action. The best outcome "
@@ -5933,22 +5912,18 @@ msgstr ""
 "igbesi aye iyipada ati iriri ti agbara ti o pọ si ninu igbagbọ rẹ."
 
 #: site/pages/about.php:221
-#, fuzzy
 msgid "What's required"
 msgstr "An beere oro igbaniwole"
 
 #: site/pages/about.php:224
-#, fuzzy
 msgid "Needed for the training:"
 msgstr "Afe bere ekiko?"
 
 #: site/pages/about.php:226 site/pages/training.php:258
-#, fuzzy
 msgid "At least 3 people, but ideally less than 12."
 msgstr "O kere ju eniyan 3, ṣugbọn apere kere ju 12."
 
 #: site/pages/about.php:227 site/pages/training.php:259
-#, fuzzy
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
@@ -5957,7 +5932,6 @@ msgstr ""
 "ninu iṣẹ ikẹkọ naa."
 
 #: site/pages/about.php:228 site/pages/training.php:260
-#, fuzzy
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
@@ -5970,7 +5944,6 @@ msgid "NOT needed for the training:"
 msgstr "Ko nilo fun ikẹkọ:"
 
 #: site/pages/about.php:239 site/pages/training.php:264
-#, fuzzy
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
@@ -5979,7 +5952,6 @@ msgstr ""
 "ṣe itọsọna Ikẹkọ Zúme kan."
 
 #: site/pages/about.php:240
-#, fuzzy
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
@@ -5992,7 +5964,6 @@ msgid "Connecting with a Coach."
 msgstr "Nsopọ pẹlu Olukọni kan."
 
 #: site/pages/about.php:258
-#, fuzzy
 msgid ""
 "All along the way, the Zúme community is eager to support you by providing a "
 "COACH to help you and your group successfully implement the training. Don’t "
@@ -6011,12 +5982,10 @@ msgid "Register Free"
 msgstr "Forukọsilẹ fun ọfẹ"
 
 #: site/pages/checkin.php:82 site/pages/friend-invite.php:72
-#, fuzzy
 msgid "Please enter a friend code."
 msgstr "Jọwọ tẹ koodu ọrẹ kan sii."
 
 #: site/pages/checkin.php:237
-#, fuzzy
 msgid "Use the code on the screen or in the book"
 msgstr "Lo koodu loju iboju tabi ninu iwe"
 
@@ -6035,22 +6004,18 @@ msgstr "yan akoko lati wo"
 
 #: site/pages/checkin.php:250 site/pages/training.php:159
 #: site/pages/training.php:210
-#, fuzzy
 msgid "Training Schedules"
 msgstr "Ikeko Omo"
 
 #: site/pages/checkin.php:254 site/pages/training.php:217
-#, fuzzy
 msgid "10 Sessions"
 msgstr "Igba"
 
 #: site/pages/checkin.php:258 site/pages/training.php:229
-#, fuzzy
 msgid "20 Sessions"
 msgstr "Igba"
 
 #: site/pages/checkin.php:262 site/pages/training.php:241
-#, fuzzy
 msgid "Intensive"
 msgstr "lekoko"
 
@@ -6060,7 +6025,6 @@ msgid "Donate"
 msgstr "Ṣetọrẹ"
 
 #: site/pages/donate.php:90
-#, fuzzy
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr "A ni owo pupọ, ati pe a nifẹ pe o fẹ lati jẹ apakan ti iran Zúme."
@@ -6070,12 +6034,10 @@ msgid "View All Giving Opportunities"
 msgstr "Wo Gbogbo Awọn anfani fifunni"
 
 #: site/pages/faq.php:81
-#, fuzzy
 msgid "FAQ"
 msgstr "Awon ibeere ti awon eniyan saaba ma n beere"
 
 #: site/pages/faq.php:83 site/profile/profile.php:157
-#, fuzzy
 msgid "User Profile"
 msgstr "Profaili Re"
 
@@ -6101,13 +6063,11 @@ msgid "Listen and Read Along"
 msgstr "Gbọ ki o Ka Ka pẹlú"
 
 #: site/pages/follow-jesus.php:145
-#, fuzzy
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr "Wo fidio pataki yii ti n ṣalaye awọn ibatan 4 ti igbesi aye tuntun rẹ."
 
 #: site/pages/follow-jesus.php:148
-#, fuzzy
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
@@ -6150,7 +6110,6 @@ msgid "Learn how to obey Jesus' commands by going AND staying."
 msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lilọ ATI duro."
 
 #: site/pages/follow-jesus.php:233
-#, fuzzy
 msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
@@ -6215,7 +6174,6 @@ msgstr ""
 "Kọ ẹkọ ti ẹnikan ti o le ni alafia ati bi o ṣe le mọ nigbati o ti rii ọkan."
 
 #: site/pages/follow-jesus.php:305
-#, fuzzy
 msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
 "what it sounds like — praying to God while walking around!"
@@ -6224,17 +6182,14 @@ msgstr ""
 "Ati pe o kan ohun ti o dun bi - gbigbadura si Ọlọrun lakoko ti nrin ni ayika!"
 
 #: site/pages/follow-jesus.php:312
-#, fuzzy
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr "Kini ti awọn ọrẹ, ẹbi, ati awọn miiran bẹrẹ tẹle Jesu pẹlu mi?"
 
 #: site/pages/friend-invite.php:28 site/pages/friend-invite.php:164
-#, fuzzy
 msgid "Friend Invitation"
 msgstr "Ifiwepe gba"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:172
-#, fuzzy
 msgid "Use the code your friend sent you."
 msgstr "Lo koodu ti ọrẹ rẹ fi ranṣẹ si ọ."
 
@@ -6244,7 +6199,6 @@ msgid "Get A Coach"
 msgstr "Wa Oluko"
 
 #: site/pages/get-a-coach.php:29 site/pages/get-a-coach.php:105
-#, fuzzy
 msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
@@ -6255,7 +6209,6 @@ msgstr ""
 "ṣe awọn igbesẹ ni irin-ajo rẹ."
 
 #: site/pages/get-a-coach.php:85
-#, fuzzy
 msgid ""
 "Every athletic sport, especially at higher levels, uses coaching. Even "
 "olympic athletes have coaches, and often more than one. Disciple making can "
@@ -6267,7 +6220,6 @@ msgstr ""
 "ti o ni iriri diẹ sii."
 
 #: site/pages/get-a-coach.php:88
-#, fuzzy
 msgid "No Cost"
 msgstr "Ko si iye owo"
 
@@ -6275,24 +6227,20 @@ msgstr "Ko si iye owo"
 #: site/pages/home.php:247 site/pages/home.php:254 site/pages/home.php:255
 #: site/pages/training.php:130 site/pages/training.php:137
 #: site/pages/training.php:138
-#, fuzzy
 msgid "Join a training group"
 msgstr "Gbalejo ikeko kan"
 
 #: site/pages/get-a-coach.php:91
-#, fuzzy
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr "Netiwoki Atunniwa."
 
 #: site/pages/get-a-coach.php:95
-#, fuzzy
 msgid "Localized"
 msgstr "Agbegbe"
 
 #: site/pages/get-a-coach.php:98
-#, fuzzy
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
@@ -6301,23 +6249,19 @@ msgstr ""
 "ni agbegbe bi o ti ṣee ṣe."
 
 #: site/pages/get-a-coach.php:102
-#, fuzzy
 msgid "Experienced"
 msgstr "Ti ni iriri"
 
 #: site/pages/get-a-coach.php:103 site/pages/home.php:263
 #: site/pages/training.php:146
-#, fuzzy
 msgid "Join a training"
 msgstr "Gbalejo ikeko kan"
 
 #: site/pages/home.php:81
-#, fuzzy
 msgid "45+"
 msgstr "45+"
 
 #: site/pages/home.php:125
-#, fuzzy
 msgid "Becoming more like Jesus... Together"
 msgstr "Di bi Jesu... Lapapo"
 
@@ -6326,132 +6270,106 @@ msgid "Overview"
 msgstr "Akopo"
 
 #: site/pages/home.php:131
-#, fuzzy
 msgid "Group Discussions"
 msgstr "Ẹgbẹ Awọn ijiroro"
 
 #: site/pages/home.php:132
-#, fuzzy
 msgid "Self-Facilitated"
 msgstr "Ti ara ẹni irọrun"
 
 #: site/pages/home.php:133
-#, fuzzy
 msgid "Practice-Oriented"
 msgstr "ÌSE Ṣiṣẹ - Awọn aaye Mẹrin"
 
 #: site/pages/home.php:134
-#, fuzzy
 msgid "32 Concepts and Skills"
 msgstr "32 Agbekale ati ogbon"
 
 #: site/pages/home.php:135
-#, fuzzy
 msgid "20 hours of Training"
 msgstr "Gbalejo ikeko kan"
 
 #: site/pages/home.php:142
-#, fuzzy
 msgid "Free. Anytime. Anywhere."
 msgstr "Ọfẹ. Nigbakugba. Nibikibi."
 
 #: site/pages/home.php:146
-#, fuzzy
 msgid "Gain insight into..."
 msgstr "Gba oye sinu ..."
 
 #: site/pages/home.php:151
-#, fuzzy
 msgid "Being A Disciple"
 msgstr "Omo eyin ni Duck"
 
 #: site/pages/home.php:153
-#, fuzzy
 msgid "What's a Disciple?"
 msgstr "Itumọ ti o rọrun ti ọmọ ẹ̀yìn ati Ijo"
 
 #: site/pages/home.php:154
-#, fuzzy
 msgid "What's a Church?"
 msgstr "Kini Ijo kan?"
 
 #: site/pages/home.php:155
-#, fuzzy
 msgid "Keys to Spiritual Growth"
 msgstr "Ee Mi Mimis"
 
 #: site/pages/home.php:156
-#, fuzzy
 msgid "Personal Bible Study"
 msgstr "Ìkẹ́kọ̀ọ́ Bíbélì Àdáni"
 
 #: site/pages/home.php:157
-#, fuzzy
 msgid "Strong Prayer Life"
 msgstr "Igbesi aye Adura Alagbara"
 
 #: site/pages/home.php:158
-#, fuzzy
 msgid "The Power of Obedient Faith"
 msgstr "Agbara Igbagbo Onigboran"
 
 #: site/pages/home.php:165
-#, fuzzy
 msgid "Making Disciples"
 msgstr "Omo eyin ni Duck"
 
 #: site/pages/home.php:167
-#, fuzzy
 msgid "Sharing God's Story"
 msgstr "Gbiyanju lati pin oro Idupe"
 
 #: site/pages/home.php:168
-#, fuzzy
 msgid "Telling Your Story"
 msgstr "Asiwaju rẹ Ẹgbẹ"
 
 #: site/pages/home.php:169
-#, fuzzy
 msgid "Engaging Seekers"
 msgstr "Olukoni Wiwa"
 
 #: site/pages/home.php:170
-#, fuzzy
 msgid "Vision Casting Multiplication"
 msgstr "Wiwo Iran si Nla Ibukun Nla julọ"
 
 #: site/pages/home.php:171
-#, fuzzy
 msgid "Leading a Simple Church"
 msgstr "2 Awọn Ijo ti o rọrun"
 
 #: site/pages/home.php:172
-#, fuzzy
 msgid "Training Others"
 msgstr "Ikẹkọ"
 
 #: site/pages/home.php:177
-#, fuzzy
 msgid "I'm Ready!"
 msgstr "Mo setan!"
 
 #: site/pages/home.php:181
-#, fuzzy
 msgid "Ordinary People. Simple Steps."
 msgstr "Awọn eniyan lasan. Awọn Igbesẹ Rọrun."
 
 #: site/pages/home.php:240
-#, fuzzy
 msgid "More about zume"
 msgstr "Sewadi die sii nipa Zume"
 
 #: site/pages/home.php:246 site/pages/training.php:129
-#, fuzzy
 msgid "Create your own training group"
 msgstr "Seda akojo re"
 
 #: site/pages/home.php:249 site/pages/training.php:132
-#, fuzzy
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
@@ -6460,12 +6378,10 @@ msgstr ""
 "Ṣẹda ẹgbẹ ikẹkọ tirẹ ki o tọpa ilọsiwaju rẹ."
 
 #: site/pages/home.php:251 site/pages/training.php:134
-#, fuzzy
 msgid "Create"
 msgstr "Eto Losoosu"
 
 #: site/pages/home.php:257 site/pages/training.php:140
-#, fuzzy
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
@@ -6474,12 +6390,10 @@ msgstr ""
 "ikẹkọ ori ayelujara wa nipasẹ olukọni Zúme ti o ni iriri."
 
 #: site/pages/home.php:262 site/pages/training.php:145
-#, fuzzy
 msgid "Request a coach"
 msgstr "Wa Oluko"
 
 #: site/pages/home.php:265 site/pages/training.php:148
-#, fuzzy
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
@@ -6488,33 +6402,28 @@ msgstr ""
 "loye ikẹkọ naa ki o di ọmọ-ẹhin eleso."
 
 #: site/pages/home.php:267 site/pages/training.php:150
-#, fuzzy
 msgid "Get Help"
 msgstr "Egba Mi O"
 
 #: site/pages/home.php:289
-#, fuzzy
 msgid "Real people ... real stories."
 msgstr "Awọn eniyan gidi ... awọn itan gidi."
 
 #: site/pages/home.php:300
-#, fuzzy
 msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
-"Mo fi ìṣòtítọ́ lo ọ̀pọ̀ ọdún ní lílọ sí àwọn ìkẹ́kọ̀ọ́ Bíbélì àti ṣọ́ọ̀ṣì, ṣùgbọ́n "
-"lọ́nà kan ṣáá, kò lóye àwọn òtítọ́ rírọrùn ti sísọni di ọmọ ẹ̀yìn tí mo rí "
-"níhìn-ín ní Zúme. ~ C"
+"Mo fi ìṣòtítọ́ lo ọ̀pọ̀ ọdún ní lílọ sí àwọn ìkẹ́kọ̀ọ́ Bíbélì àti ṣọ́ọ̀ṣì, ṣùgbọ́n lọ́"
+"nà kan ṣáá, kò lóye àwọn òtítọ́ rírọrùn ti sísọni di ọmọ ẹ̀yìn tí mo rí níhìn-"
+"ín ní Zúme. ~ C"
 
 #: site/pages/home.php:311
-#, fuzzy
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr "Ẹnikẹni le ṣe eyi. O ko nilo eyikeyi awọn ọgbọn pataki tabi ikẹkọ. ~ J"
 
 #: site/pages/home.php:322
-#, fuzzy
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
@@ -6523,7 +6432,6 @@ msgstr ""
 "Zúme ṣe ilana igbesi aye Onigbagbọ deede. ~ D"
 
 #: site/pages/home.php:333
-#, fuzzy
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
@@ -6547,88 +6455,71 @@ msgid ""
 msgstr "Itumo zume ni iwukara ni ede Giriki."
 
 #: site/pages/home.php:353
-#, fuzzy
 msgid "Ready to take your next steps?"
 msgstr "Ṣetan lati ṣe awọn igbesẹ atẹle rẹ?"
 
 #: site/pages/home.php:357
-#, fuzzy
 msgid "Register Free."
 msgstr "Forukọsilẹ fun ọfẹ"
 
 #: site/pages/home.php:361
-#, fuzzy
 msgid "Gather a Group."
 msgstr "Seda Egbe"
 
 #: site/pages/home.php:365
-#, fuzzy
 msgid "Change the World."
 msgstr "Yi Aye pada."
 
 #: site/pages/home.php:368
-#, fuzzy
 msgid "Get started"
 msgstr "Je ka bere"
 
 #: site/pages/kitchen-sink.php:79
-#, fuzzy
 msgid "Kitchen Sink"
 msgstr "Idana ifọwọ"
 
 #: site/pages/messages.php:229
-#, fuzzy
 msgid "Friend"
 msgstr "Adiresi Olumulo"
 
 #: site/pages/mobile-app.php:28 site/pages/mobile-app.php:130
-#, fuzzy
 msgid "Zúme Training App"
 msgstr "Ikẹkọ Zume"
 
 #: site/pages/mobile-app.php:128
-#, fuzzy
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
 msgstr ""
 "Fífi agbára Àwọn Ọmọ ẹ̀yìn Rẹ̀. Nigbakugba... Nibikibi pẹlu Ohun elo Zúme."
 
 #: site/pages/mobile-app.php:132
-#, fuzzy
 msgid "Access the full training wherever you go"
 msgstr "Wọle si ikẹkọ ni kikun nibikibi ti o lọ"
 
 #: site/pages/mobile-app.php:137 site/pages/mobile-app.php:161
-#, fuzzy
 msgid "Get it on Google Play"
 msgstr "Gba lori Google Play"
 
 #: site/pages/mobile-app.php:152
-#, fuzzy
 msgid "Offline App"
 msgstr "Aisinipo App"
 
 #: site/pages/mobile-app.php:154
-#, fuzzy
 msgid "Full Training with no internet required"
 msgstr "Ikẹkọ ni kikun laisi intanẹẹti ti o nilo"
 
 #: site/pages/mobile-app.php:155
-#, fuzzy
 msgid "Download the course and video content to your phone"
 msgstr "Ṣe igbasilẹ iṣẹ-ẹkọ ati akoonu fidio si foonu rẹ"
 
 #: site/pages/mobile-app.php:156
-#, fuzzy
 msgid "Great for areas where internet access is restricted or limited"
 msgstr "Nla fun awọn agbegbe nibiti wiwọle intanẹẹti ti ni ihamọ tabi ni opin"
 
 #: site/pages/plan-invite.php:28 site/pages/plan-invite.php:165
-#, fuzzy
 msgid "Plan Invitation"
 msgstr "Eto ifiwepe"
 
 #: site/pages/plan-invite.php:72
-#, fuzzy
 msgid "Please enter a code."
 msgstr "Jọwọ tẹ koodu sii."
 
@@ -6660,7 +6551,6 @@ msgid "What permissions do the social sign-on logins ask for?"
 msgstr "Kini igbanilaaye lawujo ninu iwole?"
 
 #: site/pages/privacy-policy.php:86
-#, fuzzy
 msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
@@ -6690,6 +6580,9 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"Diẹ ninu awọn alaye ti ara ẹni ni a tọpa fun iṣẹ ṣiṣe to dara ti oju opo "
+"wẹẹbu naa, ati pe alaye miiran ti beere ati fipamọ fun afikun ikẹkọ ati "
+"atilẹyin."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6700,14 +6593,12 @@ msgid "We collect your information at login."
 msgstr "A tun gba alaye lati wole."
 
 #: site/pages/privacy-policy.php:128
-#, fuzzy
 msgid ""
 "We also track your progress through the training course and through site "
 "usage."
 msgstr "A tun da orin ilosiwaju nipase ikeko to daju."
 
 #: site/pages/privacy-policy.php:131
-#, fuzzy
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
@@ -6780,7 +6671,6 @@ msgid "Do we use \"cookies\"?"
 msgstr "Se an lo kukisi?"
 
 #: site/pages/privacy-policy.php:170
-#, fuzzy
 msgid ""
 "Any use of Cookies - or of other tracking tools - unless stated otherwise, "
 "serves to identify Users and remember their preferences, for the sole "
@@ -6801,6 +6691,8 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"O le ṣe atẹle yii nigbakugba nipa kikan si wa nipasẹ fọọmu “Gba Olukọni kan” "
+"ati yiyan “Iranlọwọ Imọ-ẹrọ” lati dasibodu olumulo rẹ."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
@@ -6811,18 +6703,16 @@ msgid "Change/correct any data we have about you."
 msgstr "Se atunko data ta ni nipa re."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
 msgstr "Se oti pa data kankan re ninu eyi ta ni lowo wa."
 
 #: site/pages/privacy-policy.php:192
-#, fuzzy
 msgid "Express any concern you have about our use of your data."
 msgstr "Fi ifiyesi re han nipa lilo data re."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "Jade kuro ni eyikeyi olubasọrọ iwaju lati ọdọ wa."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6838,15 +6728,13 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "Awọn orisun igbasilẹ lati ṣe iranlọwọ pẹlu ṣiṣe ikẹkọ zume kan."
 
 #: site/pages/resources.php:96
-#, fuzzy
 msgid "Training Guidebook"
 msgstr "Idaraya Ikẹkọ"
 
 #: site/pages/resources.php:99
-#, fuzzy
 msgid ""
 "Zúme Training is now available in a complete workbook. All the concepts, "
 "tools, discussion questions and challenges from the training now in the palm "
@@ -6858,17 +6746,14 @@ msgstr ""
 "QR fun gbogbo igba fun ọ ni iraye si gbogbo akoonu fidio daradara!"
 
 #: site/pages/resources.php:103
-#, fuzzy
 msgid "Free Download (PDF)"
 msgstr "Gbigbasilẹ Ọfẹ (PDF)"
 
 #: site/pages/resources.php:105
-#, fuzzy
 msgid "Order print copy"
 msgstr "Paṣẹ ẹda ẹda"
 
 #: site/pages/resources.php:119
-#, fuzzy
 msgid "Course Slides Online"
 msgstr "Ise Zume"
 
@@ -6877,18 +6762,18 @@ msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Àkóónú ẹ̀kọ́ Zúme, àwọn fídíò àti àwọn ìgbòkègbodò, le jẹ́ ìgbékalẹ̀ láti ọ̀dọ̀ "
+"olùfojúsọ́nà orí Íńtánẹ́ẹ̀tì nínú ẹ̀rọ aṣàwákiri wẹ́ẹ̀bù rẹ."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "Awọn ọna asopọ lati pin awọn imọran ati awọn irinṣẹ ti ikẹkọ ikẹkọ zume"
 
 #: site/pages/share.php:78
-#, fuzzy
 msgid "Copy this link and send it to your friends."
 msgstr "Daakọ ọna asopọ yii ki o firanṣẹ si awọn ọrẹ rẹ."
 
 #: site/pages/share.php:80
-#, fuzzy
 msgid "Copied"
 msgstr "Ti daakọ"
 
@@ -6901,22 +6786,18 @@ msgid "Concepts"
 msgstr "Erongba"
 
 #: site/pages/share.php:120
-#, fuzzy
 msgid "Sort"
 msgstr "Too"
 
 #: site/pages/share.php:121
-#, fuzzy
 msgid "Items"
 msgstr "Awọn nkan"
 
 #: site/pages/share.php:129
-#, fuzzy
 msgid "Sharing with Others"
 msgstr "Pinpin pẹlu Awọn omiiran"
 
 #: site/pages/share.php:136
-#, fuzzy
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
@@ -6925,7 +6806,6 @@ msgstr ""
 "pẹlu wa, lẹhinna o ṣe ileri lati pin paapaa diẹ sii."
 
 #: site/pages/training.php:29 site/pages/training.php:212
-#, fuzzy
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
@@ -6934,7 +6814,6 @@ msgstr ""
 "lori wiwa ẹgbẹ ikẹkọ rẹ."
 
 #: site/pages/training.php:126
-#, fuzzy
 msgid "Get started with Zúme Training"
 msgstr "Kaabo si eto Idanileko Zume!"
 
@@ -6943,17 +6822,14 @@ msgid "Course Overview"
 msgstr "Akopọ Dajudaju"
 
 #: site/pages/training.php:158 site/pages/training.php:170
-#, fuzzy
 msgid "Course Concepts"
 msgstr "Pari Ẹkọ Pari"
 
 #: site/pages/training.php:160 site/pages/training.php:255
-#, fuzzy
 msgid "What is required?"
 msgstr "A ni lo emaili."
 
 #: site/pages/training.php:173
-#, fuzzy
 msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
@@ -6964,17 +6840,14 @@ msgstr ""
 "ọgbọn ati imọ rẹ ni awọn agbegbe atẹle:"
 
 #: site/pages/training.php:177
-#, fuzzy
 msgid "Discipleship Concepts"
 msgstr "Awọn Ilana Ọmọ-ẹhin"
 
 #: site/pages/training.php:191
-#, fuzzy
 msgid "Spiritual Practices"
 msgstr "Ee Mi Mimis"
 
 #: site/pages/training.php:224
-#, fuzzy
 msgid ""
 "The original Zúme course format is 10 two hour sessions. Each session "
 "finishes with practical obedience steps and ways to share in-between "
@@ -6985,7 +6858,6 @@ msgstr ""
 "kika yii jẹ igba ṣiṣe lẹẹkan ni ọsẹ fun ọsẹ 10."
 
 #: site/pages/training.php:236
-#, fuzzy
 msgid ""
 "For a longer slower pace course with more opportunity for gaining competence "
 "in the concepts and skills, the 20 session format has more practice "
@@ -6996,7 +6868,6 @@ msgstr ""
 "ọkọọkan awọn imọran ati awọn irinṣẹ."
 
 #: site/pages/training.php:248
-#, fuzzy
 msgid ""
 "Zúme can be compressed into 5 half day sections of 4 hours each. This can be "
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
@@ -7007,32 +6878,28 @@ msgstr ""
 "(wakati 8) ati gbogbo ọjọ Sundee (wakati 8)."
 
 #: site/pages/training.php:256
-#, fuzzy
 msgid "Needed for the course:"
 msgstr "Afe bere ekiko?"
 
 #: site/pages/training.php:262
-#, fuzzy
 msgid "NOT needed for the course:"
 msgstr "Afe bere ekiko?"
 
 #: site/pages/training.php:265
-#, fuzzy
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
-"Igbanilaaye pataki lati ṣe itọsọna iṣẹ-ẹkọ kan ko nilo! Zúme jẹ́ ẹni ti ara "
-"rẹ̀, ó dá ara rẹ̀ sílẹ̀, o sì lè bẹ̀rẹ̀ lónìí."
+"Igbanilaaye pataki lati ṣe itọsọna iṣẹ-ẹkọ kan ko nilo! Zúme jẹ́ ẹni ti ara rẹ̀"
+", ó dá ara rẹ̀ sílẹ̀, o sì lè bẹ̀rẹ̀ lónìí."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
 msgstr "Ṣe igbasilẹ Iwe Itọsọna Ọfẹ"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "Ṣe igbasilẹ faili nla. (1 gigabyte)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7042,30 +6909,32 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Gbogbo ẹkọ Zúme le ṣe igbasilẹ ati ṣiṣe nipasẹ Powerpoint tabi Akọsilẹ. Eyi "
+"jẹ ojutu nla fun ikẹkọ ni awọn agbegbe pẹlu intanẹẹti alailagbara. Awọn "
+"fidio ti wa ni ifibọ ninu awọn kikọja ati ki o le wa ni awọn iṣọrọ dun lai "
+"ayelujara. Eto koodu QR tun nilo iraye si ori ayelujara fun awọn sọwedowo "
+"olukọni ati awọn orisun iṣẹ ṣiṣe."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Sọkẹti ogiri fun ina"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Kokoro"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 #: utilities/integrations/replace-placeholder.php:108
-#, fuzzy
 msgid "Check-in"
 msgstr "Akosile"
 
 #: site/parts/noscript.php:2
-#, fuzzy
 msgid "Oops you have javascript turned off"
 msgstr "Bẹẹni o ti wa ni pipa JavaScript"
 
 #: site/parts/noscript.php:3
-#, fuzzy
 msgid "Please enable javascript to use this page"
 msgstr "Jọwọ mu JavaScript ṣiṣẹ lati lo oju-iwe yii"
 
@@ -7074,32 +6943,26 @@ msgstr "Jọwọ mu JavaScript ṣiṣẹ lati lo oju-iwe yii"
 #: utilities/integrations/replace-placeholder.php:181
 #: utilities/integrations/replace-placeholder.php:182
 #: utilities/integrations/replace-placeholder.php:183
-#, fuzzy
 msgid "Update Communication Preferences"
 msgstr "Kini ilu tabi ilu tabi koodu ifiweranse rẹ?"
 
 #: site/profile/communication-preferences.php:76
-#, fuzzy
 msgid "Recieve emails for:"
 msgstr "Gba awọn imeeli fun:"
 
 #: site/profile/communication-preferences.php:79
-#, fuzzy
 msgid "Training session reminders"
 msgstr "Ikẹkọ"
 
 #: site/profile/communication-preferences.php:83
-#, fuzzy
 msgid "Annual reporting reminders"
 msgstr "Awọn olurannileti ijabọ ọdun"
 
 #: site/profile/communication-preferences.php:87
-#, fuzzy
 msgid "Community updates"
 msgstr "Agbegbe"
 
 #: site/profile/communication-preferences.php:91
-#, fuzzy
 msgid "Encouragements"
 msgstr "Awọn iwuri"
 
@@ -7108,7 +6971,6 @@ msgid "Profile"
 msgstr "Profaili"
 
 #: site/zume-magic-page.php:43
-#, fuzzy
 msgid ""
 "Zúme Training is an on-line and in-life learning experience designed for "
 "small groups who follow Jesus. An online, in-life disciple making movement "
@@ -7119,27 +6981,22 @@ msgstr ""
 "Rẹ ati ṣe awọn ọmọ-ẹhin ti o pọ si."
 
 #: utilities/apis/connect-api.php:85
-#, fuzzy
 msgid "your friend"
 msgstr "Profaili Re"
 
 #: utilities/apis/connect-api.php:235
-#, fuzzy
 msgid "the plan"
 msgstr "ètò"
 
 #: utilities/apis/cta-api.php:140
-#, fuzzy
 msgid "Register to start your training"
 msgstr "Afe bere ekiko?"
 
 #: utilities/apis/cta-api.php:154
-#, fuzzy
 msgid "Join Online Training"
 msgstr "Wo Gbogbo ikẹkọ"
 
 #: utilities/apis/cta-api.php:155
-#, fuzzy
 msgid "Join the online training to learn more"
 msgstr "Darapọ mọ ikẹkọ ori ayelujara lati kọ ẹkọ diẹ sii"
 
@@ -7148,12 +7005,10 @@ msgid "Joined Training!"
 msgstr "ikeeko ti o bere"
 
 #: utilities/apis/cta-api.php:184
-#, fuzzy
 msgid "Get a coach to help you on your journey"
 msgstr "Gba olukọni lati ran ọ lọwọ lori irin-ajo rẹ"
 
 #: utilities/apis/cta-api.php:198
-#, fuzzy
 msgid "Requested Coach!"
 msgstr "Wa Oluko"
 
@@ -7167,52 +7022,43 @@ msgid "Connected to Coach!"
 msgstr "A ti so ó pò mọ́ Olùkó!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
 msgstr "Agbegbe"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
-#, fuzzy
 msgid "Create a Training"
 msgstr "1 Ikẹkọ"
 
 #: utilities/apis/cta-api.php:241
-#, fuzzy
 msgid "Create a training to help you grow"
 msgstr "Ṣẹda ikẹkọ lati ṣe iranlọwọ fun ọ lati dagba"
 
 #: utilities/apis/cta-api.php:255
-#, fuzzy
 msgid "Created Training!"
 msgstr "Seda akojo re"
 
 #: utilities/apis/cta-api.php:286
-#, fuzzy
 msgid "Set your profile to help others know you"
 msgstr "Ṣeto profaili rẹ lati ṣe iranlọwọ fun awọn miiran lati mọ ọ"
 
 #: utilities/apis/cta-api.php:300
-#, fuzzy
 msgid "Profile Set"
 msgstr "Profaili"
 
 #: utilities/apis/cta-api.php:314 utilities/apis/cta-api.php:316
-#, fuzzy
 msgid "Create 3 Month Plan"
 msgstr "Eto Losoosu"
 
 #: utilities/apis/cta-api.php:315
-#, fuzzy
 msgid "Create a 3 month plan to help you grow"
 msgstr "Ṣẹda eto oṣu mẹta kan lati ṣe iranlọwọ fun ọ lati dagba"
 
 #: utilities/apis/cta-api.php:329
-#, fuzzy, php-format
+#, php-format
 msgid "%s unlocked"
 msgstr "%s ṣiṣi silẹ"
 
 #: utilities/apis/cta-api.php:343
-#, fuzzy
 msgid "3-Month Plan Created"
 msgstr "Eto Osu Meta"
 
@@ -7221,12 +7067,10 @@ msgid "Complete 3 Month Plan"
 msgstr "Eto Losoosu"
 
 #: utilities/apis/cta-api.php:358
-#, fuzzy
 msgid "Complete your 3 month plan to help you grow"
 msgstr "Pari ero oṣu mẹta rẹ lati ṣe iranlọwọ fun ọ lati dagba"
 
 #: utilities/apis/cta-api.php:372
-#, fuzzy
 msgid "3 Month Plan Completed"
 msgstr "Eto Osu Meta"
 
@@ -7248,14 +7092,13 @@ msgstr "Ikẹkọ"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
-#, fuzzy
 msgid "Porch Admin"
 msgstr "Ifuni"
 
@@ -7268,7 +7111,6 @@ msgstr "darapo mon egbe zume"
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
 #: utilities/integrations/replace-placeholder.php:92
-#, fuzzy
 msgid "Zúme Dashboard"
 msgstr "Dasibodu Zume"
 
@@ -7281,26 +7123,22 @@ msgstr "egbe Ikẹkọ Zume ori afefe"
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
 #: utilities/integrations/replace-placeholder.php:120
-#, fuzzy
 msgid "Download Slide Presentation"
 msgstr "Ṣe igbasilẹ Igbejade Ifaworanhan"
 
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
 #: utilities/integrations/replace-placeholder.php:124
-#, fuzzy
 msgid "Share Zúme Page"
 msgstr "Pin Oju-iwe Zúme"
 
 #: utilities/integrations/replace-placeholder.php:177
 #: utilities/integrations/replace-placeholder.php:178
 #: utilities/integrations/replace-placeholder.php:179
-#, fuzzy
 msgid "Zúme Annual Report"
 msgstr "Zúme Annual Iroyin"
 
 #: utilities/post-types/posttype-pieces.php:299
-#, fuzzy
 msgid "Piece"
 msgstr "Oju-iwe nkan"
 
@@ -7335,17 +7173,14 @@ msgid "[%s] Password Reset"
 msgstr "[%s] Atunse Oro Isina"
 
 #: zume-training-system.php:289
-#, fuzzy
 msgid "Profile Details"
 msgstr "Profaili"
 
 #: zume-training-system.php:301
-#, fuzzy
 msgid "User Email"
 msgstr "Imeeli"
 
 #: zume-training-system.php:310
-#, fuzzy
 msgid "User Phone"
 msgstr "Ero ibaraeni soro"
 
@@ -7354,17 +7189,14 @@ msgid "User Timezone"
 msgstr "Aago olumulo"
 
 #: zume-training-system.php:326
-#, fuzzy
 msgid "User Friend Key"
 msgstr "Olumulo Ọrẹ Key"
 
 #: zume-training-system.php:334
-#, fuzzy
 msgid "User Preferred Language"
 msgstr "Ede Ayanfẹ olumulo"
 
 #: zume-training-system.php:342
-#, fuzzy
 msgid "User Preferred Email"
 msgstr "Imeeli"
 
@@ -7373,23 +7205,19 @@ msgid "Preferred Contact Methods"
 msgstr "Awọn ọna Olubasọrọ ti o fẹ"
 
 #: zume-training-system.php:360
-#, fuzzy
 msgid "Messenger"
 msgstr "Ojiṣẹ"
 
 #. Plugin Name of the plugin/theme
-#, fuzzy
 msgid "Zúme - Training System"
 msgstr "Ikẹkọ Zúme"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-#, fuzzy
 msgid "https://github.com/ZumeProject/zume-training-system"
 msgstr "https://github.com/ZumeProject/zume-training"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
 msgstr "Ikẹkọ Zume"
 
