@@ -7540,7 +7540,7 @@ if ( ! class_exists( 'Zume_User_Genmap' ) ) {
                             let spinner = ' <span class="loading-spinner active"></span> '
                             jQuery('#genmap-details').html(spinner)
 
-                            zumeRequest.get( post_type + '/' + id, null, 'zume_training/v1/' )
+                            zumeRequest.get( post_type + '/' + id, null )
                                 .then(data => {
                                     console.log(data)
                                     let container = jQuery('#genmap-details')
