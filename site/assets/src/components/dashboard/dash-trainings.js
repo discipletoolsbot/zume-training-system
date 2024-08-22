@@ -326,6 +326,18 @@ export class DashTrainings extends DashPage {
         document.querySelector('#location-note').value = this.training.location_note
         document.querySelector('#time-of-day-note').value = this.training.time_of_day_note
 
+        if (this.isCoach()) {
+            document.querySelector('#language-note').value = this.training.language_note || ''
+            document.querySelector('#timezone-note').value = this.training.timezone_note || ''
+            document.querySelector('#zoom-link-note').value = this.training.zoom_link_note || ''
+
+            if (this.isPublic()) {
+                document.querySelector('#edit-session-details-modal #public[type="radio"]').checked = true
+            } else {
+                document.querySelector('#edit-session-details-modal #private[type="radio"]').checked = true
+            }
+        }
+
         this.openEditSessionDetailsModal()
     }
     openEditSessionDetailsModal() {
@@ -344,14 +356,40 @@ export class DashTrainings extends DashPage {
 
         const locationNote = document.querySelector('#location-note').value
         const timeNote = document.querySelector('#time-of-day-note').value
+        const zoomLinkNote = document.querySelector('#zoom-link-note').value
 
-        zumeRequest.put(`plan/${this.training.join_key}`, {
+        const trainingUpdate = {
             location_note: locationNote,
             time_of_day_note: timeNote,
-        })
+            zoom_link_note: zoomLinkNote,
+        }
+        let languageNote
+        let timezoneNote
+        let visibility
+
+        if (this.isCoach()) {
+            languageNote = document.querySelector('#language-note').value
+            timezoneNote = document.querySelector('#timezone-note').value
+            visibility = document.querySelector('#edit-session-details-modal #public').checked ? 'public' : 'private'
+
+            trainingUpdate.language_note = languageNote
+            trainingUpdate.timezone_note = timezoneNote
+            trainingUpdate.visibility = visibility
+        }
+
+        zumeRequest.put(`plan/${this.training.join_key}`, trainingUpdate)
             .then((result) => {
                 this.training.location_note = locationNote
                 this.training.time_of_day_note = timeNote
+                this.training.zoom_link_note = zoomLinkNote
+
+                if (this.isCoach()) {
+                    this.training.language_note = languageNote
+                    this.training.timezone_note = timezoneNote
+                    this.training.visibility = {
+                        key: visibility
+                    }
+                }
             })
             .finally(() => {
                 this.isSavingSession = false
@@ -404,8 +442,14 @@ export class DashTrainings extends DashPage {
         }
         return false
     }
+    isCoach() {
+        return jsObject.is_coach
+    }
     hasMultipleTrainingGroups() {
         return jsObject.training_groups && Object.keys(jsObject.training_groups).length > 1
+    }
+    isPublic() {
+        return this.training.visibility.key === 'public'
     }
 
     toggleDetails(id) {
@@ -743,7 +787,7 @@ export class DashTrainings extends DashPage {
                                             '/chevron.svg'}
                                         />
                                     </button>
-                                    <div class="zume-collapse" ?data-expand=${this.groupMembersOpen}>
+                                    <div class="zume-collapse | mt-0" ?data-expand=${this.groupMembersOpen}>
                                         ${!this.loading && this.groupMembers && this.groupMembers.length > 0
                                             ? html`
                                                 <ol class="ps-1">
@@ -760,7 +804,7 @@ export class DashTrainings extends DashPage {
                                         ${jsObject.translations.invite_friends}
                                     </button>
                                 </div>
-                                <div class="card | group-members | grow-0">
+                                <div class="card | group-details | grow-0">
                                     <button
                                         class="f-0 f-medium d-flex align-items-center justify-content-between gap--2 black"
                                         @click=${this.toggleGroupDetails}
@@ -774,9 +818,29 @@ export class DashTrainings extends DashPage {
                                         />
                                     </button>
                                     <div class="zume-collapse" ?data-expand=${this.groupDetailsOpen}>
-                                        <div class="stack--2">
+                                        <div class="stack--2 | mt-0">
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.location}:</span> ${this.training.location_note}</p>
                                             <p class="text-left"><span class="f-medium">${jsObject.translations.time}:</span> ${this.training.time_of_day_note}</p>
+                                            ${
+                                                this.training.language_note && this.training.language_note.length ? html`
+                                                    <p class="text-left"><span class="f-medium">${jsObject.translations.language}:</span> ${this.training.language_note}</p>
+                                                ` : ''
+                                            }
+                                            ${
+                                                this.training.timezone_note && this.training.timezone_note.length ? html`
+                                                    <p class="text-left"><span class="f-medium">${jsObject.translations.timezone}:</span> ${this.training.timezone_note}</p>
+                                                ` : ''
+                                            }
+                                            ${
+                                                this.training.zoom_link_note && this.training.zoom_link_note.length ? html`
+                                                    <p class="text-left"><a class="link f-medium" href=${this.training.zoom_link_note} target="_blank">${jsObject.translations.meeting_link}</a> </p>
+                                                ` : ''
+                                            }
+                                            ${
+                                                this.isPublic() ? html`
+                                                    <p class="text-left"><span class="f-medium">${jsObject.translations.public_group}</span></p>
+                                                ` : ''
+                                            }
                                             ${
                                                 this.isGroupLeader() ? html`
                                                     <button
@@ -850,6 +914,36 @@ export class DashTrainings extends DashPage {
                         <label for="time-of-day-note">${jsObject.translations.time}</label>
                         <input class="input" type="text" id="time-of-day-note"/>
                     </div>
+                    ${
+                        this.isCoach() ? html`
+                            <div>
+                                <label for="language-note">${jsObject.translations.language}</label>
+                                <input class="input" type="text" id="language-note"/>
+                            </div>
+                            <div>
+                                <label for="timezone-note">${jsObject.translations.timezone}</label>
+                                <input class="input" type="text" id="timezone-note"/>
+                            </div>
+                        ` : ''
+                    }
+                    <div>
+                        <label for="zoom-link-note">${jsObject.translations.meeting_link} (${jsObject.translations.meeting_link_examples})</label>
+                        <input class="input" type="text" id="zoom-link-note"/>
+                    </div>
+                    ${
+                        this.isCoach() ? html`
+                            <div class="cluster">
+                                <label class="form-control label-input">
+                                    <input name="visibility" type="radio" id="public">
+                                    ${jsObject.translations.public_group}
+                                </label>
+                                <label class="form-control label-input">
+                                    <input name="visibility" type="radio" id="private">
+                                    ${jsObject.translations.private_group}
+                                </label>
+                            </div>
+                        ` : ''
+                    }
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
                             class="btn outline tight"

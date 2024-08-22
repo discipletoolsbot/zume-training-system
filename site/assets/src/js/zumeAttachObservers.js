@@ -4,8 +4,6 @@ const dataWatchers = {}
 
 export const zumeDetachObservers = (id) => {
     delete dataWatchers[id]
-
-    console.log('disconnected', id, dataWatchers)
 }
 
 export const zumeAttachObservers = (element, id) => {

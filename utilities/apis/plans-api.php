@@ -174,6 +174,18 @@ class Zume_Plans_Endpoints
         if ( isset( $params['time_of_day_note'] ) ) {
             $fields['time_of_day_note'] = $params['time_of_day_note'];
         }
+        if ( isset( $params['language_note'] ) ) {
+            $fields['language_note'] = $params['language_note'];
+        }
+        if ( isset( $params['timezone_note'] ) ) {
+            $fields['timezone_note'] = $params['timezone_note'];
+        }
+        if ( isset( $params['zoom_link_note'] ) ) {
+            $fields['zoom_link_note'] = $params['zoom_link_note'];
+        }
+        if ( isset( $params['visibility'] ) ) {
+            $fields['visibility'] = $params['visibility'];
+        }
 
         $result = DT_Posts::update_post( self::$post_type, (int) $post_id, $fields, true, false );
 

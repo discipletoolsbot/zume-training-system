@@ -116,7 +116,7 @@ ${this.url}
 
 ${this.t.join_key}: ${this.training.join_key}
 ${
-    this.training.zoom_link_note ? `\n${this.training.zoom_link_note}\n` : ''
+    this.training.zoom_link_note ? `\n${this.t.meeting_link}: ${this.training.zoom_link_note}\n` : ''
 }`
 
         return inviteText

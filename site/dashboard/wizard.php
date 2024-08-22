@@ -323,6 +323,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'note' => __( '%s is inviting you to a Zume Training Group', 'zume' ),
                 'location' => __( 'Location', 'zume' ),
                 'time' => __( 'Time', 'zume' ),
+                'meeting_link' => __( 'Meeting link', 'zume' ),
                 'join_url' => __( 'Join Training Group', 'zume' ),
                 'join_key' => __( 'Join key', 'zume' ),
                 'broken_link' => __( 'The training link is broken. Please try again.', 'zume' ),

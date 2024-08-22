@@ -182,6 +182,9 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'location' => __( 'Location', 'zume' ),
             'time' => __( 'Time', 'zume' ),
             'language' => __( 'Language', 'zume' ),
+            'timezone' => __( 'Timezone', 'zume' ),
+            'meeting_link' => __( 'Meeting link', 'zume' ),
+            'meeting_link_examples' => __( 'Zoom, Google Meet, Microsoft Teams etc.', 'zume' ),
             'save' => __( 'Save', 'zume' ),
             'edit_profile' => __( 'Edit Profile', 'zume' ),
             'share_title' => __( 'Check out this Zúme concept', 'zume' ),
@@ -297,6 +300,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'answer' => __( 'Answer', 'zume' ),
             'note' => __( 'Note', 'zume' ),
             'coaching_portal' => __( 'Coaching Portal', 'zume' ),
+            'private_group' => sprintf( _x( '%s group', 'public/private group', 'zume' ), __( 'Private', 'zume' ) ),
+            'public_group' => sprintf( _x( '%s group', 'public/private group', 'zume' ), __( 'Public', 'zume' ) ),
         ];
     }
 
