@@ -3,7 +3,7 @@ import { repeat } from 'lit/directives/repeat.js'
 import { DashBoard } from './dash-board';
 import { DashPage } from './dash-page';
 import { zumeRequest } from '../../js/zumeRequest';
-import { zumeAttachObservers } from '../../js/zumeAttachObservers';
+import { zumeAttachObservers, zumeDetachObservers } from '../../js/zumeAttachObservers';
 
 export class DashProgress extends DashPage {
     static get properties() {
@@ -45,15 +45,21 @@ export class DashProgress extends DashPage {
         })
     }
 
+    disconnectedCallback() {
+        super.disconnectedCallback();
+
+        zumeDetachObservers(this.tagName)
+    }
+
     firstUpdated() {
         super.firstUpdated()
 
-        zumeAttachObservers(this.renderRoot, 'dash-progress', true)
+        zumeAttachObservers(this.renderRoot, this.tagName)
     }
 
     updated() {
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers(this.renderRoot, 'dash-progress')
+        zumeAttachObservers(this.renderRoot, this.tagName)
     }
 
     openInfoModal() {
