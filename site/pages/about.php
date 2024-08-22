@@ -186,7 +186,7 @@ class Zume_Training_About extends Zume_Magic_Page
                                 <iframe width="640" height="360" src="" frameborder="0"></iframe>
                                 <div class="video-trigger absolute inset">
                                     <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Howitworks-thumbnail.png' ) ?>" alt="zume video">
-                                    <button class="icon-btn absolute inset">
+                                    <button class="icon-btn absolute inset" data-no-border>
                                         <play-button
                                             style="--play-button-color: var(--z-brand-light); --play-button-hover-color: var(--z-brand);"
                                         ></play-button>
