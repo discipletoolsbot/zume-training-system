@@ -25,6 +25,8 @@ export class VideoSlide extends CourseSlide {
         this.offCanvasSelector = '#' + this.offCanvasId
 
         await this.loadScriptIntoFrame()
+
+        super.firstUpdated()
     }
 
     openMenu() {
