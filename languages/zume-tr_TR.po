@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-08-22 15:31+0000\n"
+"PO-Revision-Date: 2024-08-22 15:38+0000\n"
 "Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
 "Language-Team: Turkish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/tr_TR/>\n"
@@ -1449,7 +1449,7 @@ msgstr "Bu derste bu kavramları işitip tartışacağız:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr ""
+msgstr "Öğrenci & Kilise’nin Temel Tanımı"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
