@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 import { Steps } from './wizard-constants';
-import { zumeAttachObservers } from '../../js/zumeAttachObservers';
+import { zumeAttachObservers, zumeDetachObservers } from '../../js/zumeAttachObservers';
 
 export class ReviewSteps extends LitElement {
     static get properties() {
@@ -48,8 +48,14 @@ export class ReviewSteps extends LitElement {
         }
     }
 
+    disconnectedCallback() {
+        super.disconnectedCallback();
+
+        zumeDetachObservers(this.tagName)
+    }
+
     updated() {
-        zumeAttachObservers(this.renderRoot, 'review-steps')
+        zumeAttachObservers(this.renderRoot, this.tagName)
     }
 
     handleChange(event) {

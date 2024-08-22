@@ -6,7 +6,7 @@ import { Wizards } from '../wizard/wizard-constants';
 import { RouteNames } from './routes';
 import { zumeRequest } from '../../js/zumeRequest';
 import { DateTime } from 'luxon';
-import { zumeAttachObservers } from '../../js/zumeAttachObservers';
+import { zumeAttachObservers, zumeDetachObservers } from '../../js/zumeAttachObservers';
 
 export class DashTrainings extends DashPage {
     static get properties() {
@@ -62,9 +62,16 @@ export class DashTrainings extends DashPage {
         })
     }
 
+    disconnectedCallback() {
+        zumeDetachObservers(this.tagName)
+
+        super.disconnectedCallback()
+    }
+
     willUpdate(properties) {
         if (properties.has('code')) {
             if ( this.code !== 'teaser' ) {
+                zumeDetachObservers(this.tagName)
                 this.getTraining()
             }
         }
@@ -74,12 +81,12 @@ export class DashTrainings extends DashPage {
         super.firstUpdated()
 
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers(this.renderRoot, 'dash-trainings', true)
+        zumeAttachObservers(this.renderRoot, this.tagName)
     }
 
     updated() {
         jQuery(this.renderRoot).foundation();
-        zumeAttachObservers(this.renderRoot, 'dash-trainings')
+        zumeAttachObservers(this.renderRoot, this.tagName)
 
         const dropdown = jQuery('#filter-menu')
         dropdown.foundation('_destroy')

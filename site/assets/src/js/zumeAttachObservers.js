@@ -2,12 +2,18 @@ import { DataWatcher } from "./DataWatcher"
 
 const dataWatchers = {}
 
-export const zumeAttachObservers = (element, id, refresh) => {
+export const zumeDetachObservers = (id) => {
+    delete dataWatchers[id]
+
+    console.log('disconnected', id, dataWatchers)
+}
+
+export const zumeAttachObservers = (element, id) => {
     console.log(dataWatchers)
 
     const collapseElements = element.querySelectorAll('.zume-collapse')
 
-    if (refresh || !Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
+    if (!Object.prototype.hasOwnProperty.call(dataWatchers, id) || dataWatchers[id].length === 0) {
         dataWatchers[id] = []
         collapseElements.forEach((collapse) => {
             const expandWatcher = new DataWatcher( collapse, 'expand', onDataChanged )
