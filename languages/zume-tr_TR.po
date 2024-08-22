@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-07-17 17:36+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-22 15:38+0000\n"
+"Last-Translator: Kevin Fallah <kevin@christianlingua.com>\n"
 "Language-Team: Turkish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/tr_TR/>\n"
 "Language: tr_TR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -34,7 +34,7 @@ msgstr "Eğitim"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:207
 msgid "How it Works"
-msgstr ""
+msgstr "Nasıl Çalışır?"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -54,11 +54,11 @@ msgstr "Gösterge Paneli"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
-msgstr ""
+msgstr "Benim Zúme’m"
 
 #: appearance/style-override/navigation.php:117
 msgid "Contacts"
-msgstr ""
+msgstr "Kişiler"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
@@ -66,11 +66,11 @@ msgstr "Gruplar"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
-msgstr ""
+msgstr "Eğitimler"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
-msgstr ""
+msgstr "Göstergeler"
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
 msgid "Community"
@@ -82,11 +82,11 @@ msgstr "Vizyon"
 
 #: appearance/style-override/navigation.php:154
 msgid "Stories"
-msgstr ""
+msgstr "Hikayeler"
 
 #: appearance/style-override/navigation.php:160
 msgid "Global Map"
-msgstr ""
+msgstr "Küresel Harita"
 
 #: globals.php:1939 globals.php:1941 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
@@ -120,7 +120,7 @@ msgstr ""
 #: globals.php:1953 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
-msgstr ""
+msgstr "Öğrenciler ve Kilise"
 
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
@@ -134,11 +134,11 @@ msgstr "Öğrenci olmak, Tanrı’dan duymak ve Tanrı'ya itaat etmek demektir."
 #: globals.php:1965 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr ""
+msgstr "Tanrı’yı Duymak ve O’na İtaat Etmek"
 
 #: globals.php:1975 globals.php:1977
 msgid "S.O.A.P.S. Bible Study"
-msgstr ""
+msgstr "A.G.U.D.P. Kutsal Kitap Çalışması"
 
 #: globals.php:1976 site/pages/follow-jesus.php:216
 msgid ""
@@ -179,7 +179,7 @@ msgstr ""
 
 #: globals.php:2001
 msgid "Producer not Consumer"
-msgstr ""
+msgstr "Tüketici Değil Üretici"
 
 #: globals.php:2011 globals.php:2013 site/pages/follow-jesus.php:204
 msgid "How to Spend an Hour in Prayer"
@@ -239,7 +239,7 @@ msgstr ""
 
 #: globals.php:2049
 msgid "Sharing God‘s Story"
-msgstr ""
+msgstr "Tanrı’nın Hikayesini Paylaşmak"
 
 #: globals.php:2059 site/pages/follow-jesus.php:242
 msgid "Baptism and How To Do It"
@@ -296,7 +296,7 @@ msgstr ""
 
 #: globals.php:2085
 msgid "Great, Greater, and Greatest Blessing"
-msgstr ""
+msgstr "Büyük, Daha Büyük ve En Büyük Bereket"
 
 #: globals.php:2095 site/pages/follow-jesus.php:272
 msgid "Duckling Discipleship – Leading Immediately"
@@ -319,7 +319,7 @@ msgstr "Ördek Yavrusu Gibi Öğrenci Yetiştirmek"
 #: site/course/course-content.php:1404 site/course/course-content.php:4354
 #: site/course/course-content.php:4375 site/pages/follow-jesus.php:253
 msgid "Eyes to See Where the Kingdom Isn’t"
-msgstr ""
+msgstr "Krallığın Olmadığı Yerleri Gören Gözler"
 
 #: globals.php:2108 site/pages/follow-jesus.php:254
 msgid ""
@@ -346,7 +346,7 @@ msgstr ""
 #: site/course/course-content.php:1409 site/course/course-content.php:4358
 #: site/course/course-content.php:4379
 msgid "The Lord’s Supper"
-msgstr ""
+msgstr "Rab’bin Sofrası"
 
 #: globals.php:2131 site/pages/follow-jesus.php:310
 msgid "Prayer Walking and How To Do It"
@@ -357,6 +357,8 @@ msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
+"Bu, Tanrı’nın başkaları için dua etme buyruğuna uymanın iyi bir yoludur. "
+"Üstelik tıpkı duyulduğu gibidir, yürürken Tanrı'ya dua etmek!"
 
 #: globals.php:2133 site/course/course-content.php:1520
 #: site/course/course-content.php:1528 site/course/course-content.php:1537
@@ -373,6 +375,8 @@ msgstr "Esenlik Sever Biri Kimdir ve Nasıl Bulunur"
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
+"Esenliksever bir insanın kim olabileceğini ve onu bulduğunuzu nasıl "
+"anlayabileceğinizi öğrenin."
 
 #: globals.php:2145 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
@@ -389,6 +393,8 @@ msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
+"Öğrencilerin bildikleri önemlidir ama sadece bilmekten ziyade yaptıkları çok "
+"daha önemlidir."
 
 #: globals.php:2157 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4730
@@ -408,7 +414,7 @@ msgstr ""
 
 #: globals.php:2169 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "B.E.D.S.R. Duası"
 
 #: globals.php:2179 site/pages/follow-jesus.php:226
 msgid "3/3 Group Meeting Pattern"
@@ -420,6 +426,10 @@ msgid ""
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
+"Bir 3/3 Grubu İsa’nın öğrencilerinin bir araya gelmeleri, dua etmeleri, "
+"öğrenmeleri, büyümeleri, paydaşlık kurmaları, itaat etmeleri ve "
+"öğrendiklerini paylaşmaları için bir yoldur. Bu şekilde, bir 3/3 Grubu "
+"sadece bir küçük grup değil aynı zamanda bir Temel Kilisedir."
 
 #: globals.php:2181
 msgid "3/3 Group"
@@ -467,6 +477,8 @@ msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
+"Öğrenci yetiştirmenin doğrusal bir çizgide olmak zorunda olmadığını görün. "
+"Aynı anda birçok farklı şey olabilir."
 
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
@@ -497,6 +509,7 @@ msgstr "Her Zaman İki Kilisenin Bir Parçası"
 #: globals.php:2240
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
 msgstr ""
+"Giderek VE kalarak İsa’nın buyruklarına nasıl itaat edeceğinizi öğrenin."
 
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
@@ -606,25 +619,27 @@ msgstr ""
 
 #: globals.php:2323
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "3-Döngülü Müjde Sunumu"
 
 #: globals.php:2324
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"3-Döngülü müjde sunumu, kağıt üzerine çizilebilecek basit bir görsel "
+"kullanarak müjdeyi anlatma yoludur."
 
 #: globals.php:2325
 msgid "3-Circles"
-msgstr ""
+msgstr "3-Döngü"
 
 #: globals.php:5808 site/activities/three-month-plan.php:94
 msgid "Question"
-msgstr ""
+msgstr "Soru"
 
 #: globals.php:5808 site/activities/three-month-plan.php:95
 msgid "Answer"
-msgstr ""
+msgstr "Cevap"
 
 #: globals.php:7103 site/course/presenter.php:197
 #: site/dashboard/dashboard.php:274 site/dashboard/wizard.php:170
@@ -636,27 +651,28 @@ msgstr "Kapatın"
 
 #: globals.php:7305
 msgid "No Results"
-msgstr ""
+msgstr "Sonuç Yok"
 
 #: site/activities/coaching-checklist-host.php:97
 msgid "H.O.S.T."
-msgstr ""
+msgstr "D.İ.P.E."
 
 #: site/activities/coaching-checklist-host.php:98
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr ""
+"Dinle, İtaat Et, Paylaş, Eğit metodunu kullanarak kendinizi değerlendirin."
 
 #: site/activities/coaching-checklist-host.php:104
 #: site/activities/coaching-checklist-mawl.php:106
 #: site/activities/coaching-checklist-two.php:105
 #: site/activities/coaching-checklist.php:207
 msgid "Training Tools/Concepts"
-msgstr ""
+msgstr "Eğitim Araçları/Kavramları"
 
 #: site/activities/coaching-checklist-host.php:119
 #: site/activities/coaching-checklist-two.php:120
 msgid "Ask yourself, have I"
-msgstr ""
+msgstr "Kendinize sorun, acaba Ben…"
 
 #: site/activities/coaching-checklist-host.php:125
 #: site/activities/coaching-checklist-host.php:163
@@ -698,7 +714,7 @@ msgstr "Birini Eğittim"
 #: site/activities/coaching-checklist-two.php:186
 #: site/activities/coaching-checklist.php:250 site/dashboard/dashboard.php:239
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "Ben daha önce bu aracı veya kavramı duymuş muydum?"
 
 #: site/activities/coaching-checklist-host.php:169
 #: site/activities/coaching-checklist-two.php:190
@@ -707,6 +723,9 @@ msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"Daha önce bu araca veya kavrama itaat etmiş miydim? Eğer bir araçsa, kendi "
+"başıma mı uyguladım? Eğer kavramsa, bakış açınızı nasıl değiştirdiği "
+"üzerinde düşündünüz mü?"
 
 #: site/activities/coaching-checklist-host.php:173
 #: site/activities/coaching-checklist-two.php:194
@@ -715,6 +734,9 @@ msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"Bu aracı veya kavramı paylaştım mı? Eğer araçsa, herhangi birine bu aracı "
+"nasıl kullanabileceğinizi gösterdiniz mi? Eğer bir kavramsa, bu kavramı "
+"herhangi biriyle paylaştınız mı?"
 
 #: site/activities/coaching-checklist-host.php:177
 #: site/activities/coaching-checklist-two.php:198
@@ -724,20 +746,25 @@ msgid ""
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"Bu aracı veya kavramı paylaşmaları için başkalarını eğittim mi? Eğer bir "
+"araçsa, aracı başkasıyla paylaşması için birini eğittim mi? Eğer bir "
+"kavramsa, kavramı başkasıyla paylaşması için birini eğittim mi?"
 
 #: site/activities/coaching-checklist-mawl.php:48
 #: site/activities/coaching-checklist-mawl.php:98
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.Y.İ.A."
 
 #: site/activities/coaching-checklist-mawl.php:99
 msgid "Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"Örnek Ol, Yardımcı Ol, İzle, Ayrıl metodunu kullanarak başkalarına koçluk "
+"yapın."
 
 #: site/activities/coaching-checklist-mawl.php:121
 #: site/activities/coaching-checklist-two.php:140
 msgid "Ask yourself, what does my disciple need"
-msgstr ""
+msgstr "Kendinize şöyle sorun; öğrencimin neye ihtiyacı var?"
 
 #: site/activities/coaching-checklist-mawl.php:126
 #: site/activities/coaching-checklist-mawl.php:164
@@ -746,7 +773,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Model"
-msgstr ""
+msgstr "Örnek Ol"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:168
@@ -755,7 +782,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Assist"
-msgstr ""
+msgstr "Yardımcı Ol"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:172
@@ -765,7 +792,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:288
 #: site/course/course-content.php:1813 site/course/course-content.php:4742
 msgid "Watch"
-msgstr ""
+msgstr "İzle"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:176
@@ -774,7 +801,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Leave"
-msgstr ""
+msgstr "Ayrıl"
 
 #: site/activities/coaching-checklist-mawl.php:166
 #: site/activities/coaching-checklist-two.php:205
@@ -786,6 +813,11 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"Modelleme, basitçe bir uygulama veya araç örneği sunmaktır. Eğitim "
+"döngüsünün en kısa bölümüdür. Genelde sadece bir kez yapılması yeterlidir. "
+"Bu basitçe bir uygulama veya aracın var olduğuna dair bir farkındalık "
+"yaratmak ve nasıl bir şey olduğuna dair genel bir fikir vermeyi içerir. "
+"Defalarca modelleme yapmak birini donatmak açısından etkili bir yol değildir."
 
 #: site/activities/coaching-checklist-mawl.php:170
 #: site/activities/coaching-checklist-two.php:209
@@ -799,6 +831,13 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"Yardımcı olmak, öğrencinin beceriyi uygulamasına izin vermektir. Bu, "
+"modelleme aşamasından daha uzun sürer. Mentorun “elinden tutmasını” "
+"gerektirir. Mentorun yönlendirici olması ve öğrenciye koçluk yaparken aktif "
+"bir rol üstlenmesi gerekir. Bu aşama, öğrenci tamamen yeterli olana kadar "
+"değil, sadece becerinin temellerini anlayana kadar sürer. Eğer bu aşama çok "
+"uzun sürerse, öğrenci mentora bağımlı hale gelecek ve asla tam yeterliliğe "
+"ulaşamayacaktır."
 
 #: site/activities/coaching-checklist-mawl.php:174
 #: site/activities/coaching-checklist-two.php:213
@@ -810,6 +849,11 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"İzlemek, en uzun aşamadır. Öğrenci ile daha dolaylı temas içerir. Bir "
+"beceriyi tüm yönleriyle tam yeterlilikle geliştirmeyi amaçlar. Bu süreç ilk "
+"iki aşamanın toplamından on kat ya da daha uzun olabilir. Öğrenci beceride "
+"ilerledikçe, mentor ile olan iletişim daha az düzenli ve daha geçici hale "
+"gelebilir."
 
 #: site/activities/coaching-checklist-mawl.php:178
 #: site/activities/coaching-checklist-two.php:217
@@ -820,161 +864,175 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"Ayrılma, öğrencinin mentorun akranı haline geldiği bir mezuniyet gibidir. "
+"Öğrenci ve mentor aynı iletişim ağındaysa periyodik temas ve akran "
+"mentorluğu devam edebilir. Bir ebeveynin çocuğunu tamamen denetimsiz bir "
+"şekilde bisiklet sürmesi için serbest bırakması, bu aşamanın BIRAKMA aşaması "
+"olduğunu gösterir."
 
 #: site/activities/coaching-checklist-two.php:98
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr ""
+"1. Dinle, İtaat Et, Paylaş, Eğit metodunu kullanarak kendinizi değerlendirin."
 
 #: site/activities/coaching-checklist-two.php:99
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"2. Örnek Ol, Yardımcı Ol, İzle, Ayrıl metodunu kullanarak başkalarına koçluk "
+"yapın."
 
 #: site/activities/coaching-checklist.php:107
 #: site/activities/coaching-checklist.php:247
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Öz Değerlendirme"
 
 #: site/activities/coaching-checklist.php:127
 #: site/activities/coaching-checklist.php:263
 msgid "Mentee Development Level"
-msgstr ""
+msgstr "Mentor Adayı Gelişim Seviyesi"
 
 #: site/activities/coaching-checklist.php:133
 #: site/activities/coaching-checklist.php:266
 msgid "Unaware"
-msgstr ""
+msgstr "Farkında Olmayan"
 
 #: site/activities/coaching-checklist.php:136
 #: site/activities/coaching-checklist.php:269
 msgid "Unskilled"
-msgstr ""
+msgstr "Vasıfsız"
 
 #: site/activities/coaching-checklist.php:139
 #: site/activities/coaching-checklist.php:272
 msgid "Competent"
-msgstr ""
+msgstr "Yetkin"
 
 #: site/activities/coaching-checklist.php:142
 #: site/activities/coaching-checklist.php:275
 msgid "Skilled"
-msgstr ""
+msgstr "Becerikli"
 
 #: site/activities/coaching-checklist.php:147
 #: site/activities/coaching-checklist.php:279
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Mentorun Rolü"
 
 #: site/activities/coaching-checklist.php:153
 #: site/activities/coaching-checklist.php:282
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "Yeni bilgileri öğretmek ve anlaşılmasını sağlamak"
 
 #: site/activities/coaching-checklist.php:156
 #: site/activities/coaching-checklist.php:285
 msgid "Stop and stay with them until they have the basics"
-msgstr ""
+msgstr "Temel bilgileri öğrenene kadar durun ve onlarla kalın."
 
 #: site/activities/coaching-checklist.php:159
 #: site/activities/coaching-checklist.php:288
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "Sürekli olarak yetkin olana kadar etkileşimde kalın"
 
 #: site/activities/coaching-checklist.php:162
 #: site/activities/coaching-checklist.php:291
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Onlarla ortak olarak ilişki kurun"
 
 #: site/activities/coaching-checklist.php:167
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Mentorun Davranışları"
 
 #: site/activities/coaching-checklist.php:173
 msgid "Direct and inform"
-msgstr ""
+msgstr "Yönlendirme ve bilgilendirme"
 
 #: site/activities/coaching-checklist.php:176
 msgid "Direct and support"
-msgstr ""
+msgstr "Yönlendirme ve destekleme"
 
 #: site/activities/coaching-checklist.php:179
 msgid "Support and encourage"
-msgstr ""
+msgstr "Destekleme ve teşvik etme"
 
 #: site/activities/coaching-checklist.php:182
 msgid "Receive updates"
-msgstr ""
+msgstr "Güncellemeleri almak"
 
 #: site/activities/coaching-checklist.php:187
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Sorumlulukları Planlamak"
 
 #: site/activities/coaching-checklist.php:193
 msgid "Mentor decides"
-msgstr ""
+msgstr "Mentor karar verir"
 
 #: site/activities/coaching-checklist.php:196
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Tartışma ve Mentor kararı"
 
 #: site/activities/coaching-checklist.php:199
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Tartışma ve Mentor adayı kararı"
 
 #: site/activities/coaching-checklist.php:202
 msgid "Mentee decides"
-msgstr ""
+msgstr "Mentor adayı karar verir"
 
 #: site/activities/coaching-checklist.php:266
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
+"Mentor adayı aracın farkında değil mi, bilmiyor mu veya yanlış mı anlıyor?"
 
 #: site/activities/coaching-checklist.php:269
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
-msgstr ""
+msgstr "Mentor adayı araca kısmen aşina ama hala emin değil mi?"
 
 #: site/activities/coaching-checklist.php:272
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
-msgstr ""
+msgstr "Mentor Adayı aracı anlıyor mu ve aracın temellerini öğretebiliyor mu?"
 
 #: site/activities/coaching-checklist.php:275
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
+"Mentor Adayı kendine güveniyor mu ve aracı etkili bir şekilde öğretebiliyor "
+"mu?"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
 msgid "Disciple"
-msgstr ""
+msgstr "Öğrenci"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
 msgid "Unbeliever"
-msgstr ""
+msgstr "İmanlı Olmayan"
 
 #: site/activities/list-of-100-printable.php:89
 #: site/activities/list-of-100.php:87
 msgid "Unknown"
-msgstr ""
+msgstr "Bilinmeyen"
 
 #: site/activities/three-month-plan-printable.php:46
 #: site/activities/three-month-plan.php:66 site/dashboard/dashboard.php:213
 msgid "3-Month Plan"
-msgstr ""
+msgstr "3 Aylık Plan"
 
 #: site/activities/three-month-plan.php:67
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "Yazdırılabilir Versiyona Geçin"
 
 #: site/activities/three-month-plan.php:80
 msgid "Scripts are off"
-msgstr ""
+msgstr "Komut dosyaları kapalı"
 
 #: site/activities/three-month-plan.php:81
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"Bu interaktif sayfayı kullanmak için lütfen komut dosyalarını açın. Aksi "
+"takdirde yukarıdaki bağlantıyı kullanarak yazdırılabilir sürümü "
+"kullanabilirsiniz."
 
 #: site/activities/three-month-plan.php:92 site/dashboard/dashboard.php:186
 #: site/dashboard/wizard.php:298 site/profile/profile.php:153
@@ -1004,6 +1062,10 @@ msgid ""
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
 msgstr ""
+"Tanrı'nın hikayesini (müjde olarak da adlandırılır) anlatmanın \"en iyi "
+"yolu\" yoktur, çünkü en iyi yol kiminle paylaştığınıza bağlı olacaktır. Her "
+"öğrenci Tanrı'nın hikayesini Kutsal Yazılar'a sadık kalacak ve paylaştığı "
+"kitleyle bağlantı kuracak şekilde anlatmayı öğrenmelidir."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:22
 #: site/course/_strings-3-circle-gospel-presentation.php:60
@@ -1027,7 +1089,7 @@ msgstr "TARTIŞIN"
 #: site/course/_strings-3-circle-gospel-presentation.php:61
 #: site/course/course-builder.php:196
 msgid "(10 min)"
-msgstr ""
+msgstr "(10 dakika)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:27
 #: site/course/course-content.php:873
@@ -1035,6 +1097,8 @@ msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
 msgstr ""
+"Tanrı'nın \"tanığı\" olma ve hikayesini anlatma buyruğunu duyduğunuzda "
+"aklınıza ne geliyor?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:874
@@ -1042,12 +1106,16 @@ msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
 msgstr ""
+"Sizce İsa iyi haberini paylaşmak için neden sıradan insanlar yerine başka "
+"bir yol seçmedi?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:875
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
 msgstr ""
+"Tanrı'nın hikayesini paylaşırken kendinizi daha rahat hissetmeniz için ne "
+"gerekir?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:38
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1070,7 +1138,7 @@ msgstr "İZLEYİN"
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-builder.php:195
 msgid "(5 min)"
-msgstr ""
+msgstr "(5 dakika)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:42
 #: site/course/course-content.php:800 site/course/course-content.php:851
@@ -1084,6 +1152,8 @@ msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
+"Tanrı'nın iyi haberini paylaşmanın bir yolu da 3 Döngü adı verilen görsel "
+"bir sunum kullanmaktır."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:65
 #: site/course/course-content.php:916
@@ -1101,6 +1171,8 @@ msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
 msgstr ""
+"Sizce böyle bir hikaye anlatarak Tanrı'nın hikayesini paylaşmak daha mı "
+"kolay yoksa daha mı zor olurdu?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:78
 #: site/course/_strings-3-circle-gospel-presentation.php:103
@@ -1115,27 +1187,30 @@ msgstr ""
 #: site/course/course-content.php:4210 site/course/course-content.php:4495
 #: site/course/course-content.php:4896
 msgid "ACTIVITY"
-msgstr ""
+msgstr "ETKİNLİK"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:83
 #: site/course/_strings-3-circle-gospel-presentation.php:108
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr ""
+msgstr "QR kodunu taratın veya bir parça kağıt bulun."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 msgid "Select a person from your list of 100."
-msgstr ""
+msgstr "100 kişilik listenizden birini seçin."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"Koçluk kontrol listesini kullanın ve seçtiğiniz kişiyi değerlendirin. "
+"Kendinize \"Bu kişinin her bir araç ve kavram için neye ihtiyacı var?\" diye "
+"sorun."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid "Check off the checklist."
-msgstr ""
+msgstr "Kontrol listesini işaretleyin."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:93
 #: site/course/_strings-3-circle-gospel-presentation.php:115
@@ -1150,90 +1225,92 @@ msgstr ""
 #: site/course/course-content.php:3682 site/course/course-content.php:3954
 #: site/course/course-content.php:4508 site/course/course-content.php:4910
 msgid "Activity Resource"
-msgstr ""
+msgstr "Etkinlik Kaynağı"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
 msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Kendinizi değerlendirin- Kendinizi değerlendirin ve Koçluk Kontrol "
+"Listesindeki ilgili alanları işaretleyin."
 
 #: site/course/course-builder.php:194
 msgid "(1 min)"
-msgstr ""
+msgstr "(1 dakika)"
 
 #: site/course/course-builder.php:197
 msgid "(15 min)"
-msgstr ""
+msgstr "(15 dakika)"
 
 #: site/course/course-builder.php:198
 msgid "(20 min)"
-msgstr ""
+msgstr "(20 dakika)"
 
 #: site/course/course-builder.php:199
 msgid "(25 min)"
-msgstr ""
+msgstr "(25 dakika)"
 
 #: site/course/course-builder.php:200
 msgid "(30 min)"
-msgstr ""
+msgstr "(30 dakika)"
 
 #: site/course/course-builder.php:201
 msgid "(35 min)"
-msgstr ""
+msgstr "(35 dakika)"
 
 #: site/course/course-builder.php:202
 msgid "(40 min)"
-msgstr ""
+msgstr "(40 dakika)"
 
 #: site/course/course-builder.php:203
 msgid "(45 min)"
-msgstr ""
+msgstr "(45 dakika)"
 
 #: site/course/course-builder.php:204
 msgid "(50 min)"
-msgstr ""
+msgstr "(50 dakika)"
 
 #: site/course/course-builder.php:205
 msgid "(55 min)"
-msgstr ""
+msgstr "(55 dakika)"
 
 #: site/course/course-builder.php:206
 msgid "(60 min)"
-msgstr ""
+msgstr "(60 dakika)"
 
 #: site/course/course-builder.php:207
 msgid "(65 min)"
-msgstr ""
+msgstr "(65 dakika)"
 
 #: site/course/course-builder.php:208
 msgid "(70 min)"
-msgstr ""
+msgstr "(70 dakika)"
 
 #: site/course/course-builder.php:209
 msgid "(75 min)"
-msgstr ""
+msgstr "(75 dakika)"
 
 #: site/course/course-builder.php:210
 msgid "(80 min)"
-msgstr ""
+msgstr "(80 dakika)"
 
 #: site/course/course-builder.php:211
 msgid "(85 min)"
-msgstr ""
+msgstr "(85 dakika)"
 
 #: site/course/course-builder.php:212
 msgid "(90 min)"
-msgstr ""
+msgstr "(90 dakika)"
 
 #: site/course/course-builder.php:213
 msgid "(60 - 90 min)"
-msgstr ""
+msgstr "(60-90 dakika)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3106 site/course/course-content.php:3111
 msgid "SESSION 1"
-msgstr ""
+msgstr "1. DERS"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1292,7 +1369,7 @@ msgstr "KONTROL EDİN"
 #: site/course/course-content.php:5843 site/course/course-content.php:5892
 #: site/course/course-content.php:5941
 msgid "Have all of the participants and facilitator check-in."
-msgstr ""
+msgstr "Tüm katılımcıların ve yöneticinin giriş yapmasını sağlayın."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1313,7 +1390,7 @@ msgstr ""
 #: site/course/course-content.php:5846 site/course/course-content.php:5895
 #: site/course/course-content.php:5944
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "Veya zume.eğitimi/giriş ve kodu kullanın:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1368,11 +1445,11 @@ msgstr "GENEL BAKIŞ"
 #: site/course/course-content.php:4728 site/course/course-content.php:5030
 #: site/course/course-content.php:5155 site/course/course-content.php:5417
 msgid "In this session, we will hear and discuss these concepts:"
-msgstr ""
+msgstr "Bu derste bu kavramları işitip tartışacağız:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr ""
+msgstr "Öğrenci & Kilise’nin Temel Tanımı"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1382,7 +1459,7 @@ msgstr "Ruhsal Nefes"
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2900
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "Alet çantamıza da şu araçları ekleyeceğiz:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
@@ -1394,6 +1471,8 @@ msgstr "K.İ.T.A.P. Yöntemi"
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
+"Tanrı büyük bir etki yaratmak için basit işler yapan sıradan insanları "
+"kullanır."
 
 #: site/course/course-content.php:136
 msgid ""
@@ -1412,6 +1491,8 @@ msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
 msgstr ""
+"Bu resim ile videoda \"Basit Kilise\" olarak tarif edilen şey arasındaki "
+"fark nedir?"
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
@@ -1422,10 +1503,12 @@ msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
+"Ruhsal anlamda nefes almak. Nefes alırız. Nefes veririz. Hayattayız. Tanrı’"
+"yı duymak ve O’na itaat etmek de böyledir."
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr ""
+msgstr "Tanrı’nın sesini duymak ve tanımak neden çok önemlidir?"
 
 #: site/course/course-content.php:226
 msgid ""
@@ -1446,13 +1529,15 @@ msgstr ""
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "A.G.U.D.P.’ları uygulayın."
 
 #: site/course/course-content.php:274
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"QR kodunu taratın ve Matta 6:9-13'ü referans alarak A.G.U.D.P. Kutsal Kitap "
+"çalışma modeli üzerinde bireysel olarak çalışın. (20 dakika)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -1460,11 +1545,11 @@ msgstr "AYET"
 
 #: site/course/course-content.php:277
 msgid "Observation"
-msgstr ""
+msgstr "Gözlem"
 
 #: site/course/course-content.php:278
 msgid "Application"
-msgstr ""
+msgstr "Uygulama"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:198
@@ -1473,26 +1558,30 @@ msgstr "DUA"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
-msgstr ""
+msgstr "Paylaşma"
 
 #: site/course/course-content.php:282
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
+"Bir araya gelin ve iki ya da üç kişilik gruplar halinde A.G.U.D.P.'larınızı "
+"paylaşın. (10 dakika)"
 
 #: site/course/course-content.php:304
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
 msgstr ""
+"Kutsal Kitap bize İsa'yı izleyen herkesin bir gün yaptıklarından, "
+"söylediklerinden ve düşündüklerinden sorumlu tutulacağını söyler."
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "Güvenilirlik Grupları hazırlanmak için harika bir yoldur!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr ""
+msgstr "Güvenilirlik Gruplarıyla Uygulama Yapın"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -1501,7 +1590,7 @@ msgstr ""
 #: site/course/course-content.php:2991 site/course/course-content.php:3946
 #: site/course/course-content.php:4901
 msgid "Scan the QR code."
-msgstr ""
+msgstr "QR kodunu taratın."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -1514,6 +1603,8 @@ msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
+"Sonraki 20 dakikayı Güvenilirlik Soruları üzerinde birlikte çalışarak "
+"geçirin."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -1530,7 +1621,7 @@ msgstr ""
 #: site/course/course-content.php:5301 site/course/course-content.php:5444
 #: site/course/course-content.php:5567
 msgid "REVIEW"
-msgstr ""
+msgstr "DEĞERLENDİRME"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -1540,14 +1631,14 @@ msgstr ""
 #: site/course/course-content.php:5047 site/course/course-content.php:5173
 #: site/course/course-content.php:5447
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "Bu derste işitilmiş olan kavramlar:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2773
 #: site/course/course-content.php:3071
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "Bu derste işitilmiş olan araçlar:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -1597,27 +1688,36 @@ msgid ""
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"Rab'den, tanıdığınız ve imanlı olan en az beş kişiyi her gün kendi "
+"S.O.A.P.S. Kutsal Kitap okuma uygulamalarına başlamaya davet etmeniz için "
+"size rehberlik etmesini isteyin ve sonra bunu yapın."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3217 site/course/course-content.php:3222
 msgid "SESSION 2"
-msgstr ""
+msgstr "2. DERS"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3256
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"Grubun birlikte dua edebilmesi için gruptaki herhangi birinin belli "
+"ihtiyaçları olup olmadığını sorun."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3257
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"Sözünde, halkı dua ettiğinde onları dinleyip eyleme geçeceğini vaat ettiği "
+"için Tanrı'ya şükredin."
 
 #: site/course/course-content.php:442
 msgid "Ask God’s Holy Spirit to lead your time together."
 msgstr ""
+"Tanrı'nın Kutsal Ruhu'ndan birlikte geçirdiğiniz zamanı yönlendirmesini "
+"isteyin."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -1634,7 +1734,7 @@ msgstr ""
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
 msgid "LOOK BACK"
-msgstr ""
+msgstr "BİR ÖNCEKİ DERSLERE BAKIN"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -1651,7 +1751,7 @@ msgstr ""
 #: site/course/course-content.php:5269 site/course/course-content.php:5402
 #: site/course/course-content.php:5539 site/course/course-content.php:5665
 msgid "Before getting started, take some time to look back."
-msgstr ""
+msgstr "Başlamadan önce, önceki derslere bakmak için zaman ayırın."
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -1671,6 +1771,8 @@ msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
 msgstr ""
+"Son dersin sonunda, grubunuzdaki herkesin öğrendiklerini uygulaması "
+"söylenmişti."
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -1696,13 +1798,13 @@ msgstr ""
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2896 site/course/course-content.php:5284
 msgid "In this session, we will hear and discuss this concept:"
-msgstr ""
+msgstr "Bu derste bu kavramı işitip tartışacağız:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3531 site/course/course-content.php:3551
 msgid "Producer Not Consumer"
-msgstr ""
+msgstr "Tüketici Değil Üretici"
 
 #: site/course/course-content.php:476 site/course/course-content.php:537
 #: site/course/course-content.php:546 site/course/course-content.php:670
@@ -1732,6 +1834,8 @@ msgid ""
 "Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
 "you already practice?"
 msgstr ""
+"Yukarıda detaylı verilen dört alandan (dua, Tanrı’nın Sözü, vs.) hangilerini "
+"uyguladınız?"
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
@@ -1752,11 +1856,11 @@ msgstr ""
 
 #: site/course/course-content.php:571 site/course/course-content.php:3674
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr ""
+msgstr "Bir saat süre ile bireysel olarak Dua Döngüsü'nde dua edin."
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
+msgstr "Dua döngüsü rehberini telefonunuza indirmek için QR kodunu taratın."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3675
 msgid ""
@@ -1792,16 +1896,21 @@ msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
 msgstr ""
+"Tanrı bize \"gidin ve öğrenciler yetiştirin\" diyerek ihtiyaç duyduğumuz "
+"ilişkileri zaten vermiştir."
 
 #: site/course/course-content.php:614
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
 msgstr ""
+"Bunlar ailemiz, arkadaşlarımız, komşularımız, iş arkadaşlarımız ve sınıf "
+"arkadaşlarımızdır, yani hayatımız boyunca tanıdığımız veya belki de yeni "
+"tanıştığımız insanlardır."
 
 #: site/course/course-content.php:615
 msgid "Stewarding the relationships you have is the best place to start."
-msgstr ""
+msgstr "Sahip olduğunuz ilişkileri gözetmek, başlamak için en iyi noktadır."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
@@ -1809,23 +1918,27 @@ msgstr "Kendi 100 kişilik listenizi oluşturun"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
-msgstr ""
+msgstr "QR kodu taratın veya bir parça kağıt kullanın."
 
 #: site/course/course-content.php:644
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
+"Herkesin kendi ilişki listesini oluşturması için grubunuza 30 dakika zaman "
+"verin. Yazabildiğiniz kadar çok yazın."
 
 #: site/course/course-content.php:645
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
 msgstr ""
+"Daha sonra Tanrı ile olan ilişkilerinin tahminini yazın: öğrenci, imanlı "
+"olmayan veya tanımadığınız biri."
 
 #: site/course/course-content.php:682
 msgid "Obey"
-msgstr ""
+msgstr "İtaat"
 
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:164
 #: site/pages/_strings-mobile-pwa.php:36 site/pages/share.php:81
@@ -1839,6 +1952,9 @@ msgid ""
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
 msgstr ""
+"Bu hafta 100 kişilik listenizden \"İmanlı Olmayan\" ya da \"Bilinmeyen\" "
+"olarak işaretlediğiniz beş kişi için dua edin. Tanrı'dan onların yüreklerini "
+"Kendi hikayesine karşı açık olmaları için hazırlamasını isteyin."
 
 #: site/course/course-content.php:687 site/course/course-content.php:3571
 msgid ""
@@ -1846,27 +1962,34 @@ msgid ""
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
+"Tanrı'ya 100 Kişilik Liste aracını kiminle paylaşmanızı istediğini sorun. "
+"Ayrılmadan önce bu kişinin adını grupla paylaşın ve bir sonraki dersten önce "
+"bu kişiye ulaşın."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6020
 msgid "To saturate the world with multiplying disciples in our generation."
-msgstr ""
+msgstr "Bizim kuşağımızda çoğalan öğrencilerle dünyayı donatmak."
 
 #: site/course/course-content.php:699 site/course/course-content.php:6022
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
+"Zúme, öğrenci yetiştirme hareketini görmek isteyenler için bir uygulama "
+"topluluğudur."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3340 site/course/course-content.php:3345
 msgid "SESSION 3"
-msgstr ""
+msgstr "3. DERS"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3773
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
 msgstr ""
+"Bir önceki derste Tanrı'yı tecrübe ettiğiniz için dua edin, O'na şükredin ve "
+"Kutsal Ruh'unu birlikte geçirdiğiniz zamanı yönetmeye davet edin."
 
 #: site/course/course-content.php:819
 msgid ""
@@ -1875,12 +1998,18 @@ msgid ""
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
+"Bu bozulmuş dünyada, insanlar aldıkça, elde ettikçe ve çevrelerindekilerden "
+"daha fazla kazandıkça ödüllendirildiklerini hissederler. Fakat Tanrı’nın "
+"Ruhsal Ekonomisi farklıdır; Tanrı, kendilerine zaten verilmiş olana sadık "
+"kalanlara daha fazla katkıda bulunur."
 
 #: site/course/course-content.php:844
 msgid ""
 "What are some differences you see between God’s Spiritual Economy and our "
 "earthly way of getting things done?"
 msgstr ""
+"Tanrı’nın Ruhsal Ekonomisi ile bizim dünyasal yöntemlerimiz arasında nasıl "
+"farklar görüyorsunuz?"
 
 #: site/course/course-content.php:890
 msgid ""
@@ -1888,18 +2017,21 @@ msgid ""
 "Judgement – from the beginning of humankind all the way to the end of this "
 "age."
 msgstr ""
+"Tanrı'nın iyi haberini paylaşmanın bir yolu, Yaratılış'tan Yargı'ya, yani "
+"insanlığın başından bu çağın sonuna kadar uzanan Tanrı'nın hikayesini "
+"anlatmaktır."
 
 #: site/course/course-content.php:931
 msgid "Share the Gospel"
-msgstr ""
+msgstr "Müjde’yi Paylaşmak"
 
 #: site/course/course-content.php:934
 msgid "Break into groups of two or three people."
-msgstr ""
+msgstr "İki veya üç kişilik gruplara ayrılın."
 
 #: site/course/course-content.php:935
 msgid "Take turns telling the Gospel to each other."
-msgstr ""
+msgstr "Sırayla birbirinize Müjde'yi anlatın."
 
 #: site/course/course-content.php:959
 msgid ""
@@ -1942,7 +2074,7 @@ msgstr ""
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:249
 msgid "The Spiritual Economy"
-msgstr ""
+msgstr "Ruhsal İşleyiş"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3984
 msgid ""
@@ -1950,6 +2082,9 @@ msgid ""
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
 msgstr ""
+"Tanrı'ya Yaratılış'tan Yargı'ya uzanan hikayesini (ya da Tanrı'nın "
+"hikayesini paylaşmanın başka bir yolunu) öğretmeniz için kimi eğitmenizi "
+"istediğini sorun. Ayrılmadan önce bu kişinin adını grupla paylaşın."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3985
 msgid ""
@@ -1957,41 +2092,52 @@ msgid ""
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
+"Bu hafta Tanrı'nın hikayesi üzerinde çalışın ve sonra bunu 100 kişilik "
+"listenizden “İmanlı olmayan\" ya da \"Bilinmeyen\" olarak işaretlediğiniz en "
+"az bir kişiyle paylaşın."
 
 #: site/course/course-content.php:1038
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
+"ÖNEMLİ HATIRLATMA: Bir sonraki derste grubunuz Rab’bin Sofrasını kutlayacak. "
+"Gerekli malzemeleri unutmadığınızdan emin olun (ekmek ve şarap/meyve suyu)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4261
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
+"ÖNEMLİ HATIRLATMA: Bir sonraki derste grubunuz Rab’bin Sofrasını kutlayacak. "
+"Gerekli malzemeleri unutmadığınızdan emin olun (ekmek ve şarap/meyve suyu)."
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3462 site/course/course-content.php:3467
 msgid "SESSION 4"
-msgstr ""
+msgstr "4. DERS"
 
 #: site/course/course-content.php:1109
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
 msgstr ""
+"Dua edin ve bizleri İyi Haberini başkalarıyla paylaşmaya davet ettiği için "
+"Tanrı'ya şükredin."
 
 #: site/course/course-content.php:1110
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"Grubunuzun her üyesine Mesih'in anlayışını vermesini ve her birini Kendi "
+"Ruhu'yla doldurmasını isteyin."
 
 #: site/course/course-content.php:1146 site/course/course-content.php:1155
 #: site/course/course-content.php:1164 site/course/course-content.php:1408
 #: site/course/course-content.php:4077 site/course/course-content.php:4094
 #: site/course/course-content.php:4200 site/course/course-content.php:4235
 msgid "Three-Minute Testimony"
-msgstr ""
+msgstr "Üç Dakikalık Tanıklık"
 
 #: site/course/course-content.php:1165
 msgid ""
@@ -2000,23 +2146,29 @@ msgid ""
 "with God is called your Testimony. It’s powerful, and it’s something no one "
 "can share better than you."
 msgstr ""
+"İsa'nın takipçileri olarak bizler O'nun \"tanıklarıyız\", çünkü İsa'nın "
+"yaşamlarımız üzerindeki etkisi hakkında \"tanıklık\" ederiz. Tanrı'yla olan "
+"ilişkinize dair hikayenize Tanıklık denir. Bu çok güçlüdür ve hiç kimse "
+"sizin tanıklığınızı sizden daha iyi paylaşamaz."
 
 #: site/course/course-content.php:1189
 msgid "Practice sharing your testimony"
-msgstr ""
+msgstr "Tanıklığınızı paylaşmanız konusunda pratik yapın"
 
 #: site/course/course-content.php:1192
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr ""
+msgstr "Hikayenizi yazarken sadece üç dakika tutmaya çalışın (10 dakika)"
 
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
 msgstr ""
+"İki ya da üç kişilik gruplara ayrılın ve anlatma alıştırması yapın. (20 "
+"dakika)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
-msgstr ""
+msgstr "Büyük - Daha Büyük - En Büyük Bereket"
 
 #: site/course/course-content.php:1242
 msgid ""
@@ -2055,6 +2207,9 @@ msgid ""
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
 msgstr ""
+"Öğrenciliğin hangi alanında (Kutsal Kitap'ı okumak/anlamak, dua etmek, "
+"Tanrı'nın hikayesini paylaşmak, vs) daha fazla bilgi edinmek istersiniz? "
+"Öğrenmenize yardımcı olabilecek kişi kimdir?"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2067,6 +2222,7 @@ msgstr ""
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
 msgstr ""
+"Hiç Tanrı’nın Egemenliğinin olmadığı yeri düşünmek için zaman ayırdınız mı?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -2083,6 +2239,8 @@ msgid ""
 "Who are you more comfortable sharing with -- people you already know or "
 "people you haven’t met, yet?"
 msgstr ""
+"Kimlerle daha rahat paylaşımda bulunuyorsunuz; zaten tanıdığınız kişilerle "
+"mi yoksa henüz tanışmadığınız kişilerle mi?"
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
@@ -2092,6 +2250,7 @@ msgstr "Neden bu şekilde düşünüyorsunuz?"
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr ""
+"Zorlandığınız insanlarla paylaşmak konusunda nasıl daha iyi olabilirsiniz?"
 
 #: site/course/course-content.php:1354
 msgid ""
@@ -2104,12 +2263,14 @@ msgstr ""
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
-msgstr ""
+msgstr "Rab’bin Sofrasını Kutlayın"
 
 #: site/course/course-content.php:1381
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
 msgstr ""
+"Sonraki 10 dakikayı grubunuzla birlikte Rab'bin Sofrası'nı kutlamak için "
+"ayırın."
 
 #: site/course/course-content.php:1424
 msgid ""
@@ -2117,40 +2278,52 @@ msgid ""
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
+"Bu hafta Üç Dakikalık Tanıklığınızı pratik etmek için zaman ayırın ve "
+"ardından bunu 100 kişilik listenizden “İmanlı Olmayan\" veya \"Tanımadığınız "
+"Biri\" olarak işaretlediğiniz en az bir kişiyle paylaşın."
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4251
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
+"Tanrı'ya Üç Dakikalık Tanıklık aracıyla kimi eğitmenizi istediğini sorun. "
+"Ayrılmadan önce bu kişinin adını grupla paylaşın."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3592 site/course/course-content.php:3597
 msgid "SESSION 5"
-msgstr ""
+msgstr "5. DERS"
 
 #: site/course/course-content.php:1485
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
+"Halkının tanıklığı aracılığıyla gerçekleştirdiği işler için dua edin ve "
+"Tanrı'ya şükredin. Birlikte geçirdiğiniz zamanı yönetmesi için Kutsal Ruh'u "
+"davet edin."
 
 #: site/course/course-content.php:1519 site/course/course-content.php:4603
 #: site/course/course-content.php:4623
 msgid "B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "B.E.D.S.R. Duası"
 
 #: site/course/course-content.php:1538
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
+"Dua Yürüyüşü, Tanrı'nın başkaları için dua etme buyruğuna itaat etmenin "
+"basit bir yoludur. Tıpkı duyulduğu gibi; yürürken Tanrı'ya dua etmektir!"
 
 #: site/course/course-content.php:1567
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
 msgstr ""
+"İsa'nın takipçilerinin çok az olduğu bir yerde bile bir esenliksever kişi "
+"bulunabilir ve öğrenci yetiştirme süreci hızla ilerleyebilir."
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -2166,26 +2339,32 @@ msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"Çevrenizde Egemenliğin varlığının çok az olduğu (ya da hiç olmadığı) bir "
+"topluluk ya da toplumsal kesim var mı?"
 
 #: site/course/course-content.php:1595
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
+"Esenliksever biri (AÇIK, HOŞGÖRÜLÜ, DİĞERLERİNİ TANIYAN ve PAYLAŞAN biri) "
+"Müjde'nin o toplumda yayılmasını nasıl hızlandırabilir?"
 
 #: site/course/course-content.php:1611
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "B.E.D.S.R. duasını uygulayın."
 
 #: site/course/course-content.php:1614
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
+"İki ya da üç kişilik gruplara ayrılın ve B.E.D.S.R. Duası'nın beş alanını "
+"birbirinizin üzerinde dua ederek uygulayın."
 
 #: site/course/course-content.php:1627
 msgid "Prayer Walking Activity"
-msgstr ""
+msgstr "Dua Yürüyüşü Etkinliği"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4500
 msgid ""
@@ -2212,29 +2391,35 @@ msgstr ""
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
-msgstr ""
+msgstr "Ders, dua yürüyüşü etkinliği ile sona erer."
 
 #: site/course/course-content.php:1660
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"Dua Yürüyüşü etkinliğinize başlamadan önce, birlikte geçirdiğiniz zamanı "
+"sonlandırmak için grubunuzla birlikte dua etmeyi unutmayın."
 
 #: site/course/course-content.php:1661
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
 msgstr ""
+"Bizler de dahil olmak üzere kayıpları, sonuncuları ve dışlanmışları sevdiği "
+"için Tanrı'ya şükredin!"
 
 #: site/course/course-content.php:1662
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"O'ndan hem sizin hem de yürüyüşünüz sırasında karşılaşacağınız kişilerin "
+"yüreğini O'nun işleyişine hazırlamasını isteyin."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3734 site/course/course-content.php:3739
 msgid "SESSION 6"
-msgstr ""
+msgstr "6. DERS"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4569
 msgid ""
@@ -2242,17 +2427,20 @@ msgid ""
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
 msgstr ""
+"Dua edin ve son derste yaptıklarından dolayı Tanrı'ya şükredin, itaat "
+"etmekte zorlandığınızda O'ndan yardım isteyin ve birlikte geçirdiğiniz "
+"zamanı yönetmesi için Kutsal Ruh'unu davet edin."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
 msgid "Faithfulness is Better than Knowledge"
-msgstr ""
+msgstr "Sadakat Bilgiden Daha İyidir"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3533
 #: site/course/course-content.php:4356 site/course/course-content.php:4601
 #: site/course/course-content.php:5288
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Alet kutumuza şu aracı ekleyeceğiz:"
 
 #: site/course/course-content.php:1757 site/course/course-content.php:1807
 #: site/course/course-content.php:1816 site/course/course-content.php:1864
@@ -2264,7 +2452,7 @@ msgstr ""
 #: site/course/course-content.php:4892 site/course/course-content.php:4899
 #: site/course/course-content.php:4925
 msgid "3/3 Group Meeting"
-msgstr ""
+msgstr "3/3 Grup Toplantısı"
 
 #: site/course/course-content.php:1775
 msgid ""
@@ -2272,12 +2460,17 @@ msgid ""
 "right things. It’s important what disciples know – but it’s much more "
 "important what they DO with what they know."
 msgstr ""
+"Öğrencilerin çoğalmasına yardımcı olduğumuzda, doğru şeylerin çoğaldığından "
+"emin olmamız gerekir. Öğrencilerin bildikleri önemlidir fakat bildikleriyle "
+"ne yaptıkları çok daha önemlidir."
 
 #: site/course/course-content.php:1800
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
 msgstr ""
+"Tanrı'nın zaten bildiğiniz buyruklarını düşünün. Bunlara itaat etme ve "
+"paylaşma konusunda ne kadar \"sadıksınız\"?"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4746
 msgid ""
@@ -2295,6 +2488,9 @@ msgid ""
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
 msgstr ""
+"3/3 Grubu ile geçmişte parçası olduğunuz (ya da duyduğunuz) bir Kutsal Kitap "
+"Çalışması ya da Küçük Grup arasında herhangi bir değişiklik olduğunu "
+"gördünüz mü? Eğer gördüyseniz, bu farklılıklar grubunuzu nasıl etkiler?"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4761
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
@@ -2307,6 +2503,8 @@ msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
 msgstr ""
+"Bu hafta 3/3 Grup çalışmanız sırasında verdiğiniz sözlere bağlı kalarak "
+"itaat etmeye, eğitmeye ve paylaşmaya zaman ayırın."
 
 #: site/course/course-content.php:1880 site/course/course-content.php:4794
 msgid ""
@@ -2321,18 +2519,21 @@ msgstr ""
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3862 site/course/course-content.php:3867
 msgid "SESSION 7"
-msgstr ""
+msgstr "7. DERS"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4854
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
+"Grubun İsa'yı sadakatle izlemeye olan bağlılığı için dua edin, Tanrı'ya "
+"şükredin ve Tanrı'nın Kutsal Ruhu'nu birlikte geçirdiğiniz zamana öncülük "
+"etmesi için davet edin."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
 msgid "The Training Cycle"
-msgstr ""
+msgstr "Eğitim Döngüsü"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -2368,18 +2569,24 @@ msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
+"BİR ÖNCEKİ DERSLERE BAKIN - Birbirinizi gözden geçirmek için geçen dersin "
+"İtaat Etme, Eğitme ve Paylaşma konularını değerlendirin. (30 dakika)"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
+"ARAŞTIRIN - Grubunuzun okuma parçası olarak Markos 5:1-20'yi ele alın ve "
+"Araştır bölümünde 1-4 arası soruları yanıtlayın. (30 dakika)"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
+"İLERİYE BAKIN - İtaat etme, Eğitme ve Paylaşma yöntemlerinizi geliştirmek "
+"için İleriye Bakış bölümündeki 5, 6 ve 7. soruları kullanın. (30 dakika)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2393,7 +2600,7 @@ msgstr "En zorlayıcı olan neydi? Neden?"
 #: site/course/course-content.php:3549 site/course/course-content.php:4617
 #: site/course/course-content.php:5304
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "Bu derste işitilecek olan kavram:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3302
 #: site/course/course-content.php:3423 site/course/course-content.php:3553
@@ -2402,24 +2609,28 @@ msgstr ""
 #: site/course/course-content.php:4621 site/course/course-content.php:4923
 #: site/course/course-content.php:5308 site/course/course-content.php:5570
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "Bu derste işitilecek olan araç:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5065
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"Zúme'de öğrendiğiniz bir beceri veya kavramı seçin ve bunu dördüncü nesle "
+"aktarması için birine mentorluk yapın."
 
 #: site/course/course-content.php:2100
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
 msgstr ""
+"Mentorluk yaptığınız kişiyi, süreci bir başka (beşinci) nesle devam "
+"ettirmesi için cesaretlendirin."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4007 site/course/course-content.php:4012
 msgid "SESSION 8"
-msgstr ""
+msgstr "8. DERS"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5127
 msgid ""
@@ -2433,7 +2644,7 @@ msgstr ""
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
-msgstr ""
+msgstr "Alet çantamızdaki şu aracı pratik edeceğiz:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -2457,20 +2668,24 @@ msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
 msgstr ""
+"ARAŞTIRIN – Grubunuzun okuma bölümü olarak Elçilerin İşleri 2:42-47’yi ele "
+"alın ve 1-4 sorularına cevap verin (30 dakika)."
 
 #: site/course/course-content.php:2258
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
 msgstr ""
+"İLERİYE BAKIN – Nasıl İtaat edeceğinizi, Eğiteceğinizi ve Paylaşacağınızı "
+"geliştirmek için 5. 6. ve 7. soruları ele alın. (30 dakika)"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
-msgstr ""
+msgstr "Bu dersteki kavram:"
 
 #: site/course/course-content.php:2281
 msgid "Tool from this session:"
-msgstr ""
+msgstr "Bu dersteki araç:"
 
 #: site/course/course-content.php:2298
 msgid ""
@@ -2478,6 +2693,9 @@ msgid ""
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
+"100 kişilik listenizde yer alan imanlılardan birkaç kişi seçin. Onlara "
+"Önderlik Çemberlerini açıklayın ve bir çemberin parçası olmak isteyip "
+"istemeyeceklerini öğrenin."
 
 #: site/course/course-content.php:2299
 msgid ""
@@ -2485,11 +2703,14 @@ msgid ""
 "before your group meets again. Challenge them to then share it with someone "
 "else."
 msgstr ""
+"Grubunuz tekrar bir araya gelmeden önce, Tanrı’nın Liderlik Çemberini "
+"kiminle paylaşmanızı istediğini anlamak için dua edin. Sonra da başkalarıyla "
+"paylaşması için o kişiyi teşvik edin."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4131 site/course/course-content.php:4136
 msgid "SESSION 9"
-msgstr ""
+msgstr "9. DERS"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5389
 msgid ""
@@ -2498,17 +2719,22 @@ msgid ""
 "always focused on His Father‘s work. Ask the Holy Spirit to lead your time "
 "together and make it the best session yet."
 msgstr ""
+"Tanrı'nın yolları bizim yollarımız olmadığı ve düşünceleri bizim "
+"düşüncelerimiz olmadığı için dua edin ve O'na şükredin. Tanrı'dan grubunuzun "
+"her üyesine Mesih'in anlayışını vermesini ve her zaman Baba'nın işine "
+"odaklanmalarını isteyin. Kutsal Ruh'tan birlikte geçirdiğiniz zamanı "
+"yönetmesini ve şimdiye kadarki en iyi ders olmasını isteyin."
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2769
 msgid "Non-Sequential Growth"
-msgstr ""
+msgstr "Eşit Olmayan Büyüme"
 
 #: site/course/course-content.php:2396 site/course/course-content.php:2635
 #: site/course/course-content.php:2641 site/course/course-content.php:2776
 #: site/course/course-content.php:5419 site/course/course-content.php:5449
 msgid "Four Fields"
-msgstr ""
+msgstr "Dört Alan"
 
 #: site/course/course-content.php:2415
 msgid ""
@@ -2516,6 +2742,9 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
+"İnsanlar çoğalan öğrencileri olduğunu düşündüğünde, bunun genelde adım adım "
+"ilerleyen bir süreç olduğunu düşünürler. Sorun şu ki, en iyi işleyiş şekli "
+"bu değildir!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -2544,6 +2773,8 @@ msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
 msgstr ""
+"Tanrı'nın hız önceliğine daha iyi uyum sağlamak için düşüncelerinizde, "
+"eylemlerinizde ya da tutumunuzda neyi değiştirmeniz gerekiyor?"
 
 #: site/course/course-content.php:2488
 msgid ""
@@ -2556,6 +2787,9 @@ msgid ""
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"İsa bize yakın olmamız gerektiğini; küçük, ruhsal bir aile olarak yaşamamız, "
+"birbirimizi sevmemiz ve birbirimiz için hayatlarımızı vermemiz, birlikte "
+"kutlama yapmamız ve acı çekmemiz gerektiğini öğretti."
 
 #: site/course/course-content.php:2507
 msgid ""
@@ -2563,6 +2797,9 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"Bununla birlikte, İsa bize evlerimizi ve sevdiklerimizi geride bırakmayı, O’"
+"nu paylaşmak ve yeni ruhsal aileler kurmak için her yere gitmeye istekli "
+"olmayı da öğretti."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -2570,43 +2807,57 @@ msgid ""
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
 msgstr ""
+"Bir ailenin sürekli büyümesi ve büyümek için bölünmesi yerine, büyüyen ve "
+"çoğalan yenilerini dünyaya getirecek tutarlı bir ruhsal aileyi devam "
+"ettirmenin ne gibi avantajları vardır?"
 
 #: site/course/course-content.php:2549
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"Koçluk Kontrol Listesi, tam donanımlı bir öğrenci olmanın çeşitli "
+"aşamalarında başkalarına yardımcı olurken size rehberlik etmesi için "
+"kullanabileceğiniz basit bir araçtır."
 
 #: site/course/course-content.php:2576
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"1'inci satırı kullanarak kendinizi değerlendirin ve Koçluk Kontrol "
+"Listesindeki ilgili sütunları işaretleyin."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
 msgstr ""
+"Hangi araçları ve kavramları iyi bir şekilde öğretebileceğinizi hissettiniz?"
 
 #: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
-msgstr ""
+msgstr "Hangi araçları ve kavramları iyi eğitmekte zorlanacağınızı hissettiniz?"
 
 #: site/course/course-content.php:2598
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
+"Kontrol listesine ekleyeceğiniz veya çıkaracağınız herhangi bir araç veya "
+"kavram var mı? Neden?"
 
 #: site/course/course-content.php:2610
 msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
+"UNUTMAYIN – Koçluk Kontrol Listesi sonuçlarınızı bir ortağınızla veya başka "
+"bir mentor ile paylaştığınızdan emin olun."
 
 #: site/course/course-content.php:2611
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"Eğer bir koçunuz veya mentorunuz yoksa, QR kodunu taratıp istek oluşturun."
 
 #: site/course/course-content.php:2616 site/dashboard/dashboard.php:204
 #: site/dashboard/wizard.php:228 site/pages/about.php:254
@@ -2623,18 +2874,24 @@ msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"Dört Alan ve Nesilsel Haritalama, büyümekte olan hareket çalışmalarına "
+"hizmet etmek üzere tasarlanmış araçlardır."
 
 #: site/course/course-content.php:2627
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"HATIRLATMA: Zúme koçları bu araçları yerel bölgenizde uygulamanıza yardım "
+"etmek için hazırlardır."
 
 #: site/course/course-content.php:2642
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"İsa, her şeyin nasıl gittiğini gözden geçirmek için öğrencilerini sık sık "
+"hizmetten uzaklaştırıp daha sakin yerlere çekerdi."
 
 #: site/course/course-content.php:2643
 msgid ""
@@ -2642,74 +2899,94 @@ msgid ""
 "Kingdom activity around them. It especially helps leaders balance efforts, "
 "so that no field is overlooked."
 msgstr ""
+"Dört Alan, bir liderlik çemberi tarafından güncel çalışmalar ve bunların "
+"çevresindeki Egemenlik faaliyetleri üzerinde düşünmek için kullanılır. "
+"Özellikle liderlerin çabalarını dengelemelerine yardımcı olur, böylece "
+"hiçbir alan gözden kaçırılmaz."
 
 #: site/course/course-content.php:2644
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
-msgstr ""
+msgstr "Sonraki iki slaytı gözden geçirin: Alan Tanımları ve Dört Alan Örneği"
 
 #: site/course/course-content.php:2655
 msgid "Field Descriptions"
-msgstr ""
+msgstr "Alan Tanımları"
 
 #: site/course/course-content.php:2657
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"Boş Alan: Egemenliği nerede ya da kiminle [hangi insanlar arasında] "
+"genişletmeyi planlıyorsunuz?"
 
 #: site/course/course-content.php:2658
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"Tohumlama Alanı: Egemenliğin iyi haberini nerede ya da kiminle "
+"paylaşıyorsunuz? Bunu nasıl yapıyorsunuz?"
 
 #: site/course/course-content.php:2659
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"Büyüme Alanı: İnsanları nasıl donatıyor ve onları ruhsal olarak, bireysel "
+"olarak ve doğal iletişim ağlarında nasıl büyütüyorsunuz?"
 
 #: site/course/course-content.php:2660
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
-msgstr ""
+msgstr "Hasat Alanı: Yeni ruhsal aileler [basit kiliseler] nasıl oluşuyor?"
 
 #: site/course/course-content.php:2661
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"Çoğalma Alanı: Sadık insanları bulmak için kimleri, nasıl ve ne zaman "
+"süzgeçten geçiriyor, onları donatıyor ve çoğalmaları için sorumlu "
+"tutuyorsunuz?"
 
 #: site/course/course-content.php:2675 site/course/course-content.php:2678
 msgid "Four Fields Example"
-msgstr ""
+msgstr "Dört Alan Örneği"
 
 #: site/course/course-content.php:2695 site/course/course-content.php:2745
 msgid "Discuss"
-msgstr ""
+msgstr "Tartışma"
 
 #: site/course/course-content.php:2699
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"Çevrenizdeki boş bir alanı belirleyin. Bağlantılı olduğunuz hangi "
+"topluluklar ya da insan gruplarında müjde çalışmaları yok?"
 
 #: site/course/course-content.php:2700
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"Alanlardan biri ihmal edilirse uzun vadeli büyüme nasıl etkilenir? Örnekler "
+"verin."
 
 #: site/course/course-content.php:2701
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "Hangi Zúme araçları hangi alanda yardımcı olabilir?"
 
 #: site/course/course-content.php:2716
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
+"Nesilsel haritalama (diğer adıyla kuşak haritalama veya nesil haritalama), "
+"bir hareketin içindeki liderlerin çevrelerindeki büyümeyi anlamalarına "
+"yardımcı olacak bir başka basit araçtır."
 
 #: site/course/course-content.php:2717
 msgid ""
@@ -2718,34 +2995,40 @@ msgid ""
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"Bir veya birden fazla kağıda bir nesil ağacı haritası çizilebilir. Bu "
+"harita, çoğalmanın nerede durduğunu ve eğitimin gerekli olabileceğini "
+"göstermeye yardımcı olur. Hareketin sağlığı liderler için en büyük endişe "
+"kaynağıdır ve verimlilik de sağlığı ölçmenin en iyi yoludur."
 
 #: site/course/course-content.php:2718
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "Bir sonraki slaytta örnekleri görün."
 
 #: site/course/course-content.php:2729
 msgid "Generational Mapping Example"
-msgstr ""
+msgstr "Nesilsel Haritalama Örneği"
 
 #: site/course/course-content.php:2748
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "Aşağıdakileri tartışmak için Nesilsel Haritalama örneğini kullanın:"
 
 #: site/course/course-content.php:2750
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "Hangi liderler çoğalmaya tanık oluyor?"
 
 #: site/course/course-content.php:2751
 msgid "Which groups would you expect to multiply next?"
-msgstr ""
+msgstr "Bundan sonra hangi grupların çoğalmasını beklersiniz?"
 
 #: site/course/course-content.php:2752
 msgid "Which leaders could help and strengthen other leaders?"
 msgstr ""
+"Hangi liderler diğer liderlere yardımcı olabilir ve onları güçlendirebilir?"
 
 #: site/course/course-content.php:2753
 msgid "Do you see a pattern of weak accountability in any of the generations?"
 msgstr ""
+"Herhangi bir nesilde yetersiz bir hesap verebilirlik modeli görüyor musunuz?"
 
 #: site/course/course-content.php:2792 site/course/course-content.php:5192
 msgid ""
@@ -2753,6 +3036,9 @@ msgid ""
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"\"Hız\" kavramını bir arkadaşınızla paylaşmayı pratik edin. Rab'den bu "
+"kavramı yüreğinizin ve ruhunuzun derinliklerine yerleştirmesi için dua edin. "
+"Rab'be bunu kiminle paylaşmanızı istediğini sorun."
 
 #: site/course/course-content.php:2793
 msgid ""
@@ -2760,32 +3046,41 @@ msgid ""
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Eğer kendi basit kilisenizi kurduysanız, \"Daima İki Kilisenin Bir Parçası\" "
+"olma kavramını kilisedeki insanlarla paylaşın. Değilse, tanıdığınız başka "
+"bir imanlıyla paylaşın."
 
 #: site/course/course-content.php:2813 site/course/course-content.php:2818
 #: site/course/course-content.php:4284 site/course/course-content.php:4289
 msgid "SESSION 10"
-msgstr ""
+msgstr "10. DERS"
 
 #: site/course/course-content.php:2852
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"Dua edin ve bizdeki iyi işini tamamlamakta sadık olduğu için Tanrı'ya "
+"şükredin. "
 
 #: site/course/course-content.php:2853 site/course/course-content.php:5651
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"Tanrı'nın sizin içinizde ve sizin aracılığınızla yapmasını istediği harika "
+"şeyler için grubunuza açık zihinler ve açık yürekler vermesini isteyin."
 
 #: site/course/course-content.php:2854 site/course/course-content.php:5652
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"Kutsal Ruh'tan birlikte geçirdiğiniz zamanı yönetmesini isteyin ve sadakati "
+"için O'na teşekkür edin. Size yardım eder!"
 
 #: site/course/course-content.php:2879 site/course/course-content.php:5677
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "Cesaretinizi yitirmeyin…"
 
 #: site/course/course-content.php:2880 site/course/course-content.php:5678
 msgid ""
@@ -2803,6 +3098,10 @@ msgid ""
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"Ancak Zúme Eğitimi sadece bir bașlangıçtır! Bu derste, eğitim sonrasında "
+"neler olacağına dair bir plan yapacak ve öğrendiklerinizi uygularken "
+"yolculuğunuzun ilerleyen aşamalarında ihtiyaç duyabileceğiniz araçları "
+"kısaca tanıtacağız."
 
 #: site/course/course-content.php:2921
 msgid ""
@@ -2826,38 +3125,50 @@ msgstr ""
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"Öğrenci yetiştiren öğrenciler yetiştirmek, lider yetiştiren liderler "
+"yetiştirmek demektir."
 
 #: site/course/course-content.php:2965
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"Akran Mentorluk grupları liderleri bir araya getirerek imanları ve "
+"liderlikleri konusunda birbirlerini sevmelerine ve teşvik etmelerine "
+"yardımcı olur."
 
 #: site/course/course-content.php:2989
 msgid "Peer Mentoring Group Practice"
-msgstr ""
+msgstr "Akran Mentorluk Grup Uygulaması"
 
 #: site/course/course-content.php:2992
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
 msgstr ""
+"İki ya da üç kişilik gruplara ayrılın. 3/3 formatındaki Akran Mentorluk "
+"Grubu taslağını kullanın."
 
 #: site/course/course-content.php:2993
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
+"Gruptan bir kişiyi \"mentor adayı\" olarak seçin ve diğer üyelerin akran "
+"mentorlar olarak önerilen sorular listesi üzerinden ilerlemesini isteyin."
 
 #: site/course/course-content.php:3014
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"Tanrı Kutsal Kitap'ta şöyle der: \"Sizin için düşündüğüm tasarıları "
+"biliyorum. Kötü tasarılar değil, size umutlu bir gelecek sağlayan esenlik "
+"tasarıları bunlar.\""
 
 #: site/course/course-content.php:3015
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Tanrı planlar yapar ve bizden de planlar yapmamızı bekler."
 
 #: site/course/course-content.php:3016 site/dashboard/dashboard.php:215
 msgid ""
@@ -2865,48 +3176,61 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
+"Üç Aylık Plan, dikkatinizi ve çabalarınızı odaklamak ve onları çoğalan "
+"öğrenciler yetiştirmek için Tanrı'nın öncelikleriyle aynı seviyede tutmak "
+"için kullanabileceğiniz bir araçtır."
 
 #: site/course/course-content.php:3017
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"Bir sonraki slayt size Üç Aylık Planınızı nasıl oluşturmanız gerektiğini "
+"gösterir. Çevrimiçi aracı kullanmanızı tavsiye ederiz."
 
 #: site/course/course-content.php:3030
 msgid "Make your Three Month Plan"
-msgstr ""
+msgstr "Üç Aylık Planınızı Oluşturun"
 
 #: site/course/course-content.php:3032
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Okuyun – QR kodunu taratın. Her maddeye uymak zorunda değilsiniz, bunlar "
+"planınız için birer ipucu olarak düşünülmüştür. (5 dk)"
 
 #: site/course/course-content.php:3033
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
+"Dinleyin – Mümkün olduğunca sessiz kalmak ve Tanrı’nın açıklamayı "
+"seçtiklerini dinleyebilmek için zaman ayırın. (10 dk)"
 
 #: site/course/course-content.php:3034
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"Planınızı Kaydedin – Bağlılıklarınızı bir kağıt parçasına yazın veya "
+"cevaplarınızı kaydetmek için çevrimiçi aracı kullanın. (15 dk)"
 
 #: site/course/course-content.php:3040
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "Çevrimiçi Plan Aracı"
 
 #: site/course/course-content.php:3053
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr ""
+msgstr "Sırasıyla birbirinizle Üç Aylık Planınızı paylaşın."
 
 #: site/course/course-content.php:3054
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"Sizi haftalık olarak kontrol etmeye istekli olan bir eğitim ortağı/ortakları "
+"bulun. Aynı şeyi onlar için de yapmaya söz verin."
 
 #: site/course/course-content.php:3195
 msgid ""
@@ -2914,83 +3238,112 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"Bu tanımları bir arkadaşınızla paylaşma pratiği yapın ve Rab'be bunları "
+"yüreğinizin ve ruhunuzun derinliklerine yerleştirmesi için dua edin. Rab'be "
+"bunları kiminle paylaşmanızı istediğini sorun."
 
 #: site/course/course-content.php:3196
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"Tanımları Rab'bin sizden bunu yapmanızı istediği kişilerle paylaşın. Sonra "
+"da başka biriyle paylaşmaları için onları donatın."
 
 #: site/course/course-content.php:3258
 msgid "Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
+"Tanrı’nın Kutsal Ruh’undan birlikte geçirdiğiniz zamanı yönlendirmesini "
+"isteyin."
 
 #: site/course/course-content.php:3286 site/course/course-content.php:3407
 #: site/course/course-content.php:3659 site/course/course-content.php:4483
 #: site/course/course-content.php:5554 site/course/course-content.php:5694
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Bu derste alet çantamıza şu aracı ekleyeceğiz."
 
 #: site/course/course-content.php:3379
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Dua edin ve Tanrı’nın hayatlarımızdaki varlığı için şükredin. Grubunuzdaki "
+"herkesin O'nun sesini duyacak kulaklara ve söylediklerine itaat edecek lütfa "
+"sahip olması için dua edin."
 
 #: site/course/course-content.php:3440
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"Bir güvenilirlik ortağı bulun (aynı cinsiyetten) ve onunla haftalık olarak "
+"buluşmaya başlayın."
 
 #: site/course/course-content.php:3441
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"Rab'den, tanıdığınız ve imanlı olan en az beş kişiyi kendi güvenilirlik grup "
+"toplantılarına başlamaya davet etmeniz için size rehberlik etmesini isteyin "
+"ve sonra bunu gerçekleştirin."
 
 #: site/course/course-content.php:3501
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
 msgstr ""
+"Dua edin ve Tanrı'ya bizi İsa gibi yaptığı için şükredin. Birlikte "
+"geçirdiğiniz zamanı yönetmesi için Kutsal Ruh'u davet edin."
 
 #: site/course/course-content.php:3529 site/course/course-content.php:4597
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "Bu derste, şu kavramı duyacak ve üzerinde tartışacağız."
 
 #: site/course/course-content.php:3631
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"Dua edin ve hayatlarımızdaki herkese duyduğu sevgi için Tanrı'ya şükredin. "
+"Gruptaki her bir kişinin çevresindekileri Tanrı'nın onları gördüğü gibi "
+"görebilmesi için dua edin."
 
 #: site/course/course-content.php:3661 site/course/course-content.php:3697
 msgid "The Prayer Cycle"
-msgstr ""
+msgstr "Dua Döngüsü"
 
 #: site/course/course-content.php:3676
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"Eğer esnek zamanınız varsa, bir saatin tümünü kullanın. Her bölüm için 5 "
+"dakikanın tümünde dua edin. Bu, dersi bir saatlik bir eğitimden daha uzun "
+"hale getirir."
 
 #: site/course/course-content.php:3677
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"Eğer uzun bir ders yapamayacaksanız, dua kısımlarını 5 dakikadan 3 dakikaya "
+"indirin."
 
 #: site/course/course-content.php:3712
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"Bu hafta bir saat için dua ederken size yol göstermesi için dua döngüsünü "
+"kullanın."
 
 #: site/course/course-content.php:3713
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"Dua döngüsünü Rab’bin sizi yönlendirdikleriyle paylaşın. Onları da "
+"başkalarıyla paylaşmaları için teşvik edin."
 
 #: site/course/course-content.php:3839
 msgid ""
@@ -2998,6 +3351,9 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"Ruhsal İşleyiş kavramını bir arkadaşınızla pratik yapın ve Rab’den onu "
+"yüreğiniz ve ruhunuzun derinliklerine kazımasını isteyin. Rab'be bunu "
+"kiminle paylaşmanızı istediğini sorun."
 
 #: site/course/course-content.php:3840
 msgid ""
@@ -3005,6 +3361,9 @@ msgid ""
 "them practice it as well. Share this person‘s name with the group before you "
 "go and reach out to them."
 msgstr ""
+"Tanrı'ya, En Büyük Bereketi kiminle paylaşmanızı istediğini sorun. Onların "
+"da bunu uygulamasını sağlayın. Ayrılmadan önce bu kişinin adını grupla "
+"paylaşın ve ona ulaşın."
 
 #: site/course/course-content.php:3901
 msgid ""
@@ -3012,31 +3371,38 @@ msgid ""
 "Jesus, leading others to follow Jesus, and equipping others to start new "
 "spiritual families."
 msgstr ""
+"Grubunuzun her bir üyesini İsa'yı izlemeleri, başkalarını İsa'yı izlemeye "
+"yönlendirmeleri ve onları yeni ruhsal aileler kurmaları için donatmanın "
+"bereketlerini yaşaması için dua edin."
 
 #: site/course/course-content.php:3929 site/course/course-content.php:4198
 #: site/course/course-content.php:4882
 msgid "In this session, we will practice this tool in our toolkit:"
-msgstr ""
+msgstr "Bu derste, alet çantamızdaki şu aracın pratiğini yapacağız:"
 
 #: site/course/course-content.php:3931 site/course/course-content.php:3969
 msgid "Sharing the Gospel"
-msgstr ""
+msgstr "Müjde’yi Paylaşmak"
 
 #: site/course/course-content.php:3944
 msgid "Practice Sharing the Gospel"
-msgstr ""
+msgstr "Müjde’yi Paylaşmayı Pratik Edin"
 
 #: site/course/course-content.php:3947
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
 msgstr ""
+"İki ya da üç kişilik gruplara ayrılın ve birbirinize Tanrı'nın hikayesini "
+"anlatma pratiği yapın."
 
 #: site/course/course-content.php:3948
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
+"Pratik yaptıktan sonra yer değiştirin. Tekrarlama yapmak özgüveni arttırır. "
+"Bitirdiğinizde, Tanrı'nın hikayesini paylaşmaya hazır olacaksınız."
 
 #: site/course/course-content.php:4046
 msgid ""
@@ -3044,10 +3410,13 @@ msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"Dua edin ve bizi İyi Haberini başkalarıyla paylaşmaya davet ettiği için "
+"Tanrı'ya şükredin. Grubunuzun her üyesine Mesih'in anlayışını vermesini ve "
+"her birini Kendi Ruh’uyla doldurmasını isteyin."
 
 #: site/course/course-content.php:4074
 msgid "In this session, we will add these tools to our toolkit:"
-msgstr ""
+msgstr "Bu derste, alet çantamıza şu araçları ekleyeceğiz."
 
 #: site/course/course-content.php:4109
 msgid ""
@@ -3055,6 +3424,9 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
+"İsa'yı izleyen ancak vaftiz olmamış birini tanıyorsanız, onu vaftiz olmaya "
+"davet edin ve onu vaftiz etmeyi teklif edin. Aksi takdirde, bu beceriyi bir "
+"arkadaşınızla pratik edin."
 
 #: site/course/course-content.php:4110
 msgid ""
@@ -3062,22 +3434,30 @@ msgid ""
 "it. Have them practice it as well. Share this person‘s name with the group "
 "before you go and reach out to them before the next session."
 msgstr ""
+"Tanrı'ya vaftizin ne olduğunu ve nasıl yapılacağını, kimlerle paylaşmanızı "
+"istediğini sorun. Onların da bunu pratik etmelerini sağlayın. Ayrılmadan "
+"önce bu kişinin adını grupla paylaşın ve bir sonraki dersten önce ona ulaşın."
 
 #: site/course/course-content.php:4170
 msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
 msgstr ""
+"Dua edin ve Mesih'in ölümü, gömülmesi ve dirilişiyle birlik olma armağanı "
+"için Tanrı'ya şükredin. Tanrı'nın Kutsal Ruhu'ndan birlikte geçireceğiniz "
+"zamanı yönlendirmesini isteyin."
 
 #: site/course/course-content.php:4213
 msgid "Share Your Testimony"
-msgstr ""
+msgstr "Tanıklığınızı Paylaşın"
 
 #: site/course/course-content.php:4215
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
+"Üçer kişilik iki gruba ayrılın ve Üç Dakikalık Tanıklığınızı paylaşma "
+"pratiği yapın."
 
 #: site/course/course-content.php:4216
 msgid ""
@@ -3085,6 +3465,9 @@ msgid ""
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
+"100 kişilik listenizden 5 kişi seçin. Birisinden bu beş kişinin her biri "
+"gibi davranmasını isteyin ve o kişiye anlamlı geleceğini düşündüğünüz bir "
+"şekilde Tanıklığınızı pratik yapın."
 
 #: site/course/course-content.php:4217
 msgid ""
@@ -3092,14 +3475,17 @@ msgid ""
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
+"Pratik yaptıktan sonra yer değiştirin. Başka birinin listedeki beş kişisi "
+"gibi davranın. Bitirdiğinizde, Tanıklığınızı yaklaşık 3 dakika veya daha "
+"kısa sürede anlatabiliyor olmanız gerekir."
 
 #: site/course/course-content.php:4219
 msgid "Repetition builds confidence."
-msgstr ""
+msgstr "Tekrar yapmak özgüven oluşturur."
 
 #: site/course/course-content.php:4233
 msgid "Tool practiced in this session:"
-msgstr ""
+msgstr "Bu derste pratiği yapılan araç:"
 
 #: site/course/course-content.php:4250
 msgid ""
@@ -3107,18 +3493,26 @@ msgid ""
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
+"Bu hafta tanıklığınız üzerinde çalışın ve sonra bunu 100 kişilik listenizde “"
+"İmanlı Olmayan\" ya da \"Tanınmadığınız Biri\" olarak işaretlediğiniz en az "
+"bir kişiyle paylaşın."
 
 #: site/course/course-content.php:4323
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
 msgstr ""
+"Tanıklığımız aracılığıyla gerçekleştirdiği işler için Tanrı'ya dua edip "
+"şükredin ve Kutsal Ruh'unu birlikte geçirdiğiniz zamanı yönetmeye davet edin."
 
 #: site/course/course-content.php:4394
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
+"Eğer aileniz imanlı ise ve yakınlarınızda yaşıyorlarsa, Rab'bin Sofrası’nı "
+"onlarla birlikte düzenleyin. Aksi takdirde, bu beceriyi imanlı bir "
+"arkadaşınızla uygulayın."
 
 #: site/course/course-content.php:4395
 msgid ""
@@ -3126,10 +3520,13 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
+"\"Ördek Yavrusu Öğrenciliği\" ve \"Egemenliğin Olmadığı Yerleri Gören "
+"Gözler\" konularını Rab'bin sizi etkilediği kişilerle paylaşın. Sonra da "
+"başkalarıyla paylaşmaları için onları donanımlı hale getirin."
 
 #: site/course/course-content.php:4416 site/course/course-content.php:4421
 msgid "SESSION 11"
-msgstr ""
+msgstr "11. DERS"
 
 #: site/course/course-content.php:4455
 msgid ""
@@ -3137,52 +3534,68 @@ msgid ""
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
+"Tanrı'nın sizin ve çevrenizdekilerin hayatlarındaki işleyişi için dua edin "
+"ve şükredin. Grubun Egemenliğin henüz olmadığı yerleri görebilecek gözlere "
+"sahip olması için dua edin."
 
 #: site/course/course-content.php:4530 site/course/course-content.php:4535
 msgid "SESSION 12"
-msgstr ""
+msgstr "12. DERS"
 
 #: site/course/course-content.php:4638
 msgid "Pray for someone in their presence using the BLESS pattern this week."
 msgstr ""
+"Bu hafta BLESS kalıbını kullanarak onların yanında durarak birisi için dua "
+"edin."
 
 #: site/course/course-content.php:4639
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
+"BLESS kalıbını kullanarak dua etmesi için bir başkasını donatın ve bunu "
+"yaparken onlara eşlik edin."
 
 #: site/course/course-content.php:4661 site/course/course-content.php:4666
 msgid "SESSION 13"
-msgstr ""
+msgstr "13. DERS"
 
 #: site/course/course-content.php:4700
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
+"Dua edin ve son derste öğrendikleriniz için Tanrı'ya şükredin. Tanrı'nın Ruh’"
+"una öğrendiklerinizi hayata geçirme yolunda sadık olmanıza yardım etmesi "
+"için dua edin."
 
 #: site/course/course-content.php:4815 site/course/course-content.php:4820
 msgid "SESSION 14"
-msgstr ""
+msgstr "14. DERS"
 
 #: site/course/course-content.php:4902
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
+"BİR ÖNCEKİ DERSLERE BAKIN - Birbirinizi kontrol etmek için geçen dersin "
+"İtaat Etme, Eğitme ve Paylaşma konularını kullanın. (15 dk)"
 
 #: site/course/course-content.php:4903
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (15 min)"
 msgstr ""
+"ARAŞTIRIN - Grubunuzun okuma bölümü olarak Markos 5:1-20'yi kullanın ve "
+"Yukarıya Bakış bölümünde 1-4 arası soruları yanıtlayın. (15 dk)"
 
 #: site/course/course-content.php:4904
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (15 min)"
 msgstr ""
+"İLERİYE BAKIN - İtaat Etme, Eğitme ve Paylaşmayı geliştirmek için İleriye "
+"Bakın bölümündeki 5, 6 ve 7. soruları kullanın. (15 dk)"
 
 #: site/course/course-content.php:4940
 msgid ""
@@ -3190,16 +3603,22 @@ msgid ""
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
+"Dua edin ve Tanrı'ya bir 3/3 Grubu kurmanızı isteyip istemediğini sorun. "
+"Eğer istiyorsa, 100 kişilik listenizi gözden geçirin ve Tanrı'ya size "
+"katılmaları için kimleri davet etmeniz gerektiğini sorun. Ardından bu hafta "
+"onları davet edin ve grubu oluşturması için Tanrı'ya güvenin."
 
 #: site/course/course-content.php:4941
 msgid ""
 "Find someone to share the 3/3 Group format with before your group meets "
 "again. Share this person’s name with the group before you go."
 msgstr ""
+"Grubunuz tekrar bir araya gelmeden önce 3/3 Grup formatını paylaşacağınız "
+"birini bulun. Ayrılmadan önce bu kişinin adını grupla paylaşın."
 
 #: site/course/course-content.php:4963 site/course/course-content.php:4968
 msgid "SESSION 15"
-msgstr ""
+msgstr "15. DERS"
 
 #: site/course/course-content.php:5002
 msgid ""
@@ -3207,14 +3626,19 @@ msgid ""
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
+"Gruptan herhangi birinin grubun dua etmesini istediği özel ihtiyaçları olup "
+"olmadığını sorun. Tanrı'ya, Sözü'nde halkı dua ettiğinde onları "
+"dinleyeceğini ve gerekeni yapacağını vaat ettiği için şükredin. Tanrı'nın "
+"Kutsal Ruhu'ndan birlikte geçireceğiniz zamanı yönlendirmesini isteyin."
 
 #: site/course/course-content.php:5066
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
 msgstr ""
+"\"Eğitim Döngüsünü\" 100 kişilik listenizde yer alan bir imanlıyla paylaşın."
 
 #: site/course/course-content.php:5088 site/course/course-content.php:5093
 msgid "SESSION 16"
-msgstr ""
+msgstr "16. DERS"
 
 #: site/course/course-content.php:5193
 msgid ""
@@ -3222,10 +3646,13 @@ msgid ""
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Eğer zaten kendi basit kilisenizi kurduysanız, \"Her Zaman İki Kilisenin "
+"Parçası\" kalıbını kilisedeki insanlarla paylaşın. Değilse, tanıdığınız "
+"başka bir imanlıyla paylaşın."
 
 #: site/course/course-content.php:5217 site/course/course-content.php:5222
 msgid "SESSION 17"
-msgstr ""
+msgstr "17. DERS"
 
 #: site/course/course-content.php:5256
 msgid ""
@@ -3233,6 +3660,10 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Tanrı'nın söz, dua, beden, zulüm ve acı aracılığıyla iletişim kurmaya devam "
+"etmesi için dua edin ve O'na şükredin. Gruptaki her bir kişinin O'nun sesini "
+"duyacak kulaklara ve söylediklerine itaat edecek lütfa sahip olması için dua "
+"edin."
 
 #: site/course/course-content.php:5325
 msgid ""
@@ -3240,38 +3671,50 @@ msgid ""
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
+"Koçluk kontrol listesiyle belirlediğiniz öğrenciyle birlikte atmanız gereken "
+"Model Olma, Yardım Etme, İzleme veya Ayrılma adımlarından birini tanımlayın."
 
 #: site/course/course-content.php:5326
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
+"\"İletişim Ağlarında Liderlik\" kavramını başka biriyle paylaşın. Sonra da "
+"başkalarıyla paylaşmaları için onları eğitin."
 
 #: site/course/course-content.php:5350 site/course/course-content.php:5355
 msgid "SESSION 18"
-msgstr ""
+msgstr "18. DERS"
 
 #: site/course/course-content.php:5434
 msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
+"Tanrı'yı dinlemek için biraz zaman ayırın ve az önce yaptığınız Dört Alan "
+"tartışmasına bağlı olarak sizin veya grubunuzun atması gereken herhangi bir "
+"adım olup olmadığını sorun."
 
 #: site/course/course-content.php:5465
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
+"Zúme eğitim maddelerinin her birini gözden geçirin, her birinin hangi "
+"alan(lar)la ilgili olduğunu belirleyin ve maddelerle birlikte dört alan "
+"çizelgesini işaretleyin."
 
 #: site/course/course-content.php:5466
 msgid ""
 "Share the Generational Mapping tool with another believer you know as a "
 "vision casting exercise."
 msgstr ""
+"Nesilsel Haritalama aracını bir vizyon oluşturma alıştırması olarak "
+"tanıdığınız başka bir imanlıyla paylaşın."
 
 #: site/course/course-content.php:5487 site/course/course-content.php:5492
 msgid "SESSION 19"
-msgstr ""
+msgstr "19. DERS"
 
 #: site/course/course-content.php:5526
 msgid ""
@@ -3279,6 +3722,9 @@ msgid ""
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
+"Dua edin ve Mesih'in Bedeni için Tanrı'ya şükredin. İsa'ya yaklaşırken "
+"grubunuzun her bir üyesi ile karşılıklı sevgi ve teşviğin artarak devam "
+"etmesi için dua edin."
 
 #: site/course/course-content.php:5587
 msgid ""
@@ -3286,89 +3732,100 @@ msgid ""
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
 msgstr ""
+"Zúme eğitim grubunuzla, eğitim bittikten sonra üyelerin bir Akran Mentorluk "
+"Grubu olarak toplanmaya devam etmeye açık olup olmadıklarını tartışın."
 
 #: site/course/course-content.php:5588
 msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
+"\"Akran Mentorluk Grubu\" kavramını 100 kişilik listenizdeki iki imanlıyla "
+"paylaşın."
 
 #: site/course/course-content.php:5611 site/course/course-content.php:5616
 msgid "SESSION 20"
-msgstr ""
+msgstr "20. DERS"
 
 #: site/course/course-content.php:5650
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
+"Dua edin ve bizdeki iyi işini tamamlamakta sadık olduğu için Tanrı'ya "
+"şükredin."
 
 #: site/course/course-content.php:5679
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
+"Yine de Zúme Eğitimi sadece bir başlangıçtır! Bu derste, eğitim sonrasında "
+"neler olacağına dair bir plan yapacağız."
 
 #: site/course/course-content.php:5721 site/course/course-content.php:5726
 msgid "INTENSIVE SESSION 1"
-msgstr ""
+msgstr "YOĞUNLAŞTIRILMIŞ DERS 1"
 
 #: site/course/course-content.php:5772 site/course/course-content.php:5777
 msgid "INTENSIVE SESSION 2"
-msgstr ""
+msgstr "YOĞUNLAŞTIRILMIŞ DERS 2"
 
 #: site/course/course-content.php:5821 site/course/course-content.php:5826
 msgid "INTENSIVE SESSION 3"
-msgstr ""
+msgstr "YOĞUNLAŞTIRILMIŞ DERS 3"
 
 #: site/course/course-content.php:5870 site/course/course-content.php:5875
 msgid "INTENSIVE SESSION 4"
-msgstr ""
+msgstr "YOĞUNLAŞTIRILMIŞ DERS 4"
 
 #: site/course/course-content.php:5919 site/course/course-content.php:5924
 msgid "INTENSIVE SESSION 5"
-msgstr ""
+msgstr "YOĞUNLAŞTIRILMIŞ DERS 5"
 
 #: site/course/course-content.php:5976
 msgid "NEXT STEP"
-msgstr ""
+msgstr "BİR SONRAKİ ADIM"
 
 #: site/course/course-content.php:5979 site/course/course-content.php:5987
 #: site/dashboard/dashboard.php:246 site/parts/nav.php:94
 msgid "Join the Community"
-msgstr ""
+msgstr "Topluluğa Katılın"
 
 #: site/course/course-content.php:5980
 msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
+"Zúme'nin eğitim bölümü sona ermektedir, ancak araçların ve kavramların "
+"uygulanması devam etmektedir."
 
 #: site/course/course-content.php:5981
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
 msgstr ""
+"Tek başınıza yapmayın. Teşvik almak ve gelişebilmek için bir topluluk bulun."
 
 #: site/course/course-content.php:5982
 msgid "Join Zume community using the QR code."
-msgstr ""
+msgstr "QR kodunu kullanarak Zúme topluluğuna katılın."
 
 #: site/course/course-content.php:5996
 msgid "CONGRATULATIONS on completing Zume Training!"
-msgstr ""
+msgstr "Zúme Eğitimini tamamladığınız için TEBRİKLER!"
 
 #: site/course/course-content.php:6008
 msgid "TAKE A BREAK"
-msgstr ""
+msgstr "MOLA VERİN"
 
 #: site/course/presenter.php:131
 msgid "Course Presenter"
-msgstr ""
+msgstr "Kurs Sunucusu"
 
 #: site/course/presenter.php:148
 msgid "Download the offline slides here"
-msgstr ""
+msgstr "Çevrimdışı slaytları buradan indirin"
 
 #: site/course/presenter.php:166
 msgid "Links"
-msgstr ""
+msgstr "Bağlantılar"
 
 #: site/course/presenter.php:168 site/pages/_strings-mobile-pwa.php:11
 msgid "Home"
@@ -3390,23 +3847,23 @@ msgstr "Kaynaklar"
 
 #: site/course/presenter.php:191
 msgid "Exit Course"
-msgstr ""
+msgstr "Kurstan Çık"
 
 #: site/course/presenter.php:192
 msgid "Slide View"
-msgstr ""
+msgstr "Slayt Görüntüsü"
 
 #: site/course/presenter.php:193 site/dashboard/dashboard.php:172
 msgid "List View"
-msgstr ""
+msgstr "Liste Görünümü"
 
 #: site/course/presenter.php:194
 msgid "Next slide"
-msgstr ""
+msgstr "Sonraki slayt"
 
 #: site/course/presenter.php:195
 msgid "Previous slide"
-msgstr ""
+msgstr "Bir önceki slayt"
 
 #: site/course/presenter.php:196
 msgid "Session"
@@ -3414,52 +3871,52 @@ msgstr "Oturum"
 
 #: site/course/presenter.php:198
 msgid "View Transcript"
-msgstr ""
+msgstr "Transkripti Görüntüle"
 
 #: site/course/presenter.php:199
 msgid "View Activity"
-msgstr ""
+msgstr "Aktiviteyi Görüntüle"
 
 #: site/dashboard/checkin-dashboard.php:151
 msgid "Woops"
-msgstr ""
+msgstr "Tüh"
 
 #: site/dashboard/checkin-dashboard.php:153
 msgid "Something went wrong with your checkin process."
-msgstr ""
+msgstr "Giriş işleminizde bir sorun oluştu."
 
 #: site/dashboard/checkin-dashboard.php:158 site/dashboard/dashboard.php:268
 #: utilities/apis/cta-api.php:167 utilities/apis/cta-api.php:286
 #: utilities/apis/cta-api.php:315 utilities/apis/cta-api.php:329
 #: utilities/apis/cta-api.php:358
 msgid "Congratulations!"
-msgstr ""
+msgstr "Tebrikler!"
 
 #: site/dashboard/checkin-dashboard.php:163
 msgid "Checked into session:"
-msgstr ""
+msgstr "Derse giriş yapıldı:"
 
 #: site/dashboard/checkin-dashboard.php:164
-#, php-format
+#, fuzzy, php-format
 msgid "%1$d of %2$d"
-msgstr ""
+msgstr "2$d'nin %1$d'i"
 
 #: site/dashboard/checkin-dashboard.php:167
 msgid "Course Progress:"
-msgstr ""
+msgstr "Kurs Süreci:"
 
 #: site/dashboard/checkin-dashboard.php:168
 #, php-format
 msgid "%d%%"
-msgstr ""
+msgstr "%d%%"
 
 #: site/dashboard/dashboard.php:161 site/dashboard/wizard.php:296
 msgid "Done"
-msgstr ""
+msgstr "Tamamlandı"
 
 #: site/dashboard/dashboard.php:162
 msgid "Edit"
-msgstr ""
+msgstr "Düzenle"
 
 #: site/dashboard/dashboard.php:163 site/pages/_strings-mobile-pwa.php:26
 msgid "Delete"
@@ -3467,23 +3924,23 @@ msgstr "Silin"
 
 #: site/dashboard/dashboard.php:165
 msgid "Active"
-msgstr ""
+msgstr "Aktif"
 
 #: site/dashboard/dashboard.php:166
 msgid "Completed"
-msgstr ""
+msgstr "Tamamlandı"
 
 #: site/dashboard/dashboard.php:167
 msgid "Uncompleted"
-msgstr ""
+msgstr "Tamamlanmadı"
 
 #: site/dashboard/dashboard.php:168
 msgid "Not Heard"
-msgstr ""
+msgstr "Duyulmadı"
 
 #: site/dashboard/dashboard.php:169 site/pages/share.php:121
 msgid "All"
-msgstr ""
+msgstr "Hepsi"
 
 #: site/dashboard/dashboard.php:170 site/profile/profile.php:159
 msgid "Logout"
@@ -3491,27 +3948,27 @@ msgstr "Oturumdan Çıkın"
 
 #: site/dashboard/dashboard.php:171 site/pages/share.php:124
 msgid "Filter"
-msgstr ""
+msgstr "Filtre"
 
 #: site/dashboard/dashboard.php:173
 msgid "Grid View"
-msgstr ""
+msgstr "Kılavuz Görünümü"
 
 #: site/dashboard/dashboard.php:174
 msgid "View Now"
-msgstr ""
+msgstr "Şimdi Görüntüle"
 
 #: site/dashboard/dashboard.php:175
 msgid "Complete Now"
-msgstr ""
+msgstr "Şimdi Tamamla"
 
 #: site/dashboard/dashboard.php:176
 msgid "View"
-msgstr ""
+msgstr "Görüntüle"
 
 #: site/dashboard/dashboard.php:177
 msgid "Menu"
-msgstr ""
+msgstr "Menü"
 
 #: site/dashboard/dashboard.php:178 site/dashboard/wizard.php:191
 #: site/dashboard/wizard.php:237 site/profile/profile.php:116
@@ -3536,7 +3993,7 @@ msgstr "Bağlantılı Hesaplar"
 
 #: site/dashboard/dashboard.php:182
 msgid "Communications Email"
-msgstr ""
+msgstr "İletişim Emaili"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:190
 #: site/profile/profile.php:128
@@ -3545,7 +4002,7 @@ msgstr "Şehir"
 
 #: site/dashboard/dashboard.php:184
 msgid "No Locations found"
-msgstr ""
+msgstr "Lokasyon bulunamadı"
 
 #: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:213
 #: site/dashboard/wizard.php:241 site/pages/_strings-mobile-pwa.php:16
@@ -3556,122 +4013,130 @@ msgstr "Dil"
 
 #: site/dashboard/dashboard.php:187
 msgid "Edit Profile"
-msgstr ""
+msgstr "Profili Düzenle"
 
 #: site/dashboard/dashboard.php:188
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "Zúme kavramına göz atın"
 
 #: site/dashboard/dashboard.php:189
 msgid "Preview"
-msgstr ""
+msgstr "Önizleme"
 
 #: site/dashboard/dashboard.php:190 site/dashboard/dashboard.php:259
 #: site/dashboard/dashboard.php:266
 #, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "Yeni %s ekleyin"
 
 #: site/dashboard/dashboard.php:190
 msgid "Commitment"
-msgstr ""
+msgstr "Adanma"
 
 #: site/dashboard/dashboard.php:191 site/pages/share.php:82
 msgid "Copy Link"
-msgstr ""
+msgstr "Bağlantıyı Kopyala"
 
 #: site/dashboard/dashboard.php:192
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "Bu bağlantıyı kopyalayın ve arkadaşlarınıza gönderin 🙂"
 
 #: site/dashboard/dashboard.php:193 site/pages/share.php:84
 msgid "Thanks!"
-msgstr ""
+msgstr "Teşekkürler!"
 
 #: site/dashboard/dashboard.php:194
 msgid "Link copied"
-msgstr ""
+msgstr "Bağlantı kopyalandı"
 
 #: site/dashboard/dashboard.php:195
 msgid "Getting Started"
-msgstr ""
+msgstr "Başlarken"
 
 #: site/dashboard/dashboard.php:196 utilities/apis/cta-api.php:270
 #: utilities/apis/cta-api.php:272
 msgid "Set Profile"
-msgstr ""
+msgstr "Profili Oluştur"
 
 #: site/dashboard/dashboard.php:197
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "Profilinizi ayarlamak için kısa bir Profil Sihirbazı kullanın"
 
 #: site/dashboard/dashboard.php:198 site/dashboard/wizard.php:260
 msgid "Join or create a training group"
-msgstr ""
+msgstr "Bir eğitim grubuna katılın veya oluşturun"
 
 #: site/dashboard/dashboard.php:199
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"Çevrimiçi eğitimlerimizden birine katılın veya kurulumu kolay sihirbazımızla "
+"kendi eğitim grubunuzu oluşturun"
 
 #: site/dashboard/dashboard.php:200
 msgid "Create Training Group"
-msgstr ""
+msgstr "Eğitim Grubu Oluşturun"
 
 #: site/dashboard/dashboard.php:201
 msgid "Create your own training group with our easy to set up wizard"
-msgstr ""
+msgstr "Kolay kurulum sihirbazımız ile kendi eğitim grubunuzu oluşturun"
 
 #: site/dashboard/dashboard.php:202 site/dashboard/wizard.php:315
 msgid "Join Training Group"
-msgstr ""
+msgstr "Eğitim Grubuna Katılın"
 
 #: site/dashboard/dashboard.php:203
 msgid "Join an online training group run by a coach"
-msgstr ""
+msgstr "Bir koç tarafından verilen bir çevrimiçi eğitim grubuna katılın"
 
 #: site/dashboard/dashboard.php:205
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"Eğitim öncesinde, sırasında veya sonrasında herhangi bir yardım veya teşvik "
+"almak için bir koçla bağlantı kurun."
 
 #: site/dashboard/dashboard.php:207
 msgid "My Progress"
-msgstr ""
+msgstr "Benim Sürecim"
 
 #: site/dashboard/dashboard.php:208
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"Bu interaktif görünüm ile kurs ilerlemenizi takip edin. Dinlemeyi, itaat "
+"etmeyi, paylaşmayı ve öğrendiklerinizle başkalarını eğitmeyi öğrenin."
 
 #: site/dashboard/dashboard.php:209
 msgid "Information about progress"
-msgstr ""
+msgstr "Süreç ile ilgili bilgi"
 
 #: site/dashboard/dashboard.php:210
 msgid "My Training"
-msgstr ""
+msgstr "Eğitimim"
 
 #: site/dashboard/dashboard.php:211
 msgid "My Trainings"
-msgstr ""
+msgstr "Eğitimlerim"
 
 #: site/dashboard/dashboard.php:212
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
+"Eğitim içeriğinize, programınıza, grup ayrıntılarınıza ve paylaşım "
+"araçlarınıza tam erişim."
 
 #: site/dashboard/dashboard.php:214
 msgid "Create Your Plan"
-msgstr ""
+msgstr "Planınızı Oluşturun"
 
 #: site/dashboard/dashboard.php:216
 msgid "Three Month Plan Locked"
-msgstr ""
+msgstr "Üç Aylık Plan Kilitli"
 
 #: site/dashboard/dashboard.php:217
 msgid ""
@@ -3679,68 +4144,76 @@ msgid ""
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"Üç aylık plan, harekete geçmenize ve Zúme kursu boyunca öğrendiğiniz araç ve "
+"kavramları uygulamanıza yardımcı olacak bir araçtır. En çok eğitimi "
+"tamamladıktan sonra işinize yarayacaktır."
 
 #: site/dashboard/dashboard.php:218
 msgid "Unlock now"
-msgstr ""
+msgstr "Kilidi şimdi açın"
 
 #: site/dashboard/dashboard.php:219
 msgid "Practicing"
-msgstr ""
+msgstr "Pratik Yapma"
 
 #: site/dashboard/dashboard.php:220
 msgid "My Coach"
-msgstr ""
+msgstr "Koçum"
 
 #: site/dashboard/dashboard.php:221
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "Koçunuza her zaman hızlı erişim."
 
 #: site/dashboard/dashboard.php:222
 msgid "My Tools"
-msgstr ""
+msgstr "Araçlarım"
 
 #: site/dashboard/dashboard.php:223
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"Kurs boyunca ilerlerken Araçlarım alanınızın kilidi açılacak ve temel "
+"öğrencilik becerilerini uygulayıp geliştirebileceksiniz"
 
 #: site/dashboard/dashboard.php:224
 msgid "My Plans"
-msgstr ""
+msgstr "Planlarım"
 
 #: site/dashboard/dashboard.php:225
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
+"Son derste 3 Aylık planınızı tamamlayarak Planlarım alanının kilidini açın."
 
 #: site/dashboard/dashboard.php:226
 msgid "My Plans are Locked"
-msgstr ""
+msgstr "Planlarım Kilitli"
 
 #: site/dashboard/dashboard.php:227
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"Üç Aylık Planınızı oluşturarak veya kendi adanmışlığınızı ekleyerek bu "
+"alanın kilidini açın."
 
 #: site/dashboard/dashboard.php:228
 msgid "My Churches"
-msgstr ""
+msgstr "Kiliselerim"
 
 #: site/dashboard/dashboard.php:229
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "Topluluğa katılarak Kiliselerim alanının kilidini açabilirsiniz."
 
 #: site/dashboard/dashboard.php:230
 msgid "My Maps"
-msgstr ""
+msgstr "Haritalarım"
 
 #: site/dashboard/dashboard.php:231
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "Haritalarım Kilitli"
 
 #: site/dashboard/dashboard.php:232
 msgid ""
@@ -3749,68 +4222,73 @@ msgid ""
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"Haritalarım, Zúme'nin ABD'de her 5.000 ve dünya çapında 50.000 kişi için 1 "
+"stajyer ve 2 kilise vizyonunu netleştirmeye yardımcı olur. Haritalarım'ın "
+"kilidini açmak için Zúme topluluğuna katılın ve büyük buyruğun yerine "
+"getirildiğini görme konusunda tutkulu olan diğer öğrenci yetiştirenlerle "
+"bağlantı kurun."
 
 #: site/dashboard/dashboard.php:233
 msgid "My Training is Locked"
-msgstr ""
+msgstr "Eğitimim Kilitli"
 
 #: site/dashboard/dashboard.php:234 site/parts/footer.php:25
 #: site/parts/footer.php:28
 msgid "Launch Course"
-msgstr ""
+msgstr "Kursu Başlat"
 
 #: site/dashboard/dashboard.php:235 site/parts/footer.php:29
 #: utilities/integrations/replace-placeholder.php:113
 #: utilities/integrations/replace-placeholder.php:114
 #: utilities/integrations/replace-placeholder.php:115
 msgid "10 Session Course"
-msgstr ""
+msgstr "10 Derslik Kurs"
 
 #: site/dashboard/dashboard.php:236 site/parts/footer.php:30
 #: utilities/integrations/replace-placeholder.php:117
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
 msgid "20 Session Course"
-msgstr ""
+msgstr "20 Derslik Kurs"
 
 #: site/dashboard/dashboard.php:237
 msgid "Intensive Course"
-msgstr ""
+msgstr "Yoğunlaştırılmış Kurs"
 
 #: site/dashboard/dashboard.php:247 site/dashboard/wizard.php:242
 #: site/pages/training.php:146 utilities/apis/cta-api.php:153
 #: utilities/apis/cta-api.php:403
 msgid "Join"
-msgstr ""
+msgstr "Katıl"
 
 #: site/dashboard/dashboard.php:248
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "Bu alana girebilmek için topluluğa katılın."
 
 #: site/dashboard/dashboard.php:249
 msgid "Community links"
-msgstr ""
+msgstr "Topluluk bağlantıları"
 
 #: site/dashboard/dashboard.php:251
 msgid "Previous Slide"
-msgstr ""
+msgstr "Bir önceki slayt"
 
 #: site/dashboard/dashboard.php:252
 msgid "Next Slide"
-msgstr ""
+msgstr "Sonraki Slayt"
 
 #: site/dashboard/dashboard.php:253
 msgid "Group Members"
-msgstr ""
+msgstr "Grup Üyeleri"
 
 #: site/dashboard/dashboard.php:254
 msgid "Mark Completed"
-msgstr ""
+msgstr "Tamamlandı Olarak İşaretle"
 
 #: site/dashboard/dashboard.php:255
 #, php-format
 msgid "Session %d"
-msgstr ""
+msgstr "%d Ders"
 
 #: site/dashboard/dashboard.php:256 site/pages/_strings-mobile-pwa.php:30
 msgid "Start Session"
@@ -3818,69 +4296,69 @@ msgstr "Oturumu Başlat"
 
 #: site/dashboard/dashboard.php:257
 msgid "Show details"
-msgstr ""
+msgstr "Detayları Göster"
 
 #: site/dashboard/dashboard.php:258
 msgid "Edit time"
-msgstr ""
+msgstr "Zamanı Düzenle"
 
 #: site/dashboard/dashboard.php:260
 msgid "Invite Friends"
-msgstr ""
+msgstr "Arkadaşlarını Davet Et"
 
 #: site/dashboard/dashboard.php:261
 msgid "Click to add your first church"
-msgstr ""
+msgstr "İlk kiliseni eklemek için tıkla"
 
 #: site/dashboard/dashboard.php:262
 msgid "Church Name"
-msgstr ""
+msgstr "Kilise adı"
 
 #: site/dashboard/dashboard.php:263
 msgid "Number of People"
-msgstr ""
+msgstr "İnsan Sayısı"
 
 #: site/dashboard/dashboard.php:264
 msgid "Church Location"
-msgstr ""
+msgstr "Kilise Lokasyonu"
 
 #: site/dashboard/dashboard.php:265
 msgid "Parent Church"
-msgstr ""
+msgstr "Ana Kilise"
 
 #: site/dashboard/dashboard.php:266
 msgid "Church"
-msgstr ""
+msgstr "Kilise"
 
 #: site/dashboard/dashboard.php:267
 msgid "cancel"
-msgstr ""
+msgstr "İptal"
 
 #: site/dashboard/dashboard.php:269
 msgid "You have requested a coach"
-msgstr ""
+msgstr "Bir koç talep ettiniz"
 
 #: site/dashboard/dashboard.php:270
 msgid "You have joined a training"
-msgstr ""
+msgstr "Bir eğitime katıldınız"
 
 #: site/dashboard/dashboard.php:271
 msgid "You have set your profile"
-msgstr ""
+msgstr "Profilinizi düzenlediniz"
 
 #: site/dashboard/dashboard.php:272
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s kilidi açıldı"
 
 #: site/dashboard/dashboard.php:272 utilities/apis/cta-api.php:314
 msgid "3 month plan"
-msgstr ""
+msgstr "3 aylık plan"
 
 #: site/dashboard/dashboard.php:273
 msgid "You have joined the community"
-msgstr ""
+msgstr "Topluluğa katıldınız"
 
 #: site/dashboard/dashboard.php:275 site/dashboard/wizard.php:199
 #: site/pages/privacy-policy.php:108
@@ -3889,12 +4367,17 @@ msgid ""
 "of the site and communication, as well as for customer service requests and "
 "coaching."
 msgstr ""
+"Bir kullanıcının gerçek adı veya takma adı, sitenin ve iletişimin kişisel "
+"kalitesini artırmak, ayrıca müşteri hizmetleri talepleri ve koçluk için "
+"gereklidir."
 
 #: site/dashboard/dashboard.php:276 site/pages/privacy-policy.php:114
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"Bir kullanıcının e-mail adresi, bir hesap oluşturmak için gereklidir ve "
+"sitenin işleyişinin bir parçası olarak işlemsel iletişim için kullanılır."
 
 #: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:200
 #: site/pages/privacy-policy.php:117
@@ -3902,6 +4385,8 @@ msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
+"Bir kullanıcının telefon numarası ücretsiz koçluk hizmetini desteklemek için "
+"alınır ve saklanır."
 
 #: site/dashboard/dashboard.php:278 site/dashboard/wizard.php:201
 #: site/pages/privacy-policy.php:120
@@ -3909,6 +4394,9 @@ msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"Site kaynaklarını ve iletişimi kişiselleştirme, kullanıcıları uygun koçluk "
+"ve müşteri hizmetleri kaynaklarına bağlamak için kullanıcının şehir ismi "
+"istenir."
 
 #: site/dashboard/dashboard.php:279 site/dashboard/wizard.php:229
 #: site/pages/privacy-policy.php:111
@@ -3917,77 +4405,86 @@ msgid ""
 "communication functioning, and to help us connect the user with appropriate "
 "coaching and resources."
 msgstr ""
+"Bir kullanıcının dil tercihi, sitenin ve iletişimin düzgün çalışmasını "
+"desteklemek, kullanıcıyı uygun koçluk ve kaynaklarla buluşturmamıza yardımcı "
+"olmak için saklanır."
 
 #: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:316
 msgid "Join key"
-msgstr ""
+msgstr "Katılma anahtarı"
 
 #: site/dashboard/dashboard.php:281 site/pages/checkin.php:88
 #: site/pages/friend-invite.php:78 site/pages/plan-invite.php:78
 #: site/pages/plan-invite.php:174
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "Bilinmeyen kod. Lütfen numarayı kontrol edin."
 
 #: site/dashboard/dashboard.php:282
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "Bu sayfaya girme izniniz yok"
 
 #: site/dashboard/dashboard.php:283
 msgid "There has been an error with your request"
-msgstr ""
+msgstr "Talebinizde bir hata oluştu"
 
 #: site/dashboard/dashboard.php:284
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Koç talebiniz için teşekkür ederiz. Ekibimiz sizi kendi dilinizde ve "
+"bölgenizde uygun bir koçla buluşturmak için çalışmaktadır."
 
 #: site/dashboard/dashboard.php:285
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Lütfen belirttiğiniz iletişim tercihi dahilinde koçunuzdan gelecek iletişimi "
+"takip edin."
 
 #: site/dashboard/dashboard.php:286
 msgid "100 Hour Map"
-msgstr ""
+msgstr "100 Saatlik Harita"
 
 #: site/dashboard/dashboard.php:287
 msgid "Training vision map"
-msgstr ""
+msgstr "Eğitim vizyon haritası"
 
 #: site/dashboard/dashboard.php:288
 msgid "Simple church planting map"
-msgstr ""
+msgstr "Basit kilise kuruluşu haritası"
 
 #: site/dashboard/dashboard.php:289
 msgid "No date"
-msgstr ""
+msgstr "Tarih yok"
 
 #: site/dashboard/dashboard.php:290 site/dashboard/wizard.php:208
 #: zume-training-system.php:318
 msgid "Whatsapp"
-msgstr ""
+msgstr "Whatsapp"
 
 #: site/dashboard/dashboard.php:291 site/dashboard/wizard.php:209
 #: zume-training-system.php:319
 msgid "Signal"
-msgstr ""
+msgstr "Signal"
 
 #: site/dashboard/dashboard.php:292 site/dashboard/wizard.php:210
 #: zume-training-system.php:320
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:211
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook Messenger"
 
 #: site/dashboard/dashboard.php:299
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
+"Kendi Hikayemi [Tanıklığımı] ve Tanrı'nın Hikayesini [Müjdeyi] şu kişilerle "
+"paylaşacağım:"
 
 #: site/dashboard/dashboard.php:300
 msgid ""
@@ -4020,6 +4517,7 @@ msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr ""
+"Şu kişileri 3/3 Umut veya Keşif Grubuna katılmaları için davet edeceğim:"
 
 #: site/dashboard/dashboard.php:305
 msgid ""
@@ -4035,6 +4533,9 @@ msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
+"Şu kişileri kendi hikayelerini ve Tanrı'nın Hikayesini paylaşmaları ve "
+"ilişki ağlarındaki 100 kişinin bir Listesini yapmaları için donanımlı hale "
+"getireceğim:"
 
 #: site/dashboard/dashboard.php:308
 msgid ""
@@ -4071,26 +4572,26 @@ msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "Kötü Sihirbaz"
 
 #: site/dashboard/wizard.php:163
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "Çok kötü büyücülerin arasına düştünüz!"
 
 #: site/dashboard/wizard.php:164
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "Sihirbaz zaten tamamlandı"
 
 #: site/dashboard/wizard.php:165
 msgid "Get back home"
-msgstr ""
+msgstr "Ana sayfaya geri dön"
 
 #: site/dashboard/wizard.php:166 site/login/login-template.php:408
 msgid "Back"
-msgstr ""
+msgstr "Geri"
 
 #: site/dashboard/wizard.php:167 site/dashboard/wizard.php:197
 #: site/dashboard/wizard.php:220 site/dashboard/wizard.php:306
@@ -4100,7 +4601,7 @@ msgstr "Sonraki"
 
 #: site/dashboard/wizard.php:168 site/dashboard/wizard.php:297
 msgid "Skip"
-msgstr ""
+msgstr "Atla"
 
 #: site/dashboard/wizard.php:169 site/pages/_strings-mobile-pwa.php:35
 msgid "Finish"
@@ -4108,11 +4609,11 @@ msgstr "Bitirin"
 
 #: site/dashboard/wizard.php:171
 msgid "No locations found"
-msgstr ""
+msgstr "Lokasyon bulunamadı"
 
 #: site/dashboard/wizard.php:174
 msgid "Zúme Community"
-msgstr ""
+msgstr "Zúme Topluluğu"
 
 #: site/dashboard/wizard.php:175
 msgid ""
@@ -4121,6 +4622,10 @@ msgid ""
 "simple churches for every 5,000 people in the United States and 50,000 "
 "people globally."
 msgstr ""
+"Zúme, öğrenci yetiştirme hareketlerini görmek isteyenler için bir uygulama "
+"ve teşvik verme topluluğudur. Zúme'nin vizyonu, Amerika Birleşik "
+"Devletleri'nde her 5.000 kişi ve dünya çapında 50.000 kişi için bir öğrenci "
+"ve iki basit kilise sağlamaktır."
 
 #: site/dashboard/wizard.php:177
 msgid ""
@@ -4128,10 +4633,13 @@ msgid ""
 "their area. Share your experience with others, and learn from others who are "
 "discovering new things."
 msgstr ""
+"Kendi bölgelerinde öğrenci yetiştirme hareketi görmek isteyen sizin gibi "
+"diğer kişilerle bağlantı kurun. Deneyimlerinizi başkalarıyla paylaşın ve "
+"yeni şeyler keşfeden diğer kişilerden öğrenin."
 
 #: site/dashboard/wizard.php:178
 msgid "Encouragement"
-msgstr ""
+msgstr "Teşvik"
 
 #: site/dashboard/wizard.php:179
 msgid ""
@@ -4139,10 +4647,13 @@ msgid ""
 "country, get reports of  progress, and get connected to online and face-to-"
 "face gatherings."
 msgstr ""
+"Bölgenizdeki ve daha geniş anlamda ülkenizdeki öğrenci yetiştirme "
+"hareketleriyle ilgili haberleri duyun, gelişme raporlarını alın, çevrimiçi "
+"ve yüz yüze toplantılara bağlanın."
 
 #: site/dashboard/wizard.php:180
 msgid "Free Tools"
-msgstr ""
+msgstr "Ücretsiz Araçlar"
 
 #: site/dashboard/wizard.php:181
 msgid ""
@@ -4150,51 +4661,54 @@ msgid ""
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
+"Bölgenizde öğrenci yetiştirme ve kilise kurma çalışmalarını takip etmek için "
+"ücretsiz araçlara erişin. Şehrinizi çoğalan öğrenciler ve kiliselerle "
+"donatmak için bir vizyon haritası edinin."
 
 #: site/dashboard/wizard.php:182
 msgid "Join for Free"
-msgstr ""
+msgstr "Ücretsiz Olarak Katılın"
 
 #: site/dashboard/wizard.php:183
 msgid "Successfully joined community"
-msgstr ""
+msgstr "Topluluğa başarıyla katıldı"
 
 #: site/dashboard/wizard.php:184 site/dashboard/wizard.php:236
 #: site/dashboard/wizard.php:250 site/dashboard/wizard.php:257
 msgid "Something went wrong"
-msgstr ""
+msgstr "Bir Hata Oluştu"
 
 #: site/dashboard/wizard.php:188
 msgid "Complete your profile"
-msgstr ""
+msgstr "Profilinizi Tamamlayın"
 
 #: site/dashboard/wizard.php:192
 msgid "What is your name?"
-msgstr ""
+msgstr "Adınız nedir?"
 
 #: site/dashboard/wizard.php:193
 msgid "What is your phone number?"
-msgstr ""
+msgstr "Telefon numaranız nedir?"
 
 #: site/dashboard/wizard.php:194
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "Telefon numarası yalnızca rakam, parantez ve kısa çizgi içerebilir"
 
 #: site/dashboard/wizard.php:195
 msgid "What city do you live in?"
-msgstr ""
+msgstr "Hangi şehirde yaşıyorsunuz?"
 
 #: site/dashboard/wizard.php:196
 msgid "This is your approximate location."
-msgstr ""
+msgstr "Yaklaşık konumunuz budur."
 
 #: site/dashboard/wizard.php:198
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Gizlilik Politikası"
 
 #: site/dashboard/wizard.php:204
 msgid "What is your contact preference?"
-msgstr ""
+msgstr "İletişim tercihiniz nedir?"
 
 #: site/dashboard/wizard.php:206 zume-training-system.php:316
 msgid "Text"
@@ -4202,7 +4716,7 @@ msgstr "SMS"
 
 #: site/dashboard/wizard.php:212
 msgid "What is your language preference?"
-msgstr ""
+msgstr "Dil tercihiniz nedir?"
 
 #: site/dashboard/wizard.php:214
 msgid "How can we serve you?"
@@ -4210,139 +4724,141 @@ msgstr "Nasıl yardımcı olabiliriz?"
 
 #: site/dashboard/wizard.php:215
 msgid "Coaching"
-msgstr ""
+msgstr "Koçluk"
 
 #: site/dashboard/wizard.php:216
 msgid "Technical Assistance"
-msgstr ""
+msgstr "Teknik Destek"
 
 #: site/dashboard/wizard.php:217
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "Eğitimin uygulanmasına ilişkin sorular"
 
 #: site/dashboard/wizard.php:218
 msgid "Question about the content"
-msgstr ""
+msgstr "İçeriğe ilişkin sorular"
 
 #: site/dashboard/wizard.php:219
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "Bir grup kurduktan sonra ne yapılacağı konusunda yardım"
 
 #: site/dashboard/wizard.php:221
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "Lütfen bu soruya yanıt verin"
 
 #: site/dashboard/wizard.php:222
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
+"Talep Oluşturuldu, sizi yakınınızdaki bir koçla bir araya getirmek için "
+"elimizden geleni yapacağız."
 
 #: site/dashboard/wizard.php:223
 msgid "Sorry. We were unable to submit your request. Please try again later."
-msgstr ""
+msgstr "Üzgünüm. Talebinizi oluşturamadık. Lütfen daha sonra tekrar deneyin."
 
 #: site/dashboard/wizard.php:224
 msgid "You have already requested a coach"
-msgstr ""
+msgstr "Zaten bir koç talep ettiniz"
 
 #: site/dashboard/wizard.php:225
 msgid "Error connecting with a coach"
-msgstr ""
+msgstr "Sizi bir koç ile buluşturmak konusunda hata oluştu"
 
 #: site/dashboard/wizard.php:226
 msgid "Connecting you to a Coach"
-msgstr ""
+msgstr "Sizi bir Koç ile buluşturuyoruz"
 
 #: site/dashboard/wizard.php:227 site/dashboard/wizard.php:233
 #: site/dashboard/wizard.php:247 site/dashboard/wizard.php:254
 msgid "Please wait while we connect you"
-msgstr ""
+msgstr "Lütfen sizi bağlayana kadar bekleyin"
 
 #: site/dashboard/wizard.php:232
 msgid "Joining Plan"
-msgstr ""
+msgstr "Plana Katılmak"
 
 #: site/dashboard/wizard.php:234 site/dashboard/wizard.php:317
 msgid "The training link is broken. Please try again."
-msgstr ""
+msgstr "Eğitim bağlantısı bozuk. Lütfen tekrar deneyin."
 
 #: site/dashboard/wizard.php:235
 #, php-format
 msgid "Successfully joined training %s"
-msgstr ""
+msgstr "%s eğitimine başarıyla katıldı."
 
 #: site/dashboard/wizard.php:238
 msgid "Next Session Date"
-msgstr ""
+msgstr "Bir Sonraki Ders Tarihi"
 
 #: site/dashboard/wizard.php:239
 msgid "Start Time"
-msgstr ""
+msgstr "Süreyi Başlat"
 
 #: site/dashboard/wizard.php:240
 msgid "Timezone"
-msgstr ""
+msgstr "Zaman bölgesi"
 
 #: site/dashboard/wizard.php:243
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "Şu anda mevcut halka açık bir eğitim bulunmamaktadır."
 
 #: site/dashboard/wizard.php:246
 msgid "Connecting with friend"
-msgstr ""
+msgstr "Kullanıcı ile bağlantı"
 
 #: site/dashboard/wizard.php:248
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "Kullanıcı bağlantısı bozuk. Lütfen tekrar deneyin."
 
 #: site/dashboard/wizard.php:249
 #, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "%s kullanıcı ile başarıyla bağlantı kuruldu"
 
 #: site/dashboard/wizard.php:253
 msgid "Checking in"
-msgstr ""
+msgstr "Giriş"
 
 #: site/dashboard/wizard.php:255
 msgid "The checkin link is broken. Please try again."
-msgstr ""
+msgstr "Giriş bağlantısı bozuk. Lütfen tekrar deneyin."
 
 #: site/dashboard/wizard.php:256
 msgid "Successfully checked in"
-msgstr ""
+msgstr "Başarıyla giriş yapıldı"
 
 #: site/dashboard/wizard.php:261
 msgid "Create a training group"
-msgstr ""
+msgstr "Bir eğitim grubuna katılın"
 
 #: site/dashboard/wizard.php:262
 msgid "Join a public training group"
-msgstr ""
+msgstr "Halka açık bir eğitim grubuna katılın"
 
 #: site/dashboard/wizard.php:263
 msgid "Skip for now"
-msgstr ""
+msgstr "Şimdilik geç"
 
 #: site/dashboard/wizard.php:264
 msgid "Choose your course format"
-msgstr ""
+msgstr "Kurs formatınızı seçin"
 
 #: site/dashboard/wizard.php:265
 msgid "1 hour (20 sessions)"
-msgstr ""
+msgstr "1 saat (20 ders)"
 
 #: site/dashboard/wizard.php:266
 msgid "2 hour (10 sessions)"
-msgstr ""
+msgstr "2 saat (10 ders)"
 
 #: site/dashboard/wizard.php:267
 msgid "4 hour (5 sessions)"
-msgstr ""
+msgstr "4 saat (5 ders)"
 
 #: site/dashboard/wizard.php:268
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "Eğitiminizi planlamak ister misiniz?"
 
 #: site/dashboard/wizard.php:269 site/pages/_strings-mobile-pwa.php:9
 msgid "Yes"
@@ -4354,39 +4870,39 @@ msgstr "Hayır"
 
 #: site/dashboard/wizard.php:271
 msgid "What time of day?"
-msgstr ""
+msgstr "Günün hangi zamanı?"
 
 #: site/dashboard/wizard.php:272
 msgid "Morning"
-msgstr ""
+msgstr "Sabah"
 
 #: site/dashboard/wizard.php:273
 msgid "Afternoon"
-msgstr ""
+msgstr "Öğlen"
 
 #: site/dashboard/wizard.php:274
 msgid "Evening"
-msgstr ""
+msgstr "Akşam"
 
 #: site/dashboard/wizard.php:275
 msgid "How often will you meet?"
-msgstr ""
+msgstr "Ne sıklıkla buluşacaksınız?"
 
 #: site/dashboard/wizard.php:276
 msgid "Every day"
-msgstr ""
+msgstr "Her gün"
 
 #: site/dashboard/wizard.php:277
 msgid "Once a week"
-msgstr ""
+msgstr "Haftada bir kere"
 
 #: site/dashboard/wizard.php:278
 msgid "Twice a month"
-msgstr ""
+msgstr "Ayda iki kere"
 
 #: site/dashboard/wizard.php:279
 msgid "Once a month"
-msgstr ""
+msgstr "Ayda bir kere"
 
 #: site/dashboard/wizard.php:280
 msgid "Other"
@@ -4394,54 +4910,54 @@ msgstr "Başka"
 
 #: site/dashboard/wizard.php:281
 msgid "What is the name of the training group?"
-msgstr ""
+msgstr "Eğitim grubunuzun adı nedir?"
 
 #: site/dashboard/wizard.php:282
 msgid "My first training group"
-msgstr ""
+msgstr "İlk eğitim grubum"
 
 #: site/dashboard/wizard.php:283
 msgid "When do you plan to start?"
-msgstr ""
+msgstr "Ne zaman başlamayı planlıyorsunuz?"
 
 #: site/dashboard/wizard.php:284
 msgid "Where do you plan to meet?"
-msgstr ""
+msgstr "Nerede buluşmayı planlıyorsunuz?"
 
 #: site/dashboard/wizard.php:285
 msgid "This could be online or in person"
-msgstr ""
+msgstr "Bu çevrimiçi veya yüz yüze olabilir"
 
 #: site/dashboard/wizard.php:286
 msgid "Review Schedule"
-msgstr ""
+msgstr "Programı gözden geçir"
 
 #: site/dashboard/wizard.php:287
-#, php-format
+#, fuzzy, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "2$s'in %1$'i seçildi"
 
 #: site/dashboard/wizard.php:288
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
-msgstr ""
+msgstr "Hazır"
 
 #: site/dashboard/wizard.php:289
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "Çok fazla seçili: %s"
 
 #: site/dashboard/wizard.php:290
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "Yanlış sayıda ders seçildi"
 
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:293
 #: site/dashboard/wizard.php:295
 #, php-format
 msgid "Set %s"
-msgstr ""
+msgstr "%s ayarla"
 
 #: site/dashboard/wizard.php:291 site/dashboard/wizard.php:292
 #: site/dashboard/wizard.php:313
@@ -4454,27 +4970,27 @@ msgstr "Grup İsmi"
 
 #: site/dashboard/wizard.php:294
 msgid "Group name"
-msgstr ""
+msgstr "Grup ismi"
 
 #: site/dashboard/wizard.php:295
 msgid "Start Date"
-msgstr ""
+msgstr "Başlama tarihi"
 
 #: site/dashboard/wizard.php:299 site/dashboard/wizard.php:314
 msgid "Time"
-msgstr ""
+msgstr "Saat"
 
 #: site/dashboard/wizard.php:300
 msgid "Date"
-msgstr ""
+msgstr "Tarih"
 
 #: site/dashboard/wizard.php:301
 msgid "Summary"
-msgstr ""
+msgstr "Özet"
 
 #: site/dashboard/wizard.php:302
 msgid "Clear Calendar"
-msgstr ""
+msgstr "Takvimi Temizle"
 
 #: site/dashboard/wizard.php:303
 msgid "Add"
@@ -4482,34 +4998,36 @@ msgstr "Ekleyin"
 
 #: site/dashboard/wizard.php:304
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "Programa tarih ekle"
 
 #: site/dashboard/wizard.php:305
 msgid "Change"
-msgstr ""
+msgstr "Değiştir"
 
 #: site/dashboard/wizard.php:309
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "Eğitiminize katılması için arkadaşlarınızı davet edin"
 
 #: site/dashboard/wizard.php:310
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"Eğitiminize katılabilmeleri için aşağıdaki davetiyeyi veya bağlantıyı "
+"arkadaşlarınızla paylaşın."
 
 #: site/dashboard/wizard.php:311
 msgid "Join my zume plan"
-msgstr ""
+msgstr "Zume planıma katıl"
 
 #: site/dashboard/wizard.php:312
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s sizi bir Zume Eğitim Grubuna davet ediyor"
 
 #: site/dashboard/wizard.php:318
 msgid "Copy Invite"
-msgstr ""
+msgstr "Davetiyeyi Kopyala"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -4572,9 +5090,9 @@ msgid "Passwords do not match. Please, try again."
 msgstr "Şifreler birbirleri ile eşleşmiyor. Lütfen tekrar deneyin."
 
 #: site/login/login-template.php:217
-#, php-format
+#, fuzzy, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
-msgstr ""
+msgstr "Şifreniz sıfırlandı. 1$s Buradan giriş yapabilirsiniz %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -4592,7 +5110,7 @@ msgstr "Şifre"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "Lütfen daha güçlü bir şifre seçin. Bu çok zayıf."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:452 site/login/login-template.php:453
@@ -4601,11 +5119,11 @@ msgstr "Şifreyi tekrar girin"
 
 #: site/login/login-template.php:365
 msgid "Hello!"
-msgstr ""
+msgstr "Merhaba!"
 
 #: site/login/login-template.php:366
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "Zume Hesabını Oluşturun"
 
 #: site/login/login-template.php:374 site/login/login-template.php:470
 #: site/login/login-template.php:712 site/pages/follow-jesus.php:158
@@ -4617,19 +5135,19 @@ msgstr "Kayıt olun"
 
 #: site/login/login-template.php:400
 msgid "Or"
-msgstr ""
+msgstr "Veya"
 
 #: site/login/login-template.php:402
 msgid "Register with Email"
-msgstr ""
+msgstr "E-mail ile Kaydolun"
 
 #: site/login/login-template.php:440
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "Hatalı biçimlendirilmiş e-posta adresi"
 
 #: site/login/login-template.php:447
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "Şifre yeterince güçlü değil"
 
 #: site/login/login-template.php:459
 msgid "There are some errors in your form."
@@ -4641,7 +5159,7 @@ msgstr "Kullanıcı işlemi onaylandı."
 
 #: site/login/login-template.php:604
 msgid "Welcome back!"
-msgstr ""
+msgstr "Yeniden hoş geldiniz!"
 
 #: site/login/login-template.php:611 site/login/login-template.php:660
 #: site/login/login-template.php:735 site/pages/home.php:112
@@ -4651,7 +5169,7 @@ msgstr "Oturum açın"
 
 #: site/login/login-template.php:634
 msgid "or sign in with email"
-msgstr ""
+msgstr "veya e-mail ile giriş yapın"
 
 #: site/login/login-template.php:640
 msgid "Username or password does not match. Try again."
@@ -4663,7 +5181,7 @@ msgstr "Beni Hatırla"
 
 #: site/login/login-template.php:711
 msgid "Don't have an account?"
-msgstr ""
+msgstr "Hesabınız yok mu?"
 
 #: site/login/login-template.php:723
 msgid "Lost your password?"
@@ -4671,15 +5189,15 @@ msgstr "Şifrenizi unuttunuz mi?"
 
 #: site/login/login-template.php:734
 msgid "Already have an account?"
-msgstr ""
+msgstr "Zaten hesabınız var mı?"
 
 #: site/login/login-template.php:790
 msgid "Username or Email Address"
-msgstr ""
+msgstr "Kullanıcı Adı veya E-mail Adresi"
 
 #: site/login/login-template.php:793
 msgid "Log In"
-msgstr ""
+msgstr "Giriş Yap"
 
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Account"
@@ -4718,7 +5236,7 @@ msgstr "Oturumu Kapat"
 
 #: site/pages/_strings-mobile-pwa.php:22
 msgid "Download All"
-msgstr ""
+msgstr "Hepsini İndir"
 
 #: site/pages/_strings-mobile-pwa.php:23
 msgid "Download"
@@ -4763,6 +5281,7 @@ msgstr "Yüklemek"
 #: site/pages/_strings-mobile-pwa.php:38
 msgid "This app can be installed to your device. Click to install this app."
 msgstr ""
+"Bu uygulama cihazınıza indirilebilir. Bu uygulamayı indirmek için tıklayın."
 
 #: site/pages/_strings-mobile-pwa.php:39
 msgid ""
@@ -4799,7 +5318,7 @@ msgstr "Depolama"
 
 #: site/pages/about.php:87
 msgid "What is Zúme Training?"
-msgstr ""
+msgstr "Zúme Eğitimi Nedir?"
 
 #: site/pages/about.php:91
 msgid ""
@@ -4809,12 +5328,18 @@ msgid ""
 "ordinary people, using ordinary resources, can have exponential impact for "
 "the Kingdom of God."
 msgstr ""
+"Grekçe'de 'maya' anlamına gelen zúme sözcüğünün önemli bir anlamı vardır. "
+"Matta 13:33'te İsa göklerin egemenliğini büyük miktarda una karıştırılan ve "
+"tüm hamura nüfuz eden mayaya benzetir. Bu benzetme, sıradan insanların "
+"sıradan kaynakları kullanarak Tanrı'nın Krallığı için nasıl üst düzey bir "
+"etkiye sahip olabileceğini göstermektedir."
 
 #: site/pages/about.php:95 site/pages/messages.php:258
 msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
 msgstr ""
+"Zúme Eğitimi, neslimizde çoğalan öğrencilerle dünyayı donatmak için var."
 
 #: site/pages/about.php:100
 msgid ""
@@ -4826,6 +5351,13 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"2015 yılında, İsa'nın Son Buyruk görevini yerine getirmeye kendini adamış "
+"olan küçük bir grup, Jonathan Projesi Liderlik Toplantısı için bir araya "
+"geldi. Dua ettiler ve öğrencileri dünya genelinde çoğaltmanın zorluklarını "
+"tartıştılar. İsa'nın sıradan insanları Egemenlik için 'maya' olmaya "
+"çağırmasıyla uyumlu, erişilebilir, çok dilli ve esnek eğitim ihtiyacının "
+"farkına vararak, çevrimiçi video tabanlı eğitim fikri doğmuş oldu. "
+"Nihayetinde, bu fikir şu anda Zúme olarak bilinen şeye dönüştü."
 
 #: site/pages/about.php:101
 msgid ""
@@ -4835,6 +5367,11 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"Zúme Eğitiminin temel öğrenci yetiştirme ilkeleri doğrudan Kutsal Kitap'tan "
+"gelmektedir ve otuz yılı aşkın bir süredir dünya çapında test edilmiştir. Bu "
+"ilkeler sıradan imanlıları öğrenci olmaları için güçlendirir, onlar da "
+"öğrenci yetiştirir ve sonuçta milyonlarca öğrenci ruhsal açıdan karanlık "
+"yerlerde Egemenliği geliştirir."
 
 #: site/pages/about.php:114
 msgid ""
@@ -4844,6 +5381,11 @@ msgid ""
 "formal statement of faith. All involved, however, would agree with the "
 "Lausanne Covenant."
 msgstr ""
+"Egemenlik iş birliğiyle 14 Şubat 2017'de başlatılan Zúme Eğitimi, resmi "
+"kurumsal kontrolü veya farklı bir bünyeye ait olmayan halka açık bir girişim "
+"olmaya devam etmektedir. Zúme bir kuruluş tarafından yönetilmediği için "
+"resmi bir iman beyanı da mevcut değildir. Ancak tüm katılımcılar Lozan "
+"Antlaşmasını kabul etmektedir."
 
 #: site/pages/about.php:120
 msgid ""
@@ -4851,16 +5393,21 @@ msgid ""
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"Amaç, neslimizde çoğalan öğrencilerle dünyayı donatmaktır. Bu eğitimde "
+"bulunan Kutsal Kitap ilkeleri oldukça basittir. Dünyayı değiştirme "
+"potansiyeli bu ilkelerin uygulanmasında mevcuttur."
 
 #: site/pages/about.php:121
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Zúme'nin vizyonu, temel Egemenlik araçlarını, dünyanın dört bir yanındaki "
+"bölgelere yayarak tüm hamuru işleyen bir mayaya benzetilebilir."
 
 #: site/pages/about.php:128
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "Zúme vizyonunun iki kısmı vardır:"
 
 #: site/pages/about.php:132
 msgid "1 Training"
@@ -4868,13 +5415,15 @@ msgstr "1 Eğitim"
 
 #: site/pages/about.php:136
 msgid "Part 1:"
-msgstr ""
+msgstr "1. Kısım:"
 
 #: site/pages/about.php:137
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"Kuzey Amerika'da her 5.000 kişi için en az bir öğrenci yetiştiren ve dünya "
+"çapında da her 50.000 kişi için bir öğrenci yetiştiren yetiştirmek."
 
 #: site/pages/about.php:143
 msgid "2 Simple Churches"
@@ -4882,7 +5431,7 @@ msgstr "2 Basit Kilise"
 
 #: site/pages/about.php:147
 msgid "Part 2:"
-msgstr ""
+msgstr "2. Kısım:"
 
 #: site/pages/about.php:148
 msgid ""
@@ -4890,6 +5439,9 @@ msgid ""
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"Eğitimli öğrenci yetiştirenlerin Kuzey Amerika'da her 5.000 kişi için en az "
+"2 basit çoğalan kilise ve dünya çapında her 50.000 kişi için 2 basit kilise "
+"kurması."
 
 #: site/pages/about.php:154
 msgid ""
@@ -4897,6 +5449,9 @@ msgid ""
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"Bu küçük başlangıçlarla… Kutsal Kitap'ın maya dediği şeyle… dünyanın çoğalan "
+"öğrenciler ve kiliselerle dolduğunu görebiliriz. Zúme Eğitimini keşfedin ve "
+"nasıl olduğunu öğrenin!"
 
 #: site/pages/about.php:157
 msgid "Get Started"
@@ -4904,53 +5459,63 @@ msgstr "Başlayın"
 
 #: site/pages/about.php:162
 msgid "How does Zúme Training Work?"
-msgstr ""
+msgstr "Zúme Eğitimi Nasıl Çalışır?"
 
 #: site/pages/about.php:167 site/pages/home.php:212
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"1$sÜcretsiz Kayıt%2$s size tüm eğitim materyallerine ve çevrimiçi koçluğa "
+"tam erişim sağlar."
 
 #: site/pages/about.php:171 site/pages/home.php:216
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr ""
+"1$sÖğretici Videolar%2$, grubunuzun öğrencileri çoğaltmanın temel ilkelerini "
+"anlamasına yardımcı olur."
 
 #: site/pages/about.php:175 site/pages/home.php:220
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
+"1$sGrup Tartışmaları%2$s grubunuzun paylaşılanlar üzerinde düşünmesine "
+"yardımcı olur."
 
 #: site/pages/about.php:179 site/pages/home.php:224
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
+"1$sBasit Alıştırmalar%2$ grubunuzun öğrendiklerinizi uygulamaya koymasına "
+"yardımcı olur."
 
 #: site/pages/about.php:183 site/pages/home.php:228
-#, php-format
+#, fuzzy, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
+"1$sSession Challenges%2$s grubunuzun dersler arasında öğrenmeye ve büyümeye "
+"devam etmesine yardımcı olur."
 
 #: site/pages/about.php:194
 msgid "Before you start."
-msgstr ""
+msgstr "Başlamadan önce."
 
 #: site/pages/about.php:201
 msgid "Zúme is NOT like other trainings!"
-msgstr ""
+msgstr "Zúme diğer eğitimler gibi DEĞİLDİR!"
 
 #: site/pages/about.php:203
 msgid "First:"
-msgstr ""
+msgstr "İlk Olarak:"
 
 #: site/pages/about.php:204
 msgid ""
@@ -4958,10 +5523,13 @@ msgid ""
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme grup olarak yapılmak üzere tasarlanmıştır. Grup pratiği, tartışmalar ve "
+"becerilerin uygulanması başkalarıyla birlikte daha iyi olacaktır, bu nedenle "
+"mümkünse bir grubu bir araya getirin."
 
 #: site/pages/about.php:207
 msgid "Second:"
-msgstr ""
+msgstr "İkinci Olarak:"
 
 #: site/pages/about.php:208
 msgid ""
@@ -4970,50 +5538,64 @@ msgid ""
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme, sadece bilgi edinmek değil, beceri geliştirmek ve yeterlilik "
+"oluşturmakla ilgilidir. Her dersteki amaç, verimli bir şekilde eyleme "
+"geçmektir. Eğitimin en iyi sonucu, değişen bir yaşam tarzı ve imanınızda "
+"artan bir güç deneyimi olacaktır."
 
 #: site/pages/about.php:216
 msgid "What's required"
-msgstr ""
+msgstr "Gerekli olanlar:"
 
 #: site/pages/about.php:219
 msgid "Needed for the training:"
-msgstr ""
+msgstr "Eğitim için gerekenler:"
 
 #: site/pages/about.php:221 site/pages/training.php:262
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "En az 3 ama ideal olarak 12'den az kişi."
 
 #: site/pages/about.php:222 site/pages/training.php:263
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"Kurstaki kavramları ve araçları öğrenmek ve uygulamak için 20 saat geçirme "
+"kararlılığı."
 
 #: site/pages/about.php:223 site/pages/training.php:264
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"Toplantı zamanını ve yerini belirleyecek, sonraki tartışmalara rehberlik "
+"edecek ve harekete geçme önerilerini yönetecek bir kişi (potansiyel olarak "
+"siz)."
 
 #: site/pages/about.php:232
 msgid "NOT needed for the training:"
-msgstr ""
+msgstr "Eğitim için gerekli olmayanlar:"
 
 #: site/pages/about.php:234 site/pages/training.php:268
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"Grubunuzun geri kalanından daha fazla bilgi veya deneyime sahip olmanız "
+"gerekmez! İleri'ye tıklayabiliyorsanız, bir Zúme Eğitimine de liderlik "
+"edebilirsiniz."
 
 #: site/pages/about.php:235
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"Bir eğitime liderlik etmek için özel izin gerekmez! Zúme kendi kendine "
+"yönetilir, kendi kendine başlatılır. Bugün başlayabilirsiniz."
 
 #: site/pages/about.php:246
 msgid "Connecting with a Coach."
-msgstr ""
+msgstr "Bir Koç ile bağlantı kurmak."
 
 #: site/pages/about.php:253
 msgid ""
@@ -5021,78 +5603,83 @@ msgid ""
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"Yol boyunca, Zúme topluluğu size ve grubunuza eğitimi başarıyla uygulamanıza "
+"yardımcı olacak bir KOÇ sağlayarak sizi desteklemek ister. Sorularınız veya "
+"endişeleriniz varsa bize ulaşmaktan çekinmeyin!"
 
 #: site/pages/about.php:263
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "Hazır mısınız? Bugün kaydolun."
 
 #: site/pages/about.php:267 site/pages/home.php:113
 msgid "Register Free"
-msgstr ""
+msgstr "Ücretsiz olarak kaydolun."
 
 #: site/pages/checkin.php:87 site/pages/friend-invite.php:77
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "Bir arkadaş kodu girin."
 
 #: site/pages/checkin.php:235
 msgid "Checkin"
-msgstr ""
+msgstr "Giriş yapın."
 
 #: site/pages/checkin.php:237
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "Ekrandaki veya kitaptaki kodu kullanın"
 
 #: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:182
 msgid "Connect"
-msgstr ""
+msgstr "Bağlantı kurun"
 
 #: site/pages/checkin.php:246
 msgid "or"
-msgstr ""
+msgstr "veya"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Giriş yapmak için bir ders seçin"
 
 #: site/pages/checkin.php:250 site/pages/training.php:163
 #: site/pages/training.php:214
 msgid "Training Schedules"
-msgstr ""
+msgstr "Eğitim Programları"
 
 #: site/pages/checkin.php:254 site/pages/training.php:221
 msgid "10 Sessions"
-msgstr ""
+msgstr "10 Ders"
 
 #: site/pages/checkin.php:258 site/pages/training.php:233
 msgid "20 Sessions"
-msgstr ""
+msgstr "20 Ders"
 
 #: site/pages/checkin.php:262 site/pages/training.php:245
 msgid "Intensive"
-msgstr ""
+msgstr "Yoğun"
 
 #: site/pages/donate.php:86 site/pages/messages.php:268
 #: site/parts/footer.php:42
 msgid "Donate"
-msgstr ""
+msgstr "Bağış Yapın"
 
 #: site/pages/donate.php:95
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
+"Kitle fonlamasıyla destekleniyoruz ve Zúme vizyonunun bir parçası olmak "
+"istemeniz bizi sevindiriyor."
 
 #: site/pages/donate.php:103
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "Tüm Bağış Olanaklarını Görüntüleyin"
 
 #: site/pages/faq.php:88
 msgid "FAQ"
-msgstr ""
+msgstr "SSS"
 
 #: site/pages/faq.php:90 site/pages/home.php:188 site/profile/profile.php:162
 msgid "User Profile"
-msgstr ""
+msgstr "Kullanıcı Profili"
 
 #: site/pages/follow-jesus.php:94 site/pages/pieces.php:94
 msgid "Watch This Video"
@@ -5117,13 +5704,15 @@ msgstr "İsa Nasıl Takip Edilir"
 #: site/pages/follow-jesus.php:151
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
-msgstr ""
+msgstr "Yeni yaşamınızın 4 ilişkisini açıklayan bu önemli videoyu izleyin"
 
 #: site/pages/follow-jesus.php:154
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr ""
+"Aşağıdaki bölümler size İsa'nın takipçisi (öğrencisi) olmanın ne anlama "
+"geldiğini gösterecektir"
 
 #: site/pages/follow-jesus.php:169
 msgid "What is a follower of Jesus?"
@@ -5167,6 +5756,8 @@ msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
+"İsa ile olan yakın bağımızı ve devam eden ilişkimizi kutlamanın basit bir "
+"yoludur. Kutlama yapmanın basit bir yolunu öğrenin."
 
 #: site/pages/follow-jesus.php:247
 msgid "Sacrifice and Suffering"
@@ -5234,22 +5825,26 @@ msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
+"Bu, Tanrı'nın başkaları için dua etme buyruğuna itaat etmenin basit bir "
+"yoludur. Aynen duyulduğu gibi; etrafta dolaşırken Tanrı'ya dua etmektir!"
 
 #: site/pages/follow-jesus.php:318
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
+"Ya birçok arkadaşım, ailem ve başkaları da benimle birlikte İsa'yı izlemeye "
+"başlarsa?"
 
 #: site/pages/friend-invite.php:164
 msgid "Friend Invitation"
-msgstr ""
+msgstr "Arkadaş Daveti"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:177
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "Arkadaşınızın gönderdiği kodu kullanın."
 
 #: site/pages/get-a-coach.php:88 site/pages/get-a-coach.php:115
 msgid "Get A Coach"
-msgstr ""
+msgstr "Bir Koç Edinin"
 
 #: site/pages/get-a-coach.php:89
 msgid ""
@@ -5257,40 +5852,49 @@ msgid ""
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"Her atletik sporda, özellikle de üst seviyelerde, koçlar kullanılır. Olimpik "
+"sporcuların bile koçları vardır ve genellikle birden fazladırlar. Öğrenci "
+"yetiştirme de aynı şekilde daha tecrübeli kişilerin koçluğundan "
+"faydalanabilir."
 
 #: site/pages/get-a-coach.php:92
 msgid "No Cost"
-msgstr ""
+msgstr "Ücretsiz"
 
 #: site/pages/get-a-coach.php:93 site/pages/get-a-coach.php:100
 #: site/pages/training.php:134 site/pages/training.php:141
 #: site/pages/training.php:142
 msgid "Join a training group"
-msgstr ""
+msgstr "Bir eğitim grubuna katılın"
 
 #: site/pages/get-a-coach.php:95
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
+"Gönüllü koçlardan oluşan iletişim ağımız ücret almaz, aksine Tanrı'yı "
+"sevmek, başkalarını sevmek ve Son Buyruk'a itaat etme tutkusuyla hareket "
+"ederler."
 
 #: site/pages/get-a-coach.php:99
 msgid "Localized"
-msgstr ""
+msgstr "Yerelleştirilmiş"
 
 #: site/pages/get-a-coach.php:102
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"İletişim ekibimiz sizi aynı dili konuştuğunuz ve coğrafi olarak mümkün "
+"olduğunca size yakın bir koçla buluşturmaya çalışır."
 
 #: site/pages/get-a-coach.php:106
 msgid "Experienced"
-msgstr ""
+msgstr "Deneyimli"
 
 #: site/pages/get-a-coach.php:107 site/pages/training.php:150
 msgid "Join a training"
-msgstr ""
+msgstr "Bir eğitime katılın"
 
 #: site/pages/get-a-coach.php:109
 msgid ""
@@ -5298,18 +5902,21 @@ msgid ""
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"Tüm koçlarımız eğitimlidir ve Zûme'de bulunan kavram ve araçları "
+"uygulamaktadır. Tüm koçlarımız engelleri aşmanıza ve yolculuğunuzda adımlar "
+"atmanıza yardımcı olabilir."
 
 #: site/pages/home.php:86
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:87
 msgid "Languages"
-msgstr ""
+msgstr "Dil"
 
 #: site/pages/home.php:129
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "Birlikte … daha çok İsa gibi olmak"
 
 #: site/pages/home.php:132
 msgid "Overview"
@@ -5317,103 +5924,103 @@ msgstr "Genel Bakış"
 
 #: site/pages/home.php:134
 msgid "Group Discussions"
-msgstr ""
+msgstr "Grup Tartışmaları"
 
 #: site/pages/home.php:135
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "Kendi Kendine Yönetilen"
 
 #: site/pages/home.php:136
 msgid "Practice-Oriented"
-msgstr ""
+msgstr "Uygulama Odaklı"
 
 #: site/pages/home.php:137
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 Kavram ve Beceri"
 
 #: site/pages/home.php:138
 msgid "20 hours of Training"
-msgstr ""
+msgstr "20 Saatlik Eğitim"
 
 #: site/pages/home.php:144
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "Ücretsiz. Her Zaman. Her Yerde."
 
 #: site/pages/home.php:148
 msgid "Gain insight into..."
-msgstr ""
+msgstr "Şunlar hakkında bilgi edinin…"
 
 #: site/pages/home.php:153
 msgid "Being A Disciple"
-msgstr ""
+msgstr "Öğrenci Olmak"
 
 #: site/pages/home.php:155
 msgid "What's a Disciple?"
-msgstr ""
+msgstr "Öğrenci Nedir?"
 
 #: site/pages/home.php:156
 msgid "What's a Church?"
-msgstr ""
+msgstr "Kilise Nedir?"
 
 #: site/pages/home.php:157
 msgid "Keys to Spiritual Growth"
-msgstr ""
+msgstr "Ruhsal Büyümenin Anahtarları"
 
 #: site/pages/home.php:158
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "Kişisel Kutsal Kitap Çalışması"
 
 #: site/pages/home.php:159
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "Güçlü Dua Yaşamı"
 
 #: site/pages/home.php:160
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "İtaatkar İmanın Gücü"
 
 #: site/pages/home.php:167
 msgid "Making Disciples"
-msgstr ""
+msgstr "Öğrenciler Yetiştirmek"
 
 #: site/pages/home.php:169
 msgid "Sharing God's Story"
-msgstr ""
+msgstr "Tanrı’nın Hikayesini Paylaşmak"
 
 #: site/pages/home.php:170
 msgid "Telling Your Story"
-msgstr ""
+msgstr "Kendi Hikayesini Anlatmak"
 
 #: site/pages/home.php:171
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "Arayanların İlgisini Çekmek"
 
 #: site/pages/home.php:172
 msgid "Vision Casting Multiplication"
-msgstr ""
+msgstr "Vizyon Oluşturan Çoğaltma"
 
 #: site/pages/home.php:173
 msgid "Leading a Simple Church"
-msgstr ""
+msgstr "Basit Bir Kiliseye Önderlik Etmek"
 
 #: site/pages/home.php:174
 msgid "Training Others"
-msgstr ""
+msgstr "Başkalarını Eğitmek"
 
 #: site/pages/home.php:179 site/pages/home.php:244
 msgid "I'm Ready!"
-msgstr ""
+msgstr "Hazırım!"
 
 #: site/pages/home.php:193
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "Sıradan İnsanlar. Basit Adımlar."
 
 #: site/pages/home.php:237
 msgid "More about zume"
-msgstr ""
+msgstr "Zume hakkında daha fazlası"
 
 #: site/pages/home.php:271
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "Gerçek insanlar … gerçek hikayeler."
 
 #: site/pages/home.php:282
 msgid ""
@@ -5421,27 +6028,35 @@ msgid ""
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"Yıllarca sadık bir şekilde Kutsal Kitap çalışmalarına ve kiliseye katıldım, "
+"ancak bir türlü burada, Zúme'de bulduğum öğrenci yetiştirmenin basit "
+"gerçeklerini anlayamamıştım. ~ C"
 
 #: site/pages/home.php:293
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
+"Bunu herkes yapabilir. Özel bir beceri ya da eğitime ihtiyacınız yok. ~ J"
 
 #: site/pages/home.php:304
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"Bu, Son Buyruk'a itaat etmek isteyen tüm öğrenciler içindir. Zúme eğitimi "
+"normal bir Hristiyan yaşam tarzının ana hatlarını çizer. ~ D"
 
 #: site/pages/home.php:315
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
 msgstr ""
+"Bu kavramlar ve beceriler kilisemizi ve dünya üzerindeki etkimizi "
+"değiştirdi. ~ R"
 
 #: site/pages/home.php:325
 #, php-format
 msgid "%s = Yeast"
-msgstr ""
+msgstr "%s = Maya"
 
 #: site/pages/home.php:331
 msgid ""
@@ -5461,72 +6076,72 @@ msgstr ""
 
 #: site/pages/home.php:336
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "Sonraki adımları atmaya hazır mısınız?"
 
 #: site/pages/home.php:340
 msgid "Register Free."
-msgstr ""
+msgstr "Ücretsiz Kaydolun."
 
 #: site/pages/home.php:344
 msgid "Gather a Group."
-msgstr ""
+msgstr "Bir Grup Oluşturun."
 
 #: site/pages/home.php:348
 msgid "Change the World."
-msgstr ""
+msgstr "Dünyayı Değiştirin."
 
 #: site/pages/home.php:351
 msgid "Get started"
-msgstr ""
+msgstr "Başlayın"
 
 #: site/pages/kitchen-sink.php:86
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "Mutfak Lavabosu"
 
 #: site/pages/messages.php:236
 msgid "Friend"
-msgstr ""
+msgstr "Arkadaş"
 
 #: site/pages/mobile-app.php:133 site/pages/resources.php:174
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr ""
+msgstr "Öğrencileri Güçlendirmek. Her zaman… Zúme Uygulaması ile Her Yerde."
 
 #: site/pages/mobile-app.php:135 site/pages/resources.php:176
 msgid "Zúme Training App"
-msgstr ""
+msgstr "Zúme Eğitim Uygulaması"
 
 #: site/pages/mobile-app.php:137 site/pages/resources.php:178
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "Gittiğiniz her yerde eğitimin tamamına erişin"
 
 #: site/pages/mobile-app.php:142 site/pages/mobile-app.php:166
 #: site/pages/resources.php:183 site/pages/resources.php:207
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "Google Play'den indirin"
 
 #: site/pages/mobile-app.php:157 site/pages/resources.php:198
 msgid "Offline App"
-msgstr ""
+msgstr "Çevrimdışı Uygulama"
 
 #: site/pages/mobile-app.php:159 site/pages/resources.php:200
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "İnternet gerekmeden Tam Eğitim"
 
 #: site/pages/mobile-app.php:160 site/pages/resources.php:201
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "Kursu ve video içeriğini telefonunuza indirin"
 
 #: site/pages/mobile-app.php:161 site/pages/resources.php:202
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
+msgstr "İnternet erişiminin kısıtlı veya sınırlı olduğu yerler için idealdir"
 
 #: site/pages/plan-invite.php:77
 msgid "Please enter a code."
-msgstr ""
+msgstr "Lütfen bir kod girin."
 
 #: site/pages/plan-invite.php:170
 msgid "Plan Invitation"
-msgstr ""
+msgstr "Plan Daveti"
 
 #: site/pages/privacy-policy.php:84
 msgid "Zúme Privacy Policy"
@@ -5562,6 +6177,8 @@ msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"Aşağıdaki profil içerikleri Facebook veya Google ile ders açmaya bağlı "
+"olarak değişmektedir."
 
 #: site/pages/privacy-policy.php:94
 msgid ""
@@ -5593,11 +6210,14 @@ msgid ""
 "We also track your progress through the training course and through site "
 "usage."
 msgstr ""
+"Ayrıca eğitim kursu ve site kullanımı boyunca ilerlemenizi de takip ediyoruz."
 
 #: site/pages/privacy-policy.php:136
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
+"Çeşitli kayıt ve talep formları aracılığıyla gerekli bilgileri talep "
+"ediyoruz."
 
 #: site/pages/privacy-policy.php:143
 msgid "How do we use your information?"
@@ -5677,6 +6297,9 @@ msgid ""
 "serves to identify Users and remember their preferences, for the sole "
 "purpose of providing the service required by the User."
 msgstr ""
+"Çerezlerin veya diğer izleme araçlarının kullanımı, aksi belirtilmedikçe, "
+"yalnızca Kullanıcı tarafından talep edilen hizmeti sağlamak amacıyla "
+"Kullanıcıları tanımlamaya ve tercihlerini hatırlamaya yarar."
 
 #: site/pages/privacy-policy.php:181
 msgid "Your Access to and Control Over Information."
@@ -5721,7 +6344,7 @@ msgstr ""
 
 #: site/pages/resources.php:100
 msgid "Training Guidebook"
-msgstr ""
+msgstr "Eğitim Rehberi"
 
 #: site/pages/resources.php:103
 msgid ""
@@ -5730,22 +6353,26 @@ msgid ""
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"Zúme Eğitimi artık kapsamlı bir çalışma kitabıyla karşınızda. Eğitimdeki tüm "
+"kavramlar, araçlar, tartışma soruları ve görevler artık parmaklarınızın "
+"ucunda. Her ders için verilen QR kodları sayesinde tüm video içeriklerine de "
+"erişebilirsiniz!"
 
 #: site/pages/resources.php:111
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "Ücretsiz İndirin (PDF)"
 
 #: site/pages/resources.php:112
 msgid "Order print copy"
-msgstr ""
+msgstr "Çıktısını sipariş verin"
 
 #: site/pages/share.php:83
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "Bu bağlantıyı kopyalayın ve arkadaşlarınıza gönderin."
 
 #: site/pages/share.php:85
 msgid "Copied"
-msgstr ""
+msgstr "Kopyalandı"
 
 #: site/pages/share.php:122
 msgid "Tools"
@@ -5757,59 +6384,67 @@ msgstr "Kavramlar"
 
 #: site/pages/share.php:125
 msgid "Sort"
-msgstr ""
+msgstr "Sırala"
 
 #: site/pages/share.php:126
 msgid "Items"
-msgstr ""
+msgstr "Öğeler"
 
 #: site/pages/share.php:134
 msgid "Sharing with Others"
-msgstr ""
+msgstr "Başkalarıyla Paylaşmak"
 
 #: site/pages/share.php:141
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"İtaat etmek ve Rab'bin bizimle paylaştıklarını paylaşmak konusunda sadık "
+"olduğumuzda, o zaman Rab daha da fazlasını paylaşmayı vaat eder."
 
 #: site/pages/training.php:130
 msgid "Get started with Zúme Training"
-msgstr ""
+msgstr "Zúme Eğitimine başlayın"
 
 #: site/pages/training.php:133
 msgid "Create your own training group"
-msgstr ""
+msgstr "Kendi eğitim grubunuzu oluşturun"
 
 #: site/pages/training.php:136
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"Birkaç arkadaşınızı toplayın veya var olan küçük bir grupla kursu "
+"tamamlayın. Kendi eğitim grubunuzu oluşturun ve ilerlemenizi takip edin."
 
 #: site/pages/training.php:138
 msgid "Create"
-msgstr ""
+msgstr "Oluştur"
 
 #: site/pages/training.php:144
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"Şu anda bir grup oluşturamıyorsanız, deneyimli bir Zúme koçu tarafından "
+"yönetilen çevrimiçi eğitim gruplarımızdan birine katılmayı düşünebilirsiniz."
 
 #: site/pages/training.php:149
 msgid "Request a coach"
-msgstr ""
+msgstr "Bir koç talep edin"
 
 #: site/pages/training.php:152
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"Sizi, eğitimi anlamanıza ve verimli bir öğrenci olmanıza yardımcı olmak için "
+"kararlı olan ücretsiz Zúme koçuna bağlayabiliriz."
 
 #: site/pages/training.php:154
 msgid "Get Help"
-msgstr ""
+msgstr "Yardım alın"
 
 #: site/pages/training.php:160
 msgid "Course Overview"
@@ -5817,11 +6452,11 @@ msgstr "Kurs Genel Bakışı"
 
 #: site/pages/training.php:162 site/pages/training.php:174
 msgid "Course Concepts"
-msgstr ""
+msgstr "Kurs Kavramları"
 
 #: site/pages/training.php:164 site/pages/training.php:259
 msgid "What is required?"
-msgstr ""
+msgstr "Gerekenler nelerdir?"
 
 #: site/pages/training.php:177
 msgid ""
@@ -5829,20 +6464,25 @@ msgid ""
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"Bu kendi kendine yönetilen kursta, siz ve eğitim grubunuz aşağıdaki "
+"alanlarda bilgi ve becerilerinizi geliştirmek için kısa videolar, tartışma "
+"soruları ve basit alıştırmalar kullanacaksınız:"
 
 #: site/pages/training.php:181
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "Öğrencilik Kavramları"
 
 #: site/pages/training.php:195
 msgid "Spiritual Practices"
-msgstr ""
+msgstr "Ruhsal Uygulamalar"
 
 #: site/pages/training.php:216
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme 20 saatlik bir eğitimdir. Ancak bu 20 saat, eğitim grubunuzun "
+"uygunluğuna bağlı olarak farklı şekilde bölünebilir."
 
 #: site/pages/training.php:228
 msgid ""
@@ -5850,6 +6490,9 @@ msgid ""
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"Orijinal Zúme kurs formatı iki saatlik 10 dersten oluşmaktadır. Her ders, "
+"pratik itaat adımları ve dersler arasında paylaşılacak yöntemlerle sona "
+"erer. Bu format genellikle 10 hafta boyunca haftada bir kez uygulanır."
 
 #: site/pages/training.php:240
 msgid ""
@@ -5857,6 +6500,9 @@ msgid ""
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"Kavram ve becerilerde yetkinlik kazanmak için daha fazla fırsat içeren daha "
+"uzun ve yavaş tempolu bir kurs için 20 derslik format, her bir kavram ve "
+"araç için daha fazla pratik yapma fırsatı sunar."
 
 #: site/pages/training.php:252
 msgid ""
@@ -5864,66 +6510,71 @@ msgid ""
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme, her biri 4 saat olan 5 yarım güne sığdırılabilir. Bu, Cuma akşamı (4 "
+"saat) ve Cumartesi tüm gün (8 saat) ve Pazar tüm gün (8 saat) şeklinde "
+"yapılabilir."
 
 #: site/pages/training.php:260
 msgid "Needed for the course:"
-msgstr ""
+msgstr "Kurs için gerekenler:"
 
 #: site/pages/training.php:266
 msgid "NOT needed for the course:"
-msgstr ""
+msgstr "Kurs için gerekli OLMAYANLAR:"
 
 #: site/pages/training.php:269
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"Bir kursu yönetmek için özel izin gerekmez! Zúme kendi kendine yönetilir, "
+"kendi kendine başlatılır ve hatta bugün bile başlayabilirsiniz."
 
 #: site/parts/footer.php:31
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "3 Günlük Yoğunlaştırılmış Kurs"
 
 #: site/parts/nav.php:28 site/parts/nav.php:80
 #: utilities/integrations/replace-placeholder.php:109
 #: utilities/integrations/replace-placeholder.php:110
 #: utilities/integrations/replace-placeholder.php:111
 msgid "Check-in"
-msgstr ""
+msgstr "Giriş"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "Javascript kapalı"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "Bu sayfayı kullanabilmek için lütfen javascript’i açın"
 
 #: site/profile/communication-preferences.php:79
 #: utilities/integrations/replace-placeholder.php:173
 #: utilities/integrations/replace-placeholder.php:174
 #: utilities/integrations/replace-placeholder.php:175
 msgid "Update Communication Preferences"
-msgstr ""
+msgstr "İletişim Tercihlerini Güncelleyin"
 
 #: site/profile/communication-preferences.php:81
 msgid "Recieve emails for:"
-msgstr ""
+msgstr "Şunlar için e-mail alın:"
 
 #: site/profile/communication-preferences.php:84
 msgid "Training session reminders"
-msgstr ""
+msgstr "Eğitim ders hatırlatmaları"
 
 #: site/profile/communication-preferences.php:88
 msgid "Annual reporting reminders"
-msgstr ""
+msgstr "Yıllık raporlama hatırlatmaları"
 
 #: site/profile/communication-preferences.php:92
 msgid "Community updates"
-msgstr ""
+msgstr "Topluluk güncellemeleri"
 
 #: site/profile/communication-preferences.php:96
 msgid "Encouragements"
-msgstr ""
+msgstr "Teşvikler"
 
 #: site/profile/profile.php:111
 msgid "Profile"
@@ -5931,135 +6582,135 @@ msgstr "Profil"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
-msgstr ""
+msgstr "arkadaşınız"
 
 #: utilities/apis/connect-api.php:235
 msgid "the plan"
-msgstr ""
+msgstr "plan"
 
 #: utilities/apis/cta-api.php:137
 msgid "Register to start your training"
-msgstr ""
+msgstr "Eğitiminize başlamak için kaydolun"
 
 #: utilities/apis/cta-api.php:151
 msgid "Join Online Training"
-msgstr ""
+msgstr "Çevrimiçi Eğitime Katılın"
 
 #: utilities/apis/cta-api.php:152
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "Daha fazla öğrenmek için çevrimiçi eğitime katılın"
 
 #: utilities/apis/cta-api.php:166
 msgid "Joined Training!"
-msgstr ""
+msgstr "Eğitime Katıldınız!"
 
 #: utilities/apis/cta-api.php:181
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "Yolculuğunuza yardımcı olması için bir koç edinin"
 
 #: utilities/apis/cta-api.php:195
 msgid "Requested Coach!"
-msgstr ""
+msgstr "Koç Talep Edildi!"
 
 #: utilities/apis/cta-api.php:196 utilities/apis/cta-api.php:210
 #: utilities/apis/cta-api.php:239
 msgid "Congratulations"
-msgstr ""
+msgstr "Tebrikler"
 
 #: utilities/apis/cta-api.php:209
 msgid "Connected to Coach!"
-msgstr ""
+msgstr "Bir Koç ile Bağlantı Kuruldu!"
 
 #: utilities/apis/cta-api.php:223 utilities/apis/cta-api.php:225
 msgid "Create a Training"
-msgstr ""
+msgstr "Bir Eğitim Oluşturun"
 
 #: utilities/apis/cta-api.php:224
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "Büyümenize yardımcı olması için bir eğitim oluşturun"
 
 #: utilities/apis/cta-api.php:238
 msgid "Created Training!"
-msgstr ""
+msgstr "Eğitim Oluşturuldu!"
 
 #: utilities/apis/cta-api.php:271
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "Diğerlerinin sizi tanıması için bir profil oluşturun"
 
 #: utilities/apis/cta-api.php:285
 msgid "Profile Set"
-msgstr ""
+msgstr "Profil Oluşturuldu"
 
 #: utilities/apis/cta-api.php:299 utilities/apis/cta-api.php:301
 msgid "Create 3 Month Plan"
-msgstr ""
+msgstr "3 Aylık Plan Oluşturun"
 
 #: utilities/apis/cta-api.php:300
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "Büyümenize yardımcı olması için 3 aylık plan oluşturun"
 
 #: utilities/apis/cta-api.php:314
 #, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s kilidi açıldı"
 
 #: utilities/apis/cta-api.php:328
 msgid "3-Month Plan Created"
-msgstr ""
+msgstr "3 Aylık Plan Oluşturuldu"
 
 #: utilities/apis/cta-api.php:342 utilities/apis/cta-api.php:344
 msgid "Complete 3 Month Plan"
-msgstr ""
+msgstr "3 Aylık Planı Tamamlayın"
 
 #: utilities/apis/cta-api.php:343
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "Büyümenize yardımcı olması için 3 aylık planı tamamlayın"
 
 #: utilities/apis/cta-api.php:357
 msgid "3 Month Plan Completed"
-msgstr ""
+msgstr "3 Aylık Plan Tamamlandı"
 
 #: utilities/apis/cta-api.php:402
 msgid "Join the community"
-msgstr ""
+msgstr "Topluluğa Katılın"
 
 #: utilities/apis/cta-api.php:418 utilities/apis/cta-api.php:420
 msgid "Share Spiritual Breathing"
-msgstr ""
+msgstr "Ruhsal Nefesi Paylaşın"
 
 #: utilities/apis/cta-api.php:419
 msgid "Share Spiritual Breathing with someone"
-msgstr ""
+msgstr "Ruhsal Nefesi biriyle Paylaşın"
 
 #: utilities/apis/cta-api.php:433 utilities/apis/cta-api.php:435
 msgid "Share Relational Stewardship"
-msgstr ""
+msgstr "İlişkisel Kahyalığı Paylaşın"
 
 #: utilities/apis/cta-api.php:434
 msgid "Share Relational Stewardship with someone"
-msgstr ""
+msgstr "İlişkisel Kahyalığı biriyle Paylaşın"
 
 #: utilities/apis/plans-api.php:142
 #, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr ""
+msgstr "İlk eğitimim- %s"
 
 #: utilities/apis/plans-api.php:144
 #, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr ""
+msgstr "Eğitim %1$d - %2$s"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
-msgstr ""
+msgstr "Giriş Yöneticisi"
 
 #: utilities/integrations/replace-placeholder.php:89
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
 msgid "Join the Zúme Community"
-msgstr ""
+msgstr "Zúme Topluluğuna Katılın"
 
 #: utilities/integrations/replace-placeholder.php:93
 #: utilities/integrations/replace-placeholder.php:94
@@ -6071,29 +6722,29 @@ msgstr "Zúme Gösterge Paneli"
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
 msgid "Zúme Online Training Groups"
-msgstr ""
+msgstr "Zúme Çevrimiçi Eğitim Grupları"
 
 #: utilities/integrations/replace-placeholder.php:121
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "Slayt Sunumunu İndirin"
 
 #: utilities/integrations/replace-placeholder.php:125
 #: utilities/integrations/replace-placeholder.php:126
 #: utilities/integrations/replace-placeholder.php:127
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Zúme Sayfasını Paylaşın"
 
 #: utilities/integrations/replace-placeholder.php:169
 #: utilities/integrations/replace-placeholder.php:170
 #: utilities/integrations/replace-placeholder.php:171
 msgid "Zúme Annual Report"
-msgstr ""
+msgstr "Zúme Yıllık Raporu"
 
 #: utilities/post-types/posttype-pieces.php:301
 msgid "Piece"
-msgstr ""
+msgstr "Parça"
 
 #: zume-training-system.php:210
 msgid "Someone has requested a password reset for the following account:"
@@ -6101,15 +6752,15 @@ msgstr "Birisi bu hesabın şifresini değiştirmek istemiş"
 
 #. translators: %s: site name
 #: zume-training-system.php:212
-#, fuzzy, php-format
+#, php-format
 msgid "Site Name: %s"
-msgstr "Site adı:"
+msgstr "Site adı: %s"
 
 #. translators: %s: user login
 #: zume-training-system.php:214
-#, fuzzy, php-format
+#, php-format
 msgid "Username: %s"
-msgstr "Kullanıcı adı:"
+msgstr "Kullanıcı adı: %s"
 
 #: zume-training-system.php:215
 msgid "If this was a mistake, just ignore this email and nothing will happen."
@@ -6121,42 +6772,42 @@ msgstr "Şifreniz değiştirmek için, bu siteyi ziyaret edin:"
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:234
-#, fuzzy, php-format
+#, php-format
 msgid "[%s] Password Reset"
-msgstr "Şifre Sıfırlayın"
+msgstr "[%s] Şifrenizi Sıfırlayın"
 
 #: zume-training-system.php:250
 msgid "Profile Details"
-msgstr ""
+msgstr "Profil Detayları"
 
 #: zume-training-system.php:262
 msgid "User Email"
-msgstr ""
+msgstr "Kullanıcı E-maili"
 
 #: zume-training-system.php:271
 msgid "User Phone"
-msgstr ""
+msgstr "Kullanıcı Telefon No"
 
 #: zume-training-system.php:279
 msgid "User Timezone"
-msgstr ""
+msgstr "Kullanıcı Saat Dilimi"
 
 #: zume-training-system.php:287
 msgid "User Friend Key"
-msgstr ""
+msgstr "Kullanıcı Kimliği Anahtarı"
 
 #: zume-training-system.php:295
 msgid "User Preferred Language"
-msgstr ""
+msgstr "Kullanıcı Tercihli Dil"
 
 #: zume-training-system.php:303
 msgid "User Preferred Email"
-msgstr ""
+msgstr "Kullanıcı Tercih Edilen E-mail"
 
 #: zume-training-system.php:311
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "Tercih Edilen İletişim Yöntemleri"
 
 #: zume-training-system.php:321
 msgid "Messenger"
-msgstr ""
+msgstr "Messenger"

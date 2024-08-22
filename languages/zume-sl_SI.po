@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-06-18 18:03+0100\n"
-"PO-Revision-Date: 2024-08-21 09:45+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-21 21:59+0000\n"
+"Last-Translator: Aleksandra <aleksandra.alex.bilbija@gmail.com>\n"
 "Language-Team: Slovenian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/sl_SI/>\n"
 "Language: sl_SI\n"
@@ -26,7 +26,6 @@ msgid "How it Works"
 msgstr "Kako Zúme deluje"
 
 #: appearance/style-override/navigation.php:91
-#, fuzzy
 msgid "Download Guidebook"
 msgstr "Prenesi priročnik"
 
@@ -44,17 +43,14 @@ msgid "Dashboard"
 msgstr "Nadzorna plošča"
 
 #: appearance/style-override/navigation.php:112
-#, fuzzy
 msgid "My Zúme"
 msgstr "Moj Zúme"
 
 #: appearance/style-override/navigation.php:117
-#, fuzzy
 msgid "Contacts"
 msgstr "Stiki"
 
 #: appearance/style-override/navigation.php:123
-#, fuzzy
 msgid "Groups"
 msgstr "Skupine"
 
@@ -68,17 +64,14 @@ msgid "Metrics"
 msgstr "Metrika"
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:224
-#, fuzzy
 msgid "Community"
 msgstr "Skupnost"
 
 #: appearance/style-override/navigation.php:148 site/pages/vision.php:88
-#, fuzzy
 msgid "Vision"
 msgstr "Vizija"
 
 #: appearance/style-override/navigation.php:154
-#, fuzzy
 msgid "Stories"
 msgstr "Zgodbe"
 
@@ -106,7 +99,7 @@ msgstr ""
 #: globals.php:1951 site/course/course-content.php:3161
 #: site/course/course-content.php:3179 site/pages/follow-jesus.php:178
 msgid "Simple Definition of Disciple and Church"
-msgstr "Enostavna opredelitev pojmov učenec in cerkev"
+msgstr "Preprosta opredelitev pojmov učenec in cerkev"
 
 #: globals.php:1952 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:179
@@ -122,6 +115,7 @@ msgstr "Učenci in cerkev"
 
 #: globals.php:1963 site/course/course-content.php:3162
 #: site/course/course-content.php:3180 site/pages/follow-jesus.php:200
+#, fuzzy
 msgid "Spiritual Breathing is Hearing and Obeying God"
 msgstr "Duhovno dihanje je slišati Boga in mu biti poslušen"
 
@@ -145,7 +139,7 @@ msgid ""
 "God’s Word."
 msgstr ""
 "Orodje za vsakodnevno preučevanje Svetega pisma, ki vam pomaga razumeti "
-"Božjo besedo ji biti poslušen in jo deliti."
+"Božjo besedo, ji biti poslušen in jo deliti."
 
 #: globals.php:1987 globals.php:1989 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
@@ -171,11 +165,12 @@ msgid "Consumer vs Producer Lifestyle"
 msgstr "Življenjski slog potrošnika in proizvajalca"
 
 #: globals.php:2000 site/pages/follow-jesus.php:195
+#, fuzzy
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
-"Odkrili boste štiri glavne načine, kako Bog običajne sledilce preobraža v "
+"Odkrili boste štiri glavne načine, kako Bog navadne sledilce preobraža v "
 "Jezusovo podobo."
 
 #: globals.php:2001
@@ -199,8 +194,9 @@ msgid "Relational Stewardship – List of 100"
 msgstr "Oskrbništvo odnosov - Seznam 100"
 
 #: globals.php:2024 site/pages/follow-jesus.php:292
+#, fuzzy
 msgid "A tool designed to help you be a good steward of your relationships."
-msgstr "Orodje, ki vam pomaga biti dobri oskrbniki odnosov."
+msgstr "Orodje, ki vam pomaga postati dobri oskrbniki odnosov."
 
 #: globals.php:2025 site/activities/list-of-100-printable.php:78
 #: site/activities/list-of-100.php:76 site/course/course-content.php:477
@@ -476,7 +472,7 @@ msgstr "Cikel usposabljanja"
 #: site/course/course-content.php:5050 site/pages/follow-jesus.php:331
 #, fuzzy
 msgid "Leadership Cells"
-msgstr "Vodstvene skupine"
+msgstr "Skupine za voditelje"
 
 #: globals.php:2204 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:332
@@ -485,7 +481,7 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
-"Vodstvena skupina je način, kako lahko nekdo, ki se čuti poklicanega za "
+"Skupina za voditelje je način, kako lahko nekdo, ki se čuti poklicanega za "
 "vodenje, s služenjem razvija svoje sposobnosti."
 
 #: globals.php:2215 globals.php:2217 site/course/course-content.php:5157
@@ -498,7 +494,7 @@ msgstr "Pričakujte neenakomerno rast"
 msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
-msgstr "Delanje učencev ni nujno linearno. Več stvari se lahko zgodi hkrati."
+msgstr "Delanje učencev ni vedno linearno. Več stvari se lahko zgodi hkrati."
 
 #: globals.php:2227 site/course/course-content.php:2770
 #: site/pages/follow-jesus.php:284
@@ -532,7 +528,7 @@ msgstr "Vedno del dveh cerkva"
 #: globals.php:2240
 #, fuzzy
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Poslušnost Jezusovi zapovedi tako, da istočasno greste IN ostanete."
+msgstr "Poslušnost Jezusovim zapovedim tako, da istočasno greste IN ostanete."
 
 #: globals.php:2252 globals.php:2254 site/course/course-content.php:2903
 #: site/course/course-content.php:3007 site/course/course-content.php:3013
@@ -575,8 +571,8 @@ msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
-"Močno orodje, s katerim lahko hitro ocenite svoje prednosti in ranljivosti "
-"pri ustvarjanju učencev, ki se množijo."
+"Močno orodje, s katerim lahko hitro ocenite svoje prednosti in slabosti pri "
+"delanju učencev, ki delajo učence."
 
 #: globals.php:2275 globals.php:2277 site/course/course-content.php:2898
 #: site/course/course-content.php:2911 site/course/course-content.php:2920
