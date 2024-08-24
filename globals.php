@@ -187,8 +187,11 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
             ];
 
             $user_state = [];
+            $progress = [];
 
             foreach ( $log as $value ) {
+
+                // funnel
                 if ( 'registered' == $value['subtype'] ) {
                     $funnel_steps[1] = true;
                 }
@@ -197,6 +200,12 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 }
                 if ( 'training_completed' == $value['subtype'] ) {
                     $funnel_steps[3] = true;
+                }
+                if ( ! ( strpos( 'heard', $value['subtype'] ) === false ) ) {
+                    $progress[$value['subtype']] = true;
+                    if ( count($progress) > 25 ) {
+                        $funnel_steps[3] = true;
+                    }
                 }
                 if ( 'first_practitioner_report' == $value['subtype'] || 'join_community' == $value['subtype'] ) {
                     $funnel_steps[4] = true;
@@ -207,6 +216,12 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 if ( 'seeing_generational_fruit' == $value['subtype'] ) {
                     $funnel_steps[6] = true;
                 }
+                if ( 'new_church' == $value['subtype'] ) {
+                    $funnel_steps[6] = true;
+                }
+
+
+                // user state
                 if ( 'plan_created' == $value['subtype'] ) {
                     $user_state[$value['subtype']] = true;
                 }
