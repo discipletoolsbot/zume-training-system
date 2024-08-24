@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 22:08+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-23 02:33+0000\n"
+"Last-Translator: Alli Khalidu Halidu <khalidhassan1759@gmail.com>\n"
 "Language-Team: Hausa <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ha_NG/>\n"
 "Language: ha_NG\n"
@@ -740,8 +740,7 @@ msgstr "Koci yana taimakawa da \"%1$s\" ga mai horarwa a cikin %2$s. %3$s"
 msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
-msgstr ""
-"Koci ya shiga kallon kallon mai horarwa game da \"%1$s\" a cikin %2$s. %3$s"
+msgstr "Koci ya shiga kallon mai horarwa game da \"%1$s\" a cikin %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
@@ -1028,7 +1027,7 @@ msgstr "An horar da"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr "Menene Horon Zume?"
+msgstr "Menene Horon Zume"
 
 #: maps/map-3-trainees.php:124
 msgid ""
@@ -1081,7 +1080,7 @@ msgstr ""
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
-msgstr "Shiga Al'ummar Zume"
+msgstr "Shiga Al'ummar Zume."
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
@@ -1118,7 +1117,7 @@ msgid ""
 msgstr ""
 "Don ƙwararrun almajirai su fara aƙalla majami'u masu sauƙaƙa biyu ga kowane "
 "mutum dubu biyar a Arewacin Amurka da majami'u masu sauƙi guda biyu ga "
-"kowane mutum dubu hamsin a duniya."
+"kowane mutum dubu hamsin a duniya"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1147,7 +1146,7 @@ msgstr ""
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr "Ƙara majami'unku a cikin ɓangaren \"Majami'u na\" na dashboard."
+msgstr "Ƙara majami'unku a cikin sashin \"Cikiniyoyi na\" dashboard."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
@@ -4971,7 +4970,7 @@ msgstr "Kocin"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr "%s group"
+msgstr "%s rukuni"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
@@ -7122,9 +7121,9 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
-"Zume Training ne akan layi da kuma ilimin rayuwa cikin tsari wanda aka tsara "
-"don kananan kungiyoyi waɗanda suke bin Yesu don koyan yadda zasu yi biyayya "
-"ga Babban kwamishina kuma su sanya almajirai masu yawa."
+"Koyarwar Zúme ƙwarewa ce ta kan layi da ta cikin rayuwa da aka tsara don "
+"ƙananan ƙungiyoyi waɗanda ke bin Yesu. Almajirin kan layi, almajirin rayuwa "
+"yana yin horon motsi"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
