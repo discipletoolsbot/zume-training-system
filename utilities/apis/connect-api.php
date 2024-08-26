@@ -257,9 +257,9 @@ class Zume_Connect_Endpoints
         if ( $coaching_contact_id ) {
             $fields = [
                 'tags' => [
-                    "values" => [
-                        [ "value" => $plan['title'] ]
-                    ]
+                    'values' => [
+                        [ 'value' => $plan['title'] ],
+                    ],
                 ],
                 'coached_by' => [
                     'values' => [
@@ -282,7 +282,7 @@ class Zume_Connect_Endpoints
                     'force_values' => true,
                 ];
             } else {
-                $ip_location_grid_meta = zume_get_user_location($user_id);
+                $ip_location_grid_meta = zume_get_user_location( $user_id );
                 $fields['location_grid_meta'] = [
                     'values' => [
                         [
@@ -310,9 +310,9 @@ class Zume_Connect_Endpoints
                 'trainee_user_id' => $profile['user_id'],
                 'trainee_contact_id' => $profile['contact_id'],
                 'tags' => [
-                    "values" => [
-                        [ "value" => $plan['title'] ]
-                    ]
+                    'values' => [
+                        [ 'value' => $plan['title'] ],
+                    ],
                 ],
                 'coached_by' => [
                     'values' => [
@@ -334,7 +334,7 @@ class Zume_Connect_Endpoints
                     ],
                 ];
             } else {
-                $ip_location_grid_meta = zume_get_user_location($user_id);
+                $ip_location_grid_meta = zume_get_user_location( $user_id );
                 $fields['location_grid_meta'] = [
                     'values' => [
                         [

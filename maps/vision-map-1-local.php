@@ -94,7 +94,7 @@ class Zume_Map_Local_Vision extends Zume_Magic_Page
         // /
 
         DT_Mapbox_API::geocoder_scripts();
-
+            // @phpcs:disable
         if ( isset( $_GET['grid_id'] ) ) {
             // if grid_id given
                 // then give local vision for the grid id
@@ -110,14 +110,14 @@ class Zume_Map_Local_Vision extends Zume_Magic_Page
             // if no grid id, but user logged in, and location_select is not set to true
                 // then give local vision for users location
             global $zume_user_profile;
-            print_r($zume_user_profile);
+            print_r( $zume_user_profile );
         }
         else {
             // if no grid id, and no login || location_select is set to true
                 // then give location select tool
             echo 'Location select';
         }
-
+        // @phpcs:enable
     }
 
     public function footer_javascript(){

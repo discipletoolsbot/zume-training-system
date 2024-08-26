@@ -203,7 +203,7 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                 }
                 if ( ! ( strpos( 'heard', $value['subtype'] ) === false ) ) {
                     $progress[$value['subtype']] = true;
-                    if ( count($progress) > 25 ) {
+                    if ( count( $progress ) > 25 ) {
                         $funnel_steps[3] = true;
                     }
                 }
