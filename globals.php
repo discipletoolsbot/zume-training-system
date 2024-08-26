@@ -317,7 +317,7 @@ if ( ! function_exists( 'zume_get_user_location' ) ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        global $wpdb, $table_prefix;
+        global $wpdb;
         $location = $wpdb->get_row(
             $wpdb->prepare(
                 "SELECT lng, lat, level, label, grid_id, source
