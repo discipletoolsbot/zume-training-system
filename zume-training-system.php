@@ -441,11 +441,11 @@ class Zume_Training {
             'language_code' => $user_language['code'] ?? 'en',
         ], true );
 
-        zume_log_insert('stage', 'current_level', [
+        zume_log_insert('system', 'current_level', [
             'user_id' => $user->ID,
             'post_id' => $new_user_contact['ID'],
             'post_type' => 'zume',
-            'type' => 'stage',
+            'type' => 'system',
             'subtype' => 'current_level',
             'value' => 1,
             'lng' => $contact_location['location_grid_meta'][0]['lng'],
@@ -457,7 +457,7 @@ class Zume_Training {
             'language_code' => $user_language['code'] ?? 'en',
         ], true );
 
-        Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'system', 'registered' ) );
+        Zume_System_Encouragement_API::_install_plan( $user->ID, Zume_System_Encouragement_API::_get_recommended_plan( $user->ID, 'training', 'registered' ) );
     }
     public function dt_update_users_corresponding_contact( mixed $contact, WP_User $user ) {
         $current_user = wp_get_current_user();

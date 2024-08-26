@@ -399,7 +399,7 @@ class Zume_Connect_Endpoints
         if ( $coach_id !== null ) {
             Zume_System_Log_API::log( 'coaching', 'requested_a_coach', [ 'user_id' => $user_id ], true );
             Zume_System_Log_API::log( 'system', 'celebrated_coach_request', [ 'user_id' => $user_id ], true );
-            Zume_System_Log_API::log( 'system', 'connected_to_coach', [ 'user_id' => $user_id, 'payload' => $coach_id ], true ); // change payload strategy
+            Zume_System_Log_API::log( 'coaching', 'connected_to_coach', [ 'user_id' => $user_id, 'payload' => $coach_id ], true ); // change payload strategy
         } else {
             Zume_System_Log_API::log( 'coaching', 'requested_a_coach', [ 'user_id' => $user_id ], true );
         }
