@@ -76,14 +76,6 @@ class Zume_Training_Pieces_URL extends Zume_Magic_Page
         $logger_subtype = $zume_piece_id.'_heard';
         zume_content_logger( $logger_type, $logger_subtype, $this->lang_code );
 
-
-        ?>
-        <script>
-            jQuery(document).ready(function(){
-                jQuery(document).foundation();
-            });
-        </script>
-        <?php
     }
 
     public function body(){
