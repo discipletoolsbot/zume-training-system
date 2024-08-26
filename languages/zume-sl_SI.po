@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-21 21:59+0000\n"
+"PO-Revision-Date: 2024-08-24 07:22+0000\n"
 "Last-Translator: Aleksandra <aleksandra.alex.bilbija@gmail.com>\n"
-"Language-Team: Slovenian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/sl_SI/>\n"
+"Language-Team: Slovenian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/sl_SI/>\n"
 "Language: sl_SI\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "Začetek tečaja"
 #: utilities/integrations/replace-placeholder.php:112
 #, fuzzy
 msgid "10 Session Course"
-msgstr "tečaj za 10 seans"
+msgstr "Tečaj z 10 lekcijami"
 
 #: 404.php:85 site/dashboard/dashboard.php:238 site/pages/resources.php:127
 #: site/parts/download-slides.php:34 site/parts/download-slides.php:46
@@ -67,7 +67,7 @@ msgstr "tečaj za 10 seans"
 #: utilities/integrations/replace-placeholder.php:116
 #, fuzzy
 msgid "20 Session Course"
-msgstr "tečaj za 20 seans"
+msgstr "Tečaj z 20 lekcijami"
 
 #: 404.php:86 site/parts/footer.php:31
 #, fuzzy
@@ -711,7 +711,7 @@ msgstr ""
 #: globals.php:2469
 #, fuzzy
 msgid "3-Circles Gospel Presentation"
-msgstr "3-krožna predstavitev evangelija"
+msgstr "Predstavitev evangelija s tremi krogi"
 
 #: globals.php:2470
 #, fuzzy
@@ -719,32 +719,30 @@ msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
-"Predstavitev evangelija s tremi krogi je način pripovedovanja evangelija s "
+"Predstavitev evangelija s tremi krogi je način deljenja evangelija s "
 "preprosto ilustracijo, ki jo lahko narišete na kos papirja."
 
 #: globals.php:2471
 #, fuzzy
 msgid "3-Circles"
-msgstr "3-Krogi"
+msgstr "3 krogi"
 
 #: globals.php:7496 site/course/presenter.php:164
 #: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:176
 #: site/pages/follow-jesus.php:340 site/parts/footer.php:77
 #: site/parts/footer.php:84 site/parts/footer.php:91
 #: site/parts/language-menu.php:4
-#, fuzzy
 msgid "Close"
 msgstr "Zapri"
 
 #: globals.php:7698
-#, fuzzy
 msgid "No Results"
 msgstr "Ni rezultatov"
 
 #: maps/heatmap.php:3142
 #, fuzzy
 msgid "trainee"
-msgstr "Usposobljeni"
+msgstr "tečajnik"
 
 #: maps/heatmap.php:3145
 #, fuzzy
@@ -752,13 +750,14 @@ msgid "practitioner"
 msgstr "Prakticiranje"
 
 #: maps/heatmap.php:3148
+#, fuzzy
 msgid "visitor"
-msgstr ""
+msgstr "gost"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Registriral se je nov tečajnik iz %1$s!"
 
 #: maps/heatmap.php:3162
 #, php-format

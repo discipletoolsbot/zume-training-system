@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-20 11:34+0000\n"
+"PO-Revision-Date: 2024-08-24 07:22+0000\n"
 "Last-Translator: Buleleng Team <bulelengteam@gmail.com>\n"
-"Language-Team: Indonesian <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/id_ID/>\n"
+"Language-Team: Indonesian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/id_ID/>\n"
 "Language: id_ID\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,9 +16,9 @@ msgstr ""
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "Halaman yang Anda cari tidak ditemukan atau sudah dihapus."
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -64,7 +64,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:111
 #: utilities/integrations/replace-placeholder.php:112
 msgid "10 Session Course"
-msgstr ""
+msgstr "10 Sesi Kursus"
 
 #: 404.php:85 site/dashboard/dashboard.php:238 site/pages/resources.php:127
 #: site/parts/download-slides.php:34 site/parts/download-slides.php:46
@@ -72,11 +72,11 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:115
 #: utilities/integrations/replace-placeholder.php:116
 msgid "20 Session Course"
-msgstr ""
+msgstr "20 sesi Kursus"
 
 #: 404.php:86 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "3 Hari Kursus Intensif"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79
@@ -89,7 +89,7 @@ msgstr "Pelatihan"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:202
 msgid "How it Works"
-msgstr ""
+msgstr "Cara Kerjanya"
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
@@ -101,11 +101,11 @@ msgstr "FAQs (Pertanyaan yang sering ditanyakan)"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
-msgstr ""
+msgstr "Zume saya"
 
 #: appearance/style-override/navigation.php:117
 msgid "Contacts"
-msgstr ""
+msgstr "Kontak"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
@@ -130,11 +130,11 @@ msgstr "Visi"
 
 #: appearance/style-override/navigation.php:154
 msgid "Stories"
-msgstr ""
+msgstr "Kisah"
 
 #: appearance/style-override/navigation.php:160
 msgid "Global Map"
-msgstr ""
+msgstr "Peta Global"
 
 #: globals.php:2085 globals.php:2087 site/course/course-content.php:86
 #: site/course/course-content.php:101 site/course/course-content.php:110
@@ -154,7 +154,7 @@ msgstr ""
 #: globals.php:2097 site/course/course-content.php:3158
 #: site/course/course-content.php:3176 site/pages/follow-jesus.php:172
 msgid "Simple Definition of Disciple and Church"
-msgstr "Definisi Sederhana Pengikut dan Jemaah"
+msgstr "Definisi Sederhana dari Pengikut dan Jemaah"
 
 #: globals.php:2098 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:173
@@ -168,7 +168,7 @@ msgstr ""
 #: globals.php:2099 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
-msgstr ""
+msgstr "Murid-murid dan Gereja"
 
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
@@ -177,31 +177,31 @@ msgstr "Pernapasan Rohani adalah Mendengar dan Menaati Allah"
 
 #: globals.php:2110 site/pages/follow-jesus.php:195
 msgid "Being a disciple means we hear from God and we obey God."
-msgstr "Menjadi murid berarti kita mendengar dan menaati Allah."
+msgstr "Menjadi serorang murid berarti kita mendengar dan menaati Allah."
 
 #: globals.php:2111 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr ""
+msgstr "Mendengar dan Mentaati Allah"
 
 #: globals.php:2121 globals.php:2123
 msgid "S.O.A.P.S. Bible Study"
-msgstr ""
+msgstr "Pembelajaran Alkitab S.O.A.P.S."
 
 #: globals.php:2122 site/pages/follow-jesus.php:210
 msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
-"Alat untuk membantu anda belajar Alkitab tiap hari supaya anda mengerti, "
-"menaati, dan membagikan Firman Allah."
+"Alat untuk belajar Alkitab setiap hari yang membantu anda mengerti, menaati, "
+"dan membagikan Firman Allah."
 
 #: globals.php:2133 globals.php:2135 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3406
 #: site/course/course-content.php:3422 site/pages/follow-jesus.php:224
 msgid "Accountability Groups"
-msgstr "Kelompok-Kelompok Pertanggungjawaban"
+msgstr "Kelompok Pertanggungjawaban"
 
 #: globals.php:2134 site/pages/follow-jesus.php:225
 msgid ""
@@ -209,11 +209,13 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
-"Alat untuk dua atau tiga orang yang berjenis kelamin sama untuk berkumpul "
-"setiap minggu dan saling menguatkan satu dengan yang lain di bagian yang "
-"sudah berjalan baik dan mengungkapkan bagian yang perlu diperbaiki."
+"Alat untuk dua atau tiga orang dengan jenis kelamin yang sama untuk "
+"berkumpul setiap minggu dan saling menguatkan satu dengan yang lain di "
+"bagian yang sudah berjalan dengan baik dan mengungkapkan bagian yang perlu "
+"diperbaiki."
 
 #: globals.php:2145 site/pages/follow-jesus.php:188
+#, fuzzy
 msgid "Consumer vs Producer Lifestyle"
 msgstr "Gaya Hidup Pelanggan vs Produsen"
 
@@ -222,8 +224,8 @@ msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
-"Anda akan menemukan empat cara utama Allah membuat para pengikut setiap hari "
-"menjadi lebih seperti Isa."
+"Anda akan menemukan empat cara utama Allah membuat para pengikut menjadi "
+"lebih seperti Isa setiap harinya."
 
 #: globals.php:2147
 msgid "Producer not Consumer"
@@ -288,7 +290,7 @@ msgstr ""
 
 #: globals.php:2195
 msgid "Sharing God‘s Story"
-msgstr ""
+msgstr "Bagikan Kisah Allah"
 
 #: globals.php:2205 site/pages/follow-jesus.php:236
 msgid "Baptism and How To Do It"
@@ -344,7 +346,7 @@ msgstr ""
 
 #: globals.php:2231
 msgid "Great, Greater, and Greatest Blessing"
-msgstr ""
+msgstr "Berkat yang Besar, Lebih Besar dan Terbesar"
 
 #: globals.php:2241 site/pages/follow-jesus.php:266
 msgid "Duckling Discipleship – Leading Immediately"
@@ -366,7 +368,7 @@ msgstr "Pemuridan Anak Bebek"
 #: site/course/course-content.php:1404 site/course/course-content.php:4351
 #: site/course/course-content.php:4372 site/pages/follow-jesus.php:247
 msgid "Eyes to See Where the Kingdom Isn’t"
-msgstr ""
+msgstr "Mata untuk Melihat Dimana Tidak Ada Kerajaan"
 
 #: globals.php:2254 site/pages/follow-jesus.php:248
 msgid ""
@@ -393,7 +395,7 @@ msgstr ""
 #: site/course/course-content.php:1353 site/course/course-content.php:1409
 #: site/course/course-content.php:4355 site/course/course-content.php:4376
 msgid "The Lord’s Supper"
-msgstr ""
+msgstr "Perjamuan Allah"
 
 #: globals.php:2277 site/pages/follow-jesus.php:304
 msgid "Prayer Walking and How To Do It"
@@ -404,6 +406,9 @@ msgid ""
 "It‘s a simple way to obey God’s command to pray for others. And it‘s just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
+"Ini cara sederhana untuk menaati perintah Allah untuk berdoa bagi orang "
+"lain. Dan itu sama seperti namanya - berdoa kepada Allah sambil berjalan "
+"mengelilingi sekitar."
 
 #: globals.php:2279 site/activities/activities.php:319
 #: site/course/course-content.php:1520 site/course/course-content.php:1528
@@ -420,6 +425,8 @@ msgstr "Orang Damai dan Bagaimana Menemukannya"
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
+"Pelajari siapa orang damai itu dan bagaimana cara mengetahui bahwa Anda "
+"telah menemukannya."
 
 #: globals.php:2291 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
@@ -436,6 +443,8 @@ msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
+"Apa yang diketahui para murid itu penting — tapi jauh lebih penting apa yang "
+"mereka LAKUKAN dengan apa yang mereka ketahui."
 
 #: globals.php:2303 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4727
@@ -455,7 +464,7 @@ msgstr ""
 
 #: globals.php:2315 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "Doa B.L.E.S.S."
 
 #: globals.php:2325 site/pages/follow-jesus.php:220
 msgid "3/3 Group Meeting Pattern"
@@ -467,6 +476,10 @@ msgid ""
 "fellowship and practice obeying and sharing what they‘ve learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
+"Kelompok 3/3 merupakan suatu cara bagi para pengikut Isa untuk bertemu, "
+"berdoa, belajar, bertumbuh, bersekutu dan mempraktikkan ketaatan dan berbagi "
+"apa yang telah mereka pelajari. Dengan demikian, Kelompok 3/3 bukan hanya "
+"kelompok kecil tapi Jemaah Sederhana."
 
 #: globals.php:2327
 msgid "3/3 Group"
@@ -514,6 +527,8 @@ msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
+"Lihat bagaimana membuat murid tidak harus terjadi secara berurutan. Beberapa "
+"hal dapat terjadi pada waktu yang bersamaan."
 
 #: globals.php:2373 site/course/course-content.php:2768
 #: site/pages/follow-jesus.php:278
@@ -543,7 +558,7 @@ msgstr "Selalu menjadi Bagian dari Dua Jemaah"
 
 #: globals.php:2386
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr ""
+msgstr "Pelajari bagaimana menaati perintah Isa dengan pergi DAN tinggal."
 
 #: globals.php:2398 globals.php:2400 site/course/course-content.php:2900
 #: site/course/course-content.php:3004 site/course/course-content.php:3010
@@ -658,17 +673,19 @@ msgstr ""
 
 #: globals.php:2469
 msgid "3-Circles Gospel Presentation"
-msgstr ""
+msgstr "Presentasi Injil 3 Lingkaran"
 
 #: globals.php:2470
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
+"Presentasi Injil 3-Lingkaran adalah cara untuk menyampaikan Injil "
+"menggunakan ilustrasi sederhana yang dapat digambar pada selembar kertas."
 
 #: globals.php:2471
 msgid "3-Circles"
-msgstr ""
+msgstr "3 lingkaran"
 
 #: globals.php:7496 site/course/presenter.php:164
 #: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:176
@@ -680,7 +697,7 @@ msgstr "Tutup"
 
 #: globals.php:7698
 msgid "No Results"
-msgstr ""
+msgstr "Tidak Ada Hasil"
 
 #: maps/heatmap.php:3142
 #, fuzzy
@@ -689,56 +706,60 @@ msgstr "Terlatih"
 
 #: maps/heatmap.php:3145
 msgid "practitioner"
-msgstr ""
+msgstr "Praktisi"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "pengunjung"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Peserta pelatihan baru dari %1$s telah terdaftar!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "%1$s di %2$s telah meminta %3$s pelatihan!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Kelompok pelatihan baru dijadwalkan pada %1$s. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s memulai SESI %2$s di %3$s. %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s sedang mempelajari \"%2$s\" dalam %3$s. %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s membagikan \"%2$s\" dengan seseorang di %3$s. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s sudah melatih seseorang untuk menggunakan \"%2$s\" di %3$s. %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"Seorang pelatih sedang mencontohkan \"%1$s\" untuk seorang peserta pelatihan "
+"dalam %2$s. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
 msgstr ""
+"Seorang pelatih membantu dengan \"%1$s\" untuk seorang peserta pelatihan di "
+"%2$s. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -746,6 +767,8 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Seorang pelatih telah memasuki tahap pengawasan untuk seorang peserta "
+"pelatihan mengenai \"%1$s\" di %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
@@ -755,15 +778,16 @@ msgstr ""
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "%1$s dibuat pada rencana pasca pelatihan di %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
+#, fuzzy
 msgid "Loading the planet"
-msgstr ""
+msgstr "Memuat tempat"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Menemukan populasi dunia"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"

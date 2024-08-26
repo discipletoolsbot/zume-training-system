@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 22:16+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-23 00:00+0000\n"
+"Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
 "Language-Team: Yoruba <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/yo/>\n"
 "Language: yo\n"
@@ -1090,6 +1090,8 @@ msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"Àfojúsùn: Òṣìṣẹ́ kan nínú ẹgbẹ̀rún márùn-ún ní Orílẹ̀-Èdè Amẹ́ríkà, òṣìṣẹ́ kan "
+"nínú ẹgbẹ̀rún márùn-ún kárí ayé"
 
 #: maps/map-5-churches.php:122
 msgid "Churches"
@@ -4745,10 +4747,10 @@ msgid "You have set your profile"
 msgstr "O ti ṣe àdàkọ rẹ"
 
 #: site/dashboard/dashboard.php:275
-#, fuzzy, php-format
+#, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr "%ṣiṣi silẹ"
+msgstr "%s ṣiṣi silẹ"
 
 #: site/dashboard/dashboard.php:275 utilities/apis/cta-api.php:329
 msgid "3 month plan"
@@ -5848,31 +5850,37 @@ msgstr ""
 "ikẹkọ ati ikẹkọ ori ayelujara."
 
 #: site/pages/about.php:168 site/pages/home.php:211
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
-msgstr "Fidio ati adaro lati ran ijo re lowo nipa mimo ipile isiro opo."
+msgstr ""
+"%1$sÀwọn fídíò ìtọ́ni %2$s ran àwùjọ rẹ lọ́wọ́ láti lóye àwọn ìlànà ìpilẹ̀ṣẹ̀ "
+"nípa gbígbé ọmọ-ẹ̀yìn pọ̀."
 
 #: site/pages/about.php:172 site/pages/home.php:215
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
-msgstr "Ijiroro apapo lati ran ijo yin lowo, nipa riro nu si ikan ti won so"
+msgstr ""
+"%1$sÌjíròrò Ẹgbẹ́ %2$s ran ẹgbẹ́ rẹ lọ́wọ́ láti ronú nípa ohun tí wọ́n ń pín."
 
 #: site/pages/about.php:176 site/pages/home.php:219
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
-msgstr "Awon ise kekeke ti yio ma je ki e le lo nkan tie ko."
+msgstr ""
+"%1$s Ìdánwò Rọrun %2$s ran àwùjọ rẹ lọ́wọ́ láti fi ohun tí ẹ̀ ń kọ́ sílò."
 
 #: site/pages/about.php:180 site/pages/home.php:223
-#, fuzzy, php-format
+#, php-format
 msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
-msgstr "Ipenija lati ran egbe eko agbara ati dagba ninu igba."
+msgstr ""
+"%1$sÌpèníjà Ìpàdé%2$s ran àwùjọ rẹ lọ́wọ́ láti máa kẹ́kọ̀ọ́ kí wọ́n sì máa dàgbà "
+"láàárín ìpàdé."
 
 #: site/pages/about.php:199
 msgid "Before you start."
@@ -6440,9 +6448,9 @@ msgstr ""
 "agbaye. ~ R"
 
 #: site/pages/home.php:343
-#, fuzzy, php-format
+#, php-format
 msgid "%s = Yeast"
-msgstr "Ìwúkàrà"
+msgstr "%s = Ìwúkàrà"
 
 #: site/pages/home.php:348
 msgid ""
@@ -7079,16 +7087,16 @@ msgid "Join the community"
 msgstr "darapo mo Agbegbe"
 
 #: utilities/apis/plans-api.php:122
-#, fuzzy, php-format
+#, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "ikeko mi akoko"
+msgstr "ikeko mi akoko -%s"
 
 #: utilities/apis/plans-api.php:124
-#, fuzzy, php-format
+#, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr "Ikẹkọ"
+msgstr "Ìdánilẹ́kọ̀ọ́ %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"

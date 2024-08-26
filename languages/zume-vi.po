@@ -2,10 +2,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-20 18:08+0000\n"
+"PO-Revision-Date: 2024-08-23 13:17+0000\n"
 "Last-Translator: Charlie Ritchie <ritchiecharlie@gmail.com>\n"
-"Language-Team: Vietnamese <https://translate.disciple.tools/projects/zume-"
-"training/zume-training-system/vi/>\n"
+"Language-Team: Vietnamese <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,9 +16,9 @@ msgstr ""
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -27,22 +27,22 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Lỗi 404 - Không tìm thấy"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr ""
+msgstr "Không tìm thấy trang bạn đang tìm kiếm, hoặc trang đã bị xóa"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Home"
-msgstr ""
+msgstr "Trang chủ"
 
 #: 404.php:77 site/course/presenter.php:141
 #: site/pages/_strings-mobile-pwa.php:14 site/pages/about.php:26
 #: site/parts/footer.php:10 site/parts/nav.php:24 site/parts/nav.php:85
 msgid "About"
-msgstr ""
+msgstr "Về chúng tôi"
 
 #: 404.php:78 appearance/style-override/navigation.php:106
 #: site/course/presenter.php:139 site/dashboard/checkin-dashboard.php:29
@@ -56,7 +56,7 @@ msgstr "Bảng điều khiển"
 #: 404.php:83 site/dashboard/dashboard.php:236 site/parts/footer.php:25
 #: site/parts/footer.php:28
 msgid "Launch Course"
-msgstr ""
+msgstr "Bắt đầu Khoá học"
 
 #: 404.php:84 site/dashboard/dashboard.php:237 site/pages/resources.php:126
 #: site/parts/download-slides.php:31 site/parts/download-slides.php:43
@@ -64,7 +64,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:111
 #: utilities/integrations/replace-placeholder.php:112
 msgid "10 Session Course"
-msgstr ""
+msgstr "Khoá học 10 Bài"
 
 #: 404.php:85 site/dashboard/dashboard.php:238 site/pages/resources.php:127
 #: site/parts/download-slides.php:34 site/parts/download-slides.php:46
@@ -72,11 +72,11 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:115
 #: utilities/integrations/replace-placeholder.php:116
 msgid "20 Session Course"
-msgstr ""
+msgstr "Khoá học 20 Bài"
 
 #: 404.php:86 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
-msgstr ""
+msgstr "Khóa học Chuyên sâu 3 Ngày"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79
@@ -604,13 +604,12 @@ msgid "Leadership in Networks"
 msgstr "Lãnh đạo các Mạng lưới"
 
 #: globals.php:2422 site/pages/follow-jesus.php:330
-#, fuzzy
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
-"Tìm hiểu cách các hội thánh có nhiều thành viên luôn kết nối và sinh hoạt "
-"cùng nhau như một gia đình thuộc linh mở rộng."
+"Tìm hiểu cách các hội thánh nhân bội luôn kết nối và sinh hoạt cùng nhau như "
+"một gia đình thuộc linh mở rộng."
 
 #: globals.php:2433 site/course/course-content.php:2899
 #: site/course/course-content.php:2951 site/course/course-content.php:2960
@@ -639,13 +638,12 @@ msgid "Four Fields Tool"
 msgstr "Công cụ 4 Trường"
 
 #: globals.php:2446
-#, fuzzy
 msgid ""
 "The four fields diagnostic chart is a simple tool to be used by a leadership "
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
-"Biểu đồ bốn trường là một công cụ đơn giản được nhóm lãnh đạo sử dụng để "
+"Biểu đồ bốn cánh đồng là một công cụ đơn giản được nhóm lãnh đạo sử dụng để "
 "phản ánh tình trạng của những nỗ lực hiện tại và hoạt động của vương quốc "
 "xung quanh chúng."
 
@@ -694,42 +692,41 @@ msgid "No Results"
 msgstr "Không có kết quả"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
-msgstr "Đào tạo"
+msgstr "học viên"
 
 #: maps/heatmap.php:3145
 msgid "practitioner"
-msgstr ""
+msgstr "chuyên nghiệp"
 
 #: maps/heatmap.php:3148
 msgid "visitor"
-msgstr ""
+msgstr "khách"
 
 #: maps/heatmap.php:3158
 #, php-format
 msgid "A new trainee from %1$s has registered!"
-msgstr ""
+msgstr "Một học viên mới từ %1$s đã đăng ký!"
 
 #: maps/heatmap.php:3162
 #, php-format
 msgid "A %1$s in %2$s has requested %3$s coaching!"
-msgstr ""
+msgstr "Một %1$s trong %2$s đã yêu cầu huấn luyện %3$s!"
 
 #: maps/heatmap.php:3166
 #, php-format
 msgid "New training group scheduled in %1$s. %2$s"
-msgstr ""
+msgstr "Lịch huấn luyện mới là %1$s. %2$s"
 
 #: maps/heatmap.php:3208
 #, php-format
 msgid "A %1$s is starting SESSION %2$s in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s đang bắt đầu Buổi %2$s vào lúc %3$s. %4$s"
 
 #: maps/heatmap.php:3246
 #, php-format
 msgid "A %1$s is studying \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "%1$s đang học \"%2$s\" trong %3$s. %4$s"
 
 #: maps/heatmap.php:3288
 #, php-format
