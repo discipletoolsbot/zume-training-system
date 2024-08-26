@@ -8,7 +8,7 @@
 
 if ( ! function_exists( 'zume_get_user_profile' ) ) {
     function zume_get_user_profile( $user_id = null ) {
-        global $wpdb, $table_prefix;
+        global $wpdb;
 
         // return global object if already set and request is for current user
         if ( isset( $zume_user_profile ) && $zume_user_profile['user_id'] == $user_id ) {

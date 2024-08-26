@@ -60,12 +60,8 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id, $data ) {
+    public static function register_request_to_coaching( $user_id, $data = [] ) {
         return self::manage_user_coaching( $user_id, null, $data );
-    }
-
-    public static function connect_user_to_coach( $user_id, $coach_id ) {
-        return self::manage_user_coaching( $user_id, $coach_id );
     }
 
     /**
@@ -143,6 +139,19 @@ class Zume_Get_A_Coach_Endpoints
                         'level' => $profile['location']['level'],
                         'label' => $profile['location']['label'],
                         'grid_id' => $profile['location']['grid_id'],
+                    ],
+                ],
+            ];
+        } else {
+            $location = zume_get_user_location( $user_id );
+            $fields['location_grid_meta'] = [
+                'values' => [
+                    [
+                        'lng' => $location['lng'],
+                        'lat' => $location['lat'],
+                        'level' => $location['level'],
+                        'label' => $location['label'],
+                        'grid_id' => $location['grid_id'],
                     ],
                 ],
             ];
