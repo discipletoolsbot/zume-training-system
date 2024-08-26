@@ -1730,7 +1730,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1749,7 +1749,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1768,7 +1768,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1787,7 +1787,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1806,7 +1806,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1825,7 +1825,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1841,7 +1841,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1857,7 +1857,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1873,7 +1873,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1889,7 +1889,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1908,7 +1908,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1924,7 +1924,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1940,7 +1940,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -1956,7 +1956,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
                                 SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2015,7 +2015,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2034,7 +2034,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2053,7 +2053,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2072,7 +2072,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2092,7 +2092,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
 		                        SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2111,7 +2111,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2127,7 +2127,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2143,7 +2143,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2159,7 +2159,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2175,7 +2175,7 @@ class Zume_Funnel_App_Heatmap {
                            SELECT r.user_id, MAX(r.value) as stage, (
 		                        SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                 ) as grid_id FROM zume_dt_reports r
-                           WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                           WHERE r.type = 'system' AND r.subtype = 'current_level'
                            GROUP BY r.user_id
                         ) as tb
                         LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2194,7 +2194,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2210,7 +2210,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2226,7 +2226,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id
@@ -2242,7 +2242,7 @@ class Zume_Funnel_App_Heatmap {
                                SELECT r.user_id, MAX(r.value) as stage, (
                                     SELECT grid_id FROM zume_dt_reports WHERE user_id = r.user_id AND grid_id IS NOT NULL ORDER BY id DESC LIMIT 1
                                     ) as grid_id FROM zume_dt_reports r
-                               WHERE r.type = 'stage' AND r.subtype = 'current_level'
+                               WHERE r.type = 'system' AND r.subtype = 'current_level'
                                GROUP BY r.user_id
                             ) as tb
                             LEFT JOIN zume_dt_location_grid lg ON lg.grid_id=tb.grid_id

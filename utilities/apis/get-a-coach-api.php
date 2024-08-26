@@ -60,12 +60,8 @@ class Zume_Get_A_Coach_Endpoints
         ];
     }
 
-    public static function register_request_to_coaching( $user_id, $data ) {
+    public static function register_request_to_coaching( $user_id, $data = [] ) {
         return self::manage_user_coaching( $user_id, null, $data );
-    }
-
-    public static function connect_user_to_coach( $user_id, $coach_id ) {
-        return self::manage_user_coaching( $user_id, $coach_id );
     }
 
     /**
@@ -146,6 +142,19 @@ class Zume_Get_A_Coach_Endpoints
                     ],
                 ],
             ];
+        } else {
+            $location = zume_get_user_location( $user_id );
+            $fields['location_grid_meta'] = [
+                'values' => [
+                    [
+                        'lng' => $location['lng'],
+                        'lat' => $location['lat'],
+                        'level' => $location['level'],
+                        'label' => $location['label'],
+                        'grid_id' => $location['grid_id'],
+                    ],
+                ],
+            ];
         }
 
         $site = Site_Link_System::get_site_connection_vars( self::SITE_CONNECTION_POST_ID );
@@ -218,7 +227,7 @@ class Zume_Get_A_Coach_Endpoints
         if ( $coach_id !== null ) {
             Zume_System_Log_API::log( 'coaching', 'requested_a_coach', [ 'user_id' => $user_id ], true );
             Zume_System_Log_API::log( 'system', 'celebrated_coach_request', [ 'user_id' => $user_id ], true );
-            Zume_System_Log_API::log( 'system', 'connected_to_coach', [ 'user_id' => $user_id, 'payload' => $coach_id ], true );
+            Zume_System_Log_API::log( 'coaching', 'connected_to_coach', [ 'user_id' => $user_id, 'payload' => $coach_id ], true );
         } else {
             Zume_System_Log_API::log( 'coaching', 'requested_a_coach', [ 'user_id' => $user_id ], true );
         }
