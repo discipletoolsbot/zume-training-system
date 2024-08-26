@@ -177,7 +177,7 @@ class Zume_Connect_Endpoints
 
         $coach_user_id = $plan['assigned_to']['id'];
 
-        global $wpdb, $table_prefix;
+        global $wpdb;
         $coach_id = $wpdb->get_var(
             $wpdb->prepare(
                 "SELECT post_id
