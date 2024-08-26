@@ -2207,6 +2207,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
             $this->list_approved_languages();
             return;
         }
+
         // query users with translation role
         $translators = get_users( [
             'role' => 'custom_language_translator',
@@ -2218,7 +2219,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 ],
             ],
         ] );
-        global $zume_languages_full_list;
+        global $zume_languages_full_list, $wpdb;
         $zume_languages = $zume_languages_full_list;
         $language = $zume_languages[$this->language_code];
         echo '<h3>Translators for ' . $language['name'] . '</h3>';
@@ -2227,6 +2228,8 @@ class Zume_Training_Translator extends Zume_Magic_Page
                 echo '<strong>' . $translator->user_login . '</strong> (' . $translator->user_email . ') <br>';
             }
         }
+
+//        $recent_logs = $wpdb->get_results("", ARRAY_A );
     }
 }
 

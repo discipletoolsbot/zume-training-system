@@ -111,8 +111,6 @@ class Zume_Get_A_Coach_Endpoints
             }
 
             $result = Zume_Profile_Model::update( $fields );
-
-
         }
 
         $fields = [

@@ -325,3 +325,4 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     }
 }
 Zume_Training_Dashboard::instance();
+
