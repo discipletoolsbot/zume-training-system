@@ -345,6 +345,14 @@ class Zume_Training {
                     'only_for_types' => [ 'user' ],
                 ];
             }
+            if ( !isset( $fields['coaching_contact_id'] ) ){
+                $fields['coaching_contact_id'] = [
+                    'name' => __( 'Coaching Contact ID', 'zume' ),
+                    'type' => 'text',
+                    'tile' => 'profile_details',
+                    'only_for_types' => [ 'user' ],
+                ];
+            }
             if ( !isset( $fields['user_contact_preference'] ) ) {
                 $fields['user_contact_preference'] = [
                     'name' => __( 'Preferred Contact Methods', 'zume' ),
@@ -407,6 +415,7 @@ class Zume_Training {
             'user_phone' => '',
             'user_timezone' => $ip_result['time_zone']['id'] ?? '',
             'user_friend_key' => $user_friend_key,
+            'coaching_contact_id' => '',
             // @TODO These language codes aren't being used anywhere. Commented out ready for stripping out entirely
             //'user_ui_language' => $user_language['code'] ?? 'en',
             //'user_language' => $user_language['code'] ?? 'en',

@@ -61,24 +61,32 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
 
         // get coaching connections
         $coaches = [];
-        $coaching_contact_id = $wpdb->get_var(
-            $wpdb->prepare(
-                "SELECT post_id
+        $coaching_contact_id = get_post_meta( $contact_id, 'coaching_contact_id', true );
+        if ( ! $coaching_contact_id ) {
+            $coaching_contact_id = $wpdb->get_var(
+                $wpdb->prepare(
+                    "SELECT post_id
                     FROM zume_3_postmeta
                     WHERE meta_key = 'trainee_user_id'
                       AND meta_value = %s",
-            $user_id )
-        );
-        $coach_list = $wpdb->get_results(
-            $wpdb->prepare(
-                "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
+                $user_id )
+            );
+        }
+
+        $coach_list = [];
+        if ( $coaching_contact_id ) {
+            $coach_list = $wpdb->get_results(
+                $wpdb->prepare(
+                    "SELECT p.ID as contact_id, pm.meta_value as user_id, p.post_title as name
                     FROM zume_3_p2p p2
                     LEFT JOIN zume_3_posts p ON p2.p2p_to=p.ID
                     LEFT JOIN zume_3_postmeta pm ON pm.post_id = p.ID AND pm.meta_key = 'corresponds_to_user'
                     WHERE p2p_from = %d
                       AND p2p_type = 'contacts_to_contacts'",
-            $coaching_contact_id ), ARRAY_A
-        );
+                $coaching_contact_id ), ARRAY_A
+            );
+        }
+
         if ( ! empty( $coach_list ) ) {
             foreach ( $coach_list as $key => $value ) {
                 $communication_apps = $wpdb->get_results( $wpdb->prepare(
