@@ -6307,7 +6307,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
             self::_prepare_payload( $report, $data, $log );
 
             $report['hash'] = hash( 'sha256', maybe_serialize( $report ) . time() );
-            $added_log[] = self::insert( $report, true, false );
+            $added_log[] = self::insert( $report, true, $log_once );
 
             // run additional actions
             self::_add_additional_log_actions( $added_log, $report, $log );
@@ -7152,7 +7152,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
 
         public static function insert( array $args, bool $save_hash = true, bool $duplicate_check = true )
         {
-            global $wpdb, $table_prefix;
+            global $wpdb;
             if ( !isset( $args['type'] ) ) {
                 return false;
             }
