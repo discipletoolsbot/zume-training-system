@@ -189,6 +189,8 @@ class Zume_Get_A_Coach_Endpoints
 
         $body = json_decode( $result['body'], true );
 
+        update_post_meta( $profile['contact_id'], 'coaching_contact_id', $body['ID'] );
+
         if ( !empty( $data ) && isset( $data['how-can-we-serve'] ) ) {
             $coaching_needs = [
                 'coaching-request' => '&nbsp;&nbsp;* Someone to coach them',
@@ -222,6 +224,8 @@ class Zume_Get_A_Coach_Endpoints
             if ( is_wp_error( $result ) ) {
                 dt_write_log( __METHOD__ . ' FAILED TO ADD COMMENTS TO COACHING CONTACT FOR ' . $profile['name'] );
             }
+
+
         }
 
         if ( $coach_id !== null ) {
