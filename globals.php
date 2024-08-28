@@ -613,10 +613,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
-        $log = zume_get_user_log( $user_id );
-        $log_subtypes = array_column( $log, 'subtype' );
 
-        global $wpdb, $table_prefix;
+        global $wpdb;
         $contact_id = zume_get_user_contact_id( $user_id );
         $connected_plans = $wpdb->get_results( $wpdb->prepare(
             "SELECT p.ID as post_id, p.post_title as title, pm.meta_key, pm.meta_value
@@ -630,30 +628,63 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
 
         $plans = [];
         if ( ! empty( $connected_plans ) ) {
-            $participants = [];
-            foreach ( $connected_plans as $connection ){
-                if ( ! isset( $plans[$connection['post_id']] ) ) {
-                    $plans[$connection['post_id']] = [];
-                    $plans[$connection['post_id']]['title'] = $connection['title'];
-                    $plans[$connection['post_id']]['participants'] = [];
-                    $participants[] = $connection['post_id'];
+            $plan_post_ids = [];
+            // initialize loop
+            foreach( $connected_plans as $row ) {
+                if ( ! isset( $plans[$row['post_id']] ) ) {
+                    $plans[$row['post_id']] = [];
+                    $plans[$row['post_id']]['title'] = $row['title'];
+                    $plans[$row['post_id']]['participants'] = [];
+                    $plans[$row['post_id']]['sessions'] = [];
+                    $plans[$row['post_id']]['completed_sessions'] = [];
+                    $plan_post_ids[] = $row['post_id'];
                 }
-                if ( ( (string) (int) $connection['meta_value'] === $connection['meta_value'] )
-                    && ( $connection['meta_value'] <= PHP_INT_MAX )
-                    && ( $connection['meta_value'] >= ~PHP_INT_MAX )
-                    && strpos( $connection['meta_key'], 'set_' ) === 0
+
+                if ( str_ends_with( $row['meta_key'], '_completed') ) {
+                    continue;
+                }
+
+                if ( str_starts_with( $row['meta_key'], 'set_' )
+                    && ! str_ends_with( $row['meta_key'], '_type')
                 ) {
-                    $plans[$connection['post_id']][$connection['meta_key']] = [
-                        'timestamp' => $connection['meta_value'],
-                        'date' => gmdate( 'Y-m-d', $connection['meta_value'] ),
-                        'date_formatted' => gmdate( 'M j, Y', $connection['meta_value'] ),
-                        'completed' => in_array( $connection['meta_key'], $log_subtypes ),
+                    $key_array = explode('_', $row['meta_key'] );
+                    $plans[$row['post_id']]['sessions'][$row['meta_key']] = [
+                        'key' => $row['meta_key'],
+                        'title' => 'Session ' . $key_array[2] ?? '?',
+                        'timestamp' => (int) $row['meta_value'],
+                        'date' => date( 'Y-m-d', (int) $row['meta_value'] ),
+                        'date_formatted' => date( 'M j, Y', (int) $row['meta_value'] ),
+                        'completed' => 0,
+                        'completed_timestamp' => 0,
+                        'completed_date' => '',
+                        'completed_date_formatted' => ''
                     ];
-                } else {
-                    $plans[$connection['post_id']][$connection['meta_key']] = $connection['meta_value'];
+                }
+                else {
+                    // build the normal key value list
+                    $plans[$row['post_id']][$row['meta_key']] = $row['meta_value'];
                 }
             }
-            $participants_string = implode( ',', $participants );
+            // completions loop
+            foreach( $connected_plans as $row ) {
+                if ( str_ends_with( $row['meta_key'], '_completed') ) {
+                    if ( empty( $row['meta_value'] ) ) {
+                        continue;
+                    }
+
+                    $session_key = substr( $row['meta_key'], 0, -10 );
+
+                    if ( ! isset( $plans[$row['post_id']]['sessions'][$session_key] ) ) {
+                        continue;
+                    }
+                    $plans[$row['post_id']]['completed_sessions'][] = $session_key;
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed'] = 1;
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed_timestamp'] = (int) $row['meta_value'];
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed_date'] = date( 'Y-m-d', (int) $row['meta_value'] );
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed_formatted'] = date( 'M j, Y', (int) $row['meta_value'] );
+                }
+            }
+            $plans_query_string = implode( ',', $plan_post_ids );
             // phpcs:disable
             $participants_result = $wpdb->get_results(
                 "SELECT  p2.p2p_to as plan_id, p2.p2p_from as contact_id, pm.meta_value as user_id, p.post_title as user_name
@@ -661,32 +692,41 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
             		LEFT JOIN zume_posts p ON p.ID=p2.p2p_from
 					LEFT JOIN zume_postmeta pm ON p2.p2p_from=pm.post_id AND pm.meta_key = 'corresponds_to_user'
                     WHERE p2.p2p_type = 'zume_plans_to_contacts'
-                    AND p2.p2p_to IN ( $participants_string ) ", ARRAY_A );
+                    AND p2.p2p_to IN ( $plans_query_string ) ", ARRAY_A );
             // phpcs:enable
-
+//            $user_ids = [];
             foreach ( $participants_result as $participant ) {
-                $plans[$participant['plan_id']]['participants'][] = [
+                $plans[$participant['plan_id']]['participants'][$participant['user_id']] = [
                     'contact_id' => $participant['contact_id'],
                     'user_id' => $participant['user_id'],
                     'name' => $participant['user_name'],
+//                    'coaching_contact_id' => false,
                 ];
+//                $user_ids[] = $participant['user_id'];
             }
+
         }
 
-        // @todo embelish the array with more info and convert the dates from unix.
-
+        dt_write_log( __METHOD__);
+        dt_write_log( $plans );
         return $plans;
     }
 }
 if ( ! function_exists( 'zume_get_user_contact_id' ) ) {
     function zume_get_user_contact_id( $user_id ) {
-        global $wpdb, $table_prefix;
+        global $wpdb;
         return $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_postmeta WHERE meta_key = 'corresponds_to_user' AND meta_value = %s", $user_id ) );
+    }
+}
+if ( ! function_exists( 'zume_get_user_coaching_contact_id' ) ) {
+    function zume_get_user_coaching_contact_id( $user_id ) {
+        global $wpdb;
+        return $wpdb->get_var( $wpdb->prepare( "SELECT post_id FROM zume_3_postmeta WHERE meta_key = 'trainee_user_id' AND meta_value = %s", $user_id ) );
     }
 }
 if ( ! function_exists( 'zume_get_user_id_by_contact_id' ) ) {
     function zume_get_user_id_by_contact_id( $contact_id ) {
-        global $wpdb, $table_prefix;
+        global $wpdb;
         return $wpdb->get_var( $wpdb->prepare( "SELECT user_id FROM zume_usermeta WHERE meta_key = 'zume_corresponds_to_contact' AND meta_value = %s", $contact_id ) );
     }
 }
@@ -2838,7 +2878,7 @@ if ( ! function_exists( 'zume_get_percent' ) ) {
     }
 }
 if ( ! function_exists( 'zume_get_timezones' ) ) {
-    function zume_get_timezones( string $key = null ) : array {
+    function zume_get_timezones( string $key = null ): array {
         $timezones = [
             'Africa/Abidjan' => [
                 'timezone' => 'Africa/Abidjan',
@@ -6204,8 +6244,8 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
             );
             register_rest_route(
                 $namespace, '/log_anonymous', [
-                    'methods' => ['POST'],
-                    'callback' => [$this, 'rest_log_anonymous'],
+                    'methods' => [ 'POST' ],
+                    'callback' => [ $this, 'rest_log_anonymous' ],
                     'permission_callback' => '__return_true',
                 ]
             );
@@ -6235,7 +6275,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
         {
             $params = dt_recursive_sanitize_array( $request->get_params() );
             if ( !isset( $params['type'], $params['subtype'] ) ) {
-                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
+                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', [ 'status' => 400 ] );
             }
             return self::log_anonymous( $params['type'], $params['subtype'], $params, true );
         }
@@ -6297,7 +6337,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
                     return $item['type'] === $type && $item['subtype'] === $subtype;
                 });
                 if ( !empty( $already_logged ) ) {
-                    return ['already_logged' => true];
+                    return [ 'already_logged' => true ];
                 }
             }
 
@@ -7274,7 +7314,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
         {
             $added_log = [];
             if ( !isset( $type, $subtype ) ) {
-                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', ['status' => 400] );
+                return new WP_Error( __METHOD__, 'Missing required parameters: type, subtype.', [ 'status' => 400 ] );
             }
             $data = dt_recursive_sanitize_array( $data );
 
