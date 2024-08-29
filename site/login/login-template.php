@@ -481,12 +481,18 @@ switch ( $request_action ) {
                                                         data-action="submit"
                                                     >
                                                         <?php esc_html_e( 'Register', 'zume' ) ?>
+                                                        <span class="loading-spinner"></span>
                                                     </button>
                                                 </div>
                                             </form>
                                         </div>
                                         <script>
                                             function onRegister(token) {
+
+                                                const submitButtenElement = document.querySelector('#submit')
+                                                submitButtenElement.classList.add('disabled')
+                                                submitButtenElement.setAttribute('disabled', '')
+                                                submitButtenElement.querySelector('.loading-spinner').classList.add('active')
 
                                                 const recaptchaResponseInput = document.querySelector('#g-recaptcha-response')
                                                 recaptchaResponseInput.value = token
