@@ -186,6 +186,7 @@ export class DashChurches extends DashPage {
                                     <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
                                     <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
                                   </div>
+                                  <!-- This needs to change to open the join community wizard instead -->
                                   <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
                                     ${jsObject.translations.join}
                                   </button>

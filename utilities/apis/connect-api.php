@@ -232,7 +232,7 @@ class Zume_Connect_Endpoints
         $sub_type = $public === true ? 'joined_online_training' : 'joined_friends_training';
 
         // log
-        zume_log_insert( 'system', $sub_type, [ 'user_id' => $user_id ], true );
+        zume_log_insert( 'training', $sub_type, [ 'user_id' => $user_id ], true );
 
         $name = __( 'the plan', 'zume' );
         foreach ( $result['zume_plans'] as $plan ) {

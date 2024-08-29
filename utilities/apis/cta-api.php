@@ -146,9 +146,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [0, 1],
                 'required_keys' => [],
-                'disable_keys' => ['system_joined_online_training'],
-                'key' => 'system_joined_online_training',
-                'type' => 'system',
+                'disable_keys' => ['training_joined_online_training'],
+                'key' => 'training_joined_online_training',
+                'type' => 'training',
                 'subtype' => 'joined_online_training',
                 'content' => [
                     'title' => __( 'Join Online Training', 'zume' ),
@@ -160,7 +160,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [2, 3, 4, 5, 6],
-                'required_keys' => ['system_joined_friends_training', 'system_joined_online_training'],
+                'required_keys' => ['training_joined_friends_training', 'training_joined_online_training'],
                 'disable_keys' => ['system_celebrated_joining_training'],
                 'key' => 'system_celebrated_joining_training',
                 'type' => 'system',
@@ -203,7 +203,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2, 3, 4, 5, 6],
-                'required_keys' => ['system_connected_to_coach'],
+                'required_keys' => ['training_connected_to_coach'],
                 'disable_keys' => ['system_celebrated_coach_connect'],
                 'key' => 'system_celebrated_coach_connect',
                 'type' => 'system',
@@ -217,7 +217,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2, 3, 4, 5, 6],
-                'required_keys' => ['system_join_community'],
+                'required_keys' => ['practicing_join_community'],
                 'disable_keys' => ['system_celebrated_join_community'],
                 'key' => 'system_celebrated_join_community',
                 'type' => 'system',
@@ -232,9 +232,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [1],
                 'required_keys' => [],
-                'disable_keys' => ['system_plan_created'],
-                'key' => 'system_plan_created',
-                'type' => 'system',
+                'disable_keys' => ['training_plan_created'],
+                'key' => 'training_plan_created',
+                'type' => 'training',
                 'subtype' => 'plan_created',
                 'content' => [
                     'title' => __( 'Create a Training', 'zume' ),
@@ -246,10 +246,10 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2],
-                'required_keys' => ['system_plan_created'],
-                'disable_keys' => ['system_celebrate_plan_created'],
-                'key' => 'system_celebrate_plan_created',
-                'type' => 'system',
+                'required_keys' => ['training_plan_created'],
+                'disable_keys' => ['training_celebrate_plan_created'],
+                'key' => 'training_celebrate_plan_created',
+                'type' => 'training',
                 'subtype' => 'celebrate_plan_created',
                 'content' => [
                     'title' => __( 'Created Training!', 'zume' ),
@@ -262,9 +262,9 @@ class Zume_System_CTA_API
 /*             [
                 'stages' => [1, 2],
                 'required_keys' => [],
-                'disable_keys' => ['system_invited_friends'],
-                'key' => 'system_invited_friends',
-                'type' => 'system',
+                'disable_keys' => ['training_invited_friends'],
+                'key' => 'training_invited_friends',
+                'type' => 'training',
                 'subtype' => 'invited_friends',
                 'content' => [
                     'title' => __( 'Invite Friends', 'zume' ),
@@ -306,9 +306,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [2],
                 'required_keys' => ['training_26_heard'],
-                'disable_keys' => ['system_made_post_training_plan'],
-                'key' => 'system_made_post_training_plan',
-                'type' => 'system',
+                'disable_keys' => ['training_made_post_training_plan'],
+                'key' => 'training_made_post_training_plan',
+                'type' => 'training',
                 'subtype' => 'made_post_training_plan',
                 'content' => [
                     'title' => __( 'Create 3 Month Plan', 'zume' ),
@@ -334,7 +334,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2],
-                'required_keys' => ['system_made_post_training_plan'],
+                'required_keys' => ['training_made_post_training_plan'],
                 'disable_keys' => ['system_made_post_training_plan_celebrated'],
                 'key' => 'system_made_post_training_plan_celebrated',
                 'type' => 'system',
@@ -349,9 +349,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [3],
                 'required_keys' => [],
-                'disable_keys' => ['system_completed_3_month_plan'],
-                'key' => 'system_completed_3_month_plan',
-                'type' => 'system',
+                'disable_keys' => ['training_completed_3_month_plan'],
+                'key' => 'training_completed_3_month_plan',
+                'type' => 'training',
                 'subtype' => 'completed_3_month_plan',
                 'content' => [
                     'title' => __( 'Complete 3 Month Plan', 'zume' ),
@@ -363,7 +363,7 @@ class Zume_System_CTA_API
             ],
             [
                 'stages' => [1, 2, 3],
-                'required_keys' => ['system_completed_3_month_plan'],
+                'required_keys' => ['training_completed_3_month_plan'],
                 'disable_keys' => ['system_completed_3_month_plan_celebrated'],
                 'key' => 'system_completed_3_month_plan_celebrated',
                 'type' => 'system',
@@ -409,9 +409,9 @@ class Zume_System_CTA_API
             [
                 'stages' => [4, 5, 6],
                 'required_keys' => [],
-                'disable_keys' => ['system_join_community'],
-                'key' => 'system_join_community',
-                'type' => 'system',
+                'disable_keys' => ['practicing_join_community'],
+                'key' => 'practicing_join_community',
+                'type' => 'practicing',
                 'subtype' => 'join_community',
                 'content' => [
                     'title' => __( 'Join the community', 'zume' ),
