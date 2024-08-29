@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 20:22+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-27 03:59+0000\n"
+"Last-Translator: Kyle Koval <kyle.koval@gmail.com>\n"
 "Language-Team: Italian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/it_IT/>\n"
 "Language: it_IT\n"
@@ -943,11 +943,7 @@ msgstr "Altri record. (Zoom o Filtro mappa per focalizzare i risultati)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
-"DA RICORDARE – Trascorrete del tempo studiando il Diagramma dei 4 Campi e la "
-"Mappa Generazionale nella sezione Gruppi di Mentori alla Pari della guida di "
-"Zumé. Assicuratevi che ognuno nel gruppo abbia una comprensione basilare di "
-"questi strumenti prima di fare le domande suggerite."
+msgstr "Studiando"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
@@ -1008,39 +1004,39 @@ msgstr "Chi è in \"coaching\" interagisce con un mentore alla pari Zúme coach.
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
 msgid "How to Get on The Map"
-msgstr "La Mappa Generazionale"
+msgstr "Come Arrivare Sulla Mappa Generazionale"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr "Accedere sempre quando si studiano i contenuti."
+msgstr "Accedi sempre quando studi i contenuti."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr "Effettuare sempre il check-in durante la sessione."
+msgstr "Effettua sempre il check-in durante una sessione."
 
 #: maps/js-translation-strings.php:40
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
 msgstr ""
-"Monitoriamo i tuoi progressi nella formazione e in base al tuo utilizzo del "
-"sito.."
+"Aggiorna sempre i tuoi progressi nella sezione 'Formazione' mentre condividi "
+"con altre persone e le fai da mentore."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr "Segnalate sempre le nuove chiese semplici che state avviando."
+msgstr "Segnala sempre le nuove chiese semplici che stai avviando."
 
 #: maps/map-2-network-activities.php:158
 msgid "Activities"
-msgstr "Attivo"
+msgstr "Attività"
 
 #: maps/map-3-trainees.php:122
 msgid "Trainees"
-msgstr "Formato"
+msgstr "Apprendisti"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr "Cos'è Zúme Training?"
+msgstr "Mappa di Apprendisti Zúme"
 
 #: maps/map-3-trainees.php:124
 msgid ""
@@ -1094,15 +1090,15 @@ msgstr ""
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
-msgstr "Unisciti alla Comunità Zúme"
+msgstr "Unisciti alla Comunità Zúme."
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr "Aggiornate il vostro profilo con la vostra posizione."
+msgstr "Aggiorna il tuo profilo con la tua posizione."
 
 #: maps/map-4-practitioners.php:121
 msgid "Practitioners"
-msgstr "Le Pratiche"
+msgstr "Praticanti"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
@@ -1113,25 +1109,24 @@ msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
-"Obiettivo di saturazione: 1 tirocinante ogni 5.000 negli Stati Uniti, 1 "
-"tirocinante ogni 50.000 a livello globale"
+"Obiettivo di saturazione: 1 apprendista ogni 5.000 negli Stati Uniti, 1 "
+"apprendista ogni 50.000 a livello globale"
 
 #: maps/map-5-churches.php:122
 msgid "Churches"
-msgstr "Chiesa"
+msgstr "Chiese"
 
 #: maps/map-5-churches.php:123
 msgid "Map of Zúme Churches"
-msgstr "Due Chiese Semplici"
+msgstr "Mappa di Chiese Zúme"
 
 #: maps/map-5-churches.php:124
 msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
-"I moltiplicatori di discepoli già formati avviino almeno 2 chiese semplici e "
-"moltiplicative per ogni 5.000 persone nel Nord America e 2 chiese semplici "
-"per ogni 50.000 persone a livello globale."
+"Obiettivo di Saturazione: 2 chiese semplici per ogni 5.000 persone negli "
+"Stati Uniti e 2 chiese semplici per ogni 50.000 persone a livello globale"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1212,7 +1207,7 @@ msgstr "Il Diagramma dei Quattro Campi"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
-msgstr "A.O.C.F."
+msgstr "A.O.C.F"
 
 #: site/activities/coaching-checklist-host.php:100
 msgid "H.O.S.T."
@@ -7238,7 +7233,7 @@ msgid ""
 msgstr ""
 "Zúme Training è un'esperienza di apprendimento on-line e nella vita, pensata "
 "per piccoli gruppi che seguono Gesù per imparare come obbedire al Suo Grande "
-"Mandato e fare discepoli che si moltiplicano."
+"Mandato e fare discepoli che si moltiplicano"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"

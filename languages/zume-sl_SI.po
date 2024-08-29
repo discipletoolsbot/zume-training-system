@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-24 07:22+0000\n"
+"PO-Revision-Date: 2024-08-29 08:17+0000\n"
 "Last-Translator: Aleksandra <aleksandra.alex.bilbija@gmail.com>\n"
 "Language-Team: Slovenian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/sl_SI/>\n"
@@ -137,18 +137,16 @@ msgstr "Zemljevid sveta"
 #: site/course/course-content.php:101 site/course/course-content.php:110
 #: site/course/course-content.php:354 site/course/course-content.php:3157
 #: site/course/course-content.php:3175 site/pages/follow-jesus.php:168
-#, fuzzy
 msgid "God Uses Ordinary People"
-msgstr "Bog uporablja navadne ljudi"
+msgstr "Bog deluje po navadnih ljudeh"
 
 #: globals.php:2086 site/pages/follow-jesus.php:169
-#, fuzzy
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
-"Videli boste, kako Bog uporablja navadne ljudi, ki počnejo preproste stvari, "
-"da bi dosegli velik učinek."
+"Videli boste, kako Bog deluje po navadnih ljudeh, ki počnejo preproste "
+"stvari, da bi dosegel velik učinek."
 
 #: globals.php:2097 site/course/course-content.php:3158
 #: site/course/course-content.php:3176 site/pages/follow-jesus.php:172
@@ -183,9 +181,8 @@ msgid "Hearing and Obeying God"
 msgstr "Slišati Boga in mu biti poslušen"
 
 #: globals.php:2121 globals.php:2123
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
-msgstr "Študij Svetega pisma S.O.A.P.S."
+msgstr "SOAPS metoda preučevanje Svetega pisma"
 
 #: globals.php:2122 site/pages/follow-jesus.php:210
 msgid ""
@@ -214,9 +211,8 @@ msgstr ""
 "spremembe."
 
 #: globals.php:2145 site/pages/follow-jesus.php:188
-#, fuzzy
 msgid "Consumer vs Producer Lifestyle"
-msgstr "Življenjski slog potrošnika in proizvajalca"
+msgstr "Življenjski slog potrošnika in delavca"
 
 #: globals.php:2146 site/pages/follow-jesus.php:189
 #, fuzzy
@@ -228,12 +224,10 @@ msgstr ""
 "Jezusovo podobo."
 
 #: globals.php:2147
-#, fuzzy
 msgid "Producer not Consumer"
-msgstr "Proizvajalci in porabniki"
+msgstr "Delavec, ne potrošnik"
 
 #: globals.php:2157 globals.php:2159 site/pages/follow-jesus.php:198
-#, fuzzy
 msgid "How to Spend an Hour in Prayer"
 msgstr "Kako preživeti eno uro v molitvi"
 
@@ -243,9 +237,8 @@ msgid "See how easy it is to spend an hour in prayer."
 msgstr "Poglejte, kako preprosto je preživeti eno uro v molitvi."
 
 #: globals.php:2169 site/pages/follow-jesus.php:285
-#, fuzzy
 msgid "Relational Stewardship – List of 100"
-msgstr "Oskrbništvo odnosov - Seznam 100"
+msgstr "Zvestoba v odnosih - seznam 100"
 
 #: globals.php:2170 site/pages/follow-jesus.php:286
 #, fuzzy
@@ -656,7 +649,7 @@ msgstr ""
 #: site/course/course-content.php:5569 site/pages/follow-jesus.php:317
 #, fuzzy
 msgid "Peer Mentoring Groups"
-msgstr "Skupine vrstniškega mentorstva"
+msgstr "Skupine mentorstva med vrstniki"
 
 #: globals.php:2434 site/pages/follow-jesus.php:318
 #, fuzzy
@@ -671,9 +664,8 @@ msgstr ""
 
 #: globals.php:2435 site/activities/activities.php:342
 #: site/dashboard/wizard.php:182
-#, fuzzy
 msgid "Peer Mentoring"
-msgstr "Vzajemno mentorstvo"
+msgstr "Mentorstvo med vrstniki"
 
 #: globals.php:2445 globals.php:2447
 #, fuzzy
@@ -1210,7 +1202,7 @@ msgstr ""
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1494,9 +1486,9 @@ msgid ""
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
 "Odhod je nekakšna diploma, ko učenec postane vrstnik mentorja. Občasni stiki "
-"in vrstniško mentorstvo se lahko nadaljujejo, če sta učenec in mentor v isti "
-"mreži. Ko starš pusti otroka, da se popolnoma nenadzorovano vozi s kolesom, "
-"je to faza ODPUSTI."
+"in mentorstvo med vrstniki se lahko nadaljujejo, če sta učenec in mentor v "
+"isti mreži. Ko starš pusti otroka, da se popolnoma nenadzorovano vozi s "
+"kolesom, je to faza ODPUSTI."
 
 #: site/activities/coaching-checklist-two.php:101
 #, fuzzy
@@ -2184,11 +2176,10 @@ msgid "S.O.A.P.S. Bible Reading"
 msgstr "Branje Svetega pisma po sistemu S. O. A. P. S."
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Videli boste, kako Bog uporablja navadne ljudi, ki počnejo navadne stvari, "
-"da ima velik vpliv."
+"Bog deluje po navadnih ljudeh, ki počnejo preproste stvari, da bi dosegel "
+"velik učinek."
 
 #: site/course/course-content.php:136
 #, fuzzy
@@ -2312,7 +2303,7 @@ msgstr "Skupine za odgovornost so odličen način za pripravo!"
 #: site/course/course-content.php:329
 #, fuzzy
 msgid "Practice Accountability Groups"
-msgstr "Vaja –  skupine odgovornosti"
+msgstr "Vaja – skupine za odgovornost"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -2547,9 +2538,8 @@ msgstr "Na tem srečanju bomo slišali in razpravljali o tem konceptu:"
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3528 site/course/course-content.php:3548
-#, fuzzy
 msgid "Producer Not Consumer"
-msgstr "Proizvajalec in ne potrošnik"
+msgstr "Delavec, ne potrošnik"
 
 #: site/course/course-content.php:495
 #, fuzzy
@@ -2558,7 +2548,7 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
-"Če hočemo, da bodo naši učenci množični - duhovni proizvajalci in ne le "
+"Če hočemo, da bodo naši učenci množični - duhovni delavci in ne le "
 "potrošniki -, se moramo naučiti in deliti štiri glavne načine, kako Bog "
 "vsakodnevne sledilce dela bolj podobne Jezusu:"
 
@@ -2621,9 +2611,8 @@ msgstr ""
 "vrnejo v skupino."
 
 #: site/course/course-content.php:592
-#, fuzzy
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr "Kakšen je vaš odziv na uro, ki jo preživite v molitvi?"
+msgstr "Kakšen je tvoj odziv na uro, ki si jo preživel v molitvi?"
 
 #: site/course/course-content.php:593
 #, fuzzy
@@ -3994,13 +3983,13 @@ msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
-"Skupine za vrstniško mentorstvo zbirajo voditelje in jim pomagajo, da se "
+"Skupine za mentorstvo med vrstniki zbirajo voditelje in jim pomagajo, da se "
 "ljubijo in spodbujajo drug drugega v njihovi veri in vodenju."
 
 #: site/course/course-content.php:2986
 #, fuzzy
 msgid "Peer Mentoring Group Practice"
-msgstr "Skupine vzajemnega mentorstva"
+msgstr "Skupine mentorstva med vrstniki"
 
 #: site/course/course-content.php:2989
 #, fuzzy
@@ -4009,7 +3998,7 @@ msgid ""
 "Group outline."
 msgstr ""
 "Razdelite se v skupine po dva ali trije. Uporabite načrt skupine za "
-"vrstniško mentorstvo v formatu 3/3."
+"mentorstvo med vrstniki v formatu 3/3."
 
 #: site/course/course-content.php:2990
 #, fuzzy
@@ -4659,7 +4648,6 @@ msgstr ""
 "se približujete Jezusu."
 
 #: site/course/course-content.php:5584
-#, fuzzy
 msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
@@ -4667,7 +4655,7 @@ msgid ""
 msgstr ""
 "S svojo skupino za usposabljanje Zúme se pogovorite o tem, ali so člani "
 "pripravljeni, da bi se po koncu usposabljanja še naprej srečevali kot "
-"skupina za medsebojno mentorstvo."
+"skupina za mentorstvo med vrstniki."
 
 #: site/course/course-content.php:5585
 #, fuzzy
@@ -4676,7 +4664,7 @@ msgid ""
 "list of 100."
 msgstr ""
 "Z dvema vernikoma s seznama 100 oseb delite zamisel o \"mentorski skupini "
-"vrstnikov\"."
+"med vrstniki\"."
 
 #: site/course/course-content.php:5608 site/course/course-content.php:5613
 #, fuzzy
@@ -7370,7 +7358,6 @@ msgid "I'm Ready!"
 msgstr "Pripravljen sem!"
 
 #: site/pages/home.php:181
-#, fuzzy
 msgid "Ordinary People. Simple Steps."
 msgstr "Navadni ljudje. Preprosti koraki."
 

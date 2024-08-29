@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 22:08+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-29 08:17+0000\n"
+"Last-Translator: Philip Yuen <philipyuen@channelnetwork.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr "史诗404-找不到"
+msgstr "史诗 404 - 找不到"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -52,7 +52,7 @@ msgstr "启动课程"
 #: utilities/integrations/replace-placeholder.php:111
 #: utilities/integrations/replace-placeholder.php:112
 msgid "10 Session Course"
-msgstr "10堂课程"
+msgstr "10 堂课程"
 
 #: 404.php:85 site/dashboard/dashboard.php:238 site/pages/resources.php:127
 #: site/parts/download-slides.php:34 site/parts/download-slides.php:46
@@ -60,11 +60,11 @@ msgstr "10堂课程"
 #: utilities/integrations/replace-placeholder.php:115
 #: utilities/integrations/replace-placeholder.php:116
 msgid "20 Session Course"
-msgstr "20堂课程"
+msgstr "20 堂课程"
 
 #: 404.php:86 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
-msgstr "3天密集课程"
+msgstr "3 天密集课程"
 
 #: appearance/style-override/navigation.php:75
 #: appearance/style-override/navigation.php:79
@@ -521,9 +521,8 @@ msgstr "三个月规划"
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
-msgstr ""
-"拟定规划你在接下来三个月里，会如何施行应用「天国酵母」Zúme工具，再与组员分"
-"享。"
+msgstr "拟定规划你在接下来三个月里，会如何施行应用「天国酵母」Zúme "
+"工具，再与组员分享。"
 
 #: globals.php:2409 globals.php:2411
 #: site/activities/coaching-checklist-host.php:22
@@ -1256,7 +1255,7 @@ msgstr "示范"
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Assist"
-msgstr "协助"
+msgstr "辅助"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:175
@@ -1266,7 +1265,7 @@ msgstr "协助"
 #: site/activities/coaching-checklist.php:292
 #: site/course/course-content.php:1813 site/course/course-content.php:4739
 msgid "Watch"
-msgstr "观察"
+msgstr "守护"
 
 #: site/activities/coaching-checklist-mawl.php:138
 #: site/activities/coaching-checklist-mawl.php:179
@@ -1356,7 +1355,7 @@ msgstr "发展领袖能力"
 #: site/activities/coaching-checklist.php:137
 #: site/activities/coaching-checklist.php:270
 msgid "Unaware"
-msgstr "不知情"
+msgstr "不熟悉"
 
 #: site/activities/coaching-checklist.php:140
 #: site/activities/coaching-checklist.php:273
@@ -1366,12 +1365,12 @@ msgstr "不熟练"
 #: site/activities/coaching-checklist.php:143
 #: site/activities/coaching-checklist.php:276
 msgid "Competent"
-msgstr "完全的"
+msgstr "會運用"
 
 #: site/activities/coaching-checklist.php:146
 #: site/activities/coaching-checklist.php:279
 msgid "Skilled"
-msgstr "技能的"
+msgstr "已熟练"
 
 #: site/activities/coaching-checklist.php:151
 #: site/activities/coaching-checklist.php:283
@@ -1560,7 +1559,7 @@ msgstr "讨论"
 #: site/course/_strings-3-circle-gospel-presentation.php:62
 #: site/course/course-builder.php:405
 msgid "(10 min)"
-msgstr "(10分钟)"
+msgstr "(10 分钟)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:873
@@ -1603,7 +1602,7 @@ msgstr "看影片"
 #: site/course/_strings-3-circle-gospel-presentation.php:40
 #: site/course/course-builder.php:404
 msgid "(5 min)"
-msgstr "(5分钟)"
+msgstr "(5 分钟)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 #: site/course/course-content.php:800 site/course/course-content.php:851
@@ -1639,7 +1638,7 @@ msgstr "你认为透过讲述这样的故事来分享神的故事会更容易还
 #: site/course/_strings-3-circle-gospel-presentation.php:109
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr "扫QR Code 或找一张纸。"
+msgstr "扫 QR code 或找一张纸。"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid "Select a person from your list of 100."
@@ -1649,7 +1648,7 @@ msgstr "每人拟出自己的「百人关注名单」"
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
-msgstr "使用辅导清单并评估您选择的人。问问自己“这个人需要什么工具和观念？”"
+msgstr "使用辅导清单并评估您选择的人。问问自己「这个人需要什么工具和观念？」"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:87
 msgid "Check off the checklist."
@@ -1678,80 +1677,80 @@ msgstr "评估自己 - 评估自己并在辅导清单上的对应栏做标记。
 
 #: site/course/course-builder.php:403
 msgid "(1 min)"
-msgstr "(1分钟)"
+msgstr "(1 分钟)"
 
 #: site/course/course-builder.php:406
 msgid "(15 min)"
-msgstr "(15分钟)"
+msgstr "(15 分钟)"
 
 #: site/course/course-builder.php:407
 msgid "(20 min)"
-msgstr "(20分钟)"
+msgstr "(20 分钟)"
 
 #: site/course/course-builder.php:408
 msgid "(25 min)"
-msgstr "(25分钟)"
+msgstr "(25 分钟)"
 
 #: site/course/course-builder.php:409
 msgid "(30 min)"
-msgstr "(30分钟)"
+msgstr "(30 分钟)"
 
 #: site/course/course-builder.php:410
 msgid "(35 min)"
-msgstr "(35分钟)"
+msgstr "(35 分钟)"
 
 #: site/course/course-builder.php:411
 msgid "(40 min)"
-msgstr "(40分钟)"
+msgstr "(40 分钟)"
 
 #: site/course/course-builder.php:412
 msgid "(45 min)"
-msgstr "(45分钟)"
+msgstr "(45 分钟)"
 
 #: site/course/course-builder.php:413
 msgid "(50 min)"
-msgstr "(50分钟)"
+msgstr "(50 分钟)"
 
 #: site/course/course-builder.php:414
 msgid "(55 min)"
-msgstr "(55分钟)"
+msgstr "(55 分钟)"
 
 #: site/course/course-builder.php:415
 msgid "(60 min)"
-msgstr "(60分钟)"
+msgstr "(60 分钟)"
 
 #: site/course/course-builder.php:416
 msgid "(65 min)"
-msgstr "(65分钟)"
+msgstr "(65 分钟)"
 
 #: site/course/course-builder.php:417
 msgid "(70 min)"
-msgstr "(70分钟)"
+msgstr "(70 分钟)"
 
 #: site/course/course-builder.php:418
 msgid "(75 min)"
-msgstr "(75分钟)"
+msgstr "(75 分钟)"
 
 #: site/course/course-builder.php:419
 msgid "(80 min)"
-msgstr "(80分钟)"
+msgstr "(80 分钟)"
 
 #: site/course/course-builder.php:420
 msgid "(85 min)"
-msgstr "(85分钟)"
+msgstr "(85 分钟)"
 
 #: site/course/course-builder.php:421
 msgid "(90 min)"
-msgstr "(90分钟)"
+msgstr "(90 分钟)"
 
 #: site/course/course-builder.php:422
 msgid "(60 - 90 min)"
-msgstr "(60-90分钟)"
+msgstr "(60-90 分钟)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3103 site/course/course-content.php:3108
 msgid "SESSION 1"
-msgstr "第一堂课"
+msgstr "第 1 课"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1965,9 +1964,8 @@ msgstr "练习 S.O.A.P.S."
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
-msgstr ""
-"扫描QR Code并用马太福音 6:9-13 透过S.O.A.P.S.圣经学习模式单独工作。 （20 分"
-"钟）"
+msgstr "扫描 QR code 并用马太福音 6:9-13 透过 S.O.A.P.S. 圣经学习模式单独工作。 （20 "
+"分钟）"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -2017,7 +2015,7 @@ msgstr "操练 - 守望互勉小组"
 #: site/course/course-content.php:2988 site/course/course-content.php:3943
 #: site/course/course-content.php:4898
 msgid "Scan the QR code."
-msgstr "扫描QR code。"
+msgstr "扫描 QR code。"
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -2101,8 +2099,9 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
-"开始操练S.O.A.P.S. 香皂读经法吧！下次聚会前﹐专注在马太福音五到七章﹐每天至少"
-"读过一遍﹐并且要每天写下S.O.A.P.S. 香皂读经日志。"
+"开始操练 S.O.A.P.S. "
+"香皂读经法吧！下次聚会前﹐专注在马太福音五到七章﹐每天至少读过一遍﹐"
+"并且要每天写下 S.O.A.P.S. 香皂读经日志。"
 
 #: site/course/course-content.php:377 site/course/course-content.php:3317
 msgid ""
@@ -2116,7 +2115,7 @@ msgstr ""
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3214 site/course/course-content.php:3219
 msgid "SESSION 2"
-msgstr "第 2 堂课"
+msgstr "第 2 课"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3253
 msgid ""
@@ -2261,7 +2260,7 @@ msgstr "单独进行一小时的循环祈祷"
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr "扫描QR Code即可在手机上获得祈祷周期指南。"
+msgstr "扫描 QR code 即可在手机上获得祈祷周期指南。"
 
 #: site/course/course-content.php:573 site/course/course-content.php:3672
 msgid ""
@@ -2311,7 +2310,7 @@ msgstr "每人拟出自己的「百人关注名单」"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
-msgstr "扫描QR Code或用一张纸。"
+msgstr "扫描 QR code 或用一张纸。"
 
 #: site/course/course-content.php:644
 msgid ""
@@ -2366,7 +2365,7 @@ msgstr "Zúme 是一个为那些希望看到门徒培训运动的人提供的实
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3337 site/course/course-content.php:3342
 msgid "SESSION 3"
-msgstr "第三堂课"
+msgstr "第 3 课"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3770
 msgid ""
@@ -2482,14 +2481,13 @@ msgstr ""
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
-msgstr ""
-"重要提醒 - 您的小组将在下一次聚会中庆祝圣餐。一定要记住供应品（面包和酒/果"
-"汁）。"
+msgstr "重要提醒 - "
+"您的小组将在下一次聚会中庆祝圣餐。请记得带圣餐的饼与酒﹙或葡萄汁﹚。"
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3459 site/course/course-content.php:3464
 msgid "SESSION 4"
-msgstr "第四堂课"
+msgstr "第 4 课"
 
 #: site/course/course-content.php:1109
 msgid ""
@@ -2638,7 +2636,7 @@ msgstr ""
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3589 site/course/course-content.php:3594
 msgid "SESSION 5"
-msgstr "第五节"
+msgstr "第 5 课"
 
 #: site/course/course-content.php:1485
 msgid ""
@@ -2716,7 +2714,7 @@ msgstr "你们可以在聚会地点就近进行，或者计划好到特定地点
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4499
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
-msgstr "安排60到90分钟的时间，由神带领来进行这个操练。"
+msgstr "安排 60 到 90 分钟的时间，由神带领来进行这个操练。"
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
@@ -2743,7 +2741,7 @@ msgstr "请求祂准备好你的心以及你在过程中遇到的人的心，向
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3731 site/course/course-content.php:3736
 msgid "SESSION 6"
-msgstr "第 6 堂课"
+msgstr "第 6 课"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4566
 msgid ""
@@ -2824,7 +2822,7 @@ msgstr ""
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3859 site/course/course-content.php:3864
 msgid "SESSION 7"
-msgstr "第七堂课"
+msgstr "第 7 课"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4851
 msgid ""
@@ -2869,24 +2867,21 @@ msgstr "以这个方式去装备人﹐会产生什么果效？"
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
-msgstr ""
-"回顾 - 使用上一课的「服从」、「训练」和「分享」挑战来互相检视。 （30分钟）"
+msgstr "回顾 - 使用上一课的「服从」、「训练」和「分享」挑战来互相检视。 （30 分钟）"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
-msgstr ""
-"仰望－用马可福音 5:1-20 作为小组的阅读文章，并在仰望部分回答问题 1-4。 （30分"
-"钟）"
+msgstr "仰望－用马可福音 5:1-20 作为小组的阅读文章，并在仰望部分回答问题 1-4。 （30 "
+"分钟）"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
-msgstr ""
-"前瞻 - 使用「前瞻」部分中的问题 5、6 和 7 来制定你将如何服从、训练和分享。 "
-"（30分钟）"
+msgstr "前瞻 - 使用「前瞻」部分中的问题 5、6 和 7 来制定你将如何服从、训练和分享。 （"
+"30 分钟）"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -2926,7 +2921,7 @@ msgstr "挑战你指导的人将这个过程延续到另外的（第五代）世
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4004 site/course/course-content.php:4009
 msgid "SESSION 8"
-msgstr "第 8 堂课"
+msgstr "第 8 课"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5124
 msgid ""
@@ -2969,7 +2964,7 @@ msgstr ""
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
-msgstr "前瞻 – 用问题 5、6 和 7 来发展您将如何服从、训练和分享。 （30分钟）"
+msgstr "前瞻 – 用问题 5、6 和 7 来发展您将如何服从、训练和分享。 （30 分钟）"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
@@ -3000,7 +2995,7 @@ msgstr ""
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4128 site/course/course-content.php:4133
 msgid "SESSION 9"
-msgstr "第九堂课"
+msgstr "第 9 课"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5386
 msgid ""
@@ -3122,7 +3117,7 @@ msgstr "请记住 - 请务必与培训伙伴或其他导师分享你的辅导清
 #: site/course/course-content.php:2610
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
-msgstr "如果你没有教练或导师，请扫描QR Code马上申请。"
+msgstr "如果你没有教练或导师，请扫描 QR code 马上申请。"
 
 #: site/course/course-content.php:2615 site/dashboard/dashboard.php:206
 #: site/dashboard/wizard.php:235 site/pages/about.php:259
@@ -3291,7 +3286,7 @@ msgstr ""
 #: site/course/course-content.php:2811 site/course/course-content.php:2816
 #: site/course/course-content.php:4281 site/course/course-content.php:4286
 msgid "SESSION 10"
-msgstr "第10课"
+msgstr "第 10 课"
 
 #: site/course/course-content.php:2850
 msgid ""
@@ -3386,9 +3381,8 @@ msgstr ""
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
-msgstr ""
-"在祂的圣经中，上帝说：“我知道我为你制定的计划，计划使你繁荣而不是伤害你，计划"
-"给你希望和未来。”"
+msgstr "在祂的圣经中，上帝说：「我知道我为你制定的计划，计划使你繁荣而不是伤害你，计"
+"划给你希望和未来。」"
 
 #: site/course/course-content.php:3012
 msgid "God makes plans, and He expects us to make plans, too."
@@ -3417,9 +3411,8 @@ msgstr "制定你的三个月规划"
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
-msgstr ""
-"阅读 - 扫描QR Code。你不必对每一项都做出承诺，它们只是作为你计画的提示。 （5"
-"分钟）"
+msgstr "阅读 - 扫描 QR code。你不必对每一项都做出承诺，它们只是作为你计画的提示。 （"
+"5 分钟）"
 
 #: site/course/course-content.php:3030
 msgid ""
@@ -3676,9 +3669,8 @@ msgid ""
 "Spend time this week practicing your testimony, and then share it with at "
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
-msgstr ""
-"本周花时间练习你的见证，然后与你的 百人清单中至少一个被你标记为「不信者」或"
-"「未知」的人分享。"
+msgstr "本周花时间练习你的见证，然后与你的百人清单中至少一个被你标记为「不信者」或「"
+"未知」的人分享。"
 
 #: site/course/course-content.php:4320
 msgid ""
@@ -3707,7 +3699,7 @@ msgstr ""
 
 #: site/course/course-content.php:4413 site/course/course-content.php:4418
 msgid "SESSION 11"
-msgstr "第11课"
+msgstr "第 11 课"
 
 #: site/course/course-content.php:4452
 msgid ""
@@ -3720,11 +3712,11 @@ msgstr ""
 
 #: site/course/course-content.php:4527 site/course/course-content.php:4532
 msgid "SESSION 12"
-msgstr "第12课"
+msgstr "第 12 课"
 
 #: site/course/course-content.php:4635
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr "本周使用B.L.E.S.S.祝福模式为在场的人祷告。"
+msgstr "本周使用 B.L.E.S.S. 祝福模式为在场的人祷告。"
 
 #: site/course/course-content.php:4636
 msgid ""
@@ -3734,7 +3726,7 @@ msgstr "装备其他人使用B.L.E.S.S.祝福模式为他人祷告，并与他�
 
 #: site/course/course-content.php:4658 site/course/course-content.php:4663
 msgid "SESSION 13"
-msgstr "第 13课"
+msgstr "第 13 课"
 
 #: site/course/course-content.php:4697
 msgid ""
@@ -3890,8 +3882,7 @@ msgid ""
 "Discuss with your Zúme training group whether or not the members are open to "
 "continuing to meet after the conclusion of the training as a Peer Mentoring "
 "Group."
-msgstr ""
-"与你的 Zúme 训练小组讨论成员是否愿意在训练结束后作为同侪指导小组继续会面。"
+msgstr "与你的 Zúme 培训小组讨论成员是否愿意在训练结束后作为同侪指导小组继续会面。"
 
 #: site/course/course-content.php:5585
 msgid ""
@@ -3901,7 +3892,7 @@ msgstr "与百名清单上的两位信徒分享「同侪辅导小组」的概念
 
 #: site/course/course-content.php:5608 site/course/course-content.php:5613
 msgid "SESSION 20"
-msgstr "第 20 课"
+msgstr "第 20 堂课"
 
 #: site/course/course-content.php:5647
 msgid "Pray and thank God that He is faithful to complete His good work in us."
@@ -3955,7 +3946,7 @@ msgstr "不要自己单独做。寻找一个鼓励和成长的社群。"
 
 #: site/course/course-content.php:5978
 msgid "Join Zume community using the QR code."
-msgstr "使用QR Code加入 Zúme 社群。"
+msgstr "使用 QR code 加入 Zúme 社群。"
 
 #: site/course/course-content.php:5992
 msgid "CONGRATULATIONS on completing Zume Training!"
@@ -4080,7 +4071,7 @@ msgstr "启用"
 
 #: site/dashboard/dashboard.php:163
 msgid "Completed"
-msgstr "完全的"
+msgstr "已完成"
 
 #: site/dashboard/dashboard.php:164
 msgid "Uncompleted"
@@ -4240,7 +4231,7 @@ msgstr "加入或建立培训小组"
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
-msgstr "加入我们的线上培训之一，或使用我们易于设定的向导创建您自己的培训小组"
+msgstr "加入我们的线上培训之一，或使用我们易于设定的导览创建您自己的培训小组"
 
 #: site/dashboard/dashboard.php:202
 msgid "Create Training Group"
@@ -4248,7 +4239,7 @@ msgstr "建立培训组"
 
 #: site/dashboard/dashboard.php:203
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "使用我们易于设定的向导创建您自己的培训组"
+msgstr "使用我们易于设定的导览创建您自己的培训组"
 
 #: site/dashboard/dashboard.php:204 site/dashboard/wizard.php:327
 msgid "Join Training Group"
@@ -4376,9 +4367,9 @@ msgid ""
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
-"我的地图有助于阐明 Zúme 的愿景：美国每 5,000 人以及全球每 50,000 人拥有 1 名"
-"学员和 2 座教堂。要解锁“我的地图”，请加入 Zúme 社区，并与其他热衷于完成伟大使"
-"命的门徒创建者联系。"
+"我的地图有助于阐明 Zúme 的愿景：美国每 5,000 人以及全球每 50,000 人拥有 1 "
+"名学员和 2 座教堂。要解锁「我的地图」，请加入 Zúme "
+"社区，并与其他热衷于完成大使命的门徒训练者联系。"
 
 #: site/dashboard/dashboard.php:235
 msgid "My Training is Locked"
@@ -4417,7 +4408,7 @@ msgstr "小组成员"
 
 #: site/dashboard/dashboard.php:256
 msgid "Group Details"
-msgstr "个人资料详情"
+msgstr "小组详细资讯"
 
 #: site/dashboard/dashboard.php:257
 msgid "Mark Completed"
@@ -4573,7 +4564,7 @@ msgstr "请注意您的教练在您指定的通讯偏好范围内的联系。"
 
 #: site/dashboard/dashboard.php:289
 msgid "100 Hour Map"
-msgstr "100小时地图"
+msgstr "100小 时地图"
 
 #: site/dashboard/dashboard.php:290
 msgid "Training vision map"
@@ -4710,21 +4701,21 @@ msgstr "其他承诺："
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
-msgstr "坏巫师"
+msgstr "导览"
 
 #: site/dashboard/wizard.php:168
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr "坏巫师"
+msgstr "糟糕的导览"
 
 #: site/dashboard/wizard.php:169
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr "你遇到了一些非常糟糕的巫师！"
+msgstr "你遇到了一些非常糟糕的导览！"
 
 #: site/dashboard/wizard.php:170
 msgid "Wizard is already completed"
@@ -4964,7 +4955,7 @@ msgstr "建立培训小组"
 
 #: site/dashboard/wizard.php:270
 msgid "Join a public training group"
-msgstr "加入公共训练小组"
+msgstr "加入公开的培训小组"
 
 #: site/dashboard/wizard.php:271
 msgid "Skip for now"
@@ -5044,7 +5035,7 @@ msgstr "培训小组的名称是什么？"
 
 #: site/dashboard/wizard.php:290
 msgid "My first training group"
-msgstr "我的第一个训练组"
+msgstr "我的第一个培训小组"
 
 #: site/dashboard/wizard.php:291
 msgid "When do you plan to start?"
@@ -5142,7 +5133,7 @@ msgstr "加入我的 Zúme 计划"
 #: site/dashboard/wizard.php:323
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr "%s 邀请您参加Zúme培训小组"
+msgstr "%s 邀请您参加 Zúme 培训小组"
 
 #: site/dashboard/wizard.php:330
 msgid "Copy Invite"
@@ -5439,9 +5430,9 @@ msgid ""
 "ordinary people, using ordinary resources, can have exponential impact for "
 "the Kingdom of God."
 msgstr ""
-"Zúme，希腊文的“酵母”，具有重要的意义。在马太福音13:33中，耶稣将天国比喻为酵母"
-"混入大量面粉中，渗透到整个面团中。这个比喻说明了一般人如何使用普通的资源，可"
-"以对神的国度产生指数级的影响。"
+"Zúme，希腊文的「酵母」，具有重要的意义。在马太福音13:33中，耶稣将天国比喻为酵"
+"母混入大量面粉中，渗透到整个面团中。这个比喻说明了一般人如何使用普通的资源，"
+"可以对神的国度产生指数级的影响。"
 
 #: site/pages/about.php:97
 msgid ""
@@ -5900,9 +5891,8 @@ msgid ""
 "All our coaches are trained and practicing the concepts and tools found in "
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
-msgstr ""
-"我们所有的教练都经过训练并在实践中运用Zúme 中的观念和工具。我们所有的教练都可"
-"以帮助您跨越障碍并在您的旅程中迈出步伐。"
+msgstr "我们所有的教练都经过训练并在实践中运用 Zúme "
+"中的观念和工具。我们所有的教练都可以帮助您跨越障碍并在您的旅程中迈出步伐。"
 
 #: site/pages/get-a-coach.php:85
 msgid ""
@@ -6105,9 +6095,8 @@ msgid ""
 "I spent years faithfully attending bible studies and church, but had somehow "
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
-msgstr ""
-"我花了很多年忠诚地参加圣经研究和教会活动，但不知为何，我不理解在Zúme发现的门"
-"徒训练的简单真理。 〜C"
+msgstr "我花了很多年忠诚地参加圣经研究和教会活动，但不知为何，我不理解在 Zúme "
+"发现的门徒训练的简单真理。 〜C"
 
 #: site/pages/home.php:311
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
@@ -6141,11 +6130,11 @@ msgid ""
 "for the Kingdom of God. Zúme aims to equip and empower ordinary believers to "
 "saturate the globe with multiplying disciples in our generation."
 msgstr ""
-"Zúme是希腊文﹐意思是酵母。在马太福音十三章33节里﹐耶稣说︰「天国好像面酵﹐有"
+"Zúme 是希腊文﹐意思是酵母。在马太福音十三章33节里﹐耶稣说︰「天国好像面酵﹐有"
 "妇人拿来﹐藏在三斗面里﹐直等全团都发起来。」这段经文描绘了平凡的人类﹐如何凭"
-"借平凡的资源﹐却为神的国度带来无比非凡的影响力。这就是「天国酵母」Zúme 的目"
-"标：装备一般信徒﹐在这个世代成为「天国酵母」﹐带出生生不息的主门徒，充满这个"
-"世界，使神的国度降临万邦。"
+"借平凡的资源﹐却为神的国度带来无比非凡的影响力。这就是「天国酵母」Zúme 的目标"
+"：装备一般信徒﹐在这个世代成为「天国酵母」﹐带出生生不息的主门徒，充满这个世"
+"界，使神的国度降临万邦。"
 
 #: site/pages/home.php:353
 msgid "Ready to take your next steps?"
@@ -6217,7 +6206,7 @@ msgstr "请输入代码。"
 
 #: site/pages/privacy-policy.php:28 site/pages/privacy-policy.php:79
 msgid "Zúme Privacy Policy"
-msgstr "「天国酵母」Zúme隐私权政策声明"
+msgstr "「天国酵母」Zúme 隐私权政策声明"
 
 #: site/pages/privacy-policy.php:81
 msgid ""
@@ -6298,9 +6287,8 @@ msgstr "我们如何使用你的个人资料呢？"
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
-msgstr ""
-"我们会根据你的电子信箱，在「天国酵母」Zúme系统里使用你的资讯来建立一个用户帐"
-"号。"
+msgstr "我们会根据你的电子信箱，在「天国酵母」Zúme "
+"系统里使用你的资讯来建立一个用户帐号。"
 
 #: site/pages/privacy-policy.php:144
 msgid ""
@@ -6340,8 +6328,8 @@ msgid ""
 "Secure Socket Layer (SSL) technology."
 msgstr ""
 "你的个人资讯保存于安全的网路里﹐只有持有系统特定存取权的极少人员才能取得你的"
-"资讯﹐所有人员必须对此资讯保密。此外﹐所有你提供的敏感/信用资讯是以网路资讯安"
-"全协定的SSL技术 (Secure Socket Layer) 加密保护。"
+"资讯﹐所有人员必须对此资讯保密。此外﹐所有你提供的敏感/"
+"信用资讯是以网路资讯安全协定的 SSL 技术 (Secure Socket Layer) 加密保护。"
 
 #: site/pages/privacy-policy.php:162
 msgid ""
@@ -6420,7 +6408,7 @@ msgid ""
 "content as well!"
 msgstr ""
 "Zúme 培训现在提供完整的训练操作手册。培训中的所有观念、工具、讨论问题和挑战现"
-"在都掌握在您的手中。每个会话的QR Code都可以让您读取所有影片内容！"
+"在都掌握在您的手中。每个会话的 QR code 都可以让您读取所有影片内容！"
 
 #: site/pages/resources.php:103
 msgid "Free Download (PDF)"
@@ -6482,9 +6470,8 @@ msgstr "当我们忠诚地服从并分享主与我们分享的东西时，祂就
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
-msgstr ""
-"Zúme 是 20 小时的训练。但这 20 小时可以根据训练小组的空闲时间以不同的方式进行"
-"划分。"
+msgstr "Zúme 是 20 小时的训练。但这 20 "
+"小时可以根据培训小组的空闲时间以不同的方式进行划分。"
 
 #: site/pages/training.php:126
 msgid "Get started with Zúme Training"
@@ -6507,8 +6494,7 @@ msgid ""
 "In this self-facilitated course, you and your training group will use short "
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
-msgstr ""
-"在这个自学课程中，您和您的训练小组将使用短影片、讨论问题和简单练习来培养您在"
+msgstr "在这个自学课程中，您和您的培训小组将使用短影片、讨论问题和简单练习来培养您在"
 "以下领域的技能和知识："
 
 #: site/pages/training.php:177
