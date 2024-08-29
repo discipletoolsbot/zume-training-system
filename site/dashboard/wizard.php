@@ -190,6 +190,7 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'error' => __( 'Something went wrong', 'zume' ),
                 'dashboard' => __( 'Dashboard', 'zume' ),
                 'next' => __( 'Next', 'zume' ),
+                'please_wait' => __( 'Please wait while we connect you', 'zume' ),
             ],
             'complete_profile' => [
                 'title' => __( 'Complete your profile', 'zume' ),

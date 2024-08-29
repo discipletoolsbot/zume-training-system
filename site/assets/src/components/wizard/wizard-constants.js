@@ -51,6 +51,7 @@ export const Steps = {
     joinFriendsPlan: 'friend-training',
     checkinSubmit: 'checkin-submit',
     joinCommunity: 'join-community',
+    joinCommunityExplanation: 'join-community-explanation',
     ...makeAPlanSteps,
 }
 export const ConnectedFields = {

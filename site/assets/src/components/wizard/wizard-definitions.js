@@ -63,6 +63,7 @@ export const wizardDefinitions = {
         [Modules.completeProfile]: makeModule([
             Steps.updateName,
             Steps.updateLocation,
+            Steps.contactPreferences,
             Steps.updatePhone,
         ]),
         [Modules.joinTraining]: makeModule([
@@ -89,22 +90,22 @@ export const wizardDefinitions = {
     },
     [Wizards.joinCommunity]: {
         [Modules.joinCommunity]: makeModule([
-            Steps.joinCommunity,
+            Steps.joinCommunityExplanation,
+            Steps.contactPreferences,
+            Steps.updatePhone,
+            Steps.updateLocation,
+            Steps.joinCommunity
         ], true),
     },
     [Wizards.joinCommunityFromVision]: {
         [Modules.joinCommunityFromVision]: makeModule([
-            Steps.joinCommunity,
-        ], true),
-        [Modules.completeProfile]: makeModule([
+            Steps.joinCommunityExplanation,
             Steps.updateName,
             Steps.updateLocation,
-            Steps.updatePhone,
-        ]),
-        [Modules.getACoach]: makeModule([
             Steps.contactPreferences,
+            Steps.updatePhone,
             Steps.languagePreferences,
-            Steps.connectingToCoach,
+            Steps.joinCommunity,
         ], true),
     },
     [Wizards.checkin]: {
