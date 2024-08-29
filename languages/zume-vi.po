@@ -2,8 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-23 13:17+0000\n"
-"Last-Translator: Charlie Ritchie <ritchiecharlie@gmail.com>\n"
+"PO-Revision-Date: 2024-08-29 17:34+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/vi/>\n"
 "Language: vi\n"
@@ -731,22 +732,22 @@ msgstr "%1$s đang học \"%2$s\" trong %3$s. %4$s"
 #: maps/heatmap.php:3288
 #, php-format
 msgid "A %1$s shared \"%2$s\" with someone in %3$s. %4$s"
-msgstr ""
+msgstr "Một %1$s đã chia sẻ \"%2$s\" với ai đó trong %3$s. %4$s"
 
 #: maps/heatmap.php:3326
 #, php-format
 msgid "A %1$s trained someone to use \"%2$s\" in %3$s. %4$s"
-msgstr ""
+msgstr "Một %1$s đã đào tạo ai đó cách sử dụng \"%2$s\" trong %3$s. %4$s"
 
 #: maps/heatmap.php:3365
 #, php-format
 msgid "A coach is modeling \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Một huấn luyện viên đang làm mẫu \"%1$s\" cho học viên ở %2$s. %3$s"
 
 #: maps/heatmap.php:3404
 #, php-format
 msgid "A coach is assisting with \"%1$s\" for a trainee in %2$s. %3$s"
-msgstr ""
+msgstr "Một huấn luyện viên đang hỗ trợ \"%1$s\" cho học viên ở %2$s. %3$s"
 
 #: maps/heatmap.php:3443
 #, php-format
@@ -754,69 +755,73 @@ msgid ""
 "A coach has entered a watching stage for a trainee regarding \"%1$s\" in "
 "%2$s. %3$s"
 msgstr ""
+"Một huấn luyện viên đã bước vào giai đoạn theo dõi học viên về \"%1$s\" "
+"trong %2$s. %3$s"
 
 #: maps/heatmap.php:3482
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"Một huấn luyện viên đã giới thiệu đầy đủ cho một học viên về \"%1$s\" trong "
+"%2$s. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
 msgid "A %1$s created at post training plan in %2$s. %3$s"
-msgstr ""
+msgstr "Một %1$s đăng tải một kế hoạch đào tạo trong %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
 msgid "Loading the planet"
-msgstr ""
+msgstr "Đang tải cả hành tinh về cho bạn đây"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
-msgstr ""
+msgstr "Đến dân số thế giới rồi"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Tới các hoạt động"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Bạn pha cà phê đi"
 
 #: maps/html/heatmap-html.php:40
+#, fuzzy
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Vào thôi"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
-msgstr "Ứng dụng"
+msgstr "Dân số"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "Nhu cầu"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Báo cáo"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Mục tiêu"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Tìm kiếm"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Tìm kiếm bất kỳ thành phố hoặc địa điểm nào bằng cách nhập từ."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Thu phóng"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -824,22 +829,24 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Thu phóng bằng con trỏ, bàn di chuột, hoặc màn hình điện thoại để tập trung "
+"vào các phần của bản đồ."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Kéo"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
-msgstr ""
+msgstr "Nhấp và kéo bản đồ theo bất kỳ hướng nào để xem phần khác của bản đồ."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Nhấp chuột"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -847,10 +854,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Nhấp vào một khu vực và hiển thị bảng chi tiết với nhiều thông tin hơn về vị "
+"trí."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "PHÂN TÍCH TIẾN ĐỘ"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -876,88 +885,84 @@ msgstr "HOẠT ĐỘNG"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Mục tiêu đã đạt được"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr ""
+msgstr "Nhu cầu Hội thánh"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Báo cáo Hội thánh"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
-msgstr "Đào tạo"
+msgstr "Nhu cầu Học viên"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Báo cáo Học viên"
 
 #: maps/js-translation-strings.php:13
-#, fuzzy
 msgid "Activities Reported"
-msgstr "Tài nguyên Hoạt động"
+msgstr "Báo cáo Hoạt động"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Nhu cầu Thực hành"
 
 #: maps/js-translation-strings.php:15
 msgid "Practitioners Reported"
-msgstr ""
+msgstr "Báo cáo Thực hành"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Hoạt động 100 giờ gần đây"
 
 #: maps/js-translation-strings.php:18
-#, fuzzy
 msgid "Countries"
-msgstr "Những câu chuyện"
+msgstr "Quốc gia"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
 msgid "Languages"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Tất cả"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Tất cả các quốc gia"
 
 #: maps/js-translation-strings.php:22
 msgid "All Languages"
-msgstr ""
+msgstr "Tất cả các ngôn ngữ"
 
 #: maps/js-translation-strings.php:23
-#, fuzzy
 msgid "Results"
-msgstr "Không có kết quả"
+msgstr "Kết quả"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
-msgstr ""
+msgstr "Bổ sung. (Thu phóng hoặc Lọc bản đồ để tập trung kết quả)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "Học tập"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
-msgstr ""
+msgstr "Thực hành"
 
 #: maps/js-translation-strings.php:28 site/dashboard/wizard.php:222
 msgid "Coaching"
-msgstr ""
+msgstr "Huấn luyện"
 
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Mục đích bản đồ"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -965,76 +970,90 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"Bản đồ Hoạt động 100 Giờ Gần đây cho thấy Chúa Thánh Linh đang thúc đẩy dân "
+"của Ngài môn đồ hóa thông qua Zúme trên khắp thế giới. 100 giờ bắt đầu ngay "
+"bây giờ và bao gồm hoạt động trong khoảng 4 ngày qua."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Các hoạt động"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"Người đang \"học tập\" không đăng nhập vào hệ thống mà đang nghiên cứu tài "
+"liệu khóa học."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"Người đang \"đào tạo\" đăng nhập vào hệ thống và đang trải qua quá trình đào "
+"tạo."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Người \"thực hành\" đang hành động bằng cách chia sẻ các công cụ và khái "
+"niệm, đào tạo người khác để chia sẻ, báo cáo về sự phát triển của phong "
+"trào, v.v."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"Người đang \"huấn luyện\" tương tác với huấn luyện viên Zúme cố vấn ngang "
+"hàng."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
 msgid "How to Get on The Map"
-msgstr ""
+msgstr "Cách đến Bản đồ"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Luôn đăng nhập khi bạn nghiên cứu nội dung."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Luôn ghi danh khi bạn học bài."
 
 #: maps/js-translation-strings.php:40
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
 msgstr ""
+"Luôn cập nhật tiến độ của bạn trong phần đào tạo khi bạn chia sẻ và đào tạo "
+"người khác."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Luôn báo cáo về những hội thánh đơn giản mới mà bạn đang bắt đầu."
 
 #: maps/map-2-network-activities.php:158
-#, fuzzy
 msgid "Activities"
-msgstr "Tài nguyên Hoạt động"
+msgstr "Hoạt động"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
-msgstr "Đào tạo"
+msgstr "Học viên"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr ""
+msgstr "Bản đồ các học viên Zúme"
 
 #: maps/map-3-trainees.php:124
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
+"Mục tiêu: 1 học viên trên 5.000 người ở Hoa Kỳ; và 1 học viên trên 50.000 "
+"người toàn cầu."
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1042,6 +1061,9 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"Chúng tôi muốn làm bão hòa thế giới với số lượng môn đồ ngày càng tăng. \"Bản"
+" đồ học viên Zúme\" cho thấy những nhu cầu và báo cáo về sự bão hòa toàn cầu "
+"của số lượng môn đồ được đào tạo ngày càng nhân bội."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
@@ -6485,6 +6507,7 @@ msgstr ""
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
 msgstr ""
+"Hãy bày tỏ mối quan ngại của bạn về việc chúng tôi sử dụng dữ liệu của bạn."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
@@ -6515,84 +6538,94 @@ msgid ""
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"Zúme hiện đã có sẵn dưới dạng tài liệu hoàn chỉnh. Giờ đây, tất cả các khái "
+"niệm, công cụ, câu hỏi thảo luận và ứng dụng từ khóa đào tạo đều nằm trong "
+"tầm tay bạn. Mã QR cho mỗi bài học cũng cung cấp cho bạn quyền truy cập vào "
+"tất cả nội dung video!"
 
 #: site/pages/resources.php:103
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "Tải miễn phí (PDF)"
 
 #: site/pages/resources.php:105
 msgid "Order print copy"
-msgstr ""
+msgstr "Đặt tài liệu in"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
-msgstr ""
+msgstr "Xem trình chiếu trực tuyến"
 
 #: site/pages/resources.php:122
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Nội dung, video và hoạt động của khóa Zúme có thể được trình bày trực tuyến "
+"bằng trình duyệt web của bạn."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "Liên kết chia sẻ khái niệm và công cụ của khóa Zúme"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "Sao chép liên kết và gửi cho bạn bè."
 
 #: site/pages/share.php:80
 msgid "Copied"
-msgstr ""
+msgstr "Đã sao chép"
 
 #: site/pages/share.php:117
 msgid "Tools"
-msgstr ""
+msgstr "Các công cụ"
 
 #: site/pages/share.php:118
 msgid "Concepts"
-msgstr ""
+msgstr "Các khái niệm"
 
 #: site/pages/share.php:120
 msgid "Sort"
-msgstr ""
+msgstr "Phân loại"
 
 #: site/pages/share.php:121
 msgid "Items"
-msgstr ""
+msgstr "Vật phẩm"
 
 #: site/pages/share.php:129
 msgid "Sharing with Others"
-msgstr ""
+msgstr "Chia sẻ với người dùng khác"
 
 #: site/pages/share.php:136
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"Khi chúng ta trung tín vâng phục và chia sẻ những gì Chúa đã bày tỏ với "
+"chúng ta thì Ngài hứa sẽ bày tỏ cho nhiều hơn nữa."
 
 #: site/pages/training.php:29 site/pages/training.php:212
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme là khoá huấn luyện 20 giờ. Nhưng 20 giờ đó có thể được chia ra khác "
+"nhau tùy thuộc vào khả năng sẵn sàng của nhóm."
 
 #: site/pages/training.php:126
 msgid "Get started with Zúme Training"
-msgstr ""
+msgstr "Bắt đầu khoá huân luyện Zúme"
 
 #: site/pages/training.php:156
 msgid "Course Overview"
-msgstr ""
+msgstr "Tổng quan Khóa học"
 
 #: site/pages/training.php:158 site/pages/training.php:170
 msgid "Course Concepts"
-msgstr ""
+msgstr "Các Khái niệm trong Khoá học"
 
 #: site/pages/training.php:160 site/pages/training.php:255
 msgid "What is required?"
-msgstr ""
+msgstr "Những yêu cầu?"
 
 #: site/pages/training.php:173
 msgid ""
@@ -6600,14 +6633,18 @@ msgid ""
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"Trong khóa học tự tạo này, bạn và nhóm của bạn sẽ sử dụng các video ngắn, "
+"câu hỏi thảo luận và bài tập đơn giản để phát triển kỹ năng và kiến thức của "
+"bạn trong các lĩnh vực sau:"
 
 #: site/pages/training.php:177
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "Các Khái niệm Môn đồ hoá"
 
 #: site/pages/training.php:191
+#, fuzzy
 msgid "Spiritual Practices"
-msgstr ""
+msgstr "Thực hành Thuộc linh"
 
 #: site/pages/training.php:224
 msgid ""
@@ -6615,6 +6652,9 @@ msgid ""
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"Định dạng khóa học Zúme ban đầu là 10 buổi, mỗi buổi hai giờ. Một buổi học "
+"kết thúc với các bước làm theo trong thực tiễn và cách chia sẻ giữa các buổi "
+"học. Định dạng này thường được tổ chức mỗi tuần một lần trong 10 tuần."
 
 #: site/pages/training.php:236
 msgid ""
@@ -6622,6 +6662,9 @@ msgid ""
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"Đối với một khóa học có tốc độ chậm hơn để đạt được năng lực triển khai các "
+"khái niệm và kỹ năng, hình thức 20 buổi học tạo ra nhiều cơ hội thực hành "
+"hơn cho từng khái niệm và công cụ."
 
 #: site/pages/training.php:248
 msgid ""
@@ -6629,20 +6672,25 @@ msgid ""
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme có thể được tổ chức thành 5 buổi nửa ngày, mỗi ngày 4 giờ. Khoá học có "
+"thể được thực hiện vào tối Thứ Sáu (4 giờ), cả ngày Thứ Bảy (8 giờ) và cả "
+"ngày Chủ Nhật (8 giờ)."
 
 #: site/pages/training.php:256
 msgid "Needed for the course:"
-msgstr ""
+msgstr "Chuẩn bị cho khoá học:"
 
 #: site/pages/training.php:262
 msgid "NOT needed for the course:"
-msgstr ""
+msgstr "KHÔNG cần chuẩn bị cho khoá học:"
 
 #: site/pages/training.php:265
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"Bạn không cần có sự cho phép đặc biệt để hướng dẫn một khóa học! Tự khởi "
+"tạo, tự khởi xướng và bạn có thể bắt đầu Zúme ngay hôm nay."
 
 #: site/parts/download-slides.php:18
 #, fuzzy
@@ -6651,7 +6699,7 @@ msgstr "Tải sách hướng dẫn"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "Tài liệu dung lượng lớn (1 gigabyte)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -6661,29 +6709,34 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Toàn bộ khóa học Zúme có thể được tải xuống và chạy qua Powerpoint hoặc "
+"Keynote. Đây là giải pháp tuyệt vời cho việc đào tạo ở những khu vực có mạng "
+"internet yếu. Các video được nhúng vào các trình chiếu và có thể dễ dàng "
+"phát mà không cần internet. Hệ thống mã QR vẫn yêu cầu quyền truy cập trực "
+"tuyến để học viên điểm danh và sử dụng tài nguyên."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Trình chiếu Powerpoint"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Trình chiếu Keynote"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 #: utilities/integrations/replace-placeholder.php:108
 msgid "Check-in"
-msgstr ""
+msgstr "Điểm danh"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "Rất tiếc, bạn đã tắt javascript"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "Vui lòng kích hoạt javascript để sử dụng trang này"
 
 #: site/profile/communication-preferences.php:27
 #: site/profile/communication-preferences.php:74
@@ -6691,31 +6744,31 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:182
 #: utilities/integrations/replace-placeholder.php:183
 msgid "Update Communication Preferences"
-msgstr ""
+msgstr "Cập nhật Tùy chọn Liên lạc"
 
 #: site/profile/communication-preferences.php:76
 msgid "Recieve emails for:"
-msgstr ""
+msgstr "Nhận email cho:"
 
 #: site/profile/communication-preferences.php:79
 msgid "Training session reminders"
-msgstr ""
+msgstr "Lời nhắc buổi huấn luyện"
 
 #: site/profile/communication-preferences.php:83
 msgid "Annual reporting reminders"
-msgstr ""
+msgstr "Nhắc nhở báo cáo hàng năm"
 
 #: site/profile/communication-preferences.php:87
 msgid "Community updates"
-msgstr ""
+msgstr "Cập nhật từ cộng đồng"
 
 #: site/profile/communication-preferences.php:91
 msgid "Encouragements"
-msgstr ""
+msgstr "Khích lệ"
 
 #: site/profile/profile.php:27 site/profile/profile.php:106
 msgid "Profile"
-msgstr ""
+msgstr "Hồ sơ"
 
 #: site/zume-magic-page.php:43
 msgid ""
@@ -6723,165 +6776,167 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
+"Zúme Training là trải nghiệm học tập trực tuyến và trực tiếp được thiết kế "
+"dành cho các nhóm nhỏ theo Chúa Jêsus. Đào tạo trực tuyến, trực tiếp cho các "
+"hoạt động môn đồ hoá"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
-msgstr ""
+msgstr "Bạn bè"
 
 #: utilities/apis/connect-api.php:235
 msgid "the plan"
-msgstr ""
+msgstr "kế hoạch"
 
 #: utilities/apis/cta-api.php:140
 msgid "Register to start your training"
-msgstr ""
+msgstr "Đăng ký để bắt đầu khoá học"
 
 #: utilities/apis/cta-api.php:154
 msgid "Join Online Training"
-msgstr ""
+msgstr "Tham dự khoá học trực tuyến"
 
 #: utilities/apis/cta-api.php:155
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "Tham dự khoá trực tuyến để hiểu rõ hơn"
 
 #: utilities/apis/cta-api.php:169
 msgid "Joined Training!"
-msgstr ""
+msgstr "Đã tham dự thành công!"
 
 #: utilities/apis/cta-api.php:184
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "Yêu cầu huấn luyện viên hỗ trợ bạn"
 
 #: utilities/apis/cta-api.php:198
 msgid "Requested Coach!"
-msgstr ""
+msgstr "Đã yêu cầu huấn luyện viên!"
 
 #: utilities/apis/cta-api.php:199 utilities/apis/cta-api.php:213
 #: utilities/apis/cta-api.php:227 utilities/apis/cta-api.php:256
 msgid "Congratulations"
-msgstr ""
+msgstr "Chúc mừng"
 
 #: utilities/apis/cta-api.php:212
 msgid "Connected to Coach!"
-msgstr ""
+msgstr "Đã kết nối với Huấn luyện viên!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
-msgstr "Cộng đồng"
+msgstr "Đã tham dự Cộng đồng"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
 msgid "Create a Training"
-msgstr ""
+msgstr "Tạo một khoá huấn luyện"
 
 #: utilities/apis/cta-api.php:241
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "Tạo một khoá huấn luyện để giúp bạn tăng trưởng"
 
 #: utilities/apis/cta-api.php:255
 msgid "Created Training!"
-msgstr ""
+msgstr "Tạo khoá huấn luyện thành công!"
 
 #: utilities/apis/cta-api.php:286
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "Hoàn thành hồ sơ cá nhân của bạn để mọi người biết"
 
 #: utilities/apis/cta-api.php:300
 msgid "Profile Set"
-msgstr ""
+msgstr "Hoàn thành Hồ sơ"
 
 #: utilities/apis/cta-api.php:314 utilities/apis/cta-api.php:316
 msgid "Create 3 Month Plan"
-msgstr ""
+msgstr "Tạo kế hoạch 3 tháng"
 
 #: utilities/apis/cta-api.php:315
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "Tạo kế hoạch 3 tháng để giúp bạn tăng trưởng"
 
 #: utilities/apis/cta-api.php:329
 #, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s đã được mở khoá"
 
 #: utilities/apis/cta-api.php:343
 msgid "3-Month Plan Created"
-msgstr ""
+msgstr "Kế hoạch 3 tháng đã được tạo thành công"
 
 #: utilities/apis/cta-api.php:357 utilities/apis/cta-api.php:359
 msgid "Complete 3 Month Plan"
-msgstr ""
+msgstr "Hoàn thành kế hoạch 3 tháng"
 
 #: utilities/apis/cta-api.php:358
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "Hoàn thành kế hoạch 3 tháng để giúp bạn tăng trưởng"
 
 #: utilities/apis/cta-api.php:372
 msgid "3 Month Plan Completed"
-msgstr ""
+msgstr "Kế hoạch 3 tháng đã hoàn thành"
 
 #: utilities/apis/cta-api.php:417
 msgid "Join the community"
-msgstr ""
+msgstr "Tham gia cộng đồng"
 
 #: utilities/apis/plans-api.php:122
 #, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr ""
+msgstr "Huấn luyện đầu tiên của tôi - %s"
 
 #: utilities/apis/plans-api.php:124
 #, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr ""
+msgstr "Huấn luyện %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "Dãy Ip"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "Dãy IP"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
-msgstr ""
+msgstr "Dành cho Quản trị viên"
 
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 #: utilities/integrations/replace-placeholder.php:88
 msgid "Join the Zúme Community"
-msgstr ""
+msgstr "Tham gia Cộng đồng Zúme"
 
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
 #: utilities/integrations/replace-placeholder.php:92
 msgid "Zúme Dashboard"
-msgstr ""
+msgstr "Bảng điều khiển Zúme"
 
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
 #: utilities/integrations/replace-placeholder.php:96
 msgid "Zúme Online Training Groups"
-msgstr ""
+msgstr "Các nhóm huấn luyện trực tuyến Zúme"
 
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
 #: utilities/integrations/replace-placeholder.php:120
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "Tải trình chiếu về"
 
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
 #: utilities/integrations/replace-placeholder.php:124
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Chia sẻ trang Zúme"
 
 #: utilities/integrations/replace-placeholder.php:177
 #: utilities/integrations/replace-placeholder.php:178
 #: utilities/integrations/replace-placeholder.php:179
 msgid "Zúme Annual Report"
-msgstr ""
+msgstr "Báo cáo thường niên của Zúme"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"
@@ -6889,49 +6944,49 @@ msgstr ""
 
 #: zume-training-system.php:237
 msgid "Someone has requested a password reset for the following account:"
-msgstr ""
+msgstr "Ai đó đã yêu cầu đặt lại mật khẩu cho tài khoản sau:"
 
 #. translators: %s: site name
 #: zume-training-system.php:239
 #, php-format
 msgid "Site Name: %s"
-msgstr ""
+msgstr "Tên trang: %s"
 
 #. translators: %s: user login
 #: zume-training-system.php:241
 #, php-format
 msgid "Username: %s"
-msgstr ""
+msgstr "Tên người dùng: %s"
 
 #: zume-training-system.php:242
 msgid "If this was a mistake, just ignore this email and nothing will happen."
-msgstr ""
+msgstr "Nếu do nhầm lẫn, hãy bỏ qua email này và sẽ không có gì xảy ra."
 
 #: zume-training-system.php:243
 msgid "To reset your password, visit the following address:"
-msgstr ""
+msgstr "Để đặt lại mật khẩu, mở địa chỉ sau:"
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:261
 #, php-format
 msgid "[%s] Password Reset"
-msgstr ""
+msgstr "[%s]  Đặt lại mật khẩu"
 
 #: zume-training-system.php:289
 msgid "Profile Details"
-msgstr ""
+msgstr "Chi tiết Hồ sơ"
 
 #: zume-training-system.php:301
 msgid "User Email"
-msgstr ""
+msgstr "Email người dùng"
 
 #: zume-training-system.php:310
 msgid "User Phone"
-msgstr ""
+msgstr "Số điện thoại người dùng"
 
 #: zume-training-system.php:318
 msgid "User Timezone"
-msgstr ""
+msgstr "Múi giờ người dùng"
 
 #: zume-training-system.php:326
 msgid "User Friend Key"
@@ -6939,19 +6994,19 @@ msgstr ""
 
 #: zume-training-system.php:334
 msgid "User Preferred Language"
-msgstr ""
+msgstr "Ngôn ngữ ưa thích của người dùng"
 
 #: zume-training-system.php:342
 msgid "User Preferred Email"
-msgstr ""
+msgstr "Email ưa thích của người dùng"
 
 #: zume-training-system.php:350
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "Phương thức liên lạc ưa thích"
 
 #: zume-training-system.php:360
 msgid "Messenger"
-msgstr ""
+msgstr "Tin nhắn"
 
 #. Plugin Name of the plugin/theme
 #, fuzzy

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-24 07:22+0000\n"
+"PO-Revision-Date: 2024-08-29 17:34+0000\n"
 "Last-Translator: Buleleng Team <bulelengteam@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/id_ID/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr ""
+msgstr "Epik 404 - Tidak Ditemukan"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -56,7 +56,7 @@ msgstr "Dasbor"
 #: 404.php:83 site/dashboard/dashboard.php:236 site/parts/footer.php:25
 #: site/parts/footer.php:28
 msgid "Launch Course"
-msgstr ""
+msgstr "Luncurkan Kursus"
 
 #: 404.php:84 site/dashboard/dashboard.php:237 site/pages/resources.php:126
 #: site/parts/download-slides.php:31 site/parts/download-slides.php:43
@@ -117,7 +117,7 @@ msgstr "Pelatihan"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
-msgstr ""
+msgstr "Ukuran"
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:218
 msgid "Community"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: globals.php:2147
 msgid "Producer not Consumer"
-msgstr ""
+msgstr "Produser vs Konsumen"
 
 #: globals.php:2157 globals.php:2159 site/pages/follow-jesus.php:198
 msgid "How to Spend an Hour in Prayer"
@@ -774,6 +774,8 @@ msgstr ""
 #, php-format
 msgid "A coach has fully launched a trainee regarding \"%1$s\" in %2$s. %3$s"
 msgstr ""
+"Seorang pelatih telah meluncurkan peserta pelatihan sepenuhnya mengenai \"%1$"
+"s\" di %2$s. %3$s"
 
 #: maps/heatmap.php:3488
 #, php-format
@@ -791,15 +793,15 @@ msgstr "Menemukan populasi dunia"
 
 #: maps/html/heatmap-html.php:38
 msgid "Calculating movement activity"
-msgstr ""
+msgstr "Menghitung aktivitas kegerakan"
 
 #: maps/html/heatmap-html.php:39
 msgid "Shamelessly brewing coffee"
-msgstr ""
+msgstr "Menyeduh kopi tanpa malu-malu"
 
 #: maps/html/heatmap-html.php:40
 msgid "Let‘s do this"
-msgstr ""
+msgstr "Ayo lakukan ini"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
@@ -809,30 +811,30 @@ msgstr "Lokasi"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
-msgstr ""
+msgstr "Diperlukan"
 
 #: maps/html/heatmap-html.php:73
 msgid "Reported"
-msgstr ""
+msgstr "Dilaporkan"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
+msgstr "Tujuan"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr ""
+msgstr "Cari"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
 msgid "Search for any city or place with the search input."
-msgstr ""
+msgstr "Cari kota atau tempat mana pun dengan masukan pencarian."
 
 #: maps/html/heatmap-html.php:95 maps/html/heatmap-html.php:119
 #: maps/map-2-network-activities.php:142
 msgid "Zoom"
-msgstr ""
+msgstr "Perbesar"
 
 #: maps/html/heatmap-html.php:96 maps/html/heatmap-html.php:120
 #: maps/map-2-network-activities.php:143
@@ -840,22 +842,25 @@ msgid ""
 "Scroll zoom with your mouse or pinch zoom with track pads and phones to "
 "focus on sections of the map."
 msgstr ""
+"Geser zoom dengan mouse Anda atau pinch zoom dengan track pad dan ponsel "
+"untuk fokus pada bagian peta."
 
 #: maps/html/heatmap-html.php:100 maps/html/heatmap-html.php:124
 #: maps/map-2-network-activities.php:147
 msgid "Drag"
-msgstr ""
+msgstr "Menyeret"
 
 #: maps/html/heatmap-html.php:101 maps/html/heatmap-html.php:125
 #: maps/map-2-network-activities.php:148
 msgid ""
 "Click and drag the map any direction to look at a different part of the map."
 msgstr ""
+"Klik dan seret peta ke arah mana saja untuk melihat bagian peta lainnya."
 
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
+msgstr "Klik"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -863,10 +868,12 @@ msgid ""
 "Click a single section and reveal a details panel with more information "
 "about the location."
 msgstr ""
+"Klik satu bagian dan tampilkan detail panel dengan informasi lebih lanjut "
+"mengenai lokasi tersebut."
 
 #: maps/html/heatmap-html.php:177
 msgid "PROGRESS BREAKDOWN"
-msgstr ""
+msgstr "RINCIAN KEMAJUAN"
 
 #: maps/html/heatmap-html.php:194 site/activities/activities.php:29
 #: site/activities/activities.php:158 site/activities/activities.php:181
@@ -888,19 +895,19 @@ msgstr ""
 #: site/course/course-content.php:4207 site/course/course-content.php:4492
 #: site/course/course-content.php:4893
 msgid "ACTIVITY"
-msgstr ""
+msgstr "AKTIVITAS"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
-msgstr ""
+msgstr "Tujuan yang Tercapai"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr ""
+msgstr "Gereja-gereja Dibutuhkan"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr ""
+msgstr "Jemaah Rumah Tangga Dilaporkan"
 
 #: maps/js-translation-strings.php:10
 #, fuzzy
@@ -909,39 +916,39 @@ msgstr "Terlatih"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr ""
+msgstr "Peserta Pelatihan Dilaporkan"
 
 #: maps/js-translation-strings.php:13
 msgid "Activities Reported"
-msgstr ""
+msgstr "Aktivitas yang Dilaporkan"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
-msgstr ""
+msgstr "Para Praktisi Dibutuhkan"
 
 #: maps/js-translation-strings.php:15
 msgid "Practitioners Reported"
-msgstr ""
+msgstr "Para Praktisi Dilaporkan"
 
 #: maps/js-translation-strings.php:17
 msgid "Last 100 Hours of Movement Activity"
-msgstr ""
+msgstr "Aktivitas Kegerakan 100 Jam Terakhir"
 
 #: maps/js-translation-strings.php:18
 msgid "Countries"
-msgstr ""
+msgstr "Negara"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
 msgid "Languages"
-msgstr ""
+msgstr "Bahasa"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr ""
+msgstr "Semua Jenis"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
-msgstr ""
+msgstr "Semua Negara"
 
 #: maps/js-translation-strings.php:22
 #, fuzzy
@@ -950,28 +957,28 @@ msgstr "Bahasa"
 
 #: maps/js-translation-strings.php:23
 msgid "Results"
-msgstr ""
+msgstr "Hasil"
 
 #: maps/js-translation-strings.php:24
 msgid "Additional Records. (Zoom or Filter map to focus results)"
-msgstr ""
+msgstr "Catatan Tambahan. (Perbesar atau Filter peta untuk memfokuskan hasil)"
 
 #: maps/js-translation-strings.php:25
 msgid "Studying"
-msgstr ""
+msgstr "Mempelajari"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
-msgstr ""
+msgstr "Berlatih"
 
 #: maps/js-translation-strings.php:28 site/dashboard/wizard.php:222
 msgid "Coaching"
-msgstr ""
+msgstr "Pelatihan"
 
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
 msgid "Purpose of the Map"
-msgstr ""
+msgstr "Tujuan dari Peta"
 
 #: maps/js-translation-strings.php:31
 msgid ""
@@ -979,60 +986,75 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
+"Peta 100 Jam Terakhir menunjukkan Roh Kudus menggerakkan umat-Nya untuk "
+"membuat murid melalui Zúme di seluruh dunia. 100 jam tersebut dimulai "
+"sekarang dan mencakup kegiatan selama sekitar 4 hari terakhir."
 
 #: maps/js-translation-strings.php:32
 msgid "Types of Activities"
-msgstr ""
+msgstr "Jenis Kegiatan"
 
 #: maps/js-translation-strings.php:33
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
 msgstr ""
+"Orang yang sedang \"belajar\" belum terdaftar ke dalam sistem, tetapi sedang "
+"mempelajari materi kursus."
 
 #: maps/js-translation-strings.php:34
 msgid ""
 "Someone who is \"training\" is logged into to the system and is going "
 "through the training process."
 msgstr ""
+"Orang yang sedang \"berlatih\" sudah terdaftar ke dalam sistem dan sedang "
+"menjalani proses pelatihan."
 
 #: maps/js-translation-strings.php:35
 msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
+"Orang yang sedang \"berlatih\" mengambil tindakan dengan membagikan alat dan "
+"konsep, melatih orang lain untuk berbagi, melaporkan pertumbuhan gerakan, "
+"dll."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
 msgstr ""
+"Seseorang yang sedang berada dalam \"pelatihan\" berinteraksi dengan mentor "
+"sebaya pelatih Zúme."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
+#, fuzzy
 msgid "How to Get on The Map"
-msgstr ""
+msgstr "Bagiamana cara Masuk ke Peta"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr ""
+msgstr "Selalu daftar masuk ketika Anda mempelajari konten tersebut."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
-msgstr ""
+msgstr "Selalu lakukan check-in ketika Anda menjalani satu sesi."
 
 #: maps/js-translation-strings.php:40
 msgid ""
 "Always update your progress in the training section as you are sharing and "
 "training others."
 msgstr ""
+"Selalu perbarui kemajuan Anda di bagian pelatihan saat Anda berbagi dan "
+"melatih orang lain."
 
 #: maps/js-translation-strings.php:41
 msgid "Always report new simple churches that you are starting."
-msgstr ""
+msgstr "Selalu laporkan jemaah Allah sederhana baru yang Anda sedang mulai."
 
 #: maps/map-2-network-activities.php:158
 msgid "Activities"
-msgstr ""
+msgstr "Kegiatan"
 
 #: maps/map-3-trainees.php:122
 #, fuzzy
@@ -1041,13 +1063,15 @@ msgstr "Terlatih"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
-msgstr ""
+msgstr "Peta Peserta Pelatihan Zúme"
 
 #: maps/map-3-trainees.php:124
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 people in the United States; and 1 "
 "trainee per 50,000 people globally."
 msgstr ""
+"Sasaran Saturasi: 1 peserta pelatihan per 5.000 orang di Amerika Serikat; "
+"dan 1 peserta pelatihan per 50.000 orang di seluruh dunia."
 
 #: maps/map-3-trainees.php:141
 msgid ""
@@ -1055,56 +1079,67 @@ msgid ""
 "Trainees\" shows what is needed and what is reported for global saturation "
 "of trained multiplying disciples."
 msgstr ""
+"Kami ingin memenuhi dunia dengan cara melipat gandakan murid. \"Peta Peserta "
+"Zúme\" menunjukkan apa yang dibutuhkan dan apa yang dilaporkan untuk "
+"saturasi global dari pelipat gandaan murid yang terlatih."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
-msgstr ""
+msgstr "Tujuan Saturasi"
 
 #: maps/map-3-trainees.php:144
 msgid "1 trained multiplying disciple per 5,000 in the United States"
 msgstr ""
+"1 murid yang terlatih untuk melipatgandakan per 5.000 di Amerika Serikat"
 
 #: maps/map-3-trainees.php:145
 msgid "1 trained multiplying disciple per 50,000 globally"
 msgstr ""
+"1 murid yang terlatih untuk melipatgandakan per 50.000 di seluruh dunia."
 
 #: maps/map-3-trainees.php:147 maps/map-5-churches.php:147
 msgid "Measurements Used"
-msgstr ""
+msgstr "Pengukuran yang Digunakan"
 
 #: maps/map-3-trainees.php:149 maps/map-5-churches.php:149
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
 msgstr ""
+"\"Dibutuhkan\" mengacu pada apa yang hilang di lokasi yang tercantum menurut "
+"populasi."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"“Dilaporkan” mengacu pada peserta pelatihan yang telah mendaftarkan diri ke "
+"komunitas Zúme."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
-msgstr ""
+msgstr "Bergabunglah dengan komunitas Zúme."
 
 #: maps/map-3-trainees.php:155
 msgid "Update your profile with your location."
-msgstr ""
+msgstr "Perbarui profil Anda dengan lokasi Anda."
 
 #: maps/map-4-practitioners.php:121
 msgid "Practitioners"
-msgstr ""
+msgstr "Para praktisi"
 
 #: maps/map-4-practitioners.php:122
 msgid "Map of Zúme Practitioners"
-msgstr ""
+msgstr "Peta dari Para Praktisi Zúme"
 
 #: maps/map-4-practitioners.php:123
 msgid ""
 "Saturation Goal: 1 trainee per 5,000 in the United States, 1 trainee per "
 "50,000 globally"
 msgstr ""
+"Sasaran Saturasi: 1 peserta pelatihan per 5.000 orang di Amerika Serikat; "
+"dan 1 peserta pelatihan per 50,000 orang di seluruh dunia"
 
 #: maps/map-5-churches.php:122
 #, fuzzy
@@ -1121,6 +1156,8 @@ msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
+"Sasaran Saturasi: 2 jemaah sederhana per 5.000 orang di Amerika Serikat, dan "
+"2 jemaah sederhana per 50.000 orang di seluruh dunia"
 
 #: maps/map-5-churches.php:141
 msgid ""
@@ -1128,28 +1165,33 @@ msgid ""
 "\"Map of Zúme Churches\" shows what is needed and what is reported for "
 "global saturation of multiplying simple churches."
 msgstr ""
+"Kami ingin memenuhi dunia dengan jumlah murid dan jemaah yang terus "
+"bertambah. \"Peta Jemaah Zúme\" menunjukkan apa yang dibutuhkan dan apa yang "
+"dilaporkan untuk memenuhi jemaah sederhana yang terus bertambah."
 
 #: maps/map-5-churches.php:144
 msgid "2 simple churches per 5,000 people in the United States"
-msgstr ""
+msgstr "2 jemaah sederhana per 5.000 orang di Amerika Serikat"
 
 #: maps/map-5-churches.php:145
 msgid "2 simple churches per 50,000 people globally"
-msgstr ""
+msgstr "2 jemaah sederhana per 50.000 orang di seluruh dunia"
 
 #: maps/map-5-churches.php:150
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
 msgstr ""
+"“Dilaporkan” mengacu pada jemaah-jemaah yang telah mendaftarkan diri ke "
+"komunitas Zúme."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
-msgstr ""
+msgstr "Tambahkan jemaah Anda di bagian \"jemaah Saya\" pada dasbor."
 
 #: site/activities/activities.php:158
 msgid "SOAPS"
-msgstr ""
+msgstr "SOAPS"
 
 #: site/activities/activities.php:181 site/course/course-content.php:476
 #: site/course/course-content.php:537 site/course/course-content.php:546
@@ -1159,7 +1201,7 @@ msgstr "Siklus Doa"
 
 #: site/activities/activities.php:204 site/course/course-content.php:931
 msgid "Share the Gospel"
-msgstr ""
+msgstr "Memberitakan Injil"
 
 #: site/activities/activities.php:227 site/course/course-content.php:1146
 #: site/course/course-content.php:1155 site/course/course-content.php:1164
@@ -1167,12 +1209,12 @@ msgstr ""
 #: site/course/course-content.php:4091 site/course/course-content.php:4197
 #: site/course/course-content.php:4232
 msgid "Three-Minute Testimony"
-msgstr ""
+msgstr "Kesaksian Tiga Menit"
 
 #: site/activities/activities.php:273 site/course/course-content.php:1519
 #: site/course/course-content.php:4600 site/course/course-content.php:4620
 msgid "B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "Doa B.L.E.S.S."
 
 #: site/activities/activities.php:296 site/course/course-content.php:1757
 #: site/course/course-content.php:1807 site/course/course-content.php:1816
@@ -1184,38 +1226,40 @@ msgstr ""
 #: site/course/course-content.php:4881 site/course/course-content.php:4889
 #: site/course/course-content.php:4896 site/course/course-content.php:4922
 msgid "3/3 Group Meeting"
-msgstr ""
+msgstr "Pertemuan Kelompok 3/3"
 
 #: site/activities/activities.php:365 site/course/course-content.php:2396
 #: site/course/course-content.php:2634 site/course/course-content.php:2640
 #: site/course/course-content.php:2774 site/course/course-content.php:5416
 #: site/course/course-content.php:5446
 msgid "Four Fields"
-msgstr ""
+msgstr "Empat Lahan"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
-msgstr ""
+msgstr "H.O.S.T"
 
 #: site/activities/coaching-checklist-host.php:100
 msgid "H.O.S.T."
-msgstr ""
+msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:101
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr ""
+"Evaluasi mandiri menggunakan metode Mendengar, Menaati, Membagikan, dan "
+"Melatih."
 
 #: site/activities/coaching-checklist-host.php:107
 #: site/activities/coaching-checklist-mawl.php:109
 #: site/activities/coaching-checklist-two.php:108
 #: site/activities/coaching-checklist.php:211
 msgid "Training Tools/Concepts"
-msgstr ""
+msgstr "Alat/Konsep Pelatihan"
 
 #: site/activities/coaching-checklist-host.php:122
 #: site/activities/coaching-checklist-two.php:123
 msgid "Ask yourself, have I"
-msgstr ""
+msgstr "Tanyakan pada diri Anda, pernahkah saya"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:166
@@ -1257,7 +1301,7 @@ msgstr "Terlatih"
 #: site/activities/coaching-checklist-two.php:189
 #: site/activities/coaching-checklist.php:254 site/dashboard/dashboard.php:241
 msgid "Have I heard about this tool or concept?"
-msgstr ""
+msgstr "Pernahkah saya mendengar tentang alat atau konsep ini?"
 
 #: site/activities/coaching-checklist-host.php:172
 #: site/activities/coaching-checklist-two.php:193
@@ -1266,6 +1310,9 @@ msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
+"Sudahkah saya menaati alat atau konsep ini? Jika itu alat, sudahkah saya "
+"mempraktikkannya? Jika itu konsep, sudahkah Anda merenungkan bagaimana hal "
+"itu mengubah perspektif Anda?"
 
 #: site/activities/coaching-checklist-host.php:176
 #: site/activities/coaching-checklist-two.php:197
@@ -1274,6 +1321,9 @@ msgid ""
 "Have I shared this tool or concept? If a tool, have you shown anyone how to "
 "use this tool? If a concept, have you shared this concept with anyone?"
 msgstr ""
+"Sudahkah saya membagikan alat atau konsep ini? Jika berupa alat, sudahkah "
+"Anda menunjukkan cara menggunakan alat ini kepada seseorang? Jika berupa "
+"konsep, sudahkah Anda membagikan konsep ini kepada seseorang?"
 
 #: site/activities/coaching-checklist-host.php:180
 #: site/activities/coaching-checklist-two.php:201
@@ -1283,21 +1333,26 @@ msgid ""
 "trained someone to share the tool with someone else? If a concept, have I "
 "trained someone to share the concept with someone else?"
 msgstr ""
+"Sudahkah saya melatih orang lain untuk membagikan alat atau konsep ini? Jika "
+"sebuah alat, sudahkah saya melatih seseorang untuk membagikan alat tersebut "
+"dengan orang lain? Jika sebuah konsep, sudahkah saya melatih seseorang untuk "
+"membagikan konsep tersebut dengan orang lain?"
 
 #: site/activities/coaching-checklist-mawl.php:22
 #: site/activities/coaching-checklist-mawl.php:51
 #: site/activities/coaching-checklist-mawl.php:101
 msgid "M.A.W.L."
-msgstr ""
+msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:102
 msgid "Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"Melatih orang lain dengan menggunakan Model, Bantuan, Menonton, Tinggalkan."
 
 #: site/activities/coaching-checklist-mawl.php:124
 #: site/activities/coaching-checklist-two.php:143
 msgid "Ask yourself, what does my disciple need"
-msgstr ""
+msgstr "Tanyakan diri Anda sendiri, apa yang murid saya butuhkan"
 
 #: site/activities/coaching-checklist-mawl.php:129
 #: site/activities/coaching-checklist-mawl.php:167
@@ -1306,7 +1361,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:157
 #: site/activities/coaching-checklist.php:286
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:171
@@ -1315,7 +1370,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Assist"
-msgstr ""
+msgstr "Bimbingan"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:175
@@ -1325,7 +1380,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:292
 #: site/course/course-content.php:1813 site/course/course-content.php:4739
 msgid "Watch"
-msgstr ""
+msgstr "Menonton"
 
 #: site/activities/coaching-checklist-mawl.php:138
 #: site/activities/coaching-checklist-mawl.php:179
@@ -1334,7 +1389,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:166
 #: site/activities/coaching-checklist.php:295
 msgid "Leave"
-msgstr ""
+msgstr "Tinggalkan"
 
 #: site/activities/coaching-checklist-mawl.php:169
 #: site/activities/coaching-checklist-two.php:208
@@ -1346,6 +1401,11 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
+"Pemodelan hanya sekedar memberikan contoh praktik atau alat. Ini adalah "
+"bagian tersingkat dari siklus pelatihan. Biasanya hanya perlu dilakukan satu "
+"kali. Ini hanya menciptakan kesadaran bahwa praktik atau alat itu ada dan "
+"memberikan gambaran umum seperti apa bentuknya. Pemodelan yang dilakukan "
+"berulang kali bukanlah cara yang efektif untuk memperlengkapi seseorang."
 
 #: site/activities/coaching-checklist-mawl.php:173
 #: site/activities/coaching-checklist-two.php:212
@@ -1359,6 +1419,14 @@ msgid ""
 "continued too long, then the learner will develop a dependence on the mentor "
 "and never advance to full competence."
 msgstr ""
+"Membimbing berarti membiarkan peserta didik mempraktikkan keterampilan. Ini "
+"membutuhkan waktu lebih lama daripada fase pemodelan. Ini memerlukan "
+"\"bimbingan\" dari pihak mentor. Mentor perlu mengarahkan dan mengambil "
+"peran aktif dalam membimbing peserta didik. Fase ini tidak berlangsung "
+"hingga peserta didik menjadi benar-benar kompeten, tetapi hanya sampai "
+"mereka memahami dasar-dasar keterampilan. Jika fase ini berlangsung terlalu "
+"lama, maka peserta didik akan mengembangkan ketergantungan pada mentor dan "
+"tidak akan pernah maju ke kompetensi yang seutuhnya."
 
 #: site/activities/coaching-checklist-mawl.php:177
 #: site/activities/coaching-checklist-two.php:216
@@ -1370,6 +1438,12 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
+"Mengamati merupakan fase terpanjang. Fase ini melibatkan lebih banyak kontak "
+"tidak langsung dengan peserta pelatihan. Fase ini bertujuan untuk "
+"mengembangkan kompetensi penuh dalam semua aspek keterampilan. Fase ini "
+"mungkin sepuluh kali atau lebih lama dari gabungan dua fase pertama. Seiring "
+"peserta meningkatkan keterampilannya, kontak dengan mentor mungkin menjadi "
+"berkurang kecuali dibutuhkan."
 
 #: site/activities/coaching-checklist-mawl.php:181
 #: site/activities/coaching-checklist-two.php:220
@@ -1380,127 +1454,144 @@ msgid ""
 "the learner and mentor are in the same network. When a parent releases a "
 "child to ride their bicycle completely unsupervised, that is the LEAVE phase."
 msgstr ""
+"Melepaskan merupakan semacam kelulusan saat pelajar menjadi teman sebaya "
+"dari mentor. Kontak berkala dan pendampingan teman sebaya dapat terus "
+"berlangsung jika pelajar dan mentor berada dalam jaringan yang sama. Saat "
+"orang tua melepaskan anak untuk mengendarai sepeda tanpa pengawasan sama "
+"sekali, itulah fase MELEPASKAN."
 
 #: site/activities/coaching-checklist-two.php:101
 msgid "1. Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
 msgstr ""
+"1. Evaluasi diri secara mandiri menggunakan metode Mendengar, Menaati, "
+"Membagikan, dan Melatih."
 
 #: site/activities/coaching-checklist-two.php:102
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
 msgstr ""
+"2. Melatih orang lain dengan menggunakan Mencontohkan, Membantu, Mengawasi, "
+"Melepaskan."
 
 #: site/activities/coaching-checklist.php:111
 #: site/activities/coaching-checklist.php:251
 msgid "Self-Evaluation"
-msgstr ""
+msgstr "Evaluasi Mandiri"
 
 #: site/activities/coaching-checklist.php:131
 #: site/activities/coaching-checklist.php:267
 msgid "Mentee Development Level"
-msgstr ""
+msgstr "Tingkat Pengembangan Anak Didik"
 
 #: site/activities/coaching-checklist.php:137
 #: site/activities/coaching-checklist.php:270
 msgid "Unaware"
-msgstr ""
+msgstr "Tidak menyadari"
 
 #: site/activities/coaching-checklist.php:140
 #: site/activities/coaching-checklist.php:273
 msgid "Unskilled"
-msgstr ""
+msgstr "Tidak terampil"
 
 #: site/activities/coaching-checklist.php:143
 #: site/activities/coaching-checklist.php:276
 msgid "Competent"
-msgstr ""
+msgstr "Kompeten"
 
 #: site/activities/coaching-checklist.php:146
 #: site/activities/coaching-checklist.php:279
 msgid "Skilled"
-msgstr ""
+msgstr "Terampil"
 
 #: site/activities/coaching-checklist.php:151
 #: site/activities/coaching-checklist.php:283
 msgid "Mentor’s Role"
-msgstr ""
+msgstr "Peran Mentor"
 
 #: site/activities/coaching-checklist.php:157
 #: site/activities/coaching-checklist.php:286
 msgid "Train new information and ensure understanding"
-msgstr ""
+msgstr "Melatih informasi baru dan memastikan pemahaman"
 
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Stop and stay with them until they have the basics"
 msgstr ""
+"Berhenti dan tetaplah bersama mereka sampai mereka memiliki dasar-dasarnya"
 
 #: site/activities/coaching-checklist.php:163
 #: site/activities/coaching-checklist.php:292
 msgid "Stay engaged until consistently competent"
-msgstr ""
+msgstr "Tetap terlibat sampai kompeten secara konsisten"
 
 #: site/activities/coaching-checklist.php:166
 #: site/activities/coaching-checklist.php:295
 msgid "Relate to them as co-laborer"
-msgstr ""
+msgstr "Berhubungan dengan mereka sebagai rekan kerja"
 
 #: site/activities/coaching-checklist.php:171
 msgid "Mentor’s Behaviors"
-msgstr ""
+msgstr "Perilaku Mentor"
 
 #: site/activities/coaching-checklist.php:177
 msgid "Direct and inform"
-msgstr ""
+msgstr "Mengarahkan dan menginformasikan"
 
 #: site/activities/coaching-checklist.php:180
 msgid "Direct and support"
-msgstr ""
+msgstr "Mengarahkan dan mendukung"
 
 #: site/activities/coaching-checklist.php:183
 msgid "Support and encourage"
-msgstr ""
+msgstr "Mendukung dan mendorong"
 
 #: site/activities/coaching-checklist.php:186
 msgid "Receive updates"
-msgstr ""
+msgstr "Terima pembaruan"
 
 #: site/activities/coaching-checklist.php:191
 msgid "Planning Responsibilities"
-msgstr ""
+msgstr "Tanggung Jawab Perencanaan"
 
 #: site/activities/coaching-checklist.php:197
 msgid "Mentor decides"
-msgstr ""
+msgstr "Mentor memutuskan"
 
 #: site/activities/coaching-checklist.php:200
 msgid "Discuss and Mentor decides"
-msgstr ""
+msgstr "Diskusikan dan Mentor yang memutuskan"
 
 #: site/activities/coaching-checklist.php:203
 msgid "Discuss and Mentee decides"
-msgstr ""
+msgstr "Diskusikan dan murid yang memutuskan"
 
 #: site/activities/coaching-checklist.php:206
 msgid "Mentee decides"
-msgstr ""
+msgstr "Murid yang memutuskan"
 
 #: site/activities/coaching-checklist.php:270
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
 msgstr ""
+"Apakah murid tidak menyadari, tidak terbiasa, atau salah memahami alat "
+"tersebut?"
 
 #: site/activities/coaching-checklist.php:273
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
 msgstr ""
+"Apakah murid kebetulan familier dengan alat tersebut namun masih belum yakin?"
 
 #: site/activities/coaching-checklist.php:276
 msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
+"Apakah murid memahami alat tersebut dan mampu melatih dasar-dasar alat "
+"tersebut?"
 
 #: site/activities/coaching-checklist.php:279
 msgid "Does the Mentee feel confident and able to effectively train the tool?"
 msgstr ""
+"Apakah murid merasa percaya diri dan mampu melatih alat tersebut secara "
+"efektif?"
 
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
@@ -1605,7 +1696,7 @@ msgstr "DISKUSIKAN"
 #: site/course/_strings-3-circle-gospel-presentation.php:62
 #: site/course/course-builder.php:405
 msgid "(10 min)"
-msgstr ""
+msgstr "(10 menit)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:873
@@ -1620,12 +1711,16 @@ msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
 msgstr ""
+"Menurut Anda mengapa Isa memilih orang biasa daripada cara lainnya untuk "
+"menyampaikan Kabar Baik-Nya?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:30
 #: site/course/course-content.php:875
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
 msgstr ""
+"Apa yang perlu dilakukan agar Anda merasa lebih nyaman memberitakan Kisah "
+"Allah?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1648,7 +1743,7 @@ msgstr "MENONTON"
 #: site/course/_strings-3-circle-gospel-presentation.php:40
 #: site/course/course-builder.php:404
 msgid "(5 min)"
-msgstr ""
+msgstr "(5 menit)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 #: site/course/course-content.php:800 site/course/course-content.php:851
@@ -1662,6 +1757,8 @@ msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
+"Salah satu cara untuk membagikan kabar baik Allah adalah dengan menggunakan "
+"presentasi visual yang disebut 3 Lingkaran."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:916
@@ -1679,26 +1776,31 @@ msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
 msgstr ""
+"Menurut Anda apakah membagikan kisah seperti ini akan memudahkan atau malah "
+"menyulitkan pemberitaan Kisah Allah?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #: site/course/_strings-3-circle-gospel-presentation.php:109
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr ""
+msgstr "Pindai kode QR atau temukan selembar kertas."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid "Select a person from your list of 100."
-msgstr ""
+msgstr "Pilih seseorang dari daftar 100 Anda."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:86
 msgid ""
 "Use the coaching checklist and evaluate your selected person. Ask yourself, "
 "\"What does this person need for each of the tools and concepts?\""
 msgstr ""
+"Gunakan daftar periksa pembinaan dan evaluasi lah orang yang Anda pilih. "
+"Tanyakan pada diri Anda, \"Apa yang dibutuhkan orang ini untuk setiap alat "
+"dan konsep?\""
 
 #: site/course/_strings-3-circle-gospel-presentation.php:87
 msgid "Check off the checklist."
-msgstr ""
+msgstr "Centang daftar periksa."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:94
 #: site/course/_strings-3-circle-gospel-presentation.php:116
@@ -1713,7 +1815,7 @@ msgstr ""
 #: site/course/course-content.php:3679 site/course/course-content.php:3951
 #: site/course/course-content.php:4505 site/course/course-content.php:4907
 msgid "Activity Resource"
-msgstr ""
+msgstr "Sumber Daya Aktivitas"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:110
 msgid ""
@@ -1739,7 +1841,7 @@ msgstr ""
 
 #: site/course/course-builder.php:409
 msgid "(30 min)"
-msgstr ""
+msgstr "(30 menit)"
 
 #: site/course/course-builder.php:410
 msgid "(35 min)"
@@ -1787,16 +1889,16 @@ msgstr ""
 
 #: site/course/course-builder.php:421
 msgid "(90 min)"
-msgstr ""
+msgstr "(90 menit)"
 
 #: site/course/course-builder.php:422
 msgid "(60 - 90 min)"
-msgstr ""
+msgstr "(60 - 90 menit)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3103 site/course/course-content.php:3108
 msgid "SESSION 1"
-msgstr ""
+msgstr "SESI 1"
 
 #: site/course/course-content.php:46 site/course/course-content.php:51
 #: site/course/course-content.php:415 site/course/course-content.php:420
@@ -1855,7 +1957,7 @@ msgstr "MEMERIKSA"
 #: site/course/course-content.php:5839 site/course/course-content.php:5888
 #: site/course/course-content.php:5937
 msgid "Have all of the participants and facilitator check-in."
-msgstr ""
+msgstr "Minta semua peserta dan fasilitator untuk melakukan registrasi."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1876,7 +1978,7 @@ msgstr ""
 #: site/course/course-content.php:5842 site/course/course-content.php:5891
 #: site/course/course-content.php:5940
 msgid "Or zume.training/checkin and use code:"
-msgstr ""
+msgstr "Atau zume.training/checkin dan gunakan kode:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1932,10 +2034,12 @@ msgstr "TINJAUAN"
 #: site/course/course-content.php:5152 site/course/course-content.php:5414
 msgid "In this session, we will hear and discuss these concepts:"
 msgstr ""
+"Dalam sesi ini, kita akan mendengar dan mendiskusikan konsep-konsep berikut "
+"ini:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr ""
+msgstr "Definisi Sederhana dari Pengikut & Jemaah"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1945,7 +2049,7 @@ msgstr "Pernapasan Rohani"
 #: site/course/course-content.php:798 site/course/course-content.php:1144
 #: site/course/course-content.php:1517 site/course/course-content.php:2897
 msgid "And we will add these tools to our toolkit:"
-msgstr ""
+msgstr "Dan kami akan menambahkan alat-alat ini ke dalam perangkat kami:"
 
 #: site/course/course-content.php:92 site/course/course-content.php:234
 #: site/course/course-content.php:243 site/course/course-content.php:360
@@ -1957,6 +2061,8 @@ msgstr "Pembacaan Alkitab S.O.A.P.S."
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
+"Tuhan memakai orang biasa yang melakukan hal-hal sederhana untuk membuat "
+"dampak yang besar."
 
 #: site/course/course-content.php:136
 msgid ""
@@ -1976,6 +2082,8 @@ msgid ""
 "What’s the difference between that picture and what’s described in the video "
 "as a \"Simple Church\"?"
 msgstr ""
+"Apa perbedaan antara gambar itu dengan apa yang di jelaskan dalam video "
+"sebagai sebuah \"Jemaah Sederhana\"?"
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
@@ -1987,10 +2095,12 @@ msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
+"Pernapasan rohani. Kita menghirup napas. Kita menghembuskan napas. Kita "
+"hidup. Mendengar dan menaati Tuhan juga seperti itu."
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr ""
+msgstr "Mengapa penting untuk belajar mendengar dan mengenali suara Allah?"
 
 #: site/course/course-content.php:226
 msgid ""
@@ -2011,13 +2121,15 @@ msgstr ""
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
-msgstr ""
+msgstr "Praktik S.O.A.P.S."
 
 #: site/course/course-content.php:274
 msgid ""
 "Scan QR code and work individually through the SOAPS Bible study pattern "
 "using Matthew 6:9-13. (20 min)"
 msgstr ""
+"Pindai kode QR dan kerjakan secara individu melalui pola studi Alkitab SOAPS "
+"menggunakan Matius 6:9-13. (20 menit)"
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
@@ -2025,11 +2137,11 @@ msgstr "Kitab Suci"
 
 #: site/course/course-content.php:277
 msgid "Observation"
-msgstr ""
+msgstr "Pengamatan"
 
 #: site/course/course-content.php:278
 msgid "Application"
-msgstr ""
+msgstr "Aplikasi"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:192
@@ -2038,26 +2150,30 @@ msgstr "Doa"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
-msgstr ""
+msgstr "Membagikan"
 
 #: site/course/course-content.php:282
 msgid ""
 "Return together and share your S.O.A.P.S. in groups of two or three. (10 min)"
 msgstr ""
+"Kembali bersama dan bagikan S.O.A.P.S. Anda dalam kelompok yang terdiri dari "
+"dua atau tiga orang. (10 menit)"
 
 #: site/course/course-content.php:304
 msgid ""
 "The Bible tells us that every follower of Jesus will one day be held "
 "accountable for what we do and say and think."
 msgstr ""
+"Alkitab mengatakan bahwa setiap pengikut Isa suatu hari nanti akan dimintai "
+"pertanggungjawaban atas apa yang kita lakukan, katakan, dan pikirkan."
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
-msgstr ""
+msgstr "Kelompok Pertanggungjawaban adalah cara yang bagus untuk bersiap!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr ""
+msgstr "Latihan Kelompok Pertanggungjawaban"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -2066,7 +2182,7 @@ msgstr ""
 #: site/course/course-content.php:2988 site/course/course-content.php:3943
 #: site/course/course-content.php:4898
 msgid "Scan the QR code."
-msgstr ""
+msgstr "Pindai kode QR."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -2079,6 +2195,8 @@ msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
+"Habiskan 20 menit berikutnya untuk bekerja bersama melalui Pertanyaan "
+"Pertanggungjawaban."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
 #: site/course/course-content.php:1011 site/course/course-content.php:1397
@@ -2095,7 +2213,7 @@ msgstr ""
 #: site/course/course-content.php:5298 site/course/course-content.php:5441
 #: site/course/course-content.php:5564
 msgid "REVIEW"
-msgstr ""
+msgstr "TINJAUAN"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -2105,14 +2223,14 @@ msgstr ""
 #: site/course/course-content.php:5044 site/course/course-content.php:5170
 #: site/course/course-content.php:5444
 msgid "Concepts heard in this session:"
-msgstr ""
+msgstr "Konsep yang didengar dalam sesi ini:"
 
 #: site/course/course-content.php:358 site/course/course-content.php:668
 #: site/course/course-content.php:1018 site/course/course-content.php:1406
 #: site/course/course-content.php:1862 site/course/course-content.php:2771
 #: site/course/course-content.php:3068
 msgid "Tools heard in this session:"
-msgstr ""
+msgstr "Alat yang didengar dalam sesi ini:"
 
 #: site/course/course-content.php:372 site/course/course-content.php:1032
 #: site/course/course-content.php:1420 site/course/course-content.php:1875
@@ -2434,12 +2552,18 @@ msgid ""
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
+"Di dunia yang hancur ini, orang merasa dihargai ketika mereka mengambil, "
+"menerima dan ketika mereka mendapatkan lebih banyak daripada orang-orang di "
+"sekitar mereka. Tetapi Ekonomi Rohani Allah berbeda- Allah berinvestasi "
+"lebih bagi mereka yang setia dengan apa yang sudah diberikan kepada mereka."
 
 #: site/course/course-content.php:844
 msgid ""
 "What are some differences you see between God’s Spiritual Economy and our "
 "earthly way of getting things done?"
 msgstr ""
+"Apa saja perbedaan yang Anda lihat antara Ekonomi Rohani Allah dan cara "
+"duniawi kita dalam menyelesaikan segala sesuatu?"
 
 #: site/course/course-content.php:890
 msgid ""
@@ -2447,14 +2571,18 @@ msgid ""
 "Judgement – from the beginning of humankind all the way to the end of this "
 "age."
 msgstr ""
+"Salah satu cara untuk memberitakan Kabar Baik Allah adalah dengan "
+"menceritakan Kisah Allah dari Penciptaan sampai Penghakiman - sejak awal "
+"mula peradaban manusia sampai akhir zaman."
 
 #: site/course/course-content.php:934
 msgid "Break into groups of two or three people."
 msgstr ""
+"Bagilah menjadi beberapa kelompok yang terdiri dari dua atau tiga orang."
 
 #: site/course/course-content.php:935
 msgid "Take turns telling the Gospel to each other."
-msgstr ""
+msgstr "Ambil giliran untuk memberitakan Injil pada satu sama lain."
 
 #: site/course/course-content.php:959
 msgid ""
@@ -2497,7 +2625,7 @@ msgstr ""
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:243
 msgid "The Spiritual Economy"
-msgstr ""
+msgstr "Ekonomi Rohani"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3981
 msgid ""
@@ -2505,6 +2633,9 @@ msgid ""
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
 msgstr ""
+"Tanyakan kepada Allah kepada siapa Dia ingin Anda untuk melatih menggunakan "
+"kisah Penciptaan sampai Penghakiman (atau beberapa cara lain untuk berbagi "
+"Kisah Allah). Bagikan nama orang ini dengan kelompok sebelum Anda pergi."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3982
 msgid ""
@@ -2512,34 +2643,47 @@ msgid ""
 "one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
+"Ambil waktu minggu ini untuk berlatih Kisah Allah, dan kemudian bagikan "
+"dengan setidaknya satu orang dari Daftar 100 Anda yang Anda tandai sebagai "
+"\"Orang Tidak Percaya\" atau \"Tidak Diketahui.\""
 
 #: site/course/course-content.php:1038
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
+"PENGINGAT PENTING - Kelompok Anda akan merayakan Perjamuan Kudus pada sesi "
+"berikutnya. Pastikan untuk mengingat apa saja yang dipelukan (roti dan "
+"anggur/jus)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4258
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
+"PENGINGAT PENTING - Kelompok Anda akan merayakan Perjamuan Kudus pada sesi "
+"berikutnya. Pastikan untuk mengingat apa saja yang dipelukan (roti dan "
+"anggur/jus)."
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3459 site/course/course-content.php:3464
 msgid "SESSION 4"
-msgstr ""
+msgstr "SESI 4"
 
 #: site/course/course-content.php:1109
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah karena Dia mengajak kita untuk berbagi "
+"Kabar Baik-Nya dengan orang lain."
 
 #: site/course/course-content.php:1110
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
+"Mintalah kepada-Nya untuk memberikan setiap anggota kelompok Anda pikiran "
+"Kristus — dan memenuhi masing-masing dengan Roh-Nya."
 
 #: site/course/course-content.php:1165
 msgid ""
@@ -2676,25 +2820,32 @@ msgstr ""
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3589 site/course/course-content.php:3594
 msgid "SESSION 5"
-msgstr ""
+msgstr "SESI 5"
 
 #: site/course/course-content.php:1485
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
+"Berdoa dan bersyukurlah kepada Allah atas caraNya bekerja melalui kesaksian "
+"umat-Nya. Undanglah Roh Kudus untuk memimpin waktu Anda bersama."
 
 #: site/course/course-content.php:1538
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
+"Doa Keliling adalah cara sederhana untuk mematuhi perintah Allah untuk "
+"berdoa bagi orang lain. Dan seperti namanya - berdoa kepada Tuhan sambil "
+"berjalan keliling."
 
 #: site/course/course-content.php:1567
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
 msgstr ""
+"Pemuridan dapat berkembang pesat dengan cara menemukan orang damai, bahkan "
+"di tempat dimana pengikut Isa hanya sedikit dan berjauhan."
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -2711,26 +2862,32 @@ msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
+"Komunitas atau segmen masyarakat manakah yang ada di dekat Anda yang "
+"tampaknya hanya memiliki sedikit (atau tidak) suasana Kerajaan Allah?"
 
 #: site/course/course-content.php:1595
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
+"Bagaimana seorang Orang Damai (seseorang yang TERBUKA, RAMAH, MENGENAL ORANG "
+"LAIN dan BERBAGI) dapat mempercepat penyebaran Injil di komunitas itu?"
 
 #: site/course/course-content.php:1611
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr ""
+msgstr "Berlatih Doa B.L.E.S.S."
 
 #: site/course/course-content.php:1614
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
+"Bagilah menjadi beberapa kelompok yang beranggotakan dua atau tiga orang dan "
+"berlatih doa lima area dari Doa B.L.E.S.S. untuk satu sama lain."
 
 #: site/course/course-content.php:1627
 msgid "Prayer Walking Activity"
-msgstr ""
+msgstr "Aktivitas Doa Keliling"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4497
 msgid ""
@@ -2756,18 +2913,22 @@ msgstr ""
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
-msgstr ""
+msgstr "Sesi ini diakhiri dengan kegiatan doa keliling."
 
 #: site/course/course-content.php:1660
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
+"Sebelum Anda melakukan aktivitas Doa Keliling, pastikan untuk berdoa bersama "
+"kelompok Anda untuk mengakhiri waktu bersama."
 
 #: site/course/course-content.php:1661
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
 msgstr ""
+"Beryukurlah kepada Tuhan karena Dia mengasihi mereka yang terhilang, yang "
+"terakhir dan yang terhina – termasuk kita!"
 
 #: site/course/course-content.php:1662
 msgid ""

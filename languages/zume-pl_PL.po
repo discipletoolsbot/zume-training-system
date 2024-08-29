@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-22 22:08+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-08-29 08:17+0000\n"
+"Last-Translator: Cal Hiebsch <calamazoo@gmail.com>\n"
 "Language-Team: Polish <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/pl/>\n"
 "Language: pl_PL\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
-msgstr "Epic 404 - Nie znaleziono"
+msgstr "Błąd 404 - nie znaleziono"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
@@ -31,7 +31,7 @@ msgstr "Strona główna"
 #: site/pages/_strings-mobile-pwa.php:14 site/pages/about.php:26
 #: site/parts/footer.php:10 site/parts/nav.php:24 site/parts/nav.php:85
 msgid "About"
-msgstr "åInformacje"
+msgstr "Informacje"
 
 #: 404.php:78 appearance/style-override/navigation.php:106
 #: site/course/presenter.php:139 site/dashboard/checkin-dashboard.php:29
@@ -345,7 +345,7 @@ msgstr "Dowiedz się, co kaczątka mają wspólnego z pozyskiwaniem uczniów."
 #: site/course/course-content.php:1403 site/course/course-content.php:4350
 #: site/course/course-content.php:4371
 msgid "Duckling Discipleship"
-msgstr "Kaczątko"
+msgstr "Uczniowie jak kaczątka"
 
 #: globals.php:2253 globals.php:2255 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
@@ -403,20 +403,20 @@ msgstr "Spacer z modlitwą"
 
 #: globals.php:2289 site/pages/follow-jesus.php:300
 msgid "A Person of Peace and How To Find One"
-msgstr "Człowiek pokoju i jak go znaleźć"
+msgstr "Osoba pokoju i jak ją znaleźć"
 
 #: globals.php:2290
 msgid ""
 "Learn who a person of peace might be and how to know when you‘ve found one."
 msgstr ""
-"Dowiedz się, kim może być człowiek pokoju i skąd wiedzieć, kiedy go "
+"Dowiedz się, kim może być osoba pokoju i skąd wiedzieć, kiedy ją "
 "znalazłeś/aś."
 
 #: globals.php:2291 site/course/course-content.php:1515
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4596 site/course/course-content.php:4616
 msgid "Person of Peace"
-msgstr "Człowiek pokoju"
+msgstr "Osoba pokoju"
 
 #: globals.php:2301 site/pages/follow-jesus.php:213
 msgid "Faithfulness is Better Than Knowledge"
