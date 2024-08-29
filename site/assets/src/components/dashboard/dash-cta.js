@@ -23,6 +23,8 @@ export class DashCta extends LitElement {
         this.initialCtaKeys = []
         this.removedCtaKeys = []
 
+        this.celebrationsLogged = []
+
         this.manageCtas = this.manageCtas.bind(this)
         this.transitionIn = this.transitionIn.bind(this)
         this.transitionCtas = this.transitionCtas.bind(this)
@@ -112,7 +114,10 @@ export class DashCta extends LitElement {
     }
     logCelebrationsSeen() {
         this.celebrations.forEach(({type, subtype}) => {
-            zumeRequest.post( 'log', { type, subtype, log_once: true })
+            if (!this.celebrationsLogged.includes(type + subtype)) {
+                zumeRequest.post( 'log', { type, subtype, log_once: true })
+                this.celebrationsLogged.push(type + subtype)
+            }
         })
         const celebrationKeys = this.getCtaKeys(this.celebrations)
         jsObject.allCtas = jsObject.allCtas.filter(({key}) => !celebrationKeys.includes(key))
