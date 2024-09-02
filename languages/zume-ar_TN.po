@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-29 11:33+0000\n"
+"PO-Revision-Date: 2024-09-02 14:24+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.1\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -20,7 +20,7 @@ msgstr "الملحمة 404 - موش موجودة"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr "الصفحة الّي كنت تلوّج عليها موش موجودة و إلاّ تمّ حذفها"
+msgstr "الصفحة الّي كنت تلوّج عليها موش موجودة وإلاّ تمّ حذفها"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -1673,7 +1673,7 @@ msgstr "هل مشاركة قصّة ربّي باش تكون حاجة ساهلة 
 #: site/course/_strings-3-circle-gospel-presentation.php:109
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr "سكاني رمز الكر, كود و إلاّ لوّج على ورقة."
+msgstr "سكاني رمز الكر, كود وإلاّ لوّج على ورقة."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid "Select a person from your list of 100."
@@ -2308,7 +2308,7 @@ msgstr "صلّي دورة الصّلاة لمدّة ساعة وحدك"
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr "سكاني رمز الكر, كود و اتحصّل على دليل دورة الصّلاة في تليفونك."
+msgstr "سكاني رمز الكر, كود واتحصّل على دليل دورة الصّلاة في تليفونك."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3672
 msgid ""
@@ -2340,7 +2340,7 @@ msgstr "كيفاه باش تكون حياتك إذا خلّيت النّوع ه�
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr "عطانا ربّي بالحقّ العلاقات إلّي نستحقّوها باش \"نمشيوا و نتلمذوا .\""
+msgstr "عطانا ربّي بالحقّ العلاقات إلّي نستحقّوها باش \"نمشيوا ونتلمذوا .\""
 
 #: site/course/course-content.php:614
 msgid ""
@@ -2360,7 +2360,7 @@ msgstr "قوم بإنشاء قائمتك الخاصّة المتكوّنة من 
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
-msgstr "سكاني الكر, كود و إلاّ إستعمل ورقة."
+msgstr "سكاني الكر, كود وإلاّ إستعمل ورقة."
 
 #: site/course/course-content.php:644
 msgid ""
@@ -2435,7 +2435,7 @@ msgid ""
 "is different – God invests more in those who are faithful with what they’ve "
 "already been given."
 msgstr ""
-"في عالمنا المحطّم، النّاس تحسّ بالمكافأة وقت ياخذوا، ويتلقّاو, ويكسبوا أكثر ملّي "
+"في عالمنا المحطّم، النّاس تحسّ بالمكافأة وقت ياخذوا، يتلقّاو, ويكسبوا أكثر ملّي "
 "دايرين بيهم.أما إقتصاد ربّي الرّوحي مختلف - يستثمر ربّي أكثر في الأمناء فليّ "
 "تعطالهم."
 
@@ -2474,7 +2474,7 @@ msgstr ""
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
-msgstr "هل سبق و عمّدت شخص قبل؟"
+msgstr "هل عمّدت شخص قبل؟"
 
 #: site/course/course-content.php:986
 msgid "Would you even consider it?"
@@ -2530,7 +2530,7 @@ msgid ""
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
 "تذكير هامّ - باش تحتفل مجموعتك بالعشاء الربّاني في الجلسة الجّاية.تأكّد انّك تتذكّ"
-"ر الحاجات هاذم ( الخبز، الشراب / العصير)."
+"ر الحاجات هاذم ( الخبز والشراب / العصير)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4258
 msgid ""
@@ -2548,7 +2548,7 @@ msgstr "الجلسة 4"
 #: site/course/course-content.php:1109
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
-msgstr "صلّي وأشكر ربّي على خاطر خلّانا نشاركوا أخباروا السّارة مع لخرين."
+msgstr "صلّي وأشكر ربّي على خاطر خلّانا نشاركوا أخباروا السّارة مع النّاس."
 
 #: site/course/course-content.php:1110
 msgid ""
@@ -2603,7 +2603,7 @@ msgid ""
 "What do you think would happen if new followers started sharing and "
 "discipling others, immediately?"
 msgstr ""
-"حسب رايك شنية باش يصير إذا بداو المأمنين الجدد في مشاركة لوخرين وتلمذتهم؟"
+"حسب رايك شنية باش يصير إذا بداو المأمنين الجدد في مشاركة النّاس وتلمذتهم؟"
 
 #: site/course/course-content.php:1262
 msgid ""
@@ -2617,16 +2617,16 @@ msgid ""
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
 msgstr ""
-"شنية مجالات التّلمذة (القراءة / فهم الكتاب المقدّس، الصّلاة، مشاركة قصّة ربّي) إلّ"
-"ي تحبّ تتعلّم عليه برشا؟ شكون الشخص إلّي ينجّم يعاونك في التعلّم؟"
+"شنية مجالات التّلمذة (القراءة/فهم الكتاب المقدّس، الصّلاة، مشاركة قصّة ربّي) إلّي "
+"تحبّ تتعلّم عليها برشا؟ شكون الشخص إلّي ينجّم يعاونك في التعلّم؟"
 
 #: site/course/course-content.php:1289
 msgid ""
 "What is one area of discipleship that you feel you could share with others? "
 "Who is someone that you could share with?"
 msgstr ""
-"شنية أحد مجالات التّلمذة إلّي تحسّ انّك تنجّم تشاركها مع لخرين؟ شكون الشّخص إلّي "
-"تنجّم تشاركو ا؟"
+"شنية أحد مجالات التّلمذة إلّي تحسّ إنّك تنجّم تشاركها مع النّاس؟ شكون الشّخص إلّي تنجّ"
+"م تشاركوا؟"
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
@@ -2638,8 +2638,8 @@ msgid ""
 "seemed as if God was just... missing? These are usually the places where God "
 "wants to work the most."
 msgstr ""
-"هل زرت قبل بيت, حيّ, مدينة كان ربّي موش موجود فيها ؟ في العادة تكون البلايص "
-"هذي يحب ربّي يخدم فيها برشة."
+"هل زرت قبل بيت, حيّ, مدينة كان ربّي موش موجود فيها؟ في العادة تكون البلايص هذي "
+"يحب ربّي يخدم فيها برشة."
 
 #: site/course/course-content.php:1334
 msgid ""
@@ -2683,7 +2683,7 @@ msgid ""
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
-"عدّي شوّية وقت الجمعة هاذي في ممارسة شهادتك الّي ادّوم 3 دقايق \" وبعد شاركها مع "
+"عدّي شوّية وقت الجمعة هاذي في ممارسة شهادتك الّي إدّوم 3 دقايق \" وبعد شاركها مع "
 "شخص واحد على الأقلّ من قائمتك المتكوّنة من 100 شخص والّي قمت بتصنيفها على أنّها "
 "\"موش مؤمن\" وإلاّ \"موش معروف.\""
 
@@ -2692,7 +2692,7 @@ msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"أسأل ربّي مع شكون يحبك ادرّبوا بإستعمال أداة الشهادة في ثلاث دقائق.شارك اسم "
+"أسأل ربّي مع شكون يحبك إدرّبوا بإستعمال أداة الشهادة في ثلاث دقائق.شارك إسم "
 "الشخص مع المجموعة قبل متمشي."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
@@ -2705,7 +2705,7 @@ msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
-"صلّي وأشكر ربّي على الطرق الّي يخدم بيها بشهادة شعبوا و خلّي الرّوح القدس يقود "
+"صلّي وأشكر ربّي على الطرق الّي يخدم بيها بشهادة شعبوا وخلّي الرّوح القدس يقود "
 "وقتكم مع بعضكم."
 
 #: site/course/course-content.php:1538
@@ -2713,8 +2713,8 @@ msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
-"مسير الصّلاة وسيلة بسيطة لتنفيذ أمر ربّي بالصّلاة للعباد لخرى.إسمها على جسمها "
-"صلاة وإنتي إدّور!"
+"مسير الصّلاة وسيلة بسيطة لتنفيذ أمر ربّي بالصّلاة لنّاس.إسمها على جسمها صلاة "
+"وإنتي إدّور!"
 
 #: site/course/course-content.php:1567
 msgid ""
@@ -2745,7 +2745,7 @@ msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
-"كيفاه ينجّم إنسان السّلام (إنسان متّفتح, مضياف, يعرف لخرين ويشارك) يسرّع في "
+"كيفاه ينجّم إنسان السّلام (إنسان متّفتح, مضياف, يعرف النّاس ويشارك) يسرّع في "
 "إنتشار الإنجيل في المجموعة؟"
 
 #: site/course/course-content.php:1611
@@ -2899,7 +2899,7 @@ msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"صلّي وأشكر ربّي على إلتزام المجموعة باتّباع يسوع بأمانة و خلّي الرّوح القدس يقود "
+"صلّي وأشكر ربّي على إلتزام المجموعة باتّباع يسوع بأمانة وخلّي الرّوح القدس يقود "
 "وقتكم."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
@@ -2956,7 +2956,7 @@ msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
-"شوف لقدّام - إستعمل الأسئلة 5, 6 وِ 7 في قسم شوف لقدّام باش إطّور كيفية الطّاعة "
+"شوف لقدّام - إستعمل الأسئلة 5, 6 و7 في قسم شوف لقدّام باش إطّور كيفية الطّاعة "
 "والتّدريب والمشاركة. (30 دقيقة)"
 
 #: site/course/course-content.php:2063
@@ -2965,7 +2965,7 @@ msgstr "شنية الحاجة إلّي عجبتك في مجموعة 3/3؟ وعل
 
 #: site/course/course-content.php:2064
 msgid "What was the most challenging? Why?"
-msgstr "شنية كان التحدّي الكبير؟ و علاه؟"
+msgstr "شنية كان التحدّي الكبير؟ علاه؟"
 
 #: site/course/course-content.php:2078 site/course/course-content.php:3064
 #: site/course/course-content.php:3546 site/course/course-content.php:4614
@@ -3038,7 +3038,7 @@ msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
 msgstr ""
-"شوف الفوق - إستعمل أعمال الرّسل 2: 42-47 كمقطع قراءة لمجموعتك و جاوب على "
+"شوف الفوق - إستعمل أعمال الرّسل 2: 42-47 كمقطع قراءة لمجموعتك وجاوب على "
 "الأسئلة 1-4.( 30 دقيقة)"
 
 #: site/course/course-content.php:2258
@@ -3072,7 +3072,7 @@ msgid ""
 "before your group meets again. Challenge them to then share it with someone "
 "else."
 msgstr ""
-"صلّي و أسأل ربّي مع شكون يحبّك تشارك أداة خليّة القيادة قبل متجتمع مع جموعتك مرّة "
+"صلّي وأسأل ربّي مع شكون يحبّك تشارك أداة خليّة القيادة قبل متجتمع مع جموعتك مرّة "
 "أخرى.مبعّد تحدّاهم بمشاركتها مع عبد آخر."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
@@ -3102,12 +3102,12 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
-"وقت تخمّم النّاس في مضاعفة التّلامذة, ديما يخمّوا في اعتبارها عملّية خطوة - "
+"وقت تخمّم النّاس في مضاعفة التّلامذة, ديما يخمّوا في إعتبارها عملّية خطوة - "
 "بخطوة.المشكلة هي - أنّو هذي موش الطريقة الأحسن لتحقيق هذا!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
-msgstr "شنية أكثر فكرة مثيرة سمعتها في الفيديو هذا؟ وعلاه؟"
+msgstr "شنية أكثر فكرة مثيرة سمعتها في الفيديو هذا؟ علاه؟"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
@@ -3155,7 +3155,7 @@ msgid ""
 "spiritual families."
 msgstr ""
 "علّمنا يسوع باش نخلّيوا ديارنا وأحبابنا ورانا ونكونوا مستعدّين باش نمشيوا لأيّ "
-"بلاصة - وفي كلّ بلاصة - نشاركوا و نأسّوا عائلات روحية جديدة."
+"بلاصة - وفي كلّ بلاصة - نشاركوا ونأسّوا عائلات روحية جديدة."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -3171,8 +3171,8 @@ msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
-"قائمة التّدريب أداة بسيطة تنجّم تستعملها باش تعاونك في توجيهك وقت تعاون ناس "
-"أخرى من خلال أجزاء مختلفة وتولّي تلميذ مجهز بالكامل."
+"قائمة التّدريب أداة بسيطة تنجّم تستعملها باش تعاونك في توجيهك وقت تعاون النّاس "
+"من خلال أجزاء مختلفة وتولّي تلميذ مجهز بالكامل."
 
 #: site/course/course-content.php:2576
 msgid ""
@@ -3278,7 +3278,7 @@ msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
-"مجال النمّو: كيفاه تجهّز النّاس وتنمّيهم روحياً وفردياً وفي شبكاتهم الطبيعية؟"
+"مجال النمّو: كيفاه تجهّز النّاس وتنمّيهم روحيا وفرديا وفي شبكاتهم الطبيعية؟"
 
 #: site/course/course-content.php:2659
 msgid ""
@@ -3292,7 +3292,7 @@ msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
-"مجال التضاعف: مع شكون وكيفاه ووقتاه تقوم بتصفية المؤمنين وتجهّزهم وتحاسبهم "
+"مجال التضاعف: مع شكون وكيفاه و وقتاه تقوم بتصفية المؤمنين وتجهّزهم وتحاسبهم "
 "على التضاعف؟"
 
 #: site/course/course-content.php:2674 site/course/course-content.php:2677
@@ -3338,7 +3338,7 @@ msgid ""
 msgstr ""
 "تنجّم ترسم خريطة شجرة الأجيال على ورقة وإلاّ على برشة أوراق.تعاون الخريطة في "
 "توضيح نقاط التوقّف في عملّية التضاعف ويكون التّدريب مطلوب.صحّة الحركة من أهم "
-"اهتمامات القادة, والإنتاجية إحدى الطّرق الرئيسية لقياس الصّحة."
+"إهتمامات القادة, والإنتاجية إحدى الطّرق الرئيسية لقياس الصّحة."
 
 #: site/course/course-content.php:2716
 msgid "See the example on the next slide."
@@ -3394,15 +3394,15 @@ msgstr "الجلسة 10"
 #: site/course/course-content.php:2850
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
-msgstr "صلّي وأ شكر ربّي على خاطر كان أمين في تكميل خدمتوا الصّالحة فينا. "
+msgstr "صلّي وأشكر ربّي على خاطر كان أمين في تكميل خدمتوا الصّالحة فينا. "
 
 #: site/course/course-content.php:2851 site/course/course-content.php:5648
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
-"أطلب ربّي يعطي مجموعتك عقول صافية وقلوب مفتوحة للحاجات العظيمة الّي يحب يعملها "
-"فيك وبيك."
+"أطلب من ربّي يعطي مجموعتك عقول صافية وقلوب مفتوحة للحاجات العظيمة الّي يحب "
+"يعملها فيك وبيك."
 
 #: site/course/course-content.php:2852 site/course/course-content.php:5649
 msgid ""
@@ -3555,7 +3555,7 @@ msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
-"لوّج على شريك تدريبي مستعدّ يتواصل معاك كلّ جمعة.والتزم معاه على فعل نفس الحاجة."
+"لوّج على شريك تدريبي مستعدّ يتواصل معاك كلّ جمعة.وإلتزم معاه على فعل نفس الحاجة."
 
 #: site/course/course-content.php:3192
 msgid ""
@@ -4069,7 +4069,7 @@ msgstr "الخطوة إلّي بعدها"
 #: site/course/course-content.php:5975 site/course/course-content.php:5983
 #: site/dashboard/dashboard.php:248 site/parts/nav.php:79
 msgid "Join the Community"
-msgstr "انضم للمجموعة"
+msgstr "إنضم للمجموعة"
 
 #: site/course/course-content.php:5976
 msgid ""
@@ -4084,7 +4084,7 @@ msgstr "متعملش هذا وحدك.لوّج على مجموعة تشجّعك �
 
 #: site/course/course-content.php:5978
 msgid "Join Zume community using the QR code."
-msgstr "انضم لمجموعة زومّيه بإستعمال الكر، كود."
+msgstr "إنضم لمجموعة زومّيه بإستعمال الكر، كود."
 
 #: site/course/course-content.php:5992
 msgid "CONGRATULATIONS on completing Zume Training!"
