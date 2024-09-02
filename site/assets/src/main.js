@@ -1,5 +1,6 @@
 import './scss/styles.scss'
 
+import './js/Base64'
 import './js/DataWatcher'
 import './js/zumeAttachObservers'
 import './js/zumeRequest'

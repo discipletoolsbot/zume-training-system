@@ -614,7 +614,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         global $wpdb;
         $contact_id = zume_get_user_contact_id( $user_id );
         $connected_plans = $wpdb->get_results( $wpdb->prepare(
-            "SELECT p.ID as post_id, p.post_title as title, pm.meta_key, pm.meta_value
+            "SELECT p.ID as post_id, UNIX_TIMESTAMP(p.post_date) as post_date, p.post_title as title, pm.meta_key, pm.meta_value
                     FROM zume_p2p p2
                     LEFT JOIN zume_posts p ON p.ID=p2.p2p_to
                     LEFT JOIN zume_postmeta pm ON pm.post_id=p2.p2p_to
@@ -631,6 +631,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                 if ( ! isset( $plans[$row['post_id']] ) ) {
                     $plans[$row['post_id']] = [];
                     $plans[$row['post_id']]['title'] = $row['title'];
+                    $plans[$row['post_id']]['timestamp'] = (int) $row['post_date'];
                     $plans[$row['post_id']]['participants'] = [];
                     $plans[$row['post_id']]['sessions'] = [];
                     $plans[$row['post_id']]['completed_sessions'] = [];
@@ -649,8 +650,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                         'key' => $row['meta_key'],
                         'title' => 'Session ' . $key_array[2] ?? '?',
                         'timestamp' => (int) $row['meta_value'],
-                        'date' => date( 'Y-m-d', (int) $row['meta_value'] ),
-                        'date_formatted' => date( 'M j, Y', (int) $row['meta_value'] ),
+                        'date' => gmdate( 'Y-m-d', (int) $row['meta_value'] ),
+                        'date_formatted' => gmdate( 'M j, Y', (int) $row['meta_value'] ),
                         'completed' => 0,
                         'completed_timestamp' => 0,
                         'completed_date' => '',
@@ -677,8 +678,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                     $plans[$row['post_id']]['completed_sessions'][] = $session_key;
                     $plans[$row['post_id']]['sessions'][$session_key]['completed'] = 1;
                     $plans[$row['post_id']]['sessions'][$session_key]['completed_timestamp'] = (int) $row['meta_value'];
-                    $plans[$row['post_id']]['sessions'][$session_key]['completed_date'] = date( 'Y-m-d', (int) $row['meta_value'] );
-                    $plans[$row['post_id']]['sessions'][$session_key]['completed_formatted'] = date( 'M j, Y', (int) $row['meta_value'] );
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed_date'] = gmdate( 'Y-m-d', (int) $row['meta_value'] );
+                    $plans[$row['post_id']]['sessions'][$session_key]['completed_formatted'] = gmdate( 'M j, Y', (int) $row['meta_value'] );
                 }
             }
             $plans_query_string = implode( ',', $plan_post_ids );
@@ -686,7 +687,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
             $participants_result = $wpdb->get_results(
                 "SELECT  p2.p2p_to as plan_id, p2.p2p_from as contact_id, pm.meta_value as user_id, p.post_title as user_name
                     FROM zume_p2p p2
-            		LEFT JOIN zume_posts p ON p.ID=p2.p2p_from
+            	    LEFT JOIN zume_posts p ON p.ID=p2.p2p_from
 					LEFT JOIN zume_postmeta pm ON p2.p2p_from=pm.post_id AND pm.meta_key = 'corresponds_to_user'
                     WHERE p2.p2p_type = 'zume_plans_to_contacts'
                     AND p2.p2p_to IN ( $plans_query_string ) ", ARRAY_A );

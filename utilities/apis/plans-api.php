@@ -186,6 +186,9 @@ class Zume_Plans_Endpoints
         if ( isset( $params['visibility'] ) ) {
             $fields['visibility'] = $params['visibility'];
         }
+        if ( isset( $params['status'] ) ) {
+            $fields['status'] = $params['status'];
+        }
 
         $result = DT_Posts::update_post( self::$post_type, (int) $post_id, $fields, true, false );
 
