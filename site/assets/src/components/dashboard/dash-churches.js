@@ -3,6 +3,7 @@ import { repeat } from 'lit/directives/repeat.js'
 import { DashPage } from './dash-page';
 import { DashBoard } from './dash-board';
 import { zumeRequest } from '../../js/zumeRequest';
+import { Wizards } from '../wizard/wizard-constants';
 
 export class DashChurches extends DashPage {
     static get properties() {
@@ -38,10 +39,7 @@ export class DashChurches extends DashPage {
     }
 
     joinCommunity() {
-        zumeRequest.post( 'log', { type: 'practicing', subtype: 'join_community' } ).then( ( data ) => {
-            const stateEvent = new CustomEvent('user-state:change', { bubbles: true })
-            this.dispatchEvent(stateEvent)
-        })
+        this.dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: Wizards.joinCommunity } }))
     }
 
     handleSubmit(event) {
