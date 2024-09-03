@@ -1063,21 +1063,23 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main content p-2">
+                <div class="dashboard__main content">
                     ${this.showTeaser?c`
-                            <div class="dash-menu__list-item">
-                                <div class="dash-menu__icon-area | stack--5">
-                                  <span class="icon z-icon-locked dash-menu__list-icon"></span>
-                                </div>
-                                <div class="dash-menu__text-area | switcher | switcher-width-20">
-                                  <div>
-                                    <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
-                                    <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
-                                  </div>
-                                  <!-- This needs to change to open the join community wizard instead -->
-                                  <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
-                                    ${jsObject.translations.join}
-                                  </button>
+                            <div class="p-2">
+                                <div class="dash-menu__list-item">
+                                    <div class="dash-menu__icon-area | stack--5">
+                                        <span class="icon z-icon-locked dash-menu__list-icon"></span>
+                                    </div>
+                                    <div class="dash-menu__text-area | switcher | switcher-width-20">
+                                        <div>
+                                            <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
+                                            <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
+                                        </div>
+                                        <!-- This needs to change to open the join community wizard instead -->
+                                        <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
+                                            ${jsObject.translations.join}
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
 
