@@ -90,6 +90,7 @@ class Zume_Training_Follow_Jesus extends Zume_Magic_Page
                             'ay' => esc_html__( 'Ask Yourself', 'zume' ),
                             'd' => esc_html__( 'Download Free Guidebook', 'zume' ),
                             'lra' => esc_html__( 'Listen and Read Along', 'zume' ),
+                            'vt' => esc_html__( 'View Transcript', 'zume' ),
                         ]) ?>][0] })
                             .then(function (data) {
                                 piecesContent.innerHTML = data
