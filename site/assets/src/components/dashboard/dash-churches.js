@@ -22,6 +22,9 @@ export class DashChurches extends DashPage {
         this.orderedChurches = []
         this.orderChurches()
 
+        this.sortedChurches = [...jsObject.churches ?? []]
+        this.sortedChurches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
+
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -146,6 +149,11 @@ export class DashChurches extends DashPage {
         })
     }
 
+    renderChurchOption({ id, name }) {
+        return html`
+            <option value=${id}>${name}</option>
+        `
+    }
     renderChurch({id, name, location, generation }) {
         return html`
             <li
@@ -259,15 +267,24 @@ export class DashChurches extends DashPage {
                         </div>
                         <div>
                             <label for="number-of-people">${jsObject.translations.number_of_people}</label>
-                            <input id="number-of-people" name="number-of-people" type="text" />
+                            <input id="number-of-people" name="number-of-people" type="number" />
                         </div>
                         <div>
                             <label for="church-location">${jsObject.translations.church_location}</label>
                             <input id="church-location" name="church-location" type="text" />
                         </div>
                         <div>
+                            <label for="church-start-date">${jsObject.translations.start_date}</label>
+                            <input id="church-start-date" name="church-start-date" type="date" />
+                        </div>
+                        <div>
                             <label for="parent-church">${jsObject.translations.parent_church}</label>
-                            <input id="parent-church" name="parent-church" type="text" />
+                            <select id="parent-church" name="parent-church" >
+                                <option value="">---</option>
+                                ${
+                                    repeat(this.sortedChurches, ({id}) => id, this.renderChurchOption)
+                                }
+                            </select>
                         </div>
                         <div class="cluster">
                             <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
