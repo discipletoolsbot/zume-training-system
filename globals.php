@@ -666,8 +666,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                         'key' => $row['meta_key'],
                         'title' => 'Session ' . $key_array[2] ?? '?',
                         'timestamp' => (int) $row['meta_value'],
-                        'date' => gmdate( 'Y-m-d', (int) $row['meta_value'] ),
-                        'date_formatted' => gmdate( 'M j, Y', (int) $row['meta_value'] ),
+                        'date' => date( 'Y-m-d', (int) $row['meta_value'] ),
+                        'date_formatted' => date( 'M j, Y', (int) $row['meta_value'] ),
                         'completed' => 0,
                         'completed_timestamp' => 0,
                         'completed_date' => '',
@@ -2907,9 +2907,6 @@ if ( ! function_exists( 'zume_get_percent' ) ) {
         }
         else if ( $value < 1 && $compare > 0 ) {
             return $compare * 100 * -1;
-        }
-        else if ( $value > 0 && $compare < 1 ) {
-            return $value * 100;
         }
         else {
             return 0;
