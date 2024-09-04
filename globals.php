@@ -709,6 +709,40 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         return $plans;
     }
 }
+if ( ! function_exists( 'zume_get_user_churches' ) ) {
+    function zume_get_user_churches( $user_id = null ) {
+        if ( is_null( $user_id ) ) {
+            $user_id = get_current_user_id();
+        }
+
+        /* Get the groups of type church from the DT posts */
+        $result = DT_Posts::list_posts(
+            'groups',
+            [
+                'group_type' => [ 'church' ],
+                'assigned_to' => [ $user_id ],
+            ]
+        );
+
+        $churches = [];
+        foreach ( $result['posts'] as $church ) {
+            $new_church = [];
+            $new_church['id'] = (int) $church['ID'];
+            $new_church['name'] = $church['name'];
+            $new_church['member_count'] = $church['member_count'] ?? 0;
+            $new_church['location'] = $church['location_grid'][0]['label'] ?? '';
+            $new_church['location_meta'] = $church['location_grid_meta'][0] ?? [];
+            $new_church['parent'] = !empty( $church['parent_groups'] ) ? $church['parent_groups'][0]['ID'] : null;
+            $new_church['children'] = !empty( $church['child_groups'] ) ? array_map( function ( $church ) {
+                return $church['ID'];
+            }, $church['child_groups'] ) : [];
+
+            $churches[] = $new_church;
+        }
+
+        return $churches;
+    }
+}
 if ( ! function_exists( 'zume_get_user_contact_id' ) ) {
     function zume_get_user_contact_id( $user_id ) {
         global $wpdb;

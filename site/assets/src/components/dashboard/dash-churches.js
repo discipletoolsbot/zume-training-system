@@ -9,7 +9,7 @@ export class DashChurches extends DashPage {
     static get properties() {
         return {
             showTeaser: { type: Boolean },
-            churches: { type: Array, attribute: false },
+            orderedChurches: { type: Array, attribute: false },
         };
     }
 
@@ -18,7 +18,9 @@ export class DashChurches extends DashPage {
         this.showTeaser = false
         this.route = DashBoard.getRoute('my-churches')
 
-        this.churches = []
+        this.churches = [...jsObject.churches ?? []]
+        this.orderedChurches = []
+        this.orderChurches()
 
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
@@ -42,6 +44,33 @@ export class DashChurches extends DashPage {
         this.dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: Wizards.joinCommunity } }))
     }
 
+    orderChurches() {
+        const rootNodes = this.churches.filter((church) => !church.parent)
+
+        for (const rootNode of rootNodes) {
+            this.processChurch(rootNode.id, 0)
+        }
+    }
+
+    processChurch(churchID, generation) {
+        const newGeneration = generation + 1
+
+        const church = this.churches.find((church) => church.id === churchID)
+
+        if (!church) {
+            console.log(churchID, 'not found')
+            return
+        }
+
+        church.generation = newGeneration
+
+        this.orderedChurches.push(church)
+
+        church.children.forEach((id) => {
+            this.processChurch(id, newGeneration)
+        })
+    }
+
     handleSubmit(event) {
         event.preventDefault()
 
@@ -55,35 +84,35 @@ export class DashChurches extends DashPage {
                 id: newId,
                 name: 'This is a new church',
                 location: 'Birmingham, UK',
-                depth: 0,
+                generation: 1,
             },
             {
                 id: `${newId}-1`,
                 name: 'Tea Shop 1',
                 location: 'Birmingham, UK',
                 parent: newId,
-                depth: 1,
+                generation: 2,
             },
             {
                 id: `${newId}-2`,
                 name: 'Tea Shop 2',
                 location: 'Birmingham, UK',
                 parent: newId,
-                depth: 1,
+                generation: 2,
             },
             {
                 id: `${newId}-2-1`,
                 name: 'Tea Shop 2 child',
                 location: 'Birmingham, UK',
                 parent: `${newId}-2`,
-                depth: 2,
+                generation: 3,
             },
             {
                 id: `${newId}-3`,
                 name: 'Breakfast Shop',
                 location: 'Birmingham, UK',
                 parent: newId,
-                depth: 1,
+                generation: 2,
             },
         ]
 
@@ -117,12 +146,12 @@ export class DashChurches extends DashPage {
         })
     }
 
-    renderChurch({id, name, location, depth }) {
+    renderChurch({id, name, location, generation }) {
         return html`
             <li
                 class="list__item"
-                data-depth=${depth}
-                style=${`--depth: ${depth}`}
+                data-depth=${generation-1}
+                style=${`--depth: ${generation-1}`}
             >
                 <div class="list__primary f-medium" data-large-gap>
                     <span>${name}</span>
@@ -182,8 +211,8 @@ export class DashChurches extends DashPage {
                                     </div>
                                     <div class="dash-menu__text-area | switcher | switcher-width-20">
                                         <div>
-                                            <h3 class="f-1 bold uppercase">My Churches are Locked</h3>
-                                            <p>My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.</p>
+                                            <h3 class="f-1 bold uppercase">${jsObject.translations.my_churches_locked}</h3>
+                                            <p>${jsObject.translations.my_churches_locked_explanation}</p>
                                         </div>
                                         <!-- This needs to change to open the join community wizard instead -->
                                         <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
@@ -197,18 +226,18 @@ export class DashChurches extends DashPage {
                         : html`
                             <ul class="list">
                                 ${
-                                    this.churches.length === 0
+                                    this.orderedChurches.length === 0
                                     ? html`
                                         <li
                                             role="button"
                                             class="list__item bg-brand-light white f-medium"
                                             data-depth=${0}
-                                            @click=${this.addChurch}
+                                            @click=${this.openChurchModal}
                                         >
                                             ${jsObject.translations.add_first_church}
                                         </li>
                                     `
-                                    : repeat(this.churches, (church) => `${church.id}`, this.renderChurch)
+                                    : repeat(this.orderedChurches, (church) => `${church.id}`, this.renderChurch)
                                 }
                             </ul>
 
