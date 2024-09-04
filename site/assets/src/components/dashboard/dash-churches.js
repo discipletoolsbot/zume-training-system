@@ -28,9 +28,13 @@ export class DashChurches extends DashPage {
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+
+        /* Remove old overlays that have been orphaned by moving around the app */
         document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
             element.parentElement.remove()
         })
+
+        mapboxgl.accessToken = jsObject.map_key;
     }
 
     firstUpdated() {
@@ -41,6 +45,41 @@ export class DashChurches extends DashPage {
     }
     updated() {
         jQuery(this.renderRoot).foundation();
+    }
+
+    initialiseMap() {
+
+        let center, zoom
+        if ( this.lng ) {
+            center = [this.lng, this.lat]
+            zoom = 5
+        } else {
+            center = [-20, 30]
+            zoom = 1
+        }
+        this.map = new mapboxgl.Map({
+            container: 'map-edit',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: center,
+            zoom: zoom
+        });
+
+        this.map.on('click', (function (e) {
+            let lng = e.lngLat.lng
+            let lat = e.lngLat.lat
+
+            this.lng = lng
+            this.lat = lat
+
+            if ( this.active_marker ) {
+                this.active_marker.remove()
+            }
+            this.active_marker = new mapboxgl.Marker()
+                .setLngLat(e.lngLat )
+                .addTo(this.map);
+
+            this.locationLabel = ''
+        }).bind(this))
     }
 
     joinCommunity() {
@@ -80,46 +119,22 @@ export class DashChurches extends DashPage {
         this.addChurch()
     }
     addChurch() {
+        /* Get details from modal */
+        /* Post new church up to API */
+        /* Insert church into the churches and reorder */
 
-        const newId = this.churches.length + 1
-        const newChurches = [
-            {
-                id: newId,
-                name: 'This is a new church',
-                location: 'Birmingham, UK',
-                generation: 1,
-            },
-            {
-                id: `${newId}-1`,
-                name: 'Tea Shop 1',
-                location: 'Birmingham, UK',
-                parent: newId,
-                generation: 2,
-            },
-            {
-                id: `${newId}-2`,
-                name: 'Tea Shop 2',
-                location: 'Birmingham, UK',
-                parent: newId,
-                generation: 2,
-            },
-            {
-                id: `${newId}-2-1`,
-                name: 'Tea Shop 2 child',
-                location: 'Birmingham, UK',
-                parent: `${newId}-2`,
-                generation: 3,
-            },
-            {
-                id: `${newId}-3`,
-                name: 'Breakfast Shop',
-                location: 'Birmingham, UK',
-                parent: newId,
-                generation: 2,
-            },
-        ]
-
-        this.churches = [...this.churches, ...newChurches]
+        /*
+                        location_grid_meta: {
+                    values: [
+                        {
+                            lng: lng,
+                            lat: lat,
+                            source: 'user'
+                        }
+                    ],
+                    force_values: window.force_values
+                }
+        */
 
         this.closeChurchModal()
     }
@@ -136,6 +151,8 @@ export class DashChurches extends DashPage {
         }
         const modal = document.querySelector('#new-church-form')
         jQuery(modal).foundation('open')
+
+        this.initialiseMap()
     }
 
     closeChurchModal() {
@@ -266,16 +283,19 @@ export class DashChurches extends DashPage {
                             <input id="church-name" name="church-name" type="text" />
                         </div>
                         <div>
+                            <label for="church-start-date">${jsObject.translations.start_date}</label>
+                            <input id="church-start-date" name="church-start-date" type="date" />
+                        </div>
+                        <div>
                             <label for="number-of-people">${jsObject.translations.number_of_people}</label>
                             <input id="number-of-people" name="number-of-people" type="number" />
                         </div>
                         <div>
                             <label for="church-location">${jsObject.translations.church_location}</label>
-                            <input id="church-location" name="church-location" type="text" />
-                        </div>
-                        <div>
-                            <label for="church-start-date">${jsObject.translations.start_date}</label>
-                            <input id="church-start-date" name="church-start-date" type="date" />
+                            <span id="location-label"></span>
+                            <div id="map-wrapper-edit" style="height: 300px">
+                                <div id='map-edit' style="height: 300px"></div>
+                            </div>
                         </div>
                         <div>
                             <label for="parent-church">${jsObject.translations.parent_church}</label>

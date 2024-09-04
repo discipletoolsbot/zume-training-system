@@ -70,11 +70,17 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         $allowed_js[] = 'zume_forms';
         $allowed_js[] = 'zume-profile-utilities';
+        $allowed_js[] = 'jquery-cookie';
+        $allowed_js[] = 'mapbox-cookie';
+        $allowed_js[] = 'mapbox-gl';
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css();
+        $allowed_css = [
+            'mapbox-gl-css',
+        ];
+        return zume_training_magic_url_base_allowed_css( $allowed_css );
     }
 
     public function header_style(){
