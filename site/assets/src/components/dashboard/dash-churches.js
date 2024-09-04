@@ -10,6 +10,7 @@ export class DashChurches extends DashPage {
         return {
             showTeaser: { type: Boolean },
             orderedChurches: { type: Array, attribute: false },
+            locationLabel: { type: String, attribute: false },
         };
     }
 
@@ -21,6 +22,8 @@ export class DashChurches extends DashPage {
         this.churches = [...jsObject.churches ?? []]
         this.orderedChurches = []
         this.orderChurches()
+
+        this.locationLabel = ''
 
         this.sortedChurches = [...jsObject.churches ?? []]
         this.sortedChurches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
@@ -76,6 +79,59 @@ export class DashChurches extends DashPage {
             }
             this.active_marker = new mapboxgl.Marker()
                 .setLngLat(e.lngLat )
+                .addTo(this.map);
+
+            this.locationLabel = ''
+        }).bind(this))
+
+        const geocoder = new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            types: 'country region district locality neighborhood address place',
+            mapboxgl: mapboxgl
+        });
+        this.map.addControl(geocoder, 'top-left' );
+        geocoder.on('result', (function(e) { // respond to search
+            console.log(e)
+            if ( this.active_marker ) {
+                this.active_marker.remove()
+            }
+            this.active_marker = new mapboxgl.Marker()
+                .setLngLat(e.result.center)
+                .addTo(this.map);
+            geocoder._removeMarker()
+
+            this.lng = e.result.center[0]
+            this.lat = e.result.center[1]
+            this.level = e.result.place_type[0]
+            this.locationLabel = e.result.place_name
+
+        }).bind(this))
+
+        let userGeocode = new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            marker: {
+                color: 'orange'
+            },
+            trackUserLocation: false,
+            showUserLocation: false
+        })
+        this.map.addControl(userGeocode, 'top-left');
+        userGeocode.on('geolocate', (function (e) { // respond to search
+            console.log(e)
+            if (this.active_marker) {
+                this.active_marker.remove()
+            }
+
+            let lat = e.coords.latitude
+            let lng = e.coords.longitude
+
+            this.lat = lat
+            this.lng = lng
+
+            this.active_marker = new mapboxgl.Marker()
+                .setLngLat([lng, lat])
                 .addTo(this.map);
 
             this.locationLabel = ''
@@ -292,7 +348,7 @@ export class DashChurches extends DashPage {
                         </div>
                         <div>
                             <label for="church-location">${jsObject.translations.church_location}</label>
-                            <span id="location-label"></span>
+                            <span id="location-label">${this.locationLabel}</span>
                             <div id="map-wrapper-edit" style="height: 300px">
                                 <div id='map-edit' style="height: 300px"></div>
                             </div>

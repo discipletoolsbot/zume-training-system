@@ -85,6 +85,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
 
     public function header_style(){
         global $zume_languages_by_code, $three_month_plan_questions;
+
+        DT_Mapbox_API::geocoder_scripts();
         ?>
         <?php //phpcs:ignore ?>
         <script src="<?php echo trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js?version=' . filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ) ?>"></script>
