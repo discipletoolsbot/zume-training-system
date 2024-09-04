@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-02 15:37+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-09-03 12:44+0000\n"
+"Last-Translator: Charlie Ritchie <ritchiecharlie@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/vi/>\n"
 "Language: vi\n"
@@ -5071,7 +5070,7 @@ msgstr "Tôi sẽ mời những người sau tham gia Cầu nguyện Tuần hàn
 
 #: site/dashboard/dashboard.php:317
 msgid "I will Prayer Walk once every [days / weeks / months]."
-msgstr "Tôi sẽ Cầu nguyện Tuần hành một lần mỗi [… Ngày/… tuần/… tháng]"
+msgstr "Tôi sẽ Cầu nguyện Tuần hành một lần mỗi [… Ngày/… tuần/… tháng]."
 
 #: site/dashboard/dashboard.php:318
 msgid ""
@@ -6087,7 +6086,7 @@ msgstr "Những điều cần thiết:"
 
 #: site/pages/about.php:226 site/pages/training.php:258
 msgid "At least 3 people, but ideally less than 12."
-msgstr "Ít nhất 3 người, nhưng không quá 12 người"
+msgstr "Ít nhất 3 người, nhưng không quá 12 người."
 
 #: site/pages/about.php:227 site/pages/training.php:259
 msgid ""
@@ -7370,7 +7369,7 @@ msgstr "Để đặt lại mật khẩu, mở địa chỉ sau:"
 #: zume-training-system.php:261
 #, php-format
 msgid "[%s] Password Reset"
-msgstr "[%s]  Đặt lại mật khẩu"
+msgstr "[%s] Đặt lại mật khẩu"
 
 #: zume-training-system.php:289
 msgid "Profile Details"
