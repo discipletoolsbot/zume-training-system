@@ -85,6 +85,8 @@ function pieces_content( $postid, $lang, $strings ) {
     $audio = $args['audio'];
     $has_video = $args['has_video'];
     $video_id = $args['video_id'];
+    $script_id = Zume_Course::get_transcript_by_key( $video_id );
+    $script_url = site_url( $lang . '/app/script?s=' . $script_id );
 
     ?>
 
@@ -106,11 +108,6 @@ function pieces_content( $postid, $lang, $strings ) {
             <div class="stack-1">
                 <?php if ( $audio ) :  ?>
                     <h3 class="center"><?php echo esc_html( $strings['lra'] ) ?? '' ?></h3>
-                    <a class="btn large text-center"
-                       href="<?php echo esc_url( Zume_Course::get_download_by_key( '33' ) ) ?>"
-                       target="_blank" rel="noopener noreferrer nofollow">
-                        <?php echo esc_html( $strings['d'] ) ?? '' ?>
-                    </a>
                 <?php else : ?>
                     <h3 class="center"><?php echo esc_html( $strings['wtv'] ) ?? '' ?></h3>
                 <?php endif; ?>
@@ -127,6 +124,11 @@ function pieces_content( $postid, $lang, $strings ) {
                         </iframe>
                     </div>
                 <?php endif; ?>
+                    <button class="btn large fit-content mx-auto" data-toggle="transcript-offcanvas">
+                        <?php echo esc_html( $strings['vt'] ) ?? 'View Transcript' ?>
+                    </button>
+
+
             </div>
         <?php endif; ?>
 
@@ -139,7 +141,29 @@ function pieces_content( $postid, $lang, $strings ) {
             <?php echo wp_kses_post( wpautop( $ask_content ) ) ?>
         </div>
     </div>
-
+    <div
+        class="bg-white | information-flyout bypass-nav-click off-canvas position-right z-20"
+        id="transcript-offcanvas"
+        data-off-canvas
+        data-transition="overlap"
+    >
+        <div class="ms-auto absolute right top">
+            <button class="close-btn | my--2 mx-1 f-0" aria-label="<?php esc_attr( __( 'Close', 'zume' ) ) ?>" type="button" data-close>
+                <span class="icon z-icon-close"></span>
+            </button>
+        </div>
+        <div class="cover-page" id="transcript-loading-spinner">
+            <div class="center"><span class="loading-spinner active"></span></div>
+        </div>
+        <iframe
+            id='iframe'
+            src="<?php echo esc_url( $script_url ) ?>"
+            frameborder="0"
+            width="100%"
+            onload="document.querySelector('#transcript-loading-spinner').remove()"
+        >
+        </iframe>
+    </div>
     <?php
 }
 

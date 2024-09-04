@@ -7,13 +7,15 @@ import { Wizards } from '../wizard/wizard-constants';
 export class DashTrainingsList extends LitElement {
     static get properties() {
         return {
-            trainingGroups: { type: Object, attribute: false },
+            activeTrainingGroups: { type: Object, attribute: false },
+            inactiveTrainingGroups: { type: Object, attribute: false },
         };
     }
 
     constructor() {
         super()
-        this.trainingGroups = jsObject.training_groups
+        this.activeTrainingGroups = jsObject.active_training_groups
+        this.inactiveTrainingGroups = jsObject.inactive_training_groups
         this.routeName = RouteNames.myTrainings
         this.route = DashBoard.getRoute(this.routeName)
     }
@@ -51,14 +53,33 @@ export class DashTrainingsList extends LitElement {
                 <dash-header-right></dash-header-right>
                 <div class="dashboard__main p-1">
                     <div class="stack">
+                        <h2 class="h4">${jsObject.translations.active}</h2>
                         ${
-                            repeat(Object.entries(this.trainingGroups), ([key]) => key, ([key, group]) => html`
-                                <training-link
-                                    as="nav"
-                                    text=${group.title}
-                                    href=${this.makeTrainingHref(group.join_key)}
-                                ></training-link>
-                            `)
+                            repeat(
+                                this.activeTrainingGroups,
+                                ({ key }) => key,
+                                (group) => html`
+                                    <training-link
+                                        as="nav"
+                                        text=${group.title}
+                                        href=${this.makeTrainingHref(group.join_key)}
+                                    ></training-link>
+                                `
+                            )
+                        }
+                        <h2 class="h4">${jsObject.translations.inactive}</h2>
+                        ${
+                            repeat(
+                                this.inactiveTrainingGroups,
+                                ({ key }) => key,
+                                (group) => html`
+                                    <training-link
+                                        as="nav"
+                                        text=${group.title}
+                                        href=${this.makeTrainingHref(group.join_key)}
+                                    ></training-link>
+                                `
+                            )
                         }
                     </div>
                     </div>

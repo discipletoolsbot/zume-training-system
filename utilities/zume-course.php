@@ -103,6 +103,71 @@ class Zume_Course {
         return $current_mirror . $current_lang . '/' . $video_id;
     }
 
+    public static function get_transcript_by_key( $meta_key ) {
+        switch ( $meta_key ) {
+            case '1':
+                return 34;
+            case '2':
+                return 35;
+            case '3':
+                return 36;
+            case '4':
+                return 37;
+            case '5':
+                return 38;
+            case '6':
+                return 39;
+            case '7':
+                return 40;
+            case '8':
+                return 41;
+            case '9':
+                return 42;
+            case '10':
+                return 43;
+            case '11':
+                return 44;
+            case '12':
+                return 45;
+            case '13':
+                return 46;
+            case '14':
+                return 47;
+            case '15':
+                return 48;
+            case '16':
+                return 49;
+            case '17':
+                return 50;
+            case '18':
+                return 51;
+            case '19':
+                return 52;
+            case '21':
+                return 53;
+            case '22':
+                return 54;
+            case '23':
+                return 55;
+            case '24':
+                return 56;
+            case '25':
+                return 57;
+            case '26':
+                return 58;
+            case '27':
+                return 59;
+            case '28':
+                return 60;
+            case '29':
+                return 61;
+            case '30':
+                return 62;
+            default:
+                return -1;
+        }
+    }
+
     public static function get_page_by_title( $page_title, $output = OBJECT, $post_type = 'page' ) {
         global $wpdb, $table_prefix;
 

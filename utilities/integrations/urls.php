@@ -237,3 +237,11 @@ function zume_download_url( $meta_key, $current_language = false ) {
 
     return zume_mirror_url() . $current_language . '/' . $file_name;
 }
+
+function zume_coaching_url( $path = '' ) {
+    $coaching = 'coaching';
+    if ( !empty( $path ) ) {
+        $coaching .= "/$path";
+    }
+    return site_url( $coaching );
+}

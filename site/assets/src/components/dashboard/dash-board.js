@@ -82,6 +82,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.userProfile = jsObject.profile
         this.userState = jsObject?.user_stage?.state ?? {}
         this.trainingGroups = jsObject.training_groups
+        this.updateSortedTrainingGroups()
         this.wizardType = ''
         this.celebrationModalContent = {
             title: '',
@@ -106,6 +107,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.redirectToPage = this.redirectToPage.bind(this)
         this.showCelebrationModal = this.showCelebrationModal.bind(this)
         this.updateTrainingGroups = this.updateTrainingGroups.bind(this)
+        this.renderTrainingGroupLink = this.renderTrainingGroupLink.bind(this)
     }
 
     connectedCallback() {
@@ -148,10 +150,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         window.removeEventListener('user-state:change', this.refetchState)
         window.removeEventListener('user-state:change', this.getCtas)
         window.removeEventListener('user-host:change', this.refetchHost)
-        window.removeEventListener(
-            'training:changed',
-            this.updateTrainingGroups
-        )
+        window.removeEventListener('training:changed', this.updateTrainingGroups)
 
         window.removeEventListener('load', this.showCelebrationModal)
         window.removeEventListener('ctas:changed', this.showCelebrationModal)
@@ -668,7 +667,21 @@ export class DashBoard extends navigator(router(LitElement)) {
     updateTrainingGroups() {
         zumeRequest.get('plans').then((results) => {
             this.trainingGroups = results
+            this.updateSortedTrainingGroups()
         })
+    }
+    updateSortedTrainingGroups() {
+        this.sortedTrainingGroups = Object.entries(this.trainingGroups)
+            .map(([key, group]) => ({
+                ...group,
+                trainingGroupId: key,
+            }))
+        this.sortedTrainingGroups.sort((a, b) => b.timestamp - a.timestamp )
+        this.activeTrainingGroups = this.sortedTrainingGroups.filter(({status}) => status === 'active')
+        this.inactiveTrainingGroups = this.sortedTrainingGroups.filter(({status}) => status === 'inactive')
+
+        jsObject.active_training_groups = this.activeTrainingGroups
+        jsObject.inactive_training_groups = this.inactiveTrainingGroups
     }
 
     isParentSectionActive(parentRoute) {
@@ -693,6 +706,22 @@ export class DashBoard extends navigator(router(LitElement)) {
     }
     isTrainingRouteActive(key) {
         return key === this.params.code
+    }
+
+    renderTrainingGroupLink(group) {
+        return html`
+            <li>
+                <nav-link
+                    class="menu-btn"
+                    ?active=${this.isTrainingRouteActive(group.join_key)}
+                    as="nav"
+                    text=${group.title}
+                    href=${this.makeTrainingHref(
+                        group.join_key
+                    )}
+                ></nav-link>
+            </li>
+        `
     }
 
     render() {
@@ -864,28 +893,17 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         id="training-groups-menu"
                                                         class="menu vertical nested"
                                                     >
+                                                        <li>${jsObject.translations.active}</li>
                                                         ${repeat(
-                                                            Object.entries(
-                                                                this
-                                                                    .trainingGroups
-                                                            ),
-                                                            ([key]) => key,
-                                                            ([
-                                                                key,
-                                                                group,
-                                                            ]) => html`
-                                                                <li>
-                                                                    <nav-link
-                                                                        class="menu-btn"
-                                                                        ?active=${this.isTrainingRouteActive(group.join_key)}
-                                                                        as="nav"
-                                                                        text=${group.title}
-                                                                        href=${this.makeTrainingHref(
-                                                                            group.join_key
-                                                                        )}
-                                                                    ></nav-link>
-                                                                </li>
-                                                            `
+                                                            this.activeTrainingGroups,
+                                                            (group) => group.trainingGroupId,
+                                                            this.renderTrainingGroupLink,
+                                                        )}
+                                                        <li>${jsObject.translations.inactive}</li>
+                                                        ${repeat(
+                                                            this.inactiveTrainingGroups,
+                                                            (group) => group.trainingGroupId,
+                                                            this.renderTrainingGroupLink,
                                                         )}
                                                     </ul>
                                                 </li>

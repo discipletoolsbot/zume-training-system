@@ -7,6 +7,7 @@ import { RouteNames } from './routes';
 import { zumeRequest } from '../../js/zumeRequest';
 import { DateTime } from 'luxon';
 import { zumeAttachObservers, zumeDetachObservers } from '../../js/zumeAttachObservers';
+import { encodeJSON } from '../../js/Base64';
 
 export class DashTrainings extends DashPage {
     static get properties() {
@@ -323,8 +324,8 @@ export class DashTrainings extends DashPage {
 
     editSessionDetails(event) {
         event.stopImmediatePropagation()
-        document.querySelector('#location-note').value = this.training.location_note
-        document.querySelector('#time-of-day-note').value = this.training.time_of_day_note
+        document.querySelector('#location-note').value = this.training.location_note || ''
+        document.querySelector('#time-of-day-note').value = this.training.time_of_day_note || ''
 
         if (this.isCoach()) {
             document.querySelector('#language-note').value = this.training.language_note || ''
@@ -335,6 +336,11 @@ export class DashTrainings extends DashPage {
                 document.querySelector('#edit-session-details-modal #public[type="radio"]').checked = true
             } else {
                 document.querySelector('#edit-session-details-modal #private[type="radio"]').checked = true
+            }
+            if (this.isActive()) {
+                document.querySelector('#edit-session-details-modal #active[type="radio"]').checked = true
+            } else {
+                document.querySelector('#edit-session-details-modal #inactive[type="radio"]').checked = true
             }
         }
 
@@ -357,16 +363,18 @@ export class DashTrainings extends DashPage {
         const locationNote = document.querySelector('#location-note').value
         const timeNote = document.querySelector('#time-of-day-note').value
         const zoomLinkNote = document.querySelector('#zoom-link-note').value
+        const status = document.querySelector('#edit-session-details-modal #active').checked ? 'active' : 'inactive'
 
         const trainingUpdate = {
             location_note: locationNote,
             time_of_day_note: timeNote,
             zoom_link_note: zoomLinkNote,
+            status,
         }
+
         let languageNote
         let timezoneNote
         let visibility
-
         if (this.isCoach()) {
             languageNote = document.querySelector('#language-note').value
             timezoneNote = document.querySelector('#timezone-note').value
@@ -379,21 +387,29 @@ export class DashTrainings extends DashPage {
 
         zumeRequest.put(`plan/${this.training.join_key}`, trainingUpdate)
             .then((result) => {
-                this.training.location_note = locationNote
-                this.training.time_of_day_note = timeNote
-                this.training.zoom_link_note = zoomLinkNote
+                const newTraining = {
+                    ...this.training
+                }
+                newTraining.location_note = locationNote
+                newTraining.time_of_day_note = timeNote
+                newTraining.zoom_link_note = zoomLinkNote
+                newTraining.status = {
+                    key: status
+                }
 
                 if (this.isCoach()) {
-                    this.training.language_note = languageNote
-                    this.training.timezone_note = timezoneNote
-                    this.training.visibility = {
+                    newTraining.language_note = languageNote
+                    newTraining.timezone_note = timezoneNote
+                    newTraining.visibility = {
                         key: visibility
                     }
                 }
+                this.training = newTraining
             })
             .finally(() => {
                 this.isSavingSession = false
                 this.closeEditSessionDetailsModal()
+                this.dispatchEvent(new CustomEvent('training:changed', { bubbles: true }))
             })
 
     }
@@ -445,11 +461,15 @@ export class DashTrainings extends DashPage {
     isCoach() {
         return jsObject.is_coach
     }
-    hasMultipleTrainingGroups() {
+    canEditTitle() {
         return jsObject.training_groups && Object.keys(jsObject.training_groups).length > 1
     }
     isPublic() {
         return this.training.visibility.key === 'public'
+    }
+    isActive() {
+        console.log(this.training.status)
+        return this.training.status.key === 'active'
     }
 
     toggleDetails(id) {
@@ -513,6 +533,35 @@ export class DashTrainings extends DashPage {
 
         const href = this.getSessionUrl(sessionId) + '&slide=' + item.slide_key
         return href
+    }
+    makeGroupMembersHref() {
+        const query = {
+            fields: [
+                {
+                    connected_plans: [
+                        this.training.join_key,
+                    ],
+                }
+            ],
+        }
+        const encodedQuery = encodeJSON(query)
+
+        const labels = [
+            {
+                field: 'connected_plans',
+                id: this.training.join_key,
+                name: `Connected Plans: ${this.training.join_key}`
+            }
+        ]
+        const encodedLabels = encodeJSON(labels)
+
+        const url = new URL(jsObject.urls.coaching_contact_list)
+
+        url.searchParams.set('query', encodedQuery)
+        url.searchParams.set('labels', encodedLabels)
+        url.searchParams.set('filter_name', 'Custom Filter')
+
+        return url.href
     }
 
     renderListItem(session) {
@@ -636,7 +685,7 @@ export class DashTrainings extends DashPage {
                         <dash-sidebar-toggle></dash-sidebar-toggle>
                         <span class="icon ${this.route.icon}"></span>
                         ${
-                            this.hasMultipleTrainingGroups() ? html`
+                            this.canEditTitle() ? html`
                                     ${
                                         this.isEditingTitle ? html`
                                             <div class="switcher switcher-width-20 gap--5">
@@ -673,13 +722,17 @@ export class DashTrainings extends DashPage {
                                         ` : html`
                                             <div class="d-flex align-items-center s--3">
                                                 <h1 class="h3">${this.training?.title ?? ''}</h1>
-                                                <button
-                                                    class="icon-btn f-0 brand-light"
-                                                    aria-label=${jsObject.translations.edit}
-                                                    @click=${this.editTitle}
-                                                >
-                                                    <span class="icon z-icon-pencil"></span>
-                                                </button>
+                                                ${
+                                                    this.isGroupLeader() ? html`
+                                                        <button
+                                                            class="icon-btn f-0 brand-light"
+                                                            aria-label=${jsObject.translations.edit}
+                                                            @click=${this.editTitle}
+                                                        >
+                                                            <span class="icon z-icon-pencil"></span>
+                                                        </button>
+                                                    ` : ''
+                                                }
                                                 ${this.renderFilterButton()}
                                             </div>
                                         `
@@ -797,6 +850,11 @@ export class DashTrainings extends DashPage {
                                             : ''
                                         }
                                     </div>
+                                    ${
+                                        this.isCoach() ? html`
+                                            <a href=${this.makeGroupMembersHref()} target="_blank">${jsObject.translations.group_members_link}</a>
+                                        ` : ''
+                                    }
                                     <button
                                         @click=${this.inviteFriends}
                                         class="btn brand tight mt--2"
@@ -839,6 +897,11 @@ export class DashTrainings extends DashPage {
                                             ${
                                                 this.isPublic() ? html`
                                                     <p class="text-left"><span class="f-medium">${jsObject.translations.public_group}</span></p>
+                                                ` : ''
+                                            }
+                                            ${
+                                                this.isGroupLeader() ? html`
+                                                    <p class="text-left"><span class="f-medium">${jsObject.translations.status}:</span> ${this.isActive() ? jsObject.translations.active : jsObject.translations.inactive}</p>
                                                 ` : ''
                                             }
                                             ${
@@ -932,18 +995,34 @@ export class DashTrainings extends DashPage {
                     </div>
                     ${
                         this.isCoach() ? html`
-                            <div class="cluster">
-                                <label class="form-control label-input">
-                                    <input name="visibility" type="radio" id="public">
-                                    ${jsObject.translations.public_group}
-                                </label>
-                                <label class="form-control label-input">
-                                    <input name="visibility" type="radio" id="private">
-                                    ${jsObject.translations.private_group}
-                                </label>
+                            <div>
+                                <label>${jsObject.translations.visibility}</label>
+                                <div class="cluster">
+                                    <label class="form-control label-input">
+                                        <input name="visibility" type="radio" id="public">
+                                        ${jsObject.translations.public_group}
+                                    </label>
+                                    <label class="form-control label-input">
+                                        <input name="visibility" type="radio" id="private">
+                                        ${jsObject.translations.private_group}
+                                    </label>
+                                </div>
                             </div>
                         ` : ''
                     }
+                    <div>
+                        <label>${jsObject.translations.status}</label>
+                        <div class="cluster">
+                            <label class="form-control label-input">
+                                <input name="status" type="radio" id="active">
+                                ${jsObject.translations.active}
+                            </label>
+                            <label class="form-control label-input">
+                                <input name="status" type="radio" id="inactive">
+                                ${jsObject.translations.inactive}
+                            </label>
+                        </div>
+                    </div>
                     <div class="d-flex align-items-center justify-content-center gap--1">
                         <button
                             class="btn outline tight"
