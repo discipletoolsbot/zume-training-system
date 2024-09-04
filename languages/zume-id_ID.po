@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-29 17:34+0000\n"
+"PO-Revision-Date: 2024-09-02 15:37+0000\n"
 "Last-Translator: Buleleng Team <bulelengteam@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/id_ID/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -72,7 +72,7 @@ msgstr "10 Sesi Kursus"
 #: utilities/integrations/replace-placeholder.php:115
 #: utilities/integrations/replace-placeholder.php:116
 msgid "20 Session Course"
-msgstr "20 sesi Kursus"
+msgstr "20 Sesi Kursus"
 
 #: 404.php:86 site/parts/footer.php:31
 msgid "3 Day Intensive Course"
@@ -101,7 +101,7 @@ msgstr "FAQs (Pertanyaan yang sering ditanyakan)"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
-msgstr "Zume saya"
+msgstr "Zúme Saya"
 
 #: appearance/style-override/navigation.php:117
 msgid "Contacts"
@@ -168,7 +168,7 @@ msgstr ""
 #: globals.php:2099 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
-msgstr "Murid-murid dan Gereja"
+msgstr "Murid-murid dan Jemaah Allah"
 
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
@@ -182,7 +182,7 @@ msgstr "Menjadi serorang murid berarti kita mendengar dan menaati Allah."
 #: globals.php:2111 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr "Mendengar dan Mentaati Allah"
+msgstr "Mendengar dan Menaati Allah"
 
 #: globals.php:2121 globals.php:2123
 msgid "S.O.A.P.S. Bible Study"
@@ -558,7 +558,7 @@ msgstr "Selalu menjadi Bagian dari Dua Jemaah"
 
 #: globals.php:2386
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Pelajari bagaimana menaati perintah Isa dengan pergi DAN tinggal."
+msgstr "Pelajari bagaimana menaati perintah Isa tentang pergi DAN tinggal."
 
 #: globals.php:2398 globals.php:2400 site/course/course-content.php:2900
 #: site/course/course-content.php:3004 site/course/course-content.php:3010
@@ -903,16 +903,15 @@ msgstr "Tujuan yang Tercapai"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr "Gereja-gereja Dibutuhkan"
+msgstr "Jemaah Allah Dibutuhkan"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr "Jemaah Rumah Tangga Dilaporkan"
+msgstr "Jemaah Allah Dilaporkan"
 
 #: maps/js-translation-strings.php:10
-#, fuzzy
 msgid "Trainees Needed"
-msgstr "Terlatih"
+msgstr "Dibutuhkan Peserta Pelatihan"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
@@ -920,7 +919,7 @@ msgstr "Peserta Pelatihan Dilaporkan"
 
 #: maps/js-translation-strings.php:13
 msgid "Activities Reported"
-msgstr "Aktivitas yang Dilaporkan"
+msgstr "Aktivitas Dilaporkan"
 
 #: maps/js-translation-strings.php:14
 msgid "Practitioners Needed"
@@ -1233,7 +1232,7 @@ msgstr "Pertemuan Kelompok 3/3"
 #: site/course/course-content.php:2774 site/course/course-content.php:5416
 #: site/course/course-content.php:5446
 msgid "Four Fields"
-msgstr "Empat Lahan"
+msgstr "Empat Bidang"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
@@ -1361,7 +1360,7 @@ msgstr "Tanyakan diri Anda sendiri, apa yang murid saya butuhkan"
 #: site/activities/coaching-checklist.php:157
 #: site/activities/coaching-checklist.php:286
 msgid "Model"
-msgstr "Model"
+msgstr "Mencontohkan"
 
 #: site/activities/coaching-checklist-mawl.php:132
 #: site/activities/coaching-checklist-mawl.php:171
@@ -1370,7 +1369,7 @@ msgstr "Model"
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Assist"
-msgstr "Bimbingan"
+msgstr "Membantu"
 
 #: site/activities/coaching-checklist-mawl.php:135
 #: site/activities/coaching-checklist-mawl.php:175
@@ -1380,7 +1379,7 @@ msgstr "Bimbingan"
 #: site/activities/coaching-checklist.php:292
 #: site/course/course-content.php:1813 site/course/course-content.php:4739
 msgid "Watch"
-msgstr "Menonton"
+msgstr "Mengawasi"
 
 #: site/activities/coaching-checklist-mawl.php:138
 #: site/activities/coaching-checklist-mawl.php:179
@@ -1389,7 +1388,7 @@ msgstr "Menonton"
 #: site/activities/coaching-checklist.php:166
 #: site/activities/coaching-checklist.php:295
 msgid "Leave"
-msgstr "Tinggalkan"
+msgstr "Melepaskan"
 
 #: site/activities/coaching-checklist-mawl.php:169
 #: site/activities/coaching-checklist-two.php:208
@@ -1401,10 +1400,10 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"Pemodelan hanya sekedar memberikan contoh praktik atau alat. Ini adalah "
+"Pencontohan hanya sekedar memberikan contoh praktik atau alat. Ini adalah "
 "bagian tersingkat dari siklus pelatihan. Biasanya hanya perlu dilakukan satu "
 "kali. Ini hanya menciptakan kesadaran bahwa praktik atau alat itu ada dan "
-"memberikan gambaran umum seperti apa bentuknya. Pemodelan yang dilakukan "
+"memberikan gambaran umum seperti apa bentuknya. Pencontohan yang dilakukan "
 "berulang kali bukanlah cara yang efektif untuk memperlengkapi seseorang."
 
 #: site/activities/coaching-checklist-mawl.php:173
@@ -1438,7 +1437,7 @@ msgid ""
 "learner progresses in skill, the contact with the mentor may become less "
 "regular and more ad hoc."
 msgstr ""
-"Mengamati merupakan fase terpanjang. Fase ini melibatkan lebih banyak kontak "
+"Mengawasi merupakan fase terpanjang. Fase ini melibatkan lebih banyak kontak "
 "tidak langsung dengan peserta pelatihan. Fase ini bertujuan untuk "
 "mengembangkan kompetensi penuh dalam semua aspek keterampilan. Fase ini "
 "mungkin sepuluh kali atau lebih lama dari gabungan dua fase pertama. Seiring "
@@ -1596,17 +1595,17 @@ msgstr ""
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Disciple"
-msgstr ""
+msgstr "Murid"
 
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Unbeliever"
-msgstr ""
+msgstr "Orang yang tidak percaya"
 
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Unknown"
-msgstr ""
+msgstr "Tidak diketahui"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
@@ -1617,21 +1616,23 @@ msgstr "Rencana Tiga-Bulanan"
 #: site/activities/three-month-plan-printable.php:47
 #: site/activities/three-month-plan.php:68 site/dashboard/dashboard.php:215
 msgid "3-Month Plan"
-msgstr ""
+msgstr "Rencana 3 Bulan"
 
 #: site/activities/three-month-plan.php:69
 msgid "Switch to Printable Version"
-msgstr ""
+msgstr "Beralih ke Versi yang Dapat Dicetak"
 
 #: site/activities/three-month-plan.php:82
 msgid "Scripts are off"
-msgstr ""
+msgstr "Naskahnya tidak sesuai"
 
 #: site/activities/three-month-plan.php:83
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
+"Harap aktifkan naskah untuk menggunakan halaman interaktif ini. Jika tidak, "
+"Anda dapat menggunakan versi cetak menggunakan tautan di atas."
 
 #: site/activities/three-month-plan.php:94 site/dashboard/dashboard.php:188
 #: site/dashboard/wizard.php:307 site/profile/profile.php:148
@@ -1644,15 +1645,15 @@ msgstr "Batal"
 
 #: site/activities/three-month-plan.php:96 site/dashboard/dashboard.php:299
 msgid "Question"
-msgstr ""
+msgstr "Pertanyaan"
 
 #: site/activities/three-month-plan.php:97 site/dashboard/dashboard.php:300
 msgid "Answer"
-msgstr ""
+msgstr "Jawaban"
 
 #: site/activities/three-month-plan.php:98 site/dashboard/dashboard.php:301
 msgid "Note"
-msgstr ""
+msgstr "Catatan"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:13
 #: site/course/course-content.php:857
@@ -1673,6 +1674,10 @@ msgid ""
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
 msgstr ""
+"Tidak ada satu \"cara terbaik\" untuk menceritakan kisah Allah (juga disebut "
+"Injil), karena cara terbaik bergantung kepada siapa Anda sedang berbagi. "
+"Setiap murid hendaknya belajar menceritakan Kisah Allah dengan cara yang "
+"sesuai dengan kitab suci serta terhubung dengan orang yang di Injili."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
@@ -1704,6 +1709,8 @@ msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
 msgstr ""
+"Apa yang terlintas di pikiran Anda ketika mendengar perintah Allah untuk "
+"menjadi “saksi” Nya dan menceritakan kisah-Nya?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:874
@@ -1822,22 +1829,24 @@ msgid ""
 "Assess Yourself - Evaluate yourself and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Bantu Diri Anda - Evaluasi diri sendiri dan tandai kolom yang sesuai pada "
+"Daftar Periksa Pembimbingan."
 
 #: site/course/course-builder.php:403
 msgid "(1 min)"
-msgstr ""
+msgstr "(1 menit)"
 
 #: site/course/course-builder.php:406
 msgid "(15 min)"
-msgstr ""
+msgstr "(15 menit)"
 
 #: site/course/course-builder.php:407
 msgid "(20 min)"
-msgstr ""
+msgstr "(20 menit)"
 
 #: site/course/course-builder.php:408
 msgid "(25 min)"
-msgstr ""
+msgstr "(25 menit)"
 
 #: site/course/course-builder.php:409
 msgid "(30 min)"
@@ -1845,47 +1854,47 @@ msgstr "(30 menit)"
 
 #: site/course/course-builder.php:410
 msgid "(35 min)"
-msgstr ""
+msgstr "(35 menit)"
 
 #: site/course/course-builder.php:411
 msgid "(40 min)"
-msgstr ""
+msgstr "(40 menit)"
 
 #: site/course/course-builder.php:412
 msgid "(45 min)"
-msgstr ""
+msgstr "(45 menit)"
 
 #: site/course/course-builder.php:413
 msgid "(50 min)"
-msgstr ""
+msgstr "(50 menit)"
 
 #: site/course/course-builder.php:414
 msgid "(55 min)"
-msgstr ""
+msgstr "(55 menit)"
 
 #: site/course/course-builder.php:415
 msgid "(60 min)"
-msgstr ""
+msgstr "(60 menit)"
 
 #: site/course/course-builder.php:416
 msgid "(65 min)"
-msgstr ""
+msgstr "(65 menit)"
 
 #: site/course/course-builder.php:417
 msgid "(70 min)"
-msgstr ""
+msgstr "(70 menit)"
 
 #: site/course/course-builder.php:418
 msgid "(75 min)"
-msgstr ""
+msgstr "(75 menit)"
 
 #: site/course/course-builder.php:419
 msgid "(80 min)"
-msgstr ""
+msgstr "(80 menit)"
 
 #: site/course/course-builder.php:420
 msgid "(85 min)"
-msgstr ""
+msgstr "(85 menit)"
 
 #: site/course/course-builder.php:421
 msgid "(90 min)"
@@ -2061,7 +2070,7 @@ msgstr "Pembacaan Alkitab S.O.A.P.S."
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Tuhan memakai orang biasa yang melakukan hal-hal sederhana untuk membuat "
+"Allah memakai orang biasa yang melakukan hal-hal sederhana untuk membuat "
 "dampak yang besar."
 
 #: site/course/course-content.php:136
@@ -2096,7 +2105,7 @@ msgid ""
 "obeying God is like that, too."
 msgstr ""
 "Pernapasan rohani. Kita menghirup napas. Kita menghembuskan napas. Kita "
-"hidup. Mendengar dan menaati Tuhan juga seperti itu."
+"hidup. Mendengar dan menaati Allah juga demikian."
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
@@ -2280,27 +2289,34 @@ msgid ""
 "believers to begin their own S.O.A.P.S. Bible reading practice daily, and "
 "then do so."
 msgstr ""
+"Minta pada Allah untuk membimbing Anda untuk menantang setidaknya lima orang "
+"yang Anda kenal yang merupakan orang percaya untuk memulai membaca Alkitab "
+"S.O.A.P.S. mereka sendiri setiap hari, dan kemudian melakukannya."
 
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3214 site/course/course-content.php:3219
 msgid "SESSION 2"
-msgstr ""
+msgstr "SESI 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3253
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
+"Tanyakan apakah ada di antara anggota kelompok yang memiliki kebutuhan "
+"khusus yang ingin didoakan oleh kelompoknya."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3254
 msgid ""
 "Thank God that He promises in His Word to listen and act when His people "
 "pray."
 msgstr ""
+"Bersyukurlah kepada Allah karena Dia berjanji dalam Firman-Nya untuk "
+"mendengarkan dan bertindak ketika umat-Nya berdoa."
 
 #: site/course/course-content.php:442
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr ""
+msgstr "Minta Roh Suci Allah untuk memimpin waktu kalian bersama."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -2317,7 +2333,7 @@ msgstr ""
 #: site/course/course-content.php:5263 site/course/course-content.php:5396
 #: site/course/course-content.php:5533 site/course/course-content.php:5659
 msgid "LOOK BACK"
-msgstr ""
+msgstr "MELIHAT KE BELAKANG"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -2334,7 +2350,7 @@ msgstr ""
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
 msgid "Before getting started, take some time to look back."
-msgstr ""
+msgstr "Sebelum memulai, ambil waktu untuk melihat ke belakang."
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -2354,6 +2370,8 @@ msgid ""
 "At the end of the last session, everyone in your group was challenged to "
 "practice what you learned."
 msgstr ""
+"Pada sesi terakhir, setiap orang di kelompok Anda ditantang untuk "
+"mempraktikkan apa yang sudah di pelajari."
 
 #: site/course/course-content.php:457 site/course/course-content.php:781
 #: site/course/course-content.php:1125 site/course/course-content.php:1500
@@ -2380,12 +2398,13 @@ msgstr ""
 #: site/course/course-content.php:2893 site/course/course-content.php:5281
 msgid "In this session, we will hear and discuss this concept:"
 msgstr ""
+"Dalam sesi ini, kita akan mendengar dan mendiskusikan konsep berikut ini:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
 #: site/course/course-content.php:3528 site/course/course-content.php:3548
 msgid "Producer Not Consumer"
-msgstr ""
+msgstr "Produsen Bukan Konsumen"
 
 #: site/course/course-content.php:495
 msgid ""
@@ -2410,14 +2429,16 @@ msgid ""
 "Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
 "you already practice?"
 msgstr ""
+"Dari keempat bidang yang diuraikan di atas (doa, Firman Allah, dll.), yang "
+"mana yang sudah Anda praktikkan?"
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr "Yang mana yang Anda masih merasa tidak yakin?"
+msgstr "Yang mana yang Anda merasa masih tidak yakin?"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
-msgstr "Seberapa siapkah Anda ketika dihadapkan untuk melatih orang lain?"
+msgstr "Seberapa siapkah Anda ketika diminta untuk melatih orang lain?"
 
 #: site/course/course-content.php:547
 msgid ""
@@ -2429,11 +2450,11 @@ msgstr ""
 
 #: site/course/course-content.php:571 site/course/course-content.php:3671
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr ""
+msgstr "Berdoa dengan Siklus Doa selama satu jam sendiri"
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
+msgstr "Pindai kode QR untuk mendapatkan panduan siklus doa di ponsel Anda."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3672
 msgid ""
@@ -2469,16 +2490,22 @@ msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
 msgstr ""
+"Allah telah memberikan kita hubungan yang kita butuhkan untuk \"Pergi dan "
+"membuat murid.\""
 
 #: site/course/course-content.php:614
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
 msgstr ""
+"Mereka adalah keluarga, teman, tetangga, rekan kerja, dan teman sekelas kita "
+"– orang-orang yang sudah kita kenal seumur hidup kita atau mungkin baru saja "
+"kita temui."
 
 #: site/course/course-content.php:615
 msgid "Stewarding the relationships you have is the best place to start."
 msgstr ""
+"Mengelola hubungan yang Anda miliki adalah tempat terbaik untuk memulai."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
@@ -2486,23 +2513,27 @@ msgstr "Buatlah daftar 100 Anda sendiri"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
-msgstr ""
+msgstr "Pindai kode QR atau gunakan selembar kertas."
 
 #: site/course/course-content.php:644
 msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
+"Mintalah setiap orang dalam kelompok Anda untuk mengisi daftar hubungan "
+"mereka selama 30 menit kedepan. Buatlah sebanyak-banyaknya."
 
 #: site/course/course-content.php:645
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
 msgstr ""
+"Lalu tandai pemahaman terbaik Anda tentang hubungan mereka dengan Allah: "
+"murid, orang tidak percaya, atau tidak dikenal."
 
 #: site/course/course-content.php:682
 msgid "Obey"
-msgstr ""
+msgstr "Menaati"
 
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:161
 #: site/pages/_strings-mobile-pwa.php:37 site/pages/share.php:28
@@ -2516,6 +2547,9 @@ msgid ""
 "marked as an \"Unbeliever\" or \"Unknown.\" Ask God to prepare their hearts "
 "to be open to His story."
 msgstr ""
+"Ambil waktu minggu ini berdoa untuk lima orang dari daftar 100 yang Anda "
+"tandai sebagai \"Orang Tidak Percaya\" atau \"Tidak diketahui.\" Minta Allah "
+"untuk mempersiapkan hati mereka untuk terbuka terhadap Kisah Nya."
 
 #: site/course/course-content.php:687 site/course/course-content.php:3568
 msgid ""
@@ -2523,27 +2557,35 @@ msgid ""
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
+"Tanya Allah pada siapa Dia ingin Anda berbagi alat daftar 100 tersebut. "
+"Bagikan nama orang ini dengan kelompok sebelum Anda pergi dan menjangkau "
+"mereka sebelum sesi berikutnya."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6016
 msgid "To saturate the world with multiplying disciples in our generation."
 msgstr ""
+"Untuk memenuhi bumi dengan pengikut yang berlipat ganda pada generasi kita."
 
 #: site/course/course-content.php:699 site/course/course-content.php:6018
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
 msgstr ""
+"Zúme adalah komunitas yang melaksanakan bagi mereka yang ingin melihat "
+"kegerakan pemuridan."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3337 site/course/course-content.php:3342
 msgid "SESSION 3"
-msgstr ""
+msgstr "SESI 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3770
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah atas cara Anda mengalami-Nya di sesi "
+"terakhir dan undanglah Roh Suci untuk memimpin waktu bersama kalian."
 
 #: site/course/course-content.php:819
 msgid ""
@@ -2692,23 +2734,29 @@ msgid ""
 "with God is called your Testimony. It’s powerful, and it’s something no one "
 "can share better than you."
 msgstr ""
+"Sebagai pengikut Isa, kita adalah “saksi” bagi Dia, karena kita “bersaksi” "
+"tentang dampak yang Isa berikan terhadap hidup kita. Kisah tentang hubungan "
+"Anda dengan Allah disebut Kesaksian. Itu berkuasa, dan itu merupakan sesuatu "
+"yang orang lain tidak bisa bagikan selain Anda sendiri."
 
 #: site/course/course-content.php:1189
 msgid "Practice sharing your testimony"
-msgstr ""
+msgstr "Berlatih membagikan kesaksian Anda"
 
 #: site/course/course-content.php:1192
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr ""
+msgstr "Tulislah cerita Anda dan batasi durasinya hanya tiga menit. (10 menit)"
 
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
 msgstr ""
+"Bagi menjadi beberapa kelompok yang beranggotakan dua hingga tiga orang dan "
+"berlatih membagikan. (20 menit)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
-msgstr ""
+msgstr "Berkat yang Besar - Lebih Besar - Terbesar"
 
 #: site/course/course-content.php:1242
 msgid ""
@@ -2747,6 +2795,9 @@ msgid ""
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
 msgstr ""
+"Apa satu area dalam pemuridan (membaca/memahami Kitab Suci, berdoa, berbagi "
+"Kisah Allah, dll) yang Anda ingin pelajari lebih lanjut? Siapakah orang yang "
+"dapat membantu Anda belajar?"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2759,6 +2810,8 @@ msgstr ""
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
 msgstr ""
+"Apakah Anda pernah berhenti untuk berpikir tentang di mana kerajaan Allah… "
+"tidak ada?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -2775,6 +2828,8 @@ msgid ""
 "Who are you more comfortable sharing with -- people you already know or "
 "people you haven’t met, yet?"
 msgstr ""
+"Dengan siapa Anda lebih nyaman untuk berbagi - orang yang Anda kenal atau "
+"orang yang belum pernah Anda temui sebelumnya?"
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
@@ -2784,6 +2839,8 @@ msgstr "Menurut Anda mengapa demikian?"
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr ""
+"Bagaimana Anda bisa berbagi lebih baik dengan orang yang Anda rasa kurang "
+"nyaman?"
 
 #: site/course/course-content.php:1354
 msgid ""
@@ -2797,12 +2854,14 @@ msgstr ""
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
-msgstr ""
+msgstr "Merayakan Perjamuan Allah"
 
 #: site/course/course-content.php:1381
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
 msgstr ""
+"Habiskan 10 menit berikutnya untuk merayakan Perjamuan Allah bersama "
+"kelompok Anda."
 
 #: site/course/course-content.php:1424
 msgid ""
@@ -2810,12 +2869,17 @@ msgid ""
 "it with at least one person from your List of 100 that you marked as "
 "\"Unbeliever\" or \"Unknown.\""
 msgstr ""
+"Ambil waktu minggu ini berlatih Kesaksian 3 Menit Anda, kemudian bagikan "
+"dengan setidaknya satu orang dari Daftar 100 yang Anda tandai sebagai \"orang"
+" tidak percaya\" atau \"tidak diketahui.\""
 
 #: site/course/course-content.php:1425 site/course/course-content.php:4248
 msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
+"Tanya Allah kepada siapa Dia ingin Anda berlatih Alat Kesaksian 3 Menit. "
+"Bagikan nama orang ini dengan kelompok sebelum Anda pergi."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3589 site/course/course-content.php:3594
@@ -2927,7 +2991,7 @@ msgstr ""
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
 msgstr ""
-"Beryukurlah kepada Tuhan karena Dia mengasihi mereka yang terhilang, yang "
+"Beryukurlah kepada Allah karena Dia mengasihi mereka yang terhilang, yang "
 "terakhir dan yang terhina – termasuk kita!"
 
 #: site/course/course-content.php:1662
@@ -2935,11 +2999,13 @@ msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
+"Minta Dia untuk mempersiapkan hati Anda dan hati orang-orang yang akan Anda "
+"temui dalam perjalanan Anda agar terbuka terhadap pekerjaan-Nya."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3731 site/course/course-content.php:3736
 msgid "SESSION 6"
-msgstr ""
+msgstr "SESI 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4566
 msgid ""
@@ -2947,17 +3013,20 @@ msgid ""
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah untuk apa yang Dia lakukan di sesi "
+"sebelumnya, minta Dia untuk membantu ketika Anda mendapati sulit untuk taat, "
+"dan undang Roh Suci-Nya untuk memimpin waktu kalian bersama."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
 msgid "Faithfulness is Better than Knowledge"
-msgstr ""
+msgstr "Kesetiaan Lebih Baik dari Pengetahuan"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3530
 #: site/course/course-content.php:4353 site/course/course-content.php:4598
 #: site/course/course-content.php:5285
 msgid "And we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Dan kami akan menambahkan alat ini ke perangkat kami:"
 
 #: site/course/course-content.php:1775
 msgid ""
@@ -2965,12 +3034,17 @@ msgid ""
 "right things. It’s important what disciples know – but it’s much more "
 "important what they DO with what they know."
 msgstr ""
+"Saat kita membantu melipat gandakan murid, kita perlu memastikan kita "
+"menghasilkan hal yang benar. Sangatlah penting apa yang murid ketahui - tapi "
+"jauh lebih penting apa yang mereka LAKUKAN dengan apa yang mereka ketahui."
 
 #: site/course/course-content.php:1800
 msgid ""
 "Think about God’s commands that you already know. How \"faithful\" are you "
 "in terms of obeying and sharing those things?"
 msgstr ""
+"Pikirkanlah tentang perintah Allah yang Anda sudah ketahui. Seberapa \"setia"
+"\" Anda dalam menaati dan membagikan hal itu?"
 
 #: site/course/course-content.php:1817 site/course/course-content.php:4743
 msgid ""
@@ -2988,6 +3062,10 @@ msgid ""
 "Small Group you’ve been a part of (or have heard about) in the past? If so, "
 "how would those differences impact the group?"
 msgstr ""
+"Apakah Anda melihat adanya perbedaan antara Kelompok 3/3 dan Kelompok Studi "
+"Alkitab atau Kelompok Kecil dimana anda telah menjadi bagian (atau telah "
+"mendengar) di masa lalu? Jika demikian, bagaimana perbedaan tersebut "
+"mempengaruhi kelompok?"
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4758
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
@@ -3000,6 +3078,8 @@ msgid ""
 "Spend time this week obeying, training, and sharing based on the commitments "
 "you’ve made during your 3/3 Group practice."
 msgstr ""
+"Ambil waktu minggu ini menaati, melatih, dan berbagi berdasarkan komitmen "
+"yang telah Anda buat selama latihan Kelompok 3/3."
 
 #: site/course/course-content.php:1880 site/course/course-content.php:4791
 msgid ""
@@ -3014,18 +3094,20 @@ msgstr ""
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3859 site/course/course-content.php:3864
 msgid "SESSION 7"
-msgstr ""
+msgstr "SESI 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4851
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah atas komitmen kelompok untuk setia "
+"mengikut Isa dan undang Roh Suci Allah untuk memimpin waktu Anda bersama."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
 msgid "The Training Cycle"
-msgstr ""
+msgstr "Siklus Pelatihan"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -3061,18 +3143,25 @@ msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
+"MELIHAT KE BELAKANG – Gunakan tantangan Menaati, Berlatih, dan Berbagi pada "
+"sesi terakhir untuk saling memantau. (30 menit)"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
+"MELIHAT KE ATAS - Gunakan Markus 5:1-20 sementara kelompok Anda membaca ayat "
+"dan menjawab pertanyaan 1-4 selama sesi Melihat Ke Atas. (30 menit)"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
+"MELIHAT KE DEPAN - Gunakan pertanyaan 5, 6, dan 7 di bagian Melihat Ke depan "
+"untuk mengembangkan bagaimana cara Anda untuk Menaati, Melatih dan Berbagi. ("
+"30 menit)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -3086,7 +3175,7 @@ msgstr "Apa yang paling menantang? Mengapa?"
 #: site/course/course-content.php:3546 site/course/course-content.php:4614
 #: site/course/course-content.php:5301
 msgid "Concept heard in this session:"
-msgstr ""
+msgstr "Konsep yang didengar dalam sesi ini:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3299
 #: site/course/course-content.php:3420 site/course/course-content.php:3550
@@ -3095,24 +3184,28 @@ msgstr ""
 #: site/course/course-content.php:4618 site/course/course-content.php:4920
 #: site/course/course-content.php:5305 site/course/course-content.php:5567
 msgid "Tool heard in this session:"
-msgstr ""
+msgstr "Alat yang didengarkan dalam sesi ini:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5062
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
+"Pilih satu keterampilan atau konsep yang telah Anda pelajari di Zúme dan "
+"bimbing seseorang untuk melakukannya hingga generasi keempat."
 
 #: site/course/course-content.php:2100
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
 msgstr ""
+"Tantang orang yang Anda bimbing untuk melanjutkan proses ke generasi "
+"tambahan (generasi kelima)."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4004 site/course/course-content.php:4009
 msgid "SESSION 8"
-msgstr ""
+msgstr "SESI 8"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5124
 msgid ""
@@ -3127,7 +3220,7 @@ msgstr ""
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
-msgstr ""
+msgstr "Dan kita akan mempraktikkan alat ini dari perangkat kita:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -3154,20 +3247,24 @@ msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
 msgstr ""
+"MELIHAT KE ATAS - Gunakan Kisah Para Rasul 2:42-47 saat kelompok Anda "
+"membaca ayat dan menjawab pertanyaan 1- 4. (30 menit)"
 
 #: site/course/course-content.php:2258
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
 msgstr ""
+"MELIHAT KE DEPAN- Gunakan pertanyaan 5, 6, dan 7 untuk mengembangkan "
+"bagaimana Anda akan Menaati, Melatih dan Berbagi. (30 menit)"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
-msgstr ""
+msgstr "Konsep dari sesi ini:"
 
 #: site/course/course-content.php:2281
 msgid "Tool from this session:"
-msgstr ""
+msgstr "Alat dari sesi ini:"
 
 #: site/course/course-content.php:2298
 msgid ""
@@ -3175,6 +3272,9 @@ msgid ""
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
+"Pilih beberapa orang dari Daftar 100 Anda yang sudah menjadi orang percaya. "
+"Jelaskan tentang Sel Kepemimpinan kepada mereka dan lihat apakah mereka "
+"tertarik untuk menjadi salah satu bagian."
 
 #: site/course/course-content.php:2299
 msgid ""
@@ -3182,11 +3282,14 @@ msgid ""
 "before your group meets again. Challenge them to then share it with someone "
 "else."
 msgstr ""
+"Berdoa dan tanyakan pada Allah kepada siapa Dia ingin Anda membagikan alat "
+"Sel Kepemimpinan sebelum kelompok Anda bertemu lagi. Tantang mereka untuk "
+"kemudian membagikannya kepada orang lain."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4128 site/course/course-content.php:4133
 msgid "SESSION 9"
-msgstr ""
+msgstr "SESI 9"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5386
 msgid ""
@@ -3195,11 +3298,16 @@ msgid ""
 "always focused on His Father‘s work. Ask the Holy Spirit to lead your time "
 "together and make it the best session yet."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah bahwa jalanNya bukan jalan kita dan "
+"pikiranNya bukan pikiran kita. Minta Dia untuk memberikan masing-masing "
+"anggota kelompok Anda pikiran Isa - selalu berfokus pada pekerjaan BapaNya. "
+"Mintalah Roh Suci untuk memimpin waktu kalian bersama dan membuatnya menjadi "
+"sesi yang terbaik."
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2767
 msgid "Non-Sequential Growth"
-msgstr ""
+msgstr "Pertumbuhan Non-Sekuensial"
 
 #: site/course/course-content.php:2415
 msgid ""
@@ -3207,6 +3315,9 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
+"Ketika orang berpikir tentang murid yang berlipat ganda, mereka sering "
+"menganggapnya sebagai proses selangkah demi selangkah. Masalahnya, itu bukan "
+"merepupakan cara kerja yang terbaik!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -3236,6 +3347,8 @@ msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
 msgstr ""
+"Apakah yang perlu Anda ubah dalam pemikiran Anda, tindakan Anda, atau sikap "
+"Anda agar lebih selaras dengan prioritas Allah dalam hal kecepatan?"
 
 #: site/course/course-content.php:2488
 msgid ""
@@ -3250,6 +3363,9 @@ msgid ""
 "family, to love and give our lives to one another, to celebrate and suffer — "
 "together."
 msgstr ""
+"Isa mengajarkan kita bahwa kita harus tetap dekat — hidup sebagai keluarga "
+"rohani yang kecil, saling mengasihi dan menyerahkan hidup kita kepada satu "
+"sama lain, untuk merayakan dan menderita — bersama."
 
 #: site/course/course-content.php:2507
 msgid ""
@@ -3257,6 +3373,9 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
+"Namun, Isa juga mengajarkan kita untuk meninggalkan rumah dan orang-orang "
+"yang kita kasihi dan bersedia pergi ke mana saja — dan ke mana saja — untuk "
+"berbagi dan memulai keluarga rohani yang baru."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -3264,43 +3383,57 @@ msgid ""
 "gives birth to new ones that grow and multiply, instead of continually "
 "growing a family and splitting it in order to grow?"
 msgstr ""
+"Apa saja manfaat mempertahankan keluarga rohani yang konsisten dalam membuat "
+"keluarga baru yang bertumbuh dan berlipat ganda, daripada terus menerus "
+"mengembangkan keluarga dan membaginya agar bertumbuh?"
 
 #: site/course/course-content.php:2549
 msgid ""
 "The Coaching Checklist is a simple tool you can use to help guide you as you "
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
+"Daftar Periksa Pembimbingan merupakan alat sederhana yang dapat digunakan "
+"untuk membantu memandu Anda saat membantu orang lain melalui berbagai bagian "
+"untuk menjadi murid yang diperlengkapi sepenuhnya."
 
 #: site/course/course-content.php:2576
 msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
+"Evaluasi diri Anda sendiri menggunakan baris 1 dan tandai kolom yang sesuai "
+"pada Daftar Periksa Pembimbingan."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
-msgstr ""
+msgstr "Alat dan konsep mana yang menurut Anda dapat Anda latih dengan baik?"
 
 #: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
-msgstr ""
+msgstr "Alat dan konsep mana yang Anda rasa dapat Anda latih dengan baik?"
 
 #: site/course/course-content.php:2598
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
+"Apakah ada alat atau konsep yang ingin Anda tambahkan atau kurangi dari "
+"daftar periksa? Mengapa?"
 
 #: site/course/course-content.php:2609
 msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
+"INGAT - Pastikan untuk membagikan hasil Daftar Periksa Pembimbingan Anda "
+"dengan mitra pelatihan atau mentor lainnya."
 
 #: site/course/course-content.php:2610
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
+"Jika Anda belum memiliki pelatih atau mentor, pindai kode QR dan minta "
+"sekarang."
 
 #: site/course/course-content.php:2615 site/dashboard/dashboard.php:206
 #: site/dashboard/wizard.php:235 site/pages/about.php:259
@@ -3317,18 +3450,24 @@ msgid ""
 "Four Fields and Generational Mapping are tools designed to serve growing "
 "movement efforts."
 msgstr ""
+"Empat Bidang dan Peta Silsilah adalah alat yang dirancang untuk melayani "
+"upaya kegerakan yang sedang berkembang."
 
 #: site/course/course-content.php:2626
 msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
+"PENGINGAT: Para pelatih Zúme bersedia untuk membantu Anda menerapkan alat "
+"ini di area lokal Anda."
 
 #: site/course/course-content.php:2641
 msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
+"Seringkali Yesus menarik para pengikutnya dari pelayanan ke tempat yang "
+"lebih tenang untuk meninjau bagaimana pelayanan belakangan ini."
 
 #: site/course/course-content.php:2642
 msgid ""
@@ -3336,74 +3475,94 @@ msgid ""
 "Kingdom activity around them. It especially helps leaders balance efforts, "
 "so that no field is overlooked."
 msgstr ""
+"Empat Bidang dipakai oleh sel kepemimpinan untuk merenungkan upaya terkini "
+"dan kegiatan Kerajaan Allah di sekitar mereka. Khususnya ini membantu para "
+"pemimpin menyeimbangkan upaya, sehingga tidak ada bidang yang terabaikan."
 
 #: site/course/course-content.php:2643
 msgid "Review the next two slides: Field Descriptions and Four Fields Example"
-msgstr ""
+msgstr "Tinjau dua slide berikut: Deskripsi Bidang dan Contoh dari Empat Bidang"
 
 #: site/course/course-content.php:2654
 msgid "Field Descriptions"
-msgstr ""
+msgstr "Deskripsi Bidang"
 
 #: site/course/course-content.php:2656
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
 msgstr ""
+"Bidang Kosong: Ke mana atau dengan siapa [suku apa] Anda berencana untuk "
+"memperluas Kerajaan Allah?"
 
 #: site/course/course-content.php:2657
 msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
+"Bidang Pembenihan: Di mana atau dengan siapa Anda membagikan kabar baik "
+"tentang Kerajaan Allah? Bagaimana Anda melakukannya?"
 
 #: site/course/course-content.php:2658
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
+"Bidang Pengembangan: Bagaimana Anda memperlengkapi orang dan mengembangkan "
+"mereka secara spiritual, individu, dan dalam jaringan alami mereka?"
 
 #: site/course/course-content.php:2659
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
 msgstr ""
+"Bidang Penuaian: Bagaimana keluarga rohani baru [jemaah sederhana] terbentuk?"
 
 #: site/course/course-content.php:2660
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
+"Bidang Melipat-gandakan: Dengan siapa, bagaimana dan kapan Anda menyaring "
+"orang-orang yang setia dan memperlengkapi mereka serta meminta "
+"pertanggungjawaban mereka untuk regenerasi?"
 
 #: site/course/course-content.php:2674 site/course/course-content.php:2677
 msgid "Four Fields Example"
-msgstr ""
+msgstr "Contoh Empat Bidang"
 
 #: site/course/course-content.php:2693 site/course/course-content.php:2743
 msgid "Discuss"
-msgstr ""
+msgstr "Diskusi"
 
 #: site/course/course-content.php:2697
 msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
+"Identifikasikan bidang kosong di sekitar Anda. Komunitas atau kelompok "
+"masyarakat mana yang Anda tau yang tidak memiliki kegiatan Injil?"
 
 #: site/course/course-content.php:2698
 msgid ""
 "How is long-term growth affected if one of the fields is neglected? Give "
 "examples."
 msgstr ""
+"Bagaimana pertumbuhan jangka panjang akan terpengaruh jika salah satu bidang "
+"diabaikan? Berikan contoh."
 
 #: site/course/course-content.php:2699
 msgid "Which Zúme tools could help in which field?"
-msgstr ""
+msgstr "Alat Zúme mana yang dapat membantu di antara empat bidang?"
 
 #: site/course/course-content.php:2714
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
+"Pemetaan generasi (alias pemetaan generasi atau pemetaan gen) adalah alat "
+"sederhana lainnya untuk membantu para pemimpin dalam suatu kegerakan untuk "
+"memahami pertumbuhan di sekitar mereka."
 
 #: site/course/course-content.php:2715
 msgid ""
@@ -3412,34 +3571,41 @@ msgid ""
 "training might be required. Health of the movement is a top concern for "
 "leaders and fruitfulness is a top way to measure health."
 msgstr ""
+"Peta pohon silsilah dapat digambar pada selembar kertas atau beberapa lembar "
+"kertas. Peta ini membantu menunjukkan di mana terdapat titik henti dalam "
+"pelipatgandaan dan pelatihan yang mungkin diperlukan. Kesehatan dari "
+"kegerakan merupakan perhatian utama bagi para pemimpin dan keberhasilan "
+"merupakan cara utama untuk mengukur kesehatan."
 
 #: site/course/course-content.php:2716
 msgid "See the example on the next slide."
-msgstr ""
+msgstr "Lihat contoh pada slide berikutnya."
 
 #: site/course/course-content.php:2727
 msgid "Generational Mapping Example"
-msgstr ""
+msgstr "Contoh Pemetaan Silsilah"
 
 #: site/course/course-content.php:2746
 msgid "Use the Generational Mapping example to discuss the following:"
-msgstr ""
+msgstr "Gunakan contoh Pemetaan Silsilah untuk membahas hal berikut:"
 
 #: site/course/course-content.php:2748
 msgid "Which leaders are seeing multiplication?"
-msgstr ""
+msgstr "Pemimpin mana yang melihat pelipatgandaan?"
 
 #: site/course/course-content.php:2749
 msgid "Which groups would you expect to multiply next?"
-msgstr ""
+msgstr "Kelompok mana yang Anda harapkan akan berlipat ganda selanjutnya?"
 
 #: site/course/course-content.php:2750
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
+msgstr "Pemimpin mana yang dapat membimbing dan memperkuat pemimpin lainnya?"
 
 #: site/course/course-content.php:2751
 msgid "Do you see a pattern of weak accountability in any of the generations?"
 msgstr ""
+"Apakah Anda melihat pola pertanggungjawaban yang lemah pada generasi mana "
+"pun?"
 
 #: site/course/course-content.php:2790 site/course/course-content.php:5189
 msgid ""
@@ -3447,6 +3613,9 @@ msgid ""
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
+"Berlatihlah berbagi konsep “Kecepatan” dengan seorang teman dan berdoalah "
+"agar Allah menanamkannya dalam hati dan jiwa Anda. Tanya Allah kepada siapa "
+"Dia ingin Anda berbagi konsep tersebut."
 
 #: site/course/course-content.php:2791
 msgid ""
@@ -3454,32 +3623,42 @@ msgid ""
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
+"Jika Anda telah memulai jemaah sederhana sendiri, bagikan konsep “Selalu "
+"Menjadi Bagian dari Dua Jemaah Allah” dengan orang terkait di dalamnya. Jika "
+"belum, bagikan dengan orang percaya lain yang Anda kenal."
 
 #: site/course/course-content.php:2811 site/course/course-content.php:2816
 #: site/course/course-content.php:4281 site/course/course-content.php:4286
 msgid "SESSION 10"
-msgstr ""
+msgstr "SESI 10"
 
 #: site/course/course-content.php:2850
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
+"Berdoa dan bersyukur kepada Allah bahwa Dia setia menyelesaikan pekerjaan "
+"baik-Nya di dalam kita. "
 
 #: site/course/course-content.php:2851 site/course/course-content.php:5648
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
+"Minta Dia untuk memberikan kelompok Anda pikiran yang jernih dan hati yang "
+"terbuka terhadap hal-hal besar yang ingin Dia lakukan di dalam dan melalui "
+"Anda."
 
 #: site/course/course-content.php:2852 site/course/course-content.php:5649
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
+"Minta Roh Suci untuk memimpin waktu Anda bersama dan juga ucapkan syukur "
+"atas kesetiaan-Nya. Dia yang menolong Anda melewatinya!"
 
 #: site/course/course-content.php:2877 site/course/course-content.php:5674
 msgid "Be encouraged ..."
-msgstr ""
+msgstr "Bersemangatlah..."
 
 #: site/course/course-content.php:2878 site/course/course-content.php:5675
 msgid ""
@@ -3497,6 +3676,10 @@ msgid ""
 "plan for what happens post-training and briefly introduce tools you’ll need "
 "later in your journey as you implement what you’ve learned."
 msgstr ""
+"Namun, Pelatihan Zúme hanyalah permulaan! Dalam sesi ini, kita akan membuat "
+"rencana tentang apa yang terjadi pasca-pelatihan dan secara singkat "
+"memperkenalkan alat-alat yang akan Anda perlukan nanti dalam perjalanan Anda "
+"saat Anda menerapkan apa yang telah Anda pelajari."
 
 #: site/course/course-content.php:2918
 msgid ""
@@ -3522,38 +3705,52 @@ msgstr ""
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
+"Membuat murid yang menjadikan murid berarti membuat pemimpin yang menjadikan "
+"pemimpin."
 
 #: site/course/course-content.php:2962
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
+"Kelompok Pendampingan Sebaya mengumpulkan para pemimpin dan membantu mereka "
+"saling mengasihi dan menyemangati satu sama lain dalam iman dan kepemimpinan "
+"mereka."
 
 #: site/course/course-content.php:2986
 msgid "Peer Mentoring Group Practice"
-msgstr ""
+msgstr "Praktik Kelompok Pendampingan Sebaya"
 
 #: site/course/course-content.php:2989
 msgid ""
 "Break into groups of two or three. Use the 3/3 formatted Peer Mentoring "
 "Group outline."
 msgstr ""
+"Bagi menjadi kelompok yang terdiri dari dua atau tiga orang. Gunakan "
+"kerangka Kelompok Pendampingan Sebaya dengan format 3/3."
 
 #: site/course/course-content.php:2990
 msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
+"Pilih satu orang dalam kelompok untuk menjadi \"anak didik\" dan minta "
+"anggota lain mengerjakan daftar pertanyaan yang disarankan sebagai mentor "
+"sebaya."
 
 #: site/course/course-content.php:3011
 msgid ""
 "In His Bible, God says, \"I know the plans I have for you, plans to prosper "
 "you and not to harm you, plans to give you hope and a future.\""
 msgstr ""
+"Dalam Alkitab, Allah berkata, \"Aku ini tahu rancangan-rancangan apa yang "
+"ada pada-Ku mengenai kamu, yaitu rancangan damai sejahtera dan bukan "
+"rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh "
+"harapan.\""
 
 #: site/course/course-content.php:3012
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr ""
+msgstr "Allah membuat rencana, dan Dia mengharapkan kita juga membuat rencana."
 
 #: site/course/course-content.php:3013 site/dashboard/dashboard.php:217
 msgid ""
@@ -3561,48 +3758,62 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
+"Rencana Tiga Bulan adalah alat yang dapat digunakan untuk membantu "
+"memfokuskan perhatian dan upaya Anda serta menjaganya agar tetap selaras "
+"dengan prioritas Allah dalam menghasilkan murid yang berlipat ganda."
 
 #: site/course/course-content.php:3014
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
+"Slide berikutnya akan menunjukkan cara membuat Rencana Tiga Bulan. Kami "
+"menyarankan untuk menggunakan alat daring."
 
 #: site/course/course-content.php:3027
 msgid "Make your Three Month Plan"
-msgstr ""
+msgstr "Buat Rencana Tiga Bulan Anda"
 
 #: site/course/course-content.php:3029
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
+"Baca - Pindai kode QR. Anda tidak harus berkomitmen pada setiap hal, "
+"melainkan ditujukan sebagai petunjuk untuk rencana Anda. (5 menit)"
 
 #: site/course/course-content.php:3030
 msgid ""
 "Listen - Take time to be as quiet as possible and listen to what God chooses "
 "to reveal. (10 min)"
 msgstr ""
+"Dengarkanlah - Luangkan waktu untuk jadi setenang mungkin dan dengarkan apa "
+"yang Tuhan ingin ungkapkan. (10 menit)"
 
 #: site/course/course-content.php:3031
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
+"Catat Rencana Anda - Tulis komitmen di selembar kertas atau gunakan alat "
+"daring untuk menyimpan jawaban Anda. (15 menit)"
 
 #: site/course/course-content.php:3037
 msgid "Online Plan Tool"
-msgstr ""
+msgstr "Alat Rencana Daring"
 
 #: site/course/course-content.php:3050
 msgid "Take turns sharing your Three Month Plans with each other."
 msgstr ""
+"Ambil giliran untuk berbagi Rencana Tiga Bulan Anda pada satu sama lain."
 
 #: site/course/course-content.php:3051
 msgid ""
 "Find a training partner(s) that is willing to check in with you weekly. "
 "Commit to doing the same for them."
 msgstr ""
+"Temukan mitra pelatihan yang bersedia memantau Anda setiap minggu. Lakukan "
+"hal yang sama bagi mereka."
 
 #: site/course/course-content.php:3192
 msgid ""
@@ -3610,83 +3821,111 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
+"Berlatihlah membagikan pengertian ini dengan seorang teman dan berdoa agar "
+"Allah menanamkannya dalam hati dan jiwa Anda. Tanya kepada Allah kepada "
+"siapa Dia ingin Anda membagikannya."
 
 #: site/course/course-content.php:3193
 msgid ""
 "Share the definitions with whomever the Lord impresses on you to do so with. "
 "Then equip them to share it with someone else."
 msgstr ""
+"Bagikan pengertian tersebut kepada siapa pun Allah perintahkan kepada Anda "
+"untuk melakukannya. Lalu, perlengkapi mereka untuk membagikannya kepada "
+"orang lain."
 
 #: site/course/course-content.php:3255
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr ""
+msgstr "Minta Roh Suci Allah untuk memimpin waktu kalian bersama."
 
 #: site/course/course-content.php:3283 site/course/course-content.php:3404
 #: site/course/course-content.php:3656 site/course/course-content.php:4480
 #: site/course/course-content.php:5551 site/course/course-content.php:5690
 msgid "In this session, we will add this tool to our toolkit:"
-msgstr ""
+msgstr "Pada sesi ini, kami akan menambahkan alat ini ke perangkat kami:"
 
 #: site/course/course-content.php:3376
 msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah atas kehadiran-Nya dalam hidup kita. "
+"Berdoa agar setiap orang dalam kelompok memiliki telinga untuk mendengar "
+"suara-Nya dan kasih karunia untuk menaati apa yang Dia katakan."
 
 #: site/course/course-content.php:3437
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
+"Temukan rekan pertanggungja2aban (jenis kelamin yang sama) dan mulailah "
+"bertemu mereka setiap minggu."
 
 #: site/course/course-content.php:3438
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
+"Minta Allah untuk membimbing Anda untuk menantang setidaknya lima orang "
+"percaya yang Anda kenal untuk memulai pertemuan kelompok pertanggungjawaban "
+"mereka sendiri, lalu lakukanlah."
 
 #: site/course/course-content.php:3498
 msgid ""
 "Pray and thank God that He is making us like Jesus. Invite the Holy Spirit "
 "to lead your time together."
 msgstr ""
+"Berdoa dan bersyukur kepada Allah karena Dia menjadikan kita seperti Isa. "
+"Undanglah Roh Suci untuk memimpin waktu Anda bersama."
 
 #: site/course/course-content.php:3526 site/course/course-content.php:4594
 msgid "In this session, we will hear and discuss the concept:"
-msgstr ""
+msgstr "Dalam sesi ini, kita akan mendengar dan mendiskusikan konsep ini:"
 
 #: site/course/course-content.php:3628
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
+"Berdoa dan bersyukurlah kepada Allah atas kasih-Nya bagi semua orang dalam "
+"hidup kita. Berdoalah agar setiap orang dalam kelompok dapat melihat orang-"
+"orang di sekitar sebagaimana Allah melihat mereka."
 
 #: site/course/course-content.php:3658 site/course/course-content.php:3694
 msgid "The Prayer Cycle"
-msgstr ""
+msgstr "Siklus Doa"
 
 #: site/course/course-content.php:3673
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
+"Jika waktu Anda fleksibel, luangkan waktu satu jam penuh. Doakan setiap "
+"bagian selama 5 menit penuh. Ini akan membuat sesi ini lebih lama dari "
+"pelatihan satu jam."
 
 #: site/course/course-content.php:3674
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
+"Jika Anda tidak bisa melakukan sesi yang lebih lama, maka kurangi sesi doa "
+"dari 5 menit menjadi 3 menit setiap sesinya."
 
 #: site/course/course-content.php:3709
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
+"Gunakan siklus doa sebagai panduan saat Anda berdoa selama satu jam minggu "
+"ini."
 
 #: site/course/course-content.php:3710
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
+"Bagikan siklus doa ini dengan siapa pun yang Allah perintahkan kepada Anda. "
+"Tantang mereka untuk membagikannya kepada orang lain juga."
 
 #: site/course/course-content.php:3836
 msgid ""
@@ -3694,6 +3933,9 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
+"Berlatihlah berbagi konsep Ekonomi Rohani dengan seorang teman dan berdoalah "
+"agar Allah menanamkannya dalam hati dan jiwa Anda. Tanya Allah kepada siapa "
+"Dia ingin Anda berbagi konsep tersebut."
 
 #: site/course/course-content.php:3837
 msgid ""
