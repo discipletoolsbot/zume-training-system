@@ -118,6 +118,13 @@ class Zume_Churches_Endpoints
         }
 
         $new_post = DT_Posts::create_post( self::$post_type, $fields, true, false );
+        $churches = zume_get_user_churches( $user_id );
+
+        foreach ( $churches as $church ) {
+            if ( $church['id'] === $new_post['ID'] ) {
+                return $church;
+            }
+        }
 
         return $new_post;
     }

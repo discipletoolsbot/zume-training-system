@@ -10,8 +10,10 @@ export class DashChurches extends DashPage {
         return {
             showTeaser: { type: Boolean },
             orderedChurches: { type: Array, attribute: false },
+            sortedChurches: { type: Array, attribute: false },
             locationLabel: { type: String, attribute: false },
             formErrors: { type: Boolean, attribute: false },
+            loading: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
             confirmDelete: { type: Number, attribute: false },
         };
@@ -29,14 +31,13 @@ export class DashChurches extends DashPage {
 
         this.churches = [...jsObject.churches ?? []]
         this.orderedChurches = []
+        this.sortedChurches = []
         this.orderChurches()
 
         this.locationLabel = ''
         this.formErrors = false
         this.errorMessage = ''
 
-        this.sortedChurches = [...jsObject.churches ?? []]
-        this.sortedChurches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
 
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
@@ -112,7 +113,6 @@ export class DashChurches extends DashPage {
         });
         this.map.addControl(geocoder, 'top-left' );
         geocoder.on('result', (function(e) { // respond to search
-            console.log(e)
             if ( this.active_marker ) {
                 this.active_marker.remove()
             }
@@ -140,7 +140,6 @@ export class DashChurches extends DashPage {
         })
         this.map.addControl(userGeocode, 'top-left');
         userGeocode.on('geolocate', (function (e) { // respond to search
-            console.log(e)
             if (this.active_marker) {
                 this.active_marker.remove()
             }
@@ -165,6 +164,9 @@ export class DashChurches extends DashPage {
 
     orderChurches() {
         this.orderedChurches = []
+        this.sortedChurches = [
+            ...this.churches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
+        ]
         const rootNodes = this.churches.filter((church) => !church.parent)
 
         for (const rootNode of rootNodes) {
@@ -199,6 +201,7 @@ export class DashChurches extends DashPage {
         this.addChurch()
     }
     addChurch() {
+        this.loading = true
         this.formErrors = false
 
         if (
@@ -244,12 +247,31 @@ export class DashChurches extends DashPage {
         /* Insert church into the churches and reorder */
         zumeRequest.post('church', data)
             .then((result) => {
-                console.log(result)
+                this.churches = [
+                    result,
+                    ...this.churches
+                ].map((church) => {
+                    if (result.parent && church.id === result.parent) {
+                        return {
+                            ...church,
+                            children: [
+                                ...church.children,
+                                result.id
+                            ]
+                        }
+                    }
+                    return church
+                })
+                this.orderChurches()
+
                 this.closeChurchModal()
             })
             .catch((error) => {
                 console.error(error)
                 this.showErrorMessage(message);
+            })
+            .finally(() => {
+                this.loading = false
             })
     }
     showErrorMessage(message) {
@@ -286,9 +308,7 @@ export class DashChurches extends DashPage {
         this.orderChurches()
 
         zumeRequest.delete('church', { church_id: id })
-            .then((result) => {
-                console.log('success', result)
-            })
+            .then((result) => {})
             .catch((error) => {
                 console.error(error)
                 this.showErrorMessage()
@@ -333,6 +353,7 @@ export class DashChurches extends DashPage {
         document.querySelector('#add-church-form select').value = ''
         this.lat = undefined
         this.lng = undefined
+        this.parentChurch = undefined
     }
     closeKebabMenu(id) {
         const kebabMenu = this.renderRoot.querySelector(`#kebab-menu-${id}`)
@@ -522,8 +543,13 @@ export class DashChurches extends DashPage {
                             </select>
                         </div>
                         <div class="cluster">
-                            <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
-                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
+                            <button class="btn outline" type="button" ?disabled=${this.loading} aria-disabled=${this.loading ? 'true' : 'false'} @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
+                            <button class="btn" @click=${this.addChurch}>
+                                ${jsObject.translations.add_new_church}
+                                ${
+                                    this.loading ? html`<span class="loading-spinner active"></span>` : ''
+                                }
+                            </button>
                         </div>
                     </div>
                 </div>
