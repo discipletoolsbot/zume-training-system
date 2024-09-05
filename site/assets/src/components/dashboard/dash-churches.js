@@ -266,10 +266,9 @@ export class DashChurches extends DashPage {
         this.confirmDelete = id
     }
     deleteChurch(id) {
-        this.loading = id
-
         /* Remove the church from the graph */
         const deletedChurch = this.churches.find((church) => church.id === id)
+        const deletedChurchPosition = this.churches.findIndex((church) => church.id === id)
         const childChurchIds = []
         this.churches = this.churches
             .filter((church) => church.id !== id)
@@ -296,8 +295,9 @@ export class DashChurches extends DashPage {
 
                 /* Insert the church back into the graph */
                 this.churches = [
-                    ...this.churches,
-                    deletedChurch
+                    ...this.churches.slice(0, deletedChurchPosition),
+                    deletedChurch,
+                    ...this.churches.slice(deletedChurchPosition)
                 ].map((church) => {
                     if (childChurchIds.includes(church.id)) {
                         return {
@@ -308,9 +308,6 @@ export class DashChurches extends DashPage {
                     return church
                 })
                 this.orderChurches()
-            })
-            .finally(() => {
-                this.loading = 0
             })
     }
 
