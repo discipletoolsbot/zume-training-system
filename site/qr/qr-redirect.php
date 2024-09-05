@@ -95,7 +95,7 @@ class Zume_QR_Redirect
 //            dt_write_log( 'Video: ' . $_GET['id'] );
 
             $link = site_url() . '/app/video/?id=';
-            $video_id = esc_attr( sanitize_text_field( wp_unslash( $_GET['v'] ) ) );
+            $video_id = esc_attr( sanitize_text_field( wp_unslash( $_GET['id'] ) ) );
 
             $link = $link . $video_id;
 
