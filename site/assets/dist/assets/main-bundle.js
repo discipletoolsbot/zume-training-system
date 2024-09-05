@@ -1014,7 +1014,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                           ></activity-3-month-plan>
                       `}
             </div>
-        `}createRenderRoot(){return this}}customElements.define("dash-board",_);class mt extends k{constructor(){super();const e=document.querySelector("html").dataset.dir;this.isRtl=e==="rtl"}firstUpdated(){this.attachResizeObeserver(),this.updateHeaderStyle(),window.scrollTo({top:0,behavior:"instant"})}attachResizeObeserver(){const t=document.querySelector("dash-header-right"),e=new ResizeObserver(s=>{for(let n of s){if(!n.contentRect)return;const a=Math.round(n.contentRect.height),r=Math.round(n.contentRect.width);this.updateHeaderStyle(!1,a,r)}});this.resizeObserver=e,e.observe(t)}updateHeaderStyle(t=!0,e=0,s=window.innerWidth){const n=document.querySelector(".dashboard__header.left");t&&(this.initialOffset=n.offsetTop);let a;s<window.innerWidth/2?a=this.initialOffset:a=this.initialOffset+e,n.style.top=a+"px"}disconnectedCallback(){super.disconnectedCallback(),this.resizeObserver&&this.resizeObserver.disconnect()}}class Go extends mt{constructor(){var e,s;super();E(this,"lng");E(this,"lat");E(this,"level");E(this,"locationLabel");this.showTeaser=!1,this.route=_.getRoute("my-churches"),this.churches=[...(e=jsObject.churches)!==null&&e!==void 0?e:[]],this.orderedChurches=[],this.orderChurches(),this.locationLabel="",this.sortedChurches=[...(s=jsObject.churches)!==null&&s!==void 0?s:[]],this.sortedChurches.sort((n,a)=>n.name.toLowerCase()<a.name.toLowerCase()?-1:1),this.renderChurch=this.renderChurch.bind(this),this.addChurch=this.addChurch.bind(this),this.handleSubmit=this.handleSubmit.bind(this),document.querySelectorAll(".reveal-overlay #new-church-form").forEach(n=>{n.parentElement.remove()}),mapboxgl.accessToken=jsObject.map_key}static get properties(){return{showTeaser:{type:Boolean},orderedChurches:{type:Array,attribute:!1},locationLabel:{type:String,attribute:!1}}}firstUpdated(){super.firstUpdated(),document.querySelector("#add-church-form").addEventListener("submit",this.handleSubmit)}updated(){jQuery(this.renderRoot).foundation()}initialiseMap(){let e,s;this.lng?(e=[this.lng,this.lat],s=5):(e=[-20,30],s=1),this.map=new mapboxgl.Map({container:"map-edit",style:"mapbox://styles/mapbox/light-v10",center:e,zoom:s}),this.map.on("click",(function(r){let o=r.lngLat.lng,l=r.lngLat.lat;this.lng=o,this.lat=l,this.active_marker&&this.active_marker.remove(),this.active_marker=new mapboxgl.Marker().setLngLat(r.lngLat).addTo(this.map),this.locationLabel=""}).bind(this));const n=new MapboxGeocoder({accessToken:mapboxgl.accessToken,types:"country region district locality neighborhood address place",mapboxgl});this.map.addControl(n,"top-left"),n.on("result",(function(r){console.log(r),this.active_marker&&this.active_marker.remove(),this.active_marker=new mapboxgl.Marker().setLngLat(r.result.center).addTo(this.map),n._removeMarker(),this.lng=r.result.center[0],this.lat=r.result.center[1],this.level=r.result.place_type[0],this.locationLabel=r.result.place_name}).bind(this));let a=new mapboxgl.GeolocateControl({positionOptions:{enableHighAccuracy:!0},marker:{color:"orange"},trackUserLocation:!1,showUserLocation:!1});this.map.addControl(a,"top-left"),a.on("geolocate",(function(r){console.log(r),this.active_marker&&this.active_marker.remove();let o=r.coords.latitude,l=r.coords.longitude;this.lat=o,this.lng=l,this.active_marker=new mapboxgl.Marker().setLngLat([l,o]).addTo(this.map),this.locationLabel=""}).bind(this))}joinCommunity(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.joinCommunity}}))}orderChurches(){const e=this.churches.filter(s=>!s.parent);for(const s of e)this.processChurch(s.id,0)}processChurch(e,s){const n=s+1,a=this.churches.find(r=>r.id===e);if(!a){console.log(e,"not found");return}a.generation=n,this.orderedChurches.push(a),a.children.forEach(r=>{this.processChurch(r,n)})}handleSubmit(e){e.preventDefault(),this.addChurch()}addChurch(){if(console.log(this.lat,this.lng,this.level,this.locationLabel,this.churchName,this.startDate,this.churchMembers,this.parentChurch),!this.lat||!this.lng||!this.churchName||!this.startDate||!this.churchMembers){console.error("Missing form thing");return}const e={name:this.churchName,member_count:this.churchMembers,start_date:this.startDate,location_grid_meta:{values:[],force_values:!0}};this.parentChurch&&(e.parent_church=this.parentChurch);const s={lng:this.lng,lat:this.lat,source:"user"};this.level&&this.locationLabel&&(s.level=this.level,s.label=this.locationLabel),e.location_grid_meta.values.push(s),S.post("church",e).then(n=>{console.log(n),this.closeChurchModal()}).catch(n=>{console.error(n)})}editChurch(e){console.log("edit church",e)}deleteChurch(e){console.log("delete church",e)}openChurchModal(){if(this.showTeaser)return;const e=document.querySelector("#new-church-form");jQuery(e).foundation("open"),this.initialiseMap()}closeChurchModal(){const e=document.querySelector("#new-church-form");jQuery(e).foundation("close"),this.clearChurchModal()}clearChurchModal(){jQuery("#add-church-form input").each(function(e){this.value=""}),document.querySelector("#add-church-form select").value="",this.lat=void 0,this.lng=void 0}renderChurchOption({id:e,name:s}){return c`
+        `}createRenderRoot(){return this}}customElements.define("dash-board",_);class mt extends k{constructor(){super();const e=document.querySelector("html").dataset.dir;this.isRtl=e==="rtl"}firstUpdated(){this.attachResizeObeserver(),this.updateHeaderStyle(),window.scrollTo({top:0,behavior:"instant"})}attachResizeObeserver(){const t=document.querySelector("dash-header-right"),e=new ResizeObserver(s=>{for(let n of s){if(!n.contentRect)return;const a=Math.round(n.contentRect.height),r=Math.round(n.contentRect.width);this.updateHeaderStyle(!1,a,r)}});this.resizeObserver=e,e.observe(t)}updateHeaderStyle(t=!0,e=0,s=window.innerWidth){const n=document.querySelector(".dashboard__header.left");t&&(this.initialOffset=n.offsetTop);let a;s<window.innerWidth/2?a=this.initialOffset:a=this.initialOffset+e,n.style.top=a+"px"}disconnectedCallback(){super.disconnectedCallback(),this.resizeObserver&&this.resizeObserver.disconnect()}}class Go extends mt{constructor(){var e,s;super();E(this,"lng");E(this,"lat");E(this,"level");E(this,"locationLabel");this.showTeaser=!1,this.route=_.getRoute("my-churches"),this.churches=[...(e=jsObject.churches)!==null&&e!==void 0?e:[]],this.orderedChurches=[],this.orderChurches(),this.locationLabel="",this.formErrors=!1,this.errorMessage="",this.sortedChurches=[...(s=jsObject.churches)!==null&&s!==void 0?s:[]],this.sortedChurches.sort((n,a)=>n.name.toLowerCase()<a.name.toLowerCase()?-1:1),this.renderChurch=this.renderChurch.bind(this),this.addChurch=this.addChurch.bind(this),this.handleSubmit=this.handleSubmit.bind(this),document.querySelectorAll(".reveal-overlay #new-church-form").forEach(n=>{n.parentElement.remove()}),mapboxgl.accessToken=jsObject.map_key}static get properties(){return{showTeaser:{type:Boolean},orderedChurches:{type:Array,attribute:!1},locationLabel:{type:String,attribute:!1},formErrors:{type:Boolean,attribute:!1},errorMessage:{type:String,attribute:!1}}}firstUpdated(){super.firstUpdated(),document.querySelector("#add-church-form").addEventListener("submit",this.handleSubmit)}updated(){jQuery(this.renderRoot).foundation()}initialiseMap(){let e,s;this.lng?(e=[this.lng,this.lat],s=5):(e=[-20,30],s=1),this.map=new mapboxgl.Map({container:"map-edit",style:"mapbox://styles/mapbox/light-v10",center:e,zoom:s}),this.map.on("click",(function(r){let o=r.lngLat.lng,l=r.lngLat.lat;this.lng=o,this.lat=l,this.active_marker&&this.active_marker.remove(),this.active_marker=new mapboxgl.Marker().setLngLat(r.lngLat).addTo(this.map),this.locationLabel=""}).bind(this));const n=new MapboxGeocoder({accessToken:mapboxgl.accessToken,types:"country region district locality neighborhood address place",mapboxgl});this.map.addControl(n,"top-left"),n.on("result",(function(r){console.log(r),this.active_marker&&this.active_marker.remove(),this.active_marker=new mapboxgl.Marker().setLngLat(r.result.center).addTo(this.map),n._removeMarker(),this.lng=r.result.center[0],this.lat=r.result.center[1],this.level=r.result.place_type[0],this.locationLabel=r.result.place_name}).bind(this));let a=new mapboxgl.GeolocateControl({positionOptions:{enableHighAccuracy:!0},marker:{color:"orange"},trackUserLocation:!1,showUserLocation:!1});this.map.addControl(a,"top-left"),a.on("geolocate",(function(r){console.log(r),this.active_marker&&this.active_marker.remove();let o=r.coords.latitude,l=r.coords.longitude;this.lat=o,this.lng=l,this.active_marker=new mapboxgl.Marker().setLngLat([l,o]).addTo(this.map),this.locationLabel=""}).bind(this))}joinCommunity(){this.dispatchEvent(new CustomEvent("open-wizard",{bubbles:!0,detail:{type:$.joinCommunity}}))}orderChurches(){const e=this.churches.filter(s=>!s.parent);for(const s of e)this.processChurch(s.id,0)}processChurch(e,s){const n=s+1,a=this.churches.find(r=>r.id===e);if(!a){console.log(e,"not found");return}a.generation=n,this.orderedChurches.push(a),a.children.forEach(r=>{this.processChurch(r,n)})}handleSubmit(e){e.preventDefault(),this.addChurch()}addChurch(){if(this.formErrors=!1,!this.lat||!this.lng||!this.churchName||!this.startDate||!this.churchMembers){console.error("Missing form thing"),this.formErrors=!0;return}const e={name:this.churchName,member_count:this.churchMembers,start_date:this.startDate,location_grid_meta:{values:[],force_values:!0}};this.parentChurch&&(e.parent_church=this.parentChurch);const s={lng:this.lng,lat:this.lat,source:"user"};this.level&&this.locationLabel&&(s.level=this.level,s.label=this.locationLabel),e.location_grid_meta.values.push(s),S.post("church",e).then(n=>{console.log(n),this.closeChurchModal()}).catch(n=>{console.error(n),this.errorMessage=jsObject.translations.error,setTimeout(()=>{this.errorMessage=""},3e3)})}editChurch(e){console.log("edit church",e)}deleteChurch(e){console.log("delete church",e)}openChurchModal(){if(this.showTeaser)return;const e=document.querySelector("#new-church-form");jQuery(e).foundation("open"),this.initialiseMap()}closeChurchModal(){const e=document.querySelector("#new-church-form");jQuery(e).foundation("close"),this.clearChurchModal()}clearChurchModal(){jQuery("#add-church-form input").each(function(e){this.value=""}),document.querySelector("#add-church-form select").value="",this.lat=void 0,this.lng=void 0}renderChurchOption({id:e,name:s}){return c`
             <option value=${e}>${s}</option>
         `}renderChurch({id:e,name:s,location:n,generation:a}){return c`
             <li
@@ -1065,7 +1065,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main content">
+                <div class="dashboard__main content position-relative">
                     ${this.showTeaser?c`
                             <div class="p-2">
                                 <div class="dash-menu__list-item">
@@ -1100,6 +1100,8 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                             </ul>
 
                         `}
+
+
                 </div>
 
             </div>
@@ -1109,27 +1111,40 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
-                    <div id="add-church-form">
-                        <div>
-                            <label for="church-name">${jsObject.translations.church_name}</label>
-                            <input id="church-name" name="church-name" type="text" value=${this.churchName||""} @change=${e=>this.churchName=e.target.value}/>
+                    <div class="warning banner" data-state=${this.errorMessage.length?"":"empty"}>${this.errorMessage}</div>
+                    <div id="add-church-form" class="stack">
+                        <div class="form-group">
+                            <label for="church-name">${jsObject.translations.church_name}*</label>
+                            <input class="input" id="church-name" name="church-name" type="text" value=${this.churchName||""} @change=${e=>this.churchName=e.target.value}/>
+                            ${this.formErrors&&!this.churchName?c`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                `:""}
                         </div>
-                        <div>
-                            <label for="church-start-date">${jsObject.translations.start_date}</label>
-                            <input id="church-start-date" name="church-start-date" type="date" value=${this.startDate||""} @change=${e=>this.startDate=e.target.value} />
+                        <div class="form-group">
+                            <label for="church-start-date">${jsObject.translations.start_date}*</label>
+                            <input class="input" id="church-start-date" name="church-start-date" type="date" value=${this.startDate||""} @change=${e=>this.startDate=e.target.value} />
+                            ${this.formErrors&&!this.startDate?c`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                `:""}
                         </div>
-                        <div>
-                            <label for="number-of-people">${jsObject.translations.number_of_people}</label>
-                            <input id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${e=>this.churchMembers=e.target.value} />
+                        <div class="form-group">
+                            <label for="number-of-people">${jsObject.translations.number_of_people}*</label>
+                            <input class="input" id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${e=>this.churchMembers=e.target.value} />
+                            ${this.formErrors&&!this.churchMembers?c`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                `:""}
                         </div>
-                        <div>
-                            <label for="church-location">${jsObject.translations.church_location}</label>
+                        <div class="form-group">
+                            <label for="church-location">${jsObject.translations.church_location}*</label>
                             <span id="location-label">${this.locationLabel}</span>
+                            ${this.formErrors&&!this.lat?c`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                `:""}
                             <div id="map-wrapper-edit" style="height: 300px">
                                 <div id='map-edit' style="height: 300px"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="parent-church">${jsObject.translations.parent_church}</label>
                             <select id="parent-church" name="parent-church" @change=${e=>this.parentChurch=e.target.value} >
                                 <option value="">---</option>
@@ -1137,8 +1152,8 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                             </select>
                         </div>
                         <div class="cluster">
-                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
                             <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
+                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
                         </div>
                     </div>
                 </div>

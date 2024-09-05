@@ -11,6 +11,8 @@ export class DashChurches extends DashPage {
             showTeaser: { type: Boolean },
             orderedChurches: { type: Array, attribute: false },
             locationLabel: { type: String, attribute: false },
+            formErrors: { type: Boolean, attribute: false },
+            errorMessage: { type: String, attribute: false },
         };
     }
 
@@ -29,6 +31,8 @@ export class DashChurches extends DashPage {
         this.orderChurches()
 
         this.locationLabel = ''
+        this.formErrors = false
+        this.errorMessage = ''
 
         this.sortedChurches = [...jsObject.churches ?? []]
         this.sortedChurches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
@@ -180,16 +184,7 @@ export class DashChurches extends DashPage {
         this.addChurch()
     }
     addChurch() {
-        console.log(
-            this.lat,
-            this.lng,
-            this.level,
-            this.locationLabel,
-            this.churchName,
-            this.startDate,
-            this.churchMembers,
-            this.parentChurch,
-        )
+        this.formErrors = false
 
         if (
             !this.lat ||
@@ -199,6 +194,7 @@ export class DashChurches extends DashPage {
             !this.churchMembers
         ) {
             console.error('Missing form thing')
+            this.formErrors = true
             return
         }
 
@@ -238,6 +234,10 @@ export class DashChurches extends DashPage {
             })
             .catch((error) => {
                 console.error(error)
+                this.errorMessage = jsObject.translations.error
+                setTimeout(() => {
+                    this.errorMessage = ''
+                }, 3000)
             })
 
 
@@ -334,7 +334,7 @@ export class DashChurches extends DashPage {
                 </div>
                 <dash-header-right></dash-header-right>
 
-                <div class="dashboard__main content">
+                <div class="dashboard__main content position-relative">
                     ${
                         this.showTeaser
                         ? html`
@@ -377,6 +377,8 @@ export class DashChurches extends DashPage {
 
                         `
                     }
+
+
                 </div>
 
             </div>
@@ -386,27 +388,48 @@ export class DashChurches extends DashPage {
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
-                    <div id="add-church-form">
-                        <div>
-                            <label for="church-name">${jsObject.translations.church_name}</label>
-                            <input id="church-name" name="church-name" type="text" value=${this.churchName || ''} @change=${(e) => this.churchName = e.target.value}/>
+                    <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
+                    <div id="add-church-form" class="stack">
+                        <div class="form-group">
+                            <label for="church-name">${jsObject.translations.church_name}*</label>
+                            <input class="input" id="church-name" name="church-name" type="text" value=${this.churchName || ''} @change=${(e) => this.churchName = e.target.value}/>
+                            ${
+                                this.formErrors && !this.churchName ? html`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                ` : ''
+                            }
                         </div>
-                        <div>
-                            <label for="church-start-date">${jsObject.translations.start_date}</label>
-                            <input id="church-start-date" name="church-start-date" type="date" value=${this.startDate || ''} @change=${(e) => this.startDate = e.target.value} />
+                        <div class="form-group">
+                            <label for="church-start-date">${jsObject.translations.start_date}*</label>
+                            <input class="input" id="church-start-date" name="church-start-date" type="date" value=${this.startDate || ''} @change=${(e) => this.startDate = e.target.value} />
+                            ${
+                                this.formErrors && !this.startDate ? html`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                ` : ''
+                            }
                         </div>
-                        <div>
-                            <label for="number-of-people">${jsObject.translations.number_of_people}</label>
-                            <input id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${(e) => this.churchMembers = e.target.value} />
+                        <div class="form-group">
+                            <label for="number-of-people">${jsObject.translations.number_of_people}*</label>
+                            <input class="input" id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${(e) => this.churchMembers = e.target.value} />
+                            ${
+                                this.formErrors && !this.churchMembers ? html`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                ` : ''
+                            }
                         </div>
-                        <div>
-                            <label for="church-location">${jsObject.translations.church_location}</label>
+                        <div class="form-group">
+                            <label for="church-location">${jsObject.translations.church_location}*</label>
                             <span id="location-label">${this.locationLabel}</span>
+                            ${
+                                this.formErrors && !this.lat ? html`
+                                    <span class="input-error">${jsObject.translations.missing_field}</span>
+                                ` : ''
+                            }
                             <div id="map-wrapper-edit" style="height: 300px">
                                 <div id='map-edit' style="height: 300px"></div>
                             </div>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="parent-church">${jsObject.translations.parent_church}</label>
                             <select id="parent-church" name="parent-church" @change=${(e) => this.parentChurch = e.target.value} >
                                 <option value="">---</option>
@@ -416,8 +439,8 @@ export class DashChurches extends DashPage {
                             </select>
                         </div>
                         <div class="cluster">
-                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
                             <button class="btn outline" type="button" @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
+                            <button class="btn" @click=${this.addChurch}>${jsObject.translations.add_new_church}</button>
                         </div>
                     </div>
                 </div>
