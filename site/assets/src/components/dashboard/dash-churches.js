@@ -13,6 +13,7 @@ export class DashChurches extends DashPage {
             locationLabel: { type: String, attribute: false },
             formErrors: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
+            confirmDelete: { type: Number, attribute: false },
         };
     }
 
@@ -40,6 +41,8 @@ export class DashChurches extends DashPage {
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.orderChurches = this.orderChurches.bind(this)
+        this.deleteChurch = this.deleteChurch.bind(this)
 
         /* Remove old overlays that have been orphaned by moving around the app */
         document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
@@ -52,13 +55,22 @@ export class DashChurches extends DashPage {
     firstUpdated() {
         super.firstUpdated()
         const addChurchForm = document.querySelector('#add-church-form')
-
         addChurchForm.addEventListener('submit', this.handleSubmit)
+
+        this.initialiseChurchEventHandlers()
     }
     updated() {
         jQuery(this.renderRoot).foundation();
     }
 
+    initialiseChurchEventHandlers() {
+        const kebabMenus = this.renderRoot.querySelectorAll('.dropdown-pane')
+        kebabMenus.forEach((kebabMenu) => {
+            jQuery(kebabMenu).on('hide.zf.dropdown', () => {
+                this.confirmDelete = ''
+            })
+        })
+    }
     initialiseMap() {
 
         let center, zoom
@@ -152,11 +164,14 @@ export class DashChurches extends DashPage {
     }
 
     orderChurches() {
+        this.orderedChurches = []
         const rootNodes = this.churches.filter((church) => !church.parent)
 
         for (const rootNode of rootNodes) {
             this.processChurch(rootNode.id, 0)
         }
+
+        this.orderedChurches = [ ...this.orderedChurches ]
     }
 
     processChurch(churchID, generation) {
@@ -234,21 +249,69 @@ export class DashChurches extends DashPage {
             })
             .catch((error) => {
                 console.error(error)
-                this.errorMessage = jsObject.translations.error
-                setTimeout(() => {
-                    this.errorMessage = ''
-                }, 3000)
+                this.showErrorMessage(message);
             })
-
-
-
-        //
     }
+    showErrorMessage(message) {
+        this.errorMessage = message || jsObject.translations.error;
+        setTimeout(() => {
+            this.errorMessage = '';
+        }, 3000);
+    }
+
     editChurch(id) {
         console.log('edit church', id)
     }
+    confirmDeleteChurch(id) {
+        this.confirmDelete = id
+    }
     deleteChurch(id) {
-        console.log('delete church', id)
+        this.loading = id
+
+        /* Remove the church from the graph */
+        const deletedChurch = this.churches.find((church) => church.id === id)
+        const childChurchIds = []
+        this.churches = this.churches
+            .filter((church) => church.id !== id)
+            .map((church) => {
+                if (church.parent === id) {
+                    childChurchIds.push(church.id)
+                    return {
+                        ...church,
+                        parent: null,
+                    }
+                }
+                return church
+            })
+
+        this.orderChurches()
+
+        zumeRequest.delete('church', { church_id: id })
+            .then((result) => {
+                console.log('success', result)
+            })
+            .catch((error) => {
+                console.error(error)
+                this.showErrorMessage()
+
+                /* Insert the church back into the graph */
+                this.churches = [
+                    ...this.churches,
+                    deletedChurch
+                ].map((church) => {
+                    if (childChurchIds.includes(church.id)) {
+                        return {
+                            ...church,
+                            parent: id
+                        }
+                    }
+                    return church
+                })
+                this.orderChurches()
+            })
+            .finally(() => {
+                this.loading = 0
+            })
     }
 
     openChurchModal() {
@@ -274,6 +337,14 @@ export class DashChurches extends DashPage {
         this.lat = undefined
         this.lng = undefined
     }
+    closeKebabMenu(id) {
+        const kebabMenu = this.renderRoot.querySelector(`#kebab-menu-${id}`)
+
+        if (!kebabMenu) {
+            console.log('kebab menu not found', id)
+        }
+        jQuery(kebabMenu).foundation('close')
+    }
 
     renderChurchOption({ id, name }) {
         return html`
@@ -298,8 +369,23 @@ export class DashChurches extends DashPage {
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li><button class="menu-btn" @click=${() => this.editChurch(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button></li>
-                        <li><button class="menu-btn" @click=${() => this.deleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button></li>
+                        <li class="${!!this.confirmDelete ? 'hidden' : ''}">
+                            <button class="menu-btn" @click=${() => this.editChurch(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
+                        </li>
+                        <li class="${!!this.confirmDelete ? 'hidden' : ''}">
+                            <button class="menu-btn red ${!!this.confirmDelete ? 'hidden' : ''}" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
+                        </li>
+                        <li class="${!!this.confirmDelete ? '' : 'hidden'} stack">
+                            <p class="bold f-1">${jsObject.translations.delete}?</p>
+                            <div class="cluster">
+                                <button class="btn outline tight" @click=${() => this.closeKebabMenu(id)}>
+                                    ${jsObject.translations.no}
+                                </button>
+                                <button class="btn tight red" @click=${() => this.deleteChurch(id)}>
+                                    ${jsObject.translations.yes}
+                                </button>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </li>

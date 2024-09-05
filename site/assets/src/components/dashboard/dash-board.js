@@ -162,11 +162,13 @@ export class DashBoard extends navigator(router(LitElement)) {
         this.menuOffset = this.getOffsetTop('.sidebar-wrapper')
         this.getCtas()
 
-        const celebrationModal =
-            this.renderRoot.querySelector('#celebration-modal')
-        celebrationModal?.addEventListener('closed.zf.reveal', () => {
-            this.showingCelebrationModal = false
-        })
+        const celebrationModal = this.renderRoot.querySelector('#celebration-modal')
+        if (celebrationModal) {
+            jQuery(celebrationModal).on('closed.zf.reveal', () => {
+                this.showingCelebrationModal = false
+            })
+        }
+
         this.trainingGroupsOpen = jQuery('#training-groups-menu').hasClass(
             'is-active'
         )

@@ -307,6 +307,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'simple_church_planting_map' => __( 'Simple church planting map', 'zume' ),
             'missing_field' => __( 'Missing answer', 'zume' ),
             'error' => __( 'Something went wrong', 'zume' ),
+            'yes' => __( 'Yes', 'zume' ),
+            'no' => __( 'No', 'zume' ),
             'not_scheduled' => __( 'No date', 'zume' ),
             'whatsapp' => __( 'Whatsapp', 'zume' ),
             'signal' => __( 'Signal', 'zume' ),

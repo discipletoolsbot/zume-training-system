@@ -175,10 +175,12 @@ class Zume_Churches_Endpoints
             return new WP_Error( __METHOD__, 'User not logged in', array( 'status' => 401 ) );
         }
         $params = dt_recursive_sanitize_array( $request->get_params() );
-        if ( ! isset( $params['church_id'], $params['user_id'] ) ) {
-            return new WP_Error( __METHOD__, 'church_id and user_id required.', array( 'status' => 400 ) );
+        if ( ! isset( $params['church_id'] ) ) {
+            return new WP_Error( __METHOD__, 'church_id required.', array( 'status' => 400 ) );
         }
-        $user_id = zume_validate_user_id_request( $params['user_id'] );
+
+        $user_id = get_current_user_id();
+        $user_id = zume_validate_user_id_request( $user_id );
         if ( is_wp_error( $user_id ) ) {
             return $user_id;
         }
@@ -188,13 +190,7 @@ class Zume_Churches_Endpoints
             return $post_id;
         }
 
-        $fields = [
-            'type' => $params['type'],
-            'subtype' => $params['subtype'],
-            'user_id' => $user_id,
-        ];
-
-        $delete = $wpdb->delete( $table_prefix . 'dt_reports', $fields );
+        $delete = DT_Posts::delete_post( self::$post_type, $post_id );
 
         return $delete;
     }
@@ -228,13 +224,14 @@ class Zume_Churches_Endpoints
             return new WP_Error( 'bad-church-id', 'invalid church_id', array( 'status' => 400 ) );
         }
 
-        $church = DT_Posts::get_post( $this->post_type, $post_id );
+        $type = is_string( $this->post_type );
+        $church = DT_Posts::get_post( self::$post_type, (int) $post_id );
         if ( is_wp_error( $church ) ) {
             return new WP_Error( __METHOD__, 'Failed to access post.', array( 'status' => 400 ) );
         }
 
         if ( $church['assigned_to']['id'] !== "$user_id" ) {
-            return new WP_Error( 'not-authorized', 'you are not authorised', array( 'status' => 400 ) );
+            return new WP_Error( 'not-authorized', 'you are not authorised', array( 'status' => 401 ) );
         }
 
         return $post_id;
