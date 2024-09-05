@@ -91,8 +91,8 @@ class Zume_QR_Redirect
          *
          * https://zume.training/app/qr/?v=2342343
          */
-        else if ( isset( $_GET['v'] ) && !isset( $_GET['l'] ) ) {
-//            dt_write_log( 'Video: ' . $_GET['v'] );
+        else if ( isset( $_GET['id'] ) && !isset( $_GET['l'] ) ) {
+//            dt_write_log( 'Video: ' . $_GET['id'] );
 
             $link = site_url() . '/app/video/?id=';
             $video_id = esc_attr( sanitize_text_field( wp_unslash( $_GET['v'] ) ) );
