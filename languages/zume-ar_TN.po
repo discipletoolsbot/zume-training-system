@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-04 13:07+0000\n"
+"PO-Revision-Date: 2024-09-05 10:43+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -158,7 +158,7 @@ msgstr "التلامذة والكنيسة"
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr "التنفسّ الرّوحي هو نسمعوا ونطّيعوا ربّي"
+msgstr "التنفسّ الرّوحي هو نسمعوا ونطيعوا ربّي"
 
 #: globals.php:2110 site/pages/follow-jesus.php:195
 msgid "Being a disciple means we hear from God and we obey God."
@@ -2489,7 +2489,7 @@ msgstr ""
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr "تذكير هامّ - هل تمّ تعمديك قبل؟"
+msgstr "تذكير هامّ - هل تعمدت قبل؟"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -2691,7 +2691,7 @@ msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"أسأل ربّي مع شكون يحبك إدرّبوا بإستعمال أداة الشهادة في ثلاث دقائق.شارك إسم "
+"أسأل ربّي مع شكون يحبك إدّربوا بإستعمال أداة الشهادة في ثلاث دقائق.شارك إسم "
 "الشخص مع المجموعة قبل متمشي."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
@@ -2756,7 +2756,7 @@ msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
-"إتقسّموا لمجموعات متكوّنة من ثنين ل ثلاثة و إدرّبوا على المجالات الخمسة من صلاة "
+"إتقسّموا لمجموعات متكوّنة من ثنين ل ثلاثة و إدّربوا على المجالات الخمسة من صلاة "
 "البركة ب.ل.ا.س.س مع بعضكم."
 
 #: site/course/course-content.php:1627
@@ -2854,7 +2854,7 @@ msgid ""
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
 msgstr ""
-"في الفيديو هذا باش يتمّ تدريبك على مجموعة 3/3 و مبعد إنزل على زرّ \" آقف\"وادّ"
+"في الفيديو هذا باش يتمّ تدريبك على مجموعة 3/3 و مبعد إنزل على زرّ \" آقف\"وإدّ"
 "رب عليه مع المجموعة."
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4757
@@ -2869,7 +2869,7 @@ msgstr ""
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4758
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
-msgstr "هل تنجّم تكون مجموعة 3/3 كنيسة بسيطة؟ علاه و علاه لا؟"
+msgstr "هل تنجّم تكون مجموعة 3/3 كنيسة بسيطة؟ علاه وعلاه لا؟"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4790
 msgid ""
@@ -2911,8 +2911,8 @@ msgid ""
 "Have you ever learned how to ride a bicycle? Have you ever helped someone "
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
-"هل تعلّمت قبل كيفاه تركّب بسكلات؟ هل عاونت حدّ آخر على التعلّم؟ إذ كان الجواب إيّ "
-"وقتها إنتي تعرف دورة التّدريب."
+"هل تعلّمت قبل كيفاه تركّب بسكلات؟ هل عاونت حدّ آخر على التعلّم؟ إذا كان الجواب إيّ"
+" وقتها إنتي تعرف دورة التّدريب."
 
 #: site/course/course-content.php:2022
 msgid "Have you ever been a part of a Training Cycle?"
@@ -3045,8 +3045,8 @@ msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
 msgstr ""
-"شوف لتالي - إستعمل الأسئلة 5, 6 و7 باش طوّر كيفية الطّاعة والتّدريب والمشارك. "
-"(30 دقيقة)"
+"شوف لتالي - إستعمل الأسئلة 5, 6 و7 باش إطوّر كيفية الطّاعة والتّدريب والمشارك. ("
+"30 دقيقة)"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"

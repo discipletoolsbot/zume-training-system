@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-03 12:44+0000\n"
+"PO-Revision-Date: 2024-09-05 10:43+0000\n"
 "Last-Translator: Buleleng Team <bulelengteam@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/id_ID/>\n"
@@ -2724,7 +2724,7 @@ msgid ""
 "each one with His Spirit."
 msgstr ""
 "Mintalah kepada-Nya untuk memberikan setiap anggota kelompok Anda pikiran "
-"Kristus — dan memenuhi masing-masing dengan Roh-Nya."
+"Kristus — dan memenuhi semua orang dengan Roh-Nya."
 
 #: site/course/course-content.php:1165
 msgid ""
@@ -4535,23 +4535,23 @@ msgstr "Keluar"
 
 #: site/dashboard/dashboard.php:168 site/pages/share.php:119
 msgid "Filter"
-msgstr ""
+msgstr "Saring"
 
 #: site/dashboard/dashboard.php:170
 msgid "Grid View"
-msgstr ""
+msgstr "Tampilan Grid"
 
 #: site/dashboard/dashboard.php:171
 msgid "View Now"
-msgstr ""
+msgstr "Lihat Sekarang"
 
 #: site/dashboard/dashboard.php:172
 msgid "Complete Now"
-msgstr ""
+msgstr "Selesaikan Sekarang"
 
 #: site/dashboard/dashboard.php:173
 msgid "View"
-msgstr ""
+msgstr "Lihat"
 
 #: site/dashboard/dashboard.php:175 site/dashboard/wizard.php:198
 #: site/dashboard/wizard.php:244 site/profile/profile.php:111
@@ -4576,7 +4576,7 @@ msgstr "Tautkan Akun"
 
 #: site/dashboard/dashboard.php:179
 msgid "Communications Email"
-msgstr ""
+msgstr "Email Komunikasi"
 
 #: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:197
 #: site/profile/profile.php:123
@@ -4585,7 +4585,7 @@ msgstr "Kota"
 
 #: site/dashboard/dashboard.php:181
 msgid "No Locations found"
-msgstr ""
+msgstr "Tidak ada lokasi yang ditemukan"
 
 #: site/dashboard/dashboard.php:182 site/dashboard/wizard.php:299
 #: site/dashboard/wizard.php:300 site/dashboard/wizard.php:324
@@ -4595,7 +4595,7 @@ msgstr "Lokasi"
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:304
 #: site/dashboard/wizard.php:308 site/dashboard/wizard.php:325
 msgid "Time"
-msgstr ""
+msgstr "Waktu"
 
 #: site/dashboard/dashboard.php:184 site/dashboard/wizard.php:220
 #: site/dashboard/wizard.php:249 site/pages/_strings-mobile-pwa.php:17
@@ -4606,134 +4606,146 @@ msgstr "Bahasa"
 
 #: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:248
 msgid "Timezone"
-msgstr ""
+msgstr "Zona waktu"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
 msgid "Meeting link"
-msgstr ""
+msgstr "Tautan rapat"
 
 #: site/dashboard/dashboard.php:187
 msgid "Zoom, Google Meet, Microsoft Teams etc."
-msgstr ""
+msgstr "Zoom, Google Meet, Microsoft Teams dll."
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
-msgstr ""
+msgstr "Mengubah Profil"
 
 #: site/dashboard/dashboard.php:190
 msgid "Check out this Zúme concept"
-msgstr ""
+msgstr "Lihat konsep Zúme ini"
 
 #: site/dashboard/dashboard.php:191
 msgid "Preview"
-msgstr ""
+msgstr "Pratinjau"
 
 #: site/dashboard/dashboard.php:192 site/dashboard/dashboard.php:262
 #: site/dashboard/dashboard.php:269
 #, php-format
 msgid "Add new %s"
-msgstr ""
+msgstr "Tambahkan %s baru"
 
 #: site/dashboard/dashboard.php:192
 msgid "Commitment"
-msgstr ""
+msgstr "Komitmen"
 
 #: site/dashboard/dashboard.php:193 site/pages/share.php:77
 msgid "Copy Link"
-msgstr ""
+msgstr "Salin Tautan"
 
 #: site/dashboard/dashboard.php:194
 msgid "Copy this link and send it to your friends 🙂"
-msgstr ""
+msgstr "Salin tautan ini dan kirimkan ke teman Anda 🙂"
 
 #: site/dashboard/dashboard.php:195 site/pages/share.php:79
 msgid "Thanks!"
-msgstr ""
+msgstr "Terima kasih!"
 
 #: site/dashboard/dashboard.php:196
 msgid "Link copied"
-msgstr ""
+msgstr "Tautan disalin"
 
 #: site/dashboard/dashboard.php:197
 msgid "Getting Started"
-msgstr ""
+msgstr "Memulai"
 
 #: site/dashboard/dashboard.php:198 utilities/apis/cta-api.php:285
 #: utilities/apis/cta-api.php:287
 msgid "Set Profile"
-msgstr ""
+msgstr "Atur Profil"
 
 #: site/dashboard/dashboard.php:199
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr ""
+msgstr "Selesaikan Panduan Profil singkat untuk mengatur profil Anda"
 
 #: site/dashboard/dashboard.php:200 site/dashboard/wizard.php:268
 msgid "Join or create a training group"
-msgstr ""
+msgstr "Bergabung atau buat grup pelatihan"
 
 #: site/dashboard/dashboard.php:201
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
+"Bergabunglah dengan salah satu pelatihan online kami atau buat kelompok "
+"pelatihan Anda sendiri dengan panduan kami yang mudah diatur"
 
 #: site/dashboard/dashboard.php:202
 msgid "Create Training Group"
-msgstr ""
+msgstr "Buat Kelompok Pelatihan"
 
 #: site/dashboard/dashboard.php:203
 msgid "Create your own training group with our easy to set up wizard"
 msgstr ""
+"Buat kelompok pelatihan Anda sendiri dengan panduan kami yang mudah diatur"
 
 #: site/dashboard/dashboard.php:204 site/dashboard/wizard.php:327
 msgid "Join Training Group"
-msgstr ""
+msgstr "Bergabung dengan Kelompok Pelatihan"
 
 #: site/dashboard/dashboard.php:205
 msgid "Join an online training group run by a coach"
 msgstr ""
+"Bergabunglah dengan kelompok pelatihan online yang dijalankan oleh seorang "
+"pelatih"
 
 #: site/dashboard/dashboard.php:207
 msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
+"Hubungi pelatih untuk bantuan atau dukungan sebelum, selama, atau setelah "
+"pelatihan."
 
 #: site/dashboard/dashboard.php:209
 msgid "My Progress"
-msgstr ""
+msgstr "Kemajuan Saya"
 
 #: site/dashboard/dashboard.php:210
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
+"Lacak kemajuan kursus Anda dengan tampilan interaktif ini. Belajarlah untuk "
+"mendengarkan, menaati, berbagi, dan melatih orang lain mengenai apa yang "
+"telah Anda pelajari."
 
 #: site/dashboard/dashboard.php:211
 msgid "Information about progress"
-msgstr ""
+msgstr "Informasi tentang kemajuan"
 
 #: site/dashboard/dashboard.php:212
 msgid "My Training"
-msgstr ""
+msgstr "Pelatihan Saya"
 
 #: site/dashboard/dashboard.php:213
 msgid "My Trainings"
-msgstr ""
+msgstr "Pelatihan-pelatihan Saya"
 
 #: site/dashboard/dashboard.php:214
 msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
+"Akses penuh ke konten pelatihan, jadwal, detail kelompok, dan alat untuk "
+"berbagi."
 
 #: site/dashboard/dashboard.php:216
 msgid "Create Your Plan"
-msgstr ""
+msgstr "Buat Rencana Anda"
 
 #: site/dashboard/dashboard.php:218
 msgid "Three Month Plan Locked"
-msgstr ""
+msgstr "Rencana Tiga Bulan Terkunci"
 
 #: site/dashboard/dashboard.php:219
 msgid ""
@@ -4741,64 +4753,73 @@ msgid ""
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
+"Rencana tiga bulan ini merupakan alat yang membantu Anda dalam mengambil "
+"tindakan dan menerapkan alat dan konsep yang dipelajari melalui kursus Zúme. "
+"Rencana ini sangat berguna setelah Anda menyelesaikan pelatihan."
 
 #: site/dashboard/dashboard.php:220
 msgid "Unlock now"
-msgstr ""
+msgstr "Buka kunci sekarang"
 
 #: site/dashboard/dashboard.php:222
 msgid "My Coach"
-msgstr ""
+msgstr "Pelatih saya"
 
 #: site/dashboard/dashboard.php:223
 msgid "Quick access to your coach at all times."
-msgstr ""
+msgstr "Akses cepat ke pelatih Anda setiap saat."
 
 #: site/dashboard/dashboard.php:224
 msgid "My Tools"
-msgstr ""
+msgstr "Alat Saya"
 
 #: site/dashboard/dashboard.php:225
 msgid ""
 "Your My Tools area will unlock as you move through the course, practicing "
 "and developing essential discipleship skills"
 msgstr ""
+"Area Alat Saya akan terbuka saat Anda mengikuti kursus, mempraktikkan dan "
+"mengembangkan keterampilan pemuridan yang penting"
 
 #: site/dashboard/dashboard.php:226
 msgid "My Plans"
-msgstr ""
+msgstr "Rencana Saya"
 
 #: site/dashboard/dashboard.php:227
 msgid ""
 "Unlock the My Plans area by completing your 3-Month plan in the final "
 "session."
 msgstr ""
+"Buka kunci bagian Rencana Saya dengan menyelesaikan rencana 3-Bulan Anda di "
+"sesi terakhir."
 
 #: site/dashboard/dashboard.php:228
 msgid "My Plans are Locked"
-msgstr ""
+msgstr "Rencana Saya Terkunci"
 
 #: site/dashboard/dashboard.php:229
 msgid ""
 "Unlock this area by creating your Three-Month Plan or adding a commitment of "
 "your own."
 msgstr ""
+"Buka bagian ini dengan membuat Rencana Tiga Bulan Anda atau menambahkan "
+"komitmen Anda sendiri."
 
 #: site/dashboard/dashboard.php:230
 msgid "My Churches"
-msgstr ""
+msgstr "Jemaah Saya"
 
 #: site/dashboard/dashboard.php:231
 msgid "Unlock the My Churches area by joining the community."
-msgstr ""
+msgstr "Buka kunci bagian Jemaah Saya dengan bergabung dalam komunitas."
 
 #: site/dashboard/dashboard.php:232
 msgid "My Maps"
-msgstr ""
+msgstr "Peta Saya"
 
 #: site/dashboard/dashboard.php:233
 msgid "My Maps are Locked"
-msgstr ""
+msgstr "Peta Saya Terkunci"
 
 #: site/dashboard/dashboard.php:234
 msgid ""
@@ -4807,41 +4828,46 @@ msgid ""
 "Zúme community and connect with other disciple makers passionate about "
 "seeing the great commission fulfilled."
 msgstr ""
+"Peta saya membantu memperjelas visi Zúme tentang 1 peserta pelatihan dan 2 "
+"jemaah Allah untuk setiap 5.000 orang di AS, dan 50.000 di seluruh dunia. "
+"Untuk membuka Peta Saya, bergabunglah dengan komunitas Zúme dan terhubung "
+"dengan para pembuat murid lainnya yang bersemangat untuk melihat amanat "
+"agung terpenuhi."
 
 #: site/dashboard/dashboard.php:235
 msgid "My Training is Locked"
-msgstr ""
+msgstr "Pelatihan Saya Terkunci"
 
 #: site/dashboard/dashboard.php:239 site/pages/resources.php:128
 #: site/parts/download-slides.php:37 site/parts/download-slides.php:49
 msgid "Intensive Course"
-msgstr ""
+msgstr "Kursus Intensif"
 
 #: site/dashboard/dashboard.php:249 site/dashboard/wizard.php:250
 #: site/pages/home.php:259 site/pages/training.php:142
 #: utilities/apis/cta-api.php:156 utilities/apis/cta-api.php:418
 msgid "Join"
-msgstr ""
+msgstr "Bergabung"
 
 #: site/dashboard/dashboard.php:250
 msgid "Join the community to get access to this area."
-msgstr ""
+msgstr "Bergabunglah dengan komunitas untuk mendapatkan akses ke bagian ini."
 
 #: site/dashboard/dashboard.php:251
 msgid "Community links"
-msgstr ""
+msgstr "Tautan komunitas"
 
 #: site/dashboard/dashboard.php:253
 msgid "Previous Slide"
-msgstr ""
+msgstr "Slide sebelumnya"
 
 #: site/dashboard/dashboard.php:254
 msgid "Next Slide"
-msgstr ""
+msgstr "Slide Berikutnya"
 
 #: site/dashboard/dashboard.php:255
 msgid "Group Members"
-msgstr ""
+msgstr "Anggota Kelompok"
 
 #: site/dashboard/dashboard.php:256
 #, fuzzy
@@ -4850,12 +4876,12 @@ msgstr "Kelompok"
 
 #: site/dashboard/dashboard.php:257
 msgid "Mark Completed"
-msgstr ""
+msgstr "Tandai Sudah Selesai"
 
 #: site/dashboard/dashboard.php:258
 #, php-format
 msgid "Session %d"
-msgstr ""
+msgstr "Sesi %d"
 
 #: site/dashboard/dashboard.php:259 site/pages/_strings-mobile-pwa.php:31
 msgid "Start Session"
@@ -4863,69 +4889,69 @@ msgstr "Memulai sesi"
 
 #: site/dashboard/dashboard.php:260
 msgid "Show details"
-msgstr ""
+msgstr "Tampilkan detail"
 
 #: site/dashboard/dashboard.php:261
 msgid "Edit time"
-msgstr ""
+msgstr "Ubah waktu"
 
 #: site/dashboard/dashboard.php:263
 msgid "Invite Friends"
-msgstr ""
+msgstr "Undang Teman"
 
 #: site/dashboard/dashboard.php:264
 msgid "Click to add your first church"
-msgstr ""
+msgstr "Klik untuk menambahkan jemaah pertama Anda"
 
 #: site/dashboard/dashboard.php:265
 msgid "Church Name"
-msgstr ""
+msgstr "Nama Jemaah Allah"
 
 #: site/dashboard/dashboard.php:266
 msgid "Number of People"
-msgstr ""
+msgstr "Jumlah Orang"
 
 #: site/dashboard/dashboard.php:267
 msgid "Church Location"
-msgstr ""
+msgstr "Lokasi Jemaah Allah"
 
 #: site/dashboard/dashboard.php:268
 msgid "Parent Church"
-msgstr ""
+msgstr "Jemaah Induk"
 
 #: site/dashboard/dashboard.php:269
 msgid "Church"
-msgstr ""
+msgstr "Jemaah"
 
 #: site/dashboard/dashboard.php:270
 msgid "cancel"
-msgstr ""
+msgstr "Batalkan"
 
 #: site/dashboard/dashboard.php:272
 msgid "You have requested a coach"
-msgstr ""
+msgstr "Anda telah meminta pelatih"
 
 #: site/dashboard/dashboard.php:273
 msgid "You have joined a training"
-msgstr ""
+msgstr "Anda telah mengikuti pelatihan"
 
 #: site/dashboard/dashboard.php:274
 msgid "You have set your profile"
-msgstr ""
+msgstr "Anda telah mengatur profil Anda"
 
 #: site/dashboard/dashboard.php:275
 #, php-format
 msgctxt "3-month plan unlocked"
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s tidak terkunci"
 
 #: site/dashboard/dashboard.php:275 utilities/apis/cta-api.php:329
 msgid "3 month plan"
-msgstr ""
+msgstr "Rencana 3 bulan"
 
 #: site/dashboard/dashboard.php:276
 msgid "You have joined the community"
-msgstr ""
+msgstr "Anda telah bergabung dengan komunitas"
 
 #: site/dashboard/dashboard.php:278 site/dashboard/wizard.php:206
 #: site/pages/privacy-policy.php:103
@@ -4934,12 +4960,17 @@ msgid ""
 "of the site and communication, as well as for customer service requests and "
 "coaching."
 msgstr ""
+"Nama asli atau nama panggilan pengguna diperlukan untuk meningkatkan "
+"kualitas pribadi dari situs dan komunikasi, serta untuk permintaan layanan "
+"pelanggan dan pembinaan."
 
 #: site/dashboard/dashboard.php:279 site/pages/privacy-policy.php:109
 msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
+"Alamat email pengguna diperlukan untuk membuat akun dan digunakan untuk "
+"komunikasi transaksional sebagai bagian dari operasi situs."
 
 #: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:207
 #: site/pages/privacy-policy.php:112
@@ -4947,6 +4978,8 @@ msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
 msgstr ""
+"Nomor telepon pengguna diambil dan disimpan untuk mendukung layanan "
+"pelatihan gratis."
 
 #: site/dashboard/dashboard.php:281 site/dashboard/wizard.php:208
 #: site/pages/privacy-policy.php:115
@@ -4954,6 +4987,9 @@ msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
+"Kota domisili pengguna diminta untuk mempersonalisasi sumber daya dan "
+"komunikasi situs, serta menghubungkan pengguna ke sumber daya pelatihan dan "
+"layanan pelanggan yang sesuai."
 
 #: site/dashboard/dashboard.php:282 site/dashboard/wizard.php:236
 #: site/pages/privacy-policy.php:106
@@ -4962,79 +4998,86 @@ msgid ""
 "communication functioning, and to help us connect the user with appropriate "
 "coaching and resources."
 msgstr ""
+"Preferensi bahasa pengguna disimpan untuk mendukung fungsi situs dan "
+"komunikasi yang tepat, dan untuk membantu kami menghubungkan pengguna dengan "
+"pelatihan dan sumber daya yang sesuai."
 
 #: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:328
 msgid "Join key"
-msgstr ""
+msgstr "Bergabunglah dengan kunci"
 
 #: site/dashboard/dashboard.php:284 site/pages/checkin.php:83
 #: site/pages/friend-invite.php:73 site/pages/plan-invite.php:73
 #: site/pages/plan-invite.php:169
 msgid "Not a recognized code. Please check the number."
-msgstr ""
+msgstr "Kode tidak dikenali. Silakan periksa nomornya."
 
 #: site/dashboard/dashboard.php:285
 msgid "You are not authorized to access this page"
-msgstr ""
+msgstr "Anda tidak diizinkan untuk mengakses halaman ini"
 
 #: site/dashboard/dashboard.php:286
 msgid "There has been an error with your request"
-msgstr ""
+msgstr "Telah terjadi kesalahan pada permintaan Anda"
 
 #: site/dashboard/dashboard.php:287
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
+"Terima kasih atas permintaan bimbingan Anda. Tim kami akan berusaha "
+"menghubungkan Anda dengan pelatih yang tersedia di wilayah dan bahasa Anda."
 
 #: site/dashboard/dashboard.php:288
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
+"Harap perhatikan komunikasi dari pelatih Anda dalam preferensi komunikasi "
+"yang Anda tunjukkan."
 
 #: site/dashboard/dashboard.php:289
 msgid "100 Hour Map"
-msgstr ""
+msgstr "Peta 100 Jam"
 
 #: site/dashboard/dashboard.php:290
 msgid "Training vision map"
-msgstr ""
+msgstr "Peta visi pelatihan"
 
 #: site/dashboard/dashboard.php:291
 msgid "Simple church planting map"
-msgstr ""
+msgstr "Peta penanaman jemaah sederhana"
 
 #: site/dashboard/dashboard.php:292
 msgid "No date"
-msgstr ""
+msgstr "Tidak ada tanggal"
 
 #: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:215
 #: zume-training-system.php:357
 msgid "Whatsapp"
-msgstr ""
+msgstr "WhatsApp"
 
 #: site/dashboard/dashboard.php:294 site/dashboard/wizard.php:216
 #: zume-training-system.php:358
 msgid "Signal"
-msgstr ""
+msgstr "Sinyal"
 
 #: site/dashboard/dashboard.php:295 site/dashboard/wizard.php:217
 #: zume-training-system.php:359
 msgid "Telegram"
-msgstr ""
+msgstr "Telegram"
 
 #: site/dashboard/dashboard.php:296 site/dashboard/wizard.php:218
 msgid "Facebook Messenger"
-msgstr ""
+msgstr "Facebook Messenger"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr ""
+msgstr "Jelas"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
-msgstr ""
+msgstr "Hari ini"
 
 #: site/dashboard/dashboard.php:302
 #, fuzzy
@@ -5045,21 +5088,23 @@ msgstr "Daftar Periksa Pembimbingan"
 #, php-format
 msgctxt "public/private group"
 msgid "%s group"
-msgstr ""
+msgstr "Kelompok %s"
 
 #: site/dashboard/dashboard.php:303
 msgid "Private"
-msgstr ""
+msgstr "Pribadi"
 
 #: site/dashboard/dashboard.php:304
 msgid "Public"
-msgstr ""
+msgstr "Publik"
 
 #: site/dashboard/dashboard.php:310
 msgid ""
 "I will share My Story [Testimony] and God‘s Story [the Gospel] with the "
 "following individuals:"
 msgstr ""
+"Saya akan membagikan Kisah Saya [Kesaksian] dan Kisah Allah [Injil] dengan "
+"orang-orang sebagai berikut:"
 
 #: site/dashboard/dashboard.php:311
 msgid ""
@@ -5095,6 +5140,8 @@ msgid ""
 "I will invite the following people to participate in a 3/3 Hope or Discover "
 "Group:"
 msgstr ""
+"Saya akan mengundang orang-orang berikut untuk berpartisipasi dalam Kelompok "
+"Harapan atau Penemuan 3/3:"
 
 #: site/dashboard/dashboard.php:316
 msgid ""
@@ -5112,6 +5159,9 @@ msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
+"Saya akan memperlengkapi orang-orang berikut ini untuk membagikan kisah "
+"mereka dan Kisah Allah serta membuat Daftar 100 dari orang-orang dalam "
+"jaringan relasi mereka:"
 
 #: site/dashboard/dashboard.php:319
 msgid ""
@@ -5148,33 +5198,34 @@ msgstr "Komitmen lainnya:"
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
-msgstr ""
+msgstr "Penyihir"
 
 #: site/dashboard/wizard.php:168
 msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr ""
+msgstr "Penyihir Jahat"
 
 #: site/dashboard/wizard.php:169
+#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr ""
+msgstr "Anda telah bertemu dengan penyihir yang sangat jahat!"
 
 #: site/dashboard/wizard.php:170
 msgid "Wizard is already completed"
-msgstr ""
+msgstr "Penyihir sudah selesai"
 
 #: site/dashboard/wizard.php:171
 msgid "Get back home"
-msgstr ""
+msgstr "Kembali ke rumah"
 
 #: site/dashboard/wizard.php:172 site/login/login-template.php:421
 msgid "Back"
-msgstr ""
+msgstr "Kembali"
 
 #: site/dashboard/wizard.php:173 site/dashboard/wizard.php:192
 #: site/dashboard/wizard.php:204 site/dashboard/wizard.php:227
@@ -5184,7 +5235,7 @@ msgstr "Berikutnya"
 
 #: site/dashboard/wizard.php:174 site/dashboard/wizard.php:306
 msgid "Skip"
-msgstr ""
+msgstr "Lewati"
 
 #: site/dashboard/wizard.php:175 site/pages/_strings-mobile-pwa.php:36
 msgid "Finish"
@@ -5192,11 +5243,11 @@ msgstr "Selesai"
 
 #: site/dashboard/wizard.php:177
 msgid "No locations found"
-msgstr ""
+msgstr "Tidak ada lokasi yang ditemukan"
 
 #: site/dashboard/wizard.php:180
 msgid "Zúme Community"
-msgstr ""
+msgstr "Komunitas Zúme"
 
 #: site/dashboard/wizard.php:181
 msgid ""
@@ -5205,6 +5256,10 @@ msgid ""
 "simple churches for every 5,000 people in the United States and 50,000 "
 "people globally."
 msgstr ""
+"Zúme adalah komunitas yang melakukan praktik dan dukungan bagi mereka yang "
+"ingin melihat kegerakan pemuridan. Visi Zúme adalah melihat satu peserta "
+"pelatihan dan dua jemaah sederhana untuk setiap 5.000 orang di Amerika "
+"Serikat dan 50.000 orang di seluruh dunia."
 
 #: site/dashboard/wizard.php:183
 msgid ""
@@ -5212,10 +5267,13 @@ msgid ""
 "their area. Share your experience with others, and learn from others who are "
 "discovering new things."
 msgstr ""
+"Terhubunglah dengan orang yang seperti Anda yang ingin melihat gerakan "
+"pemuridan di daerah mereka. Bagikan pengalaman Anda dengan orang lain, dan "
+"belajarlah dari orang lain yang menemukan hal-hal baru."
 
 #: site/dashboard/wizard.php:184
 msgid "Encouragement"
-msgstr ""
+msgstr "Memberi Semangat"
 
 #: site/dashboard/wizard.php:185
 msgid ""
@@ -5223,10 +5281,13 @@ msgid ""
 "country, get reports of  progress, and get connected to online and face-to-"
 "face gatherings."
 msgstr ""
+"Dengar berita tentang gerakan pemuridan di wilayah dan negara Anda yang "
+"lebih luas, dapatkan laporan kemajuan, serta terhubunglah dengan pertemuan "
+"daring dan tatap muka."
 
 #: site/dashboard/wizard.php:186
 msgid "Free Tools"
-msgstr ""
+msgstr "Alat Gratis"
 
 #: site/dashboard/wizard.php:187
 msgid ""
@@ -5234,51 +5295,54 @@ msgid ""
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
+"Akses alat gratis untuk melacak pemuridan dan pendirian jemaah Allah di "
+"daerah Anda. Dapatkan peta untuk memberi visi agar memenuhi kota Anda dengan "
+"murid dan jemaah yang terus bertambah."
 
 #: site/dashboard/wizard.php:188
 msgid "Join for Free"
-msgstr ""
+msgstr "Bergabung secara Gratis"
 
 #: site/dashboard/wizard.php:189
 msgid "Successfully joined community"
-msgstr ""
+msgstr "Berhasil bergabung dengan komunitas"
 
 #: site/dashboard/wizard.php:190 site/dashboard/wizard.php:243
 #: site/dashboard/wizard.php:258 site/dashboard/wizard.php:265
 msgid "Something went wrong"
-msgstr ""
+msgstr "Sesuatu bermasalah"
 
 #: site/dashboard/wizard.php:195
 msgid "Complete your profile"
-msgstr ""
+msgstr "Lengkapi profil Anda"
 
 #: site/dashboard/wizard.php:199
 msgid "What is your name?"
-msgstr ""
+msgstr "Siapa nama Anda?"
 
 #: site/dashboard/wizard.php:200
 msgid "What is your phone number?"
-msgstr ""
+msgstr "Berapa nomor telepon Anda?"
 
 #: site/dashboard/wizard.php:201
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr ""
+msgstr "Nomor telepon hanya dapat berisi angka, tanda kurung, dan tanda hubung"
 
 #: site/dashboard/wizard.php:202
 msgid "What city do you live in?"
-msgstr ""
+msgstr "Di kota mana Anda tinggal?"
 
 #: site/dashboard/wizard.php:203
 msgid "This is your approximate location."
-msgstr ""
+msgstr "Ini perkiraan lokasi Anda."
 
 #: site/dashboard/wizard.php:205 site/parts/footer.php:57
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Kebijakan Privasi"
 
 #: site/dashboard/wizard.php:211
 msgid "What is your contact preference?"
-msgstr ""
+msgstr "Apa preferensi kontak Anda?"
 
 #: site/dashboard/wizard.php:213 zume-training-system.php:355
 msgid "Text"
@@ -5286,7 +5350,7 @@ msgstr "SMS"
 
 #: site/dashboard/wizard.php:219
 msgid "What is your language preference?"
-msgstr ""
+msgstr "Apa preferensi bahasa Anda?"
 
 #: site/dashboard/wizard.php:221
 msgid "How can we serve you?"
@@ -5294,66 +5358,69 @@ msgstr "Bagaimana kami dapat melayani Anda?"
 
 #: site/dashboard/wizard.php:223
 msgid "Technical Assistance"
-msgstr ""
+msgstr "Bantuan Teknis"
 
 #: site/dashboard/wizard.php:224
 msgid "Question about implementing the training"
-msgstr ""
+msgstr "Pertanyaan mengenai pelaksanaan pelatihan"
 
 #: site/dashboard/wizard.php:225
 msgid "Question about the content"
-msgstr ""
+msgstr "Pertanyaan tentang isi"
 
 #: site/dashboard/wizard.php:226
 msgid "Help with what to do after starting a group"
-msgstr ""
+msgstr "Bantu dengan apa yang harus dilakukan setelah memulai kelompok"
 
 #: site/dashboard/wizard.php:228
 msgid "Please give a response to this question"
-msgstr ""
+msgstr "Tolong berikan jawaban untuk pertanyaan ini"
 
 #: site/dashboard/wizard.php:229
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
+"Permintaan Dikirim, kami akan berusaha sebaik mungkin untuk menghubungkan "
+"Anda dengan pelatih di dekat Anda."
 
 #: site/dashboard/wizard.php:230
 msgid "Sorry. We were unable to submit your request. Please try again later."
 msgstr ""
+"Maaf. Kami tidak dapat mengirimkan permintaan Anda. Silakan coba lagi nanti."
 
 #: site/dashboard/wizard.php:231
 msgid "You have already requested a coach"
-msgstr ""
+msgstr "Anda sudah meminta pelatih"
 
 #: site/dashboard/wizard.php:232
 msgid "Error connecting with a coach"
-msgstr ""
+msgstr "Terjadi kesalahan saat menghubungkan dengan pelatih"
 
 #: site/dashboard/wizard.php:233
 msgid "Connecting you to a Coach"
-msgstr ""
+msgstr "Menghubungkan Anda dengan Pelatih"
 
 #: site/dashboard/wizard.php:234 site/dashboard/wizard.php:240
 #: site/dashboard/wizard.php:255 site/dashboard/wizard.php:262
 msgid "Please wait while we connect you"
-msgstr ""
+msgstr "Harap tunggu sementara kami menghubungkan Anda"
 
 #: site/dashboard/wizard.php:239
 msgid "Joining Plan"
-msgstr ""
+msgstr "Bergabung dengan Rencana"
 
 #: site/dashboard/wizard.php:241 site/dashboard/wizard.php:329
 msgid "The training link is broken. Please try again."
-msgstr ""
+msgstr "Tautan pelatihan eror. Silakan coba lagi."
 
 #: site/dashboard/wizard.php:242
 #, php-format
 msgid "Successfully joined training %s"
-msgstr ""
+msgstr "Berhasil mengikuti pelatihan %s"
 
 #: site/dashboard/wizard.php:245
 msgid "Next Session Date"
-msgstr ""
+msgstr "Tanggal Sesi Berikutnya"
 
 #: site/dashboard/wizard.php:247
 msgid "Start Time"
