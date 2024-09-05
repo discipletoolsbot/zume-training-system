@@ -14,6 +14,11 @@ export class DashChurches extends DashPage {
         };
     }
 
+    lng
+    lat
+    level
+    locationLabel
+
     constructor() {
         super()
         this.showTeaser = false
@@ -175,24 +180,69 @@ export class DashChurches extends DashPage {
         this.addChurch()
     }
     addChurch() {
-        /* Get details from modal */
+        console.log(
+            this.lat,
+            this.lng,
+            this.level,
+            this.locationLabel,
+            this.churchName,
+            this.startDate,
+            this.churchMembers,
+            this.parentChurch,
+        )
+
+        if (
+            !this.lat ||
+            !this.lng ||
+            !this.churchName ||
+            !this.startDate ||
+            !this.churchMembers
+        ) {
+            console.error('Missing form thing')
+            return
+        }
+
         /* Post new church up to API */
+        const data = {
+            name: this.churchName,
+            member_count: this.churchMembers,
+            start_date: this.startDate,
+            location_grid_meta: {
+                values: [],
+                force_values: true
+            }
+        }
+
+        if (this.parentChurch) {
+            data.parent_church = this.parentChurch
+        }
+
+        const churchLocation = {
+            lng: this.lng,
+            lat: this.lat,
+            source: 'user'
+        }
+
+        if (this.level && this.locationLabel) {
+            churchLocation.level = this.level
+            churchLocation.label = this.locationLabel
+        }
+
+        data.location_grid_meta.values.push(churchLocation)
+
         /* Insert church into the churches and reorder */
+        zumeRequest.post('church', data)
+            .then((result) => {
+                console.log(result)
+                this.closeChurchModal()
+            })
+            .catch((error) => {
+                console.error(error)
+            })
 
-        /*
-                        location_grid_meta: {
-                    values: [
-                        {
-                            lng: lng,
-                            lat: lat,
-                            source: 'user'
-                        }
-                    ],
-                    force_values: window.force_values
-                }
-        */
 
-        this.closeChurchModal()
+
+        //
     }
     editChurch(id) {
         console.log('edit church', id)
@@ -220,6 +270,9 @@ export class DashChurches extends DashPage {
         jQuery('#add-church-form input').each(function(value) {
             this.value = ''
         })
+        document.querySelector('#add-church-form select').value = ''
+        this.lat = undefined
+        this.lng = undefined
     }
 
     renderChurchOption({ id, name }) {
@@ -336,15 +389,15 @@ export class DashChurches extends DashPage {
                     <div id="add-church-form">
                         <div>
                             <label for="church-name">${jsObject.translations.church_name}</label>
-                            <input id="church-name" name="church-name" type="text" />
+                            <input id="church-name" name="church-name" type="text" value=${this.churchName || ''} @change=${(e) => this.churchName = e.target.value}/>
                         </div>
                         <div>
                             <label for="church-start-date">${jsObject.translations.start_date}</label>
-                            <input id="church-start-date" name="church-start-date" type="date" />
+                            <input id="church-start-date" name="church-start-date" type="date" value=${this.startDate || ''} @change=${(e) => this.startDate = e.target.value} />
                         </div>
                         <div>
                             <label for="number-of-people">${jsObject.translations.number_of_people}</label>
-                            <input id="number-of-people" name="number-of-people" type="number" />
+                            <input id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${(e) => this.churchMembers = e.target.value} />
                         </div>
                         <div>
                             <label for="church-location">${jsObject.translations.church_location}</label>
@@ -355,7 +408,7 @@ export class DashChurches extends DashPage {
                         </div>
                         <div>
                             <label for="parent-church">${jsObject.translations.parent_church}</label>
-                            <select id="parent-church" name="parent-church" >
+                            <select id="parent-church" name="parent-church" @change=${(e) => this.parentChurch = e.target.value} >
                                 <option value="">---</option>
                                 ${
                                     repeat(this.sortedChurches, ({id}) => id, this.renderChurchOption)

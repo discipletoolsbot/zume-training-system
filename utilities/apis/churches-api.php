@@ -6,7 +6,7 @@ if ( !defined( 'ABSPATH' ) ) {
 class Zume_Churches_Endpoints
 {
     private $namespace;
-    private static $post_type = 'zume_churches';
+    private static $post_type = 'groups';
     private static $_instance = null;
     public static function instance() {
         if ( is_null( self::$_instance ) ) {
@@ -82,37 +82,39 @@ class Zume_Churches_Endpoints
     public function create_church( WP_REST_Request $request ){
         $params = dt_recursive_sanitize_array( $request->get_params() );
 
-        if ( !isset( $params['title'] ) || empty( $params['title'] ) ) {
-            $current_user = wp_get_current_user();
-            $churches = zume_get_user_churches( $params['user_id'] );
-
-            if ( empty( $churches ) ) {
-                $title = sprintf( _x( 'My first training - %s', 'My first training - username', 'zume' ), $current_user->display_name );
-            } else {
-                $title = sprintf( _x( 'Training %1$d - %2$s', 'Training 2 - username', 'zume' ), count( $churches ) + 1, $current_user->display_name );
-            }
-        } else {
-            $title = $params['title'];
+        if ( !isset(
+            $params['name'],
+            $params['location_grid_meta'],
+            $params['start_date'],
+            $params['member_count'],
+        ) ) {
+            return new WP_Error( __METHOD__, 'Missing params', array( 'status' => 400 ) );
         }
 
+        $user_id = get_current_user_id();
+        $contact_id = zume_get_user_contact_id( $user_id );
         $fields = [
-            'title' => $title,
-            'assigned_to' => $params['user_id'],
-            'set_type' => isset( $params['set_type'] ) ? $params['set_type'] : '',
-            'visibility' => 'private',
-            'participants' => [
+            'title' => $params['name'],
+            'assigned_to' => $user_id,
+            'group_type' => 'church',
+            'group_status' => 'active',
+            'location_grid_meta' => $params['location_grid_meta'],
+            'reporter' => [
                 'values' => [
-                    [
-                        'value' => $params['contact_id'],
-                    ],
+                    [ 'value' => $contact_id ],
                 ],
             ],
+            'member_count' => $params['member_count'],
+            'start_date' => $params['start_date'],
+            'church_start_date' => $params['start_date'],
         ];
 
-        if ( isset( $params['set'] ) && is_array( $params['set'] ) ) {
-            foreach ( $params['set'] as $key => $value ) {
-                $fields[ $key ] = $value;
-            }
+        if ( isset( $params['parent_church'] ) ) {
+            $fields['parent_groups'] = [
+                'values' => [
+                    [ 'value' => $params['parent_church'] ],
+                ],
+            ];
         }
 
         $new_post = DT_Posts::create_post( self::$post_type, $fields, true, false );
@@ -174,7 +176,7 @@ class Zume_Churches_Endpoints
         }
         $params = dt_recursive_sanitize_array( $request->get_params() );
         if ( ! isset( $params['church_id'], $params['user_id'] ) ) {
-            return new WP_Error( __METHOD__, 'church_id and user_id required.', array( 'status' => 401 ) );
+            return new WP_Error( __METHOD__, 'church_id and user_id required.', array( 'status' => 400 ) );
         }
         $user_id = zume_validate_user_id_request( $params['user_id'] );
         if ( is_wp_error( $user_id ) ) {
@@ -208,7 +210,7 @@ class Zume_Churches_Endpoints
 
         $church = DT_Posts::get_post( self::$post_type, $post_id, true, false );
         if ( is_wp_error( $church ) ) {
-            return new WP_Error( __METHOD__, 'Failed to get post.', array( 'status' => 401 ) );
+            return new WP_Error( __METHOD__, 'Failed to get post.', array( 'status' => 400 ) );
         }
 
         if ( $church['assigned_to']['id'] !== "$user_id" ) {
@@ -228,7 +230,7 @@ class Zume_Churches_Endpoints
 
         $church = DT_Posts::get_post( $this->post_type, $post_id );
         if ( is_wp_error( $church ) ) {
-            return new WP_Error( __METHOD__, 'Failed to access post.', array( 'status' => 401 ) );
+            return new WP_Error( __METHOD__, 'Failed to access post.', array( 'status' => 400 ) );
         }
 
         if ( $church['assigned_to']['id'] !== "$user_id" ) {
