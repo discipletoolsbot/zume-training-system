@@ -11,7 +11,6 @@ export class DashChurches extends DashPage {
             showTeaser: { type: Boolean },
             orderedChurches: { type: Array, attribute: false },
             sortedChurches: { type: Array, attribute: false },
-            locationLabel: { type: String, attribute: false },
             formErrors: { type: Boolean, attribute: false },
             loading: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
@@ -106,6 +105,7 @@ export class DashChurches extends DashPage {
             this.addMarkerToMap(e.lngLat)
 
             this.locationLabel = ''
+            this.updateLocationLabelInForm()
         }).bind(this))
 
         const geocoder = new MapboxGeocoder({
@@ -125,6 +125,7 @@ export class DashChurches extends DashPage {
             this.lat = e.result.center[1]
             this.level = e.result.place_type[0]
             this.locationLabel = e.result.place_name
+            this.updateLocationLabelInForm()
 
         }).bind(this))
 
@@ -153,6 +154,7 @@ export class DashChurches extends DashPage {
             this.addMarkerToMap({ lng, lat })
 
             this.locationLabel = ''
+            this.updateLocationLabelInForm()
         }).bind(this))
     }
 
@@ -172,6 +174,9 @@ export class DashChurches extends DashPage {
         this.active_marker = new mapboxgl.Marker()
             .setLngLat(center)
             .addTo(this.map);
+    }
+    updateLocationLabelInForm(label) {
+        document.getElementById('location-label').textContent = this.locationLabel || ''
     }
 
     joinCommunity() {
@@ -429,10 +434,10 @@ export class DashChurches extends DashPage {
         jQuery(modal).foundation('open')
 
         document.getElementById('church-name').value = this.churchName || ''
-        document.getElementById('number-of-people').value = this.churchMembers || ''
-        document.getElementById('location-label').innerText = this.locationLabel || ''
         document.getElementById('church-start-date').value = this.startDate || ''
+        document.getElementById('number-of-people').value = this.churchMembers || ''
         document.getElementById('parent-church').value = `${this.parentChurch}` || ''
+        this.updateLocationLabelInForm()
 
         this.initialiseMap()
 
@@ -622,7 +627,7 @@ export class DashChurches extends DashPage {
                         </div>
                         <div class="form-group">
                             <label for="church-location">${jsObject.translations.church_location}*</label>
-                            <span id="location-label">${this.locationLabel}</span>
+                            <span id="location-label"></span>
                             ${
                                 this.formErrors && !this.lat ? html`
                                     <span class="input-error">${jsObject.translations.missing_field}</span>
