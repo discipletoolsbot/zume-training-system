@@ -1129,21 +1129,21 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                     <div id="add-church-form" class="stack">
                         <div class="form-group">
                             <label for="church-name">${jsObject.translations.church_name}*</label>
-                            <input class="input" id="church-name" name="church-name" type="text" value=${this.churchName||""} @change=${e=>this.churchName=e.target.value}/>
+                            <input class="input" id="church-name" name="church-name" type="text" @change=${e=>this.churchName=e.target.value}/>
                             ${this.formErrors&&!this.churchName?c`
                                     <span class="input-error">${jsObject.translations.missing_field}</span>
                                 `:""}
                         </div>
                         <div class="form-group">
                             <label for="church-start-date">${jsObject.translations.start_date}*</label>
-                            <input class="input" id="church-start-date" name="church-start-date" type="date" value=${this.startDate||""} @change=${e=>this.startDate=e.target.value} />
+                            <input class="input" id="church-start-date" name="church-start-date" type="date" @change=${e=>this.startDate=e.target.value} />
                             ${this.formErrors&&!this.startDate?c`
                                     <span class="input-error">${jsObject.translations.missing_field}</span>
                                 `:""}
                         </div>
                         <div class="form-group">
                             <label for="number-of-people">${jsObject.translations.number_of_people}*</label>
-                            <input class="input" id="number-of-people" name="number-of-people" type="number" value=${this.churchMembers} @change=${e=>this.churchMembers=e.target.value} />
+                            <input class="input" id="number-of-people" name="number-of-people" type="number" @change=${e=>this.churchMembers=e.target.value} />
                             ${this.formErrors&&!this.churchMembers?c`
                                     <span class="input-error">${jsObject.translations.missing_field}</span>
                                 `:""}
