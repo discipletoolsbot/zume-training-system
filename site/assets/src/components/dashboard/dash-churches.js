@@ -382,6 +382,7 @@ export class DashChurches extends DashPage {
         const deletedChurch = this.churches.find((church) => church.id === id)
         const deletedChurchPosition = this.churches.findIndex((church) => church.id === id)
         const childChurchIds = []
+        let parentChurchId
         this.churches = this.churches
             .filter((church) => church.id !== id)
             .map((church) => {
@@ -390,6 +391,14 @@ export class DashChurches extends DashPage {
                     return {
                         ...church,
                         parent: null,
+                    }
+                }
+                if (church.children.includes(id)) {
+                    parentChurchId = church.id
+                    return {
+                        ...church,
+                        children: church.children.filter((churchId) => churchId !== id)
+
                     }
                 }
                 return church
@@ -413,6 +422,15 @@ export class DashChurches extends DashPage {
                         return {
                             ...church,
                             parent: id
+                        }
+                    }
+                    if (parentChurchId === church.id) {
+                        return {
+                            ...church,
+                            children: [
+                                ...church.children,
+                                id,
+                            ]
                         }
                     }
                     return church

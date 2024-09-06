@@ -118,12 +118,10 @@ class Zume_Churches_Endpoints
         }
 
         $new_post = DT_Posts::create_post( self::$post_type, $fields, true, false );
-        $churches = zume_get_user_churches( $user_id );
 
-        foreach ( $churches as $church ) {
-            if ( $church['id'] === $new_post['ID'] ) {
-                return $church;
-            }
+        $church = $this->get_user_church( $new_post['ID'] );
+        if ( $church ) {
+            return $church;
         }
 
         return $new_post;
@@ -182,13 +180,10 @@ class Zume_Churches_Endpoints
             return $result;
         }
 
-        $churches = zume_get_user_churches();
-        foreach ( $churches as $church ) {
-            if ( $church['id'] === $result['ID'] ) {
-                return $church;
-            }
+        $church = $this->get_user_church( $result['ID'] );
+        if ( $church ) {
+            return $church;
         }
-
         return $result;
     }
     public function delete_church( WP_REST_Request $request ) {
@@ -211,6 +206,11 @@ class Zume_Churches_Endpoints
         $post_id = $this->can_user_edit_church( $params['church_id'], $user_id );
         if ( is_wp_error( $post_id ) ) {
             return $post_id;
+        }
+
+        $church = $this->get_user_church( (int) $post_id );
+        if ( !empty( $church['children'] ) ) {
+            return new WP_Error( __METHOD__, 'churches with children cannot be deleted', array( 'status' => 400 ) );
         }
 
         $delete = DT_Posts::delete_post( self::$post_type, $post_id );
@@ -258,6 +258,15 @@ class Zume_Churches_Endpoints
         }
 
         return $post_id;
+    }
+
+    private function get_user_church( $post_id ) {
+        $churches = zume_get_user_churches();
+        foreach ( $churches as $church ) {
+            if ( $church['id'] === $post_id ) {
+                return $church;
+            }
+        }
     }
 }
 Zume_Churches_Endpoints::instance();
