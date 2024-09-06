@@ -282,6 +282,8 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'church_location' => __( 'Church Location', 'zume' ),
             'parent_church' => __( 'Parent Church', 'zume' ),
             'start_date' => __( 'Start Date', 'zume' ),
+            'mark_active' => __( 'Mark Active', 'zume' ),
+            'mark_inactive' => __( 'Mark Inactive', 'zume' ),
             'add_new_church' => sprintf( __( 'Add new %s', 'zume' ), __( 'Church', 'zume' ) ),
             'cancel' => __( 'cancel', 'zume' ),
             'congratulations' => __( 'Congratulations!', 'zume' ),

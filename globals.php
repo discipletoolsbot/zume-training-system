@@ -731,6 +731,7 @@ if ( ! function_exists( 'zume_get_user_churches' ) ) {
             $new_church['name'] = $church['name'];
             $new_church['member_count'] = $church['member_count'] ?? 0;
             $new_church['start_date'] = $church['start_date'] ?? [];
+            $new_church['status'] = $church['group_status']['key'] ?? "";
             $new_church['location'] = $church['location_grid'][0]['label'] ?? '';
             $new_church['location_meta'] = $church['location_grid_meta'][0] ?? [];
             $new_church['parent'] = !empty( $church['parent_groups'] ) ? $church['parent_groups'][0]['ID'] : null;

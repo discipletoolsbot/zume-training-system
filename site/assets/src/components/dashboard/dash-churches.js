@@ -374,6 +374,40 @@ export class DashChurches extends DashPage {
             this.closeChurchModal()
         })
     }
+    activateChurch(id) {
+        this.closeKebabMenu(id)
+        zumeRequest.put(`church/${id}/activate`)
+            .then(() => {
+                this.churches = this.churches.map((church) => {
+                    if (church.id === id) {
+                        return {
+                            ...church,
+                            status: 'active',
+                        }
+                    }
+                    return church
+                })
+                this.orderChurches()
+            })
+            .catch(console.error)
+    }
+    deactivateChurch(id) {
+        this.closeKebabMenu(id)
+        zumeRequest.put(`church/${id}/deactivate`)
+            .then(() => {
+                this.churches = this.churches.map((church) => {
+                    if (church.id === id) {
+                        return {
+                            ...church,
+                            status: 'inactive',
+                        }
+                    }
+                    return church
+                })
+                this.orderChurches()
+            })
+            .catch(console.error)
+    }
     confirmDeleteChurch(id) {
         this.confirmDelete = id
     }
@@ -515,15 +549,22 @@ export class DashChurches extends DashPage {
             <option value=${id}>${name}</option>
         `
     }
-    renderChurch({ id, name, location, generation }) {
+    renderChurch({ id, name, location, generation, status }) {
         return html`
             <li
-                class="list__item"
+                class="list__item ${status === 'inactive' ? 'bg-gray-300' : ''}"
                 data-depth=${generation - 1}
                 style=${`--depth: ${generation - 1}`}
             >
                 <div class="list__primary f-medium" data-large-gap>
-                    <span>${name}</span>
+                    <div class="stack--3">
+                        <span>${name}</span>
+                        ${
+                            status === 'inactive' ? html`
+                                <span class="f--1">(${jsObject.translations.inactive})</span>
+                            ` : ''
+                        }
+                    </div>
                     <span>${location}</span>
                 </div>
                 <div class="list__secondary">
@@ -537,8 +578,19 @@ export class DashChurches extends DashPage {
                             <button class="menu-btn" @click=${() => this.openEditChurchModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
                         </li>
                         <li class="${!!this.confirmDelete || !this.isLeafChurch(id) ? 'hidden' : ''}">
-                            <button class="menu-btn red ${!!this.confirmDelete ? 'hidden' : ''}" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
+                            <button class="menu-btn red" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
                         </li>
+                        ${
+                            status === 'active' ? html`
+                                <li class="${!!this.confirmDelete || this.isLeafChurch(id) ? 'hidden' : ''}">
+                                    <button class="menu-btn red" @click=${() => this.deactivateChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.mark_inactive}</button>
+                                </li>
+                            ` : html`
+                                <li class="${!!this.confirmDelete || this.isLeafChurch(id) ? 'hidden' : ''}">
+                                    <button class="menu-btn red" @click=${() => this.activateChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.mark_active}</button>
+                                </li>
+                            `
+                        }
                         <li class="${!!this.confirmDelete ? '' : 'hidden'} stack">
                             <p class="bold f-1">${jsObject.translations.delete}?</p>
                             <div class="cluster">

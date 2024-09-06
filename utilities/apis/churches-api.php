@@ -31,7 +31,7 @@ class Zume_Churches_Endpoints
             ]
         );
         register_rest_route(
-            $this->namespace, '/church/(?P<code>\w+)', [
+            $this->namespace, '/church/(?P<post_id>\w+)', [
                 'methods' => 'GET',
                 'callback' => [ $this, 'get_church' ],
                 'permission_callback' => 'is_user_logged_in',
@@ -41,6 +41,20 @@ class Zume_Churches_Endpoints
             $this->namespace, '/church', [
                 'methods' => 'POST',
                 'callback' => [ $this, 'create_church' ],
+                'permission_callback' => 'is_user_logged_in',
+            ]
+        );
+        register_rest_route(
+            $this->namespace, '/church/(?P<post_id>\w+)/deactivate', [
+                'methods' => 'PUT',
+                'callback' => [ $this, 'deactivate_church' ],
+                'permission_callback' => 'is_user_logged_in',
+            ]
+        );
+        register_rest_route(
+            $this->namespace, '/church/(?P<post_id>\w+)/activate', [
+                'methods' => 'PUT',
+                'callback' => [ $this, 'activate_church' ],
                 'permission_callback' => 'is_user_logged_in',
             ]
         );
@@ -67,10 +81,10 @@ class Zume_Churches_Endpoints
     }
     public function get_church( WP_REST_Request $request ) {
         /* Get the plan */
-        $code = $request['code'];
+        $post_id = $request['post_id'];
 
         $user_id = get_current_user_id();
-        $post_id = $this->can_user_access_church( $code, $user_id );
+        $post_id = $this->can_user_access_church( $post_id, $user_id );
         if ( is_wp_error( $post_id ) ) {
             return $post_id;
         }
@@ -184,6 +198,30 @@ class Zume_Churches_Endpoints
         if ( $church ) {
             return $church;
         }
+        return $result;
+    }
+    public function activate_church( WP_REST_Request $request ) {
+        $post_id = $request['post_id'];
+
+        $post_id = $this->can_user_edit_church( $post_id );
+        if ( is_wp_error( $post_id ) ) {
+            return $post_id;
+        }
+
+        $result = DT_Posts::update_post( self::$post_type, (int) $post_id, [ 'group_status' => 'active' ], true, false );
+
+        return $result;
+    }
+    public function deactivate_church( WP_REST_Request $request ) {
+        $post_id = $request['post_id'];
+
+        $post_id = $this->can_user_edit_church( $post_id );
+        if ( is_wp_error( $post_id ) ) {
+            return $post_id;
+        }
+
+        $result = DT_Posts::update_post( self::$post_type, (int) $post_id, [ 'group_status' => 'inactive' ], true, false );
+
         return $result;
     }
     public function delete_church( WP_REST_Request $request ) {
