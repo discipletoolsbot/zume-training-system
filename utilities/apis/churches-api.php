@@ -157,6 +157,11 @@ class Zume_Churches_Endpoints
         ];
 
         if ( isset( $params['parent_church'] ) ) {
+
+            /* Parent church can't be itself */
+
+            /* Parent church can't be a downstream church */
+
             $fields['parent_groups'] = [
                 'values' => [
                     [ 'value' => $params['parent_church'] ],

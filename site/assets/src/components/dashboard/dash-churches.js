@@ -200,7 +200,7 @@ export class DashChurches extends DashPage {
     processChurch(churchID, generation) {
         const newGeneration = generation + 1
 
-        const church = this.churches.find((church) => church.id === churchID)
+        const church = this.getChurch(churchID)
 
         if (!church) {
             console.log(churchID, 'not found')
@@ -214,6 +214,20 @@ export class DashChurches extends DashPage {
         church.children.forEach((id) => {
             this.processChurch(id, newGeneration)
         })
+    }
+    isLeafChurch(id) {
+        const church = this.getChurch(id)
+
+        if (!church) {
+            return false
+        }
+
+        return church.children.length === 0
+    }
+
+    getChurch(id) {
+        const church = this.churches.find((church) => church.id === id)
+        return church
     }
 
     handleSubmit(event) {
@@ -504,7 +518,7 @@ export class DashChurches extends DashPage {
                         <li class="${!!this.confirmDelete ? 'hidden' : ''}">
                             <button class="menu-btn" @click=${() => this.openEditChurchModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
                         </li>
-                        <li class="${!!this.confirmDelete ? 'hidden' : ''}">
+                        <li class="${!!this.confirmDelete || !this.isLeafChurch(id) ? 'hidden' : ''}">
                             <button class="menu-btn red ${!!this.confirmDelete ? 'hidden' : ''}" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
                         </li>
                         <li class="${!!this.confirmDelete ? '' : 'hidden'} stack">
