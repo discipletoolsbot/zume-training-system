@@ -305,7 +305,7 @@ export class DashChurches extends DashPage {
             })
             .catch((error) => {
                 console.error(error)
-                this.showErrorMessage(message);
+                this.showErrorMessage();
             })
             .finally(() => {
                 this.loading = false
@@ -314,8 +314,13 @@ export class DashChurches extends DashPage {
     }
     showErrorMessage(message) {
         this.errorMessage = message || jsObject.translations.error;
+        const warningBanner = document.querySelector('.church-warning-banner')
+        warningBanner.textContent = this.errorMessage
+        warningBanner.dataset.state = ''
         setTimeout(() => {
             this.errorMessage = '';
+            warningBanner.textContent = ''
+            warningBanner.dataset.state = 'empty'
         }, 3000);
     }
 
@@ -596,7 +601,7 @@ export class DashChurches extends DashPage {
                 </button>
                 <div class="stack">
                     <h2>${jsObject.translations.my_churches}</h2>
-                    <div class="warning banner" data-state=${this.errorMessage.length ? '' : 'empty'}>${this.errorMessage}</div>
+                    <div class="warning banner church-warning-banner" data-state='empty'></div>
                     <div id="add-church-form" class="stack">
                         <div class="form-group">
                             <label for="church-name">${jsObject.translations.church_name}*</label>
