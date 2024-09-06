@@ -16,6 +16,7 @@ export class DashChurches extends DashPage {
             loading: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
             confirmDelete: { type: Number, attribute: false },
+            mode: { type: String, attribute: false },
         };
     }
 
@@ -23,6 +24,7 @@ export class DashChurches extends DashPage {
     lat
     level
     locationLabel
+    mode
 
     constructor() {
         super()
@@ -41,9 +43,11 @@ export class DashChurches extends DashPage {
 
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
+        this.editChurch = this.editChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.orderChurches = this.orderChurches.bind(this)
         this.deleteChurch = this.deleteChurch.bind(this)
+        this.addMarkerToMap = this.addMarkerToMap.bind(this)
 
         /* Remove old overlays that have been orphaned by moving around the app */
         document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
@@ -75,7 +79,7 @@ export class DashChurches extends DashPage {
     initialiseMap() {
 
         let center, zoom
-        if ( this.lng ) {
+        if (this.lng) {
             center = [this.lng, this.lat]
             zoom = 5
         } else {
@@ -96,12 +100,10 @@ export class DashChurches extends DashPage {
             this.lng = lng
             this.lat = lat
 
-            if ( this.active_marker ) {
+            if (this.active_marker) {
                 this.active_marker.remove()
             }
-            this.active_marker = new mapboxgl.Marker()
-                .setLngLat(e.lngLat )
-                .addTo(this.map);
+            this.addMarkerToMap(e.lngLat)
 
             this.locationLabel = ''
         }).bind(this))
@@ -111,14 +113,12 @@ export class DashChurches extends DashPage {
             types: 'country region district locality neighborhood address place',
             mapboxgl: mapboxgl
         });
-        this.map.addControl(geocoder, 'top-left' );
-        geocoder.on('result', (function(e) { // respond to search
-            if ( this.active_marker ) {
+        this.map.addControl(geocoder, 'top-left');
+        geocoder.on('result', (function (e) { // respond to search
+            if (this.active_marker) {
                 this.active_marker.remove()
             }
-            this.active_marker = new mapboxgl.Marker()
-                .setLngLat(e.result.center)
-                .addTo(this.map);
+            this.addMarkerToMap(e.result.center)
             geocoder._removeMarker()
 
             this.lng = e.result.center[0]
@@ -150,12 +150,28 @@ export class DashChurches extends DashPage {
             this.lat = lat
             this.lng = lng
 
-            this.active_marker = new mapboxgl.Marker()
-                .setLngLat([lng, lat])
-                .addTo(this.map);
+            this.addMarkerToMap({ lng, lat })
 
             this.locationLabel = ''
         }).bind(this))
+    }
+
+    addMarkerToMap(latLng) {
+        let lat, lng
+        if (Array.isArray(latLng)) {
+            lng = latLng[0]
+            lat = latLng[1]
+        } else {
+            lat = latLng.lat
+            lng = latLng.lng
+        }
+        const center = [
+            lng,
+            lat,
+        ]
+        this.active_marker = new mapboxgl.Marker()
+            .setLngLat(center)
+            .addTo(this.map);
     }
 
     joinCommunity() {
@@ -173,7 +189,7 @@ export class DashChurches extends DashPage {
             this.processChurch(rootNode.id, 0)
         }
 
-        this.orderedChurches = [ ...this.orderedChurches ]
+        this.orderedChurches = [...this.orderedChurches]
     }
 
     processChurch(churchID, generation) {
@@ -198,11 +214,39 @@ export class DashChurches extends DashPage {
     handleSubmit(event) {
         event.preventDefault()
 
-        this.addChurch()
+        if (this.mode === 'add') {
+            this.addChurch()
+        } else {
+            this.editChurch(this.churchId)
+        }
     }
     addChurch() {
+        this.postChurch((result) => {
+            this.churches = [
+                result,
+                ...this.churches
+            ].map((church) => {
+                if (result.parent && church.id === result.parent) {
+                    return {
+                        ...church,
+                        children: [
+                            ...church.children,
+                            result.id
+                        ]
+                    }
+                }
+                return church
+            })
+            this.orderChurches()
+
+            this.closeChurchModal()
+        })
+    }
+    postChurch(successCallback) {
         this.loading = true
         this.formErrors = false
+
+        document.querySelector('#add-church-form .loading-spinner').classList.add('active')
 
         if (
             !this.lat ||
@@ -211,8 +255,8 @@ export class DashChurches extends DashPage {
             !this.startDate ||
             !this.churchMembers
         ) {
-            console.error('Missing form thing')
             this.formErrors = true
+            document.querySelector('#add-church-form .loading-spinner').classList.remove('active')
             return
         }
 
@@ -242,29 +286,17 @@ export class DashChurches extends DashPage {
             churchLocation.label = this.locationLabel
         }
 
+        if (this.mode === 'edit' && this.churchId) {
+            data.post_id = this.churchId
+        }
+
         data.location_grid_meta.values.push(churchLocation)
 
+        const doRequest = this.mode === 'add' ? zumeRequest.post : zumeRequest.put
         /* Insert church into the churches and reorder */
-        zumeRequest.post('church', data)
+        doRequest('church', data)
             .then((result) => {
-                this.churches = [
-                    result,
-                    ...this.churches
-                ].map((church) => {
-                    if (result.parent && church.id === result.parent) {
-                        return {
-                            ...church,
-                            children: [
-                                ...church.children,
-                                result.id
-                            ]
-                        }
-                    }
-                    return church
-                })
-                this.orderChurches()
-
-                this.closeChurchModal()
+                successCallback(result)
             })
             .catch((error) => {
                 console.error(error)
@@ -272,6 +304,7 @@ export class DashChurches extends DashPage {
             })
             .finally(() => {
                 this.loading = false
+                document.querySelector('#add-church-form .loading-spinner').classList.remove('active')
             })
     }
     showErrorMessage(message) {
@@ -281,8 +314,41 @@ export class DashChurches extends DashPage {
         }, 3000);
     }
 
-    editChurch(id) {
-        console.log('edit church', id)
+    editChurch() {
+        this.postChurch((result) => {
+            /* This edit, could have moved the node in the graph */
+            this.churches = this.churches.map((church) => {
+                /* Update the church in place */
+                if (church.id === result.id) {
+                    return result
+                }
+                /* Ensure that the edited church is in it's parent's children array */
+                if (result.parent && church.id === result.parent && !church.children.includes(result.id)) {
+                    return {
+                        ...church,
+                        children: [
+                            ...church.children,
+                            result.id,
+                        ]
+                    }
+                }
+                /* Make sure that the edited church isn't in any other church's children array */
+                if (
+                    (church.id !== result.parent && church.children.includes(result.id)) ||
+                    !result.parent && church.children.includes(result.id)
+                ) {
+                    return {
+                        ...church,
+                        children: church.children.filter((childID) => childID !== result.id)
+                    }
+                }
+
+                return church
+            })
+            this.orderChurches()
+
+            this.closeChurchModal()
+        })
     }
     confirmDeleteChurch(id) {
         this.confirmDelete = id
@@ -331,6 +397,30 @@ export class DashChurches extends DashPage {
             })
     }
 
+    openAddChurchModal() {
+        this.mode = 'add'
+        this.clearChurchModal()
+        document.querySelector('.submit-button-text').textContent = jsObject.translations.add_new_church
+        this.openChurchModal()
+    }
+    openEditChurchModal(id) {
+        this.mode = 'edit'
+        document.querySelector('.submit-button-text').textContent = jsObject.translations.edit
+
+        const church = this.churches.find((church) => church.id === id)
+        this.churchId = id
+        this.churchName = church.name
+        this.churchMembers = church.member_count
+        this.startDate = church.start_date.formatted
+        this.lat = church.location_meta.lat
+        this.lng = church.location_meta.lng
+        this.locationLabel = church.location_meta.label
+        this.level = church.location_meta.level
+        this.parentChurch = church.parent
+
+
+        this.openChurchModal()
+    }
     openChurchModal() {
         if (this.showTeaser) {
             return
@@ -338,7 +428,17 @@ export class DashChurches extends DashPage {
         const modal = document.querySelector('#new-church-form')
         jQuery(modal).foundation('open')
 
+        document.getElementById('church-name').value = this.churchName || ''
+        document.getElementById('number-of-people').value = this.churchMembers || ''
+        document.getElementById('location-label').innerText = this.locationLabel || ''
+        document.getElementById('church-start-date').value = this.startDate || ''
+        document.getElementById('parent-church').value = `${this.parentChurch}` || ''
+
         this.initialiseMap()
+
+        if (this.lat) {
+            this.addMarkerToMap({ lat: this.lat, lng: this.lng })
+        }
     }
 
     closeChurchModal() {
@@ -347,10 +447,14 @@ export class DashChurches extends DashPage {
         this.clearChurchModal()
     }
     clearChurchModal() {
-        jQuery('#add-church-form input').each(function(value) {
+        jQuery('#add-church-form input').each(function (value) {
             this.value = ''
         })
         document.querySelector('#add-church-form select').value = ''
+        this.churchName = ''
+        this.churchMembers = ''
+        this.locationLabel = ''
+        this.startDate = ''
         this.lat = undefined
         this.lng = undefined
         this.parentChurch = undefined
@@ -369,12 +473,12 @@ export class DashChurches extends DashPage {
             <option value=${id}>${name}</option>
         `
     }
-    renderChurch({id, name, location, generation }) {
+    renderChurch({ id, name, location, generation }) {
         return html`
             <li
                 class="list__item"
-                data-depth=${generation-1}
-                style=${`--depth: ${generation-1}`}
+                data-depth=${generation - 1}
+                style=${`--depth: ${generation - 1}`}
             >
                 <div class="list__primary f-medium" data-large-gap>
                     <span>${name}</span>
@@ -388,7 +492,7 @@ export class DashChurches extends DashPage {
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
                         <li class="${!!this.confirmDelete ? 'hidden' : ''}">
-                            <button class="menu-btn" @click=${() => this.editChurch(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
+                            <button class="menu-btn" @click=${() => this.openEditChurchModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
                         </li>
                         <li class="${!!this.confirmDelete ? 'hidden' : ''}">
                             <button class="menu-btn red ${!!this.confirmDelete ? 'hidden' : ''}" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
@@ -425,7 +529,7 @@ export class DashChurches extends DashPage {
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
                                 <span class="icon z-icon-filter" aria-hidden="true"></span>
                             </button>
-                            <button class="icon-btn f-2" @click=${this.openChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
+                            <button class="icon-btn f-2" @click=${this.openAddChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser ? 'true' : 'false'}>
                                 <span class="visually-hidden">${jsObject.translations.add_church}</span>
                                 <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
@@ -440,8 +544,7 @@ export class DashChurches extends DashPage {
 
                 <div class="dashboard__main content position-relative">
                     ${
-                        this.showTeaser
-                        ? html`
+                        this.showTeaser ? html`
                             <div class="p-2">
                                 <div class="dash-menu__list-item">
                                     <div class="dash-menu__icon-area | stack--5">
@@ -459,23 +562,19 @@ export class DashChurches extends DashPage {
                                     </div>
                                 </div>
                             </div>
-
-                        `
-                        : html`
+                        ` : html`
                             <ul class="list">
                                 ${
-                                    this.orderedChurches.length === 0
-                                    ? html`
+                                    this.orderedChurches.length === 0 ? html`
                                         <li
                                             role="button"
                                             class="list__item bg-brand-light white f-medium"
                                             data-depth=${0}
-                                            @click=${this.openChurchModal}
+                                            @click=${this.openAddChurchModal}
                                         >
                                             ${jsObject.translations.add_first_church}
                                         </li>
-                                    `
-                                    : repeat(this.orderedChurches, (church) => `${church.id}`, this.renderChurch)
+                                    ` : repeat(this.orderedChurches, (church) => `${church.id}`, this.renderChurch)
                                 }
                             </ul>
 
@@ -538,17 +637,15 @@ export class DashChurches extends DashPage {
                             <select id="parent-church" name="parent-church" @change=${(e) => this.parentChurch = e.target.value} >
                                 <option value="">---</option>
                                 ${
-                                    repeat(this.sortedChurches, ({id}) => id, this.renderChurchOption)
+                                    repeat(this.sortedChurches, ({ id }) => id, this.renderChurchOption)
                                 }
                             </select>
                         </div>
                         <div class="cluster">
                             <button class="btn outline" type="button" ?disabled=${this.loading} aria-disabled=${this.loading ? 'true' : 'false'} @click=${this.closeChurchModal}>${jsObject.translations.cancel}</button>
-                            <button class="btn" @click=${this.addChurch}>
-                                ${jsObject.translations.add_new_church}
-                                ${
-                                    this.loading ? html`<span class="loading-spinner active"></span>` : ''
-                                }
+                            <button class="btn" @click=${this.handleSubmit}>
+                                <span class="submit-button-text">${jsObject.translations.add_new_church}</span>
+                                <span class="loading-spinner"></span>
                             </button>
                         </div>
                     </div>

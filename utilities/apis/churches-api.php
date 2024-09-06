@@ -45,7 +45,7 @@ class Zume_Churches_Endpoints
             ]
         );
         register_rest_route(
-            $this->namespace, '/church/(?P<code>\w+)', [
+            $this->namespace, '/church', [
                 'methods' => 'PUT',
                 'callback' => [ $this, 'update_church' ],
                 'permission_callback' => 'is_user_logged_in',
@@ -129,43 +129,47 @@ class Zume_Churches_Endpoints
         return $new_post;
     }
     public function update_church( WP_REST_Request $request ){
-        $code = $request['code'];
 
-        $post_id = $this->can_user_edit_church( $code );
+        $params = dt_recursive_sanitize_array( $request->get_params() );
+
+        $post_id = $params['post_id'];
+
+        $post_id = $this->can_user_edit_church( $post_id );
         if ( is_wp_error( $post_id ) ) {
             return $post_id;
         }
 
-        $params = dt_recursive_sanitize_array( $request->get_params() );
+        if ( !isset(
+            $params['name'],
+            $params['location_grid_meta'],
+            $params['start_date'],
+            $params['member_count'],
+        ) ) {
+            return new WP_Error( __METHOD__, 'Missing params', array( 'status' => 400 ) );
+        }
 
-        $fields = [];
-        if ( isset( $params['title'] ) ) {
-            $fields['title'] = $params['title'];
+        $fields = [
+            'title' => $params['name'],
+            'location_grid_meta' => $params['location_grid_meta'],
+            'member_count' => $params['member_count'],
+            'start_date' => $params['start_date'],
+            'church_start_date' => $params['start_date'],
+        ];
+
+        if ( isset( $params['parent_church'] ) ) {
+            $fields['parent_groups'] = [
+                'values' => [
+                    [ 'value' => $params['parent_church'] ],
+                ],
+                'force_values' => true,
+            ];
+        } else {
+            $fields['parent_groups'] = [
+                'values' => [],
+                'force_values' => true,
+            ];
         }
-        if ( isset( $params['visibility'] ) ) {
-            $fields['visibility'] = $params['visibility'];
-        }
-        if ( isset( $params['location_note'] ) ) {
-            $fields['location_note'] = $params['location_note'];
-        }
-        if ( isset( $params['time_of_day_note'] ) ) {
-            $fields['time_of_day_note'] = $params['time_of_day_note'];
-        }
-        if ( isset( $params['language_note'] ) ) {
-            $fields['language_note'] = $params['language_note'];
-        }
-        if ( isset( $params['timezone_note'] ) ) {
-            $fields['timezone_note'] = $params['timezone_note'];
-        }
-        if ( isset( $params['zoom_link_note'] ) ) {
-            $fields['zoom_link_note'] = $params['zoom_link_note'];
-        }
-        if ( isset( $params['visibility'] ) ) {
-            $fields['visibility'] = $params['visibility'];
-        }
-        if ( isset( $params['status'] ) ) {
-            $fields['status'] = $params['status'];
-        }
+
 
         $result = DT_Posts::update_post( self::$post_type, (int) $post_id, $fields, true, false );
 
@@ -173,7 +177,14 @@ class Zume_Churches_Endpoints
             return $result;
         }
 
-        return 1;
+        $churches = zume_get_user_churches();
+        foreach ( $churches as $church ) {
+            if ( $church['id'] === $result['ID'] ) {
+                return $church;
+            }
+        }
+
+        return $result;
     }
     public function delete_church( WP_REST_Request $request ) {
         global $wpdb, $table_prefix;
