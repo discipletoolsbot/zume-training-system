@@ -314,7 +314,6 @@ class Zume_Churches_Endpoints
             return new WP_Error( 'bad-church-id', 'invalid church_id', array( 'status' => 400 ) );
         }
 
-        $type = is_string( $this->post_type );
         $church = DT_Posts::get_post( self::$post_type, (int) $post_id );
         if ( is_wp_error( $church ) ) {
             return new WP_Error( __METHOD__, 'Failed to access post.', array( 'status' => 400 ) );
