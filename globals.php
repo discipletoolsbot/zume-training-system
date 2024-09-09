@@ -6244,6 +6244,12 @@ if ( ! function_exists( 'zume_log_insert' ) ) {
         return Zume_System_Log_API::log( $type, $subtype, $data, $log_once );
     }
 }
+if ( ! function_exists( 'zume_log_delete' ) ) {
+    function zume_log_delete( string $type, string $subtype, array $data = [] )
+    {
+        return Zume_System_Log_API::delete( $type, $subtype, $data );
+    }
+}
 
 if ( ! class_exists( 'Zume_System_Log_API' ) ) {
     // phpcs:ignore
@@ -7339,6 +7345,34 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
 
 
             return $report_id;
+        }
+
+        /**
+         * Delete a log from the reports
+         * @param string $type
+         * @param string $subtype
+         * @param array $data
+         * @return int|bool
+         */
+        public static function delete( string $type, string $subtype, array $data = [] ) {
+            global $wpdb;
+
+            $fields = [
+                'type' => $type,
+                'subtype' => $subtype,
+                'user_id' => $data['user_id'] ?? get_current_user_id(),
+            ];
+
+            unset( $data['user_id'] );
+
+            $fields = [
+                ...$fields,
+                ...$data,
+            ];
+
+            $deleted = $wpdb->delete( 'zume_dt_reports', $fields );
+
+            return $deleted;
         }
 
         /**
