@@ -10,7 +10,7 @@ export class DashChurches extends DashPage {
         return {
             showTeaser: { type: Boolean },
             orderedChurches: { type: Array, attribute: false },
-            sortedChurches: { type: Array, attribute: false },
+            filteredChurches: { type: Array, attribute: false },
             formErrors: { type: Boolean, attribute: false },
             loading: { type: Boolean, attribute: false },
             errorMessage: { type: String, attribute: false },
@@ -33,6 +33,7 @@ export class DashChurches extends DashPage {
         this.churches = [...jsObject.churches ?? []]
         this.orderedChurches = []
         this.sortedChurches = []
+        this.filteredChurches = []
         this.orderChurches()
 
         this.locationLabel = ''
@@ -47,6 +48,7 @@ export class DashChurches extends DashPage {
         this.orderChurches = this.orderChurches.bind(this)
         this.deleteChurch = this.deleteChurch.bind(this)
         this.addMarkerToMap = this.addMarkerToMap.bind(this)
+        this.getDescendentChurches = this.getDescendentChurches.bind(this)
 
         /* Remove old overlays that have been orphaned by moving around the app */
         document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
@@ -188,6 +190,7 @@ export class DashChurches extends DashPage {
         this.sortedChurches = [
             ...this.churches.sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
         ]
+        this.filteredChurches = [ ...this.sortedChurches ]
         const rootNodes = this.churches.filter((church) => !church.parent)
 
         for (const rootNode of rootNodes) {
@@ -473,10 +476,30 @@ export class DashChurches extends DashPage {
             })
     }
 
+    getDescendentChurches(id) {
+        const descendents = [ id ]
+
+        const getChildNodes = (id) => {
+            const church = this.getChurch(id)
+
+            for (const childID of church.children) {
+                descendents.push(childID)
+                getChildNodes(childID)
+            }
+        }
+
+        getChildNodes(id)
+
+        return descendents
+    }
+
     openAddChurchModal() {
         this.mode = 'add'
         this.clearChurchModal()
         document.querySelector('.submit-button-text').textContent = jsObject.translations.add_new_church
+
+        this.filteredChurches = [ ...this.orderedChurches ]
+
         this.openChurchModal()
     }
     openEditChurchModal(id) {
@@ -494,6 +517,11 @@ export class DashChurches extends DashPage {
         this.level = church.location_meta.level
         this.parentChurch = church.parent
 
+        /* Find the descendent churches of this church */
+        const descendentChurches = this.getDescendentChurches(id)
+
+        /* Adjust the select options to exclude any descendent churches */
+        this.filteredChurches = [ ...this.orderedChurches.filter((church) => !descendentChurches.includes(church.id)) ]
 
         this.openChurchModal()
     }
@@ -731,7 +759,7 @@ export class DashChurches extends DashPage {
                             <select id="parent-church" name="parent-church" @change=${(e) => this.parentChurch = e.target.value} >
                                 <option value="">---</option>
                                 ${
-                                    repeat(this.sortedChurches, ({ id }) => id, this.renderChurchOption)
+                                    repeat(this.filteredChurches, ({ id }) => id, this.renderChurchOption)
                                 }
                             </select>
                         </div>
