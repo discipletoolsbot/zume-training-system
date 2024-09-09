@@ -710,7 +710,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
     }
 }
 if ( ! function_exists( 'zume_get_user_churches' ) ) {
-    function zume_get_user_churches( $user_id = null ) {
+    function zume_get_user_churches( $user_id = null, $by_key = false ) {
         if ( is_null( $user_id ) ) {
             $user_id = get_current_user_id();
         }
@@ -739,7 +739,11 @@ if ( ! function_exists( 'zume_get_user_churches' ) ) {
                 return $church['ID'];
             }, $church['child_groups'] ) : [];
 
-            $churches[] = $new_church;
+            if ( $by_key ) {
+                $churches[$new_church['id']] = $new_church;
+            } else {
+                $churches[] = $new_church;
+            }
         }
 
         return $churches;

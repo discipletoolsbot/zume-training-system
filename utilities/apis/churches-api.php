@@ -169,10 +169,39 @@ class Zume_Churches_Endpoints
         ];
 
         if ( isset( $params['parent_church'] ) ) {
+            $parent_church_id = (int) $params['parent_church'];
 
             /* Parent church can't be itself */
+            if ( $parent_church_id === $post_id ) {
+                return new WP_Error( __METHOD__, 'Church cannot be its own parent', array( 'status' => 400 ) );
+            }
 
             /* Parent church can't be a downstream church */
+            $churches = zume_get_user_churches( null, true );
+            $descendent_churches = [];
+
+            $get_children = function ( $church_id ) use ( &$descendent_churches, &$get_children, $churches ) {
+
+                if ( isset( $churches[$church_id] ) ) {
+                    $church = $churches[$church_id];
+                } else {
+                    return;
+                }
+                $descendent_churches = [
+                    ...$descendent_churches,
+                    ...$church['children'],
+                ];
+
+                foreach ( $church['children'] as $child_id ) {
+                    $get_children( $child_id );
+                }
+            };
+
+            $get_children( $post_id );
+
+            if ( in_array( $parent_church_id, $descendent_churches ) ) {
+                return new WP_Error( __METHOD__, 'Church cannot have a descendent as a parent', array( 'status' => 400 ) );
+            }
 
             $fields['parent_groups'] = [
                 'values' => [
