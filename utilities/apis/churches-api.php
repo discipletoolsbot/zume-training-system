@@ -113,11 +113,6 @@ class Zume_Churches_Endpoints
             'group_type' => 'church',
             'group_status' => 'active',
             'location_grid_meta' => $params['location_grid_meta'],
-            'reporter' => [
-                'values' => [
-                    [ 'value' => $contact_id ],
-                ],
-            ],
             'member_count' => $params['member_count'],
             'start_date' => $params['start_date'],
             'church_start_date' => $params['start_date'],
