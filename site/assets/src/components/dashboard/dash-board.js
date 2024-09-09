@@ -988,6 +988,16 @@ export class DashBoard extends navigator(router(LitElement)) {
                             </li>
                         </div>
                         <div class="footer-links">
+
+                            <nav-link
+                              class="menu-btn | f--1"
+                              href=""
+                              icon="z-icon-public-training"
+                              text=${jsObject.translations.join_training_group}
+                              as="link"
+                              @click=${this.openJoinTrainingWizard}
+                            ></nav-link>
+
                             ${!this.hasJoinedCommunity()
                                 ? html`
                                       <nav-link
@@ -1003,21 +1013,15 @@ export class DashBoard extends navigator(router(LitElement)) {
                                       ></nav-link>
                                   `
                                 : ''}
-                            <nav-link
+
+                            <!-- <nav-link
                                 class="menu-btn | f--1"
                                 href=${jsObject.urls.resources}
                                 icon="z-icon-resources"
                                 text=${jsObject.translations.resources}
                                 as="link"
-                            ></nav-link>
-                            <nav-link
-                                class="menu-btn | f--1"
-                                href=""
-                                icon="z-icon-public-training"
-                                text=${jsObject.translations.join_training_group}
-                                as="link"
-                                @click=${this.openJoinTrainingWizard}
-                            ></nav-link>
+                            ></nav-link> -->
+
                             ${jsObject.is_coach
                               ? html`
                                     <nav-link
