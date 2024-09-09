@@ -106,7 +106,6 @@ class Zume_Churches_Endpoints
         }
 
         $user_id = get_current_user_id();
-        $contact_id = zume_get_user_contact_id( $user_id );
         $fields = [
             'title' => $params['name'],
             'assigned_to' => $user_id,
