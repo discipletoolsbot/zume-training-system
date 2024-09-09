@@ -13,4 +13,4 @@ add_action( 'dt_blank_footer', function() {
         gtag('config', 'AW-591815806');
     </script>
     <?php
-});
+}, 999 );
