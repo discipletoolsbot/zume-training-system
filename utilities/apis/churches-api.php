@@ -128,6 +128,10 @@ class Zume_Churches_Endpoints
 
         $new_post = DT_Posts::create_post( self::$post_type, $fields, true, false );
 
+        if ( is_wp_error( $new_post ) ) {
+            return $new_post;
+        }
+
         $church = $this->get_user_church( $new_post['ID'] );
         if ( $church ) {
             return $church;
