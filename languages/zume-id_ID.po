@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-05 10:43+0000\n"
+"PO-Revision-Date: 2024-09-10 16:59+0000\n"
 "Last-Translator: Buleleng Team <bulelengteam@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/id_ID/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.1\n"
+"X-Generator: Weblate 5.7.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -31,7 +31,7 @@ msgstr "Epik 404 - Tidak Ditemukan"
 
 #: 404.php:74
 msgid "The page you were looking for was not found or was deleted"
-msgstr "Halaman yang Anda cari tidak ditemukan atau sudah dihapus."
+msgstr "Halaman yang Anda cari tidak ditemukan atau sudah dihapus"
 
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
@@ -109,7 +109,7 @@ msgstr "Kontak"
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
-msgstr "Kelompok"
+msgstr "Kelompok-kelompok"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
@@ -117,7 +117,7 @@ msgstr "Pelatihan"
 
 #: appearance/style-override/navigation.php:135
 msgid "Metrics"
-msgstr "Ukuran"
+msgstr "Ukuran-ukuran"
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:218
 msgid "Community"
@@ -141,15 +141,15 @@ msgstr "Peta Global"
 #: site/course/course-content.php:354 site/course/course-content.php:3157
 #: site/course/course-content.php:3175 site/pages/follow-jesus.php:168
 msgid "God Uses Ordinary People"
-msgstr "Allah memakai orang-orang biasa"
+msgstr "Allah Memakai Orang-orang Biasa"
 
 #: globals.php:2086 site/pages/follow-jesus.php:169
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
-"Anda akan melihat bagaimana Allah memakai orang biasa yang melakukan hal-hal "
-"sederhana untuk membuat dampak yang besar."
+"Anda akan melihat bagaimana Allah memakai orang-orang biasa yang melakukan "
+"hal-hal sederhana untuk membuat dampak yang besar."
 
 #: globals.php:2097 site/course/course-content.php:3158
 #: site/course/course-content.php:3176 site/pages/follow-jesus.php:172
@@ -162,13 +162,13 @@ msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
 msgstr ""
-"Temukan esensi dari menjadi seorang murid, membuat murid, dan apakah jemaah "
+"Temukan esensi dari menjadi seorang murid, memuridkan, dan apakah jemaah "
 "Allah itu."
 
 #: globals.php:2099 site/course/course-content.php:143
 #: site/course/course-content.php:152
 msgid "Disciples and the Church"
-msgstr "Murid-murid dan Jemaah Allah"
+msgstr "Murid-murid dan Jemaah"
 
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
@@ -186,7 +186,7 @@ msgstr "Mendengar dan Menaati Allah"
 
 #: globals.php:2121 globals.php:2123
 msgid "S.O.A.P.S. Bible Study"
-msgstr "Pembelajaran Alkitab S.O.A.P.S."
+msgstr "Pembelajaran Alkitab S.O.A.P.S"
 
 #: globals.php:2122 site/pages/follow-jesus.php:210
 msgid ""
@@ -201,7 +201,7 @@ msgstr ""
 #: site/course/course-content.php:361 site/course/course-content.php:3406
 #: site/course/course-content.php:3422 site/pages/follow-jesus.php:224
 msgid "Accountability Groups"
-msgstr "Kelompok Pertanggungjawaban"
+msgstr "Kelompok-kelompok Pertanggungjawaban"
 
 #: globals.php:2134 site/pages/follow-jesus.php:225
 msgid ""
@@ -215,9 +215,8 @@ msgstr ""
 "diperbaiki."
 
 #: globals.php:2145 site/pages/follow-jesus.php:188
-#, fuzzy
 msgid "Consumer vs Producer Lifestyle"
-msgstr "Gaya Hidup Pelanggan vs Produsen"
+msgstr "Gaya Hidup Produsen bukan Konsumen"
 
 #: globals.php:2146 site/pages/follow-jesus.php:189
 msgid ""
@@ -229,15 +228,15 @@ msgstr ""
 
 #: globals.php:2147
 msgid "Producer not Consumer"
-msgstr "Produser vs Konsumen"
+msgstr "Produser bukan Konsumen"
 
 #: globals.php:2157 globals.php:2159 site/pages/follow-jesus.php:198
 msgid "How to Spend an Hour in Prayer"
-msgstr "Bagaimana Menghabiskan Satu Jam dalam Doa"
+msgstr "Bagaimana Menghabiskan Satu Jam Berdoa"
 
 #: globals.php:2158 site/pages/follow-jesus.php:199
 msgid "See how easy it is to spend an hour in prayer."
-msgstr "Lihatlah betapa mudahnya untuk menghabiskan waktu satu jam dalam doa."
+msgstr "Lihatlah betapa mudahnya untuk menghabiskan waktu satu jam berdoa."
 
 #: globals.php:2169 site/pages/follow-jesus.php:285
 msgid "Relational Stewardship – List of 100"
@@ -265,15 +264,15 @@ msgstr "Daftar 100"
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3800 site/course/course-content.php:3819
 msgid "Spiritual Economy"
-msgstr "Ekonomi Rohani"
+msgstr "Kebutuhan atau Ekonomi Rohani"
 
 #: globals.php:2182 site/pages/follow-jesus.php:244
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
 msgstr ""
-"Pelajari bagaimana ekonomi Allah berbeda dari ekonomi dunia. Allah "
-"berinvestasi lebih dalam diri mereka yang setia dengan apa yang  sudah "
+"Pelajari bagaimana kebutuhan Allah berbeda dari kebutuhan dunia. Allah "
+"berinvestasi lebih dalam diri mereka yang setia dengan apa yang sudah "
 "diberikan."
 
 #: globals.php:2193 site/pages/follow-jesus.php:289
@@ -302,9 +301,8 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
-"Isa berkata, “Pergilah dan jadikan murid-murid dari semua bangsa, "
-"PERMANDIKAN mereka dalam nama Bapa dan Anak dan Roh Suci. Pelajari bagaimana "
-"menerapkan ini."
+"Isa berkata, “Pergilah dan jadikan semua bangsa muridKu, PERMANDIKAN mereka "
+"dalam nama Bapa dan Anak dan Roh Suci...\" Pelajari bagaimana menerapkan ini."
 
 #: globals.php:2207 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
@@ -346,7 +344,7 @@ msgstr ""
 
 #: globals.php:2231
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Berkat yang Besar, Lebih Besar dan Terbesar"
+msgstr "Berkah yang Besar, Lebih Besar dan Terbesar"
 
 #: globals.php:2241 site/pages/follow-jesus.php:266
 msgid "Duckling Discipleship – Leading Immediately"
@@ -407,8 +405,8 @@ msgid ""
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 "Ini cara sederhana untuk menaati perintah Allah untuk berdoa bagi orang "
-"lain. Dan itu sama seperti namanya - berdoa kepada Allah sambil berjalan "
-"mengelilingi sekitar."
+"lain. Dan sama seperti sebutannya - berdoa kepada Allah sambil berjalan "
+"mengelilingi sekitar!"
 
 #: globals.php:2279 site/activities/activities.php:319
 #: site/course/course-content.php:1520 site/course/course-content.php:1528
@@ -436,21 +434,21 @@ msgstr "Orang Damai"
 
 #: globals.php:2301 site/pages/follow-jesus.php:213
 msgid "Faithfulness is Better Than Knowledge"
-msgstr "Kesetiaan itu lebih baik daripada pengetahuan"
+msgstr "Kesetiaan itu Lebih Baik Daripada Pengetahuan"
 
 #: globals.php:2302
 msgid ""
 "It‘s important what disciples know — but it‘s much more important what they "
 "DO with what they know."
 msgstr ""
-"Apa yang diketahui para murid itu penting — tapi jauh lebih penting apa yang "
+"Apa yang diketahui murid itu penting — tapi jauh lebih penting apa yang "
 "mereka LAKUKAN dengan apa yang mereka ketahui."
 
 #: globals.php:2303 site/course/course-content.php:1765
 #: site/course/course-content.php:1774 site/course/course-content.php:4727
 #: site/course/course-content.php:4774
 msgid "Faithfulness"
-msgstr "Ketaatan"
+msgstr "Kesetiaan"
 
 #: globals.php:2313 site/pages/follow-jesus.php:202
 msgid "The BLESS Prayer Pattern"
@@ -464,7 +462,7 @@ msgstr ""
 
 #: globals.php:2315 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
-msgstr "Doa B.L.E.S.S."
+msgstr "Doa B.L.E.S.S"
 
 #: globals.php:2325 site/pages/follow-jesus.php:220
 msgid "3/3 Group Meeting Pattern"
@@ -506,7 +504,7 @@ msgstr "Siklus Pelatihan"
 #: site/course/course-content.php:2279 site/course/course-content.php:5030
 #: site/course/course-content.php:5047 site/pages/follow-jesus.php:325
 msgid "Leadership Cells"
-msgstr "Sel Kepemimpinan"
+msgstr "Sel-sel Kepemimpinan"
 
 #: globals.php:2350 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:326
@@ -514,7 +512,7 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
-"Sel kepemimpinan adalah cara seseorang yang merasa terpanggil untuk memimpin "
+"Sel Kepemimpinan adalah cara seseorang yang merasa terpanggil untuk memimpin "
 "dapat mengembangkan kepemimpinan mereka dengan berlatih melayani."
 
 #: globals.php:2361 globals.php:2363 site/course/course-content.php:5154
@@ -527,7 +525,7 @@ msgid ""
 "See how disciple making doesn‘t have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
-"Lihat bagaimana membuat murid tidak harus terjadi secara berurutan. Beberapa "
+"Lihat bagaimana memuridkan tidak harus terjadi secara berurutan. Beberapa "
 "hal dapat terjadi pada waktu yang bersamaan."
 
 #: globals.php:2373 site/course/course-content.php:2768
@@ -554,7 +552,7 @@ msgstr "Kecepatan"
 #: site/course/course-content.php:2769 site/course/course-content.php:5156
 #: site/course/course-content.php:5174 site/pages/follow-jesus.php:228
 msgid "Always Part of Two Churches"
-msgstr "Selalu menjadi Bagian dari Dua Jemaah"
+msgstr "Selalu Menjadi Bagian dari Dua Jemaah"
 
 #: globals.php:2386
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
@@ -700,9 +698,8 @@ msgid "No Results"
 msgstr "Tidak Ada Hasil"
 
 #: maps/heatmap.php:3142
-#, fuzzy
 msgid "trainee"
-msgstr "Terlatih"
+msgstr "Peserta pelatihan"
 
 #: maps/heatmap.php:3145
 msgid "practitioner"
@@ -783,9 +780,8 @@ msgid "A %1$s created at post training plan in %2$s. %3$s"
 msgstr "%1$s dibuat pada rencana pasca pelatihan di %2$s. %3$s"
 
 #: maps/html/heatmap-html.php:36
-#, fuzzy
 msgid "Loading the planet"
-msgstr "Memuat tempat"
+msgstr "Memuat planet"
 
 #: maps/html/heatmap-html.php:37
 msgid "Locating world population"
@@ -805,9 +801,8 @@ msgstr "Ayo lakukan ini"
 
 #: maps/html/heatmap-html.php:63 maps/html/heatmap-html.php:167
 #: maps/js-translation-strings.php:5
-#, fuzzy
 msgid "Population"
-msgstr "Lokasi"
+msgstr "Penduduk"
 
 #: maps/html/heatmap-html.php:70 maps/js-translation-strings.php:6
 msgid "Needed"
@@ -950,9 +945,8 @@ msgid "All Countries"
 msgstr "Semua Negara"
 
 #: maps/js-translation-strings.php:22
-#, fuzzy
 msgid "All Languages"
-msgstr "Bahasa"
+msgstr "Semua Bahasa"
 
 #: maps/js-translation-strings.php:23
 msgid "Results"
@@ -972,7 +966,7 @@ msgstr "Berlatih"
 
 #: maps/js-translation-strings.php:28 site/dashboard/wizard.php:222
 msgid "Coaching"
-msgstr "Pelatihan"
+msgstr "Pembinaan"
 
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
@@ -1027,9 +1021,8 @@ msgstr ""
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
-#, fuzzy
 msgid "How to Get on The Map"
-msgstr "Bagiamana cara Masuk ke Peta"
+msgstr "Cara Mendapatkannya di Peta"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
@@ -1056,9 +1049,8 @@ msgid "Activities"
 msgstr "Kegiatan"
 
 #: maps/map-3-trainees.php:122
-#, fuzzy
 msgid "Trainees"
-msgstr "Terlatih"
+msgstr "Para peserta pelatihan"
 
 #: maps/map-3-trainees.php:123
 msgid "Map of Zúme Trainees"
@@ -1139,14 +1131,12 @@ msgstr ""
 "dan 1 peserta pelatihan per 50,000 orang di seluruh dunia"
 
 #: maps/map-5-churches.php:122
-#, fuzzy
 msgid "Churches"
-msgstr "Dua Jemaah Allah Sederhana"
+msgstr "Jemaah"
 
 #: maps/map-5-churches.php:123
-#, fuzzy
 msgid "Map of Zúme Churches"
-msgstr "Dua Jemaah Allah Sederhana"
+msgstr "Peta Jemaah Zúme"
 
 #: maps/map-5-churches.php:124
 msgid ""
@@ -1211,7 +1201,7 @@ msgstr "Kesaksian Tiga Menit"
 #: site/activities/activities.php:273 site/course/course-content.php:1519
 #: site/course/course-content.php:4600 site/course/course-content.php:4620
 msgid "B.L.E.S.S. Prayer"
-msgstr "Doa B.L.E.S.S."
+msgstr "Doa B.L.E.S.S"
 
 #: site/activities/activities.php:296 site/course/course-content.php:1757
 #: site/course/course-content.php:1807 site/course/course-content.php:1816
@@ -1608,9 +1598,8 @@ msgstr "Tidak diketahui"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
-#, fuzzy
 msgid "3 Month Plan"
-msgstr "Rencana Tiga-Bulanan"
+msgstr "Rencana 3 Bulan"
 
 #: site/activities/three-month-plan-printable.php:47
 #: site/activities/three-month-plan.php:68 site/dashboard/dashboard.php:215
@@ -2064,13 +2053,13 @@ msgstr "Dan kami akan menambahkan alat-alat ini ke dalam perangkat kami:"
 #: site/course/course-content.php:3285 site/course/course-content.php:3301
 #: site/pages/follow-jesus.php:209
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "Pembacaan Alkitab S.O.A.P.S."
+msgstr "Pembacaan Alkitab S.O.A.P.S"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
 msgstr ""
-"Allah memakai orang biasa yang melakukan hal-hal sederhana untuk membuat "
-"dampak yang besar."
+"Allah memakai orang-orang biasa yang melakukan hal-hal sederhana untuk "
+"membuat dampak yang besar."
 
 #: site/course/course-content.php:136
 msgid ""
@@ -2177,11 +2166,11 @@ msgstr ""
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
-msgstr "Kelompok Pertanggungjawaban adalah cara yang bagus untuk bersiap!"
+msgstr "Kelompok-kelompok Pertanggungjawaban adalah cara bagus untuk bersiap!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr "Latihan Kelompok Pertanggungjawaban"
+msgstr "Latihan Kelompok-kelompok Pertanggungjawaban"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -2203,7 +2192,7 @@ msgid ""
 "Spend the next 20 minutes working together through the Accountability "
 "Questions."
 msgstr ""
-"Habiskan 20 menit berikutnya untuk bekerja bersama melalui Pertanyaan "
+"Habiskan 20 menit berikutnya untuk bekerjasama melalui Pertanyaan "
 "Pertanggungjawaban."
 
 #: site/course/course-content.php:349 site/course/course-content.php:661
@@ -2595,15 +2584,15 @@ msgid ""
 msgstr ""
 "Di dunia yang hancur ini, orang merasa dihargai ketika mereka mengambil, "
 "menerima dan ketika mereka mendapatkan lebih banyak daripada orang-orang di "
-"sekitar mereka. Tetapi Ekonomi Rohani Allah berbeda- Allah berinvestasi "
-"lebih bagi mereka yang setia dengan apa yang sudah diberikan kepada mereka."
+"sekitar mereka. Tetapi Kebutuhan Rohani Allah berbeda- Allah berinvestasi "
+"lebih pada mereka yang setia dengan apa yang diberikan kepada mereka."
 
 #: site/course/course-content.php:844
 msgid ""
 "What are some differences you see between God’s Spiritual Economy and our "
 "earthly way of getting things done?"
 msgstr ""
-"Apa saja perbedaan yang Anda lihat antara Ekonomi Rohani Allah dan cara "
+"Apa saja perbedaan yang Anda lihat antara Kebutuhan Rohani Allah dan cara "
 "duniawi kita dalam menyelesaikan segala sesuatu?"
 
 #: site/course/course-content.php:890
@@ -2666,7 +2655,7 @@ msgstr ""
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:243
 msgid "The Spiritual Economy"
-msgstr "Ekonomi Rohani"
+msgstr "Kebutuhan atau Ekonomi Rohani"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3981
 msgid ""
@@ -2723,8 +2712,8 @@ msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"Mintalah kepada-Nya untuk memberikan setiap anggota kelompok Anda pikiran "
-"Kristus — dan memenuhi semua orang dengan Roh-Nya."
+"Mintalah kepada-Nya untuk memberikan setiap anggota kelompok Anda pikiran Al-"
+"Masih — dan memenuhi semua orang dengan Roh-Nya."
 
 #: site/course/course-content.php:1165
 msgid ""
@@ -2898,9 +2887,9 @@ msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
-"Doa Keliling adalah cara sederhana untuk mematuhi perintah Allah untuk "
-"berdoa bagi orang lain. Dan seperti namanya - berdoa kepada Allah sambil "
-"berjalan keliling."
+"Doa Keliling adalah cara sederhana untuk menaati perintah Allah untuk berdoa "
+"bagi orang lain. Dan seperti sebutannya - berdoa kepada Allah sambil "
+"berjalan keliling!"
 
 #: site/course/course-content.php:1567
 msgid ""
@@ -2938,7 +2927,7 @@ msgstr ""
 
 #: site/course/course-content.php:1611
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "Berlatih Doa B.L.E.S.S."
+msgstr "Berlatih Doa B.L.E.S.S"
 
 #: site/course/course-content.php:1614
 msgid ""
@@ -3299,9 +3288,9 @@ msgid ""
 msgstr ""
 "Berdoa dan bersyukur kepada Allah bahwa jalanNya bukan jalan kita dan "
 "pikiranNya bukan pikiran kita. Minta Dia untuk memberikan masing-masing "
-"anggota kelompok Anda pikiran Isa - selalu berfokus pada pekerjaan BapaNya. "
-"Mintalah Roh Suci untuk memimpin waktu kalian bersama dan membuatnya menjadi "
-"sesi yang terbaik."
+"anggota kelompok Anda pikiran Al-Masih - selalu berfokus pada pekerjaan "
+"BapaNya. Mintalah Roh Suci untuk memimpin waktu Anda bersama dan membuatnya "
+"menjadi sesi yang terbaik."
 
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2767
@@ -3858,8 +3847,8 @@ msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
-"Temukan rekan pertanggungja2aban (jenis kelamin yang sama) dan mulailah "
-"bertemu mereka setiap minggu."
+"Temukan rekan pertanggungjawaban (jenis kelamin yang sama) dan mulailah "
+"bertemu dengan mereka setiap minggu."
 
 #: site/course/course-content.php:3438
 msgid ""
@@ -3933,9 +3922,9 @@ msgid ""
 "the Lord to ingrain it deeply within your heart and soul. Ask the Lord whom "
 "He would have you share it with."
 msgstr ""
-"Berlatihlah berbagi konsep Ekonomi Rohani dengan seorang teman dan berdoalah "
-"agar Allah menanamkannya dalam hati dan jiwa Anda. Tanya Allah kepada siapa "
-"Dia ingin Anda berbagi konsep tersebut."
+"Berlatihlah berbagi konsep Kebutuhan Rohani dengan seorang teman dan "
+"berdoalah agar Allah menanamkannya dalam hati dan jiwa Anda. Tanya Allah "
+"kepada siapa Dia ingin Anda berbagi konsep tersebut."
 
 #: site/course/course-content.php:3837
 msgid ""
@@ -3994,8 +3983,8 @@ msgid ""
 msgstr ""
 "Berdoa dan mengucap syukur kepada Tuhan karena Dia mengundang kita untuk "
 "membagikan Kabar Baik-Nya kepada orang lain. Minta Dia untuk memberikan "
-"setiap anggota kelompok Anda pikiran Ilahi — dan memenuhi setiap orang "
-"dengan Roh-Nya."
+"setiap anggota kelompok Anda pikiran Al-Masih — dan memenuhi setiap orang "
+"dengan RohNya."
 
 #: site/course/course-content.php:4071
 msgid "In this session, we will add these tools to our toolkit:"
@@ -4305,7 +4294,7 @@ msgid ""
 "encouragement to continue to grow between each member of your group as you "
 "draw near to Jesus."
 msgstr ""
-"Berdoa dan bersyukurlah kepada Allah atas Tubuh Isa. Berdoalah agar ada "
+"Berdoa dan bersyukurlah kepada Allah atas Tubuh Al-Masih. Berdoalah agar ada "
 "kasih dan dorongan untuk terus bertumbuh di antara setiap anggota kelompok "
 "saat Anda semakin dekat dengan Isa."
 
@@ -4503,7 +4492,7 @@ msgstr "Selesai"
 
 #: site/dashboard/dashboard.php:159
 msgid "Edit"
-msgstr "Mengubah"
+msgstr "Mengedit"
 
 #: site/dashboard/dashboard.php:160 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
@@ -4551,7 +4540,7 @@ msgstr "Selesaikan Sekarang"
 
 #: site/dashboard/dashboard.php:173
 msgid "View"
-msgstr "Lihat"
+msgstr "Melihat"
 
 #: site/dashboard/dashboard.php:175 site/dashboard/wizard.php:198
 #: site/dashboard/wizard.php:244 site/profile/profile.php:111
@@ -4870,9 +4859,8 @@ msgid "Group Members"
 msgstr "Anggota Kelompok"
 
 #: site/dashboard/dashboard.php:256
-#, fuzzy
 msgid "Group Details"
-msgstr "Kelompok"
+msgstr "Detail Kelompok"
 
 #: site/dashboard/dashboard.php:257
 msgid "Mark Completed"
@@ -5069,7 +5057,7 @@ msgstr "Telegram"
 
 #: site/dashboard/dashboard.php:296 site/dashboard/wizard.php:218
 msgid "Facebook Messenger"
-msgstr "Facebook Messenger"
+msgstr "Facebook Messenger (pesan)"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
@@ -5080,9 +5068,8 @@ msgid "Today"
 msgstr "Hari ini"
 
 #: site/dashboard/dashboard.php:302
-#, fuzzy
 msgid "Coaching Portal"
-msgstr "Daftar Periksa Pembimbingan"
+msgstr "Portal Pelatihan"
 
 #: site/dashboard/dashboard.php:303 site/dashboard/dashboard.php:304
 #, php-format
@@ -5110,16 +5097,16 @@ msgstr ""
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
 msgstr ""
-"Saya akan mengundang orang-orang berikut untuk memulai sebuah Kelempok Yang "
-"Saling Bertanggung Jawab dengan saya:"
+"Saya akan mengundang orang-orang berikut untuk memulai sebuah Kelempok-"
+"kelompok Pertanggungjawaban dengan saya:"
 
 #: site/dashboard/dashboard.php:312
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
-"Saya akan menantang orang-orang berikut ini untuk memulai Kelempok Yang "
-"Saling Bertanggung Jawab mereka sendiri dan melatih mereka bagaimana cara "
+"Saya akan menantang orang-orang berikut ini untuk memulai Kelempok-kelompok "
+"pertanggungjawaban mereka sendiri dan melatih mereka bagaimana cara "
 "melakukannya:"
 
 #: site/dashboard/dashboard.php:313
@@ -5208,7 +5195,6 @@ msgid "Bad Wizard"
 msgstr "Penyihir Jahat"
 
 #: site/dashboard/wizard.php:169
-#, fuzzy
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
@@ -5424,68 +5410,68 @@ msgstr "Tanggal Sesi Berikutnya"
 
 #: site/dashboard/wizard.php:247
 msgid "Start Time"
-msgstr ""
+msgstr "Waktu Mulai"
 
 #: site/dashboard/wizard.php:251
 msgid "There are currently no public trainings available."
-msgstr ""
+msgstr "Saat ini belum ada pelatihan umum yang tersedia."
 
 #: site/dashboard/wizard.php:254
 msgid "Connecting with friend"
-msgstr ""
+msgstr "Terhubung dengan teman"
 
 #: site/dashboard/wizard.php:256
 msgid "The friend link is broken. Please try again."
-msgstr ""
+msgstr "Tautan pertemanan rusak. Silakan coba lagi."
 
 #: site/dashboard/wizard.php:257
 #, php-format
 msgid "Successfully connected with friend %s"
-msgstr ""
+msgstr "Berhasil terhubung dengan teman %s"
 
 #: site/dashboard/wizard.php:261
 msgid "Checking in"
-msgstr ""
+msgstr "Daftar Masuk"
 
 #: site/dashboard/wizard.php:263
 msgid "The checkin link is broken. Please try again."
-msgstr ""
+msgstr "Tautan daftar masuk rusak. Silakan coba lagi."
 
 #: site/dashboard/wizard.php:264
 msgid "Successfully checked in"
-msgstr ""
+msgstr "Berhasil daftar masuk"
 
 #: site/dashboard/wizard.php:269
 msgid "Create a training group"
-msgstr ""
+msgstr "Buat Kelompok Pelatihan"
 
 #: site/dashboard/wizard.php:270
 msgid "Join a public training group"
-msgstr ""
+msgstr "Bergabunglah dengan kelompok pelatihan umum"
 
 #: site/dashboard/wizard.php:271
 msgid "Skip for now"
-msgstr ""
+msgstr "Lewati untuk saat ini"
 
 #: site/dashboard/wizard.php:272
 msgid "Choose your course format"
-msgstr ""
+msgstr "Pilih format kursus Anda"
 
 #: site/dashboard/wizard.php:273
 msgid "1 hour (20 sessions)"
-msgstr ""
+msgstr "1 jam (20 sesi)"
 
 #: site/dashboard/wizard.php:274
 msgid "2 hour (10 sessions)"
-msgstr ""
+msgstr "2 jam (10 sesi)"
 
 #: site/dashboard/wizard.php:275
 msgid "4 hour (5 sessions)"
-msgstr ""
+msgstr "4 jam (5 sesi)"
 
 #: site/dashboard/wizard.php:276
 msgid "Would you like to schedule your training?"
-msgstr ""
+msgstr "Apakah Anda ingin menjadwalkan pelatihan Anda?"
 
 #: site/dashboard/wizard.php:277 site/pages/_strings-mobile-pwa.php:10
 msgid "Yes"
@@ -5497,39 +5483,39 @@ msgstr "Tidak"
 
 #: site/dashboard/wizard.php:279
 msgid "What time of day?"
-msgstr ""
+msgstr "Jam berapa?"
 
 #: site/dashboard/wizard.php:280
 msgid "Morning"
-msgstr ""
+msgstr "Pagi"
 
 #: site/dashboard/wizard.php:281
 msgid "Afternoon"
-msgstr ""
+msgstr "Sore"
 
 #: site/dashboard/wizard.php:282
 msgid "Evening"
-msgstr ""
+msgstr "Malam"
 
 #: site/dashboard/wizard.php:283
 msgid "How often will you meet?"
-msgstr ""
+msgstr "Seberapa sering Anda akan bertemu?"
 
 #: site/dashboard/wizard.php:284
 msgid "Every day"
-msgstr ""
+msgstr "Setiap hari"
 
 #: site/dashboard/wizard.php:285
 msgid "Once a week"
-msgstr ""
+msgstr "Sekali seminggu"
 
 #: site/dashboard/wizard.php:286
 msgid "Twice a month"
-msgstr ""
+msgstr "Dua kali sebulan"
 
 #: site/dashboard/wizard.php:287
 msgid "Once a month"
-msgstr ""
+msgstr "Sekali sebulan"
 
 #: site/dashboard/wizard.php:288
 msgid "Other"
@@ -5537,54 +5523,54 @@ msgstr "Lainnya"
 
 #: site/dashboard/wizard.php:289
 msgid "What is the name of the training group?"
-msgstr ""
+msgstr "Apa nama kelompok pelatihan tersebut?"
 
 #: site/dashboard/wizard.php:290
 msgid "My first training group"
-msgstr ""
+msgstr "Kelompok pelatihan pertama saya"
 
 #: site/dashboard/wizard.php:291
 msgid "When do you plan to start?"
-msgstr ""
+msgstr "Kapan Anda berencana untuk memulai?"
 
 #: site/dashboard/wizard.php:292
 msgid "Where do you plan to meet?"
-msgstr ""
+msgstr "Di mana Anda berencana untuk bertemu?"
 
 #: site/dashboard/wizard.php:293
 msgid "This could be online or in person"
-msgstr ""
+msgstr "Ini bisa dilakukan secara online atau bertemu langsung"
 
 #: site/dashboard/wizard.php:294
 msgid "Review Schedule"
-msgstr ""
+msgstr "Tinjau Jadwal"
 
 #: site/dashboard/wizard.php:295
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr ""
+msgstr "%1$s dari %2$s dipilih"
 
 #: site/dashboard/wizard.php:296
 msgctxt "All 10 sessions scheduled"
 msgid "Ready"
-msgstr ""
+msgstr "Siap"
 
 #: site/dashboard/wizard.php:297
 #, php-format
 msgctxt "Too many selected: 2"
 msgid "Too many selected: %s"
-msgstr ""
+msgstr "Terlalu banyak yang dipilih: %s"
 
 #: site/dashboard/wizard.php:298
 msgid "Incorrect number of sessions selected"
-msgstr ""
+msgstr "Jumlah sesi yang dipilih salah"
 
 #: site/dashboard/wizard.php:299 site/dashboard/wizard.php:301
 #: site/dashboard/wizard.php:303 site/dashboard/wizard.php:304
 #, php-format
 msgid "Set %s"
-msgstr ""
+msgstr "Mengatur %s"
 
 #: site/dashboard/wizard.php:301
 msgid "Group Name"
@@ -5592,58 +5578,60 @@ msgstr "Nama Kelompok"
 
 #: site/dashboard/wizard.php:302
 msgid "Group name"
-msgstr ""
+msgstr "Nama Kelompok"
 
 #: site/dashboard/wizard.php:303
 msgid "Start Date"
-msgstr ""
+msgstr "Tanggal Mulai"
 
 #: site/dashboard/wizard.php:309
 msgid "Date"
-msgstr ""
+msgstr "Tanggal"
 
 #: site/dashboard/wizard.php:310
 msgid "Summary"
-msgstr ""
+msgstr "Ringkasan"
 
 #: site/dashboard/wizard.php:311
 msgid "Clear Calendar"
-msgstr ""
+msgstr "Hapus Kalender"
 
 #: site/dashboard/wizard.php:314
 msgid "Add"
-msgstr "Tambahkan"
+msgstr "Menambahkan"
 
 #: site/dashboard/wizard.php:315
 msgid "Add some dates to your schedule"
-msgstr ""
+msgstr "Tambahkan tanggal ke jadwal Anda"
 
 #: site/dashboard/wizard.php:316
 msgid "Change"
-msgstr ""
+msgstr "Mengubah"
 
 #: site/dashboard/wizard.php:320
 msgid "Invite your friends to join your training"
-msgstr ""
+msgstr "Undang teman untuk bergabung dengan pelatihan Anda"
 
 #: site/dashboard/wizard.php:321
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
+"Bagikan undangan atau tautan di bawah ini kepada teman-teman Anda agar "
+"mereka dapat bergabung dalam pelatihan."
 
 #: site/dashboard/wizard.php:322
 msgid "Join my zume plan"
-msgstr ""
+msgstr "Bergabunglah dengan rencana zúme saya"
 
 #: site/dashboard/wizard.php:323
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr ""
+msgstr "%s mengundang Anda ke Kelompok Pelatihan Zume"
 
 #: site/dashboard/wizard.php:330
 msgid "Copy Invite"
-msgstr ""
+msgstr "Salin Undangan"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -5710,7 +5698,7 @@ msgstr "Kata sandi tidak cocok. Tolong, coba lagi."
 #: site/login/login-template.php:217
 #, php-format
 msgid "Your password is reset. %1$s You can login here %2$s"
-msgstr ""
+msgstr "Kata sandi Anda telah diatur ulang. %1$s Anda dapat masuk di sini %2$s"
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
@@ -5728,7 +5716,7 @@ msgstr "Kata Sandi"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
-msgstr ""
+msgstr "Harap pilih kata sandi yang lebih kuat. Kata sandi ini terlalu lemah."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:465 site/login/login-template.php:466
@@ -5737,11 +5725,11 @@ msgstr "Masukkan kembali kata sandi"
 
 #: site/login/login-template.php:378
 msgid "Hello!"
-msgstr ""
+msgstr "Halo!"
 
 #: site/login/login-template.php:379
 msgid "Create a Zume Account"
-msgstr ""
+msgstr "Buat Akun Zume"
 
 #: site/login/login-template.php:387 site/login/login-template.php:483
 #: site/login/login-template.php:746 site/pages/follow-jesus.php:152
@@ -5752,19 +5740,19 @@ msgstr "Mendaftar"
 
 #: site/login/login-template.php:413
 msgid "Or"
-msgstr ""
+msgstr "Atau"
 
 #: site/login/login-template.php:415
 msgid "Register with Email"
-msgstr ""
+msgstr "Daftar dengan Email"
 
 #: site/login/login-template.php:453
 msgid "Badly formatted email address"
-msgstr ""
+msgstr "Alamat email dengan format yang buruk"
 
 #: site/login/login-template.php:460
 msgid "Password is not strong enough"
-msgstr ""
+msgstr "Kata sandi tidak cukup kuat"
 
 #: site/login/login-template.php:472
 msgid "There are some errors in your form."
@@ -5776,7 +5764,7 @@ msgstr "Tindakan pengguna telah dikonfirmasi."
 
 #: site/login/login-template.php:638
 msgid "Welcome back!"
-msgstr ""
+msgstr "Selamat Datang kembali!"
 
 #: site/login/login-template.php:645 site/login/login-template.php:694
 #: site/login/login-template.php:769 site/login/login.php:31
@@ -5786,7 +5774,7 @@ msgstr "Masuk"
 
 #: site/login/login-template.php:668
 msgid "or sign in with email"
-msgstr ""
+msgstr "atau masuk dengan email"
 
 #: site/login/login-template.php:674
 msgid "Username or password does not match. Try again."
@@ -5798,7 +5786,7 @@ msgstr "Ingat Saya"
 
 #: site/login/login-template.php:745
 msgid "Don't have an account?"
-msgstr ""
+msgstr "Belum punya akun?"
 
 #: site/login/login-template.php:757
 msgid "Lost your password?"
@@ -5806,15 +5794,15 @@ msgstr "Kehilangan sandi Anda?"
 
 #: site/login/login-template.php:768
 msgid "Already have an account?"
-msgstr ""
+msgstr "Sudah punya akun?"
 
 #: site/login/login-template.php:824
 msgid "Username or Email Address"
-msgstr ""
+msgstr "Nama Pengguna atau Alamat Email"
 
 #: site/login/login-template.php:827
 msgid "Log In"
-msgstr ""
+msgstr "Masuk"
 
 #: site/pages/_strings-mobile-pwa.php:13
 msgid "Account"
@@ -5853,7 +5841,7 @@ msgstr "Keluar"
 
 #: site/pages/_strings-mobile-pwa.php:23
 msgid "Download All"
-msgstr ""
+msgstr "Unduh Semua"
 
 #: site/pages/_strings-mobile-pwa.php:24
 msgid "Download"
@@ -5898,6 +5886,8 @@ msgstr "Pasang"
 #: site/pages/_strings-mobile-pwa.php:39
 msgid "This app can be installed to your device. Click to install this app."
 msgstr ""
+"Aplikasi ini dapat dipasang di perangkat Anda. Klik untuk memasang aplikasi "
+"ini."
 
 #: site/pages/_strings-mobile-pwa.php:40
 msgid ""
@@ -5935,10 +5925,12 @@ msgid ""
 "Zúme Training exists to saturate the globe with multiplying disciples in our "
 "generation."
 msgstr ""
+"Pelatihan Zúme hadir untuk memenuhi bumi dengan memperbanyak murid di "
+"generasi kita."
 
 #: site/pages/about.php:84
 msgid "What is Zúme Training?"
-msgstr ""
+msgstr "Apa itu Pelatihan Zúme?"
 
 #: site/pages/about.php:88
 msgid ""
@@ -5948,6 +5940,11 @@ msgid ""
 "ordinary people, using ordinary resources, can have exponential impact for "
 "the Kingdom of God."
 msgstr ""
+"Zúme, merupakan kata Yunani untuk ‘ragi,’ memiliki makna yang penting. Dalam "
+"Matius 13:33, Isa membandingkan kerajaan surga dengan ragi yang dicampur "
+"tepung dalam jumlah besar, yang meresap ke seluruh adonan. Perumpamaan ini "
+"menggambarkan bagaimana orang biasa memakai sumber daya biasa, dapat "
+"memberikan dampak eksponensial bagi Kerajaan Allah."
 
 #: site/pages/about.php:97
 msgid ""
@@ -5959,6 +5956,13 @@ msgid ""
 "Kingdom, the idea for online video-based training was born. Ultimately, this "
 "idea evolved into what is now known as Zúme."
 msgstr ""
+"Pada tahun 2015, sekelompok kecil orang berkomitmen untuk memenuhi perintah "
+"Amanat Agung Isa berkumpul untuk Rapat Kepemimpinan Proyek Jonathan. Mereka "
+"berdoa dan membahas tantangan dalam memperbanyak murid di seluruh dunia. "
+"Menyadari perlunya pelatihan yang mudah diakses, multibahasa, dan fleksibel "
+"yang sejalan dengan panggilan Isa bagi orang biasa untuk menjadi 'ragi' bagi "
+"Kerajaan, lahirlah ide untuk pelatihan berbasis video daring. Akhirnya, ide "
+"ini berkembang menjadi apa yang sekarang dikenal sebagai Zúme."
 
 #: site/pages/about.php:98
 msgid ""
@@ -5968,6 +5972,11 @@ msgid ""
 "disciples, resulting in millions of disciples advancing the Kingdom in "
 "spiritually dark places."
 msgstr ""
+"Prinsip-prinsip dasar pemuridan dalam Pelatihan Zúme berasal langsung dari "
+"Alkitab dan telah diuji secara global selama lebih dari tiga puluh tahun. "
+"Prinsip-prinsip ini memberdayakan orang percaya biasa untuk menjadi murid "
+"yang, pada gilirannya, memuridkan, menghasilkan jutaan murid yang memajukan "
+"Kerajaan Allah di tempat-tempat yang gelap secara rohani."
 
 #: site/pages/about.php:111
 msgid ""
@@ -5977,6 +5986,11 @@ msgid ""
 "formal statement of faith. All involved, however, would agree with the "
 "Lausanne Covenant."
 msgstr ""
+"Diluncurkan pada tanggal 14 Februari 2017, melalui kolaborasi Kerajaan, "
+"Pelatihan Zúme tetap merupakan inisiatif terbuka tanpa kendali organisasi "
+"resmi atau entitas terpisah. Karena Zúme tidak dijalankan oleh suatu "
+"organisasi, tidak ada pernyataan iman formal. Namun, semua yang terlibat "
+"akan setuju dengan Perjanjian Lausanne."
 
 #: site/pages/about.php:117
 msgid ""
@@ -5984,16 +5998,22 @@ msgid ""
 "generation. The Biblical principles found in this training are simple. The "
 "world changing potential is in the practice of these principles."
 msgstr ""
+"Tujuannya adalah untuk memenuhi bumi dengan murid yang terus bertambah "
+"banyak di generasi kita. Prinsip-prinsip Alkitab yang ditemukan dalam "
+"pelatihan ini sederhana. Potensi untuk mengubah dunia ada dalam praktik "
+"prinsip-prinsip ini."
 
 #: site/pages/about.php:118
 msgid ""
 "The vision of Zúme is comparable to yeast working through the entire dough, "
 "spreading basic Kingdom tools into neighborhoods worldwide."
 msgstr ""
+"Visi Zúme dapat diibaratkan seperti ragi yang bekerja pada seluruh adonan, "
+"menyebarkan peralatan dasar Kerajaan ke seluruh lingkungan di seluruh dunia."
 
 #: site/pages/about.php:125
 msgid "The vision of Zúme has two parts:"
-msgstr ""
+msgstr "Visi Zúme memiliki dua bagian:"
 
 #: site/pages/about.php:129
 msgid "1 Training"
@@ -6001,13 +6021,16 @@ msgstr "1 Pelatihan"
 
 #: site/pages/about.php:133
 msgid "Part 1:"
-msgstr ""
+msgstr "Bagian 1:"
 
 #: site/pages/about.php:134
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
+"Untuk melatih setidaknya satu pembuat murid untuk setiap 5.000 orang di "
+"Amerika Utara dan satu pembuat murid untuk setiap 50.000 orang di seluruh "
+"dunia."
 
 #: site/pages/about.php:140
 msgid "2 Simple Churches"
@@ -6015,7 +6038,7 @@ msgstr "Dua Jemaah Allah Sederhana"
 
 #: site/pages/about.php:144
 msgid "Part 2:"
-msgstr ""
+msgstr "Bagian 2:"
 
 #: site/pages/about.php:145
 msgid ""
@@ -6023,6 +6046,9 @@ msgid ""
 "for every 5,000 people in North America and 2 simple churches for every "
 "50,000 people globally."
 msgstr ""
+"Untuk para pembuat murid yang terlatih untuk memulai setidaknya 2 jemaah "
+"sederhana yang berkembang untuk setiap 5.000 orang di Amerika Utara dan 2 "
+"jemaah sederhana untuk setiap 50.000 orang di seluruh dunia."
 
 #: site/pages/about.php:151
 msgid ""
@@ -6030,6 +6056,9 @@ msgid ""
 "the world covered with multiplying disciples and churches. Explore Zúme "
 "Training and find out how!"
 msgstr ""
+"Dengan permulaan yang kecil ini... apa yang disebut Alkitab sebagai "
+"ragi...kita dapat melihat dunia dipenuhi dengan murid dan jemaah yang terus "
+"bertambah. Jelajahi Pelatihan Zúme dan cari tahu sekarang!"
 
 #: site/pages/about.php:154
 msgid "Get Started"
@@ -6037,7 +6066,7 @@ msgstr "Memulai"
 
 #: site/pages/about.php:159
 msgid "How does Zúme Training Work?"
-msgstr ""
+msgstr "Bagaimana Cara Kerja Pelatihan Zúme?"
 
 #: site/pages/about.php:164 site/pages/home.php:207
 #, php-format
@@ -6045,6 +6074,8 @@ msgid ""
 "%1$sFree Registration%2$s gives you full access to all training materials "
 "and online coaching."
 msgstr ""
+"%1$sPendaftaran Gratis%2$s memberi Anda akses penuh ke semua materi "
+"pelatihan dan pembinaan daring."
 
 #: site/pages/about.php:168 site/pages/home.php:211
 #, php-format
@@ -6052,12 +6083,16 @@ msgid ""
 "%1$sInstructional Videos%2$s help your group understand basic principles of "
 "multiplying disciples."
 msgstr ""
+"%1$sVideo Instruksi%2$s membantu kelompok Anda memahami prinsip dasar dalam "
+"melipatgandakan murid."
 
 #: site/pages/about.php:172 site/pages/home.php:215
 #, php-format
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
+"%1$sDiskusi Kelompok%2$s membantu kelompok Anda memikirkan apa yang sedang "
+"disampaikan."
 
 #: site/pages/about.php:176 site/pages/home.php:219
 #, php-format
@@ -6065,6 +6100,8 @@ msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
+"%1$sLatihan Sederhana%2$s membantu kelompok Anda mempraktikkan apa yang di "
+"pelajari."
 
 #: site/pages/about.php:180 site/pages/home.php:223
 #, php-format
@@ -6072,18 +6109,20 @@ msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
+"%1$sSesi Tantangan%2$s membantu kelompok Anda terus belajar dan berkembang "
+"di antara sesi."
 
 #: site/pages/about.php:199
 msgid "Before you start."
-msgstr ""
+msgstr "Sebelum Anda memulai."
 
 #: site/pages/about.php:206
 msgid "Zúme is NOT like other trainings!"
-msgstr ""
+msgstr "Zúme TIDAK seperti pelatihan lainnya!"
 
 #: site/pages/about.php:208
 msgid "First:"
-msgstr ""
+msgstr "Pertama:"
 
 #: site/pages/about.php:209
 msgid ""
@@ -6091,10 +6130,13 @@ msgid ""
 "practicing of skills all will be better with others, so gather a group, if "
 "possible."
 msgstr ""
+"Zúme dirancang untuk dilakukan secara berkelompok. Latihan kelompok, "
+"diskusi, dan latihan keterampilan akan lebih baik jika dilakukan bersama "
+"orang lain, jadi berkelompoklah jika memungkinkan."
 
 #: site/pages/about.php:212
 msgid "Second:"
-msgstr ""
+msgstr "Kedua:"
 
 #: site/pages/about.php:213
 msgid ""
@@ -6103,50 +6145,63 @@ msgid ""
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
+"Zúme adalah tentang mengembangkan keterampilan, membangun kompetensi, bukan "
+"hanya sekadar pengetahuan. Dalam setiap sesi, tujuannya adalah tindakan yang "
+"menghasilkan buah. Hasil terbaik dari pelatihan ini adalah perubahan gaya "
+"hidup dan pengalaman bertambah kuatnya iman Anda."
 
 #: site/pages/about.php:221
 msgid "What's required"
-msgstr ""
+msgstr "Apa yang dibutuhkan"
 
 #: site/pages/about.php:224
 msgid "Needed for the training:"
-msgstr ""
+msgstr "Dibutuhkan untuk pelatihan:"
 
 #: site/pages/about.php:226 site/pages/training.php:258
 msgid "At least 3 people, but ideally less than 12."
-msgstr ""
+msgstr "Setidaknya 3 orang, tetapi idealnya kurang dari 12."
 
 #: site/pages/about.php:227 site/pages/training.php:259
 msgid ""
 "Commitment to spend 20 hours learning and practicing the concepts and tools "
 "in the course."
 msgstr ""
+"Komitmen untuk meluangkan 20 jam belajar dan mempraktikkan konsep serta alat "
+"dalam kursus."
 
 #: site/pages/about.php:228 site/pages/training.php:260
 msgid ""
 "A person to facilitate (potentially you) the meeting time and location, to "
 "guide the follow-up discussion, and facilitate action prompts."
 msgstr ""
+"Orang yang memfasilitasi (mungkin Anda) waktu dan lokasi pertemuan, untuk "
+"memandu diskusi lanjutan, dan memfasilitasi tindakan."
 
 #: site/pages/about.php:237
 msgid "NOT needed for the training:"
-msgstr ""
+msgstr "TIDAK dibutuhkan untuk pelatihan:"
 
 #: site/pages/about.php:239 site/pages/training.php:264
 msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
+"Tidak diperlukan pengetahuan atau pengalaman yang lebih dari anggota "
+"kelompok lainnya! Jika Anda dapat mengklik berikutnya, Anda dapat memimpin "
+"Pelatihan Zúme."
 
 #: site/pages/about.php:240
 msgid ""
 "Special permission to lead a training is not needed! Zúme is self-"
 "facilitated, self-initiated, and you can start today."
 msgstr ""
+"Tidak diperlukan izin khusus untuk memimpin pelatihan! Zúme difasilitasi "
+"secara pribadi, diinisiasi sendiri, dan Anda dapat memulainya hari ini."
 
 #: site/pages/about.php:251
 msgid "Connecting with a Coach."
-msgstr ""
+msgstr "Menghubungkan dengan Pelatih."
 
 #: site/pages/about.php:258
 msgid ""
@@ -6154,74 +6209,80 @@ msgid ""
 "COACH to help you and your group successfully implement the training. Don’t "
 "hesitate to reach out with questions or concerns!"
 msgstr ""
+"Sepanjang jalan, komunitas Zúme ingin mendukung Anda dengan menyediakan "
+"PELATIH untuk membantu Anda dan kelompok Anda melaksanakan pelatihan dengan "
+"sukses. Jangan ragu untuk menghubungi kami jika memiliki pertanyaan atau "
+"masalah!"
 
 #: site/pages/about.php:268
 msgid "Are you ready? Register today."
-msgstr ""
+msgstr "Apakah Anda siap? Daftarkan diri Anda hari ini."
 
 #: site/pages/about.php:272 site/pages/home.php:109
 msgid "Register Free"
-msgstr ""
+msgstr "Daftar Gratis"
 
 #: site/pages/checkin.php:82 site/pages/friend-invite.php:72
 msgid "Please enter a friend code."
-msgstr ""
+msgstr "Silakan masukkan kode teman."
 
 #: site/pages/checkin.php:237
 msgid "Use the code on the screen or in the book"
-msgstr ""
+msgstr "Gunakan kode di layar atau di buku"
 
 #: site/pages/checkin.php:242 site/pages/friend-invite.php:171
 #: site/pages/plan-invite.php:177
 msgid "Connect"
-msgstr ""
+msgstr "Menghubungkan"
 
 #: site/pages/checkin.php:246
 msgid "or"
-msgstr ""
+msgstr "atau"
 
 #: site/pages/checkin.php:248
 msgid "Choose session to checkin"
-msgstr ""
+msgstr "Pilih sesi untuk daftar masuk"
 
 #: site/pages/checkin.php:250 site/pages/training.php:159
 #: site/pages/training.php:210
 msgid "Training Schedules"
-msgstr ""
+msgstr "Jadwal Pelatihan"
 
 #: site/pages/checkin.php:254 site/pages/training.php:217
 msgid "10 Sessions"
-msgstr ""
+msgstr "10 Sesi"
 
 #: site/pages/checkin.php:258 site/pages/training.php:229
 msgid "20 Sessions"
-msgstr ""
+msgstr "20 Sesi"
 
 #: site/pages/checkin.php:262 site/pages/training.php:241
 msgid "Intensive"
-msgstr ""
+msgstr "Intensif"
 
 #: site/pages/donate.php:28 site/pages/donate.php:81
 #: site/pages/messages.php:261 site/parts/footer.php:42
 msgid "Donate"
-msgstr ""
+msgstr "Menyumbangkan"
 
 #: site/pages/donate.php:90
 msgid ""
 "We are crowdfunded, and we love that you want to be part of the Zúme vision."
 msgstr ""
+"Kami didanai secara massal, dan kami senang Anda ingin menjadi bagian dari "
+"visi Zúme."
 
 #: site/pages/donate.php:99
 msgid "View All Giving Opportunities"
-msgstr ""
+msgstr "Lihat Semua Peluang Pemberian"
 
 #: site/pages/faq.php:81
 msgid "FAQ"
-msgstr ""
+msgstr "Pertanyaan yang sering diajukan"
 
 #: site/pages/faq.php:83 site/profile/profile.php:157
 msgid "User Profile"
-msgstr ""
+msgstr "Profil Pengguna"
 
 #: site/pages/follow-jesus.php:30 site/pages/follow-jesus.php:139
 #: site/parts/footer.php:17
@@ -6248,12 +6309,14 @@ msgstr "Dengarkan dan Ikut Membaca"
 msgid ""
 "Watch this important video explaining the 4 relationships of your new life"
 msgstr ""
+"Tonton video penting ini yang menjelaskan 4 hubungan dari hidup baru Anda"
 
 #: site/pages/follow-jesus.php:148
 msgid ""
 "The sections below, will teach you what it means to be a follower (disciple) "
 "of Jesus"
 msgstr ""
+"Bagian di bawah ini akan mengajarkan Anda arti menjadi pengikut (murid) Isa"
 
 #: site/pages/follow-jesus.php:163
 msgid "What is a follower of Jesus?"
@@ -6295,6 +6358,8 @@ msgid ""
 "It's a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
+"Ini adalah cara sederhana untuk merayakan hubungan intim dan hubungan "
+"berkelanjutan kita dengan Isa. Pelajari cara sederhana untuk merayakannya."
 
 #: site/pages/follow-jesus.php:241
 msgid "Sacrifice and Suffering"
@@ -6315,11 +6380,11 @@ msgid ""
 "you always, to the very end of the age.\""
 msgstr ""
 "Isa mendekati mereka dan bersabda, \"Segala wewenang dan kuasa baik di surga "
-"maupun di bumi sudah diserahkan kepada-Ku. Sebab itu pergilah, jadikanlah "
-"semua suku bangsa pengikut-Ku dan permandikanlah mereka dalam nama Sang "
-"Bapa, Sang Anak, dan Ruh Allah Yang Mahasuci. Ajarlah mereka menaati segala "
-"sesuatu yang telah Kuperintahkan kepadamu dan ingatlah, Aku menyertai kamu "
-"sampai kesudahan zaman."
+"maupun di bumi sudah diberikan kepada-Ku. Sebab itu pergilah, jadikanlah "
+"semua bangsa murid-Ku dan permandikanlah mereka dalam nama Sang Bapa, Anak, "
+"dan Roh Kudus, ajarlah mereka menaati segala sesuatu yang telah "
+"Kuperintahkan kepadamu dan ingatlah, Aku menyertai kamu sampai kesudahan "
+"zaman.\""
 
 #: site/pages/follow-jesus.php:261
 msgid "Matthew 28:18-20"
@@ -6362,23 +6427,28 @@ msgid ""
 "It's a simple way to obey God’s command to pray for others. And it's just "
 "what it sounds like — praying to God while walking around!"
 msgstr ""
+"Ini adalah cara sederhana menaati perintah Allah untuk berdoa bagi orang "
+"lain. Dan sama seperti sebutannya — berdoa kepada Allah sambil berjalan-"
+"jalan!"
 
 #: site/pages/follow-jesus.php:312
 msgid "What if many friends, family and others start following Jesus with me?"
 msgstr ""
+"Bagaimana jika banyak teman, keluarga, dan orang lain mulai mengikut Isa "
+"bersama saya?"
 
 #: site/pages/friend-invite.php:28 site/pages/friend-invite.php:164
 msgid "Friend Invitation"
-msgstr ""
+msgstr "Undangan Teman"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:172
 msgid "Use the code your friend sent you."
-msgstr ""
+msgstr "Gunakan kode yang dikirimkan teman Anda."
 
 #: site/pages/get-a-coach.php:28 site/pages/get-a-coach.php:84
 #: site/pages/get-a-coach.php:111
 msgid "Get A Coach"
-msgstr ""
+msgstr "Dapatkan Pelatih"
 
 #: site/pages/get-a-coach.php:29 site/pages/get-a-coach.php:105
 msgid ""
@@ -6386,6 +6456,9 @@ msgid ""
 "Zûme. All our coaches can help you over barriers and make steps in your "
 "journey."
 msgstr ""
+"Semua pelatih kami terlatih dan mempraktikkan konsep serta alat yang "
+"terdapat di Zûme. Semua pelatih kami dapat membantu Anda mengatasi hambatan "
+"dan melangkah maju dalam perjalanan Anda."
 
 #: site/pages/get-a-coach.php:85
 msgid ""
@@ -6393,50 +6466,58 @@ msgid ""
 "olympic athletes have coaches, and often more than one. Disciple making can "
 "equally benefit from coaching by those who have more experience."
 msgstr ""
+"Setiap cabang olahraga, terutama di tingkat yang lebih tinggi, menggunakan "
+"pelatihan. Bahkan atlet Olimpiade memiliki pelatih, dan sering kali lebih "
+"dari satu. Pemuridan juga dapat memperoleh manfaat dari pelatihan yang "
+"diberikan oleh mereka yang memiliki lebih banyak pengalaman."
 
 #: site/pages/get-a-coach.php:88
 msgid "No Cost"
-msgstr ""
+msgstr "Tanpa Biaya"
 
 #: site/pages/get-a-coach.php:89 site/pages/get-a-coach.php:96
 #: site/pages/home.php:247 site/pages/home.php:254 site/pages/home.php:255
 #: site/pages/training.php:130 site/pages/training.php:137
 #: site/pages/training.php:138
 msgid "Join a training group"
-msgstr ""
+msgstr "Bergabung ke kelompok Pelatihan"
 
 #: site/pages/get-a-coach.php:91
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
 msgstr ""
+"Jaringan pelatih sukarelawan kami tidak dibayar, tetapi didorong oleh hasrat "
+"untuk mengasihi Allah, mengasihi sesama, dan menaati Amanat Agung."
 
 #: site/pages/get-a-coach.php:95
 msgid "Localized"
-msgstr ""
+msgstr "Terlokalisasi"
 
 #: site/pages/get-a-coach.php:98
 msgid ""
 "Our connection team attempts to connect you with a coach who speaks your "
 "language and is geographically as close as possible."
 msgstr ""
+"Tim koneksi kami berupaya menghubungkan Anda dengan pelatih yang berbicara "
+"dalam bahasa Anda dan secara geografis sedekat mungkin dengan Anda."
 
 #: site/pages/get-a-coach.php:102
 msgid "Experienced"
-msgstr ""
+msgstr "Berpengalaman"
 
 #: site/pages/get-a-coach.php:103 site/pages/home.php:263
 #: site/pages/training.php:146
 msgid "Join a training"
-msgstr ""
+msgstr "Bergabunglah dalam pelatihan"
 
 #: site/pages/home.php:81
 msgid "45+"
-msgstr ""
+msgstr "45+"
 
 #: site/pages/home.php:125
 msgid "Becoming more like Jesus... Together"
-msgstr ""
+msgstr "Menjadi lebih seperti Isa... Bersama-sama"
 
 #: site/pages/home.php:129
 msgid "Overview"
@@ -6444,137 +6525,144 @@ msgstr "Tinjauan"
 
 #: site/pages/home.php:131
 msgid "Group Discussions"
-msgstr ""
+msgstr "Diskusi Kelompok"
 
 #: site/pages/home.php:132
 msgid "Self-Facilitated"
-msgstr ""
+msgstr "Difasilitasi Sendiri"
 
 #: site/pages/home.php:133
 msgid "Practice-Oriented"
-msgstr ""
+msgstr "Berorientasi pada Praktik"
 
 #: site/pages/home.php:134
 msgid "32 Concepts and Skills"
-msgstr ""
+msgstr "32 Konsep dan Keterampilan"
 
 #: site/pages/home.php:135
 msgid "20 hours of Training"
-msgstr ""
+msgstr "20 jam Pelatihan"
 
 #: site/pages/home.php:142
 msgid "Free. Anytime. Anywhere."
-msgstr ""
+msgstr "Gratis. Kapan saja. Di mana saja."
 
 #: site/pages/home.php:146
 msgid "Gain insight into..."
-msgstr ""
+msgstr "Dapatkan wawasan tentang..."
 
 #: site/pages/home.php:151
 msgid "Being A Disciple"
-msgstr ""
+msgstr "Menjadi Seorang Murid"
 
 #: site/pages/home.php:153
 msgid "What's a Disciple?"
-msgstr ""
+msgstr "Apa itu Murid?"
 
 #: site/pages/home.php:154
 msgid "What's a Church?"
-msgstr ""
+msgstr "Apa itu Jemaah?"
 
 #: site/pages/home.php:155
 msgid "Keys to Spiritual Growth"
-msgstr ""
+msgstr "Kunci Pertumbuhan Rohani"
 
 #: site/pages/home.php:156
 msgid "Personal Bible Study"
-msgstr ""
+msgstr "Pelajaran Alkitab Pribadi"
 
 #: site/pages/home.php:157
 msgid "Strong Prayer Life"
-msgstr ""
+msgstr "Kehidupan Doa yang Kuat"
 
 #: site/pages/home.php:158
 msgid "The Power of Obedient Faith"
-msgstr ""
+msgstr "Kekuatan Iman yang Taat"
 
 #: site/pages/home.php:165
 msgid "Making Disciples"
-msgstr ""
+msgstr "Pemuridan"
 
 #: site/pages/home.php:167
 msgid "Sharing God's Story"
-msgstr ""
+msgstr "Berbagi Kisah Allah"
 
 #: site/pages/home.php:168
 msgid "Telling Your Story"
-msgstr ""
+msgstr "Menceritakan Kisah Anda"
 
 #: site/pages/home.php:169
 msgid "Engaging Seekers"
-msgstr ""
+msgstr "Melibatkan Pencari"
 
 #: site/pages/home.php:170
 msgid "Vision Casting Multiplication"
-msgstr ""
+msgstr "Penanaman Visi Multiplikasi"
 
 #: site/pages/home.php:171
 msgid "Leading a Simple Church"
-msgstr ""
+msgstr "Memimpin Jemaah Sederhana"
 
 #: site/pages/home.php:172
 msgid "Training Others"
-msgstr ""
+msgstr "Melatih Orang Lain"
 
 #: site/pages/home.php:177
 msgid "I'm Ready!"
-msgstr ""
+msgstr "Saya Siap!"
 
 #: site/pages/home.php:181
 msgid "Ordinary People. Simple Steps."
-msgstr ""
+msgstr "Orang Biasa. Langkah Sederhana."
 
 #: site/pages/home.php:240
 msgid "More about zume"
-msgstr ""
+msgstr "Lebih lanjut tentang zume"
 
 #: site/pages/home.php:246 site/pages/training.php:129
 msgid "Create your own training group"
-msgstr ""
+msgstr "Buat kelompok pelatihan Anda sendiri"
 
 #: site/pages/home.php:249 site/pages/training.php:132
 msgid ""
 "Gather a few friends or go through the course with an existing small group. "
 "Create your own training group and track your progress."
 msgstr ""
+"Kumpulkan beberapa teman atau ikuti kursus dengan kelompok kecil yang sudah "
+"ada. Buat kelompok pelatihan Anda sendiri dan memantau kemajuan Anda."
 
 #: site/pages/home.php:251 site/pages/training.php:134
 msgid "Create"
-msgstr ""
+msgstr "Membuat"
 
 #: site/pages/home.php:257 site/pages/training.php:140
 msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
+"Jika Anda tidak dapat mengumpulkan kelompok saat ini, pertimbangkan untuk "
+"bergabung dengan salah satu kelompok pelatihan online kami yang dipimpin "
+"oleh pelatih Zúme yang berpengalaman."
 
 #: site/pages/home.php:262 site/pages/training.php:145
 msgid "Request a coach"
-msgstr ""
+msgstr "Minta pelatih"
 
 #: site/pages/home.php:265 site/pages/training.php:148
 msgid ""
 "We can connect you with free Zúme coach who is committed to helping you "
 "understand the training and become a fruitful disciple."
 msgstr ""
+"Kami dapat menghubungkan Anda dengan pelatih Zúme gratis yang berkomitmen "
+"untuk membantu Anda memahami pelatihan dan menjadi murid yang berbuah."
 
 #: site/pages/home.php:267 site/pages/training.php:150
 msgid "Get Help"
-msgstr ""
+msgstr "Dapatkan Bantuan"
 
 #: site/pages/home.php:289
 msgid "Real people ... real stories."
-msgstr ""
+msgstr "Orang nyata...kisah nyata."
 
 #: site/pages/home.php:300
 msgid ""
@@ -6582,27 +6670,36 @@ msgid ""
 "not understood the simple truths of disciple making that I found here in "
 "Zúme. ~ C"
 msgstr ""
+"Saya menghabiskan waktu bertahun-tahun dengan setia menghadiri pelajaran "
+"Alkitab dan jemaah, tapi entah bagaimana belum memahami kebenaran sederhana "
+"tentang pemuridan yang saya temukan di sini di Zúme. ~ C"
 
 #: site/pages/home.php:311
 msgid "Anyone can do this. You don‘t need any special skills or training. ~ J"
 msgstr ""
+"Siapa pun bisa melakukan ini. Anda tidak memerlukan keterampilan atau "
+"pelatihan khusus. ~ J"
 
 #: site/pages/home.php:322
 msgid ""
 "This is for all disciples who want to obey the Great Commission. Zúme "
 "training outlines a normal Christian lifestyle. ~ D"
 msgstr ""
+"Ini ditujukan bagi semua murid yang ingin menaati Amanat Agung. Pelatihan "
+"Zúme menguraikan gaya hidup Nasrani yang normal. ~ D"
 
 #: site/pages/home.php:333
 msgid ""
 "These concepts and skills transformed our church and our impact on the "
 "world. ~ R"
 msgstr ""
+"Konsep dan keterampilan ini mengubah jemaah kami dan dampak kami terhadap "
+"dunia. ~ R"
 
 #: site/pages/home.php:343
 #, php-format
 msgid "%s = Yeast"
-msgstr ""
+msgstr "%s = Ragi"
 
 #: site/pages/home.php:348
 msgid ""
@@ -6623,71 +6720,71 @@ msgstr ""
 
 #: site/pages/home.php:353
 msgid "Ready to take your next steps?"
-msgstr ""
+msgstr "Siap untuk mengambil langkah berikutnya?"
 
 #: site/pages/home.php:357
 msgid "Register Free."
-msgstr ""
+msgstr "Daftar Gratis."
 
 #: site/pages/home.php:361
 msgid "Gather a Group."
-msgstr ""
+msgstr "Kumpulkan Kelompok."
 
 #: site/pages/home.php:365
 msgid "Change the World."
-msgstr ""
+msgstr "Mengubah Dunia."
 
 #: site/pages/home.php:368
 msgid "Get started"
-msgstr ""
+msgstr "Memulai"
 
 #: site/pages/kitchen-sink.php:79
 msgid "Kitchen Sink"
-msgstr ""
+msgstr "Wastafel Dapur"
 
 #: site/pages/messages.php:229
 msgid "Friend"
-msgstr ""
+msgstr "Teman"
 
 #: site/pages/mobile-app.php:28 site/pages/mobile-app.php:130
 msgid "Zúme Training App"
-msgstr ""
+msgstr "Aplikasi Pelatihan Zúme"
 
 #: site/pages/mobile-app.php:128
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
-msgstr ""
+msgstr "Memberdayakan Murid. Kapan saja... Di mana saja dengan Aplikasi Zúme."
 
 #: site/pages/mobile-app.php:132
 msgid "Access the full training wherever you go"
-msgstr ""
+msgstr "Akses pelatihan lengkap ke mana pun Anda pergi"
 
 #: site/pages/mobile-app.php:137 site/pages/mobile-app.php:161
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "Dapatkan di Google Play"
 
 #: site/pages/mobile-app.php:152
 msgid "Offline App"
-msgstr ""
+msgstr "Aplikasi Offline"
 
 #: site/pages/mobile-app.php:154
 msgid "Full Training with no internet required"
-msgstr ""
+msgstr "Seluruh pelatihan tanpa perlu internet"
 
 #: site/pages/mobile-app.php:155
 msgid "Download the course and video content to your phone"
-msgstr ""
+msgstr "Unduh kursus dan konten video ke ponsel Anda"
 
 #: site/pages/mobile-app.php:156
 msgid "Great for areas where internet access is restricted or limited"
-msgstr ""
+msgstr "Cocok untuk area yang akses internetnya dilarang atau terbatas"
 
 #: site/pages/plan-invite.php:28 site/pages/plan-invite.php:165
 msgid "Plan Invitation"
-msgstr ""
+msgstr "Undangan Rencana"
 
 #: site/pages/plan-invite.php:72
 msgid "Please enter a code."
-msgstr ""
+msgstr "Silakan masukkan kode."
 
 #: site/pages/privacy-policy.php:28 site/pages/privacy-policy.php:79
 msgid "Zúme Privacy Policy"
@@ -6724,6 +6821,8 @@ msgid ""
 "The profile elements below change depending on if Facebook or Google sign on "
 "is used."
 msgstr ""
+"Elemen profil di bawah berubah tergantung jika masuk menggunakan akun "
+"Facebook atau Google."
 
 #: site/pages/privacy-policy.php:89
 msgid ""
@@ -6750,6 +6849,9 @@ msgid ""
 "website, and other information is requested and saved for additional "
 "coaching and support."
 msgstr ""
+"Beberapa informasi pribadi dilacak demi berfungsinya situs web dengan baik, "
+"dan informasi lainnya diminta dan disimpan untuk pembinaan dan dukungan "
+"tambahan."
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
@@ -6764,11 +6866,15 @@ msgid ""
 "We also track your progress through the training course and through site "
 "usage."
 msgstr ""
+"Kami juga memantau kemajuan Anda melalui kursus pelatihan dan melalui "
+"penggunaan situs."
 
 #: site/pages/privacy-policy.php:131
 msgid ""
 "We request neccissary information through various sign up and request forms."
 msgstr ""
+"Kami meminta informasi yang diperlukan melalui berbagai formulir pendaftaran "
+"dan permintaan."
 
 #: site/pages/privacy-policy.php:138
 msgid "How do we use your information?"
@@ -6848,6 +6954,10 @@ msgid ""
 "serves to identify Users and remember their preferences, for the sole "
 "purpose of providing the service required by the User."
 msgstr ""
+"Segala penggunaan Cookie - atau alat pelacak lainnya - kecuali dinyatakan "
+"sebaliknya, berfungsi untuk mengidentifikasi Pengguna dan mengingat "
+"preferensi mereka, dengan satu tujuan yaitu menyediakan layanan yang "
+"dibutuhkan Pengguna."
 
 #: site/pages/privacy-policy.php:176
 msgid "Your Access to and Control Over Information."
@@ -6858,20 +6968,23 @@ msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
 msgstr ""
+"Anda dapat melakukan hal berikut kapan saja dengan menghubungi kami melalui "
+"formulir \"Dapatkan Pelatih\" dan pilih \"Bantuan Teknis\" dari dasbor "
+"pengguna Anda."
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
 msgstr ""
-"lihat data apa yang telah kami kumpulkan dari aktivitas Anda bersama kami"
+"Lihat data apa yang telah kami kumpulkan dari aktivitas Anda bersama kami."
 
 #: site/pages/privacy-policy.php:186
 msgid "Change/correct any data we have about you."
 msgstr "Ubah / koreksi setiap data yang kami miliki mengenai Anda."
 
 #: site/pages/privacy-policy.php:189
-#, fuzzy
 msgid "Have us delete your account or any data we have about you."
-msgstr "Minta kami menghapus data apa pun yang kami miliki mengenai Anda."
+msgstr ""
+"Minta kami menghapus akun atau data apa pun yang kami miliki mengenai Anda."
 
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
@@ -6879,7 +6992,7 @@ msgstr "Ungkapkan kekhawatiran Anda tentang penggunaan data Anda oleh kami."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
-msgstr ""
+msgstr "Berhenti menerima kontak dari kami di masa mendatang."
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
@@ -6895,11 +7008,11 @@ msgstr ""
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
-msgstr ""
+msgstr "Sumber yang dapat diunduh untuk membantu menjalankan pelatihan zume."
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
-msgstr ""
+msgstr "Buku Panduan Pelatihan"
 
 #: site/pages/resources.php:99
 msgid ""
@@ -6908,36 +7021,42 @@ msgid ""
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
+"Pelatihan Zúme kini tersedia dalam buku catatan lengkap. Semua konsep, alat, "
+"pertanyaan diskusi, dan tantangan dari pelatihan kini ada di telapak tangan "
+"Anda. Kode QR untuk setiap sesi juga memberi Anda akses ke semua konten "
+"video!"
 
 #: site/pages/resources.php:103
 msgid "Free Download (PDF)"
-msgstr ""
+msgstr "Unduh Gratis (PDF)"
 
 #: site/pages/resources.php:105
 msgid "Order print copy"
-msgstr ""
+msgstr "Pesan salinan cetak"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
-msgstr ""
+msgstr "Slide Kursus Online"
 
 #: site/pages/resources.php:122
 msgid ""
 "The Zúme course content, videos and activities, can be presented from the "
 "online presenter in your web browser."
 msgstr ""
+"Konten kursus, video dan aktivitas Zúme dapat dibawakan oleh pembawa acara "
+"online di peramban web Anda."
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr ""
+msgstr "Tautan untuk berbagi konsep dan alat kursus pelatihan zume"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
-msgstr ""
+msgstr "Salin tautan ini dan kirimkan ke teman Anda."
 
 #: site/pages/share.php:80
 msgid "Copied"
-msgstr ""
+msgstr "Disalin"
 
 #: site/pages/share.php:117
 msgid "Tools"
@@ -6949,31 +7068,35 @@ msgstr "Konsep-konsep"
 
 #: site/pages/share.php:120
 msgid "Sort"
-msgstr ""
+msgstr "Menggolongkan"
 
 #: site/pages/share.php:121
 msgid "Items"
-msgstr ""
+msgstr "Barang"
 
 #: site/pages/share.php:129
 msgid "Sharing with Others"
-msgstr ""
+msgstr "Berbagi dengan Orang Lain"
 
 #: site/pages/share.php:136
 msgid ""
 "When we are faithful to obey and share what the Lord has shared with us, "
 "then he promises to share even more."
 msgstr ""
+"Ketika kita setia menaati dan membagikan apa yang Allah telah bagikan kepada "
+"kita, maka Dia berjanji untuk membagikan lebih banyak lagi."
 
 #: site/pages/training.php:29 site/pages/training.php:212
 msgid ""
 "Zúme is 20 hours of training. But those 20 hours can be broken up "
 "differently depending on your training group‘s availability."
 msgstr ""
+"Zúme merupakan pelatihan 20 jam. Namun, 20 jam tersebut dapat dibagi secara "
+"berbeda tergantung pada ketersediaan kelompok pelatihan Anda."
 
 #: site/pages/training.php:126
 msgid "Get started with Zúme Training"
-msgstr ""
+msgstr "Memulai Pelatihan Zúme"
 
 #: site/pages/training.php:156
 msgid "Course Overview"
@@ -6981,11 +7104,11 @@ msgstr "Pratinjau Kursus"
 
 #: site/pages/training.php:158 site/pages/training.php:170
 msgid "Course Concepts"
-msgstr ""
+msgstr "Konsep Kursus"
 
 #: site/pages/training.php:160 site/pages/training.php:255
 msgid "What is required?"
-msgstr ""
+msgstr "Apa yang dibutuhkan?"
 
 #: site/pages/training.php:173
 msgid ""
@@ -6993,14 +7116,17 @@ msgid ""
 "videos, discussion questions, and simple exercises to develop your skills "
 "and knowledge in the following areas:"
 msgstr ""
+"Dalam kursus yang difasilitasi mandiri ini, Anda dan kelompok pelatihan Anda "
+"akan menggunakan video pendek, pertanyaan diskusi, dan latihan sederhana "
+"untuk mengembangkan keterampilan dan pengetahuan Anda di bidang berikut:"
 
 #: site/pages/training.php:177
 msgid "Discipleship Concepts"
-msgstr ""
+msgstr "Konsep Pemuridan"
 
 #: site/pages/training.php:191
 msgid "Spiritual Practices"
-msgstr ""
+msgstr "Praktik Kerohanian"
 
 #: site/pages/training.php:224
 msgid ""
@@ -7008,6 +7134,9 @@ msgid ""
 "finishes with practical obedience steps and ways to share in-between "
 "sessions. This format is often run once a week for 10 weeks."
 msgstr ""
+"Format kursus Zúme yang asli adalah 10 sesi selama dua jam. Setiap sesi "
+"diakhiri dengan langkah ketaatan praktis dan cara berbagi di sela-sela sesi. "
+"Format ini sering kali dijalankan seminggu sekali selama 10 minggu."
 
 #: site/pages/training.php:236
 msgid ""
@@ -7015,6 +7144,9 @@ msgid ""
 "in the concepts and skills, the 20 session format has more practice "
 "opportunities for each of the concepts and tools."
 msgstr ""
+"Untuk kursus yang bertempo lambat dengan lebih banyak kesempatan untuk "
+"memperoleh kompetensi dalam konsep dan keterampilan, format 20 sesi memiliki "
+"lebih banyak kesempatan praktik untuk setiap konsep dan alat."
 
 #: site/pages/training.php:248
 msgid ""
@@ -7022,29 +7154,33 @@ msgid ""
 "done with a Friday evening (4 hours), and all day Saturday (8 hours) and all "
 "day Sunday (8 hours)."
 msgstr ""
+"Zúme dapat dipadatkan menjadi 5 bagian setengah hari yang masing-masing "
+"berdurasi 4 jam. Hal ini dapat dilakukan dengan Jumat malam (4 jam), dan "
+"sepanjang hari Sabtu (8 jam) dan sepanjang hari Minggu (8 jam)."
 
 #: site/pages/training.php:256
 msgid "Needed for the course:"
-msgstr ""
+msgstr "Diperlukan untuk kursus:"
 
 #: site/pages/training.php:262
 msgid "NOT needed for the course:"
-msgstr ""
+msgstr "TIDAK diperlukan untuk kursus ini:"
 
 #: site/pages/training.php:265
 msgid ""
 "Special permission to lead a course is not needed! Zúme is self-facilitated, "
 "self-initiated, and you can start today."
 msgstr ""
+"Tidak diperlukan izin khusus untuk memimpin pelatihan! Zúme difasilitasi "
+"secara pribadi, diinisiasi sendiri, dan Anda dapat memulainya hari ini."
 
 #: site/parts/download-slides.php:18
-#, fuzzy
 msgid "Download Course Slides"
-msgstr "Unduh Buku Panduan Gratis"
+msgstr "Unduh Slide Kursus"
 
 #: site/parts/download-slides.php:21
 msgid "Large file download. (1 gigabyte)"
-msgstr ""
+msgstr "File unduhan besar. (1 GB)"
 
 #: site/parts/download-slides.php:24
 msgid ""
@@ -7054,29 +7190,34 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
+"Seluruh kursus Zúme dapat diunduh dan dijalankan melalui Powerpoint atau "
+"Keynote. Ini adalah solusi yang bagus untuk pelatihan di area dengan "
+"internet yang lemah. Video disematkan dalam slide dan dapat diputar dengan "
+"mudah tanpa internet. Sistem kode QR masih memerlukan akses online untuk "
+"daftar masuk peserta dan sumber aktivitas."
 
 #: site/parts/download-slides.php:29
 msgid "Powerpoint"
-msgstr ""
+msgstr "Presentasi PPT"
 
 #: site/parts/download-slides.php:41
 msgid "Keynote"
-msgstr ""
+msgstr "Catatan utama"
 
 #: site/parts/nav.php:36 site/parts/nav.php:95
 #: utilities/integrations/replace-placeholder.php:106
 #: utilities/integrations/replace-placeholder.php:107
 #: utilities/integrations/replace-placeholder.php:108
 msgid "Check-in"
-msgstr ""
+msgstr "Pendaftaran"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
-msgstr ""
+msgstr "Ups, Anda menonaktifkan javascript"
 
 #: site/parts/noscript.php:3
 msgid "Please enable javascript to use this page"
-msgstr ""
+msgstr "Harap aktifkan javascript untuk menggunakan halaman ini"
 
 #: site/profile/communication-preferences.php:27
 #: site/profile/communication-preferences.php:74
@@ -7084,27 +7225,27 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:182
 #: utilities/integrations/replace-placeholder.php:183
 msgid "Update Communication Preferences"
-msgstr ""
+msgstr "Perbarui Preferensi Komunikasi"
 
 #: site/profile/communication-preferences.php:76
 msgid "Recieve emails for:"
-msgstr ""
+msgstr "Terima email untuk:"
 
 #: site/profile/communication-preferences.php:79
 msgid "Training session reminders"
-msgstr ""
+msgstr "Pengingat sesi pelatihan"
 
 #: site/profile/communication-preferences.php:83
 msgid "Annual reporting reminders"
-msgstr ""
+msgstr "Pengingat laporan tahunan"
 
 #: site/profile/communication-preferences.php:87
 msgid "Community updates"
-msgstr ""
+msgstr "Pembaruan komunitas"
 
 #: site/profile/communication-preferences.php:91
 msgid "Encouragements"
-msgstr ""
+msgstr "Memberi Dorongan"
 
 #: site/profile/profile.php:27 site/profile/profile.php:106
 msgid "Profile"
@@ -7116,135 +7257,137 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
+"Pelatihan Zúme adalah pengalaman belajar daring dan langsung yang dirancang "
+"untuk kelompok kecil yang mengikut Isa. Pelatihan kegerakan pemuridan daring "
+"dan langsung"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
-msgstr ""
+msgstr "teman kamu"
 
 #: utilities/apis/connect-api.php:235
 msgid "the plan"
-msgstr ""
+msgstr "rencana"
 
 #: utilities/apis/cta-api.php:140
 msgid "Register to start your training"
-msgstr ""
+msgstr "Daftar untuk memulai pelatihan Anda"
 
 #: utilities/apis/cta-api.php:154
 msgid "Join Online Training"
-msgstr ""
+msgstr "Bergabunglah dengan Pelatihan Online"
 
 #: utilities/apis/cta-api.php:155
 msgid "Join the online training to learn more"
-msgstr ""
+msgstr "Bergabunglah dengan pelatihan online untuk mempelajari lebih lanjut"
 
 #: utilities/apis/cta-api.php:169
 msgid "Joined Training!"
-msgstr ""
+msgstr "Bergabung dalam Pelatihan!"
 
 #: utilities/apis/cta-api.php:184
 msgid "Get a coach to help you on your journey"
-msgstr ""
+msgstr "Dapatkan pelatih untuk membantu Anda dalam perjalanan Anda"
 
 #: utilities/apis/cta-api.php:198
 msgid "Requested Coach!"
-msgstr ""
+msgstr "Diminta Pelatih!"
 
 #: utilities/apis/cta-api.php:199 utilities/apis/cta-api.php:213
 #: utilities/apis/cta-api.php:227 utilities/apis/cta-api.php:256
 msgid "Congratulations"
-msgstr ""
+msgstr "Selamat"
 
 #: utilities/apis/cta-api.php:212
 msgid "Connected to Coach!"
-msgstr ""
+msgstr "Terhubung ke Pelatih!"
 
 #: utilities/apis/cta-api.php:226
-#, fuzzy
 msgid "Joined Community"
-msgstr "Komunitas"
+msgstr "Bergabung dengan Komunitas"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
 msgid "Create a Training"
-msgstr ""
+msgstr "Buat Pelatihan"
 
 #: utilities/apis/cta-api.php:241
 msgid "Create a training to help you grow"
-msgstr ""
+msgstr "Buat pelatihan untuk menolong Anda bertumbuh"
 
 #: utilities/apis/cta-api.php:255
 msgid "Created Training!"
-msgstr ""
+msgstr "Pelatihan Dibuat!"
 
 #: utilities/apis/cta-api.php:286
 msgid "Set your profile to help others know you"
-msgstr ""
+msgstr "Atur profil untuk membantu orang lain mengenal Anda"
 
 #: utilities/apis/cta-api.php:300
 msgid "Profile Set"
-msgstr ""
+msgstr "Set Profil"
 
 #: utilities/apis/cta-api.php:314 utilities/apis/cta-api.php:316
 msgid "Create 3 Month Plan"
-msgstr ""
+msgstr "Buat Rencana 3 Bulan"
 
 #: utilities/apis/cta-api.php:315
 msgid "Create a 3 month plan to help you grow"
-msgstr ""
+msgstr "Buatlah rencana 3 bulan untuk menolong Anda bertumbuh"
 
 #: utilities/apis/cta-api.php:329
 #, php-format
 msgid "%s unlocked"
-msgstr ""
+msgstr "%s tidak terkunci"
 
 #: utilities/apis/cta-api.php:343
 msgid "3-Month Plan Created"
-msgstr ""
+msgstr "Rencana 3 Bulan Dibuat"
 
 #: utilities/apis/cta-api.php:357 utilities/apis/cta-api.php:359
 msgid "Complete 3 Month Plan"
-msgstr ""
+msgstr "Selesaikan Rencana 3 Bulan"
 
 #: utilities/apis/cta-api.php:358
 msgid "Complete your 3 month plan to help you grow"
-msgstr ""
+msgstr "Selesaikan rencana 3 bulan Anda untuk membantu Anda bertumbuh"
 
 #: utilities/apis/cta-api.php:372
 msgid "3 Month Plan Completed"
-msgstr ""
+msgstr "Rencana 3 Bulan Selesai"
 
 #: utilities/apis/cta-api.php:417
 msgid "Join the community"
-msgstr ""
+msgstr "Bergabunglah dengan komunitas"
 
 #: utilities/apis/plans-api.php:122
 #, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr ""
+msgstr "Pelatihan pertama saya - %s"
 
 #: utilities/apis/plans-api.php:124
 #, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr ""
+msgstr "Pelatihan %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr ""
+msgstr "IPStack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr ""
+msgstr "IPS tack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
-msgstr ""
+msgstr "Admin Beranda"
 
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 #: utilities/integrations/replace-placeholder.php:88
 msgid "Join the Zúme Community"
-msgstr ""
+msgstr "Bergabunglah dengan Komunitas Zúme"
 
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
@@ -7256,29 +7399,29 @@ msgstr "Zume Dasbor"
 #: utilities/integrations/replace-placeholder.php:95
 #: utilities/integrations/replace-placeholder.php:96
 msgid "Zúme Online Training Groups"
-msgstr ""
+msgstr "Kelompok Pelatihan Online Zúme"
 
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
 #: utilities/integrations/replace-placeholder.php:120
 msgid "Download Slide Presentation"
-msgstr ""
+msgstr "Unduh Slide Presentasi"
 
 #: utilities/integrations/replace-placeholder.php:122
 #: utilities/integrations/replace-placeholder.php:123
 #: utilities/integrations/replace-placeholder.php:124
 msgid "Share Zúme Page"
-msgstr ""
+msgstr "Membagikan Halaman Zúme"
 
 #: utilities/integrations/replace-placeholder.php:177
 #: utilities/integrations/replace-placeholder.php:178
 #: utilities/integrations/replace-placeholder.php:179
 msgid "Zúme Annual Report"
-msgstr ""
+msgstr "Laporan Tahunan Zúme"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"
-msgstr ""
+msgstr "Bagian"
 
 #: zume-training-system.php:237
 msgid "Someone has requested a password reset for the following account:"
@@ -7315,53 +7458,52 @@ msgstr "[%s] Atur ulang Kata Sandi"
 
 #: zume-training-system.php:289
 msgid "Profile Details"
-msgstr ""
+msgstr "Detail Profil"
 
 #: zume-training-system.php:301
 msgid "User Email"
-msgstr ""
+msgstr "Email Pengguna"
 
 #: zume-training-system.php:310
 msgid "User Phone"
-msgstr ""
+msgstr "Telepon Pengguna"
 
 #: zume-training-system.php:318
 msgid "User Timezone"
-msgstr ""
+msgstr "Zona Waktu Pengguna"
 
 #: zume-training-system.php:326
 msgid "User Friend Key"
-msgstr ""
+msgstr "Kunci Teman Pengguna"
 
 #: zume-training-system.php:334
 msgid "User Preferred Language"
-msgstr ""
+msgstr "Bahasa Pilihan Pengguna"
 
 #: zume-training-system.php:342
 msgid "User Preferred Email"
-msgstr ""
+msgstr "Email Pilihan Pengguna"
 
 #: zume-training-system.php:350
 msgid "Preferred Contact Methods"
-msgstr ""
+msgstr "Metode Kontak Pilihan"
 
 #: zume-training-system.php:360
 msgid "Messenger"
-msgstr ""
+msgstr "Pembawa Pesan"
 
 #. Plugin Name of the plugin/theme
 msgid "Zúme - Training System"
-msgstr ""
+msgstr "Zúme - Sistem Pelatihan"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://github.com/ZumeProject/zume-training-system"
-msgstr ""
+msgstr "https://github.com/ZumeProject/zume-training-system"
 
 #. Description of the plugin/theme
-#, fuzzy
 msgid "Zume Training System"
-msgstr "Siklus Pelatihan"
+msgstr "Sistem Pelatihan Zume"
 
 #~ msgid "Course"
 #~ msgstr "Kursus"

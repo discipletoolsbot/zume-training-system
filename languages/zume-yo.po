@@ -2,9 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-05 10:43+0000\n"
-"Last-Translator: Google Cloud Translation Basic <noreply-mt-google-"
-"translate@weblate.org>\n"
+"PO-Revision-Date: 2024-09-08 16:59+0000\n"
+"Last-Translator: Shilla <sgathoni@gnpi-africa.org>\n"
 "Language-Team: Yoruba <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/yo/>\n"
 "Language: yo\n"
@@ -12,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7.1\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -53,7 +52,7 @@ msgstr "Ẹkọ ifilọlẹ"
 #: utilities/integrations/replace-placeholder.php:111
 #: utilities/integrations/replace-placeholder.php:112
 msgid "10 Session Course"
-msgstr "10 Eko igba"
+msgstr "10 Ẹkọ igba"
 
 #: 404.php:85 site/dashboard/dashboard.php:238 site/pages/resources.php:127
 #: site/parts/download-slides.php:34 site/parts/download-slides.php:46
@@ -171,11 +170,11 @@ msgstr "Jije ọmọ-ẹhin tumọ si pe a gbọ lati ọdọ Ọlọrun a gbọ
 #: globals.php:2111 site/course/course-content.php:189
 #: site/course/course-content.php:198
 msgid "Hearing and Obeying God"
-msgstr "sise ati gbigbo oro olorun"
+msgstr "Gbo ati gboran si Olorun"
 
 #: globals.php:2121 globals.php:2123
 msgid "S.O.A.P.S. Bible Study"
-msgstr "kika Bibeli S.O.A.P.S"
+msgstr "S.O.A.P.S. Ìkẹ́kọ̀ọ́ Bíbélì"
 
 #: globals.php:2122 site/pages/follow-jesus.php:210
 msgid ""
@@ -216,7 +215,7 @@ msgstr ""
 
 #: globals.php:2147
 msgid "Producer not Consumer"
-msgstr "aselopo kii se Olumulo"
+msgstr "Olupese kii ṣe Olumulo"
 
 #: globals.php:2157 globals.php:2159 site/pages/follow-jesus.php:198
 msgid "How to Spend an Hour in Prayer"
@@ -274,7 +273,7 @@ msgstr ""
 
 #: globals.php:2195
 msgid "Sharing God‘s Story"
-msgstr "pinpin itan olorun"
+msgstr "Pínpín Ìtàn Ọlọrun"
 
 #: globals.php:2205 site/pages/follow-jesus.php:236
 msgid "Baptism and How To Do It"
@@ -329,7 +328,7 @@ msgstr ""
 
 #: globals.php:2231
 msgid "Great, Greater, and Greatest Blessing"
-msgstr "Ibukun to Tobi ati eyi to tobi julo"
+msgstr "Ibukun Nla, Ti o tobi ju, ati Ibukun Ti o tobi julọ"
 
 #: globals.php:2241 site/pages/follow-jesus.php:266
 msgid "Duckling Discipleship – Leading Immediately"
@@ -378,7 +377,7 @@ msgstr ""
 #: site/course/course-content.php:1353 site/course/course-content.php:1409
 #: site/course/course-content.php:4355 site/course/course-content.php:4376
 msgid "The Lord’s Supper"
-msgstr "Ounje ale Oluwa"
+msgstr "Ounje Olohun"
 
 #: globals.php:2277 site/pages/follow-jesus.php:304
 msgid "Prayer Walking and How To Do It"
@@ -390,7 +389,7 @@ msgid ""
 "what it sounds like — praying to God while walking around!"
 msgstr ""
 "O jẹ ọna ti o rọrun lati gbọràn si aṣẹ Ọlọrun lati gbadura fun awọn miiran. "
-"Ati gege bi o se dun leti- gbigbadura si Ọlọrun lakoko ti o nrin ni ayika!"
+"Ati pe o kan ohun ti o dun bi - gbigbadura si Ọlọrun lakoko ti nrin ni ayika!"
 
 #: globals.php:2279 site/activities/activities.php:319
 #: site/course/course-content.php:1520 site/course/course-content.php:1528
@@ -484,7 +483,7 @@ msgstr "Ikeko Omo"
 #: site/course/course-content.php:2279 site/course/course-content.php:5030
 #: site/course/course-content.php:5047 site/pages/follow-jesus.php:325
 msgid "Leadership Cells"
-msgstr "awon seeli olori"
+msgstr "Awọn sẹẹli Alakoso"
 
 #: globals.php:2350 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:326
@@ -517,8 +516,8 @@ msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
-"Isodipupo se pataki ati yiyara isodipupo tun se pataki julo. wo idi ti iyara "
-"se se pataki"
+"Fífi nǹkan kún nǹkan àti fífi nǹkan kún nǹkan kíákíá tún ṣe pàtàkì ju ìyẹn "
+"lọ. Wo ìdí tó fi ṣe pàtàkì pé kó o máa sáré kánkán."
 
 #: globals.php:2375 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
@@ -535,7 +534,7 @@ msgstr "Nigbagbogbo Apakan ti Awọn Ijo meji"
 
 #: globals.php:2386
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
-msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lilọ ati duro."
+msgstr "Kọ ẹkọ bi o ṣe le ṣègbọràn si awọn aṣẹ Jesu nipa lilọ ATI duro."
 
 #: globals.php:2398 globals.php:2400 site/course/course-content.php:2900
 #: site/course/course-content.php:3004 site/course/course-content.php:3010
@@ -647,19 +646,19 @@ msgstr ""
 
 #: globals.php:2469
 msgid "3-Circles Gospel Presentation"
-msgstr "Igbejade 3-iyipo ihinrere"
+msgstr "3-Igbejade Ihinrere Circle"
 
 #: globals.php:2470
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
-"Igbejade ihinrere 3-iyipo jẹ ọna lati sọ ihinrere nipa lilo apejuwe ti o "
+"Igbejade ihinrere 3-Circles jẹ ọna lati sọ ihinrere nipa lilo apejuwe ti o "
 "rọrun ti a le fa lori iwe kan."
 
 #: globals.php:2471
 msgid "3-Circles"
-msgstr "Iyika meta"
+msgstr "3-Awọn iyika"
 
 #: globals.php:7496 site/course/presenter.php:164
 #: site/dashboard/dashboard.php:277 site/dashboard/wizard.php:176
@@ -671,7 +670,7 @@ msgstr "Pade"
 
 #: globals.php:7698
 msgid "No Results"
-msgstr "Ko si esi"
+msgstr "Ko si Awọn abajade"
 
 #: maps/heatmap.php:3142
 msgid "trainee"
@@ -788,7 +787,7 @@ msgstr "Ibi-afẹde"
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
 msgid "Search"
-msgstr "Wa"
+msgstr "Ṣawari"
 
 #: maps/html/heatmap-html.php:91 maps/html/heatmap-html.php:115
 #: maps/map-2-network-activities.php:138
@@ -859,7 +858,7 @@ msgstr "Ilọsiwaju"
 #: site/course/course-content.php:4207 site/course/course-content.php:4492
 #: site/course/course-content.php:4893
 msgid "ACTIVITY"
-msgstr "asayan IṢẸ-sise"
+msgstr "IṢẸ"
 
 #: maps/js-translation-strings.php:7 maps/js-translation-strings.php:12
 msgid "Goal Reached"
@@ -903,7 +902,7 @@ msgstr "awon itan"
 
 #: maps/js-translation-strings.php:19 site/pages/home.php:82
 msgid "Languages"
-msgstr "Ede"
+msgstr "Awọn ede"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
@@ -931,11 +930,11 @@ msgstr "Ikẹkọ"
 
 #: maps/js-translation-strings.php:27 site/dashboard/dashboard.php:221
 msgid "Practicing"
-msgstr "Iwa adaṣe"
+msgstr "Didaṣe"
 
 #: maps/js-translation-strings.php:28 site/dashboard/wizard.php:222
 msgid "Coaching"
-msgstr "Olukoni"
+msgstr "Ẹkọ"
 
 #: maps/js-translation-strings.php:30 maps/map-3-trainees.php:140
 #: maps/map-5-churches.php:140
@@ -1153,7 +1152,7 @@ msgstr "Adura"
 
 #: site/activities/activities.php:204 site/course/course-content.php:931
 msgid "Share the Gospel"
-msgstr "Wàásù Ìhìn Rere Náà"
+msgstr "Pin Ihinrere"
 
 #: site/activities/activities.php:227 site/course/course-content.php:1146
 #: site/course/course-content.php:1155 site/course/course-content.php:1164
@@ -1161,12 +1160,12 @@ msgstr "Wàásù Ìhìn Rere Náà"
 #: site/course/course-content.php:4091 site/course/course-content.php:4197
 #: site/course/course-content.php:4232
 msgid "Three-Minute Testimony"
-msgstr "Ìjẹ́rìí Ìṣẹ́jú Mẹ́ta"
+msgstr "Ẹri-iṣẹju-iṣẹju"
 
 #: site/activities/activities.php:273 site/course/course-content.php:1519
 #: site/course/course-content.php:4600 site/course/course-content.php:4620
 msgid "B.L.E.S.S. Prayer"
-msgstr "B.L.E.S.S Àdúrà"
+msgstr "B.L.E.S.S. Adura"
 
 #: site/activities/activities.php:296 site/course/course-content.php:1757
 #: site/course/course-content.php:1807 site/course/course-content.php:1816
@@ -1178,14 +1177,14 @@ msgstr "B.L.E.S.S Àdúrà"
 #: site/course/course-content.php:4881 site/course/course-content.php:4889
 #: site/course/course-content.php:4896 site/course/course-content.php:4922
 msgid "3/3 Group Meeting"
-msgstr "Ìpàdé Ẹgbẹ́ 3/3"
+msgstr "3/3 Ẹgbẹ Ipade"
 
 #: site/activities/activities.php:365 site/course/course-content.php:2396
 #: site/course/course-content.php:2634 site/course/course-content.php:2640
 #: site/course/course-content.php:2774 site/course/course-content.php:5416
 #: site/course/course-content.php:5446
 msgid "Four Fields"
-msgstr "Àwọn Apá Mẹ́rin"
+msgstr "Awọn aaye mẹrin"
 
 #: site/activities/coaching-checklist-host.php:22
 msgid "H.O.S.T"
@@ -1204,12 +1203,12 @@ msgstr "Ṣe ayẹwo ararẹ nipa lilo Gboran, Igbọran, Pipin, Ikẹkọ."
 #: site/activities/coaching-checklist-two.php:108
 #: site/activities/coaching-checklist.php:211
 msgid "Training Tools/Concepts"
-msgstr "Irinse Ikeko/agbekale"
+msgstr "Ikẹkọ Irinṣẹ / Agbekale"
 
 #: site/activities/coaching-checklist-host.php:122
 #: site/activities/coaching-checklist-two.php:123
 msgid "Ask yourself, have I"
-msgstr "Beere lọwọ ararẹ, Ṣé mo ti"
+msgstr "Beere lọwọ ararẹ, ni mo"
 
 #: site/activities/coaching-checklist-host.php:128
 #: site/activities/coaching-checklist-host.php:166
@@ -1251,7 +1250,7 @@ msgstr "Oṣiṣẹ"
 #: site/activities/coaching-checklist-two.php:189
 #: site/activities/coaching-checklist.php:254 site/dashboard/dashboard.php:241
 msgid "Have I heard about this tool or concept?"
-msgstr "Njẹ Mo ti gbọ nipa irinṣẹ́ yi tabi eronga yi?"
+msgstr "Njẹ Mo ti gbọ nipa ọpa tabi ero yii?"
 
 #: site/activities/coaching-checklist-host.php:172
 #: site/activities/coaching-checklist-two.php:193
@@ -1260,8 +1259,9 @@ msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
 msgstr ""
-"Ṣé mo ti ṣègbọràn sí irinṣẹ́ tàbí èrò yìí? Tí ó bá jẹ́ irinṣẹ́, ṣé mo ti ṣe é "
-"fúnra mi ni? Ti ero kan ba jẹ, ṣe o ti ronu lori bi o ṣe yi irisi rẹ pada?"
+"Njẹ Mo ti gbọran si ọpa tabi imọran yii? Ti o ba jẹ ohun elo kan, Njẹ Mo ti "
+"ṣe adaṣe rẹ funrararẹ? Ti ero kan ba jẹ, ṣe o ti ronu lori bi o ṣe yi irisi "
+"rẹ pada?"
 
 #: site/activities/coaching-checklist-host.php:176
 #: site/activities/coaching-checklist-two.php:197
@@ -1294,7 +1294,7 @@ msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:102
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Sọ́ọ̀nà, Lọ."
+msgstr "Kọ awọn miiran nipa lilo Awoṣe, Iranlọwọ, Ṣọra, Fi silẹ."
 
 #: site/activities/coaching-checklist-mawl.php:124
 #: site/activities/coaching-checklist-two.php:143
@@ -1418,22 +1418,22 @@ msgstr "Igbelewọn ara-ẹni"
 #: site/activities/coaching-checklist.php:131
 #: site/activities/coaching-checklist.php:267
 msgid "Mentee Development Level"
-msgstr "ipele idagbasoke akeko"
+msgstr "Mentee Development Ipele"
 
 #: site/activities/coaching-checklist.php:137
 #: site/activities/coaching-checklist.php:270
 msgid "Unaware"
-msgstr "aimoye"
+msgstr "Alaimoye"
 
 #: site/activities/coaching-checklist.php:140
 #: site/activities/coaching-checklist.php:273
 msgid "Unskilled"
-msgstr "Alaimose"
+msgstr "Alailagbara"
 
 #: site/activities/coaching-checklist.php:143
 #: site/activities/coaching-checklist.php:276
 msgid "Competent"
-msgstr "oye"
+msgstr "Oloye"
 
 #: site/activities/coaching-checklist.php:146
 #: site/activities/coaching-checklist.php:279
@@ -1443,17 +1443,17 @@ msgstr "Ogbon"
 #: site/activities/coaching-checklist.php:151
 #: site/activities/coaching-checklist.php:283
 msgid "Mentor’s Role"
-msgstr "Ipa olùkọ́ni"
+msgstr "Ipa Mentor"
 
 #: site/activities/coaching-checklist.php:157
 #: site/activities/coaching-checklist.php:286
 msgid "Train new information and ensure understanding"
-msgstr "Kọ alaye titun ati rii aridaju oye"
+msgstr "Kọ alaye titun ati rii daju oye"
 
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Stop and stay with them until they have the basics"
-msgstr "Duro ki o wa pẹlu wọn titi ti wọn o fi ni awọn ipilẹ"
+msgstr "Duro ki o duro pẹlu wọn titi ti wọn fi ni awọn ipilẹ"
 
 #: site/activities/coaching-checklist.php:163
 #: site/activities/coaching-checklist.php:292
@@ -1463,11 +1463,11 @@ msgstr "Duro adehun titi di igba ti o yẹ"
 #: site/activities/coaching-checklist.php:166
 #: site/activities/coaching-checklist.php:295
 msgid "Relate to them as co-laborer"
-msgstr "Ṣe ibatan si wọn bi alaba ṣi ṣẹpọ"
+msgstr "Ṣe ibatan si wọn bi alabaṣiṣẹpọ"
 
 #: site/activities/coaching-checklist.php:171
 msgid "Mentor’s Behaviors"
-msgstr "Awọn ihuwasi oludamọran"
+msgstr "Awọn ihuwasi olutojueni"
 
 #: site/activities/coaching-checklist.php:177
 msgid "Direct and inform"
@@ -1491,23 +1491,23 @@ msgstr "Awọn ojuse Eto"
 
 #: site/activities/coaching-checklist.php:197
 msgid "Mentor decides"
-msgstr "Olùdarí ipinnu"
+msgstr "Mentor pinnu"
 
 #: site/activities/coaching-checklist.php:200
 msgid "Discuss and Mentor decides"
-msgstr "Jiroro ati Olùdarí pinnu"
+msgstr "Jiroro ati Mentor pinnu"
 
 #: site/activities/coaching-checklist.php:203
 msgid "Discuss and Mentee decides"
-msgstr "Ṣe ijiroro ati e ni tí ń gba ìtọ́ni pinnu"
+msgstr "Jọ̀rọ̀ àti Mentee pinnu"
 
 #: site/activities/coaching-checklist.php:206
 msgid "Mentee decides"
-msgstr "akeko pinnu"
+msgstr "Mentee pinnu"
 
 #: site/activities/coaching-checklist.php:270
 msgid "Is the Mentee unaware, unfamiliar, or misunderstanding the tool?"
-msgstr "Njẹ akeko ko mọ, aimọ, tabi agbọye ohun elo naa?"
+msgstr "Njẹ Mentee ko mọ, aimọ, tabi agbọye ohun elo naa?"
 
 #: site/activities/coaching-checklist.php:273
 msgid "Is the Mentee somewhat familiar with but still not sure about the tool?"
@@ -1518,7 +1518,7 @@ msgid ""
 "Does the Mentee understand the tool and is able to train the basics of the "
 "tool?"
 msgstr ""
-"Njẹ akeko loye ohun elo ati pe o ni anfani lati kọ awọn ipilẹ ti ohun elo "
+"Njẹ Mentee loye ohun elo ati pe o ni anfani lati kọ awọn ipilẹ ti ohun elo "
 "naa?"
 
 #: site/activities/coaching-checklist.php:279
@@ -1530,17 +1530,17 @@ msgstr ""
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Disciple"
-msgstr "omo ehin"
+msgstr "Ọmọ-ẹhin"
 
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Unbeliever"
-msgstr "aláìgbàgbọ́"
+msgstr "Alaigbagbo"
 
 #: site/activities/list-of-100-printable.php:92
 #: site/activities/list-of-100.php:92
 msgid "Unknown"
-msgstr "aimọ"
+msgstr "Aimọ"
 
 #: site/activities/three-month-plan-printable.php:22
 #: site/activities/three-month-plan.php:22
@@ -1550,22 +1550,22 @@ msgstr "Eto Osu Meta"
 #: site/activities/three-month-plan-printable.php:47
 #: site/activities/three-month-plan.php:68 site/dashboard/dashboard.php:215
 msgid "3-Month Plan"
-msgstr "Eto Osu Meta"
+msgstr "3-osù Eto"
 
 #: site/activities/three-month-plan.php:69
 msgid "Switch to Printable Version"
-msgstr "Yipada si eyi ti ale te jade"
+msgstr "Yipada si Printable Version"
 
 #: site/activities/three-month-plan.php:82
 msgid "Scripts are off"
-msgstr "ati pa awon iwe afowoko"
+msgstr "Awọn iwe afọwọkọ wa ni pipa"
 
 #: site/activities/three-month-plan.php:83
 msgid ""
 "Please turn on scripts to use this interactive page. Otherwise you may use "
 "the printable version using the link above."
 msgstr ""
-"Jọwọ tan awọn iwe afọwọkọ lati lo oju-iwe ìfọwọ́sowọ́pò yii. Bibẹẹkọ, o le lo "
+"Jọwọ tan awọn iwe afọwọkọ lati lo oju-iwe ibaraenisepo yii. Bibẹẹkọ, o le lo "
 "ẹya ti a tẹjade nipa lilo ọna asopọ loke."
 
 #: site/activities/three-month-plan.php:94 site/dashboard/dashboard.php:188
@@ -1608,10 +1608,10 @@ msgid ""
 "should learn to tell God’s story in a way that’s true to scripture and "
 "connects with the audience they’re sharing with."
 msgstr ""
-"Kosi ona miran lati so itan olorun (ti a tun pe ni ihinrere), nitori ona to "
-"darajulo yoo da le lori eni ti o n sofun. ki gbogbo omo ehin ko bi o se le "
-"so itan olorun ni ona to je otito si iwemimo ati sopo pelu awon eniyan ti o "
-"pin fun."
+"Kò sí ọ̀nà kan ṣoṣo tí ó dára jùlọ láti sọ ìtàn Ọlọ́run (tí a tún ń pè ní Ìhìn "
+"Rere), nítorí pé ọ̀nà tí ó dára jùlọ yóò sinmi lórí ẹni tí o bá ń sọ fún. "
+"Gbogbo ọmọ-ẹ̀yìn gbọ́dọ̀ kọ́ láti sọ ìtàn Ọlọ́run ní ọ̀nà tí ó jẹ́ òtítọ́ sí ìwé Mímọ́"
+", tí ó sì so mọ́ àwọn olùgbọ́ tí wọ́n ń sọ fún."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:23
 #: site/course/_strings-3-circle-gospel-presentation.php:61
@@ -1635,7 +1635,7 @@ msgstr "SALAYE"
 #: site/course/_strings-3-circle-gospel-presentation.php:62
 #: site/course/course-builder.php:405
 msgid "(10 min)"
-msgstr "iṣẹju (mewa) 10"
+msgstr "(Ìṣẹ́jú mẹ́wàá)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:28
 #: site/course/course-content.php:873
@@ -1643,8 +1643,8 @@ msgid ""
 "What comes to mind when you hear God’s command to be His \"witness\" and to "
 "tell His story?"
 msgstr ""
-"Kilo wa si okan re nigba ti o ba gbo ase olorun lati je olujeri re ati ki o "
-"so itan re?"
+"Kí ló máa ń wá sí ẹ lọ́kàn nígbà tó o bá gbọ́ àṣẹ Ọlọ́run pé kó o jẹ́ \"ẹlẹ́rìí\" "
+"fún òun kó o sì máa sọ ìtàn òun fáwọn èèyàn?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:29
 #: site/course/course-content.php:874
@@ -1652,14 +1652,15 @@ msgid ""
 "Why do you think Jesus chose ordinary people instead of some other way to "
 "share His good news?"
 msgstr ""
-"Kini idi ti o ro pe jesu yan awon eniyan lasan dipo awon eniyan miran lati "
-"pin ihinrere re ?"
+"Èé ṣe tó o fi rò pé Jésù yan àwọn èèyàn lásán dípò ọ̀nà míì láti ṣàjọpín ìhìn "
+"rere Rẹ̀?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:30
 #: site/course/course-content.php:875
 msgid ""
 "What would it take for you to feel more comfortable sharing God’s story?"
-msgstr "Kinni yoo gba o lati pin oro olorun ninu itura?"
+msgstr ""
+"Kí ló máa jẹ́ kó túbọ̀ rọrùn fún ẹ láti máa sọ ìtàn Ọlọ́run fáwọn èèyàn?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:39
 #: site/course/course-content.php:107 site/course/course-content.php:149
@@ -1682,7 +1683,7 @@ msgstr "WO"
 #: site/course/_strings-3-circle-gospel-presentation.php:40
 #: site/course/course-builder.php:404
 msgid "(5 min)"
-msgstr "Iṣẹju marun (5)"
+msgstr "(Ìṣẹ́jú márùn-ún)"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:43
 #: site/course/course-content.php:800 site/course/course-content.php:851
@@ -1696,7 +1697,7 @@ msgid ""
 "One way to share God‘s good news is by using a visual presentation called 3 "
 "Circles."
 msgstr ""
-"Ọ̀nà kan tá a lè gbà wàásù ìhìn rere Ọlọ́run ni pé ká lo àwòrán kan tí wọ́n pè "
+"Ọ̀nà kan láti ṣàjọpín ìhìn rere Ọlọ́run ni nípa lílo ìgbékalẹ̀ ìríran tí a ń pè "
 "ní 3 Circles."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:66
@@ -1714,13 +1715,13 @@ msgstr "Kkilo ko nipa Olohun?"
 msgid ""
 "Do you think it would be easier or harder to share God’s story by telling a "
 "story like this?"
-msgstr "Se o ro pe yoo rorun tabi le lati pin itan Olohn nipa siso itan bayi?"
+msgstr "Se o ro boya yio rorun lati pin itan Olohn?"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:84
 #: site/course/_strings-3-circle-gospel-presentation.php:109
 #: site/course/course-content.php:2575
 msgid "Scan the QR code or find a piece of paper."
-msgstr "Ṣayẹwo koodu QR tabi wa iwe kekere kan."
+msgstr "Ṣayẹwo koodu QR tabi wa nkan ti iwe kan."
 
 #: site/course/_strings-3-circle-gospel-presentation.php:85
 msgid "Select a person from your list of 100."
@@ -1751,7 +1752,7 @@ msgstr "Ṣayẹwo pa akojọ ayẹwo."
 #: site/course/course-content.php:3679 site/course/course-content.php:3951
 #: site/course/course-content.php:4505 site/course/course-content.php:4907
 msgid "Activity Resource"
-msgstr "awọn oluşewadi aṣayan iṣẹ-ṣiṣe"
+msgstr "Aṣayan iṣẹ-ṣiṣe"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:110
 msgid ""
@@ -1763,75 +1764,75 @@ msgstr ""
 
 #: site/course/course-builder.php:403
 msgid "(1 min)"
-msgstr "iṣẹju kan (1)"
+msgstr "(1 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:406
 msgid "(15 min)"
-msgstr "Iṣẹju medogun (15)"
+msgstr "(iṣẹju 15)"
 
 #: site/course/course-builder.php:407
 msgid "(20 min)"
-msgstr "iṣẹju ogun (20)"
+msgstr "(20 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:408
 msgid "(25 min)"
-msgstr "Iṣẹju aarundinlogbon (25)"
+msgstr "(iṣẹju 25)"
 
 #: site/course/course-builder.php:409
 msgid "(30 min)"
-msgstr "Iṣẹju ogbon (30)"
+msgstr "(30 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:410
 msgid "(35 min)"
-msgstr "Iṣẹju marundinlogoji (35)"
+msgstr "(Ìṣẹ́jú 35)"
 
 #: site/course/course-builder.php:411
 msgid "(40 min)"
-msgstr "iṣẹju ogoji"
+msgstr "(40 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:412
 msgid "(45 min)"
-msgstr "iṣẹju marundiladota"
+msgstr "(iṣẹju 45)"
 
 #: site/course/course-builder.php:413
 msgid "(50 min)"
-msgstr "Iṣẹju adota"
+msgstr "(50 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:414
 msgid "(55 min)"
-msgstr "Iṣẹju marundinlogota"
+msgstr "(iṣẹju 55)"
 
 #: site/course/course-builder.php:415
 msgid "(60 min)"
-msgstr "iṣẹju ogota"
+msgstr "(60 ìṣẹ́jú)"
 
 #: site/course/course-builder.php:416
 msgid "(65 min)"
-msgstr "Iṣẹju marundinladorin"
+msgstr "(65 min)"
 
 #: site/course/course-builder.php:417
 msgid "(70 min)"
-msgstr "iṣẹju adorin"
+msgstr "(ìyẹn nǹkan bí àádọ́rin [70] ìṣẹ́jú)"
 
 #: site/course/course-builder.php:418
 msgid "(75 min)"
-msgstr "iṣẹju marundinlogorin"
+msgstr "(iṣẹju 75)"
 
 #: site/course/course-builder.php:419
 msgid "(80 min)"
-msgstr "iṣẹju ogorin"
+msgstr "(Àádọ́rin ìṣẹ́jú)"
 
 #: site/course/course-builder.php:420
 msgid "(85 min)"
-msgstr "Iṣẹju marundiladorun"
+msgstr "(iṣẹju 85)"
 
 #: site/course/course-builder.php:421
 msgid "(90 min)"
-msgstr "iṣẹju adorun"
+msgstr "(ìṣẹ́jú àádọ́rùn-ún)"
 
 #: site/course/course-builder.php:422
 msgid "(60 - 90 min)"
-msgstr "iṣẹju ogota - adorun"
+msgstr "(60 - 90 ìṣẹ́jú)"
 
 #: site/course/course-content.php:32 site/course/course-content.php:37
 #: site/course/course-content.php:3103 site/course/course-content.php:3108
@@ -1895,7 +1896,7 @@ msgstr "WOLE SINU"
 #: site/course/course-content.php:5839 site/course/course-content.php:5888
 #: site/course/course-content.php:5937
 msgid "Have all of the participants and facilitator check-in."
-msgstr "je ki gbogbo awọn alabase ati oluṣeto wọle-sinu."
+msgstr "Kí gbogbo àwọn olùkópa àti olùdarí kí ó wọlé."
 
 #: site/course/course-content.php:57 site/course/course-content.php:426
 #: site/course/course-content.php:752 site/course/course-content.php:1095
@@ -1916,7 +1917,7 @@ msgstr "je ki gbogbo awọn alabase ati oluṣeto wọle-sinu."
 #: site/course/course-content.php:5842 site/course/course-content.php:5891
 #: site/course/course-content.php:5940
 msgid "Or zume.training/checkin and use code:"
-msgstr "Tabi idanileko.zume/wolewo ati lo koodu:"
+msgstr "Tabi zume.training/checkin ati lo koodu:"
 
 #: site/course/course-content.php:68 site/course/course-content.php:437
 #: site/course/course-content.php:763 site/course/course-content.php:1106
@@ -1943,8 +1944,8 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
-"Bere pelu adura, emi ijinle pelu irapada ko see se lai si emi mimo. gba "
-"akoko bi egbe lati pe e ko wa se itosona fun o ninu asiko yi."
+"Bẹrẹ pẹlu adura. Imọye ti ẹmi ati iyipada ko ṣee ṣe laisi Ẹmi Mimọ. Gba "
+"akoko gẹgẹbi ẹgbẹ kan lati pe Rẹ lati ṣe amọna rẹ lori igba yii."
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1974,7 +1975,7 @@ msgstr "Ni igba yii, a yoo gbọ ati jiroro awọn imọran wọnyi:"
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr "Itumọ ti o rọrun ti ọmọ ẹ̀yìn ati Ijo"
+msgstr "Itumọ ti o rọrun ti Ọmọ-ẹhin & Ijo"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
@@ -1995,8 +1996,7 @@ msgstr "Ka Bibeli S.O.A.P.S"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
-msgstr ""
-"Ọlọrun nlo awọn eniyan lasan lati ṣe awọn ohun ti o rọrun lati ni ipa nla."
+msgstr "Ọlọrun nlo awọn eniyan lasan ṣe awọn ohun ti o rọrun lati ṣe ipa nla."
 
 #: site/course/course-content.php:136
 msgid ""
@@ -2027,12 +2027,13 @@ msgid ""
 "Spiritual breathing. We breathe in. We breathe out. We’re alive. Hearing and "
 "obeying God is like that, too."
 msgstr ""
-"mimi eemi emi mimo, A mi si inu, A mi si ita, a wa laye. bee noni gbigbo ati "
-"sise ife olorun se ri."
+"Mimi ti ẹmi. A simi A simi jade. A wa laaye. Gbigbọ ati igboran si Ọlọrun jẹ "
+"iru bẹ, paapaa."
 
 #: site/course/course-content.php:225
 msgid "Why is it essential to learn to hear and recognize God’s voice?"
-msgstr "Kinni idi ti o fi se pataki lati gbo ati mo ohun olorun?"
+msgstr ""
+"Èé ṣe tó fi ṣe pàtàkì láti kẹ́kọ̀ọ́ láti gbọ́ ohùn Ọlọ́run ká sì dá a mọ̀?"
 
 #: site/course/course-content.php:226
 msgid ""
@@ -2050,7 +2051,7 @@ msgstr ""
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
-msgstr "Igbaradi S.O.A.P.S."
+msgstr "Ìdánrawò S.O.A.P.S."
 
 #: site/course/course-content.php:274
 msgid ""
@@ -2070,7 +2071,7 @@ msgstr "Akiyesi"
 
 #: site/course/course-content.php:278
 msgid "Application"
-msgstr "ohun elo"
+msgstr "Ohun elo"
 
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:192
@@ -2079,7 +2080,7 @@ msgstr "Adua"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
-msgstr "pínpín"
+msgstr "Pínpín"
 
 #: site/course/course-content.php:282
 msgid ""
@@ -2097,11 +2098,11 @@ msgstr ""
 
 #: site/course/course-content.php:305
 msgid "Accountability Groups are a great way to get ready!"
-msgstr "Àwọn Ẹgbẹ́ Ìdáhùn jẹ́ ọ̀nà tó dára láti múra sílẹ̀!"
+msgstr "Awọn ẹgbẹ Iṣiro jẹ ọna nla lati murasilẹ!"
 
 #: site/course/course-content.php:329
 msgid "Practice Accountability Groups"
-msgstr "Àwọn Ẹgbẹ́ Ìdáhùn Ìṣe"
+msgstr "Iwa - Awọn ẹgbẹ iṣiro"
 
 #: site/course/course-content.php:331 site/course/course-content.php:933
 #: site/course/course-content.php:1191 site/course/course-content.php:1380
@@ -2110,7 +2111,7 @@ msgstr "Àwọn Ẹgbẹ́ Ìdáhùn Ìṣe"
 #: site/course/course-content.php:2988 site/course/course-content.php:3943
 #: site/course/course-content.php:4898
 msgid "Scan the QR code."
-msgstr "Ṣe àgbéyẹ̀wò koodu QR naa."
+msgstr "Ṣayẹwo koodu QR naa."
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
@@ -2137,7 +2138,7 @@ msgstr "Lo awọn iṣẹju 20 to nbọ ṣiṣẹ papọ nipasẹ Awọn ibeere
 #: site/course/course-content.php:5298 site/course/course-content.php:5441
 #: site/course/course-content.php:5564
 msgid "REVIEW"
-msgstr "àtúnyẹwò"
+msgstr "Atunwo"
 
 #: site/course/course-content.php:352 site/course/course-content.php:664
 #: site/course/course-content.php:1014 site/course/course-content.php:1400
@@ -2208,15 +2209,15 @@ msgstr ""
 #: site/course/course-content.php:401 site/course/course-content.php:406
 #: site/course/course-content.php:3214 site/course/course-content.php:3219
 msgid "SESSION 2"
-msgstr "Igba keji"
+msgstr "IKOKO 2"
 
 #: site/course/course-content.php:440 site/course/course-content.php:3253
 msgid ""
 "Ask if anyone in the group has specific needs they would like the group to "
 "pray for."
 msgstr ""
-"Béèrè bóyá ẹnikẹ́ni nínú àwùjọ náà ní àwọn àìní kan pàtó tí wọ́n fẹ́ kí àwùjọ "
-"náà gbàdúrà fún."
+"Beere boya ẹnikẹni ninu ẹgbẹ ba ni awọn iwulo pato ti wọn yoo fẹ ki ẹgbẹ naa "
+"gbadura fun."
 
 #: site/course/course-content.php:441 site/course/course-content.php:3254
 msgid ""
@@ -2228,7 +2229,7 @@ msgstr ""
 
 #: site/course/course-content.php:442
 msgid "Ask God’s Holy Spirit to lead your time together."
-msgstr "Bẹ Ẹmí Mímọ́ Ọlọ́run pé kó máa darí àkókò yín pa pọ̀."
+msgstr "Beere lọwọ Ẹmi Mimọ Ọlọrun lati darí akoko rẹ papọ."
 
 #: site/course/course-content.php:452 site/course/course-content.php:776
 #: site/course/course-content.php:1120 site/course/course-content.php:1495
@@ -2245,7 +2246,7 @@ msgstr "Bẹ Ẹmí Mímọ́ Ọlọ́run pé kó máa darí àkókò yín pa p
 #: site/course/course-content.php:5263 site/course/course-content.php:5396
 #: site/course/course-content.php:5533 site/course/course-content.php:5659
 msgid "LOOK BACK"
-msgstr "WO EYIN"
+msgstr "WO PADA"
 
 #: site/course/course-content.php:455 site/course/course-content.php:779
 #: site/course/course-content.php:1123 site/course/course-content.php:1498
@@ -2262,7 +2263,7 @@ msgstr "WO EYIN"
 #: site/course/course-content.php:5266 site/course/course-content.php:5399
 #: site/course/course-content.php:5536 site/course/course-content.php:5662
 msgid "Before getting started, take some time to look back."
-msgstr "Kó o tó bẹ̀rẹ̀, kọ́kọ́ ronú nípa ohun tó ti ṣẹlẹ̀ sẹ́yìn."
+msgstr "Ṣaaju ki o to bẹrẹ, ya akoko diẹ lati wo ẹhin."
 
 #: site/course/course-content.php:456 site/course/course-content.php:780
 #: site/course/course-content.php:1124 site/course/course-content.php:1499
@@ -2307,7 +2308,7 @@ msgstr "Ya akoko die lati ri ise ni ose yi."
 #: site/course/course-content.php:1972 site/course/course-content.php:2188
 #: site/course/course-content.php:2893 site/course/course-content.php:5281
 msgid "In this session, we will hear and discuss this concept:"
-msgstr "Nínú ìtòlẹ́sẹẹsẹ yìí, a ó gbọ́, a ó sì jíròrò èrò yìí:"
+msgstr "Ni igba yii, a yoo gbọ ati jiroro ero yii:"
 
 #: site/course/course-content.php:472 site/course/course-content.php:485
 #: site/course/course-content.php:494 site/course/course-content.php:666
@@ -2338,8 +2339,8 @@ msgid ""
 "Of the four areas detailed above (prayer, God’s Word, etc.), which ones do "
 "you already practice?"
 msgstr ""
-"Èwo nínú àwọn nǹkan mẹ́rin tá a mẹ́nu kàn lókè yìí (ìyẹn àdúrà, Ọ̀rọ̀ Ọlọ́run, "
-"àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) lo ti ń ṣe?"
+"Ninu awọn agbegbe mẹrin ti alaye loke (adura, Ọrọ Ọlọrun, ati bẹbẹ lọ), awọn "
+"wo ni o ti ṣe tẹlẹ?"
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
@@ -2358,13 +2359,11 @@ msgstr ""
 
 #: site/course/course-content.php:571 site/course/course-content.php:3671
 msgid "Pray the Prayer Cycle for an hour individually"
-msgstr "Ẹ máa fi wákàtí kan gbàdúrà lẹ́nì kọ̀ọ̀kan"
+msgstr "Gbadura Ayika Adura fun wakati kan ni ẹyọkan"
 
 #: site/course/course-content.php:572
 msgid "Scan the QR code to get the prayer cycle guide on your phone."
-msgstr ""
-"Ṣe àyẹ̀wò kóòdì QR yìí láti gba ìwé ìtọ́ni nípa ìtòlẹ́sẹẹsẹ àdúrà náà lórí "
-"fóònù rẹ."
+msgstr "Ṣe ayẹwo koodu QR lati gba itọsọna yipo adura lori foonu rẹ."
 
 #: site/course/course-content.php:573 site/course/course-content.php:3672
 msgid ""
@@ -2396,18 +2395,16 @@ msgstr "Bawo ni aye o se ri ti o ba mu adua yi ni okun kun dun?"
 msgid ""
 "God has already given us the relationships we need to \"Go and make "
 "disciples.\""
-msgstr ""
-"Ọlọ́run ti fún wa láwọn àjọṣe tá a nílò láti \"lọ sọ àwọn ènìyàn  di ọmọ ẹ̀"
-"yìn\"."
+msgstr "Ọlọrun ti fun wa ni awọn ibatan ti a nilo lati \"Lọ sọ awọn ọmọ-ẹhin.\""
 
 #: site/course/course-content.php:614
 msgid ""
 "These are our family, friends, neighbors, co-workers and classmates – people "
 "we’ve known all our lives or maybe just met."
 msgstr ""
-"Àwọn ni ìdílé wa, àwọn ọ̀rẹ́ wa, àwọn aládùúgbò wa, àwọn alábàáṣiṣẹ́pọ̀ wa àti "
-"àwọn ọmọ kíláàsì wa ⁇ àwọn èèyàn tí a ti mọ̀ ní gbogbo ìgbésí ayé wa tàbí tí "
-"a ṣẹ̀ṣẹ̀ pàdé."
+"Àwọn ni ìdílé wa, àwọn ọ̀rẹ́ wa, àwọn aládùúgbò wa, àwọn tá a jọ ń ṣiṣẹ́ àti "
+"àwọn ọmọ kíláàsì wa ⁇ àwọn èèyàn tá a ti mọ̀ látọjọ́ táláyé ti dáyé wa tàbí "
+"àwọn tá a ṣẹ̀ṣẹ̀ pàdé."
 
 #: site/course/course-content.php:615
 msgid "Stewarding the relationships you have is the best place to start."
@@ -2428,20 +2425,20 @@ msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"Ní kí gbogbo àwọn tó wà nínú àwùjọ yín lo ọ̀ọ́dúnrún ìṣẹ́jú tó tẹ̀ lé e láti kọ "
-"orúkọ àwọn èèyàn tí wọ́n ń bá pàdé. Kọ gbogbo wọn sílẹ̀ bó o bá ṣe lè kà wọ́n."
+"Jẹ ki gbogbo eniyan ninu ẹgbẹ rẹ gba awọn iṣẹju 30 to nbọ lati kun atokọ ti "
+"ara wọn ti awọn ibatan. Ṣe atokọ bi ọpọlọpọ bi o ṣe le."
 
 #: site/course/course-content.php:645
 msgid ""
 "Then mark your best understanding of their relationship to God: disciple, "
 "unbeliever, or unknown."
 msgstr ""
-"Lẹ́yìn náà, kọ ọ̀nà tó dára jù lọ tó o lè gbà lóye àjọṣe wọn pẹ̀lú Ọlọ́run sára "
-"rẹ̀: ọmọ ẹ̀yìn, aláìgbàgbọ́, tàbí aláìmọ̀kan."
+"Lẹhinna samisi oye ti o dara julọ nipa ibatan wọn si Ọlọrun: ọmọ-ẹhin, "
+"alaigbagbọ, tabi aimọ."
 
 #: site/course/course-content.php:682
 msgid "Obey"
-msgstr "Ṣègbọràn"
+msgstr "Gbọran"
 
 #: site/course/course-content.php:683 site/dashboard/dashboard.php:161
 #: site/pages/_strings-mobile-pwa.php:37 site/pages/share.php:28
@@ -2456,7 +2453,7 @@ msgid ""
 "to be open to His story."
 msgstr ""
 "Ẹ lo àkókò kan lọ́sẹ̀ yìí láti gbàdúrà fún àwọn èèyàn márùn-ún nínú Àtòjọ Àwọn "
-"Èèyàn Ọgọ́rùn-ún tí ẹ sàmì sí gẹ́gẹ́ bí \"Aláìgbàgbọ́\" tàbí \"A kò Mọ\". "
+"Èèyàn Ọgọ́rùn-ún yín tí ẹ sàmì sí gẹ́gẹ́ bí \"Aláìgbàgbọ́\" tàbí \"A kò Mọ\". "
 "Gbàdúrà pé kí Ọlọ́run múra ọkàn wọn sílẹ̀ kí wọ́n lè máa gba ìtàn Rẹ̀."
 
 #: site/course/course-content.php:687 site/course/course-content.php:3568
@@ -2465,9 +2462,9 @@ msgid ""
 "person’s name with the group before you go and reach out to them before the "
 "next session."
 msgstr ""
-"Béèrè lọ́wọ́ Ọlọ́run pé ta ló fẹ́ kó o sọ fún nípa ohun èlò Ìtòlẹ́sẹẹsẹ Ọgọ́rùn-ún "
-"náà. Sọ orúkọ ẹni náà fún àwùjọ kí o tó lọ, kí o sì kàn sí wọn kí ìpàdé tó "
-"tẹ̀ lé e tó wáyé."
+"Béèrè lọ́wọ́ Ọlọ́run ẹni tí ó bá fẹ́ kí o sọ fún nípa ohun èlò Àtòjọ Àwọn Ọgọ́rùn-"
+"ún náà. Sọ orúkọ ẹni náà fún àwùjọ kí o tó lọ, kí o sì kàn sí wọn kí ìpàdé "
+"tó tẹ̀ lé e tó wáyé."
 
 #: site/course/course-content.php:697 site/course/course-content.php:6016
 msgid "To saturate the world with multiplying disciples in our generation."
@@ -2477,20 +2474,22 @@ msgstr "Láti mú kí àwọn ọmọ ẹ̀yìn pọ̀ sí i nínú ayé ní ìran
 msgid ""
 "Zúme is a community of practice for those who want to see disciple making "
 "movements."
-msgstr "Zúme jẹ́ àdúgbò ìdánilẹ́kọ̀ọ́ fún àwọn tí ó fẹ́ rí ètò sísọni dọmọ-ẹ̀yìn."
+msgstr ""
+"Zúme jẹ agbegbe ti iṣe fun awọn ti o fẹ lati rii awọn ọmọ-ẹhin ṣiṣe awọn "
+"gbigbe."
 
 #: site/course/course-content.php:727 site/course/course-content.php:732
 #: site/course/course-content.php:3337 site/course/course-content.php:3342
 msgid "SESSION 3"
-msgstr "ÌṢÒRO keta"
+msgstr "IPIN 3"
 
 #: site/course/course-content.php:766 site/course/course-content.php:3770
 msgid ""
 "Pray and thank God for the ways you experienced Him in the last session and "
 "invite His Holy Spirit to lead your time together."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún àwọn ọ̀nà tí o gbà rí I ní àkókò tó "
-"kọjá, kí o sì pe Ẹ̀mí Mímọ́ Rẹ̀ láti darí àkókò yín pa pọ̀."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun awọn ọna ti o ni iriri Rẹ ni igba ikẹhin "
+"ki o si pe Ẹmi Mimọ Rẹ lati darí akoko rẹ papọ."
 
 #: site/course/course-content.php:819
 msgid ""
@@ -2517,18 +2516,15 @@ msgid ""
 "One way to share God’s good news is by telling God’s story from Creation to "
 "Judgement – from the beginning of humankind all the way to the end of this "
 "age."
-msgstr ""
-"Ọ̀nà kan tá a lè gbà máa wàásù ìhìn rere Ọlọ́run ni pé ká máa sọ ìtàn Ọlọ́run "
-"látìgbà Ìṣẹ̀dá títí di Ọjọ́ Ìdájọ́, ìyẹn látìgbà tí Ọlọ́run ti dá èèyàn títí di "
-"òpin ayé."
+msgstr "Ona kan lati so Iroyin ayo ni itan ninu idajo lati ibere de opin."
 
 #: site/course/course-content.php:934
 msgid "Break into groups of two or three people."
-msgstr "Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta."
+msgstr "Pin si awọn ẹgbẹ ti eniyan meji tabi mẹta."
 
 #: site/course/course-content.php:935
 msgid "Take turns telling the Gospel to each other."
-msgstr "Ẹ máa sọ Ìhìn Rere náà fún ara yín."
+msgstr "Ẹ máa sọ̀rọ̀ Ìhìn Rere fún ara yín lẹ́ẹ̀kọ̀ọ̀kan."
 
 #: site/course/course-content.php:959
 msgid ""
@@ -2536,7 +2532,7 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
 "Jésù sọ pé: “Ẹ lọ, kí ẹ sì máa sọ gbogbo orílẹ̀-èdè di ọmọ ẹ̀yìn, ẹ máa ṣe "
-"ìrìbọmi fún wọn ní orúkọ Baba àti ti Ọmọ àti ti Ẹ̀mí mímọ́ . . ."
+"ìrìbọmi fún wọn ní orúkọ Baba àti ti Ọmọ àti ti Ẹ̀mí mímọ́ . . .”"
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
@@ -2551,8 +2547,8 @@ msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
-"Ti Igbimọ Nla naa wa fun gbogbo ọmọlẹhin Jesu, o yẹ ki iyẹn tumọ si pe o gba "
-"gbogbo ọmọ-ẹhin laaye lati baptisi awọn miiran? Kini idi tabi kilode?"
+"Ti Aṣẹ Nla naa ba jẹ fun gbogbo ọmọlẹhin Jesu, iyẹn ha tumọsi pe gbogbo "
+"ọmọlẹhin ni a gba ọ laaye lati baptisi awọn miiran bi? Kilode tabi kilode?"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
@@ -2570,7 +2566,7 @@ msgstr ""
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:243
 msgid "The Spiritual Economy"
-msgstr "Bí Ọ̀rọ̀ Ìṣúnná Owó Ṣe Rí Lórí Ọ̀ràn Ẹ̀sìn"
+msgstr "Aje Emi"
 
 #: site/course/course-content.php:1036 site/course/course-content.php:3981
 msgid ""
@@ -2578,8 +2574,8 @@ msgid ""
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
 msgstr ""
-"Béèrè lọ́wọ́ Ọlọ́run ẹni tí Ó bá fẹ́ kó o kọ́ nípa lílo ìṣẹ̀dá láti ṣe ìdájọ́ tàbí "
-"ọ̀nà mìíràn láti pín ìtàn Ọlọ́run. Sọ orúkọ ẹni yìí fún àwùjọ kí o tó lọ."
+"Béèrè lọ́wọ́ Ọlọ́run ẹni tí Ó bá fẹ́ kó o kọ́ nípa lílo ìṣẹ̀dá láti ṣe ìdájọ́ tàbí ọ̀"
+"nà mìíràn láti pín ìtàn Ọlọ́run. Sọ orúkọ ẹni yìí fún àwùjọ kí o tó lọ."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3982
 msgid ""
@@ -2589,43 +2585,43 @@ msgid ""
 msgstr ""
 "Lo àkókò kan lọ́sẹ̀ yìí láti fi ṣe ìdánrawò ìtàn nípa Ọlọ́run, kó o sì wá sọ ọ́ "
 "fún ẹnì kan, ó kéré tán, nínú ọgọ́rùn-ún [100] èèyàn tó o tò gẹ́gẹ́ bí "
-"\"aláìgbàgbọ́\" tàbí \"aláìmọ̀\"."
+"\"aláìgbàgbọ́\" tàbí \"aláìmọ̀.\""
 
 #: site/course/course-content.php:1038
 msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
-"ÌRÀNÍ TÍ Ó ṢEÉ ṢE ⁇ Ìgbìmọ̀ yín yóò ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa ní ìpàdé tó ń "
-"bọ̀. Rí i dájú pé o rántí àwọn ohun èlò (búrẹ́dì àti wáìnì / ọtí)."
+"ÌRÀNÍ TÍ Ó ṢEÉ ṢE ⁇ Ìgbìmọ̀ yín yóò ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa ní ìpàdé tó ń bọ̀"
+". Rí i dájú pé o rántí àwọn ohun èlò (búrẹ́dì àti wáìnì / ọtí)."
 
 #: site/course/course-content.php:1048 site/course/course-content.php:4258
 msgid ""
 "IMPORTANT REMINDER - Your group will be celebrating the Lord‘s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
-"ÌRÀNÍ TÍ Ó ṢEÉ ṢE ⁇ Ìgbìmọ̀ yín yóò ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa ní ìpàdé tó ń "
-"bọ̀. Rí i dájú pé o rántí àwọn ohun èlò (búrẹ́dì àti wáìnì / ọtí)."
+"ÌRÀNÍ TÍ Ó ṢEÉ ṢE - Àwùjọ yín yóò ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa ní ìpàdé tó ń bọ̀. "
+"Rí i dájú pé o rántí àwọn ohun èlò (búrẹ́dì àti wáìnì / ọtí)."
 
 #: site/course/course-content.php:1070 site/course/course-content.php:1075
 #: site/course/course-content.php:3459 site/course/course-content.php:3464
 msgid "SESSION 4"
-msgstr "ÌṢÒRO mẹrin"
+msgstr "IPIN 4"
 
 #: site/course/course-content.php:1109
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
 msgstr ""
-"Máa gbàdúrà kó o sì máa dúpẹ́ lọ́wọ́ Ọlọ́run pé ó pè wá láti wàásù Ìhìn Rere fún "
-"àwọn èèyàn."
+"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run pé ó pè wá láti ṣàjọpín Ìhìn Rere Rẹ̀ pẹ̀lú "
+"àwọn ẹlòmíràn."
 
 #: site/course/course-content.php:1110
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"Gbàdúrà fún Òun láti fún ẹnìkọ̀ọ̀kan nínú ẹgbẹ́ rẹ ní èrò inú Kristi ⁇ kí ó sì "
-"fi Ẹ̀mí Rẹ̀ kún ẹnìkọ̀ọ̀kan."
+"Beere lọwọ Rẹ lati fun ọmọ ẹgbẹ kọọkan ni ọkan ti Kristi - ati lati kun "
+"olukuluku pẹlu Ẹmi Rẹ."
 
 #: site/course/course-content.php:1165
 msgid ""
@@ -2633,10 +2629,7 @@ msgid ""
 "about the impact Jesus has had on our lives. Your story of your relationship "
 "with God is called your Testimony. It’s powerful, and it’s something no one "
 "can share better than you."
-msgstr ""
-"Gẹ́gẹ́ bí ọmọlẹ́yìn Jésù, a jẹ́ \"ẹlẹ́rìí\" fún un, nítorí pé a ń \"jẹ́rìí\" nípa "
-"ipa tí Jésù ti ní lórí ìgbésí ayé wa. Àkọsílẹ̀ nípa àjọṣe rẹ pẹ̀lú Ọlọ́run la ń "
-"pè ní Ẹ̀rí rẹ. Ó lágbára gan-an, kò sì sẹ́ni tó lè sọ ọ́ fún ẹ tó ìwọ."
+msgstr "Gege bi omo leyin Jesu."
 
 #: site/course/course-content.php:1189
 msgid "Practice sharing your testimony"
@@ -2645,23 +2638,23 @@ msgstr "Ṣe adaṣe pinpin ẹri rẹ"
 #: site/course/course-content.php:1192
 msgid ""
 "Work on writing out your story and keeping it to only three minutes. (10 min)"
-msgstr "Máa kọ ìtàn rẹ sílẹ̀, má sì ju ìṣẹ́jú mẹ́ta lọ. (ìṣẹ́jú mẹ́wàá)"
+msgstr "Ṣiṣẹ lori kikọ itan rẹ ki o tọju si iṣẹju mẹta nikan. (iṣẹju 10)"
 
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
-msgstr ""
-"Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta, kẹ́ ẹ sì máa fi ohun tẹ́ ẹ bá ń kọ́ "
-"báwọn èèyàn ṣe ń kọ́ ọ lẹ́kọ̀ọ́. (ìṣẹ́jú ogún)"
+msgstr "Pin si awọn ẹgbẹ ti meji si mẹta ati ṣiṣe pinpin. (20 min)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
-msgstr "Àwọn Ìbùkún Tó Dára Jù Lọ"
+msgstr "Nla – Greater – Greatest Ibukun"
 
 #: site/course/course-content.php:1242
 msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
-msgstr "Se ona tio to tio fi tele jesu leleyi, kini iyato?"
+msgstr ""
+"Ṣé àpẹẹrẹ tí wọ́n fi kọ́ ẹ nígbà tó o bẹ̀rẹ̀ sí í tọ Jésù lẹ́kọ̀ọ́ nìyẹn? Ti kii ba "
+"ṣe bẹ, kini o yatọ?"
 
 #: site/course/course-content.php:1243
 msgid ""
@@ -2688,9 +2681,9 @@ msgid ""
 "sharing God’s story, etc.) that you want to learn more about? Who is someone "
 "that could help you learn?"
 msgstr ""
-"Kí ni apá kan nínú jíjẹ́ ọmọ ẹ̀yìn (kàwé/lóye Bíbélì, gbígbàdúrà, sísọ ìtàn "
-"Ọlọ́run fúnni, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) tó o fẹ́ láti mọ púpọ̀ sí i nípa rẹ̀? Ta ni ẹnì "
-"kan tó lè ràn ọ́ lọ́wọ́ láti kẹ́kọ̀ọ́?"
+"Kini agbegbe kan ti ọmọ-ẹhin (kika/oye Bibeli, gbigbadura, pinpin itan "
+"Ọlọrun, ati bẹbẹ lọ) ti o fẹ lati ni imọ siwaju sii nipa rẹ? Tani ẹnikan ti "
+"o le ran ọ lọwọ lati kọ ẹkọ?"
 
 #: site/course/course-content.php:1289
 msgid ""
@@ -2700,7 +2693,7 @@ msgstr "Ona wo ni o fi ro pe awon egbe le fi pin, tani ole ba pin?"
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
-msgstr "Ǹjẹ́ o ti ronú nípa ibi tí Ìjọba Ọlọ́run wà?"
+msgstr "Njẹ o ti duro lati ronu nipa ibi ti Ijọba Ọlọrun... kii ṣe?"
 
 #: site/course/course-content.php:1308
 msgid ""
@@ -2727,7 +2720,7 @@ msgstr "Kilo ro boya o masele?"
 msgid ""
 "How could you get better at sharing with people you’re less comfortable with?"
 msgstr ""
-"Báwo lo ṣe lè túbọ̀ mọ bó o ṣe lè máa bá àwọn èèyàn sọ ohun tó wà lọ́kàn rẹ?"
+"Báwo lo ṣe lè túbọ̀ mọ bá a ṣe ń bá àwọn tí kò fi bẹ́ẹ̀ bá ẹ lára mu sọ̀rọ̀?"
 
 #: site/course/course-content.php:1354
 msgid ""
@@ -2735,18 +2728,18 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
-"Jesu ni, emi ni buredi lati oju orun, enikeni to ba je yio wa laye, buredi "
-"ni eran ara mi"
+"Jésù sọ pé: “Èmi ni oúnjẹ ìyè tí ó sọ̀ kalẹ̀ wá láti ọ̀run. Ẹnikẹ́ni tí ó bá jẹ "
+"oúnjẹ yìí yóò yè títí láé. Oúnjẹ yìí ni ẹran ara mi, tí èmi yóò fi fúnni fún "
+"ìyè ayé.”"
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
-msgstr "Ẹ Máa Ṣe Oúnjẹ Alẹ́ Olúwa"
+msgstr "Ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa"
 
 #: site/course/course-content.php:1381
 msgid ""
 "Spend the next 10 minutes celebrating the Lord’s Supper with your group."
-msgstr ""
-"Lo ìṣẹ́jú mẹ́wàá tó tẹ̀ lé e yìí láti fi ṣe ayẹyẹ Oúnjẹ Alẹ́ Olúwa pẹ̀lú àwùjọ rẹ."
+msgstr "Lo iṣẹju mẹwa 10 to nbọ lati ṣe ayẹyẹ Ounjẹ Alẹ Oluwa pẹlu ẹgbẹ rẹ."
 
 #: site/course/course-content.php:1424
 msgid ""
@@ -2762,38 +2755,38 @@ msgid ""
 "Ask God who He wants you to train with the Three-Minute Testimony tool. "
 "Share this person’s name with the group before you go."
 msgstr ""
-"Béèrè lọ́wọ́ Ọlọ́run pé ta ló fẹ́ kó o kọ́ lẹ́kọ̀ọ́ pẹ̀lú irinṣẹ́ Ìjẹ́rìí Ìṣẹ́jú Mẹ́ta. "
-"Sọ orúkọ ẹni yìí fún àwùjọ kí o tó lọ."
+"Beere lọwọ Ọlọrun ẹniti o fẹ ki o ṣe ikẹkọ pẹlu ohun elo Ijẹri-iṣẹju Mẹta. "
+"Pin orukọ eniyan yii pẹlu ẹgbẹ ṣaaju ki o to lọ."
 
 #: site/course/course-content.php:1446 site/course/course-content.php:1451
 #: site/course/course-content.php:3589 site/course/course-content.php:3594
 msgid "SESSION 5"
-msgstr "IPIN marun"
+msgstr "IPIN 5"
 
 #: site/course/course-content.php:1485
 msgid ""
 "Pray and thank God for the ways He works through the testimony of His "
 "people. Invite His Holy Spirit to lead your time together."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún àwọn ọ̀nà tí ó gbà ń ṣiṣẹ́ nípasẹ̀ ẹ̀rí "
-"àwọn ènìyàn Rẹ̀. Ní kí Ẹ̀mí Mímọ́ rẹ̀ darí àkókò yín pa pọ̀."
+"Gbadura ki o si dupẹ lọwọ Ọlọrun fun awọn ọna ti O nṣiṣẹ nipasẹ ẹri eniyan "
+"Rẹ. Pe Ẹmi Mimọ Rẹ lati dari akoko rẹ papọ."
 
 #: site/course/course-content.php:1538
 msgid ""
 "Prayer Walking is a simple way to obey God’s command to pray for others. And "
 "it’s just what it sounds like – praying to God while walking around!"
 msgstr ""
-"Àdúrà Ọ̀nà kan tó rọrùn láti gbà ṣègbọràn sí àṣẹ Ọlọ́run pé ká máa gbàdúrà fún "
-"àwọn ẹlòmíì ni pé ká máa rìn. Ohun tó sì dà bí rèé gan-an, ìyẹn ni pé kéèyàn "
-"máa gbàdúrà sí Ọlọ́run bó ṣe ń rìn kiri!"
+"Àdúrà Ọ̀nà kan tó rọrùn láti gbà ṣègbọràn sí àṣẹ Ọlọ́run pé ká máa gbàdúrà "
+"fáwọn ẹlòmíì ni pé ká máa rìn. Ohun tó sì dà bí rèé gan-an, ìyẹn ni pé "
+"kéèyàn máa gbàdúrà sí Ọlọ́run bó ṣe ń rìn kiri!"
 
 #: site/course/course-content.php:1567
 msgid ""
 "Disciple-making can be rapidly advanced by finding a person of peace, even "
 "in a place where followers of Jesus are few and far between."
 msgstr ""
-"A lè yára tẹ̀ síwájú nínú iṣẹ́ sísọni di ọmọ ẹ̀yìn nípa wíwá ẹni tó nífẹ̀ẹ́ "
-"àlàáfíà, kódà ní ibi tí àwọn ọmọlẹ́yìn Jésù kò ti pọ̀ tó."
+"Sísọni di ọmọ ẹ̀yìn lè yára tẹ̀ síwájú nípa rírí ẹni àlàáfíà, àní ní ibi tí "
+"àwọn ọmọlẹ́yìn Jésù ti kéré sí."
 
 #: site/course/course-content.php:1593
 msgid ""
@@ -2807,38 +2800,40 @@ msgid ""
 "What is a community or segment of society near you that seems to have little "
 "(or no) Kingdom presence?"
 msgstr ""
-"Ìpínlẹ̀ tàbí àwùjọ wo ló wà ládùúgbò rẹ tó dà bíi pé Ìjọba náà ò fi bẹ́ẹ̀ sí "
-"níbẹ̀?"
+"Kí ni àdúgbò tàbí apá kan láwùjọ tó wà nítòsí rẹ tó dà bíi pé kò tó nǹkan ("
+"tàbí bẹ́ẹ̀kọ́) wíwàníhìn-ín Ìjọba náà?"
 
 #: site/course/course-content.php:1595
 msgid ""
 "How could a Person of Peace (someone who is OPEN, HOSPITABLE, KNOWS OTHERS "
 "and SHARES) accelerate the spread of the Gospel in that community?"
 msgstr ""
-"Báwo ni Ènìyàn Àlàáfíà kan (ẹni tí ó ṣí sílẹ̀, tí ó ṣí àlejò, tí ó mọ àwọn "
-"mìíràn tí ó sì ń pínpín) ṣe lè mú kí Ìhìn Rere tàn kálẹ̀ ní àdúgbò yẹn?"
+"Báwo ni Ènìyàn Àlàáfíà kan (ẹni tí ó ṣí sílẹ̀, tí ó ṣí ààyò, tí ó mọ àwọn "
+"mìíràn tí ó sì ń pínpín) ṣe lè mú kí ìhìn rere tàn kálẹ̀ ní àdúgbò yẹn?"
 
 #: site/course/course-content.php:1611
 msgid "Practice the B.L.E.S.S. Prayer"
-msgstr "Ẹ máa ṣe ìdánrawò B.L.E.S.S Àdúrà"
+msgstr "Ṣe adaṣe B.L.E.S.S. Adura"
 
 #: site/course/course-content.php:1614
 msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
-"Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta, kí ẹ sì máa gbàdúrà ní àwọn apá márùn-"
-"ún ti B.L.E.S.S. Ẹ máa gbàdúrà fún ara yín."
+"Pin si awọn ẹgbẹ meji tabi mẹta ki o ṣe adaṣe gbigbadura awọn agbegbe marun "
+"ti B.L.E.S.S. Adura lori kọọkan miiran."
 
 #: site/course/course-content.php:1627
 msgid "Prayer Walking Activity"
-msgstr "Ìrìn Àjò Àdúrà"
+msgstr "Adura Nrin Iṣẹ"
 
 #: site/course/course-content.php:1638 site/course/course-content.php:4497
 msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
-msgstr "E pin si ipin meji tabi meta kie se Rin Rin Adura"
+msgstr ""
+"Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta, kẹ́ ẹ sì máa lọ sí àdúgbò láti lọ gba "
+"ìdánilẹ́kọ̀ọ́ nípa bí ẹ ṣe lè máa rìn nínú àdúrà."
 
 #: site/course/course-content.php:1639 site/course/course-content.php:4498
 msgid ""
@@ -2852,35 +2847,35 @@ msgstr "Lo bi Olohun se to e sona."
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
-msgstr "Ìtòlẹ́sẹẹsẹ yìí máa dópin pẹ̀lú ìgbòkègbodò ìrìn àjò àdúrà."
+msgstr "Igba yii pari pẹlu iṣẹ ṣiṣe ti nrin adura."
 
 #: site/course/course-content.php:1660
 msgid ""
 "Before you go out on your Prayer Walking activity, be sure to pray with your "
 "group to end your time together."
 msgstr ""
-"Kó o tó jáde lọ síbi Ìrìn Àjò Àdúrà, rí i dájú pé o gbàdúrà pẹ̀lú àwùjọ rẹ "
-"láti parí àkókò yín pa pọ̀."
+"Ṣaaju ki o to jade ni iṣẹ Ririn Adura rẹ, rii daju lati gbadura pẹlu ẹgbẹ rẹ "
+"lati pari akoko rẹ papọ."
 
 #: site/course/course-content.php:1661
 msgid ""
 "Thank God that He loves the lost, the last and the least – including us!"
 msgstr ""
-"O ṣeun Ọlọrun pe O fẹran awọn ti o sọnu, awọn ti o kẹhin ati awọn ti o kere "
-"julọ ⁇ pẹlu wa!"
+"Dupẹ lọwọ Ọlọrun pe O nifẹ awọn ti o sọnu, ti o kẹhin ati awọn ti o kere "
+"julọ - pẹlu wa!"
 
 #: site/course/course-content.php:1662
 msgid ""
 "Ask Him to prepare your heart and the heart of those you‘ll meet during your "
 "walk to be open to His work."
 msgstr ""
-"Bẹ̀ ẹ́ kí ó múra ọkàn yín àti ọkàn àwọn tí ẹ̀yin yóò bá pàdé nígbà ìrìn àjò yín "
-"sílẹ̀ kí ó lè wà ní ṣíṣí sílẹ̀ fún iṣẹ́ Rẹ̀."
+"Beere lọwọ Rẹ lati pese ọkan rẹ ati ọkan ti awọn ti iwọ yoo pade lakoko rin "
+"rẹ lati ṣii si iṣẹ Rẹ."
 
 #: site/course/course-content.php:1684 site/course/course-content.php:1689
 #: site/course/course-content.php:3731 site/course/course-content.php:3736
 msgid "SESSION 6"
-msgstr "sáà kẹfà"
+msgstr "IPIN 6"
 
 #: site/course/course-content.php:1723 site/course/course-content.php:4566
 msgid ""
@@ -2888,30 +2883,27 @@ msgid ""
 "you find it hard to obey, and invite His Holy Spirit to lead your time "
 "together."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún ohun tí Ó ṣe ní àkókò tó kọjá, bẹ̀ ẹ́ kí "
-"ó ràn ẹ́ lọ́wọ́ nígbà tí ó bá ṣòro fún ọ láti ṣègbọràn, kí o sì pe Ẹ̀mí Mímọ́ Rẹ̀ "
-"láti darí àkókò yín pa pọ̀."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun ohun ti O ṣe ni igba ikẹhin, beere lọwọ Rẹ "
+"lati ran ọ lọwọ nigbati o ba nira lati gbọràn, ki o si pe Ẹmi Mimọ Rẹ lati "
+"dari akoko rẹ papọ."
 
 #: site/course/course-content.php:1753 site/course/course-content.php:1860
 msgid "Faithfulness is Better than Knowledge"
-msgstr "Ìṣòtítọ́ Sàn Ju Ìmọ̀ Lọ"
+msgstr "Igbagbọ jẹ Dara julọ ju Imọ lọ"
 
 #: site/course/course-content.php:1755 site/course/course-content.php:1976
 #: site/course/course-content.php:2393 site/course/course-content.php:3530
 #: site/course/course-content.php:4353 site/course/course-content.php:4598
 #: site/course/course-content.php:5285
 msgid "And we will add this tool to our toolkit:"
-msgstr "A ó sì fi ohun èlò yìí kún àpò ohun èlò wa:"
+msgstr "Ati pe a yoo ṣafikun ọpa yii si ohun elo irinṣẹ wa:"
 
 #: site/course/course-content.php:1775
 msgid ""
 "When we help multiply disciples, we need to make sure we’re reproducing the "
 "right things. It’s important what disciples know – but it’s much more "
 "important what they DO with what they know."
-msgstr ""
-"Nígbà tá a bá ń ṣèrànwọ́ láti sọ àwọn èèyàn di ọmọ ẹ̀yìn, a gbọ́dọ̀ rí i dájú pé "
-"ohun tó tọ́ là ń kọ́ wọn. Ohun tí àwọn ọmọ-ẹ̀yìn mọ̀ ṣe pàtàkì, ṣùgbọ́n ohun tí "
-"wọ́n fi ohun tí wọ́n mọ̀ ṣe ṣe pàtàkì jù."
+msgstr "Tia ba se isiro awon egbe, mon pe koni si iro nbe."
 
 #: site/course/course-content.php:1800
 msgid ""
@@ -2957,20 +2949,20 @@ msgstr "Gbadura ki olohun ti o fe kio pin egbe je ke ri arayin layo."
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3859 site/course/course-content.php:3864
 msgid "SESSION 7"
-msgstr "saa keje"
+msgstr "IPIN 7"
 
 #: site/course/course-content.php:1944 site/course/course-content.php:4851
 msgid ""
 "Pray and thank God for the group’s commitment to faithfully following Jesus "
 "and invite God’s Holy Spirit to lead your time together."
 msgstr ""
-"Gbadura ki o si dupẹ lọwọ Ọlọrun fun ifaramọ ẹgbẹ naa lati tẹle Jesu ni "
-"otitọ ki o si pe Ẹmi Mimọ Ọlọrun lati ṣe itọsọna akoko rẹ papọ."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun ifaramo ẹgbẹ naa lati tẹle Jesu ni otitọ "
+"ati pe Ẹmi Mimọ Ọlọrun lati darí akoko rẹ papọ."
 
 #: site/course/course-content.php:1974 site/course/course-content.php:1986
 #: site/course/course-content.php:1995 site/course/course-content.php:2080
 msgid "The Training Cycle"
-msgstr "Ìdánilẹ́kọ̀ọ́"
+msgstr "Ayika Ikẹkọ"
 
 #: site/course/course-content.php:1996
 msgid ""
@@ -3001,25 +2993,24 @@ msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (30 min)"
 msgstr ""
-"WO PADA – Lo Igbọràn, Ikẹkọ, ati Pin awọn italaya igba to kọja lati wọle "
-"pẹlu ara wọn. (ọgbọ̀n ìṣẹ́jú)"
+"WO Pada - Lo Igbọràn, Ikẹkọ, ati Pin awọn italaya igba to kẹhin lati wọle "
+"pẹlu ara wọn. (30 min)"
 
 #: site/course/course-content.php:2042
 msgid ""
 "LOOK UP – Use Mark 5:1-20 as your group’s reading passage and answer "
 "questions 1-4 during the Look Up section. (30 min)"
 msgstr ""
-"gboju soke - lo Máàkù 5:1-20 nínú ìtòlẹ́sẹẹsẹ ìkẹ́kọ̀ọ́ yín, kẹ́ ẹ sì dáhùn "
-"ìbéèrè 1 sí 4 nínú ìtòlẹ́sẹẹsẹ ìkẹ́kọ̀ọ́ náà (ọgbọn Ìṣẹ́jú)"
+"WỌ́N— Lo Máàkù 5:1-20 gẹ́gẹ́ bí àyọkà ìwé kíkà ẹgbẹ́ rẹ kí o sì dáhùn àwọn "
+"ìbéèrè 1-4 ní abala Wiwa Up. (30 min)"
 
 #: site/course/course-content.php:2043
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 in the Look Forward section to "
 "develop how you will Obey, Train and Share. (30 min)"
 msgstr ""
-"WO SIWAJU- Lo ìbéèrè karùn-ún, ìkẹfà, àti ìkeje tó wà lábẹ́ apá tá a pè ní Wo "
-"Ọjọ́ Ọ̀la, kó o lè mọ bó o ṣe lè máa ṣègbọràn, bó o ṣe lè máa dáni lẹ́kọ̀ọ́ àti "
-"bó o ṣe lè máa kópa nínú iṣẹ́ ìwàásù. ogbon (iseju)"
+"WO Siwaju – Lo awọn ibeere 5, 6, ati 7 ni apakan Wa Iwaju lati ṣe agbekalẹ "
+"bawo ni iwọ yoo ṣe Ìgbọràn, Kọni ati Pinpin. (30 min)"
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
@@ -3033,7 +3024,7 @@ msgstr "Kini ipeni nija ti e doju ko?"
 #: site/course/course-content.php:3546 site/course/course-content.php:4614
 #: site/course/course-content.php:5301
 msgid "Concept heard in this session:"
-msgstr "Èrò tí a gbọ́ ní igba yìí:"
+msgstr "Ero ti a gbọ ni igba yii:"
 
 #: site/course/course-content.php:2082 site/course/course-content.php:3299
 #: site/course/course-content.php:3420 site/course/course-content.php:3550
@@ -3042,28 +3033,26 @@ msgstr "Èrò tí a gbọ́ ní igba yìí:"
 #: site/course/course-content.php:4618 site/course/course-content.php:4920
 #: site/course/course-content.php:5305 site/course/course-content.php:5567
 msgid "Tool heard in this session:"
-msgstr "Ohun èlò tí a gbọ́ nínú ìtòlẹ́sẹẹsẹ yìí:"
+msgstr "Irinṣẹ ti a gbọ ni igba yii:"
 
 #: site/course/course-content.php:2099 site/course/course-content.php:5062
 msgid ""
 "Pick one skill or concept you have learned in Zúme and mentor someone to "
 "reproduce it to the fourth generation."
 msgstr ""
-"Yan ọ̀nà kan tàbí èrò kan tí o ti kọ́ ní Zúme kí o sì kọ́ ẹnì kan láti mú un "
-"jáde fún ìran kẹrin."
+"Yan ọgbọn kan tabi imọran ti o ti kọ ni Zúme ki o gba ẹnikan ni imọran lati "
+"ṣe ẹda rẹ si iran kẹrin."
 
 #: site/course/course-content.php:2100
 msgid ""
 "Challenge the person you mentored to continue the process to an additional "
 "(fifth) generation."
-msgstr ""
-"Gbé ẹni tí o tọ́ sọ́nà láti tẹ̀síwájú nínú ìgbésẹ̀ náà fún ìran àfikún (ìran "
-"karùn-ún)."
+msgstr "Koju ẹni ti o ni imọran lati tẹsiwaju ilana naa si afikun (karun) iran."
 
 #: site/course/course-content.php:2121 site/course/course-content.php:2126
 #: site/course/course-content.php:4004 site/course/course-content.php:4009
 msgid "SESSION 8"
-msgstr "SAA KEJO"
+msgstr "IPIN 8"
 
 #: site/course/course-content.php:2160 site/course/course-content.php:5124
 msgid ""
@@ -3077,7 +3066,7 @@ msgstr ""
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
-msgstr "A ó sì máa lo ọ̀nà yìí láti inú àpò ọ̀nà wa:"
+msgstr "Ati pe a yoo ṣe adaṣe ọpa yii lati inu ohun elo irinṣẹ wa:"
 
 #: site/course/course-content.php:2212
 msgid ""
@@ -3102,16 +3091,16 @@ msgid ""
 "LOOK UP – Use Acts 2:42-47 as your group’s reading passage and answer "
 "questions 1- 4. (30 min)"
 msgstr ""
-"Gboju Soke - Fi ìwé Ìṣe 2:42-47 ṣe àlàyé fún àwùjọ yín, kẹ́ ẹ wá dáhùn àwọn "
-"ìbéèrè 1 sí 4. Ogbon iseju"
+"PỌ́N SỌ́N— Lo Ìṣe 2:42-47 gẹ́gẹ́ bí ẹsẹ Ìwé Mímọ́ tí àwùjọ yín ti ń kà, kí o sì "
+"dáhùn àwọn ìbéèrè 1-4. (30 min)"
 
 #: site/course/course-content.php:2258
 msgid ""
 "LOOK FORWARD – Use questions 5, 6, and 7 to develop how you will Obey, Train "
 "and Share. (30 min)"
 msgstr ""
-"Lo ìbéèrè karùn-ún, ìkẹfà, àti ìkeje láti mọ bó o ṣe lè máa ṣègbọràn, kó o "
-"máa dáni lẹ́kọ̀ọ́, kó o sì máa kópa nínú iṣẹ́ ìwàásù. (Ogbon iseju)"
+"WO Siwaju – Lo awọn ibeere 5, 6, ati 7 lati ṣe agbekalẹ bawo ni iwọ yoo ṣe "
+"Igbọràn, Kọni ati Pinpin. (30 min)"
 
 #: site/course/course-content.php:2277
 msgid "Concept from this session:"
@@ -3127,8 +3116,9 @@ msgid ""
 "Leadership Cells to them and see if they would be interested to be part of "
 "one."
 msgstr ""
-"Yan àwọn kan lára àwọn èèyàn 100 tó o ní tí wọ́n ti di onígbàgbọ́. Ṣàlàyé "
-"Ìsọ̀rí Olórí fún wọn kí o sì rí i bóyá wọ́n á nífẹ̀ẹ́ láti jẹ́ apá kan nínú ọ̀kan."
+"Yan diẹ ninu awọn eniyan lati Akojọ rẹ ti 100 ti o jẹ onigbagbọ tẹlẹ. Ṣe "
+"alaye Awọn sẹẹli Asiwaju fun wọn ki o rii boya wọn yoo nifẹ lati jẹ apakan "
+"ti ọkan."
 
 #: site/course/course-content.php:2299
 msgid ""
@@ -3136,13 +3126,13 @@ msgid ""
 "before your group meets again. Challenge them to then share it with someone "
 "else."
 msgstr ""
-"Gbadura ki o si beere lọwọ Ọlọrun ẹniti o fẹ ki o pin irinṣẹ Asiwaju pẹlu "
-"ṣaaju ki ẹgbẹ rẹ tun pade. Koju wọn lati lẹhinna pin pẹlu ẹlomiiran."
+"Gbadura ki o si beere lọwọ Ọlọrun ẹniti o fẹ ki o pin irinṣẹ Cell Asiwaju "
+"pẹlu ṣaaju ki ẹgbẹ rẹ tun pade. Koju wọn lati lẹhinna pin pẹlu ẹlomiiran."
 
 #: site/course/course-content.php:2320 site/course/course-content.php:2325
 #: site/course/course-content.php:4128 site/course/course-content.php:4133
 msgid "SESSION 9"
-msgstr "SAA kesan"
+msgstr "IPIN 9"
 
 #: site/course/course-content.php:2359 site/course/course-content.php:5386
 msgid ""
@@ -3159,7 +3149,7 @@ msgstr ""
 #: site/course/course-content.php:2389 site/course/course-content.php:2405
 #: site/course/course-content.php:2414 site/course/course-content.php:2767
 msgid "Non-Sequential Growth"
-msgstr "Ìdàgbàsókè Tí Kì Í Ṣe Ìtòlẹ́sẹẹsẹ"
+msgstr "Idagba ti kii ṣe-tẹle"
 
 #: site/course/course-content.php:2415
 msgid ""
@@ -3167,9 +3157,9 @@ msgid ""
 "step-by-step process. The problem with that is — that’s not how it works "
 "best!"
 msgstr ""
-"Nígbà táwọn èèyàn bá ń ronú nípa bí àwọn ọmọ ẹ̀yìn ṣe ń pọ̀ sí i, ńṣe ni wọ́n "
-"sábà máa ń wò ó bí ohun tó ń ṣẹlẹ̀ ní ṣísẹ̀-n-tẹ̀lé. Ìṣòro tó wà níbẹ̀ ni pé ⁇ "
-"kì í ṣe bí ó ṣe ń ṣiṣẹ́ tó dára jù lọ!"
+"Nígbà táwọn èèyàn bá ń sọ̀rọ̀ nípa bí àwọn ọmọ ẹ̀yìn ṣe ń pọ̀ sí i, wọ́n sábà máa "
+"ń wò ó bí ohun tó ń ṣẹlẹ̀ ní ṣísẹ̀-n-tẹ̀lé. Ìṣòro tó wà nínú èyí ni pé ⁇ kì í "
+"ṣe bí ó ṣe ń ṣiṣẹ́ tó dára jù lọ!"
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
@@ -3184,7 +3174,10 @@ msgid ""
 "Multiplying matters and multiplying quickly matters even more. Pace matters "
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
-msgstr "Isodipupo awon eto."
+msgstr ""
+"Ilọpo awọn ọrọ ati isodipupo ni kiakia ṣe pataki paapaa diẹ sii. Pace ọrọ "
+"nitori nibiti gbogbo wa ti lo ayeraye wa - aye ti o kọja akoko - ni ipinnu "
+"ni akoko kukuru pupọ ti a pe ni “aye.”"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
@@ -3194,9 +3187,7 @@ msgstr "Kini idi ti pace fi je koko?"
 msgid ""
 "What do you need to change in your thinking, your actions, or your attitude "
 "to be better aligned with God’s priority for pace?"
-msgstr ""
-"Àwọn ìyípadà wo ló yẹ kó o ṣe nínú ìrònú rẹ, nínú ìwà rẹ, tàbí nínú ìwà rẹ "
-"kó o bàa lè túbọ̀ máa tẹ̀ lé ìlànà Ọlọ́run nípa ohun tó ṣe pàtàkì jù lọ?"
+msgstr "Kilo le mu erongba re yi pada, ise re ati iwu wasi re ?"
 
 #: site/course/course-content.php:2488
 msgid ""
@@ -3218,9 +3209,9 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
-"Àmọ́, Jésù tún kọ́ wa pé ká fi ilé wa àtàwọn èèyàn wa sílẹ̀, ká sì múra tán "
-"láti lọ síbikíbi ⁇ àti níbikíbi ⁇ ká lè jọ máa kẹ́kọ̀ọ́ ká sì bẹ̀rẹ̀ ìdílé tẹ̀mí "
-"tuntun."
+"Bí ó ti wù kí ó rí, Jesu tún kọ́ wa láti fi ilé wa àti àwọn olólùfẹ́ wa sílẹ̀, "
+"kí a sì múra tán láti lọ sí ibikíbi—àti ibi gbogbo—láti ṣàjọpín kí a sì dá "
+"àwọn ìdílé tẹ̀mí tuntun sílẹ̀."
 
 #: site/course/course-content.php:2532
 msgid ""
@@ -3229,9 +3220,9 @@ msgid ""
 "growing a family and splitting it in order to grow?"
 msgstr ""
 "Kí ni díẹ̀ lára àǹfààní tó wà nínú níní ìdílé tẹ̀mí tó wà létòlétò, tó ń mú "
-"àwọn ìdílé tuntun jáde, tí wọ́n ń dàgbà, tí wọ́n sì ń pọ̀ sí i, dípò tí a ó fi "
-"máa mú kí ìdílé kan pọ̀ sí i nígbà gbogbo, tí a ó sì pín in sí méjì kí ìdílé "
-"náà lè pọ̀ sí i?"
+"àwọn ìdílé tuntun jáde, tí wọ́n ń dàgbà tí wọ́n sì ń pọ̀ sí i, dípò tí wàá fi "
+"máa mú kí ìdílé kan pọ̀ sí i ṣáá, tí wàá sì máa pín in sí méjì kí ìdílé náà "
+"lè máa pọ̀ sí i?"
 
 #: site/course/course-content.php:2549
 msgid ""
@@ -3247,24 +3238,28 @@ msgid ""
 "Self-Evaluate yourself using line 1 and mark the corresponding columns on "
 "the Coaching Checklist."
 msgstr ""
-"Ṣe àgbéyẹ̀wò ara rẹ nípa lílo ìlà 1 kí o sì sàmì sí àwọn òpó tó bá a mu nínú "
-"Àtòjọ Àkọsílẹ̀ Ìdánilẹ́kọ̀ọ́."
+"Ṣe ayẹwo ararẹ nipa lilo laini 1 ki o samisi awọn ọwọn ti o baamu lori Akojọ "
+"Iṣayẹwo Ikẹkọ."
 
 #: site/course/course-content.php:2596
 msgid "Which tools and concepts did you feel you would be able to train well?"
-msgstr "Àwọn irinṣẹ́ àti èrò orí wo lo rò pé o lè fi dáni lẹ́kọ̀ọ́ dáadáa?"
+msgstr ""
+"Awọn irinṣẹ ati awọn imọran wo ni o lero pe iwọ yoo ni anfani lati kọ ẹkọ "
+"daradara?"
 
 #: site/course/course-content.php:2597
 msgid "Which tools and concepts did you feel you would struggle to train well?"
-msgstr "Àwọn irinṣẹ́ àti èrò orí wo lo rò pé ó máa ṣòro fún ẹ láti kọ́ dáadáa?"
+msgstr ""
+"Awọn irinṣẹ ati awọn imọran wo ni o lero pe iwọ yoo tiraka lati kọ ẹkọ "
+"daradara?"
 
 #: site/course/course-content.php:2598
 msgid ""
 "Are there any tools or concepts that you would add or subtract from the "
 "checklist? Why?"
 msgstr ""
-"Ṣé àwọn ohun èlò tàbí èròǹgbà kan wà tó o lè fi kún tàbí kó o yọ kúrò nínú "
-"ìtòlẹ́sẹẹsẹ náà? Kí nìdí?"
+"Njẹ awọn irinṣẹ tabi awọn imọran eyikeyi wa ti iwọ yoo ṣafikun tabi yọkuro "
+"ninu atokọ ayẹwo bi? Kí nìdí?"
 
 #: site/course/course-content.php:2609
 msgid ""
@@ -3278,8 +3273,7 @@ msgstr ""
 msgid ""
 "If you don’t have a coach or mentor, scan the QR code and request one now."
 msgstr ""
-"Bí o kò bá ní olùkọ́ tàbí olùdámọ̀ràn, wo kòdì QR yìí kó o sì béèrè fún ẹ̀kan "
-"báyìí."
+"Ti o ko ba ni olukọni tabi olukọni, ṣayẹwo koodu QR ki o beere ọkan ni bayi."
 
 #: site/course/course-content.php:2615 site/dashboard/dashboard.php:206
 #: site/dashboard/wizard.php:235 site/pages/about.php:259
@@ -3304,7 +3298,7 @@ msgid ""
 "REMINDER: Zúme coaches are available to help you apply these tools in your "
 "local area."
 msgstr ""
-"ÌRÁNTÍ: Àwọn olùkọ́ Zúme wà láti ràn ọ́ lọ́wọ́ láti lo àwọn ohun èlò yìí ní "
+"RÁNTÍ: Àwọn olùkọ́ Zúme wà láti ràn ọ́ lọ́wọ́ láti lo àwọn ohun èlò yìí ní "
 "àdúgbò rẹ."
 
 #: site/course/course-content.php:2641
@@ -3312,8 +3306,8 @@ msgid ""
 "Jesus often pulled the disciples away from ministry to quieter places to "
 "review how the work was going."
 msgstr ""
-"Jésù sábà máa ń mú àwọn ọmọ ẹ̀yìn rẹ̀ kúrò lẹ́nu iṣẹ́ òjíṣẹ́ wọn lọ síbi tó pa "
-"rọ́rọ́ láti wo bí iṣẹ́ náà ṣe ń tẹ̀ síwájú tó."
+"Jésù sábà máa ń fa àwọn ọmọ ẹ̀yìn kúrò lẹ́nu iṣẹ́ ìwàásù lọ sí àwọn ibi tó dákẹ́ "
+"rọ́rọ́ láti ṣàtúnyẹ̀wò bí iṣẹ́ náà ṣe ń lọ."
 
 #: site/course/course-content.php:2642
 msgid ""
@@ -3333,7 +3327,7 @@ msgstr ""
 
 #: site/course/course-content.php:2654
 msgid "Field Descriptions"
-msgstr "Àwọn Àpèjúwe Iṣẹ́"
+msgstr "Field Awọn apejuwe"
 
 #: site/course/course-content.php:2656
 msgid ""
@@ -3348,32 +3342,31 @@ msgid ""
 "Seeding Field: Where or with whom are you sharing the good news of the "
 "Kingdom? How are you doing that?"
 msgstr ""
-"Pápá Irúgbìn: Ibo lo ti ń wàásù ìhìn rere Ìjọba náà tàbí ta lo ń wàásù fún? "
-"Báwo lo ṣe ń ṣe é?"
+"Pápá Irúgbìn: Níbo tàbí àwọn wo lo ń wàásù ìhìn rere Ìjọba Ọlọ́run? Bawo ni o "
+"ṣe n ṣe iyẹn?"
 
 #: site/course/course-content.php:2658
 msgid ""
 "Growing Field: How are you equipping people and growing them spiritually, "
 "individually and in their natural networks?"
 msgstr ""
-"Aaye Idagba: Báwo lẹ ṣe ń mú àwọn èèyàn gbára dì, tí ẹ sì ń mú kí wọ́n dàgbà "
-"nípa tẹ̀mí, lẹ́nì kọ̀ọ̀kan àti nínú àwọn àdúgbò wọn?"
+"Aaye Idagba: Bawo ni o ṣe n pese eniyan ni ipese ati dagba wọn nipa ti ẹmi, "
+"ọkọọkan ati ni awọn nẹtiwọọki adayeba wọn?"
 
 #: site/course/course-content.php:2659
 msgid ""
 "Harvesting Field: How are new spiritual families [simple churches] being "
 "formed?"
 msgstr ""
-"Pápá Ìkórè: Báwo la ṣe ń dá àwọn ìdílé tẹ̀mí tuntun sílẹ̀ [àwọn ṣọ́ọ̀ṣì rírọrùn]?"
+"Pápá Ìkórè: Báwo ni àwọn ìdílé tẹ̀mí [àwọn ṣọ́ọ̀ṣì rírọrùn] ṣe ń dá sílẹ̀?"
 
 #: site/course/course-content.php:2660
 msgid ""
 "Multiplying Field: With whom, how and when are you filtering for faithful "
 "people and equipping them and holding them accountable for reproduction?"
 msgstr ""
-"Aaye isodipupo:Ta lẹ jọ ń ṣe àyẹ̀wò àwọn èèyàn tó jẹ́ olóòótọ́, báwo lẹ ṣe ń ṣe "
-"é, ìgbà wo lẹ sì ń ṣe é, ṣé ẹ sì ń fún wọn ní ohun tí wọ́n nílò, ṣé ẹ sì ń mú "
-"kí wọ́n jíhìn fún ìbímọ wọn?"
+"Aaye isodipupo: Pẹlu tani, bawo ati nigbawo ni o ṣe asẹ fun awọn eniyan "
+"oloootitọ ati ipese wọn ati dimu wọn jiyin fun ẹda bi?"
 
 #: site/course/course-content.php:2674 site/course/course-content.php:2677
 msgid "Four Fields Example"
@@ -3388,8 +3381,8 @@ msgid ""
 "Identify an empty field around you. What communities or people groups that "
 "you are connected to have no gospel activity?"
 msgstr ""
-"Ṣàkíyèsí ibi tí kò ní nǹkan kan tó wà láyìíká rẹ. Àwọn àwùjọ tàbí àwọn ẹgbẹ́ "
-"ènìyàn wo ni o ní ìbátan pẹ̀lú tí wọn kò ní ìgbòkègbodò ìjíhìnrere?"
+"Ṣe idanimọ aaye ti o ṣofo ni ayika rẹ. Awọn agbegbe tabi awọn ẹgbẹ eniyan wo "
+"ni o sopọ mọ ti ko ni iṣẹ ihinrere?"
 
 #: site/course/course-content.php:2698
 msgid ""
@@ -3401,15 +3394,16 @@ msgstr ""
 
 #: site/course/course-content.php:2699
 msgid "Which Zúme tools could help in which field?"
-msgstr "Àwọn irinṣẹ́ Zúme wo ló lè ṣèrànwọ́ ní ìpínlẹ̀ wo?"
+msgstr "Awọn irinṣẹ Zúme wo ni o le ṣe iranlọwọ ni aaye wo?"
 
 #: site/course/course-content.php:2714
 msgid ""
 "Generational mapping (a.k.a. generation mapping or gen mapping) is another "
 "simple tool to help leaders in a movement understand the growth around them."
 msgstr ""
-"Iyaworan iran jẹ ohun elo miiran ti o rọrun lati ṣe iranlọwọ fun awọn "
-"oludari ni gbigbe kan ni oye idagba ni ayika wọn."
+"Aworan agbaye (aka aworan agbaye tabi aworan agbaye) jẹ ohun elo ti o rọrun "
+"miiran lati ṣe iranlọwọ fun awọn oludari ninu gbigbe kan loye idagbasoke ni "
+"ayika wọn."
 
 #: site/course/course-content.php:2715
 msgid ""
@@ -3429,7 +3423,7 @@ msgstr "Wo apẹẹrẹ lori ifaworanhan atẹle."
 
 #: site/course/course-content.php:2727
 msgid "Generational Mapping Example"
-msgstr "Iwadi iran"
+msgstr "Apeere aworan agbaye"
 
 #: site/course/course-content.php:2746
 msgid "Use the Generational Mapping example to discuss the following:"
@@ -3441,12 +3435,11 @@ msgstr "Awọn oludari wo ni o rii isodipupo?"
 
 #: site/course/course-content.php:2749
 msgid "Which groups would you expect to multiply next?"
-msgstr "Àwọn àwùjọ wo lo rò pé wọ́n máa bí sí i?"
+msgstr "Awọn ẹgbẹ wo ni iwọ yoo nireti lati pọ si ni atẹle?"
 
 #: site/course/course-content.php:2750
 msgid "Which leaders could help and strengthen other leaders?"
-msgstr ""
-"Àwọn aṣáájú wo ló lè ran àwọn aṣáájú mìíràn lọ́wọ́ kí wọ́n sì fún wọn lókun?"
+msgstr "Awọn oludari wo ni o le ṣe iranlọwọ ati fun awọn oludari miiran lokun?"
 
 #: site/course/course-content.php:2751
 msgid "Do you see a pattern of weak accountability in any of the generations?"
@@ -3458,9 +3451,9 @@ msgid ""
 "to ingrain it deeply within your heart and soul. Ask the Lord whom He would "
 "have you share it with."
 msgstr ""
-"Ṣe ìdánilẹ́kọ̀ọ́ nípa sísọ fún ọ̀rẹ́ rẹ̀ nípa” ìgbésẹ̀” ⁇ kí o sì gbàdúrà fún Olúwa "
-"kí ó lè gbilẹ̀ jinlẹ̀ nínú ọkàn àti ọkàn rẹ. Béèrè lọ́wọ́ Olúwa ẹni tí Òun fẹ́ kí "
-"o bá a jọ ṣe é."
+"Ṣaṣeṣe pinpin imọran “Pace” pẹlu ọrẹ kan ki o gbadura fun Oluwa lati fi sinu "
+"rẹ jinna ninu ọkan ati ọkan rẹ. Beere lọwọ Oluwa ẹniti Oun yoo fẹ ki o pin "
+"pẹlu rẹ."
 
 #: site/course/course-content.php:2791
 msgid ""
@@ -3468,35 +3461,36 @@ msgid ""
 "“Always a Part of Two Churches” with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
-"Ti o ba ti bẹrẹ ile ijọsin ti ara rẹ tẹlẹ, pin ero naa pẹlu awọn eniyan ti o "
-"wa ninu rẹ. Bí kò bá rí bẹ́ẹ̀, sọ ọ́ fún onígbàgbọ́ mìíràn tó o mọ̀."
+"Ti o ba ti bẹrẹ ile ijọsin ti o rọrun ti tirẹ tẹlẹ, pin ero “Nigbagbogbo Apa "
+"kan ti Awọn ile ijọsin Meji” pẹlu awọn eniyan ti o wa ninu rẹ. Ti kii ba ṣe "
+"bẹ, pin pẹlu onigbagbọ miiran ti o mọ."
 
 #: site/course/course-content.php:2811 site/course/course-content.php:2816
 #: site/course/course-content.php:4281 site/course/course-content.php:4286
 msgid "SESSION 10"
-msgstr "sáà kewa"
+msgstr "IPIN 10"
 
 #: site/course/course-content.php:2850
 msgid ""
 "Pray and thank God that He is faithful to complete His good work in us. "
 msgstr ""
-"Gbàdúrà, kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run pé ó jẹ́ olóòótọ́ láti parí iṣẹ́ rere Rẹ̀ nínú "
-"wa "
+"Gbadura ki o si dupẹ lọwọ Ọlọrun pe o jẹ olõtọ lati pari iṣẹ rere rẹ ninu "
+"wa. "
 
 #: site/course/course-content.php:2851 site/course/course-content.php:5648
 msgid ""
 "Ask Him to give your group clear heads and open hearts to the great things "
 "He wants to do in and through you."
 msgstr ""
-"Ẹ bẹ̀ ẹ́ kí ó fún àwùjọ yín ní orí tó mọ́ àti ọkàn tó ṣí sílẹ̀ fún àwọn ohun ńlá "
-"tí ó fẹ́ ṣe nínú yín àti nípasẹ̀ yín."
+"Beere lọwọ Rẹ lati fun ẹgbẹ rẹ ni awọn ori ti o han gbangba ati ṣiṣi awọn "
+"ọkan si awọn ohun nla ti O fẹ lati ṣe ninu ati nipasẹ rẹ."
 
 #: site/course/course-content.php:2852 site/course/course-content.php:5649
 msgid ""
 "Ask the Holy Spirit to lead your time together and thank Him for His "
 "faithfulness, too. He got you through!"
 msgstr ""
-"Beere fun Ẹmi Mimọ lati dari akoko rẹ papọ ati dupẹ lọwọ Rẹ fun otitọ Rẹ, "
+"Beere fun Ẹmi Mimọ lati darí akoko rẹ papọ ati dupẹ lọwọ Rẹ fun otitọ Rẹ, "
 "paapaa. O gba ọ nipasẹ!"
 
 #: site/course/course-content.php:2877 site/course/course-content.php:5674
@@ -3534,26 +3528,29 @@ msgstr ""
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
-msgstr "Se anfani wa ninu ise netiwoki ni soosi?"
+msgstr ""
+"Ṣe awọn anfani wa nigbati awọn nẹtiwọki ti awọn ile ijọsin ti o rọrun ni "
+"asopọ nipasẹ jinle, awọn ibatan ti ara ẹni? Àwọn àpẹẹrẹ wo ló máa ń wá sí wa "
+"lọ́kàn?"
 
 #: site/course/course-content.php:2961
 msgid ""
 "Making disciples who make disciples means making leaders who make leaders."
 msgstr ""
-"Ṣíṣe àwọn ọmọ-ẹ̀yìn tó ń sọ àwọn ọmọ-ẹ̀yìn di ọmọ-ẹ̀yìn túmọ̀ sí ṣíṣe àwọn "
-"aṣáájú tó ń sọ àwọn aṣáájú di aṣáájú."
+"Sisọni di ọmọ-ẹhin ti o sọni di ọmọ-ẹhin tumọ si ṣiṣe awọn aṣaaju ti o ṣe "
+"awọn aṣaaju."
 
 #: site/course/course-content.php:2962
 msgid ""
 "Peer Mentoring groups gather leaders together and help them love and "
 "encourage one another in their faith and leadership."
 msgstr ""
-"Àwọn ẹgbẹ́ Olùdarí Ẹgbẹ́ ń kó àwọn aṣáájú jọ, kí wọ́n sì ràn wọ́n lọ́wọ́ láti "
-"nífẹ̀ẹ́ àti láti fún ara wọn níṣìírí nínú ìgbàgbọ́ àti ipò olórí wọn."
+"Awọn ẹgbẹ Idamọran ẹlẹgbẹ ko awọn oludari jọ ati ṣe iranlọwọ fun wọn lati "
+"nifẹ ati gba ara wọn niyanju ninu igbagbọ ati idari wọn."
 
 #: site/course/course-content.php:2986
 msgid "Peer Mentoring Group Practice"
-msgstr "Ìdánilẹ́kọ̀ọ́ Ẹgbẹ́ Olùdarí"
+msgstr "Ẹlẹgbẹ Mentoring Group Dára"
 
 #: site/course/course-content.php:2989
 msgid ""
@@ -3568,9 +3565,8 @@ msgid ""
 "Choose one person in the group to be the \"mentee\" and have the other "
 "members work through the suggested questions list as peer mentors."
 msgstr ""
-"Yan ẹnì kan nínú àwùjọ náà láti jẹ́ \"ẹni tí a ń fún ní ìtọ́ni\" kó o sì ní kí "
-"àwọn yòókù nínú àwùjọ náà ṣe àyẹ̀wò àwọn ìbéèrè tí wọ́n dábàá náà gẹ́gẹ́ bí àwọn "
-"tí wọ́n jọ ń tọ́ni sọ́nà."
+"Yan eniyan kan ninu ẹgbẹ lati jẹ “mentee” ki o jẹ ki awọn ọmọ ẹgbẹ miiran "
+"ṣiṣẹ nipasẹ atokọ awọn ibeere ti a daba bi awọn alamọran ẹlẹgbẹ."
 
 #: site/course/course-content.php:3011
 msgid ""
@@ -3583,7 +3579,7 @@ msgstr ""
 
 #: site/course/course-content.php:3012
 msgid "God makes plans, and He expects us to make plans, too."
-msgstr "Ọlọ́run máa ń wéwèé, ó sì retí pé kí àwa náà wéwèé."
+msgstr "Ọlọrun ṣe awọn eto, ati pe o nireti pe ki a ṣe awọn ero, paapaa."
 
 #: site/course/course-content.php:3013 site/dashboard/dashboard.php:217
 msgid ""
@@ -3591,29 +3587,29 @@ msgid ""
 "efforts and keep them aligned with God’s priorities for making disciples who "
 "multiply."
 msgstr ""
-"Ìtòlẹ́sẹẹsẹ Oṣù Mẹ́ta jẹ́ ohun èlò kan tó o lè lò láti mú kí àfiyèsí rẹ àti "
-"ìsapá rẹ wà níwọ̀ntúnwọ̀nsì, kí wọ́n sì wà níbàámu pẹ̀lú àwọn ohun tí Ọlọ́run fi "
-"sí ipò àkọ́kọ́ nínú iṣẹ́ sísọni di ọmọ ẹ̀yìn tó ń pọ̀ sí i."
+"Eto Osu Mẹta jẹ irinṣẹ ti o le lo lati ṣe iranlọwọ idojukọ akiyesi rẹ ati "
+"awọn akitiyan ati ki o jẹ ki wọn wa ni ibamu pẹlu awọn ohun pataki ti Ọlọrun "
+"fun sisọ awọn ọmọ-ẹhin ti o pọ si."
 
 #: site/course/course-content.php:3014
 msgid ""
 "The next slide will show you how to make your Three Month Plan. We recommend "
 "using the online tool."
 msgstr ""
-"Àwòrán tó tẹ̀ lé e yóò fi bí o ṣe lè ṣe ètò oṣù mẹ́ta rẹ hàn ọ́. A dábàá pé kí "
-"o lo ohun èlò orí ayélujára."
+"Ifaworanhan atẹle yoo fihan ọ bi o ṣe le ṣe Eto Oṣu mẹta rẹ. A ṣe iṣeduro "
+"lilo ohun elo ori ayelujara."
 
 #: site/course/course-content.php:3027
 msgid "Make your Three Month Plan"
-msgstr "Ṣe Ìpinnu Tó Yẹ Kó O Ṣe fún Oṣù Mẹ́ta"
+msgstr "Ṣe Eto Oṣu mẹta rẹ"
 
 #: site/course/course-content.php:3029
 msgid ""
 "Read - Scan the QR code. You don‘t have to commit to every item, rather they "
 "are intended as prompts for your plan. (5 min)"
 msgstr ""
-"Ka - Ṣayẹwo koodu QR. Kò pọn dandan kó o ṣe gbogbo ohun tó o bá ní kó o ṣe, "
-"kàkà bẹ́ẹ̀, ńṣe ni kó o máa fi wọ́n ṣe àwòkọ́ṣe rẹ. (Ìṣẹ́jú 5)"
+"Ka - Ṣayẹwo koodu QR naa. O ko ni lati ṣe si gbogbo nkan, dipo wọn jẹ ipinnu "
+"bi awọn itara fun ero rẹ. (5 min)"
 
 #: site/course/course-content.php:3030
 msgid ""
@@ -3621,23 +3617,23 @@ msgid ""
 "to reveal. (10 min)"
 msgstr ""
 "Gbọ - Gba akoko lati dakẹ bi o ti ṣee ṣe ki o tẹtisi ohun ti Ọlọrun yan lati "
-"ṣafihan. (iṣẹju mewa)"
+"ṣafihan. (iṣẹju 10)"
 
 #: site/course/course-content.php:3031
 msgid ""
 "Record Your Plan - Write commitments on a piece of paper or use the online "
 "tool to save your answers. (15 min)"
 msgstr ""
-"Ṣe igbasilẹ Eto Rẹ -Kọ ohun tó o fẹ́ ṣe sórí bébà tàbí kó o lo ohun èlò tó wà "
-"lórí Íńtánẹ́ẹ̀tì láti ṣàkọsílẹ̀ àwọn ìdáhùn rẹ. (iseju 15)"
+"Ṣe igbasilẹ Eto Rẹ - Kọ awọn adehun lori iwe kan tabi lo ohun elo ori "
+"ayelujara lati fi awọn idahun rẹ pamọ. (iṣẹju 15)"
 
 #: site/course/course-content.php:3037
 msgid "Online Plan Tool"
-msgstr "Ọpa Ìṣètò orí Íńtánẹ́ẹ̀tì"
+msgstr "Online Eto Ọpa"
 
 #: site/course/course-content.php:3050
 msgid "Take turns sharing your Three Month Plans with each other."
-msgstr "Ẹ máa fi ìwé Ìpinnu fún Oṣù Mẹ́ta yín han ara yín."
+msgstr "Ya awọn ọna pinpin Awọn ero oṣu mẹta rẹ pẹlu ara wọn."
 
 #: site/course/course-content.php:3051
 msgid ""
@@ -3653,8 +3649,9 @@ msgid ""
 "ingrain them deeply within your heart and soul. Ask the Lord whom He would "
 "have you share them with."
 msgstr ""
-"Ṣe ìdánrawò láti sọ àwọn ìtumọ̀ yìí fún ọ̀rẹ́ rẹ, kí o sì gbàdúrà pé kí Olúwa "
-"fi wọ́n sínú ọkàn rẹ. Béèrè lọ́wọ́ Olúwa pé ta ni ó fẹ́ kí o bá wọn ṣe."
+"Ṣaṣeṣe pinpin awọn itumọ wọnyi pẹlu ọrẹ kan ki o gbadura fun Oluwa lati fi "
+"wọn sinu ọkan ati ọkan rẹ jinna. Beere lọwọ Oluwa ẹniti Oun yoo fẹ ki o pin "
+"wọn pẹlu."
 
 #: site/course/course-content.php:3193
 msgid ""
@@ -3666,7 +3663,7 @@ msgstr ""
 
 #: site/course/course-content.php:3255
 msgid "Ask God’s Holy Spirit to lead your time, together."
-msgstr "Beere lọwọ Ẹmi Mimọ Ọlọrun lati darí akoko rẹ, papọ."
+msgstr "Beere lọwọ Ẹmi Mimọ Ọlọrun lati ṣe itọsọna akoko rẹ, papọ."
 
 #: site/course/course-content.php:3283 site/course/course-content.php:3404
 #: site/course/course-content.php:3656 site/course/course-content.php:4480
@@ -3679,25 +3676,25 @@ msgid ""
 "Pray and thank God for His presence in our lives. Pray for each person in "
 "the group to have ears to hear His voice and grace to obey what He says."
 msgstr ""
-"Ẹ gbàdúrà kí ẹ sì dúpẹ́ lọ́wọ́ Ọlọ́run fún wíwà tó wà nínú ayé wa. Gbàdúrà fún "
-"ẹnìkọ̀ọ̀kan nínú àwùjọ láti ní etí láti gbọ́ ohùn Rẹ̀ àti oore-ọ̀fẹ́ láti ṣègbọràn "
-"sí ohun tí Ó wí."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun wiwa Rẹ ninu aye wa. Gbàdúrà fún ẹnì kọ̀ọ̀"
+"kan nínú àwùjọ láti ní etí láti gbọ́ ohùn Rẹ̀ àti oore-ọ̀fẹ́ láti ṣègbọràn sí "
+"ohun tí Ó sọ."
 
 #: site/course/course-content.php:3437
 msgid ""
 "Find an accountability partner (same gender) and begin meeting with them on "
 "a weekly basis."
 msgstr ""
-"Wá ẹni tí ẹ jọ ń ṣe ojúṣe yín (tí ẹ jọ jẹ́ ọkùnrin tàbí obìnrin kan náà) kí o "
-"sì bẹ̀rẹ̀ sí bá wọn pàdé lọ́sọ̀ọ̀sẹ̀."
+"Wa alabaṣepọ ti o ni iṣiro (abo kanna) ki o bẹrẹ ipade pẹlu wọn ni ipilẹ ọsẹ "
+"kan."
 
 #: site/course/course-content.php:3438
 msgid ""
 "Ask the Lord to guide you to challenge at least five people you know who are "
 "believers to begin their own accountability group meeting, and then do so."
 msgstr ""
-"Bẹ Ọlọ́run pé kó tọ́ ẹ sọ́nà láti pe àwọn èèyàn márùn-ún tí o mọ̀ tí wọ́n jẹ́ "
-"onígbàgbọ́ láti bẹ̀rẹ̀ ìpàdé ẹgbẹ́ tí wọn yóò máa jíhìn, kí o sì ṣe é."
+"Beere lọwọ Oluwa lati dari ọ lati koju o kere ju eniyan marun ti o mọ ti o "
+"jẹ onigbagbọ lati bẹrẹ ipade ẹgbẹ ti ara wọn, ati lẹhinna ṣe bẹ."
 
 #: site/course/course-content.php:3498
 msgid ""
@@ -3709,52 +3706,50 @@ msgstr ""
 
 #: site/course/course-content.php:3526 site/course/course-content.php:4594
 msgid "In this session, we will hear and discuss the concept:"
-msgstr "Nínú ìtòlẹ́sẹẹsẹ yìí, a ó gbọ́, a ó sì jíròrò ọ̀rọ̀ náà:"
+msgstr "Ni igba yii, a yoo gbọ ati jiroro ero naa:"
 
 #: site/course/course-content.php:3628
 msgid ""
 "Pray and thank God for His love for all of the people in our lives. Pray for "
 "each person in the group to see those around you the way God sees them."
 msgstr ""
-"Àdúrà àti ọpẹ́ ni fún Ọlọ́run fún ìfẹ́ Rẹ̀ fún gbogbo àwọn ènìyàn tó wà nínú "
-"ìgbésí ayé wa. Gbàdúrà pé kí ẹnì kọ̀ọ̀kan nínú àwùjọ náà máa wo àwọn tó yí i "
-"ká bí Ọlọ́run ṣe ń wò wọ́n."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun ifẹ Rẹ fun gbogbo eniyan ni igbesi aye wa. "
+"Gbadura fun ẹni kọọkan ninu ẹgbẹ lati rii awọn ti o wa ni ayika rẹ ni ọna ti "
+"Ọlọrun ti rii wọn."
 
 #: site/course/course-content.php:3658 site/course/course-content.php:3694
 msgid "The Prayer Cycle"
-msgstr "Àdúrà Tí Wọ́n Máa Ń Gbà"
+msgstr "Ayika Adura"
 
 #: site/course/course-content.php:3673
 msgid ""
 "If your time is flexible, take the full hour. Pray each section for 5 full "
 "minutes. This will make this session longer than a one hour training."
 msgstr ""
-"Tó bá ṣeé ṣe fún ẹ láti máa lo gbogbo wákàtí tó o bá ní, lo gbogbo wákàtí "
-"náà. Gbàdúrà fún ìṣẹ́jú márùn-ún gbáko ní apá kọ̀ọ̀kan. Èyí yóò mú kí "
-"ìtòlẹ́sẹẹsẹ yìí gùn ju ìdánilẹ́kọ̀ọ́ wákàtí kan lọ."
+"Ti akoko rẹ ba rọ, gba wakati ni kikun. Gbadura apakan kọọkan fun awọn iṣẹju "
+"5 ni kikun. Eyi yoo jẹ ki akoko yii gun ju ikẹkọ wakati kan lọ."
 
 #: site/course/course-content.php:3674
 msgid ""
 "If you can‘t take a longer session, then reduce the prayer sections from 5 "
 "minutes to 3 minutes each."
 msgstr ""
-"Bí o kò bá lè gba àkókò gígùn, wá dín àkókò àdúrà kù láti ìṣẹ́jú márùn-ún sí "
-"ìṣẹ́jú mẹ́ta."
+"Ti o ko ba le gba igba pipẹ, lẹhinna dinku awọn apakan adura lati iṣẹju 5 si "
+"iṣẹju 3 kọọkan."
 
 #: site/course/course-content.php:3709
 msgid ""
 "Use the prayer cycle to guide you as you pray for an hour sometime this week."
 msgstr ""
-"Máa lo ìtòlẹ́sẹẹsẹ àdúrà yìí láti darí rẹ bó o ṣe ń gbàdúrà fún wákàtí kan "
-"lọ́sẹ̀ yìí."
+"Lo iyika adura lati dari ọ bi o ṣe n gbadura fun wakati kan ni igba ọsẹ yii."
 
 #: site/course/course-content.php:3710
 msgid ""
 "Share the prayer cycle with whomever the Lord directs you. Challenge them to "
 "share it with others as well."
 msgstr ""
-"Máa gbàdúrà pẹ̀lú ẹnikẹ́ni tí Olúwa bá ní kó o gbàdúrà pẹ̀lú. Gbé wọn níyànjú "
-"pé kí wọ́n máa sọ ọ́ fáwọn ẹlòmíràn pẹ̀lú."
+"Pin aago adura pẹlu ẹnikẹni ti Oluwa ba darí rẹ. Koju wọn lati pin pẹlu awọn "
+"miiran pẹlu."
 
 #: site/course/course-content.php:3836
 msgid ""
@@ -3772,9 +3767,9 @@ msgid ""
 "them practice it as well. Share this person‘s name with the group before you "
 "go and reach out to them."
 msgstr ""
-"Béèrè lọ́wọ́ Ọlọ́run, fún ẹni tí ó bá fẹ́ kí o pín nínú oore-ọ̀fẹ́ tí ó ga jùlọ. "
-"Jẹ́ kí wọ́n máa fi ṣe ìdánrawò pẹ̀lú. Sọ orúkọ ẹni náà fún àwùjọ kí o tó lọ kí "
-"o sì kàn sí wọn."
+"Beere lọwọ Ọlọrun ẹniti O fẹ ki o pin pẹlu nipa Ibukun Ti o tobi julọ. Jẹ ki "
+"wọn ṣe adaṣe rẹ daradara. Pin orukọ eniyan yii pẹlu ẹgbẹ ṣaaju ki o to de "
+"ọdọ wọn."
 
 #: site/course/course-content.php:3898
 msgid ""
@@ -3789,31 +3784,31 @@ msgstr ""
 #: site/course/course-content.php:3926 site/course/course-content.php:4195
 #: site/course/course-content.php:4879
 msgid "In this session, we will practice this tool in our toolkit:"
-msgstr "Nínú ìdánilẹ́kọ̀ọ́ yìí, a ó lo ọ̀nà yìí nínú àwọn ohun èlò wa:"
+msgstr "Ni igba yii, a yoo ṣe adaṣe ọpa yii ninu ohun elo irinṣẹ wa:"
 
 #: site/course/course-content.php:3928 site/course/course-content.php:3966
 msgid "Sharing the Gospel"
-msgstr "Sísọ Ìhìn Rere Náà"
+msgstr "Pinpin Ihinrere"
 
 #: site/course/course-content.php:3941
 msgid "Practice Sharing the Gospel"
-msgstr "Máa Wàásù Ìhìn Rere"
+msgstr "ÌSE Ṣiṣẹ - Pinpin Ihinrere"
 
 #: site/course/course-content.php:3944
 msgid ""
 "Break into groups of two or three people and practice telling God’s story to "
 "each other."
 msgstr ""
-"Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta, kí ẹ sì máa sọ ìtàn Ọlọ́run fún ara "
-"yín."
+"Pinpin si awọn ẹgbẹ ti eniyan meji tabi mẹta ki o ṣe adaṣe sisọ itan Ọlọrun "
+"fun ara wọn."
 
 #: site/course/course-content.php:3945
 msgid ""
 "After you have practiced, switch. Repetition will bring confidence. By the "
 "time you are finished, you‘ll be ready to share God’s story."
 msgstr ""
-"Lẹ́yìn tẹ́ ẹ bá ti ṣe ìdánrawò, ẹ yí padà. Àtúnyẹ̀wò á jẹ́ kí ọkàn ẹni balẹ̀. "
-"Nígbà tí ẹ bá parí, ẹ ó ti múra tán láti sọ ìtàn Ọlọ́run."
+"Lẹhin ti o ti ṣe adaṣe, yipada. Atunwi yoo mu igbekele. Ni akoko ti o ba "
+"pari, iwọ yoo ṣetan lati pin itan Ọlọrun."
 
 #: site/course/course-content.php:4043
 msgid ""
@@ -3821,9 +3816,9 @@ msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"Máa gbàdúrà kó o sì máa dúpẹ́ lọ́wọ́ Ọlọ́run pé ó pè wá láti wàásù Ìhìn Rere fún "
-"àwọn èèyàn. Gbàdúrà fún Òun láti fún ẹnìkọ̀ọ̀kan nínú ẹgbẹ́ rẹ ní èrò inú "
-"Kristi ⁇ àti láti fi Ẹ̀mí Rẹ̀ kún ẹnìkọ̀ọ̀kan."
+"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run pé ó pè wá láti ṣàjọpín Ìhìn Rere Rẹ̀ pẹ̀lú "
+"àwọn ẹlòmíràn. Beere lọwọ Rẹ lati fun ọmọ ẹgbẹ kọọkan ni ọkan ti Kristi - "
+"ati lati kun olukuluku pẹlu Ẹmi Rẹ."
 
 #: site/course/course-content.php:4071
 msgid "In this session, we will add these tools to our toolkit:"
@@ -3835,9 +3830,8 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
-"Bí o bá mọ ẹnì kan tó ń tẹ̀ lé Jésù àmọ́ tí kò tíì ṣe batisí, rọ onítọ̀hún pé "
-"kó ṣe bẹ́ẹ̀, kó o sì sọ pé o fẹ́ ṣèrìbọmi fún un. Bí bẹ́ẹ̀ kọ́, bá ọ̀rẹ́ rẹ kan ṣeré "
-"náà."
+"Tó o bá mọ ẹnikẹ́ni tó ń tẹ̀ lé Jésù àmọ́ tí kò tíì ṣèrìbọmi, sọ fún wọn pé kí "
+"wọ́n ṣe bẹ́ẹ̀ kó o sì yọ̀ǹda láti ṣèrìbọmi. Bibẹẹkọ, ṣe adaṣe ọgbọn pẹlu ọrẹ kan."
 
 #: site/course/course-content.php:4107
 msgid ""
@@ -3845,30 +3839,29 @@ msgid ""
 "it. Have them practice it as well. Share this person‘s name with the group "
 "before you go and reach out to them before the next session."
 msgstr ""
-"Béèrè lọ́wọ́ Ọlọ́run ẹni tó fẹ́ kó o sọ fún nípa ohun tí ìrìbọmi jẹ́ àti bó o ṣe "
-"lè ṣe é. Jẹ́ kí wọ́n máa fi dánra wò pẹ̀lú. Sọ orúkọ ẹni náà fún àwùjọ kí o tó "
-"lọ, kí o sì kàn sí wọn kí ìpàdé tó tẹ̀ lé e tó wáyé."
+"Beere lọwọ Ọlọrun ẹniti O fẹ ki o pin pẹlu nipa kini iribọmi jẹ ati bi o ṣe "
+"le ṣe. Jẹ ki wọn ṣe adaṣe rẹ daradara. Pin orukọ ẹni yii pẹlu ẹgbẹ ṣaaju ki "
+"o to lọ si ọdọ wọn ṣaaju apejọ atẹle."
 
 #: site/course/course-content.php:4167
 msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
 msgstr ""
-"Máa gbàdúrà kó o sì máa dúpẹ́ lọ́wọ́ Ọlọ́run fún ẹ̀bùn tó fún ẹ pé kó o wà ní "
-"ìṣọ̀kan pẹ̀lú ikú, ìsìnkú àti àjíǹde Kristi. Bẹ Ẹmí Mímọ́ Ọlọ́run kí ó darí "
-"àkókò yín, pa pọ̀."
+"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún ẹ̀bùn ìṣọ̀kan pẹ̀lú ikú Kristi, ìsìnkú, "
+"àti àjíǹde. Beere lọwọ Ẹmi Mimọ Ọlọrun lati darí akoko rẹ, papọ."
 
 #: site/course/course-content.php:4210
 msgid "Share Your Testimony"
-msgstr "So Ẹri Rẹ"
+msgstr "Pin Ẹri Rẹ"
 
 #: site/course/course-content.php:4212
 msgid ""
 "Break into groups of two of three and practice sharing your Three-Minute "
 "Testimony."
 msgstr ""
-"Ẹ pín ara yín sí àwùjọ méjì tàbí mẹ́ta, kẹ́ ẹ sì máa fi Ìjẹ́rìí Ìṣẹ́jú Mẹ́ta "
-"kẹ́kọ̀ọ́."
+"Pin si awọn ẹgbẹ ti meji ninu mẹta ki o ṣe adaṣe pinpin Ijẹrisi Iṣẹju Mẹta "
+"rẹ."
 
 #: site/course/course-content.php:4213
 msgid ""
@@ -3876,9 +3869,9 @@ msgid ""
 "those five people, and practice your Testimony in a way that you think will "
 "make sense to that particular person."
 msgstr ""
-"Yan àwọn èèyàn márùn-ún lára àwọn ọgọ́rùn-ún tó wà nínú àkọsílẹ̀ rẹ. Ẹ jẹ́ kí "
-"ẹnì kan díbọ́n pé òun ni ẹnì kọ̀ọ̀kan nínú àwọn èèyàn márùn-ún wọ̀nyí, kí ẹ sì "
-"máa fi Ẹ̀rí yín ṣe ìdánrawò ní ọ̀nà tí ẹ rò pé ó máa yé ẹni náà."
+"Yan eniyan 5 lati Akojọ ti 100. Jẹ ki ẹnikan ṣe bi ẹni pe o jẹ ọkọọkan ninu "
+"awọn eniyan marun naa, ki o ṣe adaṣe Ijẹri rẹ ni ọna ti o ro pe yoo jẹ oye "
+"si ẹni yẹn pato."
 
 #: site/course/course-content.php:4214
 msgid ""
@@ -3886,17 +3879,17 @@ msgid ""
 "from the list. By the time you’re finished, you should be able to tell your "
 "Testimony in about 3 minutes or less."
 msgstr ""
-"Lẹ́yìn tí ẹ bá ti ṣe ìdánrawò tán, ẹ pààrọ̀. Ṣe bí ẹni pé o jẹ ẹnìkan míì. "
-"Àwọn èèyàn márùn-ún tó wà nínú àkọsílẹ̀. Nígbà tí ẹ bá parí, ẹ ó ti lè sọ ẹ̀rí "
-"yín ní nǹkan bí ìṣẹ́jú mẹ́ta tàbí kó máà tó bẹ́ẹ̀."
+"Lẹhin ti o ti ṣe adaṣe, yipada. Dibọn lati jẹ eniyan marun ti elomiran lati "
+"atokọ naa. Ni akoko ti o ba pari, o yẹ ki o ni anfani lati sọ Ẹri rẹ ni bii "
+"iṣẹju 3 tabi kere si."
 
 #: site/course/course-content.php:4216
 msgid "Repetition builds confidence."
-msgstr "Fífi ọ̀rọ̀ sọ ní àsọtúnsọ máa ń jẹ́ kí ọkàn ẹni balẹ̀."
+msgstr "Àsọtúnsọ ń gbé ìgbọ́kànlé dàgbà."
 
 #: site/course/course-content.php:4230
 msgid "Tool practiced in this session:"
-msgstr "Ohun èlò tí a fi ṣe ìdánrawò ní ìtòlẹ́sẹẹsẹ yìí:"
+msgstr "Irinṣẹ ti a nṣe ni igba yii:"
 
 #: site/course/course-content.php:4247
 msgid ""
@@ -3904,25 +3897,24 @@ msgid ""
 "least one person from your List of 100 that you marked as \"Unbeliever\" or "
 "\"Unknown.\""
 msgstr ""
-"Lo àkókò kan lọ́sẹ̀ yìí láti fi ṣe ìdánrawò ìjẹ́rìí rẹ, kí o sì wá sọ fún ó "
-"kéré tán ẹnì kan nínú Àtòjọ 100 tí o sàmì sí gẹ́gẹ́ bí \"Aláìgbàgbọ́\" tàbí \"A "
-"kò Mọ\""
+"Lo akoko ni ọsẹ yii lati ṣe adaṣe ẹri rẹ, lẹhinna pin pẹlu o kere ju eniyan "
+"kan lati Akojọ 100 rẹ ti o samisi bi “Alaigbagbọ” tabi “Aimọ.”"
 
 #: site/course/course-content.php:4320
 msgid ""
 "Pray and thank God for the ways He works through our testimony and invite "
 "His Holy Spirit to lead your time together."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún àwọn ọ̀nà tí ó gbà ń ṣiṣẹ́ nípasẹ̀ ẹ̀rí wa "
-"kí o sì pe Ẹ̀mí Mímọ́ Rẹ̀ láti darí àkókò yín pa pọ̀."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun awọn ọna ti O nṣiṣẹ nipasẹ ẹrí wa ki o si "
+"pe Ẹmi Mimọ Rẹ lati darí akoko rẹ papọ."
 
 #: site/course/course-content.php:4391
 msgid ""
 "If your family are believers and live locally, lead the Lord‘s Supper with "
 "them. Otherwise, practice the skill with a believing friend."
 msgstr ""
-"Bí ìdílé rẹ bá jẹ́ onígbàgbọ́ tí wọ́n sì ń gbé ládùúgbò rẹ, kó o bá wọn jẹ "
-"Oúnjẹ Alẹ́ Olúwa. Bí bẹ́ẹ̀ kọ́, bá ọ̀rẹ́ rẹ kan tó jẹ́ onígbàgbọ́ ṣe ìdánrawò náà."
+"Tí ẹbí rẹ bá jẹ́ onígbàgbọ́ tí wọ́n sì ń gbé ládùúgbò, máa darí Oúnjẹ Alẹ́ Olúwa "
+"pẹ̀lú wọn. Bibẹẹkọ, ṣe adaṣe ọgbọn pẹlu ọrẹ onigbagbọ kan."
 
 #: site/course/course-content.php:4392
 msgid ""
@@ -3930,13 +3922,12 @@ msgid ""
 "with whomever the Lord impresses on you. Then equip them to share it with "
 "someone else."
 msgstr ""
-"Bá ẹnikẹ́ni tí Olúwa bá fún ní ìmọrírì sọ̀rọ̀ nípa \"Ìdálẹ́kọ̀ọ́ Ọmọ Àgùntàn\" àti "
-"\"Ojú Láti Rí Ibi Tí Ìjọba Náà Kò Wà\". Lẹ́yìn náà, kó o wá jẹ́ kí wọ́n mọ bó "
-"ṣe yẹ kí wọ́n máa sọ ọ́ fún ẹlòmíì."
+"Pin \"Idi-ẹhin Duckling\" ati \"Oju lati Wo Nibiti Ijọba Ko Si\" pẹlu "
+"ẹnikẹni ti Oluwa ba tẹ si ọ. Lẹhinna pese wọn lati pin pẹlu ẹlomiran."
 
 #: site/course/course-content.php:4413 site/course/course-content.php:4418
 msgid "SESSION 11"
-msgstr "saa kọkànlá"
+msgstr "IPIN 11"
 
 #: site/course/course-content.php:4452
 msgid ""
@@ -3944,49 +3935,48 @@ msgid ""
 "others around you. Pray for the group to have eyes to see where the Kingdom "
 "isn‘t, yet."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún bó ṣe ń ṣiṣẹ́ nínú ìgbésí ayé rẹ àti ti "
-"àwọn ẹlòmíràn tó yí ọ ká. Gbàdúrà pé kí àwùjọ náà ní ojú láti rí ibi tí "
-"Ìjọba náà kò sí."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun bi O ṣe n ṣiṣẹ ninu igbesi aye rẹ ati awọn "
+"igbesi aye awọn elomiran ni ayika rẹ. Gbadura fun ẹgbẹ naa lati ni oju lati "
+"rii ibi ti Ijọba naa ko si, sibẹsibẹ."
 
 #: site/course/course-content.php:4527 site/course/course-content.php:4532
 msgid "SESSION 12"
-msgstr "saa kejila"
+msgstr "IPIN 12"
 
 #: site/course/course-content.php:4635
 msgid "Pray for someone in their presence using the BLESS pattern this week."
-msgstr "Gbàdúrà fún ẹnì kan tó wà níwájú wọn nípa lílo ọ̀nà ìbùkún ní ọ̀sẹ̀ yìí."
+msgstr "Gbadura fun ẹnikan ni iwaju wọn nipa lilo apẹrẹ BLESS ni ọsẹ yii."
 
 #: site/course/course-content.php:4636
 msgid ""
 "Equip someone else to pray for others using the BLESS pattern and go with "
 "them as they do it."
 msgstr ""
-"Sọ fún ẹnì kan pé kó gbàdúrà fún àwọn ẹlòmíràn nípa lílo ọ̀rọ̀ ìyìn, kó o sì "
-"bá wọn lọ bí wọ́n ti ń gbàdúrà."
+"Pese elomiran lati gbadura fun awọn miiran nipa lilo apẹrẹ BLESS ki o lọ "
+"pẹlu wọn bi wọn ṣe ṣe."
 
 #: site/course/course-content.php:4658 site/course/course-content.php:4663
 msgid "SESSION 13"
-msgstr "saa kẹ́tàlá"
+msgstr "IPIN 13"
 
 #: site/course/course-content.php:4697
 msgid ""
 "Pray and thank God for what you learned in the last session. Pray for God‘s "
 "Spirit to help you be faithful to put into practice all you are learning."
 msgstr ""
-"Gbàdúrà, kó o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún ohun tó o kọ́ ní ìpàdé tó kọjá. Gbàdúrà "
-"pé kí ẹ̀mí Ọlọ́run ràn ẹ́ lọ́wọ́ láti jẹ́ olùṣòtítọ́ kó o lè máa fi gbogbo ohun tó "
-"o ti kọ́ sílò."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun ohun ti o kọ ni igba ikẹhin. Gbàdúrà fún Ẹ̀"
+"mí Ọlọ́run láti ràn ọ́ lọ́wọ́ láti jẹ́ olóòótọ́ láti fi gbogbo ohun tí o ń kọ́ sílò."
 
 #: site/course/course-content.php:4812 site/course/course-content.php:4817
 msgid "SESSION 14"
-msgstr "see kẹ́rìnlá"
+msgstr "IPIN 14"
 
 #: site/course/course-content.php:4899
 msgid ""
 "LOOK BACK – Use last session’s Obey, Train, and Share challenges to check-in "
 "with each other. (15 min)"
 msgstr ""
-"WO PADA – Lo Igbọràn, Ikẹkọ, ati Pin awọn italaya igba to kọja lati wọle "
+"WO Pada - Lo Igbọràn, Ikẹkọ, ati Pin awọn italaya igba to kẹhin lati wọle "
 "pẹlu ara wọn. (iṣẹju 15)"
 
 #: site/course/course-content.php:4900
@@ -4011,22 +4001,22 @@ msgid ""
 "your list of 100 and ask God who you should invite to join you. Then invite "
 "them this week and trust God to build the group."
 msgstr ""
-"Gbàdúrà, kó o sì béèrè lọ́wọ́ Ọlọ́run bóyá ó fẹ́ kó o dá Ẹgbẹ́ 3/3. Tó bá ṣe bẹ́ẹ̀, "
-"wo àwọn ọgọ́rùn-ún tó wà nínú àkọsílẹ̀ rẹ, kó o sì bi Ọlọ́run pé àwọn wo ló yẹ "
-"kó o pè láti wá dara pọ̀ mọ́ ẹ. Tó bá rí bẹ́ẹ̀, ké sí wọn lọ́sẹ̀ yìí, kó o sì "
-"fọkàn tán Ọlọ́run pé ó máa gbé ẹgbẹ́ náà ró."
+"Gbadura ki o beere lọwọ Ọlọrun ti o ba fẹ ki o bẹrẹ Ẹgbẹ 3/3 kan. Bí Ó bá ṣe "
+"bẹ́ẹ̀, wo àtòjọ ọgọ́rùn-ún [100] rẹ kí o sì béèrè lọ́wọ́ Ọlọ́run ẹni tó yẹ kó o pè "
+"láti dara pọ̀ mọ́ ẹ. Lẹhinna pe wọn ni ọsẹ yii ki o gbẹkẹle Ọlọrun lati kọ "
+"ẹgbẹ naa."
 
 #: site/course/course-content.php:4938
 msgid ""
 "Find someone to share the 3/3 Group format with before your group meets "
 "again. Share this person’s name with the group before you go."
 msgstr ""
-"Wá ẹnìkan láti bá pínpín ìtòlẹ́sẹẹsẹ Ìgbìmọ̀ 3/3 kí àwùjọ rẹ tó pàdé lẹ́ẹ̀kan sí "
-"i. Sọ orúkọ ẹni yìí fún àwùjọ kí o tó lọ."
+"Wa ẹnikan lati pin ọna kika Ẹgbẹ 3/3 pẹlu ṣaaju ki ẹgbẹ rẹ pade lẹẹkansi. "
+"Pin orukọ eniyan yii pẹlu ẹgbẹ ṣaaju ki o to lọ."
 
 #: site/course/course-content.php:4960 site/course/course-content.php:4965
 msgid "SESSION 15"
-msgstr "saa kẹ́ẹ̀dógún"
+msgstr "IPIN 15"
 
 #: site/course/course-content.php:4999
 msgid ""
@@ -4034,16 +4024,14 @@ msgid ""
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
-"Beere boya enikeni ninu ẹgbẹ naa ba ni awọn aini pataki ti wọn yoo fẹ ki "
-"ẹgbẹ naa gbadura fun. So fun Ọlọrun pe O ṣe ileri ninu Ọrọ Rẹ lati gbọ ati "
-"sise nigbati awọn eniyan Rẹ ba gbadura. Beere ni owo Ẹmi Mimọ Ọlọrun lati "
-"dari akoko idarapo yin."
+"Beere boya ẹnikẹni ninu ẹgbẹ ba ni awọn iwulo pato ti wọn yoo fẹ ki ẹgbẹ naa "
+"gbadura fun. Dupẹ lọwọ Ọlọrun pe O ṣe ileri ninu Ọrọ Rẹ lati gbọ ati ṣiṣẹ "
+"nigbati awọn eniyan Rẹ ba gbadura. Beere lọwọ Ẹmi Mimọ Ọlọrun lati ṣe "
+"itọsọna akoko rẹ, papọ."
 
 #: site/course/course-content.php:5063
 msgid "Share the \"Training Cycle\" with a believer on your list of 100."
-msgstr ""
-"Bá ẹnì kan tó jẹ́ onígbàgbọ́ nínú ọgọ́rùn-ún èèyàn tó wà nínú ìtòlẹ́sẹẹsẹ rẹ "
-"sọ̀rọ̀ nípa \"Ìdánilẹ́kọ̀ọ́\"."
+msgstr "Pin “Ayika Ikẹkọ” pẹlu onigbagbọ kan lori atokọ rẹ ti 100."
 
 #: site/course/course-content.php:5085 site/course/course-content.php:5090
 msgid "SESSION 16"
@@ -4055,9 +4043,9 @@ msgid ""
 "of Two Churches\" pattern with the people in it. If not, share it with "
 "another believer you know."
 msgstr ""
-"Ti o ba ti bẹrẹ ile ijọsin ti ara rẹ tẹlẹ, pin awoṣe \"Awọn Ile ijọsin meji "
-"ni igbagbogbo\" pẹlu awọn eniyan ti o wa ninu rẹ. Bí kò bá rí bẹ́ẹ̀, sọ ọ́ fún "
-"onígbàgbọ́ mìíràn tó o mọ̀."
+"Ti o ba ti bẹrẹ ile ijọsin ti o rọrun ti tirẹ tẹlẹ, pin ilana “Apakan ti Ile "
+"ijọsin Meji nigbagbogbo” pẹlu awọn eniyan ti o wa ninu rẹ. Ti kii ba ṣe bẹ, "
+"pin pẹlu onigbagbọ miiran ti o mọ."
 
 #: site/course/course-content.php:5214 site/course/course-content.php:5219
 msgid "SESSION 17"
@@ -4069,10 +4057,9 @@ msgid ""
 "the body, and persecution and suffering. Pray for each person in the group "
 "to have ears to hear His voice and grace to obey what He says."
 msgstr ""
-"Gbàdúrà kí o sì dúpẹ́ lọ́wọ́ Ọlọ́run fún bó ṣe ń bá a lọ láti máa sọ̀rọ̀ nípasẹ̀ "
-"ọ̀rọ̀ re ati àdúrà ati ara re, àti inúnibíni àti ìjìyà. Gbàdúrà fún ẹnìkọ̀ọ̀kan "
-"nínú àwùjọ láti ní etí láti gbọ́ ohùn Rẹ̀ àti oore-ọ̀fẹ́ láti ṣègbọràn sí ohun "
-"tí Ó wí."
+"Gbadura ki o dupẹ lọwọ Ọlọrun fun bi O ṣe n tẹsiwaju lati sọrọ nipasẹ ọrọ "
+"naa, adura, ara, ati inunibini ati ijiya. Gbàdúrà fún ẹnì kọ̀ọ̀kan nínú àwùjọ "
+"láti ní etí láti gbọ́ ohùn Rẹ̀ àti oore-ọ̀fẹ́ láti ṣègbọràn sí ohun tí Ó sọ."
 
 #: site/course/course-content.php:5322
 msgid ""
@@ -4080,16 +4067,17 @@ msgid ""
 "or Leaving, that you need to take with the disciple you assessed with the "
 "coaching checklist."
 msgstr ""
-"Ṣàwárí ìgbésẹ̀ kan fún ara rẹ, ì báà jẹ́ Àwòṣe, Ìrànlọ́wọ́, Wíwo, tàbí Yípadà, "
-"tí o ní láti gbé pẹ̀lú ọmọ-ẹ̀yìn tí o gbé yẹ̀ wò pẹ̀lú àkọsílẹ̀ ìdánilẹ́kọ̀ọ́."
+"Ṣe idanimọ igbesẹ ti o tẹle fun ararẹ, boya Ṣiṣe Awoṣe, Iranlọwọ, Wiwo, tabi "
+"Nlọ kuro, ti o nilo lati mu pẹlu ọmọ-ẹhin ti o ṣe ayẹwo pẹlu atokọ ayẹwo "
+"ikẹkọ."
 
 #: site/course/course-content.php:5323
 msgid ""
 "Share the concept of “Leadership in Networks” with someone else. Then train "
 "them to share it with someone else."
 msgstr ""
-"Sọ èròǹgbà \"Ìdarí nínú àwọn ẹ̀ka\" fún ẹlòmíràn. Lẹ́yìn náà, kọ́ wọn láti máa "
-"fi kọ́ àwọn ẹlòmíì."
+"Pin ero ti “Asiwaju ni Awọn nẹtiwọki” pẹlu ẹlomiiran. Lẹhinna kọ wọn lati "
+"pin pẹlu ẹlomiran."
 
 #: site/course/course-content.php:5347 site/course/course-content.php:5352
 msgid "SESSION 18"
@@ -4100,19 +4088,17 @@ msgid ""
 "Take a moment to listen to God and ask if there are any action steps you or "
 "your group needs to take based on the Four Fields discussion you just had."
 msgstr ""
-"Ya akoko kan lati tẹtisi Ọlọrun ki o si beere boya awọn igbesẹ iṣe eyikeyi "
-"wa ti iwọ tabi ẹgbẹ rẹ nilo lati ṣe da lori ijiroro Awọn aaye mẹrin ti o "
-"ṣẹṣẹ ni. Ya akoko kan lati tẹtisi Ọlọrun ki o si beere boya awọn igbesẹ iṣe "
-"eyikeyi wa ti iwọ tabi ẹgbẹ rẹ nilo lati ṣe da lori ijiroro Awọn aaye mẹrin "
-"ti o ṣẹṣẹ ni."
+"Gba akoko diẹ lati tẹtisi Ọlọrun ki o beere boya awọn igbesẹ igbese eyikeyi "
+"wa ti iwọ tabi ẹgbẹ rẹ nilo lati ṣe ti o da lori ijiroro Awọn aaye Mẹrin ti "
+"o ṣẹṣẹ ṣe."
 
 #: site/course/course-content.php:5462
 msgid ""
 "Go through each of the Zúme training items and determine which field(s) each "
 "is relevant to and label a four fields chart with the items."
 msgstr ""
-"Lọ nipasẹ ọkọọkan awọn ohun elo ikẹkọ Zúme ki o pinnu eyi ti aaye (s) kọọkan "
-"jẹ ti o yẹ fun ati ki o fi aami si awọn aaye mẹrin pẹlu awọn ohun elo naa."
+"Lọ nipasẹ ọkọọkan awọn nkan ikẹkọ Zúme ki o pinnu iru aaye (awọn) ti ọkọọkan "
+"jẹ pataki si ati ṣe aami apẹrẹ awọn aaye mẹrin pẹlu awọn nkan naa."
 
 #: site/course/course-content.php:5463
 msgid ""
@@ -4149,8 +4135,8 @@ msgid ""
 "Share the concept of the \"Peer Mentoring Group\" with two believers on your "
 "list of 100."
 msgstr ""
-"Bá àwọn onígbàgbọ́ méjì nínú ọgọ́rùn-ún tí o ní sọ̀rọ̀ nípa \"Ẹgbẹ́ Àwọn "
-"Olùdarí\"."
+"Pin ero ti “Ẹgbẹ Idamọni ẹlẹgbẹ” pẹlu awọn onigbagbọ meji lori atokọ rẹ ti "
+"100."
 
 #: site/course/course-content.php:5608 site/course/course-content.php:5613
 msgid "SESSION 20"
@@ -4159,16 +4145,15 @@ msgstr "IPIN 20"
 #: site/course/course-content.php:5647
 msgid "Pray and thank God that He is faithful to complete His good work in us."
 msgstr ""
-"Gbadura ki o si dupẹ lọwọ Ọlọrun pe o jẹ oloootitọ lati pari iṣẹ rere rẹ "
-"ninu wa."
+"Gbadura ki o si dupẹ lọwọ Ọlọrun pe o jẹ olõtọ lati pari iṣẹ rere rẹ ninu wa."
 
 #: site/course/course-content.php:5676
 msgid ""
 "Yet Zúme Training is only the beginning! In this session, we will make a "
 "plan for what happens post-training."
 msgstr ""
-"Àmọ́ ìbẹ̀rẹ̀ lásán ni ìdánilẹ́kọ̀ọ́ Zúme jẹ́! Nínú ìtòlẹ́sẹẹsẹ yìí, a ó ṣe ètò ohun "
-"tó máa ṣẹlẹ̀ lẹ́yìn ìdánilẹ́kọ̀ọ́."
+"Sibẹsibẹ Ikẹkọ Zúme jẹ ibẹrẹ nikan! Ni igba yii, a yoo ṣe eto fun ohun ti o "
+"ṣẹlẹ lẹhin ikẹkọ-ikẹkọ."
 
 #: site/course/course-content.php:5717 site/course/course-content.php:5722
 msgid "INTENSIVE SESSION 1"
@@ -4176,7 +4161,7 @@ msgstr "ìtòlẹ́sẹẹsẹ tomunadoko akoko"
 
 #: site/course/course-content.php:5768 site/course/course-content.php:5773
 msgid "INTENSIVE SESSION 2"
-msgstr "IKỌRỌ IKỌKỌkan meji"
+msgstr "IKOKO ALARA 2"
 
 #: site/course/course-content.php:5817 site/course/course-content.php:5822
 msgid "INTENSIVE SESSION 3"
@@ -4184,11 +4169,11 @@ msgstr "IKOKO ITOJU 3"
 
 #: site/course/course-content.php:5866 site/course/course-content.php:5871
 msgid "INTENSIVE SESSION 4"
-msgstr "IKỌRỌ KẸRIN"
+msgstr "IKOKO ITOJU 4"
 
 #: site/course/course-content.php:5915 site/course/course-content.php:5920
 msgid "INTENSIVE SESSION 5"
-msgstr "ÀGBÁRÚN ìtòlẹ́sẹẹsẹ karùn-ún"
+msgstr "ÌGBÀ TÍKÁNṢẸ́ 5"
 
 #: site/course/course-content.php:5972
 msgid "NEXT STEP"
@@ -4204,25 +4189,23 @@ msgid ""
 "The training portion of Zúme is ending, but the practicing of tools and "
 "concepts continues."
 msgstr ""
-"Apá ìdánilẹ́kọ̀ọ́ ti Zúme ti ń parí, àmọ́ ìdánilẹ́kọ̀ọ́ lórí àwọn irinṣẹ́ àti "
-"èròǹgbà ṣì ń bá a lọ."
+"Apa ikẹkọ ti Zúme n pari, ṣugbọn adaṣe awọn irinṣẹ ati awọn imọran tẹsiwaju."
 
 #: site/course/course-content.php:5977
 msgid "Don‘t do it alone. Find a community for encouragement and growth."
-msgstr ""
-"Má ṣe dá ṣe é. Wá àwùjọ kan tó máa fún ẹ níṣìírí kó o sì máa tẹ̀ síwájú."
+msgstr "Maṣe ṣe nikan. Wa agbegbe kan fun iwuri ati idagbasoke."
 
 #: site/course/course-content.php:5978
 msgid "Join Zume community using the QR code."
-msgstr "Darapọ mọ agbegbe Zume nipa lilo koodu QR."
+msgstr "Darapọ mọ agbegbe Zume ni lilo koodu QR."
 
 #: site/course/course-content.php:5992
 msgid "CONGRATULATIONS on completing Zume Training!"
-msgstr "A kí ọ pé o ti parí ìdánilẹ́kọ̀ọ́ Zume!"
+msgstr "ORIKI lori ipari Ikẹkọ Zume!"
 
 #: site/course/course-content.php:6004
 msgid "TAKE A BREAK"
-msgstr "Ẹ sinmi díẹ̀ ná"
+msgstr "GBA ISINMI"
 
 #: site/course/presenter.php:28
 msgid "Presenter"
@@ -4236,11 +4219,11 @@ msgstr ""
 
 #: site/course/presenter.php:127
 msgid "Course Presenter"
-msgstr "Ẹni tó ń ṣètò ìdánilẹ́kọ̀ọ́"
+msgstr "Olupese dajudaju"
 
 #: site/course/presenter.php:135
 msgid "Links"
-msgstr "Àwọn ìjápọ̀ to po"
+msgstr "Awọn ọna asopọ"
 
 #: site/course/presenter.php:143 site/dashboard/dashboard.php:252
 #: site/pages/resources.php:28 site/pages/resources.php:82
@@ -4251,11 +4234,11 @@ msgstr "Awon orisun"
 
 #: site/course/presenter.php:157
 msgid "Exit Course"
-msgstr "Àwọn Òpópónà Ìjáde"
+msgstr "Jade papa"
 
 #: site/course/presenter.php:158 site/dashboard/dashboard.php:174
 msgid "Menu"
-msgstr "Akojọ aṣayan"
+msgstr "Akojọ aṣyn"
 
 #: site/course/presenter.php:159
 msgid "Slide View"
@@ -4263,19 +4246,19 @@ msgstr "Àwòrán ojúewé"
 
 #: site/course/presenter.php:160 site/dashboard/dashboard.php:169
 msgid "List View"
-msgstr "Àkọsílẹ̀ Ìwòye"
+msgstr "Akojọ Wo"
 
 #: site/course/presenter.php:161
 msgid "Next slide"
-msgstr "Àwòrán tó tẹ̀ lé e"
+msgstr "Ifaworanhan atẹle"
 
 #: site/course/presenter.php:162
 msgid "Previous slide"
-msgstr "Àwòrán tó ṣáájú"
+msgstr "Ifaworanhan ti tẹlẹ"
 
 #: site/course/presenter.php:163 site/dashboard/wizard.php:246
 msgid "Session"
-msgstr "Ìpàdé"
+msgstr "Igba"
 
 #: site/course/presenter.php:165
 msgid "View Transcript"
@@ -4288,26 +4271,26 @@ msgstr "Wo Ìṣẹ̀lẹ̀"
 #: site/dashboard/checkin-dashboard.php:29 site/pages/checkin.php:27
 #: site/pages/checkin.php:235
 msgid "Checkin"
-msgstr "Akosile"
+msgstr "Wole sinu"
 
 #: site/dashboard/checkin-dashboard.php:147
 msgid "Woops"
-msgstr "ìyàlẹ́nu"
+msgstr "woops"
 
 #: site/dashboard/checkin-dashboard.php:149
 msgid "Something went wrong with your checkin process."
-msgstr "Nǹkan kan ṣàdédé yí padà nínú ètò ìforúkọsílẹ̀ rẹ."
+msgstr "Nkankan ti ko tọ pẹlu ilana ṣiṣe ayẹwo rẹ."
 
 #: site/dashboard/checkin-dashboard.php:154 site/dashboard/dashboard.php:271
 #: utilities/apis/cta-api.php:170 utilities/apis/cta-api.php:301
 #: utilities/apis/cta-api.php:330 utilities/apis/cta-api.php:344
 #: utilities/apis/cta-api.php:373
 msgid "Congratulations!"
-msgstr "Ẹ kú oríire!"
+msgstr "Oriire!"
 
 #: site/dashboard/checkin-dashboard.php:159
 msgid "Checked into session:"
-msgstr "Wọ́n wọlé sí ìjókòó:"
+msgstr "Ti ṣayẹwo sinu igba:"
 
 #: site/dashboard/checkin-dashboard.php:160
 #, php-format
@@ -4316,12 +4299,12 @@ msgstr "%1$d ti %2$d"
 
 #: site/dashboard/checkin-dashboard.php:163
 msgid "Course Progress:"
-msgstr "Ìlọsíwájú Ọ̀nà:"
+msgstr "Ilọsiwaju Ẹkọ:"
 
 #: site/dashboard/checkin-dashboard.php:164
 #, php-format
 msgid "%d%%"
-msgstr "%d%%"
+msgstr "%d %%"
 
 #: site/dashboard/dashboard.php:158 site/dashboard/wizard.php:305
 msgid "Done"
@@ -4329,7 +4312,7 @@ msgstr "Ti ṣe"
 
 #: site/dashboard/dashboard.php:159
 msgid "Edit"
-msgstr "Ṣàtúnṣe"
+msgstr "Ṣatunkọ"
 
 #: site/dashboard/dashboard.php:160 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
@@ -4337,7 +4320,7 @@ msgstr "Paare"
 
 #: site/dashboard/dashboard.php:162
 msgid "Active"
-msgstr "Àwọn tó ń ṣiṣẹ́"
+msgstr "Ti n ṣiṣẹ"
 
 #: site/dashboard/dashboard.php:163
 msgid "Completed"
@@ -4345,11 +4328,11 @@ msgstr "Ti pari"
 
 #: site/dashboard/dashboard.php:164
 msgid "Uncompleted"
-msgstr "Kò parí"
+msgstr "Ti ko pari"
 
 #: site/dashboard/dashboard.php:165
 msgid "Not Heard"
-msgstr "A Kò Gbọ́"
+msgstr "Ko Gbo"
 
 #: site/dashboard/dashboard.php:166 site/pages/share.php:116
 msgid "All"
@@ -4365,7 +4348,7 @@ msgstr "Àlẹmọ"
 
 #: site/dashboard/dashboard.php:170
 msgid "Grid View"
-msgstr "Wiwo akojo"
+msgstr "Wiwo akoj"
 
 #: site/dashboard/dashboard.php:171
 msgid "View Now"
@@ -4373,7 +4356,7 @@ msgstr "Wo Bayi"
 
 #: site/dashboard/dashboard.php:172
 msgid "Complete Now"
-msgstr "Kọ́kọ́ parí rẹ̀ báyìí"
+msgstr "Pari Bayi"
 
 #: site/dashboard/dashboard.php:173
 msgid "View"
@@ -4402,7 +4385,7 @@ msgstr "Ti a sopọ awọn iroyin"
 
 #: site/dashboard/dashboard.php:179
 msgid "Communications Email"
-msgstr "Ìjùmọ̀sọ̀rọ̀ Imeeli"
+msgstr "Imeeli ibaraẹnisọrọ"
 
 #: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:197
 #: site/profile/profile.php:123
@@ -4411,12 +4394,12 @@ msgstr "Ilu"
 
 #: site/dashboard/dashboard.php:181
 msgid "No Locations found"
-msgstr "Kò sí àwọn ibi tí a rí"
+msgstr "Ko si Awọn ipo ti a rii"
 
 #: site/dashboard/dashboard.php:182 site/dashboard/wizard.php:299
 #: site/dashboard/wizard.php:300 site/dashboard/wizard.php:324
 msgid "Location"
-msgstr "Ibi tó wà"
+msgstr "Ipo"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:304
 #: site/dashboard/wizard.php:308 site/dashboard/wizard.php:325
@@ -4432,7 +4415,7 @@ msgstr "Ede"
 
 #: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:248
 msgid "Timezone"
-msgstr "Àkókò"
+msgstr "Aago aago"
 
 #: site/dashboard/dashboard.php:186 site/dashboard/wizard.php:326
 msgid "Meeting link"
@@ -4444,7 +4427,7 @@ msgstr "Sun-un, Ipade Google, Awọn ẹgbẹ Microsoft ati bẹbẹ lọ."
 
 #: site/dashboard/dashboard.php:189
 msgid "Edit Profile"
-msgstr "Ṣàtúnṣe Àkọsílẹ̀"
+msgstr "Profaili Ṣatunkọ"
 
 #: site/dashboard/dashboard.php:190
 msgid "Check out this Zúme concept"
@@ -4462,48 +4445,48 @@ msgstr "Ṣafikun tuntun %s"
 
 #: site/dashboard/dashboard.php:192
 msgid "Commitment"
-msgstr "Ìpínra"
+msgstr "Ifaramo"
 
 #: site/dashboard/dashboard.php:193 site/pages/share.php:77
 msgid "Copy Link"
-msgstr "Ṣe àdàkọ ìjápọ̀"
+msgstr "Daakọ Ọna asopọ"
 
 #: site/dashboard/dashboard.php:194
 msgid "Copy this link and send it to your friends 🙂"
-msgstr "Ṣe àdàkọ ìjápọ̀ yìí kí o sì fi ránṣẹ́ sí àwọn ọ̀rẹ́ rẹ 🙂"
+msgstr "Daakọ ọna asopọ yii ki o firanṣẹ si awọn ọrẹ rẹ 🙂"
 
 #: site/dashboard/dashboard.php:195 site/pages/share.php:79
 msgid "Thanks!"
-msgstr "Ẹ ṣeun!"
+msgstr "O ṣeun!"
 
 #: site/dashboard/dashboard.php:196
 msgid "Link copied"
-msgstr "Ìjápọ̀ tí a daakọ"
+msgstr "Daakọ ọna asopọ"
 
 #: site/dashboard/dashboard.php:197
 msgid "Getting Started"
-msgstr "Bó O Ṣe Lè Bẹ̀rẹ̀"
+msgstr "Bibẹrẹ"
 
 #: site/dashboard/dashboard.php:198 utilities/apis/cta-api.php:285
 #: utilities/apis/cta-api.php:287
 msgid "Set Profile"
-msgstr "Ṣeto Àkọlé"
+msgstr "Ṣeto Profaili"
 
 #: site/dashboard/dashboard.php:199
 msgid "Complete a short Profile Wizard to set your profile"
-msgstr "Ṣẹ̀kúnrẹ́rẹ́ Àkọsílẹ̀ Ọ̀gbẹ́ni láti fi àwòkọsílẹ̀ rẹ sílẹ̀"
+msgstr "Pari Oluṣeto Profaili kukuru kan lati ṣeto profaili rẹ"
 
 #: site/dashboard/dashboard.php:200 site/dashboard/wizard.php:268
 msgid "Join or create a training group"
-msgstr "Darapọ̀ mọ́ ẹgbẹ́ ìdánilẹ́kọ̀ọ́ kan tàbí kí o dá a sílẹ̀"
+msgstr "Darapọ mọ tabi ṣẹda ẹgbẹ ikẹkọ"
 
 #: site/dashboard/dashboard.php:201
 msgid ""
 "Join one of our online trainings or create your own training group with our "
 "easy to set up wizard"
 msgstr ""
-"Darapọ mọ ọkan ninu awọn ikẹkọ ori ayelujara wa tabi ṣẹda ẹgbẹ ikẹkọ ti ara "
-"rẹ pẹlu oludari wa ti o rọrun lati ṣeto"
+"Darapọ mọ ọkan ninu awọn ikẹkọ ori ayelujara tabi ṣẹda ẹgbẹ ikẹkọ tirẹ pẹlu "
+"irọrun wa lati ṣeto oluṣeto"
 
 #: site/dashboard/dashboard.php:202
 msgid "Create Training Group"
@@ -4511,7 +4494,7 @@ msgstr "Ṣẹda Ẹgbẹ Ikẹkọ"
 
 #: site/dashboard/dashboard.php:203
 msgid "Create your own training group with our easy to set up wizard"
-msgstr "Ṣẹda ẹgbẹ ikẹkọ tirẹ pẹlu oluṣeto iṣeto irọrun wa"
+msgstr "Ṣẹda ẹgbẹ ikẹkọ tirẹ pẹlu irọrun wa lati ṣeto oluṣeto"
 
 #: site/dashboard/dashboard.php:204 site/dashboard/wizard.php:327
 msgid "Join Training Group"
@@ -4526,20 +4509,20 @@ msgid ""
 "Connect with a coach for any help or encouragement before, during or after "
 "the training."
 msgstr ""
-"O lè kàn sí olùkọ́ kan fún ìrànlọ́wọ́ tàbí ìṣírí kó o tó bẹ̀rẹ̀ ìdánilẹ́kọ̀ọ́, nígbà "
-"ìdánilẹ́kọ̀ọ́ tàbí lẹ́yìn ìdánilẹ́kọ̀ọ́ náà."
+"Sopọ pẹlu olukọni fun eyikeyi iranlọwọ tabi iwuri ṣaaju, lakoko tabi lẹhin "
+"ikẹkọ."
 
 #: site/dashboard/dashboard.php:209
 msgid "My Progress"
-msgstr "Ìtẹ̀síwájú Mi"
+msgstr "Ilọsiwaju mi"
 
 #: site/dashboard/dashboard.php:210
 msgid ""
 "Track your course progress with this interactive view. Learn to listen, "
 "obey, share and train others with what you have learned."
 msgstr ""
-"Tẹsiwaju ilọsiwaju rẹ pẹlu wiwo ibanisọrọ yii. Kẹ́kọ̀ọ́ láti fetí sílẹ̀, láti "
-"ṣègbọràn, láti sọ ohun tó o ti kọ́ fáwọn ẹlòmíràn, kó o sì máa kọ́ wọn."
+"Tọpinpin ilọsiwaju iṣẹ-ẹkọ rẹ pẹlu wiwo ibaraenisepo yii. Kọ ẹkọ lati gbọ, "
+"gbọràn, pin ati kọ awọn miiran pẹlu ohun ti o ti kọ."
 
 #: site/dashboard/dashboard.php:211
 msgid "Information about progress"
@@ -4547,7 +4530,7 @@ msgstr "Alaye nipa ilọsiwaju"
 
 #: site/dashboard/dashboard.php:212
 msgid "My Training"
-msgstr "Ìdálẹ́kọ̀ọ́ Mi"
+msgstr "Ikẹkọ mi"
 
 #: site/dashboard/dashboard.php:213
 msgid "My Trainings"
@@ -4558,7 +4541,8 @@ msgid ""
 "Full access to your training content, schedule, group details and sharing "
 "tools."
 msgstr ""
-"O le wọle si akoonu ikẹkọ rẹ, eto, awọn alaye ẹgbẹ ati awọn irinṣẹ pinpin."
+"Wiwọle ni kikun si akoonu ikẹkọ rẹ, iṣeto, awọn alaye ẹgbẹ ati awọn irinṣẹ "
+"pinpin."
 
 #: site/dashboard/dashboard.php:216
 msgid "Create Your Plan"
@@ -4566,7 +4550,7 @@ msgstr "Ṣẹda Eto Rẹ"
 
 #: site/dashboard/dashboard.php:218
 msgid "Three Month Plan Locked"
-msgstr "Eto Osu mẹta wa ni Titiipa"
+msgstr "Eto Osu mẹta Titiipa"
 
 #: site/dashboard/dashboard.php:219
 msgid ""
@@ -4574,9 +4558,9 @@ msgid ""
 "tools and concepts learned through the Zúme course. It is most useful, once "
 "you have completed the training."
 msgstr ""
-"Ìtòlẹ́sẹẹsẹ oṣù mẹ́ta yìí jẹ́ ohun èlò kan láti ràn ọ́ lọ́wọ́ láti gbé ìgbésẹ̀ kí o "
-"sì fi àwọn ohun èlò àti èròǹgbà tí o kọ́ nínú ìdánilẹ́kọ̀ọ́ Zúme sílò. Ó máa "
-"wúlò gan-an lẹ́yìn tó o bá ti parí ìdánilẹ́kọ̀ọ́ náà."
+"Eto oṣu mẹta jẹ irinṣẹ lati ṣe iranlọwọ fun ọ lati ṣe iṣe ati imuse awọn "
+"irinṣẹ ati awọn imọran ti a kọ nipasẹ iṣẹ-ẹkọ Zúme. O wulo julọ, ni kete ti "
+"o ba ti pari ikẹkọ naa."
 
 #: site/dashboard/dashboard.php:220
 msgid "Unlock now"
@@ -4584,7 +4568,7 @@ msgstr "Ṣii silẹ ni bayi"
 
 #: site/dashboard/dashboard.php:222
 msgid "My Coach"
-msgstr "Oluko mi"
+msgstr "Olukọni mi"
 
 #: site/dashboard/dashboard.php:223
 msgid "Quick access to your coach at all times."
@@ -4592,7 +4576,7 @@ msgstr "Wiwọle ni iyara si olukọni rẹ ni gbogbo igba."
 
 #: site/dashboard/dashboard.php:224
 msgid "My Tools"
-msgstr "Àwọn Ohun Èlò Mi"
+msgstr "Awọn Irinṣẹ Mi"
 
 #: site/dashboard/dashboard.php:225
 msgid ""
@@ -4633,11 +4617,11 @@ msgstr "Ṣii agbegbe Awọn ile ijọsin Mi nipa didapọ mọ agbegbe naa."
 
 #: site/dashboard/dashboard.php:232
 msgid "My Maps"
-msgstr "Àwọn àwòrán ilẹ̀ mi"
+msgstr "Awọn maapu Mi"
 
 #: site/dashboard/dashboard.php:233
 msgid "My Maps are Locked"
-msgstr "Àwọn àwòrán-ayé mi ti wà ní títì"
+msgstr "Awọn maapu mi ti wa ni Titiipa"
 
 #: site/dashboard/dashboard.php:234
 msgid ""
@@ -4658,7 +4642,7 @@ msgstr "Ikẹkọ mi ti wa ni Titiipa"
 #: site/dashboard/dashboard.php:239 site/pages/resources.php:128
 #: site/parts/download-slides.php:37 site/parts/download-slides.php:49
 msgid "Intensive Course"
-msgstr "Ètò Ìdánilẹ́kọ̀ọ́ to daju"
+msgstr "Ẹkọ ti o lekoko"
 
 #: site/dashboard/dashboard.php:249 site/dashboard/wizard.php:250
 #: site/pages/home.php:259 site/pages/training.php:142
@@ -4668,23 +4652,23 @@ msgstr "Darapọ mọ"
 
 #: site/dashboard/dashboard.php:250
 msgid "Join the community to get access to this area."
-msgstr "Darapọ̀ mọ́ àwùjọ láti wọlé sí àgbègbè yìí."
+msgstr "Darapọ mọ agbegbe lati ni iraye si agbegbe yii."
 
 #: site/dashboard/dashboard.php:251
 msgid "Community links"
-msgstr "Àwọn ìjápọ̀ àgbáyé"
+msgstr "Awọn ọna asopọ agbegbe"
 
 #: site/dashboard/dashboard.php:253
 msgid "Previous Slide"
-msgstr "Àwòrán tó ṣáájú"
+msgstr "Ifaworanhan ti tẹlẹ"
 
 #: site/dashboard/dashboard.php:254
 msgid "Next Slide"
-msgstr "Àwòrán tó tẹ̀ lé e"
+msgstr "Ifaworanhan tókàn"
 
 #: site/dashboard/dashboard.php:255
 msgid "Group Members"
-msgstr "Awọn ọmọ ẹgbẹ"
+msgstr "Àwọn Ẹlẹ́gbẹ́"
 
 #: site/dashboard/dashboard.php:256
 msgid "Group Details"
@@ -4692,7 +4676,7 @@ msgstr "Profaili"
 
 #: site/dashboard/dashboard.php:257
 msgid "Mark Completed"
-msgstr "A Ti Ṣèdá Àmì Náà"
+msgstr "Samisi Pari"
 
 #: site/dashboard/dashboard.php:258
 #, php-format
@@ -4709,11 +4693,11 @@ msgstr "Ṣe afihan awọn alaye"
 
 #: site/dashboard/dashboard.php:261
 msgid "Edit time"
-msgstr "Àkókò Àtúnṣe"
+msgstr "Ṣatunkọ akoko"
 
 #: site/dashboard/dashboard.php:263
 msgid "Invite Friends"
-msgstr "Pe Àwọn Ọ̀rẹ́ Rẹ"
+msgstr "Pe Awọn ọrẹ"
 
 #: site/dashboard/dashboard.php:264
 msgid "Click to add your first church"
@@ -4721,15 +4705,15 @@ msgstr "Tẹ lati fi ijo akọkọ rẹ kun"
 
 #: site/dashboard/dashboard.php:265
 msgid "Church Name"
-msgstr "Orúkọ Ìjọ"
+msgstr "Oruko ijo"
 
 #: site/dashboard/dashboard.php:266
 msgid "Number of People"
-msgstr "Iye Àwọn Èèyàn"
+msgstr "Nọmba ti Eniyan"
 
 #: site/dashboard/dashboard.php:267
 msgid "Church Location"
-msgstr "Ibi Ìjọ"
+msgstr "Ibi Ijo"
 
 #: site/dashboard/dashboard.php:268
 msgid "Parent Church"
@@ -4737,11 +4721,11 @@ msgstr "Ìjọ Òbí"
 
 #: site/dashboard/dashboard.php:269
 msgid "Church"
-msgstr "Ìjọ"
+msgstr "Ile ijọsin"
 
 #: site/dashboard/dashboard.php:270
 msgid "cancel"
-msgstr "Fagile"
+msgstr "fagilee"
 
 #: site/dashboard/dashboard.php:272
 msgid "You have requested a coach"
@@ -4753,7 +4737,7 @@ msgstr "O ti darapọ mọ ikẹkọ kan"
 
 #: site/dashboard/dashboard.php:274
 msgid "You have set your profile"
-msgstr "O ti ṣe àdàkọ rẹ"
+msgstr "O ti ṣeto profaili rẹ"
 
 #: site/dashboard/dashboard.php:275
 #, php-format
@@ -4763,7 +4747,7 @@ msgstr "%s ṣiṣi silẹ"
 
 #: site/dashboard/dashboard.php:275 utilities/apis/cta-api.php:329
 msgid "3 month plan"
-msgstr "Eto Osu Meta"
+msgstr "3 osu ètò"
 
 #: site/dashboard/dashboard.php:276
 msgid "You have joined the community"
@@ -4784,17 +4768,15 @@ msgid ""
 "A user’s email address is required to establish an account and is used for "
 "transactional communication as part of site operation."
 msgstr ""
-"Adirẹsi imeeli ti olumulo kan nilo lati ṣeto akọọlẹ kan ati pe o lo fun "
-"ibaraẹnisọrọ iṣowo bi apakan ti iṣẹ aaye."
+"Adirẹsi imeeli olumulo kan nilo lati fi idi akọọlẹ kan mulẹ ati pe o lo fun "
+"ibaraẹnisọrọ iṣowo gẹgẹbi apakan ti iṣẹ aaye."
 
 #: site/dashboard/dashboard.php:280 site/dashboard/wizard.php:207
 #: site/pages/privacy-policy.php:112
 msgid ""
 "A user’s phone number is collected and stored for supporting the free "
 "coaching service."
-msgstr ""
-"Nọmba tẹlifóònù olùṣàmúlò kan ni a gba tí a sì fi pamọ́ fún ìtìlẹ́yìn iṣẹ́ "
-"ìdarí tí kò gba owó."
+msgstr "Nọmba foonu olumulo kan ti gba ati fipamọ fun atilẹyin iṣẹ ikẹkọ ọfẹ."
 
 #: site/dashboard/dashboard.php:281 site/dashboard/wizard.php:208
 #: site/pages/privacy-policy.php:115
@@ -4802,9 +4784,8 @@ msgid ""
 "A user’s city is requested to personalize site resources and communication, "
 "and to connect users to appropriate coaching and customer service resources."
 msgstr ""
-"A beere lọwọ ilu olumulo kan lati ṣe ara ẹni awọn orisun aaye ati "
-"ibaraẹnisọrọ, ati lati sopọ awọn olumulo si ikẹkọ ti o yẹ ati awọn orisun "
-"iṣẹ alabara."
+"A beere ilu olumulo kan lati ṣe adani awọn orisun aaye ati ibaraẹnisọrọ, ati "
+"lati so awọn olumulo pọ si ikẹkọ ti o yẹ ati awọn orisun iṣẹ alabara."
 
 #: site/dashboard/dashboard.php:282 site/dashboard/wizard.php:236
 #: site/pages/privacy-policy.php:106
@@ -4813,69 +4794,69 @@ msgid ""
 "communication functioning, and to help us connect the user with appropriate "
 "coaching and resources."
 msgstr ""
-"A máa ń tọ́jú èdè tí olùṣàmúlò fẹ́ kí ìkànnì àti ìjùmọ̀sọ̀rọ̀ lè máa ṣiṣẹ́ bó ṣe "
-"yẹ, a sì máa ń ràn án lọ́wọ́ láti fi ìtọ́sọ́nà àti àwọn ohun èlò tó bá yẹ ránṣẹ́ "
-"sí olùṣàmúlò."
+"Ayanfẹ ede olumulo kan wa ni ipamọ lati ṣe atilẹyin aaye to dara ati iṣẹ "
+"ibaraẹnisọrọ, ati lati ṣe iranlọwọ fun wa lati so olumulo pọ pẹlu ikẹkọ ati "
+"awọn orisun ti o yẹ."
 
 #: site/dashboard/dashboard.php:283 site/dashboard/wizard.php:328
 msgid "Join key"
-msgstr "Àkójọ kókó"
+msgstr "Darapọ mọ bọtini"
 
 #: site/dashboard/dashboard.php:284 site/pages/checkin.php:83
 #: site/pages/friend-invite.php:73 site/pages/plan-invite.php:73
 #: site/pages/plan-invite.php:169
 msgid "Not a recognized code. Please check the number."
-msgstr "Àkọsílẹ̀ tí a kò mọ̀ ni. Jọ̀wọ́ ṣàyẹ̀wò nọ́ńbà náà."
+msgstr "Kii ṣe koodu ti a mọ. Jọwọ ṣayẹwo nọmba naa."
 
 #: site/dashboard/dashboard.php:285
 msgid "You are not authorized to access this page"
-msgstr "O kò ní àṣẹ láti wọlé sí ojúewé yìí"
+msgstr "O ko ni aṣẹ lati wọle si oju-iwe yii"
 
 #: site/dashboard/dashboard.php:286
 msgid "There has been an error with your request"
-msgstr "Àṣìṣe ti wáyé nínú ìbéèrè rẹ"
+msgstr "Aṣiṣe ti wa pẹlu ibeere rẹ"
 
 #: site/dashboard/dashboard.php:287
 msgid ""
 "Thank you for your coaching request. Our team will be working to connect you "
 "with an available coach in your language and region."
 msgstr ""
-"Ẹ ṣeun fún ìkésíni yín pé kẹ́ ẹ wá máa kọ́ mi lẹ́kọ̀ọ́. Ẹgbẹ wa yoo ṣiṣẹ lati so "
-"ọ pọ pẹlu olukọni ti o wa ni ede rẹ ati agbegbe rẹ."
+"O ṣeun fun ibeere ikẹkọ rẹ. Ẹgbẹ wa yoo ṣiṣẹ lati so ọ pọ pẹlu olukọni ti o "
+"wa ni ede ati agbegbe rẹ."
 
 #: site/dashboard/dashboard.php:288
 msgid ""
 "Please watch for communication from your coach within the communication "
 "preference you indicated."
 msgstr ""
-"Jọwọ wo fun ibaraẹnisọrọ lati ọdọ olukọ rẹ laarin awọn ayanfẹ ibaraẹnisọrọ "
-"ti o tọka."
+"Jọwọ wo ibaraẹnisọrọ lati ọdọ olukọni rẹ laarin ayanfẹ ibaraẹnisọrọ ti o "
+"tọka."
 
 #: site/dashboard/dashboard.php:289
 msgid "100 Hour Map"
-msgstr "Ìtòlẹ́sẹẹsẹ Ọgọ́rùn-ún Wákàtí"
+msgstr "100 Wakati Map"
 
 #: site/dashboard/dashboard.php:290
 msgid "Training vision map"
-msgstr "Àwòrán ojú tí wọ́n fi ń dáni lẹ́kọ̀ọ́"
+msgstr "Ikẹkọ iran map"
 
 #: site/dashboard/dashboard.php:291
 msgid "Simple church planting map"
-msgstr "Àwòrán bí wọ́n ṣe ń gbìn ṣọ́ọ̀ṣì"
+msgstr "Simple ijo gbingbin map"
 
 #: site/dashboard/dashboard.php:292
 msgid "No date"
-msgstr "Kò sí ọjọ́"
+msgstr "Ko si ọjọ"
 
 #: site/dashboard/dashboard.php:293 site/dashboard/wizard.php:215
 #: zume-training-system.php:357
 msgid "Whatsapp"
-msgstr "WhatsApp"
+msgstr "whatsapp"
 
 #: site/dashboard/dashboard.php:294 site/dashboard/wizard.php:216
 #: zume-training-system.php:358
 msgid "Signal"
-msgstr "Àmì"
+msgstr "Ifihan agbara"
 
 #: site/dashboard/dashboard.php:295 site/dashboard/wizard.php:217
 #: zume-training-system.php:359
@@ -4884,11 +4865,11 @@ msgstr "Telegram"
 
 #: site/dashboard/dashboard.php:296 site/dashboard/wizard.php:218
 msgid "Facebook Messenger"
-msgstr "Facebook Oníṣẹ"
+msgstr "Facebook ojiṣẹ"
 
 #: site/dashboard/dashboard.php:297 site/dashboard/wizard.php:312
 msgid "Clear"
-msgstr "Ko o"
+msgstr "Mu kuro"
 
 #: site/dashboard/dashboard.php:298 site/dashboard/wizard.php:313
 msgid "Today"
@@ -4960,8 +4941,7 @@ msgid ""
 "I will equip the following people to share their story and God‘s Story and "
 "make a List of 100 of the people in their relational network:"
 msgstr ""
-"Èmi yóò fi àwọn ènìyàn tó wà nísàlẹ̀ yìí ṣe ohun èlò láti sọ ìtàn wọn àti "
-"Ìtàn Ọlọ́run kí n sì ṣe àkójọ àwọn ènìyàn 100 tí ó wà nínú ìjùmọ̀ àjọṣepọ̀ wọn:"
+"Ma pese ero fun awon eniyan lati pin itan olohun ati lati ni ogorun eniyan:"
 
 #: site/dashboard/dashboard.php:319
 msgid ""
@@ -4978,8 +4958,7 @@ msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
 msgstr ""
-"Emi yoo pe awọn eniyan wọnyi lati jẹ apakan ti Ẹgbẹ Oludari ti emi yoo ṣe "
-"itọsọna:"
+"Emi yoo pe awọn eniyan wọnyi lati jẹ apakan ti Ẹgbe Aṣáájú ti Emi yoo darí:"
 
 #: site/dashboard/dashboard.php:322
 msgid ""
@@ -4989,7 +4968,7 @@ msgstr "Ma gba awon eyan niyanju lati mase idanileko Zume:"
 
 #: site/dashboard/dashboard.php:323
 msgid "Other commitments:"
-msgstr "Àwọn àdéhùn míràn:"
+msgstr "Olufaraji miran:"
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
@@ -5000,14 +4979,14 @@ msgctxt ""
 "This is the title for the screen where the application wizard has not been "
 "found"
 msgid "Bad Wizard"
-msgstr "Ògbóǹkangí Èṣù"
+msgstr "Oso buburu"
 
 #: site/dashboard/wizard.php:169
 msgctxt ""
 "This is some humourous text using a play on words as the application wizard "
 "sounds like the sorcerer type of wizard."
 msgid "You have fallen in with some very bad wizards!"
-msgstr "O ti bá àwọn ògbóǹkangí sọ̀rọ̀!"
+msgstr "O ti ṣubu pẹlu diẹ ninu awọn oṣó buburu pupọ!"
 
 #: site/dashboard/wizard.php:170
 msgid "Wizard is already completed"
@@ -5037,11 +5016,11 @@ msgstr "Pari"
 
 #: site/dashboard/wizard.php:177
 msgid "No locations found"
-msgstr "Kò sí àwọn ibi tí a rí"
+msgstr "Ko si awọn ipo ti a rii"
 
 #: site/dashboard/wizard.php:180
 msgid "Zúme Community"
-msgstr "Ìpínlẹ̀ Zúme"
+msgstr "Agbegbe Zúme"
 
 #: site/dashboard/wizard.php:181
 msgid ""
@@ -5075,13 +5054,13 @@ msgid ""
 "country, get reports of  progress, and get connected to online and face-to-"
 "face gatherings."
 msgstr ""
-"Wá àwọn mìíràn bíi tìẹ tí wọ́n fẹ́ rí i pé iṣẹ́ sísọni di ọmọ ẹ̀yìn ń lọ lọ́wọ́ "
-"lágbègbè wọn. Sọ ìrírí rẹ fún àwọn ẹlòmíràn, kó o sì kẹ́kọ̀ọ́ lọ́dọ̀ àwọn mìíràn "
-"tí wọ́n ń ṣàwárí àwọn nǹkan tuntun."
+"Gbọ awọn iroyin nipa ṣiṣe awọn ọmọ-ẹhin ni agbegbe rẹ ati orilẹ-ede rẹ ti o "
+"gbooro, gba awọn ijabọ ilọsiwaju, ki o si ni asopọ si ori ayelujara ati awọn "
+"apejọ oju-si-oju."
 
 #: site/dashboard/wizard.php:186
 msgid "Free Tools"
-msgstr "Àwọn irinṣẹ́ Ọ̀fẹ́"
+msgstr "Awọn irinṣẹ ọfẹ"
 
 #: site/dashboard/wizard.php:187
 msgid ""
@@ -5089,13 +5068,13 @@ msgid ""
 "area. Get a map to cast vision for saturating your city with multiplying "
 "disciples and churches."
 msgstr ""
-"Wá àwọn ohun èlò tí kò gba owó lọ́wọ́ láti tọpinpin iṣẹ́ sísọni di ọmọ-ẹ̀yìn àti "
-"gbígbé ìjọ kalẹ̀ ní àdúgbò rẹ. Gba àwòrán-àwòrán láti fi ìran hàn fún kíkó "
-"àwọn ọmọ-ẹ̀yìn àti àwọn ìjọ tó ń pọ̀ sí i kún ìlú rẹ."
+"Wọle si awọn irinṣẹ ọfẹ fun titọpa ṣiṣe ọmọ-ẹhin ati didasilẹ ile ijọsin ni "
+"agbegbe rẹ. Gba maapu kan lati sọ iran fun jijẹ ilu rẹ pẹlu awọn ọmọ-ẹhin ti "
+"n pọ si ati awọn ile ijọsin."
 
 #: site/dashboard/wizard.php:188
 msgid "Join for Free"
-msgstr "darapọ̀ fún ọ̀fẹ́"
+msgstr "Darapọ mọ Ọfẹ"
 
 #: site/dashboard/wizard.php:189
 msgid "Successfully joined community"
@@ -5104,11 +5083,11 @@ msgstr "Ni aṣeyọri darapọ mọ agbegbe"
 #: site/dashboard/wizard.php:190 site/dashboard/wizard.php:243
 #: site/dashboard/wizard.php:258 site/dashboard/wizard.php:265
 msgid "Something went wrong"
-msgstr "Nǹkan kan ò lọ bó ṣe yẹ"
+msgstr "Nnkan o lo daadaa"
 
 #: site/dashboard/wizard.php:195
 msgid "Complete your profile"
-msgstr "Ṣẹ̀kúnrẹ́rẹ́ àwòkọ rẹ"
+msgstr "Pari profaili rẹ"
 
 #: site/dashboard/wizard.php:199
 msgid "What is your name?"
@@ -5120,23 +5099,23 @@ msgstr "Kini nọmba foonu rẹ?"
 
 #: site/dashboard/wizard.php:201
 msgid "Phone number can only contain numbers, brackets and hyphens"
-msgstr "Nọmba tẹlifoonu le ni awọn nọmba nikan, awọn ibọwọ ati awọn hyphens"
+msgstr "Nọmba foonu le ni awọn nọmba nikan ninu, awọn biraketi ati awọn hyphens"
 
 #: site/dashboard/wizard.php:202
 msgid "What city do you live in?"
-msgstr "Ìlú wo lo ń gbé?"
+msgstr "Ilu wo ni o ngbe?"
 
 #: site/dashboard/wizard.php:203
 msgid "This is your approximate location."
-msgstr "Èyí ni ibi tí ẹ wà."
+msgstr "Eyi ni ipo isunmọ rẹ."
 
 #: site/dashboard/wizard.php:205 site/parts/footer.php:57
 msgid "Privacy Policy"
-msgstr "Ìlànà Ìpamọ́"
+msgstr "Asiri Afihan"
 
 #: site/dashboard/wizard.php:211
 msgid "What is your contact preference?"
-msgstr "Kí ni ohun tó o máa ń fẹ́ kí àwọn èèyàn bá ẹ sọ?"
+msgstr "Kini ayanfẹ olubasọrọ rẹ?"
 
 #: site/dashboard/wizard.php:213 zume-training-system.php:355
 msgid "Text"
@@ -5152,30 +5131,29 @@ msgstr "Bawo ni a ṣe le sin ọ?"
 
 #: site/dashboard/wizard.php:223
 msgid "Technical Assistance"
-msgstr "Ìrànlọ́wọ́ Onímọ̀ Ẹ̀rọ"
+msgstr "Imọ Iranlọwọ"
 
 #: site/dashboard/wizard.php:224
 msgid "Question about implementing the training"
-msgstr "Ìbéèrè nípa ìmúṣẹ ìdánilẹ́kọ̀ọ́ náà"
+msgstr "Ibeere nipa imuse ikẹkọ naa"
 
 #: site/dashboard/wizard.php:225
 msgid "Question about the content"
-msgstr "Ìbéèrè nípa ohun tó wà nínú ìwé náà"
+msgstr "Ibeere nipa akoonu"
 
 #: site/dashboard/wizard.php:226
 msgid "Help with what to do after starting a group"
-msgstr "Ìrànlọ́wọ́ nípa ohun tí o lè ṣe lẹ́yìn tí o bá dá ẹgbẹ́ sílẹ̀"
+msgstr "Iranlọwọ pẹlu kini lati ṣe lẹhin ti o bẹrẹ ẹgbẹ kan"
 
 #: site/dashboard/wizard.php:228
 msgid "Please give a response to this question"
-msgstr "Jọwọ fun ni idahun si ibeere yii"
+msgstr "Jọwọ fun idahun si ibeere yii"
 
 #: site/dashboard/wizard.php:229
 msgid ""
 "Request Submitted, we will do our best to connect you with a coach near you."
 msgstr ""
-"A ó ṣe gbogbo ohun tí a bá lè ṣe láti so yín pọ̀ pẹ̀lú ọkọ̀ ojú irin tó wà "
-"nítòsí yín."
+"Ibere ti a fi silẹ, a yoo ṣe ipa wa lati sopọ mọ ọ pẹlu ẹlẹsin nitosi rẹ."
 
 #: site/dashboard/wizard.php:230
 msgid "Sorry. We were unable to submit your request. Please try again later."
@@ -5187,11 +5165,11 @@ msgstr "O ti beere fun olukọni tẹlẹ"
 
 #: site/dashboard/wizard.php:232
 msgid "Error connecting with a coach"
-msgstr "aṣiṣe asopọ pẹlu oludari"
+msgstr "Aṣiṣe asopọ pẹlu ẹlẹsin kan"
 
 #: site/dashboard/wizard.php:233
 msgid "Connecting you to a Coach"
-msgstr "Dari mi si odo Oludari Kan"
+msgstr "Nsopọ rẹ si Olukọni kan"
 
 #: site/dashboard/wizard.php:234 site/dashboard/wizard.php:240
 #: site/dashboard/wizard.php:255 site/dashboard/wizard.php:262
@@ -5204,16 +5182,16 @@ msgstr "Eto Ijọpọ"
 
 #: site/dashboard/wizard.php:241 site/dashboard/wizard.php:329
 msgid "The training link is broken. Please try again."
-msgstr "Ìjùmọ̀sọ̀rọ̀ ìdánilẹ́kọ̀ọ́ náà ti bà jẹ́. Jọ̀wọ́, tún gbìyànjú lẹ́ẹ̀kan sí i."
+msgstr "Ọna asopọ ikẹkọ ti bajẹ. Jọwọ gbiyanju lẹẹkansi."
 
 #: site/dashboard/wizard.php:242
 #, php-format
 msgid "Successfully joined training %s"
-msgstr "Ó ti kẹ́sẹ járí nínú ìdánilẹ́kọ̀ọ́ %s"
+msgstr "Ni aṣeyọri darapọ mọ ikẹkọ %s"
 
 #: site/dashboard/wizard.php:245
 msgid "Next Session Date"
-msgstr "Ọjọ́ Ìpàdé Tó Ń Bẹ̀ Síwájú"
+msgstr "Next Ikoni Ọjọ"
 
 #: site/dashboard/wizard.php:247
 msgid "Start Time"
@@ -5221,7 +5199,7 @@ msgstr "Akoko Ibẹrẹ"
 
 #: site/dashboard/wizard.php:251
 msgid "There are currently no public trainings available."
-msgstr "Ní báyìí, kò sí ìdánilẹ́kọ̀ọ́ fún gbogbo èèyàn."
+msgstr "Lọwọlọwọ ko si awọn ikẹkọ gbogbo eniyan ti o wa."
 
 #: site/dashboard/wizard.php:254
 msgid "Connecting with friend"
@@ -5246,7 +5224,7 @@ msgstr "Ọna asopọ ayẹwo ti bajẹ. Jọwọ gbiyanju lẹẹkansi."
 
 #: site/dashboard/wizard.php:264
 msgid "Successfully checked in"
-msgstr "Ìforúkọsílẹ̀ ní àṣeyọrí"
+msgstr "Ti ṣayẹwo ni aṣeyọri"
 
 #: site/dashboard/wizard.php:269
 msgid "Create a training group"
@@ -5254,31 +5232,31 @@ msgstr "Ṣẹda ẹgbẹ ikẹkọ"
 
 #: site/dashboard/wizard.php:270
 msgid "Join a public training group"
-msgstr "Darapọ̀ mọ́ ẹgbẹ́ ìdánilẹ́kọ̀ọ́ kan"
+msgstr "Darapọ mọ ẹgbẹ ikẹkọ gbogbo eniyan"
 
 #: site/dashboard/wizard.php:271
 msgid "Skip for now"
-msgstr "Yẹra fún àkókò yìí"
+msgstr "Rekọja fun bayi"
 
 #: site/dashboard/wizard.php:272
 msgid "Choose your course format"
-msgstr "Yan ọna kika ẹkọ rẹ"
+msgstr "Yan ọna kika iṣẹ rẹ"
 
 #: site/dashboard/wizard.php:273
 msgid "1 hour (20 sessions)"
-msgstr "Wákàtí kan (ati ogun ìtòlẹ́sẹẹsẹ)"
+msgstr "wakati 1 (awọn akoko 20)"
 
 #: site/dashboard/wizard.php:274
 msgid "2 hour (10 sessions)"
-msgstr "Wákàtí méjì (ìtòlẹ́sẹẹsẹ mewa)"
+msgstr "wakati 2 (awọn akoko 10)"
 
 #: site/dashboard/wizard.php:275
 msgid "4 hour (5 sessions)"
-msgstr "Wákàtí mẹ́rin (ìtòlẹ́sẹẹsẹ maarun)"
+msgstr "Wakati 4 (awọn akoko 5)"
 
 #: site/dashboard/wizard.php:276
 msgid "Would you like to schedule your training?"
-msgstr "Ṣe o fẹ lati ṣeto idanileko rẹ?"
+msgstr "Ṣe o fẹ lati ṣeto ikẹkọ rẹ?"
 
 #: site/dashboard/wizard.php:277 site/pages/_strings-mobile-pwa.php:10
 msgid "Yes"
@@ -5290,15 +5268,15 @@ msgstr "Rara"
 
 #: site/dashboard/wizard.php:279
 msgid "What time of day?"
-msgstr "Àkókò wo ni?"
+msgstr "Akoko ti ọjọ?"
 
 #: site/dashboard/wizard.php:280
 msgid "Morning"
-msgstr "owuro"
+msgstr "Owurọ"
 
 #: site/dashboard/wizard.php:281
 msgid "Afternoon"
-msgstr "osan"
+msgstr "Friday"
 
 #: site/dashboard/wizard.php:282
 msgid "Evening"
@@ -5318,11 +5296,11 @@ msgstr "Ekan laarin ose"
 
 #: site/dashboard/wizard.php:286
 msgid "Twice a month"
-msgstr "Lẹẹmeji losu kan"
+msgstr "Lẹẹmeji osu kan"
 
 #: site/dashboard/wizard.php:287
 msgid "Once a month"
-msgstr "Lẹẹkan losu kan"
+msgstr "Lẹẹkan osu kan"
 
 #: site/dashboard/wizard.php:288
 msgid "Other"
@@ -5330,11 +5308,11 @@ msgstr "Miran"
 
 #: site/dashboard/wizard.php:289
 msgid "What is the name of the training group?"
-msgstr "Kí ni orúkọ ẹgbẹ́ ìdánilẹ́kọ̀ọ́ náà?"
+msgstr "Kini orukọ ẹgbẹ ikẹkọ naa?"
 
 #: site/dashboard/wizard.php:290
 msgid "My first training group"
-msgstr "Àwọn tó kọ́kọ́ kọ́ mi lẹ́kọ̀ọ́"
+msgstr "Ẹgbẹ ikẹkọ akọkọ mi"
 
 #: site/dashboard/wizard.php:291
 msgid "When do you plan to start?"
@@ -5346,17 +5324,17 @@ msgstr "Nibo ni o gbero lati pade?"
 
 #: site/dashboard/wizard.php:293
 msgid "This could be online or in person"
-msgstr "Ó lè jẹ́ orí ayélujára tàbí ní tààràtà"
+msgstr "Eyi le jẹ lori ayelujara tabi ni eniyan"
 
 #: site/dashboard/wizard.php:294
 msgid "Review Schedule"
-msgstr "Àtòjọ Àtúnyẹ̀wò"
+msgstr "Atunwo Iṣeto"
 
 #: site/dashboard/wizard.php:295
 #, php-format
 msgctxt "1 of 10 selected"
 msgid "%1$s of %2$s selected"
-msgstr "%1$s ti %2$s ti a ti yan"
+msgstr "%1$s nipa %2$s tí a yàn"
 
 #: site/dashboard/wizard.php:296
 msgctxt "All 10 sessions scheduled"
@@ -5381,15 +5359,15 @@ msgstr "Ṣeto %s"
 
 #: site/dashboard/wizard.php:301
 msgid "Group Name"
-msgstr "Orúkọ Ẹgbẹ́"
+msgstr "Oruko Egbe"
 
 #: site/dashboard/wizard.php:302
 msgid "Group name"
-msgstr "Orukọ ẹgbẹ"
+msgstr "Oruko Egbe"
 
 #: site/dashboard/wizard.php:303
 msgid "Start Date"
-msgstr "Ọjọ́ Ìbẹ̀rẹ̀"
+msgstr "Ọjọ Ibẹrẹ"
 
 #: site/dashboard/wizard.php:309
 msgid "Date"
@@ -5397,11 +5375,11 @@ msgstr "Ọjọ"
 
 #: site/dashboard/wizard.php:310
 msgid "Summary"
-msgstr "Àkópọ̀"
+msgstr "Lakotan"
 
 #: site/dashboard/wizard.php:311
 msgid "Clear Calendar"
-msgstr "Àwọn Kálẹ́ńdà Tí Kò Léwu"
+msgstr "Ko Kalẹnda kuro"
 
 #: site/dashboard/wizard.php:314
 msgid "Add"
@@ -5409,36 +5387,36 @@ msgstr "Fikun"
 
 #: site/dashboard/wizard.php:315
 msgid "Add some dates to your schedule"
-msgstr "Fi àwọn ọjọ́ kan kún ìṣètò rẹ"
+msgstr "Ṣafikun awọn ọjọ diẹ si iṣeto rẹ"
 
 #: site/dashboard/wizard.php:316
 msgid "Change"
-msgstr "Ìyípadà"
+msgstr "Yipada"
 
 #: site/dashboard/wizard.php:320
 msgid "Invite your friends to join your training"
-msgstr "Pe àwọn ọ̀rẹ́ rẹ láti dara pọ̀ mọ́ ìdánilẹ́kọ̀ọ́ rẹ"
+msgstr "Pe awọn ọrẹ rẹ lati darapọ mọ ikẹkọ rẹ"
 
 #: site/dashboard/wizard.php:321
 msgid ""
 "Share the invite or link below with your friends so that they can join your "
 "training."
 msgstr ""
-"Pín ìkésíni tàbí ìjápọ̀ tó wà nísàlẹ̀ yìí pẹ̀lú àwọn ọ̀rẹ́ rẹ kí wọ́n lè dara pọ̀ "
-"mọ́ ìdánilẹ́kọ̀ọ́ rẹ."
+"Pin ifiwepe tabi ọna asopọ ni isalẹ pẹlu awọn ọrẹ rẹ ki wọn le darapọ mọ "
+"ikẹkọ rẹ."
 
 #: site/dashboard/wizard.php:322
 msgid "Join my zume plan"
-msgstr "Darapọ̀ mọ́ ètò ìyípadà mi"
+msgstr "Darapọ mọ eto zume mi"
 
 #: site/dashboard/wizard.php:323
 #, php-format
 msgid "%s is inviting you to a Zume Training Group"
-msgstr "%s ń pè ọ́ sí Ìjọ́ Ìdánilẹ́kọ̀ọ́ Zume"
+msgstr "%s n pe ọ si Ẹgbẹ Ikẹkọ Zume kan"
 
 #: site/dashboard/wizard.php:330
 msgid "Copy Invite"
-msgstr "Ṣe Àdàkọ Ìkésíni"
+msgstr "Daakọ ifiwepe"
 
 #: site/login/login-template.php:68
 msgid ""
@@ -5517,7 +5495,7 @@ msgstr "Ọrọ aṣina"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
-msgstr "Jọwọ yan ọ̀rọ̀-ìfipamọ́ tó lágbára. Òun yìí ò lágbára tó."
+msgstr "Jọwọ yan ọrọ igbaniwọle to lagbara. Eyi jẹ alailagbara pupọ."
 
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:465 site/login/login-template.php:466
@@ -5545,15 +5523,15 @@ msgstr "Tabi"
 
 #: site/login/login-template.php:415
 msgid "Register with Email"
-msgstr "Forúkọsílẹ̀ pẹ̀lú Imeeli"
+msgstr "Forukọsilẹ pẹlu Imeeli"
 
 #: site/login/login-template.php:453
 msgid "Badly formatted email address"
-msgstr "Adirẹsi imeeli ti a ṣe ni ọna kika ti ko dara"
+msgstr "Adirẹsi imeeli ti a ṣe akoonu ti ko dara"
 
 #: site/login/login-template.php:460
 msgid "Password is not strong enough"
-msgstr "Ọ̀rọ̀-ìfipamọ́ kò lágbára tó"
+msgstr "Ọrọigbaniwọle ko lagbara to"
 
 #: site/login/login-template.php:472
 msgid "There are some errors in your form."
@@ -5565,7 +5543,7 @@ msgstr "Igbese olumulo jerisi."
 
 #: site/login/login-template.php:638
 msgid "Welcome back!"
-msgstr "A kí yín káàbọ̀!"
+msgstr "Ku aabọ pada!"
 
 #: site/login/login-template.php:645 site/login/login-template.php:694
 #: site/login/login-template.php:769 site/login/login.php:31
@@ -5575,7 +5553,7 @@ msgstr "Wo le"
 
 #: site/login/login-template.php:668
 msgid "or sign in with email"
-msgstr "tàbí wọlé pẹ̀lú imeeli"
+msgstr "tabi wọle pẹlu imeeli"
 
 #: site/login/login-template.php:674
 msgid "Username or password does not match. Try again."
@@ -5587,7 +5565,7 @@ msgstr "Ranti mi"
 
 #: site/login/login-template.php:745
 msgid "Don't have an account?"
-msgstr "Ṣé o kò ní àkọọ́lẹ̀?"
+msgstr "Ṣe ko ni akọọlẹ kan?"
 
 #: site/login/login-template.php:757
 msgid "Lost your password?"
@@ -5595,11 +5573,11 @@ msgstr "Oro isina sonu?"
 
 #: site/login/login-template.php:768
 msgid "Already have an account?"
-msgstr "Ṣé o ti ní àkáǹtì?"
+msgstr "Ti ni iroyin tẹlẹ?"
 
 #: site/login/login-template.php:824
 msgid "Username or Email Address"
-msgstr "Orukọ Olumulo tabi Adirẹsi Imeeli"
+msgstr "Orukọ olumulo tabi Adirẹsi imeeli"
 
 #: site/login/login-template.php:827
 msgid "Log In"
@@ -5685,7 +5663,7 @@ msgstr "Fi sori ẹrọ"
 
 #: site/pages/_strings-mobile-pwa.php:39
 msgid "This app can be installed to your device. Click to install this app."
-msgstr "A lè fi ohun èlò yìí sínú ẹ̀rọ rẹ. Tẹ lati fi ohun elo yii sori ẹrọ."
+msgstr "O le fi ohun elo yii sori ẹrọ rẹ. Tẹ lati fi ohun elo yii sori ẹrọ."
 
 #: site/pages/_strings-mobile-pwa.php:40
 msgid ""
@@ -5724,7 +5702,7 @@ msgstr "Ikẹkọ Zúme wa lati kun agbaye pẹlu awọn ọmọ-ẹhin isodipup
 
 #: site/pages/about.php:84
 msgid "What is Zúme Training?"
-msgstr "Kí ni Ìdánilẹ́kọ̀ọ́ Zúme?"
+msgstr "Kini Ikẹkọ Zúme?"
 
 #: site/pages/about.php:88
 msgid ""
@@ -5733,7 +5711,11 @@ msgid ""
 "amount of flour, permeating the entire dough. This parable illustrates how "
 "ordinary people, using ordinary resources, can have exponential impact for "
 "the Kingdom of God."
-msgstr "Itumo Zume ni iwukara ni ede Giriki."
+msgstr ""
+"Zúme, ọ̀rọ̀ Gíríìkì náà fún ‘ìwúkàrà,’ ní ìtumọ̀ pàtàkì kan. Ni Matteu 13:33 , "
+"Jesu fi ijọba ọrun wé iwukara ti a dapọ mọ iye iyẹfun titobi pupọ, ti o kun "
+"gbogbo iyẹfun naa. Àkàwé yìí ṣàkàwé bí àwọn gbáàtúù, ní lílo àwọn ohun "
+"àmúṣọrọ̀ lásán, ṣe lè ní ipa pàtàkì fún Ìjọba Ọlọ́run."
 
 #: site/pages/about.php:97
 msgid ""
@@ -5774,10 +5756,10 @@ msgid ""
 "formal statement of faith. All involved, however, would agree with the "
 "Lausanne Covenant."
 msgstr ""
-"Ti a ṣe ifilọlẹ ni Kínní 14, 2017, nipasẹ ifowosowopo ijọba, Ikẹkọ Zúme jẹ "
-"ipilẹṣẹ ṣiṣi laisi iṣakoso agbari osise tabi nkan ti o ya sọtọ. Níwọ̀n bó ti "
-"jẹ́ pé kì í ṣe àjọ kan ló ń darí Zúme, kò sí ìpolongo ìgbàgbọ́ kankan. Àmọ́ ṣá "
-"o, gbogbo àwọn tó wà nídìí ọ̀ràn náà ló máa fara mọ́ Àdéhùn Lausanne."
+"Ti ṣe ifilọlẹ ni Oṣu Kẹta Ọjọ 14, Ọdun 2017, nipasẹ ifowosowopo Ijọba, Ikẹkọ "
+"Zúme ṣi jẹ ipilẹṣẹ ṣiṣi laisi iṣakoso eto iṣe deede tabi nkan lọtọ. Níwọ̀n bó "
+"ti jẹ́ pé ètò àjọ kan kọ́ ló ń darí Zúme, kò sí gbólóhùn tó jẹ́ ti ìgbàgbọ́. "
+"Gbogbo awọn ti o kan, sibẹsibẹ, yoo gba pẹlu Majẹmu Lausanne."
 
 #: site/pages/about.php:117
 msgid ""
@@ -5799,7 +5781,7 @@ msgstr ""
 
 #: site/pages/about.php:125
 msgid "The vision of Zúme has two parts:"
-msgstr "Ìran tí Zúme rí ní apá méjì:"
+msgstr "Iran ti Zúme ni awọn ẹya meji:"
 
 #: site/pages/about.php:129
 msgid "1 Training"
@@ -5807,15 +5789,15 @@ msgstr "1 Ikẹkọ"
 
 #: site/pages/about.php:133
 msgid "Part 1:"
-msgstr "Apa Kini:"
+msgstr "Apa 1:"
 
 #: site/pages/about.php:134
 msgid ""
 "To train at least one disciple maker for every 5,000 people in North America "
 "and one disciple maker for every 50,000 people globally."
 msgstr ""
-"Lati ṣe ikẹkọ o kere ju ọmọ-ẹhin kan fun gbogbo eniyan ẹgbẹ̀ẹ́dọ́gbọ̀n ni Ariwa "
-"America ati oluṣe ọmọ-ẹhin kan fun gbogbo eniyan egbaa-meeedogbon ni agbaye."
+"Lati ṣe ikẹkọ o kere ju ọmọ-ẹhin kan fun gbogbo eniyan 5,000 ni Ariwa "
+"America ati oluṣe ọmọ-ẹhin kan fun gbogbo eniyan 50,000 ni agbaye."
 
 #: site/pages/about.php:140
 msgid "2 Simple Churches"
@@ -5876,7 +5858,8 @@ msgstr ""
 msgid ""
 "%1$sGroup Discussions%2$s help your group think through what is being shared."
 msgstr ""
-"%1$sÌjíròrò Ẹgbẹ́ %2$s ran ẹgbẹ́ rẹ lọ́wọ́ láti ronú nípa ohun tí wọ́n ń pín."
+"%1$s Awọn ijiroro ẹgbẹ%2$s ṣe iranlọwọ fun ẹgbẹ rẹ lati ronu nipasẹ ohun ti "
+"o pin."
 
 #: site/pages/about.php:176 site/pages/home.php:219
 #, php-format
@@ -5884,7 +5867,8 @@ msgid ""
 "%1$sSimple Exercises%2$s help your group put what you are learning into "
 "practice."
 msgstr ""
-"%1$s Ìdánwò Rọrun %2$s ran àwùjọ rẹ lọ́wọ́ láti fi ohun tí ẹ̀ ń kọ́ sílò."
+"%1$s Awọn adaṣe ti o rọrun%2$s ṣe iranlọwọ fun ẹgbẹ rẹ lati fi ohun ti o nkọ "
+"sinu adaṣe."
 
 #: site/pages/about.php:180 site/pages/home.php:223
 #, php-format
@@ -5892,8 +5876,8 @@ msgid ""
 "%1$sSession Challenges%2$s help your group keep learning and growing between "
 "sessions."
 msgstr ""
-"%1$sÌpèníjà Ìpàdé%2$s ran àwùjọ rẹ lọ́wọ́ láti máa kẹ́kọ̀ọ́ kí wọ́n sì máa dàgbà "
-"láàárín ìpàdé."
+"%1$s Awọn italaya Ikoni%2$s ṣe iranlọwọ fun ẹgbẹ rẹ lati tẹsiwaju ikẹkọ ati "
+"dagba laarin awọn akoko."
 
 #: site/pages/about.php:199
 msgid "Before you start."
@@ -5934,7 +5918,7 @@ msgstr ""
 
 #: site/pages/about.php:221
 msgid "What's required"
-msgstr "An beere oro igbaniwole"
+msgstr "Ohun ti a beere"
 
 #: site/pages/about.php:224
 msgid "Needed for the training:"
@@ -6000,7 +5984,7 @@ msgstr "Ṣe o ṣetan? Forukọsilẹ loni."
 
 #: site/pages/about.php:272 site/pages/home.php:109
 msgid "Register Free"
-msgstr "Forukọsilẹ fun ọfẹ"
+msgstr "Forukọsilẹ Free"
 
 #: site/pages/checkin.php:82 site/pages/friend-invite.php:72
 msgid "Please enter a friend code."
@@ -6026,15 +6010,15 @@ msgstr "yan akoko lati wo"
 #: site/pages/checkin.php:250 site/pages/training.php:159
 #: site/pages/training.php:210
 msgid "Training Schedules"
-msgstr "Ikeko Omo"
+msgstr "Awọn iṣeto ikẹkọ"
 
 #: site/pages/checkin.php:254 site/pages/training.php:217
 msgid "10 Sessions"
-msgstr "Igba"
+msgstr "10 Awọn akoko"
 
 #: site/pages/checkin.php:258 site/pages/training.php:229
 msgid "20 Sessions"
-msgstr "Igba"
+msgstr "20 Awọn akoko"
 
 #: site/pages/checkin.php:262 site/pages/training.php:241
 msgid "Intensive"
@@ -6056,11 +6040,11 @@ msgstr "Wo Gbogbo Awọn anfani fifunni"
 
 #: site/pages/faq.php:81
 msgid "FAQ"
-msgstr "Awon ibeere ti awon eniyan saaba ma n beere"
+msgstr "FAQ"
 
 #: site/pages/faq.php:83 site/profile/profile.php:157
 msgid "User Profile"
-msgstr "Profaili Re"
+msgstr "Profaili olumulo"
 
 #: site/pages/follow-jesus.php:30 site/pages/follow-jesus.php:139
 #: site/parts/footer.php:17
@@ -6207,7 +6191,7 @@ msgstr "Kini ti awọn ọrẹ, ẹbi, ati awọn miiran bẹrẹ tẹle Jesu p�
 
 #: site/pages/friend-invite.php:28 site/pages/friend-invite.php:164
 msgid "Friend Invitation"
-msgstr "Ifiwepe gba"
+msgstr "Ifiwepe Ọrẹ"
 
 #: site/pages/friend-invite.php:166 site/pages/plan-invite.php:172
 msgid "Use the code your friend sent you."
@@ -6248,17 +6232,19 @@ msgstr "Ko si iye owo"
 #: site/pages/training.php:130 site/pages/training.php:137
 #: site/pages/training.php:138
 msgid "Join a training group"
-msgstr "Gbalejo ikeko kan"
+msgstr "Darapọ mọ ẹgbẹ ikẹkọ kan"
 
 #: site/pages/get-a-coach.php:91
 msgid ""
 "Our network of volunteer coaches are not paid, but are driven rather by a "
 "passion for loving God, loving others, and obeying the Great Commission."
-msgstr "Netiwoki Atunniwa."
+msgstr ""
+"Nẹtiwọọki wa ti awọn olukọni oluyọọda ko ni isanwo, ṣugbọn a ṣafẹri kuku "
+"nipasẹ itara fun ifẹ Ọlọrun, nifẹ awọn miiran, ati igboran si Igbimọ Nla naa."
 
 #: site/pages/get-a-coach.php:95
 msgid "Localized"
-msgstr "Agbegbe"
+msgstr "Ti agbegbe"
 
 #: site/pages/get-a-coach.php:98
 msgid ""
@@ -6275,7 +6261,7 @@ msgstr "Ti ni iriri"
 #: site/pages/get-a-coach.php:103 site/pages/home.php:263
 #: site/pages/training.php:146
 msgid "Join a training"
-msgstr "Gbalejo ikeko kan"
+msgstr "Darapọ mọ ikẹkọ kan"
 
 #: site/pages/home.php:81
 msgid "45+"
@@ -6299,7 +6285,7 @@ msgstr "Ti ara ẹni irọrun"
 
 #: site/pages/home.php:133
 msgid "Practice-Oriented"
-msgstr "ÌSE Ṣiṣẹ - Awọn aaye Mẹrin"
+msgstr "Iwa-Oorun"
 
 #: site/pages/home.php:134
 msgid "32 Concepts and Skills"
@@ -6307,7 +6293,7 @@ msgstr "32 Agbekale ati ogbon"
 
 #: site/pages/home.php:135
 msgid "20 hours of Training"
-msgstr "Gbalejo ikeko kan"
+msgstr "Awọn wakati 20 ti Ikẹkọ"
 
 #: site/pages/home.php:142
 msgid "Free. Anytime. Anywhere."
@@ -6319,7 +6305,7 @@ msgstr "Gba oye sinu ..."
 
 #: site/pages/home.php:151
 msgid "Being A Disciple"
-msgstr "Omo eyin ni Duck"
+msgstr "Jije Ọmọ-ẹhin"
 
 #: site/pages/home.php:153
 msgid "What's a Disciple?"
@@ -6331,7 +6317,7 @@ msgstr "Kini Ijo kan?"
 
 #: site/pages/home.php:155
 msgid "Keys to Spiritual Growth"
-msgstr "Ee Mi Mimis"
+msgstr "Awọn bọtini si Idagbasoke Ẹmi"
 
 #: site/pages/home.php:156
 msgid "Personal Bible Study"
@@ -6347,15 +6333,15 @@ msgstr "Agbara Igbagbo Onigboran"
 
 #: site/pages/home.php:165
 msgid "Making Disciples"
-msgstr "Omo eyin ni Duck"
+msgstr "Ṣiṣe Awọn ọmọ-ẹhin"
 
 #: site/pages/home.php:167
 msgid "Sharing God's Story"
-msgstr "Gbiyanju lati pin oro Idupe"
+msgstr "Pínpín Ìtàn Ọlọrun"
 
 #: site/pages/home.php:168
 msgid "Telling Your Story"
-msgstr "Asiwaju rẹ Ẹgbẹ"
+msgstr "Sọ Itan Rẹ"
 
 #: site/pages/home.php:169
 msgid "Engaging Seekers"
@@ -6363,15 +6349,15 @@ msgstr "Olukoni Wiwa"
 
 #: site/pages/home.php:170
 msgid "Vision Casting Multiplication"
-msgstr "Wiwo Iran si Nla Ibukun Nla julọ"
+msgstr "Iran Simẹnti isodipupo"
 
 #: site/pages/home.php:171
 msgid "Leading a Simple Church"
-msgstr "2 Awọn Ijo ti o rọrun"
+msgstr "Asiwaju a Rọrun Ijo"
 
 #: site/pages/home.php:172
 msgid "Training Others"
-msgstr "Ikẹkọ"
+msgstr "Ikẹkọ Awọn miiran"
 
 #: site/pages/home.php:177
 msgid "I'm Ready!"
@@ -6383,11 +6369,11 @@ msgstr "Awọn eniyan lasan. Awọn Igbesẹ Rọrun."
 
 #: site/pages/home.php:240
 msgid "More about zume"
-msgstr "Sewadi die sii nipa Zume"
+msgstr "Diẹ ẹ sii nipa zume"
 
 #: site/pages/home.php:246 site/pages/training.php:129
 msgid "Create your own training group"
-msgstr "Seda akojo re"
+msgstr "Ṣẹda ẹgbẹ ikẹkọ tirẹ"
 
 #: site/pages/home.php:249 site/pages/training.php:132
 msgid ""
@@ -6399,7 +6385,7 @@ msgstr ""
 
 #: site/pages/home.php:251 site/pages/training.php:134
 msgid "Create"
-msgstr "Eto Losoosu"
+msgstr "Ṣẹda"
 
 #: site/pages/home.php:257 site/pages/training.php:140
 msgid ""
@@ -6411,7 +6397,7 @@ msgstr ""
 
 #: site/pages/home.php:262 site/pages/training.php:145
 msgid "Request a coach"
-msgstr "Wa Oluko"
+msgstr "Beere fun olukọni"
 
 #: site/pages/home.php:265 site/pages/training.php:148
 msgid ""
@@ -6423,7 +6409,7 @@ msgstr ""
 
 #: site/pages/home.php:267 site/pages/training.php:150
 msgid "Get Help"
-msgstr "Egba Mi O"
+msgstr "Gba Iranlọwọ"
 
 #: site/pages/home.php:289
 msgid "Real people ... real stories."
@@ -6500,11 +6486,11 @@ msgstr "Idana ifọwọ"
 
 #: site/pages/messages.php:229
 msgid "Friend"
-msgstr "Adiresi Olumulo"
+msgstr "Ọrẹ"
 
 #: site/pages/mobile-app.php:28 site/pages/mobile-app.php:130
 msgid "Zúme Training App"
-msgstr "Ikẹkọ Zume"
+msgstr "Ohun elo Ikẹkọ Zúme"
 
 #: site/pages/mobile-app.php:128
 msgid "Empowering Disciples. Anytime... Anywhere with the Zúme App."
@@ -6529,7 +6515,7 @@ msgstr "Ikẹkọ ni kikun laisi intanẹẹti ti o nilo"
 
 #: site/pages/mobile-app.php:155
 msgid "Download the course and video content to your phone"
-msgstr "Ṣe igbasilẹ iṣẹ-ẹkọ ati akoonu fidio si foonu rẹ"
+msgstr "Ṣe igbasilẹ ikẹkọ ati akoonu fidio si foonu rẹ"
 
 #: site/pages/mobile-app.php:156
 msgid "Great for areas where internet access is restricted or limited"
@@ -6616,7 +6602,7 @@ msgstr "A tun gba alaye lati wole."
 msgid ""
 "We also track your progress through the training course and through site "
 "usage."
-msgstr "A tun da orin ilosiwaju nipase ikeko to daju."
+msgstr "A tun tọpa ilọsiwaju rẹ nipasẹ iṣẹ ikẹkọ ati nipasẹ lilo aaye."
 
 #: site/pages/privacy-policy.php:131
 msgid ""
@@ -6660,10 +6646,10 @@ msgid ""
 "information to perform a specific job (for example, web administrator or "
 "customer service) are granted access to personally identifiable information."
 msgstr ""
-"Lakoko ti a lo fifi ẹnọ kọ nkan lati daabobo alaye ifura ti a gberanṣẹ lori "
-"ayelujara, a tun daabobo alaye rẹ lori ayelujara. Awọn ọmọ ẹgbẹ ẹgbẹ ti o "
-"nilo alaye lati ṣe iṣẹ kan pato (fun apẹẹrẹ, alakoso wẹẹbu tabi iṣẹ alabara) "
-"ni a fun ni aye si alaye idanimọ tikalararẹ."
+"Bó tilẹ̀ jẹ́ pé a máa ń lo ìdìbò láti dáàbò bo ìsọfúnni tó ṣe kókó tí a fi "
+"ránṣẹ́ lórí ayélujára, a tún máa ń dáàbò bo ìsọfúnni rẹ nígbà tí o kò bá sí "
+"lórí ayélujára. Àwọn ọmọ ẹgbẹ tí wọ́n nílò ìsọfúnni náà láti ṣe iṣẹ́ kan pàtó "
+"nìkan ni wọ́n máa ń fún láyè láti rí ìsọfúnni tó lè dáni mọ̀."
 
 #: site/pages/privacy-policy.php:159
 msgid ""
@@ -6696,11 +6682,9 @@ msgid ""
 "serves to identify Users and remember their preferences, for the sole "
 "purpose of providing the service required by the User."
 msgstr ""
-"Lilo eyikeyi Awọn alaye ayelujara - tabi ti awọn irinṣẹ ipasẹ miiran - "
-"nipasẹ Ohun elo yii tabi nipasẹ awọn onihun ti awọn iṣẹ ẹnikẹta ti Ohun elo "
-"yii lo, ayafi ti o ba ṣalaye bibẹẹkọ, ṣe iranṣẹ lati ṣe idanimọ Awọn olumulo "
-"ati ranti awọn ifẹ wọn, fun idi kanṣo ti pese iṣẹ ti o nilo nipasẹ Olumulo "
-"naa."
+"Lilo eyikeyi ti Awọn kuki - tabi ti awọn irinṣẹ ipasẹ miiran - ayafi ti a sọ "
+"bibẹẹkọ, ṣiṣẹ lati ṣe idanimọ Awọn olumulo ati ranti awọn ayanfẹ wọn, fun "
+"idi kan ṣoṣo ti pese iṣẹ ti Olumulo nilo."
 
 #: site/pages/privacy-policy.php:176
 msgid "Your Access to and Control Over Information."
@@ -6728,7 +6712,7 @@ msgstr "Se oti pa data kankan re ninu eyi ta ni lowo wa."
 
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
-msgstr "Fi ifiyesi re han nipa lilo data re."
+msgstr "Ṣe afihan ibakcdun eyikeyi ti o ni nipa lilo data wa."
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
@@ -6752,7 +6736,7 @@ msgstr "Awọn orisun igbasilẹ lati ṣe iranlọwọ pẹlu ṣiṣe ikẹk�
 
 #: site/pages/resources.php:96
 msgid "Training Guidebook"
-msgstr "Idaraya Ikẹkọ"
+msgstr "Ikẹkọ Itọsọna"
 
 #: site/pages/resources.php:99
 msgid ""
@@ -6761,9 +6745,10 @@ msgid ""
 "of your hands. QR codes for every session give you access to all the video "
 "content as well!"
 msgstr ""
-"Ikẹkọ Zúme wa bayi ni iwe iṣẹ pipe. Gbogbo awọn imọran, awọn irinṣẹ, awọn "
-"ibeere ijiroro ati awọn italaya lati ikẹkọ ni bayi ni ọwọ ọwọ rẹ. Awọn koodu "
-"QR fun gbogbo igba fun ọ ni iraye si gbogbo akoonu fidio daradara!"
+"Ìdánilẹ́kọ̀ọ́ Zúme ti wà ní ìmúṣẹ báyìí gẹ́gẹ́ bí ìwé ìdánilẹ́kọ̀ọ́ kan. Gbogbo àwọn "
+"èrò, àwọn ohun èlò, àwọn ìbéèrè ìjíròrò àti àwọn ìpèníjà láti inú ìdánilẹ́kọ̀ọ́ "
+"náà wà ní ọwọ́ rẹ báyìí. Àkọsílẹ̀ QR fún ìtòlẹ́sẹẹsẹ kọ̀ọ̀kan fún ọ ní àyè láti "
+"wo gbogbo àwọn fídíò náà!"
 
 #: site/pages/resources.php:103
 msgid "Free Download (PDF)"
@@ -6771,7 +6756,7 @@ msgstr "Gbigbasilẹ Ọfẹ (PDF)"
 
 #: site/pages/resources.php:105
 msgid "Order print copy"
-msgstr "Paṣẹ ẹda ẹda"
+msgstr "Ẹ̀dà tí wọ́n fi ránṣẹ́"
 
 #: site/pages/resources.php:119
 msgid "Course Slides Online"
@@ -6787,7 +6772,7 @@ msgstr ""
 
 #: site/pages/share.php:29
 msgid "Links to share the concepts and tools of the zume training course"
-msgstr "Awọn ọna asopọ lati pin awọn imọran ati awọn irinṣẹ ti ikẹkọ ikẹkọ zume"
+msgstr "Àwọn ìjápọ̀ láti pín àwọn èròjà àti irinṣẹ́ ìdánilẹ́kọ̀ọ́ zume"
 
 #: site/pages/share.php:78
 msgid "Copy this link and send it to your friends."
@@ -6835,7 +6820,7 @@ msgstr ""
 
 #: site/pages/training.php:126
 msgid "Get started with Zúme Training"
-msgstr "Kaabo si eto Idanileko Zume!"
+msgstr "Bẹrẹ pẹlu Ikẹkọ Zúme"
 
 #: site/pages/training.php:156
 msgid "Course Overview"
@@ -6843,11 +6828,11 @@ msgstr "Akopọ Dajudaju"
 
 #: site/pages/training.php:158 site/pages/training.php:170
 msgid "Course Concepts"
-msgstr "Pari Ẹkọ Pari"
+msgstr "Awọn imọran dajudaju"
 
 #: site/pages/training.php:160 site/pages/training.php:255
 msgid "What is required?"
-msgstr "A ni lo emaili."
+msgstr "Kini o nilo?"
 
 #: site/pages/training.php:173
 msgid ""
@@ -6865,7 +6850,7 @@ msgstr "Awọn Ilana Ọmọ-ẹhin"
 
 #: site/pages/training.php:191
 msgid "Spiritual Practices"
-msgstr "Ee Mi Mimis"
+msgstr "Àwọn Ìṣe Ẹ̀mí"
 
 #: site/pages/training.php:224
 msgid ""
@@ -6899,11 +6884,11 @@ msgstr ""
 
 #: site/pages/training.php:256
 msgid "Needed for the course:"
-msgstr "Afe bere ekiko?"
+msgstr "Nilo fun ẹkọ naa:"
 
 #: site/pages/training.php:262
 msgid "NOT needed for the course:"
-msgstr "Afe bere ekiko?"
+msgstr "KO nilo fun ẹkọ naa:"
 
 #: site/pages/training.php:265
 msgid ""
@@ -6948,7 +6933,7 @@ msgstr "Kokoro"
 #: utilities/integrations/replace-placeholder.php:107
 #: utilities/integrations/replace-placeholder.php:108
 msgid "Check-in"
-msgstr "Akosile"
+msgstr "Wole sinu"
 
 #: site/parts/noscript.php:2
 msgid "Oops you have javascript turned off"
@@ -6964,7 +6949,7 @@ msgstr "Jọwọ mu JavaScript ṣiṣẹ lati lo oju-iwe yii"
 #: utilities/integrations/replace-placeholder.php:182
 #: utilities/integrations/replace-placeholder.php:183
 msgid "Update Communication Preferences"
-msgstr "Kini ilu tabi ilu tabi koodu ifiweranse rẹ?"
+msgstr "Ṣe imudojuiwọn Awọn ayanfẹ Ibaraẹnisọrọ"
 
 #: site/profile/communication-preferences.php:76
 msgid "Recieve emails for:"
@@ -6972,7 +6957,7 @@ msgstr "Gba awọn imeeli fun:"
 
 #: site/profile/communication-preferences.php:79
 msgid "Training session reminders"
-msgstr "Ikẹkọ"
+msgstr "Awọn olurannileti igba ikẹkọ"
 
 #: site/profile/communication-preferences.php:83
 msgid "Annual reporting reminders"
@@ -6980,7 +6965,7 @@ msgstr "Awọn olurannileti ijabọ ọdun"
 
 #: site/profile/communication-preferences.php:87
 msgid "Community updates"
-msgstr "Agbegbe"
+msgstr "Agbegbe awọn imudojuiwọn"
 
 #: site/profile/communication-preferences.php:91
 msgid "Encouragements"
@@ -6996,13 +6981,13 @@ msgid ""
 "small groups who follow Jesus. An online, in-life disciple making movement "
 "training"
 msgstr ""
-"Ikẹkọ Zúme jẹ iriri ori ayelujara ati iriri ti ara ẹni ti a ṣe apẹrẹ fun "
-"awọn ẹgbẹ kekere ti o tẹle Jesu lati kọ ẹkọ bi o ṣe le gbọràn si Igbimọ nla "
-"Rẹ ati ṣe awọn ọmọ-ẹhin ti o pọ si."
+"Zúme Training jẹ́ ìdánilẹ́kọ̀ọ́ orí ayélujára àti ìdánilẹ́kọ̀ọ́ nínú ìgbésí ayé tí "
+"a ṣe fún àwọn àwùjọ kéékèèké tí wọ́n ń tẹ̀lé Jésù. Ìdánilẹ́kọ̀ọ́ lórí Íńtánẹ́ẹ̀tì "
+"tó dá lórí sísọni dọmọ ẹ̀yìn"
 
 #: utilities/apis/connect-api.php:85
 msgid "your friend"
-msgstr "Profaili Re"
+msgstr "ore re"
 
 #: utilities/apis/connect-api.php:235
 msgid "the plan"
@@ -7010,11 +6995,11 @@ msgstr "ètò"
 
 #: utilities/apis/cta-api.php:140
 msgid "Register to start your training"
-msgstr "Afe bere ekiko?"
+msgstr "Forukọsilẹ lati bẹrẹ ikẹkọ rẹ"
 
 #: utilities/apis/cta-api.php:154
 msgid "Join Online Training"
-msgstr "Wo Gbogbo ikẹkọ"
+msgstr "Darapọ mọ Ikẹkọ Ayelujara"
 
 #: utilities/apis/cta-api.php:155
 msgid "Join the online training to learn more"
@@ -7022,7 +7007,7 @@ msgstr "Darapọ mọ ikẹkọ ori ayelujara lati kọ ẹkọ diẹ sii"
 
 #: utilities/apis/cta-api.php:169
 msgid "Joined Training!"
-msgstr "ikeeko ti o bere"
+msgstr "Darapọ mọ Ikẹkọ!"
 
 #: utilities/apis/cta-api.php:184
 msgid "Get a coach to help you on your journey"
@@ -7030,12 +7015,12 @@ msgstr "Gba olukọni lati ran ọ lọwọ lori irin-ajo rẹ"
 
 #: utilities/apis/cta-api.php:198
 msgid "Requested Coach!"
-msgstr "Wa Oluko"
+msgstr "Olukọni ti a beere!"
 
 #: utilities/apis/cta-api.php:199 utilities/apis/cta-api.php:213
 #: utilities/apis/cta-api.php:227 utilities/apis/cta-api.php:256
 msgid "Congratulations"
-msgstr "aseyori"
+msgstr "Oriire"
 
 #: utilities/apis/cta-api.php:212
 msgid "Connected to Coach!"
@@ -7047,7 +7032,7 @@ msgstr "Agbegbe"
 
 #: utilities/apis/cta-api.php:240 utilities/apis/cta-api.php:242
 msgid "Create a Training"
-msgstr "1 Ikẹkọ"
+msgstr "Ṣẹda Ikẹkọ"
 
 #: utilities/apis/cta-api.php:241
 msgid "Create a training to help you grow"
@@ -7055,7 +7040,7 @@ msgstr "Ṣẹda ikẹkọ lati ṣe iranlọwọ fun ọ lati dagba"
 
 #: utilities/apis/cta-api.php:255
 msgid "Created Training!"
-msgstr "Seda akojo re"
+msgstr "Ikẹkọ ti a ṣẹda!"
 
 #: utilities/apis/cta-api.php:286
 msgid "Set your profile to help others know you"
@@ -7063,11 +7048,11 @@ msgstr "Ṣeto profaili rẹ lati ṣe iranlọwọ fun awọn miiran lati mọ 
 
 #: utilities/apis/cta-api.php:300
 msgid "Profile Set"
-msgstr "Profaili"
+msgstr "Eto Profaili"
 
 #: utilities/apis/cta-api.php:314 utilities/apis/cta-api.php:316
 msgid "Create 3 Month Plan"
-msgstr "Eto Losoosu"
+msgstr "Ṣẹda Eto Osu 3"
 
 #: utilities/apis/cta-api.php:315
 msgid "Create a 3 month plan to help you grow"
@@ -7080,11 +7065,11 @@ msgstr "%s ṣiṣi silẹ"
 
 #: utilities/apis/cta-api.php:343
 msgid "3-Month Plan Created"
-msgstr "Eto Osu Meta"
+msgstr "3-osù Eto Ṣẹda"
 
 #: utilities/apis/cta-api.php:357 utilities/apis/cta-api.php:359
 msgid "Complete 3 Month Plan"
-msgstr "Eto Losoosu"
+msgstr "Eto Osu 3 Pari"
 
 #: utilities/apis/cta-api.php:358
 msgid "Complete your 3 month plan to help you grow"
@@ -7092,41 +7077,41 @@ msgstr "Pari ero oṣu mẹta rẹ lati ṣe iranlọwọ fun ọ lati dagba"
 
 #: utilities/apis/cta-api.php:372
 msgid "3 Month Plan Completed"
-msgstr "Eto Osu Meta"
+msgstr "Eto Osu 3 Ti Pari"
 
 #: utilities/apis/cta-api.php:417
 msgid "Join the community"
-msgstr "darapo mo Agbegbe"
+msgstr "Darapọ mọ agbegbe"
 
 #: utilities/apis/plans-api.php:122
 #, php-format
 msgctxt "My first training - username"
 msgid "My first training - %s"
-msgstr "ikeko mi akoko -%s"
+msgstr "Ikẹkọ akọkọ mi - %s"
 
 #: utilities/apis/plans-api.php:124
 #, php-format
 msgctxt "Training 2 - username"
 msgid "Training %1$d - %2$s"
-msgstr "Ìdánilẹ́kọ̀ọ́ %1$d - %2$s"
+msgstr "Ikẹkọ %1$d - %2$s"
 
 #: utilities/hooks/ipstack-admin-tab.php:47
 msgid "Ipstack"
-msgstr "Ipstack"
+msgstr "ipstack"
 
 #: utilities/hooks/ipstack-admin-tab.php:54
 msgid "IPStack"
-msgstr "IPStack"
+msgstr "iPStack"
 
 #: utilities/hooks/roles-and-permissions.php:56
 msgid "Porch Admin"
-msgstr "Ifuni"
+msgstr "Alabojuto iloro"
 
 #: utilities/integrations/replace-placeholder.php:86
 #: utilities/integrations/replace-placeholder.php:87
 #: utilities/integrations/replace-placeholder.php:88
 msgid "Join the Zúme Community"
-msgstr "darapo mon egbe zume"
+msgstr "Darapọ mọ Agbegbe Zúme"
 
 #: utilities/integrations/replace-placeholder.php:90
 #: utilities/integrations/replace-placeholder.php:91
@@ -7138,7 +7123,7 @@ msgstr "Dasibodu Zume"
 #: utilities/integrations/replace-placeholder.php:95
 #: utilities/integrations/replace-placeholder.php:96
 msgid "Zúme Online Training Groups"
-msgstr "egbe Ikẹkọ Zume ori afefe"
+msgstr "Awọn ẹgbẹ Ikẹkọ Ayelujara Zúme"
 
 #: utilities/integrations/replace-placeholder.php:118
 #: utilities/integrations/replace-placeholder.php:119
@@ -7160,7 +7145,7 @@ msgstr "Zúme Annual Iroyin"
 
 #: utilities/post-types/posttype-pieces.php:299
 msgid "Piece"
-msgstr "Oju-iwe nkan"
+msgstr "Nkan"
 
 #: zume-training-system.php:237
 msgid "Someone has requested a password reset for the following account:"
@@ -7194,15 +7179,15 @@ msgstr "[%s] Atunse Oro Isina"
 
 #: zume-training-system.php:289
 msgid "Profile Details"
-msgstr "Profaili"
+msgstr "Awọn alaye Profaili"
 
 #: zume-training-system.php:301
 msgid "User Email"
-msgstr "Imeeli"
+msgstr "Imeeli olumulo"
 
 #: zume-training-system.php:310
 msgid "User Phone"
-msgstr "Ero ibaraeni soro"
+msgstr "Foonu olumulo"
 
 #: zume-training-system.php:318
 msgid "User Timezone"
@@ -7218,7 +7203,7 @@ msgstr "Ede Ayanfẹ olumulo"
 
 #: zume-training-system.php:342
 msgid "User Preferred Email"
-msgstr "Imeeli"
+msgstr "Imeeli Ayanfẹ olumulo"
 
 #: zume-training-system.php:350
 msgid "Preferred Contact Methods"
