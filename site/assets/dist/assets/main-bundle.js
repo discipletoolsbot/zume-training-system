@@ -1112,6 +1112,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                                         <div>
                                             <h3 class="f-1 bold uppercase">${jsObject.translations.my_churches_locked}</h3>
                                             <p>${jsObject.translations.my_churches_locked_explanation}</p>
+                                            <p>${jsObject.translations.my_churches_locked_extra_explanation}</p>
                                         </div>
                                         <!-- This needs to change to open the join community wizard instead -->
                                         <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
