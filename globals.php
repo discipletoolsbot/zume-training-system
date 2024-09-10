@@ -1265,7 +1265,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
+                    'version_5_ready' => true,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
                 ],
@@ -2722,7 +2722,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '4 registrations per day', // shared/rest-api.php:310
-                ],
+                ]
             ],
             2 => [
                 'key' => 'active_training_trainee',
@@ -2741,7 +2741,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '2 trainees engaging training per day', // shared/rest-api.php:418
-                ],
+                ]
             ],
             3 => [
                 'key' => 'post_training_trainee',
@@ -2761,7 +2761,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 trainee completing training every 4 days', // shared/rest-api.php:546
-                ],
+                ]
             ],
             4 => [
                 'key' => 'partial_practitioner',
@@ -2783,7 +2783,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 trainee becoming practitioner every 10 days', // shared/rest-api.php:714
-                ],
+                ]
             ],
             5 => [
                 'key' => 'full_practitioner',
@@ -2805,7 +2805,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 practitioner completing HOST/MAWL every 20 days', // shared/rest-api.php:714
-                ],
+                ]
             ],
             6 => [
                 'key' => 'multiplying_practitioner',
@@ -2824,7 +2824,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 practitioner breaking through with multiplication every 30 days', // shared/rest-api.php:714
-                ],
+                ]
             ],
         ];
     }
