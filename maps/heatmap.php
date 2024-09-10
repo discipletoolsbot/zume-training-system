@@ -3506,8 +3506,6 @@ class Zume_Funnel_App_Heatmap {
 
     /**
      * Function limits counts to no higher than the location need. This keeps from inflating the counts up the levels.
-     * @param $flat_grid
-     * @param $list
      * @return array
      */
     public static function _limit_counts( $flat_grid, $list ) {
