@@ -67,7 +67,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                     FROM zume_3_postmeta
                     WHERE meta_key = 'trainee_user_id'
                       AND meta_value = %s",
-            $user_id )
+                $user_id )
         );
 
         $coach_list = [];
@@ -225,6 +225,22 @@ if ( ! function_exists( 'zume_get_user_stage' ) ) {
                     $funnel_steps[6] = true;
                 }
 
+                // manual stage
+                if ( 'manual_upgrade_to_2' == $value['subtype'] ) {
+                    $funnel_steps[2] = true;
+                }
+                if ( 'manual_upgrade_to_3' == $value['subtype'] ) {
+                    $funnel_steps[3] = true;
+                }
+                if ( 'manual_upgrade_to_4' == $value['subtype'] ) {
+                    $funnel_steps[4] = true;
+                }
+                if ( 'manual_upgrade_to_5' == $value['subtype'] ) {
+                    $funnel_steps[5] = true;
+                }
+                if ( 'manual_upgrade_to_6' == $value['subtype'] ) {
+                    $funnel_steps[6] = true;
+                }
 
                 // user state
                 if ( 'plan_created' == $value['subtype'] ) {
@@ -627,7 +643,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         if ( ! empty( $connected_plans ) ) {
             $plan_post_ids = [];
             // initialize loop
-            foreach ( $connected_plans as $row ) {
+            foreach( $connected_plans as $row ) {
                 if ( ! isset( $plans[$row['post_id']] ) ) {
                     $plans[$row['post_id']] = [];
                     $plans[$row['post_id']]['title'] = $row['title'];
@@ -650,8 +666,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                         'key' => $row['meta_key'],
                         'title' => 'Session ' . $key_array[2] ?? '?',
                         'timestamp' => (int) $row['meta_value'],
-                        'date' => gmdate( 'Y-m-d', (int) $row['meta_value'] ),
-                        'date_formatted' => gmdate( 'M j, Y', (int) $row['meta_value'] ),
+                        'date' => date( 'Y-m-d', (int) $row['meta_value'] ),
+                        'date_formatted' => date( 'M j, Y', (int) $row['meta_value'] ),
                         'completed' => 0,
                         'completed_timestamp' => 0,
                         'completed_date' => '',
@@ -944,7 +960,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 5300000,
                 'enable_flags' => [
                     'version_4_available' => false,
-                    'translator_enabled' => false,
+                    'translator_enabled' => true,
                     'version_5_ready' => false,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
@@ -1058,7 +1074,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 15000000,
                 'enable_flags' => [
                     'version_4_available' => false,
-                    'translator_enabled' => true,
+                    'translator_enabled' => false,
                     'version_5_ready' => false,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
@@ -1172,7 +1188,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 69000,
                 'enable_flags' => [
                     'version_4_available' => false,
-                    'translator_enabled' => true,
+                    'translator_enabled' => false,
                     'version_5_ready' => false,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
@@ -1419,7 +1435,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 1200000,
                 'enable_flags' => [
                     'version_4_available' => false,
-                    'translator_enabled' => true,
+                    'translator_enabled' => false,
                     'version_5_ready' => false,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
@@ -1495,7 +1511,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'population' => 9000000,
                 'enable_flags' => [
                     'version_4_available' => false,
-                    'translator_enabled' => true,
+                    'translator_enabled' => false,
                     'version_5_ready' => false,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
@@ -1895,7 +1911,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                 'enable_flags' => [
                     'version_4_available' => true,
                     'translator_enabled' => true,
-                    'version_5_ready' => false,
+                    'version_5_ready' => true,
                     'pieces_pages' => false,
                     'course_slides_download' => false,
                 ],
@@ -2685,6 +2701,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Join an online training',
                     'Get a coach',
                 ],
+                'pace' => [
+                    '2024: 200 visits a day'
+                ]
             ],
             1 => [
                 'key' => 'registrant',
@@ -2701,6 +2720,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Make a training plan',
                     'Invite friends',
                 ],
+                'pace' => [
+                    '4 registrations per day', // shared/rest-api.php:310
+                ]
             ],
             2 => [
                 'key' => 'active_training_trainee',
@@ -2717,6 +2739,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Complete training',
                     'Create post training plan',
                 ],
+                'pace' => [
+                    '2 trainees engaging training per day', // shared/rest-api.php:418
+                ]
             ],
             3 => [
                 'key' => 'post_training_trainee',
@@ -2734,6 +2759,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Complete post training plan',
                     'Establish ongoing coaching relationship',
                 ],
+                'pace' => [
+                    '1 trainee completing training every 4 days', // shared/rest-api.php:546
+                ]
             ],
             4 => [
                 'key' => 'partial_practitioner',
@@ -2744,9 +2772,8 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 'description_full' => 'Practitioner still coaching through MAWL checklist.',
                 'characteristics' => [
                     'Has made first practitioner report',
-                    'Working on HOST/MAWL checklist, but not complete',
+                    'Working on HOST/MAWL checklist',
                     'Consistent effort, inconsistent fruit',
-                    'Not multiplying',
                 ],
                 'priority_next_step' => '',
                 'next_steps' => [
@@ -2754,6 +2781,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Continued reporting',
                     'Connect with S1 and S2 practitioners',
                 ],
+                'pace' => [
+                    '1 trainee becoming practitioner every 10 days', // shared/rest-api.php:714
+                ]
             ],
             5 => [
                 'key' => 'full_practitioner',
@@ -2766,7 +2796,6 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Has completed HOST/MAWL checklist',
                     'Consistent effort, inconsistent fruit',
                     'Inconsistent 1st generation fruit',
-                    'Not multiplying',
                 ],
                 'priority_next_step' => 'Consistent 2,3,4 generation fruit',
                 'next_steps' => [
@@ -2774,6 +2803,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Consistent 2,3,4 group generation fruit',
                     'Peer coaching with S2 and S3 practitioners',
                 ],
+                'pace' => [
+                    '1 practitioner completing HOST/MAWL every 20 days', // shared/rest-api.php:714
+                ]
             ],
             6 => [
                 'key' => 'multiplying_practitioner',
@@ -2790,6 +2822,9 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 'next_steps' => [
                     'Downstream coaching for consistent generations',
                 ],
+                'pace' => [
+                    '1 practitioner breaking through with multiplication every 30 days', // shared/rest-api.php:714
+                ]
             ],
         ];
     }
@@ -2909,7 +2944,11 @@ if ( ! function_exists( 'zume_get_percent' ) ) {
                 $percent = 0;
             }
             return $percent;
-        } else {
+        }
+        else if ( $value < 1 && $compare > 0 ) {
+            return $compare * 100 * -1;
+        }
+        else {
             return 0;
         }
     }
@@ -6576,9 +6615,9 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
              */
             if ( 'system' === $type & str_contains( $subtype, 'set_profile_' ) ) {
                 if (
-                    self::_already_logged( $log, 'system', 'set_profile_name', $type, $subtype ) &&
-                    self::_already_logged( $log, 'system', 'set_profile_phone', $type, $subtype ) &&
-                    self::_already_logged( $log, 'system', 'set_profile_location', $type, $subtype ) &&
+                    self::_already_logged( $log, 'system', 'set_profile_name' ) &&
+                    self::_already_logged( $log, 'system', 'set_profile_phone' ) &&
+                    self::_already_logged( $log, 'system', 'set_profile_location' ) &&
                     self::_needs_to_be_logged( $log, 'system', 'set_profile' )
                 ) {
                     $data_item = $data;
@@ -7601,9 +7640,9 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
             return $already_logged;
         }
 
-        private static function _already_logged( $log, $type, $subtype, $type_to_log, $subtype_to_log ): bool
+        private static function _already_logged( $log, $type, $subtype ): bool
         {
-            return !self::_needs_to_be_logged( $log, $type, $subtype ) || ( $type === $type_to_log && $subtype === $subtype_to_log );
+            return !self::_needs_to_be_logged( $log, $type, $subtype );
         }
 
         public static function _check_for_stage_change( &$added_log, $user_id, $report, $log = null )

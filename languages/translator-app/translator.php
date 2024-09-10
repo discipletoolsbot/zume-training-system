@@ -1939,7 +1939,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                                 <div style="float:left; width: 420px; height: 350px; padding: 1em; border: 1px solid lightgrey; margin: .5em; padding: .5em;">
                                     <strong><?php echo $row['name'] ?></strong>
                                     <div style="width:400px;height:275px;">
-                                    <iframe src="https://player.vimeo.com/video/<?php echo $video_results[$key]['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:400px;height:275px;" title="<?php echo $video_results[$key]['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                                    <iframe src="https://player.vimeo.com/video/<?php echo $video_results[$key]['vimeo_id'] ?>?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="width:400px;height:275px;" title="<?php echo $video_results[$key]['piece_id'] ?> "></iframe><script src="https://player.vimeo.com/api/player.js"></script>
                                     </div>
                                 </div>
                                 <?php
@@ -1980,7 +1980,7 @@ class Zume_Training_Translator extends Zume_Magic_Page
                             $place_holders = Zume_Replace_Placeholder::place_holders();
                             foreach ( $place_holders as $place_holder ) {
                                 ?>
-                                <div class="cell"><?php echo zume_replace_placeholder( $place_holder, $language['key'] ) ?> <?php echo $place_holder ?></div>
+                                <div class="cell"><?php echo zume_replace_placeholder( $place_holder, $this->language_code ) ?> <?php echo $place_holder ?></div>
                                 <?php
                             }
                         ?>

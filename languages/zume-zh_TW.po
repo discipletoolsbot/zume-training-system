@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 10:52-0600\n"
-"PO-Revision-Date: 2024-08-29 08:17+0000\n"
+"PO-Revision-Date: 2024-08-30 14:13+0000\n"
 "Last-Translator: Philip Yuen <philipyuen@channelnetwork.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate.disciple.tools/"
 "projects/zume-training/zume-training-system/zh_Hant/>\n"
@@ -1142,7 +1142,7 @@ msgstr "H.O.S.T."
 
 #: site/activities/coaching-checklist-host.php:101
 msgid "Self-evaluate yourself using Heard, Obeyed, Shared, Trained."
-msgstr "1. 以聽見、順服、分享、訓練方面來進行自我評估。"
+msgstr "以聽見、順服、分享、訓練方面來進行自我評估。"
 
 #: site/activities/coaching-checklist-host.php:107
 #: site/activities/coaching-checklist-mawl.php:109
@@ -1204,8 +1204,7 @@ msgstr "我有聽過這個工具或觀念嗎？"
 msgid ""
 "Have I obeyed this tool or concept? If a tool, have I practiced it on my "
 "own? If a concept, have you reflected on how it changes your perspective?"
-msgstr ""
-"我遵守了這個工具或觀念？如果有工具的話，我自己有練習過嗎？如果是一個觀念，您"
+msgstr "我遵守了這個工具或觀念？如果是工具的話，我自己有練習過嗎？如果是一個觀念，您"
 "是否思考過它如何改變您的觀點？"
 
 #: site/activities/coaching-checklist-host.php:176
@@ -1237,7 +1236,7 @@ msgstr "M.A.W.L."
 
 #: site/activities/coaching-checklist-mawl.php:102
 msgid "Coach others by using Model, Assist, Watch, Leave."
-msgstr "透過「榜樣」、「協助」、「觀察」、「放手」等方式引導他人。"
+msgstr "透過「示範」、「輔助」、「守護」、「放手」等方式引導他人。"
 
 #: site/activities/coaching-checklist-mawl.php:124
 #: site/activities/coaching-checklist-two.php:143
@@ -1345,7 +1344,7 @@ msgstr "1. 以聽見、順服、分享、訓練方面來進行自我評估。"
 
 #: site/activities/coaching-checklist-two.php:102
 msgid "2. Coach others by using Model, Assist, Watch, Leave."
-msgstr "2. 教導他人從示範、協助、觀察、放手的觀點來評估一個門徒。"
+msgstr "2. 教導他人從示範、輔助、守護、放手的觀點來評估一個門徒。"
 
 #: site/activities/coaching-checklist.php:111
 #: site/activities/coaching-checklist.php:251
@@ -3174,7 +3173,7 @@ msgstr "領域說明"
 msgid ""
 "Empty Field: Where or with whom [what people groups] are you planning to "
 "extend the Kingdom?"
-msgstr "空白領域：你計劃在哪裡或與誰[哪些人群]擴展神的國？"
+msgstr "空白領域：你計劃在哪裡或與誰（哪些人群）擴展神的國？"
 
 #: site/course/course-content.php:2657
 msgid ""
@@ -4048,7 +4047,7 @@ msgstr "課程簽到："
 #: site/dashboard/checkin-dashboard.php:160
 #, php-format
 msgid "%1$d of %2$d"
-msgstr "%2$d 共%1$d個"
+msgstr "%2$d 共 %1$d 個"
 
 #: site/dashboard/checkin-dashboard.php:163
 msgid "Course Progress:"
@@ -4194,7 +4193,7 @@ msgstr "預覽"
 #: site/dashboard/dashboard.php:269
 #, php-format
 msgid "Add new %s"
-msgstr "新增%s"
+msgstr "新增 %s"
 
 #: site/dashboard/dashboard.php:192
 msgid "Commitment"
@@ -5084,7 +5083,7 @@ msgstr "選擇的課程數量不正確"
 #: site/dashboard/wizard.php:303 site/dashboard/wizard.php:304
 #, php-format
 msgid "Set %s"
-msgstr "設定%s"
+msgstr "設定 %s"
 
 #: site/dashboard/wizard.php:301
 msgid "Group Name"
@@ -5120,7 +5119,7 @@ msgstr "在您的日程安排中增加一些日期"
 
 #: site/dashboard/wizard.php:316
 msgid "Change"
-msgstr "改變"
+msgstr "更改"
 
 #: site/dashboard/wizard.php:320
 msgid "Invite your friends to join your training"
@@ -5377,11 +5376,11 @@ msgstr "沒有可用的課程"
 
 #: site/pages/_strings-mobile-pwa.php:33
 msgid "Exit"
-msgstr "出口"
+msgstr "結束"
 
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Previous"
-msgstr "前一節"
+msgstr "上一節"
 
 #: site/pages/_strings-mobile-pwa.php:38
 msgid "Install"
@@ -6364,8 +6363,7 @@ msgstr "你資訊的管理權限"
 msgid ""
 "You can do the following at any time by contacting us via our \"Get a "
 "Coach\" form and choosing \"Technical Assistance\" from your user dashboard."
-msgstr ""
-"您可以隨時透過「取得教練」表單與我們聯繫，並從您的使用者儀表板中選擇「技術協"
+msgstr "您可以隨時透過「安排教練」表單與我們聯繫，並從您的使用者儀表板中選擇「技術協"
 "助」。"
 
 #: site/pages/privacy-policy.php:183

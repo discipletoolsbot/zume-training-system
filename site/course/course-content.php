@@ -374,6 +374,7 @@ function zume_content( $lang_code = 'en' ) {
             ],
             'right' => [
                 __( 'Begin practicing the S.O.A.P.S. Bible reading between now and your next meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily journal using the S.O.A.P.S. format.', 'zume' ),
+                __( 'Find an accountability partner (same gender) and begin meeting with them on a weekly basis.', 'zume' ),
                 __( 'Ask the Lord to guide you to challenge at least five people you know who are believers to begin their own S.O.A.P.S. Bible reading practice daily, and then do so.', 'zume' ),
             ],
         ],
