@@ -6250,6 +6250,12 @@ if ( ! function_exists( 'zume_log_delete' ) ) {
         return Zume_System_Log_API::delete( $type, $subtype, $data );
     }
 }
+if ( ! function_exists( 'zume_log_update' ) ) {
+    function zume_log_update( array $where, array $data = [] )
+    {
+        return Zume_System_Log_API::update( $where, $data );
+    }
+}
 
 if ( ! class_exists( 'Zume_System_Log_API' ) ) {
     // phpcs:ignore
@@ -7348,6 +7354,23 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
         }
 
         /**
+         * Update a log
+         * @param array $where
+         * @param array $data
+         * @return bool|int
+         */
+        public static function update( array $where, array $data ) {
+            global $wpdb;
+
+            $where_format = self::make_format( $where );
+            $format = self::make_format( $data );
+
+            $updates = $wpdb->update( 'zume_dt_reports', $data, $where, $format, $where_format );
+
+            return $updates;
+        }
+
+        /**
          * Delete a log from the reports
          * @param string $type
          * @param string $subtype
@@ -7357,7 +7380,7 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
         public static function delete( string $type, string $subtype, array $data = [] ) {
             global $wpdb;
 
-            $fields = [
+            $where = [
                 'type' => $type,
                 'subtype' => $subtype,
                 'user_id' => $data['user_id'] ?? get_current_user_id(),
@@ -7365,14 +7388,34 @@ if ( ! class_exists( 'Zume_System_Log_API' ) ) {
 
             unset( $data['user_id'] );
 
-            $fields = [
-                ...$fields,
+            $where = [
+                ...$where,
                 ...$data,
             ];
 
-            $deleted = $wpdb->delete( 'zume_dt_reports', $fields );
+            $where_format = self::make_format( $where );
+
+            $deleted = $wpdb->delete( 'zume_dt_reports', $where, $where_format );
 
             return $deleted;
+        }
+
+        public static function make_format( $args ) {
+            $format = [];
+
+            foreach ( $args as $key => $value ) {
+                if ( in_array( $key, [ 'user_id', 'parent_id', 'post_id', 'value', 'grid_id', 'time_begin', 'time_end', 'timestamp' ] ) ) {
+                    $format[] = '%d';
+                }
+                if ( in_array( $key, [ 'post_type', 'type', 'subtype', 'payload', 'level', 'label', 'hash', 'language_code' ] ) ) {
+                    $format[] = '%s';
+                }
+                if ( in_array( $key, [ 'lng', 'lat' ] ) ) {
+                    $format[] = '%f';
+                }
+            }
+
+            return $format;
         }
 
         /**

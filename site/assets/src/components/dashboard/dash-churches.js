@@ -578,6 +578,7 @@ export class DashChurches extends DashPage {
         `
     }
     renderChurch({ id, name, location, generation, status }) {
+        const isConfirmingDelete = this.confirmDelete === id
         return html`
             <li
                 class="list__item ${status === 'inactive' ? 'bg-gray-300' : ''}"
@@ -602,24 +603,24 @@ export class DashChurches extends DashPage {
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
-                        <li class="${!!this.confirmDelete ? 'hidden' : ''}">
+                        <li class="${!isConfirmingDelete ? '' : 'hidden'}">
                             <button class="menu-btn" @click=${() => this.openEditChurchModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
-                        </li>
-                        <li class="${!!this.confirmDelete || !this.isLeafChurch(id) ? 'hidden' : ''}">
-                            <button class="menu-btn red" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
                         </li>
                         ${
                             status === 'active' ? html`
-                                <li class="${!!this.confirmDelete || this.isLeafChurch(id) ? 'hidden' : ''}">
+                                <li class="${!isConfirmingDelete ? '' : 'hidden'}">
                                     <button class="menu-btn red" @click=${() => this.deactivateChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.mark_inactive}</button>
                                 </li>
                             ` : html`
-                                <li class="${!!this.confirmDelete || this.isLeafChurch(id) ? 'hidden' : ''}">
+                                <li class="${!isConfirmingDelete ? '' : 'hidden'}">
                                     <button class="menu-btn red" @click=${() => this.activateChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.mark_active}</button>
                                 </li>
                             `
                         }
-                        <li class="${!!this.confirmDelete ? '' : 'hidden'} stack">
+                        <li class="${!isConfirmingDelete && this.isLeafChurch(id) ? '' : 'hidden'}">
+                            <button class="menu-btn red" @click=${() => this.confirmDeleteChurch(id)}><span class="icon z-icon-trash"></span>${jsObject.translations.delete}</button>
+                        </li>
+                        <li class="${isConfirmingDelete ? '' : 'hidden'} stack">
                             <p class="bold f-1">${jsObject.translations.delete}?</p>
                             <div class="cluster">
                                 <button class="btn outline tight" @click=${() => this.closeKebabMenu(id)}>
