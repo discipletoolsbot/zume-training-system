@@ -2,22 +2,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-02-20 08:22-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-09-09 12:16+0000\n"
+"Last-Translator: Chris <chris@chasm.solutions>\n"
+"Language-Team: Armenian <https://translate.disciple.tools/projects/"
+"zume-training/zume-training-system/hy/>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Weblate 5.7.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;es"
+"c_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_n"
+"x_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: node_modules\n"
@@ -35,13 +36,13 @@ msgstr ""
 #: 404.php:76 site/course/presenter.php:137
 #: site/pages/_strings-mobile-pwa.php:12
 msgid "Home"
-msgstr ""
+msgstr "Տուն"
 
 #: 404.php:77 site/course/presenter.php:141
 #: site/pages/_strings-mobile-pwa.php:14 site/pages/about.php:26
 #: site/parts/footer.php:10 site/parts/nav.php:24 site/parts/nav.php:85
 msgid "About"
-msgstr ""
+msgstr "Մասին"
 
 #: 404.php:78 appearance/style-override/navigation.php:106
 #: site/course/presenter.php:139 site/dashboard/checkin-dashboard.php:29
@@ -50,7 +51,7 @@ msgstr ""
 #: site/dashboard/wizard.php:178 site/dashboard/wizard.php:191
 #: site/pages/home.php:104 site/parts/nav.php:19 site/parts/nav.php:66
 msgid "Dashboard"
-msgstr ""
+msgstr "Գլխավոր մենյու"
 
 #: 404.php:83 site/dashboard/dashboard.php:236 site/parts/footer.php:25
 #: site/parts/footer.php:28
@@ -84,7 +85,7 @@ msgstr ""
 #: site/pages/training.php:28 site/parts/footer.php:11 site/parts/nav.php:25
 #: site/parts/nav.php:86
 msgid "Training"
-msgstr ""
+msgstr "Դասընթաց"
 
 #: appearance/style-override/navigation.php:85 site/pages/home.php:202
 msgid "How it Works"
@@ -92,11 +93,11 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:91
 msgid "Download Guidebook"
-msgstr ""
+msgstr "Ներբեռնել Ուղեցույցը"
 
 #: appearance/style-override/navigation.php:97
 msgid "FAQs"
-msgstr ""
+msgstr "Հաճախ տրվող հարցեր"
 
 #: appearance/style-override/navigation.php:112
 msgid "My Zúme"
@@ -108,7 +109,7 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:123
 msgid "Groups"
-msgstr ""
+msgstr "Խմբեր"
 
 #: appearance/style-override/navigation.php:129
 msgid "Trainings"
@@ -120,12 +121,12 @@ msgstr ""
 
 #: appearance/style-override/navigation.php:143 site/pages/follow-jesus.php:218
 msgid "Community"
-msgstr ""
+msgstr "Համայնք"
 
 #: appearance/style-override/navigation.php:148 site/pages/vision.php:28
 #: site/pages/vision.php:83
 msgid "Vision"
-msgstr ""
+msgstr "Տեսիլք"
 
 #: appearance/style-override/navigation.php:154
 msgid "Stories"
@@ -140,25 +141,27 @@ msgstr ""
 #: site/course/course-content.php:354 site/course/course-content.php:3157
 #: site/course/course-content.php:3175 site/pages/follow-jesus.php:168
 msgid "God Uses Ordinary People"
-msgstr ""
+msgstr "Աստված օգտագործում է սովորական մարդկանց"
 
 #: globals.php:2086 site/pages/follow-jesus.php:169
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
 msgstr ""
+"Դուք կտեսնեք, թե ինչպես մեծ ազդեցություն թողնելու համար Աստված օգտագործում է "
+"սովորական մարդկանց և  պարզ քայլեր։"
 
 #: globals.php:2097 site/course/course-content.php:3158
 #: site/course/course-content.php:3176 site/pages/follow-jesus.php:172
 msgid "Simple Definition of Disciple and Church"
-msgstr ""
+msgstr "Աշակերտի և եկեղեցու պարզ սահմանում"
 
 #: globals.php:2098 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:173
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
-msgstr ""
+msgstr "Բացահայտեք, թե ինչ է նշանակում լինել աշակերտ, ինչ է եկեղեցին:"
 
 #: globals.php:2099 site/course/course-content.php:143
 #: site/course/course-content.php:152
@@ -168,11 +171,12 @@ msgstr ""
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr ""
+msgstr "Հոգևոր շնչառությունը իրենից ենթադրում է լսել և հնազանդել Աստծուն։"
 
 #: globals.php:2110 site/pages/follow-jesus.php:195
 msgid "Being a disciple means we hear from God and we obey God."
 msgstr ""
+"Աշակերտ լինել նշանակում է, որ մենք լսում ենք Աստծուն և հնազանդում ենք Նրան։"
 
 #: globals.php:2111 site/course/course-content.php:189
 #: site/course/course-content.php:198
@@ -188,13 +192,15 @@ msgid ""
 "A tool for daily Bible study that helps you understand, obey, and share "
 "God’s Word."
 msgstr ""
+"Աստվածաշնչի ամենօրյա սերտողության համար նախատեսված գործիք, որն օգնում է "
+"հասկանալ, հնազանդել, և ուրիշներին պատմել Աստծո Խոսքը։"
 
 #: globals.php:2133 globals.php:2135 site/course/course-content.php:93
 #: site/course/course-content.php:294 site/course/course-content.php:303
 #: site/course/course-content.php:361 site/course/course-content.php:3406
 #: site/course/course-content.php:3422 site/pages/follow-jesus.php:224
 msgid "Accountability Groups"
-msgstr ""
+msgstr "Հաշվետու խմբեր"
 
 #: globals.php:2134 site/pages/follow-jesus.php:225
 msgid ""
@@ -202,16 +208,22 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
+"Սա մի գործիք է՝ նախատեսված նույն սեռին պատկանող երկու-երեք հոգու համար, "
+"ովքեր շաբաթը մեկ հանդիում են և մեկը մյուսին քաջալերում այն բնագավառներում, "
+"որտեղ հաջողում են, կամ էլ բացահայտում են այն բնագավառները, որտեղ շտկումների "
+"կարիք կա։"
 
 #: globals.php:2145 site/pages/follow-jesus.php:188
 msgid "Consumer vs Producer Lifestyle"
-msgstr ""
+msgstr "Սպառողի թե արտադրողի կենսակերպ"
 
 #: globals.php:2146 site/pages/follow-jesus.php:189
 msgid ""
 "You'll discover the four main ways God makes everyday followers more like "
 "Jesus."
 msgstr ""
+"Դուք կբացահայտեք հիմնական չորս ուղիները, որոնց միջոցով Աստված Իր "
+"հետևորդներին ամեն օր ավելի Հիսուսին նման է դարձնում։"
 
 #: globals.php:2147
 msgid "Producer not Consumer"
@@ -219,19 +231,21 @@ msgstr ""
 
 #: globals.php:2157 globals.php:2159 site/pages/follow-jesus.php:198
 msgid "How to Spend an Hour in Prayer"
-msgstr ""
+msgstr "Ինչպե՞ս մեկ ժամ աղոթել"
 
 #: globals.php:2158 site/pages/follow-jesus.php:199
 msgid "See how easy it is to spend an hour in prayer."
-msgstr ""
+msgstr "Տեսաք, թե որքան հեշտ է մեկ ժամ աղոթքի մեջ անցկացնել։"
 
 #: globals.php:2169 site/pages/follow-jesus.php:285
 msgid "Relational Stewardship – List of 100"
-msgstr ""
+msgstr "Փոխհարաբերությունների տնտես- 100 հոգուց բաղկացած ցանկ"
 
 #: globals.php:2170 site/pages/follow-jesus.php:286
 msgid "A tool designed to help you be a good steward of your relationships."
 msgstr ""
+"Սա մի գործիք է, որը մարդկային փոխհարաբերություններում Ձեզ լավ տնտես է "
+"դաձրնում։"
 
 #: globals.php:2171 site/activities/list-of-100-printable.php:22
 #: site/activities/list-of-100-printable.php:81
@@ -243,29 +257,34 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:99
 #: utilities/integrations/replace-placeholder.php:100
 msgid "List of 100"
-msgstr ""
+msgstr "100 հոգուց բաղկացած ցանկ"
 
 #: globals.php:2181 globals.php:2183 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3800 site/course/course-content.php:3819
 msgid "Spiritual Economy"
-msgstr ""
+msgstr "Հոգևոր տնտեսություն"
 
 #: globals.php:2182 site/pages/follow-jesus.php:244
 msgid ""
 "Learn how God's economy is different from the world's. God invests more in "
 "those who are faithful with what they've already been given."
 msgstr ""
+"Տեսեք, թե Աստծո տնտեսությունը աշխարհի տնտեսությունից ինչով է տարբերվում։ "
+"Աստված ավելի շատ ներդրում է անում նրանց մեջ, ովքեր հավատարիմ են գտնվել արդեն "
+"իսկ իրենց տրվածի մեջ։"
 
 #: globals.php:2193 site/pages/follow-jesus.php:289
 msgid "The Gospel and How to Share It"
-msgstr ""
+msgstr "Ավետարան և թե ինչպես այն պատմել ուրիշներին"
 
 #: globals.php:2194 site/pages/follow-jesus.php:290
 msgid ""
 "Learn a way to share God’s Good News from the beginning of humanity all the "
 "way to the end of this age."
 msgstr ""
+"Սովորեք, թե ինչպես կարելի է Աստծո բարի լուրը պատմել մարդկության ամենասկզբից "
+"տանելով դեպի աշխարհի վերջը։"
 
 #: globals.php:2195
 msgid "Sharing God‘s Story"
@@ -273,7 +292,7 @@ msgstr ""
 
 #: globals.php:2205 site/pages/follow-jesus.php:236
 msgid "Baptism and How To Do It"
-msgstr ""
+msgstr "Մկրտություն և թե ինչպես դա անել"
 
 #: globals.php:2206 site/pages/follow-jesus.php:237
 msgid ""
@@ -281,33 +300,37 @@ msgid ""
 "name of the Father and of the Son and of the Holy Spirit…” Learn how to put "
 "this into practice."
 msgstr ""
+"Հիսուսն ասաց․ \"Գնացեք, բոլոր ազգերը աշակերտեցեք, նրանց ՄԿՐՏԵԼՈՎ Հոր, Որդու "
+"և Սուրբ Հոգու անունով։\" Սովորեք սա գործածության մեջ դնել։"
 
 #: globals.php:2207 site/course/course-content.php:801
 #: site/course/course-content.php:949 site/course/course-content.php:958
 #: site/course/course-content.php:1021 site/course/course-content.php:4073
 #: site/course/course-content.php:4090
 msgid "Baptism"
-msgstr ""
+msgstr "Մկրտություն"
 
 #: globals.php:2217 site/pages/follow-jesus.php:293
 msgid "Prepare Your 3-Minute Testimony"
-msgstr ""
+msgstr "Պատրաստեք Ձեր 3 րոպեանոց վկայությունը"
 
 #: globals.php:2218 site/pages/follow-jesus.php:294
 msgid ""
 "Learn how to share your testimony in three minutes by sharing how Jesus has "
 "impacted your life."
 msgstr ""
+"Սովորեք Ձեր վկայությունը պատմել երեք րոպեում՝ ասելով, թե ինչ ազդեցություն է "
+"Հիսուսն ունեցել Ձեր կյանքում։"
 
 #: globals.php:2219
 msgid "3-Minute Testimony"
-msgstr ""
+msgstr "Երեք րոպեանոց վկայություն"
 
 #: globals.php:2229 site/course/course-content.php:1140
 #: site/course/course-content.php:1402 site/course/course-content.php:3801
 #: site/course/course-content.php:3820 site/pages/follow-jesus.php:176
 msgid "Vision Casting the Greatest Blessing"
-msgstr ""
+msgstr "Ամենամեծ օրհնության տեսիլքը"
 
 #: globals.php:2230 site/course/course-content.php:1216
 #: site/pages/follow-jesus.php:177
@@ -315,6 +338,9 @@ msgid ""
 "Learn a simple pattern of making not just one follower of Jesus but entire "
 "spiritual families who multiply for generations to come."
 msgstr ""
+"Սովորեք կիրառել այս մոդելը, որով հնարավոր է Հիսուսի  ոչ թե մեկ հետևորդ "
+"պատրաստել, այլ ամբողջական հոգևոր ընտանիքներ, որոնք հաջորդ սերունդներում "
+"կբազմապատկվեն։"
 
 #: globals.php:2231
 msgid "Great, Greater, and Greatest Blessing"
@@ -322,18 +348,18 @@ msgstr ""
 
 #: globals.php:2241 site/pages/follow-jesus.php:266
 msgid "Duckling Discipleship – Leading Immediately"
-msgstr ""
+msgstr "Բադիկների օրինակով աշակերտում - անմիջապես առաջնորդել"
 
 #: globals.php:2242
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr ""
+msgstr "Սովորեք, թե ինչ կապ ունեն բադիկիները աշակերտության հետ։"
 
 #: globals.php:2243 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4350
 #: site/course/course-content.php:4371
 msgid "Duckling Discipleship"
-msgstr ""
+msgstr "Աշակերտություն բադիկների օրինակով"
 
 #: globals.php:2253 globals.php:2255 site/course/course-content.php:1142
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
@@ -346,17 +372,19 @@ msgstr ""
 msgid ""
 "Begin to see where God’s Kingdom isn’t. These are usually the places where "
 "God wants to work the most."
-msgstr ""
+msgstr "Սկսեք նկատել, թե որտեղ չկա Աստծո արքայությունը։"
 
 #: globals.php:2265 site/pages/follow-jesus.php:232
 msgid "The Lord’s Supper and How To Lead It"
-msgstr ""
+msgstr "Տիրոջ ընթրիքը և թե ինչպես այն վարել"
 
 #: globals.php:2266
 msgid ""
 "It’s a simple way to celebrate our intimate connection and ongoing "
 "relationship with Jesus. Learn a simple way to celebrate."
 msgstr ""
+"Այս պարզ  եղանակով մենք տոնում ենք Հիսուսի հետ մեր մտերիմ կապը և "
+"շարունակական փոխհարաբերությունը: Սովորեք այս պարզ եղանակը այն տոնելու համար:"
 
 #: globals.php:2267 site/activities/activities.php:250
 #: site/course/course-content.php:1147 site/course/course-content.php:1344
@@ -367,7 +395,7 @@ msgstr ""
 
 #: globals.php:2277 site/pages/follow-jesus.php:304
 msgid "Prayer Walking and How To Do It"
-msgstr ""
+msgstr "Աղոթքի քայլերթ և թե ինչպես դա անել"
 
 #: globals.php:2278
 msgid ""
@@ -380,11 +408,11 @@ msgstr ""
 #: site/course/course-content.php:1537 site/course/course-content.php:1635
 #: site/course/course-content.php:4482 site/course/course-content.php:4495
 msgid "Prayer Walking"
-msgstr ""
+msgstr "Աղոթքի քայլերթ"
 
 #: globals.php:2289 site/pages/follow-jesus.php:300
 msgid "A Person of Peace and How To Find One"
-msgstr ""
+msgstr "Խաղաղության որդի և ինչպես գտնել նրան"
 
 #: globals.php:2290
 msgid ""
@@ -395,11 +423,11 @@ msgstr ""
 #: site/course/course-content.php:1557 site/course/course-content.php:1566
 #: site/course/course-content.php:4596 site/course/course-content.php:4616
 msgid "Person of Peace"
-msgstr ""
+msgstr "Խաղաղության որդի"
 
 #: globals.php:2301 site/pages/follow-jesus.php:213
 msgid "Faithfulness is Better Than Knowledge"
-msgstr ""
+msgstr "Հավատարմությունը գիտությունից ավելի է"
 
 #: globals.php:2302
 msgid ""
@@ -411,15 +439,17 @@ msgstr ""
 #: site/course/course-content.php:1774 site/course/course-content.php:4727
 #: site/course/course-content.php:4774
 msgid "Faithfulness"
-msgstr ""
+msgstr "Հավատարմություն"
 
 #: globals.php:2313 site/pages/follow-jesus.php:202
 msgid "The BLESS Prayer Pattern"
-msgstr ""
+msgstr "BLESS աղոթքի մոդել"
 
 #: globals.php:2314 site/pages/follow-jesus.php:203
 msgid "Practice a simple mnemonic to remind you of ways to pray for others."
 msgstr ""
+"Կիրառեք հապավումը, որը կհիշեցնի ձեզ, թե ինչպես կարող եք աղոթել ուրիշների "
+"համար։"
 
 #: globals.php:2315 site/course/course-content.php:1603
 msgid "The B.L.E.S.S. Prayer"
@@ -427,7 +457,7 @@ msgstr ""
 
 #: globals.php:2325 site/pages/follow-jesus.php:220
 msgid "3/3 Group Meeting Pattern"
-msgstr ""
+msgstr "3/3  ձևաչափով խմբի հանդիպում"
 
 #: globals.php:2326
 msgid ""
@@ -438,28 +468,30 @@ msgstr ""
 
 #: globals.php:2327
 msgid "3/3 Group"
-msgstr ""
+msgstr "3/3 խումբ"
 
 #: globals.php:2337 site/pages/follow-jesus.php:270
 msgid "Training Cycle for Maturing Disciples"
-msgstr ""
+msgstr "Հասունացող աշակերտների համար դասընթացի փուլ"
 
 #: globals.php:2338 site/pages/follow-jesus.php:271
 msgid ""
 "Learn the training cycle and consider how it applies to disciple making."
 msgstr ""
+"Ուսումնասիրեք դասընթացի փուլը և դիտարկեք, թե այն ինպես կարելի է կիրառել "
+"աշակերտ պատրաստելու գործում։"
 
 #: globals.php:2339 site/course/course-content.php:5029
 #: site/course/course-content.php:5046
 msgid "Training Cycle"
-msgstr ""
+msgstr "Մարզման շրջան"
 
 #: globals.php:2349 globals.php:2351 site/course/course-content.php:2190
 #: site/course/course-content.php:2202 site/course/course-content.php:2211
 #: site/course/course-content.php:2279 site/course/course-content.php:5030
 #: site/course/course-content.php:5047 site/pages/follow-jesus.php:325
 msgid "Leadership Cells"
-msgstr ""
+msgstr "Առանորդների խմբակ"
 
 #: globals.php:2350 site/course/course-content.php:2213
 #: site/pages/follow-jesus.php:326
@@ -467,11 +499,14 @@ msgid ""
 "A Leadership Cell is a way someone who feels called to lead can develop "
 "their leadership by practicing serving."
 msgstr ""
+"Եթե կա մեկը, ով զգում է, որ կանչված է առաջնորդելու, ապա առաջնորդների "
+"խմբակում նա կարող է զարգացնել առաջնորդելու հմտությունները՝ սկսելով մարդկանց "
+"ծառայել"
 
 #: globals.php:2361 globals.php:2363 site/course/course-content.php:5154
 #: site/course/course-content.php:5172 site/pages/follow-jesus.php:274
 msgid "Expect Non-Sequential Growth"
-msgstr ""
+msgstr "Ակնկալեք ոչ հաջորդական աճ"
 
 #: globals.php:2362
 msgid ""
@@ -482,26 +517,28 @@ msgstr ""
 #: globals.php:2373 site/course/course-content.php:2768
 #: site/pages/follow-jesus.php:278
 msgid "Pace of Multiplication Matters"
-msgstr ""
+msgstr "Բազմապատկամն արագությունը կարևոր է"
 
 #: globals.php:2374 site/pages/follow-jesus.php:279
 msgid ""
 "Multiplying matters and multiplying quickly matters even more. See why pace "
 "matters."
 msgstr ""
+"Բազմապատկվելը կարևոր է, իսկ արագ բազմապատկվելը շատ ավելի կարևոր։ Հիմա "
+"հասկանում եք, թե ինչու է արագությունը կարևոր։"
 
 #: globals.php:2375 site/course/course-content.php:2390
 #: site/course/course-content.php:2450 site/course/course-content.php:2459
 #: site/course/course-content.php:5155 site/course/course-content.php:5173
 msgid "Pace"
-msgstr ""
+msgstr "Տեմպ"
 
 #: globals.php:2385 globals.php:2387 site/course/course-content.php:2391
 #: site/course/course-content.php:2496 site/course/course-content.php:2505
 #: site/course/course-content.php:2769 site/course/course-content.php:5156
 #: site/course/course-content.php:5174 site/pages/follow-jesus.php:228
 msgid "Always Part of Two Churches"
-msgstr ""
+msgstr "Միշտ երկու եկեղեցիների անդամ"
 
 #: globals.php:2386
 msgid "Learn how to obey Jesus‘ commands by going AND staying."
@@ -511,13 +548,15 @@ msgstr ""
 #: site/course/course-content.php:3004 site/course/course-content.php:3010
 #: site/course/course-content.php:3071 site/course/course-content.php:5692
 msgid "Three-Month Plan"
-msgstr ""
+msgstr "Եռամսյա պլան"
 
 #: globals.php:2399
 msgid ""
 "Create and share your plan for how you will implement the Zúme tools over "
 "the next three months."
 msgstr ""
+"Կազմեք և ուրիշներին էլ պատմեք այն ծրագրի մասին, թե ինչպես եք առաջիկա երեք "
+"ամիսների ընթացքում կիրառելու Zúme-ի գործիքակազմը։"
 
 #: globals.php:2409 globals.php:2411
 #: site/activities/coaching-checklist-host.php:22
@@ -539,33 +578,37 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:103
 #: utilities/integrations/replace-placeholder.php:104
 msgid "Coaching Checklist"
-msgstr ""
+msgstr "Մարզչի ստուգաթերթ"
 
 #: globals.php:2410 site/pages/follow-jesus.php:322
 msgid ""
 "A powerful tool you can use to quickly assess your own strengths and "
 "vulnerabilities when it comes to making disciples who multiply."
 msgstr ""
+"Սա հզոր մի գործիք է, որը կարող եք օգտագործել աշակերտելու բնագավառում Ձեր "
+"ուժեղ և թույլ կողմերը գնահատելու համար։"
 
 #: globals.php:2421 globals.php:2423 site/course/course-content.php:2895
 #: site/course/course-content.php:2908 site/course/course-content.php:2917
 #: site/course/course-content.php:3066 site/course/course-content.php:5283
 #: site/course/course-content.php:5303 site/pages/follow-jesus.php:329
 msgid "Leadership in Networks"
-msgstr ""
+msgstr "Առաջնորդությունը ցանցերում"
 
 #: globals.php:2422 site/pages/follow-jesus.php:330
 msgid ""
 "Learn how multiplying churches stay connected and live life together as an "
 "extended, spiritual family."
 msgstr ""
+"Այստեղ սովորում ենք, թե ինչպես են բազմապատկվող եկեղեցինը մնում իրար հետ "
+"փոխկապակցված և միասին ապրում որպես մեծ հոգևոր մի ընտանիք։"
 
 #: globals.php:2433 site/course/course-content.php:2899
 #: site/course/course-content.php:2951 site/course/course-content.php:2960
 #: site/course/course-content.php:3070 site/course/course-content.php:5553
 #: site/course/course-content.php:5569 site/pages/follow-jesus.php:317
 msgid "Peer Mentoring Groups"
-msgstr ""
+msgstr "Հավասարը հավասարին մենթորական խմբեր"
 
 #: globals.php:2434 site/pages/follow-jesus.php:318
 msgid ""
@@ -573,15 +616,18 @@ msgid ""
 "Groups. It also follows a 3/3 format and is a powerful way to assess the "
 "spiritual health of God’s work in your area."
 msgstr ""
+"Սա մի խումբ է, որը բաղկացած է 3/3 խմբեր սկսող և առաջնորդող մարդկանցից։ "
+"Այստեղ նույնպես կիրառվում է 3/3 ձևաչափը, և հիասքանչ եղանակ է Ձեր բնագավառում "
+"Աստծո գործի հոգևոր վիճակը գնահատելու համար:"
 
 #: globals.php:2435 site/activities/activities.php:342
 #: site/dashboard/wizard.php:182
 msgid "Peer Mentoring"
-msgstr ""
+msgstr "Համամենթոնրինգ"
 
 #: globals.php:2445 globals.php:2447
 msgid "Four Fields Tool"
-msgstr ""
+msgstr "Չորս դաշտերի գործիքը"
 
 #: globals.php:2446
 msgid ""
@@ -589,19 +635,24 @@ msgid ""
 "cell to reflect on the status of current efforts and the kingdom activity "
 "around them."
 msgstr ""
+"Չորս դաշտերի ախտորոշման աղյուսակը պարզ գործիք է, որը կարելի է օգտագործել "
+"առաջնորդների խմբակում, պարզելու, թե ներկայումս արքայության համար գործադրվող "
+"ջանքերը որ փուլում են։"
 
 #: globals.php:2457 globals.php:2459 site/activities/activities.php:388
 #: site/course/course-content.php:2397 site/course/course-content.php:2707
 #: site/course/course-content.php:2713 site/course/course-content.php:2775
 #: site/course/course-content.php:5417 site/course/course-content.php:5447
 msgid "Generational Mapping"
-msgstr ""
+msgstr "Սերունդների պատկերում քարտեզի վրա"
 
 #: globals.php:2458
 msgid ""
 "Generation mapping is another simple tool to help leaders in a movement "
 "understand the growth around them."
 msgstr ""
+"Սերունդների պատկերում քարտեզի վրա մեկ այլ պարզ գործիք է, որն օգնում է հոգևոր "
+"շարջի առաջնորդներին հասկանալ, թե աճը ինչպես է առաջ գնում։"
 
 #: globals.php:2469
 msgid "3-Circles Gospel Presentation"
@@ -623,7 +674,7 @@ msgstr ""
 #: site/parts/footer.php:84 site/parts/footer.php:91
 #: site/parts/language-menu.php:4
 msgid "Close"
-msgstr ""
+msgstr "Փակել"
 
 #: globals.php:7698
 msgid "No Results"
@@ -1071,7 +1122,7 @@ msgstr ""
 #: site/course/course-content.php:537 site/course/course-content.php:546
 #: site/course/course-content.php:670
 msgid "Prayer Cycle"
-msgstr ""
+msgstr "Աղոթքի շղթա"
 
 #: site/activities/activities.php:204 site/course/course-content.php:931
 msgid "Share the Gospel"
@@ -1140,7 +1191,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:117
 #: site/activities/coaching-checklist.php:254 site/dashboard/dashboard.php:240
 msgid "Heard"
-msgstr ""
+msgstr "Լսել է"
 
 #: site/activities/coaching-checklist-host.php:131
 #: site/activities/coaching-checklist-host.php:170
@@ -1149,7 +1200,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:120
 #: site/activities/coaching-checklist.php:257 site/dashboard/dashboard.php:242
 msgid "Obeyed"
-msgstr ""
+msgstr "Հնազանդել է"
 
 #: site/activities/coaching-checklist-host.php:134
 #: site/activities/coaching-checklist-host.php:174
@@ -1158,7 +1209,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:123
 #: site/activities/coaching-checklist.php:260 site/dashboard/dashboard.php:244
 msgid "Shared"
-msgstr ""
+msgstr "Փոխանցել է ուրիշին"
 
 #: site/activities/coaching-checklist-host.php:137
 #: site/activities/coaching-checklist-host.php:178
@@ -1167,7 +1218,7 @@ msgstr ""
 #: site/activities/coaching-checklist.php:126
 #: site/activities/coaching-checklist.php:263 site/dashboard/dashboard.php:246
 msgid "Trained"
-msgstr ""
+msgstr "Մարզել է"
 
 #: site/activities/coaching-checklist-host.php:168
 #: site/activities/coaching-checklist-two.php:189
@@ -1460,11 +1511,11 @@ msgstr ""
 #: site/activities/three-month-plan.php:94 site/dashboard/dashboard.php:188
 #: site/dashboard/wizard.php:307 site/profile/profile.php:148
 msgid "Save"
-msgstr ""
+msgstr "Պահպանել"
 
 #: site/activities/three-month-plan.php:95
 msgid "Cancel"
-msgstr ""
+msgstr "Ընդհատել"
 
 #: site/activities/three-month-plan.php:96 site/dashboard/dashboard.php:299
 msgid "Question"
@@ -1485,6 +1536,9 @@ msgid ""
 "you will be my witnesses, telling people about me everywhere – in Jerusalem, "
 "throughout Judea, in Samaria, and to the ends of the earth.”"
 msgstr ""
+"Հիսուսն ասաց․ \"Դուք զորություն  կստանաք, երբ Սուրբ Հոգին  Ձեզ վրա գա։ Դուք "
+"իմ վկաները կլինեք և իմ մասին կպատմենք ամենուր՝ Երուսաղեմում, ամբողջ "
+"Հրեաստանում, Սամարիայում, մինչև աշխարհի ծայրերը\"։"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:14
 #: site/course/course-content.php:858
@@ -1511,7 +1565,7 @@ msgstr ""
 #: site/course/course-content.php:2940 site/course/course-content.php:3047
 #: site/course/course-content.php:4753
 msgid "DISCUSS"
-msgstr ""
+msgstr "Քննարկեք"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:24
 #: site/course/_strings-3-circle-gospel-presentation.php:62
@@ -1555,7 +1609,7 @@ msgstr ""
 #: site/course/course-content.php:2545 site/course/course-content.php:2914
 #: site/course/course-content.php:2957
 msgid "WATCH"
-msgstr ""
+msgstr "ԴԻՏԵՔ"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:40
 #: site/course/course-builder.php:404
@@ -1567,7 +1621,7 @@ msgstr ""
 #: site/course/course-content.php:889 site/course/course-content.php:1020
 #: site/course/course-content.php:3802 site/course/course-content.php:3821
 msgid "The Gospel"
-msgstr ""
+msgstr "Ավետարանը"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:44
 msgid ""
@@ -1578,12 +1632,12 @@ msgstr ""
 #: site/course/_strings-3-circle-gospel-presentation.php:66
 #: site/course/course-content.php:916
 msgid "What do you learn about mankind from this story?"
-msgstr ""
+msgstr "Այս պատմությունից մարդկության մասին ի՞նչ սովորեցիք։"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:67
 #: site/course/course-content.php:917
 msgid "What do you learn about God?"
-msgstr ""
+msgstr "Աստծո մասին ի՞նչ հասկացաք։"
 
 #: site/course/_strings-3-circle-gospel-presentation.php:68
 #: site/course/course-content.php:918
@@ -1746,7 +1800,7 @@ msgstr ""
 #: site/course/course-content.php:5880 site/course/course-content.php:5885
 #: site/course/course-content.php:5929 site/course/course-content.php:5934
 msgid "CHECK-IN"
-msgstr ""
+msgstr "ՆԵՐԿԱ-ԲԱՑԱԿԱ"
 
 #: site/course/course-content.php:54 site/course/course-content.php:423
 #: site/course/course-content.php:749 site/course/course-content.php:1092
@@ -1807,7 +1861,7 @@ msgstr ""
 #: site/course/course-content.php:5383 site/course/course-content.php:5428
 #: site/course/course-content.php:5520 site/course/course-content.php:5644
 msgid "PRAY"
-msgstr ""
+msgstr "ԱՂՈԹԵՔ"
 
 #: site/course/course-content.php:71 site/course/course-content.php:3142
 msgid ""
@@ -1815,6 +1869,9 @@ msgid ""
 "without the Holy Spirit. Take time as a group to invite Him to guide you "
 "over this session."
 msgstr ""
+"Սկսեք աղոթքով։ Առանց Սուրբ Հոգու անհնար է հոգևոր հայտնություն ստանալ և "
+"փոխակերպվել։ Խմբով հավաքվելիս հրավիրեք Նրան, որպեսզի այս դասընթացի "
+"ընթացքում  առաջնորդի  Ձեզ։"
 
 #: site/course/course-content.php:81 site/course/course-content.php:467
 #: site/course/course-content.php:791 site/course/course-content.php:1135
@@ -1832,7 +1889,7 @@ msgstr ""
 #: site/course/course-content.php:5278 site/course/course-content.php:5411
 #: site/course/course-content.php:5548 site/course/course-content.php:5687
 msgid "OVERVIEW"
-msgstr ""
+msgstr "ԸՆԴՀԱՆՈՒՐ ՆԿԱՐԱԳԻՐ"
 
 #: site/course/course-content.php:84 site/course/course-content.php:1138
 #: site/course/course-content.php:2387 site/course/course-content.php:3155
@@ -1848,7 +1905,7 @@ msgstr ""
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 msgid "Spiritual Breathing"
-msgstr ""
+msgstr "Հոգևոր շնչառություն"
 
 #: site/course/course-content.php:90 site/course/course-content.php:474
 #: site/course/course-content.php:798 site/course/course-content.php:1144
@@ -1861,7 +1918,7 @@ msgstr ""
 #: site/course/course-content.php:3285 site/course/course-content.php:3301
 #: site/pages/follow-jesus.php:209
 msgid "S.O.A.P.S. Bible Reading"
-msgstr ""
+msgstr "S.O.A.P.S. Աստվածաշնչի ընթերցում։"
 
 #: site/course/course-content.php:111
 msgid "God uses ordinary people doing simple things to make a big impact."
@@ -1872,10 +1929,12 @@ msgid ""
 "If Jesus intended every one of His followers to obey His Great Commission, "
 "why do so few actually make disciples?"
 msgstr ""
+"Եթե Հիսուսն ակնկալում էր, որ Իր հետևորդներից բոլորը հնազանդեն Իր Մեծ "
+"Առաջադրանքին, այդ դեպքում ինչո՞ւ է  այսքան քիչ մարդ իրականում աշակերտում։"
 
 #: site/course/course-content.php:179
 msgid "When you think of a church, what comes to mind?"
-msgstr ""
+msgstr "Եկեղեցի ասելիս, առաջինը ի՞նչ է Ձեր մտքին գալիս։"
 
 #: site/course/course-content.php:180
 msgid ""
@@ -1885,7 +1944,7 @@ msgstr ""
 
 #: site/course/course-content.php:181
 msgid "Which one do you think would be easier to multiply and why?"
-msgstr ""
+msgstr "Ըստ Ձեզ, որ մեկը ավելի հեշտությամբ կբազմապատկվի և ինչո՞ւ։"
 
 #: site/course/course-content.php:199
 msgid ""
@@ -1901,6 +1960,8 @@ msgstr ""
 msgid ""
 "Is hearing and responding to the Lord really like breathing? Why or why not?"
 msgstr ""
+"Արդյո՞ք Տիրոջը լսելը և արձագանքելը իսկապես նման է շնչելուն։ Ինչո՞ւ և ինչո՞ւ "
+"ոչ։"
 
 #: site/course/course-content.php:244
 msgid ""
@@ -1908,6 +1969,9 @@ msgid ""
 "with Him, and in our ability to stay obediently engaged in what He is doing "
 "around us."
 msgstr ""
+"Աստծո հետ փոխհարաբերության մեջ Նրա ձայնը պարբերաբար լսելը կարևոր "
+"դերակատարություն ունի։ Ինչես նաև այն շատ կարևոր է, որպեսզի կարողանանք մեր "
+"կյանքում և շրջապատում իրականացվող Աստծո գործերի մեջ հնազանդություն դրսևորենք։"
 
 #: site/course/course-content.php:264 site/course/course-content.php:273
 msgid "Practice S.O.A.P.S."
@@ -1921,7 +1985,7 @@ msgstr ""
 
 #: site/course/course-content.php:276 site/course/course-content.php:498
 msgid "Scripture"
-msgstr ""
+msgstr "Աստվածաշնչյան խոսքը"
 
 #: site/course/course-content.php:277
 msgid "Observation"
@@ -1934,7 +1998,7 @@ msgstr ""
 #: site/course/course-content.php:279 site/course/course-content.php:497
 #: site/pages/follow-jesus.php:192
 msgid "Prayer"
-msgstr ""
+msgstr "Աղոթք"
 
 #: site/course/course-content.php:280
 msgid "Sharing"
@@ -1970,7 +2034,7 @@ msgstr ""
 
 #: site/course/course-content.php:332
 msgid "Break into groups of two or three people of the same gender."
-msgstr ""
+msgstr "Բաժանվեք երկու, երեք խոգուց բաղկացած խմբերի ըստ սեռի։"
 
 #: site/course/course-content.php:333
 msgid ""
@@ -2026,7 +2090,7 @@ msgstr ""
 #: site/course/course-content.php:5318 site/course/course-content.php:5458
 #: site/course/course-content.php:5580
 msgid "OBEY"
-msgstr ""
+msgstr "ՀՆԱԶԱՆԴՎԵԼ"
 
 #: site/course/course-content.php:373 site/course/course-content.php:1033
 #: site/course/course-content.php:1421 site/course/course-content.php:1876
@@ -2042,7 +2106,7 @@ msgstr ""
 #: site/course/course-content.php:5319 site/course/course-content.php:5459
 #: site/course/course-content.php:5581
 msgid "SHARE"
-msgstr ""
+msgstr "ԿԻՍՎԵԼ"
 
 #: site/course/course-content.php:376 site/course/course-content.php:3316
 msgid ""
@@ -2050,6 +2114,10 @@ msgid ""
 "meeting. Focus on Matthew 5-7, read it at least once a day. Keep a daily "
 "journal using the S.O.A.P.S. format."
 msgstr ""
+"Մինչև հաջորդ հավաքույթը  գործի դրեք այն, ինչ կարդացինք S.O.A.P.S. "
+"Աստվածաշնչյան  ընթերացնության նյութում։ Կենտրոնացեք Մատթևոս 5-7-ի վրա, "
+"կարդացեք այն  օրը առնվազն մեկ անգամ։ Համաձայն S.O.A.P.S.-ի ֆորմատի սկսեք "
+"օրագիր վարել։"
 
 #: site/course/course-content.php:377 site/course/course-content.php:3317
 msgid ""
@@ -2148,6 +2216,8 @@ msgstr ""
 #: site/course/course-content.php:5538 site/course/course-content.php:5664
 msgid "Take a few moments to see how your group did this week."
 msgstr ""
+"Մի քանի րոպե հատկացրեք՝ քննարկելով, թե ինչպիսին էր անցյալ շաբաթը Ձեր խմբի "
+"համար։"
 
 #: site/course/course-content.php:470 site/course/course-content.php:794
 #: site/course/course-content.php:1513 site/course/course-content.php:1751
@@ -2168,14 +2238,18 @@ msgid ""
 "consumers – then we need to learn and share four main ways God makes "
 "everyday followers more like Jesus:"
 msgstr ""
+"Եթե ցանկանում ենք ունենալ աշակերտներ, որոնք բազմապատկվում են, այսինքն "
+"դառնում են հոգևոր արտադրողներ  և ոչ թե պարզապես սպառողներ, այդ դեպքում պետք "
+"է սովորենք  և մարդկանց պատմենք հիմնական այն չորս եղանակների մասին, որով "
+"Աստված Իր հետևորդներին ամեն օր դարձնում է ավելի նման Հիսուսն։"
 
 #: site/course/course-content.php:499
 msgid "Body Life"
-msgstr ""
+msgstr "Ֆիզիկական կյանք"
 
 #: site/course/course-content.php:500
 msgid "Persecution and Suffering"
-msgstr ""
+msgstr "Հալածանք և տառապանք"
 
 #: site/course/course-content.php:527
 msgid ""
@@ -2185,17 +2259,20 @@ msgstr ""
 
 #: site/course/course-content.php:528
 msgid "Which ones do you feel unsure about?"
-msgstr ""
+msgstr "Ո՞ր բնագավառում ես դեռ անվստահ։"
 
 #: site/course/course-content.php:529
 msgid "How ready do you feel when it comes to training others?"
 msgstr ""
+"Երբ խոսքը գնում է ուրիշներին մարզելու մասին, Ձեզ որքանո՞վ եք պատրաստ զգում։"
 
 #: site/course/course-content.php:547
 msgid ""
 "The Bible tells us that prayer is our chance to speak to and hear from the "
 "same God who created us!"
 msgstr ""
+"Աստվածաշունչն ասում է, որ աղոթքը Աստծո հետ խոսելու և Նրանից, ով ստեղծել է "
+"մեզ, լսելու հնարավորություն է"
 
 #: site/course/course-content.php:571 site/course/course-content.php:3671
 msgid "Pray the Prayer Cycle for an hour individually"
@@ -2211,23 +2288,27 @@ msgid ""
 "minutes for everyone to both find a quiet place to pray and to make their "
 "way back to the group."
 msgstr ""
+"Նշեք, թե որքան ժամանակ հետո խումբը պետք է վերադառնա և վրամիավորվի։ Դրան "
+"լրացուցիչ մի քանի րոպե ևս հատկացրեք, որպեսզի մարդիկ աղոթելու համար լուռ մի "
+"անկյուն գտնեն, իսկ հետո էլ միանան խմբին։"
 
 #: site/course/course-content.php:592
 msgid "What is your reaction to spending an hour in prayer?"
-msgstr ""
+msgstr "Մեկ ժամ աղոթքում անցկացնելու վերաբերյալ Ձեր արձագանքն ինչպիսինն էր։"
 
 #: site/course/course-content.php:593
 msgid "How do you feel?"
-msgstr ""
+msgstr "Ի՞նչպես եք Ձեզ զգում։"
 
 #: site/course/course-content.php:594
 msgid "Did you learn or hear anything?"
-msgstr ""
+msgstr "Ինչ-որ բան սովորեցի՞ք կամ լսեցի՞ք։"
 
 #: site/course/course-content.php:595
 msgid ""
 "What would life be like if you made this kind of prayer a regular habit?"
 msgstr ""
+"Ինչպիսի՞ն կլիներ կյանքը, եթե նմանատիպ աղոթքը Ձեր առօրյայի մի մասը լիներ։"
 
 #: site/course/course-content.php:613
 msgid ""
@@ -2247,7 +2328,7 @@ msgstr ""
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr ""
+msgstr "Կազմեք 100 հոգուց բաղկացած Ձեր ցանկը"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
@@ -2273,7 +2354,7 @@ msgstr ""
 #: site/pages/_strings-mobile-pwa.php:37 site/pages/share.php:28
 #: site/pages/share.php:76 site/parts/nav.php:43
 msgid "Share"
-msgstr ""
+msgstr "Կիսվել"
 
 #: site/course/course-content.php:686 site/course/course-content.php:3567
 msgid ""
@@ -2344,24 +2425,29 @@ msgid ""
 "Jesus said, “Go and make disciples of all nations, BAPTIZING them in the "
 "name of the Father and of the Son and of the Holy Spirit…”"
 msgstr ""
+"Հիսուսն ասաց․ \"Գնացեք և աշակերտեցեք բոլոր ազգերին, ՄԿՐՏԵԼՈՎ նրանց Հոր, "
+"Որդու և Սուրբ Հոգու անունով․․․\""
 
 #: site/course/course-content.php:985
 msgid "Have you ever baptized someone?"
-msgstr ""
+msgstr "Երբև ինչ-որ մեկին մկրտե՞լ ես։"
 
 #: site/course/course-content.php:986
 msgid "Would you even consider it?"
-msgstr ""
+msgstr "Իսկ դրա մասին երբևէ մտածե՞լ ես։"
 
 #: site/course/course-content.php:987
 msgid ""
 "If the Great Commission is for every follower of Jesus, does that mean every "
 "follower is allowed to baptize others? Why or why not?"
 msgstr ""
+"Եթե Մեծ Առաջադրանք Հիուսի բոլոր հետևորդների համար է, ուրեմն, արդյո՞ք դա "
+"նշանակում է, որ յուրաքանչյուր հետևորդ կարող է մկրտել ուրիշների։ Ինչո՞ւ այո "
+"կամ ինչո՞ւ ոչ։"
 
 #: site/course/course-content.php:998
 msgid "IMPORTANT REMINDER – Have you been baptized?"
-msgstr ""
+msgstr "ԿԱՐԵՎՈՐ ՀԻՇԵՑՈՒՄ - Իսկ Դուք մկրտվա՞ծ եք։"
 
 #: site/course/course-content.php:999
 msgid ""
@@ -2369,6 +2455,9 @@ msgid ""
 "this training. Invite your group to be a part of this important day when you "
 "celebrate saying \"yes\" to Jesus."
 msgstr ""
+"Եթե ոչ, այդ դեպքում դա կազմակերպեք նույնիսկ մինչև հաջորդ հանդիպումը։ Կարող "
+"եք այս կարևոր օրվան ձեր խմբի անդամներին էլ հրավիրել, երբ Դուք Հիսուսին կասեք "
+"\"Այո\"։"
 
 #: site/course/course-content.php:1016 site/pages/follow-jesus.php:243
 msgid "The Spiritual Economy"
@@ -2446,23 +2535,29 @@ msgid ""
 "Is this the pattern you were taught when you first began to follow Jesus? If "
 "not, what was different?"
 msgstr ""
+"Երբ նոր սկսեցիք հետևել Հիսուսին, արդյո՞ք Ձեզ այս եղանակն էին սովորեցրել։ Եթե "
+"ոչ, ո՞րն է տարբերությունը։"
 
 #: site/course/course-content.php:1243
 msgid ""
 "After you came to faith, how long was it before you began to disciple others?"
-msgstr ""
+msgstr "Հավատքի գալուց հետո որքա՞ն ժամանակ հետո սկսեցիք աշակերտել ուրիշներին։"
 
 #: site/course/course-content.php:1244
 msgid ""
 "What do you think would happen if new followers started sharing and "
 "discipling others, immediately?"
 msgstr ""
+"Ըստ Ձեզ, ի՞նչ կարող է տեղի ունենալ, երբ բոլոր նորադարձ հետևորդները անմիջապես "
+"սկսեն աշակերտել ուրիշներին։"
 
 #: site/course/course-content.php:1262
 msgid ""
 "What do ducklings have to do with disciple making? They lead and follow at "
 "the same time."
 msgstr ""
+"Բադի ճուտիկները աշակերտելու հետ ի՞նչ առնչություն ունեն։ Նրանք միևնույն "
+"ժամանակ առաջնորդում և հետևում են։"
 
 #: site/course/course-content.php:1288
 msgid ""
@@ -2476,6 +2571,8 @@ msgid ""
 "What is one area of discipleship that you feel you could share with others? "
 "Who is someone that you could share with?"
 msgstr ""
+"Իսկ ո՞ր բնագավառի մասին Դուք  կարող եք ուրիշներին պատմել։ Ո՞վ է այն մեկը, "
+"ում կարող եք փոխանցել։"
 
 #: site/course/course-content.php:1307
 msgid "Have you ever stopped to think about where God’s Kingdom... isn’t?"
@@ -2487,6 +2584,9 @@ msgid ""
 "seemed as if God was just... missing? These are usually the places where God "
 "wants to work the most."
 msgstr ""
+"Երբևէ ունեցե՞լ եք այնպիսի մի փորձառություն, երբ գնացել եք մի տեղ, թաղամաս "
+"կամ նույնիսկ քաղաք, որտեղ Աստված կարծես բացակայում էր։ Սրանք այն վայրերն են, "
+"որտեղ Աստված ցանկանում է, որ ամենաշատը գործենք։"
 
 #: site/course/course-content.php:1334
 msgid ""
@@ -2496,7 +2596,7 @@ msgstr ""
 
 #: site/course/course-content.php:1335
 msgid "Why do you think that is?"
-msgstr ""
+msgstr "Ըստ Ձեզ ինչո՞՞ւ է դա այդպես։"
 
 #: site/course/course-content.php:1336
 msgid ""
@@ -2509,6 +2609,9 @@ msgid ""
 "this bread will live forever. This bread is my flesh, which I will give for "
 "the life of the world.”"
 msgstr ""
+"Հիսուսն ասաց․ \"Ես եմ կենդանի հացը, որ երկնքից է իջել։ Եթե մեկն այս հացից "
+"ուտի, հավիտյան կապրի։ Այն հացը, որը ես կտամ, իմ մարմինն է, որը ես տալու եմ "
+"աշխարհքի կյանքի համար\"։"
 
 #: site/course/course-content.php:1378
 msgid "Celebrate the Lord’s Supper"
@@ -2561,6 +2664,8 @@ msgid ""
 "demon-possessed man in the Gadarenes) really be a Person of Peace? Why or "
 "why not?"
 msgstr ""
+"Կարո՞ղ է արդյոք \"վատ համբավ\" ունեցող մեկը (ինչպես օրինակ սամարացի կինը, "
+"կամ գերգեսացի դիվահարը) խաղաղության որդի լինել։ Ինչո՞ւ այո, և ինչո՞ւ ոչ։"
 
 #: site/course/course-content.php:1594
 msgid ""
@@ -2593,16 +2698,21 @@ msgid ""
 "Break into groups of two or three and go out into the community to practice "
 "Prayer Walking."
 msgstr ""
+"Բաժանվեք երկուսից երեք հոգուց բաղկացած խմբերի և գնացեք մարդկանց մեջ և գործի "
+"դրեք Աղոթքի քայլերթը։"
 
 #: site/course/course-content.php:1639 site/course/course-content.php:4498
 msgid ""
 "Choosing a location can be as simple as walking outside from where you are "
 "now, or you could plan to go to a specific destination."
 msgstr ""
+"Տարածքի ընտրության հարցում կարող եք Ձեր գտնվելու վայրից ինչ-որ մի "
+"ուղղությամբ քայլել, կամ  էլ հատուկ ինչ-որ տեղանք ընտրել։"
 
 #: site/course/course-content.php:1640 site/course/course-content.php:4499
 msgid "Go as God leads, and plan on spending 60-90 minutes on this activity."
 msgstr ""
+"Գնացեք, որտեղ Տերն առաջնորդում է, և քայլերթի համար 60-90 րոպե հատկացրեք։"
 
 #: site/course/course-content.php:1641
 msgid "This session ends with the prayer walking activity."
@@ -2667,6 +2777,8 @@ msgid ""
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
 msgstr ""
+"Հետևյալ տեսանյութում Ձեզ կմարզեն  ինտերակտիվ 3/3 խմբի միջոցով, որտեղ Դուք "
+"կսովորեք մի սկզբունք, այնուհետև «կսեղմեք դադարը» և գործի կդնեք այն խմբի հետ:"
 
 #: site/course/course-content.php:1843 site/course/course-content.php:4757
 msgid ""
@@ -2678,6 +2790,7 @@ msgstr ""
 #: site/course/course-content.php:1844 site/course/course-content.php:4758
 msgid "Could a 3/3 Group be considered a Simple Church? Why or why not?"
 msgstr ""
+"Արդյո՞ք 3/3 խումբը կարելի է համարել որպես պարզ եկեղեցի։ Ինչո՞ւ և ինչո՞ւ ոչ։"
 
 #: site/course/course-content.php:1879 site/course/course-content.php:4790
 msgid ""
@@ -2691,6 +2804,8 @@ msgid ""
 "your group meets again. Share this person’s name with the group before you "
 "go."
 msgstr ""
+"Աղոթեք, որ Աստված ցույց տա, թե ում պետք է փոխանցեք 3/3 Խմբի ձևաչափը մինչև "
+"հաջորդ հանդիպումը։ Նախքան հեռանալը այդ մարդու անունը ասեք խմբին։"
 
 #: site/course/course-content.php:1905 site/course/course-content.php:1910
 #: site/course/course-content.php:3859 site/course/course-content.php:3864
@@ -2713,24 +2828,29 @@ msgid ""
 "Have you ever learned how to ride a bicycle? Have you ever helped someone "
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
+"Երբևէ հեծանիվ քշել սովորե՞լ եք։ Իսկ օգնե՞լ եք մեկին հեծանիվ քշել սովորել։ "
+"Եթե այո, ուրեմն հավանական է, որ արդեն գիտեք Մարզման շղթայի մասին"
 
 #: site/course/course-content.php:2022
 msgid "Have you ever been a part of a Training Cycle?"
-msgstr ""
+msgstr "Երբև Մարզման շրջանի օղակ հանդիսացե՞լ ես։"
 
 #: site/course/course-content.php:2023
 msgid "Who did you train? Or who trained you?"
-msgstr ""
+msgstr "Ո՞ւմ էիր դու մարզում։ Կամ ո՞վ էր քեզ մարզում։"
 
 #: site/course/course-content.php:2024
 msgid ""
 "Could the same person be at different parts of the Training Cycle while "
 "learning different skills?"
 msgstr ""
+"Հնարավո՞ր է արդյոք, որ այդ նույն մարդը Մարզման այդ շրջանում տարբեր "
+"օղակներում հանդես գար՝ մինչ ինքն էլ իր հերթին տարբեր հմտություններ էր ձեռք "
+"բերում։"
 
 #: site/course/course-content.php:2025
 msgid "What would it look like to train someone like that?"
-msgstr ""
+msgstr "Նման մարդուն մարզելը ինչպես է կատարվում։"
 
 #: site/course/course-content.php:2041 site/course/course-content.php:2256
 msgid ""
@@ -2752,11 +2872,11 @@ msgstr ""
 
 #: site/course/course-content.php:2063
 msgid "What did you like best about the 3/3 Group? Why?"
-msgstr ""
+msgstr "3/3 Խմբում Ձեզ ամենաշատը ի՞նչն է դուր գալիս։ Ինչո՞ւ։"
 
 #: site/course/course-content.php:2064
 msgid "What was the most challenging? Why?"
-msgstr ""
+msgstr "Ի՞նչն էր, որ ամենադժվարն էր։ Ինչո՞ւ։"
 
 #: site/course/course-content.php:2078 site/course/course-content.php:3064
 #: site/course/course-content.php:3546 site/course/course-content.php:4614
@@ -2796,6 +2916,10 @@ msgid ""
 "faithfulness to come so far in this training. Ask God to have His Holy "
 "Spirit remind everyone in the group that they can do nothing without Him!"
 msgstr ""
+"Աղոթեք և շնորհակալություն հայտնեք Աստծուն, որ Ձեր խմբին տվել է էներգիա, "
+"ֆոկուս և հավատարմություն այս դասընթացում  մինչև այս կետը հասնելու համար։ "
+"Խնդրեք Աստծուն, որ Իր Սուրբ Հոգին հիշեցնի մեզ, որ առանց Իրեն մենք ոչինչ չենք "
+"կարող անել։"
 
 #: site/course/course-content.php:2192
 msgid "And we will practice this tool from our toolkit:"
@@ -2804,17 +2928,20 @@ msgstr ""
 #: site/course/course-content.php:2212
 msgid ""
 "Jesus said, “Whoever wishes to become great among you shall be your servant.”"
-msgstr ""
+msgstr "Հիսուսն ասաց․ \"Ձեզանից ով ցանկանա մեծ լինել, ձեր ծառան պետք է լինի\"։"
 
 #: site/course/course-content.php:2239
 msgid ""
 "Is there a group of followers of Jesus you know that are already meeting or "
 "would be willing to meet and form a Leadership Cell to learn Zúme Training?"
 msgstr ""
+"Ճանաչո՞ւմ եք արդյոք Հիսուսի հետևորդների, ովքեր արդեն իսկ հավաքվում են կամ "
+"ցանկություն ունեն հավաքվել և Առաջնորդության խմբակ կազմել՝  Zúme  դասընթացն "
+"անցնելու նպատակով։"
 
 #: site/course/course-content.php:2240
 msgid "What would it take to bring them together?"
-msgstr ""
+msgstr "Նրանց մեկտեղ հավաքելու համար ի՞նչ է հարկավոր։"
 
 #: site/course/course-content.php:2257
 msgid ""
@@ -2877,11 +3004,11 @@ msgstr ""
 
 #: site/course/course-content.php:2441
 msgid "What is the most exciting idea you heard in this video? Why?"
-msgstr ""
+msgstr "Այս տեսանյութում լսածդ ամենուշագրավ միտքը ո՞րն է։ Ինչո՞ւ։"
 
 #: site/course/course-content.php:2442
 msgid "What is the most challenging idea? Why?"
-msgstr ""
+msgstr "Իսկ ամենաբարդ գաղափարը ո՞րն է։ Ինչո՞ւ։"
 
 #: site/course/course-content.php:2460
 msgid ""
@@ -2889,10 +3016,14 @@ msgid ""
 "because where we all spend our eternity — an existence that outlasts time — "
 "is determined in the very short time we call “life.“"
 msgstr ""
+"Բազմապատկվելը կարևոր է, սակայն արագ բազմապատկվելը շատ ավելի կարևոր է։ "
+"Արագությունը կարևոր է,  քանի որ թե որտեղ ենք  բոլորս անցկացնելու "
+"հավիտենականությունը՝ մի բան, որը ժամանակ չի ճանաչում, որոշվում է շատ կարճ "
+"ժամանակահատվածում, որը կոչվում է \"կյանք\"։"
 
 #: site/course/course-content.php:2486
 msgid "Why is pace important?"
-msgstr ""
+msgstr "Ինչո՞ւ է արագությունը կարևոր։"
 
 #: site/course/course-content.php:2487
 msgid ""
@@ -2903,7 +3034,7 @@ msgstr ""
 #: site/course/course-content.php:2488
 msgid ""
 "What is one thing you can do starting this week that will make a difference?"
-msgstr ""
+msgstr "Իսկ այս շաբաթվանից սկսած ի՞նչ կարող ես անել, որը փոփոխություն կբերի։"
 
 #: site/course/course-content.php:2506
 msgid ""
@@ -2971,7 +3102,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:83
 #: utilities/integrations/replace-placeholder.php:84
 msgid "Get a Coach"
-msgstr ""
+msgstr "Գտնել մարզչի"
 
 #: site/course/course-content.php:2625
 msgid ""
@@ -3148,6 +3279,9 @@ msgid ""
 "simple churches and making disciples who multiply than many pastors and "
 "missionaries around the world!"
 msgstr ""
+"Գուցե չգիտեք, բայց հիմա Դուք ավելի շատ  գործնական պատրաստվածություն ունեք "
+"պարզ եկեղեցիներ սկսելու և բազմապատկվող աշակերտություն սկսելու հարցում, քան "
+"աշխարհում շատ հովիվներ և միսիոներներ։"
 
 #: site/course/course-content.php:2879
 msgid ""
@@ -3162,12 +3296,18 @@ msgid ""
 "churches? How do they stay connected and live life together as an extended, "
 "spiritual family? They become a network!"
 msgstr ""
+"Ի՞նչ է լինում այն եկեղեցիների հետ, որոնք աճում են և նոր եկեղեցիներ են "
+"սկսում, որոնք էլ իրենց հերթին նոր եկեղեցիներ են սկսում։ Ինչպե՞ս են նրանք "
+"շարունակում կապված մնալ և ինչպես են պահպանում կապը՝ որպես ընդարձակված հոգևոր "
+"ընտանիք։ Նրանք արդեն դառնում են ցանց։"
 
 #: site/course/course-content.php:2943
 msgid ""
 "Are there advantages when networks of simple churches are connected by deep, "
 "personal relationships? What are some examples that come to mind?"
 msgstr ""
+"Արդյոք կա որևէ արտոնություն, երբ պարզ եկեղեցիները միմյանց հետ կապված են "
+"խորը, անձնական փոխհարաբերություններով։ Ի՞նչ օրինակներ մտաբերեցիք։"
 
 #: site/course/course-content.php:2961
 msgid ""
@@ -3726,7 +3866,7 @@ msgstr ""
 #: site/parts/footer.php:41 site/parts/nav.php:20 site/parts/nav.php:26
 #: site/parts/nav.php:67 site/parts/nav.php:87
 msgid "Resources"
-msgstr ""
+msgstr "Ռեսուրսներ"
 
 #: site/course/presenter.php:157
 msgid "Exit Course"
@@ -3754,7 +3894,7 @@ msgstr ""
 
 #: site/course/presenter.php:163 site/dashboard/wizard.php:246
 msgid "Session"
-msgstr ""
+msgstr "Դասընթաց"
 
 #: site/course/presenter.php:165
 msgid "View Transcript"
@@ -3812,7 +3952,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:160 site/pages/_strings-mobile-pwa.php:27
 msgid "Delete"
-msgstr ""
+msgstr "Ջնջել"
 
 #: site/dashboard/dashboard.php:162
 msgid "Active"
@@ -3836,7 +3976,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:167 site/profile/profile.php:154
 msgid "Logout"
-msgstr ""
+msgstr "Ելք"
 
 #: site/dashboard/dashboard.php:168 site/pages/share.php:119
 msgid "Filter"
@@ -3861,23 +4001,23 @@ msgstr ""
 #: site/dashboard/dashboard.php:175 site/dashboard/wizard.php:198
 #: site/dashboard/wizard.php:244 site/profile/profile.php:111
 msgid "Name"
-msgstr ""
+msgstr "Անուն"
 
 #: site/dashboard/dashboard.php:176 site/dashboard/wizard.php:196
 #: site/dashboard/wizard.php:214 site/profile/profile.php:115
 #: zume-training-system.php:356
 msgid "Phone"
-msgstr ""
+msgstr "Հեռախոսահամար"
 
 #: site/dashboard/dashboard.php:177 site/dashboard/wizard.php:212
 #: site/login/login-template.php:450 site/login/login-template.php:451
 #: site/profile/profile.php:119 zume-training-system.php:354
 msgid "Email"
-msgstr ""
+msgstr "էլ-փոստ"
 
 #: site/dashboard/dashboard.php:178
 msgid "Linked Accounts"
-msgstr ""
+msgstr "Կցված հաշիվենր"
 
 #: site/dashboard/dashboard.php:179
 msgid "Communications Email"
@@ -3886,7 +4026,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:180 site/dashboard/wizard.php:197
 #: site/profile/profile.php:123
 msgid "City"
-msgstr ""
+msgstr "Քաղաք"
 
 #: site/dashboard/dashboard.php:181
 msgid "No Locations found"
@@ -3895,7 +4035,7 @@ msgstr ""
 #: site/dashboard/dashboard.php:182 site/dashboard/wizard.php:299
 #: site/dashboard/wizard.php:300 site/dashboard/wizard.php:324
 msgid "Location"
-msgstr ""
+msgstr "Գտնվելու վայրը"
 
 #: site/dashboard/dashboard.php:183 site/dashboard/wizard.php:304
 #: site/dashboard/wizard.php:308 site/dashboard/wizard.php:325
@@ -3907,7 +4047,7 @@ msgstr ""
 #: site/parts/language-menu.php:7 site/profile/profile.php:133
 #: utilities/post-types/posttype-pieces.php:300
 msgid "Language"
-msgstr ""
+msgstr "Լեզու"
 
 #: site/dashboard/dashboard.php:185 site/dashboard/wizard.php:248
 msgid "Timezone"
@@ -4163,7 +4303,7 @@ msgstr ""
 
 #: site/dashboard/dashboard.php:259 site/pages/_strings-mobile-pwa.php:31
 msgid "Start Session"
-msgstr ""
+msgstr "Սկսել դասընթաց"
 
 #: site/dashboard/dashboard.php:260
 msgid "Show details"
@@ -4367,23 +4507,27 @@ msgstr ""
 #: site/dashboard/dashboard.php:311
 msgid ""
 "I will invite the following people to begin an Accountability Group with me:"
-msgstr ""
+msgstr "Ես կհրավիրեմ հետևյալ մարդկանց՝  միանալու ինձ Հաշվետվության Խմբում․"
 
 #: site/dashboard/dashboard.php:312
 msgid ""
 "I will challenge the following people to begin their own Accountability "
 "Groups and train them how to do it:"
 msgstr ""
+"Ես կքաջալերեմ հետևյալ մարդկանց սկսելու իրենց Հաշվետու Խմբերը և կմարզեմ նրանց "
+"դա անելու համար․"
 
 #: site/dashboard/dashboard.php:313
 msgid "I will invite the following people to begin a 3/3 Group with me:"
-msgstr ""
+msgstr "Ես կհրավիրեմ հետևյալ մարդկանց՝ ինձ հետ սկսելու 3/3 Խումբ։"
 
 #: site/dashboard/dashboard.php:314
 msgid ""
 "I will challenge the following people to begin their own 3/3 Groups and "
 "train them how to do it:"
 msgstr ""
+"Ես կքաջալերեմ հետևյալ մարդկանց սկսելու 3/3 խումբ և կսովորեցնեմ նրանց, թե "
+"ինչպես պետք է դա անեն։"
 
 #: site/dashboard/dashboard.php:315
 msgid ""
@@ -4394,11 +4538,11 @@ msgstr ""
 #: site/dashboard/dashboard.php:316
 msgid ""
 "I will invite the following people to participate in Prayer Walking with me:"
-msgstr ""
+msgstr "Ես կհրավիրեմ հետևյալ մարդկանց ինձ հետ մասնակցելու Աղոթքի քայլերթին։"
 
 #: site/dashboard/dashboard.php:317
 msgid "I will Prayer Walk once every [days / weeks / months]."
-msgstr ""
+msgstr "Ես Աղոթքի քայլերթի կգնամ (օրերի թիվ/շաբաթը/ամիսը) մեկ անգամ։"
 
 #: site/dashboard/dashboard.php:318
 msgid ""
@@ -4411,26 +4555,28 @@ msgid ""
 "I will challenge the following people to use the Prayer Cycle tool on a "
 "periodic basis:"
 msgstr ""
+"Ես կքաջալերեմ հետևյալ մարդկանց՝ պարբերաբար օգտագործել Աղոթքի շրջան գործիքը․"
 
 #: site/dashboard/dashboard.php:320
 msgid "I will use the Prayer Cycle tool once every [days / weeks / months]."
 msgstr ""
+"Ես կօգտագործեմ Աղոթքի շրջան գործիքը  (օրերի թիվ/շաբաթը/ամիսը) մեկ անգամ։"
 
 #: site/dashboard/dashboard.php:321
 msgid ""
 "I will invite the following people to be part of a Leadership Cell that I "
 "will lead:"
-msgstr ""
+msgstr "Ես կհրավիրեմ հետևյալ մարդկանց մասնակցելու Առաջնորդության խմբակին․"
 
 #: site/dashboard/dashboard.php:322
 msgid ""
 "I will encourage the following people to go through this Zúme Training "
 "course:"
-msgstr ""
+msgstr "Ես կքաջալերեմ հետևյալ մարդկանց անցնելու Zúme դասընթացը․"
 
 #: site/dashboard/dashboard.php:323
 msgid "Other commitments:"
-msgstr ""
+msgstr "Այլ պարտավորություններ"
 
 #: site/dashboard/wizard.php:30
 msgid "Wizard"
@@ -4466,7 +4612,7 @@ msgstr ""
 #: site/dashboard/wizard.php:204 site/dashboard/wizard.php:227
 #: site/dashboard/wizard.php:317 site/pages/_strings-mobile-pwa.php:35
 msgid "Next"
-msgstr ""
+msgstr "Հաջորդը"
 
 #: site/dashboard/wizard.php:174 site/dashboard/wizard.php:306
 msgid "Skip"
@@ -4474,7 +4620,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:175 site/pages/_strings-mobile-pwa.php:36
 msgid "Finish"
-msgstr ""
+msgstr "Ավարտել"
 
 #: site/dashboard/wizard.php:177
 msgid "No locations found"
@@ -4568,7 +4714,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:213 zume-training-system.php:355
 msgid "Text"
-msgstr ""
+msgstr "Հաղորդագրություն"
 
 #: site/dashboard/wizard.php:219
 msgid "What is your language preference?"
@@ -4576,7 +4722,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:221
 msgid "How can we serve you?"
-msgstr ""
+msgstr "Ինչպե՞ս կարող ենք ծառայել Ձեք։"
 
 #: site/dashboard/wizard.php:223
 msgid "Technical Assistance"
@@ -4708,11 +4854,11 @@ msgstr ""
 
 #: site/dashboard/wizard.php:277 site/pages/_strings-mobile-pwa.php:10
 msgid "Yes"
-msgstr ""
+msgstr "Այո"
 
 #: site/dashboard/wizard.php:278 site/pages/_strings-mobile-pwa.php:11
 msgid "No"
-msgstr ""
+msgstr "Ոչ"
 
 #: site/dashboard/wizard.php:279
 msgid "What time of day?"
@@ -4752,7 +4898,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:288
 msgid "Other"
-msgstr ""
+msgstr "Այլ"
 
 #: site/dashboard/wizard.php:289
 msgid "What is the name of the training group?"
@@ -4807,7 +4953,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:301
 msgid "Group Name"
-msgstr ""
+msgstr "Խմբի անունը"
 
 #: site/dashboard/wizard.php:302
 msgid "Group name"
@@ -4831,7 +4977,7 @@ msgstr ""
 
 #: site/dashboard/wizard.php:314
 msgid "Add"
-msgstr ""
+msgstr "Ավելացնել"
 
 #: site/dashboard/wizard.php:315
 msgid "Add some dates to your schedule"
@@ -4869,54 +5015,60 @@ msgid ""
 "Your password reset link appears to be invalid. Please request a new link "
 "below."
 msgstr ""
+"Գաղտանաբառի փոփոխման հղման ժամկետը կարծես թե սպառված է։ Գնացեք ներքև նոր "
+"հղում ստանալու համար։"
 
 #: site/login/login-template.php:70
 msgid "Your password reset link has expired. Please request a new link below."
 msgstr ""
+"Գաղտնաբառի փոփոխման հղման ժամկետը սպառված է։ Գնացեք ներքև նոր հղում ստանալու "
+"համար։"
 
 #: site/login/login-template.php:80
 msgid "Missing form verification. Refresh and try again."
-msgstr ""
+msgstr "Ստուգման ձևաթուղթը բացակայում է։ Թարմացրեք էջը և կրկին փորձեք։"
 
 #: site/login/login-template.php:81
 msgid "Missing username or email address."
-msgstr ""
+msgstr "Օգտանունը կամ էլ-փոստը բացակայում է։"
 
 #: site/login/login-template.php:82
 msgid "ERROR: Enter a username or email address."
-msgstr ""
+msgstr "ՍԽԱԼ։ Մուտքագրեք օգտանունը կամ էլ-փոստը։"
 
 #: site/login/login-template.php:83
 msgid "ERROR: There is no user registered with that email address."
-msgstr ""
+msgstr "ՍԽԱԼ։ Այդ էլ-փոստով որևէ օգտատեր գրանցված չէ։"
 
 #: site/login/login-template.php:84
 msgid "ERROR: There is no user registered with that username."
-msgstr ""
+msgstr "ՍԽԱԼ։ Այդ օգտանունով որևէ օգտատեր գրանցված չէ։"
 
 #: site/login/login-template.php:85
 msgid "ERROR: Invalid username or email."
-msgstr ""
+msgstr "ՍԽԱԼ։ Սխալ օգտանուն կամ էլ-փոստի հասցե։"
 
 #: site/login/login-template.php:98 site/login/login-template.php:134
 msgid "Get New Password"
-msgstr ""
+msgstr "Ստանալ նոր գաղտնաբառ։"
 
 #: site/login/login-template.php:123 site/login/login-template.php:124
 #: site/login/login-template.php:691
 msgid "Email Address"
-msgstr ""
+msgstr "Էլ-հասցե"
 
 #: site/login/login-template.php:139
 msgid ""
 "Your password reset email has been sent. Check your email or junk mail for "
 "the link to reset your password."
 msgstr ""
+"Գաղտնաբառի փոփոխման էլ-նամակը արդեն իսկ ուղարկվել է։ Ստուգեք Ձեր էլ-փոստը "
+"կամ անպետք նամակների փոստարկղը՝ գտնելու Ձեր գաղտնաբառը փոփոխելու հղումը։"
 
 #: site/login/login-template.php:190 site/login/login-template.php:276
 #: site/login/login-template.php:468
 msgid "Passwords do not match. Please, try again."
-msgstr ""
+msgstr "Գատնաբառերը չեն համապատասխանում։ Խնդրում ենք կրկին փորձել։"
 
 #: site/login/login-template.php:217
 #, php-format
@@ -4925,17 +5077,17 @@ msgstr ""
 
 #: site/login/login-template.php:253 site/login/login-template.php:296
 msgid "Reset Password"
-msgstr ""
+msgstr "Փոխել գաղտնաբառը։"
 
 #: site/login/login-template.php:264
 msgid "Password Required"
-msgstr ""
+msgstr "Պահանջվում է գաղտնաբառ"
 
 #: site/login/login-template.php:265 site/login/login-template.php:457
 #: site/login/login-template.php:458 site/login/login-template.php:692
 #: site/login/login-template.php:825
 msgid "Password"
-msgstr ""
+msgstr "Գաղտնաբառ"
 
 #: site/login/login-template.php:267
 msgid "Please choose a stronger password. This one is too weak."
@@ -4944,7 +5096,7 @@ msgstr ""
 #: site/login/login-template.php:273 site/login/login-template.php:274
 #: site/login/login-template.php:465 site/login/login-template.php:466
 msgid "Re-enter Password"
-msgstr ""
+msgstr "Գաղտնաբառը նորից մուտքագրեք"
 
 #: site/login/login-template.php:378
 msgid "Hello!"
@@ -4959,7 +5111,7 @@ msgstr ""
 #: site/parts/footer.php:16 site/parts/nav.php:27 site/parts/nav.php:88
 #: utilities/apis/cta-api.php:139 utilities/apis/cta-api.php:141
 msgid "Register"
-msgstr ""
+msgstr "Գրանցվել"
 
 #: site/login/login-template.php:413
 msgid "Or"
@@ -4979,11 +5131,11 @@ msgstr ""
 
 #: site/login/login-template.php:472
 msgid "There are some errors in your form."
-msgstr ""
+msgstr "Ձեր տվյալներում որոշ սխալներ կան։"
 
 #: site/login/login-template.php:626
 msgid "User action confirmed."
-msgstr ""
+msgstr "Օգտատիրոջ գործողությունն հաստատված է"
 
 #: site/login/login-template.php:638
 msgid "Welcome back!"
@@ -4993,7 +5145,7 @@ msgstr ""
 #: site/login/login-template.php:769 site/login/login.php:31
 #: site/pages/home.php:108 site/parts/nav.php:28 site/parts/nav.php:89
 msgid "Login"
-msgstr ""
+msgstr "Մուտք"
 
 #: site/login/login-template.php:668
 msgid "or sign in with email"
@@ -5001,11 +5153,11 @@ msgstr ""
 
 #: site/login/login-template.php:674
 msgid "Username or password does not match. Try again."
-msgstr ""
+msgstr "Օգտանունը կամ գաղտնաբառը չեն համապատասխանում։ Կրկին փորձեք։"
 
 #: site/login/login-template.php:693 site/login/login-template.php:826
 msgid "Remember Me"
-msgstr ""
+msgstr "Հիշել ինձ"
 
 #: site/login/login-template.php:745
 msgid "Don't have an account?"
@@ -5013,7 +5165,7 @@ msgstr ""
 
 #: site/login/login-template.php:757
 msgid "Lost your password?"
-msgstr ""
+msgstr "Մոռացե՞լ եք Ձեր գաղտնաբառը"
 
 #: site/login/login-template.php:768
 msgid "Already have an account?"
@@ -5029,36 +5181,38 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:13
 msgid "Account"
-msgstr ""
+msgstr "Հաշիվ"
 
 #: site/pages/_strings-mobile-pwa.php:15
 msgid "Settings"
-msgstr ""
+msgstr "Կարգավորումներ"
 
 #: site/pages/_strings-mobile-pwa.php:16
 msgid "Downloads"
-msgstr ""
+msgstr "Ներբեռնումներ"
 
 #: site/pages/_strings-mobile-pwa.php:18
 msgid "Reset App"
-msgstr ""
+msgstr "Վերակայել հավելվածը"
 
 #: site/pages/_strings-mobile-pwa.php:19
 msgid ""
 "Resetting the app will delete all app data. Are you sure you want to reset?"
 msgstr ""
+"Հավելվածի վերակայման արդյուքնում հավելվածում գտնվող ողջ տվյալները կջնջվեն։ "
+"Վստա՞հ եք, որ ցանկանում եք վերակայել։"
 
 #: site/pages/_strings-mobile-pwa.php:20
 msgid "Help"
-msgstr ""
+msgstr "Օգնություն"
 
 #: site/pages/_strings-mobile-pwa.php:21
 msgid "Workbook"
-msgstr ""
+msgstr "Դասագիրք"
 
 #: site/pages/_strings-mobile-pwa.php:22
 msgid "Sign Out"
-msgstr ""
+msgstr "Ելք"
 
 #: site/pages/_strings-mobile-pwa.php:23
 msgid "Download All"
@@ -5066,43 +5220,43 @@ msgstr ""
 
 #: site/pages/_strings-mobile-pwa.php:24
 msgid "Download"
-msgstr ""
+msgstr "Ներբեռնել"
 
 #: site/pages/_strings-mobile-pwa.php:25
 msgid "Downloading"
-msgstr ""
+msgstr "Ներբեռնում է"
 
 #: site/pages/_strings-mobile-pwa.php:26
 msgid "Queued"
-msgstr ""
+msgstr "Հերթում է"
 
 #: site/pages/_strings-mobile-pwa.php:28
 msgid "Do you want to clear these download errors?"
-msgstr ""
+msgstr "Ցանկանո՞ւմ եք ջնջել ներբեռնման այս սխալները։"
 
 #: site/pages/_strings-mobile-pwa.php:29
 msgid "Tap to persist"
-msgstr ""
+msgstr "Սեղմել այստեղ շարունակելու համար"
 
 #: site/pages/_strings-mobile-pwa.php:30
 msgid "Select Language"
-msgstr ""
+msgstr "Ընտրել լեզուն"
 
 #: site/pages/_strings-mobile-pwa.php:32
 msgid "No sessions available"
-msgstr ""
+msgstr "Որևէ դաս առկա չէ"
 
 #: site/pages/_strings-mobile-pwa.php:33
 msgid "Exit"
-msgstr ""
+msgstr "Ելք"
 
 #: site/pages/_strings-mobile-pwa.php:34
 msgid "Previous"
-msgstr ""
+msgstr "Նախորդ"
 
 #: site/pages/_strings-mobile-pwa.php:38
 msgid "Install"
-msgstr ""
+msgstr "Ներբեռնել"
 
 #: site/pages/_strings-mobile-pwa.php:39
 msgid "This app can be installed to your device. Click to install this app."
@@ -5113,27 +5267,32 @@ msgid ""
 "This app can be installed to your device. Please use the Chrome browser to "
 "do so."
 msgstr ""
+"Այս հավելվածը կարող եք ներբեռնել Ձեր սարքում։ Դա անելու համար բացեք Chrome "
+"բրաուզերը։"
 
 #: site/pages/_strings-mobile-pwa.php:41
 msgid "Learn more"
-msgstr ""
+msgstr "Իմանալ ավելին"
 
 #: site/pages/_strings-mobile-pwa.php:42
 msgid ""
 "Tap on Safari's share icon and tap 'Add to Home Screen' to install this app."
 msgstr ""
+"Այս հավելվածը ներբեռնելու համար սեղմել Safari բրաուզերում  կիսվել կոճակը, "
+"այնուհետև \"Ավելացնել Հիմնական էջում\"։"
 
 #: site/pages/_strings-mobile-pwa.php:43
 msgid "Update"
-msgstr ""
+msgstr "Թարմացնել"
 
 #: site/pages/_strings-mobile-pwa.php:44
 msgid "A new version of this app is available. Click to update this app."
 msgstr ""
+"Առկա է այս հավելվածի նոր տարբերակը։ Հավելվածը թարմացնելու համար սեղմեք այստեղ"
 
 #: site/pages/_strings-mobile-pwa.php:45
 msgid "Storage"
-msgstr ""
+msgstr "Պահոց"
 
 #: site/pages/about.php:27 site/pages/about.php:92 site/pages/messages.php:251
 msgid ""
@@ -5202,7 +5361,7 @@ msgstr ""
 
 #: site/pages/about.php:129
 msgid "1 Training"
-msgstr ""
+msgstr "Դասընթաց 1"
 
 #: site/pages/about.php:133
 msgid "Part 1:"
@@ -5216,7 +5375,7 @@ msgstr ""
 
 #: site/pages/about.php:140
 msgid "2 Simple Churches"
-msgstr ""
+msgstr "Երկու պարզ եկեղեցի"
 
 #: site/pages/about.php:144
 msgid "Part 2:"
@@ -5238,7 +5397,7 @@ msgstr ""
 
 #: site/pages/about.php:154
 msgid "Get Started"
-msgstr ""
+msgstr "Սկսել"
 
 #: site/pages/about.php:159
 msgid "How does Zúme Training Work?"
@@ -5431,23 +5590,23 @@ msgstr ""
 #: site/pages/follow-jesus.php:30 site/pages/follow-jesus.php:139
 #: site/parts/footer.php:17
 msgid "How to Follow Jesus"
-msgstr ""
+msgstr "Ինչպե՞ս հետևել Հիսուսին"
 
 #: site/pages/follow-jesus.php:89 site/pages/pieces.php:93
 msgid "Watch This Video"
-msgstr ""
+msgstr "Դիտեք այս տեսանյութը"
 
 #: site/pages/follow-jesus.php:90 site/pages/pieces.php:94
 msgid "Ask Yourself"
-msgstr ""
+msgstr "Հարցրու ինքդ քեզ"
 
 #: site/pages/follow-jesus.php:91 site/pages/pieces.php:95
 msgid "Download Free Guidebook"
-msgstr ""
+msgstr "Ներբեռնել անվճար ուղեցույցը"
 
 #: site/pages/follow-jesus.php:92 site/pages/pieces.php:96
 msgid "Listen and Read Along"
-msgstr ""
+msgstr "Lսեք և զուգահեռաբար կարդացեք"
 
 #: site/pages/follow-jesus.php:145
 msgid ""
@@ -5462,21 +5621,23 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:163
 msgid "What is a follower of Jesus?"
-msgstr ""
+msgstr "Ո՞վ է Հիսուսի հետևորդը"
 
 #: site/pages/follow-jesus.php:183
 msgid "What are the activities of a follower of Jesus?"
-msgstr ""
+msgstr "Ի՞նչ պետք է անի Հիսուսի հետևորդը"
 
 #: site/pages/follow-jesus.php:207
 msgid "Bible Reading"
-msgstr ""
+msgstr "Աստվածաշնչի ընթերցանություն"
 
 #: site/pages/follow-jesus.php:214
 msgid ""
 "It's important what disciples know — but it's much more important what they "
 "DO with what they know."
 msgstr ""
+"Շատ կարևոր է, թե ինչ գիտեն աշակերտները, սակայն շատ ավելի կարևոր է, թե ինչ են "
+"անում նրանք այդ իմացածով։"
 
 #: site/pages/follow-jesus.php:221
 msgid ""
@@ -5484,10 +5645,13 @@ msgid ""
 "fellowship and practice obeying and sharing what they've learned. In this "
 "way, a 3/3 Group is not just a small group but a Simple Church."
 msgstr ""
+"3/3 խումբը հնարավորություն է ընձեռում Հիսուսի հետևորդներին հավաքվելու, "
+"աղոթելու, սովորելու, աճելու, շփվելու, գործնականում հնազադելու և իրենց "
+"սովորածը ուրիշներին փոխանցելու համար։"
 
 #: site/pages/follow-jesus.php:229
 msgid "Learn how to obey Jesus' commands by going AND staying."
-msgstr ""
+msgstr "Սովորեք հնազանդել Հիսուսի պատվիրաններին՝ գնալով ԵՎ մնալով։"
 
 #: site/pages/follow-jesus.php:233
 msgid ""
@@ -5497,11 +5661,13 @@ msgstr ""
 
 #: site/pages/follow-jesus.php:241
 msgid "Sacrifice and Suffering"
-msgstr ""
+msgstr "Զոհաբերություն և տառապանք"
 
 #: site/pages/follow-jesus.php:255
 msgid "How do I obey Jesus and help others become followers with me?"
 msgstr ""
+"Ինչպե՞ս եմ ես հնազանդում Հիսուսին և օգնում ուրիշներին, որ նրանք էլ ինձ հետ "
+"Հիսուսի հետևորդ դառնան։"
 
 #: site/pages/follow-jesus.php:260
 msgid ""
@@ -5511,37 +5677,45 @@ msgid ""
 "teaching them to obey everything I have commanded you. And surely I am with "
 "you always, to the very end of the age.\""
 msgstr ""
+"Եվ Հիսուսը մոտ գալով՝ նրանց հետ խոսեց և ասաց․ \"Ամեն իշխանություն ինձ տրվեց "
+"երկնքում և երկրի վրա։ Ուրեմն, գնացեք, բոլոր ազգերը աշակերտեք, նրանց մկրտելով "
+"Հոր, Որդու և Սուրբ Հոգու անունով, նրանց սովորեցնելով, որ ամեն ինչ, որ ձեզ "
+"պատվիրեցի պահեն։ Եվ ահա ես ձեզ հետ եմ ամեն օր մինչև աշխարհքի վերջը\"։"
 
 #: site/pages/follow-jesus.php:261
 msgid "Matthew 28:18-20"
-msgstr ""
+msgstr "Մատթևոս 28․18-20"
 
 #: site/pages/follow-jesus.php:264
 msgid "Teaching others to obey and follow Jesus with you"
-msgstr ""
+msgstr "Սովորեցրեք ուրիշներին հնազանդել և Ձեզ հետ միասին հետևել Հիսուսին"
 
 #: site/pages/follow-jesus.php:267
 msgid "Learn what ducklings have to do with disciple-making"
-msgstr ""
+msgstr "Սովորեք, թե ինչ կապ ունեն բադիկները աշակերտության հետ։"
 
 #: site/pages/follow-jesus.php:275
 msgid ""
 "See how disciple making doesn't have to be linear. Multiple things can "
 "happen at the same time."
 msgstr ""
+"Տեսեք, որ աշակերտ պատրաստելը չպետք է գծային գործընթաց լինի։ Մի քանի բան "
+"կարող է միաժամանակ տեղի ունենալ։"
 
 #: site/pages/follow-jesus.php:283
 msgid "Speaking to people YOU KNOW about Jesus"
-msgstr ""
+msgstr "Խոսեք ՁԵԶ ԾԱՆՈԹ մարդկանց հետ Հիսուսի մասին"
 
 #: site/pages/follow-jesus.php:298
 msgid "Speaking to people YOU DON'T KNOW about Jesus"
-msgstr ""
+msgstr "Խոսել ԱՆԾԱՆՈԹ մարդկանց հետ Հիսուսի մասին"
 
 #: site/pages/follow-jesus.php:301
 msgid ""
 "Learn who a person of peace might be and how to know when you've found one."
 msgstr ""
+"Սովորեք, թե ինչպիսին պետք է լինի խաղաղության որդին և ինչպես հասկանալ, որ "
+"գտել ես նրան։"
 
 #: site/pages/follow-jesus.php:305
 msgid ""
@@ -5626,7 +5800,7 @@ msgstr ""
 
 #: site/pages/home.php:129
 msgid "Overview"
-msgstr ""
+msgstr "Ընդհանուր նկարագիր"
 
 #: site/pages/home.php:131
 msgid "Group Discussions"
@@ -5799,6 +5973,13 @@ msgid ""
 "for the Kingdom of God. Zúme aims to equip and empower ordinary believers to "
 "saturate the globe with multiplying disciples in our generation."
 msgstr ""
+"Հունարենում Zúme բառը նշանակում է թթխմոր։ Մատթևոս 13․33-ում Հիսուսն այսպես է "
+"ասում․ \"Երկնքի արքայությունը նման է թթխմորի, որը մի կին վերցրեց և երեք չափ "
+"ալյուրի մեջ դրեց, մինչև որ ամբողջը խմորվեց\"։ Սա ցույց է տալիս, թե ինչպես "
+"սովորական մարդիկ ՝ օգտագործելով սովորական միջոցներ, կարող են արտասովոր "
+"ազդեցություն ունենալ Աստծո Արքայության վրա։ Zúme-ի նպատակն է մարզել և զինել "
+"սովորական հավատացյալներին, որպեսզի մեր օրերում  երկրագունդը լցվի "
+"բազմապատկվող աշակերտներով։"
 
 #: site/pages/home.php:353
 msgid "Ready to take your next steps?"
@@ -5870,7 +6051,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:28 site/pages/privacy-policy.php:79
 msgid "Zúme Privacy Policy"
-msgstr ""
+msgstr "Zúme գաղտնիության կարգ"
 
 #: site/pages/privacy-policy.php:81
 msgid ""
@@ -5883,10 +6064,20 @@ msgid ""
 "clear understanding of how we collect, use, protect or otherwise handle your "
 "Personally Identifiable Information in accordance with our website."
 msgstr ""
+"Գաղտնիության այս կարգը կազմվել է, որպեսզի հնարավոր լինի ավելի լավ "
+"ծառայություն մատուցել նրանց, ովքեր մտահոգված են, թե ինչպես են իրենց «"
+"Անձնական նույնականացման տվյալները» (PII) օգտագործվում առցանց: PII-ը, ինչպես "
+"նկարագրված է ԱՄՆ-ի գաղտնիության և տեղեկատվական անվտանգության մասին օրենքում, "
+"տեղեկատվություն է, որը կարող է օգտագործվել ինքնուրույն կամ այլ "
+"տեղեկությունների հետ որևէ մեկին  նույնականացնելու, նրա հետ կապ հաստատելու "
+"կամ տեղորոշելու կամ տվյալ պարագայում անհատին նույնականացնելու համար: Խնդրում "
+"ենք ուշադիր կարդալ մեր գաղտնիության կարգը՝ հստակ պատկերացում կազմելու համար, "
+"թե ինչպես ենք մենք հավաքագրում, օգտագործում, պաշտպանում կամ  վարվում ձեր "
+"Անձնական նույնականացման տվյալների հետ մեր կայքում:"
 
 #: site/pages/privacy-policy.php:85
 msgid "What permissions do the social sign-on logins ask for?"
-msgstr ""
+msgstr "Ի՞նչ թույլտվություններ են պահանջում  մուտք գործելու համար:"
 
 #: site/pages/privacy-policy.php:86
 msgid ""
@@ -5899,15 +6090,17 @@ msgid ""
 "Public Profile. This includes certain User’s Data such as id, name, picture, "
 "gender, and their locale."
 msgstr ""
+"Հանրային Պրոֆիլ․ Սա իր մեջ ներառում է օգտատերի տվյալներ․ օրինակ "
+"նույնականացման տվյալներ, անուն, նկար, սեռ և տեղայունթյուն։"
 
 #: site/pages/privacy-policy.php:92
 msgid "Email Address."
-msgstr ""
+msgstr "Էլ-հասցե"
 
 #: site/pages/privacy-policy.php:99
 msgid ""
 "What personal information do we collect from the people through our website?"
-msgstr ""
+msgstr "Ի՞նչ անձնական տվյալներ ենք մենք հավաքում մեր կայքի միջոցով։"
 
 #: site/pages/privacy-policy.php:100
 msgid ""
@@ -5918,11 +6111,11 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:122
 msgid "When do we collect information?"
-msgstr ""
+msgstr "Ե՞րբ ենք տեղեկություն հավաքագրում։"
 
 #: site/pages/privacy-policy.php:125
 msgid "We collect your information at login."
-msgstr ""
+msgstr "Մենք Ձեր մասին տեղեկությունը հավաքագրում ենք մուտք գործելիս։"
 
 #: site/pages/privacy-policy.php:128
 msgid ""
@@ -5937,29 +6130,35 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:138
 msgid "How do we use your information?"
-msgstr ""
+msgstr "Ինչպե՞ս ենք օգտագործում Ձեր տվյալները։"
 
 #: site/pages/privacy-policy.php:141
 msgid ""
 "We use your information to create a user account in the zume system based on "
 "your email address."
 msgstr ""
+"Մենք Ձեր տվյալներով  zume համակարգում օգտատիրոջ հաշիվ ենք ստեղծում՝ Ձեր Էլ-"
+"փոստի հիման վրա։"
 
 #: site/pages/privacy-policy.php:144
 msgid ""
 "We will email you with basic transactional emails like password reset "
 "requests and other system notifications."
 msgstr ""
+"Մենք էլ-փոստով Ձեզ ենք ուղարկում  պարզ գործնական նամակներ, ինչպիսիք են "
+"գաղտնաբառի փոփոխման հարցումները և համակարգային այլ ծանուցումներ:"
 
 #: site/pages/privacy-policy.php:147
 msgid ""
 "We email occasional reminders and encouragements depending on your progress "
 "through the training."
 msgstr ""
+"Մենք նաև ուղարկում ենք Ձեզ հիշեցումներ և խրախուսանքներ՝ դասընթացում Ձեր "
+"ունեցած առաջընթացին համապատասխան։"
 
 #: site/pages/privacy-policy.php:154
 msgid "How do we protect your information?"
-msgstr ""
+msgstr "Ինչպե՞ս ենք պահպանում Ձեր տվյալները։"
 
 #: site/pages/privacy-policy.php:156
 msgid ""
@@ -5968,6 +6167,11 @@ msgid ""
 "information to perform a specific job (for example, web administrator or "
 "customer service) are granted access to personally identifiable information."
 msgstr ""
+"Թեև մենք օգտագործում ենք կոդավորում՝ առցանց տրամադրված  տվյալները "
+"պաշտպանելու համար, մենք նաև պաշտպանում ենք ձեր տվյալները օֆլայն ռեժիմում: "
+"Անձնական տվյալները օֆլայն ռեժիմում կարող են օգտագործել միայն թիմի անդամները, "
+"որոնց այդ տվյալներն անհրաժեշտ են որոշակի աշխատանք կատարելու համար (օրինակ՝ "
+"վեբ ադմինիստրատորի կամ հաճախորդների սպասարկման ծառայությանն համար)։"
 
 #: site/pages/privacy-policy.php:159
 msgid ""
@@ -5977,16 +6181,24 @@ msgid ""
 "addition, all sensitive/credit information you supply is encrypted via "
 "Secure Socket Layer (SSL) technology."
 msgstr ""
+"Ձեր անձնական տվյալները պահվում են ապահով ցանցերի հետևում և հասանելի են միայն "
+"սահմանափակ թվով անձանց համար, ովքեր ունեն մուտքի հատուկ իրավունքներ նման "
+"համակարգերում և պարտավոր են գաղտնի պահել տվյալները: Բացի այդ, Ձեր կողմից "
+"տրամադրված ողջ  տեղեկատվությունը գաղտնագրված է Secure Socket Layer (SSL) "
+"տեխնոլոգիայի միջոցով:"
 
 #: site/pages/privacy-policy.php:162
 msgid ""
 "We implement a variety of security measures when a user submits, or accesses "
 "their information to maintain the safety of your personal information."
 msgstr ""
+"Մենք իրականացնում ենք անվտանգության մի շարք միջոցառումներ, երբ օգտատերը "
+"տրամադրում է տվյալները կամ մուտք է գործում իր տվյալների համակարգ, որպեսզի "
+"պահպանենք Ձեր անձնական տվյալների անվտանգությունը:"
 
 #: site/pages/privacy-policy.php:168
 msgid "Do we use \"cookies\"?"
-msgstr ""
+msgstr "Արդյո՞ք \"cookies\" օգտագործում ենք։"
 
 #: site/pages/privacy-policy.php:170
 msgid ""
@@ -5997,7 +6209,7 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:176
 msgid "Your Access to and Control Over Information."
-msgstr ""
+msgstr "Տվյալները մուտքագրելու և վերահսկելու Ձեր արտոնությունները"
 
 #: site/pages/privacy-policy.php:178
 msgid ""
@@ -6007,11 +6219,11 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:183
 msgid "See what data we've aggregated from your activities with us."
-msgstr ""
+msgstr "Տեսեք, թե ինչ տվյալներ ենք հավաքագրել մեզ հետ ձեր գործողություններից:"
 
 #: site/pages/privacy-policy.php:186
 msgid "Change/correct any data we have about you."
-msgstr ""
+msgstr "Փոխել/ուղղել ցանկացած տվյալ Ձեր մասին, որ պահվում է մեզ մոտ։"
 
 #: site/pages/privacy-policy.php:189
 msgid "Have us delete your account or any data we have about you."
@@ -6020,6 +6232,8 @@ msgstr ""
 #: site/pages/privacy-policy.php:192
 msgid "Express any concern you have about our use of your data."
 msgstr ""
+"Արտահայտեք Ձեր  մտահոգությունը մեր կողմից ձեր տվյալների օգտագործման "
+"վերաբերյալ:"
 
 #: site/pages/privacy-policy.php:195
 msgid "Opt out of any future contact from us."
@@ -6027,13 +6241,15 @@ msgstr ""
 
 #: site/pages/privacy-policy.php:202
 msgid "Updates"
-msgstr ""
+msgstr "Թարմացումներ"
 
 #: site/pages/privacy-policy.php:204
 msgid ""
 "Our Privacy Policy may change from time to time and all updates will be "
 "posted on this page."
 msgstr ""
+"Մեր Գաղտնիության կարգը կարող է ժամանակ առ ժամանակ փոխվել, և բոլոր "
+"թարմացումները կտեղադրվեն այս էջում:"
 
 #: site/pages/resources.php:29
 msgid "Downloadable resources to help with running a zume training."
@@ -6083,11 +6299,11 @@ msgstr ""
 
 #: site/pages/share.php:117
 msgid "Tools"
-msgstr ""
+msgstr "Գործիքներ"
 
 #: site/pages/share.php:118
 msgid "Concepts"
-msgstr ""
+msgstr "Գաղափարներ"
 
 #: site/pages/share.php:120
 msgid "Sort"
@@ -6119,7 +6335,7 @@ msgstr ""
 
 #: site/pages/training.php:156
 msgid "Course Overview"
-msgstr ""
+msgstr "Դասընթացի ամփոփ նկարագիրը"
 
 #: site/pages/training.php:158 site/pages/training.php:170
 msgid "Course Concepts"
@@ -6249,7 +6465,7 @@ msgstr ""
 
 #: site/profile/profile.php:27 site/profile/profile.php:106
 msgid "Profile"
-msgstr ""
+msgstr "Պրոֆիլ"
 
 #: site/zume-magic-page.php:43
 msgid ""
@@ -6390,7 +6606,7 @@ msgstr ""
 #: utilities/integrations/replace-placeholder.php:91
 #: utilities/integrations/replace-placeholder.php:92
 msgid "Zúme Dashboard"
-msgstr ""
+msgstr "Zúme գլխավոր էջ"
 
 #: utilities/integrations/replace-placeholder.php:94
 #: utilities/integrations/replace-placeholder.php:95
@@ -6423,32 +6639,33 @@ msgstr ""
 #: zume-training-system.php:237
 msgid "Someone has requested a password reset for the following account:"
 msgstr ""
+"Հետևյալ օգտատիրոջ համար ինչ-որ մեկը փորձեկ է գաղտնաբառի փոփոխություն կատարել։"
 
 #. translators: %s: site name
 #: zume-training-system.php:239
-#, php-format
+#, fuzzy, php-format
 msgid "Site Name: %s"
-msgstr ""
+msgstr "Սայթի անվանում։ %"
 
 #. translators: %s: user login
 #: zume-training-system.php:241
-#, php-format
+#, fuzzy, php-format
 msgid "Username: %s"
-msgstr ""
+msgstr "Օգտանուն։ %"
 
 #: zume-training-system.php:242
 msgid "If this was a mistake, just ignore this email and nothing will happen."
-msgstr ""
+msgstr "Եթե սա սխալ է, պարզապես անտեսեք այս էլ-նամակը և ոչինչ տեղի չի ունենա։"
 
 #: zume-training-system.php:243
 msgid "To reset your password, visit the following address:"
-msgstr ""
+msgstr "Գաղտաբառը փոփոխելու համար, մուտք գործեք այս հղումով։"
 
 #. translators: Password reset email subject. %s: Site name
 #: zume-training-system.php:261
-#, php-format
+#, fuzzy, php-format
 msgid "[%s] Password Reset"
-msgstr ""
+msgstr "[%] Փոխել Գաղտնաբառը"
 
 #: zume-training-system.php:289
 msgid "Profile Details"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-09-05 10:43+0000\n"
+"PO-Revision-Date: 2024-09-10 16:59+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.7.1\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: 404.php:73
 msgid "Epic 404 - Not Found"
@@ -192,8 +192,8 @@ msgid ""
 "encourage each other in areas that are going well and reveal areas that need "
 "correction."
 msgstr ""
-"أداة يجتمعوا فيها كلّ جمعة ثنين وِإلاّ ثلاثة عباد من نفس الجنسّ ويشجّعوا بعضهم في "
-"البلايص الّي تمشي فيها الأمور لباس ويكتشفوا البلايص الّي تستّحق تصحيح."
+"أداة يجتمعوا فيها كلّ جمعة ثنين وإلاّ ثلاثة عباد من نفس الجنسّ ويشجّعوا بعضهم في "
+"البلايص الّي تمشي فيها الأمور لباس ويكتشفوا البلايص الّي تستحقّ تصحيح."
 
 #: globals.php:2145 site/pages/follow-jesus.php:188
 msgid "Consumer vs Producer Lifestyle"
@@ -2355,7 +2355,7 @@ msgstr "إدارة علاقاتك هي أحسن بلاصة للبداية."
 
 #: site/course/course-content.php:634 site/course/course-content.php:641
 msgid "Create your own list of 100"
-msgstr "قوم بإنشاء قائمتك الخاصّة المتكوّنة من 100 شخص"
+msgstr "قوم بإنشاء قائمتك المتكوّنة من 100 شخص"
 
 #: site/course/course-content.php:643
 msgid "Scan QR code or use a piece of paper."
@@ -2510,7 +2510,7 @@ msgid ""
 "some other way to share God’s story). Share this person’s name with the "
 "group before you go."
 msgstr ""
-"أسأل ربّي مع شكون يحبّك إدّربوا على استعمال القصّة مالخلق لدينونة (والاّ أيّ طريقة "
+"أسأل ربّي مع شكون يحبك إدّربوا على استعمال القصّة مالخلق لدينونة (والاّ أيّ طريقة "
 "أخرى تشارك بيها قصّة ربّي) شارك إسم الشخص مع المجموعة قبل متمشي."
 
 #: site/course/course-content.php:1037 site/course/course-content.php:3982
@@ -2578,7 +2578,7 @@ msgstr "إخدم على كتابة قصّتك وخلّي مدّتها متزيد
 #: site/course/course-content.php:1193
 msgid "Break into groups of two to three and practice sharing. (20 min)"
 msgstr ""
-"إتقسّموا لمجموعات متكوّنة من زوز لثلاثة أشخاص وإدّرّبوا على المشاركة. (20 دقيقة)"
+"إتقسّموا لمجموعات متكوّنة من زوز لثلاثة أشخاص وإدّربوا على المشاركة. (20 دقيقة)"
 
 #: site/course/course-content.php:1206 site/course/course-content.php:1215
 msgid "Great - Greater - Greatest Blessings"
@@ -2756,7 +2756,7 @@ msgid ""
 "Break into groups of two or three and practice praying the five areas of the "
 "B.L.E.S.S. Prayer over each other."
 msgstr ""
-"إتقسّموا لمجموعات متكوّنة من ثنين ل ثلاثة و إدّربوا على المجالات الخمسة من صلاة "
+"إتقسّموا لمجموعات متكوّنة من ثنين ل ثلاثة وإدّربوا على المجالات الخمسة من صلاة "
 "البركة ب.ل.ا.س.س مع بعضكم."
 
 #: site/course/course-content.php:1627
@@ -3374,7 +3374,7 @@ msgid ""
 "have you share it with."
 msgstr ""
 "تمرّن على مشاركة مفهوم \"السّرعة\" مع صاحبك وصلّي باش يغرسوا ربّي بعمق في قلبك "
-"وروحك.أطلب من ربّي مع شكون يحبّك تشارك."
+"وروحك.أطلب من ربّي مع شكون يحبك تشارك."
 
 #: site/course/course-content.php:2791
 msgid ""
@@ -3728,7 +3728,7 @@ msgid ""
 "them to do so and offer to baptize them. Otherwise, practice the skill with "
 "a friend."
 msgstr ""
-"إذا كنت تعرف أيّ شخص يتبّع في يسوع و متعمدّش، تحدّاه وأعرض عليه باش يتعمّد و زيد "
+"إذا كنت تعرف أيّ شخص يتبّع في يسوع و متعمدّش، تحدّاه وأعرض عليه باش يتعمّد وزيد "
 "مارس المهارة هذي مع صاحبك."
 
 #: site/course/course-content.php:4107
@@ -3745,7 +3745,7 @@ msgid ""
 "Pray and thank God for the gift of being united with Christ‘s death, burial, "
 "and resurrection. Ask God‘s Holy Spirit to lead your time, together."
 msgstr ""
-"صلّي وأشكر ربّي على نعمة الاتّحاد بموت المسيح ودفنوا وقيامتوا.أطلب من روح ربّي "
+"صلّي وأشكر ربّي على نعمة الإتّحاد بموت المسيح ودفنوا وقيامتوا.أطلب من روح ربّي "
 "القدّوس يقود وقتكم مع بعضكم."
 
 #: site/course/course-content.php:4210
@@ -3794,7 +3794,7 @@ msgid ""
 "\"Unknown.\""
 msgstr ""
 "عدّي شوّية وقت الجمعة هاذي في ممارسة شهادتك, وبعد شاركها مع شخص واحد علأقلّ من "
-"قائمتك المتكوّنة من 100 شخص الّي حدّدتها على أنّها \"موش مؤمن\" وِالاَّ \"موش معروف."
+"قائمتك المتكوّنة من 100 شخص الّي حدّدتها على أنّها \"موش مؤمن\" والاَّ \"موش معروف."
 "\""
 
 #: site/course/course-content.php:4320
@@ -3918,7 +3918,7 @@ msgid ""
 "pray for. Thank God that He promises in His Word to listen and act when His "
 "people pray. Ask God’s Holy Spirit to lead your time, together."
 msgstr ""
-"أسأل إذا كان فمّا في المجموعة شخص عندوا إحتياجات معيّنة يحبّ تصلّي المجموعة على "
+"أسأل إذا كان فمّا في المجموعة شخص عندوا إحتياجات معيّنة يحب تصلّي المجموعة على "
 "خاطروا.أشكر ربّي على خاطر وعد في كلمتو يسمع ويستجيب وقت يصلّي شعبو.أطلب مالرّوح "
 "القدس يقود وقتكم مع بعضكم."
 
@@ -4406,7 +4406,7 @@ msgid ""
 "obey, share and train others with what you have learned."
 msgstr ""
 "تبّع تقدّمك في الدّورة التّدريبية بإستعمال العرض التّفاعلي.تعلّم الاستماع والطّاعة "
-"والمشاركة وتدريب النّاس لخرى بالّي تعلّمتوا."
+"والمشاركة وتدريب النّاس بالّي تعلّمتوا."
 
 #: site/dashboard/dashboard.php:211
 msgid "Information about progress"
@@ -5449,7 +5449,7 @@ msgstr "هل نسيت كلمة الدّخول؟"
 
 #: site/login/login-template.php:768
 msgid "Already have an account?"
-msgstr "هل عندك حساب بالحقّ؟"
+msgstr "هل عندك حساب؟"
 
 #: site/login/login-template.php:824
 msgid "Username or Email Address"
@@ -5620,9 +5620,9 @@ msgid ""
 "spiritually dark places."
 msgstr ""
 "المبادئ الأساسية لتلمذة التّلامذة في تدريب زومّيه مأخوذة مالكتاب المقدّس ويتمّ "
-"إختبارها عالميًا لأكثر من ثلاثين عام.تخدم المبادئ هذي على تمكين المؤمنين "
+"إختبارها عالميا لأكثر من ثلاثين عام.تخدم المبادئ هذي على تمكين المؤمنين "
 "العادييّن يوليّو تلامذة وإلّي بدورهم يتلمذوا تلامذة ويؤدي هذا لملاين مالتّلامذة "
-"إلّي يتقدّموا بالمملكة في البلايص الضلام روحيًا."
+"إلّي يتقدّموا بالمملكة في البلايص الضلام روحيا."
 
 #: site/pages/about.php:111
 msgid ""
@@ -5633,8 +5633,8 @@ msgid ""
 "Lausanne Covenant."
 msgstr ""
 "تمّ إطلاق تدريب زومّيه في 14 فيفري 2017، بالتّعاون مع المملكة، ويقعد مبادرة "
-"محلولة بلاش سيطرة تنظيمية رسمية و إلاّ كيان منفصل.برنامج زومّيه ما تسيّروش "
-"منظّمة، ومفمّاش بيان رسمي للإيمان ومع هذا، كلّ المشاركين يتّفقوا مع ميثاق لوزان."
+"محلولة بلاش سيطرة تنظيمية رسمية وإلاّ كيان منفصل.برنامج زومّيه ما تسيّروش منظّمة،"
+" ومفمّاش بيان رسمي للإيمان ومع هذا، كلّ المشاركين يتّفقوا مع ميثاق لوزان."
 
 #: site/pages/about.php:117
 msgid ""
@@ -5780,9 +5780,9 @@ msgid ""
 "of the training will be a changed lifestyle and an experience of increased "
 "power in your faith."
 msgstr ""
-"يهدف زومّيه لتطوير المهارات وبناء الكفاءة، وموش إكتساب المعرفة أكهو.و كلّ "
-"جلسة، تهدف للخدمة المثمرة.وأحسن نتيجة للتّدريب هي تغيير نمط الحياة وتجربة "
-"زيادة القوّة في إيمانك."
+"يهدف زومّيه لتطوير المهارات وبناء الكفاءة، وموش إكتساب المعرفة أكهو.وكلّ جلسة، "
+"تهدف للخدمة المثمرة.وأحسن نتيجة للتّدريب هي تغيير نمط الحياة وتجربة زيادة القوّ"
+"ة في إيمانك."
 
 #: site/pages/about.php:221
 msgid "What's required"
@@ -5821,8 +5821,8 @@ msgid ""
 "More knowledge or experience than the rest of your group is not needed! If "
 "you can click next, you can lead a Zúme Training."
 msgstr ""
-"موش لازم تكون عندك معرفة و إلاّ خبرة أكثر من باقي أفراد مجموعتك! تنجّم تنزل "
-"على إلّي بعدو, و تقود تدريب زومّيه."
+"موش لازم تكون عندك معرفة وإلاّ خبرة أكثر من باقي أفراد مجموعتك! تنجّم تنزل على "
+"إلّي بعدو, وتقود تدريب زومّيه."
 
 #: site/pages/about.php:240
 msgid ""
@@ -6253,7 +6253,7 @@ msgid ""
 "If you can‘t gather a group right now, consider joining one of our online "
 "training groups lead by an experienced Zúme coach."
 msgstr ""
-"إذا منجّمتش تجمع مجموعة توّا، فكّر إنظمّ لإحدى مجموعات التّدريب عبر الإنترنت والّي "
+"إذا منجّمتش تجمع مجموعة توّا، فكّر إنظم لإحدى مجموعات التّدريب عبر الإنترنت والّي "
 "يقودها مدرّب زومّيه عندوا خبرة."
 
 #: site/pages/home.php:262 site/pages/training.php:145
@@ -6610,7 +6610,7 @@ msgid ""
 "content as well!"
 msgstr ""
 "تدريب زومّيه ولا ّموجود توّا في كتاب كامل.كلّ المفاهيم والأدوات وأسئلة المناقشة "
-"والتحدّيات مالتدريب تّوا مبين إيدك.تعطيك رموز الكر، كود كلّ جلسة وباش توصل لكلّ "
+"والتحدّيات مالتدريب تّوا مبين إيدك.تعطيك رموز الكر، كود كلّ جلسة وتوصّلك لكلّ "
 "محتوى فيديوا زادا!"
 
 #: site/pages/resources.php:103
@@ -6704,7 +6704,7 @@ msgid ""
 "and knowledge in the following areas:"
 msgstr ""
 "في الدورة التدريبيّة الذّاتية، باش تستعمل أنتي ومجموعتك التدريبيّة مقاطع فيديو "
-"قصيرة وأسئلة للمناقشة وتمارين بسيطة باش اطوّر مهاراتك ومعرفتك في المجالات هذي:"
+"قصيرة وأسئلة للمناقشة وتمارين بسيطة باش إطوّر مهاراتك ومعرفتك في المجالات هذي:"
 
 #: site/pages/training.php:177
 msgid "Discipleship Concepts"
@@ -6775,8 +6775,8 @@ msgid ""
 "internet. The QR code system still requires online access for trainee "
 "checkins and activity resources."
 msgstr ""
-"تنجّم تنزّل دورة زوميّه التدريبيّة لكلّ وتخدّمها ب بوربوينت و كينوت.هذا الحلّ باهي "
-"للّتدريب في المناطق الّي تعاني من ضعف الإنترنت.يتمّ تضمين مقاطع الفيديو في "
+"تنجّم تنزّل دورة زوميّه التدريبيّة لكلّ وتخدّمها ب بوربوينت وكينوت.هذا الحلّ باهي للّ"
+"تدريب في المناطق الّي تعاني من ضعف الإنترنت.يتمّ تضمين مقاطع الفيديو في "
 "الشرائح وتنجّم تستعملها بسهولة بلاش إنترنت.مازال نظام رمز الاستجابة السريعة يطّ"
 "لب الوصول عبر الإنترنت لتسجيلات المتدربيّن وموارد النشاط."
 
