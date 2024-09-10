@@ -11,7 +11,7 @@ add_filter( 'dt_nav', function ( $menu ) {
 }, 1, 199 );
 
 
-add_filter( 'dt_multisite_dropdown_sites', function( $sites ) {
+add_filter( 'dt_multisite_dropdown_sites', function ( $sites ) {
 
     $new_site_list = [];
     if ( isset( $sites[1] ) ) {

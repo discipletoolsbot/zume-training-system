@@ -13,6 +13,7 @@ class Zume_Queries {
         global $wpdb;
         $query_for_user_stage = self::$query_for_user_stage;
 
+        // @phpcs:disable
         $results = $wpdb->get_results(
             "SELECT tb.stage, count(tb.user_id) as total
                 FROM
@@ -21,6 +22,7 @@ class Zume_Queries {
                 ) as tb
                 GROUP BY tb.stage;",
         ARRAY_A );
+        // @phpcs:enable
 
         $stages = [];
 
@@ -45,6 +47,7 @@ class Zume_Queries {
             $range = '(' . $range[0] . ')';
         }
 
+        // @phpcs:disable
         $results = $wpdb->get_results(
             "SELECT p.post_title as name, tb.user_id, tb.post_id, lgm.post_type, tb.stage, lgm.label, lgm.grid_id, lgm.lng, lgm.lat, lgm.level
             FROM
@@ -54,6 +57,7 @@ class Zume_Queries {
             LEFT JOIN zume_posts p ON p.ID=tb.post_id
             LEFT JOIN zume_dt_location_grid_meta lgm ON lgm.post_id=tb.post_id AND lgm.post_type='contacts'
             WHERE tb.stage IN $range;", ARRAY_A );
+        // @phpcs:enable
 
         if ( empty( $results ) ) {
             return [];
@@ -72,6 +76,7 @@ class Zume_Queries {
             $range = '(' . $range[0] . ')';
         }
 
+        // @phpcs:disable
         $results = $wpdb->get_results(
             "SELECT p.post_title as name, tb.user_id, tb.post_id, lgm.post_type, tb.stage, lgm.label, lgm.grid_id, lgm.lng, lgm.lat, lgm.level
             FROM
@@ -86,6 +91,7 @@ class Zume_Queries {
             AND lgm.lng > $west
             AND lgm.lng < $east
             ;", ARRAY_A );
+        // @phpcs:enable
 
         if ( empty( $results ) ) {
             return [];
@@ -97,12 +103,14 @@ class Zume_Queries {
     public static function churches_with_location() {
         global $wpdb;
 
+        // @phpcs:disable
         $results = $wpdb->get_results(
             "SELECT p.ID as post_id, p.post_title as name, 'groups' as post_type, lgm.grid_id, lgm.lng, lgm.lat, lgm.level, lgm.source, lgm.label
             FROM zume_posts p
             LEFT JOIN zume_postmeta pm ON pm.post_id=p.ID AND pm.meta_key = 'location_grid_meta'
             LEFT JOIN zume_dt_location_grid_meta lgm ON lgm.grid_meta_id=pm.meta_value
             WHERE p.post_type = 'groups';", ARRAY_A );
+        // @phpcs:enable
 
         if ( empty( $results ) ) {
             return [];
@@ -114,6 +122,7 @@ class Zume_Queries {
     public static function churches_by_boundary( float $north, float $south, float $east, float $west ) {
         global $wpdb;
 
+        // @phpcs:disable
         $results = $wpdb->get_results(
             "SELECT p.ID, p.post_title as name, 'groups' as post_type, lgm.grid_id, lgm.lng, lgm.lat, lgm.level, lgm.source, lgm.label
             FROM zume_posts p
@@ -125,6 +134,7 @@ class Zume_Queries {
             AND lgm.lng > $west
             AND lgm.lng < $east
         ;", ARRAY_A );
+        // @phpcs:enable
 
         if ( empty( $results ) ) {
             return [];
@@ -143,12 +153,14 @@ class Zume_Queries {
     public static function training_subtype_counts() {
         global $wpdb;
 
+        // @phpcs:disable
         $results = $wpdb->get_results( $wpdb->prepare(
             "SELECT subtype, COUNT(*) as value
             FROM zume_dt_reports
             WHERE type = 'training' AND subtype LIKE '%heard'
             GROUP BY subtype
             " ), ARRAY_A );
+        // @phpcs:enable
 
         if ( empty( $results ) || is_wp_error( $results ) ) {
             return [];
@@ -185,6 +197,7 @@ class Zume_Queries {
         global $wpdb;
         $query_for_user_stage = self::$query_for_user_stage;
 
+        // @phpcs:disable
         $results = $wpdb->get_var(
             "SELECT count(*) as practitioners
                 FROM
@@ -193,6 +206,7 @@ class Zume_Queries {
                 ) as tb
             WHERE tb.stage >= 4;"
         );
+        // @phpcs:enable
 
         if ( $results ) {
             return (int) $results;

@@ -67,7 +67,7 @@ if ( ! function_exists( 'zume_get_user_profile' ) ) {
                     FROM zume_3_postmeta
                     WHERE meta_key = 'trainee_user_id'
                       AND meta_value = %s",
-                $user_id )
+            $user_id )
         );
 
         $coach_list = [];
@@ -643,7 +643,7 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
         if ( ! empty( $connected_plans ) ) {
             $plan_post_ids = [];
             // initialize loop
-            foreach( $connected_plans as $row ) {
+            foreach ( $connected_plans as $row ) {
                 if ( ! isset( $plans[$row['post_id']] ) ) {
                     $plans[$row['post_id']] = [];
                     $plans[$row['post_id']]['title'] = $row['title'];
@@ -666,8 +666,8 @@ if ( ! function_exists( 'zume_get_user_plans' ) ) {
                         'key' => $row['meta_key'],
                         'title' => 'Session ' . $key_array[2] ?? '?',
                         'timestamp' => (int) $row['meta_value'],
-                        'date' => date( 'Y-m-d', (int) $row['meta_value'] ),
-                        'date_formatted' => date( 'M j, Y', (int) $row['meta_value'] ),
+                        'date' => gmdate( 'Y-m-d', (int) $row['meta_value'] ),
+                        'date_formatted' => gmdate( 'M j, Y', (int) $row['meta_value'] ),
                         'completed' => 0,
                         'completed_timestamp' => 0,
                         'completed_date' => '',
@@ -2702,8 +2702,8 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                     'Get a coach',
                 ],
                 'pace' => [
-                    '2024: 200 visits a day'
-                ]
+                    '2024: 200 visits a day',
+                ],
             ],
             1 => [
                 'key' => 'registrant',
@@ -2722,7 +2722,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '4 registrations per day', // shared/rest-api.php:310
-                ]
+                ],
             ],
             2 => [
                 'key' => 'active_training_trainee',
@@ -2741,7 +2741,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '2 trainees engaging training per day', // shared/rest-api.php:418
-                ]
+                ],
             ],
             3 => [
                 'key' => 'post_training_trainee',
@@ -2761,7 +2761,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 trainee completing training every 4 days', // shared/rest-api.php:546
-                ]
+                ],
             ],
             4 => [
                 'key' => 'partial_practitioner',
@@ -2783,7 +2783,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 trainee becoming practitioner every 10 days', // shared/rest-api.php:714
-                ]
+                ],
             ],
             5 => [
                 'key' => 'full_practitioner',
@@ -2805,7 +2805,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 practitioner completing HOST/MAWL every 20 days', // shared/rest-api.php:714
-                ]
+                ],
             ],
             6 => [
                 'key' => 'multiplying_practitioner',
@@ -2824,7 +2824,7 @@ if ( ! function_exists( 'zume_funnel_stages' ) ) {
                 ],
                 'pace' => [
                     '1 practitioner breaking through with multiplication every 30 days', // shared/rest-api.php:714
-                ]
+                ],
             ],
         ];
     }

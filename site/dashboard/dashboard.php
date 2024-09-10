@@ -198,7 +198,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'timezone' => __( 'Timezone', 'zume' ),
             'meeting_link' => __( 'Meeting link', 'zume' ),
             'meeting_link_examples' => __( 'Zoom, Google Meet, Microsoft Teams etc.', 'zume' ),
-            'save' => __( 'Save', 'zume' ),
             'edit_profile' => __( 'Edit Profile', 'zume' ),
             'share_title' => __( 'Check out this Zúme concept', 'zume' ),
             'preview' => __( 'Preview', 'zume' ),

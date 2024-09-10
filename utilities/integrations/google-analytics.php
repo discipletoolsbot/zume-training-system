@@ -1,6 +1,8 @@
 <?php
 
-add_action( 'dt_blank_footer', function() {
+// @phpcs:disable
+// disabled rule for including external scripts
+add_action( 'dt_blank_footer', function () {
     ?>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-591815806">
@@ -14,3 +16,4 @@ add_action( 'dt_blank_footer', function() {
     </script>
     <?php
 }, 999 );
+// @phpcs:enable
