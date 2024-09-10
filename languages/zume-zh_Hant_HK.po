@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme - Training System\n"
 "POT-Creation-Date: 2024-08-22 11:03-0600\n"
-"PO-Revision-Date: 2024-08-30 14:13+0000\n"
+"PO-Revision-Date: 2024-09-10 16:59+0000\n"
 "Last-Translator: Philip Yuen <philipyuen@channelnetwork.org>\n"
-"Language-Team: Chinese (Traditional, Hong Kong) <https://translate.disciple."
-"tools/projects/zume-training/zume-training-system/zh_Hant_HK/>\n"
+"Language-Team: Chinese (Traditional Han script, Hong Kong) <https://translate"
+".disciple.tools/projects/zume-training/zume-training-system/zh_Hant_HK/>\n"
 "Language: zh_Hant_HK\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.7.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: zume-training-system.php\n"
@@ -116,7 +116,6 @@ msgid "Trainings"
 msgstr "培訓課程"
 
 #: appearance/style-override/navigation.php:135
-#, fuzzy
 msgid "Metrics"
 msgstr "指標"
 
@@ -142,27 +141,25 @@ msgstr "全球地圖"
 #: site/course/course-content.php:354 site/course/course-content.php:3157
 #: site/course/course-content.php:3175 site/pages/follow-jesus.php:168
 msgid "God Uses Ordinary People"
-msgstr "神使用平凡的人"
+msgstr "神使用「平凡的人」"
 
 #: globals.php:2086 site/pages/follow-jesus.php:169
-#, fuzzy
 msgid ""
 "You'll see how God uses ordinary people doing simple things to make a big "
 "impact."
-msgstr "您將看見神如何使用平凡的人藉着微不足道的小事造成巨大的影響。"
+msgstr "神如何使用「平凡的人」藉着微不足道的小事造成巨大的影響。"
 
 #: globals.php:2097 site/course/course-content.php:3158
 #: site/course/course-content.php:3176 site/pages/follow-jesus.php:172
 msgid "Simple Definition of Disciple and Church"
-msgstr "「門徒」與「教會」簡單的定義"
+msgstr "「門徒」與「教會」的簡單定義"
 
 #: globals.php:2098 site/course/course-content.php:153
 #: site/pages/follow-jesus.php:173
-#, fuzzy
 msgid ""
 "Discover the essence of being a disciple, making a disciple, and what is the "
 "church."
-msgstr "探索成為門徒、培養門徒以及什麼是教會的本質。"
+msgstr "何謂「成為門徒」﹑「建立門徒」？「教會」又是什麼？"
 
 #: globals.php:2099 site/course/course-content.php:143
 #: site/course/course-content.php:152
@@ -171,9 +168,8 @@ msgstr "「門徒」與「教會」"
 
 #: globals.php:2109 site/course/course-content.php:3159
 #: site/course/course-content.php:3177 site/pages/follow-jesus.php:194
-#, fuzzy
 msgid "Spiritual Breathing is Hearing and Obeying God"
-msgstr "屬靈呼吸就是聆聽並遵行神的吩咐"
+msgstr "「屬靈呼吸」就是聆聽並順服神"
 
 #: globals.php:2110 site/pages/follow-jesus.php:195
 #, fuzzy
@@ -187,9 +183,8 @@ msgid "Hearing and Obeying God"
 msgstr "聆聽並順服神"
 
 #: globals.php:2121 globals.php:2123
-#, fuzzy
 msgid "S.O.A.P.S. Bible Study"
-msgstr "S.O.A.P.S. 香皂讀經法"
+msgstr "肥皂讀經法"
 
 #: globals.php:2122 site/pages/follow-jesus.php:210
 #, fuzzy
@@ -218,7 +213,7 @@ msgstr "由兩位到三位同性別的人組成小組，每星期聚會一次，
 #: globals.php:2145 site/pages/follow-jesus.php:188
 #, fuzzy
 msgid "Consumer vs Producer Lifestyle"
-msgstr "生產者跟消費者的生活方式"
+msgstr "生產者與消費者的生活方式"
 
 #: globals.php:2146 site/pages/follow-jesus.php:189
 #, fuzzy
@@ -261,16 +256,14 @@ msgstr "這個工具可以幫助您成為人際關係的好管家。"
 #: utilities/integrations/replace-placeholder.php:98
 #: utilities/integrations/replace-placeholder.php:99
 #: utilities/integrations/replace-placeholder.php:100
-#, fuzzy
 msgid "List of 100"
-msgstr "百人關注名單"
+msgstr "百人名單"
 
 #: globals.php:2181 globals.php:2183 site/course/course-content.php:796
 #: site/course/course-content.php:809 site/course/course-content.php:818
 #: site/course/course-content.php:3800 site/course/course-content.php:3819
-#, fuzzy
 msgid "Spiritual Economy"
-msgstr "屬靈的經濟學"
+msgstr "屬靈經濟學"
 
 #: globals.php:2182 site/pages/follow-jesus.php:244
 #, fuzzy
@@ -298,9 +291,8 @@ msgid "Sharing God‘s Story"
 msgstr "分享神的故事"
 
 #: globals.php:2205 site/pages/follow-jesus.php:236
-#, fuzzy
 msgid "Baptism and How To Do It"
-msgstr "如何「給人施洗」"
+msgstr "洗禮：如何「給人施洗」"
 
 #: globals.php:2206 site/pages/follow-jesus.php:237
 #, fuzzy
@@ -360,20 +352,17 @@ msgid "Great, Greater, and Greatest Blessing"
 msgstr "偉大、更偉大、最偉大的祝福"
 
 #: globals.php:2241 site/pages/follow-jesus.php:266
-#, fuzzy
 msgid "Duckling Discipleship – Leading Immediately"
-msgstr "「小鴨門徒訓練法」- 馬上開始帶領"
+msgstr "「小鴨門徒訓練法」- 立即帶領"
 
 #: globals.php:2242
-#, fuzzy
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr "瞭解小鴨跟培訓門徒有什麼關聯？"
+msgstr "學習小鴨與建立門徒之間的關係"
 
 #: globals.php:2243 site/course/course-content.php:1141
 #: site/course/course-content.php:1252 site/course/course-content.php:1261
 #: site/course/course-content.php:1403 site/course/course-content.php:4350
 #: site/course/course-content.php:4371
-#, fuzzy
 msgid "Duckling Discipleship"
 msgstr "小鴨門徒訓練法"
 
@@ -381,9 +370,8 @@ msgstr "小鴨門徒訓練法"
 #: site/course/course-content.php:1297 site/course/course-content.php:1306
 #: site/course/course-content.php:1404 site/course/course-content.php:4351
 #: site/course/course-content.php:4372 site/pages/follow-jesus.php:247
-#, fuzzy
 msgid "Eyes to See Where the Kingdom Isn’t"
-msgstr "看見神國還未臨到的地方"
+msgstr "天國眼界"
 
 #: globals.php:2254 site/pages/follow-jesus.php:248
 #, fuzzy
@@ -393,9 +381,8 @@ msgid ""
 msgstr "開始在信心裡看見神國還未臨到的地方，而這些地方是神最渴望動工的地方。"
 
 #: globals.php:2265 site/pages/follow-jesus.php:232
-#, fuzzy
 msgid "The Lord’s Supper and How To Lead It"
-msgstr "操練如何領聖餐"
+msgstr "聖餐：如何領主的晚餐"
 
 #: globals.php:2266
 #, fuzzy
@@ -409,9 +396,8 @@ msgstr ""
 #: site/course/course-content.php:1147 site/course/course-content.php:1344
 #: site/course/course-content.php:1353 site/course/course-content.php:1409
 #: site/course/course-content.php:4355 site/course/course-content.php:4376
-#, fuzzy
 msgid "The Lord’s Supper"
-msgstr "領聖餐"
+msgstr "主的晚餐"
 
 #: globals.php:2277 site/pages/follow-jesus.php:304
 #, fuzzy
@@ -2084,7 +2070,7 @@ msgstr "在本堂課中，我們將學習並討論這些概念："
 
 #: site/course/course-content.php:87 site/course/course-content.php:355
 msgid "Simple Definition of Disciple & Church"
-msgstr "「門徒」與「教會」簡單的定義"
+msgstr "「門徒」與「教會」的簡單定義"
 
 #: site/course/course-content.php:88 site/course/course-content.php:356
 #, fuzzy
@@ -2102,14 +2088,12 @@ msgstr "我們將把這些工具加入我們的工具包："
 #: site/course/course-content.php:243 site/course/course-content.php:360
 #: site/course/course-content.php:3285 site/course/course-content.php:3301
 #: site/pages/follow-jesus.php:209
-#, fuzzy
 msgid "S.O.A.P.S. Bible Reading"
-msgstr "S.O.A.P.S.香皂讀經法"
+msgstr "香皂讀經法"
 
 #: site/course/course-content.php:111
-#, fuzzy
 msgid "God uses ordinary people doing simple things to make a big impact."
-msgstr "神使用平凡的人做簡單的事情來產生巨大的影響。"
+msgstr "使用「平凡的人」藉着微不足道的小事造成巨大的影響。"
 
 #: site/course/course-content.php:136
 #, fuzzy
