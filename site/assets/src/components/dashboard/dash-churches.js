@@ -43,12 +43,17 @@ export class DashChurches extends DashPage {
 
         this.renderChurch = this.renderChurch.bind(this)
         this.addChurch = this.addChurch.bind(this)
+        this.addChildChurch = this.addChildChurch.bind(this)
         this.editChurch = this.editChurch.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
         this.orderChurches = this.orderChurches.bind(this)
         this.deleteChurch = this.deleteChurch.bind(this)
         this.addMarkerToMap = this.addMarkerToMap.bind(this)
         this.getDescendentChurches = this.getDescendentChurches.bind(this)
+        this.openEditChurchModal = this.openEditChurchModal.bind(this)
+        this.openAddChurchModal = this.openAddChurchModal.bind(this)
+        this.openChurchModal = this.openChurchModal.bind(this)
+        this.clearChurchModal = this.clearChurchModal.bind(this)
 
         /* Remove old overlays that have been orphaned by moving around the app */
         document.querySelectorAll('.reveal-overlay #new-church-form').forEach((element) => {
@@ -62,6 +67,8 @@ export class DashChurches extends DashPage {
         super.firstUpdated()
         const addChurchForm = document.querySelector('#add-church-form')
         addChurchForm.addEventListener('submit', this.handleSubmit)
+
+        jQuery('#new-church-form').on('closed.zf.reveal', this.clearChurchModal)
 
         this.initialiseChurchEventHandlers()
     }
@@ -493,9 +500,13 @@ export class DashChurches extends DashPage {
         return descendents
     }
 
+    addChildChurch(id) {
+        this.parentChurch = id
+
+        this.openAddChurchModal(id)
+    }
     openAddChurchModal() {
         this.mode = 'add'
-        this.clearChurchModal()
         document.querySelector('.submit-button-text').textContent = jsObject.translations.add_new_church
 
         this.filteredChurches = [ ...this.orderedChurches ]
@@ -603,6 +614,9 @@ export class DashChurches extends DashPage {
                 </div>
                 <div class="dropdown-pane" id="kebab-menu-${id}" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl ? 'right' : 'left'} data-close-on-click="true" data-close-on-click-inside="true">
                     <ul>
+                        <li class="${!isConfirmingDelete ? '' : 'hidden'}">
+                            <button class="menu-btn" @click=${() => this.addChildChurch(id)}><span class="icon z-icon-plus"></span>${jsObject.translations.add_new_church}</button>
+                        </li>
                         <li class="${!isConfirmingDelete ? '' : 'hidden'}">
                             <button class="menu-btn" @click=${() => this.openEditChurchModal(id)}><span class="icon z-icon-pencil"></span>${jsObject.translations.edit}</button>
                         </li>
