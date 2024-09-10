@@ -695,7 +695,7 @@ export class DashChurches extends DashPage {
                                         </div>
                                         <!-- This needs to change to open the join community wizard instead -->
                                         <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
-                                            ${jsObject.translations.join}
+                                            ${jsObject.translations.join_the_community}
                                         </button>
                                     </div>
                                 </div>

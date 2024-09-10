@@ -873,14 +873,6 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                                       ></nav-link>
                                   `}
 
-                            <!-- <nav-link
-                                class="menu-btn | f--1"
-                                href=${jsObject.urls.resources}
-                                icon="z-icon-resources"
-                                text=${jsObject.translations.resources}
-                                as="link"
-                            ></nav-link> -->
-
                             ${jsObject.is_coach?c`
                                     <nav-link
                                         class="menu-btn | f--1"
@@ -1116,7 +1108,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                                         </div>
                                         <!-- This needs to change to open the join community wizard instead -->
                                         <button class="dash-menu__view-button btn tight" @click=${this.joinCommunity}>
-                                            ${jsObject.translations.join}
+                                            ${jsObject.translations.join_the_community}
                                         </button>
                                     </div>
                                 </div>

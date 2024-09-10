@@ -1014,14 +1014,6 @@ export class DashBoard extends navigator(router(LitElement)) {
                                   `
                                 : ''}
 
-                            <!-- <nav-link
-                                class="menu-btn | f--1"
-                                href=${jsObject.urls.resources}
-                                icon="z-icon-resources"
-                                text=${jsObject.translations.resources}
-                                as="link"
-                            ></nav-link> -->
-
                             ${jsObject.is_coach
                               ? html`
                                     <nav-link
