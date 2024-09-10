@@ -283,6 +283,7 @@ class Zume_Funnel_App_Heatmap {
 
 
         // 44141 records
+        // @phpcs:disable
         global $wpdb;
         $results = $wpdb->get_results("
             SELECT *
@@ -425,6 +426,7 @@ class Zume_Funnel_App_Heatmap {
               ORDER BY latitude ASC
 
        ", ARRAY_A );
+        // @phpcs:enable
 
         $list = [];
         if ( is_array( $results ) ) {
@@ -1718,6 +1720,7 @@ class Zume_Funnel_App_Heatmap {
 //            return $value;
 //        }
 
+        // @phpcs:disable
         switch ( $administrative_level ) {
             case 'a0':
 
@@ -1966,6 +1969,7 @@ class Zume_Funnel_App_Heatmap {
                     ", ARRAY_A );
                 break;
         }
+        // @phpcs:enable
 
         $list = [];
         if ( is_array( $results ) ) {
@@ -2004,6 +2008,7 @@ class Zume_Funnel_App_Heatmap {
 
         global $wpdb;
 
+        // @phpcs:disable
         switch ( $administrative_level ) {
             case 'a0':
                 $results = $wpdb->get_results( "
@@ -2252,6 +2257,7 @@ class Zume_Funnel_App_Heatmap {
                         ", ARRAY_A );
                 break;
         }
+        // @phpcs:enable
 
         $list = [];
         if ( is_array( $results ) ) {
@@ -2290,6 +2296,7 @@ class Zume_Funnel_App_Heatmap {
 
         global $wpdb;
 
+        // @phpcs:disable
         switch ( $administrative_level ) {
             case 'a0':
                 $results = $wpdb->get_results( "
@@ -2412,6 +2419,7 @@ class Zume_Funnel_App_Heatmap {
                     ", ARRAY_A );
                 break;
         }
+        // @phpcs:enable
 
             $list = [];
         if ( is_array( $results ) ) {
@@ -3498,8 +3506,6 @@ class Zume_Funnel_App_Heatmap {
 
     /**
      * Function limits counts to no higher than the location need. This keeps from inflating the counts up the levels.
-     * @param $flat_grid
-     * @param $list
      * @return array
      */
     public static function _limit_counts( $flat_grid, $list ) {

@@ -44,7 +44,6 @@
 
     &[data-depth]:not([data-depth="0"]) {
         --child-margin: #{spacing(1)};
-        transform-style: preserve-3d;
 
         [dir="ltr"] & {
             border-left: 2px solid color('gray-100');

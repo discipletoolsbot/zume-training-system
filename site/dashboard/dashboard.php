@@ -70,15 +70,23 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
     public function dt_magic_url_base_allowed_js( $allowed_js ) {
         $allowed_js[] = 'zume_forms';
         $allowed_js[] = 'zume-profile-utilities';
+        $allowed_js[] = 'jquery-cookie';
+        $allowed_js[] = 'mapbox-cookie';
+        $allowed_js[] = 'mapbox-gl';
         return zume_training_magic_url_base_allowed_js( $allowed_js );
     }
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
-        return zume_training_magic_url_base_allowed_css();
+        $allowed_css = [
+            'mapbox-gl-css',
+        ];
+        return zume_training_magic_url_base_allowed_css( $allowed_css );
     }
 
     public function header_style(){
         global $zume_languages_by_code, $three_month_plan_questions;
+
+        DT_Mapbox_API::geocoder_scripts();
         ?>
         <?php //phpcs:ignore ?>
         <script src="<?php echo trailingslashit( plugin_dir_url( __DIR__ ) ) . 'profile/profile-utilities.js?version=' . filemtime( trailingslashit( plugin_dir_path( __DIR__ ) ) . 'profile/profile-utilities.js' ) ?>"></script>
@@ -104,6 +112,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
                 'is_coach' => ! empty( get_user_meta( get_current_user_id(), 'zume_3_corresponds_to_contact', true ) ),
                 'training_items' => zume_training_items(),
                 'training_groups' => zume_get_user_plans( get_current_user_id() ),
+                'churches' => zume_get_user_churches(),
                 'host_progress' => zume_get_user_host(),
                 'friends' => zume_get_user_friends(),
                 'languages' => $zume_languages_by_code,
@@ -158,6 +167,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
         return [
             'done' => __( 'Done', 'zume' ),
             'edit' => __( 'Edit', 'zume' ),
+            'save' => __( 'Save', 'zume' ),
             'delete' => __( 'Delete', 'zume' ),
             'share' => __( 'Share', 'zume' ),
             'status' => __( 'Status', 'zume' ),
@@ -188,7 +198,6 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'timezone' => __( 'Timezone', 'zume' ),
             'meeting_link' => __( 'Meeting link', 'zume' ),
             'meeting_link_examples' => __( 'Zoom, Google Meet, Microsoft Teams etc.', 'zume' ),
-            'save' => __( 'Save', 'zume' ),
             'edit_profile' => __( 'Edit Profile', 'zume' ),
             'share_title' => __( 'Check out this Zúme concept', 'zume' ),
             'preview' => __( 'Preview', 'zume' ),
@@ -231,12 +240,17 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'my_plans_locked' => __( 'My Plans are Locked', 'zume' ),
             'my_plans_locked_explanation' => __( 'Unlock this area by creating your Three-Month Plan or adding a commitment of your own.', 'zume' ),
             'my_churches' => __( 'My Churches', 'zume' ),
-            'my_churches_explanation' => __( 'Unlock the My Churches area by joining the community.', 'zume' ),
+            'my_churches_explanation' => __( 'My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.', 'zume' ),
             'my_maps' => __( 'My Maps', 'zume' ),
             'my_maps_locked' => __( 'My Maps are Locked', 'zume' ),
             'my_maps_explanation' => __( 'My maps help clarify the Zúme vision of 1 trainee and 2 churches for every 5,000 people in the US, and 50,000 globally. To unlock My Maps, join the Zúme community and connect with other disciple makers passionate about seeing the great commission fulfilled.', 'zume' ),
             'my_training_locked' => __( 'My Training is Locked', 'zume' ),
-            'launch_course' => __( 'Launch Course', 'zume' ),
+            'launch_course' => __( 'Present Course', 'zume' ),
+            'launch_course2' => __( 'Launch Course', 'zume' ),
+            'launch_course3' => __( 'Course Content', 'zume' ),
+            'launch_course4' => __( 'Course', 'zume' ),
+            'launch_course5' => __( 'Enter Course', 'zume' ),
+            'launch_course6' => __( 'Course Slides', 'zume' ),
             'ten_session_course' => __( '10 Session Course', 'zume' ),
             'twenty_session_course' => __( '20 Session Course', 'zume' ),
             'three_day_intensive_course' => __( 'Intensive Course', 'zume' ),
@@ -265,11 +279,17 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'edit_time' => __( 'Edit time', 'zume' ),
             'add_new_training' => sprintf( __( 'Add new %s', 'zume' ), __( 'Training', 'zume' ) ),
             'invite_friends' => __( 'Invite Friends', 'zume' ),
+            'my_churches_locked' => __( 'My Churches are Locked', 'zume' ),
+            'my_churches_locked_explanation' => __( 'My Churches tool makes it easy for you to track your simple church and the simple church generations that grow out of your spiritual family.', 'zume' ),
+            'my_churches_locked_extra_explanation' => __( 'Unlock the My Churches area by joining the community.', 'zume' ),
             'add_first_church' => __( 'Click to add your first church', 'zume' ),
             'church_name' => __( 'Church Name', 'zume' ),
             'number_of_people' => __( 'Number of People', 'zume' ),
             'church_location' => __( 'Church Location', 'zume' ),
             'parent_church' => __( 'Parent Church', 'zume' ),
+            'start_date' => __( 'Start Date', 'zume' ),
+            'mark_active' => __( 'Mark Active', 'zume' ),
+            'mark_inactive' => __( 'Mark Inactive', 'zume' ),
             'add_new_church' => sprintf( __( 'Add new %s', 'zume' ), __( 'Church', 'zume' ) ),
             'cancel' => __( 'cancel', 'zume' ),
             'congratulations' => __( 'Congratulations!', 'zume' ),
@@ -291,8 +311,12 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
             'connecting_with_coach' => __( 'Thank you for your coaching request. Our team will be working to connect you with an available coach in your language and region.' ),
             'wait_for_coach' => __( 'Please watch for communication from your coach within the communication preference you indicated.' ),
             'hundred_hour_map' => __( '100 Hour Map', 'zume' ),
-            'training_vision_map' => __( 'Training vision map', 'zume' ),
-            'simple_church_planting_map' => __( 'Simple church planting map', 'zume' ),
+            'training_vision_map' => __( 'Trainee vision map', 'zume' ),
+            'simple_church_planting_map' => __( 'Simple church vision map', 'zume' ),
+            'missing_field' => __( 'Missing answer', 'zume' ),
+            'error' => __( 'Something went wrong', 'zume' ),
+            'yes' => __( 'Yes', 'zume' ),
+            'no' => __( 'No', 'zume' ),
             'not_scheduled' => __( 'No date', 'zume' ),
             'whatsapp' => __( 'Whatsapp', 'zume' ),
             'signal' => __( 'Signal', 'zume' ),

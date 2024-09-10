@@ -4,6 +4,13 @@ class ZumeRequest {
         this.root = root
         this.base = base
         this.nonce = nonce
+
+        this.fetch = this.fetch.bind(this)
+        this.get = this.get.bind(this)
+        this.post = this.post.bind(this)
+        this.put = this.put.bind(this)
+        this.update = this.update.bind(this)
+        this.delete = this.delete.bind(this)
     }
 
     /**
@@ -32,14 +39,14 @@ class ZumeRequest {
             url += '?' + queryParams.toString()
         }
 
-        return fetch( url, {
+        return fetch(url, {
             method,
             headers: {
                 'Content-Type': 'application/json; charset=utf-8',
                 'X-WP-Nonce': this.nonce,
             },
             body: method === 'GET' ? null : JSON.stringify(data),
-        } )
+        })
             .then((response) => {
                 return Promise.all([
                     Promise.resolve(response.ok),

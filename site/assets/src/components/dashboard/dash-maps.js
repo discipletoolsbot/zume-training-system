@@ -104,9 +104,9 @@ export class DashMaps extends DashPage {
                                 <button class="btn" data-map="vision-map" @click=${this.openModal}>
                                     ${jsObject.translations.training_vision_map}
                                 </button>
-                                <!-- <button class="btn" data-map="church-map" @click=${this.openModal}>
+                                <button class="btn" data-map="church-map" @click=${this.openModal}>
                                     ${jsObject.translations.simple_church_planting_map}
-                                </button> -->
+                                </button>
                             </div>
                         `
                     }
