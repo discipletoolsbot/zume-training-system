@@ -167,6 +167,7 @@ class Zume_Training_Dashboard extends Zume_Magic_Page
         return [
             'done' => __( 'Done', 'zume' ),
             'edit' => __( 'Edit', 'zume' ),
+            'save' => __( 'Save', 'zume' ),
             'delete' => __( 'Delete', 'zume' ),
             'share' => __( 'Share', 'zume' ),
             'status' => __( 'Status', 'zume' ),

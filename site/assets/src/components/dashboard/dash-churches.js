@@ -515,7 +515,7 @@ export class DashChurches extends DashPage {
     }
     openEditChurchModal(id) {
         this.mode = 'edit'
-        document.querySelector('.submit-button-text').textContent = jsObject.translations.edit
+        document.querySelector('.submit-button-text').textContent = jsObject.translations.save
 
         const church = this.churches.find((church) => church.id === id)
         this.churchId = id
