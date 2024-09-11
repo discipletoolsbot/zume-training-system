@@ -849,12 +849,12 @@ export class DashTrainings extends DashPage {
                                             `
                                             : ''
                                         }
+                                        ${
+                                          this.isCoach() ? html`
+                                              <a href=${this.makeGroupMembersHref()} target="_blank">${jsObject.translations.group_members_link}</a>
+                                          ` : ''
+                                        }
                                     </div>
-                                    ${
-                                        this.isCoach() ? html`
-                                            <a href=${this.makeGroupMembersHref()} target="_blank">${jsObject.translations.group_members_link}</a>
-                                        ` : ''
-                                    }
                                     <button
                                         @click=${this.inviteFriends}
                                         class="btn brand tight mt--2"

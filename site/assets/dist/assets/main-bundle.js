@@ -1997,10 +1997,10 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                                                     ${G(this.groupMembers,a=>a.id,this.renderMemberItem)}
                                                 </ol>
                                             `:""}
+                                        ${this.isCoach()?c`
+                                              <a href=${this.makeGroupMembersHref()} target="_blank">${jsObject.translations.group_members_link}</a>
+                                          `:""}
                                     </div>
-                                    ${this.isCoach()?c`
-                                            <a href=${this.makeGroupMembersHref()} target="_blank">${jsObject.translations.group_members_link}</a>
-                                        `:""}
                                     <button
                                         @click=${this.inviteFriends}
                                         class="btn brand tight mt--2"
