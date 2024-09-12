@@ -51,5 +51,6 @@ function zume_training_load_scripts( $hook ) {
     wp_localize_script( 'vite_bundle_js', 'zumeApiShare', [
         'root' => esc_url_raw( rest_url() ),
         'nonce' => wp_create_nonce( 'wp_rest' ),
+        'zume_vimeo_api_key' => get_option( 'zume_vimeo_api_key' ),
     ] );
 }

@@ -24,8 +24,7 @@ import './components/progress-slider'
 import { Settings } from 'luxon'
 
 jQuery(document).ready(() => {
-    const cookies = document.cookie ? Object.fromEntries(document.cookie.split(';').map((cookie) => cookie.trim().split('='))) : {}
-    const zumeLocale = cookies.zume_language || 'en'
+    const zumeLocale = getCookie('zume_language') || 'en'
 
     let locale = zumeLocale
     if (zumeLocale.includes('_')) {
@@ -38,9 +37,26 @@ jQuery(document).ready(() => {
 
     Settings.defaultLocale = locale
 
+    /* Check if Vimeo is available. If not we will have to use html5 players */
+    if ( !getCookie('zume_video_available') ) {
+        fetch('https://api.vimeo.com/tutorial', {
+            headers: {
+                'Authorization': `bearer ${window.zumeApiShare.zume_vimeo_api_key}`
+            }
+        })
+            .then((result) => {
+                if (result.ok) {
+                    /* Set short lived cookie so the user doesn't get stuck with broken videos if they travel/vpn
+                     to another country */
+                    setCookie('zume_video_available', 1, '', 1)
+                }
+            })
+    }
+
     const videoPlayers = document.querySelectorAll('.video-player')
     videoPlayers.forEach((videoPlayer) => {
         const videoSrc = videoPlayer.getAttribute('data-video-src')
+        const videoAltSrc = videoPlayer.getAttribute('data-video-alt-src')
         const iframe = videoPlayer.querySelector('iframe')
         const videoTrigger = videoPlayer.querySelector('.video-trigger')
 
@@ -57,7 +73,19 @@ jQuery(document).ready(() => {
         videoTrigger.addEventListener('click', loadVideo)
         function loadVideo(event) {
             console.log(event, videoSrc)
-            refreshedIframe.src = videoSrc
+
+            if (getCookie('zume_video_available')) {
+                refreshedIframe.src = videoSrc
+            } else {
+                const videoElement = document.createElement('video')
+                videoElement.src = videoAltSrc
+                videoElement.controls = true
+                videoElement.autoplay = true
+
+                refreshedIframe.parentNode.insertBefore(videoElement, refreshedIframe)
+                refreshedIframe.remove()
+            }
+
             videoTrigger.style.display = 'none'
         }
     })
@@ -106,6 +134,15 @@ export function setCookie(cname, cvalue, path = '', exdays = 0) {
     document.cookie = cookie;
 }
 
+function getCookie(key) {
+    const cookies = document.cookie ? Object.fromEntries(document.cookie.split(';').map((cookie) => cookie.trim().split('='))) : {}
+    if (key in cookies) {
+        return cookies[key]
+    }
+    return false
+}
+
 window.zumeApiShare.escapeObject = escapeObject
 window.zumeApiShare.escapeHTML = escapeHTML
 window.zumeApiShare.setCookie = setCookie
+window.zumeApiShare.getCookie = getCookie

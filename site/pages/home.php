@@ -181,7 +181,11 @@ class Zume_Training_Home extends Zume_Magic_Page
             <h2 class="container-md | white"><?php echo esc_html__( 'Ordinary People. Simple Steps.', 'zume' ) ?></h2>
             <div class="container-md | align-items-center">
                 <div class="container-md video-frame mx-auto position-relative bg-white rounded hard-shadow">
-                    <div class="video-player mx-auto position-relative" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '69', true, null, true ) ) ?>">
+                    <div
+                        class="video-player mx-auto position-relative"
+                        data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '69', true, null, true ) ) ?>"
+                        data-video-alt-src="<?php echo esc_url( Zume_Course::get_alt_video_by_key( '69' ) ) ?>"
+                    >
                         <div class="responsive-embed widescreen m0">
                             <iframe width="640" height="360" src="" frameborder="0"></iframe>
                         </div>
@@ -225,7 +229,11 @@ class Zume_Training_Home extends Zume_Magic_Page
                 </div>
                 <div>
                     <div class="position-relative mx-auto mw-20rem">
-                        <div class="video-player responsive-embed widescreen m0" data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '70', true, null, true ) ) ?>">
+                        <div
+                            class="video-player responsive-embed widescreen m0"
+                            data-video-src="<?php echo esc_url( Zume_Course::get_video_by_key( '70', true, null, true ) ) ?>"
+                            data-video-alt-src="<?php echo esc_url( Zume_Course::create_alt_video_by_key( '70' ) ) ?>"
+                        >
                             <iframe width="640" height="360" src="" frameborder="0"></iframe>
                             <div class="video-trigger absolute inset">
                                 <img src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/Howitworks-thumbnail.png' ) ?>" alt="zume video">

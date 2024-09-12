@@ -8,12 +8,15 @@ export class VideoSlide extends CourseSlide {
             showButtons: { type: Boolean },
             id: { type: String },
             scriptUrl: { type: String, attribute: false },
+            altVideoUrl: { type: String, attribute: false },
             offCanvasId: { type: String, attribute: false },
             loading: { type: Boolean, attribute: false },
         };
     }
     connectedCallback() {
         super.connectedCallback()
+
+        this.useAltVideo = window.zumeApiShare.getCookie('zume_video_available') ? false : true
 
         this.handleLoad = this.handleLoad.bind(this)
     }
@@ -23,6 +26,7 @@ export class VideoSlide extends CourseSlide {
         this.offCanvasId = 'informationOffCanvas' + this.id
         this.iframeId = 'iframe' + this.id
         this.offCanvasSelector = '#' + this.offCanvasId
+        this.altVideoUrl = jsObject.mirror_url + jsObject.language + '/' + this.slide.alt_video_id + '.mp4'
 
         await this.loadScriptIntoFrame()
 
@@ -64,8 +68,15 @@ export class VideoSlide extends CourseSlide {
         this.loading = false
     }
 
-    maybeRemoveAutoplay(videoUrl) {
+    shouldAutoplay() {
         if (!this.inContainer) {
+            return true
+        }
+        return false
+    }
+
+    maybeRemoveAutoplay(videoUrl) {
+        if (this.shouldAutoplay()) {
             return videoUrl
         }
 
@@ -94,11 +105,26 @@ export class VideoSlide extends CourseSlide {
                 </button>
 
                 <div class="widescreen flex-video">
-                    <iframe src="${this.maybeRemoveAutoplay(this.slide['center'][0])}"
-                            frameborder="0"
-                            allow="autoplay; fullscreen; picture-in-picture"
-                    >
-                    </iframe>
+                    ${
+                        this.useAltVideo ? html`
+                            <video
+                                style="border: 1px solid lightgrey;max-width:100%;"
+                                poster=${jsObject.images_url + '/video-thumb.jpg'}
+                                controls
+                                ?autoplay=${this.shouldAutoplay()}
+                            >
+                                <source src=${this.altVideoUrl || ''} type="video/mp4">
+                                Your browser does not support the video tag.
+                                <a href=${this.altVideoUrl || ''}>${jsObject.translations.watch_this_video}</a>
+                            </video>
+                        ` : html`
+                            <iframe src="${this.maybeRemoveAutoplay(this.slide['center'][0])}"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture"
+                            >
+                            </iframe>
+                        `
+                    }
                 </div>
             </div>
             <div

@@ -88,6 +88,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
                 'language_cookie' => ZUME_LANGUAGE_COOKIE,
                 'zume_languages' => zume_language_codes(),
                 'translations' => self::translations(),
+                'mirror_url' => zume_mirror_url(),
             ]) ?>][0]
             const zume10Sessions = [<?php echo json_encode( Zume_Course_Builder::builder( '10', $this->lang_code ) ) ?>][0]
             const zume10SessionsMenu = [<?php echo json_encode( Zume_Course_Builder::menu( '10', $this->lang_code ) ) ?>][0]
@@ -164,6 +165,7 @@ class Zume_Training_Presenter extends Zume_Magic_Page
             'close' => __( 'Close', 'zume' ),
             'view_script' => __( 'View Transcript', 'zume' ),
             'view_activity' => __( 'View Activity', 'zume' ),
+            'watch_this_video' => __( 'Watch This Video', 'zume' ),
         ];
     }
 }
