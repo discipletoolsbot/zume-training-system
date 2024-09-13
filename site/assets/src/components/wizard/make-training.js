@@ -38,7 +38,7 @@ export class MakeTraining extends LitElement {
         this.errorMessage = ''
         this.message = ''
         this.loading = false
-        this.stateManager = new WizardStateManager(Modules.makePlan)
+        this.stateManager = WizardStateManager.getInstance(Modules.makePlan)
         this.stateManager.clear()
         this.trainingSchedule = []
         this.selectedDays = []

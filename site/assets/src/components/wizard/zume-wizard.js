@@ -63,7 +63,7 @@ export class Wizard extends LitElement {
         this._handleReloadProfile = this._handleReloadProfile.bind(this)
         this._handleWizardFinished = this._handleWizardFinished.bind(this)
 
-        this.stateManager = new WizardStateManager()
+        this.stateManager = WizardStateManager.getInstance('root')
     }
     connectedCallback() {
         super.connectedCallback()
@@ -224,6 +224,7 @@ export class Wizard extends LitElement {
                 translations = this.t.share
                 break
             case Steps.joinTraining:
+            case Steps.joinTrainingSelection:
                 tag = literal`join-training`
                 translations = this.t.join_training
                 break

@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit';
-import { Steps } from './wizard-constants';
+import { Modules, Steps } from './wizard-constants';
 import { WizardStateManager } from './wizard-state-manager';
 import { zumeRequest } from '../../js/zumeRequest';
 
@@ -42,7 +42,7 @@ export class RequestCoach extends LitElement {
             'telegram',
             'messenger',
         ]
-        this.stateManager = new WizardStateManager(this.module)
+        this.stateManager = WizardStateManager.getInstance(Modules.getACoach)
         this.stateManager.clear()
     }
 
