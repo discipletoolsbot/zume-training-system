@@ -148,7 +148,7 @@ export class CompleteProfile extends LitElement {
             <div class="cluster | mx-auto">
                 <button type="submit" class="btn tight" ?disabled=${this.loading}>
                     ${this.t.next}
-                   ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
+                    ${ [ Steps.updatePhone, Steps.updateName ].includes(this.variant) ? html`
                         <span class="loading-spinner ${this.loading ? 'active' : ''}"></span>
                     ` : '' }
                 </button>

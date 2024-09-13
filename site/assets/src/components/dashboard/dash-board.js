@@ -124,6 +124,7 @@ export class DashBoard extends navigator(router(LitElement)) {
         window.addEventListener('user-state:change', this.getCtas)
         window.addEventListener('user-host:change', this.refetchHost)
         window.addEventListener('training:changed', this.updateTrainingGroups)
+        window.addEventListener('commitments:change', this.getCtas)
 
         window.addEventListener('load', this.showCelebrationModal)
         window.addEventListener('ctas:changed', this.showCelebrationModal)
@@ -777,14 +778,14 @@ export class DashBoard extends navigator(router(LitElement)) {
                                     </nav-link>
                                     ${this.isGettingStartedActive()
                                         ? html`
-                                              <progress-circle
-                                                  percent=${this.getGettingStartedPercentage()}
-                                                  radius="12"
-                                              ></progress-circle>
-                                          `
+                                            <progress-circle
+                                                percent=${this.getGettingStartedPercentage()}
+                                                radius="12"
+                                            ></progress-circle>
+                                        `
                                         : html`<span
-                                              class="z-icon-check-mark success f-2"
-                                          ></span>`}
+                                            class="z-icon-check-mark success f-2"
+                                        ></span>`}
                                     <ul
                                         class="nested ${this.isGettingStartedActive()
                                             ? 'is-active'
@@ -810,13 +811,12 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         @click=${route.type ===
                                                         'handled-link'
                                                             ? (event) => {
-                                                                  if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, this.userState)) {
-                                                                      event.preventDefault()
-                                                                      return
-                                                                  }
-                                                                  route.clickHandler(event, this.dispatchEvent)
-                                                              }
-                                                            : null}
+                                                                if (!route.data.neverDisabled && DashBoard.getCompletedStatus(route.name, this.userState)) {
+                                                                    event.preventDefault()
+                                                                    return
+                                                                }
+                                                                route.clickHandler(event, this.dispatchEvent)
+                                                            } : null}
                                                         ?completed=${DashBoard.getCompletedStatus(
                                                             route.name,
                                                             this.userState
@@ -927,17 +927,16 @@ export class DashBoard extends navigator(router(LitElement)) {
                                                         : 'nav'}
                                                     @click=${isHandledLink
                                                         ? (event) => {
-                                                              if (isCompleted) {
-                                                                  event.preventDefault()
-                                                                  return
-                                                              }
-                                                              route.clickHandler(
-                                                                  event,
-                                                                  this
-                                                                      .dispatchEvent
-                                                              )
-                                                          }
-                                                        : null}
+                                                            if (isCompleted) {
+                                                                event.preventDefault()
+                                                                return
+                                                            }
+                                                            route.clickHandler(
+                                                                event,
+                                                                this
+                                                                    .dispatchEvent
+                                                            )
+                                                        } : null}
                                                     ?completed=${isCompleted}
                                                 ></nav-link>
                                                 <span
@@ -990,32 +989,31 @@ export class DashBoard extends navigator(router(LitElement)) {
                         <div class="footer-links">
 
                             <nav-link
-                              class="menu-btn | f--1"
-                              href=""
-                              icon="z-icon-public-training"
-                              text=${jsObject.translations.join_training_group}
-                              as="link"
-                              @click=${this.openJoinTrainingWizard}
+                                class="menu-btn | f--1"
+                                href=""
+                                icon="z-icon-public-training"
+                                text=${jsObject.translations.join_training_group}
+                                as="link"
+                                @click=${this.openJoinTrainingWizard}
                             ></nav-link>
 
                             ${!this.hasJoinedCommunity()
                                 ? html`
-                                      <nav-link
-                                          class="menu-btn | f--1"
-                                          href=""
-                                          icon="z-icon-community"
-                                          text=${this.hasJoinedCommunity()
-                                              ? jsObject.translations.community
-                                              : jsObject.translations
-                                                    .join_the_community}
-                                          as="link"
-                                          @click=${this.openCommunityWizard}
-                                      ></nav-link>
-                                  `
+                                    <nav-link
+                                        class="menu-btn | f--1"
+                                        href=""
+                                        icon="z-icon-community"
+                                        text=${this.hasJoinedCommunity()
+                                            ? jsObject.translations.community
+                                            : jsObject.translations.join_the_community}
+                                        as="link"
+                                        @click=${this.openCommunityWizard}
+                                    ></nav-link>
+                                `
                                 : ''}
 
                             ${jsObject.is_coach
-                              ? html`
+                                ? html`
                                     <nav-link
                                         class="menu-btn | f--1"
                                         href="/coaching"
@@ -1023,7 +1021,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                                         text="${jsObject.translations.coaching_portal}"
                                     ></nav-link>
                                     `
-                              : ''}
+                                : ''}
                         </div>
                     </div>
                 </div>
@@ -1117,48 +1115,49 @@ export class DashBoard extends navigator(router(LitElement)) {
                 </button>
                 ${DashBoard.getLockedStatus('3-month-plan', this.userState)
                     ? html`
-                          <div class="container-sm">
-                              <div class="dash-menu__list-item">
-                                  <div class="dash-menu__icon-area | stack--5">
-                                      <span
-                                          class="icon z-icon-progress dash-menu__list-icon"
-                                      ></span>
-                                  </div>
-                                  <div
-                                      class="dash-menu__text-area | switcher | switcher-width-20"
-                                  >
-                                      <div>
-                                          <h3 class="f-1 bold uppercase">
-                                              ${jsObject.translations
-                                                  .locked_3_month_plan}
-                                          </h3>
-                                          <p>
-                                              ${jsObject.translations
-                                                  .locked_3_month_plan_explanation}
-                                          </p>
-                                      </div>
-                                      <button
-                                          class="dash-menu__view-button btn tight"
-                                          @click=${this.unlock3MonthPlan}
-                                      >
-                                          ${jsObject.translations.unlock}
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      `
+                        <div class="container-sm">
+                            <div class="dash-menu__list-item">
+                                <div class="dash-menu__icon-area | stack--5">
+                                    <span
+                                        class="icon z-icon-progress dash-menu__list-icon"
+                                    ></span>
+                                </div>
+                                <div
+                                    class="dash-menu__text-area | switcher | switcher-width-20"
+                                >
+                                    <div>
+                                        <h3 class="f-1 bold uppercase">
+                                            ${jsObject.translations
+                                                .locked_3_month_plan}
+                                        </h3>
+                                        <p>
+                                            ${jsObject.translations
+                                                .locked_3_month_plan_explanation}
+                                        </p>
+                                    </div>
+                                    <button
+                                        class="dash-menu__view-button btn tight"
+                                        @click=${this.unlock3MonthPlan}
+                                    >
+                                        ${jsObject.translations.unlock}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `
                     : html`
-                          <activity-3-month-plan
-                              .questions=${jsObject.three_month_plan_questions}
-                              .translations=${jsObject.three_month_plan_translations}
-                              user_id=${this.userProfile.user_id}
-                              contact_id=${this.userProfile.contact_id}
-                              @3-month-plan-saved=${this
-                                  .handleCreated3MonthPlan}
-                              @3-month-plan-cancelled=${this.close3MonthPlan}
-                              showCancel
-                          ></activity-3-month-plan>
-                      `}
+                        <activity-3-month-plan
+                            .questions=${jsObject.three_month_plan_questions}
+                            .translations=${jsObject.three_month_plan_translations}
+                            user_id=${this.userProfile.user_id}
+                            contact_id=${this.userProfile.contact_id}
+                            @3-month-plan-saved=${this
+                                .handleCreated3MonthPlan}
+                            @3-month-plan-cancelled=${this.close3MonthPlan}
+                            showCancel
+                        ></activity-3-month-plan>
+                    `
+                }
             </div>
         `
     }

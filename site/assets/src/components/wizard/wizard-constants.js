@@ -47,6 +47,7 @@ export const Steps = {
     howCanWeServe: 'how-can-we-serve',
     connectingToCoach: 'connecting-to-coach',
     joinTraining: 'public-training',
+    joinTrainingSelection: 'public-training-selection',
     connectToFriend: 'connect-friend',
     joinFriendsPlan: 'friend-training',
     checkinSubmit: 'checkin-submit',

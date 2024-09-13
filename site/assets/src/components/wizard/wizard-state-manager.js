@@ -6,26 +6,49 @@ export class WizardStateManager {
     #wizardState;
     moduleName;
 
+    static instance
+
+    static getInstance(moduleName) {
+        if (!this.instance) {
+            this.instance = new WizardStateManager(moduleName)
+        }
+        this.instance.useModule(moduleName)
+        return this.instance
+    }
+
     constructor(moduleName) {
         this.moduleName = moduleName
 
-        this.#wizardState = this.#init()
+        this.#init()
+
+        this.#save()
     }
 
     #init() {
         const existingState = this.#load()
 
-        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) && existingState.module === this.moduleName ) {
-            return existingState
+        if ( existingState && !this.#isOlderThan(existingState, this.MAX_LIFESPAN) ) {
+            this.#wizardState = existingState
+        } else {
+            this.#wizardState = this.#createEmpty()
         }
 
-        return this.#createEmpty()
+        this.useModule(this.moduleName)
+    }
+
+    useModule(moduleName) {
+        this.moduleName = moduleName
+        if (!(this.moduleName in this.#wizardState.data)) {
+            console.log('adding empty ')
+            this.#wizardState.data[this.moduleName] = {}
+        }
     }
 
     #createEmpty() {
         return ({
-            module: this.moduleName,
-            data: {},
+            data: {
+                [this.moduleName]: {},
+            },
             timestamp: Date.now(),
         })
     }
@@ -49,7 +72,7 @@ export class WizardStateManager {
     }
 
     isEmpty() {
-        return Object.keys(this.#wizardState.data).length === 0
+        return Object.keys(this.#wizardState.data[this.moduleName]).length === 0
     }
 
     isDataStale() {
@@ -57,31 +80,30 @@ export class WizardStateManager {
     }
 
     has( key ) {
-        return Object.prototype.hasOwnProperty.call(this.#wizardState.data, key)
+        return Object.prototype.hasOwnProperty.call(this.#wizardState.data[this.moduleName], key)
     }
 
     get( key ) {
-        return this.#wizardState.data[key]
+        return this.#wizardState.data[this.moduleName][key]
     }
 
     getAll() {
-        return this.#wizardState.data
+        return this.#wizardState.data[this.moduleName]
     }
 
     add(key, value) {
-        this.#wizardState.data[key] = value
+        this.#wizardState.data[this.moduleName][key] = value
 
         this.#save()
     }
     remove(key) {
-        delete this.#wizardState.data[key]
+        delete this.#wizardState.data[this.moduleName][key]
 
         this.#save()
     }
 
     clear() {
-        this.#wizardState = this.#createEmpty()
-
-        localStorage.removeItem(this.WIZARD_STATE_NAME)
+        this.#wizardState.data[this.moduleName] = {}
+        this.#refreshTimestamp()
     }
 }

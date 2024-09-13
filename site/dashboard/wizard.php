@@ -249,7 +249,9 @@ class Zume_Training_Wizard extends Zume_Magic_Page
                 'timezone' => __( 'Timezone', 'zume' ),
                 'language' => __( 'Language', 'zume' ),
                 'join' => __( 'Join', 'zume' ),
+                'next' => __( 'Next', 'zume' ),
                 'no_plans' => __( 'There are currently no public trainings available.', 'zume' ),
+                'complete_profile' => __( 'Please make sure that your profile is up to date, so that group leaders can contact you.', 'zume' ),
             ],
             'connect_friend' => [
                 'title' => __( 'Connecting with friend', 'zume' ),

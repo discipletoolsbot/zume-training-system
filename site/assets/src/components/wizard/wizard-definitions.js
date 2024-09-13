@@ -60,15 +60,14 @@ export const wizardDefinitions = {
         ], true),
     },
     [Wizards.joinATraining]: {
-        [Modules.completeProfile]: makeModule([
+        [Modules.joinTraining]: makeModule([
+            Steps.joinTrainingSelection,
             Steps.updateName,
             Steps.updateLocation,
             Steps.contactPreferences,
             Steps.updatePhone,
-        ]),
-        [Modules.joinTraining]: makeModule([
             Steps.joinTraining,
-        ], true),
+        ]),
     },
     [Wizards.connectWithFriend]: {
         [Modules.completeProfile]: makeModule([

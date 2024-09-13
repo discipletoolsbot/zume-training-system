@@ -1,8 +1,9 @@
 import { LitElement, html } from 'lit';
 import { repeat } from 'lit/directives/repeat.js';
 import { zumeRequest } from '../../js/zumeRequest';
+import { navigator } from 'lit-element-router';
 
-export class DashCta extends LitElement {
+export class DashCta extends navigator(LitElement) {
     static get properties() {
         return {
             ctas: { type: Array, attribute: false },
@@ -167,6 +168,36 @@ export class DashCta extends LitElement {
 
         dispatchEvent(new CustomEvent('open-wizard', { bubbles: true, detail: { type: wizardType } }))
     }
+    openModal(link) {
+        const urlParts = link.split('/')
+        const modalEvent = urlParts[urlParts.length - 1]
+
+        this.dispatchEvent(new CustomEvent(modalEvent, { bubbles: true }))
+    }
+
+    renderLink(content) {
+        if (this.isWizardLink(content.link)) {
+            return html`
+                <button class="btn" @click=${() => this.openWizard(content.link)}>${content.link_text}</button>
+            `
+        }
+        if (content.link.includes('modal/')) {
+            return html`
+                <button class="btn" @click=${() => this.openModal(content.link)}>${content.link_text}</button>
+            `
+        }
+        if (content.link.includes('/dashboard/')) {
+            return html`
+                <a class="btn" @click=${(e) => {
+                    e.preventDefault()
+                    this.navigate(content.link)
+                }}>${content.link_text}</a>
+            `
+        }
+        return html`
+            <a href="${content.link}" class="btn">${content.link_text}</a>
+        `
+    }
 
     renderCta({ content, content_template, key }) {
         const classes = this.hiddenCtaKeys.includes(key) ? 'hiding' : 'showing'
@@ -175,16 +206,7 @@ export class DashCta extends LitElement {
                 <div class="stack | card cta ${classes}" data-key=${key} style="--duration: ${DashCta.TRANSITION_TIMEOUT}ms">
                     <h2 class="h5 text-center">${content.title}</h2>
                     <p>${content.description}</p>
-                    ${
-                        this.isWizardLink(content.link)
-                        ? html`
-                            <button class="btn" @click=${() => this.openWizard(content.link)}>${content.link_text}</button>
-                        `
-                        : html`
-                            <a href="${content.link}" class="btn">${content.link_text}</a>
-                        `
-                    }
-
+                    ${this.renderLink(content)}
                 </div>
             `
         }
