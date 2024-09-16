@@ -1,4 +1,5 @@
 import { LitElement, html } from 'lit';
+import { repeat } from 'lit/directives/repeat.js'
 
 export class CourseGuide extends LitElement {
     static get properties() {
@@ -11,8 +12,7 @@ export class CourseGuide extends LitElement {
         return html`
             <div class="course-guide">
                 <div class="stack | py-4 snap-content" data-outline-slides>
-                    ${this.sections.map((slide, i) => {
-                        return html`
+                    ${repeat(this.sections, (slide) => slide.key, (slide) => html`
                             <div class="slide-switcher">
                                 <slide-switcher
                                     .slide=${slide}
@@ -20,8 +20,7 @@ export class CourseGuide extends LitElement {
                                 ></slide-switcher>
                             </div>
                         `
-                    })}
-
+                    )}
                 </div>
             </div>
         `
