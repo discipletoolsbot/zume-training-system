@@ -475,7 +475,7 @@ switch ( $request_action ) {
                                                 <div>
                                                     <button
                                                         class="btn w-100 g-recaptcha"
-                                                        id="submit"
+                                                        id="form-submit"
                                                         data-sitekey="<?php echo esc_attr( isset( $dt_login['google_captcha_client_key'] ) ? $dt_login['google_captcha_client_key'] : '' ) ?>"
                                                         data-callback="onRegister"
                                                         data-action="submit"
@@ -489,15 +489,20 @@ switch ( $request_action ) {
                                         <script>
                                             function onRegister(token) {
 
-                                                const submitButtenElement = document.querySelector('#submit')
+                                                const recaptchaResponseInput = document.querySelector('#g-recaptcha-response')
+
+                                                recaptchaResponseInput.value = token
+
+                                                const submitButtenElement = document.querySelector('#form-submit')
                                                 submitButtenElement.classList.add('disabled')
                                                 submitButtenElement.setAttribute('disabled', '')
                                                 submitButtenElement.querySelector('.loading-spinner').classList.add('active')
 
-                                                const recaptchaResponseInput = document.querySelector('#g-recaptcha-response')
-                                                recaptchaResponseInput.value = token
-
-                                                document.getElementById('loginform').requestSubmit()
+                                                if (document.getElementById('loginform').requestSubmit) {
+                                                    document.getElementById('loginform').requestSubmit()
+                                                } else {
+                                                    document.getElementById('loginform').submit()
+                                                }
                                             }
                                         </script>
 
@@ -559,7 +564,7 @@ switch ( $request_action ) {
                                             })
 
                                             function getPasswordStrength() {
-                                               const val = password.value;
+                                                const val = password.value;
 
                                                 if (typeof zxcvbn !== 'function') {
                                                     if (val.length >= 8) {
