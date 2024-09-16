@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { Steps } from './wizard-constants';
 import { zumeAttachObservers, zumeDetachObservers } from '../../js/zumeAttachObservers';
+import { DateTime } from 'luxon';
 
 export class ReviewSteps extends LitElement {
     static get properties() {
@@ -181,7 +182,7 @@ export class ReviewSteps extends LitElement {
                             ${this.date === ''
                                 ? html`<span></span>`
                                 : html`
-                                    <span>${(new Date(this.date)).toLocaleString(navigator.language || 'en-US', {
+                                    <span>${DateTime.fromFormat(this.date, 'yyyy-MM-dd').toLocaleString({
                                         day: "numeric",
                                         month: "short",
                                         year: "numeric",

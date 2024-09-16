@@ -541,7 +541,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                     <div class="stack--1">
                         <div class="switcher switcher-width-15 justify-content-between gap--3">
                             ${this.date===""?c`<span></span>`:c`
-                                    <span>${new Date(this.date).toLocaleString(navigator.language||"en-US",{day:"numeric",month:"short",year:"numeric"})}</span>`}
+                                    <span>${g.fromFormat(this.date,"yyyy-MM-dd").toLocaleString({day:"numeric",month:"short",year:"numeric"})}</span>`}
                             <span class="d-flex justify-flex-end">
                                 <button
                                     class="btn small no-outline tight"
