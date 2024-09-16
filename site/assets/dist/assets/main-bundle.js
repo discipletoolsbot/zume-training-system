@@ -1081,20 +1081,20 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                             <h1 class="h3">${this.route.translation}</h1>
                         </div>
                         <div class="s0">
-                            <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
+                            <!-- <button class="icon-btn f-2" data-toggle="filter-menu" ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.filter}</span>
                                 <span class="icon z-icon-filter" aria-hidden="true"></span>
-                            </button>
+                            </button> -->
                             <button class="icon-btn f-2" @click=${this.openAddChurchModal} ?disabled=${this.showTeaser} aria-disabled=${this.showTeaser?"true":"false"}>
                                 <span class="visually-hidden">${jsObject.translations.add_church}</span>
                                 <span class="icon z-icon-plus" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
-                    <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
+                    <!-- <div class="dropdown-pane" id="filter-menu" data-dropdown data-auto-focus="true" data-position="bottom" data-alignment=${this.isRtl?"right":"left"} data-close-on-click="true" data-close-on-click-inside="true">
                         <ul>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <dash-header-right></dash-header-right>
 
