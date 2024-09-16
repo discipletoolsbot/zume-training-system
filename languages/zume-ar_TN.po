@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-09-13 21:59+0000\n"
-"Last-Translator: JS <jamillaton@gmail.com>\n"
+"PO-Revision-Date: 2024-09-16 12:51+0000\n"
+"Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
 "Language: ar_TN\n"
@@ -324,7 +324,7 @@ msgstr "تلمذة فروخ البطّ - القيادة الفورية"
 
 #: globals.php:2358
 msgid "Learn what ducklings have to do with disciple-making."
-msgstr "تعلمّ شنّية علاقة فروخ البطّ بالتّلمذة."
+msgstr "تعلّم شنّية علاقة فروخ البطّ بالتّلمذة."
 
 #: globals.php:2359 site/course/course-content.php:1142
 #: site/course/course-content.php:1253 site/course/course-content.php:1262
@@ -367,7 +367,7 @@ msgstr "العشاء الربّاني"
 
 #: globals.php:2393 site/pages/follow-jesus.php:305
 msgid "Prayer Walking and How To Do It"
-msgstr "كيفاه نعملوا صلاة المسير"
+msgstr "كيفاه نعملوا مسير الصّلاة"
 
 #: globals.php:2394
 msgid ""
@@ -438,7 +438,7 @@ msgid ""
 msgstr ""
 "مجموعة 3/3 هي طريقة يتقابلوا بيها أتباع يسوع يصلّيوا, يتعلّموا, يكبروا, "
 "يشاركوا ويمارسوا الطّاعة والمشاركة بلّي تعلّموه.مجموعة 3/3 موش مجموعة صغيرة "
-"أكهو, بل هي كنسية بسيطة."
+"أكهو, أما هي كنسية بسيطة."
 
 #: globals.php:2443
 msgid "3/3 Group"
@@ -621,15 +621,15 @@ msgstr ""
 
 #: globals.php:2585
 msgid "3-Circles Gospel Presentation"
-msgstr "3 - عرض الإنجيل على شكل دوائر"
+msgstr "عرض الإنجيل على شكل 3 - دوائر"
 
 #: globals.php:2586
 msgid ""
 "The 3-Circles gospel presentation is a way to tell the gospel using a simple "
 "illustration that can be drawn on a piece of paper."
 msgstr ""
-"عرض الإنجيل بإستعمال الدوائر الثلاثة, هو وسيلة لرواية الإنجيل بإستعمال رسم "
-"توضيحي بسيط نجّموا نرسموه على ورقة."
+"عرض الإنجيل على شكل 3 - دوائر, هو وسيلة لرواية الإنجيل بإستعمال رسم توضيحي "
+"بسيط نجّموا نرسموه على ورقة."
 
 #: globals.php:2587
 msgid "3-Circles"
@@ -657,7 +657,7 @@ msgstr "الممارسة"
 
 #: maps/heatmap.php:3156
 msgid "visitor"
-msgstr "الضّيف"
+msgstr "المتفقّد"
 
 #: maps/heatmap.php:3166
 #, php-format
@@ -843,7 +843,7 @@ msgstr "الكنائس المطلوبة"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
-msgstr "الكنائس الّي تمّ الإبلاغ عليها"
+msgstr "الكنائس الّي تمّ التبليغ عليها"
 
 #: maps/js-translation-strings.php:10
 msgid "Trainees Needed"
@@ -851,7 +851,7 @@ msgstr "مطلوب متدرّبين"
 
 #: maps/js-translation-strings.php:11
 msgid "Trainees Reported"
-msgstr "تمّ الإبلاغ على المتدرّبين"
+msgstr "تمّ التبليغ على المتدرّبين"
 
 #: maps/js-translation-strings.php:13
 msgid "Activities Reported"
@@ -879,7 +879,7 @@ msgstr "اللّغات"
 
 #: maps/js-translation-strings.php:20
 msgid "All Types"
-msgstr "كلّ الانواع"
+msgstr "كلّ الأنواع"
 
 #: maps/js-translation-strings.php:21
 msgid "All Countries"
@@ -920,7 +920,7 @@ msgid ""
 "making through Zúme around the world. The 100 hours begins now and covers "
 "activity over roughly the last 4 days."
 msgstr ""
-"تظهّر خريطة آخر 100 ساعة الرّوح القدس وهو يحرّك شعبو من خلال زوميّه لتلمذة "
+"تظهّر خريطة آخر 100 ساعة الرّوح القدس وهو يحرّك في شعبو من خلال زوميّه لتلمذة "
 "التلامذة في كلّ أنحاء العالم.تبدا ال100 ساعة توّا وتغطّي النشاط على مدار الأيام "
 "ال4 لخّرى تقريبا."
 
@@ -932,7 +932,8 @@ msgstr "أنواع الأنشطة"
 msgid ""
 "Someone who is \"studying\" is not logged into the system, but is studying "
 "the course material."
-msgstr "الشخص الّي \"يقرا \" ميتمّش تسجيل دخولوا لنّظام، أما يقرا مادة الدورة."
+msgstr ""
+"الشخص الّي \"يقرا \" ميتمّش تسجيل دخولوا لنّظام، أما يقرا في مادة الدورة."
 
 #: maps/js-translation-strings.php:34
 msgid ""
@@ -947,22 +948,22 @@ msgid ""
 "Someone who is \"practicing\" is taking action by sharing tools and "
 "concepts, training others to share, reporting on movement growth, etc."
 msgstr ""
-"الشخص الّي \"يمارس\" يتخذ إجراءات من خلال مشاركة الأدوات والمفاهيم، وتدريب النّ"
-"اس على المشاركة، والإبلاغ على نمو الحركة."
+"الشخص الّي \"يمارس\" يتخذ الإجراءات بمشاركة الأدوات والمفاهيم، وتدريب النّاس "
+"على المشاركة، والتبليغ على نمو الحركة."
 
 #: maps/js-translation-strings.php:36
 msgid ""
 "Someone who is in \"coaching\" is interacting with a peer mentor Zúme coach."
-msgstr "الشخص الّي يقوم بـ \"التّدريب\" يتفاعل مع أحد مرشديه وهو مدرّب زوميّه."
+msgstr "الشخص الّي يقوم بـ \"التّدريب\" يتفاعل مع مرشد ومدرّب زوميّه."
 
 #: maps/js-translation-strings.php:37 maps/map-3-trainees.php:152
 #: maps/map-5-churches.php:152
 msgid "How to Get on The Map"
-msgstr "كيفية الوصول للخريطة"
+msgstr "كيفاه توصل للخريطة"
 
 #: maps/js-translation-strings.php:38
 msgid "Always sign in when you are studying the content."
-msgstr "قوم بتسجيل الدّخول ديما وقت دراسة المحتوى."
+msgstr "سجّل دخولك ديما وقت دراسة المحتوى."
 
 #: maps/js-translation-strings.php:39
 msgid "Always checkin when you are going through a session."
@@ -1005,7 +1006,7 @@ msgid ""
 "of trained multiplying disciples."
 msgstr ""
 "نحبوا نملاو العالم بتلامذة متضاعفين.توضّح \"خريطة متدربي زوميّه\" شنية المطلوب "
-"وشنية المبلّغ عليه باش نملاو العالم بتلامذة متضاعفين ومدرّبين."
+"وشنية المبلّغ عليه باش نملاو العالم بتلامذة متضاعفين ومدّربين."
 
 #: maps/map-3-trainees.php:142 maps/map-5-churches.php:142
 msgid "Saturation Goal"
@@ -1027,13 +1028,14 @@ msgstr "القياسات المستعملة"
 msgid ""
 "\"Needed\" refers to what is missing in the location listed according to "
 "population."
-msgstr "تشير كلمة \"مطلوب\" لما هو مفقود في الموقع المدرج حسب عدد السكان."
+msgstr "تشير كلمة \"مطلوب\" للّي مفقود في الموقع حسب عدد السكان."
 
 #: maps/map-3-trainees.php:150
 msgid ""
 "\"Reported\" refers to trainees who have registered themselves to the Zúme "
 "community."
-msgstr "تشير كلمة \"المُبلغ عليهم\" للمتدربيّن الّي سجلوا رواحهم في مجموعة زوميّه."
+msgstr ""
+"تشير كلمة \"المبلغ عليهم\" للمتدربيّن الّي سجلوا رواحهم في مجموعة زوميّه."
 
 #: maps/map-3-trainees.php:154 maps/map-5-churches.php:154
 msgid "Join the Zúme community."
@@ -1072,7 +1074,7 @@ msgid ""
 "Saturation Goal: 2 simple churches per 5,000 people in the United States, "
 "and 2 simple churches per 50,000 people globally"
 msgstr ""
-"هدف التعبئة: 2 كنايس بساط لكلّ 5,000 شخص في الولايات المتحدة, و 2 كنايس بساط "
+"هدف التعبئة: 2 كنايس بساط لكلّ 5,000 شخص في الولايات المتحدة, و2 كنايس بساط "
 "لكلّ 50،000 شخص على مستوى العالم"
 
 #: maps/map-5-churches.php:141
@@ -1096,7 +1098,7 @@ msgstr "2 كنائس بساط لكلّ 50,000 شخص على مستوى العا�
 msgid ""
 "\"Reported\" refers to churches who have registered themselves to the Zúme "
 "community."
-msgstr "تشير كلمة \"المُبلغ عليه\" للكنائس الّي سجلت روحها في مجموعة زوميّه."
+msgstr "تشير كلمة \"المبلغ عليه\" للكنائس الّي سجلت روحها في مجموعة زوميّه."
 
 #: maps/map-5-churches.php:155
 msgid "Add your churches in the \"My Churches\" section of the dashboard."
@@ -1212,7 +1214,7 @@ msgstr "التّدريب"
 #: site/activities/coaching-checklist-two.php:189
 #: site/activities/coaching-checklist.php:254 site/dashboard/dashboard.php:258
 msgid "Have I heard about this tool or concept?"
-msgstr "هل سمعت قبل على الأداة و إلاّ على المفهوم؟"
+msgstr "هل سمعت قبل على الأداة وإلاّ على المفهوم؟"
 
 #: site/activities/coaching-checklist-host.php:172
 #: site/activities/coaching-checklist-two.php:193
@@ -1308,8 +1310,8 @@ msgid ""
 "giving a general idea of what it looks like. Modeling repeatedly is not an "
 "effective way to equip someone."
 msgstr ""
-"النّمذجة ببساطةهي تقديم مثال للمارسة وإلاّ الأداة.هذا هو أقصر جزء من دورة "
-"التّدريب.و في العادة نعملوها مرّة وحدة.ببساطة هو خلق وعي بوجود الممارسة وإلاّ "
+"النّمذجة ببساطةهي تقديم مثال للمارسة وإلاّ الأداة.هذا هو أقصر جزء من دورة التّ"
+"دريب.وفي العادة نعملوها مرّة وحدة.ببساطة هو خلق وعي بوجود الممارسة وإلاّ "
 "الأداة ونعطيوا فكرة عامّة على شكلها.النّمذجة بشكل متكرّر موش وسيلة فعّالة لتجهيز "
 "شخص."
 
@@ -1327,9 +1329,9 @@ msgid ""
 msgstr ""
 "المعاونة هي نخلّيوا المتعلّم يمارس المهارة.ويدوم هذا وقت أطول من مرحلة النّمذجة."
 "يطّلب \"التوجيه\"من جانب المرشد.ولازم يكون المرشد موجّه ويقوم بدور نشيط في "
-"تدريب المتعلّم.متستمرّش المرحلة هذي حتّى يولّي المتعلّم مؤهّل بالكامل و يفهم "
-"أساسيات المهارة.إذا استمرت المرحلة هذي لمدّة طويلة برشة، باش يولي المتعلّم "
-"يعتمّد على المرشد وموش باش يتقدّم جملا للكفاءة الكاملة."
+"تدريب المتعلّم.متستمرّش المرحلة هذي حتّى يولّي المتعلّم مؤهّل بالكامل ويفهم "
+"أساسيات المهارة.إذا استمرت المرحلة هذي لمدّة طويلة برشة، باش يولي المتعلّم يعتمّ"
+"د على المرشد وموش باش يتقدّم جملا للكفاءة الكاملة."
 
 #: site/activities/coaching-checklist-mawl.php:177
 #: site/activities/coaching-checklist-two.php:216
@@ -1411,7 +1413,7 @@ msgstr "التدريب على المعلومات الجديدة والتأكّد
 #: site/activities/coaching-checklist.php:160
 #: site/activities/coaching-checklist.php:289
 msgid "Stop and stay with them until they have the basics"
-msgstr "آقف و أقعد معاهم حتّى يتحصّلوا على الأساسيات"
+msgstr "آقف وأقعد معاهم حتّى يتحصّلوا على الأساسيات"
 
 #: site/activities/coaching-checklist.php:163
 #: site/activities/coaching-checklist.php:292
@@ -1445,7 +1447,7 @@ msgstr "الحصول على التحديثات"
 
 #: site/activities/coaching-checklist.php:191
 msgid "Planning Responsibilities"
-msgstr "مسؤوليات التخطّيط"
+msgstr "مسؤوليات التخطيط"
 
 #: site/activities/coaching-checklist.php:197
 msgid "Mentor decides"
@@ -1504,7 +1506,7 @@ msgstr "خطّة 3 شهور"
 #: site/activities/three-month-plan-printable.php:47
 #: site/activities/three-month-plan.php:68 site/dashboard/dashboard.php:227
 msgid "3-Month Plan"
-msgstr "خطّة الشهور الثلاثة"
+msgstr "خطّة الثلاثة شهور"
 
 #: site/activities/three-month-plan.php:69
 msgid "Switch to Printable Version"
@@ -2369,8 +2371,8 @@ msgid ""
 "Have everyone in your group take the next 30 minutes to fill out their own "
 "list of relationships. List as many as you can."
 msgstr ""
-"أطلب من كلّ فرد في مجموعتك يخصّص 30 دقيقة يعبّي فيها قائمة علاقاتو الخاصّة.قوم "
-"بإدراج عدد كبير ممكن مالعلاقات."
+"أطلب من كلّ فرد في مجموعتك يخصّص 30 دقيقة يعبّي فيها قائمة علاقاتو الخاصّة.حطّ "
+"عدد كبير ممكن مالعلاقات."
 
 #: site/course/course-content.php:646
 msgid ""
@@ -2405,7 +2407,7 @@ msgid ""
 "next session."
 msgstr ""
 "أسأل ربّي مع شكون يحبك تشارك معاه قائمة الأدوات المتكوّنة من 100 أداة.شارك إسم "
-"الشّخص هذا مع المجموعة قبل متمشي وتواصل معاه قبل الجلسة إلّي بعدها."
+"الشّخص هذا مع المجموعة قبل متمشي وتواصل معاه قبل الجلسة الجّاية."
 
 #: site/course/course-content.php:698 site/course/course-content.php:6017
 msgid "To saturate the world with multiplying disciples in our generation."
@@ -2531,7 +2533,7 @@ msgid ""
 "IMPORTANT REMINDER – Your group will be celebrating the Lord’s Supper next "
 "session. Be sure to remember the supplies (bread and wine / juice)."
 msgstr ""
-"تذكير هامّ - باش تحتفل مجموعتك بالعشاء الربّاني في الجلسة الجّاية.تأكّد إنّك تتذكّ"
+"تذكير هام - باش تحتفل مجموعتك بالعشاء الربّاني في الجلسة الجّاية.تأكّد إنّك تتذكّ"
 "ر الحاجات هاذم (الخبز والشراب/ العصير)."
 
 #: site/course/course-content.php:1049 site/course/course-content.php:4259
@@ -2550,14 +2552,14 @@ msgstr "الجلسة 4"
 #: site/course/course-content.php:1110
 msgid ""
 "Pray and thank God that He invites us to share His Good News with others."
-msgstr "صلّي وأشكر ربّي على خاطر خلّانا نشاركوا أخباروا السّارة مع النّاس."
+msgstr "صلّي وأشكر ربّي على خاطر خلّانا نشاركوا الأخبار السّارة مع النّاس."
 
 #: site/course/course-content.php:1111
 msgid ""
 "Ask Him to give each member of your group the mind of Christ — and to fill "
 "each one with His Spirit."
 msgstr ""
-"أطلب منو باش يعطي كل ّعضو في مجموعتك فكر المسيح – و يعبّي كلّ واحد منهم بروحوا."
+"أطلب منو باش يعطي كلّ عضو في مجموعتك فكر المسيح – و يعبّي كلّ واحد منهم بروحوا."
 
 #: site/course/course-content.php:1166
 msgid ""
@@ -2567,7 +2569,7 @@ msgid ""
 "can share better than you."
 msgstr ""
 "كأتباع ليسوع، أحنا شهود ليه على خاطر نشهدوا على تأثيروا في حياتنا.قصّة علاقتك "
-"مع ربّي تتّسمى شهادة.قصة قوّية وحتّى حدّ مينجّم يشاركها أحسن منك."
+"مع ربّي تتسمّى شهادة.قصة قوّية وحتّى حدّ مينجّم يشاركها أحسن منك."
 
 #: site/course/course-content.php:1190
 msgid "Practice sharing your testimony"
