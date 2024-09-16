@@ -55,7 +55,7 @@ export class VideoSlide extends CourseSlide {
 
         await this.updateComplete
 
-        const iframe = this.renderRoot.querySelector(`#${this.offCanvasId} iframe`)
+        const iframe = this.getIframe()
         if (iframe) {
             iframe.onload = this.handleLoad
         } else {
@@ -64,8 +64,19 @@ export class VideoSlide extends CourseSlide {
 
         this.scriptUrl = scriptUrl.href
     }
+    getIframe() {
+        return this.renderRoot.querySelector(`#${this.offCanvasId} iframe`)
+    }
     handleLoad() {
         this.loading = false
+
+        if ( /iPod|iPhone|iPad/.test(navigator.userAgent) ) {
+            const iframe = this.getIframe()
+
+            const parent = iframe.parentElement
+
+            parent.style.height = window.innerHeight + 'px'
+        }
     }
 
     shouldAutoplay() {
@@ -150,6 +161,7 @@ export class VideoSlide extends CourseSlide {
                     src=${this.scriptUrl || ''}
                     frameborder="0"
                     width="100%"
+                    height="100%"
                 >
                 </iframe>
             </div>
