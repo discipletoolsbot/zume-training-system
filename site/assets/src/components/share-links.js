@@ -77,7 +77,7 @@ export class ShareLinks extends LitElement {
                           <p role="alert" aria-live="polite" id="shareFeedback" class="context-alert" data-state=${this.shareFeedback.length ? '' : 'empty'}>${this.shareFeedback}</p>
                         </div>
                     ` : ''}
-                    ${ this.clipboardSupported ? html`
+                    ${ !this.webShareSupported && this.clipboardSupported ? html`
                         <div class="stack--2">
                           ${
                             this.alwaysShow ? html`<p><code>${this.url}</code></p>` : ''

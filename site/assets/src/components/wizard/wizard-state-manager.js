@@ -39,7 +39,6 @@ export class WizardStateManager {
     useModule(moduleName) {
         this.moduleName = moduleName
         if (!(this.moduleName in this.#wizardState.data)) {
-            console.log('adding empty ')
             this.#wizardState.data[this.moduleName] = {}
         }
     }

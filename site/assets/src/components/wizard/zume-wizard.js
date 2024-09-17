@@ -517,6 +517,7 @@ export class Wizard extends LitElement {
 
         if (!this.noUrlChange && Object.values(Wizards).includes(path) ) {
             this._gotoStep(0, false)
+            return
         }
 
         let currentModule = ''
