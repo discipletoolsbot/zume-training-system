@@ -481,6 +481,15 @@ export class Wizard extends LitElement {
             window.history.pushState( null, null, newUrl )
         }
 
+        if ( pushState && this.noUrlChange ) {
+            /* Add steps to # in url to allow user to reverse navigate through the wizard */
+            const url = new URL(window.location.href)
+
+            const newUrl = url.origin + url.pathname + url.search + `#${this.step.slug}`
+
+            window.history.pushState(null, null, newUrl)
+        }
+
         if (this.noUrlChange && Object.keys(queryParams).length > 0) {
             Object.entries(queryParams).forEach(([key, value]) => {
                 this.step = {
@@ -506,12 +515,20 @@ export class Wizard extends LitElement {
         const urlParts = url.pathname.split('/')
         const path = urlParts[urlParts.length - 1]
 
-        if ( Object.values(Wizards).includes(path) ) {
+        if (!this.noUrlChange && Object.values(Wizards).includes(path) ) {
             this._gotoStep(0, false)
         }
 
         let currentModule = ''
         let beginningOfModule = 0
+
+        const testSlug = (slug) => {
+            if (this.noUrlChange) {
+                const hash = url.hash.slice(1)
+                return slug === hash
+            }
+            path === slug
+        }
 
         this.steps.forEach(({slug, module}, i) => {
             if ( currentModule !== module ) {
@@ -519,7 +536,7 @@ export class Wizard extends LitElement {
                 beginningOfModule = i
             }
 
-            if ( path === slug ) {
+            if ( testSlug(slug) ) {
                 if (goToBeginningOfModule === true && this.stateManager.isDataStale()) {
                     this._gotoStep(beginningOfModule)
                     return
@@ -530,7 +547,7 @@ export class Wizard extends LitElement {
         })
 
         /* The previous step isn't in this wizard, so reload the current wizard journey */
-        if (!this.steps.some(({slug}) => path === slug)) {
+        if (!this.steps.some(({slug}) => testSlug(slug))) {
             this.steps = this.wizard.getSteps( this.type )
             this._gotoStep( this.steps.length - 1 )
         }
