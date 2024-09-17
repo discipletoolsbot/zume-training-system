@@ -66,12 +66,24 @@ jQuery(document).ready(function(){
         <div class="medium-9 cell">
             <div id="map-wrapper">
                 <div id='map'></div>
-                <div id="map-header"><h3>${jsObject.translation.last_100}</h3>${jsObject.translation.countries}: <span id="country_count">0</span> | ${jsObject.translation.languages}: <span id="languages_count">0</span></div>
+                <div id="map-header">
+                  <button
+                      id="exit-btn"
+                      class="btn outline | d-flex gap--2 mb-0 px-1 py--2"
+                      aria-label="${jsObject.translation.close}"
+                      type="button"
+                  >
+                      <span>${jsObject.translation.close}</span><span class="icon z-icon-close"></span>
+                  </button>
+                  <h3>${jsObject.translation.last_100}</h3>
+                  ${jsObject.translation.countries}: <span id="country_count">0</span> | ${jsObject.translation.languages}: <span id="languages_count">0</span>
+                </div>
             </div>
         </div>
         <div class="medium-3 cell">
             <div class="grid-x grid-padding-x" style="margin-top:10px;">
                 <div class="cell">
+
                     <div>
                         <select name="type" id="type-dropdown" class="input-filter">
                             <option value="none">${jsObject.translation.all_types}</option>

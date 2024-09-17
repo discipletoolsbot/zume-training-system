@@ -60,6 +60,7 @@ class Zume_Funnel_Public_Heatmap_Trainees extends Zume_Magic_Page
         $allowed_css[] = 'introjs-css';
         $allowed_css[] = 'heatmap-css';
         $allowed_css[] = 'site-css';
+        $allowed_css[] = 'vite_bundle_css';
         return $allowed_css;
     }
 

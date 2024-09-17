@@ -5,6 +5,7 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
 <style id="custom-style">
     #wrapper {
         height: 2000px !important;
+        position: relative;
     }
     #map-wrapper {
         height: 2000px !important;
@@ -42,12 +43,21 @@ $map_image_url = trailingslashit( plugin_dir_url( __DIR__ ) ) . 'images/'
 </div>
 
 <div id="wrapper">
+
     <div class="grid-x">
         <div class="cell medium-9" id="map-container">
             <div id="map-wrapper">
                 <span class="loading-spinner active"></span>
                 <div id='map'></div>
                 <div id="map-header">
+                    <button
+                        id="exit-btn"
+                        class="btn outline | d-flex gap--2 mb-0 px-1 py--2"
+                        aria-label="<?php echo esc_html__( 'Close', 'zume' ) ?>"
+                        type="button"
+                    >
+                        <span><?php echo esc_html__( 'Close', 'zume' ) ?></span><span class="icon z-icon-close"></span>
+                    </button>
                     <h3 id="map-header-title"><span class="loading-spinner active"></span></h3>
                     <span id="map-header-description"><span class="loading-spinner active"></span></span>
                 </div>

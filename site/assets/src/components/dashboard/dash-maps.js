@@ -26,6 +26,9 @@ export class DashMaps extends DashPage {
 
     firstUpdated() {
         jQuery(this.renderRoot).foundation();
+
+        const iframe = document.querySelector('#map-iframe')
+        iframe.addEventListener('load', this.handleLoad)
     }
 
     joinCommunity() {
@@ -41,31 +44,41 @@ export class DashMaps extends DashPage {
         /* This works but the heatmap sites don't load the heatmap properly */
         if (true) {
             if (map === 'hundred-hour-map') {
-                this.scriptUrl = 'https://zume.training/zume_app/last100_hours/'
+                this.scriptUrl = '/zume_app/last100_hours?show-exit-button'
             } else if (map === 'vision-map') {
-                this.scriptUrl = 'https://zume.training/zume_app/heatmap_trainees/'
+                this.scriptUrl = '/zume_app/heatmap_trainees?show-exit-button'
             } else if (map === 'church-map') {
-                this.scriptUrl = 'https://zume.training/zume_app/heatmap_churches/'
+                this.scriptUrl = '/zume_app/heatmap_churches?show-exit-button'
             } else {
                 this.scriptUrl = ''
             }
-            map = 'map'
         }
 
         if (currentUrl !== this.scriptUrl) {
             this.loading = true
-            const iframe = document.querySelector('#map-iframe')
-            iframe.onload = this.handleLoad
         }
 
-        /* Having 3 iframes in 3 modals should work, but all 3 have trouble loading for some reason i haven't pushed into yet */
-
-        const modal = document.querySelector(`#${map}-modal`)
+        const modal = document.querySelector(`#map-modal`)
         jQuery(modal).foundation('open')
     }
 
     handleLoad() {
         this.loading = false
+
+        this.attachExitButtonEventHandler()
+    }
+
+    attachExitButtonEventHandler() {
+        const iframe = document.querySelector('#map-iframe')
+        const exitButton = iframe.contentDocument.querySelector('#exit-btn')
+        exitButton?.addEventListener('click', (event) => {
+            this.closeModal()
+        })
+    }
+
+    closeModal() {
+        const modal = document.querySelector(`#map-modal`)
+        jQuery(modal).foundation('close')
     }
 
     render() {
@@ -121,14 +134,6 @@ export class DashMaps extends DashPage {
                 data-reveal
                 id="map-modal"
             >
-                <button
-                    class="exit-btn tight | absolute top center mt-0 z-2"
-                    aria-label=${jsObject.translations.close}
-                    type="button"
-                    data-close
-                >
-                    <span>${jsObject.translations.close}</span><span class="icon z-icon-close"></span>
-                </button>
                 ${this.loading ? html`
                     <div class="cover-page">
                         <div class="center">
@@ -146,56 +151,6 @@ export class DashMaps extends DashPage {
                 >
                 </iframe>
             </div>
-<!--             <div
-                class="reveal full"
-                data-reveal
-                id="hundred-hour-map-modal"
-            >
-                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
-                </button>
-                <iframe
-                    src='https://zume.training/zume_app/last100_hours/'
-                    frameborder="0"
-                    width="100%"
-                    height="100%"
-                >
-                </iframe>
-            </div>
-            <div
-                class="reveal full"
-                data-reveal
-                id="vision-map-modal"
-            >
-                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
-                </button>
-                <iframe
-                    src='https://zume.training/zume_app/heatmap_trainees/'
-                    frameborder="0"
-                    width="100%"
-                    height="100%"
-                >
-                </iframe>
-            </div> -->
-            <!--
-            <div
-                class="reveal full"
-                data-reveal
-                id="church-map-modal"
-            >
-                <button class="close-btn | ms-auto mb--1" aria-label=${jsObject.translations.close} type="button" data-close>
-                    <span class="icon z-icon-close"></span>
-                </button>
-                <iframe
-                    src='https://zume.training/zume_app/heatmap_churches/'
-                    frameborder="0"
-                    width="100%"
-                    height="100%"
-                >
-                </iframe>
-            </div>
-            -->
         `;
     }
 

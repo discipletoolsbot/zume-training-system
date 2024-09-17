@@ -40,6 +40,8 @@ function zume_map_translation_strings() : array {
         'always_update_progress' => __( 'Always update your progress in the training section as you are sharing and training others.', 'zume' ),
         'always_report' => __( 'Always report new simple churches that you are starting.', 'zume' ),
 
+        'close' => __( 'Close', 'zume' ),
+
 //        '' => __( '', 'zume' ),
 //        '' => __( '', 'zume' ),
 //        '' => __( '', 'zume' ),

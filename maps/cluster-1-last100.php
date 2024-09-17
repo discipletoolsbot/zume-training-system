@@ -66,12 +66,15 @@ class Zume_Funnel_Public_Heatmap_100hours_V2 extends Zume_Magic_Page {
 
     public function dt_magic_url_base_allowed_css( $allowed_css ) {
         $allowed_css[] = 'mapbox-gl-css';
+        $allowed_css[] = 'vite_bundle_css';
         return $allowed_css;
     }
 
     public function scripts() {
         wp_enqueue_script( 'last100-hours-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'cluster-1-last100.js', [ 'jquery' ],
         filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'cluster-1-last100.js' ), true );
+        wp_register_style( 'vite_bundle_css', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main.css', [], filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main.css' ) );
+        wp_enqueue_style( 'vite_bundle_css' );
     }
 
     /**

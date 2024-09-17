@@ -3739,6 +3739,9 @@ class Zume_Funnel_App_Heatmap {
 
         wp_enqueue_style( 'heatmap-css', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'heatmap.css', [], filemtime( plugin_dir_path( __FILE__ ) .'heatmap.css' ) );
 
+        wp_register_style( 'vite_bundle_css', plugin_dir_url( __DIR__ ) . 'site/assets/dist/assets/main.css', [], filemtime( plugin_dir_path( __DIR__ ) . 'site/assets/dist/assets/main.css' ) );
+        wp_enqueue_style( 'vite_bundle_css' );
+
         wp_enqueue_script( 'jquery-cookie', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'js.cookie.min.js', [ 'jquery' ],
         filemtime( trailingslashit( plugin_dir_path( __FILE__ ) ) .'js.cookie.min.js' ), true );
 

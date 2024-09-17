@@ -48,10 +48,18 @@ jQuery(document).ready(function($){
     slider_width = window.innerWidth * .95
   }
 
+  /* Show the close button if the query param exists */
+  const url = new URL(location.href)
+  if (url.searchParams.has('show-exit-button')) {
+    const closeButton = document.querySelector('.exit-btn')
+    closeButton?.classList.remove('hidden')
+  }
+
   /* set vertical size the form column*/
   $('#custom-style').empty().append(`
         #wrapper {
             height: ${window.innerHeight}px !important;
+            position: relative;
         }
         #map-wrapper {
             height: ${window.innerHeight}px !important;
