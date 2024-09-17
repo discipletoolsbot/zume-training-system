@@ -66,8 +66,28 @@ class Zume_Training_Resources extends Zume_Magic_Page
     public function header_style(){
         ?>
         <script>
+            let jsObject = [<?php echo json_encode([
+                'language' => $this->lang,
+            ]) ?>][0]
             jQuery(document).ready(function(){
                 jQuery(document).foundation();
+
+                const guidebookDownloadButton = document.querySelector('.guidebook-download-button')
+                const slideDownloadButtons = document.querySelectorAll('.slide-download-button')
+
+                function anonymous_log(event) {
+                    const subtype = event.target.dataset.subtype
+
+                    zumeRequest.post( 'log_anonymous', { type: 'downloading', subtype: subtype, language_code: jsObject.language } )
+                        .catch((error) => {
+                            console.log(error)
+                        })
+                }
+
+                guidebookDownloadButton.addEventListener('click', anonymous_log)
+                slideDownloadButtons.forEach((button) => {
+                    button.addEventListener('click', anonymous_log)
+                })
             });
         </script>
         <?php
@@ -100,7 +120,7 @@ class Zume_Training_Resources extends Zume_Magic_Page
                     </p>
                 </div>
                 <div class="stack center | text-center">
-                    <a class="btn w-100" target="_blank" href="<?php echo esc_url( zume_download_url( '33', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
+                    <a class="guidebook-download-button | btn w-100" data-subtype="guidebook" target="_blank" href="<?php echo esc_url( zume_download_url( '33', $zume_current_language ) ) ?>"><?php echo esc_html__( 'Free Download (PDF)', 'zume' ) ?></a>
                     <?php if ( 'en' === $zume_current_language ) { ?>
                         <a class="btn outline w-100" target="_blank" href="https://missionbooks.org/products/zume-training"><?php echo esc_html__( 'Order print copy', 'zume' ) ?></a>
                         <img class="w-16rem" src="<?php echo esc_url( plugin_dir_url( __DIR__ ) . 'assets/images/workbooksample.png' ) ?>" alt="zume training book">
