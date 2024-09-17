@@ -988,14 +988,14 @@ export class DashBoard extends navigator(router(LitElement)) {
                         </div>
                         <div class="footer-links">
 
-                            <nav-link
+                            <!-- <nav-link
                                 class="menu-btn | f--1"
                                 href=""
                                 icon="z-icon-public-training"
                                 text=${jsObject.translations.join_training_group}
                                 as="link"
                                 @click=${this.openJoinTrainingWizard}
-                            ></nav-link>
+                            ></nav-link> -->
 
                             ${!this.hasJoinedCommunity()
                                 ? html`

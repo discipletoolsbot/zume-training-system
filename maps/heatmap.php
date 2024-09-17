@@ -2584,7 +2584,7 @@ class Zume_Funnel_App_Heatmap {
             }
             $level['needed'] = $needed;
             if ( $administrative_level === 'world' ) {
-                $world_population = 7974493405;
+                $world_population = 8174493405;
                 $us_population = 335701430;
                 $global_pop_block = $global_div;
                 $us_pop_block = $us_div;
