@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-09-16 12:51+0000\n"
+"PO-Revision-Date: 2024-09-17 14:59+0000\n"
 "Last-Translator: nesrine <nesrine0325@gmail.com>\n"
 "Language-Team: Arabic <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/ar_TN/>\n"
@@ -2859,8 +2859,8 @@ msgid ""
 "where you’ll learn a principle and then “press pause” and practice it with "
 "the group."
 msgstr ""
-"في الفيديو هذا باش يتمّ تدريبك على مجموعة 3/3 و مبعد إنزل على زرّ \" "
-"آقف\"وإدّرب عليه مع المجموعة."
+"في الفيديو هذا باش يتمّ تدريبك على مجموعة 3/3 ومبعد إنزل على زرّ \" آقف\"وإدّرب "
+"عليه مع المجموعة."
 
 #: site/course/course-content.php:1844 site/course/course-content.php:4758
 msgid ""
@@ -2916,8 +2916,8 @@ msgid ""
 "Have you ever learned how to ride a bicycle? Have you ever helped someone "
 "else learn? If so, chances are you already know the Training Cycle."
 msgstr ""
-"هل تعلّمت قبل كيفاه تركّب بسكلات؟ هل عاونت حدّ آخر على التعلّم؟ إذا كان الجواب "
-"إيّ وقتها إنتي تعرف دورة التّدريب."
+"هل تعلّمت قبل كيفاه تركب بسكلات؟ هل عاونت حدّ آخر على التعلّم؟ إذا كان الجواب إيّ"
+" وقتها إنتي تعرف دورة التّدريب."
 
 #: site/course/course-content.php:2023
 msgid "Have you ever been a part of a Training Cycle?"
@@ -2975,7 +2975,7 @@ msgstr "شنية كان التحدّي الكبير؟ علاه؟"
 #: site/course/course-content.php:3547 site/course/course-content.php:4615
 #: site/course/course-content.php:5302
 msgid "Concept heard in this session:"
-msgstr "المفهوم إلّي سمعتوا في الجلسة هذي:"
+msgstr "المفهوم المسموع في الجلسة هذي:"
 
 #: site/course/course-content.php:2083 site/course/course-content.php:3300
 #: site/course/course-content.php:3421 site/course/course-content.php:3551
@@ -3158,7 +3158,7 @@ msgid ""
 "be willing to go anywhere — and everywhere — to share and start new "
 "spiritual families."
 msgstr ""
-"علّمنا يسوع باش نخلّيوا ديارنا وأحبابنا ورانا ونكونوا مستعدّين باش نمشيوا لأيّ "
+"علّمنا يسوع باش نخلّيوا ديارنا وأحبابنا ورانا ونكونوا مستعدّين ونمشيوا لأيّ "
 "بلاصة - وفي كلّ بلاصة - نشاركوا ونأسّوا عائلات روحية جديدة."
 
 #: site/course/course-content.php:2533
@@ -3176,7 +3176,7 @@ msgid ""
 "assist others through various parts of becoming a fully equipped disciple."
 msgstr ""
 "قائمة التّدريب أداة بسيطة تنجّم تستعملها باش تعاونك في توجيهك وقت تعاون النّاس "
-"من خلال أجزاء مختلفة وتولّي تلميذ مجهز بالكامل."
+"وبيها تولّي تلميذ مجهز بالكامل."
 
 #: site/course/course-content.php:2577
 msgid ""
@@ -3204,8 +3204,8 @@ msgid ""
 "REMEMBER - Be sure to share your Coaching Checklist results with a training "
 "partner or other mentor."
 msgstr ""
-"تذكّر - تأكّد من مشاركة نتائج قائمة التّدريب الخاصّة بيك مع شريك التّدريب وإلاّ مع "
-"مرشد آخر."
+"تذكّر - تأكّد من مشاركة نتائج قائمة تدريبك مع شريكك في التّدريب وإلاّ مع مرشد "
+"آخر."
 
 #: site/course/course-content.php:2611
 msgid ""
