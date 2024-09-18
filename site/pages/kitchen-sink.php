@@ -69,14 +69,13 @@ class Zume_Training_Kitchen_Sink extends Zume_Magic_Page
     }
 
     public function body(){
-        global $zume_languages_by_code;
 
         require __DIR__ . '/../parts/nav.php';
         ?>
 
         <div class="stack-3">
             <div class="container stack">
-                <h1 class="text-center"><?php echo esc_html__( 'Kitchen Sink', 'zume' ) ?></h1>
+                <h1 class="text-center">Kitchen Sink</h1>
 
                 <h2 class="brand">Methodology</h2>
 
