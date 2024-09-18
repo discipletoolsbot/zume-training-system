@@ -849,7 +849,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     // has translated (weblate, scripts, activities, videos, files)
                     // allows the language to show up in the selection  list, and disables redirect to 4.0
                     'pieces_pages' => true,
-                    'course_slides_download' => false,
+                    'course_slides_download' => true,
                 ],
             ),
             'am' => array(
@@ -1153,7 +1153,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'translator_enabled' => true,
                     'version_5_ready' => true,
                     'pieces_pages' => true,
-                    'course_slides_download' => false,
+                    'course_slides_download' => true,
                 ],
             ),
             'hr' => array(
@@ -1704,7 +1704,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'translator_enabled' => true,
                     'version_5_ready' => true,
                     'pieces_pages' => true,
-                    'course_slides_download' => false,
+                    'course_slides_download' => true,
                 ],
             ),
             'so' => array(

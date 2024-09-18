@@ -338,6 +338,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                         <th style="width:4%">Translator Enabled</th>
                         <th style="width:4%">v5 Ready</th>
                         <th style="width:4%">Pieces</th>
+                        <th style="width:4%">Slides</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -359,6 +360,7 @@ class Zume_Training_Translations extends Zume_Magic_Page
                             <td><?php echo ( $language['enable_flags']['translator_enabled'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['version_5_ready'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                             <td><?php echo ( $language['enable_flags']['pieces_pages'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
+                            <td><?php echo ( $language['enable_flags']['course_slides_download'] ) ? '<span class="green"></span>' : '<span class="red"></span>' ?></td>
                         </tr>
                         <?php
                         $globe_count++;
@@ -494,7 +496,6 @@ function zume_get_weblate_completion() {
 
     $codes['asl'] = 100;
 
-    dt_write_log( $codes );
     return $codes;
 }
 

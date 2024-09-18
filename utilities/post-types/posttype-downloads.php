@@ -175,9 +175,12 @@ class Zume_Downloads_Post_Type
      * @return void
      */
     public function register_custom_columns( $column_name ) {
-//        global $post;
+        global $post;
 
         switch ( $column_name ) {
+            case 'slides':
+                echo (get_post_meta( $post->ID, 'ppx_10_session', true ) ) ? 'Installed' : '';
+                break;
             default:
                 break;
         }
@@ -195,7 +198,7 @@ class Zume_Downloads_Post_Type
      */
     public function register_custom_column_headings( $defaults ) {
 
-        $new_columns = array(); //array( 'image' => __( 'Image', 'zume' ));
+        $new_columns = array( 'slides' => __( 'Slides', 'zume' ));
 
         $last_item = array();
 
