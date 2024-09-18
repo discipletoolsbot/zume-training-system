@@ -1742,7 +1742,7 @@ if ( ! function_exists( 'zume_languages' ) ) {
                     'translator_enabled' => true,
                     'version_5_ready' => true,
                     'pieces_pages' => true,
-                    'course_slides_download' => false,
+                    'course_slides_download' => true,
                 ],
             ),
             'es_es' => array(
