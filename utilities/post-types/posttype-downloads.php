@@ -179,7 +179,7 @@ class Zume_Downloads_Post_Type
 
         switch ( $column_name ) {
             case 'slides':
-                echo (get_post_meta( $post->ID, 'ppx_10_session', true ) ) ? 'Installed' : '';
+                echo (get_post_meta( $post->ID, 'ppt_10_session', true ) ) ? 'Installed' : '';
                 break;
             default:
                 break;
