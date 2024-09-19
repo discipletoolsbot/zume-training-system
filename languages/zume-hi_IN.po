@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zúme Project\n"
 "POT-Creation-Date: 2024-09-10 13:34-0600\n"
-"PO-Revision-Date: 2024-09-10 20:46+0000\n"
-"Last-Translator: Chris <chris@chasm.solutions>\n"
+"PO-Revision-Date: 2024-09-18 16:59+0000\n"
+"Last-Translator: Manikumar Miriyala <mani@zume.training>\n"
 "Language-Team: Hindi <https://translate.disciple.tools/projects/"
 "zume-training/zume-training-system/hi_IN/>\n"
 "Language: hi_IN\n"
@@ -783,12 +783,7 @@ msgstr "रिपोर्ट"
 
 #: maps/html/heatmap-html.php:79
 msgid "Goal"
-msgstr ""
-"पहला फेज संयुक्त राज्य अमेरिका और अंग्रेजी पर केंद्रित है । प्रारंभिक लक्ष्य देश में हर ५,००० "
-"लोगों के प्रति चार से बारह लोगों का एक प्रशिक्षण समूह को उत्प्रेरित करें । इन प्रशिक्षण "
-"समूहों को चुनौती दी जाएगी की वे पहली पीढ़ी के दो चर्च की शुरुवात करें जो आगे बढ़ते रहने "
-"चाहिए। संयुक्त राज्य अमेरिका के लिए लक्ष्य हैं की शुरू करें ६५,००० से अधिक अंग्रेजी भाषा Zúme "
-"समूह और १३०,००० चर्च ।"
+msgstr "लक्ष्य"
 
 #: maps/html/heatmap-html.php:90 maps/html/heatmap-html.php:114
 #: maps/map-2-network-activities.php:137
@@ -830,9 +825,7 @@ msgstr ""
 #: maps/html/heatmap-html.php:105 maps/html/heatmap-html.php:129
 #: maps/map-2-network-activities.php:152
 msgid "Click"
-msgstr ""
-"नए सदस्यों को जोड़ने के लिए, 'क्रिएट' या 'सेलेक्ट' पर क्लिक करें और नाम पर क्लिक करें या "
-"उनकी खोज करें।"
+msgstr "क्लिक करें"
 
 #: maps/html/heatmap-html.php:106 maps/html/heatmap-html.php:130
 #: maps/map-2-network-activities.php:153
@@ -875,7 +868,7 @@ msgstr "लक्ष्य प्राप्त हुआ"
 
 #: maps/js-translation-strings.php:8
 msgid "Churches Needed"
-msgstr "चर्च का नाम"
+msgstr "चर्च की जरूरत"
 
 #: maps/js-translation-strings.php:9
 msgid "Churches Reported"
