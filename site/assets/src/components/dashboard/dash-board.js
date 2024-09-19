@@ -1032,6 +1032,7 @@ export class DashBoard extends navigator(router(LitElement)) {
                 class="stack | reveal tiny card celebration showing | border-none"
                 id="celebration-modal"
                 data-reveal
+                data-initial-top
             >
                 <button
                     class="ms-auto close-btn"

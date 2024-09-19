@@ -50,6 +50,9 @@ export class Wizard extends LitElement {
 
     constructor() {
         super()
+
+        this.redirectToCheckinInUserLanguage()
+
         this.stepIndex = 0
         this.steps = []
         this.step = {}
@@ -101,6 +104,33 @@ export class Wizard extends LitElement {
             this.loadWizard(this.type, this.params)
             return
         }
+    }
+
+    redirectToCheckinInUserLanguage() {
+        const cookieLanguage = zumeApiShare.getCookie('zume_language')
+
+        if (!cookieLanguage) {
+            return
+        }
+
+        const checkinURL = new URL(location.href)
+
+        const pathParts = checkinURL.pathname.split('/')
+        const maybeLanguageCode = pathParts[1]
+        if ( !Object.keys(jsObject.languages).includes(maybeLanguageCode) ) {
+            /* The URL doesn't contain a language code */
+            checkinURL.pathname = '/' + cookieLanguage + checkinURL.pathname
+        } else if ( maybeLanguageCode !== cookieLanguage ) {
+            /* The URL contains a language code but it doesn't match the user's UI language */
+            pathParts[1] = cookieLanguage
+            checkinURL.pathname = pathParts.join('/')
+        } else {
+            /* We're all set, no need to redirect */
+            return
+        }
+
+        /* Redirect the user to the checkin wizard in their selected language */
+        location.href = checkinURL.href
     }
 
     loadWizard(wizard, queryParams = {}) {
