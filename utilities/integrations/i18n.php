@@ -27,8 +27,6 @@ function zume_determine_locale( string $locale ) : string {
             'url_parts' => $url_parts,
         ] = zume_get_url_pieces();
 
-        // https://zume5.test/wizard/checkin/checkin-submit?code=6543
-
         $language_code = zume_get_language_cookie();
 
         /* ... Unless we are in the checkin wizard, in which case use the cookie language */

@@ -51,8 +51,6 @@ export class Wizard extends LitElement {
     constructor() {
         super()
 
-        this.redirectToCheckinInUserLanguage()
-
         this.stepIndex = 0
         this.steps = []
         this.step = {}
@@ -70,6 +68,7 @@ export class Wizard extends LitElement {
     }
     connectedCallback() {
         super.connectedCallback()
+        this.redirectToCheckinInUserLanguage()
         this.wizard = new WizardModuleManager( this.user )
         window.addEventListener('popstate', this._handleHistoryPopState)
         window.addEventListener('wizard:load', this._handleLoadWizard)
@@ -113,9 +112,14 @@ export class Wizard extends LitElement {
             return
         }
 
+        if (this.type !== 'checkin') {
+            return
+        }
+
         const checkinURL = new URL(location.href)
 
         const pathParts = checkinURL.pathname.split('/')
+
         const maybeLanguageCode = pathParts[1]
         if ( !Object.keys(jsObject.languages).includes(maybeLanguageCode) ) {
             /* The URL doesn't contain a language code */
