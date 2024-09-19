@@ -1228,31 +1228,35 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                             ${jsObject.translations.wait_for_coach}
                           </p>
                       `:""}
-                  ${!this.showTeaser&&this.coaches.length>0?this.coaches.map(t=>c`
-                              <div class="card stack">
-                                <h3>${t.name}</h3>
-                                ${t.communication_apps.length?c`
-                                    <ul class="stack">
-                                      ${t.communication_apps.includes("email")?c`
-                                          <li>${jsObject.translations.email}: <a href="mailto:${t.email}">${t.email}</a></li>
-                                        `:""}
-                                      ${t.communication_apps.includes("phone")?c`
-                                          <li>${jsObject.translations.phone}: ${t.phone}</li>
-                                        `:""}
-                                      ${t.communication_apps.map(e=>{if(e==="signal")return c`
-                                            <li><a class="btn" href="sgnl://signal.me/#p/${t.signal}">${jsObject.translations.signal}</a></li>
-                                          `;if(e==="telegram")return c`
-                                            <li><a class="btn" href="https://t.me/${t.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
-                                          `;if(e==="whatsapp")return c`
-                                            <li><a class="btn" href="https://wa.me/${t.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
-                                          `;if(e==="messenger")return c`
-                                            <li><a class="btn" href="https://m.me/${t.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
-                                          `})}
-                                    </ul>
-                                  `:""}
+                  ${!this.showTeaser&&this.coaches.length>0?c`
+                        <div class="grid grid-min-18rem">
+                          ${this.coaches.map(t=>c`
+                                  <div class="card stack">
+                                    <h3>${t.name}</h3>
+                                    ${t.communication_apps.length?c`
+                                        <ul class="stack">
+                                          ${t.communication_apps.includes("email")?c`
+                                              <li>${jsObject.translations.email}: <a href="mailto:${t.email}">${t.email}</a></li>
+                                            `:""}
+                                          ${t.communication_apps.includes("phone")?c`
+                                              <li>${jsObject.translations.phone}: ${t.phone}</li>
+                                            `:""}
+                                          ${t.communication_apps.map(e=>{if(e==="signal")return c`
+                                                <li><a class="btn" href="sgnl://signal.me/#p/${t.signal}">${jsObject.translations.signal}</a></li>
+                                              `;if(e==="telegram")return c`
+                                                <li><a class="btn" href="https://t.me/${t.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
+                                              `;if(e==="whatsapp")return c`
+                                                <li><a class="btn" href="https://wa.me/${t.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
+                                              `;if(e==="messenger")return c`
+                                                <li><a class="btn" href="https://m.me/${t.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
+                                              `})}
+                                        </ul>
+                                      `:""}
 
-                              </div>
-                          `):""}
+                                  </div>
+                              `)}
+                        </div>
+                      `:""}
                 </div>
 
                 <div class="dashboard__secondary">
