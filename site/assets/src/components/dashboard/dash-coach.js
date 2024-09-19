@@ -79,6 +79,9 @@ export class DashCoach extends DashPage {
                                             ` : ''
                                           }
                                           ${coach.communication_apps.map((app) => {
+                                            /* Mute these buttons for now until we have time to test them */
+                                            /* Number needs checking to make sure it's formatted correctly, only numbers and + at the start */
+                                            return ''
                                             if (app === 'signal') {
                                               return html`
                                                 <li><a class="btn" href="sgnl://signal.me/#p/${coach.signal}">${jsObject.translations.signal}</a></li>

@@ -1241,15 +1241,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                                           ${t.communication_apps.includes("phone")?c`
                                               <li>${jsObject.translations.phone}: ${t.phone}</li>
                                             `:""}
-                                          ${t.communication_apps.map(e=>{if(e==="signal")return c`
-                                                <li><a class="btn" href="sgnl://signal.me/#p/${t.signal}">${jsObject.translations.signal}</a></li>
-                                              `;if(e==="telegram")return c`
-                                                <li><a class="btn" href="https://t.me/${t.telegram}" target="_blank">${jsObject.translations.telegram}</a></li>
-                                              `;if(e==="whatsapp")return c`
-                                                <li><a class="btn" href="https://wa.me/${t.whatsapp}" target="_blank">${jsObject.translations.whatsapp}</a></li>
-                                              `;if(e==="messenger")return c`
-                                                <li><a class="btn" href="https://m.me/${t.messenger}" target="_blank">${jsObject.translations.messenger}</a></li>
-                                              `})}
+                                          ${t.communication_apps.map(e=>"")}
                                         </ul>
                                       `:""}
 
