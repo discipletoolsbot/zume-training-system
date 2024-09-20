@@ -549,6 +549,8 @@ export class Wizard extends LitElement {
         const urlParts = url.pathname.split('/')
         const path = urlParts[urlParts.length - 1]
 
+        /* not in a modal. */
+        /* If the slug is a wizard name, goto the first step of the wizard */
         if (!this.noUrlChange && Object.values(Wizards).includes(path) ) {
             this._gotoStep(0, false)
             return
@@ -565,6 +567,7 @@ export class Wizard extends LitElement {
             path === slug
         }
 
+        /* Check if the slug is somewhere in the middle of the wizard and go there */
         this.steps.forEach(({slug, module}, i) => {
             if ( currentModule !== module ) {
                 currentModule = module
@@ -584,7 +587,7 @@ export class Wizard extends LitElement {
         /* The previous step isn't in this wizard, so reload the current wizard journey */
         if (!this.steps.some(({slug}) => testSlug(slug))) {
             this.steps = this.wizard.getSteps( this.type )
-            this._gotoStep( this.steps.length - 1 )
+            this._gotoStep(0)
         }
     }
 

@@ -9,8 +9,6 @@ export const wizardDefinitions = {
         [Modules.completeProfile]: makeModule([
             Steps.updateName,
             Steps.updateLocation,
-        ], false),
-        [Modules.planDecision]: makeModule([
             Steps.planDecision
         ], false),
     },
@@ -47,12 +45,10 @@ export const wizardDefinitions = {
         ], true)
     },
     [Wizards.getACoach]: {
-        [Modules.completeProfile]: makeModule([
+        [Modules.getACoach]: makeModule([
             Steps.updateName,
             Steps.updateLocation,
             Steps.updatePhone,
-        ]),
-        [Modules.getACoach]: makeModule([
             Steps.contactPreferences,
             Steps.languagePreferences,
             Steps.howCanWeServe,
@@ -70,20 +66,16 @@ export const wizardDefinitions = {
         ]),
     },
     [Wizards.connectWithFriend]: {
-        [Modules.completeProfile]: makeModule([
+        [Modules.connectFriend]: makeModule([
             Steps.updateName,
             Steps.updateLocation,
-        ], true),
-        [Modules.connectFriend]: makeModule([
             Steps.connectToFriend,
         ])
     },
     [Wizards.joinFriendsPlan]: {
-        [Modules.completeProfile]: makeModule([
+        [Modules.joinFriendsTraining]: makeModule([
             Steps.updateName,
             Steps.updateLocation,
-        ], true),
-        [Modules.joinFriendsTraining]: makeModule([
             Steps.joinFriendsPlan,
         ])
     },
