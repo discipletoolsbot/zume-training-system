@@ -142,7 +142,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                 ${this.loading?c`<span class="loading-spinner active"></span>`:""}
                 ${!this.loading&&this.errorMessage!==""?c`<span class="banner warning">${this.errorMessage}</span>`:""}
                 ${!this.loading&&this.errorMessage===""?c`
-                        <div class="w-8rem">
+                        <div class="mw-60 w-8rem">
                             <img src=${this.training.qr_url}>
                         </div>
 
@@ -2895,6 +2895,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                     <div>
                         <div class="title-area">
                             <div class="title-icon">
+                                <span class="icon z-icon-course"></span>
                             </div>
                             <div class="stack">
                                 <h2 class="title">${this.slide.left[0]}</h2>

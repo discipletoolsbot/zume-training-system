@@ -155,7 +155,7 @@ ${
                 }
                 ${
                     !this.loading && this.errorMessage === '' ? html`
-                        <div class="w-8rem">
+                        <div class="mw-60 w-8rem">
                             <img src=${this.training.qr_url}>
                         </div>
 
