@@ -201,7 +201,7 @@ export class Wizard extends LitElement {
         return html`
         <div class="container center">
 
-            <header class="py-1 px--4 w-100 position-relative">
+            <header class="pt--1 px--4 w-100 position-relative">
                 <div class="text-end" id="wizard-skip-button">${this.headerButtons()}</div>
                 <div class="center">${this.stepCounter()}</div>
             </header>

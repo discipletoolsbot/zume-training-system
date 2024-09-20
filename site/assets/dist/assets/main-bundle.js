@@ -142,6 +142,10 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
                 ${this.loading?c`<span class="loading-spinner active"></span>`:""}
                 ${!this.loading&&this.errorMessage!==""?c`<span class="banner warning">${this.errorMessage}</span>`:""}
                 ${!this.loading&&this.errorMessage===""?c`
+                        <div class="w-8rem">
+                            <img src=${this.training.qr_url}>
+                        </div>
+
                         <textarea class="input" rows="9">${t}</textarea>
                         ${navigator.clipboard?c`
                                 <div class="position-relative">
@@ -613,7 +617,7 @@ ${this.t.meeting_link}: ${this.training.zoom_link_note}
             `:c`
         <div class="container center">
 
-            <header class="py-1 px--4 w-100 position-relative">
+            <header class="pt--1 px--4 w-100 position-relative">
                 <div class="text-end" id="wizard-skip-button">${this.headerButtons()}</div>
                 <div class="center">${this.stepCounter()}</div>
             </header>
