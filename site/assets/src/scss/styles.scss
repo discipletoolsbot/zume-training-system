@@ -222,7 +222,7 @@ input::-webkit-calendar-picker-indicator {
   margin-left: auto;
   margin-right: auto;
   width: calc(30% + ( 70 / 100 * $min-width ) - ( 2 * $small-margin ) );
-  max-width: $break-sm;
+  max-width: $break-lg;
 }
 
 .header {
